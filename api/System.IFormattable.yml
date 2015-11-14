@@ -1,0 +1,67 @@
+items:
+- uid: System.IFormattable
+  id: IFormattable
+  parent: System
+  children:
+  - System.IFormattable.ToString(System.String,System.IFormatProvider)
+  href: System.IFormattable.yml
+  name: IFormattable
+  fullName: System.IFormattable
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IFormattable.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IFormattable.cs
+    startLine: 8
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Provides functionality to format the value of an object into a string representation.
+  syntax:
+    content: public interface IFormattable
+    content.vb: Public Interface IFormattable
+- uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+  id: ToString(System.String,System.IFormatProvider)
+  parent: System.IFormattable
+  href: System.IFormattable.yml
+  name: ToString(String, IFormatProvider)
+  fullName: System.IFormattable.ToString(System.String, System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IFormattable.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Formats the value of the current instance using the specified format.
+  syntax:
+    content: string ToString(string format, IFormatProvider formatProvider)
+    content.vb: Function ToString(format As String, formatProvider As IFormatProvider) As String
+    parameters:
+    - id: format
+      type: System.String
+      description: The format to use.-or- A null reference (Nothing in Visual Basic) to use the default format defined for the type of the @'System.IFormattable' implementation.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: The provider to use to format the value.-or- A null reference (Nothing in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.
+    return:
+      type: System.String
+      description: The value of the current instance in the specified format.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  fullName: System.IFormatProvider

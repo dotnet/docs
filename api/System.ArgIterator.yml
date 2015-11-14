@@ -1,0 +1,499 @@
+items:
+- uid: System.ArgIterator
+  id: ArgIterator
+  parent: System
+  children:
+  - System.ArgIterator.#ctor(System.RuntimeArgumentHandle)
+  - System.ArgIterator.#ctor(System.RuntimeArgumentHandle,System.Void*)
+  - System.ArgIterator.End
+  - System.ArgIterator.Equals(System.Object)
+  - System.ArgIterator.GetHashCode
+  - System.ArgIterator.GetNextArg
+  - System.ArgIterator.GetNextArg(System.RuntimeTypeHandle)
+  - System.ArgIterator.GetNextArgType
+  - System.ArgIterator.GetRemainingCount
+  href: System.ArgIterator.yml
+  name: ArgIterator
+  fullName: System.ArgIterator
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/ArgIterator.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/ArgIterator.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents a variable-length argument list; that is, the parameters of a function that takes a variable number of arguments.
+  syntax:
+    content: public struct ArgIterator
+    content.vb: Public Structure ArgIterator
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.ArgIterator.#ctor(System.RuntimeArgumentHandle)
+  id: '#ctor(System.RuntimeArgumentHandle)'
+  parent: System.ArgIterator
+  href: System.ArgIterator.yml
+  name: ArgIterator(RuntimeArgumentHandle)
+  fullName: System.ArgIterator.ArgIterator(System.RuntimeArgumentHandle)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ArgIterator.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.ArgIterator' structure using the specified argument list.
+  syntax:
+    content: public ArgIterator(RuntimeArgumentHandle arglist)
+    content.vb: Public Sub New(arglist As RuntimeArgumentHandle)
+    parameters:
+    - id: arglist
+      type: System.RuntimeArgumentHandle
+      description: An argument list consisting of mandatory and optional arguments.
+- uid: System.ArgIterator.#ctor(System.RuntimeArgumentHandle,System.Void*)
+  id: '#ctor(System.RuntimeArgumentHandle,System.Void*)'
+  parent: System.ArgIterator
+  href: System.ArgIterator.yml
+  name: ArgIterator(RuntimeArgumentHandle, Void*)
+  fullName: System.ArgIterator.ArgIterator(System.RuntimeArgumentHandle, System.Void*)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ArgIterator.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.ArgIterator' structure using the specified argument list and a pointer to an item in the list.
+  syntax:
+    content: public ArgIterator(RuntimeArgumentHandle arglist, void *ptr)
+    content.vb: Public Sub New(arglist As RuntimeArgumentHandle, ptr As *)
+    parameters:
+    - id: arglist
+      type: System.RuntimeArgumentHandle
+      description: An argument list consisting of mandatory and optional arguments.
+    - id: ptr
+      type: System.Void*
+      description: A pointer to the argument in *arglist* to access first, or the first mandatory argument in *arglist* if *ptr* is null.
+- uid: System.ArgIterator.GetNextArg
+  id: GetNextArg
+  parent: System.ArgIterator
+  href: System.ArgIterator.yml
+  name: GetNextArg()
+  fullName: System.ArgIterator.GetNextArg()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ArgIterator.cs
+    startLine: 46
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the next argument in a variable-length argument list.
+  syntax:
+    content: public TypedReference GetNextArg()
+    content.vb: Public Function GetNextArg As TypedReference
+    return:
+      type: System.TypedReference
+      description: The next argument as a @'System.TypedReference' object.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: An attempt was made to read beyond the end of the list.
+- uid: System.ArgIterator.GetNextArg(System.RuntimeTypeHandle)
+  id: GetNextArg(System.RuntimeTypeHandle)
+  parent: System.ArgIterator
+  href: System.ArgIterator.yml
+  name: GetNextArg(RuntimeTypeHandle)
+  fullName: System.ArgIterator.GetNextArg(System.RuntimeTypeHandle)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ArgIterator.cs
+    startLine: 66
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the next argument in a variable-length argument list that has a specified type.
+  syntax:
+    content: public TypedReference GetNextArg(RuntimeTypeHandle rth)
+    content.vb: Public Function GetNextArg(rth As RuntimeTypeHandle) As TypedReference
+    parameters:
+    - id: rth
+      type: System.RuntimeTypeHandle
+      description: A runtime type handle that identifies the type of the argument to retrieve.
+    return:
+      type: System.TypedReference
+      description: The next argument as a @'System.TypedReference' object.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: An attempt was made to read beyond the end of the list.
+  - type: System.ArgumentNullException
+    description: The pointer to the remaining arguments is zero.
+- uid: System.ArgIterator.End
+  id: End
+  parent: System.ArgIterator
+  href: System.ArgIterator.yml
+  name: End()
+  fullName: System.ArgIterator.End()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ArgIterator.cs
+    startLine: 103
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Concludes processing of the variable-length argument list represented by this instance.
+  syntax:
+    content: public void End()
+    content.vb: Public Sub
+- uid: System.ArgIterator.GetRemainingCount
+  id: GetRemainingCount
+  parent: System.ArgIterator
+  href: System.ArgIterator.yml
+  name: GetRemainingCount()
+  fullName: System.ArgIterator.GetRemainingCount()
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the number of arguments remaining in the argument list.
+  syntax:
+    content: public int GetRemainingCount()
+    content.vb: Public Function GetRemainingCount As Integer
+    return:
+      type: System.Int32
+      description: The number of remaining arguments.
+- uid: System.ArgIterator.GetNextArgType
+  id: GetNextArgType
+  parent: System.ArgIterator
+  href: System.ArgIterator.yml
+  name: GetNextArgType()
+  fullName: System.ArgIterator.GetNextArgType()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ArgIterator.cs
+    startLine: 117
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the type of the next argument.
+  syntax:
+    content: public RuntimeTypeHandle GetNextArgType()
+    content.vb: Public Function GetNextArgType As RuntimeTypeHandle
+    return:
+      type: System.RuntimeTypeHandle
+      description: The type of the next argument.
+- uid: System.ArgIterator.GetHashCode
+  id: GetHashCode
+  parent: System.ArgIterator
+  href: System.ArgIterator.yml
+  name: GetHashCode()
+  fullName: System.ArgIterator.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ArgIterator.cs
+    startLine: 123
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the hash code of this object.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer hash code.
+  overridden: System.ValueType.GetHashCode
+- uid: System.ArgIterator.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.ArgIterator
+  href: System.ArgIterator.yml
+  name: Equals(Object)
+  fullName: System.ArgIterator.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ArgIterator.cs
+    startLine: 129
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This method is not supported, and always throws @'System.NotSupportedException'.
+  syntax:
+    content: public override bool Equals(object o)
+    content.vb: Public Overrides Function Equals(o As Object) As Boolean
+    parameters:
+    - id: o
+      type: System.Object
+      description: An object to be compared to this instance.
+    return:
+      type: System.Boolean
+      description: This comparison is not supported. No value is returned.
+  overridden: System.ValueType.Equals(System.Object)
+  exceptions:
+  - type: System.NotSupportedException
+    description: This method is not supported.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.RuntimeArgumentHandle
+  parent: System
+  isExternal: false
+  href: System.RuntimeArgumentHandle.yml
+  name: RuntimeArgumentHandle
+  fullName: System.RuntimeArgumentHandle
+  type: Struct
+- uid: System.Void*
+  isExternal: false
+  href: System.Void.yml
+  name: Void*
+  fullName: System.Void*
+  spec.csharp:
+  - uid: System.Void
+    name: Void
+    fullName: System.Void
+    href: System.Void.yml
+  - name: '*'
+    fullName: '*'
+  spec.vb:
+  - uid: System.Void
+    name: Void
+    fullName: System.Void
+    href: System.Void.yml
+  - name: '*'
+    fullName: '*'
+- uid: System.TypedReference
+  parent: System
+  isExternal: false
+  href: System.TypedReference.yml
+  name: TypedReference
+  fullName: System.TypedReference
+  type: Struct
+- uid: System.RuntimeTypeHandle
+  parent: System
+  isExternal: false
+  href: System.RuntimeTypeHandle.yml
+  name: RuntimeTypeHandle
+  fullName: System.RuntimeTypeHandle
+  type: Struct
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

@@ -1,0 +1,312 @@
+items:
+- uid: System.Collections.StructuralComparisons
+  id: StructuralComparisons
+  parent: System.Collections
+  children:
+  - System.Collections.StructuralComparisons.StructuralComparer
+  - System.Collections.StructuralComparisons.StructuralEqualityComparer
+  href: System.Collections.StructuralComparisons.yml
+  name: StructuralComparisons
+  fullName: System.Collections.StructuralComparisons
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections/src/System/Collections/StructuralComparisons.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections/src/System/Collections/StructuralComparisons.cs
+    startLine: 11
+  assemblies:
+  - System.Collections
+  namespace: System.Collections
+  summary: Provides objects for performing a structural comparison of two collection objects.
+  syntax:
+    content: public class StructuralComparisons
+    content.vb: Public Class StructuralComparisons
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.StructuralComparisons.StructuralComparer
+  id: StructuralComparer
+  parent: System.Collections.StructuralComparisons
+  href: System.Collections.StructuralComparisons.yml
+  name: StructuralComparer
+  fullName: System.Collections.StructuralComparisons.StructuralComparer
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/StructuralComparisons.cs
+    startLine: 16
+  assemblies:
+  - System.Collections
+  namespace: System.Collections
+  summary: Gets a predefined object that performs a structural comparison of two objects.
+  syntax:
+    content: public static IComparer StructuralComparer { get; }
+    content.vb: Public Shared ReadOnly Property StructuralComparer As IComparer
+    parameters: []
+    return:
+      type: System.Collections.IComparer
+      description: A predefined object that is used to perform a structural comparison of two collection objects.
+- uid: System.Collections.StructuralComparisons.StructuralEqualityComparer
+  id: StructuralEqualityComparer
+  parent: System.Collections.StructuralComparisons
+  href: System.Collections.StructuralComparisons.yml
+  name: StructuralEqualityComparer
+  fullName: System.Collections.StructuralComparisons.StructuralEqualityComparer
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/StructuralComparisons.cs
+    startLine: 30
+  assemblies:
+  - System.Collections
+  namespace: System.Collections
+  summary: Gets a predefined object that compares two objects for structural equality.
+  syntax:
+    content: public static IEqualityComparer StructuralEqualityComparer { get; }
+    content.vb: Public Shared ReadOnly Property StructuralEqualityComparer As IEqualityComparer
+    parameters: []
+    return:
+      type: System.Collections.IEqualityComparer
+      description: A predefined object that is used to compare two collection objects for structural equality.
+references:
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.IComparer
+  parent: System.Collections
+  isExternal: true
+  name: IComparer
+  fullName: System.Collections.IComparer
+- uid: System.Collections.IEqualityComparer
+  parent: System.Collections
+  isExternal: true
+  name: IEqualityComparer
+  fullName: System.Collections.IEqualityComparer

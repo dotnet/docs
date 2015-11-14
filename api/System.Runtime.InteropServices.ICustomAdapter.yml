@@ -1,0 +1,60 @@
+items:
+- uid: System.Runtime.InteropServices.ICustomAdapter
+  id: ICustomAdapter
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.ICustomAdapter.GetUnderlyingObject
+  href: System.Runtime.InteropServices.ICustomAdapter.yml
+  name: ICustomAdapter
+  fullName: System.Runtime.InteropServices.ICustomAdapter
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/ICustomAdapter.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/ICustomAdapter.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Provides a way for clients to access the actual object, rather than the adapter object handed out by a custom marshaler.
+  syntax:
+    content: public interface ICustomAdapter
+    content.vb: Public Interface ICustomAdapter
+- uid: System.Runtime.InteropServices.ICustomAdapter.GetUnderlyingObject
+  id: GetUnderlyingObject
+  parent: System.Runtime.InteropServices.ICustomAdapter
+  href: System.Runtime.InteropServices.ICustomAdapter.yml
+  name: GetUnderlyingObject()
+  fullName: System.Runtime.InteropServices.ICustomAdapter.GetUnderlyingObject()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ICustomAdapter.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Provides access to the underlying object wrapped by a custom marshaler.
+  syntax:
+    content: object GetUnderlyingObject()
+    content.vb: Function GetUnderlyingObject As Object
+    return:
+      type: System.Object
+      description: The object contained by the adapter object.
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

@@ -1,0 +1,60 @@
+items:
+- uid: System.Runtime.Remoting.IObjectHandle
+  id: IObjectHandle
+  parent: System.Runtime.Remoting
+  children:
+  - System.Runtime.Remoting.IObjectHandle.Unwrap
+  href: System.Runtime.Remoting.IObjectHandle.yml
+  name: IObjectHandle
+  fullName: System.Runtime.Remoting.IObjectHandle
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Threading/IObjectHandle.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/IObjectHandle.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Remoting
+  summary: Defines the interface for unwrapping marshal-by-value objects from indirection.
+  syntax:
+    content: public interface IObjectHandle
+    content.vb: Public Interface IObjectHandle
+- uid: System.Runtime.Remoting.IObjectHandle.Unwrap
+  id: Unwrap
+  parent: System.Runtime.Remoting.IObjectHandle
+  href: System.Runtime.Remoting.IObjectHandle.yml
+  name: Unwrap()
+  fullName: System.Runtime.Remoting.IObjectHandle.Unwrap()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/IObjectHandle.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Remoting
+  summary: Unwraps the object.
+  syntax:
+    content: object Unwrap()
+    content.vb: Function Unwrap As Object
+    return:
+      type: System.Object
+      description: The unwrapped object.
+references:
+- uid: System.Runtime.Remoting
+  isExternal: false
+  name: System.Runtime.Remoting
+  fullName: System.Runtime.Remoting
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

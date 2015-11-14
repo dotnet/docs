@@ -1,0 +1,835 @@
+items:
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs
+  id: EventWrittenEventArgs
+  parent: System.Diagnostics.Tracing
+  children:
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.ActivityId
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.Channel
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.EventId
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.EventName
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.EventSource
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.Keywords
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.Level
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.Message
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.Opcode
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.Payload
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.PayloadNames
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.RelatedActivityId
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.Tags
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.Task
+  - System.Diagnostics.Tracing.EventWrittenEventArgs.Version
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: EventWrittenEventArgs
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4565
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Provides data for the @'System.Diagnostics.Tracing.EventListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)' callback.
+  syntax:
+    content: 'public class EventWrittenEventArgs : EventArgs'
+    content.vb: Public Class EventWrittenEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.EventName
+  id: EventName
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: EventName
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.EventName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4570
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the name of the event.
+  syntax:
+    content: public string EventName { get; }
+    content.vb: Public ReadOnly Property EventName As String
+    parameters: []
+    return:
+      type: System.String
+      description: The name of the event.
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.EventId
+  id: EventId
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: EventId
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.EventId
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4590
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the event identifier.
+  syntax:
+    content: public int EventId { get; }
+    content.vb: Public ReadOnly Property EventId As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The event identifier.
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.ActivityId
+  id: ActivityId
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: ActivityId
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.ActivityId
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4595
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: '[Supported in the .NET Framework 4.5.1 and later versions] Gets the activity ID on the thread that the event was written to.'
+  syntax:
+    content: public Guid ActivityId { get; }
+    content.vb: Public ReadOnly Property ActivityId As Guid
+    parameters: []
+    return:
+      type: System.Guid
+      description: The activity ID on the thread that the event was written to.
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.RelatedActivityId
+  id: RelatedActivityId
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: RelatedActivityId
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.RelatedActivityId
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4604
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: '[Supported in the .NET Framework 4.5.1 and later versions] Gets the identifier of an activity that is related to the activity represented by the current instance.'
+  syntax:
+    content: public Guid RelatedActivityId { get; }
+    content.vb: Public ReadOnly Property RelatedActivityId As Guid
+    parameters: []
+    return:
+      type: System.Guid
+      description: The identifier of the related activity, or @'System.Guid.Empty' if there is no related activity.
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.Payload
+  id: Payload
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: Payload
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.Payload
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4614
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the payload for the event.
+  syntax:
+    content: public ReadOnlyCollection<object> Payload { get; }
+    content.vb: Public ReadOnly Property Payload As ReadOnlyCollection(Of Object)
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{System.Object}
+      description: The payload for the event.
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.PayloadNames
+  id: PayloadNames
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: PayloadNames
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.PayloadNames
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4619
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Returns a list of strings that represent the property names of the event.
+  syntax:
+    content: public ReadOnlyCollection<string> PayloadNames { get; }
+    content.vb: Public ReadOnly Property PayloadNames As ReadOnlyCollection(Of String)
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{System.String}
+      description: Returns @'System.Collections.ObjectModel.ReadOnlyCollection`1'.
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.EventSource
+  id: EventSource
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: EventSource
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.EventSource
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4649
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the event source object.
+  syntax:
+    content: public EventSource EventSource { get; }
+    content.vb: Public ReadOnly Property EventSource As EventSource
+    parameters: []
+    return:
+      type: System.Diagnostics.Tracing.EventSource
+      description: The event source object.
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.Keywords
+  id: Keywords
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: Keywords
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.Keywords
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4654
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the keywords for the event.
+  syntax:
+    content: public EventKeywords Keywords { get; }
+    content.vb: Public ReadOnly Property Keywords As EventKeywords
+    parameters: []
+    return:
+      type: System.Diagnostics.Tracing.EventKeywords
+      description: The keywords for the event.
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.Opcode
+  id: Opcode
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: Opcode
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.Opcode
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4668
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the operation code for the event.
+  syntax:
+    content: public EventOpcode Opcode { get; }
+    content.vb: Public ReadOnly Property Opcode As EventOpcode
+    parameters: []
+    return:
+      type: System.Diagnostics.Tracing.EventOpcode
+      description: The operation code for the event.
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.Task
+  id: Task
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: Task
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.Task
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4681
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the task for the event.
+  syntax:
+    content: public EventTask Task { get; }
+    content.vb: Public ReadOnly Property Task As EventTask
+    parameters: []
+    return:
+      type: System.Diagnostics.Tracing.EventTask
+      description: The task for the event.
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.Tags
+  id: Tags
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: Tags
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.Tags
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4695
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Returns the tags specified in the call to the @'System.Diagnostics.Tracing.EventSource.Write(System.String,System.Diagnostics.Tracing.EventSourceOptions)' method.
+  syntax:
+    content: public EventTags Tags { get; }
+    content.vb: Public ReadOnly Property Tags As EventTags
+    parameters: []
+    return:
+      type: System.Diagnostics.Tracing.EventTags
+      description: Returns @'System.Diagnostics.Tracing.EventTags'.
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.Message
+  id: Message
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: Message
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.Message
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4708
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the message for the event.
+  syntax:
+    content: public string Message { get; }
+    content.vb: Public ReadOnly Property Message As String
+    parameters: []
+    return:
+      type: System.String
+      description: The message for the event.
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.Channel
+  id: Channel
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: Channel
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.Channel
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4728
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the channel for the event.
+  syntax:
+    content: public EventChannel Channel { get; }
+    content.vb: Public ReadOnly Property Channel As EventChannel
+    parameters: []
+    return:
+      type: System.Diagnostics.Tracing.EventChannel
+      description: The channel for the event.
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.Version
+  id: Version
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: Version
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.Version
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4742
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the version of the event.
+  syntax:
+    content: public byte Version { get; }
+    content.vb: Public ReadOnly Property Version As Byte
+    parameters: []
+    return:
+      type: System.Byte
+      description: The version of the event.
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs.Level
+  id: Level
+  parent: System.Diagnostics.Tracing.EventWrittenEventArgs
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: Level
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs.Level
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4755
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the level of the event.
+  syntax:
+    content: public EventLevel Level { get; }
+    content.vb: Public ReadOnly Property Level As EventLevel
+    parameters: []
+    return:
+      type: System.Diagnostics.Tracing.EventLevel
+      description: The level of the event.
+references:
+- uid: System.Diagnostics.Tracing.EventListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)
+- uid: System.Diagnostics.Tracing
+  isExternal: false
+  name: System.Diagnostics.Tracing
+  fullName: System.Diagnostics.Tracing
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{System.Object}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
+  name: ReadOnlyCollection<Object>
+  name.vb: ReadOnlyCollection(Of Object)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<System.Object>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of System.Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  parent: System.Collections.ObjectModel
+  isExternal: true
+  name: ReadOnlyCollection<T>
+  name.vb: ReadOnlyCollection(Of T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  isExternal: false
+  name: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  type: Namespace
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{System.String}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
+  name: ReadOnlyCollection<String>
+  name.vb: ReadOnlyCollection(Of String)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<System.String>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of System.String)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: )
+    fullName: )
+- uid: System.Diagnostics.Tracing.EventSource
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: EventSource
+  fullName: System.Diagnostics.Tracing.EventSource
+  type: Class
+  summary: >-
+    This class is meant to be inherited by a user-defined event source in order to define a managed
+
+    ETW provider.   Please See DESIGN NOTES above for the internal architecture.
+
+    The minimal definition of an EventSource simply specifies a number of ETW event methods that
+
+    call one of the EventSource.WriteEvent overloads, @'System.Diagnostics.Tracing.EventSource.WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)',
+
+    or @'System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)' to log them. This functionality
+
+    is sufficient for many users.
+
+    <para>
+
+    To achieve more control over the ETW provider manifest exposed by the event source type, the
+
+    [@'System.Diagnostics.Tracing.EventAttribute'] attributes can be specified for the ETW event methods.
+
+    </para><para>
+
+    For very advanced EventSources, it is possible to intercept the commands being given to the
+
+    eventSource and change what filtering is done (see EventListener.EnableEvents and
+
+    @'System.Diagnostics.Tracing.EventListener.DisableEvents(System.Diagnostics.Tracing.EventSource)') or cause actions to be performed by the eventSource,
+
+    e.g. dumping a data structure (see EventSource.SendCommand and
+
+    @'System.Diagnostics.Tracing.EventSource.OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)').
+
+    </para><para>
+
+    The eventSources can be turned on with Windows ETW controllers (e.g. logman), immediately.
+
+    It is also possible to control and intercept the data dispatcher programmatically.  See
+
+    @'System.Diagnostics.Tracing.EventListener' for more.
+
+    </para>
+- uid: System.Diagnostics.Tracing.EventKeywords
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventKeywords.yml
+  name: EventKeywords
+  fullName: System.Diagnostics.Tracing.EventKeywords
+  type: Enum
+  summary: EventOpcode
+- uid: System.Diagnostics.Tracing.EventOpcode
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventOpcode.yml
+  name: EventOpcode
+  fullName: System.Diagnostics.Tracing.EventOpcode
+  type: Enum
+  summary: EventOpcode. Custom values must be in the range from 11 through 239
+- uid: System.Diagnostics.Tracing.EventTask
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventTask.yml
+  name: EventTask
+  fullName: System.Diagnostics.Tracing.EventTask
+  type: Enum
+  summary: WindowsEventTask. Custom values must be in the range from 1 through 65534
+- uid: System.Diagnostics.Tracing.EventTags
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventTags.yml
+  name: EventTags
+  fullName: System.Diagnostics.Tracing.EventTags
+  type: Enum
+  summary: >-
+    Tags are flags that are not interpreted by EventSource but are passed along
+
+    to the EventListener. The EventListener determines the semantics of the flags.
+- uid: System.Diagnostics.Tracing.EventChannel
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventChannel.yml
+  name: EventChannel
+  fullName: System.Diagnostics.Tracing.EventChannel
+  type: Enum
+  summary: EventChannel. Custom values must be in the range from 16 through 255. Currently only predefined values allowed.
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  fullName: System.Byte
+- uid: System.Diagnostics.Tracing.EventLevel
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventLevel.yml
+  name: EventLevel
+  fullName: System.Diagnostics.Tracing.EventLevel
+  type: Enum
+  summary: WindowsEventLevel. Custom values must be in the range from 16 through 255

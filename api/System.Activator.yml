@@ -1,0 +1,1786 @@
+items:
+- uid: System.Activator
+  id: Activator
+  parent: System
+  children:
+  - System.Activator.CreateComInstanceFrom(System.String,System.String)
+  - System.Activator.CreateComInstanceFrom(System.String,System.String,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)
+  - System.Activator.CreateInstance(System.AppDomain,System.String,System.String)
+  - System.Activator.CreateInstance(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  - System.Activator.CreateInstance(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)
+  - System.Activator.CreateInstance(System.String,System.String)
+  - System.Activator.CreateInstance(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  - System.Activator.CreateInstance(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)
+  - System.Activator.CreateInstance(System.String,System.String,System.Object[])
+  - System.Activator.CreateInstance(System.Type)
+  - System.Activator.CreateInstance(System.Type,System.Boolean)
+  - System.Activator.CreateInstance(System.Type,System.Object[])
+  - System.Activator.CreateInstance(System.Type,System.Object[],System.Object[])
+  - System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  - System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  - System.Activator.CreateInstance``1
+  - System.Activator.CreateInstanceFrom(System.AppDomain,System.String,System.String)
+  - System.Activator.CreateInstanceFrom(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  - System.Activator.CreateInstanceFrom(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)
+  - System.Activator.CreateInstanceFrom(System.String,System.String)
+  - System.Activator.CreateInstanceFrom(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  - System.Activator.CreateInstanceFrom(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)
+  - System.Activator.CreateInstanceFrom(System.String,System.String,System.Object[])
+  href: System.Activator.yml
+  name: Activator
+  fullName: System.Activator
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Activator.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Contains methods to create types of objects locally or remotely, or obtain references to existing remote objects. This class cannot be inherited.
+  syntax:
+    content: 'public sealed class Activator : _Activator'
+    content.vb: Public NotInheritable Class Activator Implements _Activator
+  inheritance:
+  - System.Object
+  implements:
+  - System.Runtime.InteropServices._Activator
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  id: CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstance(Type, BindingFlags, Binder, Object[], CultureInfo)
+  name.vb: CreateInstance(Type, BindingFlags, Binder, Object(), CultureInfo)
+  fullName: System.Activator.CreateInstance(System.Type, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object[], System.Globalization.CultureInfo)
+  fullName.vb: System.Activator.CreateInstance(System.Type, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object(), System.Globalization.CultureInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the specified type using the constructor that best matches the specified parameters.
+  syntax:
+    content: public static object CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, object[] args, CultureInfo culture)
+    content.vb: Public Shared Function CreateInstance(type As Type, bindingAttr As BindingFlags, binder As Binder, args As Object(), culture As CultureInfo) As Object
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of object to create.
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+      description: A combination of zero or more bit flags that affect the search for the *type* constructor. If *bindingAttr* is zero, a case-sensitive search for public constructors is conducted.
+    - id: binder
+      type: System.Reflection.Binder
+      description: An object that uses *bindingAttr* and *args* to seek and identify the *type* constructor. If *binder* is null, the default binder is used.
+    - id: args
+      type: System.Object[]
+      description: An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If *args* is an empty array or null, the constructor that takes no parameters (the default constructor) is invoked.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: Culture-specific information that governs the coercion of *args* to the formal types declared for the *type* constructor. If *culture* is null, the @'System.Globalization.CultureInfo' for the current thread is used.
+    return:
+      type: System.Object
+      description: A reference to the newly created object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*type* is null.'
+  - type: System.ArgumentException
+    description: '*type* is not a RuntimeType. -or-*type* is an open generic type (that is, the @''System.Type.ContainsGenericParameters'' property returns true).'
+  - type: System.NotSupportedException
+    description: '*type* cannot be a @''System.Reflection.Emit.TypeBuilder''.-or- Creation of @''System.TypedReference'', @''System.ArgIterator'', @''System.Void'', and @''System.RuntimeArgumentHandle'' types, or arrays of those types, is not supported. -or-The assembly that contains *type* is a dynamic assembly that was created with @''System.Reflection.Emit.AssemblyBuilderAccess.Save''.-or-The constructor that best matches *args* has varargs arguments.'
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor being called throws an exception.
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    description: The COM type was not obtained through  or .
+  - type: System.MissingMethodException
+    description: No matching constructor was found.
+  - type: System.Runtime.InteropServices.COMException
+    description: '*type* is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered.'
+  - type: System.TypeLoadException
+    description: '*type* is not a valid type.'
+- uid: System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  id: CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstance(Type, BindingFlags, Binder, Object[], CultureInfo, Object[])
+  name.vb: CreateInstance(Type, BindingFlags, Binder, Object(), CultureInfo, Object())
+  fullName: System.Activator.CreateInstance(System.Type, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object[], System.Globalization.CultureInfo, System.Object[])
+  fullName.vb: System.Activator.CreateInstance(System.Type, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object(), System.Globalization.CultureInfo, System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 61
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the specified type using the constructor that best matches the specified parameters.
+  syntax:
+    content: public static object CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, object[] args, CultureInfo culture, object[] activationAttributes)
+    content.vb: Public Shared Function CreateInstance(type As Type, bindingAttr As BindingFlags, binder As Binder, args As Object(), culture As CultureInfo, activationAttributes As Object()) As Object
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of object to create.
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+      description: A combination of zero or more bit flags that affect the search for the *type* constructor. If *bindingAttr* is zero, a case-sensitive search for public constructors is conducted.
+    - id: binder
+      type: System.Reflection.Binder
+      description: An object that uses *bindingAttr* and *args* to seek and identify the *type* constructor. If *binder* is null, the default binder is used.
+    - id: args
+      type: System.Object[]
+      description: An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If *args* is an empty array or null, the constructor that takes no parameters (the default constructor) is invoked.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: Culture-specific information that governs the coercion of *args* to the formal types declared for the *type* constructor. If *culture* is null, the @'System.Globalization.CultureInfo' for the current thread is used.
+    - id: activationAttributes
+      type: System.Object[]
+      description: An array of one or more attributes that can participate in activation. This is typically an array that contains a single @'System.Runtime.Remoting.Activation.UrlAttribute' object that specifies the URL that is required to activate a remote object.  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.
+    return:
+      type: System.Object
+      description: A reference to the newly created object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*type* is null.'
+  - type: System.ArgumentException
+    description: '*type* is not a RuntimeType. -or-*type* is an open generic type (that is, the @''System.Type.ContainsGenericParameters'' property returns true).'
+  - type: System.NotSupportedException
+    description: '*type* cannot be a @''System.Reflection.Emit.TypeBuilder''.-or- Creation of @''System.TypedReference'', @''System.ArgIterator'', @''System.Void'', and @''System.RuntimeArgumentHandle'' types, or arrays of those types, is not supported.-or- *activationAttributes* is not an empty array, and the type being created does not derive from @''System.MarshalByRefObject''. -or-The assembly that contains *type* is a dynamic assembly that was created with @''System.Reflection.Emit.AssemblyBuilderAccess.Save''.-or-The constructor that best matches *args* has varargs arguments.'
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor being called throws an exception.
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    description: The COM type was not obtained through  or .
+  - type: System.MissingMethodException
+    description: No matching constructor was found.
+  - type: System.Runtime.InteropServices.COMException
+    description: '*type* is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered.'
+  - type: System.TypeLoadException
+    description: '*type* is not a valid type.'
+- uid: System.Activator.CreateInstance(System.Type,System.Object[])
+  id: CreateInstance(System.Type,System.Object[])
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstance(Type, Object[])
+  name.vb: CreateInstance(Type, Object())
+  fullName: System.Activator.CreateInstance(System.Type, System.Object[])
+  fullName.vb: System.Activator.CreateInstance(System.Type, System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 107
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the specified type using the constructor that best matches the specified parameters.
+  syntax:
+    content: public static object CreateInstance(Type type, params object[] args)
+    content.vb: Public Shared Function CreateInstance(type As Type, ParamArray args As Object()) As Object
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of object to create.
+    - id: args
+      type: System.Object[]
+      description: An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If *args* is an empty array or null, the constructor that takes no parameters (the default constructor) is invoked.
+    return:
+      type: System.Object
+      description: A reference to the newly created object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*type* is null.'
+  - type: System.ArgumentException
+    description: '*type* is not a RuntimeType. -or-*type* is an open generic type (that is, the @''System.Type.ContainsGenericParameters'' property returns true).'
+  - type: System.NotSupportedException
+    description: '*type* cannot be a @''System.Reflection.Emit.TypeBuilder''.-or- Creation of @''System.TypedReference'', @''System.ArgIterator'', @''System.Void'', and @''System.RuntimeArgumentHandle'' types, or arrays of those types, is not supported. -or-The assembly that contains *type* is a dynamic assembly that was created with @''System.Reflection.Emit.AssemblyBuilderAccess.Save''.-or-The constructor that best matches *args* has varargs arguments.'
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor being called throws an exception.
+  - type: System.MethodAccessException
+    description: In the .NET for Windows Store apps or the Portable Class Library, catch the base class exception, @'System.MemberAccessException', instead.The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    description: The COM type was not obtained through  or .
+  - type: System.MissingMethodException
+    description: In the .NET for Windows Store apps or the Portable Class Library, catch the base class exception, @'System.MissingMemberException', instead.No matching public constructor was found.
+  - type: System.Runtime.InteropServices.COMException
+    description: '*type* is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered.'
+  - type: System.TypeLoadException
+    description: '*type* is not a valid type.'
+- uid: System.Activator.CreateInstance(System.Type,System.Object[],System.Object[])
+  id: CreateInstance(System.Type,System.Object[],System.Object[])
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstance(Type, Object[], Object[])
+  name.vb: CreateInstance(Type, Object(), Object())
+  fullName: System.Activator.CreateInstance(System.Type, System.Object[], System.Object[])
+  fullName.vb: System.Activator.CreateInstance(System.Type, System.Object(), System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 117
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the specified type using the constructor that best matches the specified parameters.
+  syntax:
+    content: public static object CreateInstance(Type type, object[] args, object[] activationAttributes)
+    content.vb: Public Shared Function CreateInstance(type As Type, args As Object(), activationAttributes As Object()) As Object
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of object to create.
+    - id: args
+      type: System.Object[]
+      description: An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If *args* is an empty array or null, the constructor that takes no parameters (the default constructor) is invoked.
+    - id: activationAttributes
+      type: System.Object[]
+      description: An array of one or more attributes that can participate in activation. This is typically an array that contains a single @'System.Runtime.Remoting.Activation.UrlAttribute' object that specifies the URL that is required to activate a remote object.  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.
+    return:
+      type: System.Object
+      description: A reference to the newly created object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*type* is null.'
+  - type: System.ArgumentException
+    description: '*type* is not a RuntimeType. -or-*type* is an open generic type (that is, the @''System.Type.ContainsGenericParameters'' property returns true).'
+  - type: System.NotSupportedException
+    description: '*type* cannot be a @''System.Reflection.Emit.TypeBuilder''.-or- Creation of @''System.TypedReference'', @''System.ArgIterator'', @''System.Void'', and @''System.RuntimeArgumentHandle'' types, or arrays of those types, is not supported.-or- *activationAttributes* is not an empty array, and the type being created does not derive from @''System.MarshalByRefObject''. -or-The assembly that contains *type* is a dynamic assembly that was created with @''System.Reflection.Emit.AssemblyBuilderAccess.Save''.-or-The constructor that best matches *args* has varargs arguments.'
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor being called throws an exception.
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    description: The COM type was not obtained through  or .
+  - type: System.MissingMethodException
+    description: No matching public constructor was found.
+  - type: System.Runtime.InteropServices.COMException
+    description: '*type* is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered.'
+  - type: System.TypeLoadException
+    description: '*type* is not a valid type.'
+- uid: System.Activator.CreateInstance(System.Type)
+  id: CreateInstance(System.Type)
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstance(Type)
+  fullName: System.Activator.CreateInstance(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 129
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the specified type using that type's default constructor.
+  syntax:
+    content: public static object CreateInstance(Type type)
+    content.vb: Public Shared Function CreateInstance(type As Type) As Object
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of object to create.
+    return:
+      type: System.Object
+      description: A reference to the newly created object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*type* is null.'
+  - type: System.ArgumentException
+    description: '*type* is not a RuntimeType. -or-*type* is an open generic type (that is, the @''System.Type.ContainsGenericParameters'' property returns true).'
+  - type: System.NotSupportedException
+    description: '*type* cannot be a @''System.Reflection.Emit.TypeBuilder''.-or- Creation of @''System.TypedReference'', @''System.ArgIterator'', @''System.Void'', and @''System.RuntimeArgumentHandle'' types, or arrays of those types, is not supported.-or-The assembly that contains *type* is a dynamic assembly that was created with @''System.Reflection.Emit.AssemblyBuilderAccess.Save''.'
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor being called throws an exception.
+  - type: System.MethodAccessException
+    description: In the .NET for Windows Store apps or the Portable Class Library, catch the base class exception, @'System.MemberAccessException', instead.The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    description: The COM type was not obtained through  or .
+  - type: System.MissingMethodException
+    description: In the .NET for Windows Store apps or the Portable Class Library, catch the base class exception, @'System.MissingMemberException', instead.No matching public constructor was found.
+  - type: System.Runtime.InteropServices.COMException
+    description: '*type* is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered.'
+  - type: System.TypeLoadException
+    description: '*type* is not a valid type.'
+- uid: System.Activator.CreateInstance(System.String,System.String)
+  id: CreateInstance(System.String,System.String)
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstance(String, String)
+  fullName: System.Activator.CreateInstance(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 139
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type whose name is specified, using the named assembly and default constructor.
+  syntax:
+    content: public static ObjectHandle CreateInstance(string assemblyName, string typeName)
+    content.vb: Public Shared Function CreateInstance(assemblyName As String, typeName As String) As ObjectHandle
+    parameters:
+    - id: assemblyName
+      type: System.String
+      description: The name of the assembly where the type named *typeName* is sought. For more information, see the Remarks section. If *assemblyName* is null, the executing assembly is searched.
+    - id: typeName
+      type: System.String
+      description: The fully qualified name of the preferred type.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*typeName* is null.'
+  - type: System.MissingMethodException
+    description: No matching public constructor was found.
+  - type: System.TypeLoadException
+    description: '*typename* was not found in *assemblyName*.'
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyName* was not found.'
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: You cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor, which was invoked through reflection, threw an exception.
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    description: The COM type was not obtained through  or .
+  - type: System.NotSupportedException
+    description: Creation of @'System.TypedReference', @'System.ArgIterator', @'System.Void', and @'System.RuntimeArgumentHandle' types, or arrays of those types, is not supported.
+  - type: System.BadImageFormatException
+    description: '*assemblyName* is not a valid assembly. -or-The common language runtime (CLR) version 2.0 or later is currently loaded, and *assemblyName* was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.'
+  - type: System.IO.FileLoadException
+    description: An assembly or module was loaded twice with two different evidences. -or-The assembly name or code base is invalid.
+- uid: System.Activator.CreateInstance(System.String,System.String,System.Object[])
+  id: CreateInstance(System.String,System.String,System.Object[])
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstance(String, String, Object[])
+  name.vb: CreateInstance(String, String, Object())
+  fullName: System.Activator.CreateInstance(System.String, System.String, System.Object[])
+  fullName.vb: System.Activator.CreateInstance(System.String, System.String, System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 157
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type whose name is specified, using the named assembly and default constructor.
+  syntax:
+    content: public static ObjectHandle CreateInstance(string assemblyName, string typeName, object[] activationAttributes)
+    content.vb: Public Shared Function CreateInstance(assemblyName As String, typeName As String, activationAttributes As Object()) As ObjectHandle
+    parameters:
+    - id: assemblyName
+      type: System.String
+      description: The name of the assembly where the type named *typeName* is sought. If *assemblyName* is null, the executing assembly is searched.
+    - id: typeName
+      type: System.String
+      description: The fully qualified name of the preferred type.
+    - id: activationAttributes
+      type: System.Object[]
+      description: An array of one or more attributes that can participate in activation. This is typically an array that contains a single @'System.Runtime.Remoting.Activation.UrlAttribute' object that specifies the URL that is required to activate a remote object.  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*typeName* is null.'
+  - type: System.MissingMethodException
+    description: No matching public constructor was found.
+  - type: System.TypeLoadException
+    description: '*typename* was not found in *assemblyName*.'
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyName* was not found.'
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    description: The COM type was not obtained through  or .
+  - type: System.NotSupportedException
+    description: Creation of @'System.TypedReference', @'System.ArgIterator', @'System.Void', and @'System.RuntimeArgumentHandle' types, or arrays of those types, is not supported.-or- *activationAttributes* is not an empty array, and the type being created does not derive from @'System.MarshalByRefObject'.-or-*activationAttributes* is not a @'System.Runtime.Remoting.Activation.UrlAttribute'array.
+  - type: System.BadImageFormatException
+    description: '*assemblyName* is not a valid assembly. -or-The common language runtime (CLR) version 2.0 or later is currently loaded, and *assemblyName* was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.'
+  - type: System.IO.FileLoadException
+    description: An assembly or module was loaded twice with two different evidences. -or-The assembly name or code base is invalid.
+  - type: System.Reflection.TargetInvocationException
+    description: An error occurred when attempting remote activation in a target specified in *activationAttributes*.
+- uid: System.Activator.CreateInstance(System.Type,System.Boolean)
+  id: CreateInstance(System.Type,System.Boolean)
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstance(Type, Boolean)
+  fullName: System.Activator.CreateInstance(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 177
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the specified type using that type's default constructor.
+  syntax:
+    content: public static object CreateInstance(Type type, bool nonPublic)
+    content.vb: Public Shared Function CreateInstance(type As Type, nonPublic As Boolean) As Object
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of object to create.
+    - id: nonPublic
+      type: System.Boolean
+      description: true if a public or nonpublic default constructor can match; false if only a public default constructor can match.
+    return:
+      type: System.Object
+      description: A reference to the newly created object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*type* is null.'
+  - type: System.ArgumentException
+    description: '*type* is not a RuntimeType. -or-*type* is an open generic type (that is, the @''System.Type.ContainsGenericParameters'' property returns true).'
+  - type: System.NotSupportedException
+    description: '*type* cannot be a @''System.Reflection.Emit.TypeBuilder''.-or- Creation of @''System.TypedReference'', @''System.ArgIterator'', @''System.Void'', and @''System.RuntimeArgumentHandle'' types, or arrays of those types, is not supported. -or-The assembly that contains *type* is a dynamic assembly that was created with @''System.Reflection.Emit.AssemblyBuilderAccess.Save''.'
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor being called throws an exception.
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    description: The COM type was not obtained through  or .
+  - type: System.MissingMethodException
+    description: No matching public constructor was found.
+  - type: System.Runtime.InteropServices.COMException
+    description: '*type* is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered.'
+  - type: System.TypeLoadException
+    description: '*type* is not a valid type.'
+- uid: System.Activator.CreateInstance``1
+  id: CreateInstance``1
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstance<T>()
+  name.vb: CreateInstance(Of T)()
+  fullName: System.Activator.CreateInstance<T>()
+  fullName.vb: System.Activator.CreateInstance(Of T)()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 193
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type designated by the specified generic type parameter, using the parameterless constructor.
+  syntax:
+    content: public static T CreateInstance<T>()
+    content.vb: Public Shared Function CreateInstance(Of T) As T
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+      description: A reference to the newly created object.
+  exceptions:
+  - type: System.MissingMethodException
+    description: In the .NET for Windows Store apps or the Portable Class Library, catch the base class exception, @'System.MissingMemberException', instead.The type that is specified for *T* does not have a parameterless constructor.
+- uid: System.Activator.CreateInstanceFrom(System.String,System.String)
+  id: CreateInstanceFrom(System.String,System.String)
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstanceFrom(String, String)
+  fullName: System.Activator.CreateInstanceFrom(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 223
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type whose name is specified, using the named assembly file and default constructor.
+  syntax:
+    content: public static ObjectHandle CreateInstanceFrom(string assemblyFile, string typeName)
+    content.vb: Public Shared Function CreateInstanceFrom(assemblyFile As String, typeName As String) As ObjectHandle
+    parameters:
+    - id: assemblyFile
+      type: System.String
+      description: The name of a file that contains an assembly where the type named *typeName* is sought.
+    - id: typeName
+      type: System.String
+      description: The name of the preferred type.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*typeName* is null.'
+  - type: System.MissingMethodException
+    description: No matching public constructor was found.
+  - type: System.TypeLoadException
+    description: '*typename* was not found in *assemblyFile*.'
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyFile* was not found.'
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor, which was invoked through reflection, threw an exception.
+  - type: System.Security.SecurityException
+    description: The caller does have the required @'System.Security.Permissions.FileIOPermission'.
+  - type: System.BadImageFormatException
+    description: '*assemblyFile* is not a valid assembly. -or-The common language runtime (CLR) version 2.0 or later is currently loaded, and *assemblyName* was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.'
+- uid: System.Activator.CreateInstanceFrom(System.String,System.String,System.Object[])
+  id: CreateInstanceFrom(System.String,System.String,System.Object[])
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstanceFrom(String, String, Object[])
+  name.vb: CreateInstanceFrom(String, String, Object())
+  fullName: System.Activator.CreateInstanceFrom(System.String, System.String, System.Object[])
+  fullName.vb: System.Activator.CreateInstanceFrom(System.String, System.String, System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 230
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type whose name is specified, using the named assembly file and default constructor.
+  syntax:
+    content: public static ObjectHandle CreateInstanceFrom(string assemblyFile, string typeName, object[] activationAttributes)
+    content.vb: Public Shared Function CreateInstanceFrom(assemblyFile As String, typeName As String, activationAttributes As Object()) As ObjectHandle
+    parameters:
+    - id: assemblyFile
+      type: System.String
+      description: The name of a file that contains an assembly where the type named *typeName* is sought.
+    - id: typeName
+      type: System.String
+      description: The name of the preferred type.
+    - id: activationAttributes
+      type: System.Object[]
+      description: An array of one or more attributes that can participate in activation. This is typically an array that contains a single @'System.Runtime.Remoting.Activation.UrlAttribute' object that specifies the URL that is required to activate a remote object.  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*typeName* is null.'
+  - type: System.MissingMethodException
+    description: No matching public constructor was found.
+  - type: System.TypeLoadException
+    description: '*typename* was not found in *assemblyFile*.'
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyFile* was not found.'
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor, which was invoked through reflection, threw an exception.
+  - type: System.NotSupportedException
+    description: '*activationAttributes* is not an empty array, and the type being created does not derive from @''System.MarshalByRefObject''.'
+  - type: System.Security.SecurityException
+    description: The caller does have the required @'System.Security.Permissions.FileIOPermission'.
+  - type: System.BadImageFormatException
+    description: '*assemblyFile* is not a valid assembly. -or-The common language runtime (CLR) version 2.0 or later is currently loaded, and *assemblyName* was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.'
+- uid: System.Activator.CreateInstance(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)
+  id: CreateInstance(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstance(String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[], Evidence)
+  name.vb: CreateInstance(String, String, Boolean, BindingFlags, Binder, Object(), CultureInfo, Object(), Evidence)
+  fullName: System.Activator.CreateInstance(System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object[], System.Globalization.CultureInfo, System.Object[], System.Security.Policy.Evidence)
+  fullName.vb: System.Activator.CreateInstance(System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object(), System.Globalization.CultureInfo, System.Object(), System.Security.Policy.Evidence)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 245
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type whose name is specified, using the named assembly and the constructor that best matches the specified parameters.
+  syntax:
+    content: public static ObjectHandle CreateInstance(string assemblyName, string typeName, bool ignoreCase, BindingFlags bindingAttr, Binder binder, object[] args, CultureInfo culture, object[] activationAttributes, Evidence securityInfo)
+    content.vb: Public Shared Function CreateInstance(assemblyName As String, typeName As String, ignoreCase As Boolean, bindingAttr As BindingFlags, binder As Binder, args As Object(), culture As CultureInfo, activationAttributes As Object(), securityInfo As Evidence) As ObjectHandle
+    parameters:
+    - id: assemblyName
+      type: System.String
+      description: The name of the assembly where the type named *typeName* is sought. If *assemblyName* is null, the executing assembly is searched.
+    - id: typeName
+      type: System.String
+      description: The fully qualified name of the preferred type.
+    - id: ignoreCase
+      type: System.Boolean
+      description: true to specify that the search for *typeName* is not case-sensitive; false to specify that the search is case-sensitive.
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+      description: A combination of zero or more bit flags that affect the search for the *typeName* constructor. If *bindingAttr* is zero, a case-sensitive search for public constructors is conducted.
+    - id: binder
+      type: System.Reflection.Binder
+      description: An object that uses *bindingAttr* and *args* to seek and identify the *typeName* constructor. If *binder* is null, the default binder is used.
+    - id: args
+      type: System.Object[]
+      description: An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If *args* is an empty array or null, the constructor that takes no parameters (the default constructor) is invoked.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: Culture-specific information that governs the coercion of *args* to the formal types declared for the *typeName* constructor. If *culture* is null, the @'System.Globalization.CultureInfo' for the current thread is used.
+    - id: activationAttributes
+      type: System.Object[]
+      description: An array of one or more attributes that can participate in activation. This is typically an array that contains a single @'System.Runtime.Remoting.Activation.UrlAttribute' object that specifies the URL that is required to activate a remote object.  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.
+    - id: securityInfo
+      type: System.Security.Policy.Evidence
+      description: Information used to make security policy decisions and grant code permissions.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*typeName* is null.'
+  - type: System.MissingMethodException
+    description: No matching constructor was found.
+  - type: System.TypeLoadException
+    description: '*typename* was not found in *assemblyName*.'
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyName* was not found.'
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor, which was invoked through reflection, threw an exception.
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    description: The COM type was not obtained through  or .
+  - type: System.NotSupportedException
+    description: Creation of @'System.TypedReference', @'System.ArgIterator', @'System.Void', and @'System.RuntimeArgumentHandle' types, or arrays of those types, is not supported.-or- *activationAttributes* is not an empty array, and the type being created does not derive from @'System.MarshalByRefObject'. -or-The constructor that best matches *args* has varargs arguments.
+  - type: System.BadImageFormatException
+    description: '*assemblyName* is not a valid assembly. -or-The common language runtime (CLR) version 2.0 or later is currently loaded, and *assemblyName* was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.'
+  - type: System.IO.FileLoadException
+    description: An assembly or module was loaded twice with two different evidences. -or-The assembly name or code base is invalid.
+- uid: System.Activator.CreateInstance(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  id: CreateInstance(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstance(String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[])
+  name.vb: CreateInstance(String, String, Boolean, BindingFlags, Binder, Object(), CultureInfo, Object())
+  fullName: System.Activator.CreateInstance(System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object[], System.Globalization.CultureInfo, System.Object[])
+  fullName.vb: System.Activator.CreateInstance(System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object(), System.Globalization.CultureInfo, System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 271
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type whose name is specified, using the named assembly and the constructor that best matches the specified parameters.
+  syntax:
+    content: public static ObjectHandle CreateInstance(string assemblyName, string typeName, bool ignoreCase, BindingFlags bindingAttr, Binder binder, object[] args, CultureInfo culture, object[] activationAttributes)
+    content.vb: Public Shared Function CreateInstance(assemblyName As String, typeName As String, ignoreCase As Boolean, bindingAttr As BindingFlags, binder As Binder, args As Object(), culture As CultureInfo, activationAttributes As Object()) As ObjectHandle
+    parameters:
+    - id: assemblyName
+      type: System.String
+      description: The name of the assembly where the type named *typeName* is sought. If *assemblyName* is null, the executing assembly is searched.
+    - id: typeName
+      type: System.String
+      description: The fully qualified name of the preferred type.
+    - id: ignoreCase
+      type: System.Boolean
+      description: true to specify that the search for *typeName* is not case-sensitive; false to specify that the search is case-sensitive.
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+      description: A combination of zero or more bit flags that affect the search for the *typeName* constructor. If *bindingAttr* is zero, a case-sensitive search for public constructors is conducted.
+    - id: binder
+      type: System.Reflection.Binder
+      description: An object that uses *bindingAttr* and *args* to seek and identify the *typeName* constructor. If *binder* is null, the default binder is used.
+    - id: args
+      type: System.Object[]
+      description: An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If *args* is an empty array or null, the constructor that takes no parameters (the default constructor) is invoked.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: Culture-specific information that governs the coercion of *args* to the formal types declared for the *typeName* constructor. If *culture* is null, the @'System.Globalization.CultureInfo' for the current thread is used.
+    - id: activationAttributes
+      type: System.Object[]
+      description: An array of one or more attributes that can participate in activation. This is typically an array that contains a single @'System.Runtime.Remoting.Activation.UrlAttribute' object that specifies the URL that is required to activate a remote object. This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*typeName* is null.'
+  - type: System.MissingMethodException
+    description: No matching constructor was found.
+  - type: System.TypeLoadException
+    description: '*typename* was not found in *assemblyName*.'
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyName* was not found.'
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor, which was invoked through reflection, threw an exception.
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    description: The COM type was not obtained through  or .
+  - type: System.NotSupportedException
+    description: Creation of @'System.TypedReference', @'System.ArgIterator', @'System.Void', and @'System.RuntimeArgumentHandle' types, or arrays of those types, is not supported.-or- *activationAttributes* is not an empty array, and the type being created does not derive from @'System.MarshalByRefObject'. -or-The constructor that best matches *args* has varargs arguments.
+  - type: System.BadImageFormatException
+    description: '*assemblyName* is not a valid assembly. -or-The common language runtime (CLR) version 2.0 or later is currently loaded, and *assemblyName* was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.'
+  - type: System.IO.FileLoadException
+    description: An assembly or module was loaded twice with two different evidences. -or-The assembly name or code base is invalid.
+- uid: System.Activator.CreateInstanceFrom(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)
+  id: CreateInstanceFrom(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstanceFrom(String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[], Evidence)
+  name.vb: CreateInstanceFrom(String, String, Boolean, BindingFlags, Binder, Object(), CultureInfo, Object(), Evidence)
+  fullName: System.Activator.CreateInstanceFrom(System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object[], System.Globalization.CultureInfo, System.Object[], System.Security.Policy.Evidence)
+  fullName.vb: System.Activator.CreateInstanceFrom(System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object(), System.Globalization.CultureInfo, System.Object(), System.Security.Policy.Evidence)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 359
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type whose name is specified, using the named assembly file and the constructor that best matches the specified parameters.
+  syntax:
+    content: public static ObjectHandle CreateInstanceFrom(string assemblyFile, string typeName, bool ignoreCase, BindingFlags bindingAttr, Binder binder, object[] args, CultureInfo culture, object[] activationAttributes, Evidence securityInfo)
+    content.vb: Public Shared Function CreateInstanceFrom(assemblyFile As String, typeName As String, ignoreCase As Boolean, bindingAttr As BindingFlags, binder As Binder, args As Object(), culture As CultureInfo, activationAttributes As Object(), securityInfo As Evidence) As ObjectHandle
+    parameters:
+    - id: assemblyFile
+      type: System.String
+      description: The name of a file that contains an assembly where the type named *typeName* is sought.
+    - id: typeName
+      type: System.String
+      description: The name of the preferred type.
+    - id: ignoreCase
+      type: System.Boolean
+      description: true to specify that the search for *typeName* is not case-sensitive; false to specify that the search is case-sensitive.
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+      description: A combination of zero or more bit flags that affect the search for the *typeName* constructor. If *bindingAttr* is zero, a case-sensitive search for public constructors is conducted.
+    - id: binder
+      type: System.Reflection.Binder
+      description: An object that uses *bindingAttr* and *args* to seek and identify the *typeName* constructor. If *binder* is null, the default binder is used.
+    - id: args
+      type: System.Object[]
+      description: An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If *args* is an empty array or null, the constructor that takes no parameters (the default constructor) is invoked.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: Culture-specific information that governs the coercion of *args* to the formal types declared for the *typeName* constructor. If *culture* is null, the @'System.Globalization.CultureInfo' for the current thread is used.
+    - id: activationAttributes
+      type: System.Object[]
+      description: An array of one or more attributes that can participate in activation. This is typically an array that contains a single @'System.Runtime.Remoting.Activation.UrlAttribute' object that specifies the URL that is required to activate a remote object.  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.
+    - id: securityInfo
+      type: System.Security.Policy.Evidence
+      description: Information used to make security policy decisions and grant code permissions.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*typeName* is null.'
+  - type: System.MissingMethodException
+    description: No matching constructor was found.
+  - type: System.TypeLoadException
+    description: '*typename* was not found in *assemblyFile*.'
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyFile* was not found.'
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor, which was invoked through reflection, threw an exception.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required @'System.Security.Permissions.FileIOPermission'.
+  - type: System.NotSupportedException
+    description: '*activationAttributes* is not an empty array, and the type being created does not derive from @''System.MarshalByRefObject''.'
+  - type: System.BadImageFormatException
+    description: '*assemblyFile* is not a valid assembly. -or-The common language runtime (CLR) version 2.0 or later is currently loaded, and *assemblyName* was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.'
+- uid: System.Activator.CreateInstanceFrom(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  id: CreateInstanceFrom(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstanceFrom(String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[])
+  name.vb: CreateInstanceFrom(String, String, Boolean, BindingFlags, Binder, Object(), CultureInfo, Object())
+  fullName: System.Activator.CreateInstanceFrom(System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object[], System.Globalization.CultureInfo, System.Object[])
+  fullName.vb: System.Activator.CreateInstanceFrom(System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object(), System.Globalization.CultureInfo, System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 389
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type whose name is specified, using the named assembly file and the constructor that best matches the specified parameters.
+  syntax:
+    content: public static ObjectHandle CreateInstanceFrom(string assemblyFile, string typeName, bool ignoreCase, BindingFlags bindingAttr, Binder binder, object[] args, CultureInfo culture, object[] activationAttributes)
+    content.vb: Public Shared Function CreateInstanceFrom(assemblyFile As String, typeName As String, ignoreCase As Boolean, bindingAttr As BindingFlags, binder As Binder, args As Object(), culture As CultureInfo, activationAttributes As Object()) As ObjectHandle
+    parameters:
+    - id: assemblyFile
+      type: System.String
+      description: The name of a file that contains an assembly where the type named *typeName* is sought.
+    - id: typeName
+      type: System.String
+      description: The name of the preferred type.
+    - id: ignoreCase
+      type: System.Boolean
+      description: true to specify that the search for *typeName* is not case-sensitive; false to specify that the search is case-sensitive.
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+      description: A combination of zero or more bit flags that affect the search for the *typeName* constructor. If *bindingAttr* is zero, a case-sensitive search for public constructors is conducted.
+    - id: binder
+      type: System.Reflection.Binder
+      description: An object that uses *bindingAttr* and *args* to seek and identify the *typeName* constructor. If *binder* is null, the default binder is used.
+    - id: args
+      type: System.Object[]
+      description: An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If *args* is an empty array or null, the constructor that takes no parameters (the default constructor) is invoked.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: Culture-specific information that governs the coercion of *args* to the formal types declared for the *typeName* constructor. If *culture* is null, the @'System.Globalization.CultureInfo' for the current thread is used.
+    - id: activationAttributes
+      type: System.Object[]
+      description: An array of one or more attributes that can participate in activation. This is typically an array that contains a single @'System.Runtime.Remoting.Activation.UrlAttribute' object that specifies the URL that is required to activate a remote object. This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*typeName* is null.'
+  - type: System.MissingMethodException
+    description: No matching constructor was found.
+  - type: System.TypeLoadException
+    description: '*typename* was not found in *assemblyFile*.'
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyFile* was not found.'
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor, which was invoked through reflection, threw an exception.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required @'System.Security.Permissions.FileIOPermission'.
+  - type: System.NotSupportedException
+    description: '*activationAttributes* is not an empty array, and the type being created does not derive from @''System.MarshalByRefObject''.'
+  - type: System.BadImageFormatException
+    description: '*assemblyFile* is not a valid assembly. -or-The common language runtime (CLR) version 2.0 or later is currently loaded, and *assemblyName* was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.'
+- uid: System.Activator.CreateInstance(System.AppDomain,System.String,System.String)
+  id: CreateInstance(System.AppDomain,System.String,System.String)
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstance(AppDomain, String, String)
+  fullName: System.Activator.CreateInstance(System.AppDomain, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 451
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type whose name is specified in the specified remote domain, using the named assembly and default constructor.
+  syntax:
+    content: public static ObjectHandle CreateInstance(AppDomain domain, string assemblyName, string typeName)
+    content.vb: Public Shared Function CreateInstance(domain As AppDomain, assemblyName As String, typeName As String) As ObjectHandle
+    parameters:
+    - id: domain
+      type: System.AppDomain
+      description: The remote domain where the type named *typeName* is created.
+    - id: assemblyName
+      type: System.String
+      description: The name of the assembly where the type named *typeName* is sought. If *assemblyName* is null, the executing assembly is searched.
+    - id: typeName
+      type: System.String
+      description: The fully qualified name of the preferred type.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*typeName* or *domain* is null.'
+  - type: System.MissingMethodException
+    description: No matching public constructor was found.
+  - type: System.TypeLoadException
+    description: '*typename* was not found in *assemblyName*.'
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyName* was not found.'
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract type. -or-This member was invoked with a late-binding mechanism.
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor, which was invoked through reflection, threw an exception.
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    description: The COM type was not obtained through  or .
+  - type: System.NotSupportedException
+    description: Creation of @'System.TypedReference', @'System.ArgIterator', @'System.Void', and @'System.RuntimeArgumentHandle' types, or arrays of those types, is not supported.
+  - type: System.BadImageFormatException
+    description: '*assemblyName* is not a valid assembly. -or-The common language runtime (CLR) version 2.0 or later is currently loaded, and *assemblyName* was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.'
+  - type: System.IO.FileLoadException
+    description: An assembly or module was loaded twice with two different evidences. -or-The assembly name or code base is invalid.
+- uid: System.Activator.CreateInstance(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)
+  id: CreateInstance(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstance(AppDomain, String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[], Evidence)
+  name.vb: CreateInstance(AppDomain, String, String, Boolean, BindingFlags, Binder, Object(), CultureInfo, Object(), Evidence)
+  fullName: System.Activator.CreateInstance(System.AppDomain, System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object[], System.Globalization.CultureInfo, System.Object[], System.Security.Policy.Evidence)
+  fullName.vb: System.Activator.CreateInstance(System.AppDomain, System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object(), System.Globalization.CultureInfo, System.Object(), System.Security.Policy.Evidence)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 459
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type whose name is specified in the specified remote domain, using the named assembly and the constructor that best matches the specified parameters.
+  syntax:
+    content: public static ObjectHandle CreateInstance(AppDomain domain, string assemblyName, string typeName, bool ignoreCase, BindingFlags bindingAttr, Binder binder, object[] args, CultureInfo culture, object[] activationAttributes, Evidence securityAttributes)
+    content.vb: Public Shared Function CreateInstance(domain As AppDomain, assemblyName As String, typeName As String, ignoreCase As Boolean, bindingAttr As BindingFlags, binder As Binder, args As Object(), culture As CultureInfo, activationAttributes As Object(), securityAttributes As Evidence) As ObjectHandle
+    parameters:
+    - id: domain
+      type: System.AppDomain
+      description: The domain where the type named *typeName* is created.
+    - id: assemblyName
+      type: System.String
+      description: The name of the assembly where the type named *typeName* is sought. If *assemblyName* is null, the executing assembly is searched.
+    - id: typeName
+      type: System.String
+      description: The fully qualified name of the preferred type.
+    - id: ignoreCase
+      type: System.Boolean
+      description: true to specify that the search for *typeName* is not case-sensitive; false to specify that the search is case-sensitive.
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+      description: A combination of zero or more bit flags that affect the search for the *typeName* constructor. If *bindingAttr* is zero, a case-sensitive search for public constructors is conducted.
+    - id: binder
+      type: System.Reflection.Binder
+      description: An object that uses *bindingAttr* and *args* to seek and identify the *typeName* constructor. If *binder* is null, the default binder is used.
+    - id: args
+      type: System.Object[]
+      description: An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If *args* is an empty array or null, the constructor that takes no parameters (the default constructor) is invoked.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: Culture-specific information that governs the coercion of *args* to the formal types declared for the *typeName* constructor. If *culture* is null, the @'System.Globalization.CultureInfo' for the current thread is used.
+    - id: activationAttributes
+      type: System.Object[]
+      description: An array of one or more attributes that can participate in activation. This is typically an array that contains a single @'System.Runtime.Remoting.Activation.UrlAttribute' object. The @'System.Runtime.Remoting.Activation.UrlAttribute' specifies the URL that is required to activate a remote object.
+    - id: securityAttributes
+      type: System.Security.Policy.Evidence
+      description: Information used to make security policy decisions and grant code permissions.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*domain* or *typeName* is null.'
+  - type: System.MissingMethodException
+    description: No matching constructor was found.
+  - type: System.TypeLoadException
+    description: '*typename* was not found in *assemblyName*.'
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyName* was not found.'
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor, which was invoked through reflection, threw an exception.
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    description: The COM type was not obtained through  or .
+  - type: System.NotSupportedException
+    description: Creation of @'System.TypedReference', @'System.ArgIterator', @'System.Void', and @'System.RuntimeArgumentHandle' types, or arrays of those types, is not supported.-or- *activationAttributes* is not an empty array, and the type being created does not derive from @'System.MarshalByRefObject'. -or-The constructor that best matches *args* has varargs arguments.
+  - type: System.BadImageFormatException
+    description: '*assemblyName* is not a valid assembly. -or-The common language runtime (CLR) version 2.0 or later is currently loaded, and *assemblyName* was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.'
+  - type: System.IO.FileLoadException
+    description: An assembly or module was loaded twice with two different evidences. -or-The assembly name or code base is invalid.
+- uid: System.Activator.CreateInstance(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  id: CreateInstance(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstance(AppDomain, String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[])
+  name.vb: CreateInstance(AppDomain, String, String, Boolean, BindingFlags, Binder, Object(), CultureInfo, Object())
+  fullName: System.Activator.CreateInstance(System.AppDomain, System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object[], System.Globalization.CultureInfo, System.Object[])
+  fullName.vb: System.Activator.CreateInstance(System.AppDomain, System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object(), System.Globalization.CultureInfo, System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 485
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type whose name is specified in the specified remote domain, using the named assembly and the constructor that best matches the specified parameters.
+  syntax:
+    content: public static ObjectHandle CreateInstance(AppDomain domain, string assemblyName, string typeName, bool ignoreCase, BindingFlags bindingAttr, Binder binder, object[] args, CultureInfo culture, object[] activationAttributes)
+    content.vb: Public Shared Function CreateInstance(domain As AppDomain, assemblyName As String, typeName As String, ignoreCase As Boolean, bindingAttr As BindingFlags, binder As Binder, args As Object(), culture As CultureInfo, activationAttributes As Object()) As ObjectHandle
+    parameters:
+    - id: domain
+      type: System.AppDomain
+      description: The domain where the type named *typeName* is created.
+    - id: assemblyName
+      type: System.String
+      description: The name of the assembly where the type named *typeName* is sought. If *assemblyName* is null, the executing assembly is searched.
+    - id: typeName
+      type: System.String
+      description: The fully qualified name of the preferred type.
+    - id: ignoreCase
+      type: System.Boolean
+      description: true to specify that the search for *typeName* is not case-sensitive; false to specify that the search is case-sensitive.
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+      description: A combination of zero or more bit flags that affect the search for the *typeName* constructor. If *bindingAttr* is zero, a case-sensitive search for public constructors is conducted.
+    - id: binder
+      type: System.Reflection.Binder
+      description: An object that uses *bindingAttr* and *args* to seek and identify the *typeName* constructor. If *binder* is null, the default binder is used.
+    - id: args
+      type: System.Object[]
+      description: An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If *args* is an empty array or null, the constructor that takes no parameters (the default constructor) is invoked.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: Culture-specific information that governs the coercion of *args* to the formal types declared for the *typeName* constructor. If *culture* is null, the @'System.Globalization.CultureInfo' for the current thread is used.
+    - id: activationAttributes
+      type: System.Object[]
+      description: An array of one or more attributes that can participate in activation. This is typically an array that contains a single @'System.Runtime.Remoting.Activation.UrlAttribute' object that specifies the URL that is required to activate a remote object.  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*domain* or *typeName* is null.'
+  - type: System.MissingMethodException
+    description: No matching constructor was found.
+  - type: System.TypeLoadException
+    description: '*typename* was not found in *assemblyName*.'
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyName* was not found.'
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor, which was invoked through reflection, threw an exception.
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    description: The COM type was not obtained through  or .
+  - type: System.NotSupportedException
+    description: Creation of @'System.TypedReference', @'System.ArgIterator', @'System.Void', and @'System.RuntimeArgumentHandle' types, or arrays of those types, is not supported.-or- *activationAttributes* is not an empty array, and the type being created does not derive from @'System.MarshalByRefObject'. -or-The constructor that best matches *args* has varargs arguments.
+  - type: System.BadImageFormatException
+    description: '*assemblyName* is not a valid assembly. -or-The common language runtime (CLR) version 2.0 or later is currently loaded, and *assemblyName* was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.'
+  - type: System.IO.FileLoadException
+    description: An assembly or module was loaded twice with two different evidences. -or-The assembly name or code base is invalid.
+- uid: System.Activator.CreateInstanceFrom(System.AppDomain,System.String,System.String)
+  id: CreateInstanceFrom(System.AppDomain,System.String,System.String)
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstanceFrom(AppDomain, String, String)
+  fullName: System.Activator.CreateInstanceFrom(System.AppDomain, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 518
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type whose name is specified in the specified remote domain, using the named assembly file and default constructor.
+  syntax:
+    content: public static ObjectHandle CreateInstanceFrom(AppDomain domain, string assemblyFile, string typeName)
+    content.vb: Public Shared Function CreateInstanceFrom(domain As AppDomain, assemblyFile As String, typeName As String) As ObjectHandle
+    parameters:
+    - id: domain
+      type: System.AppDomain
+      description: The remote domain where the type named *typeName* is created.
+    - id: assemblyFile
+      type: System.String
+      description: The name of a file that contains an assembly where the type named *typeName* is sought.
+    - id: typeName
+      type: System.String
+      description: The name of the preferred type.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*domain* or *typeName* is null.'
+  - type: System.MissingMethodException
+    description: No matching public constructor was found.
+  - type: System.TypeLoadException
+    description: '*typename* was not found in *assemblyFile*.'
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyFile* was not found.'
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor, which was invoked through reflection, threw an exception.
+  - type: System.Security.SecurityException
+    description: The caller does have the required @'System.Security.Permissions.FileIOPermission'.
+  - type: System.BadImageFormatException
+    description: '*assemblyFile* is not a valid assembly. -or-The common language runtime (CLR) version 2.0 or later is currently loaded, and *assemblyName* was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.'
+- uid: System.Activator.CreateInstanceFrom(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)
+  id: CreateInstanceFrom(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstanceFrom(AppDomain, String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[], Evidence)
+  name.vb: CreateInstanceFrom(AppDomain, String, String, Boolean, BindingFlags, Binder, Object(), CultureInfo, Object(), Evidence)
+  fullName: System.Activator.CreateInstanceFrom(System.AppDomain, System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object[], System.Globalization.CultureInfo, System.Object[], System.Security.Policy.Evidence)
+  fullName.vb: System.Activator.CreateInstanceFrom(System.AppDomain, System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object(), System.Globalization.CultureInfo, System.Object(), System.Security.Policy.Evidence)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 526
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type whose name is specified in the specified remote domain, using the named assembly file and the constructor that best matches the specified parameters.
+  syntax:
+    content: public static ObjectHandle CreateInstanceFrom(AppDomain domain, string assemblyFile, string typeName, bool ignoreCase, BindingFlags bindingAttr, Binder binder, object[] args, CultureInfo culture, object[] activationAttributes, Evidence securityAttributes)
+    content.vb: Public Shared Function CreateInstanceFrom(domain As AppDomain, assemblyFile As String, typeName As String, ignoreCase As Boolean, bindingAttr As BindingFlags, binder As Binder, args As Object(), culture As CultureInfo, activationAttributes As Object(), securityAttributes As Evidence) As ObjectHandle
+    parameters:
+    - id: domain
+      type: System.AppDomain
+      description: The remote domain where the type named *typeName* is created.
+    - id: assemblyFile
+      type: System.String
+      description: The name of a file that contains an assembly where the type named *typeName* is sought.
+    - id: typeName
+      type: System.String
+      description: The name of the preferred type.
+    - id: ignoreCase
+      type: System.Boolean
+      description: true to specify that the search for *typeName* is not case-sensitive; false to specify that the search is case-sensitive.
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+      description: A combination of zero or more bit flags that affect the search for the *typeName* constructor. If *bindingAttr* is zero, a case-sensitive search for public constructors is conducted.
+    - id: binder
+      type: System.Reflection.Binder
+      description: An object that uses *bindingAttr* and *args* to seek and identify the *typeName* constructor. If *binder* is null, the default binder is used.
+    - id: args
+      type: System.Object[]
+      description: An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If *args* is an empty array or null, the constructor that takes no parameters (the default constructor) is invoked.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: Culture-specific information that governs the coercion of *args* to the formal types declared for the *typeName* constructor. If *culture* is null, the @'System.Globalization.CultureInfo' for the current thread is used.
+    - id: activationAttributes
+      type: System.Object[]
+      description: An array of one or more attributes that can participate in activation. This is typically an array that contains a single @'System.Runtime.Remoting.Activation.UrlAttribute' object that specifies the URL that is required to activate a remote object.  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.
+    - id: securityAttributes
+      type: System.Security.Policy.Evidence
+      description: Information used to make security policy decisions and grant code permissions.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*domain* or *typeName* is null.'
+  - type: System.MissingMethodException
+    description: No matching constructor was found.
+  - type: System.TypeLoadException
+    description: '*typename* was not found in *assemblyFile*.'
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyFile* was not found.'
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor, which was invoked through reflection, threw an exception.
+  - type: System.Security.SecurityException
+    description: The caller does have the required @'System.Security.Permissions.FileIOPermission'.
+  - type: System.NotSupportedException
+    description: '*activationAttributes* is not an empty array, and the type being created does not derive from @''System.MarshalByRefObject''.'
+  - type: System.BadImageFormatException
+    description: '*assemblyFile* is not a valid assembly. -or-The common language runtime (CLR) version 2.0 or later is currently loaded, and *assemblyName* was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.'
+- uid: System.Activator.CreateInstanceFrom(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  id: CreateInstanceFrom(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateInstanceFrom(AppDomain, String, String, Boolean, BindingFlags, Binder, Object[], CultureInfo, Object[])
+  name.vb: CreateInstanceFrom(AppDomain, String, String, Boolean, BindingFlags, Binder, Object(), CultureInfo, Object())
+  fullName: System.Activator.CreateInstanceFrom(System.AppDomain, System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object[], System.Globalization.CultureInfo, System.Object[])
+  fullName.vb: System.Activator.CreateInstanceFrom(System.AppDomain, System.String, System.String, System.Boolean, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object(), System.Globalization.CultureInfo, System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 552
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the type whose name is specified in the specified remote domain, using the named assembly file and the constructor that best matches the specified parameters.
+  syntax:
+    content: public static ObjectHandle CreateInstanceFrom(AppDomain domain, string assemblyFile, string typeName, bool ignoreCase, BindingFlags bindingAttr, Binder binder, object[] args, CultureInfo culture, object[] activationAttributes)
+    content.vb: Public Shared Function CreateInstanceFrom(domain As AppDomain, assemblyFile As String, typeName As String, ignoreCase As Boolean, bindingAttr As BindingFlags, binder As Binder, args As Object(), culture As CultureInfo, activationAttributes As Object()) As ObjectHandle
+    parameters:
+    - id: domain
+      type: System.AppDomain
+      description: The remote domain where the type named *typeName* is created.
+    - id: assemblyFile
+      type: System.String
+      description: The name of a file that contains an assembly where the type named *typeName* is sought.
+    - id: typeName
+      type: System.String
+      description: The name of the preferred type.
+    - id: ignoreCase
+      type: System.Boolean
+      description: true to specify that the search for *typeName* is not case-sensitive; false to specify that the search is case-sensitive.
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+      description: A combination of zero or more bit flags that affect the search for the *typeName* constructor. If *bindingAttr* is zero, a case-sensitive search for public constructors is conducted.
+    - id: binder
+      type: System.Reflection.Binder
+      description: An object that uses *bindingAttr* and *args* to seek and identify the *typeName* constructor. If *binder* is null, the default binder is used.
+    - id: args
+      type: System.Object[]
+      description: An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If *args* is an empty array or null, the constructor that takes no parameters (the default constructor) is invoked.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: Culture-specific information that governs the coercion of *args* to the formal types declared for the *typeName* constructor. If *culture* is null, the @'System.Globalization.CultureInfo' for the current thread is used.
+    - id: activationAttributes
+      type: System.Object[]
+      description: An array of one or more attributes that can participate in activation. This is typically an array that contains a single @'System.Runtime.Remoting.Activation.UrlAttribute' object that specifies the URL that is required to activate a remote object. This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*domain* or *typeName* is null.'
+  - type: System.MissingMethodException
+    description: No matching constructor was found.
+  - type: System.TypeLoadException
+    description: '*typename* was not found in *assemblyFile*.'
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyFile* was not found.'
+  - type: System.MethodAccessException
+    description: The caller does not have permission to call this constructor.
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+  - type: System.Reflection.TargetInvocationException
+    description: The constructor, which was invoked through reflection, threw an exception.
+  - type: System.Security.SecurityException
+    description: The caller does have the required @'System.Security.Permissions.FileIOPermission'.
+  - type: System.NotSupportedException
+    description: '*activationAttributes* is not an empty array, and the type being created does not derive from @''System.MarshalByRefObject''.'
+  - type: System.BadImageFormatException
+    description: '*assemblyFile* is not a valid assembly. -or-*assemblyName* was compiled for a version of the common language runtime that is later than the version that is currently loaded.'
+- uid: System.Activator.CreateComInstanceFrom(System.String,System.String)
+  id: CreateComInstanceFrom(System.String,System.String)
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateComInstanceFrom(String, String)
+  fullName: System.Activator.CreateComInstanceFrom(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 599
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the COM object whose name is specified, using the named assembly file and the constructor that best matches the specified parameters.
+  syntax:
+    content: public static ObjectHandle CreateComInstanceFrom(string assemblyName, string typeName)
+    content.vb: Public Shared Function CreateComInstanceFrom(assemblyName As String, typeName As String) As ObjectHandle
+    parameters:
+    - id: assemblyName
+      type: System.String
+      description: The name of a file that contains an assembly where the type named *typeName* is sought.
+    - id: typeName
+      type: System.String
+      description: The name of the preferred type.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*typeName* or *assemblyName* is null.'
+  - type: System.TypeLoadException
+    description: An instance cannot be created through COM. -or-*typename* was not found in *assemblyName*.
+  - type: System.MissingMethodException
+    description: No matching constructor was found.
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyName* is not found, or the module you are trying to load does not specify a file name extension.'
+  - type: System.MemberAccessException
+    description: Cannot create an instance of an abstract class.-or-This member was invoked with a late-binding mechanism.
+  - type: System.NotSupportedException
+    description: The caller cannot provide activation attributes for an object that does not inherit from @'System.MarshalByRefObject'.
+  - type: System.ArgumentException
+    description: '*assemblyName* is the empty string ("").'
+- uid: System.Activator.CreateComInstanceFrom(System.String,System.String,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)
+  id: CreateComInstanceFrom(System.String,System.String,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)
+  parent: System.Activator
+  href: System.Activator.yml
+  name: CreateComInstanceFrom(String, String, Byte[], AssemblyHashAlgorithm)
+  name.vb: CreateComInstanceFrom(String, String, Byte(), AssemblyHashAlgorithm)
+  fullName: System.Activator.CreateComInstanceFrom(System.String, System.String, System.Byte[], System.Configuration.Assemblies.AssemblyHashAlgorithm)
+  fullName.vb: System.Activator.CreateComInstanceFrom(System.String, System.String, System.Byte(), System.Configuration.Assemblies.AssemblyHashAlgorithm)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 609
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates an instance of the COM object whose name is specified, using the named assembly file and the default constructor.
+  syntax:
+    content: public static ObjectHandle CreateComInstanceFrom(string assemblyName, string typeName, byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm)
+    content.vb: Public Shared Function CreateComInstanceFrom(assemblyName As String, typeName As String, hashValue As Byte(), hashAlgorithm As AssemblyHashAlgorithm) As ObjectHandle
+    parameters:
+    - id: assemblyName
+      type: System.String
+      description: The name of a file that contains an assembly where the type named *typeName* is sought.
+    - id: typeName
+      type: System.String
+      description: The name of the preferred type.
+    - id: hashValue
+      type: System.Byte[]
+      description: The value of the computed hash code.
+    - id: hashAlgorithm
+      type: System.Configuration.Assemblies.AssemblyHashAlgorithm
+      description: The hash algorithm used for hashing files and generating the strong name.
+    return:
+      type: System.Runtime.Remoting.ObjectHandle
+      description: A handle that must be unwrapped to access the newly created instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*typeName* or *assemblyName* is null.'
+  - type: System.ArgumentException
+    description: '*assemblyName* is the empty string ("").'
+  - type: System.IO.PathTooLongException
+    description: An assembly or module was loaded twice with two different evidences, or the assembly name is longer than MAX_PATH characters.
+  - type: System.IO.FileNotFoundException
+    description: '*assemblyName* is not found, or the module you are trying to load does not specify a file name extension.'
+  - type: System.IO.FileLoadException
+    description: '*assemblyName* is found but cannot be loaded.'
+  - type: System.BadImageFormatException
+    description: '*assemblyName* is not a valid assembly.'
+  - type: System.Security.SecurityException
+    description: A code base that does not start with "file://" was specified without the required WebPermission.
+  - type: System.TypeLoadException
+    description: An instance cannot be created through COM.-or- *typename* was not found in *assemblyName*.
+  - type: System.MissingMethodException
+    description: No matching constructor was found.
+  - type: System.MemberAccessException
+    description: An instance of an abstract class cannot be created. -or-This member was invoked with a late-binding mechanism.
+  - type: System.NotSupportedException
+    description: The caller cannot provide activation attributes for an object that does not inherit from @'System.MarshalByRefObject'.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Reflection.BindingFlags
+  parent: System.Reflection
+  isExternal: true
+  name: BindingFlags
+  fullName: System.Reflection.BindingFlags
+- uid: System.Reflection.Binder
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.Binder.yml
+  name: Binder
+  fullName: System.Reflection.Binder
+  type: Class
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  name.vb: Object()
+  fullName: System.Object[]
+  fullName.vb: System.Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  name: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Runtime.Remoting.ObjectHandle
+  parent: System.Runtime.Remoting
+  isExternal: false
+  href: System.Runtime.Remoting.ObjectHandle.yml
+  name: ObjectHandle
+  fullName: System.Runtime.Remoting.ObjectHandle
+  type: Class
+- uid: System.Runtime.Remoting
+  isExternal: false
+  name: System.Runtime.Remoting
+  fullName: System.Runtime.Remoting
+  type: Namespace
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Security.Policy.Evidence
+  parent: System.Security.Policy
+  isExternal: false
+  href: System.Security.Policy.Evidence.yml
+  name: Evidence
+  fullName: System.Security.Policy.Evidence
+  type: Class
+  summary: >-
+    The Evidence class keeps track of information that can be used to make security decisions about
+
+    an assembly or an AppDomain.  There are two types of evidence, one is supplied by the CLR or a
+
+    host, the other supplied by the assembly itself.
+
+
+
+    We keep a dictionary that maps each type of possbile evidence to an EvidenceTypeDescriptor which
+
+    contains the evidence objects themselves if they exist as well as some extra metadata about that
+
+    type of evidence.  This dictionary is fully populated with keys for host evidence at all times and
+
+    for assembly evidence the first time the application evidence is touched.  This means that if a
+
+    Type key does not exist in the dictionary, then that particular type of evidence will never be
+
+    given to the assembly or AppDomain in question as host evidence.  The only exception is if the
+
+    user later manually adds host evidence via the AddHostEvidence API.
+
+
+
+    Assembly supplied evidence is created up front, however host supplied evidence may be lazily
+
+    created.  In the lazy creation case, the Type will map to either an EvidenceTypeDescriptor that does
+
+    not contain any evidence data or null.  As requests come in for that evidence, we'll populate the
+
+    EvidenceTypeDescriptor appropriately.
+- uid: System.Security.Policy
+  isExternal: false
+  name: System.Security.Policy
+  fullName: System.Security.Policy
+  type: Namespace
+- uid: System.AppDomain
+  parent: System
+  isExternal: false
+  href: System.AppDomain.yml
+  name: AppDomain
+  fullName: System.AppDomain
+  type: Class
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Configuration.Assemblies.AssemblyHashAlgorithm
+  parent: System.Configuration.Assemblies
+  isExternal: false
+  href: System.Configuration.Assemblies.AssemblyHashAlgorithm.yml
+  name: AssemblyHashAlgorithm
+  fullName: System.Configuration.Assemblies.AssemblyHashAlgorithm
+  type: Enum
+- uid: System.Configuration.Assemblies
+  isExternal: false
+  name: System.Configuration.Assemblies
+  fullName: System.Configuration.Assemblies
+  type: Namespace

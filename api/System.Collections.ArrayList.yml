@@ -1,0 +1,1827 @@
+items:
+- uid: System.Collections.ArrayList
+  id: ArrayList
+  parent: System.Collections
+  children:
+  - System.Collections.ArrayList.#ctor
+  - System.Collections.ArrayList.#ctor(System.Collections.ICollection)
+  - System.Collections.ArrayList.#ctor(System.Int32)
+  - System.Collections.ArrayList.Adapter(System.Collections.IList)
+  - System.Collections.ArrayList.Add(System.Object)
+  - System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+  - System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+  - System.Collections.ArrayList.BinarySearch(System.Object)
+  - System.Collections.ArrayList.BinarySearch(System.Object,System.Collections.IComparer)
+  - System.Collections.ArrayList.Capacity
+  - System.Collections.ArrayList.Clear
+  - System.Collections.ArrayList.Clone
+  - System.Collections.ArrayList.Contains(System.Object)
+  - System.Collections.ArrayList.CopyTo(System.Array)
+  - System.Collections.ArrayList.CopyTo(System.Array,System.Int32)
+  - System.Collections.ArrayList.CopyTo(System.Int32,System.Array,System.Int32,System.Int32)
+  - System.Collections.ArrayList.Count
+  - System.Collections.ArrayList.FixedSize(System.Collections.ArrayList)
+  - System.Collections.ArrayList.FixedSize(System.Collections.IList)
+  - System.Collections.ArrayList.GetEnumerator
+  - System.Collections.ArrayList.GetEnumerator(System.Int32,System.Int32)
+  - System.Collections.ArrayList.GetRange(System.Int32,System.Int32)
+  - System.Collections.ArrayList.IndexOf(System.Object)
+  - System.Collections.ArrayList.IndexOf(System.Object,System.Int32)
+  - System.Collections.ArrayList.IndexOf(System.Object,System.Int32,System.Int32)
+  - System.Collections.ArrayList.Insert(System.Int32,System.Object)
+  - System.Collections.ArrayList.InsertRange(System.Int32,System.Collections.ICollection)
+  - System.Collections.ArrayList.IsFixedSize
+  - System.Collections.ArrayList.IsReadOnly
+  - System.Collections.ArrayList.IsSynchronized
+  - System.Collections.ArrayList.Item(System.Int32)
+  - System.Collections.ArrayList.LastIndexOf(System.Object)
+  - System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32)
+  - System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32,System.Int32)
+  - System.Collections.ArrayList.ReadOnly(System.Collections.ArrayList)
+  - System.Collections.ArrayList.ReadOnly(System.Collections.IList)
+  - System.Collections.ArrayList.Remove(System.Object)
+  - System.Collections.ArrayList.RemoveAt(System.Int32)
+  - System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+  - System.Collections.ArrayList.Repeat(System.Object,System.Int32)
+  - System.Collections.ArrayList.Reverse
+  - System.Collections.ArrayList.Reverse(System.Int32,System.Int32)
+  - System.Collections.ArrayList.SetRange(System.Int32,System.Collections.ICollection)
+  - System.Collections.ArrayList.Sort
+  - System.Collections.ArrayList.Sort(System.Collections.IComparer)
+  - System.Collections.ArrayList.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  - System.Collections.ArrayList.Synchronized(System.Collections.ArrayList)
+  - System.Collections.ArrayList.Synchronized(System.Collections.IList)
+  - System.Collections.ArrayList.SyncRoot
+  - System.Collections.ArrayList.ToArray
+  - System.Collections.ArrayList.ToArray(System.Type)
+  - System.Collections.ArrayList.TrimToSize
+  href: System.Collections.ArrayList.yml
+  name: ArrayList
+  fullName: System.Collections.ArrayList
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 34
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Implements the @'System.Collections.IList' interface using an array whose size is dynamically increased as required.To browse the .NET Framework source code for this type, see the Reference Source.
+  syntax:
+    content: 'public class ArrayList : IList, ICollection, IEnumerable'
+    content.vb: Public Class ArrayList Implements IList, ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.ArrayList.#ctor
+  id: '#ctor'
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: ArrayList()
+  fullName: System.Collections.ArrayList.ArrayList()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 58
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Initializes a new instance of the @'System.Collections.ArrayList' class that is empty and has the default initial capacity.
+  syntax:
+    content: public ArrayList()
+    content.vb: Public Sub New
+- uid: System.Collections.ArrayList.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: ArrayList(Int32)
+  fullName: System.Collections.ArrayList.ArrayList(System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 67
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Initializes a new instance of the @'System.Collections.ArrayList' class that is empty and has the specified initial capacity.
+  syntax:
+    content: public ArrayList(int capacity)
+    content.vb: Public Sub New(capacity As Integer)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: The number of elements that the new list can initially store.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*capacity* is less than zero.'
+- uid: System.Collections.ArrayList.#ctor(System.Collections.ICollection)
+  id: '#ctor(System.Collections.ICollection)'
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: ArrayList(ICollection)
+  fullName: System.Collections.ArrayList.ArrayList(System.Collections.ICollection)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 82
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Initializes a new instance of the @'System.Collections.ArrayList' class that contains elements copied from the specified collection and that has the same initial capacity as the number of elements copied.
+  syntax:
+    content: public ArrayList(ICollection c)
+    content.vb: Public Sub New(c As ICollection)
+    parameters:
+    - id: c
+      type: System.Collections.ICollection
+      description: The @'System.Collections.ICollection' whose elements are copied to the new list.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*c* is null.'
+- uid: System.Collections.ArrayList.Capacity
+  id: Capacity
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Capacity
+  fullName: System.Collections.ArrayList.Capacity
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 104
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets or sets the number of elements that the @'System.Collections.ArrayList' can contain.
+  syntax:
+    content: public virtual int Capacity { get; set; }
+    content.vb: Public Overridable Property Capacity As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements that the @'System.Collections.ArrayList' can contain.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '@''System.Collections.ArrayList.Capacity'' is set to a value that is less than @''System.Collections.ArrayList.Count''.'
+  - type: System.OutOfMemoryException
+    description: There is not enough memory available on the system.
+- uid: System.Collections.ArrayList.Count
+  id: Count
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Count
+  fullName: System.Collections.ArrayList.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 141
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets the number of elements actually contained in the @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual int Count { get; }
+    content.vb: Public Overridable ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements actually contained in the @'System.Collections.ArrayList'.
+- uid: System.Collections.ArrayList.IsFixedSize
+  id: IsFixedSize
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: IsFixedSize
+  fullName: System.Collections.ArrayList.IsFixedSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 150
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets a value indicating whether the @'System.Collections.ArrayList' has a fixed size.
+  syntax:
+    content: public virtual bool IsFixedSize { get; }
+    content.vb: Public Overridable ReadOnly Property IsFixedSize As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.ArrayList' has a fixed size; otherwise, false. The default is false.
+- uid: System.Collections.ArrayList.IsReadOnly
+  id: IsReadOnly
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: IsReadOnly
+  fullName: System.Collections.ArrayList.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 157
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets a value indicating whether the @'System.Collections.ArrayList' is read-only.
+  syntax:
+    content: public virtual bool IsReadOnly { get; }
+    content.vb: Public Overridable ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.ArrayList' is read-only; otherwise, false. The default is false.
+- uid: System.Collections.ArrayList.IsSynchronized
+  id: IsSynchronized
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: IsSynchronized
+  fullName: System.Collections.ArrayList.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 163
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets a value indicating whether access to the @'System.Collections.ArrayList' is synchronized (thread safe).
+  syntax:
+    content: public virtual bool IsSynchronized { get; }
+    content.vb: Public Overridable ReadOnly Property IsSynchronized As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if access to the @'System.Collections.ArrayList' is synchronized (thread safe); otherwise, false. The default is false.
+- uid: System.Collections.ArrayList.SyncRoot
+  id: SyncRoot
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: SyncRoot
+  fullName: System.Collections.ArrayList.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 169
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets an object that can be used to synchronize access to the @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual object SyncRoot { get; }
+    content.vb: Public Overridable ReadOnly Property SyncRoot As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: An object that can be used to synchronize access to the @'System.Collections.ArrayList'.
+- uid: System.Collections.ArrayList.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Collections.ArrayList.Item[System.Int32]
+  fullName.vb: System.Collections.ArrayList.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 183
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets or sets the element at the specified index.
+  syntax:
+    content: public virtual object this[int index] { get; set; }
+    content.vb: Public Overridable Property Item(index As Integer) As Object
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to get or set.
+    return:
+      type: System.Object
+      description: The element at the specified index.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *index* is equal to or greater than @''System.Collections.ArrayList.Count''.'
+- uid: System.Collections.ArrayList.Adapter(System.Collections.IList)
+  id: Adapter(System.Collections.IList)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Adapter(IList)
+  fullName: System.Collections.ArrayList.Adapter(System.Collections.IList)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 208
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Creates an @'System.Collections.ArrayList' wrapper for a specific @'System.Collections.IList'.
+  syntax:
+    content: public static ArrayList Adapter(IList list)
+    content.vb: Public Shared Function Adapter(list As IList) As ArrayList
+    parameters:
+    - id: list
+      type: System.Collections.IList
+      description: The @'System.Collections.IList' to wrap.
+    return:
+      type: System.Collections.ArrayList
+      description: The @'System.Collections.ArrayList' wrapper around the @'System.Collections.IList'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*list* is null.'
+- uid: System.Collections.ArrayList.Add(System.Object)
+  id: Add(System.Object)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Add(Object)
+  fullName: System.Collections.ArrayList.Add(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 221
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Adds an object to the end of the @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual int Add(object value)
+    content.vb: Public Overridable Function Add(value As Object) As Integer
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to be added to the end of the @'System.Collections.ArrayList'. The value can be null.
+    return:
+      type: System.Int32
+      description: The @'System.Collections.ArrayList' index at which the *value* has been added.
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.-or- The @'System.Collections.ArrayList' has a fixed size.
+- uid: System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+  id: AddRange(System.Collections.ICollection)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: AddRange(ICollection)
+  fullName: System.Collections.ArrayList.AddRange(System.Collections.ICollection)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 234
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Adds the elements of an @'System.Collections.ICollection' to the end of the @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual void AddRange(ICollection c)
+    content.vb: Public Overridable Sub AddRange(c As ICollection)
+    parameters:
+    - id: c
+      type: System.Collections.ICollection
+      description: The @'System.Collections.ICollection' whose elements should be added to the end of the @'System.Collections.ArrayList'. The collection itself cannot be null, but it can contain elements that are null.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*c* is null.'
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.-or- The @'System.Collections.ArrayList' has a fixed size.
+- uid: System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+  id: BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: BinarySearch(Int32, Int32, Object, IComparer)
+  fullName: System.Collections.ArrayList.BinarySearch(System.Int32, System.Int32, System.Object, System.Collections.IComparer)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 259
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Searches a range of elements in the sorted @'System.Collections.ArrayList' for an element using the specified comparer and returns the zero-based index of the element.
+  syntax:
+    content: public virtual int BinarySearch(int index, int count, object value, IComparer comparer)
+    content.vb: Public Overridable Function BinarySearch(index As Integer, count As Integer, value As Object, comparer As IComparer) As Integer
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based starting index of the range to search.
+    - id: count
+      type: System.Int32
+      description: The length of the range to search.
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to locate. The value can be null.
+    - id: comparer
+      type: System.Collections.IComparer
+      description: The @'System.Collections.IComparer' implementation to use when comparing elements.-or- null to use the default comparer that is the @'System.IComparable' implementation of each element.
+    return:
+      type: System.Int32
+      description: The zero-based index of *value* in the sorted @'System.Collections.ArrayList', if *value* is found; otherwise, a negative number, which is the bitwise complement of the index of the next element that is larger than *value* or, if there is no larger element, the bitwise complement of @'System.Collections.ArrayList.Count'.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*index* and *count* do not denote a valid range in the @''System.Collections.ArrayList''.-or- *comparer* is null and neither *value* nor the elements of @''System.Collections.ArrayList'' implement the @''System.IComparable'' interface.'
+  - type: System.InvalidOperationException
+    description: '*comparer* is null and *value* is not of the same type as the elements of the @''System.Collections.ArrayList''.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *count* is less than zero.'
+- uid: System.Collections.ArrayList.BinarySearch(System.Object)
+  id: BinarySearch(System.Object)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: BinarySearch(Object)
+  fullName: System.Collections.ArrayList.BinarySearch(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 274
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Searches the entire sorted @'System.Collections.ArrayList' for an element using the default comparer and returns the zero-based index of the element.
+  syntax:
+    content: public virtual int BinarySearch(object value)
+    content.vb: Public Overridable Function BinarySearch(value As Object) As Integer
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to locate. The value can be null.
+    return:
+      type: System.Int32
+      description: The zero-based index of *value* in the sorted @'System.Collections.ArrayList', if *value* is found; otherwise, a negative number, which is the bitwise complement of the index of the next element that is larger than *value* or, if there is no larger element, the bitwise complement of @'System.Collections.ArrayList.Count'.
+  exceptions:
+  - type: System.ArgumentException
+    description: Neither *value* nor the elements of @'System.Collections.ArrayList' implement the @'System.IComparable' interface.
+  - type: System.InvalidOperationException
+    description: '*value* is not of the same type as the elements of the @''System.Collections.ArrayList''.'
+- uid: System.Collections.ArrayList.BinarySearch(System.Object,System.Collections.IComparer)
+  id: BinarySearch(System.Object,System.Collections.IComparer)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: BinarySearch(Object, IComparer)
+  fullName: System.Collections.ArrayList.BinarySearch(System.Object, System.Collections.IComparer)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 280
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Searches the entire sorted @'System.Collections.ArrayList' for an element using the specified comparer and returns the zero-based index of the element.
+  syntax:
+    content: public virtual int BinarySearch(object value, IComparer comparer)
+    content.vb: Public Overridable Function BinarySearch(value As Object, comparer As IComparer) As Integer
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to locate. The value can be null.
+    - id: comparer
+      type: System.Collections.IComparer
+      description: The @'System.Collections.IComparer' implementation to use when comparing elements.-or- null to use the default comparer that is the @'System.IComparable' implementation of each element.
+    return:
+      type: System.Int32
+      description: The zero-based index of *value* in the sorted @'System.Collections.ArrayList', if *value* is found; otherwise, a negative number, which is the bitwise complement of the index of the next element that is larger than *value* or, if there is no larger element, the bitwise complement of @'System.Collections.ArrayList.Count'.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*comparer* is null and neither *value* nor the elements of @''System.Collections.ArrayList'' implement the @''System.IComparable'' interface.'
+  - type: System.InvalidOperationException
+    description: '*comparer* is null and *value* is not of the same type as the elements of the @''System.Collections.ArrayList''.'
+- uid: System.Collections.ArrayList.Clear
+  id: Clear
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Clear()
+  fullName: System.Collections.ArrayList.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 288
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Removes all elements from the @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual void Clear()
+    content.vb: Public Overridable Sub Clear
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.-or- The @'System.Collections.ArrayList' has a fixed size.
+- uid: System.Collections.ArrayList.Clone
+  id: Clone
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Clone()
+  fullName: System.Collections.ArrayList.Clone()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 301
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Creates a shallow copy of the @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual object Clone()
+    content.vb: Public Overridable Function Clone As Object
+    return:
+      type: System.Object
+      description: A shallow copy of the @'System.Collections.ArrayList'.
+- uid: System.Collections.ArrayList.Contains(System.Object)
+  id: Contains(System.Object)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Contains(Object)
+  fullName: System.Collections.ArrayList.Contains(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 316
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Determines whether an element is in the @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual bool Contains(object item)
+    content.vb: Public Overridable Function Contains(item As Object) As Boolean
+    parameters:
+    - id: item
+      type: System.Object
+      description: The @'System.Object' to locate in the @'System.Collections.ArrayList'. The value can be null.
+    return:
+      type: System.Boolean
+      description: true if *item* is found in the @'System.Collections.ArrayList'; otherwise, false.
+- uid: System.Collections.ArrayList.CopyTo(System.Array)
+  id: CopyTo(System.Array)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: CopyTo(Array)
+  fullName: System.Collections.ArrayList.CopyTo(System.Array)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 337
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Copies the entire @'System.Collections.ArrayList' to a compatible one-dimensional @'System.Array', starting at the beginning of the target array.
+  syntax:
+    content: public virtual void CopyTo(Array array)
+    content.vb: Public Overridable Sub CopyTo(array As Array)
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from @'System.Collections.ArrayList'. The @'System.Array' must have zero-based indexing.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or- The number of elements in the source @''System.Collections.ArrayList'' is greater than the number of elements that the destination *array* can contain.'
+  - type: System.InvalidCastException
+    description: The type of the source @'System.Collections.ArrayList' cannot be cast automatically to the type of the destination *array*.
+- uid: System.Collections.ArrayList.CopyTo(System.Array,System.Int32)
+  id: CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: CopyTo(Array, Int32)
+  fullName: System.Collections.ArrayList.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 345
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Copies the entire @'System.Collections.ArrayList' to a compatible one-dimensional @'System.Array', starting at the specified index of the target array.
+  syntax:
+    content: public virtual void CopyTo(Array array, int arrayIndex)
+    content.vb: Public Overridable Sub CopyTo(array As Array, arrayIndex As Integer)
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from @'System.Collections.ArrayList'. The @'System.Array' must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*arrayIndex* is less than zero.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or- The number of elements in the source @''System.Collections.ArrayList'' is greater than the available space from *arrayIndex* to the end of the destination *array*.'
+  - type: System.InvalidCastException
+    description: The type of the source @'System.Collections.ArrayList' cannot be cast automatically to the type of the destination *array*.
+- uid: System.Collections.ArrayList.CopyTo(System.Int32,System.Array,System.Int32,System.Int32)
+  id: CopyTo(System.Int32,System.Array,System.Int32,System.Int32)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: CopyTo(Int32, Array, Int32, Int32)
+  fullName: System.Collections.ArrayList.CopyTo(System.Int32, System.Array, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 358
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Copies a range of elements from the @'System.Collections.ArrayList' to a compatible one-dimensional @'System.Array', starting at the specified index of the target array.
+  syntax:
+    content: public virtual void CopyTo(int index, Array array, int arrayIndex, int count)
+    content.vb: Public Overridable Sub CopyTo(index As Integer, array As Array, arrayIndex As Integer, count As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index in the source @'System.Collections.ArrayList' at which copying begins.
+    - id: array
+      type: System.Array
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from @'System.Collections.ArrayList'. The @'System.Array' must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+    - id: count
+      type: System.Int32
+      description: The number of elements to copy.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *arrayIndex* is less than zero.-or- *count* is less than zero.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or- *index* is equal to or greater than the @''System.Collections.ArrayList.Count'' of the source @''System.Collections.ArrayList''.-or- The number of elements from *index* to the end of the source @''System.Collections.ArrayList'' is greater than the available space from *arrayIndex* to the end of the destination *array*.'
+  - type: System.InvalidCastException
+    description: The type of the source @'System.Collections.ArrayList' cannot be cast automatically to the type of the destination *array*.
+- uid: System.Collections.ArrayList.FixedSize(System.Collections.IList)
+  id: FixedSize(System.Collections.IList)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: FixedSize(IList)
+  fullName: System.Collections.ArrayList.FixedSize(System.Collections.IList)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 389
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns an @'System.Collections.IList' wrapper with a fixed size.
+  syntax:
+    content: public static IList FixedSize(IList list)
+    content.vb: Public Shared Function FixedSize(list As IList) As IList
+    parameters:
+    - id: list
+      type: System.Collections.IList
+      description: The @'System.Collections.IList' to wrap.
+    return:
+      type: System.Collections.IList
+      description: An @'System.Collections.IList' wrapper with a fixed size.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*list* is null.'
+- uid: System.Collections.ArrayList.FixedSize(System.Collections.ArrayList)
+  id: FixedSize(System.Collections.ArrayList)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: FixedSize(ArrayList)
+  fullName: System.Collections.ArrayList.FixedSize(System.Collections.ArrayList)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 401
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns an @'System.Collections.ArrayList' wrapper with a fixed size.
+  syntax:
+    content: public static ArrayList FixedSize(ArrayList list)
+    content.vb: Public Shared Function FixedSize(list As ArrayList) As ArrayList
+    parameters:
+    - id: list
+      type: System.Collections.ArrayList
+      description: The @'System.Collections.ArrayList' to wrap.
+    return:
+      type: System.Collections.ArrayList
+      description: An @'System.Collections.ArrayList' wrapper with a fixed size.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*list* is null.'
+- uid: System.Collections.ArrayList.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: GetEnumerator()
+  fullName: System.Collections.ArrayList.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 415
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns an enumerator for the entire @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual IEnumerator GetEnumerator()
+    content.vb: Public Overridable Function GetEnumerator As IEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: An @'System.Collections.IEnumerator' for the entire @'System.Collections.ArrayList'.
+- uid: System.Collections.ArrayList.GetEnumerator(System.Int32,System.Int32)
+  id: GetEnumerator(System.Int32,System.Int32)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: GetEnumerator(Int32, Int32)
+  fullName: System.Collections.ArrayList.GetEnumerator(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 426
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns an enumerator for a range of elements in the @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual IEnumerator GetEnumerator(int index, int count)
+    content.vb: Public Overridable Function GetEnumerator(index As Integer, count As Integer) As IEnumerator
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based starting index of the @'System.Collections.ArrayList' section that the enumerator should refer to.
+    - id: count
+      type: System.Int32
+      description: The number of elements in the @'System.Collections.ArrayList' section that the enumerator should refer to.
+    return:
+      type: System.Collections.IEnumerator
+      description: An @'System.Collections.IEnumerator' for the specified range of elements in the @'System.Collections.ArrayList'.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *count* is less than zero.'
+  - type: System.ArgumentException
+    description: '*index* and *count* do not specify a valid range in the @''System.Collections.ArrayList''.'
+- uid: System.Collections.ArrayList.IndexOf(System.Object)
+  id: IndexOf(System.Object)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: IndexOf(Object)
+  fullName: System.Collections.ArrayList.IndexOf(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 448
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Searches for the specified @'System.Object' and returns the zero-based index of the first occurrence within the entire @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual int IndexOf(object value)
+    content.vb: Public Overridable Function IndexOf(value As Object) As Integer
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to locate in the @'System.Collections.ArrayList'. The value can be null.
+    return:
+      type: System.Int32
+      description: The zero-based index of the first occurrence of *value* within the entire @'System.Collections.ArrayList', if found; otherwise, -1.
+- uid: System.Collections.ArrayList.IndexOf(System.Object,System.Int32)
+  id: IndexOf(System.Object,System.Int32)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: IndexOf(Object, Int32)
+  fullName: System.Collections.ArrayList.IndexOf(System.Object, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 463
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Searches for the specified @'System.Object' and returns the zero-based index of the first occurrence within the range of elements in the @'System.Collections.ArrayList' that extends from the specified index to the last element.
+  syntax:
+    content: public virtual int IndexOf(object value, int startIndex)
+    content.vb: Public Overridable Function IndexOf(value As Object, startIndex As Integer) As Integer
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to locate in the @'System.Collections.ArrayList'. The value can be null.
+    - id: startIndex
+      type: System.Int32
+      description: The zero-based starting index of the search. 0 (zero) is valid in an empty list.
+    return:
+      type: System.Int32
+      description: The zero-based index of the first occurrence of *value* within the range of elements in the @'System.Collections.ArrayList' that extends from *startIndex* to the last element, if found; otherwise, -1.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is outside the range of valid indexes for the @''System.Collections.ArrayList''.'
+- uid: System.Collections.ArrayList.IndexOf(System.Object,System.Int32,System.Int32)
+  id: IndexOf(System.Object,System.Int32,System.Int32)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: IndexOf(Object, Int32, Int32)
+  fullName: System.Collections.ArrayList.IndexOf(System.Object, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 481
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Searches for the specified @'System.Object' and returns the zero-based index of the first occurrence within the range of elements in the @'System.Collections.ArrayList' that starts at the specified index and contains the specified number of elements.
+  syntax:
+    content: public virtual int IndexOf(object value, int startIndex, int count)
+    content.vb: Public Overridable Function IndexOf(value As Object, startIndex As Integer, count As Integer) As Integer
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to locate in the @'System.Collections.ArrayList'. The value can be null.
+    - id: startIndex
+      type: System.Int32
+      description: The zero-based starting index of the search. 0 (zero) is valid in an empty list.
+    - id: count
+      type: System.Int32
+      description: The number of elements in the section to search.
+    return:
+      type: System.Int32
+      description: The zero-based index of the first occurrence of *value* within the range of elements in the @'System.Collections.ArrayList' that starts at *startIndex* and contains *count* number of elements, if found; otherwise, -1.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is outside the range of valid indexes for the @''System.Collections.ArrayList''.-or- *count* is less than zero.-or- *startIndex* and *count* do not specify a valid section in the @''System.Collections.ArrayList''.'
+- uid: System.Collections.ArrayList.Insert(System.Int32,System.Object)
+  id: Insert(System.Int32,System.Object)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Insert(Int32, Object)
+  fullName: System.Collections.ArrayList.Insert(System.Int32, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 495
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Inserts an element into the @'System.Collections.ArrayList' at the specified index.
+  syntax:
+    content: public virtual void Insert(int index, object value)
+    content.vb: Public Overridable Sub Insert(index As Integer, value As Object)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which *value* should be inserted.
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to insert. The value can be null.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *index* is greater than @''System.Collections.ArrayList.Count''.'
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.-or- The @'System.Collections.ArrayList' has a fixed size.
+- uid: System.Collections.ArrayList.InsertRange(System.Int32,System.Collections.ICollection)
+  id: InsertRange(System.Int32,System.Collections.ICollection)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: InsertRange(Int32, ICollection)
+  fullName: System.Collections.ArrayList.InsertRange(System.Int32, System.Collections.ICollection)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 517
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Inserts the elements of a collection into the @'System.Collections.ArrayList' at the specified index.
+  syntax:
+    content: public virtual void InsertRange(int index, ICollection c)
+    content.vb: Public Overridable Sub InsertRange(index As Integer, c As ICollection)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which the new elements should be inserted.
+    - id: c
+      type: System.Collections.ICollection
+      description: The @'System.Collections.ICollection' whose elements should be inserted into the @'System.Collections.ArrayList'. The collection itself cannot be null, but it can contain elements that are null.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*c* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *index* is greater than @''System.Collections.ArrayList.Count''.'
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.-or- The @'System.Collections.ArrayList' has a fixed size.
+- uid: System.Collections.ArrayList.LastIndexOf(System.Object)
+  id: LastIndexOf(System.Object)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: LastIndexOf(Object)
+  fullName: System.Collections.ArrayList.LastIndexOf(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 551
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Searches for the specified @'System.Object' and returns the zero-based index of the last occurrence within the entire @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual int LastIndexOf(object value)
+    content.vb: Public Overridable Function LastIndexOf(value As Object) As Integer
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to locate in the @'System.Collections.ArrayList'. The value can be null.
+    return:
+      type: System.Int32
+      description: The zero-based index of the last occurrence of *value* within the entire the @'System.Collections.ArrayList', if found; otherwise, -1.
+- uid: System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32)
+  id: LastIndexOf(System.Object,System.Int32)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: LastIndexOf(Object, Int32)
+  fullName: System.Collections.ArrayList.LastIndexOf(System.Object, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 566
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Searches for the specified @'System.Object' and returns the zero-based index of the last occurrence within the range of elements in the @'System.Collections.ArrayList' that extends from the first element to the specified index.
+  syntax:
+    content: public virtual int LastIndexOf(object value, int startIndex)
+    content.vb: Public Overridable Function LastIndexOf(value As Object, startIndex As Integer) As Integer
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to locate in the @'System.Collections.ArrayList'. The value can be null.
+    - id: startIndex
+      type: System.Int32
+      description: The zero-based starting index of the backward search.
+    return:
+      type: System.Int32
+      description: The zero-based index of the last occurrence of *value* within the range of elements in the @'System.Collections.ArrayList' that extends from the first element to *startIndex*, if found; otherwise, -1.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is outside the range of valid indexes for the @''System.Collections.ArrayList''.'
+- uid: System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32,System.Int32)
+  id: LastIndexOf(System.Object,System.Int32,System.Int32)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: LastIndexOf(Object, Int32, Int32)
+  fullName: System.Collections.ArrayList.LastIndexOf(System.Object, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 584
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Searches for the specified @'System.Object' and returns the zero-based index of the last occurrence within the range of elements in the @'System.Collections.ArrayList' that contains the specified number of elements and ends at the specified index.
+  syntax:
+    content: public virtual int LastIndexOf(object value, int startIndex, int count)
+    content.vb: Public Overridable Function LastIndexOf(value As Object, startIndex As Integer, count As Integer) As Integer
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to locate in the @'System.Collections.ArrayList'. The value can be null.
+    - id: startIndex
+      type: System.Int32
+      description: The zero-based starting index of the backward search.
+    - id: count
+      type: System.Int32
+      description: The number of elements in the section to search.
+    return:
+      type: System.Int32
+      description: The zero-based index of the last occurrence of *value* within the range of elements in the @'System.Collections.ArrayList' that contains *count* number of elements and ends at *startIndex*, if found; otherwise, -1.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is outside the range of valid indexes for the @''System.Collections.ArrayList''.-or- *count* is less than zero.-or- *startIndex* and *count* do not specify a valid section in the @''System.Collections.ArrayList''.'
+- uid: System.Collections.ArrayList.ReadOnly(System.Collections.IList)
+  id: ReadOnly(System.Collections.IList)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: ReadOnly(IList)
+  fullName: System.Collections.ArrayList.ReadOnly(System.Collections.IList)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 605
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns a read-only @'System.Collections.IList' wrapper.
+  syntax:
+    content: public static IList ReadOnly(IList list)
+    content.vb: Public Shared Function ReadOnly(list As IList) As IList
+    parameters:
+    - id: list
+      type: System.Collections.IList
+      description: The @'System.Collections.IList' to wrap.
+    return:
+      type: System.Collections.IList
+      description: A read-only @'System.Collections.IList' wrapper around *list*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*list* is null.'
+- uid: System.Collections.ArrayList.ReadOnly(System.Collections.ArrayList)
+  id: ReadOnly(System.Collections.ArrayList)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: ReadOnly(ArrayList)
+  fullName: System.Collections.ArrayList.ReadOnly(System.Collections.ArrayList)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 616
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns a read-only @'System.Collections.ArrayList' wrapper.
+  syntax:
+    content: public static ArrayList ReadOnly(ArrayList list)
+    content.vb: Public Shared Function ReadOnly(list As ArrayList) As ArrayList
+    parameters:
+    - id: list
+      type: System.Collections.ArrayList
+      description: The @'System.Collections.ArrayList' to wrap.
+    return:
+      type: System.Collections.ArrayList
+      description: A read-only @'System.Collections.ArrayList' wrapper around *list*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*list* is null.'
+- uid: System.Collections.ArrayList.Remove(System.Object)
+  id: Remove(System.Object)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Remove(Object)
+  fullName: System.Collections.ArrayList.Remove(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 628
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Removes the first occurrence of a specific object from the @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual void Remove(object obj)
+    content.vb: Public Overridable Sub Remove(obj As Object)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The @'System.Object' to remove from the @'System.Collections.ArrayList'. The value can be null.
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.-or- The @'System.Collections.ArrayList' has a fixed size.
+- uid: System.Collections.ArrayList.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: RemoveAt(Int32)
+  fullName: System.Collections.ArrayList.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 641
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Removes the element at the specified index of the @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual void RemoveAt(int index)
+    content.vb: Public Overridable Sub RemoveAt(index As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to remove.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *index* is equal to or greater than @''System.Collections.ArrayList.Count''.'
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.-or- The @'System.Collections.ArrayList' has a fixed size.
+- uid: System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)
+  id: RemoveRange(System.Int32,System.Int32)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: RemoveRange(Int32, Int32)
+  fullName: System.Collections.ArrayList.RemoveRange(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 659
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Removes a range of elements from the @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual void RemoveRange(int index, int count)
+    content.vb: Public Overridable Sub RemoveRange(index As Integer, count As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based starting index of the range of elements to remove.
+    - id: count
+      type: System.Int32
+      description: The number of elements to remove.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *count* is less than zero.'
+  - type: System.ArgumentException
+    description: '*index* and *count* do not denote a valid range of elements in the @''System.Collections.ArrayList''.'
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.-or- The @'System.Collections.ArrayList' has a fixed size.
+- uid: System.Collections.ArrayList.Repeat(System.Object,System.Int32)
+  id: Repeat(System.Object,System.Int32)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Repeat(Object, Int32)
+  fullName: System.Collections.ArrayList.Repeat(System.Object, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 686
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns an @'System.Collections.ArrayList' whose elements are copies of the specified value.
+  syntax:
+    content: public static ArrayList Repeat(object value, int count)
+    content.vb: Public Shared Function Repeat(value As Object, count As Integer) As ArrayList
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to copy multiple times in the new @'System.Collections.ArrayList'. The value can be null.
+    - id: count
+      type: System.Int32
+      description: The number of times *value* should be copied.
+    return:
+      type: System.Collections.ArrayList
+      description: An @'System.Collections.ArrayList' with *count* number of elements, all of which are copies of *value*.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is less than zero.'
+- uid: System.Collections.ArrayList.Reverse
+  id: Reverse
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Reverse()
+  fullName: System.Collections.ArrayList.Reverse()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 700
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Reverses the order of the elements in the entire @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual void Reverse()
+    content.vb: Public Overridable Sub Reverse
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.
+- uid: System.Collections.ArrayList.Reverse(System.Int32,System.Int32)
+  id: Reverse(System.Int32,System.Int32)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Reverse(Int32, Int32)
+  fullName: System.Collections.ArrayList.Reverse(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 713
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Reverses the order of the elements in the specified range.
+  syntax:
+    content: public virtual void Reverse(int index, int count)
+    content.vb: Public Overridable Sub Reverse(index As Integer, count As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based starting index of the range to reverse.
+    - id: count
+      type: System.Int32
+      description: The number of elements in the range to reverse.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *count* is less than zero.'
+  - type: System.ArgumentException
+    description: '*index* and *count* do not denote a valid range of elements in the @''System.Collections.ArrayList''.'
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.
+- uid: System.Collections.ArrayList.SetRange(System.Int32,System.Collections.ICollection)
+  id: SetRange(System.Int32,System.Collections.ICollection)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: SetRange(Int32, ICollection)
+  fullName: System.Collections.ArrayList.SetRange(System.Int32, System.Collections.ICollection)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 729
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Copies the elements of a collection over a range of elements in the @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual void SetRange(int index, ICollection c)
+    content.vb: Public Overridable Sub SetRange(index As Integer, c As ICollection)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based @'System.Collections.ArrayList' index at which to start copying the elements of *c*.
+    - id: c
+      type: System.Collections.ICollection
+      description: The @'System.Collections.ICollection' whose elements to copy to the @'System.Collections.ArrayList'. The collection itself cannot be null, but it can contain elements that are null.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *index* plus the number of elements in *c* is greater than @''System.Collections.ArrayList.Count''.'
+  - type: System.ArgumentNullException
+    description: '*c* is null.'
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.
+- uid: System.Collections.ArrayList.GetRange(System.Int32,System.Int32)
+  id: GetRange(System.Int32,System.Int32)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: GetRange(Int32, Int32)
+  fullName: System.Collections.ArrayList.GetRange(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 743
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns an @'System.Collections.ArrayList' which represents a subset of the elements in the source @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual ArrayList GetRange(int index, int count)
+    content.vb: Public Overridable Function GetRange(index As Integer, count As Integer) As ArrayList
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based @'System.Collections.ArrayList' index at which the range starts.
+    - id: count
+      type: System.Int32
+      description: The number of elements in the range.
+    return:
+      type: System.Collections.ArrayList
+      description: An @'System.Collections.ArrayList' which represents a subset of the elements in the source @'System.Collections.ArrayList'.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *count* is less than zero.'
+  - type: System.ArgumentException
+    description: '*index* and *count* do not denote a valid range of elements in the @''System.Collections.ArrayList''.'
+- uid: System.Collections.ArrayList.Sort
+  id: Sort
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Sort()
+  fullName: System.Collections.ArrayList.Sort()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 756
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Sorts the elements in the entire @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual void Sort()
+    content.vb: Public Overridable Sub Sort
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.
+- uid: System.Collections.ArrayList.Sort(System.Collections.IComparer)
+  id: Sort(System.Collections.IComparer)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Sort(IComparer)
+  fullName: System.Collections.ArrayList.Sort(System.Collections.IComparer)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 763
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Sorts the elements in the entire @'System.Collections.ArrayList' using the specified comparer.
+  syntax:
+    content: public virtual void Sort(IComparer comparer)
+    content.vb: Public Overridable Sub Sort(comparer As IComparer)
+    parameters:
+    - id: comparer
+      type: System.Collections.IComparer
+      description: The @'System.Collections.IComparer' implementation to use when comparing elements.-or- A null reference (Nothing in Visual Basic) to use the @'System.IComparable' implementation of each element.
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.
+  - type: System.InvalidOperationException
+    description: An error occurred while comparing two elements.
+  - type: System.ArgumentException
+    description: null is passed for *comparer*, and the elements in the list do not implement @'System.IComparable'.
+- uid: System.Collections.ArrayList.Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  id: Sort(System.Int32,System.Int32,System.Collections.IComparer)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Sort(Int32, Int32, IComparer)
+  fullName: System.Collections.ArrayList.Sort(System.Int32, System.Int32, System.Collections.IComparer)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 776
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Sorts the elements in a range of elements in @'System.Collections.ArrayList' using the specified comparer.
+  syntax:
+    content: public virtual void Sort(int index, int count, IComparer comparer)
+    content.vb: Public Overridable Sub Sort(index As Integer, count As Integer, comparer As IComparer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based starting index of the range to sort.
+    - id: count
+      type: System.Int32
+      description: The length of the range to sort.
+    - id: comparer
+      type: System.Collections.IComparer
+      description: The @'System.Collections.IComparer' implementation to use when comparing elements.-or- A null reference (Nothing in Visual Basic) to use the @'System.IComparable' implementation of each element.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *count* is less than zero.'
+  - type: System.ArgumentException
+    description: '*index* and *count* do not specify a valid range in the @''System.Collections.ArrayList''.'
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.
+  - type: System.InvalidOperationException
+    description: An error occurred while comparing two elements.
+- uid: System.Collections.ArrayList.Synchronized(System.Collections.IList)
+  id: Synchronized(System.Collections.IList)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Synchronized(IList)
+  fullName: System.Collections.ArrayList.Synchronized(System.Collections.IList)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 792
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns an @'System.Collections.IList' wrapper that is synchronized (thread safe).
+  syntax:
+    content: public static IList Synchronized(IList list)
+    content.vb: Public Shared Function Synchronized(list As IList) As IList
+    parameters:
+    - id: list
+      type: System.Collections.IList
+      description: The @'System.Collections.IList' to synchronize.
+    return:
+      type: System.Collections.IList
+      description: An @'System.Collections.IList' wrapper that is synchronized (thread safe).
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*list* is null.'
+- uid: System.Collections.ArrayList.Synchronized(System.Collections.ArrayList)
+  id: Synchronized(System.Collections.ArrayList)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: Synchronized(ArrayList)
+  fullName: System.Collections.ArrayList.Synchronized(System.Collections.ArrayList)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 803
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns an @'System.Collections.ArrayList' wrapper that is synchronized (thread safe).
+  syntax:
+    content: public static ArrayList Synchronized(ArrayList list)
+    content.vb: Public Shared Function Synchronized(list As ArrayList) As ArrayList
+    parameters:
+    - id: list
+      type: System.Collections.ArrayList
+      description: The @'System.Collections.ArrayList' to synchronize.
+    return:
+      type: System.Collections.ArrayList
+      description: An @'System.Collections.ArrayList' wrapper that is synchronized (thread safe).
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*list* is null.'
+- uid: System.Collections.ArrayList.ToArray
+  id: ToArray
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: ToArray()
+  fullName: System.Collections.ArrayList.ToArray()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 814
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Copies the elements of the @'System.Collections.ArrayList' to a new @'System.Object' array.
+  syntax:
+    content: public virtual object[] ToArray()
+    content.vb: Public Overridable Function ToArray As Object()
+    return:
+      type: System.Object[]
+      description: An @'System.Object' array containing copies of the elements of the @'System.Collections.ArrayList'.
+- uid: System.Collections.ArrayList.ToArray(System.Type)
+  id: ToArray(System.Type)
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: ToArray(Type)
+  fullName: System.Collections.ArrayList.ToArray(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 831
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Copies the elements of the @'System.Collections.ArrayList' to a new array of the specified element type.
+  syntax:
+    content: public virtual Array ToArray(Type type)
+    content.vb: Public Overridable Function ToArray(type As Type) As Array
+    parameters:
+    - id: type
+      type: System.Type
+      description: The element @'System.Type' of the destination array to create and copy elements to.
+    return:
+      type: System.Array
+      description: An array of the specified element type containing copies of the elements of the @'System.Collections.ArrayList'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*type* is null.'
+  - type: System.InvalidCastException
+    description: The type of the source @'System.Collections.ArrayList' cannot be cast automatically to the specified type.
+- uid: System.Collections.ArrayList.TrimToSize
+  id: TrimToSize
+  parent: System.Collections.ArrayList
+  href: System.Collections.ArrayList.yml
+  name: TrimToSize()
+  fullName: System.Collections.ArrayList.TrimToSize()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/ArrayList.cs
+    startLine: 852
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Sets the capacity to the actual number of elements in the @'System.Collections.ArrayList'.
+  syntax:
+    content: public virtual void TrimToSize()
+    content.vb: Public Overridable Sub TrimToSize
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.ArrayList' is read-only.-or- The @'System.Collections.ArrayList' has a fixed size.
+references:
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  name: IList
+  fullName: System.Collections.IList
+- uid: System.Collections.ArrayList
+  parent: System.Collections
+  isExternal: false
+  href: System.Collections.ArrayList.yml
+  name: ArrayList
+  fullName: System.Collections.ArrayList
+  type: Class
+- uid: System.Collections.IComparer
+  parent: System.Collections
+  isExternal: true
+  name: IComparer
+  fullName: System.Collections.IComparer
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  name.vb: Object()
+  fullName: System.Object[]
+  fullName.vb: System.Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type

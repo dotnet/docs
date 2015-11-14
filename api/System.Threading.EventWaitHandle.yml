@@ -1,0 +1,1679 @@
+items:
+- uid: System.Threading.EventWaitHandle
+  id: EventWaitHandle
+  parent: System.Threading
+  children:
+  - System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode)
+  - System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String)
+  - System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String,System.Boolean@)
+  - System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String,System.Boolean@,System.Security.AccessControl.EventWaitHandleSecurity)
+  - System.Threading.EventWaitHandle.OpenExisting(System.String)
+  - System.Threading.EventWaitHandle.OpenExisting(System.String,System.Security.AccessControl.EventWaitHandleRights)
+  - System.Threading.EventWaitHandle.Reset
+  - System.Threading.EventWaitHandle.Set
+  - System.Threading.EventWaitHandle.TryOpenExisting(System.String,System.Security.AccessControl.EventWaitHandleRights,System.Threading.EventWaitHandle@)
+  - System.Threading.EventWaitHandle.TryOpenExisting(System.String,System.Threading.EventWaitHandle@)
+  href: System.Threading.EventWaitHandle.yml
+  name: EventWaitHandle
+  fullName: System.Threading.EventWaitHandle
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Threading/EventWaitHandle.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/EventWaitHandle.cs
+    startLine: 40
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Represents a thread synchronization event.
+  syntax:
+    content: 'public class EventWaitHandle : WaitHandle, IDisposable'
+    content.vb: Public Class EventWaitHandle Inherits WaitHandle Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Threading.WaitHandle
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Threading.WaitHandle.WaitTimeout
+  - System.Threading.WaitHandle.InvalidHandle
+  - System.Threading.WaitHandle.Handle
+  - System.Threading.WaitHandle.SafeWaitHandle
+  - System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)
+  - System.Threading.WaitHandle.WaitOne(System.TimeSpan,System.Boolean)
+  - System.Threading.WaitHandle.WaitOne
+  - System.Threading.WaitHandle.WaitOne(System.Int32)
+  - System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+  - System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle)
+  - System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.TimeSpan,System.Boolean)
+  - System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.Int32,System.Boolean)
+  - System.Threading.WaitHandle.Close
+  - System.Threading.WaitHandle.Dispose(System.Boolean)
+  - System.Threading.WaitHandle.Dispose
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode)
+  id: '#ctor(System.Boolean,System.Threading.EventResetMode)'
+  parent: System.Threading.EventWaitHandle
+  href: System.Threading.EventWaitHandle.yml
+  name: EventWaitHandle(Boolean, EventResetMode)
+  fullName: System.Threading.EventWaitHandle.EventWaitHandle(System.Boolean, System.Threading.EventResetMode)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/EventWaitHandle.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes a new instance of the @'System.Threading.EventWaitHandle' class, specifying whether the wait handle is initially signaled, and whether it resets automatically or manually.
+  syntax:
+    content: public EventWaitHandle(bool initialState, EventResetMode mode)
+    content.vb: Public Sub New(initialState As Boolean, mode As EventResetMode)
+    parameters:
+    - id: initialState
+      type: System.Boolean
+      description: true to set the initial state to signaled; false to set it to nonsignaled.
+    - id: mode
+      type: System.Threading.EventResetMode
+      description: One of the @'System.Threading.EventResetMode' values that determines whether the event resets automatically or manually.
+- uid: System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String)
+  id: '#ctor(System.Boolean,System.Threading.EventResetMode,System.String)'
+  parent: System.Threading.EventWaitHandle
+  href: System.Threading.EventWaitHandle.yml
+  name: EventWaitHandle(Boolean, EventResetMode, String)
+  fullName: System.Threading.EventWaitHandle.EventWaitHandle(System.Boolean, System.Threading.EventResetMode, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/EventWaitHandle.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes a new instance of the @'System.Threading.EventWaitHandle' class, specifying whether the wait handle is initially signaled if created as a result of this call, whether it resets automatically or manually, and the name of a system synchronization event.
+  syntax:
+    content: public EventWaitHandle(bool initialState, EventResetMode mode, string name)
+    content.vb: Public Sub New(initialState As Boolean, mode As EventResetMode, name As String)
+    parameters:
+    - id: initialState
+      type: System.Boolean
+      description: true to set the initial state to signaled if the named event is created as a result of this call; false to set it to nonsignaled.
+    - id: mode
+      type: System.Threading.EventResetMode
+      description: One of the @'System.Threading.EventResetMode' values that determines whether the event resets automatically or manually.
+    - id: name
+      type: System.String
+      description: The name of a system-wide synchronization event.
+  exceptions:
+  - type: System.IO.IOException
+    description: A Win32 error occurred.
+  - type: System.UnauthorizedAccessException
+    description: The named event exists and has access control security, but the user does not have @'System.Security.AccessControl.EventWaitHandleRights.FullControl'.
+  - type: System.Threading.WaitHandleCannotBeOpenedException
+    description: The named event cannot be created, perhaps because a wait handle of a different type has the same name.
+  - type: System.ArgumentException
+    description: '*name* is longer than 260 characters.'
+- uid: System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String,System.Boolean@)
+  id: '#ctor(System.Boolean,System.Threading.EventResetMode,System.String,System.Boolean@)'
+  parent: System.Threading.EventWaitHandle
+  href: System.Threading.EventWaitHandle.yml
+  name: EventWaitHandle(Boolean, EventResetMode, String, out Boolean)
+  name.vb: EventWaitHandle(Boolean, EventResetMode, String, ByRef Boolean)
+  fullName: System.Threading.EventWaitHandle.EventWaitHandle(System.Boolean, System.Threading.EventResetMode, System.String, out System.Boolean)
+  fullName.vb: System.Threading.EventWaitHandle.EventWaitHandle(System.Boolean, System.Threading.EventResetMode, System.String, ByRef System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/EventWaitHandle.cs
+    startLine: 90
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes a new instance of the @'System.Threading.EventWaitHandle' class, specifying whether the wait handle is initially signaled if created as a result of this call, whether it resets automatically or manually, the name of a system synchronization event, and a Boolean variable whose value after the call indicates whether the named system event was created.
+  syntax:
+    content: public EventWaitHandle(bool initialState, EventResetMode mode, string name, out bool createdNew)
+    content.vb: Public Sub New(initialState As Boolean, mode As EventResetMode, name As String, ByRef createdNew As Boolean)
+    parameters:
+    - id: initialState
+      type: System.Boolean
+      description: true to set the initial state to signaled if the named event is created as a result of this call; false to set it to nonsignaled.
+    - id: mode
+      type: System.Threading.EventResetMode
+      description: One of the @'System.Threading.EventResetMode' values that determines whether the event resets automatically or manually.
+    - id: name
+      type: System.String
+      description: The name of a system-wide synchronization event.
+    - id: createdNew
+      type: System.Boolean
+      description: When this method returns, contains true if a local event was created (that is, if *name* is null or an empty string) or if the specified named system event was created; false if the specified named system event already existed. This parameter is passed uninitialized.
+  exceptions:
+  - type: System.IO.IOException
+    description: A Win32 error occurred.
+  - type: System.UnauthorizedAccessException
+    description: The named event exists and has access control security, but the user does not have @'System.Security.AccessControl.EventWaitHandleRights.FullControl'.
+  - type: System.Threading.WaitHandleCannotBeOpenedException
+    description: The named event cannot be created, perhaps because a wait handle of a different type has the same name.
+  - type: System.ArgumentException
+    description: '*name* is longer than 260 characters.'
+- uid: System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String,System.Boolean@,System.Security.AccessControl.EventWaitHandleSecurity)
+  id: '#ctor(System.Boolean,System.Threading.EventResetMode,System.String,System.Boolean@,System.Security.AccessControl.EventWaitHandleSecurity)'
+  parent: System.Threading.EventWaitHandle
+  href: System.Threading.EventWaitHandle.yml
+  name: EventWaitHandle(Boolean, EventResetMode, String, out Boolean, EventWaitHandleSecurity)
+  name.vb: EventWaitHandle(Boolean, EventResetMode, String, ByRef Boolean, EventWaitHandleSecurity)
+  fullName: System.Threading.EventWaitHandle.EventWaitHandle(System.Boolean, System.Threading.EventResetMode, System.String, out System.Boolean, System.Security.AccessControl.EventWaitHandleSecurity)
+  fullName.vb: System.Threading.EventWaitHandle.EventWaitHandle(System.Boolean, System.Threading.EventResetMode, System.String, ByRef System.Boolean, System.Security.AccessControl.EventWaitHandleSecurity)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/EventWaitHandle.cs
+    startLine: 96
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes a new instance of the @'System.Threading.EventWaitHandle' class, specifying whether the wait handle is initially signaled if created as a result of this call, whether it resets automatically or manually, the name of a system synchronization event, a Boolean variable whose value after the call indicates whether the named system event was created, and the access control security to be applied to the named event if it is created.
+  syntax:
+    content: public EventWaitHandle(bool initialState, EventResetMode mode, string name, out bool createdNew, EventWaitHandleSecurity eventSecurity)
+    content.vb: Public Sub New(initialState As Boolean, mode As EventResetMode, name As String, ByRef createdNew As Boolean, eventSecurity As EventWaitHandleSecurity)
+    parameters:
+    - id: initialState
+      type: System.Boolean
+      description: true to set the initial state to signaled if the named event is created as a result of this call; false to set it to nonsignaled.
+    - id: mode
+      type: System.Threading.EventResetMode
+      description: One of the @'System.Threading.EventResetMode' values that determines whether the event resets automatically or manually.
+    - id: name
+      type: System.String
+      description: The name of a system-wide synchronization event.
+    - id: createdNew
+      type: System.Boolean
+      description: When this method returns, contains true if a local event was created (that is, if *name* is null or an empty string) or if the specified named system event was created; false if the specified named system event already existed. This parameter is passed uninitialized.
+    - id: eventSecurity
+      type: System.Security.AccessControl.EventWaitHandleSecurity
+      description: An @'System.Security.AccessControl.EventWaitHandleSecurity' object that represents the access control security to be applied to the named system event.
+  exceptions:
+  - type: System.IO.IOException
+    description: A Win32 error occurred.
+  - type: System.UnauthorizedAccessException
+    description: The named event exists and has access control security, but the user does not have @'System.Security.AccessControl.EventWaitHandleRights.FullControl'.
+  - type: System.Threading.WaitHandleCannotBeOpenedException
+    description: The named event cannot be created, perhaps because a wait handle of a different type has the same name.
+  - type: System.ArgumentException
+    description: '*name* is longer than 260 characters.'
+- uid: System.Threading.EventWaitHandle.OpenExisting(System.String)
+  id: OpenExisting(System.String)
+  parent: System.Threading.EventWaitHandle
+  href: System.Threading.EventWaitHandle.yml
+  name: OpenExisting(String)
+  fullName: System.Threading.EventWaitHandle.OpenExisting(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/EventWaitHandle.cs
+    startLine: 162
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Opens the specified named synchronization event, if it already exists.
+  syntax:
+    content: public static EventWaitHandle OpenExisting(string name)
+    content.vb: Public Shared Function OpenExisting(name As String) As EventWaitHandle
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the system synchronization event to open.
+    return:
+      type: System.Threading.EventWaitHandle
+      description: An  object that represents the named system event.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*name* is an empty string. -or-*name* is longer than 260 characters.'
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.Threading.WaitHandleCannotBeOpenedException
+    description: The named system event does not exist.
+  - type: System.IO.IOException
+    description: A Win32 error occurred.
+  - type: System.UnauthorizedAccessException
+    description: The named event exists, but the user does not have the security access required to use it.
+- uid: System.Threading.EventWaitHandle.OpenExisting(System.String,System.Security.AccessControl.EventWaitHandleRights)
+  id: OpenExisting(System.String,System.Security.AccessControl.EventWaitHandleRights)
+  parent: System.Threading.EventWaitHandle
+  href: System.Threading.EventWaitHandle.yml
+  name: OpenExisting(String, EventWaitHandleRights)
+  fullName: System.Threading.EventWaitHandle.OpenExisting(System.String, System.Security.AccessControl.EventWaitHandleRights)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/EventWaitHandle.cs
+    startLine: 172
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Opens the specified named synchronization event, if it already exists, with the desired security access.
+  syntax:
+    content: public static EventWaitHandle OpenExisting(string name, EventWaitHandleRights rights)
+    content.vb: Public Shared Function OpenExisting(name As String, rights As EventWaitHandleRights) As EventWaitHandle
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the system synchronization event to open.
+    - id: rights
+      type: System.Security.AccessControl.EventWaitHandleRights
+      description: A bitwise combination of the enumeration values that represent the desired security access.
+    return:
+      type: System.Threading.EventWaitHandle
+      description: An object that represents the named system event.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*name* is an empty string.-or-*name* is longer than 260 characters.'
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.Threading.WaitHandleCannotBeOpenedException
+    description: The named system event does not exist.
+  - type: System.IO.IOException
+    description: A Win32 error occurred.
+  - type: System.UnauthorizedAccessException
+    description: The named event exists, but the user does not have the desired security access.
+- uid: System.Threading.EventWaitHandle.TryOpenExisting(System.String,System.Threading.EventWaitHandle@)
+  id: TryOpenExisting(System.String,System.Threading.EventWaitHandle@)
+  parent: System.Threading.EventWaitHandle
+  href: System.Threading.EventWaitHandle.yml
+  name: TryOpenExisting(String, out EventWaitHandle)
+  name.vb: TryOpenExisting(String, ByRef EventWaitHandle)
+  fullName: System.Threading.EventWaitHandle.TryOpenExisting(System.String, out System.Threading.EventWaitHandle)
+  fullName.vb: System.Threading.EventWaitHandle.TryOpenExisting(System.String, ByRef System.Threading.EventWaitHandle)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/EventWaitHandle.cs
+    startLine: 193
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Opens the specified named synchronization event, if it already exists, and returns a value that indicates whether the operation succeeded.
+  syntax:
+    content: public static bool TryOpenExisting(string name, out EventWaitHandle result)
+    content.vb: Public Shared Function TryOpenExisting(name As String, ByRef result As EventWaitHandle) As Boolean
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the system synchronization event to open.
+    - id: result
+      type: System.Threading.EventWaitHandle
+      description: When this method returns, contains a @'System.Threading.EventWaitHandle' object that represents the named synchronization event if the call succeeded, or null if the call failed. This parameter is treated as uninitialized.
+    return:
+      type: System.Boolean
+      description: true if the named synchronization event was opened successfully; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*name* is an empty string.-or-*name* is longer than 260 characters.'
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.IO.IOException
+    description: A Win32 error occurred.
+  - type: System.UnauthorizedAccessException
+    description: The named event exists, but the user does not have the desired security access.
+- uid: System.Threading.EventWaitHandle.TryOpenExisting(System.String,System.Security.AccessControl.EventWaitHandleRights,System.Threading.EventWaitHandle@)
+  id: TryOpenExisting(System.String,System.Security.AccessControl.EventWaitHandleRights,System.Threading.EventWaitHandle@)
+  parent: System.Threading.EventWaitHandle
+  href: System.Threading.EventWaitHandle.yml
+  name: TryOpenExisting(String, EventWaitHandleRights, out EventWaitHandle)
+  name.vb: TryOpenExisting(String, EventWaitHandleRights, ByRef EventWaitHandle)
+  fullName: System.Threading.EventWaitHandle.TryOpenExisting(System.String, System.Security.AccessControl.EventWaitHandleRights, out System.Threading.EventWaitHandle)
+  fullName.vb: System.Threading.EventWaitHandle.TryOpenExisting(System.String, System.Security.AccessControl.EventWaitHandleRights, ByRef System.Threading.EventWaitHandle)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/EventWaitHandle.cs
+    startLine: 203
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Opens the specified named synchronization event, if it already exists, with the desired security access, and returns a value that indicates whether the operation succeeded.
+  syntax:
+    content: public static bool TryOpenExisting(string name, EventWaitHandleRights rights, out EventWaitHandle result)
+    content.vb: Public Shared Function TryOpenExisting(name As String, rights As EventWaitHandleRights, ByRef result As EventWaitHandle) As Boolean
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the system synchronization event to open.
+    - id: rights
+      type: System.Security.AccessControl.EventWaitHandleRights
+      description: A bitwise combination of the enumeration values that represent the desired security access.
+    - id: result
+      type: System.Threading.EventWaitHandle
+      description: When this method returns, contains a @'System.Threading.EventWaitHandle' object that represents the named synchronization event if the call succeeded, or null if the call failed. This parameter is treated as uninitialized.
+    return:
+      type: System.Boolean
+      description: true if the named synchronization event was opened successfully; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*name* is an empty string.-or-*name* is longer than 260 characters.'
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.IO.IOException
+    description: A Win32 error occurred.
+  - type: System.UnauthorizedAccessException
+    description: The named event exists, but the user does not have the desired security access.
+- uid: System.Threading.EventWaitHandle.Reset
+  id: Reset
+  parent: System.Threading.EventWaitHandle
+  href: System.Threading.EventWaitHandle.yml
+  name: Reset()
+  fullName: System.Threading.EventWaitHandle.Reset()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/EventWaitHandle.cs
+    startLine: 257
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Sets the state of the event to nonsignaled, causing threads to block.
+  syntax:
+    content: public bool Reset()
+    content.vb: Public Function Reset As Boolean
+    return:
+      type: System.Boolean
+      description: true if the operation succeeds; otherwise, false.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.EventWaitHandle.Close' method was previously called on this @'System.Threading.EventWaitHandle'.
+- uid: System.Threading.EventWaitHandle.Set
+  id: Set
+  parent: System.Threading.EventWaitHandle
+  href: System.Threading.EventWaitHandle.yml
+  name: Set()
+  fullName: System.Threading.EventWaitHandle.Set()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/EventWaitHandle.cs
+    startLine: 265
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Sets the state of the event to signaled, allowing one or more waiting threads to proceed.
+  syntax:
+    content: public bool Set()
+    content.vb: Public Function Set As Boolean
+    return:
+      type: System.Boolean
+      description: true if the operation succeeds; otherwise, false.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.EventWaitHandle.Close' method was previously called on this @'System.Threading.EventWaitHandle'.
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Threading.WaitHandle
+  parent: System.Threading
+  isExternal: true
+  name: WaitHandle
+  fullName: System.Threading.WaitHandle
+- uid: System.Threading.WaitHandle.WaitTimeout
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitTimeout
+  fullName: System.Threading.WaitHandle.WaitTimeout
+- uid: System.Threading.WaitHandle.InvalidHandle
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: InvalidHandle
+  fullName: System.Threading.WaitHandle.InvalidHandle
+- uid: System.Threading.WaitHandle.Handle
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: Handle
+  fullName: System.Threading.WaitHandle.Handle
+- uid: System.Threading.WaitHandle.SafeWaitHandle
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: SafeWaitHandle
+  fullName: System.Threading.WaitHandle.SafeWaitHandle
+- uid: System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitOne(Int32, Boolean)
+  fullName: System.Threading.WaitHandle.WaitOne(System.Int32, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitOne(TimeSpan, Boolean)
+  fullName: System.Threading.WaitHandle.WaitOne(System.TimeSpan, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan,System.Boolean)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan,System.Boolean)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitOne
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitOne()
+  fullName: System.Threading.WaitHandle.WaitOne()
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitOne(System.Int32)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitOne(Int32)
+  fullName: System.Threading.WaitHandle.WaitOne(System.Int32)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne(System.Int32)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne(System.Int32)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitOne(TimeSpan)
+  fullName: System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAll(WaitHandle[], Int32, Boolean)
+  name.vb: WaitAll(WaitHandle(), Int32, Boolean)
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[], System.Int32, System.Boolean)
+  fullName.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle(), System.Int32, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAll(WaitHandle[], TimeSpan, Boolean)
+  name.vb: WaitAll(WaitHandle(), TimeSpan, Boolean)
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[], System.TimeSpan, System.Boolean)
+  fullName.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle(), System.TimeSpan, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAll(WaitHandle[])
+  name.vb: WaitAll(WaitHandle())
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+  fullName.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle())
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAll(WaitHandle[], Int32)
+  name.vb: WaitAll(WaitHandle(), Int32)
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[], System.Int32)
+  fullName.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle(), System.Int32)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAll(WaitHandle[], TimeSpan)
+  name.vb: WaitAll(WaitHandle(), TimeSpan)
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[], System.TimeSpan)
+  fullName.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle(), System.TimeSpan)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAny(WaitHandle[], Int32, Boolean)
+  name.vb: WaitAny(WaitHandle(), Int32, Boolean)
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], System.Int32, System.Boolean)
+  fullName.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle(), System.Int32, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAny(WaitHandle[], TimeSpan, Boolean)
+  name.vb: WaitAny(WaitHandle(), TimeSpan, Boolean)
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], System.TimeSpan, System.Boolean)
+  fullName.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle(), System.TimeSpan, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAny(WaitHandle[], TimeSpan)
+  name.vb: WaitAny(WaitHandle(), TimeSpan)
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], System.TimeSpan)
+  fullName.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle(), System.TimeSpan)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAny(WaitHandle[])
+  name.vb: WaitAny(WaitHandle())
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+  fullName.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle())
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAny(WaitHandle[], Int32)
+  name.vb: WaitAny(WaitHandle(), Int32)
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], System.Int32)
+  fullName.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle(), System.Int32)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: SignalAndWait(WaitHandle, WaitHandle)
+  fullName: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle, System.Threading.WaitHandle)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle)
+    name: SignalAndWait
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle)
+    name: SignalAndWait
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.TimeSpan,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: SignalAndWait(WaitHandle, WaitHandle, TimeSpan, Boolean)
+  fullName: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle, System.Threading.WaitHandle, System.TimeSpan, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.TimeSpan,System.Boolean)
+    name: SignalAndWait
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.TimeSpan,System.Boolean)
+    name: SignalAndWait
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.Int32,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: SignalAndWait(WaitHandle, WaitHandle, Int32, Boolean)
+  fullName: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle, System.Threading.WaitHandle, System.Int32, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.Int32,System.Boolean)
+    name: SignalAndWait
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.Int32,System.Boolean)
+    name: SignalAndWait
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.Close
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: Close()
+  fullName: System.Threading.WaitHandle.Close()
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.Close
+    name: Close
+    fullName: System.Threading.WaitHandle.Close
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.Close
+    name: Close
+    fullName: System.Threading.WaitHandle.Close
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.Dispose(System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: Dispose(Boolean)
+  fullName: System.Threading.WaitHandle.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.Threading.WaitHandle.Dispose
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.Threading.WaitHandle.Dispose
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.Dispose
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: Dispose()
+  fullName: System.Threading.WaitHandle.Dispose()
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.Dispose
+    name: Dispose
+    fullName: System.Threading.WaitHandle.Dispose
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.Dispose
+    name: Dispose
+    fullName: System.Threading.WaitHandle.Dispose
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.EventResetMode
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.EventResetMode.yml
+  name: EventResetMode
+  fullName: System.Threading.EventResetMode
+  type: Enum
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Security.AccessControl.EventWaitHandleSecurity
+  parent: System.Security.AccessControl
+  isExternal: false
+  href: System.Security.AccessControl.EventWaitHandleSecurity.yml
+  name: EventWaitHandleSecurity
+  fullName: System.Security.AccessControl.EventWaitHandleSecurity
+  type: Class
+- uid: System.Security.AccessControl
+  isExternal: false
+  name: System.Security.AccessControl
+  fullName: System.Security.AccessControl
+  type: Namespace
+- uid: System.Threading.EventWaitHandle
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.EventWaitHandle.yml
+  name: EventWaitHandle
+  fullName: System.Threading.EventWaitHandle
+  type: Class
+- uid: System.Security.AccessControl.EventWaitHandleRights
+  parent: System.Security.AccessControl
+  isExternal: false
+  href: System.Security.AccessControl.EventWaitHandleRights.yml
+  name: EventWaitHandleRights
+  fullName: System.Security.AccessControl.EventWaitHandleRights
+  type: Enum

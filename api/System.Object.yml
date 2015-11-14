@@ -1,0 +1,262 @@
+items:
+- uid: System.Object
+  id: Object
+  parent: System
+  children:
+  - System.Object.#ctor
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.Finalize
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  href: System.Object.yml
+  name: Object
+  fullName: System.Object
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Object.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Object.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Supports all classes in the .NET Framework class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all classes in the .NET Framework; it is the root of the type hierarchy.To browse the .NET Framework source code for this type, see the Reference Source.
+  syntax:
+    content: public class Object
+    content.vb: Public Class Object
+  inheritance: []
+- uid: System.Object.#ctor
+  id: '#ctor'
+  parent: System.Object
+  href: System.Object.yml
+  name: Object()
+  fullName: System.Object.Object()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Object.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.Object' class.
+  syntax:
+    content: public Object()
+    content.vb: Public Sub New
+- uid: System.Object.ToString
+  id: ToString
+  parent: System.Object
+  href: System.Object.yml
+  name: ToString()
+  fullName: System.Object.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Object.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a string that represents the current object.
+  syntax:
+    content: public virtual string ToString()
+    content.vb: Public Overridable Function ToString As String
+    return:
+      type: System.String
+      description: A string that represents the current object.
+- uid: System.Object.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Object
+  href: System.Object.yml
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Object.cs
+    startLine: 59
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether the specified object is equal to the current object.
+  syntax:
+    content: public virtual bool Equals(object obj)
+    content.vb: Public Overridable Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: true if the specified object  is equal to the current object; otherwise, false.
+- uid: System.Object.Equals(System.Object,System.Object)
+  id: Equals(System.Object,System.Object)
+  parent: System.Object
+  href: System.Object.yml
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Object.cs
+    startLine: 64
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether the specified object instances are considered equal.
+  syntax:
+    content: public static bool Equals(object objA, object objB)
+    content.vb: Public Shared Function Equals(objA As Object, objB As Object) As Boolean
+    parameters:
+    - id: objA
+      type: System.Object
+      description: The first object to compare.
+    - id: objB
+      type: System.Object
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if the objects are considered equal; otherwise, false. If both *objA* and *objB* are null, the method returns true.
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  id: ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  href: System.Object.yml
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Object.cs
+    startLine: 75
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether the specified @'System.Object' instances are the same instance.
+  syntax:
+    content: public static bool ReferenceEquals(object objA, object objB)
+    content.vb: Public Shared Function ReferenceEquals(objA As Object, objB As Object) As Boolean
+    parameters:
+    - id: objA
+      type: System.Object
+      description: The first object to compare.
+    - id: objB
+      type: System.Object
+      description: The second object  to compare.
+    return:
+      type: System.Boolean
+      description: true if *objA* is the same instance as *objB* or if both are null; otherwise, false.
+- uid: System.Object.GetHashCode
+  id: GetHashCode
+  parent: System.Object
+  href: System.Object.yml
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Object.cs
+    startLine: 90
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Serves as the default hash function.
+  syntax:
+    content: public virtual int GetHashCode()
+    content.vb: Public Overridable Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+- uid: System.Object.GetType
+  id: GetType
+  parent: System.Object
+  href: System.Object.yml
+  name: GetType()
+  fullName: System.Object.GetType()
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the @'System.Type' of the current instance.
+  syntax:
+    content: public Type GetType()
+    content.vb: Public Function GetType As Type
+    return:
+      type: System.Type
+      description: The exact runtime type of the current instance.
+- uid: System.Object.Finalize
+  id: Finalize
+  parent: System.Object
+  href: System.Object.yml
+  name: Finalize()
+  fullName: System.Object.Finalize()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Object.cs
+    startLine: 104
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+- uid: System.Object.MemberwiseClone
+  id: MemberwiseClone
+  parent: System.Object
+  href: System.Object.yml
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates a shallow copy of the current @'System.Object'.
+  syntax:
+    content: protected object MemberwiseClone()
+    content.vb: Protected Function MemberwiseClone As Object
+    return:
+      type: System.Object
+      description: A shallow copy of the current @'System.Object'.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type

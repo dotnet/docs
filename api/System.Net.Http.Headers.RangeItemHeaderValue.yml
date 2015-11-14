@@ -1,0 +1,481 @@
+items:
+- uid: System.Net.Http.Headers.RangeItemHeaderValue
+  id: RangeItemHeaderValue
+  parent: System.Net.Http.Headers
+  children:
+  - System.Net.Http.Headers.RangeItemHeaderValue.#ctor(System.Nullable{System.Int64},System.Nullable{System.Int64})
+  - System.Net.Http.Headers.RangeItemHeaderValue.Equals(System.Object)
+  - System.Net.Http.Headers.RangeItemHeaderValue.From
+  - System.Net.Http.Headers.RangeItemHeaderValue.GetHashCode
+  - System.Net.Http.Headers.RangeItemHeaderValue.To
+  - System.Net.Http.Headers.RangeItemHeaderValue.ToString
+  href: System.Net.Http.Headers.RangeItemHeaderValue.yml
+  name: RangeItemHeaderValue
+  fullName: System.Net.Http.Headers.RangeItemHeaderValue
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Net.Http/src/System/Net/Http/Headers/RangeItemHeaderValue.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.Http/src/System/Net/Http/Headers/RangeItemHeaderValue.cs
+    startLine: 9
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Represents a byte range in a Range header value.
+  syntax:
+    content: 'public class RangeItemHeaderValue : ICloneable'
+    content.vb: Public Class RangeItemHeaderValue Implements ICloneable
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Net.Http.Headers.RangeItemHeaderValue.From
+  id: From
+  parent: System.Net.Http.Headers.RangeItemHeaderValue
+  href: System.Net.Http.Headers.RangeItemHeaderValue.yml
+  name: From
+  fullName: System.Net.Http.Headers.RangeItemHeaderValue.From
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/RangeItemHeaderValue.cs
+    startLine: 14
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets the position at which to start sending data.
+  syntax:
+    content: public long ? From { get; }
+    content.vb: Public ReadOnly Property From As Long?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+      description: Returns @'System.Int64'.The position at which to start sending data.
+- uid: System.Net.Http.Headers.RangeItemHeaderValue.To
+  id: To
+  parent: System.Net.Http.Headers.RangeItemHeaderValue
+  href: System.Net.Http.Headers.RangeItemHeaderValue.yml
+  name: To
+  fullName: System.Net.Http.Headers.RangeItemHeaderValue.To
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/RangeItemHeaderValue.cs
+    startLine: 19
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets the position at which to stop sending data.
+  syntax:
+    content: public long ? To { get; }
+    content.vb: Public ReadOnly Property To As Long?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+      description: Returns @'System.Int64'.The position at which to stop sending data.
+- uid: System.Net.Http.Headers.RangeItemHeaderValue.#ctor(System.Nullable{System.Int64},System.Nullable{System.Int64})
+  id: '#ctor(System.Nullable{System.Int64},System.Nullable{System.Int64})'
+  parent: System.Net.Http.Headers.RangeItemHeaderValue
+  href: System.Net.Http.Headers.RangeItemHeaderValue.yml
+  name: RangeItemHeaderValue(Nullable<Int64>, Nullable<Int64>)
+  name.vb: RangeItemHeaderValue(Nullable(Of Int64), Nullable(Of Int64))
+  fullName: System.Net.Http.Headers.RangeItemHeaderValue.RangeItemHeaderValue(System.Nullable<System.Int64>, System.Nullable<System.Int64>)
+  fullName.vb: System.Net.Http.Headers.RangeItemHeaderValue.RangeItemHeaderValue(System.Nullable(Of System.Int64), System.Nullable(Of System.Int64))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/RangeItemHeaderValue.cs
+    startLine: 24
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Initializes a new instance of the @'System.Net.Http.Headers.RangeItemHeaderValue' class.
+  syntax:
+    content: public RangeItemHeaderValue(long ? from, long ? to)
+    content.vb: Public Sub New(from As Long?, to As Long?)
+    parameters:
+    - id: from
+      type: System.Nullable{System.Int64}
+      description: The position at which to start sending data.
+    - id: to
+      type: System.Nullable{System.Int64}
+      description: The position at which to stop sending data.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*from* is greater than *to*-or- *from* or *to* is less than 0.'
+- uid: System.Net.Http.Headers.RangeItemHeaderValue.ToString
+  id: ToString
+  parent: System.Net.Http.Headers.RangeItemHeaderValue
+  href: System.Net.Http.Headers.RangeItemHeaderValue.yml
+  name: ToString()
+  fullName: System.Net.Http.Headers.RangeItemHeaderValue.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/RangeItemHeaderValue.cs
+    startLine: 55
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Returns a string that represents the current @'System.Net.Http.Headers.RangeItemHeaderValue' object.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: Returns @'System.String'.A string that represents the current object.
+  overridden: System.Object.ToString
+- uid: System.Net.Http.Headers.RangeItemHeaderValue.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Net.Http.Headers.RangeItemHeaderValue
+  href: System.Net.Http.Headers.RangeItemHeaderValue.yml
+  name: Equals(Object)
+  fullName: System.Net.Http.Headers.RangeItemHeaderValue.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/RangeItemHeaderValue.cs
+    startLine: 69
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Determines whether the specified @'System.Object' is equal to the current @'System.Net.Http.Headers.RangeItemHeaderValue' object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: Returns @'System.Boolean'.true if the specified @'System.Object' is equal to the current object; otherwise, false.
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Net.Http.Headers.RangeItemHeaderValue.GetHashCode
+  id: GetHashCode
+  parent: System.Net.Http.Headers.RangeItemHeaderValue
+  href: System.Net.Http.Headers.RangeItemHeaderValue.yml
+  name: GetHashCode()
+  fullName: System.Net.Http.Headers.RangeItemHeaderValue.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/RangeItemHeaderValue.cs
+    startLine: 80
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Serves as a hash function for an @'System.Net.Http.Headers.RangeItemHeaderValue' object.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: Returns @'System.Int32'.A hash code for the current object.
+  overridden: System.Object.GetHashCode
+references:
+- uid: System.Net.Http.Headers
+  isExternal: false
+  name: System.Net.Http.Headers
+  fullName: System.Net.Http.Headers
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int64>
+  name.vb: Nullable(Of Int64)
+  fullName: System.Nullable<System.Int64>
+  fullName.vb: System.Nullable(Of System.Int64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  name.vb: Nullable(Of T)
+  fullName: System.Nullable<T>
+  fullName.vb: System.Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

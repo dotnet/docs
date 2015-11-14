@@ -1,0 +1,60 @@
+items:
+- uid: System.Reflection.MemberFilter
+  id: MemberFilter
+  parent: System.Reflection
+  children: []
+  href: System.Reflection.MemberFilter.yml
+  name: MemberFilter
+  fullName: System.Reflection.MemberFilter
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/MemberFilter.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/MemberFilter.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Represents a delegate that is used to filter a list of members represented in an array of @'System.Reflection.MemberInfo' objects.
+  syntax:
+    content: public delegate bool MemberFilter(MemberInfo m, object filterCriteria);
+    content.vb: Public Delegate Function MemberFilter(m As MemberInfo, filterCriteria As Object) As Boolean
+    parameters:
+    - id: m
+      type: System.Reflection.MemberInfo
+      description: The @'System.Reflection.MemberInfo' object to which the filter is applied.
+    - id: filterCriteria
+      type: System.Object
+      description: An arbitrary object used to filter the list.
+    return:
+      type: System.Boolean
+      description: true to include the member in the filtered list; otherwise false.
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Reflection.MemberInfo
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: MemberInfo
+  fullName: System.Reflection.MemberInfo
+  type: Class
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

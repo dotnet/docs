@@ -1,0 +1,578 @@
+items:
+- uid: System.Threading.Tasks.TaskCanceledException
+  id: TaskCanceledException
+  parent: System.Threading.Tasks
+  children:
+  - System.Threading.Tasks.TaskCanceledException.#ctor
+  - System.Threading.Tasks.TaskCanceledException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Threading.Tasks.TaskCanceledException.#ctor(System.String)
+  - System.Threading.Tasks.TaskCanceledException.#ctor(System.String,System.Exception)
+  - System.Threading.Tasks.TaskCanceledException.#ctor(System.Threading.Tasks.Task)
+  - System.Threading.Tasks.TaskCanceledException.Task
+  href: System.Threading.Tasks.TaskCanceledException.yml
+  name: TaskCanceledException
+  fullName: System.Threading.Tasks.TaskCanceledException
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Threading/Tasks/TaskCanceledException.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCanceledException.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Represents an exception used to communicate task cancellation.
+  syntax:
+    content: 'public class TaskCanceledException : OperationCanceledException, ISerializable, _Exception'
+    content.vb: Public Class TaskCanceledException Inherits OperationCanceledException Implements ISerializable, _Exception
+  inheritance:
+  - System.Object
+  - System.Exception
+  - System.SystemException
+  - System.OperationCanceledException
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  - System.Runtime.InteropServices._Exception
+  inheritedMembers:
+  - System.OperationCanceledException.CancellationToken
+  - System.Exception.Message
+  - System.Exception.Data
+  - System.Exception.GetBaseException
+  - System.Exception.InnerException
+  - System.Exception.TargetSite
+  - System.Exception.StackTrace
+  - System.Exception.HelpLink
+  - System.Exception.Source
+  - System.Exception.ToString
+  - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Exception.HResult
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.Tasks.TaskCanceledException.#ctor
+  id: '#ctor'
+  parent: System.Threading.Tasks.TaskCanceledException
+  href: System.Threading.Tasks.TaskCanceledException.yml
+  name: TaskCanceledException()
+  fullName: System.Threading.Tasks.TaskCanceledException.TaskCanceledException()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCanceledException.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Initializes a new instance of the @'System.Threading.Tasks.TaskCanceledException' class with a system-supplied message that describes the error.
+  syntax:
+    content: public TaskCanceledException()
+    content.vb: Public Sub New
+- uid: System.Threading.Tasks.TaskCanceledException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Threading.Tasks.TaskCanceledException
+  href: System.Threading.Tasks.TaskCanceledException.yml
+  name: TaskCanceledException(String)
+  fullName: System.Threading.Tasks.TaskCanceledException.TaskCanceledException(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCanceledException.cs
+    startLine: 40
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Initializes a new instance of the @'System.Threading.Tasks.TaskCanceledException' class with a specified message that describes the error.
+  syntax:
+    content: public TaskCanceledException(string message)
+    content.vb: Public Sub New(message As String)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.
+- uid: System.Threading.Tasks.TaskCanceledException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: System.Threading.Tasks.TaskCanceledException
+  href: System.Threading.Tasks.TaskCanceledException.yml
+  name: TaskCanceledException(String, Exception)
+  fullName: System.Threading.Tasks.TaskCanceledException.TaskCanceledException(System.String, System.Exception)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCanceledException.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Initializes a new instance of the @'System.Threading.Tasks.TaskCanceledException' class with a specified error message and a reference to the inner exception that is the cause of this exception.
+  syntax:
+    content: public TaskCanceledException(string message, Exception innerException)
+    content.vb: Public Sub New(message As String, innerException As Exception)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.
+    - id: innerException
+      type: System.Exception
+      description: The exception that is the cause of the current exception. If the *innerException* parameter is not null, the current exception is raised in a catch block that handles the inner exception.
+- uid: System.Threading.Tasks.TaskCanceledException.#ctor(System.Threading.Tasks.Task)
+  id: '#ctor(System.Threading.Tasks.Task)'
+  parent: System.Threading.Tasks.TaskCanceledException
+  href: System.Threading.Tasks.TaskCanceledException.yml
+  name: TaskCanceledException(Task)
+  fullName: System.Threading.Tasks.TaskCanceledException.TaskCanceledException(System.Threading.Tasks.Task)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCanceledException.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Initializes a new instance of the @'System.Threading.Tasks.TaskCanceledException' class with a reference to the @'System.Threading.Tasks.Task' that has been canceled.
+  syntax:
+    content: public TaskCanceledException(Task task)
+    content.vb: Public Sub New(task As Task)
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task
+      description: A task that has been canceled.
+- uid: System.Threading.Tasks.TaskCanceledException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: System.Threading.Tasks.TaskCanceledException
+  href: System.Threading.Tasks.TaskCanceledException.yml
+  name: TaskCanceledException(SerializationInfo, StreamingContext)
+  fullName: System.Threading.Tasks.TaskCanceledException.TaskCanceledException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCanceledException.cs
+    startLine: 72
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Initializes a new instance of the @'System.Threading.Tasks.TaskCanceledException' class with serialized data.
+  syntax:
+    content: protected TaskCanceledException(SerializationInfo info, StreamingContext context)
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The object that holds the serialized object data.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: The contextual information about the source or destination.
+- uid: System.Threading.Tasks.TaskCanceledException.Task
+  id: Task
+  parent: System.Threading.Tasks.TaskCanceledException
+  href: System.Threading.Tasks.TaskCanceledException.yml
+  name: Task
+  fullName: System.Threading.Tasks.TaskCanceledException.Task
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCanceledException.cs
+    startLine: 84
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Gets the task associated with this exception.
+  remarks: >-
+    It is permissible for no Task to be associated with a
+
+    @'System.Threading.Tasks.TaskCanceledException', in which case
+
+    this property will return null.
+  syntax:
+    content: public Task Task { get; }
+    content.vb: Public ReadOnly Property Task As Task
+    parameters: []
+    return:
+      type: System.Threading.Tasks.Task
+      description: A reference to the @'System.Threading.Tasks.Task' that is associated with this exception.
+references:
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: System.SystemException
+  parent: System
+  isExternal: true
+  name: SystemException
+  fullName: System.SystemException
+- uid: System.OperationCanceledException
+- uid: System.OperationCanceledException.CancellationToken
+  parent: System.OperationCanceledException
+  isExternal: false
+  href: System.OperationCanceledException.yml
+  name: CancellationToken
+  fullName: System.OperationCanceledException.CancellationToken
+- uid: System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  name: Message
+  fullName: System.Exception.Message
+- uid: System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  name: Data
+  fullName: System.Exception.Data
+- uid: System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  name: GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  name: InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  name: TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  name: StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  name: HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  name: Source
+  fullName: System.Exception.Source
+- uid: System.Exception.ToString
+  parent: System.Exception
+  isExternal: true
+  name: ToString()
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: ToString
+    fullName: System.Exception.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: ToString
+    fullName: System.Exception.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Exception
+  isExternal: true
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.Exception.GetObjectData
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.Exception.GetObjectData
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  name: HResult
+  fullName: System.Exception.HResult
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading.Tasks.TaskCanceledException
+  isExternal: false
+  href: System.Threading.Tasks.TaskCanceledException.yml
+  name: TaskCanceledException
+  fullName: System.Threading.Tasks.TaskCanceledException
+  type: Class
+  summary: Represents an exception used to communicate task cancellation.
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+  type: Class
+- uid: System.Runtime.Serialization.StreamingContext
+  isExternal: false
+  href: System.Runtime.Serialization.StreamingContext.yml
+  name: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+  type: Struct
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace

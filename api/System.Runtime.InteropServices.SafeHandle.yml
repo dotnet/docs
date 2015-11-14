@@ -1,0 +1,598 @@
+items:
+- uid: System.Runtime.InteropServices.SafeHandle
+  id: SafeHandle
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.SafeHandle.#ctor
+  - System.Runtime.InteropServices.SafeHandle.#ctor(System.IntPtr,System.Boolean)
+  - System.Runtime.InteropServices.SafeHandle.Close
+  - System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)
+  - System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
+  - System.Runtime.InteropServices.SafeHandle.DangerousRelease
+  - System.Runtime.InteropServices.SafeHandle.Dispose
+  - System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
+  - System.Runtime.InteropServices.SafeHandle.Finalize
+  - System.Runtime.InteropServices.SafeHandle.handle
+  - System.Runtime.InteropServices.SafeHandle.IsClosed
+  - System.Runtime.InteropServices.SafeHandle.IsInvalid
+  - System.Runtime.InteropServices.SafeHandle.ReleaseHandle
+  - System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
+  - System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: SafeHandle
+  fullName: System.Runtime.InteropServices.SafeHandle
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 135
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Represents a wrapper class for operating system handles. This class must be inherited.
+  syntax:
+    content: 'public abstract class SafeHandle : CriticalFinalizerObject, IDisposable'
+    content.vb: Public MustInherit Class SafeHandle Inherits CriticalFinalizerObject Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Runtime.ConstrainedExecution.CriticalFinalizerObject
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.InteropServices.SafeHandle.handle
+  id: handle
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: handle
+  fullName: System.Runtime.InteropServices.SafeHandle.handle
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 149
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Specifies the handle to be wrapped.
+  syntax:
+    content: protected IntPtr handle
+    content.vb: Protected handle As IntPtr
+- uid: System.Runtime.InteropServices.SafeHandle.#ctor(System.IntPtr,System.Boolean)
+  id: '#ctor(System.IntPtr,System.Boolean)'
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: SafeHandle(IntPtr, Boolean)
+  fullName: System.Runtime.InteropServices.SafeHandle.SafeHandle(System.IntPtr, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 159
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Initializes a new instance of the @'System.Runtime.InteropServices.SafeHandle' class with the specified invalid handle value.
+  syntax:
+    content: protected SafeHandle(IntPtr invalidHandleValue, bool ownsHandle)
+    content.vb: Protected Sub New(invalidHandleValue As IntPtr, ownsHandle As Boolean)
+    parameters:
+    - id: invalidHandleValue
+      type: System.IntPtr
+      description: The value of an invalid handle (usually 0 or -1).  Your implementation of @'System.Runtime.InteropServices.SafeHandle.IsInvalid' should return true for this value.
+    - id: ownsHandle
+      type: System.Boolean
+      description: true to reliably let @'System.Runtime.InteropServices.SafeHandle' release the handle during the finalization phase; otherwise, false (not recommended).
+  exceptions:
+  - type: System.TypeLoadException
+    description: The derived class resides in an assembly without unmanaged code access permission.
+- uid: System.Runtime.InteropServices.SafeHandle.#ctor
+  id: '#ctor'
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: SafeHandle()
+  fullName: System.Runtime.InteropServices.SafeHandle.SafeHandle()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 185
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  syntax:
+    content: protected SafeHandle()
+    content.vb: Protected Sub New
+- uid: System.Runtime.InteropServices.SafeHandle.Finalize
+  id: Finalize
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: Finalize()
+  fullName: System.Runtime.InteropServices.SafeHandle.Finalize()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 192
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Frees all resources associated with the handle.
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+- uid: System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
+  id: SetHandle(System.IntPtr)
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: SetHandle(IntPtr)
+  fullName: System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 202
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Sets the handle to the specified pre-existing handle.
+  syntax:
+    content: protected void SetHandle(IntPtr handle)
+    content.vb: Protected Sub SetHandle(handle As IntPtr)
+    parameters:
+    - id: handle
+      type: System.IntPtr
+      description: The pre-existing handle to use.
+- uid: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
+  id: DangerousGetHandle
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: DangerousGetHandle()
+  fullName: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 221
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Returns the value of the @'System.Runtime.InteropServices.SafeHandle.handle' field.
+  syntax:
+    content: public IntPtr DangerousGetHandle()
+    content.vb: Public Function DangerousGetHandle As IntPtr
+    return:
+      type: System.IntPtr
+      description: An IntPtr representing the value of the @'System.Runtime.InteropServices.SafeHandle.handle' field. If the handle has been marked invalid with @'System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid', this method still returns the original handle value, which can be a stale value.
+- uid: System.Runtime.InteropServices.SafeHandle.IsClosed
+  id: IsClosed
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: IsClosed
+  fullName: System.Runtime.InteropServices.SafeHandle.IsClosed
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 227
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Gets a value indicating whether the handle is closed.
+  syntax:
+    content: public bool IsClosed { get; }
+    content.vb: Public ReadOnly Property IsClosed As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the handle is closed; otherwise, false.
+- uid: System.Runtime.InteropServices.SafeHandle.IsInvalid
+  id: IsInvalid
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: IsInvalid
+  fullName: System.Runtime.InteropServices.SafeHandle.IsInvalid
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 232
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: When overridden in a derived class, gets a value indicating whether the handle value is invalid.
+  syntax:
+    content: public abstract bool IsInvalid { get; }
+    content.vb: Public MustOverride ReadOnly Property IsInvalid As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the handle value is invalid; otherwise, false.
+- uid: System.Runtime.InteropServices.SafeHandle.Close
+  id: Close
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: Close()
+  fullName: System.Runtime.InteropServices.SafeHandle.Close()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 237
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Marks the handle for releasing and freeing resources.
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close
+- uid: System.Runtime.InteropServices.SafeHandle.Dispose
+  id: Dispose
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: Dispose()
+  fullName: System.Runtime.InteropServices.SafeHandle.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 243
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Releases all resources used by the @'System.Runtime.InteropServices.SafeHandle' class.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: Dispose(Boolean)
+  fullName: System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 249
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Releases the unmanaged resources used by the @'System.Runtime.InteropServices.SafeHandle' class specifying whether to perform a normal dispose operation.
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: true for a normal dispose operation; false to finalize the handle.
+- uid: System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid
+  id: SetHandleAsInvalid
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: SetHandleAsInvalid()
+  fullName: System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid()
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Marks a handle as no longer used.
+  syntax:
+    content: public void SetHandleAsInvalid()
+    content.vb: Public Sub SetHandleAsInvalid
+- uid: System.Runtime.InteropServices.SafeHandle.ReleaseHandle
+  id: ReleaseHandle
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: ReleaseHandle()
+  fullName: System.Runtime.InteropServices.SafeHandle.ReleaseHandle()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 280
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: When overridden in a derived class, executes the code required to free the handle.
+  syntax:
+    content: protected abstract bool ReleaseHandle()
+    content.vb: Protected MustOverride Function ReleaseHandle As Boolean
+    return:
+      type: System.Boolean
+      description: true if the handle is released successfully; otherwise, in the event of a catastrophic failure, false. In this case, it generates a releaseHandleFailed MDA Managed Debugging Assistant.
+- uid: System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)
+  id: DangerousAddRef(System.Boolean@)
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: DangerousAddRef(ref Boolean)
+  name.vb: DangerousAddRef(ByRef Boolean)
+  fullName: System.Runtime.InteropServices.SafeHandle.DangerousAddRef(ref System.Boolean)
+  fullName.vb: System.Runtime.InteropServices.SafeHandle.DangerousAddRef(ByRef System.Boolean)
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Manually increments the reference counter on @'System.Runtime.InteropServices.SafeHandle' instances.
+  syntax:
+    content: public void DangerousAddRef(ref bool success)
+    content.vb: Public Sub DangerousAddRef(ByRef success As Boolean)
+    parameters:
+    - id: success
+      type: System.Boolean
+      description: true if the reference counter was successfully incremented; otherwise, false.
+- uid: System.Runtime.InteropServices.SafeHandle.DangerousRelease
+  id: DangerousRelease
+  parent: System.Runtime.InteropServices.SafeHandle
+  href: System.Runtime.InteropServices.SafeHandle.yml
+  name: DangerousRelease()
+  fullName: System.Runtime.InteropServices.SafeHandle.DangerousRelease()
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Manually decrements the reference counter on a @'System.Runtime.InteropServices.SafeHandle' instance.
+  syntax:
+    content: public void DangerousRelease()
+    content.vb: Public Sub DangerousRelease
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
+  parent: System.Runtime.ConstrainedExecution
+  isExternal: true
+  name: CriticalFinalizerObject
+  fullName: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.ConstrainedExecution
+  isExternal: false
+  name: System.Runtime.ConstrainedExecution
+  fullName: System.Runtime.ConstrainedExecution
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

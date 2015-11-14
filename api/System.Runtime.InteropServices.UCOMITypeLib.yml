@@ -1,0 +1,407 @@
+items:
+- uid: System.Runtime.InteropServices.UCOMITypeLib
+  id: UCOMITypeLib
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.UCOMITypeLib.FindName(System.String,System.Int32,System.Runtime.InteropServices.UCOMITypeInfo[],System.Int32[],System.Int16@)
+  - System.Runtime.InteropServices.UCOMITypeLib.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)
+  - System.Runtime.InteropServices.UCOMITypeLib.GetLibAttr(System.IntPtr@)
+  - System.Runtime.InteropServices.UCOMITypeLib.GetTypeComp(System.Runtime.InteropServices.UCOMITypeComp@)
+  - System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfo(System.Int32,System.Runtime.InteropServices.UCOMITypeInfo@)
+  - System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfoCount
+  - System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfoOfGuid(System.Guid@,System.Runtime.InteropServices.UCOMITypeInfo@)
+  - System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfoType(System.Int32,System.Runtime.InteropServices.TYPEKIND@)
+  - System.Runtime.InteropServices.UCOMITypeLib.IsName(System.String,System.Int32)
+  - System.Runtime.InteropServices.UCOMITypeLib.ReleaseTLibAttr(System.IntPtr)
+  href: System.Runtime.InteropServices.UCOMITypeLib.yml
+  name: UCOMITypeLib
+  fullName: System.Runtime.InteropServices.UCOMITypeLib
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeLib.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeLib.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Use @'System.Runtime.InteropServices.ComTypes.ITypeLib' instead.
+  syntax:
+    content: public interface UCOMITypeLib
+    content.vb: Public Interface UCOMITypeLib
+- uid: System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfoCount
+  id: GetTypeInfoCount
+  parent: System.Runtime.InteropServices.UCOMITypeLib
+  href: System.Runtime.InteropServices.UCOMITypeLib.yml
+  name: GetTypeInfoCount()
+  fullName: System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfoCount()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeLib.cs
+    startLine: 55
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Returns the number of type descriptions in the type library.
+  syntax:
+    content: int GetTypeInfoCount()
+    content.vb: Function GetTypeInfoCount As Integer
+    return:
+      type: System.Int32
+      description: The number of type descriptions in the type library.
+- uid: System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfo(System.Int32,System.Runtime.InteropServices.UCOMITypeInfo@)
+  id: GetTypeInfo(System.Int32,System.Runtime.InteropServices.UCOMITypeInfo@)
+  parent: System.Runtime.InteropServices.UCOMITypeLib
+  href: System.Runtime.InteropServices.UCOMITypeLib.yml
+  name: GetTypeInfo(Int32, out UCOMITypeInfo)
+  name.vb: GetTypeInfo(Int32, ByRef UCOMITypeInfo)
+  fullName: System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfo(System.Int32, out System.Runtime.InteropServices.UCOMITypeInfo)
+  fullName.vb: System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfo(System.Int32, ByRef System.Runtime.InteropServices.UCOMITypeInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeLib.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Retrieves the specified type description in the library.
+  syntax:
+    content: void GetTypeInfo(int index, out UCOMITypeInfo ppTI)
+    content.vb: Sub GetTypeInfo(index As Integer, ByRef ppTI As UCOMITypeInfo)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: Index of the UCOMITypeInfo interface to return.
+    - id: ppTI
+      type: System.Runtime.InteropServices.UCOMITypeInfo
+      description: On successful return, a UCOMITypeInfo describing the type referenced by *index*.
+- uid: System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfoType(System.Int32,System.Runtime.InteropServices.TYPEKIND@)
+  id: GetTypeInfoType(System.Int32,System.Runtime.InteropServices.TYPEKIND@)
+  parent: System.Runtime.InteropServices.UCOMITypeLib
+  href: System.Runtime.InteropServices.UCOMITypeLib.yml
+  name: GetTypeInfoType(Int32, out TYPEKIND)
+  name.vb: GetTypeInfoType(Int32, ByRef TYPEKIND)
+  fullName: System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfoType(System.Int32, out System.Runtime.InteropServices.TYPEKIND)
+  fullName.vb: System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfoType(System.Int32, ByRef System.Runtime.InteropServices.TYPEKIND)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeLib.cs
+    startLine: 58
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Retrieves the type of a type description.
+  syntax:
+    content: void GetTypeInfoType(int index, out TYPEKIND pTKind)
+    content.vb: Sub GetTypeInfoType(index As Integer, ByRef pTKind As TYPEKIND)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the type description within the type library.
+    - id: pTKind
+      type: System.Runtime.InteropServices.TYPEKIND
+      description: Reference to the TYPEKIND enumeration for the type description.
+- uid: System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfoOfGuid(System.Guid@,System.Runtime.InteropServices.UCOMITypeInfo@)
+  id: GetTypeInfoOfGuid(System.Guid@,System.Runtime.InteropServices.UCOMITypeInfo@)
+  parent: System.Runtime.InteropServices.UCOMITypeLib
+  href: System.Runtime.InteropServices.UCOMITypeLib.yml
+  name: GetTypeInfoOfGuid(ref Guid, out UCOMITypeInfo)
+  name.vb: GetTypeInfoOfGuid(ByRef Guid, ByRef UCOMITypeInfo)
+  fullName: System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfoOfGuid(ref System.Guid, out System.Runtime.InteropServices.UCOMITypeInfo)
+  fullName.vb: System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfoOfGuid(ByRef System.Guid, ByRef System.Runtime.InteropServices.UCOMITypeInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeLib.cs
+    startLine: 59
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Retrieves the type description that corresponds to the specified GUID.
+  syntax:
+    content: void GetTypeInfoOfGuid(ref Guid guid, out UCOMITypeInfo ppTInfo)
+    content.vb: Sub GetTypeInfoOfGuid(ByRef guid As Guid, ByRef ppTInfo As UCOMITypeInfo)
+    parameters:
+    - id: guid
+      type: System.Guid
+      description: IID of the interface of CLSID of the class whose type info is requested.
+    - id: ppTInfo
+      type: System.Runtime.InteropServices.UCOMITypeInfo
+      description: On successful return, the requested ITypeInfo interface.
+- uid: System.Runtime.InteropServices.UCOMITypeLib.GetLibAttr(System.IntPtr@)
+  id: GetLibAttr(System.IntPtr@)
+  parent: System.Runtime.InteropServices.UCOMITypeLib
+  href: System.Runtime.InteropServices.UCOMITypeLib.yml
+  name: GetLibAttr(out IntPtr)
+  name.vb: GetLibAttr(ByRef IntPtr)
+  fullName: System.Runtime.InteropServices.UCOMITypeLib.GetLibAttr(out System.IntPtr)
+  fullName.vb: System.Runtime.InteropServices.UCOMITypeLib.GetLibAttr(ByRef System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeLib.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Retrieves the structure that contains the library's attributes.
+  syntax:
+    content: void GetLibAttr(out IntPtr ppTLibAttr)
+    content.vb: Sub GetLibAttr(ByRef ppTLibAttr As IntPtr)
+    parameters:
+    - id: ppTLibAttr
+      type: System.IntPtr
+      description: On successful return, a structure that contains the library's attributes.
+- uid: System.Runtime.InteropServices.UCOMITypeLib.GetTypeComp(System.Runtime.InteropServices.UCOMITypeComp@)
+  id: GetTypeComp(System.Runtime.InteropServices.UCOMITypeComp@)
+  parent: System.Runtime.InteropServices.UCOMITypeLib
+  href: System.Runtime.InteropServices.UCOMITypeLib.yml
+  name: GetTypeComp(out UCOMITypeComp)
+  name.vb: GetTypeComp(ByRef UCOMITypeComp)
+  fullName: System.Runtime.InteropServices.UCOMITypeLib.GetTypeComp(out System.Runtime.InteropServices.UCOMITypeComp)
+  fullName.vb: System.Runtime.InteropServices.UCOMITypeLib.GetTypeComp(ByRef System.Runtime.InteropServices.UCOMITypeComp)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeLib.cs
+    startLine: 61
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Enables a client compiler to bind to a library's types, variables, constants, and global functions.
+  syntax:
+    content: void GetTypeComp(out UCOMITypeComp ppTComp)
+    content.vb: Sub GetTypeComp(ByRef ppTComp As UCOMITypeComp)
+    parameters:
+    - id: ppTComp
+      type: System.Runtime.InteropServices.UCOMITypeComp
+      description: On successful return, an instance of a UCOMITypeComp instance for this ITypeLib.
+- uid: System.Runtime.InteropServices.UCOMITypeLib.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)
+  id: GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)
+  parent: System.Runtime.InteropServices.UCOMITypeLib
+  href: System.Runtime.InteropServices.UCOMITypeLib.yml
+  name: GetDocumentation(Int32, out String, out String, out Int32, out String)
+  name.vb: GetDocumentation(Int32, ByRef String, ByRef String, ByRef Int32, ByRef String)
+  fullName: System.Runtime.InteropServices.UCOMITypeLib.GetDocumentation(System.Int32, out System.String, out System.String, out System.Int32, out System.String)
+  fullName.vb: System.Runtime.InteropServices.UCOMITypeLib.GetDocumentation(System.Int32, ByRef System.String, ByRef System.String, ByRef System.Int32, ByRef System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeLib.cs
+    startLine: 62
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Retrieves the library's documentation string, the complete Help file name and path, and the context identifier for the library Help topic in the Help file.
+  syntax:
+    content: void GetDocumentation(int index, out string strName, out string strDocString, out int dwHelpContext, out string strHelpFile)
+    content.vb: Sub GetDocumentation(index As Integer, ByRef strName As String, ByRef strDocString As String, ByRef dwHelpContext As Integer, ByRef strHelpFile As String)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: Index of the type description whose documentation is to be returned.
+    - id: strName
+      type: System.String
+      description: Returns a string that contains the name of the specified item.
+    - id: strDocString
+      type: System.String
+      description: Returns a string that contains the documentation string for the specified item.
+    - id: dwHelpContext
+      type: System.Int32
+      description: Returns the Help context identifier associated with the specified item.
+    - id: strHelpFile
+      type: System.String
+      description: Returns a string that contains the fully qualified name of the Help file.
+- uid: System.Runtime.InteropServices.UCOMITypeLib.IsName(System.String,System.Int32)
+  id: IsName(System.String,System.Int32)
+  parent: System.Runtime.InteropServices.UCOMITypeLib
+  href: System.Runtime.InteropServices.UCOMITypeLib.yml
+  name: IsName(String, Int32)
+  fullName: System.Runtime.InteropServices.UCOMITypeLib.IsName(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeLib.cs
+    startLine: 63
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates whether a passed-in string contains the name of a type or member described in the library.
+  syntax:
+    content: bool IsName(string szNameBuf, int lHashVal)
+    content.vb: Function IsName(szNameBuf As String, lHashVal As Integer) As Boolean
+    parameters:
+    - id: szNameBuf
+      type: System.String
+      description: The string to test.
+    - id: lHashVal
+      type: System.Int32
+      description: The hash value of *szNameBuf*.
+    return:
+      type: System.Boolean
+      description: true if *szNameBuf* was found in the type library; otherwise false.
+- uid: System.Runtime.InteropServices.UCOMITypeLib.FindName(System.String,System.Int32,System.Runtime.InteropServices.UCOMITypeInfo[],System.Int32[],System.Int16@)
+  id: FindName(System.String,System.Int32,System.Runtime.InteropServices.UCOMITypeInfo[],System.Int32[],System.Int16@)
+  parent: System.Runtime.InteropServices.UCOMITypeLib
+  href: System.Runtime.InteropServices.UCOMITypeLib.yml
+  name: FindName(String, Int32, UCOMITypeInfo[], Int32[], ref Int16)
+  name.vb: FindName(String, Int32, UCOMITypeInfo(), Int32(), ByRef Int16)
+  fullName: System.Runtime.InteropServices.UCOMITypeLib.FindName(System.String, System.Int32, System.Runtime.InteropServices.UCOMITypeInfo[], System.Int32[], ref System.Int16)
+  fullName.vb: System.Runtime.InteropServices.UCOMITypeLib.FindName(System.String, System.Int32, System.Runtime.InteropServices.UCOMITypeInfo(), System.Int32(), ByRef System.Int16)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeLib.cs
+    startLine: 65
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Finds occurrences of a type description in a type library.
+  syntax:
+    content: void FindName(string szNameBuf, int lHashVal, UCOMITypeInfo[] ppTInfo, int[] rgMemId, ref short pcFound)
+    content.vb: Sub FindName(szNameBuf As String, lHashVal As Integer, ppTInfo As UCOMITypeInfo(), rgMemId As Integer(), ByRef pcFound As Short)
+    parameters:
+    - id: szNameBuf
+      type: System.String
+      description: The name to search for.
+    - id: lHashVal
+      type: System.Int32
+      description: A hash value to speed up the search, computed by the LHashValOfNameSys function. If *lHashVal* is 0, a value is computed.
+    - id: ppTInfo
+      type: System.Runtime.InteropServices.UCOMITypeInfo[]
+      description: On successful return, an array of pointers to the type descriptions that contain the name specified in *szNameBuf*.
+    - id: rgMemId
+      type: System.Int32[]
+      description: An array of the MEMBERID 's of the found items; *rgMemId* [i] is the MEMBERID that indexes into the type description specified by *ppTInfo* [i]. Cannot be null.
+    - id: pcFound
+      type: System.Int16
+      description: On entry, indicates how many instances to look for. For example, *pcFound* = 1 can be called to find the first occurrence. The search stops when one instance is found.On exit, indicates the number of instances that were found. If the in and out values of *pcFound* are identical, there might be more type descriptions that contain the name.
+- uid: System.Runtime.InteropServices.UCOMITypeLib.ReleaseTLibAttr(System.IntPtr)
+  id: ReleaseTLibAttr(System.IntPtr)
+  parent: System.Runtime.InteropServices.UCOMITypeLib
+  href: System.Runtime.InteropServices.UCOMITypeLib.yml
+  name: ReleaseTLibAttr(IntPtr)
+  fullName: System.Runtime.InteropServices.UCOMITypeLib.ReleaseTLibAttr(System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeLib.cs
+    startLine: 66
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Releases the @'System.Runtime.InteropServices.TYPELIBATTR' originally obtained from @'System.Runtime.InteropServices.UCOMITypeLib.GetLibAttr(System.IntPtr@)'.
+  syntax:
+    content: void ReleaseTLibAttr(IntPtr pTLibAttr)
+    content.vb: Sub ReleaseTLibAttr(pTLibAttr As IntPtr)
+    parameters:
+    - id: pTLibAttr
+      type: System.IntPtr
+      description: The TLIBATTR to release.
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.InteropServices.UCOMITypeInfo
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMITypeInfo.yml
+  name: UCOMITypeInfo
+  fullName: System.Runtime.InteropServices.UCOMITypeInfo
+  type: Interface
+- uid: System.Runtime.InteropServices.TYPEKIND
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.TYPEKIND.yml
+  name: TYPEKIND
+  fullName: System.Runtime.InteropServices.TYPEKIND
+  type: Enum
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: System.Runtime.InteropServices.UCOMITypeComp
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMITypeComp.yml
+  name: UCOMITypeComp
+  fullName: System.Runtime.InteropServices.UCOMITypeComp
+  type: Interface
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Runtime.InteropServices.UCOMITypeInfo[]
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMITypeInfo.yml
+  name: UCOMITypeInfo[]
+  name.vb: UCOMITypeInfo()
+  fullName: System.Runtime.InteropServices.UCOMITypeInfo[]
+  fullName.vb: System.Runtime.InteropServices.UCOMITypeInfo()
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.UCOMITypeInfo
+    name: UCOMITypeInfo
+    fullName: System.Runtime.InteropServices.UCOMITypeInfo
+    href: System.Runtime.InteropServices.UCOMITypeInfo.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Runtime.InteropServices.UCOMITypeInfo
+    name: UCOMITypeInfo
+    fullName: System.Runtime.InteropServices.UCOMITypeInfo
+    href: System.Runtime.InteropServices.UCOMITypeInfo.yml
+  - name: ()
+    fullName: ()
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  name.vb: Int32()
+  fullName: System.Int32[]
+  fullName.vb: System.Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16

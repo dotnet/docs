@@ -1,0 +1,558 @@
+items:
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState
+  id: IsolatedStorageSecurityState
+  parent: System.IO.IsolatedStorage
+  children:
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityState.AvailableFreeSpace
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityState.AvailableFreeSpaceComputed
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityState.EnsureState
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityState.Group
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityState.Id
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityState.IsolatedStorageFolderName
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityState.Options
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityState.Quota
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityState.RootUserDirectory
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityState.UsedSize
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityState.yml
+  name: IsolatedStorageSecurityState
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityState
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  summary: Provides settings for maintaining the quota size for isolated storage.
+  syntax:
+    content: 'public class IsolatedStorageSecurityState : SecurityState'
+    content.vb: Public Class IsolatedStorageSecurityState Inherits SecurityState
+  inheritance:
+  - System.Object
+  - System.Security.SecurityState
+  inheritedMembers:
+  - System.Security.SecurityState.IsStateAvailable
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState.Options
+  id: Options
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityState
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityState.yml
+  name: Options
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityState.Options
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 121
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  summary: Gets the option for managing isolated storage security.
+  syntax:
+    content: public IsolatedStorageSecurityOptions Options { get; }
+    content.vb: Public ReadOnly Property Options As IsolatedStorageSecurityOptions
+    parameters: []
+    return:
+      type: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
+      description: The option to increase the isolated quota storage size.
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState.Group
+  id: Group
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityState
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityState.yml
+  name: Group
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityState.Group
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 129
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public string Group { get; set; }
+    content.vb: Public Property Group As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState.Id
+  id: Id
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityState
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityState.yml
+  name: Id
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityState.Id
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 140
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public string Id { get; set; }
+    content.vb: Public Property Id As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState.RootUserDirectory
+  id: RootUserDirectory
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityState
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityState.yml
+  name: RootUserDirectory
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityState.RootUserDirectory
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 151
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public string RootUserDirectory { get; set; }
+    content.vb: Public Property RootUserDirectory As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState.UsedSize
+  id: UsedSize
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityState
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityState.yml
+  name: UsedSize
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityState.UsedSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 164
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  summary: Gets the current usage size in isolated storage.
+  syntax:
+    content: public long UsedSize { get; }
+    content.vb: Public ReadOnly Property UsedSize As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: The current usage size, in bytes.
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState.Quota
+  id: Quota
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityState
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityState.yml
+  name: Quota
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityState.Quota
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 170
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  summary: Gets or sets the current size of the quota for isolated storage.
+  syntax:
+    content: public long Quota { get; set; }
+    content.vb: Public Property Quota As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: The current quota size, in bytes.
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState.AvailableFreeSpace
+  id: AvailableFreeSpace
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityState
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityState.yml
+  name: AvailableFreeSpace
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityState.AvailableFreeSpace
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 181
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public long AvailableFreeSpace { get; set; }
+    content.vb: Public Property AvailableFreeSpace As Long
+    parameters: []
+    return:
+      type: System.Int64
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState.AvailableFreeSpaceComputed
+  id: AvailableFreeSpaceComputed
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityState
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityState.yml
+  name: AvailableFreeSpaceComputed
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityState.AvailableFreeSpaceComputed
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 191
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public bool AvailableFreeSpaceComputed { get; set; }
+    content.vb: Public Property AvailableFreeSpaceComputed As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState.IsolatedStorageFolderName
+  id: IsolatedStorageFolderName
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityState
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityState.yml
+  name: IsolatedStorageFolderName
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityState.IsolatedStorageFolderName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 196
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public string IsolatedStorageFolderName { get; set; }
+    content.vb: Public Property IsolatedStorageFolderName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState.EnsureState
+  id: EnsureState
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityState
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityState.yml
+  name: EnsureState()
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityState.EnsureState()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 202
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public override void EnsureState()
+    content.vb: Public Overrides Sub EnsureState
+  overridden: System.Security.SecurityState.EnsureState
+  exceptions:
+  - type: System.IO.IsolatedStorage.IsolatedStorageException
+    description: The state is not available.
+references:
+- uid: System.IO.IsolatedStorage
+  isExternal: false
+  name: System.IO.IsolatedStorage
+  fullName: System.IO.IsolatedStorage
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Security.SecurityState
+  parent: System.Security
+  isExternal: false
+  href: System.Security.SecurityState.yml
+  name: SecurityState
+  fullName: System.Security.SecurityState
+  type: Class
+- uid: System.Security.SecurityState.IsStateAvailable
+  parent: System.Security.SecurityState
+  isExternal: false
+  href: System.Security.SecurityState.yml
+  name: IsStateAvailable()
+  fullName: System.Security.SecurityState.IsStateAvailable()
+  spec.csharp:
+  - uid: System.Security.SecurityState.IsStateAvailable
+    name: IsStateAvailable
+    fullName: System.Security.SecurityState.IsStateAvailable
+    href: System.Security.SecurityState.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.SecurityState.IsStateAvailable
+    name: IsStateAvailable
+    fullName: System.Security.SecurityState.IsStateAvailable
+    href: System.Security.SecurityState.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Security
+  isExternal: false
+  name: System.Security
+  fullName: System.Security
+  type: Namespace
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
+  parent: System.IO.IsolatedStorage
+  isExternal: false
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.yml
+  name: IsolatedStorageSecurityOptions
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
+  type: Enum
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Security.SecurityState.EnsureState
+  parent: System.Security.SecurityState
+  isExternal: false
+  href: System.Security.SecurityState.yml
+  name: EnsureState()
+  fullName: System.Security.SecurityState.EnsureState()
+  spec.csharp:
+  - uid: System.Security.SecurityState.EnsureState
+    name: EnsureState
+    fullName: System.Security.SecurityState.EnsureState
+    href: System.Security.SecurityState.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.SecurityState.EnsureState
+    name: EnsureState
+    fullName: System.Security.SecurityState.EnsureState
+    href: System.Security.SecurityState.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

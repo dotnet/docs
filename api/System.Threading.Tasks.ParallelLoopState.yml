@@ -1,0 +1,528 @@
+items:
+- uid: System.Threading.Tasks.ParallelLoopState
+  id: ParallelLoopState
+  parent: System.Threading.Tasks
+  children:
+  - System.Threading.Tasks.ParallelLoopState.Break
+  - System.Threading.Tasks.ParallelLoopState.IsExceptional
+  - System.Threading.Tasks.ParallelLoopState.IsStopped
+  - System.Threading.Tasks.ParallelLoopState.LowestBreakIteration
+  - System.Threading.Tasks.ParallelLoopState.ShouldExitCurrentIteration
+  - System.Threading.Tasks.ParallelLoopState.Stop
+  href: System.Threading.Tasks.ParallelLoopState.yml
+  name: ParallelLoopState
+  fullName: System.Threading.Tasks.ParallelLoopState
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/ParallelLoopState.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/ParallelLoopState.cs
+    startLine: 21
+  assemblies:
+  - System.Threading.Tasks.Parallel
+  namespace: System.Threading.Tasks
+  summary: Enables iterations of parallel loops to interact with other iterations. An instance of this class is provided by the @'System.Threading.Tasks.Parallel' class to each loop; you can not create instances in your code.
+  syntax:
+    content: public class ParallelLoopState
+    content.vb: Public Class ParallelLoopState
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.Tasks.ParallelLoopState.ShouldExitCurrentIteration
+  id: ShouldExitCurrentIteration
+  parent: System.Threading.Tasks.ParallelLoopState
+  href: System.Threading.Tasks.ParallelLoopState.yml
+  name: ShouldExitCurrentIteration
+  fullName: System.Threading.Tasks.ParallelLoopState.ShouldExitCurrentIteration
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/ParallelLoopState.cs
+    startLine: 60
+  assemblies:
+  - System.Threading.Tasks.Parallel
+  namespace: System.Threading.Tasks
+  summary: Gets whether the current iteration of the loop should exit based on requests made by this or other iterations.
+  remarks: >-
+    When an iteration of a loop calls @'System.Threading.Tasks.ParallelLoopState.Break' or @'System.Threading.Tasks.ParallelLoopState.Stop', or
+
+    when one throws an exception, or when the loop is canceled, the @'System.Threading.Tasks.Parallel' class will proactively
+
+    attempt to prohibit additional iterations of the loop from starting execution.
+
+    However, there may be cases where it is unable to prevent additional iterations from starting.
+
+    It may also be the case that a long-running iteration has already begun execution.  In such
+
+    cases, iterations may explicitly check the @'System.Threading.Tasks.ParallelLoopState.ShouldExitCurrentIteration' property and
+
+    cease execution if the property returns true.
+  syntax:
+    content: public bool ShouldExitCurrentIteration { get; }
+    content.vb: Public ReadOnly Property ShouldExitCurrentIteration As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the current iteration should exit; otherwise, false.
+- uid: System.Threading.Tasks.ParallelLoopState.IsStopped
+  id: IsStopped
+  parent: System.Threading.Tasks.ParallelLoopState
+  href: System.Threading.Tasks.ParallelLoopState.yml
+  name: IsStopped
+  fullName: System.Threading.Tasks.ParallelLoopState.IsStopped
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/ParallelLoopState.cs
+    startLine: 71
+  assemblies:
+  - System.Threading.Tasks.Parallel
+  namespace: System.Threading.Tasks
+  summary: Gets whether any iteration of the loop has called the @'System.Threading.Tasks.ParallelLoopState.Stop' method.
+  syntax:
+    content: public bool IsStopped { get; }
+    content.vb: Public ReadOnly Property IsStopped As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if any iteration has stopped the loop by calling the @'System.Threading.Tasks.ParallelLoopState.Stop' method; otherwise, false.
+- uid: System.Threading.Tasks.ParallelLoopState.IsExceptional
+  id: IsExceptional
+  parent: System.Threading.Tasks.ParallelLoopState
+  href: System.Threading.Tasks.ParallelLoopState.yml
+  name: IsExceptional
+  fullName: System.Threading.Tasks.ParallelLoopState.IsExceptional
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/ParallelLoopState.cs
+    startLine: 83
+  assemblies:
+  - System.Threading.Tasks.Parallel
+  namespace: System.Threading.Tasks
+  summary: Gets whether any iteration of the loop has thrown an exception that went unhandled by that iteration.
+  syntax:
+    content: public bool IsExceptional { get; }
+    content.vb: Public ReadOnly Property IsExceptional As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if an unhandled exception was thrown; otherwise, false.
+- uid: System.Threading.Tasks.ParallelLoopState.LowestBreakIteration
+  id: LowestBreakIteration
+  parent: System.Threading.Tasks.ParallelLoopState
+  href: System.Threading.Tasks.ParallelLoopState.yml
+  name: LowestBreakIteration
+  fullName: System.Threading.Tasks.ParallelLoopState.LowestBreakIteration
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/ParallelLoopState.cs
+    startLine: 110
+  assemblies:
+  - System.Threading.Tasks.Parallel
+  namespace: System.Threading.Tasks
+  summary: Gets the lowest iteration of the loop from which @'System.Threading.Tasks.ParallelLoopState.Break' was called.
+  remarks: If no iteration of the loop called @'System.Threading.Tasks.ParallelLoopState.Break', this property will return null.
+  syntax:
+    content: public long ? LowestBreakIteration { get; }
+    content.vb: Public ReadOnly Property LowestBreakIteration As Long?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+      description: The lowest iteration from which @'System.Threading.Tasks.ParallelLoopState.Break' was called. In the case of a @'System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Concurrent.Partitioner{``0},System.Action{``0})' loop, the value is based on an internally-generated index.
+- uid: System.Threading.Tasks.ParallelLoopState.Stop
+  id: Stop
+  parent: System.Threading.Tasks.ParallelLoopState
+  href: System.Threading.Tasks.ParallelLoopState.yml
+  name: Stop()
+  fullName: System.Threading.Tasks.ParallelLoopState.Stop()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/ParallelLoopState.cs
+    startLine: 138
+  assemblies:
+  - System.Threading.Tasks.Parallel
+  namespace: System.Threading.Tasks
+  summary: Communicates that the @'System.Threading.Tasks.Parallel' loop should cease execution at the system's earliest convenience.
+  remarks: >-
+    <para>@'System.Threading.Tasks.ParallelLoopState.Stop' may be used to communicate to the loop that no other iterations need be run.
+
+    For long-running iterations that may already be executing, @'System.Threading.Tasks.ParallelLoopState.Stop' causes @'System.Threading.Tasks.ParallelLoopState.IsStopped'
+
+    to return true for all other iterations of the loop, such that another iteration may check @'System.Threading.Tasks.ParallelLoopState.IsStopped' and exit early if it's observed to be true.
+
+    </para>
+
+    <para>@'System.Threading.Tasks.ParallelLoopState.Stop' is typically employed in search-based algorithms, where once a result is found,
+
+    no other iterations need be executed.
+
+    </para>
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub Stop
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The @'System.Threading.Tasks.ParallelLoopState.Break' method was called previously. @'System.Threading.Tasks.ParallelLoopState.Break' and @'System.Threading.Tasks.ParallelLoopState.Stop' may not be used in combination by iterations of the same loop.
+- uid: System.Threading.Tasks.ParallelLoopState.Break
+  id: Break
+  parent: System.Threading.Tasks.ParallelLoopState
+  href: System.Threading.Tasks.ParallelLoopState.yml
+  name: Break()
+  fullName: System.Threading.Tasks.ParallelLoopState.Break()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/ParallelLoopState.cs
+    startLine: 177
+  assemblies:
+  - System.Threading.Tasks.Parallel
+  namespace: System.Threading.Tasks
+  summary: Communicates that the @'System.Threading.Tasks.Parallel' loop should cease execution of iterations beyond the current iteration at the system's earliest convenience.
+  remarks: >-
+    <para>@'System.Threading.Tasks.ParallelLoopState.Break' may be used to communicate to the loop that no other iterations after the
+
+    current iteration need be run. For example, if @'System.Threading.Tasks.ParallelLoopState.Break' is called from the 100th
+
+    iteration of a for loop iterating in parallel from 0 to 1000, all iterations less than 100 should
+
+    still be run, but the iterations from 101 through to 1000 are not necessary.
+
+    </para>
+
+    <para>
+
+    For long-running iterations that may already be executing, @'System.Threading.Tasks.ParallelLoopState.Break' causes @'System.Threading.Tasks.ParallelLoopState.LowestBreakIteration'
+
+    to be set to the current iteration's index if the current index is less than the current value of
+
+    @'System.Threading.Tasks.ParallelLoopState.LowestBreakIteration'.
+
+    </para>
+
+    <para>@'System.Threading.Tasks.ParallelLoopState.Break' is typically employed in search-based algorithms where an ordering is
+
+    present in the data source.
+
+    </para>
+  syntax:
+    content: public void Break()
+    content.vb: Public Sub Break
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The @'System.Threading.Tasks.ParallelLoopState.Stop' method was previously called. @'System.Threading.Tasks.ParallelLoopState.Break' and @'System.Threading.Tasks.ParallelLoopState.Stop' may not be used in combination by iterations of the same loop.
+references:
+- uid: System.Threading.Tasks.Parallel
+  isExternal: false
+  href: System.Threading.Tasks.Parallel.yml
+  name: Parallel
+  fullName: System.Threading.Tasks.Parallel
+  type: Class
+  summary: Provides support for parallel loops and regions.
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading.Tasks.ParallelLoopState.Break
+- uid: System.Threading.Tasks.ParallelLoopState.Stop
+- uid: System.Threading.Tasks.ParallelLoopState.ShouldExitCurrentIteration
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int64>
+  name.vb: Nullable(Of Int64)
+  fullName: System.Nullable<System.Int64>
+  fullName.vb: System.Nullable(Of System.Int64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  name.vb: Nullable(Of T)
+  fullName: System.Nullable<T>
+  fullName.vb: System.Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.ParallelLoopState.IsStopped
+- uid: System.InvalidOperationException
+- uid: System.Threading.Tasks.ParallelLoopState.LowestBreakIteration

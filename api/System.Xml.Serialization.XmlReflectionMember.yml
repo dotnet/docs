@@ -1,0 +1,394 @@
+items:
+- uid: System.Xml.Serialization.XmlReflectionMember
+  id: XmlReflectionMember
+  parent: System.Xml.Serialization
+  children:
+  - System.Xml.Serialization.XmlReflectionMember.IsReturnValue
+  - System.Xml.Serialization.XmlReflectionMember.MemberName
+  - System.Xml.Serialization.XmlReflectionMember.MemberType
+  - System.Xml.Serialization.XmlReflectionMember.OverrideIsNullable
+  - System.Xml.Serialization.XmlReflectionMember.XmlAttributes
+  href: System.Xml.Serialization.XmlReflectionMember.yml
+  name: XmlReflectionMember
+  fullName: System.Xml.Serialization.XmlReflectionMember
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlReflectionMember.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlReflectionMember.cs
+    startLine: 16
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Provides mappings between code entities in .NET Framework Web service methods and the content of Web Services Description Language (WSDL) messages that are defined for SOAP Web services.
+  syntax:
+    content: public class XmlReflectionMember
+    content.vb: Public Class XmlReflectionMember
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.Serialization.XmlReflectionMember.MemberType
+  id: MemberType
+  parent: System.Xml.Serialization.XmlReflectionMember
+  href: System.Xml.Serialization.XmlReflectionMember.yml
+  name: MemberType
+  fullName: System.Xml.Serialization.XmlReflectionMember.MemberType
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlReflectionMember.cs
+    startLine: 28
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets or sets the type of the Web service method member code entity that is represented by this mapping.
+  syntax:
+    content: public Type MemberType { get; set; }
+    content.vb: Public Property MemberType As Type
+    parameters: []
+    return:
+      type: System.Type
+      description: The @'System.Type' of the Web service method member code entity that is represented by this mapping.
+- uid: System.Xml.Serialization.XmlReflectionMember.XmlAttributes
+  id: XmlAttributes
+  parent: System.Xml.Serialization.XmlReflectionMember
+  href: System.Xml.Serialization.XmlReflectionMember.yml
+  name: XmlAttributes
+  fullName: System.Xml.Serialization.XmlReflectionMember.XmlAttributes
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlReflectionMember.cs
+    startLine: 38
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets or sets an @'System.Xml.Serialization.XmlAttributes' with the collection of @'System.Xml.Serialization.XmlSerializer'-related attributes that have been applied to the member code entity.
+  syntax:
+    content: public XmlAttributes XmlAttributes { get; set; }
+    content.vb: Public Property XmlAttributes As XmlAttributes
+    parameters: []
+    return:
+      type: System.Xml.Serialization.XmlAttributes
+      description: An @'System.XML.Serialization.XmlAttributes' that represents XML attributes that have been applied to the member code.
+- uid: System.Xml.Serialization.XmlReflectionMember.MemberName
+  id: MemberName
+  parent: System.Xml.Serialization.XmlReflectionMember
+  href: System.Xml.Serialization.XmlReflectionMember.yml
+  name: MemberName
+  fullName: System.Xml.Serialization.XmlReflectionMember.MemberName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlReflectionMember.cs
+    startLine: 49
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets or sets the name of the Web service method member for this mapping.
+  syntax:
+    content: public string MemberName { get; set; }
+    content.vb: Public Property MemberName As String
+    parameters: []
+    return:
+      type: System.String
+      description: The name of the Web service method.
+- uid: System.Xml.Serialization.XmlReflectionMember.IsReturnValue
+  id: IsReturnValue
+  parent: System.Xml.Serialization.XmlReflectionMember
+  href: System.Xml.Serialization.XmlReflectionMember.yml
+  name: IsReturnValue
+  fullName: System.Xml.Serialization.XmlReflectionMember.IsReturnValue
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlReflectionMember.cs
+    startLine: 59
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets or sets a value that indicates whether the @'System.Xml.Serialization.XmlReflectionMember' represents a Web service method return value, as opposed to an output parameter.
+  syntax:
+    content: public bool IsReturnValue { get; set; }
+    content.vb: Public Property IsReturnValue As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true, if the member represents a Web service return value; otherwise, false.
+- uid: System.Xml.Serialization.XmlReflectionMember.OverrideIsNullable
+  id: OverrideIsNullable
+  parent: System.Xml.Serialization.XmlReflectionMember
+  href: System.Xml.Serialization.XmlReflectionMember.yml
+  name: OverrideIsNullable
+  fullName: System.Xml.Serialization.XmlReflectionMember.OverrideIsNullable
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlReflectionMember.cs
+    startLine: 69
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets or sets a value that indicates that the value of the corresponding XML element definition's isNullable attribute is false.
+  syntax:
+    content: public bool OverrideIsNullable { get; set; }
+    content.vb: Public Property OverrideIsNullable As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: True to override the @'System.Xml.Serialization.XmlElementAttribute.IsNullable' property; otherwise, false.
+references:
+- uid: System.Xml.Serialization
+  isExternal: false
+  name: System.Xml.Serialization
+  fullName: System.Xml.Serialization
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Xml.Serialization.XmlAttributes
+  parent: System.Xml.Serialization
+  isExternal: false
+  href: System.Xml.Serialization.XmlAttributes.yml
+  name: XmlAttributes
+  fullName: System.Xml.Serialization.XmlAttributes
+  type: Class
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

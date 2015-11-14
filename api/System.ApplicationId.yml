@@ -1,0 +1,548 @@
+items:
+- uid: System.ApplicationId
+  id: ApplicationId
+  parent: System
+  children:
+  - System.ApplicationId.#ctor(System.Byte[],System.String,System.Version,System.String,System.String)
+  - System.ApplicationId.Copy
+  - System.ApplicationId.Culture
+  - System.ApplicationId.Equals(System.Object)
+  - System.ApplicationId.GetHashCode
+  - System.ApplicationId.Name
+  - System.ApplicationId.ProcessorArchitecture
+  - System.ApplicationId.PublicKeyToken
+  - System.ApplicationId.ToString
+  - System.ApplicationId.Version
+  href: System.ApplicationId.yml
+  name: ApplicationId
+  fullName: System.ApplicationId
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/ApplicationId.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/ApplicationId.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Contains information used to uniquely identify a manifest-based application. This class cannot be inherited.
+  syntax:
+    content: public sealed class ApplicationId
+    content.vb: Public NotInheritable Class ApplicationId
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.ApplicationId.#ctor(System.Byte[],System.String,System.Version,System.String,System.String)
+  id: '#ctor(System.Byte[],System.String,System.Version,System.String,System.String)'
+  parent: System.ApplicationId
+  href: System.ApplicationId.yml
+  name: ApplicationId(Byte[], String, Version, String, String)
+  name.vb: ApplicationId(Byte(), String, Version, String, String)
+  fullName: System.ApplicationId.ApplicationId(System.Byte[], System.String, System.Version, System.String, System.String)
+  fullName.vb: System.ApplicationId.ApplicationId(System.Byte(), System.String, System.Version, System.String, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ApplicationId.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.ApplicationId' class.
+  syntax:
+    content: public ApplicationId(byte[] publicKeyToken, string name, Version version, string processorArchitecture, string culture)
+    content.vb: Public Sub New(publicKeyToken As Byte(), name As String, version As Version, processorArchitecture As String, culture As String)
+    parameters:
+    - id: publicKeyToken
+      type: System.Byte[]
+      description: The array of bytes representing the raw public key data.
+    - id: name
+      type: System.String
+      description: The name of the application.
+    - id: version
+      type: System.Version
+      description: A @'System.Version' object that specifies the version of the application.
+    - id: processorArchitecture
+      type: System.String
+      description: The processor architecture of the application.
+    - id: culture
+      type: System.String
+      description: The culture of the application.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name *is null.-or-*version *is null.-or-*publicKeyToken *is null.'
+  - type: System.ArgumentException
+    description: '*name *is an empty string.'
+- uid: System.ApplicationId.PublicKeyToken
+  id: PublicKeyToken
+  parent: System.ApplicationId
+  href: System.ApplicationId.yml
+  name: PublicKeyToken
+  fullName: System.ApplicationId.PublicKeyToken
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ApplicationId.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the public key token for the application.
+  syntax:
+    content: public byte[] PublicKeyToken { get; }
+    content.vb: Public ReadOnly Property PublicKeyToken As Byte()
+    parameters: []
+    return:
+      type: System.Byte[]
+      description: A byte array containing the public key token for the application.
+- uid: System.ApplicationId.Name
+  id: Name
+  parent: System.ApplicationId
+  href: System.ApplicationId.yml
+  name: Name
+  fullName: System.ApplicationId.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ApplicationId.cs
+    startLine: 59
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the name of the application.
+  syntax:
+    content: public string Name { get; }
+    content.vb: Public ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: The name of the application.
+- uid: System.ApplicationId.Version
+  id: Version
+  parent: System.ApplicationId
+  href: System.ApplicationId.yml
+  name: Version
+  fullName: System.ApplicationId.Version
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ApplicationId.cs
+    startLine: 65
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the version of the application.
+  syntax:
+    content: public Version Version { get; }
+    content.vb: Public ReadOnly Property Version As Version
+    parameters: []
+    return:
+      type: System.Version
+      description: A @'System.Version' that specifies the version of the application.
+- uid: System.ApplicationId.ProcessorArchitecture
+  id: ProcessorArchitecture
+  parent: System.ApplicationId
+  href: System.ApplicationId.yml
+  name: ProcessorArchitecture
+  fullName: System.ApplicationId.ProcessorArchitecture
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ApplicationId.cs
+    startLine: 71
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the target processor architecture for the application.
+  syntax:
+    content: public string ProcessorArchitecture { get; }
+    content.vb: Public ReadOnly Property ProcessorArchitecture As String
+    parameters: []
+    return:
+      type: System.String
+      description: The processor architecture of the application.
+- uid: System.ApplicationId.Culture
+  id: Culture
+  parent: System.ApplicationId
+  href: System.ApplicationId.yml
+  name: Culture
+  fullName: System.ApplicationId.Culture
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ApplicationId.cs
+    startLine: 77
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a string representing the culture information for the application.
+  syntax:
+    content: public string Culture { get; }
+    content.vb: Public ReadOnly Property Culture As String
+    parameters: []
+    return:
+      type: System.String
+      description: The culture information for the application.
+- uid: System.ApplicationId.Copy
+  id: Copy
+  parent: System.ApplicationId
+  href: System.ApplicationId.yml
+  name: Copy()
+  fullName: System.ApplicationId.Copy()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ApplicationId.cs
+    startLine: 83
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates and returns an identical copy of the current application identity.
+  syntax:
+    content: public ApplicationId Copy()
+    content.vb: Public Function Copy As ApplicationId
+    return:
+      type: System.ApplicationId
+      description: An @'System.ApplicationId' object that represents an exact copy of the original.
+- uid: System.ApplicationId.ToString
+  id: ToString
+  parent: System.ApplicationId
+  href: System.ApplicationId.yml
+  name: ToString()
+  fullName: System.ApplicationId.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ApplicationId.cs
+    startLine: 87
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates and returns a string representation of the application identity.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: A string representation of the application identity.
+  overridden: System.Object.ToString
+- uid: System.ApplicationId.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.ApplicationId
+  href: System.ApplicationId.yml
+  name: Equals(Object)
+  fullName: System.ApplicationId.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ApplicationId.cs
+    startLine: 111
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether the specified @'System.ApplicationId' object is equivalent to the current @'System.ApplicationId'.
+  syntax:
+    content: public override bool Equals(object o)
+    content.vb: Public Overrides Function Equals(o As Object) As Boolean
+    parameters:
+    - id: o
+      type: System.Object
+      description: The @'System.ApplicationId' object to compare to the current @'System.ApplicationId'.
+    return:
+      type: System.Boolean
+      description: true if the specified @'System.ApplicationId' object is equivalent to the current @'System.ApplicationId'; otherwise, false.
+  overridden: System.Object.Equals(System.Object)
+- uid: System.ApplicationId.GetHashCode
+  id: GetHashCode
+  parent: System.ApplicationId
+  href: System.ApplicationId.yml
+  name: GetHashCode()
+  fullName: System.ApplicationId.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ApplicationId.cs
+    startLine: 133
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the hash code for the current application identity.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: The hash code for the current application identity.
+  overridden: System.Object.GetHashCode
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Version
+  parent: System
+  isExternal: true
+  name: Version
+  fullName: System.Version
+- uid: System.ApplicationId
+  parent: System
+  isExternal: false
+  href: System.ApplicationId.yml
+  name: ApplicationId
+  fullName: System.ApplicationId
+  type: Class
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

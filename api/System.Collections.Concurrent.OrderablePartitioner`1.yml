@@ -1,0 +1,1126 @@
+items:
+- uid: System.Collections.Concurrent.OrderablePartitioner`1
+  id: OrderablePartitioner`1
+  parent: System.Collections.Concurrent
+  children:
+  - System.Collections.Concurrent.OrderablePartitioner`1.#ctor(System.Boolean,System.Boolean,System.Boolean)
+  - System.Collections.Concurrent.OrderablePartitioner`1.GetDynamicPartitions
+  - System.Collections.Concurrent.OrderablePartitioner`1.GetOrderableDynamicPartitions
+  - System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)
+  - System.Collections.Concurrent.OrderablePartitioner`1.GetPartitions(System.Int32)
+  - System.Collections.Concurrent.OrderablePartitioner`1.KeysNormalized
+  - System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedAcrossPartitions
+  - System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedInEachPartition
+  href: System.Collections.Concurrent.OrderablePartitioner`1.yml
+  name: OrderablePartitioner<TSource>
+  name.vb: OrderablePartitioner(Of TSource)
+  fullName: System.Collections.Concurrent.OrderablePartitioner<TSource>
+  fullName.vb: System.Collections.Concurrent.OrderablePartitioner(Of TSource)
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Collections/Concurrent/OrderablePartitioner.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Collections/Concurrent/OrderablePartitioner.cs
+    startLine: 62
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Represents a particular manner of splitting an orderable data source into multiple partitions.
+  remarks: >-
+    <para>
+
+    Each element in each partition has an integer index associated with it, which determines the relative
+
+    order of that element against elements in other partitions.
+
+    </para>
+
+    <para>
+
+    Inheritors of @'System.Collections.Concurrent.OrderablePartitioner`1' must adhere to the following rules:
+
+    <ol><li>All indices must be unique, such that there may not be duplicate indices. If all indices are not
+
+    unique, the output ordering may be scrambled.</li><li>All indices must be non-negative. If any indices are negative, consumers of the implementation
+
+    may throw exceptions.</li><li>@'System.Collections.Concurrent.OrderablePartitioner`1.GetPartitions(System.Int32)' and @'System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)' should throw a
+
+    @'System.ArgumentOutOfRangeException' if the requested partition count is less than or
+
+    equal to zero.</li><li>@'System.Collections.Concurrent.OrderablePartitioner`1.GetPartitions(System.Int32)' and @'System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)' should always return a number
+
+    of enumerables equal to the requested partition count. If the partitioner runs out of data and cannot
+
+    create as many partitions as requested, an empty enumerator should be returned for each of the
+
+    remaining partitions. If this rule is not followed, consumers of the implementation may throw a @'System.InvalidOperationException'.</li><li>@'System.Collections.Concurrent.OrderablePartitioner`1.GetPartitions(System.Int32)', @'System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)',
+
+    @'System.Collections.Concurrent.OrderablePartitioner`1.GetDynamicPartitions', and @'System.Collections.Concurrent.OrderablePartitioner`1.GetOrderableDynamicPartitions'
+
+    should never return null. If null is returned, a consumer of the implementation may throw a
+
+    @'System.InvalidOperationException'.</li><li>@'System.Collections.Concurrent.OrderablePartitioner`1.GetPartitions(System.Int32)', @'System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)',
+
+    @'System.Collections.Concurrent.OrderablePartitioner`1.GetDynamicPartitions', and @'System.Collections.Concurrent.OrderablePartitioner`1.GetOrderableDynamicPartitions'
+
+    should always return partitions that can fully and uniquely enumerate the input data source. All of
+
+    the data and only the data contained in the input source should be enumerated, with no duplication
+
+    that was not already in the input, unless specifically required by the particular partitioner's
+
+    design. If this is not followed, the output ordering may be scrambled.</li><li>If @'System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedInEachPartition' returns true, each partition must return elements
+
+    with increasing key indices.</li><li>If @'System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedAcrossPartitions' returns true, all the keys in partition numbered N
+
+    must be larger than all the keys in partition numbered N-1.</li><li>If @'System.Collections.Concurrent.OrderablePartitioner`1.KeysNormalized' returns true, all indices must be monotonically increasing from
+
+    0, though not necessarily within a single partition.</li></ol></para>
+  syntax:
+    content: 'public abstract class OrderablePartitioner<TSource> : Partitioner<TSource>'
+    content.vb: Public MustInherit Class OrderablePartitioner(Of TSource) Inherits Partitioner(Of TSource)
+    typeParameters:
+    - id: TSource
+      description: Type of the elements in the collection.
+  inheritance:
+  - System.Object
+  - System.Collections.Concurrent.Partitioner{{TSource}}
+  inheritedMembers:
+  - System.Collections.Concurrent.Partitioner{{TSource}}.SupportsDynamicPartitions
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.#ctor(System.Boolean,System.Boolean,System.Boolean)
+  id: '#ctor(System.Boolean,System.Boolean,System.Boolean)'
+  parent: System.Collections.Concurrent.OrderablePartitioner`1
+  href: System.Collections.Concurrent.OrderablePartitioner`1.yml
+  name: OrderablePartitioner(Boolean, Boolean, Boolean)
+  fullName: System.Collections.Concurrent.OrderablePartitioner<TSource>.OrderablePartitioner(System.Boolean, System.Boolean, System.Boolean)
+  fullName.vb: System.Collections.Concurrent.OrderablePartitioner(Of TSource).OrderablePartitioner(System.Boolean, System.Boolean, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/OrderablePartitioner.cs
+    startLine: 84
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Called from constructors in derived classes to initialize the @'System.Collections.Concurrent.OrderablePartitioner`1' class with the specified constraints on the index keys.
+  syntax:
+    content: protected OrderablePartitioner(bool keysOrderedInEachPartition, bool keysOrderedAcrossPartitions, bool keysNormalized)
+    content.vb: Protected Sub New(keysOrderedInEachPartition As Boolean, keysOrderedAcrossPartitions As Boolean, keysNormalized As Boolean)
+    parameters:
+    - id: keysOrderedInEachPartition
+      type: System.Boolean
+      description: Indicates whether the elements in each partition are yielded in the order of increasing keys.
+    - id: keysOrderedAcrossPartitions
+      type: System.Boolean
+      description: Indicates whether elements in an earlier partition always come before elements in a later partition. If true, each element in partition 0 has a smaller order key than any element in partition 1, each element in partition 1 has a smaller order key than any element in partition 2, and so on.
+    - id: keysNormalized
+      type: System.Boolean
+      description: Indicates whether keys are normalized. If true, all order keys are distinct integers in the range [0 .. numberOfElements-1]. If false, order keys must still be distinct, but only their relative order is considered, not their absolute values.
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)
+  id: GetOrderablePartitions(System.Int32)
+  parent: System.Collections.Concurrent.OrderablePartitioner`1
+  href: System.Collections.Concurrent.OrderablePartitioner`1.yml
+  name: GetOrderablePartitions(Int32)
+  fullName: System.Collections.Concurrent.OrderablePartitioner<TSource>.GetOrderablePartitions(System.Int32)
+  fullName.vb: System.Collections.Concurrent.OrderablePartitioner(Of TSource).GetOrderablePartitions(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/OrderablePartitioner.cs
+    startLine: 101
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Partitions the underlying collection into the specified number of orderable partitions.
+  remarks: >-
+    Each partition is represented as an enumerator over key-value pairs.
+
+    The value of the pair is the element itself, and the key is an integer which determines
+
+    the relative ordering of this element against other elements in the data source.
+  syntax:
+    content: public abstract IList<IEnumerator<KeyValuePair<long, TSource>>> GetOrderablePartitions(int partitionCount)
+    content.vb: Public MustOverride Function GetOrderablePartitions(partitionCount As Integer) As IList(Of IEnumerator(Of KeyValuePair(Of Long, TSource)))
+    parameters:
+    - id: partitionCount
+      type: System.Int32
+      description: The number of partitions to create.
+    return:
+      type: System.Collections.Generic.IList{System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.Int64,{TSource}}}}
+      description: A list containing *partitionCount* enumerators.
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.GetOrderableDynamicPartitions
+  id: GetOrderableDynamicPartitions
+  parent: System.Collections.Concurrent.OrderablePartitioner`1
+  href: System.Collections.Concurrent.OrderablePartitioner`1.yml
+  name: GetOrderableDynamicPartitions()
+  fullName: System.Collections.Concurrent.OrderablePartitioner<TSource>.GetOrderableDynamicPartitions()
+  fullName.vb: System.Collections.Concurrent.OrderablePartitioner(Of TSource).GetOrderableDynamicPartitions()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/OrderablePartitioner.cs
+    startLine: 128
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Creates an object that can partition the underlying collection into a variable number of partitions.
+  remarks: >-
+    <para>
+
+    The returned object implements the @'System.Collections.Generic.IEnumerable{TSource}' interface. Calling @'System.Collections.Generic.IEnumerable`1.GetEnumerator' on the
+
+    object creates another partition over the sequence.
+
+    </para>
+
+    <para>
+
+    Each partition is represented as an enumerator over key-value pairs. The value in the pair is the element
+
+    itself, and the key is an integer which determines the relative ordering of this element against
+
+    other elements.
+
+    </para>
+
+    <para>
+
+    The @'System.Collections.Concurrent.OrderablePartitioner`1.GetOrderableDynamicPartitions' method is only supported if the @'System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions'
+
+    property returns true.
+
+    </para>
+  syntax:
+    content: public virtual IEnumerable<KeyValuePair<long, TSource>> GetOrderableDynamicPartitions()
+    content.vb: Public Overridable Function GetOrderableDynamicPartitions As IEnumerable(Of KeyValuePair(Of Long, TSource))
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Int64,{TSource}}}
+      description: An object that can create partitions over the underlying data source.
+  exceptions:
+  - type: System.NotSupportedException
+    description: Dynamic partitioning is not supported by this partitioner.
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedInEachPartition
+  id: KeysOrderedInEachPartition
+  parent: System.Collections.Concurrent.OrderablePartitioner`1
+  href: System.Collections.Concurrent.OrderablePartitioner`1.yml
+  name: KeysOrderedInEachPartition
+  fullName: System.Collections.Concurrent.OrderablePartitioner<TSource>.KeysOrderedInEachPartition
+  fullName.vb: System.Collections.Concurrent.OrderablePartitioner(Of TSource).KeysOrderedInEachPartition
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/OrderablePartitioner.cs
+    startLine: 136
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Gets whether elements in each partition are yielded in the order of increasing keys.
+  syntax:
+    content: public bool KeysOrderedInEachPartition { get; }
+    content.vb: Public ReadOnly Property KeysOrderedInEachPartition As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the elements in each partition are yielded in the order of increasing keys; otherwise false.
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedAcrossPartitions
+  id: KeysOrderedAcrossPartitions
+  parent: System.Collections.Concurrent.OrderablePartitioner`1
+  href: System.Collections.Concurrent.OrderablePartitioner`1.yml
+  name: KeysOrderedAcrossPartitions
+  fullName: System.Collections.Concurrent.OrderablePartitioner<TSource>.KeysOrderedAcrossPartitions
+  fullName.vb: System.Collections.Concurrent.OrderablePartitioner(Of TSource).KeysOrderedAcrossPartitions
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/OrderablePartitioner.cs
+    startLine: 146
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Gets whether elements in an earlier partition always come before elements in a later partition.
+  remarks: >-
+    If @'System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedAcrossPartitions' returns true, each element in partition 0 has a
+
+    smaller order key than any element in partition 1, each element in partition 1 has a smaller
+
+    order key than any element in partition 2, and so on.
+  syntax:
+    content: public bool KeysOrderedAcrossPartitions { get; }
+    content.vb: Public ReadOnly Property KeysOrderedAcrossPartitions As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the elements in an earlier partition always come before elements in a later partition; otherwise false.
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.KeysNormalized
+  id: KeysNormalized
+  parent: System.Collections.Concurrent.OrderablePartitioner`1
+  href: System.Collections.Concurrent.OrderablePartitioner`1.yml
+  name: KeysNormalized
+  fullName: System.Collections.Concurrent.OrderablePartitioner<TSource>.KeysNormalized
+  fullName.vb: System.Collections.Concurrent.OrderablePartitioner(Of TSource).KeysNormalized
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/OrderablePartitioner.cs
+    startLine: 156
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Gets whether order keys are normalized.
+  remarks: >-
+    If @'System.Collections.Concurrent.OrderablePartitioner`1.KeysNormalized' returns true, all order keys are distinct integers in the range
+
+    [0 .. numberOfElements-1]. If the property returns false, order keys must still be dictinct, but
+
+    only their relative order is considered, not their absolute values.
+  syntax:
+    content: public bool KeysNormalized { get; }
+    content.vb: Public ReadOnly Property KeysNormalized As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the keys are normalized; otherwise false.
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.GetPartitions(System.Int32)
+  id: GetPartitions(System.Int32)
+  parent: System.Collections.Concurrent.OrderablePartitioner`1
+  href: System.Collections.Concurrent.OrderablePartitioner`1.yml
+  name: GetPartitions(Int32)
+  fullName: System.Collections.Concurrent.OrderablePartitioner<TSource>.GetPartitions(System.Int32)
+  fullName.vb: System.Collections.Concurrent.OrderablePartitioner(Of TSource).GetPartitions(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/OrderablePartitioner.cs
+    startLine: 167
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Partitions the underlying collection into the given number of ordered partitions.
+  remarks: >-
+    The default implementation provides the same behavior as @'System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)' except
+
+    that the returned set of partitions does not provide the keys for the elements.
+  syntax:
+    content: public override IList<IEnumerator<TSource>> GetPartitions(int partitionCount)
+    content.vb: Public Overrides Function GetPartitions(partitionCount As Integer) As IList(Of IEnumerator(Of TSource))
+    parameters:
+    - id: partitionCount
+      type: System.Int32
+      description: The number of partitions to create.
+    return:
+      type: System.Collections.Generic.IList{System.Collections.Generic.IEnumerator{{TSource}}}
+      description: A list containing *partitionCount* enumerators.
+  overridden: System.Collections.Concurrent.Partitioner{{TSource}}.GetPartitions(System.Int32)
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.GetDynamicPartitions
+  id: GetDynamicPartitions
+  parent: System.Collections.Concurrent.OrderablePartitioner`1
+  href: System.Collections.Concurrent.OrderablePartitioner`1.yml
+  name: GetDynamicPartitions()
+  fullName: System.Collections.Concurrent.OrderablePartitioner<TSource>.GetDynamicPartitions()
+  fullName.vb: System.Collections.Concurrent.OrderablePartitioner(Of TSource).GetDynamicPartitions()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/OrderablePartitioner.cs
+    startLine: 208
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Creates an object that can partition the underlying collection into a variable number of partitions.
+  remarks: >-
+    <para>
+
+    The returned object implements the @'System.Collections.Generic.IEnumerable{TSource}' interface. Calling @'System.Collections.Generic.IEnumerable`1.GetEnumerator' on the
+
+    object creates another partition over the sequence.
+
+    </para>
+
+    <para>
+
+    The default implementation provides the same behavior as @'System.Collections.Concurrent.OrderablePartitioner`1.GetOrderableDynamicPartitions' except
+
+    that the returned set of partitions does not provide the keys for the elements.
+
+    </para>
+
+    <para>
+
+    The @'System.Collections.Concurrent.OrderablePartitioner`1.GetDynamicPartitions' method is only supported if the @'System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions'
+
+    property returns true.
+
+    </para>
+  syntax:
+    content: public override IEnumerable<TSource> GetDynamicPartitions()
+    content.vb: Public Overrides Function GetDynamicPartitions As IEnumerable(Of TSource)
+    return:
+      type: System.Collections.Generic.IEnumerable{{TSource}}
+      description: An object that can create partitions over the underlying data source.
+  overridden: System.Collections.Concurrent.Partitioner{{TSource}}.GetDynamicPartitions
+  exceptions:
+  - type: System.NotSupportedException
+    description: Dynamic partitioning is not supported by the base class. It must be implemented in derived classes.
+references:
+- uid: System.Collections.Concurrent.OrderablePartitioner`1
+  parent: System.Collections.Concurrent
+  isExternal: true
+  name: OrderablePartitioner<TSource>
+  name.vb: OrderablePartitioner(Of TSource)
+  fullName: System.Collections.Concurrent.OrderablePartitioner<TSource>
+  fullName.vb: System.Collections.Concurrent.OrderablePartitioner(Of TSource)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.OrderablePartitioner`1
+    name: OrderablePartitioner
+    fullName: System.Collections.Concurrent.OrderablePartitioner
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TSource
+    fullName: TSource
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.OrderablePartitioner`1
+    name: OrderablePartitioner
+    fullName: System.Collections.Concurrent.OrderablePartitioner
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    fullName: TSource
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.GetPartitions(System.Int32)
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)
+- uid: System.ArgumentOutOfRangeException
+- uid: System.InvalidOperationException
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.GetDynamicPartitions
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.GetOrderableDynamicPartitions
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedInEachPartition
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedAcrossPartitions
+- uid: System.Collections.Concurrent.OrderablePartitioner`1.KeysNormalized
+- uid: System.Collections.Concurrent
+  isExternal: false
+  name: System.Collections.Concurrent
+  fullName: System.Collections.Concurrent
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Collections.Concurrent.Partitioner{{TSource}}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.Partitioner`1
+  name: Partitioner<TSource>
+  name.vb: Partitioner(Of TSource)
+  fullName: System.Collections.Concurrent.Partitioner<TSource>
+  fullName.vb: System.Collections.Concurrent.Partitioner(Of TSource)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.Partitioner`1
+    name: Partitioner
+    fullName: System.Collections.Concurrent.Partitioner
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TSource
+    fullName: TSource
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.Partitioner`1
+    name: Partitioner
+    fullName: System.Collections.Concurrent.Partitioner
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    fullName: TSource
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent.Partitioner{{TSource}}.SupportsDynamicPartitions
+  parent: System.Collections.Concurrent.Partitioner{{TSource}}
+  definition: System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions
+  href: System.Collections.Concurrent.Partitioner`1.yml
+  name: SupportsDynamicPartitions
+  fullName: System.Collections.Concurrent.Partitioner<TSource>.SupportsDynamicPartitions
+  fullName.vb: System.Collections.Concurrent.Partitioner(Of TSource).SupportsDynamicPartitions
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.Concurrent.Partitioner`1
+  parent: System.Collections.Concurrent
+  isExternal: true
+  name: Partitioner<TSource>
+  name.vb: Partitioner(Of TSource)
+  fullName: System.Collections.Concurrent.Partitioner<TSource>
+  fullName.vb: System.Collections.Concurrent.Partitioner(Of TSource)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.Partitioner`1
+    name: Partitioner
+    fullName: System.Collections.Concurrent.Partitioner
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TSource
+    fullName: TSource
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.Partitioner`1
+    name: Partitioner
+    fullName: System.Collections.Concurrent.Partitioner
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    fullName: TSource
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions
+  parent: System.Collections.Concurrent.Partitioner`1
+  isExternal: false
+  href: System.Collections.Concurrent.Partitioner`1.yml
+  name: SupportsDynamicPartitions
+  fullName: System.Collections.Concurrent.Partitioner<TSource>.SupportsDynamicPartitions
+  fullName.vb: System.Collections.Concurrent.Partitioner(Of TSource).SupportsDynamicPartitions
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.IList{System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.Int64,{TSource}}}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: System.Collections.Generic.IList`1.yml
+  name: IList<IEnumerator<KeyValuePair<Int64, TSource>>>
+  name.vb: IList(Of IEnumerator(Of KeyValuePair(Of Int64, TSource)))
+  fullName: System.Collections.Generic.IList<System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.Int64, TSource>>>
+  fullName.vb: System.Collections.Generic.IList(Of System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of System.Int64, TSource)))
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    href: System.Collections.Generic.IEnumerator`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    href: System.Collections.Generic.KeyValuePair`2.yml
+  - name: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    href: System.Int64.yml
+  - name: ', '
+    fullName: ', '
+  - name: TSource
+    fullName: TSource
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    href: System.Collections.Generic.IEnumerator`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    href: System.Collections.Generic.KeyValuePair`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    href: System.Int64.yml
+  - name: ', '
+    fullName: ', '
+  - name: TSource
+    fullName: TSource
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  name.vb: IList(Of T)
+  fullName: System.Collections.Generic.IList<T>
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable{TSource}
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.NotSupportedException
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Int64,{TSource}}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
+  name: IEnumerable<KeyValuePair<Int64, TSource>>
+  name.vb: IEnumerable(Of KeyValuePair(Of Int64, TSource))
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.Int64, TSource>>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.Int64, TSource))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    href: System.Collections.Generic.KeyValuePair`2.yml
+  - name: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    href: System.Int64.yml
+  - name: ', '
+    fullName: ', '
+  - name: TSource
+    fullName: TSource
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    href: System.Collections.Generic.KeyValuePair`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    href: System.Int64.yml
+  - name: ', '
+    fullName: ', '
+  - name: TSource
+    fullName: TSource
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent.Partitioner{{TSource}}.GetPartitions(System.Int32)
+  parent: System.Collections.Concurrent.Partitioner{{TSource}}
+  definition: System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)
+  href: System.Collections.Concurrent.Partitioner`1.yml
+  name: GetPartitions(Int32)
+  fullName: System.Collections.Concurrent.Partitioner<TSource>.GetPartitions(System.Int32)
+  fullName.vb: System.Collections.Concurrent.Partitioner(Of TSource).GetPartitions(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)
+    name: GetPartitions
+    fullName: System.Collections.Concurrent.Partitioner<TSource>.GetPartitions
+    href: System.Collections.Concurrent.Partitioner`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)
+    name: GetPartitions
+    fullName: System.Collections.Concurrent.Partitioner(Of TSource).GetPartitions
+    href: System.Collections.Concurrent.Partitioner`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList{System.Collections.Generic.IEnumerator{{TSource}}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: System.Collections.Generic.IList`1.yml
+  name: IList<IEnumerator<TSource>>
+  name.vb: IList(Of IEnumerator(Of TSource))
+  fullName: System.Collections.Generic.IList<System.Collections.Generic.IEnumerator<TSource>>
+  fullName.vb: System.Collections.Generic.IList(Of System.Collections.Generic.IEnumerator(Of TSource))
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    href: System.Collections.Generic.IEnumerator`1.yml
+  - name: <
+    fullName: <
+  - name: TSource
+    fullName: TSource
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    href: System.Collections.Generic.IEnumerator`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    fullName: TSource
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)
+  parent: System.Collections.Concurrent.Partitioner`1
+  isExternal: false
+  href: System.Collections.Concurrent.Partitioner`1.yml
+  name: GetPartitions(Int32)
+  fullName: System.Collections.Concurrent.Partitioner<TSource>.GetPartitions(System.Int32)
+  fullName.vb: System.Collections.Concurrent.Partitioner(Of TSource).GetPartitions(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)
+    name: GetPartitions
+    fullName: System.Collections.Concurrent.Partitioner<TSource>.GetPartitions
+    href: System.Collections.Concurrent.Partitioner`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)
+    name: GetPartitions
+    fullName: System.Collections.Concurrent.Partitioner(Of TSource).GetPartitions
+    href: System.Collections.Concurrent.Partitioner`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent.Partitioner{{TSource}}.GetDynamicPartitions
+  parent: System.Collections.Concurrent.Partitioner{{TSource}}
+  definition: System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions
+  href: System.Collections.Concurrent.Partitioner`1.yml
+  name: GetDynamicPartitions()
+  fullName: System.Collections.Concurrent.Partitioner<TSource>.GetDynamicPartitions()
+  fullName.vb: System.Collections.Concurrent.Partitioner(Of TSource).GetDynamicPartitions()
+  spec.csharp:
+  - uid: System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions
+    name: GetDynamicPartitions
+    fullName: System.Collections.Concurrent.Partitioner<TSource>.GetDynamicPartitions
+    href: System.Collections.Concurrent.Partitioner`1.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions
+    name: GetDynamicPartitions
+    fullName: System.Collections.Concurrent.Partitioner(Of TSource).GetDynamicPartitions
+    href: System.Collections.Concurrent.Partitioner`1.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{TSource}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<TSource>
+  name.vb: IEnumerable(Of TSource)
+  fullName: System.Collections.Generic.IEnumerable<TSource>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TSource)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TSource
+    fullName: TSource
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    fullName: TSource
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions
+  parent: System.Collections.Concurrent.Partitioner`1
+  isExternal: false
+  href: System.Collections.Concurrent.Partitioner`1.yml
+  name: GetDynamicPartitions()
+  fullName: System.Collections.Concurrent.Partitioner<TSource>.GetDynamicPartitions()
+  fullName.vb: System.Collections.Concurrent.Partitioner(Of TSource).GetDynamicPartitions()
+  spec.csharp:
+  - uid: System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions
+    name: GetDynamicPartitions
+    fullName: System.Collections.Concurrent.Partitioner<TSource>.GetDynamicPartitions
+    href: System.Collections.Concurrent.Partitioner`1.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions
+    name: GetDynamicPartitions
+    fullName: System.Collections.Concurrent.Partitioner(Of TSource).GetDynamicPartitions
+    href: System.Collections.Concurrent.Partitioner`1.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

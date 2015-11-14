@@ -1,0 +1,477 @@
+items:
+- uid: System.Threading.Tasks.TaskExtensions
+  id: TaskExtensions
+  parent: System.Threading.Tasks
+  children:
+  - System.Threading.Tasks.TaskExtensions.Unwrap(System.Threading.Tasks.Task{System.Threading.Tasks.Task})
+  - System.Threading.Tasks.TaskExtensions.Unwrap``1(System.Threading.Tasks.Task{System.Threading.Tasks.Task{``0}})
+  href: System.Threading.Tasks.TaskExtensions.yml
+  name: TaskExtensions
+  fullName: System.Threading.Tasks.TaskExtensions
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Threading.Tasks/src/System/Threading/Tasks/TaskExtensions.CoreCLR.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Threading.Tasks/src/System/Threading/Tasks/TaskExtensions.CoreCLR.cs
+    startLine: 12
+  assemblies:
+  - System.Threading.Tasks.CoreCLR
+  namespace: System.Threading.Tasks
+  summary: Provides a set of static (Shared in Visual Basic) methods for working with specific kinds of @'System.Threading.Tasks.Task' instances.
+  syntax:
+    content: public class TaskExtensions
+    content.vb: Public Class TaskExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.Tasks.TaskExtensions.Unwrap(System.Threading.Tasks.Task{System.Threading.Tasks.Task})
+  id: Unwrap(System.Threading.Tasks.Task{System.Threading.Tasks.Task})
+  parent: System.Threading.Tasks.TaskExtensions
+  href: System.Threading.Tasks.TaskExtensions.yml
+  name: Unwrap(Task<Task>)
+  name.vb: Unwrap(Task(Of Task))
+  fullName: System.Threading.Tasks.TaskExtensions.Unwrap(System.Threading.Tasks.Task<System.Threading.Tasks.Task>)
+  fullName.vb: System.Threading.Tasks.TaskExtensions.Unwrap(System.Threading.Tasks.Task(Of System.Threading.Tasks.Task))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks/src/System/Threading/Tasks/TaskExtensions.CoreCLR.cs
+    startLine: 28
+  assemblies:
+  - System.Threading.Tasks.CoreCLR
+  namespace: System.Threading.Tasks
+  summary: Creates a proxy @'System.Threading.Tasks.Task' that represents the asynchronous operation of a @'System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)'.
+  remarks: >-
+    It is often useful to be able to return a Task from a @'System.Threading.Tasks.Task`1', where the inner Task represents work done as part of the outer Task{TResult}.  However,
+
+    doing so results in a Task{Task}, which, if not dealt with carefully, could produce unexpected behavior.  Unwrap
+
+    solves this problem by creating a proxy Task that represents the entire asynchronous operation of such a Task{Task}.
+  syntax:
+    content: public static Task Unwrap(Task<Task> task)
+    content.vb: Public Shared Function Unwrap(task As Task(Of Task)) As Task
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task{System.Threading.Tasks.Task}
+      description: The Task&lt;Task&gt; (C#) or Task (Of Task) (Visual Basic) to unwrap.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A Task that represents the asynchronous operation of the provided System.Threading.Tasks.Task(Of Task).
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The exception that is thrown if the *task* argument is null.
+- uid: System.Threading.Tasks.TaskExtensions.Unwrap``1(System.Threading.Tasks.Task{System.Threading.Tasks.Task{``0}})
+  id: Unwrap``1(System.Threading.Tasks.Task{System.Threading.Tasks.Task{``0}})
+  parent: System.Threading.Tasks.TaskExtensions
+  href: System.Threading.Tasks.TaskExtensions.yml
+  name: Unwrap<TResult>(Task<Task<TResult>>)
+  name.vb: Unwrap(Of TResult)(Task(Of Task(Of TResult)))
+  fullName: System.Threading.Tasks.TaskExtensions.Unwrap<TResult>(System.Threading.Tasks.Task<System.Threading.Tasks.Task<TResult>>)
+  fullName.vb: System.Threading.Tasks.TaskExtensions.Unwrap(Of TResult)(System.Threading.Tasks.Task(Of System.Threading.Tasks.Task(Of TResult)))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks/src/System/Threading/Tasks/TaskExtensions.CoreCLR.cs
+    startLine: 61
+  assemblies:
+  - System.Threading.Tasks.CoreCLR
+  namespace: System.Threading.Tasks
+  summary: Creates a proxy @'System.Threading.Tasks.Task' that represents the asynchronous operation of a Task&lt;Task&lt;T&gt;&gt; (C#) or Task (Of Task(Of T)) (Visual Basic).
+  remarks: >-
+    It is often useful to be able to return a Task{TResult} from a Task{TResult}, where the inner Task{TResult}
+
+    represents work done as part of the outer Task{TResult}.  However, doing so results in a Task{Task{TResult}},
+
+    which, if not dealt with carefully, could produce unexpected behavior.  Unwrap solves this problem by
+
+    creating a proxy Task{TResult} that represents the entire asynchronous operation of such a Task{Task{TResult}}.
+  syntax:
+    content: public static Task<TResult> Unwrap<TResult>(Task<Task<TResult>> task)
+    content.vb: Public Shared Function Unwrap(Of TResult)(task As Task(Of Task(Of TResult))) As Task(Of TResult)
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task{System.Threading.Tasks.Task{{TResult}}}
+      description: The Task&lt;Task&lt;T&gt;&gt; (C#) or Task (Of Task(Of T)) (Visual Basic) to unwrap.
+    typeParameters:
+    - id: TResult
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+      description: A @'System.Threading.Tasks.Task' that represents the asynchronous operation of the provided Task&lt;Task&lt;T&gt;&gt; (C#) or Task (Of Task(Of T)) (Visual Basic).
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The exception that is thrown if the *task* argument is null.
+references:
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  name.vb: Task(Of TResult)
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.ArgumentNullException
+- uid: System.Threading.Tasks.Task{System.Threading.Tasks.Task}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Task>
+  name.vb: Task(Of Task)
+  fullName: System.Threading.Tasks.Task<System.Threading.Tasks.Task>
+  fullName.vb: System.Threading.Tasks.Task(Of System.Threading.Tasks.Task)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Threading.Tasks.Task{{TResult}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Task<TResult>>
+  name.vb: Task(Of Task(Of TResult))
+  fullName: System.Threading.Tasks.Task<System.Threading.Tasks.Task<TResult>>
+  fullName.vb: System.Threading.Tasks.Task(Of System.Threading.Tasks.Task(Of TResult))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{{TResult}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TResult>
+  name.vb: Task(Of TResult)
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )

@@ -1,0 +1,960 @@
+items:
+- uid: System.AppDomainSetup
+  id: AppDomainSetup
+  parent: System
+  children:
+  - System.AppDomainSetup.#ctor
+  - System.AppDomainSetup.AppDomainInitializer
+  - System.AppDomainSetup.AppDomainInitializerArguments
+  - System.AppDomainSetup.AppDomainManagerAssembly
+  - System.AppDomainSetup.AppDomainManagerType
+  - System.AppDomainSetup.ApplicationBase
+  - System.AppDomainSetup.ApplicationName
+  - System.AppDomainSetup.CachePath
+  - System.AppDomainSetup.ConfigurationFile
+  - System.AppDomainSetup.DisallowApplicationBaseProbing
+  - System.AppDomainSetup.DisallowBindingRedirects
+  - System.AppDomainSetup.DisallowCodeDownload
+  - System.AppDomainSetup.DisallowPublisherPolicy
+  - System.AppDomainSetup.DynamicBase
+  - System.AppDomainSetup.GetConfigurationBytes
+  - System.AppDomainSetup.LicenseFile
+  - System.AppDomainSetup.LoaderOptimization
+  - System.AppDomainSetup.PrivateBinPath
+  - System.AppDomainSetup.PrivateBinPathProbe
+  - System.AppDomainSetup.SandboxInterop
+  - System.AppDomainSetup.SetCompatibilitySwitches(System.Collections.Generic.IEnumerable{System.String})
+  - System.AppDomainSetup.SetConfigurationBytes(System.Byte[])
+  - System.AppDomainSetup.ShadowCopyDirectories
+  - System.AppDomainSetup.ShadowCopyFiles
+  - System.AppDomainSetup.TargetFrameworkName
+  href: System.AppDomainSetup.yml
+  name: AppDomainSetup
+  fullName: System.AppDomainSetup
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/AppDomainSetup.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 38
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents assembly binding information that can be added to an instance of @'System.AppDomain'.
+  syntax:
+    content: 'public sealed class AppDomainSetup : IAppDomainSetup'
+    content.vb: Public NotInheritable Class AppDomainSetup Implements IAppDomainSetup
+  inheritance:
+  - System.Object
+  implements:
+  - System.IAppDomainSetup
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.AppDomainSetup.#ctor
+  id: '#ctor'
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: AppDomainSetup()
+  fullName: System.AppDomainSetup.AppDomainSetup()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 222
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.AppDomainSetup' class.
+  syntax:
+    content: public AppDomainSetup()
+    content.vb: Public Sub New
+- uid: System.AppDomainSetup.AppDomainManagerAssembly
+  id: AppDomainManagerAssembly
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: AppDomainManagerAssembly
+  fullName: System.AppDomainSetup.AppDomainManagerAssembly
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 286
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the display name of the assembly that provides the type of the application domain manager for application domains created using this @'System.AppDomainSetup' object.
+  syntax:
+    content: public string AppDomainManagerAssembly { get; set; }
+    content.vb: Public Property AppDomainManagerAssembly As String
+    parameters: []
+    return:
+      type: System.String
+      description: The display name of the assembly that provides the @'System.Type' of the application domain manager.
+- uid: System.AppDomainSetup.AppDomainManagerType
+  id: AppDomainManagerType
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: AppDomainManagerType
+  fullName: System.AppDomainSetup.AppDomainManagerType
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 292
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the full name of the type that provides the application domain manager for application domains created using this @'System.AppDomainSetup' object.
+  syntax:
+    content: public string AppDomainManagerType { get; set; }
+    content.vb: Public Property AppDomainManagerType As String
+    parameters: []
+    return:
+      type: System.String
+      description: The full name of the type, including the namespace.
+- uid: System.AppDomainSetup.ApplicationBase
+  id: ApplicationBase
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: ApplicationBase
+  fullName: System.AppDomainSetup.ApplicationBase
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 314
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the name of the directory containing the application.
+  syntax:
+    content: public string ApplicationBase { get; set; }
+    content.vb: Public Property ApplicationBase As String
+    parameters: []
+    return:
+      type: System.String
+      description: The name of the application base directory.
+- uid: System.AppDomainSetup.ConfigurationFile
+  id: ConfigurationFile
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: ConfigurationFile
+  fullName: System.AppDomainSetup.ConfigurationFile
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 539
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the name of the configuration file for an application domain.
+  syntax:
+    content: public string ConfigurationFile { get; set; }
+    content.vb: Public Property ConfigurationFile As String
+    parameters: []
+    return:
+      type: System.String
+      description: The name of the configuration file.
+- uid: System.AppDomainSetup.GetConfigurationBytes
+  id: GetConfigurationBytes
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: GetConfigurationBytes()
+  fullName: System.AppDomainSetup.GetConfigurationBytes()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 567
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the XML configuration information set by the @'System.AppDomainSetup.SetConfigurationBytes(System.Byte[])' method, which overrides the application's XML configuration information.
+  syntax:
+    content: public byte[] GetConfigurationBytes()
+    content.vb: Public Function GetConfigurationBytes As Byte()
+    return:
+      type: System.Byte[]
+      description: An array that contains the XML configuration information that was set by the @'System.AppDomainSetup.SetConfigurationBytes(System.Byte[])' method, or null if the @'System.AppDomainSetup.SetConfigurationBytes(System.Byte[])' method has not been called.
+- uid: System.AppDomainSetup.SetConfigurationBytes(System.Byte[])
+  id: SetConfigurationBytes(System.Byte[])
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: SetConfigurationBytes(Byte[])
+  name.vb: SetConfigurationBytes(Byte())
+  fullName: System.AppDomainSetup.SetConfigurationBytes(System.Byte[])
+  fullName.vb: System.AppDomainSetup.SetConfigurationBytes(System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 575
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Provides XML configuration information for the application domain, replacing the application's XML configuration information.
+  syntax:
+    content: public void SetConfigurationBytes(byte[] value)
+    content.vb: Public Sub SetConfigurationBytes(value As Byte())
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: An array that contains the XML configuration information to be used for the application domain.
+- uid: System.AppDomainSetup.SetCompatibilitySwitches(System.Collections.Generic.IEnumerable{System.String})
+  id: SetCompatibilitySwitches(System.Collections.Generic.IEnumerable{System.String})
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: SetCompatibilitySwitches(IEnumerable<String>)
+  name.vb: SetCompatibilitySwitches(IEnumerable(Of String))
+  fullName: System.AppDomainSetup.SetCompatibilitySwitches(System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: System.AppDomainSetup.SetCompatibilitySwitches(System.Collections.Generic.IEnumerable(Of System.String))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 593
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Sets the specified switches, making the application domain compatible with previous versions of the .NET Framework for the specified issues.
+  syntax:
+    content: public void SetCompatibilitySwitches(IEnumerable<string> switches)
+    content.vb: Public Sub SetCompatibilitySwitches(switches As IEnumerable(Of String))
+    parameters:
+    - id: switches
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: An enumerable set of string values that specify compatibility switches, or null to erase the existing compatibility switches.
+- uid: System.AppDomainSetup.TargetFrameworkName
+  id: TargetFrameworkName
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: TargetFrameworkName
+  fullName: System.AppDomainSetup.TargetFrameworkName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 647
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets a string that specifies the target version and profile of the .NET Framework for the application domain, in a format that can be parsed by the @'System.Runtime.Versioning.FrameworkName.#ctor(System.String)' constructor.
+  syntax:
+    content: public string TargetFrameworkName { get; set; }
+    content.vb: Public Property TargetFrameworkName As String
+    parameters: []
+    return:
+      type: System.String
+      description: The target version and profile of the .NET Framework.
+- uid: System.AppDomainSetup.DynamicBase
+  id: DynamicBase
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: DynamicBase
+  fullName: System.AppDomainSetup.DynamicBase
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 730
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the base directory where the directory for dynamically generated files is located.
+  syntax:
+    content: public string DynamicBase { get; set; }
+    content.vb: Public Property DynamicBase As String
+    parameters: []
+    return:
+      type: System.String
+      description: The directory where the @'System.AppDomain.DynamicDirectory' is located.NoteThe return value of this property is different from the value assigned. See the Remarks section.
+  exceptions:
+  - type: System.MemberAccessException
+    description: This property cannot be set because the application name on the application domain is null.
+- uid: System.AppDomainSetup.DisallowPublisherPolicy
+  id: DisallowPublisherPolicy
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: DisallowPublisherPolicy
+  fullName: System.AppDomainSetup.DisallowPublisherPolicy
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 764
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets a value that indicates whether the &lt;publisherPolicy&gt; section of the configuration file is applied to an application domain.
+  syntax:
+    content: public bool DisallowPublisherPolicy { get; set; }
+    content.vb: Public Property DisallowPublisherPolicy As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the &lt;publisherPolicy&gt; section of the configuration file for an application domain is ignored; false if the declared publisher policy is honored.
+- uid: System.AppDomainSetup.DisallowBindingRedirects
+  id: DisallowBindingRedirects
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: DisallowBindingRedirects
+  fullName: System.AppDomainSetup.DisallowBindingRedirects
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 780
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets a value that indicates whether an application domain allows assembly binding redirection.
+  syntax:
+    content: public bool DisallowBindingRedirects { get; set; }
+    content.vb: Public Property DisallowBindingRedirects As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if redirection of assemblies is not allowed; false if it is allowed.
+- uid: System.AppDomainSetup.DisallowCodeDownload
+  id: DisallowCodeDownload
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: DisallowCodeDownload
+  fullName: System.AppDomainSetup.DisallowCodeDownload
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 795
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets a value that indicates whether HTTP download of assemblies is allowed for an application domain.
+  syntax:
+    content: public bool DisallowCodeDownload { get; set; }
+    content.vb: Public Property DisallowCodeDownload As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if HTTP download of assemblies is not allowed; false if it is allowed.
+- uid: System.AppDomainSetup.DisallowApplicationBaseProbing
+  id: DisallowApplicationBaseProbing
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: DisallowApplicationBaseProbing
+  fullName: System.AppDomainSetup.DisallowApplicationBaseProbing
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 811
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Specifies whether the application base path and private binary path are probed when searching for assemblies to load.
+  syntax:
+    content: public bool DisallowApplicationBaseProbing { get; set; }
+    content.vb: Public Property DisallowApplicationBaseProbing As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if probing is not allowed; otherwise, false. The default is false.
+- uid: System.AppDomainSetup.ApplicationName
+  id: ApplicationName
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: ApplicationName
+  fullName: System.AppDomainSetup.ApplicationName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 939
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the name of the application.
+  syntax:
+    content: public string ApplicationName { get; set; }
+    content.vb: Public Property ApplicationName As String
+    parameters: []
+    return:
+      type: System.String
+      description: The name of the application.
+- uid: System.AppDomainSetup.AppDomainInitializer
+  id: AppDomainInitializer
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: AppDomainInitializer
+  fullName: System.AppDomainSetup.AppDomainInitializer
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 957
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the @'System.AppDomainInitializer' delegate, which represents a callback method that is invoked when the application domain is initialized.
+  syntax:
+    content: public AppDomainInitializer AppDomainInitializer { get; set; }
+    content.vb: Public Property AppDomainInitializer As AppDomainInitializer
+    parameters: []
+    return:
+      type: System.AppDomainInitializer
+      description: A delegate that represents a callback method that is invoked when the application domain is initialized.
+- uid: System.AppDomainSetup.AppDomainInitializerArguments
+  id: AppDomainInitializerArguments
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: AppDomainInitializerArguments
+  fullName: System.AppDomainSetup.AppDomainInitializerArguments
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 968
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the arguments passed to the callback method represented by the @'System.AppDomainInitializer' delegate. The callback method is invoked when the application domain is initialized.
+  syntax:
+    content: public string[] AppDomainInitializerArguments { get; set; }
+    content.vb: Public Property AppDomainInitializerArguments As String()
+    parameters: []
+    return:
+      type: System.String[]
+      description: An array of strings that is passed to the callback method represented by the @'System.AppDomainInitializer' delegate, when the callback method is invoked during @'System.AppDomain' initialization.
+- uid: System.AppDomainSetup.PrivateBinPath
+  id: PrivateBinPath
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: PrivateBinPath
+  fullName: System.AppDomainSetup.PrivateBinPath
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 1053
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the list of directories under the application base directory that are probed for private assemblies.
+  syntax:
+    content: public string PrivateBinPath { get; set; }
+    content.vb: Public Property PrivateBinPath As String
+    parameters: []
+    return:
+      type: System.String
+      description: A list of directory names separated by semicolons.
+- uid: System.AppDomainSetup.PrivateBinPathProbe
+  id: PrivateBinPathProbe
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: PrivateBinPathProbe
+  fullName: System.AppDomainSetup.PrivateBinPathProbe
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 1075
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets a string value that includes or excludes @'System.AppDomainSetup.ApplicationBase' from the search path for the application, and searches only @'System.AppDomainSetup.PrivateBinPath'.
+  syntax:
+    content: public string PrivateBinPathProbe { get; set; }
+    content.vb: Public Property PrivateBinPathProbe As String
+    parameters: []
+    return:
+      type: System.String
+      description: A null reference (Nothing in Visual Basic) to include the application base path when searching for assemblies; any non-null string value to exclude the path. The default value is null.
+- uid: System.AppDomainSetup.ShadowCopyDirectories
+  id: ShadowCopyDirectories
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: ShadowCopyDirectories
+  fullName: System.AppDomainSetup.ShadowCopyDirectories
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 1093
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the names of the directories containing assemblies to be shadow copied.
+  syntax:
+    content: public string ShadowCopyDirectories { get; set; }
+    content.vb: Public Property ShadowCopyDirectories As String
+    parameters: []
+    return:
+      type: System.String
+      description: A list of directory names separated by semicolons.
+- uid: System.AppDomainSetup.ShadowCopyFiles
+  id: ShadowCopyFiles
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: ShadowCopyFiles
+  fullName: System.AppDomainSetup.ShadowCopyFiles
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 1114
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets a string that indicates whether shadow copying is turned on or off.
+  syntax:
+    content: public string ShadowCopyFiles { get; set; }
+    content.vb: Public Property ShadowCopyFiles As String
+    parameters: []
+    return:
+      type: System.String
+      description: The string value "true" to indicate that shadow copying is turned on; or "false" to indicate that shadow copying is turned off.
+- uid: System.AppDomainSetup.CachePath
+  id: CachePath
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: CachePath
+  fullName: System.AppDomainSetup.CachePath
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 1136
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the name of an area specific to the application where files are shadow copied.
+  syntax:
+    content: public string CachePath { get; set; }
+    content.vb: Public Property CachePath As String
+    parameters: []
+    return:
+      type: System.String
+      description: The fully qualified name of the directory path and file name where files are shadow copied.
+- uid: System.AppDomainSetup.LicenseFile
+  id: LicenseFile
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: LicenseFile
+  fullName: System.AppDomainSetup.LicenseFile
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 1155
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the location of the license file associated with this domain.
+  syntax:
+    content: public string LicenseFile { get; set; }
+    content.vb: Public Property LicenseFile As String
+    parameters: []
+    return:
+      type: System.String
+      description: The location and name of the license file.
+- uid: System.AppDomainSetup.LoaderOptimization
+  id: LoaderOptimization
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: LoaderOptimization
+  fullName: System.AppDomainSetup.LoaderOptimization
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 1167
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Specifies the optimization policy used to load an executable.
+  syntax:
+    content: public LoaderOptimization LoaderOptimization { get; set; }
+    content.vb: Public Property LoaderOptimization As LoaderOptimization
+    parameters: []
+    return:
+      type: System.LoaderOptimization
+      description: An enumerated constant that is used with the @'System.LoaderOptimizationAttribute'.
+- uid: System.AppDomainSetup.SandboxInterop
+  id: SandboxInterop
+  parent: System.AppDomainSetup
+  href: System.AppDomainSetup.yml
+  name: SandboxInterop
+  fullName: System.AppDomainSetup.SandboxInterop
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainSetup.cs
+    startLine: 1419
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets a value that indicates whether interface caching is disabled for interop calls in the application domain, so that a QueryInterface is performed on each call.
+  syntax:
+    content: public bool SandboxInterop { get; set; }
+    content.vb: Public Property SandboxInterop As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if interface caching is disabled for interop calls in application domains created with the current @'System.AppDomainSetup' object; otherwise, false.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  name.vb: IEnumerable(Of String)
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.AppDomainInitializer
+  isExternal: false
+  href: System.AppDomainInitializer.yml
+  name: AppDomainInitializer
+  fullName: System.AppDomainInitializer
+  type: Delegate
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.LoaderOptimization
+  parent: System
+  isExternal: false
+  href: System.LoaderOptimization.yml
+  name: LoaderOptimization
+  fullName: System.LoaderOptimization
+  type: Enum

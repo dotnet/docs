@@ -1,0 +1,457 @@
+items:
+- uid: System.RuntimeFieldHandle
+  id: RuntimeFieldHandle
+  parent: System
+  children:
+  - System.RuntimeFieldHandle.Equals(System.Object)
+  - System.RuntimeFieldHandle.Equals(System.RuntimeFieldHandle)
+  - System.RuntimeFieldHandle.GetHashCode
+  - System.RuntimeFieldHandle.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.RuntimeFieldHandle.op_Equality(System.RuntimeFieldHandle,System.RuntimeFieldHandle)
+  - System.RuntimeFieldHandle.op_Inequality(System.RuntimeFieldHandle,System.RuntimeFieldHandle)
+  - System.RuntimeFieldHandle.Value
+  href: System.RuntimeFieldHandle.yml
+  name: RuntimeFieldHandle
+  fullName: System.RuntimeFieldHandle
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/RuntimeHandles.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 1487
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents a field using an internal metadata token.
+  syntax:
+    content: 'public struct RuntimeFieldHandle : ISerializable'
+    content.vb: Public Structure RuntimeFieldHandle Implements ISerializable
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.RuntimeFieldHandle.Value
+  id: Value
+  parent: System.RuntimeFieldHandle
+  href: System.RuntimeFieldHandle.yml
+  name: Value
+  fullName: System.RuntimeFieldHandle.Value
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 1513
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a handle to the field represented by the current instance.
+  syntax:
+    content: public IntPtr Value { get; }
+    content.vb: Public ReadOnly Property Value As IntPtr
+    parameters: []
+    return:
+      type: System.IntPtr
+      description: An @'System.IntPtr' that contains the handle to the field represented by the current instance.
+- uid: System.RuntimeFieldHandle.GetHashCode
+  id: GetHashCode
+  parent: System.RuntimeFieldHandle
+  href: System.RuntimeFieldHandle.yml
+  name: GetHashCode()
+  fullName: System.RuntimeFieldHandle.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 1531
+  assemblies:
+  - mscorlib
+  namespace: System
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.ValueType.GetHashCode
+- uid: System.RuntimeFieldHandle.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.RuntimeFieldHandle
+  href: System.RuntimeFieldHandle.yml
+  name: Equals(Object)
+  fullName: System.RuntimeFieldHandle.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 1537
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the current instance is equal to the specified object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare to the current instance.
+    return:
+      type: System.Boolean
+      description: true if *obj* is a @'System.RuntimeFieldHandle' and equal to the value of the current instance; otherwise, false.
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.RuntimeFieldHandle.Equals(System.RuntimeFieldHandle)
+  id: Equals(System.RuntimeFieldHandle)
+  parent: System.RuntimeFieldHandle
+  href: System.RuntimeFieldHandle.yml
+  name: Equals(RuntimeFieldHandle)
+  fullName: System.RuntimeFieldHandle.Equals(System.RuntimeFieldHandle)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 1549
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the current instance is equal to the specified @'System.RuntimeFieldHandle'.
+  syntax:
+    content: public bool Equals(RuntimeFieldHandle handle)
+    content.vb: Public Function Equals(handle As RuntimeFieldHandle) As Boolean
+    parameters:
+    - id: handle
+      type: System.RuntimeFieldHandle
+      description: The @'System.RuntimeFieldHandle' to compare to the current instance.
+    return:
+      type: System.Boolean
+      description: true if the value of *handle* is equal to the value of the current instance; otherwise, false.
+- uid: System.RuntimeFieldHandle.op_Equality(System.RuntimeFieldHandle,System.RuntimeFieldHandle)
+  id: op_Equality(System.RuntimeFieldHandle,System.RuntimeFieldHandle)
+  parent: System.RuntimeFieldHandle
+  href: System.RuntimeFieldHandle.yml
+  name: Equality(RuntimeFieldHandle, RuntimeFieldHandle)
+  fullName: System.RuntimeFieldHandle.Equality(System.RuntimeFieldHandle, System.RuntimeFieldHandle)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 1556
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether two @'System.RuntimeFieldHandle' structures are equal.
+  syntax:
+    content: public static bool operator ==(RuntimeFieldHandle left, RuntimeFieldHandle right)
+    content.vb: Public Shared Operator =(left As RuntimeFieldHandle, right As RuntimeFieldHandle) As Boolean
+    parameters:
+    - id: left
+      type: System.RuntimeFieldHandle
+      description: The @'System.RuntimeFieldHandle' to compare to *right*.
+    - id: right
+      type: System.RuntimeFieldHandle
+      description: The @'System.RuntimeFieldHandle' to compare to *left*.
+    return:
+      type: System.Boolean
+      description: true if *left* is equal to *right*; otherwise, false.
+- uid: System.RuntimeFieldHandle.op_Inequality(System.RuntimeFieldHandle,System.RuntimeFieldHandle)
+  id: op_Inequality(System.RuntimeFieldHandle,System.RuntimeFieldHandle)
+  parent: System.RuntimeFieldHandle
+  href: System.RuntimeFieldHandle.yml
+  name: Inequality(RuntimeFieldHandle, RuntimeFieldHandle)
+  fullName: System.RuntimeFieldHandle.Inequality(System.RuntimeFieldHandle, System.RuntimeFieldHandle)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 1561
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether two @'System.RuntimeFieldHandle' structures are not equal.
+  syntax:
+    content: public static bool operator !=(RuntimeFieldHandle left, RuntimeFieldHandle right)
+    content.vb: Public Shared Operator <>(left As RuntimeFieldHandle, right As RuntimeFieldHandle) As Boolean
+    parameters:
+    - id: left
+      type: System.RuntimeFieldHandle
+      description: The @'System.RuntimeFieldHandle' to compare to *right*.
+    - id: right
+      type: System.RuntimeFieldHandle
+      description: The @'System.RuntimeFieldHandle' to compare to *left*.
+    return:
+      type: System.Boolean
+      description: true if *left* is not equal to *right*; otherwise, false.
+- uid: System.RuntimeFieldHandle.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.RuntimeFieldHandle
+  href: System.RuntimeFieldHandle.yml
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.RuntimeFieldHandle.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 1685
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Populates a @'System.Runtime.Serialization.SerializationInfo' with the data necessary to deserialize the field represented by the current instance.
+  syntax:
+    content: public void GetObjectData(SerializationInfo info, StreamingContext context)
+    content.vb: Public Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The @'System.Runtime.Serialization.SerializationInfo' object to populate with serialization information.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: (Reserved) The place to store and retrieve serialized data.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*info* is null.'
+  - type: System.Runtime.Serialization.SerializationException
+    description: The @'System.RuntimeFieldHandle.Value' property of the current instance is not a valid handle.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.RuntimeFieldHandle
+  parent: System
+  isExternal: false
+  href: System.RuntimeFieldHandle.yml
+  name: RuntimeFieldHandle
+  fullName: System.RuntimeFieldHandle
+  type: Struct
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+  type: Class
+- uid: System.Runtime.Serialization.StreamingContext
+  isExternal: false
+  href: System.Runtime.Serialization.StreamingContext.yml
+  name: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+  type: Struct
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace

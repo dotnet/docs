@@ -1,0 +1,426 @@
+items:
+- uid: System.Xml.XPath.XPathNodeIterator
+  id: XPathNodeIterator
+  parent: System.Xml.XPath
+  children:
+  - System.Xml.XPath.XPathNodeIterator.Clone
+  - System.Xml.XPath.XPathNodeIterator.Count
+  - System.Xml.XPath.XPathNodeIterator.Current
+  - System.Xml.XPath.XPathNodeIterator.CurrentPosition
+  - System.Xml.XPath.XPathNodeIterator.GetEnumerator
+  - System.Xml.XPath.XPathNodeIterator.MoveNext
+  href: System.Xml.XPath.XPathNodeIterator.yml
+  name: XPathNodeIterator
+  fullName: System.Xml.XPath.XPathNodeIterator
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XPath/src/System/Xml/XPath/XPathNodeIterator.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathNodeIterator.cs
+    startLine: 9
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: Provides an iterator over a selected set of nodes.
+  syntax:
+    content: 'public abstract class XPathNodeIterator : IEnumerable'
+    content.vb: Public MustInherit Class XPathNodeIterator Implements IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.XPath.XPathNodeIterator.Clone
+  id: Clone
+  parent: System.Xml.XPath.XPathNodeIterator
+  href: System.Xml.XPath.XPathNodeIterator.yml
+  name: Clone()
+  fullName: System.Xml.XPath.XPathNodeIterator.Clone()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathNodeIterator.cs
+    startLine: 14
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: When overridden in a derived class, returns a clone of this @'System.Xml.XPath.XPathNodeIterator' object.
+  syntax:
+    content: public abstract XPathNodeIterator Clone()
+    content.vb: Public MustOverride Function Clone As XPathNodeIterator
+    return:
+      type: System.Xml.XPath.XPathNodeIterator
+      description: A new @'System.Xml.XPath.XPathNodeIterator' object clone of this @'System.Xml.XPath.XPathNodeIterator' object.
+- uid: System.Xml.XPath.XPathNodeIterator.MoveNext
+  id: MoveNext
+  parent: System.Xml.XPath.XPathNodeIterator
+  href: System.Xml.XPath.XPathNodeIterator.yml
+  name: MoveNext()
+  fullName: System.Xml.XPath.XPathNodeIterator.MoveNext()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathNodeIterator.cs
+    startLine: 15
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: When overridden in a derived class, moves the @'System.Xml.XPath.XPathNavigator' object returned by the @'System.Xml.XPath.XPathNodeIterator.Current' property to the next node in the selected node set.
+  syntax:
+    content: public abstract bool MoveNext()
+    content.vb: Public MustOverride Function MoveNext As Boolean
+    return:
+      type: System.Boolean
+      description: true if the @'System.Xml.XPath.XPathNavigator' object moved to the next node; false if there are no more selected nodes.
+- uid: System.Xml.XPath.XPathNodeIterator.Current
+  id: Current
+  parent: System.Xml.XPath.XPathNodeIterator
+  href: System.Xml.XPath.XPathNodeIterator.yml
+  name: Current
+  fullName: System.Xml.XPath.XPathNodeIterator.Current
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathNodeIterator.cs
+    startLine: 16
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: When overridden in a derived class, gets the @'System.Xml.XPath.XPathNavigator' object for this @'System.Xml.XPath.XPathNodeIterator', positioned on the current context node.
+  syntax:
+    content: public abstract XPathNavigator Current { get; }
+    content.vb: Public MustOverride ReadOnly Property Current As XPathNavigator
+    parameters: []
+    return:
+      type: System.Xml.XPath.XPathNavigator
+      description: An @'System.Xml.XPath.XPathNavigator' object positioned on the context node from which the node set was selected. The @'System.Xml.XPath.XPathNodeIterator.MoveNext' method must be called to move the @'System.Xml.XPath.XPathNodeIterator' to the first node in the selected set.
+- uid: System.Xml.XPath.XPathNodeIterator.CurrentPosition
+  id: CurrentPosition
+  parent: System.Xml.XPath.XPathNodeIterator
+  href: System.Xml.XPath.XPathNodeIterator.yml
+  name: CurrentPosition
+  fullName: System.Xml.XPath.XPathNodeIterator.CurrentPosition
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathNodeIterator.cs
+    startLine: 17
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: When overridden in a derived class, gets the index of the current position in the selected set of nodes.
+  syntax:
+    content: public abstract int CurrentPosition { get; }
+    content.vb: Public MustOverride ReadOnly Property CurrentPosition As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The index of the current position.
+- uid: System.Xml.XPath.XPathNodeIterator.Count
+  id: Count
+  parent: System.Xml.XPath.XPathNodeIterator
+  href: System.Xml.XPath.XPathNodeIterator.yml
+  name: Count
+  fullName: System.Xml.XPath.XPathNodeIterator.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathNodeIterator.cs
+    startLine: 18
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: Gets the index of the last node in the selected set of nodes.
+  syntax:
+    content: public virtual int Count { get; }
+    content.vb: Public Overridable ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The index of the last node in the selected set of nodes, or 0 if there are no selected nodes.
+- uid: System.Xml.XPath.XPathNodeIterator.GetEnumerator
+  id: GetEnumerator
+  parent: System.Xml.XPath.XPathNodeIterator
+  href: System.Xml.XPath.XPathNodeIterator.yml
+  name: GetEnumerator()
+  fullName: System.Xml.XPath.XPathNodeIterator.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathNodeIterator.cs
+    startLine: 31
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: Returns an @'System.Collections.IEnumerator' object to iterate through the selected node set.
+  syntax:
+    content: public virtual IEnumerator GetEnumerator()
+    content.vb: Public Overridable Function GetEnumerator As IEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: An @'System.Collections.IEnumerator' object to iterate through the selected node set.
+references:
+- uid: System.Xml.XPath
+  isExternal: false
+  name: System.Xml.XPath
+  fullName: System.Xml.XPath
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Xml.XPath.XPathNodeIterator
+  parent: System.Xml.XPath
+  isExternal: false
+  href: System.Xml.XPath.XPathNodeIterator.yml
+  name: XPathNodeIterator
+  fullName: System.Xml.XPath.XPathNodeIterator
+  type: Class
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Xml.XPath.XPathNavigator
+  parent: System.Xml.XPath
+  isExternal: false
+  href: System.Xml.XPath.XPathNavigator.yml
+  name: XPathNavigator
+  fullName: System.Xml.XPath.XPathNavigator
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections

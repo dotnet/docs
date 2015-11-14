@@ -1,0 +1,173 @@
+items:
+- uid: System.Runtime.InteropServices.UCOMIEnumMoniker
+  id: UCOMIEnumMoniker
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.UCOMIEnumMoniker.Clone(System.Runtime.InteropServices.UCOMIEnumMoniker@)
+  - System.Runtime.InteropServices.UCOMIEnumMoniker.Next(System.Int32,System.Runtime.InteropServices.UCOMIMoniker[],System.Int32@)
+  - System.Runtime.InteropServices.UCOMIEnumMoniker.Reset
+  - System.Runtime.InteropServices.UCOMIEnumMoniker.Skip(System.Int32)
+  href: System.Runtime.InteropServices.UCOMIEnumMoniker.yml
+  name: UCOMIEnumMoniker
+  fullName: System.Runtime.InteropServices.UCOMIEnumMoniker
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumMoniker.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumMoniker.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IEnumMoniker' instead.
+  syntax:
+    content: public interface UCOMIEnumMoniker
+    content.vb: Public Interface UCOMIEnumMoniker
+- uid: System.Runtime.InteropServices.UCOMIEnumMoniker.Next(System.Int32,System.Runtime.InteropServices.UCOMIMoniker[],System.Int32@)
+  id: Next(System.Int32,System.Runtime.InteropServices.UCOMIMoniker[],System.Int32@)
+  parent: System.Runtime.InteropServices.UCOMIEnumMoniker
+  href: System.Runtime.InteropServices.UCOMIEnumMoniker.yml
+  name: Next(Int32, UCOMIMoniker[], out Int32)
+  name.vb: Next(Int32, UCOMIMoniker(), ByRef Int32)
+  fullName: System.Runtime.InteropServices.UCOMIEnumMoniker.Next(System.Int32, System.Runtime.InteropServices.UCOMIMoniker[], out System.Int32)
+  fullName.vb: System.Runtime.InteropServices.UCOMIEnumMoniker.Next(System.Int32, System.Runtime.InteropServices.UCOMIMoniker(), ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumMoniker.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Retrieves a specified number of items in the enumeration sequence.
+  syntax:
+    content: int Next(int celt, UCOMIMoniker[] rgelt, out int pceltFetched)
+    content.vb: Function Next(celt As Integer, rgelt As UCOMIMoniker(), ByRef pceltFetched As Integer) As Integer
+    parameters:
+    - id: celt
+      type: System.Int32
+      description: The number of monikers to return in *rgelt*.
+    - id: rgelt
+      type: System.Runtime.InteropServices.UCOMIMoniker[]
+      description: On successful return, a reference to the enumerated monikers.
+    - id: pceltFetched
+      type: System.Int32
+      description: On successful return, a reference to the actual number of monikers enumerated in *rgelt*.
+    return:
+      type: System.Int32
+      description: S_OK if the *pceltFetched* parameter equals the *celt* parameter; otherwise, S_FALSE.
+- uid: System.Runtime.InteropServices.UCOMIEnumMoniker.Skip(System.Int32)
+  id: Skip(System.Int32)
+  parent: System.Runtime.InteropServices.UCOMIEnumMoniker
+  href: System.Runtime.InteropServices.UCOMIEnumMoniker.yml
+  name: Skip(Int32)
+  fullName: System.Runtime.InteropServices.UCOMIEnumMoniker.Skip(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumMoniker.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Skips over a specified number of items in the enumeration sequence.
+  syntax:
+    content: int Skip(int celt)
+    content.vb: Function Skip(celt As Integer) As Integer
+    parameters:
+    - id: celt
+      type: System.Int32
+      description: The number of elements to skip in the enumeration.
+    return:
+      type: System.Int32
+      description: S_OK if the number of elements skipped equals the *celt* parameter; otherwise, S_FALSE.
+- uid: System.Runtime.InteropServices.UCOMIEnumMoniker.Reset
+  id: Reset
+  parent: System.Runtime.InteropServices.UCOMIEnumMoniker
+  href: System.Runtime.InteropServices.UCOMIEnumMoniker.yml
+  name: Reset()
+  fullName: System.Runtime.InteropServices.UCOMIEnumMoniker.Reset()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumMoniker.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Resets the enumeration sequence to the beginning.
+  syntax:
+    content: int Reset()
+    content.vb: Function Reset As Integer
+    return:
+      type: System.Int32
+      description: An HRESULT with the value S_OK.
+- uid: System.Runtime.InteropServices.UCOMIEnumMoniker.Clone(System.Runtime.InteropServices.UCOMIEnumMoniker@)
+  id: Clone(System.Runtime.InteropServices.UCOMIEnumMoniker@)
+  parent: System.Runtime.InteropServices.UCOMIEnumMoniker
+  href: System.Runtime.InteropServices.UCOMIEnumMoniker.yml
+  name: Clone(out UCOMIEnumMoniker)
+  name.vb: Clone(ByRef UCOMIEnumMoniker)
+  fullName: System.Runtime.InteropServices.UCOMIEnumMoniker.Clone(out System.Runtime.InteropServices.UCOMIEnumMoniker)
+  fullName.vb: System.Runtime.InteropServices.UCOMIEnumMoniker.Clone(ByRef System.Runtime.InteropServices.UCOMIEnumMoniker)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumMoniker.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Creates another enumerator that contains the same enumeration state as the current one.
+  syntax:
+    content: void Clone(out UCOMIEnumMoniker ppenum)
+    content.vb: Sub Clone(ByRef ppenum As UCOMIEnumMoniker)
+    parameters:
+    - id: ppenum
+      type: System.Runtime.InteropServices.UCOMIEnumMoniker
+      description: On successful return, a reference to the newly created enumerator.
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Runtime.InteropServices.UCOMIMoniker[]
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: UCOMIMoniker[]
+  name.vb: UCOMIMoniker()
+  fullName: System.Runtime.InteropServices.UCOMIMoniker[]
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker()
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.UCOMIMoniker
+    name: UCOMIMoniker
+    fullName: System.Runtime.InteropServices.UCOMIMoniker
+    href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Runtime.InteropServices.UCOMIMoniker
+    name: UCOMIMoniker
+    fullName: System.Runtime.InteropServices.UCOMIMoniker
+    href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  - name: ()
+    fullName: ()
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.InteropServices.UCOMIEnumMoniker
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMIEnumMoniker.yml
+  name: UCOMIEnumMoniker
+  fullName: System.Runtime.InteropServices.UCOMIEnumMoniker
+  type: Interface

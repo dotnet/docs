@@ -1,0 +1,193 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC
+  id: IEnumFORMATETC
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Clone(System.Runtime.InteropServices.ComTypes.IEnumFORMATETC@)
+  - System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Next(System.Int32,System.Runtime.InteropServices.ComTypes.FORMATETC[],System.Int32[])
+  - System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Reset
+  - System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Skip(System.Int32)
+  href: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.yml
+  name: IEnumFORMATETC
+  fullName: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/IEnumFormatETC.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/IEnumFormatETC.cs
+    startLine: 10
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Provides the managed definition of the IEnumFORMATETC interface.
+  syntax:
+    content: public interface IEnumFORMATETC
+    content.vb: Public Interface IEnumFORMATETC
+- uid: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Next(System.Int32,System.Runtime.InteropServices.ComTypes.FORMATETC[],System.Int32[])
+  id: Next(System.Int32,System.Runtime.InteropServices.ComTypes.FORMATETC[],System.Int32[])
+  parent: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC
+  href: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.yml
+  name: Next(Int32, FORMATETC[], Int32[])
+  name.vb: Next(Int32, FORMATETC(), Int32())
+  fullName: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Next(System.Int32, System.Runtime.InteropServices.ComTypes.FORMATETC[], System.Int32[])
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Next(System.Int32, System.Runtime.InteropServices.ComTypes.FORMATETC(), System.Int32())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/IEnumFormatETC.cs
+    startLine: 22
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves a specified number of items in the enumeration sequence.
+  syntax:
+    content: int Next(int celt, FORMATETC[] rgelt, int[] pceltFetched)
+    content.vb: Function Next(celt As Integer, rgelt As FORMATETC(), pceltFetched As Integer()) As Integer
+    parameters:
+    - id: celt
+      type: System.Int32
+      description: The number of @'System.Runtime.InteropServices.ComTypes.FORMATETC' references to return in *rgelt*.
+    - id: rgelt
+      type: System.Runtime.InteropServices.ComTypes.FORMATETC[]
+      description: When this method returns, contains a reference to the enumerated @'System.Runtime.InteropServices.ComTypes.FORMATETC' references. This parameter is passed uninitialized.
+    - id: pceltFetched
+      type: System.Int32[]
+      description: When this method returns, contains a reference to the actual number of references enumerated in *rgelt*. This parameter is passed uninitialized.
+    return:
+      type: System.Int32
+      description: S_OK if the *pceltFetched* parameter equals the *celt* parameter; otherwise, S_FALSE.
+- uid: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Skip(System.Int32)
+  id: Skip(System.Int32)
+  parent: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC
+  href: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.yml
+  name: Skip(Int32)
+  fullName: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Skip(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/IEnumFormatETC.cs
+    startLine: 28
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Skips a specified number of items in the enumeration sequence.
+  syntax:
+    content: int Skip(int celt)
+    content.vb: Function Skip(celt As Integer) As Integer
+    parameters:
+    - id: celt
+      type: System.Int32
+      description: The number of elements to skip in the enumeration.
+    return:
+      type: System.Int32
+      description: S_OK if the number of elements skipped equals the *celt* parameter; otherwise, S_FALSE.
+- uid: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Reset
+  id: Reset
+  parent: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC
+  href: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.yml
+  name: Reset()
+  fullName: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Reset()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/IEnumFormatETC.cs
+    startLine: 34
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Resets the enumeration sequence to the beginning.
+  syntax:
+    content: int Reset()
+    content.vb: Function Reset As Integer
+    return:
+      type: System.Int32
+      description: An HRESULT with the value S_OK.
+- uid: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Clone(System.Runtime.InteropServices.ComTypes.IEnumFORMATETC@)
+  id: Clone(System.Runtime.InteropServices.ComTypes.IEnumFORMATETC@)
+  parent: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC
+  href: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.yml
+  name: Clone(out IEnumFORMATETC)
+  name.vb: Clone(ByRef IEnumFORMATETC)
+  fullName: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Clone(out System.Runtime.InteropServices.ComTypes.IEnumFORMATETC)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.Clone(ByRef System.Runtime.InteropServices.ComTypes.IEnumFORMATETC)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/IEnumFormatETC.cs
+    startLine: 43
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Creates a new enumerator that contains the same enumeration state as the current enumerator.
+  syntax:
+    content: void Clone(out IEnumFORMATETC newEnum)
+    content.vb: Sub Clone(ByRef newEnum As IEnumFORMATETC)
+    parameters:
+    - id: newEnum
+      type: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC
+      description: When this method returns, contains a reference to the newly created enumerator. This parameter is passed uninitialized.
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: System.Runtime.InteropServices.ComTypes
+  fullName: System.Runtime.InteropServices.ComTypes
+  type: Namespace
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Runtime.InteropServices.ComTypes.FORMATETC[]
+  isExternal: false
+  href: System.Runtime.InteropServices.ComTypes.FORMATETC.yml
+  name: FORMATETC[]
+  name.vb: FORMATETC()
+  fullName: System.Runtime.InteropServices.ComTypes.FORMATETC[]
+  fullName.vb: System.Runtime.InteropServices.ComTypes.FORMATETC()
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.ComTypes.FORMATETC
+    name: FORMATETC
+    fullName: System.Runtime.InteropServices.ComTypes.FORMATETC
+    href: System.Runtime.InteropServices.ComTypes.FORMATETC.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Runtime.InteropServices.ComTypes.FORMATETC
+    name: FORMATETC
+    fullName: System.Runtime.InteropServices.ComTypes.FORMATETC
+    href: System.Runtime.InteropServices.ComTypes.FORMATETC.yml
+  - name: ()
+    fullName: ()
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  name.vb: Int32()
+  fullName: System.Int32[]
+  fullName.vb: System.Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  href: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC.yml
+  name: IEnumFORMATETC
+  fullName: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC
+  type: Interface

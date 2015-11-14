@@ -1,0 +1,602 @@
+items:
+- uid: System.Security.Cryptography.FromBase64Transform
+  id: FromBase64Transform
+  parent: System.Security.Cryptography
+  children:
+  - System.Security.Cryptography.FromBase64Transform.#ctor
+  - System.Security.Cryptography.FromBase64Transform.#ctor(System.Security.Cryptography.FromBase64TransformMode)
+  - System.Security.Cryptography.FromBase64Transform.CanReuseTransform
+  - System.Security.Cryptography.FromBase64Transform.CanTransformMultipleBlocks
+  - System.Security.Cryptography.FromBase64Transform.Clear
+  - System.Security.Cryptography.FromBase64Transform.Dispose
+  - System.Security.Cryptography.FromBase64Transform.Dispose(System.Boolean)
+  - System.Security.Cryptography.FromBase64Transform.Finalize
+  - System.Security.Cryptography.FromBase64Transform.InputBlockSize
+  - System.Security.Cryptography.FromBase64Transform.OutputBlockSize
+  - System.Security.Cryptography.FromBase64Transform.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  - System.Security.Cryptography.FromBase64Transform.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)
+  href: System.Security.Cryptography.FromBase64Transform.yml
+  name: FromBase64Transform
+  fullName: System.Security.Cryptography.FromBase64Transform
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Cryptography/base64Transforms.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Cryptography/base64Transforms.cs
+    startLine: 102
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Converts a @'System.Security.Cryptography.CryptoStream' from base 64.
+  syntax:
+    content: 'public class FromBase64Transform : ICryptoTransform, IDisposable'
+    content.vb: Public Class FromBase64Transform Implements ICryptoTransform, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Security.Cryptography.ICryptoTransform
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Cryptography.FromBase64Transform.#ctor
+  id: '#ctor'
+  parent: System.Security.Cryptography.FromBase64Transform
+  href: System.Security.Cryptography.FromBase64Transform.yml
+  name: FromBase64Transform()
+  fullName: System.Security.Cryptography.FromBase64Transform.FromBase64Transform()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/base64Transforms.cs
+    startLine: 110
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Initializes a new instance of the @'System.Security.Cryptography.FromBase64Transform' class.
+  syntax:
+    content: public FromBase64Transform()
+    content.vb: Public Sub New
+- uid: System.Security.Cryptography.FromBase64Transform.#ctor(System.Security.Cryptography.FromBase64TransformMode)
+  id: '#ctor(System.Security.Cryptography.FromBase64TransformMode)'
+  parent: System.Security.Cryptography.FromBase64Transform
+  href: System.Security.Cryptography.FromBase64Transform.yml
+  name: FromBase64Transform(FromBase64TransformMode)
+  fullName: System.Security.Cryptography.FromBase64Transform.FromBase64Transform(System.Security.Cryptography.FromBase64TransformMode)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/base64Transforms.cs
+    startLine: 111
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Initializes a new instance of the @'System.Security.Cryptography.FromBase64Transform' class with the specified transformation mode.
+  syntax:
+    content: public FromBase64Transform(FromBase64TransformMode whitespaces)
+    content.vb: Public Sub New(whitespaces As FromBase64TransformMode)
+    parameters:
+    - id: whitespaces
+      type: System.Security.Cryptography.FromBase64TransformMode
+      description: One of the @'System.Security.Cryptography.FromBase64Transform' values.
+- uid: System.Security.Cryptography.FromBase64Transform.InputBlockSize
+  id: InputBlockSize
+  parent: System.Security.Cryptography.FromBase64Transform
+  href: System.Security.Cryptography.FromBase64Transform.yml
+  name: InputBlockSize
+  fullName: System.Security.Cryptography.FromBase64Transform.InputBlockSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/base64Transforms.cs
+    startLine: 117
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Gets the input block size.
+  syntax:
+    content: public int InputBlockSize { get; }
+    content.vb: Public ReadOnly Property InputBlockSize As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The size of the input data blocks in bytes.
+- uid: System.Security.Cryptography.FromBase64Transform.OutputBlockSize
+  id: OutputBlockSize
+  parent: System.Security.Cryptography.FromBase64Transform
+  href: System.Security.Cryptography.FromBase64Transform.yml
+  name: OutputBlockSize
+  fullName: System.Security.Cryptography.FromBase64Transform.OutputBlockSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/base64Transforms.cs
+    startLine: 121
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Gets the output block size.
+  syntax:
+    content: public int OutputBlockSize { get; }
+    content.vb: Public ReadOnly Property OutputBlockSize As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The size of the output data blocks in bytes.
+- uid: System.Security.Cryptography.FromBase64Transform.CanTransformMultipleBlocks
+  id: CanTransformMultipleBlocks
+  parent: System.Security.Cryptography.FromBase64Transform
+  href: System.Security.Cryptography.FromBase64Transform.yml
+  name: CanTransformMultipleBlocks
+  fullName: System.Security.Cryptography.FromBase64Transform.CanTransformMultipleBlocks
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/base64Transforms.cs
+    startLine: 125
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Gets a value that indicates whether multiple blocks can be transformed.
+  syntax:
+    content: public bool CanTransformMultipleBlocks { get; }
+    content.vb: Public ReadOnly Property CanTransformMultipleBlocks As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: Always false.
+- uid: System.Security.Cryptography.FromBase64Transform.CanReuseTransform
+  id: CanReuseTransform
+  parent: System.Security.Cryptography.FromBase64Transform
+  href: System.Security.Cryptography.FromBase64Transform.yml
+  name: CanReuseTransform
+  fullName: System.Security.Cryptography.FromBase64Transform.CanReuseTransform
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/base64Transforms.cs
+    startLine: 129
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Gets a value indicating whether the current transform can be reused.
+  syntax:
+    content: public virtual bool CanReuseTransform { get; }
+    content.vb: Public Overridable ReadOnly Property CanReuseTransform As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: Always true.
+- uid: System.Security.Cryptography.FromBase64Transform.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  id: TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  parent: System.Security.Cryptography.FromBase64Transform
+  href: System.Security.Cryptography.FromBase64Transform.yml
+  name: TransformBlock(Byte[], Int32, Int32, Byte[], Int32)
+  name.vb: TransformBlock(Byte(), Int32, Int32, Byte(), Int32)
+  fullName: System.Security.Cryptography.FromBase64Transform.TransformBlock(System.Byte[], System.Int32, System.Int32, System.Byte[], System.Int32)
+  fullName.vb: System.Security.Cryptography.FromBase64Transform.TransformBlock(System.Byte(), System.Int32, System.Int32, System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/base64Transforms.cs
+    startLine: 133
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Converts the specified region of the input byte array from base 64 and copies the result to the specified region of the output byte array.
+  syntax:
+    content: public int TransformBlock(byte[] inputBuffer, int inputOffset, int inputCount, byte[] outputBuffer, int outputOffset)
+    content.vb: Public Function TransformBlock(inputBuffer As Byte(), inputOffset As Integer, inputCount As Integer, outputBuffer As Byte(), outputOffset As Integer) As Integer
+    parameters:
+    - id: inputBuffer
+      type: System.Byte[]
+      description: The input to compute from base 64.
+    - id: inputOffset
+      type: System.Int32
+      description: The offset into the input byte array from which to begin using data.
+    - id: inputCount
+      type: System.Int32
+      description: The number of bytes in the input byte array to use as data.
+    - id: outputBuffer
+      type: System.Byte[]
+      description: The output to which to write the result.
+    - id: outputOffset
+      type: System.Int32
+      description: The offset into the output byte array from which to begin writing data.
+    return:
+      type: System.Int32
+      description: The number of bytes written.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The current @'System.Security.Cryptography.FromBase64Transform' object has already been disposed.
+  - type: System.ArgumentException
+    description: '*inputCount* uses an invalid value.-or-*inputBuffer* has an invalid offset length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*inputOffset* is out of range. This parameter requires a non-negative number.'
+  - type: System.ArgumentNullException
+    description: '*inputBuffer* is null.'
+- uid: System.Security.Cryptography.FromBase64Transform.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)
+  id: TransformFinalBlock(System.Byte[],System.Int32,System.Int32)
+  parent: System.Security.Cryptography.FromBase64Transform
+  href: System.Security.Cryptography.FromBase64Transform.yml
+  name: TransformFinalBlock(Byte[], Int32, Int32)
+  name.vb: TransformFinalBlock(Byte(), Int32, Int32)
+  fullName: System.Security.Cryptography.FromBase64Transform.TransformFinalBlock(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.Security.Cryptography.FromBase64Transform.TransformFinalBlock(System.Byte(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/base64Transforms.cs
+    startLine: 177
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Converts the specified region of the specified byte array from base 64.
+  syntax:
+    content: public byte[] TransformFinalBlock(byte[] inputBuffer, int inputOffset, int inputCount)
+    content.vb: Public Function TransformFinalBlock(inputBuffer As Byte(), inputOffset As Integer, inputCount As Integer) As Byte()
+    parameters:
+    - id: inputBuffer
+      type: System.Byte[]
+      description: The input to convert from base 64.
+    - id: inputOffset
+      type: System.Int32
+      description: The offset into the byte array from which to begin using data.
+    - id: inputCount
+      type: System.Int32
+      description: The number of bytes in the byte array to use as data.
+    return:
+      type: System.Byte[]
+      description: The computed conversion.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The current @'System.Security.Cryptography.FromBase64Transform' object has already been disposed.
+  - type: System.ArgumentException
+    description: '*inputBuffer* has an invalid offset length.-or-*inputCount* has an invalid value.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*inputOffset* is out of range. This parameter requires a non-negative number.'
+  - type: System.ArgumentNullException
+    description: '*inputBuffer* is null.'
+- uid: System.Security.Cryptography.FromBase64Transform.Dispose
+  id: Dispose
+  parent: System.Security.Cryptography.FromBase64Transform
+  href: System.Security.Cryptography.FromBase64Transform.yml
+  name: Dispose()
+  fullName: System.Security.Cryptography.FromBase64Transform.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/base64Transforms.cs
+    startLine: 236
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Releases all resources used by the current instance of the @'System.Security.Cryptography.FromBase64Transform' class.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.Security.Cryptography.FromBase64Transform.Clear
+  id: Clear
+  parent: System.Security.Cryptography.FromBase64Transform
+  href: System.Security.Cryptography.FromBase64Transform.yml
+  name: Clear()
+  fullName: System.Security.Cryptography.FromBase64Transform.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/base64Transforms.cs
+    startLine: 246
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Releases all resources used by the @'System.Security.Cryptography.FromBase64Transform'.
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+- uid: System.Security.Cryptography.FromBase64Transform.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Security.Cryptography.FromBase64Transform
+  href: System.Security.Cryptography.FromBase64Transform.yml
+  name: Dispose(Boolean)
+  fullName: System.Security.Cryptography.FromBase64Transform.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/base64Transforms.cs
+    startLine: 250
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Releases the unmanaged resources used by the @'System.Security.Cryptography.FromBase64Transform' and optionally releases the managed resources.
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
+- uid: System.Security.Cryptography.FromBase64Transform.Finalize
+  id: Finalize
+  parent: System.Security.Cryptography.FromBase64Transform
+  href: System.Security.Cryptography.FromBase64Transform.yml
+  name: Finalize()
+  fullName: System.Security.Cryptography.FromBase64Transform.Finalize()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/base64Transforms.cs
+    startLine: 260
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Releases the unmanaged resources used by the @'System.Security.Cryptography.FromBase64Transform'.
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+references:
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: System.Security.Cryptography
+  fullName: System.Security.Cryptography
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Security.Cryptography.FromBase64TransformMode
+  parent: System.Security.Cryptography
+  isExternal: false
+  href: System.Security.Cryptography.FromBase64TransformMode.yml
+  name: FromBase64TransformMode
+  fullName: System.Security.Cryptography.FromBase64TransformMode
+  type: Enum
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()

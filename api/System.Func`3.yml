@@ -1,0 +1,56 @@
+items:
+- uid: System.Func`3
+  id: Func`3
+  parent: System
+  children: []
+  href: System.Func`3.yml
+  name: Func<T1, T2, TResult>
+  name.vb: Func(Of T1, T2, TResult)
+  fullName: System.Func<T1, T2, TResult>
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/Action.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Action.cs
+    startLine: 56
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Encapsulates a method that has two parameters and returns a value of the type specified by the *TResult* parameter.
+  syntax:
+    content: public delegate TResult Func<in T1, in T2, out TResult>(T1 arg1, T2 arg2);
+    content.vb: Public Delegate Function Func(Of In T1, In T2, Out TResult)(arg1 As T1, arg2 As T2) As TResult
+    parameters:
+    - id: arg1
+      type: '{T1}'
+      description: The first parameter of the method that this delegate encapsulates.
+    - id: arg2
+      type: '{T2}'
+      description: The second parameter of the method that this delegate encapsulates.
+    typeParameters:
+    - id: T1
+    - id: T2
+    - id: TResult
+    return:
+      type: '{TResult}'
+      description: The return value of the method that this delegate encapsulates.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: '{T1}'
+  isExternal: false
+  name: T1
+  fullName: T1
+- uid: '{T2}'
+  isExternal: false
+  name: T2
+  fullName: T2
+- uid: '{TResult}'
+  isExternal: false
+  name: TResult
+  fullName: TResult

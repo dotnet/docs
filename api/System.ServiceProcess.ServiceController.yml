@@ -1,0 +1,1059 @@
+items:
+- uid: System.ServiceProcess.ServiceController
+  id: ServiceController
+  parent: System.ServiceProcess
+  children:
+  - System.ServiceProcess.ServiceController.#ctor(System.String)
+  - System.ServiceProcess.ServiceController.#ctor(System.String,System.String)
+  - System.ServiceProcess.ServiceController.CanPauseAndContinue
+  - System.ServiceProcess.ServiceController.CanShutdown
+  - System.ServiceProcess.ServiceController.CanStop
+  - System.ServiceProcess.ServiceController.Continue
+  - System.ServiceProcess.ServiceController.DependentServices
+  - System.ServiceProcess.ServiceController.DisplayName
+  - System.ServiceProcess.ServiceController.Dispose
+  - System.ServiceProcess.ServiceController.Dispose(System.Boolean)
+  - System.ServiceProcess.ServiceController.GetDevices
+  - System.ServiceProcess.ServiceController.GetDevices(System.String)
+  - System.ServiceProcess.ServiceController.GetServices
+  - System.ServiceProcess.ServiceController.GetServices(System.String)
+  - System.ServiceProcess.ServiceController.MachineName
+  - System.ServiceProcess.ServiceController.Pause
+  - System.ServiceProcess.ServiceController.Refresh
+  - System.ServiceProcess.ServiceController.ServiceHandle
+  - System.ServiceProcess.ServiceController.ServiceName
+  - System.ServiceProcess.ServiceController.ServicesDependedOn
+  - System.ServiceProcess.ServiceController.ServiceType
+  - System.ServiceProcess.ServiceController.Start
+  - System.ServiceProcess.ServiceController.Start(System.String[])
+  - System.ServiceProcess.ServiceController.Status
+  - System.ServiceProcess.ServiceController.Stop
+  - System.ServiceProcess.ServiceController.WaitForStatus(System.ServiceProcess.ServiceControllerStatus)
+  - System.ServiceProcess.ServiceController.WaitForStatus(System.ServiceProcess.ServiceControllerStatus,System.TimeSpan)
+  href: System.ServiceProcess.ServiceController.yml
+  name: ServiceController
+  fullName: System.ServiceProcess.ServiceController
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 18
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Represents a Windows service and allows you to connect to a running or stopped service, manipulate it, or get information about it.
+  syntax:
+    content: 'public class ServiceController : IDisposable'
+    content.vb: Public Class ServiceController Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.ServiceProcess.ServiceController.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: ServiceController(String)
+  fullName: System.ServiceProcess.ServiceController.ServiceController(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 40
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Initializes a new instance of the @'System.ServiceProcess.ServiceController' class that is associated with an existing service on the local computer.
+  syntax:
+    content: public ServiceController(string name)
+    content.vb: Public Sub New(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name that identifies the service to the system. This can also be the display name for the service.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*name* is invalid.'
+- uid: System.ServiceProcess.ServiceController.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: ServiceController(String, String)
+  fullName: System.ServiceProcess.ServiceController.ServiceController(System.String, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 46
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Initializes a new instance of the @'System.ServiceProcess.ServiceController' class that is associated with an existing service on the specified computer.
+  syntax:
+    content: public ServiceController(string name, string machineName)
+    content.vb: Public Sub New(name As String, machineName As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name that identifies the service to the system. This can also be the display name for the service.
+    - id: machineName
+      type: System.String
+      description: The computer on which the service resides.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*name* is invalid.-or- *machineName* is invalid.'
+- uid: System.ServiceProcess.ServiceController.CanPauseAndContinue
+  id: CanPauseAndContinue
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: CanPauseAndContinue
+  fullName: System.ServiceProcess.ServiceController.CanPauseAndContinue
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 92
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Gets a value indicating whether the service can be paused and resumed.
+  syntax:
+    content: public bool CanPauseAndContinue { get; }
+    content.vb: Public ReadOnly Property CanPauseAndContinue As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the service can be paused; otherwise, false.
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.InvalidOperationException
+    description: The service was not found.
+- uid: System.ServiceProcess.ServiceController.CanShutdown
+  id: CanShutdown
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: CanShutdown
+  fullName: System.ServiceProcess.ServiceController.CanShutdown
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 103
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Gets a value indicating whether the service should be notified when the system is shutting down.
+  syntax:
+    content: public bool CanShutdown { get; }
+    content.vb: Public ReadOnly Property CanShutdown As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the service should be notified when the system is shutting down; otherwise, false.
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.InvalidOperationException
+    description: The service was not found.
+- uid: System.ServiceProcess.ServiceController.CanStop
+  id: CanStop
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: CanStop
+  fullName: System.ServiceProcess.ServiceController.CanStop
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 113
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Gets a value indicating whether the service can be stopped after it has started.
+  syntax:
+    content: public bool CanStop { get; }
+    content.vb: Public ReadOnly Property CanStop As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the service can be stopped and the @'System.ServiceProcess.ServiceBase.OnStop' method called; otherwise, false.
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.InvalidOperationException
+    description: The service was not found.
+- uid: System.ServiceProcess.ServiceController.DisplayName
+  id: DisplayName
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: DisplayName
+  fullName: System.ServiceProcess.ServiceController.DisplayName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 123
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Gets or sets a friendly name for the service.
+  syntax:
+    content: public string DisplayName { get; }
+    content.vb: Public ReadOnly Property DisplayName As String
+    parameters: []
+    return:
+      type: System.String
+      description: The friendly name of the service, which can be used to identify the service.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The @'System.ServiceProcess.ServiceController.DisplayName' is null.
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.InvalidOperationException
+    description: The service was not found.
+- uid: System.ServiceProcess.ServiceController.DependentServices
+  id: DependentServices
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: DependentServices
+  fullName: System.ServiceProcess.ServiceController.DependentServices
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 135
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Gets the set of services that depends on the service associated with this @'System.ServiceProcess.ServiceController' instance.
+  syntax:
+    content: public ServiceController[] DependentServices { get; }
+    content.vb: Public ReadOnly Property DependentServices As ServiceController()
+    parameters: []
+    return:
+      type: System.ServiceProcess.ServiceController[]
+      description: An array of @'System.ServiceProcess.ServiceController' instances, each of which is associated with a service that depends on this service.
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.InvalidOperationException
+    description: The service was not found.
+- uid: System.ServiceProcess.ServiceController.MachineName
+  id: MachineName
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: MachineName
+  fullName: System.ServiceProcess.ServiceController.MachineName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 196
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Gets or sets the name of the computer on which this service resides.
+  syntax:
+    content: public string MachineName { get; }
+    content.vb: Public ReadOnly Property MachineName As String
+    parameters: []
+    return:
+      type: System.String
+      description: The name of the computer that is running the service associated with this @'System.ServiceProcess.ServiceController' instance. The default is the local computer (".").
+  exceptions:
+  - type: System.ArgumentException
+    description: The @'System.ServiceProcess.ServiceController.MachineName' syntax is invalid.
+- uid: System.ServiceProcess.ServiceController.ServiceName
+  id: ServiceName
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: ServiceName
+  fullName: System.ServiceProcess.ServiceController.ServiceName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 205
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Gets or sets the name that identifies the service that this instance references.
+  syntax:
+    content: public string ServiceName { get; }
+    content.vb: Public ReadOnly Property ServiceName As String
+    parameters: []
+    return:
+      type: System.String
+      description: The name that identifies the service that this @'System.ServiceProcess.ServiceController' instance references. The default is an empty string ("").
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The @'System.ServiceProcess.ServiceController.ServiceName' is null.
+  - type: System.ArgumentException
+    description: The syntax of the @'System.ServiceProcess.ServiceController.ServiceName' property is invalid.
+  - type: System.InvalidOperationException
+    description: The service was not found.
+- uid: System.ServiceProcess.ServiceController.ServicesDependedOn
+  id: ServicesDependedOn
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: ServicesDependedOn
+  fullName: System.ServiceProcess.ServiceController.ServicesDependedOn
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 215
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: The set of services that this service depends on.
+  syntax:
+    content: public ServiceController[] ServicesDependedOn { get; }
+    content.vb: Public ReadOnly Property ServicesDependedOn As ServiceController()
+    parameters: []
+    return:
+      type: System.ServiceProcess.ServiceController[]
+      description: An array of @'System.ServiceProcess.ServiceController' instances, each of which is associated with a service that must be running for this service to run.
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.InvalidOperationException
+    description: The service was not found.
+- uid: System.ServiceProcess.ServiceController.ServiceHandle
+  id: ServiceHandle
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: ServiceHandle
+  fullName: System.ServiceProcess.ServiceController.ServiceHandle
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 307
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Gets the handle for the service.
+  syntax:
+    content: public SafeHandle ServiceHandle { get; }
+    content.vb: Public ReadOnly Property ServiceHandle As SafeHandle
+    parameters: []
+    return:
+      type: System.Runtime.InteropServices.SafeHandle
+      description: A @'System.Runtime.InteropServices.SafeHandle' that contains the handle for the service.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The service was not found.
+- uid: System.ServiceProcess.ServiceController.Status
+  id: Status
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: Status
+  fullName: System.ServiceProcess.ServiceController.Status
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 316
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Gets the status of the service that is referenced by this instance.
+  syntax:
+    content: public ServiceControllerStatus Status { get; }
+    content.vb: Public ReadOnly Property Status As ServiceControllerStatus
+    parameters: []
+    return:
+      type: System.ServiceProcess.ServiceControllerStatus
+      description: One of the @'System.ServiceProcess.ServiceControllerStatus' values that indicates whether the service is running, stopped, or paused, or whether a start, stop, pause, or continue command is pending.
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.InvalidOperationException
+    description: The service was not found.
+- uid: System.ServiceProcess.ServiceController.ServiceType
+  id: ServiceType
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: ServiceType
+  fullName: System.ServiceProcess.ServiceController.ServiceType
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 326
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Gets the type of service that this object references.
+  syntax:
+    content: public ServiceType ServiceType { get; }
+    content.vb: Public ReadOnly Property ServiceType As ServiceType
+    parameters: []
+    return:
+      type: System.ServiceProcess.ServiceType
+      description: One of the @'System.ServiceProcess.ServiceType' values, used to indicate the network service type.
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.InvalidOperationException
+    description: The service was not found.
+- uid: System.ServiceProcess.ServiceController.Dispose
+  id: Dispose
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: Dispose()
+  fullName: System.ServiceProcess.ServiceController.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 344
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.ServiceProcess.ServiceController.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: Dispose(Boolean)
+  fullName: System.ServiceProcess.ServiceController.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 350
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Releases the unmanaged resources used by the @'System.ServiceProcess.ServiceController' and optionally releases the managed resources.
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
+- uid: System.ServiceProcess.ServiceController.GetDevices
+  id: GetDevices
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: GetDevices()
+  fullName: System.ServiceProcess.ServiceController.GetDevices()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 509
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Retrieves the device driver services on the local computer.
+  syntax:
+    content: public static ServiceController[] GetDevices()
+    content.vb: Public Shared Function GetDevices As ServiceController()
+    return:
+      type: System.ServiceProcess.ServiceController[]
+      description: An array of type @'System.ServiceProcess.ServiceController' in which each element is associated with a device driver service on the local computer.
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+- uid: System.ServiceProcess.ServiceController.GetDevices(System.String)
+  id: GetDevices(System.String)
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: GetDevices(String)
+  fullName: System.ServiceProcess.ServiceController.GetDevices(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 515
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Retrieves the device driver services on the specified computer.
+  syntax:
+    content: public static ServiceController[] GetDevices(string machineName)
+    content.vb: Public Shared Function GetDevices(machineName As String) As ServiceController()
+    parameters:
+    - id: machineName
+      type: System.String
+      description: The computer from which to retrieve the device driver services.
+    return:
+      type: System.ServiceProcess.ServiceController[]
+      description: An array of type @'System.ServiceProcess.ServiceController' in which each element is associated with a device driver service on the specified computer.
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.ArgumentException
+    description: The *machineName* parameter has invalid syntax.
+- uid: System.ServiceProcess.ServiceController.GetServices
+  id: GetServices
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: GetServices()
+  fullName: System.ServiceProcess.ServiceController.GetServices()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 537
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Retrieves all the services on the local computer, except for the device driver services.
+  syntax:
+    content: public static ServiceController[] GetServices()
+    content.vb: Public Shared Function GetServices As ServiceController()
+    return:
+      type: System.ServiceProcess.ServiceController[]
+      description: An array of type @'System.ServiceProcess.ServiceController' in which each element is associated with a service on the local computer.
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+- uid: System.ServiceProcess.ServiceController.GetServices(System.String)
+  id: GetServices(System.String)
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: GetServices(String)
+  fullName: System.ServiceProcess.ServiceController.GetServices(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 543
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Retrieves all the services on the specified computer, except for the device driver services.
+  syntax:
+    content: public static ServiceController[] GetServices(string machineName)
+    content.vb: Public Shared Function GetServices(machineName As String) As ServiceController()
+    parameters:
+    - id: machineName
+      type: System.String
+      description: The computer from which to retrieve the services.
+    return:
+      type: System.ServiceProcess.ServiceController[]
+      description: An array of type @'System.ServiceProcess.ServiceController' in which each element is associated with a service on the specified computer.
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.ArgumentException
+    description: The *machineName* parameter has invalid syntax.
+- uid: System.ServiceProcess.ServiceController.Pause
+  id: Pause
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: Pause()
+  fullName: System.ServiceProcess.ServiceController.Pause()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 632
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Suspends a service's operation.
+  syntax:
+    content: public void Pause()
+    content.vb: Public Sub Pause
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.InvalidOperationException
+    description: The service was not found.
+- uid: System.ServiceProcess.ServiceController.Continue
+  id: Continue
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: Continue()
+  fullName: System.ServiceProcess.ServiceController.Continue()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 652
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Continues a service after it has been paused.
+  syntax:
+    content: public void Continue()
+    content.vb: Public Sub Continue
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.InvalidOperationException
+    description: The service was not found.
+- uid: System.ServiceProcess.ServiceController.Refresh
+  id: Refresh
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: Refresh()
+  fullName: System.ServiceProcess.ServiceController.Refresh()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 672
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Refreshes property values by resetting the properties to their current values.
+  syntax:
+    content: public void Refresh()
+    content.vb: Public Sub Refresh
+- uid: System.ServiceProcess.ServiceController.Start
+  id: Start
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: Start()
+  fullName: System.ServiceProcess.ServiceController.Start()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 680
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Starts the service, passing no arguments.
+  syntax:
+    content: public void Start()
+    content.vb: Public Sub Start
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.InvalidOperationException
+    description: The service was not found.
+- uid: System.ServiceProcess.ServiceController.Start(System.String[])
+  id: Start(System.String[])
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: Start(String[])
+  name.vb: Start(String())
+  fullName: System.ServiceProcess.ServiceController.Start(System.String[])
+  fullName.vb: System.ServiceProcess.ServiceController.Start(System.String())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 686
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Starts a service, passing the specified arguments.
+  syntax:
+    content: public void Start(string[] args)
+    content.vb: Public Sub Start(args As String())
+    parameters:
+    - id: args
+      type: System.String[]
+      description: An array of arguments to pass to the service when it starts.
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.InvalidOperationException
+    description: The service cannot be started.
+  - type: System.ArgumentNullException
+    description: '*args* is null.-or-A member of the array is null.'
+- uid: System.ServiceProcess.ServiceController.Stop
+  id: Stop
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: Stop()
+  fullName: System.ServiceProcess.ServiceController.Stop()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 742
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Stops this service and any services that are dependent on this service.
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub Stop
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when accessing a system API.
+  - type: System.InvalidOperationException
+    description: The service was not found.
+- uid: System.ServiceProcess.ServiceController.WaitForStatus(System.ServiceProcess.ServiceControllerStatus)
+  id: WaitForStatus(System.ServiceProcess.ServiceControllerStatus)
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: WaitForStatus(ServiceControllerStatus)
+  fullName: System.ServiceProcess.ServiceController.WaitForStatus(System.ServiceProcess.ServiceControllerStatus)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 776
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Infinitely waits for the service to reach the specified status.
+  syntax:
+    content: public void WaitForStatus(ServiceControllerStatus desiredStatus)
+    content.vb: Public Sub WaitForStatus(desiredStatus As ServiceControllerStatus)
+    parameters:
+    - id: desiredStatus
+      type: System.ServiceProcess.ServiceControllerStatus
+      description: The status to wait for.
+  exceptions:
+  - type: System.ComponentModel.InvalidEnumArgumentException
+    description: The *desiredStatus* parameter is not any of the values defined in the @'System.ServiceProcess.ServiceControllerStatus' enumeration.
+- uid: System.ServiceProcess.ServiceController.WaitForStatus(System.ServiceProcess.ServiceControllerStatus,System.TimeSpan)
+  id: WaitForStatus(System.ServiceProcess.ServiceControllerStatus,System.TimeSpan)
+  parent: System.ServiceProcess.ServiceController
+  href: System.ServiceProcess.ServiceController.yml
+  name: WaitForStatus(ServiceControllerStatus, TimeSpan)
+  fullName: System.ServiceProcess.ServiceController.WaitForStatus(System.ServiceProcess.ServiceControllerStatus, System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceController.cs
+    startLine: 783
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Waits for the service to reach the specified status or for the specified time-out to expire.
+  syntax:
+    content: public void WaitForStatus(ServiceControllerStatus desiredStatus, TimeSpan timeout)
+    content.vb: Public Sub WaitForStatus(desiredStatus As ServiceControllerStatus, timeout As TimeSpan)
+    parameters:
+    - id: desiredStatus
+      type: System.ServiceProcess.ServiceControllerStatus
+      description: The status to wait for.
+    - id: timeout
+      type: System.TimeSpan
+      description: A @'System.TimeSpan' object specifying the amount of time to wait for the service to reach the specified status.
+  exceptions:
+  - type: System.ComponentModel.InvalidEnumArgumentException
+    description: The *desiredStatus* parameter is not any of the values defined in the @'System.ServiceProcess.ServiceControllerStatus' enumeration.
+  - type: System.ServiceProcess.TimeoutException
+    description: The value specified for the *timeout* parameter expires.
+references:
+- uid: System.ServiceProcess
+  isExternal: false
+  name: System.ServiceProcess
+  fullName: System.ServiceProcess
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.ServiceProcess.ServiceController[]
+  isExternal: false
+  href: System.ServiceProcess.ServiceController.yml
+  name: ServiceController[]
+  name.vb: ServiceController()
+  fullName: System.ServiceProcess.ServiceController[]
+  fullName.vb: System.ServiceProcess.ServiceController()
+  spec.csharp:
+  - uid: System.ServiceProcess.ServiceController
+    name: ServiceController
+    fullName: System.ServiceProcess.ServiceController
+    href: System.ServiceProcess.ServiceController.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.ServiceProcess.ServiceController
+    name: ServiceController
+    fullName: System.ServiceProcess.ServiceController
+    href: System.ServiceProcess.ServiceController.yml
+  - name: ()
+    fullName: ()
+- uid: System.Runtime.InteropServices.SafeHandle
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  name: SafeHandle
+  fullName: System.Runtime.InteropServices.SafeHandle
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.ServiceProcess.ServiceControllerStatus
+  parent: System.ServiceProcess
+  isExternal: false
+  href: System.ServiceProcess.ServiceControllerStatus.yml
+  name: ServiceControllerStatus
+  fullName: System.ServiceProcess.ServiceControllerStatus
+  type: Enum
+- uid: System.ServiceProcess.ServiceType
+  parent: System.ServiceProcess
+  isExternal: false
+  href: System.ServiceProcess.ServiceType.yml
+  name: ServiceType
+  fullName: System.ServiceProcess.ServiceType
+  type: Enum
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan

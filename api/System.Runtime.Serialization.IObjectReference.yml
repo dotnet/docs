@@ -1,0 +1,73 @@
+items:
+- uid: System.Runtime.Serialization.IObjectReference
+  id: IObjectReference
+  parent: System.Runtime.Serialization
+  children:
+  - System.Runtime.Serialization.IObjectReference.GetRealObject(System.Runtime.Serialization.StreamingContext)
+  href: System.Runtime.Serialization.IObjectReference.yml
+  name: IObjectReference
+  fullName: System.Runtime.Serialization.IObjectReference
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/Serialization/IObjectReference.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Serialization/IObjectReference.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Indicates that the current interface implementer is a reference to another object.
+  syntax:
+    content: public interface IObjectReference
+    content.vb: Public Interface IObjectReference
+- uid: System.Runtime.Serialization.IObjectReference.GetRealObject(System.Runtime.Serialization.StreamingContext)
+  id: GetRealObject(System.Runtime.Serialization.StreamingContext)
+  parent: System.Runtime.Serialization.IObjectReference
+  href: System.Runtime.Serialization.IObjectReference.yml
+  name: GetRealObject(StreamingContext)
+  fullName: System.Runtime.Serialization.IObjectReference.GetRealObject(System.Runtime.Serialization.StreamingContext)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/IObjectReference.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Returns the real object that should be deserialized, rather than the object that the serialized stream specifies.
+  syntax:
+    content: object GetRealObject(StreamingContext context)
+    content.vb: Function GetRealObject(context As StreamingContext) As Object
+    parameters:
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: The @'System.Runtime.Serialization.StreamingContext' from which the current object is deserialized.
+    return:
+      type: System.Object
+      description: Returns the actual object that is put into the graph.
+  exceptions:
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission. The call will not work on a medium trusted server.
+references:
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace
+- uid: System.Runtime.Serialization.StreamingContext
+  isExternal: false
+  href: System.Runtime.Serialization.StreamingContext.yml
+  name: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+  type: Struct
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

@@ -1,0 +1,544 @@
+items:
+- uid: System.Reflection.MethodBody
+  id: MethodBody
+  parent: System.Reflection
+  children:
+  - System.Reflection.MethodBody.#ctor
+  - System.Reflection.MethodBody.ExceptionHandlingClauses
+  - System.Reflection.MethodBody.GetILAsByteArray
+  - System.Reflection.MethodBody.InitLocals
+  - System.Reflection.MethodBody.LocalSignatureMetadataToken
+  - System.Reflection.MethodBody.LocalVariables
+  - System.Reflection.MethodBody.MaxStackSize
+  href: System.Reflection.MethodBody.yml
+  name: MethodBody
+  fullName: System.Reflection.MethodBody
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/MethodBody.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/MethodBody.cs
+    startLine: 107
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Provides access to the metadata and MSIL for the body of a method.
+  syntax:
+    content: public class MethodBody
+    content.vb: Public Class MethodBody
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Reflection.MethodBody.#ctor
+  id: '#ctor'
+  parent: System.Reflection.MethodBody
+  href: System.Reflection.MethodBody.yml
+  name: MethodBody()
+  fullName: System.Reflection.MethodBody.MethodBody()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodBody.cs
+    startLine: 112
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Initializes a new instance of the @'System.Reflection.MethodBody' class.
+  syntax:
+    content: protected MethodBody()
+    content.vb: Protected Sub New
+- uid: System.Reflection.MethodBody.LocalSignatureMetadataToken
+  id: LocalSignatureMetadataToken
+  parent: System.Reflection.MethodBody
+  href: System.Reflection.MethodBody.yml
+  name: LocalSignatureMetadataToken
+  fullName: System.Reflection.MethodBody.LocalSignatureMetadataToken
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodBody.cs
+    startLine: 126
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets a metadata token for the signature that describes the local variables for the method in metadata.
+  syntax:
+    content: public virtual int LocalSignatureMetadataToken { get; }
+    content.vb: Public Overridable ReadOnly Property LocalSignatureMetadataToken As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: An integer that represents the metadata token.
+- uid: System.Reflection.MethodBody.LocalVariables
+  id: LocalVariables
+  parent: System.Reflection.MethodBody
+  href: System.Reflection.MethodBody.yml
+  name: LocalVariables
+  fullName: System.Reflection.MethodBody.LocalVariables
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodBody.cs
+    startLine: 127
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets the list of local variables declared in the method body.
+  syntax:
+    content: public virtual IList<LocalVariableInfo> LocalVariables { get; }
+    content.vb: Public Overridable ReadOnly Property LocalVariables As IList(Of LocalVariableInfo)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.Reflection.LocalVariableInfo}
+      description: An @'System.Collections.Generic.IList`1' of @'System.Reflection.LocalVariableInfo' objects that describe the local variables declared in the method body.
+- uid: System.Reflection.MethodBody.MaxStackSize
+  id: MaxStackSize
+  parent: System.Reflection.MethodBody
+  href: System.Reflection.MethodBody.yml
+  name: MaxStackSize
+  fullName: System.Reflection.MethodBody.MaxStackSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodBody.cs
+    startLine: 128
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets the maximum number of items on the operand stack when the method is executing.
+  syntax:
+    content: public virtual int MaxStackSize { get; }
+    content.vb: Public Overridable ReadOnly Property MaxStackSize As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The maximum number of items on the operand stack when the method is executing.
+- uid: System.Reflection.MethodBody.InitLocals
+  id: InitLocals
+  parent: System.Reflection.MethodBody
+  href: System.Reflection.MethodBody.yml
+  name: InitLocals
+  fullName: System.Reflection.MethodBody.InitLocals
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodBody.cs
+    startLine: 129
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets a value indicating whether local variables in the method body are initialized to the default values for their types.
+  syntax:
+    content: public virtual bool InitLocals { get; }
+    content.vb: Public Overridable ReadOnly Property InitLocals As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the method body contains code to initialize local variables to null for reference types, or to the zero-initialized value for value types; otherwise, false.
+- uid: System.Reflection.MethodBody.GetILAsByteArray
+  id: GetILAsByteArray
+  parent: System.Reflection.MethodBody
+  href: System.Reflection.MethodBody.yml
+  name: GetILAsByteArray()
+  fullName: System.Reflection.MethodBody.GetILAsByteArray()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodBody.cs
+    startLine: 130
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Returns the MSIL for the method body, as an array of bytes.
+  syntax:
+    content: public virtual byte[] GetILAsByteArray()
+    content.vb: Public Overridable Function GetILAsByteArray As Byte()
+    return:
+      type: System.Byte[]
+      description: An array of type @'System.Byte' that contains the MSIL for the method body.
+- uid: System.Reflection.MethodBody.ExceptionHandlingClauses
+  id: ExceptionHandlingClauses
+  parent: System.Reflection.MethodBody
+  href: System.Reflection.MethodBody.yml
+  name: ExceptionHandlingClauses
+  fullName: System.Reflection.MethodBody.ExceptionHandlingClauses
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodBody.cs
+    startLine: 131
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets a list that includes all the exception-handling clauses in the method body.
+  syntax:
+    content: public virtual IList<ExceptionHandlingClause> ExceptionHandlingClauses { get; }
+    content.vb: Public Overridable ReadOnly Property ExceptionHandlingClauses As IList(Of ExceptionHandlingClause)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.Reflection.ExceptionHandlingClause}
+      description: An @'System.Collections.Generic.IList`1' of @'System.Reflection.ExceptionHandlingClause' objects representing the exception-handling clauses in the body of the method.
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.IList{System.Reflection.LocalVariableInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: System.Collections.Generic.IList`1.yml
+  name: IList<LocalVariableInfo>
+  name.vb: IList(Of LocalVariableInfo)
+  fullName: System.Collections.Generic.IList<System.Reflection.LocalVariableInfo>
+  fullName.vb: System.Collections.Generic.IList(Of System.Reflection.LocalVariableInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Reflection.LocalVariableInfo
+    name: LocalVariableInfo
+    fullName: System.Reflection.LocalVariableInfo
+    href: System.Reflection.LocalVariableInfo.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.LocalVariableInfo
+    name: LocalVariableInfo
+    fullName: System.Reflection.LocalVariableInfo
+    href: System.Reflection.LocalVariableInfo.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  name.vb: IList(Of T)
+  fullName: System.Collections.Generic.IList<T>
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Collections.Generic.IList{System.Reflection.ExceptionHandlingClause}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: System.Collections.Generic.IList`1.yml
+  name: IList<ExceptionHandlingClause>
+  name.vb: IList(Of ExceptionHandlingClause)
+  fullName: System.Collections.Generic.IList<System.Reflection.ExceptionHandlingClause>
+  fullName.vb: System.Collections.Generic.IList(Of System.Reflection.ExceptionHandlingClause)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Reflection.ExceptionHandlingClause
+    name: ExceptionHandlingClause
+    fullName: System.Reflection.ExceptionHandlingClause
+    href: System.Reflection.ExceptionHandlingClause.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.ExceptionHandlingClause
+    name: ExceptionHandlingClause
+    fullName: System.Reflection.ExceptionHandlingClause
+    href: System.Reflection.ExceptionHandlingClause.yml
+  - name: )
+    fullName: )

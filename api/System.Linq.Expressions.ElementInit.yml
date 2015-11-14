@@ -1,0 +1,571 @@
+items:
+- uid: System.Linq.Expressions.ElementInit
+  id: ElementInit
+  parent: System.Linq.Expressions
+  children:
+  - System.Linq.Expressions.ElementInit.AddMethod
+  - System.Linq.Expressions.ElementInit.ArgumentCount
+  - System.Linq.Expressions.ElementInit.Arguments
+  - System.Linq.Expressions.ElementInit.GetArgument(System.Int32)
+  - System.Linq.Expressions.ElementInit.ToString
+  - System.Linq.Expressions.ElementInit.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})
+  href: System.Linq.Expressions.ElementInit.yml
+  name: ElementInit
+  fullName: System.Linq.Expressions.ElementInit
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Linq.Expressions/src/System/Linq/Expressions/ElementInit.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/ElementInit.cs
+    startLine: 15
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: Represents an initializer for a single element of an @'System.Collections.IEnumerable' collection.
+  syntax:
+    content: 'public sealed class ElementInit : IArgumentProvider'
+    content.vb: Public NotInheritable Class ElementInit Implements IArgumentProvider
+  inheritance:
+  - System.Object
+  implements:
+  - System.Linq.Expressions.IArgumentProvider
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Linq.Expressions.ElementInit.AddMethod
+  id: AddMethod
+  parent: System.Linq.Expressions.ElementInit
+  href: System.Linq.Expressions.ElementInit.yml
+  name: AddMethod
+  fullName: System.Linq.Expressions.ElementInit.AddMethod
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/ElementInit.cs
+    startLine: 28
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: Gets the instance method that is used to add an element to an @'System.Collections.IEnumerable' collection.
+  syntax:
+    content: public MethodInfo AddMethod { get; }
+    content.vb: Public ReadOnly Property AddMethod As MethodInfo
+    parameters: []
+    return:
+      type: System.Reflection.MethodInfo
+      description: A @'System.Reflection.MethodInfo' that represents an instance method that adds an element to a collection.
+- uid: System.Linq.Expressions.ElementInit.Arguments
+  id: Arguments
+  parent: System.Linq.Expressions.ElementInit
+  href: System.Linq.Expressions.ElementInit.yml
+  name: Arguments
+  fullName: System.Linq.Expressions.ElementInit.Arguments
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/ElementInit.cs
+    startLine: 36
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: Gets the collection of arguments that are passed to a method that adds an element to an @'System.Collections.IEnumerable' collection.
+  syntax:
+    content: public ReadOnlyCollection<Expression> Arguments { get; }
+    content.vb: Public ReadOnly Property Arguments As ReadOnlyCollection(Of Expression)
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.Expression}
+      description: A @'System.Collections.ObjectModel.ReadOnlyCollection`1' of @'System.Linq.Expressions.Expression' objects that represent the arguments for a method that adds an element to a collection.
+- uid: System.Linq.Expressions.ElementInit.GetArgument(System.Int32)
+  id: GetArgument(System.Int32)
+  parent: System.Linq.Expressions.ElementInit
+  href: System.Linq.Expressions.ElementInit.yml
+  name: GetArgument(Int32)
+  fullName: System.Linq.Expressions.ElementInit.GetArgument(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/ElementInit.cs
+    startLine: 41
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  syntax:
+    content: public Expression GetArgument(int index)
+    content.vb: Public Function GetArgument(index As Integer) As Expression
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Linq.Expressions.Expression
+- uid: System.Linq.Expressions.ElementInit.ArgumentCount
+  id: ArgumentCount
+  parent: System.Linq.Expressions.ElementInit
+  href: System.Linq.Expressions.ElementInit.yml
+  name: ArgumentCount
+  fullName: System.Linq.Expressions.ElementInit.ArgumentCount
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/ElementInit.cs
+    startLine: 46
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  syntax:
+    content: public int ArgumentCount { get; }
+    content.vb: Public ReadOnly Property ArgumentCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Linq.Expressions.ElementInit.ToString
+  id: ToString
+  parent: System.Linq.Expressions.ElementInit
+  href: System.Linq.Expressions.ElementInit.yml
+  name: ToString()
+  fullName: System.Linq.Expressions.ElementInit.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/ElementInit.cs
+    startLine: 58
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: Returns a textual representation of an @'System.Linq.Expressions.ElementInit' object.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: A textual representation of the @'System.Linq.Expressions.ElementInit' object.
+  overridden: System.Object.ToString
+- uid: System.Linq.Expressions.ElementInit.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})
+  id: Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})
+  parent: System.Linq.Expressions.ElementInit
+  href: System.Linq.Expressions.ElementInit.yml
+  name: Update(IEnumerable<Expression>)
+  name.vb: Update(IEnumerable(Of Expression))
+  fullName: System.Linq.Expressions.ElementInit.Update(System.Collections.Generic.IEnumerable<System.Linq.Expressions.Expression>)
+  fullName.vb: System.Linq.Expressions.ElementInit.Update(System.Collections.Generic.IEnumerable(Of System.Linq.Expressions.Expression))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/ElementInit.cs
+    startLine: 70
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: Creates a new expression that is like this one, but using the supplied children. If all of the children are the same, it will return this expression.
+  syntax:
+    content: public ElementInit Update(IEnumerable<Expression> arguments)
+    content.vb: Public Function Update(arguments As IEnumerable(Of Expression)) As ElementInit
+    parameters:
+    - id: arguments
+      type: System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression}
+      description: The @'System.Linq.Expressions.ElementInit.Arguments' property of the result.
+    return:
+      type: System.Linq.Expressions.ElementInit
+      description: This expression if no children are changed or an expression with the updated children.
+references:
+- uid: System.Linq.Expressions
+  isExternal: false
+  name: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.Expression}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  href: System.Linq.Expressions.Expression.yml
+  name: ReadOnlyCollection<Expression>
+  name.vb: ReadOnlyCollection(Of Expression)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<System.Linq.Expressions.Expression>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    fullName: System.Linq.Expressions.Expression
+    href: System.Linq.Expressions.Expression.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    fullName: System.Linq.Expressions.Expression
+    href: System.Linq.Expressions.Expression.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  parent: System.Collections.ObjectModel
+  isExternal: true
+  name: ReadOnlyCollection<T>
+  name.vb: ReadOnlyCollection(Of T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  isExternal: false
+  name: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  type: Namespace
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.Expression.yml
+  name: Expression
+  fullName: System.Linq.Expressions.Expression
+  type: Class
+  summary: The base type for all nodes in Expression Trees.
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Linq.Expressions.ElementInit.Arguments
+- uid: System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Linq.Expressions.Expression.yml
+  name: IEnumerable<Expression>
+  name.vb: IEnumerable(Of Expression)
+  fullName: System.Collections.Generic.IEnumerable<System.Linq.Expressions.Expression>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    fullName: System.Linq.Expressions.Expression
+    href: System.Linq.Expressions.Expression.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    fullName: System.Linq.Expressions.Expression
+    href: System.Linq.Expressions.Expression.yml
+  - name: )
+    fullName: )
+- uid: System.Linq.Expressions.ElementInit
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.ElementInit.yml
+  name: ElementInit
+  fullName: System.Linq.Expressions.ElementInit
+  type: Class
+  summary: Represents the initialization of a list.
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

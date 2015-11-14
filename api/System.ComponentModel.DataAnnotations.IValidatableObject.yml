@@ -1,0 +1,130 @@
+items:
+- uid: System.ComponentModel.DataAnnotations.IValidatableObject
+  id: IValidatableObject
+  parent: System.ComponentModel.DataAnnotations
+  children:
+  - System.ComponentModel.DataAnnotations.IValidatableObject.Validate(System.ComponentModel.DataAnnotations.ValidationContext)
+  href: System.ComponentModel.DataAnnotations.IValidatableObject.yml
+  name: IValidatableObject
+  fullName: System.ComponentModel.DataAnnotations.IValidatableObject
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/IValidatableObject.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/IValidatableObject.cs
+    startLine: 7
+  assemblies:
+  - System.ComponentModel.Annotations
+  namespace: System.ComponentModel.DataAnnotations
+  summary: Provides a way for an object to be invalidated.
+  syntax:
+    content: public interface IValidatableObject
+    content.vb: Public Interface IValidatableObject
+- uid: System.ComponentModel.DataAnnotations.IValidatableObject.Validate(System.ComponentModel.DataAnnotations.ValidationContext)
+  id: Validate(System.ComponentModel.DataAnnotations.ValidationContext)
+  parent: System.ComponentModel.DataAnnotations.IValidatableObject
+  href: System.ComponentModel.DataAnnotations.IValidatableObject.yml
+  name: Validate(ValidationContext)
+  fullName: System.ComponentModel.DataAnnotations.IValidatableObject.Validate(System.ComponentModel.DataAnnotations.ValidationContext)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/IValidatableObject.cs
+    startLine: 9
+  assemblies:
+  - System.ComponentModel.Annotations
+  namespace: System.ComponentModel.DataAnnotations
+  summary: Determines whether the specified object is valid.
+  syntax:
+    content: IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+    content.vb: Function Validate(validationContext As ValidationContext) As IEnumerable(Of ValidationResult)
+    parameters:
+    - id: validationContext
+      type: System.ComponentModel.DataAnnotations.ValidationContext
+      description: The validation context.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ComponentModel.DataAnnotations.ValidationResult}
+      description: A collection that holds failed-validation information.
+references:
+- uid: System.ComponentModel.DataAnnotations
+  isExternal: false
+  name: System.ComponentModel.DataAnnotations
+  fullName: System.ComponentModel.DataAnnotations
+  type: Namespace
+- uid: System.ComponentModel.DataAnnotations.ValidationContext
+  parent: System.ComponentModel.DataAnnotations
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.ValidationContext.yml
+  name: ValidationContext
+  fullName: System.ComponentModel.DataAnnotations.ValidationContext
+  type: Class
+  summary: Describes the context in which a validation is being performed.
+- uid: System.Collections.Generic.IEnumerable{System.ComponentModel.DataAnnotations.ValidationResult}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.ComponentModel.DataAnnotations.ValidationResult.yml
+  name: IEnumerable<ValidationResult>
+  name.vb: IEnumerable(Of ValidationResult)
+  fullName: System.Collections.Generic.IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.ComponentModel.DataAnnotations.ValidationResult)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.ComponentModel.DataAnnotations.ValidationResult
+    name: ValidationResult
+    fullName: System.ComponentModel.DataAnnotations.ValidationResult
+    href: System.ComponentModel.DataAnnotations.ValidationResult.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.ComponentModel.DataAnnotations.ValidationResult
+    name: ValidationResult
+    fullName: System.ComponentModel.DataAnnotations.ValidationResult
+    href: System.ComponentModel.DataAnnotations.ValidationResult.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

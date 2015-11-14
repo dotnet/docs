@@ -1,0 +1,300 @@
+items:
+- uid: System.Reflection.ParameterModifier
+  id: ParameterModifier
+  parent: System.Reflection
+  children:
+  - System.Reflection.ParameterModifier.#ctor(System.Int32)
+  - System.Reflection.ParameterModifier.Item(System.Int32)
+  href: System.Reflection.ParameterModifier.yml
+  name: ParameterModifier
+  fullName: System.Reflection.ParameterModifier
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/ParameterModifier.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/ParameterModifier.cs
+    startLine: 7
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Attaches a modifier to parameters so that binding can work with parameter signatures in which the types have been modified.
+  syntax:
+    content: public struct ParameterModifier
+    content.vb: Public Structure ParameterModifier
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.ParameterModifier.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Reflection.ParameterModifier
+  href: System.Reflection.ParameterModifier.yml
+  name: ParameterModifier(Int32)
+  fullName: System.Reflection.ParameterModifier.ParameterModifier(System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ParameterModifier.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Initializes a new instance of the @'System.Reflection.ParameterModifier' structure representing the specified number of parameters.
+  syntax:
+    content: public ParameterModifier(int parameterCount)
+    content.vb: Public Sub New(parameterCount As Integer)
+    parameters:
+    - id: parameterCount
+      type: System.Int32
+      description: The number of parameters.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*parameterCount* is negative.'
+- uid: System.Reflection.ParameterModifier.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Reflection.ParameterModifier
+  href: System.Reflection.ParameterModifier.yml
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Reflection.ParameterModifier.Item[System.Int32]
+  fullName.vb: System.Reflection.ParameterModifier.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ParameterModifier.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets or sets a value that specifies whether the parameter at the specified index position is to be modified by the current @'System.Reflection.ParameterModifier'.
+  syntax:
+    content: public bool this[int index] { get; set; }
+    content.vb: Public Property Item(index As Integer) As Boolean
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index position of the parameter whose modification status is being examined or set.
+    return:
+      type: System.Boolean
+      description: true if the parameter at this index position is to be modified by this @'System.Reflection.ParameterModifier'; otherwise, false.
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

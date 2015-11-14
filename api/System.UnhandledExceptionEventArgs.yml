@@ -1,0 +1,341 @@
+items:
+- uid: System.UnhandledExceptionEventArgs
+  id: UnhandledExceptionEventArgs
+  parent: System
+  children:
+  - System.UnhandledExceptionEventArgs.#ctor(System.Object,System.Boolean)
+  - System.UnhandledExceptionEventArgs.ExceptionObject
+  - System.UnhandledExceptionEventArgs.IsTerminating
+  href: System.UnhandledExceptionEventArgs.yml
+  name: UnhandledExceptionEventArgs
+  fullName: System.UnhandledExceptionEventArgs
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/UnhandledExceptionEventArgs.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/UnhandledExceptionEventArgs.cs
+    startLine: 8
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Provides data for the event that is raised when there is an exception that is not handled in any application domain.
+  syntax:
+    content: 'public class UnhandledExceptionEventArgs : EventArgs'
+    content.vb: Public Class UnhandledExceptionEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.UnhandledExceptionEventArgs.#ctor(System.Object,System.Boolean)
+  id: '#ctor(System.Object,System.Boolean)'
+  parent: System.UnhandledExceptionEventArgs
+  href: System.UnhandledExceptionEventArgs.yml
+  name: UnhandledExceptionEventArgs(Object, Boolean)
+  fullName: System.UnhandledExceptionEventArgs.UnhandledExceptionEventArgs(System.Object, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/UnhandledExceptionEventArgs.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.UnhandledExceptionEventArgs' class with the exception object and a common language runtime termination flag.
+  syntax:
+    content: public UnhandledExceptionEventArgs(object exception, bool isTerminating)
+    content.vb: Public Sub New(exception As Object, isTerminating As Boolean)
+    parameters:
+    - id: exception
+      type: System.Object
+      description: The exception that is not handled.
+    - id: isTerminating
+      type: System.Boolean
+      description: true if the runtime is terminating; otherwise, false.
+- uid: System.UnhandledExceptionEventArgs.ExceptionObject
+  id: ExceptionObject
+  parent: System.UnhandledExceptionEventArgs
+  href: System.UnhandledExceptionEventArgs.yml
+  name: ExceptionObject
+  fullName: System.UnhandledExceptionEventArgs.ExceptionObject
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/UnhandledExceptionEventArgs.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the unhandled exception object.
+  syntax:
+    content: public object ExceptionObject { get; }
+    content.vb: Public ReadOnly Property ExceptionObject As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: The unhandled exception object.
+- uid: System.UnhandledExceptionEventArgs.IsTerminating
+  id: IsTerminating
+  parent: System.UnhandledExceptionEventArgs
+  href: System.UnhandledExceptionEventArgs.yml
+  name: IsTerminating
+  fullName: System.UnhandledExceptionEventArgs.IsTerminating
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/UnhandledExceptionEventArgs.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the common language runtime is terminating.
+  syntax:
+    content: public bool IsTerminating { get; }
+    content.vb: Public ReadOnly Property IsTerminating As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the runtime is terminating; otherwise, false.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

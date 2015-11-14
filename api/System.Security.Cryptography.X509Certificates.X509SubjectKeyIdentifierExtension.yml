@@ -1,0 +1,334 @@
+items:
+- uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension
+  id: X509SubjectKeyIdentifierExtension
+  parent: System.Security.Cryptography.X509Certificates
+  children:
+  - System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor
+  - System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(AsnEncodedData,System.Boolean)
+  - System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(System.Byte[],System.Boolean)
+  - System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(System.Security.Cryptography.X509Certificates.PublicKey,System.Boolean)
+  - System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(System.Security.Cryptography.X509Certificates.PublicKey,System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm,System.Boolean)
+  - System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(System.String,System.Boolean)
+  - System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.CopyFrom(AsnEncodedData)
+  - System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.SubjectKeyIdentifier
+  href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.yml
+  name: X509SubjectKeyIdentifierExtension
+  fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierExtension.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierExtension.cs
+    startLine: 15
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Defines a string that identifies a certificate's subject key identifier (SKI). This class cannot be inherited.
+  syntax:
+    content: 'public sealed class X509SubjectKeyIdentifierExtension : X509Extension'
+    content.vb: Public NotInheritable Class X509SubjectKeyIdentifierExtension Inherits X509Extension
+  inheritance:
+  - System.Object
+  - System.Security.Cryptography.X509Certificates.X509Extension
+  inheritedMembers:
+  - System.Security.Cryptography.X509Certificates.X509Extension.Critical
+- uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor
+  id: '#ctor'
+  parent: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension
+  href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.yml
+  name: X509SubjectKeyIdentifierExtension()
+  fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.X509SubjectKeyIdentifierExtension()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierExtension.cs
+    startLine: 17
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension' class.
+  syntax:
+    content: public X509SubjectKeyIdentifierExtension()
+    content.vb: Public Sub New
+- uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(AsnEncodedData,System.Boolean)
+  id: '#ctor(AsnEncodedData,System.Boolean)'
+  parent: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension
+  href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.yml
+  name: X509SubjectKeyIdentifierExtension(AsnEncodedData, Boolean)
+  fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.X509SubjectKeyIdentifierExtension(AsnEncodedData, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierExtension.cs
+    startLine: 24
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  syntax:
+    content: public X509SubjectKeyIdentifierExtension(AsnEncodedData encodedSubjectKeyIdentifier, bool critical)
+    content.vb: Public Sub New(encodedSubjectKeyIdentifier As AsnEncodedData, critical As Boolean)
+    parameters:
+    - id: encodedSubjectKeyIdentifier
+      type: AsnEncodedData
+    - id: critical
+      type: System.Boolean
+- uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(System.Byte[],System.Boolean)
+  id: '#ctor(System.Byte[],System.Boolean)'
+  parent: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension
+  href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.yml
+  name: X509SubjectKeyIdentifierExtension(Byte[], Boolean)
+  name.vb: X509SubjectKeyIdentifierExtension(Byte(), Boolean)
+  fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.X509SubjectKeyIdentifierExtension(System.Byte[], System.Boolean)
+  fullName.vb: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.X509SubjectKeyIdentifierExtension(System.Byte(), System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierExtension.cs
+    startLine: 29
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension' class using a byte array and a value that identifies whether the extension is critical.
+  syntax:
+    content: public X509SubjectKeyIdentifierExtension(byte[] subjectKeyIdentifier, bool critical)
+    content.vb: Public Sub New(subjectKeyIdentifier As Byte(), critical As Boolean)
+    parameters:
+    - id: subjectKeyIdentifier
+      type: System.Byte[]
+      description: A byte array that represents data to use to create the extension.
+    - id: critical
+      type: System.Boolean
+      description: true if the extension is critical; otherwise, false.
+- uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(System.Security.Cryptography.X509Certificates.PublicKey,System.Boolean)
+  id: '#ctor(System.Security.Cryptography.X509Certificates.PublicKey,System.Boolean)'
+  parent: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension
+  href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.yml
+  name: X509SubjectKeyIdentifierExtension(PublicKey, Boolean)
+  fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.X509SubjectKeyIdentifierExtension(System.Security.Cryptography.X509Certificates.PublicKey, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierExtension.cs
+    startLine: 34
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension' class using a public key and a value indicating whether the extension is critical.
+  syntax:
+    content: public X509SubjectKeyIdentifierExtension(PublicKey key, bool critical)
+    content.vb: Public Sub New(key As PublicKey, critical As Boolean)
+    parameters:
+    - id: key
+      type: System.Security.Cryptography.X509Certificates.PublicKey
+      description: A @'System.Security.Cryptography.X509Certificates.PublicKey'  object to create a subject key identifier (SKI) from.
+    - id: critical
+      type: System.Boolean
+      description: true if the extension is critical; otherwise, false.
+- uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(System.Security.Cryptography.X509Certificates.PublicKey,System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm,System.Boolean)
+  id: '#ctor(System.Security.Cryptography.X509Certificates.PublicKey,System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm,System.Boolean)'
+  parent: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension
+  href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.yml
+  name: X509SubjectKeyIdentifierExtension(PublicKey, X509SubjectKeyIdentifierHashAlgorithm, Boolean)
+  fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.X509SubjectKeyIdentifierExtension(System.Security.Cryptography.X509Certificates.PublicKey, System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierExtension.cs
+    startLine: 39
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension' class using a public key, a hash algorithm identifier, and a value indicating whether the extension is critical.
+  syntax:
+    content: public X509SubjectKeyIdentifierExtension(PublicKey key, X509SubjectKeyIdentifierHashAlgorithm algorithm, bool critical)
+    content.vb: Public Sub New(key As PublicKey, algorithm As X509SubjectKeyIdentifierHashAlgorithm, critical As Boolean)
+    parameters:
+    - id: key
+      type: System.Security.Cryptography.X509Certificates.PublicKey
+      description: A @'System.Security.Cryptography.X509Certificates.PublicKey' object to create a subject key identifier (SKI) from.
+    - id: algorithm
+      type: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm
+      description: One of the @'System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm' values that identifies which hash algorithm to use.
+    - id: critical
+      type: System.Boolean
+      description: true if the extension is critical; otherwise, false.
+- uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(System.String,System.Boolean)
+  id: '#ctor(System.String,System.Boolean)'
+  parent: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension
+  href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.yml
+  name: X509SubjectKeyIdentifierExtension(String, Boolean)
+  fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.X509SubjectKeyIdentifierExtension(System.String, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierExtension.cs
+    startLine: 44
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension' class using a string and a value that identifies whether the extension is critical.
+  syntax:
+    content: public X509SubjectKeyIdentifierExtension(string subjectKeyIdentifier, bool critical)
+    content.vb: Public Sub New(subjectKeyIdentifier As String, critical As Boolean)
+    parameters:
+    - id: subjectKeyIdentifier
+      type: System.String
+      description: A string, encoded in hexadecimal format, that represents the subject key identifier (SKI) for a certificate.
+    - id: critical
+      type: System.Boolean
+      description: true if the extension is critical; otherwise, false.
+- uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.SubjectKeyIdentifier
+  id: SubjectKeyIdentifier
+  parent: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension
+  href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.yml
+  name: SubjectKeyIdentifier
+  fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.SubjectKeyIdentifier
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierExtension.cs
+    startLine: 49
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets a string that represents the subject key identifier (SKI) for a certificate.
+  syntax:
+    content: public string SubjectKeyIdentifier { get; }
+    content.vb: Public ReadOnly Property SubjectKeyIdentifier As String
+    parameters: []
+    return:
+      type: System.String
+      description: A string, encoded in hexadecimal format, that represents the subject key identifier (SKI).
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: The extension cannot be decoded.
+- uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.CopyFrom(AsnEncodedData)
+  id: CopyFrom(AsnEncodedData)
+  parent: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension
+  href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.yml
+  name: CopyFrom(AsnEncodedData)
+  fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.CopyFrom(AsnEncodedData)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierExtension.cs
+    startLine: 64
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  syntax:
+    content: public override void CopyFrom(AsnEncodedData asnEncodedData)
+    content.vb: Public Overrides Sub CopyFrom(asnEncodedData As AsnEncodedData)
+    parameters:
+    - id: asnEncodedData
+      type: AsnEncodedData
+  overridden: System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom(AsnEncodedData)
+references:
+- uid: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  name: System.Security.Cryptography.X509Certificates
+  fullName: System.Security.Cryptography.X509Certificates
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Security.Cryptography.X509Certificates.X509Extension
+  parent: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509Extension.yml
+  name: X509Extension
+  fullName: System.Security.Cryptography.X509Certificates.X509Extension
+  type: Class
+- uid: System.Security.Cryptography.X509Certificates.X509Extension.Critical
+  parent: System.Security.Cryptography.X509Certificates.X509Extension
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509Extension.yml
+  name: Critical
+  fullName: System.Security.Cryptography.X509Certificates.X509Extension.Critical
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: AsnEncodedData
+  isExternal: true
+  name: AsnEncodedData
+  fullName: AsnEncodedData
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Security.Cryptography.X509Certificates.PublicKey
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.PublicKey.yml
+  name: PublicKey
+  fullName: System.Security.Cryptography.X509Certificates.PublicKey
+  type: Class
+- uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm
+  parent: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.yml
+  name: X509SubjectKeyIdentifierHashAlgorithm
+  fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm
+  type: Enum
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom(AsnEncodedData)
+  parent: System.Security.Cryptography.X509Certificates.X509Extension
+  isExternal: true
+  href: System.Security.Cryptography.X509Certificates.X509Extension.yml
+  name: CopyFrom(AsnEncodedData)
+  fullName: System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom(AsnEncodedData)
+  spec.csharp:
+  - uid: System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom(AsnEncodedData)
+    name: CopyFrom
+    fullName: System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom
+    href: System.Security.Cryptography.X509Certificates.X509Extension.yml
+  - name: (
+    fullName: (
+  - uid: AsnEncodedData
+    name: AsnEncodedData
+    fullName: AsnEncodedData
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom(AsnEncodedData)
+    name: CopyFrom
+    fullName: System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom
+    href: System.Security.Cryptography.X509Certificates.X509Extension.yml
+  - name: (
+    fullName: (
+  - uid: AsnEncodedData
+    name: AsnEncodedData
+    fullName: AsnEncodedData
+    isExternal: true
+  - name: )
+    fullName: )

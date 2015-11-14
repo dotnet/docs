@@ -1,0 +1,107 @@
+items:
+- uid: System.Collections.IStructuralEquatable
+  id: IStructuralEquatable
+  parent: System.Collections
+  children:
+  - System.Collections.IStructuralEquatable.Equals(System.Object,System.Collections.IEqualityComparer)
+  - System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)
+  href: System.Collections.IStructuralEquatable.yml
+  name: IStructuralEquatable
+  fullName: System.Collections.IStructuralEquatable
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Collections/IStructuralEquatable.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Collections/IStructuralEquatable.cs
+    startLine: 4
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Defines methods to support the comparison of objects for structural equality.
+  syntax:
+    content: public interface IStructuralEquatable
+    content.vb: Public Interface IStructuralEquatable
+- uid: System.Collections.IStructuralEquatable.Equals(System.Object,System.Collections.IEqualityComparer)
+  id: Equals(System.Object,System.Collections.IEqualityComparer)
+  parent: System.Collections.IStructuralEquatable
+  href: System.Collections.IStructuralEquatable.yml
+  name: Equals(Object, IEqualityComparer)
+  fullName: System.Collections.IStructuralEquatable.Equals(System.Object, System.Collections.IEqualityComparer)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/IStructuralEquatable.cs
+    startLine: 5
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Determines whether an object is structurally equal to the current instance.
+  syntax:
+    content: bool Equals(object other, IEqualityComparer comparer)
+    content.vb: Function Equals(other As Object, comparer As IEqualityComparer) As Boolean
+    parameters:
+    - id: other
+      type: System.Object
+      description: The object to compare with the current instance.
+    - id: comparer
+      type: System.Collections.IEqualityComparer
+      description: An object that determines whether the current instance and *other* are equal.
+    return:
+      type: System.Boolean
+      description: true if the two objects are equal; otherwise, false.
+- uid: System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)
+  id: GetHashCode(System.Collections.IEqualityComparer)
+  parent: System.Collections.IStructuralEquatable
+  href: System.Collections.IStructuralEquatable.yml
+  name: GetHashCode(IEqualityComparer)
+  fullName: System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/IStructuralEquatable.cs
+    startLine: 6
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Returns a hash code for the current instance.
+  syntax:
+    content: int GetHashCode(IEqualityComparer comparer)
+    content.vb: Function GetHashCode(comparer As IEqualityComparer) As Integer
+    parameters:
+    - id: comparer
+      type: System.Collections.IEqualityComparer
+      description: An object that computes the hash code of the current object.
+    return:
+      type: System.Int32
+      description: The hash code for the current instance.
+references:
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Collections.IEqualityComparer
+  parent: System.Collections
+  isExternal: true
+  name: IEqualityComparer
+  fullName: System.Collections.IEqualityComparer
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

@@ -1,0 +1,387 @@
+items:
+- uid: System.Reflection.LocalVariableInfo
+  id: LocalVariableInfo
+  parent: System.Reflection
+  children:
+  - System.Reflection.LocalVariableInfo.#ctor
+  - System.Reflection.LocalVariableInfo.IsPinned
+  - System.Reflection.LocalVariableInfo.LocalIndex
+  - System.Reflection.LocalVariableInfo.LocalType
+  - System.Reflection.LocalVariableInfo.ToString
+  href: System.Reflection.LocalVariableInfo.yml
+  name: LocalVariableInfo
+  fullName: System.Reflection.LocalVariableInfo
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/MethodBody.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/MethodBody.cs
+    startLine: 135
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Discovers the attributes of a local variable and provides access to local variable metadata.
+  syntax:
+    content: public class LocalVariableInfo
+    content.vb: Public Class LocalVariableInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Reflection.LocalVariableInfo.#ctor
+  id: '#ctor'
+  parent: System.Reflection.LocalVariableInfo
+  href: System.Reflection.LocalVariableInfo.yml
+  name: LocalVariableInfo()
+  fullName: System.Reflection.LocalVariableInfo.LocalVariableInfo()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodBody.cs
+    startLine: 145
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Initializes a new instance of the @'System.Reflection.LocalVariableInfo' class.
+  syntax:
+    content: protected LocalVariableInfo()
+    content.vb: Protected Sub New
+- uid: System.Reflection.LocalVariableInfo.ToString
+  id: ToString
+  parent: System.Reflection.LocalVariableInfo
+  href: System.Reflection.LocalVariableInfo.yml
+  name: ToString()
+  fullName: System.Reflection.LocalVariableInfo.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodBody.cs
+    startLine: 149
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Returns a user-readable string that describes the local variable.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: A string that displays information about the local variable, including the type name, index, and pinned status.
+  overridden: System.Object.ToString
+- uid: System.Reflection.LocalVariableInfo.LocalType
+  id: LocalType
+  parent: System.Reflection.LocalVariableInfo
+  href: System.Reflection.LocalVariableInfo.yml
+  name: LocalType
+  fullName: System.Reflection.LocalVariableInfo.LocalType
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodBody.cs
+    startLine: 161
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets the type of the local variable.
+  syntax:
+    content: public virtual Type LocalType { get; }
+    content.vb: Public Overridable ReadOnly Property LocalType As Type
+    parameters: []
+    return:
+      type: System.Type
+      description: The type of the local variable.
+- uid: System.Reflection.LocalVariableInfo.IsPinned
+  id: IsPinned
+  parent: System.Reflection.LocalVariableInfo
+  href: System.Reflection.LocalVariableInfo.yml
+  name: IsPinned
+  fullName: System.Reflection.LocalVariableInfo.IsPinned
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodBody.cs
+    startLine: 162
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets a @'System.Boolean' value that indicates whether the object referred to by the local variable is pinned in memory.
+  syntax:
+    content: public virtual bool IsPinned { get; }
+    content.vb: Public Overridable ReadOnly Property IsPinned As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the object referred to by the variable is pinned in memory; otherwise, false.
+- uid: System.Reflection.LocalVariableInfo.LocalIndex
+  id: LocalIndex
+  parent: System.Reflection.LocalVariableInfo
+  href: System.Reflection.LocalVariableInfo.yml
+  name: LocalIndex
+  fullName: System.Reflection.LocalVariableInfo.LocalIndex
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodBody.cs
+    startLine: 163
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets the index of the local variable within the method body.
+  syntax:
+    content: public virtual int LocalIndex { get; }
+    content.vb: Public Overridable ReadOnly Property LocalIndex As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: An integer value that represents the order of declaration of the local variable within the method body.
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

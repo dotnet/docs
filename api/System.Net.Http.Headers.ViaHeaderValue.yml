@@ -1,0 +1,590 @@
+items:
+- uid: System.Net.Http.Headers.ViaHeaderValue
+  id: ViaHeaderValue
+  parent: System.Net.Http.Headers
+  children:
+  - System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String)
+  - System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String,System.String)
+  - System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String,System.String,System.String)
+  - System.Net.Http.Headers.ViaHeaderValue.Comment
+  - System.Net.Http.Headers.ViaHeaderValue.Equals(System.Object)
+  - System.Net.Http.Headers.ViaHeaderValue.GetHashCode
+  - System.Net.Http.Headers.ViaHeaderValue.Parse(System.String)
+  - System.Net.Http.Headers.ViaHeaderValue.ProtocolName
+  - System.Net.Http.Headers.ViaHeaderValue.ProtocolVersion
+  - System.Net.Http.Headers.ViaHeaderValue.ReceivedBy
+  - System.Net.Http.Headers.ViaHeaderValue.ToString
+  - System.Net.Http.Headers.ViaHeaderValue.TryParse(System.String,System.Net.Http.Headers.ViaHeaderValue@)
+  href: System.Net.Http.Headers.ViaHeaderValue.yml
+  name: ViaHeaderValue
+  fullName: System.Net.Http.Headers.ViaHeaderValue
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Net.Http/src/System/Net/Http/Headers/ViaHeaderValue.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ViaHeaderValue.cs
+    startLine: 9
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Represents the value of a Via header.
+  syntax:
+    content: 'public class ViaHeaderValue : ICloneable'
+    content.vb: Public Class ViaHeaderValue Implements ICloneable
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Net.Http.Headers.ViaHeaderValue.ProtocolName
+  id: ProtocolName
+  parent: System.Net.Http.Headers.ViaHeaderValue
+  href: System.Net.Http.Headers.ViaHeaderValue.yml
+  name: ProtocolName
+  fullName: System.Net.Http.Headers.ViaHeaderValue.ProtocolName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ViaHeaderValue.cs
+    startLine: 16
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets the protocol name of the received protocol.
+  syntax:
+    content: public string ProtocolName { get; }
+    content.vb: Public ReadOnly Property ProtocolName As String
+    parameters: []
+    return:
+      type: System.String
+      description: Returns @'System.String'.The protocol name.
+- uid: System.Net.Http.Headers.ViaHeaderValue.ProtocolVersion
+  id: ProtocolVersion
+  parent: System.Net.Http.Headers.ViaHeaderValue
+  href: System.Net.Http.Headers.ViaHeaderValue.yml
+  name: ProtocolVersion
+  fullName: System.Net.Http.Headers.ViaHeaderValue.ProtocolVersion
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ViaHeaderValue.cs
+    startLine: 21
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets the protocol version of the received protocol.
+  syntax:
+    content: public string ProtocolVersion { get; }
+    content.vb: Public ReadOnly Property ProtocolVersion As String
+    parameters: []
+    return:
+      type: System.String
+      description: Returns @'System.String'.The protocol version.
+- uid: System.Net.Http.Headers.ViaHeaderValue.ReceivedBy
+  id: ReceivedBy
+  parent: System.Net.Http.Headers.ViaHeaderValue
+  href: System.Net.Http.Headers.ViaHeaderValue.yml
+  name: ReceivedBy
+  fullName: System.Net.Http.Headers.ViaHeaderValue.ReceivedBy
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ViaHeaderValue.cs
+    startLine: 26
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets the host and port that the request or response was received by.
+  syntax:
+    content: public string ReceivedBy { get; }
+    content.vb: Public ReadOnly Property ReceivedBy As String
+    parameters: []
+    return:
+      type: System.String
+      description: Returns @'System.String'.The host and port that the request or response was received by.
+- uid: System.Net.Http.Headers.ViaHeaderValue.Comment
+  id: Comment
+  parent: System.Net.Http.Headers.ViaHeaderValue
+  href: System.Net.Http.Headers.ViaHeaderValue.yml
+  name: Comment
+  fullName: System.Net.Http.Headers.ViaHeaderValue.Comment
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ViaHeaderValue.cs
+    startLine: 31
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets the comment field used to identify the software of the recipient proxy or gateway.
+  syntax:
+    content: public string Comment { get; }
+    content.vb: Public ReadOnly Property Comment As String
+    parameters: []
+    return:
+      type: System.String
+      description: Returns @'System.String'.The comment field used to identify the software of the recipient proxy or gateway.
+- uid: System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: System.Net.Http.Headers.ViaHeaderValue
+  href: System.Net.Http.Headers.ViaHeaderValue.yml
+  name: ViaHeaderValue(String, String)
+  fullName: System.Net.Http.Headers.ViaHeaderValue.ViaHeaderValue(System.String, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ViaHeaderValue.cs
+    startLine: 36
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Initializes a new instance of the @'System.Net.Http.Headers.ViaHeaderValue' class.
+  syntax:
+    content: public ViaHeaderValue(string protocolVersion, string receivedBy)
+    content.vb: Public Sub New(protocolVersion As String, receivedBy As String)
+    parameters:
+    - id: protocolVersion
+      type: System.String
+      description: The protocol version of the received protocol.
+    - id: receivedBy
+      type: System.String
+      description: The host and port that the request or response was received by.
+- uid: System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: System.Net.Http.Headers.ViaHeaderValue
+  href: System.Net.Http.Headers.ViaHeaderValue.yml
+  name: ViaHeaderValue(String, String, String)
+  fullName: System.Net.Http.Headers.ViaHeaderValue.ViaHeaderValue(System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ViaHeaderValue.cs
+    startLine: 41
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Initializes a new instance of the @'System.Net.Http.Headers.ViaHeaderValue' class.
+  syntax:
+    content: public ViaHeaderValue(string protocolVersion, string receivedBy, string protocolName)
+    content.vb: Public Sub New(protocolVersion As String, receivedBy As String, protocolName As String)
+    parameters:
+    - id: protocolVersion
+      type: System.String
+      description: The protocol version of the received protocol.
+    - id: receivedBy
+      type: System.String
+      description: The host and port that the request or response was received by.
+    - id: protocolName
+      type: System.String
+      description: The protocol name of the received protocol.
+- uid: System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String,System.String)'
+  parent: System.Net.Http.Headers.ViaHeaderValue
+  href: System.Net.Http.Headers.ViaHeaderValue.yml
+  name: ViaHeaderValue(String, String, String, String)
+  fullName: System.Net.Http.Headers.ViaHeaderValue.ViaHeaderValue(System.String, System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ViaHeaderValue.cs
+    startLine: 46
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Initializes a new instance of the @'System.Net.Http.Headers.ViaHeaderValue' class.
+  syntax:
+    content: public ViaHeaderValue(string protocolVersion, string receivedBy, string protocolName, string comment)
+    content.vb: Public Sub New(protocolVersion As String, receivedBy As String, protocolName As String, comment As String)
+    parameters:
+    - id: protocolVersion
+      type: System.String
+      description: The protocol version of the received protocol.
+    - id: receivedBy
+      type: System.String
+      description: The host and port that the request or response was received by.
+    - id: protocolName
+      type: System.String
+      description: The protocol name of the received protocol.
+    - id: comment
+      type: System.String
+      description: The comment field used to identify the software of the recipient proxy or gateway.
+- uid: System.Net.Http.Headers.ViaHeaderValue.ToString
+  id: ToString
+  parent: System.Net.Http.Headers.ViaHeaderValue
+  href: System.Net.Http.Headers.ViaHeaderValue.yml
+  name: ToString()
+  fullName: System.Net.Http.Headers.ViaHeaderValue.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ViaHeaderValue.cs
+    startLine: 81
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Returns a string that represents the current @'System.Net.Http.Headers.ViaHeaderValue' object.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: Returns @'System.String'.A string that represents the current object.
+  overridden: System.Object.ToString
+- uid: System.Net.Http.Headers.ViaHeaderValue.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Net.Http.Headers.ViaHeaderValue
+  href: System.Net.Http.Headers.ViaHeaderValue.yml
+  name: Equals(Object)
+  fullName: System.Net.Http.Headers.ViaHeaderValue.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ViaHeaderValue.cs
+    startLine: 104
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Determines whether the specified @'System.Object' is equal to the current @'System.Net.Http.Headers.ViaHeaderValue'object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: Returns @'System.Boolean'.true if the specified @'System.Object' is equal to the current object; otherwise, false.
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Net.Http.Headers.ViaHeaderValue.GetHashCode
+  id: GetHashCode
+  parent: System.Net.Http.Headers.ViaHeaderValue
+  href: System.Net.Http.Headers.ViaHeaderValue.yml
+  name: GetHashCode()
+  fullName: System.Net.Http.Headers.ViaHeaderValue.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ViaHeaderValue.cs
+    startLine: 121
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Serves as a hash function for an @'System.Net.Http.Headers.ViaHeaderValue' object.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: Returns @'System.Int32'.Returns a hash code for the current object.
+  overridden: System.Object.GetHashCode
+- uid: System.Net.Http.Headers.ViaHeaderValue.Parse(System.String)
+  id: Parse(System.String)
+  parent: System.Net.Http.Headers.ViaHeaderValue
+  href: System.Net.Http.Headers.ViaHeaderValue.yml
+  name: Parse(String)
+  fullName: System.Net.Http.Headers.ViaHeaderValue.Parse(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ViaHeaderValue.cs
+    startLine: 139
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Converts a string to an @'System.Net.Http.Headers.ViaHeaderValue' instance.
+  syntax:
+    content: public static ViaHeaderValue Parse(string input)
+    content.vb: Public Shared Function Parse(input As String) As ViaHeaderValue
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that represents via header value information.
+    return:
+      type: System.Net.Http.Headers.ViaHeaderValue
+      description: Returns @'System.Net.Http.Headers.ViaHeaderValue'.An @'System.Net.Http.Headers.ViaHeaderValue' instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is a null reference.'
+  - type: System.FormatException
+    description: '*input* is not valid via header value information.'
+- uid: System.Net.Http.Headers.ViaHeaderValue.TryParse(System.String,System.Net.Http.Headers.ViaHeaderValue@)
+  id: TryParse(System.String,System.Net.Http.Headers.ViaHeaderValue@)
+  parent: System.Net.Http.Headers.ViaHeaderValue
+  href: System.Net.Http.Headers.ViaHeaderValue.yml
+  name: TryParse(String, out ViaHeaderValue)
+  name.vb: TryParse(String, ByRef ViaHeaderValue)
+  fullName: System.Net.Http.Headers.ViaHeaderValue.TryParse(System.String, out System.Net.Http.Headers.ViaHeaderValue)
+  fullName.vb: System.Net.Http.Headers.ViaHeaderValue.TryParse(System.String, ByRef System.Net.Http.Headers.ViaHeaderValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ViaHeaderValue.cs
+    startLine: 145
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Determines whether a string is valid @'System.Net.Http.Headers.ViaHeaderValue' information.
+  syntax:
+    content: public static bool TryParse(string input, out ViaHeaderValue parsedValue)
+    content.vb: Public Shared Function TryParse(input As String, ByRef parsedValue As ViaHeaderValue) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to validate.
+    - id: parsedValue
+      type: System.Net.Http.Headers.ViaHeaderValue
+      description: The @'System.Net.Http.Headers.ViaHeaderValue' version of the string.
+    return:
+      type: System.Boolean
+      description: Returns @'System.Boolean'.true if *input* is valid @'System.Net.Http.Headers.ViaHeaderValue' information; otherwise, false.
+references:
+- uid: System.Net.Http.Headers
+  isExternal: false
+  name: System.Net.Http.Headers
+  fullName: System.Net.Http.Headers
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Net.Http.Headers.ViaHeaderValue
+  parent: System.Net.Http.Headers
+  isExternal: false
+  href: System.Net.Http.Headers.ViaHeaderValue.yml
+  name: ViaHeaderValue
+  fullName: System.Net.Http.Headers.ViaHeaderValue
+  type: Class

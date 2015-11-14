@@ -1,0 +1,372 @@
+items:
+- uid: System.Diagnostics.TraceEventCache
+  id: TraceEventCache
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.TraceEventCache.DateTime
+  - System.Diagnostics.TraceEventCache.ProcessId
+  - System.Diagnostics.TraceEventCache.ThreadId
+  - System.Diagnostics.TraceEventCache.Timestamp
+  href: System.Diagnostics.TraceEventCache.yml
+  name: TraceEventCache
+  fullName: System.Diagnostics.TraceEventCache
+  type: Class
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceEventCache.Windows.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceEventCache.Windows.cs
+    startLine: 5
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: Provides trace event data specific to a thread and a process.
+  syntax:
+    content: public class TraceEventCache
+    content.vb: Public Class TraceEventCache
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Diagnostics.TraceEventCache.DateTime
+  id: DateTime
+  parent: System.Diagnostics.TraceEventCache
+  href: System.Diagnostics.TraceEventCache.yml
+  name: DateTime
+  fullName: System.Diagnostics.TraceEventCache.DateTime
+  type: Property
+  source:
+    remote: &o0
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceEventCache.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceEventCache.cs
+    startLine: 16
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: Gets the date and time at which the event trace occurred.
+  syntax:
+    content: public DateTime DateTime { get; }
+    content.vb: Public ReadOnly Property DateTime As Date
+    parameters: []
+    return:
+      type: System.DateTime
+      description: A @'System.DateTime' structure whose value is a date and time expressed in Coordinated Universal Time (UTC).
+- uid: System.Diagnostics.TraceEventCache.ProcessId
+  id: ProcessId
+  parent: System.Diagnostics.TraceEventCache
+  href: System.Diagnostics.TraceEventCache.yml
+  name: ProcessId
+  fullName: System.Diagnostics.TraceEventCache.ProcessId
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceEventCache.cs
+    startLine: 26
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: Gets the unique identifier of the current process.
+  syntax:
+    content: public int ProcessId { get; }
+    content.vb: Public ReadOnly Property ProcessId As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The system-generated unique identifier of the current process.
+- uid: System.Diagnostics.TraceEventCache.ThreadId
+  id: ThreadId
+  parent: System.Diagnostics.TraceEventCache
+  href: System.Diagnostics.TraceEventCache.yml
+  name: ThreadId
+  fullName: System.Diagnostics.TraceEventCache.ThreadId
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceEventCache.cs
+    startLine: 34
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: Gets a unique identifier for the current managed thread.
+  syntax:
+    content: public string ThreadId { get; }
+    content.vb: Public ReadOnly Property ThreadId As String
+    parameters: []
+    return:
+      type: System.String
+      description: A string that represents a unique integer identifier for this managed thread.
+- uid: System.Diagnostics.TraceEventCache.Timestamp
+  id: Timestamp
+  parent: System.Diagnostics.TraceEventCache
+  href: System.Diagnostics.TraceEventCache.yml
+  name: Timestamp
+  fullName: System.Diagnostics.TraceEventCache.Timestamp
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceEventCache.cs
+    startLine: 42
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: Gets the current number of ticks in the timer mechanism.
+  syntax:
+    content: public long Timestamp { get; }
+    content.vb: Public ReadOnly Property Timestamp As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: The tick counter value of the underlying timer mechanism.
+references:
+- uid: System.Diagnostics
+  isExternal: false
+  name: System.Diagnostics
+  fullName: System.Diagnostics
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64

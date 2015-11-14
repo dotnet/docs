@@ -1,0 +1,769 @@
+items:
+- uid: System.UriBuilder
+  id: UriBuilder
+  parent: System
+  children:
+  - System.UriBuilder.#ctor
+  - System.UriBuilder.#ctor(System.String)
+  - System.UriBuilder.#ctor(System.String,System.String)
+  - System.UriBuilder.#ctor(System.String,System.String,System.Int32)
+  - System.UriBuilder.#ctor(System.String,System.String,System.Int32,System.String)
+  - System.UriBuilder.#ctor(System.String,System.String,System.Int32,System.String,System.String)
+  - System.UriBuilder.#ctor(System.Uri)
+  - System.UriBuilder.Equals(System.Object)
+  - System.UriBuilder.Fragment
+  - System.UriBuilder.GetHashCode
+  - System.UriBuilder.Host
+  - System.UriBuilder.Password
+  - System.UriBuilder.Path
+  - System.UriBuilder.Port
+  - System.UriBuilder.Query
+  - System.UriBuilder.Scheme
+  - System.UriBuilder.ToString
+  - System.UriBuilder.Uri
+  - System.UriBuilder.UserName
+  href: System.UriBuilder.yml
+  name: UriBuilder
+  fullName: System.UriBuilder
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Private.Uri/src/System/UriBuilder.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 9
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Provides a custom constructor for uniform resource identifiers (URIs) and modifies URIs for the @'System.Uri' class.
+  syntax:
+    content: public class UriBuilder
+    content.vb: Public Class UriBuilder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.UriBuilder.#ctor
+  id: '#ctor'
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: UriBuilder()
+  fullName: System.UriBuilder.UriBuilder()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 27
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Initializes a new instance of the @'System.UriBuilder' class.
+  syntax:
+    content: public UriBuilder()
+    content.vb: Public Sub New
+- uid: System.UriBuilder.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: UriBuilder(String)
+  fullName: System.UriBuilder.UriBuilder(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 31
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Initializes a new instance of the @'System.UriBuilder' class with the specified URI.
+  syntax:
+    content: public UriBuilder(string uri)
+    content.vb: Public Sub New(uri As String)
+    parameters:
+    - id: uri
+      type: System.String
+      description: A URI string.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*uri* is null.'
+  - type: System.UriFormatException
+    description: In the .NET for Windows Store apps or the Portable Class Library, catch the base class exception, @'System.FormatException', instead.*uri* is a zero length string or contains only spaces.-or- The parsing routine detected a scheme in an invalid form.-or- The parser detected more than two consecutive slashes in a URI that does not use the "file" scheme.-or- *uri* is not a valid URI.
+- uid: System.UriBuilder.#ctor(System.Uri)
+  id: '#ctor(System.Uri)'
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: UriBuilder(Uri)
+  fullName: System.UriBuilder.UriBuilder(System.Uri)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 47
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Initializes a new instance of the @'System.UriBuilder' class with the specified @'System.Uri' instance.
+  syntax:
+    content: public UriBuilder(Uri uri)
+    content.vb: Public Sub New(uri As Uri)
+    parameters:
+    - id: uri
+      type: System.Uri
+      description: An instance of the @'System.Uri' class.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*uri* is null.'
+- uid: System.UriBuilder.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: UriBuilder(String, String)
+  fullName: System.UriBuilder.UriBuilder(System.String, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 84
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Initializes a new instance of the @'System.UriBuilder' class with the specified scheme and host.
+  syntax:
+    content: public UriBuilder(string schemeName, string hostName)
+    content.vb: Public Sub New(schemeName As String, hostName As String)
+    parameters:
+    - id: schemeName
+      type: System.String
+      description: An Internet access protocol.
+    - id: hostName
+      type: System.String
+      description: A DNS-style domain name or IP address.
+- uid: System.UriBuilder.#ctor(System.String,System.String,System.Int32)
+  id: '#ctor(System.String,System.String,System.Int32)'
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: UriBuilder(String, String, Int32)
+  fullName: System.UriBuilder.UriBuilder(System.String, System.String, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 90
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Initializes a new instance of the @'System.UriBuilder' class with the specified scheme, host, and port.
+  syntax:
+    content: public UriBuilder(string scheme, string host, int portNumber)
+    content.vb: Public Sub New(scheme As String, host As String, portNumber As Integer)
+    parameters:
+    - id: scheme
+      type: System.String
+      description: An Internet access protocol.
+    - id: host
+      type: System.String
+      description: A DNS-style domain name or IP address.
+    - id: portNumber
+      type: System.Int32
+      description: An IP port number for the service.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*portNumber* is less than -1 or greater than 65,535.'
+- uid: System.UriBuilder.#ctor(System.String,System.String,System.Int32,System.String)
+  id: '#ctor(System.String,System.String,System.Int32,System.String)'
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: UriBuilder(String, String, Int32, String)
+  fullName: System.UriBuilder.UriBuilder(System.String, System.String, System.Int32, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 95
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Initializes a new instance of the @'System.UriBuilder' class with the specified scheme, host, port number, and path.
+  syntax:
+    content: public UriBuilder(string scheme, string host, int port, string pathValue)
+    content.vb: Public Sub New(scheme As String, host As String, port As Integer, pathValue As String)
+    parameters:
+    - id: scheme
+      type: System.String
+      description: An Internet access protocol.
+    - id: host
+      type: System.String
+      description: A DNS-style domain name or IP address.
+    - id: port
+      type: System.Int32
+      description: An IP port number for the service.
+    - id: pathValue
+      type: System.String
+      description: The path to the Internet resource.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*port* is less than -1 or greater than 65,535.'
+- uid: System.UriBuilder.#ctor(System.String,System.String,System.Int32,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.Int32,System.String,System.String)'
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: UriBuilder(String, String, Int32, String, String)
+  fullName: System.UriBuilder.UriBuilder(System.String, System.String, System.Int32, System.String, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 104
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Initializes a new instance of the @'System.UriBuilder' class with the specified scheme, host, port number, path and query string or fragment identifier.
+  syntax:
+    content: public UriBuilder(string scheme, string host, int port, string path, string extraValue)
+    content.vb: Public Sub New(scheme As String, host As String, port As Integer, path As String, extraValue As String)
+    parameters:
+    - id: scheme
+      type: System.String
+      description: An Internet access protocol.
+    - id: host
+      type: System.String
+      description: A DNS-style domain name or IP address.
+    - id: port
+      type: System.Int32
+      description: An IP port number for the service.
+    - id: path
+      type: System.String
+      description: The path to the Internet resource.
+    - id: extraValue
+      type: System.String
+      description: A query string or fragment identifier.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*extraValue* is neither null nor @''System.String.Empty'', nor does a valid fragment identifier begin with a number sign (#), nor a valid query string begin with a question mark (?).'
+  - type: System.ArgumentOutOfRangeException
+    description: '*port* is less than -1 or greater than 65,535.'
+- uid: System.UriBuilder.Fragment
+  id: Fragment
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: Fragment
+  fullName: System.UriBuilder.Fragment
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 168
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Gets or sets the fragment portion of the URI.
+  syntax:
+    content: public string Fragment { get; set; }
+    content.vb: Public Property Fragment As String
+    parameters: []
+    return:
+      type: System.String
+      description: The fragment portion of the URI. The fragment identifier ("#") is added to the beginning of the fragment.
+- uid: System.UriBuilder.Host
+  id: Host
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: Host
+  fullName: System.UriBuilder.Host
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 189
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Gets or sets the Domain Name System (DNS) host name or IP address of a server.
+  syntax:
+    content: public string Host { get; set; }
+    content.vb: Public Property Host As String
+    parameters: []
+    return:
+      type: System.String
+      description: The DNS host name or IP address of the server.
+- uid: System.UriBuilder.Password
+  id: Password
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: Password
+  fullName: System.UriBuilder.Password
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 213
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Gets or sets the password associated with the user that accesses the URI.
+  syntax:
+    content: public string Password { get; set; }
+    content.vb: Public Property Password As String
+    parameters: []
+    return:
+      type: System.String
+      description: The password of the user that accesses the URI.
+- uid: System.UriBuilder.Path
+  id: Path
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: Path
+  fullName: System.UriBuilder.Path
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 230
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Gets or sets the path to the resource referenced by the URI.
+  syntax:
+    content: public string Path { get; set; }
+    content.vb: Public Property Path As String
+    parameters: []
+    return:
+      type: System.String
+      description: The path to the resource referenced by the URI.
+- uid: System.UriBuilder.Port
+  id: Port
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: Port
+  fullName: System.UriBuilder.Port
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 247
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Gets or sets the port number of the URI.
+  syntax:
+    content: public int Port { get; set; }
+    content.vb: Public Property Port As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The port number of the URI.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The port cannot be set to a value less than -1 or greater than 65,535.
+- uid: System.UriBuilder.Query
+  id: Query
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: Query
+  fullName: System.UriBuilder.Query
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 264
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Gets or sets any query information included in the URI.
+  syntax:
+    content: public string Query { get; set; }
+    content.vb: Public Property Query As String
+    parameters: []
+    return:
+      type: System.String
+      description: The query information included in the URI.
+- uid: System.UriBuilder.Scheme
+  id: Scheme
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: Scheme
+  fullName: System.UriBuilder.Scheme
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 285
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Gets or sets the scheme name of the URI.
+  syntax:
+    content: public string Scheme { get; set; }
+    content.vb: Public Property Scheme As String
+    parameters: []
+    return:
+      type: System.String
+      description: The scheme of the URI.
+  exceptions:
+  - type: System.ArgumentException
+    description: The scheme cannot be set to an invalid scheme name.
+- uid: System.UriBuilder.Uri
+  id: Uri
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: Uri
+  fullName: System.UriBuilder.Uri
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 317
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Gets the @'System.Uri' instance constructed by the specified @'System.UriBuilder' instance.
+  syntax:
+    content: public Uri Uri { get; }
+    content.vb: Public ReadOnly Property Uri As Uri
+    parameters: []
+    return:
+      type: System.Uri
+      description: A @'System.Uri' that contains the URI constructed by the @'System.UriBuilder'.
+  exceptions:
+  - type: System.UriFormatException
+    description: In the .NET for Windows Store apps or the Portable Class Library, catch the base class exception, @'System.FormatException', instead.The URI constructed by the @'System.UriBuilder' properties is invalid.
+- uid: System.UriBuilder.UserName
+  id: UserName
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: UserName
+  fullName: System.UriBuilder.UserName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 331
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The user name associated with the user that accesses the URI.
+  syntax:
+    content: public string UserName { get; set; }
+    content.vb: Public Property UserName As String
+    parameters: []
+    return:
+      type: System.String
+      description: The user name of the user that accesses the URI.
+- uid: System.UriBuilder.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: Equals(Object)
+  fullName: System.UriBuilder.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 367
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Compares an existing @'System.Uri' instance with the contents of the @'System.UriBuilder' for equality.
+  syntax:
+    content: public override bool Equals(object rparam)
+    content.vb: Public Overrides Function Equals(rparam As Object) As Boolean
+    parameters:
+    - id: rparam
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: true if *rparam* represents the same @'System.Uri' as the @'System.Uri' constructed by this @'System.UriBuilder' instance; otherwise, false.
+  overridden: System.Object.Equals(System.Object)
+- uid: System.UriBuilder.GetHashCode
+  id: GetHashCode
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: GetHashCode()
+  fullName: System.UriBuilder.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 376
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Returns the hash code for the URI.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: The hash code generated for the URI.
+  overridden: System.Object.GetHashCode
+- uid: System.UriBuilder.ToString
+  id: ToString
+  parent: System.UriBuilder
+  href: System.UriBuilder.yml
+  name: ToString()
+  fullName: System.UriBuilder.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriBuilder.cs
+    startLine: 409
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Returns the display string for the specified @'System.UriBuilder' instance.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: The string that contains the unescaped display string of the @'System.UriBuilder'.
+  overridden: System.Object.ToString
+  exceptions:
+  - type: System.UriFormatException
+    description: In the .NET for Windows Store apps or the Portable Class Library, catch the base class exception, @'System.FormatException', instead.The @'System.UriBuilder' instance has a bad password.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Uri
+  parent: System
+  isExternal: false
+  href: System.Uri.yml
+  name: Uri
+  fullName: System.Uri
+  type: Class
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

@@ -1,0 +1,1266 @@
+items:
+- uid: System.Int32
+  id: Int32
+  parent: System
+  children:
+  - System.Int32.CompareTo(System.Int32)
+  - System.Int32.CompareTo(System.Object)
+  - System.Int32.Equals(System.Int32)
+  - System.Int32.Equals(System.Object)
+  - System.Int32.GetHashCode
+  - System.Int32.GetTypeCode
+  - System.Int32.MaxValue
+  - System.Int32.MinValue
+  - System.Int32.Parse(System.String)
+  - System.Int32.Parse(System.String,System.Globalization.NumberStyles)
+  - System.Int32.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)
+  - System.Int32.Parse(System.String,System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToBoolean(System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToByte(System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToChar(System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToDateTime(System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToDecimal(System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToDouble(System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToInt16(System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToInt32(System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToInt64(System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToSByte(System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToSingle(System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToType(System.Type,System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToUInt16(System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToUInt32(System.IFormatProvider)
+  - System.Int32.System#IConvertible#ToUInt64(System.IFormatProvider)
+  - System.Int32.ToString
+  - System.Int32.ToString(System.IFormatProvider)
+  - System.Int32.ToString(System.String)
+  - System.Int32.ToString(System.String,System.IFormatProvider)
+  - System.Int32.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Int32@)
+  - System.Int32.TryParse(System.String,System.Int32@)
+  href: System.Int32.yml
+  name: Int32
+  fullName: System.Int32
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Int32.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents a 32-bit signed integer.To browse the .NET Framework source code for this type, see the Reference Source.
+  syntax:
+    content: 'public struct Int32 : IComparable, IFormattable, IConvertible, IComparable<int>, IEquatable<int>'
+    content.vb: Public Structure Int32 Implements IComparable, IFormattable, IConvertible, IComparable(Of Integer), IEquatable(Of Integer)
+  implements:
+  - System.IComparable
+  - System.IFormattable
+  - System.IConvertible
+  - System.IComparable{System.Int32}
+  - System.IEquatable{System.Int32}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Int32.MaxValue
+  id: MaxValue
+  parent: System.Int32
+  href: System.Int32.yml
+  name: MaxValue
+  fullName: System.Int32.MaxValue
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the largest possible value of an @'System.Int32'. This field is constant.
+  syntax:
+    content: public const int MaxValue
+    content.vb: Public Const MaxValue As Integer = 2147483647
+- uid: System.Int32.MinValue
+  id: MinValue
+  parent: System.Int32
+  href: System.Int32.yml
+  name: MinValue
+  fullName: System.Int32.MinValue
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the smallest possible value of @'System.Int32'. This field is constant.
+  syntax:
+    content: public const int MinValue
+    content.vb: Public Const MinValue As Integer = -2147483648
+- uid: System.Int32.CompareTo(System.Object)
+  id: CompareTo(System.Object)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: CompareTo(Object)
+  fullName: System.Int32.CompareTo(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares this instance to a specified object and returns an indication of their relative values.
+  syntax:
+    content: public int CompareTo(object value)
+    content.vb: Public Function CompareTo(value As Object) As Integer
+    parameters:
+    - id: value
+      type: System.Object
+      description: An object to compare, or null.
+    return:
+      type: System.Int32
+      description: A signed number indicating the relative values of this instance and *value*.Return Value Description Less than zero This instance is less than *value*. Zero This instance is equal to *value*. Greater than zero This instance is greater than *value*.-or- *value* is null.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*value* is not an @''System.Int32''.'
+- uid: System.Int32.CompareTo(System.Int32)
+  id: CompareTo(System.Int32)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: CompareTo(Int32)
+  fullName: System.Int32.CompareTo(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares this instance to a specified 32-bit signed integer and returns an indication of their relative values.
+  syntax:
+    content: public int CompareTo(int value)
+    content.vb: Public Function CompareTo(value As Integer) As Integer
+    parameters:
+    - id: value
+      type: System.Int32
+      description: An integer to compare.
+    return:
+      type: System.Int32
+      description: A signed number indicating the relative values of this instance and *value*.Return Value Description Less than zero This instance is less than *value*. Zero This instance is equal to *value*. Greater than zero This instance is greater than *value*.
+- uid: System.Int32.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: Equals(Object)
+  fullName: System.Int32.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a value indicating whether this instance is equal to a specified object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: An object to compare with this instance.
+    return:
+      type: System.Boolean
+      description: true if *obj* is an instance of @'System.Int32' and equals the value of this instance; otherwise, false.
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Int32.Equals(System.Int32)
+  id: Equals(System.Int32)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: Equals(Int32)
+  fullName: System.Int32.Equals(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 67
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a value indicating whether this instance is equal to a specified @'System.Int32' value.
+  syntax:
+    content: public bool Equals(int obj)
+    content.vb: Public Function Equals(obj As Integer) As Boolean
+    parameters:
+    - id: obj
+      type: System.Int32
+      description: An @'System.Int32' value to compare to this instance.
+    return:
+      type: System.Boolean
+      description: true if *obj* has the same value as this instance; otherwise, false.
+- uid: System.Int32.GetHashCode
+  id: GetHashCode
+  parent: System.Int32
+  href: System.Int32.yml
+  name: GetHashCode()
+  fullName: System.Int32.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 74
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the hash code for this instance.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer hash code.
+  overridden: System.ValueType.GetHashCode
+- uid: System.Int32.ToString
+  id: ToString
+  parent: System.Int32
+  href: System.Int32.yml
+  name: ToString()
+  fullName: System.Int32.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 78
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the numeric value of this instance to its equivalent string representation.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: The string representation of the value of this instance, consisting of a negative sign if the value is negative, and a sequence of digits ranging from 0 to 9 with no leading zeroes.
+  overridden: System.ValueType.ToString
+- uid: System.Int32.ToString(System.String)
+  id: ToString(System.String)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: ToString(String)
+  fullName: System.Int32.ToString(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 85
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the numeric value of this instance to its equivalent string representation, using the specified format.
+  syntax:
+    content: public string ToString(string format)
+    content.vb: Public Function ToString(format As String) As String
+    parameters:
+    - id: format
+      type: System.String
+      description: A standard or custom numeric format string.
+    return:
+      type: System.String
+      description: The string representation of the value of this instance as specified by *format*.
+  exceptions:
+  - type: System.FormatException
+    description: '*format* is invalid or not supported.'
+- uid: System.Int32.ToString(System.IFormatProvider)
+  id: ToString(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: ToString(IFormatProvider)
+  fullName: System.Int32.ToString(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 92
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the numeric value of this instance to its equivalent string representation using the specified culture-specific format information.
+  syntax:
+    content: public string ToString(IFormatProvider provider)
+    content.vb: Public Function ToString(provider As IFormatProvider) As String
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information.
+    return:
+      type: System.String
+      description: The string representation of the value of this instance as specified by *provider*.
+- uid: System.Int32.ToString(System.String,System.IFormatProvider)
+  id: ToString(System.String,System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: ToString(String, IFormatProvider)
+  fullName: System.Int32.ToString(System.String, System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 99
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the numeric value of this instance to its equivalent string representation using the specified format and culture-specific format information.
+  syntax:
+    content: public string ToString(string format, IFormatProvider provider)
+    content.vb: Public Function ToString(format As String, provider As IFormatProvider) As String
+    parameters:
+    - id: format
+      type: System.String
+      description: A standard or custom numeric format string.
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information.
+    return:
+      type: System.String
+      description: The string representation of the value of this instance as specified by *format* and *provider*.
+  exceptions:
+  - type: System.FormatException
+    description: '*format* is invalid or not supported.'
+- uid: System.Int32.Parse(System.String)
+  id: Parse(System.String)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: Parse(String)
+  fullName: System.Int32.Parse(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 106
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the string representation of a number to its 32-bit signed integer equivalent.
+  syntax:
+    content: public static int Parse(string s)
+    content.vb: Public Shared Function Parse(s As String) As Integer
+    parameters:
+    - id: s
+      type: System.String
+      description: A string containing a number to convert.
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer equivalent to the number contained in *s*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.FormatException
+    description: '*s* is not in the correct format.'
+  - type: System.OverflowException
+    description: '*s* represents a number less than @''System.Int32.MinValue'' or greater than @''System.Int32.MaxValue''.'
+- uid: System.Int32.Parse(System.String,System.Globalization.NumberStyles)
+  id: Parse(System.String,System.Globalization.NumberStyles)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: Parse(String, NumberStyles)
+  fullName: System.Int32.Parse(System.String, System.Globalization.NumberStyles)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 111
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the string representation of a number in a specified style to its 32-bit signed integer equivalent.
+  syntax:
+    content: public static int Parse(string s, NumberStyles style)
+    content.vb: Public Shared Function Parse(s As String, style As NumberStyles) As Integer
+    parameters:
+    - id: s
+      type: System.String
+      description: A string containing a number to convert.
+    - id: style
+      type: System.Globalization.NumberStyles
+      description: A bitwise combination of the enumeration values that indicates the style elements that can be present in *s*. A typical value to specify is @'System.Globalization.NumberStyles.Integer'.
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer equivalent to the number specified in *s*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentException
+    description: '*style* is not a @''System.Globalization.NumberStyles'' value. -or-*style* is not a combination of @''System.Globalization.NumberStyles.AllowHexSpecifier'' and @''System.Globalization.NumberStyles.HexNumber'' values.'
+  - type: System.FormatException
+    description: '*s* is not in a format compliant with *style*.'
+  - type: System.OverflowException
+    description: '*s* represents a number less than @''System.Int32.MinValue'' or greater than @''System.Int32.MaxValue''. -or-*s* includes non-zero, fractional digits.'
+- uid: System.Int32.Parse(System.String,System.IFormatProvider)
+  id: Parse(System.String,System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: Parse(String, IFormatProvider)
+  fullName: System.Int32.Parse(System.String, System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 121
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the string representation of a number in a specified culture-specific format to its 32-bit signed integer equivalent.
+  syntax:
+    content: public static int Parse(string s, IFormatProvider provider)
+    content.vb: Public Shared Function Parse(s As String, provider As IFormatProvider) As Integer
+    parameters:
+    - id: s
+      type: System.String
+      description: A string containing a number to convert.
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information about *s*.
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer equivalent to the number specified in *s*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.FormatException
+    description: '*s* is not of the correct format.'
+  - type: System.OverflowException
+    description: '*s* represents a number less than @''System.Int32.MinValue'' or greater than @''System.Int32.MaxValue''.'
+- uid: System.Int32.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)
+  id: Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: Parse(String, NumberStyles, IFormatProvider)
+  fullName: System.Int32.Parse(System.String, System.Globalization.NumberStyles, System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 130
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the string representation of a number in a specified style and culture-specific format to its 32-bit signed integer equivalent.
+  syntax:
+    content: public static int Parse(string s, NumberStyles style, IFormatProvider provider)
+    content.vb: Public Shared Function Parse(s As String, style As NumberStyles, provider As IFormatProvider) As Integer
+    parameters:
+    - id: s
+      type: System.String
+      description: A string containing a number to convert.
+    - id: style
+      type: System.Globalization.NumberStyles
+      description: A bitwise combination of enumeration values that indicates the style elements that can be present in *s*. A typical value to specify is @'System.Globalization.NumberStyles.Integer'.
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific information about the format of *s*.
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer equivalent to the number specified in *s*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentException
+    description: '*style* is not a @''System.Globalization.NumberStyles'' value. -or-*style* is not a combination of @''System.Globalization.NumberStyles.AllowHexSpecifier'' and @''System.Globalization.NumberStyles.HexNumber'' values.'
+  - type: System.FormatException
+    description: '*s* is not in a format compliant with *style*.'
+  - type: System.OverflowException
+    description: '*s* represents a number less than @''System.Int32.MinValue'' or greater than @''System.Int32.MaxValue''. -or-*s* includes non-zero, fractional digits.'
+- uid: System.Int32.TryParse(System.String,System.Int32@)
+  id: TryParse(System.String,System.Int32@)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: TryParse(String, out Int32)
+  name.vb: TryParse(String, ByRef Int32)
+  fullName: System.Int32.TryParse(System.String, out System.Int32)
+  fullName.vb: System.Int32.TryParse(System.String, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 139
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the string representation of a number to its 32-bit signed integer equivalent. A return value indicates whether the conversion succeeded.
+  syntax:
+    content: public static bool TryParse(string s, out int result)
+    content.vb: Public Shared Function TryParse(s As String, ByRef result As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string containing a number to convert.
+    - id: result
+      type: System.Int32
+      description: When this method returns, contains the 32-bit signed integer value equivalent of the number contained in *s*, if the conversion succeeded, or zero if the conversion failed. The conversion fails if the *s* parameter is null  or @'System.String.Empty', is not of the correct format, or represents a number less than @'System.Int32.MinValue' or greater than @'System.Int32.MaxValue'. This parameter is passed uninitialized; any value originally supplied in *result* will be overwritten.
+    return:
+      type: System.Boolean
+      description: true if *s* was converted successfully; otherwise, false.
+- uid: System.Int32.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Int32@)
+  id: TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Int32@)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: TryParse(String, NumberStyles, IFormatProvider, out Int32)
+  name.vb: TryParse(String, NumberStyles, IFormatProvider, ByRef Int32)
+  fullName: System.Int32.TryParse(System.String, System.Globalization.NumberStyles, System.IFormatProvider, out System.Int32)
+  fullName.vb: System.Int32.TryParse(System.String, System.Globalization.NumberStyles, System.IFormatProvider, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 147
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the string representation of a number in a specified style and culture-specific format to its 32-bit signed integer equivalent. A return value indicates whether the conversion succeeded.
+  syntax:
+    content: public static bool TryParse(string s, NumberStyles style, IFormatProvider provider, out int result)
+    content.vb: Public Shared Function TryParse(s As String, style As NumberStyles, provider As IFormatProvider, ByRef result As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string containing a number to convert. The string is interpreted using the style specified by *style*.
+    - id: style
+      type: System.Globalization.NumberStyles
+      description: A bitwise combination of enumeration values that indicates the style elements that can be present in *s*. A typical value to specify is @'System.Globalization.NumberStyles.Integer'.
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information about *s*.
+    - id: result
+      type: System.Int32
+      description: When this method returns, contains the 32-bit signed integer value equivalent of the number contained in *s*, if the conversion succeeded, or zero if the conversion failed. The conversion fails if the *s* parameter is null  or @'System.String.Empty', is not in a format compliant with *style*, or represents a number less than @'System.Int32.MinValue' or greater than @'System.Int32.MaxValue'. This parameter is passed uninitialized; any value originally supplied in *result* will be overwritten.
+    return:
+      type: System.Boolean
+      description: true if *s* was converted successfully; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*style* is not a @''System.Globalization.NumberStyles'' value. -or-*style* is not a combination of @''System.Globalization.NumberStyles.AllowHexSpecifier'' and @''System.Globalization.NumberStyles.HexNumber'' values.'
+- uid: System.Int32.GetTypeCode
+  id: GetTypeCode
+  parent: System.Int32
+  href: System.Int32.yml
+  name: GetTypeCode()
+  fullName: System.Int32.GetTypeCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 157
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the @'System.TypeCode' for value type @'System.Int32'.
+  syntax:
+    content: public TypeCode GetTypeCode()
+    content.vb: Public Function GetTypeCode As TypeCode
+    return:
+      type: System.TypeCode
+      description: The enumerated constant, @'System.TypeCode.Int32'.
+- uid: System.Int32.System#IConvertible#ToBoolean(System.IFormatProvider)
+  id: System#IConvertible#ToBoolean(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToBoolean(IFormatProvider)
+  name.vb: System.IConvertible.ToBoolean(IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToBoolean(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 163
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToBoolean(System.IFormatProvider)'.
+  syntax:
+    content: bool IConvertible.ToBoolean(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToBoolean(provider As IFormatProvider) As Boolean Implements IConvertible.ToBoolean
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Boolean
+      description: true if the value of the current instance is not zero; otherwise, false.
+- uid: System.Int32.System#IConvertible#ToChar(System.IFormatProvider)
+  id: System#IConvertible#ToChar(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToChar(IFormatProvider)
+  name.vb: System.IConvertible.ToChar(IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToChar(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 168
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToChar(System.IFormatProvider)'.
+  syntax:
+    content: char IConvertible.ToChar(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToChar(provider As IFormatProvider) As Char Implements IConvertible.ToChar
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Char
+      description: The value of the current instance, converted to a @'System.Char'.
+- uid: System.Int32.System#IConvertible#ToSByte(System.IFormatProvider)
+  id: System#IConvertible#ToSByte(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToSByte(IFormatProvider)
+  name.vb: System.IConvertible.ToSByte(IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToSByte(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 173
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToSByte(System.IFormatProvider)'.
+  syntax:
+    content: sbyte IConvertible.ToSByte(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToSByte(provider As IFormatProvider) As SByte Implements IConvertible.ToSByte
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.SByte
+      description: The value of the current instance, converted to an @'System.SByte'.
+- uid: System.Int32.System#IConvertible#ToByte(System.IFormatProvider)
+  id: System#IConvertible#ToByte(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToByte(IFormatProvider)
+  name.vb: System.IConvertible.ToByte(IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToByte(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 178
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToByte(System.IFormatProvider)'.
+  syntax:
+    content: byte IConvertible.ToByte(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToByte(provider As IFormatProvider) As Byte Implements IConvertible.ToByte
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Byte
+      description: The value of the current instance, converted to a @'System.Byte'.
+- uid: System.Int32.System#IConvertible#ToInt16(System.IFormatProvider)
+  id: System#IConvertible#ToInt16(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToInt16(IFormatProvider)
+  name.vb: System.IConvertible.ToInt16(IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToInt16(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 183
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToInt16(System.IFormatProvider)'.
+  syntax:
+    content: short IConvertible.ToInt16(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToInt16(provider As IFormatProvider) As Short Implements IConvertible.ToInt16
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Int16
+      description: The value of the current instance, converted to an @'System.Int16'.
+- uid: System.Int32.System#IConvertible#ToUInt16(System.IFormatProvider)
+  id: System#IConvertible#ToUInt16(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToUInt16(IFormatProvider)
+  name.vb: System.IConvertible.ToUInt16(IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToUInt16(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 188
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToUInt16(System.IFormatProvider)'.
+  syntax:
+    content: ushort IConvertible.ToUInt16(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToUInt16(provider As IFormatProvider) As UShort Implements IConvertible.ToUInt16
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.UInt16
+      description: The value of the current instance, converted to a @'System.UInt16'.
+- uid: System.Int32.System#IConvertible#ToInt32(System.IFormatProvider)
+  id: System#IConvertible#ToInt32(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToInt32(IFormatProvider)
+  name.vb: System.IConvertible.ToInt32(IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToInt32(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 193
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToInt32(System.IFormatProvider)'.
+  syntax:
+    content: int IConvertible.ToInt32(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToInt32(provider As IFormatProvider) As Integer Implements IConvertible.ToInt32
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Int32
+      description: The value of the current instance, unchanged.
+- uid: System.Int32.System#IConvertible#ToUInt32(System.IFormatProvider)
+  id: System#IConvertible#ToUInt32(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToUInt32(IFormatProvider)
+  name.vb: System.IConvertible.ToUInt32(IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToUInt32(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 198
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToUInt32(System.IFormatProvider)'.
+  syntax:
+    content: uint IConvertible.ToUInt32(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToUInt32(provider As IFormatProvider) As UInteger Implements IConvertible.ToUInt32
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.UInt32
+      description: The value of the current instance, converted to a @'System.UInt32'.
+- uid: System.Int32.System#IConvertible#ToInt64(System.IFormatProvider)
+  id: System#IConvertible#ToInt64(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToInt64(IFormatProvider)
+  name.vb: System.IConvertible.ToInt64(IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToInt64(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 203
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToInt64(System.IFormatProvider)'.
+  syntax:
+    content: long IConvertible.ToInt64(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToInt64(provider As IFormatProvider) As Long Implements IConvertible.ToInt64
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Int64
+      description: The value of the current instance, converted to an @'System.Int64'.
+- uid: System.Int32.System#IConvertible#ToUInt64(System.IFormatProvider)
+  id: System#IConvertible#ToUInt64(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToUInt64(IFormatProvider)
+  name.vb: System.IConvertible.ToUInt64(IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToUInt64(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 208
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToUInt64(System.IFormatProvider)'.
+  syntax:
+    content: ulong IConvertible.ToUInt64(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToUInt64(provider As IFormatProvider) As ULong Implements IConvertible.ToUInt64
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.UInt64
+      description: The value of the current instance, converted to a @'System.UInt64'.
+- uid: System.Int32.System#IConvertible#ToSingle(System.IFormatProvider)
+  id: System#IConvertible#ToSingle(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToSingle(IFormatProvider)
+  name.vb: System.IConvertible.ToSingle(IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToSingle(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 213
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToSingle(System.IFormatProvider)'.
+  syntax:
+    content: float IConvertible.ToSingle(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToSingle(provider As IFormatProvider) As Single Implements IConvertible.ToSingle
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Single
+      description: The value of the current instance, converted to a @'System.Single'.
+- uid: System.Int32.System#IConvertible#ToDouble(System.IFormatProvider)
+  id: System#IConvertible#ToDouble(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToDouble(IFormatProvider)
+  name.vb: System.IConvertible.ToDouble(IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToDouble(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 218
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToDouble(System.IFormatProvider)'.
+  syntax:
+    content: double IConvertible.ToDouble(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToDouble(provider As IFormatProvider) As Double Implements IConvertible.ToDouble
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Double
+      description: The value of the current instance, converted to a @'System.Double'.
+- uid: System.Int32.System#IConvertible#ToDecimal(System.IFormatProvider)
+  id: System#IConvertible#ToDecimal(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToDecimal(IFormatProvider)
+  name.vb: System.IConvertible.ToDecimal(IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToDecimal(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 223
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToDecimal(System.IFormatProvider)'.
+  syntax:
+    content: decimal IConvertible.ToDecimal(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToDecimal(provider As IFormatProvider) As Decimal Implements IConvertible.ToDecimal
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Decimal
+      description: The value of the current instance, converted to a @'System.Decimal'.
+- uid: System.Int32.System#IConvertible#ToDateTime(System.IFormatProvider)
+  id: System#IConvertible#ToDateTime(System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToDateTime(IFormatProvider)
+  name.vb: System.IConvertible.ToDateTime(IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToDateTime(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 228
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to use this method throws an @'System.InvalidCastException'.
+  syntax:
+    content: DateTime IConvertible.ToDateTime(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToDateTime(provider As IFormatProvider) As Date Implements IConvertible.ToDateTime
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.DateTime
+      description: This conversion is not supported. No value is returned.
+  exceptions:
+  - type: System.InvalidCastException
+    description: In all cases.
+- uid: System.Int32.System#IConvertible#ToType(System.Type,System.IFormatProvider)
+  id: System#IConvertible#ToType(System.Type,System.IFormatProvider)
+  parent: System.Int32
+  href: System.Int32.yml
+  name: IConvertible.ToType(Type, IFormatProvider)
+  name.vb: System.IConvertible.ToType(Type, IFormatProvider)
+  fullName: System.Int32.System.IConvertible.ToType(System.Type, System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Int32.cs
+    startLine: 233
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToType(System.Type,System.IFormatProvider)'.
+  syntax:
+    content: object IConvertible.ToType(Type type, IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToType(type As Type, provider As IFormatProvider) As Object Implements IConvertible.ToType
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to which to convert this @'System.Int32' value.
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that provides information about the format of the returned value.
+    return:
+      type: System.Object
+      description: The value of the current instance, converted to *type*.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.Globalization.NumberStyles
+  parent: System.Globalization
+  isExternal: true
+  name: NumberStyles
+  fullName: System.Globalization.NumberStyles
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization
+- uid: System.TypeCode
+  parent: System
+  isExternal: false
+  href: System.TypeCode.yml
+  name: TypeCode
+  fullName: System.TypeCode
+  type: Enum
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.SByte
+  parent: System
+  isExternal: true
+  name: SByte
+  fullName: System.SByte
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  fullName: System.Byte
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  fullName: System.UInt16
+- uid: System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  fullName: System.UInt64
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type

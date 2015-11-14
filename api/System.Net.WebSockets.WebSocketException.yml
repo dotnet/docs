@@ -1,0 +1,452 @@
+items:
+- uid: System.Net.WebSockets.WebSocketException
+  id: WebSocketException
+  parent: System.Net.WebSockets
+  children:
+  - System.Net.WebSockets.WebSocketException.#ctor(System.Int32)
+  - System.Net.WebSockets.WebSocketException.#ctor(System.Int32,System.Exception)
+  - System.Net.WebSockets.WebSocketException.#ctor(System.Int32,System.String)
+  - System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError)
+  - System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Exception)
+  - System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Int32)
+  - System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Int32,System.Exception)
+  - System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Int32,System.String)
+  - System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Int32,System.String,System.Exception)
+  - System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.String)
+  - System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.String,System.Exception)
+  - System.Net.WebSockets.WebSocketException.#ctor(System.String)
+  - System.Net.WebSockets.WebSocketException.#ctor(System.String,System.Exception)
+  - System.Net.WebSockets.WebSocketException.ErrorCode
+  - System.Net.WebSockets.WebSocketException.WebSocketErrorCode
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException
+  fullName: System.Net.WebSockets.WebSocketException
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 9
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Represents an exception that occurred when performing an operation on a WebSocket connection.
+  syntax:
+    content: 'public sealed class WebSocketException : Win32Exception'
+    content.vb: Public NotInheritable Class WebSocketException Inherits Win32Exception
+  inheritance:
+  - System.Object
+- uid: System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError)
+  id: '#ctor(System.Net.WebSockets.WebSocketError)'
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException(WebSocketError)
+  fullName: System.Net.WebSockets.WebSocketException.WebSocketException(System.Net.WebSockets.WebSocketError)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 13
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Creates an instance of the @'System.Net.WebSockets.WebSocketException' class.
+  syntax:
+    content: public WebSocketException(WebSocketError error)
+    content.vb: Public Sub New(error As WebSocketError)
+    parameters:
+    - id: error
+      type: System.Net.WebSockets.WebSocketError
+      description: The error from the WebSocketError enumeration.
+- uid: System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.String)
+  id: '#ctor(System.Net.WebSockets.WebSocketError,System.String)'
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException(WebSocketError, String)
+  fullName: System.Net.WebSockets.WebSocketException.WebSocketException(System.Net.WebSockets.WebSocketError, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 20
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Creates an instance of the @'System.Net.WebSockets.WebSocketException' class.
+  syntax:
+    content: public WebSocketException(WebSocketError error, string message)
+    content.vb: Public Sub New(error As WebSocketError, message As String)
+    parameters:
+    - id: error
+      type: System.Net.WebSockets.WebSocketError
+      description: The error from the WebSocketError enumeration.
+    - id: message
+      type: System.String
+      description: The description of the error.
+- uid: System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Exception)
+  id: '#ctor(System.Net.WebSockets.WebSocketError,System.Exception)'
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException(WebSocketError, Exception)
+  fullName: System.Net.WebSockets.WebSocketException.WebSocketException(System.Net.WebSockets.WebSocketError, System.Exception)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 27
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Creates an instance of the @'System.Net.WebSockets.WebSocketException' class.
+  syntax:
+    content: public WebSocketException(WebSocketError error, Exception innerException)
+    content.vb: Public Sub New(error As WebSocketError, innerException As Exception)
+    parameters:
+    - id: error
+      type: System.Net.WebSockets.WebSocketError
+      description: The error from the WebSocketError enumeration.
+    - id: innerException
+      type: System.Exception
+      description: Indicates the previous exception that led to the current exception.
+- uid: System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.String,System.Exception)
+  id: '#ctor(System.Net.WebSockets.WebSocketError,System.String,System.Exception)'
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException(WebSocketError, String, Exception)
+  fullName: System.Net.WebSockets.WebSocketException.WebSocketException(System.Net.WebSockets.WebSocketError, System.String, System.Exception)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 34
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Creates an instance of the @'System.Net.WebSockets.WebSocketException' class.
+  syntax:
+    content: public WebSocketException(WebSocketError error, string message, Exception innerException)
+    content.vb: Public Sub New(error As WebSocketError, message As String, innerException As Exception)
+    parameters:
+    - id: error
+      type: System.Net.WebSockets.WebSocketError
+      description: The error from the WebSocketError enumeration.
+    - id: message
+      type: System.String
+      description: The description of the error.
+    - id: innerException
+      type: System.Exception
+      description: Indicates the previous exception that led to the current exception.
+- uid: System.Net.WebSockets.WebSocketException.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException(Int32)
+  fullName: System.Net.WebSockets.WebSocketException.WebSocketException(System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 42
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Creates an instance of the @'System.Net.WebSockets.WebSocketException' class.
+  syntax:
+    content: public WebSocketException(int nativeError)
+    content.vb: Public Sub New(nativeError As Integer)
+    parameters:
+    - id: nativeError
+      type: System.Int32
+      description: The native error code for the exception.
+- uid: System.Net.WebSockets.WebSocketException.#ctor(System.Int32,System.String)
+  id: '#ctor(System.Int32,System.String)'
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException(Int32, String)
+  fullName: System.Net.WebSockets.WebSocketException.WebSocketException(System.Int32, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 51
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Creates an instance of the @'System.Net.WebSockets.WebSocketException' class.
+  syntax:
+    content: public WebSocketException(int nativeError, string message)
+    content.vb: Public Sub New(nativeError As Integer, message As String)
+    parameters:
+    - id: nativeError
+      type: System.Int32
+      description: The native error code for the exception.
+    - id: message
+      type: System.String
+      description: The description of the error.
+- uid: System.Net.WebSockets.WebSocketException.#ctor(System.Int32,System.Exception)
+  id: '#ctor(System.Int32,System.Exception)'
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException(Int32, Exception)
+  fullName: System.Net.WebSockets.WebSocketException.WebSocketException(System.Int32, System.Exception)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 60
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Creates an instance of the @'System.Net.WebSockets.WebSocketException' class.
+  syntax:
+    content: public WebSocketException(int nativeError, Exception innerException)
+    content.vb: Public Sub New(nativeError As Integer, innerException As Exception)
+    parameters:
+    - id: nativeError
+      type: System.Int32
+      description: The native error code for the exception.
+    - id: innerException
+      type: System.Exception
+      description: Indicates the previous exception that led to the current exception.
+- uid: System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Int32)
+  id: '#ctor(System.Net.WebSockets.WebSocketError,System.Int32)'
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException(WebSocketError, Int32)
+  fullName: System.Net.WebSockets.WebSocketException.WebSocketException(System.Net.WebSockets.WebSocketError, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 69
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Creates an instance of the @'System.Net.WebSockets.WebSocketException' class.
+  syntax:
+    content: public WebSocketException(WebSocketError error, int nativeError)
+    content.vb: Public Sub New(error As WebSocketError, nativeError As Integer)
+    parameters:
+    - id: error
+      type: System.Net.WebSockets.WebSocketError
+      description: The error from the WebSocketError enumeration.
+    - id: nativeError
+      type: System.Int32
+      description: The native error code for the exception.
+- uid: System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Int32,System.String)
+  id: '#ctor(System.Net.WebSockets.WebSocketError,System.Int32,System.String)'
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException(WebSocketError, Int32, String)
+  fullName: System.Net.WebSockets.WebSocketException.WebSocketException(System.Net.WebSockets.WebSocketError, System.Int32, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 76
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Creates an instance of the @'System.Net.WebSockets.WebSocketException' class.
+  syntax:
+    content: public WebSocketException(WebSocketError error, int nativeError, string message)
+    content.vb: Public Sub New(error As WebSocketError, nativeError As Integer, message As String)
+    parameters:
+    - id: error
+      type: System.Net.WebSockets.WebSocketError
+      description: The error from the WebSocketError enumeration.
+    - id: nativeError
+      type: System.Int32
+      description: The native error code for the exception.
+    - id: message
+      type: System.String
+      description: The description of the error.
+- uid: System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Int32,System.Exception)
+  id: '#ctor(System.Net.WebSockets.WebSocketError,System.Int32,System.Exception)'
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException(WebSocketError, Int32, Exception)
+  fullName: System.Net.WebSockets.WebSocketException.WebSocketException(System.Net.WebSockets.WebSocketError, System.Int32, System.Exception)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 85
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Creates an instance of the @'System.Net.WebSockets.WebSocketException' class.
+  syntax:
+    content: public WebSocketException(WebSocketError error, int nativeError, Exception innerException)
+    content.vb: Public Sub New(error As WebSocketError, nativeError As Integer, innerException As Exception)
+    parameters:
+    - id: error
+      type: System.Net.WebSockets.WebSocketError
+      description: The error from the WebSocketError enumeration.
+    - id: nativeError
+      type: System.Int32
+      description: The native error code for the exception.
+    - id: innerException
+      type: System.Exception
+      description: Indicates the previous exception that led to the current exception.
+- uid: System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Int32,System.String,System.Exception)
+  id: '#ctor(System.Net.WebSockets.WebSocketError,System.Int32,System.String,System.Exception)'
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException(WebSocketError, Int32, String, Exception)
+  fullName: System.Net.WebSockets.WebSocketException.WebSocketException(System.Net.WebSockets.WebSocketError, System.Int32, System.String, System.Exception)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 92
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Creates an instance of the @'System.Net.WebSockets.WebSocketException' class.
+  syntax:
+    content: public WebSocketException(WebSocketError error, int nativeError, string message, Exception innerException)
+    content.vb: Public Sub New(error As WebSocketError, nativeError As Integer, message As String, innerException As Exception)
+    parameters:
+    - id: error
+      type: System.Net.WebSockets.WebSocketError
+      description: The error from the WebSocketError enumeration.
+    - id: nativeError
+      type: System.Int32
+      description: The native error code for the exception.
+    - id: message
+      type: System.String
+      description: The description of the error.
+    - id: innerException
+      type: System.Exception
+      description: Indicates the previous exception that led to the current exception.
+- uid: System.Net.WebSockets.WebSocketException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException(String)
+  fullName: System.Net.WebSockets.WebSocketException.WebSocketException(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 101
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Creates an instance of the @'System.Net.WebSockets.WebSocketException' class.
+  syntax:
+    content: public WebSocketException(string message)
+    content.vb: Public Sub New(message As String)
+    parameters:
+    - id: message
+      type: System.String
+      description: The description of the error.
+- uid: System.Net.WebSockets.WebSocketException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException(String, Exception)
+  fullName: System.Net.WebSockets.WebSocketException.WebSocketException(System.String, System.Exception)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 108
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Creates an instance of the @'System.Net.WebSockets.WebSocketException' class.
+  syntax:
+    content: public WebSocketException(string message, Exception innerException)
+    content.vb: Public Sub New(message As String, innerException As Exception)
+    parameters:
+    - id: message
+      type: System.String
+      description: The description of the error.
+    - id: innerException
+      type: System.Exception
+      description: Indicates the previous exception that led to the current exception.
+- uid: System.Net.WebSockets.WebSocketException.ErrorCode
+  id: ErrorCode
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: ErrorCode
+  fullName: System.Net.WebSockets.WebSocketException.ErrorCode
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 115
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: The native error code for the exception that occurred.
+  syntax:
+    content: public int ErrorCode { get; }
+    content.vb: Public ReadOnly Property ErrorCode As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: Returns @'System.Int32'.
+- uid: System.Net.WebSockets.WebSocketException.WebSocketErrorCode
+  id: WebSocketErrorCode
+  parent: System.Net.WebSockets.WebSocketException
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketErrorCode
+  fullName: System.Net.WebSockets.WebSocketException.WebSocketErrorCode
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketException.cs
+    startLine: 123
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Returns a WebSocketError indicating the type of error that occurred.
+  syntax:
+    content: public WebSocketError WebSocketErrorCode { get; }
+    content.vb: Public ReadOnly Property WebSocketErrorCode As WebSocketError
+    parameters: []
+    return:
+      type: System.Net.WebSockets.WebSocketError
+      description: Returns @'System.Net.WebSockets.WebSocketError'.
+references:
+- uid: System.Net.WebSockets
+  isExternal: false
+  name: System.Net.WebSockets
+  fullName: System.Net.WebSockets
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Net.WebSockets.WebSocketError
+  parent: System.Net.WebSockets
+  isExternal: false
+  href: System.Net.WebSockets.WebSocketError.yml
+  name: WebSocketError
+  fullName: System.Net.WebSockets.WebSocketError
+  type: Enum
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

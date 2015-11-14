@@ -1,0 +1,471 @@
+items:
+- uid: System.Diagnostics.Tracing.EventCommandEventArgs
+  id: EventCommandEventArgs
+  parent: System.Diagnostics.Tracing
+  children:
+  - System.Diagnostics.Tracing.EventCommandEventArgs.Arguments
+  - System.Diagnostics.Tracing.EventCommandEventArgs.Command
+  - System.Diagnostics.Tracing.EventCommandEventArgs.DisableEvent(System.Int32)
+  - System.Diagnostics.Tracing.EventCommandEventArgs.EnableEvent(System.Int32)
+  href: System.Diagnostics.Tracing.EventCommandEventArgs.yml
+  name: EventCommandEventArgs
+  fullName: System.Diagnostics.Tracing.EventCommandEventArgs
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4494
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Provides the arguments for the @'System.Diagnostics.Tracing.EventSource.OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)' callback.
+  syntax:
+    content: 'public class EventCommandEventArgs : EventArgs'
+    content.vb: Public Class EventCommandEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Diagnostics.Tracing.EventCommandEventArgs.Command
+  id: Command
+  parent: System.Diagnostics.Tracing.EventCommandEventArgs
+  href: System.Diagnostics.Tracing.EventCommandEventArgs.yml
+  name: Command
+  fullName: System.Diagnostics.Tracing.EventCommandEventArgs.Command
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4499
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the command for the callback.
+  syntax:
+    content: public EventCommand Command { get; }
+    content.vb: Public ReadOnly Property Command As EventCommand
+    parameters: []
+    return:
+      type: System.Diagnostics.Tracing.EventCommand
+      description: The callback command.
+- uid: System.Diagnostics.Tracing.EventCommandEventArgs.Arguments
+  id: Arguments
+  parent: System.Diagnostics.Tracing.EventCommandEventArgs
+  href: System.Diagnostics.Tracing.EventCommandEventArgs.yml
+  name: Arguments
+  fullName: System.Diagnostics.Tracing.EventCommandEventArgs.Arguments
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4504
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the array of arguments for the callback.
+  syntax:
+    content: public IDictionary<string, string> Arguments { get; }
+    content.vb: Public ReadOnly Property Arguments As IDictionary(Of String, String)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+      description: An array of callback arguments.
+- uid: System.Diagnostics.Tracing.EventCommandEventArgs.EnableEvent(System.Int32)
+  id: EnableEvent(System.Int32)
+  parent: System.Diagnostics.Tracing.EventCommandEventArgs
+  href: System.Diagnostics.Tracing.EventCommandEventArgs.yml
+  name: EnableEvent(Int32)
+  fullName: System.Diagnostics.Tracing.EventCommandEventArgs.EnableEvent(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4511
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Enables the event that has the specified identifier.
+  syntax:
+    content: public bool EnableEvent(int eventId)
+    content.vb: Public Function EnableEvent(eventId As Integer) As Boolean
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The identifier of the event to enable.
+    return:
+      type: System.Boolean
+      description: true if *eventId* is in range; otherwise, false.
+- uid: System.Diagnostics.Tracing.EventCommandEventArgs.DisableEvent(System.Int32)
+  id: DisableEvent(System.Int32)
+  parent: System.Diagnostics.Tracing.EventCommandEventArgs
+  href: System.Diagnostics.Tracing.EventCommandEventArgs.yml
+  name: DisableEvent(Int32)
+  fullName: System.Diagnostics.Tracing.EventCommandEventArgs.DisableEvent(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 4523
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Disables the event that have the specified identifier.
+  syntax:
+    content: public bool DisableEvent(int eventId)
+    content.vb: Public Function DisableEvent(eventId As Integer) As Boolean
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The identifier of the event to disable.
+    return:
+      type: System.Boolean
+      description: true if *eventId* is in range; otherwise, false.
+references:
+- uid: System.Diagnostics.Tracing
+  isExternal: false
+  name: System.Diagnostics.Tracing
+  fullName: System.Diagnostics.Tracing
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Diagnostics.Tracing.EventCommand
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventCommand.yml
+  name: EventCommand
+  fullName: System.Diagnostics.Tracing.EventCommand
+  type: Enum
+  summary: Describes the pre-defined command (EventCommandEventArgs.Command property) that is passed to the OnEventCommand callback.
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, String>
+  name.vb: IDictionary(Of String, String)
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String>
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  name.vb: IDictionary(Of TKey, TValue)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

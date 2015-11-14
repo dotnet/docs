@@ -1,0 +1,339 @@
+items:
+- uid: System.Threading.WaitHandleExtensions
+  id: WaitHandleExtensions
+  parent: System.Threading
+  children:
+  - System.Threading.WaitHandleExtensions.GetSafeWaitHandle(System.Threading.WaitHandle)
+  - System.Threading.WaitHandleExtensions.SetSafeWaitHandle(System.Threading.WaitHandle,Microsoft.Win32.SafeHandles.SafeWaitHandle)
+  href: System.Threading.WaitHandleExtensions.yml
+  name: WaitHandleExtensions
+  fullName: System.Threading.WaitHandleExtensions
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Runtime.Handles/src/System/Threading/WaitHandleExtensions.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Runtime.Handles/src/System/Threading/WaitHandleExtensions.cs
+    startLine: 8
+  assemblies:
+  - System.Runtime.Handles.CoreCLR
+  namespace: System.Threading
+  summary: Provides convenience methods to for working with a safe handle for a wait handle.
+  syntax:
+    content: public class WaitHandleExtensions
+    content.vb: Public Class WaitHandleExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.WaitHandleExtensions.GetSafeWaitHandle(System.Threading.WaitHandle)
+  id: GetSafeWaitHandle(System.Threading.WaitHandle)
+  parent: System.Threading.WaitHandleExtensions
+  href: System.Threading.WaitHandleExtensions.yml
+  name: GetSafeWaitHandle(WaitHandle)
+  fullName: System.Threading.WaitHandleExtensions.GetSafeWaitHandle(System.Threading.WaitHandle)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Handles/src/System/Threading/WaitHandleExtensions.cs
+    startLine: 15
+  assemblies:
+  - System.Runtime.Handles.CoreCLR
+  namespace: System.Threading
+  summary: Gets the safe handle for a native operating system wait handle.
+  syntax:
+    content: public static SafeWaitHandle GetSafeWaitHandle(WaitHandle waitHandle)
+    content.vb: Public Shared Function GetSafeWaitHandle(waitHandle As WaitHandle) As SafeWaitHandle
+    parameters:
+    - id: waitHandle
+      type: System.Threading.WaitHandle
+      description: A native operating system handle.
+    return:
+      type: Microsoft.Win32.SafeHandles.SafeWaitHandle
+      description: The safe wait handle that wraps the native operating system wait handle.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*waitHandle* is null.'
+- uid: System.Threading.WaitHandleExtensions.SetSafeWaitHandle(System.Threading.WaitHandle,Microsoft.Win32.SafeHandles.SafeWaitHandle)
+  id: SetSafeWaitHandle(System.Threading.WaitHandle,Microsoft.Win32.SafeHandles.SafeWaitHandle)
+  parent: System.Threading.WaitHandleExtensions
+  href: System.Threading.WaitHandleExtensions.yml
+  name: SetSafeWaitHandle(WaitHandle, SafeWaitHandle)
+  fullName: System.Threading.WaitHandleExtensions.SetSafeWaitHandle(System.Threading.WaitHandle, Microsoft.Win32.SafeHandles.SafeWaitHandle)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Handles/src/System/Threading/WaitHandleExtensions.cs
+    startLine: 31
+  assemblies:
+  - System.Runtime.Handles.CoreCLR
+  namespace: System.Threading
+  summary: Sets a safe handle for a native operating system wait handle.
+  syntax:
+    content: public static void SetSafeWaitHandle(WaitHandle waitHandle, SafeWaitHandle value)
+    content.vb: Public Shared Sub SetSafeWaitHandle(waitHandle As WaitHandle, value As SafeWaitHandle)
+    parameters:
+    - id: waitHandle
+      type: System.Threading.WaitHandle
+      description: A wait handle that encapsulates an operating system-specific object that waits for exclusive access to a shared resource.
+    - id: value
+      type: Microsoft.Win32.SafeHandles.SafeWaitHandle
+      description: The safe handle to wrap the operating system handle.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*waitHandle* is null.'
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.InteropServices.SafeHandle
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  name: SafeHandle
+  fullName: System.Runtime.InteropServices.SafeHandle
+- uid: System.Threading.WaitHandle
+  parent: System.Threading
+  isExternal: true
+  name: WaitHandle
+  fullName: System.Threading.WaitHandle
+- uid: Microsoft.Win32.SafeHandles.SafeWaitHandle
+  parent: Microsoft.Win32.SafeHandles
+  isExternal: true
+  name: SafeWaitHandle
+  fullName: Microsoft.Win32.SafeHandles.SafeWaitHandle
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: Microsoft.Win32.SafeHandles
+  isExternal: false
+  name: Microsoft.Win32.SafeHandles
+  fullName: Microsoft.Win32.SafeHandles
+  type: Namespace

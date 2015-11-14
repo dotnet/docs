@@ -1,0 +1,442 @@
+items:
+- uid: System.Text.RegularExpressions.Match
+  id: Match
+  parent: System.Text.RegularExpressions
+  children:
+  - System.Text.RegularExpressions.Match.Empty
+  - System.Text.RegularExpressions.Match.Groups
+  - System.Text.RegularExpressions.Match.NextMatch
+  - System.Text.RegularExpressions.Match.Result(System.String)
+  href: System.Text.RegularExpressions.Match.yml
+  name: Match
+  fullName: System.Text.RegularExpressions.Match
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexMatch.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexMatch.cs
+    startLine: 35
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Represents the results from a single regular expression match.
+  syntax:
+    content: 'public class Match : Group'
+    content.vb: Public Class Match Inherits Group
+  inheritance:
+  - System.Object
+  - System.Text.RegularExpressions.Capture
+  - System.Text.RegularExpressions.Group
+  inheritedMembers:
+  - System.Text.RegularExpressions.Group.Success
+  - System.Text.RegularExpressions.Group.Captures
+  - System.Text.RegularExpressions.Capture.Index
+  - System.Text.RegularExpressions.Capture.Length
+  - System.Text.RegularExpressions.Capture.Value
+  - System.Text.RegularExpressions.Capture.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Text.RegularExpressions.Match.Empty
+  id: Empty
+  parent: System.Text.RegularExpressions.Match
+  href: System.Text.RegularExpressions.Match.yml
+  name: Empty
+  fullName: System.Text.RegularExpressions.Match.Empty
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexMatch.cs
+    startLine: 56
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Gets the empty group. All failed matches return this empty match.
+  syntax:
+    content: public static Match Empty { get; }
+    content.vb: Public Shared ReadOnly Property Empty As Match
+    parameters: []
+    return:
+      type: System.Text.RegularExpressions.Match
+      description: An empty match.
+- uid: System.Text.RegularExpressions.Match.Groups
+  id: Groups
+  parent: System.Text.RegularExpressions.Match
+  href: System.Text.RegularExpressions.Match.yml
+  name: Groups
+  fullName: System.Text.RegularExpressions.Match.Groups
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexMatch.cs
+    startLine: 102
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Gets a collection of groups matched by the regular expression.
+  syntax:
+    content: public virtual GroupCollection Groups { get; }
+    content.vb: Public Overridable ReadOnly Property Groups As GroupCollection
+    parameters: []
+    return:
+      type: System.Text.RegularExpressions.GroupCollection
+      description: The character groups matched by the pattern.
+- uid: System.Text.RegularExpressions.Match.NextMatch
+  id: NextMatch
+  parent: System.Text.RegularExpressions.Match
+  href: System.Text.RegularExpressions.Match.yml
+  name: NextMatch()
+  fullName: System.Text.RegularExpressions.Match.NextMatch()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexMatch.cs
+    startLine: 118
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Returns a new @'System.Text.RegularExpressions.Match' object with the results for the next match, starting at the position at which the last match ended (at the character after the last matched character).
+  syntax:
+    content: public Match NextMatch()
+    content.vb: Public Function NextMatch As Match
+    return:
+      type: System.Text.RegularExpressions.Match
+      description: The next regular expression match.
+  exceptions:
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred.
+- uid: System.Text.RegularExpressions.Match.Result(System.String)
+  id: Result(System.String)
+  parent: System.Text.RegularExpressions.Match
+  href: System.Text.RegularExpressions.Match.yml
+  name: Result(String)
+  fullName: System.Text.RegularExpressions.Match.Result(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexMatch.cs
+    startLine: 131
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Returns the expansion of the specified replacement pattern.
+  syntax:
+    content: public virtual string Result(string replacement)
+    content.vb: Public Overridable Function Result(replacement As String) As String
+    parameters:
+    - id: replacement
+      type: System.String
+      description: The replacement pattern to use.
+    return:
+      type: System.String
+      description: The expanded version of the *replacement* parameter.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*replacement* is null.'
+  - type: System.NotSupportedException
+    description: Expansion is not allowed for this pattern.
+references:
+- uid: System.Text.RegularExpressions
+  isExternal: false
+  name: System.Text.RegularExpressions
+  fullName: System.Text.RegularExpressions
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Text.RegularExpressions.Capture
+  isExternal: false
+  href: System.Text.RegularExpressions.Capture.yml
+  name: Capture
+  fullName: System.Text.RegularExpressions.Capture
+  type: Class
+  summary: >-
+    Represents the results from a single subexpression capture. The object represents
+
+    one substring for a single successful capture.
+- uid: System.Text.RegularExpressions.Group
+  isExternal: false
+  href: System.Text.RegularExpressions.Group.yml
+  name: Group
+  fullName: System.Text.RegularExpressions.Group
+  type: Class
+  summary: >-
+    Represents the results from a single capturing group. A capturing group can
+
+    capture zero, one, or more strings in a single match because of quantifiers, so
+
+    Group supplies a collection of Capture objects.
+- uid: System.Text.RegularExpressions.Group.Success
+  parent: System.Text.RegularExpressions.Group
+  isExternal: false
+  href: System.Text.RegularExpressions.Group.yml
+  name: Success
+  fullName: System.Text.RegularExpressions.Group.Success
+- uid: System.Text.RegularExpressions.Group.Captures
+  parent: System.Text.RegularExpressions.Group
+  isExternal: false
+  href: System.Text.RegularExpressions.Group.yml
+  name: Captures
+  fullName: System.Text.RegularExpressions.Group.Captures
+- uid: System.Text.RegularExpressions.Capture.Index
+  parent: System.Text.RegularExpressions.Capture
+  isExternal: false
+  href: System.Text.RegularExpressions.Capture.yml
+  name: Index
+  fullName: System.Text.RegularExpressions.Capture.Index
+- uid: System.Text.RegularExpressions.Capture.Length
+  parent: System.Text.RegularExpressions.Capture
+  isExternal: false
+  href: System.Text.RegularExpressions.Capture.yml
+  name: Length
+  fullName: System.Text.RegularExpressions.Capture.Length
+- uid: System.Text.RegularExpressions.Capture.Value
+  parent: System.Text.RegularExpressions.Capture
+  isExternal: false
+  href: System.Text.RegularExpressions.Capture.yml
+  name: Value
+  fullName: System.Text.RegularExpressions.Capture.Value
+- uid: System.Text.RegularExpressions.Capture.ToString
+  parent: System.Text.RegularExpressions.Capture
+  isExternal: false
+  href: System.Text.RegularExpressions.Capture.yml
+  name: ToString()
+  fullName: System.Text.RegularExpressions.Capture.ToString()
+  spec.csharp:
+  - uid: System.Text.RegularExpressions.Capture.ToString
+    name: ToString
+    fullName: System.Text.RegularExpressions.Capture.ToString
+    href: System.Text.RegularExpressions.Capture.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.RegularExpressions.Capture.ToString
+    name: ToString
+    fullName: System.Text.RegularExpressions.Capture.ToString
+    href: System.Text.RegularExpressions.Capture.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Text.RegularExpressions.Match
+  parent: System.Text.RegularExpressions
+  isExternal: false
+  href: System.Text.RegularExpressions.Match.yml
+  name: Match
+  fullName: System.Text.RegularExpressions.Match
+  type: Class
+  summary: Represents the results from a single regular expression match.
+- uid: System.Text.RegularExpressions.GroupCollection
+  isExternal: false
+  href: System.Text.RegularExpressions.GroupCollection.yml
+  name: GroupCollection
+  fullName: System.Text.RegularExpressions.GroupCollection
+  type: Class
+  summary: >-
+    Represents a sequence of capture substrings. The object is used
+
+    to return the set of captures done by a single capturing group.
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

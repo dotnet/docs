@@ -1,0 +1,3001 @@
+items:
+- uid: System.Text.UTF32Encoding
+  id: UTF32Encoding
+  parent: System.Text
+  children:
+  - System.Text.UTF32Encoding.#ctor
+  - System.Text.UTF32Encoding.#ctor(System.Boolean,System.Boolean)
+  - System.Text.UTF32Encoding.#ctor(System.Boolean,System.Boolean,System.Boolean)
+  - System.Text.UTF32Encoding.Equals(System.Object)
+  - System.Text.UTF32Encoding.GetByteCount(System.Char*,System.Int32)
+  - System.Text.UTF32Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)
+  - System.Text.UTF32Encoding.GetByteCount(System.String)
+  - System.Text.UTF32Encoding.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32)
+  - System.Text.UTF32Encoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  - System.Text.UTF32Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)
+  - System.Text.UTF32Encoding.GetCharCount(System.Byte*,System.Int32)
+  - System.Text.UTF32Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)
+  - System.Text.UTF32Encoding.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32)
+  - System.Text.UTF32Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)
+  - System.Text.UTF32Encoding.GetDecoder
+  - System.Text.UTF32Encoding.GetEncoder
+  - System.Text.UTF32Encoding.GetHashCode
+  - System.Text.UTF32Encoding.GetMaxByteCount(System.Int32)
+  - System.Text.UTF32Encoding.GetMaxCharCount(System.Int32)
+  - System.Text.UTF32Encoding.GetPreamble
+  - System.Text.UTF32Encoding.GetString(System.Byte[],System.Int32,System.Int32)
+  href: System.Text.UTF32Encoding.yml
+  name: UTF32Encoding
+  fullName: System.Text.UTF32Encoding
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Represents a UTF-32 encoding of Unicode characters.
+  syntax:
+    content: 'public sealed class UTF32Encoding : Encoding, ICloneable'
+    content.vb: Public NotInheritable Class UTF32Encoding Inherits Encoding Implements ICloneable
+  inheritance:
+  - System.Object
+  - System.Text.Encoding
+  implements:
+  - System.ICloneable
+  inheritedMembers:
+  - System.Text.Encoding.Convert(System.Text.Encoding,System.Text.Encoding,System.Byte[])
+  - System.Text.Encoding.Convert(System.Text.Encoding,System.Text.Encoding,System.Byte[],System.Int32,System.Int32)
+  - System.Text.Encoding.RegisterProvider(System.Text.EncodingProvider)
+  - System.Text.Encoding.GetEncoding(System.Int32)
+  - System.Text.Encoding.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)
+  - System.Text.Encoding.GetEncoding(System.String)
+  - System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)
+  - System.Text.Encoding.GetEncodings
+  - System.Text.Encoding.BodyName
+  - System.Text.Encoding.EncodingName
+  - System.Text.Encoding.HeaderName
+  - System.Text.Encoding.WebName
+  - System.Text.Encoding.WindowsCodePage
+  - System.Text.Encoding.IsBrowserDisplay
+  - System.Text.Encoding.IsBrowserSave
+  - System.Text.Encoding.IsMailNewsDisplay
+  - System.Text.Encoding.IsMailNewsSave
+  - System.Text.Encoding.IsSingleByte
+  - System.Text.Encoding.EncoderFallback
+  - System.Text.Encoding.DecoderFallback
+  - System.Text.Encoding.Clone
+  - System.Text.Encoding.IsReadOnly
+  - System.Text.Encoding.ASCII
+  - System.Text.Encoding.GetByteCount(System.Char[])
+  - System.Text.Encoding.GetBytes(System.Char[])
+  - System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32)
+  - System.Text.Encoding.GetBytes(System.String)
+  - System.Text.Encoding.GetCharCount(System.Byte[])
+  - System.Text.Encoding.GetChars(System.Byte[])
+  - System.Text.Encoding.GetChars(System.Byte[],System.Int32,System.Int32)
+  - System.Text.Encoding.GetString(System.Byte*,System.Int32)
+  - System.Text.Encoding.CodePage
+  - System.Text.Encoding.IsAlwaysNormalized
+  - System.Text.Encoding.IsAlwaysNormalized(System.Text.NormalizationForm)
+  - System.Text.Encoding.Default
+  - System.Text.Encoding.GetString(System.Byte[])
+  - System.Text.Encoding.Unicode
+  - System.Text.Encoding.BigEndianUnicode
+  - System.Text.Encoding.UTF7
+  - System.Text.Encoding.UTF8
+  - System.Text.Encoding.UTF32
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Text.UTF32Encoding.#ctor
+  id: '#ctor'
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: UTF32Encoding()
+  fullName: System.Text.UTF32Encoding.UTF32Encoding()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Initializes a new instance of the @'System.Text.UTF32Encoding' class.
+  syntax:
+    content: public UTF32Encoding()
+    content.vb: Public Sub New
+- uid: System.Text.UTF32Encoding.#ctor(System.Boolean,System.Boolean)
+  id: '#ctor(System.Boolean,System.Boolean)'
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: UTF32Encoding(Boolean, Boolean)
+  fullName: System.Text.UTF32Encoding.UTF32Encoding(System.Boolean, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Initializes a new instance of the @'System.Text.UTF32Encoding' class. Parameters specify whether to use the big endian byte order and whether the @'System.Text.UTF32Encoding.GetPreamble' method returns a Unicode Unicode byte order mark.
+  syntax:
+    content: public UTF32Encoding(bool bigEndian, bool byteOrderMark)
+    content.vb: Public Sub New(bigEndian As Boolean, byteOrderMark As Boolean)
+    parameters:
+    - id: bigEndian
+      type: System.Boolean
+      description: true to use the big endian byte order (most significant byte first), or false to use the little endian byte order (least significant byte first).
+    - id: byteOrderMark
+      type: System.Boolean
+      description: true to specify that a Unicode byte order mark is provided; otherwise, false.
+- uid: System.Text.UTF32Encoding.#ctor(System.Boolean,System.Boolean,System.Boolean)
+  id: '#ctor(System.Boolean,System.Boolean,System.Boolean)'
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: UTF32Encoding(Boolean, Boolean, Boolean)
+  fullName: System.Text.UTF32Encoding.UTF32Encoding(System.Boolean, System.Boolean, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 54
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Initializes a new instance of the @'System.Text.UTF32Encoding' class. Parameters specify whether to use the big endian byte order, whether to provide a Unicode byte order mark, and whether to throw an exception when an invalid encoding is detected.
+  syntax:
+    content: public UTF32Encoding(bool bigEndian, bool byteOrderMark, bool throwOnInvalidCharacters)
+    content.vb: Public Sub New(bigEndian As Boolean, byteOrderMark As Boolean, throwOnInvalidCharacters As Boolean)
+    parameters:
+    - id: bigEndian
+      type: System.Boolean
+      description: true to use the big endian byte order (most significant byte first), or false to use the little endian byte order (least significant byte first).
+    - id: byteOrderMark
+      type: System.Boolean
+      description: true to specify that a Unicode byte order mark is provided; otherwise, false.
+    - id: throwOnInvalidCharacters
+      type: System.Boolean
+      description: true to specify that an exception should be thrown when an invalid encoding is detected; otherwise, false.
+- uid: System.Text.UTF32Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)
+  id: GetByteCount(System.Char[],System.Int32,System.Int32)
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetByteCount(Char[], Int32, Int32)
+  name.vb: GetByteCount(Char(), Int32, Int32)
+  fullName: System.Text.UTF32Encoding.GetByteCount(System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.Text.UTF32Encoding.GetByteCount(System.Char(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 97
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Calculates the number of bytes produced by encoding a set of characters from the specified character array.
+  syntax:
+    content: public override int GetByteCount(char[] chars, int index, int count)
+    content.vb: Public Overrides Function GetByteCount(chars As Char(), index As Integer, count As Integer) As Integer
+    parameters:
+    - id: chars
+      type: System.Char[]
+      description: The character array containing the set of characters to encode.
+    - id: index
+      type: System.Int32
+      description: The index of the first character to encode.
+    - id: count
+      type: System.Int32
+      description: The number of characters to encode.
+    return:
+      type: System.Int32
+      description: The number of bytes produced by encoding the specified characters.
+  overridden: System.Text.Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*chars* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* or *count* is less than zero.-or- *index* and *count* do not denote a valid range in *chars*.-or- The resulting number of bytes is greater than the maximum number that can be returned as an integer.'
+  - type: System.ArgumentException
+    description: Error detection is enabled, and *chars* contains an invalid sequence of characters.
+  - type: System.Text.EncoderFallbackException
+    description: A fallback occurred (see Character Encoding in the .NET Framework for complete explanation)-and-@'System.Text.Encoding.EncoderFallback' is set to @'System.Text.EncoderExceptionFallback'.
+- uid: System.Text.UTF32Encoding.GetByteCount(System.String)
+  id: GetByteCount(System.String)
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetByteCount(String)
+  fullName: System.Text.UTF32Encoding.GetByteCount(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 128
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Calculates the number of bytes produced by encoding the characters in the specified @'System.String'.
+  syntax:
+    content: public override int GetByteCount(string s)
+    content.vb: Public Overrides Function GetByteCount(s As String) As Integer
+    parameters:
+    - id: s
+      type: System.String
+      description: The @'System.String' containing the set of characters to encode.
+    return:
+      type: System.Int32
+      description: The number of bytes produced by encoding the specified characters.
+  overridden: System.Text.Encoding.GetByteCount(System.String)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: The resulting number of bytes is greater than the maximum number that can be returned as an integer.
+  - type: System.ArgumentException
+    description: Error detection is enabled, and *s* contains an invalid sequence of characters.
+  - type: System.Text.EncoderFallbackException
+    description: A fallback occurred (see Character Encoding in the .NET Framework for complete explanation)-and-@'System.Text.Encoding.EncoderFallback' is set to @'System.Text.EncoderExceptionFallback'.
+- uid: System.Text.UTF32Encoding.GetByteCount(System.Char*,System.Int32)
+  id: GetByteCount(System.Char*,System.Int32)
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetByteCount(Char*, Int32)
+  fullName: System.Text.UTF32Encoding.GetByteCount(System.Char*, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 144
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Calculates the number of bytes produced by encoding a set of characters starting at the specified character pointer.
+  syntax:
+    content: public override int GetByteCount(char *chars, int count)
+    content.vb: Public Overrides Function GetByteCount(chars As Char *, count As Integer) As Integer
+    parameters:
+    - id: chars
+      type: System.Char*
+      description: A pointer to the first character to encode.
+    - id: count
+      type: System.Int32
+      description: The number of characters to encode.
+    return:
+      type: System.Int32
+      description: The number of bytes produced by encoding the specified characters.
+  overridden: System.Text.Encoding.GetByteCount(System.Char*,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*chars* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is less than zero.-or- The resulting number of bytes is greater than the maximum number that can be returned as an integer.'
+  - type: System.ArgumentException
+    description: Error detection is enabled, and *chars* contains an invalid sequence of characters.
+  - type: System.Text.EncoderFallbackException
+    description: A fallback occurred (see Character Encoding in the .NET Framework for complete explanation)-and-@'System.Text.Encoding.EncoderFallback' is set to @'System.Text.EncoderExceptionFallback'.
+- uid: System.Text.UTF32Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)
+  id: GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetBytes(String, Int32, Int32, Byte[], Int32)
+  name.vb: GetBytes(String, Int32, Int32, Byte(), Int32)
+  fullName: System.Text.UTF32Encoding.GetBytes(System.String, System.Int32, System.Int32, System.Byte[], System.Int32)
+  fullName.vb: System.Text.UTF32Encoding.GetBytes(System.String, System.Int32, System.Int32, System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 167
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Encodes a set of characters from the specified @'System.String' into the specified byte array.
+  syntax:
+    content: public override int GetBytes(string s, int charIndex, int charCount, byte[] bytes, int byteIndex)
+    content.vb: Public Overrides Function GetBytes(s As String, charIndex As Integer, charCount As Integer, bytes As Byte(), byteIndex As Integer) As Integer
+    parameters:
+    - id: s
+      type: System.String
+      description: The @'System.String' containing the set of characters to encode.
+    - id: charIndex
+      type: System.Int32
+      description: The index of the first character to encode.
+    - id: charCount
+      type: System.Int32
+      description: The number of characters to encode.
+    - id: bytes
+      type: System.Byte[]
+      description: The byte array to contain the resulting sequence of bytes.
+    - id: byteIndex
+      type: System.Int32
+      description: The index at which to start writing the resulting sequence of bytes.
+    return:
+      type: System.Int32
+      description: The actual number of bytes written into *bytes*.
+  overridden: System.Text.Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.-or- *bytes* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*charIndex* or *charCount* or *byteIndex* is less than zero.-or- *charIndex* and *charCount* do not denote a valid range in *chars*.-or- *byteIndex* is not a valid index in *bytes*.'
+  - type: System.ArgumentException
+    description: Error detection is enabled, and *s* contains an invalid sequence of characters.-or- *bytes* does not have enough capacity from *byteIndex* to the end of the array to accommodate the resulting bytes.
+  - type: System.Text.EncoderFallbackException
+    description: A fallback occurred (see Character Encoding in the .NET Framework for complete explanation)-and-@'System.Text.Encoding.EncoderFallback' is set to @'System.Text.EncoderExceptionFallback'.
+- uid: System.Text.UTF32Encoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  id: GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetBytes(Char[], Int32, Int32, Byte[], Int32)
+  name.vb: GetBytes(Char(), Int32, Int32, Byte(), Int32)
+  fullName: System.Text.UTF32Encoding.GetBytes(System.Char[], System.Int32, System.Int32, System.Byte[], System.Int32)
+  fullName.vb: System.Text.UTF32Encoding.GetBytes(System.Char(), System.Int32, System.Int32, System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 214
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Encodes a set of characters from the specified character array into the specified byte array.
+  syntax:
+    content: public override int GetBytes(char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex)
+    content.vb: Public Overrides Function GetBytes(chars As Char(), charIndex As Integer, charCount As Integer, bytes As Byte(), byteIndex As Integer) As Integer
+    parameters:
+    - id: chars
+      type: System.Char[]
+      description: The character array containing the set of characters to encode.
+    - id: charIndex
+      type: System.Int32
+      description: The index of the first character to encode.
+    - id: charCount
+      type: System.Int32
+      description: The number of characters to encode.
+    - id: bytes
+      type: System.Byte[]
+      description: The byte array to contain the resulting sequence of bytes.
+    - id: byteIndex
+      type: System.Int32
+      description: The index at which to start writing the resulting sequence of bytes.
+    return:
+      type: System.Int32
+      description: The actual number of bytes written into *bytes*.
+  overridden: System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*chars* is null.-or- *bytes* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*charIndex* or *charCount* or *byteIndex* is less than zero.-or- *charIndex* and *charCount* do not denote a valid range in *chars*.-or- *byteIndex* is not a valid index in *bytes*.'
+  - type: System.ArgumentException
+    description: Error detection is enabled, and *chars* contains an invalid sequence of characters.-or- *bytes* does not have enough capacity from *byteIndex* to the end of the array to accommodate the resulting bytes.
+  - type: System.Text.EncoderFallbackException
+    description: A fallback occurred (see Character Encoding in the .NET Framework for complete explanation)-and-@'System.Text.Encoding.EncoderFallback' is set to @'System.Text.EncoderExceptionFallback'.
+- uid: System.Text.UTF32Encoding.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32)
+  id: GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32)
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetBytes(Char*, Int32, Byte*, Int32)
+  fullName: System.Text.UTF32Encoding.GetBytes(System.Char*, System.Int32, System.Byte*, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 258
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Encodes a set of characters starting at the specified character pointer into a sequence of bytes that are stored starting at the specified byte pointer.
+  syntax:
+    content: public override int GetBytes(char *chars, int charCount, byte *bytes, int byteCount)
+    content.vb: Public Overrides Function GetBytes(chars As Char *, charCount As Integer, bytes As Byte *, byteCount As Integer) As Integer
+    parameters:
+    - id: chars
+      type: System.Char*
+      description: A pointer to the first character to encode.
+    - id: charCount
+      type: System.Int32
+      description: The number of characters to encode.
+    - id: bytes
+      type: System.Byte*
+      description: A pointer to the location at which to start writing the resulting sequence of bytes.
+    - id: byteCount
+      type: System.Int32
+      description: The maximum number of bytes to write.
+    return:
+      type: System.Int32
+      description: The actual number of bytes written at the location indicated by the *bytes* parameter.
+  overridden: System.Text.Encoding.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*chars* is null.-or- *bytes* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*charCount* or *byteCount* is less than zero.'
+  - type: System.ArgumentException
+    description: Error detection is enabled, and *chars* contains an invalid sequence of characters.-or- *byteCount* is less than the resulting number of bytes.
+  - type: System.Text.EncoderFallbackException
+    description: A fallback occurred (see Character Encoding in the .NET Framework for complete explanation)-and-@'System.Text.Encoding.EncoderFallback' is set to @'System.Text.EncoderExceptionFallback'.
+- uid: System.Text.UTF32Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)
+  id: GetCharCount(System.Byte[],System.Int32,System.Int32)
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetCharCount(Byte[], Int32, Int32)
+  name.vb: GetCharCount(Byte(), Int32, Int32)
+  fullName: System.Text.UTF32Encoding.GetCharCount(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.Text.UTF32Encoding.GetCharCount(System.Byte(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 283
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Calculates the number of characters produced by decoding a sequence of bytes from the specified byte array.
+  syntax:
+    content: public override int GetCharCount(byte[] bytes, int index, int count)
+    content.vb: Public Overrides Function GetCharCount(bytes As Byte(), index As Integer, count As Integer) As Integer
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+      description: The byte array containing the sequence of bytes to decode.
+    - id: index
+      type: System.Int32
+      description: The index of the first byte to decode.
+    - id: count
+      type: System.Int32
+      description: The number of bytes to decode.
+    return:
+      type: System.Int32
+      description: The number of characters produced by decoding the specified sequence of bytes.
+  overridden: System.Text.Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*bytes* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* or *count* is less than zero.-or- *index* and *count* do not denote a valid range in *bytes*.-or- The resulting number of bytes is greater than the maximum number that can be returned as an integer.'
+  - type: System.ArgumentException
+    description: Error detection is enabled, and *bytes* contains an invalid sequence of bytes.
+  - type: System.Text.DecoderFallbackException
+    description: A fallback occurred (see Character Encoding in the .NET Framework for complete explanation)-and-@'System.Text.Encoding.DecoderFallback' is set to @'System.Text.DecoderExceptionFallback'.
+- uid: System.Text.UTF32Encoding.GetCharCount(System.Byte*,System.Int32)
+  id: GetCharCount(System.Byte*,System.Int32)
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetCharCount(Byte*, Int32)
+  fullName: System.Text.UTF32Encoding.GetCharCount(System.Byte*, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 313
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Calculates the number of characters produced by decoding a sequence of bytes starting at the specified byte pointer.
+  syntax:
+    content: public override int GetCharCount(byte *bytes, int count)
+    content.vb: Public Overrides Function GetCharCount(bytes As Byte *, count As Integer) As Integer
+    parameters:
+    - id: bytes
+      type: System.Byte*
+      description: A pointer to the first byte to decode.
+    - id: count
+      type: System.Int32
+      description: The number of bytes to decode.
+    return:
+      type: System.Int32
+      description: The number of characters produced by decoding the specified sequence of bytes.
+  overridden: System.Text.Encoding.GetCharCount(System.Byte*,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*bytes* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is less than zero.-or- The resulting number of bytes is greater than the maximum number that can be returned as an integer.'
+  - type: System.ArgumentException
+    description: Error detection is enabled, and *bytes* contains an invalid sequence of bytes.
+  - type: System.Text.DecoderFallbackException
+    description: A fallback occurred (see Character Encoding in the .NET Framework for complete explanation)-and-@'System.Text.Encoding.DecoderFallback' is set to @'System.Text.DecoderExceptionFallback'.
+- uid: System.Text.UTF32Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)
+  id: GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetChars(Byte[], Int32, Int32, Char[], Int32)
+  name.vb: GetChars(Byte(), Int32, Int32, Char(), Int32)
+  fullName: System.Text.UTF32Encoding.GetChars(System.Byte[], System.Int32, System.Int32, System.Char[], System.Int32)
+  fullName.vb: System.Text.UTF32Encoding.GetChars(System.Byte(), System.Int32, System.Int32, System.Char(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 335
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Decodes a sequence of bytes from the specified byte array into the specified character array.
+  syntax:
+    content: public override int GetChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex)
+    content.vb: Public Overrides Function GetChars(bytes As Byte(), byteIndex As Integer, byteCount As Integer, chars As Char(), charIndex As Integer) As Integer
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+      description: The byte array containing the sequence of bytes to decode.
+    - id: byteIndex
+      type: System.Int32
+      description: The index of the first byte to decode.
+    - id: byteCount
+      type: System.Int32
+      description: The number of bytes to decode.
+    - id: chars
+      type: System.Char[]
+      description: The character array to contain the resulting set of characters.
+    - id: charIndex
+      type: System.Int32
+      description: The index at which to start writing the resulting set of characters.
+    return:
+      type: System.Int32
+      description: The actual number of characters written into *chars*.
+  overridden: System.Text.Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*bytes* is null.-or- *chars* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*byteIndex* or *byteCount* or *charIndex* is less than zero.-or- *byteindex* and *byteCount* do not denote a valid range in *bytes*.-or- *charIndex* is not a valid index in *chars*.'
+  - type: System.ArgumentException
+    description: Error detection is enabled, and *bytes* contains an invalid sequence of bytes.-or- *chars* does not have enough capacity from *charIndex* to the end of the array to accommodate the resulting characters.
+  - type: System.Text.DecoderFallbackException
+    description: A fallback occurred (see Character Encoding in the .NET Framework for complete explanation)-and-@'System.Text.Encoding.DecoderFallback' is set to @'System.Text.DecoderExceptionFallback'.
+- uid: System.Text.UTF32Encoding.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32)
+  id: GetChars(System.Byte*,System.Int32,System.Char*,System.Int32)
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetChars(Byte*, Int32, Char*, Int32)
+  fullName: System.Text.UTF32Encoding.GetChars(System.Byte*, System.Int32, System.Char*, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 379
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Decodes a sequence of bytes starting at the specified byte pointer into a set of characters that are stored starting at the specified character pointer.
+  syntax:
+    content: public override int GetChars(byte *bytes, int byteCount, char *chars, int charCount)
+    content.vb: Public Overrides Function GetChars(bytes As Byte *, byteCount As Integer, chars As Char *, charCount As Integer) As Integer
+    parameters:
+    - id: bytes
+      type: System.Byte*
+      description: A pointer to the first byte to decode.
+    - id: byteCount
+      type: System.Int32
+      description: The number of bytes to decode.
+    - id: chars
+      type: System.Char*
+      description: A pointer to the location at which to start writing the resulting set of characters.
+    - id: charCount
+      type: System.Int32
+      description: The maximum number of characters to write.
+    return:
+      type: System.Int32
+      description: The actual number of characters written at the location indicated by *chars*.
+  overridden: System.Text.Encoding.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*bytes* is null.-or- *chars* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*byteCount* or *charCount* is less than zero.'
+  - type: System.ArgumentException
+    description: Error detection is enabled, and *bytes* contains an invalid sequence of bytes.-or- *charCount* is less than the resulting number of characters.
+  - type: System.Text.DecoderFallbackException
+    description: A fallback occurred (see Character Encoding in the .NET Framework for complete explanation)-and-@'System.Text.Encoding.DecoderFallback' is set to @'System.Text.DecoderExceptionFallback'.
+- uid: System.Text.UTF32Encoding.GetString(System.Byte[],System.Int32,System.Int32)
+  id: GetString(System.Byte[],System.Int32,System.Int32)
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetString(Byte[], Int32, Int32)
+  name.vb: GetString(Byte(), Int32, Int32)
+  fullName: System.Text.UTF32Encoding.GetString(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.Text.UTF32Encoding.GetString(System.Byte(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 404
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Decodes a range of bytes from a byte array into a string.
+  syntax:
+    content: public override string GetString(byte[] bytes, int index, int count)
+    content.vb: Public Overrides Function GetString(bytes As Byte(), index As Integer, count As Integer) As String
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+      description: The byte array containing the sequence of bytes to decode.
+    - id: index
+      type: System.Int32
+      description: The index of the first byte to decode.
+    - id: count
+      type: System.Int32
+      description: The number of bytes to decode.
+    return:
+      type: System.String
+      description: A string that contains the results of decoding the specified sequence of bytes.
+  overridden: System.Text.Encoding.GetString(System.Byte[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*bytes* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* or *count* is less than zero.-or- *index* and *count* do not denote a valid range in *bytes*.'
+  - type: System.ArgumentException
+    description: Error detection is enabled, and *bytes* contains an invalid sequence of bytes.
+  - type: System.Text.DecoderFallbackException
+    description: A fallback occurred (see Character Encoding in the .NET Framework for a complete explanation)-and-@'System.Text.Encoding.DecoderFallback' is set to @'System.Text.DecoderExceptionFallback'.
+- uid: System.Text.UTF32Encoding.GetDecoder
+  id: GetDecoder
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetDecoder()
+  fullName: System.Text.UTF32Encoding.GetDecoder()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 1121
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Obtains a decoder that converts a UTF-32 encoded sequence of bytes into a sequence of Unicode characters.
+  syntax:
+    content: public override Decoder GetDecoder()
+    content.vb: Public Overrides Function GetDecoder As Decoder
+    return:
+      type: System.Text.Decoder
+      description: A @'System.Text.Decoder' that converts a UTF-32 encoded sequence of bytes into a sequence of Unicode characters.
+  overridden: System.Text.Encoding.GetDecoder
+- uid: System.Text.UTF32Encoding.GetEncoder
+  id: GetEncoder
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetEncoder()
+  fullName: System.Text.UTF32Encoding.GetEncoder()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 1127
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Obtains an encoder that converts a sequence of Unicode characters into a UTF-32 encoded sequence of bytes.
+  syntax:
+    content: public override Encoder GetEncoder()
+    content.vb: Public Overrides Function GetEncoder As Encoder
+    return:
+      type: System.Text.Encoder
+      description: A @'System.Text.Encoder' that converts a sequence of Unicode characters into a UTF-32 encoded sequence of bytes.
+  overridden: System.Text.Encoding.GetEncoder
+- uid: System.Text.UTF32Encoding.GetMaxByteCount(System.Int32)
+  id: GetMaxByteCount(System.Int32)
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetMaxByteCount(Int32)
+  fullName: System.Text.UTF32Encoding.GetMaxByteCount(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 1133
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Calculates the maximum number of bytes produced by encoding the specified number of characters.
+  syntax:
+    content: public override int GetMaxByteCount(int charCount)
+    content.vb: Public Overrides Function GetMaxByteCount(charCount As Integer) As Integer
+    parameters:
+    - id: charCount
+      type: System.Int32
+      description: The number of characters to encode.
+    return:
+      type: System.Int32
+      description: The maximum number of bytes produced by encoding the specified number of characters.
+  overridden: System.Text.Encoding.GetMaxByteCount(System.Int32)
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*charCount* is less than zero.-or- The resulting number of bytes is greater than the maximum number that can be returned as an integer.'
+  - type: System.Text.EncoderFallbackException
+    description: A fallback occurred (see Character Encoding in the .NET Framework for complete explanation)-and-@'System.Text.Encoding.EncoderFallback' is set to @'System.Text.EncoderExceptionFallback'.
+- uid: System.Text.UTF32Encoding.GetMaxCharCount(System.Int32)
+  id: GetMaxCharCount(System.Int32)
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetMaxCharCount(Int32)
+  fullName: System.Text.UTF32Encoding.GetMaxCharCount(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 1156
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Calculates the maximum number of characters produced by decoding the specified number of bytes.
+  syntax:
+    content: public override int GetMaxCharCount(int byteCount)
+    content.vb: Public Overrides Function GetMaxCharCount(byteCount As Integer) As Integer
+    parameters:
+    - id: byteCount
+      type: System.Int32
+      description: The number of bytes to decode.
+    return:
+      type: System.Int32
+      description: The maximum number of characters produced by decoding the specified number of bytes.
+  overridden: System.Text.Encoding.GetMaxCharCount(System.Int32)
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*byteCount* is less than zero.-or- The resulting number of bytes is greater than the maximum number that can be returned as an integer.'
+  - type: System.Text.DecoderFallbackException
+    description: A fallback occurred (see Character Encoding in the .NET Framework for complete explanation)-and-@'System.Text.Encoding.DecoderFallback' is set to @'System.Text.DecoderExceptionFallback'.
+- uid: System.Text.UTF32Encoding.GetPreamble
+  id: GetPreamble
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetPreamble()
+  fullName: System.Text.UTF32Encoding.GetPreamble()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 1186
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Returns a Unicode byte order mark encoded in UTF-32 format, if the @'System.Text.UTF32Encoding' object is configured to supply one.
+  syntax:
+    content: public override byte[] GetPreamble()
+    content.vb: Public Overrides Function GetPreamble As Byte()
+    return:
+      type: System.Byte[]
+      description: A byte array containing the Unicode byte order mark, if the @'System.Text.UTF32Encoding' object is configured to supply one. Otherwise, this method returns a zero-length byte array.
+  overridden: System.Text.Encoding.GetPreamble
+- uid: System.Text.UTF32Encoding.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: Equals(Object)
+  fullName: System.Text.UTF32Encoding.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 1205
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Determines whether the specified @'System.Object' is equal to the current @'System.Text.UTF32Encoding' object.
+  syntax:
+    content: public override bool Equals(object value)
+    content.vb: Public Overrides Function Equals(value As Object) As Boolean
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to compare with the current object.
+    return:
+      type: System.Boolean
+      description: true if *value* is an instance of @'System.Text.UTF32Encoding' and is equal to the current object; otherwise, false.
+  overridden: System.Text.Encoding.Equals(System.Object)
+- uid: System.Text.UTF32Encoding.GetHashCode
+  id: GetHashCode
+  parent: System.Text.UTF32Encoding
+  href: System.Text.UTF32Encoding.yml
+  name: GetHashCode()
+  fullName: System.Text.UTF32Encoding.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/UTF32Encoding.cs
+    startLine: 1220
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Returns the hash code for the current instance.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: The hash code for the current @'System.Text.UTF32Encoding' object.
+  overridden: System.Text.Encoding.GetHashCode
+references:
+- uid: System.Text
+  isExternal: false
+  name: System.Text
+  fullName: System.Text
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text.Encoding.Convert(System.Text.Encoding,System.Text.Encoding,System.Byte[])
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: Convert(Encoding, Encoding, Byte[])
+  name.vb: Convert(Encoding, Encoding, Byte())
+  fullName: System.Text.Encoding.Convert(System.Text.Encoding, System.Text.Encoding, System.Byte[])
+  fullName.vb: System.Text.Encoding.Convert(System.Text.Encoding, System.Text.Encoding, System.Byte())
+  spec.csharp:
+  - uid: System.Text.Encoding.Convert(System.Text.Encoding,System.Text.Encoding,System.Byte[])
+    name: Convert
+    fullName: System.Text.Encoding.Convert
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Text.Encoding
+    name: Encoding
+    fullName: System.Text.Encoding
+    href: System.Text.Encoding.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    fullName: System.Text.Encoding
+    href: System.Text.Encoding.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.Convert(System.Text.Encoding,System.Text.Encoding,System.Byte[])
+    name: Convert
+    fullName: System.Text.Encoding.Convert
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Text.Encoding
+    name: Encoding
+    fullName: System.Text.Encoding
+    href: System.Text.Encoding.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    fullName: System.Text.Encoding
+    href: System.Text.Encoding.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.Convert(System.Text.Encoding,System.Text.Encoding,System.Byte[],System.Int32,System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: Convert(Encoding, Encoding, Byte[], Int32, Int32)
+  name.vb: Convert(Encoding, Encoding, Byte(), Int32, Int32)
+  fullName: System.Text.Encoding.Convert(System.Text.Encoding, System.Text.Encoding, System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.Text.Encoding.Convert(System.Text.Encoding, System.Text.Encoding, System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.Convert(System.Text.Encoding,System.Text.Encoding,System.Byte[],System.Int32,System.Int32)
+    name: Convert
+    fullName: System.Text.Encoding.Convert
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Text.Encoding
+    name: Encoding
+    fullName: System.Text.Encoding
+    href: System.Text.Encoding.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    fullName: System.Text.Encoding
+    href: System.Text.Encoding.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.Convert(System.Text.Encoding,System.Text.Encoding,System.Byte[],System.Int32,System.Int32)
+    name: Convert
+    fullName: System.Text.Encoding.Convert
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Text.Encoding
+    name: Encoding
+    fullName: System.Text.Encoding
+    href: System.Text.Encoding.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    fullName: System.Text.Encoding
+    href: System.Text.Encoding.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.RegisterProvider(System.Text.EncodingProvider)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: RegisterProvider(EncodingProvider)
+  fullName: System.Text.Encoding.RegisterProvider(System.Text.EncodingProvider)
+  spec.csharp:
+  - uid: System.Text.Encoding.RegisterProvider(System.Text.EncodingProvider)
+    name: RegisterProvider
+    fullName: System.Text.Encoding.RegisterProvider
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Text.EncodingProvider
+    name: EncodingProvider
+    fullName: System.Text.EncodingProvider
+    href: System.Text.EncodingProvider.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.RegisterProvider(System.Text.EncodingProvider)
+    name: RegisterProvider
+    fullName: System.Text.Encoding.RegisterProvider
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Text.EncodingProvider
+    name: EncodingProvider
+    fullName: System.Text.EncodingProvider
+    href: System.Text.EncodingProvider.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetEncoding(System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetEncoding(Int32)
+  fullName: System.Text.Encoding.GetEncoding(System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetEncoding(System.Int32)
+    name: GetEncoding
+    fullName: System.Text.Encoding.GetEncoding
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetEncoding(System.Int32)
+    name: GetEncoding
+    fullName: System.Text.Encoding.GetEncoding
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetEncoding(Int32, EncoderFallback, DecoderFallback)
+  fullName: System.Text.Encoding.GetEncoding(System.Int32, System.Text.EncoderFallback, System.Text.DecoderFallback)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)
+    name: GetEncoding
+    fullName: System.Text.Encoding.GetEncoding
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.EncoderFallback
+    name: EncoderFallback
+    fullName: System.Text.EncoderFallback
+    href: System.Text.EncoderFallback.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.DecoderFallback
+    name: DecoderFallback
+    fullName: System.Text.DecoderFallback
+    href: System.Text.DecoderFallback.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)
+    name: GetEncoding
+    fullName: System.Text.Encoding.GetEncoding
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.EncoderFallback
+    name: EncoderFallback
+    fullName: System.Text.EncoderFallback
+    href: System.Text.EncoderFallback.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.DecoderFallback
+    name: DecoderFallback
+    fullName: System.Text.DecoderFallback
+    href: System.Text.DecoderFallback.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetEncoding(System.String)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetEncoding(String)
+  fullName: System.Text.Encoding.GetEncoding(System.String)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetEncoding(System.String)
+    name: GetEncoding
+    fullName: System.Text.Encoding.GetEncoding
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetEncoding(System.String)
+    name: GetEncoding
+    fullName: System.Text.Encoding.GetEncoding
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetEncoding(String, EncoderFallback, DecoderFallback)
+  fullName: System.Text.Encoding.GetEncoding(System.String, System.Text.EncoderFallback, System.Text.DecoderFallback)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)
+    name: GetEncoding
+    fullName: System.Text.Encoding.GetEncoding
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.EncoderFallback
+    name: EncoderFallback
+    fullName: System.Text.EncoderFallback
+    href: System.Text.EncoderFallback.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.DecoderFallback
+    name: DecoderFallback
+    fullName: System.Text.DecoderFallback
+    href: System.Text.DecoderFallback.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)
+    name: GetEncoding
+    fullName: System.Text.Encoding.GetEncoding
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.EncoderFallback
+    name: EncoderFallback
+    fullName: System.Text.EncoderFallback
+    href: System.Text.EncoderFallback.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.DecoderFallback
+    name: DecoderFallback
+    fullName: System.Text.DecoderFallback
+    href: System.Text.DecoderFallback.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetEncodings
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetEncodings()
+  fullName: System.Text.Encoding.GetEncodings()
+  spec.csharp:
+  - uid: System.Text.Encoding.GetEncodings
+    name: GetEncodings
+    fullName: System.Text.Encoding.GetEncodings
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetEncodings
+    name: GetEncodings
+    fullName: System.Text.Encoding.GetEncodings
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.BodyName
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: BodyName
+  fullName: System.Text.Encoding.BodyName
+- uid: System.Text.Encoding.EncodingName
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: EncodingName
+  fullName: System.Text.Encoding.EncodingName
+- uid: System.Text.Encoding.HeaderName
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: HeaderName
+  fullName: System.Text.Encoding.HeaderName
+- uid: System.Text.Encoding.WebName
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: WebName
+  fullName: System.Text.Encoding.WebName
+- uid: System.Text.Encoding.WindowsCodePage
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: WindowsCodePage
+  fullName: System.Text.Encoding.WindowsCodePage
+- uid: System.Text.Encoding.IsBrowserDisplay
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: IsBrowserDisplay
+  fullName: System.Text.Encoding.IsBrowserDisplay
+- uid: System.Text.Encoding.IsBrowserSave
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: IsBrowserSave
+  fullName: System.Text.Encoding.IsBrowserSave
+- uid: System.Text.Encoding.IsMailNewsDisplay
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: IsMailNewsDisplay
+  fullName: System.Text.Encoding.IsMailNewsDisplay
+- uid: System.Text.Encoding.IsMailNewsSave
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: IsMailNewsSave
+  fullName: System.Text.Encoding.IsMailNewsSave
+- uid: System.Text.Encoding.IsSingleByte
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: IsSingleByte
+  fullName: System.Text.Encoding.IsSingleByte
+- uid: System.Text.Encoding.EncoderFallback
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: EncoderFallback
+  fullName: System.Text.Encoding.EncoderFallback
+- uid: System.Text.Encoding.DecoderFallback
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: DecoderFallback
+  fullName: System.Text.Encoding.DecoderFallback
+- uid: System.Text.Encoding.Clone
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: Clone()
+  fullName: System.Text.Encoding.Clone()
+  spec.csharp:
+  - uid: System.Text.Encoding.Clone
+    name: Clone
+    fullName: System.Text.Encoding.Clone
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.Clone
+    name: Clone
+    fullName: System.Text.Encoding.Clone
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.IsReadOnly
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: IsReadOnly
+  fullName: System.Text.Encoding.IsReadOnly
+- uid: System.Text.Encoding.ASCII
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: ASCII
+  fullName: System.Text.Encoding.ASCII
+- uid: System.Text.Encoding.GetByteCount(System.Char[])
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetByteCount(Char[])
+  name.vb: GetByteCount(Char())
+  fullName: System.Text.Encoding.GetByteCount(System.Char[])
+  fullName.vb: System.Text.Encoding.GetByteCount(System.Char())
+  spec.csharp:
+  - uid: System.Text.Encoding.GetByteCount(System.Char[])
+    name: GetByteCount
+    fullName: System.Text.Encoding.GetByteCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetByteCount(System.Char[])
+    name: GetByteCount
+    fullName: System.Text.Encoding.GetByteCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetBytes(System.Char[])
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetBytes(Char[])
+  name.vb: GetBytes(Char())
+  fullName: System.Text.Encoding.GetBytes(System.Char[])
+  fullName.vb: System.Text.Encoding.GetBytes(System.Char())
+  spec.csharp:
+  - uid: System.Text.Encoding.GetBytes(System.Char[])
+    name: GetBytes
+    fullName: System.Text.Encoding.GetBytes
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetBytes(System.Char[])
+    name: GetBytes
+    fullName: System.Text.Encoding.GetBytes
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetBytes(Char[], Int32, Int32)
+  name.vb: GetBytes(Char(), Int32, Int32)
+  fullName: System.Text.Encoding.GetBytes(System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.Text.Encoding.GetBytes(System.Char(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32)
+    name: GetBytes
+    fullName: System.Text.Encoding.GetBytes
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32)
+    name: GetBytes
+    fullName: System.Text.Encoding.GetBytes
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetBytes(System.String)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetBytes(String)
+  fullName: System.Text.Encoding.GetBytes(System.String)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetBytes(System.String)
+    name: GetBytes
+    fullName: System.Text.Encoding.GetBytes
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetBytes(System.String)
+    name: GetBytes
+    fullName: System.Text.Encoding.GetBytes
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetCharCount(System.Byte[])
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetCharCount(Byte[])
+  name.vb: GetCharCount(Byte())
+  fullName: System.Text.Encoding.GetCharCount(System.Byte[])
+  fullName.vb: System.Text.Encoding.GetCharCount(System.Byte())
+  spec.csharp:
+  - uid: System.Text.Encoding.GetCharCount(System.Byte[])
+    name: GetCharCount
+    fullName: System.Text.Encoding.GetCharCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetCharCount(System.Byte[])
+    name: GetCharCount
+    fullName: System.Text.Encoding.GetCharCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetChars(System.Byte[])
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetChars(Byte[])
+  name.vb: GetChars(Byte())
+  fullName: System.Text.Encoding.GetChars(System.Byte[])
+  fullName.vb: System.Text.Encoding.GetChars(System.Byte())
+  spec.csharp:
+  - uid: System.Text.Encoding.GetChars(System.Byte[])
+    name: GetChars
+    fullName: System.Text.Encoding.GetChars
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetChars(System.Byte[])
+    name: GetChars
+    fullName: System.Text.Encoding.GetChars
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetChars(System.Byte[],System.Int32,System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetChars(Byte[], Int32, Int32)
+  name.vb: GetChars(Byte(), Int32, Int32)
+  fullName: System.Text.Encoding.GetChars(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.Text.Encoding.GetChars(System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetChars(System.Byte[],System.Int32,System.Int32)
+    name: GetChars
+    fullName: System.Text.Encoding.GetChars
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetChars(System.Byte[],System.Int32,System.Int32)
+    name: GetChars
+    fullName: System.Text.Encoding.GetChars
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetString(System.Byte*,System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetString(Byte*, Int32)
+  fullName: System.Text.Encoding.GetString(System.Byte*, System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetString(System.Byte*,System.Int32)
+    name: GetString
+    fullName: System.Text.Encoding.GetString
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '*'
+    fullName: '*'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetString(System.Byte*,System.Int32)
+    name: GetString
+    fullName: System.Text.Encoding.GetString
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '*'
+    fullName: '*'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.CodePage
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: CodePage
+  fullName: System.Text.Encoding.CodePage
+- uid: System.Text.Encoding.IsAlwaysNormalized
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: IsAlwaysNormalized()
+  fullName: System.Text.Encoding.IsAlwaysNormalized()
+  spec.csharp:
+  - uid: System.Text.Encoding.IsAlwaysNormalized
+    name: IsAlwaysNormalized
+    fullName: System.Text.Encoding.IsAlwaysNormalized
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.IsAlwaysNormalized
+    name: IsAlwaysNormalized
+    fullName: System.Text.Encoding.IsAlwaysNormalized
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.IsAlwaysNormalized(System.Text.NormalizationForm)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: IsAlwaysNormalized(NormalizationForm)
+  fullName: System.Text.Encoding.IsAlwaysNormalized(System.Text.NormalizationForm)
+  spec.csharp:
+  - uid: System.Text.Encoding.IsAlwaysNormalized(System.Text.NormalizationForm)
+    name: IsAlwaysNormalized
+    fullName: System.Text.Encoding.IsAlwaysNormalized
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Text.NormalizationForm
+    name: NormalizationForm
+    fullName: System.Text.NormalizationForm
+    href: System.Text.NormalizationForm.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.IsAlwaysNormalized(System.Text.NormalizationForm)
+    name: IsAlwaysNormalized
+    fullName: System.Text.Encoding.IsAlwaysNormalized
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Text.NormalizationForm
+    name: NormalizationForm
+    fullName: System.Text.NormalizationForm
+    href: System.Text.NormalizationForm.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.Default
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: Default
+  fullName: System.Text.Encoding.Default
+- uid: System.Text.Encoding.GetString(System.Byte[])
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetString(Byte[])
+  name.vb: GetString(Byte())
+  fullName: System.Text.Encoding.GetString(System.Byte[])
+  fullName.vb: System.Text.Encoding.GetString(System.Byte())
+  spec.csharp:
+  - uid: System.Text.Encoding.GetString(System.Byte[])
+    name: GetString
+    fullName: System.Text.Encoding.GetString
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetString(System.Byte[])
+    name: GetString
+    fullName: System.Text.Encoding.GetString
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.Unicode
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: Unicode
+  fullName: System.Text.Encoding.Unicode
+- uid: System.Text.Encoding.BigEndianUnicode
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: BigEndianUnicode
+  fullName: System.Text.Encoding.BigEndianUnicode
+- uid: System.Text.Encoding.UTF7
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: UTF7
+  fullName: System.Text.Encoding.UTF7
+- uid: System.Text.Encoding.UTF8
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: UTF8
+  fullName: System.Text.Encoding.UTF8
+- uid: System.Text.Encoding.UTF32
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: UTF32
+  fullName: System.Text.Encoding.UTF32
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Text.Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetByteCount(Char[], Int32, Int32)
+  name.vb: GetByteCount(Char(), Int32, Int32)
+  fullName: System.Text.Encoding.GetByteCount(System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.Text.Encoding.GetByteCount(System.Char(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)
+    name: GetByteCount
+    fullName: System.Text.Encoding.GetByteCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)
+    name: GetByteCount
+    fullName: System.Text.Encoding.GetByteCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Char[]
+  isExternal: true
+  name: Char[]
+  name.vb: Char()
+  fullName: System.Char[]
+  fullName.vb: System.Char()
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Text.Encoding.GetByteCount(System.String)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetByteCount(String)
+  fullName: System.Text.Encoding.GetByteCount(System.String)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetByteCount(System.String)
+    name: GetByteCount
+    fullName: System.Text.Encoding.GetByteCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetByteCount(System.String)
+    name: GetByteCount
+    fullName: System.Text.Encoding.GetByteCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Text.Encoding.GetByteCount(System.Char*,System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetByteCount(Char*, Int32)
+  fullName: System.Text.Encoding.GetByteCount(System.Char*, System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetByteCount(System.Char*,System.Int32)
+    name: GetByteCount
+    fullName: System.Text.Encoding.GetByteCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '*'
+    fullName: '*'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetByteCount(System.Char*,System.Int32)
+    name: GetByteCount
+    fullName: System.Text.Encoding.GetByteCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '*'
+    fullName: '*'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Char*
+  isExternal: true
+  name: Char*
+  fullName: System.Char*
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+- uid: System.Text.Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetBytes(String, Int32, Int32, Byte[], Int32)
+  name.vb: GetBytes(String, Int32, Int32, Byte(), Int32)
+  fullName: System.Text.Encoding.GetBytes(System.String, System.Int32, System.Int32, System.Byte[], System.Int32)
+  fullName.vb: System.Text.Encoding.GetBytes(System.String, System.Int32, System.Int32, System.Byte(), System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)
+    name: GetBytes
+    fullName: System.Text.Encoding.GetBytes
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)
+    name: GetBytes
+    fullName: System.Text.Encoding.GetBytes
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetBytes(Char[], Int32, Int32, Byte[], Int32)
+  name.vb: GetBytes(Char(), Int32, Int32, Byte(), Int32)
+  fullName: System.Text.Encoding.GetBytes(System.Char[], System.Int32, System.Int32, System.Byte[], System.Int32)
+  fullName.vb: System.Text.Encoding.GetBytes(System.Char(), System.Int32, System.Int32, System.Byte(), System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)
+    name: GetBytes
+    fullName: System.Text.Encoding.GetBytes
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)
+    name: GetBytes
+    fullName: System.Text.Encoding.GetBytes
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetBytes(Char*, Int32, Byte*, Int32)
+  fullName: System.Text.Encoding.GetBytes(System.Char*, System.Int32, System.Byte*, System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32)
+    name: GetBytes
+    fullName: System.Text.Encoding.GetBytes
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '*'
+    fullName: '*'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '*'
+    fullName: '*'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32)
+    name: GetBytes
+    fullName: System.Text.Encoding.GetBytes
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '*'
+    fullName: '*'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '*'
+    fullName: '*'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Byte*
+  isExternal: true
+  name: Byte*
+  fullName: System.Byte*
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+- uid: System.Text.Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetCharCount(Byte[], Int32, Int32)
+  name.vb: GetCharCount(Byte(), Int32, Int32)
+  fullName: System.Text.Encoding.GetCharCount(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.Text.Encoding.GetCharCount(System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)
+    name: GetCharCount
+    fullName: System.Text.Encoding.GetCharCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)
+    name: GetCharCount
+    fullName: System.Text.Encoding.GetCharCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetCharCount(System.Byte*,System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetCharCount(Byte*, Int32)
+  fullName: System.Text.Encoding.GetCharCount(System.Byte*, System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetCharCount(System.Byte*,System.Int32)
+    name: GetCharCount
+    fullName: System.Text.Encoding.GetCharCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '*'
+    fullName: '*'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetCharCount(System.Byte*,System.Int32)
+    name: GetCharCount
+    fullName: System.Text.Encoding.GetCharCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '*'
+    fullName: '*'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetChars(Byte[], Int32, Int32, Char[], Int32)
+  name.vb: GetChars(Byte(), Int32, Int32, Char(), Int32)
+  fullName: System.Text.Encoding.GetChars(System.Byte[], System.Int32, System.Int32, System.Char[], System.Int32)
+  fullName.vb: System.Text.Encoding.GetChars(System.Byte(), System.Int32, System.Int32, System.Char(), System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)
+    name: GetChars
+    fullName: System.Text.Encoding.GetChars
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)
+    name: GetChars
+    fullName: System.Text.Encoding.GetChars
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetChars(Byte*, Int32, Char*, Int32)
+  fullName: System.Text.Encoding.GetChars(System.Byte*, System.Int32, System.Char*, System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32)
+    name: GetChars
+    fullName: System.Text.Encoding.GetChars
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '*'
+    fullName: '*'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '*'
+    fullName: '*'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32)
+    name: GetChars
+    fullName: System.Text.Encoding.GetChars
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '*'
+    fullName: '*'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '*'
+    fullName: '*'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetString(System.Byte[],System.Int32,System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetString(Byte[], Int32, Int32)
+  name.vb: GetString(Byte(), Int32, Int32)
+  fullName: System.Text.Encoding.GetString(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.Text.Encoding.GetString(System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetString(System.Byte[],System.Int32,System.Int32)
+    name: GetString
+    fullName: System.Text.Encoding.GetString
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetString(System.Byte[],System.Int32,System.Int32)
+    name: GetString
+    fullName: System.Text.Encoding.GetString
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetDecoder
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetDecoder()
+  fullName: System.Text.Encoding.GetDecoder()
+  spec.csharp:
+  - uid: System.Text.Encoding.GetDecoder
+    name: GetDecoder
+    fullName: System.Text.Encoding.GetDecoder
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetDecoder
+    name: GetDecoder
+    fullName: System.Text.Encoding.GetDecoder
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Text.Decoder
+  parent: System.Text
+  isExternal: false
+  href: System.Text.Decoder.yml
+  name: Decoder
+  fullName: System.Text.Decoder
+  type: Class
+- uid: System.Text.Encoding.GetEncoder
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetEncoder()
+  fullName: System.Text.Encoding.GetEncoder()
+  spec.csharp:
+  - uid: System.Text.Encoding.GetEncoder
+    name: GetEncoder
+    fullName: System.Text.Encoding.GetEncoder
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetEncoder
+    name: GetEncoder
+    fullName: System.Text.Encoding.GetEncoder
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Text.Encoder
+  parent: System.Text
+  isExternal: false
+  href: System.Text.Encoder.yml
+  name: Encoder
+  fullName: System.Text.Encoder
+  type: Class
+- uid: System.Text.Encoding.GetMaxByteCount(System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetMaxByteCount(Int32)
+  fullName: System.Text.Encoding.GetMaxByteCount(System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetMaxByteCount(System.Int32)
+    name: GetMaxByteCount
+    fullName: System.Text.Encoding.GetMaxByteCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetMaxByteCount(System.Int32)
+    name: GetMaxByteCount
+    fullName: System.Text.Encoding.GetMaxByteCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetMaxCharCount(System.Int32)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetMaxCharCount(Int32)
+  fullName: System.Text.Encoding.GetMaxCharCount(System.Int32)
+  spec.csharp:
+  - uid: System.Text.Encoding.GetMaxCharCount(System.Int32)
+    name: GetMaxCharCount
+    fullName: System.Text.Encoding.GetMaxCharCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetMaxCharCount(System.Int32)
+    name: GetMaxCharCount
+    fullName: System.Text.Encoding.GetMaxCharCount
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetPreamble
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetPreamble()
+  fullName: System.Text.Encoding.GetPreamble()
+  spec.csharp:
+  - uid: System.Text.Encoding.GetPreamble
+    name: GetPreamble
+    fullName: System.Text.Encoding.GetPreamble
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetPreamble
+    name: GetPreamble
+    fullName: System.Text.Encoding.GetPreamble
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.Equals(System.Object)
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: Equals(Object)
+  fullName: System.Text.Encoding.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Text.Encoding.Equals(System.Object)
+    name: Equals
+    fullName: System.Text.Encoding.Equals
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.Equals(System.Object)
+    name: Equals
+    fullName: System.Text.Encoding.Equals
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+- uid: System.Text.Encoding.GetHashCode
+  parent: System.Text.Encoding
+  isExternal: false
+  href: System.Text.Encoding.yml
+  name: GetHashCode()
+  fullName: System.Text.Encoding.GetHashCode()
+  spec.csharp:
+  - uid: System.Text.Encoding.GetHashCode
+    name: GetHashCode
+    fullName: System.Text.Encoding.GetHashCode
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.Encoding.GetHashCode
+    name: GetHashCode
+    fullName: System.Text.Encoding.GetHashCode
+    href: System.Text.Encoding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

@@ -1,0 +1,263 @@
+items:
+- uid: System.IAppDomainSetup
+  id: IAppDomainSetup
+  parent: System
+  children:
+  - System.IAppDomainSetup.ApplicationBase
+  - System.IAppDomainSetup.ApplicationName
+  - System.IAppDomainSetup.CachePath
+  - System.IAppDomainSetup.ConfigurationFile
+  - System.IAppDomainSetup.DynamicBase
+  - System.IAppDomainSetup.LicenseFile
+  - System.IAppDomainSetup.PrivateBinPath
+  - System.IAppDomainSetup.PrivateBinPathProbe
+  - System.IAppDomainSetup.ShadowCopyDirectories
+  - System.IAppDomainSetup.ShadowCopyFiles
+  href: System.IAppDomainSetup.yml
+  name: IAppDomainSetup
+  fullName: System.IAppDomainSetup
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IAppDomainSetup.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IAppDomainSetup.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents assembly binding information that can be added to an instance of @'System.AppDomain'.
+  syntax:
+    content: public interface IAppDomainSetup
+    content.vb: Public Interface IAppDomainSetup
+- uid: System.IAppDomainSetup.ApplicationBase
+  id: ApplicationBase
+  parent: System.IAppDomainSetup
+  href: System.IAppDomainSetup.yml
+  name: ApplicationBase
+  fullName: System.IAppDomainSetup.ApplicationBase
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAppDomainSetup.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the name of the directory containing the application.
+  syntax:
+    content: string ApplicationBase { get; set; }
+    content.vb: Property ApplicationBase As String
+    parameters: []
+    return:
+      type: System.String
+      description: A @'System.String' containg the name of the application base directory.
+- uid: System.IAppDomainSetup.ApplicationName
+  id: ApplicationName
+  parent: System.IAppDomainSetup
+  href: System.IAppDomainSetup.yml
+  name: ApplicationName
+  fullName: System.IAppDomainSetup.ApplicationName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAppDomainSetup.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the name of the application.
+  syntax:
+    content: string ApplicationName { get; set; }
+    content.vb: Property ApplicationName As String
+    parameters: []
+    return:
+      type: System.String
+      description: A @'System.String' that is the name of the application.
+- uid: System.IAppDomainSetup.CachePath
+  id: CachePath
+  parent: System.IAppDomainSetup
+  href: System.IAppDomainSetup.yml
+  name: CachePath
+  fullName: System.IAppDomainSetup.CachePath
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAppDomainSetup.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets and sets the name of an area specific to the application where files are shadow copied.
+  syntax:
+    content: string CachePath { get; set; }
+    content.vb: Property CachePath As String
+    parameters: []
+    return:
+      type: System.String
+      description: A @'System.String' that is the fully-qualified name of the directory path and file name where files are shadow copied.
+- uid: System.IAppDomainSetup.ConfigurationFile
+  id: ConfigurationFile
+  parent: System.IAppDomainSetup
+  href: System.IAppDomainSetup.yml
+  name: ConfigurationFile
+  fullName: System.IAppDomainSetup.ConfigurationFile
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAppDomainSetup.cs
+    startLine: 40
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets and sets the name of the configuration file for an application domain.
+  syntax:
+    content: string ConfigurationFile { get; set; }
+    content.vb: Property ConfigurationFile As String
+    parameters: []
+    return:
+      type: System.String
+      description: A @'System.String' that specifies the name of the configuration file.
+- uid: System.IAppDomainSetup.DynamicBase
+  id: DynamicBase
+  parent: System.IAppDomainSetup
+  href: System.IAppDomainSetup.yml
+  name: DynamicBase
+  fullName: System.IAppDomainSetup.DynamicBase
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAppDomainSetup.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the directory where dynamically generated files are stored and accessed.
+  syntax:
+    content: string DynamicBase { get; set; }
+    content.vb: Property DynamicBase As String
+    parameters: []
+    return:
+      type: System.String
+      description: A @'System.String' that specifies the directory containing dynamic assemblies.
+- uid: System.IAppDomainSetup.LicenseFile
+  id: LicenseFile
+  parent: System.IAppDomainSetup
+  href: System.IAppDomainSetup.yml
+  name: LicenseFile
+  fullName: System.IAppDomainSetup.LicenseFile
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAppDomainSetup.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the location of the license file associated with this domain.
+  syntax:
+    content: string LicenseFile { get; set; }
+    content.vb: Property LicenseFile As String
+    parameters: []
+    return:
+      type: System.String
+      description: A @'System.String' that specifies the name of the license file.
+- uid: System.IAppDomainSetup.PrivateBinPath
+  id: PrivateBinPath
+  parent: System.IAppDomainSetup
+  href: System.IAppDomainSetup.yml
+  name: PrivateBinPath
+  fullName: System.IAppDomainSetup.PrivateBinPath
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAppDomainSetup.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the list of directories that is combined with the @'System.AppDomainSetup.ApplicationBase' directory to probe for private assemblies.
+  syntax:
+    content: string PrivateBinPath { get; set; }
+    content.vb: Property PrivateBinPath As String
+    parameters: []
+    return:
+      type: System.String
+      description: A @'System.String' containing a list of directory names, where each name is separated by a semicolon.
+- uid: System.IAppDomainSetup.PrivateBinPathProbe
+  id: PrivateBinPathProbe
+  parent: System.IAppDomainSetup
+  href: System.IAppDomainSetup.yml
+  name: PrivateBinPathProbe
+  fullName: System.IAppDomainSetup.PrivateBinPathProbe
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAppDomainSetup.cs
+    startLine: 63
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the private binary directory path used to locate an application.
+  syntax:
+    content: string PrivateBinPathProbe { get; set; }
+    content.vb: Property PrivateBinPathProbe As String
+    parameters: []
+    return:
+      type: System.String
+      description: A @'System.String' containing a list of directory names, where each name is separated by a semicolon.
+- uid: System.IAppDomainSetup.ShadowCopyDirectories
+  id: ShadowCopyDirectories
+  parent: System.IAppDomainSetup
+  href: System.IAppDomainSetup.yml
+  name: ShadowCopyDirectories
+  fullName: System.IAppDomainSetup.ShadowCopyDirectories
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAppDomainSetup.cs
+    startLine: 69
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets the names of the directories containing assemblies to be shadow copied.
+  syntax:
+    content: string ShadowCopyDirectories { get; set; }
+    content.vb: Property ShadowCopyDirectories As String
+    parameters: []
+    return:
+      type: System.String
+      description: A @'System.String' containing a list of directory names, where each name is separated by a semicolon.
+- uid: System.IAppDomainSetup.ShadowCopyFiles
+  id: ShadowCopyFiles
+  parent: System.IAppDomainSetup
+  href: System.IAppDomainSetup.yml
+  name: ShadowCopyFiles
+  fullName: System.IAppDomainSetup.ShadowCopyFiles
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAppDomainSetup.cs
+    startLine: 75
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets a string that indicates whether shadow copying is turned on or off.
+  syntax:
+    content: string ShadowCopyFiles { get; set; }
+    content.vb: Property ShadowCopyFiles As String
+    parameters: []
+    return:
+      type: System.String
+      description: A @'System.String' containing the value "true" to indicate that shadow copying is turned on; or "false" to indicate that shadow copying is turned off.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

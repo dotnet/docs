@@ -1,0 +1,416 @@
+items:
+- uid: System.Diagnostics.SymbolStore.ISymbolReader
+  id: ISymbolReader
+  parent: System.Diagnostics.SymbolStore
+  children:
+  - System.Diagnostics.SymbolStore.ISymbolReader.GetDocument(System.String,System.Guid,System.Guid,System.Guid)
+  - System.Diagnostics.SymbolStore.ISymbolReader.GetDocuments
+  - System.Diagnostics.SymbolStore.ISymbolReader.GetGlobalVariables
+  - System.Diagnostics.SymbolStore.ISymbolReader.GetMethod(System.Diagnostics.SymbolStore.SymbolToken)
+  - System.Diagnostics.SymbolStore.ISymbolReader.GetMethod(System.Diagnostics.SymbolStore.SymbolToken,System.Int32)
+  - System.Diagnostics.SymbolStore.ISymbolReader.GetMethodFromDocumentPosition(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)
+  - System.Diagnostics.SymbolStore.ISymbolReader.GetNamespaces
+  - System.Diagnostics.SymbolStore.ISymbolReader.GetSymAttribute(System.Diagnostics.SymbolStore.SymbolToken,System.String)
+  - System.Diagnostics.SymbolStore.ISymbolReader.GetVariables(System.Diagnostics.SymbolStore.SymbolToken)
+  - System.Diagnostics.SymbolStore.ISymbolReader.UserEntryPoint
+  href: System.Diagnostics.SymbolStore.ISymbolReader.yml
+  name: ISymbolReader
+  fullName: System.Diagnostics.SymbolStore.ISymbolReader
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymReader.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymReader.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Represents a symbol reader for managed code.
+  syntax:
+    content: public interface ISymbolReader
+    content.vb: Public Interface ISymbolReader
+- uid: System.Diagnostics.SymbolStore.ISymbolReader.GetDocument(System.String,System.Guid,System.Guid,System.Guid)
+  id: GetDocument(System.String,System.Guid,System.Guid,System.Guid)
+  parent: System.Diagnostics.SymbolStore.ISymbolReader
+  href: System.Diagnostics.SymbolStore.ISymbolReader.yml
+  name: GetDocument(String, Guid, Guid, Guid)
+  fullName: System.Diagnostics.SymbolStore.ISymbolReader.GetDocument(System.String, System.Guid, System.Guid, System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymReader.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets a document specified by the language, vendor, and type.
+  syntax:
+    content: ISymbolDocument GetDocument(string url, Guid language, Guid languageVendor, Guid documentType)
+    content.vb: Function GetDocument(url As String, language As Guid, languageVendor As Guid, documentType As Guid) As ISymbolDocument
+    parameters:
+    - id: url
+      type: System.String
+      description: The URL that identifies the document.
+    - id: language
+      type: System.Guid
+      description: The document language. You can specify this parameter as @'System.Guid.Empty'.
+    - id: languageVendor
+      type: System.Guid
+      description: The identity of the vendor for the document language. You can specify this parameter as @'System.Guid.Empty'.
+    - id: documentType
+      type: System.Guid
+      description: The type of the document. You can specify this parameter as @'System.Guid.Empty'.
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolDocument
+      description: The specified document.
+- uid: System.Diagnostics.SymbolStore.ISymbolReader.GetDocuments
+  id: GetDocuments
+  parent: System.Diagnostics.SymbolStore.ISymbolReader
+  href: System.Diagnostics.SymbolStore.ISymbolReader.yml
+  name: GetDocuments()
+  fullName: System.Diagnostics.SymbolStore.ISymbolReader.GetDocuments()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymReader.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets an array of all documents defined in the symbol store.
+  syntax:
+    content: ISymbolDocument[] GetDocuments()
+    content.vb: Function GetDocuments As ISymbolDocument()
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolDocument[]
+      description: An array of all documents defined in the symbol store.
+- uid: System.Diagnostics.SymbolStore.ISymbolReader.UserEntryPoint
+  id: UserEntryPoint
+  parent: System.Diagnostics.SymbolStore.ISymbolReader
+  href: System.Diagnostics.SymbolStore.ISymbolReader.yml
+  name: UserEntryPoint
+  fullName: System.Diagnostics.SymbolStore.ISymbolReader.UserEntryPoint
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymReader.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets the metadata token for the method that was specified as the user entry point for the module, if any.
+  syntax:
+    content: SymbolToken UserEntryPoint { get; }
+    content.vb: ReadOnly Property UserEntryPoint As SymbolToken
+    parameters: []
+    return:
+      type: System.Diagnostics.SymbolStore.SymbolToken
+      description: The metadata token for the method that is the user entry point for the module.
+- uid: System.Diagnostics.SymbolStore.ISymbolReader.GetMethod(System.Diagnostics.SymbolStore.SymbolToken)
+  id: GetMethod(System.Diagnostics.SymbolStore.SymbolToken)
+  parent: System.Diagnostics.SymbolStore.ISymbolReader
+  href: System.Diagnostics.SymbolStore.ISymbolReader.yml
+  name: GetMethod(SymbolToken)
+  fullName: System.Diagnostics.SymbolStore.ISymbolReader.GetMethod(System.Diagnostics.SymbolStore.SymbolToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymReader.cs
+    startLine: 38
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets a symbol reader method object when given the identifier of a method.
+  syntax:
+    content: ISymbolMethod GetMethod(SymbolToken method)
+    content.vb: Function GetMethod(method As SymbolToken) As ISymbolMethod
+    parameters:
+    - id: method
+      type: System.Diagnostics.SymbolStore.SymbolToken
+      description: The metadata token of the method.
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolMethod
+      description: The symbol reader method object for the specified method identifier.
+- uid: System.Diagnostics.SymbolStore.ISymbolReader.GetMethod(System.Diagnostics.SymbolStore.SymbolToken,System.Int32)
+  id: GetMethod(System.Diagnostics.SymbolStore.SymbolToken,System.Int32)
+  parent: System.Diagnostics.SymbolStore.ISymbolReader
+  href: System.Diagnostics.SymbolStore.ISymbolReader.yml
+  name: GetMethod(SymbolToken, Int32)
+  fullName: System.Diagnostics.SymbolStore.ISymbolReader.GetMethod(System.Diagnostics.SymbolStore.SymbolToken, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymReader.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets a symbol reader method object when given the identifier of a method and its edit and continue version.
+  syntax:
+    content: ISymbolMethod GetMethod(SymbolToken method, int version)
+    content.vb: Function GetMethod(method As SymbolToken, version As Integer) As ISymbolMethod
+    parameters:
+    - id: method
+      type: System.Diagnostics.SymbolStore.SymbolToken
+      description: The metadata token of the method.
+    - id: version
+      type: System.Int32
+      description: The edit and continue version of the method.
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolMethod
+      description: The symbol reader method object for the specified method identifier.
+- uid: System.Diagnostics.SymbolStore.ISymbolReader.GetVariables(System.Diagnostics.SymbolStore.SymbolToken)
+  id: GetVariables(System.Diagnostics.SymbolStore.SymbolToken)
+  parent: System.Diagnostics.SymbolStore.ISymbolReader
+  href: System.Diagnostics.SymbolStore.ISymbolReader.yml
+  name: GetVariables(SymbolToken)
+  fullName: System.Diagnostics.SymbolStore.ISymbolReader.GetVariables(System.Diagnostics.SymbolStore.SymbolToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymReader.cs
+    startLine: 46
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets the variables that are not local when given the parent.
+  syntax:
+    content: ISymbolVariable[] GetVariables(SymbolToken parent)
+    content.vb: Function GetVariables(parent As SymbolToken) As ISymbolVariable()
+    parameters:
+    - id: parent
+      type: System.Diagnostics.SymbolStore.SymbolToken
+      description: The metadata token for the type for which the variables are requested.
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolVariable[]
+      description: An array of variables for the parent.
+- uid: System.Diagnostics.SymbolStore.ISymbolReader.GetGlobalVariables
+  id: GetGlobalVariables
+  parent: System.Diagnostics.SymbolStore.ISymbolReader
+  href: System.Diagnostics.SymbolStore.ISymbolReader.yml
+  name: GetGlobalVariables()
+  fullName: System.Diagnostics.SymbolStore.ISymbolReader.GetGlobalVariables()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymReader.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets all global variables in the module.
+  syntax:
+    content: ISymbolVariable[] GetGlobalVariables()
+    content.vb: Function GetGlobalVariables As ISymbolVariable()
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolVariable[]
+      description: An array of all variables in the module.
+- uid: System.Diagnostics.SymbolStore.ISymbolReader.GetMethodFromDocumentPosition(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)
+  id: GetMethodFromDocumentPosition(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)
+  parent: System.Diagnostics.SymbolStore.ISymbolReader
+  href: System.Diagnostics.SymbolStore.ISymbolReader.yml
+  name: GetMethodFromDocumentPosition(ISymbolDocument, Int32, Int32)
+  fullName: System.Diagnostics.SymbolStore.ISymbolReader.GetMethodFromDocumentPosition(System.Diagnostics.SymbolStore.ISymbolDocument, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymReader.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets a symbol reader method object that contains a specified position in a document.
+  syntax:
+    content: ISymbolMethod GetMethodFromDocumentPosition(ISymbolDocument document, int line, int column)
+    content.vb: Function GetMethodFromDocumentPosition(document As ISymbolDocument, line As Integer, column As Integer) As ISymbolMethod
+    parameters:
+    - id: document
+      type: System.Diagnostics.SymbolStore.ISymbolDocument
+      description: The document in which the method is located.
+    - id: line
+      type: System.Int32
+      description: The position of the line within the document. The lines are numbered, beginning with 1.
+    - id: column
+      type: System.Int32
+      description: The position of column within the document. The columns are numbered, beginning with 1.
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolMethod
+      description: The reader method object for the specified position in the document.
+- uid: System.Diagnostics.SymbolStore.ISymbolReader.GetSymAttribute(System.Diagnostics.SymbolStore.SymbolToken,System.String)
+  id: GetSymAttribute(System.Diagnostics.SymbolStore.SymbolToken,System.String)
+  parent: System.Diagnostics.SymbolStore.ISymbolReader
+  href: System.Diagnostics.SymbolStore.ISymbolReader.yml
+  name: GetSymAttribute(SymbolToken, String)
+  fullName: System.Diagnostics.SymbolStore.ISymbolReader.GetSymAttribute(System.Diagnostics.SymbolStore.SymbolToken, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymReader.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets an attribute value when given the attribute name.
+  syntax:
+    content: byte[] GetSymAttribute(SymbolToken parent, string name)
+    content.vb: Function GetSymAttribute(parent As SymbolToken, name As String) As Byte()
+    parameters:
+    - id: parent
+      type: System.Diagnostics.SymbolStore.SymbolToken
+      description: The metadata token for the object for which the attribute is requested.
+    - id: name
+      type: System.String
+      description: The attribute name.
+    return:
+      type: System.Byte[]
+      description: The value of the attribute.
+- uid: System.Diagnostics.SymbolStore.ISymbolReader.GetNamespaces
+  id: GetNamespaces
+  parent: System.Diagnostics.SymbolStore.ISymbolReader
+  href: System.Diagnostics.SymbolStore.ISymbolReader.yml
+  name: GetNamespaces()
+  fullName: System.Diagnostics.SymbolStore.ISymbolReader.GetNamespaces()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymReader.cs
+    startLine: 63
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets the namespaces that are defined in the global scope within the current symbol store.
+  syntax:
+    content: ISymbolNamespace[] GetNamespaces()
+    content.vb: Function GetNamespaces As ISymbolNamespace()
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolNamespace[]
+      description: The namespaces defined in the global scope within the current symbol store.
+references:
+- uid: System.Diagnostics.SymbolStore
+  isExternal: false
+  name: System.Diagnostics.SymbolStore
+  fullName: System.Diagnostics.SymbolStore
+  type: Namespace
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System.Diagnostics.SymbolStore.ISymbolDocument
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolDocument.yml
+  name: ISymbolDocument
+  fullName: System.Diagnostics.SymbolStore.ISymbolDocument
+  type: Interface
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Diagnostics.SymbolStore.ISymbolDocument[]
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolDocument.yml
+  name: ISymbolDocument[]
+  name.vb: ISymbolDocument()
+  fullName: System.Diagnostics.SymbolStore.ISymbolDocument[]
+  fullName.vb: System.Diagnostics.SymbolStore.ISymbolDocument()
+  spec.csharp:
+  - uid: System.Diagnostics.SymbolStore.ISymbolDocument
+    name: ISymbolDocument
+    fullName: System.Diagnostics.SymbolStore.ISymbolDocument
+    href: System.Diagnostics.SymbolStore.ISymbolDocument.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Diagnostics.SymbolStore.ISymbolDocument
+    name: ISymbolDocument
+    fullName: System.Diagnostics.SymbolStore.ISymbolDocument
+    href: System.Diagnostics.SymbolStore.ISymbolDocument.yml
+  - name: ()
+    fullName: ()
+- uid: System.Diagnostics.SymbolStore.SymbolToken
+  parent: System.Diagnostics.SymbolStore
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.SymbolToken.yml
+  name: SymbolToken
+  fullName: System.Diagnostics.SymbolStore.SymbolToken
+  type: Struct
+- uid: System.Diagnostics.SymbolStore.ISymbolMethod
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolMethod.yml
+  name: ISymbolMethod
+  fullName: System.Diagnostics.SymbolStore.ISymbolMethod
+  type: Interface
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Diagnostics.SymbolStore.ISymbolVariable[]
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolVariable.yml
+  name: ISymbolVariable[]
+  name.vb: ISymbolVariable()
+  fullName: System.Diagnostics.SymbolStore.ISymbolVariable[]
+  fullName.vb: System.Diagnostics.SymbolStore.ISymbolVariable()
+  spec.csharp:
+  - uid: System.Diagnostics.SymbolStore.ISymbolVariable
+    name: ISymbolVariable
+    fullName: System.Diagnostics.SymbolStore.ISymbolVariable
+    href: System.Diagnostics.SymbolStore.ISymbolVariable.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Diagnostics.SymbolStore.ISymbolVariable
+    name: ISymbolVariable
+    fullName: System.Diagnostics.SymbolStore.ISymbolVariable
+    href: System.Diagnostics.SymbolStore.ISymbolVariable.yml
+  - name: ()
+    fullName: ()
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Diagnostics.SymbolStore.ISymbolNamespace[]
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolNamespace.yml
+  name: ISymbolNamespace[]
+  name.vb: ISymbolNamespace()
+  fullName: System.Diagnostics.SymbolStore.ISymbolNamespace[]
+  fullName.vb: System.Diagnostics.SymbolStore.ISymbolNamespace()
+  spec.csharp:
+  - uid: System.Diagnostics.SymbolStore.ISymbolNamespace
+    name: ISymbolNamespace
+    fullName: System.Diagnostics.SymbolStore.ISymbolNamespace
+    href: System.Diagnostics.SymbolStore.ISymbolNamespace.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Diagnostics.SymbolStore.ISymbolNamespace
+    name: ISymbolNamespace
+    fullName: System.Diagnostics.SymbolStore.ISymbolNamespace
+    href: System.Diagnostics.SymbolStore.ISymbolNamespace.yml
+  - name: ()
+    fullName: ()

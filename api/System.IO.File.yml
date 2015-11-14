@@ -1,0 +1,2402 @@
+items:
+- uid: System.IO.File
+  id: File
+  parent: System.IO
+  children:
+  - System.IO.File.AppendAllLines(System.String,System.Collections.Generic.IEnumerable{System.String})
+  - System.IO.File.AppendAllLines(System.String,System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding)
+  - System.IO.File.AppendAllText(System.String,System.String)
+  - System.IO.File.AppendAllText(System.String,System.String,System.Text.Encoding)
+  - System.IO.File.AppendText(System.String)
+  - System.IO.File.Copy(System.String,System.String)
+  - System.IO.File.Copy(System.String,System.String,System.Boolean)
+  - System.IO.File.Create(System.String)
+  - System.IO.File.Create(System.String,System.Int32)
+  - System.IO.File.Create(System.String,System.Int32,System.IO.FileOptions)
+  - System.IO.File.CreateText(System.String)
+  - System.IO.File.Delete(System.String)
+  - System.IO.File.Exists(System.String)
+  - System.IO.File.GetAttributes(System.String)
+  - System.IO.File.GetCreationTime(System.String)
+  - System.IO.File.GetCreationTimeUtc(System.String)
+  - System.IO.File.GetLastAccessTime(System.String)
+  - System.IO.File.GetLastAccessTimeUtc(System.String)
+  - System.IO.File.GetLastWriteTime(System.String)
+  - System.IO.File.GetLastWriteTimeUtc(System.String)
+  - System.IO.File.Move(System.String,System.String)
+  - System.IO.File.Open(System.String,System.IO.FileMode)
+  - System.IO.File.Open(System.String,System.IO.FileMode,System.IO.FileAccess)
+  - System.IO.File.Open(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  - System.IO.File.OpenRead(System.String)
+  - System.IO.File.OpenText(System.String)
+  - System.IO.File.OpenWrite(System.String)
+  - System.IO.File.ReadAllBytes(System.String)
+  - System.IO.File.ReadAllLines(System.String)
+  - System.IO.File.ReadAllLines(System.String,System.Text.Encoding)
+  - System.IO.File.ReadAllText(System.String)
+  - System.IO.File.ReadAllText(System.String,System.Text.Encoding)
+  - System.IO.File.ReadLines(System.String)
+  - System.IO.File.ReadLines(System.String,System.Text.Encoding)
+  - System.IO.File.SetAttributes(System.String,System.IO.FileAttributes)
+  - System.IO.File.SetCreationTime(System.String,System.DateTime)
+  - System.IO.File.SetCreationTimeUtc(System.String,System.DateTime)
+  - System.IO.File.SetLastAccessTime(System.String,System.DateTime)
+  - System.IO.File.SetLastAccessTimeUtc(System.String,System.DateTime)
+  - System.IO.File.SetLastWriteTime(System.String,System.DateTime)
+  - System.IO.File.SetLastWriteTimeUtc(System.String,System.DateTime)
+  - System.IO.File.WriteAllBytes(System.String,System.Byte[])
+  - System.IO.File.WriteAllLines(System.String,System.Collections.Generic.IEnumerable{System.String})
+  - System.IO.File.WriteAllLines(System.String,System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding)
+  - System.IO.File.WriteAllText(System.String,System.String)
+  - System.IO.File.WriteAllText(System.String,System.String,System.Text.Encoding)
+  href: System.IO.File.yml
+  name: File
+  fullName: System.IO.File
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.IO.FileSystem/src/System/IO/File.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 20
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Provides static methods for the creation, copying, deletion, moving, and opening of a single file, and aids in the creation of @'System.IO.FileStream' objects.To browse the .NET Framework source code for this type, see the Reference Source.
+  syntax:
+    content: public class File
+    content.vb: Public Class File
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.IO.File.OpenText(System.String)
+  id: OpenText(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: OpenText(String)
+  fullName: System.IO.File.OpenText(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 22
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Opens an existing UTF-8 encoded text file for reading.
+  syntax:
+    content: public static StreamReader OpenText(string path)
+    content.vb: Public Shared Function OpenText(path As String) As StreamReader
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to be opened for reading.
+    return:
+      type: System.IO.StreamReader
+      description: A @'System.IO.StreamReader' on the specified path.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid, (for example, it is on an unmapped drive).
+  - type: System.IO.FileNotFoundException
+    description: The file specified in *path* was not found.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.CreateText(System.String)
+  id: CreateText(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: CreateText(String)
+  fullName: System.IO.File.CreateText(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 32
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Creates or opens a file for writing UTF-8 encoded text.
+  syntax:
+    content: public static StreamWriter CreateText(string path)
+    content.vb: Public Shared Function CreateText(path As String) As StreamWriter
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to be opened for writing.
+    return:
+      type: System.IO.StreamWriter
+      description: A @'System.IO.StreamWriter' that writes to the specified file using UTF-8 encoding.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.AppendText(System.String)
+  id: AppendText(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: AppendText(String)
+  fullName: System.IO.File.AppendText(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 42
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Creates a @'System.IO.StreamWriter' that appends UTF-8 encoded text to an existing file, or to a new file if the specified file does not exist.
+  syntax:
+    content: public static StreamWriter AppendText(string path)
+    content.vb: Public Shared Function AppendText(path As String) As StreamWriter
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the file to append to.
+    return:
+      type: System.IO.StreamWriter
+      description: A stream writer that appends UTF-8 encoded text to the specified file or to a new file.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: "The specified path is invalid (for example, the directory doesn’t exist or it is on an unmapped drive)."
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.Copy(System.String,System.String)
+  id: Copy(System.String,System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Copy(String, String)
+  fullName: System.IO.File.Copy(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 62
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Copies an existing file to a new file. Overwriting a file of the same name is not allowed.
+  syntax:
+    content: public static void Copy(string sourceFileName, string destFileName)
+    content.vb: Public Shared Sub Copy(sourceFileName As String, destFileName As String)
+    parameters:
+    - id: sourceFileName
+      type: System.String
+      description: The file to copy.
+    - id: destFileName
+      type: System.String
+      description: The name of the destination file. This cannot be a directory or an existing file.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.ArgumentException
+    description: '*sourceFileName* or *destFileName* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.-or- *sourceFileName* or *destFileName* specifies a directory.'
+  - type: System.ArgumentNullException
+    description: '*sourceFileName* or *destFileName* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The path specified in *sourceFileName* or *destFileName* is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.FileNotFoundException
+    description: '*sourceFileName* was not found.'
+  - type: System.IO.IOException
+    description: '*destFileName* exists.-or- An I/O error has occurred.'
+  - type: System.NotSupportedException
+    description: '*sourceFileName* or *destFileName* is in an invalid format.'
+- uid: System.IO.File.Copy(System.String,System.String,System.Boolean)
+  id: Copy(System.String,System.String,System.Boolean)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Copy(String, String, Boolean)
+  fullName: System.IO.File.Copy(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 86
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Copies an existing file to a new file. Overwriting a file of the same name is allowed.
+  syntax:
+    content: public static void Copy(string sourceFileName, string destFileName, bool overwrite)
+    content.vb: Public Shared Sub Copy(sourceFileName As String, destFileName As String, overwrite As Boolean)
+    parameters:
+    - id: sourceFileName
+      type: System.String
+      description: The file to copy.
+    - id: destFileName
+      type: System.String
+      description: The name of the destination file. This cannot be a directory.
+    - id: overwrite
+      type: System.Boolean
+      description: true if the destination file can be overwritten; otherwise, false.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission. -or-*destFileName* is read-only.
+  - type: System.ArgumentException
+    description: '*sourceFileName* or *destFileName* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.-or- *sourceFileName* or *destFileName* specifies a directory.'
+  - type: System.ArgumentNullException
+    description: '*sourceFileName* or *destFileName* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The path specified in *sourceFileName* or *destFileName* is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.FileNotFoundException
+    description: '*sourceFileName* was not found.'
+  - type: System.IO.IOException
+    description: '*destFileName* exists and *overwrite* is false.-or- An I/O error has occurred.'
+  - type: System.NotSupportedException
+    description: '*sourceFileName* or *destFileName* is in an invalid format.'
+- uid: System.IO.File.Create(System.String)
+  id: Create(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Create(String)
+  fullName: System.IO.File.Create(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 129
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Creates or overwrites a file in the specified path.
+  syntax:
+    content: public static FileStream Create(string path)
+    content.vb: Public Shared Function Create(path As String) As FileStream
+    parameters:
+    - id: path
+      type: System.String
+      description: The path and name of the file to create.
+    return:
+      type: System.IO.FileStream
+      description: A @'System.IO.FileStream' that provides read/write access to the file specified in *path*.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.-or- *path* specified a file that is read-only.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while creating the file.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.Create(System.String,System.Int32)
+  id: Create(System.String,System.Int32)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Create(String, Int32)
+  fullName: System.IO.File.Create(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 142
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Creates or overwrites the specified file.
+  syntax:
+    content: public static FileStream Create(string path, int bufferSize)
+    content.vb: Public Shared Function Create(path As String, bufferSize As Integer) As FileStream
+    parameters:
+    - id: path
+      type: System.String
+      description: The name of the file.
+    - id: bufferSize
+      type: System.Int32
+      description: The number of bytes buffered for reads and writes to the file.
+    return:
+      type: System.IO.FileStream
+      description: A @'System.IO.FileStream' with the specified buffer size that provides read/write access to the file specified in *path*.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.-or- *path* specified a file that is read-only.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while creating the file.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.Create(System.String,System.Int32,System.IO.FileOptions)
+  id: Create(System.String,System.Int32,System.IO.FileOptions)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Create(String, Int32, FileOptions)
+  fullName: System.IO.File.Create(System.String, System.Int32, System.IO.FileOptions)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 147
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Creates or overwrites the specified file, specifying a buffer size and a @'System.IO.FileOptions' value that describes how to create or overwrite the file.
+  syntax:
+    content: public static FileStream Create(string path, int bufferSize, FileOptions options)
+    content.vb: Public Shared Function Create(path As String, bufferSize As Integer, options As FileOptions) As FileStream
+    parameters:
+    - id: path
+      type: System.String
+      description: The name of the file.
+    - id: bufferSize
+      type: System.Int32
+      description: The number of bytes buffered for reads and writes to the file.
+    - id: options
+      type: System.IO.FileOptions
+      description: One of the @'System.IO.FileOptions' values that describes how to create or overwrite the file.
+    return:
+      type: System.IO.FileStream
+      description: A new file with the specified buffer size.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.-or- *path* specified a file that is read-only. -or-@'System.IO.FileOptions.Encrypted' is specified for *options* and file encryption is not supported on the current platform.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive.
+  - type: System.IO.IOException
+    description: An I/O error occurred while creating the file.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.-or- *path* specified a file that is read-only.
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.-or- *path* specified a file that is read-only.
+- uid: System.IO.File.Delete(System.String)
+  id: Delete(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Delete(String)
+  fullName: System.IO.File.Delete(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 162
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Deletes the specified file.
+  syntax:
+    content: public static void Delete(string path)
+    content.vb: Public Shared Sub Delete(path As String)
+    parameters:
+    - id: path
+      type: System.String
+      description: The name of the file to be deleted. Wildcard characters are not supported.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: 'The specified file is in use. -or-There is an open handle on the file, and the operating system is Windows XP or earlier. This open handle can result from enumerating directories and files. For more information, see How to: Enumerate Directories and Files.'
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.-or- The file is an executable file that is in use.-or- *path* is a directory.-or- *path* specified a read-only file.
+- uid: System.IO.File.Exists(System.String)
+  id: Exists(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Exists(String)
+  fullName: System.IO.File.Exists(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 182
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Determines whether the specified file exists.
+  syntax:
+    content: public static bool Exists(string path)
+    content.vb: Public Shared Function Exists(path As String) As Boolean
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to check.
+    return:
+      type: System.Boolean
+      description: true if the caller has the required permissions and *path* contains the name of an existing file; otherwise, false. This method also returns false if *path* is null, an invalid path, or a zero-length string. If the caller does not have sufficient permissions to read the specified file, no exception is thrown and the method returns false regardless of the existence of *path*.
+- uid: System.IO.File.Open(System.String,System.IO.FileMode)
+  id: Open(System.String,System.IO.FileMode)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Open(String, FileMode)
+  fullName: System.IO.File.Open(System.String, System.IO.FileMode)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 219
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Opens a @'System.IO.FileStream' on the specified path with read/write access.
+  syntax:
+    content: public static FileStream Open(string path, FileMode mode)
+    content.vb: Public Shared Function Open(path As String, mode As FileMode) As FileStream
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to open.
+    - id: mode
+      type: System.IO.FileMode
+      description: A @'System.IO.FileMode' value that specifies whether a file is created if one does not exist, and determines whether the contents of existing files are retained or overwritten.
+    return:
+      type: System.IO.FileStream
+      description: A @'System.IO.FileStream' opened in the specified mode and path, with read/write access and not shared.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid, (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only.-or- This operation is not supported on the current platform.-or- *path* specified a directory.-or- The caller does not have the required permission. -or-*mode* is @''System.IO.FileMode.Create'' and the specified file is a hidden file.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*mode* specified an invalid value.'
+  - type: System.IO.FileNotFoundException
+    description: The file specified in *path* was not found.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.Open(System.String,System.IO.FileMode,System.IO.FileAccess)
+  id: Open(System.String,System.IO.FileMode,System.IO.FileAccess)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Open(String, FileMode, FileAccess)
+  fullName: System.IO.File.Open(System.String, System.IO.FileMode, System.IO.FileAccess)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 224
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Opens a @'System.IO.FileStream' on the specified path, with the specified mode and access.
+  syntax:
+    content: public static FileStream Open(string path, FileMode mode, FileAccess access)
+    content.vb: Public Shared Function Open(path As String, mode As FileMode, access As FileAccess) As FileStream
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to open.
+    - id: mode
+      type: System.IO.FileMode
+      description: A @'System.IO.FileMode' value that specifies whether a file is created if one does not exist, and determines whether the contents of existing files are retained or overwritten.
+    - id: access
+      type: System.IO.FileAccess
+      description: A @'System.IO.FileAccess' value that specifies the operations that can be performed on the file.
+    return:
+      type: System.IO.FileStream
+      description: An unshared @'System.IO.FileStream' that provides access to the specified file, with the specified mode and access.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.-or- *access* specified Read and *mode* specified Create, CreateNew, Truncate, or Append.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid, (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only and *access* is not Read.-or- *path* specified a directory.-or- The caller does not have the required permission. -or-*mode* is @''System.IO.FileMode.Create'' and the specified file is a hidden file.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*mode* or *access* specified an invalid value.'
+  - type: System.IO.FileNotFoundException
+    description: The file specified in *path* was not found.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.Open(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  id: Open(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Open(String, FileMode, FileAccess, FileShare)
+  fullName: System.IO.File.Open(System.String, System.IO.FileMode, System.IO.FileAccess, System.IO.FileShare)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 229
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Opens a @'System.IO.FileStream' on the specified path, having the specified mode with read, write, or read/write access and the specified sharing option.
+  syntax:
+    content: public static FileStream Open(string path, FileMode mode, FileAccess access, FileShare share)
+    content.vb: Public Shared Function Open(path As String, mode As FileMode, access As FileAccess, share As FileShare) As FileStream
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to open.
+    - id: mode
+      type: System.IO.FileMode
+      description: A @'System.IO.FileMode' value that specifies whether a file is created if one does not exist, and determines whether the contents of existing files are retained or overwritten.
+    - id: access
+      type: System.IO.FileAccess
+      description: A @'System.IO.FileAccess' value that specifies the operations that can be performed on the file.
+    - id: share
+      type: System.IO.FileShare
+      description: A @'System.IO.FileShare' value specifying the type of access other threads have to the file.
+    return:
+      type: System.IO.FileStream
+      description: A @'System.IO.FileStream' on the specified path, having the specified mode with read, write, or read/write access and the specified sharing option.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.-or- *access* specified Read and *mode* specified Create, CreateNew, Truncate, or Append.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid, (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only and *access* is not Read.-or- *path* specified a directory.-or- The caller does not have the required permission. -or-*mode* is @''System.IO.FileMode.Create'' and the specified file is a hidden file.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*mode*, *access*, or *share* specified an invalid value.'
+  - type: System.IO.FileNotFoundException
+    description: The file specified in *path* was not found.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.SetCreationTime(System.String,System.DateTime)
+  id: SetCreationTime(System.String,System.DateTime)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: SetCreationTime(String, DateTime)
+  fullName: System.IO.File.SetCreationTime(System.String, System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 246
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Sets the date and time the file was created.
+  syntax:
+    content: public static void SetCreationTime(string path, DateTime creationTimeUtc)
+    content.vb: Public Shared Sub SetCreationTime(path As String, creationTimeUtc As Date)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file for which to set the creation date and time information.
+    - id: creationTimeUtc
+      type: System.DateTime
+  exceptions:
+  - type: System.IO.FileNotFoundException
+    description: The specified path was not found.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.IOException
+    description: An I/O error occurred while performing the operation.
+  - type: System.ArgumentOutOfRangeException
+    description: '*creationTime* specifies a value outside the range of dates, times, or both permitted for this operation.'
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.SetCreationTimeUtc(System.String,System.DateTime)
+  id: SetCreationTimeUtc(System.String,System.DateTime)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: SetCreationTimeUtc(String, DateTime)
+  fullName: System.IO.File.SetCreationTimeUtc(System.String, System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 252
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Sets the date and time, in coordinated universal time (UTC), that the file was created.
+  syntax:
+    content: public static void SetCreationTimeUtc(string path, DateTime creationTime)
+    content.vb: Public Shared Sub SetCreationTimeUtc(path As String, creationTime As Date)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file for which to set the creation date and time information.
+    - id: creationTime
+      type: System.DateTime
+  exceptions:
+  - type: System.IO.FileNotFoundException
+    description: The specified path was not found.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.IOException
+    description: An I/O error occurred while performing the operation.
+  - type: System.ArgumentOutOfRangeException
+    description: '*creationTime* specifies a value outside the range of dates, times, or both permitted for this operation.'
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.GetCreationTime(System.String)
+  id: GetCreationTime(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: GetCreationTime(String)
+  fullName: System.IO.File.GetCreationTime(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 258
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Returns the creation date and time of the specified file or directory.
+  syntax:
+    content: public static DateTime GetCreationTime(string path)
+    content.vb: Public Shared Function GetCreationTime(path As String) As Date
+    parameters:
+    - id: path
+      type: System.String
+      description: The file or directory for which to obtain creation date and time information.
+    return:
+      type: System.DateTime
+      description: A @'System.DateTime' structure set to the creation date and time for the specified file or directory. This value is expressed in local time.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.GetCreationTimeUtc(System.String)
+  id: GetCreationTimeUtc(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: GetCreationTimeUtc(String)
+  fullName: System.IO.File.GetCreationTimeUtc(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 265
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Returns the creation date and time, in coordinated universal time (UTC), of the specified file or directory.
+  syntax:
+    content: public static DateTime GetCreationTimeUtc(string path)
+    content.vb: Public Shared Function GetCreationTimeUtc(path As String) As Date
+    parameters:
+    - id: path
+      type: System.String
+      description: The file or directory for which to obtain creation date and time information.
+    return:
+      type: System.DateTime
+      description: A @'System.DateTime' structure set to the creation date and time for the specified file or directory. This value is expressed in UTC time.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.SetLastAccessTime(System.String,System.DateTime)
+  id: SetLastAccessTime(System.String,System.DateTime)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: SetLastAccessTime(String, DateTime)
+  fullName: System.IO.File.SetLastAccessTime(System.String, System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 272
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Sets the date and time the specified file was last accessed.
+  syntax:
+    content: public static void SetLastAccessTime(string path, DateTime lastAccessTime)
+    content.vb: Public Shared Sub SetLastAccessTime(path As String, lastAccessTime As Date)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file for which to set the access date and time information.
+    - id: lastAccessTime
+      type: System.DateTime
+      description: A @'System.DateTime' containing the value to set for the last access date and time of *path*. This value is expressed in local time.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.FileNotFoundException
+    description: The specified path was not found.
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*lastAccessTime* specifies a value outside the range of dates or times permitted for this operation.'
+- uid: System.IO.File.SetLastAccessTimeUtc(System.String,System.DateTime)
+  id: SetLastAccessTimeUtc(System.String,System.DateTime)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: SetLastAccessTimeUtc(String, DateTime)
+  fullName: System.IO.File.SetLastAccessTimeUtc(System.String, System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 278
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Sets the date and time, in coordinated universal time (UTC), that the specified file was last accessed.
+  syntax:
+    content: public static void SetLastAccessTimeUtc(string path, DateTime lastAccessTimeUtc)
+    content.vb: Public Shared Sub SetLastAccessTimeUtc(path As String, lastAccessTimeUtc As Date)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file for which to set the access date and time information.
+    - id: lastAccessTimeUtc
+      type: System.DateTime
+      description: A @'System.DateTime' containing the value to set for the last access date and time of *path*. This value is expressed in UTC time.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.FileNotFoundException
+    description: The specified path was not found.
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*lastAccessTimeUtc* specifies a value outside the range of dates or times permitted for this operation.'
+- uid: System.IO.File.GetLastAccessTime(System.String)
+  id: GetLastAccessTime(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: GetLastAccessTime(String)
+  fullName: System.IO.File.GetLastAccessTime(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 284
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Returns the date and time the specified file or directory was last accessed.
+  syntax:
+    content: public static DateTime GetLastAccessTime(string path)
+    content.vb: Public Shared Function GetLastAccessTime(path As String) As Date
+    parameters:
+    - id: path
+      type: System.String
+      description: The file or directory for which to obtain access date and time information.
+    return:
+      type: System.DateTime
+      description: A @'System.DateTime' structure set to the date and time that the specified file or directory was last accessed. This value is expressed in local time.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.GetLastAccessTimeUtc(System.String)
+  id: GetLastAccessTimeUtc(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: GetLastAccessTimeUtc(String)
+  fullName: System.IO.File.GetLastAccessTimeUtc(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 291
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Returns the date and time, in coordinated universal time (UTC), that the specified file or directory was last accessed.
+  syntax:
+    content: public static DateTime GetLastAccessTimeUtc(string path)
+    content.vb: Public Shared Function GetLastAccessTimeUtc(path As String) As Date
+    parameters:
+    - id: path
+      type: System.String
+      description: The file or directory for which to obtain access date and time information.
+    return:
+      type: System.DateTime
+      description: A @'System.DateTime' structure set to the date and time that the specified file or directory was last accessed. This value is expressed in UTC time.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.SetLastWriteTime(System.String,System.DateTime)
+  id: SetLastWriteTime(System.String,System.DateTime)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: SetLastWriteTime(String, DateTime)
+  fullName: System.IO.File.SetLastWriteTime(System.String, System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 298
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Sets the date and time that the specified file was last written to.
+  syntax:
+    content: public static void SetLastWriteTime(string path, DateTime lastWriteTime)
+    content.vb: Public Shared Sub SetLastWriteTime(path As String, lastWriteTime As Date)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file for which to set the date and time information.
+    - id: lastWriteTime
+      type: System.DateTime
+      description: A @'System.DateTime' containing the value to set for the last write date and time of *path*. This value is expressed in local time.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.FileNotFoundException
+    description: The specified path was not found.
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*lastWriteTime* specifies a value outside the range of dates or times permitted for this operation.'
+- uid: System.IO.File.SetLastWriteTimeUtc(System.String,System.DateTime)
+  id: SetLastWriteTimeUtc(System.String,System.DateTime)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: SetLastWriteTimeUtc(String, DateTime)
+  fullName: System.IO.File.SetLastWriteTimeUtc(System.String, System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 304
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Sets the date and time, in coordinated universal time (UTC), that the specified file was last written to.
+  syntax:
+    content: public static void SetLastWriteTimeUtc(string path, DateTime lastWriteTimeUtc)
+    content.vb: Public Shared Sub SetLastWriteTimeUtc(path As String, lastWriteTimeUtc As Date)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file for which to set the date and time information.
+    - id: lastWriteTimeUtc
+      type: System.DateTime
+      description: A @'System.DateTime' containing the value to set for the last write date and time of *path*. This value is expressed in UTC time.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.FileNotFoundException
+    description: The specified path was not found.
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*lastWriteTimeUtc* specifies a value outside the range of dates or times permitted for this operation.'
+- uid: System.IO.File.GetLastWriteTime(System.String)
+  id: GetLastWriteTime(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: GetLastWriteTime(String)
+  fullName: System.IO.File.GetLastWriteTime(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 310
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Returns the date and time the specified file or directory was last written to.
+  syntax:
+    content: public static DateTime GetLastWriteTime(string path)
+    content.vb: Public Shared Function GetLastWriteTime(path As String) As Date
+    parameters:
+    - id: path
+      type: System.String
+      description: The file or directory for which to obtain write date and time information.
+    return:
+      type: System.DateTime
+      description: A @'System.DateTime' structure set to the date and time that the specified file or directory was last written to. This value is expressed in local time.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.GetLastWriteTimeUtc(System.String)
+  id: GetLastWriteTimeUtc(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: GetLastWriteTimeUtc(String)
+  fullName: System.IO.File.GetLastWriteTimeUtc(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 317
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Returns the date and time, in coordinated universal time (UTC), that the specified file or directory was last written to.
+  syntax:
+    content: public static DateTime GetLastWriteTimeUtc(string path)
+    content.vb: Public Shared Function GetLastWriteTimeUtc(path As String) As Date
+    parameters:
+    - id: path
+      type: System.String
+      description: The file or directory for which to obtain write date and time information.
+    return:
+      type: System.DateTime
+      description: A @'System.DateTime' structure set to the date and time that the specified file or directory was last written to. This value is expressed in UTC time.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.GetAttributes(System.String)
+  id: GetAttributes(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: GetAttributes(String)
+  fullName: System.IO.File.GetAttributes(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 324
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Gets the @'System.IO.FileAttributes' of the file on the path.
+  syntax:
+    content: public static FileAttributes GetAttributes(string path)
+    content.vb: Public Shared Function GetAttributes(path As String) As FileAttributes
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the file.
+    return:
+      type: System.IO.FileAttributes
+      description: The @'System.IO.FileAttributes' of the file on the path.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is empty, contains only white spaces, or contains invalid characters.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.IO.FileNotFoundException
+    description: '*path* represents a file and is invalid, such as being on an unmapped drive, or the file cannot be found.'
+  - type: System.IO.DirectoryNotFoundException
+    description: '*path* represents a directory and is invalid, such as being on an unmapped drive, or the directory cannot be found.'
+  - type: System.IO.IOException
+    description: This file is being used by another process.
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+- uid: System.IO.File.SetAttributes(System.String,System.IO.FileAttributes)
+  id: SetAttributes(System.String,System.IO.FileAttributes)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: SetAttributes(String, FileAttributes)
+  fullName: System.IO.File.SetAttributes(System.String, System.IO.FileAttributes)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 331
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Sets the specified @'System.IO.FileAttributes' of the file on the specified path.
+  syntax:
+    content: public static void SetAttributes(string path, FileAttributes fileAttributes)
+    content.vb: Public Shared Sub SetAttributes(path As String, fileAttributes As FileAttributes)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the file.
+    - id: fileAttributes
+      type: System.IO.FileAttributes
+      description: A bitwise combination of the enumeration values.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is empty, contains only white spaces, contains invalid characters, or the file attribute is invalid.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid, (for example, it is on an unmapped drive).
+  - type: System.IO.FileNotFoundException
+    description: The file cannot be found.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only.-or- This operation is not supported on the current platform.-or- *path* specified a directory.-or- The caller does not have the required permission.'
+- uid: System.IO.File.OpenRead(System.String)
+  id: OpenRead(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: OpenRead(String)
+  fullName: System.IO.File.OpenRead(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 338
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Opens an existing file for reading.
+  syntax:
+    content: public static FileStream OpenRead(string path)
+    content.vb: Public Shared Function OpenRead(path As String) As FileStream
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to be opened for reading.
+    return:
+      type: System.IO.FileStream
+      description: A read-only @'System.IO.FileStream' on the specified path.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid, (for example, it is on an unmapped drive).
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a directory.-or- The caller does not have the required permission.'
+  - type: System.IO.FileNotFoundException
+    description: The file specified in *path* was not found.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+- uid: System.IO.File.OpenWrite(System.String)
+  id: OpenWrite(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: OpenWrite(String)
+  fullName: System.IO.File.OpenWrite(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 345
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Opens an existing file or creates a new file for writing.
+  syntax:
+    content: public static FileStream OpenWrite(string path)
+    content.vb: Public Shared Function OpenWrite(path As String) As FileStream
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to be opened for writing.
+    return:
+      type: System.IO.FileStream
+      description: An unshared @'System.IO.FileStream' object on the specified path with @'System.IO.FileAccess.Write' access.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.-or- *path* specified a read-only file or directory.
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid, (for example, it is on an unmapped drive).
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+- uid: System.IO.File.ReadAllText(System.String)
+  id: ReadAllText(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: ReadAllText(String)
+  fullName: System.IO.File.ReadAllText(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 351
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Opens a text file, reads all lines of the file, and then closes the file.
+  syntax:
+    content: public static string ReadAllText(string path)
+    content.vb: Public Shared Function ReadAllText(path As String) As String
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to open for reading.
+    return:
+      type: System.String
+      description: A string containing all lines of the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only.-or- This operation is not supported on the current platform.-or- *path* specified a directory.-or- The caller does not have the required permission.'
+  - type: System.IO.FileNotFoundException
+    description: The file specified in *path* was not found.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.IO.File.ReadAllText(System.String,System.Text.Encoding)
+  id: ReadAllText(System.String,System.Text.Encoding)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: ReadAllText(String, Encoding)
+  fullName: System.IO.File.ReadAllText(System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 363
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Opens a file, reads all lines of the file with the specified encoding, and then closes the file.
+  syntax:
+    content: public static string ReadAllText(string path, Encoding encoding)
+    content.vb: Public Shared Function ReadAllText(path As String, encoding As Encoding) As String
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to open for reading.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding applied to the contents of the file.
+    return:
+      type: System.String
+      description: A string containing all lines of the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only.-or- This operation is not supported on the current platform.-or- *path* specified a directory.-or- The caller does not have the required permission.'
+  - type: System.IO.FileNotFoundException
+    description: The file specified in *path* was not found.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.IO.File.WriteAllText(System.String,System.String)
+  id: WriteAllText(System.String,System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: WriteAllText(String, String)
+  fullName: System.IO.File.WriteAllText(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 390
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Creates a new file, writes the specified string to the file, and then closes the file. If the target file already exists, it is overwritten.
+  syntax:
+    content: public static void WriteAllText(string path, string contents)
+    content.vb: Public Shared Sub WriteAllText(path As String, contents As String)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to write to.
+    - id: contents
+      type: System.String
+      description: The string to write to the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null or *contents* is empty.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only.-or- This operation is not supported on the current platform.-or- *path* specified a directory.-or- The caller does not have the required permission.'
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.IO.File.WriteAllText(System.String,System.String,System.Text.Encoding)
+  id: WriteAllText(System.String,System.String,System.Text.Encoding)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: WriteAllText(String, String, Encoding)
+  fullName: System.IO.File.WriteAllText(System.String, System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 402
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Creates a new file, writes the specified string to the file using the specified encoding, and then closes the file. If the target file already exists, it is overwritten.
+  syntax:
+    content: public static void WriteAllText(string path, string contents, Encoding encoding)
+    content.vb: Public Shared Sub WriteAllText(path As String, contents As String, encoding As Encoding)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to write to.
+    - id: contents
+      type: System.String
+      description: The string to write to the file.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding to apply to the string.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null or *contents* is empty.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only.-or- This operation is not supported on the current platform.-or- *path* specified a directory.-or- The caller does not have the required permission.'
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.IO.File.ReadAllBytes(System.String)
+  id: ReadAllBytes(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: ReadAllBytes(String)
+  fullName: System.IO.File.ReadAllBytes(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 429
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Opens a binary file, reads the contents of the file into a byte array, and then closes the file.
+  syntax:
+    content: public static byte[] ReadAllBytes(string path)
+    content.vb: Public Shared Function ReadAllBytes(path As String) As Byte()
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to open for reading.
+    return:
+      type: System.Byte[]
+      description: A byte array containing the contents of the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: This operation is not supported on the current platform.-or- *path* specified a directory.-or- The caller does not have the required permission.
+  - type: System.IO.FileNotFoundException
+    description: The file specified in *path* was not found.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.IO.File.WriteAllBytes(System.String,System.Byte[])
+  id: WriteAllBytes(System.String,System.Byte[])
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: WriteAllBytes(String, Byte[])
+  name.vb: WriteAllBytes(String, Byte())
+  fullName: System.IO.File.WriteAllBytes(System.String, System.Byte[])
+  fullName.vb: System.IO.File.WriteAllBytes(System.String, System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 460
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Creates a new file, writes the specified byte array to the file, and then closes the file. If the target file already exists, it is overwritten.
+  syntax:
+    content: public static void WriteAllBytes(string path, byte[] bytes)
+    content.vb: Public Shared Sub WriteAllBytes(path As String, bytes As Byte())
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to write to.
+    - id: bytes
+      type: System.Byte[]
+      description: The bytes to write to the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null or the byte array is empty.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only.-or- This operation is not supported on the current platform.-or- *path* specified a directory.-or- The caller does not have the required permission.'
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.IO.File.ReadAllLines(System.String)
+  id: ReadAllLines(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: ReadAllLines(String)
+  fullName: System.IO.File.ReadAllLines(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 486
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Opens a text file, reads all lines of the file, and then closes the file.
+  syntax:
+    content: public static string[] ReadAllLines(string path)
+    content.vb: Public Shared Function ReadAllLines(path As String) As String()
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to open for reading.
+    return:
+      type: System.String[]
+      description: A string array containing all lines of the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only.-or- This operation is not supported on the current platform.-or- *path* specified a directory.-or- The caller does not have the required permission.'
+  - type: System.IO.FileNotFoundException
+    description: The file specified in *path* was not found.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.IO.File.ReadAllLines(System.String,System.Text.Encoding)
+  id: ReadAllLines(System.String,System.Text.Encoding)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: ReadAllLines(String, Encoding)
+  fullName: System.IO.File.ReadAllLines(System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 497
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Opens a file, reads all lines of the file with the specified encoding, and then closes the file.
+  syntax:
+    content: public static string[] ReadAllLines(string path, Encoding encoding)
+    content.vb: Public Shared Function ReadAllLines(path As String, encoding As Encoding) As String()
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to open for reading.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding applied to the contents of the file.
+    return:
+      type: System.String[]
+      description: A string array containing all lines of the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only.-or- This operation is not supported on the current platform.-or- *path* specified a directory.-or- The caller does not have the required permission.'
+  - type: System.IO.FileNotFoundException
+    description: The file specified in *path* was not found.
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.IO.File.ReadLines(System.String)
+  id: ReadLines(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: ReadLines(String)
+  fullName: System.IO.File.ReadLines(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 528
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Reads the lines of a file.
+  syntax:
+    content: public static IEnumerable<string> ReadLines(string path)
+    content.vb: Public Shared Function ReadLines(path As String) As IEnumerable(Of String)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to read.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: All the lines of the file, or the lines that are the result of a query.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters defined by the @''System.IO.Path.GetInvalidPathChars'' method.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.DirectoryNotFoundException
+    description: '*path* is invalid (for example, it is on an unmapped drive).'
+  - type: System.IO.FileNotFoundException
+    description: The file specified by *path* was not found.
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.IO.PathTooLongException
+    description: '*path* exceeds the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specifies a file that is read-only.-or-This operation is not supported on the current platform.-or-*path* is a directory.-or-The caller does not have the required permission.'
+- uid: System.IO.File.ReadLines(System.String,System.Text.Encoding)
+  id: ReadLines(System.String,System.Text.Encoding)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: ReadLines(String, Encoding)
+  fullName: System.IO.File.ReadLines(System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 539
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Read the lines of a file that has a specified encoding.
+  syntax:
+    content: public static IEnumerable<string> ReadLines(string path, Encoding encoding)
+    content.vb: Public Shared Function ReadLines(path As String, encoding As Encoding) As IEnumerable(Of String)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to read.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding that is applied to the contents of the file.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: All the lines of the file, or the lines that are the result of a query.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by the @''System.IO.Path.GetInvalidPathChars'' method.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.DirectoryNotFoundException
+    description: '*path* is invalid (for example, it is on an unmapped drive).'
+  - type: System.IO.FileNotFoundException
+    description: The file specified by *path* was not found.
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.IO.PathTooLongException
+    description: '*path* exceeds the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specifies a file that is read-only.-or-This operation is not supported on the current platform.-or-*path* is a directory.-or-The caller does not have the required permission.'
+- uid: System.IO.File.WriteAllLines(System.String,System.Collections.Generic.IEnumerable{System.String})
+  id: WriteAllLines(System.String,System.Collections.Generic.IEnumerable{System.String})
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: WriteAllLines(String, IEnumerable<String>)
+  name.vb: WriteAllLines(String, IEnumerable(Of String))
+  fullName: System.IO.File.WriteAllLines(System.String, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: System.IO.File.WriteAllLines(System.String, System.Collections.Generic.IEnumerable(Of System.String))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 552
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Creates a new file, writes a collection of strings to the file, and then closes the file.
+  syntax:
+    content: public static void WriteAllLines(string path, IEnumerable<string> contents)
+    content.vb: Public Shared Sub WriteAllLines(path As String, contents As IEnumerable(Of String))
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to write to.
+    - id: contents
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The lines to write to the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters defined by the @''System.IO.Path.GetInvalidPathChars'' method.'
+  - type: System.ArgumentNullException
+    description: Either* path *or *contents* is null.
+  - type: System.IO.DirectoryNotFoundException
+    description: '*path* is invalid (for example, it is on an unmapped drive).'
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.IO.PathTooLongException
+    description: '*path* exceeds the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.'
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specifies a file that is read-only.-or-This operation is not supported on the current platform.-or-*path* is a directory.-or-The caller does not have the required permission.'
+- uid: System.IO.File.WriteAllLines(System.String,System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding)
+  id: WriteAllLines(System.String,System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: WriteAllLines(String, IEnumerable<String>, Encoding)
+  name.vb: WriteAllLines(String, IEnumerable(Of String), Encoding)
+  fullName: System.IO.File.WriteAllLines(System.String, System.Collections.Generic.IEnumerable<System.String>, System.Text.Encoding)
+  fullName.vb: System.IO.File.WriteAllLines(System.String, System.Collections.Generic.IEnumerable(Of System.String), System.Text.Encoding)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 567
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Creates a new file by using the specified encoding, writes a collection of strings to the file, and then closes the file.
+  syntax:
+    content: public static void WriteAllLines(string path, IEnumerable<string> contents, Encoding encoding)
+    content.vb: Public Shared Sub WriteAllLines(path As String, contents As IEnumerable(Of String), encoding As Encoding)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to write to.
+    - id: contents
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The lines to write to the file.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters defined by the @''System.IO.Path.GetInvalidPathChars'' method.'
+  - type: System.ArgumentNullException
+    description: Either* path*,* contents*, or *encoding* is null.
+  - type: System.IO.DirectoryNotFoundException
+    description: '*path* is invalid (for example, it is on an unmapped drive).'
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.IO.PathTooLongException
+    description: '*path* exceeds the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.'
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specifies a file that is read-only.-or-This operation is not supported on the current platform.-or-*path* is a directory.-or-The caller does not have the required permission.'
+- uid: System.IO.File.AppendAllText(System.String,System.String)
+  id: AppendAllText(System.String,System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: AppendAllText(String, String)
+  fullName: System.IO.File.AppendAllText(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 599
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Opens a file, appends the specified string to the file, and then closes the file. If the file does not exist, this method creates a file, writes the specified string to the file, then closes the file.
+  syntax:
+    content: public static void AppendAllText(string path, string contents)
+    content.vb: Public Shared Sub AppendAllText(path As String, contents As String)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to append the specified string to.
+    - id: contents
+      type: System.String
+      description: The string to append to the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: "The specified path is invalid (for example, the directory doesn’t exist or it is on an unmapped drive)."
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only.-or- This operation is not supported on the current platform.-or- *path* specified a directory.-or- The caller does not have the required permission.'
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.IO.File.AppendAllText(System.String,System.String,System.Text.Encoding)
+  id: AppendAllText(System.String,System.String,System.Text.Encoding)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: AppendAllText(String, String, Encoding)
+  fullName: System.IO.File.AppendAllText(System.String, System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 610
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Appends the specified string to the file, creating the file if it does not already exist.
+  syntax:
+    content: public static void AppendAllText(string path, string contents, Encoding encoding)
+    content.vb: Public Shared Sub AppendAllText(path As String, contents As String, encoding As Encoding)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to append the specified string to.
+    - id: contents
+      type: System.String
+      description: The string to append to the file.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: "The specified path is invalid (for example, the directory doesn’t exist or it is on an unmapped drive)."
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only.-or- This operation is not supported on the current platform.-or- *path* specified a directory.-or- The caller does not have the required permission.'
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.IO.File.AppendAllLines(System.String,System.Collections.Generic.IEnumerable{System.String})
+  id: AppendAllLines(System.String,System.Collections.Generic.IEnumerable{System.String})
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: AppendAllLines(String, IEnumerable<String>)
+  name.vb: AppendAllLines(String, IEnumerable(Of String))
+  fullName: System.IO.File.AppendAllLines(System.String, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: System.IO.File.AppendAllLines(System.String, System.Collections.Generic.IEnumerable(Of System.String))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 635
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Appends lines to a file, and then closes the file. If the specified file does not exist, this method creates a file, writes the specified lines to the file, and then closes the file.
+  syntax:
+    content: public static void AppendAllLines(string path, IEnumerable<string> contents)
+    content.vb: Public Shared Sub AppendAllLines(path As String, contents As IEnumerable(Of String))
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to append the lines to. The file is created if it doesn't already exist.
+    - id: contents
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The lines to append to the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one more invalid characters defined by the @''System.IO.Path.GetInvalidPathChars'' method.'
+  - type: System.ArgumentNullException
+    description: Either* path *or *contents* is null.
+  - type: System.IO.DirectoryNotFoundException
+    description: "*path* is invalid (for example, the directory doesn’t exist or it is on an unmapped drive)."
+  - type: System.IO.FileNotFoundException
+    description: The file specified by *path* was not found.
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.IO.PathTooLongException
+    description: '*path* exceeds the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.'
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have permission to write to the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specifies a file that is read-only.-or-This operation is not supported on the current platform.-or-*path* is a directory.'
+- uid: System.IO.File.AppendAllLines(System.String,System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding)
+  id: AppendAllLines(System.String,System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: AppendAllLines(String, IEnumerable<String>, Encoding)
+  name.vb: AppendAllLines(String, IEnumerable(Of String), Encoding)
+  fullName: System.IO.File.AppendAllLines(System.String, System.Collections.Generic.IEnumerable<System.String>, System.Text.Encoding)
+  fullName.vb: System.IO.File.AppendAllLines(System.String, System.Collections.Generic.IEnumerable(Of System.String), System.Text.Encoding)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 650
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Appends lines to a file by using a specified encoding, and then closes the file. If the specified file does not exist, this method creates a file, writes the specified lines to the file, and then closes the file.
+  syntax:
+    content: public static void AppendAllLines(string path, IEnumerable<string> contents, Encoding encoding)
+    content.vb: Public Shared Sub AppendAllLines(path As String, contents As IEnumerable(Of String), encoding As Encoding)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to append the lines to. The file is created if it doesn't already exist.
+    - id: contents
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The lines to append to the file.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one more invalid characters defined by the @''System.IO.Path.GetInvalidPathChars'' method.'
+  - type: System.ArgumentNullException
+    description: Either* path*, *contents*, or *encoding* is null.
+  - type: System.IO.DirectoryNotFoundException
+    description: "*path* is invalid (for example, the directory doesn’t exist or it is on an unmapped drive)."
+  - type: System.IO.FileNotFoundException
+    description: The file specified by *path* was not found.
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.IO.PathTooLongException
+    description: '*path* exceeds the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters and file names must be less than 260 characters.'
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specifies a file that is read-only.-or-This operation is not supported on the current platform.-or-*path* is a directory.-or-The caller does not have the required permission.'
+- uid: System.IO.File.Move(System.String,System.String)
+  id: Move(System.String,System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Move(String, String)
+  fullName: System.IO.File.Move(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem/src/System/IO/File.cs
+    startLine: 675
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: Moves a specified file to a new location, providing the option to specify a new file name.
+  syntax:
+    content: public static void Move(string sourceFileName, string destFileName)
+    content.vb: Public Shared Sub Move(sourceFileName As String, destFileName As String)
+    parameters:
+    - id: sourceFileName
+      type: System.String
+      description: The name of the file to move. Can include a relative or absolute path.
+    - id: destFileName
+      type: System.String
+      description: The new path and name for the file.
+  exceptions:
+  - type: System.IO.IOException
+    description: The destination file already exists.-or-*sourceFileName* was not found.
+  - type: System.ArgumentNullException
+    description: '*sourceFileName* or *destFileName* is null.'
+  - type: System.ArgumentException
+    description: '*sourceFileName* or *destFileName* is a zero-length string, contains only white space, or contains invalid characters as defined in @''System.IO.Path.InvalidPathChars''.'
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The path specified in *sourceFileName* or *destFileName* is invalid, (for example, it is on an unmapped drive).
+  - type: System.NotSupportedException
+    description: '*sourceFileName* or *destFileName* is in an invalid format.'
+references:
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IO.StreamReader
+  parent: System.IO
+  isExternal: true
+  name: StreamReader
+  fullName: System.IO.StreamReader
+- uid: System.IO.StreamWriter
+  parent: System.IO
+  isExternal: true
+  name: StreamWriter
+  fullName: System.IO.StreamWriter
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.IO.FileStream
+  parent: System.IO
+  isExternal: false
+  href: System.IO.FileStream.yml
+  name: FileStream
+  fullName: System.IO.FileStream
+  type: Class
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.IO.FileOptions
+  parent: System.IO
+  isExternal: false
+  href: System.IO.FileOptions.yml
+  name: FileOptions
+  fullName: System.IO.FileOptions
+  type: Enum
+- uid: System.IO.FileMode
+  parent: System.IO
+  isExternal: true
+  name: FileMode
+  fullName: System.IO.FileMode
+- uid: System.IO.FileAccess
+  parent: System.IO
+  isExternal: true
+  name: FileAccess
+  fullName: System.IO.FileAccess
+- uid: System.IO.FileShare
+  parent: System.IO
+  isExternal: true
+  name: FileShare
+  fullName: System.IO.FileShare
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.IO.FileAttributes
+  parent: System.IO
+  isExternal: true
+  name: FileAttributes
+  fullName: System.IO.FileAttributes
+- uid: System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  isExternal: false
+  name: System.Text
+  fullName: System.Text
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  name.vb: IEnumerable(Of String)
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

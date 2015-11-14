@@ -1,0 +1,173 @@
+items:
+- uid: System.Runtime.InteropServices.UCOMIEnumConnectionPoints
+  id: UCOMIEnumConnectionPoints
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Clone(System.Runtime.InteropServices.UCOMIEnumConnectionPoints@)
+  - System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Next(System.Int32,System.Runtime.InteropServices.UCOMIConnectionPoint[],System.Int32@)
+  - System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Reset
+  - System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Skip(System.Int32)
+  href: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.yml
+  name: UCOMIEnumConnectionPoints
+  fullName: System.Runtime.InteropServices.UCOMIEnumConnectionPoints
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumConnectionPoints.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumConnectionPoints.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints' instead.
+  syntax:
+    content: public interface UCOMIEnumConnectionPoints
+    content.vb: Public Interface UCOMIEnumConnectionPoints
+- uid: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Next(System.Int32,System.Runtime.InteropServices.UCOMIConnectionPoint[],System.Int32@)
+  id: Next(System.Int32,System.Runtime.InteropServices.UCOMIConnectionPoint[],System.Int32@)
+  parent: System.Runtime.InteropServices.UCOMIEnumConnectionPoints
+  href: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.yml
+  name: Next(Int32, UCOMIConnectionPoint[], out Int32)
+  name.vb: Next(Int32, UCOMIConnectionPoint(), ByRef Int32)
+  fullName: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Next(System.Int32, System.Runtime.InteropServices.UCOMIConnectionPoint[], out System.Int32)
+  fullName.vb: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Next(System.Int32, System.Runtime.InteropServices.UCOMIConnectionPoint(), ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumConnectionPoints.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Retrieves a specified number of items in the enumeration sequence.
+  syntax:
+    content: int Next(int celt, UCOMIConnectionPoint[] rgelt, out int pceltFetched)
+    content.vb: Function Next(celt As Integer, rgelt As UCOMIConnectionPoint(), ByRef pceltFetched As Integer) As Integer
+    parameters:
+    - id: celt
+      type: System.Int32
+      description: The number of IConnectionPoint references to return in *rgelt*.
+    - id: rgelt
+      type: System.Runtime.InteropServices.UCOMIConnectionPoint[]
+      description: On successful return, a reference to the enumerated connections.
+    - id: pceltFetched
+      type: System.Int32
+      description: On successful return, a reference to the actual number of connections enumerated in *rgelt*.
+    return:
+      type: System.Int32
+      description: S_OK if the *pceltFetched* parameter equals the *celt* parameter; otherwise, S_FALSE.
+- uid: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Skip(System.Int32)
+  id: Skip(System.Int32)
+  parent: System.Runtime.InteropServices.UCOMIEnumConnectionPoints
+  href: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.yml
+  name: Skip(Int32)
+  fullName: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Skip(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumConnectionPoints.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Skips over a specified number of items in the enumeration sequence.
+  syntax:
+    content: int Skip(int celt)
+    content.vb: Function Skip(celt As Integer) As Integer
+    parameters:
+    - id: celt
+      type: System.Int32
+      description: The number of elements to skip in the enumeration.
+    return:
+      type: System.Int32
+      description: S_OK if the number of elements skipped equals the *celt* parameter; otherwise, S_FALSE.
+- uid: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Reset
+  id: Reset
+  parent: System.Runtime.InteropServices.UCOMIEnumConnectionPoints
+  href: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.yml
+  name: Reset()
+  fullName: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Reset()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumConnectionPoints.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Resets the enumeration sequence to the beginning.
+  syntax:
+    content: int Reset()
+    content.vb: Function Reset As Integer
+    return:
+      type: System.Int32
+      description: An HRESULT with the value S_OK.
+- uid: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Clone(System.Runtime.InteropServices.UCOMIEnumConnectionPoints@)
+  id: Clone(System.Runtime.InteropServices.UCOMIEnumConnectionPoints@)
+  parent: System.Runtime.InteropServices.UCOMIEnumConnectionPoints
+  href: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.yml
+  name: Clone(out UCOMIEnumConnectionPoints)
+  name.vb: Clone(ByRef UCOMIEnumConnectionPoints)
+  fullName: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Clone(out System.Runtime.InteropServices.UCOMIEnumConnectionPoints)
+  fullName.vb: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Clone(ByRef System.Runtime.InteropServices.UCOMIEnumConnectionPoints)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumConnectionPoints.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Creates another enumerator that contains the same enumeration state as the current one.
+  syntax:
+    content: void Clone(out UCOMIEnumConnectionPoints ppenum)
+    content.vb: Sub Clone(ByRef ppenum As UCOMIEnumConnectionPoints)
+    parameters:
+    - id: ppenum
+      type: System.Runtime.InteropServices.UCOMIEnumConnectionPoints
+      description: On successful return, a reference to the newly created enumerator.
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Runtime.InteropServices.UCOMIConnectionPoint[]
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMIConnectionPoint.yml
+  name: UCOMIConnectionPoint[]
+  name.vb: UCOMIConnectionPoint()
+  fullName: System.Runtime.InteropServices.UCOMIConnectionPoint[]
+  fullName.vb: System.Runtime.InteropServices.UCOMIConnectionPoint()
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.UCOMIConnectionPoint
+    name: UCOMIConnectionPoint
+    fullName: System.Runtime.InteropServices.UCOMIConnectionPoint
+    href: System.Runtime.InteropServices.UCOMIConnectionPoint.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Runtime.InteropServices.UCOMIConnectionPoint
+    name: UCOMIConnectionPoint
+    fullName: System.Runtime.InteropServices.UCOMIConnectionPoint
+    href: System.Runtime.InteropServices.UCOMIConnectionPoint.yml
+  - name: ()
+    fullName: ()
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.InteropServices.UCOMIEnumConnectionPoints
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMIEnumConnectionPoints.yml
+  name: UCOMIEnumConnectionPoints
+  fullName: System.Runtime.InteropServices.UCOMIEnumConnectionPoints
+  type: Interface

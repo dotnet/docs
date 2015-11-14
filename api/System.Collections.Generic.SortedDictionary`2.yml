@@ -1,0 +1,1931 @@
+items:
+- uid: System.Collections.Generic.SortedDictionary`2
+  id: SortedDictionary`2
+  parent: System.Collections.Generic
+  children:
+  - System.Collections.Generic.SortedDictionary`2.#ctor
+  - System.Collections.Generic.SortedDictionary`2.#ctor(System.Collections.Generic.IComparer{`0})
+  - System.Collections.Generic.SortedDictionary`2.#ctor(System.Collections.Generic.IDictionary{`0,`1})
+  - System.Collections.Generic.SortedDictionary`2.#ctor(System.Collections.Generic.IDictionary{`0,`1},System.Collections.Generic.IComparer{`0})
+  - System.Collections.Generic.SortedDictionary`2.Add(`0,`1)
+  - System.Collections.Generic.SortedDictionary`2.Clear
+  - System.Collections.Generic.SortedDictionary`2.Comparer
+  - System.Collections.Generic.SortedDictionary`2.ContainsKey(`0)
+  - System.Collections.Generic.SortedDictionary`2.ContainsValue(`1)
+  - System.Collections.Generic.SortedDictionary`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)
+  - System.Collections.Generic.SortedDictionary`2.Count
+  - System.Collections.Generic.SortedDictionary`2.GetEnumerator
+  - System.Collections.Generic.SortedDictionary`2.Item(`0)
+  - System.Collections.Generic.SortedDictionary`2.Keys
+  - System.Collections.Generic.SortedDictionary`2.Remove(`0)
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#Add(System.Collections.Generic.KeyValuePair{`0,`1})
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#Contains(System.Collections.Generic.KeyValuePair{`0,`1})
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#IsReadOnly
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#Remove(System.Collections.Generic.KeyValuePair{`0,`1})
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IDictionary{TKey,TValue}#Keys
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IDictionary{TKey,TValue}#Values
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{TKey,TValue}}#GetEnumerator
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IReadOnlyDictionary{TKey,TValue}#Keys
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IReadOnlyDictionary{TKey,TValue}#Values
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#ICollection#IsSynchronized
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#ICollection#SyncRoot
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Add(System.Object,System.Object)
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Contains(System.Object)
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#GetEnumerator
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#IsFixedSize
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#IsReadOnly
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Item(System.Object)
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Keys
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Remove(System.Object)
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Values
+  - System.Collections.Generic.SortedDictionary`2.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.Generic.SortedDictionary`2.TryGetValue(`0,`1@)
+  - System.Collections.Generic.SortedDictionary`2.Values
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: SortedDictionary<TKey, TValue>
+  name.vb: SortedDictionary(Of TKey, TValue)
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue)
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 9
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Represents a collection of key/value pairs that are sorted on the key.
+  syntax:
+    content: 'public class SortedDictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IDictionary, ICollection, IReadOnlyDictionary<TKey, TValue>, IReadOnlyCollection<KeyValuePair<TKey, TValue>>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable'
+    content.vb: Public Class SortedDictionary(Of TKey, TValue) Implements IDictionary(Of TKey, TValue), ICollection(Of KeyValuePair(Of TKey, TValue)), IDictionary, ICollection, IReadOnlyDictionary(Of TKey, TValue), IReadOnlyCollection(Of KeyValuePair(Of TKey, TValue)), IEnumerable(Of KeyValuePair(Of TKey, TValue)), IEnumerable
+    typeParameters:
+    - id: TKey
+    - id: TValue
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IDictionary{{TKey},{TValue}}
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}
+  - System.Collections.IDictionary
+  - System.Collections.ICollection
+  - System.Collections.Generic.IReadOnlyDictionary{{TKey},{TValue}}
+  - System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Generic.SortedDictionary`2.#ctor
+  id: '#ctor'
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: SortedDictionary()
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.SortedDictionary()
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).SortedDictionary()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 19
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.SortedDictionary`2' class that is empty and uses the default @'System.Collections.Generic.IComparer`1' implementation for the key type.
+  syntax:
+    content: public SortedDictionary()
+    content.vb: Public Sub New
+- uid: System.Collections.Generic.SortedDictionary`2.#ctor(System.Collections.Generic.IDictionary{`0,`1})
+  id: '#ctor(System.Collections.Generic.IDictionary{`0,`1})'
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: SortedDictionary(IDictionary<TKey, TValue>)
+  name.vb: SortedDictionary(IDictionary(Of TKey, TValue))
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.SortedDictionary(System.Collections.Generic.IDictionary<TKey, TValue>)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).SortedDictionary(System.Collections.Generic.IDictionary(Of TKey, TValue))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 23
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.SortedDictionary`2' class that contains elements copied from the specified @'System.Collections.Generic.IDictionary`2' and uses the default @'System.Collections.Generic.IComparer`1' implementation for the key type.
+  syntax:
+    content: public SortedDictionary(IDictionary<TKey, TValue> dictionary)
+    content.vb: Public Sub New(dictionary As IDictionary(Of TKey, TValue))
+    parameters:
+    - id: dictionary
+      type: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+      description: The @'System.Collections.Generic.IDictionary`2' whose elements are copied to the new @'System.Collections.Generic.SortedDictionary`2'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*dictionary* is null.'
+  - type: System.ArgumentException
+    description: '*dictionary* contains one or more duplicate keys.'
+- uid: System.Collections.Generic.SortedDictionary`2.#ctor(System.Collections.Generic.IDictionary{`0,`1},System.Collections.Generic.IComparer{`0})
+  id: '#ctor(System.Collections.Generic.IDictionary{`0,`1},System.Collections.Generic.IComparer{`0})'
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: SortedDictionary(IDictionary<TKey, TValue>, IComparer<TKey>)
+  name.vb: SortedDictionary(IDictionary(Of TKey, TValue), IComparer(Of TKey))
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.SortedDictionary(System.Collections.Generic.IDictionary<TKey, TValue>, System.Collections.Generic.IComparer<TKey>)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).SortedDictionary(System.Collections.Generic.IDictionary(Of TKey, TValue), System.Collections.Generic.IComparer(Of TKey))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 27
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.SortedDictionary`2' class that contains elements copied from the specified @'System.Collections.Generic.IDictionary`2' and uses the specified @'System.Collections.Generic.IComparer`1' implementation to compare keys.
+  syntax:
+    content: public SortedDictionary(IDictionary<TKey, TValue> dictionary, IComparer<TKey> comparer)
+    content.vb: Public Sub New(dictionary As IDictionary(Of TKey, TValue), comparer As IComparer(Of TKey))
+    parameters:
+    - id: dictionary
+      type: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+      description: The @'System.Collections.Generic.IDictionary`2' whose elements are copied to the new @'System.Collections.Generic.SortedDictionary`2'.
+    - id: comparer
+      type: System.Collections.Generic.IComparer{{TKey}}
+      description: The @'System.Collections.Generic.IComparer`1' implementation to use when comparing keys, or null to use the default @'System.Collections.Generic.Comparer`1' for the type of the key.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*dictionary* is null.'
+  - type: System.ArgumentException
+    description: '*dictionary* contains one or more duplicate keys.'
+- uid: System.Collections.Generic.SortedDictionary`2.#ctor(System.Collections.Generic.IComparer{`0})
+  id: '#ctor(System.Collections.Generic.IComparer{`0})'
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: SortedDictionary(IComparer<TKey>)
+  name.vb: SortedDictionary(IComparer(Of TKey))
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.SortedDictionary(System.Collections.Generic.IComparer<TKey>)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).SortedDictionary(System.Collections.Generic.IComparer(Of TKey))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 42
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.SortedDictionary`2' class that is empty and uses the specified @'System.Collections.Generic.IComparer`1' implementation to compare keys.
+  syntax:
+    content: public SortedDictionary(IComparer<TKey> comparer)
+    content.vb: Public Sub New(comparer As IComparer(Of TKey))
+    parameters:
+    - id: comparer
+      type: System.Collections.Generic.IComparer{{TKey}}
+      description: The @'System.Collections.Generic.IComparer`1' implementation to use when comparing keys, or null to use the default @'System.Collections.Generic.Comparer`1' for the type of the key.
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#Add(System.Collections.Generic.KeyValuePair{`0,`1})
+  id: System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#Add(System.Collections.Generic.KeyValuePair{`0,`1})
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: ICollection<KeyValuePair<TKey, TValue>>.Add(KeyValuePair<TKey, TValue>)
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add(KeyValuePair(Of TKey, TValue))
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey, TValue>>.Add(System.Collections.Generic.KeyValuePair<TKey, TValue>)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add(System.Collections.Generic.KeyValuePair(Of TKey, TValue))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 47
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  syntax:
+    content: void ICollection<KeyValuePair<TKey, TValue>>.Add(KeyValuePair<TKey, TValue> keyValuePair)
+    content.vb: Sub System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add(keyValuePair As KeyValuePair(Of TKey, TValue)) Implements ICollection(Of KeyValuePair(Of TKey, TValue)).Add
+    parameters:
+    - id: keyValuePair
+      type: System.Collections.Generic.KeyValuePair{{TKey},{TValue}}
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#Contains(System.Collections.Generic.KeyValuePair{`0,`1})
+  id: System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#Contains(System.Collections.Generic.KeyValuePair{`0,`1})
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: ICollection<KeyValuePair<TKey, TValue>>.Contains(KeyValuePair<TKey, TValue>)
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains(KeyValuePair(Of TKey, TValue))
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey, TValue>>.Contains(System.Collections.Generic.KeyValuePair<TKey, TValue>)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains(System.Collections.Generic.KeyValuePair(Of TKey, TValue))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 52
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  syntax:
+    content: bool ICollection<KeyValuePair<TKey, TValue>>.Contains(KeyValuePair<TKey, TValue> keyValuePair)
+    content.vb: Function System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains(keyValuePair As KeyValuePair(Of TKey, TValue)) As Boolean Implements ICollection(Of KeyValuePair(Of TKey, TValue)).Contains
+    parameters:
+    - id: keyValuePair
+      type: System.Collections.Generic.KeyValuePair{{TKey},{TValue}}
+    return:
+      type: System.Boolean
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#Remove(System.Collections.Generic.KeyValuePair{`0,`1})
+  id: System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#Remove(System.Collections.Generic.KeyValuePair{`0,`1})
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: ICollection<KeyValuePair<TKey, TValue>>.Remove(KeyValuePair<TKey, TValue>)
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove(KeyValuePair(Of TKey, TValue))
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey, TValue>>.Remove(System.Collections.Generic.KeyValuePair<TKey, TValue>)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove(System.Collections.Generic.KeyValuePair(Of TKey, TValue))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 70
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  syntax:
+    content: bool ICollection<KeyValuePair<TKey, TValue>>.Remove(KeyValuePair<TKey, TValue> keyValuePair)
+    content.vb: Function System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove(keyValuePair As KeyValuePair(Of TKey, TValue)) As Boolean Implements ICollection(Of KeyValuePair(Of TKey, TValue)).Remove
+    parameters:
+    - id: keyValuePair
+      type: System.Collections.Generic.KeyValuePair{{TKey},{TValue}}
+    return:
+      type: System.Boolean
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#IsReadOnly
+  id: System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#IsReadOnly
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: ICollection<KeyValuePair<TKey, TValue>>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.IsReadOnly
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey, TValue>>.IsReadOnly
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 86
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  syntax:
+    content: bool ICollection<KeyValuePair<TKey, TValue>>.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of TKey, TValue)).IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Generic.SortedDictionary`2.Item(`0)
+  id: Item(`0)
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: Item[TKey]
+  name.vb: Item(TKey)
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.Item[TKey]
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).Item(TKey)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 94
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets or sets the value associated with the specified key.
+  syntax:
+    content: public TValue this[TKey key] { get; set; }
+    content.vb: Public Property Item(key As TKey) As TValue
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: The key of the value to get or set.
+    return:
+      type: '{TValue}'
+      description: The value associated with the specified key. If the specified key is not found, a get operation throws a @'System.Collections.Generic.KeyNotFoundException', and a set operation creates a new element with the specified key.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.Collections.Generic.KeyNotFoundException
+    description: The property is retrieved and *key* does not exist in the collection.
+- uid: System.Collections.Generic.SortedDictionary`2.Count
+  id: Count
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: Count
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.Count
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 131
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets the number of key/value pairs contained in the @'System.Collections.Generic.SortedDictionary`2'.
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of key/value pairs contained in the @'System.Collections.Generic.SortedDictionary`2'.
+- uid: System.Collections.Generic.SortedDictionary`2.Comparer
+  id: Comparer
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: Comparer
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.Comparer
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).Comparer
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 139
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets the @'System.Collections.Generic.IComparer`1' used to order the elements of the @'System.Collections.Generic.SortedDictionary`2'.
+  syntax:
+    content: public IComparer<TKey> Comparer { get; }
+    content.vb: Public ReadOnly Property Comparer As IComparer(Of TKey)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IComparer{{TKey}}
+      description: The @'System.Collections.Generic.IComparer`1' used to order the elements of the @'System.Collections.Generic.SortedDictionary`2'
+- uid: System.Collections.Generic.SortedDictionary`2.Keys
+  id: Keys
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: Keys
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.Keys
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).Keys
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 147
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets a collection containing the keys in the @'System.Collections.Generic.SortedDictionary`2'.
+  syntax:
+    content: public SortedDictionary<TKey, TValue>.KeyCollection Keys { get; }
+    content.vb: Public ReadOnly Property Keys As SortedDictionary(Of TKey, TValue).KeyCollection
+    parameters: []
+    return:
+      type: System.Collections.Generic.SortedDictionary`2.KeyCollection
+      description: A @'System.Collections.Generic.SortedDictionary`2.KeyCollection' containing the keys in the @'System.Collections.Generic.SortedDictionary`2'.
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IDictionary{TKey,TValue}#Keys
+  id: System#Collections#Generic#IDictionary{TKey,TValue}#Keys
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IDictionary<TKey, TValue>.Keys
+  name.vb: System.Collections.Generic.IDictionary<TKey,TValue>.Keys
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.Generic.IDictionary<TKey, TValue>.Keys
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.Generic.IDictionary<TKey,TValue>.Keys
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 156
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  syntax:
+    content: ICollection<TKey> IDictionary<TKey, TValue>.Keys { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.IDictionary<TKey,TValue>.Keys As ICollection(Of TKey) Implements IDictionary(Of TKey, TValue).Keys
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{{TKey}}
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IReadOnlyDictionary{TKey,TValue}#Keys
+  id: System#Collections#Generic#IReadOnlyDictionary{TKey,TValue}#Keys
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IReadOnlyDictionary<TKey, TValue>.Keys
+  name.vb: System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.Keys
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>.Keys
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.Keys
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 164
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  syntax:
+    content: IEnumerable<TKey> IReadOnlyDictionary<TKey, TValue>.Keys { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.Keys As IEnumerable(Of TKey) Implements IReadOnlyDictionary(Of TKey, TValue).Keys
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{{TKey}}
+- uid: System.Collections.Generic.SortedDictionary`2.Values
+  id: Values
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: Values
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.Values
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).Values
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 172
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets a collection containing the values in the @'System.Collections.Generic.SortedDictionary`2'.
+  syntax:
+    content: public SortedDictionary<TKey, TValue>.ValueCollection Values { get; }
+    content.vb: Public ReadOnly Property Values As SortedDictionary(Of TKey, TValue).ValueCollection
+    parameters: []
+    return:
+      type: System.Collections.Generic.SortedDictionary`2.ValueCollection
+      description: A @'System.Collections.Generic.SortedDictionary`2.ValueCollection' containing the values in the @'System.Collections.Generic.SortedDictionary`2'.
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IDictionary{TKey,TValue}#Values
+  id: System#Collections#Generic#IDictionary{TKey,TValue}#Values
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IDictionary<TKey, TValue>.Values
+  name.vb: System.Collections.Generic.IDictionary<TKey,TValue>.Values
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.Generic.IDictionary<TKey, TValue>.Values
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.Generic.IDictionary<TKey,TValue>.Values
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 181
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  syntax:
+    content: ICollection<TValue> IDictionary<TKey, TValue>.Values { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.IDictionary<TKey,TValue>.Values As ICollection(Of TValue) Implements IDictionary(Of TKey, TValue).Values
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{{TValue}}
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IReadOnlyDictionary{TKey,TValue}#Values
+  id: System#Collections#Generic#IReadOnlyDictionary{TKey,TValue}#Values
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IReadOnlyDictionary<TKey, TValue>.Values
+  name.vb: System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.Values
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>.Values
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.Values
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 189
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  syntax:
+    content: IEnumerable<TValue> IReadOnlyDictionary<TKey, TValue>.Values { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.Values As IEnumerable(Of TValue) Implements IReadOnlyDictionary(Of TKey, TValue).Values
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{{TValue}}
+- uid: System.Collections.Generic.SortedDictionary`2.Add(`0,`1)
+  id: Add(`0,`1)
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: Add(TKey, TValue)
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.Add(TKey, TValue)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).Add(TKey, TValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 197
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Adds an element with the specified key and value into the @'System.Collections.Generic.SortedDictionary`2'.
+  syntax:
+    content: public void Add(TKey key, TValue value)
+    content.vb: Public Sub Add(key As TKey, value As TValue)
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: The key of the element to add.
+    - id: value
+      type: '{TValue}'
+      description: The value of the element to add. The value can be null for reference types.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.ArgumentException
+    description: An element with the same key already exists in the @'System.Collections.Generic.SortedDictionary`2'.
+- uid: System.Collections.Generic.SortedDictionary`2.Clear
+  id: Clear
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: Clear()
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.Clear()
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 206
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Removes all elements from the @'System.Collections.Generic.SortedDictionary`2'.
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+- uid: System.Collections.Generic.SortedDictionary`2.ContainsKey(`0)
+  id: ContainsKey(`0)
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: ContainsKey(TKey)
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.ContainsKey(TKey)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).ContainsKey(TKey)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 211
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether the @'System.Collections.Generic.SortedDictionary`2' contains an element with the specified key.
+  syntax:
+    content: public bool ContainsKey(TKey key)
+    content.vb: Public Function ContainsKey(key As TKey) As Boolean
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: The key to locate in the @'System.Collections.Generic.SortedDictionary`2'.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.Generic.SortedDictionary`2' contains an element with the specified key; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+- uid: System.Collections.Generic.SortedDictionary`2.ContainsValue(`1)
+  id: ContainsValue(`1)
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: ContainsValue(TValue)
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.ContainsValue(TValue)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).ContainsValue(TValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 221
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether the @'System.Collections.Generic.SortedDictionary`2' contains an element with the specified value.
+  syntax:
+    content: public bool ContainsValue(TValue value)
+    content.vb: Public Function ContainsValue(value As TValue) As Boolean
+    parameters:
+    - id: value
+      type: '{TValue}'
+      description: The value to locate in the @'System.Collections.Generic.SortedDictionary`2'. The value can be null for reference types.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.Generic.SortedDictionary`2' contains an element with the specified value; otherwise, false.
+- uid: System.Collections.Generic.SortedDictionary`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)
+  id: CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: CopyTo(KeyValuePair<TKey, TValue>[], Int32)
+  name.vb: CopyTo(KeyValuePair(Of TKey, TValue)(), Int32)
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.CopyTo(System.Collections.Generic.KeyValuePair<TKey, TValue>[], System.Int32)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).CopyTo(System.Collections.Generic.KeyValuePair(Of TKey, TValue)(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 252
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Copies the elements of the @'System.Collections.Generic.SortedDictionary`2' to the specified array of @'System.Collections.Generic.KeyValuePair`2' structures, starting at the specified index.
+  syntax:
+    content: public void CopyTo(KeyValuePair<TKey, TValue>[] array, int index)
+    content.vb: Public Sub CopyTo(array As KeyValuePair(Of TKey, TValue)(), index As Integer)
+    parameters:
+    - id: array
+      type: System.Collections.Generic.KeyValuePair{{TKey},{TValue}}[]
+      description: The one-dimensional array of @'System.Collections.Generic.KeyValuePair`2' structures that is the destination of the elements copied from the current @'System.Collections.Generic.SortedDictionary`2' The array must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.'
+  - type: System.ArgumentException
+    description: The number of elements in the source @'System.Collections.Generic.SortedDictionary`2' is greater than the available space from *index* to the end of the destination *array*.
+- uid: System.Collections.Generic.SortedDictionary`2.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: GetEnumerator()
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 257
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Returns an enumerator that iterates through the @'System.Collections.Generic.SortedDictionary`2'.
+  syntax:
+    content: public SortedDictionary<TKey, TValue>.Enumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As SortedDictionary(Of TKey, TValue).Enumerator
+    return:
+      type: System.Collections.Generic.SortedDictionary`2.Enumerator
+      description: A @'System.Collections.Generic.SortedDictionary`2.Enumerator' for the @'System.Collections.Generic.SortedDictionary`2'.
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{TKey,TValue}}#GetEnumerator
+  id: System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{TKey,TValue}}#GetEnumerator
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IEnumerable<KeyValuePair<TKey, TValue>>.GetEnumerator()
+  name.vb: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator()
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey, TValue>>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 262
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  syntax:
+    content: IEnumerator<KeyValuePair<TKey, TValue>> IEnumerable<KeyValuePair<TKey, TValue>>.GetEnumerator()
+    content.vb: Function System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator As IEnumerator(Of KeyValuePair(Of TKey, TValue)) Implements IEnumerable(Of KeyValuePair(Of TKey, TValue)).GetEnumerator
+    return:
+      type: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}
+- uid: System.Collections.Generic.SortedDictionary`2.Remove(`0)
+  id: Remove(`0)
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: Remove(TKey)
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.Remove(TKey)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).Remove(TKey)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 267
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Removes the element with the specified key from the @'System.Collections.Generic.SortedDictionary`2'.
+  syntax:
+    content: public bool Remove(TKey key)
+    content.vb: Public Function Remove(key As TKey) As Boolean
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: The key of the element to remove.
+    return:
+      type: System.Boolean
+      description: true if the element is successfully removed; otherwise, false.  This method also returns false if *key* is not found in the @'System.Collections.Generic.SortedDictionary`2'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+- uid: System.Collections.Generic.SortedDictionary`2.TryGetValue(`0,`1@)
+  id: TryGetValue(`0,`1@)
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: TryGetValue(TKey, out TValue)
+  name.vb: TryGetValue(TKey, ByRef TValue)
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).TryGetValue(TKey, ByRef TValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 277
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets the value associated with the specified key.
+  syntax:
+    content: public bool TryGetValue(TKey key, out TValue value)
+    content.vb: Public Function TryGetValue(key As TKey, ByRef value As TValue) As Boolean
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: The key of the value to get.
+    - id: value
+      type: '{TValue}'
+      description: When this method returns, the value associated with the specified key, if the key is found; otherwise, the default value for the type of the *value* parameter.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.Generic.SortedDictionary`2' contains an element with the specified key; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 294
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Copies the elements of the @'System.Collections.Generic.ICollection`1' to an array, starting at the specified array index.
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional array that is the destination of the elements copied from the @'System.Collections.Generic.ICollection`1'. The array must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or-*array* does not have zero-based indexing.-or-The number of elements in the source @''System.Collections.Generic.ICollection`1'' is greater than the available space from *index* to the end of the destination *array*.-or-The type of the source @''System.Collections.Generic.ICollection`1'' cannot be cast automatically to the type of the destination *array*.'
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#IsFixedSize
+  id: System#Collections#IDictionary#IsFixedSize
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IDictionary.IsFixedSize
+  name.vb: System.Collections.IDictionary.IsFixedSize
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.IDictionary.IsFixedSize
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.IDictionary.IsFixedSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 299
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets a value indicating whether the @'System.Collections.IDictionary' has a fixed size.
+  syntax:
+    content: bool IDictionary.IsFixedSize { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IDictionary.IsFixedSize As Boolean Implements IDictionary.IsFixedSize
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.IDictionary' has a fixed size; otherwise, false.  In the default implementation of @'System.Collections.Generic.SortedDictionary`2', this property always returns false.
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#IsReadOnly
+  id: System#Collections#IDictionary#IsReadOnly
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IDictionary.IsReadOnly
+  name.vb: System.Collections.IDictionary.IsReadOnly
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.IDictionary.IsReadOnly
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.IDictionary.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 304
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets a value indicating whether the @'System.Collections.IDictionary' is read-only.
+  syntax:
+    content: bool IDictionary.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IDictionary.IsReadOnly As Boolean Implements IDictionary.IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.IDictionary' is read-only; otherwise, false.  In the default implementation of @'System.Collections.Generic.SortedDictionary`2', this property always returns false.
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Keys
+  id: System#Collections#IDictionary#Keys
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IDictionary.Keys
+  name.vb: System.Collections.IDictionary.Keys
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.IDictionary.Keys
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.IDictionary.Keys
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 309
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets an @'System.Collections.ICollection' containing the keys of the @'System.Collections.IDictionary'.
+  syntax:
+    content: ICollection IDictionary.Keys { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IDictionary.Keys As ICollection Implements IDictionary.Keys
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+      description: An @'System.Collections.ICollection' containing the keys of the @'System.Collections.IDictionary'.
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Values
+  id: System#Collections#IDictionary#Values
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IDictionary.Values
+  name.vb: System.Collections.IDictionary.Values
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.IDictionary.Values
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.IDictionary.Values
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 314
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets an @'System.Collections.ICollection' containing the values in the @'System.Collections.IDictionary'.
+  syntax:
+    content: ICollection IDictionary.Values { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IDictionary.Values As ICollection Implements IDictionary.Values
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+      description: An @'System.Collections.ICollection' containing the values in the @'System.Collections.IDictionary'.
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Item(System.Object)
+  id: System#Collections#IDictionary#Item(System.Object)
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IDictionary.Item[Object]
+  name.vb: System.Collections.IDictionary.Item(Object)
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.IDictionary.Item[System.Object]
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.IDictionary.Item(System.Object)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 319
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets or sets the element with the specified key.
+  syntax:
+    content: object IDictionary.this[object key] { get; set; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IDictionary.Item(key As Object) As Object Implements IDictionary.this
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key of the element to get.
+    return:
+      type: System.Object
+      description: The element with the specified key, or null if *key* is not in the dictionary or *key* is of a type that is not assignable to the key type *TKey* of the @'System.Collections.Generic.SortedDictionary`2'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.ArgumentException
+    description: A value is being assigned, and *key* is of a type that is not assignable to the key type *TKey* of the @'System.Collections.Generic.SortedDictionary`2'.-or-A value is being assigned, and *value* is of a type that is not assignable to the value type *TValue* of the @'System.Collections.Generic.SortedDictionary`2'.
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Add(System.Object,System.Object)
+  id: System#Collections#IDictionary#Add(System.Object,System.Object)
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IDictionary.Add(Object, Object)
+  name.vb: System.Collections.IDictionary.Add(Object, Object)
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.IDictionary.Add(System.Object, System.Object)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.IDictionary.Add(System.Object, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 363
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Adds an element with the provided key and value to the @'System.Collections.IDictionary'.
+  syntax:
+    content: void IDictionary.Add(object key, object value)
+    content.vb: Sub System.Collections.IDictionary.Add(key As Object, value As Object) Implements IDictionary.Add
+    parameters:
+    - id: key
+      type: System.Object
+      description: The object to use as the key of the element to add.
+    - id: value
+      type: System.Object
+      description: The object to use as the value of the element to add.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.ArgumentException
+    description: '*key* is of a type that is not assignable to the key type *TKey* of the @''System.Collections.IDictionary''.-or-*value* is of a type that is not assignable to the value type *TValue* of the @''System.Collections.IDictionary''.-or-An element with the same key already exists in the @''System.Collections.IDictionary''.'
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Contains(System.Object)
+  id: System#Collections#IDictionary#Contains(System.Object)
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IDictionary.Contains(Object)
+  name.vb: System.Collections.IDictionary.Contains(Object)
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.IDictionary.Contains(System.Object)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.IDictionary.Contains(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 392
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether the @'System.Collections.IDictionary' contains an element with the specified key.
+  syntax:
+    content: bool IDictionary.Contains(object key)
+    content.vb: Function System.Collections.IDictionary.Contains(key As Object) As Boolean Implements IDictionary.Contains
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key to locate in the @'System.Collections.IDictionary'.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.IDictionary' contains an element with the key; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#GetEnumerator
+  id: System#Collections#IDictionary#GetEnumerator
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IDictionary.GetEnumerator()
+  name.vb: System.Collections.IDictionary.GetEnumerator()
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.IDictionary.GetEnumerator()
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.IDictionary.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 411
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Returns an @'System.Collections.IDictionaryEnumerator' for the @'System.Collections.IDictionary'.
+  syntax:
+    content: IDictionaryEnumerator IDictionary.GetEnumerator()
+    content.vb: Function System.Collections.IDictionary.GetEnumerator As IDictionaryEnumerator Implements IDictionary.GetEnumerator
+    return:
+      type: System.Collections.IDictionaryEnumerator
+      description: An @'System.Collections.IDictionaryEnumerator' for the @'System.Collections.IDictionary'.
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#Remove(System.Object)
+  id: System#Collections#IDictionary#Remove(System.Object)
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IDictionary.Remove(Object)
+  name.vb: System.Collections.IDictionary.Remove(Object)
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.IDictionary.Remove(System.Object)
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.IDictionary.Remove(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 416
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Removes the element with the specified key from the @'System.Collections.IDictionary'.
+  syntax:
+    content: void IDictionary.Remove(object key)
+    content.vb: Sub System.Collections.IDictionary.Remove(key As Object) Implements IDictionary.Remove
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key of the element to remove.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#ICollection#IsSynchronized
+  id: System#Collections#ICollection#IsSynchronized
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.ICollection.IsSynchronized
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.ICollection.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 424
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets a value indicating whether access to the @'System.Collections.ICollection' is synchronized (thread safe).
+  syntax:
+    content: bool ICollection.IsSynchronized { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.IsSynchronized As Boolean Implements ICollection.IsSynchronized
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if access to the @'System.Collections.ICollection' is synchronized (thread safe); otherwise, false.  In the default implementation of @'System.Collections.Generic.SortedDictionary`2', this property always returns false.
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#ICollection#SyncRoot
+  id: System#Collections#ICollection#SyncRoot
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.ICollection.SyncRoot
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.ICollection.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 429
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets an object that can be used to synchronize access to the @'System.Collections.ICollection'.
+  syntax:
+    content: object ICollection.SyncRoot { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.SyncRoot As Object Implements ICollection.SyncRoot
+    parameters: []
+    return:
+      type: System.Object
+      description: An object that can be used to synchronize access to the @'System.Collections.ICollection'.
+- uid: System.Collections.Generic.SortedDictionary`2.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.Generic.SortedDictionary`2
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue).System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedDictionary.cs
+    startLine: 434
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Returns an enumerator that iterates through the collection.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: An @'System.Collections.Generic.IEnumerator`1' that can be used to iterate through the collection.
+references:
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<TKey, TValue>
+  name.vb: IDictionary(Of TKey, TValue)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  name.vb: IDictionary(Of TKey, TValue)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IComparer{{TKey}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IComparer`1
+  name: IComparer<TKey>
+  name.vb: IComparer(Of TKey)
+  fullName: System.Collections.Generic.IComparer<TKey>
+  fullName.vb: System.Collections.Generic.IComparer(Of TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IComparer`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IComparer<T>
+  name.vb: IComparer(Of T)
+  fullName: System.Collections.Generic.IComparer<T>
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.KeyValuePair{{TKey},{TValue}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.KeyValuePair`2
+  name: KeyValuePair<TKey, TValue>
+  name.vb: KeyValuePair(Of TKey, TValue)
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.KeyValuePair`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: KeyValuePair<TKey, TValue>
+  name.vb: KeyValuePair(Of TKey, TValue)
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: '{TKey}'
+  isExternal: false
+  name: TKey
+  fullName: TKey
+- uid: '{TValue}'
+  isExternal: false
+  name: TValue
+  fullName: TValue
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.SortedDictionary`2.KeyCollection
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.SortedDictionary`2.KeyCollection.yml
+  name: SortedDictionary.KeyCollection<>
+  name.vb: SortedDictionary.KeyCollection(Of )
+  fullName: System.Collections.Generic.SortedDictionary.KeyCollection<>
+  fullName.vb: System.Collections.Generic.SortedDictionary.KeyCollection(Of )
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedDictionary`2.KeyCollection
+    name: SortedDictionary.KeyCollection
+    fullName: System.Collections.Generic.SortedDictionary.KeyCollection
+    href: System.Collections.Generic.SortedDictionary`2.KeyCollection.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedDictionary`2.KeyCollection
+    name: SortedDictionary.KeyCollection
+    fullName: System.Collections.Generic.SortedDictionary.KeyCollection
+    href: System.Collections.Generic.SortedDictionary`2.KeyCollection.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{TKey}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<TKey>
+  name.vb: ICollection(Of TKey)
+  fullName: System.Collections.Generic.ICollection<TKey>
+  fullName.vb: System.Collections.Generic.ICollection(Of TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: ICollection<T>
+  name.vb: ICollection(Of T)
+  fullName: System.Collections.Generic.ICollection<T>
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{TKey}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<TKey>
+  name.vb: IEnumerable(Of TKey)
+  fullName: System.Collections.Generic.IEnumerable<TKey>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.SortedDictionary`2.ValueCollection
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.SortedDictionary`2.ValueCollection.yml
+  name: SortedDictionary.ValueCollection<>
+  name.vb: SortedDictionary.ValueCollection(Of )
+  fullName: System.Collections.Generic.SortedDictionary.ValueCollection<>
+  fullName.vb: System.Collections.Generic.SortedDictionary.ValueCollection(Of )
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedDictionary`2.ValueCollection
+    name: SortedDictionary.ValueCollection
+    fullName: System.Collections.Generic.SortedDictionary.ValueCollection
+    href: System.Collections.Generic.SortedDictionary`2.ValueCollection.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedDictionary`2.ValueCollection
+    name: SortedDictionary.ValueCollection
+    fullName: System.Collections.Generic.SortedDictionary.ValueCollection
+    href: System.Collections.Generic.SortedDictionary`2.ValueCollection.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{TValue}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<TValue>
+  name.vb: ICollection(Of TValue)
+  fullName: System.Collections.Generic.ICollection<TValue>
+  fullName.vb: System.Collections.Generic.ICollection(Of TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{TValue}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<TValue>
+  name.vb: IEnumerable(Of TValue)
+  fullName: System.Collections.Generic.IEnumerable<TValue>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.KeyValuePair{{TKey},{TValue}}[]
+  isExternal: true
+  name: KeyValuePair<TKey, TValue>[]
+  name.vb: KeyValuePair(Of TKey, TValue)()
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>[]
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)()
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+  - name: ()
+    fullName: ()
+- uid: System.Collections.Generic.SortedDictionary`2.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.SortedDictionary`2.Enumerator.yml
+  name: SortedDictionary.Enumerator<>
+  name.vb: SortedDictionary.Enumerator(Of )
+  fullName: System.Collections.Generic.SortedDictionary.Enumerator<>
+  fullName.vb: System.Collections.Generic.SortedDictionary.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedDictionary`2.Enumerator
+    name: SortedDictionary.Enumerator
+    fullName: System.Collections.Generic.SortedDictionary.Enumerator
+    href: System.Collections.Generic.SortedDictionary`2.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedDictionary`2.Enumerator
+    name: SortedDictionary.Enumerator
+    fullName: System.Collections.Generic.SortedDictionary.Enumerator
+    href: System.Collections.Generic.SortedDictionary`2.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<KeyValuePair<TKey, TValue>>
+  name.vb: IEnumerator(Of KeyValuePair(Of TKey, TValue))
+  fullName: System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey, TValue>>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Collections.IDictionaryEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IDictionaryEnumerator
+  fullName: System.Collections.IDictionaryEnumerator
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator

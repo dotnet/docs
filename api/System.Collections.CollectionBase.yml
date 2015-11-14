@@ -1,0 +1,1032 @@
+items:
+- uid: System.Collections.CollectionBase
+  id: CollectionBase
+  parent: System.Collections
+  children:
+  - System.Collections.CollectionBase.#ctor
+  - System.Collections.CollectionBase.#ctor(System.Int32)
+  - System.Collections.CollectionBase.Capacity
+  - System.Collections.CollectionBase.Clear
+  - System.Collections.CollectionBase.Count
+  - System.Collections.CollectionBase.GetEnumerator
+  - System.Collections.CollectionBase.InnerList
+  - System.Collections.CollectionBase.List
+  - System.Collections.CollectionBase.OnClear
+  - System.Collections.CollectionBase.OnClearComplete
+  - System.Collections.CollectionBase.OnInsert(System.Int32,System.Object)
+  - System.Collections.CollectionBase.OnInsertComplete(System.Int32,System.Object)
+  - System.Collections.CollectionBase.OnRemove(System.Int32,System.Object)
+  - System.Collections.CollectionBase.OnRemoveComplete(System.Int32,System.Object)
+  - System.Collections.CollectionBase.OnSet(System.Int32,System.Object,System.Object)
+  - System.Collections.CollectionBase.OnSetComplete(System.Int32,System.Object,System.Object)
+  - System.Collections.CollectionBase.OnValidate(System.Object)
+  - System.Collections.CollectionBase.RemoveAt(System.Int32)
+  - System.Collections.CollectionBase.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Collections.CollectionBase.System#Collections#ICollection#IsSynchronized
+  - System.Collections.CollectionBase.System#Collections#ICollection#SyncRoot
+  - System.Collections.CollectionBase.System#Collections#IList#Add(System.Object)
+  - System.Collections.CollectionBase.System#Collections#IList#Contains(System.Object)
+  - System.Collections.CollectionBase.System#Collections#IList#IndexOf(System.Object)
+  - System.Collections.CollectionBase.System#Collections#IList#Insert(System.Int32,System.Object)
+  - System.Collections.CollectionBase.System#Collections#IList#IsFixedSize
+  - System.Collections.CollectionBase.System#Collections#IList#IsReadOnly
+  - System.Collections.CollectionBase.System#Collections#IList#Item(System.Int32)
+  - System.Collections.CollectionBase.System#Collections#IList#Remove(System.Object)
+  href: System.Collections.CollectionBase.yml
+  name: CollectionBase
+  fullName: System.Collections.CollectionBase
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 17
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Provides the abstract base class for a strongly typed collection.
+  syntax:
+    content: 'public abstract class CollectionBase : IList, ICollection, IEnumerable'
+    content.vb: Public MustInherit Class CollectionBase Implements IList, ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.CollectionBase.#ctor
+  id: '#ctor'
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: CollectionBase()
+  fullName: System.Collections.CollectionBase.CollectionBase()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 21
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Initializes a new instance of the @'System.Collections.CollectionBase' class with the default initial capacity.
+  syntax:
+    content: protected CollectionBase()
+    content.vb: Protected Sub New
+- uid: System.Collections.CollectionBase.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: CollectionBase(Int32)
+  fullName: System.Collections.CollectionBase.CollectionBase(System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 26
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Initializes a new instance of the @'System.Collections.CollectionBase' class with the specified capacity.
+  syntax:
+    content: protected CollectionBase(int capacity)
+    content.vb: Protected Sub New(capacity As Integer)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: The number of elements that the new list can initially store.
+- uid: System.Collections.CollectionBase.InnerList
+  id: InnerList
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: InnerList
+  fullName: System.Collections.CollectionBase.InnerList
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 32
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets an @'System.Collections.ArrayList' containing the list of elements in the @'System.Collections.CollectionBase' instance.
+  syntax:
+    content: protected ArrayList InnerList { get; }
+    content.vb: Protected ReadOnly Property InnerList As ArrayList
+    parameters: []
+    return:
+      type: System.Collections.ArrayList
+      description: An @'System.Collections.ArrayList' representing the @'System.Collections.CollectionBase' instance itself.Retrieving the value of this property is an O(1) operation.
+- uid: System.Collections.CollectionBase.List
+  id: List
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: List
+  fullName: System.Collections.CollectionBase.List
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 42
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets an @'System.Collections.IList' containing the list of elements in the @'System.Collections.CollectionBase' instance.
+  syntax:
+    content: protected IList List { get; }
+    content.vb: Protected ReadOnly Property List As IList
+    parameters: []
+    return:
+      type: System.Collections.IList
+      description: An @'System.Collections.IList' representing the @'System.Collections.CollectionBase' instance itself.
+- uid: System.Collections.CollectionBase.Capacity
+  id: Capacity
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: Capacity
+  fullName: System.Collections.CollectionBase.Capacity
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 47
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets or sets the number of elements that the @'System.Collections.CollectionBase' can contain.
+  syntax:
+    content: public int Capacity { get; set; }
+    content.vb: Public Property Capacity As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements that the @'System.Collections.CollectionBase' can contain.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '@''System.Collections.CollectionBase.Capacity'' is set to a value that is less than @''System.Collections.CollectionBase.Count''.'
+  - type: System.OutOfMemoryException
+    description: There is not enough memory available on the system.
+- uid: System.Collections.CollectionBase.Count
+  id: Count
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: Count
+  fullName: System.Collections.CollectionBase.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 60
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets the number of elements contained in the @'System.Collections.CollectionBase' instance. This property cannot be overridden.
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements contained in the @'System.Collections.CollectionBase' instance.Retrieving the value of this property is an O(1) operation.
+- uid: System.Collections.CollectionBase.Clear
+  id: Clear
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: Clear()
+  fullName: System.Collections.CollectionBase.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 68
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Removes all objects from the @'System.Collections.CollectionBase' instance. This method cannot be overridden.
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+- uid: System.Collections.CollectionBase.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: RemoveAt(Int32)
+  fullName: System.Collections.CollectionBase.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 75
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Removes the element at the specified index of the @'System.Collections.CollectionBase' instance. This method is not overridable.
+  syntax:
+    content: public void RemoveAt(int index)
+    content.vb: Public Sub RemoveAt(index As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to remove.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or-*index* is equal to or greater than @''System.Collections.CollectionBase.Count''.'
+- uid: System.Collections.CollectionBase.System#Collections#IList#IsReadOnly
+  id: System#Collections#IList#IsReadOnly
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: IList.IsReadOnly
+  name.vb: System.Collections.IList.IsReadOnly
+  fullName: System.Collections.CollectionBase.System.Collections.IList.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 95
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets a value indicating whether the @'System.Collections.CollectionBase' is read-only.
+  syntax:
+    content: bool IList.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.IsReadOnly As Boolean Implements IList.IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.CollectionBase' is read-only; otherwise, false. The default is false.
+- uid: System.Collections.CollectionBase.System#Collections#IList#IsFixedSize
+  id: System#Collections#IList#IsFixedSize
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: IList.IsFixedSize
+  name.vb: System.Collections.IList.IsFixedSize
+  fullName: System.Collections.CollectionBase.System.Collections.IList.IsFixedSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 100
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets a value indicating whether the @'System.Collections.CollectionBase' has a fixed size.
+  syntax:
+    content: bool IList.IsFixedSize { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.IsFixedSize As Boolean Implements IList.IsFixedSize
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.CollectionBase' has a fixed size; otherwise, false. The default is false.
+- uid: System.Collections.CollectionBase.System#Collections#ICollection#IsSynchronized
+  id: System#Collections#ICollection#IsSynchronized
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+  fullName: System.Collections.CollectionBase.System.Collections.ICollection.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 105
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets a value indicating whether access to the @'System.Collections.CollectionBase' is synchronized (thread safe).
+  syntax:
+    content: bool ICollection.IsSynchronized { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.IsSynchronized As Boolean Implements ICollection.IsSynchronized
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if access to the @'System.Collections.CollectionBase' is synchronized (thread safe); otherwise, false. The default is false.
+- uid: System.Collections.CollectionBase.System#Collections#ICollection#SyncRoot
+  id: System#Collections#ICollection#SyncRoot
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+  fullName: System.Collections.CollectionBase.System.Collections.ICollection.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 110
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets an object that can be used to synchronize access to the @'System.Collections.CollectionBase'.
+  syntax:
+    content: object ICollection.SyncRoot { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.SyncRoot As Object Implements ICollection.SyncRoot
+    parameters: []
+    return:
+      type: System.Object
+      description: An object that can be used to synchronize access to the @'System.Collections.CollectionBase'.
+- uid: System.Collections.CollectionBase.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.CollectionBase.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 115
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Copies the entire @'System.Collections.CollectionBase' to a compatible one-dimensional @'System.Array', starting at the specified index of the target array.
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from @'System.Collections.CollectionBase'. The @'System.Array' must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or-The number of elements in the source @''System.Collections.CollectionBase'' is greater than the available space from *index* to the end of the destination *array*.'
+  - type: System.InvalidCastException
+    description: The type of the source @'System.Collections.CollectionBase' cannot be cast automatically to the type of the destination *array*.
+- uid: System.Collections.CollectionBase.System#Collections#IList#Item(System.Int32)
+  id: System#Collections#IList#Item(System.Int32)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: IList.Item[Int32]
+  name.vb: System.Collections.IList.Item(Int32)
+  fullName: System.Collections.CollectionBase.System.Collections.IList.Item[System.Int32]
+  fullName.vb: System.Collections.CollectionBase.System.Collections.IList.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 120
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets or sets the element at the specified index.
+  syntax:
+    content: object IList.this[int index] { get; set; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.Item(index As Integer) As Object Implements IList.this
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to get or set.
+    return:
+      type: System.Object
+      description: The element at the specified index.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or-*index* is equal to or greater than @''System.Collections.CollectionBase.Count''.'
+- uid: System.Collections.CollectionBase.System#Collections#IList#Contains(System.Object)
+  id: System#Collections#IList#Contains(System.Object)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: IList.Contains(Object)
+  name.vb: System.Collections.IList.Contains(Object)
+  fullName: System.Collections.CollectionBase.System.Collections.IList.Contains(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 150
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Determines whether the @'System.Collections.CollectionBase' contains a specific element.
+  syntax:
+    content: bool IList.Contains(object value)
+    content.vb: Function System.Collections.IList.Contains(value As Object) As Boolean Implements IList.Contains
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to locate in the @'System.Collections.CollectionBase'.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.CollectionBase' contains the specified *value*; otherwise, false.
+- uid: System.Collections.CollectionBase.System#Collections#IList#Add(System.Object)
+  id: System#Collections#IList#Add(System.Object)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: IList.Add(Object)
+  name.vb: System.Collections.IList.Add(Object)
+  fullName: System.Collections.CollectionBase.System.Collections.IList.Add(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 155
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Adds an object to the end of the @'System.Collections.CollectionBase'.
+  syntax:
+    content: int IList.Add(object value)
+    content.vb: Function System.Collections.IList.Add(value As Object) As Integer Implements IList.Add
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to be added to the end of the @'System.Collections.CollectionBase'.
+    return:
+      type: System.Int32
+      description: The @'System.Collections.CollectionBase' index at which the *value* has been added.
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.CollectionBase' is read-only.-or-The @'System.Collections.CollectionBase' has a fixed size.
+- uid: System.Collections.CollectionBase.System#Collections#IList#Remove(System.Object)
+  id: System#Collections#IList#Remove(System.Object)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: IList.Remove(Object)
+  name.vb: System.Collections.IList.Remove(Object)
+  fullName: System.Collections.CollectionBase.System.Collections.IList.Remove(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 173
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Removes the first occurrence of a specific object from the @'System.Collections.CollectionBase'.
+  syntax:
+    content: void IList.Remove(object value)
+    content.vb: Sub System.Collections.IList.Remove(value As Object) Implements IList.Remove
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to remove from the @'System.Collections.CollectionBase'.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *value* parameter was not found in the @'System.Collections.CollectionBase' object.
+  - type: System.NotSupportedException
+    description: The @'System.Collections.CollectionBase' is read-only.-or-The @'System.Collections.CollectionBase' has a fixed size.
+- uid: System.Collections.CollectionBase.System#Collections#IList#IndexOf(System.Object)
+  id: System#Collections#IList#IndexOf(System.Object)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: IList.IndexOf(Object)
+  name.vb: System.Collections.IList.IndexOf(Object)
+  fullName: System.Collections.CollectionBase.System.Collections.IList.IndexOf(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 191
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Searches for the specified @'System.Object' and returns the zero-based index of the first occurrence within the entire @'System.Collections.CollectionBase'.
+  syntax:
+    content: int IList.IndexOf(object value)
+    content.vb: Function System.Collections.IList.IndexOf(value As Object) As Integer Implements IList.IndexOf
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to locate in the @'System.Collections.CollectionBase'.
+    return:
+      type: System.Int32
+      description: The zero-based index of the first occurrence of *value* within the entire @'System.Collections.CollectionBase', if found; otherwise, -1.
+- uid: System.Collections.CollectionBase.System#Collections#IList#Insert(System.Int32,System.Object)
+  id: System#Collections#IList#Insert(System.Int32,System.Object)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: IList.Insert(Int32, Object)
+  name.vb: System.Collections.IList.Insert(Int32, Object)
+  fullName: System.Collections.CollectionBase.System.Collections.IList.Insert(System.Int32, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 196
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Inserts an element into the @'System.Collections.CollectionBase' at the specified index.
+  syntax:
+    content: void IList.Insert(int index, object value)
+    content.vb: Sub System.Collections.IList.Insert(index As Integer, value As Object) Implements IList.Insert
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which *value* should be inserted.
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to insert.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or-*index* is greater than @''System.Collections.CollectionBase.Count''.'
+  - type: System.NotSupportedException
+    description: The @'System.Collections.CollectionBase' is read-only.-or-The @'System.Collections.CollectionBase' has a fixed size.
+- uid: System.Collections.CollectionBase.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: GetEnumerator()
+  fullName: System.Collections.CollectionBase.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 215
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns an enumerator that iterates through the @'System.Collections.CollectionBase' instance.
+  syntax:
+    content: public IEnumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As IEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: An @'System.Collections.IEnumerator' for the @'System.Collections.CollectionBase' instance.
+- uid: System.Collections.CollectionBase.OnSet(System.Int32,System.Object,System.Object)
+  id: OnSet(System.Int32,System.Object,System.Object)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: OnSet(Int32, Object, Object)
+  fullName: System.Collections.CollectionBase.OnSet(System.Int32, System.Object, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 220
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Performs additional custom processes before setting a value in the @'System.Collections.CollectionBase' instance.
+  syntax:
+    content: protected virtual void OnSet(int index, object oldValue, object newValue)
+    content.vb: Protected Overridable Sub OnSet(index As Integer, oldValue As Object, newValue As Object)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which *oldValue* can be found.
+    - id: oldValue
+      type: System.Object
+      description: The value to replace with *newValue*.
+    - id: newValue
+      type: System.Object
+      description: The new value of the element at *index*.
+- uid: System.Collections.CollectionBase.OnInsert(System.Int32,System.Object)
+  id: OnInsert(System.Int32,System.Object)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: OnInsert(Int32, Object)
+  fullName: System.Collections.CollectionBase.OnInsert(System.Int32, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 224
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Performs additional custom processes before inserting a new element into the @'System.Collections.CollectionBase' instance.
+  syntax:
+    content: protected virtual void OnInsert(int index, object value)
+    content.vb: Protected Overridable Sub OnInsert(index As Integer, value As Object)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which to insert *value*.
+    - id: value
+      type: System.Object
+      description: The new value of the element at *index*.
+- uid: System.Collections.CollectionBase.OnClear
+  id: OnClear
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: OnClear()
+  fullName: System.Collections.CollectionBase.OnClear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 228
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Performs additional custom processes when clearing the contents of the @'System.Collections.CollectionBase' instance.
+  syntax:
+    content: protected virtual void OnClear()
+    content.vb: Protected Overridable Sub OnClear
+- uid: System.Collections.CollectionBase.OnRemove(System.Int32,System.Object)
+  id: OnRemove(System.Int32,System.Object)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: OnRemove(Int32, Object)
+  fullName: System.Collections.CollectionBase.OnRemove(System.Int32, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 232
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Performs additional custom processes when removing an element from the @'System.Collections.CollectionBase' instance.
+  syntax:
+    content: protected virtual void OnRemove(int index, object value)
+    content.vb: Protected Overridable Sub OnRemove(index As Integer, value As Object)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which *value* can be found.
+    - id: value
+      type: System.Object
+      description: The value of the element to remove from *index*.
+- uid: System.Collections.CollectionBase.OnValidate(System.Object)
+  id: OnValidate(System.Object)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: OnValidate(Object)
+  fullName: System.Collections.CollectionBase.OnValidate(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 236
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Performs additional custom processes when validating a value.
+  syntax:
+    content: protected virtual void OnValidate(object value)
+    content.vb: Protected Overridable Sub OnValidate(value As Object)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The object to validate.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+- uid: System.Collections.CollectionBase.OnSetComplete(System.Int32,System.Object,System.Object)
+  id: OnSetComplete(System.Int32,System.Object,System.Object)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: OnSetComplete(Int32, Object, Object)
+  fullName: System.Collections.CollectionBase.OnSetComplete(System.Int32, System.Object, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 242
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Performs additional custom processes after setting a value in the @'System.Collections.CollectionBase' instance.
+  syntax:
+    content: protected virtual void OnSetComplete(int index, object oldValue, object newValue)
+    content.vb: Protected Overridable Sub OnSetComplete(index As Integer, oldValue As Object, newValue As Object)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which *oldValue* can be found.
+    - id: oldValue
+      type: System.Object
+      description: The value to replace with *newValue*.
+    - id: newValue
+      type: System.Object
+      description: The new value of the element at *index*.
+- uid: System.Collections.CollectionBase.OnInsertComplete(System.Int32,System.Object)
+  id: OnInsertComplete(System.Int32,System.Object)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: OnInsertComplete(Int32, Object)
+  fullName: System.Collections.CollectionBase.OnInsertComplete(System.Int32, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 246
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Performs additional custom processes after inserting a new element into the @'System.Collections.CollectionBase' instance.
+  syntax:
+    content: protected virtual void OnInsertComplete(int index, object value)
+    content.vb: Protected Overridable Sub OnInsertComplete(index As Integer, value As Object)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which to insert *value*.
+    - id: value
+      type: System.Object
+      description: The new value of the element at *index*.
+- uid: System.Collections.CollectionBase.OnClearComplete
+  id: OnClearComplete
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: OnClearComplete()
+  fullName: System.Collections.CollectionBase.OnClearComplete()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 250
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Performs additional custom processes after clearing the contents of the @'System.Collections.CollectionBase' instance.
+  syntax:
+    content: protected virtual void OnClearComplete()
+    content.vb: Protected Overridable Sub OnClearComplete
+- uid: System.Collections.CollectionBase.OnRemoveComplete(System.Int32,System.Object)
+  id: OnRemoveComplete(System.Int32,System.Object)
+  parent: System.Collections.CollectionBase
+  href: System.Collections.CollectionBase.yml
+  name: OnRemoveComplete(Int32, Object)
+  fullName: System.Collections.CollectionBase.OnRemoveComplete(System.Int32, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/CollectionBase.cs
+    startLine: 254
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Performs additional custom processes after removing an element from the @'System.Collections.CollectionBase' instance.
+  syntax:
+    content: protected virtual void OnRemoveComplete(int index, object value)
+    content.vb: Protected Overridable Sub OnRemoveComplete(index As Integer, value As Object)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which *value* can be found.
+    - id: value
+      type: System.Object
+      description: The value of the element to remove from *index*.
+references:
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.ArrayList
+  parent: System.Collections
+  isExternal: false
+  href: System.Collections.ArrayList.yml
+  name: ArrayList
+  fullName: System.Collections.ArrayList
+  type: Class
+- uid: System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  name: IList
+  fullName: System.Collections.IList
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator

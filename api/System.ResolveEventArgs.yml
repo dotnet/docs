@@ -1,0 +1,374 @@
+items:
+- uid: System.ResolveEventArgs
+  id: ResolveEventArgs
+  parent: System
+  children:
+  - System.ResolveEventArgs.#ctor(System.String)
+  - System.ResolveEventArgs.#ctor(System.String,System.Reflection.Assembly)
+  - System.ResolveEventArgs.Name
+  - System.ResolveEventArgs.RequestingAssembly
+  href: System.ResolveEventArgs.yml
+  name: ResolveEventArgs
+  fullName: System.ResolveEventArgs
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/AppDomain.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/AppDomain.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Provides data for loader resolution events, such as the @'System.AppDomain.TypeResolve', @'System.AppDomain.ResourceResolve', @'System.AppDomain.ReflectionOnlyAssemblyResolve', and @'System.AppDomain.AssemblyResolve' events.
+  syntax:
+    content: 'public class ResolveEventArgs : EventArgs'
+    content.vb: Public Class ResolveEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.ResolveEventArgs.Name
+  id: Name
+  parent: System.ResolveEventArgs
+  href: System.ResolveEventArgs.yml
+  name: Name
+  fullName: System.ResolveEventArgs.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomain.cs
+    startLine: 63
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the name of the item to resolve.
+  syntax:
+    content: public string Name { get; }
+    content.vb: Public ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: The name of the item to resolve.
+- uid: System.ResolveEventArgs.RequestingAssembly
+  id: RequestingAssembly
+  parent: System.ResolveEventArgs
+  href: System.ResolveEventArgs.yml
+  name: RequestingAssembly
+  fullName: System.ResolveEventArgs.RequestingAssembly
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomain.cs
+    startLine: 69
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the assembly whose dependency is being resolved.
+  syntax:
+    content: public Assembly RequestingAssembly { get; }
+    content.vb: Public ReadOnly Property RequestingAssembly As Assembly
+    parameters: []
+    return:
+      type: System.Reflection.Assembly
+      description: The assembly that requested the item specified by the @'System.ResolveEventArgs.Name' property.
+- uid: System.ResolveEventArgs.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.ResolveEventArgs
+  href: System.ResolveEventArgs.yml
+  name: ResolveEventArgs(String)
+  fullName: System.ResolveEventArgs.ResolveEventArgs(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomain.cs
+    startLine: 77
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.ResolveEventArgs' class, specifying the name of the item to resolve.
+  syntax:
+    content: public ResolveEventArgs(string name)
+    content.vb: Public Sub New(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of an item to resolve.
+- uid: System.ResolveEventArgs.#ctor(System.String,System.Reflection.Assembly)
+  id: '#ctor(System.String,System.Reflection.Assembly)'
+  parent: System.ResolveEventArgs
+  href: System.ResolveEventArgs.yml
+  name: ResolveEventArgs(String, Assembly)
+  fullName: System.ResolveEventArgs.ResolveEventArgs(System.String, System.Reflection.Assembly)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomain.cs
+    startLine: 82
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.ResolveEventArgs' class, specifying the name of the item to resolve and the assembly whose dependency is being resolved.
+  syntax:
+    content: public ResolveEventArgs(string name, Assembly requestingAssembly)
+    content.vb: Public Sub New(name As String, requestingAssembly As Assembly)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of an item to resolve.
+    - id: requestingAssembly
+      type: System.Reflection.Assembly
+      description: The assembly whose dependency is being resolved.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

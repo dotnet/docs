@@ -1,0 +1,462 @@
+items:
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  id: DataflowMessageHeader
+  parent: System.Threading.Tasks.Dataflow
+  children:
+  - System.Threading.Tasks.Dataflow.DataflowMessageHeader.#ctor(System.Int64)
+  - System.Threading.Tasks.Dataflow.DataflowMessageHeader.Equals(System.Object)
+  - System.Threading.Tasks.Dataflow.DataflowMessageHeader.Equals(System.Threading.Tasks.Dataflow.DataflowMessageHeader)
+  - System.Threading.Tasks.Dataflow.DataflowMessageHeader.GetHashCode
+  - System.Threading.Tasks.Dataflow.DataflowMessageHeader.Id
+  - System.Threading.Tasks.Dataflow.DataflowMessageHeader.IsValid
+  - System.Threading.Tasks.Dataflow.DataflowMessageHeader.op_Equality(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.DataflowMessageHeader)
+  - System.Threading.Tasks.Dataflow.DataflowMessageHeader.op_Inequality(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.DataflowMessageHeader)
+  href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  name: DataflowMessageHeader
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs
+    startLine: 19
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Provides a container of data attributes for passing between dataflow blocks.
+  syntax:
+    content: 'public struct DataflowMessageHeader : IEquatable<DataflowMessageHeader>'
+    content.vb: Public Structure DataflowMessageHeader Implements IEquatable(Of DataflowMessageHeader)
+  implements:
+  - System.IEquatable{System.Threading.Tasks.Dataflow.DataflowMessageHeader}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader.#ctor(System.Int64)
+  id: '#ctor(System.Int64)'
+  parent: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  name: DataflowMessageHeader(Int64)
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader.DataflowMessageHeader(System.Int64)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs
+    startLine: 27
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Initializes a new @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' with the specified attributes.
+  syntax:
+    content: public DataflowMessageHeader(long id)
+    content.vb: Public Sub New(id As Long)
+    parameters:
+    - id: id
+      type: System.Int64
+      description: The ID of the message. Must be unique within the originating source block. It does not need to be globally unique.
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader.IsValid
+  id: IsValid
+  parent: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  name: IsValid
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader.IsValid
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs
+    startLine: 37
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Gets the validity of the message.
+  syntax:
+    content: public bool IsValid { get; }
+    content.vb: Public ReadOnly Property IsValid As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the ID of the message is different from 0. false if the ID of the message is 0.
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader.Id
+  id: Id
+  parent: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  name: Id
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader.Id
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs
+    startLine: 41
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Gets the ID of the message within the source.
+  syntax:
+    content: public long Id { get; }
+    content.vb: Public ReadOnly Property Id As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: The ID contained in the @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' instance.
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader.Equals(System.Threading.Tasks.Dataflow.DataflowMessageHeader)
+  id: Equals(System.Threading.Tasks.Dataflow.DataflowMessageHeader)
+  parent: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  name: Equals(DataflowMessageHeader)
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader.Equals(System.Threading.Tasks.Dataflow.DataflowMessageHeader)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs
+    startLine: 52
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Checks two @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' instances for equality by ID without boxing.
+  syntax:
+    content: public bool Equals(DataflowMessageHeader other)
+    content.vb: Public Function Equals(other As DataflowMessageHeader) As Boolean
+    parameters:
+    - id: other
+      type: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+      description: Another @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' instance.
+    return:
+      type: System.Boolean
+      description: true if the instances are equal; otherwise, false.
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  name: Equals(Object)
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs
+    startLine: 60
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Checks boxed @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' instances for equality by ID.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: A boxed @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' instance.
+    return:
+      type: System.Boolean
+      description: true if the instances are equal; otherwise, false.
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader.GetHashCode
+  id: GetHashCode
+  parent: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  name: GetHashCode()
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs
+    startLine: 67
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Generates a hash code for the @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' instance.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: The hash code.
+  overridden: System.ValueType.GetHashCode
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader.op_Equality(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.DataflowMessageHeader)
+  id: op_Equality(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.DataflowMessageHeader)
+  parent: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  name: Equality(DataflowMessageHeader, DataflowMessageHeader)
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader.Equality(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.DataflowMessageHeader)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs
+    startLine: 76
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Checks two @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' instances for equality by ID.
+  syntax:
+    content: public static bool operator ==(DataflowMessageHeader left, DataflowMessageHeader right)
+    content.vb: Public Shared Operator =(left As DataflowMessageHeader, right As DataflowMessageHeader) As Boolean
+    parameters:
+    - id: left
+      type: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+      description: A @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' instance.
+    - id: right
+      type: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+      description: A @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' instance.
+    return:
+      type: System.Boolean
+      description: true if the instances are equal; otherwise, false.
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader.op_Inequality(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.DataflowMessageHeader)
+  id: op_Inequality(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.DataflowMessageHeader)
+  parent: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  name: Inequality(DataflowMessageHeader, DataflowMessageHeader)
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader.Inequality(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.DataflowMessageHeader)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageHeader.cs
+    startLine: 85
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Checks two @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' instances for non-equality by ID.
+  syntax:
+    content: public static bool operator !=(DataflowMessageHeader left, DataflowMessageHeader right)
+    content.vb: Public Shared Operator <>(left As DataflowMessageHeader, right As DataflowMessageHeader) As Boolean
+    parameters:
+    - id: left
+      type: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+      description: A @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' instance.
+    - id: right
+      type: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+      description: A @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' instance.
+    return:
+      type: System.Boolean
+      description: true if the instances are not equal; otherwise, false.
+references:
+- uid: System.Threading.Tasks.Dataflow
+  isExternal: false
+  name: System.Threading.Tasks.Dataflow
+  fullName: System.Threading.Tasks.Dataflow
+  type: Namespace
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  name: DataflowMessageHeader
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  type: Struct
+  summary: Provides a container of data attributes for passing between dataflow blocks.
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

@@ -1,0 +1,339 @@
+items:
+- uid: System.ComponentModel.CancelEventArgs
+  id: CancelEventArgs
+  parent: System.ComponentModel
+  children:
+  - System.ComponentModel.CancelEventArgs.#ctor
+  - System.ComponentModel.CancelEventArgs.#ctor(System.Boolean)
+  - System.ComponentModel.CancelEventArgs.Cancel
+  href: System.ComponentModel.CancelEventArgs.yml
+  name: CancelEventArgs
+  fullName: System.ComponentModel.CancelEventArgs
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.ComponentModel/src/System/ComponentModel/CancelEventArgs.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ComponentModel/src/System/ComponentModel/CancelEventArgs.cs
+    startLine: 8
+  assemblies:
+  - System.ComponentModel
+  namespace: System.ComponentModel
+  summary: Provides data for a cancelable event.
+  syntax:
+    content: 'public class CancelEventArgs : EventArgs'
+    content.vb: Public Class CancelEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.ComponentModel.CancelEventArgs.Cancel
+  id: Cancel
+  parent: System.ComponentModel.CancelEventArgs
+  href: System.ComponentModel.CancelEventArgs.yml
+  name: Cancel
+  fullName: System.ComponentModel.CancelEventArgs.Cancel
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ComponentModel/src/System/ComponentModel/CancelEventArgs.cs
+    startLine: 13
+  assemblies:
+  - System.ComponentModel
+  namespace: System.ComponentModel
+  summary: Gets or sets a value indicating whether the event should be canceled.
+  syntax:
+    content: public bool Cancel { get; set; }
+    content.vb: Public Property Cancel As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the event should be canceled; otherwise, false.
+- uid: System.ComponentModel.CancelEventArgs.#ctor
+  id: '#ctor'
+  parent: System.ComponentModel.CancelEventArgs
+  href: System.ComponentModel.CancelEventArgs.yml
+  name: CancelEventArgs()
+  fullName: System.ComponentModel.CancelEventArgs.CancelEventArgs()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.ComponentModel/src/System/ComponentModel/CancelEventArgs.cs
+    startLine: 18
+  assemblies:
+  - System.ComponentModel
+  namespace: System.ComponentModel
+  summary: Initializes a new instance of the @'System.ComponentModel.CancelEventArgs' class with the @'System.ComponentModel.CancelEventArgs.Cancel' property set to false.
+  syntax:
+    content: public CancelEventArgs()
+    content.vb: Public Sub New
+- uid: System.ComponentModel.CancelEventArgs.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: System.ComponentModel.CancelEventArgs
+  href: System.ComponentModel.CancelEventArgs.yml
+  name: CancelEventArgs(Boolean)
+  fullName: System.ComponentModel.CancelEventArgs.CancelEventArgs(System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.ComponentModel/src/System/ComponentModel/CancelEventArgs.cs
+    startLine: 26
+  assemblies:
+  - System.ComponentModel
+  namespace: System.ComponentModel
+  summary: Initializes a new instance of the @'System.ComponentModel.CancelEventArgs' class with the @'System.ComponentModel.CancelEventArgs.Cancel' property set to the given value.
+  syntax:
+    content: public CancelEventArgs(bool cancel)
+    content.vb: Public Sub New(cancel As Boolean)
+    parameters:
+    - id: cancel
+      type: System.Boolean
+      description: true to cancel the event; otherwise, false.
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  fullName: System.ComponentModel
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

@@ -1,0 +1,346 @@
+items:
+- uid: System.ComponentModel.ProgressChangedEventArgs
+  id: ProgressChangedEventArgs
+  parent: System.ComponentModel
+  children:
+  - System.ComponentModel.ProgressChangedEventArgs.#ctor(System.Int32,System.Object)
+  - System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage
+  - System.ComponentModel.ProgressChangedEventArgs.UserState
+  href: System.ComponentModel.ProgressChangedEventArgs.yml
+  name: ProgressChangedEventArgs
+  fullName: System.ComponentModel.ProgressChangedEventArgs
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/ProgressChangedEvent.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/ProgressChangedEvent.cs
+    startLine: 7
+  assemblies:
+  - System.ComponentModel.EventBasedAsync
+  namespace: System.ComponentModel
+  summary: Provides data for the @'System.ComponentModel.BackgroundWorker.ProgressChanged' event.
+  syntax:
+    content: 'public class ProgressChangedEventArgs : EventArgs'
+    content.vb: Public Class ProgressChangedEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.ComponentModel.ProgressChangedEventArgs.#ctor(System.Int32,System.Object)
+  id: '#ctor(System.Int32,System.Object)'
+  parent: System.ComponentModel.ProgressChangedEventArgs
+  href: System.ComponentModel.ProgressChangedEventArgs.yml
+  name: ProgressChangedEventArgs(Int32, Object)
+  fullName: System.ComponentModel.ProgressChangedEventArgs.ProgressChangedEventArgs(System.Int32, System.Object)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/ProgressChangedEvent.cs
+    startLine: 12
+  assemblies:
+  - System.ComponentModel.EventBasedAsync
+  namespace: System.ComponentModel
+  summary: Initializes a new instance of the @'System.ComponentModel.ProgressChangedEventArgs' class.
+  syntax:
+    content: public ProgressChangedEventArgs(int progressPercentage, object userState)
+    content.vb: Public Sub New(progressPercentage As Integer, userState As Object)
+    parameters:
+    - id: progressPercentage
+      type: System.Int32
+      description: The percentage of an asynchronous task that has been completed.
+    - id: userState
+      type: System.Object
+      description: A unique user state.
+- uid: System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage
+  id: ProgressPercentage
+  parent: System.ComponentModel.ProgressChangedEventArgs
+  href: System.ComponentModel.ProgressChangedEventArgs.yml
+  name: ProgressPercentage
+  fullName: System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/ProgressChangedEvent.cs
+    startLine: 18
+  assemblies:
+  - System.ComponentModel.EventBasedAsync
+  namespace: System.ComponentModel
+  summary: Gets the asynchronous task progress percentage.
+  syntax:
+    content: public int ProgressPercentage { get; }
+    content.vb: Public ReadOnly Property ProgressPercentage As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: A percentage value indicating the asynchronous task progress.
+- uid: System.ComponentModel.ProgressChangedEventArgs.UserState
+  id: UserState
+  parent: System.ComponentModel.ProgressChangedEventArgs
+  href: System.ComponentModel.ProgressChangedEventArgs.yml
+  name: UserState
+  fullName: System.ComponentModel.ProgressChangedEventArgs.UserState
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/ProgressChangedEvent.cs
+    startLine: 26
+  assemblies:
+  - System.ComponentModel.EventBasedAsync
+  namespace: System.ComponentModel
+  summary: Gets a unique user state.
+  syntax:
+    content: public object UserState { get; }
+    content.vb: Public ReadOnly Property UserState As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: A unique @'System.Object' indicating the user state.
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  fullName: System.ComponentModel
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

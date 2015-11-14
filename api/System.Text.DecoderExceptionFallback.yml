@@ -1,0 +1,439 @@
+items:
+- uid: System.Text.DecoderExceptionFallback
+  id: DecoderExceptionFallback
+  parent: System.Text
+  children:
+  - System.Text.DecoderExceptionFallback.#ctor
+  - System.Text.DecoderExceptionFallback.CreateFallbackBuffer
+  - System.Text.DecoderExceptionFallback.Equals(System.Object)
+  - System.Text.DecoderExceptionFallback.GetHashCode
+  - System.Text.DecoderExceptionFallback.MaxCharCount
+  href: System.Text.DecoderExceptionFallback.yml
+  name: DecoderExceptionFallback
+  fullName: System.Text.DecoderExceptionFallback
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Text/DecoderExceptionFallback.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Text/DecoderExceptionFallback.cs
+    startLine: 9
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Provides a failure-handling mechanism, called a fallback, for an encoded input byte sequence that cannot be converted to an input character. The fallback throws an exception instead of decoding the input byte sequence. This class cannot be inherited.
+  syntax:
+    content: 'public sealed class DecoderExceptionFallback : DecoderFallback'
+    content.vb: Public NotInheritable Class DecoderExceptionFallback Inherits DecoderFallback
+  inheritance:
+  - System.Object
+  - System.Text.DecoderFallback
+  inheritedMembers:
+  - System.Text.DecoderFallback.ReplacementFallback
+  - System.Text.DecoderFallback.ExceptionFallback
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Text.DecoderExceptionFallback.#ctor
+  id: '#ctor'
+  parent: System.Text.DecoderExceptionFallback
+  href: System.Text.DecoderExceptionFallback.yml
+  name: DecoderExceptionFallback()
+  fullName: System.Text.DecoderExceptionFallback.DecoderExceptionFallback()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/DecoderExceptionFallback.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Initializes a new instance of the @'System.Text.DecoderExceptionFallback' class.
+  syntax:
+    content: public DecoderExceptionFallback()
+    content.vb: Public Sub New
+- uid: System.Text.DecoderExceptionFallback.CreateFallbackBuffer
+  id: CreateFallbackBuffer
+  parent: System.Text.DecoderExceptionFallback
+  href: System.Text.DecoderExceptionFallback.yml
+  name: CreateFallbackBuffer()
+  fullName: System.Text.DecoderExceptionFallback.CreateFallbackBuffer()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/DecoderExceptionFallback.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Returns a decoder fallback buffer that throws an exception if it cannot convert a sequence of bytes to a character.
+  syntax:
+    content: public override DecoderFallbackBuffer CreateFallbackBuffer()
+    content.vb: Public Overrides Function CreateFallbackBuffer As DecoderFallbackBuffer
+    return:
+      type: System.Text.DecoderFallbackBuffer
+      description: A decoder fallback buffer that throws an exception when it cannot decode a byte sequence.
+  overridden: System.Text.DecoderFallback.CreateFallbackBuffer
+- uid: System.Text.DecoderExceptionFallback.MaxCharCount
+  id: MaxCharCount
+  parent: System.Text.DecoderExceptionFallback
+  href: System.Text.DecoderExceptionFallback.yml
+  name: MaxCharCount
+  fullName: System.Text.DecoderExceptionFallback.MaxCharCount
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/DecoderExceptionFallback.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Gets the maximum number of characters this instance can return.
+  syntax:
+    content: public override int MaxCharCount { get; }
+    content.vb: Public Overrides ReadOnly Property MaxCharCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The return value is always zero.
+  overridden: System.Text.DecoderFallback.MaxCharCount
+- uid: System.Text.DecoderExceptionFallback.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Text.DecoderExceptionFallback
+  href: System.Text.DecoderExceptionFallback.yml
+  name: Equals(Object)
+  fullName: System.Text.DecoderExceptionFallback.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/DecoderExceptionFallback.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Indicates whether the current @'System.Text.DecoderExceptionFallback' object and a specified object are equal.
+  syntax:
+    content: public override bool Equals(object value)
+    content.vb: Public Overrides Function Equals(value As Object) As Boolean
+    parameters:
+    - id: value
+      type: System.Object
+      description: An object that derives from the @'System.Text.DecoderExceptionFallback' class.
+    return:
+      type: System.Boolean
+      description: true if *value* is not null and is a @'System.Text.DecoderExceptionFallback' object; otherwise, false.
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Text.DecoderExceptionFallback.GetHashCode
+  id: GetHashCode
+  parent: System.Text.DecoderExceptionFallback
+  href: System.Text.DecoderExceptionFallback.yml
+  name: GetHashCode()
+  fullName: System.Text.DecoderExceptionFallback.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/DecoderExceptionFallback.cs
+    startLine: 41
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Retrieves the hash code for this instance.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: The return value is always the same arbitrary value, and has no special significance.
+  overridden: System.Object.GetHashCode
+references:
+- uid: System.Text
+  isExternal: false
+  name: System.Text
+  fullName: System.Text
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Text.DecoderFallback
+  parent: System.Text
+  isExternal: false
+  href: System.Text.DecoderFallback.yml
+  name: DecoderFallback
+  fullName: System.Text.DecoderFallback
+  type: Class
+- uid: System.Text.DecoderFallback.ReplacementFallback
+  parent: System.Text.DecoderFallback
+  isExternal: false
+  href: System.Text.DecoderFallback.yml
+  name: ReplacementFallback
+  fullName: System.Text.DecoderFallback.ReplacementFallback
+- uid: System.Text.DecoderFallback.ExceptionFallback
+  parent: System.Text.DecoderFallback
+  isExternal: false
+  href: System.Text.DecoderFallback.yml
+  name: ExceptionFallback
+  fullName: System.Text.DecoderFallback.ExceptionFallback
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Text.DecoderFallback.CreateFallbackBuffer
+  parent: System.Text.DecoderFallback
+  isExternal: false
+  href: System.Text.DecoderFallback.yml
+  name: CreateFallbackBuffer()
+  fullName: System.Text.DecoderFallback.CreateFallbackBuffer()
+  spec.csharp:
+  - uid: System.Text.DecoderFallback.CreateFallbackBuffer
+    name: CreateFallbackBuffer
+    fullName: System.Text.DecoderFallback.CreateFallbackBuffer
+    href: System.Text.DecoderFallback.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.DecoderFallback.CreateFallbackBuffer
+    name: CreateFallbackBuffer
+    fullName: System.Text.DecoderFallback.CreateFallbackBuffer
+    href: System.Text.DecoderFallback.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Text.DecoderFallbackBuffer
+  parent: System.Text
+  isExternal: false
+  href: System.Text.DecoderFallbackBuffer.yml
+  name: DecoderFallbackBuffer
+  fullName: System.Text.DecoderFallbackBuffer
+  type: Class
+- uid: System.Text.DecoderFallback.MaxCharCount
+  parent: System.Text.DecoderFallback
+  isExternal: false
+  href: System.Text.DecoderFallback.yml
+  name: MaxCharCount
+  fullName: System.Text.DecoderFallback.MaxCharCount
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

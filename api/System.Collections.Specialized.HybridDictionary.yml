@@ -1,0 +1,763 @@
+items:
+- uid: System.Collections.Specialized.HybridDictionary
+  id: HybridDictionary
+  parent: System.Collections.Specialized
+  children:
+  - System.Collections.Specialized.HybridDictionary.#ctor
+  - System.Collections.Specialized.HybridDictionary.#ctor(System.Boolean)
+  - System.Collections.Specialized.HybridDictionary.#ctor(System.Int32)
+  - System.Collections.Specialized.HybridDictionary.#ctor(System.Int32,System.Boolean)
+  - System.Collections.Specialized.HybridDictionary.Add(System.Object,System.Object)
+  - System.Collections.Specialized.HybridDictionary.Clear
+  - System.Collections.Specialized.HybridDictionary.Contains(System.Object)
+  - System.Collections.Specialized.HybridDictionary.CopyTo(System.Array,System.Int32)
+  - System.Collections.Specialized.HybridDictionary.Count
+  - System.Collections.Specialized.HybridDictionary.GetEnumerator
+  - System.Collections.Specialized.HybridDictionary.IsFixedSize
+  - System.Collections.Specialized.HybridDictionary.IsReadOnly
+  - System.Collections.Specialized.HybridDictionary.IsSynchronized
+  - System.Collections.Specialized.HybridDictionary.Item(System.Object)
+  - System.Collections.Specialized.HybridDictionary.Keys
+  - System.Collections.Specialized.HybridDictionary.Remove(System.Object)
+  - System.Collections.Specialized.HybridDictionary.SyncRoot
+  - System.Collections.Specialized.HybridDictionary.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.Specialized.HybridDictionary.Values
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: HybridDictionary
+  fullName: System.Collections.Specialized.HybridDictionary
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 18
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Implements IDictionary by using a @'System.Collections.Specialized.ListDictionary' while the collection is small, and then switching to a @'System.Collections.Hashtable' when the collection gets large.
+  syntax:
+    content: 'public class HybridDictionary : IDictionary, ICollection, IEnumerable'
+    content.vb: Public Class HybridDictionary Implements IDictionary, ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IDictionary
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Specialized.HybridDictionary.#ctor
+  id: '#ctor'
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: HybridDictionary()
+  fullName: System.Collections.Specialized.HybridDictionary.HybridDictionary()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 31
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Creates an empty case-sensitive @'System.Collections.Specialized.HybridDictionary'.
+  syntax:
+    content: public HybridDictionary()
+    content.vb: Public Sub New
+- uid: System.Collections.Specialized.HybridDictionary.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: HybridDictionary(Int32)
+  fullName: System.Collections.Specialized.HybridDictionary.HybridDictionary(System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 35
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Creates a case-sensitive @'System.Collections.Specialized.HybridDictionary' with the specified initial size.
+  syntax:
+    content: public HybridDictionary(int initialSize)
+    content.vb: Public Sub New(initialSize As Integer)
+    parameters:
+    - id: initialSize
+      type: System.Int32
+      description: The approximate number of entries that the @'System.Collections.Specialized.HybridDictionary' can initially contain.
+- uid: System.Collections.Specialized.HybridDictionary.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: HybridDictionary(Boolean)
+  fullName: System.Collections.Specialized.HybridDictionary.HybridDictionary(System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 39
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Creates an empty @'System.Collections.Specialized.HybridDictionary' with the specified case sensitivity.
+  syntax:
+    content: public HybridDictionary(bool caseInsensitive)
+    content.vb: Public Sub New(caseInsensitive As Boolean)
+    parameters:
+    - id: caseInsensitive
+      type: System.Boolean
+      description: A Boolean that denotes whether the @'System.Collections.Specialized.HybridDictionary' is case-insensitive.
+- uid: System.Collections.Specialized.HybridDictionary.#ctor(System.Int32,System.Boolean)
+  id: '#ctor(System.Int32,System.Boolean)'
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: HybridDictionary(Int32, Boolean)
+  fullName: System.Collections.Specialized.HybridDictionary.HybridDictionary(System.Int32, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 44
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Creates a @'System.Collections.Specialized.HybridDictionary' with the specified initial size and case sensitivity.
+  syntax:
+    content: public HybridDictionary(int initialSize, bool caseInsensitive)
+    content.vb: Public Sub New(initialSize As Integer, caseInsensitive As Boolean)
+    parameters:
+    - id: initialSize
+      type: System.Int32
+      description: The approximate number of entries that the @'System.Collections.Specialized.HybridDictionary' can initially contain.
+    - id: caseInsensitive
+      type: System.Boolean
+      description: A Boolean that denotes whether the @'System.Collections.Specialized.HybridDictionary' is case-insensitive.
+- uid: System.Collections.Specialized.HybridDictionary.Item(System.Object)
+  id: Item(System.Object)
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: Item[Object]
+  name.vb: Item(Object)
+  fullName: System.Collections.Specialized.HybridDictionary.Item[System.Object]
+  fullName.vb: System.Collections.Specialized.HybridDictionary.Item(System.Object)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 60
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets or sets the value associated with the specified key.
+  syntax:
+    content: public object this[object key] { get; set; }
+    content.vb: Public Property Item(key As Object) As Object
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key whose value to get or set.
+    return:
+      type: System.Object
+      description: The value associated with the specified key. If the specified key is not found, attempting to get it returns null, and attempting to set it creates a new entry using the specified key.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+- uid: System.Collections.Specialized.HybridDictionary.Count
+  id: Count
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: Count
+  fullName: System.Collections.Specialized.HybridDictionary.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 153
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets the number of key/value pairs contained in the @'System.Collections.Specialized.HybridDictionary'.
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of key/value pairs contained in the @'System.Collections.Specialized.HybridDictionary'.Retrieving the value of this property is an O(1) operation.
+- uid: System.Collections.Specialized.HybridDictionary.Keys
+  id: Keys
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: Keys
+  fullName: System.Collections.Specialized.HybridDictionary.Keys
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 173
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets an @'System.Collections.ICollection' containing the keys in the @'System.Collections.Specialized.HybridDictionary'.
+  syntax:
+    content: public ICollection Keys { get; }
+    content.vb: Public ReadOnly Property Keys As ICollection
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+      description: An @'System.Collections.ICollection' containing the keys in the @'System.Collections.Specialized.HybridDictionary'.
+- uid: System.Collections.Specialized.HybridDictionary.IsReadOnly
+  id: IsReadOnly
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: IsReadOnly
+  fullName: System.Collections.Specialized.HybridDictionary.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 188
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets a value indicating whether the @'System.Collections.Specialized.HybridDictionary' is read-only.
+  syntax:
+    content: public bool IsReadOnly { get; }
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: This property always returns false.
+- uid: System.Collections.Specialized.HybridDictionary.IsFixedSize
+  id: IsFixedSize
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: IsFixedSize
+  fullName: System.Collections.Specialized.HybridDictionary.IsFixedSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 196
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets a value indicating whether the @'System.Collections.Specialized.HybridDictionary' has a fixed size.
+  syntax:
+    content: public bool IsFixedSize { get; }
+    content.vb: Public ReadOnly Property IsFixedSize As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: This property always returns false.
+- uid: System.Collections.Specialized.HybridDictionary.IsSynchronized
+  id: IsSynchronized
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: IsSynchronized
+  fullName: System.Collections.Specialized.HybridDictionary.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 204
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets a value indicating whether the @'System.Collections.Specialized.HybridDictionary' is synchronized (thread safe).
+  syntax:
+    content: public bool IsSynchronized { get; }
+    content.vb: Public ReadOnly Property IsSynchronized As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: This property always returns false.
+- uid: System.Collections.Specialized.HybridDictionary.SyncRoot
+  id: SyncRoot
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: SyncRoot
+  fullName: System.Collections.Specialized.HybridDictionary.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 212
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets an object that can be used to synchronize access to the @'System.Collections.Specialized.HybridDictionary'.
+  syntax:
+    content: public object SyncRoot { get; }
+    content.vb: Public ReadOnly Property SyncRoot As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: An object that can be used to synchronize access to the @'System.Collections.Specialized.HybridDictionary'.
+- uid: System.Collections.Specialized.HybridDictionary.Values
+  id: Values
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: Values
+  fullName: System.Collections.Specialized.HybridDictionary.Values
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 220
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets an @'System.Collections.ICollection' containing the values in the @'System.Collections.Specialized.HybridDictionary'.
+  syntax:
+    content: public ICollection Values { get; }
+    content.vb: Public ReadOnly Property Values As ICollection
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+      description: An @'System.Collections.ICollection' containing the values in the @'System.Collections.Specialized.HybridDictionary'.
+- uid: System.Collections.Specialized.HybridDictionary.Add(System.Object,System.Object)
+  id: Add(System.Object,System.Object)
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: Add(Object, Object)
+  fullName: System.Collections.Specialized.HybridDictionary.Add(System.Object, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 235
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Adds an entry with the specified key and value into the @'System.Collections.Specialized.HybridDictionary'.
+  syntax:
+    content: public void Add(object key, object value)
+    content.vb: Public Sub Add(key As Object, value As Object)
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key of the entry to add.
+    - id: value
+      type: System.Object
+      description: The value of the entry to add. The value can be null.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.ArgumentException
+    description: An entry with the same key already exists in the @'System.Collections.Specialized.HybridDictionary'.
+- uid: System.Collections.Specialized.HybridDictionary.Clear
+  id: Clear
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: Clear()
+  fullName: System.Collections.Specialized.HybridDictionary.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 263
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Removes all entries from the @'System.Collections.Specialized.HybridDictionary'.
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+- uid: System.Collections.Specialized.HybridDictionary.Contains(System.Object)
+  id: Contains(System.Object)
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: Contains(Object)
+  fullName: System.Collections.Specialized.HybridDictionary.Contains(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 280
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Determines whether the @'System.Collections.Specialized.HybridDictionary' contains a specific key.
+  syntax:
+    content: public bool Contains(object key)
+    content.vb: Public Function Contains(key As Object) As Boolean
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key to locate in the @'System.Collections.Specialized.HybridDictionary'.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.Specialized.HybridDictionary' contains an entry with the specified key; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+- uid: System.Collections.Specialized.HybridDictionary.CopyTo(System.Array,System.Int32)
+  id: CopyTo(System.Array,System.Int32)
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: CopyTo(Array, Int32)
+  fullName: System.Collections.Specialized.HybridDictionary.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 301
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Copies the @'System.Collections.Specialized.HybridDictionary' entries to a one-dimensional @'System.Array' instance at the specified index.
+  syntax:
+    content: public void CopyTo(Array array, int index)
+    content.vb: Public Sub CopyTo(array As Array, index As Integer)
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional @'System.Array' that is the destination of the @'System.Collections.DictionaryEntry' objects copied from @'System.Collections.Specialized.HybridDictionary'. The @'System.Array' must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or- The number of elements in the source @''System.Collections.Specialized.HybridDictionary'' is greater than the available space from *arrayIndex* to the end of the destination *array*.'
+  - type: System.InvalidCastException
+    description: The type of the source @'System.Collections.Specialized.HybridDictionary' cannot be cast automatically to the type of the destination *array*.
+- uid: System.Collections.Specialized.HybridDictionary.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: GetEnumerator()
+  fullName: System.Collections.Specialized.HybridDictionary.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 313
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Returns an @'System.Collections.IDictionaryEnumerator' that iterates through the @'System.Collections.Specialized.HybridDictionary'.
+  syntax:
+    content: public IDictionaryEnumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As IDictionaryEnumerator
+    return:
+      type: System.Collections.IDictionaryEnumerator
+      description: An @'System.Collections.IDictionaryEnumerator' for the @'System.Collections.Specialized.HybridDictionary'.
+- uid: System.Collections.Specialized.HybridDictionary.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Collections.Specialized.HybridDictionary.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 326
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Returns an @'System.Collections.IEnumerator' that iterates through the @'System.Collections.Specialized.HybridDictionary'.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: An @'System.Collections.IEnumerator' for the @'System.Collections.Specialized.HybridDictionary'.
+- uid: System.Collections.Specialized.HybridDictionary.Remove(System.Object)
+  id: Remove(System.Object)
+  parent: System.Collections.Specialized.HybridDictionary
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: Remove(Object)
+  fullName: System.Collections.Specialized.HybridDictionary.Remove(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/HybridDictionary.cs
+    startLine: 339
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Removes the entry with the specified key from the @'System.Collections.Specialized.HybridDictionary'.
+  syntax:
+    content: public void Remove(object key)
+    content.vb: Public Sub Remove(key As Object)
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key of the entry to remove.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+references:
+- uid: System.Collections.Specialized
+  isExternal: false
+  name: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Collections.IDictionaryEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IDictionaryEnumerator
+  fullName: System.Collections.IDictionaryEnumerator
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator

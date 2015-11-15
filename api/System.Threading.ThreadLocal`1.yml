@@ -785,3 +785,11 @@ references:
   name: System.Collections.Generic
   fullName: System.Collections.Generic
   type: Namespace
+- uid: System.MissingMemberException
+  parent: System
+  isExternal: false
+  href: System.MissingMemberException.yml
+  name: MissingMemberException
+  fullName: System.MissingMemberException
+  type: Class
+  summary: The exception that is thrown when there is an attempt to dynamically access a class member that does not exist.

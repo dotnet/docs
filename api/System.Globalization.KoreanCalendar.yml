@@ -2822,3 +2822,25 @@ references:
     href: System.Int32.yml
   - name: )
     fullName: )
+- uid: System.TypeInitializationException
+  isExternal: false
+  href: System.TypeInitializationException.yml
+  name: TypeInitializationException
+  fullName: System.TypeInitializationException
+  type: Class
+  summary: The exception that is thrown as a wrapper around the exception thrown by the class initializer. This class cannot be inherited.
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
+  summary: The exception that is thrown when the value of an argument is outside the allowable range of values as defined by the invoked method.
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
+  summary: The exception that is thrown when a method call is invalid for the object's current state.

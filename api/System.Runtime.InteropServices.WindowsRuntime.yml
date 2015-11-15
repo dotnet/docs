@@ -34,30 +34,35 @@ references:
   name: DefaultInterfaceAttribute
   fullName: System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute
   type: Class
+  summary: Specifies the default interface of a managed Windows Runtime class.
 - uid: System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute
   isExternal: false
   href: System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute.yml
   name: InterfaceImplementedInVersionAttribute
   fullName: System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute
   type: Class
+  summary: Specifies the version of the target type that first implemented the specified interface.
 - uid: System.Runtime.InteropServices.WindowsRuntime.ReadOnlyArrayAttribute
   isExternal: false
   href: System.Runtime.InteropServices.WindowsRuntime.ReadOnlyArrayAttribute.yml
   name: ReadOnlyArrayAttribute
   fullName: System.Runtime.InteropServices.WindowsRuntime.ReadOnlyArrayAttribute
   type: Class
+  summary: When applied to an array parameter in a Windows Runtime component, specifies that the contents of the array that is passed to that parameter are used only for input. The caller expects the array to be unchanged by the call. See the Remarks section for important information about callers that are written using managed code.
 - uid: System.Runtime.InteropServices.WindowsRuntime.WriteOnlyArrayAttribute
   isExternal: false
   href: System.Runtime.InteropServices.WindowsRuntime.WriteOnlyArrayAttribute.yml
   name: WriteOnlyArrayAttribute
   fullName: System.Runtime.InteropServices.WindowsRuntime.WriteOnlyArrayAttribute
   type: Class
+  summary: When applied to an array parameter in a Windows Runtime component, specifies that the contents of an array that is passed to that parameter are used only for output. The caller does not guarantee that the contents are initialized, and the called method should not read the contents. See the Remarks section for important information about callers that are written using managed code.
 - uid: System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute
   isExternal: false
   href: System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute.yml
   name: ReturnValueNameAttribute
   fullName: System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute
   type: Class
+  summary: Specifies the name of the return value of a method in a Windows Runtime component.
 - uid: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken
   parent: System.Runtime.InteropServices.WindowsRuntime
   isExternal: false
@@ -65,6 +70,7 @@ references:
   name: EventRegistrationToken
   fullName: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken
   type: Struct
+  summary: A token that is returned when an event handler is added to a Windows Runtime event. The token is used to remove the event handler from the event at a later time.
 - uid: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable`1
   parent: System.Runtime.InteropServices.WindowsRuntime
   isExternal: false
@@ -74,6 +80,7 @@ references:
   fullName: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable<T>
   fullName.vb: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable(Of T)
   type: Class
+  summary: Stores mappings between delegates and event tokens, to support the implementation of a Windows Runtime event in managed code.
   spec.csharp:
   - uid: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable`1
     name: EventRegistrationTokenTable
@@ -103,24 +110,28 @@ references:
   name: IActivationFactory
   fullName: System.Runtime.InteropServices.WindowsRuntime.IActivationFactory
   type: Interface
+  summary: Enables classes to be activated by the Windows Runtime.
 - uid: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal
   isExternal: false
   href: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.yml
   name: WindowsRuntimeMarshal
   fullName: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal
   type: Class
+  summary: Provides helper methods for marshaling data between the .NET Framework and the Windows Runtime.
 - uid: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata
   isExternal: false
   href: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.yml
   name: WindowsRuntimeMetadata
   fullName: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata
   type: Class
+  summary: Provides an event for resolving reflection-only type requests for types that are provided by Windows Metadata files, and methods for performing the resolution.
 - uid: System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs
   isExternal: false
   href: System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs.yml
   name: DesignerNamespaceResolveEventArgs
   fullName: System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs
   type: Class
+  summary: Provides data for the @'System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.DesignerNamespaceResolve' event.
 - uid: System.Runtime.InteropServices.WindowsRuntime
   isExternal: false
   name: System.Runtime.InteropServices.WindowsRuntime

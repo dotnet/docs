@@ -1930,3 +1930,10 @@ references:
   name: DebuggerBrowsableState
   fullName: System.Diagnostics.DebuggerBrowsableState
   type: Enum
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
+  summary: The exception that is thrown when the value of an argument is outside the allowable range of values as defined by the invoked method.

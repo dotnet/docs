@@ -52,7 +52,7 @@ references:
   name: BindingRestrictions
   fullName: System.Dynamic.BindingRestrictions
   type: Class
-  summary: Represents a set of binding restrictions on the @'System.Dynamic.DynamicMetaObject'under which the dynamic binding is valid.
+  summary: Represents a set of binding restrictions on the @'System.Dynamic.DynamicMetaObject' under which the dynamic binding is valid.
 - uid: System.Dynamic.CallInfo
   parent: System.Dynamic
   isExternal: false
@@ -76,7 +76,7 @@ references:
   name: CreateInstanceBinder
   fullName: System.Dynamic.CreateInstanceBinder
   type: Class
-  summary: Represents the create dynamic operation at the call site, providing the binding semantic and the details about the operation.
+  summary: Represents the dynamic create operation at the call site, providing the binding semantic and the details about the operation.
 - uid: System.Dynamic.DeleteIndexBinder
   parent: System.Dynamic
   isExternal: false
@@ -115,18 +115,7 @@ references:
   name: DynamicObject
   fullName: System.Dynamic.DynamicObject
   type: Class
-  summary: >-
-    Provides a simple class that can be inherited from to create an object with dynamic behavior
-
-    at runtime.  Subclasses can override the various binder methods (GetMember, SetMember, Call, etc...)
-
-    to provide custom behavior that will be invoked at runtime.
-
-
-
-    If a method is not overridden then the DynamicObject does not directly support that behavior and
-
-    the call site will determine how the binding should be performed.
+  summary: Provides a base class for specifying dynamic behavior at run time. This class must be inherited from; you cannot instantiate it directly.
 - uid: System.Dynamic.ExpandoObject
   parent: System.Dynamic
   isExternal: false
@@ -134,7 +123,7 @@ references:
   name: ExpandoObject
   fullName: System.Dynamic.ExpandoObject
   type: Class
-  summary: Represents an object with members that can be dynamically added and removed at runtime.
+  summary: Represents an object whose members can be dynamically added and removed at run time.
 - uid: System.Dynamic.GetIndexBinder
   parent: System.Dynamic
   isExternal: false
@@ -165,10 +154,7 @@ references:
   name: IInvokeOnGetBinder
   fullName: System.Dynamic.IInvokeOnGetBinder
   type: Interface
-  summary: >-
-    Represents information about a dynamic get member operation, indicating
-
-    if the get member should invoke properties when performing the get.
+  summary: Represents information about a dynamic get member operation that indicates if the get member should invoke properties when they perform the get operation.
 - uid: System.Dynamic.InvokeBinder
   parent: System.Dynamic
   isExternal: false
@@ -184,10 +170,7 @@ references:
   name: InvokeMemberBinder
   fullName: System.Dynamic.InvokeMemberBinder
   type: Class
-  summary: >-
-    Represents the invoke member dynamic operation at the call site,
-
-    providing the binding semantic and the details about the operation.
+  summary: Represents the invoke member dynamic operation at the call site, providing the binding semantic and the details about the operation.
 - uid: System.Dynamic.SetIndexBinder
   parent: System.Dynamic
   isExternal: false

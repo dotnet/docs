@@ -743,3 +743,33 @@ references:
   name: DateTime
   fullName: System.DateTime
   type: Struct
+- uid: System.ComponentModel.Win32Exception
+  isExternal: false
+  href: System.ComponentModel.Win32Exception.yml
+  name: Win32Exception
+  fullName: System.ComponentModel.Win32Exception
+  type: Class
+  summary: Throws an exception for a Win32 error code.
+- uid: System.PlatformNotSupportedException
+  isExternal: false
+  href: System.PlatformNotSupportedException.yml
+  name: PlatformNotSupportedException
+  fullName: System.PlatformNotSupportedException
+  type: Class
+  summary: The exception that is thrown when a feature does not run on a particular platform.
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  href: System.NotSupportedException.yml
+  name: NotSupportedException
+  fullName: System.NotSupportedException
+  type: Class
+  summary: The exception that is thrown when an invoked method is not supported, or when there is an attempt to read, seek, or write to a stream that does not support the invoked functionality.
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
+  summary: The exception that is thrown when a method call is invalid for the object's current state.

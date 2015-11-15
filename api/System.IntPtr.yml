@@ -921,3 +921,10 @@ references:
   name: IntPtr
   fullName: System.IntPtr
   type: Struct
+- uid: System.OverflowException
+  isExternal: false
+  href: System.OverflowException.yml
+  name: OverflowException
+  fullName: System.OverflowException
+  type: Class
+  summary: The exception that is thrown when an arithmetic, casting, or conversion operation in a checked context results in an overflow.

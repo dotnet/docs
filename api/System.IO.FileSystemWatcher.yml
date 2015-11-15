@@ -823,3 +823,47 @@ references:
   name: RenamedEventArgs
   fullName: System.IO.RenamedEventArgs
   type: Class
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.IO.PathTooLongException
+  isExternal: false
+  href: System.IO.PathTooLongException.yml
+  name: PathTooLongException
+  fullName: System.IO.PathTooLongException
+  type: Class
+  summary: The exception that is thrown when a path or file name is longer than the system-defined maximum length.
+- uid: System.ComponentModel.InvalidEnumArgumentException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  href: System.ObjectDisposedException.yml
+  name: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+  type: Class
+  summary: The exception that is thrown when an operation is performed on a disposed object.
+- uid: System.PlatformNotSupportedException
+  isExternal: false
+  href: System.PlatformNotSupportedException.yml
+  name: PlatformNotSupportedException
+  fullName: System.PlatformNotSupportedException
+  type: Class
+  summary: The exception that is thrown when a feature does not run on a particular platform.
+- uid: System.IO.FileNotFoundException
+  isExternal: false
+  href: System.IO.FileNotFoundException.yml
+  name: FileNotFoundException
+  fullName: System.IO.FileNotFoundException
+  type: Class
+  summary: The exception that is thrown when an attempt to access a file that does not exist on disk fails.

@@ -218,6 +218,7 @@ references:
   name: _Activator
   fullName: System.Runtime.InteropServices._Activator
   type: Interface
+  summary: Exposes the @'System.Activator' class to unmanaged code.
 - uid: System.Runtime.InteropServices._Attribute
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -225,6 +226,7 @@ references:
   name: _Attribute
   fullName: System.Runtime.InteropServices._Attribute
   type: Interface
+  summary: Exposes the @'System.Attribute' class to unmanaged code.
 - uid: System.Runtime.InteropServices._Thread
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -232,6 +234,7 @@ references:
   name: _Thread
   fullName: System.Runtime.InteropServices._Thread
   type: Interface
+  summary: Exposes the @'System.Threading.Thread' class to unmanaged code.
 - uid: System.Runtime.InteropServices._Type
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -239,6 +242,7 @@ references:
   name: _Type
   fullName: System.Runtime.InteropServices._Type
   type: Interface
+  summary: Exposes the public members of the @'System.Type' class to the unmanaged code.
 - uid: System.Runtime.InteropServices._Assembly
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -246,6 +250,7 @@ references:
   name: _Assembly
   fullName: System.Runtime.InteropServices._Assembly
   type: Interface
+  summary: Exposes the public members of the @'System.Reflection.Assembly' class to unmanaged code.
 - uid: System.Runtime.InteropServices._MemberInfo
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -253,6 +258,7 @@ references:
   name: _MemberInfo
   fullName: System.Runtime.InteropServices._MemberInfo
   type: Interface
+  summary: Exposes the public members of the @'System.Reflection.MemberInfo' class to unmanaged code.
 - uid: System.Runtime.InteropServices._MethodBase
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -260,6 +266,7 @@ references:
   name: _MethodBase
   fullName: System.Runtime.InteropServices._MethodBase
   type: Interface
+  summary: Exposes the public members of the @'System.Reflection.MethodBase' class to unmanaged code.
 - uid: System.Runtime.InteropServices._MethodInfo
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -267,6 +274,7 @@ references:
   name: _MethodInfo
   fullName: System.Runtime.InteropServices._MethodInfo
   type: Interface
+  summary: Exposes the public members of the @'System.Reflection.MethodInfo' class to unmanaged code.
 - uid: System.Runtime.InteropServices._ConstructorInfo
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -274,6 +282,7 @@ references:
   name: _ConstructorInfo
   fullName: System.Runtime.InteropServices._ConstructorInfo
   type: Interface
+  summary: Exposes the public members of the @'System.Reflection.ConstructorInfo' class to unmanaged code.
 - uid: System.Runtime.InteropServices._FieldInfo
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -281,6 +290,7 @@ references:
   name: _FieldInfo
   fullName: System.Runtime.InteropServices._FieldInfo
   type: Interface
+  summary: Exposes the public members of the @'System.Reflection.FieldInfo' class to unmanaged code.
 - uid: System.Runtime.InteropServices._PropertyInfo
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -288,6 +298,7 @@ references:
   name: _PropertyInfo
   fullName: System.Runtime.InteropServices._PropertyInfo
   type: Interface
+  summary: Exposes the public members of the @'System.Reflection.PropertyInfo' class to unmanaged code.
 - uid: System.Runtime.InteropServices._EventInfo
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -295,6 +306,7 @@ references:
   name: _EventInfo
   fullName: System.Runtime.InteropServices._EventInfo
   type: Interface
+  summary: Exposes the public members of the @'System.Reflection.EventInfo' class to unmanaged code.
 - uid: System.Runtime.InteropServices._ParameterInfo
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -302,6 +314,7 @@ references:
   name: _ParameterInfo
   fullName: System.Runtime.InteropServices._ParameterInfo
   type: Interface
+  summary: Exposes the @'System.Reflection.ParameterInfo' class to unmanaged code.
 - uid: System.Runtime.InteropServices._Module
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -309,6 +322,7 @@ references:
   name: _Module
   fullName: System.Runtime.InteropServices._Module
   type: Interface
+  summary: Exposes the @'System.Reflection.Module' class to unmanaged code.
 - uid: System.Runtime.InteropServices._AssemblyName
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -316,6 +330,7 @@ references:
   name: _AssemblyName
   fullName: System.Runtime.InteropServices._AssemblyName
   type: Interface
+  summary: Exposes the @'System.Reflection.AssemblyName' class to unmanaged code.
 - uid: System.Runtime.InteropServices.ArrayWithOffset
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -323,30 +338,35 @@ references:
   name: ArrayWithOffset
   fullName: System.Runtime.InteropServices.ArrayWithOffset
   type: Struct
+  summary: Encapsulates an array and an offset within the specified array.
 - uid: System.Runtime.InteropServices.UnmanagedFunctionPointerAttribute
   isExternal: false
   href: System.Runtime.InteropServices.UnmanagedFunctionPointerAttribute.yml
   name: UnmanagedFunctionPointerAttribute
   fullName: System.Runtime.InteropServices.UnmanagedFunctionPointerAttribute
   type: Class
+  summary: Controls the marshaling behavior of a delegate signature passed as an unmanaged function pointer to or from unmanaged code. This class cannot be inherited.
 - uid: System.Runtime.InteropServices.TypeIdentifierAttribute
   isExternal: false
   href: System.Runtime.InteropServices.TypeIdentifierAttribute.yml
   name: TypeIdentifierAttribute
   fullName: System.Runtime.InteropServices.TypeIdentifierAttribute
   type: Class
+  summary: Provides support for type equivalence.
 - uid: System.Runtime.InteropServices.AllowReversePInvokeCallsAttribute
   isExternal: false
   href: System.Runtime.InteropServices.AllowReversePInvokeCallsAttribute.yml
   name: AllowReversePInvokeCallsAttribute
   fullName: System.Runtime.InteropServices.AllowReversePInvokeCallsAttribute
   type: Class
+  summary: Allows an unmanaged method to call a managed method.
 - uid: System.Runtime.InteropServices.DispIdAttribute
   isExternal: false
   href: System.Runtime.InteropServices.DispIdAttribute.yml
   name: DispIdAttribute
   fullName: System.Runtime.InteropServices.DispIdAttribute
   type: Class
+  summary: Specifies the COM dispatch identifier (DISPID) of a method, field, or property.
 - uid: System.Runtime.InteropServices.ComInterfaceType
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -354,18 +374,21 @@ references:
   name: ComInterfaceType
   fullName: System.Runtime.InteropServices.ComInterfaceType
   type: Enum
+  summary: Identifies how to expose an interface to COM.
 - uid: System.Runtime.InteropServices.InterfaceTypeAttribute
   isExternal: false
   href: System.Runtime.InteropServices.InterfaceTypeAttribute.yml
   name: InterfaceTypeAttribute
   fullName: System.Runtime.InteropServices.InterfaceTypeAttribute
   type: Class
+  summary: Indicates whether a managed interface is dual, dispatch-only, or IUnknown -only when exposed to COM.
 - uid: System.Runtime.InteropServices.ComDefaultInterfaceAttribute
   isExternal: false
   href: System.Runtime.InteropServices.ComDefaultInterfaceAttribute.yml
   name: ComDefaultInterfaceAttribute
   fullName: System.Runtime.InteropServices.ComDefaultInterfaceAttribute
   type: Class
+  summary: Specifies a default interface to expose to COM. This class cannot be inherited.
 - uid: System.Runtime.InteropServices.ClassInterfaceType
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -373,54 +396,63 @@ references:
   name: ClassInterfaceType
   fullName: System.Runtime.InteropServices.ClassInterfaceType
   type: Enum
+  summary: Identifies the type of class interface that is generated for a class.
 - uid: System.Runtime.InteropServices.ClassInterfaceAttribute
   isExternal: false
   href: System.Runtime.InteropServices.ClassInterfaceAttribute.yml
   name: ClassInterfaceAttribute
   fullName: System.Runtime.InteropServices.ClassInterfaceAttribute
   type: Class
+  summary: Indicates the type of class interface to be generated for a class exposed to COM, if an interface is generated at all.
 - uid: System.Runtime.InteropServices.ComVisibleAttribute
   isExternal: false
   href: System.Runtime.InteropServices.ComVisibleAttribute.yml
   name: ComVisibleAttribute
   fullName: System.Runtime.InteropServices.ComVisibleAttribute
   type: Class
+  summary: Controls accessibility of an individual managed type or member, or of all types within an assembly, to COM.
 - uid: System.Runtime.InteropServices.TypeLibImportClassAttribute
   isExternal: false
   href: System.Runtime.InteropServices.TypeLibImportClassAttribute.yml
   name: TypeLibImportClassAttribute
   fullName: System.Runtime.InteropServices.TypeLibImportClassAttribute
   type: Class
+  summary: Specifies which @'System.Type' exclusively uses an interface. This class cannot be inherited.
 - uid: System.Runtime.InteropServices.LCIDConversionAttribute
   isExternal: false
   href: System.Runtime.InteropServices.LCIDConversionAttribute.yml
   name: LCIDConversionAttribute
   fullName: System.Runtime.InteropServices.LCIDConversionAttribute
   type: Class
+  summary: Indicates that a method's unmanaged signature expects a locale identifier (LCID) parameter.
 - uid: System.Runtime.InteropServices.ComRegisterFunctionAttribute
   isExternal: false
   href: System.Runtime.InteropServices.ComRegisterFunctionAttribute.yml
   name: ComRegisterFunctionAttribute
   fullName: System.Runtime.InteropServices.ComRegisterFunctionAttribute
   type: Class
+  summary: Specifies the method to call when you register an assembly for use from COM; this enables the execution of user-written code during the registration process.
 - uid: System.Runtime.InteropServices.ComUnregisterFunctionAttribute
   isExternal: false
   href: System.Runtime.InteropServices.ComUnregisterFunctionAttribute.yml
   name: ComUnregisterFunctionAttribute
   fullName: System.Runtime.InteropServices.ComUnregisterFunctionAttribute
   type: Class
+  summary: Specifies the method to call when you unregister an assembly for use from COM; this allows for the execution of user-written code during the unregistration process.
 - uid: System.Runtime.InteropServices.ProgIdAttribute
   isExternal: false
   href: System.Runtime.InteropServices.ProgIdAttribute.yml
   name: ProgIdAttribute
   fullName: System.Runtime.InteropServices.ProgIdAttribute
   type: Class
+  summary: Allows the user to specify the ProgID of a class.
 - uid: System.Runtime.InteropServices.ImportedFromTypeLibAttribute
   isExternal: false
   href: System.Runtime.InteropServices.ImportedFromTypeLibAttribute.yml
   name: ImportedFromTypeLibAttribute
   fullName: System.Runtime.InteropServices.ImportedFromTypeLibAttribute
   type: Class
+  summary: Indicates that the types defined within an assembly were originally defined in a type library.
 - uid: System.Runtime.InteropServices.IDispatchImplType
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -428,24 +460,28 @@ references:
   name: IDispatchImplType
   fullName: System.Runtime.InteropServices.IDispatchImplType
   type: Enum
+  summary: Indicates which IDispatch implementation to use for a particular class.
 - uid: System.Runtime.InteropServices.IDispatchImplAttribute
   isExternal: false
   href: System.Runtime.InteropServices.IDispatchImplAttribute.yml
   name: IDispatchImplAttribute
   fullName: System.Runtime.InteropServices.IDispatchImplAttribute
   type: Class
+  summary: Indicates which IDispatch implementation the common language runtime uses when exposing dual interfaces and dispinterfaces to COM.
 - uid: System.Runtime.InteropServices.ComSourceInterfacesAttribute
   isExternal: false
   href: System.Runtime.InteropServices.ComSourceInterfacesAttribute.yml
   name: ComSourceInterfacesAttribute
   fullName: System.Runtime.InteropServices.ComSourceInterfacesAttribute
   type: Class
+  summary: Identifies a list of interfaces that are exposed as COM event sources for the attributed class.
 - uid: System.Runtime.InteropServices.ComConversionLossAttribute
   isExternal: false
   href: System.Runtime.InteropServices.ComConversionLossAttribute.yml
   name: ComConversionLossAttribute
   fullName: System.Runtime.InteropServices.ComConversionLossAttribute
   type: Class
+  summary: Indicates that information was lost about a class or interface when it was imported from a type library to an assembly.
 - uid: System.Runtime.InteropServices.TypeLibTypeFlags
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -453,6 +489,7 @@ references:
   name: TypeLibTypeFlags
   fullName: System.Runtime.InteropServices.TypeLibTypeFlags
   type: Enum
+  summary: Describes the original settings of the @'System.Runtime.InteropServices.TYPEFLAGS' in the COM type library from which the type was imported.
 - uid: System.Runtime.InteropServices.TypeLibFuncFlags
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -460,6 +497,7 @@ references:
   name: TypeLibFuncFlags
   fullName: System.Runtime.InteropServices.TypeLibFuncFlags
   type: Enum
+  summary: Describes the original settings of the FUNCFLAGS in the COM type library from where this method was imported.
 - uid: System.Runtime.InteropServices.TypeLibVarFlags
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -467,24 +505,28 @@ references:
   name: TypeLibVarFlags
   fullName: System.Runtime.InteropServices.TypeLibVarFlags
   type: Enum
+  summary: Describes the original settings of the @'System.Runtime.InteropServices.VARFLAGS' in the COM type library from which the variable was imported.
 - uid: System.Runtime.InteropServices.TypeLibTypeAttribute
   isExternal: false
   href: System.Runtime.InteropServices.TypeLibTypeAttribute.yml
   name: TypeLibTypeAttribute
   fullName: System.Runtime.InteropServices.TypeLibTypeAttribute
   type: Class
+  summary: Contains the @'System.Runtime.InteropServices.TYPEFLAGS' that were originally imported for this type from the COM type library.
 - uid: System.Runtime.InteropServices.TypeLibFuncAttribute
   isExternal: false
   href: System.Runtime.InteropServices.TypeLibFuncAttribute.yml
   name: TypeLibFuncAttribute
   fullName: System.Runtime.InteropServices.TypeLibFuncAttribute
   type: Class
+  summary: Contains the @'System.Runtime.InteropServices.FUNCFLAGS' that were originally imported for this method from the COM type library.
 - uid: System.Runtime.InteropServices.TypeLibVarAttribute
   isExternal: false
   href: System.Runtime.InteropServices.TypeLibVarAttribute.yml
   name: TypeLibVarAttribute
   fullName: System.Runtime.InteropServices.TypeLibVarAttribute
   type: Class
+  summary: Contains the @'System.Runtime.InteropServices.VARFLAGS' that were originally imported for this field from the COM type library.
 - uid: System.Runtime.InteropServices.VarEnum
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -492,6 +534,7 @@ references:
   name: VarEnum
   fullName: System.Runtime.InteropServices.VarEnum
   type: Enum
+  summary: Indicates how to marshal the array elements when an array is marshaled from managed to unmanaged code as a @'System.Runtime.InteropServices.UnmanagedType.SafeArray'.
 - uid: System.Runtime.InteropServices.UnmanagedType
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -499,48 +542,56 @@ references:
   name: UnmanagedType
   fullName: System.Runtime.InteropServices.UnmanagedType
   type: Enum
+  summary: Identifies how to marshal parameters or fields to unmanaged code.
 - uid: System.Runtime.InteropServices.MarshalAsAttribute
   isExternal: false
   href: System.Runtime.InteropServices.MarshalAsAttribute.yml
   name: MarshalAsAttribute
   fullName: System.Runtime.InteropServices.MarshalAsAttribute
   type: Class
+  summary: Indicates how to marshal the data between managed and unmanaged code.
 - uid: System.Runtime.InteropServices.ComImportAttribute
   isExternal: false
   href: System.Runtime.InteropServices.ComImportAttribute.yml
   name: ComImportAttribute
   fullName: System.Runtime.InteropServices.ComImportAttribute
   type: Class
+  summary: Indicates that the attributed type was previously defined in COM.
 - uid: System.Runtime.InteropServices.GuidAttribute
   isExternal: false
   href: System.Runtime.InteropServices.GuidAttribute.yml
   name: GuidAttribute
   fullName: System.Runtime.InteropServices.GuidAttribute
   type: Class
+  summary: Supplies an explicit @'System.Guid' when an automatic GUID is undesirable.
 - uid: System.Runtime.InteropServices.PreserveSigAttribute
   isExternal: false
   href: System.Runtime.InteropServices.PreserveSigAttribute.yml
   name: PreserveSigAttribute
   fullName: System.Runtime.InteropServices.PreserveSigAttribute
   type: Class
+  summary: Indicates that the HRESULT or retval signature transformation that takes place during COM interop calls should be suppressed.
 - uid: System.Runtime.InteropServices.InAttribute
   isExternal: false
   href: System.Runtime.InteropServices.InAttribute.yml
   name: InAttribute
   fullName: System.Runtime.InteropServices.InAttribute
   type: Class
+  summary: Indicates that data should be marshaled from the caller to the callee, but not back to the caller.
 - uid: System.Runtime.InteropServices.OutAttribute
   isExternal: false
   href: System.Runtime.InteropServices.OutAttribute.yml
   name: OutAttribute
   fullName: System.Runtime.InteropServices.OutAttribute
   type: Class
+  summary: Indicates that data should be marshaled from callee back to caller.
 - uid: System.Runtime.InteropServices.OptionalAttribute
   isExternal: false
   href: System.Runtime.InteropServices.OptionalAttribute.yml
   name: OptionalAttribute
   fullName: System.Runtime.InteropServices.OptionalAttribute
   type: Class
+  summary: Indicates that a parameter is optional.
 - uid: System.Runtime.InteropServices.DllImportSearchPath
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -548,18 +599,21 @@ references:
   name: DllImportSearchPath
   fullName: System.Runtime.InteropServices.DllImportSearchPath
   type: Enum
+  summary: Specifies the paths that are used to search for DLLs that provide functions for platform invokes.
 - uid: System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute
   isExternal: false
   href: System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute.yml
   name: DefaultDllImportSearchPathsAttribute
   fullName: System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute
   type: Class
+  summary: Specifies the paths that are used to search for DLLs that provide functions for platform invokes.
 - uid: System.Runtime.InteropServices.DllImportAttribute
   isExternal: false
   href: System.Runtime.InteropServices.DllImportAttribute.yml
   name: DllImportAttribute
   fullName: System.Runtime.InteropServices.DllImportAttribute
   type: Class
+  summary: Indicates that the attributed method is exposed by an unmanaged dynamic-link library (DLL) as a static entry point.
 - uid: System.Runtime.InteropServices.StructLayoutAttribute
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -567,78 +621,91 @@ references:
   name: StructLayoutAttribute
   fullName: System.Runtime.InteropServices.StructLayoutAttribute
   type: Class
+  summary: Lets you control the physical layout of the data fields of a class or structure in memory.
 - uid: System.Runtime.InteropServices.FieldOffsetAttribute
   isExternal: false
   href: System.Runtime.InteropServices.FieldOffsetAttribute.yml
   name: FieldOffsetAttribute
   fullName: System.Runtime.InteropServices.FieldOffsetAttribute
   type: Class
+  summary: Indicates the physical position of fields within the unmanaged representation of a class or structure.
 - uid: System.Runtime.InteropServices.ComAliasNameAttribute
   isExternal: false
   href: System.Runtime.InteropServices.ComAliasNameAttribute.yml
   name: ComAliasNameAttribute
   fullName: System.Runtime.InteropServices.ComAliasNameAttribute
   type: Class
+  summary: Indicates the COM alias for a parameter or field type.
 - uid: System.Runtime.InteropServices.AutomationProxyAttribute
   isExternal: false
   href: System.Runtime.InteropServices.AutomationProxyAttribute.yml
   name: AutomationProxyAttribute
   fullName: System.Runtime.InteropServices.AutomationProxyAttribute
   type: Class
+  summary: Specifies whether the type should be marshaled using the Automation marshaler or a custom proxy and stub.
 - uid: System.Runtime.InteropServices.PrimaryInteropAssemblyAttribute
   isExternal: false
   href: System.Runtime.InteropServices.PrimaryInteropAssemblyAttribute.yml
   name: PrimaryInteropAssemblyAttribute
   fullName: System.Runtime.InteropServices.PrimaryInteropAssemblyAttribute
   type: Class
+  summary: Indicates that the attributed assembly is a primary interop assembly.
 - uid: System.Runtime.InteropServices.CoClassAttribute
   isExternal: false
   href: System.Runtime.InteropServices.CoClassAttribute.yml
   name: CoClassAttribute
   fullName: System.Runtime.InteropServices.CoClassAttribute
   type: Class
+  summary: Specifies the class identifier of a coclass imported from a type library.
 - uid: System.Runtime.InteropServices.ComEventInterfaceAttribute
   isExternal: false
   href: System.Runtime.InteropServices.ComEventInterfaceAttribute.yml
   name: ComEventInterfaceAttribute
   fullName: System.Runtime.InteropServices.ComEventInterfaceAttribute
   type: Class
+  summary: Identifies the source interface and the class that implements the methods of the event interface that is generated when a coclass is imported from a COM type library.
 - uid: System.Runtime.InteropServices.TypeLibVersionAttribute
   isExternal: false
   href: System.Runtime.InteropServices.TypeLibVersionAttribute.yml
   name: TypeLibVersionAttribute
   fullName: System.Runtime.InteropServices.TypeLibVersionAttribute
   type: Class
+  summary: Specifies the version number of an exported type library.
 - uid: System.Runtime.InteropServices.ComCompatibleVersionAttribute
   isExternal: false
   href: System.Runtime.InteropServices.ComCompatibleVersionAttribute.yml
   name: ComCompatibleVersionAttribute
   fullName: System.Runtime.InteropServices.ComCompatibleVersionAttribute
   type: Class
+  summary: Indicates to a COM client that all classes in the current version of an assembly are compatible with classes in an earlier version of the assembly.
 - uid: System.Runtime.InteropServices.BestFitMappingAttribute
   isExternal: false
   href: System.Runtime.InteropServices.BestFitMappingAttribute.yml
   name: BestFitMappingAttribute
   fullName: System.Runtime.InteropServices.BestFitMappingAttribute
   type: Class
+  summary: Controls whether Unicode characters are converted to the closest matching ANSI characters.
 - uid: System.Runtime.InteropServices.DefaultCharSetAttribute
   isExternal: false
   href: System.Runtime.InteropServices.DefaultCharSetAttribute.yml
   name: DefaultCharSetAttribute
   fullName: System.Runtime.InteropServices.DefaultCharSetAttribute
   type: Class
+  summary: Specifies the value of the @'System.Runtime.InteropServices.CharSet' enumeration. This class cannot be inherited.
 - uid: System.Runtime.InteropServices.SetWin32ContextInIDispatchAttribute
   isExternal: false
   href: System.Runtime.InteropServices.SetWin32ContextInIDispatchAttribute.yml
   name: SetWin32ContextInIDispatchAttribute
   fullName: System.Runtime.InteropServices.SetWin32ContextInIDispatchAttribute
   type: Class
+  summary: This attribute has been deprecated.
 - uid: System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute
   isExternal: false
   href: System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute.yml
   name: ManagedToNativeComInteropStubAttribute
   fullName: System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute
   type: Class
+  summary: Provides support for user customization of interop stubs in managed-to-COM interop scenarios.
 - uid: System.Runtime.InteropServices.CallingConvention
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -646,6 +713,7 @@ references:
   name: CallingConvention
   fullName: System.Runtime.InteropServices.CallingConvention
   type: Enum
+  summary: Specifies the calling convention required to call methods implemented in unmanaged code.
 - uid: System.Runtime.InteropServices.CharSet
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -653,12 +721,14 @@ references:
   name: CharSet
   fullName: System.Runtime.InteropServices.CharSet
   type: Enum
+  summary: Dictates which character set marshaled strings should use.
 - uid: System.Runtime.InteropServices.COMException
   isExternal: false
   href: System.Runtime.InteropServices.COMException.yml
   name: COMException
   fullName: System.Runtime.InteropServices.COMException
   type: Class
+  summary: The exception that is thrown when an unrecognized HRESULT is returned from a COM method call.
 - uid: System.Runtime.InteropServices.CriticalHandle
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -666,6 +736,7 @@ references:
   name: CriticalHandle
   fullName: System.Runtime.InteropServices.CriticalHandle
   type: Class
+  summary: Represents a wrapper class for handle resources.
 - uid: System.Runtime.InteropServices.ExternalException
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -673,6 +744,7 @@ references:
   name: ExternalException
   fullName: System.Runtime.InteropServices.ExternalException
   type: Class
+  summary: The base exception type for all COM interop exceptions and structured exception handling (SEH) exceptions.
 - uid: System.Runtime.InteropServices.GCHandleType
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -680,6 +752,7 @@ references:
   name: GCHandleType
   fullName: System.Runtime.InteropServices.GCHandleType
   type: Enum
+  summary: Represents the types of handles the @'System.Runtime.InteropServices.GCHandle' class can allocate.
 - uid: System.Runtime.InteropServices.GCHandle
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -687,6 +760,7 @@ references:
   name: GCHandle
   fullName: System.Runtime.InteropServices.GCHandle
   type: Struct
+  summary: Provides a way to access a managed object from unmanaged memory.
 - uid: System.Runtime.InteropServices.HandleRef
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -694,12 +768,14 @@ references:
   name: HandleRef
   fullName: System.Runtime.InteropServices.HandleRef
   type: Struct
+  summary: Wraps a managed object holding a handle to a resource that is passed to unmanaged code using platform invoke.
 - uid: System.Runtime.InteropServices.ICustomMarshaler
   isExternal: false
   href: System.Runtime.InteropServices.ICustomMarshaler.yml
   name: ICustomMarshaler
   fullName: System.Runtime.InteropServices.ICustomMarshaler
   type: Interface
+  summary: Provides custom wrappers for handling method calls.
 - uid: System.Runtime.InteropServices._Exception
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -707,12 +783,14 @@ references:
   name: _Exception
   fullName: System.Runtime.InteropServices._Exception
   type: Interface
+  summary: Exposes the public members of the @'System.Exception' class to unmanaged code.
 - uid: System.Runtime.InteropServices.InvalidOleVariantTypeException
   isExternal: false
   href: System.Runtime.InteropServices.InvalidOleVariantTypeException.yml
   name: InvalidOleVariantTypeException
   fullName: System.Runtime.InteropServices.InvalidOleVariantTypeException
   type: Class
+  summary: The exception thrown by the marshaler when it encounters an argument of a variant type that can not be marshaled to managed code.
 - uid: System.Runtime.InteropServices.LayoutKind
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -720,6 +798,7 @@ references:
   name: LayoutKind
   fullName: System.Runtime.InteropServices.LayoutKind
   type: Enum
+  summary: Controls the layout of an object when exported to unmanaged code.
 - uid: System.Runtime.InteropServices.CustomQueryInterfaceMode
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -727,30 +806,35 @@ references:
   name: CustomQueryInterfaceMode
   fullName: System.Runtime.InteropServices.CustomQueryInterfaceMode
   type: Enum
+  summary: Indicates whether the @'System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type,System.Runtime.InteropServices.CustomQueryInterfaceMode)' method's IUnknown::QueryInterface calls can use the @'System.Runtime.InteropServices.ICustomQueryInterface' interface.
 - uid: System.Runtime.InteropServices.Marshal
   isExternal: false
   href: System.Runtime.InteropServices.Marshal.yml
   name: Marshal
   fullName: System.Runtime.InteropServices.Marshal
   type: Class
+  summary: Provides a collection of methods for allocating unmanaged memory, copying unmanaged memory blocks, and converting managed to unmanaged types, as well as other miscellaneous methods used when interacting with unmanaged code.
 - uid: System.Runtime.InteropServices.MarshalDirectiveException
   isExternal: false
   href: System.Runtime.InteropServices.MarshalDirectiveException.yml
   name: MarshalDirectiveException
   fullName: System.Runtime.InteropServices.MarshalDirectiveException
   type: Class
+  summary: The exception that is thrown by the marshaler when it encounters a @'System.Runtime.InteropServices.MarshalAsAttribute' it does not support.
 - uid: System.Runtime.InteropServices.RuntimeEnvironment
   isExternal: false
   href: System.Runtime.InteropServices.RuntimeEnvironment.yml
   name: RuntimeEnvironment
   fullName: System.Runtime.InteropServices.RuntimeEnvironment
   type: Class
+  summary: Provides a collection of static methods that return information about the common language runtime environment.
 - uid: System.Runtime.InteropServices.SEHException
   isExternal: false
   href: System.Runtime.InteropServices.SEHException.yml
   name: SEHException
   fullName: System.Runtime.InteropServices.SEHException
   type: Class
+  summary: Represents structured exception handling (SEH) errors.
 - uid: System.Runtime.InteropServices.SafeBuffer
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -758,6 +842,7 @@ references:
   name: SafeBuffer
   fullName: System.Runtime.InteropServices.SafeBuffer
   type: Class
+  summary: Provides a controlled memory buffer that can be used for reading and writing. Attempts to access memory outside the controlled buffer (underruns and overruns) raise exceptions.
 - uid: System.Runtime.InteropServices.SafeHandle
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -765,36 +850,42 @@ references:
   name: SafeHandle
   fullName: System.Runtime.InteropServices.SafeHandle
   type: Class
+  summary: Represents a wrapper class for operating system handles. This class must be inherited.
 - uid: System.Runtime.InteropServices.BStrWrapper
   isExternal: false
   href: System.Runtime.InteropServices.BStrWrapper.yml
   name: BStrWrapper
   fullName: System.Runtime.InteropServices.BStrWrapper
   type: Class
+  summary: Marshals data of type VT_BSTR from managed to unmanaged code. This class cannot be inherited.
 - uid: System.Runtime.InteropServices.CurrencyWrapper
   isExternal: false
   href: System.Runtime.InteropServices.CurrencyWrapper.yml
   name: CurrencyWrapper
   fullName: System.Runtime.InteropServices.CurrencyWrapper
   type: Class
+  summary: Wraps objects the marshaler should marshal as a VT_CY.
 - uid: System.Runtime.InteropServices.ErrorWrapper
   isExternal: false
   href: System.Runtime.InteropServices.ErrorWrapper.yml
   name: ErrorWrapper
   fullName: System.Runtime.InteropServices.ErrorWrapper
   type: Class
+  summary: Wraps objects the marshaler should marshal as a VT_ERROR.
 - uid: System.Runtime.InteropServices.UnknownWrapper
   isExternal: false
   href: System.Runtime.InteropServices.UnknownWrapper.yml
   name: UnknownWrapper
   fullName: System.Runtime.InteropServices.UnknownWrapper
   type: Class
+  summary: Wraps objects the marshaler should marshal as a VT_UNKNOWN.
 - uid: System.Runtime.InteropServices.VariantWrapper
   isExternal: false
   href: System.Runtime.InteropServices.VariantWrapper.yml
   name: VariantWrapper
   fullName: System.Runtime.InteropServices.VariantWrapper
   type: Class
+  summary: Marshals data of type VT_VARIANT | VT_BYREF from managed to unmanaged code. This class cannot be inherited.
 - uid: System.Runtime.InteropServices.ComMemberType
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -802,12 +893,14 @@ references:
   name: ComMemberType
   fullName: System.Runtime.InteropServices.ComMemberType
   type: Enum
+  summary: Describes the type of a COM member.
 - uid: System.Runtime.InteropServices.ICustomAdapter
   isExternal: false
   href: System.Runtime.InteropServices.ICustomAdapter.yml
   name: ICustomAdapter
   fullName: System.Runtime.InteropServices.ICustomAdapter
   type: Interface
+  summary: Provides a way for clients to access the actual object, rather than the adapter object handed out by a custom marshaler.
 - uid: System.Runtime.InteropServices.CustomQueryInterfaceResult
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -815,30 +908,35 @@ references:
   name: CustomQueryInterfaceResult
   fullName: System.Runtime.InteropServices.CustomQueryInterfaceResult
   type: Enum
+  summary: Provides return values for the @'System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(System.Guid@,System.IntPtr@)' method.
 - uid: System.Runtime.InteropServices.ICustomQueryInterface
   isExternal: false
   href: System.Runtime.InteropServices.ICustomQueryInterface.yml
   name: ICustomQueryInterface
   fullName: System.Runtime.InteropServices.ICustomQueryInterface
   type: Interface
+  summary: Enables developers to provide a custom, managed implementation of the IUnknown::QueryInterface(REFIID riid, void **ppvObject) method.
 - uid: System.Runtime.InteropServices.InvalidComObjectException
   isExternal: false
   href: System.Runtime.InteropServices.InvalidComObjectException.yml
   name: InvalidComObjectException
   fullName: System.Runtime.InteropServices.InvalidComObjectException
   type: Class
+  summary: The exception thrown when an invalid COM object is used.
 - uid: System.Runtime.InteropServices.SafeArrayRankMismatchException
   isExternal: false
   href: System.Runtime.InteropServices.SafeArrayRankMismatchException.yml
   name: SafeArrayRankMismatchException
   fullName: System.Runtime.InteropServices.SafeArrayRankMismatchException
   type: Class
+  summary: The exception thrown when the rank of an incoming SAFEARRAY does not match the rank specified in the managed signature.
 - uid: System.Runtime.InteropServices.SafeArrayTypeMismatchException
   isExternal: false
   href: System.Runtime.InteropServices.SafeArrayTypeMismatchException.yml
   name: SafeArrayTypeMismatchException
   fullName: System.Runtime.InteropServices.SafeArrayTypeMismatchException
   type: Class
+  summary: The exception thrown when the type of the incoming SAFEARRAY does not match the type specified in the managed signature.
 - uid: System.Runtime.InteropServices.NativeCallableAttribute
   isExternal: false
   href: System.Runtime.InteropServices.NativeCallableAttribute.yml
@@ -851,18 +949,21 @@ references:
   name: DispatchWrapper
   fullName: System.Runtime.InteropServices.DispatchWrapper
   type: Class
+  summary: Wraps objects the marshaler should marshal as a VT_DISPATCH.
 - uid: System.Runtime.InteropServices.ExtensibleClassFactory
   isExternal: false
   href: System.Runtime.InteropServices.ExtensibleClassFactory.yml
   name: ExtensibleClassFactory
   fullName: System.Runtime.InteropServices.ExtensibleClassFactory
   type: Class
+  summary: Enables customization of managed objects that extend from unmanaged objects during creation.
 - uid: System.Runtime.InteropServices.ICustomFactory
   isExternal: false
   href: System.Runtime.InteropServices.ICustomFactory.yml
   name: ICustomFactory
   fullName: System.Runtime.InteropServices.ICustomFactory
   type: Interface
+  summary: Enables users to write activation code for managed objects that extend @'System.MarshalByRefObject'.
 - uid: System.Runtime.InteropServices.ObjectCreationDelegate
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -870,6 +971,7 @@ references:
   name: ObjectCreationDelegate
   fullName: System.Runtime.InteropServices.ObjectCreationDelegate
   type: Delegate
+  summary: Creates a COM object.
 - uid: System.Runtime.InteropServices.AssemblyRegistrationFlags
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -877,6 +979,7 @@ references:
   name: AssemblyRegistrationFlags
   fullName: System.Runtime.InteropServices.AssemblyRegistrationFlags
   type: Enum
+  summary: Defines a set of flags used when registering assemblies.
 - uid: System.Runtime.InteropServices.IRegistrationServices
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -884,6 +987,7 @@ references:
   name: IRegistrationServices
   fullName: System.Runtime.InteropServices.IRegistrationServices
   type: Interface
+  summary: Provides a set of services for registering and unregistering managed assemblies for use from COM.
 - uid: System.Runtime.InteropServices.TypeLibImporterFlags
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -891,6 +995,7 @@ references:
   name: TypeLibImporterFlags
   fullName: System.Runtime.InteropServices.TypeLibImporterFlags
   type: Enum
+  summary: Indicates how an assembly should be produced.
 - uid: System.Runtime.InteropServices.TypeLibExporterFlags
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -898,6 +1003,7 @@ references:
   name: TypeLibExporterFlags
   fullName: System.Runtime.InteropServices.TypeLibExporterFlags
   type: Enum
+  summary: Indicates how a type library should be produced.
 - uid: System.Runtime.InteropServices.ImporterEventKind
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -905,6 +1011,7 @@ references:
   name: ImporterEventKind
   fullName: System.Runtime.InteropServices.ImporterEventKind
   type: Enum
+  summary: Describes the callbacks that the type library importer makes when importing a type library.
 - uid: System.Runtime.InteropServices.ExporterEventKind
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -912,6 +1019,7 @@ references:
   name: ExporterEventKind
   fullName: System.Runtime.InteropServices.ExporterEventKind
   type: Enum
+  summary: Describes the callbacks that the type library exporter makes when exporting a type library.
 - uid: System.Runtime.InteropServices.ITypeLibImporterNotifySink
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -919,6 +1027,7 @@ references:
   name: ITypeLibImporterNotifySink
   fullName: System.Runtime.InteropServices.ITypeLibImporterNotifySink
   type: Interface
+  summary: Provides a callback mechanism for the type library converter to inform the caller of the status of the conversion, and involve the caller in the conversion process itself.
 - uid: System.Runtime.InteropServices.ITypeLibExporterNotifySink
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -926,18 +1035,21 @@ references:
   name: ITypeLibExporterNotifySink
   fullName: System.Runtime.InteropServices.ITypeLibExporterNotifySink
   type: Interface
+  summary: Provides a callback mechanism for the assembly converter to inform the caller of the status of the conversion, and involve the caller in the conversion process itself.
 - uid: System.Runtime.InteropServices.ITypeLibConverter
   isExternal: false
   href: System.Runtime.InteropServices.ITypeLibConverter.yml
   name: ITypeLibConverter
   fullName: System.Runtime.InteropServices.ITypeLibConverter
   type: Interface
+  summary: Provides a set of services that convert a managed assembly to a COM type library and vice versa.
 - uid: System.Runtime.InteropServices.ITypeLibExporterNameProvider
   isExternal: false
   href: System.Runtime.InteropServices.ITypeLibExporterNameProvider.yml
   name: ITypeLibExporterNameProvider
   fullName: System.Runtime.InteropServices.ITypeLibExporterNameProvider
   type: Interface
+  summary: Provides control over the casing of names when exported to a type library.
 - uid: System.Runtime.InteropServices.RegistrationClassContext
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -945,6 +1057,7 @@ references:
   name: RegistrationClassContext
   fullName: System.Runtime.InteropServices.RegistrationClassContext
   type: Enum
+  summary: Specifies the set of execution contexts in which a class object will be made available for requests to construct instances.
 - uid: System.Runtime.InteropServices.RegistrationConnectionType
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -952,12 +1065,14 @@ references:
   name: RegistrationConnectionType
   fullName: System.Runtime.InteropServices.RegistrationConnectionType
   type: Enum
+  summary: Defines the types of connections to a class object.
 - uid: System.Runtime.InteropServices.RegistrationServices
   isExternal: false
   href: System.Runtime.InteropServices.RegistrationServices.yml
   name: RegistrationServices
   fullName: System.Runtime.InteropServices.RegistrationServices
   type: Class
+  summary: Provides a set of services for registering and unregistering managed assemblies for use from COM.
 - uid: System.Runtime.InteropServices.BIND_OPTS
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -965,6 +1080,7 @@ references:
   name: BIND_OPTS
   fullName: System.Runtime.InteropServices.BIND_OPTS
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.BIND_OPTS' instead.
 - uid: System.Runtime.InteropServices.UCOMIBindCtx
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -972,6 +1088,7 @@ references:
   name: UCOMIBindCtx
   fullName: System.Runtime.InteropServices.UCOMIBindCtx
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.BIND_OPTS' instead.
 - uid: System.Runtime.InteropServices.UCOMIConnectionPointContainer
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -979,6 +1096,7 @@ references:
   name: UCOMIConnectionPointContainer
   fullName: System.Runtime.InteropServices.UCOMIConnectionPointContainer
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IConnectionPointContainer' instead.
 - uid: System.Runtime.InteropServices.UCOMIConnectionPoint
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -986,6 +1104,7 @@ references:
   name: UCOMIConnectionPoint
   fullName: System.Runtime.InteropServices.UCOMIConnectionPoint
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IConnectionPoint' instead.
 - uid: System.Runtime.InteropServices.UCOMIEnumMoniker
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -993,12 +1112,14 @@ references:
   name: UCOMIEnumMoniker
   fullName: System.Runtime.InteropServices.UCOMIEnumMoniker
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IEnumMoniker' instead.
 - uid: System.Runtime.InteropServices.CONNECTDATA
   isExternal: false
   href: System.Runtime.InteropServices.CONNECTDATA.yml
   name: CONNECTDATA
   fullName: System.Runtime.InteropServices.CONNECTDATA
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.CONNECTDATA' instead.
 - uid: System.Runtime.InteropServices.UCOMIEnumConnections
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1006,6 +1127,7 @@ references:
   name: UCOMIEnumConnections
   fullName: System.Runtime.InteropServices.UCOMIEnumConnections
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IEnumConnections' instead.
 - uid: System.Runtime.InteropServices.UCOMIEnumConnectionPoints
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1013,6 +1135,7 @@ references:
   name: UCOMIEnumConnectionPoints
   fullName: System.Runtime.InteropServices.UCOMIEnumConnectionPoints
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints' instead.
 - uid: System.Runtime.InteropServices.UCOMIEnumString
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1020,12 +1143,14 @@ references:
   name: UCOMIEnumString
   fullName: System.Runtime.InteropServices.UCOMIEnumString
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IEnumString' instead.
 - uid: System.Runtime.InteropServices.UCOMIEnumVARIANT
   isExternal: false
   href: System.Runtime.InteropServices.UCOMIEnumVARIANT.yml
   name: UCOMIEnumVARIANT
   fullName: System.Runtime.InteropServices.UCOMIEnumVARIANT
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IEnumVARIANT' instead.
 - uid: System.Runtime.InteropServices.FILETIME
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1033,6 +1158,7 @@ references:
   name: FILETIME
   fullName: System.Runtime.InteropServices.FILETIME
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.FILETIME' instead.
 - uid: System.Runtime.InteropServices.UCOMIMoniker
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1040,12 +1166,14 @@ references:
   name: UCOMIMoniker
   fullName: System.Runtime.InteropServices.UCOMIMoniker
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IMoniker' instead.
 - uid: System.Runtime.InteropServices.UCOMIPersistFile
   isExternal: false
   href: System.Runtime.InteropServices.UCOMIPersistFile.yml
   name: UCOMIPersistFile
   fullName: System.Runtime.InteropServices.UCOMIPersistFile
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IPersistFile' instead.
 - uid: System.Runtime.InteropServices.UCOMIRunningObjectTable
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1053,6 +1181,7 @@ references:
   name: UCOMIRunningObjectTable
   fullName: System.Runtime.InteropServices.UCOMIRunningObjectTable
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IRunningObjectTable' instead.
 - uid: System.Runtime.InteropServices.STATSTG
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1060,6 +1189,7 @@ references:
   name: STATSTG
   fullName: System.Runtime.InteropServices.STATSTG
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.STATSTG' instead.
 - uid: System.Runtime.InteropServices.UCOMIStream
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1067,6 +1197,7 @@ references:
   name: UCOMIStream
   fullName: System.Runtime.InteropServices.UCOMIStream
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IStream' instead.
 - uid: System.Runtime.InteropServices.DESCKIND
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1074,6 +1205,7 @@ references:
   name: DESCKIND
   fullName: System.Runtime.InteropServices.DESCKIND
   type: Enum
+  summary: Use @'System.Runtime.InteropServices.ComTypes.DESCKIND' instead.
 - uid: System.Runtime.InteropServices.BINDPTR
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1081,6 +1213,7 @@ references:
   name: BINDPTR
   fullName: System.Runtime.InteropServices.BINDPTR
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.BINDPTR' instead.
 - uid: System.Runtime.InteropServices.UCOMITypeComp
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1088,6 +1221,7 @@ references:
   name: UCOMITypeComp
   fullName: System.Runtime.InteropServices.UCOMITypeComp
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.ITypeComp' instead.
 - uid: System.Runtime.InteropServices.TYPEKIND
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1095,6 +1229,7 @@ references:
   name: TYPEKIND
   fullName: System.Runtime.InteropServices.TYPEKIND
   type: Enum
+  summary: Use @'System.Runtime.InteropServices.ComTypes.TYPEKIND' instead.
 - uid: System.Runtime.InteropServices.TYPEFLAGS
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1102,6 +1237,7 @@ references:
   name: TYPEFLAGS
   fullName: System.Runtime.InteropServices.TYPEFLAGS
   type: Enum
+  summary: Use @'System.Runtime.InteropServices.ComTypes.TYPEFLAGS' instead.
 - uid: System.Runtime.InteropServices.IMPLTYPEFLAGS
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1109,18 +1245,21 @@ references:
   name: IMPLTYPEFLAGS
   fullName: System.Runtime.InteropServices.IMPLTYPEFLAGS
   type: Enum
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS' instead.
 - uid: System.Runtime.InteropServices.TYPEATTR
   isExternal: false
   href: System.Runtime.InteropServices.TYPEATTR.yml
   name: TYPEATTR
   fullName: System.Runtime.InteropServices.TYPEATTR
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.TYPEATTR' instead.
 - uid: System.Runtime.InteropServices.FUNCDESC
   isExternal: false
   href: System.Runtime.InteropServices.FUNCDESC.yml
   name: FUNCDESC
   fullName: System.Runtime.InteropServices.FUNCDESC
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.FUNCDESC' instead.
 - uid: System.Runtime.InteropServices.IDLFLAG
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1128,6 +1267,7 @@ references:
   name: IDLFLAG
   fullName: System.Runtime.InteropServices.IDLFLAG
   type: Enum
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IDLFLAG' instead.
 - uid: System.Runtime.InteropServices.IDLDESC
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1135,6 +1275,7 @@ references:
   name: IDLDESC
   fullName: System.Runtime.InteropServices.IDLDESC
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IDLDESC' instead.
 - uid: System.Runtime.InteropServices.PARAMFLAG
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1142,6 +1283,7 @@ references:
   name: PARAMFLAG
   fullName: System.Runtime.InteropServices.PARAMFLAG
   type: Enum
+  summary: Use @'System.Runtime.InteropServices.ComTypes.PARAMFLAG' instead.
 - uid: System.Runtime.InteropServices.PARAMDESC
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1149,6 +1291,7 @@ references:
   name: PARAMDESC
   fullName: System.Runtime.InteropServices.PARAMDESC
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.PARAMDESC' instead.
 - uid: System.Runtime.InteropServices.TYPEDESC
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1156,6 +1299,7 @@ references:
   name: TYPEDESC
   fullName: System.Runtime.InteropServices.TYPEDESC
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.TYPEDESC' instead.
 - uid: System.Runtime.InteropServices.ELEMDESC
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1163,6 +1307,7 @@ references:
   name: ELEMDESC
   fullName: System.Runtime.InteropServices.ELEMDESC
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.ELEMDESC' instead.
 - uid: System.Runtime.InteropServices.ELEMDESC.DESCUNION
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1170,18 +1315,21 @@ references:
   name: ELEMDESC.DESCUNION
   fullName: System.Runtime.InteropServices.ELEMDESC.DESCUNION
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION' instead.
 - uid: System.Runtime.InteropServices.VARDESC
   isExternal: false
   href: System.Runtime.InteropServices.VARDESC.yml
   name: VARDESC
   fullName: System.Runtime.InteropServices.VARDESC
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.VARDESC' instead.
 - uid: System.Runtime.InteropServices.VARDESC.DESCUNION
   isExternal: false
   href: System.Runtime.InteropServices.VARDESC.DESCUNION.yml
   name: VARDESC.DESCUNION
   fullName: System.Runtime.InteropServices.VARDESC.DESCUNION
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION' instead.
 - uid: System.Runtime.InteropServices.DISPPARAMS
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1189,6 +1337,7 @@ references:
   name: DISPPARAMS
   fullName: System.Runtime.InteropServices.DISPPARAMS
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.DISPPARAMS' instead.
 - uid: System.Runtime.InteropServices.EXCEPINFO
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1196,6 +1345,7 @@ references:
   name: EXCEPINFO
   fullName: System.Runtime.InteropServices.EXCEPINFO
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.EXCEPINFO' instead.
 - uid: System.Runtime.InteropServices.FUNCKIND
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1203,6 +1353,7 @@ references:
   name: FUNCKIND
   fullName: System.Runtime.InteropServices.FUNCKIND
   type: Enum
+  summary: Use @'System.Runtime.InteropServices.ComTypes.FUNCKIND' instead.
 - uid: System.Runtime.InteropServices.INVOKEKIND
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1210,6 +1361,7 @@ references:
   name: INVOKEKIND
   fullName: System.Runtime.InteropServices.INVOKEKIND
   type: Enum
+  summary: Use @'System.Runtime.InteropServices.ComTypes.INVOKEKIND' instead.
 - uid: System.Runtime.InteropServices.CALLCONV
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1217,6 +1369,7 @@ references:
   name: CALLCONV
   fullName: System.Runtime.InteropServices.CALLCONV
   type: Enum
+  summary: Use @'System.Runtime.InteropServices.ComTypes.CALLCONV' instead.
 - uid: System.Runtime.InteropServices.FUNCFLAGS
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1224,6 +1377,7 @@ references:
   name: FUNCFLAGS
   fullName: System.Runtime.InteropServices.FUNCFLAGS
   type: Enum
+  summary: Use @'System.Runtime.InteropServices.ComTypes.FUNCFLAGS' instead.
 - uid: System.Runtime.InteropServices.VARFLAGS
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1231,6 +1385,7 @@ references:
   name: VARFLAGS
   fullName: System.Runtime.InteropServices.VARFLAGS
   type: Enum
+  summary: Use @'System.Runtime.InteropServices.ComTypes.VARFLAGS' instead.
 - uid: System.Runtime.InteropServices.UCOMITypeInfo
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1238,6 +1393,7 @@ references:
   name: UCOMITypeInfo
   fullName: System.Runtime.InteropServices.UCOMITypeInfo
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.ITypeInfo' instead.
 - uid: System.Runtime.InteropServices.SYSKIND
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1245,6 +1401,7 @@ references:
   name: SYSKIND
   fullName: System.Runtime.InteropServices.SYSKIND
   type: Enum
+  summary: Use @'System.Runtime.InteropServices.ComTypes.SYSKIND' instead.
 - uid: System.Runtime.InteropServices.LIBFLAGS
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1252,12 +1409,14 @@ references:
   name: LIBFLAGS
   fullName: System.Runtime.InteropServices.LIBFLAGS
   type: Enum
+  summary: Use @'System.Runtime.InteropServices.ComTypes.LIBFLAGS' instead.
 - uid: System.Runtime.InteropServices.TYPELIBATTR
   isExternal: false
   href: System.Runtime.InteropServices.TYPELIBATTR.yml
   name: TYPELIBATTR
   fullName: System.Runtime.InteropServices.TYPELIBATTR
   type: Struct
+  summary: Use @'System.Runtime.InteropServices.ComTypes.TYPELIBATTR' instead.
 - uid: System.Runtime.InteropServices.UCOMITypeLib
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1265,16 +1424,14 @@ references:
   name: UCOMITypeLib
   fullName: System.Runtime.InteropServices.UCOMITypeLib
   type: Interface
+  summary: Use @'System.Runtime.InteropServices.ComTypes.ITypeLib' instead.
 - uid: System.Runtime.InteropServices.ComEventsHelper
   isExternal: false
   href: System.Runtime.InteropServices.ComEventsHelper.yml
   name: ComEventsHelper
   fullName: System.Runtime.InteropServices.ComEventsHelper
   type: Class
-  summary: >-
-    The static methods provided in ComEventsHelper allow using .NET delegates to subscribe to events
-
-    raised COM objects.
+  summary: Provides methods that enable .NET Framework delegates that handle events to be added and removed from COM objects.
 - uid: System.Runtime.InteropServices._AssemblyBuilder
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1282,6 +1439,7 @@ references:
   name: _AssemblyBuilder
   fullName: System.Runtime.InteropServices._AssemblyBuilder
   type: Interface
+  summary: Exposes the @'System.Reflection.Emit.AssemblyBuilder' class to unmanaged code.
 - uid: System.Runtime.InteropServices._ConstructorBuilder
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1289,6 +1447,7 @@ references:
   name: _ConstructorBuilder
   fullName: System.Runtime.InteropServices._ConstructorBuilder
   type: Interface
+  summary: Exposes the @'System.Reflection.Emit.ConstructorBuilder' class to unmanaged code.
 - uid: System.Runtime.InteropServices._CustomAttributeBuilder
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1296,6 +1455,7 @@ references:
   name: _CustomAttributeBuilder
   fullName: System.Runtime.InteropServices._CustomAttributeBuilder
   type: Interface
+  summary: Exposes the @'System.Reflection.Emit.CustomAttributeBuilder' class to unmanaged code.
 - uid: System.Runtime.InteropServices._EnumBuilder
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1303,6 +1463,7 @@ references:
   name: _EnumBuilder
   fullName: System.Runtime.InteropServices._EnumBuilder
   type: Interface
+  summary: Exposes the @'System.Reflection.Emit.EnumBuilder' class to unmanaged code.
 - uid: System.Runtime.InteropServices._EventBuilder
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1310,6 +1471,7 @@ references:
   name: _EventBuilder
   fullName: System.Runtime.InteropServices._EventBuilder
   type: Interface
+  summary: Exposes the @'System.Reflection.Emit.EventBuilder' class to unmanaged code.
 - uid: System.Runtime.InteropServices._FieldBuilder
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1317,6 +1479,7 @@ references:
   name: _FieldBuilder
   fullName: System.Runtime.InteropServices._FieldBuilder
   type: Interface
+  summary: Exposes the @'System.Reflection.Emit.FieldBuilder' class to unmanaged code.
 - uid: System.Runtime.InteropServices._ILGenerator
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1324,6 +1487,7 @@ references:
   name: _ILGenerator
   fullName: System.Runtime.InteropServices._ILGenerator
   type: Interface
+  summary: Exposes the @'System.Reflection.Emit.ILGenerator' class to unmanaged code.
 - uid: System.Runtime.InteropServices._LocalBuilder
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1331,6 +1495,7 @@ references:
   name: _LocalBuilder
   fullName: System.Runtime.InteropServices._LocalBuilder
   type: Interface
+  summary: Exposes the @'System.Reflection.Emit.LocalBuilder' class to unmanaged code.
 - uid: System.Runtime.InteropServices._MethodBuilder
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1338,6 +1503,7 @@ references:
   name: _MethodBuilder
   fullName: System.Runtime.InteropServices._MethodBuilder
   type: Interface
+  summary: Exposes the @'System.Reflection.Emit.MethodBuilder' class to unmanaged code.
 - uid: System.Runtime.InteropServices._ModuleBuilder
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1345,6 +1511,7 @@ references:
   name: _ModuleBuilder
   fullName: System.Runtime.InteropServices._ModuleBuilder
   type: Interface
+  summary: Exposes the @'System.Reflection.Emit.ModuleBuilder' class to unmanaged code.
 - uid: System.Runtime.InteropServices._ParameterBuilder
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1352,6 +1519,7 @@ references:
   name: _ParameterBuilder
   fullName: System.Runtime.InteropServices._ParameterBuilder
   type: Interface
+  summary: Exposes the @'System.Reflection.Emit.ParameterBuilder' class to unmanaged code.
 - uid: System.Runtime.InteropServices._PropertyBuilder
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1359,6 +1527,7 @@ references:
   name: _PropertyBuilder
   fullName: System.Runtime.InteropServices._PropertyBuilder
   type: Interface
+  summary: Exposes the @'System.Reflection.Emit.PropertyBuilder' class to unmanaged code.
 - uid: System.Runtime.InteropServices._SignatureHelper
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1366,6 +1535,7 @@ references:
   name: _SignatureHelper
   fullName: System.Runtime.InteropServices._SignatureHelper
   type: Interface
+  summary: Exposes the @'System.Reflection.Emit.SignatureHelper' class to unmanaged code.
 - uid: System.Runtime.InteropServices._TypeBuilder
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -1373,24 +1543,28 @@ references:
   name: _TypeBuilder
   fullName: System.Runtime.InteropServices._TypeBuilder
   type: Interface
+  summary: Exposes the @'System.Reflection.Emit.TypeBuilder' class to unmanaged code.
 - uid: System.Runtime.InteropServices.ComAwareEventInfo
   isExternal: false
   href: System.Runtime.InteropServices.ComAwareEventInfo.yml
   name: ComAwareEventInfo
   fullName: System.Runtime.InteropServices.ComAwareEventInfo
   type: Class
+  summary: Permits late-bound registration of an event handler.
 - uid: System.Runtime.InteropServices.HandleCollector
   isExternal: false
   href: System.Runtime.InteropServices.HandleCollector.yml
   name: HandleCollector
   fullName: System.Runtime.InteropServices.HandleCollector
   type: Class
+  summary: Tracks outstanding handles and forces a garbage collection when the specified threshold is reached.
 - uid: System.Runtime.InteropServices.DefaultParameterValueAttribute
   isExternal: false
   href: System.Runtime.InteropServices.DefaultParameterValueAttribute.yml
   name: DefaultParameterValueAttribute
   fullName: System.Runtime.InteropServices.DefaultParameterValueAttribute
   type: Class
+  summary: Sets the default value of a parameter when called from a language that supports default parameters. This class cannot be inherited.
 - uid: System.Runtime.InteropServices
   isExternal: false
   name: System.Runtime.InteropServices

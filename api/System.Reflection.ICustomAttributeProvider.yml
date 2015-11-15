@@ -161,3 +161,25 @@ references:
   name: System
   fullName: System
   type: Namespace
+- uid: System.TypeLoadException
+  parent: System
+  isExternal: false
+  href: System.TypeLoadException.yml
+  name: TypeLoadException
+  fullName: System.TypeLoadException
+  type: Class
+  summary: The exception that is thrown when type-loading failures occur.
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.Reflection.AmbiguousMatchException
+  isExternal: false
+  href: System.Reflection.AmbiguousMatchException.yml
+  name: AmbiguousMatchException
+  fullName: System.Reflection.AmbiguousMatchException
+  type: Class
+  summary: The exception that is thrown when binding to a member results in more than one member matching the binding criteria. This class cannot be inherited.

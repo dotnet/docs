@@ -35,7 +35,7 @@ references:
   fullName: System.Collections.Concurrent.ConcurrentStack<T>
   fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T)
   type: Class
-  summary: Represents a thread-safe last-in, first-out collection of objects.
+  summary: Represents a thread-safe last in-first out (LIFO) collection.
   spec.csharp:
   - uid: System.Collections.Concurrent.ConcurrentStack`1
     name: ConcurrentStack
@@ -67,7 +67,7 @@ references:
   fullName: System.Collections.Concurrent.IProducerConsumerCollection<T>
   fullName.vb: System.Collections.Concurrent.IProducerConsumerCollection(Of T)
   type: Interface
-  summary: Defines methods to manipulate thread-safe collections intended for producer/consumer usage.
+  summary: Defines methods to manipulate thread-safe collections intended for producer/consumer usage. This interface provides a unified representation for producer/consumer collections so that higher level abstractions such as @'System.Collections.Concurrent.BlockingCollection`1' can use the collection as the underlying storage mechanism.
   spec.csharp:
   - uid: System.Collections.Concurrent.IProducerConsumerCollection`1
     name: IProducerConsumerCollection
@@ -98,7 +98,7 @@ references:
   fullName: System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>
   fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of TKey, TValue)
   type: Class
-  summary: Represents a thread-safe collection of keys and values.
+  summary: Represents a thread-safe collection of key/value pairs that can be accessed by multiple threads concurrently.
   spec.csharp:
   - uid: System.Collections.Concurrent.ConcurrentDictionary`2
     name: ConcurrentDictionary
@@ -137,7 +137,7 @@ references:
   fullName: System.Collections.Concurrent.ConcurrentQueue<T>
   fullName.vb: System.Collections.Concurrent.ConcurrentQueue(Of T)
   type: Class
-  summary: Represents a thread-safe first-in, first-out collection of objects.
+  summary: Represents a thread-safe first in-first out (FIFO) collection.
   spec.csharp:
   - uid: System.Collections.Concurrent.ConcurrentQueue`1
     name: ConcurrentQueue
@@ -231,6 +231,7 @@ references:
   name: EnumerablePartitionerOptions
   fullName: System.Collections.Concurrent.EnumerablePartitionerOptions
   type: Enum
+  summary: Specifies options to control the buffering behavior of a partitioner
 - uid: System.Collections.Concurrent.Partitioner
   isExternal: false
   href: System.Collections.Concurrent.Partitioner.yml
@@ -246,10 +247,7 @@ references:
   fullName: System.Collections.Concurrent.BlockingCollection<T>
   fullName.vb: System.Collections.Concurrent.BlockingCollection(Of T)
   type: Class
-  summary: >-
-    Provides blocking and bounding capabilities for thread-safe collections that
-
-    implement @'System.Collections.Concurrent.IProducerConsumerCollection{T}'.
+  summary: Provides blocking and bounding capabilities for thread-safe collections that implement @'System.Collections.Concurrent.IProducerConsumerCollection`1'.
   spec.csharp:
   - uid: System.Collections.Concurrent.BlockingCollection`1
     name: BlockingCollection
@@ -280,7 +278,7 @@ references:
   fullName: System.Collections.Concurrent.ConcurrentBag<T>
   fullName.vb: System.Collections.Concurrent.ConcurrentBag(Of T)
   type: Class
-  summary: Represents an thread-safe, unordered collection of objects.
+  summary: Represents a thread-safe, unordered collection of objects.
   spec.csharp:
   - uid: System.Collections.Concurrent.ConcurrentBag`1
     name: ConcurrentBag

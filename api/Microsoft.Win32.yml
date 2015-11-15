@@ -31,6 +31,7 @@ references:
   name: Registry
   fullName: Microsoft.Win32.Registry
   type: Class
+  summary: Provides @'Microsoft.Win32.RegistryKey' objects that represent the root keys in the Windows registry, and static methods to access key/value pairs.
 - uid: Microsoft.Win32.RegistryHive
   parent: Microsoft.Win32
   isExternal: false
@@ -38,6 +39,7 @@ references:
   name: RegistryHive
   fullName: Microsoft.Win32.RegistryHive
   type: Enum
+  summary: Represents the possible values for a top-level node on a foreign machine.
 - uid: Microsoft.Win32.RegistryKey
   parent: Microsoft.Win32
   isExternal: false
@@ -45,6 +47,7 @@ references:
   name: RegistryKey
   fullName: Microsoft.Win32.RegistryKey
   type: Class
+  summary: Represents a key-level node in the Windows registry. This class is a registry encapsulation.
 - uid: Microsoft.Win32.RegistryValueOptions
   parent: Microsoft.Win32
   isExternal: false
@@ -52,6 +55,7 @@ references:
   name: RegistryValueOptions
   fullName: Microsoft.Win32.RegistryValueOptions
   type: Enum
+  summary: Specifies optional behavior when retrieving name/value pairs from a registry key.
 - uid: Microsoft.Win32.RegistryKeyPermissionCheck
   parent: Microsoft.Win32
   isExternal: false
@@ -59,6 +63,7 @@ references:
   name: RegistryKeyPermissionCheck
   fullName: Microsoft.Win32.RegistryKeyPermissionCheck
   type: Enum
+  summary: Specifies whether security checks are performed when opening registry keys and accessing their name/value pairs.
 - uid: Microsoft.Win32.RegistryOptions
   parent: Microsoft.Win32
   isExternal: false
@@ -66,6 +71,7 @@ references:
   name: RegistryOptions
   fullName: Microsoft.Win32.RegistryOptions
   type: Enum
+  summary: Specifies options to use when creating a registry key.
 - uid: Microsoft.Win32.RegistryValueKind
   parent: Microsoft.Win32
   isExternal: false
@@ -73,6 +79,7 @@ references:
   name: RegistryValueKind
   fullName: Microsoft.Win32.RegistryValueKind
   type: Enum
+  summary: Specifies the data types to use when storing values in the registry, or identifies the data type of a value in the registry.
 - uid: Microsoft.Win32.RegistryView
   parent: Microsoft.Win32
   isExternal: false
@@ -80,6 +87,7 @@ references:
   name: RegistryView
   fullName: Microsoft.Win32.RegistryView
   type: Enum
+  summary: Specifies which registry view to target on a 64-bit operating system.
 - uid: Microsoft.Win32
   isExternal: false
   name: Microsoft.Win32

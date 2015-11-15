@@ -983,3 +983,40 @@ references:
   name: System.Collections
   fullName: System.Collections
   type: Namespace
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.IndexOutOfRangeException
+  isExternal: false
+  href: System.IndexOutOfRangeException.yml
+  name: IndexOutOfRangeException
+  fullName: System.IndexOutOfRangeException
+  type: Class
+  summary: The exception that is thrown when an attempt is made to access an element of an array or collection with an index that is outside its bounds.
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
+  summary: The exception that is thrown when a method call is invalid for the object's current state.
+- uid: System.Security.SecurityException
+  isExternal: false
+  href: System.Security.SecurityException.yml
+  name: SecurityException
+  fullName: System.Security.SecurityException
+  type: Class
+  summary: The exception that is thrown when a security error is detected.

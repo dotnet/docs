@@ -687,3 +687,17 @@ references:
   name: RuntimeHelpers.CleanupCode
   fullName: System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode
   type: Delegate
+- uid: System.TypeInitializationException
+  isExternal: false
+  href: System.TypeInitializationException.yml
+  name: TypeInitializationException
+  fullName: System.TypeInitializationException
+  type: Class
+  summary: The exception that is thrown as a wrapper around the exception thrown by the class initializer. This class cannot be inherited.
+- uid: System.InsufficientExecutionStackException
+  isExternal: false
+  href: System.InsufficientExecutionStackException.yml
+  name: InsufficientExecutionStackException
+  fullName: System.InsufficientExecutionStackException
+  type: Class
+  summary: The exception that is thrown when there is insufficient execution stack available to allow most methods to execute.

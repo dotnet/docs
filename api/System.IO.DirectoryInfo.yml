@@ -1643,3 +1643,69 @@ references:
     fullName: (
   - name: )
     fullName: )
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.Security.SecurityException
+  isExternal: false
+  href: System.Security.SecurityException.yml
+  name: SecurityException
+  fullName: System.Security.SecurityException
+  type: Class
+  summary: The exception that is thrown when a security error is detected.
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.IO.PathTooLongException
+  isExternal: false
+  href: System.IO.PathTooLongException.yml
+  name: PathTooLongException
+  fullName: System.IO.PathTooLongException
+  type: Class
+  summary: The exception that is thrown when a path or file name is longer than the system-defined maximum length.
+- uid: System.IO.DirectoryNotFoundException
+  isExternal: false
+  href: System.IO.DirectoryNotFoundException.yml
+  name: DirectoryNotFoundException
+  fullName: System.IO.DirectoryNotFoundException
+  type: Class
+  summary: The exception that is thrown when part of a file or directory cannot be found.
+- uid: System.IO.IOException
+  parent: System.IO
+  isExternal: false
+  href: System.IO.IOException.yml
+  name: IOException
+  fullName: System.IO.IOException
+  type: Class
+  summary: The exception that is thrown when an I/O error occurs.
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  href: System.NotSupportedException.yml
+  name: NotSupportedException
+  fullName: System.NotSupportedException
+  type: Class
+  summary: The exception that is thrown when an invoked method is not supported, or when there is an attempt to read, seek, or write to a stream that does not support the invoked functionality.
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
+  summary: The exception that is thrown when the value of an argument is outside the allowable range of values as defined by the invoked method.
+- uid: System.UnauthorizedAccessException
+  isExternal: false
+  href: System.UnauthorizedAccessException.yml
+  name: UnauthorizedAccessException
+  fullName: System.UnauthorizedAccessException
+  type: Class
+  summary: The exception that is thrown when the operating system denies access because of an I/O error or a specific type of security error.

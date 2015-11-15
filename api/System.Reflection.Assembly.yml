@@ -3056,3 +3056,97 @@ references:
   name: Int64
   fullName: System.Int64
   type: Struct
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.IO.FileNotFoundException
+  isExternal: false
+  href: System.IO.FileNotFoundException.yml
+  name: FileNotFoundException
+  fullName: System.IO.FileNotFoundException
+  type: Class
+  summary: The exception that is thrown when an attempt to access a file that does not exist on disk fails.
+- uid: System.IO.FileLoadException
+  isExternal: false
+  href: System.IO.FileLoadException.yml
+  name: FileLoadException
+  fullName: System.IO.FileLoadException
+  type: Class
+  summary: The exception that is thrown when a managed assembly is found but cannot be loaded.
+- uid: System.BadImageFormatException
+  isExternal: false
+  href: System.BadImageFormatException.yml
+  name: BadImageFormatException
+  fullName: System.BadImageFormatException
+  type: Class
+  summary: The exception that is thrown when the file image of a dynamic link library (DLL) or an executable program is invalid.
+- uid: System.Security.SecurityException
+  isExternal: false
+  href: System.Security.SecurityException.yml
+  name: SecurityException
+  fullName: System.Security.SecurityException
+  type: Class
+  summary: The exception that is thrown when a security error is detected.
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.IO.PathTooLongException
+  isExternal: false
+  href: System.IO.PathTooLongException.yml
+  name: PathTooLongException
+  fullName: System.IO.PathTooLongException
+  type: Class
+  summary: The exception that is thrown when a path or file name is longer than the system-defined maximum length.
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
+  summary: The exception that is thrown when the value of an argument is outside the allowable range of values as defined by the invoked method.
+- uid: System.TypeLoadException
+  parent: System
+  isExternal: false
+  href: System.TypeLoadException.yml
+  name: TypeLoadException
+  fullName: System.TypeLoadException
+  type: Class
+  summary: The exception that is thrown when type-loading failures occur.
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  href: System.NotSupportedException.yml
+  name: NotSupportedException
+  fullName: System.NotSupportedException
+  type: Class
+  summary: The exception that is thrown when an invoked method is not supported, or when there is an attempt to read, seek, or write to a stream that does not support the invoked functionality.
+- uid: System.Reflection.ReflectionTypeLoadException
+  isExternal: false
+  href: System.Reflection.ReflectionTypeLoadException.yml
+  name: ReflectionTypeLoadException
+  fullName: System.Reflection.ReflectionTypeLoadException
+  type: Class
+  summary: The exception that is thrown by the @'System.Reflection.Module.GetTypes' method if any of the classes in a module cannot be loaded. This class cannot be inherited.
+- uid: System.NotImplementedException
+  isExternal: false
+  href: System.NotImplementedException.yml
+  name: NotImplementedException
+  fullName: System.NotImplementedException
+  type: Class
+  summary: The exception that is thrown when a requested method or operation is not implemented.
+- uid: System.MissingMethodException
+  isExternal: false
+  href: System.MissingMethodException.yml
+  name: MissingMethodException
+  fullName: System.MissingMethodException
+  type: Class
+  summary: The exception that is thrown when there is an attempt to dynamically access a method that does not exist.

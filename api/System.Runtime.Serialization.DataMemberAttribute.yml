@@ -2320,3 +2320,10 @@ references:
   name: Int32
   fullName: System.Int32
   type: Struct
+- uid: System.Runtime.Serialization.SerializationException
+  isExternal: false
+  href: System.Runtime.Serialization.SerializationException.yml
+  name: SerializationException
+  fullName: System.Runtime.Serialization.SerializationException
+  type: Class
+  summary: The exception thrown when an error occurs during serialization or deserialization.

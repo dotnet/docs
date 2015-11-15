@@ -851,3 +851,39 @@ references:
   name: TimeSpan
   fullName: System.TimeSpan
   type: Struct
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.Threading.SynchronizationLockException
+  isExternal: false
+  href: System.Threading.SynchronizationLockException.yml
+  name: SynchronizationLockException
+  fullName: System.Threading.SynchronizationLockException
+  type: Class
+  summary: The exception that is thrown when a method requires the caller to own the lock on a given Monitor, and the method is invoked by a caller that does not own that lock.
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
+  summary: The exception that is thrown when the value of an argument is outside the allowable range of values as defined by the invoked method.
+- uid: System.Threading.ThreadInterruptedException
+  isExternal: false
+  href: System.Threading.ThreadInterruptedException.yml
+  name: ThreadInterruptedException
+  fullName: System.Threading.ThreadInterruptedException
+  type: Class
+  summary: The exception that is thrown when a @'System.Threading.Thread' is interrupted while it is in a waiting state.

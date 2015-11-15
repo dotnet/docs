@@ -27,6 +27,7 @@ references:
   name: AssemblyHash
   fullName: System.Configuration.Assemblies.AssemblyHash
   type: Struct
+  summary: Represents a hash of an assembly manifest's contents.
 - uid: System.Configuration.Assemblies.AssemblyHashAlgorithm
   parent: System.Configuration.Assemblies
   isExternal: false
@@ -34,6 +35,7 @@ references:
   name: AssemblyHashAlgorithm
   fullName: System.Configuration.Assemblies.AssemblyHashAlgorithm
   type: Enum
+  summary: Specifies all the hash algorithms used for hashing files and for generating the strong name.
 - uid: System.Configuration.Assemblies.AssemblyVersionCompatibility
   parent: System.Configuration.Assemblies
   isExternal: false
@@ -41,6 +43,7 @@ references:
   name: AssemblyVersionCompatibility
   fullName: System.Configuration.Assemblies.AssemblyVersionCompatibility
   type: Enum
+  summary: Defines the different types of assembly version compatibility. This feature is not available in version 1.0 of the .NET Framework.
 - uid: System.Configuration.Assemblies
   isExternal: false
   name: System.Configuration.Assemblies

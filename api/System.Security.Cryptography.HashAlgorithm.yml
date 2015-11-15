@@ -943,3 +943,39 @@ references:
   name: Boolean
   fullName: System.Boolean
   type: Struct
+- uid: System.Security.Cryptography.CryptographicUnexpectedOperationException
+  isExternal: false
+  href: System.Security.Cryptography.CryptographicUnexpectedOperationException.yml
+  name: CryptographicUnexpectedOperationException
+  fullName: System.Security.Cryptography.CryptographicUnexpectedOperationException
+  type: Class
+  summary: The exception that is thrown when an unexpected operation occurs during a cryptographic operation.
+- uid: System.ObjectDisposedException
+  isExternal: false
+  href: System.ObjectDisposedException.yml
+  name: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+  type: Class
+  summary: The exception that is thrown when an operation is performed on a disposed object.
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
+  summary: The exception that is thrown when the value of an argument is outside the allowable range of values as defined by the invoked method.

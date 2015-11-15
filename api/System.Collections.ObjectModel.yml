@@ -34,6 +34,7 @@ references:
   fullName: System.Collections.ObjectModel.Collection<T>
   fullName.vb: System.Collections.ObjectModel.Collection(Of T)
   type: Class
+  summary: Provides the base class for a generic collection.
   spec.csharp:
   - uid: System.Collections.ObjectModel.Collection`1
     name: Collection
@@ -65,6 +66,7 @@ references:
   fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
   fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
   type: Class
+  summary: Provides the base class for a generic read-only collection.
   spec.csharp:
   - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
     name: ReadOnlyCollection
@@ -95,6 +97,7 @@ references:
   fullName: System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>
   fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary(Of TKey, TValue)
   type: Class
+  summary: Represents a read-only, generic collection of key/value pairs.
   spec.csharp:
   - uid: System.Collections.ObjectModel.ReadOnlyDictionary`2
     name: ReadOnlyDictionary
@@ -134,6 +137,7 @@ references:
   fullName: System.Collections.ObjectModel.ReadOnlyDictionary.KeyCollection<>
   fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary.KeyCollection(Of )
   type: Class
+  summary: Represents a read-only collection of the keys of a @'System.Collections.ObjectModel.ReadOnlyDictionary`2' object.
   spec.csharp:
   - uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.KeyCollection
     name: ReadOnlyDictionary.KeyCollection
@@ -161,6 +165,7 @@ references:
   fullName: System.Collections.ObjectModel.ReadOnlyDictionary.ValueCollection<>
   fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary.ValueCollection(Of )
   type: Class
+  summary: Represents a read-only collection of the values of a @'System.Collections.ObjectModel.ReadOnlyDictionary`2' object.
   spec.csharp:
   - uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection
     name: ReadOnlyDictionary.ValueCollection
@@ -187,6 +192,7 @@ references:
   fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>
   fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem)
   type: Class
+  summary: Provides the abstract base class for a collection whose keys are embedded in the values.
   spec.csharp:
   - uid: System.Collections.ObjectModel.KeyedCollection`2
     name: KeyedCollection
@@ -226,12 +232,7 @@ references:
   fullName: System.Collections.ObjectModel.ObservableCollection<T>
   fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
   type: Class
-  summary: >-
-    Implementation of a dynamic data collection based on generic Collection&lt;T&gt;,
-
-    implementing INotifyCollectionChanged to notify listeners
-
-    when items get added, removed or the whole list is refreshed.
+  summary: Represents a dynamic data collection that provides notifications when items get added, removed, or when the whole list is refreshed.
   spec.csharp:
   - uid: System.Collections.ObjectModel.ObservableCollection`1
     name: ObservableCollection
@@ -262,7 +263,7 @@ references:
   fullName: System.Collections.ObjectModel.ReadOnlyObservableCollection<T>
   fullName.vb: System.Collections.ObjectModel.ReadOnlyObservableCollection(Of T)
   type: Class
-  summary: Read-only wrapper around an ObservableCollection.
+  summary: Represents a read-only @'System.Collections.ObjectModel.ObservableCollection`1'.
   spec.csharp:
   - uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
     name: ReadOnlyObservableCollection

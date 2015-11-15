@@ -82,6 +82,7 @@ references:
   name: IStreamProvider
   fullName: System.Xml.IStreamProvider
   type: Interface
+  summary: Represents an interface that can be implemented by classes providing streams.
 - uid: System.Xml.IXmlDictionary
   parent: System.Xml
   isExternal: false
@@ -89,6 +90,7 @@ references:
   name: IXmlDictionary
   fullName: System.Xml.IXmlDictionary
   type: Interface
+  summary: An interface that defines the contract that an Xml dictionary must implement to be used by @'System.Xml.XmlDictionaryReader' and @'System.Xml.XmlDictionaryWriter' implementations.
 - uid: System.Xml.UniqueId
   parent: System.Xml
   isExternal: false
@@ -96,6 +98,7 @@ references:
   name: UniqueId
   fullName: System.Xml.UniqueId
   type: Class
+  summary: A unique identifier optimized for Guids.
 - uid: System.Xml.XmlBinaryReaderSession
   parent: System.Xml
   isExternal: false
@@ -103,6 +106,7 @@ references:
   name: XmlBinaryReaderSession
   fullName: System.Xml.XmlBinaryReaderSession
   type: Class
+  summary: Enables optimized strings to be managed in a dynamic way.
 - uid: System.Xml.XmlBinaryWriterSession
   parent: System.Xml
   isExternal: false
@@ -110,12 +114,14 @@ references:
   name: XmlBinaryWriterSession
   fullName: System.Xml.XmlBinaryWriterSession
   type: Class
+  summary: Enables using a dynamic dictionary to compress common strings that appear in a message and maintain state.
 - uid: System.Xml.XmlDictionary
   isExternal: false
   href: System.Xml.XmlDictionary.yml
   name: XmlDictionary
   fullName: System.Xml.XmlDictionary
   type: Class
+  summary: Implements a dictionary used to optimize Windows Communication Foundation (WCF)'s XML reader/writer implementations.
 - uid: System.Xml.XmlDictionaryWriter
   parent: System.Xml
   isExternal: false
@@ -123,6 +129,7 @@ references:
   name: XmlDictionaryWriter
   fullName: System.Xml.XmlDictionaryWriter
   type: Class
+  summary: Represents an abstract class that Windows Communication Foundation (WCF) derives from @'System.Xml.XmlWriter' to do serialization and deserialization.
 - uid: System.Xml.OnXmlDictionaryReaderClose
   parent: System.Xml
   isExternal: false
@@ -130,6 +137,7 @@ references:
   name: OnXmlDictionaryReaderClose
   fullName: System.Xml.OnXmlDictionaryReaderClose
   type: Delegate
+  summary: delegate for a callback method when closing the reader.
 - uid: System.Xml.XmlDictionaryReader
   parent: System.Xml
   isExternal: false
@@ -137,6 +145,7 @@ references:
   name: XmlDictionaryReader
   fullName: System.Xml.XmlDictionaryReader
   type: Class
+  summary: An abstract class that the Windows Communication Foundation (WCF) derives from @'System.Xml.XmlReader' to do serialization and deserialization.
 - uid: System.Xml.XmlDictionaryReaderQuotaTypes
   parent: System.Xml
   isExternal: false
@@ -144,6 +153,7 @@ references:
   name: XmlDictionaryReaderQuotaTypes
   fullName: System.Xml.XmlDictionaryReaderQuotaTypes
   type: Enum
+  summary: Enumerates the configurable quota values for XmlDictionaryReaders.
 - uid: System.Xml.XmlDictionaryReaderQuotas
   parent: System.Xml
   isExternal: false
@@ -151,6 +161,7 @@ references:
   name: XmlDictionaryReaderQuotas
   fullName: System.Xml.XmlDictionaryReaderQuotas
   type: Class
+  summary: Contains configurable quota values for XmlDictionaryReaders.
 - uid: System.Xml.XmlDictionaryString
   parent: System.Xml
   isExternal: false
@@ -158,12 +169,14 @@ references:
   name: XmlDictionaryString
   fullName: System.Xml.XmlDictionaryString
   type: Class
+  summary: Represents an entry stored in a @'System.Xml.XmlDictionary'.
 - uid: System.Xml.IXmlTextReaderInitializer
   isExternal: false
   href: System.Xml.IXmlTextReaderInitializer.yml
   name: IXmlTextReaderInitializer
   fullName: System.Xml.IXmlTextReaderInitializer
   type: Interface
+  summary: Specifies implementation requirements for XML text readers that derive from this interface.
 - uid: System.Xml.XmlAttribute
   parent: System.Xml
   isExternal: false
@@ -171,6 +184,7 @@ references:
   name: XmlAttribute
   fullName: System.Xml.XmlAttribute
   type: Class
+  summary: Represents an attribute. Valid and default values for the attribute are defined in a document type definition (DTD) or schema.
 - uid: System.Xml.XmlAttributeCollection
   parent: System.Xml
   isExternal: false
@@ -178,6 +192,7 @@ references:
   name: XmlAttributeCollection
   fullName: System.Xml.XmlAttributeCollection
   type: Class
+  summary: Represents a collection of attributes that can be accessed by name or index.
 - uid: System.Xml.XmlCDataSection
   parent: System.Xml
   isExternal: false
@@ -185,6 +200,7 @@ references:
   name: XmlCDataSection
   fullName: System.Xml.XmlCDataSection
   type: Class
+  summary: Represents a CDATA section.
 - uid: System.Xml.XmlCharacterData
   parent: System.Xml
   isExternal: false
@@ -192,6 +208,7 @@ references:
   name: XmlCharacterData
   fullName: System.Xml.XmlCharacterData
   type: Class
+  summary: Provides text manipulation methods that are used by several classes.
 - uid: System.Xml.XmlComment
   parent: System.Xml
   isExternal: false
@@ -199,6 +216,7 @@ references:
   name: XmlComment
   fullName: System.Xml.XmlComment
   type: Class
+  summary: Represents the content of an XML comment.
 - uid: System.Xml.XmlDeclaration
   parent: System.Xml
   isExternal: false
@@ -206,6 +224,7 @@ references:
   name: XmlDeclaration
   fullName: System.Xml.XmlDeclaration
   type: Class
+  summary: Represents the XML declaration node &lt;?xml version='1.0'...?&gt;.
 - uid: System.Xml.XmlDocument
   parent: System.Xml
   isExternal: false
@@ -213,6 +232,7 @@ references:
   name: XmlDocument
   fullName: System.Xml.XmlDocument
   type: Class
+  summary: Represents an XML document. You can use this class to load, validate, edit, add, and position XML in a document. For examples, see the Remarks section on this page.
 - uid: System.Xml.XmlDocumentFragment
   parent: System.Xml
   isExternal: false
@@ -220,6 +240,7 @@ references:
   name: XmlDocumentFragment
   fullName: System.Xml.XmlDocumentFragment
   type: Class
+  summary: Represents a lightweight object that is useful for tree insert operations.
 - uid: System.Xml.XmlElement
   parent: System.Xml
   isExternal: false
@@ -227,6 +248,7 @@ references:
   name: XmlElement
   fullName: System.Xml.XmlElement
   type: Class
+  summary: Represents an element.
 - uid: System.Xml.XmlNodeChangedAction
   parent: System.Xml
   isExternal: false
@@ -234,6 +256,7 @@ references:
   name: XmlNodeChangedAction
   fullName: System.Xml.XmlNodeChangedAction
   type: Enum
+  summary: Specifies the type of node change.
 - uid: System.Xml.XmlImplementation
   parent: System.Xml
   isExternal: false
@@ -241,6 +264,7 @@ references:
   name: XmlImplementation
   fullName: System.Xml.XmlImplementation
   type: Class
+  summary: Defines the context for a set of @'System.Xml.XmlDocument' objects.
 - uid: System.Xml.XmlLinkedNode
   parent: System.Xml
   isExternal: false
@@ -248,6 +272,7 @@ references:
   name: XmlLinkedNode
   fullName: System.Xml.XmlLinkedNode
   type: Class
+  summary: Gets the node immediately preceding or following this node.
 - uid: System.Xml.XmlNamedNodeMap
   parent: System.Xml
   isExternal: false
@@ -255,6 +280,7 @@ references:
   name: XmlNamedNodeMap
   fullName: System.Xml.XmlNamedNodeMap
   type: Class
+  summary: Represents a collection of nodes that can be accessed by name or index.
 - uid: System.Xml.XmlNode
   parent: System.Xml
   isExternal: false
@@ -262,6 +288,7 @@ references:
   name: XmlNode
   fullName: System.Xml.XmlNode
   type: Class
+  summary: Represents a single node in the XML document.
 - uid: System.Xml.XmlNodeChangedEventArgs
   parent: System.Xml
   isExternal: false
@@ -269,6 +296,7 @@ references:
   name: XmlNodeChangedEventArgs
   fullName: System.Xml.XmlNodeChangedEventArgs
   type: Class
+  summary: Provides data for the @'System.Xml.XmlDocument.NodeChanged', @'System.Xml.XmlDocument.NodeChanging', @'System.Xml.XmlDocument.NodeInserted', @'System.Xml.XmlDocument.NodeInserting', @'System.Xml.XmlDocument.NodeRemoved' and @'System.Xml.XmlDocument.NodeRemoving' events.
 - uid: System.Xml.XmlNodeChangedEventHandler
   parent: System.Xml
   isExternal: false
@@ -276,6 +304,7 @@ references:
   name: XmlNodeChangedEventHandler
   fullName: System.Xml.XmlNodeChangedEventHandler
   type: Delegate
+  summary: Represents the method that handles @'System.Xml.XmlDocument.NodeChanged', @'System.Xml.XmlDocument.NodeChanging', @'System.Xml.XmlDocument.NodeInserted', @'System.Xml.XmlDocument.NodeInserting', @'System.Xml.XmlDocument.NodeRemoved' and @'System.Xml.XmlDocument.NodeRemoving' events.
 - uid: System.Xml.XmlNodeList
   parent: System.Xml
   isExternal: false
@@ -283,6 +312,7 @@ references:
   name: XmlNodeList
   fullName: System.Xml.XmlNodeList
   type: Class
+  summary: Represents an ordered collection of nodes.
 - uid: System.Xml.XmlProcessingInstruction
   parent: System.Xml
   isExternal: false
@@ -290,6 +320,7 @@ references:
   name: XmlProcessingInstruction
   fullName: System.Xml.XmlProcessingInstruction
   type: Class
+  summary: Represents a processing instruction, which XML defines to keep processor-specific information in the text of the document.
 - uid: System.Xml.XmlSignificantWhitespace
   parent: System.Xml
   isExternal: false
@@ -297,6 +328,7 @@ references:
   name: XmlSignificantWhitespace
   fullName: System.Xml.XmlSignificantWhitespace
   type: Class
+  summary: Represents white space between markup in a mixed content node or white space within an xml:space= 'preserve' scope. This is also referred to as significant white space.
 - uid: System.Xml.XmlText
   parent: System.Xml
   isExternal: false
@@ -304,6 +336,7 @@ references:
   name: XmlText
   fullName: System.Xml.XmlText
   type: Class
+  summary: Represents the text content of an element or attribute.
 - uid: System.Xml.XmlWhitespace
   parent: System.Xml
   isExternal: false
@@ -311,6 +344,7 @@ references:
   name: XmlWhitespace
   fullName: System.Xml.XmlWhitespace
   type: Class
+  summary: Represents white space in element content.
 - uid: System.Xml.XmlDocumentXPathExtensions
   isExternal: false
   href: System.Xml.XmlDocumentXPathExtensions.yml
@@ -323,6 +357,7 @@ references:
   name: IXmlLineInfo
   fullName: System.Xml.IXmlLineInfo
   type: Interface
+  summary: Provides an interface to enable a class to return line and position information.
 - uid: System.Xml.IXmlNamespaceResolver
   parent: System.Xml
   isExternal: false
@@ -330,12 +365,14 @@ references:
   name: IXmlNamespaceResolver
   fullName: System.Xml.IXmlNamespaceResolver
   type: Interface
+  summary: Provides read-only access to a set of prefix and namespace mappings.
 - uid: System.Xml.NameTable
   isExternal: false
   href: System.Xml.NameTable.yml
   name: NameTable
   fullName: System.Xml.NameTable
   type: Class
+  summary: Implements a single-threaded @'System.Xml.XmlNameTable'.
 - uid: System.Xml.XmlDateTimeSerializationMode
   parent: System.Xml
   isExternal: false
@@ -343,18 +380,21 @@ references:
   name: XmlDateTimeSerializationMode
   fullName: System.Xml.XmlDateTimeSerializationMode
   type: Enum
+  summary: Specifies how to treat the time value when converting between string and @'System.DateTime'.
 - uid: System.Xml.XmlConvert
   isExternal: false
   href: System.Xml.XmlConvert.yml
   name: XmlConvert
   fullName: System.Xml.XmlConvert
   type: Class
+  summary: Encodes and decodes XML names, and provides methods for converting between common language runtime types and XML Schema definition language (XSD) types. When converting data types, the values returned are locale-independent.
 - uid: System.Xml.XmlException
   isExternal: false
   href: System.Xml.XmlException.yml
   name: XmlException
   fullName: System.Xml.XmlException
   type: Class
+  summary: Returns detailed information about the last exception.
 - uid: System.Xml.XmlNamespaceManager
   parent: System.Xml
   isExternal: false
@@ -362,6 +402,7 @@ references:
   name: XmlNamespaceManager
   fullName: System.Xml.XmlNamespaceManager
   type: Class
+  summary: Resolves, adds, and removes namespaces to a collection and provides scope management for these namespaces.
 - uid: System.Xml.XmlNamespaceScope
   parent: System.Xml
   isExternal: false
@@ -369,6 +410,7 @@ references:
   name: XmlNamespaceScope
   fullName: System.Xml.XmlNamespaceScope
   type: Enum
+  summary: Defines the namespace scope.
 - uid: System.Xml.XmlNameTable
   parent: System.Xml
   isExternal: false
@@ -376,6 +418,7 @@ references:
   name: XmlNameTable
   fullName: System.Xml.XmlNameTable
   type: Class
+  summary: Table of atomized string objects.
 - uid: System.Xml.XmlNodeType
   parent: System.Xml
   isExternal: false
@@ -383,6 +426,7 @@ references:
   name: XmlNodeType
   fullName: System.Xml.XmlNodeType
   type: Enum
+  summary: Specifies the type of node.
 - uid: System.Xml.XmlQualifiedName
   parent: System.Xml
   isExternal: false
@@ -390,6 +434,7 @@ references:
   name: XmlQualifiedName
   fullName: System.Xml.XmlQualifiedName
   type: Class
+  summary: Represents an XML qualified name.
 - uid: System.Xml.ConformanceLevel
   parent: System.Xml
   isExternal: false
@@ -397,6 +442,7 @@ references:
   name: ConformanceLevel
   fullName: System.Xml.ConformanceLevel
   type: Enum
+  summary: Specifies the amount of input or output checking that @'System.Xml.XmlReader' and @'System.Xml.XmlWriter' objects perform.
 - uid: System.Xml.DtdProcessing
   parent: System.Xml
   isExternal: false
@@ -404,6 +450,7 @@ references:
   name: DtdProcessing
   fullName: System.Xml.DtdProcessing
   type: Enum
+  summary: Specifies the options for processing DTDs. The @'System.Xml.DtdProcessing' enumeration is used by the @'System.Xml.XmlReaderSettings' class.
 - uid: System.Xml.NewLineHandling
   parent: System.Xml
   isExternal: false
@@ -411,6 +458,7 @@ references:
   name: NewLineHandling
   fullName: System.Xml.NewLineHandling
   type: Enum
+  summary: Specifies how to handle line breaks.
 - uid: System.Xml.NamespaceHandling
   parent: System.Xml
   isExternal: false
@@ -418,6 +466,7 @@ references:
   name: NamespaceHandling
   fullName: System.Xml.NamespaceHandling
   type: Enum
+  summary: Specifies whether to remove duplicate namespace declarations in the @'System.Xml.XmlWriter'.
 - uid: System.Xml.ReadState
   parent: System.Xml
   isExternal: false
@@ -425,6 +474,7 @@ references:
   name: ReadState
   fullName: System.Xml.ReadState
   type: Enum
+  summary: Specifies the state of the reader.
 - uid: System.Xml.XmlParserContext
   parent: System.Xml
   isExternal: false
@@ -432,6 +482,7 @@ references:
   name: XmlParserContext
   fullName: System.Xml.XmlParserContext
   type: Class
+  summary: Provides all the context information required by the @'System.Xml.XmlReader' to parse an XML fragment.
 - uid: System.Xml.XmlReader
   parent: System.Xml
   isExternal: false
@@ -439,6 +490,7 @@ references:
   name: XmlReader
   fullName: System.Xml.XmlReader
   type: Class
+  summary: Represents a reader that provides fast, noncached, forward-only access to XML data.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.Xml.XmlReaderSettings
   parent: System.Xml
   isExternal: false
@@ -446,6 +498,7 @@ references:
   name: XmlReaderSettings
   fullName: System.Xml.XmlReaderSettings
   type: Class
+  summary: Specifies a set of features to support on the @'System.Xml.XmlReader' object created by the <see cref="Overload:System.Xml.XmlReader.Create" /> method.
 - uid: System.Xml.XmlSpace
   parent: System.Xml
   isExternal: false
@@ -453,6 +506,7 @@ references:
   name: XmlSpace
   fullName: System.Xml.XmlSpace
   type: Enum
+  summary: Specifies the current xml:space scope.
 - uid: System.Xml.WriteState
   parent: System.Xml
   isExternal: false
@@ -460,6 +514,7 @@ references:
   name: WriteState
   fullName: System.Xml.WriteState
   type: Enum
+  summary: Specifies the state of the @'System.Xml.XmlWriter'.
 - uid: System.Xml.XmlWriter
   parent: System.Xml
   isExternal: false
@@ -467,6 +522,7 @@ references:
   name: XmlWriter
   fullName: System.Xml.XmlWriter
   type: Class
+  summary: Represents a writer that provides a fast, non-cached, forward-only way to generate streams or files that contain XML data.
 - uid: System.Xml.XmlWriterSettings
   parent: System.Xml
   isExternal: false
@@ -474,6 +530,7 @@ references:
   name: XmlWriterSettings
   fullName: System.Xml.XmlWriterSettings
   type: Class
+  summary: Specifies a set of features to support on the @'System.Xml.XmlWriter' object created by the <see cref="Overload:System.Xml.XmlWriter.Create" /> method.
 - uid: System.Xml.XmlNodeOrder
   parent: System.Xml
   isExternal: false
@@ -481,6 +538,7 @@ references:
   name: XmlNodeOrder
   fullName: System.Xml.XmlNodeOrder
   type: Enum
+  summary: Describes the document order of a node compared to a second node.
 - uid: System.Xml
   isExternal: false
   name: System.Xml

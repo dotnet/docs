@@ -459,3 +459,17 @@ references:
   name: Array
   fullName: System.Array
   type: Class
+- uid: System.Text.RegularExpressions.RegexMatchTimeoutException
+  isExternal: false
+  href: System.Text.RegularExpressions.RegexMatchTimeoutException.yml
+  name: RegexMatchTimeoutException
+  fullName: System.Text.RegularExpressions.RegexMatchTimeoutException
+  type: Class
+  summary: The exception that is thrown when the execution time of a regular expression pattern-matching method exceeds its time-out interval.
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
+  summary: The exception that is thrown when the value of an argument is outside the allowable range of values as defined by the invoked method.

@@ -25,6 +25,7 @@ references:
   name: DataContractJsonSerializer
   fullName: System.Runtime.Serialization.Json.DataContractJsonSerializer
   type: Class
+  summary: Serializes objects to the JavaScript Object Notation (JSON) and deserializes JSON data to objects. This class cannot be inherited.
 - uid: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
   parent: System.Runtime.Serialization.Json
   isExternal: false
@@ -32,7 +33,7 @@ references:
   name: DataContractJsonSerializerSettings
   fullName: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
   type: Class
-  summary: Dummy documentation
+  summary: Specifies @'System.Runtime.Serialization.Json.DataContractJsonSerializer' settings.
 - uid: System.Runtime.Serialization.Json
   isExternal: false
   name: System.Runtime.Serialization.Json

@@ -789,3 +789,18 @@ references:
 - uid: System.Threading.Timeout.Infinite
 - uid: System.Threading.ManualResetEventSlim.Dispose
 - uid: System.Threading.ManualResetEventSlim.Dispose(System.Boolean)
+- uid: System.ObjectDisposedException
+  isExternal: false
+  href: System.ObjectDisposedException.yml
+  name: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+  type: Class
+  summary: The exception that is thrown when an operation is performed on a disposed object.
+- uid: System.OperationCanceledException
+  parent: System
+  isExternal: false
+  href: System.OperationCanceledException.yml
+  name: OperationCanceledException
+  fullName: System.OperationCanceledException
+  type: Class
+  summary: The exception that is thrown in a thread upon cancellation of an operation that the thread was executing.

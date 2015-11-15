@@ -74,6 +74,7 @@ references:
   name: DynamicExpressionVisitor
   fullName: System.Linq.Expressions.DynamicExpressionVisitor
   type: Class
+  summary: Represents a visitor or rewriter for dynamic expression trees.
 - uid: System.Linq.Expressions.BinaryExpression
   parent: System.Linq.Expressions
   isExternal: false
@@ -89,7 +90,7 @@ references:
   name: Expression
   fullName: System.Linq.Expressions.Expression
   type: Class
-  summary: The base type for all nodes in Expression Trees.
+  summary: Provides the base class from which the classes that represent expression tree nodes are derived. It also contains static (Shared in Visual Basic) factory methods to create the various node types. This is an abstract class.
 - uid: System.Linq.Expressions.BlockExpression
   parent: System.Linq.Expressions
   isExternal: false
@@ -105,10 +106,7 @@ references:
   name: CatchBlock
   fullName: System.Linq.Expressions.CatchBlock
   type: Class
-  summary: >-
-    Represents a catch statement in a try block.
-
-    This must have the same return type (i.e., the type of @'CatchBlock.Body') as the try block it is associated with.
+  summary: Represents a catch statement in a try block.
 - uid: System.Linq.Expressions.ConditionalExpression
   parent: System.Linq.Expressions
   isExternal: false
@@ -132,14 +130,7 @@ references:
   name: DebugInfoExpression
   fullName: System.Linq.Expressions.DebugInfoExpression
   type: Class
-  summary: >-
-    Emits or clears a sequence point for debug information.
-
-
-
-    This allows the debugger to highlight the correct source code when
-
-    debugging.
+  summary: Emits or clears a sequence point for debug information. This allows the debugger to highlight the correct source code when debugging.
 - uid: System.Linq.Expressions.DefaultExpression
   parent: System.Linq.Expressions
   isExternal: false
@@ -155,7 +146,7 @@ references:
   name: ElementInit
   fullName: System.Linq.Expressions.ElementInit
   type: Class
-  summary: Represents the initialization of a list.
+  summary: Represents an initializer for a single element of an @'System.Collections.IEnumerable' collection.
 - uid: System.Linq.Expressions.ExpressionType
   parent: System.Linq.Expressions
   isExternal: false
@@ -195,72 +186,14 @@ references:
   name: IArgumentProvider
   fullName: System.Linq.Expressions.IArgumentProvider
   type: Interface
-  summary: >-
-    Provides an internal interface for accessing the arguments that multiple tree
-
-    nodes (DynamicExpression, ElementInit, MethodCallExpression, InvocationExpression, NewExpression,
-
-    and InexExpression).
-
-
-
-    This enables two optimizations which reduce the size of the trees.  The first is it enables
-
-    the nodes to hold onto an IList of T instead of a ReadOnlyCollection.  This saves the cost
-
-    of allocating the ReadOnlyCollection for each node.  The second is that it enables specialized
-
-    subclasses to be created which hold onto a specific number of arguments.  For example Block2,
-
-    Block3, Block4.  These nodes can therefore avoid allocating both a ReadOnlyCollection and an
-
-    array for storing their elements saving 32 bytes per node.
-
-
-
-    Meanwhile the nodes can continue to expose the original LINQ properties of ReadOnlyCollections.  They
-
-    do this by re-using 1 field for storing both the array or an element that would normally be stored
-
-    in the array.
-
-
-
-    For the array case the collection is typed to IList of T instead of ReadOnlyCollection of T.
-
-    When the node is initially constructed it is an array.  When the compiler accesses the members it
-
-    uses this interface.  If a user accesses the members the array is promoted to a ReadOnlyCollection.
-
-
-
-    For the object case we store the 1st argument in a field typed to object and when the node is initially
-
-    constructed this holds directly onto the Expression.  When the compiler accesses the members
-
-    it again uses this interface and the accessor for the 1st argument uses Expression.ReturnObject to
-
-    return the object which handles the Expression or ReadOnlyCollection case.  When the user accesses
-
-    the ReadOnlyCollection then the object field is updated to hold directly onto the ReadOnlyCollection.
-
-
-
-    It is important that the Expressions consistently return the same ReadOnlyCollection otherwise the
-
-    re-writer will be broken and it would be a breaking change from LINQ v1.  The problem is that currently
-
-    users can rely on object identity to tell if the node has changed.  Storing the readonly collection in
-
-    an overloaded field enables us to both reduce memory usage as well as maintain compatibility and an
-
-    easy to use external API.
+  summary: Provides an internal interface for accessing the arguments of multiple tree nodes (DynamicExpression, ElementInit, MethodCallExpression, InvocationExpression, NewExpression, and InexExpression).  You should not use this API.  It is only public due to DLL refactoring and exists only for internal performance optimizations.This enables two optimizations which reduce the size of expression trees.  The first enables the tree nodes to hold onto an IList&lt;T&gt; instead of a ReadOnlyCollection.  IList&lt;T&gt; saves the cost of allocating the ReadOnlyCollection for each node.  The second enables creating specialized subclasses that hold onto a specific number of arguments (for example, Block2, Block3, Block4).  Therefore, these nodes avoid allocating both a ReadOnlyCollection and an array for storing their elements, saving 32 bytes per node.The expression tree nodes continue to expose the original LINQ properties of ReadOnlyCollections.  The nodes do this by re-using a field for storing both the array or an element that would normally be stored in the array.For the array case, the collection is typed to IList&lt;T&gt; instead of ReadOnlyCollection&lt;T&gt;.  When the node is initially constructed it is an array.  When the compiler accesses the members it uses this interface.  Accessing array elements promotes the array to a ReadOnlyCollection.For the object case we store the first argument in a field typed to object.  When the node is initially constructed, the field holds the Expression.  The compiler accesses arguments through this interface, and the accessor for the first argument uses Expression.ReturnObject to return the object that handles the Expression or ReadOnlyCollection case.  When the user accesses the ReadOnlyCollection, then the object field is updated to hold directly onto the ReadOnlyCollection.It is important that the Expressions consistently return the same ReadOnlyCollection.  Otherwise, the re-writer tree walker will break.  It is a breaking change from LINQ v1 to return different ReadOnlyCollections form the same Expression node.  Currently users can rely on object identity to tell if the node has changed.  Storing the ReadOnlyCollection in an overloaded field both reduces memory usage and maintains compatibility for the public API.
 - uid: System.Linq.Expressions.IDynamicExpression
   isExternal: false
   href: System.Linq.Expressions.IDynamicExpression.yml
   name: IDynamicExpression
   fullName: System.Linq.Expressions.IDynamicExpression
   type: Interface
+  summary: Provides an internal interface for accessing the arguments of DynamicExpression tree nodes as well as CallSite and Rewriting functionality.  You should not use this API.  It is only public due to DLL refactoring and exists only for internal performance optimizations.
 - uid: System.Linq.Expressions.IndexExpression
   parent: System.Linq.Expressions
   isExternal: false
@@ -284,14 +217,7 @@ references:
   name: LabelExpression
   fullName: System.Linq.Expressions.LabelExpression
   type: Class
-  summary: >-
-    Represents a label, which can be placed in any @'System.Linq.Expressions.Expression' context. If
-
-    it is jumped to, it will get the value provided by the corresponding
-
-    @'System.Linq.Expressions.GotoExpression'. Otherwise, it gets the value in @'System.Linq.Expressions.LabelExpression.DefaultValue'. If the
-
-    @'System.Linq.Expressions.LabelExpression.Type' equals System.Void, no value should be provided.
+  summary: Represents a label, which can be put in any @'System.Linq.Expressions.Expression' context. If it is jumped to, it will get the value provided by the corresponding @'System.Linq.Expressions.GotoExpression'. Otherwise, it receives the value in @'System.Linq.Expressions.LabelExpression.DefaultValue'. If the @'System.Type' equals System.Void, no value should be provided.
 - uid: System.Linq.Expressions.LabelTarget
   parent: System.Linq.Expressions
   isExternal: false
@@ -299,7 +225,7 @@ references:
   name: LabelTarget
   fullName: System.Linq.Expressions.LabelTarget
   type: Class
-  summary: Used to denote the target of a @'System.Linq.Expressions.GotoExpression'.
+  summary: Used to represent the target of a @'System.Linq.Expressions.GotoExpression'.
 - uid: System.Linq.Expressions.LambdaExpression
   parent: System.Linq.Expressions
   isExternal: false
@@ -307,10 +233,7 @@ references:
   name: LambdaExpression
   fullName: System.Linq.Expressions.LambdaExpression
   type: Class
-  summary: >-
-    Creates a @'System.Linq.Expressions.LambdaExpression' node.
-
-    This captures a block of code that is similar to a .NET method body.
+  summary: Describes a lambda expression. This captures a block of code that is similar to a .NET method body.
 - uid: System.Linq.Expressions.Expression`1
   parent: System.Linq.Expressions
   isExternal: false
@@ -320,10 +243,7 @@ references:
   fullName: System.Linq.Expressions.Expression<TDelegate>
   fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
   type: Class
-  summary: >-
-    Defines a @'System.Linq.Expressions.Expression`1' node.
-
-    This captures a block of code that is similar to a .NET method body.
+  summary: Represents a strongly typed lambda expression as a data structure in the form of an expression tree. This class cannot be inherited.
   spec.csharp:
   - uid: System.Linq.Expressions.Expression`1
     name: Expression
@@ -369,7 +289,7 @@ references:
   name: MemberAssignment
   fullName: System.Linq.Expressions.MemberAssignment
   type: Class
-  summary: Represents assignment to a member of an object.
+  summary: Represents assignment operation for a field or property of an object.
 - uid: System.Linq.Expressions.MemberBindingType
   parent: System.Linq.Expressions
   isExternal: false
@@ -377,7 +297,7 @@ references:
   name: MemberBindingType
   fullName: System.Linq.Expressions.MemberBindingType
   type: Enum
-  summary: Describes the binding types that are used in MemberInitExpression objects.
+  summary: Describes the binding types that are used in @'System.Linq.Expressions.MemberInitExpression' objects.
 - uid: System.Linq.Expressions.MemberBinding
   parent: System.Linq.Expressions
   isExternal: false
@@ -457,12 +377,7 @@ references:
   name: RuntimeVariablesExpression
   fullName: System.Linq.Expressions.RuntimeVariablesExpression
   type: Class
-  summary: >-
-    An expression that provides runtime read/write access to variables.
-
-    Needed to implement "eval" in some dynamic languages.
-
-    Evaluates to an instance of @'System.Collections.Generic.IList`1' when executed.
+  summary: An expression that provides runtime read/write permission for variables.
 - uid: System.Linq.Expressions.SwitchCase
   parent: System.Linq.Expressions
   isExternal: false
@@ -478,7 +393,7 @@ references:
   name: SwitchExpression
   fullName: System.Linq.Expressions.SwitchExpression
   type: Class
-  summary: Represents a control expression that handles multiple selections by passing control to a @'System.Linq.Expressions.SwitchCase'.
+  summary: Represents a control expression that handles multiple selections by passing control to @'System.Linq.Expressions.SwitchCase'.
 - uid: System.Linq.Expressions.SymbolDocumentInfo
   parent: System.Linq.Expressions
   isExternal: false
@@ -486,10 +401,7 @@ references:
   name: SymbolDocumentInfo
   fullName: System.Linq.Expressions.SymbolDocumentInfo
   type: Class
-  summary: >-
-    Stores information needed to emit debugging symbol information for a
-
-    source file, in particular the file name and unique language identifier.
+  summary: Stores information necessary to emit debugging symbol information for a source file, in particular the file name and unique language identifier.
 - uid: System.Linq.Expressions.TryExpression
   parent: System.Linq.Expressions
   isExternal: false
@@ -497,22 +409,7 @@ references:
   name: TryExpression
   fullName: System.Linq.Expressions.TryExpression
   type: Class
-  summary: >-
-    Represents a try/catch/finally/fault block.
-
-
-
-    The body is protected by the try block.
-
-    The handlers consist of a set of @'System.Linq.Expressions.CatchBlock's that can either be catch or filters.
-
-    The fault runs if an exception is thrown.
-
-    The finally runs regardless of how control exits the body.
-
-    Only one of fault or finally can be supplied.
-
-    The return type of the try block must match the return type of any associated catch statements.
+  summary: Represents a try/catch/finally/fault block.
 - uid: System.Linq.Expressions.TypeBinaryExpression
   parent: System.Linq.Expressions
   isExternal: false

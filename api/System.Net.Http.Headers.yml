@@ -49,6 +49,7 @@ references:
   name: AuthenticationHeaderValue
   fullName: System.Net.Http.Headers.AuthenticationHeaderValue
   type: Class
+  summary: Represents authentication information in Authorization, ProxyAuthorization, WWW-Authenticate, and Proxy-Authenticate header values.
 - uid: System.Net.Http.Headers.CacheControlHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -56,6 +57,7 @@ references:
   name: CacheControlHeaderValue
   fullName: System.Net.Http.Headers.CacheControlHeaderValue
   type: Class
+  summary: Represents the value of the Cache-Control header.
 - uid: System.Net.Http.Headers.ContentDispositionHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -63,6 +65,7 @@ references:
   name: ContentDispositionHeaderValue
   fullName: System.Net.Http.Headers.ContentDispositionHeaderValue
   type: Class
+  summary: Represents the value of the Content-Disposition header.
 - uid: System.Net.Http.Headers.ContentRangeHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -70,6 +73,7 @@ references:
   name: ContentRangeHeaderValue
   fullName: System.Net.Http.Headers.ContentRangeHeaderValue
   type: Class
+  summary: Represents the value of the Content-Range header.
 - uid: System.Net.Http.Headers.EntityTagHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -77,6 +81,7 @@ references:
   name: EntityTagHeaderValue
   fullName: System.Net.Http.Headers.EntityTagHeaderValue
   type: Class
+  summary: Represents an entity-tag header value.
 - uid: System.Net.Http.Headers.HttpContentHeaders
   parent: System.Net.Http.Headers
   isExternal: false
@@ -84,6 +89,7 @@ references:
   name: HttpContentHeaders
   fullName: System.Net.Http.Headers.HttpContentHeaders
   type: Class
+  summary: Represents the collection of Content Headers as defined in RFC 2616.
 - uid: System.Net.Http.Headers.HttpHeaders
   parent: System.Net.Http.Headers
   isExternal: false
@@ -91,6 +97,7 @@ references:
   name: HttpHeaders
   fullName: System.Net.Http.Headers.HttpHeaders
   type: Class
+  summary: A collection of headers and their values as defined in RFC 2616.
 - uid: System.Net.Http.Headers.HttpHeaderValueCollection`1
   parent: System.Net.Http.Headers
   isExternal: false
@@ -100,6 +107,7 @@ references:
   fullName: System.Net.Http.Headers.HttpHeaderValueCollection<T>
   fullName.vb: System.Net.Http.Headers.HttpHeaderValueCollection(Of T)
   type: Class
+  summary: Represents a collection of header values.
   spec.csharp:
   - uid: System.Net.Http.Headers.HttpHeaderValueCollection`1
     name: HttpHeaderValueCollection
@@ -129,6 +137,7 @@ references:
   name: HttpRequestHeaders
   fullName: System.Net.Http.Headers.HttpRequestHeaders
   type: Class
+  summary: Represents the collection of Request Headers as defined in RFC 2616.
 - uid: System.Net.Http.Headers.HttpResponseHeaders
   parent: System.Net.Http.Headers
   isExternal: false
@@ -136,6 +145,7 @@ references:
   name: HttpResponseHeaders
   fullName: System.Net.Http.Headers.HttpResponseHeaders
   type: Class
+  summary: Represents the collection of Response Headers as defined in RFC 2616.
 - uid: System.Net.Http.Headers.MediaTypeHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -143,6 +153,7 @@ references:
   name: MediaTypeHeaderValue
   fullName: System.Net.Http.Headers.MediaTypeHeaderValue
   type: Class
+  summary: Represents a media type used in a Content-Type header as defined in the RFC 2616.
 - uid: System.Net.Http.Headers.MediaTypeWithQualityHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -150,6 +161,7 @@ references:
   name: MediaTypeWithQualityHeaderValue
   fullName: System.Net.Http.Headers.MediaTypeWithQualityHeaderValue
   type: Class
+  summary: Represents a media type with an additional quality factor used in a Content-Type header.
 - uid: System.Net.Http.Headers.NameValueHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -157,6 +169,7 @@ references:
   name: NameValueHeaderValue
   fullName: System.Net.Http.Headers.NameValueHeaderValue
   type: Class
+  summary: Represents a name/value pair used in various headers as defined in RFC 2616.
 - uid: System.Net.Http.Headers.NameValueWithParametersHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -164,6 +177,7 @@ references:
   name: NameValueWithParametersHeaderValue
   fullName: System.Net.Http.Headers.NameValueWithParametersHeaderValue
   type: Class
+  summary: Represents a name/value pair with parameters used in various headers as defined in RFC 2616.
 - uid: System.Net.Http.Headers.ProductHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -171,6 +185,7 @@ references:
   name: ProductHeaderValue
   fullName: System.Net.Http.Headers.ProductHeaderValue
   type: Class
+  summary: Represents a product token value in a User-Agent header.
 - uid: System.Net.Http.Headers.ProductInfoHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -178,6 +193,7 @@ references:
   name: ProductInfoHeaderValue
   fullName: System.Net.Http.Headers.ProductInfoHeaderValue
   type: Class
+  summary: Represents a value which can either be a product or a comment in a User-Agent header.
 - uid: System.Net.Http.Headers.RangeConditionHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -185,6 +201,7 @@ references:
   name: RangeConditionHeaderValue
   fullName: System.Net.Http.Headers.RangeConditionHeaderValue
   type: Class
+  summary: Represents an If-Range header value which can either be a date/time or an entity-tag value.
 - uid: System.Net.Http.Headers.RangeHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -192,12 +209,14 @@ references:
   name: RangeHeaderValue
   fullName: System.Net.Http.Headers.RangeHeaderValue
   type: Class
+  summary: Represents a Range header value.
 - uid: System.Net.Http.Headers.RangeItemHeaderValue
   isExternal: false
   href: System.Net.Http.Headers.RangeItemHeaderValue.yml
   name: RangeItemHeaderValue
   fullName: System.Net.Http.Headers.RangeItemHeaderValue
   type: Class
+  summary: Represents a byte range in a Range header value.
 - uid: System.Net.Http.Headers.RetryConditionHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -205,6 +224,7 @@ references:
   name: RetryConditionHeaderValue
   fullName: System.Net.Http.Headers.RetryConditionHeaderValue
   type: Class
+  summary: Represents a Retry-After header value which can either be a date/time or a timespan value.
 - uid: System.Net.Http.Headers.StringWithQualityHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -212,6 +232,7 @@ references:
   name: StringWithQualityHeaderValue
   fullName: System.Net.Http.Headers.StringWithQualityHeaderValue
   type: Class
+  summary: Represents a string header value with an optional quality.
 - uid: System.Net.Http.Headers.TransferCodingHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -219,6 +240,7 @@ references:
   name: TransferCodingHeaderValue
   fullName: System.Net.Http.Headers.TransferCodingHeaderValue
   type: Class
+  summary: Represents an accept-encoding header value.
 - uid: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -226,6 +248,7 @@ references:
   name: TransferCodingWithQualityHeaderValue
   fullName: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
   type: Class
+  summary: Represents an Accept-Encoding header value.with optional quality factor.
 - uid: System.Net.Http.Headers.ViaHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -233,6 +256,7 @@ references:
   name: ViaHeaderValue
   fullName: System.Net.Http.Headers.ViaHeaderValue
   type: Class
+  summary: Represents the value of a Via header.
 - uid: System.Net.Http.Headers.WarningHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -240,6 +264,7 @@ references:
   name: WarningHeaderValue
   fullName: System.Net.Http.Headers.WarningHeaderValue
   type: Class
+  summary: Represents a warning value used by the Warning header.
 - uid: System.Net.Http.Headers
   isExternal: false
   name: System.Net.Http.Headers

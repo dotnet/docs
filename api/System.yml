@@ -265,6 +265,7 @@ references:
   name: Console
   fullName: System.Console
   type: Class
+  summary: Represents the standard input, output, and error streams for console applications. This class cannot be inherited.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.ConsoleCancelEventHandler
   parent: System
   isExternal: false
@@ -272,6 +273,7 @@ references:
   name: ConsoleCancelEventHandler
   fullName: System.ConsoleCancelEventHandler
   type: Delegate
+  summary: Represents the method that will handle the @'System.Console.CancelKeyPress' event of a @'System.Console'.
 - uid: System.ConsoleCancelEventArgs
   parent: System
   isExternal: false
@@ -279,6 +281,7 @@ references:
   name: ConsoleCancelEventArgs
   fullName: System.ConsoleCancelEventArgs
   type: Class
+  summary: Provides data for the @'System.Console.CancelKeyPress' event. This class cannot be inherited.
 - uid: System.ConsoleColor
   parent: System
   isExternal: false
@@ -286,6 +289,7 @@ references:
   name: ConsoleColor
   fullName: System.ConsoleColor
   type: Enum
+  summary: Specifies constants that define foreground and background colors for the console.
 - uid: System.ConsoleSpecialKey
   parent: System
   isExternal: false
@@ -293,6 +297,7 @@ references:
   name: ConsoleSpecialKey
   fullName: System.ConsoleSpecialKey
   type: Enum
+  summary: Specifies combinations of modifier and console keys that can interrupt the current process.
 - uid: System.Uri
   parent: System
   isExternal: false
@@ -300,12 +305,14 @@ references:
   name: Uri
   fullName: System.Uri
   type: Class
+  summary: Provides an object representation of a uniform resource identifier (URI) and easy access to the parts of the URI.
 - uid: System.UriBuilder
   isExternal: false
   href: System.UriBuilder.yml
   name: UriBuilder
   fullName: System.UriBuilder
   type: Class
+  summary: Provides a custom constructor for uniform resource identifiers (URIs) and modifies URIs for the @'System.Uri' class.
 - uid: System.UriKind
   parent: System
   isExternal: false
@@ -313,6 +320,7 @@ references:
   name: UriKind
   fullName: System.UriKind
   type: Enum
+  summary: Defines the kinds of @'System.Uri's for the @'System.Uri.IsWellFormedUriString(System.String,System.UriKind)' and several <see cref="Overload:System.Uri.#ctor" /> methods.
 - uid: System.UriComponents
   parent: System
   isExternal: false
@@ -320,6 +328,7 @@ references:
   name: UriComponents
   fullName: System.UriComponents
   type: Enum
+  summary: Specifies the parts of a @'System.Uri'.
 - uid: System.UriFormat
   parent: System
   isExternal: false
@@ -327,13 +336,14 @@ references:
   name: UriFormat
   fullName: System.UriFormat
   type: Enum
+  summary: Controls how URI information is escaped.
 - uid: System.UriFormatException
   isExternal: false
   href: System.UriFormatException.yml
   name: UriFormatException
   fullName: System.UriFormatException
   type: Class
-  summary: An exception class used when an invalid Uniform Resource Identifier is detected.
+  summary: The exception that is thrown when an invalid Uniform Resource Identifier (URI) is detected.
 - uid: System.UriHostNameType
   parent: System
   isExternal: false
@@ -341,6 +351,7 @@ references:
   name: UriHostNameType
   fullName: System.UriHostNameType
   type: Enum
+  summary: Defines host name types for the @'System.Uri.CheckHostName(System.String)' method.
 - uid: System.AggregateException
   parent: System
   isExternal: false
@@ -355,6 +366,7 @@ references:
   name: AppContext
   fullName: System.AppContext
   type: Class
+  summary: Provides members for setting and retrieving data about an application's context.
 - uid: System.Object
   parent: System
   isExternal: false
@@ -362,6 +374,7 @@ references:
   name: Object
   fullName: System.Object
   type: Class
+  summary: Supports all classes in the .NET Framework class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all classes in the .NET Framework; it is the root of the type hierarchy.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.ICloneable
   parent: System
   isExternal: false
@@ -369,6 +382,7 @@ references:
   name: ICloneable
   fullName: System.ICloneable
   type: Interface
+  summary: Supports cloning, which creates a new instance of a class with the same value as an existing instance.
 - uid: System.Action`1
   parent: System
   isExternal: false
@@ -378,6 +392,7 @@ references:
   fullName: System.Action<T>
   fullName.vb: System.Action(Of T)
   type: Delegate
+  summary: Encapsulates a method that has a single parameter and does not return a value.To browse the .NET Framework source code for this type, see the Reference Source.
   spec.csharp:
   - uid: System.Action`1
     name: Action
@@ -407,6 +422,7 @@ references:
   name: Action
   fullName: System.Action
   type: Delegate
+  summary: Encapsulates a method that has no parameters and does not return a value.
 - uid: System.Action`2
   parent: System
   isExternal: false
@@ -416,6 +432,7 @@ references:
   fullName: System.Action<T1, T2>
   fullName.vb: System.Action(Of T1, T2)
   type: Delegate
+  summary: Encapsulates a method that has two parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`2
     name: Action
@@ -455,6 +472,7 @@ references:
   fullName: System.Action<T1, T2, T3>
   fullName.vb: System.Action(Of T1, T2, T3)
   type: Delegate
+  summary: Encapsulates a method that has three parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`3
     name: Action
@@ -501,6 +519,7 @@ references:
   fullName: System.Action<T1, T2, T3, T4>
   fullName.vb: System.Action(Of T1, T2, T3, T4)
   type: Delegate
+  summary: Encapsulates a method that has four parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`4
     name: Action
@@ -556,6 +575,7 @@ references:
   fullName: System.Func<TResult>
   fullName.vb: System.Func(Of TResult)
   type: Delegate
+  summary: Encapsulates a method that has no parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`1
     name: Func
@@ -587,6 +607,7 @@ references:
   fullName: System.Func<T, TResult>
   fullName.vb: System.Func(Of T, TResult)
   type: Delegate
+  summary: Encapsulates a method that has one parameter and returns a value of the type specified by the *TResult* parameter.To browse the .NET Framework source code for this type, see the Reference Source.
   spec.csharp:
   - uid: System.Func`2
     name: Func
@@ -626,6 +647,7 @@ references:
   fullName: System.Func<T1, T2, TResult>
   fullName.vb: System.Func(Of T1, T2, TResult)
   type: Delegate
+  summary: Encapsulates a method that has two parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`3
     name: Func
@@ -673,6 +695,7 @@ references:
   fullName: System.Func<T1, T2, T3, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, TResult)
   type: Delegate
+  summary: Encapsulates a method that has three parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`4
     name: Func
@@ -728,6 +751,7 @@ references:
   fullName: System.Func<T1, T2, T3, T4, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, TResult)
   type: Delegate
+  summary: Encapsulates a method that has four parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`5
     name: Func
@@ -790,6 +814,7 @@ references:
   fullName: System.Action<T1, T2, T3, T4, T5>
   fullName.vb: System.Action(Of T1, T2, T3, T4, T5)
   type: Delegate
+  summary: Encapsulates a method that has five parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`5
     name: Action
@@ -852,6 +877,7 @@ references:
   fullName: System.Action<T1, T2, T3, T4, T5, T6>
   fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6)
   type: Delegate
+  summary: Encapsulates a method that has six parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`6
     name: Action
@@ -922,6 +948,7 @@ references:
   fullName: System.Action<T1, T2, T3, T4, T5, T6, T7>
   fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7)
   type: Delegate
+  summary: Encapsulates a method that has seven parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`7
     name: Action
@@ -1000,6 +1027,7 @@ references:
   fullName: System.Action<T1, T2, T3, T4, T5, T6, T7, T8>
   fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8)
   type: Delegate
+  summary: Encapsulates a method that has eight parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`8
     name: Action
@@ -1087,6 +1115,7 @@ references:
   fullName: System.Func<T1, T2, T3, T4, T5, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, T5, TResult)
   type: Delegate
+  summary: Encapsulates a method that has five parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`6
     name: Func
@@ -1157,6 +1186,7 @@ references:
   fullName: System.Func<T1, T2, T3, T4, T5, T6, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, TResult)
   type: Delegate
+  summary: Encapsulates a method that has six parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`7
     name: Func
@@ -1235,6 +1265,7 @@ references:
   fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, TResult)
   type: Delegate
+  summary: Encapsulates a method that has seven parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`8
     name: Func
@@ -1321,6 +1352,7 @@ references:
   fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, T8, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, TResult)
   type: Delegate
+  summary: Encapsulates a method that has eight parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`9
     name: Func
@@ -1416,6 +1448,7 @@ references:
   fullName: System.Comparison<T>
   fullName.vb: System.Comparison(Of T)
   type: Delegate
+  summary: Represents the method that compares two objects of the same type.
   spec.csharp:
   - uid: System.Comparison`1
     name: Comparison
@@ -1447,6 +1480,7 @@ references:
   fullName: System.Converter<TInput, TOutput>
   fullName.vb: System.Converter(Of TInput, TOutput)
   type: Delegate
+  summary: Represents a method that converts an object from one type to another type.
   spec.csharp:
   - uid: System.Converter`2
     name: Converter
@@ -1486,6 +1520,7 @@ references:
   fullName: System.Predicate<T>
   fullName.vb: System.Predicate(Of T)
   type: Delegate
+  summary: Represents the method that defines a set of criteria and determines whether the specified object meets those criteria.
   spec.csharp:
   - uid: System.Predicate`1
     name: Predicate
@@ -1515,6 +1550,7 @@ references:
   name: Array
   fullName: System.Array
   type: Class
+  summary: Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the base class for all arrays in the common language runtime.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.ArraySegment`1
   parent: System
   isExternal: false
@@ -1524,6 +1560,7 @@ references:
   fullName: System.ArraySegment<T>
   fullName.vb: System.ArraySegment(Of T)
   type: Struct
+  summary: Delimits a section of a one-dimensional array.
   spec.csharp:
   - uid: System.ArraySegment`1
     name: ArraySegment
@@ -1553,6 +1590,7 @@ references:
   name: IComparable
   fullName: System.IComparable
   type: Interface
+  summary: Defines a generalized type-specific comparison method that a value type or class implements to order or sort its instances.
 - uid: System.IComparable`1
   parent: System
   isExternal: false
@@ -1562,6 +1600,7 @@ references:
   fullName: System.IComparable<T>
   fullName.vb: System.IComparable(Of T)
   type: Interface
+  summary: Defines a generalized comparison method that a value type or class implements to create a type-specific comparison method for ordering or sorting its instances.
   spec.csharp:
   - uid: System.IComparable`1
     name: IComparable
@@ -1593,6 +1632,7 @@ references:
   fullName: System.IEquatable<T>
   fullName.vb: System.IEquatable(Of T)
   type: Interface
+  summary: Defines a generalized method that a value type or class implements to create a type-specific method for determining equality of instances.
   spec.csharp:
   - uid: System.IEquatable`1
     name: IEquatable
@@ -1621,6 +1661,7 @@ references:
   name: Tuple
   fullName: System.Tuple
   type: Class
+  summary: Provides static methods for creating tuple objects. To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.Tuple`1
   parent: System
   isExternal: false
@@ -1630,6 +1671,7 @@ references:
   fullName: System.Tuple<T1>
   fullName.vb: System.Tuple(Of T1)
   type: Class
+  summary: Represents a 1-tuple, or singleton.
   spec.csharp:
   - uid: System.Tuple`1
     name: Tuple
@@ -1661,6 +1703,7 @@ references:
   fullName: System.Tuple<T1, T2>
   fullName.vb: System.Tuple(Of T1, T2)
   type: Class
+  summary: Represents a 2-tuple, or pair.
   spec.csharp:
   - uid: System.Tuple`2
     name: Tuple
@@ -1700,6 +1743,7 @@ references:
   fullName: System.Tuple<T1, T2, T3>
   fullName.vb: System.Tuple(Of T1, T2, T3)
   type: Class
+  summary: Represents a 3-tuple, or triple.
   spec.csharp:
   - uid: System.Tuple`3
     name: Tuple
@@ -1747,6 +1791,7 @@ references:
   fullName: System.Tuple<T1, T2, T3, T4>
   fullName.vb: System.Tuple(Of T1, T2, T3, T4)
   type: Class
+  summary: Represents a 4-tuple, or quadruple.
   spec.csharp:
   - uid: System.Tuple`4
     name: Tuple
@@ -1802,6 +1847,7 @@ references:
   fullName: System.Tuple<T1, T2, T3, T4, T5>
   fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5)
   type: Class
+  summary: Represents a 5-tuple, or quintuple.
   spec.csharp:
   - uid: System.Tuple`5
     name: Tuple
@@ -1865,6 +1911,7 @@ references:
   fullName: System.Tuple<T1, T2, T3, T4, T5, T6>
   fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6)
   type: Class
+  summary: Represents a 6-tuple, or sextuple.
   spec.csharp:
   - uid: System.Tuple`6
     name: Tuple
@@ -1936,6 +1983,7 @@ references:
   fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>
   fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7)
   type: Class
+  summary: Represents a 7-tuple, or septuple.
   spec.csharp:
   - uid: System.Tuple`7
     name: Tuple
@@ -2015,6 +2063,7 @@ references:
   fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>
   fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest)
   type: Class
+  summary: Represents an n-tuple, where n is 8 or greater.
   spec.csharp:
   - uid: System.Tuple`8
     name: Tuple
@@ -2100,6 +2149,7 @@ references:
   name: String
   fullName: System.String
   type: Class
+  summary: Represents text as a series of Unicode characters.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.StringSplitOptions
   parent: System
   isExternal: false
@@ -2107,6 +2157,7 @@ references:
   name: StringSplitOptions
   fullName: System.StringSplitOptions
   type: Enum
+  summary: Specifies whether applicable <see cref="Overload:System.String.Split" /> method overloads include or omit empty substrings from the return value.
 - uid: System.StringComparer
   parent: System
   isExternal: false
@@ -2114,6 +2165,7 @@ references:
   name: StringComparer
   fullName: System.StringComparer
   type: Class
+  summary: Represents a string comparison operation that uses specific case and culture-based or ordinal comparison rules.
 - uid: System.StringComparison
   parent: System
   isExternal: false
@@ -2121,6 +2173,7 @@ references:
   name: StringComparison
   fullName: System.StringComparison
   type: Enum
+  summary: Specifies the culture, case, and sort rules to be used by certain overloads of the @'System.String.Compare(System.String,System.String)' and @'System.String.Equals(System.Object)' methods.
 - uid: System.Exception
   parent: System
   isExternal: false
@@ -2128,6 +2181,7 @@ references:
   name: Exception
   fullName: System.Exception
   type: Class
+  summary: Represents errors that occur during application execution.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.FormattableString
   parent: System
   isExternal: false
@@ -2135,10 +2189,7 @@ references:
   name: FormattableString
   fullName: System.FormattableString
   type: Class
-  summary: >-
-    A composite format string along with the arguments to be formatted. An instance of this
-
-    type may result from the use of the C# or VB language primitive "interpolated string".
+  summary: Represents a composite format string, along with the arguments to be formatted.
 - uid: System.DateTime
   parent: System
   isExternal: false
@@ -2146,6 +2197,7 @@ references:
   name: DateTime
   fullName: System.DateTime
   type: Struct
+  summary: Represents an instant in time, typically expressed as a date and time of day. To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.DateTimeKind
   parent: System
   isExternal: false
@@ -2153,6 +2205,7 @@ references:
   name: DateTimeKind
   fullName: System.DateTimeKind
   type: Enum
+  summary: Specifies whether a @'System.DateTime' object represents a local time, a Coordinated Universal Time (UTC), or is not specified as either local time or UTC.
 - uid: System.DateTimeOffset
   parent: System
   isExternal: false
@@ -2160,6 +2213,7 @@ references:
   name: DateTimeOffset
   fullName: System.DateTimeOffset
   type: Struct
+  summary: Represents a point in time, typically expressed as a date and time of day, relative to Coordinated Universal Time (UTC).
 - uid: System.SystemException
   parent: System
   isExternal: false
@@ -2167,6 +2221,7 @@ references:
   name: SystemException
   fullName: System.SystemException
   type: Class
+  summary: Serves as the base class for system exceptions namespace.
 - uid: System.OutOfMemoryException
   parent: System
   isExternal: false
@@ -2174,24 +2229,28 @@ references:
   name: OutOfMemoryException
   fullName: System.OutOfMemoryException
   type: Class
+  summary: The exception that is thrown when there is not enough memory to continue the execution of a program.
 - uid: System.StackOverflowException
   isExternal: false
   href: System.StackOverflowException.yml
   name: StackOverflowException
   fullName: System.StackOverflowException
   type: Class
+  summary: The exception that is thrown when the execution stack overflows because it contains too many nested method calls. This class cannot be inherited.
 - uid: System.DataMisalignedException
   isExternal: false
   href: System.DataMisalignedException.yml
   name: DataMisalignedException
   fullName: System.DataMisalignedException
   type: Class
+  summary: The exception that is thrown when a unit of data is read from or written to an address that is not a multiple of the data size. This class cannot be inherited.
 - uid: System.ExecutionEngineException
   isExternal: false
   href: System.ExecutionEngineException.yml
   name: ExecutionEngineException
   fullName: System.ExecutionEngineException
   type: Class
+  summary: The exception that is thrown when there is an internal error in the execution engine of the common language runtime. This class cannot be inherited.
 - uid: System.Delegate
   parent: System
   isExternal: false
@@ -2199,6 +2258,7 @@ references:
   name: Delegate
   fullName: System.Delegate
   type: Class
+  summary: Represents a delegate, which is a data structure that refers to a static method or to a class instance and an instance method of that class.
 - uid: System.MulticastDelegate
   parent: System
   isExternal: false
@@ -2206,6 +2266,7 @@ references:
   name: MulticastDelegate
   fullName: System.MulticastDelegate
   type: Class
+  summary: Represents a multicast delegate; that is, a delegate that can have more than one element in its invocation list.
 - uid: System.MemberAccessException
   parent: System
   isExternal: false
@@ -2213,24 +2274,28 @@ references:
   name: MemberAccessException
   fullName: System.MemberAccessException
   type: Class
+  summary: The exception that is thrown when an attempt to access a class member fails.
 - uid: System.Activator
   isExternal: false
   href: System.Activator.yml
   name: Activator
   fullName: System.Activator
   type: Class
+  summary: Contains methods to create types of objects locally or remotely, or obtain references to existing remote objects. This class cannot be inherited.
 - uid: System.AccessViolationException
   isExternal: false
   href: System.AccessViolationException.yml
   name: AccessViolationException
   fullName: System.AccessViolationException
   type: Class
+  summary: The exception that is thrown when there is an attempt to read or write protected memory.
 - uid: System.ApplicationException
   isExternal: false
   href: System.ApplicationException.yml
   name: ApplicationException
   fullName: System.ApplicationException
   type: Class
+  summary: Serves as the base class for application-defined exceptions.
 - uid: System.ResolveEventArgs
   parent: System
   isExternal: false
@@ -2238,6 +2303,7 @@ references:
   name: ResolveEventArgs
   fullName: System.ResolveEventArgs
   type: Class
+  summary: Provides data for loader resolution events, such as the @'System.AppDomain.TypeResolve', @'System.AppDomain.ResourceResolve', @'System.AppDomain.ReflectionOnlyAssemblyResolve', and @'System.AppDomain.AssemblyResolve' events.
 - uid: System.AssemblyLoadEventArgs
   parent: System
   isExternal: false
@@ -2245,6 +2311,7 @@ references:
   name: AssemblyLoadEventArgs
   fullName: System.AssemblyLoadEventArgs
   type: Class
+  summary: Provides data for the @'System.AppDomain.AssemblyLoad' event.
 - uid: System.ResolveEventHandler
   parent: System
   isExternal: false
@@ -2252,6 +2319,7 @@ references:
   name: ResolveEventHandler
   fullName: System.ResolveEventHandler
   type: Delegate
+  summary: Represents a method that handles the @'System.AppDomain.TypeResolve', @'System.AppDomain.ResourceResolve', or @'System.AppDomain.AssemblyResolve' event of an @'System.AppDomain'.
 - uid: System.AssemblyLoadEventHandler
   parent: System
   isExternal: false
@@ -2259,6 +2327,7 @@ references:
   name: AssemblyLoadEventHandler
   fullName: System.AssemblyLoadEventHandler
   type: Delegate
+  summary: Represents the method that handles the @'System.AppDomain.AssemblyLoad' event of an @'System.AppDomain'.
 - uid: System.AppDomainInitializer
   parent: System
   isExternal: false
@@ -2266,6 +2335,7 @@ references:
   name: AppDomainInitializer
   fullName: System.AppDomainInitializer
   type: Delegate
+  summary: Represents the callback method to invoke when the application domain is initialized.
 - uid: System.AppDomain
   parent: System
   isExternal: false
@@ -2273,6 +2343,7 @@ references:
   name: AppDomain
   fullName: System.AppDomain
   type: Class
+  summary: Represents an application domain, which is an isolated environment where applications execute. This class cannot be inherited.
 - uid: System.AppDomainSetup
   parent: System
   isExternal: false
@@ -2280,6 +2351,7 @@ references:
   name: AppDomainSetup
   fullName: System.AppDomainSetup
   type: Class
+  summary: Represents assembly binding information that can be added to an instance of @'System.AppDomain'.
 - uid: System.AppDomainManager
   parent: System
   isExternal: false
@@ -2287,6 +2359,7 @@ references:
   name: AppDomainManager
   fullName: System.AppDomainManager
   type: Class
+  summary: Provides a managed equivalent of an unmanaged host.
 - uid: System.IAppDomainPauseManager
   parent: System
   isExternal: false
@@ -2307,6 +2380,7 @@ references:
   name: _AppDomain
   fullName: System._AppDomain
   type: Interface
+  summary: Exposes the public members of the @'System.AppDomain' class to unmanaged code.
 - uid: System.IAppDomainSetup
   parent: System
   isExternal: false
@@ -2314,6 +2388,7 @@ references:
   name: IAppDomainSetup
   fullName: System.IAppDomainSetup
   type: Interface
+  summary: Represents assembly binding information that can be added to an instance of @'System.AppDomain'.
 - uid: System.LoaderOptimization
   parent: System
   isExternal: false
@@ -2321,18 +2396,21 @@ references:
   name: LoaderOptimization
   fullName: System.LoaderOptimization
   type: Enum
+  summary: An enumeration used with the @'System.LoaderOptimizationAttribute' class to specify loader optimizations for an executable.
 - uid: System.LoaderOptimizationAttribute
   isExternal: false
   href: System.LoaderOptimizationAttribute.yml
   name: LoaderOptimizationAttribute
   fullName: System.LoaderOptimizationAttribute
   type: Class
+  summary: Used to set the default loader optimization policy for the main method of an executable application.
 - uid: System.AppDomainUnloadedException
   isExternal: false
   href: System.AppDomainUnloadedException.yml
   name: AppDomainUnloadedException
   fullName: System.AppDomainUnloadedException
   type: Class
+  summary: The exception that is thrown when an attempt is made to access an unloaded application domain.
 - uid: System.ApplicationId
   parent: System
   isExternal: false
@@ -2340,6 +2418,7 @@ references:
   name: ApplicationId
   fullName: System.ApplicationId
   type: Class
+  summary: Contains information used to uniquely identify a manifest-based application. This class cannot be inherited.
 - uid: System.ArgumentException
   parent: System
   isExternal: false
@@ -2347,24 +2426,28 @@ references:
   name: ArgumentException
   fullName: System.ArgumentException
   type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
 - uid: System.ArgumentNullException
   isExternal: false
   href: System.ArgumentNullException.yml
   name: ArgumentNullException
   fullName: System.ArgumentNullException
   type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
 - uid: System.ArgumentOutOfRangeException
   isExternal: false
   href: System.ArgumentOutOfRangeException.yml
   name: ArgumentOutOfRangeException
   fullName: System.ArgumentOutOfRangeException
   type: Class
+  summary: The exception that is thrown when the value of an argument is outside the allowable range of values as defined by the invoked method.
 - uid: System.ArgIterator
   isExternal: false
   href: System.ArgIterator.yml
   name: ArgIterator
   fullName: System.ArgIterator
   type: Struct
+  summary: Represents a variable-length argument list; that is, the parameters of a function that takes a variable number of arguments.
 - uid: System.ArithmeticException
   parent: System
   isExternal: false
@@ -2372,12 +2455,14 @@ references:
   name: ArithmeticException
   fullName: System.ArithmeticException
   type: Class
+  summary: The exception that is thrown for errors in an arithmetic, casting, or conversion operation.
 - uid: System.ArrayTypeMismatchException
   isExternal: false
   href: System.ArrayTypeMismatchException.yml
   name: ArrayTypeMismatchException
   fullName: System.ArrayTypeMismatchException
   type: Class
+  summary: The exception that is thrown when an attempt is made to store an element of the wrong type within an array.
 - uid: System.AsyncCallback
   parent: System
   isExternal: false
@@ -2385,6 +2470,7 @@ references:
   name: AsyncCallback
   fullName: System.AsyncCallback
   type: Delegate
+  summary: References a method to be called when a corresponding asynchronous operation completes.
 - uid: System.Attribute
   parent: System
   isExternal: false
@@ -2392,6 +2478,7 @@ references:
   name: Attribute
   fullName: System.Attribute
   type: Class
+  summary: Represents the base class for custom attributes.
 - uid: System.AttributeTargets
   parent: System
   isExternal: false
@@ -2399,24 +2486,28 @@ references:
   name: AttributeTargets
   fullName: System.AttributeTargets
   type: Enum
+  summary: Specifies the application elements on which it is valid to apply an attribute.
 - uid: System.AttributeUsageAttribute
   isExternal: false
   href: System.AttributeUsageAttribute.yml
   name: AttributeUsageAttribute
   fullName: System.AttributeUsageAttribute
   type: Class
+  summary: Specifies the usage of another attribute class. This class cannot be inherited.
 - uid: System.BadImageFormatException
   isExternal: false
   href: System.BadImageFormatException.yml
   name: BadImageFormatException
   fullName: System.BadImageFormatException
   type: Class
+  summary: The exception that is thrown when the file image of a dynamic link library (DLL) or an executable program is invalid.
 - uid: System.BitConverter
   isExternal: false
   href: System.BitConverter.yml
   name: BitConverter
   fullName: System.BitConverter
   type: Class
+  summary: Converts base data types to an array of bytes, and an array of bytes to base data types.
 - uid: System.Boolean
   parent: System
   isExternal: false
@@ -2424,12 +2515,14 @@ references:
   name: Boolean
   fullName: System.Boolean
   type: Struct
+  summary: Represents a Boolean (true or false) value.
 - uid: System.Buffer
   isExternal: false
   href: System.Buffer.yml
   name: Buffer
   fullName: System.Buffer
   type: Class
+  summary: Manipulates arrays of primitive types.
 - uid: System.Byte
   parent: System
   isExternal: false
@@ -2437,12 +2530,14 @@ references:
   name: Byte
   fullName: System.Byte
   type: Struct
+  summary: Represents an 8-bit unsigned integer.
 - uid: System.CannotUnloadAppDomainException
   isExternal: false
   href: System.CannotUnloadAppDomainException.yml
   name: CannotUnloadAppDomainException
   fullName: System.CannotUnloadAppDomainException
   type: Class
+  summary: The exception that is thrown when an attempt to unload an application domain fails.
 - uid: System.Char
   parent: System
   isExternal: false
@@ -2450,24 +2545,28 @@ references:
   name: Char
   fullName: System.Char
   type: Struct
+  summary: Represents a character as a UTF-16 code unit.
 - uid: System.CharEnumerator
   isExternal: false
   href: System.CharEnumerator.yml
   name: CharEnumerator
   fullName: System.CharEnumerator
   type: Class
+  summary: Supports iterating over a @'System.String' object and reading its individual characters. This class cannot be inherited.
 - uid: System.CLSCompliantAttribute
   isExternal: false
   href: System.CLSCompliantAttribute.yml
   name: CLSCompliantAttribute
   fullName: System.CLSCompliantAttribute
   type: Class
+  summary: Indicates whether a program element is compliant with the Common Language Specification (CLS). This class cannot be inherited.
 - uid: System.TypeUnloadedException
   isExternal: false
   href: System.TypeUnloadedException.yml
   name: TypeUnloadedException
   fullName: System.TypeUnloadedException
   type: Class
+  summary: The exception that is thrown when there is an attempt to access an unloaded class.
 - uid: System.ConsoleKey
   parent: System
   isExternal: false
@@ -2475,6 +2574,7 @@ references:
   name: ConsoleKey
   fullName: System.ConsoleKey
   type: Enum
+  summary: Specifies the standard keys on a console.
 - uid: System.ConsoleKeyInfo
   parent: System
   isExternal: false
@@ -2482,6 +2582,7 @@ references:
   name: ConsoleKeyInfo
   fullName: System.ConsoleKeyInfo
   type: Struct
+  summary: Describes the console key that was pressed, including the character represented by the console key and the state of the SHIFT, ALT, and CTRL modifier keys.
 - uid: System.ConsoleModifiers
   parent: System
   isExternal: false
@@ -2489,12 +2590,14 @@ references:
   name: ConsoleModifiers
   fullName: System.ConsoleModifiers
   type: Enum
+  summary: Represents the SHIFT, ALT, and CTRL modifier keys on a keyboard.
 - uid: System.ContextMarshalException
   isExternal: false
   href: System.ContextMarshalException.yml
   name: ContextMarshalException
   fullName: System.ContextMarshalException
   type: Class
+  summary: The exception that is thrown when an attempt to marshal an object across a context boundary fails.
 - uid: System.Base64FormattingOptions
   parent: System
   isExternal: false
@@ -2502,24 +2605,28 @@ references:
   name: Base64FormattingOptions
   fullName: System.Base64FormattingOptions
   type: Enum
+  summary: Specifies whether relevant <see cref="Overload:System.Convert.ToBase64CharArray" /> and <see cref="Overload:System.Convert.ToBase64String" /> methods insert line breaks in their output.
 - uid: System.Convert
   isExternal: false
   href: System.Convert.yml
   name: Convert
   fullName: System.Convert
   type: Class
+  summary: Converts a base data type to another base data type.
 - uid: System.ContextBoundObject
   isExternal: false
   href: System.ContextBoundObject.yml
   name: ContextBoundObject
   fullName: System.ContextBoundObject
   type: Class
+  summary: Defines the base class for all context-bound classes.
 - uid: System.ContextStaticAttribute
   isExternal: false
   href: System.ContextStaticAttribute.yml
   name: ContextStaticAttribute
   fullName: System.ContextStaticAttribute
   type: Class
+  summary: Indicates that the value of a static field is unique for a particular context.
 - uid: System.DayOfWeek
   parent: System
   isExternal: false
@@ -2527,6 +2634,7 @@ references:
   name: DayOfWeek
   fullName: System.DayOfWeek
   type: Enum
+  summary: Specifies the day of the week.
 - uid: System.DBNull
   parent: System
   isExternal: false
@@ -2534,6 +2642,7 @@ references:
   name: DBNull
   fullName: System.DBNull
   type: Class
+  summary: Represents a nonexistent value. This class cannot be inherited.
 - uid: System.Decimal
   parent: System
   isExternal: false
@@ -2541,12 +2650,14 @@ references:
   name: Decimal
   fullName: System.Decimal
   type: Struct
+  summary: Represents a decimal number.
 - uid: System.DivideByZeroException
   isExternal: false
   href: System.DivideByZeroException.yml
   name: DivideByZeroException
   fullName: System.DivideByZeroException
   type: Class
+  summary: The exception that is thrown when there is an attempt to divide an integral or decimal value by zero.
 - uid: System.Double
   parent: System
   isExternal: false
@@ -2554,12 +2665,14 @@ references:
   name: Double
   fullName: System.Double
   type: Struct
+  summary: Represents a double-precision floating-point number.
 - uid: System.DuplicateWaitObjectException
   isExternal: false
   href: System.DuplicateWaitObjectException.yml
   name: DuplicateWaitObjectException
   fullName: System.DuplicateWaitObjectException
   type: Class
+  summary: The exception that is thrown when an object appears more than once in an array of synchronization objects.
 - uid: System.Enum
   parent: System
   isExternal: false
@@ -2567,18 +2680,21 @@ references:
   name: Enum
   fullName: System.Enum
   type: Class
+  summary: Provides the base class for enumerations.
 - uid: System.EntryPointNotFoundException
   isExternal: false
   href: System.EntryPointNotFoundException.yml
   name: EntryPointNotFoundException
   fullName: System.EntryPointNotFoundException
   type: Class
+  summary: The exception that is thrown when an attempt to load a class fails due to the absence of an entry method.
 - uid: System.DllNotFoundException
   isExternal: false
   href: System.DllNotFoundException.yml
   name: DllNotFoundException
   fullName: System.DllNotFoundException
   type: Class
+  summary: The exception that is thrown when a DLL specified in a DLL import cannot be found.
 - uid: System.EnvironmentVariableTarget
   parent: System
   isExternal: false
@@ -2586,12 +2702,14 @@ references:
   name: EnvironmentVariableTarget
   fullName: System.EnvironmentVariableTarget
   type: Enum
+  summary: Specifies the location where an environment variable is stored or retrieved in a set or get operation.
 - uid: System.Environment
   isExternal: false
   href: System.Environment.yml
   name: Environment
   fullName: System.Environment
   type: Class
+  summary: Provides information about, and means to manipulate, the current environment and platform. This class cannot be inherited.
 - uid: System.Environment.SpecialFolderOption
   parent: System
   isExternal: false
@@ -2599,6 +2717,7 @@ references:
   name: Environment.SpecialFolderOption
   fullName: System.Environment.SpecialFolderOption
   type: Enum
+  summary: Specifies options to use for getting the path to a special folder.
 - uid: System.Environment.SpecialFolder
   parent: System
   isExternal: false
@@ -2606,6 +2725,7 @@ references:
   name: Environment.SpecialFolder
   fullName: System.Environment.SpecialFolder
   type: Enum
+  summary: Specifies enumerated constants used to retrieve directory paths to system special folders.
 - uid: System.EventArgs
   parent: System
   isExternal: false
@@ -2613,6 +2733,7 @@ references:
   name: EventArgs
   fullName: System.EventArgs
   type: Class
+  summary: Represents the base class for classes that contain event data, and provides a value to use for events that do not include event data.
 - uid: System.EventHandler
   parent: System
   isExternal: false
@@ -2620,6 +2741,7 @@ references:
   name: EventHandler
   fullName: System.EventHandler
   type: Delegate
+  summary: Represents the method that will handle an event that has no event data.
 - uid: System.EventHandler`1
   parent: System
   isExternal: false
@@ -2629,6 +2751,7 @@ references:
   fullName: System.EventHandler<TEventArgs>
   fullName.vb: System.EventHandler(Of TEventArgs)
   type: Delegate
+  summary: Represents the method that will handle an event when the event provides data.
   spec.csharp:
   - uid: System.EventHandler`1
     name: EventHandler
@@ -2657,12 +2780,14 @@ references:
   name: FieldAccessException
   fullName: System.FieldAccessException
   type: Class
+  summary: The exception that is thrown when there is an invalid attempt to access a private or protected field inside a class.
 - uid: System.FlagsAttribute
   isExternal: false
   href: System.FlagsAttribute.yml
   name: FlagsAttribute
   fullName: System.FlagsAttribute
   type: Class
+  summary: Indicates that an enumeration can be treated as a bit field; that is, a set of flags.
 - uid: System.FormatException
   parent: System
   isExternal: false
@@ -2670,6 +2795,7 @@ references:
   name: FormatException
   fullName: System.FormatException
   type: Class
+  summary: The exception that is thrown when the format of an argument is invalid, or when a composite format string is not well formed.
 - uid: System.GCCollectionMode
   parent: System
   isExternal: false
@@ -2677,6 +2803,7 @@ references:
   name: GCCollectionMode
   fullName: System.GCCollectionMode
   type: Enum
+  summary: Specifies the behavior for a forced garbage collection.
 - uid: System.GCNotificationStatus
   parent: System
   isExternal: false
@@ -2684,12 +2811,14 @@ references:
   name: GCNotificationStatus
   fullName: System.GCNotificationStatus
   type: Enum
+  summary: Provides information about the current registration for notification of the next full garbage collection.
 - uid: System.GC
   isExternal: false
   href: System.GC.yml
   name: GC
   fullName: System.GC
   type: Class
+  summary: Controls the system garbage collector, a service that automatically reclaims unused memory.
 - uid: System.Guid
   parent: System
   isExternal: false
@@ -2697,6 +2826,7 @@ references:
   name: Guid
   fullName: System.Guid
   type: Struct
+  summary: Represents a globally unique identifier (GUID).To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.IAsyncResult
   parent: System
   isExternal: false
@@ -2704,12 +2834,14 @@ references:
   name: IAsyncResult
   fullName: System.IAsyncResult
   type: Interface
+  summary: Represents the status of an asynchronous operation.
 - uid: System.ICustomFormatter
   isExternal: false
   href: System.ICustomFormatter.yml
   name: ICustomFormatter
   fullName: System.ICustomFormatter
   type: Interface
+  summary: Defines a method that supports custom formatting of the value of an object.
 - uid: System.IDisposable
   parent: System
   isExternal: false
@@ -2717,6 +2849,7 @@ references:
   name: IDisposable
   fullName: System.IDisposable
   type: Interface
+  summary: Provides a mechanism for releasing unmanaged resources.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.IFormatProvider
   parent: System
   isExternal: false
@@ -2724,6 +2857,7 @@ references:
   name: IFormatProvider
   fullName: System.IFormatProvider
   type: Interface
+  summary: Provides a mechanism for retrieving an object to control formatting.
 - uid: System.IFormattable
   parent: System
   isExternal: false
@@ -2731,12 +2865,14 @@ references:
   name: IFormattable
   fullName: System.IFormattable
   type: Interface
+  summary: Provides functionality to format the value of an object into a string representation.
 - uid: System.IndexOutOfRangeException
   isExternal: false
   href: System.IndexOutOfRangeException.yml
   name: IndexOutOfRangeException
   fullName: System.IndexOutOfRangeException
   type: Class
+  summary: The exception that is thrown when an attempt is made to access an element of an array or collection with an index that is outside its bounds.
 - uid: System.IObservable`1
   parent: System
   isExternal: false
@@ -2746,6 +2882,7 @@ references:
   fullName: System.IObservable<T>
   fullName.vb: System.IObservable(Of T)
   type: Interface
+  summary: Defines a provider for push-based notification.
   spec.csharp:
   - uid: System.IObservable`1
     name: IObservable
@@ -2777,6 +2914,7 @@ references:
   fullName: System.IObserver<T>
   fullName.vb: System.IObserver(Of T)
   type: Interface
+  summary: Provides a mechanism for receiving push-based notifications.
   spec.csharp:
   - uid: System.IObserver`1
     name: IObserver
@@ -2837,12 +2975,14 @@ references:
   name: InsufficientMemoryException
   fullName: System.InsufficientMemoryException
   type: Class
+  summary: The exception that is thrown when a check for sufficient available memory fails. This class cannot be inherited.
 - uid: System.InsufficientExecutionStackException
   isExternal: false
   href: System.InsufficientExecutionStackException.yml
   name: InsufficientExecutionStackException
   fullName: System.InsufficientExecutionStackException
   type: Class
+  summary: The exception that is thrown when there is insufficient execution stack available to allow most methods to execute.
 - uid: System.Lazy`1
   parent: System
   isExternal: false
@@ -2882,6 +3022,7 @@ references:
   name: Int16
   fullName: System.Int16
   type: Struct
+  summary: Represents a 16-bit signed integer.
 - uid: System.Int32
   parent: System
   isExternal: false
@@ -2889,6 +3030,7 @@ references:
   name: Int32
   fullName: System.Int32
   type: Struct
+  summary: Represents a 32-bit signed integer.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.Int64
   parent: System
   isExternal: false
@@ -2896,6 +3038,7 @@ references:
   name: Int64
   fullName: System.Int64
   type: Struct
+  summary: Represents a 64-bit signed integer.
 - uid: System.IntPtr
   parent: System
   isExternal: false
@@ -2903,12 +3046,14 @@ references:
   name: IntPtr
   fullName: System.IntPtr
   type: Struct
+  summary: A platform-specific type that is used to represent a pointer or a handle.
 - uid: System.InvalidCastException
   isExternal: false
   href: System.InvalidCastException.yml
   name: InvalidCastException
   fullName: System.InvalidCastException
   type: Class
+  summary: The exception that is thrown for invalid casting or explicit conversion.
 - uid: System.InvalidOperationException
   parent: System
   isExternal: false
@@ -2916,18 +3061,21 @@ references:
   name: InvalidOperationException
   fullName: System.InvalidOperationException
   type: Class
+  summary: The exception that is thrown when a method call is invalid for the object's current state.
 - uid: System.InvalidProgramException
   isExternal: false
   href: System.InvalidProgramException.yml
   name: InvalidProgramException
   fullName: System.InvalidProgramException
   type: Class
+  summary: The exception that is thrown when a program contains invalid Microsoft intermediate language (MSIL) or metadata. Generally this indicates a bug in the compiler that generated the program.
 - uid: System.InvalidTimeZoneException
   isExternal: false
   href: System.InvalidTimeZoneException.yml
   name: InvalidTimeZoneException
   fullName: System.InvalidTimeZoneException
   type: Class
+  summary: The exception that is thrown when time zone information is invalid.
 - uid: System.IConvertible
   parent: System
   isExternal: false
@@ -2935,6 +3083,7 @@ references:
   name: IConvertible
   fullName: System.IConvertible
   type: Interface
+  summary: Defines methods that convert the value of the implementing reference or value type to a common language runtime type that has an equivalent value.
 - uid: System.IServiceProvider
   parent: System
   isExternal: false
@@ -2942,6 +3091,7 @@ references:
   name: IServiceProvider
   fullName: System.IServiceProvider
   type: Interface
+  summary: Defines a mechanism for retrieving a service object; that is, an object that provides custom support to other objects.
 - uid: System.LocalDataStoreSlot
   parent: System
   isExternal: false
@@ -2949,6 +3099,7 @@ references:
   name: LocalDataStoreSlot
   fullName: System.LocalDataStoreSlot
   type: Class
+  summary: Encapsulates a memory slot to store local data. This class cannot be inherited.
 - uid: System.MarshalByRefObject
   parent: System
   isExternal: false
@@ -2956,18 +3107,21 @@ references:
   name: MarshalByRefObject
   fullName: System.MarshalByRefObject
   type: Class
+  summary: Enables access to objects across application domain boundaries in applications that support remoting.
 - uid: System.Math
   isExternal: false
   href: System.Math.yml
   name: Math
   fullName: System.Math
   type: Class
+  summary: Provides constants and static methods for trigonometric, logarithmic, and other common mathematical functions.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.MethodAccessException
   isExternal: false
   href: System.MethodAccessException.yml
   name: MethodAccessException
   fullName: System.MethodAccessException
   type: Class
+  summary: The exception that is thrown when there is an invalid attempt to access a method, such as accessing a private method from partially trusted code.
 - uid: System.MidpointRounding
   parent: System
   isExternal: false
@@ -2975,12 +3129,14 @@ references:
   name: MidpointRounding
   fullName: System.MidpointRounding
   type: Enum
+  summary: Specifies how mathematical rounding methods should process a number that is midway between two numbers.
 - uid: System.MissingFieldException
   isExternal: false
   href: System.MissingFieldException.yml
   name: MissingFieldException
   fullName: System.MissingFieldException
   type: Class
+  summary: The exception that is thrown when there is an attempt to dynamically access a field that does not exist.
 - uid: System.MissingMemberException
   parent: System
   isExternal: false
@@ -2988,36 +3144,42 @@ references:
   name: MissingMemberException
   fullName: System.MissingMemberException
   type: Class
+  summary: The exception that is thrown when there is an attempt to dynamically access a class member that does not exist.
 - uid: System.MissingMethodException
   isExternal: false
   href: System.MissingMethodException.yml
   name: MissingMethodException
   fullName: System.MissingMethodException
   type: Class
+  summary: The exception that is thrown when there is an attempt to dynamically access a method that does not exist.
 - uid: System.MulticastNotSupportedException
   isExternal: false
   href: System.MulticastNotSupportedException.yml
   name: MulticastNotSupportedException
   fullName: System.MulticastNotSupportedException
   type: Class
+  summary: The exception that is thrown when there is an attempt to combine two delegates based on the @'System.Delegate' type instead of the @'System.MulticastDelegate' type. This class cannot be inherited.
 - uid: System.NonSerializedAttribute
   isExternal: false
   href: System.NonSerializedAttribute.yml
   name: NonSerializedAttribute
   fullName: System.NonSerializedAttribute
   type: Class
+  summary: Indicates that a field of a serializable class should not be serialized. This class cannot be inherited.
 - uid: System.NotFiniteNumberException
   isExternal: false
   href: System.NotFiniteNumberException.yml
   name: NotFiniteNumberException
   fullName: System.NotFiniteNumberException
   type: Class
+  summary: The exception that is thrown when a floating-point value is positive infinity, negative infinity, or Not-a-Number (NaN).
 - uid: System.NotImplementedException
   isExternal: false
   href: System.NotImplementedException.yml
   name: NotImplementedException
   fullName: System.NotImplementedException
   type: Class
+  summary: The exception that is thrown when a requested method or operation is not implemented.
 - uid: System.NotSupportedException
   parent: System
   isExternal: false
@@ -3025,24 +3187,28 @@ references:
   name: NotSupportedException
   fullName: System.NotSupportedException
   type: Class
+  summary: The exception that is thrown when an invoked method is not supported, or when there is an attempt to read, seek, or write to a stream that does not support the invoked functionality.
 - uid: System.NullReferenceException
   isExternal: false
   href: System.NullReferenceException.yml
   name: NullReferenceException
   fullName: System.NullReferenceException
   type: Class
+  summary: The exception that is thrown when there is an attempt to dereference a null object reference.
 - uid: System.ObjectDisposedException
   isExternal: false
   href: System.ObjectDisposedException.yml
   name: ObjectDisposedException
   fullName: System.ObjectDisposedException
   type: Class
+  summary: The exception that is thrown when an operation is performed on a disposed object.
 - uid: System.ObsoleteAttribute
   isExternal: false
   href: System.ObsoleteAttribute.yml
   name: ObsoleteAttribute
   fullName: System.ObsoleteAttribute
   type: Class
+  summary: Marks the program elements that are no longer in use. This class cannot be inherited.
 - uid: System.OperatingSystem
   parent: System
   isExternal: false
@@ -3050,6 +3216,7 @@ references:
   name: OperatingSystem
   fullName: System.OperatingSystem
   type: Class
+  summary: Represents information about an operating system, such as the version and platform identifier. This class cannot be inherited.
 - uid: System.OperationCanceledException
   parent: System
   isExternal: false
@@ -3057,18 +3224,21 @@ references:
   name: OperationCanceledException
   fullName: System.OperationCanceledException
   type: Class
+  summary: The exception that is thrown in a thread upon cancellation of an operation that the thread was executing.
 - uid: System.OverflowException
   isExternal: false
   href: System.OverflowException.yml
   name: OverflowException
   fullName: System.OverflowException
   type: Class
+  summary: The exception that is thrown when an arithmetic, casting, or conversion operation in a checked context results in an overflow.
 - uid: System.ParamArrayAttribute
   isExternal: false
   href: System.ParamArrayAttribute.yml
   name: ParamArrayAttribute
   fullName: System.ParamArrayAttribute
   type: Class
+  summary: Indicates that a method will allow a variable number of arguments in its invocation. This class cannot be inherited.
 - uid: System.PlatformID
   parent: System
   isExternal: false
@@ -3076,12 +3246,14 @@ references:
   name: PlatformID
   fullName: System.PlatformID
   type: Enum
+  summary: Identifies the operating system, or platform, supported by an assembly.
 - uid: System.PlatformNotSupportedException
   isExternal: false
   href: System.PlatformNotSupportedException.yml
   name: PlatformNotSupportedException
   fullName: System.PlatformNotSupportedException
   type: Class
+  summary: The exception that is thrown when a feature does not run on a particular platform.
 - uid: System.Platforms
   parent: System
   isExternal: false
@@ -3097,7 +3269,7 @@ references:
   fullName: System.Progress<T>
   fullName.vb: System.Progress(Of T)
   type: Class
-  summary: Provides an IProgress{T} that invokes callbacks for each reported progress value.
+  summary: Provides an @'System.IProgress`1' that invokes callbacks for each reported progress value.
   spec.csharp:
   - uid: System.Progress`1
     name: Progress
@@ -3126,12 +3298,14 @@ references:
   name: Random
   fullName: System.Random
   type: Class
+  summary: Represents a pseudo-random number generator, which is a device that produces a sequence of numbers that meet certain statistical requirements for randomness.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.RankException
   isExternal: false
   href: System.RankException.yml
   name: RankException
   fullName: System.RankException
   type: Class
+  summary: The exception that is thrown when an array with the wrong number of dimensions is passed to a method.
 - uid: System.RuntimeArgumentHandle
   parent: System
   isExternal: false
@@ -3139,6 +3313,7 @@ references:
   name: RuntimeArgumentHandle
   fullName: System.RuntimeArgumentHandle
   type: Struct
+  summary: References a variable-length argument list.
 - uid: System.RuntimeTypeHandle
   parent: System
   isExternal: false
@@ -3146,6 +3321,7 @@ references:
   name: RuntimeTypeHandle
   fullName: System.RuntimeTypeHandle
   type: Struct
+  summary: Represents a type using an internal metadata token.
 - uid: System.RuntimeMethodHandle
   parent: System
   isExternal: false
@@ -3153,6 +3329,7 @@ references:
   name: RuntimeMethodHandle
   fullName: System.RuntimeMethodHandle
   type: Struct
+  summary: '@''System.RuntimeMethodHandle'' is a handle to the internal metadata representation of a method.'
 - uid: System.RuntimeFieldHandle
   parent: System
   isExternal: false
@@ -3160,6 +3337,7 @@ references:
   name: RuntimeFieldHandle
   fullName: System.RuntimeFieldHandle
   type: Struct
+  summary: Represents a field using an internal metadata token.
 - uid: System.ModuleHandle
   parent: System
   isExternal: false
@@ -3167,6 +3345,7 @@ references:
   name: ModuleHandle
   fullName: System.ModuleHandle
   type: Struct
+  summary: Represents a runtime handle for a module.
 - uid: System.SByte
   parent: System
   isExternal: false
@@ -3174,12 +3353,14 @@ references:
   name: SByte
   fullName: System.SByte
   type: Struct
+  summary: Represents an 8-bit signed integer.
 - uid: System.SerializableAttribute
   isExternal: false
   href: System.SerializableAttribute.yml
   name: SerializableAttribute
   fullName: System.SerializableAttribute
   type: Class
+  summary: Indicates that a class can be serialized. This class cannot be inherited.
 - uid: System.Single
   parent: System
   isExternal: false
@@ -3187,6 +3368,7 @@ references:
   name: Single
   fullName: System.Single
   type: Struct
+  summary: Represents a single-precision floating-point number.
 - uid: System.SupportedPlatformsAttribute
   isExternal: false
   href: System.SupportedPlatformsAttribute.yml
@@ -3199,12 +3381,14 @@ references:
   name: STAThreadAttribute
   fullName: System.STAThreadAttribute
   type: Class
+  summary: Indicates that the COM threading model for an application is single-threaded apartment (STA).
 - uid: System.MTAThreadAttribute
   isExternal: false
   href: System.MTAThreadAttribute.yml
   name: MTAThreadAttribute
   fullName: System.MTAThreadAttribute
   type: Class
+  summary: Indicates that the COM threading model for an application is multithreaded apartment (MTA).
 - uid: System.TimeoutException
   parent: System
   isExternal: false
@@ -3212,6 +3396,7 @@ references:
   name: TimeoutException
   fullName: System.TimeoutException
   type: Class
+  summary: The exception that is thrown when the time allotted for a process or operation has expired.
 - uid: System.TimeSpan
   parent: System
   isExternal: false
@@ -3219,6 +3404,7 @@ references:
   name: TimeSpan
   fullName: System.TimeSpan
   type: Struct
+  summary: Represents a time interval.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.TimeZoneInfo
   parent: System
   isExternal: false
@@ -3226,6 +3412,7 @@ references:
   name: TimeZoneInfo
   fullName: System.TimeZoneInfo
   type: Class
+  summary: Represents any time zone in the world.
 - uid: System.TimeZoneInfo.AdjustmentRule
   parent: System
   isExternal: false
@@ -3233,6 +3420,7 @@ references:
   name: TimeZoneInfo.AdjustmentRule
   fullName: System.TimeZoneInfo.AdjustmentRule
   type: Class
+  summary: Provides information about a time zone adjustment, such as the transition to and from daylight saving time.
 - uid: System.TimeZoneInfo.TransitionTime
   parent: System
   isExternal: false
@@ -3240,12 +3428,14 @@ references:
   name: TimeZoneInfo.TransitionTime
   fullName: System.TimeZoneInfo.TransitionTime
   type: Struct
+  summary: Provides information about a specific time change, such as the change from daylight saving time to standard time or vice versa, in a particular time zone.
 - uid: System.TimeZoneNotFoundException
   isExternal: false
   href: System.TimeZoneNotFoundException.yml
   name: TimeZoneNotFoundException
   fullName: System.TimeZoneNotFoundException
   type: Class
+  summary: The exception that is thrown when a time zone cannot be found.
 - uid: System.Type
   parent: System
   isExternal: false
@@ -3253,12 +3443,14 @@ references:
   name: Type
   fullName: System.Type
   type: Class
+  summary: 'Represents type declarations: class types, interface types, array types, value types, enumeration types, type parameters, generic type definitions, and open or closed constructed generic types.To browse the .NET Framework source code for this type, see the Reference Source.'
 - uid: System.TypeAccessException
   isExternal: false
   href: System.TypeAccessException.yml
   name: TypeAccessException
   fullName: System.TypeAccessException
   type: Class
+  summary: The exception that is thrown when a method attempts to use a type that it does not have access to.
 - uid: System.TypeCode
   parent: System
   isExternal: false
@@ -3266,6 +3458,7 @@ references:
   name: TypeCode
   fullName: System.TypeCode
   type: Enum
+  summary: Specifies the type of an object.
 - uid: System.TypedReference
   parent: System
   isExternal: false
@@ -3273,12 +3466,14 @@ references:
   name: TypedReference
   fullName: System.TypedReference
   type: Struct
+  summary: Describes objects that contain both a managed pointer to a location and a runtime representation of the type that may be stored at that location.
 - uid: System.TypeInitializationException
   isExternal: false
   href: System.TypeInitializationException.yml
   name: TypeInitializationException
   fullName: System.TypeInitializationException
   type: Class
+  summary: The exception that is thrown as a wrapper around the exception thrown by the class initializer. This class cannot be inherited.
 - uid: System.TypeLoadException
   parent: System
   isExternal: false
@@ -3286,6 +3481,7 @@ references:
   name: TypeLoadException
   fullName: System.TypeLoadException
   type: Class
+  summary: The exception that is thrown when type-loading failures occur.
 - uid: System.UInt16
   parent: System
   isExternal: false
@@ -3293,6 +3489,7 @@ references:
   name: UInt16
   fullName: System.UInt16
   type: Struct
+  summary: Represents a 16-bit unsigned integer.
 - uid: System.UInt32
   parent: System
   isExternal: false
@@ -3300,6 +3497,7 @@ references:
   name: UInt32
   fullName: System.UInt32
   type: Struct
+  summary: Represents a 32-bit unsigned integer.
 - uid: System.UInt64
   parent: System
   isExternal: false
@@ -3307,6 +3505,7 @@ references:
   name: UInt64
   fullName: System.UInt64
   type: Struct
+  summary: Represents a 64-bit unsigned integer.
 - uid: System.UIntPtr
   parent: System
   isExternal: false
@@ -3314,12 +3513,14 @@ references:
   name: UIntPtr
   fullName: System.UIntPtr
   type: Struct
+  summary: A platform-specific type that is used to represent a pointer or a handle.
 - uid: System.UnauthorizedAccessException
   isExternal: false
   href: System.UnauthorizedAccessException.yml
   name: UnauthorizedAccessException
   fullName: System.UnauthorizedAccessException
   type: Class
+  summary: The exception that is thrown when the operating system denies access because of an I/O error or a specific type of security error.
 - uid: System.UnhandledExceptionEventArgs
   parent: System
   isExternal: false
@@ -3327,6 +3528,7 @@ references:
   name: UnhandledExceptionEventArgs
   fullName: System.UnhandledExceptionEventArgs
   type: Class
+  summary: Provides data for the event that is raised when there is an exception that is not handled in any application domain.
 - uid: System.UnhandledExceptionEventHandler
   parent: System
   isExternal: false
@@ -3334,6 +3536,7 @@ references:
   name: UnhandledExceptionEventHandler
   fullName: System.UnhandledExceptionEventHandler
   type: Delegate
+  summary: Represents the method that will handle the event raised by an exception that is not handled by the application domain.
 - uid: System.ValueType
   parent: System
   isExternal: false
@@ -3341,6 +3544,7 @@ references:
   name: ValueType
   fullName: System.ValueType
   type: Class
+  summary: Provides the base class for value types.
 - uid: System.Version
   parent: System
   isExternal: false
@@ -3348,12 +3552,14 @@ references:
   name: Version
   fullName: System.Version
   type: Class
+  summary: Represents the version number of an assembly, operating system, or the common language runtime. This class cannot be inherited.
 - uid: System.Void
   isExternal: false
   href: System.Void.yml
   name: Void
   fullName: System.Void
   type: Struct
+  summary: Specifies a return value type for a method that does not return a value.
 - uid: System.WeakReference
   parent: System
   isExternal: false
@@ -3361,6 +3567,7 @@ references:
   name: WeakReference
   fullName: System.WeakReference
   type: Class
+  summary: Represents a weak reference, which references an object while still allowing that object to be reclaimed by garbage collection.
 - uid: System.WeakReference`1
   isExternal: false
   href: System.WeakReference`1.yml
@@ -3369,6 +3576,7 @@ references:
   fullName: System.WeakReference<T>
   fullName.vb: System.WeakReference(Of T)
   type: Class
+  summary: Represents a typed weak reference, which references an object while still allowing that object to be reclaimed by garbage collection.
   spec.csharp:
   - uid: System.WeakReference`1
     name: WeakReference
@@ -3397,6 +3605,7 @@ references:
   name: ThreadStaticAttribute
   fullName: System.ThreadStaticAttribute
   type: Class
+  summary: Indicates that the value of a static field is unique for each thread.
 - uid: System.Nullable`1
   parent: System
   isExternal: false
@@ -3406,6 +3615,7 @@ references:
   fullName: System.Nullable<T>
   fullName.vb: System.Nullable(Of T)
   type: Struct
+  summary: Represents a value type that can be assigned null.
   spec.csharp:
   - uid: System.Nullable`1
     name: Nullable
@@ -3434,6 +3644,7 @@ references:
   name: Nullable
   fullName: System.Nullable
   type: Class
+  summary: Supports a value type that can be assigned null. This class cannot be inherited.
 - uid: System.Action`9
   isExternal: false
   href: System.Action`9.yml
@@ -3442,6 +3653,7 @@ references:
   fullName: System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9>
   fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)
   type: Delegate
+  summary: Encapsulates a method that has nine parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`9
     name: Action
@@ -3536,6 +3748,7 @@ references:
   fullName: System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
   fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
   type: Delegate
+  summary: Encapsulates a method that has 10 parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`10
     name: Action
@@ -3638,6 +3851,7 @@ references:
   fullName: System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>
   fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
   type: Delegate
+  summary: Encapsulates a method that has 11 parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`11
     name: Action
@@ -3748,6 +3962,7 @@ references:
   fullName: System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>
   fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
   type: Delegate
+  summary: Encapsulates a method that has 12 parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`12
     name: Action
@@ -3866,6 +4081,7 @@ references:
   fullName: System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>
   fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
   type: Delegate
+  summary: Encapsulates a method that has 13 parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`13
     name: Action
@@ -3992,6 +4208,7 @@ references:
   fullName: System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>
   fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
   type: Delegate
+  summary: Encapsulates a method that has 14 parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`14
     name: Action
@@ -4126,6 +4343,7 @@ references:
   fullName: System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>
   fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15)
   type: Delegate
+  summary: Encapsulates a method that has 15 parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`15
     name: Action
@@ -4268,6 +4486,7 @@ references:
   fullName: System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>
   fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16)
   type: Delegate
+  summary: Encapsulates a method that has 16 parameters and does not return a value.
   spec.csharp:
   - uid: System.Action`16
     name: Action
@@ -4418,6 +4637,7 @@ references:
   fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult)
   type: Delegate
+  summary: Encapsulates a method that has nine parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`10
     name: Func
@@ -4520,6 +4740,7 @@ references:
   fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult)
   type: Delegate
+  summary: Encapsulates a method that has 10 parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`11
     name: Func
@@ -4630,6 +4851,7 @@ references:
   fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult)
   type: Delegate
+  summary: Encapsulates a method that has 11 parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`12
     name: Func
@@ -4748,6 +4970,7 @@ references:
   fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult)
   type: Delegate
+  summary: Encapsulates a method that has 12 parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`13
     name: Func
@@ -4874,6 +5097,7 @@ references:
   fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult)
   type: Delegate
+  summary: Encapsulates a method that has 13 parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`14
     name: Func
@@ -5008,6 +5232,7 @@ references:
   fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult)
   type: Delegate
+  summary: Encapsulates a method that has 14 parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`15
     name: Func
@@ -5150,6 +5375,7 @@ references:
   fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult)
   type: Delegate
+  summary: Encapsulates a method that has 15 parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`16
     name: Func
@@ -5300,6 +5526,7 @@ references:
   fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult)
   type: Delegate
+  summary: Encapsulates a method that has 16 parameters and returns a value of the type specified by the *TResult* parameter.
   spec.csharp:
   - uid: System.Func`17
     name: Func
@@ -5458,6 +5685,7 @@ references:
   fullName: System.Lazy<T, TMetadata>
   fullName.vb: System.Lazy(Of T, TMetadata)
   type: Class
+  summary: Provides a lazy indirect reference to an object and its associated metadata for use by the Managed Extensibility Framework.
   spec.csharp:
   - uid: System.Lazy`2
     name: Lazy

@@ -905,3 +905,10 @@ references:
   name: SHA384
   fullName: System.Security.Cryptography.SHA384
   type: Class
+- uid: System.Reflection.TargetInvocationException
+  isExternal: false
+  href: System.Reflection.TargetInvocationException.yml
+  name: TargetInvocationException
+  fullName: System.Reflection.TargetInvocationException
+  type: Class
+  summary: The exception that is thrown by methods invoked through reflection. This class cannot be inherited.

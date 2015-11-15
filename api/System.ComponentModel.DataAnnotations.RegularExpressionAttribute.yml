@@ -2595,3 +2595,17 @@ references:
     isExternal: true
   - name: )
     fullName: )
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.ComponentModel.DataAnnotations.ValidationException
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.ValidationException.yml
+  name: ValidationException
+  fullName: System.ComponentModel.DataAnnotations.ValidationException
+  type: Class
+  summary: Represents the exception that occurs during validation of a data field when the @'System.ComponentModel.DataAnnotations.ValidationAttribute' class is used.

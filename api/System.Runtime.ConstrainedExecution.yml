@@ -29,6 +29,7 @@ references:
   name: CriticalFinalizerObject
   fullName: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
   type: Class
+  summary: Ensures that all finalization code in derived classes is marked as critical.
 - uid: System.Runtime.ConstrainedExecution.Consistency
   parent: System.Runtime.ConstrainedExecution
   isExternal: false
@@ -36,6 +37,7 @@ references:
   name: Consistency
   fullName: System.Runtime.ConstrainedExecution.Consistency
   type: Enum
+  summary: Specifies a reliability contract.
 - uid: System.Runtime.ConstrainedExecution.Cer
   parent: System.Runtime.ConstrainedExecution
   isExternal: false
@@ -43,18 +45,21 @@ references:
   name: Cer
   fullName: System.Runtime.ConstrainedExecution.Cer
   type: Enum
+  summary: Specifies a method's behavior when called within a constrained execution region.
 - uid: System.Runtime.ConstrainedExecution.ReliabilityContractAttribute
   isExternal: false
   href: System.Runtime.ConstrainedExecution.ReliabilityContractAttribute.yml
   name: ReliabilityContractAttribute
   fullName: System.Runtime.ConstrainedExecution.ReliabilityContractAttribute
   type: Class
+  summary: Defines a contract for reliability between the author of some code, and the developers who have a dependency on that code.
 - uid: System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute
   isExternal: false
   href: System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute.yml
   name: PrePrepareMethodAttribute
   fullName: System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute
   type: Class
+  summary: Instructs the native image generation service to prepare a method for inclusion in a constrained execution region (CER).
 - uid: System.Runtime.ConstrainedExecution
   isExternal: false
   name: System.Runtime.ConstrainedExecution

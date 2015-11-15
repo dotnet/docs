@@ -28,6 +28,7 @@ references:
   name: ServiceController
   fullName: System.ServiceProcess.ServiceController
   type: Class
+  summary: Represents a Windows service and allows you to connect to a running or stopped service, manipulate it, or get information about it.
 - uid: System.ServiceProcess.ServiceControllerStatus
   parent: System.ServiceProcess
   isExternal: false
@@ -35,6 +36,7 @@ references:
   name: ServiceControllerStatus
   fullName: System.ServiceProcess.ServiceControllerStatus
   type: Enum
+  summary: Indicates the current state of the service.
 - uid: System.ServiceProcess.ServiceStartMode
   parent: System.ServiceProcess
   isExternal: false
@@ -42,6 +44,7 @@ references:
   name: ServiceStartMode
   fullName: System.ServiceProcess.ServiceStartMode
   type: Enum
+  summary: Indicates the start mode of the service.
 - uid: System.ServiceProcess.ServiceType
   parent: System.ServiceProcess
   isExternal: false
@@ -49,12 +52,14 @@ references:
   name: ServiceType
   fullName: System.ServiceProcess.ServiceType
   type: Enum
+  summary: Represents the type of the service.
 - uid: System.ServiceProcess.TimeoutException
   isExternal: false
   href: System.ServiceProcess.TimeoutException.yml
   name: TimeoutException
   fullName: System.ServiceProcess.TimeoutException
   type: Class
+  summary: The exception that is thrown when a specified timeout has expired.
 - uid: System.ServiceProcess
   isExternal: false
   name: System.ServiceProcess

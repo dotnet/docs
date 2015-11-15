@@ -2039,3 +2039,82 @@ references:
   name: ModuleHandle
   fullName: System.ModuleHandle
   type: Struct
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
+  summary: The exception that is thrown when the value of an argument is outside the allowable range of values as defined by the invoked method.
+- uid: System.Reflection.TargetInvocationException
+  isExternal: false
+  href: System.Reflection.TargetInvocationException.yml
+  name: TargetInvocationException
+  fullName: System.Reflection.TargetInvocationException
+  type: Class
+  summary: The exception that is thrown by methods invoked through reflection. This class cannot be inherited.
+- uid: System.IO.FileNotFoundException
+  isExternal: false
+  href: System.IO.FileNotFoundException.yml
+  name: FileNotFoundException
+  fullName: System.IO.FileNotFoundException
+  type: Class
+  summary: The exception that is thrown when an attempt to access a file that does not exist on disk fails.
+- uid: System.IO.FileLoadException
+  isExternal: false
+  href: System.IO.FileLoadException.yml
+  name: FileLoadException
+  fullName: System.IO.FileLoadException
+  type: Class
+  summary: The exception that is thrown when a managed assembly is found but cannot be loaded.
+- uid: System.BadImageFormatException
+  isExternal: false
+  href: System.BadImageFormatException.yml
+  name: BadImageFormatException
+  fullName: System.BadImageFormatException
+  type: Class
+  summary: The exception that is thrown when the file image of a dynamic link library (DLL) or an executable program is invalid.
+- uid: System.TypeLoadException
+  parent: System
+  isExternal: false
+  href: System.TypeLoadException.yml
+  name: TypeLoadException
+  fullName: System.TypeLoadException
+  type: Class
+  summary: The exception that is thrown when type-loading failures occur.
+- uid: System.Security.SecurityException
+  isExternal: false
+  href: System.Security.SecurityException.yml
+  name: SecurityException
+  fullName: System.Security.SecurityException
+  type: Class
+  summary: The exception that is thrown when a security error is detected.
+- uid: System.Reflection.ReflectionTypeLoadException
+  isExternal: false
+  href: System.Reflection.ReflectionTypeLoadException.yml
+  name: ReflectionTypeLoadException
+  fullName: System.Reflection.ReflectionTypeLoadException
+  type: Class
+  summary: The exception that is thrown by the @'System.Reflection.Module.GetTypes' method if any of the classes in a module cannot be loaded. This class cannot be inherited.
+- uid: System.Reflection.AmbiguousMatchException
+  isExternal: false
+  href: System.Reflection.AmbiguousMatchException.yml
+  name: AmbiguousMatchException
+  fullName: System.Reflection.AmbiguousMatchException
+  type: Class
+  summary: The exception that is thrown when binding to a member results in more than one member matching the binding criteria. This class cannot be inherited.

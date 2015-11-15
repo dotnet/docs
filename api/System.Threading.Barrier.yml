@@ -931,3 +931,10 @@ references:
   fullName: System.Boolean
   type: Struct
 - uid: System.Threading.Timeout.Infinite
+- uid: System.Threading.BarrierPostPhaseException
+  isExternal: false
+  href: System.Threading.BarrierPostPhaseException.yml
+  name: BarrierPostPhaseException
+  fullName: System.Threading.BarrierPostPhaseException
+  type: Class
+  summary: The exception that is thrown when the post-phase action of a @'System.Threading.Barrier' fails

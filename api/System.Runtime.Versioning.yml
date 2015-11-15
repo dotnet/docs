@@ -33,24 +33,28 @@ references:
   name: ComponentGuaranteesOptions
   fullName: System.Runtime.Versioning.ComponentGuaranteesOptions
   type: Enum
+  summary: Describes the compatibility guarantee of a component, type, or type member that may span multiple versions.
 - uid: System.Runtime.Versioning.ComponentGuaranteesAttribute
   isExternal: false
   href: System.Runtime.Versioning.ComponentGuaranteesAttribute.yml
   name: ComponentGuaranteesAttribute
   fullName: System.Runtime.Versioning.ComponentGuaranteesAttribute
   type: Class
+  summary: Defines the compatibility guarantee of a component, type, or type member that may span multiple versions.
 - uid: System.Runtime.Versioning.ResourceConsumptionAttribute
   isExternal: false
   href: System.Runtime.Versioning.ResourceConsumptionAttribute.yml
   name: ResourceConsumptionAttribute
   fullName: System.Runtime.Versioning.ResourceConsumptionAttribute
   type: Class
+  summary: Specifies the resource consumed by the member of a class. This class cannot be inherited.
 - uid: System.Runtime.Versioning.ResourceExposureAttribute
   isExternal: false
   href: System.Runtime.Versioning.ResourceExposureAttribute.yml
   name: ResourceExposureAttribute
   fullName: System.Runtime.Versioning.ResourceExposureAttribute
   type: Class
+  summary: Specifies the resource exposure for a member of a class. This class cannot be inherited.
 - uid: System.Runtime.Versioning.ResourceScope
   parent: System.Runtime.Versioning
   isExternal: false
@@ -58,18 +62,21 @@ references:
   name: ResourceScope
   fullName: System.Runtime.Versioning.ResourceScope
   type: Enum
+  summary: Identifies the scope of a sharable resource.
 - uid: System.Runtime.Versioning.VersioningHelper
   isExternal: false
   href: System.Runtime.Versioning.VersioningHelper.yml
   name: VersioningHelper
   fullName: System.Runtime.Versioning.VersioningHelper
   type: Class
+  summary: Provides methods to aid developers in writing version-safe code. This class cannot be inherited.
 - uid: System.Runtime.Versioning.TargetFrameworkAttribute
   isExternal: false
   href: System.Runtime.Versioning.TargetFrameworkAttribute.yml
   name: TargetFrameworkAttribute
   fullName: System.Runtime.Versioning.TargetFrameworkAttribute
   type: Class
+  summary: Identifies the version of the .NET Framework that a particular assembly was compiled against.
 - uid: System.Runtime.Versioning.CompatibilitySwitch
   isExternal: false
   href: System.Runtime.Versioning.CompatibilitySwitch.yml
@@ -83,6 +90,7 @@ references:
   name: FrameworkName
   fullName: System.Runtime.Versioning.FrameworkName
   type: Class
+  summary: Represents the name of a version of the .NET Framework.
 - uid: System.Runtime.Versioning
   isExternal: false
   name: System.Runtime.Versioning

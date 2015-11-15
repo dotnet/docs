@@ -721,3 +721,17 @@ references:
     isExternal: true
   - name: )
     fullName: )
+- uid: System.ObjectDisposedException
+  isExternal: false
+  href: System.ObjectDisposedException.yml
+  name: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+  type: Class
+  summary: The exception that is thrown when an operation is performed on a disposed object.
+- uid: System.Net.ProtocolViolationException
+  isExternal: false
+  href: System.Net.ProtocolViolationException.yml
+  name: ProtocolViolationException
+  fullName: System.Net.ProtocolViolationException
+  type: Class
+  summary: The exception that is thrown when an error is made while using a network protocol.

@@ -2269,3 +2269,19 @@ references:
   name: String
   fullName: System.String
   type: Class
+- uid: System.Exception
+  parent: System
+  isExternal: false
+  href: System.Exception.yml
+  name: Exception
+  fullName: System.Exception
+  type: Class
+  summary: Represents errors that occur during application execution.To browse the .NET Framework source code for this type, see the Reference Source.
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
+  summary: The exception that is thrown when a method call is invalid for the object's current state.

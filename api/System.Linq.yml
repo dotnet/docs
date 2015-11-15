@@ -47,6 +47,7 @@ references:
   name: EnumerableExecutor
   fullName: System.Linq.EnumerableExecutor
   type: Class
+  summary: Represents an expression tree and provides functionality to execute the expression tree after rewriting it.
 - uid: System.Linq.EnumerableExecutor`1
   isExternal: false
   href: System.Linq.EnumerableExecutor`1.yml
@@ -55,6 +56,7 @@ references:
   fullName: System.Linq.EnumerableExecutor<T>
   fullName.vb: System.Linq.EnumerableExecutor(Of T)
   type: Class
+  summary: Represents an expression tree and provides functionality to execute the expression tree after rewriting it.
   spec.csharp:
   - uid: System.Linq.EnumerableExecutor`1
     name: EnumerableExecutor
@@ -84,6 +86,7 @@ references:
   name: EnumerableQuery
   fullName: System.Linq.EnumerableQuery
   type: Class
+  summary: Represents an @'System.Collections.IEnumerable' as an @'System.Linq.EnumerableQuery' data source.
 - uid: System.Linq.EnumerableQuery`1
   isExternal: false
   href: System.Linq.EnumerableQuery`1.yml
@@ -92,6 +95,7 @@ references:
   fullName: System.Linq.EnumerableQuery<T>
   fullName.vb: System.Linq.EnumerableQuery(Of T)
   type: Class
+  summary: Represents an @'System.Collections.Generic.IEnumerable`1' collection as an @'System.Linq.IQueryable`1' data source.
   spec.csharp:
   - uid: System.Linq.EnumerableQuery`1
     name: EnumerableQuery
@@ -120,6 +124,7 @@ references:
   name: Queryable
   fullName: System.Linq.Queryable
   type: Class
+  summary: Provides a set of static (Shared in Visual Basic) methods for querying data structures that implement @'System.Linq.IQueryable`1'.
 - uid: System.Linq.OrderedParallelQuery`1
   parent: System.Linq
   isExternal: false
@@ -198,12 +203,7 @@ references:
   name: ParallelEnumerable
   fullName: System.Linq.ParallelEnumerable
   type: Class
-  summary: >-
-    Provides a set of methods for querying objects that implement
-
-    ParallelQuery{TSource}.  This is the parallel equivalent of
-
-    <see cref="!:System.Linq.Enumerable" />.
+  summary: Provides a set of methods for querying objects that implement ParallelQuery{TSource}. This is the parallel equivalent of @'System.Linq.Enumerable'.
 - uid: System.Linq.ParallelExecutionMode
   parent: System.Linq
   isExternal: false
@@ -211,10 +211,7 @@ references:
   name: ParallelExecutionMode
   fullName: System.Linq.ParallelExecutionMode
   type: Enum
-  summary: >-
-    The query execution mode is a hint that specifies how the system should handle
-
-    performance trade-offs when parallelizing queries.
+  summary: The query execution mode is a hint that specifies how the system should handle performance trade-offs when parallelizing queries.
 - uid: System.Linq.ParallelMergeOptions
   parent: System.Linq
   isExternal: false
@@ -222,10 +219,7 @@ references:
   name: ParallelMergeOptions
   fullName: System.Linq.ParallelMergeOptions
   type: Enum
-  summary: >-
-    Specifies the preferred type of output merge to use in a query. This is a hint only, and may not be
-
-    respected by the system when parallelizing all queries.
+  summary: Specifies the preferred type of output merge to use in a query. In other words, it indicates how PLINQ should merge the results from the various partitions back into a single result sequence. This is a hint only, and may not be respected by the system when parallelizing all queries.
 - uid: System.Linq.ImmutableArrayExtensions
   isExternal: false
   href: System.Linq.ImmutableArrayExtensions.yml
@@ -239,6 +233,7 @@ references:
   name: Enumerable
   fullName: System.Linq.Enumerable
   type: Class
+  summary: Provides a set of static (Shared in Visual Basic) methods for querying objects that implement @'System.Collections.Generic.IEnumerable`1'.
 - uid: System.Linq.IOrderedEnumerable`1
   parent: System.Linq
   isExternal: false
@@ -248,6 +243,7 @@ references:
   fullName: System.Linq.IOrderedEnumerable<TElement>
   fullName.vb: System.Linq.IOrderedEnumerable(Of TElement)
   type: Interface
+  summary: Represents a sorted sequence.
   spec.csharp:
   - uid: System.Linq.IOrderedEnumerable`1
     name: IOrderedEnumerable
@@ -279,6 +275,7 @@ references:
   fullName: System.Linq.IGrouping<TKey, TElement>
   fullName.vb: System.Linq.IGrouping(Of TKey, TElement)
   type: Interface
+  summary: Represents a collection of objects that have a common key.
   spec.csharp:
   - uid: System.Linq.IGrouping`2
     name: IGrouping
@@ -318,6 +315,7 @@ references:
   fullName: System.Linq.ILookup<TKey, TElement>
   fullName.vb: System.Linq.ILookup(Of TKey, TElement)
   type: Interface
+  summary: Defines an indexer, size property, and Boolean search method for data structures that map keys to @'System.Collections.Generic.IEnumerable`1' sequences of values.
   spec.csharp:
   - uid: System.Linq.ILookup`2
     name: ILookup
@@ -356,6 +354,7 @@ references:
   fullName: System.Linq.Lookup<TKey, TElement>
   fullName.vb: System.Linq.Lookup(Of TKey, TElement)
   type: Class
+  summary: Represents a collection of keys each mapped to one or more values.
   spec.csharp:
   - uid: System.Linq.Lookup`2
     name: Lookup
@@ -431,6 +430,7 @@ references:
   name: IQueryable
   fullName: System.Linq.IQueryable
   type: Interface
+  summary: Provides functionality to evaluate queries against a specific data source wherein the type of the data is not specified.
 - uid: System.Linq.IQueryable`1
   parent: System.Linq
   isExternal: false
@@ -440,6 +440,7 @@ references:
   fullName: System.Linq.IQueryable<T>
   fullName.vb: System.Linq.IQueryable(Of T)
   type: Interface
+  summary: Provides functionality to evaluate queries against a specific data source wherein the type of the data is known.
   spec.csharp:
   - uid: System.Linq.IQueryable`1
     name: IQueryable
@@ -469,12 +470,14 @@ references:
   name: IQueryProvider
   fullName: System.Linq.IQueryProvider
   type: Interface
+  summary: Defines methods to create and execute queries that are described by an @'System.Linq.IQueryable' object.
 - uid: System.Linq.IOrderedQueryable
   isExternal: false
   href: System.Linq.IOrderedQueryable.yml
   name: IOrderedQueryable
   fullName: System.Linq.IOrderedQueryable
   type: Interface
+  summary: Represents the result of a sorting operation.
 - uid: System.Linq.IOrderedQueryable`1
   isExternal: false
   href: System.Linq.IOrderedQueryable`1.yml
@@ -483,6 +486,7 @@ references:
   fullName: System.Linq.IOrderedQueryable<T>
   fullName.vb: System.Linq.IOrderedQueryable(Of T)
   type: Interface
+  summary: Represents the result of a sorting operation.
   spec.csharp:
   - uid: System.Linq.IOrderedQueryable`1
     name: IOrderedQueryable

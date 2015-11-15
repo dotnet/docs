@@ -44,7 +44,7 @@ references:
   name: Extensions
   fullName: System.Xml.XPath.Extensions
   type: Class
-  summary: Extension methods
+  summary: This class contains the LINQ to XML extension methods that enable you to evaluate XPath expressions.
 - uid: System.Xml.XPath.IXPathNavigable
   parent: System.Xml.XPath
   isExternal: false
@@ -52,24 +52,21 @@ references:
   name: IXPathNavigable
   fullName: System.Xml.XPath.IXPathNavigable
   type: Interface
+  summary: Provides an accessor to the @'System.Xml.XPath.XPathNavigator' class.
 - uid: System.Xml.XPath.XPathDocument
   isExternal: false
   href: System.Xml.XPath.XPathDocument.yml
   name: XPathDocument
   fullName: System.Xml.XPath.XPathDocument
   type: Class
-  summary: >-
-    XDocument follows the XPath/XQuery data model.  All nodes in the tree reference the document,
-
-    and the document references the root node of the tree.  All namespaces are stored out-of-line,
-
-    in an Element --&gt; In-Scope-Namespaces map.
+  summary: Provides a fast, read-only, in-memory representation of an XML document by using the XPath data model.
 - uid: System.Xml.XPath.XPathException
   isExternal: false
   href: System.Xml.XPath.XPathException.yml
   name: XPathException
   fullName: System.Xml.XPath.XPathException
   type: Class
+  summary: Provides the exception thrown when an error occurs while processing an XPath expression.
 - uid: System.Xml.XPath.XmlSortOrder
   parent: System.Xml.XPath
   isExternal: false
@@ -77,6 +74,7 @@ references:
   name: XmlSortOrder
   fullName: System.Xml.XPath.XmlSortOrder
   type: Enum
+  summary: Specifies the sort order.
 - uid: System.Xml.XPath.XmlCaseOrder
   parent: System.Xml.XPath
   isExternal: false
@@ -84,6 +82,7 @@ references:
   name: XmlCaseOrder
   fullName: System.Xml.XPath.XmlCaseOrder
   type: Enum
+  summary: Specifies the sort order for uppercase and lowercase letters.
 - uid: System.Xml.XPath.XmlDataType
   parent: System.Xml.XPath
   isExternal: false
@@ -91,6 +90,7 @@ references:
   name: XmlDataType
   fullName: System.Xml.XPath.XmlDataType
   type: Enum
+  summary: Specifies the data type used to determine sort order.
 - uid: System.Xml.XPath.XPathResultType
   parent: System.Xml.XPath
   isExternal: false
@@ -98,6 +98,7 @@ references:
   name: XPathResultType
   fullName: System.Xml.XPath.XPathResultType
   type: Enum
+  summary: Specifies the return type of the XPath expression.
 - uid: System.Xml.XPath.XPathExpression
   parent: System.Xml.XPath
   isExternal: false
@@ -105,6 +106,7 @@ references:
   name: XPathExpression
   fullName: System.Xml.XPath.XPathExpression
   type: Class
+  summary: Provides a typed class that represents a compiled XPath expression.
 - uid: System.Xml.XPath.XPathItem
   parent: System.Xml.XPath
   isExternal: false
@@ -112,7 +114,7 @@ references:
   name: XPathItem
   fullName: System.Xml.XPath.XPathItem
   type: Class
-  summary: Base class for XPathNavigator and XmlAtomicValue.
+  summary: Represents an item in the XQuery 1.0 and XPath 2.0 Data Model.
 - uid: System.Xml.XPath.XPathNamespaceScope
   parent: System.Xml.XPath
   isExternal: false
@@ -120,6 +122,7 @@ references:
   name: XPathNamespaceScope
   fullName: System.Xml.XPath.XPathNamespaceScope
   type: Enum
+  summary: Defines the namespace scope.
 - uid: System.Xml.XPath.XPathNavigator
   parent: System.Xml.XPath
   isExternal: false
@@ -127,6 +130,7 @@ references:
   name: XPathNavigator
   fullName: System.Xml.XPath.XPathNavigator
   type: Class
+  summary: Provides a cursor model for navigating and editing XML data.
 - uid: System.Xml.XPath.XPathNodeIterator
   parent: System.Xml.XPath
   isExternal: false
@@ -134,6 +138,7 @@ references:
   name: XPathNodeIterator
   fullName: System.Xml.XPath.XPathNodeIterator
   type: Class
+  summary: Provides an iterator over a selected set of nodes.
 - uid: System.Xml.XPath.XPathNodeType
   parent: System.Xml.XPath
   isExternal: false
@@ -141,6 +146,7 @@ references:
   name: XPathNodeType
   fullName: System.Xml.XPath.XPathNodeType
   type: Enum
+  summary: Defines the XPath node types that can be returned from the @'System.Xml.XPath.XPathNavigator' class.
 - uid: System.Xml.XPath
   isExternal: false
   name: System.Xml.XPath

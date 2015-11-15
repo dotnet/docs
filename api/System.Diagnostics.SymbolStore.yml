@@ -38,12 +38,14 @@ references:
   name: ISymbolBinder
   fullName: System.Diagnostics.SymbolStore.ISymbolBinder
   type: Interface
+  summary: Represents a symbol binder for managed code.
 - uid: System.Diagnostics.SymbolStore.ISymbolBinder1
   isExternal: false
   href: System.Diagnostics.SymbolStore.ISymbolBinder1.yml
   name: ISymbolBinder1
   fullName: System.Diagnostics.SymbolStore.ISymbolBinder1
   type: Interface
+  summary: Represents a symbol binder for managed code.
 - uid: System.Diagnostics.SymbolStore.ISymbolDocument
   parent: System.Diagnostics.SymbolStore
   isExternal: false
@@ -51,6 +53,7 @@ references:
   name: ISymbolDocument
   fullName: System.Diagnostics.SymbolStore.ISymbolDocument
   type: Interface
+  summary: Represents a document referenced by a symbol store.
 - uid: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
   parent: System.Diagnostics.SymbolStore
   isExternal: false
@@ -58,6 +61,7 @@ references:
   name: ISymbolDocumentWriter
   fullName: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
   type: Interface
+  summary: Represents a document referenced by a symbol store.
 - uid: System.Diagnostics.SymbolStore.ISymbolMethod
   parent: System.Diagnostics.SymbolStore
   isExternal: false
@@ -65,6 +69,7 @@ references:
   name: ISymbolMethod
   fullName: System.Diagnostics.SymbolStore.ISymbolMethod
   type: Interface
+  summary: Represents a method within a symbol store.
 - uid: System.Diagnostics.SymbolStore.ISymbolNamespace
   parent: System.Diagnostics.SymbolStore
   isExternal: false
@@ -72,6 +77,7 @@ references:
   name: ISymbolNamespace
   fullName: System.Diagnostics.SymbolStore.ISymbolNamespace
   type: Interface
+  summary: Represents a namespace within a symbol store.
 - uid: System.Diagnostics.SymbolStore.ISymbolReader
   parent: System.Diagnostics.SymbolStore
   isExternal: false
@@ -79,6 +85,7 @@ references:
   name: ISymbolReader
   fullName: System.Diagnostics.SymbolStore.ISymbolReader
   type: Interface
+  summary: Represents a symbol reader for managed code.
 - uid: System.Diagnostics.SymbolStore.ISymbolScope
   parent: System.Diagnostics.SymbolStore
   isExternal: false
@@ -86,12 +93,14 @@ references:
   name: ISymbolScope
   fullName: System.Diagnostics.SymbolStore.ISymbolScope
   type: Interface
+  summary: Represents a lexical scope within @'System.Diagnostics.SymbolStore.ISymbolMethod', providing access to the start and end offsets of the scope, as well as its child and parent scopes.
 - uid: System.Diagnostics.SymbolStore.ISymbolVariable
   isExternal: false
   href: System.Diagnostics.SymbolStore.ISymbolVariable.yml
   name: ISymbolVariable
   fullName: System.Diagnostics.SymbolStore.ISymbolVariable
   type: Interface
+  summary: Represents a variable within a symbol store.
 - uid: System.Diagnostics.SymbolStore.ISymbolWriter
   parent: System.Diagnostics.SymbolStore
   isExternal: false
@@ -99,6 +108,7 @@ references:
   name: ISymbolWriter
   fullName: System.Diagnostics.SymbolStore.ISymbolWriter
   type: Interface
+  summary: Represents a symbol writer for managed code.
 - uid: System.Diagnostics.SymbolStore.SymAddressKind
   parent: System.Diagnostics.SymbolStore
   isExternal: false
@@ -106,24 +116,28 @@ references:
   name: SymAddressKind
   fullName: System.Diagnostics.SymbolStore.SymAddressKind
   type: Enum
+  summary: Specifies address types for local variables, parameters, and fields in the methods @'System.Diagnostics.SymbolStore.ISymbolWriter.DefineLocalVariable(System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)', @'System.Diagnostics.SymbolStore.ISymbolWriter.DefineParameter(System.String,System.Reflection.ParameterAttributes,System.Int32,System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)', and @'System.Diagnostics.SymbolStore.ISymbolWriter.DefineField(System.Diagnostics.SymbolStore.SymbolToken,System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)' of the @'System.Diagnostics.SymbolStore.ISymbolWriter' interface.
 - uid: System.Diagnostics.SymbolStore.SymDocumentType
   isExternal: false
   href: System.Diagnostics.SymbolStore.SymDocumentType.yml
   name: SymDocumentType
   fullName: System.Diagnostics.SymbolStore.SymDocumentType
   type: Class
+  summary: Holds the public GUIDs for document types to be used with the symbol store.
 - uid: System.Diagnostics.SymbolStore.SymLanguageType
   isExternal: false
   href: System.Diagnostics.SymbolStore.SymLanguageType.yml
   name: SymLanguageType
   fullName: System.Diagnostics.SymbolStore.SymLanguageType
   type: Class
+  summary: Holds the public GUIDs for language types to be used with the symbol store.
 - uid: System.Diagnostics.SymbolStore.SymLanguageVendor
   isExternal: false
   href: System.Diagnostics.SymbolStore.SymLanguageVendor.yml
   name: SymLanguageVendor
   fullName: System.Diagnostics.SymbolStore.SymLanguageVendor
   type: Class
+  summary: Holds the public GUIDs for language vendors to be used with the symbol store.
 - uid: System.Diagnostics.SymbolStore.SymbolToken
   parent: System.Diagnostics.SymbolStore
   isExternal: false
@@ -131,6 +145,7 @@ references:
   name: SymbolToken
   fullName: System.Diagnostics.SymbolStore.SymbolToken
   type: Struct
+  summary: The @'System.Diagnostics.SymbolStore.SymbolToken' structure is an object representation of a token that represents symbolic information.
 - uid: System.Diagnostics.SymbolStore
   isExternal: false
   name: System.Diagnostics.SymbolStore

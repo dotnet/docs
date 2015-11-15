@@ -1611,3 +1611,61 @@ references:
     fullName: (
   - name: )
     fullName: )
+- uid: System.OutOfMemoryException
+  parent: System
+  isExternal: false
+  href: System.OutOfMemoryException.yml
+  name: OutOfMemoryException
+  fullName: System.OutOfMemoryException
+  type: Class
+  summary: The exception that is thrown when there is not enough memory to continue the execution of a program.
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.InvalidTimeZoneException
+  isExternal: false
+  href: System.InvalidTimeZoneException.yml
+  name: InvalidTimeZoneException
+  fullName: System.InvalidTimeZoneException
+  type: Class
+  summary: The exception that is thrown when time zone information is invalid.
+- uid: System.Security.SecurityException
+  isExternal: false
+  href: System.Security.SecurityException.yml
+  name: SecurityException
+  fullName: System.Security.SecurityException
+  type: Class
+  summary: The exception that is thrown when a security error is detected.
+- uid: System.TimeZoneNotFoundException
+  isExternal: false
+  href: System.TimeZoneNotFoundException.yml
+  name: TimeZoneNotFoundException
+  fullName: System.TimeZoneNotFoundException
+  type: Class
+  summary: The exception that is thrown when a time zone cannot be found.
+- uid: System.Runtime.Serialization.SerializationException
+  isExternal: false
+  href: System.Runtime.Serialization.SerializationException.yml
+  name: SerializationException
+  fullName: System.Runtime.Serialization.SerializationException
+  type: Class
+  summary: The exception thrown when an error occurs during serialization or deserialization.
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
+  summary: The exception that is thrown when the value of an argument is outside the allowable range of values as defined by the invoked method.

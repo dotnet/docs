@@ -67,6 +67,7 @@ references:
   fullName: System.Collections.Generic.Comparer<T>
   fullName.vb: System.Collections.Generic.Comparer(Of T)
   type: Class
+  summary: Provides a base class for implementations of the @'System.Collections.Generic.IComparer`1' generic interface.
   spec.csharp:
   - uid: System.Collections.Generic.Comparer`1
     name: Comparer
@@ -98,6 +99,7 @@ references:
   fullName: System.Collections.Generic.Dictionary<TKey, TValue>
   fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
   type: Class
+  summary: Represents a collection of keys and values.To browse the .NET Framework source code for this type, see the Reference Source.
   spec.csharp:
   - uid: System.Collections.Generic.Dictionary`2
     name: Dictionary
@@ -137,6 +139,7 @@ references:
   fullName: System.Collections.Generic.Dictionary.Enumerator<>
   fullName.vb: System.Collections.Generic.Dictionary.Enumerator(Of )
   type: Struct
+  summary: Enumerates the elements of a @'System.Collections.Generic.Dictionary`2'.
   spec.csharp:
   - uid: System.Collections.Generic.Dictionary`2.Enumerator
     name: Dictionary.Enumerator
@@ -164,6 +167,7 @@ references:
   fullName: System.Collections.Generic.Dictionary.KeyCollection<>
   fullName.vb: System.Collections.Generic.Dictionary.KeyCollection(Of )
   type: Class
+  summary: Represents the collection of keys in a @'System.Collections.Generic.Dictionary`2'. This class cannot be inherited.
   spec.csharp:
   - uid: System.Collections.Generic.Dictionary`2.KeyCollection
     name: Dictionary.KeyCollection
@@ -191,6 +195,7 @@ references:
   fullName: System.Collections.Generic.Dictionary.KeyCollection.Enumerator<>
   fullName.vb: System.Collections.Generic.Dictionary.KeyCollection.Enumerator(Of )
   type: Struct
+  summary: Enumerates the elements of a @'System.Collections.Generic.Dictionary`2.KeyCollection'.
   spec.csharp:
   - uid: System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator
     name: Dictionary.KeyCollection.Enumerator
@@ -218,6 +223,7 @@ references:
   fullName: System.Collections.Generic.Dictionary.ValueCollection<>
   fullName.vb: System.Collections.Generic.Dictionary.ValueCollection(Of )
   type: Class
+  summary: Represents the collection of values in a @'System.Collections.Generic.Dictionary`2'. This class cannot be inherited.
   spec.csharp:
   - uid: System.Collections.Generic.Dictionary`2.ValueCollection
     name: Dictionary.ValueCollection
@@ -245,6 +251,7 @@ references:
   fullName: System.Collections.Generic.Dictionary.ValueCollection.Enumerator<>
   fullName.vb: System.Collections.Generic.Dictionary.ValueCollection.Enumerator(Of )
   type: Struct
+  summary: Enumerates the elements of a @'System.Collections.Generic.Dictionary`2.ValueCollection'.
   spec.csharp:
   - uid: System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator
     name: Dictionary.ValueCollection.Enumerator
@@ -272,6 +279,7 @@ references:
   fullName: System.Collections.Generic.EqualityComparer<T>
   fullName.vb: System.Collections.Generic.EqualityComparer(Of T)
   type: Class
+  summary: Provides a base class for implementations of the @'System.Collections.Generic.IEqualityComparer`1' generic interface.
   spec.csharp:
   - uid: System.Collections.Generic.EqualityComparer`1
     name: EqualityComparer
@@ -303,6 +311,7 @@ references:
   fullName: System.Collections.Generic.ICollection<T>
   fullName.vb: System.Collections.Generic.ICollection(Of T)
   type: Interface
+  summary: Defines methods to manipulate generic collections.
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
@@ -334,6 +343,7 @@ references:
   fullName: System.Collections.Generic.IComparer<T>
   fullName.vb: System.Collections.Generic.IComparer(Of T)
   type: Interface
+  summary: Defines a method that a type implements to compare two objects.
   spec.csharp:
   - uid: System.Collections.Generic.IComparer`1
     name: IComparer
@@ -365,6 +375,7 @@ references:
   fullName: System.Collections.Generic.IDictionary<TKey, TValue>
   fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
   type: Interface
+  summary: Represents a generic collection of key/value pairs.
   spec.csharp:
   - uid: System.Collections.Generic.IDictionary`2
     name: IDictionary
@@ -404,6 +415,7 @@ references:
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
   type: Interface
+  summary: Exposes the enumerator, which supports a simple iteration over a collection of a specified type.To browse the .NET Framework source code for this type, see the Reference Source.
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
@@ -435,6 +447,7 @@ references:
   fullName: System.Collections.Generic.IEnumerator<T>
   fullName.vb: System.Collections.Generic.IEnumerator(Of T)
   type: Interface
+  summary: Supports a simple iteration over a generic collection.
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerator`1
     name: IEnumerator
@@ -466,6 +479,7 @@ references:
   fullName: System.Collections.Generic.IEqualityComparer<T>
   fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
   type: Interface
+  summary: Defines methods to support the comparison of objects for equality.
   spec.csharp:
   - uid: System.Collections.Generic.IEqualityComparer`1
     name: IEqualityComparer
@@ -497,6 +511,7 @@ references:
   fullName: System.Collections.Generic.IList<T>
   fullName.vb: System.Collections.Generic.IList(Of T)
   type: Interface
+  summary: Represents a collection of objects that can be individually accessed by index.
   spec.csharp:
   - uid: System.Collections.Generic.IList`1
     name: IList
@@ -528,6 +543,7 @@ references:
   fullName: System.Collections.Generic.IReadOnlyCollection<T>
   fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
   type: Interface
+  summary: Represents a strongly-typed, read-only collection of elements.
   spec.csharp:
   - uid: System.Collections.Generic.IReadOnlyCollection`1
     name: IReadOnlyCollection
@@ -559,6 +575,7 @@ references:
   fullName: System.Collections.Generic.IReadOnlyList<T>
   fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
   type: Interface
+  summary: Represents a read-only collection of elements that can be accessed by index.
   spec.csharp:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
@@ -590,6 +607,7 @@ references:
   fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
   fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
   type: Interface
+  summary: Represents a generic read-only collection of key/value pairs.
   spec.csharp:
   - uid: System.Collections.Generic.IReadOnlyDictionary`2
     name: IReadOnlyDictionary
@@ -626,6 +644,7 @@ references:
   name: KeyNotFoundException
   fullName: System.Collections.Generic.KeyNotFoundException
   type: Class
+  summary: The exception that is thrown when the key specified for accessing an element in a collection does not match any key in the collection.
 - uid: System.Collections.Generic.KeyValuePair`2
   parent: System.Collections.Generic
   isExternal: false
@@ -635,6 +654,7 @@ references:
   fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
   fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
   type: Struct
+  summary: Defines a key/value pair that can be set or retrieved.
   spec.csharp:
   - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
@@ -674,6 +694,7 @@ references:
   fullName: System.Collections.Generic.List<T>
   fullName.vb: System.Collections.Generic.List(Of T)
   type: Class
+  summary: Represents a strongly typed list of objects that can be accessed by index. Provides methods to search, sort, and manipulate lists.To browse the .NET Framework source code for this type, see the Reference Source.
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
@@ -705,6 +726,7 @@ references:
   fullName: System.Collections.Generic.List.Enumerator<>
   fullName.vb: System.Collections.Generic.List.Enumerator(Of )
   type: Struct
+  summary: Enumerates the elements of a @'System.Collections.Generic.List`1'.
   spec.csharp:
   - uid: System.Collections.Generic.List`1.Enumerator
     name: List.Enumerator
@@ -731,6 +753,7 @@ references:
   fullName: System.Collections.Generic.HashSet<T>
   fullName.vb: System.Collections.Generic.HashSet(Of T)
   type: Class
+  summary: Represents a set of values.To browse the .NET Framework source code for this type, see the Reference Source.
   spec.csharp:
   - uid: System.Collections.Generic.HashSet`1
     name: HashSet
@@ -762,6 +785,7 @@ references:
   fullName: System.Collections.Generic.HashSet.Enumerator<>
   fullName.vb: System.Collections.Generic.HashSet.Enumerator(Of )
   type: Struct
+  summary: Enumerates the elements of a @'System.Collections.Generic.HashSet`1' object.
   spec.csharp:
   - uid: System.Collections.Generic.HashSet`1.Enumerator
     name: HashSet.Enumerator
@@ -789,6 +813,7 @@ references:
   fullName: System.Collections.Generic.LinkedList<T>
   fullName.vb: System.Collections.Generic.LinkedList(Of T)
   type: Class
+  summary: Represents a doubly linked list.
   spec.csharp:
   - uid: System.Collections.Generic.LinkedList`1
     name: LinkedList
@@ -820,6 +845,7 @@ references:
   fullName: System.Collections.Generic.LinkedList.Enumerator<>
   fullName.vb: System.Collections.Generic.LinkedList.Enumerator(Of )
   type: Struct
+  summary: Enumerates the elements of a @'System.Collections.Generic.LinkedList`1'.
   spec.csharp:
   - uid: System.Collections.Generic.LinkedList`1.Enumerator
     name: LinkedList.Enumerator
@@ -847,6 +873,7 @@ references:
   fullName: System.Collections.Generic.LinkedListNode<T>
   fullName.vb: System.Collections.Generic.LinkedListNode(Of T)
   type: Class
+  summary: Represents a node in a @'System.Collections.Generic.LinkedList`1'. This class cannot be inherited.
   spec.csharp:
   - uid: System.Collections.Generic.LinkedListNode`1
     name: LinkedListNode
@@ -877,6 +904,7 @@ references:
   fullName: System.Collections.Generic.Queue<T>
   fullName.vb: System.Collections.Generic.Queue(Of T)
   type: Class
+  summary: Represents a first-in, first-out collection of objects.
   spec.csharp:
   - uid: System.Collections.Generic.Queue`1
     name: Queue
@@ -908,6 +936,7 @@ references:
   fullName: System.Collections.Generic.Queue.Enumerator<>
   fullName.vb: System.Collections.Generic.Queue.Enumerator(Of )
   type: Struct
+  summary: Enumerates the elements of a @'System.Collections.Generic.Queue`1'.
   spec.csharp:
   - uid: System.Collections.Generic.Queue`1.Enumerator
     name: Queue.Enumerator
@@ -935,6 +964,7 @@ references:
   fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>
   fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue)
   type: Class
+  summary: Represents a collection of key/value pairs that are sorted on the key.
   spec.csharp:
   - uid: System.Collections.Generic.SortedDictionary`2
     name: SortedDictionary
@@ -974,6 +1004,7 @@ references:
   fullName: System.Collections.Generic.SortedDictionary.Enumerator<>
   fullName.vb: System.Collections.Generic.SortedDictionary.Enumerator(Of )
   type: Struct
+  summary: Enumerates the elements of a @'System.Collections.Generic.SortedDictionary`2'.
   spec.csharp:
   - uid: System.Collections.Generic.SortedDictionary`2.Enumerator
     name: SortedDictionary.Enumerator
@@ -1001,6 +1032,7 @@ references:
   fullName: System.Collections.Generic.SortedDictionary.KeyCollection<>
   fullName.vb: System.Collections.Generic.SortedDictionary.KeyCollection(Of )
   type: Class
+  summary: Represents the collection of keys in a @'System.Collections.Generic.SortedDictionary`2'. This class cannot be inherited.
   spec.csharp:
   - uid: System.Collections.Generic.SortedDictionary`2.KeyCollection
     name: SortedDictionary.KeyCollection
@@ -1028,6 +1060,7 @@ references:
   fullName: System.Collections.Generic.SortedDictionary.KeyCollection.Enumerator<>
   fullName.vb: System.Collections.Generic.SortedDictionary.KeyCollection.Enumerator(Of )
   type: Struct
+  summary: Enumerates the elements of a @'System.Collections.Generic.SortedDictionary`2.KeyCollection'.
   spec.csharp:
   - uid: System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator
     name: SortedDictionary.KeyCollection.Enumerator
@@ -1055,6 +1088,7 @@ references:
   fullName: System.Collections.Generic.SortedDictionary.ValueCollection<>
   fullName.vb: System.Collections.Generic.SortedDictionary.ValueCollection(Of )
   type: Class
+  summary: Represents the collection of values in a @'System.Collections.Generic.SortedDictionary`2'. This class cannot be inherited
   spec.csharp:
   - uid: System.Collections.Generic.SortedDictionary`2.ValueCollection
     name: SortedDictionary.ValueCollection
@@ -1082,6 +1116,7 @@ references:
   fullName: System.Collections.Generic.SortedDictionary.ValueCollection.Enumerator<>
   fullName.vb: System.Collections.Generic.SortedDictionary.ValueCollection.Enumerator(Of )
   type: Struct
+  summary: Enumerates the elements of a @'System.Collections.Generic.SortedDictionary`2.ValueCollection'.
   spec.csharp:
   - uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator
     name: SortedDictionary.ValueCollection.Enumerator
@@ -1108,6 +1143,7 @@ references:
   fullName: System.Collections.Generic.SortedList<TKey, TValue>
   fullName.vb: System.Collections.Generic.SortedList(Of TKey, TValue)
   type: Class
+  summary: Represents a collection of key/value pairs that are sorted by key based on the associated @'System.Collections.Generic.IComparer`1' implementation.
   spec.csharp:
   - uid: System.Collections.Generic.SortedList`2
     name: SortedList
@@ -1147,6 +1183,7 @@ references:
   fullName: System.Collections.Generic.SortedSet<T>
   fullName.vb: System.Collections.Generic.SortedSet(Of T)
   type: Class
+  summary: Represents a collection of objects that is maintained in sorted order.
   spec.csharp:
   - uid: System.Collections.Generic.SortedSet`1
     name: SortedSet
@@ -1178,6 +1215,7 @@ references:
   fullName: System.Collections.Generic.SortedSet.Enumerator<>
   fullName.vb: System.Collections.Generic.SortedSet.Enumerator(Of )
   type: Struct
+  summary: Enumerates the elements of a @'System.Collections.Generic.SortedSet`1' object.
   spec.csharp:
   - uid: System.Collections.Generic.SortedSet`1.Enumerator
     name: SortedSet.Enumerator
@@ -1204,6 +1242,7 @@ references:
   fullName: System.Collections.Generic.Stack<T>
   fullName.vb: System.Collections.Generic.Stack(Of T)
   type: Class
+  summary: Represents a variable size last-in-first-out (LIFO) collection of instances of the same specified type.
   spec.csharp:
   - uid: System.Collections.Generic.Stack`1
     name: Stack
@@ -1235,6 +1274,7 @@ references:
   fullName: System.Collections.Generic.Stack.Enumerator<>
   fullName.vb: System.Collections.Generic.Stack.Enumerator(Of )
   type: Struct
+  summary: Enumerates the elements of a @'System.Collections.Generic.Stack`1'.
   spec.csharp:
   - uid: System.Collections.Generic.Stack`1.Enumerator
     name: Stack.Enumerator
@@ -1262,12 +1302,7 @@ references:
   fullName: System.Collections.Generic.ISet<T>
   fullName.vb: System.Collections.Generic.ISet(Of T)
   type: Interface
-  summary: >-
-    Generic collection that guarantees the uniqueness of its elements, as defined
-
-    by some comparer. It also supports basic set operations such as Union, Intersection,
-
-    Complement and Exclusive Complement.
+  summary: Provides the base interface for the abstraction of sets.
   spec.csharp:
   - uid: System.Collections.Generic.ISet`1
     name: ISet

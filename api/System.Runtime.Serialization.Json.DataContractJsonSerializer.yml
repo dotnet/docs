@@ -744,3 +744,25 @@ references:
   name: System.IO
   fullName: System.IO
   type: Namespace
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
+  summary: The exception that is thrown when the value of an argument is outside the allowable range of values as defined by the invoked method.
+- uid: System.Runtime.Serialization.InvalidDataContractException
+  isExternal: false
+  href: System.Runtime.Serialization.InvalidDataContractException.yml
+  name: InvalidDataContractException
+  fullName: System.Runtime.Serialization.InvalidDataContractException
+  type: Class
+  summary: The exception that is thrown when the @'System.Runtime.Serialization.DataContractSerializer' or @'System.Runtime.Serialization.NetDataContractSerializer' encounters an invalid data contract during serialization and deserialization.
+- uid: System.Runtime.Serialization.SerializationException
+  isExternal: false
+  href: System.Runtime.Serialization.SerializationException.yml
+  name: SerializationException
+  fullName: System.Runtime.Serialization.SerializationException
+  type: Class
+  summary: The exception thrown when an error occurs during serialization or deserialization.
+- uid: System.ServiceModel.QuotaExceededException

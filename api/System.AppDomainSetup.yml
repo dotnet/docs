@@ -977,3 +977,11 @@ references:
   name: LoaderOptimization
   fullName: System.LoaderOptimization
   type: Enum
+- uid: System.MemberAccessException
+  parent: System
+  isExternal: false
+  href: System.MemberAccessException.yml
+  name: MemberAccessException
+  fullName: System.MemberAccessException
+  type: Class
+  summary: The exception that is thrown when an attempt to access a class member fails.

@@ -30,6 +30,7 @@ references:
   name: MemoryMappedFileOptions
   fullName: System.IO.MemoryMappedFiles.MemoryMappedFileOptions
   type: Enum
+  summary: Provides memory allocation options for memory-mapped files.
 - uid: System.IO.MemoryMappedFiles.MemoryMappedFileAccess
   parent: System.IO.MemoryMappedFiles
   isExternal: false
@@ -37,6 +38,7 @@ references:
   name: MemoryMappedFileAccess
   fullName: System.IO.MemoryMappedFiles.MemoryMappedFileAccess
   type: Enum
+  summary: Specifies access capabilities and restrictions for a memory-mapped file or view.
 - uid: System.IO.MemoryMappedFiles.MemoryMappedFile
   parent: System.IO.MemoryMappedFiles
   isExternal: false
@@ -44,6 +46,7 @@ references:
   name: MemoryMappedFile
   fullName: System.IO.MemoryMappedFiles.MemoryMappedFile
   type: Class
+  summary: Represents a memory-mapped file.
 - uid: System.IO.MemoryMappedFiles.MemoryMappedViewAccessor
   parent: System.IO.MemoryMappedFiles
   isExternal: false
@@ -51,6 +54,7 @@ references:
   name: MemoryMappedViewAccessor
   fullName: System.IO.MemoryMappedFiles.MemoryMappedViewAccessor
   type: Class
+  summary: Represents a randomly accessed view of a memory-mapped file.
 - uid: System.IO.MemoryMappedFiles.MemoryMappedViewStream
   parent: System.IO.MemoryMappedFiles
   isExternal: false
@@ -58,6 +62,7 @@ references:
   name: MemoryMappedViewStream
   fullName: System.IO.MemoryMappedFiles.MemoryMappedViewStream
   type: Class
+  summary: Represents a view of a memory-mapped file as a sequentially accessed stream.
 - uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights
   parent: System.IO.MemoryMappedFiles
   isExternal: false
@@ -65,6 +70,7 @@ references:
   name: MemoryMappedFileRights
   fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights
   type: Enum
+  summary: Specifies access rights to a memory-mapped file that is not associated with a file on disk.
 - uid: System.IO.MemoryMappedFiles
   isExternal: false
   name: System.IO.MemoryMappedFiles

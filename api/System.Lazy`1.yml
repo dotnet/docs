@@ -682,3 +682,27 @@ references:
   isExternal: false
   name: T
   fullName: T
+- uid: System.MemberAccessException
+  parent: System
+  isExternal: false
+  href: System.MemberAccessException.yml
+  name: MemberAccessException
+  fullName: System.MemberAccessException
+  type: Class
+  summary: The exception that is thrown when an attempt to access a class member fails.
+- uid: System.MissingMemberException
+  parent: System
+  isExternal: false
+  href: System.MissingMemberException.yml
+  name: MissingMemberException
+  fullName: System.MissingMemberException
+  type: Class
+  summary: The exception that is thrown when there is an attempt to dynamically access a class member that does not exist.
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
+  summary: The exception that is thrown when a method call is invalid for the object's current state.

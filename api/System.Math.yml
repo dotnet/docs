@@ -2356,3 +2356,40 @@ references:
   name: UInt64
   fullName: System.UInt64
   type: Struct
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
+  summary: The exception that is thrown when the value of an argument is outside the allowable range of values as defined by the invoked method.
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.OverflowException
+  isExternal: false
+  href: System.OverflowException.yml
+  name: OverflowException
+  fullName: System.OverflowException
+  type: Class
+  summary: The exception that is thrown when an arithmetic, casting, or conversion operation in a checked context results in an overflow.
+- uid: System.ArithmeticException
+  parent: System
+  isExternal: false
+  href: System.ArithmeticException.yml
+  name: ArithmeticException
+  fullName: System.ArithmeticException
+  type: Class
+  summary: The exception that is thrown for errors in an arithmetic, casting, or conversion operation.
+- uid: System.DivideByZeroException
+  isExternal: false
+  href: System.DivideByZeroException.yml
+  name: DivideByZeroException
+  fullName: System.DivideByZeroException
+  type: Class
+  summary: The exception that is thrown when there is an attempt to divide an integral or decimal value by zero.

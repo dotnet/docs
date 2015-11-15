@@ -38,6 +38,7 @@ items:
   summary: The @'System.Dynamic' namespace provides classes and interfaces that support Dynamic Language Runtime.
 references:
 - uid: System.Dynamic.BinaryOperationBinder
+  parent: System.Dynamic
   isExternal: false
   href: System.Dynamic.BinaryOperationBinder.yml
   name: BinaryOperationBinder
@@ -53,6 +54,7 @@ references:
   type: Class
   summary: Represents a set of binding restrictions on the @'System.Dynamic.DynamicMetaObject'under which the dynamic binding is valid.
 - uid: System.Dynamic.CallInfo
+  parent: System.Dynamic
   isExternal: false
   href: System.Dynamic.CallInfo.yml
   name: CallInfo
@@ -60,6 +62,7 @@ references:
   type: Class
   summary: Describes arguments in the dynamic binding process.
 - uid: System.Dynamic.ConvertBinder
+  parent: System.Dynamic
   isExternal: false
   href: System.Dynamic.ConvertBinder.yml
   name: ConvertBinder
@@ -67,6 +70,7 @@ references:
   type: Class
   summary: Represents the convert dynamic operation at the call site, providing the binding semantic and the details about the operation.
 - uid: System.Dynamic.CreateInstanceBinder
+  parent: System.Dynamic
   isExternal: false
   href: System.Dynamic.CreateInstanceBinder.yml
   name: CreateInstanceBinder
@@ -74,6 +78,7 @@ references:
   type: Class
   summary: Represents the create dynamic operation at the call site, providing the binding semantic and the details about the operation.
 - uid: System.Dynamic.DeleteIndexBinder
+  parent: System.Dynamic
   isExternal: false
   href: System.Dynamic.DeleteIndexBinder.yml
   name: DeleteIndexBinder
@@ -81,6 +86,7 @@ references:
   type: Class
   summary: Represents the dynamic delete index operation at the call site, providing the binding semantic and the details about the operation.
 - uid: System.Dynamic.DeleteMemberBinder
+  parent: System.Dynamic
   isExternal: false
   href: System.Dynamic.DeleteMemberBinder.yml
   name: DeleteMemberBinder
@@ -122,6 +128,7 @@ references:
 
     the call site will determine how the binding should be performed.
 - uid: System.Dynamic.ExpandoObject
+  parent: System.Dynamic
   isExternal: false
   href: System.Dynamic.ExpandoObject.yml
   name: ExpandoObject

@@ -171,6 +171,7 @@ references:
   - name: )
     fullName: )
 - uid: System.Threading.Tasks.Dataflow.IDataflowBlock
+  parent: System.Threading.Tasks.Dataflow
   isExternal: false
   href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
   name: IDataflowBlock
@@ -221,9 +222,11 @@ references:
     fullName: )
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Threading.Tasks.Dataflow.DataflowMessageStatus
   parent: System.Threading.Tasks.Dataflow
   isExternal: false
@@ -268,3 +271,4 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

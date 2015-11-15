@@ -220,10 +220,13 @@ references:
   type: Interface
 - uid: System.Runtime.InteropServices._Attribute
   parent: System.Runtime.InteropServices
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices._Attribute.yml
   name: _Attribute
   fullName: System.Runtime.InteropServices._Attribute
+  type: Interface
 - uid: System.Runtime.InteropServices._Thread
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._Thread.yml
   name: _Thread
@@ -237,6 +240,7 @@ references:
   fullName: System.Runtime.InteropServices._Type
   type: Interface
 - uid: System.Runtime.InteropServices._Assembly
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._Assembly.yml
   name: _Assembly
@@ -250,54 +254,63 @@ references:
   fullName: System.Runtime.InteropServices._MemberInfo
   type: Interface
 - uid: System.Runtime.InteropServices._MethodBase
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._MethodBase.yml
   name: _MethodBase
   fullName: System.Runtime.InteropServices._MethodBase
   type: Interface
 - uid: System.Runtime.InteropServices._MethodInfo
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._MethodInfo.yml
   name: _MethodInfo
   fullName: System.Runtime.InteropServices._MethodInfo
   type: Interface
 - uid: System.Runtime.InteropServices._ConstructorInfo
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._ConstructorInfo.yml
   name: _ConstructorInfo
   fullName: System.Runtime.InteropServices._ConstructorInfo
   type: Interface
 - uid: System.Runtime.InteropServices._FieldInfo
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._FieldInfo.yml
   name: _FieldInfo
   fullName: System.Runtime.InteropServices._FieldInfo
   type: Interface
 - uid: System.Runtime.InteropServices._PropertyInfo
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._PropertyInfo.yml
   name: _PropertyInfo
   fullName: System.Runtime.InteropServices._PropertyInfo
   type: Interface
 - uid: System.Runtime.InteropServices._EventInfo
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._EventInfo.yml
   name: _EventInfo
   fullName: System.Runtime.InteropServices._EventInfo
   type: Interface
 - uid: System.Runtime.InteropServices._ParameterInfo
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._ParameterInfo.yml
   name: _ParameterInfo
   fullName: System.Runtime.InteropServices._ParameterInfo
   type: Interface
 - uid: System.Runtime.InteropServices._Module
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._Module.yml
   name: _Module
   fullName: System.Runtime.InteropServices._Module
   type: Interface
 - uid: System.Runtime.InteropServices._AssemblyName
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._AssemblyName.yml
   name: _AssemblyName
@@ -647,6 +660,7 @@ references:
   fullName: System.Runtime.InteropServices.COMException
   type: Class
 - uid: System.Runtime.InteropServices.CriticalHandle
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.CriticalHandle.yml
   name: CriticalHandle
@@ -688,9 +702,11 @@ references:
   type: Interface
 - uid: System.Runtime.InteropServices._Exception
   parent: System.Runtime.InteropServices
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices._Exception.yml
   name: _Exception
   fullName: System.Runtime.InteropServices._Exception
+  type: Interface
 - uid: System.Runtime.InteropServices.InvalidOleVariantTypeException
   isExternal: false
   href: System.Runtime.InteropServices.InvalidOleVariantTypeException.yml
@@ -737,14 +753,18 @@ references:
   type: Class
 - uid: System.Runtime.InteropServices.SafeBuffer
   parent: System.Runtime.InteropServices
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeBuffer.yml
   name: SafeBuffer
   fullName: System.Runtime.InteropServices.SafeBuffer
+  type: Class
 - uid: System.Runtime.InteropServices.SafeHandle
   parent: System.Runtime.InteropServices
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeHandle.yml
   name: SafeHandle
   fullName: System.Runtime.InteropServices.SafeHandle
+  type: Class
 - uid: System.Runtime.InteropServices.BStrWrapper
   isExternal: false
   href: System.Runtime.InteropServices.BStrWrapper.yml
@@ -858,6 +878,7 @@ references:
   fullName: System.Runtime.InteropServices.AssemblyRegistrationFlags
   type: Enum
 - uid: System.Runtime.InteropServices.IRegistrationServices
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.IRegistrationServices.yml
   name: IRegistrationServices
@@ -892,12 +913,14 @@ references:
   fullName: System.Runtime.InteropServices.ExporterEventKind
   type: Enum
 - uid: System.Runtime.InteropServices.ITypeLibImporterNotifySink
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.ITypeLibImporterNotifySink.yml
   name: ITypeLibImporterNotifySink
   fullName: System.Runtime.InteropServices.ITypeLibImporterNotifySink
   type: Interface
 - uid: System.Runtime.InteropServices.ITypeLibExporterNotifySink
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.ITypeLibExporterNotifySink.yml
   name: ITypeLibExporterNotifySink
@@ -936,18 +959,21 @@ references:
   fullName: System.Runtime.InteropServices.RegistrationServices
   type: Class
 - uid: System.Runtime.InteropServices.BIND_OPTS
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.BIND_OPTS.yml
   name: BIND_OPTS
   fullName: System.Runtime.InteropServices.BIND_OPTS
   type: Struct
 - uid: System.Runtime.InteropServices.UCOMIBindCtx
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.UCOMIBindCtx.yml
   name: UCOMIBindCtx
   fullName: System.Runtime.InteropServices.UCOMIBindCtx
   type: Interface
 - uid: System.Runtime.InteropServices.UCOMIConnectionPointContainer
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.UCOMIConnectionPointContainer.yml
   name: UCOMIConnectionPointContainer
@@ -1001,6 +1027,7 @@ references:
   fullName: System.Runtime.InteropServices.UCOMIEnumVARIANT
   type: Interface
 - uid: System.Runtime.InteropServices.FILETIME
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.FILETIME.yml
   name: FILETIME
@@ -1027,6 +1054,7 @@ references:
   fullName: System.Runtime.InteropServices.UCOMIRunningObjectTable
   type: Interface
 - uid: System.Runtime.InteropServices.STATSTG
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.STATSTG.yml
   name: STATSTG
@@ -1047,6 +1075,7 @@ references:
   fullName: System.Runtime.InteropServices.DESCKIND
   type: Enum
 - uid: System.Runtime.InteropServices.BINDPTR
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.BINDPTR.yml
   name: BINDPTR
@@ -1114,6 +1143,7 @@ references:
   fullName: System.Runtime.InteropServices.PARAMFLAG
   type: Enum
 - uid: System.Runtime.InteropServices.PARAMDESC
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.PARAMDESC.yml
   name: PARAMDESC
@@ -1153,12 +1183,14 @@ references:
   fullName: System.Runtime.InteropServices.VARDESC.DESCUNION
   type: Struct
 - uid: System.Runtime.InteropServices.DISPPARAMS
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.DISPPARAMS.yml
   name: DISPPARAMS
   fullName: System.Runtime.InteropServices.DISPPARAMS
   type: Struct
 - uid: System.Runtime.InteropServices.EXCEPINFO
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.EXCEPINFO.yml
   name: EXCEPINFO
@@ -1244,84 +1276,98 @@ references:
 
     raised COM objects.
 - uid: System.Runtime.InteropServices._AssemblyBuilder
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._AssemblyBuilder.yml
   name: _AssemblyBuilder
   fullName: System.Runtime.InteropServices._AssemblyBuilder
   type: Interface
 - uid: System.Runtime.InteropServices._ConstructorBuilder
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._ConstructorBuilder.yml
   name: _ConstructorBuilder
   fullName: System.Runtime.InteropServices._ConstructorBuilder
   type: Interface
 - uid: System.Runtime.InteropServices._CustomAttributeBuilder
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._CustomAttributeBuilder.yml
   name: _CustomAttributeBuilder
   fullName: System.Runtime.InteropServices._CustomAttributeBuilder
   type: Interface
 - uid: System.Runtime.InteropServices._EnumBuilder
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._EnumBuilder.yml
   name: _EnumBuilder
   fullName: System.Runtime.InteropServices._EnumBuilder
   type: Interface
 - uid: System.Runtime.InteropServices._EventBuilder
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._EventBuilder.yml
   name: _EventBuilder
   fullName: System.Runtime.InteropServices._EventBuilder
   type: Interface
 - uid: System.Runtime.InteropServices._FieldBuilder
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._FieldBuilder.yml
   name: _FieldBuilder
   fullName: System.Runtime.InteropServices._FieldBuilder
   type: Interface
 - uid: System.Runtime.InteropServices._ILGenerator
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._ILGenerator.yml
   name: _ILGenerator
   fullName: System.Runtime.InteropServices._ILGenerator
   type: Interface
 - uid: System.Runtime.InteropServices._LocalBuilder
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._LocalBuilder.yml
   name: _LocalBuilder
   fullName: System.Runtime.InteropServices._LocalBuilder
   type: Interface
 - uid: System.Runtime.InteropServices._MethodBuilder
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._MethodBuilder.yml
   name: _MethodBuilder
   fullName: System.Runtime.InteropServices._MethodBuilder
   type: Interface
 - uid: System.Runtime.InteropServices._ModuleBuilder
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._ModuleBuilder.yml
   name: _ModuleBuilder
   fullName: System.Runtime.InteropServices._ModuleBuilder
   type: Interface
 - uid: System.Runtime.InteropServices._ParameterBuilder
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._ParameterBuilder.yml
   name: _ParameterBuilder
   fullName: System.Runtime.InteropServices._ParameterBuilder
   type: Interface
 - uid: System.Runtime.InteropServices._PropertyBuilder
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._PropertyBuilder.yml
   name: _PropertyBuilder
   fullName: System.Runtime.InteropServices._PropertyBuilder
   type: Interface
 - uid: System.Runtime.InteropServices._SignatureHelper
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._SignatureHelper.yml
   name: _SignatureHelper
   fullName: System.Runtime.InteropServices._SignatureHelper
   type: Interface
 - uid: System.Runtime.InteropServices._TypeBuilder
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices._TypeBuilder.yml
   name: _TypeBuilder

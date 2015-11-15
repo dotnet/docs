@@ -17,27 +17,15 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs
+      path: src/System.IO.Compression/src/System/IO/Compression/ZLibNative.Windows.cs
       branch: master
       repo: https://github.com/chenkennt/corefx.git
-    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs
-    startLine: 6
+    path: src/System.IO.Compression/src/System/IO/Compression/ZLibNative.Windows.cs
+    startLine: 5
   assemblies:
-  - System.IO.Compression.ZipFile
+  - System.IO.Compression
   summary: The @'System.IO.Compression' namespace contains classes that provide basic compression and decompression services for streams.
 references:
-- uid: System.IO.Compression.ZipFile
-  isExternal: false
-  href: System.IO.Compression.ZipFile.yml
-  name: ZipFile
-  fullName: System.IO.Compression.ZipFile
-  type: Class
-- uid: System.IO.Compression.ZipFileExtensions
-  isExternal: false
-  href: System.IO.Compression.ZipFileExtensions.yml
-  name: ZipFileExtensions
-  fullName: System.IO.Compression.ZipFileExtensions
-  type: Class
 - uid: System.IO.Compression.CompressionLevel
   parent: System.IO.Compression
   isExternal: false
@@ -66,6 +54,7 @@ references:
   fullName: System.IO.Compression.GZipStream
   type: Class
 - uid: System.IO.Compression.ZipArchive
+  parent: System.IO.Compression
   isExternal: false
   href: System.IO.Compression.ZipArchive.yml
   name: ZipArchive
@@ -85,6 +74,18 @@ references:
   name: ZipArchiveMode
   fullName: System.IO.Compression.ZipArchiveMode
   type: Enum
+- uid: System.IO.Compression.ZipFile
+  isExternal: false
+  href: System.IO.Compression.ZipFile.yml
+  name: ZipFile
+  fullName: System.IO.Compression.ZipFile
+  type: Class
+- uid: System.IO.Compression.ZipFileExtensions
+  isExternal: false
+  href: System.IO.Compression.ZipFileExtensions.yml
+  name: ZipFileExtensions
+  fullName: System.IO.Compression.ZipFileExtensions
+  type: Class
 - uid: System.IO.Compression
   isExternal: false
   name: System.IO.Compression

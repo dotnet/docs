@@ -618,91 +618,135 @@ references:
   fullName: System.Reflection.Metadata
   type: Namespace
 - uid: System.Void
+  isExternal: false
+  href: System.Void.yml
+  name: Void
+  fullName: System.Void
+  type: Struct
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Char
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Char.yml
   name: Char
   fullName: System.Char
+  type: Struct
 - uid: System.SByte
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.SByte.yml
   name: SByte
   fullName: System.SByte
+  type: Struct
 - uid: System.Byte
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte
   fullName: System.Byte
+  type: Struct
 - uid: System.Int16
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int16.yml
   name: Int16
   fullName: System.Int16
+  type: Struct
 - uid: System.UInt16
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.UInt16.yml
   name: UInt16
   fullName: System.UInt16
+  type: Struct
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.UInt32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.UInt32.yml
   name: UInt32
   fullName: System.UInt32
+  type: Struct
 - uid: System.Int64
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int64.yml
   name: Int64
   fullName: System.Int64
+  type: Struct
 - uid: System.UInt64
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.UInt64.yml
   name: UInt64
   fullName: System.UInt64
+  type: Struct
 - uid: System.Single
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Single.yml
   name: Single
   fullName: System.Single
+  type: Struct
 - uid: System.Double
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Double.yml
   name: Double
   fullName: System.Double
+  type: Struct
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Array
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Array.yml
   name: Array
   fullName: System.Array
+  type: Class
 - uid: System.IntPtr
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.IntPtr.yml
   name: IntPtr
   fullName: System.IntPtr
+  type: Struct
 - uid: System.UIntPtr
+  parent: System
+  isExternal: false
+  href: System.UIntPtr.yml
+  name: UIntPtr
+  fullName: System.UIntPtr
+  type: Struct
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Reflection.Metadata.EntityHandle
   parent: System.Reflection.Metadata
   isExternal: false

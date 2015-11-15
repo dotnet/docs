@@ -43,70 +43,66 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/System.Xml.ReaderWriter/src/System/Xml/Serialization/XmlSchemaProviderAttribute.cs
+      path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/SourceInfo.cs
       branch: master
       repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Xml.ReaderWriter/src/System/Xml/Serialization/XmlSchemaProviderAttribute.cs
-    startLine: 6
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/SourceInfo.cs
+    startLine: 15
   assemblies:
-  - System.Xml.ReaderWriter
+  - System.Xml.XmlSerializer
   summary: The @'System.Xml.Serialization' namespace contains classes that are used to serialize objects into XML format documents or streams.
 references:
-- uid: System.Xml.Serialization.IXmlSerializable
-  isExternal: false
-  href: System.Xml.Serialization.IXmlSerializable.yml
-  name: IXmlSerializable
-  fullName: System.Xml.Serialization.IXmlSerializable
-  type: Interface
-- uid: System.Xml.Serialization.XmlSchemaProviderAttribute
-  isExternal: false
-  href: System.Xml.Serialization.XmlSchemaProviderAttribute.yml
-  name: XmlSchemaProviderAttribute
-  fullName: System.Xml.Serialization.XmlSchemaProviderAttribute
-  type: Class
 - uid: System.Xml.Serialization.XmlAnyAttributeAttribute
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlAnyAttributeAttribute.yml
   name: XmlAnyAttributeAttribute
   fullName: System.Xml.Serialization.XmlAnyAttributeAttribute
   type: Class
 - uid: System.Xml.Serialization.XmlAttributeAttribute
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlAttributeAttribute.yml
   name: XmlAttributeAttribute
   fullName: System.Xml.Serialization.XmlAttributeAttribute
   type: Class
 - uid: System.Xml.Serialization.XmlAnyElementAttribute
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlAnyElementAttribute.yml
   name: XmlAnyElementAttribute
   fullName: System.Xml.Serialization.XmlAnyElementAttribute
   type: Class
 - uid: System.Xml.Serialization.XmlAnyElementAttributes
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlAnyElementAttributes.yml
   name: XmlAnyElementAttributes
   fullName: System.Xml.Serialization.XmlAnyElementAttributes
   type: Class
 - uid: System.Xml.Serialization.XmlArrayAttribute
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlArrayAttribute.yml
   name: XmlArrayAttribute
   fullName: System.Xml.Serialization.XmlArrayAttribute
   type: Class
 - uid: System.Xml.Serialization.XmlArrayItemAttribute
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlArrayItemAttribute.yml
   name: XmlArrayItemAttribute
   fullName: System.Xml.Serialization.XmlArrayItemAttribute
   type: Class
 - uid: System.Xml.Serialization.XmlArrayItemAttributes
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlArrayItemAttributes.yml
   name: XmlArrayItemAttributes
   fullName: System.Xml.Serialization.XmlArrayItemAttributes
   type: Class
 - uid: System.Xml.Serialization.XmlAttributeOverrides
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlAttributeOverrides.yml
   name: XmlAttributeOverrides
@@ -127,6 +123,7 @@ references:
   fullName: System.Xml.Serialization.XmlChoiceIdentifierAttribute
   type: Class
 - uid: System.Xml.Serialization.XmlElementAttribute
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlElementAttribute.yml
   name: XmlElementAttribute
@@ -166,18 +163,21 @@ references:
   fullName: System.Xml.Serialization.XmlMappingAccess
   type: Enum
 - uid: System.Xml.Serialization.XmlMapping
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlMapping.yml
   name: XmlMapping
   fullName: System.Xml.Serialization.XmlMapping
   type: Class
 - uid: System.Xml.Serialization.XmlMemberMapping
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlMemberMapping.yml
   name: XmlMemberMapping
   fullName: System.Xml.Serialization.XmlMemberMapping
   type: Class
 - uid: System.Xml.Serialization.XmlMembersMapping
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlMembersMapping.yml
   name: XmlMembersMapping
@@ -209,18 +209,21 @@ references:
   fullName: System.Xml.Serialization.XmlRootAttribute
   type: Class
 - uid: System.Xml.Serialization.XmlSerializationGeneratedCode
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlSerializationGeneratedCode.yml
   name: XmlSerializationGeneratedCode
   fullName: System.Xml.Serialization.XmlSerializationGeneratedCode
   type: Class
 - uid: System.Xml.Serialization.XmlSerializationReader
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlSerializationReader.yml
   name: XmlSerializationReader
   fullName: System.Xml.Serialization.XmlSerializationReader
   type: Class
 - uid: System.Xml.Serialization.XmlSerializationWriter
+  parent: System.Xml.Serialization
   isExternal: false
   href: System.Xml.Serialization.XmlSerializationWriter.yml
   name: XmlSerializationWriter
@@ -272,6 +275,18 @@ references:
   href: System.Xml.Serialization.XmlTypeMapping.yml
   name: XmlTypeMapping
   fullName: System.Xml.Serialization.XmlTypeMapping
+  type: Class
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: false
+  href: System.Xml.Serialization.IXmlSerializable.yml
+  name: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+  type: Interface
+- uid: System.Xml.Serialization.XmlSchemaProviderAttribute
+  isExternal: false
+  href: System.Xml.Serialization.XmlSchemaProviderAttribute.yml
+  name: XmlSchemaProviderAttribute
+  fullName: System.Xml.Serialization.XmlSchemaProviderAttribute
   type: Class
 - uid: System.Xml.Serialization
   isExternal: false

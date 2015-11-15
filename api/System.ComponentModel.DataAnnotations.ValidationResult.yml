@@ -134,7 +134,7 @@ items:
       description: The validation result object.
   exceptions:
   - type: System.ArgumentNullException
-    description: The  is null.
+    description: The *validationResult* is null.
 - uid: System.ComponentModel.DataAnnotations.ValidationResult.MemberNames
   id: MemberNames
   parent: System.ComponentModel.DataAnnotations.ValidationResult
@@ -214,136 +214,142 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -352,7 +358,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -451,6 +457,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.ComponentModel.DataAnnotations.ValidationAttribute
   parent: System.ComponentModel.DataAnnotations
   isExternal: false
@@ -511,12 +518,15 @@ references:
     fullName: )
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Collections.Generic.IEnumerable{System.String}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<String>
   name.vb: IEnumerable(Of String)
   fullName: System.Collections.Generic.IEnumerable<System.String>
@@ -525,40 +535,42 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: )
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -569,7 +581,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -580,18 +592,25 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -600,7 +619,7 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )

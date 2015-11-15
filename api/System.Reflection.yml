@@ -104,82 +104,25 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+      path: src/System.Reflection.DispatchProxy/src/System/Reflection/DispatchProxyGenerator.cs
       branch: master
       repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
-    startLine: 3
+    path: src/System.Reflection.DispatchProxy/src/System/Reflection/DispatchProxyGenerator.cs
+    startLine: 11
   assemblies:
-  - System.Reflection.Metadata
+  - System.Reflection.DispatchProxy
   summary: The @'System.Reflection' namespace contains types that retrieve information about assemblies, modules, members, parameters, and other entities in managed code by examining their metadata. These types also can be used to manipulate instances of loaded types, for example to hook up events or to invoke methods. To dynamically create types, use the @'System.Reflection.Emit' namespace.
 references:
-- uid: System.Reflection.DeclarativeSecurityAction
-  parent: System.Reflection
+- uid: System.Reflection.DispatchProxy
   isExternal: false
-  href: System.Reflection.DeclarativeSecurityAction.yml
-  name: DeclarativeSecurityAction
-  fullName: System.Reflection.DeclarativeSecurityAction
-  type: Enum
-  summary: Specifies the security actions that can be performed using declarative security.
-- uid: System.Reflection.MethodImportAttributes
-  parent: System.Reflection
-  isExternal: false
-  href: System.Reflection.MethodImportAttributes.yml
-  name: MethodImportAttributes
-  fullName: System.Reflection.MethodImportAttributes
-  type: Enum
-- uid: System.Reflection.ManifestResourceAttributes
-  parent: System.Reflection
-  isExternal: false
-  href: System.Reflection.ManifestResourceAttributes.yml
-  name: ManifestResourceAttributes
-  fullName: System.Reflection.ManifestResourceAttributes
-  type: Enum
-- uid: System.Reflection.AssemblyHashAlgorithm
-  parent: System.Reflection
-  isExternal: false
-  href: System.Reflection.AssemblyHashAlgorithm.yml
-  name: AssemblyHashAlgorithm
-  fullName: System.Reflection.AssemblyHashAlgorithm
-  type: Enum
-  summary: Specifies all the hash algorithms used for hashing assembly files and for generating the strong name.
-- uid: System.Reflection.AssemblyFlags
-  parent: System.Reflection
-  isExternal: false
-  href: System.Reflection.AssemblyFlags.yml
-  name: AssemblyFlags
-  fullName: System.Reflection.AssemblyFlags
-  type: Enum
-- uid: System.Reflection.TypeExtensions
-  isExternal: false
-  href: System.Reflection.TypeExtensions.yml
-  name: TypeExtensions
-  fullName: System.Reflection.TypeExtensions
+  href: System.Reflection.DispatchProxy.yml
+  name: DispatchProxy
+  fullName: System.Reflection.DispatchProxy
   type: Class
-- uid: System.Reflection.AssemblyExtensions
-  isExternal: false
-  href: System.Reflection.AssemblyExtensions.yml
-  name: AssemblyExtensions
-  fullName: System.Reflection.AssemblyExtensions
-  type: Class
-- uid: System.Reflection.EventInfoExtensions
-  isExternal: false
-  href: System.Reflection.EventInfoExtensions.yml
-  name: EventInfoExtensions
-  fullName: System.Reflection.EventInfoExtensions
-  type: Class
-- uid: System.Reflection.MethodInfoExtensions
-  isExternal: false
-  href: System.Reflection.MethodInfoExtensions.yml
-  name: MethodInfoExtensions
-  fullName: System.Reflection.MethodInfoExtensions
-  type: Class
-- uid: System.Reflection.PropertyInfoExtensions
-  isExternal: false
-  href: System.Reflection.PropertyInfoExtensions.yml
-  name: PropertyInfoExtensions
-  fullName: System.Reflection.PropertyInfoExtensions
-  type: Class
+  summary: >-
+    DispatchProxy provides a mechanism for the instantiation of proxy objects and handling of
+
+    their method dispatch.
 - uid: System.Reflection.AmbiguousMatchException
   isExternal: false
   href: System.Reflection.AmbiguousMatchException.yml
@@ -187,6 +130,7 @@ references:
   fullName: System.Reflection.AmbiguousMatchException
   type: Class
 - uid: System.Reflection.ModuleResolveEventHandler
+  parent: System.Reflection
   isExternal: false
   href: System.Reflection.ModuleResolveEventHandler.yml
   name: ModuleResolveEventHandler
@@ -194,9 +138,11 @@ references:
   type: Delegate
 - uid: System.Reflection.Assembly
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.Assembly.yml
   name: Assembly
   fullName: System.Reflection.Assembly
+  type: Class
 - uid: System.Reflection.AssemblyCopyrightAttribute
   isExternal: false
   href: System.Reflection.AssemblyCopyrightAttribute.yml
@@ -332,6 +278,12 @@ references:
   fullName: System.Reflection.AssemblyNameFlags
   type: Enum
 - uid: System.Reflection.AssemblyContentType
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.AssemblyContentType.yml
+  name: AssemblyContentType
+  fullName: System.Reflection.AssemblyContentType
+  type: Enum
 - uid: System.Reflection.ProcessorArchitecture
   parent: System.Reflection
   isExternal: false
@@ -360,9 +312,11 @@ references:
   type: Class
 - uid: System.Reflection.BindingFlags
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.BindingFlags.yml
   name: BindingFlags
   fullName: System.Reflection.BindingFlags
+  type: Enum
 - uid: System.Reflection.CallingConventions
   parent: System.Reflection
   isExternal: false
@@ -372,9 +326,11 @@ references:
   type: Enum
 - uid: System.Reflection.ConstructorInfo
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.ConstructorInfo.yml
   name: ConstructorInfo
   fullName: System.Reflection.ConstructorInfo
+  type: Class
 - uid: System.Reflection.CustomAttributeData
   isExternal: false
   href: System.Reflection.CustomAttributeData.yml
@@ -403,29 +359,39 @@ references:
   type: Class
 - uid: System.Reflection.EventAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.EventAttributes.yml
   name: EventAttributes
   fullName: System.Reflection.EventAttributes
+  type: Enum
 - uid: System.Reflection.EventInfo
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.EventInfo.yml
   name: EventInfo
   fullName: System.Reflection.EventInfo
+  type: Class
 - uid: System.Reflection.FieldAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.FieldAttributes.yml
   name: FieldAttributes
   fullName: System.Reflection.FieldAttributes
+  type: Enum
 - uid: System.Reflection.FieldInfo
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.FieldInfo.yml
   name: FieldInfo
   fullName: System.Reflection.FieldInfo
+  type: Class
 - uid: System.Reflection.GenericParameterAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.GenericParameterAttributes.yml
   name: GenericParameterAttributes
   fullName: System.Reflection.GenericParameterAttributes
+  type: Enum
 - uid: System.Reflection.ICustomAttributeProvider
   parent: System.Reflection
   isExternal: false
@@ -434,6 +400,7 @@ references:
   fullName: System.Reflection.ICustomAttributeProvider
   type: Interface
 - uid: System.Reflection.IReflectableType
+  parent: System.Reflection
   isExternal: false
   href: System.Reflection.IReflectableType.yml
   name: IReflectableType
@@ -508,9 +475,11 @@ references:
   type: Enum
 - uid: System.Reflection.MethodAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.MethodAttributes.yml
   name: MethodAttributes
   fullName: System.Reflection.MethodAttributes
+  type: Enum
 - uid: System.Reflection.MethodBase
   parent: System.Reflection
   isExternal: false
@@ -520,14 +489,18 @@ references:
   type: Class
 - uid: System.Reflection.MethodImplAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.MethodImplAttributes.yml
   name: MethodImplAttributes
   fullName: System.Reflection.MethodImplAttributes
+  type: Enum
 - uid: System.Reflection.MethodInfo
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
   name: MethodInfo
   fullName: System.Reflection.MethodInfo
+  type: Class
 - uid: System.Reflection.Missing
   parent: System.Reflection
   isExternal: false
@@ -589,6 +562,7 @@ references:
   fullName: System.Reflection.MethodBody
   type: Class
 - uid: System.Reflection.LocalVariableInfo
+  parent: System.Reflection
   isExternal: false
   href: System.Reflection.LocalVariableInfo.yml
   name: LocalVariableInfo
@@ -596,9 +570,11 @@ references:
   type: Class
 - uid: System.Reflection.ParameterAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.ParameterAttributes.yml
   name: ParameterAttributes
   fullName: System.Reflection.ParameterAttributes
+  type: Enum
 - uid: System.Reflection.ParameterInfo
   parent: System.Reflection
   isExternal: false
@@ -620,14 +596,18 @@ references:
   type: Class
 - uid: System.Reflection.PropertyAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.PropertyAttributes.yml
   name: PropertyAttributes
   fullName: System.Reflection.PropertyAttributes
+  type: Enum
 - uid: System.Reflection.PropertyInfo
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.PropertyInfo.yml
   name: PropertyInfo
   fullName: System.Reflection.PropertyInfo
+  type: Class
 - uid: System.Reflection.ReflectionContext
   isExternal: false
   href: System.Reflection.ReflectionContext.yml
@@ -674,9 +654,11 @@ references:
   type: Class
 - uid: System.Reflection.TypeAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.TypeAttributes.yml
   name: TypeAttributes
   fullName: System.Reflection.TypeAttributes
+  type: Enum
 - uid: System.Reflection.TypeDelegator
   isExternal: false
   href: System.Reflection.TypeDelegator.yml
@@ -697,16 +679,73 @@ references:
   name: TypeInfo
   fullName: System.Reflection.TypeInfo
   type: Class
-- uid: System.Reflection.DispatchProxy
+- uid: System.Reflection.DeclarativeSecurityAction
+  parent: System.Reflection
   isExternal: false
-  href: System.Reflection.DispatchProxy.yml
-  name: DispatchProxy
-  fullName: System.Reflection.DispatchProxy
+  href: System.Reflection.DeclarativeSecurityAction.yml
+  name: DeclarativeSecurityAction
+  fullName: System.Reflection.DeclarativeSecurityAction
+  type: Enum
+  summary: Specifies the security actions that can be performed using declarative security.
+- uid: System.Reflection.MethodImportAttributes
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.MethodImportAttributes.yml
+  name: MethodImportAttributes
+  fullName: System.Reflection.MethodImportAttributes
+  type: Enum
+- uid: System.Reflection.ManifestResourceAttributes
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.ManifestResourceAttributes.yml
+  name: ManifestResourceAttributes
+  fullName: System.Reflection.ManifestResourceAttributes
+  type: Enum
+- uid: System.Reflection.AssemblyHashAlgorithm
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.AssemblyHashAlgorithm.yml
+  name: AssemblyHashAlgorithm
+  fullName: System.Reflection.AssemblyHashAlgorithm
+  type: Enum
+  summary: Specifies all the hash algorithms used for hashing assembly files and for generating the strong name.
+- uid: System.Reflection.AssemblyFlags
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.AssemblyFlags.yml
+  name: AssemblyFlags
+  fullName: System.Reflection.AssemblyFlags
+  type: Enum
+- uid: System.Reflection.TypeExtensions
+  isExternal: false
+  href: System.Reflection.TypeExtensions.yml
+  name: TypeExtensions
+  fullName: System.Reflection.TypeExtensions
   type: Class
-  summary: >-
-    DispatchProxy provides a mechanism for the instantiation of proxy objects and handling of
-
-    their method dispatch.
+- uid: System.Reflection.AssemblyExtensions
+  isExternal: false
+  href: System.Reflection.AssemblyExtensions.yml
+  name: AssemblyExtensions
+  fullName: System.Reflection.AssemblyExtensions
+  type: Class
+- uid: System.Reflection.EventInfoExtensions
+  isExternal: false
+  href: System.Reflection.EventInfoExtensions.yml
+  name: EventInfoExtensions
+  fullName: System.Reflection.EventInfoExtensions
+  type: Class
+- uid: System.Reflection.MethodInfoExtensions
+  isExternal: false
+  href: System.Reflection.MethodInfoExtensions.yml
+  name: MethodInfoExtensions
+  fullName: System.Reflection.MethodInfoExtensions
+  type: Class
+- uid: System.Reflection.PropertyInfoExtensions
+  isExternal: false
+  href: System.Reflection.PropertyInfoExtensions.yml
+  name: PropertyInfoExtensions
+  fullName: System.Reflection.PropertyInfoExtensions
+  type: Class
 - uid: System.Reflection
   isExternal: false
   name: System.Reflection

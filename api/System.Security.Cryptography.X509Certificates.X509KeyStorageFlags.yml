@@ -15,13 +15,13 @@ items:
   type: Enum
   source:
     remote: &o0
-      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
+      path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
-    startLine: 9
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 31
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Defines where and how to import the private key of an X.509 certificate.
   syntax:
@@ -36,10 +36,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
-    startLine: 12
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 35
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: The default key set is used.  The user key set is usually the default.
   syntax:
@@ -53,10 +53,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
-    startLine: 13
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 36
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Private keys are stored in the current user store rather than the local computer store. This occurs even if the certificate specifies that the keys should go in the local computer store.
   syntax:
@@ -70,10 +70,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
-    startLine: 14
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 37
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Private keys are stored in the local computer store rather than the current user store.
   syntax:
@@ -87,10 +87,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
-    startLine: 15
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 38
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Imported keys are marked as exportable.
   syntax:
@@ -104,10 +104,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
-    startLine: 16
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 39
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Notify the user through a dialog box or other method that the key is accessed.  The Cryptographic Service Provider (CSP) in use defines the precise behavior.
   syntax:
@@ -121,10 +121,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
-    startLine: 17
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 40
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: The key associated with a PFX file is persisted when importing a certificate.
   syntax:

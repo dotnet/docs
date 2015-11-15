@@ -51,6 +51,7 @@ references:
   href: System.Xml.XPath.IXPathNavigable.yml
   name: IXPathNavigable
   fullName: System.Xml.XPath.IXPathNavigable
+  type: Interface
 - uid: System.Xml.XPath.XPathDocument
   isExternal: false
   href: System.Xml.XPath.XPathDocument.yml
@@ -105,6 +106,7 @@ references:
   fullName: System.Xml.XPath.XPathExpression
   type: Class
 - uid: System.Xml.XPath.XPathItem
+  parent: System.Xml.XPath
   isExternal: false
   href: System.Xml.XPath.XPathItem.yml
   name: XPathItem
@@ -124,6 +126,7 @@ references:
   href: System.Xml.XPath.XPathNavigator.yml
   name: XPathNavigator
   fullName: System.Xml.XPath.XPathNavigator
+  type: Class
 - uid: System.Xml.XPath.XPathNodeIterator
   parent: System.Xml.XPath
   isExternal: false

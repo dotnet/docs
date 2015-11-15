@@ -6,50 +6,57 @@ items:
   - System.IO.FileStream.#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess)
   - System.IO.FileStream.#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Int32)
   - System.IO.FileStream.#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Int32,System.Boolean)
+  - System.IO.FileStream.#ctor(System.IntPtr,System.IO.FileAccess)
+  - System.IO.FileStream.#ctor(System.IntPtr,System.IO.FileAccess,System.Boolean)
+  - System.IO.FileStream.#ctor(System.IntPtr,System.IO.FileAccess,System.Boolean,System.Int32)
+  - System.IO.FileStream.#ctor(System.IntPtr,System.IO.FileAccess,System.Boolean,System.Int32,System.Boolean)
   - System.IO.FileStream.#ctor(System.String,System.IO.FileMode)
   - System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess)
   - System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
   - System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32)
   - System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.Boolean)
   - System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.IO.FileOptions)
+  - System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  - System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
   - System.IO.FileStream.CanRead
   - System.IO.FileStream.CanSeek
-  - System.IO.FileStream.CanTimeout
   - System.IO.FileStream.CanWrite
-  - System.IO.FileStream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
   - System.IO.FileStream.Dispose(System.Boolean)
+  - System.IO.FileStream.EndRead(System.IAsyncResult)
+  - System.IO.FileStream.EndWrite(System.IAsyncResult)
   - System.IO.FileStream.Finalize
   - System.IO.FileStream.Flush
   - System.IO.FileStream.Flush(System.Boolean)
   - System.IO.FileStream.FlushAsync(System.Threading.CancellationToken)
+  - System.IO.FileStream.Handle
   - System.IO.FileStream.IsAsync
   - System.IO.FileStream.Length
+  - System.IO.FileStream.Lock(System.Int64,System.Int64)
   - System.IO.FileStream.Name
   - System.IO.FileStream.Position
   - System.IO.FileStream.Read(System.Byte[],System.Int32,System.Int32)
   - System.IO.FileStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
   - System.IO.FileStream.ReadByte
-  - System.IO.FileStream.ReadTimeout
   - System.IO.FileStream.SafeFileHandle
   - System.IO.FileStream.Seek(System.Int64,System.IO.SeekOrigin)
   - System.IO.FileStream.SetLength(System.Int64)
+  - System.IO.FileStream.Unlock(System.Int64,System.Int64)
   - System.IO.FileStream.Write(System.Byte[],System.Int32,System.Int32)
   - System.IO.FileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
   - System.IO.FileStream.WriteByte(System.Byte)
-  - System.IO.FileStream.WriteTimeout
   href: System.IO.FileStream.yml
   name: FileStream
   fullName: System.IO.FileStream
   type: Class
   source:
-    remote: &o1
-      path: src/System.IO.FileSystem/src/System/IO/FileStream.Win32.cs
+    remote: &o0
+      path: src/mscorlib/src/System/IO/FileStream.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.Win32.cs
-    startLine: 9
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 373
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Provides a @'System.IO.Stream' for a file, supporting both synchronous and asynchronous read and write operations.To browse the .NET Framework source code for this type, see the Reference Source.
   syntax:
@@ -57,32 +64,27 @@ items:
     content.vb: Public Class FileStream Inherits Stream Implements IDisposable
   inheritance:
   - System.Object
-  - System.MarshalByRefObject
   - System.IO.Stream
   implements:
   - System.IDisposable
   inheritedMembers:
   - System.IO.Stream.Null
+  - System.IO.Stream.CanTimeout
+  - System.IO.Stream.ReadTimeout
+  - System.IO.Stream.WriteTimeout
   - System.IO.Stream.CopyToAsync(System.IO.Stream)
   - System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
   - System.IO.Stream.CopyTo(System.IO.Stream)
   - System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
   - System.IO.Stream.Close
   - System.IO.Stream.Dispose
   - System.IO.Stream.FlushAsync
   - System.IO.Stream.CreateWaitHandle
-  - System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
-  - System.IO.Stream.EndRead(System.IAsyncResult)
   - System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
-  - System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
-  - System.IO.Stream.EndWrite(System.IAsyncResult)
   - System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
   - System.IO.Stream.Synchronized(System.IO.Stream)
   - System.IO.Stream.ObjectInvariant
-  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
-  - System.MarshalByRefObject.GetLifetimeService
-  - System.MarshalByRefObject.InitializeLifetimeService
-  - System.MarshalByRefObject.CreateObjRef(System.Type)
   - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -90,43 +92,6 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-- uid: System.IO.FileStream.#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess)
-  id: '#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess)'
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: FileStream(SafeFileHandle, FileAccess)
-  fullName: System.IO.FileStream.FileStream(Microsoft.Win32.SafeHandles.SafeFileHandle, System.IO.FileAccess)
-  type: Constructor
-  source:
-    remote: &o0
-      path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-      branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 28
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  summary: Initializes a new instance of the @'System.IO.FileStream' class for the specified file handle, with the specified read/write permission.
-  syntax:
-    content: public FileStream(SafeFileHandle handle, FileAccess access)
-    content.vb: Public Sub New(handle As SafeFileHandle, access As FileAccess)
-    parameters:
-    - id: handle
-      type: Microsoft.Win32.SafeHandles.SafeFileHandle
-      description: A file handle for the file that the current FileStream object will encapsulate.
-    - id: access
-      type: System.IO.FileAccess
-      description: A constant that sets the @'System.IO.FileStream.CanRead' and @'System.IO.FileStream.CanWrite' properties of the FileStream object.
-  exceptions:
-  - type: System.ArgumentException
-    description: '*access* is not a field of @''System.IO.FileAccess''.'
-  - type: System.Security.SecurityException
-    description: The caller does not have the required permission.
-  - type: System.IO.IOException
-    description: An I/O error, such as a disk error, occurred.-or-The stream has been closed.
-  - type: System.UnauthorizedAccessException
-    description: The *access* requested is not permitted by the operating system for the specified file handle, such as when *access* is Write or ReadWrite and the file handle is set for read-only access.
 - uid: System.IO.FileStream.#ctor(System.String,System.IO.FileMode)
   id: '#ctor(System.String,System.IO.FileMode)'
   parent: System.IO.FileStream
@@ -136,10 +101,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 33
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 412
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Initializes a new instance of the @'System.IO.FileStream' class with the specified path and creation mode.
   syntax:
@@ -180,10 +145,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 37
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 431
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Initializes a new instance of the @'System.IO.FileStream' class with the specified path, creation mode, and read/write permission.
   syntax:
@@ -229,10 +194,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 41
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 450
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Initializes a new instance of the @'System.IO.FileStream' class with the specified path, creation mode, read/write permission, and sharing permission.
   syntax:
@@ -281,10 +246,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 45
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 469
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Initializes a new instance of the @'System.IO.FileStream' class with the specified path, creation mode, read/write and sharing permission, and buffer size.
   syntax:
@@ -327,64 +292,6 @@ items:
     description: The *access* requested is not permitted by the operating system for the specified *path*, such as when *access* is Write or ReadWrite and the file or directory is set for read-only access.
   - type: System.IO.PathTooLongException
     description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
-- uid: System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.Boolean)
-  id: '#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.Boolean)'
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: FileStream(String, FileMode, FileAccess, FileShare, Int32, Boolean)
-  fullName: System.IO.FileStream.FileStream(System.String, System.IO.FileMode, System.IO.FileAccess, System.IO.FileShare, System.Int32, System.Boolean)
-  type: Constructor
-  source:
-    remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 49
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  summary: Initializes a new instance of the @'System.IO.FileStream' class with the specified path, creation mode, read/write and sharing permission, buffer size, and synchronous or asynchronous state.
-  syntax:
-    content: public FileStream(string path, FileMode mode, FileAccess access, FileShare share, int bufferSize, bool useAsync)
-    content.vb: Public Sub New(path As String, mode As FileMode, access As FileAccess, share As FileShare, bufferSize As Integer, useAsync As Boolean)
-    parameters:
-    - id: path
-      type: System.String
-      description: A relative or absolute path for the file that the current FileStream object will encapsulate.
-    - id: mode
-      type: System.IO.FileMode
-      description: A constant that determines how to open or create the file.
-    - id: access
-      type: System.IO.FileAccess
-      description: A constant that determines how the file can be accessed by the FileStream object. This also determines the values returned by the @'System.IO.FileStream.CanRead' and @'System.IO.FileStream.CanWrite' properties of the FileStream object. @'System.IO.FileStream.CanSeek' is true if *path* specifies a disk file.
-    - id: share
-      type: System.IO.FileShare
-      description: A constant that determines how the file will be shared by processes.
-    - id: bufferSize
-      type: System.Int32
-      description: A positive @'System.Int32' value greater than 0 indicating the buffer size. The default buffer size is 4096..
-    - id: useAsync
-      type: System.Boolean
-      description: Specifies whether to use asynchronous I/O or synchronous I/O. However, note that the underlying operating system might not support asynchronous I/O, so when specifying true, the handle might be opened synchronously depending on the platform. When opened asynchronously, the @'System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)' and @'System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)' methods perform better on large reads or writes, but they might be much slower for small reads or writes. If the application is designed to take advantage of asynchronous I/O, set the *useAsync* parameter to true. Using asynchronous I/O correctly can speed up applications by as much as a factor of 10, but using it without redesigning the application for asynchronous I/O can decrease performance by as much as a factor of 10.
-  exceptions:
-  - type: System.ArgumentNullException
-    description: '*path* is null.'
-  - type: System.ArgumentException
-    description: '*path* is an empty string (""), contains only white space, or contains one or more invalid characters. -or-*path* refers to a non-file device, such as "con:", "com1:", "lpt1:", etc. in an NTFS environment.'
-  - type: System.NotSupportedException
-    description: '*path* refers to a non-file device, such as "con:", "com1:", "lpt1:", etc. in a non-NTFS environment.'
-  - type: System.ArgumentOutOfRangeException
-    description: '*bufferSize* is negative or zero.-or- *mode*, *access*, or *share* contain an invalid value.'
-  - type: System.IO.FileNotFoundException
-    description: The file cannot be found, such as when *mode* is FileMode.Truncate or FileMode.Open, and the file specified by *path* does not exist. The file must already exist in these modes.
-  - type: System.IO.IOException
-    description: An I/O error, such as specifying FileMode.CreateNew when the file specified by *path* already exists, occurred.-or- The system is running Windows 98 or Windows 98 Second Edition and *share* is set to FileShare.Delete.-or-The stream has been closed.
-  - type: System.Security.SecurityException
-    description: The caller does not have the required permission.
-  - type: System.IO.DirectoryNotFoundException
-    description: The specified path is invalid, such as being on an unmapped drive.
-  - type: System.UnauthorizedAccessException
-    description: The *access* requested is not permitted by the operating system for the specified *path*, such as when *access* is Write or ReadWrite and the file or directory is set for read-only access.
-  - type: System.IO.PathTooLongException
-    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
 - uid: System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.IO.FileOptions)
   id: '#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.IO.FileOptions)'
   parent: System.IO.FileStream
@@ -394,10 +301,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 53
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 498
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Initializes a new instance of the @'System.IO.FileStream' class with the specified path, creation mode, read/write and sharing permission, the access other FileStreams can have to the same file, the buffer size, and additional file options.
   syntax:
@@ -443,94 +350,335 @@ items:
     description: The *access* requested is not permitted by the operating system for the specified *path*, such as when *access* is Write or ReadWrite and the file or directory is set for read-only access. -or-@'System.IO.FileOptions.Encrypted' is specified for *options*, but file encryption is not supported on the current platform.
   - type: System.IO.PathTooLongException
     description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
-- uid: System.IO.FileStream.IsAsync
-  id: IsAsync
+- uid: System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.Boolean)
+  id: '#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.Boolean)'
   parent: System.IO.FileStream
   href: System.IO.FileStream.yml
-  name: IsAsync
-  fullName: System.IO.FileStream.IsAsync
-  type: Property
+  name: FileStream(String, FileMode, FileAccess, FileShare, Int32, Boolean)
+  fullName: System.IO.FileStream.FileStream(System.String, System.IO.FileMode, System.IO.FileAccess, System.IO.FileShare, System.Int32, System.Boolean)
+  type: Constructor
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 127
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 505
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
-  summary: Gets a value indicating whether the FileStream was opened asynchronously or synchronously.
+  summary: Initializes a new instance of the @'System.IO.FileStream' class with the specified path, creation mode, read/write and sharing permission, buffer size, and synchronous or asynchronous state.
   syntax:
-    content: public virtual bool IsAsync { get; }
-    content.vb: Public Overridable ReadOnly Property IsAsync As Boolean
-    parameters: []
-    return:
-      type: System.Boolean
-      description: true if the FileStream was opened asynchronously; otherwise, false.
-- uid: System.IO.FileStream.Name
-  id: Name
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: Name
-  fullName: System.IO.FileStream.Name
-  type: Property
-  source:
-    remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 128
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  summary: Gets the name of the FileStream that was passed to the constructor.
-  syntax:
-    content: public string Name { get; }
-    content.vb: Public ReadOnly Property Name As String
-    parameters: []
-    return:
-      type: System.String
-      description: A string that is the name of the FileStream.
-- uid: System.IO.FileStream.SafeFileHandle
-  id: SafeFileHandle
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: SafeFileHandle
-  fullName: System.IO.FileStream.SafeFileHandle
-  type: Property
-  source:
-    remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 129
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  summary: Gets a @'Microsoft.Win32.SafeHandles.SafeFileHandle' object that represents the operating system file handle for the file that the current @'System.IO.FileStream' object encapsulates.
-  syntax:
-    content: public virtual SafeFileHandle SafeFileHandle { get; }
-    content.vb: Public Overridable ReadOnly Property SafeFileHandle As SafeFileHandle
-    parameters: []
-    return:
-      type: Microsoft.Win32.SafeHandles.SafeFileHandle
-      description: An object that represents the operating system file handle for the file that the current @'System.IO.FileStream' object encapsulates.
-- uid: System.IO.FileStream.Flush(System.Boolean)
-  id: Flush(System.Boolean)
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: Flush(Boolean)
-  fullName: System.IO.FileStream.Flush(System.Boolean)
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 131
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  summary: Clears buffers for this stream and causes any buffered data to be written to the file, and also clears all intermediate file buffers.
-  syntax:
-    content: public virtual void Flush(bool flushToDisk)
-    content.vb: Public Overridable Sub Flush(flushToDisk As Boolean)
+    content: public FileStream(string path, FileMode mode, FileAccess access, FileShare share, int bufferSize, bool useAsync)
+    content.vb: Public Sub New(path As String, mode As FileMode, access As FileAccess, share As FileShare, bufferSize As Integer, useAsync As Boolean)
     parameters:
-    - id: flushToDisk
+    - id: path
+      type: System.String
+      description: A relative or absolute path for the file that the current FileStream object will encapsulate.
+    - id: mode
+      type: System.IO.FileMode
+      description: A constant that determines how to open or create the file.
+    - id: access
+      type: System.IO.FileAccess
+      description: A constant that determines how the file can be accessed by the FileStream object. This also determines the values returned by the @'System.IO.FileStream.CanRead' and @'System.IO.FileStream.CanWrite' properties of the FileStream object. @'System.IO.FileStream.CanSeek' is true if *path* specifies a disk file.
+    - id: share
+      type: System.IO.FileShare
+      description: A constant that determines how the file will be shared by processes.
+    - id: bufferSize
+      type: System.Int32
+      description: A positive @'System.Int32' value greater than 0 indicating the buffer size. The default buffer size is 4096..
+    - id: useAsync
       type: System.Boolean
-      description: true to flush all intermediate file buffers; otherwise, false.
+      description: Specifies whether to use asynchronous I/O or synchronous I/O. However, note that the underlying operating system might not support asynchronous I/O, so when specifying true, the handle might be opened synchronously depending on the platform. When opened asynchronously, the @'System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)' and @'System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)' methods perform better on large reads or writes, but they might be much slower for small reads or writes. If the application is designed to take advantage of asynchronous I/O, set the *useAsync* parameter to true. Using asynchronous I/O correctly can speed up applications by as much as a factor of 10, but using it without redesigning the application for asynchronous I/O can decrease performance by as much as a factor of 10.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.ArgumentException
+    description: '*path* is an empty string (""), contains only white space, or contains one or more invalid characters. -or-*path* refers to a non-file device, such as "con:", "com1:", "lpt1:", etc. in an NTFS environment.'
+  - type: System.NotSupportedException
+    description: '*path* refers to a non-file device, such as "con:", "com1:", "lpt1:", etc. in a non-NTFS environment.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*bufferSize* is negative or zero.-or- *mode*, *access*, or *share* contain an invalid value.'
+  - type: System.IO.FileNotFoundException
+    description: The file cannot be found, such as when *mode* is FileMode.Truncate or FileMode.Open, and the file specified by *path* does not exist. The file must already exist in these modes.
+  - type: System.IO.IOException
+    description: An I/O error, such as specifying FileMode.CreateNew when the file specified by *path* already exists, occurred.-or- The system is running Windows 98 or Windows 98 Second Edition and *share* is set to FileShare.Delete.-or-The stream has been closed.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid, such as being on an unmapped drive.
+  - type: System.UnauthorizedAccessException
+    description: The *access* requested is not permitted by the operating system for the specified *path*, such as when *access* is Write or ReadWrite and the file or directory is set for read-only access.
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+- uid: System.IO.FileStream.#ctor(System.IntPtr,System.IO.FileAccess)
+  id: '#ctor(System.IntPtr,System.IO.FileAccess)'
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: FileStream(IntPtr, FileAccess)
+  fullName: System.IO.FileStream.FileStream(System.IntPtr, System.IO.FileAccess)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 898
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.FileStream' class for the specified file handle, with the specified read/write permission.
+  syntax:
+    content: public FileStream(IntPtr handle, FileAccess access)
+    content.vb: Public Sub New(handle As IntPtr, access As FileAccess)
+    parameters:
+    - id: handle
+      type: System.IntPtr
+      description: A file handle for the file that the current FileStream object will encapsulate.
+    - id: access
+      type: System.IO.FileAccess
+      description: A constant that sets the @'System.IO.FileStream.CanRead' and @'System.IO.FileStream.CanWrite' properties of the FileStream object.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*access* is not a field of @''System.IO.FileAccess''.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+  - type: System.IO.IOException
+    description: An I/O error, such as a disk error, occurred.-or-The stream has been closed.
+  - type: System.UnauthorizedAccessException
+    description: The *access* requested is not permitted by the operating system for the specified file handle, such as when *access* is Write or ReadWrite and the file handle is set for read-only access.
+- uid: System.IO.FileStream.#ctor(System.IntPtr,System.IO.FileAccess,System.Boolean)
+  id: '#ctor(System.IntPtr,System.IO.FileAccess,System.Boolean)'
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: FileStream(IntPtr, FileAccess, Boolean)
+  fullName: System.IO.FileStream.FileStream(System.IntPtr, System.IO.FileAccess, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 903
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.FileStream' class for the specified file handle, with the specified read/write permission and FileStream instance ownership.
+  syntax:
+    content: public FileStream(IntPtr handle, FileAccess access, bool ownsHandle)
+    content.vb: Public Sub New(handle As IntPtr, access As FileAccess, ownsHandle As Boolean)
+    parameters:
+    - id: handle
+      type: System.IntPtr
+      description: A file handle for the file that the current FileStream object will encapsulate.
+    - id: access
+      type: System.IO.FileAccess
+      description: A constant that sets the @'System.IO.FileStream.CanRead' and @'System.IO.FileStream.CanWrite' properties of the FileStream object.
+    - id: ownsHandle
+      type: System.Boolean
+      description: true if the file handle will be owned by this FileStream instance; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*access* is not a field of @''System.IO.FileAccess''.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+  - type: System.IO.IOException
+    description: An I/O error, such as a disk error, occurred.-or-The stream has been closed.
+  - type: System.UnauthorizedAccessException
+    description: The *access* requested is not permitted by the operating system for the specified file handle, such as when *access* is Write or ReadWrite and the file handle is set for read-only access.
+- uid: System.IO.FileStream.#ctor(System.IntPtr,System.IO.FileAccess,System.Boolean,System.Int32)
+  id: '#ctor(System.IntPtr,System.IO.FileAccess,System.Boolean,System.Int32)'
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: FileStream(IntPtr, FileAccess, Boolean, Int32)
+  fullName: System.IO.FileStream.FileStream(System.IntPtr, System.IO.FileAccess, System.Boolean, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 908
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.FileStream' class for the specified file handle, with the specified read/write permission, FileStream instance ownership, and buffer size.
+  syntax:
+    content: public FileStream(IntPtr handle, FileAccess access, bool ownsHandle, int bufferSize)
+    content.vb: Public Sub New(handle As IntPtr, access As FileAccess, ownsHandle As Boolean, bufferSize As Integer)
+    parameters:
+    - id: handle
+      type: System.IntPtr
+      description: A file handle for the file that this FileStream object will encapsulate.
+    - id: access
+      type: System.IO.FileAccess
+      description: A constant that sets the @'System.IO.FileStream.CanRead' and @'System.IO.FileStream.CanWrite' properties of the FileStream object.
+    - id: ownsHandle
+      type: System.Boolean
+      description: true if the file handle will be owned by this FileStream instance; otherwise, false.
+    - id: bufferSize
+      type: System.Int32
+      description: A positive @'System.Int32' value greater than 0 indicating the buffer size. The default buffer size is 4096.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*bufferSize* is negative.'
+  - type: System.IO.IOException
+    description: An I/O error, such as a disk error, occurred.-or-The stream has been closed.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+  - type: System.UnauthorizedAccessException
+    description: The *access* requested is not permitted by the operating system for the specified file handle, such as when *access* is Write or ReadWrite and the file handle is set for read-only access.
+- uid: System.IO.FileStream.#ctor(System.IntPtr,System.IO.FileAccess,System.Boolean,System.Int32,System.Boolean)
+  id: '#ctor(System.IntPtr,System.IO.FileAccess,System.Boolean,System.Int32,System.Boolean)'
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: FileStream(IntPtr, FileAccess, Boolean, Int32, Boolean)
+  fullName: System.IO.FileStream.FileStream(System.IntPtr, System.IO.FileAccess, System.Boolean, System.Int32, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 914
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.FileStream' class for the specified file handle, with the specified read/write permission, FileStream instance ownership, buffer size, and synchronous or asynchronous state.
+  syntax:
+    content: public FileStream(IntPtr handle, FileAccess access, bool ownsHandle, int bufferSize, bool isAsync)
+    content.vb: Public Sub New(handle As IntPtr, access As FileAccess, ownsHandle As Boolean, bufferSize As Integer, isAsync As Boolean)
+    parameters:
+    - id: handle
+      type: System.IntPtr
+      description: A file handle for the file that this FileStream object will encapsulate.
+    - id: access
+      type: System.IO.FileAccess
+      description: A constant that sets the @'System.IO.FileStream.CanRead' and @'System.IO.FileStream.CanWrite' properties of the FileStream object.
+    - id: ownsHandle
+      type: System.Boolean
+      description: true if the file handle will be owned by this FileStream instance; otherwise, false.
+    - id: bufferSize
+      type: System.Int32
+      description: A positive @'System.Int32' value greater than 0 indicating the buffer size. The default buffer size is 4096.
+    - id: isAsync
+      type: System.Boolean
+      description: true if the handle was opened asynchronously (that is, in overlapped I/O mode); otherwise, false.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*access* is less than FileAccess.Read or greater than FileAccess.ReadWrite or *bufferSize* is less than or equal to 0.'
+  - type: System.ArgumentException
+    description: The handle is invalid.
+  - type: System.IO.IOException
+    description: An I/O error, such as a disk error, occurred.-or-The stream has been closed.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+  - type: System.UnauthorizedAccessException
+    description: The *access* requested is not permitted by the operating system for the specified file handle, such as when *access* is Write or ReadWrite and the file handle is set for read-only access.
+- uid: System.IO.FileStream.#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess)
+  id: '#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess)'
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: FileStream(SafeFileHandle, FileAccess)
+  fullName: System.IO.FileStream.FileStream(Microsoft.Win32.SafeHandles.SafeFileHandle, System.IO.FileAccess)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 923
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.FileStream' class for the specified file handle, with the specified read/write permission.
+  syntax:
+    content: public FileStream(SafeFileHandle handle, FileAccess access)
+    content.vb: Public Sub New(handle As SafeFileHandle, access As FileAccess)
+    parameters:
+    - id: handle
+      type: Microsoft.Win32.SafeHandles.SafeFileHandle
+      description: A file handle for the file that the current FileStream object will encapsulate.
+    - id: access
+      type: System.IO.FileAccess
+      description: A constant that sets the @'System.IO.FileStream.CanRead' and @'System.IO.FileStream.CanWrite' properties of the FileStream object.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*access* is not a field of @''System.IO.FileAccess''.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+  - type: System.IO.IOException
+    description: An I/O error, such as a disk error, occurred.-or-The stream has been closed.
+  - type: System.UnauthorizedAccessException
+    description: The *access* requested is not permitted by the operating system for the specified file handle, such as when *access* is Write or ReadWrite and the file handle is set for read-only access.
+- uid: System.IO.FileStream.#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Int32)
+  id: '#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Int32)'
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: FileStream(SafeFileHandle, FileAccess, Int32)
+  fullName: System.IO.FileStream.FileStream(Microsoft.Win32.SafeHandles.SafeFileHandle, System.IO.FileAccess, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 928
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.FileStream' class for the specified file handle, with the specified read/write permission, and buffer size.
+  syntax:
+    content: public FileStream(SafeFileHandle handle, FileAccess access, int bufferSize)
+    content.vb: Public Sub New(handle As SafeFileHandle, access As FileAccess, bufferSize As Integer)
+    parameters:
+    - id: handle
+      type: Microsoft.Win32.SafeHandles.SafeFileHandle
+      description: A file handle for the file that the current FileStream object will encapsulate.
+    - id: access
+      type: System.IO.FileAccess
+      description: A @'System.IO.FileAccess' constant that sets the @'System.IO.FileStream.CanRead' and @'System.IO.FileStream.CanWrite' properties of the FileStream object.
+    - id: bufferSize
+      type: System.Int32
+      description: A positive @'System.Int32' value greater than 0 indicating the buffer size. The default buffer size is 4096.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *handle* parameter is an invalid handle.-or-The *handle* parameter is a synchronous handle and it was used asynchronously.
+  - type: System.ArgumentOutOfRangeException
+    description: The *bufferSize* parameter is negative.
+  - type: System.IO.IOException
+    description: An I/O error, such as a disk error, occurred.-or-The stream has been closed.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+  - type: System.UnauthorizedAccessException
+    description: The *access* requested is not permitted by the operating system for the specified file handle, such as when *access* is Write or ReadWrite and the file handle is set for read-only access.
+- uid: System.IO.FileStream.#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Int32,System.Boolean)
+  id: '#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Int32,System.Boolean)'
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: FileStream(SafeFileHandle, FileAccess, Int32, Boolean)
+  fullName: System.IO.FileStream.FileStream(Microsoft.Win32.SafeHandles.SafeFileHandle, System.IO.FileAccess, System.Int32, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 933
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.FileStream' class for the specified file handle, with the specified read/write permission, buffer size, and synchronous or asynchronous state.
+  syntax:
+    content: public FileStream(SafeFileHandle handle, FileAccess access, int bufferSize, bool isAsync)
+    content.vb: Public Sub New(handle As SafeFileHandle, access As FileAccess, bufferSize As Integer, isAsync As Boolean)
+    parameters:
+    - id: handle
+      type: Microsoft.Win32.SafeHandles.SafeFileHandle
+      description: A file handle for the file that this FileStream object will encapsulate.
+    - id: access
+      type: System.IO.FileAccess
+      description: A constant that sets the @'System.IO.FileStream.CanRead' and @'System.IO.FileStream.CanWrite' properties of the FileStream object.
+    - id: bufferSize
+      type: System.Int32
+      description: A positive @'System.Int32' value greater than 0 indicating the buffer size. The default buffer size is 4096.
+    - id: isAsync
+      type: System.Boolean
+      description: true if the handle was opened asynchronously (that is, in overlapped I/O mode); otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *handle* parameter is an invalid handle.-or-The *handle* parameter is a synchronous handle and it was used asynchronously.
+  - type: System.ArgumentOutOfRangeException
+    description: The *bufferSize* parameter is negative.
+  - type: System.IO.IOException
+    description: An I/O error, such as a disk error, occurred.-or-The stream has been closed.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+  - type: System.UnauthorizedAccessException
+    description: The *access* requested is not permitted by the operating system for the specified file handle, such as when *access* is Write or ReadWrite and the file handle is set for read-only access.
 - uid: System.IO.FileStream.CanRead
   id: CanRead
   parent: System.IO.FileStream
@@ -540,10 +688,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 140
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1079
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets a value indicating whether the current stream supports reading.
   syntax:
@@ -554,29 +702,6 @@ items:
       type: System.Boolean
       description: true if the stream supports reading; false if the stream is closed or was opened with write-only access.
   overridden: System.IO.Stream.CanRead
-- uid: System.IO.FileStream.CanSeek
-  id: CanSeek
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: CanSeek
-  fullName: System.IO.FileStream.CanSeek
-  type: Property
-  source:
-    remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 145
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  summary: Gets a value indicating whether the current stream supports seeking.
-  syntax:
-    content: public override bool CanSeek { get; }
-    content.vb: Public Overrides ReadOnly Property CanSeek As Boolean
-    parameters: []
-    return:
-      type: System.Boolean
-      description: true if the stream supports seeking; false if the stream is closed or if the FileStream was constructed from an operating-system handle such as a pipe or output to the console.
-  overridden: System.IO.Stream.CanSeek
 - uid: System.IO.FileStream.CanWrite
   id: CanWrite
   parent: System.IO.FileStream
@@ -586,10 +711,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 150
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1084
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets a value indicating whether the current stream supports writing.
   syntax:
@@ -600,6 +725,51 @@ items:
       type: System.Boolean
       description: true if the stream supports writing; false if the stream is closed or was opened with read-only access.
   overridden: System.IO.Stream.CanWrite
+- uid: System.IO.FileStream.CanSeek
+  id: CanSeek
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: CanSeek
+  fullName: System.IO.FileStream.CanSeek
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1089
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets a value indicating whether the current stream supports seeking.
+  syntax:
+    content: public override bool CanSeek { get; }
+    content.vb: Public Overrides ReadOnly Property CanSeek As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the stream supports seeking; false if the stream is closed or if the FileStream was constructed from an operating-system handle such as a pipe or output to the console.
+  overridden: System.IO.Stream.CanSeek
+- uid: System.IO.FileStream.IsAsync
+  id: IsAsync
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: IsAsync
+  fullName: System.IO.FileStream.IsAsync
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1094
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets a value indicating whether the FileStream was opened asynchronously or synchronously.
+  syntax:
+    content: public virtual bool IsAsync { get; }
+    content.vb: Public Overridable ReadOnly Property IsAsync As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the FileStream was opened asynchronously; otherwise, false.
 - uid: System.IO.FileStream.Length
   id: Length
   parent: System.IO.FileStream
@@ -609,10 +779,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 155
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1098
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets the length in bytes of the stream.
   syntax:
@@ -628,6 +798,28 @@ items:
     description: '@''System.IO.FileStream.CanSeek'' for this stream is false.'
   - type: System.IO.IOException
     description: An I/O error, such as the file being closed, occurred.
+- uid: System.IO.FileStream.Name
+  id: Name
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: Name
+  fullName: System.IO.FileStream.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1122
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets the name of the FileStream that was passed to the constructor.
+  syntax:
+    content: public string Name { get; }
+    content.vb: Public ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: A string that is the name of the FileStream.
 - uid: System.IO.FileStream.Position
   id: Position
   parent: System.IO.FileStream
@@ -637,10 +829,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 160
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1145
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets or sets the current position of this stream.
   syntax:
@@ -660,96 +852,6 @@ items:
     description: Attempted to set the position to a negative value.
   - type: System.IO.EndOfStreamException
     description: Attempted seeking past the end of a stream that does not support this.
-- uid: System.IO.FileStream.ReadTimeout
-  id: ReadTimeout
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: ReadTimeout
-  fullName: System.IO.FileStream.ReadTimeout
-  type: Property
-  source:
-    remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 166
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  syntax:
-    content: public override int ReadTimeout { get; set; }
-    content.vb: Public Overrides Property ReadTimeout As Integer
-    parameters: []
-    return:
-      type: System.Int32
-  overridden: System.IO.Stream.ReadTimeout
-- uid: System.IO.FileStream.CanTimeout
-  id: CanTimeout
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: CanTimeout
-  fullName: System.IO.FileStream.CanTimeout
-  type: Property
-  source:
-    remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 172
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  syntax:
-    content: public override bool CanTimeout { get; }
-    content.vb: Public Overrides ReadOnly Property CanTimeout As Boolean
-    parameters: []
-    return:
-      type: System.Boolean
-  overridden: System.IO.Stream.CanTimeout
-- uid: System.IO.FileStream.WriteTimeout
-  id: WriteTimeout
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: WriteTimeout
-  fullName: System.IO.FileStream.WriteTimeout
-  type: Property
-  source:
-    remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 177
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  syntax:
-    content: public override int WriteTimeout { get; set; }
-    content.vb: Public Overrides Property WriteTimeout As Integer
-    parameters: []
-    return:
-      type: System.Int32
-  overridden: System.IO.Stream.WriteTimeout
-- uid: System.IO.FileStream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
-  id: CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: CopyToAsync(Stream, Int32, CancellationToken)
-  fullName: System.IO.FileStream.CopyToAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 186
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  syntax:
-    content: public override Task CopyToAsync(Stream destination, int bufferSize, CancellationToken cancellationToken)
-    content.vb: Public Overrides Function CopyToAsync(destination As Stream, bufferSize As Integer, cancellationToken As CancellationToken) As Task
-    parameters:
-    - id: destination
-      type: System.IO.Stream
-    - id: bufferSize
-      type: System.Int32
-    - id: cancellationToken
-      type: System.Threading.CancellationToken
-    return:
-      type: System.Threading.Tasks.Task
-  overridden: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
 - uid: System.IO.FileStream.Dispose(System.Boolean)
   id: Dispose(System.Boolean)
   parent: System.IO.FileStream
@@ -759,10 +861,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 191
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1193
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Releases the unmanaged resources used by the @'System.IO.FileStream' and optionally releases the managed resources.
   syntax:
@@ -773,6 +875,24 @@ items:
       type: System.Boolean
       description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   overridden: System.IO.Stream.Dispose(System.Boolean)
+- uid: System.IO.FileStream.Finalize
+  id: Finalize
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: Finalize()
+  fullName: System.IO.FileStream.Finalize()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1229
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Ensures that resources are freed and other cleanup operations are performed when the garbage collector reclaims the FileStream.
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
 - uid: System.IO.FileStream.Flush
   id: Flush
   parent: System.IO.FileStream
@@ -782,10 +902,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 201
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1238
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Clears buffers for this stream and causes any buffered data to be written to the file.
   syntax:
@@ -797,35 +917,105 @@ items:
     description: An I/O error occurred.
   - type: System.ObjectDisposedException
     description: The stream is closed.
-- uid: System.IO.FileStream.FlushAsync(System.Threading.CancellationToken)
-  id: FlushAsync(System.Threading.CancellationToken)
+- uid: System.IO.FileStream.Flush(System.Boolean)
+  id: Flush(System.Boolean)
   parent: System.IO.FileStream
   href: System.IO.FileStream.yml
-  name: FlushAsync(CancellationToken)
-  fullName: System.IO.FileStream.FlushAsync(System.Threading.CancellationToken)
+  name: Flush(Boolean)
+  fullName: System.IO.FileStream.Flush(System.Boolean)
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 206
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1243
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
-  summary: Asynchronously clears all buffers for this stream, causes any buffered data to be written to the underlying device, and monitors cancellation requests.
+  summary: Clears buffers for this stream and causes any buffered data to be written to the file, and also clears all intermediate file buffers.
   syntax:
-    content: public override Task FlushAsync(CancellationToken cancellationToken)
-    content.vb: Public Overrides Function FlushAsync(cancellationToken As CancellationToken) As Task
+    content: public virtual void Flush(bool flushToDisk)
+    content.vb: Public Overridable Sub Flush(flushToDisk As Boolean)
     parameters:
-    - id: cancellationToken
-      type: System.Threading.CancellationToken
-      description: The token to monitor for cancellation requests.
+    - id: flushToDisk
+      type: System.Boolean
+      description: true to flush all intermediate file buffers; otherwise, false.
+- uid: System.IO.FileStream.Handle
+  id: Handle
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: Handle
+  fullName: System.IO.FileStream.Handle
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1323
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets the operating system file handle for the file that the current FileStream object encapsulates.
+  syntax:
+    content: public virtual IntPtr Handle { get; }
+    content.vb: Public Overridable ReadOnly Property Handle As IntPtr
+    parameters: []
     return:
-      type: System.Threading.Tasks.Task
-      description: A task that represents the asynchronous flush operation.
-  overridden: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+      type: System.IntPtr
+      description: The operating system file handle for the file encapsulated by this FileStream object, or -1 if the FileStream has been closed.
   exceptions:
-  - type: System.ObjectDisposedException
-    description: The stream has been disposed.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.IO.FileStream.SafeFileHandle
+  id: SafeFileHandle
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: SafeFileHandle
+  fullName: System.IO.FileStream.SafeFileHandle
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1342
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets a @'Microsoft.Win32.SafeHandles.SafeFileHandle' object that represents the operating system file handle for the file that the current @'System.IO.FileStream' object encapsulates.
+  syntax:
+    content: public virtual SafeFileHandle SafeFileHandle { get; }
+    content.vb: Public Overridable ReadOnly Property SafeFileHandle As SafeFileHandle
+    parameters: []
+    return:
+      type: Microsoft.Win32.SafeHandles.SafeFileHandle
+      description: An object that represents the operating system file handle for the file that the current @'System.IO.FileStream' object encapsulates.
+- uid: System.IO.FileStream.SetLength(System.Int64)
+  id: SetLength(System.Int64)
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: SetLength(Int64)
+  fullName: System.IO.FileStream.SetLength(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1360
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Sets the length of this stream to the given value.
+  syntax:
+    content: public override void SetLength(long value)
+    content.vb: Public Overrides Sub SetLength(value As Long)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The new length of the stream.
+  overridden: System.IO.Stream.SetLength(System.Int64)
+  exceptions:
+  - type: System.IO.IOException
+    description: An I/O error has occurred.
+  - type: System.NotSupportedException
+    description: The stream does not support both writing and seeking.
+  - type: System.ArgumentOutOfRangeException
+    description: Attempted to set the *value* parameter to less than 0.
 - uid: System.IO.FileStream.Read(System.Byte[],System.Int32,System.Int32)
   id: Read(System.Byte[],System.Int32,System.Int32)
   parent: System.IO.FileStream
@@ -837,18 +1027,19 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 218
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1414
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Reads a block of bytes from the stream and writes the data in a given buffer.
   syntax:
-    content: public override int Read(byte[] buffer, int offset, int count)
-    content.vb: Public Overrides Function Read(buffer As Byte(), offset As Integer, count As Integer) As Integer
+    content: public override int Read(byte[] array, int offset, int count)
+    content.vb: Public Overrides Function Read(array As Byte(), offset As Integer, count As Integer) As Integer
     parameters:
-    - id: buffer
+    - id: array
       type: System.Byte[]
+      description: When this method returns, contains the specified byte array with the values between *offset* and (*offset* + *count* - 1*)* replaced by the bytes read from the current source.
     - id: offset
       type: System.Int32
       description: The byte offset in *array* at which the read bytes will be placed.
@@ -872,6 +1063,372 @@ items:
     description: '*offset* and *count* describe an invalid range in *array*.'
   - type: System.ObjectDisposedException
     description: Methods were called after the stream was closed.
+- uid: System.IO.FileStream.Seek(System.Int64,System.IO.SeekOrigin)
+  id: Seek(System.Int64,System.IO.SeekOrigin)
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: Seek(Int64, SeekOrigin)
+  fullName: System.IO.FileStream.Seek(System.Int64, System.IO.SeekOrigin)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1525
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Sets the current position of this stream to the given value.
+  syntax:
+    content: public override long Seek(long offset, SeekOrigin origin)
+    content.vb: Public Overrides Function Seek(offset As Long, origin As SeekOrigin) As Long
+    parameters:
+    - id: offset
+      type: System.Int64
+      description: The point relative to *origin* from which to begin seeking.
+    - id: origin
+      type: System.IO.SeekOrigin
+      description: Specifies the beginning, the end, or the current position as a reference point for *offset*, using a value of type @'System.IO.SeekOrigin'.
+    return:
+      type: System.Int64
+      description: The new position in the stream.
+  overridden: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+  exceptions:
+  - type: System.IO.IOException
+    description: An I/O error occurred.
+  - type: System.NotSupportedException
+    description: The stream does not support seeking, such as if the FileStream is constructed from a pipe or console output.
+  - type: System.ArgumentException
+    description: Seeking is attempted before the beginning of the stream.
+  - type: System.ObjectDisposedException
+    description: Methods were called after the stream was closed.
+- uid: System.IO.FileStream.Write(System.Byte[],System.Int32,System.Int32)
+  id: Write(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: Write(Byte[], Int32, Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+  fullName: System.IO.FileStream.Write(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.IO.FileStream.Write(System.Byte(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1667
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes a block of bytes to the file stream.
+  syntax:
+    content: public override void Write(byte[] array, int offset, int count)
+    content.vb: Public Overrides Sub Write(array As Byte(), offset As Integer, count As Integer)
+    parameters:
+    - id: array
+      type: System.Byte[]
+      description: The buffer containing data to write to the stream.
+    - id: offset
+      type: System.Int32
+      description: The zero-based byte offset in *array* from which to begin copying bytes to the stream.
+    - id: count
+      type: System.Int32
+      description: The maximum number of bytes to write.
+  overridden: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentException
+    description: '*offset* and *count* describe an invalid range in *array*.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* or *count* is negative.'
+  - type: System.IO.IOException
+    description: An I/O error occurred. - or -Another thread may have caused an unexpected change in the position of the operating system's file handle.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.NotSupportedException
+    description: The current stream instance does not support writing.
+- uid: System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  id: BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: BeginRead(Byte[], Int32, Int32, AsyncCallback, Object)
+  name.vb: BeginRead(Byte(), Int32, Int32, AsyncCallback, Object)
+  fullName: System.IO.FileStream.BeginRead(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  fullName.vb: System.IO.FileStream.BeginRead(System.Byte(), System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 1781
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Begins an asynchronous read operation. (Consider using @'System.IO.FileStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)' instead; see the Remarks section.)
+  syntax:
+    content: public override IAsyncResult BeginRead(byte[] array, int offset, int numBytes, AsyncCallback userCallback, object stateObject)
+    content.vb: Public Overrides Function BeginRead(array As Byte(), offset As Integer, numBytes As Integer, userCallback As AsyncCallback, stateObject As Object) As IAsyncResult
+    parameters:
+    - id: array
+      type: System.Byte[]
+      description: The buffer to read data into.
+    - id: offset
+      type: System.Int32
+      description: The byte offset in *array* at which to begin reading.
+    - id: numBytes
+      type: System.Int32
+      description: The maximum number of bytes to read.
+    - id: userCallback
+      type: System.AsyncCallback
+      description: The method to be called when the asynchronous read operation is completed.
+    - id: stateObject
+      type: System.Object
+      description: A user-provided object that distinguishes this particular asynchronous read request from other requests.
+    return:
+      type: System.IAsyncResult
+      description: An object that references the asynchronous read.
+  overridden: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  exceptions:
+  - type: System.ArgumentException
+    description: The array length minus *offset* is less than *numBytes*.
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* or *numBytes* is negative.'
+  - type: System.IO.IOException
+    description: An asynchronous read was attempted past the end of the file.
+- uid: System.IO.FileStream.EndRead(System.IAsyncResult)
+  id: EndRead(System.IAsyncResult)
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: EndRead(IAsyncResult)
+  fullName: System.IO.FileStream.EndRead(System.IAsyncResult)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 2016
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Waits for the pending asynchronous read operation to complete. (Consider using @'System.IO.FileStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)' instead; see the Remarks section.)
+  syntax:
+    content: public override int EndRead(IAsyncResult asyncResult)
+    content.vb: Public Overrides Function EndRead(asyncResult As IAsyncResult) As Integer
+    parameters:
+    - id: asyncResult
+      type: System.IAsyncResult
+      description: The reference to the pending asynchronous request to wait for.
+    return:
+      type: System.Int32
+      description: The number of bytes read from the stream, between 0 and the number of bytes you requested. Streams only return 0 at the end of the stream, otherwise, they should block until at least 1 byte is available.
+  overridden: System.IO.Stream.EndRead(System.IAsyncResult)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*asyncResult* is null.'
+  - type: System.ArgumentException
+    description: This @'System.IAsyncResult' object was not created by calling @'System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)' on this class.
+  - type: System.InvalidOperationException
+    description: '@''System.IO.FileStream.EndRead(System.IAsyncResult)'' is called multiple times.'
+  - type: System.IO.IOException
+    description: The stream is closed or an internal error has occurred.
+- uid: System.IO.FileStream.ReadByte
+  id: ReadByte
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: ReadByte()
+  fullName: System.IO.FileStream.ReadByte()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 2056
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a byte from the file and advances the read position one byte.
+  syntax:
+    content: public override int ReadByte()
+    content.vb: Public Overrides Function ReadByte As Integer
+    return:
+      type: System.Int32
+      description: The byte, cast to an @'System.Int32', or -1 if the end of the stream has been reached.
+  overridden: System.IO.Stream.ReadByte
+  exceptions:
+  - type: System.NotSupportedException
+    description: The current stream does not support reading.
+  - type: System.ObjectDisposedException
+    description: The current stream is closed.
+- uid: System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  id: BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: BeginWrite(Byte[], Int32, Int32, AsyncCallback, Object)
+  name.vb: BeginWrite(Byte(), Int32, Int32, AsyncCallback, Object)
+  fullName: System.IO.FileStream.BeginWrite(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  fullName.vb: System.IO.FileStream.BeginWrite(System.Byte(), System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 2077
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Begins an asynchronous write operation. (Consider using @'System.IO.FileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)' instead; see the Remarks section.)
+  syntax:
+    content: public override IAsyncResult BeginWrite(byte[] array, int offset, int numBytes, AsyncCallback userCallback, object stateObject)
+    content.vb: Public Overrides Function BeginWrite(array As Byte(), offset As Integer, numBytes As Integer, userCallback As AsyncCallback, stateObject As Object) As IAsyncResult
+    parameters:
+    - id: array
+      type: System.Byte[]
+      description: The buffer containing data to write to the current stream.
+    - id: offset
+      type: System.Int32
+      description: The zero-based byte offset in *array* at which to begin copying bytes to the current stream.
+    - id: numBytes
+      type: System.Int32
+      description: The maximum number of bytes to write.
+    - id: userCallback
+      type: System.AsyncCallback
+      description: The method to be called when the asynchronous write operation is completed.
+    - id: stateObject
+      type: System.Object
+      description: A user-provided object that distinguishes this particular asynchronous write request from other requests.
+    return:
+      type: System.IAsyncResult
+      description: An object that references the asynchronous write.
+  overridden: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  exceptions:
+  - type: System.ArgumentException
+    description: '*array* length minus *offset* is less than *numBytes*.'
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* or *numBytes* is negative.'
+  - type: System.NotSupportedException
+    description: The stream does not support writing.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurred.
+- uid: System.IO.FileStream.EndWrite(System.IAsyncResult)
+  id: EndWrite(System.IAsyncResult)
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: EndWrite(IAsyncResult)
+  fullName: System.IO.FileStream.EndWrite(System.IAsyncResult)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 2249
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Ends an asynchronous write operation and blocks until the I/O operation is complete. (Consider using @'System.IO.FileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)' instead; see the Remarks section.)
+  syntax:
+    content: public override void EndWrite(IAsyncResult asyncResult)
+    content.vb: Public Overrides Sub EndWrite(asyncResult As IAsyncResult)
+    parameters:
+    - id: asyncResult
+      type: System.IAsyncResult
+      description: The pending asynchronous I/O request.
+  overridden: System.IO.Stream.EndWrite(System.IAsyncResult)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*asyncResult* is null.'
+  - type: System.ArgumentException
+    description: This @'System.IAsyncResult' object was not created by calling @'System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)' on this class.
+  - type: System.InvalidOperationException
+    description: '@''System.IO.FileStream.EndWrite(System.IAsyncResult)'' is called multiple times.'
+  - type: System.IO.IOException
+    description: The stream is closed or an internal error has occurred.
+- uid: System.IO.FileStream.WriteByte(System.Byte)
+  id: WriteByte(System.Byte)
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: WriteByte(Byte)
+  fullName: System.IO.FileStream.WriteByte(System.Byte)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 2286
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes a byte to the current position in the file stream.
+  syntax:
+    content: public override void WriteByte(byte value)
+    content.vb: Public Overrides Sub WriteByte(value As Byte)
+    parameters:
+    - id: value
+      type: System.Byte
+      description: A byte to write to the stream.
+  overridden: System.IO.Stream.WriteByte(System.Byte)
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.NotSupportedException
+    description: The stream does not support writing.
+- uid: System.IO.FileStream.Lock(System.Int64,System.Int64)
+  id: Lock(System.Int64,System.Int64)
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: Lock(Int64, Int64)
+  fullName: System.IO.FileStream.Lock(System.Int64, System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 2305
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Prevents other processes from reading from or writing to the @'System.IO.FileStream'.
+  syntax:
+    content: public virtual void Lock(long position, long length)
+    content.vb: Public Overridable Sub Lock(position As Long, length As Long)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The beginning of the range to lock. The value of this parameter must be equal to or greater than zero (0).
+    - id: length
+      type: System.Int64
+      description: The range to be locked.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* or *length* is negative.'
+  - type: System.ObjectDisposedException
+    description: The file is closed.
+  - type: System.IO.IOException
+    description: The process cannot access the file because another process has locked a portion of the file.
+- uid: System.IO.FileStream.Unlock(System.Int64,System.Int64)
+  id: Unlock(System.Int64,System.Int64)
+  parent: System.IO.FileStream
+  href: System.IO.FileStream.yml
+  name: Unlock(Int64, Int64)
+  fullName: System.IO.FileStream.Unlock(System.Int64, System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 2321
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Allows access by other processes to all or part of a file that was previously locked.
+  syntax:
+    content: public virtual void Unlock(long position, long length)
+    content.vb: Public Overridable Sub Unlock(position As Long, length As Long)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The beginning of the range to unlock.
+    - id: length
+      type: System.Int64
+      description: The range to be unlocked.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* or *length* is negative.'
 - uid: System.IO.FileStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
   id: ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
   parent: System.IO.FileStream
@@ -883,10 +1440,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 223
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 2472
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Asynchronously reads a sequence of bytes from the current stream, advances the position within the stream by the number of bytes read, and monitors cancellation requests.
   syntax:
@@ -922,144 +1479,6 @@ items:
     description: The stream has been disposed.
   - type: System.InvalidOperationException
     description: The stream is currently in use by a previous read operation.
-- uid: System.IO.FileStream.ReadByte
-  id: ReadByte
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: ReadByte()
-  fullName: System.IO.FileStream.ReadByte()
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 245
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  summary: Reads a byte from the file and advances the read position one byte.
-  syntax:
-    content: public override int ReadByte()
-    content.vb: Public Overrides Function ReadByte As Integer
-    return:
-      type: System.Int32
-      description: The byte, cast to an @'System.Int32', or -1 if the end of the stream has been reached.
-  overridden: System.IO.Stream.ReadByte
-  exceptions:
-  - type: System.NotSupportedException
-    description: The current stream does not support reading.
-  - type: System.ObjectDisposedException
-    description: The current stream is closed.
-- uid: System.IO.FileStream.Seek(System.Int64,System.IO.SeekOrigin)
-  id: Seek(System.Int64,System.IO.SeekOrigin)
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: Seek(Int64, SeekOrigin)
-  fullName: System.IO.FileStream.Seek(System.Int64, System.IO.SeekOrigin)
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 250
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  summary: Sets the current position of this stream to the given value.
-  syntax:
-    content: public override long Seek(long offset, SeekOrigin origin)
-    content.vb: Public Overrides Function Seek(offset As Long, origin As SeekOrigin) As Long
-    parameters:
-    - id: offset
-      type: System.Int64
-      description: The point relative to *origin* from which to begin seeking.
-    - id: origin
-      type: System.IO.SeekOrigin
-      description: Specifies the beginning, the end, or the current position as a reference point for *offset*, using a value of type @'System.IO.SeekOrigin'.
-    return:
-      type: System.Int64
-      description: The new position in the stream.
-  overridden: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
-  exceptions:
-  - type: System.IO.IOException
-    description: An I/O error occurred.
-  - type: System.NotSupportedException
-    description: The stream does not support seeking, such as if the FileStream is constructed from a pipe or console output.
-  - type: System.ArgumentException
-    description: Seeking is attempted before the beginning of the stream.
-  - type: System.ObjectDisposedException
-    description: Methods were called after the stream was closed.
-- uid: System.IO.FileStream.SetLength(System.Int64)
-  id: SetLength(System.Int64)
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: SetLength(Int64)
-  fullName: System.IO.FileStream.SetLength(System.Int64)
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 255
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  summary: Sets the length of this stream to the given value.
-  syntax:
-    content: public override void SetLength(long value)
-    content.vb: Public Overrides Sub SetLength(value As Long)
-    parameters:
-    - id: value
-      type: System.Int64
-      description: The new length of the stream.
-  overridden: System.IO.Stream.SetLength(System.Int64)
-  exceptions:
-  - type: System.IO.IOException
-    description: An I/O error has occurred.
-  - type: System.NotSupportedException
-    description: The stream does not support both writing and seeking.
-  - type: System.ArgumentOutOfRangeException
-    description: Attempted to set the *value* parameter to less than 0.
-- uid: System.IO.FileStream.Write(System.Byte[],System.Int32,System.Int32)
-  id: Write(System.Byte[],System.Int32,System.Int32)
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: Write(Byte[], Int32, Int32)
-  name.vb: Write(Byte(), Int32, Int32)
-  fullName: System.IO.FileStream.Write(System.Byte[], System.Int32, System.Int32)
-  fullName.vb: System.IO.FileStream.Write(System.Byte(), System.Int32, System.Int32)
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 260
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  summary: Writes a block of bytes to the file stream.
-  syntax:
-    content: public override void Write(byte[] buffer, int offset, int count)
-    content.vb: Public Overrides Sub Write(buffer As Byte(), offset As Integer, count As Integer)
-    parameters:
-    - id: buffer
-      type: System.Byte[]
-    - id: offset
-      type: System.Int32
-      description: The zero-based byte offset in *array* from which to begin copying bytes to the stream.
-    - id: count
-      type: System.Int32
-      description: The maximum number of bytes to write.
-  overridden: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
-  exceptions:
-  - type: System.ArgumentNullException
-    description: '*array* is null.'
-  - type: System.ArgumentException
-    description: '*offset* and *count* describe an invalid range in *array*.'
-  - type: System.ArgumentOutOfRangeException
-    description: '*offset* or *count* is negative.'
-  - type: System.IO.IOException
-    description: An I/O error occurred. - or -Another thread may have caused an unexpected change in the position of the operating system's file handle.
-  - type: System.ObjectDisposedException
-    description: The stream is closed.
-  - type: System.NotSupportedException
-    description: The current stream instance does not support writing.
 - uid: System.IO.FileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
   id: WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
   parent: System.IO.FileStream
@@ -1071,10 +1490,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 265
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 2524
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Asynchronously writes a sequence of bytes to the current stream, advances the current position within this stream by the number of bytes written, and monitors cancellation requests.
   syntax:
@@ -1110,315 +1529,297 @@ items:
     description: The stream has been disposed.
   - type: System.InvalidOperationException
     description: The stream is currently in use by a previous write operation.
-- uid: System.IO.FileStream.WriteByte(System.Byte)
-  id: WriteByte(System.Byte)
+- uid: System.IO.FileStream.FlushAsync(System.Threading.CancellationToken)
+  id: FlushAsync(System.Threading.CancellationToken)
   parent: System.IO.FileStream
   href: System.IO.FileStream.yml
-  name: WriteByte(Byte)
-  fullName: System.IO.FileStream.WriteByte(System.Byte)
+  name: FlushAsync(CancellationToken)
+  fullName: System.IO.FileStream.FlushAsync(System.Threading.CancellationToken)
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 287
+    path: src/mscorlib/src/System/IO/FileStream.cs
+    startLine: 2697
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
-  summary: Writes a byte to the current position in the file stream.
+  summary: Asynchronously clears all buffers for this stream, causes any buffered data to be written to the underlying device, and monitors cancellation requests.
   syntax:
-    content: public override void WriteByte(byte value)
-    content.vb: Public Overrides Sub WriteByte(value As Byte)
+    content: public override Task FlushAsync(CancellationToken cancellationToken)
+    content.vb: Public Overrides Function FlushAsync(cancellationToken As CancellationToken) As Task
     parameters:
-    - id: value
-      type: System.Byte
-      description: A byte to write to the stream.
-  overridden: System.IO.Stream.WriteByte(System.Byte)
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The token to monitor for cancellation requests.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous flush operation.
+  overridden: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
   exceptions:
   - type: System.ObjectDisposedException
-    description: The stream is closed.
-  - type: System.NotSupportedException
-    description: The stream does not support writing.
-- uid: System.IO.FileStream.Finalize
-  id: Finalize
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: Finalize()
-  fullName: System.IO.FileStream.Finalize()
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.cs
-    startLine: 294
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  summary: Ensures that resources are freed and other cleanup operations are performed when the garbage collector reclaims the FileStream.
-  syntax:
-    content: protected void Finalize()
-    content.vb: Protected Sub Finalize
-- uid: System.IO.FileStream.#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Int32)
-  id: '#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Int32)'
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: FileStream(SafeFileHandle, FileAccess, Int32)
-  fullName: System.IO.FileStream.FileStream(Microsoft.Win32.SafeHandles.SafeFileHandle, System.IO.FileAccess, System.Int32)
-  type: Constructor
-  source:
-    remote: *o1
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.Win32.cs
-    startLine: 11
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  summary: Initializes a new instance of the @'System.IO.FileStream' class for the specified file handle, with the specified read/write permission, and buffer size.
-  syntax:
-    content: public FileStream(SafeFileHandle handle, FileAccess access, int bufferSize)
-    content.vb: Public Sub New(handle As SafeFileHandle, access As FileAccess, bufferSize As Integer)
-    parameters:
-    - id: handle
-      type: Microsoft.Win32.SafeHandles.SafeFileHandle
-      description: A file handle for the file that the current FileStream object will encapsulate.
-    - id: access
-      type: System.IO.FileAccess
-      description: A @'System.IO.FileAccess' constant that sets the @'System.IO.FileStream.CanRead' and @'System.IO.FileStream.CanWrite' properties of the FileStream object.
-    - id: bufferSize
-      type: System.Int32
-      description: A positive @'System.Int32' value greater than 0 indicating the buffer size. The default buffer size is 4096.
-  exceptions:
-  - type: System.ArgumentException
-    description: The *handle* parameter is an invalid handle.-or-The *handle* parameter is a synchronous handle and it was used asynchronously.
-  - type: System.ArgumentOutOfRangeException
-    description: The *bufferSize* parameter is negative.
-  - type: System.IO.IOException
-    description: An I/O error, such as a disk error, occurred.-or-The stream has been closed.
-  - type: System.Security.SecurityException
-    description: The caller does not have the required permission.
-  - type: System.UnauthorizedAccessException
-    description: The *access* requested is not permitted by the operating system for the specified file handle, such as when *access* is Write or ReadWrite and the file handle is set for read-only access.
-- uid: System.IO.FileStream.#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Int32,System.Boolean)
-  id: '#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Int32,System.Boolean)'
-  parent: System.IO.FileStream
-  href: System.IO.FileStream.yml
-  name: FileStream(SafeFileHandle, FileAccess, Int32, Boolean)
-  fullName: System.IO.FileStream.FileStream(Microsoft.Win32.SafeHandles.SafeFileHandle, System.IO.FileAccess, System.Int32, System.Boolean)
-  type: Constructor
-  source:
-    remote: *o1
-    path: src/System.IO.FileSystem/src/System/IO/FileStream.Win32.cs
-    startLine: 16
-  assemblies:
-  - System.IO.FileSystem
-  namespace: System.IO
-  summary: Initializes a new instance of the @'System.IO.FileStream' class for the specified file handle, with the specified read/write permission, buffer size, and synchronous or asynchronous state.
-  syntax:
-    content: public FileStream(SafeFileHandle handle, FileAccess access, int bufferSize, bool isAsync)
-    content.vb: Public Sub New(handle As SafeFileHandle, access As FileAccess, bufferSize As Integer, isAsync As Boolean)
-    parameters:
-    - id: handle
-      type: Microsoft.Win32.SafeHandles.SafeFileHandle
-      description: A file handle for the file that this FileStream object will encapsulate.
-    - id: access
-      type: System.IO.FileAccess
-      description: A constant that sets the @'System.IO.FileStream.CanRead' and @'System.IO.FileStream.CanWrite' properties of the FileStream object.
-    - id: bufferSize
-      type: System.Int32
-      description: A positive @'System.Int32' value greater than 0 indicating the buffer size. The default buffer size is 4096.
-    - id: isAsync
-      type: System.Boolean
-      description: true if the handle was opened asynchronously (that is, in overlapped I/O mode); otherwise, false.
-  exceptions:
-  - type: System.ArgumentException
-    description: The *handle* parameter is an invalid handle.-or-The *handle* parameter is a synchronous handle and it was used asynchronously.
-  - type: System.ArgumentOutOfRangeException
-    description: The *bufferSize* parameter is negative.
-  - type: System.IO.IOException
-    description: An I/O error, such as a disk error, occurred.-or-The stream has been closed.
-  - type: System.Security.SecurityException
-    description: The caller does not have the required permission.
-  - type: System.UnauthorizedAccessException
-    description: The *access* requested is not permitted by the operating system for the specified file handle, such as when *access* is Write or ReadWrite and the file handle is set for read-only access.
+    description: The stream has been disposed.
 references:
 - uid: System.IO
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
-- uid: System.MarshalByRefObject
-  parent: System
-  isExternal: true
-  name: MarshalByRefObject
-  fullName: System.MarshalByRefObject
+  type: Class
 - uid: System.IO.Stream
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Stream
   fullName: System.IO.Stream
+  type: Class
 - uid: System.IO.Stream.Null
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   fullName: System.IO.Stream.Null
+- uid: System.IO.Stream.CanTimeout
+  parent: System.IO.Stream
+  isExternal: false
+  href: System.IO.Stream.yml
+  name: CanTimeout
+  fullName: System.IO.Stream.CanTimeout
+- uid: System.IO.Stream.ReadTimeout
+  parent: System.IO.Stream
+  isExternal: false
+  href: System.IO.Stream.yml
+  name: ReadTimeout
+  fullName: System.IO.Stream.ReadTimeout
+- uid: System.IO.Stream.WriteTimeout
+  parent: System.IO.Stream
+  isExternal: false
+  href: System.IO.Stream.yml
+  name: WriteTimeout
+  fullName: System.IO.Stream.WriteTimeout
 - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: CopyToAsync(Stream)
   fullName: System.IO.Stream.CopyToAsync(System.IO.Stream)
   spec.csharp:
   - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
     name: CopyToAsync
     fullName: System.IO.Stream.CopyToAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
     name: CopyToAsync
     fullName: System.IO.Stream.CopyToAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: CopyToAsync(Stream, Int32)
   fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32)
   spec.csharp:
   - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
     name: CopyToAsync
     fullName: System.IO.Stream.CopyToAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
     name: CopyToAsync
     fullName: System.IO.Stream.CopyToAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: false
+  href: System.IO.Stream.yml
+  name: CopyToAsync(Stream, Int32, CancellationToken)
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+    name: CopyToAsync
+    fullName: System.IO.Stream.CopyToAsync
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    href: System.IO.Stream.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    href: System.Threading.CancellationToken.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+    name: CopyToAsync
+    fullName: System.IO.Stream.CopyToAsync
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    href: System.IO.Stream.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    href: System.Threading.CancellationToken.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.CopyTo(System.IO.Stream)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: CopyTo(Stream)
   fullName: System.IO.Stream.CopyTo(System.IO.Stream)
   spec.csharp:
   - uid: System.IO.Stream.CopyTo(System.IO.Stream)
     name: CopyTo
     fullName: System.IO.Stream.CopyTo
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.CopyTo(System.IO.Stream)
     name: CopyTo
     fullName: System.IO.Stream.CopyTo
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: CopyTo(Stream, Int32)
   fullName: System.IO.Stream.CopyTo(System.IO.Stream, System.Int32)
   spec.csharp:
   - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
     name: CopyTo
     fullName: System.IO.Stream.CopyTo
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
     name: CopyTo
     fullName: System.IO.Stream.CopyTo
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.Close
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Close()
   fullName: System.IO.Stream.Close()
   spec.csharp:
   - uid: System.IO.Stream.Close
     name: Close
     fullName: System.IO.Stream.Close
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
@@ -1427,21 +1828,22 @@ references:
   - uid: System.IO.Stream.Close
     name: Close
     fullName: System.IO.Stream.Close
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.IO.Stream.Dispose
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Dispose()
   fullName: System.IO.Stream.Dispose()
   spec.csharp:
   - uid: System.IO.Stream.Dispose
     name: Dispose
     fullName: System.IO.Stream.Dispose
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
@@ -1450,21 +1852,22 @@ references:
   - uid: System.IO.Stream.Dispose
     name: Dispose
     fullName: System.IO.Stream.Dispose
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.IO.Stream.FlushAsync
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: FlushAsync()
   fullName: System.IO.Stream.FlushAsync()
   spec.csharp:
   - uid: System.IO.Stream.FlushAsync
     name: FlushAsync
     fullName: System.IO.Stream.FlushAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
@@ -1473,21 +1876,22 @@ references:
   - uid: System.IO.Stream.FlushAsync
     name: FlushAsync
     fullName: System.IO.Stream.FlushAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.IO.Stream.CreateWaitHandle
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: CreateWaitHandle()
   fullName: System.IO.Stream.CreateWaitHandle()
   spec.csharp:
   - uid: System.IO.Stream.CreateWaitHandle
     name: CreateWaitHandle
     fullName: System.IO.Stream.CreateWaitHandle
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
@@ -1496,130 +1900,15 @@ references:
   - uid: System.IO.Stream.CreateWaitHandle
     name: CreateWaitHandle
     fullName: System.IO.Stream.CreateWaitHandle
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
-  - name: )
-    fullName: )
-- uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
-  parent: System.IO.Stream
-  isExternal: true
-  name: BeginRead(Byte[], Int32, Int32, AsyncCallback, Object)
-  name.vb: BeginRead(Byte(), Int32, Int32, AsyncCallback, Object)
-  fullName: System.IO.Stream.BeginRead(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)
-  fullName.vb: System.IO.Stream.BeginRead(System.Byte(), System.Int32, System.Int32, System.AsyncCallback, System.Object)
-  spec.csharp:
-  - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
-    name: BeginRead
-    fullName: System.IO.Stream.BeginRead
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Byte
-    name: Byte
-    fullName: System.Byte
-    isExternal: true
-  - name: '[]'
-    fullName: '[]'
-  - name: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.AsyncCallback
-    name: AsyncCallback
-    fullName: System.AsyncCallback
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
-    name: BeginRead
-    fullName: System.IO.Stream.BeginRead
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Byte
-    name: Byte
-    fullName: System.Byte
-    isExternal: true
-  - name: ()
-    fullName: ()
-  - name: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.AsyncCallback
-    name: AsyncCallback
-    fullName: System.AsyncCallback
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.IO.Stream.EndRead(System.IAsyncResult)
-  parent: System.IO.Stream
-  isExternal: true
-  name: EndRead(IAsyncResult)
-  fullName: System.IO.Stream.EndRead(System.IAsyncResult)
-  spec.csharp:
-  - uid: System.IO.Stream.EndRead(System.IAsyncResult)
-    name: EndRead
-    fullName: System.IO.Stream.EndRead
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.IAsyncResult
-    name: IAsyncResult
-    fullName: System.IAsyncResult
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.IO.Stream.EndRead(System.IAsyncResult)
-    name: EndRead
-    fullName: System.IO.Stream.EndRead
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.IAsyncResult
-    name: IAsyncResult
-    fullName: System.IAsyncResult
-    isExternal: true
   - name: )
     fullName: )
 - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: ReadAsync(Byte[], Int32, Int32)
   name.vb: ReadAsync(Byte(), Int32, Int32)
   fullName: System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32)
@@ -1628,13 +1917,13 @@ references:
   - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
     name: ReadAsync
     fullName: System.IO.Stream.ReadAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   - name: ', '
@@ -1642,26 +1931,26 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
     name: ReadAsync
     fullName: System.IO.Stream.ReadAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
   - name: ', '
@@ -1669,134 +1958,19 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
-  parent: System.IO.Stream
-  isExternal: true
-  name: BeginWrite(Byte[], Int32, Int32, AsyncCallback, Object)
-  name.vb: BeginWrite(Byte(), Int32, Int32, AsyncCallback, Object)
-  fullName: System.IO.Stream.BeginWrite(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)
-  fullName.vb: System.IO.Stream.BeginWrite(System.Byte(), System.Int32, System.Int32, System.AsyncCallback, System.Object)
-  spec.csharp:
-  - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
-    name: BeginWrite
-    fullName: System.IO.Stream.BeginWrite
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Byte
-    name: Byte
-    fullName: System.Byte
-    isExternal: true
-  - name: '[]'
-    fullName: '[]'
-  - name: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.AsyncCallback
-    name: AsyncCallback
-    fullName: System.AsyncCallback
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
-    name: BeginWrite
-    fullName: System.IO.Stream.BeginWrite
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Byte
-    name: Byte
-    fullName: System.Byte
-    isExternal: true
-  - name: ()
-    fullName: ()
-  - name: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.AsyncCallback
-    name: AsyncCallback
-    fullName: System.AsyncCallback
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.IO.Stream.EndWrite(System.IAsyncResult)
-  parent: System.IO.Stream
-  isExternal: true
-  name: EndWrite(IAsyncResult)
-  fullName: System.IO.Stream.EndWrite(System.IAsyncResult)
-  spec.csharp:
-  - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
-    name: EndWrite
-    fullName: System.IO.Stream.EndWrite
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.IAsyncResult
-    name: IAsyncResult
-    fullName: System.IAsyncResult
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
-    name: EndWrite
-    fullName: System.IO.Stream.EndWrite
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.IAsyncResult
-    name: IAsyncResult
-    fullName: System.IAsyncResult
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: WriteAsync(Byte[], Int32, Int32)
   name.vb: WriteAsync(Byte(), Int32, Int32)
   fullName: System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32)
@@ -1805,13 +1979,13 @@ references:
   - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
     name: WriteAsync
     fullName: System.IO.Stream.WriteAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   - name: ', '
@@ -1819,26 +1993,26 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
     name: WriteAsync
     fullName: System.IO.Stream.WriteAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
   - name: ', '
@@ -1846,56 +2020,58 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.Synchronized(System.IO.Stream)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Synchronized(Stream)
   fullName: System.IO.Stream.Synchronized(System.IO.Stream)
   spec.csharp:
   - uid: System.IO.Stream.Synchronized(System.IO.Stream)
     name: Synchronized
     fullName: System.IO.Stream.Synchronized
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.Synchronized(System.IO.Stream)
     name: Synchronized
     fullName: System.IO.Stream.Synchronized
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.ObjectInvariant
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: ObjectInvariant()
   fullName: System.IO.Stream.ObjectInvariant()
   spec.csharp:
   - uid: System.IO.Stream.ObjectInvariant
     name: ObjectInvariant
     fullName: System.IO.Stream.ObjectInvariant
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
@@ -1904,129 +2080,22 @@ references:
   - uid: System.IO.Stream.ObjectInvariant
     name: ObjectInvariant
     fullName: System.IO.Stream.ObjectInvariant
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
-  - name: )
-    fullName: )
-- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
-  parent: System.MarshalByRefObject
-  isExternal: true
-  name: MemberwiseClone(Boolean)
-  fullName: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
-  spec.csharp:
-  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
-    name: MemberwiseClone
-    fullName: System.MarshalByRefObject.MemberwiseClone
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Boolean
-    name: Boolean
-    fullName: System.Boolean
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
-    name: MemberwiseClone
-    fullName: System.MarshalByRefObject.MemberwiseClone
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Boolean
-    name: Boolean
-    fullName: System.Boolean
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.MarshalByRefObject.GetLifetimeService
-  parent: System.MarshalByRefObject
-  isExternal: true
-  name: GetLifetimeService()
-  fullName: System.MarshalByRefObject.GetLifetimeService()
-  spec.csharp:
-  - uid: System.MarshalByRefObject.GetLifetimeService
-    name: GetLifetimeService
-    fullName: System.MarshalByRefObject.GetLifetimeService
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.MarshalByRefObject.GetLifetimeService
-    name: GetLifetimeService
-    fullName: System.MarshalByRefObject.GetLifetimeService
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-- uid: System.MarshalByRefObject.InitializeLifetimeService
-  parent: System.MarshalByRefObject
-  isExternal: true
-  name: InitializeLifetimeService()
-  fullName: System.MarshalByRefObject.InitializeLifetimeService()
-  spec.csharp:
-  - uid: System.MarshalByRefObject.InitializeLifetimeService
-    name: InitializeLifetimeService
-    fullName: System.MarshalByRefObject.InitializeLifetimeService
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.MarshalByRefObject.InitializeLifetimeService
-    name: InitializeLifetimeService
-    fullName: System.MarshalByRefObject.InitializeLifetimeService
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-- uid: System.MarshalByRefObject.CreateObjRef(System.Type)
-  parent: System.MarshalByRefObject
-  isExternal: true
-  name: CreateObjRef(Type)
-  fullName: System.MarshalByRefObject.CreateObjRef(System.Type)
-  spec.csharp:
-  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
-    name: CreateObjRef
-    fullName: System.MarshalByRefObject.CreateObjRef
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Type
-    name: Type
-    fullName: System.Type
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
-    name: CreateObjRef
-    fullName: System.MarshalByRefObject.CreateObjRef
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Type
-    name: Type
-    fullName: System.Type
-    isExternal: true
   - name: )
     fullName: )
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2035,138 +2104,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2175,7 +2248,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2230,48 +2303,42 @@ references:
   isExternal: false
   name: System
   fullName: System
-- uid: Microsoft.Win32.SafeHandles.SafeFileHandle
-  parent: Microsoft.Win32.SafeHandles
-  isExternal: false
-  href: Microsoft.Win32.SafeHandles.SafeFileHandle.yml
-  name: SafeFileHandle
-  fullName: Microsoft.Win32.SafeHandles.SafeFileHandle
-  type: Class
-- uid: System.IO.FileAccess
-  parent: System.IO
-  isExternal: true
-  name: FileAccess
-  fullName: System.IO.FileAccess
-- uid: Microsoft.Win32.SafeHandles
-  isExternal: false
-  name: Microsoft.Win32.SafeHandles
-  fullName: Microsoft.Win32.SafeHandles
   type: Namespace
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.IO.FileMode
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.FileMode.yml
   name: FileMode
   fullName: System.IO.FileMode
+  type: Enum
+- uid: System.IO.FileAccess
+  parent: System.IO
+  isExternal: false
+  href: System.IO.FileAccess.yml
+  name: FileAccess
+  fullName: System.IO.FileAccess
+  type: Enum
 - uid: System.IO.FileShare
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.FileShare.yml
   name: FileShare
   fullName: System.IO.FileShare
+  type: Enum
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
-- uid: System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  fullName: System.Boolean
+  type: Struct
 - uid: System.IO.FileOptions
   parent: System.IO
   isExternal: false
@@ -2279,166 +2346,112 @@ references:
   name: FileOptions
   fullName: System.IO.FileOptions
   type: Enum
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  href: System.Boolean.yml
+  name: Boolean
+  fullName: System.Boolean
+  type: Struct
+- uid: System.IntPtr
+  parent: System
+  isExternal: false
+  href: System.IntPtr.yml
+  name: IntPtr
+  fullName: System.IntPtr
+  type: Struct
+- uid: Microsoft.Win32.SafeHandles.SafeFileHandle
+  parent: Microsoft.Win32.SafeHandles
+  isExternal: false
+  href: Microsoft.Win32.SafeHandles.SafeFileHandle.yml
+  name: SafeFileHandle
+  fullName: Microsoft.Win32.SafeHandles.SafeFileHandle
+  type: Class
+- uid: Microsoft.Win32.SafeHandles
+  isExternal: false
+  name: Microsoft.Win32.SafeHandles
+  fullName: Microsoft.Win32.SafeHandles
+  type: Namespace
 - uid: System.IO.Stream.CanRead
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: CanRead
   fullName: System.IO.Stream.CanRead
-- uid: System.IO.Stream.CanSeek
-  parent: System.IO.Stream
-  isExternal: true
-  name: CanSeek
-  fullName: System.IO.Stream.CanSeek
 - uid: System.IO.Stream.CanWrite
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: CanWrite
   fullName: System.IO.Stream.CanWrite
+- uid: System.IO.Stream.CanSeek
+  parent: System.IO.Stream
+  isExternal: false
+  href: System.IO.Stream.yml
+  name: CanSeek
+  fullName: System.IO.Stream.CanSeek
 - uid: System.IO.Stream.Length
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Length
   fullName: System.IO.Stream.Length
 - uid: System.Int64
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int64.yml
   name: Int64
   fullName: System.Int64
+  type: Struct
 - uid: System.IO.Stream.Position
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Position
   fullName: System.IO.Stream.Position
-- uid: System.IO.Stream.ReadTimeout
-  parent: System.IO.Stream
-  isExternal: true
-  name: ReadTimeout
-  fullName: System.IO.Stream.ReadTimeout
-- uid: System.IO.Stream.CanTimeout
-  parent: System.IO.Stream
-  isExternal: true
-  name: CanTimeout
-  fullName: System.IO.Stream.CanTimeout
-- uid: System.IO.Stream.WriteTimeout
-  parent: System.IO.Stream
-  isExternal: true
-  name: WriteTimeout
-  fullName: System.IO.Stream.WriteTimeout
-- uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
-  parent: System.IO.Stream
-  isExternal: true
-  name: CopyToAsync(Stream, Int32, CancellationToken)
-  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)
-  spec.csharp:
-  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
-    name: CopyToAsync
-    fullName: System.IO.Stream.CopyToAsync
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.IO.Stream
-    name: Stream
-    fullName: System.IO.Stream
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Threading.CancellationToken
-    name: CancellationToken
-    fullName: System.Threading.CancellationToken
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
-    name: CopyToAsync
-    fullName: System.IO.Stream.CopyToAsync
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.IO.Stream
-    name: Stream
-    fullName: System.IO.Stream
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Threading.CancellationToken
-    name: CancellationToken
-    fullName: System.Threading.CancellationToken
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.Threading.CancellationToken
-  parent: System.Threading
-  isExternal: true
-  name: CancellationToken
-  fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task
-  parent: System.Threading.Tasks
-  isExternal: true
-  name: Task
-  fullName: System.Threading.Tasks.Task
-- uid: System.Threading
-  isExternal: false
-  name: System.Threading
-  fullName: System.Threading
-- uid: System.Threading.Tasks
-  isExternal: false
-  name: System.Threading.Tasks
-  fullName: System.Threading.Tasks
-  type: Namespace
 - uid: System.IO.Stream.Dispose(System.Boolean)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Dispose(Boolean)
   fullName: System.IO.Stream.Dispose(System.Boolean)
   spec.csharp:
   - uid: System.IO.Stream.Dispose(System.Boolean)
     name: Dispose
     fullName: System.IO.Stream.Dispose
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.Dispose(System.Boolean)
     name: Dispose
     fullName: System.IO.Stream.Dispose
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.Flush
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Flush()
   fullName: System.IO.Stream.Flush()
   spec.csharp:
   - uid: System.IO.Stream.Flush
     name: Flush
     fullName: System.IO.Stream.Flush
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
@@ -2447,45 +2460,47 @@ references:
   - uid: System.IO.Stream.Flush
     name: Flush
     fullName: System.IO.Stream.Flush
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
-- uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+- uid: System.IO.Stream.SetLength(System.Int64)
   parent: System.IO.Stream
-  isExternal: true
-  name: FlushAsync(CancellationToken)
-  fullName: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  isExternal: false
+  href: System.IO.Stream.yml
+  name: SetLength(Int64)
+  fullName: System.IO.Stream.SetLength(System.Int64)
   spec.csharp:
-  - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
-    name: FlushAsync
-    fullName: System.IO.Stream.FlushAsync
-    isExternal: true
+  - uid: System.IO.Stream.SetLength(System.Int64)
+    name: SetLength
+    fullName: System.IO.Stream.SetLength
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
-  - uid: System.Threading.CancellationToken
-    name: CancellationToken
-    fullName: System.Threading.CancellationToken
-    isExternal: true
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    href: System.Int64.yml
   - name: )
     fullName: )
   spec.vb:
-  - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
-    name: FlushAsync
-    fullName: System.IO.Stream.FlushAsync
-    isExternal: true
+  - uid: System.IO.Stream.SetLength(System.Int64)
+    name: SetLength
+    fullName: System.IO.Stream.SetLength
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
-  - uid: System.Threading.CancellationToken
-    name: CancellationToken
-    fullName: System.Threading.CancellationToken
-    isExternal: true
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    href: System.Int64.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Read(Byte[], Int32, Int32)
   name.vb: Read(Byte(), Int32, Int32)
   fullName: System.IO.Stream.Read(System.Byte[], System.Int32, System.Int32)
@@ -2494,13 +2509,13 @@ references:
   - uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
     name: Read
     fullName: System.IO.Stream.Read
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   - name: ', '
@@ -2508,26 +2523,26 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
     name: Read
     fullName: System.IO.Stream.Read
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
   - name: ', '
@@ -2535,17 +2550,18 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.Byte[]
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte[]
   name.vb: Byte()
   fullName: System.Byte[]
@@ -2554,256 +2570,71 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
-- uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
-  parent: System.IO.Stream
-  isExternal: true
-  name: ReadAsync(Byte[], Int32, Int32, CancellationToken)
-  name.vb: ReadAsync(Byte(), Int32, Int32, CancellationToken)
-  fullName: System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
-  fullName.vb: System.IO.Stream.ReadAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
-  spec.csharp:
-  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
-    name: ReadAsync
-    fullName: System.IO.Stream.ReadAsync
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Byte
-    name: Byte
-    fullName: System.Byte
-    isExternal: true
-  - name: '[]'
-    fullName: '[]'
-  - name: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Threading.CancellationToken
-    name: CancellationToken
-    fullName: System.Threading.CancellationToken
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
-    name: ReadAsync
-    fullName: System.IO.Stream.ReadAsync
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Byte
-    name: Byte
-    fullName: System.Byte
-    isExternal: true
-  - name: ()
-    fullName: ()
-  - name: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    fullName: ', '
-  - uid: System.Threading.CancellationToken
-    name: CancellationToken
-    fullName: System.Threading.CancellationToken
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.Threading.Tasks.Task{System.Int32}
-  parent: System.Threading.Tasks
-  definition: System.Threading.Tasks.Task`1
-  name: Task<Int32>
-  name.vb: Task(Of Int32)
-  fullName: System.Threading.Tasks.Task<System.Int32>
-  fullName.vb: System.Threading.Tasks.Task(Of System.Int32)
-  spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: <
-    fullName: <
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: '(Of '
-    fullName: '(Of '
-  - uid: System.Int32
-    name: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: )
-    fullName: )
-- uid: System.Threading.Tasks.Task`1
-  parent: System.Threading.Tasks
-  isExternal: true
-  name: Task<TResult>
-  name.vb: Task(Of TResult)
-  fullName: System.Threading.Tasks.Task<TResult>
-  fullName.vb: System.Threading.Tasks.Task(Of TResult)
-  spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: <
-    fullName: <
-  - name: TResult
-    fullName: TResult
-  - name: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: '(Of '
-    fullName: '(Of '
-  - name: TResult
-    fullName: TResult
-  - name: )
-    fullName: )
-- uid: System.IO.Stream.ReadByte
-  parent: System.IO.Stream
-  isExternal: true
-  name: ReadByte()
-  fullName: System.IO.Stream.ReadByte()
-  spec.csharp:
-  - uid: System.IO.Stream.ReadByte
-    name: ReadByte
-    fullName: System.IO.Stream.ReadByte
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.IO.Stream.ReadByte
-    name: ReadByte
-    fullName: System.IO.Stream.ReadByte
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
 - uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Seek(Int64, SeekOrigin)
   fullName: System.IO.Stream.Seek(System.Int64, System.IO.SeekOrigin)
   spec.csharp:
   - uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
     name: Seek
     fullName: System.IO.Stream.Seek
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: ', '
     fullName: ', '
   - uid: System.IO.SeekOrigin
     name: SeekOrigin
     fullName: System.IO.SeekOrigin
-    isExternal: true
+    href: System.IO.SeekOrigin.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
     name: Seek
     fullName: System.IO.Stream.Seek
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: ', '
     fullName: ', '
   - uid: System.IO.SeekOrigin
     name: SeekOrigin
     fullName: System.IO.SeekOrigin
-    isExternal: true
+    href: System.IO.SeekOrigin.yml
   - name: )
     fullName: )
 - uid: System.IO.SeekOrigin
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.SeekOrigin.yml
   name: SeekOrigin
   fullName: System.IO.SeekOrigin
-- uid: System.IO.Stream.SetLength(System.Int64)
-  parent: System.IO.Stream
-  isExternal: true
-  name: SetLength(Int64)
-  fullName: System.IO.Stream.SetLength(System.Int64)
-  spec.csharp:
-  - uid: System.IO.Stream.SetLength(System.Int64)
-    name: SetLength
-    fullName: System.IO.Stream.SetLength
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Int64
-    name: Int64
-    fullName: System.Int64
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.IO.Stream.SetLength(System.Int64)
-    name: SetLength
-    fullName: System.IO.Stream.SetLength
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Int64
-    name: Int64
-    fullName: System.Int64
-    isExternal: true
-  - name: )
-    fullName: )
+  type: Enum
 - uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Write(Byte[], Int32, Int32)
   name.vb: Write(Byte(), Int32, Int32)
   fullName: System.IO.Stream.Write(System.Byte[], System.Int32, System.Int32)
@@ -2812,13 +2643,13 @@ references:
   - uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
     name: Write
     fullName: System.IO.Stream.Write
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   - name: ', '
@@ -2826,26 +2657,26 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
     name: Write
     fullName: System.IO.Stream.Write
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
   - name: ', '
@@ -2853,18 +2684,490 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
+- uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  parent: System.IO.Stream
+  isExternal: false
+  href: System.IO.Stream.yml
+  name: BeginRead(Byte[], Int32, Int32, AsyncCallback, Object)
+  name.vb: BeginRead(Byte(), Int32, Int32, AsyncCallback, Object)
+  fullName: System.IO.Stream.BeginRead(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  fullName.vb: System.IO.Stream.BeginRead(System.Byte(), System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  spec.csharp:
+  - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginRead
+    fullName: System.IO.Stream.BeginRead
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    href: System.AsyncCallback.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginRead
+    fullName: System.IO.Stream.BeginRead
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    href: System.AsyncCallback.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+- uid: System.AsyncCallback
+  parent: System
+  isExternal: false
+  href: System.AsyncCallback.yml
+  name: AsyncCallback
+  fullName: System.AsyncCallback
+  type: Delegate
+- uid: System.IAsyncResult
+  parent: System
+  isExternal: false
+  href: System.IAsyncResult.yml
+  name: IAsyncResult
+  fullName: System.IAsyncResult
+  type: Interface
+- uid: System.IO.Stream.EndRead(System.IAsyncResult)
+  parent: System.IO.Stream
+  isExternal: false
+  href: System.IO.Stream.yml
+  name: EndRead(IAsyncResult)
+  fullName: System.IO.Stream.EndRead(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.IO.Stream.EndRead(System.IAsyncResult)
+    name: EndRead
+    fullName: System.IO.Stream.EndRead
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    href: System.IAsyncResult.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.EndRead(System.IAsyncResult)
+    name: EndRead
+    fullName: System.IO.Stream.EndRead
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    href: System.IAsyncResult.yml
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.ReadByte
+  parent: System.IO.Stream
+  isExternal: false
+  href: System.IO.Stream.yml
+  name: ReadByte()
+  fullName: System.IO.Stream.ReadByte()
+  spec.csharp:
+  - uid: System.IO.Stream.ReadByte
+    name: ReadByte
+    fullName: System.IO.Stream.ReadByte
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadByte
+    name: ReadByte
+    fullName: System.IO.Stream.ReadByte
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  parent: System.IO.Stream
+  isExternal: false
+  href: System.IO.Stream.yml
+  name: BeginWrite(Byte[], Int32, Int32, AsyncCallback, Object)
+  name.vb: BeginWrite(Byte(), Int32, Int32, AsyncCallback, Object)
+  fullName: System.IO.Stream.BeginWrite(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  fullName.vb: System.IO.Stream.BeginWrite(System.Byte(), System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  spec.csharp:
+  - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginWrite
+    fullName: System.IO.Stream.BeginWrite
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    href: System.AsyncCallback.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginWrite
+    fullName: System.IO.Stream.BeginWrite
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    href: System.AsyncCallback.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+  parent: System.IO.Stream
+  isExternal: false
+  href: System.IO.Stream.yml
+  name: EndWrite(IAsyncResult)
+  fullName: System.IO.Stream.EndWrite(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+    name: EndWrite
+    fullName: System.IO.Stream.EndWrite
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    href: System.IAsyncResult.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+    name: EndWrite
+    fullName: System.IO.Stream.EndWrite
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    href: System.IAsyncResult.yml
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.WriteByte(System.Byte)
+  parent: System.IO.Stream
+  isExternal: false
+  href: System.IO.Stream.yml
+  name: WriteByte(Byte)
+  fullName: System.IO.Stream.WriteByte(System.Byte)
+  spec.csharp:
+  - uid: System.IO.Stream.WriteByte(System.Byte)
+    name: WriteByte
+    fullName: System.IO.Stream.WriteByte
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.WriteByte(System.Byte)
+    name: WriteByte
+    fullName: System.IO.Stream.WriteByte
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: )
+    fullName: )
+- uid: System.Byte
+  parent: System
+  isExternal: false
+  href: System.Byte.yml
+  name: Byte
+  fullName: System.Byte
+  type: Struct
+- uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: false
+  href: System.IO.Stream.yml
+  name: ReadAsync(Byte[], Int32, Int32, CancellationToken)
+  name.vb: ReadAsync(Byte(), Int32, Int32, CancellationToken)
+  fullName: System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  fullName.vb: System.IO.Stream.ReadAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: ReadAsync
+    fullName: System.IO.Stream.ReadAsync
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    href: System.Threading.CancellationToken.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: ReadAsync
+    fullName: System.IO.Stream.ReadAsync
+    href: System.IO.Stream.yml
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    href: System.Threading.CancellationToken.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.CancellationToken.yml
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+  type: Struct
+  summary: Propagates notification that operations should be canceled.
+- uid: System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: System.Threading.Tasks.Task`1.yml
+  name: Task<Int32>
+  name.vb: Task(Of Int32)
+  fullName: System.Threading.Tasks.Task<System.Int32>
+  fullName.vb: System.Threading.Tasks.Task(Of System.Int32)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    href: System.Threading.Tasks.Task`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    href: System.Threading.Tasks.Task`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+  type: Namespace
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: false
+  href: System.Threading.Tasks.Task`1.yml
+  name: Task<TResult>
+  name.vb: Task(Of TResult)
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  type: Class
+  summary: Represents an asynchronous operation that produces a result at some time in the future.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    href: System.Threading.Tasks.Task`1.yml
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    href: System.Threading.Tasks.Task`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
 - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: WriteAsync(Byte[], Int32, Int32, CancellationToken)
   name.vb: WriteAsync(Byte(), Int32, Int32, CancellationToken)
   fullName: System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
@@ -2873,13 +3176,13 @@ references:
   - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
     name: WriteAsync
     fullName: System.IO.Stream.WriteAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   - name: ', '
@@ -2887,32 +3190,32 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Threading.CancellationToken
     name: CancellationToken
     fullName: System.Threading.CancellationToken
-    isExternal: true
+    href: System.Threading.CancellationToken.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
     name: WriteAsync
     fullName: System.IO.Stream.WriteAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
   - name: ', '
@@ -2920,54 +3223,58 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Threading.CancellationToken
     name: CancellationToken
     fullName: System.Threading.CancellationToken
-    isExternal: true
+    href: System.Threading.CancellationToken.yml
   - name: )
     fullName: )
-- uid: System.IO.Stream.WriteByte(System.Byte)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: false
+  href: System.Threading.Tasks.Task.yml
+  name: Task
+  fullName: System.Threading.Tasks.Task
+  type: Class
+  summary: Represents an asynchronous operation.
+- uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
   parent: System.IO.Stream
-  isExternal: true
-  name: WriteByte(Byte)
-  fullName: System.IO.Stream.WriteByte(System.Byte)
+  isExternal: false
+  href: System.IO.Stream.yml
+  name: FlushAsync(CancellationToken)
+  fullName: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
   spec.csharp:
-  - uid: System.IO.Stream.WriteByte(System.Byte)
-    name: WriteByte
-    fullName: System.IO.Stream.WriteByte
-    isExternal: true
+  - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+    name: FlushAsync
+    fullName: System.IO.Stream.FlushAsync
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
-  - uid: System.Byte
-    name: Byte
-    fullName: System.Byte
-    isExternal: true
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    href: System.Threading.CancellationToken.yml
   - name: )
     fullName: )
   spec.vb:
-  - uid: System.IO.Stream.WriteByte(System.Byte)
-    name: WriteByte
-    fullName: System.IO.Stream.WriteByte
-    isExternal: true
+  - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+    name: FlushAsync
+    fullName: System.IO.Stream.FlushAsync
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
-  - uid: System.Byte
-    name: Byte
-    fullName: System.Byte
-    isExternal: true
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    href: System.Threading.CancellationToken.yml
   - name: )
     fullName: )
-- uid: System.Byte
-  parent: System
-  isExternal: true
-  name: Byte
-  fullName: System.Byte

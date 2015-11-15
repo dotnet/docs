@@ -123,6 +123,7 @@ references:
   fullName: System.Security.SecurityTransparentAttribute
   type: Class
 - uid: System.Security.CodeAccessPermission
+  parent: System.Security
   isExternal: false
   href: System.Security.CodeAccessPermission.yml
   name: CodeAccessPermission
@@ -150,6 +151,7 @@ references:
   fullName: System.Security.ISecurityEncodable
   type: Interface
 - uid: System.Security.ISecurityPolicyEncodable
+  parent: System.Security
   isExternal: false
   href: System.Security.ISecurityPolicyEncodable.yml
   name: ISecurityPolicyEncodable

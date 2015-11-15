@@ -3343,138 +3343,145 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -3483,7 +3490,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -3608,16 +3615,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -3628,7 +3637,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -3639,6 +3648,7 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Security.SecurityContextSource
   parent: System.Security
   isExternal: false
@@ -3653,9 +3663,11 @@ references:
   type: Namespace
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Security.Policy.Evidence
   parent: System.Security.Policy
   isExternal: false
@@ -3709,9 +3721,11 @@ references:
   type: Class
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Runtime.Remoting.ObjectHandle
   parent: System.Runtime.Remoting
   isExternal: false
@@ -3725,7 +3739,8 @@ references:
   fullName: System.Runtime.Remoting
   type: Namespace
 - uid: System.Byte[]
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte[]
   name.vb: Byte()
   fullName: System.Byte[]
@@ -3734,14 +3749,14 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
 - uid: System.Configuration.Assemblies.AssemblyHashAlgorithm
@@ -3757,7 +3772,8 @@ references:
   fullName: System.Configuration.Assemblies
   type: Namespace
 - uid: System.Object[]
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object[]
   name.vb: Object()
   fullName: System.Object[]
@@ -3766,21 +3782,23 @@ references:
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ()
     fullName: ()
 - uid: System.Reflection.BindingFlags
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.BindingFlags.yml
   name: BindingFlags
   fullName: System.Reflection.BindingFlags
+  type: Enum
 - uid: System.Reflection.Binder
   parent: System.Reflection
   isExternal: false
@@ -3790,25 +3808,33 @@ references:
   type: Class
 - uid: System.Globalization.CultureInfo
   parent: System.Globalization
-  isExternal: true
+  isExternal: false
+  href: System.Globalization.CultureInfo.yml
   name: CultureInfo
   fullName: System.Globalization.CultureInfo
+  type: Class
 - uid: System.Globalization
   isExternal: false
   name: System.Globalization
   fullName: System.Globalization
+  type: Namespace
 - uid: System.Reflection.Assembly
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.Assembly.yml
   name: Assembly
   fullName: System.Reflection.Assembly
+  type: Class
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.String[]
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String[]
   name.vb: String()
   fullName: System.String[]
@@ -3817,14 +3843,14 @@ references:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: ()
     fullName: ()
 - uid: System.AppDomain
@@ -3836,14 +3862,15 @@ references:
   type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -3852,7 +3879,7 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -3888,6 +3915,7 @@ references:
 - uid: System.Nullable{System.Boolean}
   parent: System
   definition: System.Nullable`1
+  href: System.Nullable`1.yml
   name: Nullable<Boolean>
   name.vb: Nullable(Of Boolean)
   fullName: System.Nullable<System.Boolean>
@@ -3896,40 +3924,42 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: )
     fullName: )
 - uid: System.Nullable`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Nullable`1.yml
   name: Nullable<T>
   name.vb: Nullable(Of T)
   fullName: System.Nullable<T>
   fullName.vb: System.Nullable(Of T)
+  type: Struct
   spec.csharp:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -3940,7 +3970,7 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -3963,11 +3993,15 @@ references:
   type: Class
 - uid: System.TimeSpan
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.TimeSpan.yml
   name: TimeSpan
   fullName: System.TimeSpan
+  type: Struct
 - uid: System.Int64
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int64.yml
   name: Int64
   fullName: System.Int64
+  type: Struct

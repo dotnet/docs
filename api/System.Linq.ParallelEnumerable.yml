@@ -260,7 +260,7 @@ items:
       description: An @'System.Collections.Generic.IEnumerable`1' to convert to a @'System.Linq.ParallelQuery`1'.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: The source as a @'System.Linq.ParallelQuery`1' to bind to ParallelEnumerable extension methods.
@@ -299,7 +299,7 @@ items:
       description: A partitioner over the input sequence.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: The *source* as a ParallelQuery to bind to ParallelEnumerable extension methods.
@@ -338,7 +338,7 @@ items:
       description: The input sequence.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: The source sequence which will maintain the original ordering in the subsequent query operators.
@@ -413,7 +413,7 @@ items:
       description: The input sequence.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: The source sequence with arbitrary order.
@@ -474,7 +474,7 @@ items:
       description: A @'System.Linq.ParallelQuery`1' to convert to an @'System.Collections.Generic.IEnumerable`1'.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Collections.Generic.IEnumerable{{TSource}}
       description: The source as an @'System.Collections.Generic.IEnumerable`1' to bind to sequential extension methods.
@@ -510,7 +510,7 @@ items:
       description: The degree of parallelism for the query. The default value is Math.Min(@'System.Environment.ProcessorCount', MAX_SUPPORTED_DOP) where MAX_SUPPORTED_DOP is 512.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: ParallelQuery representing the same query as source, with the limit on the degrees of parallelism set.
@@ -550,7 +550,7 @@ items:
       description: A cancellation token.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: ParallelQuery representing the same query as source, but with the registered cancellation token.
@@ -590,7 +590,7 @@ items:
       description: The mode in which to execute the query.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: ParallelQuery representing the same query as source, but with the registered execution mode.
@@ -630,7 +630,7 @@ items:
       description: The merge options to set for this query.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: ParallelQuery representing the same query as source, but with the registered merge options.
@@ -770,7 +770,7 @@ items:
       description: An Action to invoke on each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
   exceptions:
   - type: System.OperationCanceledException
     description: The query was canceled with the token passed in through *WithCancellation*.
@@ -889,7 +889,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TResult
       description: The type of elements resturned by <b>selector</b>.
     return:
@@ -931,7 +931,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TResult
       description: The type of elements resturned by <b>selector</b>.
     return:
@@ -1543,7 +1543,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TResult
       description: The type of the elements of the sequence returned by <B>selector</B>.
     return:
@@ -1585,7 +1585,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TResult
       description: The type of the elements of the sequence returned by <B>selector</B>.
     return:
@@ -1632,9 +1632,9 @@ items:
       description: A function to create a result element from an element from the first sequence and a collection of matching elements from the second sequence.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TCollection
-      description: The type of the intermediate elements collected by <paramref name="collectionSelector" />.
+      description: The type of the intermediate elements collected by *collectionSelector*.
     - id: TResult
     return:
       type: System.Linq.ParallelQuery{{TResult}}
@@ -1680,12 +1680,12 @@ items:
       description: A function to create a result element from an element from the first sequence and a collection of matching elements from the second sequence.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TCollection
       description: >-
         The type of the intermediate elements collected by
 
-        <paramref name="collectionSelector" />.
+        *collectionSelector*.
     - id: TResult
       description: The type of elements to return.
     return:
@@ -1739,9 +1739,9 @@ items:
       description: A function to extract a key from an element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     return:
       type: System.Linq.OrderedParallelQuery{{TSource}}
       description: An OrderedParallelQuery{TSource} whose elements are sorted according to a key.
@@ -1790,9 +1790,9 @@ items:
       description: An IComparer{TKey} to compare keys.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     return:
       type: System.Linq.OrderedParallelQuery{{TSource}}
       description: An OrderedParallelQuery{TSource} whose elements are sorted according to a key.
@@ -1838,9 +1838,9 @@ items:
       description: A function to extract a key from an element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     return:
       type: System.Linq.OrderedParallelQuery{{TSource}}
       description: An OrderedParallelQuery{TSource} whose elements are sorted descending according to a key.
@@ -1889,9 +1889,9 @@ items:
       description: An IComparer{TKey} to compare keys.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     return:
       type: System.Linq.OrderedParallelQuery{{TSource}}
       description: An OrderedParallelQuery{TSource} whose elements are sorted descending according to a key.
@@ -1937,9 +1937,9 @@ items:
       description: A function to extract a key from an element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     return:
       type: System.Linq.OrderedParallelQuery{{TSource}}
       description: An OrderedParallelQuery{TSource} whose elements are sorted according to a key.
@@ -1988,9 +1988,9 @@ items:
       description: An IComparer{TKey} to compare keys.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     return:
       type: System.Linq.OrderedParallelQuery{{TSource}}
       description: An OrderedParallelQuery{TSource} whose elements are sorted according to a key.
@@ -2036,9 +2036,9 @@ items:
       description: A function to extract a key from an element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     return:
       type: System.Linq.OrderedParallelQuery{{TSource}}
       description: A sequence whose elements are sorted descending according to a key.
@@ -2087,9 +2087,9 @@ items:
       description: An IComparer{TKey} to compare keys.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     return:
       type: System.Linq.OrderedParallelQuery{{TSource}}
       description: A sequence whose elements are sorted descending according to a key.
@@ -2129,9 +2129,9 @@ items:
       description: A function to extract a key from an element.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     return:
       type: System.Linq.ParallelQuery{IGrouping{{TKey},{TSource}}}
       description: A sequence of groups that are sorted descending according to *TKey*.
@@ -2174,9 +2174,9 @@ items:
       description: An @'System.Collections.Generic.IComparer`1' to compare keys.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     return:
       type: System.Linq.ParallelQuery{IGrouping{{TKey},{TSource}}}
       description: A sequence of groups that are sorted descending according to *TKey*.
@@ -2219,9 +2219,9 @@ items:
       description: A function to map each source element to an element in an @'System.Linq.IGrouping`2'.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     - id: TElement
       description: >-
         The type of the elements in each
@@ -2272,9 +2272,9 @@ items:
       description: An IComparer{TSource} to compare keys.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     - id: TElement
       description: >-
         The type of the elements in each
@@ -2322,11 +2322,11 @@ items:
       description: A function to create a result value from each group.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     - id: TResult
-      description: The type of the result value returned by <paramref name="resultSelector" />.
+      description: The type of the result value returned by *resultSelector*.
     return:
       type: System.Linq.ParallelQuery{{TResult}}
       description: A sequence of elements of type *TResult* where each element represents a projection over a group and its key.
@@ -2372,11 +2372,11 @@ items:
       description: An @'System.Collections.Generic.IEqualityComparer`1' to compare keys.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     - id: TResult
-      description: The type of the result value returned by <paramref name="resultSelector" />.
+      description: The type of the result value returned by *resultSelector*.
     return:
       type: System.Linq.ParallelQuery{{TResult}}
       description: A sequence of groups.
@@ -2422,16 +2422,16 @@ items:
       description: A function to create a result value from each group.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     - id: TElement
       description: >-
         The type of the elements in each
 
         IGrouping{TKey, TElement}.
     - id: TResult
-      description: The type of the result value returned by <paramref name="resultSelector" />.
+      description: The type of the result value returned by *resultSelector*.
     return:
       type: System.Linq.ParallelQuery{{TResult}}
       description: A sequence of elements of type *TResult* where each element represents a projection over a group and its key.
@@ -2480,16 +2480,16 @@ items:
       description: An @'System.Collections.Generic.IEqualityComparer`1' to compare keys.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     - id: TElement
       description: >-
         The type of the elements in each
 
         IGrouping{TKey, TElement}.
     - id: TResult
-      description: The type of the result value returned by <paramref name="resultSelector" />.
+      description: The type of the result value returned by *resultSelector*.
     return:
       type: System.Linq.ParallelQuery{{TResult}}
       description: A sequence of elements of type *TResult* where each element represents a projection over a group and its key.
@@ -2529,7 +2529,7 @@ items:
       description: An accumulator function to be invoked on each element.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: The final accumulator value.
@@ -2574,7 +2574,7 @@ items:
       description: An accumulator function to be invoked on each element.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TAccumulate
       description: The type of the accumulator value.
     return:
@@ -2624,7 +2624,7 @@ items:
       description: A function to transform the final accumulator value into the result value.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TAccumulate
       description: The type of the accumulator value.
     - id: TResult
@@ -2663,13 +2663,13 @@ items:
 
     partition the data source sequence into several sub-sequences (partitions).
 
-    The <paramref name="updateAccumulatorFunc" /> is invoked on each element within partitions.
+    The *updateAccumulatorFunc* is invoked on each element within partitions.
 
-    Each partition then yields a single accumulated result. The <paramref name="combineAccumulatorsFunc" />
+    Each partition then yields a single accumulated result. The *combineAccumulatorsFunc*
 
     is then invoked on the results of each partition to yield a single element. This element is then
 
-    transformed by the <paramref name="resultSelector" /> function.
+    transformed by the *resultSelector* function.
   syntax:
     content: public static TResult Aggregate<TSource, TAccumulate, TResult>(ParallelQuery<TSource> source, TAccumulate seed, Func<TAccumulate, TSource, TAccumulate> updateAccumulatorFunc, Func<TAccumulate, TAccumulate, TAccumulate> combineAccumulatorsFunc, Func<TAccumulate, TResult> resultSelector)
     content.vb: Public Shared Function Aggregate(Of TSource, TAccumulate, TResult)(source As ParallelQuery(Of TSource), seed As TAccumulate, updateAccumulatorFunc As Func(Of TAccumulate, TSource, TAccumulate), combineAccumulatorsFunc As Func(Of TAccumulate, TAccumulate, TAccumulate), resultSelector As Func(Of TAccumulate, TResult)) As TResult
@@ -2691,7 +2691,7 @@ items:
       description: A function to transform the final accumulator value into the result value.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TAccumulate
       description: The type of the accumulator value.
     - id: TResult
@@ -2728,15 +2728,15 @@ items:
   remarks: >-
     This overload is specific to parallelized queries. A parallelized query may partition the data source sequence
 
-    into several sub-sequences (partitions). The <paramref name="updateAccumulatorFunc" /> is invoked
+    into several sub-sequences (partitions). The *updateAccumulatorFunc* is invoked
 
     on each element within partitions. Each partition then yields a single accumulated result.
 
-    The <paramref name="combineAccumulatorsFunc" />
+    The *combineAccumulatorsFunc*
 
     is then invoked on the results of each partition to yield a single element. This element is then
 
-    transformed by the <paramref name="resultSelector" /> function.
+    transformed by the *resultSelector* function.
   syntax:
     content: public static TResult Aggregate<TSource, TAccumulate, TResult>(ParallelQuery<TSource> source, Func<TAccumulate> seedFactory, Func<TAccumulate, TSource, TAccumulate> updateAccumulatorFunc, Func<TAccumulate, TAccumulate, TAccumulate> combineAccumulatorsFunc, Func<TAccumulate, TResult> resultSelector)
     content.vb: Public Shared Function Aggregate(Of TSource, TAccumulate, TResult)(source As ParallelQuery(Of TSource), seedFactory As Func(Of TAccumulate), updateAccumulatorFunc As Func(Of TAccumulate, TSource, TAccumulate), combineAccumulatorsFunc As Func(Of TAccumulate, TAccumulate, TAccumulate), resultSelector As Func(Of TAccumulate, TResult)) As TResult
@@ -2758,7 +2758,7 @@ items:
       description: A function to transform the final accumulator value into the result value.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TAccumulate
       description: The type of the accumulator value.
     - id: TResult
@@ -2801,7 +2801,7 @@ items:
       description: A sequence that contains elements to be counted.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: System.Int32
       description: The number of elements in the input sequence.
@@ -2841,7 +2841,7 @@ items:
       description: A function to test each element for a condition.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: System.Int32
       description: A number that represents how many elements in the sequence satisfy the condition in the predicate function.
@@ -2878,7 +2878,7 @@ items:
       description: A sequence that contains elements to be counted.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: System.Int64
       description: The number of elements in the input sequence.
@@ -2920,7 +2920,7 @@ items:
       description: A function to test each element for a condition.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: System.Int64
       description: A number that represents how many elements in the sequence satisfy the condition in the predicate function.
@@ -3341,7 +3341,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Int32}
       description: The sum of the projected values in the sequence.
@@ -3381,7 +3381,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Int64
       description: The sum of the projected values in the sequence.
@@ -3421,7 +3421,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Int64}
       description: The sum of the projected values in the sequence.
@@ -3461,7 +3461,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Single
       description: The sum of the projected values in the sequence.
@@ -3501,7 +3501,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Single}
       description: The sum of the projected values in the sequence.
@@ -3541,7 +3541,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Double
       description: The sum of the projected values in the sequence.
@@ -3581,7 +3581,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Double}
       description: The sum of the projected values in the sequence.
@@ -3621,7 +3621,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Decimal
       description: The sum of the projected values in the sequence.
@@ -3661,7 +3661,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Decimal}
       description: The sum of the projected values in the sequence.
@@ -4058,7 +4058,7 @@ items:
       description: A sequence of values to determine the minimum value of.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: '{TSource}'
       description: The minimum value in the sequence.
@@ -4100,7 +4100,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Int32
       description: The minimum value in the sequence.
@@ -4142,7 +4142,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Int32}
       description: The minimum value in the sequence.
@@ -4184,7 +4184,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Int64
       description: The minimum value in the sequence.
@@ -4226,7 +4226,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Int64}
       description: The minimum value in the sequence.
@@ -4268,7 +4268,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Single
       description: The minimum value in the sequence.
@@ -4310,7 +4310,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Single}
       description: The minimum value in the sequence.
@@ -4352,7 +4352,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Double
       description: The minimum value in the sequence.
@@ -4394,7 +4394,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Double}
       description: The minimum value in the sequence.
@@ -4436,7 +4436,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Decimal
       description: The minimum value in the sequence.
@@ -4478,7 +4478,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Decimal}
       description: The minimum value in the sequence.
@@ -4520,9 +4520,9 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TResult
-      description: The type of the value returned by <paramref name="selector" />.
+      description: The type of the value returned by *selector*.
     return:
       type: '{TResult}'
       description: The minimum value in the sequence.
@@ -4962,7 +4962,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Int32
       description: The maximum value in the sequence.
@@ -5004,7 +5004,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Int32}
       description: The maximum value in the sequence.
@@ -5046,7 +5046,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Int64
       description: The maximum value in the sequence.
@@ -5088,7 +5088,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Int64}
       description: The maximum value in the sequence.
@@ -5130,7 +5130,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Single
       description: The maximum value in the sequence.
@@ -5172,7 +5172,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Single}
       description: The maximum value in the sequence.
@@ -5214,7 +5214,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Double
       description: The maximum value in the sequence.
@@ -5256,7 +5256,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Double}
       description: The maximum value in the sequence.
@@ -5298,7 +5298,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Decimal
       description: The maximum value in the sequence.
@@ -5340,7 +5340,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Decimal}
       description: The maximum value in the sequence.
@@ -5382,9 +5382,9 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TResult
-      description: The type of the value returned by <paramref name="selector" />.
+      description: The type of the value returned by *selector*.
     return:
       type: '{TResult}'
       description: The maximum value in the sequence.
@@ -5786,7 +5786,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Double
       description: The average of the sequence of values.
@@ -5830,7 +5830,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Double}
       description: The average of the sequence of values.
@@ -5874,7 +5874,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Double
       description: The average of the sequence of values.
@@ -5918,7 +5918,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Double}
       description: The average of the sequence of values.
@@ -5962,7 +5962,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Single
       description: The average of the sequence of values.
@@ -6006,7 +6006,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Single}
       description: The average of the sequence of values.
@@ -6050,7 +6050,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Double
       description: The average of the sequence of values.
@@ -6094,7 +6094,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Double}
       description: The average of the sequence of values.
@@ -6138,7 +6138,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Decimal
       description: The average of the sequence of values.
@@ -6182,7 +6182,7 @@ items:
       description: A transform function to apply to each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Nullable{System.Decimal}
       description: The average of the sequence of values.
@@ -6226,7 +6226,7 @@ items:
       description: A function to test each element for a condition.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Boolean
       description: true if any elements in the source sequence pass the test in the specified predicate; otherwise, false.
@@ -6263,7 +6263,7 @@ items:
       description: The sequence to check for emptiness.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Boolean
       description: true if the source sequence contains any elements; otherwise, false.
@@ -6303,7 +6303,7 @@ items:
       description: A function to test each element for a condition.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Boolean
       description: true if every element of the source sequence passes the test in the specified predicate, or if the sequence is empty; otherwise, false..
@@ -6343,7 +6343,7 @@ items:
       description: The value to locate in the sequence.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Boolean
       description: true if the source sequence contains an element that has the specified value; otherwise, false.
@@ -6386,7 +6386,7 @@ items:
       description: An equality comparer to compare values.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Boolean
       description: true if the source sequence contains an element that has the specified value; otherwise, false.
@@ -6426,7 +6426,7 @@ items:
       description: The number of elements to return.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: A sequence that contains the specified number of elements from the start of the input sequence.
@@ -6466,7 +6466,7 @@ items:
       description: A function to test each element for a condition.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: A sequence that contains the elements from the input sequence that occur before the element at which the test no longer passes.
@@ -6506,7 +6506,7 @@ items:
       description: A function to test each source element for a condition; the second parameter of the function represents the index of the source element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: A sequence that contains elements from the input sequence that occur before the element at which the test no longer passes.
@@ -6548,7 +6548,7 @@ items:
       description: The number of elements to skip before returning the remaining elements.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: A sequence that contains the elements that occur after the specified index in the input sequence.
@@ -6590,7 +6590,7 @@ items:
       description: A function to test each element for a condition.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: A sequence that contains the elements from the input sequence starting at the first element in the linear series that does not pass the test specified by predicate.
@@ -6630,7 +6630,7 @@ items:
       description: A function to test each source element for a condition; the second parameter of the function represents the index of the source element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: A sequence that contains the elements from the input sequence starting at the first element in the linear series that does not pass the test specified by predicate.
@@ -6923,7 +6923,7 @@ items:
       description: The sequence to remove duplicate elements from.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: A sequence that contains distinct elements from the source sequence.
@@ -6963,7 +6963,7 @@ items:
       description: An @'System.Collections.Generic.IEqualityComparer`1'  to compare values.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: A sequence that contains distinct elements from the source sequence.
@@ -7528,7 +7528,7 @@ items:
       description: The sequence to cast as @'System.Collections.Generic.IEnumerable`1'.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: System.Collections.Generic.IEnumerable{{TSource}}
       description: The input sequence typed as @'System.Collections.Generic.IEnumerable`1'.
@@ -7561,7 +7561,7 @@ items:
       description: A sequence to create an array from.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}[]'
       description: An array that contains the elements from the input sequence.
@@ -7598,7 +7598,7 @@ items:
       description: A sequence to create a @'System.Collections.Generic.List`1' from.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: System.Collections.Generic.List{{TSource}}
       description: A @'System.Collections.Generic.List`1'  that contains elements from the input sequence.
@@ -7638,9 +7638,9 @@ items:
       description: A function to extract a key from each element.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     return:
       type: System.Collections.Generic.Dictionary{{TKey},{TSource}}
       description: A @'System.Collections.Generic.Dictionary`2' that contains keys and values.
@@ -7683,9 +7683,9 @@ items:
       description: An @'System.Collections.Generic.IEqualityComparer`1' to compare keys.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     return:
       type: System.Collections.Generic.Dictionary{{TKey},{TSource}}
       description: A @'System.Collections.Generic.Dictionary`2' that contains keys and values.
@@ -7728,11 +7728,11 @@ items:
       description: A transform function to produce a result element value from each element.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     - id: TElement
-      description: The type of the value returned by <paramref name="elementSelector" />.
+      description: The type of the value returned by *elementSelector*.
     return:
       type: System.Collections.Generic.Dictionary{{TKey},{TElement}}
       description: A @'System.Collections.Generic.Dictionary`2' that contains values of type *TElement* selected from the input sequence
@@ -7778,11 +7778,11 @@ items:
       description: An @'System.Collections.Generic.IEqualityComparer`1' to compare keys.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     - id: TElement
-      description: The type of the value returned by <paramref name="elementSelector" />.
+      description: The type of the value returned by *elementSelector*.
     return:
       type: System.Collections.Generic.Dictionary{{TKey},{TElement}}
       description: A @'System.Collections.Generic.Dictionary`2' that contains values of type *TElement* selected from the input sequence
@@ -7822,9 +7822,9 @@ items:
       description: A function to extract a key from each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     return:
       type: ILookup{{TKey},{TSource}}
       description: A @'System.Linq.ILookup`2' that contains keys and values.
@@ -7867,9 +7867,9 @@ items:
       description: An @'System.Collections.Generic.IEqualityComparer`1' to compare keys.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     return:
       type: ILookup{{TKey},{TSource}}
       description: A @'System.Linq.ILookup`2' that contains keys and values.
@@ -7912,11 +7912,11 @@ items:
       description: A transform function to produce a result element value from each element.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     - id: TElement
-      description: The type of the value returned by <paramref name="elementSelector" />.
+      description: The type of the value returned by *elementSelector*.
     return:
       type: ILookup{{TKey},{TElement}}
       description: A @'System.Linq.ILookup`2' that contains values of type *TElement* selected from the input sequence.
@@ -7962,11 +7962,11 @@ items:
       description: An @'System.Collections.Generic.IEqualityComparer`1' to compare keys.
     typeParameters:
     - id: TSource
-      description: The type of elements of <paramref name="source" />.
+      description: The type of elements of *source*.
     - id: TKey
-      description: The type of the key returned by <paramref name="keySelector" />.
+      description: The type of the key returned by *keySelector*.
     - id: TElement
-      description: The type of the value returned by <paramref name="elementSelector" />.
+      description: The type of the value returned by *elementSelector*.
     return:
       type: ILookup{{TKey},{TElement}}
       description: A Lookup&lt;(Of &lt;(TKey, TElement&gt;)&gt;) that contains values of type TElement selected from the input sequence.
@@ -8003,7 +8003,7 @@ items:
       description: A sequence of values to reverse.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: A sequence whose elements correspond to those of the input sequence in reverse order.
@@ -8077,7 +8077,7 @@ items:
       description: The sequence that contains the elements to be converted.
     typeParameters:
     - id: TResult
-      description: The stronger type to convert the elements of <paramref name="source" /> to.
+      description: The stronger type to convert the elements of *source* to.
     return:
       type: System.Linq.ParallelQuery{{TResult}}
       description: A sequence that contains each element of the source sequence converted to the specified type.
@@ -8112,7 +8112,7 @@ items:
       description: The sequence to return the first element of.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: The first element in the specified sequence.
@@ -8158,7 +8158,7 @@ items:
       description: A function to test each element for a condition.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: The first element in the sequence that passes the test in the specified predicate function.
@@ -8197,7 +8197,7 @@ items:
       description: The sequence to return the first element of.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: default(TSource) if *source* is empty; otherwise, the first element in *source*.
@@ -8241,7 +8241,7 @@ items:
       description: A function to test each element for a condition.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: default(TSource) if *source* is empty or if no element passes the test specified by predicate; otherwise, the first element in *source* that passes the test specified by predicate.
@@ -8278,7 +8278,7 @@ items:
       description: The sequence to return the last element from.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: The value at the last position in the source sequence.
@@ -8320,7 +8320,7 @@ items:
       description: A function to test each element for a condition.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: The last element in the sequence that passes the test in the specified predicate function.
@@ -8359,7 +8359,7 @@ items:
       description: The sequence to return an element from.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: default() if the source sequence is empty; otherwise, the last element in the sequence.
@@ -8399,7 +8399,7 @@ items:
       description: A function to test each element for a condition.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: default() if the sequence is empty or if no elements pass the test in the predicate function; otherwise, the last element that passes the test in the predicate function.
@@ -8436,7 +8436,7 @@ items:
       description: The sequence to return the single element of.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: The single element of the input sequence.
@@ -8478,7 +8478,7 @@ items:
       description: A function to test an element for a condition.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: The single element of the input sequence that satisfies a condition.
@@ -8517,7 +8517,7 @@ items:
       description: The sequence to return the single element of.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: The single element of the input sequence, or default() if the sequence contains no elements.
@@ -8557,7 +8557,7 @@ items:
       description: A function to test an element for a condition.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: The single element of the input sequence that satisfies the condition, or default() if no such element is found.
@@ -8596,7 +8596,7 @@ items:
       description: The sequence to return a default value for if it is empty.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: A sequence that contains default(TSource) if *source* is empty; otherwise, *source*.
@@ -8636,7 +8636,7 @@ items:
       description: The value to return if the sequence is empty.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: System.Linq.ParallelQuery{{TSource}}
       description: A sequence that contains defaultValue if *source* is empty; otherwise, *source*.
@@ -8676,7 +8676,7 @@ items:
       description: The zero-based index of the element to retrieve.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: The element at the specified position in the source sequence.
@@ -8718,7 +8718,7 @@ items:
       description: The zero-based index of the element to retrieve.
     typeParameters:
     - id: TSource
-      description: The type of the elements of <paramref name="source" />.
+      description: The type of the elements of *source*.
     return:
       type: '{TSource}'
       description: default(TSource) if the index is outside the bounds of the source sequence; otherwise, the element at the specified position in the source sequence.
@@ -8737,19 +8737,22 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -8758,138 +8761,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -8898,7 +8905,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -8953,6 +8960,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Linq.ParallelQuery`1
   parent: System.Linq
   isExternal: false
@@ -8987,16 +8995,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -9007,7 +9017,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -9015,9 +9025,15 @@ references:
   - name: )
     fullName: )
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.Collections.Generic.IEnumerable{{TSource}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<TSource>
   name.vb: IEnumerable(Of TSource)
   fullName: System.Collections.Generic.IEnumerable<TSource>
@@ -9026,7 +9042,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: TSource
@@ -9037,7 +9053,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -9078,9 +9094,11 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Collections.Concurrent.Partitioner{{TSource}}
   parent: System.Collections.Concurrent
   definition: System.Collections.Concurrent.Partitioner`1
+  href: System.Collections.Concurrent.Partitioner`1.yml
   name: Partitioner<TSource>
   name.vb: Partitioner(Of TSource)
   fullName: System.Collections.Concurrent.Partitioner<TSource>
@@ -9089,7 +9107,7 @@ references:
   - uid: System.Collections.Concurrent.Partitioner`1
     name: Partitioner
     fullName: System.Collections.Concurrent.Partitioner
-    isExternal: true
+    href: System.Collections.Concurrent.Partitioner`1.yml
   - name: <
     fullName: <
   - name: TSource
@@ -9100,7 +9118,7 @@ references:
   - uid: System.Collections.Concurrent.Partitioner`1
     name: Partitioner
     fullName: System.Collections.Concurrent.Partitioner
-    isExternal: true
+    href: System.Collections.Concurrent.Partitioner`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -9109,16 +9127,19 @@ references:
     fullName: )
 - uid: System.Collections.Concurrent.Partitioner`1
   parent: System.Collections.Concurrent
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Concurrent.Partitioner`1.yml
   name: Partitioner<TSource>
   name.vb: Partitioner(Of TSource)
   fullName: System.Collections.Concurrent.Partitioner<TSource>
   fullName.vb: System.Collections.Concurrent.Partitioner(Of TSource)
+  type: Class
+  summary: Represents a particular manner of splitting a data source into multiple partitions.
   spec.csharp:
   - uid: System.Collections.Concurrent.Partitioner`1
     name: Partitioner
     fullName: System.Collections.Concurrent.Partitioner
-    isExternal: true
+    href: System.Collections.Concurrent.Partitioner`1.yml
   - name: <
     fullName: <
   - name: TSource
@@ -9129,7 +9150,7 @@ references:
   - uid: System.Collections.Concurrent.Partitioner`1
     name: Partitioner
     fullName: System.Collections.Concurrent.Partitioner
-    isExternal: true
+    href: System.Collections.Concurrent.Partitioner`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -9140,7 +9161,14 @@ references:
   isExternal: false
   name: System.Collections.Concurrent
   fullName: System.Collections.Concurrent
+  type: Namespace
 - uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
 - uid: System.Linq.ParallelQuery
   parent: System.Linq
   isExternal: false
@@ -9151,29 +9179,56 @@ references:
   summary: Represents a parallel sequence.
 - uid: System.Collections.IEnumerable
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerable.yml
   name: IEnumerable
   fullName: System.Collections.IEnumerable
+  type: Interface
 - uid: System.Collections
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+  type: Namespace
 - uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Threading.CancellationToken
   parent: System.Threading
-  isExternal: true
+  isExternal: false
+  href: System.Threading.CancellationToken.yml
   name: CancellationToken
   fullName: System.Threading.CancellationToken
+  type: Struct
+  summary: Propagates notification that operations should be canceled.
+- uid: System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.CancellationTokenSource.yml
+  name: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+  type: Class
+  summary: Signals to a @'System.Threading.CancellationToken' that it should be canceled.
 - uid: System.ObjectDisposedException
+  isExternal: false
+  href: System.ObjectDisposedException.yml
+  name: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+  type: Class
 - uid: System.Threading
   isExternal: false
   name: System.Threading
   fullName: System.Threading
+  type: Namespace
 - uid: System.Linq.ParallelExecutionMode
   parent: System.Linq
   isExternal: false
@@ -9186,6 +9241,12 @@ references:
 
     performance trade-offs when parallelizing queries.
 - uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
 - uid: System.Linq.ParallelMergeOptions
   parent: System.Linq
   isExternal: false
@@ -9197,6 +9258,7 @@ references:
     Specifies the preferred type of output merge to use in a query. This is a hint only, and may not be
 
     respected by the system when parallelizing all queries.
+- uid: System.Int32.MaxValue
 - uid: System.Linq.ParallelQuery{System.Int32}
   parent: System.Linq
   definition: System.Linq.ParallelQuery`1
@@ -9266,10 +9328,24 @@ references:
   - name: )
     fullName: )
 - uid: System.AggregateException
+  parent: System
+  isExternal: false
+  href: System.AggregateException.yml
+  name: AggregateException
+  fullName: System.AggregateException
+  type: Class
+  summary: Represents one or more errors that occur during application execution.
 - uid: System.OperationCanceledException
+  parent: System
+  isExternal: false
+  href: System.OperationCanceledException.yml
+  name: OperationCanceledException
+  fullName: System.OperationCanceledException
+  type: Class
 - uid: System.Action{{TSource}}
   parent: System
   definition: System.Action`1
+  href: System.Action`1.yml
   name: Action<TSource>
   name.vb: Action(Of TSource)
   fullName: System.Action<TSource>
@@ -9278,7 +9354,7 @@ references:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: <
     fullName: <
   - name: TSource
@@ -9289,7 +9365,7 @@ references:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -9298,16 +9374,18 @@ references:
     fullName: )
 - uid: System.Action`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Action`1.yml
   name: Action<T>
   name.vb: Action(Of T)
   fullName: System.Action<T>
   fullName.vb: System.Action(Of T)
+  type: Delegate
   spec.csharp:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: <
     fullName: <
   - name: T
@@ -9318,7 +9396,7 @@ references:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -9368,16 +9446,18 @@ references:
     fullName: )
 - uid: System.Func`2
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`2.yml
   name: Func<T, TResult>
   name.vb: Func(Of T, TResult)
   fullName: System.Func<T, TResult>
   fullName.vb: System.Func(Of T, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`2
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`2.yml
   - name: <
     fullName: <
   - name: T
@@ -9392,7 +9472,7 @@ references:
   - uid: System.Func`2
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -9458,16 +9538,18 @@ references:
     fullName: )
 - uid: System.Func`3
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`3.yml
   name: Func<T1, T2, TResult>
   name.vb: Func(Of T1, T2, TResult)
   fullName: System.Func<T1, T2, TResult>
   fullName.vb: System.Func(Of T1, T2, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`3
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`3.yml
   - name: <
     fullName: <
   - name: T1
@@ -9486,7 +9568,7 @@ references:
   - uid: System.Func`3
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`3.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1
@@ -9693,6 +9775,12 @@ references:
   - name: )
     fullName: )
 - uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  href: System.NotSupportedException.yml
+  name: NotSupportedException
+  fullName: System.NotSupportedException
+  type: Class
 - uid: System.Collections.Generic.IEnumerable{{TSecond}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
@@ -9933,6 +10021,7 @@ references:
 - uid: System.Collections.Generic.IEqualityComparer{{TKey}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEqualityComparer`1
+  href: System.Collections.Generic.IEqualityComparer`1.yml
   name: IEqualityComparer<TKey>
   name.vb: IEqualityComparer(Of TKey)
   fullName: System.Collections.Generic.IEqualityComparer<TKey>
@@ -9941,7 +10030,7 @@ references:
   - uid: System.Collections.Generic.IEqualityComparer`1
     name: IEqualityComparer
     fullName: System.Collections.Generic.IEqualityComparer
-    isExternal: true
+    href: System.Collections.Generic.IEqualityComparer`1.yml
   - name: <
     fullName: <
   - name: TKey
@@ -9952,7 +10041,7 @@ references:
   - uid: System.Collections.Generic.IEqualityComparer`1
     name: IEqualityComparer
     fullName: System.Collections.Generic.IEqualityComparer
-    isExternal: true
+    href: System.Collections.Generic.IEqualityComparer`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey
@@ -9961,16 +10050,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEqualityComparer`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEqualityComparer`1.yml
   name: IEqualityComparer<T>
   name.vb: IEqualityComparer(Of T)
   fullName: System.Collections.Generic.IEqualityComparer<T>
   fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEqualityComparer`1
     name: IEqualityComparer
     fullName: System.Collections.Generic.IEqualityComparer
-    isExternal: true
+    href: System.Collections.Generic.IEqualityComparer`1.yml
   - name: <
     fullName: <
   - name: T
@@ -9981,7 +10072,7 @@ references:
   - uid: System.Collections.Generic.IEqualityComparer`1
     name: IEqualityComparer
     fullName: System.Collections.Generic.IEqualityComparer
-    isExternal: true
+    href: System.Collections.Generic.IEqualityComparer`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -10398,6 +10489,7 @@ references:
   - name: )
     fullName: )
 - uid: System.Linq.OrderedParallelQuery`1
+  parent: System.Linq
   isExternal: false
   href: System.Linq.OrderedParallelQuery`1.yml
   name: OrderedParallelQuery<TSource>
@@ -10431,6 +10523,7 @@ references:
 - uid: System.Collections.Generic.IComparer{{TKey}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IComparer`1
+  href: System.Collections.Generic.IComparer`1.yml
   name: IComparer<TKey>
   name.vb: IComparer(Of TKey)
   fullName: System.Collections.Generic.IComparer<TKey>
@@ -10439,7 +10532,7 @@ references:
   - uid: System.Collections.Generic.IComparer`1
     name: IComparer
     fullName: System.Collections.Generic.IComparer
-    isExternal: true
+    href: System.Collections.Generic.IComparer`1.yml
   - name: <
     fullName: <
   - name: TKey
@@ -10450,7 +10543,7 @@ references:
   - uid: System.Collections.Generic.IComparer`1
     name: IComparer
     fullName: System.Collections.Generic.IComparer
-    isExternal: true
+    href: System.Collections.Generic.IComparer`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey
@@ -10459,16 +10552,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IComparer`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IComparer`1.yml
   name: IComparer<T>
   name.vb: IComparer(Of T)
   fullName: System.Collections.Generic.IComparer<T>
   fullName.vb: System.Collections.Generic.IComparer(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IComparer`1
     name: IComparer
     fullName: System.Collections.Generic.IComparer
-    isExternal: true
+    href: System.Collections.Generic.IComparer`1.yml
   - name: <
     fullName: <
   - name: T
@@ -10479,7 +10574,7 @@ references:
   - uid: System.Collections.Generic.IComparer`1
     name: IComparer
     fullName: System.Collections.Generic.IComparer
-    isExternal: true
+    href: System.Collections.Generic.IComparer`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -10964,16 +11059,18 @@ references:
     fullName: )
 - uid: System.Func`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`1.yml
   name: Func<TResult>
   name.vb: Func(Of TResult)
   fullName: System.Func<TResult>
   fullName.vb: System.Func(Of TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`1
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`1.yml
   - name: <
     fullName: <
   - name: TResult
@@ -10984,18 +11081,21 @@ references:
   - uid: System.Func`1
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TResult
     fullName: TResult
   - name: )
     fullName: )
+- uid: System.Int64.MaxValue
 - uid: System.Int64
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int64.yml
   name: Int64
   fullName: System.Int64
+  type: Struct
 - uid: System.Linq.ParallelQuery{System.Nullable{System.Int32}}
   parent: System.Linq
   definition: System.Linq.ParallelQuery`1
@@ -11049,6 +11149,7 @@ references:
 - uid: System.Nullable{System.Int32}
   parent: System
   definition: System.Nullable`1
+  href: System.Nullable`1.yml
   name: Nullable<Int32>
   name.vb: Nullable(Of Int32)
   fullName: System.Nullable<System.Int32>
@@ -11057,40 +11158,42 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.Nullable`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Nullable`1.yml
   name: Nullable<T>
   name.vb: Nullable(Of T)
   fullName: System.Nullable<T>
   fullName.vb: System.Nullable(Of T)
+  type: Struct
   spec.csharp:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -11101,7 +11204,7 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -11195,6 +11298,7 @@ references:
 - uid: System.Nullable{System.Int64}
   parent: System
   definition: System.Nullable`1
+  href: System.Nullable`1.yml
   name: Nullable<Int64>
   name.vb: Nullable(Of Int64)
   fullName: System.Nullable<System.Int64>
@@ -11203,26 +11307,26 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: )
     fullName: )
 - uid: System.Linq.ParallelQuery{System.Single}
@@ -11261,9 +11365,11 @@ references:
     fullName: )
 - uid: System.Single
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Single.yml
   name: Single
   fullName: System.Single
+  type: Struct
 - uid: System.Linq.ParallelQuery{System.Nullable{System.Single}}
   parent: System.Linq
   definition: System.Linq.ParallelQuery`1
@@ -11383,9 +11489,11 @@ references:
     fullName: )
 - uid: System.Double
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Double.yml
   name: Double
   fullName: System.Double
+  type: Struct
 - uid: System.Linq.ParallelQuery{System.Nullable{System.Double}}
   parent: System.Linq
   definition: System.Linq.ParallelQuery`1
@@ -11469,6 +11577,7 @@ references:
     isExternal: true
   - name: )
     fullName: )
+- uid: System.Decimal.MaxValue
 - uid: System.Linq.ParallelQuery{System.Decimal}
   parent: System.Linq
   definition: System.Linq.ParallelQuery`1
@@ -11505,9 +11614,11 @@ references:
     fullName: )
 - uid: System.Decimal
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Decimal.yml
   name: Decimal
   fullName: System.Decimal
+  type: Struct
 - uid: System.Linq.ParallelQuery{System.Nullable{System.Decimal}}
   parent: System.Linq
   definition: System.Linq.ParallelQuery`1
@@ -12083,9 +12194,11 @@ references:
     fullName: )
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Collections.Generic.IEqualityComparer{{TSource}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEqualityComparer`1
@@ -12162,16 +12275,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.List`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.List`1.yml
   name: List<T>
   name.vb: List(Of T)
   fullName: System.Collections.Generic.List<T>
   fullName.vb: System.Collections.Generic.List(Of T)
+  type: Class
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     fullName: System.Collections.Generic.List
-    isExternal: true
+    href: System.Collections.Generic.List`1.yml
   - name: <
     fullName: <
   - name: T
@@ -12182,7 +12297,7 @@ references:
   - uid: System.Collections.Generic.List`1
     name: List
     fullName: System.Collections.Generic.List
-    isExternal: true
+    href: System.Collections.Generic.List`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -12228,16 +12343,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.Dictionary`2
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.Dictionary`2.yml
   name: Dictionary<TKey, TValue>
   name.vb: Dictionary(Of TKey, TValue)
   fullName: System.Collections.Generic.Dictionary<TKey, TValue>
   fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  type: Class
   spec.csharp:
   - uid: System.Collections.Generic.Dictionary`2
     name: Dictionary
     fullName: System.Collections.Generic.Dictionary
-    isExternal: true
+    href: System.Collections.Generic.Dictionary`2.yml
   - name: <
     fullName: <
   - name: TKey
@@ -12252,7 +12369,7 @@ references:
   - uid: System.Collections.Generic.Dictionary`2
     name: Dictionary
     fullName: System.Collections.Generic.Dictionary
-    isExternal: true
+    href: System.Collections.Generic.Dictionary`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey

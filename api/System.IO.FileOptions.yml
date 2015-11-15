@@ -16,13 +16,13 @@ items:
   type: Enum
   source:
     remote: &o0
-      path: src/System.IO.FileSystem/src/System/IO/FileOptions.cs
+      path: src/mscorlib/src/System/IO/FileOptions.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.IO.FileSystem/src/System/IO/FileOptions.cs
-    startLine: 12
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/FileOptions.cs
+    startLine: 23
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Represents advanced options for creating a @'System.IO.FileStream' object.
   syntax:
@@ -37,10 +37,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileOptions.cs
-    startLine: 20
+    path: src/mscorlib/src/System/IO/FileOptions.cs
+    startLine: 30
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Indicates that no additional options should be used when creating a @'System.IO.FileStream' object.
   syntax:
@@ -54,10 +54,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileOptions.cs
-    startLine: 21
+    path: src/mscorlib/src/System/IO/FileOptions.cs
+    startLine: 31
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Indicates that the system should write through any intermediate cache and go directly to disk.
   syntax:
@@ -71,10 +71,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileOptions.cs
-    startLine: 22
+    path: src/mscorlib/src/System/IO/FileOptions.cs
+    startLine: 32
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Indicates that a file can be used for asynchronous reading and writing.
   syntax:
@@ -88,10 +88,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileOptions.cs
-    startLine: 24
+    path: src/mscorlib/src/System/IO/FileOptions.cs
+    startLine: 34
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Indicates that the file is accessed randomly. The system can use this as a hint to optimize file caching.
   syntax:
@@ -105,10 +105,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileOptions.cs
-    startLine: 25
+    path: src/mscorlib/src/System/IO/FileOptions.cs
+    startLine: 35
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Indicates that a file is automatically deleted when it is no longer in use.
   syntax:
@@ -122,10 +122,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileOptions.cs
-    startLine: 26
+    path: src/mscorlib/src/System/IO/FileOptions.cs
+    startLine: 36
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Indicates that the file is to be accessed sequentially from beginning to end. The system can use this as a hint to optimize file caching. If an application moves the file pointer for random access, optimum caching may not occur; however, correct operation is still guaranteed.
   syntax:
@@ -139,10 +139,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileOptions.cs
-    startLine: 32
+    path: src/mscorlib/src/System/IO/FileOptions.cs
+    startLine: 42
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Indicates that a file is encrypted and can be decrypted only by using the same user account used for encryption.
   syntax:
@@ -152,3 +152,4 @@ references:
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace

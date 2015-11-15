@@ -54,4 +54,20 @@ references:
   fullName: System.Runtime.CompilerServices
   type: Namespace
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.Action
+  parent: System
+  isExternal: false
+  href: System.Action.yml
+  name: Action
+  fullName: System.Action
+  type: Delegate
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+  type: Namespace

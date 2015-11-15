@@ -11,13 +11,13 @@ items:
   type: Class
   source:
     remote: &o0
-      path: src/mscorlib/src/System/ConsoleCancelEventArgs.cs
+      path: src/System.Console/src/System/ConsoleCancelEventArgs.cs
       branch: master
-      repo: https://github.com/chenkennt/coreclr.git
-    path: src/mscorlib/src/System/ConsoleCancelEventArgs.cs
-    startLine: 20
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Console/src/System/ConsoleCancelEventArgs.cs
+    startLine: 8
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: Provides data for the @'System.Console.CancelKeyPress' event. This class cannot be inherited.
   syntax:
@@ -44,10 +44,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleCancelEventArgs.cs
-    startLine: 34
+    path: src/System.Console/src/System/ConsoleCancelEventArgs.cs
+    startLine: 19
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: Gets or sets a value that indicates whether simultaneously pressing the @'System.ConsoleModifiers.Control' modifier key and the @'System.ConsoleKey.C' console key (Ctrl+C) or the Ctrl+Break keys terminates the current process. The default is false, which terminates the current process.
   syntax:
@@ -66,10 +66,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleCancelEventArgs.cs
-    startLine: 41
+    path: src/System.Console/src/System/ConsoleCancelEventArgs.cs
+    startLine: 24
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: Gets the combination of modifier and console keys that interrupted the current process.
   syntax:
@@ -84,31 +84,38 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.EventArgs
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.EventArgs.yml
   name: EventArgs
   fullName: System.EventArgs
+  type: Class
 - uid: System.EventArgs.Empty
   parent: System.EventArgs
-  isExternal: true
+  isExternal: false
+  href: System.EventArgs.yml
   name: Empty
   fullName: System.EventArgs.Empty
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -117,138 +124,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -257,7 +268,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -310,9 +321,11 @@ references:
     fullName: )
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.ConsoleSpecialKey
   parent: System
   isExternal: false

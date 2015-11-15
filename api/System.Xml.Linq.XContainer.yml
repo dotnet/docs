@@ -534,6 +534,7 @@ items:
       description: A parameter list of content objects.
 references:
 - uid: System.Xml.Linq.XContainer
+  parent: System.Xml.Linq
   isExternal: false
   href: System.Xml.Linq.XContainer.yml
   name: XContainer
@@ -563,9 +564,11 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Xml.Linq.XObject
   parent: System.Xml.Linq
   isExternal: false
@@ -1633,8 +1636,10 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Object[]
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object[]
   name.vb: Object()
   fullName: System.Object[]
@@ -1643,14 +1648,14 @@ references:
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ()
     fullName: ()
 - uid: System.Xml.Linq.XContainer.Add(System.Object)
@@ -1686,22 +1691,30 @@ references:
   - name: )
     fullName: )
 - uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
 - uid: XmlWriter
   isExternal: true
   name: XmlWriter
   fullName: XmlWriter
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -1712,7 +1725,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -1757,6 +1770,7 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Xml.Linq.XElement.DescendantsAndSelf
 - uid: System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement}
   parent: System.Collections.Generic
@@ -1802,13 +1816,16 @@ references:
   summary: Represents a name of an XML element or attribute. This class cannot be inherited.
 - uid: System.Collections.IEnumerable
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerable.yml
   name: IEnumerable
   fullName: System.Collections.IEnumerable
+  type: Interface
 - uid: System.Collections
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+  type: Namespace
 - uid: System.Xml.Linq.XContainer.Elements
   parent: System.Xml.Linq.XContainer
   isExternal: false

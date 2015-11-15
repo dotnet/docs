@@ -81,4 +81,16 @@ references:
   isExternal: false
   name: System.Threading
   fullName: System.Threading
+  type: Namespace
 - uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+  type: Namespace

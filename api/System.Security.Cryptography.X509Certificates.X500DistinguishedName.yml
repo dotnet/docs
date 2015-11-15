@@ -227,15 +227,19 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Byte[]
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte[]
   name.vb: Byte()
   fullName: System.Byte[]
@@ -244,14 +248,14 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
 - uid: AsnEncodedData
@@ -267,9 +271,11 @@ references:
   type: Class
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -279,6 +285,8 @@ references:
   type: Enum
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct

@@ -16,72 +16,29 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyObservableCollection.cs
+      path: src/mscorlib/src/System/Collections/ObjectModel/KeyedCollection.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyObservableCollection.cs
-    startLine: 11
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 5
   assemblies:
-  - System.ObjectModel
+  - mscorlib
   summary: The @'System.Collections.ObjectModel' namespace contains classes that can be used as collections in the object model of a reusable library. Use these classes when properties or methods return collections.
 references:
-- uid: System.Collections.ObjectModel.KeyedCollection`2
+- uid: System.Collections.ObjectModel.Collection`1
+  parent: System.Collections.ObjectModel
   isExternal: false
-  href: System.Collections.ObjectModel.KeyedCollection`2.yml
-  name: KeyedCollection<TKey, TItem>
-  name.vb: KeyedCollection(Of TKey, TItem)
-  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>
-  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem)
+  href: System.Collections.ObjectModel.Collection`1.yml
+  name: Collection<T>
+  name.vb: Collection(Of T)
+  fullName: System.Collections.ObjectModel.Collection<T>
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T)
   type: Class
   spec.csharp:
-  - uid: System.Collections.ObjectModel.KeyedCollection`2
-    name: KeyedCollection
-    fullName: System.Collections.ObjectModel.KeyedCollection
-    href: System.Collections.ObjectModel.KeyedCollection`2.yml
-  - name: <
-    fullName: <
-  - name: TKey
-    fullName: TKey
-  - name: ', '
-    fullName: ', '
-  - name: TItem
-    fullName: TItem
-  - name: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.ObjectModel.KeyedCollection`2
-    name: KeyedCollection
-    fullName: System.Collections.ObjectModel.KeyedCollection
-    href: System.Collections.ObjectModel.KeyedCollection`2.yml
-  - name: '(Of '
-    fullName: '(Of '
-  - name: TKey
-    fullName: TKey
-  - name: ', '
-    fullName: ', '
-  - name: TItem
-    fullName: TItem
-  - name: )
-    fullName: )
-- uid: System.Collections.ObjectModel.ObservableCollection`1
-  isExternal: false
-  href: System.Collections.ObjectModel.ObservableCollection`1.yml
-  name: ObservableCollection<T>
-  name.vb: ObservableCollection(Of T)
-  fullName: System.Collections.ObjectModel.ObservableCollection<T>
-  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
-  type: Class
-  summary: >-
-    Implementation of a dynamic data collection based on generic Collection&lt;T&gt;,
-
-    implementing INotifyCollectionChanged to notify listeners
-
-    when items get added, removed or the whole list is refreshed.
-  spec.csharp:
-  - uid: System.Collections.ObjectModel.ObservableCollection`1
-    name: ObservableCollection
-    fullName: System.Collections.ObjectModel.ObservableCollection
-    href: System.Collections.ObjectModel.ObservableCollection`1.yml
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    fullName: System.Collections.ObjectModel.Collection
+    href: System.Collections.ObjectModel.Collection`1.yml
   - name: <
     fullName: <
   - name: T
@@ -89,10 +46,41 @@ references:
   - name: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.ObjectModel.ObservableCollection`1
-    name: ObservableCollection
-    fullName: System.Collections.ObjectModel.ObservableCollection
-    href: System.Collections.ObjectModel.ObservableCollection`1.yml
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    fullName: System.Collections.ObjectModel.Collection
+    href: System.Collections.ObjectModel.Collection`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  parent: System.Collections.ObjectModel
+  isExternal: false
+  href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
+  name: ReadOnlyCollection<T>
+  name.vb: ReadOnlyCollection(Of T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -191,6 +179,81 @@ references:
     fullName: '(Of '
   - name: )
     fullName: )
+- uid: System.Collections.ObjectModel.KeyedCollection`2
+  isExternal: false
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: KeyedCollection<TKey, TItem>
+  name.vb: KeyedCollection(Of TKey, TItem)
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.KeyedCollection`2
+    name: KeyedCollection
+    fullName: System.Collections.ObjectModel.KeyedCollection
+    href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TItem
+    fullName: TItem
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.KeyedCollection`2
+    name: KeyedCollection
+    fullName: System.Collections.ObjectModel.KeyedCollection
+    href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  parent: System.Collections.ObjectModel
+  isExternal: false
+  href: System.Collections.ObjectModel.ObservableCollection`1.yml
+  name: ObservableCollection<T>
+  name.vb: ObservableCollection(Of T)
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  type: Class
+  summary: >-
+    Implementation of a dynamic data collection based on generic Collection&lt;T&gt;,
+
+    implementing INotifyCollectionChanged to notify listeners
+
+    when items get added, removed or the whole list is refreshed.
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    fullName: System.Collections.ObjectModel.ObservableCollection
+    href: System.Collections.ObjectModel.ObservableCollection`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    fullName: System.Collections.ObjectModel.ObservableCollection
+    href: System.Collections.ObjectModel.ObservableCollection`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
 - uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
   isExternal: false
   href: System.Collections.ObjectModel.ReadOnlyObservableCollection`1.yml
@@ -216,64 +279,6 @@ references:
     name: ReadOnlyObservableCollection
     fullName: System.Collections.ObjectModel.ReadOnlyObservableCollection
     href: System.Collections.ObjectModel.ReadOnlyObservableCollection`1.yml
-  - name: '(Of '
-    fullName: '(Of '
-  - name: T
-    fullName: T
-  - name: )
-    fullName: )
-- uid: System.Collections.ObjectModel.Collection`1
-  parent: System.Collections.ObjectModel
-  isExternal: true
-  name: Collection<T>
-  name.vb: Collection(Of T)
-  fullName: System.Collections.ObjectModel.Collection<T>
-  fullName.vb: System.Collections.ObjectModel.Collection(Of T)
-  spec.csharp:
-  - uid: System.Collections.ObjectModel.Collection`1
-    name: Collection
-    fullName: System.Collections.ObjectModel.Collection
-    isExternal: true
-  - name: <
-    fullName: <
-  - name: T
-    fullName: T
-  - name: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.ObjectModel.Collection`1
-    name: Collection
-    fullName: System.Collections.ObjectModel.Collection
-    isExternal: true
-  - name: '(Of '
-    fullName: '(Of '
-  - name: T
-    fullName: T
-  - name: )
-    fullName: )
-- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
-  parent: System.Collections.ObjectModel
-  isExternal: true
-  name: ReadOnlyCollection<T>
-  name.vb: ReadOnlyCollection(Of T)
-  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
-  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
-  spec.csharp:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
-    name: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
-    isExternal: true
-  - name: <
-    fullName: <
-  - name: T
-    fullName: T
-  - name: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
-    name: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
-    isExternal: true
   - name: '(Of '
     fullName: '(Of '
   - name: T

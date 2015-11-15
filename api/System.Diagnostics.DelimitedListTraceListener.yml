@@ -298,9 +298,11 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Diagnostics.TextWriterTraceListener
   parent: System.Diagnostics
   isExternal: false
@@ -438,25 +440,33 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.IO.Stream
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Stream
   fullName: System.IO.Stream
+  type: Class
 - uid: System.IO
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.IO.TextWriter
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.TextWriter.yml
   name: TextWriter
   fullName: System.IO.TextWriter
+  type: Class
 - uid: TraceEventCache
   isExternal: true
   name: TraceEventCache
@@ -467,11 +477,14 @@ references:
   fullName: TraceEventType
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Object[]
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object[]
   name.vb: Object()
   fullName: System.Object[]
@@ -480,13 +493,13 @@ references:
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ()
     fullName: ()

@@ -164,10 +164,13 @@ references:
   type: Interface
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

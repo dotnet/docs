@@ -897,21 +897,25 @@ references:
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -920,138 +924,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1060,7 +1068,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1115,52 +1123,71 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.IO.Stream
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Stream
   fullName: System.IO.Stream
+  type: Class
 - uid: System.Text.Encoding
   parent: System.Text
-  isExternal: true
+  isExternal: false
+  href: System.Text.Encoding.yml
   name: Encoding
   fullName: System.Text.Encoding
+  type: Class
 - uid: System.Text
   isExternal: false
   name: System.Text
   fullName: System.Text
+  type: Namespace
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.IO.SeekOrigin
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.SeekOrigin.yml
   name: SeekOrigin
   fullName: System.IO.SeekOrigin
+  type: Enum
 - uid: System.Int64
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int64.yml
   name: Int64
   fullName: System.Int64
+  type: Struct
 - uid: System.Byte
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte
   fullName: System.Byte
+  type: Struct
 - uid: System.SByte
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.SByte.yml
   name: SByte
   fullName: System.SByte
+  type: Struct
 - uid: System.Byte[]
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte[]
   name.vb: Byte()
   fullName: System.Byte[]
@@ -1169,23 +1196,26 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
 - uid: System.Char
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Char.yml
   name: Char
   fullName: System.Char
+  type: Struct
 - uid: System.Char[]
-  isExternal: true
+  isExternal: false
+  href: System.Char.yml
   name: Char[]
   name.vb: Char()
   fullName: System.Char[]
@@ -1194,53 +1224,69 @@ references:
   - uid: System.Char
     name: Char
     fullName: System.Char
-    isExternal: true
+    href: System.Char.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Char
     name: Char
     fullName: System.Char
-    isExternal: true
+    href: System.Char.yml
   - name: ()
     fullName: ()
 - uid: System.Double
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Double.yml
   name: Double
   fullName: System.Double
+  type: Struct
 - uid: System.Decimal
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Decimal.yml
   name: Decimal
   fullName: System.Decimal
+  type: Struct
 - uid: System.Int16
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int16.yml
   name: Int16
   fullName: System.Int16
+  type: Struct
 - uid: System.UInt16
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.UInt16.yml
   name: UInt16
   fullName: System.UInt16
+  type: Struct
 - uid: System.UInt32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.UInt32.yml
   name: UInt32
   fullName: System.UInt32
+  type: Struct
 - uid: System.UInt64
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.UInt64.yml
   name: UInt64
   fullName: System.UInt64
+  type: Struct
 - uid: System.Single
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Single.yml
   name: Single
   fullName: System.Single
+  type: Struct
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class

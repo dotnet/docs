@@ -58,6 +58,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.IObserver{{T}}
   parent: System
   definition: System.IObserver`1
@@ -90,21 +91,25 @@ references:
     fullName: )
 - uid: System.IDisposable
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.IDisposable.yml
   name: IDisposable
   fullName: System.IDisposable
+  type: Interface
 - uid: System.IObserver`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.IObserver`1.yml
   name: IObserver<T>
   name.vb: IObserver(Of T)
   fullName: System.IObserver<T>
   fullName.vb: System.IObserver(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.IObserver`1
     name: IObserver
     fullName: System.IObserver
-    isExternal: true
+    href: System.IObserver`1.yml
   - name: <
     fullName: <
   - name: T
@@ -115,7 +120,7 @@ references:
   - uid: System.IObserver`1
     name: IObserver
     fullName: System.IObserver
-    isExternal: true
+    href: System.IObserver`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T

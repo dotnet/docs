@@ -150,14 +150,18 @@ references:
     fullName: )
 - uid: System.IDisposable
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.IDisposable.yml
   name: IDisposable
   fullName: System.IDisposable
+  type: Interface
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.ComponentModel.IComponent
+  parent: System.ComponentModel
   isExternal: false
   href: System.ComponentModel.IComponent.yml
   name: IComponent
@@ -165,10 +169,13 @@ references:
   type: Interface
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.ComponentModel.ComponentCollection
+  parent: System.ComponentModel
   isExternal: false
   href: System.ComponentModel.ComponentCollection.yml
   name: ComponentCollection

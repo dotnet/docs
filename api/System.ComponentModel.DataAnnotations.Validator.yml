@@ -59,7 +59,7 @@ items:
   remarks: >-
     This method will test each @'System.ComponentModel.DataAnnotations.ValidationAttribute' associated with the property
 
-    identified by <paramref name="validationContext" />.  If <paramref name="validationResults" /> is non-null,
+    identified by *validationContext*.  If *validationResults* is non-null,
 
     this method will add a @'System.ComponentModel.DataAnnotations.ValidationResult' to it for each validation failure.
 
@@ -69,11 +69,11 @@ items:
 
     validation attributes.  If the required validator fails then validation will abort, adding that single
 
-    failure into the <paramref name="validationResults" /> when applicable, returning a value of <c>false</c>.
+    failure into the *validationResults* when applicable, returning a value of <c>false</c>.
 
     </para><para>
 
-    If <paramref name="validationResults" /> is null and there isn't a @'System.ComponentModel.DataAnnotations.RequiredAttribute' failure,
+    If *validationResults* is null and there isn't a @'System.ComponentModel.DataAnnotations.RequiredAttribute' failure,
 
     then all validators will be evaluated.
 
@@ -123,9 +123,9 @@ items:
 
     <para>
 
-    If <paramref name="validationResults" /> is null, then execution will abort upon the first validation
+    If *validationResults* is null, then execution will abort upon the first validation
 
-    failure.  If <paramref name="validationResults" /> is non-null, then all validation attributes will be
+    failure.  If *validationResults* is non-null, then all validation attributes will be
 
     evaluated.
 
@@ -171,7 +171,7 @@ items:
 
     checks to ensure all properties marked with @'System.ComponentModel.DataAnnotations.RequiredAttribute' are set.  If
 
-    <paramref name="validateAllProperties" />
+    *validateAllProperties*
 
     is <c>true</c>, this method will also evaluate the @'System.ComponentModel.DataAnnotations.ValidationAttribute's for all the immediate
 
@@ -181,9 +181,9 @@ items:
 
     <para>
 
-    If <paramref name="validationResults" /> is null, then execution will abort upon the first validation
+    If *validationResults* is null, then execution will abort upon the first validation
 
-    failure.  If <paramref name="validationResults" /> is non-null, then all validation attributes will be
+    failure.  If *validationResults* is non-null, then all validation attributes will be
 
     evaluated.
 
@@ -236,23 +236,23 @@ items:
   remarks: >-
     This method will test each @'System.ComponentModel.DataAnnotations.ValidationAttribute's specified .  If
 
-    <paramref name="validationResults" /> is non-null, this method will add a @'System.ComponentModel.DataAnnotations.ValidationResult'
+    *validationResults* is non-null, this method will add a @'System.ComponentModel.DataAnnotations.ValidationResult'
 
     to it for each validation failure.
 
     <para>
 
-    If there is a @'System.ComponentModel.DataAnnotations.RequiredAttribute' within the <paramref name="validationAttributes" />, it will
+    If there is a @'System.ComponentModel.DataAnnotations.RequiredAttribute' within the *validationAttributes*, it will
 
     be evaluated before all other validation attributes.  If the required validator fails then validation will
 
-    abort, adding that single failure into the <paramref name="validationResults" /> when applicable, returning a
+    abort, adding that single failure into the *validationResults* when applicable, returning a
 
     value of <c>false</c>.
 
     </para><para>
 
-    If <paramref name="validationResults" /> is null and there isn't a @'System.ComponentModel.DataAnnotations.RequiredAttribute' failure,
+    If *validationResults* is null and there isn't a @'System.ComponentModel.DataAnnotations.RequiredAttribute' failure,
 
     then all validators will be evaluated.
 
@@ -355,7 +355,7 @@ items:
   remarks: >-
     This method evaluates all @'System.ComponentModel.DataAnnotations.ValidationAttribute's attached to the object's type.
 
-    If <paramref name="validateAllProperties" /> is <c>true</c> it also validates all the object's properties.
+    If *validateAllProperties* is <c>true</c> it also validates all the object's properties.
   syntax:
     content: public static void ValidateObject(object instance, ValidationContext validationContext, bool validateAllProperties)
     content.vb: Public Shared Sub ValidateObject(instance As Object, validationContext As ValidationContext, validateAllProperties As Boolean)
@@ -398,7 +398,7 @@ items:
 
     <para>
 
-    A @'System.ComponentModel.DataAnnotations.RequiredAttribute' within the <paramref name="validationAttributes" /> will always be evaluated
+    A @'System.ComponentModel.DataAnnotations.RequiredAttribute' within the *validationAttributes* will always be evaluated
 
     first.
 
@@ -440,19 +440,22 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -461,138 +464,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -601,7 +608,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -656,6 +663,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.ComponentModel.DataAnnotations.ValidationResult
   parent: System.ComponentModel.DataAnnotations
   isExternal: false
@@ -678,7 +686,14 @@ references:
   fullName: System.ComponentModel.DataAnnotations.RequiredAttribute
   type: Class
   summary: Validation attribute to indicate that a property field or parameter is required.
+- uid: System.ComponentModel.DataAnnotations.ValidationContext.MemberName
 - uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
 - uid: System.ComponentModel.DataAnnotations.ValidationContext
   parent: System.ComponentModel.DataAnnotations
   isExternal: false
@@ -723,21 +738,25 @@ references:
     fullName: )
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Collections.Generic.ICollection`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.ICollection`1.yml
   name: ICollection<T>
   name.vb: ICollection(Of T)
   fullName: System.Collections.Generic.ICollection<T>
   fullName.vb: System.Collections.Generic.ICollection(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     fullName: System.Collections.Generic.ICollection
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: <
     fullName: <
   - name: T
@@ -748,7 +767,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     fullName: System.Collections.Generic.ICollection
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -759,7 +778,14 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
+- uid: System.ComponentModel.DataAnnotations.ValidationContext.ObjectInstance
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.Collections.Generic.IEnumerable{System.ComponentModel.DataAnnotations.ValidationAttribute}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
@@ -796,16 +822,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -816,7 +844,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T

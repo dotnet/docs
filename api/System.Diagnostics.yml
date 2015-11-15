@@ -58,31 +58,17 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/System.Runtime.Extensions/src/System/Diagnostics/Stopwatch.Windows.cs
+      path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessWaitHandle.Windows.cs
       branch: master
       repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Runtime.Extensions/src/System/Diagnostics/Stopwatch.Windows.cs
-    startLine: 3
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessWaitHandle.Windows.cs
+    startLine: 7
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - System.Diagnostics.Process
   summary: The @'System.Diagnostics' namespace provides classes that allow you to interact with system processes, event logs, and performance counters.
 references:
-- uid: System.Diagnostics.Stopwatch
-  parent: System.Diagnostics
-  isExternal: false
-  href: System.Diagnostics.Stopwatch.yml
-  name: Stopwatch
-  fullName: System.Diagnostics.Stopwatch
-  type: Class
-- uid: System.Diagnostics.FileVersionInfo
-  parent: System.Diagnostics
-  isExternal: false
-  href: System.Diagnostics.FileVersionInfo.yml
-  name: FileVersionInfo
-  fullName: System.Diagnostics.FileVersionInfo
-  type: Class
-  summary: Provides version information for a physical file on disk.
 - uid: System.Diagnostics.DataReceivedEventHandler
+  parent: System.Diagnostics
   isExternal: false
   href: System.Diagnostics.DataReceivedEventHandler.yml
   name: DataReceivedEventHandler
@@ -131,6 +117,7 @@ references:
   fullName: System.Diagnostics.ProcessStartInfo
   type: Class
 - uid: System.Diagnostics.ProcessThread
+  parent: System.Diagnostics
   isExternal: false
   href: System.Diagnostics.ProcessThread.yml
   name: ProcessThread
@@ -171,6 +158,14 @@ references:
   name: ThreadWaitReason
   fullName: System.Diagnostics.ThreadWaitReason
   type: Enum
+- uid: System.Diagnostics.FileVersionInfo
+  parent: System.Diagnostics
+  isExternal: false
+  href: System.Diagnostics.FileVersionInfo.yml
+  name: FileVersionInfo
+  fullName: System.Diagnostics.FileVersionInfo
+  type: Class
+  summary: Provides version information for a physical file on disk.
 - uid: System.Diagnostics.ConditionalAttribute
   isExternal: false
   href: System.Diagnostics.ConditionalAttribute.yml
@@ -268,25 +263,12 @@ references:
   name: StackFrame
   fullName: System.Diagnostics.StackFrame
   type: Class
-- uid: System.Diagnostics.Debug
-  isExternal: false
-  href: System.Diagnostics.Debug.yml
-  name: Debug
-  fullName: System.Diagnostics.Debug
-  type: Class
-  summary: Provides a set of properties and methods for debugging code.
-- uid: System.Diagnostics.DelimitedListTraceListener
-  isExternal: false
-  href: System.Diagnostics.DelimitedListTraceListener.yml
-  name: DelimitedListTraceListener
-  fullName: System.Diagnostics.DelimitedListTraceListener
-  type: Class
-- uid: System.Diagnostics.TextWriterTraceListener
+- uid: System.Diagnostics.Stopwatch
   parent: System.Diagnostics
   isExternal: false
-  href: System.Diagnostics.TextWriterTraceListener.yml
-  name: TextWriterTraceListener
-  fullName: System.Diagnostics.TextWriterTraceListener
+  href: System.Diagnostics.Stopwatch.yml
+  name: Stopwatch
+  fullName: System.Diagnostics.Stopwatch
   type: Class
 - uid: System.Diagnostics.BooleanSwitch
   isExternal: false
@@ -320,6 +302,7 @@ references:
   fullName: System.Diagnostics.SourceLevels
   type: Enum
 - uid: System.Diagnostics.SourceSwitch
+  parent: System.Diagnostics
   isExternal: false
   href: System.Diagnostics.SourceSwitch.yml
   name: SourceSwitch
@@ -398,6 +381,26 @@ references:
   href: System.Diagnostics.TraceSwitch.yml
   name: TraceSwitch
   fullName: System.Diagnostics.TraceSwitch
+  type: Class
+- uid: System.Diagnostics.Debug
+  isExternal: false
+  href: System.Diagnostics.Debug.yml
+  name: Debug
+  fullName: System.Diagnostics.Debug
+  type: Class
+  summary: Provides a set of properties and methods for debugging code.
+- uid: System.Diagnostics.DelimitedListTraceListener
+  isExternal: false
+  href: System.Diagnostics.DelimitedListTraceListener.yml
+  name: DelimitedListTraceListener
+  fullName: System.Diagnostics.DelimitedListTraceListener
+  type: Class
+- uid: System.Diagnostics.TextWriterTraceListener
+  parent: System.Diagnostics
+  isExternal: false
+  href: System.Diagnostics.TextWriterTraceListener.yml
+  name: TextWriterTraceListener
+  fullName: System.Diagnostics.TextWriterTraceListener
   type: Class
 - uid: System.Diagnostics
   isExternal: false

@@ -6,6 +6,7 @@ items:
   - Microsoft.Win32.RegistryHive.ClassesRoot
   - Microsoft.Win32.RegistryHive.CurrentConfig
   - Microsoft.Win32.RegistryHive.CurrentUser
+  - Microsoft.Win32.RegistryHive.DynData
   - Microsoft.Win32.RegistryHive.LocalMachine
   - Microsoft.Win32.RegistryHive.PerformanceData
   - Microsoft.Win32.RegistryHive.Users
@@ -15,13 +16,13 @@ items:
   type: Enum
   source:
     remote: &o0
-      path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
+      path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 65
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 74
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Represents the possible values for a top-level node on a foreign machine.
   syntax:
@@ -36,10 +37,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 67
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 78
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Represents the HKEY_CLASSES_ROOT base key on another computer. This value can be passed to the @'Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String)' method, to open this node remotely.
   syntax:
@@ -53,10 +54,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 68
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 79
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Represents the HKEY_CURRENT_USER base key on another computer. This value can be passed to the @'Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String)' method, to open this node remotely.
   syntax:
@@ -70,10 +71,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 69
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 80
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Represents the HKEY_LOCAL_MACHINE base key on another computer. This value can be passed to the @'Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String)' method, to open this node remotely.
   syntax:
@@ -87,10 +88,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 70
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 81
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Represents the HKEY_USERS base key on another computer. This value can be passed to the @'Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String)' method, to open this node remotely.
   syntax:
@@ -104,10 +105,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 71
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 82
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Represents the HKEY_PERFORMANCE_DATA base key on another computer. This value can be passed to the @'Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String)' method, to open this node remotely.
   syntax:
@@ -121,14 +122,31 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 72
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 83
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Represents the HKEY_CURRENT_CONFIG base key on another computer. This value can be passed to the @'Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String)' method, to open this node remotely.
   syntax:
     content: CurrentConfig = -2147483643
+- uid: Microsoft.Win32.RegistryHive.DynData
+  id: DynData
+  parent: Microsoft.Win32.RegistryHive
+  href: Microsoft.Win32.RegistryHive.yml
+  name: DynData
+  fullName: Microsoft.Win32.RegistryHive.DynData
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 84
+  assemblies:
+  - mscorlib
+  namespace: Microsoft.Win32
+  summary: Represents the HKEY_DYN_DATA base key on another computer. This value can be passed to the @'Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String)' method, to open this node remotely.
+  syntax:
+    content: DynData = -2147483642
 references:
 - uid: Microsoft.Win32
   isExternal: false

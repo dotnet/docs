@@ -150,22 +150,28 @@ references:
   type: Namespace
 - uid: System.IO.Stream
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Stream
   fullName: System.IO.Stream
+  type: Class
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.IO
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Runtime.Serialization.ISurrogateSelector
   parent: System.Runtime.Serialization
   isExternal: false
@@ -181,6 +187,7 @@ references:
   fullName: System.Runtime.Serialization.SerializationBinder
   type: Class
 - uid: System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
   isExternal: false
   href: System.Runtime.Serialization.StreamingContext.yml
   name: StreamingContext

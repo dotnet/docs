@@ -177,9 +177,11 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Net.Http.Headers.TransferCodingHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -325,88 +327,90 @@ references:
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetType
@@ -459,6 +463,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Nullable{System.Double}
   parent: System
   definition: System.Nullable`1
@@ -494,16 +499,18 @@ references:
     fullName: )
 - uid: System.Nullable`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Nullable`1.yml
   name: Nullable<T>
   name.vb: Nullable(Of T)
   fullName: System.Nullable<T>
   fullName.vb: System.Nullable(Of T)
+  type: Struct
   spec.csharp:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -514,7 +521,7 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -523,14 +530,18 @@ references:
     fullName: )
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Double
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Double.yml
   name: Double
   fullName: System.Double
+  type: Struct
 - uid: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
   parent: System.Net.Http.Headers
   isExternal: false
@@ -540,6 +551,8 @@ references:
   type: Class
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct

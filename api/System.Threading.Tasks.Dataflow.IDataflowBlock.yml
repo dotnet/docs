@@ -97,9 +97,12 @@ references:
   type: Namespace
 - uid: System.Threading.Tasks.Task
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.Task.yml
   name: Task
   fullName: System.Threading.Tasks.Task
+  type: Class
+  summary: Represents an asynchronous operation.
 - uid: System.Threading.Tasks
   isExternal: false
   name: System.Threading.Tasks
@@ -107,10 +110,13 @@ references:
   type: Namespace
 - uid: System.Exception
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: Exception
   fullName: System.Exception
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

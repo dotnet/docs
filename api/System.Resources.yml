@@ -19,16 +19,29 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/mscorlib/src/System/Resources/UltimateResourceFallbackLocation.cs
+      path: src/System.Resources.ReaderWriter/src/System/Resources/ResourceWriter.cs
       branch: master
-      repo: https://github.com/chenkennt/coreclr.git
-    path: src/mscorlib/src/System/Resources/UltimateResourceFallbackLocation.cs
-    startLine: 18
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Resources.ReaderWriter/src/System/Resources/ResourceWriter.cs
+    startLine: 25
   assemblies:
-  - mscorlib
+  - System.Resources.ReaderWriter
   summary: The @'System.Resources' namespace provides classes and interfaces that allow developers to create, store, and manage various culture-specific resources used in an application. One of the most important classes of the @'System.Resources' namespace is the @'System.Resources.ResourceManager' class.
 references:
+- uid: System.Resources.ResourceReader
+  isExternal: false
+  href: System.Resources.ResourceReader.yml
+  name: ResourceReader
+  fullName: System.Resources.ResourceReader
+  type: Class
+- uid: System.Resources.ResourceWriter
+  isExternal: false
+  href: System.Resources.ResourceWriter.yml
+  name: ResourceWriter
+  fullName: System.Resources.ResourceWriter
+  type: Class
 - uid: System.Resources.IResourceReader
+  parent: System.Resources
   isExternal: false
   href: System.Resources.IResourceReader.yml
   name: IResourceReader
@@ -65,12 +78,6 @@ references:
   name: ResourceManager
   fullName: System.Resources.ResourceManager
   type: Class
-- uid: System.Resources.ResourceReader
-  isExternal: false
-  href: System.Resources.ResourceReader.yml
-  name: ResourceReader
-  fullName: System.Resources.ResourceReader
-  type: Class
 - uid: System.Resources.ResourceSet
   parent: System.Resources
   isExternal: false
@@ -91,12 +98,6 @@ references:
   name: UltimateResourceFallbackLocation
   fullName: System.Resources.UltimateResourceFallbackLocation
   type: Enum
-- uid: System.Resources.ResourceWriter
-  isExternal: false
-  href: System.Resources.ResourceWriter.yml
-  name: ResourceWriter
-  fullName: System.Resources.ResourceWriter
-  type: Class
 - uid: System.Resources
   isExternal: false
   name: System.Resources

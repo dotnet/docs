@@ -87,15 +87,20 @@ references:
   type: Struct
 - uid: System.Exception
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: Exception
   fullName: System.Exception
+  type: Class
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

@@ -12,13 +12,13 @@ items:
   type: Enum
   source:
     remote: &o0
-      path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryView.cs
+      path: src/mscorlib/src/Microsoft/Win32/RegistryView.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryView.cs
-    startLine: 7
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/Microsoft/Win32/RegistryView.cs
+    startLine: 12
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Specifies which registry view to target on a 64-bit operating system.
   syntax:
@@ -33,10 +33,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryView.cs
-    startLine: 9
+    path: src/mscorlib/src/Microsoft/Win32/RegistryView.cs
+    startLine: 13
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: The default view.
   syntax:
@@ -50,10 +50,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryView.cs
-    startLine: 10
+    path: src/mscorlib/src/Microsoft/Win32/RegistryView.cs
+    startLine: 14
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: The 64-bit view.
   syntax:
@@ -67,10 +67,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryView.cs
-    startLine: 11
+    path: src/mscorlib/src/Microsoft/Win32/RegistryView.cs
+    startLine: 15
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: The 32-bit view.
   syntax:

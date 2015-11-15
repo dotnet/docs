@@ -3571,9 +3571,11 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Reflection.MemberInfo
   parent: System.Reflection
   isExternal: false
@@ -3583,9 +3585,11 @@ references:
   type: Class
 - uid: System.Type
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Type.yml
   name: Type
   fullName: System.Type
+  type: Class
 - uid: System.Reflection.TypeInfo
   parent: System.Reflection
   isExternal: false
@@ -6978,88 +6982,90 @@ references:
   fullName: System.Reflection.MemberInfo.MetadataToken
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetType
@@ -7112,6 +7118,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Reflection
   isExternal: false
   name: System.Reflection
@@ -7151,24 +7158,32 @@ references:
     fullName: )
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Reflection.MethodInfo
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
   name: MethodInfo
   fullName: System.Reflection.MethodInfo
+  type: Class
 - uid: System.Reflection.ConstructorInfo
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.ConstructorInfo.yml
   name: ConstructorInfo
   fullName: System.Reflection.ConstructorInfo
+  type: Class
 - uid: System.Reflection.FieldInfo
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.FieldInfo.yml
   name: FieldInfo
   fullName: System.Reflection.FieldInfo
+  type: Class
 - uid: System.Type.ToString
   parent: System.Type
   isExternal: false
@@ -7195,9 +7210,11 @@ references:
     fullName: )
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Type.DeclaringType
   parent: System.Type
   isExternal: false
@@ -7237,9 +7254,11 @@ references:
   fullName: System.Type.GUID
 - uid: System.Guid
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Guid.yml
   name: Guid
   fullName: System.Guid
+  type: Struct
 - uid: System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])
   parent: System.Type
   isExternal: false
@@ -7372,9 +7391,11 @@ references:
     fullName: )
 - uid: System.Reflection.BindingFlags
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.BindingFlags.yml
   name: BindingFlags
   fullName: System.Reflection.BindingFlags
+  type: Enum
 - uid: System.Reflection.Binder
   parent: System.Reflection
   isExternal: false
@@ -7383,7 +7404,8 @@ references:
   fullName: System.Reflection.Binder
   type: Class
 - uid: System.Object[]
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object[]
   name.vb: Object()
   fullName: System.Object[]
@@ -7392,14 +7414,14 @@ references:
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ()
     fullName: ()
 - uid: System.Reflection.ParameterModifier[]
@@ -7425,11 +7447,14 @@ references:
     fullName: ()
 - uid: System.Globalization.CultureInfo
   parent: System.Globalization
-  isExternal: true
+  isExternal: false
+  href: System.Globalization.CultureInfo.yml
   name: CultureInfo
   fullName: System.Globalization.CultureInfo
+  type: Class
 - uid: System.String[]
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String[]
   name.vb: String()
   fullName: System.String[]
@@ -7438,20 +7463,21 @@ references:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: ()
     fullName: ()
 - uid: System.Globalization
   isExternal: false
   name: System.Globalization
   fullName: System.Globalization
+  type: Namespace
 - uid: System.Type.Assembly
   parent: System.Type
   isExternal: false
@@ -7460,9 +7486,11 @@ references:
   fullName: System.Type.Assembly
 - uid: System.Reflection.Assembly
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.Assembly.yml
   name: Assembly
   fullName: System.Reflection.Assembly
+  type: Class
 - uid: System.Type.TypeHandle
   parent: System.Type
   isExternal: false
@@ -7598,7 +7626,8 @@ references:
   fullName: System.Reflection.CallingConventions
   type: Enum
 - uid: System.Type[]
-  isExternal: true
+  isExternal: false
+  href: System.Type.yml
   name: Type[]
   name.vb: Type()
   fullName: System.Type[]
@@ -7607,14 +7636,14 @@ references:
   - uid: System.Type
     name: Type
     fullName: System.Type
-    isExternal: true
+    href: System.Type.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Type
     name: Type
     fullName: System.Type
-    isExternal: true
+    href: System.Type.yml
   - name: ()
     fullName: ()
 - uid: System.Type.GetConstructors(System.Reflection.BindingFlags)
@@ -7650,7 +7679,8 @@ references:
   - name: )
     fullName: )
 - uid: System.Reflection.ConstructorInfo[]
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.ConstructorInfo.yml
   name: ConstructorInfo[]
   name.vb: ConstructorInfo()
   fullName: System.Reflection.ConstructorInfo[]
@@ -7659,14 +7689,14 @@ references:
   - uid: System.Reflection.ConstructorInfo
     name: ConstructorInfo
     fullName: System.Reflection.ConstructorInfo
-    isExternal: true
+    href: System.Reflection.ConstructorInfo.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Reflection.ConstructorInfo
     name: ConstructorInfo
     fullName: System.Reflection.ConstructorInfo
-    isExternal: true
+    href: System.Reflection.ConstructorInfo.yml
   - name: ()
     fullName: ()
 - uid: System.Type.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
@@ -7804,7 +7834,8 @@ references:
   - name: )
     fullName: )
 - uid: System.Reflection.MethodInfo[]
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
   name: MethodInfo[]
   name.vb: MethodInfo()
   fullName: System.Reflection.MethodInfo[]
@@ -7813,14 +7844,14 @@ references:
   - uid: System.Reflection.MethodInfo
     name: MethodInfo
     fullName: System.Reflection.MethodInfo
-    isExternal: true
+    href: System.Reflection.MethodInfo.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Reflection.MethodInfo
     name: MethodInfo
     fullName: System.Reflection.MethodInfo
-    isExternal: true
+    href: System.Reflection.MethodInfo.yml
   - name: ()
     fullName: ()
 - uid: System.Type.GetField(System.String,System.Reflection.BindingFlags)
@@ -7900,7 +7931,8 @@ references:
   - name: )
     fullName: )
 - uid: System.Reflection.FieldInfo[]
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.FieldInfo.yml
   name: FieldInfo[]
   name.vb: FieldInfo()
   fullName: System.Reflection.FieldInfo[]
@@ -7909,14 +7941,14 @@ references:
   - uid: System.Reflection.FieldInfo
     name: FieldInfo
     fullName: System.Reflection.FieldInfo
-    isExternal: true
+    href: System.Reflection.FieldInfo.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Reflection.FieldInfo
     name: FieldInfo
     fullName: System.Reflection.FieldInfo
-    isExternal: true
+    href: System.Reflection.FieldInfo.yml
   - name: ()
     fullName: ()
 - uid: System.Type.GetInterface(System.String,System.Boolean)
@@ -8033,9 +8065,11 @@ references:
     fullName: )
 - uid: System.Reflection.EventInfo
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.EventInfo.yml
   name: EventInfo
   fullName: System.Reflection.EventInfo
+  type: Class
 - uid: System.Type.GetEvents
   parent: System.Type
   isExternal: false
@@ -8061,7 +8095,8 @@ references:
   - name: )
     fullName: )
 - uid: System.Reflection.EventInfo[]
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.EventInfo.yml
   name: EventInfo[]
   name.vb: EventInfo()
   fullName: System.Reflection.EventInfo[]
@@ -8070,14 +8105,14 @@ references:
   - uid: System.Reflection.EventInfo
     name: EventInfo
     fullName: System.Reflection.EventInfo
-    isExternal: true
+    href: System.Reflection.EventInfo.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Reflection.EventInfo
     name: EventInfo
     fullName: System.Reflection.EventInfo
-    isExternal: true
+    href: System.Reflection.EventInfo.yml
   - name: ()
     fullName: ()
 - uid: System.Type.GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])
@@ -8184,9 +8219,11 @@ references:
     fullName: )
 - uid: System.Reflection.PropertyInfo
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.PropertyInfo.yml
   name: PropertyInfo
   fullName: System.Reflection.PropertyInfo
+  type: Class
 - uid: System.Type.GetProperties(System.Reflection.BindingFlags)
   parent: System.Type
   isExternal: false
@@ -8220,7 +8257,8 @@ references:
   - name: )
     fullName: )
 - uid: System.Reflection.PropertyInfo[]
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.PropertyInfo.yml
   name: PropertyInfo[]
   name.vb: PropertyInfo()
   fullName: System.Reflection.PropertyInfo[]
@@ -8229,14 +8267,14 @@ references:
   - uid: System.Reflection.PropertyInfo
     name: PropertyInfo
     fullName: System.Reflection.PropertyInfo
-    isExternal: true
+    href: System.Reflection.PropertyInfo.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Reflection.PropertyInfo
     name: PropertyInfo
     fullName: System.Reflection.PropertyInfo
-    isExternal: true
+    href: System.Reflection.PropertyInfo.yml
   - name: ()
     fullName: ()
 - uid: System.Type.GetNestedTypes(System.Reflection.BindingFlags)
@@ -8379,7 +8417,8 @@ references:
   fullName: System.Reflection.MemberTypes
   type: Enum
 - uid: System.Reflection.MemberInfo[]
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
   name: MemberInfo[]
   name.vb: MemberInfo()
   fullName: System.Reflection.MemberInfo[]
@@ -8388,14 +8427,14 @@ references:
   - uid: System.Reflection.MemberInfo
     name: MemberInfo
     fullName: System.Reflection.MemberInfo
-    isExternal: true
+    href: System.Reflection.MemberInfo.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Reflection.MemberInfo
     name: MemberInfo
     fullName: System.Reflection.MemberInfo
-    isExternal: true
+    href: System.Reflection.MemberInfo.yml
   - name: ()
     fullName: ()
 - uid: System.Type.GetInterfaceMap(System.Type)
@@ -8559,9 +8598,11 @@ references:
     fullName: )
 - uid: System.Reflection.TypeAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.TypeAttributes.yml
   name: TypeAttributes
   fullName: System.Reflection.TypeAttributes
+  type: Enum
 - uid: System.Type.IsArrayImpl
   parent: System.Type
   isExternal: false
@@ -8892,9 +8933,11 @@ references:
     fullName: )
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)
   parent: System.Reflection.MemberInfo
   isExternal: false
@@ -9023,9 +9066,11 @@ references:
   fullName: System.Type.GenericParameterAttributes
 - uid: System.Reflection.GenericParameterAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.GenericParameterAttributes.yml
   name: GenericParameterAttributes
   fullName: System.Reflection.GenericParameterAttributes
+  type: Enum
 - uid: System.Reflection.Emit.GenericTypeParameterBuilder[]
   isExternal: false
   href: System.Reflection.Emit.GenericTypeParameterBuilder.yml
@@ -9178,9 +9223,11 @@ references:
     fullName: )
 - uid: System.Reflection.MethodAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.MethodAttributes.yml
   name: MethodAttributes
   fullName: System.Reflection.MethodAttributes
+  type: Enum
 - uid: System.Reflection.Emit.MethodBuilder
   parent: System.Reflection.Emit
   isExternal: false
@@ -9214,6 +9261,7 @@ references:
   - name: ()
     fullName: ()
 - uid: System.Reflection.Emit.ConstructorBuilder
+  parent: System.Reflection.Emit
   isExternal: false
   href: System.Reflection.Emit.ConstructorBuilder.yml
   name: ConstructorBuilder
@@ -9254,17 +9302,21 @@ references:
   type: Enum
 - uid: System.Reflection.FieldAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.FieldAttributes.yml
   name: FieldAttributes
   fullName: System.Reflection.FieldAttributes
+  type: Enum
 - uid: System.Reflection.Emit.FieldBuilder
+  parent: System.Reflection.Emit
   isExternal: false
   href: System.Reflection.Emit.FieldBuilder.yml
   name: FieldBuilder
   fullName: System.Reflection.Emit.FieldBuilder
   type: Class
 - uid: System.Byte[]
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte[]
   name.vb: Byte()
   fullName: System.Byte[]
@@ -9273,22 +9325,25 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
 - uid: System.Reflection.PropertyAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.PropertyAttributes.yml
   name: PropertyAttributes
   fullName: System.Reflection.PropertyAttributes
+  type: Enum
 - uid: System.Reflection.Emit.PropertyBuilder
+  parent: System.Reflection.Emit
   isExternal: false
   href: System.Reflection.Emit.PropertyBuilder.yml
   name: PropertyBuilder
@@ -9296,10 +9351,13 @@ references:
   type: Class
 - uid: System.Reflection.EventAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.EventAttributes.yml
   name: EventAttributes
   fullName: System.Reflection.EventAttributes
+  type: Enum
 - uid: System.Reflection.Emit.EventBuilder
+  parent: System.Reflection.Emit
   isExternal: false
   href: System.Reflection.Emit.EventBuilder.yml
   name: EventBuilder

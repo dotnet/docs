@@ -794,18 +794,23 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: Expression
   isExternal: true
   name: Expression
@@ -813,9 +818,11 @@ references:
 - uid: System.Linq.Expressions.DynamicExpression.Type
 - uid: System.Type
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Type.yml
   name: Type
   fullName: System.Type
+  type: Class
 - uid: ExpressionType
   isExternal: true
   name: ExpressionType
@@ -881,16 +888,18 @@ references:
     fullName: )
 - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
   parent: System.Collections.ObjectModel
-  isExternal: true
+  isExternal: false
+  href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
   name: ReadOnlyCollection<T>
   name.vb: ReadOnlyCollection(Of T)
   fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
   fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  type: Class
   spec.csharp:
   - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
     name: ReadOnlyCollection
     fullName: System.Collections.ObjectModel.ReadOnlyCollection
-    isExternal: true
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
   - name: <
     fullName: <
   - name: T
@@ -901,7 +910,7 @@ references:
   - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
     name: ReadOnlyCollection
     fullName: System.Collections.ObjectModel.ReadOnlyCollection
-    isExternal: true
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -961,16 +970,18 @@ references:
   summary: Represents a dynamic operation.
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -981,7 +992,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -992,6 +1003,7 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Linq.Expressions.DynamicExpression.DelegateType
 - uid: System.Linq.Expressions.DynamicExpression.NodeType
 - uid: System.Linq.Expressions.DynamicExpression.Binder

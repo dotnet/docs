@@ -41,6 +41,7 @@ items:
   summary: The @'System.Linq' namespace provides classes and interfaces that support queries that use Language-Integrated Query (LINQ).
 references:
 - uid: System.Linq.EnumerableExecutor
+  parent: System.Linq
   isExternal: false
   href: System.Linq.EnumerableExecutor.yml
   name: EnumerableExecutor
@@ -77,6 +78,7 @@ references:
   - name: )
     fullName: )
 - uid: System.Linq.EnumerableQuery
+  parent: System.Linq
   isExternal: false
   href: System.Linq.EnumerableQuery.yml
   name: EnumerableQuery
@@ -119,6 +121,7 @@ references:
   fullName: System.Linq.Queryable
   type: Class
 - uid: System.Linq.OrderedParallelQuery`1
+  parent: System.Linq
   isExternal: false
   href: System.Linq.OrderedParallelQuery`1.yml
   name: OrderedParallelQuery<TSource>
@@ -223,6 +226,13 @@ references:
     Specifies the preferred type of output merge to use in a query. This is a hint only, and may not be
 
     respected by the system when parallelizing all queries.
+- uid: System.Linq.ImmutableArrayExtensions
+  isExternal: false
+  href: System.Linq.ImmutableArrayExtensions.yml
+  name: ImmutableArrayExtensions
+  fullName: System.Linq.ImmutableArrayExtensions
+  type: Class
+  summary: LINQ extension method overrides that offer greater efficiency for @'System.Collections.Immutable.ImmutableArray`1' than the standard LINQ methods
 - uid: System.Linq.Enumerable
   isExternal: false
   href: System.Linq.Enumerable.yml
@@ -261,6 +271,7 @@ references:
   - name: )
     fullName: )
 - uid: System.Linq.IGrouping`2
+  parent: System.Linq
   isExternal: false
   href: System.Linq.IGrouping`2.yml
   name: IGrouping<TKey, TElement>
@@ -414,12 +425,14 @@ references:
   - name: )
     fullName: )
 - uid: System.Linq.IQueryable
+  parent: System.Linq
   isExternal: false
   href: System.Linq.IQueryable.yml
   name: IQueryable
   fullName: System.Linq.IQueryable
   type: Interface
 - uid: System.Linq.IQueryable`1
+  parent: System.Linq
   isExternal: false
   href: System.Linq.IQueryable`1.yml
   name: IQueryable<T>
@@ -492,13 +505,6 @@ references:
     fullName: T
   - name: )
     fullName: )
-- uid: System.Linq.ImmutableArrayExtensions
-  isExternal: false
-  href: System.Linq.ImmutableArrayExtensions.yml
-  name: ImmutableArrayExtensions
-  fullName: System.Linq.ImmutableArrayExtensions
-  type: Class
-  summary: LINQ extension method overrides that offer greater efficiency for @'System.Collections.Immutable.ImmutableArray`1' than the standard LINQ methods
 - uid: System.Linq
   isExternal: false
   name: System.Linq

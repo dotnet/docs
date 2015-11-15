@@ -55,6 +55,7 @@ references:
   type: Class
   summary: Provides options used to configure the processing performed by dataflow blocks.
 - uid: System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions
+  parent: System.Threading.Tasks.Dataflow
   isExternal: false
   href: System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.yml
   name: ExecutionDataflowBlockOptions
@@ -67,6 +68,7 @@ references:
 
     as @'System.Threading.Tasks.Dataflow.ActionBlock`1' and @'System.Threading.Tasks.Dataflow.TransformBlock`2'.
 - uid: System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions
+  parent: System.Threading.Tasks.Dataflow
   isExternal: false
   href: System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions.yml
   name: GroupingDataflowBlockOptions
@@ -103,6 +105,7 @@ references:
   type: Enum
   summary: Represents the status of a @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' when passed between dataflow blocks.
 - uid: System.Threading.Tasks.Dataflow.IDataflowBlock
+  parent: System.Threading.Tasks.Dataflow
   isExternal: false
   href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
   name: IDataflowBlock

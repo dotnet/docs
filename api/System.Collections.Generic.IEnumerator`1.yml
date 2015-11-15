@@ -58,6 +58,7 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.IDisposable.Dispose
   parent: System.IDisposable
   isExternal: false
@@ -132,22 +133,28 @@ references:
     fullName: )
 - uid: System.IDisposable
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.IDisposable.yml
   name: IDisposable
   fullName: System.IDisposable
+  type: Interface
 - uid: System.Collections.IEnumerator
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerator.yml
   name: IEnumerator
   fullName: System.Collections.IEnumerator
+  type: Interface
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Collections
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+  type: Namespace
 - uid: '{T}'
   isExternal: false
   name: T

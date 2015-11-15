@@ -1360,19 +1360,22 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1381,138 +1384,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1521,7 +1528,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1576,7 +1583,9 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Reflection.Metadata.MetadataReader
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.MetadataReader.yml
   name: MetadataReader
@@ -1584,28 +1593,31 @@ references:
   type: Class
   summary: Reads metadata as defined byte the ECMA 335 CLI specification.
 - uid: System.Byte*
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte*
   fullName: System.Byte*
   spec.csharp:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '*'
     fullName: '*'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '*'
     fullName: '*'
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Reflection.Metadata.PEReaderExtensions.GetMetadataReader(System.Reflection.PortableExecutable.PEReader,System.Reflection.Metadata.MetadataReaderOptions)
 - uid: System.Reflection.Metadata.MetadataReaderOptions
   parent: System.Reflection.Metadata
@@ -1628,9 +1640,11 @@ references:
     byte sequences in metadata that represent text.
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Reflection.Metadata.MetadataKind
   parent: System.Reflection.Metadata
   isExternal: false
@@ -1651,10 +1665,13 @@ references:
     avoiding allocation where possible.
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Reflection.Metadata.AssemblyReferenceHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.AssemblyReferenceHandleCollection.yml
   name: AssemblyReferenceHandleCollection
@@ -1662,6 +1679,7 @@ references:
   type: Struct
   summary: Collection of assembly references.
 - uid: System.Reflection.Metadata.TypeDefinitionHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.TypeDefinitionHandleCollection.yml
   name: TypeDefinitionHandleCollection
@@ -1669,6 +1687,7 @@ references:
   type: Struct
   summary: Represents a collection of @'System.Reflection.Metadata.TypeDefinitionHandle'.
 - uid: System.Reflection.Metadata.TypeReferenceHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.TypeReferenceHandleCollection.yml
   name: TypeReferenceHandleCollection
@@ -1690,6 +1709,7 @@ references:
   fullName: System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection
   type: Struct
 - uid: System.Reflection.Metadata.MemberReferenceHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.MemberReferenceHandleCollection.yml
   name: MemberReferenceHandleCollection
@@ -1697,6 +1717,7 @@ references:
   type: Struct
   summary: Represents a collection of @'System.Reflection.Metadata.MemberReferenceHandle'.
 - uid: System.Reflection.Metadata.ManifestResourceHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.ManifestResourceHandleCollection.yml
   name: ManifestResourceHandleCollection
@@ -1704,6 +1725,7 @@ references:
   type: Struct
   summary: Represents a collection of @'System.Reflection.Metadata.ManifestResourceHandle'.
 - uid: System.Reflection.Metadata.AssemblyFileHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.AssemblyFileHandleCollection.yml
   name: AssemblyFileHandleCollection
@@ -1711,6 +1733,7 @@ references:
   type: Struct
   summary: Represents a collection of @'System.Reflection.Metadata.AssemblyFileHandle'.
 - uid: System.Reflection.Metadata.ExportedTypeHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.ExportedTypeHandleCollection.yml
   name: ExportedTypeHandleCollection
@@ -1718,30 +1741,35 @@ references:
   type: Struct
   summary: Represents a collection of @'System.Reflection.Metadata.TypeReferenceHandle'.
 - uid: System.Reflection.Metadata.MethodDefinitionHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.MethodDefinitionHandleCollection.yml
   name: MethodDefinitionHandleCollection
   fullName: System.Reflection.Metadata.MethodDefinitionHandleCollection
   type: Struct
 - uid: System.Reflection.Metadata.FieldDefinitionHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.FieldDefinitionHandleCollection.yml
   name: FieldDefinitionHandleCollection
   fullName: System.Reflection.Metadata.FieldDefinitionHandleCollection
   type: Struct
 - uid: System.Reflection.Metadata.EventDefinitionHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.EventDefinitionHandleCollection.yml
   name: EventDefinitionHandleCollection
   fullName: System.Reflection.Metadata.EventDefinitionHandleCollection
   type: Struct
 - uid: System.Reflection.Metadata.PropertyDefinitionHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.PropertyDefinitionHandleCollection.yml
   name: PropertyDefinitionHandleCollection
   fullName: System.Reflection.Metadata.PropertyDefinitionHandleCollection
   type: Struct
 - uid: System.Reflection.Metadata.AssemblyDefinition
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.AssemblyDefinition.yml
   name: AssemblyDefinition
@@ -1770,7 +1798,8 @@ references:
   fullName: System.Reflection.Metadata.BlobHandle
   type: Struct
 - uid: System.Byte[]
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte[]
   name.vb: Byte()
   fullName: System.Byte[]
@@ -1779,14 +1808,14 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
 - uid: ImmutableArray{System.Byte}
@@ -1850,6 +1879,7 @@ references:
   - name: )
     fullName: )
 - uid: System.Reflection.Metadata.BlobReader
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.BlobReader.yml
   name: BlobReader
@@ -1871,9 +1901,11 @@ references:
   type: Struct
 - uid: System.Guid
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Guid.yml
   name: Guid
   fullName: System.Guid
+  type: Struct
 - uid: System.Reflection.Metadata.ModuleDefinition
   parent: System.Reflection.Metadata
   isExternal: false
@@ -1889,6 +1921,7 @@ references:
   fullName: System.Reflection.Metadata.AssemblyReferenceHandle
   type: Struct
 - uid: System.Reflection.Metadata.AssemblyReference
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.AssemblyReference.yml
   name: AssemblyReference
@@ -1937,6 +1970,7 @@ references:
   fullName: System.Reflection.Metadata.ExportedTypeHandle
   type: Struct
 - uid: System.Reflection.Metadata.ExportedType
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.ExportedType.yml
   name: ExportedType
@@ -1958,6 +1992,7 @@ references:
   fullName: System.Reflection.Metadata.CustomAttributeHandle
   type: Struct
 - uid: System.Reflection.Metadata.CustomAttribute
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.CustomAttribute.yml
   name: CustomAttribute
@@ -1971,6 +2006,7 @@ references:
   fullName: System.Reflection.Metadata.DeclarativeSecurityAttributeHandle
   type: Struct
 - uid: System.Reflection.Metadata.DeclarativeSecurityAttribute
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.DeclarativeSecurityAttribute.yml
   name: DeclarativeSecurityAttribute
@@ -1984,6 +2020,7 @@ references:
   fullName: System.Reflection.Metadata.ConstantHandle
   type: Struct
 - uid: System.Reflection.Metadata.Constant
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.Constant.yml
   name: Constant
@@ -2011,6 +2048,7 @@ references:
   fullName: System.Reflection.Metadata.FieldDefinitionHandle
   type: Struct
 - uid: System.Reflection.Metadata.FieldDefinition
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.FieldDefinition.yml
   name: FieldDefinition
@@ -2038,6 +2076,7 @@ references:
   fullName: System.Reflection.Metadata.EventDefinitionHandle
   type: Struct
 - uid: System.Reflection.Metadata.EventDefinition
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.EventDefinition.yml
   name: EventDefinition
@@ -2065,6 +2104,7 @@ references:
   fullName: System.Reflection.Metadata.MemberReferenceHandle
   type: Struct
 - uid: System.Reflection.Metadata.MemberReference
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.MemberReference.yml
   name: MemberReference
@@ -2106,6 +2146,7 @@ references:
   fullName: System.Reflection.Metadata.GenericParameterHandle
   type: Struct
 - uid: System.Reflection.Metadata.GenericParameter
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.GenericParameter.yml
   name: GenericParameter
@@ -2119,6 +2160,7 @@ references:
   fullName: System.Reflection.Metadata.GenericParameterConstraintHandle
   type: Struct
 - uid: System.Reflection.Metadata.GenericParameterConstraint
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.GenericParameterConstraint.yml
   name: GenericParameterConstraint
@@ -2132,6 +2174,7 @@ references:
   fullName: System.Reflection.Metadata.ManifestResourceHandle
   type: Struct
 - uid: System.Reflection.Metadata.ManifestResource
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.ManifestResource.yml
   name: ManifestResource
@@ -2145,6 +2188,7 @@ references:
   fullName: System.Reflection.Metadata.AssemblyFileHandle
   type: Struct
 - uid: System.Reflection.Metadata.AssemblyFile
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.AssemblyFile.yml
   name: AssemblyFile
@@ -2200,6 +2244,7 @@ references:
   fullName: System.Reflection.Metadata.InterfaceImplementationHandle
   type: Struct
 - uid: System.Reflection.Metadata.InterfaceImplementation
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.InterfaceImplementation.yml
   name: InterfaceImplementation

@@ -100,14 +100,15 @@ references:
   type: Namespace
 - uid: System.Collections.IEnumerable.GetEnumerator
   parent: System.Collections.IEnumerable
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerable.yml
   name: GetEnumerator()
   fullName: System.Collections.IEnumerable.GetEnumerator()
   spec.csharp:
   - uid: System.Collections.IEnumerable.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.IEnumerable.GetEnumerator
-    isExternal: true
+    href: System.Collections.IEnumerable.yml
   - name: (
     fullName: (
   - name: )
@@ -116,20 +117,23 @@ references:
   - uid: System.Collections.IEnumerable.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.IEnumerable.GetEnumerator
-    isExternal: true
+    href: System.Collections.IEnumerable.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Collections.IEnumerable
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerable.yml
   name: IEnumerable
   fullName: System.Collections.IEnumerable
+  type: Interface
 - uid: System.Collections
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+  type: Namespace
 - uid: System.Linq.Expressions.Expression
   parent: System.Linq.Expressions
   isExternal: false
@@ -145,13 +149,16 @@ references:
   type: Namespace
 - uid: System.Type
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Type.yml
   name: Type
   fullName: System.Type
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Linq.IQueryProvider
   parent: System.Linq
   isExternal: false

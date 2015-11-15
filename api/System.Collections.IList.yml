@@ -301,74 +301,80 @@ references:
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+  type: Namespace
 - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
   parent: System.Collections.ICollection
-  isExternal: true
+  isExternal: false
+  href: System.Collections.ICollection.yml
   name: CopyTo(Array, Int32)
   fullName: System.Collections.ICollection.CopyTo(System.Array, System.Int32)
   spec.csharp:
   - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
     name: CopyTo
     fullName: System.Collections.ICollection.CopyTo
-    isExternal: true
+    href: System.Collections.ICollection.yml
   - name: (
     fullName: (
   - uid: System.Array
     name: Array
     fullName: System.Array
-    isExternal: true
+    href: System.Array.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
     name: CopyTo
     fullName: System.Collections.ICollection.CopyTo
-    isExternal: true
+    href: System.Collections.ICollection.yml
   - name: (
     fullName: (
   - uid: System.Array
     name: Array
     fullName: System.Array
-    isExternal: true
+    href: System.Array.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.Collections.ICollection.Count
   parent: System.Collections.ICollection
-  isExternal: true
+  isExternal: false
+  href: System.Collections.ICollection.yml
   name: Count
   fullName: System.Collections.ICollection.Count
 - uid: System.Collections.ICollection.SyncRoot
   parent: System.Collections.ICollection
-  isExternal: true
+  isExternal: false
+  href: System.Collections.ICollection.yml
   name: SyncRoot
   fullName: System.Collections.ICollection.SyncRoot
 - uid: System.Collections.ICollection.IsSynchronized
   parent: System.Collections.ICollection
-  isExternal: true
+  isExternal: false
+  href: System.Collections.ICollection.yml
   name: IsSynchronized
   fullName: System.Collections.ICollection.IsSynchronized
 - uid: System.Collections.IEnumerable.GetEnumerator
   parent: System.Collections.IEnumerable
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerable.yml
   name: GetEnumerator()
   fullName: System.Collections.IEnumerable.GetEnumerator()
   spec.csharp:
   - uid: System.Collections.IEnumerable.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.IEnumerable.GetEnumerator
-    isExternal: true
+    href: System.Collections.IEnumerable.yml
   - name: (
     fullName: (
   - name: )
@@ -377,37 +383,48 @@ references:
   - uid: System.Collections.IEnumerable.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.IEnumerable.GetEnumerator
-    isExternal: true
+    href: System.Collections.IEnumerable.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Collections.ICollection
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.ICollection.yml
   name: ICollection
   fullName: System.Collections.ICollection
+  type: Interface
 - uid: System.Collections.IEnumerable
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerable.yml
   name: IEnumerable
   fullName: System.Collections.IEnumerable
+  type: Interface
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct

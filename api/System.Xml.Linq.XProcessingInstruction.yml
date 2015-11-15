@@ -231,9 +231,11 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Xml.Linq.XObject
   parent: System.Xml.Linq
   isExternal: false
@@ -1263,6 +1265,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Xml.Linq.XProcessingInstruction
   parent: System.Xml.Linq
   isExternal: false
@@ -1272,11 +1275,18 @@ references:
   type: Class
   summary: Represents an XML processing instruction.
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Xml.Linq.XObject.NodeType
   parent: System.Xml.Linq.XObject
   isExternal: false

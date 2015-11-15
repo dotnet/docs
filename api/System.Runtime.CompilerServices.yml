@@ -101,29 +101,43 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/System.Runtime/src/System/Runtime/CompilerServices/StrongBox.cs
+      path: src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/RuntimeOps.cs
       branch: master
       repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Runtime/src/System/Runtime/CompilerServices/StrongBox.cs
-    startLine: 3
+    path: src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/RuntimeOps.cs
+    startLine: 10
   assemblies:
-  - System.Runtime.CoreCLR
+  - System.Dynamic.Runtime
   summary: The @'System.Runtime.CompilerServices' namespace provides functionality for compiler writers who use managed code to specify attributes in metadata that affect the run-time behavior of the common language runtime.
 references:
-- uid: System.Runtime.CompilerServices.StrongBox`1
+- uid: System.Runtime.CompilerServices.CallSite
+  parent: System.Runtime.CompilerServices
   isExternal: false
-  href: System.Runtime.CompilerServices.StrongBox`1.yml
-  name: StrongBox<T>
-  name.vb: StrongBox(Of T)
-  fullName: System.Runtime.CompilerServices.StrongBox<T>
-  fullName.vb: System.Runtime.CompilerServices.StrongBox(Of T)
+  href: System.Runtime.CompilerServices.CallSite.yml
+  name: CallSite
+  fullName: System.Runtime.CompilerServices.CallSite
   type: Class
-  summary: Holds a reference to a value.
+  summary: >-
+    A Dynamic Call Site base class. This type is used as a parameter type to the
+
+    dynamic site targets. The first parameter of the delegate (T) below must be
+
+    of this type.
+- uid: System.Runtime.CompilerServices.CallSite`1
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallSite`1.yml
+  name: CallSite<T>
+  name.vb: CallSite(Of T)
+  fullName: System.Runtime.CompilerServices.CallSite<T>
+  fullName.vb: System.Runtime.CompilerServices.CallSite(Of T)
+  type: Class
+  summary: Dynamic site type.
   spec.csharp:
-  - uid: System.Runtime.CompilerServices.StrongBox`1
-    name: StrongBox
-    fullName: System.Runtime.CompilerServices.StrongBox
-    href: System.Runtime.CompilerServices.StrongBox`1.yml
+  - uid: System.Runtime.CompilerServices.CallSite`1
+    name: CallSite
+    fullName: System.Runtime.CompilerServices.CallSite
+    href: System.Runtime.CompilerServices.CallSite`1.yml
   - name: <
     fullName: <
   - name: T
@@ -131,24 +145,90 @@ references:
   - name: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Runtime.CompilerServices.StrongBox`1
-    name: StrongBox
-    fullName: System.Runtime.CompilerServices.StrongBox
-    href: System.Runtime.CompilerServices.StrongBox`1.yml
+  - uid: System.Runtime.CompilerServices.CallSite`1
+    name: CallSite
+    fullName: System.Runtime.CompilerServices.CallSite
+    href: System.Runtime.CompilerServices.CallSite`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
     fullName: T
   - name: )
     fullName: )
-- uid: System.Runtime.CompilerServices.IStrongBox
+- uid: System.Runtime.CompilerServices.CallSiteBinder
   parent: System.Runtime.CompilerServices
   isExternal: false
-  href: System.Runtime.CompilerServices.IStrongBox.yml
-  name: IStrongBox
-  fullName: System.Runtime.CompilerServices.IStrongBox
-  type: Interface
-  summary: Defines a property for accessing the value that an object references.
+  href: System.Runtime.CompilerServices.CallSiteBinder.yml
+  name: CallSiteBinder
+  fullName: System.Runtime.CompilerServices.CallSiteBinder
+  type: Class
+  summary: Class responsible for runtime binding of the dynamic operations on the dynamic call site.
+- uid: System.Runtime.CompilerServices.CallSiteOps
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallSiteOps.yml
+  name: CallSiteOps
+  fullName: System.Runtime.CompilerServices.CallSiteOps
+  type: Class
+  summary: This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.
+- uid: System.Runtime.CompilerServices.CallSiteHelpers
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallSiteHelpers.yml
+  name: CallSiteHelpers
+  fullName: System.Runtime.CompilerServices.CallSiteHelpers
+  type: Class
+  summary: Class that contains helper methods for DLR CallSites.
+- uid: System.Runtime.CompilerServices.DynamicAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.DynamicAttribute.yml
+  name: DynamicAttribute
+  fullName: System.Runtime.CompilerServices.DynamicAttribute
+  type: Class
+  summary: Indicates that the use of @'System.Object' on a member is meant to be treated as a dynamically dispatched type.
+- uid: System.Runtime.CompilerServices.RuleCache`1
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.RuleCache`1.yml
+  name: RuleCache<T>
+  name.vb: RuleCache(Of T)
+  fullName: System.Runtime.CompilerServices.RuleCache<T>
+  fullName.vb: System.Runtime.CompilerServices.RuleCache(Of T)
+  type: Class
+  summary: >-
+    This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.
+
+    Represents a cache of runtime binding rules.
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.RuleCache`1
+    name: RuleCache
+    fullName: System.Runtime.CompilerServices.RuleCache
+    href: System.Runtime.CompilerServices.RuleCache`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.RuleCache`1
+    name: RuleCache
+    fullName: System.Runtime.CompilerServices.RuleCache
+    href: System.Runtime.CompilerServices.RuleCache`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Runtime.CompilerServices.RuntimeOps
+  isExternal: false
+  href: System.Runtime.CompilerServices.RuntimeOps.yml
+  name: RuntimeOps
+  fullName: System.Runtime.CompilerServices.RuntimeOps
+  type: Class
+  summary: >-
+    This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.
+
+    Contains helper methods called from dynamically generated methods.
 - uid: System.Runtime.CompilerServices.StringFreezingAttribute
   isExternal: false
   href: System.Runtime.CompilerServices.StringFreezingAttribute.yml
@@ -218,6 +298,7 @@ references:
   fullName: System.Runtime.CompilerServices.CompilerGeneratedAttribute
   type: Class
 - uid: System.Runtime.CompilerServices.CustomConstantAttribute
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.CustomConstantAttribute.yml
   name: CustomConstantAttribute
@@ -583,6 +664,7 @@ references:
   fullName: System.Runtime.CompilerServices.CallerMemberNameAttribute
   type: Class
 - uid: System.Runtime.CompilerServices.StateMachineAttribute
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.StateMachineAttribute.yml
   name: StateMachineAttribute
@@ -669,6 +751,7 @@ references:
 
     This type is intended for compiler use only.
 - uid: System.Runtime.CompilerServices.INotifyCompletion
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.INotifyCompletion.yml
   name: INotifyCompletion
@@ -676,6 +759,7 @@ references:
   type: Interface
   summary: Represents an operation that will schedule continuations when the operation completes.
 - uid: System.Runtime.CompilerServices.ICriticalNotifyCompletion
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.ICriticalNotifyCompletion.yml
   name: ICriticalNotifyCompletion
@@ -683,6 +767,7 @@ references:
   type: Interface
   summary: Represents an awaiter used to schedule continuations when an await operation completes.
 - uid: System.Runtime.CompilerServices.TaskAwaiter
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.TaskAwaiter.yml
   name: TaskAwaiter
@@ -690,6 +775,7 @@ references:
   type: Struct
   summary: Provides an awaiter for awaiting a @'System.Threading.Tasks.Task'.
 - uid: System.Runtime.CompilerServices.TaskAwaiter`1
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.TaskAwaiter`1.yml
   name: TaskAwaiter<TResult>
@@ -721,6 +807,7 @@ references:
   - name: )
     fullName: )
 - uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.yml
   name: ConfiguredTaskAwaitable
@@ -736,6 +823,7 @@ references:
   type: Struct
   summary: Provides an awaiter for a @'System.Runtime.CompilerServices.ConfiguredTaskAwaitable'.
 - uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.yml
   name: ConfiguredTaskAwaitable<TResult>
@@ -795,6 +883,7 @@ references:
   - name: )
     fullName: )
 - uid: System.Runtime.CompilerServices.YieldAwaitable
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.YieldAwaitable.yml
   name: YieldAwaitable
@@ -821,7 +910,47 @@ references:
   name: IUnknownConstantAttribute
   fullName: System.Runtime.CompilerServices.IUnknownConstantAttribute
   type: Class
+- uid: System.Runtime.CompilerServices.StrongBox`1
+  isExternal: false
+  href: System.Runtime.CompilerServices.StrongBox`1.yml
+  name: StrongBox<T>
+  name.vb: StrongBox(Of T)
+  fullName: System.Runtime.CompilerServices.StrongBox<T>
+  fullName.vb: System.Runtime.CompilerServices.StrongBox(Of T)
+  type: Class
+  summary: Holds a reference to a value.
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.StrongBox`1
+    name: StrongBox
+    fullName: System.Runtime.CompilerServices.StrongBox
+    href: System.Runtime.CompilerServices.StrongBox`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.StrongBox`1
+    name: StrongBox
+    fullName: System.Runtime.CompilerServices.StrongBox
+    href: System.Runtime.CompilerServices.StrongBox`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Runtime.CompilerServices.IStrongBox
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.IStrongBox.yml
+  name: IStrongBox
+  fullName: System.Runtime.CompilerServices.IStrongBox
+  type: Interface
+  summary: Defines a property for accessing the value that an object references.
 - uid: System.Runtime.CompilerServices.IRuntimeVariables
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.IRuntimeVariables.yml
   name: IRuntimeVariables
@@ -838,125 +967,6 @@ references:
     This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.
 
     Represents the runtime state of a dynamically generated method.
-- uid: System.Runtime.CompilerServices.RuntimeOps
-  isExternal: false
-  href: System.Runtime.CompilerServices.RuntimeOps.yml
-  name: RuntimeOps
-  fullName: System.Runtime.CompilerServices.RuntimeOps
-  type: Class
-  summary: >-
-    This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.
-
-    Contains helper methods called from dynamically generated methods.
-- uid: System.Runtime.CompilerServices.CallSite
-  parent: System.Runtime.CompilerServices
-  isExternal: false
-  href: System.Runtime.CompilerServices.CallSite.yml
-  name: CallSite
-  fullName: System.Runtime.CompilerServices.CallSite
-  type: Class
-  summary: >-
-    A Dynamic Call Site base class. This type is used as a parameter type to the
-
-    dynamic site targets. The first parameter of the delegate (T) below must be
-
-    of this type.
-- uid: System.Runtime.CompilerServices.CallSite`1
-  parent: System.Runtime.CompilerServices
-  isExternal: false
-  href: System.Runtime.CompilerServices.CallSite`1.yml
-  name: CallSite<T>
-  name.vb: CallSite(Of T)
-  fullName: System.Runtime.CompilerServices.CallSite<T>
-  fullName.vb: System.Runtime.CompilerServices.CallSite(Of T)
-  type: Class
-  summary: Dynamic site type.
-  spec.csharp:
-  - uid: System.Runtime.CompilerServices.CallSite`1
-    name: CallSite
-    fullName: System.Runtime.CompilerServices.CallSite
-    href: System.Runtime.CompilerServices.CallSite`1.yml
-  - name: <
-    fullName: <
-  - name: T
-    fullName: T
-  - name: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Runtime.CompilerServices.CallSite`1
-    name: CallSite
-    fullName: System.Runtime.CompilerServices.CallSite
-    href: System.Runtime.CompilerServices.CallSite`1.yml
-  - name: '(Of '
-    fullName: '(Of '
-  - name: T
-    fullName: T
-  - name: )
-    fullName: )
-- uid: System.Runtime.CompilerServices.CallSiteBinder
-  parent: System.Runtime.CompilerServices
-  isExternal: false
-  href: System.Runtime.CompilerServices.CallSiteBinder.yml
-  name: CallSiteBinder
-  fullName: System.Runtime.CompilerServices.CallSiteBinder
-  type: Class
-  summary: Class responsible for runtime binding of the dynamic operations on the dynamic call site.
-- uid: System.Runtime.CompilerServices.CallSiteOps
-  isExternal: false
-  href: System.Runtime.CompilerServices.CallSiteOps.yml
-  name: CallSiteOps
-  fullName: System.Runtime.CompilerServices.CallSiteOps
-  type: Class
-  summary: This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.
-- uid: System.Runtime.CompilerServices.CallSiteHelpers
-  isExternal: false
-  href: System.Runtime.CompilerServices.CallSiteHelpers.yml
-  name: CallSiteHelpers
-  fullName: System.Runtime.CompilerServices.CallSiteHelpers
-  type: Class
-  summary: Class that contains helper methods for DLR CallSites.
-- uid: System.Runtime.CompilerServices.DynamicAttribute
-  isExternal: false
-  href: System.Runtime.CompilerServices.DynamicAttribute.yml
-  name: DynamicAttribute
-  fullName: System.Runtime.CompilerServices.DynamicAttribute
-  type: Class
-  summary: Indicates that the use of @'System.Object' on a member is meant to be treated as a dynamically dispatched type.
-- uid: System.Runtime.CompilerServices.RuleCache`1
-  parent: System.Runtime.CompilerServices
-  isExternal: false
-  href: System.Runtime.CompilerServices.RuleCache`1.yml
-  name: RuleCache<T>
-  name.vb: RuleCache(Of T)
-  fullName: System.Runtime.CompilerServices.RuleCache<T>
-  fullName.vb: System.Runtime.CompilerServices.RuleCache(Of T)
-  type: Class
-  summary: >-
-    This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.
-
-    Represents a cache of runtime binding rules.
-  spec.csharp:
-  - uid: System.Runtime.CompilerServices.RuleCache`1
-    name: RuleCache
-    fullName: System.Runtime.CompilerServices.RuleCache
-    href: System.Runtime.CompilerServices.RuleCache`1.yml
-  - name: <
-    fullName: <
-  - name: T
-    fullName: T
-  - name: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Runtime.CompilerServices.RuleCache`1
-    name: RuleCache
-    fullName: System.Runtime.CompilerServices.RuleCache
-    href: System.Runtime.CompilerServices.RuleCache`1.yml
-  - name: '(Of '
-    fullName: '(Of '
-  - name: T
-    fullName: T
-  - name: )
-    fullName: )
 - uid: System.Runtime.CompilerServices
   isExternal: false
   name: System.Runtime.CompilerServices

@@ -275,6 +275,7 @@ references:
   - name: )
     fullName: )
 - uid: System.Threading.Tasks.Dataflow.IDataflowBlock
+  parent: System.Threading.Tasks.Dataflow
   isExternal: false
   href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
   name: IDataflowBlock
@@ -321,9 +322,11 @@ references:
   summary: Provides options used to configure a link between dataflow blocks.
 - uid: System.IDisposable
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.IDisposable.yml
   name: IDisposable
   fullName: System.IDisposable
+  type: Interface
 - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
   parent: System.Threading.Tasks.Dataflow
   isExternal: false
@@ -360,6 +363,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
   parent: System.Threading.Tasks.Dataflow
   isExternal: false
@@ -370,9 +374,11 @@ references:
   summary: Provides a container of data attributes for passing between dataflow blocks.
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: '{TOutput}'
   isExternal: false
   name: TOutput

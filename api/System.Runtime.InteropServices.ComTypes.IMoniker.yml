@@ -602,18 +602,23 @@ references:
   type: Namespace
 - uid: System.Guid
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Guid.yml
   name: Guid
   fullName: System.Guid
+  type: Struct
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Runtime.InteropServices.ComTypes.IStream
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -623,15 +628,20 @@ references:
   type: Interface
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Int64
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int64.yml
   name: Int64
   fullName: System.Int64
+  type: Struct
 - uid: System.Runtime.InteropServices.ComTypes.IBindCtx
+  parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.IBindCtx.yml
   name: IBindCtx
@@ -646,9 +656,11 @@ references:
   type: Interface
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Runtime.InteropServices.ComTypes.IEnumMoniker
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -657,6 +669,7 @@ references:
   fullName: System.Runtime.InteropServices.ComTypes.IEnumMoniker
   type: Interface
 - uid: System.Runtime.InteropServices.ComTypes.FILETIME
+  parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.FILETIME.yml
   name: FILETIME
@@ -664,6 +677,8 @@ references:
   type: Struct
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class

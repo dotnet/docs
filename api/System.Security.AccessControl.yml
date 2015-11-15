@@ -18,22 +18,15 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+      path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
     startLine: 5
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   summary: The @'System.Security.AccessControl' namespace provides programming elements that control access to and audit security-related actions on securable objects.
 references:
-- uid: System.Security.AccessControl.RegistryRights
-  parent: System.Security.AccessControl
-  isExternal: false
-  href: System.Security.AccessControl.RegistryRights.yml
-  name: RegistryRights
-  fullName: System.Security.AccessControl.RegistryRights
-  type: Enum
 - uid: System.Security.AccessControl.EventWaitHandleSecurity
   parent: System.Security.AccessControl
   isExternal: false
@@ -96,6 +89,13 @@ references:
   href: System.Security.AccessControl.AccessControlActions.yml
   name: AccessControlActions
   fullName: System.Security.AccessControl.AccessControlActions
+  type: Enum
+- uid: System.Security.AccessControl.RegistryRights
+  parent: System.Security.AccessControl
+  isExternal: false
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: RegistryRights
+  fullName: System.Security.AccessControl.RegistryRights
   type: Enum
 - uid: System.Security.AccessControl
   isExternal: false

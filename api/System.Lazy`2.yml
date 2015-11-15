@@ -236,11 +236,14 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Lazy{{T}}
   parent: System
   definition: System.Lazy`1
@@ -308,131 +311,135 @@ references:
   fullName.vb: System.Lazy(Of T).Value
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -441,7 +448,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -494,16 +501,19 @@ references:
     fullName: )
 - uid: System.Lazy`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Lazy`1.yml
   name: Lazy<T>
   name.vb: Lazy(Of T)
   fullName: System.Lazy<T>
   fullName.vb: System.Lazy(Of T)
+  type: Class
+  summary: Provides support for lazy initialization.
   spec.csharp:
   - uid: System.Lazy`1
     name: Lazy
     fullName: System.Lazy
-    isExternal: true
+    href: System.Lazy`1.yml
   - name: <
     fullName: <
   - name: T
@@ -514,7 +524,7 @@ references:
   - uid: System.Lazy`1
     name: Lazy
     fullName: System.Lazy
-    isExternal: true
+    href: System.Lazy`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -560,6 +570,7 @@ references:
 - uid: System.Func{{T}}
   parent: System
   definition: System.Func`1
+  href: System.Func`1.yml
   name: Func<T>
   name.vb: Func(Of T)
   fullName: System.Func<T>
@@ -568,7 +579,7 @@ references:
   - uid: System.Func`1
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`1.yml
   - name: <
     fullName: <
   - name: T
@@ -579,7 +590,7 @@ references:
   - uid: System.Func`1
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -592,16 +603,18 @@ references:
   fullName: TMetadata
 - uid: System.Func`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`1.yml
   name: Func<TResult>
   name.vb: Func(Of TResult)
   fullName: System.Func<TResult>
   fullName.vb: System.Func(Of TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`1
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`1.yml
   - name: <
     fullName: <
   - name: TResult
@@ -612,7 +625,7 @@ references:
   - uid: System.Func`1
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TResult
@@ -621,15 +634,21 @@ references:
     fullName: )
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Threading.LazyThreadSafetyMode
   parent: System.Threading
-  isExternal: true
+  isExternal: false
+  href: System.Threading.LazyThreadSafetyMode.yml
   name: LazyThreadSafetyMode
   fullName: System.Threading.LazyThreadSafetyMode
+  type: Enum
+  summary: Specifies how a @'System.Threading.Lazy{T}' instance should synchronize access among multiple threads.
 - uid: System.Threading
   isExternal: false
   name: System.Threading
   fullName: System.Threading
+  type: Namespace

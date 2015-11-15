@@ -89,7 +89,7 @@ items:
 
     -or-
 
-    </para>@'System.Threading.ThreadPoolBoundHandle' does not take ownership of <paramref name="handle" />,
+    </para>@'System.Threading.ThreadPoolBoundHandle' does not take ownership of *handle*,
 
     it remains the responsibility of the caller to call @'System.Runtime.InteropServices.SafeHandle.Dispose'.
   syntax:
@@ -105,27 +105,27 @@ items:
     return:
       type: System.Threading.ThreadPoolBoundHandle
       description: >-
-        @'System.Threading.ThreadPoolBoundHandle' for <paramref name="handle" />, which
+        @'System.Threading.ThreadPoolBoundHandle' for *handle*, which
 
         is bound to the system thread pool.
   exceptions:
   - type: System.ArgumentNullException
-    description: is .
+    description: '*handle* is .'
   - type: System.ArgumentException
     description: >-
-      has been disposed.
+      *handle* has been disposed.
 
 
 
       -or-
 
-      does not refer to a valid I/O handle.
+      *handle* does not refer to a valid I/O handle.
 
 
 
       -or-
 
-      refers to a handle that has not been opened
+      *handle* refers to a handle that has not been opened
 
       for overlapped I/O.
 
@@ -133,7 +133,7 @@ items:
 
       -or-
 
-      refers to a handle that has already been bound.
+      *handle* refers to a handle that has already been bound.
 - uid: System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.IOCompletionCallback,System.Object,System.Object)
   id: AllocateNativeOverlapped(System.Threading.IOCompletionCallback,System.Object,System.Object)
   parent: System.Threading.ThreadPoolBoundHandle
@@ -167,7 +167,7 @@ items:
 
     <para>
 
-    The buffer or buffers specified in <paramref name="pinData" /> must be the same as those passed
+    The buffer or buffers specified in *pinData* must be the same as those passed
 
     to the unmanaged operating system function that performs the asynchronous I/O.
 
@@ -175,7 +175,7 @@ items:
 
     <note>
 
-    The buffers specified in <paramref name="pinData" /> are pinned for the duration of
+    The buffers specified in *pinData* are pinned for the duration of
 
     the I/O operation.
 
@@ -207,9 +207,9 @@ items:
       description: An unmanaged pointer to a @'System.Threading.NativeOverlapped' structure.
   exceptions:
   - type: System.ArgumentNullException
-    description: is .
+    description: '*callback* is .'
   - type: System.ObjectDisposedException
-    description: This method was called after the  was disposed.
+    description: This method was called after the @'System.Threading.ThreadPoolBoundHandle' was disposed.
 - uid: System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.PreAllocatedOverlapped)
   id: AllocateNativeOverlapped(System.Threading.PreAllocatedOverlapped)
   parent: System.Threading.ThreadPoolBoundHandle
@@ -250,14 +250,14 @@ items:
       description: An unmanaged pointer to a @'System.Threading.NativeOverlapped' structure.
   exceptions:
   - type: System.ArgumentNullException
-    description: is .
+    description: '*preAllocated* is .'
   - type: System.ArgumentException
-    description: is currently in use for another I/O operation.
+    description: '*preAllocated* is currently in use for another I/O operation.'
   - type: System.ObjectDisposedException
     description: >-
-      This method was called after the  was disposed, or
+      This method was called after the @'System.Threading.ThreadPoolBoundHandle' was disposed, or
 
-      this method was called after  was disposed.
+      this method was called after *preAllocated* was disposed.
   seealso:
   - type: System.Threading.PreAllocatedOverlapped
 - uid: System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped(System.Threading.NativeOverlapped*)
@@ -303,9 +303,9 @@ items:
       description: An unmanaged pointer to the @'System.Threading.NativeOverlapped' structure to be freed.
   exceptions:
   - type: System.ArgumentNullException
-    description: is .
+    description: '*overlapped* is .'
   - type: System.ObjectDisposedException
-    description: This method was called after the  was disposed.
+    description: This method was called after the @'System.Threading.ThreadPoolBoundHandle' was disposed.
 - uid: System.Threading.ThreadPoolBoundHandle.GetNativeOverlappedState(System.Threading.NativeOverlapped*)
   id: GetNativeOverlappedState(System.Threading.NativeOverlapped*)
   parent: System.Threading.ThreadPoolBoundHandle
@@ -344,7 +344,7 @@ items:
         not specified when the instance was allocated using @'System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.IOCompletionCallback,System.Object,System.Object)'.
   exceptions:
   - type: System.ArgumentNullException
-    description: is .
+    description: '*overlapped* is .'
 - uid: System.Threading.ThreadPoolBoundHandle.Dispose
   id: Dispose
   parent: System.Threading.ThreadPoolBoundHandle
@@ -367,21 +367,25 @@ references:
   isExternal: false
   name: System.Threading
   fullName: System.Threading
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -390,138 +394,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -530,7 +538,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -585,11 +593,14 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Runtime.InteropServices.SafeHandle
   parent: System.Runtime.InteropServices
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeHandle.yml
   name: SafeHandle
   fullName: System.Runtime.InteropServices.SafeHandle
+  type: Class
 - uid: System.Runtime.InteropServices
   isExternal: false
   name: System.Runtime.InteropServices
@@ -608,14 +619,15 @@ references:
     components to receive notifications for asynchronous I/O operations.
 - uid: System.Runtime.InteropServices.SafeHandle.Dispose
   parent: System.Runtime.InteropServices.SafeHandle
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeHandle.yml
   name: Dispose()
   fullName: System.Runtime.InteropServices.SafeHandle.Dispose()
   spec.csharp:
   - uid: System.Runtime.InteropServices.SafeHandle.Dispose
     name: Dispose
     fullName: System.Runtime.InteropServices.SafeHandle.Dispose
-    isExternal: true
+    href: System.Runtime.InteropServices.SafeHandle.yml
   - name: (
     fullName: (
   - name: )
@@ -624,13 +636,24 @@ references:
   - uid: System.Runtime.InteropServices.SafeHandle.Dispose
     name: Dispose
     fullName: System.Runtime.InteropServices.SafeHandle.Dispose
-    isExternal: true
+    href: System.Runtime.InteropServices.SafeHandle.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
 - uid: System.Threading.NativeOverlapped
   isExternal: false
   href: System.Threading.NativeOverlapped.yml
@@ -646,6 +669,11 @@ references:
   fullName: System.Threading.IOCompletionCallback
   type: Delegate
 - uid: System.ObjectDisposedException
+  isExternal: false
+  href: System.ObjectDisposedException.yml
+  name: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+  type: Class
 - uid: System.Threading.NativeOverlapped*
   isExternal: false
   href: System.Threading.NativeOverlapped.yml

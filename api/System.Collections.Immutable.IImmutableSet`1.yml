@@ -181,7 +181,7 @@ items:
       description: The value to search for.
     - id: actualValue
       type: '{T}'
-      description: The value from the set that the search found, or <paramref name="equalValue" /> if the search yielded no match.
+      description: The value from the set that the search found, or *equalValue* if the search yielded no match.
     return:
       type: System.Boolean
       description: A value indicating whether the search was successful.
@@ -471,6 +471,7 @@ references:
 - uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
   parent: System.Collections.Generic.IEnumerable{{T}}
   definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: GetEnumerator()
   fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
   fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
@@ -478,7 +479,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: (
     fullName: (
   - name: )
@@ -487,7 +488,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: (
     fullName: (
   - name: )
@@ -502,6 +503,7 @@ references:
 - uid: System.Collections.Generic.IReadOnlyCollection{{T}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: System.Collections.Generic.IReadOnlyCollection`1.yml
   name: IReadOnlyCollection<T>
   name.vb: IReadOnlyCollection(Of T)
   fullName: System.Collections.Generic.IReadOnlyCollection<T>
@@ -510,7 +512,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyCollection`1
     name: IReadOnlyCollection
     fullName: System.Collections.Generic.IReadOnlyCollection
-    isExternal: true
+    href: System.Collections.Generic.IReadOnlyCollection`1.yml
   - name: <
     fullName: <
   - name: T
@@ -521,7 +523,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyCollection`1
     name: IReadOnlyCollection
     fullName: System.Collections.Generic.IReadOnlyCollection
-    isExternal: true
+    href: System.Collections.Generic.IReadOnlyCollection`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -530,7 +532,8 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
   parent: System.Collections.Generic.IEnumerable`1
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: GetEnumerator()
   fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
   fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
@@ -538,7 +541,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: (
     fullName: (
   - name: )
@@ -547,7 +550,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: (
     fullName: (
   - name: )
@@ -555,6 +558,7 @@ references:
 - uid: System.Collections.Generic.IEnumerable{{T}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
@@ -563,7 +567,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -574,7 +578,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -583,16 +587,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IReadOnlyCollection`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IReadOnlyCollection`1.yml
   name: IReadOnlyCollection<T>
   name.vb: IReadOnlyCollection(Of T)
   fullName: System.Collections.Generic.IReadOnlyCollection<T>
   fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IReadOnlyCollection`1
     name: IReadOnlyCollection
     fullName: System.Collections.Generic.IReadOnlyCollection
-    isExternal: true
+    href: System.Collections.Generic.IReadOnlyCollection`1.yml
   - name: <
     fullName: <
   - name: T
@@ -603,7 +609,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyCollection`1
     name: IReadOnlyCollection
     fullName: System.Collections.Generic.IReadOnlyCollection
-    isExternal: true
+    href: System.Collections.Generic.IReadOnlyCollection`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -614,18 +620,21 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -636,7 +645,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -681,10 +690,13 @@ references:
   fullName: T
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

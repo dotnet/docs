@@ -148,6 +148,7 @@ references:
   type: Class
   summary: The base type for all nodes in Expression Trees.
 - uid: System.Linq.IQueryable
+  parent: System.Linq
   isExternal: false
   href: System.Linq.IQueryable.yml
   name: IQueryable
@@ -189,6 +190,7 @@ references:
   - name: )
     fullName: )
 - uid: System.Linq.IQueryable`1
+  parent: System.Linq
   isExternal: false
   href: System.Linq.IQueryable`1.yml
   name: IQueryable<T>
@@ -220,13 +222,16 @@ references:
     fullName: )
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: '{TResult}'
   isExternal: false
   name: TResult

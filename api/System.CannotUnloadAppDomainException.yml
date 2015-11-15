@@ -145,41 +145,51 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Exception
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: Exception
   fullName: System.Exception
+  type: Class
 - uid: System.SystemException
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.SystemException.yml
   name: SystemException
   fullName: System.SystemException
+  type: Class
 - uid: System.Exception.Message
   parent: System.Exception
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: Message
   fullName: System.Exception.Message
 - uid: System.Exception.Data
   parent: System.Exception
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: Data
   fullName: System.Exception.Data
 - uid: System.Exception.GetBaseException
   parent: System.Exception
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: GetBaseException()
   fullName: System.Exception.GetBaseException()
   spec.csharp:
   - uid: System.Exception.GetBaseException
     name: GetBaseException
     fullName: System.Exception.GetBaseException
-    isExternal: true
+    href: System.Exception.yml
   - name: (
     fullName: (
   - name: )
@@ -188,46 +198,52 @@ references:
   - uid: System.Exception.GetBaseException
     name: GetBaseException
     fullName: System.Exception.GetBaseException
-    isExternal: true
+    href: System.Exception.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Exception.InnerException
   parent: System.Exception
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: InnerException
   fullName: System.Exception.InnerException
 - uid: System.Exception.TargetSite
   parent: System.Exception
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: TargetSite
   fullName: System.Exception.TargetSite
 - uid: System.Exception.StackTrace
   parent: System.Exception
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: StackTrace
   fullName: System.Exception.StackTrace
 - uid: System.Exception.HelpLink
   parent: System.Exception
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: HelpLink
   fullName: System.Exception.HelpLink
 - uid: System.Exception.Source
   parent: System.Exception
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: Source
   fullName: System.Exception.Source
 - uid: System.Exception.ToString
   parent: System.Exception
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: ToString()
   fullName: System.Exception.ToString()
   spec.csharp:
   - uid: System.Exception.ToString
     name: ToString
     fullName: System.Exception.ToString
-    isExternal: true
+    href: System.Exception.yml
   - name: (
     fullName: (
   - name: )
@@ -236,186 +252,192 @@ references:
   - uid: System.Exception.ToString
     name: ToString
     fullName: System.Exception.ToString
-    isExternal: true
+    href: System.Exception.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
   parent: System.Exception
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: GetObjectData(SerializationInfo, StreamingContext)
   fullName: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
   spec.csharp:
   - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
     name: GetObjectData
     fullName: System.Exception.GetObjectData
-    isExternal: true
+    href: System.Exception.yml
   - name: (
     fullName: (
   - uid: System.Runtime.Serialization.SerializationInfo
     name: SerializationInfo
     fullName: System.Runtime.Serialization.SerializationInfo
-    isExternal: true
+    href: System.Runtime.Serialization.SerializationInfo.yml
   - name: ', '
     fullName: ', '
   - uid: System.Runtime.Serialization.StreamingContext
     name: StreamingContext
     fullName: System.Runtime.Serialization.StreamingContext
-    isExternal: true
+    href: System.Runtime.Serialization.StreamingContext.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
     name: GetObjectData
     fullName: System.Exception.GetObjectData
-    isExternal: true
+    href: System.Exception.yml
   - name: (
     fullName: (
   - uid: System.Runtime.Serialization.SerializationInfo
     name: SerializationInfo
     fullName: System.Runtime.Serialization.SerializationInfo
-    isExternal: true
+    href: System.Runtime.Serialization.SerializationInfo.yml
   - name: ', '
     fullName: ', '
   - uid: System.Runtime.Serialization.StreamingContext
     name: StreamingContext
     fullName: System.Runtime.Serialization.StreamingContext
-    isExternal: true
+    href: System.Runtime.Serialization.StreamingContext.yml
   - name: )
     fullName: )
 - uid: System.Exception.HResult
   parent: System.Exception
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: HResult
   fullName: System.Exception.HResult
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -424,7 +446,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -477,9 +499,11 @@ references:
     fullName: )
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Runtime.Serialization.SerializationInfo
   parent: System.Runtime.Serialization
   isExternal: false
@@ -488,6 +512,7 @@ references:
   fullName: System.Runtime.Serialization.SerializationInfo
   type: Class
 - uid: System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
   isExternal: false
   href: System.Runtime.Serialization.StreamingContext.yml
   name: StreamingContext

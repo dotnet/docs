@@ -116,4 +116,15 @@ references:
   type: Class
   summary: Portable Executable format reader.
 - uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
 - uid: System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+  type: Namespace

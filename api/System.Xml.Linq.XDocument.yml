@@ -845,9 +845,11 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Xml.Linq.XObject
   parent: System.Xml.Linq
   isExternal: false
@@ -868,6 +870,7 @@ references:
 
     and text nodes) in the XML tree.
 - uid: System.Xml.Linq.XContainer
+  parent: System.Xml.Linq
   isExternal: false
   href: System.Xml.Linq.XContainer.yml
   name: XContainer
@@ -2346,8 +2349,10 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Object[]
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object[]
   name.vb: Object()
   fullName: System.Object[]
@@ -2356,14 +2361,14 @@ references:
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ()
     fullName: ()
 - uid: System.Xml.Linq.XDeclaration
@@ -2395,9 +2400,11 @@ references:
 - uid: System.Xml.Linq.XDocument.Parse(System.String)
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Xml.Linq.LoadOptions
   parent: System.Xml.Linq
   isExternal: false
@@ -2408,18 +2415,23 @@ references:
   summary: Specifies a set of options for Load().
 - uid: System.IO.Stream
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Stream
   fullName: System.IO.Stream
+  type: Class
 - uid: System.IO
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace
 - uid: System.IO.TextReader
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.TextReader.yml
   name: TextReader
   fullName: System.IO.TextReader
+  type: Class
 - uid: XmlReader
   isExternal: true
   name: XmlReader
@@ -2436,9 +2448,11 @@ references:
   summary: Specifies a set of options for Save().
 - uid: System.IO.TextWriter
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.TextWriter.yml
   name: TextWriter
   fullName: System.IO.TextWriter
+  type: Class
 - uid: System.Xml.Linq.XDocument.Save(System.IO.TextWriter,System.Xml.Linq.SaveOptions)
 - uid: XmlWriter
   isExternal: true

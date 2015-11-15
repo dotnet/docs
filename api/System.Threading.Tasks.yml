@@ -36,6 +36,7 @@ items:
   summary: The System.Threading.Tasks namespace provides types that simplify the work of writing concurrent and asynchronous code. The main types are @'System.Threading.Tasks.Task' which represents an asynchronous operation that can be waited on and cancelled, and @'System.Threading.Tasks.Task`1', which is a task that can return a value. The @'System.Threading.Tasks.TaskFactory' class provides static methods for creating and starting tasks, and the @'System.Threading.Tasks.TaskScheduler' class provides the default thread scheduling infrastructure.
 references:
 - uid: System.Threading.Tasks.ParallelOptions
+  parent: System.Threading.Tasks
   isExternal: false
   href: System.Threading.Tasks.ParallelOptions.yml
   name: ParallelOptions
@@ -70,28 +71,21 @@ references:
   fullName: System.Threading.Tasks.ParallelLoopResult
   type: Struct
   summary: Provides completion status on the execution of a @'System.Threading.Tasks.Parallel' loop.
-- uid: System.Threading.Tasks.TaskExtensions
-  isExternal: false
-  href: System.Threading.Tasks.TaskExtensions.yml
-  name: TaskExtensions
-  fullName: System.Threading.Tasks.TaskExtensions
-  type: Class
-  summary: >-
-    Provides a set of static (Shared in Visual Basic) methods for working with specific kinds of
-
-    @'System.Threading.Tasks.Task' instances.
 - uid: System.Threading.Tasks.Task`1
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.Task`1.yml
   name: Task<TResult>
   name.vb: Task(Of TResult)
   fullName: System.Threading.Tasks.Task<TResult>
   fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  type: Class
+  summary: Represents an asynchronous operation that produces a result at some time in the future.
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: <
     fullName: <
   - name: TResult
@@ -102,7 +96,7 @@ references:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TResult
@@ -154,9 +148,12 @@ references:
   summary: Represents the current stage in the lifecycle of a @'System.Threading.Tasks.Task'.
 - uid: System.Threading.Tasks.Task
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.Task.yml
   name: Task
   fullName: System.Threading.Tasks.Task
+  type: Class
+  summary: Represents an asynchronous operation.
 - uid: System.Threading.Tasks.TaskCreationOptions
   parent: System.Threading.Tasks
   isExternal: false
@@ -203,9 +200,12 @@ references:
     @'System.Threading.Tasks.Task'.
 - uid: System.Threading.Tasks.TaskScheduler
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.TaskScheduler.yml
   name: TaskScheduler
   fullName: System.Threading.Tasks.TaskScheduler
+  type: Class
+  summary: Represents an abstract scheduler for tasks.
 - uid: System.Threading.Tasks.UnobservedTaskExceptionEventArgs
   isExternal: false
   href: System.Threading.Tasks.UnobservedTaskExceptionEventArgs.yml
@@ -260,6 +260,16 @@ references:
     Provides concurrent and exclusive task schedulers that coordinate to execute
 
     tasks while ensuring that concurrent tasks may run concurrently and exclusive tasks never do.
+- uid: System.Threading.Tasks.TaskExtensions
+  isExternal: false
+  href: System.Threading.Tasks.TaskExtensions.yml
+  name: TaskExtensions
+  fullName: System.Threading.Tasks.TaskExtensions
+  type: Class
+  summary: >-
+    Provides a set of static (Shared in Visual Basic) methods for working with specific kinds of
+
+    @'System.Threading.Tasks.Task' instances.
 - uid: System.Threading.Tasks
   isExternal: false
   name: System.Threading.Tasks

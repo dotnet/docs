@@ -80,7 +80,8 @@ references:
   fullName: System.Runtime.Serialization.Formatters
   type: Namespace
 - uid: System.String[]
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String[]
   name.vb: String()
   fullName: System.String[]
@@ -89,18 +90,19 @@ references:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: ()
     fullName: ()
 - uid: System.Type[]
-  isExternal: true
+  isExternal: false
+  href: System.Type.yml
   name: Type[]
   name.vb: Type()
   fullName: System.Type[]
@@ -109,13 +111,13 @@ references:
   - uid: System.Type
     name: Type
     fullName: System.Type
-    isExternal: true
+    href: System.Type.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Type
     name: Type
     fullName: System.Type
-    isExternal: true
+    href: System.Type.yml
   - name: ()
     fullName: ()

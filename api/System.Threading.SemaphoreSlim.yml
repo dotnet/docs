@@ -654,21 +654,25 @@ references:
   isExternal: false
   name: System.Threading
   fullName: System.Threading
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -677,138 +681,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -817,7 +825,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -872,41 +880,73 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Threading.WaitHandle
   parent: System.Threading
-  isExternal: true
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
   name: WaitHandle
   fullName: System.Threading.WaitHandle
+  type: Class
 - uid: System.Threading.SemaphoreSlim.AvailableWaitHandle
 - uid: System.ObjectDisposedException
+  isExternal: false
+  href: System.ObjectDisposedException.yml
+  name: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+  type: Class
 - uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
 - uid: System.Threading.CancellationToken
   parent: System.Threading
-  isExternal: true
+  isExternal: false
+  href: System.Threading.CancellationToken.yml
   name: CancellationToken
   fullName: System.Threading.CancellationToken
+  type: Struct
+  summary: Propagates notification that operations should be canceled.
 - uid: System.OperationCanceledException
+  parent: System
+  isExternal: false
+  href: System.OperationCanceledException.yml
+  name: OperationCanceledException
+  fullName: System.OperationCanceledException
+  type: Class
 - uid: System.TimeSpan
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.TimeSpan.yml
   name: TimeSpan
   fullName: System.TimeSpan
+  type: Struct
+- uid: System.Int32.MaxValue
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Threading.Timeout.Infinite
 - uid: System.Threading.Tasks.Task
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.Task.yml
   name: Task
   fullName: System.Threading.Tasks.Task
+  type: Class
+  summary: Represents an asynchronous operation.
 - uid: System.Threading.Tasks
   isExternal: false
   name: System.Threading.Tasks
@@ -915,6 +955,7 @@ references:
 - uid: System.Threading.Tasks.Task{System.Boolean}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
+  href: System.Threading.Tasks.Task`1.yml
   name: Task<Boolean>
   name.vb: Task(Of Boolean)
   fullName: System.Threading.Tasks.Task<System.Boolean>
@@ -923,40 +964,43 @@ references:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: <
     fullName: <
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: )
     fullName: )
 - uid: System.Threading.Tasks.Task`1
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.Task`1.yml
   name: Task<TResult>
   name.vb: Task(Of TResult)
   fullName: System.Threading.Tasks.Task<TResult>
   fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  type: Class
+  summary: Represents an asynchronous operation that produces a result at some time in the future.
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: <
     fullName: <
   - name: TResult
@@ -967,7 +1011,7 @@ references:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TResult

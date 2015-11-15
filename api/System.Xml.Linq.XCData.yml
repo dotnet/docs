@@ -171,9 +171,11 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Xml.Linq.XObject
   parent: System.Xml.Linq
   isExternal: false
@@ -1217,11 +1219,14 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Xml.Linq.XCData
   parent: System.Xml.Linq
   isExternal: false

@@ -210,13 +210,16 @@ references:
     easy to use external API.
 - uid: System.Type
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Type.yml
   name: Type
   fullName: System.Type
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Linq.Expressions.Expression[]
   isExternal: false
   href: System.Linq.Expressions.Expression.yml
@@ -248,6 +251,8 @@ references:
   summary: The base type for all nodes in Expression Trees.
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class

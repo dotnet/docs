@@ -128,39 +128,50 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeSpecification.cs
+      path: src/mscorlib/src/System/Reflection/Metadata/AssemblyExtensions.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeSpecification.cs
-    startLine: 5
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Metadata/AssemblyExtensions.cs
+    startLine: 7
   assemblies:
-  - System.Reflection.Metadata
+  - mscorlib
 references:
+- uid: System.Reflection.Metadata.AssemblyExtensions
+  isExternal: false
+  href: System.Reflection.Metadata.AssemblyExtensions.yml
+  name: AssemblyExtensions
+  fullName: System.Reflection.Metadata.AssemblyExtensions
+  type: Class
 - uid: System.Reflection.Metadata.AssemblyDefinition
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.AssemblyDefinition.yml
   name: AssemblyDefinition
   fullName: System.Reflection.Metadata.AssemblyDefinition
   type: Struct
 - uid: System.Reflection.Metadata.AssemblyFile
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.AssemblyFile.yml
   name: AssemblyFile
   fullName: System.Reflection.Metadata.AssemblyFile
   type: Struct
 - uid: System.Reflection.Metadata.AssemblyReference
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.AssemblyReference.yml
   name: AssemblyReference
   fullName: System.Reflection.Metadata.AssemblyReference
   type: Struct
 - uid: System.Reflection.Metadata.BlobReader
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.BlobReader.yml
   name: BlobReader
   fullName: System.Reflection.Metadata.BlobReader
   type: Struct
 - uid: System.Reflection.Metadata.Constant
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.Constant.yml
   name: Constant
@@ -174,6 +185,7 @@ references:
   fullName: System.Reflection.Metadata.ConstantTypeCode
   type: Enum
 - uid: System.Reflection.Metadata.CustomAttribute
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.CustomAttribute.yml
   name: CustomAttribute
@@ -187,12 +199,14 @@ references:
   fullName: System.Reflection.Metadata.CustomAttributeNamedArgumentKind
   type: Enum
 - uid: System.Reflection.Metadata.DeclarativeSecurityAttribute
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.DeclarativeSecurityAttribute.yml
   name: DeclarativeSecurityAttribute
   fullName: System.Reflection.Metadata.DeclarativeSecurityAttribute
   type: Struct
 - uid: System.Reflection.Metadata.EventDefinition
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.EventDefinition.yml
   name: EventDefinition
@@ -212,30 +226,35 @@ references:
   fullName: System.Reflection.Metadata.ExceptionRegionKind
   type: Enum
 - uid: System.Reflection.Metadata.ExportedType
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.ExportedType.yml
   name: ExportedType
   fullName: System.Reflection.Metadata.ExportedType
   type: Struct
 - uid: System.Reflection.Metadata.FieldDefinition
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.FieldDefinition.yml
   name: FieldDefinition
   fullName: System.Reflection.Metadata.FieldDefinition
   type: Struct
 - uid: System.Reflection.Metadata.GenericParameter
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.GenericParameter.yml
   name: GenericParameter
   fullName: System.Reflection.Metadata.GenericParameter
   type: Struct
 - uid: System.Reflection.Metadata.GenericParameterConstraint
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.GenericParameterConstraint.yml
   name: GenericParameterConstraint
   fullName: System.Reflection.Metadata.GenericParameterConstraint
   type: Struct
 - uid: System.Reflection.Metadata.GenericParameterHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.GenericParameterHandleCollection.yml
   name: GenericParameterHandleCollection
@@ -293,6 +312,7 @@ references:
   fullName: System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection.Enumerator
   type: Struct
 - uid: System.Reflection.Metadata.MethodDefinitionHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.MethodDefinitionHandleCollection.yml
   name: MethodDefinitionHandleCollection
@@ -306,6 +326,7 @@ references:
   fullName: System.Reflection.Metadata.MethodDefinitionHandleCollection.Enumerator
   type: Struct
 - uid: System.Reflection.Metadata.FieldDefinitionHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.FieldDefinitionHandleCollection.yml
   name: FieldDefinitionHandleCollection
@@ -319,6 +340,7 @@ references:
   fullName: System.Reflection.Metadata.FieldDefinitionHandleCollection.Enumerator
   type: Struct
 - uid: System.Reflection.Metadata.PropertyDefinitionHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.PropertyDefinitionHandleCollection.yml
   name: PropertyDefinitionHandleCollection
@@ -332,6 +354,7 @@ references:
   fullName: System.Reflection.Metadata.PropertyDefinitionHandleCollection.Enumerator
   type: Struct
 - uid: System.Reflection.Metadata.EventDefinitionHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.EventDefinitionHandleCollection.yml
   name: EventDefinitionHandleCollection
@@ -345,6 +368,7 @@ references:
   fullName: System.Reflection.Metadata.EventDefinitionHandleCollection.Enumerator
   type: Struct
 - uid: System.Reflection.Metadata.MethodImplementationHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.MethodImplementationHandleCollection.yml
   name: MethodImplementationHandleCollection
@@ -358,6 +382,7 @@ references:
   fullName: System.Reflection.Metadata.MethodImplementationHandleCollection.Enumerator
   type: Struct
 - uid: System.Reflection.Metadata.ParameterHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.ParameterHandleCollection.yml
   name: ParameterHandleCollection
@@ -372,6 +397,7 @@ references:
   fullName: System.Reflection.Metadata.ParameterHandleCollection.Enumerator
   type: Struct
 - uid: System.Reflection.Metadata.InterfaceImplementationHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.InterfaceImplementationHandleCollection.yml
   name: InterfaceImplementationHandleCollection
@@ -385,6 +411,7 @@ references:
   fullName: System.Reflection.Metadata.InterfaceImplementationHandleCollection.Enumerator
   type: Struct
 - uid: System.Reflection.Metadata.TypeDefinitionHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.TypeDefinitionHandleCollection.yml
   name: TypeDefinitionHandleCollection
@@ -399,6 +426,7 @@ references:
   fullName: System.Reflection.Metadata.TypeDefinitionHandleCollection.Enumerator
   type: Struct
 - uid: System.Reflection.Metadata.TypeReferenceHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.TypeReferenceHandleCollection.yml
   name: TypeReferenceHandleCollection
@@ -413,6 +441,7 @@ references:
   fullName: System.Reflection.Metadata.TypeReferenceHandleCollection.Enumerator
   type: Struct
 - uid: System.Reflection.Metadata.ExportedTypeHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.ExportedTypeHandleCollection.yml
   name: ExportedTypeHandleCollection
@@ -427,6 +456,7 @@ references:
   fullName: System.Reflection.Metadata.ExportedTypeHandleCollection.Enumerator
   type: Struct
 - uid: System.Reflection.Metadata.MemberReferenceHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.MemberReferenceHandleCollection.yml
   name: MemberReferenceHandleCollection
@@ -441,6 +471,7 @@ references:
   fullName: System.Reflection.Metadata.MemberReferenceHandleCollection.Enumerator
   type: Struct
 - uid: System.Reflection.Metadata.PropertyAccessors
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.PropertyAccessors.yml
   name: PropertyAccessors
@@ -454,6 +485,7 @@ references:
   fullName: System.Reflection.Metadata.EventAccessors
   type: Struct
 - uid: System.Reflection.Metadata.AssemblyReferenceHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.AssemblyReferenceHandleCollection.yml
   name: AssemblyReferenceHandleCollection
@@ -468,6 +500,7 @@ references:
   fullName: System.Reflection.Metadata.AssemblyReferenceHandleCollection.Enumerator
   type: Struct
 - uid: System.Reflection.Metadata.ManifestResourceHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.ManifestResourceHandleCollection.yml
   name: ManifestResourceHandleCollection
@@ -482,6 +515,7 @@ references:
   fullName: System.Reflection.Metadata.ManifestResourceHandleCollection.Enumerator
   type: Struct
 - uid: System.Reflection.Metadata.AssemblyFileHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.AssemblyFileHandleCollection.yml
   name: AssemblyFileHandleCollection
@@ -737,18 +771,21 @@ references:
   fullName: System.Reflection.Metadata.GuidHandle
   type: Struct
 - uid: System.Reflection.Metadata.InterfaceImplementation
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.InterfaceImplementation.yml
   name: InterfaceImplementation
   fullName: System.Reflection.Metadata.InterfaceImplementation
   type: Struct
 - uid: System.Reflection.Metadata.ManifestResource
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.ManifestResource.yml
   name: ManifestResource
   fullName: System.Reflection.Metadata.ManifestResource
   type: Struct
 - uid: System.Reflection.Metadata.MemberReference
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.MemberReference.yml
   name: MemberReference
@@ -770,6 +807,7 @@ references:
   fullName: System.Reflection.Metadata.MetadataKind
   type: Enum
 - uid: System.Reflection.Metadata.MetadataReader
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.MetadataReader.yml
   name: MetadataReader
@@ -976,12 +1014,6 @@ references:
   name: TypeSpecification
   fullName: System.Reflection.Metadata.TypeSpecification
   type: Struct
-- uid: System.Reflection.Metadata.AssemblyExtensions
-  isExternal: false
-  href: System.Reflection.Metadata.AssemblyExtensions.yml
-  name: AssemblyExtensions
-  fullName: System.Reflection.Metadata.AssemblyExtensions
-  type: Class
 - uid: System.Reflection.Metadata
   isExternal: false
   name: System.Reflection.Metadata

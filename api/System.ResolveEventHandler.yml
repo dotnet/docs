@@ -36,12 +36,16 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.ResolveEventArgs
+  parent: System
   isExternal: false
   href: System.ResolveEventArgs.yml
   name: ResolveEventArgs
@@ -49,9 +53,11 @@ references:
   type: Class
 - uid: System.Reflection.Assembly
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.Assembly.yml
   name: Assembly
   fullName: System.Reflection.Assembly
+  type: Class
 - uid: System.Reflection
   isExternal: false
   name: System.Reflection

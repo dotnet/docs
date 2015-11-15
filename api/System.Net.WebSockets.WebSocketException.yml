@@ -421,13 +421,16 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Net.WebSockets.WebSocketError
   parent: System.Net.WebSockets
   isExternal: false
@@ -437,16 +440,22 @@ references:
   type: Enum
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Exception
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: Exception
   fullName: System.Exception
+  type: Class
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct

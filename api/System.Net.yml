@@ -56,6 +56,7 @@ references:
   fullName: System.Net.HttpRequestHeader
   type: Enum
 - uid: System.Net.HttpWebRequest
+  parent: System.Net
   isExternal: false
   href: System.Net.HttpWebRequest.yml
   name: HttpWebRequest
@@ -68,6 +69,7 @@ references:
   fullName: System.Net.HttpWebResponse
   type: Class
 - uid: System.Net.IWebRequestCreate
+  parent: System.Net
   isExternal: false
   href: System.Net.IWebRequestCreate.yml
   name: IWebRequestCreate

@@ -14,7 +14,9 @@ items:
   - System.IO.File.Create(System.String,System.Int32)
   - System.IO.File.Create(System.String,System.Int32,System.IO.FileOptions)
   - System.IO.File.CreateText(System.String)
+  - System.IO.File.Decrypt(System.String)
   - System.IO.File.Delete(System.String)
+  - System.IO.File.Encrypt(System.String)
   - System.IO.File.Exists(System.String)
   - System.IO.File.GetAttributes(System.String)
   - System.IO.File.GetCreationTime(System.String)
@@ -37,6 +39,8 @@ items:
   - System.IO.File.ReadAllText(System.String,System.Text.Encoding)
   - System.IO.File.ReadLines(System.String)
   - System.IO.File.ReadLines(System.String,System.Text.Encoding)
+  - System.IO.File.Replace(System.String,System.String,System.String)
+  - System.IO.File.Replace(System.String,System.String,System.String,System.Boolean)
   - System.IO.File.SetAttributes(System.String,System.IO.FileAttributes)
   - System.IO.File.SetCreationTime(System.String,System.DateTime)
   - System.IO.File.SetCreationTimeUtc(System.String,System.DateTime)
@@ -47,6 +51,8 @@ items:
   - System.IO.File.WriteAllBytes(System.String,System.Byte[])
   - System.IO.File.WriteAllLines(System.String,System.Collections.Generic.IEnumerable{System.String})
   - System.IO.File.WriteAllLines(System.String,System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding)
+  - System.IO.File.WriteAllLines(System.String,System.String[])
+  - System.IO.File.WriteAllLines(System.String,System.String[],System.Text.Encoding)
   - System.IO.File.WriteAllText(System.String,System.String)
   - System.IO.File.WriteAllText(System.String,System.String,System.Text.Encoding)
   href: System.IO.File.yml
@@ -55,13 +61,13 @@ items:
   type: Class
   source:
     remote: &o0
-      path: src/System.IO.FileSystem/src/System/IO/File.cs
+      path: src/mscorlib/src/System/IO/File.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 20
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 34
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Provides static methods for the creation, copying, deletion, moving, and opening of a single file, and aids in the creation of @'System.IO.FileStream' objects.To browse the .NET Framework source code for this type, see the Reference Source.
   syntax:
@@ -86,10 +92,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 22
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 39
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens an existing UTF-8 encoded text file for reading.
   syntax:
@@ -126,10 +132,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 32
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 47
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates or opens a file for writing UTF-8 encoded text.
   syntax:
@@ -164,10 +170,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 42
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 55
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates a @'System.IO.StreamWriter' that appends UTF-8 encoded text to an existing file, or to a new file if the specified file does not exist.
   syntax:
@@ -202,10 +208,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 62
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 73
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Copies an existing file to a new file. Overwriting a file of the same name is not allowed.
   syntax:
@@ -244,10 +250,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 86
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 96
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Copies an existing file to a new file. Overwriting a file of the same name is allowed.
   syntax:
@@ -289,10 +295,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 129
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 186
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates or overwrites a file in the specified path.
   syntax:
@@ -329,10 +335,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 142
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 198
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates or overwrites the specified file.
   syntax:
@@ -372,10 +378,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 147
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 202
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates or overwrites the specified file, specifying a buffer size and a @'System.IO.FileOptions' value that describes how to create or overwrite the file.
   syntax:
@@ -422,10 +428,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 162
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 223
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Deletes the specified file.
   syntax:
@@ -450,6 +456,88 @@ items:
     description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
   - type: System.UnauthorizedAccessException
     description: The caller does not have the required permission.-or- The file is an executable file that is in use.-or- *path* is a directory.-or- *path* specified a read-only file.
+- uid: System.IO.File.Decrypt(System.String)
+  id: Decrypt(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Decrypt(String)
+  fullName: System.IO.File.Decrypt(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 284
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Decrypts a file that was encrypted by the current account using the @'System.IO.File.Encrypt(System.String)' method.
+  syntax:
+    content: public static void Decrypt(string path)
+    content.vb: Public Shared Sub Decrypt(path As String)
+    parameters:
+    - id: path
+      type: System.String
+      description: A path that describes a file to decrypt.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *path* parameter is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @'System.IO.Path.InvalidPathChars'.
+  - type: System.ArgumentNullException
+    description: The *path* parameter is null.
+  - type: System.IO.DriveNotFoundException
+    description: An invalid drive was specified.
+  - type: System.IO.FileNotFoundException
+    description: The file described by the *path* parameter could not be found.
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file. For example, the encrypted file is already open. -or-This operation is not supported on the current platform.
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.PlatformNotSupportedException
+    description: The current operating system is not Windows NT or later.
+  - type: System.NotSupportedException
+    description: The file system is not NTFS.
+  - type: System.UnauthorizedAccessException
+    description: The *path* parameter specified a file that is read-only.-or- This operation is not supported on the current platform.-or- The *path* parameter specified a directory.-or- The caller does not have the required permission.
+- uid: System.IO.File.Encrypt(System.String)
+  id: Encrypt(System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Encrypt(String)
+  fullName: System.IO.File.Encrypt(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 308
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Encrypts a file so that only the account used to encrypt the file can decrypt it.
+  syntax:
+    content: public static void Encrypt(string path)
+    content.vb: Public Shared Sub Encrypt(path As String)
+    parameters:
+    - id: path
+      type: System.String
+      description: A path that describes a file to encrypt.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *path* parameter is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @'System.IO.Path.InvalidPathChars'.
+  - type: System.ArgumentNullException
+    description: The *path* parameter is null.
+  - type: System.IO.DriveNotFoundException
+    description: An invalid drive was specified.
+  - type: System.IO.FileNotFoundException
+    description: The file described by the *path* parameter could not be found.
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.-or-This operation is not supported on the current platform.
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.PlatformNotSupportedException
+    description: The current operating system is not Windows NT or later.
+  - type: System.NotSupportedException
+    description: The file system is not NTFS.
+  - type: System.UnauthorizedAccessException
+    description: The *path* parameter specified a file that is read-only.-or- This operation is not supported on the current platform.-or- The *path* parameter specified a directory.-or- The caller does not have the required permission.
 - uid: System.IO.File.Exists(System.String)
   id: Exists(System.String)
   parent: System.IO.File
@@ -459,10 +547,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 182
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 339
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Determines whether the specified file exists.
   syntax:
@@ -484,10 +572,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 219
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 415
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens a @'System.IO.FileStream' on the specified path with read/write access.
   syntax:
@@ -531,10 +619,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 224
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 419
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens a @'System.IO.FileStream' on the specified path, with the specified mode and access.
   syntax:
@@ -581,10 +669,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 229
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 423
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens a @'System.IO.FileStream' on the specified path, having the specified mode with read, write, or read/write access and the specified sharing option.
   syntax:
@@ -634,21 +722,22 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 246
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 427
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Sets the date and time the file was created.
   syntax:
-    content: public static void SetCreationTime(string path, DateTime creationTimeUtc)
-    content.vb: Public Shared Sub SetCreationTime(path As String, creationTimeUtc As Date)
+    content: public static void SetCreationTime(string path, DateTime creationTime)
+    content.vb: Public Shared Sub SetCreationTime(path As String, creationTime As Date)
     parameters:
     - id: path
       type: System.String
       description: The file for which to set the creation date and time information.
-    - id: creationTimeUtc
+    - id: creationTime
       type: System.DateTime
+      description: A @'System.DateTime' containing the value to set for the creation date and time of *path*. This value is expressed in local time.
   exceptions:
   - type: System.IO.FileNotFoundException
     description: The specified path was not found.
@@ -675,21 +764,22 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 252
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 432
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Sets the date and time, in coordinated universal time (UTC), that the file was created.
   syntax:
-    content: public static void SetCreationTimeUtc(string path, DateTime creationTime)
-    content.vb: Public Shared Sub SetCreationTimeUtc(path As String, creationTime As Date)
+    content: public static void SetCreationTimeUtc(string path, DateTime creationTimeUtc)
+    content.vb: Public Shared Sub SetCreationTimeUtc(path As String, creationTimeUtc As Date)
     parameters:
     - id: path
       type: System.String
       description: The file for which to set the creation date and time information.
-    - id: creationTime
+    - id: creationTimeUtc
       type: System.DateTime
+      description: A @'System.DateTime' containing the value to set for the creation date and time of *path*. This value is expressed in UTC time.
   exceptions:
   - type: System.IO.FileNotFoundException
     description: The specified path was not found.
@@ -716,10 +806,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 258
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 447
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the creation date and time of the specified file or directory.
   syntax:
@@ -752,10 +842,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 265
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 453
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the creation date and time, in coordinated universal time (UTC), of the specified file or directory.
   syntax:
@@ -788,10 +878,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 272
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 482
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Sets the date and time the specified file was last accessed.
   syntax:
@@ -828,10 +918,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 278
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 487
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Sets the date and time, in coordinated universal time (UTC), that the specified file was last accessed.
   syntax:
@@ -868,10 +958,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 284
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 502
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the date and time the specified file or directory was last accessed.
   syntax:
@@ -904,10 +994,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 291
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 508
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the date and time, in coordinated universal time (UTC), that the specified file or directory was last accessed.
   syntax:
@@ -940,10 +1030,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 298
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 537
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Sets the date and time that the specified file was last written to.
   syntax:
@@ -980,10 +1070,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 304
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 542
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Sets the date and time, in coordinated universal time (UTC), that the specified file was last written to.
   syntax:
@@ -1020,10 +1110,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 310
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 557
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the date and time the specified file or directory was last written to.
   syntax:
@@ -1056,10 +1146,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 317
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 563
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the date and time, in coordinated universal time (UTC), that the specified file or directory was last written to.
   syntax:
@@ -1092,10 +1182,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 324
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 592
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets the @'System.IO.FileAttributes' of the file on the path.
   syntax:
@@ -1132,10 +1222,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 331
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 612
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Sets the specified @'System.IO.FileAttributes' of the file on the specified path.
   syntax:
@@ -1170,10 +1260,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 338
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 657
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens an existing file for reading.
   syntax:
@@ -1212,10 +1302,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 345
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 678
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens an existing file or creates a new file for writing.
   syntax:
@@ -1250,10 +1340,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 351
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 683
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens a text file, reads all lines of the file, and then closes the file.
   syntax:
@@ -1294,10 +1384,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 363
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 695
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens a file, reads all lines of the file with the specified encoding, and then closes the file.
   syntax:
@@ -1341,10 +1431,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 390
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 732
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates a new file, writes the specified string to the file, and then closes the file. If the target file already exists, it is overwritten.
   syntax:
@@ -1383,10 +1473,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 402
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 744
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates a new file, writes the specified string to the file using the specified encoding, and then closes the file. If the target file already exists, it is overwritten.
   syntax:
@@ -1428,10 +1518,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 429
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 781
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens a binary file, reads the contents of the file into a byte array, and then closes the file.
   syntax:
@@ -1474,10 +1564,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 460
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 818
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates a new file, writes the specified byte array to the file, and then closes the file. If the target file already exists, it is overwritten.
   syntax:
@@ -1516,10 +1606,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 486
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 860
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens a text file, reads all lines of the file, and then closes the file.
   syntax:
@@ -1560,10 +1650,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 497
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 871
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens a file, reads all lines of the file with the specified encoding, and then closes the file.
   syntax:
@@ -1607,10 +1697,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 528
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 900
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Reads the lines of a file.
   syntax:
@@ -1649,10 +1739,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 539
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 911
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Read the lines of a file that has a specified encoding.
   syntax:
@@ -1685,6 +1775,97 @@ items:
     description: The caller does not have the required permission.
   - type: System.UnauthorizedAccessException
     description: '*path* specifies a file that is read-only.-or-This operation is not supported on the current platform.-or-*path* is a directory.-or-The caller does not have the required permission.'
+- uid: System.IO.File.WriteAllLines(System.String,System.String[])
+  id: WriteAllLines(System.String,System.String[])
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: WriteAllLines(String, String[])
+  name.vb: WriteAllLines(String, String())
+  fullName: System.IO.File.WriteAllLines(System.String, System.String[])
+  fullName.vb: System.IO.File.WriteAllLines(System.String, System.String())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 924
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Creates a new file, write the specified string array to the file, and then closes the file.
+  syntax:
+    content: public static void WriteAllLines(string path, string[] contents)
+    content.vb: Public Shared Sub WriteAllLines(path As String, contents As String())
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to write to.
+    - id: contents
+      type: System.String[]
+      description: The string array to write to the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: Either *path* or *contents* is null.
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only.-or- This operation is not supported on the current platform.-or- *path* specified a directory.-or- The caller does not have the required permission.'
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.IO.File.WriteAllLines(System.String,System.String[],System.Text.Encoding)
+  id: WriteAllLines(System.String,System.String[],System.Text.Encoding)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: WriteAllLines(String, String[], Encoding)
+  name.vb: WriteAllLines(String, String(), Encoding)
+  fullName: System.IO.File.WriteAllLines(System.String, System.String[], System.Text.Encoding)
+  fullName.vb: System.IO.File.WriteAllLines(System.String, System.String(), System.Text.Encoding)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 937
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Creates a new file, writes the specified string array to the file by using the specified encoding, and then closes the file.
+  syntax:
+    content: public static void WriteAllLines(string path, string[] contents, Encoding encoding)
+    content.vb: Public Shared Sub WriteAllLines(path As String, contents As String(), encoding As Encoding)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file to write to.
+    - id: contents
+      type: System.String[]
+      description: The string array to write to the file.
+    - id: encoding
+      type: System.Text.Encoding
+      description: An @'System.Text.Encoding' object that represents the character encoding applied to the string array.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more invalid characters as defined by @''System.IO.Path.InvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: Either *path* or *contents* is null.
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: '*path* specified a file that is read-only.-or- This operation is not supported on the current platform.-or- *path* specified a directory.-or- The caller does not have the required permission.'
+  - type: System.NotSupportedException
+    description: '*path* is in an invalid format.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
 - uid: System.IO.File.WriteAllLines(System.String,System.Collections.Generic.IEnumerable{System.String})
   id: WriteAllLines(System.String,System.Collections.Generic.IEnumerable{System.String})
   parent: System.IO.File
@@ -1696,10 +1877,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 552
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 952
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates a new file, writes a collection of strings to the file, and then closes the file.
   syntax:
@@ -1740,10 +1921,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 567
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 965
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates a new file by using the specified encoding, writes a collection of strings to the file, and then closes the file.
   syntax:
@@ -1785,10 +1966,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 599
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 994
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens a file, appends the specified string to the file, and then closes the file. If the file does not exist, this method creates a file, writes the specified string to the file, then closes the file.
   syntax:
@@ -1827,10 +2008,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 610
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 1005
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Appends the specified string to the file, creating the file if it does not already exist.
   syntax:
@@ -1874,10 +2055,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 635
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 1028
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Appends lines to a file, and then closes the file. If the specified file does not exist, this method creates a file, writes the specified lines to the file, and then closes the file.
   syntax:
@@ -1920,10 +2101,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 650
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 1041
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Appends lines to a file by using a specified encoding, and then closes the file. If the specified file does not exist, this method creates a file, writes the specified lines to the file, and then closes the file.
   syntax:
@@ -1967,10 +2148,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/File.cs
-    startLine: 675
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 1064
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Moves a specified file to a new location, providing the option to specify a new file name.
   syntax:
@@ -1998,26 +2179,123 @@ items:
     description: The path specified in *sourceFileName* or *destFileName* is invalid, (for example, it is on an unmapped drive).
   - type: System.NotSupportedException
     description: '*sourceFileName* or *destFileName* is in an invalid format.'
+- uid: System.IO.File.Replace(System.String,System.String,System.String)
+  id: Replace(System.String,System.String,System.String)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Replace(String, String, String)
+  fullName: System.IO.File.Replace(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 1111
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Replaces the contents of a specified file with the contents of another file, deleting the original file, and creating a backup of the replaced file.
+  syntax:
+    content: public static void Replace(string sourceFileName, string destinationFileName, string destinationBackupFileName)
+    content.vb: Public Shared Sub Replace(sourceFileName As String, destinationFileName As String, destinationBackupFileName As String)
+    parameters:
+    - id: sourceFileName
+      type: System.String
+      description: The name of a file that replaces the file specified by *destinationFileName*.
+    - id: destinationFileName
+      type: System.String
+      description: The name of the file being replaced.
+    - id: destinationBackupFileName
+      type: System.String
+      description: The name of the backup file.
+  exceptions:
+  - type: System.ArgumentException
+    description: The path described by the *destinationFileName* parameter was not of a legal form.-or-The path described by the *destinationBackupFileName* parameter was not of a legal form.
+  - type: System.ArgumentNullException
+    description: The *destinationFileName* parameter is null.
+  - type: System.IO.DriveNotFoundException
+    description: An invalid drive was specified.
+  - type: System.IO.FileNotFoundException
+    description: The file described by the current @'System.IO.FileInfo' object could not be found.-or-The file described by the *destinationBackupFileName* parameter could not be found.
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.- or -The *sourceFileName* and *destinationFileName* parameters specify the same file.
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.PlatformNotSupportedException
+    description: The operating system is Windows 98 Second Edition or earlier and the files system is not NTFS.
+  - type: System.UnauthorizedAccessException
+    description: The *sourceFileName* or *destinationFileName* parameter specifies a file that is read-only.-or- This operation is not supported on the current platform.-or- Source or destination parameters specify a directory instead of a file.-or- The caller does not have the required permission.
+- uid: System.IO.File.Replace(System.String,System.String,System.String,System.Boolean)
+  id: Replace(System.String,System.String,System.String,System.Boolean)
+  parent: System.IO.File
+  href: System.IO.File.yml
+  name: Replace(String, String, String, Boolean)
+  fullName: System.IO.File.Replace(System.String, System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/File.cs
+    startLine: 1122
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Replaces the contents of a specified file with the contents of another file, deleting the original file, and creating a backup of the replaced file and optionally ignores merge errors.
+  syntax:
+    content: public static void Replace(string sourceFileName, string destinationFileName, string destinationBackupFileName, bool ignoreMetadataErrors)
+    content.vb: Public Shared Sub Replace(sourceFileName As String, destinationFileName As String, destinationBackupFileName As String, ignoreMetadataErrors As Boolean)
+    parameters:
+    - id: sourceFileName
+      type: System.String
+      description: The name of a file that replaces the file specified by *destinationFileName*.
+    - id: destinationFileName
+      type: System.String
+      description: The name of the file being replaced.
+    - id: destinationBackupFileName
+      type: System.String
+      description: The name of the backup file.
+    - id: ignoreMetadataErrors
+      type: System.Boolean
+      description: true to ignore merge errors (such as attributes and access control lists (ACLs)) from the replaced file to the replacement file; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: The path described by the *destinationFileName* parameter was not of a legal form.-or-The path described by the *destinationBackupFileName* parameter was not of a legal form.
+  - type: System.ArgumentNullException
+    description: The *destinationFileName* parameter is null.
+  - type: System.IO.DriveNotFoundException
+    description: An invalid drive was specified.
+  - type: System.IO.FileNotFoundException
+    description: The file described by the current @'System.IO.FileInfo' object could not be found.-or-The file described by the *destinationBackupFileName* parameter could not be found.
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.- or -The *sourceFileName* and *destinationFileName* parameters specify the same file.
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.PlatformNotSupportedException
+    description: The operating system is Windows 98 Second Edition or earlier and the files system is not NTFS.
+  - type: System.UnauthorizedAccessException
+    description: The *sourceFileName* or *destinationFileName* parameter specifies a file that is read-only.-or- This operation is not supported on the current platform.-or- Source or destination parameters specify a directory instead of a file.-or- The caller does not have the required permission.
 references:
 - uid: System.IO
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2026,138 +2304,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2166,7 +2448,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2221,26 +2503,35 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.IO.StreamReader
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.StreamReader.yml
   name: StreamReader
   fullName: System.IO.StreamReader
+  type: Class
 - uid: System.IO.StreamWriter
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.StreamWriter.yml
   name: StreamWriter
   fullName: System.IO.StreamWriter
+  type: Class
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.IO.FileStream
   parent: System.IO
   isExternal: false
@@ -2250,9 +2541,11 @@ references:
   type: Class
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.IO.FileOptions
   parent: System.IO
   isExternal: false
@@ -2262,40 +2555,54 @@ references:
   type: Enum
 - uid: System.IO.FileMode
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.FileMode.yml
   name: FileMode
   fullName: System.IO.FileMode
+  type: Enum
 - uid: System.IO.FileAccess
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.FileAccess.yml
   name: FileAccess
   fullName: System.IO.FileAccess
+  type: Enum
 - uid: System.IO.FileShare
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.FileShare.yml
   name: FileShare
   fullName: System.IO.FileShare
+  type: Enum
 - uid: System.DateTime
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.DateTime.yml
   name: DateTime
   fullName: System.DateTime
+  type: Struct
 - uid: System.IO.FileAttributes
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.FileAttributes.yml
   name: FileAttributes
   fullName: System.IO.FileAttributes
+  type: Enum
 - uid: System.Text.Encoding
   parent: System.Text
-  isExternal: true
+  isExternal: false
+  href: System.Text.Encoding.yml
   name: Encoding
   fullName: System.Text.Encoding
+  type: Class
 - uid: System.Text
   isExternal: false
   name: System.Text
   fullName: System.Text
+  type: Namespace
 - uid: System.Byte[]
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte[]
   name.vb: Byte()
   fullName: System.Byte[]
@@ -2304,18 +2611,19 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
 - uid: System.String[]
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String[]
   name.vb: String()
   fullName: System.String[]
@@ -2324,19 +2632,20 @@ references:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: ()
     fullName: ()
 - uid: System.Collections.Generic.IEnumerable{System.String}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<String>
   name.vb: IEnumerable(Of String)
   fullName: System.Collections.Generic.IEnumerable<System.String>
@@ -2345,40 +2654,42 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: )
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -2389,7 +2700,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -2400,3 +2711,4 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace

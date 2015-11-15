@@ -51,15 +51,29 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/System.Linq.Expressions/src/System/Linq/Expressions/Compiler/VariableBinder.cs
+      path: src/Common/src/System/Linq/Expressions/Compiler/AssemblyGen.cs
       branch: master
       repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Linq.Expressions/src/System/Linq/Expressions/Compiler/VariableBinder.cs
-    startLine: 8
+    path: src/Common/src/System/Linq/Expressions/Compiler/AssemblyGen.cs
+    startLine: 9
   assemblies:
-  - System.Linq.Expressions
+  - System.Dynamic.Runtime
   summary: The @'System.Linq.Expressions' namespace contains classes, interfaces and enumerations that enable language-level code expressions to be represented as objects in the form of expression trees.
 references:
+- uid: System.Linq.Expressions.DynamicExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.DynamicExpression.yml
+  name: DynamicExpression
+  fullName: System.Linq.Expressions.DynamicExpression
+  type: Class
+  summary: Represents a dynamic operation.
+- uid: System.Linq.Expressions.DynamicExpressionVisitor
+  isExternal: false
+  href: System.Linq.Expressions.DynamicExpressionVisitor.yml
+  name: DynamicExpressionVisitor
+  fullName: System.Linq.Expressions.DynamicExpressionVisitor
+  type: Class
 - uid: System.Linq.Expressions.BinaryExpression
   parent: System.Linq.Expressions
   isExternal: false
@@ -515,20 +529,6 @@ references:
   fullName: System.Linq.Expressions.UnaryExpression
   type: Class
   summary: Represents an expression that has a unary operator.
-- uid: System.Linq.Expressions.DynamicExpression
-  parent: System.Linq.Expressions
-  isExternal: false
-  href: System.Linq.Expressions.DynamicExpression.yml
-  name: DynamicExpression
-  fullName: System.Linq.Expressions.DynamicExpression
-  type: Class
-  summary: Represents a dynamic operation.
-- uid: System.Linq.Expressions.DynamicExpressionVisitor
-  isExternal: false
-  href: System.Linq.Expressions.DynamicExpressionVisitor.yml
-  name: DynamicExpressionVisitor
-  fullName: System.Linq.Expressions.DynamicExpressionVisitor
-  type: Class
 - uid: System.Linq.Expressions
   isExternal: false
   name: System.Linq.Expressions

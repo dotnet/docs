@@ -96,19 +96,25 @@ references:
     fullName: )
 - uid: System.IDisposable
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.IDisposable.yml
   name: IDisposable
   fullName: System.IDisposable
+  type: Interface
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Collections.IDictionaryEnumerator
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IDictionaryEnumerator.yml
   name: IDictionaryEnumerator
   fullName: System.Collections.IDictionaryEnumerator
+  type: Interface
 - uid: System.Collections
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+  type: Namespace

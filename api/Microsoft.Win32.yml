@@ -16,13 +16,13 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/ThrowHelper.cs
+      path: src/mscorlib/src/System/Security/SafeSecurityHandles.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/ThrowHelper.cs
-    startLine: 6
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/SafeSecurityHandles.cs
+    startLine: 2
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   summary: 'The @''Microsoft.Win32'' namespace provides two types of classes: those that handle events raised by the operating system and those that manipulate the system registry.'
 references:
 - uid: Microsoft.Win32.Registry
@@ -52,6 +52,13 @@ references:
   name: RegistryValueOptions
   fullName: Microsoft.Win32.RegistryValueOptions
   type: Enum
+- uid: Microsoft.Win32.RegistryKeyPermissionCheck
+  parent: Microsoft.Win32
+  isExternal: false
+  href: Microsoft.Win32.RegistryKeyPermissionCheck.yml
+  name: RegistryKeyPermissionCheck
+  fullName: Microsoft.Win32.RegistryKeyPermissionCheck
+  type: Enum
 - uid: Microsoft.Win32.RegistryOptions
   parent: Microsoft.Win32
   isExternal: false
@@ -72,13 +79,6 @@ references:
   href: Microsoft.Win32.RegistryView.yml
   name: RegistryView
   fullName: Microsoft.Win32.RegistryView
-  type: Enum
-- uid: Microsoft.Win32.RegistryKeyPermissionCheck
-  parent: Microsoft.Win32
-  isExternal: false
-  href: Microsoft.Win32.RegistryKeyPermissionCheck.yml
-  name: RegistryKeyPermissionCheck
-  fullName: Microsoft.Win32.RegistryKeyPermissionCheck
   type: Enum
 - uid: Microsoft.Win32
   isExternal: false

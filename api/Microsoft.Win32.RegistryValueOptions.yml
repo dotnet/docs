@@ -11,13 +11,13 @@ items:
   type: Enum
   source:
     remote: &o0
-      path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
+      path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 1734
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 2145
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Specifies optional behavior when retrieving name/value pairs from a registry key.
   syntax:
@@ -32,10 +32,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 1737
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 2147
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: No optional behavior is specified.
   syntax:
@@ -49,10 +49,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 1738
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 2148
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: A value of type @'Microsoft.Win32.RegistryValueKind.ExpandString' is retrieved without expanding its embedded environment variables.
   syntax:

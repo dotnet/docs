@@ -66,9 +66,11 @@ references:
   type: Enum
 - uid: System.Globalization.NumberStyles
   parent: System.Globalization
-  isExternal: true
+  isExternal: false
+  href: System.Globalization.NumberStyles.yml
   name: NumberStyles
   fullName: System.Globalization.NumberStyles
+  type: Enum
 - uid: System.Globalization.Calendar
   parent: System.Globalization
   isExternal: false
@@ -112,9 +114,11 @@ references:
   type: Class
 - uid: System.Globalization.CultureInfo
   parent: System.Globalization
-  isExternal: true
+  isExternal: false
+  href: System.Globalization.CultureInfo.yml
   name: CultureInfo
   fullName: System.Globalization.CultureInfo
+  type: Class
 - uid: System.Globalization.CultureNotFoundException
   isExternal: false
   href: System.Globalization.CultureNotFoundException.yml
@@ -317,3 +321,4 @@ references:
   isExternal: false
   name: System.Globalization
   fullName: System.Globalization
+  type: Namespace

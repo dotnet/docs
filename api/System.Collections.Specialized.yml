@@ -55,6 +55,7 @@ references:
   fullName: System.Collections.Specialized.HybridDictionary
   type: Class
 - uid: System.Collections.Specialized.IOrderedDictionary
+  parent: System.Collections.Specialized
   isExternal: false
   href: System.Collections.Specialized.IOrderedDictionary.yml
   name: IOrderedDictionary
@@ -67,6 +68,7 @@ references:
   fullName: System.Collections.Specialized.ListDictionary
   type: Class
 - uid: System.Collections.Specialized.NameObjectCollectionBase
+  parent: System.Collections.Specialized
   isExternal: false
   href: System.Collections.Specialized.NameObjectCollectionBase.yml
   name: NameObjectCollectionBase
@@ -119,6 +121,7 @@ references:
   fullName: System.Collections.Specialized.CollectionsUtil
   type: Class
 - uid: System.Collections.Specialized.INotifyCollectionChanged
+  parent: System.Collections.Specialized
   isExternal: false
   href: System.Collections.Specialized.INotifyCollectionChanged.yml
   name: INotifyCollectionChanged
@@ -137,6 +140,7 @@ references:
   type: Enum
   summary: This enum describes the action that caused a CollectionChanged event.
 - uid: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+  parent: System.Collections.Specialized
   isExternal: false
   href: System.Collections.Specialized.NotifyCollectionChangedEventArgs.yml
   name: NotifyCollectionChangedEventArgs

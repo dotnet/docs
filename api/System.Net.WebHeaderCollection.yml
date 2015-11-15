@@ -475,13 +475,16 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Net.HttpRequestHeader
   parent: System.Net
   isExternal: false
@@ -491,9 +494,11 @@ references:
   type: Enum
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Net.HttpResponseHeader
   parent: System.Net
   isExternal: false
@@ -502,7 +507,8 @@ references:
   fullName: System.Net.HttpResponseHeader
   type: Enum
 - uid: System.String[]
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String[]
   name.vb: String()
   fullName: System.String[]
@@ -511,31 +517,36 @@ references:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: ()
     fullName: ()
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: KeysCollection
   isExternal: true
   name: KeysCollection
   fullName: KeysCollection
 - uid: System.Collections.IEnumerator
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerator.yml
   name: IEnumerator
   fullName: System.Collections.IEnumerator
+  type: Interface
 - uid: System.Collections
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+  type: Namespace

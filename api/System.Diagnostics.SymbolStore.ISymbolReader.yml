@@ -295,15 +295,20 @@ references:
   type: Namespace
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Guid
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Guid.yml
   name: Guid
   fullName: System.Guid
+  type: Struct
 - uid: System.Diagnostics.SymbolStore.ISymbolDocument
+  parent: System.Diagnostics.SymbolStore
   isExternal: false
   href: System.Diagnostics.SymbolStore.ISymbolDocument.yml
   name: ISymbolDocument
@@ -313,6 +318,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Diagnostics.SymbolStore.ISymbolDocument[]
   isExternal: false
   href: System.Diagnostics.SymbolStore.ISymbolDocument.yml
@@ -342,6 +348,7 @@ references:
   fullName: System.Diagnostics.SymbolStore.SymbolToken
   type: Struct
 - uid: System.Diagnostics.SymbolStore.ISymbolMethod
+  parent: System.Diagnostics.SymbolStore
   isExternal: false
   href: System.Diagnostics.SymbolStore.ISymbolMethod.yml
   name: ISymbolMethod
@@ -349,9 +356,11 @@ references:
   type: Interface
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Diagnostics.SymbolStore.ISymbolVariable[]
   isExternal: false
   href: System.Diagnostics.SymbolStore.ISymbolVariable.yml
@@ -374,7 +383,8 @@ references:
   - name: ()
     fullName: ()
 - uid: System.Byte[]
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte[]
   name.vb: Byte()
   fullName: System.Byte[]
@@ -383,14 +393,14 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
 - uid: System.Diagnostics.SymbolStore.ISymbolNamespace[]

@@ -127,6 +127,7 @@ references:
   fullName: System.Security.Permissions.IsolatedStorageContainment
   type: Enum
 - uid: System.Security.Permissions.IsolatedStoragePermission
+  parent: System.Security.Permissions
   isExternal: false
   href: System.Security.Permissions.IsolatedStoragePermission.yml
   name: IsolatedStoragePermission
@@ -348,12 +349,14 @@ references:
   fullName: System.Security.Permissions.KeyContainerPermissionFlags
   type: Enum
 - uid: System.Security.Permissions.KeyContainerPermissionAccessEntry
+  parent: System.Security.Permissions
   isExternal: false
   href: System.Security.Permissions.KeyContainerPermissionAccessEntry.yml
   name: KeyContainerPermissionAccessEntry
   fullName: System.Security.Permissions.KeyContainerPermissionAccessEntry
   type: Class
 - uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  parent: System.Security.Permissions
   isExternal: false
   href: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.yml
   name: KeyContainerPermissionAccessEntryCollection

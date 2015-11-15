@@ -122,7 +122,7 @@ items:
   summary: >-
     Returns the row number of a metadata table entry that corresponds
 
-    to the specified <paramref name="handle" /> in the context of <paramref name="reader" />.
+    to the specified *handle* in the context of *reader*.
   syntax:
     content: public static int GetRowNumber(MetadataReader reader, EntityHandle handle)
     content.vb: Public Shared Function GetRowNumber(reader As MetadataReader, handle As EntityHandle) As Integer
@@ -136,7 +136,7 @@ items:
       description: One based row number.
   exceptions:
   - type: System.ArgumentException
-    description: The  is not a valid metadata table handle.
+    description: The *handle* is not a valid metadata table handle.
 - uid: System.Reflection.Metadata.Ecma335.MetadataTokens.GetHeapOffset(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Handle)
   id: GetHeapOffset(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Handle)
   parent: System.Reflection.Metadata.Ecma335.MetadataTokens
@@ -154,7 +154,7 @@ items:
   summary: >-
     Returns the offset of metadata heap data that corresponds
 
-    to the specified <paramref name="handle" /> in the context of <paramref name="reader" />.
+    to the specified *handle* in the context of *reader*.
   syntax:
     content: public static int GetHeapOffset(MetadataReader reader, Handle handle)
     content.vb: Public Shared Function GetHeapOffset(reader As MetadataReader, handle As Handle) As Integer
@@ -165,12 +165,12 @@ items:
       type: System.Reflection.Metadata.Handle
     return:
       type: System.Int32
-      description: Zero based offset, or -1 if <paramref name="handle" /> isn't a metadata heap handle.
+      description: Zero based offset, or -1 if *handle* isn't a metadata heap handle.
   exceptions:
   - type: System.NotSupportedException
-    description: The operation is not supported for the specified .
+    description: The operation is not supported for the specified *handle*.
   - type: System.ArgumentException
-    description: The  is invalid.
+    description: The *handle* is invalid.
 - uid: System.Reflection.Metadata.Ecma335.MetadataTokens.GetToken(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Handle)
   id: GetToken(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Handle)
   parent: System.Reflection.Metadata.Ecma335.MetadataTokens
@@ -185,7 +185,7 @@ items:
   assemblies:
   - System.Reflection.Metadata
   namespace: System.Reflection.Metadata.Ecma335
-  summary: Returns the metadata token of the specified <paramref name="handle" /> in the context of <paramref name="reader" />.
+  summary: Returns the metadata token of the specified *handle* in the context of *reader*.
   syntax:
     content: public static int GetToken(MetadataReader reader, Handle handle)
     content.vb: Public Shared Function GetToken(reader As MetadataReader, handle As Handle) As Integer
@@ -202,9 +202,9 @@ items:
     description: >-
       Handle represents a metadata entity that doesn't have a token.
 
-      A token can only be retrieved for a metadata table handle or a heap handle of type .
+      A token can only be retrieved for a metadata table handle or a heap handle of type @'System.Reflection.Metadata.HandleKind.UserString'.
   - type: System.NotSupportedException
-    description: The operation is not supported for the specified .
+    description: The operation is not supported for the specified *handle*.
 - uid: System.Reflection.Metadata.Ecma335.MetadataTokens.GetRowNumber(System.Reflection.Metadata.EntityHandle)
   id: GetRowNumber(System.Reflection.Metadata.EntityHandle)
   parent: System.Reflection.Metadata.Ecma335.MetadataTokens
@@ -222,7 +222,7 @@ items:
   summary: >-
     Returns the row number of a metadata table entry that corresponds
 
-    to the specified <paramref name="handle" />.
+    to the specified *handle*.
   syntax:
     content: public static int GetRowNumber(EntityHandle handle)
     content.vb: Public Shared Function GetRowNumber(handle As EntityHandle) As Integer
@@ -232,7 +232,7 @@ items:
     return:
       type: System.Int32
       description: >-
-        One based row number, or -1 if <paramref name="handle" /> can only be interpreted in a context of a specific @'System.Reflection.Metadata.MetadataReader'.
+        One based row number, or -1 if *handle* can only be interpreted in a context of a specific @'System.Reflection.Metadata.MetadataReader'.
 
         See @'System.Reflection.Metadata.Ecma335.MetadataTokens.GetRowNumber(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.EntityHandle)'.
 - uid: System.Reflection.Metadata.Ecma335.MetadataTokens.GetHeapOffset(System.Reflection.Metadata.Handle)
@@ -252,7 +252,7 @@ items:
   summary: >-
     Returns the offset of metadata heap data that corresponds
 
-    to the specified <paramref name="handle" />.
+    to the specified *handle*.
   syntax:
     content: public static int GetHeapOffset(Handle handle)
     content.vb: Public Shared Function GetHeapOffset(handle As Handle) As Integer
@@ -262,7 +262,7 @@ items:
     return:
       type: System.Int32
       description: >-
-        Zero based offset, or -1 if <paramref name="handle" /> can only be interpreted in a context of a specific @'System.Reflection.Metadata.MetadataReader'.
+        Zero based offset, or -1 if *handle* can only be interpreted in a context of a specific @'System.Reflection.Metadata.MetadataReader'.
 
         See @'System.Reflection.Metadata.Ecma335.MetadataTokens.GetHeapOffset(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Handle)'.
 - uid: System.Reflection.Metadata.Ecma335.MetadataTokens.GetToken(System.Reflection.Metadata.Handle)
@@ -279,7 +279,7 @@ items:
   assemblies:
   - System.Reflection.Metadata
   namespace: System.Reflection.Metadata.Ecma335
-  summary: Returns the metadata token of the specified <paramref name="handle" />.
+  summary: Returns the metadata token of the specified *handle*.
   syntax:
     content: public static int GetToken(Handle handle)
     content.vb: Public Shared Function GetToken(handle As Handle) As Integer
@@ -289,7 +289,7 @@ items:
     return:
       type: System.Int32
       description: >-
-        Metadata token, or 0 if <paramref name="handle" /> can only be interpreted in a context of a specific @'System.Reflection.Metadata.MetadataReader'.
+        Metadata token, or 0 if *handle* can only be interpreted in a context of a specific @'System.Reflection.Metadata.MetadataReader'.
 
         See @'System.Reflection.Metadata.Ecma335.MetadataTokens.GetToken(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Handle)'.
   exceptions:
@@ -297,7 +297,7 @@ items:
     description: >-
       Handle represents a metadata entity that doesn't have a token.
 
-      A token can only be retrieved for a metadata table handle or a heap handle of type .
+      A token can only be retrieved for a metadata table handle or a heap handle of type @'System.Reflection.Metadata.HandleKind.UserString'.
 - uid: System.Reflection.Metadata.Ecma335.MetadataTokens.TryGetTableIndex(System.Reflection.Metadata.HandleKind,System.Reflection.Metadata.Ecma335.TableIndex@)
   id: TryGetTableIndex(System.Reflection.Metadata.HandleKind,System.Reflection.Metadata.Ecma335.TableIndex@)
   parent: System.Reflection.Metadata.Ecma335.MetadataTokens
@@ -384,9 +384,9 @@ items:
   exceptions:
   - type: System.ArgumentException
     description: >-
-      is not a valid metadata token.
+      *token* is not a valid metadata token.
 
-      It must encode a metadata table entity or an offset in  heap.
+      It must encode a metadata table entity or an offset in @'System.Reflection.Metadata.HandleKind.UserString' heap.
 - uid: System.Reflection.Metadata.Ecma335.MetadataTokens.EntityHandle(System.Int32)
   id: EntityHandle(System.Int32)
   parent: System.Reflection.Metadata.Ecma335.MetadataTokens
@@ -412,7 +412,7 @@ items:
       type: System.Reflection.Metadata.EntityHandle
   exceptions:
   - type: System.ArgumentException
-    description: is not a valid metadata entity token.
+    description: '*token* is not a valid metadata entity token.'
 - uid: System.Reflection.Metadata.Ecma335.MetadataTokens.Handle(System.Reflection.Metadata.Ecma335.TableIndex,System.Int32)
   id: Handle(System.Reflection.Metadata.Ecma335.TableIndex,System.Int32)
   parent: System.Reflection.Metadata.Ecma335.MetadataTokens
@@ -440,7 +440,7 @@ items:
       type: System.Reflection.Metadata.EntityHandle
   exceptions:
   - type: System.ArgumentException
-    description: is not a valid table index.
+    description: '*tableIndex* is not a valid table index.'
 - uid: System.Reflection.Metadata.Ecma335.MetadataTokens.MethodDefinitionHandle(System.Int32)
   id: MethodDefinitionHandle(System.Int32)
   parent: System.Reflection.Metadata.Ecma335.MetadataTokens
@@ -1047,19 +1047,22 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1068,138 +1071,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1208,7 +1215,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1263,8 +1270,16 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
 - uid: System.Reflection.Metadata.MetadataReader
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.MetadataReader.yml
   name: MetadataReader
@@ -1281,15 +1296,23 @@ references:
   summary: Represents a metadata entity (type reference/definition/specification, method definition, custom attribute, etc.).
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Reflection.Metadata
   isExternal: false
   name: System.Reflection.Metadata
   fullName: System.Reflection.Metadata
   type: Namespace
 - uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  href: System.NotSupportedException.yml
+  name: NotSupportedException
+  fullName: System.NotSupportedException
+  type: Class
 - uid: System.Reflection.Metadata.Handle
   parent: System.Reflection.Metadata
   isExternal: false
@@ -1298,6 +1321,7 @@ references:
   fullName: System.Reflection.Metadata.Handle
   type: Struct
   summary: Represents any metadata entity (type reference/definition/specification, method definition, custom attribute, etc.) or value (string, blob, guid, user string).
+- uid: System.Reflection.Metadata.HandleKind.UserString
 - uid: System.Reflection.Metadata.Ecma335.MetadataTokens.GetRowNumber(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.EntityHandle)
 - uid: System.Reflection.Metadata.Ecma335.MetadataTokens.GetHeapOffset(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Handle)
 - uid: System.Reflection.Metadata.Ecma335.MetadataTokens.GetToken(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Handle)
@@ -1317,9 +1341,11 @@ references:
   type: Enum
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Reflection.Metadata.Ecma335.HeapIndex
   parent: System.Reflection.Metadata.Ecma335
   isExternal: false

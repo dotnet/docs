@@ -176,7 +176,7 @@ items:
   namespace: System.Threading.Tasks
   summary: Executes a for (For in Visual Basic) loop in which iterations may run in parallel.
   remarks: >-
-    The <paramref name="body" /> delegate is invoked once for each value in the iteration range:
+    The *body* delegate is invoked once for each value in the iteration range:
 
     [fromInclusive, toExclusive).  It is provided with the iteration count (an Int32) as a parameter.
   syntax:
@@ -218,7 +218,7 @@ items:
   namespace: System.Threading.Tasks
   summary: Executes a for (For in Visual Basic) loop with 64-bit indexes in which iterations may run in parallel.
   remarks: >-
-    The <paramref name="body" /> delegate is invoked once for each value in the iteration range:
+    The *body* delegate is invoked once for each value in the iteration range:
 
     [fromInclusive, toExclusive).  It is provided with the iteration count (an Int64) as a parameter.
   syntax:
@@ -260,7 +260,7 @@ items:
   namespace: System.Threading.Tasks
   summary: Executes a for (For in Visual Basic) loop in which iterations may run in parallel and loop options can be configured.
   remarks: >-
-    The <paramref name="body" /> delegate is invoked once for each value in the iteration range:
+    The *body* delegate is invoked once for each value in the iteration range:
 
     [fromInclusive, toExclusive).  It is provided with the iteration count (an Int32) as a parameter.
   syntax:
@@ -309,7 +309,7 @@ items:
   namespace: System.Threading.Tasks
   summary: Executes a for  (For in Visual Basic) loop with 64-bit indexes in which iterations may run in parallel and loop options can be configured.
   remarks: >-
-    The <paramref name="body" /> delegate is invoked once for each value in the iteration range:
+    The *body* delegate is invoked once for each value in the iteration range:
 
     [fromInclusive, toExclusive).  It is provided with the iteration count (an Int64) as a parameter.
   syntax:
@@ -360,7 +360,7 @@ items:
   remarks: >-
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each value in the iteration range:
+    The *body* delegate is invoked once for each value in the iteration range:
 
     [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int32),
 
@@ -448,7 +448,7 @@ items:
   namespace: System.Threading.Tasks
   summary: Executes a for (For in Visual Basic) loop with 64-bit indexes in which iterations may run in parallel and the state of the loop can be monitored and manipulated.
   remarks: >-
-    The <paramref name="body" /> delegate is invoked once for each value in the iteration range:
+    The *body* delegate is invoked once for each value in the iteration range:
 
     [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int64),
 
@@ -494,7 +494,7 @@ items:
   namespace: System.Threading.Tasks
   summary: Executes a for (For in Visual Basic) loop in which iterations may run in parallel, loop options can be configured, and the state of the loop can be monitored and manipulated.
   remarks: >-
-    The <paramref name="body" /> delegate is invoked once for each value in the iteration range:
+    The *body* delegate is invoked once for each value in the iteration range:
 
     [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int32),
 
@@ -547,7 +547,7 @@ items:
   namespace: System.Threading.Tasks
   summary: Executes a for (For in Visual Basic)  loop with 64-bit indexes in which iterations may run in parallel, loop options can be configured, and the state of the loop can be monitored and manipulated.
   remarks: >-
-    The <paramref name="body" /> delegate is invoked once for each value in the iteration range:
+    The *body* delegate is invoked once for each value in the iteration range:
 
     [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int64),
 
@@ -602,7 +602,7 @@ items:
   remarks: >-
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each value in the iteration range:
+    The *body* delegate is invoked once for each value in the iteration range:
 
     [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int32),
 
@@ -616,15 +616,15 @@ items:
 
     <para>
 
-    The <paramref name="localInit" /> delegate is invoked once for each thread that participates in the loop's
+    The *localInit* delegate is invoked once for each thread that participates in the loop's
 
     execution and returns the initial local state for each of those threads.  These initial states are passed to the first
 
-    <paramref name="body" /> invocations on each thread.  Then, every subsequent body invocation returns a possibly
+    *body* invocations on each thread.  Then, every subsequent body invocation returns a possibly
 
     modified state value that is passed to the next body invocation.  Finally, the last body invocation on each thread returns a state value
 
-    that is passed to the <paramref name="localFinally" /> delegate.  The localFinally delegate is invoked once per thread to perform a final
+    that is passed to the *localFinally* delegate.  The localFinally delegate is invoked once per thread to perform a final
 
     action on each thread's local state.
 
@@ -679,7 +679,7 @@ items:
   remarks: >-
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each value in the iteration range:
+    The *body* delegate is invoked once for each value in the iteration range:
 
     [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int64),
 
@@ -693,15 +693,15 @@ items:
 
     <para>
 
-    The <paramref name="localInit" /> delegate is invoked once for each thread that participates in the loop's
+    The *localInit* delegate is invoked once for each thread that participates in the loop's
 
     execution and returns the initial local state for each of those threads.  These initial states are passed to the first
 
-    <paramref name="body" /> invocations on each thread.  Then, every subsequent body invocation returns a possibly
+    *body* invocations on each thread.  Then, every subsequent body invocation returns a possibly
 
     modified state value that is passed to the next body invocation.  Finally, the last body invocation on each thread returns a state value
 
-    that is passed to the <paramref name="localFinally" /> delegate.  The localFinally delegate is invoked once per thread to perform a final
+    that is passed to the *localFinally* delegate.  The localFinally delegate is invoked once per thread to perform a final
 
     action on each thread's local state.
 
@@ -756,7 +756,7 @@ items:
   remarks: >-
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each value in the iteration range:
+    The *body* delegate is invoked once for each value in the iteration range:
 
     [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int32),
 
@@ -770,15 +770,15 @@ items:
 
     <para>
 
-    The <paramref name="localInit" /> delegate is invoked once for each thread that participates in the loop's
+    The *localInit* delegate is invoked once for each thread that participates in the loop's
 
     execution and returns the initial local state for each of those threads.  These initial states are passed to the first
 
-    <paramref name="body" /> invocations on each thread.  Then, every subsequent body invocation returns a possibly
+    *body* invocations on each thread.  Then, every subsequent body invocation returns a possibly
 
     modified state value that is passed to the next body invocation.  Finally, the last body invocation on each thread returns a state value
 
-    that is passed to the <paramref name="localFinally" /> delegate.  The localFinally delegate is invoked once per thread to perform a final
+    that is passed to the *localFinally* delegate.  The localFinally delegate is invoked once per thread to perform a final
 
     action on each thread's local state.
 
@@ -840,7 +840,7 @@ items:
   remarks: >-
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each value in the iteration range:
+    The *body* delegate is invoked once for each value in the iteration range:
 
     [fromInclusive, toExclusive).  It is provided with the following parameters: the iteration count (an Int64),
 
@@ -854,15 +854,15 @@ items:
 
     <para>
 
-    The <paramref name="localInit" /> delegate is invoked once for each thread that participates in the loop's
+    The *localInit* delegate is invoked once for each thread that participates in the loop's
 
     execution and returns the initial local state for each of those threads.  These initial states are passed to the first
 
-    <paramref name="body" /> invocations on each thread.  Then, every subsequent body invocation returns a possibly
+    *body* invocations on each thread.  Then, every subsequent body invocation returns a possibly
 
     modified state value that is passed to the next body invocation.  Finally, the last body invocation on each thread returns a state value
 
-    that is passed to the <paramref name="localFinally" /> delegate.  The localFinally delegate is invoked once per thread to perform a final
+    that is passed to the *localFinally* delegate.  The localFinally delegate is invoked once per thread to perform a final
 
     action on each thread's local state.
 
@@ -922,7 +922,7 @@ items:
   namespace: System.Threading.Tasks
   summary: Executes a foreach (For Each in Visual Basic) operation on an @'System.Collections.IEnumerable' in which iterations may run in parallel.
   remarks: >-
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     enumerable.  It is provided with the current element as a parameter.
   syntax:
@@ -964,7 +964,7 @@ items:
   namespace: System.Threading.Tasks
   summary: Executes a foreach (For Each in Visual Basic) operation on an @'System.Collections.IEnumerable' in which iterations may run in parallel and loop options can be configured.
   remarks: >-
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     enumerable.  It is provided with the current element as a parameter.
   syntax:
@@ -1013,7 +1013,7 @@ items:
   namespace: System.Threading.Tasks
   summary: Executes a foreach (For Each in Visual Basic) operation on an @'System.Collections.IEnumerable' in which iterations may run in parallel, and the state of the loop can be monitored and manipulated.
   remarks: >-
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     enumerable.  It is provided with the following parameters: the current element,
 
@@ -1059,7 +1059,7 @@ items:
   namespace: System.Threading.Tasks
   summary: Executes a foreach (For Each in Visual Basic) operation on an @'System.Collections.IEnumerable' in which iterations may run in parallel, loop options can be configured, and the state of the loop can be monitored and manipulated.
   remarks: >-
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     enumerable.  It is provided with the following parameters: the current element,
 
@@ -1112,7 +1112,7 @@ items:
   namespace: System.Threading.Tasks
   summary: Executes a foreach (For Each in Visual Basic) operation with 64-bit indexes on an @'System.Collections.IEnumerable' in which iterations may run in parallel, and the state of the loop can be monitored and manipulated.
   remarks: >-
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     enumerable.  It is provided with the following parameters: the current element,
 
@@ -1158,7 +1158,7 @@ items:
   namespace: System.Threading.Tasks
   summary: Executes a foreach (For Each in Visual Basic) operation with 64-bit indexes on an @'System.Collections.IEnumerable' in which iterations may run in parallel, loop options can be configured, and the state of the loop can be monitored and manipulated.
   remarks: >-
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     enumerable.  It is provided with the following parameters: the current element,
 
@@ -1213,7 +1213,7 @@ items:
   remarks: >-
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     enumerable.  It is provided with the following parameters: the current element,
 
@@ -1227,15 +1227,15 @@ items:
 
     <para>
 
-    The <paramref name="localInit" /> delegate is invoked once for each thread that participates in the loop's
+    The *localInit* delegate is invoked once for each thread that participates in the loop's
 
     execution and returns the initial local state for each of those threads.  These initial states are passed to the first
 
-    <paramref name="body" /> invocations on each thread.  Then, every subsequent body invocation returns a possibly
+    *body* invocations on each thread.  Then, every subsequent body invocation returns a possibly
 
     modified state value that is passed to the next body invocation.  Finally, the last body invocation on each thread returns a state value
 
-    that is passed to the <paramref name="localFinally" /> delegate.  The localFinally delegate is invoked once per thread to perform a final
+    that is passed to the *localFinally* delegate.  The localFinally delegate is invoked once per thread to perform a final
 
     action on each thread's local state.
 
@@ -1289,7 +1289,7 @@ items:
   remarks: >-
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     enumerable.  It is provided with the following parameters: the current element,
 
@@ -1303,15 +1303,15 @@ items:
 
     <para>
 
-    The <paramref name="localInit" /> delegate is invoked once for each thread that participates in the loop's
+    The *localInit* delegate is invoked once for each thread that participates in the loop's
 
     execution and returns the initial local state for each of those threads.  These initial states are passed to the first
 
-    <paramref name="body" /> invocations on each thread.  Then, every subsequent body invocation returns a possibly
+    *body* invocations on each thread.  Then, every subsequent body invocation returns a possibly
 
     modified state value that is passed to the next body invocation.  Finally, the last body invocation on each thread returns a state value
 
-    that is passed to the <paramref name="localFinally" /> delegate.  The localFinally delegate is invoked once per thread to perform a final
+    that is passed to the *localFinally* delegate.  The localFinally delegate is invoked once per thread to perform a final
 
     action on each thread's local state.
 
@@ -1372,7 +1372,7 @@ items:
   remarks: >-
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     enumerable.  It is provided with the following parameters: the current element,
 
@@ -1386,15 +1386,15 @@ items:
 
     <para>
 
-    The <paramref name="localInit" /> delegate is invoked once for each thread that participates in the loop's
+    The *localInit* delegate is invoked once for each thread that participates in the loop's
 
     execution and returns the initial local state for each of those threads.  These initial states are passed to the first
 
-    <paramref name="body" /> invocations on each thread.  Then, every subsequent body invocation returns a possibly
+    *body* invocations on each thread.  Then, every subsequent body invocation returns a possibly
 
     modified state value that is passed to the next body invocation.  Finally, the last body invocation on each thread returns a state value
 
-    that is passed to the <paramref name="localFinally" /> delegate.  The localFinally delegate is invoked once per thread to perform a final
+    that is passed to the *localFinally* delegate.  The localFinally delegate is invoked once per thread to perform a final
 
     action on each thread's local state.
 
@@ -1448,7 +1448,7 @@ items:
   remarks: >-
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     enumerable.  It is provided with the following parameters: the current element,
 
@@ -1462,15 +1462,15 @@ items:
 
     <para>
 
-    The <paramref name="localInit" /> delegate is invoked once for each thread that participates in the loop's
+    The *localInit* delegate is invoked once for each thread that participates in the loop's
 
     execution and returns the initial local state for each of those threads.  These initial states are passed to the first
 
-    <paramref name="body" /> invocations on each thread.  Then, every subsequent body invocation returns a possibly
+    *body* invocations on each thread.  Then, every subsequent body invocation returns a possibly
 
     modified state value that is passed to the next body invocation.  Finally, the last body invocation on each thread returns a state value
 
-    that is passed to the <paramref name="localFinally" /> delegate.  The localFinally delegate is invoked once per thread to perform a final
+    that is passed to the *localFinally* delegate.  The localFinally delegate is invoked once per thread to perform a final
 
     action on each thread's local state.
 
@@ -1541,7 +1541,7 @@ items:
 
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     Partitioner.  It is provided with the current element as a parameter.
 
@@ -1558,7 +1558,7 @@ items:
       description: The delegate that is invoked once per iteration.
     typeParameters:
     - id: TSource
-      description: The type of the elements in <paramref name="source" />.
+      description: The type of the elements in *source*.
     return:
       type: System.Threading.Tasks.ParallelLoopResult
       description: A structure that contains information about which portion of the loop completed.
@@ -1597,7 +1597,7 @@ items:
 
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     Partitioner.  It is provided with the following parameters: the current element,
 
@@ -1618,7 +1618,7 @@ items:
       description: The delegate that is invoked once per iteration.
     typeParameters:
     - id: TSource
-      description: The type of the elements in <paramref name="source" />.
+      description: The type of the elements in *source*.
     return:
       type: System.Threading.Tasks.ParallelLoopResult
       description: A structure that contains information about which portion of the loop completed.
@@ -1657,7 +1657,7 @@ items:
 
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     Partitioner.  It is provided with the following parameters: the current element,
 
@@ -1678,7 +1678,7 @@ items:
       description: The delegate that is invoked once per iteration.
     typeParameters:
     - id: TSource
-      description: The type of the elements in <paramref name="source" />.
+      description: The type of the elements in *source*.
     return:
       type: System.Threading.Tasks.ParallelLoopResult
       description: A structure that contains information about which portion of the loop completed.
@@ -1717,7 +1717,7 @@ items:
 
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     Partitioner.  It is provided with the following parameters: the current element,
 
@@ -1731,15 +1731,15 @@ items:
 
     <para>
 
-    The <paramref name="localInit" /> delegate is invoked once for each thread that participates in the loop's
+    The *localInit* delegate is invoked once for each thread that participates in the loop's
 
     execution and returns the initial local state for each of those threads.  These initial states are passed to the first
 
-    <paramref name="body" /> invocations on each thread.  Then, every subsequent body invocation returns a possibly
+    *body* invocations on each thread.  Then, every subsequent body invocation returns a possibly
 
     modified state value that is passed to the next body invocation.  Finally, the last body invocation on each thread returns a state value
 
-    that is passed to the <paramref name="localFinally" /> delegate.  The localFinally delegate is invoked once per thread to perform a final
+    that is passed to the *localFinally* delegate.  The localFinally delegate is invoked once per thread to perform a final
 
     action on each thread's local state.
 
@@ -1762,7 +1762,7 @@ items:
       description: The delegate that performs a final action on the local state of each task.
     typeParameters:
     - id: TSource
-      description: The type of the elements in <paramref name="source" />.
+      description: The type of the elements in *source*.
     - id: TLocal
       description: The type of the thread-local data.
     return:
@@ -1805,7 +1805,7 @@ items:
 
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     Partitioner.  It is provided with the following parameters: the current element,
 
@@ -1819,15 +1819,15 @@ items:
 
     <para>
 
-    The <paramref name="localInit" /> delegate is invoked once for each thread that participates in the loop's
+    The *localInit* delegate is invoked once for each thread that participates in the loop's
 
     execution and returns the initial local state for each of those threads.  These initial states are passed to the first
 
-    <paramref name="body" /> invocations on each thread.  Then, every subsequent body invocation returns a possibly
+    *body* invocations on each thread.  Then, every subsequent body invocation returns a possibly
 
     modified state value that is passed to the next body invocation.  Finally, the last body invocation on each thread returns a state value
 
-    that is passed to the <paramref name="localFinally" /> delegate.  The localFinally delegate is invoked once per thread to perform a final
+    that is passed to the *localFinally* delegate.  The localFinally delegate is invoked once per thread to perform a final
 
     action on each thread's local state.
 
@@ -1850,7 +1850,7 @@ items:
       description: The delegate that performs a final action on the local state of each task.
     typeParameters:
     - id: TSource
-      description: The type of the elements in <paramref name="source" />.
+      description: The type of the elements in *source*.
     - id: TLocal
       description: The type of the thread-local data.
     return:
@@ -1893,7 +1893,7 @@ items:
 
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     Partitioner.  It is provided with the current element as a parameter.
 
@@ -1913,7 +1913,7 @@ items:
       description: The delegate that is invoked once per iteration.
     typeParameters:
     - id: TSource
-      description: The type of the elements in <paramref name="source" />.
+      description: The type of the elements in *source*.
     return:
       type: System.Threading.Tasks.ParallelLoopResult
       description: A structure that contains information about which portion of the loop completed.
@@ -1956,7 +1956,7 @@ items:
 
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     Partitioner.  It is provided with the following parameters: the current element,
 
@@ -1980,7 +1980,7 @@ items:
       description: The delegate that is invoked once per iteration.
     typeParameters:
     - id: TSource
-      description: The type of the elements in <paramref name="source" />.
+      description: The type of the elements in *source*.
     return:
       type: System.Threading.Tasks.ParallelLoopResult
       description: A  structure that contains information about which portion of the loop completed.
@@ -2023,7 +2023,7 @@ items:
 
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     Partitioner.  It is provided with the following parameters: the current element,
 
@@ -2047,7 +2047,7 @@ items:
       description: The delegate that is invoked once per iteration.
     typeParameters:
     - id: TSource
-      description: The type of the elements in <paramref name="source" />.
+      description: The type of the elements in *source*.
     return:
       type: System.Threading.Tasks.ParallelLoopResult
       description: A structure that contains information about which portion of the loop completed.
@@ -2090,7 +2090,7 @@ items:
 
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     Partitioner.  It is provided with the following parameters: the current element,
 
@@ -2104,15 +2104,15 @@ items:
 
     <para>
 
-    The <paramref name="localInit" /> delegate is invoked once for each thread that participates in the loop's
+    The *localInit* delegate is invoked once for each thread that participates in the loop's
 
     execution and returns the initial local state for each of those threads.  These initial states are passed to the first
 
-    <paramref name="body" /> invocations on each thread.  Then, every subsequent body invocation returns a possibly
+    *body* invocations on each thread.  Then, every subsequent body invocation returns a possibly
 
     modified state value that is passed to the next body invocation.  Finally, the last body invocation on each thread returns a state value
 
-    that is passed to the <paramref name="localFinally" /> delegate.  The localFinally delegate is invoked once per thread to perform a final
+    that is passed to the *localFinally* delegate.  The localFinally delegate is invoked once per thread to perform a final
 
     action on each thread's local state.
 
@@ -2138,7 +2138,7 @@ items:
       description: The delegate that performs a final action on the local state of each task.
     typeParameters:
     - id: TSource
-      description: The type of the elements in <paramref name="source" />.
+      description: The type of the elements in *source*.
     - id: TLocal
       description: The type of the thread-local data.
     return:
@@ -2185,7 +2185,7 @@ items:
 
     <para>
 
-    The <paramref name="body" /> delegate is invoked once for each element in the <paramref name="source" />
+    The *body* delegate is invoked once for each element in the *source*
 
     Partitioner.  It is provided with the following parameters: the current element,
 
@@ -2199,15 +2199,15 @@ items:
 
     <para>
 
-    The <paramref name="localInit" /> delegate is invoked once for each thread that participates in the loop's
+    The *localInit* delegate is invoked once for each thread that participates in the loop's
 
     execution and returns the initial local state for each of those threads.  These initial states are passed to the first
 
-    <paramref name="body" /> invocations on each thread.  Then, every subsequent body invocation returns a possibly
+    *body* invocations on each thread.  Then, every subsequent body invocation returns a possibly
 
     modified state value that is passed to the next body invocation.  Finally, the last body invocation on each thread returns a state value
 
-    that is passed to the <paramref name="localFinally" /> delegate.  The localFinally delegate is invoked once per thread to perform a final
+    that is passed to the *localFinally* delegate.  The localFinally delegate is invoked once per thread to perform a final
 
     action on each thread's local state.
 
@@ -2233,7 +2233,7 @@ items:
       description: The delegate that performs a final action on the local state of each task.
     typeParameters:
     - id: TSource
-      description: The type of the elements in <paramref name="source" />.
+      description: The type of the elements in *source*.
     - id: TLocal
       description: The type of the thread-local data.
     return:
@@ -2265,19 +2265,22 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2286,138 +2289,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2426,7 +2433,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2481,12 +2488,38 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Action
+  parent: System
+  isExternal: false
+  href: System.Action.yml
+  name: Action
+  fullName: System.Action
+  type: Delegate
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
 - uid: System.AggregateException
+  parent: System
+  isExternal: false
+  href: System.AggregateException.yml
+  name: AggregateException
+  fullName: System.AggregateException
+  type: Class
+  summary: Represents one or more errors that occur during application execution.
 - uid: System.Action[]
-  isExternal: true
+  isExternal: false
+  href: System.Action.yml
   name: Action[]
   name.vb: Action()
   fullName: System.Action[]
@@ -2495,17 +2528,34 @@ references:
   - uid: System.Action
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Action
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action.yml
   - name: ()
     fullName: ()
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.CancellationToken.yml
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+  type: Struct
+  summary: Propagates notification that operations should be canceled.
+- uid: System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.CancellationTokenSource.yml
+  name: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+  type: Class
+  summary: Signals to a @'System.Threading.CancellationToken' that it should be canceled.
 - uid: System.Threading.Tasks.ParallelOptions
+  parent: System.Threading.Tasks
   isExternal: false
   href: System.Threading.Tasks.ParallelOptions.yml
   name: ParallelOptions
@@ -2516,7 +2566,23 @@ references:
 
     @'System.Threading.Tasks.Parallel' class.
 - uid: System.OperationCanceledException
+  parent: System
+  isExternal: false
+  href: System.OperationCanceledException.yml
+  name: OperationCanceledException
+  fullName: System.OperationCanceledException
+  type: Class
 - uid: System.ObjectDisposedException
+  isExternal: false
+  href: System.ObjectDisposedException.yml
+  name: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+  type: Class
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+  type: Namespace
 - uid: System.Threading.Tasks.ParallelLoopResult
   parent: System.Threading.Tasks
   isExternal: false
@@ -2527,12 +2593,15 @@ references:
   summary: Provides completion status on the execution of a @'System.Threading.Tasks.Parallel' loop.
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Action{System.Int32}
   parent: System
   definition: System.Action`1
+  href: System.Action`1.yml
   name: Action<Int32>
   name.vb: Action(Of Int32)
   fullName: System.Action<System.Int32>
@@ -2541,40 +2610,42 @@ references:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: <
     fullName: <
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.Action`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Action`1.yml
   name: Action<T>
   name.vb: Action(Of T)
   fullName: System.Action<T>
   fullName.vb: System.Action(Of T)
+  type: Delegate
   spec.csharp:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: <
     fullName: <
   - name: T
@@ -2585,7 +2656,7 @@ references:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -2594,12 +2665,15 @@ references:
     fullName: )
 - uid: System.Int64
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int64.yml
   name: Int64
   fullName: System.Int64
+  type: Struct
 - uid: System.Action{System.Int64}
   parent: System
   definition: System.Action`1
+  href: System.Action`1.yml
   name: Action<Int64>
   name.vb: Action(Of Int64)
   fullName: System.Action<System.Int64>
@@ -2608,26 +2682,26 @@ references:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: <
     fullName: <
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: )
     fullName: )
 - uid: System.Threading.Tasks.ParallelLoopState
@@ -2646,7 +2720,7 @@ references:
 - uid: System.Action{System.Int32,System.Threading.Tasks.ParallelLoopState}
   parent: System
   definition: System.Action`2
-  href: System.Threading.Tasks.ParallelLoopState.yml
+  href: System.Action`2.yml
   name: Action<Int32, ParallelLoopState>
   name.vb: Action(Of Int32, ParallelLoopState)
   fullName: System.Action<System.Int32, System.Threading.Tasks.ParallelLoopState>
@@ -2655,13 +2729,13 @@ references:
   - uid: System.Action`2
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`2.yml
   - name: <
     fullName: <
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Threading.Tasks.ParallelLoopState
@@ -2674,13 +2748,13 @@ references:
   - uid: System.Action`2
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`2.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Threading.Tasks.ParallelLoopState
@@ -2691,16 +2765,18 @@ references:
     fullName: )
 - uid: System.Action`2
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Action`2.yml
   name: Action<T1, T2>
   name.vb: Action(Of T1, T2)
   fullName: System.Action<T1, T2>
   fullName.vb: System.Action(Of T1, T2)
+  type: Delegate
   spec.csharp:
   - uid: System.Action`2
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`2.yml
   - name: <
     fullName: <
   - name: T1
@@ -2715,7 +2791,7 @@ references:
   - uid: System.Action`2
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1
@@ -2729,7 +2805,7 @@ references:
 - uid: System.Action{System.Int64,System.Threading.Tasks.ParallelLoopState}
   parent: System
   definition: System.Action`2
-  href: System.Threading.Tasks.ParallelLoopState.yml
+  href: System.Action`2.yml
   name: Action<Int64, ParallelLoopState>
   name.vb: Action(Of Int64, ParallelLoopState)
   fullName: System.Action<System.Int64, System.Threading.Tasks.ParallelLoopState>
@@ -2738,13 +2814,13 @@ references:
   - uid: System.Action`2
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`2.yml
   - name: <
     fullName: <
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: ', '
     fullName: ', '
   - uid: System.Threading.Tasks.ParallelLoopState
@@ -2757,13 +2833,13 @@ references:
   - uid: System.Action`2
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`2.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: ', '
     fullName: ', '
   - uid: System.Threading.Tasks.ParallelLoopState
@@ -2775,6 +2851,7 @@ references:
 - uid: System.Func{{TLocal}}
   parent: System
   definition: System.Func`1
+  href: System.Func`1.yml
   name: Func<TLocal>
   name.vb: Func(Of TLocal)
   fullName: System.Func<TLocal>
@@ -2783,7 +2860,7 @@ references:
   - uid: System.Func`1
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`1.yml
   - name: <
     fullName: <
   - name: TLocal
@@ -2794,7 +2871,7 @@ references:
   - uid: System.Func`1
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TLocal
@@ -2804,7 +2881,7 @@ references:
 - uid: System.Func{System.Int32,System.Threading.Tasks.ParallelLoopState,{TLocal},{TLocal}}
   parent: System
   definition: System.Func`4
-  href: System.Threading.Tasks.ParallelLoopState.yml
+  href: System.Func`4.yml
   name: Func<Int32, ParallelLoopState, TLocal, TLocal>
   name.vb: Func(Of Int32, ParallelLoopState, TLocal, TLocal)
   fullName: System.Func<System.Int32, System.Threading.Tasks.ParallelLoopState, TLocal, TLocal>
@@ -2813,13 +2890,13 @@ references:
   - uid: System.Func`4
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`4.yml
   - name: <
     fullName: <
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Threading.Tasks.ParallelLoopState
@@ -2840,13 +2917,13 @@ references:
   - uid: System.Func`4
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`4.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Threading.Tasks.ParallelLoopState
@@ -2866,6 +2943,7 @@ references:
 - uid: System.Action{{TLocal}}
   parent: System
   definition: System.Action`1
+  href: System.Action`1.yml
   name: Action<TLocal>
   name.vb: Action(Of TLocal)
   fullName: System.Action<TLocal>
@@ -2874,7 +2952,7 @@ references:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: <
     fullName: <
   - name: TLocal
@@ -2885,7 +2963,7 @@ references:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TLocal
@@ -2894,16 +2972,18 @@ references:
     fullName: )
 - uid: System.Func`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`1.yml
   name: Func<TResult>
   name.vb: Func(Of TResult)
   fullName: System.Func<TResult>
   fullName.vb: System.Func(Of TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`1
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`1.yml
   - name: <
     fullName: <
   - name: TResult
@@ -2914,7 +2994,7 @@ references:
   - uid: System.Func`1
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TResult
@@ -2923,16 +3003,18 @@ references:
     fullName: )
 - uid: System.Func`4
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`4.yml
   name: Func<T1, T2, T3, TResult>
   name.vb: Func(Of T1, T2, T3, TResult)
   fullName: System.Func<T1, T2, T3, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`4
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`4.yml
   - name: <
     fullName: <
   - name: T1
@@ -2955,7 +3037,7 @@ references:
   - uid: System.Func`4
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`4.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1
@@ -2977,7 +3059,7 @@ references:
 - uid: System.Func{System.Int64,System.Threading.Tasks.ParallelLoopState,{TLocal},{TLocal}}
   parent: System
   definition: System.Func`4
-  href: System.Threading.Tasks.ParallelLoopState.yml
+  href: System.Func`4.yml
   name: Func<Int64, ParallelLoopState, TLocal, TLocal>
   name.vb: Func(Of Int64, ParallelLoopState, TLocal, TLocal)
   fullName: System.Func<System.Int64, System.Threading.Tasks.ParallelLoopState, TLocal, TLocal>
@@ -2986,13 +3068,13 @@ references:
   - uid: System.Func`4
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`4.yml
   - name: <
     fullName: <
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: ', '
     fullName: ', '
   - uid: System.Threading.Tasks.ParallelLoopState
@@ -3013,13 +3095,13 @@ references:
   - uid: System.Func`4
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`4.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: ', '
     fullName: ', '
   - uid: System.Threading.Tasks.ParallelLoopState
@@ -3040,6 +3122,7 @@ references:
 - uid: System.Collections.Generic.IEnumerable{{TSource}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<TSource>
   name.vb: IEnumerable(Of TSource)
   fullName: System.Collections.Generic.IEnumerable<TSource>
@@ -3048,7 +3131,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: TSource
@@ -3059,7 +3142,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -3069,6 +3152,7 @@ references:
 - uid: System.Action{{TSource}}
   parent: System
   definition: System.Action`1
+  href: System.Action`1.yml
   name: Action<TSource>
   name.vb: Action(Of TSource)
   fullName: System.Action<TSource>
@@ -3077,7 +3161,7 @@ references:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: <
     fullName: <
   - name: TSource
@@ -3088,7 +3172,7 @@ references:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -3097,16 +3181,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -3117,7 +3203,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -3128,10 +3214,11 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Action{{TSource},System.Threading.Tasks.ParallelLoopState}
   parent: System
   definition: System.Action`2
-  href: System.Threading.Tasks.ParallelLoopState.yml
+  href: System.Action`2.yml
   name: Action<TSource, ParallelLoopState>
   name.vb: Action(Of TSource, ParallelLoopState)
   fullName: System.Action<TSource, System.Threading.Tasks.ParallelLoopState>
@@ -3140,7 +3227,7 @@ references:
   - uid: System.Action`2
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`2.yml
   - name: <
     fullName: <
   - name: TSource
@@ -3157,7 +3244,7 @@ references:
   - uid: System.Action`2
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -3173,7 +3260,7 @@ references:
 - uid: System.Action{{TSource},System.Threading.Tasks.ParallelLoopState,System.Int64}
   parent: System
   definition: System.Action`3
-  href: System.Threading.Tasks.ParallelLoopState.yml
+  href: System.Action`3.yml
   name: Action<TSource, ParallelLoopState, Int64>
   name.vb: Action(Of TSource, ParallelLoopState, Int64)
   fullName: System.Action<TSource, System.Threading.Tasks.ParallelLoopState, System.Int64>
@@ -3182,7 +3269,7 @@ references:
   - uid: System.Action`3
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`3.yml
   - name: <
     fullName: <
   - name: TSource
@@ -3198,14 +3285,14 @@ references:
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Action`3
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`3.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -3221,21 +3308,23 @@ references:
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: )
     fullName: )
 - uid: System.Action`3
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Action`3.yml
   name: Action<T1, T2, T3>
   name.vb: Action(Of T1, T2, T3)
   fullName: System.Action<T1, T2, T3>
   fullName.vb: System.Action(Of T1, T2, T3)
+  type: Delegate
   spec.csharp:
   - uid: System.Action`3
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`3.yml
   - name: <
     fullName: <
   - name: T1
@@ -3254,7 +3343,7 @@ references:
   - uid: System.Action`3
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`3.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1
@@ -3272,7 +3361,7 @@ references:
 - uid: System.Func{{TSource},System.Threading.Tasks.ParallelLoopState,{TLocal},{TLocal}}
   parent: System
   definition: System.Func`4
-  href: System.Threading.Tasks.ParallelLoopState.yml
+  href: System.Func`4.yml
   name: Func<TSource, ParallelLoopState, TLocal, TLocal>
   name.vb: Func(Of TSource, ParallelLoopState, TLocal, TLocal)
   fullName: System.Func<TSource, System.Threading.Tasks.ParallelLoopState, TLocal, TLocal>
@@ -3281,7 +3370,7 @@ references:
   - uid: System.Func`4
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`4.yml
   - name: <
     fullName: <
   - name: TSource
@@ -3306,7 +3395,7 @@ references:
   - uid: System.Func`4
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`4.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -3330,7 +3419,7 @@ references:
 - uid: System.Func{{TSource},System.Threading.Tasks.ParallelLoopState,System.Int64,{TLocal},{TLocal}}
   parent: System
   definition: System.Func`5
-  href: System.Threading.Tasks.ParallelLoopState.yml
+  href: System.Func`5.yml
   name: Func<TSource, ParallelLoopState, Int64, TLocal, TLocal>
   name.vb: Func(Of TSource, ParallelLoopState, Int64, TLocal, TLocal)
   fullName: System.Func<TSource, System.Threading.Tasks.ParallelLoopState, System.Int64, TLocal, TLocal>
@@ -3339,7 +3428,7 @@ references:
   - uid: System.Func`5
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`5.yml
   - name: <
     fullName: <
   - name: TSource
@@ -3355,7 +3444,7 @@ references:
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: ', '
     fullName: ', '
   - name: TLocal
@@ -3370,7 +3459,7 @@ references:
   - uid: System.Func`5
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`5.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -3386,7 +3475,7 @@ references:
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: ', '
     fullName: ', '
   - name: TLocal
@@ -3399,16 +3488,18 @@ references:
     fullName: )
 - uid: System.Func`5
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`5.yml
   name: Func<T1, T2, T3, T4, TResult>
   name.vb: Func(Of T1, T2, T3, T4, TResult)
   fullName: System.Func<T1, T2, T3, T4, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`5
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`5.yml
   - name: <
     fullName: <
   - name: T1
@@ -3435,7 +3526,7 @@ references:
   - uid: System.Func`5
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`5.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1
@@ -3461,9 +3552,16 @@ references:
 - uid: System.Collections.Concurrent.Partitioner{TSource}
 - uid: System.Collections.Concurrent.OrderablePartitioner
 - uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
 - uid: System.Collections.Concurrent.Partitioner{{TSource}}
   parent: System.Collections.Concurrent
   definition: System.Collections.Concurrent.Partitioner`1
+  href: System.Collections.Concurrent.Partitioner`1.yml
   name: Partitioner<TSource>
   name.vb: Partitioner(Of TSource)
   fullName: System.Collections.Concurrent.Partitioner<TSource>
@@ -3472,7 +3570,7 @@ references:
   - uid: System.Collections.Concurrent.Partitioner`1
     name: Partitioner
     fullName: System.Collections.Concurrent.Partitioner
-    isExternal: true
+    href: System.Collections.Concurrent.Partitioner`1.yml
   - name: <
     fullName: <
   - name: TSource
@@ -3483,7 +3581,7 @@ references:
   - uid: System.Collections.Concurrent.Partitioner`1
     name: Partitioner
     fullName: System.Collections.Concurrent.Partitioner
-    isExternal: true
+    href: System.Collections.Concurrent.Partitioner`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -3492,16 +3590,19 @@ references:
     fullName: )
 - uid: System.Collections.Concurrent.Partitioner`1
   parent: System.Collections.Concurrent
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Concurrent.Partitioner`1.yml
   name: Partitioner<TSource>
   name.vb: Partitioner(Of TSource)
   fullName: System.Collections.Concurrent.Partitioner<TSource>
   fullName.vb: System.Collections.Concurrent.Partitioner(Of TSource)
+  type: Class
+  summary: Represents a particular manner of splitting a data source into multiple partitions.
   spec.csharp:
   - uid: System.Collections.Concurrent.Partitioner`1
     name: Partitioner
     fullName: System.Collections.Concurrent.Partitioner
-    isExternal: true
+    href: System.Collections.Concurrent.Partitioner`1.yml
   - name: <
     fullName: <
   - name: TSource
@@ -3512,7 +3613,7 @@ references:
   - uid: System.Collections.Concurrent.Partitioner`1
     name: Partitioner
     fullName: System.Collections.Concurrent.Partitioner
-    isExternal: true
+    href: System.Collections.Concurrent.Partitioner`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -3523,10 +3624,12 @@ references:
   isExternal: false
   name: System.Collections.Concurrent
   fullName: System.Collections.Concurrent
+  type: Namespace
 - uid: System.Collections.Concurrent.OrderablePartitioner{TSource}
 - uid: System.Collections.Concurrent.OrderablePartitioner{{TSource}}
   parent: System.Collections.Concurrent
   definition: System.Collections.Concurrent.OrderablePartitioner`1
+  href: System.Collections.Concurrent.OrderablePartitioner`1.yml
   name: OrderablePartitioner<TSource>
   name.vb: OrderablePartitioner(Of TSource)
   fullName: System.Collections.Concurrent.OrderablePartitioner<TSource>
@@ -3535,7 +3638,7 @@ references:
   - uid: System.Collections.Concurrent.OrderablePartitioner`1
     name: OrderablePartitioner
     fullName: System.Collections.Concurrent.OrderablePartitioner
-    isExternal: true
+    href: System.Collections.Concurrent.OrderablePartitioner`1.yml
   - name: <
     fullName: <
   - name: TSource
@@ -3546,7 +3649,7 @@ references:
   - uid: System.Collections.Concurrent.OrderablePartitioner`1
     name: OrderablePartitioner
     fullName: System.Collections.Concurrent.OrderablePartitioner
-    isExternal: true
+    href: System.Collections.Concurrent.OrderablePartitioner`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -3555,16 +3658,19 @@ references:
     fullName: )
 - uid: System.Collections.Concurrent.OrderablePartitioner`1
   parent: System.Collections.Concurrent
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Concurrent.OrderablePartitioner`1.yml
   name: OrderablePartitioner<TSource>
   name.vb: OrderablePartitioner(Of TSource)
   fullName: System.Collections.Concurrent.OrderablePartitioner<TSource>
   fullName.vb: System.Collections.Concurrent.OrderablePartitioner(Of TSource)
+  type: Class
+  summary: Represents a particular manner of splitting an orderable data source into multiple partitions.
   spec.csharp:
   - uid: System.Collections.Concurrent.OrderablePartitioner`1
     name: OrderablePartitioner
     fullName: System.Collections.Concurrent.OrderablePartitioner
-    isExternal: true
+    href: System.Collections.Concurrent.OrderablePartitioner`1.yml
   - name: <
     fullName: <
   - name: TSource
@@ -3575,7 +3681,7 @@ references:
   - uid: System.Collections.Concurrent.OrderablePartitioner`1
     name: OrderablePartitioner
     fullName: System.Collections.Concurrent.OrderablePartitioner
-    isExternal: true
+    href: System.Collections.Concurrent.OrderablePartitioner`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource

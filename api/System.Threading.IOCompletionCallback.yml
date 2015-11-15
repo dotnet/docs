@@ -36,11 +36,14 @@ references:
   isExternal: false
   name: System.Threading
   fullName: System.Threading
+  type: Namespace
 - uid: System.UInt32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.UInt32.yml
   name: UInt32
   fullName: System.UInt32
+  type: Struct
 - uid: System.Threading.NativeOverlapped*
   isExternal: false
   href: System.Threading.NativeOverlapped.yml
@@ -64,3 +67,4 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

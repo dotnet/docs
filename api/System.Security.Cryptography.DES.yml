@@ -227,59 +227,73 @@ references:
   isExternal: false
   name: System.Security.Cryptography
   fullName: System.Security.Cryptography
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Security.Cryptography.SymmetricAlgorithm
   parent: System.Security.Cryptography
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: SymmetricAlgorithm
   fullName: System.Security.Cryptography.SymmetricAlgorithm
+  type: Class
 - uid: System.Security.Cryptography.SymmetricAlgorithm.BlockSizeValue
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: BlockSizeValue
   fullName: System.Security.Cryptography.SymmetricAlgorithm.BlockSizeValue
 - uid: System.Security.Cryptography.SymmetricAlgorithm.FeedbackSizeValue
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: FeedbackSizeValue
   fullName: System.Security.Cryptography.SymmetricAlgorithm.FeedbackSizeValue
 - uid: System.Security.Cryptography.SymmetricAlgorithm.IVValue
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: IVValue
   fullName: System.Security.Cryptography.SymmetricAlgorithm.IVValue
 - uid: System.Security.Cryptography.SymmetricAlgorithm.KeyValue
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: KeyValue
   fullName: System.Security.Cryptography.SymmetricAlgorithm.KeyValue
 - uid: System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizesValue
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: LegalBlockSizesValue
   fullName: System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizesValue
 - uid: System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizesValue
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: LegalKeySizesValue
   fullName: System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizesValue
 - uid: System.Security.Cryptography.SymmetricAlgorithm.KeySizeValue
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: KeySizeValue
   fullName: System.Security.Cryptography.SymmetricAlgorithm.KeySizeValue
 - uid: System.Security.Cryptography.SymmetricAlgorithm.ModeValue
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: ModeValue
   fullName: System.Security.Cryptography.SymmetricAlgorithm.ModeValue
 - uid: System.Security.Cryptography.SymmetricAlgorithm.PaddingValue
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: PaddingValue
   fullName: System.Security.Cryptography.SymmetricAlgorithm.PaddingValue
 - uid: System.Security.Cryptography.SymmetricAlgorithm.System#IDisposable#Dispose
@@ -309,14 +323,15 @@ references:
     fullName: )
 - uid: System.Security.Cryptography.SymmetricAlgorithm.Dispose
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: Dispose()
   fullName: System.Security.Cryptography.SymmetricAlgorithm.Dispose()
   spec.csharp:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.Dispose
     name: Dispose
     fullName: System.Security.Cryptography.SymmetricAlgorithm.Dispose
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - name: )
@@ -325,21 +340,22 @@ references:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.Dispose
     name: Dispose
     fullName: System.Security.Cryptography.SymmetricAlgorithm.Dispose
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Security.Cryptography.SymmetricAlgorithm.Clear
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: Clear()
   fullName: System.Security.Cryptography.SymmetricAlgorithm.Clear()
   spec.csharp:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.Clear
     name: Clear
     fullName: System.Security.Cryptography.SymmetricAlgorithm.Clear
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - name: )
@@ -348,123 +364,134 @@ references:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.Clear
     name: Clear
     fullName: System.Security.Cryptography.SymmetricAlgorithm.Clear
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Security.Cryptography.SymmetricAlgorithm.Dispose(System.Boolean)
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: Dispose(Boolean)
   fullName: System.Security.Cryptography.SymmetricAlgorithm.Dispose(System.Boolean)
   spec.csharp:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.Dispose(System.Boolean)
     name: Dispose
     fullName: System.Security.Cryptography.SymmetricAlgorithm.Dispose
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.Dispose(System.Boolean)
     name: Dispose
     fullName: System.Security.Cryptography.SymmetricAlgorithm.Dispose
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: )
     fullName: )
 - uid: System.Security.Cryptography.SymmetricAlgorithm.BlockSize
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: BlockSize
   fullName: System.Security.Cryptography.SymmetricAlgorithm.BlockSize
 - uid: System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: FeedbackSize
   fullName: System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize
 - uid: System.Security.Cryptography.SymmetricAlgorithm.IV
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: IV
   fullName: System.Security.Cryptography.SymmetricAlgorithm.IV
 - uid: System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizes
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: LegalBlockSizes
   fullName: System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizes
 - uid: System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: LegalKeySizes
   fullName: System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes
 - uid: System.Security.Cryptography.SymmetricAlgorithm.KeySize
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: KeySize
   fullName: System.Security.Cryptography.SymmetricAlgorithm.KeySize
 - uid: System.Security.Cryptography.SymmetricAlgorithm.Mode
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: Mode
   fullName: System.Security.Cryptography.SymmetricAlgorithm.Mode
 - uid: System.Security.Cryptography.SymmetricAlgorithm.Padding
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: Padding
   fullName: System.Security.Cryptography.SymmetricAlgorithm.Padding
 - uid: System.Security.Cryptography.SymmetricAlgorithm.ValidKeySize(System.Int32)
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: ValidKeySize(Int32)
   fullName: System.Security.Cryptography.SymmetricAlgorithm.ValidKeySize(System.Int32)
   spec.csharp:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.ValidKeySize(System.Int32)
     name: ValidKeySize
     fullName: System.Security.Cryptography.SymmetricAlgorithm.ValidKeySize
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.ValidKeySize(System.Int32)
     name: ValidKeySize
     fullName: System.Security.Cryptography.SymmetricAlgorithm.ValidKeySize
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: CreateEncryptor()
   fullName: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor()
   spec.csharp:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor
     name: CreateEncryptor
     fullName: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - name: )
@@ -473,14 +500,15 @@ references:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor
     name: CreateEncryptor
     fullName: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor(System.Byte[],System.Byte[])
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: CreateEncryptor(Byte[], Byte[])
   name.vb: CreateEncryptor(Byte(), Byte())
   fullName: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor(System.Byte[], System.Byte[])
@@ -489,13 +517,13 @@ references:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor(System.Byte[],System.Byte[])
     name: CreateEncryptor
     fullName: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   - name: ', '
@@ -503,7 +531,7 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   - name: )
@@ -512,13 +540,13 @@ references:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor(System.Byte[],System.Byte[])
     name: CreateEncryptor
     fullName: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
   - name: ', '
@@ -526,21 +554,22 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
   - name: )
     fullName: )
 - uid: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: CreateDecryptor()
   fullName: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor()
   spec.csharp:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor
     name: CreateDecryptor
     fullName: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - name: )
@@ -549,14 +578,15 @@ references:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor
     name: CreateDecryptor
     fullName: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor(System.Byte[],System.Byte[])
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: CreateDecryptor(Byte[], Byte[])
   name.vb: CreateDecryptor(Byte(), Byte())
   fullName: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor(System.Byte[], System.Byte[])
@@ -565,13 +595,13 @@ references:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor(System.Byte[],System.Byte[])
     name: CreateDecryptor
     fullName: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   - name: ', '
@@ -579,7 +609,7 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   - name: )
@@ -588,13 +618,13 @@ references:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor(System.Byte[],System.Byte[])
     name: CreateDecryptor
     fullName: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
   - name: ', '
@@ -602,21 +632,22 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
   - name: )
     fullName: )
 - uid: System.Security.Cryptography.SymmetricAlgorithm.GenerateKey
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: GenerateKey()
   fullName: System.Security.Cryptography.SymmetricAlgorithm.GenerateKey()
   spec.csharp:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.GenerateKey
     name: GenerateKey
     fullName: System.Security.Cryptography.SymmetricAlgorithm.GenerateKey
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - name: )
@@ -625,21 +656,22 @@ references:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.GenerateKey
     name: GenerateKey
     fullName: System.Security.Cryptography.SymmetricAlgorithm.GenerateKey
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Security.Cryptography.SymmetricAlgorithm.GenerateIV
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: GenerateIV()
   fullName: System.Security.Cryptography.SymmetricAlgorithm.GenerateIV()
   spec.csharp:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.GenerateIV
     name: GenerateIV
     fullName: System.Security.Cryptography.SymmetricAlgorithm.GenerateIV
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - name: )
@@ -648,21 +680,22 @@ references:
   - uid: System.Security.Cryptography.SymmetricAlgorithm.GenerateIV
     name: GenerateIV
     fullName: System.Security.Cryptography.SymmetricAlgorithm.GenerateIV
-    isExternal: true
+    href: System.Security.Cryptography.SymmetricAlgorithm.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -671,138 +704,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -811,7 +848,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -866,13 +903,16 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Security.Cryptography.SymmetricAlgorithm.Key
   parent: System.Security.Cryptography.SymmetricAlgorithm
-  isExternal: true
+  isExternal: false
+  href: System.Security.Cryptography.SymmetricAlgorithm.yml
   name: Key
   fullName: System.Security.Cryptography.SymmetricAlgorithm.Key
 - uid: System.Byte[]
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte[]
   name.vb: Byte()
   fullName: System.Byte[]
@@ -881,14 +921,14 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
 - uid: System.Security.Cryptography.DES
@@ -900,11 +940,15 @@ references:
   type: Class
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct

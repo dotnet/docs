@@ -95,7 +95,8 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
   parent: System.Collections.Generic.IEnumerable`1
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: GetEnumerator()
   fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
   fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
@@ -103,7 +104,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: (
     fullName: (
   - name: )
@@ -112,7 +113,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: (
     fullName: (
   - name: )
@@ -148,16 +149,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -168,7 +171,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -179,6 +182,7 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Func{{TElement},{TKey}}
   parent: System
   definition: System.Func`2
@@ -219,6 +223,7 @@ references:
 - uid: System.Collections.Generic.IComparer{{TKey}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IComparer`1
+  href: System.Collections.Generic.IComparer`1.yml
   name: IComparer<TKey>
   name.vb: IComparer(Of TKey)
   fullName: System.Collections.Generic.IComparer<TKey>
@@ -227,7 +232,7 @@ references:
   - uid: System.Collections.Generic.IComparer`1
     name: IComparer
     fullName: System.Collections.Generic.IComparer
-    isExternal: true
+    href: System.Collections.Generic.IComparer`1.yml
   - name: <
     fullName: <
   - name: TKey
@@ -238,7 +243,7 @@ references:
   - uid: System.Collections.Generic.IComparer`1
     name: IComparer
     fullName: System.Collections.Generic.IComparer
-    isExternal: true
+    href: System.Collections.Generic.IComparer`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey
@@ -247,9 +252,11 @@ references:
     fullName: )
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Linq.IOrderedEnumerable`1
   parent: System.Linq
   isExternal: false
@@ -283,16 +290,18 @@ references:
     fullName: )
 - uid: System.Func`2
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`2.yml
   name: Func<T, TResult>
   name.vb: Func(Of T, TResult)
   fullName: System.Func<T, TResult>
   fullName.vb: System.Func(Of T, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`2
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`2.yml
   - name: <
     fullName: <
   - name: T
@@ -307,7 +316,7 @@ references:
   - uid: System.Func`2
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -322,18 +331,21 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Collections.Generic.IComparer`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IComparer`1.yml
   name: IComparer<T>
   name.vb: IComparer(Of T)
   fullName: System.Collections.Generic.IComparer<T>
   fullName.vb: System.Collections.Generic.IComparer(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IComparer`1
     name: IComparer
     fullName: System.Collections.Generic.IComparer
-    isExternal: true
+    href: System.Collections.Generic.IComparer`1.yml
   - name: <
     fullName: <
   - name: T
@@ -344,7 +356,7 @@ references:
   - uid: System.Collections.Generic.IComparer`1
     name: IComparer
     fullName: System.Collections.Generic.IComparer
-    isExternal: true
+    href: System.Collections.Generic.IComparer`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T

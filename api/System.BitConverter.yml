@@ -35,13 +35,13 @@ items:
   type: Class
   source:
     remote: &o0
-      path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+      path: src/mscorlib/src/System/BitConverter.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 13
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 25
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Converts base data types to an array of bytes, and an array of bytes to base data types.
   syntax:
@@ -66,10 +66,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 21
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 33
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Indicates the byte order ("endianness") in which data is stored in this computer architecture.
   syntax:
@@ -84,10 +84,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 25
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 37
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns the specified Boolean value as an array of bytes.
   syntax:
@@ -109,10 +109,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 36
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 47
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns the specified Unicode character value as an array of bytes.
   syntax:
@@ -134,10 +134,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 46
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 57
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns the specified 16-bit signed integer value as an array of bytes.
   syntax:
@@ -159,10 +159,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 60
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 71
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns the specified 32-bit signed integer value as an array of bytes.
   syntax:
@@ -184,10 +184,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 74
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 85
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns the specified 64-bit signed integer value as an array of bytes.
   syntax:
@@ -209,10 +209,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 88
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 99
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns the specified 16-bit unsigned integer value as an array of bytes.
   syntax:
@@ -234,10 +234,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 99
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 109
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns the specified 32-bit unsigned integer value as an array of bytes.
   syntax:
@@ -259,10 +259,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 110
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 119
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns the specified 64-bit unsigned integer value as an array of bytes.
   syntax:
@@ -284,10 +284,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 121
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 129
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns the specified single-precision floating point value as an array of bytes.
   syntax:
@@ -309,10 +309,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 132
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 140
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns the specified double-precision floating point value as an array of bytes.
   syntax:
@@ -336,10 +336,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 142
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 150
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns a Unicode character converted from two bytes at a specified position in a byte array.
   syntax:
@@ -373,10 +373,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 156
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 169
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns a 16-bit signed integer converted from two bytes at a specified position in a byte array.
   syntax:
@@ -410,10 +410,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 186
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 201
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns a 32-bit signed integer converted from four bytes at a specified position in a byte array.
   syntax:
@@ -447,10 +447,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 216
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 232
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns a 64-bit signed integer converted from eight bytes at a specified position in a byte array.
   syntax:
@@ -484,10 +484,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 252
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 269
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns a 16-bit unsigned integer converted from two bytes at a specified position in a byte array.
   syntax:
@@ -521,10 +521,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 268
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 285
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns a 32-bit unsigned integer converted from four bytes at a specified position in a byte array.
   syntax:
@@ -558,10 +558,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 284
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 301
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns a 64-bit unsigned integer converted from eight bytes at a specified position in a byte array.
   syntax:
@@ -595,10 +595,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 299
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 316
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns a single-precision floating point number converted from four bytes at a specified position in a byte array.
   syntax:
@@ -632,10 +632,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 315
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 332
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns a double-precision floating point number converted from eight bytes at a specified position in a byte array.
   syntax:
@@ -669,10 +669,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 342
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 357
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Converts the numeric value of each element of a specified subarray of bytes to its equivalent hexadecimal string representation.
   syntax:
@@ -709,10 +709,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 383
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 401
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Converts the numeric value of each element of a specified array of bytes to its equivalent hexadecimal string representation.
   syntax:
@@ -739,10 +739,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 393
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 410
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Converts the numeric value of each element of a specified subarray of bytes to its equivalent hexadecimal string representation.
   syntax:
@@ -774,10 +774,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 411
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 427
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Returns a Boolean value converted from one byte at a specified position in a byte array.
   syntax:
@@ -807,10 +807,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 424
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 439
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Converts the specified double-precision floating point number to a 64-bit signed integer.
   syntax:
@@ -832,10 +832,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
-    startLine: 436
+    path: src/mscorlib/src/System/BitConverter.cs
+    startLine: 450
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System
   summary: Converts the specified 64-bit signed integer to a double-precision floating point number.
   syntax:
@@ -853,21 +853,25 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -876,138 +880,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1016,7 +1024,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1069,11 +1077,14 @@ references:
     fullName: )
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Byte[]
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte[]
   name.vb: Byte()
   fullName: System.Byte[]
@@ -1082,63 +1093,83 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
 - uid: System.Char
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Char.yml
   name: Char
   fullName: System.Char
+  type: Struct
 - uid: System.Int16
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int16.yml
   name: Int16
   fullName: System.Int16
+  type: Struct
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Int64
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int64.yml
   name: Int64
   fullName: System.Int64
+  type: Struct
 - uid: System.UInt16
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.UInt16.yml
   name: UInt16
   fullName: System.UInt16
+  type: Struct
 - uid: System.UInt32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.UInt32.yml
   name: UInt32
   fullName: System.UInt32
+  type: Struct
 - uid: System.UInt64
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.UInt64.yml
   name: UInt64
   fullName: System.UInt64
+  type: Struct
 - uid: System.Single
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Single.yml
   name: Single
   fullName: System.Single
+  type: Struct
 - uid: System.Double
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Double.yml
   name: Double
   fullName: System.Double
+  type: Struct
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class

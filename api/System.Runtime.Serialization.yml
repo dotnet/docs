@@ -132,11 +132,65 @@ references:
   fullName: System.Runtime.Serialization.SerializationException
   type: Class
 - uid: System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
   isExternal: false
   href: System.Runtime.Serialization.StreamingContext.yml
   name: StreamingContext
   fullName: System.Runtime.Serialization.StreamingContext
   type: Struct
+- uid: System.Runtime.Serialization.DataContractResolver
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.DataContractResolver.yml
+  name: DataContractResolver
+  fullName: System.Runtime.Serialization.DataContractResolver
+  type: Class
+- uid: System.Runtime.Serialization.DataContractSerializer
+  isExternal: false
+  href: System.Runtime.Serialization.DataContractSerializer.yml
+  name: DataContractSerializer
+  fullName: System.Runtime.Serialization.DataContractSerializer
+  type: Class
+- uid: System.Runtime.Serialization.DataContractSerializerSettings
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.DataContractSerializerSettings.yml
+  name: DataContractSerializerSettings
+  fullName: System.Runtime.Serialization.DataContractSerializerSettings
+  type: Class
+  summary: Dummy documentation
+- uid: System.Runtime.Serialization.XmlObjectSerializer
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: XmlObjectSerializer
+  fullName: System.Runtime.Serialization.XmlObjectSerializer
+  type: Class
+- uid: System.Runtime.Serialization.DateTimeFormat
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.DateTimeFormat.yml
+  name: DateTimeFormat
+  fullName: System.Runtime.Serialization.DateTimeFormat
+  type: Class
+  summary: >-
+    This class is used to customize the way DateTime is
+
+    serialized or deserialized by @'System.Runtime.Serialization.Json.DataContractJsonSerializer'
+- uid: System.Runtime.Serialization.EmitTypeInformation
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.EmitTypeInformation.yml
+  name: EmitTypeInformation
+  fullName: System.Runtime.Serialization.EmitTypeInformation
+  type: Enum
+  summary: Dummy documentation
+- uid: System.Runtime.Serialization.JsonFormatGeneratorStatics
+  isExternal: false
+  href: System.Runtime.Serialization.JsonFormatGeneratorStatics.yml
+  name: JsonFormatGeneratorStatics
+  fullName: System.Runtime.Serialization.JsonFormatGeneratorStatics
+  type: Class
 - uid: System.Runtime.Serialization.FormatterConverter
   isExternal: false
   href: System.Runtime.Serialization.FormatterConverter.yml
@@ -170,6 +224,7 @@ references:
   fullName: System.Runtime.Serialization.IFormatterConverter
   type: Interface
 - uid: System.Runtime.Serialization.IObjectReference
+  parent: System.Runtime.Serialization
   isExternal: false
   href: System.Runtime.Serialization.IObjectReference.yml
   name: IObjectReference
@@ -177,9 +232,11 @@ references:
   type: Interface
 - uid: System.Runtime.Serialization.ISerializable
   parent: System.Runtime.Serialization
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.Serialization.ISerializable.yml
   name: ISerializable
   fullName: System.Runtime.Serialization.ISerializable
+  type: Interface
 - uid: System.Runtime.Serialization.ISerializationSurrogate
   parent: System.Runtime.Serialization
   isExternal: false
@@ -215,6 +272,7 @@ references:
   fullName: System.Runtime.Serialization.SerializationInfo
   type: Class
 - uid: System.Runtime.Serialization.SerializationEntry
+  parent: System.Runtime.Serialization
   isExternal: false
   href: System.Runtime.Serialization.SerializationEntry.yml
   name: SerializationEntry
@@ -234,58 +292,6 @@ references:
   name: StreamingContextStates
   fullName: System.Runtime.Serialization.StreamingContextStates
   type: Enum
-- uid: System.Runtime.Serialization.DataContractResolver
-  parent: System.Runtime.Serialization
-  isExternal: false
-  href: System.Runtime.Serialization.DataContractResolver.yml
-  name: DataContractResolver
-  fullName: System.Runtime.Serialization.DataContractResolver
-  type: Class
-- uid: System.Runtime.Serialization.DataContractSerializer
-  isExternal: false
-  href: System.Runtime.Serialization.DataContractSerializer.yml
-  name: DataContractSerializer
-  fullName: System.Runtime.Serialization.DataContractSerializer
-  type: Class
-- uid: System.Runtime.Serialization.DataContractSerializerSettings
-  parent: System.Runtime.Serialization
-  isExternal: false
-  href: System.Runtime.Serialization.DataContractSerializerSettings.yml
-  name: DataContractSerializerSettings
-  fullName: System.Runtime.Serialization.DataContractSerializerSettings
-  type: Class
-  summary: Dummy documentation
-- uid: System.Runtime.Serialization.XmlObjectSerializer
-  parent: System.Runtime.Serialization
-  isExternal: false
-  href: System.Runtime.Serialization.XmlObjectSerializer.yml
-  name: XmlObjectSerializer
-  fullName: System.Runtime.Serialization.XmlObjectSerializer
-  type: Class
-- uid: System.Runtime.Serialization.DateTimeFormat
-  isExternal: false
-  href: System.Runtime.Serialization.DateTimeFormat.yml
-  name: DateTimeFormat
-  fullName: System.Runtime.Serialization.DateTimeFormat
-  type: Class
-  summary: >-
-    This class is used to customize the way DateTime is
-
-    serialized or deserialized by @'System.Runtime.Serialization.Json.DataContractJsonSerializer'
-- uid: System.Runtime.Serialization.EmitTypeInformation
-  parent: System.Runtime.Serialization
-  isExternal: false
-  href: System.Runtime.Serialization.EmitTypeInformation.yml
-  name: EmitTypeInformation
-  fullName: System.Runtime.Serialization.EmitTypeInformation
-  type: Enum
-  summary: Dummy documentation
-- uid: System.Runtime.Serialization.JsonFormatGeneratorStatics
-  isExternal: false
-  href: System.Runtime.Serialization.JsonFormatGeneratorStatics.yml
-  name: JsonFormatGeneratorStatics
-  fullName: System.Runtime.Serialization.JsonFormatGeneratorStatics
-  type: Class
 - uid: System.Runtime.Serialization
   isExternal: false
   name: System.Runtime.Serialization

@@ -3,7 +3,10 @@ items:
   id: RegistryKey
   parent: Microsoft.Win32
   children:
+  - Microsoft.Win32.RegistryKey.Close
   - Microsoft.Win32.RegistryKey.CreateSubKey(System.String)
+  - Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck)
+  - Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,Microsoft.Win32.RegistryOptions)
   - Microsoft.Win32.RegistryKey.CreateSubKey(System.String,System.Boolean)
   - Microsoft.Win32.RegistryKey.CreateSubKey(System.String,System.Boolean,Microsoft.Win32.RegistryOptions)
   - Microsoft.Win32.RegistryKey.DeleteSubKey(System.String)
@@ -12,27 +15,23 @@ items:
   - Microsoft.Win32.RegistryKey.DeleteSubKeyTree(System.String,System.Boolean)
   - Microsoft.Win32.RegistryKey.DeleteValue(System.String)
   - Microsoft.Win32.RegistryKey.DeleteValue(System.String,System.Boolean)
-  - Microsoft.Win32.RegistryKey.Dispose
   - Microsoft.Win32.RegistryKey.Flush
-  - Microsoft.Win32.RegistryKey.FromHandle(Microsoft.Win32.SafeHandles.SafeRegistryHandle)
-  - Microsoft.Win32.RegistryKey.FromHandle(Microsoft.Win32.SafeHandles.SafeRegistryHandle,Microsoft.Win32.RegistryView)
   - Microsoft.Win32.RegistryKey.GetSubKeyNames
   - Microsoft.Win32.RegistryKey.GetValue(System.String)
   - Microsoft.Win32.RegistryKey.GetValue(System.String,System.Object)
   - Microsoft.Win32.RegistryKey.GetValue(System.String,System.Object,Microsoft.Win32.RegistryValueOptions)
   - Microsoft.Win32.RegistryKey.GetValueKind(System.String)
   - Microsoft.Win32.RegistryKey.GetValueNames
-  - Microsoft.Win32.RegistryKey.Handle
   - Microsoft.Win32.RegistryKey.Name
   - Microsoft.Win32.RegistryKey.OpenBaseKey(Microsoft.Win32.RegistryHive,Microsoft.Win32.RegistryView)
   - Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String)
   - Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String,Microsoft.Win32.RegistryView)
   - Microsoft.Win32.RegistryKey.OpenSubKey(System.String)
   - Microsoft.Win32.RegistryKey.OpenSubKey(System.String,System.Boolean)
-  - Microsoft.Win32.RegistryKey.OpenSubKey(System.String,System.Security.AccessControl.RegistryRights)
   - Microsoft.Win32.RegistryKey.SetValue(System.String,System.Object)
   - Microsoft.Win32.RegistryKey.SetValue(System.String,System.Object,Microsoft.Win32.RegistryValueKind)
   - Microsoft.Win32.RegistryKey.SubKeyCount
+  - Microsoft.Win32.RegistryKey.System#IDisposable#Dispose
   - Microsoft.Win32.RegistryKey.ToString
   - Microsoft.Win32.RegistryKey.ValueCount
   - Microsoft.Win32.RegistryKey.View
@@ -42,13 +41,13 @@ items:
   type: Class
   source:
     remote: &o0
-      path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
+      path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 83
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 99
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Represents a key-level node in the Windows registry. This class is a registry encapsulation.
   syntax:
@@ -65,6 +64,24 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+- uid: Microsoft.Win32.RegistryKey.Close
+  id: Close
+  parent: Microsoft.Win32.RegistryKey
+  href: Microsoft.Win32.RegistryKey.yml
+  name: Close()
+  fullName: Microsoft.Win32.RegistryKey.Close()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 218
+  assemblies:
+  - mscorlib
+  namespace: Microsoft.Win32
+  summary: Closes the key and flushes it to disk if its contents have been modified.
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close
 - uid: Microsoft.Win32.RegistryKey.Flush
   id: Flush
   parent: Microsoft.Win32.RegistryKey
@@ -74,33 +91,33 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 244
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 255
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Writes all the attributes of the specified open registry key into the registry.
   syntax:
     content: public void Flush()
     content.vb: Public Sub Flush
-- uid: Microsoft.Win32.RegistryKey.Dispose
-  id: Dispose
+- uid: Microsoft.Win32.RegistryKey.System#IDisposable#Dispose
+  id: System#IDisposable#Dispose
   parent: Microsoft.Win32.RegistryKey
   href: Microsoft.Win32.RegistryKey.yml
-  name: Dispose()
-  fullName: Microsoft.Win32.RegistryKey.Dispose()
+  name: IDisposable.Dispose()
+  name.vb: System.IDisposable.Dispose()
+  fullName: Microsoft.Win32.RegistryKey.System.IDisposable.Dispose()
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 256
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 265
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
-  summary: Releases all resources used by the current instance of the @'Microsoft.Win32.RegistryKey' class.
   syntax:
-    content: public void Dispose()
-    content.vb: Public Sub Dispose
+    content: void IDisposable.Dispose()
+    content.vb: Sub System.IDisposable.Dispose Implements IDisposable.Dispose
 - uid: Microsoft.Win32.RegistryKey.CreateSubKey(System.String)
   id: CreateSubKey(System.String)
   parent: Microsoft.Win32.RegistryKey
@@ -110,10 +127,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 268
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 280
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Creates a new subkey or opens an existing subkey for write access.
   syntax:
@@ -137,6 +154,89 @@ items:
     description: The @'Microsoft.Win32.RegistryKey' cannot be written to; for example, it was not opened as a writable key , or the user does not have the necessary access rights.
   - type: System.IO.IOException
     description: The nesting level exceeds 510.-or-A system error occurred, such as deletion of the key, or an attempt to create a key in the @'Microsoft.Win32.Registry.LocalMachine' root.
+- uid: Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck)
+  id: CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck)
+  parent: Microsoft.Win32.RegistryKey
+  href: Microsoft.Win32.RegistryKey.yml
+  name: CreateSubKey(String, RegistryKeyPermissionCheck)
+  fullName: Microsoft.Win32.RegistryKey.CreateSubKey(System.String, Microsoft.Win32.RegistryKeyPermissionCheck)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 285
+  assemblies:
+  - mscorlib
+  namespace: Microsoft.Win32
+  summary: Creates a new subkey or opens an existing subkey for write access, using the specified permission check option.
+  syntax:
+    content: public RegistryKey CreateSubKey(string subkey, RegistryKeyPermissionCheck permissionCheck)
+    content.vb: Public Function CreateSubKey(subkey As String, permissionCheck As RegistryKeyPermissionCheck) As RegistryKey
+    parameters:
+    - id: subkey
+      type: System.String
+      description: The name or path of the subkey to create or open. This string is not case-sensitive.
+    - id: permissionCheck
+      type: Microsoft.Win32.RegistryKeyPermissionCheck
+      description: One of the enumeration values that specifies whether the key is opened for read or read/write access.
+    return:
+      type: Microsoft.Win32.RegistryKey
+      description: The newly created subkey, or null if the operation failed. If a zero-length string is specified for *subkey*, the current @'Microsoft.Win32.RegistryKey' object is returned.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*subkey* is null.'
+  - type: System.Security.SecurityException
+    description: The user does not have the permissions required to create or open the registry key.
+  - type: System.ArgumentException
+    description: '*permissionCheck* contains an invalid value.'
+  - type: System.ObjectDisposedException
+    description: The @'Microsoft.Win32.RegistryKey' on which this method is being invoked is closed (closed keys cannot be accessed).
+  - type: System.UnauthorizedAccessException
+    description: The @'Microsoft.Win32.RegistryKey' cannot be written to; for example, it was not opened as a writable key, or the user does not have the necessary access rights.
+  - type: System.IO.IOException
+    description: The nesting level exceeds 510.-or-A system error occurred, such as deletion of the key, or an attempt to create a key in the @'Microsoft.Win32.Registry.LocalMachine' root.
+- uid: Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,Microsoft.Win32.RegistryOptions)
+  id: CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,Microsoft.Win32.RegistryOptions)
+  parent: Microsoft.Win32.RegistryKey
+  href: Microsoft.Win32.RegistryKey.yml
+  name: CreateSubKey(String, RegistryKeyPermissionCheck, RegistryOptions)
+  fullName: Microsoft.Win32.RegistryKey.CreateSubKey(System.String, Microsoft.Win32.RegistryKeyPermissionCheck, Microsoft.Win32.RegistryOptions)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 291
+  assemblies:
+  - mscorlib
+  namespace: Microsoft.Win32
+  summary: Creates a subkey or opens a subkey for write access, using the specified permission check and registry options.
+  syntax:
+    content: public RegistryKey CreateSubKey(string subkey, RegistryKeyPermissionCheck permissionCheck, RegistryOptions options)
+    content.vb: Public Function CreateSubKey(subkey As String, permissionCheck As RegistryKeyPermissionCheck, options As RegistryOptions) As RegistryKey
+    parameters:
+    - id: subkey
+      type: System.String
+      description: The name or path of the subkey to create or open.
+    - id: permissionCheck
+      type: Microsoft.Win32.RegistryKeyPermissionCheck
+      description: One of the enumeration values that specifies whether the key is opened for read or read/write access.
+    - id: options
+      type: Microsoft.Win32.RegistryOptions
+      description: The registry option to use; for example, that creates a volatile key.
+    return:
+      type: Microsoft.Win32.RegistryKey
+      description: The newly created subkey, or null if the operation failed.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*subkey *is null.'
+  - type: System.ObjectDisposedException
+    description: The current @'Microsoft.Win32.RegistryKey' object is closed (closed keys cannot be accessed).
+  - type: System.UnauthorizedAccessException
+    description: The current @'Microsoft.Win32.RegistryKey' object cannot be written to; for example, it was not opened as a writable key, or the user does not have the required access rights.
+  - type: System.IO.IOException
+    description: The nesting level exceeds 510.-or-A system error occurred, such as deletion of the key or an attempt to create a key in the @'Microsoft.Win32.Registry.LocalMachine' root.
+  - type: System.Security.SecurityException
+    description: The user does not have the permissions required to create or open the registry key.
 - uid: Microsoft.Win32.RegistryKey.CreateSubKey(System.String,System.Boolean)
   id: CreateSubKey(System.String,System.Boolean)
   parent: Microsoft.Win32.RegistryKey
@@ -146,10 +246,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 274
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 297
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Creates a new subkey or opens an existing subkey with the specified access. Available starting in .NET Framework 2015
   syntax:
@@ -183,10 +283,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 279
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 303
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Creates a new subkey or opens an existing subkey with the specified access. Available starting in .NET Framework 2015
   syntax:
@@ -225,10 +325,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 342
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 403
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Deletes the specified subkey.
   syntax:
@@ -260,10 +360,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 347
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 407
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Deletes the specified subkey, and specifies whether an exception is raised if the subkey is not found.
   syntax:
@@ -298,10 +398,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 397
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 457
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Deletes a subkey and any child subkeys recursively.
   syntax:
@@ -333,10 +433,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 402
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 461
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Deletes the specified subkey and any child subkeys recursively, and specifies whether an exception is raised if the subkey is not found.
   syntax:
@@ -369,10 +469,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 488
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 545
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Deletes the specified value from this key.
   syntax:
@@ -400,10 +500,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 493
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 549
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Deletes the specified value from this key, and specifies whether an exception is raised if the value is not found.
   syntax:
@@ -434,10 +534,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 559
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 610
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Opens a new @'Microsoft.Win32.RegistryKey' that represents the requested key on the local machine with the specified view.
   syntax:
@@ -469,10 +569,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 583
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 636
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Opens a new @'Microsoft.Win32.RegistryKey' that represents the requested key on a remote machine.
   syntax:
@@ -508,10 +608,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 588
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 640
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Opens a new registry key that represents the requested key on a remote machine with the specified view.
   syntax:
@@ -552,10 +652,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 629
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 683
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Retrieves a specified subkey, and specifies whether write access is to be applied to the key.
   syntax:
@@ -578,41 +678,6 @@ items:
     description: The @'Microsoft.Win32.RegistryKey' is closed (closed keys cannot be accessed).
   - type: System.Security.SecurityException
     description: The user does not have the permissions required to access the registry key in the specified mode.
-- uid: Microsoft.Win32.RegistryKey.OpenSubKey(System.String,System.Security.AccessControl.RegistryRights)
-  id: OpenSubKey(System.String,System.Security.AccessControl.RegistryRights)
-  parent: Microsoft.Win32.RegistryKey
-  href: Microsoft.Win32.RegistryKey.yml
-  name: OpenSubKey(String, RegistryRights)
-  fullName: Microsoft.Win32.RegistryKey.OpenSubKey(System.String, System.Security.AccessControl.RegistryRights)
-  type: Method
-  source:
-    remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 635
-  assemblies:
-  - Microsoft.Win32.Registry
-  namespace: Microsoft.Win32
-  summary: Retrieves a subkey with the specified name and .Available starting in .NET Framework 2015
-  syntax:
-    content: public RegistryKey OpenSubKey(string name, RegistryRights rights)
-    content.vb: Public Function OpenSubKey(name As String, rights As RegistryRights) As RegistryKey
-    parameters:
-    - id: name
-      type: System.String
-      description: The name or path of the subkey to create or open.
-    - id: rights
-      type: System.Security.AccessControl.RegistryRights
-      description: The rights for the registry key.
-    return:
-      type: Microsoft.Win32.RegistryKey
-      description: The subkey requested, or null if the operation failed.
-  exceptions:
-  - type: System.ArgumentNullException
-    description: '*name* is null.'
-  - type: System.ObjectDisposedException
-    description: The @'Microsoft.Win32.RegistryKey' is closed (closed keys cannot be accessed).
-  - type: System.Security.SecurityException
-    description: The user does not have the permissions required to access the registry key in the specified mode.
 - uid: Microsoft.Win32.RegistryKey.OpenSubKey(System.String)
   id: OpenSubKey(System.String)
   parent: Microsoft.Win32.RegistryKey
@@ -622,10 +687,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 699
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 801
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Retrieves a subkey as read-only.
   syntax:
@@ -654,10 +719,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 710
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 812
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Retrieves the count of subkeys of the current key.
   syntax:
@@ -685,10 +750,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 719
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 820
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Gets the view that was used to create the registry key.
   syntax:
@@ -698,106 +763,6 @@ items:
     return:
       type: Microsoft.Win32.RegistryView
       description: The view that was used to create the registry key.-or-@'Microsoft.Win32.RegistryView.Default', if no view was used.
-- uid: Microsoft.Win32.RegistryKey.Handle
-  id: Handle
-  parent: Microsoft.Win32.RegistryKey
-  href: Microsoft.Win32.RegistryKey.yml
-  name: Handle
-  fullName: Microsoft.Win32.RegistryKey.Handle
-  type: Property
-  source:
-    remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 729
-  assemblies:
-  - Microsoft.Win32.Registry
-  namespace: Microsoft.Win32
-  summary: Gets a @'Microsoft.Win32.SafeHandles.SafeRegistryHandle' object that represents the registry key that the current @'Microsoft.Win32.RegistryKey' object encapsulates.
-  syntax:
-    content: public SafeRegistryHandle Handle { get; }
-    content.vb: Public ReadOnly Property Handle As SafeRegistryHandle
-    parameters: []
-    return:
-      type: Microsoft.Win32.SafeHandles.SafeRegistryHandle
-      description: The handle to the registry key.
-  exceptions:
-  - type: System.ObjectDisposedException
-    description: The registry key is closed. Closed keys cannot be accessed.
-  - type: System.UnauthorizedAccessException
-    description: The user does not have the necessary registry rights.
-  - type: System.IO.IOException
-    description: A system error occurred, such as deletion of the current key.
-  - type: System.Security.SecurityException
-    description: The user does not have the permissions required to read the key.
-- uid: Microsoft.Win32.RegistryKey.FromHandle(Microsoft.Win32.SafeHandles.SafeRegistryHandle)
-  id: FromHandle(Microsoft.Win32.SafeHandles.SafeRegistryHandle)
-  parent: Microsoft.Win32.RegistryKey
-  href: Microsoft.Win32.RegistryKey.yml
-  name: FromHandle(SafeRegistryHandle)
-  fullName: Microsoft.Win32.RegistryKey.FromHandle(Microsoft.Win32.SafeHandles.SafeRegistryHandle)
-  type: Method
-  source:
-    remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 788
-  assemblies:
-  - Microsoft.Win32.Registry
-  namespace: Microsoft.Win32
-  summary: Creates a registry key from a specified handle.
-  syntax:
-    content: public static RegistryKey FromHandle(SafeRegistryHandle handle)
-    content.vb: Public Shared Function FromHandle(handle As SafeRegistryHandle) As RegistryKey
-    parameters:
-    - id: handle
-      type: Microsoft.Win32.SafeHandles.SafeRegistryHandle
-      description: The handle to the registry key.
-    return:
-      type: Microsoft.Win32.RegistryKey
-      description: A registry key.
-  exceptions:
-  - type: System.ArgumentNullException
-    description: '*handle* is null.'
-  - type: System.UnauthorizedAccessException
-    description: The user does not have the necessary registry rights.
-  - type: System.Security.SecurityException
-    description: The user does not have the permissions required to perform this action.
-- uid: Microsoft.Win32.RegistryKey.FromHandle(Microsoft.Win32.SafeHandles.SafeRegistryHandle,Microsoft.Win32.RegistryView)
-  id: FromHandle(Microsoft.Win32.SafeHandles.SafeRegistryHandle,Microsoft.Win32.RegistryView)
-  parent: Microsoft.Win32.RegistryKey
-  href: Microsoft.Win32.RegistryKey.yml
-  name: FromHandle(SafeRegistryHandle, RegistryView)
-  fullName: Microsoft.Win32.RegistryKey.FromHandle(Microsoft.Win32.SafeHandles.SafeRegistryHandle, Microsoft.Win32.RegistryView)
-  type: Method
-  source:
-    remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 794
-  assemblies:
-  - Microsoft.Win32.Registry
-  namespace: Microsoft.Win32
-  summary: Creates a registry key from a specified handle and registry view setting.
-  syntax:
-    content: public static RegistryKey FromHandle(SafeRegistryHandle handle, RegistryView view)
-    content.vb: Public Shared Function FromHandle(handle As SafeRegistryHandle, view As RegistryView) As RegistryKey
-    parameters:
-    - id: handle
-      type: Microsoft.Win32.SafeHandles.SafeRegistryHandle
-      description: The handle to the registry key.
-    - id: view
-      type: Microsoft.Win32.RegistryView
-      description: The registry view to use.
-    return:
-      type: Microsoft.Win32.RegistryKey
-      description: A registry key.
-  exceptions:
-  - type: System.ArgumentException
-    description: '*view* is invalid.'
-  - type: System.ArgumentNullException
-    description: '*handle* is null.'
-  - type: System.UnauthorizedAccessException
-    description: The user does not have the necessary registry rights.
-  - type: System.Security.SecurityException
-    description: The user does not have the permissions required to perform this action.
 - uid: Microsoft.Win32.RegistryKey.GetSubKeyNames
   id: GetSubKeyNames
   parent: Microsoft.Win32.RegistryKey
@@ -807,10 +772,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 833
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 935
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Retrieves an array of strings that contains all the subkey names.
   syntax:
@@ -837,10 +802,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 880
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 982
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Retrieves the count of values in the key.
   syntax:
@@ -868,10 +833,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 917
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 1017
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Retrieves an array of strings that contains all the value names associated with this key.
   syntax:
@@ -898,10 +863,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 971
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 1068
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Retrieves the value associated with the specified name. Returns null if the name/value pair does not exist in the registry.
   syntax:
@@ -932,10 +897,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 992
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 1090
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Retrieves the value associated with the specified name. If the name is not found, returns the default value that you provide.
   syntax:
@@ -969,10 +934,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 998
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 1100
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Retrieves the value associated with the specified name and retrieval options. If the name is not found, returns the default value that you provide.
   syntax:
@@ -1011,10 +976,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 1264
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 1333
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Retrieves the registry data type of the value associated with the specified name.
   syntax:
@@ -1045,10 +1010,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 1310
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 1376
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Retrieves the name of the key.
   syntax:
@@ -1070,10 +1035,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 1331
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 1394
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Sets the specified name/value pair.
   syntax:
@@ -1108,10 +1073,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 1336
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 1398
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Sets the value of a name/value pair in the registry key, using the specified registry data type.
   syntax:
@@ -1149,10 +1114,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryKey.cs
-    startLine: 1510
+    path: src/mscorlib/src/Microsoft/Win32/RegistryKey.cs
+    startLine: 1570
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Retrieves a string representation of this key.
   syntax:
@@ -1173,136 +1138,142 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1311,7 +1282,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1366,11 +1337,14 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: Microsoft.Win32.RegistryKey
   parent: Microsoft.Win32
   isExternal: false
@@ -1378,11 +1352,13 @@ references:
   name: RegistryKey
   fullName: Microsoft.Win32.RegistryKey
   type: Class
-- uid: System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  fullName: System.Boolean
+- uid: Microsoft.Win32.RegistryKeyPermissionCheck
+  parent: Microsoft.Win32
+  isExternal: false
+  href: Microsoft.Win32.RegistryKeyPermissionCheck.yml
+  name: RegistryKeyPermissionCheck
+  fullName: Microsoft.Win32.RegistryKeyPermissionCheck
+  type: Enum
 - uid: Microsoft.Win32.RegistryOptions
   parent: Microsoft.Win32
   isExternal: false
@@ -1390,6 +1366,13 @@ references:
   name: RegistryOptions
   fullName: Microsoft.Win32.RegistryOptions
   type: Enum
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  href: System.Boolean.yml
+  name: Boolean
+  fullName: System.Boolean
+  type: Struct
 - uid: Microsoft.Win32.RegistryHive
   parent: Microsoft.Win32
   isExternal: false
@@ -1404,37 +1387,16 @@ references:
   name: RegistryView
   fullName: Microsoft.Win32.RegistryView
   type: Enum
-- uid: System.Security.AccessControl.RegistryRights
-  parent: System.Security.AccessControl
-  isExternal: false
-  href: System.Security.AccessControl.RegistryRights.yml
-  name: RegistryRights
-  fullName: System.Security.AccessControl.RegistryRights
-  type: Enum
-- uid: System.Security.AccessControl
-  isExternal: false
-  name: System.Security.AccessControl
-  fullName: System.Security.AccessControl
-  type: Namespace
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
-- uid: Microsoft.Win32.SafeHandles.SafeRegistryHandle
-  parent: Microsoft.Win32.SafeHandles
-  isExternal: false
-  href: Microsoft.Win32.SafeHandles.SafeRegistryHandle.yml
-  name: SafeRegistryHandle
-  fullName: Microsoft.Win32.SafeHandles.SafeRegistryHandle
-  type: Class
-- uid: Microsoft.Win32.SafeHandles
-  isExternal: false
-  name: Microsoft.Win32.SafeHandles
-  fullName: Microsoft.Win32.SafeHandles
-  type: Namespace
+  type: Struct
 - uid: System.String[]
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String[]
   name.vb: String()
   fullName: System.String[]
@@ -1443,14 +1405,14 @@ references:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: ()
     fullName: ()
 - uid: Microsoft.Win32.RegistryValueOptions
@@ -1469,14 +1431,15 @@ references:
   type: Enum
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1485,7 +1448,7 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )

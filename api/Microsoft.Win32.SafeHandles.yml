@@ -21,28 +21,35 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/System.Security.Cryptography.X509Certificates/src/Microsoft/Win32/SafeHandles/SafeX509ChainHandle.cs
+      path: src/System.Diagnostics.Process/src/Microsoft/Win32/SafeHandles/SafeTokenHandle.cs
       branch: master
       repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Security.Cryptography.X509Certificates/src/Microsoft/Win32/SafeHandles/SafeX509ChainHandle.cs
-    startLine: 8
+    path: src/System.Diagnostics.Process/src/Microsoft/Win32/SafeHandles/SafeTokenHandle.cs
+    startLine: 17
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - System.Diagnostics.Process
   summary: The @'Microsoft.Win32.SafeHandles' namespace contains classes that are abstract derivations of safe handle classes that provide common functionality supporting file and operating system handles.
 references:
-- uid: Microsoft.Win32.SafeHandles.SafeX509ChainHandle
+- uid: Microsoft.Win32.SafeHandles.SafeProcessHandle
   parent: Microsoft.Win32.SafeHandles
   isExternal: false
-  href: Microsoft.Win32.SafeHandles.SafeX509ChainHandle.yml
-  name: SafeX509ChainHandle
-  fullName: Microsoft.Win32.SafeHandles.SafeX509ChainHandle
+  href: Microsoft.Win32.SafeHandles.SafeProcessHandle.yml
+  name: SafeProcessHandle
+  fullName: Microsoft.Win32.SafeHandles.SafeProcessHandle
   type: Class
-- uid: Microsoft.Win32.SafeHandles.SafeRegistryHandle
+- uid: Microsoft.Win32.SafeHandles.SafeAccessTokenHandle
   parent: Microsoft.Win32.SafeHandles
   isExternal: false
-  href: Microsoft.Win32.SafeHandles.SafeRegistryHandle.yml
-  name: SafeRegistryHandle
-  fullName: Microsoft.Win32.SafeHandles.SafeRegistryHandle
+  href: Microsoft.Win32.SafeHandles.SafeAccessTokenHandle.yml
+  name: SafeAccessTokenHandle
+  fullName: Microsoft.Win32.SafeHandles.SafeAccessTokenHandle
+  type: Class
+- uid: Microsoft.Win32.SafeHandles.SafePipeHandle
+  parent: Microsoft.Win32.SafeHandles
+  isExternal: false
+  href: Microsoft.Win32.SafeHandles.SafePipeHandle.yml
+  name: SafePipeHandle
+  fullName: Microsoft.Win32.SafeHandles.SafePipeHandle
   type: Class
 - uid: Microsoft.Win32.SafeHandles.SafeFileHandle
   parent: Microsoft.Win32.SafeHandles
@@ -51,36 +58,20 @@ references:
   name: SafeFileHandle
   fullName: Microsoft.Win32.SafeHandles.SafeFileHandle
   type: Class
-- uid: Microsoft.Win32.SafeHandles.SafeProcessHandle
-  isExternal: false
-  href: Microsoft.Win32.SafeHandles.SafeProcessHandle.yml
-  name: SafeProcessHandle
-  fullName: Microsoft.Win32.SafeHandles.SafeProcessHandle
-  type: Class
-- uid: Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle
-  parent: Microsoft.Win32.SafeHandles
-  isExternal: false
-  href: Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle.yml
-  name: SafeMemoryMappedViewHandle
-  fullName: Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle
-  type: Class
-- uid: Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle
-  parent: Microsoft.Win32.SafeHandles
-  isExternal: false
-  href: Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle.yml
-  name: SafeMemoryMappedFileHandle
-  fullName: Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle
-  type: Class
 - uid: Microsoft.Win32.SafeHandles.SafeWaitHandle
   parent: Microsoft.Win32.SafeHandles
-  isExternal: true
+  isExternal: false
+  href: Microsoft.Win32.SafeHandles.SafeWaitHandle.yml
   name: SafeWaitHandle
   fullName: Microsoft.Win32.SafeHandles.SafeWaitHandle
+  type: Class
 - uid: Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid
   parent: Microsoft.Win32.SafeHandles
-  isExternal: true
+  isExternal: false
+  href: Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid.yml
   name: SafeHandleZeroOrMinusOneIsInvalid
   fullName: Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid
+  type: Class
 - uid: Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid
   isExternal: false
   href: Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid.yml
@@ -99,19 +90,33 @@ references:
   name: CriticalHandleMinusOneIsInvalid
   fullName: Microsoft.Win32.SafeHandles.CriticalHandleMinusOneIsInvalid
   type: Class
-- uid: Microsoft.Win32.SafeHandles.SafeAccessTokenHandle
+- uid: Microsoft.Win32.SafeHandles.SafeRegistryHandle
   parent: Microsoft.Win32.SafeHandles
   isExternal: false
-  href: Microsoft.Win32.SafeHandles.SafeAccessTokenHandle.yml
-  name: SafeAccessTokenHandle
-  fullName: Microsoft.Win32.SafeHandles.SafeAccessTokenHandle
+  href: Microsoft.Win32.SafeHandles.SafeRegistryHandle.yml
+  name: SafeRegistryHandle
+  fullName: Microsoft.Win32.SafeHandles.SafeRegistryHandle
   type: Class
-- uid: Microsoft.Win32.SafeHandles.SafePipeHandle
+- uid: Microsoft.Win32.SafeHandles.SafeX509ChainHandle
   parent: Microsoft.Win32.SafeHandles
   isExternal: false
-  href: Microsoft.Win32.SafeHandles.SafePipeHandle.yml
-  name: SafePipeHandle
-  fullName: Microsoft.Win32.SafeHandles.SafePipeHandle
+  href: Microsoft.Win32.SafeHandles.SafeX509ChainHandle.yml
+  name: SafeX509ChainHandle
+  fullName: Microsoft.Win32.SafeHandles.SafeX509ChainHandle
+  type: Class
+- uid: Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle
+  parent: Microsoft.Win32.SafeHandles
+  isExternal: false
+  href: Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle.yml
+  name: SafeMemoryMappedViewHandle
+  fullName: Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle
+  type: Class
+- uid: Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle
+  parent: Microsoft.Win32.SafeHandles
+  isExternal: false
+  href: Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle.yml
+  name: SafeMemoryMappedFileHandle
+  fullName: Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle
   type: Class
 - uid: Microsoft.Win32.SafeHandles
   isExternal: false

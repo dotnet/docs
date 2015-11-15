@@ -584,7 +584,7 @@ items:
       description: The one-dimensional @'System.Array' that is the destination of the elements copied from @'System.Collections.ICollection'. The @'System.Array' must have zero-based indexing.
     - id: arrayIndex
       type: System.Int32
-      description: The zero-based index in <paramref name="array" /> at which copying begins.
+      description: The zero-based index in *array* at which copying begins.
 - uid: System.Collections.Immutable.ImmutableDictionary`2.Builder.Item(`0)
   id: Item(`0)
   parent: System.Collections.Immutable.ImmutableDictionary`2.Builder
@@ -613,11 +613,11 @@ items:
       description: The element with the specified key.
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*key* is null.'
   - type: System.Collections.Generic.KeyNotFoundException
-    description: The property is retrieved and  is not found.
+    description: The property is retrieved and *key* is not found.
   - type: System.NotSupportedException
-    description: The property is set and the  is read-only.
+    description: The property is set and the @'System.Collections.Generic.IDictionary`2' is read-only.
 - uid: System.Collections.Immutable.ImmutableDictionary`2.Builder.AddRange(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})
   id: AddRange(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})
   parent: System.Collections.Immutable.ImmutableDictionary`2.Builder
@@ -742,7 +742,7 @@ items:
       description: The default value to return if no matching key is found in the dictionary.
     return:
       type: '{TValue}'
-      description: The value for the key, or <paramref name="defaultValue" /> if no matching key was found.
+      description: The value for the key, or *defaultValue* if no matching key was found.
 - uid: System.Collections.Immutable.ImmutableDictionary`2.Builder.ToImmutable
   id: ToImmutable
   parent: System.Collections.Immutable.ImmutableDictionary`2.Builder
@@ -797,11 +797,11 @@ items:
       description: The object to use as the value of the element to add.
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*key* is null.'
   - type: System.ArgumentException
-    description: An element with the same key already exists in the .
+    description: An element with the same key already exists in the @'System.Collections.Generic.IDictionary`2'.
   - type: System.NotSupportedException
-    description: The  is read-only.
+    description: The @'System.Collections.Generic.IDictionary`2' is read-only.
 - uid: System.Collections.Immutable.ImmutableDictionary`2.Builder.ContainsKey(`0)
   id: ContainsKey(`0)
   parent: System.Collections.Immutable.ImmutableDictionary`2.Builder
@@ -830,7 +830,7 @@ items:
       description: true if the @'System.Collections.Generic.IDictionary`2' contains an element with the key; otherwise, false.
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*key* is null.'
 - uid: System.Collections.Immutable.ImmutableDictionary`2.Builder.ContainsValue(`1)
   id: ContainsValue(`1)
   parent: System.Collections.Immutable.ImmutableDictionary`2.Builder
@@ -891,12 +891,12 @@ items:
       description: The key of the element to remove.
     return:
       type: System.Boolean
-      description: true if the element is successfully removed; otherwise, false.  This method also returns false if <paramref name="key" /> was not found in the original @'System.Collections.Generic.IDictionary`2'.
+      description: true if the element is successfully removed; otherwise, false.  This method also returns false if *key* was not found in the original @'System.Collections.Generic.IDictionary`2'.
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*key* is null.'
   - type: System.NotSupportedException
-    description: The  is read-only.
+    description: The @'System.Collections.Generic.IDictionary`2' is read-only.
 - uid: System.Collections.Immutable.ImmutableDictionary`2.Builder.TryGetValue(`0,`1@)
   id: TryGetValue(`0,`1@)
   parent: System.Collections.Immutable.ImmutableDictionary`2.Builder
@@ -929,7 +929,7 @@ items:
       description: true if the object that implements @'System.Collections.Generic.IDictionary`2' contains an element with the specified key; otherwise, false.
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*key* is null.'
 - uid: System.Collections.Immutable.ImmutableDictionary`2.Builder.TryGetKey(`0,`0@)
   id: TryGetKey(`0,`0@)
   parent: System.Collections.Immutable.ImmutableDictionary`2.Builder
@@ -983,7 +983,7 @@ items:
       description: The object to add to the @'System.Collections.Generic.ICollection`1'.
   exceptions:
   - type: System.NotSupportedException
-    description: The  is read-only.
+    description: The @'System.Collections.Generic.ICollection`1' is read-only.
 - uid: System.Collections.Immutable.ImmutableDictionary`2.Builder.Clear
   id: Clear
   parent: System.Collections.Immutable.ImmutableDictionary`2.Builder
@@ -1005,7 +1005,7 @@ items:
     content.vb: Public Sub Clear
   exceptions:
   - type: System.NotSupportedException
-    description: The  is read-only.
+    description: The @'System.Collections.Generic.ICollection`1' is read-only.
 - uid: System.Collections.Immutable.ImmutableDictionary`2.Builder.Contains(System.Collections.Generic.KeyValuePair{`0,`1})
   id: Contains(System.Collections.Generic.KeyValuePair{`0,`1})
   parent: System.Collections.Immutable.ImmutableDictionary`2.Builder
@@ -1032,7 +1032,7 @@ items:
       description: The object to locate in the @'System.Collections.Generic.ICollection`1'.
     return:
       type: System.Boolean
-      description: true if <paramref name="item" /> is found in the @'System.Collections.Generic.ICollection`1'; otherwise, false.
+      description: true if *item* is found in the @'System.Collections.Generic.ICollection`1'; otherwise, false.
 - uid: System.Collections.Immutable.ImmutableDictionary`2.Builder.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)
   id: System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)
   parent: System.Collections.Immutable.ImmutableDictionary`2.Builder
@@ -1084,10 +1084,10 @@ items:
       description: The object to remove from the @'System.Collections.Generic.ICollection`1'.
     return:
       type: System.Boolean
-      description: true if <paramref name="item" /> was successfully removed from the @'System.Collections.Generic.ICollection`1'; otherwise, false. This method also returns false if <paramref name="item" /> is not found in the original @'System.Collections.Generic.ICollection`1'.
+      description: true if *item* was successfully removed from the @'System.Collections.Generic.ICollection`1'; otherwise, false. This method also returns false if *item* is not found in the original @'System.Collections.Generic.ICollection`1'.
   exceptions:
   - type: System.NotSupportedException
-    description: The  is read-only.
+    description: The @'System.Collections.Generic.ICollection`1' is read-only.
 - uid: System.Collections.Immutable.ImmutableDictionary`2.Builder.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{TKey,TValue}}#GetEnumerator
   id: System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{TKey,TValue}}#GetEnumerator
   parent: System.Collections.Immutable.ImmutableDictionary`2.Builder
@@ -1143,19 +1143,22 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1164,138 +1167,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1304,7 +1311,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1359,9 +1366,11 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Collections.Generic.IEqualityComparer{{TKey}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEqualityComparer`1
+  href: System.Collections.Generic.IEqualityComparer`1.yml
   name: IEqualityComparer<TKey>
   name.vb: IEqualityComparer(Of TKey)
   fullName: System.Collections.Generic.IEqualityComparer<TKey>
@@ -1370,7 +1379,7 @@ references:
   - uid: System.Collections.Generic.IEqualityComparer`1
     name: IEqualityComparer
     fullName: System.Collections.Generic.IEqualityComparer
-    isExternal: true
+    href: System.Collections.Generic.IEqualityComparer`1.yml
   - name: <
     fullName: <
   - name: TKey
@@ -1381,7 +1390,7 @@ references:
   - uid: System.Collections.Generic.IEqualityComparer`1
     name: IEqualityComparer
     fullName: System.Collections.Generic.IEqualityComparer
-    isExternal: true
+    href: System.Collections.Generic.IEqualityComparer`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey
@@ -1390,16 +1399,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEqualityComparer`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEqualityComparer`1.yml
   name: IEqualityComparer<T>
   name.vb: IEqualityComparer(Of T)
   fullName: System.Collections.Generic.IEqualityComparer<T>
   fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEqualityComparer`1
     name: IEqualityComparer
     fullName: System.Collections.Generic.IEqualityComparer
-    isExternal: true
+    href: System.Collections.Generic.IEqualityComparer`1.yml
   - name: <
     fullName: <
   - name: T
@@ -1410,7 +1421,7 @@ references:
   - uid: System.Collections.Generic.IEqualityComparer`1
     name: IEqualityComparer
     fullName: System.Collections.Generic.IEqualityComparer
-    isExternal: true
+    href: System.Collections.Generic.IEqualityComparer`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -1421,6 +1432,7 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Collections.Generic.IEqualityComparer{{TValue}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEqualityComparer`1
@@ -1452,16 +1464,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.ICollection`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.ICollection`1.yml
   name: ICollection<T>
   name.vb: ICollection(Of T)
   fullName: System.Collections.Generic.ICollection<T>
   fullName.vb: System.Collections.Generic.ICollection(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     fullName: System.Collections.Generic.ICollection
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: <
     fullName: <
   - name: T
@@ -1472,7 +1486,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     fullName: System.Collections.Generic.ICollection
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -1481,26 +1495,32 @@ references:
     fullName: )
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Collections.Generic.IReadOnlyDictionary`2
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IReadOnlyDictionary`2.yml
   name: IReadOnlyDictionary<TKey, TValue>
   name.vb: IReadOnlyDictionary(Of TKey, TValue)
   fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
   fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IReadOnlyDictionary`2
     name: IReadOnlyDictionary
     fullName: System.Collections.Generic.IReadOnlyDictionary
-    isExternal: true
+    href: System.Collections.Generic.IReadOnlyDictionary`2.yml
   - name: <
     fullName: <
   - name: TKey
@@ -1515,7 +1535,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyDictionary`2
     name: IReadOnlyDictionary
     fullName: System.Collections.Generic.IReadOnlyDictionary
-    isExternal: true
+    href: System.Collections.Generic.IReadOnlyDictionary`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey
@@ -1529,6 +1549,7 @@ references:
 - uid: System.Collections.Generic.IEnumerable{{TKey}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<TKey>
   name.vb: IEnumerable(Of TKey)
   fullName: System.Collections.Generic.IEnumerable<TKey>
@@ -1537,7 +1558,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: TKey
@@ -1548,7 +1569,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey
@@ -1557,16 +1578,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -1577,7 +1600,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -1586,16 +1609,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IDictionary`2
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IDictionary`2.yml
   name: IDictionary<TKey, TValue>
   name.vb: IDictionary(Of TKey, TValue)
   fullName: System.Collections.Generic.IDictionary<TKey, TValue>
   fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IDictionary`2
     name: IDictionary
     fullName: System.Collections.Generic.IDictionary
-    isExternal: true
+    href: System.Collections.Generic.IDictionary`2.yml
   - name: <
     fullName: <
   - name: TKey
@@ -1610,7 +1635,7 @@ references:
   - uid: System.Collections.Generic.IDictionary`2
     name: IDictionary
     fullName: System.Collections.Generic.IDictionary
-    isExternal: true
+    href: System.Collections.Generic.IDictionary`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey
@@ -1624,6 +1649,7 @@ references:
 - uid: System.Collections.Generic.ICollection{{TKey}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.ICollection`1
+  href: System.Collections.Generic.ICollection`1.yml
   name: ICollection<TKey>
   name.vb: ICollection(Of TKey)
   fullName: System.Collections.Generic.ICollection<TKey>
@@ -1632,7 +1658,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     fullName: System.Collections.Generic.ICollection
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: <
     fullName: <
   - name: TKey
@@ -1643,7 +1669,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     fullName: System.Collections.Generic.ICollection
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey
@@ -1653,6 +1679,7 @@ references:
 - uid: System.Collections.Generic.IEnumerable{{TValue}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<TValue>
   name.vb: IEnumerable(Of TValue)
   fullName: System.Collections.Generic.IEnumerable<TValue>
@@ -1661,7 +1688,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: TValue
@@ -1672,7 +1699,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TValue
@@ -1682,6 +1709,7 @@ references:
 - uid: System.Collections.Generic.ICollection{{TValue}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.ICollection`1
+  href: System.Collections.Generic.ICollection`1.yml
   name: ICollection<TValue>
   name.vb: ICollection(Of TValue)
   fullName: System.Collections.Generic.ICollection<TValue>
@@ -1690,7 +1718,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     fullName: System.Collections.Generic.ICollection
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: <
     fullName: <
   - name: TValue
@@ -1701,7 +1729,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     fullName: System.Collections.Generic.ICollection
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TValue
@@ -1710,30 +1738,49 @@ references:
     fullName: )
 - uid: System.Collections.IDictionary
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IDictionary.yml
   name: IDictionary
   fullName: System.Collections.IDictionary
+  type: Interface
 - uid: System.Collections
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+  type: Namespace
 - uid: System.Collections.ICollection
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.ICollection.yml
   name: ICollection
   fullName: System.Collections.ICollection
+  type: Interface
 - uid: System.Collections.IDictionaryEnumerator
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IDictionaryEnumerator.yml
   name: IDictionaryEnumerator
   fullName: System.Collections.IDictionaryEnumerator
+  type: Interface
 - uid: System.NotImplementedException
+  isExternal: false
+  href: System.NotImplementedException.yml
+  name: NotImplementedException
+  fullName: System.NotImplementedException
+  type: Class
 - uid: System.Array
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Array.yml
   name: Array
   fullName: System.Array
+  type: Class
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.Collections.Generic.KeyNotFoundException
   isExternal: false
   href: System.Collections.Generic.KeyNotFoundException.yml
@@ -1741,6 +1788,12 @@ references:
   fullName: System.Collections.Generic.KeyNotFoundException
   type: Class
 - uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  href: System.NotSupportedException.yml
+  name: NotSupportedException
+  fullName: System.NotSupportedException
+  type: Class
 - uid: '{TKey}'
   isExternal: false
   name: TKey
@@ -1752,6 +1805,7 @@ references:
 - uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<KeyValuePair<TKey, TValue>>
   name.vb: IEnumerable(Of KeyValuePair(Of TKey, TValue))
   fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey, TValue>>
@@ -1760,13 +1814,13 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     fullName: System.Collections.Generic.KeyValuePair
-    isExternal: true
+    href: System.Collections.Generic.KeyValuePair`2.yml
   - name: <
     fullName: <
   - name: TKey
@@ -1783,13 +1837,13 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     fullName: System.Collections.Generic.KeyValuePair
-    isExternal: true
+    href: System.Collections.Generic.KeyValuePair`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey
@@ -1804,16 +1858,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerator`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerator`1.yml
   name: IEnumerator<T>
   name.vb: IEnumerator(Of T)
   fullName: System.Collections.Generic.IEnumerator<T>
   fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerator`1
     name: IEnumerator
     fullName: System.Collections.Generic.IEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerator`1.yml
   - name: <
     fullName: <
   - name: T
@@ -1824,7 +1880,7 @@ references:
   - uid: System.Collections.Generic.IEnumerator`1
     name: IEnumerator
     fullName: System.Collections.Generic.IEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerator`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -1900,6 +1956,12 @@ references:
   - name: )
     fullName: )
 - uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
 - uid: System.Collections.Immutable.IImmutableDictionary`2
   parent: System.Collections.Immutable
   isExternal: false
@@ -1943,6 +2005,7 @@ references:
 - uid: System.Collections.Generic.KeyValuePair{{TKey},{TValue}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.KeyValuePair`2
+  href: System.Collections.Generic.KeyValuePair`2.yml
   name: KeyValuePair<TKey, TValue>
   name.vb: KeyValuePair(Of TKey, TValue)
   fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
@@ -1951,7 +2014,7 @@ references:
   - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     fullName: System.Collections.Generic.KeyValuePair
-    isExternal: true
+    href: System.Collections.Generic.KeyValuePair`2.yml
   - name: <
     fullName: <
   - name: TKey
@@ -1966,7 +2029,7 @@ references:
   - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     fullName: System.Collections.Generic.KeyValuePair
-    isExternal: true
+    href: System.Collections.Generic.KeyValuePair`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey
@@ -1979,16 +2042,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.KeyValuePair`2
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.KeyValuePair`2.yml
   name: KeyValuePair<TKey, TValue>
   name.vb: KeyValuePair(Of TKey, TValue)
   fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
   fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  type: Struct
   spec.csharp:
   - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     fullName: System.Collections.Generic.KeyValuePair
-    isExternal: true
+    href: System.Collections.Generic.KeyValuePair`2.yml
   - name: <
     fullName: <
   - name: TKey
@@ -2003,7 +2068,7 @@ references:
   - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     fullName: System.Collections.Generic.KeyValuePair
-    isExternal: true
+    href: System.Collections.Generic.KeyValuePair`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey
@@ -2015,7 +2080,8 @@ references:
   - name: )
     fullName: )
 - uid: System.Collections.Generic.KeyValuePair{{TKey},{TValue}}[]
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.KeyValuePair`2.yml
   name: KeyValuePair<TKey, TValue>[]
   name.vb: KeyValuePair(Of TKey, TValue)()
   fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>[]
@@ -2024,7 +2090,7 @@ references:
   - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     fullName: System.Collections.Generic.KeyValuePair
-    isExternal: true
+    href: System.Collections.Generic.KeyValuePair`2.yml
   - name: <
     fullName: <
   - name: TKey
@@ -2041,7 +2107,7 @@ references:
   - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     fullName: System.Collections.Generic.KeyValuePair
-    isExternal: true
+    href: System.Collections.Generic.KeyValuePair`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey
@@ -2057,6 +2123,7 @@ references:
 - uid: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerator`1
+  href: System.Collections.Generic.IEnumerator`1.yml
   name: IEnumerator<KeyValuePair<TKey, TValue>>
   name.vb: IEnumerator(Of KeyValuePair(Of TKey, TValue))
   fullName: System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey, TValue>>
@@ -2065,13 +2132,13 @@ references:
   - uid: System.Collections.Generic.IEnumerator`1
     name: IEnumerator
     fullName: System.Collections.Generic.IEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerator`1.yml
   - name: <
     fullName: <
   - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     fullName: System.Collections.Generic.KeyValuePair
-    isExternal: true
+    href: System.Collections.Generic.KeyValuePair`2.yml
   - name: <
     fullName: <
   - name: TKey
@@ -2088,13 +2155,13 @@ references:
   - uid: System.Collections.Generic.IEnumerator`1
     name: IEnumerator
     fullName: System.Collections.Generic.IEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerator`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     fullName: System.Collections.Generic.KeyValuePair
-    isExternal: true
+    href: System.Collections.Generic.KeyValuePair`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey
@@ -2109,6 +2176,8 @@ references:
     fullName: )
 - uid: System.Collections.IEnumerator
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerator.yml
   name: IEnumerator
   fullName: System.Collections.IEnumerator
+  type: Interface

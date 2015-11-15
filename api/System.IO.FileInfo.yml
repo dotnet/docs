@@ -9,9 +9,11 @@ items:
   - System.IO.FileInfo.CopyTo(System.String,System.Boolean)
   - System.IO.FileInfo.Create
   - System.IO.FileInfo.CreateText
+  - System.IO.FileInfo.Decrypt
   - System.IO.FileInfo.Delete
   - System.IO.FileInfo.Directory
   - System.IO.FileInfo.DirectoryName
+  - System.IO.FileInfo.Encrypt
   - System.IO.FileInfo.Exists
   - System.IO.FileInfo.IsReadOnly
   - System.IO.FileInfo.Length
@@ -23,28 +25,33 @@ items:
   - System.IO.FileInfo.OpenRead
   - System.IO.FileInfo.OpenText
   - System.IO.FileInfo.OpenWrite
+  - System.IO.FileInfo.Replace(System.String,System.String)
+  - System.IO.FileInfo.Replace(System.String,System.String,System.Boolean)
   - System.IO.FileInfo.ToString
+  - System.IO.FileInfo.UnsafeCreateFileInfo(System.String)
   href: System.IO.FileInfo.yml
   name: FileInfo
   fullName: System.IO.FileInfo
   type: Class
   source:
     remote: &o0
-      path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
+      path: src/mscorlib/src/System/IO/FileInfo.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 15
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 32
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Provides properties and instance methods for the creation, copying, deletion, moving, and opening of files, and aids in the creation of @'System.IO.FileStream' objects. This class cannot be inherited.To browse the .NET Framework source code for this type, see the Reference Source.
   syntax:
-    content: 'public sealed class FileInfo : FileSystemInfo'
-    content.vb: Public NotInheritable Class FileInfo Inherits FileSystemInfo
+    content: 'public sealed class FileInfo : FileSystemInfo, ISerializable'
+    content.vb: Public NotInheritable Class FileInfo Inherits FileSystemInfo Implements ISerializable
   inheritance:
   - System.Object
   - System.IO.FileSystemInfo
+  implements:
+  - System.Runtime.Serialization.ISerializable
   inheritedMembers:
   - System.IO.FileSystemInfo.FullPath
   - System.IO.FileSystemInfo.OriginalPath
@@ -58,12 +65,35 @@ items:
   - System.IO.FileSystemInfo.LastWriteTimeUtc
   - System.IO.FileSystemInfo.Refresh
   - System.IO.FileSystemInfo.Attributes
+  - System.IO.FileSystemInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+- uid: System.IO.FileInfo.UnsafeCreateFileInfo(System.String)
+  id: UnsafeCreateFileInfo(System.String)
+  parent: System.IO.FileInfo
+  href: System.IO.FileInfo.yml
+  name: UnsafeCreateFileInfo(String)
+  fullName: System.IO.FileInfo.UnsafeCreateFileInfo(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  syntax:
+    content: public static FileInfo UnsafeCreateFileInfo(string fileName)
+    content.vb: Public Shared Function UnsafeCreateFileInfo(fileName As String) As FileInfo
+    parameters:
+    - id: fileName
+      type: System.String
+    return:
+      type: System.IO.FileInfo
 - uid: System.IO.FileInfo.#ctor(System.String)
   id: '#ctor(System.String)'
   parent: System.IO.FileInfo
@@ -73,10 +103,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 22
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 60
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Initializes a new instance of the @'System.IO.FileInfo' class, which acts as a wrapper for a file path.
   syntax:
@@ -108,10 +138,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 59
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 140
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets the name of the file.
   syntax:
@@ -131,10 +161,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 65
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 145
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets the size, in bytes, of the current file.
   syntax:
@@ -158,10 +188,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 79
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 162
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets a string representing the directory's full path.
   syntax:
@@ -187,10 +217,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 89
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 182
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets an instance of the parent directory.
   syntax:
@@ -214,10 +244,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 100
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 193
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets or sets a value that determines if the current file is read only.
   syntax:
@@ -245,10 +275,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 115
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 222
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates a @'System.IO.StreamReader' with UTF8 encoding that reads from an existing text file.
   syntax:
@@ -275,10 +305,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 122
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 228
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates a @'System.IO.StreamWriter' that writes a new text file.
   syntax:
@@ -303,10 +333,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 128
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 233
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates a @'System.IO.StreamWriter' that appends text to the file represented by this instance of the @'System.IO.FileInfo'.
   syntax:
@@ -324,10 +354,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 144
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 248
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Copies an existing file to a new file, disallowing the overwriting of an existing file.
   syntax:
@@ -366,10 +396,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 166
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 269
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Copies an existing file to a new file, allowing the overwriting of an existing file.
   syntax:
@@ -411,10 +441,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 178
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 280
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates a file.
   syntax:
@@ -432,10 +462,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 193
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 294
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Permanently deletes a file.
   syntax:
@@ -449,6 +479,68 @@ items:
     description: The caller does not have the required permission.
   - type: System.UnauthorizedAccessException
     description: The path is a directory.
+- uid: System.IO.FileInfo.Decrypt
+  id: Decrypt
+  parent: System.IO.FileInfo
+  href: System.IO.FileInfo.yml
+  name: Decrypt()
+  fullName: System.IO.FileInfo.Decrypt()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 315
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Decrypts a file that was encrypted by the current account using the @'System.IO.FileInfo.Encrypt' method.
+  syntax:
+    content: public void Decrypt()
+    content.vb: Public Sub Decrypt
+  exceptions:
+  - type: System.IO.DriveNotFoundException
+    description: An invalid drive was specified.
+  - type: System.IO.FileNotFoundException
+    description: The file described by the current @'System.IO.FileInfo' object could not be found.
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.NotSupportedException
+    description: The file system is not NTFS.
+  - type: System.PlatformNotSupportedException
+    description: The current operating system is not Microsoft Windows NT or later.
+  - type: System.UnauthorizedAccessException
+    description: The file described by the current @'System.IO.FileInfo' object is read-only.-or- This operation is not supported on the current platform.-or- The caller does not have the required permission.
+- uid: System.IO.FileInfo.Encrypt
+  id: Encrypt
+  parent: System.IO.FileInfo
+  href: System.IO.FileInfo.yml
+  name: Encrypt()
+  fullName: System.IO.FileInfo.Encrypt()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 321
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Encrypts a file so that only the account used to encrypt the file can decrypt it.
+  syntax:
+    content: public void Encrypt()
+    content.vb: Public Sub Encrypt
+  exceptions:
+  - type: System.IO.DriveNotFoundException
+    description: An invalid drive was specified.
+  - type: System.IO.FileNotFoundException
+    description: The file described by the current @'System.IO.FileInfo' object could not be found.
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file.
+  - type: System.NotSupportedException
+    description: The file system is not NTFS.
+  - type: System.PlatformNotSupportedException
+    description: The current operating system is not Microsoft Windows NT or later.
+  - type: System.UnauthorizedAccessException
+    description: The file described by the current @'System.IO.FileInfo' object is read-only.-or- This operation is not supported on the current platform.-or- The caller does not have the required permission.
 - uid: System.IO.FileInfo.Exists
   id: Exists
   parent: System.IO.FileInfo
@@ -458,10 +550,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 204
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 332
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets a value indicating whether a file exists.
   syntax:
@@ -481,10 +573,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 224
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 357
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens a file in the specified mode.
   syntax:
@@ -515,10 +607,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 229
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 361
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens a file in the specified mode with read, write, or read/write access.
   syntax:
@@ -554,10 +646,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 234
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 365
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Opens a file in the specified mode with read, write, or read/write access and the specified sharing option.
   syntax:
@@ -596,10 +688,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 240
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 371
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates a read-only @'System.IO.FileStream'.
   syntax:
@@ -624,10 +716,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 248
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 380
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates a write-only @'System.IO.FileStream'.
   syntax:
@@ -650,10 +742,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 262
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 398
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Moves a specified file to a new location, providing the option to specify a new file name.
   syntax:
@@ -682,6 +774,83 @@ items:
     description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
   - type: System.NotSupportedException
     description: '*destFileName* contains a colon (:) in the middle of the string.'
+- uid: System.IO.FileInfo.Replace(System.String,System.String)
+  id: Replace(System.String,System.String)
+  parent: System.IO.FileInfo
+  href: System.IO.FileInfo.yml
+  name: Replace(String, String)
+  fullName: System.IO.FileInfo.Replace(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 427
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Replaces the contents of a specified file with the file described by the current @'System.IO.FileInfo' object, deleting the original file, and creating a backup of the replaced file.
+  syntax:
+    content: public FileInfo Replace(string destinationFileName, string destinationBackupFileName)
+    content.vb: Public Function Replace(destinationFileName As String, destinationBackupFileName As String) As FileInfo
+    parameters:
+    - id: destinationFileName
+      type: System.String
+      description: The name of a file to replace with the current file.
+    - id: destinationBackupFileName
+      type: System.String
+      description: The name of a file with which to create a backup of the file described by the *destFileName* parameter.
+    return:
+      type: System.IO.FileInfo
+      description: A @'System.IO.FileInfo' object that encapsulates information about the file described by the *destFileName* parameter.
+  exceptions:
+  - type: System.ArgumentException
+    description: The path described by the *destFileName* parameter was not of a legal form.-or-The path described by the *destBackupFileName* parameter was not of a legal form.
+  - type: System.ArgumentNullException
+    description: The *destFileName* parameter is null.
+  - type: System.IO.FileNotFoundException
+    description: The file described by the current @'System.IO.FileInfo' object could not be found.-or-The file described by the *destinationFileName* parameter could not be found.
+  - type: System.PlatformNotSupportedException
+    description: The current operating system is not Microsoft Windows NT or later.
+- uid: System.IO.FileInfo.Replace(System.String,System.String,System.Boolean)
+  id: Replace(System.String,System.String,System.Boolean)
+  parent: System.IO.FileInfo
+  href: System.IO.FileInfo.yml
+  name: Replace(String, String, Boolean)
+  fullName: System.IO.FileInfo.Replace(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 433
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Replaces the contents of a specified file with the file described by the current @'System.IO.FileInfo' object, deleting the original file, and creating a backup of the replaced file.  Also specifies whether to ignore merge errors.
+  syntax:
+    content: public FileInfo Replace(string destinationFileName, string destinationBackupFileName, bool ignoreMetadataErrors)
+    content.vb: Public Function Replace(destinationFileName As String, destinationBackupFileName As String, ignoreMetadataErrors As Boolean) As FileInfo
+    parameters:
+    - id: destinationFileName
+      type: System.String
+      description: The name of a file to replace with the current file.
+    - id: destinationBackupFileName
+      type: System.String
+      description: The name of a file with which to create a backup of the file described by the *destFileName* parameter.
+    - id: ignoreMetadataErrors
+      type: System.Boolean
+      description: true to ignore merge errors (such as attributes and ACLs) from the replaced file to the replacement file; otherwise false.
+    return:
+      type: System.IO.FileInfo
+      description: A @'System.IO.FileInfo' object that encapsulates information about the file described by the *destFileName* parameter.
+  exceptions:
+  - type: System.ArgumentException
+    description: The path described by the *destFileName* parameter was not of a legal form.-or-The path described by the *destBackupFileName* parameter was not of a legal form.
+  - type: System.ArgumentNullException
+    description: The *destFileName* parameter is null.
+  - type: System.IO.FileNotFoundException
+    description: The file described by the current @'System.IO.FileInfo' object could not be found.-or-The file described by the *destinationFileName* parameter could not be found.
+  - type: System.PlatformNotSupportedException
+    description: The current operating system is not Microsoft Windows NT or later.
 - uid: System.IO.FileInfo.ToString
   id: ToString
   parent: System.IO.FileInfo
@@ -691,10 +860,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileInfo.cs
-    startLine: 284
+    path: src/mscorlib/src/System/IO/FileInfo.cs
+    startLine: 441
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the path as a string.
   syntax:
@@ -709,11 +878,14 @@ references:
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.IO.FileSystemInfo
   parent: System.IO
   isExternal: false
@@ -811,133 +983,181 @@ references:
   href: System.IO.FileSystemInfo.yml
   name: Attributes
   fullName: System.IO.FileSystemInfo.Attributes
+- uid: System.IO.FileSystemInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  href: System.IO.FileSystemInfo.yml
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.IO.FileSystemInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.IO.FileSystemInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.IO.FileSystemInfo.GetObjectData
+    href: System.IO.FileSystemInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    href: System.Runtime.Serialization.SerializationInfo.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    href: System.Runtime.Serialization.StreamingContext.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.FileSystemInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.IO.FileSystemInfo.GetObjectData
+    href: System.IO.FileSystemInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    href: System.Runtime.Serialization.SerializationInfo.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    href: System.Runtime.Serialization.StreamingContext.yml
+  - name: )
+    fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -946,7 +1166,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1001,11 +1221,21 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
+- uid: System.IO.FileInfo
+  parent: System.IO
+  isExternal: false
+  href: System.IO.FileInfo.yml
+  name: FileInfo
+  fullName: System.IO.FileInfo
+  type: Class
 - uid: System.IO.FileSystemInfo.Name
   parent: System.IO.FileSystemInfo
   isExternal: false
@@ -1014,9 +1244,11 @@ references:
   fullName: System.IO.FileSystemInfo.Name
 - uid: System.Int64
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int64.yml
   name: Int64
   fullName: System.Int64
+  type: Struct
 - uid: System.IO.DirectoryInfo
   parent: System.IO
   isExternal: false
@@ -1026,25 +1258,24 @@ references:
   type: Class
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.IO.StreamReader
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.StreamReader.yml
   name: StreamReader
   fullName: System.IO.StreamReader
+  type: Class
 - uid: System.IO.StreamWriter
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.StreamWriter.yml
   name: StreamWriter
   fullName: System.IO.StreamWriter
-- uid: System.IO.FileInfo
-  parent: System.IO
-  isExternal: false
-  href: System.IO.FileInfo.yml
-  name: FileInfo
-  fullName: System.IO.FileInfo
   type: Class
 - uid: System.IO.FileStream
   parent: System.IO
@@ -1085,29 +1316,36 @@ references:
   fullName: System.IO.FileSystemInfo.Exists
 - uid: System.IO.FileMode
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.FileMode.yml
   name: FileMode
   fullName: System.IO.FileMode
+  type: Enum
 - uid: System.IO.FileAccess
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.FileAccess.yml
   name: FileAccess
   fullName: System.IO.FileAccess
+  type: Enum
 - uid: System.IO.FileShare
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.FileShare.yml
   name: FileShare
   fullName: System.IO.FileShare
+  type: Enum
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1116,7 +1354,7 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )

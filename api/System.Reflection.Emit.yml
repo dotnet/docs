@@ -61,6 +61,7 @@ references:
   name: AssemblyBuilder
   fullName: System.Reflection.Emit.AssemblyBuilder
   type: Class
+  summary: Defines and represents a dynamic assembly.
 - uid: System.Reflection.Emit.AssemblyBuilderAccess
   parent: System.Reflection.Emit
   isExternal: false
@@ -68,6 +69,7 @@ references:
   name: AssemblyBuilderAccess
   fullName: System.Reflection.Emit.AssemblyBuilderAccess
   type: Enum
+  summary: Defines the access modes for a dynamic assembly.
 - uid: System.Reflection.Emit.ConstructorBuilder
   parent: System.Reflection.Emit
   isExternal: false
@@ -75,6 +77,7 @@ references:
   name: ConstructorBuilder
   fullName: System.Reflection.Emit.ConstructorBuilder
   type: Class
+  summary: Defines and represents a constructor of a dynamic class.
 - uid: System.Reflection.Emit.DynamicILInfo
   parent: System.Reflection.Emit
   isExternal: false
@@ -82,6 +85,7 @@ references:
   name: DynamicILInfo
   fullName: System.Reflection.Emit.DynamicILInfo
   type: Class
+  summary: Provides support for alternative ways to generate the Microsoft intermediate language (MSIL) and metadata for a dynamic method, including methods for creating tokens and for inserting the code, exception handling, and local variable signature blobs.
 - uid: System.Reflection.Emit.DynamicMethod
   parent: System.Reflection.Emit
   isExternal: false
@@ -89,6 +93,7 @@ references:
   name: DynamicMethod
   fullName: System.Reflection.Emit.DynamicMethod
   type: Class
+  summary: Defines and represents a dynamic method that can be compiled, executed, and discarded. Discarded methods are available for garbage collection.
 - uid: System.Reflection.Emit.EventBuilder
   parent: System.Reflection.Emit
   isExternal: false
@@ -96,6 +101,7 @@ references:
   name: EventBuilder
   fullName: System.Reflection.Emit.EventBuilder
   type: Class
+  summary: Defines events for a class.
 - uid: System.Reflection.Emit.EventToken
   parent: System.Reflection.Emit
   isExternal: false
@@ -103,6 +109,7 @@ references:
   name: EventToken
   fullName: System.Reflection.Emit.EventToken
   type: Struct
+  summary: Represents the Token returned by the metadata to represent an event.
 - uid: System.Reflection.Emit.FieldBuilder
   parent: System.Reflection.Emit
   isExternal: false
@@ -110,6 +117,7 @@ references:
   name: FieldBuilder
   fullName: System.Reflection.Emit.FieldBuilder
   type: Class
+  summary: Defines and represents a field. This class cannot be inherited.
 - uid: System.Reflection.Emit.FieldToken
   parent: System.Reflection.Emit
   isExternal: false
@@ -117,6 +125,7 @@ references:
   name: FieldToken
   fullName: System.Reflection.Emit.FieldToken
   type: Struct
+  summary: The FieldToken struct is an object representation of a token that represents a field.
 - uid: System.Reflection.Emit.ILGenerator
   parent: System.Reflection.Emit
   isExternal: false
@@ -124,6 +133,7 @@ references:
   name: ILGenerator
   fullName: System.Reflection.Emit.ILGenerator
   type: Class
+  summary: Generates Microsoft intermediate language (MSIL) instructions.
 - uid: System.Reflection.Emit.Label
   parent: System.Reflection.Emit
   isExternal: false
@@ -131,6 +141,7 @@ references:
   name: Label
   fullName: System.Reflection.Emit.Label
   type: Struct
+  summary: Represents a label in the instruction stream. Label is used in conjunction with the @'System.Reflection.Emit.ILGenerator' class.
 - uid: System.Reflection.Emit.LocalBuilder
   parent: System.Reflection.Emit
   isExternal: false
@@ -138,6 +149,7 @@ references:
   name: LocalBuilder
   fullName: System.Reflection.Emit.LocalBuilder
   type: Class
+  summary: Represents a local variable within a method or constructor.
 - uid: System.Reflection.Emit.MethodBuilder
   parent: System.Reflection.Emit
   isExternal: false
@@ -145,6 +157,7 @@ references:
   name: MethodBuilder
   fullName: System.Reflection.Emit.MethodBuilder
   type: Class
+  summary: Defines and represents a method (or constructor) on a dynamic class.
 - uid: System.Reflection.Emit.ExceptionHandler
   parent: System.Reflection.Emit
   isExternal: false
@@ -152,7 +165,7 @@ references:
   name: ExceptionHandler
   fullName: System.Reflection.Emit.ExceptionHandler
   type: Struct
-  summary: Describes exception handler in a method body.
+  summary: Represents an exception handler in a byte array of IL to be passed to a method such as @'System.Reflection.Emit.MethodBuilder.SetMethodBody(System.Byte[],System.Int32,System.Byte[],System.Collections.Generic.IEnumerable{System.Reflection.Emit.ExceptionHandler},System.Collections.Generic.IEnumerable{System.Int32})'.
 - uid: System.Reflection.Emit.CustomAttributeBuilder
   parent: System.Reflection.Emit
   isExternal: false
@@ -160,6 +173,7 @@ references:
   name: CustomAttributeBuilder
   fullName: System.Reflection.Emit.CustomAttributeBuilder
   type: Class
+  summary: Helps build custom attributes.
 - uid: System.Reflection.Emit.MethodToken
   parent: System.Reflection.Emit
   isExternal: false
@@ -167,6 +181,7 @@ references:
   name: MethodToken
   fullName: System.Reflection.Emit.MethodToken
   type: Struct
+  summary: The MethodToken struct is an object representation of a token that represents a method.
 - uid: System.Reflection.Emit.ModuleBuilder
   parent: System.Reflection.Emit
   isExternal: false
@@ -174,6 +189,7 @@ references:
   name: ModuleBuilder
   fullName: System.Reflection.Emit.ModuleBuilder
   type: Class
+  summary: Defines and represents a module in a dynamic assembly.
 - uid: System.Reflection.Emit.PEFileKinds
   parent: System.Reflection.Emit
   isExternal: false
@@ -181,12 +197,14 @@ references:
   name: PEFileKinds
   fullName: System.Reflection.Emit.PEFileKinds
   type: Enum
+  summary: Specifies the type of the portable executable (PE) file.
 - uid: System.Reflection.Emit.OpCodes
   isExternal: false
   href: System.Reflection.Emit.OpCodes.yml
   name: OpCodes
   fullName: System.Reflection.Emit.OpCodes
   type: Class
+  summary: Provides field representations of the Microsoft Intermediate Language (MSIL) instructions for emission by the @'System.Reflection.Emit.ILGenerator' class members (such as @'System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode)').
 - uid: System.Reflection.Emit.OpCode
   parent: System.Reflection.Emit
   isExternal: false
@@ -194,6 +212,7 @@ references:
   name: OpCode
   fullName: System.Reflection.Emit.OpCode
   type: Struct
+  summary: Describes an intermediate language (IL) instruction.
 - uid: System.Reflection.Emit.OpCodeType
   parent: System.Reflection.Emit
   isExternal: false
@@ -201,6 +220,7 @@ references:
   name: OpCodeType
   fullName: System.Reflection.Emit.OpCodeType
   type: Enum
+  summary: Describes the types of the Microsoft intermediate language (MSIL) instructions.
 - uid: System.Reflection.Emit.StackBehaviour
   parent: System.Reflection.Emit
   isExternal: false
@@ -208,6 +228,7 @@ references:
   name: StackBehaviour
   fullName: System.Reflection.Emit.StackBehaviour
   type: Enum
+  summary: Describes how values are pushed onto a stack or popped off a stack.
 - uid: System.Reflection.Emit.OperandType
   parent: System.Reflection.Emit
   isExternal: false
@@ -215,6 +236,7 @@ references:
   name: OperandType
   fullName: System.Reflection.Emit.OperandType
   type: Enum
+  summary: Describes the operand type of Microsoft intermediate language (MSIL) instruction.
 - uid: System.Reflection.Emit.FlowControl
   parent: System.Reflection.Emit
   isExternal: false
@@ -222,6 +244,7 @@ references:
   name: FlowControl
   fullName: System.Reflection.Emit.FlowControl
   type: Enum
+  summary: Describes how an instruction alters the flow of control.
 - uid: System.Reflection.Emit.ParameterBuilder
   parent: System.Reflection.Emit
   isExternal: false
@@ -229,6 +252,7 @@ references:
   name: ParameterBuilder
   fullName: System.Reflection.Emit.ParameterBuilder
   type: Class
+  summary: Creates or associates parameter information.
 - uid: System.Reflection.Emit.ParameterToken
   parent: System.Reflection.Emit
   isExternal: false
@@ -236,6 +260,7 @@ references:
   name: ParameterToken
   fullName: System.Reflection.Emit.ParameterToken
   type: Struct
+  summary: The ParameterToken struct is an opaque representation of the token returned by the metadata to represent a parameter.
 - uid: System.Reflection.Emit.PropertyBuilder
   parent: System.Reflection.Emit
   isExternal: false
@@ -243,6 +268,7 @@ references:
   name: PropertyBuilder
   fullName: System.Reflection.Emit.PropertyBuilder
   type: Class
+  summary: Defines the properties for a type.
 - uid: System.Reflection.Emit.PropertyToken
   parent: System.Reflection.Emit
   isExternal: false
@@ -250,6 +276,7 @@ references:
   name: PropertyToken
   fullName: System.Reflection.Emit.PropertyToken
   type: Struct
+  summary: The PropertyToken struct is an opaque representation of the Token returned by the metadata to represent a property.
 - uid: System.Reflection.Emit.SignatureHelper
   parent: System.Reflection.Emit
   isExternal: false
@@ -257,6 +284,7 @@ references:
   name: SignatureHelper
   fullName: System.Reflection.Emit.SignatureHelper
   type: Class
+  summary: Provides methods for building signatures.
 - uid: System.Reflection.Emit.SignatureToken
   parent: System.Reflection.Emit
   isExternal: false
@@ -264,6 +292,7 @@ references:
   name: SignatureToken
   fullName: System.Reflection.Emit.SignatureToken
   type: Struct
+  summary: Represents the Token returned by the metadata to represent a signature.
 - uid: System.Reflection.Emit.StringToken
   parent: System.Reflection.Emit
   isExternal: false
@@ -271,6 +300,7 @@ references:
   name: StringToken
   fullName: System.Reflection.Emit.StringToken
   type: Struct
+  summary: Represents a token that represents a string.
 - uid: System.Reflection.Emit.PackingSize
   parent: System.Reflection.Emit
   isExternal: false
@@ -278,6 +308,7 @@ references:
   name: PackingSize
   fullName: System.Reflection.Emit.PackingSize
   type: Enum
+  summary: Specifies one of two factors that determine the memory alignment of fields when a type is marshaled.
 - uid: System.Reflection.Emit.TypeBuilder
   parent: System.Reflection.Emit
   isExternal: false
@@ -285,12 +316,14 @@ references:
   name: TypeBuilder
   fullName: System.Reflection.Emit.TypeBuilder
   type: Class
+  summary: Defines and creates new instances of classes during run time.
 - uid: System.Reflection.Emit.GenericTypeParameterBuilder
   isExternal: false
   href: System.Reflection.Emit.GenericTypeParameterBuilder.yml
   name: GenericTypeParameterBuilder
   fullName: System.Reflection.Emit.GenericTypeParameterBuilder
   type: Class
+  summary: Defines and creates generic type parameters for dynamically defined generic types and methods. This class cannot be inherited.
 - uid: System.Reflection.Emit.EnumBuilder
   parent: System.Reflection.Emit
   isExternal: false
@@ -298,6 +331,7 @@ references:
   name: EnumBuilder
   fullName: System.Reflection.Emit.EnumBuilder
   type: Class
+  summary: Describes and represents an enumeration type.
 - uid: System.Reflection.Emit.TypeToken
   parent: System.Reflection.Emit
   isExternal: false
@@ -305,6 +339,7 @@ references:
   name: TypeToken
   fullName: System.Reflection.Emit.TypeToken
   type: Struct
+  summary: Represents the Token returned by the metadata to represent a type.
 - uid: System.Reflection.Emit.UnmanagedMarshal
   parent: System.Reflection.Emit
   isExternal: false
@@ -312,6 +347,7 @@ references:
   name: UnmanagedMarshal
   fullName: System.Reflection.Emit.UnmanagedMarshal
   type: Class
+  summary: Represents the class that describes how to marshal a field from managed to unmanaged code. This class cannot be inherited.
 - uid: System.Reflection.Emit
   isExternal: false
   name: System.Reflection.Emit

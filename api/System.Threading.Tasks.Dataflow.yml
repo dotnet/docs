@@ -61,12 +61,7 @@ references:
   name: ExecutionDataflowBlockOptions
   fullName: System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions
   type: Class
-  summary: >-
-    Provides options used to configure the processing performed by dataflow blocks that
-
-    process each message through the invocation of a user-provided delegate, blocks such
-
-    as @'System.Threading.Tasks.Dataflow.ActionBlock`1' and @'System.Threading.Tasks.Dataflow.TransformBlock`2'.
+  summary: Provides options used to configure the processing performed by dataflow blocks that process each message through the invocation of a user-provided delegate. These are dataflow blocks such as @'System.Threading.Tasks.Dataflow.ActionBlock`1' and @'System.Threading.Tasks.Dataflow.TransformBlock`2'.
 - uid: System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions
   parent: System.Threading.Tasks.Dataflow
   isExternal: false
@@ -74,12 +69,7 @@ references:
   name: GroupingDataflowBlockOptions
   fullName: System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions
   type: Class
-  summary: >-
-    Provides options used to configure the processing performed by dataflow blocks that
-
-    group together multiple messages, blocks such as @'System.Threading.Tasks.Dataflow.JoinBlock`2' and
-
-    @'System.Threading.Tasks.Dataflow.BatchBlock`1'.
+  summary: Provides options used to configure the processing performed by dataflow blocks that group together multiple messages. These are dataflow blocks such as @'System.Threading.Tasks.Dataflow.JoinBlock`2' and @'System.Threading.Tasks.Dataflow.BatchBlock`1'.
 - uid: System.Threading.Tasks.Dataflow.DataflowLinkOptions
   parent: System.Threading.Tasks.Dataflow
   isExternal: false
@@ -161,7 +151,7 @@ references:
   fullName: System.Threading.Tasks.Dataflow.IReceivableSourceBlock<TOutput>
   fullName.vb: System.Threading.Tasks.Dataflow.IReceivableSourceBlock(Of TOutput)
   type: Interface
-  summary: Represents a dataflow block that supports receiving of messages without linking.
+  summary: Represents a dataflow block that supports receiving messages without linking.
   spec.csharp:
   - uid: System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1
     name: IReceivableSourceBlock
@@ -318,10 +308,7 @@ references:
   fullName: System.Threading.Tasks.Dataflow.BatchedJoinBlock<T1, T2>
   fullName.vb: System.Threading.Tasks.Dataflow.BatchedJoinBlock(Of T1, T2)
   type: Class
-  summary: >-
-    Provides a dataflow block that batches a specified number of inputs of potentially differing types
-
-    provided to one or more of its targets.
+  summary: Provides a dataflow block that batches a specified number of inputs of potentially differing types provided to one or more of its targets.
   spec.csharp:
   - uid: System.Threading.Tasks.Dataflow.BatchedJoinBlock`2
     name: BatchedJoinBlock
@@ -360,10 +347,7 @@ references:
   fullName: System.Threading.Tasks.Dataflow.BatchedJoinBlock<T1, T2, T3>
   fullName.vb: System.Threading.Tasks.Dataflow.BatchedJoinBlock(Of T1, T2, T3)
   type: Class
-  summary: >-
-    Provides a dataflow block that batches a specified number of inputs of potentially differing types
-
-    provided to one or more of its targets.
+  summary: Provides a dataflow block that batches a specified number of inputs of potentially differing types provided to one or more of its targets.
   spec.csharp:
   - uid: System.Threading.Tasks.Dataflow.BatchedJoinBlock`3
     name: BatchedJoinBlock
@@ -410,10 +394,7 @@ references:
   fullName: System.Threading.Tasks.Dataflow.BroadcastBlock<T>
   fullName.vb: System.Threading.Tasks.Dataflow.BroadcastBlock(Of T)
   type: Class
-  summary: >-
-    Provides a buffer for storing at most one element at time, overwriting each message with the next as it arrives.
-
-    Messages are broadcast to all linked targets, all of which may consume a clone of the message.
+  summary: Provides a buffer for storing at most one element at time, overwriting each message with the next as it arrives.  Messages are broadcast to all linked targets, all of which may consume a clone of the message.
   spec.csharp:
   - uid: System.Threading.Tasks.Dataflow.BroadcastBlock`1
     name: BroadcastBlock
@@ -475,7 +456,7 @@ references:
   fullName: System.Threading.Tasks.Dataflow.JoinBlock<T1, T2>
   fullName.vb: System.Threading.Tasks.Dataflow.JoinBlock(Of T1, T2)
   type: Class
-  summary: "Provides a dataflow block that joins across multiple dataflow sources, not necessarily of the same type,\r\nwaiting for one item to arrive for each type before they’re all released together as a tuple of one item per type."
+  summary: "Provides a dataflow block that joins across multiple dataflow sources, not necessarily of the same type, waiting for one item to arrive for each type before they’re all released together as a tuple consisting of one item per type."
   spec.csharp:
   - uid: System.Threading.Tasks.Dataflow.JoinBlock`2
     name: JoinBlock
@@ -514,7 +495,7 @@ references:
   fullName: System.Threading.Tasks.Dataflow.JoinBlock<T1, T2, T3>
   fullName.vb: System.Threading.Tasks.Dataflow.JoinBlock(Of T1, T2, T3)
   type: Class
-  summary: "Provides a dataflow block that joins across multiple dataflow sources, not necessarily of the same type,\r\nwaiting for one item to arrive for each type before they’re all released together as a tuple of one item per type."
+  summary: "Provides a dataflow block that joins across multiple dataflow sources, which are not necessarily of the same type, waiting for one item to arrive for each type before they’re all released together as a tuple that contains one item per type."
   spec.csharp:
   - uid: System.Threading.Tasks.Dataflow.JoinBlock`3
     name: JoinBlock

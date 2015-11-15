@@ -36,12 +36,14 @@ references:
   name: ApplicationVersionMatch
   fullName: System.Security.Policy.ApplicationVersionMatch
   type: Enum
+  summary: Specifies how to match versions when locating application trusts in a collection.
 - uid: System.Security.Policy.ApplicationTrust
   isExternal: false
   href: System.Security.Policy.ApplicationTrust.yml
   name: ApplicationTrust
   fullName: System.Security.Policy.ApplicationTrust
   type: Class
+  summary: Encapsulates security decisions about an application. This class cannot be inherited.
 - uid: System.Security.Policy.Evidence
   parent: System.Security.Policy
   isExternal: false
@@ -49,38 +51,7 @@ references:
   name: Evidence
   fullName: System.Security.Policy.Evidence
   type: Class
-  summary: >-
-    The Evidence class keeps track of information that can be used to make security decisions about
-
-    an assembly or an AppDomain.  There are two types of evidence, one is supplied by the CLR or a
-
-    host, the other supplied by the assembly itself.
-
-
-
-    We keep a dictionary that maps each type of possbile evidence to an EvidenceTypeDescriptor which
-
-    contains the evidence objects themselves if they exist as well as some extra metadata about that
-
-    type of evidence.  This dictionary is fully populated with keys for host evidence at all times and
-
-    for assembly evidence the first time the application evidence is touched.  This means that if a
-
-    Type key does not exist in the dictionary, then that particular type of evidence will never be
-
-    given to the assembly or AppDomain in question as host evidence.  The only exception is if the
-
-    user later manually adds host evidence via the AddHostEvidence API.
-
-
-
-    Assembly supplied evidence is created up front, however host supplied evidence may be lazily
-
-    created.  In the lazy creation case, the Type will map to either an EvidenceTypeDescriptor that does
-
-    not contain any evidence data or null.  As requests come in for that evidence, we'll populate the
-
-    EvidenceTypeDescriptor appropriately.
+  summary: Defines the set of information that constitutes input to security policy decisions. This class cannot be inherited.
 - uid: System.Security.Policy.EvidenceBase
   parent: System.Security.Policy
   isExternal: false
@@ -88,7 +59,7 @@ references:
   name: EvidenceBase
   fullName: System.Security.Policy.EvidenceBase
   type: Class
-  summary: Base class from which all objects to be used as Evidence must derive
+  summary: Provides a base class from which all objects to be used as evidence must derive.
 - uid: System.Security.Policy.IIdentityPermissionFactory
   parent: System.Security.Policy
   isExternal: false
@@ -96,12 +67,14 @@ references:
   name: IIdentityPermissionFactory
   fullName: System.Security.Policy.IIdentityPermissionFactory
   type: Interface
+  summary: Defines the method that creates a new identity permission.
 - uid: System.Security.Policy.PolicyException
   isExternal: false
   href: System.Security.Policy.PolicyException.yml
   name: PolicyException
   fullName: System.Security.Policy.PolicyException
   type: Class
+  summary: The exception that is thrown when policy forbids code to run.
 - uid: System.Security.Policy.PolicyStatementAttribute
   parent: System.Security.Policy
   isExternal: false
@@ -109,6 +82,7 @@ references:
   name: PolicyStatementAttribute
   fullName: System.Security.Policy.PolicyStatementAttribute
   type: Enum
+  summary: Defines special attribute flags for security policy on code groups.
 - uid: System.Security.Policy.PolicyStatement
   parent: System.Security.Policy
   isExternal: false
@@ -116,6 +90,7 @@ references:
   name: PolicyStatement
   fullName: System.Security.Policy.PolicyStatement
   type: Class
+  summary: Represents the statement of a @'System.Security.Policy.CodeGroup' describing the permissions and other information that apply to code with a particular set of evidence. This class cannot be inherited.
 - uid: System.Security.Policy.Site
   parent: System.Security.Policy
   isExternal: false
@@ -123,24 +98,28 @@ references:
   name: Site
   fullName: System.Security.Policy.Site
   type: Class
+  summary: Provides the Web site from which a code assembly originates as evidence for policy evaluation. This class cannot be inherited.
 - uid: System.Security.Policy.StrongName
   isExternal: false
   href: System.Security.Policy.StrongName.yml
   name: StrongName
   fullName: System.Security.Policy.StrongName
   type: Class
+  summary: Provides the strong name of a code assembly as evidence for policy evaluation. This class cannot be inherited.
 - uid: System.Security.Policy.Url
   isExternal: false
   href: System.Security.Policy.Url.yml
   name: Url
   fullName: System.Security.Policy.Url
   type: Class
+  summary: Provides the URL from which a code assembly originates as evidence for policy evaluation. This class cannot be inherited.
 - uid: System.Security.Policy.Zone
   isExternal: false
   href: System.Security.Policy.Zone.yml
   name: Zone
   fullName: System.Security.Policy.Zone
   type: Class
+  summary: Provides the security zone of a code assembly as evidence for policy evaluation. This class cannot be inherited.
 - uid: System.Security.Policy
   isExternal: false
   name: System.Security.Policy

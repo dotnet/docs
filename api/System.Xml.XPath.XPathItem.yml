@@ -612,3 +612,25 @@ references:
   isExternal: true
   name: IXmlNamespaceResolver
   fullName: IXmlNamespaceResolver
+- uid: System.FormatException
+  parent: System
+  isExternal: false
+  href: System.FormatException.yml
+  name: FormatException
+  fullName: System.FormatException
+  type: Class
+  summary: The exception that is thrown when the format of an argument is invalid, or when a composite format string is not well formed.
+- uid: System.InvalidCastException
+  isExternal: false
+  href: System.InvalidCastException.yml
+  name: InvalidCastException
+  fullName: System.InvalidCastException
+  type: Class
+  summary: The exception that is thrown for invalid casting or explicit conversion.
+- uid: System.OverflowException
+  isExternal: false
+  href: System.OverflowException.yml
+  name: OverflowException
+  fullName: System.OverflowException
+  type: Class
+  summary: The exception that is thrown when an arithmetic, casting, or conversion operation in a checked context results in an overflow.

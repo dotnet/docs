@@ -547,3 +547,10 @@ references:
   href: System.Text.DecoderFallbackBuffer.yml
   name: Remaining
   fullName: System.Text.DecoderFallbackBuffer.Remaining
+- uid: System.Text.DecoderFallbackException
+  isExternal: false
+  href: System.Text.DecoderFallbackException.yml
+  name: DecoderFallbackException
+  fullName: System.Text.DecoderFallbackException
+  type: Class
+  summary: The exception that is thrown when a decoder fallback operation fails. This class cannot be inherited.

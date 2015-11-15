@@ -33,12 +33,7 @@ references:
   name: Regex
   fullName: System.Text.RegularExpressions.Regex
   type: Class
-  summary: >-
-    Represents an immutable, compiled regular expression. Also
-
-    contains static methods that allow use of regular expressions without instantiating
-
-    a Regex explicitly.
+  summary: Represents an immutable regular expression.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.Text.RegularExpressions.MatchEvaluator
   parent: System.Text.RegularExpressions
   isExternal: false
@@ -46,6 +41,7 @@ references:
   name: MatchEvaluator
   fullName: System.Text.RegularExpressions.MatchEvaluator
   type: Delegate
+  summary: Represents the method that is called each time a regular expression match is found during a <see cref="Overload:System.Text.RegularExpressions.Regex.Replace" /> method operation.
 - uid: System.Text.RegularExpressions.Capture
   parent: System.Text.RegularExpressions
   isExternal: false
@@ -53,10 +49,7 @@ references:
   name: Capture
   fullName: System.Text.RegularExpressions.Capture
   type: Class
-  summary: >-
-    Represents the results from a single subexpression capture. The object represents
-
-    one substring for a single successful capture.
+  summary: Represents the results from a single successful subexpression capture.
 - uid: System.Text.RegularExpressions.CaptureCollection
   parent: System.Text.RegularExpressions
   isExternal: false
@@ -64,10 +57,7 @@ references:
   name: CaptureCollection
   fullName: System.Text.RegularExpressions.CaptureCollection
   type: Class
-  summary: >-
-    Represents a sequence of capture substrings. The object is used
-
-    to return the set of captures done by a single capturing group.
+  summary: Represents the set of captures made by a single capturing group.
 - uid: System.Text.RegularExpressions.Group
   parent: System.Text.RegularExpressions
   isExternal: false
@@ -75,12 +65,7 @@ references:
   name: Group
   fullName: System.Text.RegularExpressions.Group
   type: Class
-  summary: >-
-    Represents the results from a single capturing group. A capturing group can
-
-    capture zero, one, or more strings in a single match because of quantifiers, so
-
-    Group supplies a collection of Capture objects.
+  summary: Represents the results from a single capturing group.
 - uid: System.Text.RegularExpressions.GroupCollection
   parent: System.Text.RegularExpressions
   isExternal: false
@@ -88,10 +73,7 @@ references:
   name: GroupCollection
   fullName: System.Text.RegularExpressions.GroupCollection
   type: Class
-  summary: >-
-    Represents a sequence of capture substrings. The object is used
-
-    to return the set of captures done by a single capturing group.
+  summary: Returns the set of captured groups in a single match.
 - uid: System.Text.RegularExpressions.Match
   parent: System.Text.RegularExpressions
   isExternal: false
@@ -107,17 +89,14 @@ references:
   name: MatchCollection
   fullName: System.Text.RegularExpressions.MatchCollection
   type: Class
-  summary: >-
-    Represents the set of names appearing as capturing group
-
-    names in a regular expression.
+  summary: Represents the set of successful matches found by iteratively applying a regular expression pattern to the input string.
 - uid: System.Text.RegularExpressions.RegexMatchTimeoutException
   isExternal: false
   href: System.Text.RegularExpressions.RegexMatchTimeoutException.yml
   name: RegexMatchTimeoutException
   fullName: System.Text.RegularExpressions.RegexMatchTimeoutException
   type: Class
-  summary: This is the exception that is thrown when a RegEx matching timeout occurs.
+  summary: The exception that is thrown when the execution time of a regular expression pattern-matching method exceeds its time-out interval.
 - uid: System.Text.RegularExpressions.RegexOptions
   parent: System.Text.RegularExpressions
   isExternal: false
@@ -125,6 +104,7 @@ references:
   name: RegexOptions
   fullName: System.Text.RegularExpressions.RegexOptions
   type: Enum
+  summary: Provides enumerated values to use to set regular expression options.
 - uid: System.Text.RegularExpressions
   isExternal: false
   name: System.Text.RegularExpressions

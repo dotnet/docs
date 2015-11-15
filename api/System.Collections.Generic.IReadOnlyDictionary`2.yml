@@ -531,3 +531,17 @@ references:
     fullName: TValue
   - name: )
     fullName: )
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.Collections.Generic.KeyNotFoundException
+  isExternal: false
+  href: System.Collections.Generic.KeyNotFoundException.yml
+  name: KeyNotFoundException
+  fullName: System.Collections.Generic.KeyNotFoundException
+  type: Class
+  summary: The exception that is thrown when the key specified for accessing an element in a collection does not match any key in the collection.

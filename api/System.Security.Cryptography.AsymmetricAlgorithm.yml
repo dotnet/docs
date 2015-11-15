@@ -627,3 +627,11 @@ references:
   name: AsymmetricAlgorithm
   fullName: System.Security.Cryptography.AsymmetricAlgorithm
   type: Class
+- uid: System.Security.Cryptography.CryptographicException
+  parent: System.Security.Cryptography
+  isExternal: false
+  href: System.Security.Cryptography.CryptographicException.yml
+  name: CryptographicException
+  fullName: System.Security.Cryptography.CryptographicException
+  type: Class
+  summary: The exception that is thrown when an error occurs during a cryptographic operation.

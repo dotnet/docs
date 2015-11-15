@@ -30,6 +30,7 @@ references:
   name: WebSocket
   fullName: System.Net.WebSockets.WebSocket
   type: Class
+  summary: The WebSocket class allows applications to send and receive data after the WebSocket upgrade has completed.
 - uid: System.Net.WebSockets.WebSocketCloseStatus
   parent: System.Net.WebSockets
   isExternal: false
@@ -37,6 +38,7 @@ references:
   name: WebSocketCloseStatus
   fullName: System.Net.WebSockets.WebSocketCloseStatus
   type: Enum
+  summary: Represents well known WebSocket close codes as defined in section 11.7 of the WebSocket protocol spec.
 - uid: System.Net.WebSockets.WebSocketError
   parent: System.Net.WebSockets
   isExternal: false
@@ -44,12 +46,14 @@ references:
   name: WebSocketError
   fullName: System.Net.WebSockets.WebSocketError
   type: Enum
+  summary: Contains the list of possible WebSocket errors.
 - uid: System.Net.WebSockets.WebSocketException
   isExternal: false
   href: System.Net.WebSockets.WebSocketException.yml
   name: WebSocketException
   fullName: System.Net.WebSockets.WebSocketException
   type: Class
+  summary: Represents an exception that occurred when performing an operation on a WebSocket connection.
 - uid: System.Net.WebSockets.WebSocketMessageType
   parent: System.Net.WebSockets
   isExternal: false
@@ -57,12 +61,14 @@ references:
   name: WebSocketMessageType
   fullName: System.Net.WebSockets.WebSocketMessageType
   type: Enum
+  summary: Indicates the message type.
 - uid: System.Net.WebSockets.WebSocketReceiveResult
   isExternal: false
   href: System.Net.WebSockets.WebSocketReceiveResult.yml
   name: WebSocketReceiveResult
   fullName: System.Net.WebSockets.WebSocketReceiveResult
   type: Class
+  summary: An instance of this class represents the result of performing a single ReceiveAsync operation on a WebSocket.
 - uid: System.Net.WebSockets.WebSocketState
   parent: System.Net.WebSockets
   isExternal: false
@@ -70,6 +76,7 @@ references:
   name: WebSocketState
   fullName: System.Net.WebSockets.WebSocketState
   type: Enum
+  summary: Defines the different states a WebSockets instance can be in.
 - uid: System.Net.WebSockets
   isExternal: false
   name: System.Net.WebSockets

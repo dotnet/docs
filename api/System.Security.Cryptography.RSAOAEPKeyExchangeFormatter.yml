@@ -652,3 +652,17 @@ references:
   name: Type
   fullName: System.Type
   type: Class
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.Security.Cryptography.CryptographicUnexpectedOperationException
+  isExternal: false
+  href: System.Security.Cryptography.CryptographicUnexpectedOperationException.yml
+  name: CryptographicUnexpectedOperationException
+  fullName: System.Security.Cryptography.CryptographicUnexpectedOperationException
+  type: Class
+  summary: The exception that is thrown when an unexpected operation occurs during a cryptographic operation.

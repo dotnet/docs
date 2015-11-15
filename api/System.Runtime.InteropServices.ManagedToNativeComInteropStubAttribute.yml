@@ -1967,3 +1967,18 @@ references:
   name: String
   fullName: System.String
   type: Class
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.MethodAccessException
+  isExternal: false
+  href: System.MethodAccessException.yml
+  name: MethodAccessException
+  fullName: System.MethodAccessException
+  type: Class
+  summary: The exception that is thrown when there is an invalid attempt to access a method, such as accessing a private method from partially trusted code.

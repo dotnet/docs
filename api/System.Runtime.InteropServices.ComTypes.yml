@@ -81,6 +81,7 @@ references:
   name: BIND_OPTS
   fullName: System.Runtime.InteropServices.ComTypes.BIND_OPTS
   type: Struct
+  summary: Stores the parameters that are used during a moniker binding operation.
 - uid: System.Runtime.InteropServices.ComTypes.IBindCtx
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -88,6 +89,7 @@ references:
   name: IBindCtx
   fullName: System.Runtime.InteropServices.ComTypes.IBindCtx
   type: Interface
+  summary: Provides the managed definition of the IBindCtx interface.
 - uid: System.Runtime.InteropServices.ComTypes.IConnectionPointContainer
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -95,6 +97,7 @@ references:
   name: IConnectionPointContainer
   fullName: System.Runtime.InteropServices.ComTypes.IConnectionPointContainer
   type: Interface
+  summary: Provides the managed definition of the IConnectionPointContainer interface.
 - uid: System.Runtime.InteropServices.ComTypes.IConnectionPoint
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -102,6 +105,7 @@ references:
   name: IConnectionPoint
   fullName: System.Runtime.InteropServices.ComTypes.IConnectionPoint
   type: Interface
+  summary: Provides the managed definition of the IConnectionPoint interface.
 - uid: System.Runtime.InteropServices.ComTypes.IEnumMoniker
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -109,12 +113,14 @@ references:
   name: IEnumMoniker
   fullName: System.Runtime.InteropServices.ComTypes.IEnumMoniker
   type: Interface
+  summary: Manages the definition of the IEnumMoniker interface.
 - uid: System.Runtime.InteropServices.ComTypes.CONNECTDATA
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.CONNECTDATA.yml
   name: CONNECTDATA
   fullName: System.Runtime.InteropServices.ComTypes.CONNECTDATA
   type: Struct
+  summary: Describes a connection that exists to a given connection point.
 - uid: System.Runtime.InteropServices.ComTypes.IEnumConnections
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -122,6 +128,7 @@ references:
   name: IEnumConnections
   fullName: System.Runtime.InteropServices.ComTypes.IEnumConnections
   type: Interface
+  summary: Manages the definition of the IEnumConnections interface.
 - uid: System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -129,6 +136,7 @@ references:
   name: IEnumConnectionPoints
   fullName: System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints
   type: Interface
+  summary: Manages the definition of the IEnumConnectionPoints interface.
 - uid: System.Runtime.InteropServices.ComTypes.IEnumString
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -136,6 +144,7 @@ references:
   name: IEnumString
   fullName: System.Runtime.InteropServices.ComTypes.IEnumString
   type: Interface
+  summary: Manages the definition of the IEnumString interface.
 - uid: System.Runtime.InteropServices.ComTypes.IEnumVARIANT
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -143,6 +152,7 @@ references:
   name: IEnumVARIANT
   fullName: System.Runtime.InteropServices.ComTypes.IEnumVARIANT
   type: Interface
+  summary: Manages the definition of the IEnumVARIANT interface.
 - uid: System.Runtime.InteropServices.ComTypes.FILETIME
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -150,6 +160,7 @@ references:
   name: FILETIME
   fullName: System.Runtime.InteropServices.ComTypes.FILETIME
   type: Struct
+  summary: Represents the number of 100-nanosecond intervals since January 1, 1601. This structure is a 64-bit value.
 - uid: System.Runtime.InteropServices.ComTypes.IMoniker
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -157,12 +168,14 @@ references:
   name: IMoniker
   fullName: System.Runtime.InteropServices.ComTypes.IMoniker
   type: Interface
+  summary: Provides the managed definition of the IMoniker interface, with COM functionality from IPersist and IPersistStream.
 - uid: System.Runtime.InteropServices.ComTypes.IPersistFile
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.IPersistFile.yml
   name: IPersistFile
   fullName: System.Runtime.InteropServices.ComTypes.IPersistFile
   type: Interface
+  summary: Provides the managed definition of the IPersistFile interface, with functionality from IPersist.
 - uid: System.Runtime.InteropServices.ComTypes.IRunningObjectTable
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -170,6 +183,7 @@ references:
   name: IRunningObjectTable
   fullName: System.Runtime.InteropServices.ComTypes.IRunningObjectTable
   type: Interface
+  summary: Provides the managed definition of the IRunningObjectTable interface.
 - uid: System.Runtime.InteropServices.ComTypes.STATSTG
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -177,6 +191,7 @@ references:
   name: STATSTG
   fullName: System.Runtime.InteropServices.ComTypes.STATSTG
   type: Struct
+  summary: Contains statistical information about an open storage, stream, or byte-array object.
 - uid: System.Runtime.InteropServices.ComTypes.IStream
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -184,6 +199,7 @@ references:
   name: IStream
   fullName: System.Runtime.InteropServices.ComTypes.IStream
   type: Interface
+  summary: Provides the managed definition of the IStream interface, with ISequentialStream functionality.
 - uid: System.Runtime.InteropServices.ComTypes.DESCKIND
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -191,6 +207,7 @@ references:
   name: DESCKIND
   fullName: System.Runtime.InteropServices.ComTypes.DESCKIND
   type: Enum
+  summary: Identifies the type description being bound to.
 - uid: System.Runtime.InteropServices.ComTypes.BINDPTR
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -198,6 +215,7 @@ references:
   name: BINDPTR
   fullName: System.Runtime.InteropServices.ComTypes.BINDPTR
   type: Struct
+  summary: Contains a pointer to a bound-to @'System.Runtime.InteropServices.FUNCDESC' structure, @'System.Runtime.InteropServices.VARDESC' structure, or an ITypeComp interface.
 - uid: System.Runtime.InteropServices.ComTypes.ITypeComp
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -205,6 +223,7 @@ references:
   name: ITypeComp
   fullName: System.Runtime.InteropServices.ComTypes.ITypeComp
   type: Interface
+  summary: Provides the managed definition of the ITypeComp interface.
 - uid: System.Runtime.InteropServices.ComTypes.TYPEKIND
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -212,6 +231,7 @@ references:
   name: TYPEKIND
   fullName: System.Runtime.InteropServices.ComTypes.TYPEKIND
   type: Enum
+  summary: Specifies various types of data and functions.
 - uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -219,6 +239,7 @@ references:
   name: TYPEFLAGS
   fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
   type: Enum
+  summary: Defines the properties and attributes of a type description.
 - uid: System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -226,18 +247,21 @@ references:
   name: IMPLTYPEFLAGS
   fullName: System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS
   type: Enum
+  summary: Defines the attributes of an implemented or inherited interface of a type.
 - uid: System.Runtime.InteropServices.ComTypes.TYPEATTR
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.TYPEATTR.yml
   name: TYPEATTR
   fullName: System.Runtime.InteropServices.ComTypes.TYPEATTR
   type: Struct
+  summary: Contains attributes of a UCOMITypeInfo.
 - uid: System.Runtime.InteropServices.ComTypes.FUNCDESC
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.FUNCDESC.yml
   name: FUNCDESC
   fullName: System.Runtime.InteropServices.ComTypes.FUNCDESC
   type: Struct
+  summary: Defines a function description.
 - uid: System.Runtime.InteropServices.ComTypes.IDLFLAG
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -245,6 +269,7 @@ references:
   name: IDLFLAG
   fullName: System.Runtime.InteropServices.ComTypes.IDLFLAG
   type: Enum
+  summary: Describes how to transfer a structure element, parameter, or function return value between processes.
 - uid: System.Runtime.InteropServices.ComTypes.IDLDESC
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -252,6 +277,7 @@ references:
   name: IDLDESC
   fullName: System.Runtime.InteropServices.ComTypes.IDLDESC
   type: Struct
+  summary: Contains information needed for transferring a structure element, parameter, or function return value between processes.
 - uid: System.Runtime.InteropServices.ComTypes.PARAMFLAG
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -259,6 +285,7 @@ references:
   name: PARAMFLAG
   fullName: System.Runtime.InteropServices.ComTypes.PARAMFLAG
   type: Enum
+  summary: Describes how to transfer a structure element, parameter, or function return value between processes.
 - uid: System.Runtime.InteropServices.ComTypes.PARAMDESC
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -266,6 +293,7 @@ references:
   name: PARAMDESC
   fullName: System.Runtime.InteropServices.ComTypes.PARAMDESC
   type: Struct
+  summary: Contains information about how to transfer a structure element, parameter, or function return value between processes.
 - uid: System.Runtime.InteropServices.ComTypes.TYPEDESC
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -273,6 +301,7 @@ references:
   name: TYPEDESC
   fullName: System.Runtime.InteropServices.ComTypes.TYPEDESC
   type: Struct
+  summary: Describes the type of a variable, return type of a function, or the type of a function parameter.
 - uid: System.Runtime.InteropServices.ComTypes.ELEMDESC
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -280,6 +309,7 @@ references:
   name: ELEMDESC
   fullName: System.Runtime.InteropServices.ComTypes.ELEMDESC
   type: Struct
+  summary: Contains the type description and process transfer information for a variable, function, or a function parameter.
 - uid: System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -287,6 +317,7 @@ references:
   name: ELEMDESC.DESCUNION
   fullName: System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION
   type: Struct
+  summary: Contains information about an element.
 - uid: System.Runtime.InteropServices.ComTypes.VARKIND
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -294,12 +325,14 @@ references:
   name: VARKIND
   fullName: System.Runtime.InteropServices.ComTypes.VARKIND
   type: Enum
+  summary: Defines the kind of variable.
 - uid: System.Runtime.InteropServices.ComTypes.VARDESC
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.VARDESC.yml
   name: VARDESC
   fullName: System.Runtime.InteropServices.ComTypes.VARDESC
   type: Struct
+  summary: Describes a variable, constant, or data member.
 - uid: System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -307,6 +340,7 @@ references:
   name: VARDESC.DESCUNION
   fullName: System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION
   type: Struct
+  summary: Contains information about a variable.
 - uid: System.Runtime.InteropServices.ComTypes.DISPPARAMS
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -314,12 +348,14 @@ references:
   name: DISPPARAMS
   fullName: System.Runtime.InteropServices.ComTypes.DISPPARAMS
   type: Struct
+  summary: Contains the arguments passed to a method or property by IDispatch::Invoke.
 - uid: System.Runtime.InteropServices.ComTypes.EXCEPINFO
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.EXCEPINFO.yml
   name: EXCEPINFO
   fullName: System.Runtime.InteropServices.ComTypes.EXCEPINFO
   type: Struct
+  summary: Describes the exceptions that occur during IDispatch::Invoke.
 - uid: System.Runtime.InteropServices.ComTypes.FUNCKIND
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -327,6 +363,7 @@ references:
   name: FUNCKIND
   fullName: System.Runtime.InteropServices.ComTypes.FUNCKIND
   type: Enum
+  summary: Defines how to access a function.
 - uid: System.Runtime.InteropServices.ComTypes.INVOKEKIND
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -334,6 +371,7 @@ references:
   name: INVOKEKIND
   fullName: System.Runtime.InteropServices.ComTypes.INVOKEKIND
   type: Enum
+  summary: Specifies how to invoke a function by IDispatch::Invoke.
 - uid: System.Runtime.InteropServices.ComTypes.CALLCONV
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -341,6 +379,7 @@ references:
   name: CALLCONV
   fullName: System.Runtime.InteropServices.ComTypes.CALLCONV
   type: Enum
+  summary: Identifies the calling convention used by a method described in a METHODDATA Data Type structure.
 - uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -348,6 +387,7 @@ references:
   name: FUNCFLAGS
   fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
   type: Enum
+  summary: Identifies the constants that define the properties of a function.
 - uid: System.Runtime.InteropServices.ComTypes.VARFLAGS
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -355,6 +395,7 @@ references:
   name: VARFLAGS
   fullName: System.Runtime.InteropServices.ComTypes.VARFLAGS
   type: Enum
+  summary: Identifies the constants that define the properties of a variable.
 - uid: System.Runtime.InteropServices.ComTypes.ITypeInfo
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -362,6 +403,7 @@ references:
   name: ITypeInfo
   fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo
   type: Interface
+  summary: Provides the managed definition of the Component Automation ITypeInfo interface.
 - uid: System.Runtime.InteropServices.ComTypes.SYSKIND
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -369,6 +411,7 @@ references:
   name: SYSKIND
   fullName: System.Runtime.InteropServices.ComTypes.SYSKIND
   type: Enum
+  summary: Identifies the target operating system platform.
 - uid: System.Runtime.InteropServices.ComTypes.LIBFLAGS
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -376,12 +419,14 @@ references:
   name: LIBFLAGS
   fullName: System.Runtime.InteropServices.ComTypes.LIBFLAGS
   type: Enum
+  summary: Defines flags that apply to type libraries.
 - uid: System.Runtime.InteropServices.ComTypes.TYPELIBATTR
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.yml
   name: TYPELIBATTR
   fullName: System.Runtime.InteropServices.ComTypes.TYPELIBATTR
   type: Struct
+  summary: Identifies a particular type library and provides localization support for member names.
 - uid: System.Runtime.InteropServices.ComTypes.ITypeLib
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -389,18 +434,21 @@ references:
   name: ITypeLib
   fullName: System.Runtime.InteropServices.ComTypes.ITypeLib
   type: Interface
+  summary: Provides the managed definition of the ITypeLib interface.
 - uid: System.Runtime.InteropServices.ComTypes.ITypeLib2
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.ITypeLib2.yml
   name: ITypeLib2
   fullName: System.Runtime.InteropServices.ComTypes.ITypeLib2
   type: Interface
+  summary: Provides a managed definition of the ITypeLib2 interface.
 - uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
   name: ITypeInfo2
   fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2
   type: Interface
+  summary: Provides the managed definition of the ITypeInfo2 interface.
 - uid: System.Runtime.InteropServices.ComTypes.ADVF
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -408,6 +456,7 @@ references:
   name: ADVF
   fullName: System.Runtime.InteropServices.ComTypes.ADVF
   type: Enum
+  summary: Specifies the requested behavior when setting up an advise sink or a caching connection with an object.
 - uid: System.Runtime.InteropServices.ComTypes.DATADIR
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -415,6 +464,7 @@ references:
   name: DATADIR
   fullName: System.Runtime.InteropServices.ComTypes.DATADIR
   type: Enum
+  summary: Specifies the direction of the data flow in the *dwDirection* parameter of the @'System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(System.Runtime.InteropServices.ComTypes.DATADIR)' method. This determines the formats that the resulting enumerator can enumerate.
 - uid: System.Runtime.InteropServices.ComTypes.DVASPECT
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -422,6 +472,7 @@ references:
   name: DVASPECT
   fullName: System.Runtime.InteropServices.ComTypes.DVASPECT
   type: Enum
+  summary: Specifies the desired data or view aspect of the object when drawing or getting data.
 - uid: System.Runtime.InteropServices.ComTypes.FORMATETC
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -429,6 +480,7 @@ references:
   name: FORMATETC
   fullName: System.Runtime.InteropServices.ComTypes.FORMATETC
   type: Struct
+  summary: Represents a generalized Clipboard format.
 - uid: System.Runtime.InteropServices.ComTypes.IAdviseSink
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -436,6 +488,7 @@ references:
   name: IAdviseSink
   fullName: System.Runtime.InteropServices.ComTypes.IAdviseSink
   type: Interface
+  summary: Provides a managed definition of the IAdviseSink interface.
 - uid: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -443,12 +496,14 @@ references:
   name: IEnumFORMATETC
   fullName: System.Runtime.InteropServices.ComTypes.IEnumFORMATETC
   type: Interface
+  summary: Provides the managed definition of the IEnumFORMATETC interface.
 - uid: System.Runtime.InteropServices.ComTypes.STATDATA
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.STATDATA.yml
   name: STATDATA
   fullName: System.Runtime.InteropServices.ComTypes.STATDATA
   type: Struct
+  summary: Provides the managed definition of the STATDATA structure.
 - uid: System.Runtime.InteropServices.ComTypes.STGMEDIUM
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -456,6 +511,7 @@ references:
   name: STGMEDIUM
   fullName: System.Runtime.InteropServices.ComTypes.STGMEDIUM
   type: Struct
+  summary: Provides the managed definition of the STGMEDIUM structure.
 - uid: System.Runtime.InteropServices.ComTypes.TYMED
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -463,6 +519,7 @@ references:
   name: TYMED
   fullName: System.Runtime.InteropServices.ComTypes.TYMED
   type: Enum
+  summary: Provides the managed definition of the TYMED structure.
 - uid: System.Runtime.InteropServices.ComTypes
   isExternal: false
   name: System.Runtime.InteropServices.ComTypes

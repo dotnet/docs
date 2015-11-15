@@ -2040,3 +2040,26 @@ references:
   href: System.Xml.XmlLinkedNode.yml
   name: NextSibling
   fullName: System.Xml.XmlLinkedNode.NextSibling
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.Xml.XmlException
+  isExternal: false
+  href: System.Xml.XmlException.yml
+  name: XmlException
+  fullName: System.Xml.XmlException
+  type: Class
+  summary: Returns detailed information about the last exception.
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
+  summary: The exception that is thrown when a method call is invalid for the object's current state.

@@ -37,6 +37,7 @@ references:
   name: SafeProcessHandle
   fullName: Microsoft.Win32.SafeHandles.SafeProcessHandle
   type: Class
+  summary: Provides a managed wrapper for a process handle.
 - uid: Microsoft.Win32.SafeHandles.SafeAccessTokenHandle
   parent: Microsoft.Win32.SafeHandles
   isExternal: false
@@ -44,6 +45,7 @@ references:
   name: SafeAccessTokenHandle
   fullName: Microsoft.Win32.SafeHandles.SafeAccessTokenHandle
   type: Class
+  summary: Provides a safe handle to a Windows thread or process access token. For more information see Access Tokens
 - uid: Microsoft.Win32.SafeHandles.SafePipeHandle
   parent: Microsoft.Win32.SafeHandles
   isExternal: false
@@ -51,6 +53,7 @@ references:
   name: SafePipeHandle
   fullName: Microsoft.Win32.SafeHandles.SafePipeHandle
   type: Class
+  summary: Represents a wrapper class for a pipe handle.
 - uid: Microsoft.Win32.SafeHandles.SafeFileHandle
   parent: Microsoft.Win32.SafeHandles
   isExternal: false
@@ -58,6 +61,7 @@ references:
   name: SafeFileHandle
   fullName: Microsoft.Win32.SafeHandles.SafeFileHandle
   type: Class
+  summary: Represents a wrapper class for a file handle.
 - uid: Microsoft.Win32.SafeHandles.SafeWaitHandle
   parent: Microsoft.Win32.SafeHandles
   isExternal: false
@@ -65,6 +69,7 @@ references:
   name: SafeWaitHandle
   fullName: Microsoft.Win32.SafeHandles.SafeWaitHandle
   type: Class
+  summary: Represents a wrapper class for a wait handle.
 - uid: Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid
   parent: Microsoft.Win32.SafeHandles
   isExternal: false
@@ -72,24 +77,28 @@ references:
   name: SafeHandleZeroOrMinusOneIsInvalid
   fullName: Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid
   type: Class
+  summary: Provides a base class for Win32 safe handle implementations in which the value of either 0 or -1 indicates an invalid handle.
 - uid: Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid
   isExternal: false
   href: Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid.yml
   name: SafeHandleMinusOneIsInvalid
   fullName: Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid
   type: Class
+  summary: Provides a base class for Win32 safe handle implementations in which the value of -1 indicates an invalid handle.
 - uid: Microsoft.Win32.SafeHandles.CriticalHandleZeroOrMinusOneIsInvalid
   isExternal: false
   href: Microsoft.Win32.SafeHandles.CriticalHandleZeroOrMinusOneIsInvalid.yml
   name: CriticalHandleZeroOrMinusOneIsInvalid
   fullName: Microsoft.Win32.SafeHandles.CriticalHandleZeroOrMinusOneIsInvalid
   type: Class
+  summary: Provides a base class for Win32 critical handle implementations in which the value of either 0 or -1 indicates an invalid handle.
 - uid: Microsoft.Win32.SafeHandles.CriticalHandleMinusOneIsInvalid
   isExternal: false
   href: Microsoft.Win32.SafeHandles.CriticalHandleMinusOneIsInvalid.yml
   name: CriticalHandleMinusOneIsInvalid
   fullName: Microsoft.Win32.SafeHandles.CriticalHandleMinusOneIsInvalid
   type: Class
+  summary: Provides a base class for Win32 critical handle implementations in which the value of -1 indicates an invalid handle.
 - uid: Microsoft.Win32.SafeHandles.SafeRegistryHandle
   parent: Microsoft.Win32.SafeHandles
   isExternal: false
@@ -97,6 +106,7 @@ references:
   name: SafeRegistryHandle
   fullName: Microsoft.Win32.SafeHandles.SafeRegistryHandle
   type: Class
+  summary: Represents a safe handle to the Windows registry.
 - uid: Microsoft.Win32.SafeHandles.SafeX509ChainHandle
   parent: Microsoft.Win32.SafeHandles
   isExternal: false
@@ -104,6 +114,7 @@ references:
   name: SafeX509ChainHandle
   fullName: Microsoft.Win32.SafeHandles.SafeX509ChainHandle
   type: Class
+  summary: Provides a wrapper class that represents the handle of an X.509 chain object. For more information, see @'System.Security.Cryptography.X509Certificates.X509Chain'.
 - uid: Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle
   parent: Microsoft.Win32.SafeHandles
   isExternal: false
@@ -111,6 +122,7 @@ references:
   name: SafeMemoryMappedViewHandle
   fullName: Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle
   type: Class
+  summary: Provides a safe handle that represents a view of a block of unmanaged memory for random access.
 - uid: Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle
   parent: Microsoft.Win32.SafeHandles
   isExternal: false
@@ -118,6 +130,7 @@ references:
   name: SafeMemoryMappedFileHandle
   fullName: Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle
   type: Class
+  summary: Provides a safe handle that represents a memory-mapped file for sequential access.
 - uid: Microsoft.Win32.SafeHandles
   isExternal: false
   name: Microsoft.Win32.SafeHandles

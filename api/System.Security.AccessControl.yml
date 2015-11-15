@@ -34,6 +34,7 @@ references:
   name: EventWaitHandleSecurity
   fullName: System.Security.AccessControl.EventWaitHandleSecurity
   type: Class
+  summary: Represents the Windows access control security applied to a named system wait handle. This class cannot be inherited.
 - uid: System.Security.AccessControl.EventWaitHandleRights
   parent: System.Security.AccessControl
   isExternal: false
@@ -41,6 +42,7 @@ references:
   name: EventWaitHandleRights
   fullName: System.Security.AccessControl.EventWaitHandleRights
   type: Enum
+  summary: Specifies the access control rights that can be applied to named system event objects.
 - uid: System.Security.AccessControl.InheritanceFlags
   parent: System.Security.AccessControl
   isExternal: false
@@ -48,6 +50,7 @@ references:
   name: InheritanceFlags
   fullName: System.Security.AccessControl.InheritanceFlags
   type: Enum
+  summary: Inheritance flags specify the semantics of inheritance for access control entries (ACEs).
 - uid: System.Security.AccessControl.PropagationFlags
   parent: System.Security.AccessControl
   isExternal: false
@@ -55,6 +58,7 @@ references:
   name: PropagationFlags
   fullName: System.Security.AccessControl.PropagationFlags
   type: Enum
+  summary: Specifies how Access Control Entries (ACEs) are propagated to child objects.  These flags are significant only if inheritance flags are present.
 - uid: System.Security.AccessControl.AuditFlags
   parent: System.Security.AccessControl
   isExternal: false
@@ -62,6 +66,7 @@ references:
   name: AuditFlags
   fullName: System.Security.AccessControl.AuditFlags
   type: Enum
+  summary: Specifies the conditions for auditing attempts to access a securable object.
 - uid: System.Security.AccessControl.SecurityInfos
   parent: System.Security.AccessControl
   isExternal: false
@@ -69,6 +74,7 @@ references:
   name: SecurityInfos
   fullName: System.Security.AccessControl.SecurityInfos
   type: Enum
+  summary: Specifies the section of a security descriptor to be queried or set.
 - uid: System.Security.AccessControl.ResourceType
   parent: System.Security.AccessControl
   isExternal: false
@@ -76,6 +82,7 @@ references:
   name: ResourceType
   fullName: System.Security.AccessControl.ResourceType
   type: Enum
+  summary: Specifies the defined native object types.
 - uid: System.Security.AccessControl.AccessControlSections
   parent: System.Security.AccessControl
   isExternal: false
@@ -83,6 +90,7 @@ references:
   name: AccessControlSections
   fullName: System.Security.AccessControl.AccessControlSections
   type: Enum
+  summary: Specifies which sections of a security descriptor to save or load.
 - uid: System.Security.AccessControl.AccessControlActions
   parent: System.Security.AccessControl
   isExternal: false
@@ -90,6 +98,7 @@ references:
   name: AccessControlActions
   fullName: System.Security.AccessControl.AccessControlActions
   type: Enum
+  summary: Specifies the actions that are permitted for securable objects.
 - uid: System.Security.AccessControl.RegistryRights
   parent: System.Security.AccessControl
   isExternal: false
@@ -97,6 +106,7 @@ references:
   name: RegistryRights
   fullName: System.Security.AccessControl.RegistryRights
   type: Enum
+  summary: Specifies the access control rights that can be applied to registry objects.
 - uid: System.Security.AccessControl
   isExternal: false
   name: System.Security.AccessControl

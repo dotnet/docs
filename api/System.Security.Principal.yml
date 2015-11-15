@@ -39,6 +39,7 @@ references:
   name: IdentityNotMappedException
   fullName: System.Security.Principal.IdentityNotMappedException
   type: Class
+  summary: Represents an exception for a principal whose identity could not be mapped to a known identity.
 - uid: System.Security.Principal.IdentityReference
   parent: System.Security.Principal
   isExternal: false
@@ -46,6 +47,7 @@ references:
   name: IdentityReference
   fullName: System.Security.Principal.IdentityReference
   type: Class
+  summary: Represents an identity and is the base class for the @'System.Security.Principal.NTAccount' and @'System.Security.Principal.SecurityIdentifier' classes. This class does not provide a public constructor, and therefore cannot be inherited.
 - uid: System.Security.Principal.IdentityReferenceCollection
   parent: System.Security.Principal
   isExternal: false
@@ -53,6 +55,7 @@ references:
   name: IdentityReferenceCollection
   fullName: System.Security.Principal.IdentityReferenceCollection
   type: Class
+  summary: Represents a collection of @'System.Security.Principal.IdentityReference' objects and provides a means of converting sets of @'System.Security.Principal.IdentityReference'-derived objects to @'System.Security.Principal.IdentityReference'-derived types.
 - uid: System.Security.Principal.NTAccount
   parent: System.Security.Principal
   isExternal: false
@@ -60,6 +63,7 @@ references:
   name: NTAccount
   fullName: System.Security.Principal.NTAccount
   type: Class
+  summary: Represents a user or group account.
 - uid: System.Security.Principal.WellKnownSidType
   parent: System.Security.Principal
   isExternal: false
@@ -67,6 +71,7 @@ references:
   name: WellKnownSidType
   fullName: System.Security.Principal.WellKnownSidType
   type: Enum
+  summary: Defines a set of commonly used security identifiers (SIDs).
 - uid: System.Security.Principal.SecurityIdentifier
   parent: System.Security.Principal
   isExternal: false
@@ -74,6 +79,7 @@ references:
   name: SecurityIdentifier
   fullName: System.Security.Principal.SecurityIdentifier
   type: Class
+  summary: Represents a security identifier (SID) and provides marshaling and comparison operations for SIDs.
 - uid: System.Security.Principal.TokenAccessLevels
   parent: System.Security.Principal
   isExternal: false
@@ -81,6 +87,7 @@ references:
   name: TokenAccessLevels
   fullName: System.Security.Principal.TokenAccessLevels
   type: Enum
+  summary: Defines the privileges of the user account associated with the access token.
 - uid: System.Security.Principal.WindowsIdentity
   parent: System.Security.Principal
   isExternal: false
@@ -88,6 +95,7 @@ references:
   name: WindowsIdentity
   fullName: System.Security.Principal.WindowsIdentity
   type: Class
+  summary: Represents a Windows user.
 - uid: System.Security.Principal.WindowsBuiltInRole
   parent: System.Security.Principal
   isExternal: false
@@ -95,24 +103,28 @@ references:
   name: WindowsBuiltInRole
   fullName: System.Security.Principal.WindowsBuiltInRole
   type: Enum
+  summary: Specifies common roles to be used with @'System.Security.Principal.WindowsPrincipal.IsInRole(System.String)'.
 - uid: System.Security.Principal.WindowsPrincipal
   isExternal: false
   href: System.Security.Principal.WindowsPrincipal.yml
   name: WindowsPrincipal
   fullName: System.Security.Principal.WindowsPrincipal
   type: Class
+  summary: Enables code to check the Windows group membership of a Windows user.
 - uid: System.Security.Principal.GenericIdentity
   isExternal: false
   href: System.Security.Principal.GenericIdentity.yml
   name: GenericIdentity
   fullName: System.Security.Principal.GenericIdentity
   type: Class
+  summary: Represents a generic user.
 - uid: System.Security.Principal.GenericPrincipal
   isExternal: false
   href: System.Security.Principal.GenericPrincipal.yml
   name: GenericPrincipal
   fullName: System.Security.Principal.GenericPrincipal
   type: Class
+  summary: Represents a generic principal.
 - uid: System.Security.Principal.IIdentity
   parent: System.Security.Principal
   isExternal: false
@@ -120,6 +132,7 @@ references:
   name: IIdentity
   fullName: System.Security.Principal.IIdentity
   type: Interface
+  summary: Defines the basic functionality of an identity object.
 - uid: System.Security.Principal.IPrincipal
   parent: System.Security.Principal
   isExternal: false
@@ -127,6 +140,7 @@ references:
   name: IPrincipal
   fullName: System.Security.Principal.IPrincipal
   type: Interface
+  summary: Defines the basic functionality of a principal object.
 - uid: System.Security.Principal.PrincipalPolicy
   parent: System.Security.Principal
   isExternal: false
@@ -134,6 +148,7 @@ references:
   name: PrincipalPolicy
   fullName: System.Security.Principal.PrincipalPolicy
   type: Enum
+  summary: Specifies how principal and identity objects should be created for an application domain. The default is UnauthenticatedPrincipal.
 - uid: System.Security.Principal.TokenImpersonationLevel
   parent: System.Security.Principal
   isExternal: false
@@ -141,6 +156,7 @@ references:
   name: TokenImpersonationLevel
   fullName: System.Security.Principal.TokenImpersonationLevel
   type: Enum
+  summary: Defines security impersonation levels. Security impersonation levels govern the degree to which a server process can act on behalf of a client process.
 - uid: System.Security.Principal
   isExternal: false
   name: System.Security.Principal

@@ -1074,3 +1074,41 @@ references:
   name: TimeSpan
   fullName: System.TimeSpan
   type: Struct
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.ComponentModel.Win32Exception
+  isExternal: false
+  href: System.ComponentModel.Win32Exception.yml
+  name: Win32Exception
+  fullName: System.ComponentModel.Win32Exception
+  type: Class
+  summary: Throws an exception for a Win32 error code.
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
+  summary: The exception that is thrown when a method call is invalid for the object's current state.
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.ComponentModel.InvalidEnumArgumentException
+- uid: System.ServiceProcess.TimeoutException
+  isExternal: false
+  href: System.ServiceProcess.TimeoutException.yml
+  name: TimeoutException
+  fullName: System.ServiceProcess.TimeoutException
+  type: Class
+  summary: The exception that is thrown when a specified timeout has expired.

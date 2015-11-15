@@ -650,3 +650,33 @@ references:
   name: NTAccount
   fullName: System.Security.Principal.NTAccount
   type: Class
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.Security.Principal.IdentityNotMappedException
+  isExternal: false
+  href: System.Security.Principal.IdentityNotMappedException.yml
+  name: IdentityNotMappedException
+  fullName: System.Security.Principal.IdentityNotMappedException
+  type: Class
+  summary: Represents an exception for a principal whose identity could not be mapped to a known identity.
+- uid: System.SystemException
+  parent: System
+  isExternal: false
+  href: System.SystemException.yml
+  name: SystemException
+  fullName: System.SystemException
+  type: Class
+  summary: Serves as the base class for system exceptions namespace.

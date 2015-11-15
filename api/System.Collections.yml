@@ -48,6 +48,7 @@ references:
   name: ArrayList
   fullName: System.Collections.ArrayList
   type: Class
+  summary: Implements the @'System.Collections.IList' interface using an array whose size is dynamically increased as required.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.Collections.CaseInsensitiveComparer
   parent: System.Collections
   isExternal: false
@@ -55,12 +56,14 @@ references:
   name: CaseInsensitiveComparer
   fullName: System.Collections.CaseInsensitiveComparer
   type: Class
+  summary: Compares two objects for equivalence, ignoring the case of strings.
 - uid: System.Collections.CollectionBase
   isExternal: false
   href: System.Collections.CollectionBase.yml
   name: CollectionBase
   fullName: System.Collections.CollectionBase
   type: Class
+  summary: Provides the abstract base class for a strongly typed collection.
 - uid: System.Collections.Comparer
   parent: System.Collections
   isExternal: false
@@ -68,12 +71,14 @@ references:
   name: Comparer
   fullName: System.Collections.Comparer
   type: Class
+  summary: Compares two objects for equivalence, where string comparisons are case-sensitive.
 - uid: System.Collections.DictionaryBase
   isExternal: false
   href: System.Collections.DictionaryBase.yml
   name: DictionaryBase
   fullName: System.Collections.DictionaryBase
   type: Class
+  summary: Provides the abstract base class for a strongly typed collection of key/value pairs.
 - uid: System.Collections.Hashtable
   parent: System.Collections
   isExternal: false
@@ -81,6 +86,7 @@ references:
   name: Hashtable
   fullName: System.Collections.Hashtable
   type: Class
+  summary: Represents a collection of key/value pairs that are organized based on the hash code of the key.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.Collections.Queue
   parent: System.Collections
   isExternal: false
@@ -88,12 +94,14 @@ references:
   name: Queue
   fullName: System.Collections.Queue
   type: Class
+  summary: Represents a first-in, first-out collection of objects.
 - uid: System.Collections.ReadOnlyCollectionBase
   isExternal: false
   href: System.Collections.ReadOnlyCollectionBase.yml
   name: ReadOnlyCollectionBase
   fullName: System.Collections.ReadOnlyCollectionBase
   type: Class
+  summary: Provides the abstract base class for a strongly typed non-generic read-only collection.
 - uid: System.Collections.SortedList
   parent: System.Collections
   isExternal: false
@@ -101,6 +109,7 @@ references:
   name: SortedList
   fullName: System.Collections.SortedList
   type: Class
+  summary: Represents a collection of key/value pairs that are sorted by the keys and are accessible by key and by index.
 - uid: System.Collections.Stack
   parent: System.Collections
   isExternal: false
@@ -108,6 +117,7 @@ references:
   name: Stack
   fullName: System.Collections.Stack
   type: Class
+  summary: Represents a simple last-in-first-out (LIFO) non-generic collection of objects.
 - uid: System.Collections.BitArray
   parent: System.Collections
   isExternal: false
@@ -115,6 +125,7 @@ references:
   name: BitArray
   fullName: System.Collections.BitArray
   type: Class
+  summary: Manages a compact array of bit values, which are represented as Booleans, where true indicates that the bit is on (1) and false indicates the bit is off (0).
 - uid: System.Collections.DictionaryEntry
   parent: System.Collections
   isExternal: false
@@ -122,6 +133,7 @@ references:
   name: DictionaryEntry
   fullName: System.Collections.DictionaryEntry
   type: Struct
+  summary: Defines a dictionary key/value pair that can be set or retrieved.
 - uid: System.Collections.ICollection
   parent: System.Collections
   isExternal: false
@@ -129,6 +141,7 @@ references:
   name: ICollection
   fullName: System.Collections.ICollection
   type: Interface
+  summary: Defines size, enumerators, and synchronization methods for all nongeneric collections.
 - uid: System.Collections.IComparer
   parent: System.Collections
   isExternal: false
@@ -136,6 +149,7 @@ references:
   name: IComparer
   fullName: System.Collections.IComparer
   type: Interface
+  summary: Exposes a method that compares two objects.
 - uid: System.Collections.IDictionary
   parent: System.Collections
   isExternal: false
@@ -143,6 +157,7 @@ references:
   name: IDictionary
   fullName: System.Collections.IDictionary
   type: Interface
+  summary: Represents a nongeneric collection of key/value pairs.
 - uid: System.Collections.IDictionaryEnumerator
   parent: System.Collections
   isExternal: false
@@ -150,6 +165,7 @@ references:
   name: IDictionaryEnumerator
   fullName: System.Collections.IDictionaryEnumerator
   type: Interface
+  summary: Enumerates the elements of a nongeneric dictionary.
 - uid: System.Collections.IEnumerable
   parent: System.Collections
   isExternal: false
@@ -157,6 +173,7 @@ references:
   name: IEnumerable
   fullName: System.Collections.IEnumerable
   type: Interface
+  summary: Exposes an enumerator, which supports a simple iteration over a non-generic collection.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.Collections.IEnumerator
   parent: System.Collections
   isExternal: false
@@ -164,6 +181,7 @@ references:
   name: IEnumerator
   fullName: System.Collections.IEnumerator
   type: Interface
+  summary: Supports a simple iteration over a non-generic collection.
 - uid: System.Collections.IEqualityComparer
   parent: System.Collections
   isExternal: false
@@ -171,6 +189,7 @@ references:
   name: IEqualityComparer
   fullName: System.Collections.IEqualityComparer
   type: Interface
+  summary: Defines methods to support the comparison of objects for equality.
 - uid: System.Collections.IHashCodeProvider
   parent: System.Collections
   isExternal: false
@@ -178,6 +197,7 @@ references:
   name: IHashCodeProvider
   fullName: System.Collections.IHashCodeProvider
   type: Interface
+  summary: Supplies a hash code for an object, using a custom hash function.
 - uid: System.Collections.IList
   parent: System.Collections
   isExternal: false
@@ -185,6 +205,7 @@ references:
   name: IList
   fullName: System.Collections.IList
   type: Interface
+  summary: Represents a non-generic collection of objects that can be individually accessed by index.
 - uid: System.Collections.IStructuralEquatable
   parent: System.Collections
   isExternal: false
@@ -192,6 +213,7 @@ references:
   name: IStructuralEquatable
   fullName: System.Collections.IStructuralEquatable
   type: Interface
+  summary: Defines methods to support the comparison of objects for structural equality.
 - uid: System.Collections.IStructuralComparable
   parent: System.Collections
   isExternal: false
@@ -199,12 +221,14 @@ references:
   name: IStructuralComparable
   fullName: System.Collections.IStructuralComparable
   type: Interface
+  summary: Supports the structural comparison of collection objects.
 - uid: System.Collections.StructuralComparisons
   isExternal: false
   href: System.Collections.StructuralComparisons.yml
   name: StructuralComparisons
   fullName: System.Collections.StructuralComparisons
   type: Class
+  summary: Provides objects for performing a structural comparison of two collection objects.
 - uid: System.Collections
   isExternal: false
   name: System.Collections

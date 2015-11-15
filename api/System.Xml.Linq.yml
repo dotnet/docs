@@ -46,7 +46,7 @@ references:
   name: Extensions
   fullName: System.Xml.Linq.Extensions
   type: Class
-  summary: Defines the LINQ to XML extension methods.
+  summary: Contains the LINQ to XML extension methods.
 - uid: System.Xml.Linq.XAttribute
   parent: System.Xml.Linq
   isExternal: false
@@ -94,7 +94,7 @@ references:
   name: XDocument
   fullName: System.Xml.Linq.XDocument
   type: Class
-  summary: Represents an XML document.
+  summary: Represents an XML document. For the components and usage of an @'System.Xml.Linq.XDocument' object, see XDocument Class Overview.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.Xml.Linq.XDocumentType
   parent: System.Xml.Linq
   isExternal: false
@@ -110,7 +110,7 @@ references:
   name: XElement
   fullName: System.Xml.Linq.XElement
   type: Class
-  summary: Represents an XML element.
+  summary: Represents an XML element.  See XElement Class Overview and the Remarks section on this page for usage information and examples.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.Xml.Linq.XObjectChange
   parent: System.Xml.Linq
   isExternal: false
@@ -126,7 +126,7 @@ references:
   name: LoadOptions
   fullName: System.Xml.Linq.LoadOptions
   type: Enum
-  summary: Specifies a set of options for Load().
+  summary: Specifies load options when parsing XML.
 - uid: System.Xml.Linq.SaveOptions
   parent: System.Xml.Linq
   isExternal: false
@@ -134,7 +134,7 @@ references:
   name: SaveOptions
   fullName: System.Xml.Linq.SaveOptions
   type: Enum
-  summary: Specifies a set of options for Save().
+  summary: Specifies serialization options.
 - uid: System.Xml.Linq.ReaderOptions
   parent: System.Xml.Linq
   isExternal: false
@@ -142,7 +142,7 @@ references:
   name: ReaderOptions
   fullName: System.Xml.Linq.ReaderOptions
   type: Enum
-  summary: Specifies a set of options for CreateReader().
+  summary: Specifies whether to omit duplicate namespaces when loading an @'System.Xml.Linq.XDocument' with an @'System.Xml.XmlReader'.
 - uid: System.Xml.Linq.XName
   parent: System.Xml.Linq
   isExternal: false
@@ -150,7 +150,7 @@ references:
   name: XName
   fullName: System.Xml.Linq.XName
   type: Class
-  summary: Represents a name of an XML element or attribute. This class cannot be inherited.
+  summary: Represents a name of an XML element or attribute.
 - uid: System.Xml.Linq.XNamespace
   parent: System.Xml.Linq
   isExternal: false
@@ -166,10 +166,7 @@ references:
   name: XNode
   fullName: System.Xml.Linq.XNode
   type: Class
-  summary: >-
-    Represents nodes (elements, comments, document type, processing instruction,
-
-    and text nodes) in the XML tree.
+  summary: Represents the abstract concept of a node (element, comment, document type, processing instruction, or text node) in the XML tree.
 - uid: System.Xml.Linq.XNodeDocumentOrderComparer
   parent: System.Xml.Linq
   isExternal: false
@@ -177,10 +174,7 @@ references:
   name: XNodeDocumentOrderComparer
   fullName: System.Xml.Linq.XNodeDocumentOrderComparer
   type: Class
-  summary: >-
-    Contains functionality to compare nodes for their document order.
-
-    This class cannot be inherited.
+  summary: Contains functionality to compare nodes for their document order. This class cannot be inherited.
 - uid: System.Xml.Linq.XNodeEqualityComparer
   parent: System.Xml.Linq
   isExternal: false
@@ -188,10 +182,7 @@ references:
   name: XNodeEqualityComparer
   fullName: System.Xml.Linq.XNodeEqualityComparer
   type: Class
-  summary: >-
-    Contains functionality to compare nodes for value equality.
-
-    This class cannot be inherited.
+  summary: Compares nodes to determine whether they are equal. This class cannot be inherited.
 - uid: System.Xml.Linq.XObject
   parent: System.Xml.Linq
   isExternal: false
@@ -223,10 +214,7 @@ references:
   name: XStreamingElement
   fullName: System.Xml.Linq.XStreamingElement
   type: Class
-  summary: >-
-    Represents a class that allows elements to be streamed
-
-    on input and output.
+  summary: Represents elements in an XML tree that supports deferred streaming output.
 - uid: System.Xml.Linq.XText
   parent: System.Xml.Linq
   isExternal: false

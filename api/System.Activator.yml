@@ -1805,3 +1805,112 @@ references:
   name: System.Configuration.Assemblies
   fullName: System.Configuration.Assemblies
   type: Namespace
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  href: System.NotSupportedException.yml
+  name: NotSupportedException
+  fullName: System.NotSupportedException
+  type: Class
+  summary: The exception that is thrown when an invoked method is not supported, or when there is an attempt to read, seek, or write to a stream that does not support the invoked functionality.
+- uid: System.Reflection.TargetInvocationException
+  isExternal: false
+  href: System.Reflection.TargetInvocationException.yml
+  name: TargetInvocationException
+  fullName: System.Reflection.TargetInvocationException
+  type: Class
+  summary: The exception that is thrown by methods invoked through reflection. This class cannot be inherited.
+- uid: System.MethodAccessException
+  isExternal: false
+  href: System.MethodAccessException.yml
+  name: MethodAccessException
+  fullName: System.MethodAccessException
+  type: Class
+  summary: The exception that is thrown when there is an invalid attempt to access a method, such as accessing a private method from partially trusted code.
+- uid: System.MemberAccessException
+  parent: System
+  isExternal: false
+  href: System.MemberAccessException.yml
+  name: MemberAccessException
+  fullName: System.MemberAccessException
+  type: Class
+  summary: The exception that is thrown when an attempt to access a class member fails.
+- uid: System.Runtime.InteropServices.InvalidComObjectException
+  isExternal: false
+  href: System.Runtime.InteropServices.InvalidComObjectException.yml
+  name: InvalidComObjectException
+  fullName: System.Runtime.InteropServices.InvalidComObjectException
+  type: Class
+  summary: The exception thrown when an invalid COM object is used.
+- uid: System.MissingMethodException
+  isExternal: false
+  href: System.MissingMethodException.yml
+  name: MissingMethodException
+  fullName: System.MissingMethodException
+  type: Class
+  summary: The exception that is thrown when there is an attempt to dynamically access a method that does not exist.
+- uid: System.Runtime.InteropServices.COMException
+  isExternal: false
+  href: System.Runtime.InteropServices.COMException.yml
+  name: COMException
+  fullName: System.Runtime.InteropServices.COMException
+  type: Class
+  summary: The exception that is thrown when an unrecognized HRESULT is returned from a COM method call.
+- uid: System.TypeLoadException
+  parent: System
+  isExternal: false
+  href: System.TypeLoadException.yml
+  name: TypeLoadException
+  fullName: System.TypeLoadException
+  type: Class
+  summary: The exception that is thrown when type-loading failures occur.
+- uid: System.IO.FileNotFoundException
+  isExternal: false
+  href: System.IO.FileNotFoundException.yml
+  name: FileNotFoundException
+  fullName: System.IO.FileNotFoundException
+  type: Class
+  summary: The exception that is thrown when an attempt to access a file that does not exist on disk fails.
+- uid: System.BadImageFormatException
+  isExternal: false
+  href: System.BadImageFormatException.yml
+  name: BadImageFormatException
+  fullName: System.BadImageFormatException
+  type: Class
+  summary: The exception that is thrown when the file image of a dynamic link library (DLL) or an executable program is invalid.
+- uid: System.IO.FileLoadException
+  isExternal: false
+  href: System.IO.FileLoadException.yml
+  name: FileLoadException
+  fullName: System.IO.FileLoadException
+  type: Class
+  summary: The exception that is thrown when a managed assembly is found but cannot be loaded.
+- uid: System.Security.SecurityException
+  isExternal: false
+  href: System.Security.SecurityException.yml
+  name: SecurityException
+  fullName: System.Security.SecurityException
+  type: Class
+  summary: The exception that is thrown when a security error is detected.
+- uid: System.IO.PathTooLongException
+  isExternal: false
+  href: System.IO.PathTooLongException.yml
+  name: PathTooLongException
+  fullName: System.IO.PathTooLongException
+  type: Class
+  summary: The exception that is thrown when a path or file name is longer than the system-defined maximum length.

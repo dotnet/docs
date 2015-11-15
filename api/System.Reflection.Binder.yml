@@ -701,3 +701,39 @@ references:
   name: PropertyInfo
   fullName: System.Reflection.PropertyInfo
   type: Class
+- uid: System.Reflection.AmbiguousMatchException
+  isExternal: false
+  href: System.Reflection.AmbiguousMatchException.yml
+  name: AmbiguousMatchException
+  fullName: System.Reflection.AmbiguousMatchException
+  type: Class
+  summary: The exception that is thrown when binding to a member results in more than one member matching the binding criteria. This class cannot be inherited.
+- uid: System.MissingMethodException
+  isExternal: false
+  href: System.MissingMethodException.yml
+  name: MissingMethodException
+  fullName: System.MissingMethodException
+  type: Class
+  summary: The exception that is thrown when there is an attempt to dynamically access a method that does not exist.
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.MissingFieldException
+  isExternal: false
+  href: System.MissingFieldException.yml
+  name: MissingFieldException
+  fullName: System.MissingFieldException
+  type: Class
+  summary: The exception that is thrown when there is an attempt to dynamically access a field that does not exist.
+- uid: System.NullReferenceException
+  isExternal: false
+  href: System.NullReferenceException.yml
+  name: NullReferenceException
+  fullName: System.NullReferenceException
+  type: Class
+  summary: The exception that is thrown when there is an attempt to dereference a null object reference.

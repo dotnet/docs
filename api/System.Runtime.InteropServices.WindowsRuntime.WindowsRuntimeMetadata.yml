@@ -434,3 +434,17 @@ references:
   name: System.Collections.Generic
   fullName: System.Collections.Generic
   type: Namespace
+- uid: System.PlatformNotSupportedException
+  isExternal: false
+  href: System.PlatformNotSupportedException.yml
+  name: PlatformNotSupportedException
+  fullName: System.PlatformNotSupportedException
+  type: Class
+  summary: The exception that is thrown when a feature does not run on a particular platform.
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.

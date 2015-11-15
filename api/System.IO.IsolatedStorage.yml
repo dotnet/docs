@@ -31,12 +31,14 @@ references:
   name: IsolatedStorageFileStream
   fullName: System.IO.IsolatedStorage.IsolatedStorageFileStream
   type: Class
+  summary: Exposes a file within isolated storage.
 - uid: System.IO.IsolatedStorage.IsolatedStorageException
   isExternal: false
   href: System.IO.IsolatedStorage.IsolatedStorageException.yml
   name: IsolatedStorageException
   fullName: System.IO.IsolatedStorage.IsolatedStorageException
   type: Class
+  summary: The exception that is thrown when an operation in isolated storage fails.
 - uid: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
   parent: System.IO.IsolatedStorage
   isExternal: false
@@ -44,12 +46,14 @@ references:
   name: IsolatedStorageSecurityOptions
   fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
   type: Enum
+  summary: Specifies options that affect security in isolated storage.
 - uid: System.IO.IsolatedStorage.IsolatedStorageSecurityState
   isExternal: false
   href: System.IO.IsolatedStorage.IsolatedStorageSecurityState.yml
   name: IsolatedStorageSecurityState
   fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityState
   type: Class
+  summary: Provides settings for maintaining the quota size for isolated storage.
 - uid: System.IO.IsolatedStorage.IsolatedStorageFile
   parent: System.IO.IsolatedStorage
   isExternal: false
@@ -57,6 +61,7 @@ references:
   name: IsolatedStorageFile
   fullName: System.IO.IsolatedStorage.IsolatedStorageFile
   type: Class
+  summary: Represents an isolated storage area containing files and directories.
 - uid: System.IO.IsolatedStorage.IsolatedStorageFileIOHelperBase
   isExternal: false
   href: System.IO.IsolatedStorage.IsolatedStorageFileIOHelperBase.yml

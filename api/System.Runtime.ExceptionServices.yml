@@ -25,6 +25,7 @@ references:
   name: HandleProcessCorruptedStateExceptionsAttribute
   fullName: System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute
   type: Class
+  summary: Enables managed code to handle exceptions that indicate a corrupted process state.
 - uid: System.Runtime.ExceptionServices.ExceptionDispatchInfo
   parent: System.Runtime.ExceptionServices
   isExternal: false
@@ -32,6 +33,7 @@ references:
   name: ExceptionDispatchInfo
   fullName: System.Runtime.ExceptionServices.ExceptionDispatchInfo
   type: Class
+  summary: Represents an exception whose state is captured at a certain point in code.
 - uid: System.Runtime.ExceptionServices
   isExternal: false
   name: System.Runtime.ExceptionServices

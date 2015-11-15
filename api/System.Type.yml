@@ -5642,3 +5642,126 @@ references:
   name: InterfaceMapping
   fullName: System.Reflection.InterfaceMapping
   type: Struct
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.Reflection.TargetInvocationException
+  isExternal: false
+  href: System.Reflection.TargetInvocationException.yml
+  name: TargetInvocationException
+  fullName: System.Reflection.TargetInvocationException
+  type: Class
+  summary: The exception that is thrown by methods invoked through reflection. This class cannot be inherited.
+- uid: System.TypeLoadException
+  parent: System
+  isExternal: false
+  href: System.TypeLoadException.yml
+  name: TypeLoadException
+  fullName: System.TypeLoadException
+  type: Class
+  summary: The exception that is thrown when type-loading failures occur.
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.IO.FileNotFoundException
+  isExternal: false
+  href: System.IO.FileNotFoundException.yml
+  name: FileNotFoundException
+  fullName: System.IO.FileNotFoundException
+  type: Class
+  summary: The exception that is thrown when an attempt to access a file that does not exist on disk fails.
+- uid: System.IO.FileLoadException
+  isExternal: false
+  href: System.IO.FileLoadException.yml
+  name: FileLoadException
+  fullName: System.IO.FileLoadException
+  type: Class
+  summary: The exception that is thrown when a managed assembly is found but cannot be loaded.
+- uid: System.BadImageFormatException
+  isExternal: false
+  href: System.BadImageFormatException.yml
+  name: BadImageFormatException
+  fullName: System.BadImageFormatException
+  type: Class
+  summary: The exception that is thrown when the file image of a dynamic link library (DLL) or an executable program is invalid.
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  href: System.NotSupportedException.yml
+  name: NotSupportedException
+  fullName: System.NotSupportedException
+  type: Class
+  summary: The exception that is thrown when an invoked method is not supported, or when there is an attempt to read, seek, or write to a stream that does not support the invoked functionality.
+- uid: System.IndexOutOfRangeException
+  isExternal: false
+  href: System.IndexOutOfRangeException.yml
+  name: IndexOutOfRangeException
+  fullName: System.IndexOutOfRangeException
+  type: Class
+  summary: The exception that is thrown when an attempt is made to access an element of an array or collection with an index that is outside its bounds.
+- uid: System.Runtime.InteropServices.COMException
+  isExternal: false
+  href: System.Runtime.InteropServices.COMException.yml
+  name: COMException
+  fullName: System.Runtime.InteropServices.COMException
+  type: Class
+  summary: The exception that is thrown when an unrecognized HRESULT is returned from a COM method call.
+- uid: System.MethodAccessException
+  isExternal: false
+  href: System.MethodAccessException.yml
+  name: MethodAccessException
+  fullName: System.MethodAccessException
+  type: Class
+  summary: The exception that is thrown when there is an invalid attempt to access a method, such as accessing a private method from partially trusted code.
+- uid: System.MissingFieldException
+  isExternal: false
+  href: System.MissingFieldException.yml
+  name: MissingFieldException
+  fullName: System.MissingFieldException
+  type: Class
+  summary: The exception that is thrown when there is an attempt to dynamically access a field that does not exist.
+- uid: System.MissingMethodException
+  isExternal: false
+  href: System.MissingMethodException.yml
+  name: MissingMethodException
+  fullName: System.MissingMethodException
+  type: Class
+  summary: The exception that is thrown when there is an attempt to dynamically access a method that does not exist.
+- uid: System.Reflection.TargetException
+  isExternal: false
+  href: System.Reflection.TargetException.yml
+  name: TargetException
+  fullName: System.Reflection.TargetException
+  type: Class
+  summary: Represents the exception that is thrown when an attempt is made to invoke an invalid target.
+- uid: System.Reflection.AmbiguousMatchException
+  isExternal: false
+  href: System.Reflection.AmbiguousMatchException.yml
+  name: AmbiguousMatchException
+  fullName: System.Reflection.AmbiguousMatchException
+  type: Class
+  summary: The exception that is thrown when binding to a member results in more than one member matching the binding criteria. This class cannot be inherited.
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
+  summary: The exception that is thrown when a method call is invalid for the object's current state.
+- uid: System.NullReferenceException
+  isExternal: false
+  href: System.NullReferenceException.yml
+  name: NullReferenceException
+  fullName: System.NullReferenceException
+  type: Class
+  summary: The exception that is thrown when there is an attempt to dereference a null object reference.

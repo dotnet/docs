@@ -74,6 +74,7 @@ references:
   name: DataReceivedEventHandler
   fullName: System.Diagnostics.DataReceivedEventHandler
   type: Delegate
+  summary: Represents the method that will handle the @'System.Diagnostics.Process.OutputDataReceived' event or @'System.Diagnostics.Process.ErrorDataReceived' event of a @'System.Diagnostics.Process'.
 - uid: System.Diagnostics.DataReceivedEventArgs
   parent: System.Diagnostics
   isExternal: false
@@ -81,6 +82,7 @@ references:
   name: DataReceivedEventArgs
   fullName: System.Diagnostics.DataReceivedEventArgs
   type: Class
+  summary: Provides data for the @'System.Diagnostics.Process.OutputDataReceived' and @'System.Diagnostics.Process.ErrorDataReceived' events.
 - uid: System.Diagnostics.Process
   parent: System.Diagnostics
   isExternal: false
@@ -88,6 +90,7 @@ references:
   name: Process
   fullName: System.Diagnostics.Process
   type: Class
+  summary: Provides access to local and remote processes and enables you to start and stop local system processes.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.Diagnostics.ProcessModule
   parent: System.Diagnostics
   isExternal: false
@@ -95,6 +98,7 @@ references:
   name: ProcessModule
   fullName: System.Diagnostics.ProcessModule
   type: Class
+  summary: Represents a.dll or .exe file that is loaded into a particular process.
 - uid: System.Diagnostics.ProcessModuleCollection
   parent: System.Diagnostics
   isExternal: false
@@ -102,6 +106,7 @@ references:
   name: ProcessModuleCollection
   fullName: System.Diagnostics.ProcessModuleCollection
   type: Class
+  summary: Provides a strongly typed collection of @'System.Diagnostics.ProcessModule' objects.
 - uid: System.Diagnostics.ProcessPriorityClass
   parent: System.Diagnostics
   isExternal: false
@@ -109,6 +114,7 @@ references:
   name: ProcessPriorityClass
   fullName: System.Diagnostics.ProcessPriorityClass
   type: Enum
+  summary: Indicates the priority that the system associates with a process. This value, together with the priority value of each thread of the process, determines each thread's base priority level.
 - uid: System.Diagnostics.ProcessStartInfo
   parent: System.Diagnostics
   isExternal: false
@@ -116,6 +122,7 @@ references:
   name: ProcessStartInfo
   fullName: System.Diagnostics.ProcessStartInfo
   type: Class
+  summary: Specifies a set of values that are used when you start a process.
 - uid: System.Diagnostics.ProcessThread
   parent: System.Diagnostics
   isExternal: false
@@ -123,6 +130,7 @@ references:
   name: ProcessThread
   fullName: System.Diagnostics.ProcessThread
   type: Class
+  summary: Represents an operating system process thread.
 - uid: System.Diagnostics.ProcessThreadCollection
   parent: System.Diagnostics
   isExternal: false
@@ -130,6 +138,7 @@ references:
   name: ProcessThreadCollection
   fullName: System.Diagnostics.ProcessThreadCollection
   type: Class
+  summary: Provides a strongly typed collection of @'System.Diagnostics.ProcessThread' objects.
 - uid: System.Diagnostics.ProcessWindowStyle
   parent: System.Diagnostics
   isExternal: false
@@ -137,6 +146,7 @@ references:
   name: ProcessWindowStyle
   fullName: System.Diagnostics.ProcessWindowStyle
   type: Enum
+  summary: Specified how a new window should appear when the system starts a process.
 - uid: System.Diagnostics.ThreadPriorityLevel
   parent: System.Diagnostics
   isExternal: false
@@ -144,6 +154,7 @@ references:
   name: ThreadPriorityLevel
   fullName: System.Diagnostics.ThreadPriorityLevel
   type: Enum
+  summary: Specifies the priority level of a thread.
 - uid: System.Diagnostics.ThreadState
   parent: System.Diagnostics
   isExternal: false
@@ -151,6 +162,7 @@ references:
   name: ThreadState
   fullName: System.Diagnostics.ThreadState
   type: Enum
+  summary: Specifies the current execution state of the thread.
 - uid: System.Diagnostics.ThreadWaitReason
   parent: System.Diagnostics
   isExternal: false
@@ -158,6 +170,7 @@ references:
   name: ThreadWaitReason
   fullName: System.Diagnostics.ThreadWaitReason
   type: Enum
+  summary: Specifies the reason a thread is waiting.
 - uid: System.Diagnostics.FileVersionInfo
   parent: System.Diagnostics
   isExternal: false
@@ -172,42 +185,49 @@ references:
   name: ConditionalAttribute
   fullName: System.Diagnostics.ConditionalAttribute
   type: Class
+  summary: Indicates to compilers that a method call or attribute should be ignored unless a specified conditional compilation symbol is defined.
 - uid: System.Diagnostics.Debugger
   isExternal: false
   href: System.Diagnostics.Debugger.yml
   name: Debugger
   fullName: System.Diagnostics.Debugger
   type: Class
+  summary: Enables communication with a debugger. This class cannot be inherited.
 - uid: System.Diagnostics.DebuggerStepThroughAttribute
   isExternal: false
   href: System.Diagnostics.DebuggerStepThroughAttribute.yml
   name: DebuggerStepThroughAttribute
   fullName: System.Diagnostics.DebuggerStepThroughAttribute
   type: Class
+  summary: Instructs the debugger to step through the code instead of stepping into the code. This class cannot be inherited.
 - uid: System.Diagnostics.DebuggerStepperBoundaryAttribute
   isExternal: false
   href: System.Diagnostics.DebuggerStepperBoundaryAttribute.yml
   name: DebuggerStepperBoundaryAttribute
   fullName: System.Diagnostics.DebuggerStepperBoundaryAttribute
   type: Class
+  summary: Indicates the code following the attribute is to be executed in run, not step, mode.
 - uid: System.Diagnostics.DebuggerHiddenAttribute
   isExternal: false
   href: System.Diagnostics.DebuggerHiddenAttribute.yml
   name: DebuggerHiddenAttribute
   fullName: System.Diagnostics.DebuggerHiddenAttribute
   type: Class
+  summary: Specifies the @'System.Diagnostics.DebuggerHiddenAttribute'. This class cannot be inherited.
 - uid: System.Diagnostics.DebuggerNonUserCodeAttribute
   isExternal: false
   href: System.Diagnostics.DebuggerNonUserCodeAttribute.yml
   name: DebuggerNonUserCodeAttribute
   fullName: System.Diagnostics.DebuggerNonUserCodeAttribute
   type: Class
+  summary: Identifies a type or member that is not part of the user code for an application.
 - uid: System.Diagnostics.DebuggableAttribute
   isExternal: false
   href: System.Diagnostics.DebuggableAttribute.yml
   name: DebuggableAttribute
   fullName: System.Diagnostics.DebuggableAttribute
   type: Class
+  summary: Modifies code generation for runtime just-in-time (JIT) debugging. This class cannot be inherited.
 - uid: System.Diagnostics.DebuggableAttribute.DebuggingModes
   parent: System.Diagnostics
   isExternal: false
@@ -215,6 +235,7 @@ references:
   name: DebuggableAttribute.DebuggingModes
   fullName: System.Diagnostics.DebuggableAttribute.DebuggingModes
   type: Enum
+  summary: Specifies the debugging mode for the just-in-time (JIT) compiler.
 - uid: System.Diagnostics.DebuggerBrowsableState
   parent: System.Diagnostics
   isExternal: false
@@ -222,40 +243,42 @@ references:
   name: DebuggerBrowsableState
   fullName: System.Diagnostics.DebuggerBrowsableState
   type: Enum
+  summary: Provides display instructions for the debugger.
 - uid: System.Diagnostics.DebuggerBrowsableAttribute
   isExternal: false
   href: System.Diagnostics.DebuggerBrowsableAttribute.yml
   name: DebuggerBrowsableAttribute
   fullName: System.Diagnostics.DebuggerBrowsableAttribute
   type: Class
+  summary: Determines if and how a member is displayed in the debugger variable windows. This class cannot be inherited.
 - uid: System.Diagnostics.DebuggerTypeProxyAttribute
   isExternal: false
   href: System.Diagnostics.DebuggerTypeProxyAttribute.yml
   name: DebuggerTypeProxyAttribute
   fullName: System.Diagnostics.DebuggerTypeProxyAttribute
   type: Class
+  summary: Specifies the display proxy for a type.
 - uid: System.Diagnostics.DebuggerDisplayAttribute
   isExternal: false
   href: System.Diagnostics.DebuggerDisplayAttribute.yml
   name: DebuggerDisplayAttribute
   fullName: System.Diagnostics.DebuggerDisplayAttribute
   type: Class
+  summary: Determines how a class or field is displayed in the debugger variable windows.
 - uid: System.Diagnostics.DebuggerVisualizerAttribute
   isExternal: false
   href: System.Diagnostics.DebuggerVisualizerAttribute.yml
   name: DebuggerVisualizerAttribute
   fullName: System.Diagnostics.DebuggerVisualizerAttribute
   type: Class
-  summary: >-
-    Signifies that the attributed type has a visualizer which is pointed
-
-    to by the parameter type name strings.
+  summary: Specifies that the type has a visualizer. This class cannot be inherited.
 - uid: System.Diagnostics.StackTrace
   isExternal: false
   href: System.Diagnostics.StackTrace.yml
   name: StackTrace
   fullName: System.Diagnostics.StackTrace
   type: Class
+  summary: Represents a stack trace, which is an ordered collection of one or more stack frames.
 - uid: System.Diagnostics.StackFrame
   parent: System.Diagnostics
   isExternal: false
@@ -263,6 +286,7 @@ references:
   name: StackFrame
   fullName: System.Diagnostics.StackFrame
   type: Class
+  summary: Provides information about a @'System.Diagnostics.StackFrame', which represents a function call on the call stack for the current thread.
 - uid: System.Diagnostics.Stopwatch
   parent: System.Diagnostics
   isExternal: false
@@ -270,30 +294,35 @@ references:
   name: Stopwatch
   fullName: System.Diagnostics.Stopwatch
   type: Class
+  summary: Provides a set of methods and properties that you can use to accurately measure elapsed time.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.Diagnostics.BooleanSwitch
   isExternal: false
   href: System.Diagnostics.BooleanSwitch.yml
   name: BooleanSwitch
   fullName: System.Diagnostics.BooleanSwitch
   type: Class
+  summary: Provides a simple on/off switch that controls debugging and tracing output.
 - uid: System.Diagnostics.DefaultTraceListener
   isExternal: false
   href: System.Diagnostics.DefaultTraceListener.yml
   name: DefaultTraceListener
   fullName: System.Diagnostics.DefaultTraceListener
   type: Class
+  summary: Provides the default output methods and behavior for tracing.
 - uid: System.Diagnostics.EventTypeFilter
   isExternal: false
   href: System.Diagnostics.EventTypeFilter.yml
   name: EventTypeFilter
   fullName: System.Diagnostics.EventTypeFilter
   type: Class
+  summary: Indicates whether a listener should trace based on the event type.
 - uid: System.Diagnostics.SourceFilter
   isExternal: false
   href: System.Diagnostics.SourceFilter.yml
   name: SourceFilter
   fullName: System.Diagnostics.SourceFilter
   type: Class
+  summary: Indicates whether a listener should trace a message based on the source of a trace.
 - uid: System.Diagnostics.SourceLevels
   parent: System.Diagnostics
   isExternal: false
@@ -301,6 +330,7 @@ references:
   name: SourceLevels
   fullName: System.Diagnostics.SourceLevels
   type: Enum
+  summary: Specifies the levels of trace messages filtered by the source switch and event type filter.
 - uid: System.Diagnostics.SourceSwitch
   parent: System.Diagnostics
   isExternal: false
@@ -308,6 +338,7 @@ references:
   name: SourceSwitch
   fullName: System.Diagnostics.SourceSwitch
   type: Class
+  summary: Provides a multilevel switch to control tracing and debug output without recompiling your code.
 - uid: System.Diagnostics.Switch
   parent: System.Diagnostics
   isExternal: false
@@ -315,12 +346,14 @@ references:
   name: Switch
   fullName: System.Diagnostics.Switch
   type: Class
+  summary: Provides an abstract base class to create new debugging and tracing switches.
 - uid: System.Diagnostics.Trace
   isExternal: false
   href: System.Diagnostics.Trace.yml
   name: Trace
   fullName: System.Diagnostics.Trace
   type: Class
+  summary: Provides a set of methods and properties that help you trace the execution of your code. This class cannot be inherited.
 - uid: System.Diagnostics.TraceEventCache
   parent: System.Diagnostics
   isExternal: false
@@ -328,6 +361,7 @@ references:
   name: TraceEventCache
   fullName: System.Diagnostics.TraceEventCache
   type: Class
+  summary: Provides trace event data specific to a thread and a process.
 - uid: System.Diagnostics.TraceEventType
   parent: System.Diagnostics
   isExternal: false
@@ -335,6 +369,7 @@ references:
   name: TraceEventType
   fullName: System.Diagnostics.TraceEventType
   type: Enum
+  summary: Identifies the type of event that has caused the trace.
 - uid: System.Diagnostics.TraceFilter
   parent: System.Diagnostics
   isExternal: false
@@ -342,6 +377,7 @@ references:
   name: TraceFilter
   fullName: System.Diagnostics.TraceFilter
   type: Class
+  summary: Provides the base class for trace filter implementations.
 - uid: System.Diagnostics.TraceLevel
   parent: System.Diagnostics
   isExternal: false
@@ -349,6 +385,7 @@ references:
   name: TraceLevel
   fullName: System.Diagnostics.TraceLevel
   type: Enum
+  summary: Specifies what messages to output for the @'System.Diagnostics.Debug', @'System.Diagnostics.Trace' and @'System.Diagnostics.TraceSwitch' classes.
 - uid: System.Diagnostics.TraceListener
   parent: System.Diagnostics
   isExternal: false
@@ -356,6 +393,7 @@ references:
   name: TraceListener
   fullName: System.Diagnostics.TraceListener
   type: Class
+  summary: Provides the abstract base class for the listeners who monitor trace and debug output.
 - uid: System.Diagnostics.TraceListenerCollection
   parent: System.Diagnostics
   isExternal: false
@@ -363,6 +401,7 @@ references:
   name: TraceListenerCollection
   fullName: System.Diagnostics.TraceListenerCollection
   type: Class
+  summary: Provides a thread-safe list of @'System.Diagnostics.TraceListener' objects.
 - uid: System.Diagnostics.TraceOptions
   parent: System.Diagnostics
   isExternal: false
@@ -370,31 +409,35 @@ references:
   name: TraceOptions
   fullName: System.Diagnostics.TraceOptions
   type: Enum
+  summary: Specifies trace data options to be written to the trace output.
 - uid: System.Diagnostics.TraceSource
   isExternal: false
   href: System.Diagnostics.TraceSource.yml
   name: TraceSource
   fullName: System.Diagnostics.TraceSource
   type: Class
+  summary: Provides a set of methods and properties that enable applications to trace the execution of code and associate trace messages with their source.
 - uid: System.Diagnostics.TraceSwitch
   isExternal: false
   href: System.Diagnostics.TraceSwitch.yml
   name: TraceSwitch
   fullName: System.Diagnostics.TraceSwitch
   type: Class
+  summary: Provides a multilevel switch to control tracing and debug output without recompiling your code.
 - uid: System.Diagnostics.Debug
   isExternal: false
   href: System.Diagnostics.Debug.yml
   name: Debug
   fullName: System.Diagnostics.Debug
   type: Class
-  summary: Provides a set of properties and methods for debugging code.
+  summary: Provides a set of methods and properties that help debug your code. This class cannot be inherited.
 - uid: System.Diagnostics.DelimitedListTraceListener
   isExternal: false
   href: System.Diagnostics.DelimitedListTraceListener.yml
   name: DelimitedListTraceListener
   fullName: System.Diagnostics.DelimitedListTraceListener
   type: Class
+  summary: Directs tracing or debugging output to a text writer, such as a stream writer, or to a stream, such as a file stream.
 - uid: System.Diagnostics.TextWriterTraceListener
   parent: System.Diagnostics
   isExternal: false
@@ -402,6 +445,7 @@ references:
   name: TextWriterTraceListener
   fullName: System.Diagnostics.TextWriterTraceListener
   type: Class
+  summary: Directs tracing or debugging output to a @'System.IO.TextWriter' or to a @'System.IO.Stream', such as @'System.IO.FileStream'.
 - uid: System.Diagnostics
   isExternal: false
   name: System.Diagnostics

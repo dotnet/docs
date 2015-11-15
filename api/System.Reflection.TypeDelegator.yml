@@ -7100,3 +7100,33 @@ references:
   name: InterfaceMapping
   fullName: System.Reflection.InterfaceMapping
   type: Struct
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.TypeLoadException
+  parent: System
+  isExternal: false
+  href: System.TypeLoadException.yml
+  name: TypeLoadException
+  fullName: System.TypeLoadException
+  type: Class
+  summary: The exception that is thrown when type-loading failures occur.
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.Reflection.ReflectionTypeLoadException
+  isExternal: false
+  href: System.Reflection.ReflectionTypeLoadException.yml
+  name: ReflectionTypeLoadException
+  fullName: System.Reflection.ReflectionTypeLoadException
+  type: Class
+  summary: The exception that is thrown by the @'System.Reflection.Module.GetTypes' method if any of the classes in a module cannot be loaded. This class cannot be inherited.

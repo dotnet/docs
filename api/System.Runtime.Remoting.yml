@@ -26,6 +26,7 @@ references:
   name: IObjectHandle
   fullName: System.Runtime.Remoting.IObjectHandle
   type: Interface
+  summary: Defines the interface for unwrapping marshal-by-value objects from indirection.
 - uid: System.Runtime.Remoting.ObjectHandle
   parent: System.Runtime.Remoting
   isExternal: false
@@ -33,6 +34,7 @@ references:
   name: ObjectHandle
   fullName: System.Runtime.Remoting.ObjectHandle
   type: Class
+  summary: Wraps marshal-by-value object references, allowing them to be returned through an indirection.
 - uid: System.Runtime.Remoting
   isExternal: false
   name: System.Runtime.Remoting

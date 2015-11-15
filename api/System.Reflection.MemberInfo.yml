@@ -816,3 +816,33 @@ references:
     fullName: (
   - name: )
     fullName: )
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
+  summary: The exception that is thrown when a method call is invalid for the object's current state.
+- uid: System.TypeLoadException
+  parent: System
+  isExternal: false
+  href: System.TypeLoadException.yml
+  name: TypeLoadException
+  fullName: System.TypeLoadException
+  type: Class
+  summary: The exception that is thrown when type-loading failures occur.
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.NotImplementedException
+  isExternal: false
+  href: System.NotImplementedException.yml
+  name: NotImplementedException
+  fullName: System.NotImplementedException
+  type: Class
+  summary: The exception that is thrown when a requested method or operation is not implemented.

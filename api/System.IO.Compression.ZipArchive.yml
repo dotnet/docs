@@ -776,3 +776,10 @@ references:
   fullName: System.IO.Compression.CompressionLevel
   type: Enum
   summary: Defines a tradeoff between fast vs. strong compression. The specific meaning depends of the Deflater implementation.
+- uid: System.IO.InvalidDataException
+  isExternal: false
+  href: System.IO.InvalidDataException.yml
+  name: InvalidDataException
+  fullName: System.IO.InvalidDataException
+  type: Class
+  summary: The exception that is thrown when a data stream is in an invalid format.

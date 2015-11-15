@@ -36,6 +36,7 @@ references:
   name: BigInteger
   fullName: System.Numerics.BigInteger
   type: Struct
+  summary: Represents an arbitrarily large signed integer.
 - uid: System.Numerics.Complex
   parent: System.Numerics
   isExternal: false
@@ -43,6 +44,7 @@ references:
   name: Complex
   fullName: System.Numerics.Complex
   type: Struct
+  summary: Represents a complex number.
 - uid: System.Numerics.VectorExtensions
   isExternal: false
   href: System.Numerics.VectorExtensions.yml
@@ -57,7 +59,7 @@ references:
   name: Matrix3x2
   fullName: System.Numerics.Matrix3x2
   type: Struct
-  summary: A structure encapsulating a 3x2 matrix.
+  summary: Represents a 3x2 matrix.
 - uid: System.Numerics.Matrix4x4
   parent: System.Numerics
   isExternal: false
@@ -65,7 +67,7 @@ references:
   name: Matrix4x4
   fullName: System.Numerics.Matrix4x4
   type: Struct
-  summary: A structure encapsulating a 4x4 matrix.
+  summary: Represents a 4x4 matrix.
 - uid: System.Numerics.Plane
   parent: System.Numerics
   isExternal: false
@@ -73,7 +75,7 @@ references:
   name: Plane
   fullName: System.Numerics.Plane
   type: Struct
-  summary: A structure encapsulating a 3D Plane
+  summary: Represents a three-dimensional plane.
 - uid: System.Numerics.Quaternion
   parent: System.Numerics
   isExternal: false
@@ -81,10 +83,7 @@ references:
   name: Quaternion
   fullName: System.Numerics.Quaternion
   type: Struct
-  summary: >-
-    A structure encapsulating a four-dimensional vector (x,y,z,w),
-
-    which is used to efficiently rotate an object about the (x,y,z) vector by the angle theta, where w = cos(theta/2).
+  summary: Represents a vector that is used to encode three-dimensional physical rotations.
 - uid: System.Numerics.Vector`1
   parent: System.Numerics
   isExternal: false
@@ -129,7 +128,7 @@ references:
   name: Vector2
   fullName: System.Numerics.Vector2
   type: Struct
-  summary: A structure encapsulating two single precision floating point values and provides hardware accelerated methods.
+  summary: Represents a vector with two single-precision floating-point values.
 - uid: System.Numerics.Vector3
   parent: System.Numerics
   isExternal: false
@@ -137,7 +136,7 @@ references:
   name: Vector3
   fullName: System.Numerics.Vector3
   type: Struct
-  summary: A structure encapsulating three single precision floating point values and provides hardware accelerated methods.
+  summary: Represents a vector with three  single-precision floating-point values.
 - uid: System.Numerics.Vector4
   parent: System.Numerics
   isExternal: false
@@ -145,7 +144,7 @@ references:
   name: Vector4
   fullName: System.Numerics.Vector4
   type: Struct
-  summary: A structure encapsulating four single precision floating point values and provides hardware accelerated methods.
+  summary: Represents a vector with four single-precision floating-point values.
 - uid: System.Numerics.Vector
   isExternal: false
   href: System.Numerics.Vector.yml

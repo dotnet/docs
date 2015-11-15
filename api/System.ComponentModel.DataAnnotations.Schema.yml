@@ -31,21 +31,14 @@ references:
   name: ColumnAttribute
   fullName: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute
   type: Class
-  summary: Specifies the database column that a property is mapped to.
+  summary: Represents the database column that a property is mapped to.
 - uid: System.ComponentModel.DataAnnotations.Schema.ComplexTypeAttribute
   isExternal: false
   href: System.ComponentModel.DataAnnotations.Schema.ComplexTypeAttribute.yml
   name: ComplexTypeAttribute
   fullName: System.ComponentModel.DataAnnotations.Schema.ComplexTypeAttribute
   type: Class
-  summary: >-
-    Denotes that the class is a complex type.
-
-    Complex types are non-scalar properties of entity types that enable scalar properties to be organized within
-
-    entities.
-
-    Complex types do not have keys and cannot be managed by the Entity Framework apart from the parent object.
+  summary: Denotes that the class is a complex type. Complex types are non-scalar properties of entity types that enable scalar properties to be organized within entities. Complex types do not have keys and cannot be managed by the Entity Framework apart from the parent object.
 - uid: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute
   isExternal: false
   href: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute.yml
@@ -60,19 +53,14 @@ references:
   name: DatabaseGeneratedOption
   fullName: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption
   type: Enum
-  summary: The pattern used to generate values for a property in the database.
+  summary: Represents the pattern used to generate values for a property in the database.
 - uid: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
   isExternal: false
   href: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.yml
   name: ForeignKeyAttribute
   fullName: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
   type: Class
-  summary: >-
-    Denotes a property used as a foreign key in a relationship.
-
-    The annotation may be placed on the foreign key property and specify the associated navigation property name,
-
-    or placed on a navigation property and specify the associated foreign key name.
+  summary: Denotes a property used as a foreign key in a relationship. The annotation may be placed on the foreign key property and specify the associated navigation property name, or placed on a navigation property and specify the associated foreign key name.
 - uid: System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute
   isExternal: false
   href: System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute.yml

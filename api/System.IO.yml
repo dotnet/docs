@@ -71,6 +71,7 @@ references:
   name: InvalidDataException
   fullName: System.IO.InvalidDataException
   type: Class
+  summary: The exception that is thrown when a data stream is in an invalid format.
 - uid: System.IO.FileAccess
   parent: System.IO
   isExternal: false
@@ -78,6 +79,7 @@ references:
   name: FileAccess
   fullName: System.IO.FileAccess
   type: Enum
+  summary: Defines constants for read, write, or read/write access to a file.
 - uid: System.IO.FileAttributes
   parent: System.IO
   isExternal: false
@@ -85,6 +87,7 @@ references:
   name: FileAttributes
   fullName: System.IO.FileAttributes
   type: Enum
+  summary: Provides attributes for files and directories.
 - uid: System.IO.FileMode
   parent: System.IO
   isExternal: false
@@ -92,6 +95,7 @@ references:
   name: FileMode
   fullName: System.IO.FileMode
   type: Enum
+  summary: Specifies how the operating system should open a file.
 - uid: System.IO.FileShare
   parent: System.IO
   isExternal: false
@@ -99,12 +103,14 @@ references:
   name: FileShare
   fullName: System.IO.FileShare
   type: Enum
+  summary: Contains constants for controlling the kind of access other @'System.IO.FileStream' objects can have to the same file.
 - uid: System.IO.BinaryReader
   isExternal: false
   href: System.IO.BinaryReader.yml
   name: BinaryReader
   fullName: System.IO.BinaryReader
   type: Class
+  summary: Reads primitive data types as binary values in a specific encoding.
 - uid: System.IO.BinaryWriter
   parent: System.IO
   isExternal: false
@@ -112,18 +118,21 @@ references:
   name: BinaryWriter
   fullName: System.IO.BinaryWriter
   type: Class
+  summary: Writes primitive types in binary to a stream and supports writing strings in a specific encoding.
 - uid: System.IO.BufferedStream
   isExternal: false
   href: System.IO.BufferedStream.yml
   name: BufferedStream
   fullName: System.IO.BufferedStream
   type: Class
+  summary: Adds a buffering layer to read and write operations on another stream. This class cannot be inherited.
 - uid: System.IO.Directory
   isExternal: false
   href: System.IO.Directory.yml
   name: Directory
   fullName: System.IO.Directory
   type: Class
+  summary: Exposes static methods for creating, moving, and enumerating through directories and subdirectories. This class cannot be inherited.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.IO.DirectoryInfo
   parent: System.IO
   isExternal: false
@@ -131,6 +140,7 @@ references:
   name: DirectoryInfo
   fullName: System.IO.DirectoryInfo
   type: Class
+  summary: Exposes instance methods for creating, moving, and enumerating through directories and subdirectories. This class cannot be inherited.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.IO.SearchOption
   parent: System.IO
   isExternal: false
@@ -138,12 +148,14 @@ references:
   name: SearchOption
   fullName: System.IO.SearchOption
   type: Enum
+  summary: Specifies whether to search the current directory, or the current directory and all subdirectories.
 - uid: System.IO.DirectoryNotFoundException
   isExternal: false
   href: System.IO.DirectoryNotFoundException.yml
   name: DirectoryNotFoundException
   fullName: System.IO.DirectoryNotFoundException
   type: Class
+  summary: The exception that is thrown when part of a file or directory cannot be found.
 - uid: System.IO.DriveType
   parent: System.IO
   isExternal: false
@@ -151,30 +163,35 @@ references:
   name: DriveType
   fullName: System.IO.DriveType
   type: Enum
+  summary: Defines constants for drive types, including CDRom, Fixed, Network, NoRootDirectory, Ram, Removable, and Unknown.
 - uid: System.IO.DriveInfo
   isExternal: false
   href: System.IO.DriveInfo.yml
   name: DriveInfo
   fullName: System.IO.DriveInfo
   type: Class
+  summary: Provides access to information on a drive.
 - uid: System.IO.DriveNotFoundException
   isExternal: false
   href: System.IO.DriveNotFoundException.yml
   name: DriveNotFoundException
   fullName: System.IO.DriveNotFoundException
   type: Class
+  summary: The exception that is thrown when trying to access a drive or share that is not available.
 - uid: System.IO.EndOfStreamException
   isExternal: false
   href: System.IO.EndOfStreamException.yml
   name: EndOfStreamException
   fullName: System.IO.EndOfStreamException
   type: Class
+  summary: The exception that is thrown when reading is attempted past the end of a stream.
 - uid: System.IO.File
   isExternal: false
   href: System.IO.File.yml
   name: File
   fullName: System.IO.File
   type: Class
+  summary: Provides static methods for the creation, copying, deletion, moving, and opening of a single file, and aids in the creation of @'System.IO.FileStream' objects.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.IO.FileInfo
   parent: System.IO
   isExternal: false
@@ -182,18 +199,21 @@ references:
   name: FileInfo
   fullName: System.IO.FileInfo
   type: Class
+  summary: Provides properties and instance methods for the creation, copying, deletion, moving, and opening of files, and aids in the creation of @'System.IO.FileStream' objects. This class cannot be inherited.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.IO.FileLoadException
   isExternal: false
   href: System.IO.FileLoadException.yml
   name: FileLoadException
   fullName: System.IO.FileLoadException
   type: Class
+  summary: The exception that is thrown when a managed assembly is found but cannot be loaded.
 - uid: System.IO.FileNotFoundException
   isExternal: false
   href: System.IO.FileNotFoundException.yml
   name: FileNotFoundException
   fullName: System.IO.FileNotFoundException
   type: Class
+  summary: The exception that is thrown when an attempt to access a file that does not exist on disk fails.
 - uid: System.IO.FileOptions
   parent: System.IO
   isExternal: false
@@ -201,6 +221,7 @@ references:
   name: FileOptions
   fullName: System.IO.FileOptions
   type: Enum
+  summary: Represents advanced options for creating a @'System.IO.FileStream' object.
 - uid: System.IO.FileStream
   parent: System.IO
   isExternal: false
@@ -208,6 +229,7 @@ references:
   name: FileStream
   fullName: System.IO.FileStream
   type: Class
+  summary: Provides a @'System.IO.Stream' for a file, supporting both synchronous and asynchronous read and write operations.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.IO.FileSystemInfo
   parent: System.IO
   isExternal: false
@@ -215,6 +237,7 @@ references:
   name: FileSystemInfo
   fullName: System.IO.FileSystemInfo
   type: Class
+  summary: Provides the base class for both @'System.IO.FileInfo' and @'System.IO.DirectoryInfo' objects.
 - uid: System.IO.IOException
   parent: System.IO
   isExternal: false
@@ -222,24 +245,28 @@ references:
   name: IOException
   fullName: System.IO.IOException
   type: Class
+  summary: The exception that is thrown when an I/O error occurs.
 - uid: System.IO.MemoryStream
   isExternal: false
   href: System.IO.MemoryStream.yml
   name: MemoryStream
   fullName: System.IO.MemoryStream
   type: Class
+  summary: Creates a stream whose backing store is memory.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.IO.Path
   isExternal: false
   href: System.IO.Path.yml
   name: Path
   fullName: System.IO.Path
   type: Class
+  summary: Performs operations on @'System.String' instances that contain file or directory path information. These operations are performed in a cross-platform manner.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.IO.PathTooLongException
   isExternal: false
   href: System.IO.PathTooLongException.yml
   name: PathTooLongException
   fullName: System.IO.PathTooLongException
   type: Class
+  summary: The exception that is thrown when a path or file name is longer than the system-defined maximum length.
 - uid: System.IO.SeekOrigin
   parent: System.IO
   isExternal: false
@@ -247,6 +274,7 @@ references:
   name: SeekOrigin
   fullName: System.IO.SeekOrigin
   type: Enum
+  summary: Specifies the position in a stream to use for seeking.
 - uid: System.IO.Stream
   parent: System.IO
   isExternal: false
@@ -254,6 +282,7 @@ references:
   name: Stream
   fullName: System.IO.Stream
   type: Class
+  summary: Provides a generic view of a sequence of bytes. This is an abstract class.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.IO.StreamReader
   parent: System.IO
   isExternal: false
@@ -261,6 +290,7 @@ references:
   name: StreamReader
   fullName: System.IO.StreamReader
   type: Class
+  summary: Implements a @'System.IO.TextReader' that reads characters from a byte stream in a particular encoding.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.IO.StreamWriter
   parent: System.IO
   isExternal: false
@@ -268,18 +298,21 @@ references:
   name: StreamWriter
   fullName: System.IO.StreamWriter
   type: Class
+  summary: Implements a @'System.IO.TextWriter' for writing characters to a stream in a particular encoding.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.IO.StringReader
   isExternal: false
   href: System.IO.StringReader.yml
   name: StringReader
   fullName: System.IO.StringReader
   type: Class
+  summary: Implements a @'System.IO.TextReader' that reads from a string.
 - uid: System.IO.StringWriter
   isExternal: false
   href: System.IO.StringWriter.yml
   name: StringWriter
   fullName: System.IO.StringWriter
   type: Class
+  summary: Implements a @'System.IO.TextWriter' for writing information to a string. The information is stored in an underlying @'System.Text.StringBuilder'.
 - uid: System.IO.TextReader
   parent: System.IO
   isExternal: false
@@ -287,6 +320,7 @@ references:
   name: TextReader
   fullName: System.IO.TextReader
   type: Class
+  summary: Represents a reader that can read a sequential series of characters.
 - uid: System.IO.TextWriter
   parent: System.IO
   isExternal: false
@@ -294,6 +328,7 @@ references:
   name: TextWriter
   fullName: System.IO.TextWriter
   type: Class
+  summary: Represents a writer that can write a sequential series of characters. This class is abstract.
 - uid: System.IO.UnmanagedMemoryAccessor
   parent: System.IO
   isExternal: false
@@ -301,6 +336,7 @@ references:
   name: UnmanagedMemoryAccessor
   fullName: System.IO.UnmanagedMemoryAccessor
   type: Class
+  summary: Provides random access to unmanaged blocks of memory from managed code.
 - uid: System.IO.UnmanagedMemoryStream
   parent: System.IO
   isExternal: false
@@ -308,7 +344,7 @@ references:
   name: UnmanagedMemoryStream
   fullName: System.IO.UnmanagedMemoryStream
   type: Class
-  summary: Stream over a memory pointer or over a SafeBuffer
+  summary: Provides access to unmanaged blocks of memory from managed code.
 - uid: System.IO.HandleInheritability
   parent: System.IO
   isExternal: false
@@ -316,6 +352,7 @@ references:
   name: HandleInheritability
   fullName: System.IO.HandleInheritability
   type: Enum
+  summary: Specifies whether the underlying handle is inheritable by child processes.
 - uid: System.IO.ErrorEventArgs
   parent: System.IO
   isExternal: false
@@ -323,6 +360,7 @@ references:
   name: ErrorEventArgs
   fullName: System.IO.ErrorEventArgs
   type: Class
+  summary: Provides data for the @'System.IO.FileSystemWatcher.Error' event.
 - uid: System.IO.ErrorEventHandler
   parent: System.IO
   isExternal: false
@@ -330,6 +368,7 @@ references:
   name: ErrorEventHandler
   fullName: System.IO.ErrorEventHandler
   type: Delegate
+  summary: Represents the method that will handle the @'System.IO.FileSystemWatcher.Error' event of a @'System.IO.FileSystemWatcher' object.
 - uid: System.IO.FileSystemEventArgs
   parent: System.IO
   isExternal: false
@@ -337,6 +376,7 @@ references:
   name: FileSystemEventArgs
   fullName: System.IO.FileSystemEventArgs
   type: Class
+  summary: 'Provides data for the directory events: @''System.IO.FileSystemWatcher.Changed'', @''System.IO.FileSystemWatcher.Created'', @''System.IO.FileSystemWatcher.Deleted''.'
 - uid: System.IO.FileSystemEventHandler
   parent: System.IO
   isExternal: false
@@ -344,18 +384,21 @@ references:
   name: FileSystemEventHandler
   fullName: System.IO.FileSystemEventHandler
   type: Delegate
+  summary: Represents the method that will handle the @'System.IO.FileSystemWatcher.Changed', @'System.IO.FileSystemWatcher.Created', or @'System.IO.FileSystemWatcher.Deleted' event of a @'System.IO.FileSystemWatcher' class.
 - uid: System.IO.FileSystemWatcher
   isExternal: false
   href: System.IO.FileSystemWatcher.yml
   name: FileSystemWatcher
   fullName: System.IO.FileSystemWatcher
   type: Class
+  summary: Listens to the file system change notifications and raises events when a directory, or file in a directory, changes.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.IO.InternalBufferOverflowException
   isExternal: false
   href: System.IO.InternalBufferOverflowException.yml
   name: InternalBufferOverflowException
   fullName: System.IO.InternalBufferOverflowException
   type: Class
+  summary: The exception thrown when the internal buffer overflows.
 - uid: System.IO.NotifyFilters
   parent: System.IO
   isExternal: false
@@ -363,6 +406,7 @@ references:
   name: NotifyFilters
   fullName: System.IO.NotifyFilters
   type: Enum
+  summary: Specifies changes to watch for in a file or folder.
 - uid: System.IO.RenamedEventArgs
   parent: System.IO
   isExternal: false
@@ -370,6 +414,7 @@ references:
   name: RenamedEventArgs
   fullName: System.IO.RenamedEventArgs
   type: Class
+  summary: Provides data for the @'System.IO.FileSystemWatcher.Renamed' event.
 - uid: System.IO.RenamedEventHandler
   parent: System.IO
   isExternal: false
@@ -377,6 +422,7 @@ references:
   name: RenamedEventHandler
   fullName: System.IO.RenamedEventHandler
   type: Delegate
+  summary: Represents the method that will handle the @'System.IO.FileSystemWatcher.Renamed' event of a @'System.IO.FileSystemWatcher' class.
 - uid: System.IO.WatcherChangeTypes
   parent: System.IO
   isExternal: false
@@ -384,6 +430,7 @@ references:
   name: WatcherChangeTypes
   fullName: System.IO.WatcherChangeTypes
   type: Enum
+  summary: Changes that might occur to a file or directory.
 - uid: System.IO
   isExternal: false
   name: System.IO

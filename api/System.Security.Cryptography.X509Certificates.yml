@@ -60,6 +60,7 @@ references:
   name: X509ContentType
   fullName: System.Security.Cryptography.X509Certificates.X509ContentType
   type: Enum
+  summary: Specifies the format of an X.509 certificate.
 - uid: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -67,6 +68,7 @@ references:
   name: X509KeyStorageFlags
   fullName: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
   type: Enum
+  summary: Defines where and how to import the private key of an X.509 certificate.
 - uid: System.Security.Cryptography.X509Certificates.X509Certificate
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -74,6 +76,7 @@ references:
   name: X509Certificate
   fullName: System.Security.Cryptography.X509Certificates.X509Certificate
   type: Class
+  summary: Provides methods that help you use X.509 v.3 certificates.
 - uid: System.Security.Cryptography.X509Certificates.OpenFlags
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -81,7 +84,7 @@ references:
   name: OpenFlags
   fullName: System.Security.Cryptography.X509Certificates.OpenFlags
   type: Enum
-  summary: This enum defines the Open modes. Read/ReadWrite/MaxAllowed are mutually exclusive.
+  summary: Specifies the way to open the X.509 certificate store.
 - uid: System.Security.Cryptography.X509Certificates.PublicKey
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -89,6 +92,7 @@ references:
   name: PublicKey
   fullName: System.Security.Cryptography.X509Certificates.PublicKey
   type: Class
+  summary: Represents a certificate's public key information. This class cannot be inherited.
 - uid: System.Security.Cryptography.X509Certificates.StoreLocation
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -96,6 +100,7 @@ references:
   name: StoreLocation
   fullName: System.Security.Cryptography.X509Certificates.StoreLocation
   type: Enum
+  summary: Specifies the location of the X.509 certificate store.
 - uid: System.Security.Cryptography.X509Certificates.StoreName
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -103,6 +108,7 @@ references:
   name: StoreName
   fullName: System.Security.Cryptography.X509Certificates.StoreName
   type: Enum
+  summary: Specifies the name of the X.509 certificate store to open.
 - uid: System.Security.Cryptography.X509Certificates.X500DistinguishedName
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -110,6 +116,7 @@ references:
   name: X500DistinguishedName
   fullName: System.Security.Cryptography.X509Certificates.X500DistinguishedName
   type: Class
+  summary: Represents the distinguished name of an X509 certificate. This class cannot be inherited.
 - uid: System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -117,12 +124,14 @@ references:
   name: X500DistinguishedNameFlags
   fullName: System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags
   type: Enum
+  summary: Specifies characteristics of the X.500 distinguished name.
 - uid: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension
   isExternal: false
   href: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.yml
   name: X509BasicConstraintsExtension
   fullName: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension
   type: Class
+  summary: Defines the constraints set on a certificate. This class cannot be inherited.
 - uid: System.Security.Cryptography.X509Certificates.X509Certificate2
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -130,6 +139,7 @@ references:
   name: X509Certificate2
   fullName: System.Security.Cryptography.X509Certificates.X509Certificate2
   type: Class
+  summary: Represents an X.509 certificate.
 - uid: System.Security.Cryptography.X509Certificates.X509Certificate2Collection
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -137,6 +147,7 @@ references:
   name: X509Certificate2Collection
   fullName: System.Security.Cryptography.X509Certificates.X509Certificate2Collection
   type: Class
+  summary: Represents a collection of @'System.Security.Cryptography.X509Certificates.X509Certificate2' objects. This class cannot be inherited.
 - uid: System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -144,6 +155,7 @@ references:
   name: X509Certificate2Enumerator
   fullName: System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator
   type: Class
+  summary: Supports a simple iteration over a @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection' object. This class cannot be inherited.
 - uid: System.Security.Cryptography.X509Certificates.X509CertificateCollection
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -151,6 +163,7 @@ references:
   name: X509CertificateCollection
   fullName: System.Security.Cryptography.X509Certificates.X509CertificateCollection
   type: Class
+  summary: Defines a collection that stores @'System.Security.Cryptography.X509Certificates.X509Certificate' objects.
 - uid: System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -158,12 +171,14 @@ references:
   name: X509CertificateCollection.X509CertificateEnumerator
   fullName: System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator
   type: Class
+  summary: Enumerates the @'System.Security.Cryptography.X509Certificates.X509Certificate' objects in an @'System.Security.Cryptography.X509Certificates.X509CertificateCollection'.
 - uid: System.Security.Cryptography.X509Certificates.X509Chain
   isExternal: false
   href: System.Security.Cryptography.X509Certificates.X509Chain.yml
   name: X509Chain
   fullName: System.Security.Cryptography.X509Certificates.X509Chain
   type: Class
+  summary: Represents a chain-building engine for @'System.Security.Cryptography.X509Certificates.X509Certificate2' certificates.
 - uid: System.Security.Cryptography.X509Certificates.X509ChainElement
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -171,6 +186,7 @@ references:
   name: X509ChainElement
   fullName: System.Security.Cryptography.X509Certificates.X509ChainElement
   type: Class
+  summary: Represents an element of an X.509 chain.
 - uid: System.Security.Cryptography.X509Certificates.X509ChainElementCollection
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -178,6 +194,7 @@ references:
   name: X509ChainElementCollection
   fullName: System.Security.Cryptography.X509Certificates.X509ChainElementCollection
   type: Class
+  summary: Represents a collection of @'System.Security.Cryptography.X509Certificates.X509ChainElement' objects. This class cannot be inherited.
 - uid: System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -185,6 +202,7 @@ references:
   name: X509ChainElementEnumerator
   fullName: System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator
   type: Class
+  summary: Supports a simple iteration over an @'System.Security.Cryptography.X509Certificates.X509ChainElementCollection'. This class cannot be inherited.
 - uid: System.Security.Cryptography.X509Certificates.X509ChainPolicy
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -192,12 +210,14 @@ references:
   name: X509ChainPolicy
   fullName: System.Security.Cryptography.X509Certificates.X509ChainPolicy
   type: Class
+  summary: Represents the chain policy to be applied when building an X509 certificate chain. This class cannot be inherited.
 - uid: System.Security.Cryptography.X509Certificates.X509ChainStatus
   isExternal: false
   href: System.Security.Cryptography.X509Certificates.X509ChainStatus.yml
   name: X509ChainStatus
   fullName: System.Security.Cryptography.X509Certificates.X509ChainStatus
   type: Struct
+  summary: Provides a simple structure for storing X509 chain status and error information.
 - uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -205,12 +225,14 @@ references:
   name: X509ChainStatusFlags
   fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
   type: Enum
+  summary: Defines the status of an X509 chain.
 - uid: System.Security.Cryptography.X509Certificates.X509EnhancedKeyUsageExtension
   isExternal: false
   href: System.Security.Cryptography.X509Certificates.X509EnhancedKeyUsageExtension.yml
   name: X509EnhancedKeyUsageExtension
   fullName: System.Security.Cryptography.X509Certificates.X509EnhancedKeyUsageExtension
   type: Class
+  summary: Defines the collection of object identifiers (OIDs) that indicates the applications that use the key. This class cannot be inherited.
 - uid: System.Security.Cryptography.X509Certificates.X509Extension
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -218,6 +240,7 @@ references:
   name: X509Extension
   fullName: System.Security.Cryptography.X509Certificates.X509Extension
   type: Class
+  summary: Represents an X509 extension.
 - uid: System.Security.Cryptography.X509Certificates.X509ExtensionCollection
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -225,6 +248,7 @@ references:
   name: X509ExtensionCollection
   fullName: System.Security.Cryptography.X509Certificates.X509ExtensionCollection
   type: Class
+  summary: Represents a collection of @'System.Security.Cryptography.X509Certificates.X509Extension' objects. This class cannot be inherited.
 - uid: System.Security.Cryptography.X509Certificates.X509ExtensionEnumerator
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -232,6 +256,7 @@ references:
   name: X509ExtensionEnumerator
   fullName: System.Security.Cryptography.X509Certificates.X509ExtensionEnumerator
   type: Class
+  summary: Supports a simple iteration over a @'System.Security.Cryptography.X509Certificates.X509ExtensionCollection'. This class cannot be inherited.
 - uid: System.Security.Cryptography.X509Certificates.X509FindType
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -239,12 +264,14 @@ references:
   name: X509FindType
   fullName: System.Security.Cryptography.X509Certificates.X509FindType
   type: Enum
+  summary: Specifies the type of value the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method searches for.
 - uid: System.Security.Cryptography.X509Certificates.X509KeyUsageExtension
   isExternal: false
   href: System.Security.Cryptography.X509Certificates.X509KeyUsageExtension.yml
   name: X509KeyUsageExtension
   fullName: System.Security.Cryptography.X509Certificates.X509KeyUsageExtension
   type: Class
+  summary: Defines the usage of a key contained within an X.509 certificate.  This class cannot be inherited.
 - uid: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -252,6 +279,7 @@ references:
   name: X509KeyUsageFlags
   fullName: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags
   type: Enum
+  summary: Defines how the certificate key can be used. If this value is not defined, the key can be used for any purpose.
 - uid: System.Security.Cryptography.X509Certificates.X509NameType
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -259,6 +287,7 @@ references:
   name: X509NameType
   fullName: System.Security.Cryptography.X509Certificates.X509NameType
   type: Enum
+  summary: Specifies the type of name the X509 certificate contains.
 - uid: System.Security.Cryptography.X509Certificates.X509RevocationFlag
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -266,6 +295,7 @@ references:
   name: X509RevocationFlag
   fullName: System.Security.Cryptography.X509Certificates.X509RevocationFlag
   type: Enum
+  summary: Specifies which X509 certificates in the chain should be checked for revocation.
 - uid: System.Security.Cryptography.X509Certificates.X509RevocationMode
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -273,18 +303,21 @@ references:
   name: X509RevocationMode
   fullName: System.Security.Cryptography.X509Certificates.X509RevocationMode
   type: Enum
+  summary: Specifies the mode used to check for X509 certificate revocation.
 - uid: System.Security.Cryptography.X509Certificates.X509Store
   isExternal: false
   href: System.Security.Cryptography.X509Certificates.X509Store.yml
   name: X509Store
   fullName: System.Security.Cryptography.X509Certificates.X509Store
   type: Class
+  summary: Represents an X.509 store, which is a physical store where certificates are persisted and managed. This class cannot be inherited.
 - uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension
   isExternal: false
   href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.yml
   name: X509SubjectKeyIdentifierExtension
   fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension
   type: Class
+  summary: Defines a string that identifies a certificate's subject key identifier (SKI). This class cannot be inherited.
 - uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -292,6 +325,7 @@ references:
   name: X509SubjectKeyIdentifierHashAlgorithm
   fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm
   type: Enum
+  summary: Defines the type of hash algorithm to use with the @'System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension' class.
 - uid: System.Security.Cryptography.X509Certificates.X509VerificationFlags
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -299,6 +333,7 @@ references:
   name: X509VerificationFlags
   fullName: System.Security.Cryptography.X509Certificates.X509VerificationFlags
   type: Enum
+  summary: Specifies conditions under which verification of certificates in the X509 chain should be conducted.
 - uid: System.Security.Cryptography.X509Certificates
   isExternal: false
   name: System.Security.Cryptography.X509Certificates

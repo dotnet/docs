@@ -1374,3 +1374,62 @@ references:
   name: System.Runtime.Serialization
   fullName: System.Runtime.Serialization
   type: Namespace
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+  summary: The exception that is thrown when a null reference (Nothing in Visual Basic) is passed to a method that does not accept it as a valid argument.
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.
+- uid: System.MemberAccessException
+  parent: System
+  isExternal: false
+  href: System.MemberAccessException.yml
+  name: MemberAccessException
+  fullName: System.MemberAccessException
+  type: Class
+  summary: The exception that is thrown when an attempt to access a class member fails.
+- uid: System.Reflection.TargetInvocationException
+  isExternal: false
+  href: System.Reflection.TargetInvocationException.yml
+  name: TargetInvocationException
+  fullName: System.Reflection.TargetInvocationException
+  type: Class
+  summary: The exception that is thrown by methods invoked through reflection. This class cannot be inherited.
+- uid: System.MulticastNotSupportedException
+  isExternal: false
+  href: System.MulticastNotSupportedException.yml
+  name: MulticastNotSupportedException
+  fullName: System.MulticastNotSupportedException
+  type: Class
+  summary: The exception that is thrown when there is an attempt to combine two delegates based on the @'System.Delegate' type instead of the @'System.MulticastDelegate' type. This class cannot be inherited.
+- uid: System.MissingMethodException
+  isExternal: false
+  href: System.MissingMethodException.yml
+  name: MissingMethodException
+  fullName: System.MissingMethodException
+  type: Class
+  summary: The exception that is thrown when there is an attempt to dynamically access a method that does not exist.
+- uid: System.MethodAccessException
+  isExternal: false
+  href: System.MethodAccessException.yml
+  name: MethodAccessException
+  fullName: System.MethodAccessException
+  type: Class
+  summary: The exception that is thrown when there is an invalid attempt to access a method, such as accessing a private method from partially trusted code.
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  href: System.NotSupportedException.yml
+  name: NotSupportedException
+  fullName: System.NotSupportedException
+  type: Class
+  summary: The exception that is thrown when an invoked method is not supported, or when there is an attempt to read, seek, or write to a stream that does not support the invoked functionality.

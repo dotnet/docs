@@ -540,3 +540,11 @@ references:
   name: X509Certificate2Collection
   fullName: System.Security.Cryptography.X509Certificates.X509Certificate2Collection
   type: Class
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+  summary: The exception that is thrown when one of the arguments provided to a method is not valid.

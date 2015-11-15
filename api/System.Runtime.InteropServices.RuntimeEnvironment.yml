@@ -460,3 +460,10 @@ references:
   name: IntPtr
   fullName: System.IntPtr
   type: Struct
+- uid: System.Runtime.InteropServices.COMException
+  isExternal: false
+  href: System.Runtime.InteropServices.COMException.yml
+  name: COMException
+  fullName: System.Runtime.InteropServices.COMException
+  type: Class
+  summary: The exception that is thrown when an unrecognized HRESULT is returned from a COM method call.

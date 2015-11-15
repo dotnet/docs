@@ -74,12 +74,14 @@ references:
   name: EnvironmentPermissionAccess
   fullName: System.Security.Permissions.EnvironmentPermissionAccess
   type: Enum
+  summary: Specifies access to environment variables.
 - uid: System.Security.Permissions.EnvironmentPermission
   isExternal: false
   href: System.Security.Permissions.EnvironmentPermission.yml
   name: EnvironmentPermission
   fullName: System.Security.Permissions.EnvironmentPermission
   type: Class
+  summary: Controls access to system and user environment variables. This class cannot be inherited.
 - uid: System.Security.Permissions.FileDialogPermissionAccess
   parent: System.Security.Permissions
   isExternal: false
@@ -87,12 +89,14 @@ references:
   name: FileDialogPermissionAccess
   fullName: System.Security.Permissions.FileDialogPermissionAccess
   type: Enum
+  summary: Specifies the type of access to files allowed through the File dialog boxes.
 - uid: System.Security.Permissions.FileDialogPermission
   isExternal: false
   href: System.Security.Permissions.FileDialogPermission.yml
   name: FileDialogPermission
   fullName: System.Security.Permissions.FileDialogPermission
   type: Class
+  summary: Controls the ability to access files or folders through a File dialog box. This class cannot be inherited.
 - uid: System.Security.Permissions.FileIOPermissionAccess
   parent: System.Security.Permissions
   isExternal: false
@@ -100,12 +104,14 @@ references:
   name: FileIOPermissionAccess
   fullName: System.Security.Permissions.FileIOPermissionAccess
   type: Enum
+  summary: Specifies the type of file access requested.
 - uid: System.Security.Permissions.FileIOPermission
   isExternal: false
   href: System.Security.Permissions.FileIOPermission.yml
   name: FileIOPermission
   fullName: System.Security.Permissions.FileIOPermission
   type: Class
+  summary: Controls the ability to access files and folders. This class cannot be inherited.
 - uid: System.Security.Permissions.HostProtectionResource
   parent: System.Security.Permissions
   isExternal: false
@@ -113,12 +119,14 @@ references:
   name: HostProtectionResource
   fullName: System.Security.Permissions.HostProtectionResource
   type: Enum
+  summary: Specifies categories of functionality potentially harmful to the host if invoked by a method or class.
 - uid: System.Security.Permissions.HostProtectionAttribute
   isExternal: false
   href: System.Security.Permissions.HostProtectionAttribute.yml
   name: HostProtectionAttribute
   fullName: System.Security.Permissions.HostProtectionAttribute
   type: Class
+  summary: Allows the use of declarative security actions to determine host protection requirements. This class cannot be inherited.
 - uid: System.Security.Permissions.IsolatedStorageContainment
   parent: System.Security.Permissions
   isExternal: false
@@ -126,6 +134,7 @@ references:
   name: IsolatedStorageContainment
   fullName: System.Security.Permissions.IsolatedStorageContainment
   type: Enum
+  summary: Specifies the permitted use of isolated storage.
 - uid: System.Security.Permissions.IsolatedStoragePermission
   parent: System.Security.Permissions
   isExternal: false
@@ -133,12 +142,14 @@ references:
   name: IsolatedStoragePermission
   fullName: System.Security.Permissions.IsolatedStoragePermission
   type: Class
+  summary: Represents access to generic isolated storage capabilities.
 - uid: System.Security.Permissions.IsolatedStorageFilePermission
   isExternal: false
   href: System.Security.Permissions.IsolatedStorageFilePermission.yml
   name: IsolatedStorageFilePermission
   fullName: System.Security.Permissions.IsolatedStorageFilePermission
   type: Class
+  summary: Specifies the allowed usage of a private virtual file system. This class cannot be inherited.
 - uid: System.Security.Permissions.PermissionState
   parent: System.Security.Permissions
   isExternal: false
@@ -146,6 +157,7 @@ references:
   name: PermissionState
   fullName: System.Security.Permissions.PermissionState
   type: Enum
+  summary: Specifies whether a permission should have all or no access to resources at creation.
 - uid: System.Security.Permissions.SecurityAction
   parent: System.Security.Permissions
   isExternal: false
@@ -153,6 +165,7 @@ references:
   name: SecurityAction
   fullName: System.Security.Permissions.SecurityAction
   type: Enum
+  summary: Specifies the security actions that can be performed using declarative security.
 - uid: System.Security.Permissions.SecurityAttribute
   parent: System.Security.Permissions
   isExternal: false
@@ -160,6 +173,7 @@ references:
   name: SecurityAttribute
   fullName: System.Security.Permissions.SecurityAttribute
   type: Class
+  summary: Specifies the base attribute class for declarative security from which @'System.Security.Permissions.CodeAccessSecurityAttribute' is derived.
 - uid: System.Security.Permissions.CodeAccessSecurityAttribute
   parent: System.Security.Permissions
   isExternal: false
@@ -167,84 +181,98 @@ references:
   name: CodeAccessSecurityAttribute
   fullName: System.Security.Permissions.CodeAccessSecurityAttribute
   type: Class
+  summary: Specifies the base attribute class for code access security.
 - uid: System.Security.Permissions.EnvironmentPermissionAttribute
   isExternal: false
   href: System.Security.Permissions.EnvironmentPermissionAttribute.yml
   name: EnvironmentPermissionAttribute
   fullName: System.Security.Permissions.EnvironmentPermissionAttribute
   type: Class
+  summary: Allows security actions for @'System.Security.Permissions.EnvironmentPermission' to be applied to code using declarative security. This class cannot be inherited.
 - uid: System.Security.Permissions.FileDialogPermissionAttribute
   isExternal: false
   href: System.Security.Permissions.FileDialogPermissionAttribute.yml
   name: FileDialogPermissionAttribute
   fullName: System.Security.Permissions.FileDialogPermissionAttribute
   type: Class
+  summary: Allows security actions for @'System.Security.Permissions.FileDialogPermission' to be applied to code using declarative security. This class cannot be inherited.
 - uid: System.Security.Permissions.FileIOPermissionAttribute
   isExternal: false
   href: System.Security.Permissions.FileIOPermissionAttribute.yml
   name: FileIOPermissionAttribute
   fullName: System.Security.Permissions.FileIOPermissionAttribute
   type: Class
+  summary: Allows security actions for @'System.Security.Permissions.FileIOPermission' to be applied to code using declarative security. This class cannot be inherited.
 - uid: System.Security.Permissions.KeyContainerPermissionAttribute
   isExternal: false
   href: System.Security.Permissions.KeyContainerPermissionAttribute.yml
   name: KeyContainerPermissionAttribute
   fullName: System.Security.Permissions.KeyContainerPermissionAttribute
   type: Class
+  summary: Allows security actions for @'System.Security.Permissions.KeyContainerPermission' to be applied to code using declarative security. This class cannot be inherited.
 - uid: System.Security.Permissions.ReflectionPermissionAttribute
   isExternal: false
   href: System.Security.Permissions.ReflectionPermissionAttribute.yml
   name: ReflectionPermissionAttribute
   fullName: System.Security.Permissions.ReflectionPermissionAttribute
   type: Class
+  summary: Allows security actions for @'System.Security.Permissions.ReflectionPermission' to be applied to code using declarative security.
 - uid: System.Security.Permissions.RegistryPermissionAttribute
   isExternal: false
   href: System.Security.Permissions.RegistryPermissionAttribute.yml
   name: RegistryPermissionAttribute
   fullName: System.Security.Permissions.RegistryPermissionAttribute
   type: Class
+  summary: Allows security actions for @'System.Security.Permissions.RegistryPermission' to be applied to code using declarative security. This class cannot be inherited.
 - uid: System.Security.Permissions.SecurityPermissionAttribute
   isExternal: false
   href: System.Security.Permissions.SecurityPermissionAttribute.yml
   name: SecurityPermissionAttribute
   fullName: System.Security.Permissions.SecurityPermissionAttribute
   type: Class
+  summary: Allows security actions for @'System.Security.Permissions.SecurityPermission' to be applied to code using declarative security. This class cannot be inherited.
 - uid: System.Security.Permissions.UIPermissionAttribute
   isExternal: false
   href: System.Security.Permissions.UIPermissionAttribute.yml
   name: UIPermissionAttribute
   fullName: System.Security.Permissions.UIPermissionAttribute
   type: Class
+  summary: Allows security actions for @'System.Security.Permissions.UIPermission' to be applied to code using declarative security. This class cannot be inherited.
 - uid: System.Security.Permissions.ZoneIdentityPermissionAttribute
   isExternal: false
   href: System.Security.Permissions.ZoneIdentityPermissionAttribute.yml
   name: ZoneIdentityPermissionAttribute
   fullName: System.Security.Permissions.ZoneIdentityPermissionAttribute
   type: Class
+  summary: Allows security actions for @'System.Security.Permissions.ZoneIdentityPermission' to be applied to code using declarative security. This class cannot be inherited.
 - uid: System.Security.Permissions.StrongNameIdentityPermissionAttribute
   isExternal: false
   href: System.Security.Permissions.StrongNameIdentityPermissionAttribute.yml
   name: StrongNameIdentityPermissionAttribute
   fullName: System.Security.Permissions.StrongNameIdentityPermissionAttribute
   type: Class
+  summary: Allows security actions for @'System.Security.Permissions.StrongNameIdentityPermission' to be applied to code using declarative security. This class cannot be inherited.
 - uid: System.Security.Permissions.SiteIdentityPermissionAttribute
   isExternal: false
   href: System.Security.Permissions.SiteIdentityPermissionAttribute.yml
   name: SiteIdentityPermissionAttribute
   fullName: System.Security.Permissions.SiteIdentityPermissionAttribute
   type: Class
+  summary: Allows security actions for @'System.Security.Permissions.SiteIdentityPermission' to be applied to code using declarative security. This class cannot be inherited.
 - uid: System.Security.Permissions.UrlIdentityPermissionAttribute
   isExternal: false
   href: System.Security.Permissions.UrlIdentityPermissionAttribute.yml
   name: UrlIdentityPermissionAttribute
   fullName: System.Security.Permissions.UrlIdentityPermissionAttribute
   type: Class
+  summary: Allows security actions for @'System.Security.Permissions.UrlIdentityPermission' to be applied to code using declarative security. This class cannot be inherited.
 - uid: System.Security.Permissions.PermissionSetAttribute
   isExternal: false
   href: System.Security.Permissions.PermissionSetAttribute.yml
   name: PermissionSetAttribute
   fullName: System.Security.Permissions.PermissionSetAttribute
   type: Class
+  summary: Allows security actions for a @'System.Security.PermissionSet' to be applied to code using declarative security. This class cannot be inherited.
 - uid: System.Security.Permissions.ReflectionPermissionFlag
   parent: System.Security.Permissions
   isExternal: false
@@ -252,12 +280,14 @@ references:
   name: ReflectionPermissionFlag
   fullName: System.Security.Permissions.ReflectionPermissionFlag
   type: Enum
+  summary: Specifies the permitted use of the @'System.Reflection' and @'System.Reflection.Emit' namespaces.
 - uid: System.Security.Permissions.ReflectionPermission
   isExternal: false
   href: System.Security.Permissions.ReflectionPermission.yml
   name: ReflectionPermission
   fullName: System.Security.Permissions.ReflectionPermission
   type: Class
+  summary: Controls access to non-public types and members through the @'System.Reflection' APIs. Controls some features of the @'System.Reflection.Emit' APIs.
 - uid: System.Security.Permissions.SecurityPermissionFlag
   parent: System.Security.Permissions
   isExternal: false
@@ -265,24 +295,28 @@ references:
   name: SecurityPermissionFlag
   fullName: System.Security.Permissions.SecurityPermissionFlag
   type: Enum
+  summary: Specifies access flags for the security permission object.
 - uid: System.Security.Permissions.SecurityPermission
   isExternal: false
   href: System.Security.Permissions.SecurityPermission.yml
   name: SecurityPermission
   fullName: System.Security.Permissions.SecurityPermission
   type: Class
+  summary: Describes a set of security permissions applied to code. This class cannot be inherited.
 - uid: System.Security.Permissions.SiteIdentityPermission
   isExternal: false
   href: System.Security.Permissions.SiteIdentityPermission.yml
   name: SiteIdentityPermission
   fullName: System.Security.Permissions.SiteIdentityPermission
   type: Class
+  summary: Defines the identity permission for the Web site from which the code originates. This class cannot be inherited.
 - uid: System.Security.Permissions.StrongNameIdentityPermission
   isExternal: false
   href: System.Security.Permissions.StrongNameIdentityPermission.yml
   name: StrongNameIdentityPermission
   fullName: System.Security.Permissions.StrongNameIdentityPermission
   type: Class
+  summary: Defines the identity permission for strong names. This class cannot be inherited.
 - uid: System.Security.Permissions.StrongNamePublicKeyBlob
   parent: System.Security.Permissions
   isExternal: false
@@ -290,6 +324,7 @@ references:
   name: StrongNamePublicKeyBlob
   fullName: System.Security.Permissions.StrongNamePublicKeyBlob
   type: Class
+  summary: Represents the public key information (called a blob) for a strong name. This class cannot be inherited.
 - uid: System.Security.Permissions.UIPermissionWindow
   parent: System.Security.Permissions
   isExternal: false
@@ -297,6 +332,7 @@ references:
   name: UIPermissionWindow
   fullName: System.Security.Permissions.UIPermissionWindow
   type: Enum
+  summary: Specifies the type of windows that code is allowed to use.
 - uid: System.Security.Permissions.UIPermissionClipboard
   parent: System.Security.Permissions
   isExternal: false
@@ -304,36 +340,42 @@ references:
   name: UIPermissionClipboard
   fullName: System.Security.Permissions.UIPermissionClipboard
   type: Enum
+  summary: Specifies the type of clipboard access that is allowed to the calling code.
 - uid: System.Security.Permissions.UIPermission
   isExternal: false
   href: System.Security.Permissions.UIPermission.yml
   name: UIPermission
   fullName: System.Security.Permissions.UIPermission
   type: Class
+  summary: Controls the permissions related to user interfaces and the Clipboard. This class cannot be inherited.
 - uid: System.Security.Permissions.UrlIdentityPermission
   isExternal: false
   href: System.Security.Permissions.UrlIdentityPermission.yml
   name: UrlIdentityPermission
   fullName: System.Security.Permissions.UrlIdentityPermission
   type: Class
+  summary: Defines the identity permission for the URL from which the code originates. This class cannot be inherited.
 - uid: System.Security.Permissions.ZoneIdentityPermission
   isExternal: false
   href: System.Security.Permissions.ZoneIdentityPermission.yml
   name: ZoneIdentityPermission
   fullName: System.Security.Permissions.ZoneIdentityPermission
   type: Class
+  summary: Defines the identity permission for the zone from which the code originates. This class cannot be inherited.
 - uid: System.Security.Permissions.GacIdentityPermissionAttribute
   isExternal: false
   href: System.Security.Permissions.GacIdentityPermissionAttribute.yml
   name: GacIdentityPermissionAttribute
   fullName: System.Security.Permissions.GacIdentityPermissionAttribute
   type: Class
+  summary: Allows security actions for @'System.Security.Permissions.GacIdentityPermission' to be applied to code using declarative security. This class cannot be inherited.
 - uid: System.Security.Permissions.GacIdentityPermission
   isExternal: false
   href: System.Security.Permissions.GacIdentityPermission.yml
   name: GacIdentityPermission
   fullName: System.Security.Permissions.GacIdentityPermission
   type: Class
+  summary: Defines the identity permission for files originating in the global assembly cache. This class cannot be inherited.
 - uid: System.Security.Permissions.IUnrestrictedPermission
   parent: System.Security.Permissions
   isExternal: false
@@ -341,6 +383,7 @@ references:
   name: IUnrestrictedPermission
   fullName: System.Security.Permissions.IUnrestrictedPermission
   type: Interface
+  summary: Allows a permission to expose an unrestricted state.
 - uid: System.Security.Permissions.KeyContainerPermissionFlags
   parent: System.Security.Permissions
   isExternal: false
@@ -348,6 +391,7 @@ references:
   name: KeyContainerPermissionFlags
   fullName: System.Security.Permissions.KeyContainerPermissionFlags
   type: Enum
+  summary: Specifies the type of key container access allowed.
 - uid: System.Security.Permissions.KeyContainerPermissionAccessEntry
   parent: System.Security.Permissions
   isExternal: false
@@ -355,6 +399,7 @@ references:
   name: KeyContainerPermissionAccessEntry
   fullName: System.Security.Permissions.KeyContainerPermissionAccessEntry
   type: Class
+  summary: Specifies access rights for specific key containers. This class cannot be inherited.
 - uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
   parent: System.Security.Permissions
   isExternal: false
@@ -362,6 +407,7 @@ references:
   name: KeyContainerPermissionAccessEntryCollection
   fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
   type: Class
+  summary: Represents a collection of @'System.Security.Permissions.KeyContainerPermissionAccessEntry' objects. This class cannot be inherited.
 - uid: System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator
   parent: System.Security.Permissions
   isExternal: false
@@ -369,12 +415,14 @@ references:
   name: KeyContainerPermissionAccessEntryEnumerator
   fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator
   type: Class
+  summary: Represents the enumerator for @'System.Security.Permissions.KeyContainerPermissionAccessEntry' objects in a @'System.Security.Permissions.KeyContainerPermissionAccessEntryCollection'.
 - uid: System.Security.Permissions.KeyContainerPermission
   isExternal: false
   href: System.Security.Permissions.KeyContainerPermission.yml
   name: KeyContainerPermission
   fullName: System.Security.Permissions.KeyContainerPermission
   type: Class
+  summary: Controls the ability to access key containers. This class cannot be inherited.
 - uid: System.Security.Permissions.RegistryPermissionAccess
   parent: System.Security.Permissions
   isExternal: false
@@ -382,12 +430,14 @@ references:
   name: RegistryPermissionAccess
   fullName: System.Security.Permissions.RegistryPermissionAccess
   type: Enum
+  summary: Specifies the permitted access to registry keys and values.
 - uid: System.Security.Permissions.RegistryPermission
   isExternal: false
   href: System.Security.Permissions.RegistryPermission.yml
   name: RegistryPermission
   fullName: System.Security.Permissions.RegistryPermission
   type: Class
+  summary: Controls the ability to access registry variables. This class cannot be inherited.
 - uid: System.Security.Permissions
   isExternal: false
   name: System.Security.Permissions

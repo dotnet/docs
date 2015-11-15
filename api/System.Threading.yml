@@ -85,6 +85,7 @@ references:
   name: AbandonedMutexException
   fullName: System.Threading.AbandonedMutexException
   type: Class
+  summary: The exception that is thrown when one thread acquires a @'System.Threading.Mutex' object that another thread has abandoned by exiting without releasing it.
 - uid: System.Threading.AsyncLocal`1
   isExternal: false
   href: System.Threading.AsyncLocal`1.yml
@@ -93,6 +94,7 @@ references:
   fullName: System.Threading.AsyncLocal<T>
   fullName.vb: System.Threading.AsyncLocal(Of T)
   type: Class
+  summary: Represents ambient data that is local to a given asynchronous control flow, such as an asynchronous method.
   spec.csharp:
   - uid: System.Threading.AsyncLocal`1
     name: AsyncLocal
@@ -123,6 +125,7 @@ references:
   fullName: System.Threading.AsyncLocalValueChangedArgs<T>
   fullName.vb: System.Threading.AsyncLocalValueChangedArgs(Of T)
   type: Struct
+  summary: The class that provides data change information to @'System.Threading.AsyncLocal`1' instances that register for change notifications.
   spec.csharp:
   - uid: System.Threading.AsyncLocalValueChangedArgs`1
     name: AsyncLocalValueChangedArgs
@@ -151,6 +154,7 @@ references:
   name: AutoResetEvent
   fullName: System.Threading.AutoResetEvent
   type: Class
+  summary: Notifies a waiting thread that an event has occurred. This class cannot be inherited.
 - uid: System.Threading.SendOrPostCallback
   parent: System.Threading
   isExternal: false
@@ -158,6 +162,7 @@ references:
   name: SendOrPostCallback
   fullName: System.Threading.SendOrPostCallback
   type: Delegate
+  summary: Represents a method to be called when a message is to be dispatched to a synchronization context.
 - uid: System.Threading.SynchronizationContext
   parent: System.Threading
   isExternal: false
@@ -165,6 +170,7 @@ references:
   name: SynchronizationContext
   fullName: System.Threading.SynchronizationContext
   type: Class
+  summary: Provides the basic functionality for propagating a synchronization context in various synchronization models.
 - uid: System.Threading.EventResetMode
   parent: System.Threading
   isExternal: false
@@ -172,6 +178,7 @@ references:
   name: EventResetMode
   fullName: System.Threading.EventResetMode
   type: Enum
+  summary: Indicates whether an @'System.Threading.EventWaitHandle' is reset automatically or manually after receiving a signal.
 - uid: System.Threading.EventWaitHandle
   parent: System.Threading
   isExternal: false
@@ -179,6 +186,7 @@ references:
   name: EventWaitHandle
   fullName: System.Threading.EventWaitHandle
   type: Class
+  summary: Represents a thread synchronization event.
 - uid: System.Threading.ContextCallback
   parent: System.Threading
   isExternal: false
@@ -186,6 +194,7 @@ references:
   name: ContextCallback
   fullName: System.Threading.ContextCallback
   type: Delegate
+  summary: Represents a method to be called within a new context.
 - uid: System.Threading.ExecutionContext
   parent: System.Threading
   isExternal: false
@@ -193,12 +202,14 @@ references:
   name: ExecutionContext
   fullName: System.Threading.ExecutionContext
   type: Class
+  summary: Manages the execution context for the current thread. This class cannot be inherited.
 - uid: System.Threading.Interlocked
   isExternal: false
   href: System.Threading.Interlocked.yml
   name: Interlocked
   fullName: System.Threading.Interlocked
   type: Class
+  summary: Provides atomic operations for variables that are shared by multiple threads.
 - uid: System.Threading.LockCookie
   parent: System.Threading
   isExternal: false
@@ -206,24 +217,28 @@ references:
   name: LockCookie
   fullName: System.Threading.LockCookie
   type: Struct
+  summary: Defines the lock that implements single-writer/multiple-reader semantics. This is a value type.
 - uid: System.Threading.LockRecursionException
   isExternal: false
   href: System.Threading.LockRecursionException.yml
   name: LockRecursionException
   fullName: System.Threading.LockRecursionException
   type: Class
+  summary: The exception that is thrown when recursive entry into a lock is not compatible with the recursion policy for the lock.
 - uid: System.Threading.ManualResetEvent
   isExternal: false
   href: System.Threading.ManualResetEvent.yml
   name: ManualResetEvent
   fullName: System.Threading.ManualResetEvent
   type: Class
+  summary: Notifies one or more waiting threads that an event has occurred. This class cannot be inherited.
 - uid: System.Threading.Monitor
   isExternal: false
   href: System.Threading.Monitor.yml
   name: Monitor
   fullName: System.Threading.Monitor
   type: Class
+  summary: Provides a mechanism that synchronizes access to objects.
 - uid: System.Threading.Mutex
   parent: System.Threading
   isExternal: false
@@ -231,6 +246,7 @@ references:
   name: Mutex
   fullName: System.Threading.Mutex
   type: Class
+  summary: A synchronization primitive that can also be used for interprocess synchronization.
 - uid: System.Threading.Mutex.MutexSecurity
   parent: System.Threading
   isExternal: false
@@ -251,6 +267,7 @@ references:
   name: NativeOverlapped
   fullName: System.Threading.NativeOverlapped
   type: Struct
+  summary: Provides an explicit layout that is visible from unmanaged code and that will have the same layout as the Win32 OVERLAPPED structure with additional reserved fields at the end.
 - uid: System.Threading.Overlapped
   parent: System.Threading
   isExternal: false
@@ -258,6 +275,7 @@ references:
   name: Overlapped
   fullName: System.Threading.Overlapped
   type: Class
+  summary: Provides a managed representation of a Win32 OVERLAPPED structure, including methods to transfer information from an @'System.Threading.Overlapped' instance to a @'System.Threading.NativeOverlapped' structure.
 - uid: System.Threading.ParameterizedThreadStart
   parent: System.Threading
   isExternal: false
@@ -265,18 +283,21 @@ references:
   name: ParameterizedThreadStart
   fullName: System.Threading.ParameterizedThreadStart
   type: Delegate
+  summary: Represents the method that executes on a @'System.Threading.Thread'.
 - uid: System.Threading.SemaphoreFullException
   isExternal: false
   href: System.Threading.SemaphoreFullException.yml
   name: SemaphoreFullException
   fullName: System.Threading.SemaphoreFullException
   type: Class
+  summary: The exception that is thrown when the <see cref="Overload:System.Threading.Semaphore.Release" /> method is called on a semaphore whose count is already at the maximum.
 - uid: System.Threading.SynchronizationLockException
   isExternal: false
   href: System.Threading.SynchronizationLockException.yml
   name: SynchronizationLockException
   fullName: System.Threading.SynchronizationLockException
   type: Class
+  summary: The exception that is thrown when a method requires the caller to own the lock on a given Monitor, and the method is invoked by a caller that does not own that lock.
 - uid: System.Threading.Thread
   parent: System.Threading
   isExternal: false
@@ -284,18 +305,21 @@ references:
   name: Thread
   fullName: System.Threading.Thread
   type: Class
+  summary: Creates and controls a thread, sets its priority, and gets its status. To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.Threading.ThreadAbortException
   isExternal: false
   href: System.Threading.ThreadAbortException.yml
   name: ThreadAbortException
   fullName: System.Threading.ThreadAbortException
   type: Class
+  summary: The exception that is thrown when a call is made to the @'System.Threading.Thread.Abort(System.Object)' method. This class cannot be inherited.
 - uid: System.Threading.ThreadInterruptedException
   isExternal: false
   href: System.Threading.ThreadInterruptedException.yml
   name: ThreadInterruptedException
   fullName: System.Threading.ThreadInterruptedException
   type: Class
+  summary: The exception that is thrown when a @'System.Threading.Thread' is interrupted while it is in a waiting state.
 - uid: System.Threading.RegisteredWaitHandle
   parent: System.Threading
   isExternal: false
@@ -303,6 +327,7 @@ references:
   name: RegisteredWaitHandle
   fullName: System.Threading.RegisteredWaitHandle
   type: Class
+  summary: Represents a handle that has been registered when calling @'System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.UInt32,System.Boolean)'. This class cannot be inherited.
 - uid: System.Threading.WaitCallback
   parent: System.Threading
   isExternal: false
@@ -310,6 +335,7 @@ references:
   name: WaitCallback
   fullName: System.Threading.WaitCallback
   type: Delegate
+  summary: Represents a callback method to be executed by a thread pool thread.
 - uid: System.Threading.WaitOrTimerCallback
   parent: System.Threading
   isExternal: false
@@ -317,6 +343,7 @@ references:
   name: WaitOrTimerCallback
   fullName: System.Threading.WaitOrTimerCallback
   type: Delegate
+  summary: Represents a method to be called when a @'System.Threading.WaitHandle' is signaled or times out.
 - uid: System.Threading.IOCompletionCallback
   parent: System.Threading
   isExternal: false
@@ -324,12 +351,14 @@ references:
   name: IOCompletionCallback
   fullName: System.Threading.IOCompletionCallback
   type: Delegate
+  summary: Receives the error code, number of bytes, and overlapped value type when an I/O operation completes on the thread pool.
 - uid: System.Threading.ThreadPool
   isExternal: false
   href: System.Threading.ThreadPool.yml
   name: ThreadPool
   fullName: System.Threading.ThreadPool
   type: Class
+  summary: Provides a pool of threads that can be used to execute tasks, post work items, process asynchronous I/O, wait on behalf of other threads, and process timers.
 - uid: System.Threading.ThreadPriority
   parent: System.Threading
   isExternal: false
@@ -337,6 +366,7 @@ references:
   name: ThreadPriority
   fullName: System.Threading.ThreadPriority
   type: Enum
+  summary: Specifies the scheduling priority of a @'System.Threading.Thread'.
 - uid: System.Threading.ThreadStart
   parent: System.Threading
   isExternal: false
@@ -344,6 +374,7 @@ references:
   name: ThreadStart
   fullName: System.Threading.ThreadStart
   type: Delegate
+  summary: Represents the method that executes on a @'System.Threading.Thread'.
 - uid: System.Threading.ThreadState
   parent: System.Threading
   isExternal: false
@@ -351,24 +382,28 @@ references:
   name: ThreadState
   fullName: System.Threading.ThreadState
   type: Enum
+  summary: Specifies the execution states of a @'System.Threading.Thread'.
 - uid: System.Threading.ThreadStateException
   isExternal: false
   href: System.Threading.ThreadStateException.yml
   name: ThreadStateException
   fullName: System.Threading.ThreadStateException
   type: Class
+  summary: The exception that is thrown when a @'System.Threading.Thread' is in an invalid @'System.Threading.Thread.ThreadState' for the method call.
 - uid: System.Threading.ThreadStartException
   isExternal: false
   href: System.Threading.ThreadStartException.yml
   name: ThreadStartException
   fullName: System.Threading.ThreadStartException
   type: Class
+  summary: The exception that is thrown when a failure occurs in a managed thread after the underlying operating system thread has been started, but before the thread is ready to execute user code.
 - uid: System.Threading.Timeout
   isExternal: false
   href: System.Threading.Timeout.yml
   name: Timeout
   fullName: System.Threading.Timeout
   type: Class
+  summary: Contains constants that specify infinite time-out intervals. This class cannot be inherited.
 - uid: System.Threading.TimerCallback
   parent: System.Threading
   isExternal: false
@@ -376,18 +411,21 @@ references:
   name: TimerCallback
   fullName: System.Threading.TimerCallback
   type: Delegate
+  summary: Represents the method that handles calls from a @'System.Threading.Timer'.
 - uid: System.Threading.Timer
   isExternal: false
   href: System.Threading.Timer.yml
   name: Timer
   fullName: System.Threading.Timer
   type: Class
+  summary: Provides a mechanism for executing a method at specified intervals. This class cannot be inherited.To browse the .NET Framework source code for this type, see the Reference Source.
 - uid: System.Threading.Volatile
   isExternal: false
   href: System.Threading.Volatile.yml
   name: Volatile
   fullName: System.Threading.Volatile
   type: Class
+  summary: Contains methods for performing volatile memory operations.
 - uid: System.Threading.WaitHandle
   parent: System.Threading
   isExternal: false
@@ -395,18 +433,21 @@ references:
   name: WaitHandle
   fullName: System.Threading.WaitHandle
   type: Class
+  summary: "Encapsulates operating system–specific objects that wait for exclusive access to shared resources."
 - uid: System.Threading.WaitHandleExtensions
   isExternal: false
   href: System.Threading.WaitHandleExtensions.yml
   name: WaitHandleExtensions
   fullName: System.Threading.WaitHandleExtensions
   type: Class
+  summary: Provides convenience methods to for working with a safe handle for a wait handle.
 - uid: System.Threading.WaitHandleCannotBeOpenedException
   isExternal: false
   href: System.Threading.WaitHandleCannotBeOpenedException.yml
   name: WaitHandleCannotBeOpenedException
   fullName: System.Threading.WaitHandleCannotBeOpenedException
   type: Class
+  summary: The exception that is thrown when an attempt is made to open a system mutex or semaphore that does not exist.
 - uid: System.Threading.ApartmentState
   parent: System.Threading
   isExternal: false
@@ -414,16 +455,14 @@ references:
   name: ApartmentState
   fullName: System.Threading.ApartmentState
   type: Enum
+  summary: Specifies the apartment state of a @'System.Threading.Thread'.
 - uid: System.Threading.SpinLock
   isExternal: false
   href: System.Threading.SpinLock.yml
   name: SpinLock
   fullName: System.Threading.SpinLock
   type: Struct
-  summary: >-
-    Provides a mutual exclusion lock primitive where a thread trying to acquire the lock waits in a loop
-
-    repeatedly checking until the lock becomes available.
+  summary: Provides a mutual exclusion lock primitive where a thread trying to acquire the lock waits in a loop repeatedly checking until the lock becomes available.
 - uid: System.Threading.SpinWait
   isExternal: false
   href: System.Threading.SpinWait.yml
@@ -445,7 +484,7 @@ references:
   name: LazyThreadSafetyMode
   fullName: System.Threading.LazyThreadSafetyMode
   type: Enum
-  summary: Specifies how a @'System.Threading.Lazy{T}' instance should synchronize access among multiple threads.
+  summary: Specifies how a @'System.Lazy`1' instance synchronizes access among multiple threads.
 - uid: System.Threading.LazyInitializer
   isExternal: false
   href: System.Threading.LazyInitializer.yml
@@ -490,7 +529,7 @@ references:
   name: SemaphoreSlim
   fullName: System.Threading.SemaphoreSlim
   type: Class
-  summary: Limits the number of threads that can access a resource or pool of resources concurrently.
+  summary: Represents a lightweight alternative to @'System.Threading.Semaphore' that limits the number of threads that can access a resource or pool of resources concurrently.
 - uid: System.Threading.ManualResetEventSlim
   isExternal: false
   href: System.Threading.ManualResetEventSlim.yml
@@ -529,13 +568,14 @@ references:
   name: Semaphore
   fullName: System.Threading.Semaphore
   type: Class
+  summary: Limits the number of threads that can access a resource or pool of resources concurrently.
 - uid: System.Threading.BarrierPostPhaseException
   isExternal: false
   href: System.Threading.BarrierPostPhaseException.yml
   name: BarrierPostPhaseException
   fullName: System.Threading.BarrierPostPhaseException
   type: Class
-  summary: The exception that is thrown when the post-phase action of a @'System.Threading.Barrier' fails.
+  summary: The exception that is thrown when the post-phase action of a @'System.Threading.Barrier' fails
 - uid: System.Threading.Barrier
   isExternal: false
   href: System.Threading.Barrier.yml
@@ -550,22 +590,14 @@ references:
   name: LockRecursionPolicy
   fullName: System.Threading.LockRecursionPolicy
   type: Enum
+  summary: Specifies whether a lock can be entered multiple times by the same thread.
 - uid: System.Threading.ReaderWriterLockSlim
   isExternal: false
   href: System.Threading.ReaderWriterLockSlim.yml
   name: ReaderWriterLockSlim
   fullName: System.Threading.ReaderWriterLockSlim
   type: Class
-  summary: >-
-    A reader-writer lock implementation that is intended to be simple, yet very
-
-    efficient.  In particular only 1 interlocked operation is taken for any lock
-
-    operation (we use spin locks to achieve this).  The spin lock is never held
-
-    for more than a few instructions (in particular, we never call event APIs
-
-    or in fact any non-trivial API while holding the spin lock).
+  summary: Represents a lock that is used to manage access to a resource, allowing multiple threads for reading or exclusive access for writing.
 - uid: System.Threading.ThreadPoolBoundHandle
   parent: System.Threading
   isExternal: false

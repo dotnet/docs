@@ -20,6 +20,7 @@ items:
   summary: The @'System.Xml.Schema' namespace contains the XML classes that provide standards-based support for XML schema definition language (XSD) schemas.
 references:
 - uid: System.Xml.Schema.XmlSchema
+  parent: System.Xml.Schema
   isExternal: false
   href: System.Xml.Schema.XmlSchema.yml
   name: XmlSchema

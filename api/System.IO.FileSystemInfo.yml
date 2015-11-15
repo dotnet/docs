@@ -4,6 +4,7 @@ items:
   parent: System.IO
   children:
   - System.IO.FileSystemInfo.#ctor
+  - System.IO.FileSystemInfo.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
   - System.IO.FileSystemInfo.Attributes
   - System.IO.FileSystemInfo.CreationTime
   - System.IO.FileSystemInfo.CreationTimeUtc
@@ -12,6 +13,7 @@ items:
   - System.IO.FileSystemInfo.Extension
   - System.IO.FileSystemInfo.FullName
   - System.IO.FileSystemInfo.FullPath
+  - System.IO.FileSystemInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
   - System.IO.FileSystemInfo.LastAccessTime
   - System.IO.FileSystemInfo.LastAccessTimeUtc
   - System.IO.FileSystemInfo.LastWriteTime
@@ -25,20 +27,22 @@ items:
   type: Class
   source:
     remote: &o0
-      path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
+      path: src/mscorlib/src/System/IO/FileSystemInfo.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 14
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 26
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Provides the base class for both @'System.IO.FileInfo' and @'System.IO.DirectoryInfo' objects.
   syntax:
-    content: public abstract class FileSystemInfo
-    content.vb: Public MustInherit Class FileSystemInfo
+    content: 'public abstract class FileSystemInfo : ISerializable'
+    content.vb: Public MustInherit Class FileSystemInfo Implements ISerializable
   inheritance:
   - System.Object
+  implements:
+  - System.Runtime.Serialization.ISerializable
   inheritedMembers:
   - System.Object.ToString
   - System.Object.Equals(System.Object)
@@ -56,10 +60,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 16
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 46
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Represents the fully qualified path of the directory or file.
   syntax:
@@ -77,10 +81,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 17
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 47
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: The path originally specified by the user, whether relative or absolute.
   syntax:
@@ -95,15 +99,43 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 21
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 52
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Initializes a new instance of the @'System.IO.FileSystemInfo' class.
   syntax:
     content: protected FileSystemInfo()
     content.vb: Protected Sub New
+- uid: System.IO.FileSystemInfo.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: System.IO.FileSystemInfo
+  href: System.IO.FileSystemInfo.yml
+  name: FileSystemInfo(SerializationInfo, StreamingContext)
+  fullName: System.IO.FileSystemInfo.FileSystemInfo(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 61
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.FileSystemInfo' class with serialized data.
+  syntax:
+    content: protected FileSystemInfo(SerializationInfo info, StreamingContext context)
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The @'System.Runtime.Serialization.SerializationInfo' that holds the serialized object data about the exception being thrown.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: The @'System.Runtime.Serialization.StreamingContext' that contains contextual information about the source or destination.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The specified @'System.Runtime.Serialization.SerializationInfo' is null.
 - uid: System.IO.FileSystemInfo.FullName
   id: FullName
   parent: System.IO.FileSystemInfo
@@ -113,10 +145,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 32
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 85
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets the full path of the directory or file.
   syntax:
@@ -140,10 +172,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 41
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 121
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets the string representing the extension part of the file.
   syntax:
@@ -162,10 +194,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 75
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 140
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: For files, gets the name of the file. For directories, gets the name of the last directory in the hierarchy if a hierarchy exists. Otherwise, the Name property gets the name of the directory.
   syntax:
@@ -184,10 +216,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 81
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 145
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets a value indicating whether the file or directory exists.
   syntax:
@@ -206,10 +238,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 87
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 151
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Deletes a file or directory.
   syntax:
@@ -229,10 +261,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 89
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 153
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets or sets the creation time of the current file or directory.
   syntax:
@@ -260,10 +292,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 102
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 165
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets or sets the creation time, in coordinated universal time (UTC), of the current file or directory.
   syntax:
@@ -291,10 +323,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 117
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 197
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets or sets the time the current file or directory was last accessed.
   syntax:
@@ -320,10 +352,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 130
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 208
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets or sets the time, in coordinated universal time (UTC), that the current file or directory was last accessed.
   syntax:
@@ -349,10 +381,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 144
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 239
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets or sets the time when the current file or directory was last written to.
   syntax:
@@ -378,10 +410,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 158
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 251
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets or sets the time, in coordinated universal time (UTC), when the current file or directory was last written to.
   syntax:
@@ -407,10 +439,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 172
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 282
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Refreshes the state of the object.
   syntax:
@@ -428,10 +460,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/FileSystemInfo.cs
-    startLine: 177
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 288
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets or sets the attributes for the current file or directory.
   syntax:
@@ -452,26 +484,55 @@ items:
     description: The caller attempts to set an invalid file attribute. -or-The user attempts to set an attribute value but does not have write permission.
   - type: System.IO.IOException
     description: '@''System.IO.FileSystemInfo.Refresh'' cannot initialize the data.'
+- uid: System.IO.FileSystemInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.IO.FileSystemInfo
+  href: System.IO.FileSystemInfo.yml
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.IO.FileSystemInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/FileSystemInfo.cs
+    startLine: 333
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Sets the @'System.Runtime.Serialization.SerializationInfo' object with the file name and additional exception information.
+  syntax:
+    content: public virtual void GetObjectData(SerializationInfo info, StreamingContext context)
+    content.vb: Public Overridable Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The @'System.Runtime.Serialization.SerializationInfo' that holds the serialized object data about the exception being thrown.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: The @'System.Runtime.Serialization.StreamingContext' that contains contextual information about the source or destination.
 references:
 - uid: System.IO
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -480,138 +541,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -620,7 +685,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -675,23 +740,51 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+  type: Class
+- uid: System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.StreamingContext.yml
+  name: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+  type: Struct
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.DateTime
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.DateTime.yml
   name: DateTime
   fullName: System.DateTime
+  type: Struct
 - uid: System.IO.FileAttributes
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.FileAttributes.yml
   name: FileAttributes
   fullName: System.IO.FileAttributes
+  type: Enum

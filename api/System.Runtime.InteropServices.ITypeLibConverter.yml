@@ -202,14 +202,18 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Runtime.InteropServices.TypeLibImporterFlags
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -218,13 +222,15 @@ references:
   fullName: System.Runtime.InteropServices.TypeLibImporterFlags
   type: Enum
 - uid: System.Runtime.InteropServices.ITypeLibImporterNotifySink
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.ITypeLibImporterNotifySink.yml
   name: ITypeLibImporterNotifySink
   fullName: System.Runtime.InteropServices.ITypeLibImporterNotifySink
   type: Interface
 - uid: System.Byte[]
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte[]
   name.vb: Byte()
   fullName: System.Byte[]
@@ -233,14 +239,14 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
 - uid: System.Reflection.StrongNameKeyPair
@@ -252,9 +258,11 @@ references:
   type: Class
 - uid: System.Version
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Version.yml
   name: Version
   fullName: System.Version
+  type: Class
 - uid: System.Reflection.Emit.AssemblyBuilder
   parent: System.Reflection.Emit
   isExternal: false
@@ -266,6 +274,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Reflection
   isExternal: false
   name: System.Reflection
@@ -278,9 +287,11 @@ references:
   type: Namespace
 - uid: System.Reflection.Assembly
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.Assembly.yml
   name: Assembly
   fullName: System.Reflection.Assembly
+  type: Class
 - uid: System.Runtime.InteropServices.TypeLibExporterFlags
   parent: System.Runtime.InteropServices
   isExternal: false
@@ -289,6 +300,7 @@ references:
   fullName: System.Runtime.InteropServices.TypeLibExporterFlags
   type: Enum
 - uid: System.Runtime.InteropServices.ITypeLibExporterNotifySink
+  parent: System.Runtime.InteropServices
   isExternal: false
   href: System.Runtime.InteropServices.ITypeLibExporterNotifySink.yml
   name: ITypeLibExporterNotifySink
@@ -296,16 +308,22 @@ references:
   type: Interface
 - uid: System.Guid
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Guid.yml
   name: Guid
   fullName: System.Guid
+  type: Struct
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct

@@ -2334,9 +2334,11 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Xml.Linq.XObject
   parent: System.Xml.Linq
   isExternal: false
@@ -2357,6 +2359,7 @@ references:
 
     and text nodes) in the XML tree.
 - uid: System.Xml.Linq.XContainer
+  parent: System.Xml.Linq
   isExternal: false
   href: System.Xml.Linq.XContainer.yml
   name: XContainer
@@ -3811,6 +3814,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
@@ -3847,16 +3851,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -3867,7 +3873,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -3878,8 +3884,10 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Object[]
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object[]
   name.vb: Object()
   fullName: System.Object[]
@@ -3888,14 +3896,14 @@ references:
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ()
     fullName: ()
 - uid: System.Xml.Linq.XStreamingElement
@@ -3919,9 +3927,11 @@ references:
   summary: Represents an XML attribute.
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Xml.Linq.XObject.NodeType
   parent: System.Xml.Linq.XObject
   isExternal: false
@@ -3934,18 +3944,23 @@ references:
   fullName: XmlNodeType
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Collections.IEnumerable
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerable.yml
   name: IEnumerable
   fullName: System.Collections.IEnumerable
+  type: Interface
 - uid: System.Collections
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+  type: Namespace
 - uid: System.Collections.Generic.IEnumerable{System.Xml.Linq.XAttribute}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
@@ -4038,18 +4053,23 @@ references:
   summary: Specifies a set of options for Load().
 - uid: System.IO.Stream
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Stream
   fullName: System.IO.Stream
+  type: Class
 - uid: System.IO
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace
 - uid: System.IO.TextReader
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.TextReader.yml
   name: TextReader
   fullName: System.IO.TextReader
+  type: Class
 - uid: XmlReader
   isExternal: true
   name: XmlReader
@@ -4067,9 +4087,11 @@ references:
   summary: Specifies a set of options for Save().
 - uid: System.IO.TextWriter
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.TextWriter.yml
   name: TextWriter
   fullName: System.IO.TextWriter
+  type: Class
 - uid: System.Xml.Linq.XElement.Save(System.IO.TextWriter,System.Xml.Linq.SaveOptions)
 - uid: XmlWriter
   isExternal: true
@@ -4080,8 +4102,19 @@ references:
 - uid: System.Xml.Linq.XElement.SetValue(System.Object)
 - uid: System.Xml.Linq.XElement.Value
 - uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
 - uid: System.Xml.Linq.XElement.SetAttributeValue(System.Xml.Linq.XName,System.Object)
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.Xml.Linq.XNode.WriteTo(XmlWriter)
   parent: System.Xml.Linq.XNode
   isExternal: true
@@ -4115,6 +4148,7 @@ references:
   - name: )
     fullName: )
 - uid: System.FormatException
+  parent: System
   isExternal: false
   href: System.FormatException.yml
   name: FormatException
@@ -4123,6 +4157,7 @@ references:
 - uid: System.Nullable{System.Boolean}
   parent: System
   definition: System.Nullable`1
+  href: System.Nullable`1.yml
   name: Nullable<Boolean>
   name.vb: Nullable(Of Boolean)
   fullName: System.Nullable<System.Boolean>
@@ -4131,40 +4166,42 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: )
     fullName: )
 - uid: System.Nullable`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Nullable`1.yml
   name: Nullable<T>
   name.vb: Nullable(Of T)
   fullName: System.Nullable<T>
   fullName.vb: System.Nullable(Of T)
+  type: Struct
   spec.csharp:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -4175,7 +4212,7 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -4184,12 +4221,15 @@ references:
     fullName: )
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Nullable{System.Int32}
   parent: System
   definition: System.Nullable`1
+  href: System.Nullable`1.yml
   name: Nullable<Int32>
   name.vb: Nullable(Of Int32)
   fullName: System.Nullable<System.Int32>
@@ -4198,33 +4238,35 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.UInt32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.UInt32.yml
   name: UInt32
   fullName: System.UInt32
+  type: Struct
 - uid: System.Nullable{System.UInt32}
   parent: System
   definition: System.Nullable`1
@@ -4260,13 +4302,22 @@ references:
     fullName: )
 - uid: System.Int64
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int64.yml
   name: Int64
   fullName: System.Int64
+  type: Struct
 - uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
 - uid: System.Nullable{System.Int64}
   parent: System
   definition: System.Nullable`1
+  href: System.Nullable`1.yml
   name: Nullable<Int64>
   name.vb: Nullable(Of Int64)
   fullName: System.Nullable<System.Int64>
@@ -4275,33 +4326,35 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Int64
     name: Int64
     fullName: System.Int64
-    isExternal: true
+    href: System.Int64.yml
   - name: )
     fullName: )
 - uid: System.UInt64
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.UInt64.yml
   name: UInt64
   fullName: System.UInt64
+  type: Struct
 - uid: System.Nullable{System.UInt64}
   parent: System
   definition: System.Nullable`1
@@ -4337,9 +4390,11 @@ references:
     fullName: )
 - uid: System.Single
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Single.yml
   name: Single
   fullName: System.Single
+  type: Struct
 - uid: System.Nullable{System.Single}
   parent: System
   definition: System.Nullable`1
@@ -4375,9 +4430,11 @@ references:
     fullName: )
 - uid: System.Double
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Double.yml
   name: Double
   fullName: System.Double
+  type: Struct
 - uid: System.Nullable{System.Double}
   parent: System
   definition: System.Nullable`1
@@ -4413,9 +4470,11 @@ references:
     fullName: )
 - uid: System.Decimal
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Decimal.yml
   name: Decimal
   fullName: System.Decimal
+  type: Struct
 - uid: System.Nullable{System.Decimal}
   parent: System
   definition: System.Nullable`1
@@ -4451,9 +4510,11 @@ references:
     fullName: )
 - uid: System.DateTime
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.DateTime.yml
   name: DateTime
   fullName: System.DateTime
+  type: Struct
 - uid: System.Nullable{System.DateTime}
   parent: System
   definition: System.Nullable`1
@@ -4489,9 +4550,11 @@ references:
     fullName: )
 - uid: System.DateTimeOffset
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.DateTimeOffset.yml
   name: DateTimeOffset
   fullName: System.DateTimeOffset
+  type: Struct
 - uid: System.Nullable{System.DateTimeOffset}
   parent: System
   definition: System.Nullable`1
@@ -4527,9 +4590,11 @@ references:
     fullName: )
 - uid: System.TimeSpan
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.TimeSpan.yml
   name: TimeSpan
   fullName: System.TimeSpan
+  type: Struct
 - uid: System.Nullable{System.TimeSpan}
   parent: System
   definition: System.Nullable`1
@@ -4565,9 +4630,11 @@ references:
     fullName: )
 - uid: System.Guid
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Guid.yml
   name: Guid
   fullName: System.Guid
+  type: Struct
 - uid: System.Nullable{System.Guid}
   parent: System
   definition: System.Nullable`1

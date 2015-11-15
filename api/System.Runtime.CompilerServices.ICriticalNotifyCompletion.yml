@@ -89,6 +89,7 @@ references:
   - name: )
     fullName: )
 - uid: System.Runtime.CompilerServices.INotifyCompletion
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.INotifyCompletion.yml
   name: INotifyCompletion
@@ -96,4 +97,20 @@ references:
   type: Interface
   summary: Represents an operation that will schedule continuations when the operation completes.
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.Action
+  parent: System
+  isExternal: false
+  href: System.Action.yml
+  name: Action
+  fullName: System.Action
+  type: Delegate
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+  type: Namespace

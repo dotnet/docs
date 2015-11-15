@@ -20,6 +20,7 @@ items:
   summary: The @'System.Runtime.Remoting' namespace provides classes and interfaces that allow developers to create and configure distributed applications. Some of the more important classes of the @'System.Runtime.Remoting' namespace are the @'System.Runtime.Remoting.RemotingConfiguration' class, the @'System.Runtime.Remoting.RemotingServices' class, and the @'System.Runtime.Remoting.ObjRef' class.
 references:
 - uid: System.Runtime.Remoting.IObjectHandle
+  parent: System.Runtime.Remoting
   isExternal: false
   href: System.Runtime.Remoting.IObjectHandle.yml
   name: IObjectHandle

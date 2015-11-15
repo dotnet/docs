@@ -70,9 +70,9 @@ items:
       type: System.Int32
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*reader* is null.'
   - type: System.ArgumentOutOfRangeException
-    description: is not a valid table index.
+    description: '*tableIndex* is not a valid table index.'
 - uid: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTableRowSize(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.TableIndex)
   id: GetTableRowSize(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.TableIndex)
   parent: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions
@@ -100,9 +100,9 @@ items:
       type: System.Int32
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*reader* is null.'
   - type: System.ArgumentOutOfRangeException
-    description: is not a valid table index.
+    description: '*tableIndex* is not a valid table index.'
 - uid: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTableMetadataOffset(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.TableIndex)
   id: GetTableMetadataOffset(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.TableIndex)
   parent: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions
@@ -130,9 +130,9 @@ items:
       type: System.Int32
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*reader* is null.'
   - type: System.ArgumentOutOfRangeException
-    description: is not a valid table index.
+    description: '*tableIndex* is not a valid table index.'
 - uid: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetHeapSize(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.HeapIndex)
   id: GetHeapSize(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.HeapIndex)
   parent: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions
@@ -160,9 +160,9 @@ items:
       type: System.Int32
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*reader* is null.'
   - type: System.ArgumentOutOfRangeException
-    description: is not a valid heap index.
+    description: '*heapIndex* is not a valid heap index.'
 - uid: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetHeapMetadataOffset(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.HeapIndex)
   id: GetHeapMetadataOffset(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.HeapIndex)
   parent: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions
@@ -190,9 +190,9 @@ items:
       type: System.Int32
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*reader* is null.'
   - type: System.ArgumentOutOfRangeException
-    description: is not a valid heap index.
+    description: '*heapIndex* is not a valid heap index.'
 - uid: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetNextHandle(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.UserStringHandle)
   id: GetNextHandle(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.UserStringHandle)
   parent: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions
@@ -220,7 +220,7 @@ items:
       type: System.Reflection.Metadata.UserStringHandle
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*reader* is null.'
 - uid: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetNextHandle(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.BlobHandle)
   id: GetNextHandle(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.BlobHandle)
   parent: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions
@@ -248,7 +248,7 @@ items:
       type: System.Reflection.Metadata.BlobHandle
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*reader* is null.'
 - uid: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetNextHandle(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.StringHandle)
   id: GetNextHandle(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.StringHandle)
   parent: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions
@@ -276,7 +276,7 @@ items:
       type: System.Reflection.Metadata.StringHandle
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*reader* is null.'
 - uid: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetEditAndContinueLogEntries(System.Reflection.Metadata.MetadataReader)
   id: GetEditAndContinueLogEntries(System.Reflection.Metadata.MetadataReader)
   parent: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions
@@ -302,7 +302,7 @@ items:
       type: System.Collections.Generic.IEnumerable{System.Reflection.Metadata.Ecma335.EditAndContinueLogEntry}
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*reader* is null.'
 - uid: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetEditAndContinueMapEntries(System.Reflection.Metadata.MetadataReader)
   id: GetEditAndContinueMapEntries(System.Reflection.Metadata.MetadataReader)
   parent: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions
@@ -328,7 +328,7 @@ items:
       type: System.Collections.Generic.IEnumerable{System.Reflection.Metadata.EntityHandle}
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*reader* is null.'
 - uid: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTypesWithProperties(System.Reflection.Metadata.MetadataReader)
   id: GetTypesWithProperties(System.Reflection.Metadata.MetadataReader)
   parent: System.Reflection.Metadata.Ecma335.MetadataReaderExtensions
@@ -391,19 +391,22 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -412,138 +415,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -552,7 +559,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -607,9 +614,21 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
 - uid: System.Reflection.Metadata.MetadataReader
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.MetadataReader.yml
   name: MetadataReader
@@ -625,9 +644,16 @@ references:
   type: Enum
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace
 - uid: System.Reflection.Metadata.Ecma335.HeapIndex
   parent: System.Reflection.Metadata.Ecma335
   isExternal: false
@@ -642,11 +668,6 @@ references:
   name: UserStringHandle
   fullName: System.Reflection.Metadata.UserStringHandle
   type: Struct
-- uid: System.Reflection.Metadata
-  isExternal: false
-  name: System.Reflection.Metadata
-  fullName: System.Reflection.Metadata
-  type: Namespace
 - uid: System.Reflection.Metadata.BlobHandle
   parent: System.Reflection.Metadata
   isExternal: false
@@ -697,16 +718,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -717,7 +740,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -728,6 +751,7 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Collections.Generic.IEnumerable{System.Reflection.Metadata.EntityHandle}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1

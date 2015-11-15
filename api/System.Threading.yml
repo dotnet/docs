@@ -70,21 +70,15 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/System.Runtime.Handles/src/System/Threading/WaitHandleExtensions.cs
+      path: src/mscorlib/src/System/Threading/Tasks/TaskToApm.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Runtime.Handles/src/System/Threading/WaitHandleExtensions.cs
-    startLine: 6
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/Tasks/TaskToApm.cs
+    startLine: 25
   assemblies:
-  - System.Runtime.Handles.CoreCLR
+  - mscorlib
   summary: The @'System.Threading' namespace provides classes and interfaces that enable multithreaded programming. In addition to classes for synchronizing thread activities and access to data (@'System.Threading.Mutex', @'System.Threading.Monitor', @'System.Threading.Interlocked', @'System.Threading.AutoResetEvent', and so on), this namespace includes a @'System.Threading.ThreadPool' class that allows you to use a pool of system-supplied threads, and a @'System.Threading.Timer' class that executes callback methods on thread pool threads.
 references:
-- uid: System.Threading.WaitHandleExtensions
-  isExternal: false
-  href: System.Threading.WaitHandleExtensions.yml
-  name: WaitHandleExtensions
-  fullName: System.Threading.WaitHandleExtensions
-  type: Class
 - uid: System.Threading.AbandonedMutexException
   isExternal: false
   href: System.Threading.AbandonedMutexException.yml
@@ -158,6 +152,7 @@ references:
   fullName: System.Threading.AutoResetEvent
   type: Class
 - uid: System.Threading.SendOrPostCallback
+  parent: System.Threading
   isExternal: false
   href: System.Threading.SendOrPostCallback.yml
   name: SendOrPostCallback
@@ -185,6 +180,7 @@ references:
   fullName: System.Threading.EventWaitHandle
   type: Class
 - uid: System.Threading.ContextCallback
+  parent: System.Threading
   isExternal: false
   href: System.Threading.ContextCallback.yml
   name: ContextCallback
@@ -263,6 +259,7 @@ references:
   fullName: System.Threading.Overlapped
   type: Class
 - uid: System.Threading.ParameterizedThreadStart
+  parent: System.Threading
   isExternal: false
   href: System.Threading.ParameterizedThreadStart.yml
   name: ParameterizedThreadStart
@@ -300,18 +297,21 @@ references:
   fullName: System.Threading.ThreadInterruptedException
   type: Class
 - uid: System.Threading.RegisteredWaitHandle
+  parent: System.Threading
   isExternal: false
   href: System.Threading.RegisteredWaitHandle.yml
   name: RegisteredWaitHandle
   fullName: System.Threading.RegisteredWaitHandle
   type: Class
 - uid: System.Threading.WaitCallback
+  parent: System.Threading
   isExternal: false
   href: System.Threading.WaitCallback.yml
   name: WaitCallback
   fullName: System.Threading.WaitCallback
   type: Delegate
 - uid: System.Threading.WaitOrTimerCallback
+  parent: System.Threading
   isExternal: false
   href: System.Threading.WaitOrTimerCallback.yml
   name: WaitOrTimerCallback
@@ -370,6 +370,7 @@ references:
   fullName: System.Threading.Timeout
   type: Class
 - uid: System.Threading.TimerCallback
+  parent: System.Threading
   isExternal: false
   href: System.Threading.TimerCallback.yml
   name: TimerCallback
@@ -389,9 +390,17 @@ references:
   type: Class
 - uid: System.Threading.WaitHandle
   parent: System.Threading
-  isExternal: true
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
   name: WaitHandle
   fullName: System.Threading.WaitHandle
+  type: Class
+- uid: System.Threading.WaitHandleExtensions
+  isExternal: false
+  href: System.Threading.WaitHandleExtensions.yml
+  name: WaitHandleExtensions
+  fullName: System.Threading.WaitHandleExtensions
+  type: Class
 - uid: System.Threading.WaitHandleCannotBeOpenedException
   isExternal: false
   href: System.Threading.WaitHandleCannotBeOpenedException.yml
@@ -431,9 +440,12 @@ references:
   summary: Represents a synchronization primitive that is signaled when its count reaches zero.
 - uid: System.Threading.LazyThreadSafetyMode
   parent: System.Threading
-  isExternal: true
+  isExternal: false
+  href: System.Threading.LazyThreadSafetyMode.yml
   name: LazyThreadSafetyMode
   fullName: System.Threading.LazyThreadSafetyMode
+  type: Enum
+  summary: Specifies how a @'System.Threading.Lazy{T}' instance should synchronize access among multiple threads.
 - uid: System.Threading.LazyInitializer
   isExternal: false
   href: System.Threading.LazyInitializer.yml
@@ -504,28 +516,12 @@ references:
   summary: Signals to a @'System.Threading.CancellationToken' that it should be canceled.
 - uid: System.Threading.CancellationToken
   parent: System.Threading
-  isExternal: true
+  isExternal: false
+  href: System.Threading.CancellationToken.yml
   name: CancellationToken
   fullName: System.Threading.CancellationToken
-- uid: System.Threading.ThreadPoolBoundHandle
-  parent: System.Threading
-  isExternal: false
-  href: System.Threading.ThreadPoolBoundHandle.yml
-  name: ThreadPoolBoundHandle
-  fullName: System.Threading.ThreadPoolBoundHandle
-  type: Class
-  summary: >-
-    Represents an I/O handle that is bound to the system thread pool and enables low-level
-
-    components to receive notifications for asynchronous I/O operations.
-- uid: System.Threading.PreAllocatedOverlapped
-  parent: System.Threading
-  isExternal: false
-  href: System.Threading.PreAllocatedOverlapped.yml
-  name: PreAllocatedOverlapped
-  fullName: System.Threading.PreAllocatedOverlapped
-  type: Class
-  summary: Represents pre-allocated state for native overlapped I/O operations.
+  type: Struct
+  summary: Propagates notification that operations should be canceled.
 - uid: System.Threading.Semaphore
   parent: System.Threading
   isExternal: false
@@ -570,7 +566,27 @@ references:
     for more than a few instructions (in particular, we never call event APIs
 
     or in fact any non-trivial API while holding the spin lock).
+- uid: System.Threading.ThreadPoolBoundHandle
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.ThreadPoolBoundHandle.yml
+  name: ThreadPoolBoundHandle
+  fullName: System.Threading.ThreadPoolBoundHandle
+  type: Class
+  summary: >-
+    Represents an I/O handle that is bound to the system thread pool and enables low-level
+
+    components to receive notifications for asynchronous I/O operations.
+- uid: System.Threading.PreAllocatedOverlapped
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.PreAllocatedOverlapped.yml
+  name: PreAllocatedOverlapped
+  fullName: System.Threading.PreAllocatedOverlapped
+  type: Class
+  summary: Represents pre-allocated state for native overlapped I/O operations.
 - uid: System.Threading
   isExternal: false
   name: System.Threading
   fullName: System.Threading
+  type: Namespace

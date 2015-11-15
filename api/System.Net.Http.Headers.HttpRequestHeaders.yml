@@ -767,9 +767,11 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Net.Http.Headers.HttpHeaders
   parent: System.Net.Http.Headers
   isExternal: false
@@ -1246,131 +1248,135 @@ references:
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1379,7 +1385,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1434,6 +1440,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Net.Http.Headers.HttpHeaderValueCollection{System.Net.Http.Headers.MediaTypeWithQualityHeaderValue}
   parent: System.Net.Http.Headers
   definition: System.Net.Http.Headers.HttpHeaderValueCollection`1
@@ -1469,6 +1476,7 @@ references:
   - name: )
     fullName: )
 - uid: System.Net.Http.Headers.HttpHeaderValueCollection`1
+  parent: System.Net.Http.Headers
   isExternal: false
   href: System.Net.Http.Headers.HttpHeaderValueCollection`1.yml
   name: HttpHeaderValueCollection<T>
@@ -1576,6 +1584,7 @@ references:
 - uid: System.Nullable{System.Boolean}
   parent: System
   definition: System.Nullable`1
+  href: System.Nullable`1.yml
   name: Nullable<Boolean>
   name.vb: Nullable(Of Boolean)
   fullName: System.Nullable<System.Boolean>
@@ -1584,40 +1593,42 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: )
     fullName: )
 - uid: System.Nullable`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Nullable`1.yml
   name: Nullable<T>
   name.vb: Nullable(Of T)
   fullName: System.Nullable<T>
   fullName.vb: System.Nullable(Of T)
+  type: Struct
   spec.csharp:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -1628,7 +1639,7 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -1637,9 +1648,11 @@ references:
     fullName: )
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Net.Http.Headers.HttpHeaderValueCollection{System.Net.Http.Headers.EntityTagHeaderValue}
   parent: System.Net.Http.Headers
   definition: System.Net.Http.Headers.HttpHeaderValueCollection`1
@@ -1717,6 +1730,7 @@ references:
 - uid: System.Nullable{System.Int32}
   parent: System
   definition: System.Nullable`1
+  href: System.Nullable`1.yml
   name: Nullable<Int32>
   name.vb: Nullable(Of Int32)
   fullName: System.Nullable<System.Int32>
@@ -1725,26 +1739,26 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.Net.Http.Headers.RangeHeaderValue

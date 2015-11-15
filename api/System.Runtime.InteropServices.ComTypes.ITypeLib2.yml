@@ -424,13 +424,16 @@ references:
   type: Namespace
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Runtime.InteropServices.ComTypes.ITypeInfo
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -447,14 +450,18 @@ references:
   type: Enum
 - uid: System.Guid
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Guid.yml
   name: Guid
   fullName: System.Guid
+  type: Struct
 - uid: System.IntPtr
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.IntPtr.yml
   name: IntPtr
   fullName: System.IntPtr
+  type: Struct
 - uid: System.Runtime.InteropServices.ComTypes.ITypeComp
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -464,14 +471,18 @@ references:
   type: Interface
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Runtime.InteropServices.ComTypes.ITypeInfo[]
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.ITypeInfo.yml
@@ -494,7 +505,8 @@ references:
   - name: ()
     fullName: ()
 - uid: System.Int32[]
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32[]
   name.vb: Int32()
   fullName: System.Int32[]
@@ -503,23 +515,27 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ()
     fullName: ()
 - uid: System.Int16
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int16.yml
   name: Int16
   fullName: System.Int16
+  type: Struct
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class

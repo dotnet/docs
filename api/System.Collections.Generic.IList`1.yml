@@ -160,15 +160,18 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Collections.Generic.ICollection{{T}}.Count
   parent: System.Collections.Generic.ICollection{{T}}
   definition: System.Collections.Generic.ICollection`1.Count
+  href: System.Collections.Generic.ICollection`1.yml
   name: Count
   fullName: System.Collections.Generic.ICollection<T>.Count
   fullName.vb: System.Collections.Generic.ICollection(Of T).Count
 - uid: System.Collections.Generic.ICollection{{T}}.IsReadOnly
   parent: System.Collections.Generic.ICollection{{T}}
   definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  href: System.Collections.Generic.ICollection`1.yml
   name: IsReadOnly
   fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
   fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
@@ -204,6 +207,7 @@ references:
 - uid: System.Collections.Generic.ICollection{{T}}.Clear
   parent: System.Collections.Generic.ICollection{{T}}
   definition: System.Collections.Generic.ICollection`1.Clear
+  href: System.Collections.Generic.ICollection`1.yml
   name: Clear()
   fullName: System.Collections.Generic.ICollection<T>.Clear()
   fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
@@ -211,7 +215,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1.Clear
     name: Clear
     fullName: System.Collections.Generic.ICollection<T>.Clear
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: )
@@ -220,7 +224,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1.Clear
     name: Clear
     fullName: System.Collections.Generic.ICollection(Of T).Clear
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: )
@@ -228,6 +232,7 @@ references:
 - uid: System.Collections.Generic.ICollection{{T}}.Contains({T})
   parent: System.Collections.Generic.ICollection{{T}}
   definition: System.Collections.Generic.ICollection`1.Contains({T})
+  href: System.Collections.Generic.ICollection`1.yml
   name: Contains(T)
   fullName: System.Collections.Generic.ICollection<T>.Contains(T)
   fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
@@ -235,7 +240,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1.Contains(`0)
     name: Contains
     fullName: System.Collections.Generic.ICollection<T>.Contains
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: T
@@ -246,7 +251,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1.Contains(`0)
     name: Contains
     fullName: System.Collections.Generic.ICollection(Of T).Contains
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: T
@@ -256,6 +261,7 @@ references:
 - uid: System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
   parent: System.Collections.Generic.ICollection{{T}}
   definition: System.Collections.Generic.ICollection`1.CopyTo({T}[],System.Int32)
+  href: System.Collections.Generic.ICollection`1.yml
   name: CopyTo(T[], Int32)
   name.vb: CopyTo(T(), Int32)
   fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
@@ -264,7 +270,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
     name: CopyTo
     fullName: System.Collections.Generic.ICollection<T>.CopyTo
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: T
@@ -276,14 +282,14 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
     name: CopyTo
     fullName: System.Collections.Generic.ICollection(Of T).CopyTo
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: T
@@ -295,12 +301,13 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.Collections.Generic.ICollection{{T}}.Remove({T})
   parent: System.Collections.Generic.ICollection{{T}}
   definition: System.Collections.Generic.ICollection`1.Remove({T})
+  href: System.Collections.Generic.ICollection`1.yml
   name: Remove(T)
   fullName: System.Collections.Generic.ICollection<T>.Remove(T)
   fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
@@ -308,7 +315,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1.Remove(`0)
     name: Remove
     fullName: System.Collections.Generic.ICollection<T>.Remove
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: T
@@ -319,7 +326,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1.Remove(`0)
     name: Remove
     fullName: System.Collections.Generic.ICollection(Of T).Remove
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: T
@@ -329,6 +336,7 @@ references:
 - uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
   parent: System.Collections.Generic.IEnumerable{{T}}
   definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: GetEnumerator()
   fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
   fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
@@ -336,7 +344,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: (
     fullName: (
   - name: )
@@ -345,20 +353,22 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Collections.Generic.ICollection`1.Count
   parent: System.Collections.Generic.ICollection`1
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.ICollection`1.yml
   name: Count
   fullName: System.Collections.Generic.ICollection<T>.Count
   fullName.vb: System.Collections.Generic.ICollection(Of T).Count
 - uid: System.Collections.Generic.ICollection{{T}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.ICollection`1
+  href: System.Collections.Generic.ICollection`1.yml
   name: ICollection<T>
   name.vb: ICollection(Of T)
   fullName: System.Collections.Generic.ICollection<T>
@@ -367,7 +377,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     fullName: System.Collections.Generic.ICollection
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: <
     fullName: <
   - name: T
@@ -378,7 +388,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     fullName: System.Collections.Generic.ICollection
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -387,7 +397,8 @@ references:
     fullName: )
 - uid: System.Collections.Generic.ICollection`1.IsReadOnly
   parent: System.Collections.Generic.ICollection`1
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.ICollection`1.yml
   name: IsReadOnly
   fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
   fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
@@ -422,7 +433,8 @@ references:
     fullName: )
 - uid: System.Collections.Generic.ICollection`1.Clear
   parent: System.Collections.Generic.ICollection`1
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.ICollection`1.yml
   name: Clear()
   fullName: System.Collections.Generic.ICollection<T>.Clear()
   fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
@@ -430,7 +442,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1.Clear
     name: Clear
     fullName: System.Collections.Generic.ICollection<T>.Clear
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: )
@@ -439,14 +451,15 @@ references:
   - uid: System.Collections.Generic.ICollection`1.Clear
     name: Clear
     fullName: System.Collections.Generic.ICollection(Of T).Clear
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Collections.Generic.ICollection`1.Contains({T})
   parent: System.Collections.Generic.ICollection`1
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.ICollection`1.yml
   name: Contains(T)
   fullName: System.Collections.Generic.ICollection<T>.Contains(T)
   fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
@@ -454,7 +467,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1.Contains(`0)
     name: Contains
     fullName: System.Collections.Generic.ICollection<T>.Contains
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: T
@@ -465,7 +478,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1.Contains(`0)
     name: Contains
     fullName: System.Collections.Generic.ICollection(Of T).Contains
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: T
@@ -474,7 +487,8 @@ references:
     fullName: )
 - uid: System.Collections.Generic.ICollection`1.CopyTo({T}[],System.Int32)
   parent: System.Collections.Generic.ICollection`1
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.ICollection`1.yml
   name: CopyTo(T[], Int32)
   name.vb: CopyTo(T(), Int32)
   fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
@@ -483,7 +497,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
     name: CopyTo
     fullName: System.Collections.Generic.ICollection<T>.CopyTo
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: T
@@ -495,14 +509,14 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
     name: CopyTo
     fullName: System.Collections.Generic.ICollection(Of T).CopyTo
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: T
@@ -514,12 +528,13 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.Collections.Generic.ICollection`1.Remove({T})
   parent: System.Collections.Generic.ICollection`1
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.ICollection`1.yml
   name: Remove(T)
   fullName: System.Collections.Generic.ICollection<T>.Remove(T)
   fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
@@ -527,7 +542,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1.Remove(`0)
     name: Remove
     fullName: System.Collections.Generic.ICollection<T>.Remove
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: T
@@ -538,7 +553,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1.Remove(`0)
     name: Remove
     fullName: System.Collections.Generic.ICollection(Of T).Remove
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: (
     fullName: (
   - name: T
@@ -547,7 +562,8 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
   parent: System.Collections.Generic.IEnumerable`1
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: GetEnumerator()
   fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
   fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
@@ -555,7 +571,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: (
     fullName: (
   - name: )
@@ -564,7 +580,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: (
     fullName: (
   - name: )
@@ -572,6 +588,7 @@ references:
 - uid: System.Collections.Generic.IEnumerable{{T}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
@@ -580,7 +597,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -591,7 +608,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -600,16 +617,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.ICollection`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.ICollection`1.yml
   name: ICollection<T>
   name.vb: ICollection(Of T)
   fullName: System.Collections.Generic.ICollection<T>
   fullName.vb: System.Collections.Generic.ICollection(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     fullName: System.Collections.Generic.ICollection
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: <
     fullName: <
   - name: T
@@ -620,7 +639,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     fullName: System.Collections.Generic.ICollection
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -629,16 +648,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -649,7 +670,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -658,9 +679,11 @@ references:
     fullName: )
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: '{T}'
   isExternal: false
   name: T
@@ -669,3 +692,4 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

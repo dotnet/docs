@@ -61,14 +61,18 @@ references:
   type: Namespace
 - uid: System.IntPtr
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.IntPtr.yml
   name: IntPtr
   fullName: System.IntPtr
+  type: Struct
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Diagnostics.SymbolStore.ISymbolReader
   parent: System.Diagnostics.SymbolStore
   isExternal: false
@@ -80,3 +84,4 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

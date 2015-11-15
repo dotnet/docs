@@ -33,12 +33,16 @@ references:
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.IO.FileSystemEventArgs
+  parent: System.IO
   isExternal: false
   href: System.IO.FileSystemEventArgs.yml
   name: FileSystemEventArgs
@@ -48,3 +52,4 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

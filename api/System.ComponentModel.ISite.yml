@@ -122,13 +122,57 @@ references:
   fullName: System.ComponentModel
   type: Namespace
 - uid: System.IServiceProvider.GetService(System.Type)
+  parent: System.IServiceProvider
+  isExternal: true
+  name: GetService(Type)
+  fullName: System.IServiceProvider.GetService(System.Type)
+  spec.csharp:
+  - uid: System.IServiceProvider.GetService(System.Type)
+    name: GetService
+    fullName: System.IServiceProvider.GetService
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IServiceProvider.GetService(System.Type)
+    name: GetService
+    fullName: System.IServiceProvider.GetService
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IServiceProvider
+  parent: System
+  isExternal: false
+  href: System.IServiceProvider.yml
+  name: IServiceProvider
+  fullName: System.IServiceProvider
+  type: Interface
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+  type: Namespace
 - uid: System.ComponentModel.IComponent
+  parent: System.ComponentModel
   isExternal: false
   href: System.ComponentModel.IComponent.yml
   name: IComponent
   fullName: System.ComponentModel.IComponent
   type: Interface
 - uid: System.ComponentModel.IContainer
+  parent: System.ComponentModel
   isExternal: false
   href: System.ComponentModel.IContainer.yml
   name: IContainer
@@ -136,15 +180,15 @@ references:
   type: Interface
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
-- uid: System
-  isExternal: false
-  name: System
-  fullName: System
+  type: Struct
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class

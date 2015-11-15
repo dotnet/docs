@@ -115,6 +115,7 @@ references:
 - uid: System.Collections.Generic.IDictionary{System.String,System.String}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IDictionary`2
+  href: System.Collections.Generic.IDictionary`2.yml
   name: IDictionary<String, String>
   name.vb: IDictionary(Of String, String)
   fullName: System.Collections.Generic.IDictionary<System.String, System.String>
@@ -123,52 +124,54 @@ references:
   - uid: System.Collections.Generic.IDictionary`2
     name: IDictionary
     fullName: System.Collections.Generic.IDictionary
-    isExternal: true
+    href: System.Collections.Generic.IDictionary`2.yml
   - name: <
     fullName: <
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: ', '
     fullName: ', '
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Collections.Generic.IDictionary`2
     name: IDictionary
     fullName: System.Collections.Generic.IDictionary
-    isExternal: true
+    href: System.Collections.Generic.IDictionary`2.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: ', '
     fullName: ', '
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: )
     fullName: )
 - uid: System.Collections.Generic.IDictionary`2
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IDictionary`2.yml
   name: IDictionary<TKey, TValue>
   name.vb: IDictionary(Of TKey, TValue)
   fullName: System.Collections.Generic.IDictionary<TKey, TValue>
   fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IDictionary`2
     name: IDictionary
     fullName: System.Collections.Generic.IDictionary
-    isExternal: true
+    href: System.Collections.Generic.IDictionary`2.yml
   - name: <
     fullName: <
   - name: TKey
@@ -183,7 +186,7 @@ references:
   - uid: System.Collections.Generic.IDictionary`2
     name: IDictionary
     fullName: System.Collections.Generic.IDictionary
-    isExternal: true
+    href: System.Collections.Generic.IDictionary`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TKey
@@ -198,12 +201,16 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

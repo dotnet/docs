@@ -108,6 +108,7 @@ references:
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+  type: Namespace
 - uid: System.Collections.IEnumerator.MoveNext
   parent: System.Collections.IEnumerator
   isExternal: false
@@ -164,20 +165,27 @@ references:
     fullName: )
 - uid: System.Collections.IEnumerator
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerator.yml
   name: IEnumerator
   fullName: System.Collections.IEnumerator
+  type: Interface
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Collections.DictionaryEntry
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.DictionaryEntry.yml
   name: DictionaryEntry
   fullName: System.Collections.DictionaryEntry
+  type: Struct

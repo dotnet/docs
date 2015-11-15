@@ -755,16 +755,21 @@ references:
   isExternal: false
   name: System.Text
   fullName: System.Text
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Text.Encoding
   parent: System.Text
-  isExternal: true
+  isExternal: false
+  href: System.Text.Encoding.yml
   name: Encoding
   fullName: System.Text.Encoding
+  type: Class
 - uid: System.Text.Encoding.Convert(System.Text.Encoding,System.Text.Encoding,System.Byte[])
   parent: System.Text.Encoding
   isExternal: false
@@ -1771,14 +1776,15 @@ references:
   fullName: System.Text.Encoding.UTF32
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1787,95 +1793,97 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetType
@@ -1928,11 +1936,14 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Text.Encoding.Equals(System.Object)
   parent: System.Text.Encoding
   isExternal: false
@@ -1991,9 +2002,11 @@ references:
     fullName: )
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Text.Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)
   parent: System.Text.Encoding
   isExternal: false
@@ -2057,7 +2070,8 @@ references:
   - name: )
     fullName: )
 - uid: System.Char[]
-  isExternal: true
+  isExternal: false
+  href: System.Char.yml
   name: Char[]
   name.vb: Char()
   fullName: System.Char[]
@@ -2066,14 +2080,14 @@ references:
   - uid: System.Char
     name: Char
     fullName: System.Char
-    isExternal: true
+    href: System.Char.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Char
     name: Char
     fullName: System.Char
-    isExternal: true
+    href: System.Char.yml
   - name: ()
     fullName: ()
 - uid: System.Text.Encoding.GetByteCount(System.String)
@@ -2110,9 +2124,11 @@ references:
     fullName: )
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Text.Encoding.GetByteCount(System.Char*,System.Int32)
   parent: System.Text.Encoding
   isExternal: false
@@ -2162,21 +2178,22 @@ references:
   - name: )
     fullName: )
 - uid: System.Char*
-  isExternal: true
+  isExternal: false
+  href: System.Char.yml
   name: Char*
   fullName: System.Char*
   spec.csharp:
   - uid: System.Char
     name: Char
     fullName: System.Char
-    isExternal: true
+    href: System.Char.yml
   - name: '*'
     fullName: '*'
   spec.vb:
   - uid: System.Char
     name: Char
     fullName: System.Char
-    isExternal: true
+    href: System.Char.yml
   - name: '*'
     fullName: '*'
 - uid: System.Text.Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)
@@ -2266,7 +2283,8 @@ references:
   - name: )
     fullName: )
 - uid: System.Byte[]
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte[]
   name.vb: Byte()
   fullName: System.Byte[]
@@ -2275,14 +2293,14 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
 - uid: System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)
@@ -2452,21 +2470,22 @@ references:
   - name: )
     fullName: )
 - uid: System.Byte*
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte*
   fullName: System.Byte*
   spec.csharp:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '*'
     fullName: '*'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '*'
     fullName: '*'
 - uid: System.Text.Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)

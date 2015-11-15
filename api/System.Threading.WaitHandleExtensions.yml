@@ -11,13 +11,13 @@ items:
   type: Class
   source:
     remote: &o0
-      path: src/System.Runtime.Handles/src/System/Threading/WaitHandleExtensions.cs
+      path: src/mscorlib/src/System/Threading/WaitHandleExtensions.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Runtime.Handles/src/System/Threading/WaitHandleExtensions.cs
-    startLine: 8
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/WaitHandleExtensions.cs
+    startLine: 10
   assemblies:
-  - System.Runtime.Handles.CoreCLR
+  - mscorlib
   namespace: System.Threading
   summary: Provides convenience methods to for working with a safe handle for a wait handle.
   syntax:
@@ -42,10 +42,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Handles/src/System/Threading/WaitHandleExtensions.cs
-    startLine: 15
+    path: src/mscorlib/src/System/Threading/WaitHandleExtensions.cs
+    startLine: 17
   assemblies:
-  - System.Runtime.Handles.CoreCLR
+  - mscorlib
   namespace: System.Threading
   summary: Gets the safe handle for a native operating system wait handle.
   syntax:
@@ -70,10 +70,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Handles/src/System/Threading/WaitHandleExtensions.cs
-    startLine: 31
+    path: src/mscorlib/src/System/Threading/WaitHandleExtensions.cs
+    startLine: 33
   assemblies:
-  - System.Runtime.Handles.CoreCLR
+  - mscorlib
   namespace: System.Threading
   summary: Sets a safe handle for a native operating system wait handle.
   syntax:
@@ -94,21 +94,25 @@ references:
   isExternal: false
   name: System.Threading
   fullName: System.Threading
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -117,138 +121,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -257,7 +265,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -312,21 +320,28 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Runtime.InteropServices.SafeHandle
   parent: System.Runtime.InteropServices
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeHandle.yml
   name: SafeHandle
   fullName: System.Runtime.InteropServices.SafeHandle
+  type: Class
 - uid: System.Threading.WaitHandle
   parent: System.Threading
-  isExternal: true
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
   name: WaitHandle
   fullName: System.Threading.WaitHandle
+  type: Class
 - uid: Microsoft.Win32.SafeHandles.SafeWaitHandle
   parent: Microsoft.Win32.SafeHandles
-  isExternal: true
+  isExternal: false
+  href: Microsoft.Win32.SafeHandles.SafeWaitHandle.yml
   name: SafeWaitHandle
   fullName: Microsoft.Win32.SafeHandles.SafeWaitHandle
+  type: Class
 - uid: System.Runtime.InteropServices
   isExternal: false
   name: System.Runtime.InteropServices

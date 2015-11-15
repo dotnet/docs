@@ -69,12 +69,14 @@ references:
   fullName: System.Reflection.Emit.AssemblyBuilderAccess
   type: Enum
 - uid: System.Reflection.Emit.ConstructorBuilder
+  parent: System.Reflection.Emit
   isExternal: false
   href: System.Reflection.Emit.ConstructorBuilder.yml
   name: ConstructorBuilder
   fullName: System.Reflection.Emit.ConstructorBuilder
   type: Class
 - uid: System.Reflection.Emit.DynamicILInfo
+  parent: System.Reflection.Emit
   isExternal: false
   href: System.Reflection.Emit.DynamicILInfo.yml
   name: DynamicILInfo
@@ -88,6 +90,7 @@ references:
   fullName: System.Reflection.Emit.DynamicMethod
   type: Class
 - uid: System.Reflection.Emit.EventBuilder
+  parent: System.Reflection.Emit
   isExternal: false
   href: System.Reflection.Emit.EventBuilder.yml
   name: EventBuilder
@@ -101,6 +104,7 @@ references:
   fullName: System.Reflection.Emit.EventToken
   type: Struct
 - uid: System.Reflection.Emit.FieldBuilder
+  parent: System.Reflection.Emit
   isExternal: false
   href: System.Reflection.Emit.FieldBuilder.yml
   name: FieldBuilder
@@ -233,6 +237,7 @@ references:
   fullName: System.Reflection.Emit.ParameterToken
   type: Struct
 - uid: System.Reflection.Emit.PropertyBuilder
+  parent: System.Reflection.Emit
   isExternal: false
   href: System.Reflection.Emit.PropertyBuilder.yml
   name: PropertyBuilder

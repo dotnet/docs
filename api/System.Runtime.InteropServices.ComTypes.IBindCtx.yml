@@ -274,14 +274,18 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Runtime.InteropServices.ComTypes.BIND_OPTS
+  parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.BIND_OPTS.yml
   name: BIND_OPTS
@@ -296,9 +300,11 @@ references:
   type: Interface
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Runtime.InteropServices.ComTypes.IEnumString
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -308,6 +314,8 @@ references:
   type: Interface
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct

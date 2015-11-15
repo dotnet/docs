@@ -155,6 +155,9 @@ references:
   type: Namespace
 - uid: System.Threading.Tasks.TaskScheduler
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.TaskScheduler.yml
   name: TaskScheduler
   fullName: System.Threading.Tasks.TaskScheduler
+  type: Class
+  summary: Represents an abstract scheduler for tasks.

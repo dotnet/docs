@@ -548,19 +548,25 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.MarshalByRefObject
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.MarshalByRefObject.yml
   name: MarshalByRefObject
   fullName: System.MarshalByRefObject
+  type: Class
 - uid: System.IO.Stream
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Stream
   fullName: System.IO.Stream
+  type: Class
 - uid: System.IO.Pipes.PipeStream
   parent: System.IO.Pipes
   isExternal: false
@@ -1132,221 +1138,228 @@ references:
   fullName: System.IO.Pipes.PipeStream.ReadMode
 - uid: System.IO.Stream.Null
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   fullName: System.IO.Stream.Null
 - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: CopyToAsync(Stream)
   fullName: System.IO.Stream.CopyToAsync(System.IO.Stream)
   spec.csharp:
   - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
     name: CopyToAsync
     fullName: System.IO.Stream.CopyToAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
     name: CopyToAsync
     fullName: System.IO.Stream.CopyToAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: CopyToAsync(Stream, Int32)
   fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32)
   spec.csharp:
   - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
     name: CopyToAsync
     fullName: System.IO.Stream.CopyToAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
     name: CopyToAsync
     fullName: System.IO.Stream.CopyToAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: CopyToAsync(Stream, Int32, CancellationToken)
   fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)
   spec.csharp:
   - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
     name: CopyToAsync
     fullName: System.IO.Stream.CopyToAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Threading.CancellationToken
     name: CancellationToken
     fullName: System.Threading.CancellationToken
-    isExternal: true
+    href: System.Threading.CancellationToken.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
     name: CopyToAsync
     fullName: System.IO.Stream.CopyToAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Threading.CancellationToken
     name: CancellationToken
     fullName: System.Threading.CancellationToken
-    isExternal: true
+    href: System.Threading.CancellationToken.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.CopyTo(System.IO.Stream)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: CopyTo(Stream)
   fullName: System.IO.Stream.CopyTo(System.IO.Stream)
   spec.csharp:
   - uid: System.IO.Stream.CopyTo(System.IO.Stream)
     name: CopyTo
     fullName: System.IO.Stream.CopyTo
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.CopyTo(System.IO.Stream)
     name: CopyTo
     fullName: System.IO.Stream.CopyTo
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: CopyTo(Stream, Int32)
   fullName: System.IO.Stream.CopyTo(System.IO.Stream, System.Int32)
   spec.csharp:
   - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
     name: CopyTo
     fullName: System.IO.Stream.CopyTo
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
     name: CopyTo
     fullName: System.IO.Stream.CopyTo
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.Close
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Close()
   fullName: System.IO.Stream.Close()
   spec.csharp:
   - uid: System.IO.Stream.Close
     name: Close
     fullName: System.IO.Stream.Close
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
@@ -1355,21 +1368,22 @@ references:
   - uid: System.IO.Stream.Close
     name: Close
     fullName: System.IO.Stream.Close
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.IO.Stream.Dispose
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Dispose()
   fullName: System.IO.Stream.Dispose()
   spec.csharp:
   - uid: System.IO.Stream.Dispose
     name: Dispose
     fullName: System.IO.Stream.Dispose
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
@@ -1378,21 +1392,22 @@ references:
   - uid: System.IO.Stream.Dispose
     name: Dispose
     fullName: System.IO.Stream.Dispose
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.IO.Stream.FlushAsync
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: FlushAsync()
   fullName: System.IO.Stream.FlushAsync()
   spec.csharp:
   - uid: System.IO.Stream.FlushAsync
     name: FlushAsync
     fullName: System.IO.Stream.FlushAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
@@ -1401,52 +1416,54 @@ references:
   - uid: System.IO.Stream.FlushAsync
     name: FlushAsync
     fullName: System.IO.Stream.FlushAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: FlushAsync(CancellationToken)
   fullName: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
   spec.csharp:
   - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
     name: FlushAsync
     fullName: System.IO.Stream.FlushAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Threading.CancellationToken
     name: CancellationToken
     fullName: System.Threading.CancellationToken
-    isExternal: true
+    href: System.Threading.CancellationToken.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
     name: FlushAsync
     fullName: System.IO.Stream.FlushAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Threading.CancellationToken
     name: CancellationToken
     fullName: System.Threading.CancellationToken
-    isExternal: true
+    href: System.Threading.CancellationToken.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.CreateWaitHandle
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: CreateWaitHandle()
   fullName: System.IO.Stream.CreateWaitHandle()
   spec.csharp:
   - uid: System.IO.Stream.CreateWaitHandle
     name: CreateWaitHandle
     fullName: System.IO.Stream.CreateWaitHandle
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
@@ -1455,14 +1472,15 @@ references:
   - uid: System.IO.Stream.CreateWaitHandle
     name: CreateWaitHandle
     fullName: System.IO.Stream.CreateWaitHandle
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: BeginRead(Byte[], Int32, Int32, AsyncCallback, Object)
   name.vb: BeginRead(Byte(), Int32, Int32, AsyncCallback, Object)
   fullName: System.IO.Stream.BeginRead(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)
@@ -1471,13 +1489,13 @@ references:
   - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
     name: BeginRead
     fullName: System.IO.Stream.BeginRead
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   - name: ', '
@@ -1485,38 +1503,38 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.AsyncCallback
     name: AsyncCallback
     fullName: System.AsyncCallback
-    isExternal: true
+    href: System.AsyncCallback.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
     name: BeginRead
     fullName: System.IO.Stream.BeginRead
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
   - name: ', '
@@ -1524,61 +1542,63 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.AsyncCallback
     name: AsyncCallback
     fullName: System.AsyncCallback
-    isExternal: true
+    href: System.AsyncCallback.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.EndRead(System.IAsyncResult)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: EndRead(IAsyncResult)
   fullName: System.IO.Stream.EndRead(System.IAsyncResult)
   spec.csharp:
   - uid: System.IO.Stream.EndRead(System.IAsyncResult)
     name: EndRead
     fullName: System.IO.Stream.EndRead
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IAsyncResult
     name: IAsyncResult
     fullName: System.IAsyncResult
-    isExternal: true
+    href: System.IAsyncResult.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.EndRead(System.IAsyncResult)
     name: EndRead
     fullName: System.IO.Stream.EndRead
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IAsyncResult
     name: IAsyncResult
     fullName: System.IAsyncResult
-    isExternal: true
+    href: System.IAsyncResult.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: ReadAsync(Byte[], Int32, Int32)
   name.vb: ReadAsync(Byte(), Int32, Int32)
   fullName: System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32)
@@ -1587,13 +1607,13 @@ references:
   - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
     name: ReadAsync
     fullName: System.IO.Stream.ReadAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   - name: ', '
@@ -1601,26 +1621,26 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
     name: ReadAsync
     fullName: System.IO.Stream.ReadAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
   - name: ', '
@@ -1628,18 +1648,19 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: BeginWrite(Byte[], Int32, Int32, AsyncCallback, Object)
   name.vb: BeginWrite(Byte(), Int32, Int32, AsyncCallback, Object)
   fullName: System.IO.Stream.BeginWrite(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)
@@ -1648,13 +1669,13 @@ references:
   - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
     name: BeginWrite
     fullName: System.IO.Stream.BeginWrite
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   - name: ', '
@@ -1662,38 +1683,38 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.AsyncCallback
     name: AsyncCallback
     fullName: System.AsyncCallback
-    isExternal: true
+    href: System.AsyncCallback.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
     name: BeginWrite
     fullName: System.IO.Stream.BeginWrite
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
   - name: ', '
@@ -1701,61 +1722,63 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.AsyncCallback
     name: AsyncCallback
     fullName: System.AsyncCallback
-    isExternal: true
+    href: System.AsyncCallback.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: EndWrite(IAsyncResult)
   fullName: System.IO.Stream.EndWrite(System.IAsyncResult)
   spec.csharp:
   - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
     name: EndWrite
     fullName: System.IO.Stream.EndWrite
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IAsyncResult
     name: IAsyncResult
     fullName: System.IAsyncResult
-    isExternal: true
+    href: System.IAsyncResult.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
     name: EndWrite
     fullName: System.IO.Stream.EndWrite
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IAsyncResult
     name: IAsyncResult
     fullName: System.IAsyncResult
-    isExternal: true
+    href: System.IAsyncResult.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: WriteAsync(Byte[], Int32, Int32)
   name.vb: WriteAsync(Byte(), Int32, Int32)
   fullName: System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32)
@@ -1764,13 +1787,13 @@ references:
   - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
     name: WriteAsync
     fullName: System.IO.Stream.WriteAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   - name: ', '
@@ -1778,26 +1801,26 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
     name: WriteAsync
     fullName: System.IO.Stream.WriteAsync
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
   - name: ', '
@@ -1805,56 +1828,58 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ', '
     fullName: ', '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.Synchronized(System.IO.Stream)
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Synchronized(Stream)
   fullName: System.IO.Stream.Synchronized(System.IO.Stream)
   spec.csharp:
   - uid: System.IO.Stream.Synchronized(System.IO.Stream)
     name: Synchronized
     fullName: System.IO.Stream.Synchronized
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.IO.Stream.Synchronized(System.IO.Stream)
     name: Synchronized
     fullName: System.IO.Stream.Synchronized
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - uid: System.IO.Stream
     name: Stream
     fullName: System.IO.Stream
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: )
     fullName: )
 - uid: System.IO.Stream.ObjectInvariant
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: ObjectInvariant()
   fullName: System.IO.Stream.ObjectInvariant()
   spec.csharp:
   - uid: System.IO.Stream.ObjectInvariant
     name: ObjectInvariant
     fullName: System.IO.Stream.ObjectInvariant
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
@@ -1863,24 +1888,27 @@ references:
   - uid: System.IO.Stream.ObjectInvariant
     name: ObjectInvariant
     fullName: System.IO.Stream.ObjectInvariant
-    isExternal: true
+    href: System.IO.Stream.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.IO.Stream.CanTimeout
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: CanTimeout
   fullName: System.IO.Stream.CanTimeout
 - uid: System.IO.Stream.ReadTimeout
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: ReadTimeout
   fullName: System.IO.Stream.ReadTimeout
 - uid: System.IO.Stream.WriteTimeout
   parent: System.IO.Stream
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: WriteTimeout
   fullName: System.IO.Stream.WriteTimeout
 - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
@@ -1993,14 +2021,15 @@ references:
     fullName: )
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2009,138 +2038,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2149,7 +2182,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2204,15 +2237,19 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.IO
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.IO.Pipes.PipeDirection
   parent: System.IO.Pipes
   isExternal: false
@@ -2222,9 +2259,11 @@ references:
   type: Enum
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.IO.Pipes.PipeTransmissionMode
   parent: System.IO.Pipes
   isExternal: false
@@ -2241,9 +2280,11 @@ references:
   type: Enum
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: Microsoft.Win32.SafeHandles.SafePipeHandle
   parent: Microsoft.Win32.SafeHandles
   isExternal: false
@@ -2258,9 +2299,12 @@ references:
   type: Namespace
 - uid: System.Threading.Tasks.Task
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.Task.yml
   name: Task
   fullName: System.Threading.Tasks.Task
+  type: Class
+  summary: Represents an asynchronous operation.
 - uid: System.Threading.Tasks
   isExternal: false
   name: System.Threading.Tasks
@@ -2268,10 +2312,14 @@ references:
   type: Namespace
 - uid: System.Threading.CancellationToken
   parent: System.Threading
-  isExternal: true
+  isExternal: false
+  href: System.Threading.CancellationToken.yml
   name: CancellationToken
   fullName: System.Threading.CancellationToken
+  type: Struct
+  summary: Propagates notification that operations should be canceled.
 - uid: System.Threading
   isExternal: false
   name: System.Threading
   fullName: System.Threading
+  type: Namespace

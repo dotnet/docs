@@ -400,33 +400,34 @@ references:
   type: Namespace
 - uid: System.ValueType.Equals(System.Object)
   parent: System.ValueType
-  isExternal: true
+  isExternal: false
+  href: System.ValueType.yml
   name: Equals(Object)
   fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
     fullName: System.ValueType.Equals
-    isExternal: true
+    href: System.ValueType.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
     fullName: System.ValueType.Equals
-    isExternal: true
+    href: System.ValueType.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.ValueType.GetHashCode
@@ -454,14 +455,15 @@ references:
     fullName: )
 - uid: System.ValueType.ToString
   parent: System.ValueType
-  isExternal: true
+  isExternal: false
+  href: System.ValueType.yml
   name: ToString()
   fullName: System.ValueType.ToString()
   spec.csharp:
   - uid: System.ValueType.ToString
     name: ToString
     fullName: System.ValueType.ToString
-    isExternal: true
+    href: System.ValueType.yml
   - name: (
     fullName: (
   - name: )
@@ -470,95 +472,97 @@ references:
   - uid: System.ValueType.ToString
     name: ToString
     fullName: System.ValueType.ToString
-    isExternal: true
+    href: System.ValueType.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetType
@@ -586,23 +590,30 @@ references:
     fullName: )
 - uid: System.ValueType
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.ValueType.yml
   name: ValueType
   fullName: System.ValueType
+  type: Class
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Reflection.TypeAttributes
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.TypeAttributes.yml
   name: TypeAttributes
   fullName: System.Reflection.TypeAttributes
+  type: Enum
 - uid: System.Reflection
   isExternal: false
   name: System.Reflection
@@ -660,6 +671,7 @@ references:
   fullName: System.Reflection.Metadata.TypeLayout
   type: Struct
 - uid: System.Reflection.Metadata.GenericParameterHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.GenericParameterHandleCollection.yml
   name: GenericParameterHandleCollection
@@ -667,24 +679,28 @@ references:
   type: Struct
   summary: Represents generic type parameters of a method or type.
 - uid: System.Reflection.Metadata.MethodDefinitionHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.MethodDefinitionHandleCollection.yml
   name: MethodDefinitionHandleCollection
   fullName: System.Reflection.Metadata.MethodDefinitionHandleCollection
   type: Struct
 - uid: System.Reflection.Metadata.FieldDefinitionHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.FieldDefinitionHandleCollection.yml
   name: FieldDefinitionHandleCollection
   fullName: System.Reflection.Metadata.FieldDefinitionHandleCollection
   type: Struct
 - uid: System.Reflection.Metadata.PropertyDefinitionHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.PropertyDefinitionHandleCollection.yml
   name: PropertyDefinitionHandleCollection
   fullName: System.Reflection.Metadata.PropertyDefinitionHandleCollection
   type: Struct
 - uid: System.Reflection.Metadata.EventDefinitionHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.EventDefinitionHandleCollection.yml
   name: EventDefinitionHandleCollection
@@ -752,12 +768,14 @@ references:
   - name: )
     fullName: )
 - uid: System.Reflection.Metadata.MethodImplementationHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.MethodImplementationHandleCollection.yml
   name: MethodImplementationHandleCollection
   fullName: System.Reflection.Metadata.MethodImplementationHandleCollection
   type: Struct
 - uid: System.Reflection.Metadata.InterfaceImplementationHandleCollection
+  parent: System.Reflection.Metadata
   isExternal: false
   href: System.Reflection.Metadata.InterfaceImplementationHandleCollection.yml
   name: InterfaceImplementationHandleCollection

@@ -101,7 +101,7 @@ items:
   - System.Text.Encodings.Web
   namespace: System.Text.Encodings.Web
   summary: >-
-    Instantiates the filter where only the character ranges specified by <paramref name="allowedRanges" />
+    Instantiates the filter where only the character ranges specified by *allowedRanges*
 
     are allowed by the filter.
   syntax:
@@ -124,7 +124,7 @@ items:
   assemblies:
   - System.Text.Encodings.Web
   namespace: System.Text.Encodings.Web
-  summary: Allows the character specified by <paramref name="character" /> through the filter.
+  summary: Allows the character specified by *character* through the filter.
   syntax:
     content: public virtual void AllowCharacter(char character)
     content.vb: Public Overridable Sub AllowCharacter(character As Char)
@@ -147,7 +147,7 @@ items:
   assemblies:
   - System.Text.Encodings.Web
   namespace: System.Text.Encodings.Web
-  summary: Allows all characters specified by <paramref name="characters" /> through the filter.
+  summary: Allows all characters specified by *characters* through the filter.
   syntax:
     content: public virtual void AllowCharacters(params char[] characters)
     content.vb: Public Overridable Sub AllowCharacters(ParamArray characters As Char())
@@ -170,7 +170,7 @@ items:
   assemblies:
   - System.Text.Encodings.Web
   namespace: System.Text.Encodings.Web
-  summary: Allows all code points specified by <paramref name="codePoints" />.
+  summary: Allows all code points specified by *codePoints*.
   syntax:
     content: public virtual void AllowCodePoints(IEnumerable<int> codePoints)
     content.vb: Public Overridable Sub AllowCodePoints(codePoints As IEnumerable(Of Integer))
@@ -191,7 +191,7 @@ items:
   assemblies:
   - System.Text.Encodings.Web
   namespace: System.Text.Encodings.Web
-  summary: Allows all characters specified by <paramref name="range" /> through the filter.
+  summary: Allows all characters specified by *range* through the filter.
   syntax:
     content: public virtual void AllowRange(UnicodeRange range)
     content.vb: Public Overridable Sub AllowRange(range As UnicodeRange)
@@ -214,7 +214,7 @@ items:
   assemblies:
   - System.Text.Encodings.Web
   namespace: System.Text.Encodings.Web
-  summary: Allows all characters specified by <paramref name="ranges" /> through the filter.
+  summary: Allows all characters specified by *ranges* through the filter.
   syntax:
     content: public virtual void AllowRanges(params UnicodeRange[] ranges)
     content.vb: Public Overridable Sub AllowRanges(ParamArray ranges As UnicodeRange())
@@ -253,7 +253,7 @@ items:
   assemblies:
   - System.Text.Encodings.Web
   namespace: System.Text.Encodings.Web
-  summary: Disallows the character <paramref name="character" /> through the filter.
+  summary: Disallows the character *character* through the filter.
   syntax:
     content: public virtual void ForbidCharacter(char character)
     content.vb: Public Overridable Sub ForbidCharacter(character As Char)
@@ -276,7 +276,7 @@ items:
   assemblies:
   - System.Text.Encodings.Web
   namespace: System.Text.Encodings.Web
-  summary: Disallows all characters specified by <paramref name="characters" /> through the filter.
+  summary: Disallows all characters specified by *characters* through the filter.
   syntax:
     content: public virtual void ForbidCharacters(params char[] characters)
     content.vb: Public Overridable Sub ForbidCharacters(ParamArray characters As Char())
@@ -297,7 +297,7 @@ items:
   assemblies:
   - System.Text.Encodings.Web
   namespace: System.Text.Encodings.Web
-  summary: Disallows all characters specified by <paramref name="range" /> through the filter.
+  summary: Disallows all characters specified by *range* through the filter.
   syntax:
     content: public virtual void ForbidRange(UnicodeRange range)
     content.vb: Public Overridable Sub ForbidRange(range As UnicodeRange)
@@ -320,7 +320,7 @@ items:
   assemblies:
   - System.Text.Encodings.Web
   namespace: System.Text.Encodings.Web
-  summary: Disallows all characters specified by <paramref name="ranges" /> through the filter.
+  summary: Disallows all characters specified by *ranges* through the filter.
   syntax:
     content: public virtual void ForbidRanges(params UnicodeRange[] ranges)
     content.vb: Public Overridable Sub ForbidRanges(ParamArray ranges As UnicodeRange())
@@ -355,19 +355,22 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -376,138 +379,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -516,7 +523,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -571,6 +578,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Text.Encodings.Web.TextEncoderSettings
   parent: System.Text.Encodings.Web
   isExternal: false
@@ -602,11 +610,14 @@ references:
     fullName: ()
 - uid: System.Char
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Char.yml
   name: Char
   fullName: System.Char
+  type: Struct
 - uid: System.Char[]
-  isExternal: true
+  isExternal: false
+  href: System.Char.yml
   name: Char[]
   name.vb: Char()
   fullName: System.Char[]
@@ -615,19 +626,20 @@ references:
   - uid: System.Char
     name: Char
     fullName: System.Char
-    isExternal: true
+    href: System.Char.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Char
     name: Char
     fullName: System.Char
-    isExternal: true
+    href: System.Char.yml
   - name: ()
     fullName: ()
 - uid: System.Collections.Generic.IEnumerable{System.Int32}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<Int32>
   name.vb: IEnumerable(Of Int32)
   fullName: System.Collections.Generic.IEnumerable<System.Int32>
@@ -636,40 +648,42 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -680,7 +694,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -691,6 +705,7 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Text.Unicode.UnicodeRange
   parent: System.Text.Unicode
   isExternal: false

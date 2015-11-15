@@ -9,13 +9,13 @@ items:
   type: Delegate
   source:
     remote:
-      path: src/mscorlib/src/System/ConsoleCancelEventArgs.cs
+      path: src/System.Console/src/System/ConsoleCancelEventArgs.cs
       branch: master
-      repo: https://github.com/chenkennt/coreclr.git
-    path: src/mscorlib/src/System/ConsoleCancelEventArgs.cs
-    startLine: 17
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Console/src/System/ConsoleCancelEventArgs.cs
+    startLine: 6
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: Represents the method that will handle the @'System.Console.CancelKeyPress' event of a @'System.Console'.
   syntax:
@@ -33,11 +33,14 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.ConsoleCancelEventArgs
   parent: System
   isExternal: false

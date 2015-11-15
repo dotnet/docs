@@ -90,6 +90,7 @@ references:
   type: Class
   summary: Base class from which all objects to be used as Evidence must derive
 - uid: System.Security.Policy.IIdentityPermissionFactory
+  parent: System.Security.Policy
   isExternal: false
   href: System.Security.Policy.IIdentityPermissionFactory.yml
   name: IIdentityPermissionFactory

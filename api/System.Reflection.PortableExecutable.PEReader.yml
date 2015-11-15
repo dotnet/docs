@@ -82,9 +82,9 @@ items:
       description: The size of the PE image.
   exceptions:
   - type: System.ArgumentNullException
-    description: is .
+    description: '*peImage* is @''System.IntPtr.Zero''.'
   - type: System.ArgumentOutOfRangeException
-    description: is negative.
+    description: '*size* is negative.'
 - uid: System.Reflection.PortableExecutable.PEReader.#ctor(System.IO.Stream)
   id: '#ctor(System.IO.Stream)'
   parent: System.Reflection.PortableExecutable.PEReader
@@ -113,9 +113,9 @@ items:
       description: PE image stream.
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*peStream* is null.'
   - type: System.BadImageFormatException
-    description: is specified and the PE headers of the image are invalid.
+    description: '@''System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata'' is specified and the PE headers of the image are invalid.'
 - uid: System.Reflection.PortableExecutable.PEReader.#ctor(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions)
   id: '#ctor(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions)'
   parent: System.Reflection.PortableExecutable.PEReader
@@ -168,11 +168,11 @@ items:
         after construction.
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*peStream* is null.'
   - type: System.ArgumentOutOfRangeException
-    description: has an invalid value.
+    description: '*options* has an invalid value.'
   - type: System.BadImageFormatException
-    description: is specified and the PE headers of the image are invalid.
+    description: '@''System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata'' is specified and the PE headers of the image are invalid.'
 - uid: System.Reflection.PortableExecutable.PEReader.#ctor(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions,System.Int32)
   id: '#ctor(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions,System.Int32)'
   parent: System.Reflection.PortableExecutable.PEReader
@@ -256,7 +256,7 @@ items:
       description: PE image.
   exceptions:
   - type: System.ArgumentNullException
-    description: is null.
+    description: '*peImage* is null.'
 - uid: System.Reflection.PortableExecutable.PEReader.Dispose
   id: Dispose
   parent: System.Reflection.PortableExecutable.PEReader
@@ -396,7 +396,7 @@ items:
       type: System.Reflection.PortableExecutable.PEMemoryBlock
   exceptions:
   - type: System.InvalidOperationException
-    description: The PE image doesn't contain metadata ( returns false).
+    description: The PE image doesn't contain metadata (@'System.Reflection.PortableExecutable.PEReader.HasMetadata' returns false).
   - type: System.BadImageFormatException
     description: The PE headers contain invalid data.
 - uid: System.Reflection.PortableExecutable.PEReader.GetSectionData(System.Int32)
@@ -414,9 +414,9 @@ items:
   - System.Reflection.Metadata
   namespace: System.Reflection.PortableExecutable
   summary: >-
-    Loads PE section that contains the specified <paramref name="relativeVirtualAddress" /> into memory
+    Loads PE section that contains the specified *relativeVirtualAddress* into memory
 
-    and returns a memory block that starts at <paramref name="relativeVirtualAddress" /> and ends at the end of the containing section.
+    and returns a memory block that starts at *relativeVirtualAddress* and ends at the end of the containing section.
   syntax:
     content: public PEMemoryBlock GetSectionData(int relativeVirtualAddress)
     content.vb: Public Function GetSectionData(relativeVirtualAddress As Integer) As PEMemoryBlock
@@ -426,7 +426,7 @@ items:
       description: Relative Virtual Address of the data to read.
     return:
       type: System.Reflection.PortableExecutable.PEMemoryBlock
-      description: An empty block if <paramref name="relativeVirtualAddress" /> doesn't represent a location in any of the PE sections of this PE image.
+      description: An empty block if *relativeVirtualAddress* doesn't represent a location in any of the PE sections of this PE image.
   exceptions:
   - type: System.BadImageFormatException
     description: The PE headers contain invalid data.
@@ -439,19 +439,22 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -460,138 +463,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -600,7 +607,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -655,6 +662,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Reflection.PortableExecutable.PEReader
   parent: System.Reflection.PortableExecutable
   isExternal: false
@@ -663,43 +671,65 @@ references:
   fullName: System.Reflection.PortableExecutable.PEReader
   type: Class
   summary: Portable Executable format reader.
+- uid: System.IntPtr.Zero
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
 - uid: System.Byte*
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte*
   fullName: System.Byte*
   spec.csharp:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '*'
     fullName: '*'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '*'
     fullName: '*'
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
+- uid: System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata
 - uid: System.BadImageFormatException
+  isExternal: false
+  href: System.BadImageFormatException.yml
+  name: BadImageFormatException
+  fullName: System.BadImageFormatException
+  type: Class
 - uid: System.IO.Stream
   parent: System.IO
-  isExternal: true
+  isExternal: false
+  href: System.IO.Stream.yml
   name: Stream
   fullName: System.IO.Stream
+  type: Class
 - uid: System.IO
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace
 - uid: System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen
-- uid: System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata
 - uid: System.Reflection.PortableExecutable.PEStreamOptions.PrefetchEntireImage
 - uid: System.Reflection.PortableExecutable.PEStreamOptions
   parent: System.Reflection.PortableExecutable
@@ -769,12 +799,14 @@ references:
   - name: )
     fullName: )
 - uid: System.Reflection.PortableExecutable.PEMemoryBlock
+  parent: System.Reflection.PortableExecutable
   isExternal: false
   href: System.Reflection.PortableExecutable.PEMemoryBlock.yml
   name: PEMemoryBlock
   fullName: System.Reflection.PortableExecutable.PEMemoryBlock
   type: Struct
 - uid: System.Reflection.PortableExecutable.PEHeaders
+  parent: System.Reflection.PortableExecutable
   isExternal: false
   href: System.Reflection.PortableExecutable.PEHeaders.yml
   name: PEHeaders
@@ -783,8 +815,17 @@ references:
   summary: An object used to read PE (Portable Executable) and COFF (Common Object File Format) headers from a stream.
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Reflection.PortableExecutable.PEReader.IsEntireImageAvailable
 - uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
+- uid: System.Reflection.PortableExecutable.PEReader.HasMetadata

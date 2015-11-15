@@ -11,13 +11,13 @@ items:
   type: Enum
   source:
     remote: &o0
-      path: src/System.IO.FileSystem/src/System/IO/SearchOption.cs
+      path: src/mscorlib/src/System/IO/SearchOption.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.IO.FileSystem/src/System/IO/SearchOption.cs
-    startLine: 12
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/SearchOption.cs
+    startLine: 20
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Specifies whether to search the current directory, or the current directory and all subdirectories.
   syntax:
@@ -32,10 +32,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/SearchOption.cs
-    startLine: 17
+    path: src/mscorlib/src/System/IO/SearchOption.cs
+    startLine: 25
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Includes only the current directory in a search operation.
   syntax:
@@ -49,10 +49,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/SearchOption.cs
-    startLine: 26
+    path: src/mscorlib/src/System/IO/SearchOption.cs
+    startLine: 32
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Includes the current directory and all its subdirectories in a search operation. This option includes reparse points such as mounted drives and symbolic links in the search.
   syntax:
@@ -62,3 +62,4 @@ references:
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace

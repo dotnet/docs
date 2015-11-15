@@ -130,16 +130,18 @@ references:
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+  type: Namespace
 - uid: System.Collections.IEnumerable.GetEnumerator
   parent: System.Collections.IEnumerable
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerable.yml
   name: GetEnumerator()
   fullName: System.Collections.IEnumerable.GetEnumerator()
   spec.csharp:
   - uid: System.Collections.IEnumerable.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.IEnumerable.GetEnumerator
-    isExternal: true
+    href: System.Collections.IEnumerable.yml
   - name: (
     fullName: (
   - name: )
@@ -148,37 +150,48 @@ references:
   - uid: System.Collections.IEnumerable.GetEnumerator
     name: GetEnumerator
     fullName: System.Collections.IEnumerable.GetEnumerator
-    isExternal: true
+    href: System.Collections.IEnumerable.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Collections.IEnumerable
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerable.yml
   name: IEnumerable
   fullName: System.Collections.IEnumerable
+  type: Interface
 - uid: System.Array
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Array.yml
   name: Array
   fullName: System.Array
+  type: Class
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct

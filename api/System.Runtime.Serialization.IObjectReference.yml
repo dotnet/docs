@@ -57,6 +57,7 @@ references:
   fullName: System.Runtime.Serialization
   type: Namespace
 - uid: System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
   isExternal: false
   href: System.Runtime.Serialization.StreamingContext.yml
   name: StreamingContext
@@ -64,10 +65,13 @@ references:
   type: Struct
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

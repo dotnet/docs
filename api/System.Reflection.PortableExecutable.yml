@@ -33,6 +33,7 @@ items:
   - System.Reflection.Metadata
 references:
 - uid: System.Reflection.PortableExecutable.CoffHeader
+  parent: System.Reflection.PortableExecutable
   isExternal: false
   href: System.Reflection.PortableExecutable.CoffHeader.yml
   name: CoffHeader
@@ -47,6 +48,7 @@ references:
   type: Enum
   summary: COR20Flags
 - uid: System.Reflection.PortableExecutable.CorHeader
+  parent: System.Reflection.PortableExecutable
   isExternal: false
   href: System.Reflection.PortableExecutable.CorHeader.yml
   name: CorHeader
@@ -102,12 +104,14 @@ references:
   fullName: System.Reflection.PortableExecutable.SectionCharacteristics
   type: Enum
 - uid: System.Reflection.PortableExecutable.PEHeader
+  parent: System.Reflection.PortableExecutable
   isExternal: false
   href: System.Reflection.PortableExecutable.PEHeader.yml
   name: PEHeader
   fullName: System.Reflection.PortableExecutable.PEHeader
   type: Class
 - uid: System.Reflection.PortableExecutable.PEHeaders
+  parent: System.Reflection.PortableExecutable
   isExternal: false
   href: System.Reflection.PortableExecutable.PEHeaders.yml
   name: PEHeaders
@@ -115,6 +119,7 @@ references:
   type: Class
   summary: An object used to read PE (Portable Executable) and COFF (Common Object File Format) headers from a stream.
 - uid: System.Reflection.PortableExecutable.PEMemoryBlock
+  parent: System.Reflection.PortableExecutable
   isExternal: false
   href: System.Reflection.PortableExecutable.PEMemoryBlock.yml
   name: PEMemoryBlock

@@ -143,6 +143,7 @@ references:
   fullName: System.Runtime.InteropServices.ComTypes
   type: Namespace
 - uid: System.Runtime.InteropServices.ComTypes.FORMATETC
+  parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.FORMATETC.yml
   name: FORMATETC
@@ -157,13 +158,16 @@ references:
   type: Struct
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Runtime.InteropServices.ComTypes.IMoniker
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false

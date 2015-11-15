@@ -24,62 +24,15 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/mscorlib/src/System/Security/Principal/TokenImpersonationLevel.cs
+      path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsPrincipal.cs
       branch: master
-      repo: https://github.com/chenkennt/coreclr.git
-    path: src/mscorlib/src/System/Security/Principal/TokenImpersonationLevel.cs
-    startLine: 5
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsPrincipal.cs
+    startLine: 9
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   summary: The @'System.Security.Principal' namespace defines a principal object that represents the security context under which code is running. For more information, see Role-Based Security.
 references:
-- uid: System.Security.Principal.GenericIdentity
-  isExternal: false
-  href: System.Security.Principal.GenericIdentity.yml
-  name: GenericIdentity
-  fullName: System.Security.Principal.GenericIdentity
-  type: Class
-- uid: System.Security.Principal.GenericPrincipal
-  isExternal: false
-  href: System.Security.Principal.GenericPrincipal.yml
-  name: GenericPrincipal
-  fullName: System.Security.Principal.GenericPrincipal
-  type: Class
-- uid: System.Security.Principal.IIdentity
-  parent: System.Security.Principal
-  isExternal: false
-  href: System.Security.Principal.IIdentity.yml
-  name: IIdentity
-  fullName: System.Security.Principal.IIdentity
-  type: Interface
-- uid: System.Security.Principal.IPrincipal
-  parent: System.Security.Principal
-  isExternal: false
-  href: System.Security.Principal.IPrincipal.yml
-  name: IPrincipal
-  fullName: System.Security.Principal.IPrincipal
-  type: Interface
-- uid: System.Security.Principal.PrincipalPolicy
-  parent: System.Security.Principal
-  isExternal: false
-  href: System.Security.Principal.PrincipalPolicy.yml
-  name: PrincipalPolicy
-  fullName: System.Security.Principal.PrincipalPolicy
-  type: Enum
-- uid: System.Security.Principal.TokenAccessLevels
-  parent: System.Security.Principal
-  isExternal: false
-  href: System.Security.Principal.TokenAccessLevels.yml
-  name: TokenAccessLevels
-  fullName: System.Security.Principal.TokenAccessLevels
-  type: Enum
-- uid: System.Security.Principal.TokenImpersonationLevel
-  parent: System.Security.Principal
-  isExternal: false
-  href: System.Security.Principal.TokenImpersonationLevel.yml
-  name: TokenImpersonationLevel
-  fullName: System.Security.Principal.TokenImpersonationLevel
-  type: Enum
 - uid: System.Security.Principal.IdentityNotMappedException
   isExternal: false
   href: System.Security.Principal.IdentityNotMappedException.yml
@@ -121,6 +74,13 @@ references:
   name: SecurityIdentifier
   fullName: System.Security.Principal.SecurityIdentifier
   type: Class
+- uid: System.Security.Principal.TokenAccessLevels
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: TokenAccessLevels
+  fullName: System.Security.Principal.TokenAccessLevels
+  type: Enum
 - uid: System.Security.Principal.WindowsIdentity
   parent: System.Security.Principal
   isExternal: false
@@ -141,6 +101,46 @@ references:
   name: WindowsPrincipal
   fullName: System.Security.Principal.WindowsPrincipal
   type: Class
+- uid: System.Security.Principal.GenericIdentity
+  isExternal: false
+  href: System.Security.Principal.GenericIdentity.yml
+  name: GenericIdentity
+  fullName: System.Security.Principal.GenericIdentity
+  type: Class
+- uid: System.Security.Principal.GenericPrincipal
+  isExternal: false
+  href: System.Security.Principal.GenericPrincipal.yml
+  name: GenericPrincipal
+  fullName: System.Security.Principal.GenericPrincipal
+  type: Class
+- uid: System.Security.Principal.IIdentity
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.IIdentity.yml
+  name: IIdentity
+  fullName: System.Security.Principal.IIdentity
+  type: Interface
+- uid: System.Security.Principal.IPrincipal
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.IPrincipal.yml
+  name: IPrincipal
+  fullName: System.Security.Principal.IPrincipal
+  type: Interface
+- uid: System.Security.Principal.PrincipalPolicy
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.PrincipalPolicy.yml
+  name: PrincipalPolicy
+  fullName: System.Security.Principal.PrincipalPolicy
+  type: Enum
+- uid: System.Security.Principal.TokenImpersonationLevel
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.TokenImpersonationLevel.yml
+  name: TokenImpersonationLevel
+  fullName: System.Security.Principal.TokenImpersonationLevel
+  type: Enum
 - uid: System.Security.Principal
   isExternal: false
   name: System.Security.Principal

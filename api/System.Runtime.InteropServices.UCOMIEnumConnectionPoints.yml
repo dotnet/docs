@@ -136,9 +136,11 @@ references:
   type: Namespace
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Runtime.InteropServices.UCOMIConnectionPoint[]
   isExternal: false
   href: System.Runtime.InteropServices.UCOMIConnectionPoint.yml
@@ -164,6 +166,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Runtime.InteropServices.UCOMIEnumConnectionPoints
   parent: System.Runtime.InteropServices
   isExternal: false

@@ -98,12 +98,15 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: '{T}'
   isExternal: false
   name: T
   fullName: T
 - uid: System.Exception
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: Exception
   fullName: System.Exception
+  type: Class

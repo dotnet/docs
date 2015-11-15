@@ -36,10 +36,13 @@ references:
   type: Namespace
 - uid: System.IntPtr
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.IntPtr.yml
   name: IntPtr
   fullName: System.IntPtr
+  type: Struct
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

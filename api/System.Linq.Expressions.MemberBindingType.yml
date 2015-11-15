@@ -83,21 +83,25 @@ references:
   type: Namespace
 - uid: System.Collections.IList
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IList.yml
   name: IList
   fullName: System.Collections.IList
+  type: Interface
 - uid: System.Collections.Generic.ICollection`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.ICollection`1.yml
   name: ICollection<T>
   name.vb: ICollection(Of T)
   fullName: System.Collections.Generic.ICollection<T>
   fullName.vb: System.Collections.Generic.ICollection(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     fullName: System.Collections.Generic.ICollection
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: <
     fullName: <
   - name: T
@@ -108,7 +112,7 @@ references:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     fullName: System.Collections.Generic.ICollection
-    isExternal: true
+    href: System.Collections.Generic.ICollection`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -119,7 +123,9 @@ references:
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+  type: Namespace
 - uid: System.Collections.Generic
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace

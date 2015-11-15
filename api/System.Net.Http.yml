@@ -60,6 +60,7 @@ references:
   fullName: System.Net.Http.WinHttpHandler
   type: Class
 - uid: System.Net.Http.ByteArrayContent
+  parent: System.Net.Http
   isExternal: false
   href: System.Net.Http.ByteArrayContent.yml
   name: ByteArrayContent
@@ -73,6 +74,7 @@ references:
   fullName: System.Net.Http.ClientCertificateOption
   type: Enum
 - uid: System.Net.Http.DelegatingHandler
+  parent: System.Net.Http
   isExternal: false
   href: System.Net.Http.DelegatingHandler.yml
   name: DelegatingHandler
@@ -152,6 +154,7 @@ references:
   fullName: System.Net.Http.MessageProcessingHandler
   type: Class
 - uid: System.Net.Http.MultipartContent
+  parent: System.Net.Http
   isExternal: false
   href: System.Net.Http.MultipartContent.yml
   name: MultipartContent

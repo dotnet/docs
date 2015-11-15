@@ -75,18 +75,21 @@ items:
   summary: The System.Runtime.InteropServices.ComTypes namespace contains methods that are defintions of COM functions for managed code. These functions replace the now-obsolete UCOM* methods in the @'System.Runtime.InteropServices' namespace.
 references:
 - uid: System.Runtime.InteropServices.ComTypes.BIND_OPTS
+  parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.BIND_OPTS.yml
   name: BIND_OPTS
   fullName: System.Runtime.InteropServices.ComTypes.BIND_OPTS
   type: Struct
 - uid: System.Runtime.InteropServices.ComTypes.IBindCtx
+  parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.IBindCtx.yml
   name: IBindCtx
   fullName: System.Runtime.InteropServices.ComTypes.IBindCtx
   type: Interface
 - uid: System.Runtime.InteropServices.ComTypes.IConnectionPointContainer
+  parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.yml
   name: IConnectionPointContainer
@@ -141,6 +144,7 @@ references:
   fullName: System.Runtime.InteropServices.ComTypes.IEnumVARIANT
   type: Interface
 - uid: System.Runtime.InteropServices.ComTypes.FILETIME
+  parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.FILETIME.yml
   name: FILETIME
@@ -167,6 +171,7 @@ references:
   fullName: System.Runtime.InteropServices.ComTypes.IRunningObjectTable
   type: Interface
 - uid: System.Runtime.InteropServices.ComTypes.STATSTG
+  parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.STATSTG.yml
   name: STATSTG
@@ -187,6 +192,7 @@ references:
   fullName: System.Runtime.InteropServices.ComTypes.DESCKIND
   type: Enum
 - uid: System.Runtime.InteropServices.ComTypes.BINDPTR
+  parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.BINDPTR.yml
   name: BINDPTR
@@ -254,6 +260,7 @@ references:
   fullName: System.Runtime.InteropServices.ComTypes.PARAMFLAG
   type: Enum
 - uid: System.Runtime.InteropServices.ComTypes.PARAMDESC
+  parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.PARAMDESC.yml
   name: PARAMDESC
@@ -301,6 +308,7 @@ references:
   fullName: System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION
   type: Struct
 - uid: System.Runtime.InteropServices.ComTypes.DISPPARAMS
+  parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.DISPPARAMS.yml
   name: DISPPARAMS
@@ -415,12 +423,14 @@ references:
   fullName: System.Runtime.InteropServices.ComTypes.DVASPECT
   type: Enum
 - uid: System.Runtime.InteropServices.ComTypes.FORMATETC
+  parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.FORMATETC.yml
   name: FORMATETC
   fullName: System.Runtime.InteropServices.ComTypes.FORMATETC
   type: Struct
 - uid: System.Runtime.InteropServices.ComTypes.IAdviseSink
+  parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
   href: System.Runtime.InteropServices.ComTypes.IAdviseSink.yml
   name: IAdviseSink

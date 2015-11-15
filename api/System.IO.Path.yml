@@ -7,6 +7,7 @@ items:
   - System.IO.Path.ChangeExtension(System.String,System.String)
   - System.IO.Path.Combine(System.String,System.String)
   - System.IO.Path.Combine(System.String,System.String,System.String)
+  - System.IO.Path.Combine(System.String,System.String,System.String,System.String)
   - System.IO.Path.Combine(System.String[])
   - System.IO.Path.DirectorySeparatorChar
   - System.IO.Path.GetDirectoryName(System.String)
@@ -21,6 +22,7 @@ items:
   - System.IO.Path.GetTempFileName
   - System.IO.Path.GetTempPath
   - System.IO.Path.HasExtension(System.String)
+  - System.IO.Path.InvalidPathChars
   - System.IO.Path.IsPathRooted(System.String)
   - System.IO.Path.PathSeparator
   - System.IO.Path.VolumeSeparatorChar
@@ -29,14 +31,14 @@ items:
   fullName: System.IO.Path
   type: Class
   source:
-    remote:
-      path: src/System.Runtime.Extensions/src/System/IO/Path.Win32.cs
+    remote: &o0
+      path: src/mscorlib/src/System/IO/Path.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Runtime.Extensions/src/System/IO/Path.Win32.cs
-    startLine: 7
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 33
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Performs operations on @'System.String' instances that contain file or directory path information. These operations are performed in a cross-platform manner.To browse the .NET Framework source code for this type, see the Reference Source.
   syntax:
@@ -52,6 +54,24 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+- uid: System.IO.Path.DirectorySeparatorChar
+  id: DirectorySeparatorChar
+  parent: System.IO.Path
+  href: System.IO.Path.yml
+  name: DirectorySeparatorChar
+  fullName: System.IO.Path.DirectorySeparatorChar
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 40
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Provides a platform-specific character used to separate directory levels in a path string that reflects a hierarchical file system organization.
+  syntax:
+    content: public static readonly char DirectorySeparatorChar
+    content.vb: Public Shared ReadOnly DirectorySeparatorChar As Char
 - uid: System.IO.Path.AltDirectorySeparatorChar
   id: AltDirectorySeparatorChar
   parent: System.IO.Path
@@ -60,19 +80,70 @@ items:
   fullName: System.IO.Path.AltDirectorySeparatorChar
   type: Field
   source:
-    remote: &o0
-      path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-      branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 18
+    remote: *o0
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 50
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Provides a platform-specific alternate character used to separate directory levels in a path string that reflects a hierarchical file system organization.
   syntax:
     content: public static readonly char AltDirectorySeparatorChar
     content.vb: Public Shared ReadOnly AltDirectorySeparatorChar As Char
+- uid: System.IO.Path.VolumeSeparatorChar
+  id: VolumeSeparatorChar
+  parent: System.IO.Path
+  href: System.IO.Path.yml
+  name: VolumeSeparatorChar
+  fullName: System.IO.Path.VolumeSeparatorChar
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Provides a platform-specific volume separator character.
+  syntax:
+    content: public static readonly char VolumeSeparatorChar
+    content.vb: Public Shared ReadOnly VolumeSeparatorChar As Char
+- uid: System.IO.Path.InvalidPathChars
+  id: InvalidPathChars
+  parent: System.IO.Path
+  href: System.IO.Path.yml
+  name: InvalidPathChars
+  fullName: System.IO.Path.InvalidPathChars
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 69
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Provides a platform-specific array of characters that cannot be specified in path string arguments passed to members of the @'System.IO.Path' class.
+  syntax:
+    content: public static readonly char[] InvalidPathChars
+    content.vb: Public Shared ReadOnly InvalidPathChars As Char()
+- uid: System.IO.Path.PathSeparator
+  id: PathSeparator
+  parent: System.IO.Path
+  href: System.IO.Path.yml
+  name: PathSeparator
+  fullName: System.IO.Path.PathSeparator
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 95
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: A platform-specific separator character used to separate path strings in environment variables.
+  syntax:
+    content: public static readonly char PathSeparator
+    content.vb: Public Shared ReadOnly PathSeparator As Char
 - uid: System.IO.Path.ChangeExtension(System.String,System.String)
   id: ChangeExtension(System.String,System.String)
   parent: System.IO.Path
@@ -82,10 +153,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 31
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 128
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Changes the extension of a path string.
   syntax:
@@ -113,10 +184,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 67
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 160
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Returns the directory information for the specified path string.
   syntax:
@@ -143,10 +214,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 127
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 269
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Gets an array containing the characters that are not allowed in path names.
   syntax:
@@ -164,10 +235,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 132
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 274
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Gets an array containing the characters that are not allowed in file names.
   syntax:
@@ -185,10 +256,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 141
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 284
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Returns the extension of the specified path string.
   syntax:
@@ -204,6 +275,42 @@ items:
   exceptions:
   - type: System.ArgumentException
     description: '*path* contains one or more of the invalid characters defined in @''System.IO.Path.GetInvalidPathChars''.'
+- uid: System.IO.Path.GetFullPath(System.String)
+  id: GetFullPath(System.String)
+  parent: System.IO.Path
+  href: System.IO.Path.yml
+  name: GetFullPath(String)
+  fullName: System.IO.Path.GetFullPath(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 310
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Returns the absolute path for the specified path string.
+  syntax:
+    content: public static string GetFullPath(string path)
+    content.vb: Public Shared Function GetFullPath(path As String) As String
+    parameters:
+    - id: path
+      type: System.String
+      description: The file or directory for which to obtain absolute path information.
+    return:
+      type: System.String
+      description: The fully qualified location of *path*, such as "C:\MyFile.txt".
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is a zero-length string, contains only white space, or contains one or more of the invalid characters defined in @''System.IO.Path.GetInvalidPathChars''.-or- The system could not retrieve the absolute path.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permissions.
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.NotSupportedException
+    description: '*path* contains a colon (":") that is not part of a volume identifier (for example, "c:\").'
+  - type: System.IO.PathTooLongException
+    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
 - uid: System.IO.Path.GetFileName(System.String)
   id: GetFileName(System.String)
   parent: System.IO.Path
@@ -213,10 +320,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 195
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 846
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Returns the file name and extension of the specified path string.
   syntax:
@@ -241,10 +348,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 213
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 862
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Returns the file name of the specified path string without the extension.
   syntax:
@@ -269,10 +376,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 234
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 887
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Gets the root directory information of the specified path.
   syntax:
@@ -288,6 +395,30 @@ items:
   exceptions:
   - type: System.ArgumentException
     description: '*path* contains one or more of the invalid characters defined in @''System.IO.Path.GetInvalidPathChars''.-or- @''System.String.Empty'' was passed to *path*.'
+- uid: System.IO.Path.GetTempPath
+  id: GetTempPath
+  parent: System.IO.Path
+  href: System.IO.Path.yml
+  name: GetTempPath()
+  fullName: System.IO.Path.GetTempPath()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 894
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Returns the path of the current user's temporary folder.
+  syntax:
+    content: public static string GetTempPath()
+    content.vb: Public Shared Function GetTempPath As String
+    return:
+      type: System.String
+      description: The path to the temporary folder, ending with a backslash.
+  exceptions:
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permissions.
 - uid: System.IO.Path.GetRandomFileName
   id: GetRandomFileName
   parent: System.IO.Path
@@ -297,10 +428,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 244
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 933
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Returns a random folder name or file name.
   syntax:
@@ -318,10 +449,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 259
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 968
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Creates a uniquely named, zero-byte temporary file on disk and returns the full path of that file.
   syntax:
@@ -342,10 +473,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 269
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 1009
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Determines whether a path includes a file name extension.
   syntax:
@@ -361,6 +492,34 @@ items:
   exceptions:
   - type: System.ArgumentException
     description: '*path* contains one or more of the invalid characters defined in @''System.IO.Path.GetInvalidPathChars''.'
+- uid: System.IO.Path.IsPathRooted(System.String)
+  id: IsPathRooted(System.String)
+  parent: System.IO.Path
+  href: System.IO.Path.yml
+  name: IsPathRooted(String)
+  fullName: System.IO.Path.IsPathRooted(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 1032
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets a value indicating whether the specified path string contains a root.
+  syntax:
+    content: public static bool IsPathRooted(string path)
+    content.vb: Public Shared Function IsPathRooted(path As String) As Boolean
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to test.
+    return:
+      type: System.Boolean
+      description: true if *path* contains a root; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* contains one or more of the invalid characters defined in @''System.IO.Path.GetInvalidPathChars''.'
 - uid: System.IO.Path.Combine(System.String,System.String)
   id: Combine(System.String,System.String)
   parent: System.IO.Path
@@ -370,10 +529,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 289
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 1049
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Combines two strings into a path.
   syntax:
@@ -403,10 +562,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 301
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 1059
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Combines three strings into a path.
   syntax:
@@ -430,6 +589,45 @@ items:
     description: '*path1*, *path2*, or *path3* contains one or more of the invalid characters defined in @''System.IO.Path.GetInvalidPathChars''.'
   - type: System.ArgumentNullException
     description: '*path1*, *path2*, or *path3* is null.'
+- uid: System.IO.Path.Combine(System.String,System.String,System.String,System.String)
+  id: Combine(System.String,System.String,System.String,System.String)
+  parent: System.IO.Path
+  href: System.IO.Path.yml
+  name: Combine(String, String, String, String)
+  fullName: System.IO.Path.Combine(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 1070
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Combines four strings into a path.
+  syntax:
+    content: public static string Combine(string path1, string path2, string path3, string path4)
+    content.vb: Public Shared Function Combine(path1 As String, path2 As String, path3 As String, path4 As String) As String
+    parameters:
+    - id: path1
+      type: System.String
+      description: The first path to combine.
+    - id: path2
+      type: System.String
+      description: The second path to combine.
+    - id: path3
+      type: System.String
+      description: The third path to combine.
+    - id: path4
+      type: System.String
+      description: The fourth path to combine.
+    return:
+      type: System.String
+      description: The combined paths.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path1*, *path2*, *path3*, or *path4* contains one or more of the invalid characters defined in @''System.IO.Path.GetInvalidPathChars''.'
+  - type: System.ArgumentNullException
+    description: '*path1*, *path2*, *path3*, or *path4* is null.'
 - uid: System.IO.Path.Combine(System.String[])
   id: Combine(System.String[])
   parent: System.IO.Path
@@ -441,10 +639,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Runtime.Extensions/src/System/IO/Path.cs
-    startLine: 314
+    path: src/mscorlib/src/System/IO/Path.cs
+    startLine: 1082
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   namespace: System.IO
   summary: Combines an array of strings into a path.
   syntax:
@@ -462,171 +660,30 @@ items:
     description: One of the strings in the array contains one or more of the invalid characters defined in @'System.IO.Path.GetInvalidPathChars'.
   - type: System.ArgumentNullException
     description: One of the strings in the array is null.
-- uid: System.IO.Path.DirectorySeparatorChar
-  id: DirectorySeparatorChar
-  parent: System.IO.Path
-  href: System.IO.Path.yml
-  name: DirectorySeparatorChar
-  fullName: System.IO.Path.DirectorySeparatorChar
-  type: Field
-  source:
-    remote: &o1
-      path: src/System.Runtime.Extensions/src/System/IO/Path.Windows.cs
-      branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Runtime.Extensions/src/System/IO/Path.Windows.cs
-    startLine: 12
-  assemblies:
-  - System.Runtime.Extensions.CoreCLR
-  namespace: System.IO
-  summary: Provides a platform-specific character used to separate directory levels in a path string that reflects a hierarchical file system organization.
-  syntax:
-    content: public static readonly char DirectorySeparatorChar
-    content.vb: Public Shared ReadOnly DirectorySeparatorChar As Char
-- uid: System.IO.Path.VolumeSeparatorChar
-  id: VolumeSeparatorChar
-  parent: System.IO.Path
-  href: System.IO.Path.yml
-  name: VolumeSeparatorChar
-  fullName: System.IO.Path.VolumeSeparatorChar
-  type: Field
-  source:
-    remote: *o1
-    path: src/System.Runtime.Extensions/src/System/IO/Path.Windows.cs
-    startLine: 13
-  assemblies:
-  - System.Runtime.Extensions.CoreCLR
-  namespace: System.IO
-  summary: Provides a platform-specific volume separator character.
-  syntax:
-    content: public static readonly char VolumeSeparatorChar
-    content.vb: Public Shared ReadOnly VolumeSeparatorChar As Char
-- uid: System.IO.Path.PathSeparator
-  id: PathSeparator
-  parent: System.IO.Path
-  href: System.IO.Path.yml
-  name: PathSeparator
-  fullName: System.IO.Path.PathSeparator
-  type: Field
-  source:
-    remote: *o1
-    path: src/System.Runtime.Extensions/src/System/IO/Path.Windows.cs
-    startLine: 14
-  assemblies:
-  - System.Runtime.Extensions.CoreCLR
-  namespace: System.IO
-  summary: A platform-specific separator character used to separate path strings in environment variables.
-  syntax:
-    content: public static readonly char PathSeparator
-    content.vb: Public Shared ReadOnly PathSeparator As Char
-- uid: System.IO.Path.GetFullPath(System.String)
-  id: GetFullPath(System.String)
-  parent: System.IO.Path
-  href: System.IO.Path.yml
-  name: GetFullPath(String)
-  fullName: System.IO.Path.GetFullPath(System.String)
-  type: Method
-  source:
-    remote: *o1
-    path: src/System.Runtime.Extensions/src/System/IO/Path.Windows.cs
-    startLine: 101
-  assemblies:
-  - System.Runtime.Extensions.CoreCLR
-  namespace: System.IO
-  summary: Returns the absolute path for the specified path string.
-  syntax:
-    content: public static string GetFullPath(string path)
-    content.vb: Public Shared Function GetFullPath(path As String) As String
-    parameters:
-    - id: path
-      type: System.String
-      description: The file or directory for which to obtain absolute path information.
-    return:
-      type: System.String
-      description: The fully qualified location of *path*, such as "C:\MyFile.txt".
-  exceptions:
-  - type: System.ArgumentException
-    description: '*path* is a zero-length string, contains only white space, or contains one or more of the invalid characters defined in @''System.IO.Path.GetInvalidPathChars''.-or- The system could not retrieve the absolute path.'
-  - type: System.Security.SecurityException
-    description: The caller does not have the required permissions.
-  - type: System.ArgumentNullException
-    description: '*path* is null.'
-  - type: System.NotSupportedException
-    description: '*path* contains a colon (":") that is not part of a volume identifier (for example, "c:\").'
-  - type: System.IO.PathTooLongException
-    description: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
-- uid: System.IO.Path.GetTempPath
-  id: GetTempPath
-  parent: System.IO.Path
-  href: System.IO.Path.yml
-  name: GetTempPath()
-  fullName: System.IO.Path.GetTempPath()
-  type: Method
-  source:
-    remote: *o1
-    path: src/System.Runtime.Extensions/src/System/IO/Path.Windows.cs
-    startLine: 615
-  assemblies:
-  - System.Runtime.Extensions.CoreCLR
-  namespace: System.IO
-  summary: Returns the path of the current user's temporary folder.
-  syntax:
-    content: public static string GetTempPath()
-    content.vb: Public Shared Function GetTempPath As String
-    return:
-      type: System.String
-      description: The path to the temporary folder, ending with a backslash.
-  exceptions:
-  - type: System.Security.SecurityException
-    description: The caller does not have the required permissions.
-- uid: System.IO.Path.IsPathRooted(System.String)
-  id: IsPathRooted(System.String)
-  parent: System.IO.Path
-  href: System.IO.Path.yml
-  name: IsPathRooted(String)
-  fullName: System.IO.Path.IsPathRooted(System.String)
-  type: Method
-  source:
-    remote: *o1
-    path: src/System.Runtime.Extensions/src/System/IO/Path.Windows.cs
-    startLine: 641
-  assemblies:
-  - System.Runtime.Extensions.CoreCLR
-  namespace: System.IO
-  summary: Gets a value indicating whether the specified path string contains a root.
-  syntax:
-    content: public static bool IsPathRooted(string path)
-    content.vb: Public Shared Function IsPathRooted(path As String) As Boolean
-    parameters:
-    - id: path
-      type: System.String
-      description: The path to test.
-    return:
-      type: System.Boolean
-      description: true if *path* contains a root; otherwise, false.
-  exceptions:
-  - type: System.ArgumentException
-    description: '*path* contains one or more of the invalid characters defined in @''System.IO.Path.GetInvalidPathChars''.'
 references:
 - uid: System.IO
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -635,138 +692,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -775,7 +836,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -830,13 +891,17 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Char[]
-  isExternal: true
+  isExternal: false
+  href: System.Char.yml
   name: Char[]
   name.vb: Char()
   fullName: System.Char[]
@@ -845,23 +910,26 @@ references:
   - uid: System.Char
     name: Char
     fullName: System.Char
-    isExternal: true
+    href: System.Char.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Char
     name: Char
     fullName: System.Char
-    isExternal: true
+    href: System.Char.yml
   - name: ()
     fullName: ()
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.String[]
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String[]
   name.vb: String()
   fullName: System.String[]
@@ -870,13 +938,13 @@ references:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: ()
     fullName: ()

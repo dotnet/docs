@@ -69,34 +69,81 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/System.Runtime/src/System/ComponentModel/EditorBrowsableAttribute.cs
+      path: src/Microsoft.Win32.Primitives/src/System/ComponentModel/Win32Exception.Windows.cs
       branch: master
       repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Runtime/src/System/ComponentModel/EditorBrowsableAttribute.cs
-    startLine: 3
+    path: src/Microsoft.Win32.Primitives/src/System/ComponentModel/Win32Exception.Windows.cs
+    startLine: 5
   assemblies:
-  - System.Runtime.CoreCLR
+  - Microsoft.Win32.Primitives
   summary: The @'System.ComponentModel' namespace provides classes that are used to implement the run-time and design-time behavior of components and controls. This namespace includes the base classes and interfaces for implementing attributes and type converters, binding to data sources, and licensing components.
 references:
-- uid: System.ComponentModel.DefaultValueAttribute
+- uid: System.ComponentModel.Win32Exception
   isExternal: false
-  href: System.ComponentModel.DefaultValueAttribute.yml
-  name: DefaultValueAttribute
-  fullName: System.ComponentModel.DefaultValueAttribute
+  href: System.ComponentModel.Win32Exception.yml
+  name: Win32Exception
+  fullName: System.ComponentModel.Win32Exception
   type: Class
-- uid: System.ComponentModel.EditorBrowsableAttribute
-  isExternal: false
-  href: System.ComponentModel.EditorBrowsableAttribute.yml
-  name: EditorBrowsableAttribute
-  fullName: System.ComponentModel.EditorBrowsableAttribute
-  type: Class
-- uid: System.ComponentModel.EditorBrowsableState
+- uid: System.ComponentModel.ComponentCollection
   parent: System.ComponentModel
   isExternal: false
-  href: System.ComponentModel.EditorBrowsableState.yml
-  name: EditorBrowsableState
-  fullName: System.ComponentModel.EditorBrowsableState
-  type: Enum
+  href: System.ComponentModel.ComponentCollection.yml
+  name: ComponentCollection
+  fullName: System.ComponentModel.ComponentCollection
+  type: Class
+- uid: System.ComponentModel.IComponent
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.IComponent.yml
+  name: IComponent
+  fullName: System.ComponentModel.IComponent
+  type: Interface
+- uid: System.ComponentModel.IContainer
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.IContainer.yml
+  name: IContainer
+  fullName: System.ComponentModel.IContainer
+  type: Interface
+- uid: System.ComponentModel.ISite
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.ISite.yml
+  name: ISite
+  fullName: System.ComponentModel.ISite
+  type: Interface
+- uid: System.ComponentModel.CancelEventArgs
+  isExternal: false
+  href: System.ComponentModel.CancelEventArgs.yml
+  name: CancelEventArgs
+  fullName: System.ComponentModel.CancelEventArgs
+  type: Class
+  summary: EventArgs used to describe a cancel event.
+- uid: System.ComponentModel.IChangeTracking
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.IChangeTracking.yml
+  name: IChangeTracking
+  fullName: System.ComponentModel.IChangeTracking
+  type: Interface
+  summary: >-
+    Defines the mechanism for querying the object for changes and resetting of
+
+    the changed status.
+- uid: System.ComponentModel.IEditableObject
+  isExternal: false
+  href: System.ComponentModel.IEditableObject.yml
+  name: IEditableObject
+  fullName: System.ComponentModel.IEditableObject
+  type: Interface
+  summary: Provides functionality to commit or rollback changes to an object that is used as a data source.
+- uid: System.ComponentModel.IRevertibleChangeTracking
+  isExternal: false
+  href: System.ComponentModel.IRevertibleChangeTracking.yml
+  name: IRevertibleChangeTracking
+  fullName: System.ComponentModel.IRevertibleChangeTracking
+  type: Interface
+  summary: Provides support for rolling back the changes
 - uid: System.ComponentModel.DataErrorsChangedEventArgs
   isExternal: false
   href: System.ComponentModel.DataErrorsChangedEventArgs.yml
@@ -137,6 +184,7 @@ references:
   fullName: System.ComponentModel.PropertyChangedEventHandler
   type: Delegate
 - uid: System.ComponentModel.PropertyChangingEventArgs
+  parent: System.ComponentModel
   isExternal: false
   href: System.ComponentModel.PropertyChangingEventArgs.yml
   name: PropertyChangingEventArgs
@@ -149,78 +197,6 @@ references:
   name: PropertyChangingEventHandler
   fullName: System.ComponentModel.PropertyChangingEventHandler
   type: Delegate
-- uid: System.ComponentModel.AsyncCompletedEventHandler
-  isExternal: false
-  href: System.ComponentModel.AsyncCompletedEventHandler.yml
-  name: AsyncCompletedEventHandler
-  fullName: System.ComponentModel.AsyncCompletedEventHandler
-  type: Delegate
-- uid: System.ComponentModel.AsyncCompletedEventArgs
-  parent: System.ComponentModel
-  isExternal: false
-  href: System.ComponentModel.AsyncCompletedEventArgs.yml
-  name: AsyncCompletedEventArgs
-  fullName: System.ComponentModel.AsyncCompletedEventArgs
-  type: Class
-- uid: System.ComponentModel.AsyncOperation
-  isExternal: false
-  href: System.ComponentModel.AsyncOperation.yml
-  name: AsyncOperation
-  fullName: System.ComponentModel.AsyncOperation
-  type: Class
-- uid: System.ComponentModel.AsyncOperationManager
-  isExternal: false
-  href: System.ComponentModel.AsyncOperationManager.yml
-  name: AsyncOperationManager
-  fullName: System.ComponentModel.AsyncOperationManager
-  type: Class
-- uid: System.ComponentModel.ProgressChangedEventHandler
-  isExternal: false
-  href: System.ComponentModel.ProgressChangedEventHandler.yml
-  name: ProgressChangedEventHandler
-  fullName: System.ComponentModel.ProgressChangedEventHandler
-  type: Delegate
-- uid: System.ComponentModel.ProgressChangedEventArgs
-  parent: System.ComponentModel
-  isExternal: false
-  href: System.ComponentModel.ProgressChangedEventArgs.yml
-  name: ProgressChangedEventArgs
-  fullName: System.ComponentModel.ProgressChangedEventArgs
-  type: Class
-- uid: System.ComponentModel.BackgroundWorker
-  isExternal: false
-  href: System.ComponentModel.BackgroundWorker.yml
-  name: BackgroundWorker
-  fullName: System.ComponentModel.BackgroundWorker
-  type: Class
-- uid: System.ComponentModel.DoWorkEventHandler
-  parent: System.ComponentModel
-  isExternal: false
-  href: System.ComponentModel.DoWorkEventHandler.yml
-  name: DoWorkEventHandler
-  fullName: System.ComponentModel.DoWorkEventHandler
-  type: Delegate
-- uid: System.ComponentModel.DoWorkEventArgs
-  parent: System.ComponentModel
-  isExternal: false
-  href: System.ComponentModel.DoWorkEventArgs.yml
-  name: DoWorkEventArgs
-  fullName: System.ComponentModel.DoWorkEventArgs
-  type: Class
-- uid: System.ComponentModel.RunWorkerCompletedEventHandler
-  parent: System.ComponentModel
-  isExternal: false
-  href: System.ComponentModel.RunWorkerCompletedEventHandler.yml
-  name: RunWorkerCompletedEventHandler
-  fullName: System.ComponentModel.RunWorkerCompletedEventHandler
-  type: Delegate
-- uid: System.ComponentModel.RunWorkerCompletedEventArgs
-  parent: System.ComponentModel
-  isExternal: false
-  href: System.ComponentModel.RunWorkerCompletedEventArgs.yml
-  name: RunWorkerCompletedEventArgs
-  fullName: System.ComponentModel.RunWorkerCompletedEventArgs
-  type: Class
 - uid: System.ComponentModel.ArrayConverter
   isExternal: false
   href: System.ComponentModel.ArrayConverter.yml
@@ -228,6 +204,7 @@ references:
   fullName: System.ComponentModel.ArrayConverter
   type: Class
 - uid: System.ComponentModel.BaseNumberConverter
+  parent: System.ComponentModel
   isExternal: false
   href: System.ComponentModel.BaseNumberConverter.yml
   name: BaseNumberConverter
@@ -405,68 +382,99 @@ references:
   name: UInt64Converter
   fullName: System.ComponentModel.UInt64Converter
   type: Class
-- uid: System.ComponentModel.Win32Exception
+- uid: System.ComponentModel.DefaultValueAttribute
   isExternal: false
-  href: System.ComponentModel.Win32Exception.yml
-  name: Win32Exception
-  fullName: System.ComponentModel.Win32Exception
+  href: System.ComponentModel.DefaultValueAttribute.yml
+  name: DefaultValueAttribute
+  fullName: System.ComponentModel.DefaultValueAttribute
   type: Class
-- uid: System.ComponentModel.ComponentCollection
+- uid: System.ComponentModel.EditorBrowsableAttribute
   isExternal: false
-  href: System.ComponentModel.ComponentCollection.yml
-  name: ComponentCollection
-  fullName: System.ComponentModel.ComponentCollection
+  href: System.ComponentModel.EditorBrowsableAttribute.yml
+  name: EditorBrowsableAttribute
+  fullName: System.ComponentModel.EditorBrowsableAttribute
   type: Class
-- uid: System.ComponentModel.IComponent
-  isExternal: false
-  href: System.ComponentModel.IComponent.yml
-  name: IComponent
-  fullName: System.ComponentModel.IComponent
-  type: Interface
-- uid: System.ComponentModel.IContainer
-  isExternal: false
-  href: System.ComponentModel.IContainer.yml
-  name: IContainer
-  fullName: System.ComponentModel.IContainer
-  type: Interface
-- uid: System.ComponentModel.ISite
+- uid: System.ComponentModel.EditorBrowsableState
   parent: System.ComponentModel
   isExternal: false
-  href: System.ComponentModel.ISite.yml
-  name: ISite
-  fullName: System.ComponentModel.ISite
-  type: Interface
-- uid: System.ComponentModel.CancelEventArgs
+  href: System.ComponentModel.EditorBrowsableState.yml
+  name: EditorBrowsableState
+  fullName: System.ComponentModel.EditorBrowsableState
+  type: Enum
+- uid: System.ComponentModel.AsyncCompletedEventHandler
   isExternal: false
-  href: System.ComponentModel.CancelEventArgs.yml
-  name: CancelEventArgs
-  fullName: System.ComponentModel.CancelEventArgs
+  href: System.ComponentModel.AsyncCompletedEventHandler.yml
+  name: AsyncCompletedEventHandler
+  fullName: System.ComponentModel.AsyncCompletedEventHandler
+  type: Delegate
+- uid: System.ComponentModel.AsyncCompletedEventArgs
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.AsyncCompletedEventArgs.yml
+  name: AsyncCompletedEventArgs
+  fullName: System.ComponentModel.AsyncCompletedEventArgs
   type: Class
-  summary: EventArgs used to describe a cancel event.
-- uid: System.ComponentModel.IChangeTracking
+- uid: System.ComponentModel.AsyncOperation
+  parent: System.ComponentModel
   isExternal: false
-  href: System.ComponentModel.IChangeTracking.yml
-  name: IChangeTracking
-  fullName: System.ComponentModel.IChangeTracking
-  type: Interface
-  summary: >-
-    Defines the mechanism for querying the object for changes and resetting of
-
-    the changed status.
-- uid: System.ComponentModel.IEditableObject
+  href: System.ComponentModel.AsyncOperation.yml
+  name: AsyncOperation
+  fullName: System.ComponentModel.AsyncOperation
+  type: Class
+- uid: System.ComponentModel.AsyncOperationManager
   isExternal: false
-  href: System.ComponentModel.IEditableObject.yml
-  name: IEditableObject
-  fullName: System.ComponentModel.IEditableObject
-  type: Interface
-  summary: Provides functionality to commit or rollback changes to an object that is used as a data source.
-- uid: System.ComponentModel.IRevertibleChangeTracking
+  href: System.ComponentModel.AsyncOperationManager.yml
+  name: AsyncOperationManager
+  fullName: System.ComponentModel.AsyncOperationManager
+  type: Class
+- uid: System.ComponentModel.ProgressChangedEventHandler
+  parent: System.ComponentModel
   isExternal: false
-  href: System.ComponentModel.IRevertibleChangeTracking.yml
-  name: IRevertibleChangeTracking
-  fullName: System.ComponentModel.IRevertibleChangeTracking
-  type: Interface
-  summary: Provides support for rolling back the changes
+  href: System.ComponentModel.ProgressChangedEventHandler.yml
+  name: ProgressChangedEventHandler
+  fullName: System.ComponentModel.ProgressChangedEventHandler
+  type: Delegate
+- uid: System.ComponentModel.ProgressChangedEventArgs
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.ProgressChangedEventArgs.yml
+  name: ProgressChangedEventArgs
+  fullName: System.ComponentModel.ProgressChangedEventArgs
+  type: Class
+- uid: System.ComponentModel.BackgroundWorker
+  isExternal: false
+  href: System.ComponentModel.BackgroundWorker.yml
+  name: BackgroundWorker
+  fullName: System.ComponentModel.BackgroundWorker
+  type: Class
+- uid: System.ComponentModel.DoWorkEventHandler
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.DoWorkEventHandler.yml
+  name: DoWorkEventHandler
+  fullName: System.ComponentModel.DoWorkEventHandler
+  type: Delegate
+- uid: System.ComponentModel.DoWorkEventArgs
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.DoWorkEventArgs.yml
+  name: DoWorkEventArgs
+  fullName: System.ComponentModel.DoWorkEventArgs
+  type: Class
+- uid: System.ComponentModel.RunWorkerCompletedEventHandler
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.RunWorkerCompletedEventHandler.yml
+  name: RunWorkerCompletedEventHandler
+  fullName: System.ComponentModel.RunWorkerCompletedEventHandler
+  type: Delegate
+- uid: System.ComponentModel.RunWorkerCompletedEventArgs
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.RunWorkerCompletedEventArgs.yml
+  name: RunWorkerCompletedEventArgs
+  fullName: System.ComponentModel.RunWorkerCompletedEventArgs
+  type: Class
 - uid: System.ComponentModel
   isExternal: false
   name: System.ComponentModel

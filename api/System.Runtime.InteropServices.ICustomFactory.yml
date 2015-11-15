@@ -55,15 +55,20 @@ references:
   type: Namespace
 - uid: System.Type
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Type.yml
   name: Type
   fullName: System.Type
+  type: Class
 - uid: System.MarshalByRefObject
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.MarshalByRefObject.yml
   name: MarshalByRefObject
   fullName: System.MarshalByRefObject
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

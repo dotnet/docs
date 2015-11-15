@@ -5,28 +5,55 @@ items:
   children:
   - System.Security.Cryptography.X509Certificates.X509Certificate.#ctor
   - System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.Byte[])
+  - System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.Byte[],System.Security.SecureString)
+  - System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.Byte[],System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
   - System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.Byte[],System.String)
   - System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
   - System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.IntPtr)
+  - System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate)
   - System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.String)
+  - System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.String,System.Security.SecureString)
+  - System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
   - System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.String,System.String)
   - System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  - System.Security.Cryptography.X509Certificates.X509Certificate.CreateFromCertFile(System.String)
+  - System.Security.Cryptography.X509Certificates.X509Certificate.CreateFromSignedFile(System.String)
+  - System.Security.Cryptography.X509Certificates.X509Certificate.CreateHexString(System.Byte[])
   - System.Security.Cryptography.X509Certificates.X509Certificate.Dispose
   - System.Security.Cryptography.X509Certificates.X509Certificate.Dispose(System.Boolean)
   - System.Security.Cryptography.X509Certificates.X509Certificate.Equals(System.Object)
   - System.Security.Cryptography.X509Certificates.X509Certificate.Equals(System.Security.Cryptography.X509Certificates.X509Certificate)
   - System.Security.Cryptography.X509Certificates.X509Certificate.Export(System.Security.Cryptography.X509Certificates.X509ContentType)
+  - System.Security.Cryptography.X509Certificates.X509Certificate.Export(System.Security.Cryptography.X509Certificates.X509ContentType,System.Security.SecureString)
   - System.Security.Cryptography.X509Certificates.X509Certificate.Export(System.Security.Cryptography.X509Certificates.X509ContentType,System.String)
+  - System.Security.Cryptography.X509Certificates.X509Certificate.FormatDate(System.DateTime)
   - System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHash
+  - System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHashString
+  - System.Security.Cryptography.X509Certificates.X509Certificate.GetEffectiveDateString
+  - System.Security.Cryptography.X509Certificates.X509Certificate.GetExpirationDateString
   - System.Security.Cryptography.X509Certificates.X509Certificate.GetFormat
   - System.Security.Cryptography.X509Certificates.X509Certificate.GetHashCode
+  - System.Security.Cryptography.X509Certificates.X509Certificate.GetIssuerName
   - System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithm
   - System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithmParameters
   - System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithmParametersString
+  - System.Security.Cryptography.X509Certificates.X509Certificate.GetName
   - System.Security.Cryptography.X509Certificates.X509Certificate.GetPublicKey
+  - System.Security.Cryptography.X509Certificates.X509Certificate.GetPublicKeyString
+  - System.Security.Cryptography.X509Certificates.X509Certificate.GetRawCertData
+  - System.Security.Cryptography.X509Certificates.X509Certificate.GetRawCertDataString
   - System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumber
+  - System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumberString
   - System.Security.Cryptography.X509Certificates.X509Certificate.Handle
+  - System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.Byte[])
+  - System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.Byte[],System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  - System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  - System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.String)
+  - System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  - System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
   - System.Security.Cryptography.X509Certificates.X509Certificate.Issuer
+  - System.Security.Cryptography.X509Certificates.X509Certificate.Reset
   - System.Security.Cryptography.X509Certificates.X509Certificate.Subject
   - System.Security.Cryptography.X509Certificates.X509Certificate.ToString
   - System.Security.Cryptography.X509Certificates.X509Certificate.ToString(System.Boolean)
@@ -36,22 +63,24 @@ items:
   type: Class
   source:
     remote: &o0
-      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+      path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 15
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 43
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Provides methods that help you use X.509 v.3 certificates.
   syntax:
-    content: 'public class X509Certificate : IDisposable'
-    content.vb: Public Class X509Certificate Implements IDisposable
+    content: 'public class X509Certificate : IDisposable, IDeserializationCallback, ISerializable'
+    content.vb: Public Class X509Certificate Implements IDisposable, IDeserializationCallback, ISerializable
   inheritance:
   - System.Object
   implements:
   - System.IDisposable
+  - System.Runtime.Serialization.IDeserializationCallback
+  - System.Runtime.Serialization.ISerializable
   inheritedMembers:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
@@ -66,10 +95,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 17
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 72
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class.
   syntax:
@@ -86,10 +115,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 22
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 77
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class defined from a sequence of bytes representing an X.509v3 certificate.
   syntax:
@@ -115,10 +144,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 28
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 82
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class using a byte array and a password.
   syntax:
@@ -136,6 +165,38 @@ items:
     description: An error with the certificate occurs. For example:The certificate file does not exist.The certificate is invalid.The certificate's password is incorrect.
   - type: System.ArgumentException
     description: The *rawData* parameter is null.-or-The length of the *rawData* parameter is 0.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.Byte[],System.Security.SecureString)
+  id: '#ctor(System.Byte[],System.Security.SecureString)'
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: X509Certificate(Byte[], SecureString)
+  name.vb: X509Certificate(Byte(), SecureString)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.X509Certificate(System.Byte[], System.Security.SecureString)
+  fullName.vb: System.Security.Cryptography.X509Certificates.X509Certificate.X509Certificate(System.Byte(), System.Security.SecureString)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 93
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class using a byte array and a password.
+  syntax:
+    content: public X509Certificate(byte[] rawData, SecureString password)
+    content.vb: Public Sub New(rawData As Byte(), password As SecureString)
+    parameters:
+    - id: rawData
+      type: System.Byte[]
+      description: A byte array that contains data from an X.509 certificate.
+    - id: password
+      type: System.Security.SecureString
+      description: The password required to access the X.509 certificate data.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: An error with the certificate occurs. For example:The certificate file does not exist.The certificate is invalid.The certificate's password is incorrect.
+  - type: System.ArgumentException
+    description: The *rawData* parameter is null.-or-The length of the *rawData* parameter is 0.
 - uid: System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
   id: '#ctor(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)'
   parent: System.Security.Cryptography.X509Certificates.X509Certificate
@@ -147,10 +208,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 33
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 98
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class using a byte array, a password, and a key storage flag.
   syntax:
@@ -171,33 +232,41 @@ items:
     description: An error with the certificate occurs. For example:The certificate file does not exist.The certificate is invalid.The certificate's password is incorrect.
   - type: System.ArgumentException
     description: The *rawData* parameter is null.-or-The length of the *rawData* parameter is 0.
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.IntPtr)
-  id: '#ctor(System.IntPtr)'
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.Byte[],System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  id: '#ctor(System.Byte[],System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)'
   parent: System.Security.Cryptography.X509Certificates.X509Certificate
   href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: X509Certificate(IntPtr)
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.X509Certificate(System.IntPtr)
+  name: X509Certificate(Byte[], SecureString, X509KeyStorageFlags)
+  name.vb: X509Certificate(Byte(), SecureString, X509KeyStorageFlags)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.X509Certificate(System.Byte[], System.Security.SecureString, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  fullName.vb: System.Security.Cryptography.X509Certificates.X509Certificate.X509Certificate(System.Byte(), System.Security.SecureString, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
   type: Constructor
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 43
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 109
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
-  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class using a handle to an unmanaged PCCERT_CONTEXT structure.
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class using a byte array, a password, and a key storage flag.
   syntax:
-    content: public X509Certificate(IntPtr handle)
-    content.vb: Public Sub New(handle As IntPtr)
+    content: public X509Certificate(byte[] rawData, SecureString password, X509KeyStorageFlags keyStorageFlags)
+    content.vb: Public Sub New(rawData As Byte(), password As SecureString, keyStorageFlags As X509KeyStorageFlags)
     parameters:
-    - id: handle
-      type: System.IntPtr
-      description: A handle to an unmanaged PCCERT_CONTEXT structure.
+    - id: rawData
+      type: System.Byte[]
+      description: A byte array that contains data from an X.509 certificate.
+    - id: password
+      type: System.Security.SecureString
+      description: The password required to access the X.509 certificate data.
+    - id: keyStorageFlags
+      type: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+      description: A bitwise combination of the enumeration values that control where and how to import the certificate.
   exceptions:
   - type: System.Security.Cryptography.CryptographicException
     description: An error with the certificate occurs. For example:The certificate file does not exist.The certificate is invalid.The certificate's password is incorrect.
   - type: System.ArgumentException
-    description: The handle parameter does not represent a valid PCCERT_CONTEXT structure.
+    description: The *rawData* parameter is null.-or-The length of the *rawData* parameter is 0.
 - uid: System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.String)
   id: '#ctor(System.String)'
   parent: System.Security.Cryptography.X509Certificates.X509Certificate
@@ -207,10 +276,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 54
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 115
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class using the name of a PKCS7 signed file.
   syntax:
@@ -234,10 +303,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 59
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 124
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class using the name of a PKCS7 signed file and a password to access the certificate.
   syntax:
@@ -255,6 +324,36 @@ items:
     description: An error with the certificate occurs. For example:The certificate file does not exist.The certificate is invalid.The certificate's password is incorrect.
   - type: System.ArgumentException
     description: The *fileName* parameter is null.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.String,System.Security.SecureString)
+  id: '#ctor(System.String,System.Security.SecureString)'
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: X509Certificate(String, SecureString)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.X509Certificate(System.String, System.Security.SecureString)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 133
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class using a certificate file name and a password.
+  syntax:
+    content: public X509Certificate(string fileName, SecureString password)
+    content.vb: Public Sub New(fileName As String, password As SecureString)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: The name of a certificate file.
+    - id: password
+      type: System.Security.SecureString
+      description: The password required to access the X.509 certificate data.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: An error with the certificate occurs. For example:The certificate file does not exist.The certificate is invalid.The certificate's password is incorrect.
+  - type: System.ArgumentException
+    description: The *fileName* parameter is null.
 - uid: System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
   id: '#ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)'
   parent: System.Security.Cryptography.X509Certificates.X509Certificate
@@ -264,10 +363,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 64
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 140
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class using the name of a PKCS7 signed file, a password to access the certificate, and a key storage flag.
   syntax:
@@ -288,6 +387,174 @@ items:
     description: An error with the certificate occurs. For example:The certificate file does not exist.The certificate is invalid.The certificate's password is incorrect.
   - type: System.ArgumentException
     description: The *fileName* parameter is null.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  id: '#ctor(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)'
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: X509Certificate(String, SecureString, X509KeyStorageFlags)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.X509Certificate(System.String, System.Security.SecureString, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 149
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class using a certificate file name, a password, and a key storage flag.
+  syntax:
+    content: public X509Certificate(string fileName, SecureString password, X509KeyStorageFlags keyStorageFlags)
+    content.vb: Public Sub New(fileName As String, password As SecureString, keyStorageFlags As X509KeyStorageFlags)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: The name of a certificate file.
+    - id: password
+      type: System.Security.SecureString
+      description: The password required to access the X.509 certificate data.
+    - id: keyStorageFlags
+      type: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+      description: A bitwise combination of the enumeration values that control where and how to import the certificate.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: An error with the certificate occurs. For example:The certificate file does not exist.The certificate is invalid.The certificate's password is incorrect.
+  - type: System.ArgumentException
+    description: The *fileName* parameter is null.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.IntPtr)
+  id: '#ctor(System.IntPtr)'
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: X509Certificate(IntPtr)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.X509Certificate(System.IntPtr)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 156
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class using a handle to an unmanaged PCCERT_CONTEXT structure.
+  syntax:
+    content: public X509Certificate(IntPtr handle)
+    content.vb: Public Sub New(handle As IntPtr)
+    parameters:
+    - id: handle
+      type: System.IntPtr
+      description: A handle to an unmanaged PCCERT_CONTEXT structure.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: An error with the certificate occurs. For example:The certificate file does not exist.The certificate is invalid.The certificate's password is incorrect.
+  - type: System.ArgumentException
+    description: The handle parameter does not represent a valid PCCERT_CONTEXT structure.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate)
+  id: '#ctor(System.Security.Cryptography.X509Certificates.X509Certificate)'
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: X509Certificate(X509Certificate)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.X509Certificate(System.Security.Cryptography.X509Certificates.X509Certificate)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 168
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class using another @'System.Security.Cryptography.X509Certificates.X509Certificate' class.
+  syntax:
+    content: public X509Certificate(X509Certificate cert)
+    content.vb: Public Sub New(cert As X509Certificate)
+    parameters:
+    - id: cert
+      type: System.Security.Cryptography.X509Certificates.X509Certificate
+      description: A @'System.Security.Cryptography.X509Certificates.X509Certificate' class from which to initialize this class.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: An error with the certificate occurs. For example:The certificate file does not exist.The certificate is invalid.The certificate's password is incorrect.
+  - type: System.ArgumentNullException
+    description: The value of the *cert* parameter is null.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: X509Certificate(SerializationInfo, StreamingContext)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.X509Certificate(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 180
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509Certificate' class using a @'System.Runtime.Serialization.SerializationInfo' object and a @'System.Runtime.Serialization.StreamingContext' structure.
+  syntax:
+    content: public X509Certificate(SerializationInfo info, StreamingContext context)
+    content.vb: Public Sub New(info As SerializationInfo, context As StreamingContext)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: A @'System.Runtime.Serialization.SerializationInfo' object that describes serialization information.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: A @'System.Runtime.Serialization.StreamingContext' structure that describes how serialization should be performed.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: An error with the certificate occurs. For example:The certificate file does not exist.The certificate is invalid.The certificate's password is incorrect.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.CreateFromCertFile(System.String)
+  id: CreateFromCertFile(System.String)
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: CreateFromCertFile(String)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.CreateFromCertFile(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 187
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Creates an X.509v3 certificate from the specified PKCS7 signed file.
+  syntax:
+    content: public static X509Certificate CreateFromCertFile(string filename)
+    content.vb: Public Shared Function CreateFromCertFile(filename As String) As X509Certificate
+    parameters:
+    - id: filename
+      type: System.String
+      description: The path of the PKCS7 signed file from which to create the X.509 certificate.
+    return:
+      type: System.Security.Cryptography.X509Certificates.X509Certificate
+      description: The newly created X.509 certificate.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *filename* parameter is null.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.CreateFromSignedFile(System.String)
+  id: CreateFromSignedFile(System.String)
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: CreateFromSignedFile(String)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.CreateFromSignedFile(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 193
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Creates an X.509v3 certificate from the specified signed file.
+  syntax:
+    content: public static X509Certificate CreateFromSignedFile(string filename)
+    content.vb: Public Shared Function CreateFromSignedFile(filename As String) As X509Certificate
+    parameters:
+    - id: filename
+      type: System.String
+      description: The path of the signed file from which to create the X.509 certificate.
+    return:
+      type: System.Security.Cryptography.X509Certificates.X509Certificate
+      description: The newly created X.509 certificate.
 - uid: System.Security.Cryptography.X509Certificates.X509Certificate.Handle
   id: Handle
   parent: System.Security.Cryptography.X509Certificates.X509Certificate
@@ -297,10 +564,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 74
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 197
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Gets a handle to a Microsoft Cryptographic API certificate context described by an unmanaged PCCERT_CONTEXT structure.
   syntax:
@@ -310,96 +577,342 @@ items:
     return:
       type: System.IntPtr
       description: An @'System.IntPtr' structure that represents an unmanaged PCCERT_CONTEXT structure.
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Issuer
-  id: Issuer
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetName
+  id: GetName
   parent: System.Security.Cryptography.X509Certificates.X509Certificate
   href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: Issuer
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Issuer
-  type: Property
-  source:
-    remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 85
-  assemblies:
-  - System.Security.Cryptography.X509Certificates
-  namespace: System.Security.Cryptography.X509Certificates
-  summary: Gets the name of the certificate authority that issued the X.509v3 certificate.
-  syntax:
-    content: public string Issuer { get; }
-    content.vb: Public ReadOnly Property Issuer As String
-    parameters: []
-    return:
-      type: System.String
-      description: The name of the certificate authority that issued the X.509v3 certificate.
-  exceptions:
-  - type: System.Security.Cryptography.CryptographicException
-    description: The certificate handle is invalid.
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Subject
-  id: Subject
-  parent: System.Security.Cryptography.X509Certificates.X509Certificate
-  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: Subject
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Subject
-  type: Property
-  source:
-    remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 98
-  assemblies:
-  - System.Security.Cryptography.X509Certificates
-  namespace: System.Security.Cryptography.X509Certificates
-  summary: Gets the subject distinguished name from the certificate.
-  syntax:
-    content: public string Subject { get; }
-    content.vb: Public ReadOnly Property Subject As String
-    parameters: []
-    return:
-      type: System.String
-      description: The subject distinguished name from the certificate.
-  exceptions:
-  - type: System.Security.Cryptography.CryptographicException
-    description: The certificate handle is invalid.
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Dispose
-  id: Dispose
-  parent: System.Security.Cryptography.X509Certificates.X509Certificate
-  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: Dispose()
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Dispose()
+  name: GetName()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetName()
   type: Method
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 111
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 208
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
-  summary: Releases all resources used by the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object.
+  summary: Returns the name of the principal to which the certificate was issued.
   syntax:
-    content: public void Dispose()
-    content.vb: Public Sub Dispose
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Dispose(System.Boolean)
-  id: Dispose(System.Boolean)
+    content: public virtual string GetName()
+    content.vb: Public Overridable Function GetName As String
+    return:
+      type: System.String
+      description: The name of the principal to which the certificate was issued.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: The certificate context is invalid.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetIssuerName
+  id: GetIssuerName
   parent: System.Security.Cryptography.X509Certificates.X509Certificate
   href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: Dispose(Boolean)
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Dispose(System.Boolean)
+  name: GetIssuerName()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetIssuerName()
   type: Method
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 117
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 216
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
-  summary: Releases all of the unmanaged resources used by this @'System.Security.Cryptography.X509Certificates.X509Certificate' and optionally releases the managed resources.
+  summary: Returns the name of the certification authority that issued the X.509v3 certificate.
   syntax:
-    content: protected virtual void Dispose(bool disposing)
-    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
-    parameters:
-    - id: disposing
-      type: System.Boolean
-      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
+    content: public virtual string GetIssuerName()
+    content.vb: Public Overridable Function GetIssuerName As String
+    return:
+      type: System.String
+      description: The name of the certification authority that issued the X.509 certificate.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: An error with the certificate occurs. For example:The certificate file does not exist.The certificate is invalid.The certificate's password is incorrect.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumber
+  id: GetSerialNumber
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetSerialNumber()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumber()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 224
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the serial number of the X.509v3 certificate as an array of bytes.
+  syntax:
+    content: public virtual byte[] GetSerialNumber()
+    content.vb: Public Overridable Function GetSerialNumber As Byte()
+    return:
+      type: System.Byte[]
+      description: The serial number of the X.509 certificate as an array of bytes.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: The certificate context is invalid.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumberString
+  id: GetSerialNumberString
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetSerialNumberString()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumberString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 233
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the serial number of the X.509v3 certificate as a hexadecimal string.
+  syntax:
+    content: public virtual string GetSerialNumberString()
+    content.vb: Public Overridable Function GetSerialNumberString As String
+    return:
+      type: System.String
+      description: The serial number of the X.509 certificate as a hexadecimal string.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithmParameters
+  id: GetKeyAlgorithmParameters
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetKeyAlgorithmParameters()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithmParameters()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 237
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the key algorithm parameters for the X.509v3 certificate as an array of bytes.
+  syntax:
+    content: public virtual byte[] GetKeyAlgorithmParameters()
+    content.vb: Public Overridable Function GetKeyAlgorithmParameters As Byte()
+    return:
+      type: System.Byte[]
+      description: The key algorithm parameters for the X.509 certificate as an array of bytes.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: The certificate context is invalid.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithmParametersString
+  id: GetKeyAlgorithmParametersString
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetKeyAlgorithmParametersString()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithmParametersString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 247
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the key algorithm parameters for the X.509v3 certificate as a hexadecimal string.
+  syntax:
+    content: public virtual string GetKeyAlgorithmParametersString()
+    content.vb: Public Overridable Function GetKeyAlgorithmParametersString As String
+    return:
+      type: System.String
+      description: The key algorithm parameters for the X.509 certificate as a hexadecimal string.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: The certificate context is invalid.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithm
+  id: GetKeyAlgorithm
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetKeyAlgorithm()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithm()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 254
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the key algorithm information for this X.509v3 certificate as a string.
+  syntax:
+    content: public virtual string GetKeyAlgorithm()
+    content.vb: Public Overridable Function GetKeyAlgorithm As String
+    return:
+      type: System.String
+      description: The key algorithm information for this X.509 certificate as a string.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: The certificate context is invalid.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetPublicKey
+  id: GetPublicKey
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetPublicKey()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetPublicKey()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 264
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the public key for the X.509v3 certificate as an array of bytes.
+  syntax:
+    content: public virtual byte[] GetPublicKey()
+    content.vb: Public Overridable Function GetPublicKey As Byte()
+    return:
+      type: System.Byte[]
+      description: The public key for the X.509 certificate as an array of bytes.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: The certificate context is invalid.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetPublicKeyString
+  id: GetPublicKeyString
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetPublicKeyString()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetPublicKeyString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 274
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the public key for the X.509v3 certificate as a hexadecimal string.
+  syntax:
+    content: public virtual string GetPublicKeyString()
+    content.vb: Public Overridable Function GetPublicKeyString As String
+    return:
+      type: System.String
+      description: The public key for the X.509 certificate as a hexadecimal string.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetRawCertData
+  id: GetRawCertData
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetRawCertData()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetRawCertData()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 278
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the raw data for the entire X.509v3 certificate as an array of bytes.
+  syntax:
+    content: public virtual byte[] GetRawCertData()
+    content.vb: Public Overridable Function GetRawCertData As Byte()
+    return:
+      type: System.Byte[]
+      description: A byte array containing the X.509 certificate data.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetRawCertDataString
+  id: GetRawCertDataString
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetRawCertDataString()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetRawCertDataString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 283
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the raw data for the entire X.509v3 certificate as a hexadecimal string.
+  syntax:
+    content: public virtual string GetRawCertDataString()
+    content.vb: Public Overridable Function GetRawCertDataString As String
+    return:
+      type: System.String
+      description: The X.509 certificate data as a hexadecimal string.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHash
+  id: GetCertHash
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetCertHash()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHash()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 287
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the hash value for the X.509v3 certificate as an array of bytes.
+  syntax:
+    content: public virtual byte[] GetCertHash()
+    content.vb: Public Overridable Function GetCertHash As Byte()
+    return:
+      type: System.Byte[]
+      description: The hash value for the X.509 certificate.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHashString
+  id: GetCertHashString
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetCertHashString()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHashString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 292
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the SHA1 hash value for the X.509v3 certificate as a hexadecimal string.
+  syntax:
+    content: public virtual string GetCertHashString()
+    content.vb: Public Overridable Function GetCertHashString As String
+    return:
+      type: System.String
+      description: The hexadecimal string representation of the X.509 certificate hash value.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetEffectiveDateString
+  id: GetEffectiveDateString
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetEffectiveDateString()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetEffectiveDateString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 297
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the effective date of this X.509v3 certificate.
+  syntax:
+    content: public virtual string GetEffectiveDateString()
+    content.vb: Public Overridable Function GetEffectiveDateString As String
+    return:
+      type: System.String
+      description: The effective date for this X.509 certificate.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetExpirationDateString
+  id: GetExpirationDateString
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetExpirationDateString()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetExpirationDateString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 301
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the expiration date of this X.509v3 certificate.
+  syntax:
+    content: public virtual string GetExpirationDateString()
+    content.vb: Public Overridable Function GetExpirationDateString As String
+    return:
+      type: System.String
+      description: The expiration date for this X.509 certificate.
 - uid: System.Security.Cryptography.X509Certificates.X509Certificate.Equals(System.Object)
   id: Equals(System.Object)
   parent: System.Security.Cryptography.X509Certificates.X509Certificate
@@ -409,10 +922,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 128
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 305
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Compares two @'System.Security.Cryptography.X509Certificates.X509Certificate' objects for equality.
   syntax:
@@ -435,10 +948,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 136
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 312
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Compares two @'System.Security.Cryptography.X509Certificates.X509Certificate' objects for equality.
   syntax:
@@ -451,6 +964,351 @@ items:
     return:
       type: System.Boolean
       description: true if the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object is equal to the object specified by the *other* parameter; otherwise, false.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetHashCode
+  id: GetHashCode
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetHashCode()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 329
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the hash code for the X.509v3 certificate as an integer.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: The hash code for the X.509 certificate as an integer.
+  overridden: System.Object.GetHashCode
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.ToString
+  id: ToString
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: ToString()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 342
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns a string representation of the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: A string representation of the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object.
+  overridden: System.Object.ToString
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.ToString(System.Boolean)
+  id: ToString(System.Boolean)
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: ToString(Boolean)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.ToString(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 346
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns a string representation of the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object, with extra information, if specified.
+  syntax:
+    content: public virtual string ToString(bool fVerbose)
+    content.vb: Public Overridable Function ToString(fVerbose As Boolean) As String
+    parameters:
+    - id: fVerbose
+      type: System.Boolean
+      description: true to produce the verbose form of the string representation; otherwise, false.
+    return:
+      type: System.String
+      description: A string representation of the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.FormatDate(System.DateTime)
+  id: FormatDate(System.DateTime)
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: FormatDate(DateTime)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.FormatDate(System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 388
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Converts the specified date and time to a string.
+  syntax:
+    content: protected static string FormatDate(DateTime date)
+    content.vb: Protected Shared Function FormatDate(date As Date) As String
+    parameters:
+    - id: date
+      type: System.DateTime
+      description: The date and time to convert.
+    return:
+      type: System.String
+      description: A string representation of the value of the @'System.DateTime' object.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetFormat
+  id: GetFormat
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: GetFormat()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetFormat()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 407
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns the name of the format of this X.509v3 certificate.
+  syntax:
+    content: public virtual string GetFormat()
+    content.vb: Public Overridable Function GetFormat As String
+    return:
+      type: System.String
+      description: The format of this X.509 certificate.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Issuer
+  id: Issuer
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: Issuer
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Issuer
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 411
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets the name of the certificate authority that issued the X.509v3 certificate.
+  syntax:
+    content: public string Issuer { get; }
+    content.vb: Public ReadOnly Property Issuer As String
+    parameters: []
+    return:
+      type: System.String
+      description: The name of the certificate authority that issued the X.509v3 certificate.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: The certificate handle is invalid.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Subject
+  id: Subject
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: Subject
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Subject
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 422
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets the subject distinguished name from the certificate.
+  syntax:
+    content: public string Subject { get; }
+    content.vb: Public ReadOnly Property Subject As String
+    parameters: []
+    return:
+      type: System.String
+      description: The subject distinguished name from the certificate.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: The certificate handle is invalid.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.Byte[])
+  id: Import(System.Byte[])
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: Import(Byte[])
+  name.vb: Import(Byte())
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.Byte[])
+  fullName.vb: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 434
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Populates the @'System.Security.Cryptography.X509Certificates.X509Certificate' object with data from a byte array.
+  syntax:
+    content: public virtual void Import(byte[] rawData)
+    content.vb: Public Overridable Sub Import(rawData As Byte())
+    parameters:
+    - id: rawData
+      type: System.Byte[]
+      description: A byte array containing data from an X.509 certificate.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *rawData* parameter is null.-or-The length of the *rawData* parameter is 0.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  id: Import(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: Import(Byte[], String, X509KeyStorageFlags)
+  name.vb: Import(Byte(), String, X509KeyStorageFlags)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.Byte[], System.String, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  fullName.vb: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.Byte(), System.String, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 449
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Populates the @'System.Security.Cryptography.X509Certificates.X509Certificate' object using data from a byte array, a password, and flags for determining how the private key is imported.
+  syntax:
+    content: public virtual void Import(byte[] rawData, string password, X509KeyStorageFlags keyStorageFlags)
+    content.vb: Public Overridable Sub Import(rawData As Byte(), password As String, keyStorageFlags As X509KeyStorageFlags)
+    parameters:
+    - id: rawData
+      type: System.Byte[]
+      description: A byte array containing data from an X.509 certificate.
+    - id: password
+      type: System.String
+      description: The password required to access the X.509 certificate data.
+    - id: keyStorageFlags
+      type: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+      description: A bitwise combination of the enumeration values that control where and how to import the certificate.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *rawData* parameter is null.-or-The length of the *rawData* parameter is 0.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.Byte[],System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  id: Import(System.Byte[],System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: Import(Byte[], SecureString, X509KeyStorageFlags)
+  name.vb: Import(Byte(), SecureString, X509KeyStorageFlags)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.Byte[], System.Security.SecureString, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  fullName.vb: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.Byte(), System.Security.SecureString, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 464
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Populates an @'System.Security.Cryptography.X509Certificates.X509Certificate' object using data from a byte array, a password, and a key storage flag.
+  syntax:
+    content: public virtual void Import(byte[] rawData, SecureString password, X509KeyStorageFlags keyStorageFlags)
+    content.vb: Public Overridable Sub Import(rawData As Byte(), password As SecureString, keyStorageFlags As X509KeyStorageFlags)
+    parameters:
+    - id: rawData
+      type: System.Byte[]
+      description: A byte array that contains data from an X.509 certificate.
+    - id: password
+      type: System.Security.SecureString
+      description: The password required to access the X.509 certificate data.
+    - id: keyStorageFlags
+      type: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+      description: A bitwise combination of the enumeration values that control where and how to import the certificate.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *rawData* parameter is null.-or-The length of the *rawData* parameter is 0.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.String)
+  id: Import(System.String)
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: Import(String)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 474
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Populates the @'System.Security.Cryptography.X509Certificates.X509Certificate' object with information from a certificate file.
+  syntax:
+    content: public virtual void Import(string fileName)
+    content.vb: Public Overridable Sub Import(fileName As String)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: The name of a certificate file represented as a string.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *fileName* parameter is null.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  id: Import(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: Import(String, String, X509KeyStorageFlags)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.String, System.String, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 484
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Populates the @'System.Security.Cryptography.X509Certificates.X509Certificate' object with information from a certificate file, a password, and a @'System.Security.Cryptography.X509Certificates.X509KeyStorageFlags' value.
+  syntax:
+    content: public virtual void Import(string fileName, string password, X509KeyStorageFlags keyStorageFlags)
+    content.vb: Public Overridable Sub Import(fileName As String, password As String, keyStorageFlags As X509KeyStorageFlags)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: The name of a certificate file represented as a string.
+    - id: password
+      type: System.String
+      description: The password required to access the X.509 certificate data.
+    - id: keyStorageFlags
+      type: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+      description: A bitwise combination of the enumeration values that control where and how to import the certificate.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *fileName* parameter is null.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  id: Import(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: Import(String, SecureString, X509KeyStorageFlags)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Import(System.String, System.Security.SecureString, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 495
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Populates an @'System.Security.Cryptography.X509Certificates.X509Certificate' object with information from a certificate file, a password, and a key storage flag.
+  syntax:
+    content: public virtual void Import(string fileName, SecureString password, X509KeyStorageFlags keyStorageFlags)
+    content.vb: Public Overridable Sub Import(fileName As String, password As SecureString, keyStorageFlags As X509KeyStorageFlags)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: The name of a certificate file.
+    - id: password
+      type: System.Security.SecureString
+      description: The password required to access the X.509 certificate data.
+    - id: keyStorageFlags
+      type: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+      description: A bitwise combination of the enumeration values that control where and how to import the certificate.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *fileName* parameter is null.
 - uid: System.Security.Cryptography.X509Certificates.X509Certificate.Export(System.Security.Cryptography.X509Certificates.X509ContentType)
   id: Export(System.Security.Cryptography.X509Certificates.X509ContentType)
   parent: System.Security.Cryptography.X509Certificates.X509Certificate
@@ -460,10 +1318,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 160
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 505
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Exports the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object to a byte array in a format described by one of the @'System.Security.Cryptography.X509Certificates.X509ContentType' values.
   syntax:
@@ -488,10 +1346,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 165
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 511
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
   summary: Exports the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object to a byte array in a format described by one of the @'System.Security.Cryptography.X509Certificates.X509ContentType' values, and using the specified password.
   syntax:
@@ -510,237 +1368,119 @@ items:
   exceptions:
   - type: System.Security.Cryptography.CryptographicException
     description: A value other than @'System.Security.Cryptography.X509Certificates.X509ContentType.Cert', @'System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert', or @'System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs12' was passed to the *contentType* parameter.-or-The certificate could not be exported.
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHash
-  id: GetCertHash
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Export(System.Security.Cryptography.X509Certificates.X509ContentType,System.Security.SecureString)
+  id: Export(System.Security.Cryptography.X509Certificates.X509ContentType,System.Security.SecureString)
   parent: System.Security.Cryptography.X509Certificates.X509Certificate
   href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: GetCertHash()
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHash()
+  name: Export(X509ContentType, SecureString)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Export(System.Security.Cryptography.X509Certificates.X509ContentType, System.Security.SecureString)
   type: Method
   source:
     remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 179
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 518
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   namespace: System.Security.Cryptography.X509Certificates
-  summary: Returns the hash value for the X.509v3 certificate as an array of bytes.
+  summary: Exports the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object to a byte array using the specified format and a password.
   syntax:
-    content: public virtual byte[] GetCertHash()
-    content.vb: Public Overridable Function GetCertHash As Byte()
-    return:
-      type: System.Byte[]
-      description: The hash value for the X.509 certificate.
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetFormat
-  id: GetFormat
-  parent: System.Security.Cryptography.X509Certificates.X509Certificate
-  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: GetFormat()
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetFormat()
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 190
-  assemblies:
-  - System.Security.Cryptography.X509Certificates
-  namespace: System.Security.Cryptography.X509Certificates
-  summary: Returns the name of the format of this X.509v3 certificate.
-  syntax:
-    content: public virtual string GetFormat()
-    content.vb: Public Overridable Function GetFormat As String
-    return:
-      type: System.String
-      description: The format of this X.509 certificate.
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetHashCode
-  id: GetHashCode
-  parent: System.Security.Cryptography.X509Certificates.X509Certificate
-  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: GetHashCode()
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetHashCode()
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 195
-  assemblies:
-  - System.Security.Cryptography.X509Certificates
-  namespace: System.Security.Cryptography.X509Certificates
-  summary: Returns the hash code for the X.509v3 certificate as an integer.
-  syntax:
-    content: public override int GetHashCode()
-    content.vb: Public Overrides Function GetHashCode As Integer
-    return:
-      type: System.Int32
-      description: The hash code for the X.509 certificate as an integer.
-  overridden: System.Object.GetHashCode
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithm
-  id: GetKeyAlgorithm
-  parent: System.Security.Cryptography.X509Certificates.X509Certificate
-  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: GetKeyAlgorithm()
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithm()
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 209
-  assemblies:
-  - System.Security.Cryptography.X509Certificates
-  namespace: System.Security.Cryptography.X509Certificates
-  summary: Returns the key algorithm information for this X.509v3 certificate as a string.
-  syntax:
-    content: public virtual string GetKeyAlgorithm()
-    content.vb: Public Overridable Function GetKeyAlgorithm As String
-    return:
-      type: System.String
-      description: The key algorithm information for this X.509 certificate as a string.
-  exceptions:
-  - type: System.Security.Cryptography.CryptographicException
-    description: The certificate context is invalid.
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithmParameters
-  id: GetKeyAlgorithmParameters
-  parent: System.Security.Cryptography.X509Certificates.X509Certificate
-  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: GetKeyAlgorithmParameters()
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithmParameters()
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 219
-  assemblies:
-  - System.Security.Cryptography.X509Certificates
-  namespace: System.Security.Cryptography.X509Certificates
-  summary: Returns the key algorithm parameters for the X.509v3 certificate as an array of bytes.
-  syntax:
-    content: public virtual byte[] GetKeyAlgorithmParameters()
-    content.vb: Public Overridable Function GetKeyAlgorithmParameters As Byte()
-    return:
-      type: System.Byte[]
-      description: The key algorithm parameters for the X.509 certificate as an array of bytes.
-  exceptions:
-  - type: System.Security.Cryptography.CryptographicException
-    description: The certificate context is invalid.
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithmParametersString
-  id: GetKeyAlgorithmParametersString
-  parent: System.Security.Cryptography.X509Certificates.X509Certificate
-  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: GetKeyAlgorithmParametersString()
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithmParametersString()
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 229
-  assemblies:
-  - System.Security.Cryptography.X509Certificates
-  namespace: System.Security.Cryptography.X509Certificates
-  summary: Returns the key algorithm parameters for the X.509v3 certificate as a hexadecimal string.
-  syntax:
-    content: public virtual string GetKeyAlgorithmParametersString()
-    content.vb: Public Overridable Function GetKeyAlgorithmParametersString As String
-    return:
-      type: System.String
-      description: The key algorithm parameters for the X.509 certificate as a hexadecimal string.
-  exceptions:
-  - type: System.Security.Cryptography.CryptographicException
-    description: The certificate context is invalid.
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetPublicKey
-  id: GetPublicKey
-  parent: System.Security.Cryptography.X509Certificates.X509Certificate
-  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: GetPublicKey()
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetPublicKey()
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 237
-  assemblies:
-  - System.Security.Cryptography.X509Certificates
-  namespace: System.Security.Cryptography.X509Certificates
-  summary: Returns the public key for the X.509v3 certificate as an array of bytes.
-  syntax:
-    content: public virtual byte[] GetPublicKey()
-    content.vb: Public Overridable Function GetPublicKey As Byte()
-    return:
-      type: System.Byte[]
-      description: The public key for the X.509 certificate as an array of bytes.
-  exceptions:
-  - type: System.Security.Cryptography.CryptographicException
-    description: The certificate context is invalid.
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumber
-  id: GetSerialNumber
-  parent: System.Security.Cryptography.X509Certificates.X509Certificate
-  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: GetSerialNumber()
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumber()
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 247
-  assemblies:
-  - System.Security.Cryptography.X509Certificates
-  namespace: System.Security.Cryptography.X509Certificates
-  summary: Returns the serial number of the X.509v3 certificate as an array of bytes.
-  syntax:
-    content: public virtual byte[] GetSerialNumber()
-    content.vb: Public Overridable Function GetSerialNumber As Byte()
-    return:
-      type: System.Byte[]
-      description: The serial number of the X.509 certificate as an array of bytes.
-  exceptions:
-  - type: System.Security.Cryptography.CryptographicException
-    description: The certificate context is invalid.
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.ToString
-  id: ToString
-  parent: System.Security.Cryptography.X509Certificates.X509Certificate
-  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: ToString()
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.ToString()
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 257
-  assemblies:
-  - System.Security.Cryptography.X509Certificates
-  namespace: System.Security.Cryptography.X509Certificates
-  summary: Returns a string representation of the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object.
-  syntax:
-    content: public override string ToString()
-    content.vb: Public Overrides Function ToString As String
-    return:
-      type: System.String
-      description: A string representation of the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object.
-  overridden: System.Object.ToString
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate.ToString(System.Boolean)
-  id: ToString(System.Boolean)
-  parent: System.Security.Cryptography.X509Certificates.X509Certificate
-  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: ToString(Boolean)
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.ToString(System.Boolean)
-  type: Method
-  source:
-    remote: *o0
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
-    startLine: 262
-  assemblies:
-  - System.Security.Cryptography.X509Certificates
-  namespace: System.Security.Cryptography.X509Certificates
-  summary: Returns a string representation of the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object, with extra information, if specified.
-  syntax:
-    content: public virtual string ToString(bool fVerbose)
-    content.vb: Public Overridable Function ToString(fVerbose As Boolean) As String
+    content: public virtual byte[] Export(X509ContentType contentType, SecureString password)
+    content.vb: Public Overridable Function Export(contentType As X509ContentType, password As SecureString) As Byte()
     parameters:
-    - id: fVerbose
+    - id: contentType
+      type: System.Security.Cryptography.X509Certificates.X509ContentType
+      description: One of the @'System.Security.Cryptography.X509Certificates.X509ContentType' values that describes how to format the output data.
+    - id: password
+      type: System.Security.SecureString
+      description: The password required to access the X.509 certificate data.
+    return:
+      type: System.Byte[]
+      description: A byte array that represents the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object.
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: A value other than @'System.Security.Cryptography.X509Certificates.X509ContentType.Cert', @'System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert', or @'System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs12' was passed to the *contentType* parameter.-or-The certificate could not be exported.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Reset
+  id: Reset
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: Reset()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Reset()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 524
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Resets the state of the @'System.Security.Cryptography.X509Certificates.X509Certificate2' object.
+  syntax:
+    content: public virtual void Reset()
+    content.vb: Public Overridable Sub Reset
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Dispose
+  id: Dispose
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: Dispose()
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 550
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Releases all resources used by the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: Dispose(Boolean)
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 554
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Releases all of the unmanaged resources used by this @'System.Security.Cryptography.X509Certificates.X509Certificate' and optionally releases the managed resources.
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
       type: System.Boolean
-      description: true to produce the verbose form of the string representation; otherwise, false.
+      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate.CreateHexString(System.Byte[])
+  id: CreateHexString(System.Byte[])
+  parent: System.Security.Cryptography.X509Certificates.X509Certificate
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: CreateHexString(Byte[])
+  name.vb: CreateHexString(Byte())
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate.CreateHexString(System.Byte[])
+  fullName.vb: System.Security.Cryptography.X509Certificates.X509Certificate.CreateHexString(System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 785
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography.X509Certificates
+  syntax:
+    content: protected string CreateHexString(byte[] sArray)
+    content.vb: Protected Function CreateHexString(sArray As Byte()) As String
+    parameters:
+    - id: sArray
+      type: System.Byte[]
     return:
       type: System.String
-      description: A string representation of the current @'System.Security.Cryptography.X509Certificates.X509Certificate' object.
 references:
 - uid: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -749,93 +1489,97 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetType
@@ -888,8 +1632,10 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Byte[]
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte[]
   name.vb: Byte()
   fullName: System.Byte[]
@@ -898,21 +1644,35 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
+- uid: System.Security.SecureString
+  parent: System.Security
+  isExternal: false
+  href: System.Security.SecureString.yml
+  name: SecureString
+  fullName: System.Security.SecureString
+  type: Class
+- uid: System.Security
+  isExternal: false
+  name: System.Security
+  fullName: System.Security
+  type: Namespace
 - uid: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -922,45 +1682,11 @@ references:
   type: Enum
 - uid: System.IntPtr
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.IntPtr.yml
   name: IntPtr
   fullName: System.IntPtr
-- uid: System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  fullName: System.Boolean
-- uid: System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    fullName: )
+  type: Struct
 - uid: System.Security.Cryptography.X509Certificates.X509Certificate
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -968,6 +1694,126 @@ references:
   name: X509Certificate
   fullName: System.Security.Cryptography.X509Certificates.X509Certificate
   type: Class
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+  type: Class
+- uid: System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.StreamingContext.yml
+  name: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+  type: Struct
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: false
+  href: System.Object.yml
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    href: System.Object.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    href: System.Object.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  href: System.Boolean.yml
+  name: Boolean
+  fullName: System.Boolean
+  type: Struct
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: false
+  href: System.Object.yml
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    href: System.Object.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    href: System.Object.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  href: System.Int32.yml
+  name: Int32
+  fullName: System.Int32
+  type: Struct
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: false
+  href: System.Object.yml
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    href: System.Object.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    href: System.Object.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.DateTime
+  parent: System
+  isExternal: false
+  href: System.DateTime.yml
+  name: DateTime
+  fullName: System.DateTime
+  type: Struct
 - uid: System.Security.Cryptography.X509Certificates.X509ContentType
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -975,54 +1821,3 @@ references:
   name: X509ContentType
   fullName: System.Security.Cryptography.X509Certificates.X509ContentType
   type: Enum
-- uid: System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-- uid: System.Int32
-  parent: System
-  isExternal: true
-  name: Int32
-  fullName: System.Int32
-- uid: System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    fullName: (
-  - name: )
-    fullName: )

@@ -196,7 +196,7 @@ items:
 
     and the @'System.Threading.Tasks.TaskScheduler' property is
 
-    initialized to <paramref name="scheduler" />, unless it's null, in which case the property is
+    initialized to *scheduler*, unless it's null, in which case the property is
 
     initialized to the current scheduler (see @'System.Threading.Tasks.TaskScheduler.Current').
   syntax:
@@ -225,11 +225,11 @@ items:
   remarks: >-
     With this constructor, the
 
-    @'System.Threading.Tasks.TaskCreationOptions' property is initialized to <paramref name="creationOptions" />,
+    @'System.Threading.Tasks.TaskCreationOptions' property is initialized to *creationOptions*,
 
     the
 
-    @'System.Threading.Tasks.TaskContinuationOptions' property is initialized to <paramref name="continuationOptions" />, and the @'System.Threading.Tasks.TaskScheduler' property is initialized to the
+    @'System.Threading.Tasks.TaskContinuationOptions' property is initialized to *continuationOptions*, and the @'System.Threading.Tasks.TaskScheduler' property is initialized to the
 
     current scheduler (see @'System.Threading.Tasks.TaskScheduler.Current').
   syntax:
@@ -264,13 +264,13 @@ items:
   remarks: >-
     With this constructor, the
 
-    @'System.Threading.Tasks.TaskCreationOptions' property is initialized to <paramref name="creationOptions" />,
+    @'System.Threading.Tasks.TaskCreationOptions' property is initialized to *creationOptions*,
 
     the
 
-    @'System.Threading.Tasks.TaskContinuationOptions' property is initialized to <paramref name="continuationOptions" />, and the @'System.Threading.Tasks.TaskScheduler' property is initialized to
+    @'System.Threading.Tasks.TaskContinuationOptions' property is initialized to *continuationOptions*, and the @'System.Threading.Tasks.TaskScheduler' property is initialized to
 
-    <paramref name="scheduler" />, unless it's null, in which case the property is initialized to the
+    *scheduler*, unless it's null, in which case the property is initialized to the
 
     current scheduler (see @'System.Threading.Tasks.TaskScheduler.Current').
   syntax:
@@ -913,7 +913,7 @@ items:
   - mscorlib
   namespace: System.Threading.Tasks
   summary: Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.
-  remarks: This method throws any exceptions thrown by the <paramref name="beginMethod" />.
+  remarks: This method throws any exceptions thrown by the *beginMethod*.
   syntax:
     content: public Task<TResult> FromAsync(Func<AsyncCallback, object, IAsyncResult> beginMethod, Func<IAsyncResult, TResult> endMethod, object state)
     content.vb: Public Function FromAsync(beginMethod As Func(Of AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), state As Object) As Task(Of TResult)
@@ -950,7 +950,7 @@ items:
   - mscorlib
   namespace: System.Threading.Tasks
   summary: Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.
-  remarks: This method throws any exceptions thrown by the <paramref name="beginMethod" />.
+  remarks: This method throws any exceptions thrown by the *beginMethod*.
   syntax:
     content: public Task<TResult> FromAsync(Func<AsyncCallback, object, IAsyncResult> beginMethod, Func<IAsyncResult, TResult> endMethod, object state, TaskCreationOptions creationOptions)
     content.vb: Public Function FromAsync(beginMethod As Func(Of AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), state As Object, creationOptions As TaskCreationOptions) As Task(Of TResult)
@@ -992,7 +992,7 @@ items:
   - mscorlib
   namespace: System.Threading.Tasks
   summary: Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.
-  remarks: This method throws any exceptions thrown by the <paramref name="beginMethod" />.
+  remarks: This method throws any exceptions thrown by the *beginMethod*.
   syntax:
     content: public Task<TResult> FromAsync<TArg1>(Func<TArg1, AsyncCallback, object, IAsyncResult> beginMethod, Func<IAsyncResult, TResult> endMethod, TArg1 arg1, object state)
     content.vb: Public Function FromAsync(Of TArg1)(beginMethod As Func(Of TArg1, AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), arg1 As TArg1, state As Object) As Task(Of TResult)
@@ -1011,7 +1011,7 @@ items:
       description: An object containing data to be used by the *beginMethod* delegate.
     typeParameters:
     - id: TArg1
-      description: The type of the first argument passed to the <paramref name="beginMethod" /> delegate.
+      description: The type of the first argument passed to the *beginMethod* delegate.
     return:
       type: System.Threading.Tasks.Task{{TResult}}
       description: The created task that represents the asynchronous operation.
@@ -1035,7 +1035,7 @@ items:
   - mscorlib
   namespace: System.Threading.Tasks
   summary: Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.
-  remarks: This method throws any exceptions thrown by the <paramref name="beginMethod" />.
+  remarks: This method throws any exceptions thrown by the *beginMethod*.
   syntax:
     content: public Task<TResult> FromAsync<TArg1>(Func<TArg1, AsyncCallback, object, IAsyncResult> beginMethod, Func<IAsyncResult, TResult> endMethod, TArg1 arg1, object state, TaskCreationOptions creationOptions)
     content.vb: Public Function FromAsync(Of TArg1)(beginMethod As Func(Of TArg1, AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), arg1 As TArg1, state As Object, creationOptions As TaskCreationOptions) As Task(Of TResult)
@@ -1057,7 +1057,7 @@ items:
       description: One of the enumeration values that controls the behavior of the created task.
     typeParameters:
     - id: TArg1
-      description: The type of the first argument passed to the <paramref name="beginMethod" /> delegate.
+      description: The type of the first argument passed to the *beginMethod* delegate.
     return:
       type: System.Threading.Tasks.Task{{TResult}}
       description: The created task that represents the asynchronous operation.
@@ -1083,7 +1083,7 @@ items:
   - mscorlib
   namespace: System.Threading.Tasks
   summary: Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.
-  remarks: This method throws any exceptions thrown by the <paramref name="beginMethod" />.
+  remarks: This method throws any exceptions thrown by the *beginMethod*.
   syntax:
     content: public Task<TResult> FromAsync<TArg1, TArg2>(Func<TArg1, TArg2, AsyncCallback, object, IAsyncResult> beginMethod, Func<IAsyncResult, TResult> endMethod, TArg1 arg1, TArg2 arg2, object state)
     content.vb: Public Function FromAsync(Of TArg1, TArg2)(beginMethod As Func(Of TArg1, TArg2, AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), arg1 As TArg1, arg2 As TArg2, state As Object) As Task(Of TResult)
@@ -1105,10 +1105,10 @@ items:
       description: An object containing data to be used by the *beginMethod* delegate.
     typeParameters:
     - id: TArg1
-      description: The type of the first argument passed to the <paramref name="beginMethod" /> delegate.
+      description: The type of the first argument passed to the *beginMethod* delegate.
     - id: TArg2
       description: >-
-        The type of the second argument passed to <paramref name="beginMethod" />
+        The type of the second argument passed to *beginMethod*
 
         delegate.
     return:
@@ -1134,7 +1134,7 @@ items:
   - mscorlib
   namespace: System.Threading.Tasks
   summary: Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.
-  remarks: This method throws any exceptions thrown by the <paramref name="beginMethod" />.
+  remarks: This method throws any exceptions thrown by the *beginMethod*.
   syntax:
     content: public Task<TResult> FromAsync<TArg1, TArg2>(Func<TArg1, TArg2, AsyncCallback, object, IAsyncResult> beginMethod, Func<IAsyncResult, TResult> endMethod, TArg1 arg1, TArg2 arg2, object state, TaskCreationOptions creationOptions)
     content.vb: Public Function FromAsync(Of TArg1, TArg2)(beginMethod As Func(Of TArg1, TArg2, AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), arg1 As TArg1, arg2 As TArg2, state As Object, creationOptions As TaskCreationOptions) As Task(Of TResult)
@@ -1159,10 +1159,10 @@ items:
       description: An object that controls the behavior of the created @'System.Threading.Tasks.Task`1'.
     typeParameters:
     - id: TArg1
-      description: The type of the first argument passed to the <paramref name="beginMethod" /> delegate.
+      description: The type of the first argument passed to the *beginMethod* delegate.
     - id: TArg2
       description: >-
-        The type of the second argument passed to <paramref name="beginMethod" />
+        The type of the second argument passed to *beginMethod*
 
         delegate.
     return:
@@ -1190,7 +1190,7 @@ items:
   - mscorlib
   namespace: System.Threading.Tasks
   summary: Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.
-  remarks: This method throws any exceptions thrown by the <paramref name="beginMethod" />.
+  remarks: This method throws any exceptions thrown by the *beginMethod*.
   syntax:
     content: public Task<TResult> FromAsync<TArg1, TArg2, TArg3>(Func<TArg1, TArg2, TArg3, AsyncCallback, object, IAsyncResult> beginMethod, Func<IAsyncResult, TResult> endMethod, TArg1 arg1, TArg2 arg2, TArg3 arg3, object state)
     content.vb: Public Function FromAsync(Of TArg1, TArg2, TArg3)(beginMethod As Func(Of TArg1, TArg2, TArg3, AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), arg1 As TArg1, arg2 As TArg2, arg3 As TArg3, state As Object) As Task(Of TResult)
@@ -1215,15 +1215,15 @@ items:
       description: An object containing data to be used by the *beginMethod* delegate.
     typeParameters:
     - id: TArg1
-      description: The type of the first argument passed to the <paramref name="beginMethod" /> delegate.
+      description: The type of the first argument passed to the *beginMethod* delegate.
     - id: TArg2
       description: >-
-        The type of the second argument passed to <paramref name="beginMethod" />
+        The type of the second argument passed to *beginMethod*
 
         delegate.
     - id: TArg3
       description: >-
-        The type of the third argument passed to <paramref name="beginMethod" />
+        The type of the third argument passed to *beginMethod*
 
         delegate.
     return:
@@ -1249,7 +1249,7 @@ items:
   - mscorlib
   namespace: System.Threading.Tasks
   summary: Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.
-  remarks: This method throws any exceptions thrown by the <paramref name="beginMethod" />.
+  remarks: This method throws any exceptions thrown by the *beginMethod*.
   syntax:
     content: public Task<TResult> FromAsync<TArg1, TArg2, TArg3>(Func<TArg1, TArg2, TArg3, AsyncCallback, object, IAsyncResult> beginMethod, Func<IAsyncResult, TResult> endMethod, TArg1 arg1, TArg2 arg2, TArg3 arg3, object state, TaskCreationOptions creationOptions)
     content.vb: Public Function FromAsync(Of TArg1, TArg2, TArg3)(beginMethod As Func(Of TArg1, TArg2, TArg3, AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), arg1 As TArg1, arg2 As TArg2, arg3 As TArg3, state As Object, creationOptions As TaskCreationOptions) As Task(Of TResult)
@@ -1277,15 +1277,15 @@ items:
       description: An object that controls the behavior of the created task.
     typeParameters:
     - id: TArg1
-      description: The type of the first argument passed to the <paramref name="beginMethod" /> delegate.
+      description: The type of the first argument passed to the *beginMethod* delegate.
     - id: TArg2
       description: >-
-        The type of the second argument passed to <paramref name="beginMethod" />
+        The type of the second argument passed to *beginMethod*
 
         delegate.
     - id: TArg3
       description: >-
-        The type of the third argument passed to <paramref name="beginMethod" />
+        The type of the third argument passed to *beginMethod*
 
         delegate.
     return:
@@ -1504,7 +1504,7 @@ items:
       description: The function delegate to execute asynchronously when all tasks in the *tasks* array have completed.
     typeParameters:
     - id: TAntecedentResult
-      description: The type of the result of the antecedent <paramref name="tasks" />.
+      description: The type of the result of the antecedent *tasks*.
     return:
       type: System.Threading.Tasks.Task{{TResult}}
       description: The new continuation task.
@@ -1547,7 +1547,7 @@ items:
       description: The cancellation token that will be assigned to the new continuation task.
     typeParameters:
     - id: TAntecedentResult
-      description: The type of the result of the antecedent <paramref name="tasks" />.
+      description: The type of the result of the antecedent *tasks*.
     return:
       type: System.Threading.Tasks.Task{{TResult}}
       description: The new continuation task.
@@ -1596,7 +1596,7 @@ items:
       description: One of the enumeration values that controls the behavior of the created continuation task. The NotOn* or OnlyOn* values are not valid.
     typeParameters:
     - id: TAntecedentResult
-      description: The type of the result of the antecedent <paramref name="tasks" />.
+      description: The type of the result of the antecedent *tasks*.
     return:
       type: System.Threading.Tasks.Task{{TResult}}
       description: The new continuation task.
@@ -1653,7 +1653,7 @@ items:
       description: The scheduler that is used to schedule the created continuation task.
     typeParameters:
     - id: TAntecedentResult
-      description: The type of the result of the antecedent <paramref name="tasks" />.
+      description: The type of the result of the antecedent *tasks*.
     return:
       type: System.Threading.Tasks.Task{{TResult}}
       description: The new continuation task.
@@ -1874,7 +1874,7 @@ items:
       description: The function delegate to execute asynchronously when one task in the *tasks* array completes.
     typeParameters:
     - id: TAntecedentResult
-      description: The type of the result of the antecedent <paramref name="tasks" />.
+      description: The type of the result of the antecedent *tasks*.
     return:
       type: System.Threading.Tasks.Task{{TResult}}
       description: The new continuation @'System.Threading.Tasks.Task`1'.
@@ -1917,7 +1917,7 @@ items:
       description: The cancellation token that will be assigned to the new continuation task.
     typeParameters:
     - id: TAntecedentResult
-      description: The type of the result of the antecedent <paramref name="tasks" />.
+      description: The type of the result of the antecedent *tasks*.
     return:
       type: System.Threading.Tasks.Task{{TResult}}
       description: The new continuation task.
@@ -1966,7 +1966,7 @@ items:
       description: One of the enumeration values that controls the behavior of the created continuation task. The NotOn* or OnlyOn* values are not valid.
     typeParameters:
     - id: TAntecedentResult
-      description: The type of the result of the antecedent <paramref name="tasks" />.
+      description: The type of the result of the antecedent *tasks*.
     return:
       type: System.Threading.Tasks.Task{{TResult}}
       description: The new continuation @'System.Threading.Tasks.Task`1'.
@@ -2023,7 +2023,7 @@ items:
       description: The @'System.Threading.Tasks.TaskScheduler' that is used to schedule the created continuation @'System.Threading.Tasks.Task`1'.
     typeParameters:
     - id: TAntecedentResult
-      description: The type of the result of the antecedent <paramref name="tasks" />.
+      description: The type of the result of the antecedent *tasks*.
     return:
       type: System.Threading.Tasks.Task{{TResult}}
       description: The new continuation @'System.Threading.Tasks.Task`1'.
@@ -2081,19 +2081,22 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2102,138 +2105,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2242,7 +2249,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -2297,6 +2304,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Threading.Tasks.TaskCreationOptions
   parent: System.Threading.Tasks
   isExternal: false
@@ -2317,9 +2325,12 @@ references:
 - uid: System.Threading.Tasks.TaskContinuationOptions.None
 - uid: System.Threading.Tasks.TaskScheduler
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.TaskScheduler.yml
   name: TaskScheduler
   fullName: System.Threading.Tasks.TaskScheduler
+  type: Class
+  summary: Represents an abstract scheduler for tasks.
 - uid: System.Threading.Tasks.TaskScheduler.Current
 - uid: System.Threading.Tasks.TaskFactory`1.CancellationToken
 - uid: System.Threading.Tasks.TaskFactory
@@ -2335,26 +2346,38 @@ references:
     @'System.Threading.Tasks.Task'.
 - uid: System.Threading.CancellationToken
   parent: System.Threading
-  isExternal: true
+  isExternal: false
+  href: System.Threading.CancellationToken.yml
   name: CancellationToken
   fullName: System.Threading.CancellationToken
+  type: Struct
+  summary: Propagates notification that operations should be canceled.
 - uid: System.Threading
   isExternal: false
   name: System.Threading
   fullName: System.Threading
+  type: Namespace
 - uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
 - uid: System.Threading.Tasks.Task`1
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.Task`1.yml
   name: Task<TResult>
   name.vb: Task(Of TResult)
   fullName: System.Threading.Tasks.Task<TResult>
   fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  type: Class
+  summary: Represents an asynchronous operation that produces a result at some time in the future.
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: <
     fullName: <
   - name: TResult
@@ -2365,7 +2388,7 @@ references:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TResult
@@ -2397,6 +2420,11 @@ references:
   - name: )
     fullName: )
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.Func{{TResult}}
   parent: System
   definition: System.Func`1
@@ -2430,6 +2458,7 @@ references:
 - uid: System.Threading.Tasks.Task{{TResult}}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
+  href: System.Threading.Tasks.Task`1.yml
   name: Task<TResult>
   name.vb: Task(Of TResult)
   fullName: System.Threading.Tasks.Task<TResult>
@@ -2438,7 +2467,7 @@ references:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: <
     fullName: <
   - name: TResult
@@ -2449,7 +2478,7 @@ references:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TResult
@@ -2458,21 +2487,26 @@ references:
     fullName: )
 - uid: System.Threading.Tasks.Task
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.Task.yml
   name: Task
   fullName: System.Threading.Tasks.Task
+  type: Class
+  summary: Represents an asynchronous operation.
 - uid: System.Func`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`1.yml
   name: Func<TResult>
   name.vb: Func(Of TResult)
   fullName: System.Func<TResult>
   fullName.vb: System.Func(Of TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`1
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`1.yml
   - name: <
     fullName: <
   - name: TResult
@@ -2483,7 +2517,7 @@ references:
   - uid: System.Func`1
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TResult
@@ -2491,6 +2525,11 @@ references:
   - name: )
     fullName: )
 - uid: System.ObjectDisposedException
+  isExternal: false
+  href: System.ObjectDisposedException.yml
+  name: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+  type: Class
 - uid: System.Func{System.Object,{TResult}}
   parent: System
   definition: System.Func`2
@@ -2535,16 +2574,18 @@ references:
     fullName: )
 - uid: System.Func`2
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`2.yml
   name: Func<T, TResult>
   name.vb: Func(Of T, TResult)
   fullName: System.Func<T, TResult>
   fullName.vb: System.Func(Of T, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`2
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`2.yml
   - name: <
     fullName: <
   - name: T
@@ -2559,7 +2600,7 @@ references:
   - uid: System.Func`2
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -2679,16 +2720,18 @@ references:
     fullName: )
 - uid: System.Func`3
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`3.yml
   name: Func<T1, T2, TResult>
   name.vb: Func(Of T1, T2, TResult)
   fullName: System.Func<T1, T2, TResult>
   fullName.vb: System.Func(Of T1, T2, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`3
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`3.yml
   - name: <
     fullName: <
   - name: T1
@@ -2707,7 +2750,7 @@ references:
   - uid: System.Func`3
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`3.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1
@@ -2794,16 +2837,18 @@ references:
   fullName: TArg1
 - uid: System.Func`4
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`4.yml
   name: Func<T1, T2, T3, TResult>
   name.vb: Func(Of T1, T2, T3, TResult)
   fullName: System.Func<T1, T2, T3, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`4
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`4.yml
   - name: <
     fullName: <
   - name: T1
@@ -2826,7 +2871,7 @@ references:
   - uid: System.Func`4
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`4.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1
@@ -2925,16 +2970,18 @@ references:
   fullName: TArg2
 - uid: System.Func`5
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`5.yml
   name: Func<T1, T2, T3, T4, TResult>
   name.vb: Func(Of T1, T2, T3, T4, TResult)
   fullName: System.Func<T1, T2, T3, T4, TResult>
   fullName.vb: System.Func(Of T1, T2, T3, T4, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`5
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`5.yml
   - name: <
     fullName: <
   - name: T1
@@ -2961,7 +3008,7 @@ references:
   - uid: System.Func`5
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`5.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1
@@ -3071,6 +3118,7 @@ references:
   name: TArg3
   fullName: TArg3
 - uid: System.Func`6
+  parent: System
   isExternal: false
   href: System.Func`6.yml
   name: Func<T1, T2, T3, T4, T5, TResult>
@@ -3141,6 +3189,12 @@ references:
   - name: )
     fullName: )
 - uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
 - uid: System.Threading.Tasks.Task[]
   isExternal: false
   href: System.Threading.Tasks.Task.yml

@@ -144,9 +144,11 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Security.Cryptography.X509Certificates.X509Extension
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -164,15 +166,18 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: AsnEncodedData
   isExternal: true
   name: AsnEncodedData
   fullName: AsnEncodedData
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: OidCollection
   isExternal: true
   name: OidCollection

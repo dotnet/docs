@@ -32,21 +32,15 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/Common/src/System/Collections/Generic/EnumerableHelpers.cs
+      path: src/System.Collections.NonGeneric/src/System/Collections/Specialized/CollectionsUtil.cs
       branch: master
       repo: https://github.com/chenkennt/corefx.git
-    path: src/Common/src/System/Collections/Generic/EnumerableHelpers.cs
-    startLine: 3
+    path: src/System.Collections.NonGeneric/src/System/Collections/Specialized/CollectionsUtil.cs
+    startLine: 13
   assemblies:
-  - System.Collections
+  - System.Collections.NonGeneric
   summary: The @'System.Collections' namespace contains interfaces and classes that define various collections of objects, such as lists, queues, bit arrays, hash tables and dictionaries.
 references:
-- uid: System.Collections.StructuralComparisons
-  isExternal: false
-  href: System.Collections.StructuralComparisons.yml
-  name: StructuralComparisons
-  fullName: System.Collections.StructuralComparisons
-  type: Class
 - uid: System.Collections.ArrayList
   parent: System.Collections
   isExternal: false
@@ -123,44 +117,60 @@ references:
   type: Class
 - uid: System.Collections.DictionaryEntry
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.DictionaryEntry.yml
   name: DictionaryEntry
   fullName: System.Collections.DictionaryEntry
+  type: Struct
 - uid: System.Collections.ICollection
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.ICollection.yml
   name: ICollection
   fullName: System.Collections.ICollection
+  type: Interface
 - uid: System.Collections.IComparer
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IComparer.yml
   name: IComparer
   fullName: System.Collections.IComparer
+  type: Interface
 - uid: System.Collections.IDictionary
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IDictionary.yml
   name: IDictionary
   fullName: System.Collections.IDictionary
+  type: Interface
 - uid: System.Collections.IDictionaryEnumerator
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IDictionaryEnumerator.yml
   name: IDictionaryEnumerator
   fullName: System.Collections.IDictionaryEnumerator
+  type: Interface
 - uid: System.Collections.IEnumerable
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerable.yml
   name: IEnumerable
   fullName: System.Collections.IEnumerable
+  type: Interface
 - uid: System.Collections.IEnumerator
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerator.yml
   name: IEnumerator
   fullName: System.Collections.IEnumerator
+  type: Interface
 - uid: System.Collections.IEqualityComparer
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEqualityComparer.yml
   name: IEqualityComparer
   fullName: System.Collections.IEqualityComparer
+  type: Interface
 - uid: System.Collections.IHashCodeProvider
   parent: System.Collections
   isExternal: false
@@ -170,9 +180,11 @@ references:
   type: Interface
 - uid: System.Collections.IList
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IList.yml
   name: IList
   fullName: System.Collections.IList
+  type: Interface
 - uid: System.Collections.IStructuralEquatable
   parent: System.Collections
   isExternal: false
@@ -187,7 +199,14 @@ references:
   name: IStructuralComparable
   fullName: System.Collections.IStructuralComparable
   type: Interface
+- uid: System.Collections.StructuralComparisons
+  isExternal: false
+  href: System.Collections.StructuralComparisons.yml
+  name: StructuralComparisons
+  fullName: System.Collections.StructuralComparisons
+  type: Class
 - uid: System.Collections
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+  type: Namespace

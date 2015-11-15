@@ -45,6 +45,7 @@ references:
   fullName: System.Diagnostics.SymbolStore.ISymbolBinder1
   type: Interface
 - uid: System.Diagnostics.SymbolStore.ISymbolDocument
+  parent: System.Diagnostics.SymbolStore
   isExternal: false
   href: System.Diagnostics.SymbolStore.ISymbolDocument.yml
   name: ISymbolDocument
@@ -58,6 +59,7 @@ references:
   fullName: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
   type: Interface
 - uid: System.Diagnostics.SymbolStore.ISymbolMethod
+  parent: System.Diagnostics.SymbolStore
   isExternal: false
   href: System.Diagnostics.SymbolStore.ISymbolMethod.yml
   name: ISymbolMethod

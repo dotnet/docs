@@ -17,22 +17,15 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/System.Runtime.Extensions/src/System/Runtime/Versioning/FrameworkName.cs
+      path: src/mscorlib/src/System/Runtime/Versioning/NonVersionableAttribute.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Runtime.Extensions/src/System/Runtime/Versioning/FrameworkName.cs
-    startLine: 9
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Versioning/NonVersionableAttribute.cs
+    startLine: 18
   assemblies:
-  - System.Runtime.Extensions.CoreCLR
+  - mscorlib
   summary: The @'System.Runtime.Versioning' namespace contains advanced types that support versioning in side by side implementations of the .NET Framework.
 references:
-- uid: System.Runtime.Versioning.FrameworkName
-  parent: System.Runtime.Versioning
-  isExternal: false
-  href: System.Runtime.Versioning.FrameworkName.yml
-  name: FrameworkName
-  fullName: System.Runtime.Versioning.FrameworkName
-  type: Class
 - uid: System.Runtime.Versioning.ComponentGuaranteesOptions
   parent: System.Runtime.Versioning
   isExternal: false
@@ -82,6 +75,13 @@ references:
   href: System.Runtime.Versioning.CompatibilitySwitch.yml
   name: CompatibilitySwitch
   fullName: System.Runtime.Versioning.CompatibilitySwitch
+  type: Class
+- uid: System.Runtime.Versioning.FrameworkName
+  parent: System.Runtime.Versioning
+  isExternal: false
+  href: System.Runtime.Versioning.FrameworkName.yml
+  name: FrameworkName
+  fullName: System.Runtime.Versioning.FrameworkName
   type: Class
 - uid: System.Runtime.Versioning
   isExternal: false

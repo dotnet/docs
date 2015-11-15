@@ -24,9 +24,11 @@ items:
 references:
 - uid: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
   parent: System.Runtime.ConstrainedExecution
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.ConstrainedExecution.CriticalFinalizerObject.yml
   name: CriticalFinalizerObject
   fullName: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
+  type: Class
 - uid: System.Runtime.ConstrainedExecution.Consistency
   parent: System.Runtime.ConstrainedExecution
   isExternal: false
@@ -57,3 +59,4 @@ references:
   isExternal: false
   name: System.Runtime.ConstrainedExecution
   fullName: System.Runtime.ConstrainedExecution
+  type: Namespace

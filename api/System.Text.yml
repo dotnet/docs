@@ -52,9 +52,11 @@ references:
   type: Class
 - uid: System.Text.StringBuilder
   parent: System.Text
-  isExternal: true
+  isExternal: false
+  href: System.Text.StringBuilder.yml
   name: StringBuilder
   fullName: System.Text.StringBuilder
+  type: Class
 - uid: System.Text.ASCIIEncoding
   isExternal: false
   href: System.Text.ASCIIEncoding.yml
@@ -101,6 +103,7 @@ references:
   fullName: System.Text.DecoderFallbackBuffer
   type: Class
 - uid: System.Text.DecoderReplacementFallback
+  parent: System.Text
   isExternal: false
   href: System.Text.DecoderReplacementFallback.yml
   name: DecoderReplacementFallback
@@ -152,6 +155,7 @@ references:
   fullName: System.Text.EncoderFallbackBuffer
   type: Class
 - uid: System.Text.EncoderReplacementFallback
+  parent: System.Text
   isExternal: false
   href: System.Text.EncoderReplacementFallback.yml
   name: EncoderReplacementFallback
@@ -165,9 +169,11 @@ references:
   type: Class
 - uid: System.Text.Encoding
   parent: System.Text
-  isExternal: true
+  isExternal: false
+  href: System.Text.Encoding.yml
   name: Encoding
   fullName: System.Text.Encoding
+  type: Class
 - uid: System.Text.EncodingInfo
   isExternal: false
   href: System.Text.EncodingInfo.yml
@@ -176,9 +182,11 @@ references:
   type: Class
 - uid: System.Text.EncodingProvider
   parent: System.Text
-  isExternal: true
+  isExternal: false
+  href: System.Text.EncodingProvider.yml
   name: EncodingProvider
   fullName: System.Text.EncodingProvider
+  type: Class
 - uid: System.Text.NormalizationForm
   parent: System.Text
   isExternal: false
@@ -214,3 +222,4 @@ references:
   isExternal: false
   name: System.Text
   fullName: System.Text
+  type: Namespace

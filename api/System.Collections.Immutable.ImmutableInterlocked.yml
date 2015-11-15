@@ -91,11 +91,11 @@ items:
       description: >-
         <c>true</c> if the location's value is changed by applying the result of the
 
-        <paramref name="transformer" /> function;
+        *transformer* function;
 
         <c>false</c> if the location's value remained the same because the last
 
-        invocation of <paramref name="transformer" /> returned the existing value.
+        invocation of *transformer* returned the existing value.
 - uid: System.Collections.Immutable.ImmutableInterlocked.Update``2(``0@,System.Func{``0,``1,``0},``1)
   id: Update``2(``0@,System.Func{``0,``1,``0},``1)
   parent: System.Collections.Immutable.ImmutableInterlocked
@@ -133,22 +133,22 @@ items:
         as it may run multiple times when races occur with other threads.
     - id: transformerArgument
       type: '{TArg}'
-      description: The argument to pass to <paramref name="transformer" />.
+      description: The argument to pass to *transformer*.
     typeParameters:
     - id: T
       description: The type of data.
     - id: TArg
-      description: The type of argument passed to the <paramref name="transformer" />.
+      description: The type of argument passed to the *transformer*.
     return:
       type: System.Boolean
       description: >-
         <c>true</c> if the location's value is changed by applying the result of the
 
-        <paramref name="transformer" /> function;
+        *transformer* function;
 
         <c>false</c> if the location's value remained the same because the last
 
-        invocation of <paramref name="transformer" /> returned the existing value.
+        invocation of *transformer* returned the existing value.
 - uid: System.Collections.Immutable.ImmutableInterlocked.InterlockedExchange``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0})
   id: InterlockedExchange``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0})
   parent: System.Collections.Immutable.ImmutableInterlocked
@@ -181,7 +181,7 @@ items:
       description: The type of element stored by the array.
     return:
       type: System.Collections.Immutable.ImmutableArray{{T}}
-      description: The prior value at the specified <paramref name="location" />.
+      description: The prior value at the specified *location*.
 - uid: System.Collections.Immutable.ImmutableInterlocked.InterlockedCompareExchange``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0},System.Collections.Immutable.ImmutableArray{``0})
   id: InterlockedCompareExchange``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0},System.Collections.Immutable.ImmutableArray{``0})
   parent: System.Collections.Immutable.ImmutableInterlocked
@@ -220,7 +220,7 @@ items:
       description: The type of element stored by the array.
     return:
       type: System.Collections.Immutable.ImmutableArray{{T}}
-      description: The prior value at the specified <paramref name="location" />.
+      description: The prior value at the specified *location*.
 - uid: System.Collections.Immutable.ImmutableInterlocked.InterlockedInitialize``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0})
   id: InterlockedInitialize``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0})
   parent: System.Collections.Immutable.ImmutableInterlocked
@@ -280,7 +280,7 @@ items:
     parameters:
     - id: location
       type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
-      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+      description: The variable or field to atomically update if the specified *key* is not in the dictionary.
     - id: key
       type: '{TKey}'
       description: The key for the value to retrieve or add.
@@ -299,7 +299,7 @@ items:
       description: The type of argument supplied to the value factory.
     return:
       type: '{TValue}'
-      description: The value obtained from the dictionary or <paramref name="valueFactory" /> if it was not present.
+      description: The value obtained from the dictionary or *valueFactory* if it was not present.
 - uid: System.Collections.Immutable.ImmutableInterlocked.GetOrAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``1})
   id: GetOrAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``1})
   parent: System.Collections.Immutable.ImmutableInterlocked
@@ -323,7 +323,7 @@ items:
     parameters:
     - id: location
       type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
-      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+      description: The variable or field to atomically update if the specified *key* is not in the dictionary.
     - id: key
       type: '{TKey}'
       description: The key for the value to retrieve or add.
@@ -340,7 +340,7 @@ items:
       description: The type of value stored by the dictionary.
     return:
       type: '{TValue}'
-      description: The value obtained from the dictionary or <paramref name="valueFactory" /> if it was not present.
+      description: The value obtained from the dictionary or *valueFactory* if it was not present.
 - uid: System.Collections.Immutable.ImmutableInterlocked.GetOrAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1)
   id: GetOrAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1)
   parent: System.Collections.Immutable.ImmutableInterlocked
@@ -364,7 +364,7 @@ items:
     parameters:
     - id: location
       type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
-      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+      description: The variable or field to atomically update if the specified *key* is not in the dictionary.
     - id: key
       type: '{TKey}'
       description: The key for the value to retrieve or add.
@@ -378,7 +378,7 @@ items:
       description: The type of value stored by the dictionary.
     return:
       type: '{TValue}'
-      description: The value obtained from the dictionary or <paramref name="value" /> if it was not present.
+      description: The value obtained from the dictionary or *value* if it was not present.
 - uid: System.Collections.Immutable.ImmutableInterlocked.AddOrUpdate``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``1},System.Func{``0,``1,``1})
   id: AddOrUpdate``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``1},System.Func{``0,``1,``1})
   parent: System.Collections.Immutable.ImmutableInterlocked
@@ -402,7 +402,7 @@ items:
     parameters:
     - id: location
       type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
-      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+      description: The variable or field to atomically update if the specified *key* is not in the dictionary.
     - id: key
       type: '{TKey}'
       description: The key for the value to add or update.
@@ -443,7 +443,7 @@ items:
     parameters:
     - id: location
       type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
-      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+      description: The variable or field to atomically update if the specified *key* is not in the dictionary.
     - id: key
       type: '{TKey}'
       description: The key for the value to add or update.
@@ -484,7 +484,7 @@ items:
     parameters:
     - id: location
       type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
-      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+      description: The variable or field to atomically update if the specified *key* is not in the dictionary.
     - id: key
       type: '{TKey}'
       description: The key to add, if is not already defined in the dictionary.
@@ -522,7 +522,7 @@ items:
     parameters:
     - id: location
       type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
-      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+      description: The variable or field to atomically update if the specified *key* is not in the dictionary.
     - id: key
       type: '{TKey}'
       description: The key to update.
@@ -563,7 +563,7 @@ items:
     parameters:
     - id: location
       type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
-      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+      description: The variable or field to atomically update if the specified *key* is not in the dictionary.
     - id: key
       type: '{TKey}'
       description: The key to remove.
@@ -712,19 +712,22 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -733,138 +736,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -873,7 +880,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -928,6 +935,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: '{T}'
   isExternal: false
   name: T
@@ -971,21 +979,25 @@ references:
     fullName: )
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Func`2
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`2.yml
   name: Func<T, TResult>
   name.vb: Func(Of T, TResult)
   fullName: System.Func<T, TResult>
   fullName.vb: System.Func(Of T, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`2
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`2.yml
   - name: <
     fullName: <
   - name: T
@@ -1000,7 +1012,7 @@ references:
   - uid: System.Func`2
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -1062,16 +1074,18 @@ references:
   fullName: TArg
 - uid: System.Func`3
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`3.yml
   name: Func<T1, T2, TResult>
   name.vb: Func(Of T1, T2, TResult)
   fullName: System.Func<T1, T2, TResult>
   fullName.vb: System.Func(Of T1, T2, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`3
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`3.yml
   - name: <
     fullName: <
   - name: T1
@@ -1090,7 +1104,7 @@ references:
   - uid: System.Func`3
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`3.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1

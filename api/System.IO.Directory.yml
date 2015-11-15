@@ -33,6 +33,7 @@ items:
   - System.IO.Directory.GetLastAccessTimeUtc(System.String)
   - System.IO.Directory.GetLastWriteTime(System.String)
   - System.IO.Directory.GetLastWriteTimeUtc(System.String)
+  - System.IO.Directory.GetLogicalDrives
   - System.IO.Directory.GetParent(System.String)
   - System.IO.Directory.Move(System.String,System.String)
   - System.IO.Directory.SetCreationTime(System.String,System.DateTime)
@@ -48,13 +49,13 @@ items:
   type: Class
   source:
     remote: &o0
-      path: src/System.IO.FileSystem/src/System/IO/Directory.cs
+      path: src/mscorlib/src/System/IO/Directory.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 18
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 35
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Exposes static methods for creating, moving, and enumerating through directories and subdirectories. This class cannot be inherited.To browse the .NET Framework source code for this type, see the Reference Source.
   syntax:
@@ -79,10 +80,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 20
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 37
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Retrieves the parent directory of the specified path, including both absolute and relative paths.
   syntax:
@@ -117,10 +118,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 37
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 54
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Creates all directories and subdirectories in the specified path unless they already exist.
   syntax:
@@ -157,10 +158,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 73
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 343
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Determines whether the given path refers to an existing directory on disk.
   syntax:
@@ -182,10 +183,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 96
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 412
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Sets the creation date and time for the specified file or directory.
   syntax:
@@ -222,10 +223,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 102
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 417
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Sets the creation date and time, in Coordinated Universal Time (UTC) format, for the specified file or directory.
   syntax:
@@ -262,10 +263,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 108
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 431
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets the creation date and time of a directory.
   syntax:
@@ -296,10 +297,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 113
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 436
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets the creation date and time, in Coordinated Universal Time (UTC) format, of a directory.
   syntax:
@@ -330,10 +331,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 118
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 441
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Sets the date and time a directory was last written to.
   syntax:
@@ -370,10 +371,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 124
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 446
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Sets the date and time, in Coordinated Universal Time (UTC) format, that a directory was last written to.
   syntax:
@@ -410,10 +411,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 130
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 460
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the date and time the specified file or directory was last written to.
   syntax:
@@ -444,10 +445,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 135
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 465
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the date and time, in Coordinated Universal Time (UTC) format, that the specified file or directory was last written to.
   syntax:
@@ -478,10 +479,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 140
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 470
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Sets the date and time the specified file or directory was last accessed.
   syntax:
@@ -518,10 +519,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 146
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 475
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Sets the date and time, in Coordinated Universal Time (UTC) format, that the specified file or directory was last accessed.
   syntax:
@@ -558,10 +559,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 152
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 489
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the date and time the specified file or directory was last accessed.
   syntax:
@@ -594,10 +595,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 157
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 494
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the date and time, in Coordinated Universal Time (UTC) format, that the specified file or directory was last accessed.
   syntax:
@@ -630,10 +631,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 163
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 523
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the names of files (including their paths) in the specified directory.
   syntax:
@@ -668,10 +669,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 175
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 535
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the names of files (including their paths) that match the specified search pattern in the specified directory.
   syntax:
@@ -709,10 +710,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 189
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 549
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the names of files (including their paths) that match the specified search pattern in the specified directory, using a value to determine whether to search subdirectories.
   syntax:
@@ -755,10 +756,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 215
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 585
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the names of subdirectories (including their paths) in the specified directory.
   syntax:
@@ -793,10 +794,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 227
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 597
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the names of subdirectories (including their paths) that match the specified search pattern in the specified directory.
   syntax:
@@ -834,10 +835,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 241
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 611
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the names of the subdirectories (including their paths) that match the specified search pattern in the specified directory, and optionally searches subdirectories.
   syntax:
@@ -880,10 +881,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 268
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 649
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the names of all files and subdirectories in a specified path.
   syntax:
@@ -918,10 +919,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 280
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 661
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns an array of file names and directory names that that match a search pattern in a specified path.
   syntax:
@@ -959,10 +960,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 294
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 675
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns an array of all the file names and directory names that match a search pattern in a specified path, and optionally searches subdirectories.
   syntax:
@@ -1007,10 +1008,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 334
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 739
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns an enumerable collection of directory names in a specified path.
   syntax:
@@ -1047,10 +1048,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 343
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 748
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns an enumerable collection of directory names that match a search pattern in a specified path.
   syntax:
@@ -1090,10 +1091,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 354
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 759
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns an enumerable collection of directory names that match a search pattern in a specified path, and optionally searches subdirectories.
   syntax:
@@ -1138,10 +1139,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 376
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 781
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns an enumerable collection of file names in a specified path.
   syntax:
@@ -1178,10 +1179,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 386
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 791
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns an enumerable collection of file names that match a search pattern in a specified path.
   syntax:
@@ -1221,10 +1222,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 398
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 803
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns an enumerable collection of file names that match a search pattern in a specified path, and optionally searches subdirectories.
   syntax:
@@ -1269,10 +1270,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 422
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 827
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns an enumerable collection of file names and directory names in a specified path.
   syntax:
@@ -1309,10 +1310,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 432
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 837
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns an enumerable collection of file names and directory names that  match a search pattern in a specified path.
   syntax:
@@ -1352,10 +1353,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 444
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 849
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns an enumerable collection of file names and directory names that match a search pattern in a specified path, and optionally searches subdirectories.
   syntax:
@@ -1391,6 +1392,32 @@ items:
     description: The caller does not have the required permission.
   - type: System.UnauthorizedAccessException
     description: The caller does not have the required permission.
+- uid: System.IO.Directory.GetLogicalDrives
+  id: GetLogicalDrives
+  parent: System.IO.Directory
+  href: System.IO.Directory.yml
+  name: GetLogicalDrives()
+  fullName: System.IO.Directory.GetLogicalDrives()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 890
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Retrieves the names of the logical drives on this computer in the form "&lt;drive letter&gt;:\".
+  syntax:
+    content: public static string[] GetLogicalDrives()
+    content.vb: Public Shared Function GetLogicalDrives As String()
+    return:
+      type: System.String[]
+      description: The logical drives on this computer.
+  exceptions:
+  - type: System.IO.IOException
+    description: An I/O error occured (for example, a disk error).
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
 - uid: System.IO.Directory.GetDirectoryRoot(System.String)
   id: GetDirectoryRoot(System.String)
   parent: System.IO.Directory
@@ -1400,10 +1427,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 480
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 922
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Returns the volume information, root information, or both for the specified path.
   syntax:
@@ -1434,10 +1461,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 506
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 954
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Gets the current working directory of the application.
   syntax:
@@ -1460,10 +1487,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 513
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 1008
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Sets the application's current working directory to the specified directory.
   syntax:
@@ -1497,10 +1524,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 529
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 1041
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Moves a file or a directory and its contents to a new location.
   syntax:
@@ -1535,10 +1562,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 568
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 1111
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Deletes an empty directory from a specified path.
   syntax:
@@ -1570,10 +1597,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/System.IO.FileSystem/src/System/IO/Directory.cs
-    startLine: 575
+    path: src/mscorlib/src/System/IO/Directory.cs
+    startLine: 1118
   assemblies:
-  - System.IO.FileSystem
+  - mscorlib
   namespace: System.IO
   summary: Deletes the specified directory and, if indicated, any subdirectories and files in the directory.
   syntax:
@@ -1604,21 +1631,25 @@ references:
   isExternal: false
   name: System.IO
   fullName: System.IO
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1627,138 +1658,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1767,7 +1802,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1822,11 +1857,14 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.IO.DirectoryInfo
   parent: System.IO
   isExternal: false
@@ -1836,16 +1874,21 @@ references:
   type: Class
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.DateTime
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.DateTime.yml
   name: DateTime
   fullName: System.DateTime
+  type: Struct
 - uid: System.String[]
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String[]
   name.vb: String()
   fullName: System.String[]
@@ -1854,14 +1897,14 @@ references:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: ()
     fullName: ()
 - uid: System.IO.SearchOption
@@ -1874,6 +1917,7 @@ references:
 - uid: System.Collections.Generic.IEnumerable{System.String}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<String>
   name.vb: IEnumerable(Of String)
   fullName: System.Collections.Generic.IEnumerable<System.String>
@@ -1882,40 +1926,42 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.String
     name: String
     fullName: System.String
-    isExternal: true
+    href: System.String.yml
   - name: )
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -1926,7 +1972,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -1937,3 +1983,4 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace

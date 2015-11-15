@@ -313,15 +313,19 @@ references:
   type: Struct
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Int32[]
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32[]
   name.vb: Int32()
   fullName: System.Int32[]
@@ -330,14 +334,14 @@ references:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: ()
     fullName: ()
 - uid: System.Diagnostics.SymbolStore.ISymbolDocument[]
@@ -369,6 +373,7 @@ references:
   fullName: System.Diagnostics.SymbolStore.ISymbolScope
   type: Interface
 - uid: System.Diagnostics.SymbolStore.ISymbolDocument
+  parent: System.Diagnostics.SymbolStore
   isExternal: false
   href: System.Diagnostics.SymbolStore.ISymbolDocument.yml
   name: ISymbolDocument
@@ -404,6 +409,8 @@ references:
   type: Interface
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct

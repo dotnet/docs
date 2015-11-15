@@ -162,16 +162,19 @@ references:
     fullName: )
 - uid: System.Collections.Concurrent.Partitioner`1
   parent: System.Collections.Concurrent
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Concurrent.Partitioner`1.yml
   name: Partitioner<TSource>
   name.vb: Partitioner(Of TSource)
   fullName: System.Collections.Concurrent.Partitioner<TSource>
   fullName.vb: System.Collections.Concurrent.Partitioner(Of TSource)
+  type: Class
+  summary: Represents a particular manner of splitting a data source into multiple partitions.
   spec.csharp:
   - uid: System.Collections.Concurrent.Partitioner`1
     name: Partitioner
     fullName: System.Collections.Concurrent.Partitioner
-    isExternal: true
+    href: System.Collections.Concurrent.Partitioner`1.yml
   - name: <
     fullName: <
   - name: TSource
@@ -182,7 +185,7 @@ references:
   - uid: System.Collections.Concurrent.Partitioner`1
     name: Partitioner
     fullName: System.Collections.Concurrent.Partitioner
-    isExternal: true
+    href: System.Collections.Concurrent.Partitioner`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -191,16 +194,19 @@ references:
     fullName: )
 - uid: System.Collections.Concurrent.OrderablePartitioner`1
   parent: System.Collections.Concurrent
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Concurrent.OrderablePartitioner`1.yml
   name: OrderablePartitioner<TSource>
   name.vb: OrderablePartitioner(Of TSource)
   fullName: System.Collections.Concurrent.OrderablePartitioner<TSource>
   fullName.vb: System.Collections.Concurrent.OrderablePartitioner(Of TSource)
+  type: Class
+  summary: Represents a particular manner of splitting an orderable data source into multiple partitions.
   spec.csharp:
   - uid: System.Collections.Concurrent.OrderablePartitioner`1
     name: OrderablePartitioner
     fullName: System.Collections.Concurrent.OrderablePartitioner
-    isExternal: true
+    href: System.Collections.Concurrent.OrderablePartitioner`1.yml
   - name: <
     fullName: <
   - name: TSource
@@ -211,7 +217,7 @@ references:
   - uid: System.Collections.Concurrent.OrderablePartitioner`1
     name: OrderablePartitioner
     fullName: System.Collections.Concurrent.OrderablePartitioner
-    isExternal: true
+    href: System.Collections.Concurrent.OrderablePartitioner`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -301,3 +307,4 @@ references:
   isExternal: false
   name: System.Collections.Concurrent
   fullName: System.Collections.Concurrent
+  type: Namespace

@@ -125,65 +125,74 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
   parent: System.Runtime.ConstrainedExecution
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.ConstrainedExecution.CriticalFinalizerObject.yml
   name: CriticalFinalizerObject
   fullName: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
+  type: Class
 - uid: System.Runtime.InteropServices.SafeHandle
   parent: System.Runtime.InteropServices
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeHandle.yml
   name: SafeHandle
   fullName: System.Runtime.InteropServices.SafeHandle
+  type: Class
 - uid: System.Runtime.InteropServices.SafeHandle.handle
   parent: System.Runtime.InteropServices.SafeHandle
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeHandle.yml
   name: handle
   fullName: System.Runtime.InteropServices.SafeHandle.handle
 - uid: System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
   parent: System.Runtime.InteropServices.SafeHandle
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeHandle.yml
   name: SetHandle(IntPtr)
   fullName: System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
   spec.csharp:
   - uid: System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
     name: SetHandle
     fullName: System.Runtime.InteropServices.SafeHandle.SetHandle
-    isExternal: true
+    href: System.Runtime.InteropServices.SafeHandle.yml
   - name: (
     fullName: (
   - uid: System.IntPtr
     name: IntPtr
     fullName: System.IntPtr
-    isExternal: true
+    href: System.IntPtr.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
     name: SetHandle
     fullName: System.Runtime.InteropServices.SafeHandle.SetHandle
-    isExternal: true
+    href: System.Runtime.InteropServices.SafeHandle.yml
   - name: (
     fullName: (
   - uid: System.IntPtr
     name: IntPtr
     fullName: System.IntPtr
-    isExternal: true
+    href: System.IntPtr.yml
   - name: )
     fullName: )
 - uid: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
   parent: System.Runtime.InteropServices.SafeHandle
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeHandle.yml
   name: DangerousGetHandle()
   fullName: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle()
   spec.csharp:
   - uid: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
     name: DangerousGetHandle
     fullName: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
-    isExternal: true
+    href: System.Runtime.InteropServices.SafeHandle.yml
   - name: (
     fullName: (
   - name: )
@@ -192,21 +201,22 @@ references:
   - uid: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
     name: DangerousGetHandle
     fullName: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
-    isExternal: true
+    href: System.Runtime.InteropServices.SafeHandle.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Runtime.InteropServices.SafeHandle.Close
   parent: System.Runtime.InteropServices.SafeHandle
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeHandle.yml
   name: Close()
   fullName: System.Runtime.InteropServices.SafeHandle.Close()
   spec.csharp:
   - uid: System.Runtime.InteropServices.SafeHandle.Close
     name: Close
     fullName: System.Runtime.InteropServices.SafeHandle.Close
-    isExternal: true
+    href: System.Runtime.InteropServices.SafeHandle.yml
   - name: (
     fullName: (
   - name: )
@@ -215,21 +225,22 @@ references:
   - uid: System.Runtime.InteropServices.SafeHandle.Close
     name: Close
     fullName: System.Runtime.InteropServices.SafeHandle.Close
-    isExternal: true
+    href: System.Runtime.InteropServices.SafeHandle.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Runtime.InteropServices.SafeHandle.Dispose
   parent: System.Runtime.InteropServices.SafeHandle
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeHandle.yml
   name: Dispose()
   fullName: System.Runtime.InteropServices.SafeHandle.Dispose()
   spec.csharp:
   - uid: System.Runtime.InteropServices.SafeHandle.Dispose
     name: Dispose
     fullName: System.Runtime.InteropServices.SafeHandle.Dispose
-    isExternal: true
+    href: System.Runtime.InteropServices.SafeHandle.yml
   - name: (
     fullName: (
   - name: )
@@ -238,40 +249,41 @@ references:
   - uid: System.Runtime.InteropServices.SafeHandle.Dispose
     name: Dispose
     fullName: System.Runtime.InteropServices.SafeHandle.Dispose
-    isExternal: true
+    href: System.Runtime.InteropServices.SafeHandle.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
   parent: System.Runtime.InteropServices.SafeHandle
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeHandle.yml
   name: Dispose(Boolean)
   fullName: System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
   spec.csharp:
   - uid: System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
     name: Dispose
     fullName: System.Runtime.InteropServices.SafeHandle.Dispose
-    isExternal: true
+    href: System.Runtime.InteropServices.SafeHandle.yml
   - name: (
     fullName: (
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
     name: Dispose
     fullName: System.Runtime.InteropServices.SafeHandle.Dispose
-    isExternal: true
+    href: System.Runtime.InteropServices.SafeHandle.yml
   - name: (
     fullName: (
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: )
     fullName: )
 - uid: System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid
@@ -300,6 +312,7 @@ references:
 - uid: System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)
   parent: System.Runtime.InteropServices.SafeHandle
   isExternal: true
+  href: System.Boolean.yml
   name: DangerousAddRef(Boolean)
   fullName: System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean)
   spec.csharp:
@@ -312,7 +325,7 @@ references:
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: )
     fullName: )
   spec.vb:
@@ -325,7 +338,7 @@ references:
   - uid: System.Boolean
     name: Boolean
     fullName: System.Boolean
-    isExternal: true
+    href: System.Boolean.yml
   - name: )
     fullName: )
 - uid: System.Runtime.InteropServices.SafeHandle.DangerousRelease
@@ -353,19 +366,21 @@ references:
     fullName: )
 - uid: System.Runtime.InteropServices.SafeHandle.IsClosed
   parent: System.Runtime.InteropServices.SafeHandle
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeHandle.yml
   name: IsClosed
   fullName: System.Runtime.InteropServices.SafeHandle.IsClosed
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -374,138 +389,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -514,7 +533,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -569,10 +588,12 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Runtime.ConstrainedExecution
   isExternal: false
   name: System.Runtime.ConstrainedExecution
   fullName: System.Runtime.ConstrainedExecution
+  type: Namespace
 - uid: System.Runtime.InteropServices
   isExternal: false
   name: System.Runtime.InteropServices
@@ -580,24 +601,29 @@ references:
   type: Namespace
 - uid: System.IntPtr
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.IntPtr.yml
   name: IntPtr
   fullName: System.IntPtr
+  type: Struct
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Runtime.InteropServices.SafeHandle.ReleaseHandle
   parent: System.Runtime.InteropServices.SafeHandle
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeHandle.yml
   name: ReleaseHandle()
   fullName: System.Runtime.InteropServices.SafeHandle.ReleaseHandle()
   spec.csharp:
   - uid: System.Runtime.InteropServices.SafeHandle.ReleaseHandle
     name: ReleaseHandle
     fullName: System.Runtime.InteropServices.SafeHandle.ReleaseHandle
-    isExternal: true
+    href: System.Runtime.InteropServices.SafeHandle.yml
   - name: (
     fullName: (
   - name: )
@@ -606,13 +632,14 @@ references:
   - uid: System.Runtime.InteropServices.SafeHandle.ReleaseHandle
     name: ReleaseHandle
     fullName: System.Runtime.InteropServices.SafeHandle.ReleaseHandle
-    isExternal: true
+    href: System.Runtime.InteropServices.SafeHandle.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Runtime.InteropServices.SafeHandle.IsInvalid
   parent: System.Runtime.InteropServices.SafeHandle
-  isExternal: true
+  isExternal: false
+  href: System.Runtime.InteropServices.SafeHandle.yml
   name: IsInvalid
   fullName: System.Runtime.InteropServices.SafeHandle.IsInvalid

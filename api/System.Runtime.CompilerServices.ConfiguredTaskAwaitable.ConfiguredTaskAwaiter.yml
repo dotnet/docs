@@ -145,6 +145,7 @@ items:
     description: The task completed in a faulted state.
 references:
 - uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.yml
   name: ConfiguredTaskAwaitable
@@ -158,33 +159,34 @@ references:
   type: Namespace
 - uid: System.ValueType.Equals(System.Object)
   parent: System.ValueType
-  isExternal: true
+  isExternal: false
+  href: System.ValueType.yml
   name: Equals(Object)
   fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
     fullName: System.ValueType.Equals
-    isExternal: true
+    href: System.ValueType.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
     fullName: System.ValueType.Equals
-    isExternal: true
+    href: System.ValueType.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.ValueType.GetHashCode
@@ -212,14 +214,15 @@ references:
     fullName: )
 - uid: System.ValueType.ToString
   parent: System.ValueType
-  isExternal: true
+  isExternal: false
+  href: System.ValueType.yml
   name: ToString()
   fullName: System.ValueType.ToString()
   spec.csharp:
   - uid: System.ValueType.ToString
     name: ToString
     fullName: System.ValueType.ToString
-    isExternal: true
+    href: System.ValueType.yml
   - name: (
     fullName: (
   - name: )
@@ -228,95 +231,97 @@ references:
   - uid: System.ValueType.ToString
     name: ToString
     fullName: System.ValueType.ToString
-    isExternal: true
+    href: System.ValueType.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetType
@@ -344,18 +349,23 @@ references:
     fullName: )
 - uid: System.ValueType
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.ValueType.yml
   name: ValueType
   fullName: System.ValueType
+  type: Class
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.NullReferenceException
   isExternal: false
   href: System.NullReferenceException.yml
@@ -364,15 +374,21 @@ references:
   type: Class
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Threading.Tasks.Task
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.Task.yml
   name: Task
   fullName: System.Threading.Tasks.Task
+  type: Class
+  summary: Represents an asynchronous operation.
 - uid: System.Runtime.CompilerServices.TaskAwaiter
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.TaskAwaiter.yml
   name: TaskAwaiter
@@ -380,7 +396,18 @@ references:
   type: Struct
   summary: Provides an awaiter for awaiting a @'System.Threading.Tasks.Task'.
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.Action
+  parent: System
+  isExternal: false
+  href: System.Action.yml
+  name: Action
+  fullName: System.Action
+  type: Delegate
 - uid: System.Threading.Tasks
   isExternal: false
   name: System.Threading.Tasks
@@ -395,6 +422,8 @@ references:
   summary: Represents an exception used to communicate task cancellation.
 - uid: System.Exception
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: Exception
   fullName: System.Exception
+  type: Class

@@ -44,15 +44,36 @@ items:
   type: Namespace
   source:
     remote:
-      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509VerificationFlags.cs
+      path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509VerificationFlags.cs
-    startLine: 6
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Cryptography/X509Certificates/X509Certificate.cs
+    startLine: 3
   assemblies:
-  - System.Security.Cryptography.X509Certificates
+  - mscorlib
   summary: The @'System.Security.Cryptography.X509Certificates' namespace contains the common language runtime implementation of the Authenticode X.509 v.3 certificate. This certificate is signed with a private key that uniquely and positively identifies the holder of the certificate.
 references:
+- uid: System.Security.Cryptography.X509Certificates.X509ContentType
+  parent: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509ContentType.yml
+  name: X509ContentType
+  fullName: System.Security.Cryptography.X509Certificates.X509ContentType
+  type: Enum
+- uid: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+  parent: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.yml
+  name: X509KeyStorageFlags
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+  type: Enum
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate
+  parent: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
+  name: X509Certificate
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate
+  type: Class
 - uid: System.Security.Cryptography.X509Certificates.OpenFlags
   parent: System.Security.Cryptography.X509Certificates
   isExternal: false
@@ -62,6 +83,7 @@ references:
   type: Enum
   summary: This enum defines the Open modes. Read/ReadWrite/MaxAllowed are mutually exclusive.
 - uid: System.Security.Cryptography.X509Certificates.PublicKey
+  parent: System.Security.Cryptography.X509Certificates
   isExternal: false
   href: System.Security.Cryptography.X509Certificates.PublicKey.yml
   name: PublicKey
@@ -101,14 +123,8 @@ references:
   name: X509BasicConstraintsExtension
   fullName: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension
   type: Class
-- uid: System.Security.Cryptography.X509Certificates.X509Certificate
-  parent: System.Security.Cryptography.X509Certificates
-  isExternal: false
-  href: System.Security.Cryptography.X509Certificates.X509Certificate.yml
-  name: X509Certificate
-  fullName: System.Security.Cryptography.X509Certificates.X509Certificate
-  type: Class
 - uid: System.Security.Cryptography.X509Certificates.X509Certificate2
+  parent: System.Security.Cryptography.X509Certificates
   isExternal: false
   href: System.Security.Cryptography.X509Certificates.X509Certificate2.yml
   name: X509Certificate2
@@ -149,6 +165,7 @@ references:
   fullName: System.Security.Cryptography.X509Certificates.X509Chain
   type: Class
 - uid: System.Security.Cryptography.X509Certificates.X509ChainElement
+  parent: System.Security.Cryptography.X509Certificates
   isExternal: false
   href: System.Security.Cryptography.X509Certificates.X509ChainElement.yml
   name: X509ChainElement
@@ -188,13 +205,6 @@ references:
   name: X509ChainStatusFlags
   fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
   type: Enum
-- uid: System.Security.Cryptography.X509Certificates.X509ContentType
-  parent: System.Security.Cryptography.X509Certificates
-  isExternal: false
-  href: System.Security.Cryptography.X509Certificates.X509ContentType.yml
-  name: X509ContentType
-  fullName: System.Security.Cryptography.X509Certificates.X509ContentType
-  type: Enum
 - uid: System.Security.Cryptography.X509Certificates.X509EnhancedKeyUsageExtension
   isExternal: false
   href: System.Security.Cryptography.X509Certificates.X509EnhancedKeyUsageExtension.yml
@@ -228,13 +238,6 @@ references:
   href: System.Security.Cryptography.X509Certificates.X509FindType.yml
   name: X509FindType
   fullName: System.Security.Cryptography.X509Certificates.X509FindType
-  type: Enum
-- uid: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
-  parent: System.Security.Cryptography.X509Certificates
-  isExternal: false
-  href: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.yml
-  name: X509KeyStorageFlags
-  fullName: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
   type: Enum
 - uid: System.Security.Cryptography.X509Certificates.X509KeyUsageExtension
   isExternal: false

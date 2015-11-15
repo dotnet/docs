@@ -25,13 +25,13 @@ items:
   type: Enum
   source:
     remote: &o0
-      path: src/mscorlib/src/System/ConsoleColor.cs
+      path: src/System.Console/src/System/ConsoleColor.cs
       branch: master
-      repo: https://github.com/chenkennt/coreclr.git
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 14
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 8
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: Specifies constants that define foreground and background colors for the console.
   syntax:
@@ -46,10 +46,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 17
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 10
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color black.
   syntax:
@@ -63,10 +63,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 18
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 11
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color dark blue.
   syntax:
@@ -80,10 +80,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 19
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 12
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color dark green.
   syntax:
@@ -97,10 +97,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 20
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 13
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color dark cyan (dark blue-green).
   syntax:
@@ -114,10 +114,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 21
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 14
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color dark red.
   syntax:
@@ -131,10 +131,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 22
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 15
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color dark magenta (dark purplish-red).
   syntax:
@@ -148,10 +148,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 23
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 16
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color dark yellow (ochre).
   syntax:
@@ -165,10 +165,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 24
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 17
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color gray.
   syntax:
@@ -182,10 +182,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 25
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 18
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color dark gray.
   syntax:
@@ -199,10 +199,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 26
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 19
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color blue.
   syntax:
@@ -216,10 +216,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 27
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 20
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color green.
   syntax:
@@ -233,10 +233,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 28
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 21
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color cyan (blue-green).
   syntax:
@@ -250,10 +250,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 29
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 22
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color red.
   syntax:
@@ -267,10 +267,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 30
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 23
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color magenta (purplish-red).
   syntax:
@@ -284,10 +284,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 31
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 24
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color yellow.
   syntax:
@@ -301,10 +301,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleColor.cs
-    startLine: 32
+    path: src/System.Console/src/System/ConsoleColor.cs
+    startLine: 25
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The color white.
   syntax:
@@ -314,3 +314,4 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

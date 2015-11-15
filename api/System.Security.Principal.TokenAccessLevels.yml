@@ -22,13 +22,13 @@ items:
   type: Enum
   source:
     remote: &o0
-      path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+      path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
       branch: master
-      repo: https://github.com/chenkennt/coreclr.git
-    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
-    startLine: 8
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 5
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   namespace: System.Security.Principal
   summary: Defines the privileges of the user account associated with the access token.
   syntax:
@@ -43,10 +43,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
-    startLine: 12
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 8
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   namespace: System.Security.Principal
   summary: The user can attach a primary token to a process.
   syntax:
@@ -60,10 +60,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
-    startLine: 13
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 9
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   namespace: System.Security.Principal
   summary: The user can duplicate the token.
   syntax:
@@ -77,10 +77,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
-    startLine: 14
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 10
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   namespace: System.Security.Principal
   summary: The user can impersonate a client.
   syntax:
@@ -94,10 +94,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
-    startLine: 15
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 11
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   namespace: System.Security.Principal
   summary: The user can query the token.
   syntax:
@@ -111,10 +111,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
-    startLine: 16
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 12
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   namespace: System.Security.Principal
   summary: The user can query the source of the token.
   syntax:
@@ -128,10 +128,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
-    startLine: 17
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 13
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   namespace: System.Security.Principal
   summary: The user can enable or disable privileges in the token.
   syntax:
@@ -145,10 +145,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
-    startLine: 18
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 14
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   namespace: System.Security.Principal
   summary: The user can change the attributes of the groups in the token.
   syntax:
@@ -162,10 +162,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
-    startLine: 19
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 15
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   namespace: System.Security.Principal
   summary: The user can change the default owner, primary group, or discretionary access control list (DACL) of the token.
   syntax:
@@ -179,10 +179,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
-    startLine: 20
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 16
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   namespace: System.Security.Principal
   summary: The user can adjust the session identifier of the token.
   syntax:
@@ -196,10 +196,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
-    startLine: 22
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 18
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   namespace: System.Security.Principal
   summary: The user has standard read rights and the @'System.Security.Principal.TokenAccessLevels.Query' privilege for the token.
   syntax:
@@ -213,10 +213,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
-    startLine: 24
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 20
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   namespace: System.Security.Principal
   summary: The user has standard write rights and the @'System.Security.Principal.TokenAccessLevels.AdjustPrivileges,F:System.Security.Principal.TokenAccessLevels.AdjustGroups', and @'System.Security.Principal.TokenAccessLevels.AdjustDefault' privileges for the token.
   syntax:
@@ -230,10 +230,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
-    startLine: 26
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 22
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   namespace: System.Security.Principal
   summary: The user has all possible access to the token.
   syntax:
@@ -247,10 +247,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
-    startLine: 37
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 33
   assemblies:
-  - mscorlib
+  - System.Security.Principal.Windows
   namespace: System.Security.Principal
   summary: The maximum value that can be assigned for the @'System.Security.Principal.TokenAccessLevels' enumeration.
   syntax:

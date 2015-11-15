@@ -650,13 +650,13 @@ items:
     return:
       type: System.Int32
       description: >-
-        The index of the specified <paramref name="value" /> in the specified array, if <paramref name="value" /> is found.
+        The index of the specified *value* in the specified array, if *value* is found.
 
-        If <paramref name="value" /> is not found and <paramref name="value" /> is less than one or more elements in array,
+        If *value* is not found and *value* is less than one or more elements in array,
 
         a negative number which is the bitwise complement of the index of the first
 
-        element that is larger than <paramref name="value" />. If <paramref name="value" /> is not found and <paramref name="value" /> is greater
+        element that is larger than *value*. If *value* is not found and *value* is greater
 
         than any of the elements in array, a negative number which is the bitwise
 
@@ -664,9 +664,9 @@ items:
   exceptions:
   - type: System.InvalidOperationException
     description: >-
-      does not implement the  generic interface, and
+      *value* does not implement the @'System.IComparable`1' generic interface, and
 
-      the search encounters an element that does not implement the
+      the search encounters an element that does not implement the @'System.IComparable`1'
 
       generic interface.
 - uid: System.Collections.Immutable.ImmutableArray.BinarySearch``1(System.Collections.Immutable.ImmutableArray{``0},``0,System.Collections.Generic.IComparer{``0})
@@ -713,13 +713,13 @@ items:
     return:
       type: System.Int32
       description: >-
-        The index of the specified <paramref name="value" /> in the specified array, if <paramref name="value" /> is found.
+        The index of the specified *value* in the specified array, if *value* is found.
 
-        If <paramref name="value" /> is not found and <paramref name="value" /> is less than one or more elements in array,
+        If *value* is not found and *value* is less than one or more elements in array,
 
         a negative number which is the bitwise complement of the index of the first
 
-        element that is larger than <paramref name="value" />. If <paramref name="value" /> is not found and <paramref name="value" /> is greater
+        element that is larger than *value*. If *value* is not found and *value* is greater
 
         than any of the elements in array, a negative number which is the bitwise
 
@@ -727,9 +727,9 @@ items:
   exceptions:
   - type: System.InvalidOperationException
     description: >-
-      is null,  does not implement the  generic interface, and
+      *comparer* is null, *value* does not implement the @'System.IComparable`1' generic interface, and
 
-      the search encounters an element that does not implement the
+      the search encounters an element that does not implement the @'System.IComparable`1'
 
       generic interface.
 - uid: System.Collections.Immutable.ImmutableArray.BinarySearch``1(System.Collections.Immutable.ImmutableArray{``0},System.Int32,System.Int32,``0)
@@ -776,29 +776,29 @@ items:
     return:
       type: System.Int32
       description: >-
-        The index of the specified <paramref name="value" /> in the specified <paramref name="array" />, if <paramref name="value" /> is found.
+        The index of the specified *value* in the specified *array*, if *value* is found.
 
-        If <paramref name="value" /> is not found and <paramref name="value" /> is less than one or more elements in <paramref name="array" />,
+        If *value* is not found and *value* is less than one or more elements in *array*,
 
         a negative number which is the bitwise complement of the index of the first
 
-        element that is larger than <paramref name="value" />. If <paramref name="value" /> is not found and <paramref name="value" /> is greater
+        element that is larger than *value*. If *value* is not found and *value* is greater
 
-        than any of the elements in <paramref name="array" />, a negative number which is the bitwise
+        than any of the elements in *array*, a negative number which is the bitwise
 
         complement of (the index of the last element plus 1).
   exceptions:
   - type: System.InvalidOperationException
     description: >-
-      does not implement the  generic interface, and
+      *value* does not implement the @'System.IComparable`1' generic interface, and
 
-      the search encounters an element that does not implement the
+      the search encounters an element that does not implement the @'System.IComparable`1'
 
       generic interface.
   - type: System.ArgumentException
-    description: and  do not specify a valid range in .
+    description: '*index* and *length* do not specify a valid range in *array*.'
   - type: System.ArgumentOutOfRangeException
-    description: is less than the lower bound of . -or-  is less than zero.
+    description: '*index* is less than the lower bound of *array*. -or- *length* is less than zero.'
 - uid: System.Collections.Immutable.ImmutableArray.BinarySearch``1(System.Collections.Immutable.ImmutableArray{``0},System.Int32,System.Int32,``0,System.Collections.Generic.IComparer{``0})
   id: BinarySearch``1(System.Collections.Immutable.ImmutableArray{``0},System.Int32,System.Int32,``0,System.Collections.Generic.IComparer{``0})
   parent: System.Collections.Immutable.ImmutableArray
@@ -851,32 +851,32 @@ items:
     return:
       type: System.Int32
       description: >-
-        The index of the specified <paramref name="value" /> in the specified <paramref name="array" />, if <paramref name="value" /> is found.
+        The index of the specified *value* in the specified *array*, if *value* is found.
 
-        If <paramref name="value" /> is not found and <paramref name="value" /> is less than one or more elements in <paramref name="array" />,
+        If *value* is not found and *value* is less than one or more elements in *array*,
 
         a negative number which is the bitwise complement of the index of the first
 
-        element that is larger than <paramref name="value" />. If <paramref name="value" /> is not found and <paramref name="value" /> is greater
+        element that is larger than *value*. If *value* is not found and *value* is greater
 
-        than any of the elements in <paramref name="array" />, a negative number which is the bitwise
+        than any of the elements in *array*, a negative number which is the bitwise
 
         complement of (the index of the last element plus 1).
   exceptions:
   - type: System.InvalidOperationException
     description: >-
-      is null,  does not implement the  generic
+      *comparer* is null, *value* does not implement the @'System.IComparable`1' generic
 
       interface, and the search encounters an element that does not implement the
 
-      generic interface.
+      @'System.IComparable`1' generic interface.
   - type: System.ArgumentException
     description: >-
-      and  do not specify a valid range in .-or- is null,
+      *index* and *length* do not specify a valid range in *array*.-or-*comparer* is null,
 
-      and  is of a type that is not compatible with the elements of .
+      and *value* is of a type that is not compatible with the elements of *array*.
   - type: System.ArgumentOutOfRangeException
-    description: is less than the lower bound of . -or-  is less than zero.
+    description: '*index* is less than the lower bound of *array*. -or- *length* is less than zero.'
 references:
 - uid: System.Collections.Immutable.ImmutableArray`1
   parent: System.Collections.Immutable
@@ -917,19 +917,22 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -938,138 +941,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1078,7 +1085,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -1133,6 +1140,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Collections.Immutable.ImmutableArray{{T}}
   parent: System.Collections.Immutable
   definition: System.Collections.Immutable.ImmutableArray`1
@@ -1170,6 +1178,7 @@ references:
 - uid: System.Collections.Generic.IEnumerable{{T}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
@@ -1178,7 +1187,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -1189,7 +1198,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -1198,16 +1207,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -1218,7 +1229,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -1229,6 +1240,7 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: '{T}[]'
   isExternal: false
   name: T[]
@@ -1247,9 +1259,11 @@ references:
     fullName: ()
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Collections.Immutable.ImmutableArray{{TSource}}
   parent: System.Collections.Immutable
   definition: System.Collections.Immutable.ImmutableArray`1
@@ -1349,16 +1363,18 @@ references:
     fullName: )
 - uid: System.Func`2
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`2.yml
   name: Func<T, TResult>
   name.vb: Func(Of T, TResult)
   fullName: System.Func<T, TResult>
   fullName.vb: System.Func(Of T, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`2
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`2.yml
   - name: <
     fullName: <
   - name: T
@@ -1373,7 +1389,7 @@ references:
   - uid: System.Func`2
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -1435,16 +1451,18 @@ references:
   fullName: TArg
 - uid: System.Func`3
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`3.yml
   name: Func<T1, T2, TResult>
   name.vb: Func(Of T1, T2, TResult)
   fullName: System.Func<T1, T2, TResult>
   fullName.vb: System.Func(Of T1, T2, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`3
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`3.yml
   - name: <
     fullName: <
   - name: T1
@@ -1463,7 +1481,7 @@ references:
   - uid: System.Func`3
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`3.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1
@@ -1538,6 +1556,7 @@ references:
 - uid: System.Collections.Generic.IEnumerable{{TSource}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<TSource>
   name.vb: IEnumerable(Of TSource)
   fullName: System.Collections.Generic.IEnumerable<TSource>
@@ -1546,7 +1565,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: TSource
@@ -1557,7 +1576,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TSource
@@ -1566,16 +1585,18 @@ references:
     fullName: )
 - uid: System.IComparable`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.IComparable`1.yml
   name: IComparable<T>
   name.vb: IComparable(Of T)
   fullName: System.IComparable<T>
   fullName.vb: System.IComparable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.IComparable`1
     name: IComparable
     fullName: System.IComparable
-    isExternal: true
+    href: System.IComparable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -1586,7 +1607,7 @@ references:
   - uid: System.IComparable`1
     name: IComparable
     fullName: System.IComparable
-    isExternal: true
+    href: System.IComparable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -1594,18 +1615,26 @@ references:
   - name: )
     fullName: )
 - uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
 - uid: System.Collections.Generic.IComparer`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IComparer`1.yml
   name: IComparer<T>
   name.vb: IComparer(Of T)
   fullName: System.Collections.Generic.IComparer<T>
   fullName.vb: System.Collections.Generic.IComparer(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IComparer`1
     name: IComparer
     fullName: System.Collections.Generic.IComparer
-    isExternal: true
+    href: System.Collections.Generic.IComparer`1.yml
   - name: <
     fullName: <
   - name: T
@@ -1616,7 +1645,7 @@ references:
   - uid: System.Collections.Generic.IComparer`1
     name: IComparer
     fullName: System.Collections.Generic.IComparer
-    isExternal: true
+    href: System.Collections.Generic.IComparer`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -1626,6 +1655,7 @@ references:
 - uid: System.Collections.Generic.IComparer{{T}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IComparer`1
+  href: System.Collections.Generic.IComparer`1.yml
   name: IComparer<T>
   name.vb: IComparer(Of T)
   fullName: System.Collections.Generic.IComparer<T>
@@ -1634,7 +1664,7 @@ references:
   - uid: System.Collections.Generic.IComparer`1
     name: IComparer
     fullName: System.Collections.Generic.IComparer
-    isExternal: true
+    href: System.Collections.Generic.IComparer`1.yml
   - name: <
     fullName: <
   - name: T
@@ -1645,7 +1675,7 @@ references:
   - uid: System.Collections.Generic.IComparer`1
     name: IComparer
     fullName: System.Collections.Generic.IComparer
-    isExternal: true
+    href: System.Collections.Generic.IComparer`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -1653,4 +1683,15 @@ references:
   - name: )
     fullName: )
 - uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
 - uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class

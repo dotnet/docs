@@ -17,13 +17,13 @@ items:
   type: Enum
   source:
     remote: &o0
-      path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryValueKind.cs
+      path: src/mscorlib/src/Microsoft/Win32/RegistryValueKind.cs
       branch: master
-      repo: https://github.com/chenkennt/corefx.git
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryValueKind.cs
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/Microsoft/Win32/RegistryValueKind.cs
     startLine: 5
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Specifies the data types to use when storing values in the registry, or identifies the data type of a value in the registry.
   syntax:
@@ -38,10 +38,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryValueKind.cs
+    path: src/mscorlib/src/Microsoft/Win32/RegistryValueKind.cs
     startLine: 7
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: A null-terminated string. This value is equivalent to the Win32 API registry data type REG_SZ.
   syntax:
@@ -55,10 +55,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryValueKind.cs
+    path: src/mscorlib/src/Microsoft/Win32/RegistryValueKind.cs
     startLine: 8
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: A null-terminated string that contains unexpanded references to environment variables, such as %PATH%, that are expanded when the value is retrieved. This value is equivalent to the Win32 API registry data type REG_EXPAND_SZ.
   syntax:
@@ -72,10 +72,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryValueKind.cs
+    path: src/mscorlib/src/Microsoft/Win32/RegistryValueKind.cs
     startLine: 9
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: Binary data in any form. This value is equivalent to the Win32 API registry data type REG_BINARY.
   syntax:
@@ -89,10 +89,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryValueKind.cs
+    path: src/mscorlib/src/Microsoft/Win32/RegistryValueKind.cs
     startLine: 10
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: A 32-bit binary number. This value is equivalent to the Win32 API registry data type REG_DWORD.
   syntax:
@@ -106,10 +106,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryValueKind.cs
+    path: src/mscorlib/src/Microsoft/Win32/RegistryValueKind.cs
     startLine: 11
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: An array of null-terminated strings, terminated by two null characters. This value is equivalent to the Win32 API registry data type REG_MULTI_SZ.
   syntax:
@@ -123,10 +123,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryValueKind.cs
+    path: src/mscorlib/src/Microsoft/Win32/RegistryValueKind.cs
     startLine: 12
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: A 64-bit binary number. This value is equivalent to the Win32 API registry data type REG_QWORD.
   syntax:
@@ -140,10 +140,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryValueKind.cs
+    path: src/mscorlib/src/Microsoft/Win32/RegistryValueKind.cs
     startLine: 13
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: An unsupported registry data type. For example, the Microsoft Win32 API registry data type REG_RESOURCE_LIST is unsupported. Use this value to specify that the @'Microsoft.Win32.RegistryKey.SetValue(System.String,System.Object)' method should determine the appropriate registry data type when storing a name/value pair.
   syntax:
@@ -157,10 +157,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryValueKind.cs
+    path: src/mscorlib/src/Microsoft/Win32/RegistryValueKind.cs
     startLine: 14
   assemblies:
-  - Microsoft.Win32.Registry
+  - mscorlib
   namespace: Microsoft.Win32
   summary: No data type.
   syntax:

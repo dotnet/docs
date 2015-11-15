@@ -8,7 +8,6 @@ items:
   - System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Byte[],System.Int32)
   - System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Int32)
   - System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Int32,System.Int32)
-  - System.Security.Cryptography.Rfc2898DeriveBytes.CryptDeriveKey(System.String,System.String,System.Int32,System.Byte[])
   - System.Security.Cryptography.Rfc2898DeriveBytes.Dispose(System.Boolean)
   - System.Security.Cryptography.Rfc2898DeriveBytes.GetBytes(System.Int32)
   - System.Security.Cryptography.Rfc2898DeriveBytes.IterationCount
@@ -20,13 +19,13 @@ items:
   type: Class
   source:
     remote: &o0
-      path: src/mscorlib/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
+      path: src/System.Security.Cryptography.DeriveBytes/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
       branch: master
-      repo: https://github.com/chenkennt/coreclr.git
-    path: src/mscorlib/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
-    startLine: 17
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.DeriveBytes/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
+    startLine: 10
   assemblies:
-  - mscorlib
+  - System.Security.Cryptography.DeriveBytes
   namespace: System.Security.Cryptography
   summary: Implements password-based key derivation functionality, PBKDF2, by using a pseudo-random number generator based on @'System.Security.Cryptography.HMACSHA1'.
   syntax:
@@ -46,61 +45,33 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-- uid: System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Int32)
-  id: '#ctor(System.String,System.Int32)'
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.Byte[],System.Byte[],System.Int32)
+  id: '#ctor(System.Byte[],System.Byte[],System.Int32)'
   parent: System.Security.Cryptography.Rfc2898DeriveBytes
   href: System.Security.Cryptography.Rfc2898DeriveBytes.yml
-  name: Rfc2898DeriveBytes(String, Int32)
-  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.String, System.Int32)
+  name: Rfc2898DeriveBytes(Byte[], Byte[], Int32)
+  name.vb: Rfc2898DeriveBytes(Byte(), Byte(), Int32)
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.Byte[], System.Byte[], System.Int32)
+  fullName.vb: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.Byte(), System.Byte(), System.Int32)
   type: Constructor
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
-    startLine: 37
+    path: src/System.Security.Cryptography.DeriveBytes/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
+    startLine: 12
   assemblies:
-  - mscorlib
+  - System.Security.Cryptography.DeriveBytes
   namespace: System.Security.Cryptography
-  summary: Initializes a new instance of the @'System.Security.Cryptography.Rfc2898DeriveBytes' class using the password and salt size to derive the key.
+  summary: Initializes a new instance of the @'System.Security.Cryptography.Rfc2898DeriveBytes' class using a password, a salt, and number of iterations to derive the key.
   syntax:
-    content: public Rfc2898DeriveBytes(string password, int saltSize)
-    content.vb: Public Sub New(password As String, saltSize As Integer)
+    content: public Rfc2898DeriveBytes(byte[] password, byte[] salt, int iterations)
+    content.vb: Public Sub New(password As Byte(), salt As Byte(), iterations As Integer)
     parameters:
     - id: password
-      type: System.String
+      type: System.Byte[]
       description: The password used to derive the key.
-    - id: saltSize
-      type: System.Int32
-      description: The size of the random salt that you want the class to generate.
-  exceptions:
-  - type: System.ArgumentException
-    description: The specified salt size is smaller than 8 bytes.
-  - type: System.ArgumentNullException
-    description: The password or salt is null.
-- uid: System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Int32,System.Int32)
-  id: '#ctor(System.String,System.Int32,System.Int32)'
-  parent: System.Security.Cryptography.Rfc2898DeriveBytes
-  href: System.Security.Cryptography.Rfc2898DeriveBytes.yml
-  name: Rfc2898DeriveBytes(String, Int32, Int32)
-  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.String, System.Int32, System.Int32)
-  type: Constructor
-  source:
-    remote: *o0
-    path: src/mscorlib/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
-    startLine: 42
-  assemblies:
-  - mscorlib
-  namespace: System.Security.Cryptography
-  summary: Initializes a new instance of the @'System.Security.Cryptography.Rfc2898DeriveBytes' class using a password, a salt size, and number of iterations to derive the key.
-  syntax:
-    content: public Rfc2898DeriveBytes(string password, int saltSize, int iterations)
-    content.vb: Public Sub New(password As String, saltSize As Integer, iterations As Integer)
-    parameters:
-    - id: password
-      type: System.String
-      description: The password used to derive the key.
-    - id: saltSize
-      type: System.Int32
-      description: The size of the random salt that you want the class to generate.
+    - id: salt
+      type: System.Byte[]
+      description: The key salt used to derive the key.
     - id: iterations
       type: System.Int32
       description: The number of iterations for the operation.
@@ -109,8 +80,6 @@ items:
     description: The specified salt size is smaller than 8 bytes or the iteration count is less than 1.
   - type: System.ArgumentNullException
     description: The password or salt is null.
-  - type: System.ArgumentOutOfRangeException
-    description: '*iterations *is out of range. This parameter requires a non-negative number.'
 - uid: System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Byte[])
   id: '#ctor(System.String,System.Byte[])'
   parent: System.Security.Cryptography.Rfc2898DeriveBytes
@@ -122,10 +91,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
-    startLine: 58
+    path: src/System.Security.Cryptography.DeriveBytes/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
+    startLine: 31
   assemblies:
-  - mscorlib
+  - System.Security.Cryptography.DeriveBytes
   namespace: System.Security.Cryptography
   summary: Initializes a new instance of the @'System.Security.Cryptography.Rfc2898DeriveBytes' class using a password and salt to derive the key.
   syntax:
@@ -154,10 +123,10 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
-    startLine: 60
+    path: src/System.Security.Cryptography.DeriveBytes/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
+    startLine: 36
   assemblies:
-  - mscorlib
+  - System.Security.Cryptography.DeriveBytes
   namespace: System.Security.Cryptography
   summary: Initializes a new instance of the @'System.Security.Cryptography.Rfc2898DeriveBytes' class using a password, a salt, and number of iterations to derive the key.
   syntax:
@@ -178,33 +147,61 @@ items:
     description: The specified salt size is smaller than 8 bytes or the iteration count is less than 1.
   - type: System.ArgumentNullException
     description: The password or salt is null.
-- uid: System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.Byte[],System.Byte[],System.Int32)
-  id: '#ctor(System.Byte[],System.Byte[],System.Int32)'
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Int32)
+  id: '#ctor(System.String,System.Int32)'
   parent: System.Security.Cryptography.Rfc2898DeriveBytes
   href: System.Security.Cryptography.Rfc2898DeriveBytes.yml
-  name: Rfc2898DeriveBytes(Byte[], Byte[], Int32)
-  name.vb: Rfc2898DeriveBytes(Byte(), Byte(), Int32)
-  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.Byte[], System.Byte[], System.Int32)
-  fullName.vb: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.Byte(), System.Byte(), System.Int32)
+  name: Rfc2898DeriveBytes(String, Int32)
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.String, System.Int32)
   type: Constructor
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
-    startLine: 65
+    path: src/System.Security.Cryptography.DeriveBytes/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
+    startLine: 41
   assemblies:
-  - mscorlib
+  - System.Security.Cryptography.DeriveBytes
   namespace: System.Security.Cryptography
-  summary: Initializes a new instance of the @'System.Security.Cryptography.Rfc2898DeriveBytes' class using a password, a salt, and number of iterations to derive the key.
+  summary: Initializes a new instance of the @'System.Security.Cryptography.Rfc2898DeriveBytes' class using the password and salt size to derive the key.
   syntax:
-    content: public Rfc2898DeriveBytes(byte[] password, byte[] salt, int iterations)
-    content.vb: Public Sub New(password As Byte(), salt As Byte(), iterations As Integer)
+    content: public Rfc2898DeriveBytes(string password, int saltSize)
+    content.vb: Public Sub New(password As String, saltSize As Integer)
     parameters:
     - id: password
-      type: System.Byte[]
+      type: System.String
       description: The password used to derive the key.
-    - id: salt
-      type: System.Byte[]
-      description: The key salt used to derive the key.
+    - id: saltSize
+      type: System.Int32
+      description: The size of the random salt that you want the class to generate.
+  exceptions:
+  - type: System.ArgumentException
+    description: The specified salt size is smaller than 8 bytes.
+  - type: System.ArgumentNullException
+    description: The password or salt is null.
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Int32,System.Int32)
+  id: '#ctor(System.String,System.Int32,System.Int32)'
+  parent: System.Security.Cryptography.Rfc2898DeriveBytes
+  href: System.Security.Cryptography.Rfc2898DeriveBytes.yml
+  name: Rfc2898DeriveBytes(String, Int32, Int32)
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.String, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.DeriveBytes/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
+    startLine: 46
+  assemblies:
+  - System.Security.Cryptography.DeriveBytes
+  namespace: System.Security.Cryptography
+  summary: Initializes a new instance of the @'System.Security.Cryptography.Rfc2898DeriveBytes' class using a password, a salt size, and number of iterations to derive the key.
+  syntax:
+    content: public Rfc2898DeriveBytes(string password, int saltSize, int iterations)
+    content.vb: Public Sub New(password As String, saltSize As Integer, iterations As Integer)
+    parameters:
+    - id: password
+      type: System.String
+      description: The password used to derive the key.
+    - id: saltSize
+      type: System.Int32
+      description: The size of the random salt that you want the class to generate.
     - id: iterations
       type: System.Int32
       description: The number of iterations for the operation.
@@ -213,6 +210,8 @@ items:
     description: The specified salt size is smaller than 8 bytes or the iteration count is less than 1.
   - type: System.ArgumentNullException
     description: The password or salt is null.
+  - type: System.ArgumentOutOfRangeException
+    description: '*iterations *is out of range. This parameter requires a non-negative number.'
 - uid: System.Security.Cryptography.Rfc2898DeriveBytes.IterationCount
   id: IterationCount
   parent: System.Security.Cryptography.Rfc2898DeriveBytes
@@ -222,10 +221,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
-    startLine: 78
+    path: src/System.Security.Cryptography.DeriveBytes/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
+    startLine: 63
   assemblies:
-  - mscorlib
+  - System.Security.Cryptography.DeriveBytes
   namespace: System.Security.Cryptography
   summary: Gets or sets the number of iterations for the operation.
   syntax:
@@ -247,10 +246,10 @@ items:
   type: Property
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
-    startLine: 89
+    path: src/System.Security.Cryptography.DeriveBytes/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
+    startLine: 79
   assemblies:
-  - mscorlib
+  - System.Security.Cryptography.DeriveBytes
   namespace: System.Security.Cryptography
   summary: Gets or sets the key salt value for the operation.
   syntax:
@@ -265,6 +264,29 @@ items:
     description: The specified salt size is smaller than 8 bytes.
   - type: System.ArgumentNullException
     description: The salt is null.
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Security.Cryptography.Rfc2898DeriveBytes
+  href: System.Security.Cryptography.Rfc2898DeriveBytes.yml
+  name: Dispose(Boolean)
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.DeriveBytes/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
+    startLine: 97
+  assemblies:
+  - System.Security.Cryptography.DeriveBytes
+  namespace: System.Security.Cryptography
+  summary: Releases the unmanaged resources used by the @'System.Security.Cryptography.Rfc2898DeriveBytes' class and optionally releases the managed resources.
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
+  overridden: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
 - uid: System.Security.Cryptography.Rfc2898DeriveBytes.GetBytes(System.Int32)
   id: GetBytes(System.Int32)
   parent: System.Security.Cryptography.Rfc2898DeriveBytes
@@ -274,10 +296,10 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
-    startLine: 106
+    path: src/System.Security.Cryptography.DeriveBytes/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
+    startLine: 114
   assemblies:
-  - mscorlib
+  - System.Security.Cryptography.DeriveBytes
   namespace: System.Security.Cryptography
   summary: Returns the pseudo-random key for this object.
   syntax:
@@ -303,89 +325,31 @@ items:
   type: Method
   source:
     remote: *o0
-    path: src/mscorlib/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
-    startLine: 145
+    path: src/System.Security.Cryptography.DeriveBytes/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
+    startLine: 161
   assemblies:
-  - mscorlib
+  - System.Security.Cryptography.DeriveBytes
   namespace: System.Security.Cryptography
   summary: Resets the state of the operation.
   syntax:
     content: public override void Reset()
     content.vb: Public Overrides Sub Reset
   overridden: System.Security.Cryptography.DeriveBytes.Reset
-- uid: System.Security.Cryptography.Rfc2898DeriveBytes.Dispose(System.Boolean)
-  id: Dispose(System.Boolean)
-  parent: System.Security.Cryptography.Rfc2898DeriveBytes
-  href: System.Security.Cryptography.Rfc2898DeriveBytes.yml
-  name: Dispose(Boolean)
-  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Dispose(System.Boolean)
-  type: Method
-  source:
-    remote: *o0
-    path: src/mscorlib/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
-    startLine: 149
-  assemblies:
-  - mscorlib
-  namespace: System.Security.Cryptography
-  summary: Releases the unmanaged resources used by the @'System.Security.Cryptography.Rfc2898DeriveBytes' class and optionally releases the managed resources.
-  syntax:
-    content: protected override void Dispose(bool disposing)
-    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
-    parameters:
-    - id: disposing
-      type: System.Boolean
-      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
-  overridden: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
-- uid: System.Security.Cryptography.Rfc2898DeriveBytes.CryptDeriveKey(System.String,System.String,System.Int32,System.Byte[])
-  id: CryptDeriveKey(System.String,System.String,System.Int32,System.Byte[])
-  parent: System.Security.Cryptography.Rfc2898DeriveBytes
-  href: System.Security.Cryptography.Rfc2898DeriveBytes.yml
-  name: CryptDeriveKey(String, String, Int32, Byte[])
-  name.vb: CryptDeriveKey(String, String, Int32, Byte())
-  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.CryptDeriveKey(System.String, System.String, System.Int32, System.Byte[])
-  fullName.vb: System.Security.Cryptography.Rfc2898DeriveBytes.CryptDeriveKey(System.String, System.String, System.Int32, System.Byte())
-  type: Method
-  source:
-    remote: *o0
-    path: src/mscorlib/src/System/Security/Cryptography/Rfc2898DeriveBytes.cs
-    startLine: 202
-  assemblies:
-  - mscorlib
-  namespace: System.Security.Cryptography
-  summary: Derives a cryptographic key from the @'System.Security.Cryptography.Rfc2898DeriveBytes' object.
-  syntax:
-    content: public byte[] CryptDeriveKey(string algname, string alghashname, int keySize, byte[] rgbIV)
-    content.vb: Public Function CryptDeriveKey(algname As String, alghashname As String, keySize As Integer, rgbIV As Byte()) As Byte()
-    parameters:
-    - id: algname
-      type: System.String
-      description: The algorithm name for which to derive the key.
-    - id: alghashname
-      type: System.String
-      description: The hash algorithm name to use to derive the key.
-    - id: keySize
-      type: System.Int32
-      description: The size of the key, in bits, to derive.
-    - id: rgbIV
-      type: System.Byte[]
-      description: The initialization vector (IV) to use to derive the key.
-    return:
-      type: System.Byte[]
-      description: The derived key.
-  exceptions:
-  - type: System.Security.Cryptography.CryptographicException
-    description: The *keySize* parameter is incorrect.-or- The cryptographic service provider (CSP) cannot be acquired.-or- The *algname* parameter is not a valid algorithm name.-or- The *alghashname* parameter is not a valid hash algorithm name.
 references:
 - uid: System.Security.Cryptography
   isExternal: false
   name: System.Security.Cryptography
   fullName: System.Security.Cryptography
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Security.Cryptography.DeriveBytes
+  parent: System.Security.Cryptography
   isExternal: false
   href: System.Security.Cryptography.DeriveBytes.yml
   name: DeriveBytes
@@ -417,14 +381,15 @@ references:
     fullName: )
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -433,138 +398,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -573,7 +542,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -628,18 +597,10 @@ references:
   isExternal: false
   name: System
   fullName: System
-- uid: System.String
-  parent: System
-  isExternal: true
-  name: String
-  fullName: System.String
-- uid: System.Int32
-  parent: System
-  isExternal: true
-  name: Int32
-  fullName: System.Int32
+  type: Namespace
 - uid: System.Byte[]
-  isExternal: true
+  isExternal: false
+  href: System.Byte.yml
   name: Byte[]
   name.vb: Byte()
   fullName: System.Byte[]
@@ -648,16 +609,69 @@ references:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Byte
     name: Byte
     fullName: System.Byte
-    isExternal: true
+    href: System.Byte.yml
   - name: ()
     fullName: ()
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  href: System.Int32.yml
+  name: Int32
+  fullName: System.Int32
+  type: Struct
+- uid: System.String
+  parent: System
+  isExternal: false
+  href: System.String.yml
+  name: String
+  fullName: System.String
+  type: Class
+- uid: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
+  parent: System.Security.Cryptography.DeriveBytes
+  isExternal: false
+  href: System.Security.Cryptography.DeriveBytes.yml
+  name: Dispose(Boolean)
+  fullName: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.Security.Cryptography.DeriveBytes.Dispose
+    href: System.Security.Cryptography.DeriveBytes.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.Security.Cryptography.DeriveBytes.Dispose
+    href: System.Security.Cryptography.DeriveBytes.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  href: System.Boolean.yml
+  name: Boolean
+  fullName: System.Boolean
+  type: Struct
 - uid: System.Security.Cryptography.DeriveBytes.GetBytes(System.Int32)
   parent: System.Security.Cryptography.DeriveBytes
   isExternal: false
@@ -714,40 +728,3 @@ references:
     fullName: (
   - name: )
     fullName: )
-- uid: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
-  parent: System.Security.Cryptography.DeriveBytes
-  isExternal: false
-  href: System.Security.Cryptography.DeriveBytes.yml
-  name: Dispose(Boolean)
-  fullName: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
-  spec.csharp:
-  - uid: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
-    name: Dispose
-    fullName: System.Security.Cryptography.DeriveBytes.Dispose
-    href: System.Security.Cryptography.DeriveBytes.yml
-  - name: (
-    fullName: (
-  - uid: System.Boolean
-    name: Boolean
-    fullName: System.Boolean
-    href: System.Boolean.yml
-  - name: )
-    fullName: )
-  spec.vb:
-  - uid: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
-    name: Dispose
-    fullName: System.Security.Cryptography.DeriveBytes.Dispose
-    href: System.Security.Cryptography.DeriveBytes.yml
-  - name: (
-    fullName: (
-  - uid: System.Boolean
-    name: Boolean
-    fullName: System.Boolean
-    href: System.Boolean.yml
-  - name: )
-    fullName: )
-- uid: System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  fullName: System.Boolean

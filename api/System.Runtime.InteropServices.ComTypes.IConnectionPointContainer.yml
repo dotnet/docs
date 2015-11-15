@@ -89,9 +89,11 @@ references:
   type: Interface
 - uid: System.Guid
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Guid.yml
   name: Guid
   fullName: System.Guid
+  type: Struct
 - uid: System.Runtime.InteropServices.ComTypes.IConnectionPoint
   parent: System.Runtime.InteropServices.ComTypes
   isExternal: false
@@ -103,3 +105,4 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

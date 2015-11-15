@@ -33,13 +33,18 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.EventArgs
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.EventArgs.yml
   name: EventArgs
   fullName: System.EventArgs
+  type: Class

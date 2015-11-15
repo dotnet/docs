@@ -96,13 +96,16 @@ references:
   type: Namespace
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Diagnostics.SymbolStore.ISymbolNamespace[]
   isExternal: false
   href: System.Diagnostics.SymbolStore.ISymbolNamespace.yml

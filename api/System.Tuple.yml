@@ -388,21 +388,25 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -411,138 +415,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -551,7 +559,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -674,6 +682,7 @@ references:
 - uid: System.Tuple{{T1},{T2}}
   parent: System
   definition: System.Tuple`2
+  href: System.Tuple`2.yml
   name: Tuple<T1, T2>
   name.vb: Tuple(Of T1, T2)
   fullName: System.Tuple<T1, T2>
@@ -682,7 +691,7 @@ references:
   - uid: System.Tuple`2
     name: Tuple
     fullName: System.Tuple
-    isExternal: true
+    href: System.Tuple`2.yml
   - name: <
     fullName: <
   - name: T1
@@ -697,7 +706,7 @@ references:
   - uid: System.Tuple`2
     name: Tuple
     fullName: System.Tuple
-    isExternal: true
+    href: System.Tuple`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1
@@ -710,16 +719,18 @@ references:
     fullName: )
 - uid: System.Tuple`2
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Tuple`2.yml
   name: Tuple<T1, T2>
   name.vb: Tuple(Of T1, T2)
   fullName: System.Tuple<T1, T2>
   fullName.vb: System.Tuple(Of T1, T2)
+  type: Class
   spec.csharp:
   - uid: System.Tuple`2
     name: Tuple
     fullName: System.Tuple
-    isExternal: true
+    href: System.Tuple`2.yml
   - name: <
     fullName: <
   - name: T1
@@ -734,7 +745,7 @@ references:
   - uid: System.Tuple`2
     name: Tuple
     fullName: System.Tuple
-    isExternal: true
+    href: System.Tuple`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1
@@ -752,6 +763,7 @@ references:
 - uid: System.Tuple{{T1},{T2},{T3}}
   parent: System
   definition: System.Tuple`3
+  href: System.Tuple`3.yml
   name: Tuple<T1, T2, T3>
   name.vb: Tuple(Of T1, T2, T3)
   fullName: System.Tuple<T1, T2, T3>
@@ -760,7 +772,7 @@ references:
   - uid: System.Tuple`3
     name: Tuple
     fullName: System.Tuple
-    isExternal: true
+    href: System.Tuple`3.yml
   - name: <
     fullName: <
   - name: T1
@@ -779,7 +791,7 @@ references:
   - uid: System.Tuple`3
     name: Tuple
     fullName: System.Tuple
-    isExternal: true
+    href: System.Tuple`3.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1
@@ -796,16 +808,18 @@ references:
     fullName: )
 - uid: System.Tuple`3
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Tuple`3.yml
   name: Tuple<T1, T2, T3>
   name.vb: Tuple(Of T1, T2, T3)
   fullName: System.Tuple<T1, T2, T3>
   fullName.vb: System.Tuple(Of T1, T2, T3)
+  type: Class
   spec.csharp:
   - uid: System.Tuple`3
     name: Tuple
     fullName: System.Tuple
-    isExternal: true
+    href: System.Tuple`3.yml
   - name: <
     fullName: <
   - name: T1
@@ -824,7 +838,7 @@ references:
   - uid: System.Tuple`3
     name: Tuple
     fullName: System.Tuple
-    isExternal: true
+    href: System.Tuple`3.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1

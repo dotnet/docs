@@ -47,6 +47,7 @@ references:
   fullName: System.Text.RegularExpressions.MatchEvaluator
   type: Delegate
 - uid: System.Text.RegularExpressions.Capture
+  parent: System.Text.RegularExpressions
   isExternal: false
   href: System.Text.RegularExpressions.Capture.yml
   name: Capture
@@ -57,6 +58,7 @@ references:
 
     one substring for a single successful capture.
 - uid: System.Text.RegularExpressions.CaptureCollection
+  parent: System.Text.RegularExpressions
   isExternal: false
   href: System.Text.RegularExpressions.CaptureCollection.yml
   name: CaptureCollection
@@ -67,6 +69,7 @@ references:
 
     to return the set of captures done by a single capturing group.
 - uid: System.Text.RegularExpressions.Group
+  parent: System.Text.RegularExpressions
   isExternal: false
   href: System.Text.RegularExpressions.Group.yml
   name: Group
@@ -79,6 +82,7 @@ references:
 
     Group supplies a collection of Capture objects.
 - uid: System.Text.RegularExpressions.GroupCollection
+  parent: System.Text.RegularExpressions
   isExternal: false
   href: System.Text.RegularExpressions.GroupCollection.yml
   name: GroupCollection

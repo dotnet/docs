@@ -1370,7 +1370,7 @@ items:
   remarks: >-
     The returned @'System.Threading.Tasks.Task' will not be scheduled for execution until the current task has
 
-    completed. If the continuation criteria specified through the <paramref name="continuationOptions" /> parameter are not met, the continuation task will be canceled
+    completed. If the continuation criteria specified through the *continuationOptions* parameter are not met, the continuation task will be canceled
 
     instead of scheduled.
   syntax:
@@ -1411,7 +1411,7 @@ items:
   remarks: >-
     The returned @'System.Threading.Tasks.Task' will not be scheduled for execution until the current task has
 
-    completed. If the criteria specified through the <paramref name="continuationOptions" /> parameter
+    completed. If the criteria specified through the *continuationOptions* parameter
 
     are not met, the continuation task will be canceled instead of scheduled.
   syntax:
@@ -1587,7 +1587,7 @@ items:
   remarks: >-
     The returned @'System.Threading.Tasks.Task' will not be scheduled for execution until the current task has
 
-    completed. If the continuation criteria specified through the <paramref name="continuationOptions" /> parameter are not met, the continuation task will be canceled
+    completed. If the continuation criteria specified through the *continuationOptions* parameter are not met, the continuation task will be canceled
 
     instead of scheduled.
   syntax:
@@ -1631,7 +1631,7 @@ items:
   remarks: >-
     The returned @'System.Threading.Tasks.Task' will not be scheduled for execution until the current task has
 
-    completed. If the criteria specified through the <paramref name="continuationOptions" /> parameter
+    completed. If the criteria specified through the *continuationOptions* parameter
 
     are not met, the continuation task will be canceled instead of scheduled.
   syntax:
@@ -1814,7 +1814,7 @@ items:
   remarks: >-
     The returned @'System.Threading.Tasks.Task`1' will not be scheduled for execution until the current task has
 
-    completed. If the continuation criteria specified through the <paramref name="continuationOptions" /> parameter are not met, the continuation task will be canceled
+    completed. If the continuation criteria specified through the *continuationOptions* parameter are not met, the continuation task will be canceled
 
     instead of scheduled.
   syntax:
@@ -1860,7 +1860,7 @@ items:
   remarks: >-
     The returned @'System.Threading.Tasks.Task`1' will not be scheduled for execution until the current task has
 
-    completed. If the criteria specified through the <paramref name="continuationOptions" /> parameter
+    completed. If the criteria specified through the *continuationOptions* parameter
 
     are not met, the continuation task will be canceled instead of scheduled.
   syntax:
@@ -2048,7 +2048,7 @@ items:
   remarks: >-
     The returned @'System.Threading.Tasks.Task`1' will not be scheduled for execution until the current task has
 
-    completed. If the continuation criteria specified through the <paramref name="continuationOptions" /> parameter are not met, the continuation task will be canceled
+    completed. If the continuation criteria specified through the *continuationOptions* parameter are not met, the continuation task will be canceled
 
     instead of scheduled.
   syntax:
@@ -2095,7 +2095,7 @@ items:
   remarks: >-
     The returned @'System.Threading.Tasks.Task`1' will not be scheduled for execution until the current task has
 
-    completed. If the criteria specified through the <paramref name="continuationOptions" /> parameter
+    completed. If the criteria specified through the *continuationOptions* parameter
 
     are not met, the continuation task will be canceled instead of scheduled.
   syntax:
@@ -3485,9 +3485,12 @@ items:
 references:
 - uid: System.Threading.Tasks.Task
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.Task.yml
   name: Task
   fullName: System.Threading.Tasks.Task
+  type: Class
+  summary: Represents an asynchronous operation.
 - uid: System.Threading.Tasks.Task.Factory
 - uid: System.Threading.Tasks.TaskFactory
   parent: System.Threading.Tasks
@@ -3550,16 +3553,19 @@ references:
     fullName: )
 - uid: System.Threading.Tasks.Task`1
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.Task`1.yml
   name: Task<TResult>
   name.vb: Task(Of TResult)
   fullName: System.Threading.Tasks.Task<TResult>
   fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  type: Class
+  summary: Represents an asynchronous operation that produces a result at some time in the future.
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: <
     fullName: <
   - name: TResult
@@ -3570,7 +3576,7 @@ references:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TResult
@@ -3596,19 +3602,22 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -3617,138 +3626,142 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -3757,7 +3770,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -3812,18 +3825,39 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
 - uid: System.Action
+  parent: System
+  isExternal: false
+  href: System.Action.yml
+  name: Action
+  fullName: System.Action
+  type: Delegate
 - uid: System.Threading.CancellationToken
   parent: System.Threading
-  isExternal: true
+  isExternal: false
+  href: System.Threading.CancellationToken.yml
   name: CancellationToken
   fullName: System.Threading.CancellationToken
+  type: Struct
+  summary: Propagates notification that operations should be canceled.
 - uid: System.ObjectDisposedException
+  isExternal: false
+  href: System.ObjectDisposedException.yml
+  name: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+  type: Class
 - uid: System.Threading
   isExternal: false
   name: System.Threading
   fullName: System.Threading
+  type: Namespace
 - uid: System.Threading.Tasks.TaskCreationOptions
   parent: System.Threading.Tasks
   isExternal: false
@@ -3833,6 +3867,11 @@ references:
   type: Enum
   summary: Specifies flags that control optional behavior for the creation and execution of tasks.
 - uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  href: System.ArgumentOutOfRangeException.yml
+  name: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+  type: Class
 - uid: System.Threading.Tasks.Task.CancellationToken
 - uid: System.Action{System.Object}
   parent: System
@@ -3870,16 +3909,18 @@ references:
     fullName: )
 - uid: System.Action`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Action`1.yml
   name: Action<T>
   name.vb: Action(Of T)
   fullName: System.Action<T>
   fullName.vb: System.Action(Of T)
+  type: Delegate
   spec.csharp:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: <
     fullName: <
   - name: T
@@ -3890,7 +3931,7 @@ references:
   - uid: System.Action`1
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -3899,10 +3940,19 @@ references:
     fullName: )
 - uid: System.Threading.Tasks.TaskScheduler
   parent: System.Threading.Tasks
-  isExternal: true
+  isExternal: false
+  href: System.Threading.Tasks.TaskScheduler.yml
   name: TaskScheduler
   fullName: System.Threading.Tasks.TaskScheduler
+  type: Class
+  summary: Represents an abstract scheduler for tasks.
 - uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
 - uid: System.Threading.Tasks.Task.RunSynchronously
   parent: System.Threading.Tasks.Task
   isExternal: false
@@ -3929,12 +3979,15 @@ references:
     fullName: )
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Nullable{System.Int32}
   parent: System
   definition: System.Nullable`1
+  href: System.Nullable`1.yml
   name: Nullable<Int32>
   name.vb: Nullable(Of Int32)
   fullName: System.Nullable<System.Int32>
@@ -3943,40 +3996,42 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Int32
     name: Int32
     fullName: System.Int32
-    isExternal: true
+    href: System.Int32.yml
   - name: )
     fullName: )
 - uid: System.Nullable`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Nullable`1.yml
   name: Nullable<T>
   name.vb: Nullable(Of T)
   fullName: System.Nullable<T>
   fullName.vb: System.Nullable(Of T)
+  type: Struct
   spec.csharp:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -3987,7 +4042,7 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     fullName: System.Nullable
-    isExternal: true
+    href: System.Nullable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -3995,6 +4050,13 @@ references:
   - name: )
     fullName: )
 - uid: System.AggregateException
+  parent: System
+  isExternal: false
+  href: System.AggregateException.yml
+  name: AggregateException
+  fullName: System.AggregateException
+  type: Class
+  summary: Represents one or more errors that occur during application execution.
 - uid: System.Threading.Tasks.Task.Wait
   parent: System.Threading.Tasks.Task
   isExternal: false
@@ -4034,11 +4096,19 @@ references:
   type: Enum
   summary: Represents the current stage in the lifecycle of a @'System.Threading.Tasks.Task'.
 - uid: System.OperationCanceledException
+  parent: System
+  isExternal: false
+  href: System.OperationCanceledException.yml
+  name: OperationCanceledException
+  fullName: System.OperationCanceledException
+  type: Class
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Threading.Tasks.Task.IsCompleted
   parent: System.Threading.Tasks.Task
   isExternal: false
@@ -4050,9 +4120,11 @@ references:
 - uid: System.Threading.Tasks.TaskStatus.Canceled
 - uid: System.Threading.WaitHandle
   parent: System.Threading
-  isExternal: true
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
   name: WaitHandle
   fullName: System.Threading.WaitHandle
+  type: Class
 - uid: System.IAsyncResult.AsyncWaitHandle
 - uid: System.Threading.Tasks.Task.IsFaulted
   parent: System.Threading.Tasks.Task
@@ -4061,13 +4133,20 @@ references:
   name: IsFaulted
   fullName: System.Threading.Tasks.Task.IsFaulted
 - uid: System.Runtime.CompilerServices.TaskAwaiter
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.TaskAwaiter.yml
   name: TaskAwaiter
   fullName: System.Runtime.CompilerServices.TaskAwaiter
   type: Struct
   summary: Provides an awaiter for awaiting a @'System.Threading.Tasks.Task'.
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+  type: Namespace
 - uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.yml
   name: ConfiguredTaskAwaitable
@@ -4075,17 +4154,21 @@ references:
   type: Struct
   summary: Provides an awaitable object that allows for configured awaits on @'System.Threading.Tasks.Task'.
 - uid: System.Runtime.CompilerServices.YieldAwaitable
+  parent: System.Runtime.CompilerServices
   isExternal: false
   href: System.Runtime.CompilerServices.YieldAwaitable.yml
   name: YieldAwaitable
   fullName: System.Runtime.CompilerServices.YieldAwaitable
   type: Struct
   summary: Provides an awaitable context for switching into a target environment.
+- uid: System.Int32.MaxValue
 - uid: System.TimeSpan
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.TimeSpan.yml
   name: TimeSpan
   fullName: System.TimeSpan
+  type: Struct
 - uid: System.Threading.Timeout.Infinite
 - uid: System.Action{System.Threading.Tasks.Task}
   parent: System
@@ -4121,8 +4204,6 @@ references:
     href: System.Threading.Tasks.Task.yml
   - name: )
     fullName: )
-- uid: System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled
-- uid: System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously
 - uid: System.Threading.Tasks.TaskContinuationOptions
   parent: System.Threading.Tasks
   isExternal: false
@@ -4131,6 +4212,8 @@ references:
   fullName: System.Threading.Tasks.TaskContinuationOptions
   type: Enum
   summary: Specifies flags that control optional behavior for the creation and execution of continuation tasks.
+- uid: System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled
+- uid: System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously
 - uid: System.Action{System.Threading.Tasks.Task,System.Object}
   parent: System
   definition: System.Action`2
@@ -4179,16 +4262,18 @@ references:
     fullName: )
 - uid: System.Action`2
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Action`2.yml
   name: Action<T1, T2>
   name.vb: Action(Of T1, T2)
   fullName: System.Action<T1, T2>
   fullName.vb: System.Action(Of T1, T2)
+  type: Delegate
   spec.csharp:
   - uid: System.Action`2
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`2.yml
   - name: <
     fullName: <
   - name: T1
@@ -4203,7 +4288,7 @@ references:
   - uid: System.Action`2
     name: Action
     fullName: System.Action
-    isExternal: true
+    href: System.Action`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1
@@ -4259,6 +4344,7 @@ references:
 - uid: System.Threading.Tasks.Task{{TResult}}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
+  href: System.Threading.Tasks.Task`1.yml
   name: Task<TResult>
   name.vb: Task(Of TResult)
   fullName: System.Threading.Tasks.Task<TResult>
@@ -4267,7 +4353,7 @@ references:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: <
     fullName: <
   - name: TResult
@@ -4278,7 +4364,7 @@ references:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TResult
@@ -4287,16 +4373,18 @@ references:
     fullName: )
 - uid: System.Func`2
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`2.yml
   name: Func<T, TResult>
   name.vb: Func(Of T, TResult)
   fullName: System.Func<T, TResult>
   fullName.vb: System.Func(Of T, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`2
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`2.yml
   - name: <
     fullName: <
   - name: T
@@ -4311,7 +4399,7 @@ references:
   - uid: System.Func`2
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -4378,16 +4466,18 @@ references:
     fullName: )
 - uid: System.Func`3
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`3.yml
   name: Func<T1, T2, TResult>
   name.vb: Func(Of T1, T2, TResult)
   fullName: System.Func<T1, T2, TResult>
   fullName.vb: System.Func(Of T1, T2, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`3
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`3.yml
   - name: <
     fullName: <
   - name: T1
@@ -4406,7 +4496,7 @@ references:
   - uid: System.Func`3
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`3.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T1
@@ -4443,15 +4533,24 @@ references:
   - name: ()
     fullName: ()
 - uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
 - uid: '{TResult}'
   isExternal: false
   name: TResult
   fullName: TResult
 - uid: System.Exception
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: Exception
   fullName: System.Exception
+  type: Class
+- uid: System.CancellationTokenSource
 - uid: System.Func{{TResult}}
   parent: System
   definition: System.Func`1
@@ -4484,16 +4583,18 @@ references:
     fullName: )
 - uid: System.Func`1
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`1.yml
   name: Func<TResult>
   name.vb: Func(Of TResult)
   fullName: System.Func<TResult>
   fullName.vb: System.Func(Of TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`1
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`1.yml
   - name: <
     fullName: <
   - name: TResult
@@ -4504,7 +4605,7 @@ references:
   - uid: System.Func`1
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TResult
@@ -4627,16 +4728,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -4647,7 +4750,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -4658,6 +4761,7 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Collections.Generic.IEnumerable{System.Threading.Tasks.Task{{TResult}}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
@@ -4774,6 +4878,7 @@ references:
 - uid: System.Threading.Tasks.Task{System.Threading.Tasks.Task}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
+  href: System.Threading.Tasks.Task`1.yml
   name: Task<Task>
   name.vb: Task(Of Task)
   fullName: System.Threading.Tasks.Task<System.Threading.Tasks.Task>
@@ -4782,31 +4887,32 @@ references:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: <
     fullName: <
   - uid: System.Threading.Tasks.Task
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task.yml
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Threading.Tasks.Task
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task.yml
   - name: )
     fullName: )
 - uid: System.Threading.Tasks.Task{System.Threading.Tasks.Task{{TResult}}}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
+  href: System.Threading.Tasks.Task`1.yml
   name: Task<Task<TResult>>
   name.vb: Task(Of Task(Of TResult))
   fullName: System.Threading.Tasks.Task<System.Threading.Tasks.Task<TResult>>
@@ -4815,13 +4921,13 @@ references:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: <
     fullName: <
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: <
     fullName: <
   - name: TResult
@@ -4834,13 +4940,13 @@ references:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: '(Of '
     fullName: '(Of '
   - uid: System.Threading.Tasks.Task`1
     name: Task
     fullName: System.Threading.Tasks.Task
-    isExternal: true
+    href: System.Threading.Tasks.Task`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: TResult

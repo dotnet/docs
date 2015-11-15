@@ -4053,7 +4053,7 @@ items:
   - System.Linq.Expressions
   namespace: System.Linq.Expressions
   summary: Creates a @'System.Linq.Expressions.CatchBlock' representing a catch statement with the specified elements.
-  remarks: <paramref name="type" /> must be non-null and match the type of <paramref name="variable" /> (if it is supplied).
+  remarks: '*type* must be non-null and match the type of *variable* (if it is supplied).'
   syntax:
     content: public static CatchBlock MakeCatchBlock(Type type, ParameterExpression variable, Expression body, Expression filter)
     content.vb: Public Shared Function MakeCatchBlock(type As Type, variable As ParameterExpression, body As Expression, filter As Expression) As CatchBlock
@@ -4128,11 +4128,11 @@ items:
   namespace: System.Linq.Expressions
   summary: Creates a @'System.Linq.Expressions.ConditionalExpression' that represents a conditional statement.
   remarks: >-
-    This method allows explicitly unifying the result type of the conditional expression in cases where the types of <paramref name="ifTrue" />
+    This method allows explicitly unifying the result type of the conditional expression in cases where the types of *ifTrue*
 
-    and <paramref name="ifFalse" /> expressions are not equal. Types of both <paramref name="ifTrue" /> and <paramref name="ifFalse" /> must be implicitly
+    and *ifFalse* expressions are not equal. Types of both *ifTrue* and *ifFalse* must be implicitly
 
-    reference assignable to the result type. The <paramref name="type" /> is allowed to be @'System.Void'.
+    reference assignable to the result type. The *type* is allowed to be @'System.Void'.
   syntax:
     content: public static ConditionalExpression Condition(Expression test, Expression ifTrue, Expression ifFalse, Type type)
     content.vb: Public Shared Function Condition(test As Expression, ifTrue As Expression, ifFalse As Expression, type As Type) As ConditionalExpression
@@ -6721,7 +6721,7 @@ items:
   namespace: System.Linq.Expressions
   summary: Creates a @'System.Linq.Expressions.ListInitExpression' that uses specified @'System.Linq.Expressions.ElementInit' objects to initialize a collection.
   remarks: >-
-    The @'Expressions.Type' property of <paramref name="newExpression" /> must represent a type that implements @'System.Collections.IEnumerable'.
+    The @'Expressions.Type' property of *newExpression* must represent a type that implements @'System.Collections.IEnumerable'.
 
     The @'Expressions.Type' property of the resulting @'System.Linq.Expressions.ListInitExpression' is equal to newExpression.Type.
   syntax:
@@ -6760,7 +6760,7 @@ items:
   namespace: System.Linq.Expressions
   summary: Creates a @'System.Linq.Expressions.ListInitExpression' that uses specified @'System.Linq.Expressions.ElementInit' objects to initialize a collection.
   remarks: >-
-    The @'Expressions.Type' property of <paramref name="newExpression" /> must represent a type that implements @'System.Collections.IEnumerable'.
+    The @'Expressions.Type' property of *newExpression* must represent a type that implements @'System.Collections.IEnumerable'.
 
     The @'Expressions.Type' property of the resulting @'System.Linq.Expressions.ListInitExpression' is equal to newExpression.Type.
   syntax:
@@ -10585,136 +10585,142 @@ references:
   type: Namespace
 - uid: System.Object
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Object
   fullName: System.Object
+  type: Class
 - uid: System.Object.Equals(System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object)
   fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
     fullName: System.Object.Equals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: ', '
     fullName: ', '
   - uid: System.Object
     name: Object
     fullName: System.Object
-    isExternal: true
+    href: System.Object.yml
   - name: )
     fullName: )
 - uid: System.Object.GetHashCode
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: GetHashCode()
   fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -10723,7 +10729,7 @@ references:
   - uid: System.Object.GetHashCode
     name: GetHashCode
     fullName: System.Object.GetHashCode
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -10778,6 +10784,7 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace
 - uid: System.Linq.Expressions.BinaryExpression
   parent: System.Linq.Expressions
   isExternal: false
@@ -10807,14 +10814,18 @@ references:
   summary: Describes the node types for the nodes of an expression tree.
 - uid: System.Boolean
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Boolean.yml
   name: Boolean
   fullName: System.Boolean
+  type: Struct
 - uid: System.Reflection.MethodInfo
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
   name: MethodInfo
   fullName: System.Reflection.MethodInfo
+  type: Class
 - uid: System.Reflection
   isExternal: false
   name: System.Reflection
@@ -10935,16 +10946,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerable`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerable`1.yml
   name: IEnumerable<T>
   name.vb: IEnumerable(Of T)
   fullName: System.Collections.Generic.IEnumerable<T>
   fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: <
     fullName: <
   - name: T
@@ -10955,7 +10968,7 @@ references:
   - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-    isExternal: true
+    href: System.Collections.Generic.IEnumerable`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -10966,11 +10979,14 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Type
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Type.yml
   name: Type
   fullName: System.Type
+  type: Class
 - uid: System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
@@ -11024,9 +11040,11 @@ references:
   fullName: System.Linq.Expressions.Expression.Type
 - uid: System.Exception
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Exception.yml
   name: Exception
   fullName: System.Exception
+  type: Class
 - uid: System.Linq.Expressions.ParameterExpression
   parent: System.Linq.Expressions
   isExternal: false
@@ -11048,6 +11066,11 @@ references:
 - uid: ConditionalExpression.IfTrue
 - uid: ConditionalExpression.IfFalse
 - uid: System.Void
+  isExternal: false
+  href: System.Void.yml
+  name: Void
+  fullName: System.Void
+  type: Struct
 - uid: Expression.Type
 - uid: System.Linq.Expressions.ConstantExpression
   parent: System.Linq.Expressions
@@ -11089,9 +11112,11 @@ references:
     source file, in particular the file name and unique language identifier.
 - uid: System.Int32
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Int32.yml
   name: Int32
   fullName: System.Int32
+  type: Struct
 - uid: System.Linq.Expressions.DefaultExpression
   parent: System.Linq.Expressions
   isExternal: false
@@ -11112,16 +11137,18 @@ references:
   summary: Represents the initialization of a list.
 - uid: System.Func`2
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Func`2.yml
   name: Func<T, TResult>
   name.vb: Func(Of T, TResult)
   fullName: System.Func<T, TResult>
   fullName.vb: System.Func(Of T, TResult)
+  type: Delegate
   spec.csharp:
   - uid: System.Func`2
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`2.yml
   - name: <
     fullName: <
   - name: T
@@ -11136,7 +11163,7 @@ references:
   - uid: System.Func`2
     name: Func
     fullName: System.Func
-    isExternal: true
+    href: System.Func`2.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -11168,19 +11195,22 @@ references:
 - uid: System.Linq.Expressions.ExpressionVisitor.VisitExtension(System.Linq.Expressions.Expression)
 - uid: System.String
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.String.yml
   name: String
   fullName: System.String
+  type: Class
 - uid: System.Object.ToString
   parent: System.Object
-  isExternal: true
+  isExternal: false
+  href: System.Object.yml
   name: ToString()
   fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -11189,7 +11219,7 @@ references:
   - uid: System.Object.ToString
     name: ToString
     fullName: System.Object.ToString
-    isExternal: true
+    href: System.Object.yml
   - name: (
     fullName: (
   - name: )
@@ -11197,6 +11227,7 @@ references:
 - uid: System.Collections.Generic.IList{{T}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IList`1
+  href: System.Collections.Generic.IList`1.yml
   name: IList<T>
   name.vb: IList(Of T)
   fullName: System.Collections.Generic.IList<T>
@@ -11205,7 +11236,7 @@ references:
   - uid: System.Collections.Generic.IList`1
     name: IList
     fullName: System.Collections.Generic.IList
-    isExternal: true
+    href: System.Collections.Generic.IList`1.yml
   - name: <
     fullName: <
   - name: T
@@ -11216,7 +11247,7 @@ references:
   - uid: System.Collections.Generic.IList`1
     name: IList
     fullName: System.Collections.Generic.IList
-    isExternal: true
+    href: System.Collections.Generic.IList`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -11226,6 +11257,7 @@ references:
 - uid: System.Collections.ObjectModel.ReadOnlyCollection{{T}}
   parent: System.Collections.ObjectModel
   definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
   name: ReadOnlyCollection<T>
   name.vb: ReadOnlyCollection(Of T)
   fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
@@ -11234,7 +11266,7 @@ references:
   - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
     name: ReadOnlyCollection
     fullName: System.Collections.ObjectModel.ReadOnlyCollection
-    isExternal: true
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
   - name: <
     fullName: <
   - name: T
@@ -11245,7 +11277,7 @@ references:
   - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
     name: ReadOnlyCollection
     fullName: System.Collections.ObjectModel.ReadOnlyCollection
-    isExternal: true
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -11254,16 +11286,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IList`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IList`1.yml
   name: IList<T>
   name.vb: IList(Of T)
   fullName: System.Collections.Generic.IList<T>
   fullName.vb: System.Collections.Generic.IList(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IList`1
     name: IList
     fullName: System.Collections.Generic.IList
-    isExternal: true
+    href: System.Collections.Generic.IList`1.yml
   - name: <
     fullName: <
   - name: T
@@ -11274,7 +11308,7 @@ references:
   - uid: System.Collections.Generic.IList`1
     name: IList
     fullName: System.Collections.Generic.IList
-    isExternal: true
+    href: System.Collections.Generic.IList`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -11283,16 +11317,18 @@ references:
     fullName: )
 - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
   parent: System.Collections.ObjectModel
-  isExternal: true
+  isExternal: false
+  href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
   name: ReadOnlyCollection<T>
   name.vb: ReadOnlyCollection(Of T)
   fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
   fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  type: Class
   spec.csharp:
   - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
     name: ReadOnlyCollection
     fullName: System.Collections.ObjectModel.ReadOnlyCollection
-    isExternal: true
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
   - name: <
     fullName: <
   - name: T
@@ -11303,7 +11339,7 @@ references:
   - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
     name: ReadOnlyCollection
     fullName: System.Collections.ObjectModel.ReadOnlyCollection
-    isExternal: true
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -11355,9 +11391,11 @@ references:
   summary: Represents indexing a property or array.
 - uid: System.Reflection.PropertyInfo
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.PropertyInfo.yml
   name: PropertyInfo
   fullName: System.Reflection.PropertyInfo
+  type: Class
 - uid: System.Linq.Expressions.InvocationExpression
   parent: System.Linq.Expressions
   isExternal: false
@@ -11366,24 +11404,6 @@ references:
   fullName: System.Linq.Expressions.InvocationExpression
   type: Class
   summary: Represents an expression that applies a delegate or lambda expression to a list of argument expressions.
-- uid: System.ArgumentNullException
-- uid: System.ArgumentException
-- uid: System.InvalidOperationException
-- uid: System.Linq.Expressions.LabelExpression
-  parent: System.Linq.Expressions
-  isExternal: false
-  href: System.Linq.Expressions.LabelExpression.yml
-  name: LabelExpression
-  fullName: System.Linq.Expressions.LabelExpression
-  type: Class
-  summary: >-
-    Represents a label, which can be placed in any @'System.Linq.Expressions.Expression' context. If
-
-    it is jumped to, it will get the value provided by the corresponding
-
-    @'System.Linq.Expressions.GotoExpression'. Otherwise, it gets the value in @'System.Linq.Expressions.LabelExpression.DefaultValue'. If the
-
-    @'System.Linq.Expressions.LabelExpression.Type' equals System.Void, no value should be provided.
 - uid: System.Linq.Expressions.Expression`1
   parent: System.Linq.Expressions
   isExternal: false
@@ -11419,6 +11439,41 @@ references:
     fullName: TDelegate
   - name: )
     fullName: )
+- uid: System.ArgumentNullException
+  isExternal: false
+  href: System.ArgumentNullException.yml
+  name: ArgumentNullException
+  fullName: System.ArgumentNullException
+  type: Class
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  href: System.ArgumentException.yml
+  name: ArgumentException
+  fullName: System.ArgumentException
+  type: Class
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  href: System.InvalidOperationException.yml
+  name: InvalidOperationException
+  fullName: System.InvalidOperationException
+  type: Class
+- uid: System.Linq.Expressions.LabelExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.LabelExpression.yml
+  name: LabelExpression
+  fullName: System.Linq.Expressions.LabelExpression
+  type: Class
+  summary: >-
+    Represents a label, which can be placed in any @'System.Linq.Expressions.Expression' context. If
+
+    it is jumped to, it will get the value provided by the corresponding
+
+    @'System.Linq.Expressions.GotoExpression'. Otherwise, it gets the value in @'System.Linq.Expressions.LabelExpression.DefaultValue'. If the
+
+    @'System.Linq.Expressions.LabelExpression.Type' equals System.Void, no value should be provided.
 - uid: NodeType
 - uid: Lambda
 - uid: Body
@@ -11475,7 +11530,8 @@ references:
   - name: )
     fullName: )
 - uid: System.Type[]
-  isExternal: true
+  isExternal: false
+  href: System.Type.yml
   name: Type[]
   name.vb: Type()
   fullName: System.Type[]
@@ -11484,14 +11540,14 @@ references:
   - uid: System.Type
     name: Type
     fullName: System.Type
-    isExternal: true
+    href: System.Type.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Type
     name: Type
     fullName: System.Type
-    isExternal: true
+    href: System.Type.yml
   - name: ()
     fullName: ()
 - uid: System.Linq.Expressions.ListInitExpression
@@ -11516,9 +11572,11 @@ references:
 - uid: Expressions.Type
 - uid: System.Collections.IEnumerable
   parent: System.Collections
-  isExternal: true
+  isExternal: false
+  href: System.Collections.IEnumerable.yml
   name: IEnumerable
   fullName: System.Collections.IEnumerable
+  type: Interface
 - uid: Expressions.NodeType
 - uid: ListInitExpression.Initializers
 - uid: System.Linq.Expressions.ElementInit[]
@@ -11546,6 +11604,7 @@ references:
   isExternal: false
   name: System.Collections
   fullName: System.Collections
+  type: Namespace
 - uid: System.Collections.Generic.IEnumerable{System.Linq.Expressions.ElementInit}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
@@ -11613,9 +11672,11 @@ references:
   summary: Represents accessing a field or property.
 - uid: System.Reflection.FieldInfo
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.FieldInfo.yml
   name: FieldInfo
   fullName: System.Reflection.FieldInfo
+  type: Class
 - uid: System.Linq.Expressions.MemberInitExpression
   parent: System.Linq.Expressions
   isExternal: false
@@ -11624,6 +11685,12 @@ references:
   fullName: System.Linq.Expressions.MemberInitExpression
   type: Class
   summary: Represents calling a constructor and initializing one or more members of the new object.
+- uid: System.Linq.Expressions.MemberBinding.Member
+  parent: System.Linq.Expressions.MemberBinding
+  isExternal: false
+  href: System.Linq.Expressions.MemberBinding.yml
+  name: Member
+  fullName: System.Linq.Expressions.MemberBinding.Member
 - uid: System.Linq.Expressions.Expression.NodeType
   parent: System.Linq.Expressions.Expression
   isExternal: false
@@ -11704,6 +11771,18 @@ references:
   fullName: System.Linq.Expressions.MemberListBinding
   type: Class
   summary: Represents initializing the elements of a collection member of a newly created object.
+- uid: System.Reflection.FieldInfo.FieldType
+  parent: System.Reflection.FieldInfo
+  isExternal: false
+  href: System.Reflection.FieldInfo.yml
+  name: FieldType
+  fullName: System.Reflection.FieldInfo.FieldType
+- uid: System.Reflection.PropertyInfo.PropertyType
+  parent: System.Reflection.PropertyInfo
+  isExternal: false
+  href: System.Reflection.PropertyInfo.yml
+  name: PropertyType
+  fullName: System.Reflection.PropertyInfo.PropertyType
 - uid: System.Linq.Expressions.MemberBinding.BindingType
   parent: System.Linq.Expressions.MemberBinding
   isExternal: false
@@ -11711,12 +11790,6 @@ references:
   name: BindingType
   fullName: System.Linq.Expressions.MemberBinding.BindingType
 - uid: System.Linq.Expressions.MemberBindingType.ListBinding
-- uid: System.Linq.Expressions.MemberBinding.Member
-  parent: System.Linq.Expressions.MemberBinding
-  isExternal: false
-  href: System.Linq.Expressions.MemberBinding.yml
-  name: Member
-  fullName: System.Linq.Expressions.MemberBinding.Member
 - uid: System.Linq.Expressions.MemberListBinding.Initializers
 - uid: System.Linq.Expressions.MemberMemberBinding
   parent: System.Linq.Expressions
@@ -11818,9 +11891,11 @@ references:
 - uid: Constructor
 - uid: System.Reflection.ConstructorInfo
   parent: System.Reflection
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.ConstructorInfo.yml
   name: ConstructorInfo
   fullName: System.Reflection.ConstructorInfo
+  type: Class
 - uid: Arguments
 - uid: Members
 - uid: System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
@@ -11858,7 +11933,8 @@ references:
   - name: )
     fullName: )
 - uid: System.Reflection.MemberInfo[]
-  isExternal: true
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
   name: MemberInfo[]
   name.vb: MemberInfo()
   fullName: System.Reflection.MemberInfo[]
@@ -11867,14 +11943,14 @@ references:
   - uid: System.Reflection.MemberInfo
     name: MemberInfo
     fullName: System.Reflection.MemberInfo
-    isExternal: true
+    href: System.Reflection.MemberInfo.yml
   - name: '[]'
     fullName: '[]'
   spec.vb:
   - uid: System.Reflection.MemberInfo
     name: MemberInfo
     fullName: System.Reflection.MemberInfo
-    isExternal: true
+    href: System.Reflection.MemberInfo.yml
   - name: ()
     fullName: ()
 - uid: System.Linq.Expressions.RuntimeVariablesExpression
@@ -11968,9 +12044,11 @@ references:
 - uid: System.Linq.Expressions.SymbolDocumentInfo.Language
 - uid: System.Guid
   parent: System
-  isExternal: true
+  isExternal: false
+  href: System.Guid.yml
   name: Guid
   fullName: System.Guid
+  type: Struct
 - uid: System.Linq.Expressions.SymbolDocumentInfo.LanguageVendor
 - uid: System.Linq.Expressions.SymbolDocumentInfo.DocumentType
 - uid: System.Linq.Expressions.TryExpression

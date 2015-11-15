@@ -53,9 +53,11 @@ references:
   isExternal: false
   name: System.Collections.Generic
   fullName: System.Collections.Generic
+  type: Namespace
 - uid: System.Collections.Generic.IEnumerator{{T}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerator`1
+  href: System.Collections.Generic.IEnumerator`1.yml
   name: IEnumerator<T>
   name.vb: IEnumerator(Of T)
   fullName: System.Collections.Generic.IEnumerator<T>
@@ -64,7 +66,7 @@ references:
   - uid: System.Collections.Generic.IEnumerator`1
     name: IEnumerator
     fullName: System.Collections.Generic.IEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerator`1.yml
   - name: <
     fullName: <
   - name: T
@@ -75,7 +77,7 @@ references:
   - uid: System.Collections.Generic.IEnumerator`1
     name: IEnumerator
     fullName: System.Collections.Generic.IEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerator`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T
@@ -84,16 +86,18 @@ references:
     fullName: )
 - uid: System.Collections.Generic.IEnumerator`1
   parent: System.Collections.Generic
-  isExternal: true
+  isExternal: false
+  href: System.Collections.Generic.IEnumerator`1.yml
   name: IEnumerator<T>
   name.vb: IEnumerator(Of T)
   fullName: System.Collections.Generic.IEnumerator<T>
   fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  type: Interface
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerator`1
     name: IEnumerator
     fullName: System.Collections.Generic.IEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerator`1.yml
   - name: <
     fullName: <
   - name: T
@@ -104,7 +108,7 @@ references:
   - uid: System.Collections.Generic.IEnumerator`1
     name: IEnumerator
     fullName: System.Collections.Generic.IEnumerator
-    isExternal: true
+    href: System.Collections.Generic.IEnumerator`1.yml
   - name: '(Of '
     fullName: '(Of '
   - name: T

@@ -11,13 +11,13 @@ items:
   type: Enum
   source:
     remote: &o0
-      path: src/mscorlib/src/System/ConsoleSpecialKey.cs
+      path: src/System.Console/src/System/ConsoleSpecialKey.cs
       branch: master
-      repo: https://github.com/chenkennt/coreclr.git
-    path: src/mscorlib/src/System/ConsoleSpecialKey.cs
-    startLine: 17
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Console/src/System/ConsoleSpecialKey.cs
+    startLine: 5
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: Specifies combinations of modifier and console keys that can interrupt the current process.
   syntax:
@@ -32,10 +32,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleSpecialKey.cs
-    startLine: 22
+    path: src/System.Console/src/System/ConsoleSpecialKey.cs
+    startLine: 7
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The @'System.ConsoleModifiers.Control' modifier key plus the @'System.ConsoleKey.C' console key.
   syntax:
@@ -49,10 +49,10 @@ items:
   type: Field
   source:
     remote: *o0
-    path: src/mscorlib/src/System/ConsoleSpecialKey.cs
-    startLine: 23
+    path: src/System.Console/src/System/ConsoleSpecialKey.cs
+    startLine: 8
   assemblies:
-  - mscorlib
+  - System.Console
   namespace: System
   summary: The @'System.ConsoleModifiers.Control' modifier key plus the BREAK console key.
   syntax:
@@ -62,3 +62,4 @@ references:
   isExternal: false
   name: System
   fullName: System
+  type: Namespace

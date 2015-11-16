@@ -2,6 +2,9 @@ body {
   font-family: "Open Sans", "Segoe UI", sans-serif;
   padding-top: 0px;
 }
+footer {
+  z-index: 0;
+}
 .navbar-brand {
   font-size: 18px;
   padding: 15px;

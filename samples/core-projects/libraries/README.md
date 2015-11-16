@@ -14,12 +14,18 @@ To build/use any of these (using `new-library` as an example):
 
 3. Restore packages by typing the following:
 
+	`$ dnu restore -s "https://myget.org/F/xunit"`
+	
 	`$ dnu restore`
+	
+	Note: The first `dnu restore` is needed right not to allow for unit tests to run.  This will not be required in the future.
 
 4. To build and package the library as a NuGet package, type the following:
 
 	`$ cd src/Library`
+	
 	`$ dnu build`
+	
 	`$ dnu pack`
 	
 	Check out the `/bin/Debug` directory to see the generated artifacts and `.nupkg`.
@@ -27,13 +33,18 @@ To build/use any of these (using `new-library` as an example):
 5. To run unit tests (only applicable to `new-library`):
 
 	`$ cd ../../test/LibraryTests`
+	
 	`$ dnx test`
 
 And that's it!
 
 ## new-library
 
-The project under `/new-library` is a project targeting **only** .NET Core.  Backwards compatibility is not a goal.  It also showcases how to set up a basic unit test project that runs via Xunit's commandline interface.
+The project under `/new-library` is a project targeting **only** .NET Core.  Backwards compatibility is not a goal.
+
+It also showcases two other things: how to use multiple projects and how to test.
+
+There are two libraries showcased.  The first, `DependencyLibrary`, contains functionality that the second, `Library` uses.  The `LibraryTests` test project takes a dependency on `Library` to test that project.
 
 ## net45-library
 

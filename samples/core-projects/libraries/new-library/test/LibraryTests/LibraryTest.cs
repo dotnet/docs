@@ -13,4 +13,14 @@ public class LibraryTest
 		
 		Assert.Equal(expected, actual);
 	}
+	
+	[Fact]
+	public void ImportantMessageTest()
+	{
+		string expected = "Live long and prosper, Captain Kirk!";
+		
+		string actual = NewLibrary.GenerateImportantMessage("Captain Kirk");
+		
+		Assert.Equal(expected, actual);
+	}
 }

@@ -317,6 +317,81 @@ using System.Threading.Tasks;
 
 And that's it! Because `PORTABLE328` is now recognized by the compiler, and the generated `.dll` which corresponds to PCL Profile 328 will not include `System.Net.Http` or `System.Threading.Tasks`.
 
+## How to use multiple projects
+
+A common need for larger libraries is to place functionality in different projects.  For example, a library supplying functionality to both C# and F# consumers may have a core project, a C# project, and an F# project.  Here's how a potential folder structure would look:
+
+```
+/MyLibrary
+|__global.json
+|__/MyLibrary.Core
+   |__Sources
+   |__project.json
+|__/MyLibrary.CSharp
+   |__Sources
+   |__project.json
+|__/MyLibrary.FSharp
+   |__Sources
+   |__project.json
+```
+
+The `global.json` file would looke like this:
+
+```javascript
+{
+    "projects":[
+        "MyLibrary.Core",
+        "MyLibrary.CSharp",
+        "MyLibrary.FSharp"
+    ]
+}
+```
+
+And the `project.json` for both `MyLibrary.FSharp` and `MyLibrary.CSharp` would include a reference to `MyLibrary.Core`:
+
+```javascript
+{
+    "dependencies":{
+        "MyLibrary.Core":""
+        ...
+    }
+    ...
+}
+```
+
+To build it all, you would open a command line at the root of the project (`/MyLibrary`) and type this:
+
+```
+$ dnu restore
+$ cd MyLibrary.core
+$ dnu build
+$ cd ../MyLibrary.CSharp
+$ dnu build
+$ cd ../MyLibrary.FSharp
+$ dnu build
+```
+
+Any source files which use functionality in `MyLibrary.Core` can now just use it:
+
+C#:
+
+```csharp
+using MyLibrary.Core;
+```
+F#:
+
+```fsharp
+open MyLibrary.Core
+```
+
+And that's it!  `MyLibrary` now contains
+
+Important takeaways:
+
+* Projects are just folders with files in them.
+* There is a `global.json` file at the top level of your library which needs to names of each project (folder name).
+* A project using another project needs to register a dependency in its `project.json` before it can be used.
+
 ## How to test libraries on .NET Core
 
 It's important to be able to test across platforms.  You can do this using [Xunit](http://xunit.github.io/), which is also the testing tool used by .NET Core projects themselves.  Getting a test to work across platforms can be done like this:
@@ -379,20 +454,20 @@ It's important to be able to test across platforms.  You can do this using [Xuni
 
 4. Grab the dependencies for the `rc1` version of `xunit.runner.dnx` by opening a command prompt, navigating to the root of your library, and typing the following:
 
-    ```$ dnu resotre -s "https://myget.org/F/xunit"```
+    ```$ dnu restore -s "https://myget.org/F/xunit"```
 
 5. And then grab all other dependencies across the project:
 
     ```$ dnu restore```
 
-6. A then navigate to your library project and build it:
+6. And then navigate to your library project and build it:
 
     ```
     $ cd path-to-library-project
     $ dnu build
     ```
 
-7. A then navigate to your test project and run tests with `dnx test`:
+7. And then navigate to your test project and run tests with `dnx test`:
 
     ```
     $ cd path-to-test-project

@@ -4,6 +4,9 @@
         "System.Linq":"4.0.0-rc1-*", 
         "System.Console": "4.0.0-beta-*"
     },
+    "commands": {
+        "run": "aggregate"
+    },
     "frameworks": {
         "dnxcore50":{}
     }

@@ -1,0 +1,244 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Common Type System &amp; Common Language Specification &mdash; .NET Core Documentation 0.0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+    <link rel="top" title=".NET Core Documentation 0.0.1 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> .NET Core Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">The .NET Primer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials-samples/index.html">Tutorials &amp; Samples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/index.html">Developing using .NET Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../porting/index.html">Porting applications &amp; existing code to .NET Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packaging/index.html">Packaging .NET Core Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deployment/index.html">Deploying .NET Core applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nuget/index.html">.NET Package Manager (NuGet)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../languages/index.html">Programming languages on the .NET Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bcl/index.html">Base Class Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../async/async-index.html">Asynchronous Programming with .NET</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced topics</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">.NET Core Documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Common Type System &amp; Common Language Specification</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/concepts/common-type-system.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <noscript><img alt="" width="1" height="1" src="https://c.microsoft.com/trans_pixel.aspx"/></noscript><div class="section" id="common-type-system-common-language-specification">
+<h1>Common Type System &amp; Common Language Specification<a class="headerlink" href="#common-type-system-common-language-specification" title="Permalink to this headline">¶</a></h1>
+<p>Author: <a class="reference external" href="https://github.com/blackdwarf">Zlatko Knezevic</a></p>
+<p>Again, two terms that are freely used in the .NET world, they actually are crucial to understand how the .NET platform enables multi-language development and to understand how it works.</p>
+<div class="section" id="common-type-system">
+<h2>Common Type System<a class="headerlink" href="#common-type-system" title="Permalink to this headline">¶</a></h2>
+<p>To start from the beggining, remember that the .NET platform is <em>language agnostic</em>. This doesn&#8217;t just mean that a programmer can write her code in any language that can be compiled to IL. It also means that she needs to be able to interact with code written in other languages that are able to be used on the .NET platform.</p>
+<p>In order to do this transparently, there has to be a common way to describe all supported types. This is what the Common Type System (CTS) is in charge of doing. It was made to do several things:</p>
+<ul class="simple">
+<li>Establish a framework for cross-language execution.</li>
+<li>Provide an object-oriented model to support implementing various languages on .NET platform.</li>
+<li>Define a set of rules that all languages must follow when it comes to working with types.</li>
+<li>Provide a library that contains the basic primitive types that are used in application development (i.e. <code class="docutils literal"><span class="pre">Boolean</span></code>, <code class="docutils literal"><span class="pre">Byte</span></code>, <code class="docutils literal"><span class="pre">Char</span></code> etc.)</li>
+</ul>
+<p>CTS defines two main kinds of types that should be supported: reference and value types. Their names point to their definitions.</p>
+<p>Reference types&#8217; objects are represented by a reference to the object&#8217;s actual value; a reference here is similar to a pointer in C/C++. It simply refers to a memory location where the objects&#8217; values are. This has a profound impact on how these types are used. If you assign a reference type to a variable and then pass that variable into a method, for instance, any changes to the object will be reflected on the main object; there is no copying.</p>
+<p>Value types are the opposite, where the objects are represented by their vaulues. If you assign a value type to a variable, you are essentially copying a value of the object.</p>
+<p>CTS defines several categories of types, each with their specific semantics and usage:</p>
+<ul class="simple">
+<li>Classes</li>
+<li>Structures</li>
+<li>Enums</li>
+<li>Interfaces</li>
+<li>Delegates</li>
+</ul>
+<p>CTS also defines all other properties of the types, such as access modifiers, what are valid type members, how inheritance and overloading works and so on. Unfortunately, going deep into any of those is beyond the scope of an introductory article such as this, but you can consult <a class="reference internal" href="#more-resources">More resources</a> section at the end for links to more in-depth content that covers these topics.</p>
+</div>
+<div class="section" id="common-language-specification">
+<h2>Common Language Specification<a class="headerlink" href="#common-language-specification" title="Permalink to this headline">¶</a></h2>
+<p>To enable full interoperability scenarios, all objects that are created in code must rely on some commonality in the languages that are consuming them (are their <em>callers</em>). Since there are numerous different languages, .NET platform has specified those commonalities in something called the <strong>Common Language Specification</strong> (CLS). CLS defines a set of features that are needed by many common applications. It also provides a sort of recipe for any language that is implemented on top of .NET platform on what it needs to support.</p>
+<p>CLS is a subset of the CTS. This means that all of the rules in the CTS also apply to the CLS, unless the CLS rules are more strict. If a component is built using only the rules in the CLS, that is, it exposes only the CLS features in its API, it is said to be <strong>CLS-compliant</strong>. For instance, the <code class="xref doc docutils literal"><span class="pre">&lt;framework-librares&gt;</span></code> are CLS-compliant precisely because they need to work across all of the languages that are supported on the .NET platform.</p>
+<p>You can consult the documents in the <a class="reference internal" href="#more-resources">More Resources</a> section below to get an overview of all the features in the CLS.</p>
+</div>
+<div class="section" id="more-resources">
+<h2>More resources<a class="headerlink" href="#more-resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://msdn.microsoft.com/en-us/library/vstudio/zcx1eb1e(v=vs.100).aspx">Common Type System</a></li>
+<li><a class="reference external" href="https://msdn.microsoft.com/en-us/library/vstudio/12a7a7h3(v=vs.100).aspx">Common Language Specification</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Microsoft.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

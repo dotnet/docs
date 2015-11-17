@@ -1,0 +1,775 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Native interoperability &mdash; .NET Core Documentation 0.0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+    <link rel="top" title=".NET Core Documentation 0.0.1 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> .NET Core Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">The .NET Primer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials-samples/index.html">Tutorials &amp; Samples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/index.html">Developing using .NET Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../porting/index.html">Porting applications &amp; existing code to .NET Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packaging/index.html">Packaging .NET Core Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deployment/index.html">Deploying .NET Core applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nuget/index.html">.NET Package Manager (NuGet)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../languages/index.html">Programming languages on the .NET Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bcl/index.html">Base Class Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../async/async-index.html">Asynchronous Programming with .NET</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced topics</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">.NET Core Documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Native interoperability</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/concepts/native-interop.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <noscript><img alt="" width="1" height="1" src="https://c.microsoft.com/trans_pixel.aspx"/></noscript><div class="section" id="native-interoperability">
+<h1>Native interoperability<a class="headerlink" href="#native-interoperability" title="Permalink to this headline">¶</a></h1>
+<p>In this document we will dive a little bit deeper into all three ways of doing
+&#8220;native interoperability&#8221; that are available on the .NET platform.</p>
+<p>There are a few of reasons why you would want to call into native code:</p>
+<ul class="simple">
+<li>Operating Systems come with a large volume of APIs that are
+not present in the managed class libraries. A prime example for this would be
+access to hardware or operating system management functions.</li>
+<li>Communicating with other components that have or can produce C-style ABIs
+(native ABIs). This covers, for example, Java code that is exposed via
+<a class="reference external" href="http://docs.oracle.com/javase/8/docs/technotes/guides/jni/">Java Native Interface (JNI)</a>
+or any other managed language that could produce a native component.</li>
+<li>On Windows, most of the software that gets installed, such as Microsoft Office
+suite, registers COM components that represent their programs and allow developers
+to automate them or use them. This also requires native interoperability.</li>
+</ul>
+<p>Of course, the list above does not cover all of the potential situations and
+scenarios in which the developer would want/like/need to interface with native
+components. .NET class library, for instance, uses the native interoperability
+support to implement a fair number of its APIs, like console support and
+manipulation, file system access and others. However, it is important to note
+that there is an option, should one need it.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Most of the examples in this document will be presented for all three
+supported platforms for .NET Core (Windows, Linux, OS X). However, for some
+short and illustrative examples, I have decided to leave just one sample
+that will use Windows filenames and extensions (i.e. &#8220;dll&#8221; for libraries).
+This does not mean that those features are not available on Linux or OS X,
+it was done merely for conveince sake.</p>
+</div>
+<div class="section" id="platform-invoke-p-invoke">
+<h2>Platform Invoke (P/Invoke)<a class="headerlink" href="#platform-invoke-p-invoke" title="Permalink to this headline">¶</a></h2>
+<p>P/Invoke is a technology that allows you to access structs, callbacks and functions
+in unmanaged libraries from your managed code. Most of the P/Invoke API is contained
+in two namespaces: <code class="docutils literal"><span class="pre">System</span></code> and <code class="docutils literal"><span class="pre">System.Runtime.InteropServices</span></code>. Using these
+two namespaces will allow you access to the attributes that describe how you
+want to communicate with the native component.</p>
+<p>Let&#8217;s start from the most common example, and that is calling unmanaged functions
+in your managed code. Let&#8217;s show a message box from a command-line application:</p>
+<div class="highlight-c#"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">using</span> <span class="nn">System.Runtime.InteropServices</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
+
+    <span class="c1">// Import user32.dll (containing the function we need) and define</span>
+    <span class="c1">// the method corresponding to the native function.</span>
+<span class="na">    [DllImport(&quot;user32.dll&quot;)]</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="n">extrn</span> <span class="kt">int</span> <span class="nf">MessageBox</span><span class="p">(</span><span class="n">IntPtr</span> <span class="n">hWnd</span><span class="p">,</span> <span class="n">String</span> <span class="n">text</span><span class="p">,</span> <span class="n">String</span> <span class="n">caption</span><span class="p">,</span> <span class="kt">int</span> <span class="n">options</span><span class="p">);</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Invoke the function as a regular managed method.</span>
+        <span class="n">MessageBox</span><span class="p">(</span><span class="n">IntPtr</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span> <span class="s">&quot;Command-line message box&quot;</span><span class="p">,</span> <span class="s">&quot;Attention!&quot;</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>The example above is pretty simple, but it does show off what is needed to
+invoke unmanaged functions from managed code. Let&#8217;s step through the example:</p>
+<ul class="simple">
+<li>Line #1 shows the using statement for the <code class="docutils literal"><span class="pre">System.Runtime.InteropServices</span></code>
+which is the namespace that holds all of the items we need.</li>
+<li>Line #5 introduces the <code class="docutils literal"><span class="pre">DllImport</span></code> attribute. This attribute is crucial, as
+it tells the runtime that it should load the unmanaged DLL. This is the DLL
+into which we wish to invoke.</li>
+<li>Line #6 is the crux of the P/Invoke work. It defines a managed method that has
+the <strong>exact same signature</strong> as the unmanaged one. The declaration has a new
+keyword that you can notice, <code class="docutils literal"><span class="pre">extern</span></code>, which tells the runtime this is an
+external method, and that when you invoke it, the runtime should find it in the
+DLL specified in <code class="docutils literal"><span class="pre">DllImport</span></code> attribute.</li>
+</ul>
+<p>The rest of the example is just invoking the method as you would any other managed
+method.</p>
+<p>The sample is similar for OS X. One thing that needs to change is, of course,
+the name of the library in the <code class="docutils literal"><span class="pre">DllImport</span></code> attribute, as OS X has a different
+scheme of naming dynamic libraries. The sample below uses the <code class="docutils literal"><span class="pre">getpid(2)</span></code>
+function to get the process ID of the application and print it out to the console.</p>
+<div class="highlight-c#"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Runtime.InteropServices</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">PInvokeSamples</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
+
+        <span class="c1">// Import the libc and define the method corresponding to the native function.</span>
+<span class="na">        [DllImport(&quot;libSystem.dylib&quot;)]</span>
+        <span class="k">private</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">int</span> <span class="nf">getpid</span><span class="p">();</span>
+
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">){</span>
+            <span class="c1">// Invoke the function and get the process ID.</span>
+            <span class="kt">int</span> <span class="n">pid</span> <span class="p">=</span> <span class="n">getpid</span><span class="p">();</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">pid</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>It is similar on Linux, of course. The function name is same, since <code class="docutils literal"><span class="pre">getpid(2)</span></code>
+is <a class="reference external" href="https://en.wikipedia.org/wiki/POSIX">POSIX</a> system call.</p>
+<div class="highlight-c#"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Runtime.InteropServices</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">PInvokeSamples</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
+
+        <span class="c1">// Import the libc and define the method corresponding to the native function.</span>
+<span class="na">        [DllImport(&quot;libc.so.6&quot;)]</span>
+        <span class="k">private</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">int</span> <span class="nf">getpid</span><span class="p">();</span>
+
+        <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">){</span>
+            <span class="c1">// Invoke the function and get the process ID.</span>
+            <span class="kt">int</span> <span class="n">pid</span> <span class="p">=</span> <span class="n">getpid</span><span class="p">();</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">pid</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="invoking-managed-code-from-unmanaged-code">
+<h3>Invoking managed code from unmanaged code<a class="headerlink" href="#invoking-managed-code-from-unmanaged-code" title="Permalink to this headline">¶</a></h3>
+<p>Of course, the runtime allows communication to flow both ways
+which enables you to call into managed artifacts from native functions, using
+function pointers. The closest thing to a function pointer in managed code is a
+<strong>delegate</strong>, so this is what is used to allow callbacks from native code into
+managed code.</p>
+<p>The way to use this feature is similar to managed to native process described
+above. For a given callback, you define a delegate that matches the signature,
+and pass that into the external method. The runtime will take care of everything
+else.</p>
+<div class="highlight-c#"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Runtime.InteropServices</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">ConsoleApplication1</span> <span class="p">{</span>
+
+    <span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
+
+        <span class="c1">// Define a delegate that corresponds to the unmanaged function.</span>
+        <span class="k">delegate</span> <span class="kt">bool</span> <span class="nf">EnumWC</span><span class="p">(</span><span class="n">IntPtr</span> <span class="n">hwnd</span><span class="p">,</span> <span class="n">IntPtr</span> <span class="n">lParam</span><span class="p">);</span>
+
+        <span class="c1">// Import user32.dll (containing the function we need) and define</span>
+        <span class="c1">// the method corresponding to the native function.</span>
+<span class="na">        [DllImport(&quot;user32.dll&quot;)]</span>
+        <span class="k">static</span> <span class="k">extern</span> <span class="kt">int</span> <span class="nf">EnumWindows</span><span class="p">(</span><span class="n">EnumWC</span> <span class="n">hWnd</span><span class="p">,</span> <span class="n">IntPtr</span> <span class="n">lParam</span><span class="p">);</span>
+
+        <span class="c1">// Define the implementation of the delegate; here, we simply output the window handle.</span>
+        <span class="k">static</span> <span class="kt">bool</span> <span class="nf">OutputWindow</span><span class="p">(</span><span class="n">IntPtr</span> <span class="n">hwnd</span><span class="p">,</span> <span class="n">IntPtr</span> <span class="n">lParam</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">hwnd</span><span class="p">.</span><span class="n">ToInt64</span><span class="p">());</span>
+            <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Invoke the method; note the delegate as a first parameter.</span>
+            <span class="n">EnumWindows</span><span class="p">(</span><span class="n">OutputWindow</span><span class="p">,</span> <span class="n">IntPtr</span><span class="p">.</span><span class="n">Zero</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>Before we walk through our example, it is good to go over the signatures of the
+unmanaged functions we need to work with. The function we want to call to
+enumerate all of the windows has the following signature:
+<code class="docutils literal"><span class="pre">BOOL</span> <span class="pre">EnumWindows</span> <span class="pre">(WNDENUMPROC</span> <span class="pre">lpEnumFunc,</span> <span class="pre">LPARAM</span> <span class="pre">lParam);</span></code></p>
+<p>The first parameter is a callback. The said callback has the following signature:
+<code class="docutils literal"><span class="pre">BOOL</span> <span class="pre">CALLBACK</span> <span class="pre">EnumWindowsProc</span> <span class="pre">(HWND</span> <span class="pre">hwnd,</span> <span class="pre">LPARAM</span> <span class="pre">lParam);</span></code></p>
+<p>With this in mind, let&#8217;s walk through the example:</p>
+<ul class="simple">
+<li>Line #8 in the example defines a delegate that matches the signature of the
+callback from unmanaged code. Notice how the LPARAM and HWND types are
+represented using <code class="docutils literal"><span class="pre">IntPtr</span></code> in the managed code.</li>
+<li>Lines #10 and #11 introduce the <code class="docutils literal"><span class="pre">EnumWindows</span></code> function from the user32.dll
+library.</li>
+<li>Lines #13 - 16 implement the delegate. For this simple example, we just want
+to output the handle to the console.</li>
+<li>Finally, in line #19 we invoke the external method and pass in the delegate.</li>
+</ul>
+<p>The Linux and OS X examples are shown below. For them, we use the <code class="docutils literal"><span class="pre">ftw</span></code> function
+that can be found in <code class="docutils literal"><span class="pre">libc</span></code>, the C library. This function is used to traverse
+directory hierarchies and it takes a pointer to a function as one of its parameters.
+The said function has the following signature:
+<code class="docutils literal"><span class="pre">int</span> <span class="pre">(*fn)</span> <span class="pre">(const</span> <span class="pre">char</span> <span class="pre">*fpath,</span> <span class="pre">const</span> <span class="pre">struct</span> <span class="pre">stat</span> <span class="pre">*sb,</span> <span class="pre">int</span> <span class="pre">typeflag)</span></code>.</p>
+<div class="highlight-c#"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Runtime.InteropServices</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">PInvokeSamples</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
+
+            <span class="c1">// Define a delegate that has the same signature as the native function.</span>
+            <span class="k">delegate</span> <span class="kt">int</span> <span class="nf">DirClbk</span><span class="p">(</span><span class="kt">string</span> <span class="n">fName</span><span class="p">,</span> <span class="n">StatClass</span> <span class="n">stat</span><span class="p">,</span> <span class="kt">int</span> <span class="n">typeFlag</span><span class="p">);</span>
+
+            <span class="c1">// Import the libc and define the method to represent the native function.</span>
+<span class="na">            [DllImport(&quot;libc.so.6&quot;)]</span>
+            <span class="k">static</span> <span class="k">extern</span> <span class="kt">int</span> <span class="nf">ftw</span><span class="p">(</span><span class="kt">string</span> <span class="n">dirpath</span><span class="p">,</span> <span class="n">DirClbk</span> <span class="n">cl</span><span class="p">,</span> <span class="kt">int</span> <span class="n">descriptors</span><span class="p">);</span>
+
+            <span class="c1">// Implement the above DirClbk delegate;</span>
+            <span class="c1">// this one just prints out the filename that is passed to it.</span>
+            <span class="k">static</span> <span class="kt">int</span> <span class="nf">DisplayEntry</span><span class="p">(</span><span class="kt">string</span> <span class="n">fName</span><span class="p">,</span> <span class="n">StatClass</span> <span class="n">stat</span><span class="p">,</span> <span class="kt">int</span> <span class="n">typeFlag</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">fName</span><span class="p">);</span>
+                    <span class="k">return</span> <span class="m">0</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">){</span>
+                    <span class="c1">// Call the native function.</span>
+                    <span class="c1">// Note the second parameter which represents the delegate (callback).</span>
+                    <span class="n">ftw</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">,</span> <span class="n">DisplayEntry</span><span class="p">,</span> <span class="m">10</span><span class="p">);</span>
+            <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="c1">// The native callback takes a pointer to a struct. The below class</span>
+    <span class="c1">// represents that struct in managed code. You can find more information</span>
+    <span class="c1">// about this in the section on marshalling below.</span>
+<span class="na">    [StructLayout(LayoutKind.Sequential)]</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">StatClass</span> <span class="p">{</span>
+            <span class="k">public</span> <span class="kt">uint</span> <span class="n">DeviceID</span><span class="p">;</span>
+            <span class="k">public</span> <span class="kt">uint</span> <span class="n">InodeNumber</span><span class="p">;</span>
+            <span class="k">public</span> <span class="kt">uint</span> <span class="n">Mode</span><span class="p">;</span>
+            <span class="k">public</span> <span class="kt">uint</span> <span class="n">HardLinks</span><span class="p">;</span>
+            <span class="k">public</span> <span class="kt">uint</span> <span class="n">UserID</span><span class="p">;</span>
+            <span class="k">public</span> <span class="kt">uint</span> <span class="n">GroupID</span><span class="p">;</span>
+            <span class="k">public</span> <span class="kt">uint</span> <span class="n">SpecialDeviceID</span><span class="p">;</span>
+            <span class="k">public</span> <span class="kt">ulong</span> <span class="n">Size</span><span class="p">;</span>
+            <span class="k">public</span> <span class="kt">ulong</span> <span class="n">BlockSize</span><span class="p">;</span>
+            <span class="k">public</span> <span class="kt">uint</span> <span class="n">Blocks</span><span class="p">;</span>
+            <span class="k">public</span> <span class="kt">long</span> <span class="n">TimeLastAccess</span><span class="p">;</span>
+            <span class="k">public</span> <span class="kt">long</span> <span class="n">TimeLastModification</span><span class="p">;</span>
+            <span class="k">public</span> <span class="kt">long</span> <span class="n">TimeLastStatusChange</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>OS X example uses the same function, and the only difference is the argument
+to the <code class="docutils literal"><span class="pre">DllImport</span></code> attribute, as OS X keeps <code class="docutils literal"><span class="pre">libc</span></code> in a different place.</p>
+<div class="highlight-c#"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Runtime.InteropServices</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">PInvokeSamples</span> <span class="p">{</span>
+        <span class="k">public</span> <span class="k">static</span> <span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
+
+                <span class="c1">// Define a delegate that has the same signature as the native function.</span>
+                <span class="k">delegate</span> <span class="kt">int</span> <span class="nf">DirClbk</span><span class="p">(</span><span class="kt">string</span> <span class="n">fName</span><span class="p">,</span> <span class="n">StatClass</span> <span class="n">stat</span><span class="p">,</span> <span class="kt">int</span> <span class="n">typeFlag</span><span class="p">);</span>
+
+                <span class="c1">// Import the libc and define the method to represent the native function.</span>
+<span class="na">                [DllImport(&quot;libSystem.dylib&quot;)]</span>
+                <span class="k">static</span> <span class="k">extern</span> <span class="kt">int</span> <span class="nf">ftw</span><span class="p">(</span><span class="kt">string</span> <span class="n">dirpath</span><span class="p">,</span> <span class="n">DirClbk</span> <span class="n">cl</span><span class="p">,</span> <span class="kt">int</span> <span class="n">descriptors</span><span class="p">);</span>
+
+                <span class="c1">// Implement the above DirClbk delegate;</span>
+                <span class="c1">// this one just prints out the filename that is passed to it.</span>
+                <span class="k">static</span> <span class="kt">int</span> <span class="nf">DisplayEntry</span><span class="p">(</span><span class="kt">string</span> <span class="n">fName</span><span class="p">,</span> <span class="n">StatClass</span> <span class="n">stat</span><span class="p">,</span> <span class="kt">int</span> <span class="n">typeFlag</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">fName</span><span class="p">);</span>
+                        <span class="k">return</span> <span class="m">0</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">){</span>
+                        <span class="c1">// Call the native function.</span>
+                        <span class="c1">// Note the second parameter which represents the delegate (callback).</span>
+                        <span class="n">ftw</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">,</span> <span class="n">DisplayEntry</span><span class="p">,</span> <span class="m">10</span><span class="p">);</span>
+                <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="c1">// The native callback takes a pointer to a struct. The below class</span>
+        <span class="c1">// represents that struct in managed code. You can find more information</span>
+        <span class="c1">// about this in the section on marshalling below.</span>
+<span class="na">        [StructLayout(LayoutKind.Sequential)]</span>
+        <span class="k">public</span> <span class="k">class</span> <span class="nc">StatClass</span> <span class="p">{</span>
+                <span class="k">public</span> <span class="kt">uint</span> <span class="n">DeviceID</span><span class="p">;</span>
+                <span class="k">public</span> <span class="kt">uint</span> <span class="n">InodeNumber</span><span class="p">;</span>
+                <span class="k">public</span> <span class="kt">uint</span> <span class="n">Mode</span><span class="p">;</span>
+                <span class="k">public</span> <span class="kt">uint</span> <span class="n">HardLinks</span><span class="p">;</span>
+                <span class="k">public</span> <span class="kt">uint</span> <span class="n">UserID</span><span class="p">;</span>
+                <span class="k">public</span> <span class="kt">uint</span> <span class="n">GroupID</span><span class="p">;</span>
+                <span class="k">public</span> <span class="kt">uint</span> <span class="n">SpecialDeviceID</span><span class="p">;</span>
+                <span class="k">public</span> <span class="kt">ulong</span> <span class="n">Size</span><span class="p">;</span>
+                <span class="k">public</span> <span class="kt">ulong</span> <span class="n">BlockSize</span><span class="p">;</span>
+                <span class="k">public</span> <span class="kt">uint</span> <span class="n">Blocks</span><span class="p">;</span>
+                <span class="k">public</span> <span class="kt">long</span> <span class="n">TimeLastAccess</span><span class="p">;</span>
+                <span class="k">public</span> <span class="kt">long</span> <span class="n">TimeLastModification</span><span class="p">;</span>
+                <span class="k">public</span> <span class="kt">long</span> <span class="n">TimeLastStatusChange</span><span class="p">;</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>Both of the above examples depend on parameters, and in both cases, the parameters
+are given as managed types. Runtime does the &#8220;right thing&#8221; and processes these
+into its equivalents on the other side. Since this process is really important
+to writing quality native interop code, let&#8217;s take a look at what happens when
+the runtime <em>marshals</em> the types.</p>
+</div>
+</div>
+<div class="section" id="type-marshalling">
+<h2>Type marshalling<a class="headerlink" href="#type-marshalling" title="Permalink to this headline">¶</a></h2>
+<p><strong>Marshalling</strong> is the process of transforming types when they need to cross the
+managed boundary into native and vice versa.</p>
+<p>The reason marshalling is needed is because the types in the managed and unmanaged
+code are different. In managed code, for instance, you have a <code class="docutils literal"><span class="pre">String</span></code>, while in
+the unmanaged world strings can be Unicode (&#8220;wide&#8221;), non-Unicode, null-terminated,
+ASCII, etc. By default, the P/Invoke subsystem will try to do the Right Thing
+based on the default behavior which you can see on <a class="reference external" href="https://msdn.microsoft.com/en-us/library/zah6xy75.aspx">MSDN</a>.
+However, for those situations where you need extra control, you can employ the
+<code class="docutils literal"><span class="pre">MarshalAs</span></code> attribute to specify what is the expected type on the unmanaged
+side. For instance, if we want the string to be sent as a null-terminated
+ANSI string, we could do it like this:</p>
+<div class="highlight-c#"><div class="highlight"><pre><span class="na">[DllImport(&quot;somenativelibrary.dll&quot;]</span>
+<span class="k">static</span> <span class="k">extern</span> <span class="kt">int</span> <span class="nf">MethodA</span><span class="p">([</span><span class="n">MarshalAs</span><span class="p">(</span><span class="n">UnmanagedType</span><span class="p">.</span><span class="n">LPStr</span><span class="p">)</span> <span class="kt">string</span> <span class="n">parameter</span><span class="p">);</span>
+</pre></div>
+</div>
+<div class="section" id="marshalling-classes-and-structs">
+<h3>Marshalling classes and structs<a class="headerlink" href="#marshalling-classes-and-structs" title="Permalink to this headline">¶</a></h3>
+<p>Another aspect of type marshalling is how to pass in a struct to an unmanaged method.
+For instance, some of the unmanaged methods require a struct as a parameter.
+In these cases, we need to create a corresponding struct or a class in managed
+part of the world to use it as a parameter. However, just defining the class is
+not enough, we also need to instruct the marshaler how to map fields in the class
+to the unmanaged struct. This is where the <code class="docutils literal"><span class="pre">StructLayout</span></code> attribute comes into
+play.</p>
+<div class="highlight-c#"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="highlight"><pre><span class="na">[DllImport(&quot;kernel32.dll&quot;)]</span>
+<span class="k">static</span> <span class="k">extern</span> <span class="k">void</span> <span class="nf">GetSystemTime</span><span class="p">(</span><span class="n">SystemTime</span> <span class="n">systemTime</span><span class="p">);</span>
+
+<span class="na">[StructLayout(LayoutKind.Sequential)]</span>
+<span class="k">class</span> <span class="nc">SystemTime</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="kt">ushort</span> <span class="n">Year</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">ushort</span> <span class="n">Month</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">ushort</span> <span class="n">DayOfWeek</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">ushort</span> <span class="n">Day</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">ushort</span> <span class="n">Hour</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">ushort</span> <span class="n">Minute</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">ushort</span> <span class="n">Second</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">ushort</span> <span class="n">Milsecond</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">SystemTime</span> <span class="n">st</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SystemTime</span><span class="p">();</span>
+    <span class="n">GetSystemTime</span><span class="p">(</span><span class="n">st</span><span class="p">);</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">st</span><span class="p">.</span><span class="n">Year</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>The example above shows off a simple example of calling into <code class="docutils literal"><span class="pre">GetSystemTime()</span></code>
+function. The interesting bit is on line 4. The attribute specifies that the
+fields of the class should be mapped sequentially to the struct on the other
+(unmanaged) side. This means that the naming of the fields is not important,
+only their order is important, as it needs to correspond to the unmanaged struct,
+shown below:</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="k">typedef</span> <span class="k">struct</span> <span class="n">_SYSTEMTIME</span> <span class="p">{</span>
+  <span class="n">WORD</span> <span class="n">wYear</span><span class="p">;</span>
+  <span class="n">WORD</span> <span class="n">wMonth</span><span class="p">;</span>
+  <span class="n">WORD</span> <span class="n">wDayOfWeek</span><span class="p">;</span>
+  <span class="n">WORD</span> <span class="n">wDay</span><span class="p">;</span>
+  <span class="n">WORD</span> <span class="n">wHour</span><span class="p">;</span>
+  <span class="n">WORD</span> <span class="n">wMinute</span><span class="p">;</span>
+  <span class="n">WORD</span> <span class="n">wSecond</span><span class="p">;</span>
+  <span class="n">WORD</span> <span class="n">wMilliseconds</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">SYSTEMTIME</span><span class="p">,</span> <span class="o">*</span><span class="n">PSYSTEMTIME</span><span class="o">*</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>We already saw the Linux and OS X example for this in the previous example. It is
+shown again below.</p>
+<div class="highlight-c#"><div class="highlight"><pre><span class="na">[StructLayout(LayoutKind.Sequential)]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">StatClass</span> <span class="p">{</span>
+        <span class="k">public</span> <span class="kt">uint</span> <span class="n">DeviceID</span><span class="p">;</span>
+        <span class="k">public</span> <span class="kt">uint</span> <span class="n">InodeNumber</span><span class="p">;</span>
+        <span class="k">public</span> <span class="kt">uint</span> <span class="n">Mode</span><span class="p">;</span>
+        <span class="k">public</span> <span class="kt">uint</span> <span class="n">HardLinks</span><span class="p">;</span>
+        <span class="k">public</span> <span class="kt">uint</span> <span class="n">UserID</span><span class="p">;</span>
+        <span class="k">public</span> <span class="kt">uint</span> <span class="n">GroupID</span><span class="p">;</span>
+        <span class="k">public</span> <span class="kt">uint</span> <span class="n">SpecialDeviceID</span><span class="p">;</span>
+        <span class="k">public</span> <span class="kt">ulong</span> <span class="n">Size</span><span class="p">;</span>
+        <span class="k">public</span> <span class="kt">ulong</span> <span class="n">BlockSize</span><span class="p">;</span>
+        <span class="k">public</span> <span class="kt">uint</span> <span class="n">Blocks</span><span class="p">;</span>
+        <span class="k">public</span> <span class="kt">long</span> <span class="n">TimeLastAccess</span><span class="p">;</span>
+        <span class="k">public</span> <span class="kt">long</span> <span class="n">TimeLastModification</span><span class="p">;</span>
+        <span class="k">public</span> <span class="kt">long</span> <span class="n">TimeLastStatusChange</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal"><span class="pre">StatClass</span></code> class represents a structure that is returned by the <code class="docutils literal"><span class="pre">stat</span></code>
+system call on UNIX systems. It represents information about a given file. The
+class above is the stat struct representation in managed code. Again, the fields
+in the class have to be in the same order as the native struct (you can find these
+by perusing man pages on your favorite UNIX implementation) and they have to be
+of the same underlying type.</p>
+</div>
+</div>
+<div class="section" id="more-resources">
+<h2>More resources<a class="headerlink" href="#more-resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.pinvoke.net">PInvoke.net wiki</a> an excellent Wiki with information
+on common Win32 APIs and how to call them.</li>
+<li><a class="reference external" href="https://msdn.microsoft.com/en-us/library/zbz07712.aspx">P/Invoke on MSDN</a></li>
+<li><a class="reference external" href="http://www.mono-project.com/docs/advanced/pinvoke/">Mono documentation on P/Invoke</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Microsoft.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

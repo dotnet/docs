@@ -2,6 +2,22 @@
 
 The code samples here are simple, buildable projects which augment the .NET Core Documentation with demonstrative code snippets.  These samples are directly embedded into documentation.
 
+Sample projects are broken up by language.  Here is an example general structure:
+
+```
+/samples
+   /concept-to-sample
+      /csharp
+         global.json
+         /src
+            File1.cs
+            project.json
+         /test
+            Test1.cs
+            project.json
+      /vb
+      /fsharp
+```
 If you wish to add a code sample:
 
 1. Your sample **must be part of a buildable project**
@@ -15,15 +31,19 @@ We will eventually have a CI system in place to build these projects.
 To create a sample:
 
 1. File an [issue](https://github.com/dotnet/core-docs/issues) or add a comment to an existing one that you are working on it.
-2. For each set of samples that demonstrates a concept, add a project.json with your dependencies and target coreclr:
+2. For each set of samples that demonstrates a concept, add a project.json with your dependencies and target coreclr. Additionally,
+add a run command specifying the sample folder so people using VSCode or Visual Studio can run the sample directly:
 
- ```javascript
+ ```json
  	{
 		"dependencies": {
-		    "System.Runtime":"4.0.0-rc1-*",
-		    "System.Linq":"4.0.0-rc1-*",
-		    "System.Console": "4.0.0-beta-*"
+		    "System.Runtime":"4.0.0-*",
+		    "System.Linq":"4.0.0-*",
+		    "System.Console": "4.0.0-*"
 	    },
+      "commands": {
+        "run" : "<SAMPLE FOLDER>"
+      },
 	    "frameworks": {
 		    "dnxcore50":{}
 	    }

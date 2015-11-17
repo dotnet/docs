@@ -175,9 +175,9 @@ This is the convention used in .NET to more-easily differentiate synchronous and
 
 It’s the only way to allow asynchronous event handlers to work because events do not have return types (thus cannot make use of `Task` and `Task<T>`). Any other use of ``async void``does not follow the Task-based model and can be challenging to use, such as:
 
-> *   Exceptions thrown in an `async void` method can’t be caught outside of that method.
-> *   `async void` methods are very difficult to test.
-> *   `async void` methods can cause bad side effects if the caller isn’t expecting them to be async.
+  *   Exceptions thrown in an `async void` method can’t be caught outside of that method.
+  *   `async void` methods are very difficult to test.
+  *   `async void` methods can cause bad side effects if the caller isn’t expecting them to be async.
 
 *   **Tread carefully when using async lambdas in LINQ expressions**
 
@@ -198,12 +198,12 @@ Blocking the current thread as a means to wait for a Task to complete can result
 
 Don’t depend on the state of global objects or the execution of certain methods. Instead, depend only on the return values of methods. Why?
 
-> *   Code will be easier to reason about.
-> *   Code will be easier to test.
-> *   Mixing async and synchronous code is far simpler.
-> *   Race conditions can typically be avoided altogether.
-> *   Depending on return values makes coordinating async code simple.
-> *   (Bonus) it works really well with dependency injection.
+  *   Code will be easier to reason about.
+  *   Code will be easier to test.
+  *   Mixing async and synchronous code is far simpler.
+  *   Race conditions can typically be avoided altogether.
+  *   Depending on return values makes coordinating async code simple.
+  *   (Bonus) it works really well with dependency injection.
 
 A recommended goal is to achieve complete or near-complete [Referential Transparency](https://en.wikipedia.org/wiki/Referential_transparency_%28computer_science%29) in your code. Doing so will result in an extremely predictable, testable, and maintainable codebase.
 

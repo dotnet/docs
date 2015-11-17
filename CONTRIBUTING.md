@@ -1,43 +1,29 @@
 Contributing
 ======
 
-The documentation is built using [Sphinx](http://sphinx-doc.org) and
-[reStructuredText](http://sphinx-doc.org/rest.html), and then hosted by
-[ReadTheDocs](http://dotnet.readthedocs.org).
+The documentation is built using [docfx](http://aspnet.github.io/docfx/) and
+[Markdown](https://daringfireball.net/projects/markdown/syntax). It is hosted on the [.NET Core](http://dotnet.github.io/) website. 
 
 ## Building the Docs
 
 To build the docs, you will need to install
-[python](https://www.python.org/downloads/) (version 2). If you are
-running Windows, you will want to add the Python install folder and the
-\Scripts\ folder to your `PATH` environment variable.
+[docfx](http://aspnet.github.io/docfx/); latest versions are the best. 
 
-To install Sphinx, open a command prompt and run:
+There are several ways to use docfx, and most of them are covered in the docfx [getting started guide](http://aspnet.github.io/docfx/tutorial/docfx_getting_started.html). This small guide will use the [DNX-based](http://aspnet.github.io/docfx/tutorial/docfx_getting_started.html#use-docfx-under-dnx) version of the tool to be able to invoke it from the command line; if you are comfortable with other ways listed on the link above, feel free to use those. 
 
-	pip install sphinx
+**Note:** please note that as of now, docfx requires the full .NET Framework (Windows) or Mono (Linux/OSX). We will be working towards porting it to .NET Core in the future. 
 
-This may take a few minutes.
+The conceptual documentation is placed in the docs folder in the root of the repo so most of the work will happen there. 
 
-This project is also using a custom theme from ReadTheDocs, which you can
-install with:
+Using the DNX-based docfx tool, you build the resulting 
 
-	pip install sphinx_rtd_theme
+	docfx build
+	
+After build completes, you can preview the resulting site locally using built-in web server.
 
-Note that later if you wish to update your current, installed version of this
-theme, you should run:
-
-	pip install -U sphinx_rtd_theme
-
-You should now be able to navigate to the `docs` folder and run
-
-	make html
-
-which should generate the documentation in the _build folder. Open the
-_build/html/index.html file to view the generated documentation.
-
-If contributing new documentation content, please review:
-
-- the [Sphinx Style Guide](http://documentation-style-guide-sphinx.readthedocs.org/en/latest/style-guide.html)
+	docfx serve
+	
+This will start the local preview on localhost:8080. You can then view the changes by going to http://localhost:8080/docs/[path] (i.e. http://localhost:8080/docs/getting-started/).   
 
 ## Adding Content ##
 
@@ -61,11 +47,8 @@ subfolder, create a ``sample`` folder for code samples and a  ``_static`` folder
       /_static
         portability_report.png
 					...
-**Note:** Sphinx will automatically fix duplicate image names. There is no need
-to try to ensure uniqueness of static files beyond an individual article.
 
-Author information is kept in _authors.txt_ file in the docs folder. The authors
- should be specified by a name and a link to the author's GitHub profile.
+Author information is kept in the Markdown file itself. Each author should have a link to an online presence for himself/herself. 
 
 ## Process for Contributing ##
 
@@ -78,7 +61,7 @@ relates to existing content. Get approval to write your article.
 
 **Step 4:** Write your article, placing the article in its own folder and any
 needed images in a _static folder located in the same folder as the article.
-Be sure to follow the proper reStructuredText syntax. If you have code samples,
+Be sure to follow the proper Markdown syntax. If you have code samples,
 place them in a folder within the `/samples/` folder.
 
 **Step 5:** Submit a Pull Request from your branch to `dotnet/core-docs/master`.

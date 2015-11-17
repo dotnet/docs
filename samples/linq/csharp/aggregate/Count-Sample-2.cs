@@ -15,7 +15,7 @@ namespace Aggregate
 
             int oddNumbers = numbers.Count(n => n%2 == 1);
 
-            Console.WriteLine("There are {0} odd numbers in the list.", oddNumbers);
+            Console.WriteLine($"There are {oddNumbers} odd numbers in the list.");
         }
     }
 }

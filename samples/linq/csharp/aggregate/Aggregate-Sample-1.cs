@@ -14,7 +14,7 @@ namespace Aggregate
             
             double product = doubles.Aggregate((runningProduct, nextFactor) => runningProduct * nextFactor);
 
-            Console.WriteLine("Total product of all numbers: {0}", product);
+            Console.WriteLine($"Total product of all numbers: {product}");
         }
     }
 }

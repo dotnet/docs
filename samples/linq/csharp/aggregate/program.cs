@@ -25,5 +25,37 @@ public class Program
         Aggregate.SumSample3.QuerySyntaxExample();
 
         Aggregate.SumSample3.MethodSyntaxExample();
+
+        Aggregate.MaxSample1.Example();
+
+        Aggregate.MaxSample2.Example();
+
+        Aggregate.MaxSample3.MethodSyntaxExample();
+
+        Aggregate.MaxSample3.QuerySyntaxExample();
+
+        Aggregate.MaxSample4.MethodSyntaxExample();
+
+        Aggregate.MaxSample4.QuerySyntaxExample();
+
+        Aggregate.MinSample1.Example();
+
+        Aggregate.MinSample2.Example();
+
+        Aggregate.MinSample3.MethodSyntaxExample();
+
+        Aggregate.MinSample3.QuerySyntaxExample();
+
+        Aggregate.MinSample4.MethodSyntaxExample();
+
+        Aggregate.MinSample4.QuerySyntaxExample();
+
+        Aggregate.AverageSample1.Example();
+
+        Aggregate.AverageSample2.Example();
+
+        Aggregate.AverageSample3.MethodSyntaxExample();
+
+        Aggregate.AverageSample3.QuerySyntaxExample();
     }
 }

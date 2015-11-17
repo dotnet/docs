@@ -23,7 +23,7 @@ namespace Aggregate
 
             foreach (var item in orderCounts)
             {
-                Console.WriteLine("Customer {0} has {1} order(s).", item.Customer, item.OrderCount);
+                Console.WriteLine($"Customer {item.Customer} has {item.OrderCount} order(s).");
             }
         }
     }

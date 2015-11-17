@@ -15,7 +15,7 @@ namespace Aggregate
 
             double totalChars = words.Sum(w => w.Length);
 
-            Console.WriteLine("There are a total of {0} characters in these words.", totalChars);
+            Console.WriteLine($"There are a total of {totalChars} characters in these words.");
         }
     }
 }

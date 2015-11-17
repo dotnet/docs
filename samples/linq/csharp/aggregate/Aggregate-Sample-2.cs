@@ -20,7 +20,7 @@ namespace Aggregate
 				(balance, nextWithdrawal) => 
 				((nextWithdrawal <= balance) ? (balance - nextWithdrawal) : balance)); 
 
-			Console.WriteLine("Ending balance: {0}", endBalance); 
+			Console.WriteLine($"Ending balance: {endBalance}"); 
 		 }
 	}
 }

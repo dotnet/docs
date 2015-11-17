@@ -25,11 +25,11 @@ namespace Aggregate
                 from prod in products
                 group prod by prod.Category
                 into prodGroup
-                select new {Category = prodGroup.Key, ProductCount = prodGroup.Count()};
+                select new {CategoryName = prodGroup.Key, ProductCount = prodGroup.Count()};
 
             foreach (var item in categoryCounts)
             {
-                Console.WriteLine("There are {0} products in the {1} category.", item.ProductCount, item.Category);
+                Console.WriteLine($"There are {item.ProductCount} products in the {item.CategoryName} category.");
             }
         }
 
@@ -50,11 +50,11 @@ namespace Aggregate
 
             var categoryCounts =
                 products.GroupBy(prod => prod.Category)
-                    .Select(prodGroup => new {Category = prodGroup.Key, ProductCount = prodGroup.Count()});
+                    .Select(prodGroup => new {CategoryName = prodGroup.Key, ProductCount = prodGroup.Count()});
 
             foreach (var item in categoryCounts)
             {
-                Console.WriteLine("There are {0} products in the {1} category.", item.ProductCount, item.Category);
+                Console.WriteLine($"There are {item.ProductCount} products in the {item.CategoryName} category.");
             }
         }
     }

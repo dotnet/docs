@@ -15,7 +15,7 @@ namespace Aggregate
 
             int uniqueFactors = factorsOf300.Distinct().Count();
 
-            Console.WriteLine("There are {0} unique factors of 300.", uniqueFactors);
+            Console.WriteLine($"There are {uniqueFactors} unique factors of 300.");
         }
 
         //This sample uses Count to get the number of unique factors of 300 using query syntax. 
@@ -29,7 +29,7 @@ namespace Aggregate
             int uniqueFactors =
                 (from f in factorsOf300 select f).Distinct().Count();
 
-            Console.WriteLine("There are {0} unique factors of 300.", uniqueFactors);
+            Console.WriteLine($"There are {uniqueFactors} unique factors of 300.");
         }
     }
 }

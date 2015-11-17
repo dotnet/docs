@@ -25,11 +25,10 @@ namespace Aggregate
                 from prod in products
                 group prod by prod.Category
                 into prodGroup
-                select new {Category = prodGroup.Key, TotalUnitsInStock = prodGroup.Sum(p => p.UnitsInStock)};
+                select new {CategoryName = prodGroup.Key, TotalUnitsInStock = prodGroup.Sum(p => p.UnitsInStock)};
             foreach (var category in categories)
             {
-                Console.WriteLine("Category {0} has {1} unit(s) in stock.", category.Category,
-                    category.TotalUnitsInStock);
+                Console.WriteLine($"Category {category.CategoryName} has {category.TotalUnitsInStock} unit(s) in stock.");
             }
         }
 
@@ -52,11 +51,10 @@ namespace Aggregate
                 products.GroupBy(prod => prod.Category)
                     .Select(
                         prodGroup =>
-                            new {Category = prodGroup.Key, TotalUnitsInStock = prodGroup.Sum(p => p.UnitsInStock)});
+                            new {CategoryName = prodGroup.Key, TotalUnitsInStock = prodGroup.Sum(p => p.UnitsInStock)});
             foreach (var category in categories)
             {
-                Console.WriteLine("Category {0} has {1} unit(s) in stock.", category.Category,
-                    category.TotalUnitsInStock);
+                Console.WriteLine($"Category {category.CategoryName} has {category.TotalUnitsInStock} unit(s) in stock.");
             }
         }
     }

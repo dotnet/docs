@@ -15,7 +15,7 @@ namespace Aggregate
 
             double numSum = numbers.Sum();
 
-            Console.WriteLine("The sum of the numbers is {0}.", numSum);
+            Console.WriteLine($"The sum of the numbers is {numSum}.");
         }
     }
 }

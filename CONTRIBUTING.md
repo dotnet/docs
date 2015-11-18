@@ -21,7 +21,7 @@ Using the DNX-based docfx tool, you build the resulting
 	
 After build completes, you can preview the resulting site locally using built-in web server.
 
-	docfx serve
+	docfx serve _site
 	
 This will start the local preview on localhost:8080. You can then view the changes by going to http://localhost:8080/docs/[path] (i.e. http://localhost:8080/docs/getting-started/).   
 

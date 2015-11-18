@@ -1,21 +1,21 @@
 # Guidelines
 
 Developers will be reading your documents to learn .NET core, and to use it in their regular work.
-You want to create useful documentation that helps the reader on their journey. Our guidelines
-should help with that. We want:
-- Conversational Tone
-- 2nd Person
-- Active Voice
-- 5th Grade Reading Level
-You should see examples of each of these as you read this style guide. I've written this guide
+Your goal is to create useful documentation that helps the reader on their journey. Our guidelines
+help with that. Our style guide contains four recommendations:
+- [Use a Conversational Tone](#use-a-conversational-tone)
+- Write in 2nd Person
+- Use an Active Voice
+- Target a 5th Grade Reading Level
+
+You will see examples of each of these as you read this style guide. I've written this guide
 following our guidelines to provide examples for you to follow as you build documentation
-for .NET core. 
+for .NET core. I also provide contrasting samples so you can see what articles look like
+when you don't follow our guidelines.
 
 # Details on each guideline
 
-We've got four main guidelines for you to follow when you write new pages for us. 
-
-## Conversational Tone
+## Use a Conversational Tone
 We want our documentation to have a conversational tone. YOu should feel as though you
 are having a conversation with the author as you read any of our tutorials or explanations.
 Your experience as a reader should be informal, conversational, and informative. You should

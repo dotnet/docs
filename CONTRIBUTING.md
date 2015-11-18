@@ -62,7 +62,8 @@ relates to existing content. Get approval to write your article.
 **Step 4:** Write your article, placing the article in its own folder and any
 needed images in a _static folder located in the same folder as the article.
 Be sure to follow the proper Markdown syntax. If you have code samples,
-place them in a folder within the `/samples/` folder.
+place them in a folder within the `/samples/` folder.  For writing guidelines see
+[our style guide](/styleguide.md)
 
 **Step 5:** Submit a Pull Request from your branch to `dotnet/core-docs/master`.
 

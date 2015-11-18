@@ -21,9 +21,9 @@ are having a conversation with the author as you read any of our tutorials or ex
 Your experience as a reader should be informal, conversational, and informative. You should
 feel as though you are listening to the author explain the concepts to you.
 
-One might see the contrast between a conversational style and the style one finds when
+One might see the contrast between a conversational style and the style one finds with
 more academic treatments of technical topics. Those resources are very useful, but the authors
-have written those artices in a very different style than our documentation. When one reads
+have written those articles in a very different style than our documentation. When one reads
 an academic journal, one finds a very different tone and a very different style of writing.
 One feels that they are reading a dry account of a very dry topic.  
 
@@ -32,8 +32,8 @@ is a more academic style. You see the difference immediately.
 
 ## Write in 2nd person
 
-You should write your articles as though you are writing directly to the reader. You
-should use second person often (like I just have in these two sentences). 2nd person doesn't
+You should write your articles as though you are speaking directly to the reader. You
+should use second person often (as I just have in these two sentences). 2nd person doesn't
 always mean using the word 'you'. Write directly to the reader. Write imperative sentences.
 Tell your reader what you want them to learn.
 
@@ -71,7 +71,7 @@ Programming, Class, and Object, Function and Method will all be familiar terms. 
 reading your articles will have a formal computer science degree. Terms like 'idempotent' probably
 need to be defined if you use it:
 
-The Close() method is idempotent, meaning that you can call it multiple times and the effect is
+>The Close() method is idempotent, meaning that you can call it multiple times and the effect is
 the same as if you called it once.
 
 

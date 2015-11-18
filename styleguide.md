@@ -4,9 +4,9 @@ Developers will be reading your documents to learn .NET core, and to use it in t
 Your goal is to create useful documentation that helps the reader on their journey. Our guidelines
 help with that. Our style guide contains four recommendations:
 - [Use a Conversational Tone](#use-a-conversational-tone)
-- Write in 2nd Person
-- Use an Active Voice
-- Target a 5th Grade Reading Level
+- [Write in 2nd Person](#write-in-2nd-person)
+- [Use Active Voice](#use-active-voice)
+- [Target a 5th Grade Reading Level](#target-a-5th-grade-reading-level)
 
 You will see examples of each of these as you read this style guide. I've written this guide
 following our guidelines to provide examples for you to follow as you build documentation
@@ -16,52 +16,62 @@ when you don't follow our guidelines.
 # Details on each guideline
 
 ## Use a Conversational Tone
-We want our documentation to have a conversational tone. YOu should feel as though you
+We want our documentation to have a conversational tone. You should feel as though you
 are having a conversation with the author as you read any of our tutorials or explanations.
 Your experience as a reader should be informal, conversational, and informative. You should
 feel as though you are listening to the author explain the concepts to you.
 
-Contrast that with reading more academic treatments of technical topics. Those
-resources are very useful, but authors have written those artices in a very different
-style than our documentation. One gets a very different flavor from reading those third
-person, academic style writings. When one reads an academic journal, one finds a very
-different tone and a very different style of writing. The articles 
+One might see the contrast between a conversational style and the style one finds when
+more academic treatments of technical topics. Those resources are very useful, but the authors
+have written those artices in a very different style than our documentation. When one reads
+an academic journal, one finds a very different tone and a very different style of writing.
+One feels that they are reading a dry account of a very dry topic.  
 
 The first paragraph above follows our recommendation conversational style. The second
-is a more academic style. You should be able to see the difference immediately. 
+is a more academic style. You see the difference immediately. 
 
-## 2nd person
+## Write in 2nd person
 
 You should write your articles as though you are writing directly to the reader. You
 should use second person often (like I just have in these two sentences). 2nd person doesn't
 always mean using the word 'you'. Write directly to the reader. Write imperative sentences.
-Tell what you want readers to learn.
+Tell your reader what you want them to learn.
 
 An author could also choose to write in 3rd person. In that model, an author must find some
 pronoun or noun to use when referring to the reader. A reader might often find this 3rd
 person style less engaging and less enjoyable to read.
 
-The first paragrah follows our recommended style. The second uses 3rd person. Pleas write
+The first paragrah follows our recommended style. The second uses 3rd person. Please write
 in second person. You probably found that much easier to read.
 
-## active voice
+## Use Active Voice
 
 Write your articles in active voice. Active voice means that the subject of the sentence performs
 the action (verb) of that sentence. It contrasts with passive voice, where the sentence is arranged
 such that the subject of the sentence is acted upon. Constrast these two examples:
 
->The compiler transformed by source code into an executable.
+>The compiler transformed source code into an executable.
 
 >The source code was transformed into an executable by the compiler.
 
-The first sentence uses active voice. The second sentenace was written in passive voice.
+The first sentence uses active voice. The second sentence was written in passive voice.
 (Those two sentences provide another example of each style).
 
 We recommend active voice because it is more readable. Passive voice can be more difficult to read.
 
-## 5th grade reading level
+## Target a 5th Grade Reading Level
 
-We provide this final guideline because many of our readers are not native English speakers. You are reaching
-a world wide audience with your articles. Please take into account that they may not have the English
-vocabulary you have.
+We provide this final guideline because many of our readers are not native English speakers.
+You are reaching an international audience with your articles. Please take into account that
+they may not have the English vocabulary you have.
+
+However, you are still writing for technical professionals. You can assume that your readers
+have programming knowledge and the specific vocabulary for programming terms. Object Oriented
+Programming, Class, and Object, Function and Method will all be familiar terms. However, not everyone
+reading your articles will have a formal computer science degree. Terms like 'idempotent' probably
+need to be defined if you use it:
+
+The Close() method is idempotent, meaning that you can call it multiple times and the effect is
+the same as if you called it once.
+
 

@@ -2,72 +2,11 @@
 
 By [Zlatko Knezevic](https://github.com/blackdwarf)
 
-This document will lead you through acquiring the .NET Core DNX SDK via the [.NET Version Manager (DNVM)](https://github.com/aspnet/dnvm) and running a “Hello World” demo on Windows.
+This document will lead you through acquiring the .NET Core and its associated CLI toolchainand running a “Hello World” demo on Windows.
 
-.NET Core NuGet packages and the .NET Core DNX SDKs are available on the [ASP.NET ‘vnext’ myget feed](https://www.myget.org/F/aspnetvnext), which you can more easily view on [gallery](https://www.myget.org/gallery/aspnetvnext) for the feed.
+## Installing .NET Core 
 
-## Installing DNVM
-
-You need DNVM as a starting point. DNVM enables you to acquire one or multiple .NET Execution Environments (DNX). DNVM is simply a script, which doesn’t depend on .NET. You can install it via a PowerShell command from a command prompt window. You can find alternate DNVM install instructions at the [ASP.NET Home repo](https://github.com/aspnet/home).
-
-```console
-@powershell -NoProfile -ExecutionPolicy unrestricted -Command "&{$Branch='dev';iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.ps1'))}"
-
-```
-
-The script will set several global environment variables to make using DNVM easier in the future. In order for these to kick in, you need to restart your command shell session.
-
-## Installing a .NET Core DNX
-
-It’s easy to install the latest .NET Core-based DNX, using the `dnvm install` command.
-
-```console
-dnvm install -r coreclr latest -u
-
-```
-
-This will install the 32-bit version of .NET Core. If you want the 64-bit version, you can specify processor architecture.
-
-```console
-dnvm install -r coreclr -arch x64 latest -u
-
-```
-
-You can see the currently installed DNX versions with `dnvm list`.
-
-```console
-dnvm list
-
- Active Version           Runtime Architecture Location                            Alias
- ------ -------           ------- ------------ --------                            -----
-   *    1.0.0-beta5-11649 coreclr x64          C:\Users\[user]\.dnx\runtimes
-        1.0.0-beta5-11649 coreclr x86          C:\Users\[user]\.dnx\runtimes       default
-
-```
-
-> **Note**
-> 
-> The version numbers above can and will change when you run the commands, which is normal. Don’t forget to use the proper numbers when further interacting with DNVM in the below samples.
-
-## Using a specific runtime
-
-You can choose which of the installed DNXs you want to use with `dnvm use`, specifying arguments that are similar to the ones used when installing a runtime.
-
-```console
-dnvm use -r coreclr -arch x86 1.0.0-beta5-11649
-Adding C:\Users\[user]\.dnx\runtimes\dnx-coreclr-win-x86.1.0.0-beta5-11649\bin
-to process PATH
-
-dnvm list
-
-Active Version           Runtime Architecture Location                            Alias
------- -------           ------- ------------ --------                            -----
-       1.0.0-beta5-11649 coreclr x64          C:\Users\[user]\.dnx\runtimes
-  *    1.0.0-beta5-11649 coreclr x86          C:\Users\[user]\.dnx\runtimes       default
-
-```
-
-See the asterisk in the listing above? It’s purpose is to tell you which runtime is now active. “Active” here means that all of the interaction with your projects and .NET Core will use this runtime.
+The easiest way to get the tools and .NET Core on your Windows machine is to use the official [MSI installer](https://dotnetcli.blob.core.windows.net/dotnet/dev/Installers/Latest/dotnet-win-x64.latest.msi). When you install .NET Core, it will put all of the needed tools in your %PATH% so you can use it immidiatelly.  
 
 That’s it! You now have the .NET Core runtime installed on your machine and it is time to take it for a spin.
 
@@ -83,28 +22,31 @@ public class Program
     public static void Main (string[] args)
     {
         Console.WriteLine("Hello, Windows");
-        Console.WriteLine("Love from CoreCLR.");
+        Console.WriteLine("Love from .NET Core.");
     }
 }
 
 ```
 
-A more ambitious example is available on the [corefxlab repo](https://www.github.com/dotnet/corefxlab/) that will print out a pretty picture based on the argument you provide at runtime. If you wish to use this example, simply save the [C# file](https://raw.githubusercontent.com/dotnet/corefxlab/master/demos/CoreClrConsoleApplications/HelloWorld/HelloWorld.cs) to a directory somewhere on your machine.
-
 The next thing you will need is a `project.json` file that will outline the dependencies of an app, so you can **actually** run it. Use the contents below, it will work for both examples above. Save this file in a directory next to the CS file that contains your code.
 
-```cs
-{
+```json
+ {
     "version": "1.0.0-*",
-    "dependencies": {
+    "compilationOptions": {
+        "emitEntryPoint": true
     },
-    "frameworks" : {
-        "dnx451" : { },
-        "dnxcore50" : {
-            "dependencies": {
-                "System.Console": "4.0.0-beta-*"
-            }
-        }
+
+    "dependencies": {
+        "System.Console": "4.0.0-beta-23428",
+        "System.Runtime": "4.0.21-beta-23428",
+        "Microsoft.NETCore.Runtime": "1.0.1-beta-23428",
+        "Microsoft.NETCore.ConsoleHost": "1.0.0-beta-23419",
+        "Microsoft.NETCore.TestHost": "1.0.0-beta-23419"
+    },
+
+    "frameworks": {
+        "dnxcore50": { }
     }
 }
 
@@ -112,22 +54,48 @@ The next thing you will need is a `project.json` file that will outline the depe
 
 ## Run your App
 
-You need to restore packages for your app, based on your project.json, with `dnu restore`.
+You need to restore packages for your app, based on your project.json, with `dotnet restore`.
 
 ```console
-dnu restore
+dotnet restore
+dotnet run
 
+Hello, Windows
+Love from .NET Core
 ```
 
-You can run your app with the DNX command.
+## Compile your application
+
+Running from source is great for rapid prototyping and trying out things. However, in due time you will want to actually compile your application to get increase in speed and similar benefits. In order to do that, we will use `dotnet compile` command that will produce a runnable executable for our Hello World app.
+
+While you're still in the application's folder, type
+
+    dotnet compile
+    
+This will produce a `bin` folder in your folder. The structure of the drop path is `./bin/[configuration]/[framework]/`. Configuration refers to either *Release* or *Debug*, while framework is essentially a framework ID (i.e. dnxcore50). Inside this folder there will be several files, the most important of which is the *.exe binary that will have the same name as your application. Running this will give us the message we saw in the previous example. 
+
+**Note**: this binary requires a shared runtime to be installed on the machine. If you wish to create a self-contained application that includes the runtime and that you can just copy over to another machine, you will need to use `dotnet publish` command or compile your application 
+
+## Create a single native binary 
+
+Finally, let's exercise a new feature that we've added to our .NET Command Line Interface: producing single native binaries. These binaries do not require a shared runtime to work; you can just copy the single file over to another Ubuntu machine and just run it. 
+
+The process is pretty similar to the above, with the addition of one more switch.
 
 ```console
-dnx run
-
+dotnet restore
+dotnet compile --native
 ```
 
-This will instruct the currently active DNX to run your app. Note that you didn’t need to actually build the code; DNX will take care of this for you.
+After the compile command finishes, we can just run the resulting binary. By convention, the compile command drops the results in ./bin/[configuration]/[framework]/native/[binary name].exe. Running this binary will get us our greeting! 
+
+> **Note**
+> This capability is still in its infancy. Therefore, only the simplest of programs will be able to be natively compiled. 
 
 ## Building .NET Core from source
 
 .NET Core is an open source project that is hosted on GitHub. This means that you can, at any given time, clone the repository and build .NET Core from source. This is a more advanced scenario that is usually used when you want to add features to the .NET runtime or the BCL or if you are a contributor to these projects. The detailed instruction on how to build .NET Core windows can be found in the [.NET Core Windows build instructions](https://github.com/dotnet/coreclr/blob/master/Documentation/building/windows-instructions.md) on GitHub.
+
+## Building the .NET Command Line Interace from source
+
+The toolchain we used in this short tutorial is also open source. It is hosted on [GitHub](https://github.com/dotnet/cli/). You can always clone the repo and build from source. The instructions can be found on the [README.md](https://github.com/dotnet/cli/blob/master/documentation/README.md) in the repo. 

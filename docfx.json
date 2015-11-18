@@ -4,8 +4,7 @@
       "src": [
         {
           "files": [
-            "../corefx/src/**/src/**/*.csproj",
-            "../coreclr/src/mscorlib/mscorlib.csproj"
+            "../corefx/src/**/ref/**/*.csproj"
           ],
           "exclude": [ "**/bin/**", "**/obj/**" ]
         }

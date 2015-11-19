@@ -4,19 +4,17 @@ namespace Element
     {
         public void Main(string[] args)
         {
-            Element.FirstSample1.MethodSyntaxExample();
+            FirstSample1.MethodSyntaxExample();
+            FirstSample1.QuerySyntaxExample();
 
-            Element.FirstSample1.QuerySyntaxExample();
+            FirstSample2.Example();
 
-            Element.FirstSample2.Example();
+            FirstOrDefaultSample1.Example();
 
-            Element.FirstOrDefaultSample1.Example();
+            FirstOrDefaultSample2.Example();
 
-            Element.FirstOrDefaultSample2.Example();
-
-            Element.ElementAtSample1.MethodSyntaxExample();
-
-            Element.ElementAtSample1.QuerySyntaxExample();
+            ElementAtSample1.MethodSyntaxExample();
+            ElementAtSample1.QuerySyntaxExample();
         }
     }
 }

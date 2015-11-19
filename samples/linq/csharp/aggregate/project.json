@@ -1,8 +1,8 @@
 { 
     "dependencies": {
-        "System.Runtime":"4.0.0-rc1-*",
-        "System.Linq":"4.0.0-rc1-*", 
-        "System.Console": "4.0.0-beta-*"
+        "System.Runtime":"4.0.0-*",
+        "System.Linq":"4.0.0-*", 
+        "System.Console": "4.0.0-*"
     },
     "commands": {
         "run": "aggregate"

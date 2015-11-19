@@ -1,17 +1,18 @@
-﻿public class Program
+﻿namespace Conversion
 {
-    public void Main(string[] args)
+    public class Program
     {
-        Conversion.ToArraySample1.MethodSyntaxExample();
+        public void Main(string[] args)
+        {
+            ToArraySample1.MethodSyntaxExample();
+            ToArraySample1.QuerySyntaxExample();
 
-        Conversion.ToArraySample1.QuerySyntaxExample();
+            ToListSample1.MethodSyntaxExample();
+            ToListSample1.QuerySyntaxExample();
 
-        Conversion.ToListSample1.MethodSyntaxExample();
+            ToDictionarySample1.Example();
 
-        Conversion.ToListSample1.QuerySyntaxExample();
-
-        Conversion.ToDictionarySample1.Example();
-
-        Conversion.OfTypeSample1.Example();
+            OfTypeSample1.Example();
+        }
     }
 }

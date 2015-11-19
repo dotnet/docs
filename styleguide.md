@@ -8,19 +8,21 @@ help with that. Our style guide contains four recommendations:
 - [Use Active Voice](#use-active-voice)
 - [Target a 5th Grade Reading Level](#target-a-5th-grade-reading-level)
 
-You will see examples of each of these as you read this style guide. I've written this guide
+You will see examples of each of these as you read this style guide. We've written this guide
 following our guidelines to provide examples for you to follow as you build documentation
-for .NET core. I also provide contrasting samples so you can see what articles look like
+for .NET core. We also provide contrasting samples so you can see what articles look like
 when you don't follow our guidelines.
 
 # Details on each guideline
 
 ## Use a Conversational Tone
+### Appropriate Style:
 We want our documentation to have a conversational tone. You should feel as though you
 are having a conversation with the author as you read any of our tutorials or explanations.
 Your experience as a reader should be informal, conversational, and informative. You should
 feel as though you are listening to the author explain the concepts to you.
 
+### Inappropriate Style:
 One might see the contrast between a conversational style and the style one finds with
 more academic treatments of technical topics. Those resources are very useful, but the authors
 have written those articles in a very different style than our documentation. When one reads
@@ -31,12 +33,13 @@ The first paragraph above follows our recommendation conversational style. The s
 is a more academic style. You see the difference immediately. 
 
 ## Write in 2nd person
-
+### Appropriate Style:
 You should write your articles as though you are speaking directly to the reader. You
 should use second person often (as I just have in these two sentences). 2nd person doesn't
 always mean using the word 'you'. Write directly to the reader. Write imperative sentences.
 Tell your reader what you want them to learn.
 
+### Inappropriate Style: 
 An author could also choose to write in 3rd person. In that model, an author must find some
 pronoun or noun to use when referring to the reader. A reader might often find this 3rd
 person style less engaging and less enjoyable to read.
@@ -73,5 +76,3 @@ need to be defined if you use it:
 
 >The Close() method is idempotent, meaning that you can call it multiple times and the effect is
 the same as if you called it once.
-
-

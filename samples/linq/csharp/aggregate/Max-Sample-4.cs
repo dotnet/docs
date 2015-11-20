@@ -11,10 +11,10 @@ namespace Aggregate
         //
         //Output:
         //
-        // The most expensive product in the Beverages category is Côte de Blaye.
+        // The most expensive product in the Beverages category is Cote de Blaye.
         // The most expensive product in the Condiments category is Vegie-spread.
         // The most expensive product in the Produce category is Manjimup Dried Apples.
-        // The most expensive product in the Meat/Poultry category is Th???ringer Rostbratwurst.
+        // The most expensive product in the Meat/Poultry category is Thuringer Rostbratwurst.
         // The most expensive product in the Seafood category is Carnarvon Tigers.
         // The most expensive product in the Dairy Products category is Raclette Courdavault.
         // The most expensive product in the Confections category is Sir Rodney's Marmalade.
@@ -46,10 +46,10 @@ namespace Aggregate
         //
         //Output:
         //
-        // The most expensive product in the Beverages category is Côte de Blaye.
+        // The most expensive product in the Beverages category is Cote de Blaye.
         // The most expensive product in the Condiments category is Vegie-spread.
         // The most expensive product in the Produce category is Manjimup Dried Apples.
-        // The most expensive product in the Meat/Poultry category is Th???ringer Rostbratwurst.
+        // The most expensive product in the Meat/Poultry category is Thuringer Rostbratwurst.
         // The most expensive product in the Seafood category is Carnarvon Tigers.
         // The most expensive product in the Dairy Products category is Raclette Courdavault.
         // The most expensive product in the Confections category is Sir Rodney's Marmalade.

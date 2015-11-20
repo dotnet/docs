@@ -14,7 +14,7 @@ namespace Restriction
         // Mishi Kobe Niku is in stock and costs more than 50.00.
         // Carnarvon Tigers is in stock and costs more than 50.00.
         // Sir Rodney's Marmalade is in stock and costs more than 50.00.
-        // Côte de Blaye is in stock and costs more than 50.00.
+        // Cote de Blaye is in stock and costs more than 50.00.
         // Manjimup Dried Apples is in stock and costs more than 50.00.
         // Raclette Courdavault is in stock and costs more than 50.00.
         public static void QuerySyntaxExample()
@@ -41,7 +41,7 @@ namespace Restriction
         // Mishi Kobe Niku is in stock and costs more than 50.00.
         // Carnarvon Tigers is in stock and costs more than 50.00.
         // Sir Rodney's Marmalade is in stock and costs more than 50.00.
-        // Côte de Blaye is in stock and costs more than 50.00.
+        // Cote de Blaye is in stock and costs more than 50.00.
         // Manjimup Dried Apples is in stock and costs more than 50.00.
         // Raclette Courdavault is in stock and costs more than 50.00.
         public static void MethodSyntaxExample()

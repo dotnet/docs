@@ -9,11 +9,11 @@ namespace Restriction
         //This sample uses the where clause to find all products that are out of stock using query syntax.
         //Outputs the following to Console 
         //
-        // Sold out products: 
-        // Chef Anton's Gumbo Mix is sold out! 
-        // Alice Mutton is sold out! 
-        // Thüringer Rostbratwurst s sold out! 
-        // Gorgonzola Telino is sold out! 
+        // Sold out products:
+        // Chef Anton's Gumbo Mix is sold out!
+        // Alice Mutton is sold out!
+        // Thuringer Rostbratwurst is sold out!
+        // Gorgonzola Telino is sold out!
         // Perth Pasties is sold out!
         public static void QuerySyntaxExample()
         {
@@ -30,15 +30,15 @@ namespace Restriction
                 Console.WriteLine("{0} is sold out!", product.ProductName);
             }
         }
-        
+
         //This sample uses the where clause to find all products that are out of stock using query syntax.
         //Outputs the following to Console 
         //
-        // Sold out products: 
-        // Chef Anton's Gumbo Mix is sold out! 
-        // Alice Mutton is sold out! 
-        // Thüringer Rostbratwurst s sold out! 
-        // Gorgonzola Telino is sold out! 
+        // Sold out products:
+        // Chef Anton's Gumbo Mix is sold out!
+        // Alice Mutton is sold out!
+        // Thuringer Rostbratwurst is sold out!
+        // Gorgonzola Telino is sold out!
         // Perth Pasties is sold out!
         public static void MethodSyntaxExample()
         {

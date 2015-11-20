@@ -9,13 +9,13 @@ namespace Aggregate
     {
         //This sample uses Min and query syntax to get the products with the lowest price in each category.
         // 
-        //Output: 
-        // The cheapest product in the Beverages category is Guaraná Fantástica.
+        //Output:
+        // The cheapest product in the Beverages category is Guarana Fantastica.
         // The cheapest product in the Condiments category is Aniseed Syrup.
         // The cheapest product in the Produce category is Longlife Tofu.
-        // The cheapest product in the Meat/Poultry category is Tourtière.
+        // The cheapest product in the Meat/Poultry category is Tourtiere.
         // The cheapest product in the Seafood category is Konbu.
-        // The cheapest product in the Dairy product category is Geitost.
+        // The cheapest product in the Dairy Products category is Geitost.
         // The cheapest product in the Confections category is Teatime Chocolate Biscuits.
         // The cheapest product in the Grains/Cereals category is Filo Mix.
         public static void QuerySyntaxExample()
@@ -37,13 +37,13 @@ namespace Aggregate
 
         //This sample uses Min and method syntax to get the products with the lowest price in each category.
         // 
-        //Output: 
-        // The cheapest product in the Beverages category is Guaraná Fantástica.
+        //Output:
+        // The cheapest product in the Beverages category is Guarana Fantastica.
         // The cheapest product in the Condiments category is Aniseed Syrup.
         // The cheapest product in the Produce category is Longlife Tofu.
-        // The cheapest product in the Meat/Poultry category is Tourtière.
+        // The cheapest product in the Meat/Poultry category is Tourtiere.
         // The cheapest product in the Seafood category is Konbu.
-        // The cheapest product in the Dairy product category is Geitost.
+        // The cheapest product in the Dairy Products category is Geitost.
         // The cheapest product in the Confections category is Teatime Chocolate Biscuits.
         // The cheapest product in the Grains/Cereals category is Filo Mix.
         public static void MethodSyntaxExample()

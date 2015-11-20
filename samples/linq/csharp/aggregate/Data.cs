@@ -241,7 +241,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 22,
-                ProductName = "Gustaf's Knäckebröd",
+                ProductName = "Gustaf's Knackebrod",
                 Category = "Grains/Cereals",
                 UnitPrice = 21.0000M,
                 UnitsInStock = 104
@@ -249,7 +249,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 23,
-                ProductName = "Tunnbröd",
+                ProductName = "Tunnbrod",
                 Category = "Grains/Cereals",
                 UnitPrice = 9.0000M,
                 UnitsInStock = 61
@@ -257,7 +257,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 24,
-                ProductName = "Guaraná Fantástica",
+                ProductName = "Guarana Fantastica",
                 Category = "Beverages",
                 UnitPrice = 4.5000M,
                 UnitsInStock = 20
@@ -265,7 +265,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 25,
-                ProductName = "NuNuCa Nuß-Nougat-Creme",
+                ProductName = "NuNuCa Nub-Nougat-Creme",
                 Category = "Confections",
                 UnitPrice = 14.0000M,
                 UnitsInStock = 76
@@ -273,7 +273,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 26,
-                ProductName = "Gumbär Gummibärchen",
+                ProductName = "Gumbar Gummibarchen",
                 Category = "Confections",
                 UnitPrice = 31.2300M,
                 UnitsInStock = 15
@@ -289,7 +289,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 28,
-                ProductName = "Rössle Sauerkraut",
+                ProductName = "Rossle Sauerkraut",
                 Category = "Produce",
                 UnitPrice = 45.6000M,
                 UnitsInStock = 26
@@ -297,7 +297,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 29,
-                ProductName = "Thüringer Rostbratwurst",
+                ProductName = "Thuringer Rostbratwurst",
                 Category = "Meat/Poultry",
                 UnitPrice = 123.7900M,
                 UnitsInStock = 0
@@ -369,7 +369,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 38,
-                ProductName = "Côte de Blaye",
+                ProductName = "Cote de Blaye",
                 Category = "Beverages",
                 UnitPrice = 263.5000M,
                 UnitsInStock = 17
@@ -497,7 +497,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 54,
-                ProductName = "Tourtière",
+                ProductName = "Tourtiere",
                 Category = "Meat/Poultry",
                 UnitPrice = 7.4500M,
                 UnitsInStock = 21
@@ -505,7 +505,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 55,
-                ProductName = "Pâté chinois",
+                ProductName = "Pate chinois",
                 Category = "Meat/Poultry",
                 UnitPrice = 24.0000M,
                 UnitsInStock = 115
@@ -553,7 +553,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 61,
-                ProductName = "Sirop d'érable",
+                ProductName = "Sirop d'erable",
                 Category = "Condiments",
                 UnitPrice = 28.5000M,
                 UnitsInStock = 113
@@ -577,7 +577,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 64,
-                ProductName = "Wimmers gute Semmelknödel",
+                ProductName = "Wimmers gute Semmelknodel",
                 Category = "Grains/Cereals",
                 UnitPrice = 33.2500M,
                 UnitsInStock = 22
@@ -649,7 +649,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 73,
-                ProductName = "Röd Kaviar",
+                ProductName = "Rod Kaviar",
                 Category = "Seafood",
                 UnitPrice = 15.0000M,
                 UnitsInStock = 101
@@ -665,7 +665,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 75,
-                ProductName = "Rhönbräu Klosterbier",
+                ProductName = "Rhonbrau Klosterbier",
                 Category = "Beverages",
                 UnitPrice = 7.7500M,
                 UnitsInStock = 125
@@ -673,7 +673,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 76,
-                ProductName = "Lakkalikööri",
+                ProductName = "Lakkalikoori",
                 Category = "Beverages",
                 UnitPrice = 18.0000M,
                 UnitsInStock = 57
@@ -681,7 +681,7 @@ namespace Aggregate
             new Product
             {
                 ProductId = 77,
-                ProductName = "Original Frankfurter grüne Soße",
+                ProductName = "Original Frankfurter grune Sobe",
                 Category = "Condiments",
                 UnitPrice = 13.0000M,
                 UnitsInStock = 32

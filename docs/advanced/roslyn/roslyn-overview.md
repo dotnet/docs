@@ -40,15 +40,15 @@ The .NET Compiler Platform (“Roslyn”) SDK Preview includes the latest drafts
 
 The .NET Compiler Platform (“Roslyn”) exposes the C# and Visual Basic compiler’s code analysis to you as a consumer by providing an API layer that mirrors a traditional compiler pipeline.
 
-![../../_images/compiler-pipeline.png](../../_images/compiler-pipeline.png)
+![../../images/compiler-pipeline.png](../../images/compiler-pipeline.png)
 
 Each phase of this pipeline is now a separate component. First the parse phase, where source is tokenized and parsed into syntax that follows the language grammar. Second the declaration phase, where declarations from source and imported metadata are analyzed to form named symbols. Next the bind phase, where identifiers in the code are matched to symbols. Finally, the emit phase, where all the information built up by the compiler is emitted as an assembly.
 
-![../../_images/compiler-pipeline-api.png](../../_images/compiler-pipeline-api.png)
+![../../images/compiler-pipeline-api.png](../../images/compiler-pipeline-api.png)
 
 Corresponding to each of those phases, an object model is surfaced that allows access to the information at that phase. The parsing phase is exposed as a syntax tree, the declaration phase as a hierarchical symbol table, the binding phase as a model that exposes the result of the compiler’s semantic analysis and the emit phase as an API that produces IL byte codes.
 
-![../../_images/compiler-pipeline-lang-svc.png](../../_images/compiler-pipeline-lang-svc.png)
+![../../images/compiler-pipeline-lang-svc.png](../../images/compiler-pipeline-lang-svc.png)
 
 Each compiler combines these components together as a single end-to-end whole.
 
@@ -58,7 +58,7 @@ To ensure that the public Compiler APIs are sufficient for building world-class 
 
 The .NET Compiler Platform (“Roslyn”) consists of two main layers of APIs – the Compiler APIs and Workspaces APIs.
 
-![../../_images/alex-api-layers.png](../../_images/alex-api-layers.png)
+![../../images/alex-api-layers.png](../../images/alex-api-layers.png)
 
 #### Compiler APIs
 
@@ -238,7 +238,7 @@ A document is also a part of the overall immutable solution model. A document re
 
 The following diagram is a representation of how the Workspace relates to the host environment, tools, and how edits are made.
 
-![../../_images/workspace-obj-relations.png](../../_images/workspace-obj-relations.png)
+![../../images/workspace-obj-relations.png](../../images/workspace-obj-relations.png)
 
 ## Summary
 

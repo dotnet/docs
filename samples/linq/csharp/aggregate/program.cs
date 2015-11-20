@@ -1,61 +1,55 @@
-public class Program
+namespace Aggregate
 {
-    public void Main(string[] args)
+    public class Program
     {
-        Aggregate.AggregateSample1.MethodSyntaxExample();
+        public void Main(string[] args)
+        {
+            AggregateSample1.MethodSyntaxExample();
+            AggregateSample2.MethodSyntaxExample();
 
-        Aggregate.AggregateSample2.MethodSyntaxExample();
+            CountSample1.MethodSyntaxExample();
+            CountSample1.QuerySyntaxExample();
 
-        Aggregate.CountSample1.MethodSyntaxExample();
+            CountSample2.Example();
 
-        Aggregate.CountSample1.QuerySyntaxExample();
+            CountSample3.Example();
 
-        Aggregate.CountSample2.Example();
+            CountSample4.MethodSyntaxExample();
+            CountSample4.QuerySyntaxExample();
 
-        Aggregate.CountSample3.Example();
+            SumSample1.Example();
 
-        Aggregate.CountSample4.MethodSyntaxExample();
+            SumSample2.Example();
 
-        Aggregate.CountSample4.QuerySyntaxExample();
+            SumSample3.QuerySyntaxExample();
+            SumSample3.MethodSyntaxExample();
 
-        Aggregate.SumSample1.Example();
+            MaxSample1.Example();
 
-        Aggregate.SumSample2.Example();
+            MaxSample2.Example();
 
-        Aggregate.SumSample3.QuerySyntaxExample();
+            MaxSample3.MethodSyntaxExample();
+            MaxSample3.QuerySyntaxExample();
 
-        Aggregate.SumSample3.MethodSyntaxExample();
+            MaxSample4.MethodSyntaxExample();
+            MaxSample4.QuerySyntaxExample();
 
-        Aggregate.MaxSample1.Example();
+            MinSample1.Example();
 
-        Aggregate.MaxSample2.Example();
+            MinSample2.Example();
 
-        Aggregate.MaxSample3.MethodSyntaxExample();
+            MinSample3.MethodSyntaxExample();
+            MinSample3.QuerySyntaxExample();
 
-        Aggregate.MaxSample3.QuerySyntaxExample();
+            MinSample4.MethodSyntaxExample();
+            MinSample4.QuerySyntaxExample();
 
-        Aggregate.MaxSample4.MethodSyntaxExample();
+            AverageSample1.Example();
 
-        Aggregate.MaxSample4.QuerySyntaxExample();
+            AverageSample2.Example();
 
-        Aggregate.MinSample1.Example();
-
-        Aggregate.MinSample2.Example();
-
-        Aggregate.MinSample3.MethodSyntaxExample();
-
-        Aggregate.MinSample3.QuerySyntaxExample();
-
-        Aggregate.MinSample4.MethodSyntaxExample();
-
-        Aggregate.MinSample4.QuerySyntaxExample();
-
-        Aggregate.AverageSample1.Example();
-
-        Aggregate.AverageSample2.Example();
-
-        Aggregate.AverageSample3.MethodSyntaxExample();
-
-        Aggregate.AverageSample3.QuerySyntaxExample();
+            AverageSample3.MethodSyntaxExample();
+            AverageSample3.QuerySyntaxExample();
+        }
     }
 }

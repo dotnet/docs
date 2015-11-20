@@ -5,9 +5,9 @@
     "System.Console": "4.0.0-*"
   },
   "commands": {
-    "run": "restriction"
+    "run": "partitioning"
   },
-  "frameworks": {
-    "dnxcore50": { }
-  }
+    "frameworks" : {
+        "dnxcore50" : { }
+    }
 }

@@ -34,6 +34,7 @@
 ## [🔧 F# programming language](languages/f-sharp.md)
 ## [🔧 VisualBasic.NET programming language](languages/visual-basic.md)
 ## [🔧 CLI programming languages](languages/cli-languages.md)
+# [Cross-Platform development in .NET](cross-platform/index.md)
 # [Base Class Library](bcl/index.md)
 ## [🔧 Base Class Library Overview](bcl/overview.md)
 ## [🔧 BCL API reference documentation](bcl/api-ref.md)

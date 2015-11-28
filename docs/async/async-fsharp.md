@@ -4,7 +4,7 @@ By [Phillip Carter](https://github.com/cartermp)
 
 Async programming in F# can be accomplished through a language-level programming model designed to be easy to use and natural to the language.
 
-The core of async programming in F# is `Async<'a>`, a representation work which can be executed to run in the background, where `'a` is either the type returned via the special `return` keyword or `unit` if the async workflow has no result to return.
+The core of async programming in F# is `Async<'a>`, a representation of work that can be triggered to run in the background, where `'a` is either the type returned via the special `return` keyword or `unit` if the async workflow has no result to return.
 
 The key concept to understand is that an async expression’s type is `Async<'a>`, which is merely a _specification_ of work to be done in an asynchronous context. It is not executed until you explicitly start it with one of the starting functions (such as `Async.RunSynchronously`). Although this is a different way of thinking about doing work, it ends up being quite simple in practice.
 

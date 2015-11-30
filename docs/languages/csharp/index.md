@@ -10,7 +10,7 @@
 *  [🔧 Generics](generics.md)
 *  [🔧 Language Integrated Query (LINQ)](linq.md)
 *  [🔧 Asynchronous programming](async.md)
-*  [🔧 Paralell programming](parallel.md)
+*  [🔧 Parallel programming](parallel.md)
 *  [🔧 Native interoperability](interop.md)
 *  [🔧 Reflection & code generation](reflection.md)
 *  [🔧 Documenting your code](codedoc.md)

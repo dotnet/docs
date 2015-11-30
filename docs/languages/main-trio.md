@@ -1,4 +1,4 @@
-# 🔧 Deploying applications overview
+# 🔧 The main trio: C#, F# and VB.NET
 
 > **Note**
 > 

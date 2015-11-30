@@ -1,6 +1,8 @@
-# Porting applications & existing code to .NET Core
+# Porting applications between editions of .NET Platform
 
-*   [🔧 Overview of porting process](overview.md)
-*   [🔧 Porting console applications to .NET Core](porting-console-apps.md)
-*   [🔧 Porting web applications to .NET Core](porting-web-apps.md)
-*   [Making your libraries compatible with .NET Core and other .NET Platforms](supporting-core.md)
+### [🔧 Overview](overview.md)
+### [🔧 Tooling](tooling.md)
+### [🔧 Porting your applications](applications.md)
+### [🔧 Porting your libraries](libraries.md)
+### [🔧 Porting NuGet packages](nuget-packages.md)
+

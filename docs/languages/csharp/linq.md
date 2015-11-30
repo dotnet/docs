@@ -1,4 +1,4 @@
-# 🔧 Deploying applications overview
+# 🔧 Language Integrated Query (LINQ)
 
 > **Note**
 > 

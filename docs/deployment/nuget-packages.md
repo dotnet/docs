@@ -1,4 +1,4 @@
-# 🔧 Deploying applications overview
+# 🔧 Deploying NuGet packages
 
 > **Note**
 > 

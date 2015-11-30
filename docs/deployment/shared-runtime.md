@@ -1,4 +1,4 @@
-# 🔧 Deploying applications overview
+# 🔧 Deploying to a shared runtime
 
 > **Note**
 > 

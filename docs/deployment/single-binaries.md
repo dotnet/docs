@@ -1,4 +1,4 @@
-# 🔧 Deploying applications overview
+# 🔧 Deploying single binaries
 
 > **Note**
 > 

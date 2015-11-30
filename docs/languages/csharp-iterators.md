@@ -1,11 +1,12 @@
 # Introduction
 
 Almost every program you write will have some need to iterate
-over a collection. This article covers the features of the C#
-language to easily iterate collections, the core library
-interfaces that define the necessary functionality, and language
-features that enagle writing custom methods that iterate
-a sequence.
+over a collection. You'll write code that examines every item in
+a collection. You'll also create classes
+that produce a collection by creating a method that produces an
+iterator for the elements of that class. The C# language provides
+features for both these scenarios. This article provides an overview
+of those features.
 
 # iterating with foreach
 
@@ -14,7 +15,7 @@ a collection, executing the embedded statement once for each element
 in the collection:
  
 ```cs
-forech (var item in collection)
+foreach (var item in collection)
 {
    Console.WriteLine(item.ToString());
 }
@@ -24,14 +25,146 @@ That's all there is to it. To iterate over all the contents of a collection,
 the `foreach` statement is all you need. The `foreach` statement isn't magic,
 though. It relies on two interfaces defined in the .NET core library in order
 to generate the code necessary to iterate a collection: `IEnumerable<T>` and
-`IEnumerator<T>`. [note: insert link to generic topic here when that is created.]
+`IEnumerator<T>`. 
+
 Both of these interfaces also have non-generic counterparts: `IEnumerable` and 
-`IEnumerator`.
+`IEnumerator`. The generic versions are preferred for modern code.
 
-# what the  compiler creates
+# Enumeration sources with iterator methods
 
-The compiler translates the `foreach` loop shown above into something similar
-to this construct:
+Another great feature of the C# language enables you to build methods that create
+a source for an enumeration. These are referred to as *iterator methods*. An iterator
+method defines how to generate the objects in a sequence when requested. You
+use the `yield return` contextual keywords to define an iterator method. 
+
+You could write this method to produce the sequence of integers from 0 through 9:
+
+```cs
+public IEnumerable<int> GetSingleDigitNumbers()
+{
+    yield return 0;
+    yield return 1;
+    yield return 2;
+    yield return 3;
+    yield return 4;
+    yield return 5;
+    yield return 6;
+    yield return 7;
+    yield return 8;
+    yield return 9;
+}
+```
+
+The code above shows distinct `yield return` statements to highlight the fact that
+you can use multiple discrete `yield return` statements in an iterator method.
+You can (and often do) use other language constructs to simplify the code of an
+iterator method. The method definition below produces the exact same sequence
+of numbers:
+
+```cs
+public IEnumerable<int> GetSingleDigitNumbers()
+{
+    int index = 0;
+    while (index++ < 10)
+        yield return index;
+}
+```
+
+You don't have to decide one or the other. You can have as many `yield return`
+statements as necessary to meet the needs of your method:
+
+```cs
+public IEnumerable<int> GetSingleDigitNumbers()
+{
+    int index = 0;
+    while (index++ < 10)
+        yield return index;
+        
+    yield return 50;
+    
+    index = 100;
+    while (index++ < 110)
+        yield return index;
+}
+```
+
+There is one important restriction on iterator methods: you can't have both a
+`return` statement and a `yield return` statement in the same method. The following
+will not compile:
+
+```cs
+public IEnumerable<int> GetSingleDigitNumbers()
+{
+    int index = 0;
+    while (index++ < 10)
+        yield return index;
+        
+    yield return 50;
+   
+    // generates a compile time error: 
+    var items = new int[] {100, 101, 102, 103, 104, 105, 106, 107, 108, 109 };
+    return items;  
+}
+```
+
+This restriction normally isn't a problem. You have a choice of either using
+`yield return` throughout the method, or separating the original method into
+multiple methods, some using `return`, and some using `yield return`.
+
+You can modify the last method slightly to use `yield return` everywhere:
+
+```cs
+public IEnumerable<int> GetSingleDigitNumbers()
+{
+    int index = 0;
+    while (index++ < 10)
+        yield return index;
+        
+    yield return 50;
+   
+    var items = new int[] {100, 101, 102, 103, 104, 105, 106, 107, 108, 109 };
+    foreach (var item in items)
+        yield return item;
+}
+```
+ 
+Sometimes, the right answer is to split an iterator method into two different
+methods. One that uses `return`, and a second that uses `yield return`. Consider
+a situation where you might want to return an empty collection, or the first 5
+odd numbers, based on a boolean argument. You could write that as these two
+methods:
+
+```cs
+public IEnumerable<int> GetSingleDigitOddNumbers(bool getCollection)
+{
+    if (getCollection == false)
+        return new int[];
+    else
+        return IteratorMethod();
+}
+
+private IEnumerable<int> IteratorMethod()
+{
+    int index = 0;
+    while (index++ < 10)
+        if (index % 2 == 1)
+            yield return index;
+}
+```
+ 
+Look at the methods above. The first uses the standard `return` statement to return
+either an empy collection, or the iterator created by the second method. The second
+method uses the `yield return` statement to create the requested sequence.
+
+# Deeper Dive into `foreach`
+
+The `foreach` statement expands into a standard idiom that uses the
+`IEnumable<T>` and `IEnumerator<T>` interfaces to iterate across all
+elements of a colleciton. It also  minimizes errors developers make
+by not properly managing resources. 
+
+The compiler translates the `foreach` loop shown in the first
+example into something similar to this construct:
 
 ```cs
 IEnumerator<int> enumerator = collection.GetEnumerator();
@@ -111,135 +244,4 @@ Thankfully, you don't need to remember all these details. The `foreach` statemen
 handles all those nuances for you. The compiler will generate the correct code for
 any of these constructs. 
 
-# writing your own iterators
 
-Another great feature of the C# language enables you to build methods that create
-a source for an enumeration. These are referred to as *iterator methods*, and you
-use the `yield return` contextual keywords to create them.
-
-You could write this method to produce the sequence of integers from 0 through 9:
-
-```cs
-public IEnumerable<int> GetSingleDigitNumbers()
-{
-    yield return 0;
-    yield return 1;
-    yield return 2;
-    yield return 3;
-    yield return 4;
-    yield return 5;
-    yield return 6;
-    yield return 7;
-    yield return 8;
-    yield return 9;
-}
-```
-
-I showed distinct `yield return` statements above to highlight the fact that
-you can use multiple discrete `yield return` statements in an iterator method.
-You can (and often do) use other language constructs to simplify the code of an
-iterator method. The method definition below produces the exact same sequence
-of numbers:
-
-```cs
-public IEnumerable<int> GetSingleDigitNumbers()
-{
-    int index = 0;
-    while (index++ < 10)
-        yield return index;
-}
-```
-
-You don't have to decide one or the other. You can have as many `yield return`
-statements as necessary to meet the needs of your method:
-
-```cs
-public IEnumerable<int> GetSingleDigitNumbers()
-{
-    int index = 0;
-    while (index++ < 10)
-        yield return index;
-        
-    yield return 50;
-    
-    index = 100;
-    while (index < 110)
-        yield return index;
-}
-```
-
-There is one important restriction on iterator methods: you cannot have both a
-`return` statement and a `yield return` statement in the same method. The following
-will not compile:
-
-```cs
-public IEnumerable<int> GetSingleDigitNumbers()
-{
-    int index = 0;
-    while (index++ < 10)
-        yield return index;
-        
-    yield return 50;
-   
-    // generates a compile time error: 
-    var items = new int[] {100, 101, 102, 103, 104, 105, 106, 107, 108, 109 };
-    return items;  
-}
-```
-
-This restriction normally isn't a problem. You have a choice of either using
-`yield return` throughout the method, or separating the original method into
-multiple methods, some using `return`, and some using `yield return`.
-
-You can modify the last method slightly to use `yield return` everywhere:
-
-```cs
-public IEnumerable<int> GetSingleDigitNumbers()
-{
-    int index = 0;
-    while (index++ < 10)
-        yield return index;
-        
-    yield return 50;
-   
-    var items = new int[] {100, 101, 102, 103, 104, 105, 106, 107, 108, 109 };
-    foreach (var item in items)
-        yield return item;
-}
-```
- 
-Sometimes, the right answer is to split an iterator method into two different
-methods. One that uses `return`, and a second that uses `yield return`. Consider
-a situation where you might want to return an empty collection, or the first 5
-odd numbers, based on a boolean argument. You could write that as these two
-methods:
-
-```cs
-public IEnumerable<int> GetSingleDigitOddNumbers(bool getCollection)
-{
-    if (getCollection == false)
-        return new int[];
-    else
-        return IteratorMethod();
-}
-
-private IEnumerable<int> IteratorMethod()
-{
-    int index = 0;
-    while (index++ < 10)
-        if (index % 2 == 1)
-            yield return index;
-}
-```
- 
-Look at the methods above. The first uses the standard `return` statement to return
-either an empy collection, or the iterator created by the second method. The second
-method uses the `yield return` statement to create the requested sequence.
-
-# Summing up
-You can use `foreach` to easily enumerate any collection, or any object that
-supports `IEnumerable<T>`. 
-
-You can create *iterator methods* that enable you to make any object act like
-a collection. These iterator methods use `yield return` to create an iterator
-that enumerates the items in order.

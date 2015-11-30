@@ -1,4 +1,4 @@
-# 🔧 The main trio: C#, F# and VB.NET
+# 🔧 The main trio: C#, F# and Visual Basic
 
 > **Note**
 > 

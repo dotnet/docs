@@ -3,5 +3,5 @@
 
 
 *  [🔧 .NET - a multi-language platform](overview.md)
-*  [🔧 The main trio: C#, F# and VB.NET](main-trio.md)
+*  [🔧 The main trio: C#, F# and Visual Basic](main-trio.md)
 

@@ -1,4 +1,4 @@
-# 🔧 Deploying applications overview
+# 🔧 Features at a glance
 
 > **Note**
 > 

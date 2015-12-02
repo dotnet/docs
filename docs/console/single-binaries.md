@@ -1,4 +1,4 @@
-# 🔧 Deploying applications overview
+# 🔧 Creating single binaries with native compilation
 
 > **Note**
 > 

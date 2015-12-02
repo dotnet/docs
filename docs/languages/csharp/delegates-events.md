@@ -1,4 +1,4 @@
-# 🔧 Deploying applications overview
+# 🔧 Delegates & events
 
 > **Note**
 > 

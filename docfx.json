@@ -4,12 +4,25 @@
       "src": [
         {
           "files": [
-            "../corefx/src/**/ref/**/*.csproj"
+            "corefx/src/**/ref/**/*.csproj"
           ],
-          "exclude": [ "**/bin/**", "**/obj/**" ]
+          "exclude": [ "**/bin/**", "**/obj/**" ],
+          "cwd": ".."
         }
       ],
       "dest": "api"
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "corefx/src/**/src/**/*.csproj"
+          ],
+          "exclude": [ "**/bin/**", "**/obj/**" ],
+          "cwd": ".."
+        }
+      ],
+      "dest": "api_src"
     }
   ],
   "build": {

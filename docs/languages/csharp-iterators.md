@@ -2,13 +2,22 @@
 
 Almost every program you write will have some need to iterate
 over a collection. You'll write code that examines every item in
-a collection. You'll also create classes
-that produce a collection by creating a method that produces an
-iterator for the elements of that class. The C# language provides
+a collection. 
+
+You'll also create iterator methods which are methods that produces an
+iterator for the elements of that class. These can be used for:
+
++ Performing an action on each item in a collection.
++ Enumerating a custom collection.
++ Extending [LINQ](linq.md) or other libraries.
++ Creating a data pipeline where data flows efficiently through iterator
+methods.
+
+The C# language provides
 features for both these scenarios. This article provides an overview
 of those features.
 
-# iterating with foreach
+# Iterating with foreach
 
 Enumerating a collection is simple: The `foreach` keyword enumerates
 a collection, executing the embedded statement once for each element
@@ -23,12 +32,12 @@ foreach (var item in collection)
 
 That's all there is to it. To iterate over all the contents of a collection,
 the `foreach` statement is all you need. The `foreach` statement isn't magic,
-though. It relies on two interfaces defined in the .NET core library in order
+though. It relies on two generic interfaces defined in the .NET core library in order
 to generate the code necessary to iterate a collection: `IEnumerable<T>` and
-`IEnumerator<T>`. 
+`IEnumerator<T>`. This mechanism is explained in more detail [below](#deeper-dive-into-foreach)
 
 Both of these interfaces also have non-generic counterparts: `IEnumerable` and 
-`IEnumerator`. The generic versions are preferred for modern code.
+`IEnumerator`. The [generic](generics.md) versions are preferred for modern code.
 
 # Enumeration sources with iterator methods
 
@@ -85,6 +94,24 @@ public IEnumerable<int> GetSingleDigitNumbers()
     index = 100;
     while (index++ < 110)
         yield return index;
+}
+```
+
+That's the basic syntax. Let's consider a real world example where you would
+write an iterator method. Imagine you're on an IoT project and the device
+sensors generate a very large stream of data. To get a feel for the data, you
+might write a method that samples every Nth data element. This small iterator
+method does the trick:
+
+```
+public static IEnumerable<T> Sample(this IEnumerable<T> sourceSequence, int interval)
+{
+    int index = 0;
+    foreach (T item in sourceSequence)
+    {
+        if (index++ % interval == 0)
+            yield return item;
+    }
 }
 ```
 
@@ -202,13 +229,15 @@ the `IDisposable` interface. The full expansion generates code more like this:
 ```cs
 {
     var enumerator = collection.GetEnumerator();
-    try {
+    try 
+    {
         while (enumerator.MoveNext())
         {
             var item = enumerator.Current;
             Console.WriteLine(item.ToString());
         }
-    } finally {
+    } finally 
+    {
         // dispose of enumerator.
     }
 }
@@ -218,7 +247,8 @@ The manner in which the enumerator is disposed of depends on the characteristics
 the type of `enumerator`. In the general case, the `finally` clause expands to:
 
 ```cs
-finally {
+finally 
+{
    (enumerator as IDisposable)?.Dispose();
 } 
 ```
@@ -227,7 +257,8 @@ However, if the type of `enumerator` is a sealed type and there is no implicit
 conversion from the type of `enumerator` to `IDisposable`, the `finally` clause
 expands to an empty block:
 ```cs
-finally {
+finally 
+{
 } 
 ```
 
@@ -235,7 +266,8 @@ If there is an implicit conversion from the type of `enumerator` to `IDisposable
 and `enumerator` is a non-nullable value type, the `finally` clause expands to:
 
 ```cs
-finally {
+finally 
+{
    ((IDisposable)enumerator).Dispose();
 } 
 ```

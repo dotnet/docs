@@ -103,7 +103,7 @@ sensors generate a very large stream of data. To get a feel for the data, you
 might write a method that samples every Nth data element. This small iterator
 method does the trick:
 
-```
+```cs
 public static IEnumerable<T> Sample(this IEnumerable<T> sourceSequence, int interval)
 {
     int index = 0;
@@ -165,7 +165,7 @@ methods:
 public IEnumerable<int> GetSingleDigitOddNumbers(bool getCollection)
 {
     if (getCollection == false)
-        return new int[];
+        return new int[0];
     else
         return IteratorMethod();
 }

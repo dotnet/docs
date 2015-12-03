@@ -5,6 +5,7 @@
 *  [🔧 Syntax](syntax.md)
 *  [🔧 Features at a glance](features.md)
 *  [🔧 C# Type system](type-system.md)
+*  [🔧 Lambda Expressions](lambda-expressions.md)
 *  [🔧 Iterators](iterators.md)
 *  [🔧 Delegates & events](delegates-events.md)
 *  [🔧 Generics](generics.md)

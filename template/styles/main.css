@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5 {
   font-weight: bold;
 }
 
+
 footer {
   text-align: center;
   width: 100%;
@@ -38,15 +39,15 @@ footer > .inner-footer a:hover {
   text-decoration: none;
 }
 .content a {
-  color: inherit;
-/*  border-bottom: 5px solid #682079;*/
-  box-shadow: 0px -4px 0px #d89ae4 inset;
+  /*color: #A979B3;*/
+    color: #A356B3;
+  text-decoration: none;
+  outline: 0;
 }
 .content a:hover {
-  background-color: #d89ae4;
-  color: inherit;
+  /*transition: color .15s cubic-bezier(.33, .66, .66, 1);*/
   text-decoration: none;
-  transition: background .15s cubic-bezier(.33, .66, .66, 1);
+  color: #682079;
 }
 
 
@@ -117,6 +118,7 @@ footer > .inner-footer a:hover {
 .btn-gs:hover, .btn-gs:active, .btn-gs:focus, .jquery-active {
   color: #fff;
   background-color: #682079;
+  outline: 0 !important;
 }
 
 

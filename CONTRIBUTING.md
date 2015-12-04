@@ -11,8 +11,8 @@ In this document:
 
 ## Adding content ##
 
-Before adding content, submit an issue with a suggestion for your proposed
-article. Provide detail on what the article would discuss, and how it would
+Before adding content or editing content, submit an issue with a suggestion for your proposed
+changes. If you are adding a new article, provide details on what the article would discuss, and how it would
 relate to existing documentation.
 
 Articles should be organized into logical groups or sections. Each section

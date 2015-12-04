@@ -1,31 +1,15 @@
 Contributing
-======
+============
 
-The documentation is built using [docfx](http://aspnet.github.io/docfx/) and
-[Markdown](https://daringfireball.net/projects/markdown/syntax). It is hosted on the [.NET Core](http://dotnet.github.io/) website. 
+In this document: 
 
-## Building the Docs
+* [Adding content](#Adding content)
+* [Process for contributing](#Process for contributing) 
+* [Guidance checklist](#Guidance checklist)
+* [Building the docs](#Building the docs)
+* [Contributing to samples](#Contributing to samples)
 
-To build the docs, you will need to install
-[docfx](http://aspnet.github.io/docfx/); latest versions are the best. 
-
-There are several ways to use docfx, and most of them are covered in the docfx [getting started guide](http://aspnet.github.io/docfx/tutorial/docfx_getting_started.html). This small guide will use the [DNX-based](http://aspnet.github.io/docfx/tutorial/docfx_getting_started.html#use-docfx-under-dnx) version of the tool to be able to invoke it from the command line; if you are comfortable with other ways listed on the link above, feel free to use those. 
-
-**Note:** please note that as of now, docfx requires the full .NET Framework (Windows) or Mono (Linux/OSX). We will be working towards porting it to .NET Core in the future. 
-
-The conceptual documentation is placed in the docs folder in the root of the repo so most of the work will happen there. 
-
-Using the DNX-based docfx tool, you build the resulting 
-
-	docfx build
-	
-After build completes, you can preview the resulting site locally using built-in web server.
-
-	docfx serve _site
-	
-This will start the local preview on localhost:8080. You can then view the changes by going to http://localhost:8080/docs/[path] (i.e. http://localhost:8080/docs/getting-started/).   
-
-## Adding Content ##
+## Adding content ##
 
 Before adding content, submit an issue with a suggestion for your proposed
 article. Provide detail on what the article would discuss, and how it would
@@ -50,7 +34,7 @@ subfolder, create a ``sample`` folder for code samples and a  ``_static`` folder
 
 Author information is kept in the Markdown file itself. Each author should have a link to an online presence for himself/herself. 
 
-## Process for Contributing ##
+## Process for contributing ##
 
 **Step 1:** Open an Issue describing the article you wish to write and how it
 relates to existing content. Get approval to write your article.
@@ -63,7 +47,8 @@ relates to existing content. Get approval to write your article.
 needed images in a _static folder located in the same folder as the article.
 Be sure to follow the proper Markdown syntax. If you have code samples,
 place them in a folder within the `/samples/` folder.  For writing guidelines, see
-[our style guide](/styleguide.md)
+[our style guide](/styleguide.md). Also do not forget to remove the "wrench" icon 
+(🔧) from the TOC and the file heading, if applicable. 
 
 **Step 5:** Submit a Pull Request from your branch to `dotnet/core-docs/master`.
 
@@ -71,7 +56,7 @@ place them in a folder within the `/samples/` folder.  For writing guidelines, s
 updates to your branch. When they are ready to accept the PR, they will add a
 "LGTM" (Looks Good To Me) comment and any other steps that are (maybe) needed.
 
-## Guidance Checklist ##
+## Guidance checklist ##
 
 Below is a short list of guiding rules that you should keep in mind when you are
 contributing to .NET Core documentation.
@@ -82,6 +67,30 @@ contributing to .NET Core documentation.
 - If updating code samples in `/samples/`, be sure any line number references
 	in your article remain correct
 
-## Contributing to Samples
+## Building the docs
+
+The documentation is built using [docfx](http://aspnet.github.io/docfx/) and
+[Markdown](https://daringfireball.net/projects/markdown/syntax). It is hosted on the [.NET Core](http://dotnet.github.io/) website. 
+
+To build the docs, you will need to install
+[docfx](http://aspnet.github.io/docfx/); latest versions are the best. 
+
+There are several ways to use docfx, and most of them are covered in the docfx [getting started guide](http://aspnet.github.io/docfx/tutorial/docfx_getting_started.html). This small guide will use the [DNX-based](http://aspnet.github.io/docfx/tutorial/docfx_getting_started.html#use-docfx-under-dnx) version of the tool to be able to invoke it from the command line; if you are comfortable with other ways listed on the link above, feel free to use those. 
+
+**Note:** please note that as of now, docfx requires the full .NET Framework (Windows) or Mono (Linux/OSX). We will be working towards porting it to .NET Core in the future. 
+
+The conceptual documentation is placed in the docs folder in the root of the repo so most of the work will happen there. 
+
+Using the DNX-based docfx tool, you build the resulting 
+
+	docfx build
+	
+After build completes, you can preview the resulting site locally using built-in web server.
+
+	docfx serve _site
+	
+This will start the local preview on localhost:8080. You can then view the changes by going to http://localhost:8080/docs/[path] (i.e. http://localhost:8080/docs/getting-started/).   
+
+## Contributing to samples
 
 See the [Samples Readme](https://github.com/dotnet/core-docs/blob/master/samples/README.md).

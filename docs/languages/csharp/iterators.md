@@ -1,4 +1,4 @@
-# 🔧 Iterators
+# Iterators
 
 Almost every program you write will have some need to iterate
 over a collection. You'll write code that examines every item in

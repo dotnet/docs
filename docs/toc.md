@@ -14,7 +14,7 @@
 ## [🔧 Syntax](languages/csharp/syntax.md)
 ## [🔧 Features at a glance](languages/csharp/features.md)
 ## [🔧 C# Type system](languages/csharp/type-system.md)
-## [🔧 Iterators](languages/csharp/iterators.md)
+## [Iterators](languages/csharp/iterators.md)
 ## [🔧 Delegates & events](languages/csharp/delegates-events.md)
 ## [🔧 Generics](languages/csharp/generics.md)
 ## [🔧 Language Integrated Query (LINQ)](languages/csharp/linq.md)

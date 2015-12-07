@@ -1,5 +1,4 @@
 ﻿using System;
-using Fibonacci;
 
 namespace ConsoleApplication
 {
@@ -29,12 +28,6 @@ namespace ConsoleApplication
             for (int i = 0; i < 15; i++)
             {
                 Console.WriteLine($"{i+1}: {FibonacciNumber(i)}");
-            }
-            
-            Console.WriteLine("Using a generator...");
-            foreach (var digit in new FibonacciGenerator().Generate(15))
-            {
-                Console.WriteLine(digit);
             }
         }
     }

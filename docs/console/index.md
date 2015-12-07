@@ -3,5 +3,5 @@
 *  [ Overview and moving pieces](overview.md)
 *  [ Console applications paradigm](paradigm.md)
 *  [ Creating single binaries with native compilation](single-binaries.md)
-* [Writing Console Apps: An Incremental Guide](incremental-guidemd)
+* [Writing Console Apps: An Incremental Guide](incremental-guide.md)
 

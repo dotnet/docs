@@ -67,13 +67,13 @@ contributing to .NET Core documentation.
 - If updating code samples in `/samples/`, be sure any line number references
 	in your article remain correct
 
-## Building the docs
+## Building the docs ##
 
-The documentation is built using [docfx](http://aspnet.github.io/docfx/) and
+The documentation is built using [docfx](http://dotnet.github.io/docfx/) and
 [Markdown](https://daringfireball.net/projects/markdown/syntax). It is hosted on the [.NET Core](http://dotnet.github.io/) website. 
 
 To build the docs, you will need to install
-[docfx](http://aspnet.github.io/docfx/); latest versions are the best. 
+[docfx](http://dotnet.github.io/docfx/); latest versions are the best. 
 
 There are several ways to use docfx, and most of them are covered in the docfx [getting started guide](http://aspnet.github.io/docfx/tutorial/docfx_getting_started.html). This small guide will use the [DNX-based](http://aspnet.github.io/docfx/tutorial/docfx_getting_started.html#use-docfx-under-dnx) version of the tool to be able to invoke it from the command line; if you are comfortable with other ways listed on the link above, feel free to use those. 
 

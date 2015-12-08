@@ -1,4 +1,4 @@
-# Async Programming in F#
+# Async Programming in F# #
 
 By [Phillip Carter](https://github.com/cartermp)
 
@@ -38,7 +38,7 @@ There are a few syntactical constructs which are worth noting:
 
 Additionally, normal `let`, `use`, and `do` keywords can be used alongside the async versions just as they would in a normal function.
 
-## How to start Async Code in F#
+## How to start Async Code in F# #
 
 As mentioned earlier, async code is a specification of work to be done in another context which needs to be explicitly started. Here are two primary ways to accomplish this:
 
@@ -136,7 +136,7 @@ Although this is just a naming convention, it does make things like API discover
 
 F#’s compiler is very strict, making it nearly impossible to do something troubling like run “async” code synchronously. If you come across a warning, that’s a sign that the code won’t execute how you think it will. If you can make the compiler happy, your code will mostly likely execute as expected.
 
-## For the C#/VB Programmer Looking Into F#
+## For the C#/VB Programmer Looking Into F# #
 
 This section assumes you’re familiar with the async model in C#/VB. If you are not, [Async Programming in C#/VB](async-csharp-vb.md) is a starting point.
 

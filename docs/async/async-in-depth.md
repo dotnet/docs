@@ -1,6 +1,12 @@
-# Task and Task<T>
+# Async In Depth
 
-As mentioned before, Tasks are constructs used to represent operations working in the background.
+By [Phillip Carter](https://github.com/cartermp)
+
+Writing I/O-Bound or CPU-Bound asynchronous code is simple using the `async` and `await` keywords, but what's happening under the covers is fairly complex.
+
+## Task and Task<T>
+
+Tasks are constructs used to represent operations working in the background.
 
 *   `Task` represents a single operation which does not return a value.
 *   `Task<T>` represents a single operation which returns a value of type `T`.
@@ -9,7 +15,7 @@ Tasks are awaitable, meaning that using `await` will allow your application or s
 
 It’s important to reason about Tasks as abstractions of work happening in the background, and _not_ an abstraction over multithreading. In fact, unless explicitly started on a new thread via `Task.Run`, a Task will start on the current thread and delegate work to the Operating System.
 
-## Deeper Dive into Tasks
+## Deeper Dive into Tasks for an I/O-Bound Operation
 
 Here’s a 10,000 foot view of what happens with a typical async call:
 
@@ -27,13 +33,18 @@ Although the above may seem like a lot of work to be done, when measured in term
 *   Time spent from points `1` to `2` is the time spent on I/O.
 *   Finally, time spent from points `2` to `3` is passing control back (and potentially a value) to the async method, at which point it is executing again.
 
-Tasks are also used outside of the async programming model. They are the foundation of the Task Parallel Library, which supports the parallelization of CPU-bound work via [Data Parallelism](https://msdn.microsoft.com/en-us/library/dd537608%28v=vs.110%29.aspx) and [Task Parallelism](https://msdn.microsoft.com/en-us/library/dd537609%28v=vs.110%29.aspx).
-
-
 ### What does this mean for Server scenarios?
 
-some stuff about stuff
+TODO: some stuff about stuff
 
 ### What does this mean for Client scenarios?
 
-some stuff about stuff
+TODO: some stuff about stuff
+
+## Deeper Dive into Task and Task<T> for a CPU-Bound Operation
+
+TODO needs to be written
+
+Old stuff below
+
+Tasks are also used outside of the async programming model. They are the foundation of the Task Parallel Library, which supports the parallelization of CPU-bound work via [Data Parallelism](https://msdn.microsoft.com/en-us/library/dd537608%28v=vs.110%29.aspx) and [Task Parallelism](https://msdn.microsoft.com/en-us/library/dd537609%28v=vs.110%29.aspx).

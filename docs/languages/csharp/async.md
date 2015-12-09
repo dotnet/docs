@@ -123,6 +123,8 @@ The following examples demonstrate various ways you can write async code in C#. 
 
 This snippet downloads the HTML from www.dotnetfoundation.org and counts the number of times the string ".NET" occurs in the HTML.  It uses ASP.NET MVC to define a web controller method which performs this task, returning the number.
 
+*Note: you shouldn't ever use Regexes if you plan on doing actual HTML parsing.*
+
 ```csharp
 private readonly HttpClient _httpClient = new HttpClient();
 
@@ -165,8 +167,6 @@ private async void SeeTheDotNets_Click(object sender, RoutedEventArgs e)
     NetworkProgressBar.Visbility = Visibility.Collapsed;
 }
 ```
-
-*Note: you shouldn't ever use Regexes if you plan on doing actual HTML parsing.*
 
 ### Waiting for Multiple Tasks to Complete
 

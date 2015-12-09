@@ -15,7 +15,7 @@ First, navigate to or create a new folder with a name you like.  "incremental" i
 Open up a command prompt and type the following:
 
 ```
-$ dotnet init
+$ dotnet new
 $ dotnet restore
 $ dotnet run
 ```
@@ -72,7 +72,7 @@ Let's do a quick walkthrough of what happened.
    
 3. `$ dotnet run`
 
-   This JIT compiled the source, writing "Hello World!" to STDOUT.
+   This JIT compiled the source, writing "Hello World!" to the console.
 
 ### Other ways to compile
 
@@ -84,10 +84,9 @@ $ bin/Debug/dnxcore50/Basic.exe
 Hello, World!
 ```
 
-Let's try compiling a native binary instead.  Using `dotnet clean` is optional.
+Let's try compiling a native binary instead.
 
 ```
-$ dotnet clean
 $ dotnet compile --native
 $ ./bin/Debug/dnxcore50/native/Basic
 Hello World!
@@ -165,11 +164,7 @@ And that's it!  You can augment `Program.cs` any way you like.
 
 Single files are fine for simple one-off programs, but chances are you're going to want to break things out into multiple files if you're building anything which has multiple components.  Multiple files are a way to do that.
 
-First, you can clear out any build artifacts like so:
-
-`$ dotnet clean`
-
-Next, create a new file and give it a unique namespace:
+Create a new file and give it a unique namespace:
 
 ```csharp
 using System;

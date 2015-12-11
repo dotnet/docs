@@ -1,4 +1,4 @@
-# Writing Console Apps: An Incremental Guide
+# Writing Console Apps: A Step by Step Guide
 
 This guide will show you how to use the .NET CLI tooling to build cross-platform console apps incrementally.  It will start with the most basic console app and eventually span multiple projects, including testing.
 
@@ -10,25 +10,21 @@ Before you begin, ensure you have the [latest .NET CLI tooling](http://dotnet.gi
 
 ## Hello, Console App!
 
-First, navigate to or create a new folder with a name you like.  "incremental" is the name chosen for the sample code, which can be found [here](https://github.com/dotnet/core-docs/samples/core-projects/console-apps/incremental).
+First, navigate to or create a new folder with a name you like.  "Hello" is the name chosen for the sample code, which can be found [here](https://github.com/dotnet/core-docs/samples/core-projects/console-apps/Hello).
 
 Open up a command prompt and type the following:
 
 ```
 $ dotnet new
 $ dotnet restore
-$ dotnet run
+$ dotnet compile
 ```
 
-You should see the following:
-
-`Hello World!`
-
-Let's do a quick walkthrough of what happened.
+Let's do a quick walkthrough:
 
 1. `$ dotnet init`
 
-   This created an up-to-date `project.json` file with NuGet dependencies necessary to build a console app.  It also created a `Program.cs`, a basic file containing the entry point for the application.
+   `dotnet init` created an up-to-date `project.json` file with NuGet dependencies necessary to build a console app.  It also created a `Program.cs`, a basic file containing the entry point for the application.
    
    `project.json`:
    ```javascript
@@ -68,19 +64,27 @@ Let's do a quick walkthrough of what happened.
 
 2. `$ dotnet restore`
 
-   This analyzed the `project.json` file, downloaded the dependencies stated in the file (or grabbed them from a cache on your machine), and wrote the `project.lock.json` file.  The `project.lock.json` file is necessary to be able to compile and run.
+   `dotnet restore` analyzed the `project.json` file, downloaded the dependencies stated in the file (or grabbed them from a cache on your machine), and wrote the `project.lock.json` file.  The `project.lock.json` file is necessary to be able to compile and run.
+   
+   The `project.lock.json` file is a persisted and complete set of NuGet dependencies and other information describing an app.  This file is read by other tools, such as `dotnet compile` and `dotnet run`, enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.
    
 3. `$ dotnet run`
 
-   This JIT compiled the source, writing "Hello World!" to the console.
+   `dotnet compile` compiled the source in Intermediate Language (IL) and generated an executable shim and a `Hello.dll` `.dll` file which contains the IL.
+   
+You can now invoke the executable.
+
+```
+$ /bin/Debug/dnxcore50/Hello.exe
+Hello, World!
+```
 
 ### Other ways to compile
 
-Let's try compiling and executing an executable file.  In this example, it's named "Basic.exe".  If you named your top-level folder something else, it will have that name.
+Let's try compiling `dotnet run` to compile and execute the code without generating any build artifacts.  Note that although this has use (mainly by ASP.NET internally), it's not a recommended way to run build and run console applications.
 
 ```
-$ dotnet compile
-$ bin/Debug/dnxcore50/Basic.exe
+$ dotnet run
 Hello, World!
 ```
 
@@ -140,7 +144,8 @@ namespace ConsoleApplication
 And running the program:
 
 ```
-$ dotnet run
+$ dotnet compile --native
+$ ./bin/Debug/dnxcore50/native/Basic
 1: 0
 2: 1
 3: 1
@@ -286,13 +291,23 @@ And that's it!
 
 ## Using folders to organize code
 
-Say you wanted to introduce some new types to do work on.  It would be nice to organize those types logically, right?  This is where folders come into play.  You can either follow along with [the sample project](https://github.com/dotnet/core-docs/samples/core-projects/console-apps/NewTypes) that this guide covers, or create your own files and folders.
+Say you wanted to introduce some new types to do work on.  You can do this by adding more files and making sure to give them namespaces you can include in your `Program.cs` file.
 
-To begin, create a new folder under the root of your project.  `/Types` is chosen here.
+```
+/MyProject
+|__Program.cs
+|__Type1.cs
+|__Type2.cs
+|__project.json
+```
+
+This works great when the size of your project is relatively small.  However, if you have a larger app with many different data types and potentially multiple layers, you may wish to organize things logically.  This is where folders come into play.  You can either follow along with [the sample project](https://github.com/dotnet/core-docs/samples/core-projects/console-apps/NewTypes) that this guide covers, or create your own files and folders.
+
+To begin, create a new folder under the root of your project.  `/Model` is chosen here.
 
 ```
 /NewTypes
-|__/Types
+|__/Model
 |__Program.cs
 |__project.json
 ```
@@ -301,14 +316,14 @@ Now add some new types to the folder:
 
 ```
 /NewTypes
-|__/Types
+|__/Model
    |__Type1.cs
    |__Type2.cs
 |__Program.cs
 |__project.json
 ```
 
-Now give them all the same namespace so you can include them in your `Program.cs`.
+Now, just as if they were files in the same directory, give them all the same namespace so you can include them in your `Program.cs`.
 
 ### Example: Pet Types
 
@@ -462,7 +477,7 @@ You'll probably be wanting to test your projects at some point.  Here's a good w
    }
    ```
 
-   This file tells the `dotnet` driver that this is a multi-project system, which allows it to look for dependencies in more than just the current folder it happens to be executing in.  This is important because it allows you to place a dependency on the code under test in your test project.
+   This file tells the build system that this is a multi-project system, which allows it to look for dependencies in more than just the current folder it happens to be executing in.  This is important because it allows you to place a dependency on the code under test in your test project.
    
 ### Example: Extending the NewTypes project
 
@@ -475,7 +490,7 @@ The whole project structure should look like this:
 /NewTypes
 |__/src
    |__/NewTypes
-      |__/Types
+      |__/Model
          |__Dog.cs
          |__Cat.cs
          |__IPet.cs

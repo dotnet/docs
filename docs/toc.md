@@ -19,7 +19,7 @@
 ## [🔧 Generics](languages/csharp/generics.md)
 ## [🔧 Language Integrated Query (LINQ)](languages/csharp/linq.md)
 ## [🔧 Asynchronous programming](languages/csharp/async.md)
-## [🔧 Paralell programming](languages/csharp/parallel.md)
+## [🔧 Parallel programming](languages/csharp/parallel.md)
 ## [🔧 Native interoperability](languages/csharp/interop.md)
 ## [🔧 Reflection & code generation](languages/csharp/reflection.md)
 ## [🔧 Documenting your code](languages/csharp/codedoc.md)

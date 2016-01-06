@@ -11,7 +11,7 @@ Tasks are constructs used to implement what is known as the [Promise Model of Co
 *   `Task` represents a single operation which does not return a value.
 *   `Task<T>` represents a single operation which returns a value of type `T`.
 
-It’s important to reason about Tasks as abstractions of work happening in the background, and *not* an abstraction over multithreading. In fact, unless explicitly started on a new thread via `Task.Run`, a Task will start on the current thread and delegate work to the Operating System.
+It’s important to reason about Tasks as abstractions of work happening asynchronously, and *not* an abstraction over multithreading. In fact, unless explicitly started on a new thread via `Task.Run`, a Task will start on the current thread and delegate work to the Operating System.
 
 You can learn more about Tasks and different ways to interact with them in the [Task-based Asynchronous Pattern (TAP) Article](https://msdn.microsoft.com/en-us/library/hh873175(v=vs.110).aspx).
 
@@ -37,21 +37,23 @@ public async Task<string> GetHtmlAsync()
 }
 ```
 
-The call to `GetStringAsync()` makes its way through the .NET libraries and runtime (perhaps hitting other async calls) until it reaches a system interop call (such as `P/Invoke` into Windows). This eventually makes the proper System API call (such as `write()` to a socket on Linux).
+The call to `GetStringAsync()` makes its way through the .NET libraries and runtime (perhaps hitting other async calls) until it reaches a system interop call (such as `P/Invoke` into Windows). It's worth noting that if an `await` is ever encountered in the library layer, a `Task<T>` object will be passed back to `GetHtmlAsync()`, `GetHtmlAsync()` will reach its `await`, and control over `GetHtmlAsync()` will also be yielded.  Regardless of if this happens, The interop layer of the runtime will make the proper System API call (such as `write()` to a socket on Linux), thus leaving user space and entering kernel space.  This is where the real "magic" of async I/O happens.
 
-After the System API call, the request is now in kernel mode, making its way to the networking subsystem of the OS (such as the `/net` in the Linux Kernel).  Here the OS will handle the networking request *asynchronously*.  Details may be different depending on the OS used (the device driver call may be scheduled as a signal is sent back to the runtime, or a device driver call may be made and *then* a signal sent back), but eventually the runtime will be informed that the networking request is in progress.  At this time, the work for the device driver will either be scheduled, in-progress, or already finished (and the request is already out "over the wire").
+After the System API call, the request is now in kernel space, making its way to the networking subsystem of the OS (such as `/net` in the Linux Kernel).  Here the OS will handle the networking request *asynchronously*.  Details may be different depending on the OS used (the device driver call may be scheduled as a signal is sent back to the runtime, or a device driver call may be made and *then* a signal sent back), but eventually the runtime will be informed that the networking request is in progress.  At this time, the work for the device driver will either be scheduled, in-progress, or already finished (the request is already out "over the wire") - but because this is all happening asynchronously, the device driver is able to immediately handle something else!
 
-For example, in Windows the OS makes a call to the network device driver and asks it to perform the networking operation via an Interrupt Request Packet (IRP) which represents the operation.  The device driver recieves the IRP, makes the call to the network, marks the IRP as "pending", and returns back to the OS.  Because the Windows Kernel now knows that the IRP is "pending", it doesn't have any more work to do and "returns" back to the runtime.
+For example, in Windows an OS thread makes a call to the network device driver and asks it to perform the networking operation via an Interrupt Request Packet (IRP) which represents the operation.  The device driver recieves the IRP, makes the call to the network, marks the IRP as "pending", and returns back to the OS.  Because the OS thread now knows that the IRP is "pending", it doesn't have any more work to do for this job and "returns" back to the runtime so that it can be used to perform other work.
 
-Once execution is back in the runtime and no longer in OS, the runtime will then create a `Task` or `Task<T>` which will be returned to `GetHtmlAsync()` and assigned to the `getHtmlTask` variable.  Note that at this point, although the I/O request is happening asynchronously, the system which called `GetHtmlAsync()` is still running synchronously!  When the `await` keyword is encountered, only then is execution yielded to the caller of `GetHtmlAsync()`, and the execution context that it was called in will be free to do other work.
+Once the info from the OS makes it back to the .NET runtime, the runtime will then create a `Task` or `Task<T>` which will be returned to `GetHtmlAsync()` and assigned to the `getHtmlTask` variable.  Note that at this point, although the I/O request is happening asynchronously, the system which called `GetHtmlAsync()` is still running synchronously!  When the `await` keyword is encountered, only then is execution yielded to the caller of `GetHtmlAsync()`, and the execution context that it was called in will be free to do other work.
+
+**TODO:** Diagram of the above two paragraphs
 
 When the request is fulfilled and data comes back through the device driver, it notifies the CPU of new data received via an interrupt.  How this interrupt gets handled will vary depending on the OS, but eventually the data will be passed through the OS until it reaches a system interop call (for example, in Linux an interrupt handler will schedule the bottom half of the IRQ to pass the data up through the OS asynchronously).  Note that this *also* happens asynchronously!
 
 Once the data is passed into the runtime, it is then queued up as the result for the `Task<T>` which corresponds to `getHtmlTask`.  The caller of `GetHtmlAsync()` will eventually return execution to `GetHtmlAsync()`, and the result of the request is "unwrapped" into a `string`, which is then assigned to the `html` variable.
 
-Throughout this entire process, a key takeaway is that **no thread is 100% dedicated to running the task**.  Tasks have no thread affinity.  Although work is executed in some contexts (after all, the OS does have to make its way through passing data to a device driver and responding to an interrupt), there is no thread dedicated to sitting there and *waiting* for data from the request to come back.  This allows the system to handle a much larger volume of work rather than waiting for some I/O call to finish.
+**TODO:** Diagram of the above two paragraphs
 
-**TODO:** Diagram!
+Throughout this entire process, a key takeaway is that **no thread is 100% dedicated to running the task**.  Tasks have no thread affinity.  Although work is executed in some contexts (after all, the OS does have to make its way through passing data to a device driver and responding to an interrupt), there is no thread dedicated to sitting there and *waiting* for data from the request to come back.  This allows the system to handle a much larger volume of work rather than waiting for some I/O call to finish.
 
 Although the above may seem like a lot of work to be done, when measured in terms of wall clock time, it’s miniscule compared to the time it takes to do the actual I/O work. Although not at all precise, a potential timeline for such a call would look like this:
 
@@ -63,19 +65,27 @@ Although the above may seem like a lot of work to be done, when measured in term
 
 ### What does this mean for a server scenario?
 
-This model works well with a typical server scenario workload.  Because async I/O Tasks aren't an abstraction over threading, it means that the server threadpool can service a much higher volume of web requests than if each thread were dedicated to running a particular request.  Because a picture is worth a thousand words:
+This model works well with a typical server scenario workload.  Because async I/O Tasks aren't an abstraction over threading, it means that the server threadpool can service a much higher volume of web requests than if each thread were dedicated to running a particular request.  Consider two servers: one that uses async code, and one that does not.  For the purpose of this example, each server only has 5 threads available to service requests.
 
-**TODO:** diagram!
+Say each server receives 6 concurrent requests, which each ask for a resource that requires I/O of some sort.  The server *without* async code has to queue up the 6th request until one of the 5 threads have finished the I/O-bound work and written a response:
 
-As you can see, threads are free to service requests while tasks are running asynchronously.  When a background task is finished, its result gets queued up and eventually serviced by the next available thread.
+**TODO:** non-async diagram of server
 
-You can expect a server to be able to handle an order of magnitude more requests using `async` and `await` than if it were dedicating a thread for each request it receives.
+That's not an ideal scenario.  The server *with* async still queues up the 6th request, but because it uses `async` and `await` each of its threads are freed up when the I/O-bound work starts, rather than when it finishes:
+
+**TODO:** async diagram of same server
+
+As you can see, the 5 threads doing I/O-bound work are freed after they start that work, allowing one of them to service the 6th request much sooner.  When an I/O-bound job is complete, its result is placed in a queue and the next available thread picks it up and the response.
+
+Although this is a contrived example, it works in a very similar fashion in the real world.  In fact, you can expect a server to be able to handle an order of magnitude more requests using `async` and `await` than if it were dedicating a thread for each request it receives.
 
 ### What does this mean for client scenario?
 
 The biggest gain for using `async` and `await` for a client app is an increase in responsiveness.  Although you can make an app responsive by spawning threads manually, the act of spawning a thread is an expensive operation relative to just using `async` and `await`.  Especially for something like a mobile game, impacting the UI thread as little as possible where I/O is concerned is crucial.
 
 More importantly, because I/O-bound work spends virtually no time on the CPU, dedicating an entire CPU thread to perform barely any useful work would be a poor use of resources.
+
+**TODO:** Diagram showing yielding I/O stuff as UI thread can now do other work
 
 Additionally, dispatching work to the UI thread (such as updating a UI) is very simple with `async` methods, and does not require extra work (such as calling a thread-safe delegate).
 
@@ -105,10 +115,8 @@ public async Task<int> CalculateResult(InputData data)
 
 Once `await` is encountered, the execution of `CalculateResult()` is yielded to its caller, allowing other work to be done with the current thread while `DoExpensiveCalculation()` is churning out a result.  Once it has finished, the result is queued up to run on the main thread.  Eventually, the main thread will return to executing `CalculateResult()`, at which point it will have the result of `DoExpensiveCalculation()`.
 
-**TODO:** Diagram!
-
 ### Why does async help here?
 
 `async` and `await` are the best practice for being responsive while performing CPU-bound work.  This is a decision you'll have to evaluate.  If there is value in adding responsiveness to an operationg that's CPU-bound, `async` and `await` are a great way to make that happen.
 
-It's important to note that if you don't gain anything from responsiveness to your CPU-bound work, `async` and `await` will actually be a performance hit over just calling the code directly on the same thread.  This is because there is overhead in scheduling work on the threadpool and the runtime's coordination of Tasks to represent the work being done.
+It's important to note that if you don't gain anything from adding responsiveness to your CPU-bound work, `async` and `await` will actually be a performance hit over just calling the code directly on the same thread.  This is because there is overhead in scheduling work on the threadpool and the runtime's coordination of Tasks to represent the work being done.

@@ -1,0 +1,214 @@
+# Building Expression Trees
+
+All the expression trees I've shown you so far have been created
+by the C# compiler. All I had to do was create a `LambdaExpression`
+that was assigned to a variable typed as an `Expression<Func<T>>` or
+some similar type. That's not the only way to create an expression
+tree. For many scenarios you may find that you need to build an
+expression in memory at runtime. 
+
+Building Expression Trees is complicated by the fact that those
+expression trees are immutable. Being immutable means that you must
+build the tree from the leaves up to the root. The APIs you'll use to
+build expression trees reflect this fact: The methods you'll use to
+build a node take all its children as arguments. Let's walk through
+a few examples to show you the techniques.
+
+## Creating Nodes
+
+Let's start relatively simply again. We'll use the addition
+expression I've been working with throughout these sections:
+
+```cs
+Expression<Func<int>> sum = () => 1 + 2;
+```
+
+To construct that expression tree, you must construct the leaf nodes.
+The leaf nodes are constants, so you can use the `Expression.Constant`
+method to create the nodes:
+
+```cs
+var one = Expression.Constant(1, typeof(int));
+var two = Expression.Constant(2, typeof(int));
+```
+
+Next, you'll build the addition expression:
+
+```cs
+var addition = Expression.Add(one, two);
+```
+
+Once you've got the addition expression, you can create the lambda
+expression:
+
+```cs
+var lamdba = Expression.Lambda(addition);
+```
+
+This is a very simple LambdaExpression, because it contains no arguments.
+Later in this section, you'll see how to map arguments to parameters
+and build more complicated expressions.
+
+For expressions that are as simple as this one, you may combine all the
+calls into a single statement:
+
+```cs
+var lambda = Expression.Lambda(
+    Expression.Add(
+        Expression.Constant(1, typeof(int)),
+        Expression.Constant(2, typeof(int))
+    )
+);
+```
+
+## Building a Tree
+
+That's the basics of building an expression tree in memory. More
+complex trees generally mean more node types, and more nodes in the
+tree. Let's run through one more example and show two more node types
+that you will typically build when you create expression trees:
+the argument nodes, and method call nodes.
+
+Let's build an expression tree to creates this expression:
+
+```cs
+Expression<Func<double, double, double>> distanceCalc =
+    (x, y) => Math.Sqrt(x * x + y * y);
+```
+ 
+You'll start by creating parameter expressions for `x` and `y`:
+
+```cs
+var xParameter = Expression.Parameter(typeof(double), "x");
+var yParameter = Expression.Parameter(typeof(double), "y");
+```
+
+Creating the multiplication and addition expressions follow the pattern
+you've already seen:
+
+```cs
+var xSquared = Expression.Multiply(xParameter, xParameter);
+var ySquared = Expression.Multiply(yParameter, yParameter);
+var sum = Expression.Add(xSquared, ySquared);
+```
+
+Next, you need to create a method call expression for the call to
+`Math.Sqrt`.  This requires creating an expression that calls
+`Math.Sqrt`, and then updating that expression so that the
+arguments represent the sum of xSquared and ySquared:
+
+```cs
+Expression<Func<double, double>> sqrt = (x) => Math.Sqrt(x);
+var methodCall = sqrt.Body as MethodCallExpression;
+var distance = methodCall.Update(default(Expression), new List<Expression> { sum });
+```
+
+> Those familiar with the Reflection APIs may wonder why I didn't use
+> the Reflection APIs to retrieve the `MethodInfo` object for the `Math.Sqrt`
+> method. The answer is simple: that method is not available on .NET Core. 
+
+And  then finally, you put the method call into a lambda expression,
+and make sure to define the arguments to the lambda expression:
+
+```cs
+var distanceLambda = Expression.Lambda(
+    distance,
+    xParameter,
+    yParameter);
+```
+
+In this more complicated example, you see a couple more techniques that
+you will often need to create expression trees.
+
+First, you need to create the objects that represent parameters or
+local variables before you use them. Once you've created those objects,
+you can use them in your expression tree wherever you need.
+
+Second, you need to use a subset of the Reflection APIs to create a `MethodInfo` object
+so that you can create an expression tree to access that method. You must limit
+yourself to the subset of the Reflection APIs that are available on the .NET Core platform. Again,
+these techniques will extend to other expression trees. You'll have to create a
+delegate that cals the method you want, and retrieve the `MethodInfo` object
+from that expression.
+
+## Building Code In Depth
+
+You aren't limited in what you can build using these APIs. However, the more
+complicated of an expression tree that you want to build, the more difficult
+the code is to manage and to read. 
+
+Let's build an expression tree that is the equivalent of this code:
+
+```cs
+Func<int, int> factorialFunc = (n) =>
+{
+    var res = 1;
+    while (n > 1)
+    {
+        res = res * n;
+        n--;
+    }
+    return res;
+};
+```
+
+Notice above that I did not build the expression tree, but simply the delegate. Using
+the `Expression` class, you can't build statement lambdas. Here's the code that is required
+to build the same functionality. It's complicated by the fact that there isn't an API to build
+a `while` loop, instead of you need to build a loop that contains a conditional test, and a label
+target to break out of the loop. 
+
+```cs
+var nArgument = Expression.Parameter(typeof(int), "n");
+var result = Expression.Variable(typeof(int), "result");
+
+// Creating a label that represents the return value
+LabelTarget label = Expression.Label(typeof(int));
+
+var initializeResult = Expression.Assign(result, Expression.Constant(1));
+
+// This is the inner block that performs the multiplication,
+// and decrements the value of 'n'
+var block = Expression.Block(
+    Expression.Assign(result,
+        Expression.Multiply(result, nArgument)),
+    Expression.PostDecrementAssign(nArgument)
+);
+
+// Creating a method body.
+BlockExpression body= Expression.Block(
+    new[] { result },
+        initializeResult,
+        Expression.Loop(
+            Expression.IfThenElse(
+                Expression.GreaterThan(nArgument, Expression.Constant(1)),
+                block,
+                Expression.Break(label, result)
+            ),
+        label
+    )
+);
+```
+
+The code to build the code is quite a bit longer, more complicated, and it's riddled
+with labels and gotos and other elements we'd like to avoid in our everyday
+coding tasks. 
+
+For this section, I've also updated the visitor code to visit every node in this expression
+tree and write out information about the nodes that are created in this sample. You can see
+the code in the samples section. You can experiment for yourself: build it and run the samples.
+
+## Examining the APIs
+
+The expression tree APIs are some of the more difficult to navigate in the
+.NET core framework. Their purpose is a rather complex undertaking: writing code that generates
+code at runtime. They are necessarily complicated to provide a balance between supporting
+all the control structures available in the C# language and keeping the surface area
+of the APIs as small as reasonable. This balance means that many control structures are
+represented not by their C# constructs, but by constructs that represent the underlying
+logic that the compiler generates from these higher level constructs. 
+
+Also, at this time, there are C# expressions that cannot be built directly
+using `Expression` class methods. In general, these will be the newest operators
+and expressions added in C# 5 and C# 6. (For example, `async` expressions cannot be built, and
+the new `?.` operator cannot be directly created.)

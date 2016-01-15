@@ -1,5 +1,5 @@
 # Writing libraries on .NET Core
 
-*  [🔧 Overview](overview.md)
-*  [🔧 Creating a class library](creating-class-library.md)
-
+*  [Overview](overview.md)
+*  [Write Libraries with Cross-Platform Tools](libraries-with-cli.md)
+*  [🔧 Using Visual Studio](libraries-with-vs.md)

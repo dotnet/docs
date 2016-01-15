@@ -1,5 +1,6 @@
-# 🔧 Overview
+# Overview
 
-> **Note**
-> 
-> This topic hasn’t been written yet! You can track the status of this issue through our public GitHub issue tracker. Learn how you can contribute on GitHub.
+Writing libraries on .NET Core can be done in two different ways.  You can use a command line interface (CLI) to build, test, and run you code on Linux, OS X, or Windows.  You can also get a full IDE experience on Windows with Visual Studio.
+
+* [Writing Libraries with Cross Platform Tools](libraries-with-cli.md)
+* [Creating Libraries in Visual Studio](libraries-with-vs.md)

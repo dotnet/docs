@@ -25,6 +25,7 @@
 ## [🔧 Documenting your code](languages/csharp/codedoc.md)
 # [Understanding the .NET Core Platform](index.md)
 ## [The .NET Primer](concepts/primer.md)
+## [Overview of .NET implementations](concepts/editions-overview.md) 
 ## [Programming Languages on .NET Platform](languages/index.md)
 ### [🔧 .NET - a multi-language platform](languages/overview.md)
 ### [🔧 The main trio: C#, F# and Visual Basic](languages/main-trio.md)

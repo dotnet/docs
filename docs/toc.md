@@ -34,7 +34,7 @@
 ### [🔧 Creating single binaries with native compilation](console/single-binaries.md)
 ## [Writing libraries](libraries/index.md)
 ### [Overview](libraries/overview.md)
-### [Creating a class library on any OS](libraries/libraries-with-cli.md)
+### [Creating a class library with Cross Platform Tools](libraries/libraries-with-cli.md)
 ### [Creating a class library in Visual Studio](libraries/libraries-with-vs.md)
 ## [Understanding package management on .NET](packaging/index.md)
 ### [🔧 Introducing NuGet](packaging/overview.md)

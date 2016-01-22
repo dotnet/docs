@@ -11,9 +11,7 @@ In this document:
 
 ## Adding content ##
 
-Before adding content or editing content, submit an issue with a suggestion for your proposed
-changes. If you are adding a new article, provide details on what the article would discuss, and how it would
-relate to existing documentation.
+Before adding content, please submit an issue describing your content proposal. For smaller changes or additions, feel free to make a pull request.
 
 Articles should be organized into logical groups or sections. Each section
 should be given a named folder (e.g. /yourfirst). That section contains the
@@ -89,7 +87,7 @@ After build completes, you can preview the resulting site locally using built-in
 
 	docfx serve _site
 	
-This will start the local preview on localhost:8080. You can then view the changes by going to http://localhost:8080/docs/[path] (i.e. http://localhost:8080/docs/getting-started/).   
+This will start the local preview on localhost:8080. You can then view the changes by going to http://localhost:8080/docs/[path] (e.g. http://localhost:8080/docs/getting-started/).   
 
 ## Contributing to samples
 

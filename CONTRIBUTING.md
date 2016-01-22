@@ -17,7 +17,7 @@ relate to existing documentation.
 
 Articles should be organized into logical groups or sections. Each section
 should be given a named folder (e.g. /yourfirst). That section contains the
-rst files for all articles in the section. For images and other static
+Markdown files for all articles in the section. For images and other static
 resources, create a subfolder that matches the name of the article. Within this
 subfolder, create a ``sample`` folder for code samples and a  ``_static`` folder
  for images and other static content.

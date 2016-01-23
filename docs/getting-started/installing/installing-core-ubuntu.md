@@ -1,12 +1,33 @@
-# Installing .NET Core on OS X
+# Installing .NET Core on Linux
 
 By [Zlatko Knezevic](https://github.com/blackdwarf)
 
-This document will lead you through acquiring the .NET Core and its associated CLI toolchainand running a “Hello World” demo on OS X. The packages are set to work on OS X version 10.10. 
+This document will lead you through acquiring the .NET Core and its associated CLI toolchain and running a “Hello World” demo on Linux.
 
-## Installing .NET Core 
+## Setting up the environment
 
-The easiest way to get the tools and .NET Core on your OS X machine is to use the official [PKG installer](https://dotnetcli.blob.core.windows.net/dotnet/dev/Installers/Latest/dotnet-osx-x64.latest.pkg). When you install .NET Core, it will put all of the needed tools in your $PATH so you can use it immidiatelly.  
+### Setting up the apt-get feed
+
+We will use apt-get, the native Ubuntu package installer, to install the .NET Core SDK. In order to get the package, however, we will need to add a new package feed. The below commands will do this. 
+
+```console
+sudo sh -c 'echo "deb [arch=amd64] http://apt-mo.trafficmanager.net/repos/dotnet/ trusty main" > /etc/apt/sources.list.d/dotnetdev.list' 
+sudo apt-key adv --keyserver apt-mo.trafficmanager.net --recv-keys 417A0893
+sudo apt-get update
+``` 
+
+
+## Installing the .NET Command Line Interface
+
+Installing the actual CLI toolchain is as simple as running:
+
+```console
+sudo apt-get install dotnet
+```
+
+This will install the package and all of the dependencies. It will also add the toolchain to your $PATH, so they will be available the next time you drop down into the terminal.  
+
+That’s it! You now have the .NET Core tools installed on your machine and it is time to take it for a spin.
 
 ## The proverbial Hello World
 
@@ -50,14 +71,14 @@ This will produce a `bin` directory in your directory. The structure of the drop
 
 Finally, let's exercise a new feature that we've added to our .NET Command Line Interface: producing single native binaries. These binaries do not require a shared runtime to work; you can just copy the single file over to another Ubuntu machine and just run it. 
 
-The process is pretty similar to the above, with the addition of one more switch.
+The process is pretty similar to the above, with the addition of one more switch. 
 
 ```console
 dotnet restore
 dotnet build --native
 ```
 
-After the compile command finishes, we can just run the resulting binary. By convention, the compile command drops the results in ./bin/[configuration]/[framework]/native/[binary name].exe. Running this binary will get us our greeting! 
+After the compile command finishes, we can just run the resulting binary. By convention, the compile command drops the results in ./bin/[configuration]/[framework]/native/[binary name]. Running this binary will get us our greeting! 
 
 > **Note**
 > This capability is still in its infancy. Therefore, only the simplest of programs will be able to be natively compiled. 

@@ -122,7 +122,7 @@ The next thing you will need is a `project.json` file that will outline the depe
 
 ## Run your App
 
-You need to restore packages for your app, based on your project.json, with `dnu restore`. You will need to run this command under the Mono DNX. The first command switches the active runtime to the Mono one.
+You need to restore packages for your app, based on your project.json, with `dnu restore`. You will need to run this command under the Mono DNX. The first command switches the active runtime to the Mono one. Note that the second line is `dnu restore` and **not** `dnvm`. It's easy to miss.
 
 ```console
 dnvm use 1.0.0-beta5-11649 -r mono

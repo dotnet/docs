@@ -3,7 +3,7 @@
 *  [🔧 What is the .NET Platform?](what-is-dotnet.md)
 *  [Installing .NET Core](installing/index.md)
     *  [Installing .NET Core on Windows](installing/installing-core-windows.md)
-    *  [Installing .NET Core on Linux](installing/installing-core-linux.md)
+    *  [Installing .NET Core on Ubuntu](installing/installing-core-ubuntu.md)
     *  [Installing .NET Core on OS X](installing/installing-core-osx.md)
 *  [Setting up your development environment](devenv/index.md)
     *  [🔧 Development using Visual Studio 2015](devenv/using-visual-studio.md)

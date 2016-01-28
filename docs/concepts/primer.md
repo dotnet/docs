@@ -6,7 +6,7 @@ By [Rich Lander](https://github.com/richlander), [Zlatko Knezevic](https://githu
 
 Multiple implementations of .NET are available, based on open [.NET Standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) that specify the fundamentals of the platform. They are separately optimized for different app types (e.g. desktop, mobile, gaming, cloud) and support many chips (e.g. x86/x64, ARM) and operating systems (e.g. Windows, Linux, iOS, Android, OS X). Open source is also an important part of the .NET ecosystem, with multiple .NET implementations and many libraries available under OSI-approved licenses.
 
-You can take a look at the [Overview of .NET implementations](../getting-started/overview.md) document to figure out all of the different editions of .NET Framework that are available, both Microsoft’s and others.
+You can take a look at the [Overview of .NET implementations](editions-overview.md) document to figure out all of the different editions of the .NET Framework that are available, both Microsoft’s and others.
 
 ## Key .NET Concepts
 

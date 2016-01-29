@@ -23,7 +23,7 @@ You can learn more about tasks and the different ways to interact with them in t
 
 The following section describes a 10,000 foot view of what happens with a typical async I/O call. Let's start with a couple examples.
 
-The first example calls an async method and returns a task, likely yet to complete.
+The first example calls an async method and returns an active task, likely yet to complete.
 
 ```csharp
 public Task<string> GetHtmlAsync()
@@ -32,7 +32,6 @@ public Task<string> GetHtmlAsync()
 	var client = new HttpClient();
 	
 	return client.GetStringAsync("http://www.dotnetfoundation.org");
-	
 }
 ```
 
@@ -41,7 +40,6 @@ The second example adds the use of he `async` and `await` keywords to operate on
 ```csharp
 public async Task<string> GetFirstCharactersCountAsync(string url, int count)
 {
-
 	// Execution is synchronous here
 	var client = new HttpClient();
 	
@@ -49,17 +47,16 @@ public async Task<string> GetFirstCharactersCountAsync(string url, int count)
 	// GetStringAsync returns a Task<string>, which is *awaited*
 	var page = await client.GetStringAsync("http://www.dotnetfoundation.org");
 	
-	// Execution resumes when the client.GetStringAsync task completes
-	// Execution is again synchronous
+	// Execution resumes when the client.GetStringAsync task completes,
+    // becoming synchronous again.
 	
-	// returns substring
-	if (count > url.Length)
+	if (count > page.Length)
 	{
-		return url;
+		return page;
 	}
 	else
 	{
-		return url.SubString(0,count);
+		return page.Substring(0, count);
 	}
 }
 ```
@@ -72,13 +69,15 @@ After the System API call, the request is now in kernel space, making its way to
 
 For example, in Windows an OS thread makes a call to the network device driver and asks it to perform the networking operation via an Interrupt Request Packet (IRP) which represents the operation.  The device driver recieves the IRP, makes the call to the network, marks the IRP as "pending", and returns back to the OS.  Because the OS thread now knows that the IRP is "pending", it doesn't have any more work to do for this job and "returns" back so that it can be used to perform other work.
 
-**TODO:** Diagram of the above two paragraphs
+![](../../images/async/io-1.jpg)
+(caption) A view into what happens when an async call is made.
 
-When the request is fulfilled and data comes back through the device driver, it notifies the CPU of new data received via an interrupt.  How this interrupt gets handled will vary depending on the OS, but eventually the data will be passed through the OS until it reaches a system interop call (for example, in Linux an interrupt handler will schedule the bottom half of the IRQ to pass the data up through the OS asynchronously).  Note that this *also* happens asynchronously!
+When the request is fulfilled and data comes back through the device driver, it notifies the CPU of new data received via an interrupt.  How this interrupt gets handled will vary depending on the OS, but eventually the data will be passed through the OS until it reaches a system interop call (for example, in Linux an interrupt handler will schedule the bottom half of the IRQ to pass the data up through the OS asynchronously).  Note that this *also* happens asynchronously!  The result is queued up until the next available thread is able execute the async method and "unwrap" the result of the completed task.
 
-**TODO:** Diagram of the above two paragraphs
+![](../../images/async/io-2.jpg)
+(caption) A view into what happens when an I/O request is complete.
 
-Throughout this entire process, a key takeaway is that **no thread is 1dedicated to running the task**.  Tasks have no thread affinity.  Although work is executed in some contexts (after all, the OS does have to make its way through passing data to a device driver and responding to an interrupt), there is no thread dedicated to *waiting* for data from the request to come back.  This allows the system to handle a much larger volume of work rather than waiting for some I/O call to finish.
+Throughout this entire process, a key takeaway is that **no thread is 1dedicated to running the task**.  Tasks have no thread affinity.  Although work is executed in some contexts (i.e. the OS does have to pass data to a device driver and respond to an interrupt), there is no thread dedicated to *waiting* for data from the request to come back.  This allows the system to handle a much larger volume of work rather than waiting for some I/O call to finish.
 
 Although the above may seem like a lot of work to be done, when measured in terms of wall clock time, it’s miniscule compared to the time it takes to do the actual I/O work. Although not at all precise, a potential timeline for such a call would look like this:
 
@@ -90,17 +89,23 @@ Although the above may seem like a lot of work to be done, when measured in term
 
 ### What does this mean for a server scenario?
 
-This model works well with a typical server scenario workload.  Because tasks don't have an affinity to threads, it means that the server threadpool can use any thread for any task. As a result, it can service a much higher volume of web requests than if each thread were dedicated to running a particular request.  Consider two servers: one that uses async code, and one that does not.  For the purpose of this example, each server only has 5 threads available to service requests.
+This model works well with a typical server scenario workload.  Because tasks don't have an affinity to threads, it means that the server threadpool can use any thread for any task. As a result, it can service a much higher volume of web requests than if each thread were dedicated to running a particular request.
 
-Assume a system where a server receives 6 concurrent requests. Each request performs an I/O operation.  The server *without* async code has to queue up the 6th request until one of the 5 threads have finished the I/O-bound work and written a response. At the point that the 20th request comes in, the server might start to slow down, because the queue is getting to long. Note that these number are imaginarily small.
+Consider two servers: one that runs async code, and one that does not.  For the purpose of this example, each server only has 5 threads available to service requests.  Note that these numbers are imaginarily small and serve only in a demonstrative context.
 
-**TODO:** non-async diagram of server
+Assume both servers recieve 6 concurrent requests. Each request performs an I/O operation.  The server *without* async code has to queue up the 6th request until one of the 5 threads have finished the I/O-bound work and written a response. At the point that the 20th request comes in, the server might start to slow down, because the queue is getting too long.
 
-That's not an ideal scenario.  The server *with* async still queues up the 6th request, but because it uses `async` and `await`, each of its threads are freed up when the I/O-bound work starts, rather than when it finishes. 
+![](../../images/async/webserver-1.jpg)
+(caption) Web server with no async.
 
-**TODO:** async diagram of same server
+As you can see, server threads can't service any other requests until the I/O they're assigned to start is finished.  That's not an ideal scenario!
 
-As you can see, the 5 threads doing I/O-bound work are freed after they start that work, allowing one of them to service the 6th request much sooner.  When an I/O-bound job is complete, its result is placed in a queue and the next available thread picks it up and the response.
+The server *with* async code running on it still queues up the 6th request, but because it uses `async` and `await`, each of its threads are freed up when the I/O-bound work starts, rather than when it finishes.  By the time the 20th request comes in, the queue for incoming requests will be far smaller (if it has anything in it at all), and server won't slow down.
+
+![](../../images/async/webserver-2.jpg)
+(caption) Web server with async.
+
+As you can see, server threads are free to service more requests once they've started I/O.  The result of I/O gets queued up and the next available thread will handle writing the response for the result of the I/O.
 
 Although this is a contrived example, it works in a very similar fashion in the real world.  In fact, you can expect a server to be able to handle an order of magnitude more requests using `async` and `await` than if it were dedicating a thread for each request it receives.
 
@@ -110,7 +115,8 @@ The biggest gain for using `async` and `await` for a client app is an increase i
 
 More importantly, because I/O-bound work spends virtually no time on the CPU, dedicating an entire CPU thread to perform barely any useful work would be a poor use of resources.
 
-**TODO:** Diagram showing yielding I/O stuff as UI thread can now do other work
+![](../../images/async/ui.jpg)
+(caption) A UI making an async call that doesn't block the UI thread.
 
 Additionally, dispatching work to the UI thread (such as updating a UI) is very simple with `async` methods, and does not require extra work (such as calling a thread-safe delegate).
 

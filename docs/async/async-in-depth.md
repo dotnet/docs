@@ -15,7 +15,7 @@ It’s important to reason about tasks as abstractions of work happening asynchr
 
 Tasks expose an API protocol for monitoring, waiting upon and accessing the result value (in the case of `Task<T>`) of a task. Language integration, with the `await` keyword, provides a higher-level abstraction for using tasks. 
 
-Using `await` allows your application or service to perform useful work while a task is running by yielding control to its caller until the task is done. Your code does not need to rely on call-backs or events to continue execution after the task has been completed. The language and task API integration does that for you. If you’re using `Task<T>`, the `await` keyword will additionally “unwrap” the value returned when the Task is complete.  The details of how this works are explained further below.
+Using `await` allows your application or service to perform useful work while a task is running by yielding control to its caller until the task is done. Your code does not need to rely on callbacks or events to continue execution after the task has been completed. The language and task API integration does that for you. If you’re using `Task<T>`, the `await` keyword will additionally “unwrap” the value returned when the Task is complete.  The details of how this works are explained further below.
 
 You can learn more about tasks and the different ways to interact with them in the [Task-based Asynchronous Pattern (TAP) Article](https://msdn.microsoft.com/en-us/library/hh873175(v=vs.110).aspx).
 
@@ -77,7 +77,7 @@ When the request is fulfilled and data comes back through the device driver, it 
 ![](../../images/async/io-2.jpg)
 (caption) A view into what happens when an I/O request is complete.
 
-Throughout this entire process, a key takeaway is that **no thread is 1dedicated to running the task**.  Tasks have no thread affinity.  Although work is executed in some contexts (i.e. the OS does have to pass data to a device driver and respond to an interrupt), there is no thread dedicated to *waiting* for data from the request to come back.  This allows the system to handle a much larger volume of work rather than waiting for some I/O call to finish.
+Throughout this entire process, a key takeaway is that **no thread is dedicated to running the task**.  Tasks have no thread affinity.  Although work is executed in some contexts (i.e. the OS does have to pass data to a device driver and respond to an interrupt), there is no thread dedicated to *waiting* for data from the request to come back.  This allows the system to handle a much larger volume of work rather than waiting for some I/O call to finish.
 
 Although the above may seem like a lot of work to be done, when measured in terms of wall clock time, it’s miniscule compared to the time it takes to do the actual I/O work. Although not at all precise, a potential timeline for such a call would look like this:
 
@@ -100,7 +100,7 @@ Assume both servers recieve 6 concurrent requests. Each request performs an I/O 
 
 As you can see, server threads can't service any other requests until the I/O they're assigned to start is finished.  That's not an ideal scenario!
 
-The server *with* async code running on it still queues up the 6th request, but because it uses `async` and `await`, each of its threads are freed up when the I/O-bound work starts, rather than when it finishes.  By the time the 20th request comes in, the queue for incoming requests will be far smaller (if it has anything in it at all), and server won't slow down.
+The server *with* async code running on it still queues up the 6th request, but because it uses `async` and `await`, each of its threads are freed up when the I/O-bound work starts, rather than when it finishes.  By the time the 20th request comes in, the queue for incoming requests will be far smaller (if it has anything in it at all), and the server won't slow down.
 
 ![](../../images/async/webserver-2.jpg)
 (caption) Web server with async.

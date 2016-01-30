@@ -180,19 +180,20 @@ public async Task<User> GetUser(int userId)
 {
     // Code omitted:
     //
-    // Given a user Id {userId}, returns a User object corresponding
+    // Given a user Id {userId}, retrieves a User object corresponding
     // to the entry in the database with {userId} as its Id.
 }
+
 public static Task<IEnumerable<User>> GetUsers(IEnumerable<int> userIds)
 {
-    var tasks = new List<Task<User>>();
+    var getUserTasks = new List<Task<User>>();
     
     foreach (int userId in userIds)
     {
-        tasks.Add(GetUser(id));
+        getUserTasks.Add(GetUser(id));
     }
     
-    return await Task.WhenAll(tasks);
+    return await Task.WhenAll(getUserTasks);
 }
 ```
 
@@ -204,18 +205,17 @@ public async Task<User> GetUser(int userId)
 {
     // Code omitted:
     //
-    // Given a user Id {userId}, returns a User object corresponding
+    // Given a user Id {userId}, retrieves a User object corresponding
     // to the entry in the database with {userId} as its Id.
 }
 
-public static Task<IEnumerable<User>> GetUsers(IEnumerable<int> userIds)
+public static async Task<User[]> GetUsers(IEnumerable<int> userIds)
 {
-    var tasks = userIds.Select(async id => await GetUser(id));
-    return await Task.WhenAll(tasks);
+    var getUserTasks = userIds.Select(id => GetUser(id));
+    return await Task.WhenAll(getUserTasks);
 }
 ```
-
-Although it's less code, take care when mixing LINQ with asynchronous code.  Because LINQ uses deferred (lazy) execution, async calls won't happen immediately.
+Although it's less code, take care when mixing LINQ with asynchronous code.  Because LINQ uses deferred (lazy) execution, async calls won't happen immediately as they do in a `foreach()` loop unless you force the generated sequence to iterate with a call to `.ToList()` or `.ToArray()`.
 
 ## Important Info and Advice
 

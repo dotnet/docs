@@ -37,15 +37,13 @@ You may need to download some data from a web service when a button is pressed, 
 ```csharp
 private readonly HttpClient _httpClient = new HttpClient();
 
-...
-
 downloadButton.Clicked += async (o, e) =>
 {
     // This line will yield control to the UI as the request
     // from the web service is happening.
     //
     // The UI thread is now free to perform other work.
-    var stringData = await _httpClient.DownloadStringAsync(URL);
+    var stringData = await _httpClient.GetStringAsync(URL);
     DoSomethingWithData(stringData);
 };
 ```
@@ -54,7 +52,7 @@ And that’s it! The code expresses the intent (downloading some data asynchrono
 
 ### CPU-bound Example: Performing a Calculation for a Game
 
-Say you're writing a mobile game where pressing a button can inflict damage on many enemies on the screen.  Performing the damage calcuation can be expensive, and doing it on the UI thread would cause the entire game to pause as the calculation is performed!
+Say you're writing a mobile game where pressing a button can inflict damage on many enemies on the screen.  Performing the damage calcuation can be expensive, and doing it on the UI thread would make the game appear to pause as the calculation is performed!
 
 The best way to handle this is to start a background thread which does the work using `Task.Run`, and `await` its result.  This will allow the UI to feel smooth as the work is being done.
 
@@ -81,11 +79,11 @@ And that's it!  This code cleanly expresses the intent of the button's click eve
 
 ### What happens under the covers
 
-There's a lot of moving pieces where asynchronous operations are concerned.  If you're curious about what's going underneath the covers of `Task` and `Task<T>`, checkout the [Async in-depth](async-in-depth.md) article for more information.
+There's a lot of moving pieces where asynchronous operations are concerned.  If you're curious about what's happening underneath the covers of `Task` and `Task<T>`, checkout the [Async in-depth](async-in-depth.md) article for more information.
 
 On the C# side of things, the compiler transforms your code into a state machine which keeps track of things like yielding execution when an `await` is reached, resuming execution when a background job has finished, and so on.
 
-For the theoretically-inclined, this is an implementation of the [Promise Model](https://en.wikipedia.org/wiki/Futures_and_promises).
+For the theoretically-inclined, this is an implementation of the [Promise Model of asynchrony](https://en.wikipedia.org/wiki/Futures_and_promises).
 
 ## Key Pieces to Understand
 
@@ -93,7 +91,6 @@ For the theoretically-inclined, this is an implementation of the [Promise Model]
 *   Async code uses `Task<T>` and `Task`, which are constructs used to model work being done in the background.
 *   When the `await` keyword is applied, it suspends the calling method and yields control back to its caller until the awaited task is complete.
 *   `await` can only be used inside an async method.
-
 
 ## Recognize CPU-Bound and I/O-Bound Work
 
@@ -111,9 +108,7 @@ Here are two questions you should ask before you write any code:
     
 If the work you have is **I/O-bound**, use `async` and `await` *without* `Task.Run`.  You *should not* use the Task Parallel Library.  The reason for this is outlined in the [Async in Depth article](../../async/async-in-depth.md).
 
-If the work you have is **CPU-bound**, you have a further question to ask:
-
-Can the work be parallelized?  If you can, then you should use the Task Parallel Library.  If not, just use the current thread.  Spawning a new thread won't help if you can't parallelize the work.
+If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await` but spawn the work off on another thread *with* `Task.Run`.  If the work can be parallelized, you should also consider using the Task Parallel Library.
 
 ## More Examples
 
@@ -170,7 +165,7 @@ private async void SeeTheDotNets_Click(object sender, RoutedEventArgs e)
 
 ### Waiting for Multiple Tasks to Complete
 
-You may find yourself in a situation where you need to retrieve multiple pieces of data concurrently.  The `Task` API contains two methods, `Task.WhenAll` and `Task.WhenAny` which allow you to write asynchronous code which performs a non-blocking wait on mulitple background jobs (and wait either until all or finished or one has finished).
+You may find yourself in a situation where you need to retrieve multiple pieces of data concurrently.  The `Task` API contains two methods, `Task.WhenAll` and `Task.WhenAny` which allow you to write asynchronous code which performs a non-blocking wait on mulitple background jobs.
 
 This example shows how you might grab `User` data for a set of `userId`s.
 

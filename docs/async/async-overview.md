@@ -14,27 +14,27 @@ ms.assetid: 1e38e9d9-8284-46ee-a15f-199adc4f26f4
 
 # Async Overview
 
-Modern apps are expected to be responsive and modern services are expected to be elastic:
+Not so long ago, apps got faster simply by buying a newer PC or server and then that trend stopped. In fact, it reversed. Mobile phones appeared with 1ghz single core ARM chips and server workloads transitioned to VMs. Users still want responsive UI and business owners want servers that scale with their business. The transition to mobile and cloud and an internet-connected population of >3B users has resulted in a new set of software patterns. 
 
-*   Client applications are expected to be always-on and always-connected, but also keep the UI free for the user to interact with.
-*   Services are expected to handle spikes in traffic by gracefully scaling up and down.
+* Client applications are expected to be always-on, always-connected and constantly responsive to user interaction (e.g. touch) with high app store ratings!
+* Services are expected to handle spikes in traffic by gracefully scaling up and down. 
 
-.NET provides the capability for apps and services to be responsive and elastic with easy-to-use, language-level asynchronous programming models in C#, VB, and F#.
+Async programming is a key technique that makes it straightforward to handle blocking I/O and concurrent operations on multiple cores. .NET provides the capability for apps and services to be responsive and elastic with easy-to-use, language-level asynchronous programming models in C#, VB, and F#.
 
 ## Why Write Async Code?
 
-If you are developing a system which blocks on I/O in some way, you should be writing async code. If that doesn’t convince you, here are a few more reasons:
+Modern apps make extensive use of file and networking I/O. I/O APIs traditionally block by default, resulting in poor user experiences and hardware utilization unless you want to learn and use challenging patterns. Async APIs and the language-level asynchronous programming model invert this model, making async execution the default with few new concepts to learn.
 
-*   Almost all modern apps demand elements which block on I/O in some way. Because of this, responsive apps are expected by users, and even slight UX hangups are often punished harshly (via one-star reviews).
-*   Modern web services must be able to handle a high load with the number of devices potentially connecting to them. Async programming allows scaling up so that sudden spikes in traffic don’t bring a system to its knees.
-*   Many of the newer, better .NET APIs are themselves asynchronous in nature.
-*   It’s super easy to write async code in .NET!
+Async code has the following characteritics:
 
-Especially in the case of F#, a functional-first language designed to solve problems at scale, asynchronous programming is a necessity for elastic services under a heavy load.
+* Handles more server requests by yielding threads to handle more requests while waiting for I/O requests to return.
+* Enables UIs to be more responsive by yielding threads to UI interaction while waiting for I/O requests and by transitioning long-running work to other CPU cores.
+* Many of the newer .NET APIs are asynchronous.
+* It’s super easy to write async code in .NET!
 
 ## What’s next?
 
-Pick your language to learn about it:
+Learn about async based on language experience:
 
-*   [Async Programming in C#](../languages/csharp/async.md)
-*   [Async Programming in F#](async-fsharp.md)
+* [Async Programming in C#/VB](async-csharp-vb.md)
+* [Async Programming in F#](async-fsharp.md)

@@ -8,37 +8,37 @@ Before you begin, understand that this article assumes that you are using Window
 
 It's recommended that you read the [Porting Overview](overview.md) article before you begin.  It will give you an idea of the journey you're about to embark on.
 
-TODO: maybe some more prereqs?
-
 ## Getting your dependencies and .NET Framework APIs in check
 
 The two biggest difficulties in porting libraries to .NET Core is resolving issues with 3rd party dependencies and .NET Framework APIs that aren't compatible with .NET Core.
 
-If you haven't resolved issues with 3rd party dependencies, [please do so before continuing](LINK).
+If you haven't resolved issues with 3rd party dependencies, [please do so before continuing](overview.md).
 
 Next, make sure you [understand the API Portability tool](tooling.md) and can generate portability reports for targeting .NET Core.  You'll have to spend some time analyzing your assemblies and coming up with a plan for what to do with any incompatible types used.
 
-Here's a set of guidelines for doing exactly that.
+Here's a set of guidelines and questions you may find helpful.
 
 1. Understand where in the code each incompatible type is being used.
 
    a.  Understand the nature of the incompatible types.  Are they small in number, but used frequently?  Are they large in number, but used infrequently?  Is their use concentrated, or is it spread throughout your code?
+   
    b. Is it easy to isolate code that's largely incompatible from code that's large compatible?
+   
    c. Would you need to refactor your code so that you can deal with incompatible types better?
 
 2. If you have assemblies that are mostly incompatible, is it worth leaving them on .NET Framework for now?  Note that this will depend heavily on the architecture of your system.
 
-   a. You may have some functionality in your library that's incompatible with .NET Core because it relies too heavily on .NET Framework or Windows-specific functionality.  Is it worth leaving that functionality behind for now and releasing a .NET Core verson of your library with less features?
-   b. WORK ON THIS WRITING
+   a. You may have some functionality in your library that's incompatible with .NET Core because it relies too heavily on .NET Framework or Windows-specific functionality.  Is it worth leaving that functionality behind for now and releasing a .NET Core verson of your library with less features for the time being?
 
 3. Are there alternative .NET Core APIs for incompatible .NET Framework APIs you're using?
 
    a. For example, if you're using `WebClient` you may be able to use `HttpClient` instead.
-   b. You may also consider using a slightly different .NET Core API to do some work even if it isn't directly related.  For example, if you didn't require XML Schema discovery, you could use Linq to Xml to parse XML data instead of using XMLSchema to handle the parsing.
+   
+   b. You may also consider using a slightly different .NET Core API to do some work even if it's not a drop-in replacement.  For example, if you don't require XML Schema discovery, you could use Linq to Xml to parse XML data instead of using XMLSchema to handle the parsing.
    
 4. Is it reasonable to write some code a .NET Framework API was doing yourself?
 
-   a. Consider modifying and using code from the [.NET Framework Reference Source](referencesource.microsoft.com).  It's licensed under the [MIT License](https://github.com/Microsoft/referencesource/blob/master/LICENSE.txt) so you have significant freedom in how to do this.
+   a. Consider modifying and using code from the [.NET Framework Reference Source](referencesource.microsoft.com).  It's licensed under the [MIT License](https://github.com/Microsoft/referencesource/blob/master/LICENSE.txt) so you have significant freedom in doing this.
    
 This analysis phase could take some time.  You may find that you'll have to refactor your code or make significant changes to how you perform certain tasks.  You may even come to the conlcusion that porting to .NET Core isn't feasible at this time.
 
@@ -48,17 +48,15 @@ Once you have analyzed the ApiPort report and your codebase, the next step is to
 
 ### Making a choice: xproj or Portable Class Library?
 
-GAWD IT FEELS SO PAINFUL WRITING THIS
-
 The first thing you'll need to do is decide on the project system you want to use.  You have two choices: `xproj` or `csproj` via a Portable Class Library (PCL).  Deciding which to pick comes down to one simple question:
 
-Do you have any need to support anything more (e.g. localized resource strings)than just having Visual Studio recognize your project?
+Do you have any need to support anything more than just having Visual Studio recognize your project?  Examples of this may be localized resources in a `.resx` folder, working seamlessly with a custom build process, and others.
 
-If yes, you will need to create a new PCL and select .NET Core as the target.  If you have no needs other than running your code in Visual Studio, you can select an xproj project type.
+If yes, you should create a new PCL and select .NET Core as the target.  If you have no needs other than building and running your code in Visual Studio, you can select an xproj project type.
 
 ### Getting a basis for compilation
 
-Once you've picked your project type and created a new Class Library, you'll notice that there's a new file: `project.json`.  This is the file that handles many things about your project - stating dependencies, configurations, supported target frameworks, etc. - and is used to generate a `project.lock.json` file that is used by the compiler and build system to build your project.  You can read more about `project.json` LINK_HERE.
+Once you've picked your project type and created a new Class Library, you'll notice that there's a new file: `project.json`.  This is the file that handles many things about your project - stating dependencies, configurations, supported target frameworks, etc. - and is used to generate a `project.lock.json` file that is used by the compiler and build system to build your project.  You can read more about `project.json` TODO: LINK_HERE.
 
 You can see what it looks like by opening it up:
 
@@ -80,13 +78,20 @@ The most important thing to note is the version number for `NETStandard`.  This 
 
 You should evaluate the API availability vs Target availability tradeoff you'd like to make and pick the version of `netstandard` that fits your needs the best.  You may find that the default version picked by the template is best for your needs!
 
-The basic workflow with `project.json` is as follows:
+Here's the essentials you need to know about `project.json`:
 
-TODO - make this make sense for both CLI and VS
+1. You need to restore packages to generate a `project.lock.json` the first time you create the project.
 
-1. You need to run `dotnet restore` to generate a `project.lock.json` the first time you create the project.
-2. Any further changes to the `project.json` will require running a `dotnet restore` to generate a new `project.lock.json` file.
+   In Visual Studio, you can right-click the project and select "Restore Packages".
+   
+   If you're using the .NET CLI, you'll need to navigate to the project folder and type:
+   
+   `$ dotnet restore`
+
+2. Any further changes to the `project.json` will require restoring packages to generate a new `project.lock.json` file.
 3. The `project.lock.json` file is what the compiler reads when you build your project.
+
+To learn more about `project.json`, please refer to [the documentation] on it.
 
 Once you can build your .NET Core project(s) successfully, you can begin porting code over!
 
@@ -123,6 +128,24 @@ A good way to port your code is to begin with the "base" of your library.  This 
 
 If you methodically move "up" from the "base" of your library, testing each layer as needed, you shouldn't run into unexpected issues.
 
-## Distributing via Nuget
+## Creating and Distributing a NuGet Package
+
+Lastly, you may wish to distribute your library as a package.  This is fairly simple to do!  You can use either .NET CLI tooling or the [NuGet Package Explorer](https://npe.codeplex.com) on Windows.
+
+### Creating a package using CLI Tooling
+
+First, you'll need to generate release assemblies and a `nuspec` folde.  Navigate to the root of your project and type the following into your command line of choice:
+
+```$ dotnet pack --release```
+
+And that's it!  You'll now have a `/Release` folder created, which will contain a `nuspec` file and any assemblies you need.  There may also be assemblies placed in different subfolders if you are multitargeting.
+
+You may have more complex needs for your `nuspec` file.  Refer to the [NuSpec reference](http://docs.nuget.org/create/nuspec-reference) for what you may need to change.
+
+### Creating a package using Visual Studio
+
+TODO
+
+### Distributing
 
 TODO

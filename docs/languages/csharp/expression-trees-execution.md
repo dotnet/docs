@@ -1,3 +1,5 @@
+[Previous -- Interpreting Expression Trees](expression-trees-interpreting.md)
+
 # Executing Expression Trees
 An *expression tree* is a data structure that reprsents some code.
 It is not compiled and executable code. If you want to execute
@@ -12,7 +14,7 @@ to directly execute a `ConstantValueExpression`. Would it mean
 anything useful?) Any expression tree that is a `LamdbaExpression`,
 or a type derived from `LambdaExpression` can be converted to IL.
 The expression type `Expression<TDelegate> where TDelegate : delegate`
-is the only concreted example in the .net core libraries. It's used
+is the only concreted example in the .net Core libraries. It's used
 to represent an expression that maps to any delegate type. Because
 this type maps to a delegate type, the .NET framework can examine
 the expression, and generate IL for an appropriate delegate that
@@ -30,8 +32,8 @@ members that you would use to convert an expression tree to executable
 code. The `Compile` method creates a delegate. The `ConmpileToMethod`
 method updates a `MethodBuilder` object with the IL that represents
 the compiled output of the expression tree. Note that `CompileToMethod`
-is only available on the full desktop framework, not on the core
-.NET framework.
+is only available on the full desktop framework, not on the 
+.NET Core framework.
 
 Optionally, you can also provide a `DebugInfoGenerator` that will
 receive the symbol debugging information for the generated delegate
@@ -53,7 +55,7 @@ Notice that the delegate type is based on the expression type. You must
 know the return type and the argument list if you want to use the
 delegate object in a strongly typed manner. The `LambdaExpression.Compile()`
 method returns the `Delegate` type. You will have to cast it to the correct
-delegate type to have any compile time tools check the argument list of
+delegate type to have any compile-time tools check the argument list of
 return type.
 
 ## Execution and Lifetimes
@@ -158,8 +160,8 @@ which has been disposed of. (It's been disposed, because it was declared in a
 Now, when you execute the delegate returned from this method, you'll have a
 `ObjecctDisposedException` thrown at the point of execution.
 
-It does seem strange to have a runtime error representing a compile
-time construct, but that's the world we enter when we work with
+It does seem strange to have a runtime error representing a compile-time
+construct, but that's the world we enter when we work with
 expression trees.
 
 There are a lot of permutations of this problem, so it's hard
@@ -188,3 +190,5 @@ create the expression, everything works as expected. When that
 doesn't happen, the errors are very predictable, and they will
 be caught in your first tests of any code using the expression
 trees.
+
+[Next -- Building Expressions](expression-trees-building.md)

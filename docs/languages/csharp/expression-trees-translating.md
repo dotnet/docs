@@ -1,9 +1,11 @@
+[Previous -- Building Expressions](expression-trees-building.md)
+
 # Translating Expression Trees
 
 In this final section, you'll learn how to visit each node
 in an expression tree, while building a modified copy of that
 expression tree. These are the techniques that you will use in two
-important scenarios. The first is to undestand the algorithms
+important scenarios. The first is to understand the algorithms
 expressed by an expression tree so that it can be translated
 into another environment. The second is when you want to change
 the algorithm that has been created. This might be to add logging,
@@ -237,3 +239,5 @@ that code, and execute the changed version. Because the
 expression trees are immutable, you can create new trees by
 using the components of existing trees. This minimizes the
 amount of memory needed to create modified expression trees.
+
+[Next -- Summing up](expression-trees-summary.md)

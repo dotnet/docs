@@ -1,3 +1,5 @@
+[Previous -- Overview](expression-trees.md)
+
 # Expression Trees Explained
 Expression Trees are a data structure that defines code. They are based on the same structures
 that a compiler uses to analyze code and generate the compiled output. As you read through this
@@ -57,7 +59,7 @@ addition operator. Depending on the return type of `SecretSauceFunction()` or
 overridden addition operator, resolving to a static method call to the binary 
 addition operator defined for a class.
 
-Despite this perceived complexity, the expression above creates a tree strcuture
+Despite this perceived complexity, the expression above creates a tree structure
 that can be navigated as easily as the first sample. You can keep traversing
 child nodes to find leaf nodes in the expression. Parent nodes will have
 references to their children, and each node has a property that describes
@@ -84,5 +86,7 @@ You can also convert an expression tree into an executable delegate, and execute
 code.
 
 The one thing you can't do is modify an expression tree.  Expression Trees are immutable
-data structures. If you want to mutate (change) expression tree, you must create a new tree
+data structures. If you want to mutate (change) an expression tree, you must create a new tree
 is a copy of the original, but with your desired changes. 
+
+[Next -- Framework Types Supporting Expression Trees](expression-classes.md)

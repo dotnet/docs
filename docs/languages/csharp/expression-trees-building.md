@@ -1,3 +1,5 @@
+[Previous -- Interpreting Expressions](expression-trees-interpreting.md)
+
 # Building Expression Trees
 
 All the expression trees I've shown you so far have been created
@@ -69,7 +71,7 @@ tree. Let's run through one more example and show two more node types
 that you will typically build when you create expression trees:
 the argument nodes, and method call nodes.
 
-Let's build an expression tree to creates this expression:
+Let's build an expression tree to create this expression:
 
 ```cs
 Expression<Func<double, double, double>> distanceCalc =
@@ -83,7 +85,7 @@ var xParameter = Expression.Parameter(typeof(double), "x");
 var yParameter = Expression.Parameter(typeof(double), "y");
 ```
 
-Creating the multiplication and addition expressions follow the pattern
+Creating the multiplication and addition expressions follows the pattern
 you've already seen:
 
 ```cs
@@ -134,7 +136,7 @@ from that expression.
 ## Building Code In Depth
 
 You aren't limited in what you can build using these APIs. However, the more
-complicated of an expression tree that you want to build, the more difficult
+complicated expression tree that you want to build, the more difficult
 the code is to manage and to read. 
 
 Let's build an expression tree that is the equivalent of this code:
@@ -155,7 +157,7 @@ Func<int, int> factorialFunc = (n) =>
 Notice above that I did not build the expression tree, but simply the delegate. Using
 the `Expression` class, you can't build statement lambdas. Here's the code that is required
 to build the same functionality. It's complicated by the fact that there isn't an API to build
-a `while` loop, instead of you need to build a loop that contains a conditional test, and a label
+a `while` loop, instead you need to build a loop that contains a conditional test, and a label
 target to break out of the loop. 
 
 ```cs
@@ -201,7 +203,7 @@ the code in the samples section. You can experiment for yourself: build it and r
 ## Examining the APIs
 
 The expression tree APIs are some of the more difficult to navigate in the
-.NET core framework. Their purpose is a rather complex undertaking: writing code that generates
+.NET Core framework. Their purpose is a rather complex undertaking: writing code that generates
 code at runtime. They are necessarily complicated to provide a balance between supporting
 all the control structures available in the C# language and keeping the surface area
 of the APIs as small as reasonable. This balance means that many control structures are
@@ -212,3 +214,5 @@ Also, at this time, there are C# expressions that cannot be built directly
 using `Expression` class methods. In general, these will be the newest operators
 and expressions added in C# 5 and C# 6. (For example, `async` expressions cannot be built, and
 the new `?.` operator cannot be directly created.)
+
+[Next -- Translating Expressions](expression-trees-translating.md)

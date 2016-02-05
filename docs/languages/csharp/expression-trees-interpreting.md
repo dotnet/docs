@@ -5,7 +5,7 @@ Now, let's write some code to examine the structure of an
 an object of a class that is derived from `Expression`.
 
 That design makes visiting all the nodes in an expression tree
-a relatively straight-forward recursive operation. The general strategy
+a relatively straight forward recursive operation. The general strategy
 is to start at the root node and determine what kind of node it is.
 
 If the node type has children, recursively visit the children. At each

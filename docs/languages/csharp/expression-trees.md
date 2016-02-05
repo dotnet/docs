@@ -1,6 +1,9 @@
 ﻿# Expression Trees
 
-You know LINQ, where `Func` and `Func<T>` are part of the API.
+If you have used LINQ, you have experience with a rich library
+where `Func` and `Func<T>` are part of the API. (If you are not familiar
+with LINQ, you probably want to read [that tutorial](linq.md) and
+the tutorial on [lambda expressions](lambda-expressions.md) before this one.)
 *Expression Trees* provide richer interaction with the arguments that
 are functions.
 

@@ -1,3 +1,5 @@
+[Previous -- Expression Trees Explained](expression-trees-explained.md)
+
 # Framework Types Supporting Expression Trees
 There are a large list of classes in the .NET Core framework that work with Expression Trees.
 You can see the full
@@ -78,4 +80,6 @@ can build any expression type from a set of its child nodes.
 3. Look at the `ExpressionVisitor` class to build a modified expression tree.
 You'll find more as you look at each of those three areas. Invariably, I find what I need when I
 start with one of those three steps.
+ 
+ [Next -- Executing Expression Trees](expression-trees-execution.md)
  

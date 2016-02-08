@@ -4,23 +4,29 @@ If you're coming from .NET Framework you may be interested in running your code 
 
 ## Should you port?
 
-The first thing you need to do is evaluate if it makes sense to port .NET Framework code over to .NET Core in the first place.
+The first thing you need to do is evaluate if it makes sense to port .NET Framework code over to .NET Core in the first place.  .NET Core offers some attractive capabilities, such as:
+
+- The ability to write a UWP app that will run on multiple Windows 10 devices
+- Using ASP.NET Core to write great web apps and services which you can write and deploy on your OS of choice
+- Console applications that can be Ahead-of-time compiled into native code with minimal dependencies
 
 Your code could be a good candidate for porting to .NET Core if...
 
 - Your code is a library and you want to expand its reach
 - You have a business need to run code on more than just Windows
+- You want to take advantage of app-local deployment and build self-contained console applications
 - You have expertise on non-Windows platforms, such as great Linux sysadmins
 - You're looking for an opportunity to implement an architectural change for your services (e.g. a monolithic service to microservices deployed to containers) or otherwise improve your codebase
-- You love new technology and want to cut your teeth on running code cross-platform
+- You love new technology and want to cut your teeth on .NET Core
 
 Your code may not be a good candidate for porting if...
 
 - Your code is heavily tied to a Windows GUI or depends entirely on Windows-specific features
 - You have no business needs or expertise which would warrant running on more than Windows
+- You don't have a need for app-local deployment or self-contained console apps at this time
 - You're happy with your code running on .NET Framework as it is today
 
-There could be other reasons to port or not to port, which you will have to evaluate before you begin to investigate what it would take.  Only if you've come to the conclusion that porting to .NET Core makes sense should you move forward.
+If it makes sense to port at this time, then read on!
 
 ## Analyze your 3rd party dependencies
 
@@ -36,7 +42,7 @@ If your 3rd party dependencies are NuGet packages, you can use the [NuGet Packag
 4. Search for the name of a package in the search field and hit enter. (screenshot of result)
 5. Expand the "lib" folder and look for a target subfolder that is compatible with .NET Core. (screenshot)
 
-   TODO: Something with `dnxcore50`, `dotnet`, `netstandardlib`, ... is what you're looking for.
+   **TODO**: Something with `dnxcore50`, `dotnet`, `netstandardlib`, ... is what you're looking for.
    
    If there isn't a target subfolder compatible with .NET Core, the dependency will not run on .NET Core.
 
@@ -59,7 +65,7 @@ You may find yourself depending on a 3rd party code which won't run on .NET Core
 2. Look for another library which accomplishes the same goal that does run on .NET Core.
 3. Determine if it's feasible to write code that the library was doing yourself.
 
-If you have incompatible 3rd party depenencies that you cannot resolve at this time, then you may have to port to .NET Core at a later date when those dependencies will also run on .NET Core.
+If you have incompatible 3rd party dependencies that you cannot resolve at this time, then you may have to port to .NET Core at a later date when those dependencies will also run on .NET Core.
 
 ## Next steps for porting
 

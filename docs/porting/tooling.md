@@ -13,7 +13,7 @@ ApiPort will analyze the assembly generated when you build a project.  So if you
 
 ## How to use the tool (command line)
 
-If you haven't already, [download the command line client](https://github.com/microsoft/dotnet-apiport/releases).  When unzipped, you'll get a few `.dll`s and the ApiPort executable.  You can run this executable from anywhere and it will generate a report in the directory it's run from.
+If you haven't already, [download the command line client](https://github.com/microsoft/dotnet-apiport/releases).  When unzipped, you'll get a few `.dll` files and the ApiPort executable.  You can run this executable from anywhere and it will generate a report in the directory it's run from.
 
 Next, if you haven't already opened up your solution in Visual Studio, do so now and compile it.
 
@@ -36,7 +36,7 @@ For each of the Visual Studio projects you want to port to .NET Core, you'll nee
    
     PS> ApiPort.exe analyze -f path_of_assembly -t ".NET Core, Version=5.0" -t ".NET Framework, Version=4.5.2" -r HTML
 
-One you have all the reports you need, you can begin analyzing them!
+Once you have all the reports you need, you can begin analyzing them!
 
 ## How to use the tool (Visual Studio)
 
@@ -56,10 +56,10 @@ The breakdown of each assembly will likely take some time for you to digest.  De
 | Target Type | .NET implementations compared | Recommended Changes |
 
 - **Target Type** - this is a .NET type that you've used that either is directly incompatible with .NET Core or has a child type that is incompatible.  This can include method calls as well.
-- **.NET implementations comared** - this lists the .NET implementations you compared.  In this case, it will be .NET Core and .NET Framework.
+- **.NET implementations compared** - this lists the .NET implementations you compared.  In this case, it will be .NET Core and .NET Framework.
 - **Recommended Changes** - if there is a known recommended change for a particular type, it will be listed here.  If it is blank, then that means that the ApiPort service hasn't registered a recommended change for this type yet.
 
-It's important to understand that just because a **Recommended Changes** field may be blank, that doesn't imply that there is no .NET Core alternative for an incompatible type!  This is where you'll need to exercize your own judgment and anaalyze the code itself to see what you were using that type for.  You may find that you don't need to use the type, or that there is an alternative available.  You may even find that you can write some code yourself to accomplish the same goal.
+It's important to understand that just because a **Recommended Changes** field may be blank, that doesn't imply that there is no .NET Core alternative for an incompatible type!  This is where you'll need to exercize your own judgment and analyze the code itself to see what you were using that type for.  You may find that you don't need to use the type, or that there is an alternative available.  You may even find that you can write some code yourself to accomplish the same goal.
 
 ## Targets you can use for comparison
 

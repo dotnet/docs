@@ -1,10 +1,13 @@
 [Previous -- Overview](expression-trees.md)
 
 # Expression Trees Explained
-Expression Trees are a data structure that defines code. They are based on the same structures
+An Expression Tree is a data structure that defines code. They are based on the same structures
 that a compiler uses to analyze code and generate the compiled output. As you read through this
 tutorial, you will notice quite a bit of similarity between Expression Trees and the types used
-in the Roslyn APIs to build analyzers and CodeFixes. The concepts are similar, and the end result
+in the Roslyn APIs to build [Analyzers and CodeFixes](https://github.com/dotnet/roslyn-analyzers).
+(Analyzers and CodeFixes are NuGet packages that perform static analysis on code and can suggest
+potential fixes for a developer.)
+The concepts are similar, and the end result
 is a data structure that allows examination of the source ode in a meaningful way. However, Expression
 Trees are based on a totally different set of classes and APIs than the Roslyn APIs.
     

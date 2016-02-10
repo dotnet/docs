@@ -45,22 +45,9 @@ introduction to this section.
 Expression<Func<int>> sum = () => 1 + 2;
 ```
 
-> I'm not using `var` to declare this expression tree. You can't use
-> an implicitly typed variable declaration to declare a lambda expression.
-> It creates a circular logic problem for the compiler. The `var` declaration
-> tells the compiler to figure out the type of the variable from the type
-> of expression on the right hand side of the assignment operator. A lambda
-> expression does not have a compile time type, but is convertible to any
-> matching delegate or expression type. When you assign a lambda exprssion
-> to a variable of a delegate or expression type, you tell the compiler to
-> try and convert the lambda expression into an expression or delegate that
-> matches the signature of the 'assigned to' variable. The compiler must
-> try to make the thing on the right hand side of the assignment match
-> the type on the left hand side of the assignment. 
-> 
-> Both sides of the assignment can't be telling the compiler to look at the
-> object on the other side of the assignment operator and see if my type
-> matches.
+> I'm not using `var` to declare this expression tree, as it is not possible
+> because thee right-hand side of the assignment is implicitly typed. To understand
+> this more deeply, read [here](implicitly-typed-lambda-expressions.md)
 
 The root node is a `LambaExpression`. In order to get the interesting
 code on the right hand side of the `=>` operator, you need to find one
@@ -247,6 +234,9 @@ The expression body is:
                 Type: System.Int32, Name: b, ByRef: False
 ```
 
+Now that you've built a more general visitor implementation, you
+can visit and process many more different types of expressions.
+
 ## Examining an Addition Expression with Many Levels
 
 Let's try a more complicated example,
@@ -272,7 +262,7 @@ Expression<Func<int>> sum4 = () => 1 + ((2 + 3) + 4);
 Expression<Func<int>> sum5 = () => (1 + (2 + 3)) + 4;
 ```
 
-I've separated the possible answers to highlight two of the
+You can see the separation into two possible answers to highlight the
 most promising. The first represents *right associative*
 expressions. The second represent *left associative* expressions.
 The advantage of both of those two formats is that the format scales
@@ -375,7 +365,7 @@ information necessary to communicate the precedence.
 ## Extending from this sample
 
 The sample deals with only the most rudimentary expression trees. The code
-I've displayed in this section only handles constant integers and the binary
+you've seen in this section only handles constant integers and the binary
 `+` operator. As a final sample, let's update the visitor to handle a more
 complicated expression. Let's make it work for this:
 

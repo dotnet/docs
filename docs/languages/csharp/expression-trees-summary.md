@@ -7,10 +7,8 @@ create dynamic programs that interpret code as data and build
 new functionality based on that code.
 
 You can examine expression trees to understand the intent of
-an algorithm. You can not only examine that code, you can modify it
-at runtime. (Actually, you can't modify an expression tree, but you
-can build a new modified expression tree that represents the
-original code with changes that you have made.)
+an algorithm. You can not only examine that code. You can build new
+expression trees that represent modified versions of the original code.
 
 You can also use expression trees to look at an algorithm, and
 translate that algorithm into another language or environment. 

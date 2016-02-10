@@ -1,22 +1,24 @@
 [Previous -- Interpreting Expression Trees](expression-trees-interpreting.md)
 
 # Executing Expression Trees
-An *expression tree* is a data structure that reprsents some code.
+An *expression tree* is a data structure that represents some code.
 It is not compiled and executable code. If you want to execute
 the .NET code that is represented by an expression tree, you must
 convert it into executable IL instructions. 
 ## Lambda Expressions to Functions
-Not all Expression Types can be directly converted into executable
-IL. That sounds like a severe restriction, but in practice, the
-types of expressions that you would want to execute directly are
-all convertible to executable IL. (Think about what it would mean
-to directly execute a `ConstantValueExpression`. Would it mean
+You can convert any LambdaExpression, or any type derived from
+LambdaExpression into executable IL. Other expression types
+cannot be directly converted into code. This restriction has
+little effect in practice. Lambda expressions are the only
+types of expressions that you would want to execute by converteing
+to executable IL. (Think about what it would mean
+to directly execute a `ConstantExpression`. Would it mean
 anything useful?) Any expression tree that is a `LamdbaExpression`,
 or a type derived from `LambdaExpression` can be converted to IL.
 The expression type `Expression<TDelegate> where TDelegate : delegate`
 is the only concreted example in the .net Core libraries. It's used
 to represent an expression that maps to any delegate type. Because
-this type maps to a delegate type, the .NET framework can examine
+this type maps to a delegate type, .NET can examine
 the expression, and generate IL for an appropriate delegate that
 matches the signature of the lambda expression. 
 
@@ -61,7 +63,9 @@ return type.
 ## Execution and Lifetimes
 
 You execute the code by invoking the delegate created
-you called `LamdbaExpression.Compile()`.
+you called `LamdbaExpression.Compile()`. You can see this above where
+`add.Compile()` returns a delegate. Invoking that delegate, by calling
+`func()` executes the code.
 
 That delegate represents the code in the expression tree. You can
 retain the handle to that delgate and invoke it later. You don't need
@@ -72,11 +76,12 @@ executes the same code.)
 
 I will caution you against trying to create any more sophisticated
 caching mechanisms to increase performance by avoiding unnecessary
-compile calls. It's quite a difficult and painstaking operation to
-compare two different expression trees for equality. You'll likely
-find that the time you save avoiding any extra calls to
-`LambdaExpression.Compile()` will be more than consumed by the code
-that tries to determine of two different expression trees result in
+compile calls. Comparing two arbitrary expression trees to determine
+if they represent the same algorithm will also be time consuming to
+execute. You'll likely
+find that the compute time you save avoiding any extra calls to
+`LambdaExpression.Compile()` will be more than consumed by the time executing
+code that determines of two different expression trees result in
 the same executable code.
 
 ## Caveats
@@ -86,7 +91,7 @@ is one of the simplest operations you can perform with an expression
 tree. However, even with this simple operation, there are caveats
 you must be aware of. 
 
-Lambda Expressions create closures aver any local variables that are
+Lambda Expressions create closures over any local variables that are
 referenced in the expression. You must guarantee that any variables
 that would be part of the delegate are usable at the location where
 you call `Compile`, and when you execute the resulting delegate.
@@ -165,11 +170,10 @@ construct, but that's the world we enter when we work with
 expression trees.
 
 There are a lot of permutations of this problem, so it's hard
-to offer general guidance to avoid it. The best that I can say is
-to be careful about accessing local variables when defining
-expressions, and be careful about accessing state in the current
-object (represented by `this`) when creating an expression tree that
-can be returned by a public API.
+to offer general guidance to avoid it. Be careful about accessing
+local variables when defining expressions, and be careful about
+accessing state in the current object (represented by `this`) when
+creating an expression tree that can be returned by a public API.
 
 The code in your expression may reference methods or properties in
 other assemblies. That assembly must be accessible when the expression

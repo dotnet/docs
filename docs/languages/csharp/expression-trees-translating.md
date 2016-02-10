@@ -223,7 +223,7 @@ While the final answer is the same, the tree traversal is completely
 different. The nodes are traveled in a different order, because the
 tree was constructed with different operations occurring first.
 
-## Summing up
+## Learning More
 
 This sample shows a small subset of the code you would build to traverse
 and interpret the algorithms represented by an expression tree. For a complete

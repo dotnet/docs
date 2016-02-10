@@ -47,7 +47,6 @@ if (addFive.NodeType == ExpressionType.Lambda)
         Console.WriteLine(parameter.Name);
         Console.WriteLine(parameter.Type.ToString());
     }
-
 }
 ```
 
@@ -78,8 +77,9 @@ examining. This really helps when you want to traverse and understand an express
 2. Look at the static members of the `Expression` class to build an expression. Those methods
 can build any expression type from a set of its child nodes.
 3. Look at the `ExpressionVisitor` class to build a modified expression tree.
-You'll find more as you look at each of those three areas. Invariably, I find what I need when I
-start with one of those three steps.
+
+You'll find more as you look at each of those three areas. Invariably, you will find what you need when
+you start with one of those three steps.
  
  [Next -- Executing Expression Trees](expression-trees-execution.md)
  

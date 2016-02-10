@@ -7,8 +7,9 @@ the tutorial on [lambda expressions](lambda-expressions.md) before this one.)
 *Expression Trees* provide richer interaction with the arguments that
 are functions.
 
-Using a typical LINQ query, and function arguments are represented
-by a delegate the compiler creates.
+You write function arguments, typically using Lambda Expressions, when
+you create LINQ queries. In a typical LINQ query, those function arguments are
+transformed into a delegate the compiler creates. 
 
 When you want to have a richer interaction, you need to use *Expression Trees*.
 Expression Trees represent code as a structure that you can examine,
@@ -20,7 +21,7 @@ environment.
 
 You've likely already written code that uses Expression Trees. Entity Framework's
 LINQ APIs accept Expression Trees as the arguments for the LINQ Query Expression Pattern.
-That enables Entity Framework to translate the query you wrote in C# into SQL
+That enables [Entity Framework](http://docs.efproject.net/en/latest/) to translate the query you wrote in C# into SQL
 that executes in the database engine. Another example is [Moq](https://github.com/Moq/moq),
 which is a popular mocking framework for .NET.
 
@@ -30,36 +31,36 @@ with expression trees. You'll learn how to read expression trees, how to create
 expression trees, how to create modified expression trees, and how to execute the
 code represented by expression trees. After reading, you will be ready to use these
 structures to create rich adaptive algorithms.
+<style type="text/css">
+ol {
+  list-style-type: upper-roman;
+}
+</style>
+1. [Expression Trees Explained](expression-trees-explained.md)
 
-# [Expression Trees Explained](expression-trees-explained.md)
+    Understand the structure and concepts behind *Expression Trees*.
+    
+2. [Framework Types Supporting Expression Trees](expression-classes.md)
+    
+    Learn about the structures and classes that define and manipulate expression trees.
+    
+3. [Executing Expressions](expression-trees-execution.md)
 
-Understand the structure and concepts behind *Expression Trees*.
+    Learn how to convert an expression tree represented as a Lambda Expression into a delegate and execute the resulting delegate.
 
-# [Framework Types Supporting Expression Trees](expression-classes.md)
+4. [Interpreting Expressions](expression-trees-interpreting.md)
 
-Learn about the structures and classes that define and manipulate expression trees.
+    Learn how to traverse and examine *expression trees* to understand what code the expression tree represents.
 
-# [Executing Expressions](expression-trees-execution.md)
+5. [Building Expressions](expression-trees-building.md)
 
-Learn how to convert an expression tree represented as 
-a Lambda Expression into a delegate and execute the resulting
-delegate.
+    Learn how to construct the nodes for an expression tree and build expression trees.
 
-# [Interpreting Expressions](expression-trees-interpreting.md)
+6. [Translating Expressions](expression-trees-translating.md)
 
-Learn how to traverse and examine *expression trees* to understand
-what code the expression tree represents.
+    Learn how to build a modified copy of an expression tree, or translate an expression tree into a different format.
 
-# [Building Expressions](expression-trees-building.md)
+7. [Summing up](expression-trees-summary.md)
 
-Learn how to construct the nodes for an expression tree and build
-expression trees.
-
-# [Translating Expressions](expression-trees-translating.md)
-
-Learn how to build a modified copy of an expression tree, or translate
-an expression tree into a different format.
-
-# [Summing up](expression-trees-summary.md)
-
-Review the information on expression trees.
+    Review the information on expression trees.
+    

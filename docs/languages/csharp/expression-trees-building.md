@@ -2,8 +2,8 @@
 
 # Building Expression Trees
 
-All the expression trees I've shown you so far have been created
-by the C# compiler. All I had to do was create a `LambdaExpression`
+All the expression trees you've seen so far have been created
+by the C# compiler. All you had to do was create a `LambdaExpression`
 that was assigned to a variable typed as an `Expression<Func<T>>` or
 some similar type. That's not the only way to create an expression
 tree. For many scenarios you may find that you need to build an
@@ -192,9 +192,9 @@ BlockExpression body= Expression.Block(
 );
 ```
 
-The code to build the code is quite a bit longer, more complicated, and it's riddled
-with labels and gotos and other elements we'd like to avoid in our everyday
-coding tasks. 
+The code to build the expression tree for the factorial function is quite a bit longer,
+more complicated, and it's riddled with labels and break statements and other elements
+we'd like to avoid in our everyday coding tasks. 
 
 For this section, I've also updated the visitor code to visit every node in this expression
 tree and write out information about the nodes that are created in this sample. You can see
@@ -202,8 +202,8 @@ the code in the samples section. You can experiment for yourself: build it and r
 
 ## Examining the APIs
 
-The expression tree APIs are some of the more difficult to navigate in the
-.NET Core framework. Their purpose is a rather complex undertaking: writing code that generates
+The expression tree APIs are some of the more difficult to navigate in
+.NET Core, but that's fine. Their purpose is a rather complex undertaking: writing code that generates
 code at runtime. They are necessarily complicated to provide a balance between supporting
 all the control structures available in the C# language and keeping the surface area
 of the APIs as small as reasonable. This balance means that many control structures are

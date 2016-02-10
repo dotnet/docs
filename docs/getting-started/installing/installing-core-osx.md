@@ -44,7 +44,14 @@ While you're still in the application's directory, type
 
     dotnet build
     
-This will produce a `bin` directory in your directory. The structure of the drop path is `./bin/[configuration]/[framework]/`. Configuration refers to either *Release* or *Debug*, while framework is essentially a framework ID (i.e. dnxcore50). Inside this directory there will be several files, the most important of which is the binary that will have the same name as your application. Running this will give us the message we saw in the previous example. 
+This will produce a `bin` directory in your directory. The structure of the drop path is `./bin/[configuration]/[framework]/`. Configuration refers to either *Release* or *Debug*, while framework is essentially a framework ID (i.e. dnxcore50). Inside this directory there will be several files, the most important of which is the binary that will have the same name as your application. Running this will give us the message we saw in the previous example.
+
+```console
+cd bin/Debug/dnxcore50
+./HelloDotNetCli
+
+Hello World!
+```
 
 ## Create a single native binary 
 

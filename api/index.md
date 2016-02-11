@@ -5,8 +5,13 @@ _navPath: toc.html
 _navRel: ../toc.html
 ---
 
-# 🔧 .NET Core API Reference
+# .NET Core API Reference
 
-> **Note**
-> 
-> This topic hasn’t been written yet! You can track the status of this issue through our public GitHub issue tracker. Learn how you can contribute on GitHub.
+These documents cover the API reference for .NET Core. You can use the search function 
+on the left-hand side to search for an API or use the Table of Contents on the left to navigate.
+
+If you find an issue or an inconsistency, we would love to hear about it! 
+Go ahead to [.NET Core docs repo](https://github.com/dotnet/core-docs/) On Github and leave 
+an issue to let us know.
+
+

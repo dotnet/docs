@@ -14,6 +14,13 @@ footer {
   margin-top: 5px;
   margin-left: 10px;
 }
+a.pull-right {
+    margin-left: 10px;
+    padding-top: 5px;
+}
+article.content > h1 {
+    word-break: break-word;
+}
 @media only screen and (max-width: 768px) {
   .toc .level3 > li {
     display: inline-block;

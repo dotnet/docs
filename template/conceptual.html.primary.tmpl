@@ -13,7 +13,7 @@
         {{>partials/navbar}}
         {{>partials/breadcrumb}}
       </header>
-      <div role="main" class="container-fluid body-content">
+      <div role="main" class="container body-content">
       {{#_allowToc}}
         {{>partials/toc}}
         <div class="article row grid-right">
@@ -28,6 +28,7 @@
           <div class="col-md-12">
           {{/_allowAffix}}
             <article class="content wrap" id="_content">
+              <a href="{{docurl}}" class="pull-right mobile-hide"><span class="fa fa-github"></span> Improve this Doc</a>
               {{{conceptual}}}
             </article>
           </div>

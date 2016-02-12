@@ -1,4 +1,4 @@
-# 🔧 Delegates & events
+# Delegates & events
 
 > **Note**
 > 

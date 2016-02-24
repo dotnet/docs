@@ -28,7 +28,7 @@ The following are the main characteristics of .NET Core:
 
 The .NET Framework is Microsoft's primary develop platform for Windows server and client developers. It is a very powerful and mature framework, with a huge class library (known as the **.NET Framework Class Library**) that supports a wide variety of applications and solutions on Windows.
 
-There are multiple applicatons stacks built on top the .NET Framework that allow developers to build applications ranging from console applications, across rich client (WPF) applications to scalable web applications.
+There are multiple application stacks built on top of the .NET Framework that allow developers to build applications ranging from console applications, across rich client (WPF) applications to scalable web applications.
 
 [Windows Forms](https://msdn.microsoft.com/en-us/library/dd30h2yb%28v=vs.110%29.aspx) and [Windows Presentation Foundation (WPF)](https://msdn.microsoft.com/en-us/library/ms754130%28v=vs.110%29.aspx) are User Interface (UI) stacks that enable you to build desktop applications for Windows. The strength of Windows Forms lies in its rich support for common databinding scenarios as well as access to Windows’ native user interface controls. WPF, on the other hand, allows you to exercise much more control over the look and feel of your application. 
 

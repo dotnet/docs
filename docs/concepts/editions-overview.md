@@ -22,7 +22,7 @@ The following are the main characteristics of .NET Core:
 
 .NET Native is not so much an "edition" of the .NET platform as it is a set of native build tools for .NET Core. .NET Native is an Ahead-of-Time (AOT) toolchain that compiles IL byte code to native machine code, so that when the code is executed, there is only “native” code running. This means that the resulting binary is what the OS executes; there is no JIT-ing, no runtime compilation. This leads to better performance, as well as some security benefits.
 
-.NET Native is primarily used by .NET **[Universal Windows Platform (UWP)](https://msdn.microsoft.com/en-us/library/windows/apps/dn726767.aspx)** applications.
+.NET Native is primarily used by .NET **[Universal Windows Platform (UWP)](https://msdn.microsoft.com/library/windows/apps/dn726767.aspx)** applications.
 
 ## .NET Framework
 
@@ -30,9 +30,9 @@ The .NET Framework is Microsoft's primary develop platform for Windows server an
 
 There are multiple application stacks built on top of the .NET Framework that allow developers to build applications ranging from console applications, across rich client (WPF) applications to scalable web applications.
 
-[Windows Forms](https://msdn.microsoft.com/en-us/library/dd30h2yb%28v=vs.110%29.aspx) and [Windows Presentation Foundation (WPF)](https://msdn.microsoft.com/en-us/library/ms754130%28v=vs.110%29.aspx) are User Interface (UI) stacks that enable you to build desktop applications for Windows. The strength of Windows Forms lies in its rich support for common databinding scenarios as well as access to Windows’ native user interface controls. WPF, on the other hand, allows you to exercise much more control over the look and feel of your application. 
+[Windows Forms](https://msdn.microsoft.com/library/dd30h2yb.aspx) and [Windows Presentation Foundation (WPF)](https://msdn.microsoft.com/library/ms754130.aspx) are User Interface (UI) stacks that enable you to build desktop applications for Windows. The strength of Windows Forms lies in its rich support for common databinding scenarios as well as access to Windows’ native user interface controls. WPF, on the other hand, allows you to exercise much more control over the look and feel of your application. 
 
-[Windows Communication Foundation (WCF)](https://msdn.microsoft.com/en-us/library/ms731082%28v=vs.110%29.aspx) is a set of libraries for SOAP Web Services. It allows you to create services that can communicate through various supported protocols using various data formats, and that can be hosted in any process you choose. This leads to one of the major features of WCF: your services are not tied to any particular hosting strategy or approach.
+[Windows Communication Foundation (WCF)](https://msdn.microsoft.com/library/ms731082.aspx) is a set of libraries for SOAP Web Services. It allows you to create services that can communicate through various supported protocols using various data formats, and that can be hosted in any process you choose. This leads to one of the major features of WCF: your services are not tied to any particular hosting strategy or approach.
 
 [ASP.NET](http://www.asp.net/) is a web framework. Being a very rich framework, it has several distinct pieces which are used to produce modern and high-performance web applications. [ASP.NET Web Forms](http://www.asp.net/web-forms) is a set of tools geared primarily towards developer productivity, allowing quick turnaround on web applications with a drag-and-drop surface reusing web controls for everything from logging to data binding. [ASP.NET MVC](http://www.asp.net/mvc)gives you greater control over the entire web pipeline, from the HTTP layer to the user interface. [ASP.NET WebAPI](http://www.asp.net/web-api) is a convention-based framework for creating REST services. It allows you to set-up a REST endpoint extremely fast. Finally, [SignalR](http://www.asp.net/signalr) allows you to provide push-based communication to your web applications using the [WebSocket](https://en.wikipedia.org/wiki/WebSocket) protocol.
 

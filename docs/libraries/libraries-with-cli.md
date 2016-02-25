@@ -89,7 +89,7 @@ The version of the .NET Platform Standard you pick will be a tradeoff between ac
 
 **NOTE:** These instructions assume you have .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) to get dependencies installed.
 
-Keep in mind that some of the .NET Framework versions used here are no longer in support.  [Refer to this FAQ](https://support.microsoft.com/en-us/gp/framework_faq/en-us) about unsupported versions.
+Keep in mind that some of the .NET Framework versions used here are no longer in support.  [Refer to this FAQ](https://support.microsoft.com/gp/framework_faq/en-us) about unsupported versions.
 
 You may want to reach the maximum developers and projects, so use .NET Framework 4 as your baseline target.  From a project targeting perspective, this is quite simple!  You will need to specifically target the version of .NET Framework with its relevant Target Framework Moniker.  These are mapped out here:
 

@@ -171,7 +171,7 @@ TODO: finish section
 
 Every operating system in current use provides a lot of platform support for various programming tasks. .NET provides several ways to tap into those APIs. Collectively, this support is called “native interoperability” and in this section we will take a look at how to access native APIs from managed, .NET code.
 
-The main way to do native interoperability is via “platform invoke” or P/Invoke for short. This support in .NET Core is available across Linux and Windows platforms. Another, Windows-only way of doing native interoperability is known as “COM interop”. It’s main goal is to allow using [COM components](https://msdn.microsoft.com/en-us/library/bwa2bx93.aspx) in managed code. It is built on top of P/Invoke infrastructure, but it works in subtly different ways.
+The main way to do native interoperability is via “platform invoke” or P/Invoke for short. This support in .NET Core is available across Linux and Windows platforms. Another, Windows-only way of doing native interoperability is known as “COM interop”. It’s main goal is to allow using [COM components](https://msdn.microsoft.com/library/bwa2bx93.aspx) in managed code. It is built on top of P/Invoke infrastructure, but it works in subtly different ways.
 
 Most of Mono’s (and thus Xamarin’s) interoperability support for Java and Objective-C are built similarly, that is, they use the same principles.
 

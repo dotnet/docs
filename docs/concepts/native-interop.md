@@ -252,7 +252,7 @@ Both of the above examples depend on parameters, and in both cases, the paramete
 
 **Marshalling** is the process of transforming types when they need to cross the managed boundary into native and vice versa.
 
-The reason marshalling is needed is because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `String`, while in the unmanaged world strings can be Unicode (“wide”), non-Unicode, null-terminated, ASCII, etc. By default, the P/Invoke subsystem will try to do the Right Thing based on the default behavior which you can see on [MSDN](https://msdn.microsoft.com/en-us/library/zah6xy75.aspx). However, for those situations where you need extra control, you can employ the `MarshalAs` attribute to specify what is the expected type on the unmanaged side. For instance, if we want the string to be sent as a null-terminated ANSI string, we could do it like this:
+The reason marshalling is needed is because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `String`, while in the unmanaged world strings can be Unicode (“wide”), non-Unicode, null-terminated, ASCII, etc. By default, the P/Invoke subsystem will try to do the Right Thing based on the default behavior which you can see on [MSDN](https://msdn.microsoft.com/library/zah6xy75.aspx). However, for those situations where you need extra control, you can employ the `MarshalAs` attribute to specify what is the expected type on the unmanaged side. For instance, if we want the string to be sent as a null-terminated ANSI string, we could do it like this:
 
 ```cs
 [DllImport("somenativelibrary.dll"]
@@ -331,5 +331,5 @@ The `StatClass` class represents a structure that is returned by the `stat` syst
 ## More resources
 
 *   [PInvoke.net wiki](http://www.pinvoke.net) an excellent Wiki with information on common Win32 APIs and how to call them.
-*   [P/Invoke on MSDN](https://msdn.microsoft.com/en-us/library/zbz07712.aspx)
+*   [P/Invoke on MSDN](https://msdn.microsoft.com/library/zbz07712.aspx)
 *   [Mono documentation on P/Invoke](http://www.mono-project.com/docs/advanced/pinvoke/)

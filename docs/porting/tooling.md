@@ -22,7 +22,7 @@ After running the analysis, you will see your .NET Portability Report. Only type
 
 ![../images/portability_report.png](../images/portability_report.png)
 
-Don’t want to use Visual Studio? You can also use the Portability Analyzer from the Command Prompt. Download the command-line analyzer [here](http://www.microsoft.com/en-us/download/details.aspx?id=42678).
+Don’t want to use Visual Studio? You can also use the Portability Analyzer from the Command Prompt. Download the command-line analyzer [here](http://www.microsoft.com/download/details.aspx?id=42678).
 
 *   Type the following command to analyze the current directory: `\...\ApiPort.exe .`
 *   To analyze a specific list of .dlls type the following command: `\...\ApiPort.exe first.dll second.dll third.dll`

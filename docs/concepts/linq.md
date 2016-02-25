@@ -67,7 +67,7 @@ public static FindAllElementsWithAttribute(XElement documentRoot, string element
 
 Writing code to manually traverse the XML document to perform this task would be far more challenging.
 
-Interacting with XML isn’t the only thing you can do with LINQ Providers. [Linq to SQL](https://msdn.microsoft.com/en-us/library/bb386976%28v=vs.110%29.aspx) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](http://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn’t a library which does what you need, you can also [write your own LINQ Provider](https://msdn.microsoft.com/en-us/library/vstudio/Bb546158%28v=VS.110%29.aspx)!
+Interacting with XML isn’t the only thing you can do with LINQ Providers. [Linq to SQL](https://msdn.microsoft.com/library/bb386976.aspx) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](http://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn’t a library which does what you need, you can also [write your own LINQ Provider](https://msdn.microsoft.com/library/Bb546158.aspx)!
 
 ## Why Use the Query Syntax?
 
@@ -250,7 +250,7 @@ In diagram form:
 
 ![../images/PLINQ-diagram.png](../images/PLINQ-diagram.png)
 
-Parallelizable CPU-bound jobs which can be easily expressed via LINQ (in other words, are pure functions and have no side effects) are a great candidate for PLINQ. For jobs which _do_ have a side effect, consider using the [Task Parallel Library](https://msdn.microsoft.com/en-us/library/dd460717%28v=vs.110%29.aspx).
+Parallelizable CPU-bound jobs which can be easily expressed via LINQ (in other words, are pure functions and have no side effects) are a great candidate for PLINQ. For jobs which _do_ have a side effect, consider using the [Task Parallel Library](https://msdn.microsoft.com/library/dd460717.aspx).
 
 ## Further Resources:
 

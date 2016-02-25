@@ -78,7 +78,7 @@ printfn "%s" "uploadDataAsync is running in the background..."
 
 ```
 
-There are other ways to start an async workflow available for more specific scenarios. They are detailed [in the Async reference](https://msdn.microsoft.com/en-us/library/ee370232.aspx).
+There are other ways to start an async workflow available for more specific scenarios. They are detailed [in the Async reference](https://msdn.microsoft.com/library/ee370232.aspx).
 
 ### A Note on Threads
 
@@ -203,6 +203,6 @@ Unlike `await`, which can be nested indefinitely, `let!` cannot and must have it
 
 ## Further resources:
 
-*   [Async Workflows on MSDN](https://msdn.microsoft.com/en-us/library/dd233250.aspx)
+*   [Async Workflows on MSDN](https://msdn.microsoft.com/library/dd233250.aspx)
 *   [Asynchronous Sequences for F#](http://fsprojects.github.io/FSharp.Control.AsyncSeq/library/AsyncSeq.html)
 *   [F# Data HTTP Utilities](https://fsharp.github.io/FSharp.Data/library/Http.html)

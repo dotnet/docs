@@ -139,6 +139,6 @@ public MainWindow()
 
 ## Further reading and resources
 
-*   [Delegates](https://msdn.microsoft.com/en-us/library/ms173171.aspx)
-*   [Anonymous Functions](https://msdn.microsoft.com/en-us/library/bb882516.aspx)
-*   [Lambda expressions](https://msdn.microsoft.com/en-us/library/bb397687.aspx)
+*   [Delegates](https://msdn.microsoft.com/library/ms173171.aspx)
+*   [Anonymous Functions](https://msdn.microsoft.com/library/bb882516.aspx)
+*   [Lambda expressions](https://msdn.microsoft.com/library/bb397687.aspx)

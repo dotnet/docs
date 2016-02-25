@@ -2,7 +2,7 @@
 
 By [Phillip Carter](https://github.com/cartermp)
 
-C# and Visual Basic share a language-level asynchronous programming model which allows for easily writing asynchronous code without having to juggle callbacks or conform to a library which supports asynchrony. It follows what is known as the [Task-based Asynchronous Pattern (TAP)](https://msdn.microsoft.com/en-us/library/hh873175%28v=vs.110%29.aspx).
+C# and Visual Basic share a language-level asynchronous programming model which allows for easily writing asynchronous code without having to juggle callbacks or conform to a library which supports asynchrony. It follows what is known as the [Task-based Asynchronous Pattern (TAP)](https://msdn.microsoft.com/library/hh873175.aspx).
 
 The core of TAP are the `Task` and `Task<T>` objects, which model asynchronous operations, supported by the `async` and `await` keywords (`Async` and `Await` in VB), which provide a natural developer experience for interacting with Tasks. The result is the ability to write asynchronous code which cleanly expresses intent, as opposed to callbacks which express intent far less cleanly. There are other ways to approach async code than `async` and `await` outlined in the TAP article linked above, but this document will focus on the language-level constructs from this point forward.
 
@@ -161,7 +161,7 @@ Although the above may seem like a lot of work to be done, when measured in term
 *   Time spent from points `1` to `2` is the time spent on I/O.
 *   Finally, time spent from points `2` to `3` is passing control back (and potentially a value) to the async method, at which point it is executing again.
 
-Tasks are also used outside of the async programming model. They are the foundation of the Task Parallel Library, which supports the parallelization of CPU-bound work via [Data Parallelism](https://msdn.microsoft.com/en-us/library/dd537608%28v=vs.110%29.aspx) and [Task Parallelism](https://msdn.microsoft.com/en-us/library/dd537609%28v=vs.110%29.aspx).
+Tasks are also used outside of the async programming model. They are the foundation of the Task Parallel Library, which supports the parallelization of CPU-bound work via [Data Parallelism](https://msdn.microsoft.com/library/dd537608.aspx) and [Task Parallelism](https://msdn.microsoft.com/library/dd537609.aspx).
 
 ## Important Info and Advice
 
@@ -209,5 +209,5 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 
 ## More Information
 
-*   [Async/Await Reference Docs](https://msdn.microsoft.com/en-us/library/hh191443.aspx)
-*   [Tasks and the Task Parallel Library](https://msdn.microsoft.com/en-us/library/dd460717%28v=vs.110%29.aspx)
+*   [Async/Await Reference Docs](https://msdn.microsoft.com/library/hh191443.aspx)
+*   [Tasks and the Task Parallel Library](https://msdn.microsoft.com/library/dd460717.aspx)

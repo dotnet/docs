@@ -41,5 +41,5 @@ You can consult the documents in the [More Resources](#more-resources) section b
 
 ## More resources
 
-*   [Common Type System](https://msdn.microsoft.com/en-us/library/vstudio/zcx1eb1e%28v=vs.100%29.aspx)
-*   [Common Language Specification](https://msdn.microsoft.com/en-us/library/vstudio/12a7a7h3%28v=vs.100%29.aspx)
+*   [Common Type System](https://msdn.microsoft.com/library/zcx1eb1e.aspx)
+*   [Common Language Specification](https://msdn.microsoft.com/library/12a7a7h3.aspx)

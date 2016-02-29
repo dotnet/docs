@@ -2,4 +2,42 @@
 
 > **Note**
 > 
-> This topic hasn’t been written yet! You can track the status of this issue through our public GitHub issue tracker. Learn how you can contribute on GitHub.
+> This topic will be covered under the following articles:
+
+<style type="text/css">
+ol {
+    list-style-type: upper-roman;
+}
+</style>
+1. [Overview of Delegates](delegates-overview.md)
+
+    This article covers an overview of delegates.
+
+2. [System.Delegate and the `delegate` keyword](delegate-class.md)
+
+    This article covers the classes in the .NET Core Framework that support delegates    and how that maps to the `delegate` keyword.
+
+3. [Strongly Typed Delegates](delegates-strongly-typed.md)
+
+    This article covers the types and techniques for using strongly typed delegates.
+
+4. [Common Patterns for Delegates](delegates-patterns.md)
+
+    This article covers common practices for delegates.
+
+5. [Overview of Events](events-overview.md)
+
+    This article covers an overview of events in .NET.
+
+6. [The .NET Event Pattern](event-pattern.md)
+
+    This article covers the standard event pattern in .NET.
+
+7. [The Updated .NET Event Pattern](modern-events.md)
+
+    This article covers several updates to the .NET event pattern in recent releases.
+
+8. [Distinguishing Delegates from Events](distinguish-delegates-events.md)
+
+    This article discusses how you should distinguish between using events and delegates in your designs.
+ 

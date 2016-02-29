@@ -1,4 +1,4 @@
-# 🔧 Working with dates
+# 🔧 Collections and data structures
 
 > **Note**
 > 

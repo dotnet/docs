@@ -15,7 +15,7 @@ ol {
 
 2. [System.Delegate and the `delegate` keyword](delegate-class.md)
 
-    This article covers the classes in the .NET Framework that support delegates    and how that maps to the `delegate` keyword.
+    This article covers the classes in the .NET Core Framework that support delegates    and how that maps to the `delegate` keyword.
 
 3. [Strongly Typed Delegates](delegates-strongly-typed.md)
 
@@ -37,7 +37,7 @@ ol {
 
     This article covers several updates to the .NET event pattern in recent releases.
 
-8. [Distinguishing Delegates from EVents](distinguish-delegates-events.md)
+8. [Distinguishing Delegates from Events](distinguish-delegates-events.md)
 
     This article discusses how you should distinguish between using events and delegates in your designs.
  

@@ -62,7 +62,7 @@
 ### [🔧 Working with base types](essentials/basetypes.md)
 ### [🔧 Exception management in .NET Core](essentials/exceptions.md)
 ## [.NET Command Line Interface reference](cli/index.md)
-# [🔧 Application scenarios](apis/index.md)
+# [Application scenarios](apis/index.md)
 ## [🔧 Working with dates](apis/datetime/index.md)
 ## [🔧 Collections and data structures](apis/collections/index.md)
 ## [🔧 Numerical data](apis/numerics/index.md)

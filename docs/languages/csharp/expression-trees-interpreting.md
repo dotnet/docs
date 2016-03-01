@@ -1,5 +1,7 @@
 # Interpreting Expressions
 
+By [Bill Wagner](https://github.com/BillWagner)
+
 Now, let's write some code to examine the structure of an 
 *expression tree*. Every node in an expression tree will be
 an object of a class that is derived from `Expression`.
@@ -20,7 +22,7 @@ examines its properties:
 ```cs
 var constant = Expression.Constant(24, typeof(int));
 
-Console.WriteLine($"This is an {constant.NodeType} expression type");
+Console.WriteLine($"This is a/an {constant.NodeType} expression type");
 Console.WriteLine($"The type of the constant value is {constant.Type}");
 Console.WriteLine($"The value of the constant value is {constant.Value}");
 ```
@@ -46,14 +48,14 @@ Expression<Func<int>> sum = () => 1 + 2;
 ```
 
 > I'm not using `var` to declare this expression tree, as it is not possible
-> because thee right-hand side of the assignment is implicitly typed. To understand
-> this more deeply, read [here](implicitly-typed-lambda-expressions.md)
+> because the right-hand side of the assignment is implicitly typed. To understand
+> this more deeply, read [here](implicitly-typed-lambda-expressions.md).
 
 The root node is a `LambaExpression`. In order to get the interesting
 code on the right hand side of the `=>` operator, you need to find one
 of the children of the `LambdaExpression`. We'll do that with all the
 expressions in this section. The parent node does help us find the return
-type of the `LambdaExpression`'
+type of the `LambdaExpression`.
 
 To examine each node in this expression, we'll need to recursively
 visit a number of nodes. Here's a simple first implementation:
@@ -83,13 +85,13 @@ Console.WriteLine($"\tParameter Type: {right.Type.ToString()}, Name: {right.Name
 This sample prints the following output:
 
 ```
-This expression is a Lambda expression type
+This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
 The expression has 2 arguments. They are:
         Parameter Type: System.Int32, Name: a
         Parameter Type: System.Int32, Name: b
-The body is a Add expression
+The body is a/an Add expression
 The left side is a Parameter expression
         Parameter Type: System.Int32, Name: a
 The right side is a Parameter expression
@@ -151,7 +153,7 @@ public class LambdaVisitor : Visitor
         Console.WriteLine($"{prefix}This expression is a {NodeType} expression type");
         Console.WriteLine($"{prefix}The name of the lambda is {((node.Name == null) ? "<null>" : node.Name)}");
         Console.WriteLine($"{prefix}The return type is {node.ReturnType.ToString()}");
-        Console.WriteLine($"{prefix}The expression has {node.Parameters.Count} arguments. They are:");
+        Console.WriteLine($"{prefix}The expression has {node.Parameters.Count} argument(s). They are:");
         // Visit each parameter:
         foreach (var argumentExpression in node.Parameters)
         {
@@ -216,10 +218,10 @@ When you run this visitor on the addition expression shown above, you get the
 following output:
 
 ```
-This expression is a Lambda expression type
+This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
-The expression has 2 arguments. They are:
+The expression has 2 argument(s). They are:
         This is an Parameter expression type
         Type: System.Int32, Name: a, ByRef: False
         This is an Parameter expression type
@@ -286,10 +288,10 @@ Expression<Func<int, int>> sum = (a) => 1 + a + 3 + 4;
 Create a visitor for this sum and run the visitor you'll see this output:
 
 ```
-This expression is a Lambda expression type
+This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
-The expression has 1 arguments. They are:
+The expression has 1 argument(s). They are:
         This is an Parameter expression type
         Type: System.Int32, Name: a, ByRef: False
 The expression body is:
@@ -327,10 +329,10 @@ Expression<Func<int, int, int>> sum3 = (a, b) => (1 + a) + (3 + b);
 Here's the output from the visitor:
 
 ```
-This expression is a Lambda expression type
+This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
-The expression has 2 arguments. They are:
+The expression has 2 argument(s). They are:
         This is an Parameter expression type
         Type: System.Int32, Name: a, ByRef: False
         This is an Parameter expression type
@@ -394,7 +396,7 @@ In this expression, you'll encounter nodes of all these types:
 4. Method Call Expression (calling `Range()` and `Aggregate()`)
 
 One way to modify the visitor algorithm is to keep executing it, and write
-the node type everytime you reach your `default` clause. After a few
+the node type every time you reach your `default` clause. After a few
 iterations, you'll have seen each of the potential nodes. Then, you have
 all you need. The result would be something like this:
 
@@ -487,10 +489,10 @@ public class MethodCallVisitor : Visitor
 And the output for the expression tree would be:
 
 ```
-This expression is a Lambda expression type
+This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
-The expression has 1 arguments. They are:
+The expression has 1 argument(s). They are:
         This is an Parameter expression type
         Type: System.Int32, Name: n, ByRef: False
 The expression body is:

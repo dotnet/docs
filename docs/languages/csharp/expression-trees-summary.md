@@ -1,5 +1,7 @@
 [Previous -- Translating Expressions](expression-trees-translating.md)
 
+By [Bill Wagner](https://github.com/BillWagner)
+
 # Summary
 
 In this series, you've seen how you can use *expression trees* to

@@ -1,8 +1,10 @@
-﻿# Expression Trees
+﻿By [Bill Wagner](https://github.com/BillWagner)
+
+# Expression Trees
 
 If you have used LINQ, you have experience with a rich library
-where `Func` and `Func<T>` are part of the API. (If you are not familiar
-with LINQ, you probably want to read [that tutorial](linq.md) and
+where `Func` and `Func<T>` are part of the API set. (If you are not familiar
+with LINQ, you probably want to read [the LINQ tutorial](linq.md) and
 the tutorial on [lambda expressions](lambda-expressions.md) before this one.)
 *Expression Trees* provide richer interaction with the arguments that
 are functions.
@@ -14,7 +16,7 @@ transformed into a delegate the compiler creates.
 When you want to have a richer interaction, you need to use *Expression Trees*.
 Expression Trees represent code as a structure that you can examine,
 modify, or execute. These tools give you the power to manipulate code during
-runtime. You can write code that examines running algorithms, or injects new
+run time. You can write code that examines running algorithms, or injects new
 capabilities. In more advanced scenarios, you can modify running algorithms,
 and even translate C# expressions into another form for execution in another
 environment.

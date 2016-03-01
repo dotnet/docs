@@ -1,5 +1,7 @@
 [Previous -- Interpreting Expression Trees](expression-trees-interpreting.md)
 
+By [Bill Wagner](https://github.com/BillWagner)
+
 # Executing Expression Trees
 An *expression tree* is a data structure that represents some code.
 It is not compiled and executable code. If you want to execute
@@ -10,13 +12,13 @@ You can convert any LambdaExpression, or any type derived from
 LambdaExpression into executable IL. Other expression types
 cannot be directly converted into code. This restriction has
 little effect in practice. Lambda expressions are the only
-types of expressions that you would want to execute by converteing
-to executable IL. (Think about what it would mean
+types of expressions that you would want to execute by converting
+to executable intermediate language (IL). (Think about what it would mean
 to directly execute a `ConstantExpression`. Would it mean
 anything useful?) Any expression tree that is a `LamdbaExpression`,
 or a type derived from `LambdaExpression` can be converted to IL.
 The expression type `Expression<TDelegate> where TDelegate : delegate`
-is the only concreted example in the .net Core libraries. It's used
+is the only concreted example in the .NET Core libraries. It's used
 to represent an expression that maps to any delegate type. Because
 this type maps to a delegate type, .NET can examine
 the expression, and generate IL for an appropriate delegate that
@@ -68,7 +70,7 @@ you called `LamdbaExpression.Compile()`. You can see this above where
 `func()` executes the code.
 
 That delegate represents the code in the expression tree. You can
-retain the handle to that delgate and invoke it later. You don't need
+retain the handle to that delegate and invoke it later. You don't need
 to compile the expression tree each time you want to execute the code
 it represents. (Remember that expression trees are immutable, and
 compiling the same expression tree later will create a delegate that
@@ -97,7 +99,7 @@ that would be part of the delegate are usable at the location where
 you call `Compile`, and when you execute the resulting delegate.
 
 In general, the compiler will ensure that this is true. However,
-if your expression accesses a variable that implememts `IDisposable`,
+if your expression accesses a variable that implements `IDisposable`,
 it's possible that your code might dispose of the object while it
 is still held by the expression tree.
 

@@ -1,5 +1,7 @@
 [Previous -- Building Expressions](expression-trees-building.md)
 
+By [Bill Wagner](https://github.com/BillWagner)
+
 # Translating Expression Trees
 
 In this final section, you'll learn how to visit each node

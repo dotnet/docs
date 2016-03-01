@@ -1,5 +1,8 @@
 # Introduction to Delegates
 
+By [Bill Wagner](https://github.com/BillWagner)
+
+
 [Previous](delegates-events.md)
 
 Delegates provide a *late binding* mechanism in .NET. Late Binding

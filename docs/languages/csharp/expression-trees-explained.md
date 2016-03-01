@@ -1,5 +1,7 @@
 [Previous -- Overview](expression-trees.md)
 
+By [Bill Wagner](https://github.com/BillWagner)
+
 # Expression Trees Explained
 An Expression Tree is a data structure that defines code. They are based on the same structures
 that a compiler uses to analyze code and generate the compiled output. As you read through this
@@ -88,7 +90,7 @@ You can see method and property names. You can see the value of any constant exp
 You can also convert an expression tree into an executable delegate, and execute the
 code.
 
-The APIs for Expression Trees enable you to create trees that represnt almost any
+The APIs for Expression Trees enable you to create trees that represent almost any
 valid code construct. However, to keep things as simple as possible, some C# idioms
 cannot be created in an expression tree. One example is asynchronous expressions (using
 the `async` and `await` keywords. If your needs require asynchronous algorithms, you would need

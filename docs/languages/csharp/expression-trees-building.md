@@ -1,5 +1,7 @@
 [Previous -- Interpreting Expressions](expression-trees-interpreting.md)
 
+By [Bill Wagner](https://github.com/BillWagner)
+
 # Building Expression Trees
 
 All the expression trees you've seen so far have been created
@@ -97,7 +99,7 @@ var sum = Expression.Add(xSquared, ySquared);
 Next, you need to create a method call expression for the call to
 `Math.Sqrt`.  This requires creating an expression that calls
 `Math.Sqrt`, and then updating that expression so that the
-arguments represent the sum of xSquared and ySquared:
+arguments represent the sum of `xSquared` and `ySquared`:
 
 ```cs
 Expression<Func<double, double>> sqrt = (x) => Math.Sqrt(x);
@@ -130,7 +132,7 @@ Second, you need to use a subset of the Reflection APIs to create a `MethodInfo`
 so that you can create an expression tree to access that method. You must limit
 yourself to the subset of the Reflection APIs that are available on the .NET Core platform. Again,
 these techniques will extend to other expression trees. You'll have to create a
-delegate that cals the method you want, and retrieve the `MethodInfo` object
+delegate that calls the method you want, and retrieve the `MethodInfo` object
 from that expression.
 
 ## Building Code In Depth

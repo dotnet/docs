@@ -6,7 +6,7 @@ It creates a circular logic problem for the compiler. The `var` declaration
 tells the compiler to figure out the type of the variable from the type
 of expression on the right hand side of the assignment operator. A lambda
 expression does not have a compile time type, but is convertible to any
-matching delegate or expression type. When you assign a lambda exprssion
+matching delegate or expression type. When you assign a lambda expression
 to a variable of a delegate or expression type, you tell the compiler to
 try and convert the lambda expression into an expression or delegate that
 matches the signature of the 'assigned to' variable. The compiler must

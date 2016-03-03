@@ -1,4 +1,4 @@
-# Learn C# # 
+﻿# Learn C# # 
 
 
 
@@ -11,6 +11,7 @@
 *  [🔧 Delegates & events](delegates-events.md)
 *  [🔧 Generics](generics.md)
 *  [🔧 Language Integrated Query (LINQ)](linq.md)
+*  [Expression Trees](expression-trees.md)
 *  [🔧 Asynchronous programming](async.md)
 *  [🔧 Parallel programming](parallel.md)
 *  [🔧 Native interoperability](interop.md)

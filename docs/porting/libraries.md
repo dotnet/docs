@@ -168,11 +168,25 @@ In addition to a new project model, .NET Core introduces a new project system, x
 
 ### When to pick xproj
 
-**TODO**
+The new Xproj project system utilizes the capabilities of the `project.json`-based project model to offer two major features over existing project types: seamless multitargeting by building multiple assemblies and the ability to directly generate a NuGet package on build.
+
+However, it comes at the cost of lacking certain features you may have used, such as:
+
+- Support for F# or VB
+- Generating satellite assemblies with localized resource strings
+- Referencing a `.dll` on the filesystem
+
+If your project needs are relatively minimal and you can take advantage of the new features of xproj, you should pick it as your project system.  This can be done in Visual Studio as such:
+
+1. File | New Project.
+2. Select ".NET Core" under Visual C#.
+3. Selecing a template with the xproj icon. 
 
 ### When to pick csproj
 
-**TODO** - also mention bait and switch PCLs
+You can target .NET Core with the traditional project system in Visual Studio, `csproj`, by creating a Portable Class Library (PCL) and selecting ".NET Core" in the project configuration dialog.
+
+If you have more intricate project system needs, this should be your choice.  It may also be the best choice if you're mixing .NET Core and .NET Framework code in a larger solution.  Note that if you wish to multitarget by generating platform-specific assemblies like with the `xproj` project system, you'll need to create a "Bait and Switch" PCL, [as described here](https://blogs.msdn.microsoft.com/dsplaisted/2012/08/27/how-to-make-portable-class-libraries-work-for-you/).
 
 ## Porting your tests (if applicable)
 

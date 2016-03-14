@@ -31,11 +31,11 @@ Your code may not be a good candidate for porting if...
 
 If it makes sense to port at this time, then read on!
 
-## Overview of steps
+## Overview of the Porting Process
 
 The recommended process for porting follows a series of steps.  Here's a short overview of the process in general.  There will be other specific steps to take when porting libraries, apps and services.
 
-1. Identify and account for your 3rd party dependencies.
+1. Identify and account for your third-party dependencies.
 
    This will involve understanding what your 3rd party dependencies are, how you depend on them, how to see if they also run on .NET Core, and steps you can take if they don't.
    
@@ -47,13 +47,13 @@ The recommended process for porting follows a series of steps.  Here's a short o
 
    The API Portability Analyzer tool will analyze your compiled assemblies and generate a report which shows a high-level portability summary and a breakdown of each API you're using that isn't available on .NET Core.  You can use this report alongside an analysis of your codebase to develop a plan for how you'll port your code over.
    
-4. Port your tests over to xUnit and Nunit.
+4. Port your tests over to xUnit and NUnit.
 
-   MSTest doesn't support .NET Core, so you'll have to use either xUnit or NUnit to test your .NET COre targets.  Because porting to .NET Core is such a big change to your codebase, it's highly recommended to get your tests ported so that you can run tests as you port projects over.
+   MSTest doesn't support .NET Core, so you'll have to use either xUnit or NUnit to test your .NET Core targets.  Because porting to .NET Core is such a big change to your codebase, it's highly recommended to get your tests ported so that you can run tests as you port projects over.
    
 5. Determine which project system in Visual Studio is appropriate for your needs.
 
-   There are now two project systems in Visual Studio which support .NET Core: the traditional `csproj` project system and the new `xproj` project system.  Both offer capabilities that the other does not, so it's critical that you pick the correct project system before you begin.
+   There are now two project systems in Visual Studio which support .NET Core: the traditional `csproj` project system and the new `xproj` project system.  Both offer capabilities that the other does not, so it's critical that you pick the correct project system.  This will be covered in other articles.
    
 6. Execute your plan for porting!
 
@@ -63,8 +63,8 @@ The recommended process for porting follows a series of steps.  Here's a short o
 
 Here's a short list of the tools you'll likely use when porting to .NET Core:
 
-* Nuget - [client](https://dist.nuget.org/index.html) or [Nuget Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer)
-* ApiPort - [command line tool](https://github.com/Microsoft/dotnet-apiport/releases) or [Visual Studio Extension](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)
+* NuGet - [client](https://dist.nuget.org/index.html) or [Nuget Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer), the package manager for the .NET Platform.
+* ApiPort - [command line tool](https://github.com/Microsoft/dotnet-apiport/releases) or [Visual Studio Extension](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b), a toolchain that can generate a report of how portable your code is between .NET Framework and .NET Core, with an assembly-by-assembly breakdown of issues.
 
 ## Next steps
 

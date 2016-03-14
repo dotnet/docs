@@ -69,11 +69,17 @@ Read more in [The .NET Platform Standard](https://github.com/dotnet/corefx/blob/
 
 ### The project file: `project.json`
 
-**TODO** info about `project.json`, how you fit your `netstandard` TFM in, generates `project.lock.json`, etc.
+.NET Core projects are defined by a directory containing a `project.json` file.  This file is where all aspects of the project are declared, incluidng package dependencies, compiler configuration, runtime configuration, and more.
+
+The `dotnet restore` command reads this project file, restores all dependencies of the project, and generates a `project.lock.json` file.  This file contains all the necessary information the build system needs to build the project.
+
+To learn more about the `project.json` file, read the .NET Core project system docs. **NOTE: need link here to the official docs we're generating**.
 
 ### The solution file: `global.json`
 
-**TODO** info about `global.json` and how you can use it for multiple projects
+The `global.json` file is an optional file to include in a solution which contains multiple projects.  It typically resides in the root directory of a set of projects.  It can be used to inform the build system of different subdirectories which can contain projects.  This is for larger systems composed of many projects.
+
+To learn more about the `global.json` file, check out the .NET Core project system docs.
 
 ## Targeting your code for .NET Framework 4.6.1
 

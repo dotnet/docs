@@ -213,12 +213,8 @@ A good way to port your code is to begin with the "base" of your library.  This 
    a. Much of this may just require adding NuGet package dependencies to your `project.json`.
    
    b. It may helpful to comment out old code as you slowly get things compiling.
-   
-3. Port over any old tests which consume what you've just ported.
 
-   a. If you're using an aditional testing library that doesn't run on .NET Core, you may have to rewrite some tests or go forward without tests temporarily.
-   
-   b. Run or rewrite tests as needed.
+3. Run tests and make any needed adjustments.
    
 4. Pick the next layer of code to port over and repeat steps 2 and 3!
 

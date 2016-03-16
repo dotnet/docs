@@ -2,10 +2,10 @@
 This tutorial teaches you a number of features in .NET Core and the C# language. You’ll learn:
 *	The basics of the .NET Core Command Line Interface (CLI).
 *   An overview of C# Language features.
-*	The structure of a C# Console Application.
 *	Managing dependencies with NuGet
 *   HTTP Communications
-*   Processing JSON information 
+*   Processing JSON information
+*   Managing configuration with Attributes. 
 
 You’ll build an application that issues HTTP Requests to a REST
 service on GitHub. You'll read information in JSON format, and convert
@@ -83,7 +83,7 @@ that you add. However, it is important to make sure that the versions
 of all packages match, and that they also match the version of the .NET
 Standard Library.
 
-After you've made these changes, you should run dotnet restore again so
+After you've made these changes, you should run "dotnet restore" again so
 that those packages are installed on your system.
 
 # Making Web Requests
@@ -172,7 +172,7 @@ After you've configured the `HttpClient`, you make a web request, and retrieve t
 this first version, you use the `GetStringAsync` convenience method. This convenience method
 starts a task that makes the web request, and then when the request returns, it will read the
 response stream, and extract the content from the stream. The body of the response is returned
-as a `string`. The string is avaialable when the task completes. 
+as a `string`. The string is available when the task completes. 
 
 The final two lines of this method await that task, and then print the response to the console.
 Build the app, and run it. The build warning is gone now, because the `ProcessRepositories` now
@@ -235,12 +235,13 @@ Notice that you're now using `GetStreamAsync` instead of `GetStringAsync`. The s
 uses a stream instead of a string as its source. Let's explain a couple features of the C#
 language that are being used in the second line above. The argument to `ReadObject` is an
 `await` expression. Await expressions can appear almost anywhere in your code, even though
-up to now, you've only seen them as part of an assignment statement. Secondly, the `as`
-operator converts from the compile time type of `object` to `List<repo>`. The declaration
-of `ReadObject` declares that it returns an object of type `System.Object`. When you created
-the serializer, you told it to create a `List<repo>`. `List<repo>` is derived from `System.Object`,
-and the `as` operator converts from the stated type to the runtime type. If the conversion did not
-succeed, the `as` operator evaluates to `null`.
+up to now, you've only seen them as part of an assignment statement.
+
+Secondly, the `as` operator converts from the compile time type of `object` to `List<repo>`. 
+The declaration of `ReadObject` declares that it returns an object of type `System.Object`.
+`ReadObject` will return the type you specified when you constructed it (`List<repo>` in
+this tutorial). If the conversion does not succeed, the `as` operator evaluates to `null`,
+instead of throwing an exception.
 
 You're almost done with this section. Now that you've converted the JSON to C# objects, let's display
 the name of each repository:
@@ -255,6 +256,220 @@ Compile and run the application. It will print out the names of the repositories
 
 # Controlling Serialization
 
+Before you add more features, let's address the `repo` type and make it follow more standard
+C# conventions. You'll do this by annotating the `repo` type with *Attributes* that control how
+the JSON Serializer works. In your case, you'll use these attributes to define a mapping between
+the JSON key names and the C# class and member names. The two attributes used are the `DataContract`
+attribute and the `Data Member` attribute. By convention, all Attribute classes end in the suffix
+`Attribute`. However, you do not need to use that suffix when you apply an attribute. 
+
+The `DataContract` and `DataMember` attributes are in a different library, so you'll need to add
+that library to project.json as a dependency. Add the following line to the dependencies section
+of the project.json file (remember to add the comma separator on the line above):
+
+```
+"System.Runtime.Serialization.Primitives" : "4.0.1-rc2-23704"
+```
+
+After you save the file, run 'dotnet restore' to retrieve this package and update the project.json.lock
+file.
+
+Next, open the repo.cs file. Let's change the name to use Pascal Case, and fully spell out the name
+`Repository`. We still want to map JSON 'repo' nodes to this type, so you'll need to add the 
+`DataContract` attribute to the class declaration. YOu'll set the `Name` property of the attribute
+to the name of the JSON nodes that map to this type:
+
+```cs
+[DataContract(Name="repo")]
+public class Repository
+```
+
+The `DataContractAttribute` is a member of the `System.Runtime.Serialization` namespace, so you'll
+need to add the appropriate using statement at the top of the file:
+
+```cs
+using System.Runtime.Serialization;
+```
+
+You changed the name of the `repo` class to `Repository`, so you'll need to make the same name change
+in Program.cs (some editors may support a rename refactoring that will make this change automatically:)
+
+```cs
+var serializer = new DataContractJsonSerializer(typeof(List<Repository>));
+
+// ...
+
+var repositories = serializer.ReadObject(await streamTask) as List<Repository>;
+```
+
+Next, let's make the same change with the `name` field, using the `DataMemberAttribute` class. Make
+the following changes to the declaration of the `name` field in repo.cs:
+
+```cs
+[DataMember(Name="name")]
+public string Name;
+```
+
+This change means you need to change the code that writes the name of each repository in program.cs:
+
+```cs
+Console.WriteLine(repo.Name);
+```
+
+Do a "dotnet build", followed by a "dotnet run" to make sure you've got the mappings correct. You should
+see the same output as before. Before we process more properties from the web server, let's make one
+more change to the `Repository` class. The `Name` member is a publicly accessible field. That's not
+a good object oriented practice, so let's hcange it to a property. For our purposes, we don't need
+any specific code to run when getting or setting the property, but changing to a property makes it
+easier to add those changes later without breaking any code that uses the `Repository` class.
+
+Remove the field definition, and replace it with an *auto-implemented property*:
+
+```cs
+public string Name { get; set; }
+```
+
+The compiler generates the body of the `get` and `set` accessors, as well as a private field to
+store the name. It would be similar to the following code that you could type by hand:
+
+```cs
+public string Name 
+{ 
+    get { return this._name; }
+    set { this._name = value; }
+}
+private string _name;
+```
+
+Let's make one more change before adding new features. The `ProcessRepositories` method can do the async
+work and return a collection of the repositories. Let's return the `List<Repository>` from that method,
+and move the code that writes the information into the `Main` method.
+
+Change the signature of `ProcessRepositories` to return a task whose result is a list of `Repository`
+objects:
+
+```cs
+private static async Task<List<Repository>> ProcessRepositories()
+```
+
+Then, just return the repositories after processing the JSON response:
+
+```cs
+var repositories = serializer.ReadObject(await streamTask) as List<Repository>;
+return repositories;
+```
+
+The compiler generates the `Task<T>` object for the return because you've marked this method as `async`.
+Then, let's modify the `Main` method so that it captures those results and writes each repository name
+to the console. Your `Main` method now looks like this:
+
+```cs
+public static void Main(string[] args)
+{
+    var repositories = ProcessRepositories().Result;
+
+    foreach (var repo in repositories)
+        Console.WriteLine(repo.Name);
+}
+```
+
+Accessing the `Result` property of a Task blocks until the task has completed. Normally, you would prefer
+to `await` the completion of the task as in the `ProcessRepositories` method, but that isn't allowed in the
+`Main` method.
+
 # Reading More Information
 
+Let's finish this by processing a few more of the properties in the JSON packet that gets sent from the
+GitHub API. You won't want to grab everything, but adding a few properties will demonstrate a few more
+features of the C# language.
+
+Let's start by adding a few more simple types to the `Repository` class definition. Add these properties
+to that class:
+
+```cs
+[DataMember(Name="description")]
+public string Description { get; set; }
+
+[DataMember(Name="html_url")]
+public Uri GitHubHomeUrl { get; set; }
+
+[DataMember(Name="homepage")]
+public Uri Homepage { get; set; }
+
+[DataMember(Name="watchers")]
+public int Watchers { get; set; }
+```
+
+These properties have built in conversions from the string type (which is what the JSON packets contain) to
+the target type. The `Uri` type may be new to you. It represents a URI, or in this case, a URL. In the case
+of the `Uri` and `int` types, if the JSON packet contains data that does nto convert to the target type,
+the Serialization action will throw an exception.
+
+Once you've added these, update the `Main` method to display those elements:
+
+```cs
+foreach (var repo in repositories)
+{
+    Console.WriteLine(repo.Name);
+    Console.WriteLine(repo.Description);
+    Console.WriteLine(repo.GitHubHomeUrl);
+    Console.WriteLine(repo.Homepage);
+    Console.WriteLine(repo.Watchers);
+    Console.WriteLine();
+}
+```
+As a final step, let's add the information for the last push operation. This information is formatted in
+this fashion in the JSON response:
+
+```
+2016-02-08T21:27:00Z
+```
+
+That format does not follow one of the standard .NET DateTime formats. Because of that, you'll need to write
+a custom conversion method. You also probably don't want the raw string exposed to uses of the `Repository`
+class. Attributes can help control that as well. First, define a `private` property that will hold the
+string representation of the date time in your `Repository` class:
+
+```cs
+[DataMember(Name="pushed_at")]
+private string JsonDate { get; set; }
+```
+
+The `DataMember` attribute informs the Serializer that this should be processed, even though it is not
+a public member. Next, you need to write a public read only property that converts the string to a
+valid `DateTime` object, and returns that `DateTime`:
+
+```cs
+[IgnoreDataMember]
+public DateTime LastPush
+{
+    get
+    {
+        return DateTime.ParseExact(JsonDate, "yyyy-MM-ddTHH:mm:ssZ", CultureInfo.InvariantCulture);
+    }
+}
+```
+
+Let's go over the new constructs above. The `IgnoreDatamember` attribute instructs the serializer
+that this type should not be read to or written from any JSON object. This property contains only a
+`get` accessor. There is no `set` accessor. That's how you define a *read only* property in C#. (Yes,
+you can create *write only* properties in C#, but their value is limited.) The `DateTime.ParseExact`
+method parses a string and creates a `DateTime` object to return. If the parse operation fails, the
+property accessor throws an exception.
+
+Finally, add one more output statement in the console, and you're ready to build and run this app
+again:
+
+```cs
+Console.WriteLine(repo.LastPush);
+```
+
+Your version should now match the finished version located [here](https://github.com/dotnet/core-docs/).
+>note: I can't find a way to create a link to the blob until it's been merged. Hmmm.
+ 
 # Conclusion
+
+This tutorial showed you how to make web requests, parse the result, and display properties of
+those results. You've also added new packages as dependencies in your project. You've seen some of
+the features of the C# language that support object oriented techniques.
+

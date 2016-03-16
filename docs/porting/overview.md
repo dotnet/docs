@@ -2,14 +2,14 @@
 
 By [Phillip Carter](https://github.com/cartermp)
 
-If you've got code running on .NET Framework you may be interested in running your code on .NET Core.  This article will cover evaluating if porting to .NET Core is reasonable for you, an overview of the porting process, and a list of the tools you may use to port.
+If you've got code running on .NET Framework you may be interested in running your code on .NET Core.  This article covers evaluate if porting to .NET Core is reasonable for you, an overview of the porting process, and a list of the tools you may use to port.
 
 ## Should you port?
 
 The first thing you need to do is evaluate if it makes sense to port .NET Framework code over to .NET Core in the first place.  .NET Core offers some attractive capabilities, such as:
 
 - Using ASP.NET Core to write great web apps and services which you can write and deploy on your OS of choice
-- Console applications that can be Ahead-of-time compiled into native code with minimal dependencies
+- Console applications that can be ahead-of-time (AOT) compiled into native code with minimal dependencies
 - The ability to deploy apps and services app-local and with different versions of .NET Core side-by-side
 - The ability to write a UWP app that will run on multiple Windows 10 devices
 
@@ -20,7 +20,7 @@ Your code could be a good candidate for porting to .NET Core if...
 - You want to take advantage of app-local deployment and build self-contained console applications
 - You have expertise on non-Windows platforms you wish to leverage
 - You're looking for an opportunity to implement an architectural change for your services (e.g. a monolithic service to microservices deployed to containers)
-- You love new technology and want to cut your teeth on .NET Core
+- You love new open source technology and want to cut your teeth on .NET Core
 
 Your code may not be a good candidate for porting if...
 
@@ -53,11 +53,11 @@ The recommended process for porting follows a series of steps.  Here's a short o
    
 5. Determine which project system in Visual Studio is appropriate for your needs.
 
-   There are now two project systems in Visual Studio which support .NET Core: the traditional `csproj` project system and the new `xproj` project system.  Both offer capabilities that the other does not, so it's critical that you pick the correct project system.  This will be covered in other articles.
+   There are now two project systems in Visual Studio which support .NET Core: the traditional project system and the new `xproj` project system.  Both offer capabilities that the other does not, so it's critical that you pick the correct project system.  This will be covered in other articles.
    
 6. Execute your plan for porting!
 
-   Each porting article will cover a recommended overall approach, but because each codebase is different you may have a plan that differs considerably.
+   Each porting article covers a recommended overall approach, but because each codebase is different you may have a plan that differs considerably from what is generally recommended.
 
 ## Tools needed
 

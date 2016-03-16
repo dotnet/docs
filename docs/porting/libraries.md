@@ -3,28 +3,28 @@
 
 By [Phillip Carter](https://github.com/cartermp)
 
-Libraries are some of the most natural projects to port from .NET Framework to .NET Core.  This article will cover all of the steps you'll need to take to get to the point where you can focus on your code.  It will cover the following:
+Libraries are some of the most natural projects to port from .NET Framework to .NET Core.  This article covers all of the steps you'll need to take to get to the point where you can focus on your code.  It covers the following:
 
-- Learning about important discontinued technology for .NET Core
+- Learning about important discontinued technologies for .NET Core
 - Picking the correct .NET Platform Standard for your library
 - Understanding the basics of the .NET Core project model
 - If applicable, retargeting your code to .NET Framework 4.6.1
 - Determining the portability of your code
-- Picking a the correct project system in Visual Studio based on your needs
+- Picking the correct project system in Visual Studio based on your needs
 - Porting your tests
 - Recommended approach for porting your code
 
-It's quite a lot of content, but porting is a task that will take some time, esepcially if you have a large codebase.  You should also be prepared to adapt the guidance here as needed to best fit your code.  Every codebase is different, so this article will attempt to frame things in a flexible way, but you may find yourself needing to diverge from the prescribed guidance.
+It's quite a lot of content, but porting is a task that will take some time, especially if you have a large codebase.  You should also be prepared to adapt the guidance here as needed to best fit your code.  Every codebase is different, so this article attempts to frame things in a flexible way, but you may find yourself needing to diverge from the prescribed guidance.
 
 ## Prerequisites
 
-This article will be using Visual Studio 2015 on Windows.
+This article assumes you are using Visual Studio 2015 on Windows.
 
 This article also assumes that you have understood the [overview of the porting process](overview.md) and that you have resolved any issues with [3rd party dependencies](third-party-deps.md).  If you haven't done this already, it's highly recommended that you do that before moving forward.
 
 ## Technologies Discontinued for .NET Core
 
-There are some technologies available for .NET Framework that you may use, but will be outright unavailable for .NET Core.  These are technologies that we no longer promote for .NET Framework applications, and thus did not bring to .NET Core.
+There are some technologies available for .NET Framework that you may use, but are outright unavailable for .NET Core.  These are technologies that we no longer promote for .NET Framework applications, and thus did not bring to .NET Core.
 
 ### App Domains
 **Why was it discontinued?** AppDomains require runtime support and are generally quite expensive. While still implemented by CoreCLR, it’s not available in .NET Native and we don’t plan on adding this capability there.
@@ -51,9 +51,9 @@ To learn about all of the discontinued tech, read [Unsupported Technologies](htt
 
 ## Targeting the .NET Platform Standard
 
-The first thing to understand about porting a library to .NET Core us that you must target a version of the [.NET Platform Standard](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md).  In fact, it's accurate to say that targeting .NET Core means targeting a version of the .NET Platform Standard.
+The first thing to understand about porting a library to .NET Core is that you must target a version of the [.NET Platform Standard](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md).  In fact, it's accurate to say that targeting .NET Core means targeting a version of the .NET Platform Standard.
 
-Long story short, this means that you'll have to make a tradeoff between APIs you can use and platforms you can support, and pick the version of the .NET Platform standard that best suites the tradeoff you wish to make.
+Long story short, this means that you'll have to make a tradeoff between APIs you can use and platforms you can support, and pick the version of the .NET Platform standard that best suits the tradeoff you wish to make.
 
 As of right now, there are 6 different versions to consider: .NET Platform Standard 1.0 through 1.5.  If you pick a higher version, you get access to more APIs at the cost of running on less targets.  If you pick a lower version, your code can run on more targets but at the cost of less APIs available to you.
 
@@ -65,11 +65,11 @@ Read more in [The .NET Platform Standard](https://github.com/dotnet/corefx/blob/
 
 ## .NET Core project model overview
 
-.NET Core introduces a new project model that you may wish to spend some time understanding before you begin porting your code.  Rather than provide a comparison with the .NET Framework project model, this section will cover the essential pieces.
+.NET Core introduces a new project model that you may wish to spend some time understanding before you begin porting your code.  Rather than provide a comparison with the .NET Framework project model, this section covers the essential pieces.
 
 ### The project file: `project.json`
 
-.NET Core projects are defined by a directory containing a `project.json` file.  This file is where all aspects of the project are declared, incluidng package dependencies, compiler configuration, runtime configuration, and more.
+.NET Core projects are defined by a directory containing a `project.json` file.  This file is where all aspects of the project are declared, including package dependencies, compiler configuration, runtime configuration, and more.
 
 The `dotnet restore` command reads this project file, restores all dependencies of the project, and generates a `project.lock.json` file.  This file contains all the necessary information the build system needs to build the project.
 
@@ -122,7 +122,7 @@ This approach may be the best if you prefer to have code that compiles during th
 5. Copy the code into a new .NET Core projects.
 6. Work out any issues that you've kept note of.
 
-This approach is a bit more careful and structured than simply working out compiler errors, but it is still relatively code-focused and has the benefit of always having code that can compile.  The way you resolve certain issues that couldn't be addressed by just using another API can vary greatly.  You may find that you need to develop a more comprehensive plan for certain projects, which is covered as the next approach.
+This careful approach is more structured than simply working out compiler errors, but it is still relatively code-focused and has the benefit of always having code that can compile.  The way you resolve certain issues that couldn't be addressed by just using another API can vary greatly.  You may find that you need to develop a more comprehensive plan for certain projects, which is covered as the next approach.
 
 ### Developing a comprehensive plan of attack
 
@@ -133,11 +133,11 @@ This approach may be best for larger and more complex projects, where restructur
 
    a.  Understand the nature of those types.  Are they small in number, but used frequently?  Are they large in number, but used infrequently?  Is their use concentrated, or is it spread throughout your code?
    
-   b. Is it easy to isolate code that isn't portable so you can deal with it easier?
+   b. Is it easy to isolate code that isn't portable so you can deal with it more easily?
    
    c. Would you need to refactor your code?
    
-   d. For these types which aren't portable, are there alternative APIs that accomplish the same task?  For example, if you're using `WebClient`, you may be able to use `HttpClient` instead.
+   d. For those types which aren't portable, are there alternative APIs that accomplish the same task?  For example, if you're using `WebClient`, you may be able to use `HttpClient` instead.
    
    e. Are there different portable APIs you can use to accomplish a task, even if it's not a drop-in replacement?  For example, if you're using `XmlSchema` to help parse XML but you don't require XML schema discovery, you could use Linq to XML APIs and hand-parse the data.
 
@@ -152,17 +152,17 @@ This approach may be best for larger and more complex projects, where restructur
    a. You could consider copying, modifying, and using code from the [.NET Framework Reference Source](https://github.com/Microsoft/referencesource).  It's licensed under the [MIT License](https://github.com/Microsoft/referencesource/blob/master/LICENSE.txt) so you have significant freedom in doing this.  Just make sure to properly attribute Microsoft in your code!
    
 5. Repeat this process as needed for different projects.
-6. Once your have a plan, execute that plan.
+6. Once you have a plan, execute that plan.
  
-The analysis phase could take some time depending on how large your codebase is.  But that's okay!  Spending time in this phase to thoroughly understand the scope of changes needed and to develop a plan can save you a lot of time in the long run, particularly if you have a more complex codebase.
+The analysis phase could take some time depending on how large your codebase is.  Spending time in this phase to thoroughly understand the scope of changes needed and to develop a plan can save you a lot of time in the long run, particularly if you have a more complex codebase.
 
 Your plan could involve making significant changes to your codebase while still targeting .NET Framework 4.6.1, making this a more structured version of the previous approach.  How you go about executing your plan will be dependent on your codebase.
 
 ### Mixing approaches
 
-It's likely that you'll mix the above approaches on a per-project basis.  You should do what feels the most natural to you and your codebase.
+It's likely that you'll mix the above approaches on a per-project basis.  You should do what makes the most sense to you and for your codebase.
 
-## Picking your project system in Visual Studio: xproj or csproj
+## Picking your project system in Visual Studio: xproj or traditional projects
 
 In addition to a new project model, .NET Core introduces a new project system, xproj, in Visual Studio.  You'll have to pick the correct project system based on your needs.
 
@@ -170,7 +170,7 @@ In addition to a new project model, .NET Core introduces a new project system, x
 
 The new Xproj project system utilizes the capabilities of the `project.json`-based project model to offer two major features over existing project types: seamless multitargeting by building multiple assemblies and the ability to directly generate a NuGet package on build.
 
-However, it comes at the cost of lacking certain features you may have used, such as:
+However, it comes at the cost of lacking certain features you may use, such as:
 
 - Support for F# or VB
 - Generating satellite assemblies with localized resource strings
@@ -180,11 +180,11 @@ If your project needs are relatively minimal and you can take advantage of the n
 
 1. File | New Project.
 2. Select ".NET Core" under Visual C#.
-3. Selecing a template with the xproj icon. 
+3. Selecting the "Class Library (.NET Core)" template. 
 
-### When to pick csproj
+### When to pick a traditional project system
 
-You can target .NET Core with the traditional project system in Visual Studio, `csproj`, by creating a Portable Class Library (PCL) and selecting ".NET Core" in the project configuration dialog.
+You can target .NET Core with the traditional project system in Visual Studi, by creating a Portable Class Library (PCL) and selecting ".NET Core" in the project configuration dialog.
 
 If you have more intricate project system needs, this should be your choice.  It may also be the best choice if you're mixing .NET Core and .NET Framework code in a larger solution.  Note that if you wish to multitarget by generating platform-specific assemblies like with the `xproj` project system, you'll need to create a "Bait and Switch" PCL, [as described here](https://blogs.msdn.microsoft.com/dsplaisted/2012/08/27/how-to-make-portable-class-libraries-work-for-you/).
 
@@ -199,11 +199,11 @@ The best way to make sure everything works when you've ported your code is to *t
   - [Getting Started](https://github.com/nunit/docs/wiki/Installation)
   - [Blog post about migrating from MSTest to NUnit](http://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)
   
-Currently, MSTest does not run on .NET Core.  If you're using MSTest, you'll have to migrate.  If you've been using Xunit or Nunit to write your tests for your library, great!
+Currently, MSTest does not run on .NET Core.  If you're using MSTest, you'll have to migrate to xUnit or NUnit.  If you've been using Xunit or Nunit to write your tests for your library, great!
 
 ## Recommended approach to porting
 
-Finally, porting the code itself!  Ultimately, the actual porting effort will depending heavily on how your .NET Framework code is structured.  That being said, here is a recommended approach which may work well with your codebase.
+Finally, porting the code itself!  Ultimately, the actual porting effort will depend heavily on how your .NET Framework code is structured.  That being said, here is a recommended approach which may work well with your codebase.
 
 A good way to port your code is to begin with the "base" of your library.  This may be data models or some other foundational classes and methods that everything else uses directly or indirectly.
 
@@ -218,7 +218,7 @@ A good way to port your code is to begin with the "base" of your library.  This 
    
 4. Pick the next layer of code to port over and repeat steps 2 and 3!
 
-If you methodically move "out" from the "base" of your library, testing each layer as needed, you shouldn't run into unexpected issues.
+If you methodically move "out" from the "base" of your library, testing each layer as needed, you break down the porting job more systematically, thus localizing the problems to one layer of code at a time.
 
 ## Next Steps
 

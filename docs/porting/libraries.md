@@ -8,6 +8,7 @@ Libraries are some of the most natural projects to port from .NET Framework to .
 - Learning about important discontinued technologies for .NET Core
 - Picking the correct .NET Platform Standard for your library
 - Understanding the basics of the .NET Core project model
+- Understanding how multitargeting works in .NET Core
 - If applicable, retargeting your code to .NET Framework 4.6.1
 - Determining the portability of your code
 - Picking the correct project system in Visual Studio based on your needs
@@ -47,7 +48,6 @@ There are some technologies available for .NET Framework that you may use, but a
 **What should you use instead?** Use operating system provided security boundaries, such as user accounts for running processes with the least set of privileges.
 
 To learn about all of the discontinued tech, read [Unsupported Technologies](https://github.com/dotnet/corefx/blob/master/Documentation/project-docs/porting.md#unsupported-technologies),
-
 
 ## Targeting the .NET Platform Standard
 
@@ -92,6 +92,85 @@ For each of your projects in Visual Studio you wish to port, do the following:
 3. Recompile your projects.
 
 And that's it!  Because your projects now target .NET Framework 4.6.1, you can use that version of .NET Framework as your base for porting code.
+
+## How to Multitarget with .NET Core
+
+Many libraries multitarget to have as wide of a reach as possible.  With .NET Core, multitargeting is a "first class citizen", meaning that you can easily generate platform-specific assemblies.
+
+Multitargeting is as simple as adding the correct Target Framework Moniker (TFM) to your `project.json` file, pulling in the correct dependecies (`dependences` for .NET Core and `frameworkAssemblies` for .NET Framework), and potentially using `#if` compile guards to conditionally compile source.
+
+For example, imagine you were building a library where you wanted to perform some networking, and you wanted that library to run on all .NET Framework versions, a Portable Class Library (PCL) Profile, and .NET Core.  For .NET Core and .NET Framework 4.5+ targets, you may use `System.Net.Http` and `async`/`await`.  However, for lower versions of .NET Framwork, those APIs aren't available.
+
+Here's a sample `project.json` for that scenario targeting .NET Framework versions 2.0, 3.5, 4.0, 4.5, and .NET Platform Standard 1.5:
+
+```javascript
+{
+    "frameworks":{
+        "net20":{
+            "frameworkAssemblies":{
+                "System.Net":""
+            }
+        },
+        "net35":{
+            "frameworkAssemblies":{
+                "System.Net":""
+            }
+        },
+        "net40":{
+            "frameworkAssemblies":{
+                "System.Net":""
+            }
+        },
+        "net45":{
+            "frameworkAssemblies":{
+                "System.Net.Http":"",
+                "System.Threading.Tasks":""
+            }
+        },
+        ".NETPortable,Version=v4.5,Profile=Profile259": {
+            "compilationOptions": {
+                "define": [ "PORTABLE" ]
+             }
+        },
+        "netstandard15":{
+            "dependecies":{
+                "NETSTandard.Library":"1.0.0",
+                "System.Net.Http":"1.0.0",
+                "System.Threading.Tasks":"1.0.0"
+            }
+        },
+    }
+}
+```
+
+Note that PCL targets are special: they require you to specify a compilation definition, and they don't require you to specify any dependencies in `frameworkAssemblies`.
+
+Your source code could then include those dependencies like this:
+
+```csharp
+#if (NET20 || NET35 || NET40 || PORTABLE)
+using System.Net;
+#else
+using System.Net.Http;
+using System.Threading.Tasks;
+#endif
+```
+
+Note that all of the .NET Framework targets have names recognized by the compiler:
+
+```
+NET20
+NET35
+NET40
+NET45
+NET451
+NET452
+NET46
+NET461
+NET462
+```
+
+As mentioned above, if you are targeting a PCL then you will have to specify a compilation definition for the compiler to understand.
 
 ## Determining the portability of your code
 

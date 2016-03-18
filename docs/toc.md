@@ -23,6 +23,7 @@
 ## [🔧 Native interoperability](languages/csharp/interop.md)
 ## [🔧 Reflection & code generation](languages/csharp/reflection.md)
 ## [🔧 Documenting your code](languages/csharp/codedoc.md)
+## [C# Tutorials](tutorials/index.md)
 # [Understanding the .NET Core Platform](index.md)
 ## [The .NET Primer](concepts/primer.md)
 ## [Overview of .NET implementations](concepts/editions-overview.md) 

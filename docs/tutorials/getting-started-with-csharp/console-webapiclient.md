@@ -47,7 +47,7 @@ run your application.
 
 # Adding New Dependencies
 One of the key design goals for .NET Core is to minimize the size of
-the .NET framewwork installation. The .NET Core Standard library contains
+the .NET framework installation. The .NET Core Standard library contains
 only the most common elements of the .NET full framework. This application
 needs more libraries for some of its features. You'll add those
 dependencies into your project.json file. You'll need to add the
@@ -92,7 +92,7 @@ application, you'll read information from the
 [GitHub API](https://developer.github.com/v3/). Let's read information
 about the projects under the
 [.NET Foundation](http://www.dotnetfoundation.org/) umbrella. You'll
-start by making the request to the Github API to retrieve information
+start by making the request to the GitHub API to retrieve information
 on the projects. The endpoint you'll use is: [https://api.github.com/orgs/dotnet/repos](https://api.github.com/orgs/dotnet/repos). You want to retrieve all the
 information about these projects, so you'll use an HTTP GET request.
 Your browser also uses HTTP GET requests, so you can paste that URL into
@@ -161,9 +161,9 @@ using System.Net.Http.Headers;
 ```
 
 This first version makes a web request to read the list of all repositories under the dotnet
-foundation organization. (The github ID for the .NET Foundation is 'dotnet'). First, you create
+foundation organization. (The gitHub ID for the .NET Foundation is 'dotnet'). First, you create
 a new `HttpClient`. This object handles the request and the responses. The next few lines setup
-the `HttpClient` for this request. First, it is configured to accept the Github JSON responses.
+the `HttpClient` for this request. First, it is configured to accept the GitHub JSON responses.
 This format is simply JSON. The next line adds a User Agent header to all requests from this
 object. These two headers are checked by the GitHub server code, and are necessary to retrieve
 information from GitHub.
@@ -319,7 +319,7 @@ Console.WriteLine(repo.Name);
 Do a "dotnet build", followed by a "dotnet run" to make sure you've got the mappings correct. You should
 see the same output as before. Before we process more properties from the web server, let's make one
 more change to the `Repository` class. The `Name` member is a publicly accessible field. That's not
-a good object oriented practice, so let's hcange it to a property. For our purposes, we don't need
+a good object oriented practice, so let's change it to a property. For our purposes, we don't need
 any specific code to run when getting or setting the property, but changing to a property makes it
 easier to add those changes later without breaking any code that uses the `Repository` class.
 
@@ -402,7 +402,7 @@ public int Watchers { get; set; }
 
 These properties have built in conversions from the string type (which is what the JSON packets contain) to
 the target type. The `Uri` type may be new to you. It represents a URI, or in this case, a URL. In the case
-of the `Uri` and `int` types, if the JSON packet contains data that does nto convert to the target type,
+of the `Uri` and `int` types, if the JSON packet contains data that does not convert to the target type,
 the Serialization action will throw an exception.
 
 Once you've added these, update the `Main` method to display those elements:

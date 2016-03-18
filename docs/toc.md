@@ -59,6 +59,7 @@
 ### [🔧 Introduction to metadata in the .NET Platform](essentials/metadata.md)
 ### [🔧 Automatic memory management and garbage collection](essentials/gc.md)
 ### [🔧 Collections and Data Structures](essentials/Collections and Data Structures.md)
+#### [🔧 Selecting a Collection Class](essentials/selecting.md)
 ### [🔧 Common Language Runtime (CLR)](essentials/clr.md)
 ### [🔧 Class Library overview](essentials/classlibrary.md)
 ### [🔧 Working with base types](essentials/basetypes.md)

@@ -10,7 +10,7 @@ The first thing you need to do is evaluate if it makes sense to port .NET Framew
 
 - Using ASP.NET Core to write great web apps and services which you can write and deploy on your OS of choice
 - Console applications that can be ahead-of-time (AOT) compiled into native code with minimal dependencies
-- The ability to deploy apps and services app-local and with different versions of .NET Core side-by-side
+- The ability to deploy apps and services app-local and with different versions of the .NET Core rumtime installed side-by-side
 - The ability to write a UWP app that will run on multiple Windows 10 devices
 
 Your code could be a good candidate for porting to .NET Core if...
@@ -49,7 +49,7 @@ The recommended process for porting follows a series of steps.  Here's a short o
    
 4. Port your tests over to xUnit and NUnit.
 
-   MSTest doesn't support .NET Core, so you'll have to use either xUnit or NUnit to test your .NET Core targets.  Because porting to .NET Core is such a big change to your codebase, it's highly recommended to get your tests ported so that you can run tests as you port projects over.
+   MSTest doesn't support .NET Core, so you'll have to port your tests to either xUnit or NUnit if you wish to test your .NET Core targets.  Because porting to .NET Core is such a big change to your codebase, it's highly recommended to get your tests ported so that you can run tests as you port code over.
    
 5. Determine which project system in Visual Studio is appropriate for your needs.
 

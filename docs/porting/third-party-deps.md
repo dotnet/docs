@@ -2,11 +2,11 @@
 
 By [Phillip Carter](https://github.com/cartermp)
 
-The first step int he porting process is to understand your third party dependencies, figure out which of them (if any), don't run on .NET Core, and developing a contingency plan for those which don't run on .NET Core.
+The first step in the porting process is to understand your third party dependencies, figure out which of them (if any), don't run on .NET Core, and develop a contingency plan for those which don't run on .NET Core.
 
 ## Prerequisites
 
-This article will assume you are using Windows and Visual Studio  If you depend on Nuget packages, you may also wish to download the [Nuget Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer).
+This article will assume you are using Windows and Visual Studio.  For your NuGet package dependencies, you may also wish to download the [Nuget Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer).
 
 ## Analyzing NuGet Packages
 
@@ -25,7 +25,7 @@ Inspecting this is easiest with the [NuGet Package Explorer](https://github.com/
 1. Open the NuGet Package Explorer.
 2. Click "Open package from online feed".
 3. Search for the name of the package.
-4. Expands the "lib" folder on the right-hand side and look for a TFM that is valid for .NET Core.
+4. Expand the "lib" folder on the right-hand side and look for a TFM that is valid for .NET Core.
 
 ### What to do when your NuGet package dependency doesn't run on .NET Core
 
@@ -33,9 +33,9 @@ Oh no!  There are a few things you can do if a NuGet package you depend on won't
 
 1. If the project is open source and hosted somewhere like GitHub, you can engage the developer(s) directly.
 2. You can contact the author directly on nuget.org by searching for the package and clicking "Contact Owners" on the left hand side of the package's page.
-3. You can look for another package that runs on .NET Core which accomplished the same task as the package you were using.
+3. You can look for another package that runs on .NET Core which accomplishes the same task as the package you were using.
 4. You can attempt to write the code the package was doing yourself.
-5. If your allows for it, you could also choose not to port the project(s) which use that package at this time.
+5. You could eliminate the dependency on the package by changing the functionality of your app, at least until a .NET Core version of the package becomes available.
 
 If you're unable to resolve an incompatible 3rd party dependency, you may have to port to .NET Core at a later date.
 

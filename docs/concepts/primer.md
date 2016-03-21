@@ -2,34 +2,33 @@
 
 By [Rich Lander](https://github.com/richlander), [Zlatko Knezevic](https://github.com/blackdwarf)
 
-.NET is a general purpose development platform. It can be used for any kind of app type or workload where general purpose solutions are used. It has several key features that are attractive to many developers, including automatic memory management and modern programming languages, that make it easier to efficiently build high-quality apps. .NET enables a high-level programming environment with many convenience features, while providing low-level access to native memory and APIs.
+.NET is a general purpose development platform. It can be used for any kind of app type or workload where general purpose solutions are used. It has several key features that are attractive to many developers, including automatic memory management and modern programming languages, that make it easier to efficiently build high-quality applications. .NET enables a high-level programming environment with many convenience features, while providing low-level access to native memory and APIs.
 
-Multiple implementations of .NET are available, based on open [.NET Standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) that specify the fundamentals of the platform. They are separately optimized for different app types (e.g. desktop, mobile, gaming, cloud) and support many chips (e.g. x86/x64, ARM) and operating systems (e.g. Windows, Linux, iOS, Android, OS X). Open source is also an important part of the .NET ecosystem, with multiple .NET implementations and many libraries available under OSI-approved licenses.
+Multiple implementations of .NET are available, based on open [.NET Standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) that specify the fundamentals of the platform. They are separately optimized for different application types (e.g. desktop, mobile, gaming, cloud) and support many chips (e.g. x86/x64, ARM) and operating systems (e.g. Windows, Linux, iOS, Android, OS X). Open source is also an important part of the .NET ecosystem, with multiple .NET implementations and many libraries available under OSI-approved licenses.
 
-You can take a look at the [Overview of .NET implementations](editions-overview.md) document to figure out all of the different editions of the .NET Framework that are available, both Microsoft’s and others.
+You can take a look at the [Overview of .NET implementations](editions-overview.md) document to figure out all of the different editions of the .NET Framework that are available, both Microsoft's and others.
+
+This Primer will help you understand some of the key concepts in the .NET Platform and point you to more resources 
+for each given topic. By the end of it, you should have enough information to be able to recognize salient terms and 
+concepts in the .NET Platform and to know how to further your knowledge about them. 
 
 ## Key .NET Concepts
 
 There is a certain number of concepts that are very important to understand if you are new to the .NET Platform. These concepts are the cornerstone of the entire platform, and understanding them at the outset is important for general understanding of how .NET works.
 
-*   [Managed Code](managed-code.md)
-*   [Common Type System](common-type-system.md)
-*   [The runtime](common-language-runtime.md)
-*   [Base Class Library](framework-libraries.md)
+Most of these concepts are defined in the **What is .NET?** article. 
+
 
 ## A stroll through .NET
 
-As any mature and advanced application development framework, .NET has many powerful features that make the developer’s job easier and aim to make writing code more powerful and expressive. This section will outline the basics of the most salient features and provide pointers to more detailed discussions where needed. After finishing this stroll, you should have enough information to be able to read the samples on our GitHub repos as well as other code and understand what is going on.
+As any mature and advanced application development framework, .NET has many powerful features that make the developer's job easier and aim to make writing code more powerful and expressive. This section will outline the basics of the most salient features and provide pointers to more detailed discussions where needed. After finishing this stroll, you should have enough information to be able to read the samples on our GitHub repos as well as other code and understand what is going on.
 
 *   [Automatic memory management](#automatic-memory-management)
 *   [Type safety](#type-safety)
-*   The managed compiler
 *   [Delegates and lambdas](#delegates-and-lambdas)
 *   [Generic Types (Generics)](#generic-types-generics)
 *   [Language Integrated Query (LINQ)](#language-integrated-query-linq)
 *   [Async Programming](#async-programming)
-*   Dynamic language features
-*   Code contracts
 *   [Native interoperability](#native-interoperability)
 *   [Unsafe Code](#unsafe-code)
 
@@ -95,7 +94,7 @@ Dog dog = Dog._nextDogToBeAdopted; // will throw - this is a private field
 
 ```
 
-Some .NET languages support **type inference**. Type inference means that the compiler will deduce the type of the expression on the left-hand side from the expression on the right-hand side. This doesn’t mean that the type safety is broken or avoided. The resulting type **has** a strong type with everything that implies. Let’s rewrite the first two lines of the previous example to introduce type inference. You will note that the rest of the example is completely the same.
+Some .NET languages support **type inference**. Type inference means that the compiler will deduce the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type **has** a strong type with everything that implies. Let's rewrite the first two lines of the previous example to introduce type inference. You will note that the rest of the example is completely the same.
 
 ```cs
   var dog = Dog.AdoptDog();
@@ -112,15 +111,15 @@ Some .NET languages support **type inference**. Type inference means that the co
 
 Delegates are like C++ function pointers, with a big difference that they are type safe. They are a kind of disconnected method within the CLR type system. Regular methods are attached to a class and only directly callable through static or instance calling conventions.
 
-Delegates are used in various APIs and places in the .NET world, especially through lambda expressions, which are a cornerstone of Linq.
+Delegates are used in various APIs and places in the .NET world, especially through lambda expressions, which are a cornerstone of LINQ.
 
 Read more about it in the [Delegates and lambdas](delegates-lambdas.md) document.
 
 ### Generic Types (Generics)
 
-Generic types, a.k.a “generics” are a feature that was added in .NET Framework 2.0\. In short, generics allow the programmer to introduce a “type parameter” when designing their classes, that will allow the client code (i.e. the users of the type) to specify the exact type to use in place of the type parameter.
+Generic types, a.k.a "generics" are a feature that was added in .NET Framework 2.0\. In short, generics allow the programmer to introduce a "type parameter" when designing their classes, that will allow the client code (i.e. the users of the type) to specify the exact type to use in place of the type parameter.
 
-Generics were added in order to help programmers implement generic data structures. Before their arrival, in order for a, say, _List_ type to be generic, it would have to work with elements that were of type _object_. This would have various performance as well as semantic problems, not to mention possible subtle runtime errors. The most notorious of the latter is when a data structure contains, for instance, both integers and strings, and an _InvalidCastException_ is thrown on working with the list’s members.
+Generics were added in order to help programmers implement generic data structures. Before their arrival, in order for a, say, _List_ type to be generic, it would have to work with elements that were of type _object_. This would have various performance as well as semantic problems, not to mention possible subtle runtime errors. The most notorious of the latter is when a data structure contains, for instance, both integers and strings, and an _InvalidCastException_ is thrown on working with the list's members.
 
 The below sample shows a basic program running using an instance of _List<T>_ types.
 
@@ -155,31 +154,23 @@ To learn more about async programming in .NET, start with the [Async Overview](.
 
 ### Language Integrated Query (LINQ)
 
-LINQ is a powerful set of features for C# and VB that allow you to write simple, declarative code for operating on data. The data can be in many forms (such as in-memory objects, in a SQL database, or an XML document), but the LINQ code you write typically won’t look different for each data source!
+LINQ is a powerful set of features for C# and VB that allow you to write simple, declarative code for operating on data. The data can be in many forms (such as in-memory objects, in a SQL database, or an XML document), but the LINQ code you write typically won't look different for each data source!
 
 To learn more and see some samples, check out [LINQ (Language Integrated Query)](linq.md).
 
-### Dynamic language features
-
-TODO: finish section
-
-### Code contracts
-
-TODO: finish section
-
 ### Native Interoperability
 
-Every operating system in current use provides a lot of platform support for various programming tasks. .NET provides several ways to tap into those APIs. Collectively, this support is called “native interoperability” and in this section we will take a look at how to access native APIs from managed, .NET code.
+Every operating system in current use provides a lot of platform support for various programming tasks. .NET provides several ways to tap into those APIs. Collectively, this support is called "native interoperability" and in this section we will take a look at how to access native APIs from managed, .NET code.
 
-The main way to do native interoperability is via “platform invoke” or P/Invoke for short. This support in .NET Core is available across Linux and Windows platforms. Another, Windows-only way of doing native interoperability is known as “COM interop”. It’s main goal is to allow using [COM components](https://msdn.microsoft.com/library/bwa2bx93.aspx) in managed code. It is built on top of P/Invoke infrastructure, but it works in subtly different ways.
+The main way to do native interoperability is via "platform invoke" or P/Invoke for short. This support in .NET Core is available across Linux and Windows platforms. Another, Windows-only way of doing native interoperability is known as "COM interop". It's main goal is to allow using [COM components](https://msdn.microsoft.com/library/bwa2bx93.aspx) in managed code. It is built on top of P/Invoke infrastructure, but it works in subtly different ways.
 
-Most of Mono’s (and thus Xamarin’s) interoperability support for Java and Objective-C are built similarly, that is, they use the same principles.
+Most of Mono's (and thus Xamarin's) interoperability support for Java and Objective-C are built similarly, that is, they use the same principles.
 
 Read more about it in the [Native interoperability](native-interop.md) document.
 
 ### Unsafe Code
 
-The CLR enables the ability to access native memory and do pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms and system interoperability. Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm. Unsafe code may not execute the same way in different environments, and also loses the benefits of a garbage collector and type safety. It’s recommended to confine and centralize unsafe code as much as possible, and test that code thoroughly.
+The CLR enables the ability to access native memory and do pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms and system interoperability. Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm. Unsafe code may not execute the same way in different environments, and also loses the benefits of a garbage collector and type safety. It's recommended to confine and centralize unsafe code as much as possible, and test that code thoroughly.
 
 The `ToString()` method from the [StringBuilder class](https://github.com/dotnet/coreclr/blob/master/src/mscorlib/src/System/Text/StringBuilder.cs#L327). illustrates how using `unsafe` code can efficiently implement an algorithm by moving around chunks of memory directly:
 
@@ -228,6 +219,6 @@ public override String ToString() {
 
 ## Notes
 
-The term ”.NET runtime” is used throughout the document to accommodate for the multiple implementations of .NET, such as CLR, Mono, IL2CPP and others. The more specific names are only used if needed.
+The term ".NET runtime" is used throughout the document to accommodate for the multiple implementations of .NET, such as CLR, Mono, IL2CPP and others. The more specific names are only used if needed.
 
-This document is not intended to be historical in nature, but describe the .NET platform as it is now. It isn’t important whether a .NET feature has always been available or was only recently introduced, only that it is important enough to highlight and discuss.
+This document is not intended to be historical in nature, but describe the .NET platform as it is now. It isn't important whether a .NET feature has always been available or was only recently introduced, only that it is important enough to highlight and discuss.

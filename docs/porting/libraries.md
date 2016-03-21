@@ -97,9 +97,9 @@ And that's it!  Because your projects now target .NET Framework 4.6.1, you can u
 
 Many libraries multitarget to have as wide of a reach as possible.  With .NET Core, multitargeting is a "first class citizen", meaning that you can easily generate platform-specific assemblies.
 
-Multitargeting is as simple as adding the correct Target Framework Moniker (TFM) to your `project.json` file, pulling in the correct dependecies (`dependences` for .NET Core and `frameworkAssemblies` for .NET Framework), and potentially using `#if` compile guards to conditionally compile source.
+Multitargeting is as simple as adding the correct Target Framework Moniker (TFM) to your `project.json` file, pulling in the correct dependecies (`dependencies` for .NET Core and `frameworkAssemblies` for .NET Framework), and potentially using `#if` directives to conditionally compile source.
 
-For example, imagine you were building a library where you wanted to perform some networking, and you wanted that library to run on all .NET Framework versions, a Portable Class Library (PCL) Profile, and .NET Core.  For .NET Core and .NET Framework 4.5+ targets, you may use `System.Net.Http` and `async`/`await`.  However, for lower versions of .NET Framwork, those APIs aren't available.
+For example, imagine you were building a library where you wanted to perform some networking, and you wanted that library to run on all .NET Framework versions, a Portable Class Library (PCL) Profile, and .NET Core.  For .NET Core and .NET Framework 4.5+ targets, you may use `System.Net.Http` and `async`/`await`.  However, for earlier versions of .NET Framework, those APIs aren't available.
 
 Here's a sample `project.json` for that scenario targeting .NET Framework versions 2.0, 3.5, 4.0, 4.5, and .NET Platform Standard 1.5:
 
@@ -130,10 +130,16 @@ Here's a sample `project.json` for that scenario targeting .NET Framework versio
         ".NETPortable,Version=v4.5,Profile=Profile259": {
             "compilationOptions": {
                 "define": [ "PORTABLE" ]
+             },
+             "frameworkAssemblies":{
+                 "mscorlib":"",
+                 "System":"",
+                 "System.Core":"",
+                 "System.Net.Http":""
              }
         },
         "netstandard15":{
-            "dependecies":{
+            "dependencies":{
                 "NETSTandard.Library":"1.0.0",
                 "System.Net.Http":"1.0.0",
                 "System.Threading.Tasks":"1.0.0"
@@ -143,7 +149,7 @@ Here's a sample `project.json` for that scenario targeting .NET Framework versio
 }
 ```
 
-Note that PCL targets are special: they require you to specify a compilation definition, and they don't require you to specify any dependencies in `frameworkAssemblies`.
+Note that PCL targets are special: they require you to specify a compilation definition for the compiler to recognize, and they require you to specify all of the assemblies where your dependencies live.  
 
 Your source code could then include those dependencies like this:
 
@@ -216,7 +222,7 @@ This approach may be best for larger and more complex projects, where restructur
    
    c. Would you need to refactor your code?
    
-   d. For those types which aren't portable, are there alternative APIs that accomplish the same task?  For example, if you're using `WebClient`, you may be able to use `HttpClient` instead.
+   d. For those types which aren't portable, are there alternative APIs that accomplish the same task?  For example, if you're using the `WebClient` class, you may be able to use the `HttpClient` class instead.
    
    e. Are there different portable APIs you can use to accomplish a task, even if it's not a drop-in replacement?  For example, if you're using `XmlSchema` to help parse XML but you don't require XML schema discovery, you could use Linq to XML APIs and hand-parse the data.
 
@@ -253,7 +259,7 @@ However, it comes at the cost of lacking certain features you may use, such as:
 
 - Support for F# or VB
 - Generating satellite assemblies with localized resource strings
-- Referencing a `.dll` on the filesystem
+- Referencing a `.dll` file on the filesystem
 
 If your project needs are relatively minimal and you can take advantage of the new features of xproj, you should pick it as your project system.  This can be done in Visual Studio as such:
 
@@ -263,7 +269,7 @@ If your project needs are relatively minimal and you can take advantage of the n
 
 ### When to pick a traditional project system
 
-You can target .NET Core with the traditional project system in Visual Studi, by creating a Portable Class Library (PCL) and selecting ".NET Core" in the project configuration dialog.
+You can target .NET Core with the traditional project system in Visual Studio, by creating a Portable Class Library (PCL) and selecting ".NET Core" in the project configuration dialog.
 
 If you have more intricate project system needs, this should be your choice.  It may also be the best choice if you're mixing .NET Core and .NET Framework code in a larger solution.  Note that if you wish to multitarget by generating platform-specific assemblies like with the `xproj` project system, you'll need to create a "Bait and Switch" PCL, [as described here](https://blogs.msdn.microsoft.com/dsplaisted/2012/08/27/how-to-make-portable-class-libraries-work-for-you/).
 

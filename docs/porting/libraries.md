@@ -81,18 +81,6 @@ The `global.json` file is an optional file to include in a solution which contai
 
 To learn more about the `global.json` file, check out the .NET Core project system docs.
 
-## Targeting your code for .NET Framework 4.6.1
-
-If your code is not targeting .NET Framework 4.6.1, it's highly recommended that you retarget.  This ensures that you can use API alternatives for cases where .NET Core can't support existing APIs.
-
-For each of your projects in Visual Studio you wish to port, do the following:
-
-1. Right-click on the project and select Properties
-2. In the "Target Framework" dropdown, select ".NET Framework 4.6.1".
-3. Recompile your projects.
-
-And that's it!  Because your projects now target .NET Framework 4.6.1, you can use that version of .NET Framework as your base for porting code.
-
 ## How to Multitarget with .NET Core
 
 Many libraries multitarget to have as wide of a reach as possible.  With .NET Core, multitargeting is a "first class citizen", meaning that you can easily generate platform-specific assemblies.
@@ -177,6 +165,18 @@ NET462
 ```
 
 As mentioned above, if you are targeting a PCL then you will have to specify a compilation definition for the compiler to understand.
+
+## Targeting your code for .NET Framework 4.6.1
+
+If your code is not targeting .NET Framework 4.6.1, it's highly recommended that you retarget.  This ensures that you can use API alternatives for cases where .NET Core can't support existing APIs.
+
+For each of your projects in Visual Studio you wish to port, do the following:
+
+1. Right-click on the project and select Properties
+2. In the "Target Framework" dropdown, select ".NET Framework 4.6.1".
+3. Recompile your projects.
+
+And that's it!  Because your projects now target .NET Framework 4.6.1, you can use that version of .NET Framework as your base for porting code.
 
 ## Determining the portability of your code
 

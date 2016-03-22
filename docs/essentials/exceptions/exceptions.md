@@ -63,7 +63,9 @@ You can filter the exceptions you catch and handle either by type or by some use
 
 Type-filtered handlers manage a particular type of exception (or classes derived from it). The following example shows a type-filtered handler that is designed to catch a specific exception, in this case, the [FileNotFoundException](https://msdn.microsoft.com/en-us/library/system.io.filenotfoundexception).
 
-*C#*
+## Example
+
+C#
 ```C#
 catch (FileNotFoundException e)
 {
@@ -71,13 +73,13 @@ catch (FileNotFoundException e)
 }
 ```
 
-*Visual Basic*
+Visual Basic
 ```VB
 Catch e As FileNotFoundException
     Console.WriteLine("[Data File Missing] {0}", e)
 ```
 
-*C++*
+C++
 ```VC
 catch (FileNotFoundException^ e)
 {

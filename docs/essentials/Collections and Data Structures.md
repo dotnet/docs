@@ -4,8 +4,6 @@ Similar data can often be handled more efficiently when stored and manipulated a
 
 There are two main types of collections; generic collections and non-generic collections. Generic collections are type-safe at compile time. Because of this, generic collections typically offer better performance. Generic collections accept a type parameter when they are constructed and do not require that you cast to and from the [Object](http://dotnet.github.io/api/System.Object.html) type when you add or remove items from the collection. Non-generic collections store items as [Object](http://dotnet.github.io/api/System.Object.html) and require casting. You may see non-generic collections in older code.
 
-Starting with the .NET Framework 4, the collections in the [System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html) namespace provide efficient thread-safe operations for accessing collection items from multiple threads.
-
 ## Common collection features
 
 All collections provide methods for adding, removing or finding items in the collection. In addition, all collections that directly or indirectly implement the[ICollection](http://dotnet.github.io/api/System.Collections.ICollection.html) interface or the [ICollection(Of T)](http://dotnet.github.io/api/System.Collections.Generic.ICollection%601.html) interface share these features: 
@@ -34,7 +32,7 @@ In addition, many collection classes contain the following features:
 
 *   **Synchronization for access from multiple threads** ([System.Collections](http://dotnet.github.io/api/System.Collections) classes only).
 
-    Non-generic collection types in the [System.Collections](http://dotnet.github.io/api/System.Collections) namespace provide some thread safety with synchronization; typically exposed through the **SyncRoot** and **IsSynchronized** members. These collections are not thread-safe by default. If you require scalable and efficient multi-threaded access to a collection, use one of the classes in the [System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html) namespace or consider using an immutable collection. For more information, see Thread-Safe Collections.    
+    Non-generic collection types in the [System.Collections](http://dotnet.github.io/api/System.Collections) namespace provide some thread safety with synchronization; typically exposed through the **SyncRoot** and **IsSynchronized** members. These collections are not thread-safe by default. If you require scalable and efficient multi-threaded access to a collection, use one of the classes in the [System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html) namespace or consider using an immutable collection. For more information, see [Thread-Safe Collections](collections/thread-safeCollections.md).    
     
 ## Choosing a collection 
 
@@ -55,13 +53,13 @@ A set for mathematical functions | [System.Collections.Generic.HashSet(Of T)](
 
 Title | Description
 ----- | -----------
-Selecting a Collection Class | Describes the different collections and helps you select one for your scenario.
-Commonly Used Collection Types | Describes commonly used generic and nongeneric collection types such as [System.Array](http://dotnet.github.io/api/System.Array.html), [System.Collections.Generic.List(Of T)](http://dotnet.github.io/api/System.Collections.Generic.List%601.html), and [System.Collections.Generic.Dictionary(Of TKey, TValue)](http://dotnet.github.io/api/System.Collections.Generic.Dictionary%602.html). 
-When to Use Generic Collections | Discusses the use of generic collection types.
-Comparisons and Sorts Within Collections | Discusses the use of equality comparisons and sorting comparisons in collections.
-Sorted Collection Types | Describes sorted collections performance and characteristics.
-Hashtable and Dictionary Collection Types | Describes the features of generic and non-generic hash-based dictionary types.
-Thread-Safe Collections | Describes collection types such as [System.Collections.Concurrent.BlockingCollection(Of T)](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) and [System.Collections.Concurrent.ConcurrentBag(Of T)](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentBag%601.html) that support safe and efficient concurrent access from multiple threads.
+[Selecting a Collection Class](collections/selectingaCollectionClass.md) | Describes the different collections and helps you select one for your scenario.
+[Commonly Used Collection Types](collections/commonlyUsedCollectionTypes.md) | Describes commonly used generic and nongeneric collection types such as [System.Array](http://dotnet.github.io/api/System.Array.html), [System.Collections.Generic.List(Of T)](http://dotnet.github.io/api/System.Collections.Generic.List%601.html), and [System.Collections.Generic.Dictionary(Of TKey, TValue)](http://dotnet.github.io/api/System.Collections.Generic.Dictionary%602.html). 
+[When to Use Generic Collections](collections/whentoUseGenericCollections.md) | Discusses the use of generic collection types.
+[Comparisons and Sorts Within Collections](collections/comparisonsandSortsWithinCollections.md) | Discusses the use of equality comparisons and sorting comparisons in collections.
+[Sorted Collection Types](collections/sortedCollectionTypes.md) | Describes sorted collections performance and characteristics.
+[Hashtable and Dictionary Collection Types](collections/hashtableandDictionaryCollectionTypes.md) | Describes the features of generic and non-generic hash-based dictionary types.
+[Thread-Safe Collections](collections/thread-safeCollections.md) | Describes collection types such as [System.Collections.Concurrent.BlockingCollection(Of T)](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) and [System.Collections.Concurrent.ConcurrentBag(Of T)](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentBag%601.html) that support safe and efficient concurrent access from multiple threads.
 
 ## Reference
 

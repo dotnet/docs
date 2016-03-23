@@ -1,3 +1,5 @@
+# When to Use Generic Collections
+
 Using generic collections is generally recommended, because you gain the immediate benefit of type safety without having to derive from a base collection type and implement type-specific members. Generic collection types also generally perform better than the corresponding nongeneric collection types (and better than types that are derived from nongeneric base collection types) when the collection elements are value types, because with generics there is no need to box the elements. 
 
 You should use the generic collection classes in the [System.Collections.Concurrent](https://dotnet.github.io/api/System.Collections.Concurrent.html) namespace when multiple threads might be adding or removing items from the collection concurrently.

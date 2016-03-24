@@ -115,7 +115,6 @@ public class Example
         // implemented on Part.
         parts.Sort();
 
-
         Console.WriteLine("\nAfter sort by part number:");
         foreach (Part aPart in parts)
         {

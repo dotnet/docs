@@ -9,7 +9,7 @@ Multiple implementations of .NET are available, based on open [.NET Standards](h
 You can take a look at the [Overview of .NET implementations](editions-overview.md) document to figure out all of the different editions of the .NET Framework that are available, both Microsoft's and others.
 
 This Primer will help you understand some of the key concepts in the .NET Platform and point you to more resources 
-for each given topic. By the end of it, you should have enough information to be able to recognize salient terms and 
+for each given topic. By the end of it, you should have enough information to be able to recognize significant terms and 
 concepts in the .NET Platform and to know how to further your knowledge about them. 
 
 ## Key .NET Concepts
@@ -34,7 +34,7 @@ As any mature and advanced application development framework, .NET has many powe
 
 ### Automatic memory management
 
-Garbage collection is the most well-known of .NET features. Developers do not need to actively manage memory, although there are affordances to provide more information to the garbage collector (GC). C# includes the `new` keyword to allocate memory in terms of a particular type, and the `using` keyword to provide scope for the usage of the object. The GC operates on a lazy approach to memory management, preferring application throughput to the immediate collection of memory.
+Garbage collection is the most well-known of .NET features. Developers do not need to actively manage memory, although there are mechanisms to provide more information to the garbage collector (GC). C# includes the `new` keyword to allocate memory in terms of a particular type, and the `using` keyword to provide scope for the usage of the object. The GC operates on a lazy approach to memory management, preferring application throughput to the immediate collection of memory.
 
 The following two lines both allocate memory:
 
@@ -62,7 +62,7 @@ One of the less obvious but quite far-reaching features that a garbage collector
 
 The .NET runtime provides additional services, to complete the promise of memory safety, not naturally offered by a GC. It ensures that programs do not index off the end of an array or accessing a phantom field off the end of an object.
 
-The following example will throw as a result of memory safety.
+The following example will throw an exception as a result of memory safety.
 
 ```cs
 int[] numbers = new int[42];
@@ -74,7 +74,7 @@ int number = numbers[42]; // will throw (indexes are 0-based)
 
 Objects are allocated in terms of types. The only operations allowed for a given object, and the memory it consumes, are those of its type. A `Dog` type may have `Jump` and `WagTail` methods, but not likely a `SumTotal` method. A program can only call the declared methods of a given type. All other calls will result either in a compile-time error or a run-time exception (in case of using dynamic features or `object`).
 
-.NET languages can be object-oriented, with hierarchies of base and derived classes. The .NET runtime will only allow object casts and calls that align with the object hierarchy. Remember that every type defined in any .NET language derives from the core `object` type.
+.NET languages are object-oriented, with hierarchies of base and derived classes. The .NET runtime will only allow object casts and calls that align with the object hierarchy. Remember that every type defined in any .NET language derives from the base `object` type.
 
 ```cs
 Dog dog = Dog.AdoptDog(); // Returns a Dog type
@@ -117,7 +117,7 @@ Read more about it in the [Delegates and lambdas](delegates-lambdas.md) document
 
 ### Generic Types (Generics)
 
-Generic types, a.k.a "generics" are a feature that was added in .NET Framework 2.0\. In short, generics allow the programmer to introduce a "type parameter" when designing their classes, that will allow the client code (i.e. the users of the type) to specify the exact type to use in place of the type parameter.
+Generic types, also commonly called "generics" are a feature that was added in .NET Framework 2.0. In short, generics allow the programmer to introduce a "type parameter" when designing their classes, that will allow the client code (the users of the type) to specify the exact type to use in place of the type parameter.
 
 Generics were added in order to help programmers implement generic data structures. Before their arrival, in order for a, say, _List_ type to be generic, it would have to work with elements that were of type _object_. This would have various performance as well as semantic problems, not to mention possible subtle runtime errors. The most notorious of the latter is when a data structure contains, for instance, both integers and strings, and an _InvalidCastException_ is thrown on working with the list's members.
 
@@ -162,7 +162,7 @@ To learn more and see some samples, check out [LINQ (Language Integrated Query)]
 
 Every operating system in current use provides a lot of platform support for various programming tasks. .NET provides several ways to tap into those APIs. Collectively, this support is called "native interoperability" and in this section we will take a look at how to access native APIs from managed, .NET code.
 
-The main way to do native interoperability is via "platform invoke" or P/Invoke for short. This support in .NET Core is available across Linux and Windows platforms. Another, Windows-only way of doing native interoperability is known as "COM interop". It's main goal is to allow using [COM components](https://msdn.microsoft.com/library/bwa2bx93.aspx) in managed code. It is built on top of P/Invoke infrastructure, but it works in subtly different ways.
+The main way to do native interoperability is via "platform invoke" or P/Invoke for short. This support in .NET Core is available across Linux and Windows platforms. Another, Windows-only way of doing native interoperability is known as "COM interop" which is used to work with [COM components](https://msdn.microsoft.com/library/bwa2bx93.aspx) in managed code. It is built on top of P/Invoke infrastructure, but it works in subtly different ways.
 
 Most of Mono's (and thus Xamarin's) interoperability support for Java and Objective-C are built similarly, that is, they use the same principles.
 
@@ -172,7 +172,7 @@ Read more about it in the [Native interoperability](native-interop.md) document.
 
 The CLR enables the ability to access native memory and do pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms and system interoperability. Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm. Unsafe code may not execute the same way in different environments, and also loses the benefits of a garbage collector and type safety. It's recommended to confine and centralize unsafe code as much as possible, and test that code thoroughly.
 
-The `ToString()` method from the [StringBuilder class](https://github.com/dotnet/coreclr/blob/master/src/mscorlib/src/System/Text/StringBuilder.cs#L327). illustrates how using `unsafe` code can efficiently implement an algorithm by moving around chunks of memory directly:
+The `ToString()` method from the [StringBuilder class](https://github.com/dotnet/coreclr/blob/master/src/mscorlib/src/System/Text/StringBuilder.cs#L327) illustrates how using `unsafe` code can efficiently implement an algorithm by moving around chunks of memory directly:
 
 ```cs
 public override String ToString() {

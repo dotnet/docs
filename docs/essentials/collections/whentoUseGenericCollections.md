@@ -40,6 +40,6 @@ The [List<T>](https://dotnet.github.io/api/System.Collections.Generic.List%601.h
 
 ## See Also
 
-[Collections and Data Structures](Collections%20and%20Data%20Structures.md) 
+[Collections and Data Structures]() 
 
-[Commonly Used Collection Types](collections/commonlyUsedCollectionTypes.md)
+[Commonly Used Collection Types](commonlyUsedCollectionTypes.md)

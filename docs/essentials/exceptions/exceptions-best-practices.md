@@ -84,7 +84,7 @@ The following list contains guidelines for creating your own exceptions and when
 
 - Throw an [InvalidOperationException](http://dotnet.github.io/api/System.InvalidOperationException.html) exception if a property set or method call is not appropriate given the object's current state.
 
-- Throw an [ArgumentException](http://dotnet.github.io/api/System.ArgumentException.html) exception or a class derived from [ArgumentException]http://dotnet.github.io/api/System.ArgumentException.html) if invalid parameters are passed.
+- Throw an [ArgumentException](http://dotnet.github.io/api/System.ArgumentException.html) exception or a class derived from [ArgumentException](http://dotnet.github.io/api/System.ArgumentException.html) if invalid parameters are passed.
 
 - For most apps, derive custom exceptions from the [Exception](http://dotnet.github.io/api/System.Exception.html) class.
 

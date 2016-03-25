@@ -32,7 +32,7 @@ In addition, many collection classes contain the following features:
 
 *   **Synchronization for access from multiple threads** ([System.Collections](http://dotnet.github.io/api/System.Collections) classes only).
 
-    Non-generic collection types in the [System.Collections](http://dotnet.github.io/api/System.Collections) namespace provide some thread safety with synchronization; typically exposed through the **SyncRoot** and **IsSynchronized** members. These collections are not thread-safe by default. If you require scalable and efficient multi-threaded access to a collection, use one of the classes in the [System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html) namespace or consider using an immutable collection. For more information, see [Thread-Safe Collections](collections/thread-safeCollections.md).    
+    Non-generic collection types in the [System.Collections](http://dotnet.github.io/api/System.Collections) namespace provide some thread safety with synchronization; typically exposed through the **SyncRoot** and **IsSynchronized** members. These collections are not thread-safe by default. If you require scalable and efficient multi-threaded access to a collection, use one of the classes in the [System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html) namespace or consider using an immutable collection. For more information, see [Thread-Safe Collections](thread-safeCollections.md).    
     
 ## Choosing a collection 
 
@@ -53,13 +53,13 @@ A set for mathematical functions | [System.Collections.Generic.HashSet(Of T)](
 
 Title | Description
 ----- | -----------
-[Selecting a Collection Class](collections/selectingaCollectionClass.md) | Describes the different collections and helps you select one for your scenario.
-[Commonly Used Collection Types](collections/commonlyUsedCollectionTypes.md) | Describes commonly used generic and nongeneric collection types such as [System.Array](http://dotnet.github.io/api/System.Array.html), [System.Collections.Generic.List(Of T)](http://dotnet.github.io/api/System.Collections.Generic.List%601.html), and [System.Collections.Generic.Dictionary(Of TKey, TValue)](http://dotnet.github.io/api/System.Collections.Generic.Dictionary%602.html). 
-[When to Use Generic Collections](collections/whentoUseGenericCollections.md) | Discusses the use of generic collection types.
-[Comparisons and Sorts Within Collections](collections/comparisonsandSortsWithinCollections.md) | Discusses the use of equality comparisons and sorting comparisons in collections.
-[Sorted Collection Types](collections/sortedCollectionTypes.md) | Describes sorted collections performance and characteristics.
-[Hashtable and Dictionary Collection Types](collections/hashtableandDictionaryCollectionTypes.md) | Describes the features of generic and non-generic hash-based dictionary types.
-[Thread-Safe Collections](collections/thread-safeCollections.md) | Describes collection types such as [System.Collections.Concurrent.BlockingCollection(Of T)](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) and [System.Collections.Concurrent.ConcurrentBag(Of T)](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentBag%601.html) that support safe and efficient concurrent access from multiple threads.
+[Selecting a Collection Class](selectingaCollectionClass.md) | Describes the different collections and helps you select one for your scenario.
+[Commonly Used Collection Types](commonlyUsedCollectionTypes.md) | Describes commonly used generic and nongeneric collection types such as [System.Array](http://dotnet.github.io/api/System.Array.html), [System.Collections.Generic.List(Of T)](http://dotnet.github.io/api/System.Collections.Generic.List%601.html), and [System.Collections.Generic.Dictionary(Of TKey, TValue)](http://dotnet.github.io/api/System.Collections.Generic.Dictionary%602.html). 
+[When to Use Generic Collections](whentoUseGenericCollections.md) | Discusses the use of generic collection types.
+[Comparisons and Sorts Within Collections](comparisonsandSortsWithinCollections.md) | Discusses the use of equality comparisons and sorting comparisons in collections.
+[Sorted Collection Types](sortedCollectionTypes.md) | Describes sorted collections performance and characteristics.
+[Hashtable and Dictionary Collection Types](hashtableandDictionaryCollectionTypes.md) | Describes the features of generic and non-generic hash-based dictionary types.
+[Thread-Safe Collections](thread-safeCollections.md) | Describes collection types such as [System.Collections.Concurrent.BlockingCollection(Of T)](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) and [System.Collections.Concurrent.ConcurrentBag(Of T)](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentBag%601.html) that support safe and efficient concurrent access from multiple threads.
 
 ## Reference
 

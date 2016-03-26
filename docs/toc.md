@@ -58,7 +58,7 @@
 ### [🔧 Overview](essentials/overview.md)
 ### [🔧 Introduction to metadata in the .NET Platform](essentials/metadata.md)
 ### [🔧 Automatic memory management and garbage collection](essentials/gc.md)
-### [Collections and Data Structures](essentials/Collections and Data Structures.md)
+### [Collections and Data Structures]()
 #### [🔧 Selecting a Collection Class](essentials/collections/selectingaCollectionClass.md)
 #### [🔧 Commonly Used Collection Types](essentials/collections/commonlyUsedCollectionTypes.md)
 #### [🔧 When to Use Generic Collections](essentials/collections/whentoUseGenericCollections.md)

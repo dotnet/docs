@@ -341,7 +341,7 @@ the machine parameters when you start, you only need to
 supply any changes. The changes here will be to include
 our application.
 
-The next two lines load SqlLite onto the machine:
+The next two lines load SQLite onto the machine:
 
 ```
 RUN printf "deb http://ftp.us.debian.org/debian jessie main\n" >> /etc/apt/sources.list

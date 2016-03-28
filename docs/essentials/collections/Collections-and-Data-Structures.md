@@ -4,6 +4,8 @@ Similar data can often be handled more efficiently when stored and manipulated a
 
 There are two main types of collections; generic collections and non-generic collections. Generic collections are type-safe at compile time. Because of this, generic collections typically offer better performance. Generic collections accept a type parameter when they are constructed and do not require that you cast to and from the [Object](http://dotnet.github.io/api/System.Object.html) type when you add or remove items from the collection. Non-generic collections store items as [Object](http://dotnet.github.io/api/System.Object.html) and require casting. You may see non-generic collections in older code.
 
+The collections in the [System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html) namespace provide efficient thread-safe operations for accessing collection items from multiple threads.
+
 ## Common collection features
 
 All collections provide methods for adding, removing or finding items in the collection. In addition, all collections that directly or indirectly implement the[ICollection](http://dotnet.github.io/api/System.Collections.ICollection.html) interface or the [ICollection(Of T)](http://dotnet.github.io/api/System.Collections.Generic.ICollection%601.html) interface share these features: 

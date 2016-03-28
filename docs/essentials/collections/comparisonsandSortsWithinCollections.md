@@ -6,11 +6,11 @@ Collections typically utilize an equality comparer and/or an ordering comparer. 
 
 Methods such as **Contains**, **IndexOf**, **LastIndexOf**, and **Remove** use an equality comparer for the collection elements. If the collection is generic, items are compared for equality according to the following guidelines:
 
-*   If type T implements the [IEquatable<T>](https://dotnet.github.io/api/System.IEquatable%601.html) generic interface, then the equality comparer is the **Equals** method of that interface.
+*   If type T implements the [IEquatable&lt;T&gt;](https://dotnet.github.io/api/System.IEquatable%601.html) generic interface, then the equality comparer is the **Equals** method of that interface.
 
-*   If type T does not implement **IEquatable<T>**, **Object.Equals** is used.
+*   If type T does not implement **IEquatable&lt;T&gt;**, **Object.Equals** is used.
 
-In addition, some constructor overloads for dictionary collections accept an [IEqualityComparer<T>](https://dotnet.github.io/api/System.Collections.Generic.IEqualityComparer%601.html) implementation, which is used to compare keys for equality.
+In addition, some constructor overloads for dictionary collections accept an [IEqualityComparer&lt;T&gt;](https://dotnet.github.io/api/System.Collections.Generic.IEqualityComparer%601.html) implementation, which is used to compare keys for equality.
 
 ## Determining sort order
 
@@ -18,21 +18,21 @@ Methods such as **BinarySearch** and **Sort** use an ordering comparer for the c
 
 The default comparer relies on at least one of the objects being compared to implement the **IComparable** interface. It is a good practice to implement **IComparable** on all classes are used as values in a list collection or as keys in a dictionary collection. For a generic collection, equality comparison is determined according to the following:
 
-*   If type T implements the [System.IComparable<T>](https://dotnet.github.io/api/System.IComparable%601.html) generic interface, then the default comparer is the **CompareTo(T)** method of that interface.
+*   If type T implements the [System.IComparable&lt;T&gt;](https://dotnet.github.io/api/System.IComparable%601.html) generic interface, then the default comparer is the **CompareTo(T)** method of that interface.
 
 *   If type T implements the non-generic [System.IComparable](https://dotnet.github.io/api/System.IComparable.html) interface, then the default comparer is the **CompareTo**(Object) method of that interface.
 
 *   If type T doesn’t implement either interface, then there is no default comparer, and a comparer or comparison delegate must be provided explicitly.
 
-To provide explicit comparisons, some methods accept an **IComparer** implementation as a parameter. For example, the **List<T>.Sort** method accepts an [System.Collections.Generic.IComparer<T>](https://dotnet.github.io/api/System.Collections.Generic.IComparer%601.html) implementation. 
+To provide explicit comparisons, some methods accept an **IComparer** implementation as a parameter. For example, the **List&lt;T&gt;.Sort** method accepts an [System.Collections.Generic.IComparer&lt;T&gt;](https://dotnet.github.io/api/System.Collections.Generic.IComparer%601.html) implementation. 
 
 ## Equality and sort example
 
-The following code demonstrates an implementation of [IEquatable<T>](https://dotnet.github.io/api/System.IEquatable%601.html) and [IComparable<T>](https://dotnet.github.io/api/System.IComparable%601.html) on a simple business object. In addition, when the object is stored in a list and sorted, you will see that calling the **Sort()** method results in the use of the default comparer for the 'Part' type, and the **Sort(Comparison<T>)** method implemented by using an anonymous method.
+The following code demonstrates an implementation of [IEquatable&lt;T&gt;](https://dotnet.github.io/api/System.IEquatable%601.html) and [IComparable&lt;T&gt;](https://dotnet.github.io/api/System.IComparable%601.html) on a simple business object. In addition, when the object is stored in a list and sorted, you will see that calling the **Sort()** method results in the use of the default comparer for the 'Part' type, and the **Sort(Comparison&lt;T&gt;)** method implemented by using an anonymous method.
 
 C#
 
-'''
+```csharp
 using System;
 using System.Collections.Generic;
 // Simple business object. A PartId is used to identify the type of part 
@@ -167,16 +167,16 @@ public class Example
 
     }
 }
-'''
+```
 
 ## See Also
 
 [IComparer](https://dotnet.github.io/api/System.Collections.IComparer.html)
 
-[IEquatable<T>](https://dotnet.github.io/api/System.IEquatable%601.html)
+[IEquatable&lt;T&gt;](https://dotnet.github.io/api/System.IEquatable%601.html)
 
-[IComparer<T>](https://dotnet.github.io/api/System.Collections.Generic.IComparer%601.html)
+[IComparer&lt;T&gt;](https://dotnet.github.io/api/System.Collections.Generic.IComparer%601.html)
 
 [IComparable](https://dotnet.github.io/api/System.IComparable.html)
 
-[IComparable<T>](https://dotnet.github.io/api/System.IComparable%601.html)
+[IComparable&lt;T&gt;](https://dotnet.github.io/api/System.IComparable%601.html)

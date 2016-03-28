@@ -5,4 +5,4 @@ the basics of the Task based asynchronous programming model.
 * [REST Client](getting-started-with-csharp/console-webapiclient.md). This tutorial
 demonstrates web communications, JSON serialization, and Object Oriented
 features in the C# language.
-
+* [Working with LINQ](getting-started-with-csharp/working-with-linq.md) This tutorial demonstrates many of the features of LINQ and the language elements that support it.

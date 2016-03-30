@@ -23,6 +23,8 @@ This article assumes you are using Visual Studio 2015 on Windows.
 
 This article also assumes that you have understood the [overview of the porting process](overview.md) and that you have resolved any issues with [3rd party dependencies](third-party-deps.md).  If you haven't done this already, it's highly recommended that you do that before moving forward.
 
+You may also wish to use [Reverse Package Search](https://packagesearch.azurewebsites.net), a service that will find packages where a given type is defined in.
+
 ## Technologies Discontinued for .NET Core
 
 There are some technologies available for .NET Framework that you may use, but are outright unavailable for .NET Core.  These are technologies that we no longer promote for .NET Framework applications, and thus did not bring to .NET Core.

@@ -20,7 +20,7 @@ The following table lists some of the differences between the two sorted list cl
  --------------------------------------------------------------------------------- | ------------------------------  
  The properties that return keys and values are indexed, allowing efficient indexed retrieval. | No indexed retrieval.  
  Retrieval is O(log n). | Retrieval is O(log n).  
- nsertion and removal are generally O(n); however, insertion is O(1) for data that are already in sort order, so that each element is added to the end of the list. (This assumes that a resize is not required.) | Insertion and removal are O(log n).  
+ Insertion and removal are generally O(n); however, insertion is O(1) for data that are already in sort order, so that each element is added to the end of the list. (This assumes that a resize is not required.) | Insertion and removal are O(log n).  
  Uses less memory than a **SortedDictionary&lt;TKey, TValue&gt;**. | Uses more memory than the **SortedList** nongeneric class and the **SortedList&lt;TKey, TValue&gt;** generic class.  
   
  For sorted lists or dictionaries that must be accessible concurrently from multiple threads, you can add sorting logic to a class that derives from [ConcurrentDictionary&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentDictionary%602.html).  
@@ -31,7 +31,7 @@ The following table lists some of the differences between the two sorted list cl
    
  The [SortedSet&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.SortedSet%601.html) class provides a self-balancing tree that maintains data in sorted order after insertions, deletions, and searches. This class and the [HashSet&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.HashSet%601.html) class implement the [ISet&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.ISet%601.html) interface.  
    
- ## See Also  
+## See Also  
   
 [System.Collections.IDictionary](http://dotnet.github.io/api/System.Collections.IDictionary.html)  
    

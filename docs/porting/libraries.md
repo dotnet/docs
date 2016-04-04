@@ -3,7 +3,7 @@
 
 By [Phillip Carter](https://github.com/cartermp)
 
-Libraries are some of the most natural projects to port from .NET Framework to .NET Core.  This article covers all of the steps you'll need to take to get to the point where you can focus on your code.  It covers the following:
+Libraries are some of the most natural projects to port from .NET Framework to .NET Core.  By not necessarily being tied to a particular framework or application model, libraries can often be simpler to port to .NET Core.  This article covers all of the steps you'll need to take to get to the point where you can focus on your code.  It covers the following:
 
 - Learning about important discontinued technologies for .NET Core
 - Picking the correct .NET Platform Standard for your library
@@ -19,33 +19,31 @@ It's quite a lot of content, but porting is a task that will take some time, esp
 
 ## Prerequisites
 
-This article assumes you are using Visual Studio 2015 on Windows.
+This article assumes you are using Visual Studio 2015 or later on Windows.  The bits required for building .NET Core assets are not available on previous versions of Visual Studio.
 
-This article also assumes that you have understood the [overview of the porting process](overview.md) and that you have resolved any issues with [3rd party dependencies](third-party-deps.md).  If you haven't done this already, it's highly recommended that you do that before moving forward.
-
-You may also wish to use [Reverse Package Search](https://packagesearch.azurewebsites.net), a service that will find packages where a given type is defined in.
+This article also assumes that you have understood the [overview of the porting process](overview.md) and that you have resolved any issues with [3rd party dependencies](third-party-deps.md).
 
 ## Technologies Discontinued for .NET Core
 
-There are some technologies available for .NET Framework that you may use, but are outright unavailable for .NET Core.  These are technologies that we no longer promote for .NET Framework applications, and thus did not bring to .NET Core.
+There are some technologies available for .NET Framework that you may be using, but are outright unavailable for .NET Core.  These are technologies that we no longer promote for .NET Framework applications, and thus did not bring to .NET Core.
 
 ### App Domains
-**Why was it discontinued?** AppDomains require runtime support and are generally quite expensive. While still implemented by CoreCLR, it’s not available in .NET Native and we don’t plan on adding this capability there.
+**Why was it discontinued?** AppDomains require runtime support and are generally quite expensive. While still implemented by CoreCLR, it’s not available in .NET Native and we don’t plan on adding this capability there.  We do not consider AppDomains a good solution for the traditional use cases.
 
 **What should you use instead?** AppDomains were used for different purposes. For code isolation, we recommend processes and/or containers. For dynamic loading of assemblies, we recommend the new [AssemblyLoadContext](http://dotnet.github.io/api/System.Runtime.Loader.AssemblyLoadContext.html) class.
 
 ### Remoting
 **Why was it discontinued?** The idea of .NET remoting — which is transparent remote procedure calls — has been identified as a problematic architecture. Outside of that realm, it’s also used for cross AppDomain communication. On top of that, remoting requires runtime support and is quite heavyweight.
 
-**What should you use instead?** For communication across processes, inter-process communication (IPC) should be used, such as pipes or memory mapped files. Across machines, you should use a network based solution, preferably a low-overhead plain text protocol such as HTTP.
+**What should you use instead?** For communication across processes, inter-process communication (IPC) should be used, such as [Pipes](http://dotnet.github.io/api/System.IO.Pipes.html) or [Memory Mapped Files](http://dotnet.github.io/api/System.IO.MemoryMappedFiles.html). Across machines, you should use a network based solution, preferably a low-overhead plain text protocol such as HTTP.  Remote proxy generation via [Castle.Core](https://github.com/castleproject/Core) is also an option.
 
 ### Binary serialization
-**Why was it discontinued?** After a decade of servicing, we’ve learned that serialization is incredibly complicated and a huge compatibility burden for the types supporting it. Thus, we made the decision that serialization should be a protocol implemented on top of the available public APIs. However, binary serialization requires intimate knowledge of the types because it allows to serialize object graphs, which includes private state.
+**Why was it discontinued?** Binary serialization requires intimate knowledge of the types because it allows to serialize object graphs, which includes private state.  After a decade of servicing, we’ve learned that binary serialization is a very costly API to maintain and a considerable burden for the types supporting it, all for questionable benefits. Thus, we made the decision that serialization should be a protocol implemented on top of the available public APIs.
 
-**What should you use instead?** Choose the serialization technology that fits your goals for formatting and footprint. Popular choices include [data contract serialization](http://dotnet.github.io/api/System.Runtime.Serialization.DataContractSerializer.html), [XML serialization](http://dotnet.github.io/api/System.Xml.Serialization.XmlSerializer.html), [JSON.NET](http://www.newtonsoft.com/json), and [protobuf-net](https://github.com/mgravell/protobuf-net).
+**What should you use instead?** Choose the serialization technology that fits your goals for formatting and footprint. Popular choices include [JSON.NET](http://www.newtonsoft.com/json), [data contract serialization](http://dotnet.github.io/api/System.Runtime.Serialization.DataContractSerializer.html), [XML serialization](http://dotnet.github.io/api/System.Xml.Serialization.XmlSerializer.html), and [protobuf-net](https://github.com/mgravell/protobuf-net).  Refer to the linked resources to learn about their benefits and choose what is appropriate for your needs.
 
 ### Sandboxing
-**Why was it discontinued?** Sandboxing, i.e. relying on the runtime or the framework to constrain which resources a managed application can access, is considered a non-goal for .NET Core. Sandboxing applications and components is also really hard to get right, which is we recommend you not to rely on it. It also makes the implementation more complicated and often negatively affects performance of applications that don’t use sandboxing. Hence, we do not offer sandboxing features in .NET Core.
+**Why was it discontinued?** Sandboxing, i.e. relying on the runtime or the framework to constrain which resources a managed application can access, is considered a non-goal for .NET Core. Sandboxing applications and components can give a false sense of security, which is why we recommend that you do not rely on it. It also makes the implementation more complicated and often negatively affects performance of applications that don’t use sandboxing.
 
 **What should you use instead?** Use operating system provided security boundaries, such as user accounts for running processes with the least set of privileges.
 
@@ -55,7 +53,7 @@ To learn about all of the discontinued tech, read [Unsupported Technologies](htt
 
 The first thing to understand about porting a library to .NET Core is that you must target a version of the [.NET Platform Standard](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md).  In fact, it's accurate to say that targeting .NET Core means targeting a version of the .NET Platform Standard.
 
-Long story short, this means that you'll have to make a tradeoff between APIs you can use and platforms you can support, and pick the version of the .NET Platform standard that best suits the tradeoff you wish to make.
+This means that you'll have to make a tradeoff between APIs you can use and platforms you can support, and pick the version of the .NET Platform standard that best suits the tradeoff you wish to make.
 
 As of right now, there are 6 different versions to consider: .NET Platform Standard 1.0 through 1.5.  If you pick a higher version, you get access to more APIs at the cost of running on less targets.  If you pick a lower version, your code can run on more targets but at the cost of less APIs available to you.
 
@@ -71,7 +69,7 @@ Read more in [The .NET Platform Standard](https://github.com/dotnet/corefx/blob/
 
 ### The project file: `project.json`
 
-.NET Core projects are defined by a directory containing a `project.json` file.  This file is where all aspects of the project are declared, including package dependencies, compiler configuration, runtime configuration, and more.
+.NET Core projects are defined by a directory containing a `project.json` file.  This file is where aspects of the project are declared, such as package dependencies, compiler configuration, runtime configuration, and more.
 
 The `dotnet restore` command reads this project file, restores all dependencies of the project, and generates a `project.lock.json` file.  This file contains all the necessary information the build system needs to build the project.
 
@@ -79,7 +77,7 @@ To learn more about the `project.json` file, read the .NET Core project system d
 
 ### The solution file: `global.json`
 
-The `global.json` file is an optional file to include in a solution which contains multiple projects.  It typically resides in the root directory of a set of projects.  It can be used to inform the build system of different subdirectories which can contain projects.  This is for larger systems composed of many projects.
+The `global.json` file is an optional file to include in a solution which contains multiple projects.  It typically resides in the root directory of a set of projects.  It can be used to inform the build system of different subdirectories which can contain projects.  This is for larger systems composed of several projects.
 
 To learn more about the `global.json` file, check out the .NET Core project system docs.
 

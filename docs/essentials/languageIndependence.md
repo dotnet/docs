@@ -241,7 +241,6 @@ The intrinsic types listed in the following table are not CLS-Compliant.
 Non-compliant type | Description | CLS-compliant alternative
 ------------------ | ----------- | -------------------------
 [SByte](http://dotnet.github.io/api/System.SByte.html) | 8-bit signed integer data type | [Int16](http://dotnet.github.io/api/System.Int16.html)
-**TypedReference** | Pointer to an object and its runtime type | None
 [UInt16](http://dotnet.github.io/api/System.UInt16.html) | 16-bit unsigned integer | [Int32](http://dotnet.github.io/api/System.Int32.html)
 [UInt32](http://dotnet.github.io/api/System.UInt32.html) | 32-bit unsigned integer | [Int64](http://dotnet.github.io/api/System.Int64.html)
 [UInt64](http://dotnet.github.io/api/System.UInt64.html) | 64-bit unsigned integer | [Int64](http://dotnet.github.io/api/System.Int64.html) (may overflow), [BigInteger](http://dotnet.github.io/api/System.Numerics.BigInteger.html), or [Double](http://dotnet.github.io/api/System.Double.html)
@@ -1205,7 +1204,7 @@ Typically, compilers enforce this rule independently of CLS compliance, as the f
 
 Properties in CLS-compliant types must follow these rules:
 
-* A property must have a setter, a getter, or both. In an assembly, these are implemented as special methods, which means that they will appear as separate methods (the getter is named **get**_*propertyname* and the setter is **set**_*propertyname*) marked as `SpecialName` in the assembly's metadata. The C# compiler enforces this rule automatically without the need to apply the [CLSCompliantAttribute](http://dotnet.github.io/api/System.CLSCompliantAttribute.html) attribute. 
+* A property must have a setter, a getter, or both. In an assembly, these are implemented as special methods, which means that they will appear as separate methods (the getter is named **get**\_*propertyname* and the setter is **set*\_*propertyname*) marked as `SpecialName` in the assembly's metadata. The C# compiler enforces this rule automatically without the need to apply the [CLSCompliantAttribute](http://dotnet.github.io/api/System.CLSCompliantAttribute.html) attribute. 
 
 * A property's type is the return type of the property getter and the last argument of the setter. These types must be CLS compliant, and arguments cannot be assigned to the property by reference (that is, they cannot be managed pointers). 
 

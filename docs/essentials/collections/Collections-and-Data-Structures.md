@@ -49,7 +49,7 @@ Use data Last-In-First-Out (LIFO) | [System.Collections.Generic.Stack&lt;T&gt;](
 Access items sequentially | [System.Collections.Generic.LinkedList&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.LinkedList%601.html) | No recommendation
 Receive notifications when items are removed or added to the collection. (implements [INotifyPropertyChanged](http://dotnet.github.io/api/System.ComponentModel.INotifyPropertyChanged.html) and [System.Collections.Specialized.INotifyCollectionChanged](http://dotnet.github.io/api/System.Collections.Specialized.INotifyCollectionChanged.html)) | [System.Collections.ObjectModel.ObservableCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.ObjectModel.ObservableCollection%601.html) | No recommendation
 Use a sorted collection | [System.Collections.Generic.SortedList&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Generic.SortedList%602.html) | [System.Collections.SortedList](http://dotnet.github.io/api/System.Collections.SortedList.html)
-Use a set for mathematical functions | [System.Collections.Generic.HashSet&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.HashSet%601.html), [System.Collections.Generic.SortedSet&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.SortedSet%601.html) | No recommendation
+Manage efficient storage and access of unique elements | [System.Collections.Generic.HashSet&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.HashSet%601.html), [System.Collections.Generic.SortedSet&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.SortedSet%601.html) | No recommendation
 
 ## Related Topics
 

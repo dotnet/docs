@@ -1,3 +1,5 @@
+# Comparisons and Sorts Within Collections
+
 The [System.Collections](https://dotnet.github.io/api/System.Collections.html) classes perform comparisons in almost all the processes involved in managing collections, whether searching for the element to remove or returning the value of a key-and-value pair.
 
 Collections typically utilize an equality comparer and/or an ordering comparer. Two constructs are used for comparisons. 

@@ -226,7 +226,7 @@ This could get to be a lengthy operation in a directory with many
 sub-directories. Let's add an event that gets raised when each new
 directory search begins. This enables subscribers to track progress,
 and update the user as to progress. All the samples you've created so
-far are public. Let's make this one an internel event. That means you
+far are public. Let's make this one an internal event. That means you
 can also make the types used for the arguments internal as well.
 
 You'll start by creating the new EventArgs derived class for
@@ -239,7 +239,7 @@ internal class SearchDirectoryArgs : EventArgs
     internal int TotalDirs { get; }
     internal int CompletedDirs { get; }
 
-    internal SearchDirectoryArgs(string dir)
+    internal SearchDirectoryArgs(string dir, int totalDirs, int completedDirs)
     {
         CurrentSearchDirectory = dir;
         TotalDirs = totalDirs;

@@ -73,13 +73,13 @@ Read more in [The .NET Platform Standard](https://github.com/dotnet/corefx/blob/
 
 The `dotnet restore` command reads this project file, restores all dependencies of the project, and generates a `project.lock.json` file.  This file contains all the necessary information the build system needs to build the project.
 
-To learn more about the `project.json` file, read the .NET Core project system docs. **NOTE: need link here to the official docs we're generating**.
+To learn more about the `project.json` file, read the [.NET Core project system docs]((../project-model/overview.md).
 
 ### The solution file: `global.json`
 
 The `global.json` file is an optional file to include in a solution which contains multiple projects.  It typically resides in the root directory of a set of projects.  It can be used to inform the build system of different subdirectories which can contain projects.  This is for larger systems composed of several projects.
 
-To learn more about the `global.json` file, check out the .NET Core project system docs.
+To learn more about the `global.json` file, check out the [.NET Core project system docs](../project-model/global-json-reference.md).
 
 ## How to Multitarget with .NET Core
 
@@ -232,9 +232,9 @@ This approach may be best for larger and more complex projects, where restructur
    
    b. Would a refactor help here?
    
-4. Is it reasonable to write some code a .NET Framework API was doing yourself?
+4. Is it reasonable to write your own implementation of an unavailable .NET Framework API?
 
-   a. You could consider copying, modifying, and using code from the [.NET Framework Reference Source](https://github.com/Microsoft/referencesource).  It's licensed under the [MIT License](https://github.com/Microsoft/referencesource/blob/master/LICENSE.txt) so you have significant freedom in doing this.  Just make sure to properly attribute Microsoft in your code!
+   You could consider instead copying, modifying, and using code from the [.NET Framework Reference Source](https://github.com/Microsoft/referencesource).  It's licensed under the [MIT License](https://github.com/Microsoft/referencesource/blob/master/LICENSE.txt) so you have significant freedom in doing this.  Just make sure to properly attribute Microsoft in your code!
    
 5. Repeat this process as needed for different projects.
 6. Once you have a plan, execute that plan.
@@ -249,23 +249,24 @@ It's likely that you'll mix the above approaches on a per-project basis.  You sh
 
 ## Picking your project system in Visual Studio: xproj or traditional projects
 
-In addition to a new project model, .NET Core introduces a new project system, xproj, in Visual Studio.  You'll have to pick the correct project system based on your needs.
+In addition to a new project model, .NET Core introduces a new project system, xproj, in Visual Studio.  When porting your code in Visual Studio, you'll have to pick the correct project system based on your needs.
 
 ### When to pick xproj
 
-The new Xproj project system utilizes the capabilities of the `project.json`-based project model to offer two major features over existing project types: seamless multitargeting by building multiple assemblies and the ability to directly generate a NuGet package on build.
+The new Xproj project system in Visual Studio utilizes the capabilities of the `project.json`-based project model to offer two major features over existing project types: seamless multitargeting by building multiple assemblies and the ability to directly generate a NuGet package on build.
 
 However, it comes at the cost of lacking certain features you may use, such as:
 
 - Support for F# or VB
 - Generating satellite assemblies with localized resource strings
-- Referencing a `.dll` file on the filesystem
+- Directly referencing a `.dll` file on the filesystem
 
 If your project needs are relatively minimal and you can take advantage of the new features of xproj, you should pick it as your project system.  This can be done in Visual Studio as such:
 
-1. File | New Project.
-2. Select ".NET Core" under Visual C#.
-3. Selecting the "Class Library (.NET Core)" template. 
+1. Ensure you are using Visual Studio 2015 or later.
+2. File | New Project.
+3. Select ".NET Core" under Visual C#.
+4. Selecting the "Class Library (.NET Core)" template. 
 
 ### When to pick a traditional project system
 
@@ -293,17 +294,11 @@ Finally, porting the code itself!  Ultimately, the actual porting effort will de
 A good way to port your code is to begin with the "base" of your library.  This may be data models or some other foundational classes and methods that everything else uses directly or indirectly.
 
 1. Copy over the "base" of your library into the new .NET Core project and select the version of the .NET Platform Standard you wish to support.
-2. Make any changes needed to get the code to compile.
-
-   a. Much of this may just require adding NuGet package dependencies to your `project.json`.
-   
-   b. It may helpful to comment out old code as you slowly get things compiling.
-
+2. Make any changes needed to get the code to compile.  Much of this may just require adding NuGet package dependencies to your `project.json`.
 3. Run tests and make any needed adjustments.
-   
 4. Pick the next layer of code to port over and repeat steps 2 and 3!
 
-If you methodically move "out" from the "base" of your library, testing each layer as needed, you break down the porting job more systematically, thus localizing the problems to one layer of code at a time.
+If you methodically move outward from the base of your library, testing each layer as needed, you break down the porting job more systematically, thus localizing the problems to one layer of code at a time.
 
 ## Next Steps
 

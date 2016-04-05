@@ -25,15 +25,15 @@ to use which.
 
 The most important consideration in determining which language feature
 to use is whether or not there must be an attached subscriber. If your
-code can't complete its tasks without an attached subscriber, you should
-use a design based on delegates. If the absence of any subscribers
-does not affect your code's ability to complete, you should use a
+code must call the code supplied by the subscriber, you should
+use a design based on delegates. If your code can complete all its
+work without calling any subscribers, you should use a
 design based on events. 
 
 Consider the examples built during this section. The code you built
-using `List.Sort()` could not sort the elements without a comparer
-function. LINQ queries cannot know what elements to return without
-the delegates that are required as arguments. Both used a design built
+using `List.Sort()` must be given a comparer function in order to
+properly sort the elements. LINQ queries must be supplied with delegates
+in order to determine what elements to return. Both used a design built
 with delegates.
 
 Consider the `OnProgress` event handler. It reports progress on a task.
@@ -50,7 +50,7 @@ delegate method. As you've seen, the delegates used for events all
 have a void return type. You've also seen that there are idioms to
 create event handlers that do pass information back to event sources
 through modifying properties of the event argument object. While these
-idioms do work, they are not as natural as return a value from a
+idioms do work, they are not as natural as returning a value from a
 method.
 
 Notice that these two heuristics may often both be present: If your

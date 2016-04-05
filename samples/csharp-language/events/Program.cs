@@ -47,7 +47,7 @@ namespace EventSampleCode
         }
     }
 
-    internal class SearchDirectoryArgs : EventArgs
+    internal struct SearchDirectoryArgs 
     {
         internal string CurrentSearchDirectory { get; }
         internal int TotalDirs { get; }

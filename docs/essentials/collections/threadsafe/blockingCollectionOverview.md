@@ -4,7 +4,7 @@
 
 *   An implementation of the Producer-Consumer pattern.
 
-*   Concurrent adding and taking of items from multiple threads.
+*   Thread-safe addition and removal of items from a collection.
 
 *   Optional maximum capacity.
 

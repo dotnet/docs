@@ -24,7 +24,9 @@ class PipeLineDemo
       Task.Run(() =>
           {
               if(Console.ReadKey(true).KeyChar == 'c')
+              {
                   cts.Cancel();
+              }  
           });
 
       //Generate some source data.
@@ -81,11 +83,13 @@ class PipeLineDemo
                        () => filter3.Run()
                    );
       }
-      catch (AggregateException ae) {
+      catch (AggregateException ae) 
+      {
           foreach(var ex in ae.InnerExceptions)
               Console.WriteLine(ex.Message + ex.StackTrace);
       }
-      finally {
+      finally 
+      {
          cts.Dispose();
       }
       // You will need to press twice if you ran to the end:
@@ -108,16 +112,17 @@ class PipeLineDemo
           Func<TInput, TOutput> processor,
           CancellationToken token,
           string name)
-      {
-          m_input = input;
-          m_output = new BlockingCollection<TOutput>[5];
-          for (int i = 0; i < m_output.Length; i++)
-              m_output[i] = new BlockingCollection<TOutput>(500);
-
-          m_processor = processor;
-          m_token = token;
-          Name = name;
-      }
+          {
+              m_input = input;
+              m_output = new BlockingCollection<TOutput>[5];
+              for (int i = 0; i < m_output.Length; i++)
+              {
+                    m_output[i] = new BlockingCollection<TOutput>(500);
+              }      
+              m_processor = processor;
+              m_token = token;
+              Name = name;
+            }
 
       // Use this constructor for the final endpoint, which does
       // something like write to file or screen, instead of
@@ -127,12 +132,12 @@ class PipeLineDemo
           Action<TInput> renderer,
           CancellationToken token,
           string name)
-      {
-          m_input = input;
-          m_outputProcessor = renderer;
-          m_token = token;
-          Name = name;
-      }
+          {
+              m_input = input;
+              m_outputProcessor = renderer;
+              m_token = token;
+              Name = name;
+          }
 
       public void Run()
       {
@@ -156,7 +161,9 @@ class PipeLineDemo
                   }
               }
               else
+              {
                   Console.WriteLine("Unable to retrieve data from previous filter");
+              }
           }
           if (m_output != null)
           {

@@ -642,7 +642,7 @@ For example:
     }
 
 <a name="keyFile"></a>
-### delaySign
+### keyFile
 Type: String
 
 The path for the key file used for signing this assembly.
@@ -651,7 +651,7 @@ For example:
 
     {
         "compilationOptions": {
-            "delaySign": "..\keyfile.snk"
+            "keyFile": "../keyfile.snk"
         }
     }
 
@@ -826,7 +826,7 @@ For example:
     "frameworks": {
       "dnxcore50": {
          "bin": {
-           "assembly" :"c:\otherProject\otherdll.dll"
+           "assembly" :"c:/otherProject/otherdll.dll"
         }
       }
     }

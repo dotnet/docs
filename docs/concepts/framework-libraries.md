@@ -18,7 +18,7 @@ The BCL provides the most foundational types and utility functionality and are t
 *   [System.Single](https://msdn.microsoft.com/library/system.single.aspx) ([float](https://msdn.microsoft.com/library/b1e65aza.aspx)) - A 32-bit floating-point type.
 *   [System.Decimal](https://msdn.microsoft.com/library/system.decimal.aspx) ([decimal](https://msdn.microsoft.com/library/364x0z75.aspx)) - A 128-bit decimal type.
 *   [System.Byte](https://msdn.microsoft.com/library/system.byte.aspx) ([byte](https://msdn.microsoft.com/library/5bdb6693.aspx)) - An unsigned 8-bit integeger that represents a byte of memory.
-*   [System.Boolean](https://msdn.microsoft.com/library/system.boolean.aspx) ([bool](https://msdn.microsoft.comlibrary/c8f5xwh7.aspx)) - A boolean type that represents ‘true’ or ‘false’.
+*   [System.Boolean](https://msdn.microsoft.com/library/system.boolean.aspx) ([bool](https://msdn.microsoft.com/library/c8f5xwh7.aspx)) - A boolean type that represents ‘true’ or ‘false’.
 *   [System.Char](https://msdn.microsoft.com/library/system.char.aspx) ([char](https://msdn.microsoft.com/library/x9h8tsay.aspx)) - A 16-bit numeric type that represents a Unicode character.
 *   [System.String](https://msdn.microsoft.com/library/system.string.aspx) ([string](https://msdn.microsoft.com/library/362314fe.aspx)) - Represents a series of characters. Different than a `char[]`, but enables indexing into each individual `char` in the `string`.
 

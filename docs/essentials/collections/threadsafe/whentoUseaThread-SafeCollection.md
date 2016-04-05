@@ -36,7 +36,7 @@ In general, use a [System.Collections.Concurrent.ConcurrentDictionary&lt;TKey, T
 
 In scenarios that involve frequent updates, you can increase the degree of concurrency in the **ConcurrentDictionary&lt;TKey, TValue&gt;** and then measure to see whether performance increases on computers that have more cores. If you change the concurrency level, avoid global operations as much as possible.
 
-If you are only reading key or values, the [Dictionary&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Generic.Dictionary%602.html) is faster because no synchronization is required if the dictionary is not being modified by any threads.
+If you are only reading key or values, the [System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Generic.Dictionary%602.html) is faster because no synchronization is required if the dictionary is not being modified by any threads.
 
 ## ConcurrentBag
 

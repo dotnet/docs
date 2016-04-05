@@ -45,7 +45,7 @@ class Program
               Console.WriteLine("Take:{0} ", i);
 
               // Simulate a slow consumer. This will cause
-              // collection to fill up fast and thus Adds wil block.
+              // collection to fill up fast and thus Adds will block.
               Thread.SpinWait(100000);
           }
 
@@ -118,7 +118,6 @@ class ProgramWithCancellation
 
     static void NonBlockingConsumer(BlockingCollection<int> bc, CancellationToken ct)
     {
-        // IsCompleted == (IsAddingCompleted && Count == 0)
         while (!bc.IsCompleted)
         {
             int nextItem = 0;
@@ -129,7 +128,9 @@ class ProgramWithCancellation
                     Console.WriteLine(" Take Blocked");
                 }
                 else
+                {
                     Console.WriteLine(" Take:{0}", nextItem);
+                }
             }
 
             catch (OperationCanceledException)

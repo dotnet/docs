@@ -23,15 +23,19 @@ namespace ObjectPoolExample
         public ObjectPool(Func<T> objectGenerator)
         {
             if (objectGenerator == null) throw new ArgumentNullException("objectGenerator");
-            _objects = new ConcurrentBag<T>();
-            _objectGenerator = objectGenerator;
+            {
+                _objects = new ConcurrentBag<T>();
+                _objectGenerator = objectGenerator;
+            }
         }
 
         public T GetObject()
         {
             T item;
             if (_objects.TryTake(out item)) return item;
-            return _objectGenerator();
+            {
+                return _objectGenerator();
+            }
         }
 
         public void PutObject(T item)
@@ -67,13 +71,11 @@ namespace ObjectPoolExample
                     pool.PutObject(mc);
                     if (cts.Token.IsCancellationRequested)
                         loopState.Stop();                 
-
                 });
             Console.WriteLine("Press the Enter key to exit.");
             Console.ReadLine();
             cts.Dispose();
         }
-
     }
 
     // A toy class that requires some resources to create.

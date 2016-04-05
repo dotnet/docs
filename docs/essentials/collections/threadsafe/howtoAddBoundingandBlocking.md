@@ -39,7 +39,9 @@ namespace ProdConsumerCS
             this.priorityCount = priCount;
             _queues = new ConcurrentQueue<KeyValuePair<int, TValue>>[priorityCount];
             for (int i = 0; i < priorityCount; i++)
+            {
                 _queues[i] = new ConcurrentQueue<KeyValuePair<int, TValue>>();
+            }
         }
 
         // IProducerConsumerCollection members
@@ -101,7 +103,9 @@ namespace ProdConsumerCS
             int remaining = destination.Length;
             KeyValuePair<int, TValue>[] temp = this.ToArray();
             for (int i = 0; i < destination.Length && i < temp.Length; i++)
+            {
                 destination[i] = temp[i];
+            }    
         }
 
         public KeyValuePair<int, TValue>[] ToArray()
@@ -140,10 +144,7 @@ namespace ProdConsumerCS
 
         public bool IsSynchronized
         {
-            get
-            {
-                throw new NotSupportedException();
-            }
+            get { throw new NotSupportedException(); }
         }
 
         public object SyncRoot
@@ -161,13 +162,14 @@ namespace ProdConsumerCS
             SimplePriorityQueue<int, int> queue = new SimplePriorityQueue<int, int>(priorityCount);
             var bc = new BlockingCollection<KeyValuePair<int, int>>(queue, 50);
 
-
             CancellationTokenSource cts = new CancellationTokenSource();
 
             Task.Run(() =>
                 {
                     if (Console.ReadKey(true).KeyChar == 'c')
+                    {
                         cts.Cancel();
+                    }
                 });
 
             // Create a Task array so that we can Wait on it
@@ -232,18 +234,22 @@ namespace ProdConsumerCS
                 },
                 cts.Token);
 
-            try {
+            try 
+            {
                 Task.WaitAll(tasks, cts.Token);
             }
-            catch (OperationCanceledException e) {
+            catch (OperationCanceledException e) 
+            {
                 if (e.CancellationToken == cts.Token)
                     Console.WriteLine("Operation was canceled by user. Press any key to exit");
             }
-            catch (AggregateException ae) {
+            catch (AggregateException ae) 
+            {
                 foreach (var v in ae.InnerExceptions)
                     Console.WriteLine(v.Message);
             }
-            finally {
+            finally 
+            {
                 cts.Dispose();
             }
 

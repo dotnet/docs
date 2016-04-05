@@ -7,7 +7,7 @@ By [Bill Wagner](https://github.com/BillWagner)
 The previous article discussed the most common event patterns. .NET
 Core has a more relaxed pattern. In this version, the 
 `EventHandler<TEventArgs>` definition no longer has the constraint that
-`TEventArgs` must be a class derived from System.EventArgs.
+`TEventArgs` must be a class derived from `System.EventArgs`.
 
 This increases flexibility for you, and is backwards compatible. Let's
 start with the flexibility. The class System.EventArgs introduces one
@@ -40,8 +40,6 @@ internal struct SearchDirectoryArgs
     }  
 }  
 ```   
-> Note to reviewers: The code for the sample can be updated once
-> PR #305 is merged
 
 The additional change is to call the default constructor before
 entering the constructor that initializes all the fields. Without
@@ -85,8 +83,10 @@ to implement are below:
 ```cs
 worker.OnStartWorking += async (sender, eventArgs) =>
 {
-    try {
+    try 
+    {
         await DoWorkAsync();
+    }
     catch (Exception e)
     {
         //Some form of logging.
@@ -103,7 +103,7 @@ handler, and not allow any exceptions to be thrown out of the context
 of the async handler. Because it does not return a task, there is no
 task that can report the error by entering the faulted state. Because
 the method is async, the method can't simply throw the exception. (The
-calling method has continued execution ecause it is `async`.) The
+calling method has continued execution Because it is `async`.) The
 actual runtime behavior will be defined differently for different
 environments. It may terminate the thread, it may terminate the program,
 or it may leave the program in an undetermined state. None of those

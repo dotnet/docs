@@ -1,6 +1,6 @@
 # Porting NuGet Packages
 
-This article covers how to get your ported .NET Framework code on NuGet.  Although packaging your code has not fundamentally changed with .NET Core code (compared with .NET Framework code), there are different avenues with which you can package your code.
+This article covers how to get your ported .NET Framework code to NuGet.  Although the packaging format has not changed, your code has not fundamentally changed with .NET Core code (compared with .NET Framework code), there are different avenues with which you can package your code.
 
 ## Prerequisities
 
@@ -31,7 +31,7 @@ Library.CSharp.1.0.0.nupkg Library.CSharp.1.0.0.symbols.nupkg netstandard1.5
 
 Refer to the [NuGet docs](https://docs.nuget.org) to understand the generated files.
 
-The three artifacts are the `.nupkg` and symbols for NuGet, and the `netstandard1.5` folder containing the `.dll` and `.pdb` files.  You can now upload to NuGet by heading over to [nuget.org](nuget.org), optionally registering for an account, and using the Package Upload UI.
+The three artifacts are the `.nupkg` and symbols for NuGet, and the target framework moniker (TFM) folder containing the `.dll` and `.pdb` files.  You can now upload to NuGet by heading over to [nuget.org](nuget.org), registering for an account, and using the Package Upload UI.  Alternatively, you can set up a feed at [myget.org](myget.org) for any prerelease process you may wish to have.
 
 ## Other Scenarios
 

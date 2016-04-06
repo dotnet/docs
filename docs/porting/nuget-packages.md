@@ -29,8 +29,6 @@ $ cd bin/release && ls
 Library.CSharp.1.0.0.nupkg Library.CSharp.1.0.0.symbols.nupkg netstandard1.5
 ```
 
-Refer to the [NuGet docs](https://docs.nuget.org) to understand the generated files.
-
 The three artifacts are the `.nupkg` and symbols for NuGet, and the target framework moniker (TFM) folder containing the `.dll` and `.pdb` files.  You can now upload to NuGet by heading over to [nuget.org](nuget.org), registering for an account, and using the Package Upload UI.  Alternatively, you can set up a feed at [myget.org](myget.org) for any prerelease process you may wish to have.
 
 ## Other Scenarios

@@ -285,7 +285,7 @@ The best way to make sure everything works when you've ported your code is to *t
   - [Getting Started](https://github.com/nunit/docs/wiki/Installation)
   - [Blog post about migrating from MSTest to NUnit](http://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)
   
-Currently, MSTest does not run on .NET Core.  If you're using MSTest, you'll have to migrate to xUnit or NUnit.  If you've been using Xunit or Nunit to write your tests for your library, great!
+Currently, MSTest does not run on .NET Core.  If you're using MSTest, you'll have to migrate to xUnit or NUnit.  It's also important to know that .NET Core itself is tested using xUnit.  If you've been using Xunit or Nunit to write your tests for your library, great!
 
 ## Recommended approach to porting
 

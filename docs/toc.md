@@ -26,7 +26,7 @@
 ## [C# Tutorials](tutorials/index.md)
 # [Understanding the .NET Core Platform](index.md)
 ## [The .NET Primer](concepts/primer.md)
-## [Overview of .NET implementations](concepts/editions-overview.md) 
+## [Overview of .NET implementations](concepts/editions-overview.md)
 ## [Programming Languages on .NET Platform](languages/index.md)
 ### [.NET - a multi-language platform](languages/overview.md)
 ### [The main trio: C#, F# and Visual Basic](languages/main-trio.md)
@@ -71,7 +71,7 @@
 ### [🔧 Common Language Runtime (CLR)](essentials/clr.md)
 ### [🔧 Class Library overview](essentials/classlibrary.md)
 ### [🔧 Working with base types](essentials/basetypes.md)
-### [🔧 Exception management in .NET Core](essentials/exceptions.md)
+### [Exception management in .NET Core](essentials/exceptions/exceptions.md)
 ## [.NET Command Line Interface reference](cli/index.md)
 # [Application scenarios](apis/index.md)
 ## [🔧 Working with dates](apis/datetime/index.md)
@@ -83,5 +83,3 @@
 ### [How to: Use Arrays of Blocking Collections in a Pipeline](essentials/collections/threadsafe/howtoUseArraysofBlockingCollections.md)
 ### [How to: Create an Object Pool by Using a ConcurrentBag](essentials/collections/threadsafe/howtoCreateanObjectPool.md)
 ## [🔧 Numerical data](apis/numerics/index.md)
-
-

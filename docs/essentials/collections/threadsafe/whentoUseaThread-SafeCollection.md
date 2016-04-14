@@ -52,4 +52,4 @@ When bounding and blocking semantics are required, [System.Collections.Concurren
 
 [System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html)
 
-[Thread-Safe Collections](collections\thread-safeCollections.md)
+[Thread-Safe Collections](../thread-safeCollections.md)

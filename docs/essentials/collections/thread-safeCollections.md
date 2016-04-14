@@ -16,7 +16,7 @@ The following table lists the collection types in the [System.Collections.Concur
 
 Type | Description
 ---- | -----------
-[BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) | Provides bounding and blocking functionality for any type that implements [IProducerConsumerCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.IProducerConsumerCollection%601.html). For more information, see [BlockingCollection Overview](blockingCollectionOverview).
+[BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) | Provides bounding and blocking functionality for any type that implements [IProducerConsumerCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.IProducerConsumerCollection%601.html). For more information, see [BlockingCollection Overview](threadsafe/blockingcollectionoverview.md).
 [ConcurrentBag&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentBag%601.html) | Thread-safe implementation of an unordered collection of elements.
 [ConcurrentDictionary&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentDictionary%602.html) | Thread-safe implementation of a dictionary of key-value pairs.
 [ConcurrentQueue&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentQueue%601.html) | Thread-safe implementation of a FIFO (first-in, first-out) queue.
@@ -35,8 +35,8 @@ We recommend the **System.Collections.Concurrent** collection classes because th
 
 Title | Description
 ----- | -----------
-[BlockingCollection Overview](blockingCollectionOverview) | Describes the functionality provided by the **BlockingCollection&lt;T&gt;** type.
-[How to: Add and Remove Items from a ConcurrentDictionary](threadsafe\how toAddandRemoveItems.md) | Describes how to add and remove elements from a **ConcurrentDictionary&lt;TKey, TValue&gt;**.
+[BlockingCollection Overview](threadsafe/blockingcollectionoverview.md) | Describes the functionality provided by the **BlockingCollection&lt;T&gt;** type.
+[How to: Add and Remove Items from a ConcurrentDictionary](threadsafe\howtoAddandRemoveItems.md) | Describes how to add and remove elements from a **ConcurrentDictionary&lt;TKey, TValue&gt;**.
 [How to: Add and Take Items Individually from a BlockingCollection](threadsafe\howtoAddandTakeItems.md) | Describes how to add and retrieve items from a blocking collection without using the read-only enumerator.
 [How to: Add Bounding and Blocking Functionality to a Collection](threadsafe\howtoAddBoundingandBlocking.md ) | Describes how to use any collection class as the underlying storage mechanism for an **IProducerConsumerCollection&lt;T&gt;** collection.
 [How to: Use ForEach to Remove Items in a BlockingCollection](threadsafe\howtoUseForEachtoRemove.md ) | Describes how to use **foreach** to remove all items in a blocking collection.

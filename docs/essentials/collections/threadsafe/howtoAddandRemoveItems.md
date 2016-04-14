@@ -281,5 +281,5 @@ Therefore, it is not guaranteed that the data that is returned by **GetOrAdd** i
 
 [System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html)
 
-[Thread-Safe Collections](collections\thread-safeCollections)
+[Thread-Safe Collections](../thread-safeCollections.md)
 

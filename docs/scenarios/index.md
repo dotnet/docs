@@ -1,0 +1,15 @@
+# Scenarios
+
+* [Writing console applications](console/index.md)
+    * [🔧 Overview and moving pieces](console/overview.md)
+    * [🔧 Console applications paradigm](console/paradigm.md)
+* [Writing libraries](libraries/index.md)
+    * [Overview](libraries/overview.md)
+    * [Creating a class library with Cross Platform Tools](libraries/libraries-with-cli.md)
+    * [Creating a class library in Visual Studio](libraries/libraries-with-vs.md)
+* [Packaging and deploying applications](deployment/index.md)
+    * [🔧 Deploying applications overview](deployment/overview.md)
+    * [🔧 Deploying to a shared runtime](deployment/shared-runtime.md)
+    * [🔧 Deploying self-contained applications](deployment/self-contained-apps.md)
+    * [🔧 Deploying NuGet packages](deployment/nuget-packages.md)
+    * [🔧 Deploying ASP.NET web applications](deployment/aspnet-applications.md)

@@ -267,6 +267,6 @@ By default, the storage for a [BlockingCollection&lt;T&gt;](http://dotnet.github
 
 [System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html)
 
-[Thread-Safe Collections](collections\thread-safeCollections.md)
+[Thread-Safe Collections](../thread-safeCollections.md)
 
 [BlockingCollection Overview](blockingCollectionOverview.md)

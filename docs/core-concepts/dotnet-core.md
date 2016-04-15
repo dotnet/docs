@@ -1,13 +1,13 @@
 .NET Core
 =========
 
-.NET Core is a general purpose app platform developed by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core). It is cross-platform, supports Windows, OS X and Linux and intends to support a wide variety of CPUs and OSes over time. It can be used in device, cloud and embedded/IoT scenarios. We expect it to be extended to support additional scenarios over time (e.g. WebAssembly), both by Microsoft and the community.
+.NET Core is a general purpose development platform developed by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core). It is cross-platform, supports Windows, OS X and Linux and intends to support a wide variety of CPUs and OSes over time. It can be used in device, cloud and embedded/IoT scenarios. We expect it to be extended to support additional scenarios over time (e.g. WebAssembly), both by Microsoft and the community.
 
 .NET Core is composed of a few parts:
 
 - A [.NET runtime](https://github.com/dotnet/coreclr) that can be used for a wide variety of app types
 - A set of [framework libraries]((https://github.com/dotnet/corefx)) that run on CoreCLR and other runtimes. 
-- A set tools and compilers that enable the base developer experience, available in the [.NET Core SDK]((https://github.com/dotnet/cli)).
+- A set of tools and compilers that enable the base developer experience, available in the [.NET Core SDK]((https://github.com/dotnet/cli)).
 
 The C#, F# and VB compilers all support targeting and running on .NET Core (the compilers are all managed). .NET Core tools are integrated into severals text editors and IDEs, including Visual Studio, Visual Studio Code, Sublime Text and Vim, providing .NET Core development experiences in your favorite environment. 
 

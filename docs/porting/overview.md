@@ -2,7 +2,7 @@
 
 By [Phillip Carter](https://github.com/cartermp)
 
-If you've got code running on .NET Framework you may be interested in running your code on .NET Core.  This article covers evaluating if porting to .NET Core is feasible for you, an overview of the porting process, and a list of the tools you may use to port.
+If you've got code running on the .NET Framework, you may be interested in running your code on .NET Core.  This article covers evaluating if porting to .NET Core is feasible for you, an overview of the porting process and a list of the tools you may use to port.
 
 ## Should you port?
 
@@ -20,7 +20,7 @@ Your code could be a good candidate for porting to .NET Core if...
 - You have a compelling business case to run code on more than just Windows
 - You want to take advantage of more flexible deployment
 - You have expertise on non-Windows platforms you wish to leverage
-- You're looking for an opportunity to implement an architectural change for your services (e.g. a monolithic service to microservices deployed to containers)
+- You're looking for an opportunity to implement an architectural change for your services (for example, a monolithic service to microservices deployed to containers)
 - You wish to take advantage of performance advancements made in .NET Core and ASP.NET Core
 - You love new open source technology and want to cut your teeth on .NET Core
 
@@ -64,15 +64,15 @@ The recommended process for porting follows a series of steps.  Here's a short o
 
 Here's a short list of the tools you'll likely use when porting to .NET Core:
 
-* NuGet - [client](https://dist.nuget.org/index.html) or [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer), the package manager for the .NET Platform.
-* ApiPort - [command line tool](https://github.com/Microsoft/dotnet-apiport/releases) or [Visual Studio Extension](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b), a toolchain that can generate a report of how portable your code is between .NET Framework and .NET Core, with an assembly-by-assembly breakdown of issues.
+* NuGet - [Nuget Client](https://dist.nuget.org/index.html) or [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer), the package manager for the .NET Platform.
+* Api Portability Analyzer - [command line tool](https://github.com/Microsoft/dotnet-apiport/releases) or [Visual Studio Extension](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b), a toolchain that can generate a report of how portable your code is between .NET Framework and .NET Core, with an assembly-by-assembly breakdown of issues.  See [Tooling to help you on the process](tooling.md) for more information.
 * Reverse Package Search - A [useful web service](https://packagesearch.azurewebsites.net) that allows you to search for a type and find packages containing that type.
 
 ## Aside: Co-evolving your .NET Core and .NET Framework code
 
 .NET Framework is the best way to build applications for the Windows platform.  As such, there's a good chance that you have significant amounts of code that is simply not applicable when considering porting to .NET Core.  And that's just fine!  The introduction of .NET Core opens up even more possibilities for your existing assets.
 
-Imagine being able to continue using .NET Framework and Windows for your application, but being able to build and deploy different services you consume with the freedom that .NET Core offers.  A WPF GUI could consume services written in .NET Core, and the code for both the GUI and the services could live in the same Visual Studio solution.  This would allow a seamless debugging experience while allowing you to then deploy those services to Linux in Docker containers.  This kind of scenario is something we're excited to enable with .NET Core.
+Imagine being able to continue using the .NET Framework and Windows for your application, but being able to build and deploy different services you consume with the freedom that .NET Core offers.  A WPF GUI could consume services written in .NET Core, and the code for both the GUI and the services could live in the same Visual Studio solution.  This would allow a seamless debugging experience while allowing you to then deploy those services to Linux in Docker containers.  This kind of scenario is something we're excited to enable with .NET Core.
 
 .NET Core also offers binary sharing, allowing you to write code once that is guaranteed to run on both your .NET Framework code and your .NET Core code.  This binary compatibility, which is covered by the [.NET Platform Standard](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md), allows you to continue to create components of your system in a modular way.
 

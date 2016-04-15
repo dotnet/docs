@@ -70,7 +70,7 @@ Here's a short list of the tools you'll likely use when porting to .NET Core:
 
 ## Aside: Co-evolving your .NET Core and .NET Framework code
 
-.NET Framework is the best way to build applications for the Windows platform.  As such, there's a good chance that you have significant amounts of code that is simply not applicable when considering porting to .NET Core.  And that's just fine!  The introduction of .NET Core opens up even more possibilities for your existing assets.
+The .NET Framework is the best way to build applications for the Windows platform.  As such, there's a good chance that you have significant amounts of code that is simply not applicable when considering porting to .NET Core.  And that's just fine!  The introduction of .NET Core opens up even more possibilities for your existing assets.
 
 Imagine being able to continue using the .NET Framework and Windows for your application, but being able to build and deploy different services you consume with the freedom that .NET Core offers.  A WPF GUI could consume services written in .NET Core, and the code for both the GUI and the services could live in the same Visual Studio solution.  This would allow a seamless debugging experience while allowing you to then deploy those services to Linux in Docker containers.  This kind of scenario is something we're excited to enable with .NET Core.
 

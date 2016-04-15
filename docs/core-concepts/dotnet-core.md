@@ -42,12 +42,12 @@ Composition of .NET Core
 - **The ".NET Standard Library"** - This is the API spec that describes the API evolution of .NET and that .NET Core implements. While many of the additions to the Standard Library will come from API additions to .NET Core, some will come from other platforms, such as the .NET Framework and Mono.
 - **System.* packages** - These packages provide the ".NET Core" implementation but contain assets for other platforms, such as the .NET Framework and Mono.
 
-Designed for Adaptibility
+Designed for Adaptability
 -------------------------
 
-.NET Core has been built as a very similar but unique product relative to other .NET products from Microsoft. The primary reason to make changes was to enable broad adaptibility, to new platforms, for new workloads and by new compiler toolchains. In particular, apps should only need to use and distribute the .NET Core libraries and subsystems that they actually depend on. This characteristic is particularly important where either storage space and/or wire cost (download time, data charges) are important. It should also be the case that they do not have to change their code to target a new workload of compiler toolchain. The architecture of .NET Core should enable those outcomes.
+.NET Core has been built as a very similar but unique product relative to other .NET products from Microsoft. The primary reason to make changes was to enable broad adaptability, to new platforms, for new workloads and by new compiler toolchains. In particular, apps should only need to use and distribute the .NET Core libraries and subsystems that they actually depend on. This characteristic is particularly important where either storage space and/or wire cost (download time, data charges) are important. It should also be the case that they do not have to change their code to target a new workload of compiler toolchain. The architecture of .NET Core should enable those outcomes.
 
-By comparison, The .NET Framework was built as a completely integrated product, providing end-to-end experiences across Windows, Visual Studio and even SQL Server. Most customers loved that level of integration, but it was difficult to produce meaningful subsets of it. For example, because of API factoring, some subsystems are always required (for example, Object.GetType has a dependency on reflection). With .NET Core, those hard API dependencies have been removed and the APIs redefined, to enable the goal of adaptibility.
+By comparison, The .NET Framework was built as a completely integrated product, providing end-to-end experiences across Windows, Visual Studio and even SQL Server. Most customers loved that level of integration, but it was difficult to produce meaningful subsets of it. For example, because of API factoring, some subsystems are always required (for example, Object.GetType has a dependency on reflection). With .NET Core, those hard API dependencies have been removed and the APIs redefined, to enable the goal of adaptability.
 
 Comparison with .NET Framework
 ------------------------------

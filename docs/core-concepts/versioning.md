@@ -1,14 +1,14 @@
 .NET Core Versioning
 ==================== 
 
-The .NET Core platform is built and versioned in layers. Each of of these layers can be versioned separately for product agility and to accurately describe product changes. While there is significant versioning flexibility, there is a desire to version the platform as a unit to make the product easier to understand.
+The .NET Core platform is built and versioned in layers. Each of these layers can be versioned separately for product agility and to accurately describe product changes. While there is significant versioning flexibility, there is a desire to version the platform as a unit to make the product easier to understand.
 
 The product is somewhat unique, being described and delivered via a package manager (NuGet) as packages. While you typically acquire .NET Core as a standalone SDK, the SDK is largely a convenience experience over NuGet packages and therefore not distinct from packages. As a result, versioning is first and foremost in terms of packages and other versioning experiences follow from there.
 
 Semantic Versioning
 ===================
 
-.NET Core uses [Semantic Versioning (SemVer)](http://semver.org/), adopting the use of major.minor.patch versioning, using the various parts of the version number to describe the degree and kind of change. This applies to both meta packages (e.g. Microsoft.NETCore.Library) and regular packages (e.g. System.Collections).
+.NET Core uses [Semantic Versioning (SemVer)](http://semver.org/), adopting the use of major.minor.patch versioning, using the various parts of the version number to describe the degree and kind of change. This applies to both meta packages (e.g. `Microsoft.NETCore.App`) and regular packages (e.g. `System.Collections`).
 
 Versioning Form
 ---------------
@@ -33,7 +33,7 @@ PATCH when:
   - make bug fixes
   - add support for a newer platform
   - adopt a newer PATCH version of an existing dependency
-  - anything other change
+  - any other change
 
 When determining what to increment when there are multiple changes, choose the highest kind of change.
 
@@ -75,7 +75,7 @@ There are two primary meta-packages for .NET Core.
 - Maps to `netcoreapp` target framework.
 - Describes the packages in the .NET Core distribution.
 
-Note: It is reasonable to reference the Microsoft.NETCore.App meta-package but use the netstandard framework. You will get access to all of the netstandard-compatible assets from those packages, which will be a subset of all the packages but more than are referenced via NETStandard.Library.
+Note: It is reasonable to reference the `Microsoft.NETCore.App` meta-package but use the netstandard framework. You will get access to all of the netstandard-compatible assets from those packages, which will be a subset of all the packages but more than are referenced via `NETStandard.Library`.
 
 
 Target Frameworks
@@ -89,13 +89,13 @@ There is a two-way relationship between meta-packages and frameworks. One can th
 
 .NET Standard is a new concept that came out of the .NET Core project, but is logically separate. It is a a new framework that describes the API evolution of .NET for the lower-most APIs. One could consider it a standardized Base Class Library (BCL) for all .NET implementations. .NET Core implements this spec and is ".NET Standard compliant" at a particular version level. The .NET Standard will be updated regularly, based on new APIs being adding in .NET Standard compliant .NET implementations, such as .NET Core, .NET Framework and Mono. The version number of .NET Standard will not match any of the implementations.
 
-The TFM for .NET Standard is `netstandard`. At the release of .NET Core 1.0, there will be several `netstandard` versions, not just a 1.0 version. There was a strong desire to create a bridge between Portable Class Libraries (PCL) and .NET Standard.  To establish the compatibility bridge, .NET Standard was pre-versioned to overlap with existing .NET platforms in a compatible way with PCL. .NET Standard versions 1.0 through 1.4 represent the overlap. The .NET Core 1.0 platform implements all .NET Standard versions up to and including 1.5.
+The Target Framework Moniker (TFM) for .NET Standard is `netstandard`. At the release of .NET Core 1.0, there will be several `netstandard` versions, not just a 1.0 version. There was a strong desire to create a bridge between Portable Class Libraries (PCL) and .NET Standard.  To establish the compatibility bridge, .NET Standard was pre-versioned to overlap with existing .NET platforms in a compatible way with PCL. .NET Standard versions 1.0 through 1.4 represent the overlap. The .NET Core 1.0 platform implements all .NET Standard versions up to and including 1.5.
 
 PCL and .NET Standard both enable binary sharing but define the applicable APIs in different ways. .NET Standard is the new binary code sharing mechanism going forward.
 
 ### netcoreapp
 
-The `netcoreapp` framework represents the APIs available in the .NET Core distribution, which you can get via the .NET Core installer or a package manager. It matches the Microsoft.NETCore.App meta-package. .NET Core apps should use this framework, as should libraries that require significant funtionality beyond .NET Standard.
+The `netcoreapp` framework represents the APIs available in the .NET Core distribution, which you can get via the .NET Core installer or a package manager. It matches the `Microsoft.NETCore.App` meta-package. .NET Core apps should use this framework, as should libraries that require significant funtionality beyond .NET Standard.
 
 Other .NET platforms could support this framework, but are not expected to.
 
@@ -104,7 +104,7 @@ Other .NET platforms could support this framework, but are not expected to.
 
 The .NET Standard will not adopt the version numbers of .NET Core. They are logically separate. There are three major scenarios to consider.
 
-The following sections discuss API additions. It assumes that the additions are to libraries that are referenced by NETStandard.Library meta-package.
+The following sections discuss API additions. It assumes that the additions are to libraries that are referenced by `NETStandard.Library` meta-package.
 
 Adding APIs to .NET Core
 ------------------------
@@ -158,7 +158,7 @@ You can see patch updates demonstrated in the project.json examples below.
 }
 ```
 
-Target frameworks would not be updated. A new .NET Core distribution would be released with a matching version number to the Microsoft.NETCore.App meta-package.
+Target frameworks would not be updated. A new .NET Core distribution would be released with a matching version number to the `Microsoft.NETCore.App` meta-package.
 
 Shipping new APIs (AKA "minor release")
 ---------------------------------------
@@ -178,12 +178,12 @@ You can see minor updates demonstrated in the project.json examples below.
 }
 ```
 
-The various target frameworks would be updated to describe the new APIs. A new .NET Core distribution would be released with a matching version number to the Microsoft.NETCore.App meta-package.
+The various target frameworks would be updated to describe the new APIs. A new .NET Core distribution would be released with a matching version number to the `Microsoft.NETCore.App` meta-package.
 
 Shipping major new Functionality (AKA "major release")
 ------------------------------------------------------
 
-Given a .NET Core v1.y.z stable version, new APIs will be be added to .NET Core libraries to enable major new scenarios. The various meta-packages will be updated to reference the updated .NET Core library packages. The Microsoft.NETCore.App meta-package will be versioned as major updates (x.). The NETStandard.Library meta-package will be versioned as a minor updates (x.y).
+Given a .NET Core v1.y.z stable version, new APIs will be be added to .NET Core libraries to enable major new scenarios. The various meta-packages will be updated to reference the updated .NET Core library packages. The `Microsoft.NETCore.App` meta-package will be versioned as major updates (x.). The `NETStandard.Library` meta-package will be versioned as a minor updates (x.y).
 
 You can see a major update demonstrated in the project.json meta-package reference in the example below.
 
@@ -198,4 +198,4 @@ You can see a major update demonstrated in the project.json meta-package referen
 }
 ```
 
-The various target frameworks would be updated to describe the new APIs. A new .NET Core distribution would be released with a matching version number to the Microsoft.NETCore.App meta-package.
+The various target frameworks would be updated to describe the new APIs. A new .NET Core distribution would be released with a matching version number to the `Microsoft.NETCore.App` meta-package.

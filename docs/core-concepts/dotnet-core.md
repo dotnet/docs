@@ -6,10 +6,10 @@
 .NET Core is composed of a few parts:
 
 - A [.NET runtime](https://github.com/dotnet/coreclr) that can be used for a wide variety of app types
-- A set of [framework libraries]((https://github.com/dotnet/corefx)) that run on CoreCLR and other runtimes. 
+- A set of [framework libraries]((https://github.com/dotnet/corefx)). 
 - A set of tools and compilers that enable the base developer experience, available in the [.NET Core SDK]((https://github.com/dotnet/cli)).
 
-The C#, F# and VB compilers all support targeting and running on .NET Core (the compilers are all managed). .NET Core tools are integrated into severals text editors and IDEs, including Visual Studio, Visual Studio Code, Sublime Text and Vim, providing .NET Core development experiences in your favorite environment. 
+The C#, F# and VB compilers all support targeting and running on .NET Core. .NET Core tools are integrated into severals text editors and IDEs, including Visual Studio, Visual Studio Code, Sublime Text and Vim, providing .NET Core development experiences in your favorite environment. 
 
 .NET Core is open source and was contributed to the [.NET Foundation](http://dotnetfoundation.org) by Microsoft in 2014 and is now one of the most active .NET Foundation projects. It can be freely adopted by individuals and companies, including for personal, academic or commercial purposes. Multiple companies are using .NET Core as part of apps, tools, new platforms and hosting services. Some of these companies make significant contributions to .NET Core on GitHub and provide guidance on the product direction as part of the [.NET Foundation Technical Steering Group](http://www.dotnetfoundation.org/blog/tsg-welcome).
 
@@ -22,7 +22,7 @@ The C#, F# and VB compilers all support targeting and running on .NET Core (the 
 
 You can get started with .NET Core in just a few minutes:
 
-- [Getting started with .NET Core](https://dotnet.github.io)
+- [Getting started with .NET Core](https://aka.ms/dotnetcoregs)
 - [.NET Core samples](https://github.com/dotnet/core)
 - [.NET Core OS and CPU Support](link)
 - [Explore .NET Core repos](https://github.com/dotnet/core)
@@ -34,13 +34,13 @@ Composition of .NET Core
 
 - **A set of packages** -- These contain the runtime and the API shape and implementation of .NET Core.
 - **A set of metapackages (e.g. .NET Standard Library)** --  They describe various layers of .NET Core by referencing the appropriate set of library packages.
-- **A [distribution](https://dotnet.github.io) of .NET Core from Microsoft** -- This includes the CoreCLR runtime, associated libraries, the console application host and the `dotnet` launcher. It is described by the "Microsoft .NET Core Application" metapackage.
+- **A [distribution](https://aka.ms/dotnetcoregs) of .NET Core from Microsoft** -- This includes the CoreCLR runtime, associated libraries, the console application host and the `dotnet` launcher. It is described by the Microsoft.NETCore.App metapackage.
 - **A [distribution](https://dotnet.github.io) of the .NET Core SDK from Microsoft** -- This includes a set of tools for restoring NuGet packages and compiling and building apps, also controlled from the `dotnet` launcher. It is extensible, enabling anyone to add commands. The package also includes a copy of .NET Core to use with the tools. Typically, developers will install this distribution.
 
 **Closely affiliated with .NET Core:**
 
-- **The ".NET Standard Library"** - This is the API spec that describes the API evolution of .NET and that .NET Core implements. While many of the additions to the Standard Library will come from API additions to .NET Core, some will come from other platforms, such as the .NET Framework and Mono. There is a suble difference between the .NET Standard Library as a spec and as a meta-package. It's the distinction between the ref (reference assembly) and lib (implementation) folders in the .NET Standard Library packages.
-- **The set of System.* libraries on NuGet.org** - These packages provide the ".NET Core" implementation but contain assets for other platforms, such as the .NET Framework and Mono. This is the distinction between different lib folders in the NuGet packages.
+- **The ".NET Standard Library"** - This is the API spec that describes the API evolution of .NET and that .NET Core implements. While many of the additions to the Standard Library will come from API additions to .NET Core, some will come from other platforms, such as the .NET Framework and Mono.
+- **System.* packages** - These packages provide the ".NET Core" implementation but contain assets for other platforms, such as the .NET Framework and Mono.
 
 Designed for Adaptibility
 -------------------------
@@ -49,14 +49,10 @@ Designed for Adaptibility
 
 By comparison, The .NET Framework was built as a completely integrated product, providing end-to-end experiences across Windows, Visual Studio and even SQL Server. Most customers loved that level of integration, but it was difficult to produce meaningful subsets of it. For example, because of API factoring, some subsystems are always required (e.g. Object.GetType has a dependency on Reflection). With .NET Core, those hard API dependencies have been removed and the APIs redefined, to enable the goal of adaptibility.
 
-Native compilation is a fundamental part of the adaptability charter for .NET Core. The .NET team has been working on an experimental toolchain and runtime on GitHub in the [corert](https://github.com/dotnet/corert) repo. It's a derivative of the [.NET Native](https://msdn.microsoft.com/library/dn584397.aspx) project. CoreRT supports multiple native compiler backends, notably an [LLVM-based compiler](https://github.com/dotnet/llilc) and an [IL to C++ compiler](https://github.com/dotnet/corert/tree/master/src/ILCompiler.Compiler/src/CppCodeGen) (meaning, produces textual C++ to use as input to a C++ compiler). The team will continue to invest in CoreRT to make it a production option for .NET Core apps. This will enable .NET to run on any platform that supports a C++ compiler and/or LLVM (e.g. WebAssembly).
-
-Another advantage of CoreRT is that most of the runtime services have been moved to C# libraries, making them also opt-in. The CoreRT runtime is so small (<1mb) that it is fine that it is required in its complete form. Over time, we expect that most scenarios will adopt CoreRT given that it will be the easiest to adapt to new scenarios. Also, since it implements fewer concepts in the runtime, it's also an easier codebase to learn, making it accessible to a much larger group of developers.
-
 Comparison with .NET Framework
 ------------------------------
 
-The .NET platform was first announced by Microsoft in 2000 and then evolved from there, largely focused on the .NET Framework product. For example, the Mono runtime is an open and cross-platform implementation of the .NET Framework. .NET Core continues on the promise and tradition of the .NET Framework, and conforms to the same [.NET standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) (notably ECMA 335), but is a separate product. 
+The .NET platform was first announced by Microsoft in 2000 and then evolved from there, largely focused on the .NET Framework product. .NET Core conforms to the same [.NET standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) (notably ECMA 335), but is a separate product. 
 
 There are three major differences: 
 

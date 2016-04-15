@@ -66,13 +66,13 @@ There are two primary meta-packages for .NET Core.
 **NETStandard.Library**
 
 - v1.5 as of .NET Core 1.0.
-- Maps to `netstandard` TFM. 
-- Describes the packages that are considered required for modern app development and that .NET platforms are expected to implement (to be considered a ".NET Standard" platform).
+- Maps to `netstandard` target framework. 
+- Describes the packages that are considered required for modern app development and that .NET platforms must implement to be considered a ".NET Standard" platform.
 
 **Microsoft.NETCore.App**
 
 - v1.0 as of .NET Core 1.0 (versions intended to match).
-- Maps to `netcoreapp` TFM.
+- Maps to `netcoreapp` target framework.
 - Describes the packages in the .NET Core distribution.
 
 Note: It is reasonable to reference the Microsoft.NETCore.App meta-package but use the netstandard framework. You will get access to all of the netstandard-compatible assets from those packages, which will be a subset of all the packages but more than are referenced via NETStandard.Library.
@@ -136,8 +136,7 @@ There are commits and PRs on .NET Core repos on GitHub on a daily basis, resulti
 
 A new version of .NET Core could mean several things:
 
-- New versions of packages.
-- New versions of meta-packages.
+- New versions of packages and meta-packages.
 - New versions of various target frameworks.
 - New version of the .NET Core distribution.
 

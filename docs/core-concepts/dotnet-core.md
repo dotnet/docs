@@ -1,7 +1,7 @@
 .NET Core
 =========
 
-.NET Core is a general purpose development platform developed by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core). It is cross-platform, supports Windows, OS X and Linux and intends to support a wide variety of CPUs and Operating Systems (OSes) over time. It can be used in device, cloud and embedded/IoT scenarios. We expect it to be extended to support additional scenarios over time (e.g. WebAssembly), both by Microsoft and the community.
+.NET Core is a general purpose development platform developed by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core). It is cross-platform, supports Windows, OS X and Linux and intends to support a wide variety of CPUs and Operating Systems (OSes) over time. It can be used in device, cloud and embedded/IoT scenarios. We expect it to be extended to support additional scenarios over time (for example, WebAssembly), both by Microsoft and the community.
 
 .NET Core is composed of a few parts:
 
@@ -33,7 +33,7 @@ Composition of .NET Core
 **.NET Core is the following:**
 
 - **A set of packages** -- These contain the runtime and the API shape and implementation of .NET Core.
-- **A set of metapackages (e.g. `NETStandard.Library`)** --  They describe various layers of .NET Core by referencing the appropriate set of library packages.
+- **A set of metapackages (for example, `NETStandard.Library`)** --  They describe various layers of .NET Core by referencing the appropriate set of library packages.
 - **A [distribution](https://aka.ms/dotnetcoregs) of .NET Core from Microsoft** -- This includes the CoreCLR runtime, associated libraries, the console application host and the `dotnet` launcher. It is described by the `Microsoft.NETCore.App` metapackage.
 - **A [distribution](https://dotnet.github.io) of the .NET Core SDK from Microsoft** -- This includes a set of tools for restoring NuGet packages and compiling and building apps, also controlled from the `dotnet` launcher. It is extensible, enabling anyone to add commands. The package also includes a copy of .NET Core to use with the tools. Typically, developers will install this distribution.
 
@@ -47,7 +47,7 @@ Designed for Adaptibility
 
 .NET Core has been built as a very similar but unique product relative to other .NET products from Microsoft. The primary reason to make changes was to enable broad adaptibility, to new platforms, for new workloads and by new compiler toolchains. In particular, apps should only need to use and distribute the .NET Core libraries and subsystems that they actually depend on. This characteristic is particularly important where either storage space and/or wire cost (download time, data charges) are important. It should also be the case that they do not have to change their code to target a new workload of compiler toolchain. The architecture of .NET Core should enable those outcomes.
 
-By comparison, The .NET Framework was built as a completely integrated product, providing end-to-end experiences across Windows, Visual Studio and even SQL Server. Most customers loved that level of integration, but it was difficult to produce meaningful subsets of it. For example, because of API factoring, some subsystems are always required (e.g. Object.GetType has a dependency on reflection). With .NET Core, those hard API dependencies have been removed and the APIs redefined, to enable the goal of adaptibility.
+By comparison, The .NET Framework was built as a completely integrated product, providing end-to-end experiences across Windows, Visual Studio and even SQL Server. Most customers loved that level of integration, but it was difficult to produce meaningful subsets of it. For example, because of API factoring, some subsystems are always required (for example, Object.GetType has a dependency on reflection). With .NET Core, those hard API dependencies have been removed and the APIs redefined, to enable the goal of adaptibility.
 
 Comparison with .NET Framework
 ------------------------------

@@ -8,7 +8,7 @@ The product is somewhat unique, being described and delivered via a package mana
 Semantic Versioning
 ===================
 
-.NET Core uses [Semantic Versioning (SemVer)](http://semver.org/), adopting the use of major.minor.patch versioning, using the various parts of the version number to describe the degree and kind of change. This applies to both meta packages (e.g. `Microsoft.NETCore.App`) and regular packages (e.g. `System.Collections`).
+.NET Core uses [Semantic Versioning (SemVer)](http://semver.org/), adopting the use of major.minor.patch versioning, using the various parts of the version number to describe the degree and kind of change. This applies to both meta packages (for example, `Microsoft.NETCore.App`) and regular packages (for example, `System.Collections`).
 
 Versioning Form
 ---------------
@@ -44,12 +44,12 @@ Versioning Scheme
 
 - A runtime and framework implementation, distributed as packages. Each package is versioned independently.
 - A set of meta-package packages that reference and make the fine-grained packages easier to reference and use together as a versioned unit. Each meta-package has its own versioning scheme.
-- A set of target frameworks (e.g. netstandard) that represent a progressively larger API, described in a set of versioned snapshots.
+- A set of target frameworks (for example, netstandard) that represent a progressively larger API set, described in a set of versioned snapshots.
 
 Packages
 --------
 
-Library packages evolve and version independently. Packages that overlap with .NET Framework System.\* assemblies typically use 4.x versions, aligning with .NET Framework 4.x versioning (a historical choice). Packages that do not overlap (e.g. System.Metadata) with .NET Framework libraries typically start at 1.0 and increment from there.
+Library packages evolve and version independently. Packages that overlap with .NET Framework System.\* assemblies typically use 4.x versions, aligning with the .NET Framework 4.x versioning (a historical choice). Packages that do not overlap with the .NET Framework libraries (for example, System.Metadata) typically start at 1.0 and increment from there.
 
 The lower-level packages (most of the ones with 4.x versions) are treated specially due to being at the base of the platform. Explanation:
 
@@ -59,7 +59,7 @@ The lower-level packages (most of the ones with 4.x versions) are treated specia
 Meta-Packages
 -------------
 
-Versioning for .NET Core meta-packages is based on the target framework that they map to. The meta-packages adopt the version number of the highest version (e.g. netstandard1.5) of the target framework it maps to in its package closure. The patch version for the meta-package is used to represent updates to the meta-package to reference updated packages (that don't include a new target framework version). As a result, the meta-packages are not strictly SemVer compliant because their versioning scheme doesn't represent the degree of change in the underlying packages, but only API level. 
+Versioning for .NET Core meta-packages is based on the target framework that they map to. The meta-packages adopt the version number of the highest version (for example, netstandard1.5) of the target framework it maps to in its package closure. The patch version for the meta-package is used to represent updates to the meta-package to reference updated packages (that don't include a new target framework version). As a result, the meta-packages are not strictly SemVer compliant because their versioning scheme doesn't represent the degree of change in the underlying packages, but only API level. 
 
 There are two primary meta-packages for .NET Core.
 
@@ -126,13 +126,13 @@ When .NET Core ships a 2.0 version, the .NET Standard will be updated (assuming 
 We intend to move to a 2.0 version of .NET Standard only for very significant changes. We have defined a non-exhaustive set of cases where we would move to `netstandard2.0`, none of which we intend to do:
 
 - Drop APIs.
-- Add a major new feature that is potentially breaking for existing runtimes (e.g. array slices).
+- Add a major new feature that is potentially breaking for existing runtimes (for example, array slices).
 - Update the CLR metadata/assembly format.
 
 Versioning in Practice
 ======================
 
-There are commits and PRs on .NET Core repos on GitHub on a daily basis, resulting in new builds of many libraries. We don't want to create a new public version of .NET Core for every single change. Instead, we'll take changes for some loosely-defined period of time (e.g. weeks or months) before making a new public stable .NET Core version.
+There are commits and PRs on .NET Core repos on GitHub on a daily basis, resulting in new builds of many libraries. We don't want to create a new public version of .NET Core for every single change. Instead, we'll take changes for some loosely-defined period of time (for example, weeks or months) before making a new public stable .NET Core version.
 
 A new version of .NET Core could mean several things:
 

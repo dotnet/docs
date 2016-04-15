@@ -1,7 +1,5 @@
 # .NET Core Concepts
 
-
-* [.NET Standard](net-standard.md)
 * [.NET Core Packages and Meta-packages](packages-metapackages.md)
 * [.NET Core SDK](core-sdk/index.md)
 * [.NET Core Application Deployment](app-deployment.md)

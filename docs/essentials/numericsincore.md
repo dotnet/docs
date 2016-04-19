@@ -1,6 +1,6 @@
 # Numerics in .NET Core
 
-.NET Core supports the standard numeric integral and floating-point primitives, as well as [System.Numerics.BigInteger](http://dotnet.github.io/api/System.Numerics.BigInteger.html), an integral type with no theoretical upper or lower bound, [System.Numerics.Complex](http://dotnet.github.io/api/System.Numerics.Complex.html), a type that represents complex numbers, and a set of Single Instruction Multiple Data (SIMD)-enabled vector types in the [System.Numerics](http://dotnet.github.io/api/System.Numerics.html) namespace. 
+.NET Core supports the standard numeric integral and floating-point primitives, as well as [System.Numerics.BigInteger](http://dotnet.github.io/api/System.Numerics.BigInteger.html), an integral type with no theoretical upper or lower bound, [System.Numerics.Complex](http://dotnet.github.io/api/System.Numerics.Complex.html), a type that represents complex numbers, and a set of Single Instruction Multiple Data ([SIMD](https://en.wikipedia.org/wiki/SIMD))-enabled vector types in the [System.Numerics](http://dotnet.github.io/api/System.Numerics.html) namespace. 
 
 ## Integral types
 
@@ -31,25 +31,25 @@ Type | Size (bytes) | Minimum Value | Maximum Value
 [System.Single](http://dotnet.github.io/api/System.Single.html) | 4 | -3.402823e38 | 3.402823e38
 [System.Decimal](http://dotnet.github.io/api/System.Decimal.html) | 8 | -79,228,162,514,264,337,593,543,950,335 | 79,228,162,514,264,337,593,543,950,335
    
-Each floating-point type supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators. Each also includes methods to perform equality comparisons and relative comparisons, to convert the string representation of a floating-point number, and to convert a floating-point number to its string representation. Some additional mathematical, algebraic, and trigonometric operations are available from the **Math** class. You can also work with the individual bits in **Double** and **Single** values by using the **BitConverter** class. The **Decimal** structure has its own methods, **Decimal.GetBits** and **Decimal.Decimal(Int32())**, for working with a decimal value's individual bits, as well as its own set of methods for performing some additional mathematical operations. 
+Each floating-point type supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators. Each also includes methods to perform equality comparisons and relative comparisons, to convert the string representation of a floating-point number, and to convert a floating-point number to its string representation. Some additional mathematical, algebraic, and trigonometric operations are available from the `Math` class. You can also work with the individual bits in `Double` and `Single` values by using the `BitConverter` class. The `Decimal` structure has its own methods, `Decimal.GetBits` and `Decimal.Decimal(Int32())`, for working with a decimal value's individual bits, as well as its own set of methods for performing some additional mathematical operations. 
 
-The **Double** and **Single** types are intended to be used for values that by their nature are imprecise (such as the distance between two stars in the solar system) and for applications in which a high degree of precision and small rounding error is not required. You should use the **Decimal.GetBits** type for cases in which greater precision is required and rounding error is undesirable.
+The `Double` and `Single` types are intended to be used for values that by their nature are imprecise (such as the distance between two stars in the solar system) and for applications in which a high degree of precision and small rounding error is not required. You should use the `Decimal` type for cases in which greater precision is required and rounding error is undesirable.
 
 ## BigInteger
 
-**System.Numerics.BigInteger** is an immutable type that represents an arbitrarily large integer whose value in theory has no upper or lower bounds. The methods of the **BigInteger** type closely parallel those of the other integral types.  
+[System.Numerics.BigInteger](http://dotnet.github.io/api/System.Numerics.BigInteger.html) is an immutable type that represents an arbitrarily large integer whose value in theory has no upper or lower bounds. The methods of the `BigInteger` type closely parallel those of the other integral types.  
 
 ## Complex
 
-The **System.Numerics.Complex** type represents a complex number, that is, a number with a real number part and an imaginary number part. It supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators, as well as mathematical, algebraic, and trigonometric methods. 
+The [System.Numerics.Complex](http://dotnet.github.io/api/System.Numerics.Complex.html) type represents a complex number, that is, a number with a real number part and an imaginary number part. It supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators, as well as mathematical, algebraic, and trigonometric methods. 
 
 ## SIMD-enabled vector types
 
-The **System.Numerics** namespace includes a set of SIMD-enabled vector types for .NET Core. SIMD allows some operations to be parallelized at the hardware level, which results in huge performance improvements in mathematical, scientific, and graphics apps that perform computations over vectors. 
+The `System.Numerics` namespace includes a set of SIMD-enabled vector types for .NET Core. SIMD allows some operations to be parallelized at the hardware level, which results in huge performance improvements in mathematical, scientific, and graphics apps that perform computations over vectors. 
 
 The SIMD-enabled vector types in .NET Core include the following: 
 
-* [System.Numerics.Vector2](http://dotnet.github.io/api/System.Numerics.Vector2.html), [System.Numerics.Vector3](http://dotnet.github.io/api/System.Numerics.Vector3.html), and [System.Numerics.Vector4](http://dotnet.github.io/api/System.Numerics.Vector4.html) types, which are 2-, 3-, and 4-dimensional vectors of type **Single**.
+* [System.Numerics.Vector2](http://dotnet.github.io/api/System.Numerics.Vector2.html), [System.Numerics.Vector3](http://dotnet.github.io/api/System.Numerics.Vector3.html), and [System.Numerics.Vector4](http://dotnet.github.io/api/System.Numerics.Vector4.html) types, which are 2-, 3-, and 4-dimensional vectors of type `Single`.
 
 * The [Vector&lt;T&gt;](http://dotnet.github.io/api/System.Numerics.Vector%601.html) structure that allows you to create a vector of any primitive numeric type. The primitive numeric types include all numeric types in the System namespace except for Decimal.
 

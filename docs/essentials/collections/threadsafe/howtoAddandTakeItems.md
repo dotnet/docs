@@ -1,8 +1,8 @@
 # How to: Add and Take Items Individually from a BlockingCollection
 
-This example shows how to add and remove items from a [BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) in both a blocking and non-blocking manner. For more information on **BlockingCollection&lt;T&gt;**, see [BlockingCollection Overview](blockingCollectionOverview.md). 
+This example shows how to add and remove items from a [BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) in both a blocking and non-blocking manner. For more information on `BlockingCollection<T>`, see [BlockingCollection Overview](blockingCollectionOverview.md). 
 
-For an example of how to enumerate a **BlockingCollection&lt;T&gt;** until it is empty and no more elements will be added, see [How to: Use ForEach to Remove Items in a BlockingCollection](howtoUseForEachtoRemove.md).
+For an example of how to enumerate a `BlockingCollection<T>` until it is empty and no more elements will be added, see [How to: Use ForEach to Remove Items in a BlockingCollection](howtoUseForEachtoRemove.md).
 
 ## Example
 
@@ -73,7 +73,7 @@ class Program
 
 ## Example
 
-This second example shows how to add and take items so that the operations will not block. If no item is present, or maximum capacity on a bounded collection has been reached, or the timeout period has elapsed, then the **TryAdd** or **TryTake** operation returns false. This allows the thread to do some other useful work for awhile and then try again later to either retrieve a new item, or try to add the same item that could not be added previously. The program also demonstrates how to implement cancellation when accessing a **BlockingCollection&lt;T&gt;**.
+This second example shows how to add and take items so that the operations will not block. If no item is present, or maximum capacity on a bounded collection has been reached, or the timeout period has elapsed, then the `TryAdd` or `TryTake` operation returns false. This allows the thread to do some other useful work for awhile and then try again later to either retrieve a new item, or try to add the same item that could not be added previously. The program also demonstrates how to implement cancellation when accessing a `BlockingCollection<T>`.
 
 ```csharp
 using System;

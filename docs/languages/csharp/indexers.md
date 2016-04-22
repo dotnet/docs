@@ -10,8 +10,8 @@ of values.
 
 # Indexer Syntax
 
-You access an indexer using square brackets. The arguments to the
-indexer are placed inside the brackets:
+You access an indexer using square brackets. You place the indexer
+arguments inside the brackets:
 
 ```cs
 var item = someObject["key"];
@@ -63,7 +63,7 @@ type rather than using one of the built-in collections.
 
 One of the most common scenarios for creating indexers is when your
 type models an array, or a vector. Anytime your type models an ordered
-list of data, you can create an index to model that. 
+list of data, you can create an indexer to model that. 
 
 The advantage of creating your own indexer is that you can define
 the storage for that collection to suit your needs. Imagine a

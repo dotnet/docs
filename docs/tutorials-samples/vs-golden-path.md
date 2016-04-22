@@ -6,7 +6,7 @@ The scripts in this document describe the steps necessary to build a number of t
 Prerequisites
 -------------
 
-These scripts assume that .NET Core CLI (latest RC2 version), Visual Studio Update 2, and Visual Studio tooling (latest RC2 version) are installed on the machine.
+These scripts assume that .NET Core CLI (latest RC2 version), Visual Studio 2015 Update 2, and Visual Studio tooling (latest RC2 version) are installed on the machine.
 
 A solution using only .NET Core projects
 ----------------------------------------

@@ -1,7 +1,5 @@
 ﻿# Learn C# # 
 
-
-
 *  [🔧 Syntax](syntax.md)
 *  [🔧 Features at a glance](features.md)
 *  [🔧 C# Type system](type-system.md)

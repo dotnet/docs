@@ -13,9 +13,9 @@ namespace IndexersSamples
     {
         public static void Main(string[] args)
         {
-            // SampleOne();
-            // SampleTwo(args);
-            // SampleThree();
+            SampleOne();
+            SampleTwo(args);
+            SampleThree();
             SampleFour();
         }
         

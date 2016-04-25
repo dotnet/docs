@@ -30,7 +30,8 @@ namespace IndexersSamples.SampleTwo
             get
             {
                 Action action;
-                return argsActions.TryGetValue(s, out action) ? action : default(Action);
+                Action defaultAction = () => {} ;
+                return argsActions.TryGetValue(s, out action) ? action : defaultAction;
             }
         }
 

@@ -1,12 +1,13 @@
 using System;
 using IndexersSamples.Common;
 
-using DateMeasurements = System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>;
-using CityDataMeasurements = System.Collections.Generic.Dictionary<string, System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>>;
+using DateMeasurements = 
+    System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>;
+using CityDataMeasurements = 
+    System.Collections.Generic.Dictionary<string, System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>>;
 
 namespace IndexersSamples.SampleFour
 {
-
     public class HistoricalWeatherData
     {
         readonly CityDataMeasurements storage = new CityDataMeasurements();

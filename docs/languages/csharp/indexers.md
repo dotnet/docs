@@ -2,15 +2,15 @@
 
 Author: [Bill Wagner](https://github.com/BillWagner)
 
-*Indexers* are similar to properties. In many ways they indexers build
-on the same language features as  [properties](properties.md). Indexers
-enable *indexed* properties: properties that include one or more
+*Indexers* are similar to properties. In many ways indexers build
+on the same language features as [properties](properties.md). Indexers
+enable *indexed* properties: properties referenced using one or more
 arguments. Those arguments provide an index into some collection
 of values.
 
 # Indexer Syntax
 
-You access an indexer using square brackets. You place the indexer
+You access an indexer through a variable name and square brackets . You place the indexer
 arguments inside the brackets:
 
 ```cs
@@ -19,7 +19,7 @@ someObject["AnotherKey"] = item;
 ```
 
 You declare indexers using the `this` keyword as the property name, and
-placing the arguments within square brackets. This declaration would match
+declaring the arguments within square brackets. This declaration would match
 the usage shown in the previous paragraph:
 
 ```cs
@@ -40,44 +40,170 @@ You may also specify read-only indexers (by omitting the set accessor),
 or write-only indexers (by omitting the get accessor).
 
 The one feature supported by properties that is not supported by indexers
-is *auto implemented properties*. That's because the compiler cannot always
+is *auto implemented properties*. The compiler cannot always
 generate the correct storage for an indexer.
 
-Indexers extend properties by enabling one or more arguments. The first
-example used a single string as the argument. You can define multiple
-indexers in a single class. However, different indexers must be
-distinguished by their arguments. For example, you can have one
-indexer that has a single integer argument, and another that has a single
-string. You cannot create multiple indexers that each take a single
-integer. Let's explore different scenarios where you might use one
-or more indexers in a class definition. 
+The presence of arguments to reference an item in a set of items distinguishes
+indexers from properties. You may define mulitple indexers on a type, as long
+as the argument lists for each indexer is unique. Let's explore different
+scenarios where you might use one or more indexers in a class definition. 
 
 # Scenarios
 
-You would define *indexers* in your class when that type models a
-collection where you define the arguments to that collection. Your type
-may have other responsibilities as well, which is why you created a
-type rather than using one of the built-in collections.
+You would define *indexers* in your type when its API models some
+collection where you define the arguments to that collection. Your indexers
+may or may not map directly to the BCL collection types. Your type
+may have other responsibilities in addition to modeling a collection.
+Indexers enable you to provide the API that matches your type's abstraction
+without exposing the inner details of how the values for that abstraction
+are stored or computed.
+
+Let's walk through some of the common scenarios for using *indexers*.
+The code for all the samples is available at the core-docs [GitHub
+repository](https://github.com/dotnet/core-docs). Or, you can
+access the 
+[sample folder](https://github.com/dotnet/core-docs/tree/indexers-and-indexed-properties/samples/csharp-language/indexers)
+directly.
 
 ## Arrays and Vectors
 
 One of the most common scenarios for creating indexers is when your
-type models an array, or a vector. Anytime your type models an ordered
-list of data, you can create an indexer to model that. 
+type models an array, or a vector. You can create an indexer to model
+an ordered list of data. 
 
 The advantage of creating your own indexer is that you can define
 the storage for that collection to suit your needs. Imagine a
 scenario where your type models historical data that is too large
-to load into memory at once. This implementation models that. It reports
-on how many data points exist, and retrieves pages of them when needed
-from an indexer. Those pages are removed from memory when room is needed
-for more recent requests.
+to load into memory at once. You need to load and unload sections
+of the collection based on usage. The example following models
+this behavior. It reports on how many data points exist. It creates
+pages to hold sections of the data on demand. It removes pages
+from memory to make room for pages needed by more recent requests.
 
-<< sample >>
+```cs
+public class DataSamples
+{
+    private class Page
+    {
+        private readonly List<Measurements> pageData = new List<Measurements>();
+        private readonly int startingIndex;
+        private readonly int length;
+        private bool dirty;
+        private DateTime lastAccess;
+
+        public Page(int startingIndex, int length)
+        {
+            this.startingIndex = startingIndex;
+            this.length = length;
+            lastAccess = DateTime.Now;
+
+            // This stays as random stuff:
+            var generator = new Random();
+            for(int i=0; i < length; i++)
+            {
+                var m = new Measurements
+                {
+                    HiTemp = generator.Next(50, 95),
+                    LoTemp = generator.Next(12, 49),
+                    AirPressure = 28.0 + generator.NextDouble() * 4
+                };
+                pageData.Add(m);
+            }
+        }
+        public bool HasItem(int index) =>
+            ((index >= startingIndex) &&
+            (index < startingIndex + length));
+
+        public Measurements this[int index]
+        {
+            get
+            {
+                lastAccess = DateTime.Now;
+                return pageData[index - startingIndex];
+            }
+            set
+            {
+                pageData[index - startingIndex] = value;
+                dirty = true;
+                lastAccess = DateTime.Now;
+            }
+        }
+
+        public bool Dirty => dirty;
+        public DateTime LastAccess => lastAccess;
+    }
+
+    private readonly int totalSize;
+    private readonly List<Page> pagesInMemory = new List<Page>();
+
+    public DataSamples(int totalSize)
+    {
+        this.totalSize = totalSize;
+    }
+
+    public Measurements this[int index]
+    {
+        get
+        {
+            if (index < 0)
+                throw new IndexOutOfRangeException("Cannot index less than 0");
+            if (index >= totalSize)
+                throw new IndexOutOfRangeException("Cannot index past the end of storage");
+
+            var page = updateCachedPagesForAccess(index);
+            return page[index];
+        }
+        set
+        {
+            if (index < 0)
+                throw new IndexOutOfRangeException("Cannot index less than 0");
+            if (index >= totalSize)
+                throw new IndexOutOfRangeException("Cannot index past the end of storage");
+            var page = updateCachedPagesForAccess(index);
+
+            page[index] = value;
+        }
+    }
+
+    private Page updateCachedPagesForAccess(int index)
+    {
+        foreach (var p in pagesInMemory)
+        {
+            if (p.HasItem(index))
+            {
+                return p;
+            }
+        }
+        var startingIndex = (index / 1000) * 1000;
+        var newPage = new Page(startingIndex, 1000);
+        addPageToCache(newPage);
+        return newPage;
+    }
+
+    private void addPageToCache(Page p)
+    {
+        if (pagesInMemory.Count > 4)
+        {
+            // remove oldest non-dirty page:
+            var oldest = pagesInMemory
+                .Where(page => !page.Dirty)
+                .OrderBy(page => page.LastAccess)
+                .FirstOrDefault();
+            // Note that this may keep more than 5 pages in memory
+            // if too much is dirty
+            if (oldest != null)
+                pagesInMemory.Remove(oldest);
+        }
+        pagesInMemory.Add(p);
+    }
+}
+```
 
 You can follow this design idiom to model any sort of collection where
 there are good reasons not to load the entire set of data into an in-
-memory collection.
+memory collection. Notice that the `Page` class is a private nested
+class that is not part of the public interface. Those details are hidden
+from any users of this class.
 
 ## Dictionaries
 
@@ -85,47 +211,193 @@ The second most common scenario is when you need to model a dictionary
 or a map. This scenario is when your type stores values based on key,
 typically text keys. This example creates a dictionary that maps command
 line arguments to [lamdba expressions](delegates-overview.md) that manage
-those options. You can create a dictionary that can easily manage how
-a command line is processed.
+those options. The following example shows two classes: an `ArgsActions`
+class that maps a command line option to an `Action` delegate, and an
+`ArgsProcessor` that uses the `ArgsActions` to execute each `Action` when
+it encounters that option.
 
-<< Example >>
+```cs
+public class ArgsProcessor
+{
+    private readonly ArgsActions actions;
 
-<< Probably more text too >>
+    public ArgsProcessor(ArgsActions actions)
+    {
+        this.actions = actions;
+    }
 
-Notice again that the indexer need not map directly to a storage
-collection. One of the major benefits of writing an indexer is to
-create that abstraction.
+    public void Process(string[] args)
+    {
+        foreach(var arg in args)
+        {
+            actions[arg]?.Invoke();
+        }
+    }
+
+}
+public class ArgsActions
+{
+    readonly private Dictionary<string, Action> argsActions = new Dictionary<string, Action>();
+
+    public Action this[string s]
+    {
+        get
+        {
+            Action action;
+            Action defaultAction = () => {} ;
+            return argsActions.TryGetValue(s, out action) ? action : defaultAction;
+        }
+    }
+
+    public void SetOption(string s, Action a)
+    {
+        argsActions[s] = a;
+    }
+}
+```
+
+In this example, the `ArgsAction` collection maps closely to the underlying collection.
+The `get` determines if a given option has been configured. If so, it returns
+the `Action` associated with that option. If not, it returns an `Action` that 
+does nothing. The public accessor does not include a `set` accessor. Rather,
+the design using a public method for setting options.
 
 ## Multi-Dimensional Maps
 
 You can create indexers that use multiple arguments. In addition,
-those arguments are not limited by type.  
+those arguments are not constrained to be the same type. Let's look at
+two examples.   
 
-This class generates values for a Mandelbrot set. For more information
-on the mathematics behind the set, read
-[this article](https://en.wikipedia.org/wiki/Mandelbrot_set). Notice
-that the indexer uses two doubles to define a point in the X, Y plane.
+The first example shows a class that generates values for a Mandelbrot
+set. For more information on the mathematics behind the set, read
+[this article](https://en.wikipedia.org/wiki/Mandelbrot_set). 
+The indexer uses two doubles to define a point in the X, Y plane.
 The get accessor computes the number of iterations until a point is
-clearly not in the set. If the maximum iterations is reached, the point
-is in the set, and MAX_INT is returned.
+determined to be not in the set. If the maximum iterations is reached, the point
+is in the set, and the class's maxIterations value is returned. (The computer
+generated images popularized for the Mandelbrot set define colors for the
+number of iterations necessary to determine that a point is outside the set.
 
-<< Example >>
+```cs
+public class Mandelbrot
+{
+    readonly private int maxIterations;
 
-As another example, consider a program that manages historical temperature
+    public Mandelbrot(int maxIterations)
+    {
+        this.maxIterations = maxIterations;
+    }
+
+    public int this [double x, double y]
+    {
+        get
+        {
+            var iterations = 0;
+            var x0 = x;
+            var y0 = y;
+
+            while ((x*x + y * y < 4) &&
+                (iterations < maxIterations))
+            {
+                var newX = x * x - y * y + x0;
+                y = 2 * x * y + y0;
+                x = newX;
+                iterations++;
+            }
+            return iterations;
+        }
+    }
+}
+```
+
+The Mandelbrot Set defines values at every (x,y) coordinate for real number values.
+That defines a dictionary that could contain an infinite number of values. Therefore,
+there is no storage behind the set. Instead, this class computes the value for each
+point when code calls the `get` accessor. There's no underlying storage used.
+
+Let's example one last use of indexers, where the indexer takes multiple arguments
+of different types. Consider a program that manages historical temperature
 data. This indexer uses a city and a date to set or get the high and low 
 temperatures for that location:
 
-<< Exmaple >>
+```cs
+using DateMeasurements = 
+    System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>;
+using CityDataMeasurements = 
+    System.Collections.Generic.Dictionary<string, System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>>;
 
-You are not limited by the types or number of the arguments. The only restriction
-is that any indexer must have a unique set of arguments.
+public class HistoricalWeatherData
+{
+    readonly CityDataMeasurements storage = new CityDataMeasurements();
+
+    public Measurements this[string city, DateTime date]
+    {
+        get
+        {
+            var cityData = default(DateMeasurements);
+
+            if (!storage.TryGetValue(city, out cityData))
+                throw new ArgumentOutOfRangeException(nameof(city), "City not found");
+
+            // strip out any time portion:
+            var index = date.Date;
+            var measure = default(Measurements);
+            if (cityData.TryGetValue(index, out measure))
+                return measure;
+            throw new ArgumentOutOfRangeException(nameof(date), "Date not found");
+        }
+        set
+        {
+            var cityData = default(DateMeasurements);
+
+            if (!storage.TryGetValue(city, out cityData))
+            {
+                cityData = new DateMeasurements();
+                storage.Add(city, cityData);
+            }
+
+            // Strip out any time portion:
+            var index = date.Date;
+            cityData[index] = value;
+        }
+    }
+}
+```
+
+This example creates an indexer that maps weather data on two different
+arguments: a city (represented by a `string`) and a date (represented by
+a `DateTime`). The internal storage uses two `Dictionary` classes to represent
+the two-dimensional dictionary. The public API no longer represents the
+underlying storage. Rather, the language features of indexers enables you
+to create a public interface that represents your abstraction, even though
+the underlying storage must use different core collection types.
+
+There are two parts of this code that may be unfamiliar
+to some developers. These two `using` statements:
+
+```cs
+using DateMeasurements = System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>;
+using CityDataMeasurements = System.Collections.Generic.Dictionary<string, System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>>;
+```
+
+create an *alias* for a constructed generic type. Those statements enable the
+code later to use the more descriptive `DateMeasurements` and `CityDateMeasurements`
+names instead of the generic construction of `Dictionary<DateTime, Measurements>`
+and `Dictionary<string, Dictionary<DateTime, Measurements> >`. 
+This construct does require using the fully qualified type names on the right
+side of the `=` sign.
+
+The second technique is to strip off the time portions of any `DateTime` object
+used to index into the collections. The .NET BCL does not include a Date only type.
+Developers use the `DateTime` type, but use the `Date` property to ensure that any
+`DateTime` object from that day are equal.
 
 # Summing Up
 
-You should create indexers anytime you have have a property-like element in your
+You should create indexers anytime you have a property-like element in your
 class where that property represents not a single value, but rather a collection
 of values where each individual item is identified by a set of arguments. Those
-arguments can uniquely identify which item in the collection shoudl be referenced.
+arguments can uniquely identify which item in the collection should be referenced.
 Indexers extend the concept of [properties](properties.md), where a member is treated
 like a data item from outside the class, but like a method on the side. Indexers allow
 arguments to find a single item in a property that represents a set of items.

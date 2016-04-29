@@ -23,19 +23,19 @@ A solution using only .NET Core projects
 ### Writing the test project
 
 1. Create a "test" solution folder. This is only a solution folder, not a physical folder.
-2. Right-click the new "test" solution folder, add/new .NET Core class library project, call it "TestLibrary" and explicitly put it under `Golden/test`.
+2. Right-click the new "test" solution folder, add/new .NET Core console application project, call it "TestLibrary" and explicitly put it under `Golden/test`. *Important*: the project needs to be a console application, not a class library.
 3. Right-click References and choose "Add reference". Check "Library" under Projects/solution.
-4. Add references to `Newtonsoft.Json`, `Microsoft.NETCore.Portable.Compatibility`, and add `"imports": [ "portable-net40+sl5+win8+wp8+wpa81", "dotnet" ]` to `frameworks/netstandard1.5` in `project.json`. Restore packages. (\*)
-5. Add the `xUnit` and `xunit.runner.visualstudio` packages from nuget.org to the project. Use "portable-net45+win8+wp8+wpa81" in the imports in project.json.
+5. Add the `xUnit` 2.1.0 and `dotnet-test-xunit` 1.0.0-rc2-* packages from nuget.org to the project. Use "portable-net45+win8", "dotnet" in the imports in project.json.
 6. Go back to packages and install `Microsoft.NETCore.Portable.Compatibility` from the Core MyGet package source (use the latest rc2 version). Restore packages. (\*)
-7. Rename `Class1.cs` to `LibraryTests.cs`, add the following code to the class:
+7. Add a `LibraryTests.cs`, add the following code to the class:
     ```csharp
         [Fact]
         public void ThingGetsObjectValFromNumber() {
             Assert.Equal(42, new Thing().Get(42));
         }
     ```
-8. Build. Test -> Windows -> Test Explorer. Run all tests. (this doesn't work)
+8. Optionally, remove the main class and remove `"compilationOptions": {"emitEntryPoint": true}` from `project.json`.
+9. Build. Test -> Windows -> Test Explorer. Run all tests. (this doesn't work)
 
 ### Writing the console app
 

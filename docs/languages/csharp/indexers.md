@@ -39,8 +39,9 @@ different access modifiers for the get and set accesssors in an indexer.
 You may also specify read-only indexers (by omitting the set accessor),
 or write-only indexers (by omitting the get accessor).
 
-The one feature supported by properties that is not supported by indexers
-is *auto implemented properties*. The compiler cannot always
+You can apply almost everything you learn from working with properties
+to indexers. The only exception to that rule is
+*auto implemented properties*. The compiler cannot always
 generate the correct storage for an indexer.
 
 The presence of arguments to reference an item in a set of items distinguishes
@@ -52,7 +53,8 @@ scenarios where you might use one or more indexers in a class definition.
 
 You would define *indexers* in your type when its API models some
 collection where you define the arguments to that collection. Your indexers
-may or may not map directly to the BCL collection types. Your type
+may or may not map directly to the collection types that are part of the .NET
+core framework. Your type
 may have other responsibilities in addition to modeling a collection.
 Indexers enable you to provide the API that matches your type's abstraction
 without exposing the inner details of how the values for that abstraction
@@ -207,7 +209,7 @@ from any users of this class.
 
 ## Dictionaries
 
-The second most common scenario is when you need to model a dictionary
+Another common scenario is when you need to model a dictionary
 or a map. This scenario is when your type stores values based on key,
 typically text keys. This example creates a dictionary that maps command
 line arguments to [lamdba expressions](delegates-overview.md) that manage
@@ -315,7 +317,7 @@ That defines a dictionary that could contain an infinite number of values. There
 there is no storage behind the set. Instead, this class computes the value for each
 point when code calls the `get` accessor. There's no underlying storage used.
 
-Let's example one last use of indexers, where the indexer takes multiple arguments
+Let's examine one last use of indexers, where the indexer takes multiple arguments
 of different types. Consider a program that manages historical temperature
 data. This indexer uses a city and a date to set or get the high and low 
 temperatures for that location:
@@ -388,7 +390,7 @@ This construct does require using the fully qualified type names on the right
 side of the `=` sign.
 
 The second technique is to strip off the time portions of any `DateTime` object
-used to index into the collections. The .NET BCL does not include a Date only type.
+used to index into the collections. The .NET framework does not include a Date only type.
 Developers use the `DateTime` type, but use the `Date` property to ensure that any
 `DateTime` object from that day are equal.
 

@@ -1,14 +1,13 @@
 ﻿# Learn C# # 
 
-
-
 *  [🔧 Syntax](syntax.md)
 *  [🔧 Features at a glance](features.md)
 *  [🔧 C# Type system](type-system.md)
 *  [Properties](properties.md)
+*  [Indexers](indexers.md)
 *  [🔧 Lambda Expressions](lambda-expressions.md)
 *  [Iterators](iterators.md)
-*  [🔧 Delegates & events](delegates-events.md)
+*  [Delegates & events](delegates-events.md)
 *  [🔧 Generics](generics.md)
 *  [🔧 Language Integrated Query (LINQ)](linq.md)
 *  [Expression Trees](expression-trees.md)

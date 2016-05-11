@@ -5,7 +5,7 @@ RUN apt-get -qq update && apt-get install -qqy sqlite3 libsqlite3-dev && rm -rf 
 
 COPY . /app
 WORKDIR /app
-RUN ["dnu", "restore"]
+RUN ["dotnet", "restore"]
 
 EXPOSE 5000/tcp
-ENTRYPOINT ["dnx", "-p", "project.json", "web"]
+ENTRYPOINT ["dotnet", "run"]

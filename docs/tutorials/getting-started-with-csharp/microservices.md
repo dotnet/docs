@@ -81,24 +81,23 @@ The template creates six files for you:
 * A wwwroot/web.config file. This contains basic configuration information.
 
 Now you can run the template generated application. That's done using a series
-of tools from the command line. The current version of ASP.NET uses two command
-line tools for building and running your applications: dnu and dnx. Dnu is the .NET Execution
-Environment Utility. Dnx is the .NET Execution Engine. 
+of tools from the command line. The `dotnet` command runs the tools necessary
+for .NET development. Each verb execute a different command
 
-The first step is to restore all the dependencies using dnu:
+The first step is to restore all the dependencies:
 
-`dnu restore`
+`dotnet restore`
 
-Dnu restore uses the NuGet package manager to install all the necessary packages
+Dotnet restore uses the NuGet package manager to install all the necessary packages
 into the application directory. It also generates a project.json.lock file. This
 file contains information about each package that is referenced. After restoring
 all the dependencies, you build the application:
 
-`dnu build`
+`dotnet build`
 
-And once you build the application, you run it from the command line using dnx:
+And once you build the application, you run it from the command line:
 
-`dnx web`
+`dotnet run`
 
 The default configuration listens to http://localhost:5000. You can open a
 browser and navigate to that page and see a "Hello World!" message.

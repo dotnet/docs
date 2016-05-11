@@ -193,7 +193,14 @@ to add that using statement at the top of file:
 using System.Threading.Tasks;
 ```
 
-Run the sample, and check the output.Now, each single word is printed,
+> Note: In RC2, you need to run the application using a different
+> command to see the correct output. This is due to an issue
+> in the CLI that [has been filed](https://github.com/dotnet/cli/issues/2976).
+> To run the application, instead of `dotnet run` use
+> `dotnet .\bin\Debug\netcoreapp1.0\console-teleprompter.dll` 
+> substituting the correct path to your output DLL.  
+
+Run the sample, and check the output. Now, each single word is printed,
 followed by a 200 ms delay. However, the displayed output shows some
 issues because the source text file has several lines that have more than
 80 characters without a line break. That can be hard to read while it's

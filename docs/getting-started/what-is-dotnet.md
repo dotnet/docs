@@ -1,4 +1,4 @@
-# 🔧 What is the .NET Core Platform?
+# What is the .NET Core Platform?
 
 .NET Core is a modular, cross-platform, open source implementation of the .NET Framework that runs on Windows devices, as well as on Linux and Mac OSX. Unlike the .NET Framework, .NET Core consists of a set of runtime and library components that can be used in various configurations, depending on the needs of your application.
 
@@ -30,7 +30,7 @@ To get a better sense of what .NET Core is, let’s compare it to the.NET Framew
 </td>
 </tr>
 <tr>
-<td>Can be used to develop apps that take advantage of a number of technologies, such as ASP .NET Core, for building web applications; Windows Communication Foundation (WCF), for building services, including SOAP; and Workflow Foundation (WF), for building workflows. 
+<td>Can be used to develop apps that take advantage of a number of technologies, such as ASP .NET Core, for building web applications; Windows Communication Foundation (WCF), for building applications that communicate with existing WCF services; and Workflow Foundation (WF), for building workflows. 
 </td>
 <td>Can be used to develop apps that take advantage of a number of technologies, such as ASP .NET and ASP.NET Web Forms, for building web applications; Windows Communication Foundation (WCF), for building services, including SOAP; and Workflow Foundation (WF), for building workflows. 
 </td>
@@ -44,9 +44,9 @@ Starting with Windows 8, a version of the .NET Framework is installed as an oper
 </tr>
 </table>
 
-Although the .NET Framework and .NET Core target different platforms and represent different approaches to application development and deployment, they both conform to the .NET Standard 1.3. This means that they offer a high degree of compatibility and identical behavior between one another. In particular:
+Although the .NET Framework and .NET Core target different platforms and represent different approaches to application development and deployment, they both conform to the [.NET Standard 1.3](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md ".NET Standard 1.3"). This means that they offer a high degree of compatibility and identical behavior between one another. In particular:
     
-- Their high degree of compatibility is makes it easy for .NET Framework developers to develop applications with .NET Core that target different platforms and devices.
+- Their high degree of compatibility makes it easy for .NET Framework developers to develop applications with .NET Core that target different platforms and devices.
 - Their high degree of compatibility also makes it easy for .NET Core developers to develop applications with the .NET Framework that target Windows desktop, tablet, and phone.
 - Libraries written for the .NET Framework or .NET Core can easily be made to work on the other platform. 
 
@@ -55,11 +55,11 @@ Although the .NET Framework and .NET Core target different platforms and represe
 
 A number of development technologies depend on customized implementations of .NET Core. When you develop apps using these technologies, you may not be aware that you are taking advantage of .NET Core:
 
-- ASP.NET Core.  ASP.NET Core is a modular version of ASP.NET that combines ASP.NET MVC and the ASP.NET web API. It runs on both the .NET Framework and .NET Core and is designed for building high-performance cloud and microservice-style applications; it is not intended as a replacement to ASP.NET in the .NET Framework.
+- ASP.NET Core.  ASP.NET Core is a modular version of ASP.NET that combines ASP.NET MVC and the ASP.NET web API. It runs on both the .NET Framework and .NET Core and is designed for building high-performance cloud and microservice-style applications; it is not intended as a replacement to ASP.NET in the .NET Framework. For information on ASP.NET Core, see [Introduction to ASP.NET 5](http://docs.asp.net/en/latest/conceptual-overview/aspnet.html "Introduction to ASP.NET 5").
 
 - .NET Native. .NET Native is a compilation and deployment technology for Universal Windows Platform (UWP) apps written in C# and Visual Basic. .NET Native compiles apps to native code, and statically links into an application's assemblies only those code elements from .NET Core libraries and other third-party libraries that are actually used. For information on .NET Native, see [Compiling Apps with .NET Native](https://msdn.microsoft.com/library/dn584397.aspx).
 
-- Universal Windows Platform (UWP) applications. The Universal Windows Platform allows you to build a single application that can run on the Windows desktop, Windows tablet devices, and Windows Phone. These applications can also be placed in the Windows Store. UWP applications are compiled to native code for their target platforms by .NET Native.   
+- Universal Windows Platform (UWP) applications. The Universal Windows Platform allows you to build a single application that can run on the Windows desktop, Windows tablet devices, and Windows Phone. These applications can also be placed in the Windows Store. UWP applications are compiled to native code for their target platforms by .NET Native. For more information, see [Get started with Windows apps](https://developer.microsoft.com/en-us/windows/getstarted "Get started with Windows apps").   
 
 # .NET Core Components #
 
@@ -73,11 +73,11 @@ CoreCLR, or the common language runtime found in .NET Core, is a lightweight run
 
 - A just-in-time (JIT) compiler. which compiles IL, or .NET intermediate language, to native machine code at runtime. On some architectures, the JIT compiler includes support for SIMD hardware acceleration.
 
-- An exception handling mechanism. The runtime, as well as library code, throws exceptions, which you can handle with try/catch statements.   
+- An exception handling mechanism, which allows you to handle exceptions with try/catch statements.   
 
 ##The Class Library. 
 
-The class library available in .NET Core is very much like the .NET Framework Class Library for the Windows desktop, with one major difference. Whereas on the Windows desktop is a monolithic library that is part of the operating system and is maintained by Windows Update, on .NET Core it is a modular and factored collection of individual libraries organized by functionality. 
+The class library available in .NET Core is very much like the .NET Framework Class Library for the Windows desktop, with one major difference. On the Windows desktop, it is a monolithic library that is part of the operating system and is maintained by Windows Update. On .NET Core it is a modular and factored collection of individual libraries organized by functionality. 
 
 One library, the Microsoft.NetCore.App, is included with the runtime and contains the basic types needed for all application development. Some of these include:
 
@@ -85,7 +85,7 @@ One library, the Microsoft.NetCore.App, is included with the runtime and contain
   
 -  General-purpose exception classes, such as the ArgumentException, ArgumentNullException, and NullReferenceException types.
 
-- The task types, such as Task and Task<T>, to support asynchronous programming.
+- The task types, such as Task and Task&lt;T&gt;, to support asynchronous programming.
 
 - Basic threading types, to support multithreaded application development.
 
@@ -95,15 +95,21 @@ Other libraries are installed as [NuGet](http://www.nuget.org/ "NuGet") packages
 
 ## .NET Core CLI ##
 
-.NET Core includes a new cross-platform command-line SDK known as the CLI (for Command-Line Interface). The CLI is a UNIX-friendly set of tools for building .NET Core applications. It abstracts the C# compiler, the NuGet package manager, and includes incremental build logic. It can also integrate with the .NET Native tool chain to produce high-performance native apps and libraries. The CLI allows developers to build and test applications with a minimal installation on developer, lab, or production machines. Since some IDEs, such as Visual Studio Code nad Visual Studio, use the CLI under the covers, developers can now choose the level they want to interact with the tool chain by working with the CLI directly, using an editor that uses the CLI, or developing with an IDE that uses the CLI internally.  
+.NET Core includes a new cross-platform command-line SDK known as the CLI (for Command-Line Interface). The CLI is a UNIX-friendly set of tools for building .NET Core applications. It abstracts the C# compiler, the NuGet package manager, and includes incremental build logic. It can also integrate with the .NET Native tool chain to produce high-performance native apps and libraries. The CLI allows developers to build and test applications with a minimal installation on developer, lab, or production machines. Since some IDEs, such as Visual Studio Code and Visual Studio, use the CLI under the covers, developers can now choose the level they want to interact with the tool chain by working with the CLI directly, using an editor that uses the CLI, or developing with an IDE that uses the CLI internally.  
 
 ## Language Support and Development Environments ##
 
-.NET Core provides a runtime environment for your app, as well as a collection of libraries whose types and members your application can use. .NET Core itself is language agnostic: it is not a programming language, but any programming languages that targets .NET Core can be used to develop .NET Core applications, and an application written in one programming language can seamlessly access types and members in libraries developed by using a different programming language. 
+.NET Core provides a runtime environment for your app, as well as a collection of libraries whose types and members your application can use. .NET Core itself is language agnostic: it is not a programming language, but any programming language that targets .NET Core can be used to develop .NET Core applications, and an application written in one programming language can seamlessly access types and members in libraries developed by using a different programming language. 
  
-You develop and compile .NET Core apps by using the [.NET Compiler Platform](https://github.com/dotnet/roslyn "Roslyn Compiler Platform"), also known as Roslyn, which allows you to write your apps in C# or F#. (At the moment, other languages are not supported, though that will change going forward.) 
+You develop and compile .NET Core apps in either of two languages:
 
-You have a wide choice of development environments for writing your app, ranging from a simple text editor or programmer's editor of your choice to [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code"), to [Visual Studio 2015](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx "Visual Studio 2015"), to [Unity](http://unity3d.com/unity "Unity").   
+- C#, which is based on the [.NET Compiler Platform](https://github.com/dotnet/roslyn "Roslyn Compiler Platform"), also known as Roslyn. 
+
+- [F#](https://channel9.msdn.com/Events/Build/2016/T661 "F#").
+ 
+(At the moment, other languages are not supported, though that will change going forward.) 
+
+You have a wide choice of development environments for writing your app, ranging from a simple text editor or programmer's editor of your choice to [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code"), to [Visual Studio 2015](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx "Visual Studio 2015").   
 
 # What's Different about .NET Core?  #
 
@@ -133,18 +139,17 @@ The .NET Framework on the Windows desktop allows you to create console applicati
 
 - Console applications can be compiled to run cross-platform on Windows, the Macintosh, and Linux.
 
-- Console applications can be compiled natively. This combines the benefits of a managed application with the performance of a native C/C++ native application. 
+- Console applications can be compiled natively. This combines the benefits of a managed application with the performance of a native C/C++ application. 
 
 ## Ease of Installation ##
 
 Because .NET Core is not an operating system component, installation does not require administrator privileges, and it does not touch system components like operating system directories or, on Windows systems, the Windows Registry. Installation is as simple as copying some files to a directory on the target computer or compiling the framework natively into the application. 
 
-Moreover, the particular set of 
 New developers can get started developing for .NET in under one minute, including downloading the frameworks and tools. You can install .NET Core from the [.NET Core getting started page](https://dotnet.github.io/getting-started/#/windows ".NET Core getting started page"). 
 
 ## Ease of Deployment ##
 
-Ordinarily, we you install an application that targets the .NET Framework on the desktop, you also should check which version of the .NET Framework is installed and, if the base version that your application requires is not present, chain to a .NET Framework installation routine.
+Ordinarily, when you install an application that targets the .NET Framework on the desktop, you also should check which version of the .NET Framework is installed and, if the base version that your application requires is not present, chain to a .NET Framework installation routine. 
 
 In contrast, you can deploy your .NET Core application by copying it to the target system. Along with your application itself, you can either copy the required .NET Framework libraries to the application folder, or you can include needed libraries in your application. In either case, the .NET libraries against which your application was developed are local to your application and are isolated from .NET Core libraries used by other applications.
 

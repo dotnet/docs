@@ -3,11 +3,9 @@
 .NET Core is a modular, cross-platform, open source implementation of the .NET Framework that runs on Windows devices, as well as on Linux and Mac OSX. Unlike the .NET Framework, .NET Core consists of a set of runtime and library components that can be used in various configurations, depending on the needs of your application.
 
 # .NET Core and the .NET Framework #
-<<<<<<< HEAD
+
 To get a better sense of what .NET Core is, let’s compare it to the .NET Framework 4.x:
-=======
-To get a better sense of what .NET Core is, let’s compare it to the.NET Framework 4.x:
->>>>>>> refs/remotes/origin/starting
+
 <table>
 <col style="width:50%">
 <col style="width:50%">

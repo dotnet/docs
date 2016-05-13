@@ -10,9 +10,9 @@ The following generic types correspond to existing collection types:
 
 *   [Dictionary&lt;TKey, TValue&gt;](https://dotnet.github.io/api/System.Collections.Generic.Dictionary%602.html) and [ConcurrentDictionary&lt;TKey, TValue&gt;](https://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentDictionary%602.html) are the generic classes that correspond to [Hashtable](https://dotnet.github.io/api/System.Collections.Hashtable.html). 
 
-*   [Collection&lt;T&gt;](https://dotnet.github.io/api/System.Collections.ObjectModel.Collection%601.html) is the generic class that corresponds to [CollectionBase](https://dotnet.github.io/api/System.Collections.CollectionBase.html). **Collection&lt;T&gt;** can be used as a base class, but unlike **CollectionBase**, it is not abstract. This makes it much easier to use.
+*   [Collection&lt;T&gt;](https://dotnet.github.io/api/System.Collections.ObjectModel.Collection%601.html) is the generic class that corresponds to [CollectionBase](https://dotnet.github.io/api/System.Collections.CollectionBase.html). `Collection&lt<T>` can be used as a base class, but unlike `CollectionBase`, it is not abstract. This makes it much easier to use.
 
-*   [ReadOnlyCollection&lt;T&gt;](https://dotnet.github.io/api/System.Collections.ObjectModel.ReadOnlyCollection%601.html) is the generic class that corresponds to [ReadOnlyCollectionBase](https://dotnet.github.io/api/System.Collections.ReadOnlyCollectionBase.html). **ReadOnlyCollection&lt;T&gt;** is not abstract, and has a constructor that makes it easy to expose an existing [List&lt;T&gt;](https://dotnet.github.io/api/System.Collections.Generic.List%601.html) as a read-only collection.
+*   [ReadOnlyCollection&lt;T&gt;](https://dotnet.github.io/api/System.Collections.ObjectModel.ReadOnlyCollection%601.html) is the generic class that corresponds to [ReadOnlyCollectionBase](https://dotnet.github.io/api/System.Collections.ReadOnlyCollectionBase.html). `ReadOnlyCollection<T>` is not abstract, and has a constructor that makes it easy to expose an existing [List&lt;T&gt;](https://dotnet.github.io/api/System.Collections.Generic.List%601.html) as a read-only collection.
 
 *   The [Queue&lt;T&gt;](https://dotnet.github.io/api/System.Collections.Generic.Queue%601.html), [ConcurrentQueue&lt;T&gt;](https://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentQueue%601.html), [Stack&lt;T&gt;](https://dotnet.github.io/api/System.Collections.Generic.Stack%601.html), [ConcurrentStack&lt;T&gt;](https://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentStack%601.html), and [SortedList&lt;TKey, TValue&gt;](https://dotnet.github.io/api/System.Collections.Generic.SortedList%602.html) generic classes correspond to the respective nongeneric classes with the same names.
 
@@ -32,7 +32,7 @@ Several generic collection types do not have nongeneric counterparts. They inclu
 
 ## LINQ to Objects
 
-The LINQ to Objects feature enables you to use LINQ queries to access in-memory objects as long as the object type implements the [System.Collections.IEnumerable](https://dotnet.github.io/api/System.Collections.IEnumerable.html) or [System.Collections.Generic.IEnumerable&lt;T&gt;](https://dotnet.github.io/api/System.Collections.Generic.IEnumerable%601.html) interface. LINQ queries provide a common pattern for accessing data; are typically more concise and readable than standard **foreach** loops; and provide filtering, ordering and grouping capabilities. LINQ queries can also improve performance.
+The LINQ to Objects feature enables you to use LINQ queries to access in-memory objects as long as the object type implements the [System.Collections.IEnumerable](https://dotnet.github.io/api/System.Collections.IEnumerable.html) or [System.Collections.Generic.IEnumerable&lt;T&gt;](https://dotnet.github.io/api/System.Collections.Generic.IEnumerable%601.html) interface. LINQ queries provide a common pattern for accessing data; are typically more concise and readable than standard `foreach` loops; and provide filtering, ordering and grouping capabilities. LINQ queries can also improve performance.
 
 ## Additional Functionality
 

@@ -270,6 +270,8 @@ If your project needs are relatively minimal and you can take advantage of the n
 
 ### When to pick a traditional project system
 
+**Note: .NET Core with the traditional project system is very limited in its capability.**
+
 You can target .NET Core with the traditional project system in Visual Studio, by creating a Portable Class Library (PCL) and selecting ".NET Core" in the project configuration dialog.
 
 If you have more intricate project system needs, this should be your choice.  It may also be the best choice if you're mixing .NET Core and .NET Framework code in a larger solution.  Note that if you wish to multitarget by generating platform-specific assemblies like with the `xproj` project system, you'll need to create a "Bait and Switch" PCL, as described in [How to Make Portable Class Libraries Work for You](https://blogs.msdn.microsoft.com/dsplaisted/2012/08/27/how-to-make-portable-class-libraries-work-for-you/).

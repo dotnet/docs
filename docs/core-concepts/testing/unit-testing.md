@@ -48,5 +48,3 @@ Try this [walkthrough creating unit tests with xunit and the .NET CLI](unit-test
 
 The XUnit team has written a tutorial that shows
 [how to use xunit with .NET Core and Visual Studio](http://xunit.github.io/docs/getting-started-dotnet-core.html).
-
-

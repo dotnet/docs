@@ -82,7 +82,7 @@ The template creates six files for you:
 
 Now you can run the template generated application. That's done using a series
 of tools from the command line. The `dotnet` command runs the tools necessary
-for .NET development. Each verb execute a different command
+for .NET development. Each verb executes a different command
 
 The first step is to restore all the dependencies:
 
@@ -122,7 +122,7 @@ The 'frameworks' node specifies the versions and configurations of the .NET
 framework that will run this application.
 
 The application is implemented in Startup.cs. This file contains the startup
-class. It's `Main()` method starts the web server, and instructs the web
+class. Its `Main()` method starts the web server, and instructs the web
 server that the web application class is this Startup class:
 
 `public static void Main(string[] args) => Microsoft.AspNet.Hosting.WebApplication.Run<Startup>(args);`
@@ -164,7 +164,7 @@ You'll begin by parsing the query string. The service will accept
 `http://localhost:5000/?lat=-35.55&long=-12.35`  
 
 All the changes you need to make are in the lambda expression
-defined as the argument to app.Run in your startup class.
+defined as the argument to `app.Run` in your startup class.
 
 The argument on the lambda expression is the `HttpContext` for the
 request. One of its properties is the `Request` object. The `Request`

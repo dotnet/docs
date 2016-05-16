@@ -1,20 +1,48 @@
-# 🔧 Unit Testing in .NET Core
+# Unit Testing in .NET Core
+
+By [Steve Smith](http://ardalis.com) and [Bill Wagner](https://github.com/BillWagner)
+
+.NET Core has been designed with testability in mind, so that creating
+unit tests for your applications is easier than ever before. This article
+briefly introduces unit tests (and how they differ from other kinds of tests)
+and demonstrates how to add a test project to your solution and then run unit
+tests using either the command line, your favorite editor or Visual Studio.
+
+# Getting Started with Testing
+ 
+Having a suite of automated tests is one of the best ways to ensure a
+software application does what its authors intended it to do. There are
+many different kinds of tests for software applications, including integration
+tests, web tests, load tests, and many others. At the lowest level are
+unit tests, which test individual software components or methods. Unit
+tests should only test code within the developer’s control, and should
+not test infrastructure concerns, like databases, file systems, or
+network resources. Unit tests may be written using
+[Test Driven Development (TDD)](http://deviq.com/test-driven-development/),
+or they can be added to existing code to confirm its correctness. In
+either case, they should be small, well-named, and fast, since ideally
+you will want to be able to run hundreds of them before pushing your
+changes into the project’s shared code repository.
 
 > **Note**
-> 
-> We are currently working on this topic.
 >
-> We welcome your input to help shape the scope and approach. You can
-> track the 
-> status and provide input on this [issue](https://github.com/dotnet/core-docs/issues/401)
-> on GitHub.
->
-> If you would like to review early drafts and outlines of this topic,
-> please leave a note with your contact information in the
-> [issue](https://github.com/dotnet/core-docs/issues/401).
->
-> Learn more about how you can [contribute](https://github.com/dotnet/core-docs/blob/master/CONTRIBUTING.md)
-> on GitHub.
+> Developers often struggle with coming up with good names for their
+> test classes and methods. As a starting point, the ASP.NET product
+> team follows
+> [these conventions](https://github.com/aspnet/Home/wiki/Engineering-guidelines#unit-tests-and-functional-tests)
+
+When writing unit tests, be careful you don’t accidentally introduce
+dependencies on infrastructure. These tend to make tests slower and
+more brittle, and thus should be reserved for integration tests. You
+can avoid these hidden dependencies in your application code by following
+the [Explicit Dependencies Principle[(http://deviq.com/explicit-dependencies-principle/)
+and using [Dependency Injection](https://docs.asp.net/en/latest/fundamentals/dependency-injection.html)
+to request your dependencies from the framework. You can also keep your
+unit tests in a separate project from your integration tests, and ensure
+your unit test project doesn’t have references to or dependencies on
+infrastructure packages.
+
+Learn more about unit testing in .NET Core projects:
 
 This topic will have the following sections:
 <style type="text/css">

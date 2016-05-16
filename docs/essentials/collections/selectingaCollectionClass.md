@@ -12,9 +12,9 @@ Consider the following questions:
     
 * Do you need to access the elements in a certain order, such as FIFO, LIFO, or random?
 
-    * The [System.Collections.Generic.Queue&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.Queue%601.html) or [System.Collections.Concurrent.ConcurrentQueue&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentQueue%601.html) generic class offer FIFO access. For more information, see [When to Use a Thread-Safe Collection](essentials\collections\threadsafe\whentoUseaThread-SafeCollection.md).
+    * The [System.Collections.Generic.Queue&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.Queue%601.html) or [System.Collections.Concurrent.ConcurrentQueue&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentQueue%601.html) generic class offer FIFO access. For more information, see [When to Use a Thread-Safe Collection](threadsafe/whentoUseaThread-SafeCollection.md).
     
-    * The [System.Collections.Generic.Stack&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.Stack%601.html) or[System.Collections.Concurrent.ConcurrentStack&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentStack%601.html) generic class offer LIFO access. For more information, see [When to Use a Thread-Safe Collection](essentials\collections\threadsafe\whentoUseaThread-SafeCollection.md).
+    * The [System.Collections.Generic.Stack&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.Stack%601.html) or[System.Collections.Concurrent.ConcurrentStack&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentStack%601.html) generic class offer LIFO access. For more information, see [When to Use a Thread-Safe Collection](threadsafe/whentoUseaThread-SafeCollection.md).
     
     * The [System.Collections.Generic.LinkedList&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.LinkedList%601.html) generic class allows sequential access either from the head to the tail, or from the tail to the head.
     
@@ -52,7 +52,7 @@ Consider the following questions:
     
 ## LINQ to Objects
 
-LINQ to Objects enables developers to use LINQ queries to access in-memory objects as long as the object type implements [System.Collections.IEnumerable](http://dotnet.github.io/api/System.Collections.IEnumerable.html) or [System.Collections.Generic.IEnumerable&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.IEnumerable%601.html). LINQ queries provide a common pattern for accessing data, are typically more concise and readable than standard foreach loops, and provide filtering, ordering, and grouping capabilities. For more information, see [Language Integrated Query (LINQ)](languages/csharp/linq.md).
+LINQ to Objects enables developers to use LINQ queries to access in-memory objects as long as the object type implements [System.Collections.IEnumerable](http://dotnet.github.io/api/System.Collections.IEnumerable.html) or [System.Collections.Generic.IEnumerable&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.IEnumerable%601.html). LINQ queries provide a common pattern for accessing data, are typically more concise and readable than standard foreach loops, and provide filtering, ordering, and grouping capabilities. For more information, see [Language Integrated Query (LINQ)](../../languages/csharp/linq.md).
 
 ## See Also
 
@@ -62,4 +62,4 @@ LINQ to Objects enables developers to use LINQ queries to access in-memory objec
 
 [System.Collections.Generic](http://dotnet.github.io/api/System.Collections.Generic.html)
 
-[Thread-Safe Collections](essentials\collections\thread-safeCollections.md)
+[Thread-Safe Collections](thread-safeCollections.md)

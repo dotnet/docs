@@ -14,8 +14,10 @@ dotnet-install.ps1 [-Channel] [-Version]
     [-SharedRuntime]
 
 ## DESCRIPTION
-The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime. Their 
-main use case is to help with automation scenarios and non-admin installations. There are two scripts, one for PowerShell 
+The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime. You 
+can download the scripts from our [GitHub repo](https://github.com/dotnet/cli/tree/rel/1.0.0/scripts/obtain). 
+
+Their main use case is to help with automation scenarios and non-admin installations. There are two scripts, one for PowerShell 
 that works on Windows and a bash script that works on Linux/OS X. They both have the same behavior. Bash script also 
 "understands" PowerShell switches so you can use them across the board. 
 

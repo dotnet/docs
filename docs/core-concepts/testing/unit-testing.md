@@ -35,6 +35,28 @@ When writing unit tests, be careful you don’t accidentally introduce
 dependencies on infrastructure. These tend to make tests slower and
 more brittle, and thus should be reserved for integration tests. You
 can avoid these hidden dependencies in your application code by following
+the [Explicit Dependencies Principle[(http://deviq.com/explicit-dependencies-principle/)
+and using [Dependency Injection](https://docs.asp.net/en/latest/fundamentals/dependency-injection.html)
+to request your dependencies from the framework. You can also keep your
+unit tests in a separate project from your integration tests, and ensure
+your unit test project doesn’t have references to or dependencies on
+infrastructure packages.
+
+Learn more about unit testing in .NET Core projects:
+
+This topic will have the following sections:
+<style type="text/css">
+ol {
+  list-style-type: upper-roman;
+}
+</style>
+1. [Creating unit tests using dotnet test](unit-testing-with-dotnet-test.md)
+>>>>>>> caching for a rebase
+
+When writing unit tests, be careful you don’t accidentally introduce
+dependencies on infrastructure. These tend to make tests slower and
+more brittle, and thus should be reserved for integration tests. You
+can avoid these hidden dependencies in your application code by following
 the [Explicit Dependencies Principle](http://deviq.com/explicit-dependencies-principle/)
 and using [Dependency Injection](https://docs.asp.net/en/latest/fundamentals/dependency-injection.html)
 to request your dependencies from the framework. You can also keep your

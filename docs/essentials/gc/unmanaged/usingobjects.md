@@ -1,10 +1,14 @@
 # Using Objects That Implement IDisposable
 
-The common language runtime's garbage collector reclaims the memory used by unmanaged objects, but types that use unmanaged resources implement the [IDisposable](http://dotnet.github.io/api/System.IDisposable.html) interface to allow this unmanaged memory to be reclaimed. When you finish using an object that implements `IDisposable`, you should call the object's [IDisposable.Dispose](http://dotnet.github.io/api/System.IDisposable.html#System_IDisposable_Dispose) implementation. You can do this in one of two ways:
+The common language runtime's garbage collector reclaims the memory used by unmanaged objects, but types that use unmanaged resources implement the [IDisposable](http://dotnet.github.io/api/System.IDisposable.html) interface to allow the memory to be reclaimed. When you finish using an object that implements `IDisposable`, you should call the object's [IDisposable.Dispose](http://dotnet.github.io/api/System.IDisposable.html#System_IDisposable_Dispose) implementation. You can do this in one of two ways:
 
 * With the C# `using` statement.
 
 * By implementing a `try/finally` block. 
+
+> **Note**
+>
+> If the disposable object is owned by another object, you'll need to implement a `Dispose` method for that object. See [Implementing a Dispose Method](essentials/gc/unmanaged/implementingdispose.md)
 
 ## The using statement
 
@@ -29,7 +33,6 @@ public class Example
             // Process characters read.
             //   
          }
-         s.Close();    
       }
 
    }
@@ -99,7 +102,7 @@ public class Example
 
 ## Try/finally block
 
-Instead of wrapping a `try/finally` block in a `using` statement, you may choose to implement the `try/finally` block directly. This may be your personal coding style, or you might want to do this for one of the following reasons: 
+Instead of enclosing a `try/finally` block in a `using` statement, you may choose to implement the `try/finally` block directly. This may be your personal coding style, or you might want to do this for one of the following reasons: 
 
 * To include a `catch` block to handle any exceptions thrown in the `try` block. Otherwise, any exceptions thrown by the `using` statement are unhandled, as are any exceptions thrown within the `using` block if a `try/catch` block isn't present. 
 
@@ -142,11 +145,9 @@ public class Example
 
 You can follow this basic pattern if you choose to implement or must implement a `try/finally` block because your programming language doesn't support a `using` statement but does allow direct calls to the `Dispose` method. 
 
-If your language doesn't support direct calls to the `Dispose` method, you can generally use your language's destructor syntax. 
-
 ## See Also
 
-[Cleaning Up Unmanaged Resources](essentials\gc\unmanagedresources.md)
+[Cleaning Up Unmanaged Resources](essentials/gc/unmanagedresources.md)
 
 
 

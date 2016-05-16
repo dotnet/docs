@@ -71,8 +71,6 @@ After the garbage collector is initialized by the CLR, it allocates a segment of
 
 There is a managed heap for each managed process. All threads in the process allocate memory for objects on the same heap.
 
-To reserve memory, the garbage collector calls the Win32 `VirtualAlloc` function, and reserves one segment of memory at a time for managed applications. The garbage collector also reserves segments as needed, and releases segments back to the operating system (after clearing them of any objects) by calling the Win32 `VirtualFree` function. 
-
 > **Important**
 >
 > The size of segments allocated by the garbage collector is implementation-specific and is subject to change at any time, including in periodic updates. Your app should never make assumptions about or depend on a particular segment size, nor should it attempt to configure the amount of memory available for segment allocations. 
@@ -155,7 +153,7 @@ Before a garbage collection starts, all managed threads are suspended except for
 
 The following illustration shows a thread that triggers a garbage collection and causes the other threads to be suspended.
 
-![Thread that triggers a garbage collection](https://github.com/dotnet/core-docs/docs/images/IC393001.png)
+![Thread that triggers a garbage collection](https://github.com/dotnet/core-docs/blob/master/docs/images/IC393001.png)
 
 ## Manipulating unmanaged resources
 
@@ -177,7 +175,7 @@ The garbage collector is self-tuning and can work in a wide variety of scenarios
 
 The following illustration shows the dedicated threads that perform the garbage collection on a server.
 
-![Server garbage collection](https://github.com/dotnet/core-docs/docs/images/IC393002.png)
+![Server garbage collection](https://github.com/dotnet/core-docs/blob/master/docs/images/IC393002.png)
 
 ### Configuring garbage collection
 
@@ -185,7 +183,7 @@ You can use the `<gcServer>` element of the runtime configuration schema to spec
 
 Concurrent garbage collection is specified with the `<gcConcurrent>` element of the runtime configuration schema. The default setting is `enabled`. This setting controls both concurrent and background garbage collection. 
 
-You can also specify server garbage collection with unmanaged hosting interfaces. Note that ASP.NET and SQL Server enable server garbage collection automatically if your application is hosted inside one of these environments.
+You can also specify server garbage collection with unmanaged hosting interfaces.
 
 ### Comparing workstation and server garbage collection
 
@@ -198,8 +196,6 @@ The following are threading and performance considerations for workstation garba
 * Workstation garbage collection is always used on a computer that has only one processor, regardless of the `<gcServer>` setting. If you specify server garbage collection, the CLR uses workstation garbage collection with concurrency disabled.
 
 The following are threading and performance considerations for server garbage collection:
-
-* The collection occurs on multiple dedicated threads that are running at `THREAD_PRIORITY_HIGHEST` priority level.
 
 * A heap and a dedicated thread to perform garbage collection are provided for each CPU, and the heaps are collected at the same time. Each heap contains a small object heap and a large object heap, and all heaps can be accessed by user code. Objects on different heaps can refer to each other. 
 
@@ -227,7 +223,7 @@ Concurrent garbage collection has a slightly bigger working set (compared with n
 
 The following illustration shows concurrent garbage collection performed on a separate dedicated thread.
 
-![Concurrent garbage collection](https://github.com/dotnet/core-docs/docs/images/IC393003.png)
+![Concurrent garbage collection](https://github.com/dotnet/core-docs/blob/master/docs/images/IC393003.png)
 
 ## Background workstation garbage collection
 
@@ -241,7 +237,7 @@ Background garbage collection removes allocation restrictions imposed by concurr
 
 The following illustration shows background garbage collection performed on a separate dedicated thread on a workstation. 
 
-![Background workstation garbage collection](https://github.com/dotnet/core-docs/docs/images/IC658909.png)
+![Background workstation garbage collection](https://github.com/dotnet/core-docs/blob/master/docs/images/IC658909.png)
 
 ## Background server garbage collection
 
@@ -249,7 +245,7 @@ Background server garbage collection is the default mode for server garbage coll
 
 The following illustration shows background garbage collection performed on a separate dedicated thread on a server
 
-![Background server garbage collection](https://github.com/dotnet/core-docs/docs/images/IC658910.png)
+![Background server garbage collection](https://github.com/dotnet/core-docs/blob/master/docs/images/IC658910.png)
 
 ## See Also
 

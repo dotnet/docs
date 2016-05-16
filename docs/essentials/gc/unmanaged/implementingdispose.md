@@ -12,7 +12,7 @@ The dispose pattern has two variations:
  >
  > The [Microsoft.Win32.SafeHandles](http://dotnet.github.io/api/Microsoft.Win32.SafeHandles.html) namespace provides a set of classes derived from `SafeHandle`. If you can't find a class that is suitable for releasing your unmanaged resource, you can implement your own subclass of `SafeHandle`. 
 
-* You implement the [IDisposable](http://dotnet.github.io/api/System.IDisposable.html) interface and an additional `Dispose(Boolean)` method, and you also override the [Object.Finalize](http://dotnet.github.io/api/System.Object.html#System_Object_Finalize) method. You must override `Finalize` to ensure that unmanaged resources are disposed of if your `IDisposable.Dispos` implementation is not called by a consumer of your type. If you use the recommended technique discussed in the previous bullet, the [System.Runtime.InteropServices.SafeHandle](http://dotnet.github.io/api/System.Runtime.InteropServices.SafeHandle.html) class does this on your behalf. 
+* You implement the [IDisposable](http://dotnet.github.io/api/System.IDisposable.html) interface and an additional `Dispose(Boolean)` method, and you also override the [Object.Finalize](http://dotnet.github.io/api/System.Object.html#System_Object_Finalize) method. You must override `Finalize` to ensure that unmanaged resources are disposed of if your `IDisposable.Dispose` implementation is not called by a consumer of your type. If you use the recommended technique discussed in the previous bullet, the [System.Runtime.InteropServices.SafeHandle](http://dotnet.github.io/api/System.Runtime.InteropServices.SafeHandle.html) class does this on your behalf. 
 
 To help ensure that resources are always cleaned up appropriately, a `Dispose` method should be callable multiple times without throwing an exception. 
 
@@ -118,7 +118,7 @@ class BaseClass : IDisposable
 
 > **Note**
 >
-> The previous example uses a [SafeFileHandle]()http://dotnet.github.io/api/Microsoft.Win32.SafeHandles.SafeFileHandle.html object to illustrate the pattern; any object derived from `SafeHandle` could be used instead. Note that the example does not properly instantiate its `SafeFileHandle` object. 
+> The previous example uses a [SafeFileHandle](http://dotnet.github.io/api/Microsoft.Win32.SafeHandles.SafeFileHandle.html) object to illustrate the pattern; any object derived from `SafeHandle` could be used instead. Note that the example does not properly instantiate its `SafeFileHandle` object. 
 
 Here's the general pattern for implementing the dispose pattern for a base class that overrides `Object.Finalize`. 
 
@@ -144,7 +144,7 @@ class BaseClass : IDisposable
          return; 
 
       if (disposing) {
-         // Free any other managed objects here.
+         // Free any managed objects here. 
          //
       }
 
@@ -162,13 +162,13 @@ class BaseClass : IDisposable
 
 > **Note**
 >
-> In C#, you override `Object.Finalize` by defining a `destructor`.
+> In C#, you override `Object.Finalize` by defining a destructor.
 
 ## Implementing the dispose pattern for a derived class
 
 A class derived from a class that implements the `IDisposable` interface shouldn't implement `IDisposable`, because the base class implementation of `IDisposable.Dispose` is inherited by its derived classes. Instead, to implement the dispose pattern for a derived class, you provide the following: 
 
-* A `protected Dispose(Boolean)` method that overrides the base class method and performs the actual work of releasing the resources of the derived class. This method should also call the `Dispose(Boolean)` method of the base class and pass it a value of `true` for the *disposing* argument. 
+* A `protected Dispose(Boolean)` method that overrides the base class method and performs the actual work of releasing the resources of the derived class. 
 
 * Either a class derived from `SafeHandle` that wraps your unmanaged resource (recommended), or an override to the `Object.Finalize` method. The `SafeHandle` class provides a finalizer that frees you from having to code one. If you do provide a finalizer, it should call the `Dispose(Boolean)` overload with a *disposing* argument of `false`. 
 
@@ -263,7 +263,7 @@ Classes derived from the 'System.Runtime.InteropServices.SafeHandle' class simpl
 
 * The [SafeMemoryMappedViewHandle](http://dotnet.github.io/api/Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle.html) class, for memory views.
 
-*The [SafeNCryptKeyHandle](http://dotnet.github.io/api/Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle.html), [SafeNCryptProviderHandle](http://dotnet.github.io/api/Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle.html), and [SafeNCryptSecretHandle](http://dotnet.github.io/api/Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle.html) classes, for cryptography constructs. 
+* The [SafeNCryptKeyHandle](http://dotnet.github.io/api/Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle.html), [SafeNCryptProviderHandle](http://dotnet.github.io/api/Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle.html), and [SafeNCryptSecretHandle](http://dotnet.github.io/api/Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle.html) classes, for cryptography constructs. 
 
 * The [SafeRegistryHandle](http://dotnet.github.io/api/Microsoft.Win32.SafeHandles.SafeRegistryHandle.html) class, for registry keys. 
 
@@ -271,7 +271,7 @@ Classes derived from the 'System.Runtime.InteropServices.SafeHandle' class simpl
 
 ## Using a safe handle to implement the dispose pattern for a base class
 
-The following example illustrates the dispose pattern for a base class, `DisposableStreamResource`, that uses a safe handle to encapsulate unmanaged resources. It defines a `DisposableResource` class that uses a `SafeFileHandle` to wrap a `Stream` object that represents an open file. The `DisposableResource` method also includes a single property, `Size`, that returns the total number of bytes in the file stream. 
+The following example illustrates the dispose pattern for a base class, `DisposableStreamResource`, that uses a safe handle to encapsulate unmanaged resources. It defines a `DisposableResource` class that uses a `SafeFileHandle` to wrap a `Stream` object that represents an open file. 
 
 ```csharp
 using Microsoft.Win32.SafeHandles;
@@ -298,9 +298,9 @@ public class DisposableStreamResource : IDisposable
                                   IntPtr hTemplateFile);
 
    [DllImport("kernel32.dll")]
-   private static extern int GetFileSize(SafeFileHandle hFile, out int lpFileSizeHigh);
+   private static extern uint GetFileSize(SafeFileHandle hFile, out uint lpFileSizeHigh);
 
-   // Define locals.
+   // Define fields.
    private bool disposed = false;
    private SafeFileHandle safeHandle; 
    private long bufferSize;
@@ -310,7 +310,7 @@ public class DisposableStreamResource : IDisposable
    {
       if (filename == null)
          throw new ArgumentNullException("The filename cannot be null.");
-      else if (filename == "")
+      if (filename == "")
          throw new ArgumentException("The filename cannot be an empty string.");
 
       IntPtr handle = CreateFile(filename, GENERIC_READ, FILE_SHARE_READ,
@@ -329,8 +329,7 @@ public class DisposableStreamResource : IDisposable
          bufferSize = (((long)upperWord) << 32) + bufferSize;
    }
 
-   public long Size 
-   { get { return bufferSize; } }
+   public long Size => bufferSize;
 
    public void Dispose()
    {
@@ -381,7 +380,7 @@ public class DisposableStreamResource2 : DisposableStreamResource
    private bool disposed = false;
    private string filename;
    private bool created = false;
-   private SafeFileHandle safeHandle;
+   private SafeFileHandle fileInfoHandle;
 
    public DisposableStreamResource2(string filename) : base(filename)
    {
@@ -407,7 +406,7 @@ public class DisposableStreamResource2 : DisposableStreamResource
       bool result = WriteFile(safeHandle, output, output.Length, out bytesWritten, IntPtr.Zero);                                     
    }
 
-   protected new virtual void Dispose(bool disposing)
+   protected override void Dispose(bool disposing)
    {
       if (disposed) return;
 

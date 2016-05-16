@@ -10,7 +10,7 @@ You can use one of the `GC.Collect` method overloads that includes a `GCCollecti
 
 GCCollectionMode value | Description
 ---------------------- | -----------
-[Default](http://dotnet.github.io/api/System.GCCollectionMode.html#System_GCCollectionMode_Default) | Uses the default garbage collection setting for the running version of the .NET Framework.
+[Default](http://dotnet.github.io/api/System.GCCollectionMode.html#System_GCCollectionMode_Default) | Uses the default garbage collection setting for .NET Core.
 [Forced](http://dotnet.github.io/api/System.GCCollectionMode.html#System_GCCollectionMode_Forced) | Forces garbage collection to occur immediately. This is equivalent to calling the `GC.Collect()` overload. It results in a full blocking collection of all generations. You can also compact the large object heap by setting the [GCSettings.LargeObjectHeapCompactionMode](http://dotnet.github.io/api/System.Runtime.GCSettings.html#System_Runtime_GCSettings_LargeObjectHeapCompactionMode) property to [GCLargeObjectHeapCompactionMode.CompactOnce](http://dotnet.github.io/api/System.Runtime.GCLargeObjectHeapCompactionMode.html#System_Runtime_GCLargeObjectHeapCompactionMode_CompactOnce) before forcing an immediate full blocking garbage collection. 
 [Optimized](http://dotnet.github.io/api/System.GCCollectionMode.html#System_GCCollectionMode_Optimized) | Enables the garbage collector to determine whether the current time is optimal to reclaim objects. The garbage collector could determine that a collection would not be productive enough to be justified, in which case it will return without reclaiming objects.
 

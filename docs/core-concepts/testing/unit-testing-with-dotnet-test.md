@@ -39,7 +39,7 @@ contains the names of your `src` and `test` directories:
 ## Creating the source project
 
 Then, in the `src` directory, create the `PrimeService` directory.
-Cd into that directory, and run `dotnet new` to create the source
+CD into that directory, and run `dotnet new` to create the source
 project.
 
 
@@ -61,7 +61,7 @@ to emit the program entry point:
 ```
 
 You'll also want to remove `program.cs` and replace it with the class for the
-`PrimeService'. To use TDD, you'll create a failing implementation of the
+`PrimeService`. To use TDD, you'll create a failing implementation of the
 `PrimeService` class:
 
 ```cs
@@ -97,9 +97,9 @@ Once again, `dotnet new` creates a console application, and you'll need to modif
 for other project types coming for the dotnet CLI, including class libraries.
 Once this issue is addressed, you won't need to make these changes.
 
-The test project needs other packages to run the tests. You'll need to add
-xunit, the xunit runner, and the PrimeService package as dependencies to
-the project:
+The test project requires other packages to create and run unit tests.
+You'll need to add xunit, the xunit runner, and the PrimeService
+package as dependencies to the project:
 
 ```json
 "dependencies": {
@@ -111,6 +111,13 @@ the project:
     "dotnet-test-xunit": "1.0.0-rc2-build10015",
     "PrimeService": "1.0.0"
 ```
+
+Notice that the `PrimeService` project does not include
+any directory path information. Because you created the
+project structure to match the expected organization of
+`src` and `test`, and the `global.json` file indicates
+that, the build system will find the correct location
+for the project.
 
 You'll also need to add a node to specify the test runner
 at the root of `project.json`:
@@ -158,7 +165,11 @@ namespace Prime.UnitTests.Services
 The `[Fact]` attribute denotes a method as a single test. 
 
 Save this file, then run `dotnet build` to build the test project.
-Now, execute `dotnet run` to run the project from the console.
+If you have not already built the `PrimeService` project, the
+build system will detect that and build it because it is a
+dependency of the test project.
+
+Now, execute `dotnet test` to run the tests from the console.
 The xunit test runner has the program entry point to run your
 tests from the Console.
 
@@ -183,12 +194,13 @@ There are a few other simple cases for prime numbers: 0, -1. You
 could add those as new tests, with the `[Fact]` attribute, but that
 quickly becomes tedious. There are other xunit attributes that enable
 you to write a suite of similar tests.  A `Theory` represents a suite
-of tests that execute the same code, but have different inputs. YOu
-can use the `[InlineData]` attribute to specify values for those
+of tests that execute the same code, but have different input arguments.
+You can use the `[InlineData]` attribute to specify values for those
 inputs. 
  
  Instead of creating new tests, leverage these two attributes
- to create a single theory that tests some values less than 2:
+ to create a single theory that tests some values less than 2,
+ which is the lowest prime number:
 
 ```cs
 [Theory]
@@ -204,13 +216,14 @@ public void ReturnFalseGivenValuesLessThan2(int value)
 ```
 
 Run `dotnet test` and you'll see the that two of these tests fail.
-You can make them pass by changing the initial test:
+You can make them pass by changing the service. You need to change
+the `if` clause at the beginning of the method:
 
 ```cs
 if(candidate < 2)
 ```
 
-## Building more Functionality
+Now, these tests all pass.
 
 You continue to iterate by adding more tests, more theories,
 and more code in the main library. You'll quickly end up
@@ -219,10 +232,7 @@ with the
 and the
 [complete implementation of the library](https://github.com/dotnet/core-docs/blob/master/samples/unit-testing/using-dotnet-test/src/PrimeService/PrimeService.cs).
 
-# Conclusion
-
-
-This is a good reference:
-
-http://xunit.github.io/docs/getting-started-dotnet-core.html
-
+You've built a small library and a set of unit tests for that library.
+You've structured this solution so that adding new packages and tests
+will be seamless, and you can concentrate on the problem at hand. The 
+tools will run automatically.

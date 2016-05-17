@@ -1,13 +1,13 @@
 {
   "version": "1.0.0-*",
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.0-rc2-3002702"
+    }
+  },
   "frameworks": {
     "netcoreapp1.0": {
-      "dependencies": {
-        "Microsoft.NETCore.App": {
-          "type": "platform",
-          "version": "1.0.0-rc2-3002702"
-        }
-      },
       "imports": "dnxcore50"
     }
   }

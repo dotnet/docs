@@ -1,10 +1,10 @@
 # How to: Use ForEach to Remove Items in a BlockingCollection
 
-In addition to taking items from a [BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) by using the **Take** and **TryTake** methods, you can also use a **foreach** loop to remove items until adding is completed and the collection is empty. This is called a mutating enumeration or consuming enumeration because, unlike a typical **foreach** loop, this enumerator modifies the source collection by removing items.
+In addition to taking items from a [BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) by using the `Take` and `TryTake` methods, you can also use a `foreach` loop to remove items until adding is completed and the collection is empty. This is called a mutating enumeration or consuming enumeration because, unlike a typical `foreach` loop, this enumerator modifies the source collection by removing items.
 
 ## Example
 
-The following example shows how to remove all the items in a **BlockingCollection&lt;T&gt;** by using a **foreach** loop. 
+The following example shows how to remove all the items in a `BlockingCollection<T>` by using a `foreach` loop. 
 
 ```csharp
 using System;
@@ -104,11 +104,11 @@ class Example
 
 ```
 
-This example uses a **foreach** loop with the **BlockingCollection&lt;T&gt;.GetConsumingEnumerable** method in the consuming thread, which causes each item to be removed from the collection as it is enumerated. **BlockingCollection&lt;T&gt;** limits the maximum number of items that are in the collection at any time. Enumerating the collection in this way blocks the consumer thread if no items are available or if the collection is empty. In this example blocking is not a concern because the producer thread adds items faster than they can be consumed. 
+This example uses a `foreach` loop with the `BlockingCollection<T>.GetConsumingEnumerable` method in the consuming thread, which causes each item to be removed from the collection as it is enumerated. `BlockingCollection<T>` limits the maximum number of items that are in the collection at any time. Enumerating the collection in this way blocks the consumer thread if no items are available or if the collection is empty. In this example blocking is not a concern because the producer thread adds items faster than they can be consumed. 
 
 There is no guarantee that the items are enumerated in the same order in which they are added by the producer threads.
 
-To enumerate the collection without modifying it, just use **foreach** without the **GetConsumingEnumerable** method. However, it is important to understand that this kind of enumeration represents a snapshot of the collection at a precise point in time. If other threads are adding or removing items concurrently while you are executing the loop, then the loop might not represent the actual state of the collection.
+To enumerate the collection without modifying it, just use `foreach` without the `GetConsumingEnumerable` method. However, it is important to understand that this kind of enumeration represents a snapshot of the collection at a precise point in time. If other threads are adding or removing items concurrently while you are executing the loop, then the loop might not represent the actual state of the collection.
 
 ## See Also
 

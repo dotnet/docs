@@ -4,9 +4,9 @@
       "src": [
         {
           "files": [
-            "corefx/src/**/ref/**/*.csproj"
+            "corefx/src/**/ref/**/project.json"
           ],
-          "exclude": [ "**/bin/**", "**/obj/**", "**System.Runtime.WindowsRuntime.csproj"  ],
+          "exclude": [ "**/bin/**", "**/obj/**" ],
           "cwd": ".."
         }
       ],
@@ -16,10 +16,10 @@
       "src": [
         {
           "files": [
-            "corefx/src/**/src/**/*.csproj",
+            "corefx/src/**/src/**/project.json",
             "coreclr/src/mscorlib/mscorlib.csproj"
           ],
-          "exclude": [ "**/bin/**", "**/obj/**", "**System.Runtime.WindowsRuntime.csproj"  ],
+          "exclude": [ "**/bin/**", "**/obj/**"],
           "cwd": ".."
         }
       ],

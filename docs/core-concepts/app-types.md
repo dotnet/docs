@@ -25,7 +25,7 @@ in order for them to run. To you as a developer, this means that your applicatio
 This type of application will only carry its own code and dependencies that are outside of .NET Core libraries. 
 As an example, let's say you are making a console application that has the ability to invoke a certain REST API 
 and deserialize the returned JSON into a type and then display it. You have everything you need for this small 
-application expect for a good JSON parser; for this, you add a dependency to your `project.json` to include 
+application except for a good JSON parser; for this, you add a dependency to your `project.json` to include 
 [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/). Once you publish your application using `dotnet publish`, 
 you will see that only your application's code and JSON.net have been published in the output. 
 The .NET Core libraries remain outside of your application's dependency closure. 

@@ -38,7 +38,7 @@ Print out a short help and a list of current commands.
 The following commands exist for dotnet:
 
 * [dotnet-new](dotnet-new.md)
-   * Initializes a sample console, class library or unit test C# project.
+   * Initializes a C# or F# console application project.
 * [dotnet-restore](dotnet-restore.md)
   * Restores the dependencies for a given application. 
 * [dotnet-build](dotnet-build.md)

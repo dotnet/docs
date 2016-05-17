@@ -1,6 +1,12 @@
 # 🔧 Unit Testing in .NET Core using dotnet test
 
 
+This is a good reference:
+
+http://xunit.github.io/docs/getting-started-dotnet-core.html
+
+
+
 > **Note**
 > 
 > We are currently working on this topic.
@@ -16,3 +22,5 @@
 >
 > Learn more about how you can [contribute](https://github.com/dotnet/core-docs/blob/master/CONTRIBUTING.md)
 > on GitHub.
+
+

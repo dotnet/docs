@@ -4,9 +4,9 @@ By [Steve Smith](http://ardalis.com) and [Bill Wagner](https://github.com/BillWa
 
 .NET Core has been designed with testability in mind, so that creating
 unit tests for your applications is easier than ever before. This article
-briefly introduces unit tests (and how they differ from other kinds of tests)
-and demonstrates how to add a test project to your solution and then run unit
-tests using either the command line, your favorite editor or Visual Studio.
+briefly introduces unit tests (and how they differ from other kinds of tests).
+Linked resources demonstrates how to add a test project to your solution and
+then run unit tests using either the command line or Visual Studio.
 
 # Getting Started with Testing
  
@@ -35,7 +35,7 @@ When writing unit tests, be careful you don’t accidentally introduce
 dependencies on infrastructure. These tend to make tests slower and
 more brittle, and thus should be reserved for integration tests. You
 can avoid these hidden dependencies in your application code by following
-the [Explicit Dependencies Principle[(http://deviq.com/explicit-dependencies-principle/)
+the [Explicit Dependencies Principle](http://deviq.com/explicit-dependencies-principle/)
 and using [Dependency Injection](https://docs.asp.net/en/latest/fundamentals/dependency-injection.html)
 to request your dependencies from the framework. You can also keep your
 unit tests in a separate project from your integration tests, and ensure

@@ -43,6 +43,7 @@
 #### [Creating a class library with Cross Platform Tools](core-concepts/libraries/libraries-with-cli.md)
 #### [Creating a class library in Visual Studio](core-concepts/libraries/libraries-with-vs.md)
 ### [Testing](core-concepts/testing/unit-testing.md)
+#### [Unit Testing with dotnet test](core-concepts/testing/unit-testing-with-dotnet-test.md)
 ## [.NET Core Application Deployment](core-concepts/app-deployment.md)
 ## [Migrating from DNX](core-concepts/dnx-migration.md)
 ## [Porting applications between editions of .NET Platform](porting/index.md)

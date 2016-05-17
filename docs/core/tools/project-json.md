@@ -54,7 +54,7 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 * [tools](#tools)
 * [commands](#commands)
 * [scripts](#scripts)
-* [compilationOptions](#compilationOptions)
+* [buildOptions](#compilationOptions)
     * [define](#define)
     * [nowarn](#nowarn)
     * [additionalArguments](#additionalArguments)
@@ -529,16 +529,17 @@ For example:
         }
     }
 
-<a name="compilationOptions"></a>
-## compilationOptions
+<a name="buildOptions"></a>
+## buildOptions
 Type: Object
 
 An object whose properties control various aspects of compilation, the valid properties are listed below. Can also be specified per target framework as described in the [frameworks section](#frameworks)
 
 For example:
 
-    "compilationOptions": {
-      "allowUnsafe": true
+    "buildOptions": {
+      "allowUnsafe": true,
+      "emitEntryPoint": true
     }
 
 <a name="define"></a>

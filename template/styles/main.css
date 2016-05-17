@@ -1,15 +1,77 @@
-@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:700);
-@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+    font-family: 'wf_segoe-ui_light';
+    src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot");
+    src: local("Segoe UI Light"), local("Segoe WP Light"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot?#iefix") format("embedded-opentype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.woff") format("woff"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased
+}
+@font-face {
+    font-family: 'wf_segoe-ui_normal';
+    src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.eot");
+    src: local("Segoe UI"), local("Segoe"), local("Segoe WP"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.eot?#iefix") format("embedded-opentype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.woff") format("woff"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+@font-face {
+    font-family: 'wf_segoe-ui_semibold';
+    src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.eot");
+    src: local("Segoe UI Semibold"), local("Segoe Semibold"), local("Segoe WP Semibold"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.eot?#iefix") format("embedded-opentype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.woff") format("woff"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+@font-face {
+    font-family: 'wf_segoe-ui_semilight';
+    src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.eot");
+    src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.eot?#iefix") format("embedded-opentype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.woff") format("woff"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+@font-face {
+    font-family: 'wf_segoe-ui_bold';
+    src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.eot");
+    src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.eot?#iefix") format("embedded-opentype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.woff") format("woff"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
 
-/* Main styles */
+
 body {
-  font-family: "Open Sans", "Segoe UI", sans-serif;
-  font-size: 15px;
-  padding-top: 50px;
+    font-family: wf_segoe-ui_normal, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #505050;
+    font-size: 13px;
+    line-height: 1.4em;
 }
-ul {
-  list-style-image: url("../../images/core/list-bullet.png");
+
+h1, h2, h3, h4, h5, h6, legend {
+    margin-top: 0;
+    font-family: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, "HelveticaNeue-Thin", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
 }
+
+h2 {
+  font-size: 18px;
+  color: #222222;
+}
+
+a {
+  color: #2b59a9;
+}
+
+p {
+  font-size: 13px;
+  color: #505050;
+}
+
+.content {
+    padding-top: 60px;
+}
+
+.hr {
+  border-top: 1px solid #dddddd;
+}
+
+a, a:link, a:visited { color: #2b59a9; }
+
 nav {
   font-size: 14px;
 }
@@ -17,12 +79,6 @@ nav {
   background-color: #333;
   color: #fff;
 }
-
-h1, h2, h3, h4, h5 {
-  font-family: "Roboto Condensed", "Segoe UI", sans-serif;
-  font-weight: bold;
-}
-
 
 footer {
   text-align: center;
@@ -38,17 +94,6 @@ footer > .inner-footer a:hover {
   color: #32145a;
   text-decoration: none;
 }
-.content a {
-  /*color: #A979B3;*/
-    color: #A356B3;
-  text-decoration: none;
-  outline: 0;
-}
-.content a:hover {
-  /*transition: color .15s cubic-bezier(.33, .66, .66, 1);*/
-  text-decoration: none;
-  color: #682079;
-}
 
 
 /* End of main styles */
@@ -56,35 +101,33 @@ footer > .inner-footer a:hover {
 /* Index page styles */
 .btn-hero-core {
   padding: 15px 25px;
-  background-color: #32145a;
-  color: #d89ae4;
+  background-color: #8dc63f !important;
+  color: #ffffff !important;
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  font-weight: bold;
+  /*font-weight: bold;*/
   margin-left: 20px;
-  -webkit-box-shadow: 2px 2px 3px 0px #2C0D33;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    2px 2px 3px 0px #2C0D33;  /* Firefox 3.5 - 3.6 */
-  box-shadow:         2px 2px 3px 0px #2C0D33;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 .btn-hero-core:hover {
-  color: #d89ae4;
+  /*color: #d89ae4;*/
+  background-color: #7db039 !important;
+  color: #ffffff !important;
   text-decoration: none;
 }
 .hero {
-  background-color: #682079;
+  background-color: #2b3990;
   width: inherit;
   color: #fff;
 }
 .starter-template {
-  padding: 40px 15px;
+  padding: 50px 15px;
   text-align: center;
+  margin-top: 60px;
+  min-height: 200px;
 }
 .dotnet {
   color: #fff;
-}
-#rest-vps {
-  display: none;
 }
 .value-prop-heading {
   margin-top: 0px;
@@ -116,11 +159,13 @@ footer > .inner-footer a:hover {
   width: 150px;
 }
 .btn-gs:hover, .btn-gs:active, .btn-gs:focus, .jquery-active {
-  color: #fff;
+  color: #fff !important;
   background-color: #682079;
   outline: 0 !important;
 }
-
+a.trail-start {
+    cursor: pointer;
+}
 
 .step {
   width: 100%;
@@ -217,6 +262,29 @@ footer > .inner-footer a:hover {
   content: '~$ ';
 }
 
+/* Community meetup */
+#communityContainer {
+    margin-top: 35px;
+}
+.community-table {
+    margin: 20px;
+    width: 80%;
+}
+.community-table td {
+    padding: 15px 10px;
+    font-size: 14px;
+}
+.community-table tbody {
+    border-top: 1px solid #682079;
+    border-bottom: 1px solid #682079;
+}
+.community-table th {
+    padding: 15px 10px;
+}
+.community-table tbody tr:nth-child(odd) {
+    background-color: #EDEDED;
+}
+
 @media (max-device-width: 480px) and (orientation: portrait), (max-device-width: 700px) and (orientation: landscape){
   /* Index page overrides */
   .btn-hero-core {
@@ -265,4 +333,9 @@ footer > .inner-footer a:hover {
     font-size: 12px;
     padding: 5px;
   }
+
+  /* Community stuff overrides */
+  .community-table td:nth-child(2) {
+    display: none;
+    }
 }

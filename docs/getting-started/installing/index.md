@@ -1,6 +1,5 @@
-# Understanding package management on .NET
+# Installing .NET Core
 
-*  [Installing .NET Core on Windows](installing-core-windows.md)
-*  [Installing .NET Core on Linux](installing-core-ubuntu.md)
-*  [Installing .NET Core on OS X](installing-core-osx.md)
+By [Zlatko Knezevic](https://github.com/blackdwarf)
 
+The best way to get started is to follow our interactive guide on [.NET Core website](http://go.microsoft.com/fwlink/p/?LinkID=798306&clcid=0x409). 

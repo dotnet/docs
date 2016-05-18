@@ -33,7 +33,7 @@ Below is a sample project.json that shows the needed properties:
         "Microsoft.NETCore.App": {
             "version": "1.0.0-rc2-3002702",
             "type": "platform"
-        }
+        },
         "xunit": "2.1.0",
         "dotnet-test-xunit": "1.0.0-rc2-build10015"
     },

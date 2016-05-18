@@ -61,19 +61,19 @@ The verbosity of logging to use. Allowed values: Debug, Verbose, Information, Mi
 
 ## EXAMPLES
 
-`dotnet-restore`
+`dotnet restore`
 
 Restore dependencies and tools for the project in the current directory. 
 
-`dotnet-restore ~/projects/app1/project.json`
+`dotnet restore ~/projects/app1/project.json`
     
 Restore dependencies and tools for the `app1` project found in the given path.
 	
-`dotnet-restore --f c:\packages\mypackages`
+`dotnet restore --f c:\packages\mypackages`
     
 Restore the dependencies and tools for the project in the current directory using the file path provided as the fall-back source. 
 	
-`dotnet-restore --verbosity Error`
+`dotnet restore --verbosity Error`
     
 Show only errors in the output.
 

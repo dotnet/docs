@@ -7,7 +7,7 @@ dotnet-test
 
 ## SYNOPSIS
 
-dotnet-test [--configuration]  
+dotnet test [--configuration]  
     [--output] [--build-base-path] [--framework] [--runtime]
     [--no-build]
     [--parentProcessId] [--port]  
@@ -15,7 +15,7 @@ dotnet-test [--configuration]
 
 ## DESCRIPTION
 
-`dotnet-test` is used to execute unit tests in a given project. Unit tests are class library 
+`dotnet test` is used to execute unit tests in a given project. Unit tests are class library 
 projects that have dependencies on the unit test framework (for example, NUnit or xUnit) and the 
 dotnet test runner for that unit testing framework. These are packaged as NuGet packages and are 
 restored as ordinary dependencies for the project.
@@ -30,14 +30,21 @@ Below is a sample project.json that shows the needed properties:
     "version": "1.0.0-*",
 
     "dependencies": {
-        "NETStandard.Library": "1.0.0-*",
-        "xunit": "2.1.0-*",
-        "dotnet-test-xunit": "1.0.0-*"
+        "Microsoft.NETCore.App": {
+            "version": "1.0.0-rc2-3002702",
+            "type": "platform"
+        }
+        "xunit": "2.1.0",
+        "dotnet-test-xunit": "1.0.0-rc2-build10015"
     },
     "testRunner": "xunit",
 
     "frameworks": {
-        "netstandard1.5": {
+        "netcoreapp1.0": {
+                "imports": [
+                    "dnxcore50",
+                    "portable-net45+win8"
+                ]
         }
     }
 }
@@ -89,11 +96,11 @@ Used by IDEs to specify a port number to listen for a connection.
 
 ## EXAMPLES
 
-`dotnet-test`
+`dotnet test`
 
 Run the tests in the project in the current directory. 
 
-`dotnet-test /projects/test1/project.json`
+`dotnet test /projects/test1/project.json`
 
 Run the tests in the test1 project. 
 

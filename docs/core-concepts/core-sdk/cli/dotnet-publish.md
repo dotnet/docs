@@ -14,7 +14,7 @@ dotnet-publish [--framework]
 
 ## DESCRIPTION
 
-`dotnet-publish` compiles the application, reads through its dependencies specified in `project.json` and publishes the resulting set of files to a directory. 
+`dotnet publish` compiles the application, reads through its dependencies specified in `project.json` and publishes the resulting set of files to a directory. 
 
 Depending on the type of portable app, the directory contains the following:
 

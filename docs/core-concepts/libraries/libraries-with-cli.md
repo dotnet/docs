@@ -601,13 +601,15 @@ And that's it!
 
 ## How to create a NuGet Package with your Library
 
-Imagine that you just wrote an awesome new library that you think other developers could use.  You can create a NuGet package to do exactly that!  It's quite easy with the .NET CLI.
+Imagine that you just wrote an awesome new library that you think other developers could use.  You can create a NuGet package to do exactly that!  It's quite easy with the .NET CLI.  The following example assumes a library called **Lib** which targets `netstandard1.0`.
 
-You should navigate to the directory where a library lives:
+> **Note** If you have transitive dependencies; that is, a project which depends on another project, you'll need to make sure to restore packages for your entire solution.
+
+After ensuring packages are restored, you can navigate to the directory where a library lives:
 
 `$ cd src/Library`
 
-Then it's just a single command from the command line!
+Then it's just a single command from the command line:
     
 `$ dotnet pack`
 
@@ -616,9 +618,7 @@ Your `/bin/Debug` folder will now look like this:
 ```
 $ ls bin/Debug
 
-net40/
-net45/
-dotnet55/
+netstandard1.0/
 Lib.1.0.0.nupkg
 Lib.1.0.0.symbols.nupkg
 ```
@@ -632,9 +632,7 @@ And now you'll have a new `release` folder in `/bin` containing your NuGet packa
 ```
 $ ls bin/release
 
-net40/
-net45/
-dotnet55/
+netstandard1.0/
 Lib.1.0.0.nupkg
 Lib.1.0.0.symbols.nupkg
 ```

@@ -62,19 +62,19 @@ Configuration to use when building the project. If not specified, will default t
 
 ## EXAMPLES
 
-`dotnet-pack`
+`dotnet pack`
 
     Pack the current project.
 
-`dotnet-pack ~/projects/app1/project.json`
+`dotnet pack ~/projects/app1/project.json`
     
     Pack the app1 project.
 	
-`dotnet-pack --output nupkgs`
+`dotnet pack --output nupkgs`
     
     Pack the current application and place the resulting packages into the specified folder.
 
-`dotnet-pack --no-build --output nupkgs`
+`dotnet pack --no-build --output nupkgs`
 
     Pack the current project into the specified folder and skip the build step.
 	

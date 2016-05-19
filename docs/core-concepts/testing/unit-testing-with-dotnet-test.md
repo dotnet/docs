@@ -110,6 +110,7 @@ package as dependencies to the project:
     "xunit": "2.1.0",
     "dotnet-test-xunit": "1.0.0-rc2-build10015",
     "PrimeService": "1.0.0"
+}
 ```
 
 Notice that the `PrimeService` project does not include
@@ -123,7 +124,26 @@ You'll also need to add a node to specify the test runner
 at the root of `project.json`:
 
 ```json
-"testRunner": "xunit"
+{
+  "version": "1.0.0-*",
+  "testRunner": "xunit",
+  // ...
+}
+```
+
+Finally, you need to set the framework node to use
+`netcoreapp1.0`, and include the required imports to
+get xunit to work with RC2:
+
+```json
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": [
+        "dnxcore50",
+        "portable-net45+win8" 
+      ]
+    }
+  }
 ```
 
 You can see the entire file in the [samples repository](https://github.com/dotnet/core-docs/blob/master/samples/unit-testing/using-dotnet-test/tests/PrimeService.Tests/project.json)

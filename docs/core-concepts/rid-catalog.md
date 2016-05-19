@@ -1,7 +1,7 @@
 # Runtime IDentifier (RID) catalog
 
 ## What are RIDs?
-RID is short for *Runtime IDentifier*.RIDs are used to identify target operating systems where an application or asset 
+RID is short for *Runtime IDentifier*. RIDs are used to identify target operating systems where an application or asset 
 (that is, assembly) will run. They look like this: "ubuntu.14.04-x64", "win7-x64", "osx.10.11-x64". 
 For the packages with native dependencies, it will designate on which platforms the package can be restored. 
 

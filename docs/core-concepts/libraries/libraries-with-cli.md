@@ -603,7 +603,7 @@ And that's it!
 
 Imagine that you just wrote an awesome new library that you think other developers could use.  You can create a NuGet package to do exactly that!  It's quite easy with the .NET CLI.  The following example assumes a library called **Lib** which targets `netstandard1.0`.
 
-> **Note** If you have transitive dependencies; that is, a project which depends on another project, you'll need to make sure to restore packages for your entire solution.
+> If you have transitive dependencies; that is, a project which depends on another project, you'll need to make sure to restore packages for your entire solution.
 
 After ensuring packages are restored, you can navigate to the directory where a library lives:
 
@@ -623,7 +623,11 @@ Lib.1.0.0.nupkg
 Lib.1.0.0.symbols.nupkg
 ```
 
-And now you have the necessary files to publish a NuGet package!  If you want to build a NuGet package with release mode binaries, all you need to do is add the `-c`/`--configuration` switch and use `release` as the argument.
+And now you have the necessary files to publish a NuGet package!
+
+> For .NET Core RC2, libraries are expected to be distributed as NuGet packages. This can only be done with `dotnet pack` when using the .NET CLI.  It is important that you use `dotnet pack` instead of `dotnet publish` for this.  Using `dotnet publish` for a library will error out.
+
+If you want to build a NuGet package with release mode binaries, all you need to do is add the `-c`/`--configuration` switch and use `release` as the argument.
 
 `$ dotnet pack --configuration release`
 

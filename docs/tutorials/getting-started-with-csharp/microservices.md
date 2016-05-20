@@ -305,7 +305,7 @@ list of dependencies:
   "dependencies": {
     "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
     "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
-    "Newtonsoft.Json": "8.0.3"
+    "Newtonsoft.Json": "8.0.4-beta1"
   },
 ``` 
 
@@ -331,7 +331,7 @@ for our purposes. Let's go over its contents.
 The first line specifies the source image:
 
 ```
-FROM microsoft/aspnet:1.0.0-rc1-update1
+FROM microsoft/dotnet:1.0.0-rc2-core
 ```
 
 Docker allows you to configure a machine image based on a
@@ -354,7 +354,7 @@ The next three lines setup your application:
 ```
 COPY . /app
 WORKDIR /app
-RUN ["dnu", "restore"]
+RUN ["dotnet", "restore"]
 ```
 
 This will copy the contents of the current directory to the docker VM, and restore
@@ -363,8 +363,8 @@ all the packages.
 The final lines of the file set the output port (5004) and run the application:
 
 ```
-EXPOSE 5004
-ENTRYPOINT ["dnx", "-p", "project.json", "web"]
+EXPOSE 5000
+ENTRYPOINT ["dotnet", "run"]
 ```
 
 Here are the steps to build the image and deploy it. The information below is 
@@ -400,21 +400,28 @@ In PowerShell it is as follows:
 ```
 
 If you are using a different shell, the output from the docker-machine command
-above will show you what command to use in its place.
+above will show you what command to use in its place. Execute the command that was generated
+for you.
 
 Finally, build the docker image from your application:
 
 ```
-docker-build -t weather-service .
+docker build -t weather-service .
 ```
 
-This command builds the image using your source, and the configuration settings in your
+> Note: You may need to restart the Docker machine for the `docker build` command
+> to work. You do that by executing the `docker restart` command:
+> 
+> `docker restart weather-service`
+
+The build command builds the image using your source, and the configuration
+settings in your
 Dockerfile.
 
 And finally run the application in the docker container:
 
 ```
-docker run -t -d -p 80:5004 weather-service
+docker run -t -d -p 80:5000 weather-service
 ```
 
 You can see if the image is running by checking the command:

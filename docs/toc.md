@@ -74,6 +74,7 @@
 ## [🔧 Reflection & code generation](languages/csharp/reflection.md)
 ## [🔧 Documenting your code](languages/csharp/codedoc.md)
 ## [C# Tutorials](tutorials/index.md)
+# [Learn F#](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-language-reference)
 # [Learn .NET](concepts/index.md)
 ## [The .NET Primer](concepts/primer.md)
 ## [.NET Standard](concepts/net-standard.md)

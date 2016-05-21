@@ -497,7 +497,7 @@ Consumtion scenarios like this mean that the APIs being accessed have to have a 
 To reference a project, you need to do two things:
 
 1. Understand the name and version number of the project you wish to reference.
-2. List that project as a dependeny using the name and version number from (1).
+2. List that project as a dependency using the name and version number from (1).
 
 In the above case, you may wish to set up the `project.json` for **AwesomeLibrary.Core** as follows:
 

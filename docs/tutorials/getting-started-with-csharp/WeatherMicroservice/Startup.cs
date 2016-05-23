@@ -58,6 +58,7 @@ namespace WeatherMicroservice
                 .UseKestrel() 
                 .UseIISIntegration() 
                 .UseStartup<Startup>() 
+                .UseUrls("http://*:5000", "http://*:80")
                 .Build(); 
  
            host.Run(); 

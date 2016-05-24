@@ -13,11 +13,12 @@ by pressing the ‘<’ or ‘>’ keys.
 
 There are a lot of features in this tutorial. Let’s build them one by one. 
 # Prerequisites
-You’ll need to setup your machine to run .NET core. Instructions are
-[here](http://dotnet.github.io/getting-started/). You can run this
+You’ll need to setup your machine to run .NET core. You can find the
+installation instructions on the [Getting Started](http://dotnet.github.io/getting-started/)
+page. You can run this
 application on Windows, Ubuntu Linux, OS X or in a Docker container. 
-You’ll need to install your favorite code editor. The descriptions below
-use [Visual Studio Code](https://code.visualstudio.com/) which is an open
+You’ll need to install your favorite code editor. This tutorial uses
+[Visual Studio Code](https://code.visualstudio.com/) which is an open
 source, cross platform editor. However, you can use whatever tools you are
 comfortable with.
 # Create the Application
@@ -41,11 +42,11 @@ of all the project dependencies. You do not need to put the file in source
 control; it will be generated when you run “dotnet restore”. 
 
 After restoring packages, you run “dotnet build”. This executes the build
-engine and creates your application. Finally, you execute “dotnet run” to
+engine and creates your application executable. Finally, you execute “dotnet run” to
 run your application.  
 
 The simple Hello World application code is all in Program.cs. Open that
-file you your favorite text editor. We’re about to make our first changes.
+file with your favorite text editor. We’re about to make our first changes.
 At the top of the file, see a using statement:
 
 ```cs
@@ -65,9 +66,9 @@ namespace TeleprompterConsole
 
 # Reading and Echoing the File
 The first feature to add is to read a text file, and display all that text
-to the console. First, let’s add a text file. Copy the "sampleQuotes.txt"
+to the console. First, let’s add a text file. Copy the 
+[sampleQuotes.txt](https://github.com/dotnet/core-docs/blob/master/docs/tutorials/getting-started-with-csharp/console-teleprompter/sampleQuotes.txt)
 file from the GitHub repository for this [sample](https://github.com/dotnet/core-docs/tree/master/docs/tutorials/getting-started-with-csharp/console-teleprompter) into your project directory. 
-[Direct Link](https://github.com/dotnet/core-docs/blob/master/docs/tutorials/getting-started-with-csharp/console-teleprompter/sampleQuotes.txt) to the file.
 This will serve as the script for your
 application.
 
@@ -103,7 +104,7 @@ The `IEnumerable<T>` interface is defined in the
 This method is a special type of C# method called an *Enumerator method*. 
 Enumerator methods return sequences that are evaluated lazily. That means 
 each item in the sequence is generated as it is requested by the code 
-consuming the sequence. Enumerator Methods are methods that contain one or 
+consuming the sequence. Enumerator methods are methods that contain one or 
 more `yield return` statements. The object returned by the `ReadFrom()` 
 method contains the code to generate each item in the sequence. In this 
 example, that involves reading the next line of text from the source file, 
@@ -123,11 +124,11 @@ compiler-generated code ensures that the resource is released even if an
 exception is thrown from the code in the block defined by the using
 statement.
 
-The reader variable is defined using the `var` keyword. Var defines an
+The reader variable is defined using the `var` keyword. `var` defines an
 *implicitly typed local variable*. That means the type of the variable is
 determined by the compile time type of the object assigned to the
 variable. Here, that is the return value from `File.OpenText()`, which is
-a `StreamReader`.
+a `StreamReader` object.
  
 Now, let’s fill in the code to read the file in the Main method: 
 
@@ -193,7 +194,14 @@ to add that using statement at the top of file:
 using System.Threading.Tasks;
 ```
 
-Run the sample, and check the output.Now, each single word is printed,
+> Note: In RC2, you need to run the application using a different
+> command to see the correct output. This is due to an issue
+> in the CLI that [has been filed](https://github.com/dotnet/cli/issues/2976).
+> To run the application, instead of `dotnet run` use
+> `dotnet .\bin\Debug\netcoreapp1.0\console-teleprompter.dll` 
+> substituting the correct path to your output DLL.  
+
+Run the sample, and check the output. Now, each single word is printed,
 followed by a 200 ms delay. However, the displayed output shows some
 issues because the source text file has several lines that have more than
 80 characters without a line break. That can be hard to read while it's
@@ -302,7 +310,7 @@ the user presses the ‘<’ or ‘>’ keys. This method uses `Console.ReadKey(
 to block and wait for the user to press a key.
 
 To finish this feature, you need to create a new async task returning
-method that starts both of these tasks (`GetInput()`, and 
+method that starts both of these tasks (`GetInput()` and 
 `ShowTeleprompter()`, and also manage the shared data between these two
 tasks.
  

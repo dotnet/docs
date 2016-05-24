@@ -81,24 +81,23 @@ The template creates six files for you:
 * A wwwroot/web.config file. This contains basic configuration information.
 
 Now you can run the template generated application. That's done using a series
-of tools from the command line. The current version of ASP.NET uses two command
-line tools for building and running your applications: dnu and dnx. Dnu is the .NET Execution
-Environment Utility. Dnx is the .NET Execution Engine. 
+of tools from the command line. The `dotnet` command runs the tools necessary
+for .NET development. Each verb executes a different command
 
-The first step is to restore all the dependencies using dnu:
+The first step is to restore all the dependencies:
 
-`dnu restore`
+`dotnet restore`
 
-Dnu restore uses the NuGet package manager to install all the necessary packages
+Dotnet restore uses the NuGet package manager to install all the necessary packages
 into the application directory. It also generates a project.json.lock file. This
 file contains information about each package that is referenced. After restoring
 all the dependencies, you build the application:
 
-`dnu build`
+`dotnet build`
 
-And once you build the application, you run it from the command line using dnx:
+And once you build the application, you run it from the command line:
 
-`dnx web`
+`dotnet run`
 
 The default configuration listens to http://localhost:5000. You can open a
 browser and navigate to that page and see a "Hello World!" message.
@@ -123,7 +122,7 @@ The 'frameworks' node specifies the versions and configurations of the .NET
 framework that will run this application.
 
 The application is implemented in Startup.cs. This file contains the startup
-class. It's `Main()` method starts the web server, and instructs the web
+class. Its `Main()` method starts the web server, and instructs the web
 server that the web application class is this Startup class:
 
 `public static void Main(string[] args) => Microsoft.AspNet.Hosting.WebApplication.Run<Startup>(args);`
@@ -165,7 +164,7 @@ You'll begin by parsing the query string. The service will accept
 `http://localhost:5000/?lat=-35.55&long=-12.35`  
 
 All the changes you need to make are in the lambda expression
-defined as the argument to app.Run in your startup class.
+defined as the argument to `app.Run` in your startup class.
 
 The argument on the lambda expression is the `HttpContext` for the
 request. One of its properties is the `Request` object. The `Request`
@@ -306,7 +305,7 @@ list of dependencies:
   "dependencies": {
     "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
     "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
-    "Newtonsoft.Json": "8.0.3"
+    "Newtonsoft.Json": "8.0.4-beta1"
   },
 ``` 
 
@@ -332,7 +331,7 @@ for our purposes. Let's go over its contents.
 The first line specifies the source image:
 
 ```
-FROM microsoft/aspnet:1.0.0-rc1-update1
+FROM microsoft/dotnet:onbuild
 ```
 
 Docker allows you to configure a machine image based on a
@@ -340,6 +339,11 @@ source template. That means you don't have to supply all
 the machine parameters when you start, you only need to
 supply any changes. The changes here will be to include
 our application.
+
+In this first sample, we'll use the `onbuild` version of
+the RC2 image. This is the easiest way to create a working Docker
+environment. However, the image it creates is larger than necessary.
+This image include the dotnet core runtime, and the dotnet SDK. 
 
 The next two lines load SQLite onto the machine:
 
@@ -355,18 +359,21 @@ The next three lines setup your application:
 ```
 COPY . /app
 WORKDIR /app
-RUN ["dnu", "restore"]
+RUN ["dotnet", "restore"]
 ```
 
 This will copy the contents of the current directory to the docker VM, and restore
 all the packages.
 
-The final lines of the file set the output port (5004) and run the application:
+The final lines of the file set the output port (80) and run the application:
 
 ```
-EXPOSE 5004
-ENTRYPOINT ["dnx", "-p", "project.json", "web"]
+EXPOSE 80
+ENTRYPOINT ["dotnet", "run"]
 ```
+
+Notice that this Dockerfile uses the dotnet cli to build and run your docker image.
+That's why the larger image is needed.
 
 Here are the steps to build the image and deploy it. The information below is 
 for the PowerShell CLI. Different shells will have slightly different syntax
@@ -401,21 +408,32 @@ In PowerShell it is as follows:
 ```
 
 If you are using a different shell, the output from the docker-machine command
-above will show you what command to use in its place.
+above will show you what command to use in its place. Execute the command that was generated
+for you. 
+
+> Note: The `docker-machine` command will include the shell's comment character,
+> `#` in the case of powershell in the output for the command to run. Make sure
+> you remove this character when you execute the command.
 
 Finally, build the docker image from your application:
 
 ```
-docker-build -t weather-service .
+docker build -t weather-service .
 ```
 
-This command builds the image using your source, and the configuration settings in your
+> Note: You may need to restart the Docker machine for the `docker build` command
+> to work. You do that by executing the `docker restart` command:
+> 
+> `docker restart weather-service`
+
+The build command builds the image using your source, and the configuration
+settings in your
 Dockerfile.
 
 And finally run the application in the docker container:
 
 ```
-docker run -t -d -p 80:5004 weather-service
+docker run -t -d -p 80:5000 weather-service
 ```
 
 You can see if the image is running by checking the command:
@@ -433,8 +451,8 @@ To navigate to your service, find the IP address for the machine:
 docker-machine ip weather-service
 ```
 
-Open a browser and navigate to that site, and you should see your 
-weather service running.
+Open a browser on the docker host and navigate to that site, and you should see your 
+weather service running. 
 
 # Conclusion 
 

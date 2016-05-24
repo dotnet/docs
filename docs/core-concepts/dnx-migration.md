@@ -86,19 +86,30 @@ Another way is using the `dotnet` itself to run your code. This is done by provi
 `dotnet path/to/an/assembly.dll`. 
 
 ## Migrating your DNX project to .NET Core CLI
-In addition to using new commands when working with your code, there are two major things left in migrating from DNX:
+In addition to using new commands when working with your code, there are three major things left in migrating from DNX:
 
-1. Migrating the project file (`project.json`) itself to the CLI tooling.
-2. Migrating off of any DNX APIs to their BCL counterparts. 
+1. Migrate the `global.json` file if you have it to be able to use CLI.
+2. Migrating the project file (`project.json`) itself to the CLI tooling.
+3. Migrating off of any DNX APIs to their BCL counterparts. 
+
+### Dealing with global.json file
+The `global.json` file acts like a solution file for both the RC1 and RC2 projects. In order for the CLI tools (as well 
+as Visual Studio) to differentiate between RC1 and RC2, they use the `sdkVersion` to differentiate. If this property is 
+not in the file, the tooling will assume the project is RC2. 
+
+In order to update the `global.json` file to RC2, either remove the property or set it to the exact version of the 
+tools that you wish to use, in this case **1.0.0-preview1-002720**. 
 
 ### Migrating the project file
 The CLI and DNX both use the same basic project system based on `project.json` file. The syntax and the semantics of the 
-project file are pretty much the same, with small differences based on the scenarios. Let's see what those differences are. 
+project file are pretty much the same, with small differences based on the scenarios. There are also some changes to 
+the schema which you can see in the [schema file](http://json.schemastore.org/project) or in a more friendly 
+[project.json reference](../project-model/project-json-reference.md). 
 
 If you are building a console application, you need to add the following snippet to your project file:
 
 ```json
-"compilationOptions": {
+"buildOptions": {
     "emitEntryPoint": true
 }
 ```
@@ -131,6 +142,10 @@ brought, the framework needs to be one of the following:
 1. `netcoreapp1.0` - if you are writing applications on .NET Core (including ASP.NET Core applications)
 2. `netstandard1.5` - if you are writing class libraries for .NET Core
 
+If you are using other `dnx` targets, like `dnx451` you will need to change those as well. `dnx451` should go to `net451`. 
+Please refer to the [.NET Standard Library document](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md) 
+for more information. 
+
 Your `project.json` is now mostly ready. You need to go through your dependencies list and update the dependencies to 
 their newer versions, especially if you are using ASP.NET Core dependencies. If you were using separate packages for BCL APIs, 
 you can use the runtime package as explained in the [application portability type](app-types.md) document. 
@@ -153,4 +168,6 @@ import. If you are slightly lost or new to this, in general, specifying `dnxcore
 ```
 
 Running `dotnet build` will show any eventual build errors, though there shouldn't be too many of them. After your code is 
-building and running properly, you can test it out with the runner. If all works, you are good to go!
+building and running properly, you can test it out with the runner. Execute `dotnet <path-to-your-assembly>` and see it run.
+
+

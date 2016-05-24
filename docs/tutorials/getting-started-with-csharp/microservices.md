@@ -331,7 +331,7 @@ for our purposes. Let's go over its contents.
 The first line specifies the source image:
 
 ```
-FROM microsoft/dotnet:1.0.0-rc2-core
+FROM microsoft/dotnet:onbuild
 ```
 
 Docker allows you to configure a machine image based on a
@@ -339,6 +339,11 @@ source template. That means you don't have to supply all
 the machine parameters when you start, you only need to
 supply any changes. The changes here will be to include
 our application.
+
+In this first sample, we'll use the `onbuild` version of
+the RC2 image. This is the easiest way to create a working Docker
+environment. However, the image it creates is larger than necessary.
+This image include the dotnet core runtime, and the dotnet SDK. 
 
 The next two lines load SQLite onto the machine:
 
@@ -360,12 +365,15 @@ RUN ["dotnet", "restore"]
 This will copy the contents of the current directory to the docker VM, and restore
 all the packages.
 
-The final lines of the file set the output port (5004) and run the application:
+The final lines of the file set the output port (80) and run the application:
 
 ```
-EXPOSE 5000
+EXPOSE 80
 ENTRYPOINT ["dotnet", "run"]
 ```
+
+Notice that this Dockerfile uses the dotnet cli to build and run your docker image.
+That's why the larger image is needed.
 
 Here are the steps to build the image and deploy it. The information below is 
 for the PowerShell CLI. Different shells will have slightly different syntax
@@ -401,7 +409,11 @@ In PowerShell it is as follows:
 
 If you are using a different shell, the output from the docker-machine command
 above will show you what command to use in its place. Execute the command that was generated
-for you.
+for you. 
+
+> Note: The `docker-machine` command will include the shell's comment character,
+> `#` in the case of powershell in the output for the command to run. Make sure
+> you remove this character when you execute the command.
 
 Finally, build the docker image from your application:
 
@@ -439,8 +451,12 @@ To navigate to your service, find the IP address for the machine:
 docker-machine ip weather-service
 ```
 
-Open a browser and navigate to that site, and you should see your 
-weather service running.
+Open a browser on the docker host and navigate to that site, and you should see your 
+weather service running. 
+
+# Building a smaller, lighter Docker image
+
+
 
 # Conclusion 
 
@@ -450,3 +466,12 @@ features.
 You built a docker machine, created an image of your new application and
 ran that application in the docker vm.
 Along the way, you saw several features of the C# language in action.
+
+
+/dotnetapp/project.json(16,61): error NU1001: The dependency Libuv >= 1.9.0-rc2-20901 could not be resolved.
+/dotnetapp/project.json(11,31): error NU1001: The dependency Microsoft.NETCore.App >= 1.0.0-rc2-3002700 could not be resolved.
+/dotnetapp/project.json(11,31): error NU1001: The dependency Microsoft.NETCore.DotNetHost >= 1.0.1-rc2-002700 could not be resolved.
+/dotnetapp/project.json(11,31): error NU1001: The dependency Microsoft.NETCore.DotNetHostPolicy >= 1.0.1-rc2-002700-00 could not be resolved.
+/dotnetapp/project.json(11,31): error NU1001: The dependency Microsoft.NETCore.DotNetHostResolver >= 1.0.1-rc2-002700 could not be resolved.
+
+Compilation failed.

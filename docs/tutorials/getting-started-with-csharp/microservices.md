@@ -454,10 +454,6 @@ docker-machine ip weather-service
 Open a browser on the docker host and navigate to that site, and you should see your 
 weather service running. 
 
-# Building a smaller, lighter Docker image
-
-
-
 # Conclusion 
 
 In this tutorial, you built an asp.net core microservice, and added a few
@@ -466,12 +462,3 @@ features.
 You built a docker machine, created an image of your new application and
 ran that application in the docker vm.
 Along the way, you saw several features of the C# language in action.
-
-
-/dotnetapp/project.json(16,61): error NU1001: The dependency Libuv >= 1.9.0-rc2-20901 could not be resolved.
-/dotnetapp/project.json(11,31): error NU1001: The dependency Microsoft.NETCore.App >= 1.0.0-rc2-3002700 could not be resolved.
-/dotnetapp/project.json(11,31): error NU1001: The dependency Microsoft.NETCore.DotNetHost >= 1.0.1-rc2-002700 could not be resolved.
-/dotnetapp/project.json(11,31): error NU1001: The dependency Microsoft.NETCore.DotNetHostPolicy >= 1.0.1-rc2-002700-00 could not be resolved.
-/dotnetapp/project.json(11,31): error NU1001: The dependency Microsoft.NETCore.DotNetHostResolver >= 1.0.1-rc2-002700 could not be resolved.
-
-Compilation failed.

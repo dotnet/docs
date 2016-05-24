@@ -1,0 +1,27 @@
+os: Visual Studio 2015
+
+install:
+  # .NET Core SDK binaries
+  - ps: $url = "https://go.microsoft.com/fwlink/?LinkID=798402" # v1.0.0-preview1 x64
+  # Download .NET Core SDK and add to PATH
+  - ps: $env:DOTNET_INSTALL_DIR = "$pwd\.dotnetsdk"
+  - ps: mkdir $env:DOTNET_INSTALL_DIR -Force | Out-Null
+  - ps: $tempFile = [System.IO.Path]::GetTempFileName()
+  - ps: (New-Object System.Net.WebClient).DownloadFile($url, $tempFile)
+  - ps: Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::ExtractToDirectory($tempFile, $env:DOTNET_INSTALL_DIR)
+  - ps: $env:Path = "$env:DOTNET_INSTALL_DIR;$env:Path"
+
+build_script:
+  # dotnet info
+  - ps: dotnet --info
+  # Run dotnet new 
+  - ps: mkdir "test\test-dotnet-new" -Force | Push-Location
+  - ps: dotnet new --lang fsharp
+  - ps: dotnet restore
+  - ps: dotnet --verbose build
+  - ps: dotnet --verbose run a b
+  - ps: Pop-Location
+
+
+test: off 
+version: 0.0.1.{build}

@@ -1,6 +1,6 @@
 # Getting started
 
-*  [🔧 What is the .NET Platform?](what-is-dotnet.md)
+*  [What is the .NET Core Platform?](what-is-dotnet.md)
 *  [Installing .NET Core](installing/index.md)
     *  [Installing .NET Core on Windows](installing/installing-core-windows.md)
     *  [Installing .NET Core on Ubuntu](installing/installing-core-ubuntu.md)

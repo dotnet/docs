@@ -92,13 +92,21 @@ In addition to using new commands when working with your code, there are three m
 2. Migrating the project file (`project.json`) itself to the CLI tooling.
 3. Migrating off of any DNX APIs to their BCL counterparts. 
 
-### Dealing with global.json file
+### Changing the global.json file
 The `global.json` file acts like a solution file for both the RC1 and RC2 projects. In order for the CLI tools (as well 
-as Visual Studio) to differentiate between RC1 and RC2, they use the `sdkVersion` to differentiate. If this property is 
-not in the file, the tooling will assume the project is RC2. 
+as Visual Studio) to differentiate between RC1 and RC2, they use the `"sdk": { "version" }` property to make the distinction
+which project is RC1 or RC2. If `global.json` doesn't have this node at all, it is assumed to be the latest, that is RC2. 
 
 In order to update the `global.json` file to RC2, either remove the property or set it to the exact version of the 
-tools that you wish to use, in this case **1.0.0-preview1-002720**. 
+tools that you wish to use, in this case **1.0.0-preview1-002702**:
+
+```json
+{
+    "sdk": {
+        "version": "1.0.0-preview1-002702"
+    }
+}
+```
 
 ### Migrating the project file
 The CLI and DNX both use the same basic project system based on `project.json` file. The syntax and the semantics of the 
@@ -142,7 +150,7 @@ brought, the framework needs to be one of the following:
 1. `netcoreapp1.0` - if you are writing applications on .NET Core (including ASP.NET Core applications)
 2. `netstandard1.5` - if you are writing class libraries for .NET Core
 
-If you are using other `dnx` targets, like `dnx451` you will need to change those as well. `dnx451` should go to `net451`. 
+If you are using other `dnx` targets, like `dnx451` you will need to change those as well. `dnx451` should be changed to `net451`. 
 Please refer to the [.NET Standard Library document](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md) 
 for more information. 
 

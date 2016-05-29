@@ -6,7 +6,7 @@
 >
 > We welcome your input to help shape the scope and approach. You can
 > track the status and provide input on this
-> [issue](https://github.com/dotnet/core-docs/issuess/301) at GitHub.
+> [issue](https://github.com/dotnet/core-docs/issues/301) at GitHub.
 > 
 > If you would like to review early drafts and outlines of this
 > topic, please leave a note with your contact information in the issue.

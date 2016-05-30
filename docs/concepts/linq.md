@@ -150,7 +150,7 @@ public class DogHairLengthComparer : IEqualityComparer<Dog>
 {
     public bool Equals(Dog a, Dog b)
     {
-        if (a == null && a == null)
+        if (a == null && b == null)
         {
             return true;
         }

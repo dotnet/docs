@@ -89,7 +89,7 @@
 ### [🔧 Overview and moving pieces](console/overview.md)
 ### [🔧 Console applications paradigm](console/paradigm.md)
 ### [🔧 Creating single binaries with native compilation](console/single-binaries.md)
-### [Writing Console Apps: An Incremental Guide](console/incremental-guide.md)
+### [Writing Console Apps: An Step by Guide Guide](console/step-by-step-guide.md)
 ## [Writing libraries](libraries/index.md)
 ### [🔧 Overview](libraries/overview.md)
 ### [🔧 Creating a class library](libraries/creating-class-library.md)

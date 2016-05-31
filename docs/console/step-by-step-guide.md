@@ -1,9 +1,13 @@
 # Writing Console Apps: A Step by Step Guide
 
-This guide will show you how to use the .NET CLI tooling to build cross-platform console apps incrementally.  It will start with the most basic console app and eventually span multiple projects, including testing.
+This guide will show you how to use the .NET CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.
 
-If you're unfamiliar with the .NET CLI toolset, read [the overview](overview.md).  It's also helpful to have an understanding of the [console app paradigm](paradigm.md) and how [native binary compilation](single-binaries.md) works.
+If you're unfamiliar with the .NET CLI toolset, read [the overview](../core-concepts/core-sdk/cli/sdk-overview.md).  It's also helpful to have an understanding of the [console app paradigm](paradigm.md) and how [native binary compilation](single-binaries.md) works.
 
+> * NOTE TO SELF:
+>
+> Next commit should address the native binary compilation in RC2 / SDK - Preview 1.
+ 
 ## Prerequisites
 
 Before you begin, ensure you have the [latest .NET CLI tooling](http://dotnet.github.io/getting-started/).  You'll also need a text editor.
@@ -17,32 +21,32 @@ Open up a command prompt and type the following:
 ```
 $ dotnet new
 $ dotnet restore
-$ dotnet compile
+$ dotnet run
 ```
 
 Let's do a quick walkthrough:
 
-1. `$ dotnet init`
+1. `$ dotnet new`
 
-   `dotnet init` created an up-to-date `project.json` file with NuGet dependencies necessary to build a console app.  It also created a `Program.cs`, a basic file containing the entry point for the application.
+   `dotnet new` creates an up-to-date `project.json` file with NuGet dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
    
    `project.json`:
    ```javascript
    {
         "version": "1.0.0-*",
-        "compilationOptions": {
+        "buildOptions": {
             "emitEntryPoint": true
         },
-    
         "dependencies": {
-            "Microsoft.NETCore.Runtime": "1.0.1-beta-*",
-            "System.IO": "4.0.11-beta-*",
-            "System.Console": "4.0.0-beta-*",
-            "System.Runtime": "4.0.21-beta-*"
-        },
-    
-        "frameworks": {
-            "dnxcore50": { }
+            "Microsoft.NETCore.App": {
+                "type": "platform",
+                "version": "1.0.0-rc2-3002702"
+            }
+        },   
+       "frameworks": {
+            "netcoreapp1.0": {
+                "imports": "dnxcore50"
+            }
         }
    }
    ```
@@ -64,31 +68,27 @@ Let's do a quick walkthrough:
 
 2. `$ dotnet restore`
 
-   `dotnet restore` analyzed the `project.json` file, downloaded the dependencies stated in the file (or grabbed them from a cache on your machine), and wrote the `project.lock.json` file.  The `project.lock.json` file is necessary to be able to compile and run.
+   `dotnet restore` analyzes the `project.json` file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the `project.lock.json` file.  The `project.lock.json` file is necessary to be able to compile and run.
    
-   The `project.lock.json` file is a persisted and complete set of NuGet dependencies and other information describing an app.  This file is read by other tools, such as `dotnet compile` and `dotnet run`, enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.
+   The `project.lock.json` file is a persisted and complete set of the graph of NuGet dependencies and other information describing an app.  This file is read by other tools, such as `dotnet build` and `dotnet run`, enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.
    
 3. `$ dotnet run`
 
-   `dotnet compile` compiled the source in Intermediate Language (IL) and generated an executable shim and a `Hello.dll` `.dll` file which contains the IL.
+   `dotnet run` launches the runtime and executes the application created from the `project.json` file in the current directory. If necessary, it compiles the source to Intermediate Language (IL) and generates `Hello.dll` `.dll` file which contains the IL using the `dotnet build` command.
    
-You can now invoke the executable.
-
-```
-$ /bin/Debug/dnxcore50/Hello.exe
-Hello, World!
-```
-
-### Other ways to compile
-
-Let's try compiling `dotnet run` to compile and execute the code without generating any build artifacts.  Note that although this has use (mainly by ASP.NET internally), it's not a recommended way to run build and run console applications.
-
 ```
 $ dotnet run
 Hello, World!
 ```
 
+You can also execute `dotnet build` to compile and the code without running console applications.
+
+### Other ways to compile
+
 Let's try compiling a native binary instead.
+
+> *NOTE TO SELF: 
+> Update with notes for updating project.json, and building both a portable application, and a standalone application. 
 
 ```
 $ dotnet compile --native
@@ -97,6 +97,8 @@ Hello World!
 ```
 
 Note the difference in compile time versus execution time.
+
+> End of Note updates
 
 ### Augmenting the program
 
@@ -142,6 +144,10 @@ namespace ConsoleApplication
 ```
 
 And running the program:
+
+> * Note to self:
+>
+> Update from the build cycle for a standalone application.
 
 ```
 $ dotnet compile --native

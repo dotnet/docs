@@ -5,7 +5,6 @@
   },
   "dependencies": {
     "Microsoft.NETCore.App": {
-      "type": "platform",
       "version": "1.0.0-rc2-3002702"
     }
   },
@@ -13,5 +12,10 @@
     "netcoreapp1.0": {
       "imports": "dnxcore50"
     }
+  },
+  "runtimes": {
+    "win10-x64": {},
+    "osx.10.11-x64": {}
   }
+
 }

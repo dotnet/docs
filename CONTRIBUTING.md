@@ -3,11 +3,11 @@ Contributing
 
 In this document: 
 
-* [Adding content](#Adding content)
-* [Process for contributing](#Process for contributing) 
-* [Guidance checklist](#Guidance checklist)
-* [Building the docs](#Building the docs)
-* [Contributing to samples](#Contributing to samples)
+* [Adding content](#adding-content)
+* [Process for contributing](#process-for-contributing) 
+* [Guidance checklist](#guidance-checklist)
+* [Building the docs](#building-the-docs)
+* [Contributing to samples](#contributing-to-samples)
 
 ## Adding content ##
 
@@ -20,15 +20,15 @@ resources, create a subfolder that matches the name of the article. Within this
 subfolder, create a ``sample`` folder for code samples and a  ``_static`` folder
  for images and other static content.
 
-### Example Structure ###
+### Example structure ###
 
-	docs
-		/concepts
-    /getting-started
-    /porting
-      /_static
-        portability_report.png
-					...
+    docs
+      /concepts
+      /getting-started
+      /porting
+        /_static
+          portability_report.png
+	  ...
 
 Author information is kept in the Markdown file itself. Each author should have a link to an online presence for himself/herself. 
 

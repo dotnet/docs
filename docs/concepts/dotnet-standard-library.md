@@ -47,3 +47,34 @@ We intend to move to a 2.0 version of .NET Standard only for very significant ch
 - Drop APIs.
 - Add a major new feature that is potentially breaking for existing runtimes (for example, array slices).
 - Update the CLR metadata/assembly format.
+
+
+Everytime there is a new major or minor release of the NetStandard.Library meta-package, there will be a subset of the underlying packages that include a new netstandard folder. That's the change that creates the new netstandard versions. Packages that don't expose new APIs will not include these new folders, unless they take an implementation dependency on a new package that does add new APIs.
+
+In most cases, higher-level packages, from Microsoft or 3rd parties, will not need to support multiple netstandard versions, but will target the lowest netstandard version that satisfies their API dependency and platform breadth needs. If you need to get access to newer APIs in later netstandard versions but want to maintain their platform support, you can target multiple netstandard versions, but can continue to offer the same API (where possible) for developers to consume. Many existing NuGet packages already do this, across net20, net46 and PCL, for example.
+
+Most .NET Core packages will use the new ".NET Standard" (netstandard) framework, which is intended to be supported on all modern .NET platforms. They may also support other frameworks.
+
+Target Frameworks
+-----------------
+
+
+
+
+Other .NET platforms could support this framework, but are not expected to.
+
+
+The [NETStandard.Library version](versioning.md) matches the highest `netstandard` version it supports. The framework reference in project.json is used to select the correct assets from the underlying packages. In this case, `netstandard1.5` assets are required, as opposed to `netstandard1.4` or `net46`, for example. The framework and metapackage references in project.json do not need to match. For example, the following project.json is also valid.
+
+```json
+{
+  "dependencies": {
+    "NETStandard.Library": "1.5.0"
+  },
+  "frameworks": {
+    "netstandard1.3": {}
+  }
+}
+```
+
+It may seem strange to target `netstandard1.3` but use the 1.5.0 version of `NETStandard.Library`. It is a valid use-case, since the metapackage maintains support for older `netstandard` versions. It could be the case you've standardized on the 1.5.0 version of the metapackage and use it for all your libraries, which target a variety of `netstandard` versions. With this approach, you only need to restore `NETStandard.Library` 1.5.0 and not earlier versions. The reverse would not be valid. You cannot use `netstandard1.5` assets with the 1.3.0 version of NETStandard.Library. 

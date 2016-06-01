@@ -53,23 +53,24 @@ A mixed .NET Core library and .NET Framework application
 
 Starting from the solution obtained with the previous script, execute the following steps:
 
-1. Change the library's `project.json` to use `frameworks/netstandard1.4` instead of 1.5.
-2. Right-click src, and add a new console application project (not Core). Call it FxApp. Don't forget to use `Golden\src` as the location, as this isn't happening automatically for non-Core projects.
-3. Add a reference to Library.
-4. Add `Console.WriteLine($"The answer is {new Thing().Get(42)}.");` to the Main method of the program.
+1. Change the library's `project.json` to use `frameworks/netstandard1.4` instead of 1.5. Restore packages. The solution should still build and function exactly like it did before: the test should pass, and the console application should run and be debuggable.
+2. Right-click src, and add a new console application project (not Core, this time, as we want to consume our library from a .NET Framework application). Call it FxApp. Don't forget to use `Golden\src` as the location.
+3. Add a reference to the Library project. In theory, you should be able to add the reference to the project, but this scenario is currently broken. As a workaround, build the library project, then browse to the built dll. You could also package the library and reference the package, as another way to reference Core code from the .NET Framework. You will also need to manually add to your project the NuGet packages that the `Library` project is using (namely, `Newtonsoft.Json`), if you included it as a dll.
+4. Open `Program.cs`, add `using Library;" to the top of the file, and add `Console.WriteLine($"The answer is {new Thing().Get(42)}.");` to the Main method of the program.
 5. Make FxApp the startup application for the solution.
 6. Set a breakpoint after the `WriteLine`.
 7. Run the app using F5.
-8. Check that the application output "The answer is 42." that the breakpoint was hit, and that variables can be inspected.
+
+The application should build and hit the breakpoint. The application output should be "The answer is 42.".
 
 Moving a library from netstandard 1.4 to 1.3
 --------------------------------------------
 
 1. Modify the library's `project.json` to use `frameworks/netstandard1.3` instead of 1.4.
-2. Restore references for the library.
-3. Set a breakpoint after the `WriteLine`.
-4. Run the app using F5.
-5. Check that the application output "The answer is 42." that the breakpoint was hit, and that variables can be inspected.
+2. Restore packages for the library and build it.
+3. Remove the `Library` reference from `FxApp` then add it back, but pointing at the 1.3 version now.
+
+Everything should still work as it did before. Check that the application output "The answer is 42." that the breakpoint was hit, and that variables can be inspected.
 
 A mixed PCL library and .NET Framework application
 --------------------------------------------------

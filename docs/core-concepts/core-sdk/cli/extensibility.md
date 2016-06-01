@@ -105,8 +105,8 @@ tools there are two components:
 1. A dispatcher tool that the user invokes
 2. A framework-specific dependency that contains the logic on how to find the build outputs and what to do with it
 
-A prime example of this are [Entity Framework (EF)](https://github.com/aspnet/EntityFramework) commands as well as the [dotnet-test](dotnet-test.md) command. In both 
-cases there is a tool that is referenced in the `tools` node of the `project.json` and that is the main dispatcher. The 
+A prime example of this are [Entity Framework (EF)](https://github.com/aspnet/EntityFramework) commands as well as the [`dotnet test`](dotnet-test.md) command. In both 
+cases, there is a tool that is referenced in the `tools` node of the `project.json` and that is the main dispatcher. The 
 user invokes this tool on the command line. The second piece of the puzzle is the dependency that is given in the 
 project's main dependencies (either root ones or framework-specific ones). This package contains the actual logic of 
 the tool. The package is a normal dependency, thus it will be restored as part of the restore process for the project. 
@@ -134,8 +134,8 @@ PATH-based extensibility is usually used for development machines where you need
 than a single project. The main drawback of this extensions mechanism is that it is tied to the machine where the 
 tool exists. If you need it on another machine, you would have to deploy it.
 
-This pattern of CLI toolset extensibility is very simple. As covered in the [overview](overview.md), `dotnet` driver 
-can run any command that is named after the `dotnet-<command>` convention. The default resolution logic will first 
+This pattern of CLI toolset extensibility is very simple. As covered in the [.NET Core CLI overview](overview.md), `dotnet` driver 
+can run any command that is named after the `dotnet <command>` convention. The default resolution logic will first 
 probe several locations and will finally fall to the system PATH. If the requested command exists in the system PATH 
 and is a binary that can be invoked, `dotnet` driver will invoke it. 
 
@@ -162,7 +162,7 @@ fi
 echo "Cleaning complete..."
 ```
 
-On OS X we can save this script as `dotnet-clean` and set its executable bit with `chmod +x dotnet-clean`. We can then 
+On OS X, we can save this script as `dotnet-clean` and set its executable bit with `chmod +x dotnet-clean`. We can then 
 create a symbolic link to it in `/usr/local/bin` using the command `ln -s dotnet-clean /usr/local/bin/`. This will make 
 it possible to invoke the clean command using the `dotnet clean` syntax. You can test this by creating an app, running 
 `dotnet build` on it and then running `dotnet clean`. 

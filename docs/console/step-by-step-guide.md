@@ -4,10 +4,6 @@ This guide will show you how to use the .NET CLI tooling to build cross-platform
 
 If you're unfamiliar with the .NET CLI toolset, read [the overview](../core-concepts/core-sdk/cli/sdk-overview.md).  It's also helpful to have an understanding of the [console app paradigm](paradigm.md) and how [native binary compilation](single-binaries.md) works.
 
-> * NOTE TO SELF:
->
-> Next commit should address the native binary compilation in RC2 / SDK - Preview 1.
- 
 ## Prerequisites
 
 Before you begin, ensure you have the [latest .NET CLI tooling](http://dotnet.github.io/getting-started/).  You'll also need a text editor.
@@ -102,7 +98,9 @@ This project's only dependency so far is `"Microsoft.NETCore.App"`. The `depende
 ```
 
 Next, you need to add a `runtime` node to specify all the target execution environments. For example, this
-runtimes node will build native executes for 64 bit Windows 10 and the 64 bit version of Mac OSX version 10.11.
+runtimes node instructs the build system to creat executables for 64 bit Windows 10 and the 64 bit version of Mac OSX version 10.11.
+The build system will generate native executables for the current environment. If you are following these steps on a Windows machine,
+you'll build a Windows executable. If you are following these steps on a Mac, you'll build the OSX executable.
 
 ```javascript
 "runtimes": {
@@ -127,26 +125,27 @@ You may notice that the native application takes slightly longer to build, but e
 becomes more noticeable as the application grows.
 
 The build process gneerates several more files when your `project.json` creates a native build. These files
-are created in `bin\Debug\networeapp1.0\<platform>` where `<platform>` is the RID chosen. In addition to the
+are created in `bin\Debug\netcoreapp1.0\<platform>` where `<platform>` is the RID chosen. In addition to the
 project's `HelloNative.dll` there is a `HelloNative.exe` that loads the runtime and starts the application.
 Note that the name of the generated application changed because the project directory's name has changed.  
 
 You may want to package this application to execute it on a machine that does not include the .NET runtime.
 You do that using the `dotnet publish` command. The `dotnet publish` command creates a new subdirectory
-under the `./bin/Debug/netcoreapp1.0/win10-x64` directory called `publish`. It copies the executable,
+under the `./bin/Debug/netcoreapp1.0/<platform>` directory called `publish`. It copies the executable,
 all dependent DLLs and the framework to this sub directory. You can package that directory to another machine
 (or a container) and execute the application there. 
 
 Let's contrast that with the behavior of `dotnet publish` in the first Hello World sample. That application
 is a *portable application*, which is the default type of application for .NET core. A portable application
 requires that .NET Core is installed on the target machine. Portable applications can be built on one machine
-and executed anywhere. Native application must be built separately for each target machine.
+and executed anywhere. Native application must be built separately for each target machine. `dotnet publish`
+creates a directory that has the application's DLL, and any dependent dlls that are not part of the platorm
+installation.
 
 ### Augmenting the program
 
 Let's change the file just a little bit.  Fibonacci numbers are fun, so let's try that out (using
 the native version):
-
 
 `Program.cs`:
 
@@ -347,8 +346,8 @@ Say you wanted to introduce some new types to do work on.  You can do this by ad
 ```
 /MyProject
 |__Program.cs
-|__Type1.cs
-|__Type2.cs
+|__Utilities.cs
+|__NetworkCommunications.cs
 |__project.json
 ```
 
@@ -368,8 +367,8 @@ Now add some new types to the folder:
 ```
 /NewTypes
 |__/Model
-   |__Type1.cs
-   |__Type2.cs
+   |__AccountInformation.cs
+   |__MonthlyReportRecords.cs
 |__Program.cs
 |__project.json
 ```
@@ -384,7 +383,7 @@ Folder Structure:
 
 ```
 /NewTypes
-|__/Types
+|__/Pets
    |__Dog.cs
    |__Cat.cs
    |__IPet.cs
@@ -539,13 +538,12 @@ The whole project structure should look like this:
 ```
 /NewTypes
 |__/src
-   |__/NewTypes
-      |__/Model
-         |__Dog.cs
-         |__Cat.cs
-         |__IPet.cs
-      |__Program.cs
-      |__project.json
+   |__/Pets
+      |__Dog.cs
+      |__Cat.cs
+      |__IPet.cs
+   |__Program.cs
+   |__project.json
 |__/test
    |__NewTypesTests
       |__TypesTests.cs

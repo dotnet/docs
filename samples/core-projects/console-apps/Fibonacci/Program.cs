@@ -1,4 +1,4 @@
-﻿using System;
+﻿using static System.Console;
 
 namespace ConsoleApplication
 {
@@ -22,12 +22,12 @@ namespace ConsoleApplication
         
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Fibonacci Numbers 1-15:");
+            WriteLine("Hello World!");
+            WriteLine("Fibonacci Numbers 1-15:");
             
             for (int i = 0; i < 15; i++)
             {
-                Console.WriteLine($"{i+1}: {FibonacciNumber(i)}");
+                WriteLine($"{i+1}: {FibonacciNumber(i)}");
             }
         }
     }

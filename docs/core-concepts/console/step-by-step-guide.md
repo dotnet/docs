@@ -2,7 +2,7 @@
 
 This guide will show you how to use the .NET CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.
 
-If you're unfamiliar with the .NET CLI toolset, read [the overview](../core-concepts/core-sdk/cli/sdk-overview.md).  It's also helpful to have an understanding of the [console app paradigm](paradigm.md) and how [native binary compilation](single-binaries.md) works.
+If you're unfamiliar with the .NET CLI toolset, read [the overview](../core-sdk/sdk-overview.md).  It's also helpful to have an understanding of the [console app paradigm](paradigm.md) and how [native binary compilation](single-binaries.md) works.
 
 ## Prerequisites
 
@@ -79,7 +79,7 @@ Hello, World!
 
 You can also execute `dotnet build` to compile and the code without running the build console applications.
 
-### Building a native executable
+### Building a native binary
 
 Let's try compiling a native binary instead. You need to make some changes to your `project.json`
 file to direct the tools to build a native application. You can see these in the
@@ -150,7 +150,7 @@ the native version):
 `Program.cs`:
 
 ```csharp
-using System;
+using static System.Console;
 
 namespace ConsoleApplication
 {
@@ -174,12 +174,12 @@ namespace ConsoleApplication
         
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Fibonacci Numbers 1-15:");
+            WriteLine("Hello World!");
+            WriteLine("Fibonacci Numbers 1-15:");
             
             for (int i = 0; i < 15; i++)
             {
-                Console.WriteLine($"{i+1}: {FibonacciNumber(i)}");
+                WriteLine($"{i+1}: {FibonacciNumber(i)}");
             }
         }
     }
@@ -228,7 +228,7 @@ namespace NumberFun
 Next, include it in your `Program.cs` file:
 
 ```csharp
-using System;
+using static System.Console;
 using NumberFun;
 ```
 
@@ -346,8 +346,8 @@ Say you wanted to introduce some new types to do work on.  You can do this by ad
 ```
 /MyProject
 |__Program.cs
-|__Utilities.cs
-|__NetworkCommunications.cs
+|__AccountInformation.cs
+|__MonthlyReportRecords.cs
 |__project.json
 ```
 
@@ -389,7 +389,7 @@ Folder Structure:
    |__IPet.cs
 |__Program.cs
 |__project.json
-```dd
+```
 
 `IPet.cs`:
 ```csharp
@@ -640,3 +640,4 @@ SUMMARY: Total: 1 targets, Passed: 1, Failed: 0.
  Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.  The next step is to create awesome console apps of your own!
  
  If a more advanced example of a console app interests you, check out the next section, [nameof(more_interesting_console_app)](overview.md).
+ 

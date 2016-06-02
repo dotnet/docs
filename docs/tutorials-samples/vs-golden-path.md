@@ -75,31 +75,29 @@ Everything should still work as it did before. Check that the application output
 A mixed PCL library and .NET Framework application
 --------------------------------------------------
 
+Close the previous solution if it was open: we are starting a new script from this section on.
+
 ### Writing the library
 
-1. File -> New. Under Templates / Visual C\#, choose "Class Library (Portable)" and name the project "PCLLibrary" and the solution "GoldenPCL". Leave .NET Framework 4.6 and ASP.NET Core 5.0 checked.
+1. File -> New -> Project. Under Templates / Visual C\#, choose "Class Library (Portable for iOS, Android and Windows)" and name the project "PCLLibrary" and the solution "GoldenPCL".
 2. Under References, manage NuGet packages, use "nuget.org" as the package source, and browse (including prerelease) for `Newtonsoft.Json`. Install.
 3. Rename the class "Thing". Add a method: `public int Get(int number) => Newtonsoft.Json.JsonConvert.DeserializeObject<int>($"{number}");`
 4. Verify that the solution builds.
 
 ### Writing the console app
 
-1. Add a new .NET console app project, call it App.
+1. Add a new "Console Application" project, call it "App".
 2. Add reference to Projects/Solution/PCLLibrary.
-3. Add references to `Newtonsoft.Json` (\*)
-4. Add `Console.WriteLine($"The answer is {new Thing().Get(42)}");` to the Main method of Program.cs.
-5. Right-click App, set it as the startup project.
-6. Set a breakpoint after the `WriteLine`.
-7. Run the app using F5.
-8. Check that the application output "The answer is 42." that the breakpoint was hit, and that variables can be inspected.
+3. Add `Console.WriteLine($"The answer is {new Thing().Get(42)}");` to the Main method of Program.cs, with `using PCLLibrary;` at the top of the file.
+4. Right-click App, set it as the startup project.
+5. Set a breakpoint after the `WriteLine`.
+6. Run the app using F5.
 
-(\*) Those steps are temporary workarounds and will not be necessary with the released bits.
+The application should build, run, and hit the breakpoint after it output "The answer is 42.".
 
-Moving a PCL to a Netstandard library
+Moving a PCL to a NetStandard library
 -------------------------------------
 
-From the previous solution:
+The PCL library that we built in this script is based on a `csproj`project file. In order to move it to NetStandard, the simplest solution is to manually move its code into a new empty .NET Core Class Library project.
 
-1. In `project.json`, remove the "supports" section.
-2. In `project.json`/dependencies, update the versions to `"Microsoft.NETCore.Portable.Compatibility": "1.0.1-rc2-24018"` and `"NETStandard.Library": "1.5.0-rc2-24008"`.
-3. Under frameworks, set `"netstandard1.3": { "imports": "portable-net40+sl5+win8+wp8+wpa81" }`
+If you have pre-RC2 PCL libraries with a `xproj` file and a `project.json`, you should be able to edit the `project.json` file instead, to reference `"NETStandard.Library": "1.5.0-rc2-24027"`, and target "netstandard1.3".

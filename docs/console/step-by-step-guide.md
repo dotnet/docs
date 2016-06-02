@@ -77,9 +77,9 @@ $ dotnet run
 Hello, World!
 ```
 
-You can also execute `dotnet build` to compile and the code without running console applications.
+You can also execute `dotnet build` to compile and the code without running the build console applications.
 
-### Other ways to compile
+### Building a native executable
 
 Let's try compiling a native binary instead. You need to make some changes to your `project.json`
 file to direct the tools to build a native application. You can see these in the

@@ -85,24 +85,68 @@ You can also execute `dotnet build` to compile and the code without running cons
 
 ### Other ways to compile
 
-Let's try compiling a native binary instead.
+Let's try compiling a native binary instead. You need to make some changes to your `project.json`
+file to direct the tools to build a native application. You can see these in the
+[HelloNative](https://github.com/dotnet/core-docs/samples/core-projects/console-apps/HelloNative)
+project in the samples directory.
 
-> *NOTE TO SELF: 
-> Update with notes for updating project.json, and building both a portable application, and a standalone application. 
+The first change is to remove the `"type": "platform"` element from from all dependencies. 
+This project's only dependency so far is `"Microsoft.NETCore.App"`. The `dependencies` section should look like this:
+
+```javascript
+"dependencies": {
+"Microsoft.NETCore.App": {
+    "version": "1.0.0-rc2-3002702"
+}
+},
+```
+
+Next, you need to add a `runtime` node to specify all the target execution environments. For example, this
+runtimes node will build native executes for 64 bit Windows 10 and the 64 bit version of Mac OSX version 10.11.
+
+```javascript
+"runtimes": {
+  "win10-x64": {},
+  "osx.10.11-x64": {}
+}
+```
+
+See the full list of supported runtimes in the [RID catalog](http://dotnet.github.io/docs/core-concepts/rid-catalog.html). 
+ 
+After making those two changes you execute `dotnet build` to create the native executable. Then, you can run the generated
+native executable. The following shows the commands for Windows (including the subdirectory where the native executable
+gets generated.)
 
 ```
-$ dotnet compile --native
-$ ./bin/Debug/dnxcore50/native/Basic
+$ dotnet build 
+$ ./bin/Debug/netcoreapp1.0/win10-x64/HelloNative.exe
 Hello World!
 ```
 
-Note the difference in compile time versus execution time.
+You may notice that the native application takes slightly longer to build, but executes slightly faster. This behavior
+becomes more noticeable as the application grows.
 
-> End of Note updates
+The build process gneerates several more files when your `project.json` creates a native build. These files
+are created in `bin\Debug\networeapp1.0\<platform>` where `<platform>` is the RID chosen. In addition to the
+project's `HelloNative.dll` there is a `HelloNative.exe` that loads the runtime and starts the application.
+Note that the name of the generated application changed because the project directory's name has changed.  
+
+You may want to package this application to execute it on a machine that does not include the .NET runtime.
+You do that using the `dotnet publish` command. The `dotnet publish` command creates a new subdirectory
+under the `./bin/Debug/netcoreapp1.0/win10-x64` directory called `publish`. It copies the executable,
+all dependent DLLs and the framework to this sub directory. You can package that directory to another machine
+(or a container) and execute the application there. 
+
+Let's contrast that with the behavior of `dotnet publish` in the first Hello World sample. That application
+is a *portable application*, which is the default type of application for .NET core. A portable application
+requires that .NET Core is installed on the target machine. Portable applications can be built on one machine
+and executed anywhere. Native application must be built separately for each target machine.
 
 ### Augmenting the program
 
-Let's change the file just a little bit.  Fibonacci numbers are fun, so let's try that out:
+Let's change the file just a little bit.  Fibonacci numbers are fun, so let's try that out (using
+the native version):
+
 
 `Program.cs`:
 
@@ -145,13 +189,9 @@ namespace ConsoleApplication
 
 And running the program:
 
-> * Note to self:
->
-> Update from the build cycle for a standalone application.
-
 ```
-$ dotnet compile --native
-$ ./bin/Debug/dnxcore50/native/Basic
+$ dotnet build
+$ ./bin/Debug/netcoreapp1.0/win10-x64/Fibonnaci.exe
 1: 0
 2: 1
 3: 1
@@ -193,9 +233,9 @@ using System;
 using NumberFun;
 ```
 
-And finally, you can compile it:
+And finally, you can build it:
 
-`$ dotnet compile`
+`$ dotnet build`
 
 Now the fun part: making the new file do something!
 
@@ -236,7 +276,12 @@ namespace NumberFun
 }
 ```
 
-Note that the use of `Dictionary<int, int>` and `IEnumerable<int>` means incorporating the `System.Collections` library in your `project.json`:
+Note that the use of `Dictionary<int, int>` and `IEnumerable<int>` means incorporating the `System.Collections`.
+The `Micrsoft.NetCore.App` package is a *metapackage* that contains many of the core
+assemblies from the .NET Framework. By including this metapackage, you've already included
+the `System.Collections.dll` assembly as part of your project. You can verify this by
+running `dotnet publish` and examining listing all the files that are part of the installed
+package. You'll see `System.Collections.dll` in the list. 
 
 ```javascript
 {
@@ -345,7 +390,7 @@ Folder Structure:
    |__IPet.cs
 |__Program.cs
 |__project.json
-```
+```dd
 
 `IPet.cs`:
 ```csharp
@@ -416,22 +461,21 @@ namespace ConsoleApplication
 `project.json`:
 ```javascript
 {
-    "version": "1.0.0-*",
-    "compilationOptions": {
-        "emitEntryPoint": true
-    },
-
-    "dependencies": {
-        "Microsoft.NETCore.Runtime": "1.0.1-beta-*",
-        "System.IO": "4.0.11-beta-*",
-        "System.Console": "4.0.0-beta-*",
-        "System.Runtime": "4.0.21-beta-*",
-        "System.Collections": "4.0.11-beta-23516"
-    },
-
-    "frameworks": {
-        "dnxcore50": { }
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.0-rc2-3002702"
     }
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    }
+  }
 }
 ```
 
@@ -514,27 +558,34 @@ There are two new things to make sure you have in your test project:
 1. A correct `project.json` with the following:
 
    * A reference to `xunit`
-   * A reference to `xunit.runner.dnx`
+   * A reference to `dotnet-test-xunit`
    * A reference to the namespace corresponding to the code under test
 
 2. An Xunit test class.
 
-
 `NewTypesTests/project.json`:
 ```javascript
 {
-    "commands":{
-        "test":"xunit.runner.dnx"	
+  "version": "1.0.0-*",
+  "testRunner": "xunit",
+
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "type":"platform",
+      "version": "1.0.0-rc2-3002702"
     },
-    "dependencies": {
-        "Pets":"",
-        "System.Runtime": "4.0.21-beta-23516",
-        "xunit": "2.1.0",
-        "xunit.runner.dnx": "2.1.0-rc1-build204"
-    },
-    "frameworks":{
-        "dnxcore50":{}
+    "xunit":"2.1.0",
+    "dotnet-test-xunit": "1.0.0-rc2-build10015",
+    "NewTypes": "1.0.0"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": [
+        "dnxcore50",
+        "portable-net45+win8" 
+      ]
     }
+  }
 }
 ```
 
@@ -570,19 +621,20 @@ public class PetTests
  ```
  $ dotnet restore
  $ cd test/PetTests
- $ dnx test
+ $ dotnet test
  ```
  
  Output should look like this:
  
  ```
- xUnit.net DNX Runner (64-bit DNXCore 5.0)
+xUnit.net .NET CLI test runner (64-bit win10-x64)
   Discovering: NewTypesTests
   Discovered:  NewTypesTests
   Starting:    NewTypesTests
   Finished:    NewTypesTests
 === TEST EXECUTION SUMMARY ===
-   NewTypesTests  Total: 2, Errors: 0, Failed: 0, Skipped: 0, Time: 0.215s
+   NewTypesTests  Total: 2, Errors: 0, Failed: 0, Skipped: 0, Time: 0.144s
+SUMMARY: Total: 1 targets, Passed: 1, Failed: 0.
  ```
  
  ## Conclusion

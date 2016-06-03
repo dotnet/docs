@@ -3,33 +3,68 @@
 
 The .NET Standard Library is a formal specification of .NET APIs that are intended to be available on all .NET runtimes. The motivation behind the Standard Library is establishing greater uniformity in the .NET ecosystem. [ECMA 335](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) continues to establish uniformity for .NET runtime behavior, but there is no similar spec for the .NET Base Class Libraries (BCL) for .NET library implementations. The .NET Standard Library is a standardized BCL, enabling developers to produce libraries that are usable across .NET app models and supported operating systems while having access to all the APIs they expect to use. 
 
+Developers use the .NET Standard Library in order to build libraries that are portable across .NET runtimes and operating systems. It can be thought of as the next generation of Portable Class Libraries (PCL). 
+
+The spec is called "The .NET Standard Library" or can be referred to as ".NET Standard" as a short form. A Library that targets the spec can be called "a .NET Standard Library" or an NSL, similar to PCL.
+
 Specification
+=============
+
+The .NET Standard Library spec is a standardized set of APIs, contained and described by packages. The spec is not singular, but an incrementally growing and linearly versioned set of APIs. The first version of the standard establishes a baseline of APIs. Subsequent versions add APIs. There is no established provision for removing APIs from the standard.
+
+The spec is maintained by .NET runtime implementors, specifically Microsoft (includes .NET Framework, .NET Core and Mono) and Unity. A public feedback process is used as part of establishing new .NET Standard Library versions.
+
+Official Artifacts
+------------------
+
+The official spec is a set of .cs files that describe the shape of the standard. Additional derivative artifacts are provided to enable more convenient reading and to enable certain developer scenarios (for example, using a compiler).
+
+- [.cs files](https://github.com/dotnet/corefx/tree/master/src)
+- Reference assemblies (currently only distributed by NuGet)
+- [NuGet packages](https://www.nuget.org/packages/NETStandard.Library)
+- Markdown API list (TBD)
+
+Compatibility
 -------------
 
-The .NET Standard Library spec is a standardized set of APIs. It is not singular, but an incrementally growing and linearly versioned set of APIs. The first version of the standard establishes a baseline of APIs. Subsequent versions add APIs. There is no established provision for dropped APIs from the standard. 
+The .NET Standard Library is compatible with various existing API specs, specifically various PCL profiles. PCL compatibility enables .NET Standard Libraries to reference PCL libraries.
 
-The spec is maintained by
+You can see the set of [PCL profiles that are compatible with the .NET Standard](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md#portable-profiles), per version.
 
-.NET Standard Library implementors must validate that APIs can be broadly implemented before adding 
+The PCL compatibility layer is defined:
+
+- [NuGet packages](https://www.nuget.org/packages/Microsoft.NETCore.Compatibility)
+- Other places?
+
+Standard Versions
+-----------------
+
+The .NET Standard is not specific to any one .NET runtime, nor does it match the versioning scheme of any of those runtimes. APIs added to any of the runtimes (such as, Mono, .NET Framework, and .NET Core) can be considered as candidates to add to the specification. New [versions of the .NET Standard Library](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md#list-of-net-corefx-apis-and-their-associated-net-platform-standard-version) are created for one of two reasons:
+
+- One or more new APIs are added to a .NET runtime (for example, .NET Core) that are considered fundamental. Other .NET runtimes are required to implement this new API in order to satisfy the new standard version.
+- One or more APIs are deterimed to be implemented across a quorum of .NET runtimes (for example, .NET Framework, .NET Core and Mono), making these APIs candidates for the standard.
+
+Each standard version defines a set of APIs and inherits the APIs defined by previous versions. Some versions add a large set of APIs and others very few. This is in large part because of the reasons listed above, on the reasons why APIs get added to the standard.
+
+The .NET Standard Library was published as multiple versions at its inception (versions 1.0 through 1.5). The creation of multiple versions enabled .NET Standard and PCLs to overlap. This overlap was created for two reasons:
+
+- Enable NSLs to reference PCLs.
+- Enable PCLs to be packaged as NSLs.
+
+Informative Specification
+-------------------------
+
+The standard defines the APIs that are available, per version. The set of APIs is the normative content of the spec. There is other important related information that is informative, extrinsic to the spec. Key informative information:
+
+- [.NET platforms support](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md#mapping-the-net-platform-standard-to-platforms) per .NET Standard Library version.
+
+Targeting .NET Standard Library
+===============================
 
 
-in  For example, v1.1 of the spec includes all of the v1.0 APIs and adds additional APIs. v1.2 of the spec fits the ame pattern, including all of the v1.1 APIs and adds additional APIs.
 
-
-
-
-
-New versions of .NET runtimes specify the .NET Standard Library version that they support. As a result, for each version of .NET Standard
-
-.NET runtimes that advertise themselves as implementing the .NET Standard must implement the .NET Standard Library spec. 
 
 The standard is specified by a set of [NuGet packages](../core-concepts/packages.md). You can compile libraries with these same NuGet packages in order to build libraries that are portable, across .NET Standard compliant runtimes.
-
-The .NET Standard is not specific to any one .NET runtime. APIs added to any of the runtimes (such as, .NET Framework, Mono and .NET Core) can be considered as a candidate to add to the specification.
-
-
-
-
 
 It can be thought of as the next generation of [Portable Class Libraries](https://msdn.microsoft.com/library/gg597391.aspx), although is architecturally different. You can learn more 
 

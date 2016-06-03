@@ -7,7 +7,7 @@ The following characteritics best define .NET Core:
 
 - **Flexible deployment:** app-local or side-by-side user- or machine-wide installation.
 - **Cross-platform:** Runs on Windows, OS X and Linux; Can be ported to other OSes.
-- **Compatibility:** .NET Core is compatible with .NET Framework and Xamarin platforms.
+- **Compatibility:** .NET Core is compatible with .NET Framework and Xamarin platforms, via the [.NET Standard Library](../concepts/dotnet-standard-library.md).
 - **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses.
 
 Composition
@@ -30,7 +30,7 @@ The C# Roslyn compiler and the .NET Core tools have been integrated into several
 .NET APIs and Compatibility
 ---------------------------
 
-.NET Core can be thought of as a cross-platform version of the .NET Framework, at the layer of the .NET Framework Base Class Libraries (BCL). It provides a subset of the APIs that are available in the .NET Framework or Mono/Xamarin. In some cases, types have been subseted (some members are not available or have been moved).
+.NET Core can be thought of as a cross-platform version of the .NET Framework, at the layer of the .NET Framework Base Class Libraries (BCL). It implements the [.NET Standard Library](../concepts/dotnet-standard-library.md) specification. .NET Core provides a subset of the APIs that are available in the .NET Framework or Mono/Xamarin. In some cases, types have been subseted (some members are not available or have been moved).
 
 The focus of .NET Core 1.0 has been "bringup" of the platform. Post .NET Core 1.0, there will be a focus on compatibility to make it easier to take advantage of .NET Core with existing .NET Framework and Mono codebases.
 

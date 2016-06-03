@@ -3,7 +3,7 @@ dotnet command
 
 ## NAME
 
-dotnet -- general driver for running the command-line commands
+dotnet -- General driver for running the command-line commands
 
 ## SYNOPSIS
 
@@ -67,17 +67,20 @@ Restores dependencies for a given application.
 
 Compiles the application in a given directory. 
 
-`dotnet mylibrary.dll`
+`dotnet myapp.dll`
 
-Runs a portable app named `mylibrary.dll`. 
+Runs a portable app named `myapp.dll`. 
 
 ## ENVIRONMENT 
 
 `DOTNET_PACKAGES`
 
-The primary package cache. If not set, defaults to $HOME/.nuget/packages on Unix or %HOME%\NuGet\Packages on Windows.
+The primary package cache. If not set, it defaults to $HOME/.nuget/packages on Unix or %HOME%\NuGet\Packages on Windows.
 
 `DOTNET_SERVICING`
 
 Specifies the location of the servicing index to use by the shared host when loading the runtime.
 
+`DOTNET_CLI_TELEMETRY_OPTOUT`
+
+Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. **true** to opt-out of the telemetry feature (values true, 1 or yes accepted); otherwise, **false** (values false, 0 or no accepted). If not set, it defaults to **false**, that is, the telemetry feature is on.

@@ -2,7 +2,7 @@
 
 This guide will show you how to use the .NET CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.
 
-If you're unfamiliar with the .NET CLI toolset, read [the overview](../core-sdk/sdk-overview.md).  It's also helpful to have an understanding of the [console app paradigm](paradigm.md) and how [native binary compilation](single-binaries.md) works.
+If you're unfamiliar with the .NET CLI toolset, read [the overview](../core-sdk/sdk-overview.md).  It's also helpful to have an understanding of the [console app paradigm](paradigm.md).
 
 ## Prerequisites
 
@@ -64,25 +64,27 @@ Let's do a quick walkthrough:
 
 2. `$ dotnet restore`
 
-   `dotnet restore` analyzes the `project.json` file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the `project.lock.json` file.  The `project.lock.json` file is necessary to be able to compile and run.
+   [`dotnet restore`](http://dotnet.github.io/docs/core-concepts/core-sdk/cli/dotnet-restore.html) calls into NuGet to restore the tree of dependencies. NuGet analyzes the `project.json` file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the `project.lock.json` file.  The `project.lock.json` file is necessary to be able to compile and run.
    
    The `project.lock.json` file is a persisted and complete set of the graph of NuGet dependencies and other information describing an app.  This file is read by other tools, such as `dotnet build` and `dotnet run`, enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.
    
 3. `$ dotnet run`
 
-   `dotnet run` launches the runtime and executes the application created from the `project.json` file in the current directory. If necessary, it compiles the source to Intermediate Language (IL) and generates `Hello.dll` `.dll` file which contains the IL using the `dotnet build` command.
+   [`dotnet run`](http://dotnet.github.io/docs/core-concepts/core-sdk/cli/dotnet-run.html) calls `dotnet build` to ensure that the build targes have been built, and then calls `dotnet <assembly.dll>` to run the target application.
    
 ```
 $ dotnet run
 Hello, World!
 ```
 
-You can also execute `dotnet build` to compile and the code without running the build console applications.
+You can also execute [`dotnet build`](http://dotnet.github.io/docs/core-concepts/core-sdk/cli/dotnet-build.html) to compile and the code without running the build console applications.
 
-### Building a native binary
+### Building a self-contained application
 
-Let's try compiling a native binary instead. You need to make some changes to your `project.json`
-file to direct the tools to build a native application. You can see these in the
+Let's try compiling a self-contained application instead of a portable application. You can read more about the [types of portability in .net core](http://dotnet.github.io/docs/core-concepts/app-types.html) to learn about the different application types, and how they are deployed.
+
+You need to make some changes to your `project.json`
+file to direct the tools to build a self-contained application. You can see these in the
 [HelloNative](https://github.com/dotnet/core-docs/samples/core-projects/console-apps/HelloNative)
 project in the samples directory.
 
@@ -111,11 +113,12 @@ you'll build a Windows executable. If you are following these steps on a Mac, yo
 
 See the full list of supported runtimes in the [RID catalog](http://dotnet.github.io/docs/core-concepts/rid-catalog.html). 
  
-After making those two changes you execute `dotnet build` to create the native executable. Then, you can run the generated
+After making those two changes you execute `dotnet restore`, followed by `dotnet build` to create the native executable. Then, you can run the generated
 native executable. The following shows the commands for Windows (including the subdirectory where the native executable
 gets generated.)
 
 ```
+$ dotnet restore 
 $ dotnet build 
 $ ./bin/Debug/netcoreapp1.0/win10-x64/HelloNative.exe
 Hello World!
@@ -284,22 +287,24 @@ package. You'll see `System.Collections.dll` in the list.
 
 ```javascript
 {
-    "version": "1.0.0-*",
-    "compilationOptions": {
-        "emitEntryPoint": true
-    },
-
-    "dependencies": {
-        "Microsoft.NETCore.Runtime": "1.0.1-beta-*",
-        "System.IO": "4.0.11-beta-*",
-        "System.Console": "4.0.0-beta-*",
-        "System.Runtime": "4.0.21-beta-*",
-        "System.Collections": "4.0.11-beta-23516"
-    },
-
-    "frameworks": {
-        "dnxcore50": { }
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "version": "1.0.0-rc2-3002702"
     }
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    }
+  },
+  "runtimes": {
+    "win10-x64": {},
+    "osx.10.11-x64": {}
+  }
 }
 ```
 
@@ -614,7 +619,7 @@ public class PetTests
 }
 ```
    
- Now you can run tests!  Make sure you start at the top-level directory.
+ Now you can run tests!  The [`dotnet test`](http://dotnet.github.io/docs/core-concepts/core-sdk/cli/dotnet-test.html) command runs the test runner you have specified in your project. Make sure you start at the top-level directory.
  
  ```
  $ dotnet restore

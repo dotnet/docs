@@ -44,7 +44,6 @@
 ### [Console applications](core-concepts/console/index.md)
 #### [🔧 Overview and moving pieces](core-concepts/console/overview.md)
 #### [🔧 Console applications paradigm](core-concepts/console/paradigm.md)
-#### [🔧 Creating single binaries with native compilation](core-concepts/console/single-binaries.md)
 #### [Writing Console Apps: An Step by Guide Guide](core-concepts/console/step-by-step-guide.md)
 ### [Libraries](core-concepts/libraries/index.md)
 #### [Overview](core-concepts/libraries/overview.md)

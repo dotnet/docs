@@ -1,10 +1,10 @@
 # Building simple solutions with Visual Studio Code
 
-By [Bill Wagner](https://github.com/BillWagner)
+By [Toni Solarin](https://github.com/tsolarin)
 
 The scripts in this document describes the steps necessary to build a
 number of typical .NET Core solutions, or solutions that include .NET
-Core components, using Visual Studio. The scenarios include testing,
+Core components, using Visual Studio Code. The scenarios include testing,
 and using third-party libraries that have not been explicitly built
 for the most recent version of .NET Core.
 
@@ -16,9 +16,7 @@ also install Visual Studio Code, and the C# and Omnisharp extensions.
 
 You can find the links to all of these at the [.NET home page](http://dot.net).
 
-## A Solutions using only .NET Core Projects
-
-
+## A Solution using only .NET Core Projects
 
 ### Writing the library
 
@@ -37,4 +35,3 @@ You can find the links to all of these at the [.NET home page](http://dot.net).
 ### Writing the console app
 
 ### Moving the PCL to a netstandard library
-

@@ -25,9 +25,12 @@ Temporary files are written to the child `obj` folder.
 
 In case of a project with multiple specified frameworks, `dotnet run` will first select the .NET Core frameworks. If those do not exist, it will error out. To specify other frameworks, use the `--framework` argument.
 
-The `dotnet run` command must be used in the context of projects, not built assemblies. If you're trying to execute a DLL instead, you should use `dotnet` without any command like in the following example:
+The `dotnet run` command must be used in the context of projects, not built assemblies. If you're trying to execute a DLL instead, you should use [`dotnet`](dotnet.md) without any command like in the following example:
+ 
+`dotnet myapp.dll`
 
-`dotnet mylibrary.dll`
+For more information about the `dotnet` driver, see the [.NET Core Command Line Tools (CLI)](overview.md) topic.
+
 
 ## OPTIONS
 

@@ -20,8 +20,8 @@ require administrative privileges on the machine. You can view the installation 
 [.NET Core getting started page](https://aka.ms/dotnetcoregs).
 
 Install scripts, on the other hand, do not require administrative privileges. However, they will also not install any 
-pre-requisites on the machine; you need to install all of the pre-requisites manually. The scripts are meant mostly for 
-setting up build servers or when you wish to install the tools without administrative privileges (do note the pre-requisites 
+prerequisites on the machine; you need to install all of the prerequisites manually. The scripts are meant mostly for 
+setting up build servers or when you wish to install the tools without administrative privileges (do note the prerequisites 
 caveat above). You can find more information on the [install script reference topic](dotnet-install-script.md). If you are 
 interested in how to set up CLI on your continuous integration (CI) build server you can take a look at the 
 [CLI with CI servers](using-ci-with-cli.md) document. 

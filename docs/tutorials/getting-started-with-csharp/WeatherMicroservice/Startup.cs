@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.Hosting;
-using Microsoft.AspNet.Http;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using System.IO;
 using System.Text;
@@ -23,8 +23,6 @@ namespace WeatherMicroservice
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app)
         {
-            app.UseIISPlatformHandler();
-
             app.Run(async (context) =>
             {
                 var latString = context.Request.Query["lat"].FirstOrDefault();
@@ -53,6 +51,18 @@ namespace WeatherMicroservice
         }
 
         // Entry point for the application.
-        public static void Main(string[] args) => Microsoft.AspNet.Hosting.WebApplication.Run<Startup>(args);
+
+        public static void Main(string[] args)
+        {
+            var host = new WebHostBuilder() 
+                .UseKestrel() 
+                .UseIISIntegration() 
+                .UseStartup<Startup>() 
+                .UseUrls("http://0.0.0.0:80")
+                .Build(); 
+ 
+           host.Run(); 
+            
+        } 
     }
 }

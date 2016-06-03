@@ -43,7 +43,7 @@ We now have a build dll under `GoldenCLI/src/Library/bin/Debug/netstandard1.5`.
 
 1. From `GoldenCLI/test/TestLibrary`, `dotnet new`.
 2. Edit `GoldenCLI/test/TestLibrary/project.json` to remove the `buildOptions`. Leave frameworks as is.
-3. Add `"Library": { "target": "project", "version": "1.0.0-*" }, "xunit": "2.1.0"` to `dependencies`. The `target` is important so that the project is built using our `Library` project, and not some NuGet package with the same name.
+3. Add `"Library": { "target": "project", "version": "1.0.0-*" }, "xunit": "2.1.0", "dotnet-test-xunit": "1.0.0-rc2-build10025"` to `dependencies`. The `target` is important so that the project is built using our `Library` project, and not some NuGet package with the same name.
 4. `dotnet restore`.
 5. Add `"testRunner": "xunit"` at the `project.json` file's top-level.
 6. Rename `Program.js` to `LibraryTest.cs`, replace its contents with:
@@ -63,4 +63,6 @@ namespace TestApp
 }
 ```
 7. `dotnet build`
+8. `dotnet test`
 
+You should now see one test passing.

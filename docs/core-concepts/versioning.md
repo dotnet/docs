@@ -69,17 +69,17 @@ There are three primary metapackages for .NET Core.
 
 **NETStandard.Library**
 
-- v1.6 as of .NET Core 1.0.
+- v1.6 as of .NET Core 1.0 (these versions won't typically match).
 - Maps to the `netstandard` target framework. 
 - Describes the packages that are considered required for modern app development and that .NET platforms must implement to be considered a ".NET Standard" platform.
 
 **Microsoft.NETCore.App**
 
-- v1.0 as of .NET Core 1.0 (versions intended to match).
+- v1.0 as of .NET Core 1.0 (these versions will match).
 - Maps to the `netcoreapp` target framework.
 - Describes the packages in the .NET Core distribution.
 
-Note: 'Microsoft.NETCore.Portable.Compatibility` is another .NET Core metapackage. It doesn't map to a particular framework, so versions like packages.
+Note: 'Microsoft.NETCore.Portable.Compatibility` is another .NET Core metapackage. It doesn't map to a particular framework, so versions like a package.
 
 Frameworks
 ----------

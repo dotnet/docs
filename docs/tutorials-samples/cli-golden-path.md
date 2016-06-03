@@ -1,7 +1,7 @@
 Building simple solutions with the .NET CLI
 ===========================================
 
-The scripts in this document describe the steps necessary to build a number of typical .NET Core solutions, or solutions that include .NET Core components, using the .NET CLI. The scenarios include testing, and using third-party libraries that have not been explicitly built for the most recent version of .NET Core.
+The scripts in this document describe the steps necessary to build a number of typical .NET Core solutions, using the .NET CLI. The scenarios include testing, and using third-party libraries.
 
 Prerequisites
 -------------

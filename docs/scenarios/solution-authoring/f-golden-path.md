@@ -1,6 +1,8 @@
 Building simple F# solutions with the .NET CLI
 ==============================================
 
+by [Bertrand Le Roy](https://github.com/bleroy)
+
 The scripts in this document describe the steps necessary to build a number of typical .NET Core F# solutions, using the .NET CLI. The scenarios include testing, and using third-party libraries.
 
 Prerequisites
@@ -25,14 +27,14 @@ A solution using only .NET Core projects
 6. Under `dependencies`, add `"Newtonsoft.Json": "9.0.1-beta1"`.
 7. Under `frameworks/netstandard1.5`, remove the `imports`.
 8. In `Thing.fs`, do:
-```fs
-namespace Library
-open System
-open Newtonsoft.Json
+    ```fs
+    namespace Library
+    open System
+    open Newtonsoft.Json
 
-module Thing =
-    let get x = JsonConvert.DeserializeObject<int>(sprintf "%A" x)
-```
+    module Thing =
+        let get x = JsonConvert.DeserializeObject<int>(sprintf "%A" x)
+    ```
 9. `dotnet restore` and `dotnet build`.
 
 ### Writing the app
@@ -41,24 +43,24 @@ module Thing =
 2. From `GoldenF/src/App`, `dotnet new -l F#`
 3. In `GoldenF/src/App/project.json`, replace `netstandard1.5` with `netcoreapp1.0` under `frameworks` and remove its `imports`. 
 4. Add the following to `dependencies`:
-```json
-    "Library": {
-      "target": "project",
-      "version": "1.0.0-*"
-    },
-```
+    ```json
+        "Library": {
+        "target": "project",
+        "version": "1.0.0-*"
+        },
+    ```
 5. Under `dependencies`, change the version of `Microsoft.FSharp.Core.netcore` to "1.0.0-alpha-160509".
 6. Change `Program.fs` to:
-```fs
-open System
-open Library
+    ```fs
+    open System
+    open Library
 
-[<EntryPoint>]
-let main argv = 
-    printfn "Hello World!"
-    printfn "%A" (Thing.get 42)
-    0 // return an integer exit code
-```
+    [<EntryPoint>]
+    let main argv = 
+        printfn "Hello World!"
+        printfn "%A" (Thing.get 42)
+        0 // return an integer exit code
+    ```
 7. `dotnet restore` and `dotnet build`.
 
 You should now be able to `dotnet run` and get "Hello World!" and "42" output to the console.
@@ -69,28 +71,28 @@ You should now be able to `dotnet run` and get "Hello World!" and "42" output to
 2. From `GoldenF/test/TestLibrary`, `dotnet new -l F#`
 3. In `GoldenF/test/TestLibrary/project.json`, replace `netstandard1.5` with `netcoreapp1.0` under `frameworks`. 
 4. Add the following to `dependencies`:
-```json
-    "Library": {
-      "target": "project",
-      "version": "1.0.0-*"
-    },
-    "xunit": "2.1.0",
-    "dotnet-test-xunit": "1.0.0-rc2-build10025"
-```
+    ```json
+        "Library": {
+        "target": "project",
+        "version": "1.0.0-*"
+        },
+        "xunit": "2.1.0",
+        "dotnet-test-xunit": "1.0.0-rc2-build10025"
+    ```
 5. Under `dependencies`, change the version of `Microsoft.FSharp.Core.netcore` to "1.0.0-alpha-160509".
 6. Remove `emitEntryPoint`.
 7. Rename the `Program.fs` file to `Test.fs`, and also do the rename in `project.json` under `buildOptions/compile/includeFiles`.
 8. Add `"testrunner": "xunit"` at the top-level of `project.json`.
 9. In `test.fs`, do the following:
-```fs
-module Test
+    ```fs
+    module Test
 
-open Xunit
-open Library
+    open Xunit
+    open Library
 
-[<Fact>]    
-let ``Super-happy fun times``() = Assert.Equal(42, Thing.get 42)
-```
+    [<Fact>]    
+    let ``Success``() = Assert.Equal(42, Thing.get 42)
+    ```
 10. `dotnet restore` and `dotnet build`.
 
 You should new be able to run the test and verify it passes by doing `dotnet test`.

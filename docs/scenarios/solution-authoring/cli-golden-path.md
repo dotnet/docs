@@ -1,6 +1,8 @@
 Building simple solutions with the .NET CLI
 ===========================================
 
+by [Bertrand Le Roy](https://github.com/bleroy)
+
 The scripts in this document describe the steps necessary to build a number of typical .NET Core solutions, using the .NET CLI. The scenarios include testing, and using third-party libraries.
 
 Prerequisites
@@ -24,17 +26,17 @@ A solution using only .NET Core projects
 4. Under `frameworks`, change `netcoreapp1.0` to `netstandard1.5`.
 5. From `GoldenCLI/src/Library`, `dotnet restore`.
 6. Rename `Program.cs` to `Thing.cs`, put the following code in there:
-```csharp
-using System;
+    ```csharp
+    using System;
 
-namespace Library
-{
-    public class Thing
+    namespace Library
     {
-        public int Get(int number) => Newtonsoft.Json.JsonConvert.DeserializeObject<int>($"{number}");
+        public class Thing
+        {
+            public int Get(int number) => Newtonsoft.Json.JsonConvert.DeserializeObject<int>($"{number}");
+        }
     }
-}
-```
+    ```
 7. `dotnet build`
 
 We now have a build dll under `GoldenCLI/src/Library/bin/Debug/netstandard1.5`.
@@ -47,21 +49,21 @@ We now have a build dll under `GoldenCLI/src/Library/bin/Debug/netstandard1.5`.
 4. `dotnet restore`.
 5. Add `"testRunner": "xunit"` at the `project.json` file's top-level.
 6. Rename `Program.js` to `LibraryTest.cs`, replace its contents with:
-```csharp
-using Library;
-using Xunit;
+    ```csharp
+    using Library;
+    using Xunit;
 
-namespace TestApp
-{
-    public class LibraryTests
+    namespace TestApp
     {
-        [Fact]
-        public void TestThing() {
-            Assert.Equal(42, new Thing().Get(42));
+        public class LibraryTests
+        {
+            [Fact]
+            public void TestThing() {
+                Assert.Equal(42, new Thing().Get(42));
+            }
         }
     }
-}
-```
+    ```
 7. `dotnet build`
 8. `dotnet test`
 

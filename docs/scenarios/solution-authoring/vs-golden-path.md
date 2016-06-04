@@ -1,6 +1,8 @@
 Building simple solutions with Visual Studio
 ============================================
 
+by [Bertrand Le Roy](https://github.com/bleroy)
+
 The scripts in this document describe the steps necessary to build a number of typical .NET Core solutions, or solutions that include .NET Core components, using Visual Studio. The scenarios include testing, and using third-party libraries that have not been explicitly built for the most recent version of .NET Core.
 
 Prerequisites
@@ -28,10 +30,10 @@ The solution should build without error.
 5. Edit `project.json` to add `"testRunner": "xunit",`.
 6. Add a `LibraryTests.cs` file, add `using Xunit;` and `using Library;` to the top of the file, and the following code to the class:
     ```csharp
-        [Fact]
-        public void ThingGetsObjectValFromNumber() {
-            Assert.Equal(42, new Thing().Get(42));
-        }
+    [Fact]
+    public void ThingGetsObjectValFromNumber() {
+        Assert.Equal(42, new Thing().Get(42));
+    }
     ```
 7. Optionally, remove the `Program.cs` file, and remove `"compilationOptions": {"emitEntryPoint": true}` from `project.json`.
 

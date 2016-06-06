@@ -6,7 +6,7 @@
           "files": [
             "corefx/src/**/ref/**/*.csproj"
           ],
-          "exclude": [ "**/bin/**", "**/obj/**", "**System.Runtime.WindowsRuntime.csproj"  ],
+          "exclude": [ "**/bin/**", "**/obj/**"],
           "cwd": ".."
         }
       ],
@@ -19,7 +19,7 @@
             "corefx/src/**/src/**/*.csproj",
             "coreclr/src/mscorlib/mscorlib.csproj"
           ],
-          "exclude": [ "**/bin/**", "**/obj/**", "**System.Runtime.WindowsRuntime.csproj"  ],
+          "exclude": [ "**/bin/**", "**/obj/**"],
           "cwd": ".."
         }
       ],

@@ -4,9 +4,9 @@
       "src": [
         {
           "files": [
-            "corefx/src/**/ref/**/project.json"
+            "corefx/src/**/ref/**/*.csproj"
           ],
-          "exclude": [ "**/bin/**", "**/obj/**" ],
+          "exclude": [ "**/bin/**", "**/obj/**"],
           "cwd": ".."
         }
       ],
@@ -16,7 +16,7 @@
       "src": [
         {
           "files": [
-            "corefx/src/**/src/**/project.json",
+            "corefx/src/**/src/**/*.csproj",
             "coreclr/src/mscorlib/mscorlib.csproj"
           ],
           "exclude": [ "**/bin/**", "**/obj/**"],

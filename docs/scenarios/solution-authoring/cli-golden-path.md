@@ -13,14 +13,14 @@ These scripts assume that .NET Core RC2 CLI SDK preview and VS Code or another c
 A solution using only .NET Core projects
 ----------------------------------------
 
-1. Create a new `GoldenCLI` directory and inside of that, create `src` and `test`. Under `src`, create `Library`, and under `test`, create `TestLibrary`.
+1. Create a new `GoldenCLI` directory and inside of that, create `src` and `test`. Under `src`, create `Library` and `App`, and under `test`, create `TestLibrary`.
 2. Open a command-line on `GoldenCLI/src/Library`, and another on `GoldenCLI/test/TestLibrary`.
 3. Open VS Code on `GoldenCLI`.
 4. Create `GoldenCLI/global.json` with `{"projects":["src", "test"]}`.
 
 ### Writing the library
 
-1. From `GoldenCLI/src/Library`, `dotnet new`.
+1. Open a command-line on `GoldenCLI/src/Library`, then do `dotnet new`.
 2. Edit `GoldenCLI/src/Library/project.json` to remove the `buildOptions`, and more specifically, `emitEntryPoint`.
 3. Change dependencies to `"NETStandard.Library": "1.5.0-rc2-24027", "Newtonsoft.Json": "9.0.1-beta1"`.
 4. Under `frameworks`, change `netcoreapp1.0` to `netstandard1.5`.
@@ -43,7 +43,7 @@ We now have a build dll under `GoldenCLI/src/Library/bin/Debug/netstandard1.5`.
 
 ### Writing the test project
 
-1. From `GoldenCLI/test/TestLibrary`, `dotnet new`.
+1. Open a command-line on `GoldenCLI/test/TestLibrary`, then do `dotnet new`.
 2. Edit `GoldenCLI/test/TestLibrary/project.json` to remove the `buildOptions`. Leave frameworks as is.
 3. Add `"Library": { "target": "project", "version": "1.0.0-*" }, "xunit": "2.1.0", "dotnet-test-xunit": "1.0.0-rc2-build10025"` to `dependencies`. The `target` is important so that the project is built using our `Library` project, and not some NuGet package with the same name.
 4. `dotnet restore`.
@@ -68,3 +68,13 @@ We now have a build dll under `GoldenCLI/src/Library/bin/Debug/netstandard1.5`.
 8. `dotnet test`
 
 You should now see one test passing.
+
+### Writing the console app
+
+1. Open a command-line on `GoldenCLI/src/App`, then do `dotnet new`.
+2. Edit `GoldenCLI/src/App/project.json` and add `"Library": { "target": "project", "version": "1.0.0-*" }` to `dependencies`. The `target` is important so that the project is built using our `Library` project, and not some NuGet package with the same name. If you are building on Windows, also add `"debugType": "portable"` under `buildOptions`.
+3. `dotnet restore`.
+4. Open `Program.cs`, add `using Library;` to the top of the file, then replace the Main method with `Console.WriteLine($"The answer is {new Thing().Get(42)}");`.
+5. Run the app using `dotnet run` from the command-line, or set a breakpoint after the `WriteLine`, and hit F5 from Visual Studio Code. Please refer to [the Visual Studio Code C# Extension documentation](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md) for details on setting-up debugging.
+
+The application should have built correctly, and should hit the breakpoint if you've launched the debugger. You should also be able to check in both cases that the application output "The answer is 42.".

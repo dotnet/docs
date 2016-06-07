@@ -39,7 +39,7 @@ A solution using only .NET Core projects
     ```
 7. Run `dotnet build`
 
-We now have a build dll under `GoldenCLI/src/Library/bin/Debug/netstandard1.5`.
+We now have a built `Library.dll` file under `GoldenCLI/src/Library/bin/Debug/netstandard1.5`.
 
 ### Writing the test project
 
@@ -58,7 +58,7 @@ We now have a build dll under `GoldenCLI/src/Library/bin/Debug/netstandard1.5`.
     The `target` under `Library` is important so that the project is built using our `Library` project, and not some NuGet package with the same name.
 4. `dotnet restore`.
 5. Add `"testRunner": "xunit"` at the `project.json` file's top-level.
-6. Rename `Program.cs` to `LibraryTest.cs`, replace its contents with:
+6. Rename `Program.cs` to `LibraryTest.cs`, and replace its contents with:
     ```csharp
     using Library;
     using Xunit;

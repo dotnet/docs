@@ -1,7 +1,7 @@
-Building simple solutions with the .NET CLI
-===========================================
+Building simple C# solutions with the .NET CLI
+==============================================
 
-by [Bertrand Le Roy](https://github.com/bleroy)
+by [Bertrand Le Roy](https://github.com/bleroy) and [Phillip Carter](https://github.com/cartermp)
 
 The scripts in this document describe the steps necessary to build a number of typical .NET Core solutions, using the .NET CLI. The scenarios include testing, and using third-party libraries.
 
@@ -24,7 +24,7 @@ A solution using only .NET Core projects
 2. Edit `GoldenCLI/src/Library/project.json` to remove the `buildOptions`, and more specifically, `emitEntryPoint`.
 3. Change dependencies to `"NETStandard.Library": "1.5.0-rc2-24027", "Newtonsoft.Json": "9.0.1-beta1"`.
 4. Under `frameworks`, change `netcoreapp1.0` to `netstandard1.5`.
-5. From `GoldenCLI/src/Library`, `dotnet restore`.
+5. From `GoldenCLI/src/Library`, run  `dotnet restore`.
 6. Rename `Program.cs` to `Thing.cs`, put the following code in there:
     ```csharp
     using System;
@@ -37,7 +37,7 @@ A solution using only .NET Core projects
         }
     }
     ```
-7. `dotnet build`
+7. Run `dotnet build`
 
 We now have a build dll under `GoldenCLI/src/Library/bin/Debug/netstandard1.5`.
 
@@ -45,10 +45,20 @@ We now have a build dll under `GoldenCLI/src/Library/bin/Debug/netstandard1.5`.
 
 1. Open a command-line on `GoldenCLI/test/TestLibrary`, then do `dotnet new`.
 2. Edit `GoldenCLI/test/TestLibrary/project.json` to remove the `buildOptions`. Leave frameworks as is.
-3. Add `"Library": { "target": "project", "version": "1.0.0-*" }, "xunit": "2.1.0", "dotnet-test-xunit": "1.0.0-rc2-build10025"` to `dependencies`. The `target` is important so that the project is built using our `Library` project, and not some NuGet package with the same name.
+3. Add the following to dependencies:
+    ```json
+    "Library": {
+        "target": "project",
+        "version": "1.0.0-*"
+    },
+    "xunit": "2.1.0",
+    "dotnet-test-xunit":
+    "1.0.0-rc2-build10025"
+    ```
+    The `target` under `Library` is important so that the project is built using our `Library` project, and not some NuGet package with the same name.
 4. `dotnet restore`.
 5. Add `"testRunner": "xunit"` at the `project.json` file's top-level.
-6. Rename `Program.js` to `LibraryTest.cs`, replace its contents with:
+6. Rename `Program.cs` to `LibraryTest.cs`, replace its contents with:
     ```csharp
     using Library;
     using Xunit;
@@ -64,8 +74,8 @@ We now have a build dll under `GoldenCLI/src/Library/bin/Debug/netstandard1.5`.
         }
     }
     ```
-7. `dotnet build`
-8. `dotnet test`
+7. Run `dotnet build`
+8. Run `dotnet test`
 
 You should now see one test passing.
 
@@ -73,7 +83,7 @@ You should now see one test passing.
 
 1. Open a command-line on `GoldenCLI/src/App`, then do `dotnet new`.
 2. Edit `GoldenCLI/src/App/project.json` and add `"Library": { "target": "project", "version": "1.0.0-*" }` to `dependencies`. The `target` is important so that the project is built using our `Library` project, and not some NuGet package with the same name. If you are building on Windows, also add `"debugType": "portable"` under `buildOptions`.
-3. `dotnet restore`.
+3. Run `dotnet restore`.
 4. Open `Program.cs`, add `using Library;` to the top of the file, then replace the Main method with `Console.WriteLine($"The answer is {new Thing().Get(42)}");`.
 5. Run the app using `dotnet run` from the command-line, or set a breakpoint after the `WriteLine`, and hit F5 from Visual Studio Code. Please refer to [the Visual Studio Code C# Extension documentation](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md) for details on setting-up debugging.
 

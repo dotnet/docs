@@ -1,8 +1,8 @@
 # Scenarios
 
 * [Authoring Solutions for .NET Core RC2](solution-authoring/index.md)
-    * [Building simple solutions with Visual Studio](solution-authoring/vs-golden-path.md)
-    * [Building simple solutions with the .NET CLI](solution-authoring/cli-golden-path.md)
+    * [Building simple C# solutions with Visual Studio 2015](solution-authoring/vs-golden-path.md)
+    * [Building simple C# solutions with the .NET CLI](solution-authoring/cli-golden-path.md)
     * [Building simple F# solutions with the .NET CLI](solution-authoring/f-golden-path.md)
 
 * [Packaging and deploying applications](deployment/index.md)

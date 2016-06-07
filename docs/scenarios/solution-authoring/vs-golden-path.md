@@ -1,7 +1,7 @@
-Building simple solutions with Visual Studio
-============================================
+Building simple C# solutions with Visual Studio
+===============================================
 
-by [Bertrand Le Roy](https://github.com/bleroy)
+by [Bertrand Le Roy](https://github.com/bleroy) and [Phillip Carter](https://github.com/cartermp)
 
 The scripts in this document describe the steps necessary to build a number of typical .NET Core solutions, or solutions that include .NET Core components, using Visual Studio. The scenarios include testing, and using third-party libraries that have not been explicitly built for the most recent version of .NET Core.
 

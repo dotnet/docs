@@ -1,7 +1,7 @@
 Building simple F# solutions with the .NET CLI
 ==============================================
 
-by [Bertrand Le Roy](https://github.com/bleroy)
+by [Bertrand Le Roy](https://github.com/bleroy) and [Phillip Carter](https://github.com/cartermp)
 
 The scripts in this document describe the steps necessary to build a number of typical .NET Core F# solutions, using the .NET CLI. The scenarios include testing, and using third-party libraries.
 

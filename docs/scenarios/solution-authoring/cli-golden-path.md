@@ -25,7 +25,7 @@ A solution using only .NET Core projects
 3. Change dependencies to `"NETStandard.Library": "1.5.0-rc2-24027", "Newtonsoft.Json": "9.0.1-beta1"`.
 4. Under `frameworks`, change `netcoreapp1.0` to `netstandard1.5`.
 5. From `GoldenCLI/src/Library`, run  `dotnet restore`.
-6. Rename `Program.cs` to `Thing.cs`, put the following code in there:
+6. Rename `Program.cs` to `Thing.cs`, paste the following code in there:
     ```csharp
     using System;
 

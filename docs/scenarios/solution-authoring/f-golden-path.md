@@ -21,12 +21,12 @@ A solution using only .NET Core projects
 
 1. Create a `Library` folder under `GoldenF/src`.
 2. From `GoldenF/src/Library`, `dotnet new -l F#`.
-3. Open `project.json`, remove `emitEntryPoint`.
-4. Under `dependencies`, change the version of `Microsoft.FSharp.Core.netcore` to "1.0.0-alpha-160509".
+3. Open `project.json`, remove the `emitEntryPoint` entry.
+4. In the `dependencies` section, change the version of `Microsoft.FSharp.Core.netcore` to "1.0.0-alpha-160509".
 5. Under `buildOptions/compile/includeFiles`, replace `Program.fs` with `Thing.fs`, then rename the `Program.fs` file to `Thing.fs`.
-6. Under `dependencies`, add `"Newtonsoft.Json": "9.0.1-beta1"`.
+6. In the `dependencies` section, add `"Newtonsoft.Json": "9.0.1-beta1"`.
 7. Under `frameworks/netstandard1.5`, remove the `imports`.
-8. In `Thing.fs`, do:
+8. In `Thing.fs`, paste the following code:
     ```fs
     namespace Library
     open System
@@ -35,11 +35,11 @@ A solution using only .NET Core projects
     module Thing =
         let get x = JsonConvert.DeserializeObject<int>(sprintf "%A" x)
     ```
-9. `dotnet restore` and `dotnet build`.
+9. Run `dotnet restore` and `dotnet build`.
 
 ### Writing the app
 
-1. Create a `App` folder under `GoldenF/src`.
+1. Create an `App` folder under `GoldenF/src`.
 2. From `GoldenF/src/App`, `dotnet new -l F#`
 3. In `GoldenF/src/App/project.json`, replace `netstandard1.5` with `netcoreapp1.0` under `frameworks` and remove its `imports`. 
 4. Add the following to `dependencies`:
@@ -61,7 +61,7 @@ A solution using only .NET Core projects
         printfn "%A" (Thing.get 42)
         0 // return an integer exit code
     ```
-7. `dotnet restore` and `dotnet build`.
+7. Run `dotnet restore` and `dotnet build`.
 
 You should now be able to `dotnet run` and get "Hello World!" and "42" output to the console.
 
@@ -83,7 +83,7 @@ You should now be able to `dotnet run` and get "Hello World!" and "42" output to
 6. Remove `emitEntryPoint`.
 7. Rename the `Program.fs` file to `Test.fs`, and also do the rename in `project.json` under `buildOptions/compile/includeFiles`.
 8. Add `"testrunner": "xunit"` at the top-level of `project.json`.
-9. In `test.fs`, do the following:
+9. In `test.fs`, paste the following code:
     ```fs
     module Test
 
@@ -93,8 +93,8 @@ You should now be able to `dotnet run` and get "Hello World!" and "42" output to
     [<Fact>]    
     let ``Success``() = Assert.Equal(42, Thing.get 42)
     ```
-10. `dotnet restore` and `dotnet build`.
+10. Run `dotnet restore` and `dotnet build`.
 
-You should new be able to run the test and verify it passes by doing `dotnet test`.
+You should now be able to run the test and verify it passes by doing `dotnet test`.
 
 **Note**: This will temporarily fail on OS X. This is a known issue.

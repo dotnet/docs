@@ -58,7 +58,7 @@ Starting from the solution obtained with the previous script, execute the follow
 1. Change the library's `project.json` to use `frameworks/netstandard1.4` instead of 1.5. Restore packages. The solution should still build and function exactly like it did before: the test should pass, and the console application should run and be debuggable.
 2. Right-click src, and add a new console application project (not Core, this time, as we want to consume our library from a .NET Framework application). Call it FxApp. Don't forget to use `Golden\src` as the location.
 3. Add a reference to the Library project. In theory, you should be able to add the reference to the project, but this scenario is currently broken. As a workaround, build the library project, then browse to the built dll. You could also package the library and reference the package, as another way to reference Core code from the .NET Framework. You will also need to manually add to your project the NuGet packages that the `Library` project is using (namely, `Newtonsoft.Json`), if you included it as a dll.
-4. Open `Program.cs`, add `using Library;" to the top of the file, and add `Console.WriteLine($"The answer is {new Thing().Get(42)}.");` to the Main method of the program.
+4. Open `Program.cs`, add `using Library;` to the top of the file, and add `Console.WriteLine($"The answer is {new Thing().Get(42)}.");` to the Main method of the program.
 5. Make FxApp the startup application for the solution.
 6. Set a breakpoint after the `WriteLine`.
 7. Run the app using F5.

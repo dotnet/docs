@@ -87,4 +87,4 @@ You should now see one test passing.
 4. Open `Program.cs`, add `using Library;` to the top of the file, then replace the Main method with `Console.WriteLine($"The answer is {new Thing().Get(42)}");`.
 5. Run the app using `dotnet run` from the command-line, or set a breakpoint after the `WriteLine`, and hit F5 from Visual Studio Code. Please refer to [the Visual Studio Code C# Extension documentation](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md) for details on setting-up debugging.
 
-The application should have built correctly, and should hit the breakpoint if you've launched the debugger. You should also be able to check in both cases that the application output "The answer is 42.".
+The application should build correctly, and should hit the breakpoint if you've launched the debugger. You should also be able to verify that in both cases the application output is "The answer is 42.".

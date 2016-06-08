@@ -7,11 +7,11 @@ _navRel: ../toc.html
 
 # .NET Core API Reference 
 
-The .NET Core API Reference documents the types and type members available in .NET Core. You can navigate to the documentation for a particular type (a class, structure, delegate, enum, or interface) or type member (a constructor, method, property, or event) in any of three ways:
+The .NET Core API Reference documents the types and type members available in .NET Core. You can navigate to the documentation for a particular type (a class, structure, delegate, enum, or interface) or type member (a constructor, method, field, property, or event) in any of three ways:
 
 - By using the search function in the left-hand pane to search for the **type** by name. (Search by member name is not supported.)
 
-- By navigating to the documentation for the type by expanding the **namespace** that that type is found in in the left hand pane, and then selecting the type.
+- By navigating to the documentation for the type by expanding the **namespace** where that type is found in the left hand pane, and then selecting the type.
 
 - By selecting the namespace in the "Namespaces in the .NET Core Class Library" section below.  
  
@@ -19,7 +19,7 @@ Each topic contains the documentation for a type and all its unique public and p
 
 ## Namespaces ##
 
-The types in the .NET Core class library documentation are organized by namespace. A namespace is a virtual label that allows a type or type member to be uniquely identified without requiring that that type name itself be unique. For example, a class library might include two types named `People` that have different members and offer different functionality. Locating them within namespaces (such as `Application.Collections.People` and `Application.ApplicationObjects.People`) allows compilers to resolve what might otherwise be ambiguous references to `People` objects.
+The types in the .NET Core class library documentation are organized by namespace. A namespace is a virtual label that allows a type or type member to be uniquely identified without requiring the type name itself to be unique. For example, a class library might include two types named `People` that have different members and offer different functionality. Locating them within namespaces (such as `Application.Collections.People` and `Application.ApplicationObjects.People`) allows compilers to resolve what might otherwise be ambiguous references to `People` objects.
   
 In the .NET Core library, the namespace name serves to identify a type's functionality.
 
@@ -41,11 +41,11 @@ The .NET Core class library includes the following namespaces:
 </tr>
 <tr>
    <td><a href="http://dotnet.github.io/api/Microsoft.SqlServer.Server.html" > Microsoft.SqlServer.Server</a></td>
-   <td>Contains classes for integrating .NET Core with Microsoft sQL Server and the SQL Server database engine process execution environment.
+   <td>Contains classes for integrating .NET Core with Microsoft SQL Server and the SQL Server database engine process execution environment.
    </td>
 </tr>
 <tr>
-   <td><a href="http://dotnet.github.io/api/Microsoft.VisualBasic.html">Microsoft VisualBasic</a></td>
+   <td><a href="http://dotnet.github.io/api/Microsoft.VisualBasic.html">Microsoft.VisualBasic</a></td>
    <td>
    Contains types that support the Visual Basic runtime.
    </td>
@@ -107,7 +107,7 @@ The .NET Core class library includes the following namespaces:
 <tr>
    <td><a href="http://dotnet.github.io/api/System.Collections.Specialized.html">System.Collections.Specialized</a></td>
    <td>
-   Contains specialized and strongly-typed collectionsm such as a linked list dictionary, a bit vector, and collections that contain only strings.
+   Contains specialized and strongly-typed collections such as a linked list dictionary, a bit vector, and collections that contain only strings.
    </td>
 </tr>
 <tr>
@@ -143,7 +143,7 @@ The .NET Core class library includes the following namespaces:
 <tr>
    <td><a href="http://dotnet.github.io/api/System.Data.SqlClient.html">System.Data.SqlClient</a></td>
    <td>
-   The data provider for SQL Server.
+   The data provider for Microsoft SQL Server.
    </td>
 </tr>
 <tr>
@@ -173,7 +173,7 @@ The .NET Core class library includes the following namespaces:
 <tr>
    <td><a href="http://dotnet.github.io/api/System.Diagnostics.Tracing.html">System.Diagnostics.Tracing</a></td>
    <td>
-   Provides types and members that enable you to create strongly-typed events to be captured by event tracing for Windows (ETW). 
+   Provides types and members that enable you to create strongly-typed events to be captured by Event Tracing for Windows (ETW). 
    </td>
 </tr>
 <tr>
@@ -245,7 +245,7 @@ The .NET Core class library includes the following namespaces:
 <tr>
    <td><a href="http://dotnet.github.io/api/System.Net.html">System.Net</a></td>
    <td>
-   Provides a simple programming interface for many of the protocols used on networks today. The <a href="http://dotnet.github.io/api/System.Net.WebRequest.html">WebRequest</a> and <a href="http://dotnet.github.io/api/System.Net.WebResponse.html">WebResponse</a> classes form the basis of what are called pluggable protocols, an implementation of network services that enables you to develop applications that use Internet resources without worrying about the specific details of the individual protocols.  
+   Provides a simple programming interface for many of the protocols used on networks today.   
    </td>
 </tr>
 <tr>
@@ -275,7 +275,7 @@ The .NET Core class library includes the following namespaces:
 <tr>
    <td><a href="http://dotnet.github.io/api/System.Net.Sockets.html">System.Net.Sockets</a></td>
    <td>
-   Provides a managed implementation of the Windows Sockets (Winsock) interface for developers who need to tightly control access to the network.
+   Provides a managed sockets implementation for developers who need to tightly control access to the network.
    </td>
 </tr>
 <tr>
@@ -317,7 +317,7 @@ The .NET Core class library includes the following namespaces:
 <tr>
    <td><a href="http://dotnet.github.io/api/System.Resources.html">System.Resources</a></td>
    <td>
-   Contains classes that allow developers to create, store, and retreive culture-specific string resources used in an application. One of the most important classes of the <a href="http://dotnet.github.io/api/System.Resources.html">System.Resources</a> namespace is the <a href="http://dotnet.github.io/api/System.Resources.ResourceManager.html">ResourceManager</a> class.
+   Contains classes that allow developers to create, store, and retrieve culture-specific string resources used in an application. One of its most important classes is the <a href="http://dotnet.github.io/api/System.Resources.ResourceManager.html">ResourceManager</a> class.
    </td>
 </tr>
 <tr>
@@ -341,7 +341,7 @@ The .NET Core class library includes the following namespaces:
 <tr>
    <td><a href="http://dotnet.github.io/api/System.Runtime.InteropServices.html">System.Runtime.InteropServices</a></td>
    <td>
-   Provides a wide variety of members that support COM interop and platform invoke services on Windows platforms. 
+   Provides a wide variety of members that support COM interop and platform invoke services. 
    </td>
 </tr>
 <tr>
@@ -431,7 +431,7 @@ The .NET Core class library includes the following namespaces:
 <tr>
    <td><a href="http://dotnet.github.io/api/System.Security.Cryptography.Xml.html">System.Security.Cryptography.Xml</a></td>
    <td>
-   Contains a single type that represents the **<X509IssuerSerial>** element of an XML digital signature.
+   Contains a single type that represents the <b>&ltX509IssuerSerial&gt</b> element of an XML digital signature.
    </td>
 </tr>
 <tr>
@@ -449,7 +449,7 @@ The .NET Core class library includes the following namespaces:
 <tr>
    <td><a href="http://dotnet.github.io/api/System.Text.html">System.Text</a></td>
    <td>
-   Contains classes that represent ASCII and Unicode character encodings; abstract base classes for converting blocks of characters to and from blocks of bytes; and a helper class that manipulates and formats `String` objects without creating intermediate `String` instances.
+   Contains classes that represent ASCII and Unicode character encodings; abstract base classes for converting blocks of characters to and from blocks of bytes; and a helper class that manipulates and formats <a href="http://dotnet.github.io/api/System.String.html">String</a> objects without creating intermediate <a href="http://dotnet.github.io/api/System.String.html">String</a> instances.
    </td>
 </tr>
 <tr>
@@ -461,7 +461,7 @@ The .NET Core class library includes the following namespaces:
 <tr>
    <td><a href="http://dotnet.github.io/api/System.Threading.html">System.Threading</a></td>
    <td>
-   Provides types that enable multithreaded programming. In addition to classes for synchronizing thread activities and access to data (`Mutex`, `Monitor`, `Interlocked`, `AutoResetEvent`, and so on), this namespace includes a `ThreadPool` class that allows you to use a pool of system-supplied threads, and a `Timer` class that executes callback methods on thread pool threads.
+   Provides types that enable multithreaded programming. In addition to classes for synchronizing thread activities and access to data (such as <a href="http://dotnet.github.io/api/System.Threading.Mutex.html">Mutex</a>, <a href="http://dotnet.github.io/api/System.Threading.Monitor.html">Monitor</a>, <a href="http://dotnet.github.io/api/System.Threading.Interlocked.html">Interlocked</a>, and <a href="http://dotnet.github.io/api/System.Threading.AutoResetEvent.html">AutoResetEvent</a>), this namespace includes a <a href="http://dotnet.github.io/api/System.Threading.ThreadPool.html">ThreadPool</a> class that allows you to use a pool of system-supplied threads, and a <a href="http://dotnet.github.io/api/System.Threading.Timer.html">Timer</a> class that executes callback methods on thread pool threads.
    </td>
 </tr>
 <tr>
@@ -491,7 +491,7 @@ The .NET Core class library includes the following namespaces:
 <tr>
    <td><a href="http://dotnet.github.io/api/System.Xml.Schema.html">System.Xml.Schema</a></td>
    <td>
-   Contains types that provide standards-based support for XML schema definition language (XSD) schemas.
+   Contains types that provide standards-based support for <a href="http://www.w3.org/TR/xmlschema-0/">XML Schema Definition Language (XSD)</a> schemas.
    </td>
 </tr>
 <tr>
@@ -503,7 +503,7 @@ The .NET Core class library includes the following namespaces:
 <tr>
    <td><a href="http://dotnet.github.io/api/System.Xml.XPath.html">System.Xml.XPath</a></td>
    <td>
-   Contains types that define a cursor model for navigating and editing XML information items as instances of the XQuery 1.0 and XPath 2.0 Data Model.
+   Contains types that define a cursor model for navigating and editing XML information items as instances of the <a href="http://www.w3.org/TR/xpath-datamodel/">XQuery 1.0 and XPath 2.0 Data Model</a>.
    </td>
 </tr>
 <tr>

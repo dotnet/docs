@@ -119,7 +119,6 @@
 ### [How to: Use Arrays of Blocking Collections in a Pipeline](essentials/collections/threadsafe/howtoUseArraysofBlockingCollections.md)
 ### [How to: Create an Object Pool by Using a ConcurrentBag](essentials/collections/threadsafe/howtoCreateanObjectPool.md)
 ## [🔧 Working with dates](apis/datetime/index.md)
-## [🔧 Numerical data](apis/numerics/index.md)
-### [Numerics in .Net Core](essentials/numericsincore.md)
+## [Numerics in .Net Core](essentials/numericsincore.md)
 
 

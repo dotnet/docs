@@ -1,5 +1,6 @@
 # .NET Core Concepts
 * [.NET Core](dotnet-core.md)
+* [.NET Core App types](app-types.md)
 * [.NET Core Packages](packages.md)
 * [.NET Core SDK](core-sdk/index.md)
 * [.NET Core Application Deployment](app-deployment.md)

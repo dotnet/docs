@@ -1,9 +1,9 @@
 .NET Core
 =========
 
-.NET Core is a general purpose development platform maintained by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core). It is cross-platform, supporting Windows, OS X and Linux and can be used in device, cloud and embedded/IoT scenarios. The supported Operating Systems (OS), CPUs and application scenarios will grow over time, provided by Microsoft, other companies and individuals.
+.NET Core is a general purpose development platform maintained by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core). It is cross-platform, supporting Windows, OS X and Linux and can be used in device, cloud and embedded/IoT scenarios. The [supported Operating Systems (OS)](https://github.com/dotnet/core/blob/master/roadmap.md), CPUs and application scenarios will grow over time, provided by Microsoft, other companies and individuals.
 
-The following characteritics best define .NET Core:
+The following characteristics best define .NET Core:
 
 - **Flexible deployment:** app-local or side-by-side user- or machine-wide installation.
 - **Cross-platform:** Runs on Windows, OS X and Linux; Can be ported to other OSes.
@@ -13,24 +13,24 @@ The following characteritics best define .NET Core:
 Composition
 ===========
 
-.NET Core is composed of a few parts:
+.NET Core is composed of the following parts:
 
 - A [.NET runtime](https://github.com/dotnet/coreclr), which provides a type system, assembly loading, a garbage collector, native interop and other basic services. 
 - A set of [framework libraries]((https://github.com/dotnet/corefx)), which provide primitive data types, app composition types and fundamental utilities. 
-- The 'dotnet' app host, which is used to launched .NET Core apps. It selects the runtime and hosts the runtime, provides an assembly loading policy and launches the app. The same host is also used to launch SDK tools in much the same way.
+- The 'dotnet' app host, which is used to launch .NET Core apps. It selects the runtime and hosts the runtime, provides an assembly loading policy and launches the app. The same host is also used to launch SDK tools in much the same way.
 - A [set of SDK tools](https://github.com/dotnet/cli) and language compilers that enable the base developer experience, available in the [.NET Core SDK](http://dotnet.github.io/docs/core-concepts/core-sdk).
 
 Languages
 ---------
 
-The C# languages (F# and VB are coming) can be used to write applications and libraries for .NET Core. The compilers run on .NET Core, enabling you to develop for .NET Core anywhere it runs. In general, you will not use the compilers directly, but indirectly by using the SDK tools.
+The C# language (F# and VB are coming) can be used to write applications and libraries for .NET Core. The compilers run on .NET Core, enabling you to develop for .NET Core anywhere it runs. In general, you will not use the compilers directly, but indirectly by using the SDK tools.
 
-The C# Roslyn compiler and the .NET Core tools have been integrated into several text editors and IDEs, including Visual Studio, Visual Studio Code, Sublime Text and Vim, making .NET Core development an option in your favorite coding environment and OS. This integration is provided, in part, by the good folks of the [OmniSharp project](http://www.omnisharp.net/).
+The C# Roslyn compiler and the .NET Core tools are or can be integrated into several text editors and IDEs, including Visual Studio, [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text and Vim, making .NET Core development an option in your favorite coding environment and OS. This integration is provided, in part, by the good folks of the [OmniSharp project](http://www.omnisharp.net/).
 
 .NET APIs and Compatibility
 ---------------------------
 
-.NET Core can be thought of as a cross-platform version of the .NET Framework, at the layer of the .NET Framework Base Class Libraries (BCL). It implements the [.NET Standard Library](../concepts/dotnet-standard-library.md) specification. .NET Core provides a subset of the APIs that are available in the .NET Framework or Mono/Xamarin. In some cases, types have been subseted (some members are not available or have been moved).
+.NET Core can be thought of as a cross-platform version of the .NET Framework, at the layer of the .NET Framework Base Class Libraries (BCL). It implements the [.NET Standard Library](../concepts/dotnet-standard-library.md) specification. .NET Core provides a subset of the APIs that are available in the .NET Framework or Mono/Xamarin. In some cases, types are not fully implemented (some members are not available or have been moved).
 
 The focus of .NET Core 1.0 has been "bringup" of the platform. Post .NET Core 1.0, there will be a focus on compatibility to make it easier to take advantage of .NET Core with existing .NET Framework and Mono codebases.
 
@@ -44,10 +44,10 @@ The [.NET Standard Library](../concepts/standard-library.md) is an API spec that
 Workloads
 ---------
 
-.NET Core includes a single application model: console apps. That's useful for tools, local services and console games. Additional application models build on top of .NET Core, such as: 
+By itself, .NET Core includes a single application model: console apps, which are useful for tools, local services and console games. Additional application models were built on top of .NET Core to extend its functionality, such as:
 
 - [ASP.NET Core](http://asp.net)
-- [Windows 10 UWP](https://developer.microsoft.com/windows)
+- [Windows 10 Universal Windows Platform (UWP)](https://developer.microsoft.com/windows)
 - [Xamarin.Forms](https://www.xamarin.com/forms)
 
 Open Source
@@ -60,12 +60,6 @@ Acquisition
 
 .NET Core is distributed in two main ways, as packages on NuGet.org and as standalone distributions.
 
-Packages
---------
-
-- [.NET Core Packages](packages.md) contain the .NET Core runtime and libraries (reference assemblies and implementations). For example, [System.Net.Http](https://www.nuget.org/packages/System.Net.Http/).
-- [.NET Core Metapackages](packages.md) describe various layers and app-models by referencing the appropriate set of versioned library packages.
-
 Distributions
 -------------
 
@@ -74,7 +68,13 @@ You can download .NET Core at the [.NET Core Getting Started](https://www.micros
 - The *Microsoft .NET Core* distribution includes the CoreCLR runtime, associated libraries, a console application host and the `dotnet` app launcher. It is described by the [`Microsoft.NETCore.App`](https://www.nuget.org/packages/Microsoft.NETCore.App) metapackage.
 - The *Microsoft .NET Core SDK* distribution includes .NET Core and a set of tools for restoring NuGet packages and compiling and building apps. 
 
-Typically, you will first install the .NET Core SDK to get started with .NET Core development. You may choose to install additional .NET Core (perhaps pre-release) builds. The `dotnet new` command will 
+Typically, you will first install the .NET Core SDK to get started with .NET Core development. You may choose to install additional .NET Core (perhaps pre-release) builds.
+
+Packages
+--------
+
+- [.NET Core Packages](packages.md) contain the .NET Core runtime and libraries (reference assemblies and implementations). For example, [System.Net.Http](https://www.nuget.org/packages/System.Net.Http/).
+- [.NET Core Metapackages](packages.md) describe various layers and app-models by referencing the appropriate set of versioned library packages.
 
 Architecture
 ============
@@ -95,11 +95,11 @@ Other companies or groups may support .NET Core for other app types and environm
 Designed for Adaptability
 -------------------------
 
-.NET Core has been built as a very similar but unique product relative to other .NET products. It has been designed to enable broad adaptability, to new platforms, for new workloads and with new compiler toolchains. It has several OS and CPU ports in progress and may be ported to many more. Another example is the [LLILC](https://github.com/dotnet/llilc) project, which is an early prototype of native compilation for .NET Core via the [LLVM](http://llvm.org/) compiler.
+.NET Core has been built as a very similar but unique product relative to other .NET products. It has been designed to enable broad adaptability to new platforms, for new workloads and with new compiler toolchains. It has several OS and CPU ports in progress and may be ported to many more. An example is the [LLILC](https://github.com/dotnet/llilc) project, which is an early prototype of native compilation for .NET Core via the [LLVM](http://llvm.org/) compiler.
 
-The product is broken into several pieces, enabling the various parts to be adapted to new platforms on different schedules. The runtime and platform-specific foundational libraries must be ported as a unit. Platform-agnostic libraries should work as-is on all platforms, by construction. To a large degree, this split is what makes the .NET team efficient. The team invests in reducing platform-specific implementations, prefering platform-neutral C# code whenever an algorithm or API can be implemented in-full or in-part that way.
+The product is broken into several pieces, enabling the various parts to be adapted to new platforms on different schedules. The runtime and platform-specific foundational libraries must be ported as a unit. Platform-agnostic libraries should work as-is on all platforms, by construction. There is a project bias to reducing platform-specific implementations to increase developer efficiency, preferring platform-neutral C# code whenever an algorithm or API can be implemented in-full or in-part that way.
 
-People commonly ask how .NET Core is implemented, in order to support multiple operating systems. They typically ask if there are separate implementations or if [conditional compilation](https://en.wikipedia.org/wiki/Conditional_compilation) is used. It's both, with a strong bias towards conditional compilation.
+People commonly ask how .NET Core is implemented in order to support multiple operating systems. They typically ask if there are separate implementations or if [conditional compilation](https://en.wikipedia.org/wiki/Conditional_compilation) is used. It's both, with a strong bias towards conditional compilation.
 
 You can see in the chart below that the vast majority of [CoreFX](https://github.com/dotnet/corefx) is platform-neutral code that is shared across all platforms. Windows and unix implementations are similar in size. Windows has a larger implementation since CoreFX implements some Windows-only features, such as [Microsoft.Win32.Registry](https://github.com/dotnet/corefx/tree/master/src/Microsoft.Win32.Registry) and [System.Security.Principal.Windows](https://github.com/dotnet/corefx/tree/master/src/System.Security.Principal.Windows) but does not yet implement any unix-only concepts. You will also see that the majority of the Linux and OS X implementations are shared across a unix implementation, while the Linux- and OS X-specific implementations are roughly similar in size.
 
@@ -123,9 +123,9 @@ The .NET platform was first announced by Microsoft in 2000 and then evolved from
 
 The major differences between .NET Core and the .NET Framework: 
 
-- **App-models** -- .NET Core does not support the .NET Framework app-models, in part because many of them are built on Windows technologies, such as WPF (built on top of DirectX). The console and ASP.NET Core app-models are supported by both .NET Core and .NET Framework. 
+- **App-models** -- .NET Core does not support all the .NET Framework app-models, in part because many of them are built on Windows technologies, such as WPF (built on top of DirectX). The console and ASP.NET Core app-models are supported by both .NET Core and .NET Framework. 
 - **APIs** -- .NET Core contains many of the same, but fewer, APIs as the .NET Framework, and with a different factoring (assembly names are different; type shape differs in key cases). These differences currently typically require changes to port source to .NET Core. We intend to make the .NET Core API the same as the .NET Framework BCL API over time.
-- **Subsystems** -- .NET Core implements a subset of the subsystems in the .NET Framework, with the goal of a simpler implementation and programming model. For example, Code Access Security is not supported, while  Reflection is supported.
+- **Subsystems** -- .NET Core implements a subset of the subsystems in the .NET Framework, with the goal of a simpler implementation and programming model. For example, Code Access Security (CAS) is not supported, while reflection is supported.
 - **Platforms** -- The .NET Framework supports Windows and Windows Server while .NET Core also supports OS X and Linux.
 - **Open Source** -- .NET Core is open source, while a [read-only subset of the .NET Framework](https://github.com/microsoft/referencesource) is open source.
 
@@ -142,4 +142,4 @@ The major differences between .NET Core and Mono:
 - **APIs** -- Mono supports a [large subset](http://docs.go-mono.com/?link=root%3a%2fclasslib) of the .NET Framework APIs, using the same assembly names and factoring. .NET Core will support this same subset over time.
 - **Platforms** -- Mono supports many platforms and CPUs.
 - **Open Source** -- Mono and .NET Core both use the MIT license and are .NET Foundation projects.
-- **Focus** -- The primary focus of Mono in recent years is mobile platforms, while .NET Core is focussed on cloud workloads.
+- **Focus** -- The primary focus of Mono in recent years is mobile platforms, while .NET Core is focused on cloud workloads.

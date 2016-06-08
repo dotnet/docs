@@ -35,7 +35,7 @@ PATCH when:
   - make bug fixes
   - add support for a newer platform
   - adopt a newer PATCH version of an existing dependency
-  - any other change
+  - any other change (not otherwise captured)
 
 When determining what to increment when there are multiple changes, choose the highest kind of change.
 
@@ -79,7 +79,7 @@ There are three primary metapackages for .NET Core.
 - Maps to the `netcoreapp` target framework.
 - Describes the packages in the .NET Core distribution.
 
-Note: 'Microsoft.NETCore.Portable.Compatibility` is another .NET Core metapackage. It doesn't map to a particular framework, so versions like a package.
+Note: `Microsoft.NETCore.Portable.Compatibility` is another .NET Core metapackage. It doesn't map to a particular framework, so versions like a package.
 
 Frameworks
 ----------

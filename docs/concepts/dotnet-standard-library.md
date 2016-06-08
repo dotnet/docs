@@ -1,151 +1,128 @@
 .NET Standard Library
 =====================
 
-The .NET Standard Library is a formal specification of .NET APIs that are intended to be available on all .NET runtimes. The motivation behind the Standard Library is establishing greater uniformity in the .NET ecosystem. [ECMA 335](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) continues to establish uniformity for .NET runtime behavior, but there is no similar spec for the .NET Base Class Libraries (BCL) for .NET library implementations. The .NET Standard Library is a standardized BCL, enabling developers to produce libraries that are usable across .NET app models and supported operating systems while having access to all the APIs they expect to use. 
+The .NET Standard Library is a formal specification of .NET APIs that are intended to be available on all .NET runtimes. The motivation behind the Standard Library is establishing greater uniformity in the .NET ecosystem. [ECMA 335](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) continues to establish uniformity for .NET runtime behavior, but there is no similar spec for the .NET Base Class Libraries (BCL) for .NET library implementations. 
 
-Developers use the .NET Standard Library in order to build libraries that are portable across .NET runtimes and operating systems. It can be thought of as the next generation of Portable Class Libraries (PCL). 
+The .NET Standard Library is a standardized BCL, enabling two key scenarios: 
 
-The spec is called "The .NET Standard Library" or can be referred to as ".NET Standard" as a short form. A Library that targets the spec can be called "a .NET Standard Library" or an NSL, similar to PCL.
+- Provide a baseline set of BCL APIs on all .NET platforms, independent of workload.
+- Enable developers to produce portable libraries that are usable across .NET runtimes, using this same set of APIs.
+
+The second scenario is the same as PCL. .NET Standard Library can be thought of as the next generation of [Portable Class Libraries (PCL)](https://msdn.microsoft.com/library/gg597391.aspx). The .NET Standard Library improves on the experience of creating portable libraries by curating a standard BCL and establishing greater uniformity across .NET runtimes as a result. 
+
+The spec is called "The .NET Standard Library". The more general ecosystem that builds on top of the spec is referred to as ".NET Standard" or coloquially as "NETStandard". A Library that targets the spec is called "a .NET Standard library" or coloquially as "a NETStandard library" or as "an NSL" (analogue of "PCL").
 
 Specification
 =============
 
-The .NET Standard Library spec is a standardized set of APIs, contained and described by packages. The spec is not singular, but an incrementally growing and linearly versioned set of APIs. The first version of the standard establishes a baseline of APIs. Subsequent versions add APIs. There is no established provision for removing APIs from the standard.
+The .NET Standard Library spec is a standardized set of APIs. A given .NET runtime will implement and advertise support for a particular version of the .NET Standard Library. That runtime is then able to support source and binaries that target that and previous versions of the spec.
 
 The spec is maintained by .NET runtime implementors, specifically Microsoft (includes .NET Framework, .NET Core and Mono) and Unity. A public feedback process is used as part of establishing new .NET Standard Library versions.
 
 Official Artifacts
 ------------------
 
-The official spec is a set of .cs files that describe the shape of the standard. Additional derivative artifacts are provided to enable more convenient reading and to enable certain developer scenarios (for example, using a compiler).
+The official spec is a set of .cs files that define the APIs that are part of the standard. The [ref directory](https://github.com/dotnet/corefx/tree/master/src/System.Runtime/ref) for each [component](https://github.com/dotnet/corefx/tree/master/src) defines the .NET Standard Library APIs. While the ref artifacts reside in the [CoreFX repo](https://github.com/dotnet/corefx), they are not .NET Core specific.
 
-- [.cs files](https://github.com/dotnet/corefx/tree/master/src)
-- Reference assemblies (currently only distributed by NuGet)
-- [NuGet packages](https://www.nuget.org/packages/NETStandard.Library)
-- Markdown API list (TBD)
+The [NETStandard.Library](https://github.com/dotnet/corefx/blob/master/pkg/NETStandard.Library/NETStandard.Library.packages.targets) metapackage describes the set of libraries that define (in part) one or more .NET Standard Library versions.
 
-Compatibility
--------------
+Derivative artifacts are provided to enable more convenient reading and to enable certain developer scenarios (for example, using a compiler).
 
-The .NET Standard Library is compatible with various existing API specs, specifically various PCL profiles. PCL compatibility enables .NET Standard Libraries to reference PCL libraries.
+- API list in markdown (TBD)
+- Reference assemblies, distributed as [NuGet packages](../core-concepts/packages.md) and referenced by the [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library/) metapackage.
 
-You can see the set of [PCL profiles that are compatible with the .NET Standard](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md#portable-profiles), per version.
+Package Representation
+----------------------
 
-The PCL compatibility layer is defined:
+The primary distribution vehicle for the .NET Standard Library reference assemblies is [NuGet packages](../core-concepts/packages.md). Implementations will be delivered in a variety of ways, appropriate for each .NET runtime.
 
-- [NuGet packages](https://www.nuget.org/packages/Microsoft.NETCore.Compatibility)
-- Other places?
+NuGet packages target one of more frameworks. The .NET Standard Library packages target the ".NET Standard" framework, which is represented by the the `netstandard` Target Framework Moniker (TFM). The framework is ".NET Standard" instead of ".NET Standard Library", since ".NET Standard" includes both the .NET Standard Library packages and the larger ecosystem of libraries that are built on top of it. Libraries that are intended to run on multiple runtimes should use this target. 
 
-Standard Versions
+The `NETStandard.Library` metapackage references the complete set of NuGet packages that define the .NET Standard Library.  The most common way to target `netstandard` is by referencing this metapackage. It describes and provides access to the ~40 .NET  libraries and associated APIs that define the .NET Standard Library. You can reference additional packages that target `netstandard` to get access to additional APIs. 
+
+The `NETStandard.Library` metapackage doesn't define a framework of its own, but exposes the set of frameworks defined by the packages it references. Similarly, the `netstandard` framework does not expose any APIs on its own, but relies on packages that expose `netstandard` assets to define the framework. The definition of the framework is not limited to the .NET Standard Library.
+
+Versioning
+----------
+
+The spec is not singular, but an incrementally growing and linearly versioned set of APIs. The first version of the standard establishes a baseline of APIs. Subsequent versions add APIs and inherit APIs defined by previous versions. There is no established provision for removing APIs from the standard.
+
+The .NET Standard Library is not specific to any one .NET runtime, nor does it match the versioning scheme of any of those runtimes.
+
+APIs added to any of the runtimes (such as, .NET Framework, .NET Core and Mono) can be considered as candidates to add to the specification. New [versions of the .NET Standard Library](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md#list-of-net-corefx-apis-and-their-associated-net-platform-standard-version) are created for one of two reasons:
+
+- APIs are added to a .NET runtime (for example, .NET Core) that are considered fundamental. They are added to the .NET Standard Library, requiring other .NET runtimes to implement these new APIs in order to satisfy the new standard version.
+- APIs are implemented across a quorum of .NET runtimes (for example, .NET Framework, .NET Core and Mono), making these APIs candidates for the standard.
+
+PCL Compatibility
 -----------------
 
-The .NET Standard is not specific to any one .NET runtime, nor does it match the versioning scheme of any of those runtimes. APIs added to any of the runtimes (such as, Mono, .NET Framework, and .NET Core) can be considered as candidates to add to the specification. New [versions of the .NET Standard Library](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md#list-of-net-corefx-apis-and-their-associated-net-platform-standard-version) are created for one of two reasons:
-
-- One or more new APIs are added to a .NET runtime (for example, .NET Core) that are considered fundamental. Other .NET runtimes are required to implement this new API in order to satisfy the new standard version.
-- One or more APIs are deterimed to be implemented across a quorum of .NET runtimes (for example, .NET Framework, .NET Core and Mono), making these APIs candidates for the standard.
-
-Each standard version defines a set of APIs and inherits the APIs defined by previous versions. Some versions add a large set of APIs and others very few. This is in large part because of the reasons listed above, on the reasons why APIs get added to the standard.
-
-The .NET Standard Library was published as multiple versions at its inception (versions 1.0 through 1.5). The creation of multiple versions enabled .NET Standard and PCLs to overlap. This overlap was created for two reasons:
+The .NET Standard Library is compatible with a subset of PCL profiles. .NET Standard Library 1.0, 1.1 and 1.2 each overlap with a set of PCL profiles. This overlap was created for two reasons:
 
 - Enable NSLs to reference PCLs.
 - Enable PCLs to be packaged as NSLs.
 
-Informative Specification
--------------------------
+PCL compatibility is provided by the [Microsoft.NETCore.Compatibility](https://www.nuget.org/packages/Microsoft.NETCore.Compatibility) NuGet package. This dependency is required when referencing NuGet packages that contain PCLs.
 
-The standard defines the APIs that are available, per version. The set of APIs is the normative content of the spec. There is other important related information that is informative, extrinsic to the spec. Key informative information:
+You can see the set of PCL profiles that are compatible with the .NET Standard: 
 
-- [.NET platforms support](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md#mapping-the-net-platform-standard-to-platforms) per .NET Standard Library version.
+| Profile | .NET Platform Standard version |
+| ---------| --------------- |
+| Profile7  .NET Portable Subset (.NET Framework 4.5, Windows 8) | 1.1 |
+| Profile31 .NET Portable Subset (Windows 8.1, Windows Phone Silverlight 8.1)| 1.0 |
+| Profile32 .NET Portable Subset (Windows 8.1, Windows Phone 8.1) | 1.2 |
+| Profile44 .NET Portable Subset (.NET Framework 4.5.1, Windows 8.1) | 1.2 |
+| Profile49 .NET Portable Subset (.NET Framework 4.5, Windows Phone Silverlight 8) | 1.0 |
+| Profile78 .NET Portable Subset (.NET Framework 4.5, Windows 8, Windows Phone Silverlight 8) | 1.0 |
+| Profile84 .NET Portable Subset (Windows Phone 8.1, Windows Phone Silverlight 8.1) | 1.0 |
+| Profile111 .NET Portable Subset (.NET Framework 4.5, Windows 8, Windows Phone 8.1) | 1.1 |
+| Profile151 .NET Portable Subset (.NET Framework 4.5.1, Windows 8.1, Windows Phone 8.1) | 1.2 |
+| Profile157 .NET Portable Subset (Windows 8.1, Windows Phone 8.1, Windows Phone Silverlight 8.1) | 1.0 |
+| Profile259 .NET Portable Subset (.NET Framework 4.5, Windows 8, Windows Phone 8.1, Windows Phone Silverlight 8) | 1.0 |
+
+.NET Platforms Support
+======================
+
+The various .NET runtimes implement specific versions of the .NET Standard Libary. They advertise the highest version they support, a statement that means they also support previous versions. For example, the .NET Framework 4.6 implements the .NET Standard Library 1.3, which means that it exposes all APIs defined in that and previous .NET Standard Library versions. Similarly, the .NET Framework 4.6.2 implements .NET Standard Library 1.5, while .NET Core 1.0 implements the .NET Standard Library 1.6.
+
+You can see the complete set of .NET runtimes that support the .NET Standard Library.
+
+| Target Platform Name | Alias |  |  |  |  |  | | |
+| :---------- | :--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |
+|.NET Platform Standard | netstandard | 1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 |
+|.NET Core|netcoreapp|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|1.0|
+|.NET Framework|net|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|4.6.3|
+|||&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|4.6.2|
+|||&rarr;|&rarr;|&rarr;|&rarr;|4.6.1|||
+|||&rarr;|&rarr;|&rarr;|4.6||||
+|||&rarr;|&rarr;|4.5.2|||||
+|||&rarr;|&rarr;|4.5.1|||||
+|||&rarr;|4.5||||||
+|Universal Windows Platform|uap|&rarr;|&rarr;|&rarr;|&rarr;|10.0|||
+|Windows|win|&rarr;|&rarr;|8.1|||||
+|||&rarr;|8.0||||||
+|Windows Phone|wpa|&rarr;|&rarr;|8.1|||||
+|Windows Phone Silverlight|wp|8.1|||||||
+|||8.0|||||||
+|Mono/Xamarin Platforms||&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|*|
+|Mono||&rarr;|&rarr;|*||||||
+
+Comparison to Portable Class Libraries
+======================================
+
+The .NET Standard Library and PCLs were created for similar purposes but also differ in key ways.
+
+Similarities:
+
+- Defines APIs that can be used for binary code sharing.
+
+Differences:
+
+- The .NET Standard Library is a curated set of APIs, while PCL is defined by intersections of existing platforms.
+- The .NET Standard Library and .NET Standard linearly version, while PCL exposes a disjoint set of profiles.
+- PCL represents Microsoft platforms while the .NET Standard Library is agnostic to platform.
 
 Targeting .NET Standard Library
 ===============================
 
-
-
-
-The standard is specified by a set of [NuGet packages](../core-concepts/packages.md). You can compile libraries with these same NuGet packages in order to build libraries that are portable, across .NET Standard compliant runtimes.
-
-It can be thought of as the next generation of [Portable Class Libraries](https://msdn.microsoft.com/library/gg597391.aspx), although is architecturally different. You can learn more 
-
-
-The Target Framework Moniker (TFM) for .NET Standard is `netstandard`. At the release of .NET Core 1.0, there will be several `netstandard` versions, not just a 1.0 version. There was a strong desire to create a bridge between Portable Class Libraries (PCL) and .NET Standard.  To establish the compatibility bridge, .NET Standard was pre-versioned to overlap with existing .NET platforms in a compatible way with PCL. .NET Standard versions 1.0 through 1.4 represent the overlap. The .NET Core 1.0 platform implements all .NET Standard versions up to and including 1.5.
-
-
-
-
-- **The ".NET Standard Library"** - This is the API spec that describes the API evolution of .NET and that .NET Core implements. While many of the additions to the Standard Library will come from API additions to .NET Core, some will come from other platforms, such as the .NET Framework and Mono.
-- **System.* packages** - These packages provide the ".NET Core" implementation but contain assets for other platforms, such as the .NET Framework and Mono.
-
-
-### netstandard
-
-.NET Standard is a new concept that came out of the .NET Core project, but is logically separate. It is a a new framework that describes the API evolution of .NET for the lower-most APIs. One could consider it a standardized Base Class Library (BCL) for all .NET implementations. .NET Core implements this spec and is ".NET Standard compliant" at a particular version level. The .NET Standard will be updated regularly, based on new APIs being adding in .NET Standard compliant .NET implementations, such as .NET Core, .NET Framework and Mono. The version number of .NET Standard will not match any of the implementations.
-
-The Target Framework Moniker (TFM) for .NET Standard is `netstandard`. At the release of .NET Core 1.0, there will be several `netstandard` versions, not just a 1.0 version. There was a strong desire to create a bridge between Portable Class Libraries (PCL) and .NET Standard.  To establish the compatibility bridge, .NET Standard was pre-versioned to overlap with existing .NET platforms in a compatible way with PCL. .NET Standard versions 1.0 through 1.4 represent the overlap. The .NET Core 1.0 platform implements all .NET Standard versions up to and including 1.5.
-
-PCL and .NET Standard both enable binary sharing but define the applicable APIs in different ways. .NET Standard is the new binary code sharing mechanism going forward.
-
-
-
-
-.NET Core and .NET Standard Versioning
-======================================
-
-The .NET Standard will not adopt the version numbers of .NET Core. They are logically separate. There are three major scenarios to consider.
-
-The following sections discuss API additions. It assumes that the additions are to libraries that are referenced by `NETStandard.Library` metapackage.
-
-Adding APIs to .NET Core
-------------------------
-
-When APIs are added to .NET Core, they will typicall be added .NET Standard. Both .NET Core and .NET Standard will version. The APIs might be added to other .NET implementations at the same time, such as the .NET Framework. 
-
-Adding APIs to another .NET Implementation
-------------------------------------------
-
-When APIs are added to the .NET Framework (for example), but not .NET Core, the .NET Standard will version, but .NET Core will not.
-
-The next time .NET Core ships, it will likely add those new APIs such that it now supports that higher .NET Standard version. It can also add additional APIs at the same time, which could create a new .NET Standard version.
-
-.NET Core ships a Major Version
--------------------------------
-
-When .NET Core ships a 2.0 version, the .NET Standard will be updated (assuming new APIs were added), but will stay with is 1.x versioning scheme. 
-
-We intend to move to a 2.0 version of .NET Standard only for very significant changes. We have defined a non-exhaustive set of cases where we would move to `netstandard2.0`, none of which we intend to do:
-
-- Drop APIs.
-- Add a major new feature that is potentially breaking for existing runtimes (for example, array slices).
-- Update the CLR metadata/assembly format.
-
-
-Everytime there is a new major or minor release of the NetStandard.Library meta-package, there will be a subset of the underlying packages that include a new netstandard folder. That's the change that creates the new netstandard versions. Packages that don't expose new APIs will not include these new folders, unless they take an implementation dependency on a new package that does add new APIs.
-
-In most cases, higher-level packages, from Microsoft or 3rd parties, will not need to support multiple netstandard versions, but will target the lowest netstandard version that satisfies their API dependency and platform breadth needs. If you need to get access to newer APIs in later netstandard versions but want to maintain their platform support, you can target multiple netstandard versions, but can continue to offer the same API (where possible) for developers to consume. Many existing NuGet packages already do this, across net20, net46 and PCL, for example.
-
-Most .NET Core packages will use the new ".NET Standard" (netstandard) framework, which is intended to be supported on all modern .NET platforms. They may also support other frameworks.
-
-Target Frameworks
------------------
-
-
-
-
-Other .NET platforms could support this framework, but are not expected to.
-
-
-The [NETStandard.Library version](versioning.md) matches the highest `netstandard` version it supports. The framework reference in project.json is used to select the correct assets from the underlying packages. In this case, `netstandard1.5` assets are required, as opposed to `netstandard1.4` or `net46`, for example. The framework and metapackage references in project.json do not need to match. For example, the following project.json is also valid.
-
-```json
-{
-  "dependencies": {
-    "NETStandard.Library": "1.5.0"
-  },
-  "frameworks": {
-    "netstandard1.3": {}
-  }
-}
-```
-
-It may seem strange to target `netstandard1.3` but use the 1.5.0 version of `NETStandard.Library`. It is a valid use-case, since the metapackage maintains support for older `netstandard` versions. It could be the case you've standardized on the 1.5.0 version of the metapackage and use it for all your libraries, which target a variety of `netstandard` versions. With this approach, you only need to restore `NETStandard.Library` 1.5.0 and not earlier versions. The reverse would not be valid. You cannot use `netstandard1.5` assets with the 1.3.0 version of NETStandard.Library. 
+You can [build .NET Standard Libraries](../core-concepts/libraries/libraries-with-cli.html) using a combination of the `netstandard` framework and the NETStandard.Library metapackage. You can see examples of [targeting the .NET Standard Library with .NET Core tools](../core-concepts/packages.md).

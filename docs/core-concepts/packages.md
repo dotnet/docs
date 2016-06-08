@@ -21,7 +21,7 @@ Some of these benefits are only used in certain circumstances. For example, NET 
 
 The following is a list of the key NuGet packages for .NET Core:
 
-- [System.Runtime](https://www.nuget.org/packages/System.Runtime) - The most fundamental .NET Core package, including [Object](http://dotnet.github.io/api/System.Object), [System.String](http://dotnet.github.io/api/System.String), [Array](http://dotnet.github.io/api/System.Array), [Action](http://dotnet.github.io/api/System.Action) and [IList&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.IList`1).
+- [System.Runtime](https://www.nuget.org/packages/System.Runtime) - The most fundamental .NET Core package, including [Object](http://dotnet.github.io/api/System.Object), [String](http://dotnet.github.io/api/System.String), [Array](http://dotnet.github.io/api/System.Array), [Action](http://dotnet.github.io/api/System.Action) and [IList&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.IList`1).
 - [System.Collections](https://www.nuget.org/packages/System.Collections) - A set of (primarily) generic collections, including [List&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.List`1) and [Dictionary&lt;K,V&gt;](http://dotnet.github.io/api/System.Collections.Generic.Dictionary`2).
 - [System.Net.Http](https://www.nuget.org/packages/System.Net.Http) - A set of types for HTTP network communication, including [HttpClient](http://dotnet.github.io/api/System.Net.Http.HttpClient) and [HttpResponseMessage](http://dotnet.github.io/api/System.Net.Http.HttpResponseMessage).
 - [System.IO.FileSystem](https://www.nuget.org/packages/System.IO.FileSystem) - A set of types for reading and writing to local or networked disk-based storage, including [File](http://dotnet.github.io/api/System.IO.File) and [Directory](http://dotnet.github.io/api/System.IO.Directory).
@@ -68,7 +68,7 @@ The .NET Standard Library metapackage:
 
 Metapackages are referenced just like any other NuGet package in project.json. 
 
-In the following example, the NETStandard.Library meta package is referenced, which is used for creating libraries that are portable across .NET runtimes.
+In the following example, the `NETStandard.Library` meta package is referenced, which is used for creating libraries that are portable across .NET runtimes.
 
 ```json
 {
@@ -158,7 +158,7 @@ The framework and metapackage references in project.json do not need to match. F
 }
 ```
 
-It may seem strange to target `netstandard1.3` but use the 1.5.0 version of `NETStandard.Library`. It is a valid use-case, since the metapackage maintains support for older `netstandard` versions. It could be the case you've standardized on the 1.5.0 version of the metapackage and use it for all your libraries, which target a variety of `netstandard` versions. With this approach, you only need to restore `NETStandard.Library` 1.5.0 and not earlier versions. The reverse would not be valid. You cannot use `netstandard1.5` with the 1.3.0 version of NETStandard.Library since it will not reference packages with `netstandard1.5` assets.
+It may seem strange to target `netstandard1.3` but use the 1.5.0 version of `NETStandard.Library`. It is a valid use-case, since the metapackage maintains support for older `netstandard` versions. It could be the case you've standardized on the 1.5.0 version of the metapackage and use it for all your libraries, which target a variety of `netstandard` versions. With this approach, you only need to restore `NETStandard.Library` 1.5.0 and not earlier versions. The reverse would not be valid. You cannot use `netstandard1.5` with the 1.3.0 version of `NETStandard.Library` since it will not reference packages with `netstandard1.5` assets.
 
 .NET Core Application
 ---------------------

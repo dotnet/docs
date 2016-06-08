@@ -23,7 +23,7 @@ Composition
 Languages
 ---------
 
-The C# language (F# and VB are coming) can be used to write applications and libraries for .NET Core. The compilers run on .NET Core, enabling you to develop for .NET Core anywhere it runs. In general, you will not use the compilers directly, but indirectly by using the SDK tools.
+The C# language (F# and VB are coming) can be used to write applications and libraries for .NET Core. The compilers run on .NET Core, enabling you to develop for .NET Core anywhere it runs. In general, you will not use the compilers directly, but indirectly using the SDK tools.
 
 The C# Roslyn compiler and the .NET Core tools are or can be integrated into several text editors and IDEs, including Visual Studio, [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text and Vim, making .NET Core development an option in your favorite coding environment and OS. This integration is provided, in part, by the good folks of the [OmniSharp project](http://www.omnisharp.net/).
 
@@ -37,7 +37,7 @@ The focus of .NET Core 1.0 has been "bringup" of the platform. Post .NET Core 1.
 Relationship to the .NET Standard Library
 -----------------------------------------
 
-The [.NET Standard Library](../concepts/standard-library.md) is an API spec that describes the consistent set of .NET APIs that developers can expect in each .NET implementation. .NET implementations need to implement this spec in order to be considered .NET Standard Library compliant and to support libraries that target the .NET Standard Library. 
+The [.NET Standard Library](../concepts/dotnet-standard-library.md) is an API spec that describes the consistent set of .NET APIs that developers can expect in each .NET implementation. .NET implementations need to implement this spec in order to be considered .NET Standard Library compliant and to support libraries that target the .NET Standard Library. 
 
 .NET Core implements the .NET Standard Library, and therefore supports .NET Standard Libraries.
 
@@ -103,13 +103,13 @@ People commonly ask how .NET Core is implemented in order to support multiple op
 
 You can see in the chart below that the vast majority of [CoreFX](https://github.com/dotnet/corefx) is platform-neutral code that is shared across all platforms. Windows and unix implementations are similar in size. Windows has a larger implementation since CoreFX implements some Windows-only features, such as [Microsoft.Win32.Registry](https://github.com/dotnet/corefx/tree/master/src/Microsoft.Win32.Registry) and [System.Security.Principal.Windows](https://github.com/dotnet/corefx/tree/master/src/System.Security.Principal.Windows) but does not yet implement any unix-only concepts. You will also see that the majority of the Linux and OS X implementations are shared across a unix implementation, while the Linux- and OS X-specific implementations are roughly similar in size.
 
-![CoreFX: Lines of Code per Platform](../corefx-platforms-loc.png)
+![CoreFX: Lines of Code per Platform](../images/corefx-platforms-loc.png)
 
 There are a mix of platform-specific and platform-neutral libraries in .NET Core. You can see the pattern in a few examples:
 
 - [CoreCLR](https://github.com/dotnet/coreclr) is platform-specific. It's built in C/C++, so is platform-specific by construction.
-- [System.IO](https://github.com/dotnet/corefx/tree/master/src/System.IO)) and [System.Security.Cryptography.Algorithms](https://github.com/dotnet/corefx/tree/master/src/System.Security.Cryptography.Algorithms) are platform-specific, given that the storage and cryptography APIs differ significantly on each OS. 
-- [System.Collections](https://github.com/dotnet/corefx/tree/master/src/System.Collections)) and [System.Linq](https://github.com/dotnet/corefx/tree/master/src/System.Linq)) are platform-neutral, given that they create and operate over data structures.
+- [System.IO](https://github.com/dotnet/corefx/tree/master/src/System.IO) and [System.Security.Cryptography.Algorithms](https://github.com/dotnet/corefx/tree/master/src/System.Security.Cryptography.Algorithms) are platform-specific, given that the storage and cryptography APIs differ significantly on each OS. 
+- [System.Collections](https://github.com/dotnet/corefx/tree/master/src/System.Collections) and [System.Linq](https://github.com/dotnet/corefx/tree/master/src/System.Linq) are platform-neutral, given that they create and operate over data structures.
 
 Comparisons to other .NET Platforms
 ===================================
@@ -134,7 +134,7 @@ While .NET Core is unique and has significant differences to the .NET Framework 
 Comparison with Mono
 --------------------
 
-[Mono](http://www.mono-project.com/) is the original cross-platform and open source .NET implementation, first shipping in 2004. It can be thought of as a community clone of the .NET Framework. The Mono project team relied on the open [.NET standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) (notably ECMA 335) published by Microsoft in order to provide a compatible implementation.
+[Mono](http://www.mono-project.com/) is the original cross-platform and [open source](https://github.com/mono/mono) .NET implementation, first shipping in 2004. It can be thought of as a community clone of the .NET Framework. The Mono project team relied on the open [.NET standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) (notably ECMA 335) published by Microsoft in order to provide a compatible implementation.
 
 The major differences between .NET Core and Mono:
 

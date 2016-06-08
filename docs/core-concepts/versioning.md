@@ -10,7 +10,7 @@ Semantic Versioning
 
 .NET Core uses [Semantic Versioning (SemVer)](http://semver.org/), adopting the use of major.minor.patch versioning, using the various parts of the version number to describe the degree and kind of change.
 
-The following versioning template is generally applied to .NET Core. There are cases where it has been adapted to fit with existing versioning. These cases are described later in this document. For example, frameworks only have a two part version number and are only intended to represent platform and API capabilities, which aligns with major/minor versioning.
+The following versioning template is generally applied to .NET Core. There are cases where it has been adapted to fit with existing versioning. These cases are described later in this document. For example, frameworks are only intended to represent platform and API capabilities, which aligns with major/minor versioning.
 
 Versioning Form
 ---------------
@@ -46,14 +46,14 @@ Versioning Scheme
 
 - A runtime and framework implementation, distributed as packages. Each package is versioned independently, particularly for patch versioning.
 - A set of metapackages that reference fine-grained packages as a versioned unit. Metapackages are versioned separately from packages.
-- A set of target frameworks (for example, netstandard) that represent a progressively larger API set, described in a set of versioned snapshots.
+- A set of target frameworks (for example, `netstandard`) that represent a progressively larger API set, described in a set of versioned snapshots.
 
 Packages
 --------
 
-Library packages evolve and version independently. Packages that overlap with .NET Framework System.\* assemblies typically use 4.x versions, aligning with the .NET Framework 4.x versioning (a historical choice). Packages that do not overlap with the .NET Framework libraries (for example, System.Metadata) typically start at 1.0 and increment from there.
+Library packages evolve and version independently. Packages that overlap with .NET Framework System.\* assemblies typically use 4.x versions, aligning with the .NET Framework 4.x versioning (a historical choice). Packages that do not overlap with the .NET Framework libraries (for example, [System.Refelction.Metadata](https://www.nuget.org/packages/System.Reflection.Metadata)) typically start at 1.0 and increment from there.
 
-The packages described by NETStandard.Library are treated specially due to being at the base of the platform.
+The packages described by [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) are treated specially due to being at the base of the platform.
 
 - NETStandard.Library packages will typically version as a set, since they have implementation-level dependencies between them.
 - APIs will only be added to NETStandard.Library packages as part of major or minor .NET Core releases, since doing so would require adding a new `netstandard` version. This is in addition to SemVer requirements.
@@ -61,7 +61,7 @@ The packages described by NETStandard.Library are treated specially due to being
 Metapackages
 -------------
 
-Versioning for .NET Core metapackages is based on the target framework that they map to. The metapackages adopt the highest version number (for example, netstandard1.5) of the target framework it maps to in its package closure. 
+Versioning for .NET Core metapackages is based on the target framework that they map to. The metapackages adopt the highest version number of the target framework (for example, netstandard1.5) it maps to in its package closure. 
 
 The patch version for the metapackage is used to represent updates to the metapackage to reference updated packages. Patch versions will never include an updated framework version. As a result, the metapackages are not strictly SemVer compliant because their versioning scheme doesn't represent the degree of change in the underlying packages, but primarily the API level. 
 
@@ -69,9 +69,9 @@ There are three primary metapackages for .NET Core.
 
 **NETStandard.Library**
 
-- v1.6 as of .NET Core 1.0 (these versions won't typically match).
+- v1.6 as of .NET Core 1.0 (these versions won't typically or intentionally match).
 - Maps to the `netstandard` target framework. 
-- Describes the packages that are considered required for modern app development and that .NET platforms must implement to be considered a ".NET Standard" platform.
+- Describes the packages that are considered required for modern app development and that .NET platforms must implement to be considered a [.NET Standard](../concepts/dotnet-standard-library.md) platform.
 
 **Microsoft.NETCore.App**
 
@@ -79,7 +79,7 @@ There are three primary metapackages for .NET Core.
 - Maps to the `netcoreapp` target framework.
 - Describes the packages in the .NET Core distribution.
 
-Note: `Microsoft.NETCore.Portable.Compatibility` is another .NET Core metapackage. It doesn't map to a particular framework, so versions like a package.
+Note: [`Microsoft.NETCore.Portable.Compatibility`](https://www.nuget.org/packages/Microsoft.NETCore.Portable.Compatibility) is another .NET Core metapackage. It doesn't map to a particular framework, so versions like a package.
 
 Frameworks
 ----------

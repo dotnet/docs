@@ -1,8 +1,8 @@
-# Writing Console Apps: A Step by Step Guide
+# Using the CLI tools to write console apps: A step-by-step guide
 
 This guide will show you how to use the .NET CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.
 
-If you're unfamiliar with the .NET CLI toolset, read [the overview](../core-sdk/sdk-overview.md).  It's also helpful to have an understanding of the [console app paradigm](paradigm.md).
+If you're unfamiliar with the .NET CLI toolset, read [the overview](../core-concepts/core-sdk/sdk-overview.md).  It's also helpful to have an understanding of the [console app paradigm](../core-concepts/console/overview.md).
 
 ## Prerequisites
 
@@ -619,17 +619,17 @@ public class PetTests
 }
 ```
    
- Now you can run tests!  The [`dotnet test`](http://dotnet.github.io/docs/core-concepts/core-sdk/cli/dotnet-test.html) command runs the test runner you have specified in your project. Make sure you start at the top-level directory.
+Now you can run tests!  The [`dotnet test`](http://dotnet.github.io/docs/core-concepts/core-sdk/cli/dotnet-test.html) command runs the test runner you have specified in your project. Make sure you start at the top-level directory.
  
- ```
- $ dotnet restore
- $ cd test/PetTests
- $ dotnet test
- ```
+```
+$ dotnet restore
+$ cd test/PetTests
+$ dotnet test
+```
  
- Output should look like this:
+Output should look like this:
  
- ```
+```
 xUnit.net .NET CLI test runner (64-bit win10-x64)
   Discovering: NewTypesTests
   Discovered:  NewTypesTests
@@ -638,11 +638,12 @@ xUnit.net .NET CLI test runner (64-bit win10-x64)
 === TEST EXECUTION SUMMARY ===
    NewTypesTests  Total: 2, Errors: 0, Failed: 0, Skipped: 0, Time: 0.144s
 SUMMARY: Total: 1 targets, Passed: 1, Failed: 0.
- ```
+```
  
- ## Conclusion
+## Conclusion
  
- Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.  The next step is to create awesome console apps of your own!
+Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.  The next step is to create awesome console apps of your own!
  
- If a more advanced example of a console app interests you, check out the next section, [nameof(more_interesting_console_app)](overview.md).
+If a more advanced example of a console app interests you, check out the next tutorial: [Using the CLI tools to write console apps: An advanced step-by-step guide](../core-concepts/console/cli-console-app-tutorial-advanced.md).
  
+	

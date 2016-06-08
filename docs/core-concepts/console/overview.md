@@ -1,4 +1,4 @@
-# 🔧 Overview and moving pieces
+# 🔧 Overview
 
 > **Note**
 > 

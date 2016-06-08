@@ -42,7 +42,7 @@ The `NETStandard.Library` metapackage references the complete set of NuGet packa
 
 The `NETStandard.Library` metapackage doesn't define a framework of its own, but exposes the set of frameworks defined by the packages it references, including `netstandard`. Similarly, the `netstandard` framework does not expose any APIs on its own, but relies on packages that expose `netstandard` assets to define the framework. The definition of the `netstandard` framework is not limited to the .NET Standard Library.
 
-Note: `netstandard` isn't actually a framework, but a prototype for one. It is used as a short-hand. For example, `netstandard1.2' is an actual framework.
+Note: `netstandard` isn't actually a framework, but a prototype for one. It is used as a short-hand. For example, `netstandard1.2` is an actual framework.
 
 Versioning
 ----------

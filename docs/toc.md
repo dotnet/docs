@@ -41,7 +41,7 @@
 ## [🔧 .NET Core Versioning](core-concepts/versioning.md)
 ## [🔧 .NET Core Servicing](core-concepts/servicing.md)
 ## [.NET Core Development](core-concepts/development.md)
-### [Web applications (docs.asp.net)](https://docs.asp.net/en/latest/publishing/index.html)
+### [Web applications (docs.asp.net)](https://docs.asp.net/)
 ### [Console applications](core-concepts/console/index.md)
 #### [🔧 Overview](core-concepts/console/overview.md)
 #### [Writing Console Apps: An advanced step-by-step guide](core-concepts/console/cli-console-app-tutorial-advanced.md)

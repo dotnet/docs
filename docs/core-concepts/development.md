@@ -1,7 +1,7 @@
 # Developing with .NET Core
 
 * [Console applications](console/index.md)
-* [Web applications](web-apps/index.md)
+* [Web applications (docs.asp.net)](https://docs.asp.net/)
 * [Libraries](libraries/index.md)
     * [Overview](libraries/overview.md)
     * [Creating a class library with Cross Platform Tools](libraries/libraries-with-cli.md)

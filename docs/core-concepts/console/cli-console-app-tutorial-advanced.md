@@ -1,4 +1,4 @@
-# 🔧 Using the CLI tools to write console apps: Advanced step-by-step guide
+# 🔧 Writing .NET Core console apps using the CLI tools: An advanced step-by-step guide
 
 > **Note**
 > 

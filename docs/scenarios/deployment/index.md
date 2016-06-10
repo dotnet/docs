@@ -4,6 +4,6 @@
 *  [🔧 Deploying to a shared runtime](shared-runtime.md)
 *  [🔧 Deploying self-contained applications](self-contained-apps.md)
 *  [🔧 Deploying single binaries](single-binaries.md)
-*  [Deploying NuGet packages (docs.nuget.org)](http://docs.nuget.org/)
-*  [Deploying ASP.NET web applications (docs.asp.net)](https://docs.asp.net/en/latest/publishing/index.html)
+*  [Deploying NuGet packages](nuget-packages.md)
+*  [Deploying ASP.NET web applications](aspnet-applications.md)
 

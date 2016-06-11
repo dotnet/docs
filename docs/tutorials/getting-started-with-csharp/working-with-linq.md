@@ -53,7 +53,7 @@ thirteen values). You'll combine those source into a 52 card deck.
 Here's the query:
 
 ```cs
-var startingDeck = from s in `s()
+var startingDeck = from s in Suits()
                    from r in Ranks()
                    select new { Suit = s, Rank = r };
 ```

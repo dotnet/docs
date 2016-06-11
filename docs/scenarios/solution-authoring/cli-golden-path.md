@@ -56,7 +56,7 @@ We now have a built `Library.dll` file under `GoldenCLI/src/Library/bin/Debug/ne
     ```
     The `target` under `Library` is important so that the project is built using our `Library` project, and not some NuGet package with the same name.
 4. `dotnet restore`.
-5. Add `"testrunner": "xunit"` at the `project.json` file's top-level, after the dependencies section.
+5. Add `"testRunner": "xunit"` at the `project.json` file's top-level, after the dependencies section.
 6. Rename `Program.cs` to `LibraryTest.cs`, and replace its contents with:
     ```csharp
     using Library;

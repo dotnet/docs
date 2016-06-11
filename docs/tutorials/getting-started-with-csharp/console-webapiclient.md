@@ -464,8 +464,8 @@ again:
 Console.WriteLine(repo.LastPush);
 ```
 
-Your version should now match the finished version located [here](https://github.com/dotnet/core-docs/).
->note: I can't find a way to create a link to the blob until it's been merged. Hmmm.
+Your version should now match the finished version located
+[here](https://github.com/dotnet/core-docs/tree/master/docs/tutorials/getting-started-with-csharp/console-webapiclient).
  
 # Conclusion
 

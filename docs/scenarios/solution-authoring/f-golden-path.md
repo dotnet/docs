@@ -82,7 +82,7 @@ You should now be able to `dotnet run` and get "Hello World!" and "42" output to
 5. Under `dependencies`, change the version of `Microsoft.FSharp.Core.netcore` to "1.0.0-alpha-160509".
 6. Remove `emitEntryPoint`.
 7. Rename the `Program.fs` file to `Test.fs`, and also do the rename in `project.json` under `buildOptions/compile/includeFiles`.
-8. Add `"testrunner": "xunit"` at the top-level of `project.json`.
+8. Add `"testrunner": "xunit"` at the `project.json` file's top-level, after the dependencies section.
 9. In `test.fs`, paste the following code:
     ```fs
     module Test

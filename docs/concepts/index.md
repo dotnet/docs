@@ -1,4 +1,5 @@
 # Learn the .NET Platform
 
 * [.NET Primer](primer.md)
-* [.NET Standard](net-standard.md)
+* [.NET Standard](dotnet-standard-library.md)
+* [Frameworks](frameworks.md)

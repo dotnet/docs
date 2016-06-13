@@ -47,7 +47,7 @@ run your application.
 
 # Adding New Dependencies
 One of the key design goals for .NET Core is to minimize the size of
-the .NET framework installation. The .NET Core Standard library contains
+the .NET framework installation. The .NET Core Application framework contains
 only the most common elements of the .NET full framework. This application
 needs more libraries for some of its features. You'll add those
 dependencies into your project.json file. You'll need to add the
@@ -60,20 +60,23 @@ see one line that looks similar to this:
 
 ```
 "dependencies": {
-  "NETStandard.Library": "1.0.0-rc2-23704"
+    "Microsoft.NETCore.App": {
+        "type": "platform",
+        "version": "1.0.0-rc2-3002702"
+    }
 },
-
 ```
-
-> Note: The actual version of the .NET Standard Library may be different.
 
 You'll add two lines to this section to include the two new libraries:
 
 ```
 "dependencies": {
-  "NETStandard.Library": "1.0.0-rc2-23704",
-  "System.Net.Http": "4.0.1-rc2-23704",
-  "System.Runtime.Serialization.Json": "4.0.1-rc2-23704"
+   "Microsoft.NETCore.App": {
+        "type": "platform"
+        "version": "1.0.0-rc2-3002702",
+    },
+    "System.Runtime.Serialization.Json": "4.0.2-rc2-24027",
+    "System.Runtime.Serialization.Primitives": "4.1.1-rc2-24027"
 },
 ```
 
@@ -81,7 +84,7 @@ Most code editors will provide completion for different versions of these
 libraries. You'll usually want to use the latest version of any package
 that you add. However, it is important to make sure that the versions
 of all packages match, and that they also match the version of the .NET
-Standard Library.
+Core Application framework.
 
 After you've made these changes, you should run "dotnet restore" again so
 that those packages are installed on your system.
@@ -464,8 +467,8 @@ again:
 Console.WriteLine(repo.LastPush);
 ```
 
-Your version should now match the finished version located [here](https://github.com/dotnet/core-docs/).
->note: I can't find a way to create a link to the blob until it's been merged. Hmmm.
+Your version should now match the finished version located
+[here](https://github.com/dotnet/core-docs/tree/master/docs/tutorials/getting-started-with-csharp/console-webapiclient).
  
 # Conclusion
 

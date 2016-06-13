@@ -5,7 +5,7 @@ By [Bill Wagner](https://github.com/BillWagner)
 # Building Expression Trees
 
 All the expression trees you've seen so far have been created
-by the C# compiler. All you had to do was create a `LambdaExpression`
+by the C# compiler. All you had to do was create a lambda expression
 that was assigned to a variable typed as an `Expression<Func<T>>` or
 some similar type. That's not the only way to create an expression
 tree. For many scenarios you may find that you need to build an

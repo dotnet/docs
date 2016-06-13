@@ -1,4 +1,4 @@
-[Previous -- Interpreting Expression Trees](expression-trees-interpreting.md)
+[Previous -- Framework Types Supporting Expression Trees](expression-classes.md)
 
 By [Bill Wagner](https://github.com/BillWagner)
 
@@ -197,4 +197,4 @@ doesn't happen, the errors are very predictable, and they will
 be caught in your first tests of any code using the expression
 trees.
 
-[Next -- Building Expressions](expression-trees-building.md)
+[Next -- Interpreting Expressions](expression-trees-interpreting.md)

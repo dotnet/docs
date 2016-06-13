@@ -97,19 +97,12 @@ var sum = Expression.Add(xSquared, ySquared);
 ```
 
 Next, you need to create a method call expression for the call to
-`Math.Sqrt`.  This requires creating an expression that calls
-`Math.Sqrt`, and then updating that expression so that the
-arguments represent the sum of `xSquared` and `ySquared`:
+`Math.Sqrt`.
 
 ```cs
-Expression<Func<double, double>> sqrt = (x) => Math.Sqrt(x);
-var methodCall = sqrt.Body as MethodCallExpression;
-var distance = methodCall.Update(default(Expression), new List<Expression> { sum });
+var sqrtMethod = typeof(Math).GetMethod("Sqrt", new[] { typeof(double) });
+var distance = Expression.Call(sqrtMethod, sum);
 ```
-
-> Those familiar with the Reflection APIs may wonder why I didn't use
-> the Reflection APIs to retrieve the `MethodInfo` object for the `Math.Sqrt`
-> method. The answer is simple: that method is not available on .NET Core. 
 
 And  then finally, you put the method call into a lambda expression,
 and make sure to define the arguments to the lambda expression:
@@ -131,9 +124,7 @@ you can use them in your expression tree wherever you need.
 Second, you need to use a subset of the Reflection APIs to create a `MethodInfo` object
 so that you can create an expression tree to access that method. You must limit
 yourself to the subset of the Reflection APIs that are available on the .NET Core platform. Again,
-these techniques will extend to other expression trees. You'll have to create a
-delegate that calls the method you want, and retrieve the `MethodInfo` object
-from that expression.
+these techniques will extend to other expression trees.
 
 ## Building Code In Depth
 

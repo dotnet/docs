@@ -17,7 +17,7 @@ to executable intermediate language (IL). (Think about what it would mean
 to directly execute a `ConstantExpression`. Would it mean
 anything useful?) Any expression tree that is a `LamdbaExpression`,
 or a type derived from `LambdaExpression` can be converted to IL.
-The expression type `Expression<TDelegate> where TDelegate : delegate`
+The expression type `Expression<TDelegate>`
 is the only concrete example in the .NET Core libraries. It's used
 to represent an expression that maps to any delegate type. Because
 this type maps to a delegate type, .NET can examine

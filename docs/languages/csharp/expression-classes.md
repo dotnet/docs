@@ -38,17 +38,12 @@ Expression<Func<int, int>> addFive = (num) => num + 5;
 
 if (addFive.NodeType == ExpressionType.Lambda)
 {
-    var lambdaExp = addFive as LambdaExpression;
+    var lambdaExp = (LambdaExpression)addFive;
 
-    var arg = lambdaExp.Parameters.First();
+    var parameter = lambdaExp.Parameters.First();
 
-    if (arg.NodeType == ExpressionType.Parameter)
-    {
-        var parameter = arg as ParameterExpression;
-
-        Console.WriteLine(parameter.Name);
-        Console.WriteLine(parameter.Type.ToString());
-    }
+    Console.WriteLine(parameter.Name);
+    Console.WriteLine(parameter.Type);
 }
 ```
 

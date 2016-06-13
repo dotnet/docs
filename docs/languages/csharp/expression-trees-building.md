@@ -5,7 +5,7 @@ By [Bill Wagner](https://github.com/BillWagner)
 # Building Expression Trees
 
 All the expression trees you've seen so far have been created
-by the C# compiler. All you had to do was create a `LambdaExpression`
+by the C# compiler. All you had to do was create a lambda expression
 that was assigned to a variable typed as an `Expression<Func<T>>` or
 some similar type. That's not the only way to create an expression
 tree. For many scenarios you may find that you need to build an
@@ -97,19 +97,12 @@ var sum = Expression.Add(xSquared, ySquared);
 ```
 
 Next, you need to create a method call expression for the call to
-`Math.Sqrt`.  This requires creating an expression that calls
-`Math.Sqrt`, and then updating that expression so that the
-arguments represent the sum of `xSquared` and `ySquared`:
+`Math.Sqrt`.
 
 ```cs
-Expression<Func<double, double>> sqrt = (x) => Math.Sqrt(x);
-var methodCall = sqrt.Body as MethodCallExpression;
-var distance = methodCall.Update(default(Expression), new List<Expression> { sum });
+var sqrtMethod = typeof(Math).GetMethod("Sqrt", new[] { typeof(double) });
+var distance = Expression.Call(sqrtMethod, sum);
 ```
-
-> Those familiar with the Reflection APIs may wonder why I didn't use
-> the Reflection APIs to retrieve the `MethodInfo` object for the `Math.Sqrt`
-> method. The answer is simple: that method is not available on .NET Core. 
 
 And  then finally, you put the method call into a lambda expression,
 and make sure to define the arguments to the lambda expression:
@@ -131,9 +124,7 @@ you can use them in your expression tree wherever you need.
 Second, you need to use a subset of the Reflection APIs to create a `MethodInfo` object
 so that you can create an expression tree to access that method. You must limit
 yourself to the subset of the Reflection APIs that are available on the .NET Core platform. Again,
-these techniques will extend to other expression trees. You'll have to create a
-delegate that calls the method you want, and retrieve the `MethodInfo` object
-from that expression.
+these techniques will extend to other expression trees.
 
 ## Building Code In Depth
 
@@ -180,15 +171,15 @@ var block = Expression.Block(
 );
 
 // Creating a method body.
-BlockExpression body= Expression.Block(
+BlockExpression body = Expression.Block(
     new[] { result },
-        initializeResult,
-        Expression.Loop(
-            Expression.IfThenElse(
-                Expression.GreaterThan(nArgument, Expression.Constant(1)),
-                block,
-                Expression.Break(label, result)
-            ),
+    initializeResult,
+    Expression.Loop(
+        Expression.IfThenElse(
+            Expression.GreaterThan(nArgument, Expression.Constant(1)),
+            block,
+            Expression.Break(label, result)
+        ),
         label
     )
 );
@@ -200,7 +191,8 @@ we'd like to avoid in our everyday coding tasks.
 
 For this section, I've also updated the visitor code to visit every node in this expression
 tree and write out information about the nodes that are created in this sample. You can see
-the code in the samples section. You can experiment for yourself: build it and run the samples.
+the code in [the samples section](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/expression-trees).
+You can experiment for yourself: build it and run the samples.
 
 ## Examining the APIs
 

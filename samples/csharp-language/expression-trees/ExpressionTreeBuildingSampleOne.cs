@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
 
 using ExpressionVisitor;
 
@@ -27,9 +28,8 @@ namespace ExpressionTreeSamples
             var ySquared = Expression.Multiply(yParameter, yParameter);
             var sum = Expression.Add(xSquared, ySquared);
 
-            Expression<Func<double, double>> sqrt = (x) => Math.Sqrt(x);
-            var methodCall = sqrt.Body as MethodCallExpression;
-            var distance = methodCall.Update(default(Expression), new List<Expression> { sum });
+            var sqrtMethod = typeof(Math).GetMethod("Sqrt", new[] { typeof(double) });
+            var distance = Expression.Call(sqrtMethod, sum);
 
             var distanceLambda = Expression.Lambda(
                 distance,

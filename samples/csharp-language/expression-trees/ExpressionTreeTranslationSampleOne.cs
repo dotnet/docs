@@ -25,13 +25,14 @@ namespace ExpressionTreeSamples
            if (original.NodeType == ExpressionType.Constant)
            {
                return Expression.Multiply(original, Expression.Constant(10));
-           } else if (original.NodeType == ExpressionType.Add)
-            {
-                var binaryExpression = original as BinaryExpression;
-                return Expression.Add(
-                    ReplaceNodes(binaryExpression.Left),
-                    ReplaceNodes(binaryExpression.Right));
-            }
+           }
+           else if (original.NodeType == ExpressionType.Add)
+           {
+               var binaryExpression = (BinaryExpression)original;
+               return Expression.Add(
+                   ReplaceNodes(binaryExpression.Left),
+                   ReplaceNodes(binaryExpression.Right));
+           }
            return original;
        }
     }

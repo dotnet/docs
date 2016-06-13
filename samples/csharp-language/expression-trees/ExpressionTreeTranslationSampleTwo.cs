@@ -24,8 +24,8 @@ namespace ExpressionTreeSamples
             // Major simplification: Assume every binary expression is an addition.
             aggregate = (exp) =>
                 exp.NodeType == ExpressionType.Constant ?
-                (int)(exp as ConstantExpression).Value :
-                aggregate((exp as BinaryExpression).Left) + aggregate((exp as BinaryExpression).Right);
+                (int)((ConstantExpression)exp).Value :
+                aggregate(((BinaryExpression)exp).Left) + aggregate(((BinaryExpression)exp).Right);
 
             var theSum = aggregate(sum);
             Console.WriteLine(theSum);

@@ -6,9 +6,9 @@
 The following characteristics best define .NET Core:
 
 - **Flexible deployment:** app-local or side-by-side user- or machine-wide installation.
-- **Cross-platform:** Runs on Windows, OS X and Linux; Can be ported to other OSes.
+- **Cross-platform:** Runs on Windows, OS X and Linux; can be ported to other OSes.
 - **Compatibility:** .NET Core is compatible with .NET Framework and Xamarin platforms, via the [.NET Standard Library](../concepts/dotnet-standard-library.md).
-- **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses.
+- **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses. Documentation is licensed under [CC-BY](http://creativecommons.org/licenses/by/4.0/). .NET Core is a [.NET Foundation](http://www.dotnetfoundation.org/) project.
 
 Composition
 ===========
@@ -44,7 +44,7 @@ The [.NET Standard Library](../concepts/dotnet-standard-library.md) is an API sp
 Workloads
 ---------
 
-By itself, .NET Core includes a single application model: console apps, which are useful for tools, local services and console games. Additional application models were built on top of .NET Core to extend its functionality, such as:
+By itself, .NET Core includes a single application model: console apps, which are useful for tools, local services and text-based games. Additional application models were built on top of .NET Core to extend its functionality, such as:
 
 - [ASP.NET Core](http://asp.net)
 - [Windows 10 Universal Windows Platform (UWP)](https://developer.microsoft.com/windows)
@@ -101,9 +101,12 @@ The product is broken into several pieces, enabling the various parts to be adap
 
 People commonly ask how .NET Core is implemented in order to support multiple operating systems. They typically ask if there are separate implementations or if [conditional compilation](https://en.wikipedia.org/wiki/Conditional_compilation) is used. It's both, with a strong bias towards conditional compilation.
 
-You can see in the chart below that the vast majority of [CoreFX](https://github.com/dotnet/corefx) is platform-neutral code that is shared across all platforms. Windows and unix implementations are similar in size. Windows has a larger implementation since CoreFX implements some Windows-only features, such as [Microsoft.Win32.Registry](https://github.com/dotnet/corefx/tree/master/src/Microsoft.Win32.Registry) and [System.Security.Principal.Windows](https://github.com/dotnet/corefx/tree/master/src/System.Security.Principal.Windows) but does not yet implement any unix-only concepts. You will also see that the majority of the Linux and OS X implementations are shared across a unix implementation, while the Linux- and OS X-specific implementations are roughly similar in size.
+You can see in the chart below that the vast majority of [CoreFX](https://github.com/dotnet/corefx) is platform-neutral code that is shared across all platforms. Platform-neutral code can be implemented as a single portable assembly that be used on all platforms.
 
 ![CoreFX: Lines of Code per Platform](../images/corefx-platforms-loc.png)
+
+Windows and unix implementations are similar in size. Windows has a larger implementation since CoreFX implements some Windows-only features, such as [Microsoft.Win32.Registry](https://github.com/dotnet/corefx/tree/master/src/Microsoft.Win32.Registry) but does not yet implement any unix-only concepts. You will also see that the majority of the Linux and OS X implementations are shared across a unix implementation, while the Linux- and OS X-specific implementations are roughly similar in size.
+
 
 There are a mix of platform-specific and platform-neutral libraries in .NET Core. You can see the pattern in a few examples:
 
@@ -124,7 +127,7 @@ The .NET platform was first announced by Microsoft in 2000 and then evolved from
 The major differences between .NET Core and the .NET Framework: 
 
 - **App-models** -- .NET Core does not support all the .NET Framework app-models, in part because many of them are built on Windows technologies, such as WPF (built on top of DirectX). The console and ASP.NET Core app-models are supported by both .NET Core and .NET Framework. 
-- **APIs** -- .NET Core contains many of the same, but fewer, APIs as the .NET Framework, and with a different factoring (assembly names are different; type shape differs in key cases). These differences currently typically require changes to port source to .NET Core. We intend to make the .NET Core API the same as the .NET Framework BCL API over time.
+- **APIs** -- .NET Core contains many of the same, but fewer, APIs as the .NET Framework, and with a different factoring (assembly names are different; type shape differs in key cases). These differences currently typically require changes to port source to .NET Core. .NET Core implements the [.NET Standard Library](../concepts/dotnet-standard-library.md) API, which will grow to include more of the .NET Framework BCL API over time.
 - **Subsystems** -- .NET Core implements a subset of the subsystems in the .NET Framework, with the goal of a simpler implementation and programming model. For example, Code Access Security (CAS) is not supported, while reflection is supported.
 - **Platforms** -- The .NET Framework supports Windows and Windows Server while .NET Core also supports OS X and Linux.
 - **Open Source** -- .NET Core is open source, while a [read-only subset of the .NET Framework](https://github.com/microsoft/referencesource) is open source.
@@ -139,7 +142,7 @@ Comparison with Mono
 The major differences between .NET Core and Mono:
 
 - **App-models** -- Mono supports a subset of the .NET Framework app-models (for example, Windows Forms) and some additional ones (for example, [Xamarin.iOS](https://www.xamarin.com/platform)) through the Xamarin product. .NET Core doesn't support these.
-- **APIs** -- Mono supports a [large subset](http://docs.go-mono.com/?link=root%3a%2fclasslib) of the .NET Framework APIs, using the same assembly names and factoring. .NET Core will support this same subset over time.
+- **APIs** -- Mono supports a [large subset](http://docs.go-mono.com/?link=root%3a%2fclasslib) of the .NET Framework APIs, using the same assembly names and factoring.
 - **Platforms** -- Mono supports many platforms and CPUs.
 - **Open Source** -- Mono and .NET Core both use the MIT license and are .NET Foundation projects.
 - **Focus** -- The primary focus of Mono in recent years is mobile platforms, while .NET Core is focused on cloud workloads.

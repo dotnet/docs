@@ -93,7 +93,7 @@ code.
 The APIs for Expression Trees enable you to create trees that represent almost any
 valid code construct. However, to keep things as simple as possible, some C# idioms
 cannot be created in an expression tree. One example is asynchronous expressions (using
-the `async` and `await` keywords. If your needs require asynchronous algorithms, you would need
+the `async` and `await` keywords). If your needs require asynchronous algorithms, you would need
 to manipulate the `Task` objects directly, rather than rely on the compiler support. Another
 is in creating loops. Typically, you create these by using `for`, `foreach`, `while` or `do`
 loops. As you'll see [later in this series](expression-trees-building.md), the APIs for
@@ -102,6 +102,6 @@ control repeating the loop.
 
 The one thing you can't do is modify an expression tree.  Expression Trees are immutable
 data structures. If you want to mutate (change) an expression tree, you must create a new tree
-is a copy of the original, but with your desired changes. 
+that is a copy of the original, but with your desired changes. 
 
 [Next -- Framework Types Supporting Expression Trees](expression-classes.md)

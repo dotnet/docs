@@ -18,13 +18,13 @@ to directly execute a `ConstantExpression`. Would it mean
 anything useful?) Any expression tree that is a `LamdbaExpression`,
 or a type derived from `LambdaExpression` can be converted to IL.
 The expression type `Expression<TDelegate> where TDelegate : delegate`
-is the only concreted example in the .NET Core libraries. It's used
+is the only concrete example in the .NET Core libraries. It's used
 to represent an expression that maps to any delegate type. Because
 this type maps to a delegate type, .NET can examine
 the expression, and generate IL for an appropriate delegate that
 matches the signature of the lambda expression. 
 
-In most cases, theis creates a simple mapping between an expression,
+In most cases, this creates a simple mapping between an expression,
 and its corresponding delegate. For example, an expression tree that
 is represented by `Expression<Func<int>>` would be converted to a delegate
 of the type `Func<int>`. For a lambda expression with any return type
@@ -64,7 +64,7 @@ return type.
 
 ## Execution and Lifetimes
 
-You execute the code by invoking the delegate created
+You execute the code by invoking the delegate created when
 you called `LamdbaExpression.Compile()`. You can see this above where
 `add.Compile()` returns a delegate. Invoking that delegate, by calling
 `func()` executes the code.

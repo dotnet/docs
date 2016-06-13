@@ -7,9 +7,9 @@ The .NET Standard Library enables the following key scenarios:
 
 - Defines uniform set of BCL APIs for all .NET platforms to implement, independent of workload.
 - Enables developers to produce portable libraries that are usable across .NET runtimes, using this same set of APIs.
-- Reduces and hopefully eliminates conditional compliation of shared source due to .NET APIs, only for OS APIs.
+- Reduces and hopefully eliminates conditional compilation of shared source due to .NET APIs, only for OS APIs.
 
-The various .NET runtimes implement specific versions of the .NET Standard Libary. Each .NET runtime version advertises the highest .NET Standard version it supports, a statement that means it also supports previous versions. For example, the .NET Framework 4.6 implements the .NET Standard Library 1.3, which means that it exposes all APIs defined in .NET Standard Library versions 1.0 through 1.3. Similarly, the .NET Framework 4.6.2 implements .NET Standard Library 1.5, while .NET Core 1.0 implements the .NET Standard Library 1.6.
+The various .NET runtimes implement specific versions of the .NET Standard Library. Each .NET runtime version advertises the highest .NET Standard version it supports, a statement that means it also supports previous versions. For example, the .NET Framework 4.6 implements the .NET Standard Library 1.3, which means that it exposes all APIs defined in .NET Standard Library versions 1.0 through 1.3. Similarly, the .NET Framework 4.6.2 implements .NET Standard Library 1.5, while .NET Core 1.0 implements the .NET Standard Library 1.6.
 
 .NET Platforms Support
 ======================
@@ -56,14 +56,19 @@ Differences:
 Specification
 =============
 
-The .NET Standard Library spec is a standardized set of APIs.The spec is maintained by .NET runtime implementors, specifically Microsoft (includes .NET Framework, .NET Core and Mono) and Unity. A public feedback process is used as part of establishing new .NET Standard Library versions.
+The .NET Standard Library spec is a standardized set of APIs. The spec is maintained by .NET runtime implementors, specifically Microsoft (includes .NET Framework, .NET Core and Mono) and Unity. A public feedback process is used as part of establishing new .NET Standard Library versions.
 
 Official Artifacts
 ------------------
 
 The official spec is a set of .cs files that define the APIs that are part of the standard. The [ref directory](https://github.com/dotnet/corefx/tree/master/src/System.Runtime/ref) for each [component](https://github.com/dotnet/corefx/tree/master/src) defines the .NET Standard Library APIs. While the ref artifacts reside in the [CoreFX repo](https://github.com/dotnet/corefx), they are not .NET Core specific.
 
-The [NETStandard.Library](https://github.com/dotnet/corefx/blob/master/pkg/NETStandard.Library/NETStandard.Library.packages.targets) metapackage describes the set of libraries that define (in part) one or more .NET Standard Library versions.
+The [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) metapackage ([source](https://github.com/dotnet/corefx/blob/master/pkg/NETStandard.Library/NETStandard.Library.packages.targets)) describes the set of libraries that define (in part) one or more .NET Standard Library versions.
+
+A given component, like System.Runtime, describes:
+
+- Part of .NET Standard Library (just it's scope).
+- Multiple versions of .NET Standard Library, for that scope.
 
 Derivative artifacts are provided to enable more convenient reading and to enable certain developer scenarios (for example, using a compiler).
 

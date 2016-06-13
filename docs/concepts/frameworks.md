@@ -31,7 +31,7 @@ You can refer to a .NET platform or runtime.
 
 **Referring to a Framework**
 
-You can refer to a framework or targeting of a framwork using long- or short-forms of the TFM. Both are equally valid in the general case.
+You can refer to a framework or targeting of a framework using long- or short-forms of the TFM. Both are equally valid in the general case.
 
 - `.NETFramework,Version=4.6.1`
 - `net461`

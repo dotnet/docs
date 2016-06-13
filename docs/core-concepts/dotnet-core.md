@@ -1,12 +1,12 @@
 .NET Core
 =========
 
-.NET Core is a general purpose development platform maintained by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core). It is cross-platform, supporting Windows, OS X and Linux and can be used in device, cloud and embedded/IoT scenarios. The [supported Operating Systems (OS)](https://github.com/dotnet/core/blob/master/roadmap.md), CPUs and application scenarios will grow over time, provided by Microsoft, other companies and individuals.
+.NET Core is a general purpose development platform maintained by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core). It is cross-platform, supporting Windows, macOS and Linux and can be used in device, cloud and embedded/IoT scenarios. The [supported Operating Systems (OS)](https://github.com/dotnet/core/blob/master/roadmap.md), CPUs and application scenarios will grow over time, provided by Microsoft, other companies and individuals.
 
 The following characteristics best define .NET Core:
 
 - **Flexible deployment:** app-local or side-by-side user- or machine-wide installation.
-- **Cross-platform:** Runs on Windows, OS X and Linux; can be ported to other OSes.
+- **Cross-platform:** Runs on Windows, macOS and Linux; can be ported to other OSes.
 - **Compatibility:** .NET Core is compatible with .NET Framework and Xamarin platforms, via the [.NET Standard Library](../concepts/dotnet-standard-library.md).
 - **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses. Documentation is licensed under [CC-BY](http://creativecommons.org/licenses/by/4.0/). .NET Core is a [.NET Foundation](http://www.dotnetfoundation.org/) project.
 
@@ -32,7 +32,7 @@ The C# Roslyn compiler and the .NET Core tools are or can be integrated into sev
 
 .NET Core can be thought of as a cross-platform version of the .NET Framework, at the layer of the .NET Framework Base Class Libraries (BCL). It implements the [.NET Standard Library](../concepts/dotnet-standard-library.md) specification. .NET Core provides a subset of the APIs that are available in the .NET Framework or Mono/Xamarin. In some cases, types are not fully implemented (some members are not available or have been moved).
 
-The focus of .NET Core 1.0 has been "bringup" of the platform. Post .NET Core 1.0, there will be a focus on compatibility to make it easier to take advantage of .NET Core with existing .NET Framework and Mono codebases.
+Look at the [.NET Core roadmap](https://github.com/dotnet/core/blob/master/roadmap.md) to learn more about the plan to expand the .NET Core BCL API.
 
 Relationship to the .NET Standard Library
 -----------------------------------------
@@ -84,7 +84,7 @@ Architecture
 Environments
 ------------
 
-.NET Core is supported by Microsoft on Windows, OS X and Linux. On Linux, Microsoft primarily supports .NET Core running on Red Hat Enterprise Linux (RHEL) and Debian distribution families.
+.NET Core is supported by Microsoft on Windows, macOS and Linux. On Linux, Microsoft primarily supports .NET Core running on Red Hat Enterprise Linux (RHEL) and Debian distribution families.
 
 .NET Core currently supports X64 CPUs. On Windows, X86 is also supported. ARM64 and ARM32 are in progress.
 
@@ -105,7 +105,7 @@ You can see in the chart below that the vast majority of [CoreFX](https://github
 
 ![CoreFX: Lines of Code per Platform](../images/corefx-platforms-loc.png)
 
-Windows and unix implementations are similar in size. Windows has a larger implementation since CoreFX implements some Windows-only features, such as [Microsoft.Win32.Registry](https://github.com/dotnet/corefx/tree/master/src/Microsoft.Win32.Registry) but does not yet implement any unix-only concepts. You will also see that the majority of the Linux and OS X implementations are shared across a unix implementation, while the Linux- and OS X-specific implementations are roughly similar in size.
+Windows and unix implementations are similar in size. Windows has a larger implementation since CoreFX implements some Windows-only features, such as [Microsoft.Win32.Registry](https://github.com/dotnet/corefx/tree/master/src/Microsoft.Win32.Registry) but does not yet implement any unix-only concepts. You will also see that the majority of the Linux and macOS implementations are shared across a unix implementation, while the Linux- and macOS-specific implementations are roughly similar in size.
 
 
 There are a mix of platform-specific and platform-neutral libraries in .NET Core. You can see the pattern in a few examples:
@@ -129,7 +129,7 @@ The major differences between .NET Core and the .NET Framework:
 - **App-models** -- .NET Core does not support all the .NET Framework app-models, in part because many of them are built on Windows technologies, such as WPF (built on top of DirectX). The console and ASP.NET Core app-models are supported by both .NET Core and .NET Framework. 
 - **APIs** -- .NET Core contains many of the same, but fewer, APIs as the .NET Framework, and with a different factoring (assembly names are different; type shape differs in key cases). These differences currently typically require changes to port source to .NET Core. .NET Core implements the [.NET Standard Library](../concepts/dotnet-standard-library.md) API, which will grow to include more of the .NET Framework BCL API over time.
 - **Subsystems** -- .NET Core implements a subset of the subsystems in the .NET Framework, with the goal of a simpler implementation and programming model. For example, Code Access Security (CAS) is not supported, while reflection is supported.
-- **Platforms** -- The .NET Framework supports Windows and Windows Server while .NET Core also supports OS X and Linux.
+- **Platforms** -- The .NET Framework supports Windows and Windows Server while .NET Core also supports macOS and Linux.
 - **Open Source** -- .NET Core is open source, while a [read-only subset of the .NET Framework](https://github.com/microsoft/referencesource) is open source.
 
 While .NET Core is unique and has significant differences to the .NET Framework and other .NET platforms, it is straightforward to share code, using either source or binary sharing techniques. 

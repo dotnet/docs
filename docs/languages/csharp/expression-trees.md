@@ -3,7 +3,7 @@
 # Expression Trees
 
 If you have used LINQ, you have experience with a rich library
-where `Func` and `Func<T>` are part of the API set. (If you are not familiar
+where the `Func` types are part of the API set. (If you are not familiar
 with LINQ, you probably want to read [the LINQ tutorial](linq.md) and
 the tutorial on [lambda expressions](lambda-expressions.md) before this one.)
 *Expression Trees* provide richer interaction with the arguments that

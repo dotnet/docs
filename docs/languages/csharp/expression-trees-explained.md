@@ -20,7 +20,7 @@ var sum = 1 + 2;
 ```
 If you were to analyze this as an expression tree, the tree contains several nodes.
 The outermost node is a variable declaration statement with assignment (`var sum = 1 + 2;`)
-That outermost node contains several child nodes: a variable declaration, an assignment expression, and an
+That outermost node contains several child nodes: a variable declaration, an assignment operator, and an
 expression representing the right hand side of the equals sign. That expression is further subdivided into
 expressions that represent the addition operation, and left and right operands of the addition.
 
@@ -34,15 +34,14 @@ Visually, the entire statement is a tree: You could start at the root node, and 
 each node in the tree to see the code that makes up the statement:
 
 - Variable declaration statement with assignment (`var sum = 1 + 2;`)
-    * Variable Declaration Expression (`var sum = 1 + 2`)
-        - Implicit variable type declaration (`var sum`)
-            * Implicit var keyword (`var`)
-            * Variable name declaration (`sum`)
-    * assignment expression (`=`)
-    * Binary Addition Expression (`1 + 2`)
-        - left operand (`1`)
-        - addition operator (`+`)
-        - right operand (`2`)
+    * Implicit variable type declaration (`var sum`)
+        - Implicit var keyword (`var`)
+        - Variable name declaration (`sum`)
+    * Assignment operator (`=`)
+    * Binary addition expression (`1 + 2`)
+        - Left operand (`1`)
+        - Addition operator (`+`)
+        - Right operand (`2`)
 
 This may look complicated, but it is very powerful. Following the same process, you can decompose
 much more complicated expressions. Consider this expression:
@@ -93,7 +92,7 @@ code.
 The APIs for Expression Trees enable you to create trees that represent almost any
 valid code construct. However, to keep things as simple as possible, some C# idioms
 cannot be created in an expression tree. One example is asynchronous expressions (using
-the `async` and `await` keywords. If your needs require asynchronous algorithms, you would need
+the `async` and `await` keywords). If your needs require asynchronous algorithms, you would need
 to manipulate the `Task` objects directly, rather than rely on the compiler support. Another
 is in creating loops. Typically, you create these by using `for`, `foreach`, `while` or `do`
 loops. As you'll see [later in this series](expression-trees-building.md), the APIs for
@@ -102,6 +101,6 @@ control repeating the loop.
 
 The one thing you can't do is modify an expression tree.  Expression Trees are immutable
 data structures. If you want to mutate (change) an expression tree, you must create a new tree
-is a copy of the original, but with your desired changes. 
+that is a copy of the original, but with your desired changes. 
 
 [Next -- Framework Types Supporting Expression Trees](expression-classes.md)

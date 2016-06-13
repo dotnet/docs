@@ -1,6 +1,8 @@
-# Interpreting Expressions
+[Previous -- Executing Expressions](expression-trees-execution.md)
 
 By [Bill Wagner](https://github.com/BillWagner)
+
+# Interpreting Expressions
 
 Now, let's write some code to examine the structure of an 
 *expression tree*. Every node in an expression tree will be
@@ -569,3 +571,5 @@ pay more attention to performance than I have.
 
 Even with those limitations, you should be well on your way to writing
 algorithms that read and understand expression trees.
+
+[Next -- Building Expressions](expression-trees-building.md)

@@ -27,7 +27,7 @@
 ### [How to trim your package dependencies](scenarios/library-authoring/trimming.md)
 # [.NET Core concepts](core-concepts/index.md)
 ## [.NET Core](core-concepts/dotnet-core.md)
-## [.NET Core App types](app-types.md)
+## [.NET Core App types](core-concepts/app-types.md)
 ## [.NET Core Packages](core-concepts/packages.md)
 ## [.NET Core Versioning](core-concepts/versioning.md)
 ## [.NET Core SDK](core-concepts/core-sdk/index.md)

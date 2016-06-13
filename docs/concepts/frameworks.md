@@ -23,20 +23,20 @@ There are multiple ways to refer to frameworks in written form, most of which ar
 
 Using .NET Framework 4.6.1 as an example, the following forms can be used:
 
-*Referring to the product*
+**Referring to a product**
 
 You can refer to a .NET platform or runtime.
 
 - ".NET Framework 4.6.1"
 
-*Referring to a Framework*
+**Referring to a Framework**
 
 You can refer to a framework or targeting of a framwork using long- or short-forms of the TFM. Both are equally valid in the general case.
 
 - `.NETFramework,Version=4.6.1`
 - `net461`
 
-*Referring to a family of Frameworks*
+**Referring to a family of Frameworks**
 
 You can refer to a family of frameworks using long- or short-forms of the framework ID. Bother are equally valid in the general case.
 

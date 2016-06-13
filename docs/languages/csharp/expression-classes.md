@@ -5,7 +5,7 @@ By [Bill Wagner](https://github.com/BillWagner)
 # Framework Types Supporting Expression Trees
 There is a large list of classes in the .NET Core framework that work with Expression Trees.
 You can see the full
-list [here](https://msdn.microsoft.com/en-us/library/system.linq.expressions.expression.aspx).
+list [here](https://dotnet.github.io/api/System.Linq.Expressions.html).
 Rather than run through the full list, let's understand how the framework classes have been designed.
 
 In language design, an expression is a body of code that evaluates and returns a value. Expressions

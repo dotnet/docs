@@ -88,6 +88,7 @@
 # [Learn .NET](concepts/index.md)
 ## [The .NET Primer](concepts/primer.md)
 ## [.NET Standard](concepts/dotnet-standard-library.md)
+## [Frameworks](frameworks.md)
 ## [Overview of .NET implementations](concepts/editions-overview.md) 
 ## [🔧 Introduction to metadata in the .NET Platform](essentials/metadata.md)
 ## [🔧 Automatic memory management and garbage collection](essentials/gc.md)

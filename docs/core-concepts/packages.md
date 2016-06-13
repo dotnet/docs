@@ -4,7 +4,7 @@ Packages, Metapackages and Frameworks
 .NET Core is a platform made of NuGet packages. Some product experiences benefit from fine-grained definition of packages while others from course-grained. To accommodate this duality, the product is distributed as a fine-grained set of packages and then described in courser chunks with a package type informally called a "metapackage".
 
 Each of the .NET Core packages support being run on multiple .NET runtimes, represented as
-frameworks. Some of those frameworks are traditional frameworks, like `net46`, representing the .NET Framewo Another set is new frameworks that can be thought of as "package-based frameworks", which establish a new model for defining frameworks. These package-based frameworks are entirely formed and defined as packages, forming a strong relationship between packages and frameworks.
+frameworks. Some of those frameworks are traditional frameworks, like `net46`, representing the .NET Framework. Another set is new frameworks that can be thought of as "package-based frameworks", which establish a new model for defining frameworks. These package-based frameworks are entirely formed and defined as packages, forming a strong relationship between packages and frameworks.
 
 Packages
 ========
@@ -111,7 +111,7 @@ It is useful to contrast the first two of these frameworks, since they are examp
 
 The `.NETFramework,Version=4.6` framework represents the available APIs in the .NET Framework 4.6. You can produce libraries  compiled with the .NET Framework 4.6 reference assemblies and then distribute those libraries in NuGet packages in a net46 lib folder. It will be used for apps that target the .NET Framework 4.6 or that are compatible with it. This is how all frameworks have traditionally worked.
 
-The `.NETStandard,Version=1.3` framework is a package-based framework. It relies on packages that target the framework to define and expose APIs in terms of the framework. In the absense of packages that target the framework, the framework is effectively empty.
+The `.NETStandard,Version=1.3` framework is a package-based framework. It relies on packages that target the framework to define and expose APIs in terms of the framework.
 
 Package-based Frameworks
 ========================

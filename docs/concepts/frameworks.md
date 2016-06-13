@@ -14,6 +14,8 @@ The table below defines the set of frameworks that you can use, how they are ref
 | .NET Core Application | 1.0 | .NETCoreApp,Version=1.0 | netcoreapp1.0 | 1.5 | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App)|
 | .NET Framework | 4.6.1 | .NETFramework,Version=4.6.1 | net461 | 1.4 | N/A |
 
+Note: These framework versions are the latest stable versions. There may be pre-released versioned as well that are not described by this table.
+
 Writing about Frameworks
 ========================
 

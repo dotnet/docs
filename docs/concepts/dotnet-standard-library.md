@@ -18,7 +18,7 @@ You can see the complete set of .NET runtimes that support the .NET Standard Lib
 
 | Platform Name | Alias |  |  |  |  |  | | |
 | :---------- | :--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |
-|.NET Platform Standard | netstandard | 1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 |
+|.NET Standard | netstandard | 1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 |
 |.NET Core|netcoreapp|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|1.0|
 |.NET Framework|net|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|4.6.3|
 |||&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|4.6.2|
@@ -75,11 +75,9 @@ Package Representation
 
 The primary distribution vehicle for the .NET Standard Library reference assemblies is [NuGet packages](../core-concepts/packages.md). Implementations will be delivered in a variety of ways, appropriate for each .NET runtime.
 
-NuGet packages target one of more frameworks. The .NET Standard Library packages target the ".NET Standard" framework, which is represented by the the `.NETStandard` Target Framework Moniker (TFM) (for example, `.NETStandard,Version=1.4`) and the `netstandard` NuGet folder (for example, `netstandard1.4`). Libraries that are intended to run on multiple runtimes should target this framework. 
+NuGet packages target one of more [frameworks](frameworks.md). The .NET Standard Library packages target the ".NET Standard" framework. You can target the .NET Standard Framework using the `netstandard` [compact TFM](../concepts/frameworks.md) (for example, `netstandard1.4`). Libraries that are intended to run on multiple runtimes should target this framework. 
 
-The `NETStandard.Library` metapackage references the complete set of NuGet packages that define the .NET Standard Library.  The most common way to target `.NETStandard` is by referencing this metapackage. It describes and provides access to the ~40 .NET  libraries and associated APIs that define the .NET Standard Library. You can reference additional packages that target `.NETStandard` to get access to additional APIs. 
-
-The `NETStandard.Library` metapackage doesn't define a framework of its own, but exposes the set of frameworks defined by the packages it references, including `.NETStandard`. Similarly, the `.NETStandard` framework does not expose any APIs on its own, but relies on packages that expose `.NETStandard` assets to define the framework.
+The `NETStandard.Library` metapackage references the complete set of NuGet packages that define the .NET Standard Library.  The most common way to target `netstandard` is by referencing this metapackage. It describes and provides access to the ~40 .NET  libraries and associated APIs that define the .NET Standard Library. You can reference additional packages that target `netstandard` to get access to additional APIs. 
 
 Versioning
 ----------
@@ -88,7 +86,7 @@ The spec is not singular, but an incrementally growing and linearly versioned se
 
 The .NET Standard Library is not specific to any one .NET runtime, nor does it match the versioning scheme of any of those runtimes.
 
-APIs added to any of the runtimes (such as, .NET Framework, .NET Core and Mono) can be considered as candidates to add to the specification, particularly if they are thought to be fundamental in nature. New [versions of the .NET Standard Library](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md#list-of-net-corefx-apis-and-their-associated-net-platform-standard-version) are created based on .NET runtime releases, enabling you to target new APIs from a .NET Standard PCL. The versioning mechanics are described in more detail, in terms of .NET Core, in [.NET Core Versioning](../core-concepts/versioning.md).
+APIs added to any of the runtimes (such as, .NET Framework, .NET Core and Mono) can be considered as candidates to add to the specification, particularly if they are thought to be fundamental in nature. New [versions of the .NET Standard Library](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md#list-of-net-corefx-apis-and-their-associated-net-platform-standard-version) are created based on .NET runtime releases, enabling you to target new APIs from a .NET Standard PCL. The versioning mechanics are described in more detail in [.NET Core Versioning](../core-concepts/versioning.md).
 
 .NET Standard Library versioning is important for usage. Given a .NET Standard Library version, you can use libraries that target that same or lower version. The following approach describes the workflow for using .NET Standard Library PCLs, specific to .NET Standard Library targeting.
 
@@ -102,11 +100,11 @@ PCL Compatibility
 The .NET Standard Library is compatible with a subset of PCL profiles. .NET Standard Library 1.0, 1.1 and 1.2 each overlap with a set of PCL profiles. This overlap was created for two reasons:
 
 - Enable .NET Standard-based PCLs to reference profile-based PCLs.
-- Enable profile-based PCLs to be packaged as `.NETStandard` PCLs.
+- Enable profile-based PCLs to be packaged as .NET Standard-based PCLs.
 
 Profile-based PCL compatibility is provided by the [Microsoft.NETCore.Portable.Compatibility](https://www.nuget.org/packages/Microsoft.NETCore.Portable.Compatibility) NuGet package. This dependency is required when referencing NuGet packages that contain profile-based PCLs.
 
-Profile-based PCLs packaged as `.NETStandard` are easier to consume than typically packaged profile-based PCLs in project.json. `.NETStandard` packaging will still be compatible for existing users.
+Profile-based PCLs packaged as `netstandard` are easier to consume than typically packaged profile-based PCLs in project.json. `netstandard` packaging is compatible with existing users.
 
 You can see the set of PCL profiles that are compatible with the .NET Standard: 
 
@@ -127,4 +125,4 @@ You can see the set of PCL profiles that are compatible with the .NET Standard:
 Targeting .NET Standard Library
 ===============================
 
-You can [build .NET Standard Libraries](../core-concepts/libraries/libraries-with-cli.md) using a combination of the `.NETStandard` framework and the NETStandard.Library metapackage. You can see examples of [targeting the .NET Standard Library with .NET Core tools](../core-concepts/packages.md).
+You can [build .NET Standard Libraries](../core-concepts/libraries/libraries-with-cli.md) using a combination of the `netstandard` framework and the NETStandard.Library metapackage. You can see examples of [targeting the .NET Standard Library with .NET Core tools](../core-concepts/packages.md).

@@ -44,14 +44,14 @@ namespace ExpressionTreeSamples
             // Creating a method body.
             BlockExpression body = Expression.Block(
                 new[] { result },
-                    initializeResult,
-                    Expression.Loop(
-                       Expression.IfThenElse(
-                           Expression.GreaterThan(nArgument, Expression.Constant(1)),
-                           block,
-                           Expression.Break(label, result)
-                       ),
-                   label
+                initializeResult,
+                Expression.Loop(
+                    Expression.IfThenElse(
+                        Expression.GreaterThan(nArgument, Expression.Constant(1)),
+                        block,
+                        Expression.Break(label, result)
+                    ),
+                    label
                 )
             );
 

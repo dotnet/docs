@@ -171,15 +171,15 @@ var block = Expression.Block(
 );
 
 // Creating a method body.
-BlockExpression body= Expression.Block(
+BlockExpression body = Expression.Block(
     new[] { result },
-        initializeResult,
-        Expression.Loop(
-            Expression.IfThenElse(
-                Expression.GreaterThan(nArgument, Expression.Constant(1)),
-                block,
-                Expression.Break(label, result)
-            ),
+    initializeResult,
+    Expression.Loop(
+        Expression.IfThenElse(
+            Expression.GreaterThan(nArgument, Expression.Constant(1)),
+            block,
+            Expression.Break(label, result)
+        ),
         label
     )
 );

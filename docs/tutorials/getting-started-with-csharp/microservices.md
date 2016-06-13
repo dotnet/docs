@@ -68,17 +68,19 @@ yeoman command in your favorite shell:
 
 This command prompts you to select what Type of application you want to
 create. For this microservice, you want the simplest, most lightweight
-web application possible, so select 'Empty Application'. The template
+web application possible, so select 'Empty Web Application'. The template
 will prompt you for a name. Select 'WeatherMicroservice'. 
 
-The template creates six files for you:
+The template creates eight files for you:
 
 * A .gitignore, customized for asp.net core applications.
 * A Startup.cs file. This contains the basis of the application.
+* A Program.cs file. This contains the entry point of the application.
 * A project.json file. This is the build file for the application.
 * A Dockerfile. This script creates a Docker image for the application.
-* A wwwroot/readme.md. This contains links to other asp.net core resources.
-* A wwwroot/web.config file. This contains basic configuration information.
+* A README.md. This contains links to other asp.net core resources.
+* A web.config file. This contains basic configuration information.
+* A Properties/launchSettings.json file. This contains debugging settings used by IDEs.
 
 Now you can run the template generated application. That's done using a series
 of tools from the command line. The `dotnet` command runs the tools necessary
@@ -106,32 +108,21 @@ browser and navigate to that page and see a "Hello World!" message.
 
 Now that you've built the application, let's look at how this functionality
 is implemented. There are two of the generated files that are particularly
-interesting at this point: project.json and startup.cs. 
+interesting at this point: project.json and Startup.cs. 
 
-Project.json contains information about the project. The three nodes you'll
-often work with are 'dependencies', 'commands' and 'frameworks'. The
+Project.json contains information about the project. The two nodes you'll
+often work with are 'dependencies' and 'frameworks'. The
 dependencies node lists all the packages that are needed for this application.
 At the moment, this is a small node, needing only the packages that run the
 web server.
-
-The 'commands' node lists the command that runs the web server. As a project
-grows, you'll add commands here to run unit tests, or perform other tasks. The
-web task starts the webserver.
 
 The 'frameworks' node specifies the versions and configurations of the .NET
 framework that will run this application.
 
 The application is implemented in Startup.cs. This file contains the startup
-class. Its `Main()` method starts the web server, and instructs the web
-server that the web application class is this Startup class:
+class.
 
-`public static void Main(string[] args) => Microsoft.AspNet.Hosting.WebApplication.Run<Startup>(args);`
-
-This method is a simple one-line method, so it utilizes the C# syntax for
-*expression bodied members*. The body of the method, instead of being enclosed
-in curly braces, is represented by the body of a lambda expression.
-
-The other two methods are called by the asp.net core infrastructure to configure
+The two methods are called by the asp.net core infrastructure to configure
 and run the application. The `ConfigureServices` method describes the services that are
 necessary for this application. You're building a lean microservice, so it doesn't
 need to configure any dependencies. The `Configure` method configures the handlers
@@ -303,9 +294,14 @@ list of dependencies:
 
 ```
   "dependencies": {
-    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
-    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
-    "Newtonsoft.Json": "8.0.4-beta1"
+    "Microsoft.NETCore.App": {
+      "version": "1.0.0-rc2-3002702",
+      "type": "platform"
+    },
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0-rc2-final",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc2-final",
+    "Newtonsoft.Json": "8.0.4-beta1",
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.0"
   },
 ``` 
 

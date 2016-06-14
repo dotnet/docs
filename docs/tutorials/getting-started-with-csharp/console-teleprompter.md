@@ -254,10 +254,12 @@ uses the `await` keyword. In order to do that, you need to add the `async`
 modifier to the method signature. This method returns a `Task`. Notice that
 there are no return statements that return a Task object. Instead, that
 `Task` object is created by code the compiler generates when you use the
-`await` operator. You can imagine that this method pauses when it reaches
-an `await`, and resumes when the awaited task completes. The method
-returns when execution must pause for an awaited `Task`. Calling code can
-monitor the returned task to determine when it has completed.
+`await` operator. You can imagine that this method returns when it reaches
+an `await`. The returned Task indicates that the work has not completed.
+The method resumes when the awaited task completes. When it has executed
+to completion, the returned `Task` indicates that it is complete.
+Calling code can
+monitor that returned task to determine when it has completed.
 
 You can call this new method in your Main program:
 

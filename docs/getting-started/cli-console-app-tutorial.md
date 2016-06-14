@@ -111,7 +111,7 @@ you'll build a Windows executable. If you are following these steps on a Mac, yo
 }
 ```
 
-See the full list of supported runtimes in the [RID catalog](../core-concepts/rid-catalog.html). 
+See the full list of supported runtimes in the [RID catalog](../core-concepts/rid-catalog.md). 
  
 After making those two changes you execute `dotnet restore`, followed by `dotnet build` to create the native executable. Then, you can run the generated
 native executable. 

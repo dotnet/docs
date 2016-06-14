@@ -6,7 +6,7 @@
     *  [Installing .NET Core on Windows](installing/installing-core-windows.md)
     *  [Installing .NET Core on Linux](installing/installing-core-linux.md)
     *  [Installing .NET Core on OS X](installing/installing-core-osx.md)    
-*  [Using the CLI tools to write console apps: A step-by-step guide](getting-started/cli-console-app-tutorial.md)
+*  [Using the CLI tools to write console apps: A step-by-step guide](cli-console-app-tutorial.md)
 *  [Setting up your integrated development environment (IDE)](devenv/index.md)
     *  [🔧 Development using Visual Studio 2015](devenv/using-visual-studio.md)
     *  [🔧 Development using Visual Studio Code](devenv/using-visual-studio-code.md)

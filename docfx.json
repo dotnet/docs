@@ -17,7 +17,7 @@
         {
           "files": [
             "corefx/src/**/src/**/*.csproj",
-            "coreclr/src/mscorlib/mscorlib.csproj"
+            "coreclr/src/mscorlib/System.Private.CoreLib.csproj"
           ],
           "exclude": [ "**/bin/**", "**/obj/**"],
           "cwd": ".."

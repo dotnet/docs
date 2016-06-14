@@ -559,9 +559,9 @@ capabilities.
 
 Even the last example recognizes a subset of the possible node types.
 You can still feed it many expressions that will cause it to fail.
-A full implementation (of which there are many
-[open source projects](https://github.com/search?utf8=%E2%9C%93&q=expression+tree+visitor))
-would handle all the possible node types.
+A full implementation is included in the .NET Standard Library
+under the name [ExpressionVisitor](https://dotnet.github.io/api/System.Linq.Expressions.ExpressionVisitor.html)
+and can handle all the possible node types.
 
 Finally, the library I used in this article was built for demonstration
 and learning. It's not optimized. I wrote it to make the structures

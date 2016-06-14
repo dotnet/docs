@@ -5,7 +5,7 @@ By [Bill Wagner](https://github.com/BillWagner)
 # Framework Types Supporting Expression Trees
 There is a large list of classes in the .NET Core framework that work with Expression Trees.
 You can see the full
-list [here](https://msdn.microsoft.com/en-us/library/system.linq.expressions.expression.aspx).
+list [here](https://dotnet.github.io/api/System.Linq.Expressions.html).
 Rather than run through the full list, let's understand how the framework classes have been designed.
 
 In language design, an expression is a body of code that evaluates and returns a value. Expressions
@@ -38,17 +38,12 @@ Expression<Func<int, int>> addFive = (num) => num + 5;
 
 if (addFive.NodeType == ExpressionType.Lambda)
 {
-    var lambdaExp = addFive as LambdaExpression;
+    var lambdaExp = (LambdaExpression)addFive;
 
-    var arg = lambdaExp.Parameters.First();
+    var parameter = lambdaExp.Parameters.First();
 
-    if (arg.NodeType == ExpressionType.Parameter)
-    {
-        var parameter = arg as ParameterExpression;
-
-        Console.WriteLine(parameter.Name);
-        Console.WriteLine(parameter.Type.ToString());
-    }
+    Console.WriteLine(parameter.Name);
+    Console.WriteLine(parameter.Type);
 }
 ```
 

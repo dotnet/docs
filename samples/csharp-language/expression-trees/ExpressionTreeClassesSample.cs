@@ -14,14 +14,12 @@ namespace ExpressionTreeSamples
 
             if (addFive.NodeType == ExpressionType.Lambda)
             {
-                var lambdaExp = addFive as LambdaExpression;
-                var arg = lambdaExp.Parameters.First();
-                if (arg.NodeType == ExpressionType.Parameter)
-                {
-                    var parameter = arg as ParameterExpression;
-                    Console.WriteLine(parameter.Name);
-                    Console.WriteLine(parameter.Type.ToString());
-                }
+                var lambdaExp = (LambdaExpression)addFive;
+
+                var parameter = lambdaExp.Parameters.First();
+
+                Console.WriteLine(parameter.Name);
+                Console.WriteLine(parameter.Type);
             }
         }
     }

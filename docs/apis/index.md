@@ -10,5 +10,4 @@
     * [How to: Use ForEach to Remove Items in a BlockingCollection](../essentials/collections/threadsafe/howtoUseForEachtoRemove.md)
     * [How to: Use Arrays of Blocking Collections in a Pipeline](../essentials/collections/threadsafe/howtoUseArraysofBlockingCollections.md)
     * [How to: Create an Object Pool by Using a ConcurrentBag](../essentials/collections/threadsafe/howtoCreateanObjectPool.md)
-*  [🔧 Numerical data](numerics/index.md)
 

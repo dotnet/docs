@@ -1,16 +1,16 @@
-# Writing Console Apps: A Step by Step Guide
+# Writing .NET Core console apps using the CLI tools: A step-by-step guide
 
-This guide will show you how to use the .NET CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.
+This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.
 
-If you're unfamiliar with the .NET CLI toolset, read [the overview](../core-sdk/sdk-overview.md).  It's also helpful to have an understanding of the [console app paradigm](paradigm.md).
+If you're unfamiliar with the .NET Core CLI toolset, read [the .NET Core SDK overview](../core-concepts/core-sdk/sdk-overview.md).  It's also helpful to have an understanding of the [console app paradigm](../core-concepts/console/overview.md).
 
 ## Prerequisites
 
-Before you begin, ensure you have the [latest .NET CLI tooling](http://dotnet.github.io/getting-started/).  You'll also need a text editor.
+Before you begin, ensure you have the [latest .NET Core CLI tooling](http://dotnet.github.io/getting-started/).  You'll also need a text editor.
 
 ## Hello, Console App!
 
-First, navigate to or create a new folder with a name you like.  "Hello" is the name chosen for the sample code, which can be found [here](https://github.com/dotnet/core-docs/samples/core-projects/console-apps/Hello).
+First, navigate to or create a new folder with a name you like.  "Hello" is the name chosen for the sample code, which can be found [here](https://github.com/dotnet/core-docs/tree/master/samples/core-projects/console-apps/Hello).
 
 Open up a command prompt and type the following:
 
@@ -24,7 +24,7 @@ Let's do a quick walkthrough:
 
 1. `$ dotnet new`
 
-   `dotnet new` creates an up-to-date `project.json` file with NuGet dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
+   [`dotnet new`](../core-concepts/core-sdk/cli/dotnet-new.md) creates an up-to-date `project.json` file with NuGet dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
    
    `project.json`:
    ```javascript
@@ -64,31 +64,31 @@ Let's do a quick walkthrough:
 
 2. `$ dotnet restore`
 
-   [`dotnet restore`](http://dotnet.github.io/docs/core-concepts/core-sdk/cli/dotnet-restore.html) calls into NuGet to restore the tree of dependencies. NuGet analyzes the `project.json` file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the `project.lock.json` file.  The `project.lock.json` file is necessary to be able to compile and run.
+   [`dotnet restore`](../core-concepts/core-sdk/cli/dotnet-restore.md) calls into NuGet to restore the tree of dependencies. NuGet analyzes the `project.json` file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the `project.lock.json` file.  The `project.lock.json` file is necessary to be able to compile and run.
    
    The `project.lock.json` file is a persisted and complete set of the graph of NuGet dependencies and other information describing an app.  This file is read by other tools, such as `dotnet build` and `dotnet run`, enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.
    
 3. `$ dotnet run`
 
-   [`dotnet run`](http://dotnet.github.io/docs/core-concepts/core-sdk/cli/dotnet-run.html) calls `dotnet build` to ensure that the build targes have been built, and then calls `dotnet <assembly.dll>` to run the target application.
+   [`dotnet run`](../core-concepts/core-sdk/cli/dotnet-run.md) calls `dotnet build` to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
    
 ```
 $ dotnet run
 Hello, World!
 ```
 
-You can also execute [`dotnet build`](http://dotnet.github.io/docs/core-concepts/core-sdk/cli/dotnet-build.html) to compile and the code without running the build console applications.
+You can also execute [`dotnet build`](../core-concepts/core-sdk/cli/dotnet-build.md) to compile and the code without running the build console applications.
 
 ### Building a self-contained application
 
-Let's try compiling a self-contained application instead of a portable application. You can read more about the [types of portability in .net core](http://dotnet.github.io/docs/core-concepts/app-types.html) to learn about the different application types, and how they are deployed.
+Let's try compiling a self-contained application instead of a portable application. You can read more about the [types of portability in .NET Core](../core-concepts/app-types.md) to learn about the different application types, and how they are deployed.
 
 You need to make some changes to your `project.json`
 file to direct the tools to build a self-contained application. You can see these in the
 [HelloNative](https://github.com/dotnet/core-docs/samples/core-projects/console-apps/HelloNative)
 project in the samples directory.
 
-The first change is to remove the `"type": "platform"` element from from all dependencies. 
+The first change is to remove the `"type": "platform"` element from all dependencies. 
 This project's only dependency so far is `"Microsoft.NETCore.App"`. The `dependencies` section should look like this:
 
 ```javascript
@@ -99,10 +99,10 @@ This project's only dependency so far is `"Microsoft.NETCore.App"`. The `depende
 },
 ```
 
-Next, you need to add a `runtime` node to specify all the target execution environments. For example, this
-runtimes node instructs the build system to creat executables for 64 bit Windows 10 and the 64 bit version of Mac OSX version 10.11.
+Next, you need to add a `runtimes` node to specify all the target execution environments. For example, the following
+`runtimes` node instructs the build system to create executables for the 64 bit version of Windows 10 and the 64 bit version of Mac OS X version 10.11.
 The build system will generate native executables for the current environment. If you are following these steps on a Windows machine,
-you'll build a Windows executable. If you are following these steps on a Mac, you'll build the OSX executable.
+you'll build a Windows executable. If you are following these steps on a Mac, you'll build the OS X executable.
 
 ```javascript
 "runtimes": {
@@ -111,23 +111,24 @@ you'll build a Windows executable. If you are following these steps on a Mac, yo
 }
 ```
 
-See the full list of supported runtimes in the [RID catalog](http://dotnet.github.io/docs/core-concepts/rid-catalog.html). 
+See the full list of supported runtimes in the [RID catalog](../core-concepts/rid-catalog.md). 
  
 After making those two changes you execute `dotnet restore`, followed by `dotnet build` to create the native executable. Then, you can run the generated
-native executable. The following shows the commands for Windows (including the subdirectory where the native executable
-gets generated.)
+native executable. 
+
+The following example shows the commands for Windows. The example shows where the native executable gets generated and assumes that the project directory is named HelloNative.
 
 ```
 $ dotnet restore 
 $ dotnet build 
-$ ./bin/Debug/netcoreapp1.0/win10-x64/HelloNative.exe
+$ .\bin\Debug\netcoreapp1.0\win10-x64\HelloNative.exe
 Hello World!
 ```
 
 You may notice that the native application takes slightly longer to build, but executes slightly faster. This behavior
 becomes more noticeable as the application grows.
 
-The build process gneerates several more files when your `project.json` creates a native build. These files
+The build process generates several more files when your `project.json` creates a native build. These files
 are created in `bin\Debug\netcoreapp1.0\<platform>` where `<platform>` is the RID chosen. In addition to the
 project's `HelloNative.dll` there is a `HelloNative.exe` that loads the runtime and starts the application.
 Note that the name of the generated application changed because the project directory's name has changed.  
@@ -139,10 +140,10 @@ all dependent DLLs and the framework to this sub directory. You can package that
 (or a container) and execute the application there. 
 
 Let's contrast that with the behavior of `dotnet publish` in the first Hello World sample. That application
-is a *portable application*, which is the default type of application for .NET core. A portable application
+is a *portable application*, which is the default type of application for .NET Core. A portable application
 requires that .NET Core is installed on the target machine. Portable applications can be built on one machine
-and executed anywhere. Native application must be built separately for each target machine. `dotnet publish`
-creates a directory that has the application's DLL, and any dependent dlls that are not part of the platorm
+and executed anywhere. Native applications must be built separately for each target machine. `dotnet publish`
+creates a directory that has the application's DLL, and any dependent dlls that are not part of the platform
 installation.
 
 ### Augmenting the program
@@ -189,11 +190,11 @@ namespace ConsoleApplication
 }
 ```
 
-And running the program:
+And running the program (assuming you're on Windows, and have changed the project directory name to Fibonacci):
 
 ```
 $ dotnet build
-$ ./bin/Debug/netcoreapp1.0/win10-x64/Fibonnaci.exe
+$ .\bin\Debug\netcoreapp1.0\win10-x64\Fibonacci.exe
 1: 0
 2: 1
 3: 1
@@ -243,7 +244,7 @@ Now the fun part: making the new file do something!
 
 ### Example: A Fibonacci Sequence Generator
 
-Let's say you want to build off of the previous fibonacci example by caching some fibonacci values and add some corecursive flair.  Your code might look something like this:
+Let's say you want to build off of the previous [Fibonacci example](https://github.com/dotnet/core-docs/tree/master/samples/core-projects/console-apps/Fibonacci) by caching some Fibonacci values and add some recursive flair.  Your code for a [better Fibonacci example](https://github.com/dotnet/core-docs/tree/master/samples/core-projects/console-apps/FibonacciBetter) might look something like this:
 
 ```csharp
 using System;
@@ -278,11 +279,11 @@ namespace NumberFun
 }
 ```
 
-Note that the use of `Dictionary<int, int>` and `IEnumerable<int>` means incorporating the `System.Collections`.
-The `Micrsoft.NetCore.App` package is a *metapackage* that contains many of the core
+Note that the use of `Dictionary<int, int>` and `IEnumerable<int>` means incorporating the `System.Collections` namespace.
+The `Microsoft.NetCore.App` package is a *metapackage* that contains many of the core
 assemblies from the .NET Framework. By including this metapackage, you've already included
 the `System.Collections.dll` assembly as part of your project. You can verify this by
-running `dotnet publish` and examining listing all the files that are part of the installed
+running `dotnet publish` and examining the files that are part of the installed
 package. You'll see `System.Collections.dll` in the list. 
 
 ```javascript
@@ -308,7 +309,7 @@ package. You'll see `System.Collections.dll` in the list.
 }
 ```
 
-Now adjust the `Main()` method in you `Program.cs`:
+Now adjust the `Main()` method in your `Program.cs` file as shown below. The example assumes that `Program.cs` has a `using System;` statement. If you have a `using static System.Console;` statement, remove `Console.` from `Console.WriteLine`.  
 
 ```csharp
 public static void Main(string[] args)
@@ -356,7 +357,7 @@ Say you wanted to introduce some new types to do work on.  You can do this by ad
 |__project.json
 ```
 
-This works great when the size of your project is relatively small.  However, if you have a larger app with many different data types and potentially multiple layers, you may wish to organize things logically.  This is where folders come into play.  You can either follow along with [the sample project](https://github.com/dotnet/core-docs/samples/core-projects/console-apps/NewTypes) that this guide covers, or create your own files and folders.
+This works great when the size of your project is relatively small.  However, if you have a larger app with many different data types and potentially multiple layers, you may wish to organize things logically.  This is where folders come into play.  You can either follow along with [the NewTypes sample project](https://github.com/dotnet/core-docs/tree/master/samples/core-projects/console-apps/NewTypes) that this guide covers, or create your own files and folders.
 
 To begin, create a new folder under the root of your project.  `/Model` is chosen here.
 
@@ -535,7 +536,7 @@ You'll probably be wanting to test your projects at some point.  Here's a good w
    
 ### Example: Extending the NewTypes project
 
-Now that the project system is in place, you can create your test project and start writing tests!  From here on out, this guide will use and extend [the sample Types project](https://github.com/dotnet/core-docs/samples/core-projects/console-apps/NewTypes).  Additionally, it will use the [Xunit](https://xunit.github.io/) test framework.  Feel free to follow along or create your own multi-project system with tests.
+Now that the project system is in place, you can create your test project and start writing tests!  From here on out, this guide will use and extend [the sample Types project](https://github.com/dotnet/core-docs/tree/master/samples/core-projects/console-apps/NewTypes).  Additionally, it will use the [Xunit](https://xunit.github.io/) test framework.  Feel free to follow along or create your own multi-project system with tests.
 
 
 The whole project structure should look like this:
@@ -543,12 +544,13 @@ The whole project structure should look like this:
 ```
 /NewTypes
 |__/src
-   |__/Pets
-      |__Dog.cs
-      |__Cat.cs
-      |__IPet.cs
-   |__Program.cs
-   |__project.json
+   |__/NewTypes
+      |__/Pets
+         |__Dog.cs
+         |__Cat.cs
+         |__IPet.cs
+      |__Program.cs
+      |__project.json
 |__/test
    |__NewTypesTests
       |__TypesTests.cs
@@ -619,17 +621,17 @@ public class PetTests
 }
 ```
    
- Now you can run tests!  The [`dotnet test`](http://dotnet.github.io/docs/core-concepts/core-sdk/cli/dotnet-test.html) command runs the test runner you have specified in your project. Make sure you start at the top-level directory.
+Now you can run tests!  The [`dotnet test`](../core-concepts/core-sdk/cli/dotnet-test.md) command runs the test runner you have specified in your project. Make sure you start at the top-level directory.
  
- ```
- $ dotnet restore
- $ cd test/PetTests
- $ dotnet test
- ```
+```
+$ dotnet restore
+$ cd test/NewTypesTests
+$ dotnet test
+```
  
- Output should look like this:
+Output should look like this:
  
- ```
+```
 xUnit.net .NET CLI test runner (64-bit win10-x64)
   Discovering: NewTypesTests
   Discovered:  NewTypesTests
@@ -638,11 +640,12 @@ xUnit.net .NET CLI test runner (64-bit win10-x64)
 === TEST EXECUTION SUMMARY ===
    NewTypesTests  Total: 2, Errors: 0, Failed: 0, Skipped: 0, Time: 0.144s
 SUMMARY: Total: 1 targets, Passed: 1, Failed: 0.
- ```
+```
  
- ## Conclusion
+## Conclusion
  
- Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.  The next step is to create awesome console apps of your own!
+Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.  The next step is to create awesome console apps of your own!
  
- If a more advanced example of a console app interests you, check out the next section, [nameof(more_interesting_console_app)](overview.md).
+If a more advanced example of a console app interests you, check out the next tutorial: [Using the CLI tools to write console apps: An advanced step-by-step guide](../core-concepts/console/cli-console-app-tutorial-advanced.md).
  
+	

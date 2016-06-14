@@ -7,11 +7,7 @@ By [Bill Wagner](https://github.com/BillWagner)
 The previous article discussed the most common event patterns. .NET
 Core has a more relaxed pattern. In this version, the 
 `EventHandler<TEventArgs>` definition no longer has the constraint that
-<<<<<<< HEAD
 `TEventArgs` must be a class derived from `System.EventArgs`.
-=======
-`TEventArgs` must be a class derived from System.EventArgs.
->>>>>>> origin/Modern-Event-Pattern-244
 
 This increases flexibility for you, and is backwards compatible. Let's
 start with the flexibility. The class System.EventArgs introduces one

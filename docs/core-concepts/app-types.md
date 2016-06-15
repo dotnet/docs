@@ -1,4 +1,5 @@
-# Types of portability in .NET Core
+.NET Core App Types
+===================
 
 ## Introduction
 There are several ways to think about the "types" of applications you can build. Usually, the types describe 

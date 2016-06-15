@@ -39,4 +39,4 @@ The following table lists some of the differences between the two sorted list cl
    
 [ConcurrentDictionary&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentDictionary%602.html)  
  
-[Commonly Used Collection Types](commonlyUsedCollectionTypes.md) 
+[Commonly Used Collection Types](commonly-used-collection-types.md) 

@@ -28,5 +28,5 @@ The `Dictionary<T>` and `ConcurrentDictionary<T>` classes have the same function
 
 [System.Collections.Concurrent.ConcurrentDictionary&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentDictionary%602.html)
 
-[Commonly Used Collection Types](commonlyUsedCollectionTypes.md)
+[Commonly Used Collection Types](commonly-used-collection-types.md)
 

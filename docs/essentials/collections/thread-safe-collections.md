@@ -16,7 +16,7 @@ The following table lists the collection types in the [System.Collections.Concur
 
 Type | Description
 ---- | -----------
-[BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) | Provides bounding and blocking functionality for any type that implements [IProducerConsumerCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.IProducerConsumerCollection%601.html). For more information, see [BlockingCollection Overview](threadsafe/blockingcollectionoverview.md).
+[BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) | Provides bounding and blocking functionality for any type that implements [IProducerConsumerCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.IProducerConsumerCollection%601.html). For more information, see [BlockingCollection Overview](threadsafe/blockingcollection-overview.md).
 [ConcurrentBag&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentBag%601.html) | Thread-safe implementation of an unordered collection of elements.
 [ConcurrentDictionary&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentDictionary%602.html) | Thread-safe implementation of a dictionary of key-value pairs.
 [ConcurrentQueue&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentQueue%601.html) | Thread-safe implementation of a FIFO (first-in, first-out) queue.
@@ -35,13 +35,13 @@ We recommend the `System.Collections.Concurrent` collection classes because they
 
 Title | Description
 ----- | -----------
-[BlockingCollection Overview](threadsafe/blockingcollectionoverview.md) | Describes the functionality provided by the `BlockingCollection<T>;` type.
-[How to: Add and Remove Items from a ConcurrentDictionary](threadsafe\howtoAddandRemoveItems.md) | Describes how to add and remove elements from a `ConcurrentDictionary<TKey, TValue>`.
-[How to: Add and Take Items Individually from a BlockingCollection](threadsafe\howtoAddandTakeItems.md) | Describes how to add and retrieve items from a blocking collection without using the read-only enumerator.
-[How to: Add Bounding and Blocking Functionality to a Collection](threadsafe\howtoAddBoundingandBlocking.md ) | Describes how to use any collection class as the underlying storage mechanism for an `IProducerConsumerCollection<T>;` collection.
-[How to: Use ForEach to Remove Items in a BlockingCollection](threadsafe\howtoUseForEachtoRemove.md ) | Describes how to use `foreach` to remove all items in a blocking collection.
-[How to: Use Arrays of Blocking Collections in a Pipeline](threadsafe\howtoUseArraysofBlockingCollections.md) | Describes how to use multiple blocking collections at the same time to implement a pipeline.
-[How to: Create an Object Pool by Using a ConcurrentBag](threadsafe\howtoCreateanObjectPool.md) | Shows how to use a concurrent bag to improve performance in scenarios where you can reuse objects instead of continually creating new ones.
+[BlockingCollection Overview](threadsafe/blockingcollection-overview.md) | Describes the functionality provided by the `BlockingCollection<T>;` type.
+[How to: Add and Remove Items from a ConcurrentDictionary](threadsafe\how-to-add-and-remove-items.md) | Describes how to add and remove elements from a `ConcurrentDictionary<TKey, TValue>`.
+[How to: Add and Take Items Individually from a BlockingCollection](threadsafe\how-to-add-and-take-items.md) | Describes how to add and retrieve items from a blocking collection without using the read-only enumerator.
+[How to: Add Bounding and Blocking Functionality to a Collection](threadsafe\how-to-add-bounding-and-blocking.md ) | Describes how to use any collection class as the underlying storage mechanism for an `IProducerConsumerCollection<T>;` collection.
+[How to: Use ForEach to Remove Items in a BlockingCollection](threadsafe\how-to-use-foreach-to-remove.md ) | Describes how to use `foreach` to remove all items in a blocking collection.
+[How to: Use Arrays of Blocking Collections in a Pipeline](threadsafe\how-to-use-arrays-of-blockingcollections.md) | Describes how to use multiple blocking collections at the same time to implement a pipeline.
+[How to: Create an Object Pool by Using a ConcurrentBag](threadsafe\how-to-create-an-object-pool.md) | Shows how to use a concurrent bag to improve performance in scenarios where you can reuse objects instead of continually creating new ones.
 
 ## Reference
 

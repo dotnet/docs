@@ -75,11 +75,11 @@ Task.Run(() =>
 });
 ```
 
-For a complete example, see [How to: Add and Take Items Individually from a BlockingCollection](howtoAddandTakeItems.md).
+For a complete example, see [How to: Add and Take Items Individually from a BlockingCollection](how-to-add-and-take-items.md).
 
 ## Timed Blocking Operations
 
-In timed blocking `TryAdd` and `TryTake` operations on bounded collections, the method tries to add or take an item. If an item is available it is placed into the variable that was passed in by reference, and the method returns `true`. If no item is retrieved after a specified time-out period the method returns `false`. The thread is then free to do some other useful work before trying again to access the collection. For an example of timed blocking access, see the second example in [How to: Add and Take Items Individually from a BlockingCollection](howtoAddandTakeItems.md).
+In timed blocking `TryAdd` and `TryTake` operations on bounded collections, the method tries to add or take an item. If an item is available it is placed into the variable that was passed in by reference, and the method returns `true`. If no item is retrieved after a specified time-out period the method returns `false`. The thread is then free to do some other useful work before trying again to access the collection. For an example of timed blocking access, see the second example in [How to: Add and Take Items Individually from a BlockingCollection](how-to-add-and-take-items.md).
 
 ## Cancelling Add and Take Operations
 
@@ -99,17 +99,17 @@ BlockingCollection<string> bc = new BlockingCollection<string>(new ConcurrentBag
 
 ## IEnumerable Support
 
-`BlockingCollection<T>` provides a `GetConsumingEnumerable` method that enables consumers to use a `foreach` statement to remove items until the collection is completed, which means it is empty and no more items will be added. For more information, see [How to: Use ForEach to Remove Items in a BlockingCollection](howtoUseForEachtoRemove.md).
+`BlockingCollection<T>` provides a `GetConsumingEnumerable` method that enables consumers to use a `foreach` statement to remove items until the collection is completed, which means it is empty and no more items will be added. For more information, see [How to: Use ForEach to Remove Items in a BlockingCollection](how-to-use-foreach-to-remove.md).
 
 ## Using Many BlockingCollections As One
 
-For scenarios in which a consumer needs to take items from multiple collections simultaneously, you can create arrays of `BlockingCollection<T>` and use the static methods such as `TakeFromAny` and `AddToAny` that will add to or take from any of the collections in the array. If one collection is blocking, the method immediately tries another until it finds one that can perform the operation. For more information, see [How to: Use Arrays of Blocking Collections in a Pipeline](howtoUseArraysofBlockingCollections.md).
+For scenarios in which a consumer needs to take items from multiple collections simultaneously, you can create arrays of `BlockingCollection<T>` and use the static methods such as `TakeFromAny` and `AddToAny` that will add to or take from any of the collections in the array. If one collection is blocking, the method immediately tries another until it finds one that can perform the operation. For more information, see [How to: Use Arrays of Blocking Collections in a Pipeline](how-to-use-arrays-of-blockingcollections.md).
 
 ## See Also
 
 [System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html)
 
-[Collections and Data Structures](../Collections-and-Data-Structures.md)
+[Collections and Data Structures](../collections-and-data-structures.md)
 
-[Thread-Safe Collections](../thread-safeCollections.md)
+[Thread-Safe Collections](../thread-safe-collections.md)
 

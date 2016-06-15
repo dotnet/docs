@@ -67,6 +67,7 @@
 ### [🔧 Porting your applications](porting/applications.md)
 ### [🔧 Porting your libraries](porting/libraries.md)
 ### [🔧 Porting NuGet packages](porting/nuget-packages.md)
+## [project.json reference](project-model/project-json-reference.md)
 ## [Runtime Identifier Catalogue](core-concepts/rid-catalog.md)
 # [Learn C#](languages/csharp/index.md)
 ## [🔧 Syntax](languages/csharp/syntax.md)

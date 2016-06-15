@@ -4,7 +4,7 @@
 * [Overview](sdk-overview.md)
 * [.NET Core Command Line Tools](cli/index.md)
     * [Overview](cli/overview.md)
-    * [.NET Core Command Line tools extensibility](cli/extensibility.md)
+    * [.NET Core CLI extensibility model](cli/extensibility.md)
     * [Using .NET Core CLI tools in Continuous Integration](cli/using-ci-with-cli.md)
     * [dotnet](cli/dotnet.md)
     * [dotnet-new](cli/dotnet-new.md)

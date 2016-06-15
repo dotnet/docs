@@ -35,7 +35,8 @@ We recommend the `System.Collections.Concurrent` collection classes because they
 
 Title | Description
 ----- | -----------
-[BlockingCollection Overview](threadsafe/blockingcollection-overview.md) | Describes the functionality provided by the `BlockingCollection<T>;` type.
+[BlockingCollection Overview](threadsafe/blockingcollection-overview.md) | Describes the functionality provided by the `BlockingCollection<T>` type.
+[When to Use a Thread-Safe Collection](threadsafe/when-to-use-a-thread-safe-collection.md) | Explains when is it appropriate to use a thread-safe collection.
 [How to: Add and Remove Items from a ConcurrentDictionary](threadsafe\how-to-add-and-remove-items.md) | Describes how to add and remove elements from a `ConcurrentDictionary<TKey, TValue>`.
 [How to: Add and Take Items Individually from a BlockingCollection](threadsafe\how-to-add-and-take-items.md) | Describes how to add and retrieve items from a blocking collection without using the read-only enumerator.
 [How to: Add Bounding and Blocking Functionality to a Collection](threadsafe\how-to-add-bounding-and-blocking.md ) | Describes how to use any collection class as the underlying storage mechanism for an `IProducerConsumerCollection<T>;` collection.

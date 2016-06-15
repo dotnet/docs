@@ -14,9 +14,9 @@ The LINQ to Objects feature allows you to use LINQ queries to access in-memory o
 
 Title | Description
 ----- | -----------
-[Collections and Data Structures](Collections-and-Data-Structures.md) | Discusses the various collection types available in the .NET Framework, including stacks, queues, lists, arrays, and dictionaries.
-[Hashtable and Dictionary Collection Types](hashtableandDictionaryCollectionTypes.md) | Describes the features of generic and non-generic hash-based dictionary types.
-[Sorted Collection Types](sortedCollectionTypes.md) | Describes sorted collections performance and characteristics.
+[Collections and Data Structures](collections-and-data-structures.md) | Discusses the various collection types available in the .NET Framework, including stacks, queues, lists, arrays, and dictionaries.
+[Hashtable and Dictionary Collection Types](hashtable-and-dictionary-collection-types.md) | Describes the features of generic and non-generic hash-based dictionary types.
+[Sorted Collection Types](sorted-collection-types.md) | Describes sorted collections performance and characteristics.
 
 ## Reference
 

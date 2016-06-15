@@ -138,7 +138,7 @@ F#’s compiler is very strict, making it nearly impossible to do something trou
 
 ## For the C#/VB Programmer Looking Into F# #
 
-This section assumes you’re familiar with the async model in C#/VB. If you are not, [Async Programming in C#/VB](async-csharp-vb.md) is a starting point.
+This section assumes you’re familiar with the async model in C#/VB. If you are not, [Async Programming in C#](../languages/csharp/async.md) is a starting point.
 
 There is a fundamental difference between the C#/VB async model and the F# async model.
 

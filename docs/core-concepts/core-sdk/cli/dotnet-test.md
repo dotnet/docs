@@ -102,3 +102,6 @@ Runs the tests in the project in the current directory.
 
 Runs the tests in the test1 project. 
 
+## SEE ALSO
+
+* [dotnet-test communication protocol](dotnet-test-protocol.md)

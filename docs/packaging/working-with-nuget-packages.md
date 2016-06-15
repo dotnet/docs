@@ -1,4 +1,4 @@
-# 🔧 Working with Nuget Packagesw
+# 🔧 Working with Nuget Packages
 
 > **Note**
 > 

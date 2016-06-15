@@ -42,6 +42,6 @@ The [List&lt;T&gt;](https://dotnet.github.io/api/System.Collections.Generic.List
 
 ## See Also
 
-[Collections and Data Structures](Collections-and-Data-Structures.md) 
+[Collections and Data Structures](collections-and-data-structures.md) 
 
-[Commonly Used Collection Types](commonlyUsedCollectionTypes.md)
+[Commonly Used Collection Types](commonly-used-collection-types.md)

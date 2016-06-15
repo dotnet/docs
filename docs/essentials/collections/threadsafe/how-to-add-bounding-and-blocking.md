@@ -1,6 +1,6 @@
 # How to: Add Bounding and Blocking Functionality to a Collection
 
-This example shows how to add bounding and blocking functionality to a custom collection class by implementing the [System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.IProducerConsumerCollection%601.html) interface in the class, and then using a class instance as the internal storage mechanism for a [System.Collections.Concurrent.BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html). For more information about bounding and blocking, see [BlockingCollection Overview](blockingCollectionOverview.md).
+This example shows how to add bounding and blocking functionality to a custom collection class by implementing the [System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.IProducerConsumerCollection%601.html) interface in the class, and then using a class instance as the internal storage mechanism for a [System.Collections.Concurrent.BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html). For more information about bounding and blocking, see [BlockingCollection Overview](blockingcollection-overview.md).
 
 ## Example
 
@@ -267,6 +267,6 @@ By default, the storage for a [BlockingCollection&lt;T&gt;](http://dotnet.github
 
 [System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html)
 
-[Thread-Safe Collections](../thread-safeCollections.md)
+[Thread-Safe Collections](../thread-safe-collections.md)
 
-[BlockingCollection Overview](blockingCollectionOverview.md)
+[BlockingCollection Overview](blockingcollection-overview.md)

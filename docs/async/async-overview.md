@@ -22,5 +22,5 @@ Especially in the case of F#, a functional-first language designed to solve prob
 
 Pick your language to learn about it:
 
-*   [Async Programming in C#/VB](async-csharp-vb.md)
+*   [Async Programming in C#](../languages/csharp/async.md)
 *   [Async Programming in F#](async-fsharp.md)

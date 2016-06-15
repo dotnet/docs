@@ -91,11 +91,12 @@ User-filtered exception handlers catch and handle exceptions based on requiremen
 
 ## Related topics
 
-| Title | Description |
-| ----- | ----------- |
-| Exception Class and Properties | Describes the elements of an exception object. |
-| Exception Hierarchy | Describes the exceptions that most exceptions derive from. |
-| Exception Handling Fundamentals | Explains how to handle exceptions using catch, throw, and finally statements. |
-| Best Practices for Exceptions | Describes suggested methods for handling exceptions. |
-| Handling COM Interop Exceptions | Describes how to handle exceptions thrown and caught in unmanaged code. |
-| How to Map HRESULTs and Exceptions | Describes the mapping of exceptions between managed and unmanaged code. |
+* [Exception Class and Properties](exception-class-properties.md)
+* [Exception Hierarchy](exception-hierarchy.md)
+* [Using the Try/Catch block](exceptions-use-try-catch-block.md)
+* [Catching specific exceptions](exceptions-catch-specific-exceptions.md)
+* [Throwing exceptions](exceptions-throw-exceptions.md)
+* [Using the Finally block](exceptions-use-finally-blocks.md)
+* [Using exception filters](exceptions-user-filtered-handlers.md)
+* [Creating user-defined exceptions](exceptions-create-user-defined.md)
+* [Best Practices for Exceptions](exceptions-best-practices.md)

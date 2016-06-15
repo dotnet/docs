@@ -1,4 +1,4 @@
-# Project.json reference
+# project.json reference
 
  **Note**
 > This topic is likley to change before release! You can track the status of this issue through our public GitHub issue tracker.

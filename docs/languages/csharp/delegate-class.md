@@ -1,4 +1,4 @@
-# System.Delegates and the `delegate` keyword
+# System.Delegate and the `delegate` keyword
 
 By [Bill Wagner](https://github.com/BillWagner)
 

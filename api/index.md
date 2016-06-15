@@ -1,10 +1,3 @@
----
-_tocPath: api/toc.html
-_tocRel: toc.html
-_navPath: toc.html
-_navRel: ../toc.html
----
-
 # .NET Core API Reference 
 
 The .NET Core API Reference documents the types and type members available in .NET Core. You can navigate to the documentation for a particular type (a class, structure, delegate, enum, or interface) or type member (a constructor, method, field, property, or event) in any of three ways:

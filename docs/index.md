@@ -1,10 +1,3 @@
----
-_tocPath: docs/toc.html
-_tocRel: toc.html
-_navPath: toc.html
-_navRel: ../toc.html
----
-
 ## Getting started
 
 In this docset, you will find tutorials that will teach you how to get started with .NET Core. You can also find the API reference documentation. 

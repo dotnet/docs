@@ -17,10 +17,7 @@ You’ll need to setup your machine to run .NET core. You can find the
 installation instructions on the [Getting Started](http://dotnet.github.io/getting-started/)
 page. You can run this
 application on Windows, Ubuntu Linux, OS X or in a Docker container. 
-You’ll need to install your favorite code editor. This tutorial uses
-[Visual Studio Code](https://code.visualstudio.com/) which is an open
-source, cross platform editor. However, you can use whatever tools you are
-comfortable with.
+You’ll need to install your favorite code editor. 
 # Create the Application
 The first step is to create a new application. Open a command prompt and
 create a new directory for your application. Make that the current
@@ -141,11 +138,7 @@ foreach (var line in lines)
 ```
 
 Run the program (using "dotnet run" and you can see every line printed out
-to the console.  As a learning exercise, run the program in the debugger,
-and set breakpoints on the `Console.WriteLine()` and `yield return`
-statements. As you see each breakpoint being hit, you’ll see how the
-sequence of text is being generated as it is being displayed in the
-console.
+to the console.  
 
 # Adding Delays and Formatting output
 What you have is being displayed far too fast to read aloud. Now you need
@@ -208,7 +201,7 @@ issues because the source text file has several lines that have more than
 scrolling by. That’s easy to fix. You’ll just keep track of the length of
 each line, and generate a new line whenever the line length reaches a
 certain threshold. Declare a local variable after the declaration of
-`word` that holds the line length:
+`words` that holds the line length:
 
 ```cs
 var lineLength = 0;
@@ -261,10 +254,12 @@ uses the `await` keyword. In order to do that, you need to add the `async`
 modifier to the method signature. This method returns a `Task`. Notice that
 there are no return statements that return a Task object. Instead, that
 `Task` object is created by code the compiler generates when you use the
-`await` operator. You can imagine that this method pauses when it reaches
-an `await`, and resumes when the awaited task completes. The method
-returns when execution must pause for an awaited `Task`. Calling code can
-monitor the returned task to determine when it has completed.
+`await` operator. You can imagine that this method returns when it reaches
+an `await`. The returned Task indicates that the work has not completed.
+The method resumes when the awaited task completes. When it has executed
+to completion, the returned `Task` indicates that it is complete.
+Calling code can
+monitor that returned task to determine when it has completed.
 
 You can call this new method in your Main program:
 
@@ -319,25 +314,28 @@ two tasks. This class contains two public properties: the delay, and a
 flag to indicate that the file has been completely read:
 
 ```cs
-internal class TelePrompterConfig
+namespace TeleprompterConsole
 {
-    private object lockHandle = new object();
-    public int DelayInMilliseconds { get; private set; } = 200;
-
-    public void UpdateDelay(int increment) // negative to speed up
+    internal class TelePrompterConfig
     {
-        var newDelay = Min(DelayInMilliseconds + increment, 1000);
-        newDelay = Max(newDelay, 20);
-        lock (lockHandle)
+        private object lockHandle = new object();
+        public int DelayInMilliseconds { get; private set; } = 200;
+
+        public void UpdateDelay(int increment) // negative to speed up
         {
-            DelayInMilliseconds = newDelay;
+            var newDelay = Min(DelayInMilliseconds + increment, 1000);
+            newDelay = Max(newDelay, 20);
+            lock (lockHandle)
+            {
+                DelayInMilliseconds = newDelay;
+            }
         }
     }
 }
 ```
 
 Put that class in a new file, and enclose that class in the
-`TeleprompterConsole` namespace. You’ll also need to add a `static using`
+`TeleprompterConsole` namespace as shown above. You’ll also need to add a `static using`
 statement so that you can reference the `Min` and `Max` method without the
 enclosing class or namespace names. A static using statement imports the
 methods from one class. This is in contrast with the using statements used
@@ -378,7 +376,7 @@ use the config object for the delay:
 ```cs
 private static async Task ShowTeleprompter(TelePrompterConfig config)
 {
-    var words = ReadFrom("Sample.txt");
+    var words = ReadFrom("SampleQuotes.txt");
     foreach (var line in words)
     {
         Console.Write(line);
@@ -404,6 +402,21 @@ private static async Task GetInput(TelePrompterConfig config)
         } while (!config.Done);
     };
     await Task.Run(work);
+}
+```
+
+This new version of `ShowTeleprompter` calls a new method in the
+`TeleprompterConfig` class. To finish, you'll need to add the
+`SetDone` method, and the `Done` property to the `TelePrompterConfig` class:
+
+```cs
+public bool Done => done;
+
+private bool done;
+
+public void SetDone()
+{
+    done = true;    
 }
 ```
 

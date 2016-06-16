@@ -1,4 +1,6 @@
-# Introduction
+# REST client
+
+## Introduction
 This tutorial teaches you a number of features in .NET Core and the C# language. You’ll learn:
 *	The basics of the .NET Core Command Line Interface (CLI).
 *   An overview of C# Language features.
@@ -13,7 +15,7 @@ that JSON packet into C# objects. Finally, you'll see how to work with
 C# objects.
 
 There are a lot of features in this tutorial. Let’s build them one by one. 
-# Prerequisites
+## Prerequisites
 You’ll need to setup your machine to run .NET core. Instructions are
 [here](http://dotnet.github.io/getting-started/). You can run this
 application on Windows, Ubuntu Linux, OS X or in a Docker container. 
@@ -21,7 +23,7 @@ You’ll need to install your favorite code editor. The descriptions below
 use [Visual Studio Code](https://code.visualstudio.com/) which is an open
 source, cross platform editor. However, you can use whatever tools you are
 comfortable with.
-# Create the Application
+## Create the Application
 The first step is to create a new application. Open a command prompt and
 create a new directory for your application. Make that the current
 directory. Type the command "dotnet new" at the command prompt. This
@@ -45,7 +47,7 @@ After restoring packages, you run “dotnet build”. This executes the build
 engine and creates your application. Finally, you execute “dotnet run” to
 run your application.
 
-# Adding New Dependencies
+## Adding New Dependencies
 One of the key design goals for .NET Core is to minimize the size of
 the .NET framework installation. The .NET Core Application framework contains
 only the most common elements of the .NET full framework. This application
@@ -89,7 +91,7 @@ Core Application framework.
 After you've made these changes, you should run "dotnet restore" again so
 that those packages are installed on your system.
 
-# Making Web Requests
+## Making Web Requests
 Now you're ready to start retrieving data from the web. In this
 application, you'll read information from the 
 [GitHub API](https://developer.github.com/v3/). Let's read information
@@ -181,7 +183,7 @@ The final two lines of this method await that task, and then print the response 
 Build the app, and run it. The build warning is gone now, because the `ProcessRepositories` now
 does contain an `await` operator. You'll see a long display of JSON formatted text.   
 
-# Processing the JSON Result
+## Processing the JSON Result
 
 At this point, you've written the code to retrieve a response from a web server, and display
 the text that is contained in that response. Next, let's convert that JSON response into C#
@@ -257,7 +259,7 @@ foreach (var repo in repositories)
 Compile and run the application. It will print out the names of the repositories that are part of the
 .NET Foundation.
 
-# Controlling Serialization
+## Controlling Serialization
 
 Before you add more features, let's address the `repo` type and make it follow more standard
 C# conventions. You'll do this by annotating the `repo` type with *Attributes* that control how
@@ -380,7 +382,7 @@ Accessing the `Result` property of a Task blocks until the task has completed. N
 to `await` the completion of the task as in the `ProcessRepositories` method, but that isn't allowed in the
 `Main` method.
 
-# Reading More Information
+## Reading More Information
 
 Let's finish this by processing a few more of the properties in the JSON packet that gets sent from the
 GitHub API. You won't want to grab everything, but adding a few properties will demonstrate a few more
@@ -470,7 +472,7 @@ Console.WriteLine(repo.LastPush);
 Your version should now match the finished version located
 [here](https://github.com/dotnet/core-docs/tree/master/docs/tutorials/getting-started-with-csharp/console-webapiclient).
  
-# Conclusion
+## Conclusion
 
 This tutorial showed you how to make web requests, parse the result, and display properties of
 those results. You've also added new packages as dependencies in your project. You've seen some of

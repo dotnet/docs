@@ -1,6 +1,8 @@
 Using MSBuild to build .NET Core projects
 =========================================
 
+by [Daniel Plaisted](https://github.com/dsplaisted)
+
 The .NET Core tooling is going to [move from project.json to MSBuild based projects](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/).
 We expect the first version of the .NET Core tools that use MSBuild to ship along with Visual Studio "15".  However, it is possible to use MSBuild for .NET Core
 projects today, and this page shows how.
@@ -90,7 +92,7 @@ Creating a .NET Core console application from Visual Studio
         <NoWarn>$(NoWarn);1701</NoWarn>
         ```
 
-    - Add the following at the end of the file (after the import of `Microsoft.Portable.CSharp.Targets`:
+    - Add the following at the end of the file (after the import of `Microsoft.CSharp.Targets`:
 
         ```xml
         <PropertyGroup>

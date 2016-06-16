@@ -56,7 +56,7 @@ To define an event you use the `event` keyword:
 public event EventHandler<FileListArgs> OnProgress;
 ```
 
-The type of the event (`EventHandler<FileListArgs`> in this example) must be a
+The type of the event (`EventHandler<FileListArgs>` in this example) must be a
 delegate type. There are a number of conventions that you should follow
 when declaring an event. Typically, the event delegate type has a void return.
 Prefix event declarations with 'On'.

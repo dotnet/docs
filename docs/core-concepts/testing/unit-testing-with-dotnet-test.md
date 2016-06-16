@@ -87,7 +87,8 @@ CD into the `PrimeServices.Tests` directory and create a new project using `dotn
 Once again, `dotnet new` creates a console application. Your unit test project is
 a console application, but the unit test assembly should not contain the application
 entry point. The xunit testrunner contains the entry point to run the console application.
-Therefore, you need to modify `project.json` by removing the `buildOptions` node.
+Therefore, you need to modify
+`project.json` by removing the `buildOptions` node.
  
 ```json
 "buildOptions" : {

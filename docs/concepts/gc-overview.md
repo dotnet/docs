@@ -15,4 +15,4 @@ The GC has has an additional heap for large objects called the Large Object Heap
 
 Generation 2 and LOH collections can take noticeable time for programs that have run for a long time or operate over large amounts of data. Large server programs are known to have heaps in the 10s of GBs. The GC employs a variety of techniques to reduce the amount of time that it blocks program execution. The primary approach is to do as much garbage collection work as possible on a background thread in a way that does not interfere with program execution. The GC also exposes a few ways for developers to influence its behavior, which can be quite useful to improve performance.
 
-For more information, see [Garbage Collection](http://msdn.microsoft.com/library/0xy59wtx.aspx) on MSDN.
+For more information, see [Automatic Memory Management and Garbage Collection](../gc.md).

@@ -67,6 +67,33 @@ The below sections show examples of configurations using the mentioned CI SaaS o
 **TODO**
 
 ### AppVeyor
-**TODO**
 
+The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK preview1 already installed 
+in the build worker image `Visual Studio 2015`
+
+Just use:
+
+```yaml
+os: Visual Studio 2015
+```
+
+It's possibile to install a specific version of .NET Core SDK, see [example appveyor.yml](https://github.com/dotnet/core-docs/blob/master/appveyor.yml) 
+for more info. 
+
+In the example the .NET Core SDK binaries are downloaded, unzipped in a subdirectory and added to `PATH` env var
+
+A build matrix can be added to run integration tests with multiple version of 
+the .NET Core SDK
+
+```yaml
+environment:
+  matrix:
+    - CLI_VERSION: 1.0.0-preview2-003118
+    - CLI_VERSION: Latest
+
+install:
+  # .NET Core SDK binaries
+  - ps: $url = "https://dotnetcli.blob.core.windows.net/dotnet/preview/Binaries/$($env:CLI_VERSION)/dotnet-dev-win-x64.$($env:CLI_VERSION.ToLower()).zip"
+  # follow normal installation from binaries
+```
 

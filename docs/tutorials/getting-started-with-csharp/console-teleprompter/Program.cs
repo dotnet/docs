@@ -9,10 +9,19 @@ namespace TeleprompterConsole
     {
         public static void Main(string[] args)
         {
-            ShowTeleprompter().Wait();
+            RunTeleprompter().Wait();
         }
-        
-        private static async Task ShowTeleprompter()
+
+        private static async Task RunTeleprompter()
+        {
+            var config = new TelePrompterConfig();
+            var displayTask = ShowTeleprompter(config);
+
+            var speedTask = GetInput(config);
+            await Task.WhenAny(displayTask, speedTask);
+        }
+
+        private static async Task ShowTeleprompter(TelePrompterConfig config)
         {
             var words = ReadFrom("SampleQuotes.txt");
             foreach (var line in words)
@@ -20,27 +29,26 @@ namespace TeleprompterConsole
                 Console.Write(line);
                 if (!string.IsNullOrWhiteSpace(line))
                 {
-                    await Task.Delay(200);
+                    await Task.Delay(config.DelayInMilliseconds);
                 }
             }
+            config.SetDone();
         }
-        
-        private static async Task GetInput()
+
+        private static async Task GetInput(TelePrompterConfig config)
         {
-            var delay = 200;
             Action work = () =>
             {
                 do {
                     var key = Console.ReadKey(true);
                     if (key.KeyChar == '>')
-                        delay -= 10;
+                        config.UpdateDelay(-10);
                     else if (key.KeyChar == '<')
-                        delay += 10;
-                } while (true);
+                        config.UpdateDelay(10);
+                } while (!config.Done);
             };
             await Task.Run(work);
         }
-        
         static IEnumerable<string> ReadFrom(string file)
         {
             string line;

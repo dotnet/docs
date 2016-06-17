@@ -33,13 +33,13 @@ namespace ExpressionTreeSamples
         {
             if (exp.NodeType == ExpressionType.Constant)
             {
-                var constantExp = exp as ConstantExpression;
+                var constantExp = (ConstantExpression)exp;
                 Console.WriteLine($"Found Constant: {constantExp.Value}");
                 return (int)constantExp.Value;
             }
             else if (exp.NodeType == ExpressionType.Add)
             {
-                var addExp = exp as BinaryExpression;
+                var addExp = (BinaryExpression)exp;
                 Console.WriteLine("Found Addition Expression");
                 Console.WriteLine("Computing Left node");
                 var leftOperand = Aggregate(addExp.Left);

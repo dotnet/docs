@@ -32,29 +32,6 @@ public class EmployeeListNotFoundException: Exception
 }
 ```
 
-C++
-```
-using namespace System;
-
-public ref class EmployeeListNotFoundException : Exception
-{
-public:
-    EmployeeListNotFoundException()
-    {
-    }
-
-    EmployeeListNotFoundException(String^ message)
-        : Exception(message)
-    {
-    }
-
-    EmployeeListNotFoundException(String^ message, Exception^ inner)
-        : Exception(message, inner)
-    {
-    }
-};
-```
-
 Visual Basic
 ```
 Imports System

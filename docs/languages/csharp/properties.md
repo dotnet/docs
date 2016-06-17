@@ -100,7 +100,7 @@ public class Person
 The example above enforces the rule that the first name must not be blank,
 or whitespace. If a developer writes
 ```cs
-foo.FirstName = "";
+hero.FirstName = "";
 ```
 That assignment throws an `ArgumentException`. Because a property set accessor
 must have a void return type, you report errors in the set accessor by throwing an exception.

@@ -1,4 +1,6 @@
-# Introduction
+# Console Application
+
+## Introduction
 This tutorial teaches you a number of features in .NET Core and the C# language. You’ll learn:
 *	The basics of the .NET Core Command Line Interface (CLI).
 *	The structure of a C# Console Application.
@@ -12,15 +14,13 @@ be paced to match reading it aloud. You can speed up or slow down the pace
 by pressing the ‘<’ or ‘>’ keys.
 
 There are a lot of features in this tutorial. Let’s build them one by one. 
-# Prerequisites
-You’ll need to setup your machine to run .NET core. Instructions are
-[here](http://dotnet.github.io/getting-started/). You can run this
+## Prerequisites
+You’ll need to setup your machine to run .NET core. You can find the
+installation instructions on the [Getting Started](http://dotnet.github.io/getting-started/)
+page. You can run this
 application on Windows, Ubuntu Linux, OS X or in a Docker container. 
-You’ll need to install your favorite code editor. The descriptions below
-use [Visual Studio Code](https://code.visualstudio.com/) which is an open
-source, cross platform editor. However, you can use whatever tools you are
-comfortable with.
-# Create the Application
+You’ll need to install your favorite code editor. 
+## Create the Application
 The first step is to create a new application. Open a command prompt and
 create a new directory for your application. Make that the current
 directory. Type the command "dotnet new" at the command prompt. This
@@ -41,11 +41,11 @@ of all the project dependencies. You do not need to put the file in source
 control; it will be generated when you run “dotnet restore”. 
 
 After restoring packages, you run “dotnet build”. This executes the build
-engine and creates your application. Finally, you execute “dotnet run” to
+engine and creates your application executable. Finally, you execute “dotnet run” to
 run your application.  
 
 The simple Hello World application code is all in Program.cs. Open that
-file you your favorite text editor. We’re about to make our first changes.
+file with your favorite text editor. We’re about to make our first changes.
 At the top of the file, see a using statement:
 
 ```cs
@@ -63,11 +63,11 @@ change it to `TeleprompterConsole`.
 namespace TeleprompterConsole
 ```
 
-# Reading and Echoing the File
+## Reading and Echoing the File
 The first feature to add is to read a text file, and display all that text
-to the console. First, let’s add a text file. Copy the "sampleQuotes.txt"
+to the console. First, let’s add a text file. Copy the 
+[sampleQuotes.txt](https://github.com/dotnet/core-docs/blob/master/docs/tutorials/getting-started-with-csharp/console-teleprompter/sampleQuotes.txt)
 file from the GitHub repository for this [sample](https://github.com/dotnet/core-docs/tree/master/docs/tutorials/getting-started-with-csharp/console-teleprompter) into your project directory. 
-[Direct Link](https://github.com/dotnet/core-docs/blob/master/docs/tutorials/getting-started-with-csharp/console-teleprompter/sampleQuotes.txt) to the file.
 This will serve as the script for your
 application.
 
@@ -103,7 +103,7 @@ The `IEnumerable<T>` interface is defined in the
 This method is a special type of C# method called an *Enumerator method*. 
 Enumerator methods return sequences that are evaluated lazily. That means 
 each item in the sequence is generated as it is requested by the code 
-consuming the sequence. Enumerator Methods are methods that contain one or 
+consuming the sequence. Enumerator methods are methods that contain one or 
 more `yield return` statements. The object returned by the `ReadFrom()` 
 method contains the code to generate each item in the sequence. In this 
 example, that involves reading the next line of text from the source file, 
@@ -123,11 +123,11 @@ compiler-generated code ensures that the resource is released even if an
 exception is thrown from the code in the block defined by the using
 statement.
 
-The reader variable is defined using the `var` keyword. Var defines an
+The reader variable is defined using the `var` keyword. `var` defines an
 *implicitly typed local variable*. That means the type of the variable is
 determined by the compile time type of the object assigned to the
 variable. Here, that is the return value from `File.OpenText()`, which is
-a `StreamReader`.
+a `StreamReader` object.
  
 Now, let’s fill in the code to read the file in the Main method: 
 
@@ -140,13 +140,9 @@ foreach (var line in lines)
 ```
 
 Run the program (using "dotnet run" and you can see every line printed out
-to the console.  As a learning exercise, run the program in the debugger,
-and set breakpoints on the `Console.WriteLine()` and `yield return`
-statements. As you see each breakpoint being hit, you’ll see how the
-sequence of text is being generated as it is being displayed in the
-console.
+to the console.  
 
-# Adding Delays and Formatting output
+## Adding Delays and Formatting output
 What you have is being displayed far too fast to read aloud. Now you need
 to add the delays in the output. As you start, you’ll be building some of
 the core code that enables asynchronous processing. However, these first
@@ -193,14 +189,21 @@ to add that using statement at the top of file:
 using System.Threading.Tasks;
 ```
 
-Run the sample, and check the output.Now, each single word is printed,
+> Note: In RC2, you need to run the application using a different
+> command to see the correct output. This is due to an issue
+> in the CLI that [has been filed](https://github.com/dotnet/cli/issues/2976).
+> To run the application, instead of `dotnet run` use
+> `dotnet .\bin\Debug\netcoreapp1.0\console-teleprompter.dll` 
+> substituting the correct path to your output DLL.  
+
+Run the sample, and check the output. Now, each single word is printed,
 followed by a 200 ms delay. However, the displayed output shows some
 issues because the source text file has several lines that have more than
 80 characters without a line break. That can be hard to read while it's
 scrolling by. That’s easy to fix. You’ll just keep track of the length of
 each line, and generate a new line whenever the line length reaches a
 certain threshold. Declare a local variable after the declaration of
-`word` that holds the line length:
+`words` that holds the line length:
 
 ```cs
 var lineLength = 0;
@@ -221,7 +224,7 @@ if (lineLength > 70)
 Run the sample, and you’ll be able to read aloud at its pre-configured
 pace.
 
-# Async Tasks
+## Async Tasks
 In this final step, you’ll add the code to write the output asynchronously
 in one task, while also running another task to read input from the user
 if they want to speed up or slow down the text display. This has a few
@@ -253,10 +256,12 @@ uses the `await` keyword. In order to do that, you need to add the `async`
 modifier to the method signature. This method returns a `Task`. Notice that
 there are no return statements that return a Task object. Instead, that
 `Task` object is created by code the compiler generates when you use the
-`await` operator. You can imagine that this method pauses when it reaches
-an `await`, and resumes when the awaited task completes. The method
-returns when execution must pause for an awaited `Task`. Calling code can
-monitor the returned task to determine when it has completed.
+`await` operator. You can imagine that this method returns when it reaches
+an `await`. The returned Task indicates that the work has not completed.
+The method resumes when the awaited task completes. When it has executed
+to completion, the returned `Task` indicates that it is complete.
+Calling code can
+monitor that returned task to determine when it has completed.
 
 You can call this new method in your Main program:
 
@@ -302,7 +307,7 @@ the user presses the ‘<’ or ‘>’ keys. This method uses `Console.ReadKey(
 to block and wait for the user to press a key.
 
 To finish this feature, you need to create a new async task returning
-method that starts both of these tasks (`GetInput()`, and 
+method that starts both of these tasks (`GetInput()` and 
 `ShowTeleprompter()`, and also manage the shared data between these two
 tasks.
  
@@ -311,25 +316,28 @@ two tasks. This class contains two public properties: the delay, and a
 flag to indicate that the file has been completely read:
 
 ```cs
-internal class TelePrompterConfig
+namespace TeleprompterConsole
 {
-    private object lockHandle = new object();
-    public int DelayInMilliseconds { get; private set; } = 200;
-
-    public void UpdateDelay(int increment) // negative to speed up
+    internal class TelePrompterConfig
     {
-        var newDelay = Min(DelayInMilliseconds + increment, 1000);
-        newDelay = Max(newDelay, 20);
-        lock (lockHandle)
+        private object lockHandle = new object();
+        public int DelayInMilliseconds { get; private set; } = 200;
+
+        public void UpdateDelay(int increment) // negative to speed up
         {
-            DelayInMilliseconds = newDelay;
+            var newDelay = Min(DelayInMilliseconds + increment, 1000);
+            newDelay = Max(newDelay, 20);
+            lock (lockHandle)
+            {
+                DelayInMilliseconds = newDelay;
+            }
         }
     }
 }
 ```
 
 Put that class in a new file, and enclose that class in the
-`TeleprompterConsole` namespace. You’ll also need to add a `static using`
+`TeleprompterConsole` namespace as shown above. You’ll also need to add a `static using`
 statement so that you can reference the `Min` and `Max` method without the
 enclosing class or namespace names. A static using statement imports the
 methods from one class. This is in contrast with the using statements used
@@ -370,7 +378,7 @@ use the config object for the delay:
 ```cs
 private static async Task ShowTeleprompter(TelePrompterConfig config)
 {
-    var words = ReadFrom("Sample.txt");
+    var words = ReadFrom("SampleQuotes.txt");
     foreach (var line in words)
     {
         Console.Write(line);
@@ -399,7 +407,22 @@ private static async Task GetInput(TelePrompterConfig config)
 }
 ```
 
-# Conclusion
+This new version of `ShowTeleprompter` calls a new method in the
+`TeleprompterConfig` class. To finish, you'll need to add the
+`SetDone` method, and the `Done` property to the `TelePrompterConfig` class:
+
+```cs
+public bool Done => done;
+
+private bool done;
+
+public void SetDone()
+{
+    done = true;    
+}
+```
+
+## Conclusion
 This tutorial showed you a number of the features around the C# language
 and the .NET Core libraries related to working in Console applications.
 You can build on this knowledge to explore more about the language, and

@@ -39,9 +39,10 @@ private static Expression ReplaceNodes(Expression original)
     if (original.NodeType == ExpressionType.Constant)
     {
         return Expression.Multiply(original, Expression.Constant(10));
-    } else if (original.NodeType == ExpressionType.Add)
+    }
+    else if (original.NodeType == ExpressionType.Add)
     {
-        var binaryExpression = original as BinaryExpression;
+        var binaryExpression = (BinaryExpression)original;
         return Expression.Add(
             ReplaceNodes(binaryExpression.Left),
             ReplaceNodes(binaryExpression.Right));
@@ -106,8 +107,8 @@ Func<Expression, int> aggregate = null;
 // Major simplification: Assume every binary expression is an addition.
 aggregate = (exp) =>
     exp.NodeType == ExpressionType.Constant ?
-    (int)(exp as ConstantExpression).Value :
-    aggregate((exp as BinaryExpression).Left) + aggregate((exp as BinaryExpression).Right);
+    (int)((ConstantExpression)exp).Value :
+    aggregate(((BinaryExpression)exp).Left) + aggregate(((BinaryExpression)exp).Right);
 
 var theSum = aggregate(sum);
 Console.WriteLine(theSum);
@@ -131,13 +132,13 @@ private static int Aggregate(Expression exp)
 {
     if (exp.NodeType == ExpressionType.Constant)
     {
-        var constantExp = exp as ConstantExpression;
+        var constantExp = (ConstantExpression)exp;
         Console.Error.WriteLine($"Found Constant: {constantExp.Value}");
         return (int)constantExp.Value;
     }
     else if (exp.NodeType == ExpressionType.Add)
     {
-        var addExp = exp as BinaryExpression;
+        var addExp = (BinaryExpression)exp;
         Console.Error.WriteLine("Found Addition Expression");
         Console.Error.WriteLine("Computing Left node");
         var leftOperand = Aggregate(addExp.Left);

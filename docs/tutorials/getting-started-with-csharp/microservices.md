@@ -1,4 +1,6 @@
-#Introduction
+# Microservices hosted in Docker
+
+##Introduction
 
 This tutorial details the tasks necessary to build and deploy
 an ASP.NET Core microservice in a Docker container. During the course
@@ -16,7 +18,7 @@ Along the way, you'll also see some C# language features:
 * How to process incoming HTTP Requests and generate the HTTP Response
 * How to work with nullable value types
 
-## Why Docker?
+### Why Docker?
 
 Docker makes it easy to create standard machine images to
 host your services in a data center, or the public cloud. Docker
@@ -27,7 +29,7 @@ All the code in this tutorial will work in any .NET Core environment.
 The additional tasks for a Docker installation will work for an ASP.NET
 Core application. 
 
-# Prerequisites
+## Prerequisites
 You’ll need to setup your machine to run .NET core. See the 
 [.NET Core Getting Started page](http://dotnet.github.io/getting-started/)
 for instructions on installing .NET core on your machine.
@@ -58,7 +60,7 @@ the yeoman asp.net template generators:
 
 `npm install -g generator-aspnet`
 
-# Create the Application
+## Create the Application
 
 Now that you've installed all the tools, create a new asp.net core
 application. To use the command line generator, execute the following
@@ -68,78 +70,68 @@ yeoman command in your favorite shell:
 
 This command prompts you to select what Type of application you want to
 create. For this microservice, you want the simplest, most lightweight
-web application possible, so select 'Empty Application'. The template
+web application possible, so select 'Empty Web Application'. The template
 will prompt you for a name. Select 'WeatherMicroservice'. 
 
-The template creates six files for you:
+The template creates eight files for you:
 
 * A .gitignore, customized for asp.net core applications.
 * A Startup.cs file. This contains the basis of the application.
+* A Program.cs file. This contains the entry point of the application.
 * A project.json file. This is the build file for the application.
 * A Dockerfile. This script creates a Docker image for the application.
-* A wwwroot/readme.md. This contains links to other asp.net core resources.
-* A wwwroot/web.config file. This contains basic configuration information.
+* A README.md. This contains links to other asp.net core resources.
+* A web.config file. This contains basic configuration information.
+* A Properties/launchSettings.json file. This contains debugging settings used by IDEs.
 
 Now you can run the template generated application. That's done using a series
-of tools from the command line. The current version of ASP.NET uses two command
-line tools for building and running your applications: dnu and dnx. Dnu is the .NET Execution
-Environment Utility. Dnx is the .NET Execution Engine. 
+of tools from the command line. The `dotnet` command runs the tools necessary
+for .NET development. Each verb executes a different command
 
-The first step is to restore all the dependencies using dnu:
+The first step is to restore all the dependencies:
 
-`dnu restore`
+`dotnet restore`
 
-Dnu restore uses the NuGet package manager to install all the necessary packages
+Dotnet restore uses the NuGet package manager to install all the necessary packages
 into the application directory. It also generates a project.json.lock file. This
 file contains information about each package that is referenced. After restoring
 all the dependencies, you build the application:
 
-`dnu build`
+`dotnet build`
 
-And once you build the application, you run it from the command line using dnx:
+And once you build the application, you run it from the command line:
 
-`dnx web`
+`dotnet run`
 
 The default configuration listens to http://localhost:5000. You can open a
 browser and navigate to that page and see a "Hello World!" message.
 
-## Anatomy of an ASP.NET Core application
+### Anatomy of an ASP.NET Core application
 
 Now that you've built the application, let's look at how this functionality
 is implemented. There are two of the generated files that are particularly
-interesting at this point: project.json and startup.cs. 
+interesting at this point: project.json and Startup.cs. 
 
-Project.json contains information about the project. The three nodes you'll
-often work with are 'dependencies', 'commands' and 'frameworks'. The
+Project.json contains information about the project. The two nodes you'll
+often work with are 'dependencies' and 'frameworks'. The
 dependencies node lists all the packages that are needed for this application.
 At the moment, this is a small node, needing only the packages that run the
 web server.
-
-The 'commands' node lists the command that runs the web server. As a project
-grows, you'll add commands here to run unit tests, or perform other tasks. The
-web task starts the webserver.
 
 The 'frameworks' node specifies the versions and configurations of the .NET
 framework that will run this application.
 
 The application is implemented in Startup.cs. This file contains the startup
-class. It's `Main()` method starts the web server, and instructs the web
-server that the web application class is this Startup class:
+class.
 
-`public static void Main(string[] args) => Microsoft.AspNet.Hosting.WebApplication.Run<Startup>(args);`
-
-This method is a simple one-line method, so it utilizes the C# syntax for
-*expression bodied members*. The body of the method, instead of being enclosed
-in curly braces, is represented by the body of a lambda expression.
-
-The other two methods are called by the asp.net core infrastructure to configure
+The two methods are called by the asp.net core infrastructure to configure
 and run the application. The `ConfigureServices` method describes the services that are
 necessary for this application. You're building a lean microservice, so it doesn't
 need to configure any dependencies. The `Configure` method configures the handlers
 for incoming HTTP Requests. The template generates a simple handler that responds
 to any request with the text 'Hello World!'.
 
-# Build a microservice
+## Build a microservice
 
 The service you're going to build will deliver weather reports from anywhere
 around the globe. In a production application, you'd call some service
@@ -157,7 +149,7 @@ our random weather service:
 
 The next sections walk you through each of these steps.
 
-## Parsing the Query String.
+### Parsing the Query String.
 
 You'll begin by parsing the query string. The service will accept 
 'lat' and 'long' arguments on the query string in this form:
@@ -165,7 +157,7 @@ You'll begin by parsing the query string. The service will accept
 `http://localhost:5000/?lat=-35.55&long=-12.35`  
 
 All the changes you need to make are in the lambda expression
-defined as the argument to app.Run in your startup class.
+defined as the argument to `app.Run` in your startup class.
 
 The argument on the lambda expression is the `HttpContext` for the
 request. One of its properties is the `Request` object. The `Request`
@@ -243,7 +235,7 @@ At this point, you can run the web application and see if your parsing
 code is working. Add values to the web request in a browser, and you should see
 the updated results.
 
-## Build a random weather forecast
+### Build a random weather forecast
 
 Your next task is to build a random weather forecast. Let's start with a data
 container that holds the values you'd want for a weather forecast:
@@ -295,7 +287,7 @@ if (latitude.HasValue && longitude.HasValue)
 }
 ``` 
 
-## Build the JSON response.
+### Build the JSON response.
 
 The final code task on the server is to convert the WeatherReport array
 into a JSON packet, and send that back to the client. Let's start by creating
@@ -304,9 +296,14 @@ list of dependencies:
 
 ```
   "dependencies": {
-    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
-    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
-    "Newtonsoft.Json": "8.0.3"
+    "Microsoft.NETCore.App": {
+      "version": "1.0.0-rc2-3002702",
+      "type": "platform"
+    },
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0-rc2-final",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc2-final",
+    "Newtonsoft.Json": "8.0.4-beta1",
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.0"
   },
 ``` 
 
@@ -324,7 +321,7 @@ you set the content type to 'application/json', and write the string.
 
 The application now runs and returns random forecasts.
 
-# Load into Docker
+## Load into Docker
 
 The Dockerfile created by the asp.net template will serve
 for our purposes. Let's go over its contents.
@@ -332,7 +329,7 @@ for our purposes. Let's go over its contents.
 The first line specifies the source image:
 
 ```
-FROM microsoft/aspnet:1.0.0-rc1-update1
+FROM microsoft/dotnet:onbuild
 ```
 
 Docker allows you to configure a machine image based on a
@@ -340,6 +337,11 @@ source template. That means you don't have to supply all
 the machine parameters when you start, you only need to
 supply any changes. The changes here will be to include
 our application.
+
+In this first sample, we'll use the `onbuild` version of
+the RC2 image. This is the easiest way to create a working Docker
+environment. However, the image it creates is larger than necessary.
+This image include the dotnet core runtime, and the dotnet SDK. 
 
 The next two lines load SQLite onto the machine:
 
@@ -355,18 +357,21 @@ The next three lines setup your application:
 ```
 COPY . /app
 WORKDIR /app
-RUN ["dnu", "restore"]
+RUN ["dotnet", "restore"]
 ```
 
 This will copy the contents of the current directory to the docker VM, and restore
 all the packages.
 
-The final lines of the file set the output port (5004) and run the application:
+The final lines of the file set the output port (80) and run the application:
 
 ```
-EXPOSE 5004
-ENTRYPOINT ["dnx", "-p", "project.json", "web"]
+EXPOSE 80
+ENTRYPOINT ["dotnet", "run"]
 ```
+
+Notice that this Dockerfile uses the dotnet cli to build and run your docker image.
+That's why the larger image is needed.
 
 Here are the steps to build the image and deploy it. The information below is 
 for the PowerShell CLI. Different shells will have slightly different syntax
@@ -401,21 +406,32 @@ In PowerShell it is as follows:
 ```
 
 If you are using a different shell, the output from the docker-machine command
-above will show you what command to use in its place.
+above will show you what command to use in its place. Execute the command that was generated
+for you. 
+
+> Note: The `docker-machine` command will include the shell's comment character,
+> `#` in the case of powershell in the output for the command to run. Make sure
+> you remove this character when you execute the command.
 
 Finally, build the docker image from your application:
 
 ```
-docker-build -t weather-service .
+docker build -t weather-service .
 ```
 
-This command builds the image using your source, and the configuration settings in your
+> Note: You may need to restart the Docker machine for the `docker build` command
+> to work. You do that by executing the `docker restart` command:
+> 
+> `docker restart weather-service`
+
+The build command builds the image using your source, and the configuration
+settings in your
 Dockerfile.
 
 And finally run the application in the docker container:
 
 ```
-docker run -t -d -p 80:5004 weather-service
+docker run -t -d -p 80:5000 weather-service
 ```
 
 You can see if the image is running by checking the command:
@@ -433,10 +449,10 @@ To navigate to your service, find the IP address for the machine:
 docker-machine ip weather-service
 ```
 
-Open a browser and navigate to that site, and you should see your 
-weather service running.
+Open a browser on the docker host and navigate to that site, and you should see your 
+weather service running. 
 
-# Conclusion 
+## Conclusion 
 
 In this tutorial, you built an asp.net core microservice, and added a few
 features.

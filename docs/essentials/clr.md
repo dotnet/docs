@@ -51,7 +51,7 @@ The version number of the .NET Framework doesn't necessarily correspond to the v
 
 ## See Also
 
-[Automatic Memory Management](gc.md)
+[Automatic Memory Management](../concepts/gc-overview.md)
 
  
 

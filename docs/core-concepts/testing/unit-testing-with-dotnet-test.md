@@ -84,18 +84,17 @@ namespace Prime.Services
 
 Next, cd into the 'test' directory, and create the `PrimeServices.Tests` directory.
 CD into the `PrimeServices.Tests` directory and create a new project using `dotnet new`.
-Once again, `dotnet new` creates a console application, and you'll need to modify
-`project.json` to create a class library project by removing the `buildOptions` node.
+Once again, `dotnet new` creates a console application. Your unit test project is
+a console application, but the unit test assembly should not contain the application
+entry point. The xunit testrunner contains the entry point to run the console application.
+Therefore, you need to modify
+`project.json` by removing the `buildOptions` node.
  
 ```json
 "buildOptions" : {
     "emitEntryPoint": true
 }
 ```
-
-* note: You can track [this issue](https://github.com/dotnet/cli/issues/2052)
-for other project types coming for the .NET Core SDK, including class libraries.
-Once this issue is addressed, you won't need to make these changes.
 
 The test project requires other packages to create and run unit tests.
 You'll need to add xunit, the xunit runner, and the PrimeService
@@ -150,7 +149,7 @@ You can see the entire file in the [samples repository](https://github.com/dotne
 on GitHub.
 
 After this initial structure is in place, you can write your first test.
-After this initial setup, everything is configured and should run smoothly
+Once you verify that first unit test, everything is configured and should run smoothly
 as you add features and tests.
 
 # Creating the first test
@@ -191,7 +190,9 @@ dependency of the test project.
 
 Now, execute `dotnet test` to run the tests from the console.
 The xunit test runner has the program entry point to run your
-tests from the Console.
+tests from the Console. `dotnet test` starts the
+test runner, and provides a command line argument to the
+testrunner indicating the assembly that contains your tests.
 
 Your test fails. You haven't created the implementation yet.
 Write the simplest code to make this one test pass:

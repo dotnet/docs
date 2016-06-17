@@ -87,8 +87,12 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
     * [builtIns](#publish-builtins)
     * [mappings](#publish-mappings)
 * [runtimeOptions](#runtimeoptions)
-    * [gcServier](#gcserver)
-    * [gcCOncurrent](#gcconcurrent)
+    * [configProperties](#configproperties)
+        * [System.GC.Server](#gcserver)
+        * [System.GC.Concurrent](#gcconcurrent)
+        * [System.GC.RetainVM](#retainvm)
+        * [System.Threading.ThreadPool.MinThreads](#minthreads)
+        * [System.Threading.ThreadPool.MaxThreads](#maxthreads)
 * [packOptions](#packoptions)
     * [summary](#summary)
     * [tags](#tags)
@@ -776,12 +780,42 @@ Type: Object
 
 TODO
 
-### gcServer
+### configProperties
+Type: Object
+
+Contains runtime configuration settings.
+
+<a name="gcserver"></a>
+#### System.GC.Server
 Type: Boolean
 
 TODO
 
-### gcConcurrent
+<a name="gcconcurrent"></a>
+#### System.GC.Concurrent
+Type: Boolean
+
+TODO
+
+<a name="retainvm"></a>
+#### System.GC.RetainVM
+Type: Boolean
+
+TODO
+
+<a name="minthreads"></a>
+#### System.Threading.ThreadPool.MinThreads
+Type: Integer
+
+TODO
+
+<a name="maxthreads"></a>
+#### System.Threading.ThreadPool.MaxThreads
+Type: Integer
+
+TODO
+
+#### gcConcurrent
 Type: Boolean
 
 TODO

@@ -2,7 +2,7 @@
 
 by [Bertrand Le Roy](https://github.com/bleroy) and [Phillip Carter](https://github.com/cartermp)
 
-Visual Studio 2015 provides a full-featured development environment for developing .NET Core applications. The scripts in this document describe the steps necessary to build a number of typical .NET Core solutions, or solutions that include .NET Core components, using Visual Studio. The scenarios include testing and using third-party libraries that have not been explicitly built for the most recent version of .NET Core.
+Visual Studio 2015 provides a full-featured development environment for developing .NET Core applications. The procedures in this document describe the steps necessary to build a number of typical .NET Core solutions, or solutions that include .NET Core components, using Visual Studio. The scenarios include testing and using third-party libraries that have not been explicitly built for the most recent version of .NET Core.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ The following steps will set up Visual Studio 2015 for .NET Core development:
 
    * In the About Microsoft Visual Studio dialog, the version number should include "Update 2" (or higher).
 
-2. Download and install the [Visual Studio official MSI Installer](https://go.microsoft.com/fwlink/?linkid=798481). This will install the .NET Core Tooling Preview 1 for Visual Studio 2015.
+2. Download and install the [MSI Installer for .NET Core Tooling Preview 1](https://go.microsoft.com/fwlink/?linkid=798481). This will install the .NET Core Tooling Preview 1 for Visual Studio 2015.
 
 3. Download and install [NuGet Manager extension for Visual Studio](https://dist.nuget.org/visualstudio-2015-vsix/v3.5.0-beta/NuGet.Tools.vsix). This will install the latest version of the extension.
 
@@ -64,7 +64,7 @@ A solution using only .NET Core projects
    >
    > The project needs to be a console application, not a class library.
 
-3. In the **TestLibrary** project, open the context menu for the **References** node and choose **Add**,  **Reference**. 
+3. In the **TestLibrary** project, open the context menu for the **References** node and choose **Add Reference**. 
 
 4. In the **Reference Manager** dialog, check **Library** under the **Projects**, **Solution** node, and then click **OK**. 
 
@@ -130,13 +130,13 @@ Starting from the solution obtained with the previous script, execute the follow
     "netstandard1.5"` with `"frameworks": {
     "netstandard1.4"`.
 
-2. In the **Library** project, open the context nmenu for the **References** node and choose **Restore Packages**.
+2. In the **Library** project, open the context menu for the **References** node and choose **Restore Packages**.
 
    The solution should still build and function exactly like it did before: the test should pass, and the console application should run and be debuggable.
 
 3. In Solution Explorer, open the context menu for the `src` folder, and choose **Add**. , **New Project**.
 
-4. In the **New Project** dialog, choose the **Visual C#** node, and then choose **Class Library**.
+4. In the **New Project** dialog, choose the **Visual C#** node, and then choose **Console Application**.
 
    > **Important**
    >
@@ -169,7 +169,7 @@ Moving a library from netstandard 1.4 to 1.3
 
 1. In Solution Explorer, open the `project.json` file in the **Library** project.
 
-2. Replace `frameworks": { netstandard1.4"` with `frameworks": { "netstandard1.3"`'
+2. Replace `frameworks": { "netstandard1.4"` with `frameworks": { "netstandard1.3"`.
 
 3. In the **Library** project, open the context menu for the **References** node and choose **Restore Packages**.
 
@@ -221,7 +221,7 @@ Close the previous solution if it was open: you will be starting a new script fr
 Moving a PCL to a NetStandard library
 -------------------------------------
 
-The PCL library that we built in this script is based on a `csproj` project file. In order to move it to NetStandard, the simplest solution is to manually move its code into a new empty **.NET Core Class Library** project.
+The PCL library that we built in the previous procedure is based on a `csproj` project file. In order to move it to NetStandard, the simplest solution is to manually move its code into a new empty **.NET Core Class Library** project.
 
 If you have pre-RC2 PCL libraries with a `xproj` file and a `project.json` file, you should be able to edit the `project.json` file instead, to reference `"NETStandard.Library": "1.5.0-rc2-24027"`, and target "netstandard1.3".
 

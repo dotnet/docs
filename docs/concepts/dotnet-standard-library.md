@@ -20,21 +20,12 @@ You can see the complete set of .NET runtimes that support the .NET Standard Lib
 | :---------- | :--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |
 |.NET Standard | netstandard | 1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 |
 |.NET Core|netcoreapp|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|1.0|
-|.NET Framework|net|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|4.6.3|
-|||&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|4.6.2|
-|||&rarr;|&rarr;|&rarr;|&rarr;|4.6.1|||
-|||&rarr;|&rarr;|&rarr;|4.6||||
-|||&rarr;|&rarr;|4.5.2|||||
-|||&rarr;|&rarr;|4.5.1|||||
-|||&rarr;|4.5||||||
-|Universal Windows Platform|uap|&rarr;|&rarr;|&rarr;|&rarr;|10.0|||
-|Windows|win|&rarr;|&rarr;|8.1|||||
-|||&rarr;|8.0||||||
-|Windows Phone|wpa|&rarr;|&rarr;|8.1|||||
-|Windows Phone Silverlight|wp|8.1|||||||
-|||8.0|||||||
+|.NET Framework|net|&rarr;|4.5|4.5.1|4.6|4.6.1|4.6.2|4.6.3|
 |Mono/Xamarin Platforms||&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|*|
-|Mono||&rarr;|&rarr;|*||||||
+|Universal Windows Platform|uap|&rarr;|&rarr;|&rarr;|&rarr;|10.0|||
+|Windows|win|&rarr;|8.0|8.1|||||
+|Windows Phone|wpa|&rarr;|&rarr;|8.1|||||
+|Windows Phone Silverlight|wp|8.0|||||||
 
 Comparison to Portable Class Libraries
 ======================================

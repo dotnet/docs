@@ -57,12 +57,9 @@ application called [CoreApp](https://github.com/dotnet/corefxlab/tree/master/sam
 [corefxlab](https://github.com/dotnet/corefxlab) repo.  Another good option is to start with [coretemplate](https://github.com/mellinoe/coretemplate),
 which uses separate MSBuild targets files to target .NET Core instead of putting the changes directly in the project file.  
 
-It is also possible to start by creating a project in Visual Studio and modify it to target .NET Core.  The instructions below show the minimal steps
+It is also possible to start by creating a project in Visual Studio and modifying it to target .NET Core.  The instructions below show the minimal steps
 to get this working.  In contrast to [CoreApp](https://github.com/dotnet/corefxlab/tree/master/samples/NetCoreSample/CoreApp) or
 [coretemplate](https://github.com/mellinoe/coretemplate), a project created this way won't include configurations for targeting Linux and OS X.
-
-Creating a .NET Core console application from Visual Studio
------------------------------------------------------------
 
 1. In the Visual Studio menu bar, choose **File** | **New** | **Project** and select **Console Application**
 2. Choose a name and location for your project and click **OK**

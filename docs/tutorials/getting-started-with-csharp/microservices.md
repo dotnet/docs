@@ -1,4 +1,6 @@
-#Introduction
+# Microservices hosted in Docker
+
+##Introduction
 
 This tutorial details the tasks necessary to build and deploy
 an ASP.NET Core microservice in a Docker container. During the course
@@ -16,7 +18,7 @@ Along the way, you'll also see some C# language features:
 * How to process incoming HTTP Requests and generate the HTTP Response
 * How to work with nullable value types
 
-## Why Docker?
+### Why Docker?
 
 Docker makes it easy to create standard machine images to
 host your services in a data center, or the public cloud. Docker
@@ -27,7 +29,7 @@ All the code in this tutorial will work in any .NET Core environment.
 The additional tasks for a Docker installation will work for an ASP.NET
 Core application. 
 
-# Prerequisites
+## Prerequisites
 You’ll need to setup your machine to run .NET core. See the 
 [.NET Core Getting Started page](http://dotnet.github.io/getting-started/)
 for instructions on installing .NET core on your machine.
@@ -58,7 +60,7 @@ the yeoman asp.net template generators:
 
 `npm install -g generator-aspnet`
 
-# Create the Application
+## Create the Application
 
 Now that you've installed all the tools, create a new asp.net core
 application. To use the command line generator, execute the following
@@ -104,7 +106,7 @@ And once you build the application, you run it from the command line:
 The default configuration listens to http://localhost:5000. You can open a
 browser and navigate to that page and see a "Hello World!" message.
 
-## Anatomy of an ASP.NET Core application
+### Anatomy of an ASP.NET Core application
 
 Now that you've built the application, let's look at how this functionality
 is implemented. There are two of the generated files that are particularly
@@ -129,7 +131,7 @@ need to configure any dependencies. The `Configure` method configures the handle
 for incoming HTTP Requests. The template generates a simple handler that responds
 to any request with the text 'Hello World!'.
 
-# Build a microservice
+## Build a microservice
 
 The service you're going to build will deliver weather reports from anywhere
 around the globe. In a production application, you'd call some service
@@ -147,7 +149,7 @@ our random weather service:
 
 The next sections walk you through each of these steps.
 
-## Parsing the Query String.
+### Parsing the Query String.
 
 You'll begin by parsing the query string. The service will accept 
 'lat' and 'long' arguments on the query string in this form:
@@ -233,7 +235,7 @@ At this point, you can run the web application and see if your parsing
 code is working. Add values to the web request in a browser, and you should see
 the updated results.
 
-## Build a random weather forecast
+### Build a random weather forecast
 
 Your next task is to build a random weather forecast. Let's start with a data
 container that holds the values you'd want for a weather forecast:
@@ -285,7 +287,7 @@ if (latitude.HasValue && longitude.HasValue)
 }
 ``` 
 
-## Build the JSON response.
+### Build the JSON response.
 
 The final code task on the server is to convert the WeatherReport array
 into a JSON packet, and send that back to the client. Let's start by creating
@@ -319,7 +321,7 @@ you set the content type to 'application/json', and write the string.
 
 The application now runs and returns random forecasts.
 
-# Load into Docker
+## Load into Docker
 
 The Dockerfile created by the asp.net template will serve
 for our purposes. Let's go over its contents.
@@ -450,7 +452,7 @@ docker-machine ip weather-service
 Open a browser on the docker host and navigate to that site, and you should see your 
 weather service running. 
 
-# Conclusion 
+## Conclusion 
 
 In this tutorial, you built an asp.net core microservice, and added a few
 features.

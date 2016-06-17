@@ -1,4 +1,6 @@
-# Introduction
+# Console Application
+
+## Introduction
 This tutorial teaches you a number of features in .NET Core and the C# language. You’ll learn:
 *	The basics of the .NET Core Command Line Interface (CLI).
 *	The structure of a C# Console Application.
@@ -12,13 +14,13 @@ be paced to match reading it aloud. You can speed up or slow down the pace
 by pressing the ‘<’ or ‘>’ keys.
 
 There are a lot of features in this tutorial. Let’s build them one by one. 
-# Prerequisites
+## Prerequisites
 You’ll need to setup your machine to run .NET core. You can find the
 installation instructions on the [Getting Started](http://dotnet.github.io/getting-started/)
 page. You can run this
 application on Windows, Ubuntu Linux, OS X or in a Docker container. 
 You’ll need to install your favorite code editor. 
-# Create the Application
+## Create the Application
 The first step is to create a new application. Open a command prompt and
 create a new directory for your application. Make that the current
 directory. Type the command "dotnet new" at the command prompt. This
@@ -61,7 +63,7 @@ change it to `TeleprompterConsole`.
 namespace TeleprompterConsole
 ```
 
-# Reading and Echoing the File
+## Reading and Echoing the File
 The first feature to add is to read a text file, and display all that text
 to the console. First, let’s add a text file. Copy the 
 [sampleQuotes.txt](https://github.com/dotnet/core-docs/blob/master/docs/tutorials/getting-started-with-csharp/console-teleprompter/sampleQuotes.txt)
@@ -140,7 +142,7 @@ foreach (var line in lines)
 Run the program (using "dotnet run" and you can see every line printed out
 to the console.  
 
-# Adding Delays and Formatting output
+## Adding Delays and Formatting output
 What you have is being displayed far too fast to read aloud. Now you need
 to add the delays in the output. As you start, you’ll be building some of
 the core code that enables asynchronous processing. However, these first
@@ -222,7 +224,7 @@ if (lineLength > 70)
 Run the sample, and you’ll be able to read aloud at its pre-configured
 pace.
 
-# Async Tasks
+## Async Tasks
 In this final step, you’ll add the code to write the output asynchronously
 in one task, while also running another task to read input from the user
 if they want to speed up or slow down the text display. This has a few
@@ -420,7 +422,7 @@ public void SetDone()
 }
 ```
 
-# Conclusion
+## Conclusion
 This tutorial showed you a number of the features around the C# language
 and the .NET Core libraries related to working in Console applications.
 You can build on this knowledge to explore more about the language, and

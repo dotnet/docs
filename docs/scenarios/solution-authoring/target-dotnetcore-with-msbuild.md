@@ -33,7 +33,7 @@ Creating a library targeting .NET Core
 
 2. Choose a name and location for your project and click **OK**
 
-3. The "Add Portable Class Libary" dialog will appear.  Select **.NET Framework 4.6** and **ASP.NET Core 1.0** as targets and click **OK**
+3. The "Add Portable Class Library" dialog will appear.  Select **.NET Framework 4.6** and **ASP.NET Core 1.0** as targets and click **OK**
 
   ![Portable targets dialog](../../../images/pcl-targets-dialog-net46-aspnetcore10.png)
 

@@ -39,7 +39,7 @@ Creating a library targeting .NET Core
 
 4. In Solution Explorer, right click on your project and choose **Properties**
 5. In the **Library** tab of the project properties, click on the **Target .NET Platform Standard** link, and click **Yes** in the dialog that is shown
-6. Open the the `project.json` file in your project, and make the following changes:
+6. Open the `project.json` file in your project, and make the following changes:
     - Change the version number of the `NETStandard.Library` package to `1.5.0-rc2-24027` (this is the .NET Core RC2 version of the package)
     - Add the below `imports` definition inside the `netstandard1.5` framework definition.  This will allow your project to reference .NET Core compatible 
 NuGet packages that haven't been updated to target .NET Standard

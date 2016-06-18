@@ -30,14 +30,18 @@ Prerequisites
 -------------
 
 Before starting, you'll need to install the [.NET Core SDK](https://www.microsoft.com/net/download),
-currently in a preview relese.
+currently in a preview relese. The .NET Core SDK includes the latest release
+of the .NET Core framework and runtime.
 
 You'll also need to install [Visual Studio Code](http://code.visualstudio.com).
-During the course of this article, you'll also install a number of extensions
-to Visual Studio Code that will improve the .NET Core development experience.
+During the course of this article, you'll also install extensions
+that will improve the .NET Core development experience.
 
 Getting Started
 ---------------
+
+The source for this tutorial is available on
+[GitHub](https://github.com/dotnet/core-docs/tree/master/samples/getting-started/golden).
 
 Start Visual Studio Code. Press Ctrl + '`' (the back-quote character) to open
 an embedded terminal in VS Code. (Alternatively, you can use a separate
@@ -58,7 +62,7 @@ in VS code, or by clicking on the parent folder in VS Code and selecting the
 "New Folder" icon.
 
 Next, create a `global.json` file in the root directory for your solution.
-`global.json` The contents of `global.json` are:
+The contents of `global.json` are:
 
 ```js
 {
@@ -89,7 +93,8 @@ Your next task is to create the library. In the terminal window
 cd to `golden/src/library` and type the command `dotnet new`.
 
 The `dotnet new` command creates a new application project. Because
-you want a library project, you're going to make a few changes.
+you want a library project, you're going to make a few changes to
+the generated `project.json` file.
 
 First, remote the `buildOptions` node:
 
@@ -140,7 +145,7 @@ becomes:
 ```
 
 This library will make use of JSON representation of objects, so you'll want to
-add a reference to the `Newtonsoft.Json` NuGet package. Open `project.json` and
+add a reference to the `Newtonsoft.Json` NuGet package. In`project.json`
 add the latest pre-release version of the package as a dependency:
 
 ```js
@@ -154,16 +159,16 @@ add the latest pre-release version of the package as a dependency:
 
 After you've finished adding those dependencies, you need to install those
 packages into workspace. The `dotnet restore` command updates all dependencies,
-and writes a `project.lock.json` file into the current directory. This
+and writes a `project.lock.json` file in the project directory. This
 file contains the full dependency tree of all the dependencies in your
 project. You don't need to read this file, its used by tools in the .NET
 SDK.
 
-Now, let's update the C# code to create a `Thing` class that contains
-one public method. Your method will return the sum of two numbers,
+Now, let's update the C# code. Let's create a `Thing` class that contains
+one public method. This method will return the sum of two numbers,
 but  will do so by converting that number to a JSON string, and then
 deserializing it. Rename the file `Program.cs` to `thing.cs`. Then, replace
-the existing code (for a Hello World sample) with the following:
+the existing code (for the template-generated Hello World) with the following:
 
 ```cs
 using static Newtonsoft.Json.JsonConvert;
@@ -325,14 +330,16 @@ can type `dotnet run` to run the executable.
 You can debug your code in VS Code using the C# extension.
 You install this extension by pressing `F1` to open the VS Code
 palette. Type `ext install` to see the list of extensions. Select the `C#`
-extension. (Full instructions are availble on the [Visual Studio
+extension. (More details are availble on the [Visual Studio
 Code C# Extension documentation](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md)
-page. This guide provides only a brief walkthrough.)
+page.)
 
 After you install the extension, VS Code will ask that you restart the application
-to include the new extension. When you relaunch, VS Code will create a `.vs` directory
+to include the new extension. When you relaunch, VS Code will create a `.vscode` directory
 with two files: `tasks.json` and `launch.json`. These two files control the debugger
-configuration.
+configuration. In most projects, this directory is not included in source control.
+It is included in the sample associated with this walk through so you can see
+the edit you need to make.
 
 Your solution contains multiple projects, so you'll want to modify each of these files
 to perform the correct commands. First, open `tasks.json`. The default build task
@@ -367,9 +374,12 @@ Add the `debugType` node under `buildOptions`:
 "debugType": "portable",
 ```
 
-Set a breakpoint at the `WriteLine` statement in `Main`. Press the debug
-icon on the left of the VS Code screen to open the debugger. Then,
+Set a breakpoint at the `WriteLine` statement in `Main`. You do this
+by pressing the `F9` key. Open the debugger by pressing the debug
+icon on the left of the VS Code screen (see figure). Then,
 press the Play button to start the application under the debugger.
+
+![VS Code Debugger](/docs/images/vscodedebugger.png)
 
 You should hit the breakpoint. Step into the `Get` method and make sure that you
 have passed in the correct arguments. Make sure that the answer is actually 42.

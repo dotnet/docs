@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0-*",
+  "dependencies": {
+    "NETStandard.Library": {
+      "version": "1.5.0-rc2-24027"
+    },
+    "Newtonsoft.Json": "9.0.1-beta1"
+  },
+  "frameworks": {
+    "netstandard1.5": {
+      "imports": "dnxcore50"
+    }
+  }
+}

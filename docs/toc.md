@@ -8,7 +8,7 @@
 ## [Using the CLI tools to write console apps](getting-started/cli-console-app-tutorial.md)
 ## [Setting up your integrated development environment](getting-started/devenv/index.md)
 ### [🔧 Development using Visual Studio 2015](getting-started/devenv/using-visual-studio.md)
-### [🔧 Development using Visual Studio Code](getting-started/devenv/using-visual-studio-code.md)
+### [Development using Visual Studio Code](getting-started/devenv/using-visual-studio-code.md)
 ### [🔧 Development using vim](getting-started/devenv/using-vim.md)
 ### [🔧 Development using Sublime Text](getting-started/devenv/using-sublime.md)
 # [Scenarios](scenarios/index.md)

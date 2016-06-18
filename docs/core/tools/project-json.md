@@ -27,37 +27,36 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 * [description](#description)
 * [copyright](#copyright)
 * [title](#title)
-* [entryPoint](#entryPoint)
-* [testRunner](#testRunner)
+* [entryPoint](#entrypoint)
+* [testRunner](#testrunner)
 * [authors](#authors)
 * [language](#language)
-* [embedInteropTypes](#embedInteropTypes)
+* [embedInteropTypes](#embedinteroptypes)
 * [preprocess](#preprocess)
-* [publishExclude](#publishExclude)
 * [shared](#shared)
-* [namedResource](#namedResource)
-* [packInclude](#packInclude)
-* [excludeBuiltIn](#excludeBuiltIn)
+* [namedResource](#namedresource)
+* [packInclude](#packinclude)
+* [excludeBuiltIn](#excludebuiltin)
 * [dependencies](#dependencies)
 * [tools](#tools)
 * [commands](#commands)
 * [scripts](#scripts)
-* [buildOptions](#buildOptions)
+* [buildOptions](#buildoptions)
     * [define](#define)
     * [nowarn](#nowarn)
-    * [additionalArguments](#additionalArguments)
-    * [languageVersion](#languageVersion)
-    * [allowUnsafe](#allowUnsafe)
+    * [additionalArguments](#additionalarguments)
+    * [languageVersion](#languageversion)
+    * [allowUnsafe](#allowunsafe)
     * [platform](#platform)
-    * [warningsAsErrors](#warningsAsErrors)
+    * [warningsAsErrors](#warningsaserrors)
     * [optimize](#optimize)
-    * [keyFile](#keyFile)
-    * [delaySign](#delaySign)
-    * [publicSign](#publicSign)
-    * [emitEntryPoint](#emitEntryPoint)
-    * [xmlDoc](#xmlDoc)
-    * [preserveCompilationContext](#preserveCompilationContext)
-    * [compilerName](#compilerName)
+    * [keyFile](#keyfile)
+    * [delaySign](#delaysign)
+    * [publicSign](#publicsign)
+    * [emitEntryPoint](#emitentrypoint)
+    * [xmlDoc](#xmldoc)
+    * [preserveCompilationContext](#preservecompilationcontext)
+    * [compilerName](#compilername)
     * [compile](#compile)
         * [include](#compile-include)
         * [exclude](#compile-exclude)
@@ -90,9 +89,13 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
     * [configProperties](#configproperties)
         * [System.GC.Server](#gcserver)
         * [System.GC.Concurrent](#gcconcurrent)
-        * [System.GC.RetainVM](#retainvm)
+        * [System.GC.RetainVM](#gcretainvm)
         * [System.Threading.ThreadPool.MinThreads](#minthreads)
         * [System.Threading.ThreadPool.MaxThreads](#maxthreads)
+    * [framework](#framework)
+        * [name](#framework-name)
+        * [version](#framework-version)
+        * [rollForward](#rollforward)      
 * [packOptions](#packoptions)
     * [summary](#summary)
     * [tags](#tags)
@@ -110,18 +113,16 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
         * [excludeFiles](#files-exclude-files)
         * [builtIns](#files-builtins)
         * [mappings](#files-mappings)
-* [analyzerOptions](#analyzerOptions)
-    * [languageId](#languageId)
+* [analyzerOptions](#analyzeroptions)
+    * [languageId](#languageid)
 * [configurations](#configurations)
 * [frameworks](#frameworks)
-    * [dependencies](#dependencies)
-    * [frameworkAssemblies](#frameworkAssemblies)
-    * [wrappedProject](#wrappedProject)
-    * [imports](#imports)
+    * [dependencies](#frameworks-dependencies)
+    * [frameworkAssemblies](#frameworkassemblies)
+    * [wrappedProject](#wrappedproject)   
     * [bin](#bin)
-        * [assembly](#assembly)
+    * [imports](#imports)
 
-<a name="name"></a>
 ## name
 Type: String
 
@@ -133,7 +134,6 @@ For example:
         "name": "MyLibrary"
     }
 
-<a name="version"></a>
 ## version
 Type: String
 
@@ -145,7 +145,6 @@ For example:
         "version": "1.0.0-*"
     }
 
-<a name="description"></a>
 ## description
 Type: String
 
@@ -157,7 +156,6 @@ For example:
         "description": "This is my library and it's really great!"
     }
 
-<a name="copyright"></a>
 ## copyright
 Type: String
 
@@ -169,7 +167,6 @@ For example:
         "copyright": "Fabrikam 2016"
     }
 
-<a name="title"></a>
 ## title
 Type: String
 
@@ -181,7 +178,6 @@ For example:
         "title": "My Library"
     }
 
-<a name="entryPoint"></a>
 ## entryPoint
 Type: String
 
@@ -193,7 +189,6 @@ For example:
         "entryPoint": "ADifferentMethod"
     }
     
-<a name="testRunner"></a>
 ## testRunner
 Type: String
 
@@ -205,7 +200,6 @@ For example:
         "testRunner": "NUnit"
     }
 
-<a name="authors"></a>
 ## authors
 Type: String[]
 
@@ -217,7 +211,6 @@ For example:
         "authors": ["Anne", "Bob"]
     }
 
-<a name="language"></a>
 ## language
 Type: String
 
@@ -229,11 +222,10 @@ For example:
         "language": "en-US"
     }
 
-<a name="embedInteropTypes"></a>
 ## embedInteropTypes
 Type: Boolean
 
-If set to true, embeds COM interop types in the assembly. 
+**true** to embed COM interop types in the assembly; otherwise, **false**. 
 
 For example:
 
@@ -241,7 +233,6 @@ For example:
         "embedInteropTypes": true
     }
 
-<a name="preprocess"></a>
 ## preprocess
 Type: String or String[] with a globbing pattern
 
@@ -253,7 +244,6 @@ For example:
         "preprocess": "compiler/preprocess/**/*.cs"
     }
 
-<a name="shared"></a>
 ## shared
 Type: String or String[] with a globbing pattern
 
@@ -265,7 +255,6 @@ For example:
         "shared": "shared/**/*.cs"
     }
 
-<a name="namedResource"></a>
 ## namedResource
 Type: Object
 
@@ -279,7 +268,6 @@ For example:
         }
     }
 
-<a name="packInclude"></a>
 ## packInclude
 Type: String or String[] with a globbing pattern
 
@@ -291,7 +279,6 @@ For example:
         "packInclude": "myDeploymentScripts/**/*.ps1"
     }
 
-<a name="excludeBuiltIn"></a>
 ## excludeBuiltIn
 Type: String or String[] with a globbing pattern
 
@@ -303,7 +290,6 @@ For example:
         "excludeBuiltIn": ["bin/**", "obj/**"]
     }
 
-<a name="dependencies"></a>
 ## dependencies
 Type: Object
 
@@ -324,7 +310,6 @@ For example:
         "Microsoft.Extensions.DependencyModel": "1.0.0-*"
     }
 
-<a name="tools"></a>
 ## tools
 Type: Object
 
@@ -338,7 +323,6 @@ For example:
         }
     }
 
-<a name="commands"></a>
 ## commands
 Type: Object
 
@@ -366,11 +350,10 @@ For example:
         }
     }
 
-<a name="buildOptions"></a>
 ## buildOptions
 Type: Object
 
-An object whose properties control various aspects of compilation. The valid properties are listed below. Can also be specified per target framework as described in the [frameworks section](#frameworks)
+An object whose properties control various aspects of compilation. The valid properties are listed below. Can also be specified per target framework as described in the [frameworks section](#frameworks).
 
 For example:
 
@@ -379,7 +362,6 @@ For example:
       "emitEntryPoint": true
     }
 
-<a name="define"></a>
 ### define
 Type: String[]
 
@@ -393,7 +375,6 @@ For example:
         }
     }
 
-<a name="nowarn"></a>
 ### nowarn
 Type: String[]
 
@@ -409,7 +390,6 @@ For example:
 
 This ignores the warnings `The variable 'var' is assigned but its value is never used` and `The variable 'var' is assigned but its value is never used`
 
-<a name="additionalArguments"></a>
 ### additionalArguments
 Type: String[]
 
@@ -423,7 +403,6 @@ For example:
         }
     }
 
-<a name="languageVersion"></a>
 ### languageVersion
 Type: String
 
@@ -437,11 +416,10 @@ For example:
         }
     }
 
-<a name="allowUnsafe"></a>
 ### allowUnsafe
 Type: Boolean
 
-Allows unsafe code in this project.
+**true** to allow unsafe code in this project; otherwise, **false**. The default is **false**.
 
 For example:
 
@@ -451,7 +429,6 @@ For example:
         }
     }
 
-<a name="platform"></a>
 ### platform
 Type: String
 
@@ -465,11 +442,10 @@ For example:
         }
     }
 
-<a name="warningsAsErrors"></a>
 ### warningsAsErrors
 Type: Boolean
 
-If set to true, treats warnings as errors.
+**true** to treat warnings as errors; otherwise, **false**. The default is **false**.
 
 For example:
 
@@ -479,11 +455,10 @@ For example:
         }
     }
 
-<a name="optimize"></a>
 ### optimize
 Type: Boolean
 
-Enables the compiler to optimize the code in this project.
+**true** to enable the compiler to optimize the code in this project; otherwise, **false**. The default is **false**.
 
 For example:
 
@@ -493,7 +468,6 @@ For example:
         }
     }
 
-<a name="keyFile"></a>
 ### keyFile
 Type: String
 
@@ -507,11 +481,10 @@ For example:
         }
     }
 
-<a name="delaySign"></a>
 ### delaySign
 Type: Boolean
 
-Causes signing to be delayed.
+**true** to delay signing; otherwise, **false**. The default is **false**.
 
 For example:
 
@@ -521,11 +494,10 @@ For example:
         }
     }
 
-<a name="publicSign"></a>
 ### publicSign
 Type: Boolean
 
-Enables signing of the resulting assembly.
+**true** to enable signing of the resulting assembly; otherwise, **false**. The default is **false**.
 
 For example:
 
@@ -535,11 +507,10 @@ For example:
         }
     }
 
-<a name="emitEntryPoint"></a>
 ### emitEntryPoint
 Type: Boolean
 
-Creates an executable if set to true; otherwise, the project will produce a `.dll` file.
+**true** to create an executable; **false** to produce a `.dll` file. The default is **false**.
 
 For example:
 
@@ -549,11 +520,10 @@ For example:
         }
     }
 
-<a name="xmlDoc"></a>
 ### xmlDoc
 Type: Boolean
 
-Enables XML documentation to be generated from triple-slash comments in the source code.
+**true** to generate XML documentation from triple-slash comments in the source code; otherwise, **false**. The default is **false**.
 
 For example:
 
@@ -563,13 +533,19 @@ For example:
         }
     }
 
-<a name="preserveCompilationContext"></a>
 ### preserveCompilationContext
 Type: Boolean
 
-TODO
+**true** to preserve reference assemblies and other context data to allow for runtime compilation; otherwise, **false**. The default is **false**.
 
-<a name="compilerName"></a>
+For example:
+
+    {
+        "buildOptions": {
+            "preserveCompilationContext": true
+        }
+    }
+
 ### compilerName
 Type: String
 
@@ -590,11 +566,12 @@ An object containing properties for compilation configuration.
 #### include
 Type: String or String[] with a globbing pattern.
 
+Specifies which files to include in the build. The patterns are rooted at the project folder. Defaults to none.
 TODO
 
 <a name="compile-exclude"></a>
 #### exclude
-Type: String or String[] with a globbing pattern.
+Type: String or String[] with a globbing pattern. The exclude patterns have higher priority than the include patterns, so a file found in both will be excluded. The patterns are rooted at the project folder. Defaults to none.
 
 Specifies which files to exclude from the build.
 
@@ -652,6 +629,7 @@ For example:
     {
         "exclude": ["bin/**", "obj/**"]
     }
+
 <a name="embed-include-files"></a>
 #### includeFiles
 
@@ -707,14 +685,14 @@ Type: String or String[] with a globbing pattern.
 
 TODO
 
-<a name="copytooutput-include-files"></a>
+<a name="copytooutput-exclude-files"></a>
 #### excludeFiles
 
 Type: String or String[] with a globbing pattern.
 
 TODO
 
-<a name="copytooutput-include-builtins"></a>
+<a name="copytooutput-builtins"></a>
 #### builtIns
 Type: Object
 
@@ -778,49 +756,140 @@ TODO
 ## runtimeOptions
 Type: Object
 
-TODO
+Specifies parameters to be provided to the runtime during initialization.
 
 ### configProperties
 Type: Object
 
-Contains runtime configuration settings.
+Contains configuration properties to configure the runtime and the framework.
 
 <a name="gcserver"></a>
 #### System.GC.Server
 Type: Boolean
 
-TODO
+**true** to enable server garbage collection; otherwise, **false**. The default is **true** (?).
+
+For example:
+
+    {
+		"runtimeOptions": {
+        	"configProperties": {
+            	"System.GC.Server": true
+			}
+        }
+    }
 
 <a name="gcconcurrent"></a>
 #### System.GC.Concurrent
 Type: Boolean
 
-TODO
+**true** to enable concurrent garbage collection; otherwise, **false**. The default is **false** (?).
 
-<a name="retainvm"></a>
+For example:
+
+    {
+		"runtimeOptions": {
+        	"configProperties": {
+            	"System.GC.Concurrent": true
+			}
+        }
+    }
+
+<a name="gcretainvm"></a>
 #### System.GC.RetainVM
 Type: Boolean
 
-TODO
+**true** to put segments that should be deleted on a standby list for future use instead of releasing them back to the operating system (OS); otherwise, **false**. The default is **false** (?).
+
+For example:
+
+    {
+		"runtimeOptions": {
+        	"configProperties": {
+            	"System.GC.RetainVM": true
+			}
+        }
+    }
 
 <a name="minthreads"></a>
 #### System.Threading.ThreadPool.MinThreads
 Type: Integer
 
-TODO
+Overrides the number of minimum threads for the ThreadPool worker pool.
+
+    {
+		"runtimeOptions": {
+        	"configProperties": {
+            	"System.Threading.ThreadPool.MinThreads": 4
+			}
+        }
+    }
 
 <a name="maxthreads"></a>
 #### System.Threading.ThreadPool.MaxThreads
 Type: Integer
 
-TODO
+Overrides the number of maximum threads for the ThreadPool worker pool.
+
+    {
+		"runtimeOptions": {
+        	"configProperties": {
+            	"System.Threading.ThreadPool.MaxThreads": 25
+			}
+        }
+    }
+
+### framework
+Type: Object
+
+Contains shared framework properties to use when activating the application. The presence of this section indicates that the application is a portable app designed to use a shared redistributable framework.
+
+<a name="framework-name"></a>
+#### name
+Type: String
+
+Name of the shared framework.
+
+    {
+		"runtimeOptions": {
+        	"framework": {
+            	"name": "Microsoft.DotNetCore"
+			}
+        }
+    }
+
+<a name="framework-version"></a>
+#### version
+Type: String
+
+Version of the shared framework.
+
+    {
+		"runtimeOptions": {
+        	"framework": {
+            	"version": "1.0.1"
+			}
+        }
+    }
+
+#### rollForward
+Type: Boolean
+
+**true** to use the framework from either the same or a higher version that differs only in the `SemVer` patch field. **false** for the host to use only the exact framework version. The default is **true**.
+
+    {
+		"runtimeOptions": {
+        	"framework": {
+            	"rollForward": true
+			}
+        }
+    }
 
 ## packOptions
 Type: Object
 
 TODO
 
-<a name="summary"></a>
 ### summary
 Type: String
 
@@ -832,7 +901,6 @@ For example:
         "summary": "This is my library."
     }
 
-<a name="tags"></a>
 ### tags
 Type: String[]
 
@@ -844,7 +912,6 @@ For example:
         "tags": ["hyperscale", "cats"]
     }
 
-<a name="owners"></a>
 ### owners
 Type: String[]
 
@@ -856,7 +923,6 @@ For example:
         "owners": ["Fabrikam", "Microsoft"]
     }
 
-<a name="releaseNotes"></a>
 ### releaseNotes
 Type: String
 
@@ -868,7 +934,6 @@ For example:
         "releaseNotes": "Initial version, implemented flimflams."
     }
 
-<a name="iconUrl"></a>
 ### iconUrl
 Type: String
 
@@ -880,7 +945,6 @@ For example:
         "iconUrl": "http://www.mylibrary.gov/favicon.ico"
     }
 
-<a name="projectUrl"></a>
 ### projectUrl
 Type: String
 
@@ -892,7 +956,6 @@ For example:
         "projectUrl": "http://www.mylibrary.gov"
     }
 
-<a name="licenseUrl"></a>
 ### licenseUrl
 Type: String
 
@@ -904,11 +967,10 @@ For example:
         "licenseUrl": "http://www.mylibrary.gov/licence"
     }
 
-<a name="requireLicenseAcceptance"></a>
 ### requireLicenseAcceptance
 Type: Boolean
 
-A boolean that causes a prompt to accept the package license when installing the package to be shown. Only used for NuGet packages, ignored in other uses.
+**true** to cause a prompt to accept the package license when installing the package to be shown; otherwise, **false**. Only used for NuGet packages, ignored in other uses. The default is **false**.
 
 For example:
 
@@ -967,7 +1029,6 @@ Type: Object
 
 TODO
 
-<a name="analyzerOptions"></a>
 ## analyzerOptions
 Type: Object
 
@@ -979,7 +1040,6 @@ For example:
         "analyzerOptions": { }
     }
 
-<a name="languageId"></a>
 ### languageId
 Type: String
 
@@ -993,7 +1053,6 @@ For example:
       }
     }
 
-<a name="configurations"></a>
 ## configurations
 Type: Object
 
@@ -1009,7 +1068,6 @@ For example:
       }
     }
 
-<a name="frameworks"></a>
 ## frameworks
 Type: Object
 
@@ -1025,7 +1083,7 @@ For example:
         }
     }
 
-<a name="dependencies"></a>
+<a name="frameworks-dependencies"></a>
 ### dependencies
 Type: Object
 
@@ -1041,7 +1099,6 @@ For example:
         }
     }
 
-<a name="frameworkAssemblies"></a>
 ### frameworkAssemblies
 Type: Object
 
@@ -1059,13 +1116,11 @@ For example:
             }
         }
 
-<a name="wrappedProject"></a>
 ### wrappedProject
 Type: String
 
 TODO
 
-<a name="bin"></a>
 ### bin
 Type: Object
 
@@ -1096,4 +1151,4 @@ For example:
       }
     }
 
-Will cause other packages targeting `portable-net45+win8` to be usable when targeting `dnxcore50` with the current project
+Will cause other packages targeting `portable-net45+win8` to be usable when targeting `dnxcore50` with the current project.

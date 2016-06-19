@@ -1,7 +1,7 @@
 Packages, Metapackages and Frameworks
 =====================================
 
-.NET Core is a platform made of NuGet packages. Some product experiences benefit from fine-grained definition of packages while others from course-grained. To accommodate this duality, the product is distributed as a fine-grained set of packages and then described in courser chunks with a package type informally called a "metapackage".
+.NET Core is a platform made of NuGet packages. Some product experiences benefit from fine-grained definition of packages while others from coarse-grained. To accommodate this duality, the product is distributed as a fine-grained set of packages and then described in courser chunks with a package type informally called a "metapackage".
 
 Each of the .NET Core packages support being run on multiple .NET runtimes, represented as
 frameworks. Some of those frameworks are traditional frameworks, like `net46`, representing the .NET Framework. Another set is new frameworks that can be thought of as "package-based frameworks", which establish a new model for defining frameworks. These package-based frameworks are entirely formed and defined as packages, forming a strong relationship between packages and frameworks.

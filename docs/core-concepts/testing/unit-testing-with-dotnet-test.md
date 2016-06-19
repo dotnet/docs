@@ -145,7 +145,7 @@ get xunit to work with RC2:
   }
 ```
 
-You can see the entire file in the [samples repository](https://github.com/dotnet/core-docs/blob/master/samples/unit-testing/using-dotnet-test/tests/PrimeService.Tests/project.json)
+You can see the entire file in the [samples repository](https://github.com/dotnet/core-docs/blob/master/samples/unit-testing/using-dotnet-test/test/PrimeService.Tests/project.json)
 on GitHub.
 
 After this initial structure is in place, you can write your first test.

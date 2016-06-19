@@ -24,7 +24,7 @@
 ## [Querying XML with LINQ](fundamentals/xml-linq.md)
 ## [Querying JSON with LINQ](fundamentals/json-linq.md)
 ## [Calling REST APIs](fundamentals/calling-rest-apis.md)
-## [Using LINQ](fundamentals//using-linq.md)
+## [Using LINQ](fundamentals/using-linq.md)
 ## [Add and Remove Items from a ConcurrentDictionary](fundamentals/collections/threadsafe/how-to-add-and-remove-items.md)
 ## [Add and Take Items Individually from a BlockingCollection](fundamentals/collections/threadsafe/how-to-add-and-take-items.md)
 ## [Add Bounding and Blocking Functionality to a Collection](fundamentals/collections/threadsafe/how-to-add-bounding-and-blocking.md)

@@ -173,7 +173,7 @@ Core SDK.
 Now, let's update the C# code. Let's create a `Thing` class that contains
 one public method. This method will return the sum of two numbers,
 but  will do so by converting that number to a JSON string, and then
-deserializing it. Rename the file `Program.cs` to `thing.cs`. Then, replace
+deserializing it. Rename the file `Program.cs` to `Thing.cs`. Then, replace
 the existing code (for the template-generated Hello World) with the following:
 
 ```cs

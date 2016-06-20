@@ -355,7 +355,7 @@ working directory to that:
 
 ```js
 "options": {
-    "cwd": ${workspaceRoot}/src/app"
+    "cwd": "${workspaceRoot}/src/app"
 }
 ```
 

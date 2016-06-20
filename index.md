@@ -54,13 +54,13 @@ ms.assetid:
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="">
+                                <a href="/en-us/dotnet/core/index">
                                     <h3>Getting Started with .NET Core</h3>
                                     <p>[Text Needed]</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="">
+                                <a href="/en-us/dotnet/core/api/index">
                                     <h3>Reference</h3>
                                     <p>Class libraries and low-level reference material</p>
                                 </a>

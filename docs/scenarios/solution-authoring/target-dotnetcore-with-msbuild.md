@@ -29,13 +29,13 @@ Creating a library targeting .NET Core
 
 1. In the Visual Studio menu bar, choose **File** | **New** | **Project** and select **Class Library (Portable)**
 
-  ![New Project](../../../images/new-project-dialog-class-library-portable.png)
+  ![New Project](../../images/new-project-dialog-class-library-portable.png)
 
 2. Choose a name and location for your project and click **OK**
 
 3. The "Add Portable Class Library" dialog will appear.  Select **.NET Framework 4.6** and **ASP.NET Core 1.0** as targets and click **OK**
 
-  ![Portable targets dialog](../../../images/pcl-targets-dialog-net46-aspnetcore10.png)
+  ![Portable targets dialog](../../images/pcl-targets-dialog-net46-aspnetcore10.png)
 
 4. In Solution Explorer, right click on your project and choose **Properties**
 5. In the **Library** tab of the project properties, click on the **Target .NET Platform Standard** link, and click **Yes** in the dialog that is shown

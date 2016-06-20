@@ -24,7 +24,7 @@ ms.assetid:
     <aside class="alert section-border">
         <p>Download .NET Core today and get started</p>
         <ol class="action-list">
-            <li><a href="" class="button-bordered button-translucent">Get it!</a></li>
+            <li><a href="https://www.microsoft.com/net/core" class="button-bordered button-translucent">Get it!</a></li>
         </ol>
     </aside>
     <section id="featured" class="container">

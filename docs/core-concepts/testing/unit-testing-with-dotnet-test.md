@@ -132,7 +132,7 @@ at the root of `project.json`:
 
 Finally, you need to set the framework node to use
 `netcoreapp1.0`, and include the required imports to
-get xunit to work with RC2:
+get xUnit.net to work with RC2:
 
 ```json
   "frameworks": {
@@ -156,7 +156,7 @@ as you add features and tests.
 
 The TDD approach calls for writing one failing test, then making it pass,
 then repeating the process. So, let's write that one failing test. Remove
-`program.cs` from the `PrimeService.Tests` directory, and crate a new
+`program.cs` from the `PrimeService.Tests` directory, and create a new
 C# file with the following content:
 
 ```cs
@@ -236,7 +236,7 @@ public void ReturnFalseGivenValuesLessThan2(int value)
 }
 ```
 
-Run `dotnet test` and you'll see the that two of these tests fail.
+Run `dotnet test` and you'll see that two of these tests fail.
 You can make them pass by changing the service. You need to change
 the `if` clause at the beginning of the method:
 

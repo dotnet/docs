@@ -168,7 +168,7 @@ packages into workspace. The `dotnet restore` command updates all dependencies,
 and writes a `project.lock.json` file in the project directory. This
 file contains the full dependency tree of all the dependencies in your
 project. You don't need to read this file, its used by tools in the .NET
-SDK.
+Core SDK.
 
 Now, let's update the C# code. Let's create a `Thing` class that contains
 one public method. This method will return the sum of two numbers,
@@ -372,7 +372,8 @@ You'll change this to:
 "program": "${workspaceRoot}/src/app/bin/Debug/netcoreapp1.0/app.dll",
 ```
 
-If you are running on Windows, you'll need to update `project.json` to
+If you are running on Windows, you'll need to update the Application's `project.json` 
+(in the `src/app` directory) to
 generate portable PDB files (this happens by default on Mac OSX and Linux).
 Add the `debugType` node under `buildOptions`:
 
@@ -381,7 +382,9 @@ Add the `debugType` node under `buildOptions`:
 ```
 
 Set a breakpoint at the `WriteLine` statement in `Main`. You do this
-by pressing the `F9` key. Open the debugger by pressing the debug
+by pressing the `F9` key, or by clicking the mouse in the left margin
+on the line you want the breakpoint). 
+Open the debugger by pressing the debug
 icon on the left of the VS Code screen (see figure). Then,
 press the Play button to start the application under the debugger.
 

@@ -23,7 +23,7 @@ ms.assetid: c2794d8d-023c-4be7-b994-b214ebcfd1ce
 *  [Writing .NET Core console apps using the CLI tools: A step-by-step guide](cli-console-app-tutorial.md)
 *  [Setting up your integrated development environment (IDE)](devenv/index.md)
     *  [🔧 Development using Visual Studio 2015](devenv/using-visual-studio.md)
-    *  [🔧 Development using Visual Studio Code](devenv/using-visual-studio-code.md)
+    *  [Development using Visual Studio Code](devenv/using-visual-studio-code.md)
     *  [🔧 Development using vim](devenv/using-vim.md)
     *  [🔧 Development using Sublime Text](devenv/using-sublime.md)
 

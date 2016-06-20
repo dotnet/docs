@@ -1,0 +1,33 @@
+{
+  "build_entry_point": "",
+  "package_version": "latest-prerelease",
+  "need_generate_pdf": false,
+  "docsets_to_publish": [
+    {
+      "docset_name": "core-docs",
+      "build_source_folder": null,
+      "build_output_subfolder": ".",
+      "build_entry_point": "docs.ps1",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content"
+      }
+    }
+  ],
+  "dependent_repositories": [
+    {
+      "path_to_root": "api_ref",
+      "url": "https://github.com/docascode/coreapi.git",
+      "branch": "master"
+    },
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "develop"
+    }
+  ],
+  "notification_subscribers": []
+}

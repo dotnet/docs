@@ -4,6 +4,7 @@
     * [Building simple C# solutions with Visual Studio](solution-authoring/vs-golden-path.md)
     * [Building simple C# solutions with the .NET CLI](solution-authoring/cli-golden-path.md)
     * [Building simple F# solutions with the .NET CLI](solution-authoring/f-golden-path.md)
+    * [Building simple C# solutions with Visual Studio and MSBuild](target-dotnetcore-with-msbuild.md)
 
 * [Packaging and deploying applications](deployment/index.md)
     * [🔧 Deploying applications overview](deployment/overview.md)

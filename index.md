@@ -19,7 +19,7 @@ ms.assetid:
 <article id="main">
     <section id="hero-content" class="graph">
         <h1>.NET Documentation</h1>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum lorem ante, vitae maximus libero elementum sed. Aliquam lacinia, quam ac dapibus pharetra, massa dolor facilisis lectus, vel maximus dui velit vel lectus. Aenean sed congue odio. Fusce iaculis nisl in ante interdum, vel vehicula enim tempor.</h2>
+        <h2>.NET is a development platform for any kind of app or workload, providing key capabilities for building high quality apps quickly. It consists of the common language runtime (CLR) and .NET libraries, which includes APIs that support an extensive range of technologies. .NET provides a managed execution environment, simplified development and deployment, and integration with a variety of programming languages, including C#, F# and Visual Basic.</h2>
     </section>
     <aside class="alert section-border">
         <p>Download .NET Core today and get started</p>

@@ -15,7 +15,9 @@ ms.assetid: 8ad82148-dac8-4b31-9128-b0e9610f4d9b
 # Development using Visual Studio Code
 
 by [Bertrand Le Roy](https://github.com/bleroy),  [Phillip Carter](https://github.com/cartermp),
-and [Bill Wagner](https://github.com/billwagner)
+[Bill Wagner](https://github.com/billwagner)
+
+Contributions by [Toni Solarin-Sodara](https://github.com/tsolarin)
 
 This document provides a tour of the steps and workflow to create a .NET
 Core Solution using [Visual Studio Code](http://codde.visualstudio.com).
@@ -24,7 +26,6 @@ tools, and incorproate third-party libraries via [NuGet](http://nuget.org).
 
 This article uses Visual Studio Code on Mac OS. Where there are differences,
 it points out the differences for the Windows platform.
-
 
 Prerequisites
 -------------
@@ -36,6 +37,8 @@ of the .NET Core framework and runtime.
 You'll also need to install [Visual Studio Code](http://code.visualstudio.com).
 During the course of this article, you'll also install extensions
 that will improve the .NET Core development experience.
+
+You can find the links to all of these at the [.NET home page](http://dot.net).
 
 Getting Started
 ---------------
@@ -55,11 +58,14 @@ maeans that the .NET Core SDK tools understand the relationship between
 your production code projects and your test code projects. That makes
 your development exerience more productive.
 
-Let's start by creating those folders. In VS Code, create `src` and `test`
+Let's start by creating those folders. In the terminal, create a 'golden'
+directory. Under that directory create `src` and `test`
 directories. Under `src` create `app` and `library` directories. In `test`
 create a `test-library` directory. You can do this either using the terminal
 in VS code, or by clicking on the parent folder in VS Code and selecting the
 "New Folder" icon.
+
+In VS Code, open the 'golden' directory. This directory is the root of your solution.
 
 Next, create a `global.json` file in the root directory for your solution.
 The contents of `global.json` are:

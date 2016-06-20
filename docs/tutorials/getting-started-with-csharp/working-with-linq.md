@@ -1,4 +1,6 @@
-# Introduction
+# Working with LINQ
+
+## Introduction
 This tutorial teaches you a number of features in .NET Core and the C# language. You’ll learn:
 
 *	How to generate sequences with LINQ
@@ -24,7 +26,7 @@ This tutorial has multiple steps. After each step, you can run the
 application and see the progress.
 
 
-# Prerequisites
+## Prerequisites
 You’ll need to setup your machine to run .NET core. Instructions are
 [here](http://dotnet.github.io/getting-started/). You can run this
 application on Windows, Ubuntu Linux, OS X or in a Docker container. 
@@ -33,7 +35,7 @@ use [Visual Studio Code](https://code.visualstudio.com/) which is an open
 source, cross platform editor. However, you can use whatever tools you are
 comfortable with.
 
-# Create the Application
+## Create the Application
 
 The first step is to create a new application. Open a command prompt and
 create a new directory for your application. Make that the current
@@ -44,7 +46,7 @@ If you've never used C# before, [this tutorial](console-teleprompter.md)
 explains the structure of a C# program. You can read that and then
 return here to learn more about LINQ. 
 
-# Creating the Data Set
+## Creating the Data Set
 
 Let's start by creating a deck of cards. You'll do this using a LINQ
 query that has two sources (one for the four suits, one for the
@@ -108,7 +110,7 @@ under a debugger to observe how the `Suits()` and `Values()` methods
 execute. You can clearly see that each string in each sequence is generated
 only as it is needed.
 
-# Manipulating the Order
+## Manipulating the Order
 
 Next, let's build a utility method that can perform the shuffle. The first step
 is to split the deck in two. The `Take()` and `Skip()` methods that are
@@ -210,7 +212,7 @@ public static void Main(string[] args)
 }
 ```
 
-# Comparisons
+## Comparisons
 
 Let's see how many shuffles it takes to set the deck back to its
 original order. You'll need to write a method that determines if
@@ -268,7 +270,7 @@ Console.WriteLine(times);
 Run the sample, and see how the deck rearranges on each shuffle, until
 it returns to its original configuration after 8 iterations.
 
-# Optimizations
+## Optimizations
 
 The sample you've built so far executes an *in shuffle*, where the
 top and bottom cards stay the same on each run. Let's make one change,
@@ -403,7 +405,7 @@ lazy evaluation enables more complex queries to execute only one round trip to t
 database process.) LINQ enables both lazy and eager evaluation. Measure, and pick
 the best choice.
 
-# Preparing for New Features
+## Preparing for New Features
 
 The code you've written for this sample is an example of creating a simple prototype that does the
 job. This is a great way to explore a problem space, and for many features, it may be
@@ -535,7 +537,7 @@ var startingDeck = (from s in Suits().LogQuery("Suit Generation")
 Compile and run again. The output is a little cleaner, and the code is a bit
 more clear and can be extended more easily.
 
-# Conclusion
+## Conclusion
 
 This sample should you some of the methods used in LINQ, how to create your
 own methods that will be easily used with LINQ enabled code. It also showed

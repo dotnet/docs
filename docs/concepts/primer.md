@@ -23,6 +23,7 @@ Most of these concepts are defined in the **What is .NET?** article.
 
 As any mature and advanced application development framework, .NET has many powerful features that make the developer's job easier and aim to make writing code more powerful and expressive. This section will outline the basics of the most salient features and provide pointers to more detailed discussions where needed. After finishing this stroll, you should have enough information to be able to read the samples on our GitHub repos as well as other code and understand what is going on.
 
+*   [Programming languages](#programming-languages)
 *   [Automatic memory management](#automatic-memory-management)
 *   [Type safety](#type-safety)
 *   [Delegates and lambdas](#delegates-and-lambdas)
@@ -31,6 +32,25 @@ As any mature and advanced application development framework, .NET has many powe
 *   [Async Programming](#async-programming)
 *   [Native interoperability](#native-interoperability)
 *   [Unsafe Code](#unsafe-code)
+
+## Programming languages
+
+As a developer, you can choose any programming language that supports .NET to create your application. Because .NET provides language independence and interoperability, you can interact with other .NET applications and components regardless of the language with which they were developed.
+
+Languages that allow you to develop applications for the .NET Platform adhere to the [Common Language Infrastructure (CLI) specification](https://www.visualstudio.com/en-us/mt639507).
+
+Microsoft languages that .NET supports include C#, F#, and Visual Basic. 
+
+* C# is simple, powerful, type-safe, and object-oriented while retaining the expressiveness and elegance of C-style languages. Anyone familiar with C and similar languages will find few problems in adapting to C#.
+
+* F# is a cross-platform, functional-first programming language that also supports traditional object-oriented and imperative programming.
+
+* Visual Basic is an easy language to learn that you can use to build a variety of applications that run on .NET.
+
+> **Note**
+> 
+> In the RC2 release of .NET Core, only C# is fully supported.
+>  
 
 ### Automatic memory management
 

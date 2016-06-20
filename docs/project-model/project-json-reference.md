@@ -1,7 +1,7 @@
 # project.json reference
 
  **Note**
-> This topic is likley to change before release! You can track the status of this issue through our public GitHub issue tracker.
+> This topic is likely to change before release! You can track the status of this issue through our public GitHub issue tracker.
 
 
 * [name](#name)

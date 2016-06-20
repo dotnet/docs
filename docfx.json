@@ -30,16 +30,22 @@
     "content":
       [
         {
-          "files": ["api/**/*.yml"]
+          "files": ["*.yml"],
+          "src": "api_ref",
+          "dest": "core/api"
         },
         {
-          "files": [
-            "docs/**/*.md",
-            "api/*.md"
-          ]
+          "files": ["**/*.md"],
+          "src": "docs",
+          "dest": "core"
         },
         {
-          "files": ["toc.yml"]
+          "files": ["*.md"],
+          "src": "api",
+          "dest": "core/api"
+        },
+        {
+          "files": ["toc.yml", "index.md"]
         }
       ],
     "resource":
@@ -47,7 +53,12 @@
         {
           "files": [
             "docs/images/**",
-            "images/**"
+            "images/**",
+            "_themes/**"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "_themes/DocPacker/**"
           ]
         }
       ],
@@ -55,9 +66,9 @@
     "externalReference": [
     ],
     "globalMetadata": {
-      "_appTitle": "CoreCLR site"
+      "breadcrumb_path": "/dotnet/toc.json"
     },
     "dest": "_site",
-    "template": [ "default", "template" ]
+    "template": [ "docs.html" ]
   }
 }

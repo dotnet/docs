@@ -79,14 +79,6 @@ Catch e As FileNotFoundException
     Console.WriteLine("[Data File Missing] {0}", e)
 ```
 
-C++
-```VC
-catch (FileNotFoundException^ e)
-{
-    Console::WriteLine("[Data File Missing] {0}", e);
-}
-```
-
 User-filtered exception handlers catch and handle exceptions based on requirements you define for the exception. For more information about filtering exceptions in this way, see Using Specific Exceptions in a Catch Block.
 
 ## Related topics

@@ -84,18 +84,17 @@ namespace Prime.Services
 
 Next, cd into the 'test' directory, and create the `PrimeServices.Tests` directory.
 CD into the `PrimeServices.Tests` directory and create a new project using `dotnet new`.
-Once again, `dotnet new` creates a console application, and you'll need to modify
-`project.json` to create a class library project by removing the `buildOptions` node.
+Once again, `dotnet new` creates a console application. Your unit test project is
+a console application, but the unit test assembly should not contain the application
+entry point. The xunit testrunner contains the entry point to run the console application.
+Therefore, you need to modify
+`project.json` by removing the `buildOptions` node.
  
 ```json
 "buildOptions" : {
     "emitEntryPoint": true
 }
 ```
-
-* note: You can track [this issue](https://github.com/dotnet/cli/issues/2052)
-for other project types coming for the .NET Core SDK, including class libraries.
-Once this issue is addressed, you won't need to make these changes.
 
 The test project requires other packages to create and run unit tests.
 You'll need to add xunit, the xunit runner, and the PrimeService
@@ -133,7 +132,7 @@ at the root of `project.json`:
 
 Finally, you need to set the framework node to use
 `netcoreapp1.0`, and include the required imports to
-get xunit to work with RC2:
+get xUnit.net to work with RC2:
 
 ```json
   "frameworks": {
@@ -146,18 +145,18 @@ get xunit to work with RC2:
   }
 ```
 
-You can see the entire file in the [samples repository](https://github.com/dotnet/core-docs/blob/master/samples/unit-testing/using-dotnet-test/tests/PrimeService.Tests/project.json)
+You can see the entire file in the [samples repository](https://github.com/dotnet/core-docs/blob/master/samples/unit-testing/using-dotnet-test/test/PrimeService.Tests/project.json)
 on GitHub.
 
 After this initial structure is in place, you can write your first test.
-After this initial setup, everything is configured and should run smoothly
+Once you verify that first unit test, everything is configured and should run smoothly
 as you add features and tests.
 
 # Creating the first test
 
 The TDD approach calls for writing one failing test, then making it pass,
 then repeating the process. So, let's write that one failing test. Remove
-`program.cs` from the `PrimeService.Tests` directory, and crate a new
+`program.cs` from the `PrimeService.Tests` directory, and create a new
 C# file with the following content:
 
 ```cs
@@ -191,7 +190,9 @@ dependency of the test project.
 
 Now, execute `dotnet test` to run the tests from the console.
 The xunit test runner has the program entry point to run your
-tests from the Console.
+tests from the Console. `dotnet test` starts the
+test runner, and provides a command line argument to the
+testrunner indicating the assembly that contains your tests.
 
 Your test fails. You haven't created the implementation yet.
 Write the simplest code to make this one test pass:
@@ -235,7 +236,7 @@ public void ReturnFalseGivenValuesLessThan2(int value)
 }
 ```
 
-Run `dotnet test` and you'll see the that two of these tests fail.
+Run `dotnet test` and you'll see that two of these tests fail.
 You can make them pass by changing the service. You need to change
 the `if` clause at the beginning of the method:
 
@@ -248,7 +249,7 @@ Now, these tests all pass.
 You continue to iterate by adding more tests, more theories,
 and more code in the main library. You'll quickly end up
 with the
-[finished version of the tests](https://github.com/dotnet/core-docs/blob/master/samples/unit-testing/using-dotnet-test/tests/PrimeService.Tests/PrimeServie_IsPrimeShould.cs)
+[finished version of the tests](https://github.com/dotnet/core-docs/blob/master/samples/unit-testing/using-dotnet-test/test/PrimeService.Tests/PrimeServie_IsPrimeShould.cs)
 and the
 [complete implementation of the library](https://github.com/dotnet/core-docs/blob/master/samples/unit-testing/using-dotnet-test/src/PrimeService/PrimeService.cs).
 

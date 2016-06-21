@@ -68,7 +68,15 @@ To publish a shared framework application use the following command: `dotnet pub
 ## Publishing a standalone application
 To publish a standalone application use the following command: `dotnet publish -f netcoreapp1.0 -r osx.10.10-x64 -c release`.  This will pulbish the release build of the application to a subdirectory under the output folder named `bin/release/netcoreapp1.0/osx.10.10-x64/publish`.  Similarly, options may be omitted to choose the defaults.
 
-# Deploying
+# Deployment
+To deploy a .NET Core application package the contents of the publish folder in the installer of your choice
 
+## Deployment of a shared framework application
+In addition to the application binaries the installer should also either bundle the shared framework installer or check for it as a pre-requisite as part of the installation of the application.  Installation of the shared framework requires Administrator/root access since it is machine wide.
 
-# Execution
+## Deployment of a standalone application
+Standalone applications need only include the application's publish folder.
+
+## Native image generation
+.NET Core is a just in time (JIT) compiled language that stores the application code in an intermediate format that is compiled to native code at runtime.  To increase startup performance the shared framework is pre-compiled using a tool called `crossgen`.  To improve performance of your application you can use the same tool on your application's binaries.  When deploying a standalone application this is more noticable since the entire framework is part of the application.  For more details see [crossgen](core-sdk/cli/crossgen.md).  Crossgen must be run on a machine of the same platform type that you are targeting, but need not be done on the same machine, unlike ngen for the desktop framework.  As such if you are producing a platform specific installer for your application it is reccomended that you crossgen as part of the installer build process.
+

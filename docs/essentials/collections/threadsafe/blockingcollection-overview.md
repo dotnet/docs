@@ -14,7 +14,7 @@ ms.assetid: a1a867de-53c2-49ca-9a1a-e5770a942724
 
 # BlockingCollection Overview
 
-[BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) is a thread-safe collection class that provides the following features:
+[BlockingCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection%601) is a thread-safe collection class that provides the following features:
 
 *   An implementation of the Producer-Consumer pattern.
 
@@ -26,7 +26,7 @@ ms.assetid: a1a867de-53c2-49ca-9a1a-e5770a942724
 
 *   Insertion and removal "try" operations that do not block or that block up to a specified period of time.
 
-*   Encapsulates any collection type that implements [IProducerConsumerCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.IProducerConsumerCollection%601.html).
+*   Encapsulates any collection type that implements [IProducerConsumerCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection%601).
 
 *   Cancellation with cancellation tokens.
 
@@ -38,7 +38,7 @@ ms.assetid: a1a867de-53c2-49ca-9a1a-e5770a942724
     
 ## Bounding and Blocking Support 
 
-[BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) supports bounding and blocking. Bounding means you can set the maximum capacity of the collection. Bounding is important in certain scenarios because it enables you to control the maximum size of the collection in memory, and it prevents the producing threads from moving too far ahead of the consuming threads.
+[BlockingCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection%601) supports bounding and blocking. Bounding means you can set the maximum capacity of the collection. Bounding is important in certain scenarios because it enables you to control the maximum size of the collection in memory, and it prevents the producing threads from moving too far ahead of the consuming threads.
 
 Multiple threads or tasks can add items to the collection concurrently, and if the collection reaches its specified maximum capacity, the producing threads will block until an item is removed. Multiple consumers can remove items concurrently, and if the collection becomes empty, the consuming threads will block until a producer adds an item. A producing thread can call `CompleteAdding` to indicate that no more items will be added. Consumers monitor the `IsCompleted` property to know when the collection is empty and no more items will be added. The following example shows a simple `BlockingCollection` with a bounded capacity of 100. A producer task adds items to the collection as long as some external condition is true, and then calls `CompleteAdding`. The consumer task takes items until the `IsCompleted` property is true.
 
@@ -105,7 +105,7 @@ BlockingCollection<string> bc = new BlockingCollection<string>(new ConcurrentBag
 
 ## Specifying the Collection Type
 
-When you create a `BlockingCollection<T>;`, you can specify not only the bounded capacity but also the type of collection to use. For example, you could specify a [ConcurrentQueue&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentQueue%601.html) for first in-first out (FIFO) behavior, or a [ConcurrentStack&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentStack%601.html) for last in-first out (LIFO) behavior. You can use any collection class that implements the [IProducerConsumerCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.IProducerConsumerCollection%601.html) interface. The default collection type for `BlockingCollection<T>` is `ConcurrentQueue<T>`. The following code example shows how to create a `BlockingCollection<T>` of strings that has a capacity of 1000 and uses a [ConcurrentBag&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentBag%601.html):
+When you create a `BlockingCollection<T>;`, you can specify not only the bounded capacity but also the type of collection to use. For example, you could specify a [ConcurrentQueue&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue%601) for first in-first out (FIFO) behavior, or a [ConcurrentStack&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack%601) for last in-first out (LIFO) behavior. You can use any collection class that implements the [IProducerConsumerCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection%601) interface. The default collection type for `BlockingCollection<T>` is `ConcurrentQueue<T>`. The following code example shows how to create a `BlockingCollection<T>` of strings that has a capacity of 1000 and uses a [ConcurrentBag&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag%601):
 
 ```csharp
 BlockingCollection<string> bc = new BlockingCollection<string>(new ConcurrentBag<string>(), 1000 );
@@ -121,7 +121,7 @@ For scenarios in which a consumer needs to take items from multiple collections 
 
 ## See Also
 
-[System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html)
+[System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)
 
 [Collections and Data Structures](../collections-and-data-structures.md)
 

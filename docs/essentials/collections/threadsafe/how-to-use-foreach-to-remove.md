@@ -14,7 +14,7 @@ ms.assetid: f3db5825-b5c9-4e8b-80bc-e11760d9523e
 
 # How to: Use ForEach to Remove Items in a BlockingCollection
 
-In addition to taking items from a [BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) by using the `Take` and `TryTake` methods, you can also use a `foreach` loop to remove items until adding is completed and the collection is empty. This is called a mutating enumeration or consuming enumeration because, unlike a typical `foreach` loop, this enumerator modifies the source collection by removing items.
+In addition to taking items from a [BlockingCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection%601) by using the `Take` and `TryTake` methods, you can also use a `foreach` loop to remove items until adding is completed and the collection is empty. This is called a mutating enumeration or consuming enumeration because, unlike a typical `foreach` loop, this enumerator modifies the source collection by removing items.
 
 ## Example
 
@@ -126,6 +126,6 @@ To enumerate the collection without modifying it, just use `foreach` without the
 
 ## See Also
 
-[System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html)
+[System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)
 
 [BlockingCollection Overview](blockingcollection-overview.md)

@@ -14,7 +14,7 @@ The .NET Standard Library is not itself a platform, but rather a standard that p
 
 An assembly in the .NET Standard Library is a library or executable file that targets a .NET-capable platform.  A reference assembly (also known as a contract) is a library that defines types and their members but contains no implementation code. Because they contain no implementation, reference assemblies are used for compilation only. The reference assemblies that comprise the .NET Standard Library are found on [GitHub](https://github.com/dotnet/corefx/tree/master/src "GitHub"). 
 
-To take a simple example, the System.Resources.ResourceManager reference assembly defines one exception type with three unique members, two attribute types with two unique members each, and a [ResourceManager](https://dotnet.github.io/api/System.Resources.ResourceManager.html "ResourceManager") class with two constructors and two string retrieval methods. The following is the entire content of the System.Resources.ResourceManager reference assembly:
+To take a simple example, the System.Resources.ResourceManager reference assembly defines one exception type with three unique members, two attribute types with two unique members each, and a [ResourceManager](https://docs.microsoft.com/en-us/dotnet/core/api/System.Resources.ResourceManager.html "ResourceManager") class with two constructors and two string retrieval methods. The following is the entire content of the System.Resources.ResourceManager reference assembly:
 
     
     namespace System.Resources

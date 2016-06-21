@@ -80,15 +80,15 @@ Microsoft.NetCore.App is included with the runtime and contains the basic types 
 
 -  Primitives, such as the Boolean type, signed and unsigned integral types, floating-point types, and the Char structure.
 
-- The String type. A string in .NET Core is a sequence of UTF-16 code units. .NET Core also includes a number of encoding types that let you convert UTF-16 encoded strings to an array of bytes in other encodings. For example, you can use the [UTF8Encoding class](https://dotnet.github.io/api/System.Text.UTF8Encoding.html "UTF8Encoding class") to convert a .NET Core string to a UTF-8 encoded byte array that represents a string on Linux.  
+- The String type. A string in .NET Core is a sequence of UTF-16 code units. .NET Core also includes a number of encoding types that let you convert UTF-16 encoded strings to an array of bytes in other encodings. For example, you can use the [UTF8Encoding class]( https://docs.microsoft.com/en-us/dotnet/core/api/System.Text.UTF8Encoding.html "UTF8Encoding class") to convert a .NET Core string to a UTF-8 encoded byte array that represents a string on Linux.  
   
 -  General-purpose exception classes, such as the ArgumentException, ArgumentNullException, and NullReferenceException types.
 
-- The task types, such as [Task](https://dotnet.github.io/api/System.Threading.Tasks.Task.html "Task") and [Task&lt;T&gt;](https://dotnet.github.io/api/System.Threading.Tasks.Task%601.html "Task&lt;T&gt;"), to support asynchronous programming.
+- The task types, such as [Task]( https://docs.microsoft.com/en-us/dotnet/core/api/System.Threading.Tasks.Task.html "Task") and [Task&lt;T&gt;]( https://docs.microsoft.com/en-us/dotnet/core/api/System.Threading.Tasks.Task%601.html "Task&lt;T&gt;"), to support asynchronous programming.
 
 - Basic threading types.
 
-- The [Console class](https://dotnet.github.io/api/System.Console.html "Console class"), to support the development of console apps. 
+- The [Console class]( https://docs.microsoft.com/en-us/dotnet/core/api/System.Console.html "Console class"), to support the development of console apps. 
 
 Other libraries are installed as [NuGet](http://www.nuget.org/ "NuGet") packages
 

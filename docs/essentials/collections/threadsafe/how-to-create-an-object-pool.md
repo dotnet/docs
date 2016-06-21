@@ -2,7 +2,7 @@
 
 This example shows how to use a concurrent bag to implement an object pool. Object pools can improve application performance in situations where you require multiple instances of a class and the class is expensive to create or destroy. When a client program requests a new object, the object pool first attempts to provide one that has already been created and returned to the pool. If none is available, only then is a new object created. 
 
-[ConcurrentBag&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentBag%601.html) is used to store the objects because it supports fast insertion and removal, especially when the same thread is both adding and removing items. This example could be further augmented to be built around a [IProducerConsumerCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.IProducerConsumerCollection%601.html), which the bag data structure implements, as do [ConcurrentQueue&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentQueue%601.html) and [ConcurrentStack&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentStack%601.html).
+[ConcurrentBag&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag%601.html) is used to store the objects because it supports fast insertion and removal, especially when the same thread is both adding and removing items. This example could be further augmented to be built around a [IProducerConsumerCollection&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection%601.html), which the bag data structure implements, as do [ConcurrentQueue&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue%601.html) and [ConcurrentStack&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack%601.html).
 
 ## Example
 
@@ -101,7 +101,7 @@ namespace ObjectPoolExample
 
 ## See Also
 
-[System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html)
+[System.Collections.Concurrent](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Concurrent.html)
 
 [Thread-Safe Collections](../thread-safe-collections.md)
 

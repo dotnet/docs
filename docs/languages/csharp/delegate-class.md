@@ -13,8 +13,8 @@ keyword.
 Let's start with the 'delegate' keyword, because that's primarily what
 you will use as you work with delegates. The code that the
 compiler generates when you use the `delegate` keyword will
-map to method calls that invoke members of the [`System.Delegate`](http://dotnet.github.io/api/System.Delegate.html)
-and [`System.Multicast`](http://dotnet.github.io/api/System.MulticastDelegate.html) classes. 
+map to method calls that invoke members of the [`System.Delegate`](https://docs.microsoft.com/en-us/dotnet/core/api/System.Delegate.html)
+and [`System.Multicast`](https://docs.microsoft.com/en-us/dotnet/core/api/System.MulticastDelegate.html) classes. 
 
 You define a delegate type using syntax that is similar to defining
 a method signature. You just add the `delegate` keyword to the
@@ -156,8 +156,8 @@ have multiple target methods attached to a delegate object.
 The language support desccribed above provides the features
 and support you'll typically need to work with delegates. These
 features are built on two classes in the .NET Core
-framework: [`System.Delegate`](http://dotnet.github.io/api/System.Delegate.html)
-and [`System.Multicast`](http://dotnet.github.io/api/System.MulticastDelegate.html).
+framework: [`System.Delegate`](https://docs.microsoft.com/en-us/dotnet/core/api/System.Delegate.html)
+and [`System.Multicast`](https://docs.microsoft.com/en-us/dotnet/core/api/System.MulticastDelegate.html).
 
 The `System.Delegate` class, and its single direct sub-class,
 `System.MulticastDelegate`, provide the framework support for

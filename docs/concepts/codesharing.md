@@ -129,7 +129,7 @@ A particular version of the .NET Standard Library is defined by:
   
 -  The individual types and members found in those reference assemblies.
 
-Any change in a reference assembly's API surface area causes the .NET Standard Library version to change (and its version number to increment). For example, adding a new method, such as a new `String.Contains(String, StringComparison)` overload to the [https://docs.microsoft.com/dotnet/core/api/System.String](https://docs.microsoft.com/dotnet/core/api/System.String "String") class in the System.Runtime reference assembly would cause the .NET Standard Library version to change.
+Any change in a reference assembly's API surface area causes the .NET Standard Library version to change (and its version number to increment). For example, adding a new method, such as a new `String.Contains(String, StringComparison)` overload to the [System.String](https://docs.microsoft.com/dotnet/core/api/System.String "String") class in the System.Runtime reference assembly would cause the .NET Standard Library version to change.
 
 Lower versions of the .NET Standard Library are always compatible with higher versions. This means that the APIs in a lower (or earlier) version of the standard are always a subset of the APIs in higher (or later) versions. Conversely, the APIs in higher (or later) versions of the standard are a superset of APIs in lower (or earlier) versions. 
 

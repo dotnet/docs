@@ -1,3 +1,17 @@
+---
+title: How to use Finally blocks
+description: How to use Finally blocks
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 3c1b048b-a206-4e70-9797-aff3fc3e5440
+---
+
 # How to use Finally blocks
 
 When an exception occurs, execution stops and control is given to the closest exception handler. This often means that lines of code you expect to always be called are not executed. Some resource cleanup, such as closing a file, must always be executed even if an exception is thrown. To accomplish this, you can use a Finally block. A Finally block is always executed, regardless of whether an exception is thrown.

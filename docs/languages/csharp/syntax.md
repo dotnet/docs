@@ -1,3 +1,17 @@
+---
+title: Syntax
+description: Syntax
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 901184ac-1370-40b0-ad57-1f674890befe
+---
+
 # 🔧 Syntax
 
 > **Note**

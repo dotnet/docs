@@ -1,3 +1,17 @@
+---
+title: Porting your applications
+description: Porting your applications
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: d3096500-b096-434a-a05d-bb9fb7c821ea
+---
+
 # 🔧 Porting your applications
 
 > **Note**

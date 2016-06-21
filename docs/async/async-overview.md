@@ -1,3 +1,17 @@
+---
+title: Async Overview
+description: Async Overview
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 1e38e9d9-8284-46ee-a15f-199adc4f26f4
+---
+
 # Async Overview
 
 Modern apps are expected to be responsive and modern services are expected to be elastic:

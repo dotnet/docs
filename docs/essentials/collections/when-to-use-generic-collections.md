@@ -1,3 +1,17 @@
+---
+title: When to Use Generic Collections
+description: When to Use Generic Collections
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 971e08bd-b63f-4832-9e61-9f65cbedd352
+---
+
 # When to Use Generic Collections
 
 Using generic collections is generally recommended, because you gain the immediate benefit of type safety without having to derive from a base collection type and implement type-specific members. Generic collection types also generally perform better than the corresponding nongeneric collection types (and better than types that are derived from nongeneric base collection types) when the collection elements are value types, because with generics there is no need to box the elements. 

@@ -1,3 +1,17 @@
+---
+title: Code Sharing with the .NET Standard Library #
+description: Code Sharing with the .NET Standard Library #
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: d4c31c29-e977-48f2-b4c7-0335ef50d440
+---
+
 # Code Sharing with the .NET Standard Library #
 
 The .NET Standard Library aims at maintaining binary compatibility between the .NET-capable platforms for which an application is developed and future versions of those platforms. It also supports source code compatibility between platforms that support a particular version of the .NET Standard. 

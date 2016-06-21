@@ -1,3 +1,17 @@
+---
+title: Best practices for exceptions
+description: Best practices for exceptions
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 937251f7-d7cb-4dbe-8ef4-aa24873a00b3
+---
+
 # Best practices for exceptions
 
 A well-designed app handles exceptions and errors to prevent app crashes. This article describes best practices for handling and creating exceptions.

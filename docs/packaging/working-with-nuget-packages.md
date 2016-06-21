@@ -1,3 +1,17 @@
+---
+title: Working with Nuget Packages
+description: Working with Nuget Packages
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 7f7b7c92-cf35-4dc1-880e-3a9adf61be46
+---
+
 # 🔧 Working with Nuget Packages
 
 > **Note**

@@ -1,3 +1,17 @@
+---
+title: REST client
+description: REST client
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
+---
+
 # REST client
 
 ## Introduction

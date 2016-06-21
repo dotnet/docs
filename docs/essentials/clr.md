@@ -1,3 +1,17 @@
+---
+title: Common Language Runtime (CLR)
+description: Common Language Runtime (CLR)
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 7704d9c9-e5fa-4969-a423-081cce0e21e6
+---
+
 # Common Language Runtime (CLR)
 
 The .NET Framework provides a run-time environment called the common language runtime, which runs the code and provides services that make the development process easier.

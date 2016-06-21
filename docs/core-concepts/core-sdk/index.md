@@ -1,3 +1,17 @@
+---
+title: .NET Core SDK
+description: .NET Core SDK
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: b1a8351f-93de-44d1-9c2b-5eef7244a344
+---
+
 # .NET Core SDK
 
 

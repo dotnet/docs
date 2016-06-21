@@ -1,3 +1,17 @@
+---
+title: Creating NuGet Packages
+description: Creating NuGet Packages
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: d94ee5da-07be-45d0-939b-2bdf22939aef
+---
+
 # 🔧 Creating NuGet Packages
 
 > **Note**

@@ -1,3 +1,17 @@
+---
+title: How to use the Try/Catch block to catch exceptions
+description: How to use the Try/Catch block to catch exceptions
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: de546d04-661f-402b-9699-1542553e0ad8
+---
+
 # How to use the Try/Catch block to catch exceptions
 
 Place the sections of code that might throw exceptions in a Try block and place code that handles exceptions in a Catch block. The Catch block is a series of statements beginning with the keyword **catch**, followed by an exception type and an action to be taken.

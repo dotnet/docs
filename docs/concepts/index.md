@@ -1,3 +1,17 @@
+---
+title: Learn the .NET Platform
+description: Learn the .NET Platform
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 8253d446-4ec5-4411-994d-9af52d6732b8
+---
+
 # Learn the .NET Platform
 
 * [.NET Primer](primer.md)

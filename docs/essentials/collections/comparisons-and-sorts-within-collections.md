@@ -1,3 +1,17 @@
+---
+title: Comparisons and Sorts Within Collections
+description: Comparisons and Sorts Within Collections
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: c7b7c005-628d-427a-91ad-af0c3958c00e
+---
+
 # Comparisons and Sorts Within Collections
 
 The [System.Collections](https://dotnet.github.io/api/System.Collections.html) classes perform comparisons in almost all the processes involved in managing collections, whether searching for the element to remove or returning the value of a key-and-value pair.

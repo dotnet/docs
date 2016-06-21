@@ -1,3 +1,17 @@
+---
+title: CType system
+description: CType system
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 08589912-2fa0-4636-9aa6-d8b2b83cdf88
+---
+
 # 🔧 C# Type system
 
 > **Note**

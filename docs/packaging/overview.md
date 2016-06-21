@@ -1,3 +1,17 @@
+---
+title: Introducing NuGet
+description: Introducing NuGet
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: bbb59361-d4e6-46fe-b8da-3fbbf1282001
+---
+
 # 🔧 Introducing NuGet
 
 > **Note**

@@ -1,3 +1,17 @@
+---
+title: How to: Add and Take Items Individually from a BlockingCollection
+description: How to: Add and Take Items Individually from a BlockingCollection
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 2b9d39ab-0993-4453-b021-b04870098bf7
+---
+
 # How to: Add and Take Items Individually from a BlockingCollection
 
 This example shows how to add and remove items from a [BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) in both a blocking and non-blocking manner. For more information on `BlockingCollection<T>`, see [BlockingCollection Overview](blockingcollection-overview.md). 

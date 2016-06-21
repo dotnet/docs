@@ -1,3 +1,17 @@
+---
+title: .NET Core CLI extensibility model 
+description: .NET Core CLI extensibility model 
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 1bebd25a-120f-48d3-8c25-c89965afcbcd
+---
+
 # .NET Core CLI extensibility model 
 
 ## Overview

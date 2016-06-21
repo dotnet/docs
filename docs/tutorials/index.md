@@ -1,3 +1,17 @@
+---
+title: CTutorials
+description: CTutorials
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: fcc83b5b-fb68-4e48-9132-0882677d8056
+---
+
 # C# Tutorials
 
 These exercises enable you to build C# programs using core CLR.

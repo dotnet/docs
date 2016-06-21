@@ -1,3 +1,17 @@
+---
+title: Unit Testing in .NET Core using dotnet test
+description: Unit Testing in .NET Core using dotnet test
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: bdcdb812-6f13-4f20-9e90-0c0977937142
+---
+
 # Unit Testing in .NET Core using dotnet test
 
 By [Steve Smith](http://ardalis.com) and [Bill Wagner](https://github.com/BillWagner)

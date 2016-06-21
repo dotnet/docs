@@ -1,3 +1,17 @@
+---
+title: How to explicitly throw exceptions
+description: How to explicitly throw exceptions
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 388db00b-0989-4da2-b5e3-334889455835
+---
+
 # How to explicitly throw exceptions
 
 You can explicitly throw an exception using the **throw** statement. You can also throw a caught exception again using the **throw** statement. It is good coding practice to add information to an exception that is re-thrown to provide more information when debugging.

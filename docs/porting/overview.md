@@ -1,3 +1,17 @@
+---
+title: Overview of porting process
+description: Overview of porting process
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 7d091c07-b361-42a3-bbdd-31df8deab638
+---
+
 # 🔧 Overview of porting process
 
 > **Note**

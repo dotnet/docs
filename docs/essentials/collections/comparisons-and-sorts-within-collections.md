@@ -1,6 +1,6 @@
 # Comparisons and Sorts Within Collections
 
-The [System.Collections](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.html) classes perform comparisons in almost all the processes involved in managing collections, whether searching for the element to remove or returning the value of a key-and-value pair.
+The [System.Collections](https://docs.microsoft.com/dotnet/core/api/System.Collections) classes perform comparisons in almost all the processes involved in managing collections, whether searching for the element to remove or returning the value of a key-and-value pair.
 
 Collections typically utilize an equality comparer and/or an ordering comparer. Two constructs are used for comparisons. 
 
@@ -8,11 +8,11 @@ Collections typically utilize an equality comparer and/or an ordering comparer. 
 
 Methods such as `Contains`, `IndexOf`, `LastIndexOf`, and `Remove` use an equality comparer for the collection elements. If the collection is generic, items are compared for equality according to the following guidelines:
 
-*   If type T implements the [IEquatable&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.IEquatable%601.html) generic interface, then the equality comparer is the `Equals` method of that interface.
+*   If type T implements the [IEquatable&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.IEquatable%601) generic interface, then the equality comparer is the `Equals` method of that interface.
 
 *   If type T does not implement `IEquatable<T>`, `Object.Equals` is used.
 
-In addition, some constructor overloads for dictionary collections accept an [IEqualityComparer&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Generic.IEqualityComparer%601.html) implementation, which is used to compare keys for equality.
+In addition, some constructor overloads for dictionary collections accept an [IEqualityComparer&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IEqualityComparer%601) implementation, which is used to compare keys for equality.
 
 ## Determining sort order
 
@@ -20,17 +20,17 @@ Methods such as `BinarySearch` and `Sort` use an ordering comparer for the colle
 
 The default comparer relies on at least one of the objects being compared to implement the `IComparable` interface. It is a good practice to implement `IComparable` on all classes are used as values in a list collection or as keys in a dictionary collection. For a generic collection, equality comparison is determined according to the following:
 
-*   If type T implements the [System.IComparable&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.IComparable%601.html) generic interface, then the default comparer is the `CompareTo(T)` method of that interface.
+*   If type T implements the [System.IComparable&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.IComparable%601) generic interface, then the default comparer is the `CompareTo(T)` method of that interface.
 
-*   If type T implements the non-generic [System.IComparable](https://docs.microsoft.com/en-us/dotnet/core/api/System.IComparable.html) interface, then the default comparer is the `CompareTo`(Object) method of that interface.
+*   If type T implements the non-generic [System.IComparable](https://docs.microsoft.com/dotnet/core/api/System.IComparable) interface, then the default comparer is the `CompareTo`(Object) method of that interface.
 
 *   If type T doesn’t implement either interface, then there is no default comparer, and a comparer or comparison delegate must be provided explicitly.
 
-To provide explicit comparisons, some methods accept an `IComparer` implementation as a parameter. For example, the `List<T>.Sort` method accepts an [System.Collections.Generic.IComparer&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Generic.IComparer%601.html) implementation. 
+To provide explicit comparisons, some methods accept an `IComparer` implementation as a parameter. For example, the `List<T>.Sort` method accepts an [System.Collections.Generic.IComparer&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IComparer%601) implementation. 
 
 ## Equality and sort example
 
-The following code demonstrates an implementation of [IEquatable&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.IEquatable%601.html) and [IComparable&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.IComparable%601.html) on a simple business object. In addition, when the object is stored in a list and sorted, you will see that calling the `Sort()` method results in the use of the default comparer for the 'Part' type, and the `Sort(Comparison<T>)` method implemented by using an anonymous method.
+The following code demonstrates an implementation of [IEquatable&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.IEquatable%601) and [IComparable&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.IComparable%601) on a simple business object. In addition, when the object is stored in a list and sorted, you will see that calling the `Sort()` method results in the use of the default comparer for the 'Part' type, and the `Sort(Comparison<T>)` method implemented by using an anonymous method.
 
 C#
 
@@ -173,12 +173,12 @@ public class Example
 
 ## See Also
 
-[IComparer](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.IComparer.html)
+[IComparer](https://docs.microsoft.com/dotnet/core/api/System.Collections.IComparer)
 
-[IEquatable&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.IEquatable%601.html)
+[IEquatable&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.IEquatable%601)
 
-[IComparer&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Generic.IComparer%601.html)
+[IComparer&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IComparer%601)
 
-[IComparable](https://docs.microsoft.com/en-us/dotnet/core/api/System.IComparable.html)
+[IComparable](https://docs.microsoft.com/dotnet/core/api/System.IComparable)
 
-[IComparable&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.IComparable%601.html)
+[IComparable&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.IComparable%601)

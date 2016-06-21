@@ -1,20 +1,20 @@
 # Sorted Collection Types  
  
- The [System.Collections.SortedList](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.SortedList.html) class, the [System.Collections.Generic.SortedList&lt;TKey, TValue&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Generic.SortedList%602.html) generic class, and the [System.Collections.Generic.SortedDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Generic.SortedDictionary%602.html) generic class are similar to the [Hashtable](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Hashtable.html) class and the [Dictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Generic.Dictionary%602.html) generic class in that they implement the [IDictionary](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.IDictionary.html) interface, but they maintain their elements in sort order by key, and they do not have the O(1) insertion and retrieval characteristic of hash tables. The three classes have several features in common:  
+ The [System.Collections.SortedList](https://docs.microsoft.com/dotnet/core/api/System.Collections.SortedList) class, the [System.Collections.Generic.SortedList&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.SortedList%602) generic class, and the [System.Collections.Generic.SortedDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.SortedDictionary%602) generic class are similar to the [Hashtable](https://docs.microsoft.com/dotnet/core/api/System.Collections.Hashtable) class and the [Dictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary%602) generic class in that they implement the [IDictionary](https://docs.microsoft.com/dotnet/core/api/System.Collections.IDictionary) interface, but they maintain their elements in sort order by key, and they do not have the O(1) insertion and retrieval characteristic of hash tables. The three classes have several features in common:  
 
- *   All three classes implement the [System.Collections.IDictionary](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.IDictionary.html) interface. The two generic classes also implement the [System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Generic.IDictionary%602.html) generic interface.  
+ *   All three classes implement the [System.Collections.IDictionary](https://docs.microsoft.com/dotnet/core/api/System.Collections.IDictionary) interface. The two generic classes also implement the [System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IDictionary%602) generic interface.  
  
  *   Each element is a key/value pair for enumeration purposes.   
   
 > **Note**  
  >   
->The nongeneric [SortedList](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.SortedList.html) class returns [DictionaryEntry](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.DictionaryEntry.html) objects when enumerated, although the two generic types return [KeyValuePair&lt;TKey, TValue&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Generic.KeyValuePair%602.html) objects.  
+>The nongeneric [SortedList](https://docs.microsoft.com/dotnet/core/api/System.Collections.SortedList) class returns [DictionaryEntry](https://docs.microsoft.com/dotnet/core/api/System.Collections.DictionaryEntry) objects when enumerated, although the two generic types return [KeyValuePair&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.KeyValuePair%602) objects.  
    
-*   Elements are sorted according to a [System.Collections.IComparer](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.IComparer.html) implementation (for nongeneric `SortedList`) or a [System.Collections.Generic.IComparer&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Generic.IComparer%601.html) implementation (for the two generic classes).  
+*   Elements are sorted according to a [System.Collections.IComparer](https://docs.microsoft.com/dotnet/core/api/System.Collections.IComparer) implementation (for nongeneric `SortedList`) or a [System.Collections.Generic.IComparer&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IComparer%601) implementation (for the two generic classes).  
    
  *   Each class provides properties that return collections containing only the keys or only the values.  
    
-The following table lists some of the differences between the two sorted list classes and the [SortedDictionary<TKey, TValue>](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Generic.SortedDictionary%602.html) class.  
+The following table lists some of the differences between the two sorted list classes and the [SortedDictionary<TKey, TValue>](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.SortedDictionary%602) class.  
    
  `SortedList` nongeneric class and `SortedList<TKey, TValue>` generic class | `SortedDictionary<TKey, TValue>` generic class  
  --------------------------------------------------------------------------------- | ------------------------------  
@@ -23,20 +23,20 @@ The following table lists some of the differences between the two sorted list cl
  Insertion and removal are generally O(n); however, insertion is O(1) for data that are already in sort order, so that each element is added to the end of the list. (This assumes that a resize is not required.) | Insertion and removal are O(log n).  
  Uses less memory than a `SortedDictionary<TKey, TValue>`. | Uses more memory than the `SortedList` nongeneric class and the `SortedList<TKey, TValue>` generic class.  
   
- For sorted lists or dictionaries that must be accessible concurrently from multiple threads, you can add sorting logic to a class that derives from [ConcurrentDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary%602.html).  
+ For sorted lists or dictionaries that must be accessible concurrently from multiple threads, you can add sorting logic to a class that derives from [ConcurrentDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary%602).  
   
  > **Note**  
  >   
  >For values that contain their own keys (for example, employee records that contain an employee ID number), you can create a keyed collection that has some characteristics of a list and some characteristics of a dictionary by deriving from the [KeyedCollection&lt;TKey, TItem&gt;]() generic class.  
    
- The [SortedSet&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Generic.SortedSet%601.html) class provides a self-balancing tree that maintains data in sorted order after insertions, deletions, and searches. This class and the [HashSet&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Generic.HashSet%601.html) class implement the [ISet&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Generic.ISet%601.html) interface.  
+ The [SortedSet&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.SortedSet%601) class provides a self-balancing tree that maintains data in sorted order after insertions, deletions, and searches. This class and the [HashSet&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.HashSet%601) class implement the [ISet&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.ISet%601) interface.  
    
 ## See Also  
   
-[System.Collections.IDictionary](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.IDictionary.html)  
+[System.Collections.IDictionary](https://docs.microsoft.com/dotnet/core/api/System.Collections.IDictionary)  
    
-[System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Generic.IDictionary%602.html)  
+[System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IDictionary%602)  
    
-[ConcurrentDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary%602.html)  
+[ConcurrentDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary%602)  
  
 [Commonly Used Collection Types](commonly-used-collection-types.md) 

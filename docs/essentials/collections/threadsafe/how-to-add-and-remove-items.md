@@ -1,3 +1,17 @@
+---
+title: How to: Add and Remove Items from a ConcurrentDictionary
+description: How to: Add and Remove Items from a ConcurrentDictionary
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: b7c04a5f-a8e6-42ae-8c84-0e1ae18896eb
+---
+
 # How to: Add and Remove Items from a ConcurrentDictionary
 
 This example shows how to add, retrieve, update, and remove items from a [System.Collections.Concurrent.ConcurrentDictionary&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentDictionary%602.html). This collection class is a thread-safe implementation. We recommend that you use it whenever multiple threads might be attempting to access the elements concurrently.

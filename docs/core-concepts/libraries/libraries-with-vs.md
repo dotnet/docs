@@ -1,3 +1,17 @@
+---
+title: Creating Libraries in Visual Studio
+description: Creating Libraries in Visual Studio
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 050226db-f66d-4ada-9b93-913574d1f238
+---
+
 # 🔧 Creating Libraries in Visual Studio
 
 > **Note**

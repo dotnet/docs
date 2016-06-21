@@ -1,3 +1,17 @@
+---
+title: Numerics in .NET Core
+description: Numerics in .NET Core
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 6b8696be-55f5-4b66-98f3-69ff827c2c49
+---
+
 # Numerics in .NET Core
 
 .NET Core supports the standard numeric integral and floating-point primitives, as well as [System.Numerics.BigInteger](http://dotnet.github.io/api/System.Numerics.BigInteger.html), an integral type with no theoretical upper or lower bound, [System.Numerics.Complex](http://dotnet.github.io/api/System.Numerics.Complex.html), a type that represents complex numbers, and a set of Single Instruction Multiple Data ([SIMD](https://en.wikipedia.org/wiki/SIMD))-enabled vector types in the [System.Numerics](http://dotnet.github.io/api/System.Numerics.html) namespace. 

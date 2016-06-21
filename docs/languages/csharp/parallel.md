@@ -1,3 +1,17 @@
+---
+title: Parallel programming
+description: Parallel programming
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 8045b1b8-7835-4a7a-980d-bc9c70d62a0c
+---
+
 # 🔧 Parallel programming
 
 > **Note**

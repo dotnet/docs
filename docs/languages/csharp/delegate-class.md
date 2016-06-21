@@ -1,3 +1,17 @@
+---
+title: System.Delegate and the `delegate` keyword
+description: System.Delegate and the `delegate` keyword
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: f3742fda-13c2-4283-8966-9e21c2674393
+---
+
 # System.Delegate and the `delegate` keyword
 
 By [Bill Wagner](https://github.com/BillWagner)

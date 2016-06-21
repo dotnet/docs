@@ -1,3 +1,17 @@
+---
+title: Thread-Safe Collections
+description: Thread-Safe Collections
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 92d5515d-f5d6-4a09-8bbb-31865d678643
+---
+
 # Thread-Safe Collections
 
 The [System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html) namespace includes several collection classes that are both thread-safe and scalable. Multiple threads can safely and efficiently add or remove items from these collections, without requiring additional synchronization in user code. When you write new code, use the concurrent collection classes whenever the collection will be writing to multiple threads concurrently. If you are only reading from a shared collection, then you can use the classes in the [System.Collections.Generic](http://dotnet.github.io/api/System.Collections.Generic.html) namespace. We recommend that you do not use [System.Collections](http://dotnet.github.io/api/System.Collections.html) collection classes unless you are required to target the .NET Framework 1.1 or earlier runtime.

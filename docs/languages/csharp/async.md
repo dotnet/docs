@@ -1,3 +1,17 @@
+---
+title: Asynchronous programming
+description: Asynchronous programming
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
+---
+
 # Asynchronous programming
 
 By [Phillip Carter](https://github.com/cartermp)

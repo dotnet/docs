@@ -1,3 +1,17 @@
+---
+title: LINQ (Language Integrated Query)
+description: LINQ (Language Integrated Query)
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: c00939e1-59e3-4e61-8fe9-08ad6b3f1295
+---
+
 # LINQ (Language Integrated Query)
 
 ## What is it?

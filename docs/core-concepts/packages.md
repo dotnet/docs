@@ -1,3 +1,17 @@
+---
+title: Packages, Metapackages and Frameworks
+description: Packages, Metapackages and Frameworks
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 609b0845-49e7-4864-957b-21ffe1b93bf2
+---
+
 Packages, Metapackages and Frameworks
 =====================================
 

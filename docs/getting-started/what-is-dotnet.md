@@ -1,3 +1,17 @@
+---
+title: What is the .NET Core Platform?
+description: What is the .NET Core Platform?
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: aa58847b-0d11-4971-b097-630901be9491
+---
+
 # What is the .NET Core Platform?
 
 .NET Core is a modular, cross-platform, open source implementation of the .NET Framework that runs on Windows devices, as well as on Linux and OS X. Unlike the .NET Framework, which is a monolithic, system-wide, Windows-only runtime environment, .NET Core can be used to create componentized libraries and applications that can target multiple platforms and that can be deployed along with the application itself. 

@@ -1,3 +1,17 @@
+---
+title: Handling and throwing exceptions
+description: Handling and throwing exceptions
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 13eea618-ac59-447a-8299-35c21ed4b606
+---
+
 # Handling and throwing exceptions
 
 Applications must be able to handle errors that occur during execution in a consistent manner. The common language runtime provides a model for notifying applications of errors in a uniform way. All .NET Framework operations indicate failure by throwing exceptions.

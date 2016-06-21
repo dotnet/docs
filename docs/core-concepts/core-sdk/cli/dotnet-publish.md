@@ -1,3 +1,17 @@
+---
+title: dotnet-publish
+description: dotnet-publish
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 8a7e1c52-5c57-4bf5-abad-727450ebeefd
+---
+
 dotnet-publish
 ==============
 

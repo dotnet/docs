@@ -1,3 +1,17 @@
+---
+title: Porting NuGet packages
+description: Porting NuGet packages
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 203a5ec3-97cc-40dc-84c9-db5391a5a857
+---
+
 # 🔧 Porting NuGet packages
 
 > **Note**

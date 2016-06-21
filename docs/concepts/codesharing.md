@@ -14,7 +14,7 @@ The .NET Standard Library is not itself a platform, but rather a standard that p
 
 An assembly in the .NET Standard Library is a library or executable file that targets a .NET-capable platform.  A reference assembly (also known as a contract) is a library that defines types and their members but contains no implementation code. Because they contain no implementation, reference assemblies are used for compilation only. The reference assemblies that comprise the .NET Standard Library are found on [GitHub](https://github.com/dotnet/corefx/tree/master/src "GitHub"). 
 
-To take a simple example, the System.Resources.ResourceManager reference assembly defines one exception type with three unique members, two attribute types with two unique members each, and a [ResourceManager](https://docs.microsoft.com/en-us/dotnet/core/api/System.Resources.ResourceManager.html "ResourceManager") class with two constructors and two string retrieval methods. The following is the entire content of the System.Resources.ResourceManager reference assembly:
+To take a simple example, the System.Resources.ResourceManager reference assembly defines one exception type with three unique members, two attribute types with two unique members each, and a [ResourceManager](https://docs.microsoft.com/dotnet/core/api/System.Resources.ResourceManager "ResourceManager") class with two constructors and two string retrieval methods. The following is the entire content of the System.Resources.ResourceManager reference assembly:
 
     
     namespace System.Resources
@@ -111,7 +111,7 @@ Portable Class Libraries were intended to provide cross-platform binary librarie
 
 The .NET Standard Library addresses the problem of source code compatibility by defining the API surface area that a particular version of the standard must implement. This surface area is defined by the types and type members found in the reference assemblies that are included in a particular version of the the .NET Standard Library.
 
-When a platform provides an implementation for a particular reference assembly or contract, it must implement all of the types and type members defined in that reference assembly. If the member has no implementation on that platform, it should throw a [PlatformNotSupportedException](http://dotnet.github.io/api/System.PlatformNotSupportedException.html#System_PlatformNotSupportedException "PlatformNotSupportedException") exception. 
+When a platform provides an implementation for a particular reference assembly or contract, it must implement all of the types and type members defined in that reference assembly. If the member has no implementation on that platform, it should throw a [PlatformNotSupportedException](https://docs.microsoft.com/dotnet/core/api/System.PlatformNotSupportedException#System_PlatformNotSupportedException "PlatformNotSupportedException") exception. 
 
 Note, however, that implementing platforms are not required to implement all of the contracts in the .NET Standard Library. Instead, individual implementations can choose not to implement a particular contract. For more information, see "Partial Implementations of the .NET Standard Library."
 
@@ -129,7 +129,7 @@ A particular version of the .NET Standard Library is defined by:
   
 -  The individual types and members found in those reference assemblies.
 
-Any change in a reference assembly's API surface area causes the .NET Standard Library version to change (and its version number to increment). For example, adding a new method, such as a new `String.Contains(String, StringComparison)` overload to the [http://dotnet.github.io/api/System.String.html](http://dotnet.github.io/api/System.String.html "String") class in the System.Runtime reference assembly would cause the .NET Standard Library version to change.
+Any change in a reference assembly's API surface area causes the .NET Standard Library version to change (and its version number to increment). For example, adding a new method, such as a new `String.Contains(String, StringComparison)` overload to the [https://docs.microsoft.com/dotnet/core/api/System.String](https://docs.microsoft.com/dotnet/core/api/System.String "String") class in the System.Runtime reference assembly would cause the .NET Standard Library version to change.
 
 Lower versions of the .NET Standard Library are always compatible with higher versions. This means that the APIs in a lower (or earlier) version of the standard are always a subset of the APIs in higher (or later) versions. Conversely, the APIs in higher (or later) versions of the standard are a superset of APIs in lower (or earlier) versions. 
 
@@ -324,7 +324,7 @@ Implementation assemblies provided by a platform are termed *anchored assemblies
 
 However, a platform need not provide an implementation for every reference assembly. For example, a new platform named .NET for Microwaves 1.0 that is single-threaded might choose not to implement the types in the System.Threading reference assembly. For more information, see the "Partial Implementations of the .NET Standard Library" section.
 
-In many cases, individual members in the .NET Standard Platform may either be inapplicable or have no implementation for the underlying platform. In that case, the member should throw a [PlatformNotSupportedException](http://dotnet.github.io/api/System.PlatformNotSupportedException.html#System_PlatformNotSupportedException "PlatformNotSupportedException") exception.
+In many cases, individual members in the .NET Standard Platform may either be inapplicable or have no implementation for the underlying platform. In that case, the member should throw a [PlatformNotSupportedException](https://docs.microsoft.com/dotnet/core/api/System.PlatformNotSupportedException#System_PlatformNotSupportedException "PlatformNotSupportedException") exception.
 
 In addition, a platform can implement types and members that are not found in the .NET Standard Library. For example, the .NET Framework 4.5, which conforms to the .NET Standard Library 1.1, includes an overloaded [String.Normalize ](https://msdn.microsoft.com/en-us/library/system.string.normalize(v=vs.110).aspx "String.Normalize") method that is not found in the .NET Standard Library.  
 

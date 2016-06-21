@@ -1,3 +1,17 @@
+---
+title: Console Application
+description: Console Application
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
+---
+
 # Console Application
 
 ## Introduction

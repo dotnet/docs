@@ -1,3 +1,17 @@
+---
+title: Sorted Collection Types  
+description: Sorted Collection Types  
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: bdc9c13e-e56a-433b-a293-c92364f6e9cb
+---
+
 # Sorted Collection Types  
  
  The [System.Collections.SortedList](http://dotnet.github.io/api/System.Collections.SortedList.html) class, the [System.Collections.Generic.SortedList&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Generic.SortedList%602.html) generic class, and the [System.Collections.Generic.SortedDictionary&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Generic.SortedDictionary%602.html) generic class are similar to the [Hashtable](http://dotnet.github.io/api/System.Collections.Hashtable.html) class and the [Dictionary&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Generic.Dictionary%602.html) generic class in that they implement the [IDictionary](http://dotnet.github.io/api/System.Collections.IDictionary.html) interface, but they maintain their elements in sort order by key, and they do not have the O(1) insertion and retrieval characteristic of hash tables. The three classes have several features in common:  

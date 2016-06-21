@@ -1,3 +1,17 @@
+---
+title: Selecting a Collection Class
+description: Selecting a Collection Class
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 0a60fca7-e082-48d4-9dda-30b0d3e67ec7
+---
+
 # Selecting a Collection Class
 
 Be sure to choose your collection class carefully. Using the wrong type can restrict your use of the collection. The generic and concurrent versions of the collections are to be preferred because of their greater type safety and other improvements. In general, avoid using the types in the System.Collections namespace unless you are specifically targeting .NET Framework version 1.1. 

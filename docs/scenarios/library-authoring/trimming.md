@@ -1,3 +1,17 @@
+---
+title: How to trim your package dependencies
+description: How to trim your package dependencies
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 916251e3-87f9-4eee-81ec-94076215e6fa
+---
+
 # How to trim your package dependencies
 
 By [Phillip Carter](https://github.com/cartermp)

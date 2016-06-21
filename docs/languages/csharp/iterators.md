@@ -1,3 +1,17 @@
+---
+title: Iterators
+description: Iterators
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 5cf36f45-f91a-4fca-a0b7-87f233e108e9
+---
+
 # Iterators
 
 Almost every program you write will have some need to iterate

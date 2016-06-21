@@ -1,4 +1,18 @@
+---
+title: Implicitly typed lambda expressions
+description: Implicitly typed lambda expressions
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: a3851da9-e018-4389-9922-233db7d0f841
+---
 
+# Implicitly typed lambda expressions
 
 I'm not using `var` to declare this expression tree. You can't use
 an implicitly typed variable declaration to declare a lambda expression.

@@ -1,3 +1,17 @@
+---
+title: BlockingCollection Overview
+description: BlockingCollection Overview
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: a1a867de-53c2-49ca-9a1a-e5770a942724
+---
+
 # BlockingCollection Overview
 
 [BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) is a thread-safe collection class that provides the following features:

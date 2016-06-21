@@ -1,3 +1,17 @@
+---
+title: Hashtable and Dictionary Collection Types
+description: Hashtable and Dictionary Collection Types
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 0f18fac7-fd0d-4f25-a046-1d3d51de062e
+---
+
 # Hashtable and Dictionary Collection Types
 
 The [System.Collections.Hashtable](http://dotnet.github.io/api/System.Collections.Hashtable.html) class, and the [System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Generic.Dictionary%602.html) and [System.Collections.Concurrent.ConcurrentDictionary<T>](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentDictionary%602.html) generic classes implement the [System.Collections.IDictionary](http://dotnet.github.io/api/System.Collections.IDictionary.html) interface. The `Dictionary<T>` generic class also implements the [IDictionary&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Generic.IDictionary%602.html) generic interface. Therefore, each element in these collections is a key-and-value pair.

@@ -1,3 +1,17 @@
+---
+title: .NET Core Command Line Tools (CLI)
+description: .NET Core Command Line Tools (CLI)
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: b70e9ac0-c8be-49f7-9332-95ab93e0e7bc
+---
+
 # .NET Core Command Line Tools (CLI)
 
 ## What is the .NET CLI?

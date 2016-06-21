@@ -1,3 +1,17 @@
+---
+title: Global.json reference
+description: Global.json reference
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: e1ac9659-425f-4486-a376-c12ca942ead8
+---
+
 # Global.json reference
 
 * [projects/sources](#projects)

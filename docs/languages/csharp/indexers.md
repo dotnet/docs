@@ -1,3 +1,17 @@
+---
+title: Indexers
+description: Indexers
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 0e9496da-e766-45a9-b92b-91820d4a350e
+---
+
 # Indexers
 
 Author: [Bill Wagner](https://github.com/BillWagner)

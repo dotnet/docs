@@ -1,3 +1,17 @@
+---
+title: Collections and Data Structures
+description: Collections and Data Structures
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 9e70255a-c02a-4046-86b7-10c84bab2d38
+---
+
 # Collections and Data Structures
 
 Similar data can often be handled more efficiently when stored and manipulated as a collection. You can use the [System.Array](http://dotnet.github.io/api/System.Array.html) class or the classes in the [System.Collections](http://dotnet.github.io/api/System.Collections), [System.Collections.Generic](http://dotnet.github.io/api/System.Collections.Generic.html), or [System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html) namespaces to add, remove, and modify either individual elements or a range of elements in a collection.

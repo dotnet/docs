@@ -1,3 +1,17 @@
+---
+title: Writing .NET Core console apps using the CLI tools: A step-by-step guide
+description: Writing .NET Core console apps using the CLI tools: A step-by-step guide
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: be988f09-7349-43b0-97fb-3a703d4587ce
+---
+
 # Writing .NET Core console apps using the CLI tools: A step-by-step guide
 
 This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.

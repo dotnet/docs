@@ -1,3 +1,17 @@
+---
+title: Reflection & code generation
+description: Reflection & code generation
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 53339c51-0fbc-4827-9de2-39c805bfc06b
+---
+
 # 🔧 Reflection & code generation
 
 > **Note**

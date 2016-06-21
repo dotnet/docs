@@ -1,4 +1,18 @@
-﻿By [Bill Wagner](https://github.com/BillWagner)
+---
+title: Expression Trees
+description: Expression Trees
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: aceb4719-0d5a-4b19-b01f-b51063bcc54f
+---
+
+By [Bill Wagner](https://github.com/BillWagner)
 
 # Expression Trees
 

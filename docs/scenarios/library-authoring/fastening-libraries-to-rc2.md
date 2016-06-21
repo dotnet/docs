@@ -1,3 +1,17 @@
+---
+title: How to manage package dependency versions for .NET Core RC2
+description: How to manage package dependency versions for .NET Core RC2
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 4424a947-bdf9-4775-8d48-dc350a4e0aee
+---
+
 # How to manage package dependency versions for .NET Core RC2
 
 By [Phillip Carter](https://github.com/cartermp)

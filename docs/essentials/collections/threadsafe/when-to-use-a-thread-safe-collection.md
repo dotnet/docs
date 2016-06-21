@@ -1,3 +1,17 @@
+---
+title: When to Use a Thread-Safe Collection
+description: When to Use a Thread-Safe Collection
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: a2a42d44-f6a5-4f16-9000-026221d66349
+---
+
 # When to Use a Thread-Safe Collection
 
 The `ConcurrentQueue`, `ConcurrentStack`, `ConcurrentDictionary`, `ConcurrentBag`, and `BlockingCollection` collection types are specially designed to support multi-threaded add and remove operations. To achieve thread-safety, these new types use various kinds of efficient locking and lock-free synchronization mechanisms. Synchronization adds overhead to an operation. The amount of overhead depends on the kind of synchronization that is used, the kind of operations that are performed, and other factors such as the number of threads that are trying to concurrently access the collection.

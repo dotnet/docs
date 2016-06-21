@@ -1,3 +1,17 @@
+---
+title: Commonly Used Collection Types
+description: Commonly Used Collection Types
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 55861611-1e40-4cc2-9ec5-0b2df4ba6c0c
+---
+
 # Commonly Used Collection Types
 
 Collection types are the common variations of data collections, such as hash tables, queues, stacks, bags, dictionaries, and lists.

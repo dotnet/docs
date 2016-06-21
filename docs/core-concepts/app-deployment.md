@@ -1,3 +1,17 @@
+---
+title: .NET Core Application Deployment concepts
+description: .NET Core Application Deployment concepts
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
+---
+
 # 🔧 .NET Core Application Deployment concepts
 
 > **Note**

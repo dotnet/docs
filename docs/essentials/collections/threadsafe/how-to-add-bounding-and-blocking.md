@@ -1,3 +1,17 @@
+---
+title: How to: Add Bounding and Blocking Functionality to a Collection
+description: How to: Add Bounding and Blocking Functionality to a Collection
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 678d5df2-af63-418f-8b2a-e0be7ea2d77b
+---
+
 # How to: Add Bounding and Blocking Functionality to a Collection
 
 This example shows how to add bounding and blocking functionality to a custom collection class by implementing the [System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.IProducerConsumerCollection%601.html) interface in the class, and then using a class instance as the internal storage mechanism for a [System.Collections.Concurrent.BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html). For more information about bounding and blocking, see [BlockingCollection Overview](blockingcollection-overview.md).

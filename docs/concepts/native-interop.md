@@ -1,3 +1,17 @@
+---
+title: Native interoperability
+description: Native interoperability
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 3c357112-35fb-44ba-a07b-6a1c140370ac
+---
+
 # Native interoperability
 
 In this document we will dive a little bit deeper into all three ways of doing “native interoperability” that are available on the .NET platform.

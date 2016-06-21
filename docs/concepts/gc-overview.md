@@ -1,3 +1,17 @@
+---
+title: Garbage Collection
+description: Garbage Collection
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: db39a0f5-e363-490f-a7e6-adb9a6ff2a8c
+---
+
 # Garbage Collection
 
 Garbage collection is one of most important features of the .NET managed code platform. The garbage collector (GC) manages allocating and releasing memory for you. You do not need to how to allocate and release memory or manage the lifetime of the objects that use that memory. An allocation is made any time you _new_ an object or a value type is boxed. Allocations are typically very fast. When there isn’t enough memory to allocate an object, the GC must collect and dispose of garbage memory to make memory available for new allocations. This process is called “garbage collection”.

@@ -1,3 +1,17 @@
+---
+title: Properties
+description: Properties
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 6950d25a-bba1-4744-b7c7-a3cc90438c55
+---
+
 # Properties
 
 Author: [Bill Wagner](https://github.com/BillWagner)

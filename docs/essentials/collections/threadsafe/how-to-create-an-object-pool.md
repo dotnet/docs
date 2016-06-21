@@ -1,3 +1,17 @@
+---
+title: How to: Create an Object Pool by Using a ConcurrentBag
+description: How to: Create an Object Pool by Using a ConcurrentBag
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 87a6ada1-ee27-423d-b587-82e7cb45361b
+---
+
 # How to: Create an Object Pool by Using a ConcurrentBag
 
 This example shows how to use a concurrent bag to implement an object pool. Object pools can improve application performance in situations where you require multiple instances of a class and the class is expensive to create or destroy. When a client program requests a new object, the object pool first attempts to provide one that has already been created and returned to the pool. If none is available, only then is a new object created. 

@@ -1,3 +1,17 @@
+---
+title: Strongly Typed Delegates
+description: Strongly Typed Delegates
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 564a683d-352b-4e57-8bac-b466529daf6b
+---
+
 # Strongly Typed Delegates
 
 By [Bill Wagner](https://github.com/BillWagner)

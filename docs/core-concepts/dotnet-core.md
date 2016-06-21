@@ -5,10 +5,11 @@
 
 The following characteristics best define .NET Core:
 
-- **Flexible deployment:** app-local or side-by-side user- or machine-wide installation.
+- **Flexible deployment:** locally per app, or side-by-side user / machine-wide installation.
 - **Cross-platform:** Runs on Windows, macOS and Linux; can be ported to other OSes.
 - **Compatibility:** .NET Core is compatible with .NET Framework and Xamarin platforms, via the [.NET Standard Library](../concepts/dotnet-standard-library.md).
 - **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses. Documentation is licensed under [CC-BY](http://creativecommons.org/licenses/by/4.0/). .NET Core is a [.NET Foundation](http://www.dotnetfoundation.org/) project.
+- **Lightweight and fast:** .NET Core is highly modular, allowing apps to opt-in for the features needed. This minimizes the installation size and memory footprint, and boosts the performance by a factor of 20 compared with the .NET Framework in key workloads.
 
 Composition
 ===========
@@ -23,16 +24,16 @@ Composition
 Languages
 ---------
 
-The C# language (F# and VB are coming) can be used to write applications and libraries for .NET Core. The compilers run on .NET Core, enabling you to develop for .NET Core anywhere it runs. In general, you will not use the compilers directly, but indirectly using the SDK tools.
+The C# language (F# and VB available soon) can be used to write applications and libraries for .NET Core. The compilers run on .NET Core, enabling you to develop for .NET Core anywhere it runs. In general, you will not use the compilers directly, but indirectly using the SDK tools.
 
 The C# Roslyn compiler and the .NET Core tools are or can be integrated into several text editors and IDEs, including Visual Studio, [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text and Vim, making .NET Core development an option in your favorite coding environment and OS. This integration is provided, in part, by the good folks of the [OmniSharp project](http://www.omnisharp.net/).
 
 .NET APIs and Compatibility
 ---------------------------
 
-.NET Core can be thought of as a cross-platform version of the .NET Framework, at the layer of the .NET Framework Base Class Libraries (BCL). It implements the [.NET Standard Library](../concepts/dotnet-standard-library.md) specification. .NET Core provides a subset of the APIs that are available in the .NET Framework or Mono/Xamarin. In some cases, types are not fully implemented (some members are not available or have been moved).
+.NET Core can be thought of as a cross-platform version of the .NET Framework, at the layer of the .NET Framework Base Class Libraries (BCL). It implements the [.NET Standard Library](../concepts/dotnet-standard-library.md) specification. .NET Core provides a subset of the APIs that are available in the .NET Framework or Mono/Xamarin.
 
-Look at the [.NET Core roadmap](https://github.com/dotnet/core/blob/master/roadmap.md) to learn more about the plan to expand the .NET Core BCL API.
+Look at the [.NET Core roadmap](https://github.com/dotnet/core/blob/master/roadmap.md) to learn more about the APIs supported by .NET Core and the roadmap to increase to additional APIs..
 
 Relationship to the .NET Standard Library
 -----------------------------------------
@@ -48,7 +49,6 @@ By itself, .NET Core includes a single application model: console apps, which ar
 
 - [ASP.NET Core](http://asp.net)
 - [Windows 10 Universal Windows Platform (UWP)](https://developer.microsoft.com/windows)
-- [Xamarin.Forms](https://www.xamarin.com/forms)
 
 Open Source
 -----------

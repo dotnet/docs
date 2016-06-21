@@ -19,7 +19,7 @@ ms.assetid:
 <article id="main">
     <section id="hero-content" class="graph">
         <h1>.NET Documentation</h1>
-        <h2>.NET is a general purpose development platform that you can use for your next [cloud | desktop | mobile | web | IoT] app or game. It includes the C#, F# and Visual Basic programming languages, an extensive class library and API bindings for popular OSes. Start learning .NET today.</h2>
+        <h2>.NET is a general purpose development platform that you can use for your next [cloud | desktop | mobile | web | IoT] app or game. It includes the C#, F# and Visual Basic programming languages, an extensive class library and API bindings for popular operating systems. Start learning .NET today!</h2>
     </section>
     <aside class="alert section-border">
         <p>Download .NET Core today and get started</p>

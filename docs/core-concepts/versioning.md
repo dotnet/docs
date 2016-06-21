@@ -15,7 +15,7 @@ The following versioning template is generally applied to .NET Core. There are c
 Versioning Form
 ---------------
 
-MAJOR.MINOR.PATCH[-PRERELEASE.BUILDNUMBER]
+MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
 
 Decision Tree
 -------------

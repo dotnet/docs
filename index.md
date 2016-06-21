@@ -89,7 +89,7 @@ ms.assetid:
                             <li class="column column-third">
                                 <a href="https://docs.asp.net">
                                     <h3>ASP.NET Core</h3>
-                                    <p>Learn how to build web sites and servicesb using ASP.NET.</p>
+                                    <p>Learn how to build web sites and servicesb using ASP.NET Core.</p>
                                 </a>
                             </li>
                             <li class="column column-third">
@@ -131,12 +131,6 @@ ms.assetid:
                                     <p>Learn how to build Windows 10 UWP apps, which can run on all Windows 10 devices.</p>
                                 </a>
                             </li>
-                            <li class="Mobile Samples">
-                                <a href="">
-                                    <h3>Samples</h3>
-                                    <p>[Text Needed]</p>
-                                </a>
-                            </li>
                         </ul>
                     </section>
                 </li>
@@ -147,27 +141,21 @@ ms.assetid:
                             <p>Desktop</p>
                         </div>
                         <p class="description column-two-thirds">
-                            Learn how you can build desktop applications using the classic .NET desktop approach, WPF or XAML code
+                            Learn how you can build desktop applications for Windows and macOS.
                         </p>
                     </header>
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="">
-                                    <h3>Developing for the Windows Desktop</h3>
-                                    <p>[Text Needed]</p>
+                                <a href="https://msdn.microsoft.com/library/54xbah2z.aspx">
+                                    <h3>Windows Desktop</h3>
+                                    <p>Learn how to buil Windows desktop applications with Windows Forms of Windows Presentation Framework (WPF).</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="">
-                                    <h3>XAML Development</h3>
-                                    <p>[Text Needed]</p>
-                                </a>
-                            </li>
-                            <li class="column column-third">
-                                <a href="">
-                                    <h3>Samples</h3>
-                                    <p>[Text Needed]</p>
+                                <a href="https://developer.xamarin.com/guides/cross-platform/macios/">
+                                    <h3>macOS Desktop</h3>
+                                    <p>Learn how to buil macOS desktop applications with Xamarin.</p>
                                 </a>
                             </li>
                         </ul>
@@ -186,42 +174,15 @@ ms.assetid:
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="">
-                                    <h3>Tutorials</h3>
-                                    <p>[Text Needed]</p>
+                                <a href="http://unity3d.com/unity">
+                                    <h3>Unity</h3>
+                                    <p>Build games for desktop, console and mobile in C# with Unity.</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="">
-                                    <h3>Reference</h3>
-                                    <p>[Text Needed]</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-                </li>
-                <li class="journey-step">
-                    <header class="journey-step-header row">
-                        <div class="title column-third">
-                            <span class="icon icon-tip"></span>
-                            <p>IoT and Devices</p>
-                        </div>
-                        <p class="description column-two-thirds">
-                            Find out how you can use .NET in your IoT applications to connect email devices to backend APIs in the cloud
-                        </p>
-                    </header>
-                    <section class="journey-step-elements content">
-                        <ul class="row">
-                            <li class="column column-third">
-                                <a href="">
-                                    <h3>Universal Windows Platform IoT Apps</h3>
-                                    <p>[Text Needed]</p>
-                                </a>
-                            </li>
-                            <li class="column column-third">
-                                <a href="">
-                                    <h3>Reference</h3>
-                                    <p>Class libraries and low-level reference material</p>
+                                <a href="http://www.monogame.net">
+                                    <h3>MonoGame</h3>
+                                    <p>Build games for desktop, console and mobile in C# with MonoGame.</p>
                                 </a>
                             </li>
                         </ul>

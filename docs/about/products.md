@@ -1,27 +1,47 @@
 .NET Products
 =============
 
-.NET is a very flexible and naturally cross-platform [specification](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) for building developer products. It is used for all of the most popular app categories: desktop, mobile, cloud, gaming and IoT. 
+.NET is a very flexible and cross-platform [specification](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) for building developer products. It is used for all of the most popular app categories: desktop, mobile, cloud, gaming and IoT.
+
+Desktop
+-------
+
+You can build desktop apps with .NET Framework for Windows or Mono for macOS, using the following APIs:
+
+- Windows Presentation Framework (WPF) for Windows with the [.NET Framework](#net-framework)
+- Windows Forms for Windows with the [.NET Framework](net-framework)
+- Cocoa for macOS with [Xamarin](#xamarin)
+- Electron for cross-platform desktop with [electron-edge](https://github.com/kexplo/electron-edge)
+
+Mobile
+------
+
+You can build 
 
 Major commercial and open source .NET products are listed below, in order of introduction.
 
 .NET Framework
 --------------
 
-The .NET Framework is Microsoft's primary develop platform for Windows server and client developers. It is a very powerful and mature framework, with a large class library that supports a wide variety of applications and solutions on Windows.
+The .NET Framework is Microsoft's primary development platform for Windows and Windows Server developers. It is a powerful and mature framework, with a large class library that supports a wide variety of applications and solutions on Windows.
 
-There are multiple application models built on top of the .NET Framework that allow developers to build applications ranging from console applications, across rich client (WPF) applications to scalable web applications.
+[Windows Forms](https://msdn.microsoft.com/library/dd30h2yb.aspx) enables you to build a "forms over data" desktop UI more rapidly than any other technology. It uses a designer that enables drag-and-drop of UI and non-UI controls, reducing most development tasks into a single gesture and conceptual model.
 
-[Windows Forms](https://msdn.microsoft.com/library/dd30h2yb.aspx) and [Windows Presentation Foundation (WPF)](https://msdn.microsoft.com/library/ms754130.aspx) are User Interface (UI) stacks that enable you to build desktop applications for Windows. The strength of Windows Forms lies in its rich support for common databinding scenarios as well as access to Windows’ native user interface controls. WPF, on the other hand, allows you to exercise much more control over the look and feel of your application. 
+[Windows Presentation Foundation (WPF)](https://msdn.microsoft.com/library/ms754130.aspx) separates code and UI concerns by describing UI with the [XAML](https://msdn.microsoft.com/library/ms752059.aspx) markup language. WPF is very flexible and is often used for UIs that require a more complex user model or a more elegant appearance.
 
 [Windows Communication Foundation (WCF)](https://msdn.microsoft.com/library/ms731082.aspx) is a set of libraries for SOAP Web Services. It allows you to create services that can communicate through various supported protocols using various data formats, and that can be hosted in any process you choose. This leads to one of the major features of WCF: your services are not tied to any particular hosting strategy or approach.
 
-[ASP.NET](http://www.asp.net/) is a web framework. Being a very rich framework, it has several distinct pieces which are used to produce modern and high-performance web applications. [ASP.NET Web Forms](http://www.asp.net/web-forms) is a set of tools geared primarily towards developer productivity, allowing quick turnaround on web applications with a drag-and-drop surface reusing web controls for everything from logging to data binding. [ASP.NET MVC](http://www.asp.net/mvc) gives you greater control over the entire web pipeline, from the HTTP layer to the user interface. [ASP.NET WebAPI](http://www.asp.net/web-api) is a convention-based framework for creating REST services. Finally, [SignalR](http://www.asp.net/signalr) allows you to provide push-based communication to your web applications using the [WebSocket](https://en.wikipedia.org/wiki/WebSocket) protocol.
+[ASP.NET](http://www.asp.net/) is a web framework. It has several distinct pieces which are used to produce modern and high-performance web applications. 
+
+- [ASP.NET Web Forms](http://www.asp.net/web-forms) enables you to build a "forms over data" UI more radidly than most other Web technologies, with a designer that enables drag-and-drop of web controls. 
+- [ASP.NET MVC](http://www.asp.net/mvc) gives you greater control over the entire web pipeline, from the HTTP layer to the user interface. 
+- [ASP.NET WebAPI](http://www.asp.net/web-api) is a convention-based framework for creating REST services. [SignalR](http://www.asp.net/signalr) allows you to provide push-based communication to your web applications using the 
+- [WebSocket](https://en.wikipedia.org/wiki/WebSocket) protocol.
 
 Mono
 ----
 
-[Mono](http://www.mono-project.com/docs/about-mono/) is the original open source and cross-platform implementation of .NET, from the community [Mono Project](http://mono-project.com). It is now sponsored by Microsoft. It can be thought of as an open and cross-platform version of the .NET Framework. It's APIs follow the progress of the .NET Framework, not .NET Core.
+[Mono](http://www.mono-project.com/docs/about-mono/) is the original open source and cross-platform implementation of .NET, from the community [Mono Project](http://mono-project.com). It is now sponsored by Microsoft. It can be thought of as an open and cross-platform version of the .NET Framework. Its APIs follow the progress of the .NET Framework, not .NET Core.
 
 There are several components that make up Mono:
 
@@ -42,10 +62,15 @@ The [Made with Unity](http://madewith.unity.com) site showcases published Unity 
 
 Unity has traditionally used the Mono runtime to execute "C# scripts". More recently, Unity has been adopting its [IL2CPP](http://blogs.unity3d.com/2014/05/20/the-future-of-scripting-in-unity/) technology.
 
+Xamarin
+-------
+
+[Xamarin](https://xamarin.com) provides and end-to-end development experience for building Android and iOS apps. 
+
 .NET Native
 -----------
 
-.NET Native is a set of native build tools for .NET Core. .NET Native is an Ahead-of-Time (AOT) toolchain that produces native applications by compiling IL byte code to native machine code, . This means that the resulting binary is what the OS executes; there is no JIT-ing, no runtime compilation. This leads to better startup performance, as well as some security benefits.
+.NET Native is a set of native build tools for .NET Core. .NET Native is an Ahead-of-Time (AOT) toolchain that produces native applications by compiling IL byte code to native machine code. This means that the resulting binary is what the OS executes; there is no JIT-ing, no runtime compilation. This leads to better startup performance, as well as some security benefits.
 
 .NET Native is primarily used by .NET [Universal Windows Platform (UWP)](https://msdn.microsoft.com/library/windows/apps/dn726767.aspx) applications.
 

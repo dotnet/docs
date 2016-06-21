@@ -15,7 +15,7 @@ ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 Frameworks
 ==========
 
-The .NET ecosystem has a concept of frameworks. Frameworks define the API that you can use to target a particular platform. The .NET Framework 4.6 is one of those platforms. Frameworks are used in Visual Studio and other IDEs and editors to provide you with the correct set of APIs. They are also used by NuGet, for both production and consumption of NuGet packages, to ensure that you produce and use appropriate packages (and underlying assets) for the framework you are targeting. One can think of frameworks as one of the key currencies in the .NET ecosystem. The concept is there for correctness, to help you and your customers seeing [MissingMethodException](https://dotnet.github.io/api/System.MissingMethodException.html) and friends at runtime.
+The .NET ecosystem has a concept of frameworks. Frameworks define the API that you can use to target a particular platform. The .NET Framework 4.6 is one of those platforms. Frameworks are used in Visual Studio and other IDEs and editors to provide you with the correct set of APIs. They are also used by NuGet, for both production and consumption of NuGet packages, to ensure that you produce and use appropriate packages (and underlying assets) for the framework you are targeting. One can think of frameworks as one of the key currencies in the .NET ecosystem. The concept is there for correctness, to help you and your customers seeing [MissingMethodException](https://docs.microsoft.com/dotnet/core/api/System.MissingMethodException) and friends at runtime.
 
 Framework Versions
 ==================

@@ -14,11 +14,11 @@ ms.assetid: 678d5df2-af63-418f-8b2a-e0be7ea2d77b
 
 # How to: Add Bounding and Blocking Functionality to a Collection
 
-This example shows how to add bounding and blocking functionality to a custom collection class by implementing the [System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.IProducerConsumerCollection%601.html) interface in the class, and then using a class instance as the internal storage mechanism for a [System.Collections.Concurrent.BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html). For more information about bounding and blocking, see [BlockingCollection Overview](blockingcollection-overview.md).
+This example shows how to add bounding and blocking functionality to a custom collection class by implementing the [System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection%601) interface in the class, and then using a class instance as the internal storage mechanism for a [System.Collections.Concurrent.BlockingCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection%601). For more information about bounding and blocking, see [BlockingCollection Overview](blockingcollection-overview.md).
 
 ## Example
 
-The custom collection class is a basic priority queue in which the priority levels are represented as an array of [System.Collections.Concurrent.ConcurrentQueue&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentQueue%601.html) objects. No additional ordering is performed within each queue.
+The custom collection class is a basic priority queue in which the priority levels are represented as an array of [System.Collections.Concurrent.ConcurrentQueue&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue%601) objects. No additional ordering is performed within each queue.
 
 In the client code, three tasks are started. The first task just polls for keyboard strokes to enable cancellation at any point during execution. The second task is the producer thread; it adds new items to the blocking collection and gives each item a priority based on a random value. The third task removes items from the collection as they become available. 
 
@@ -275,11 +275,11 @@ namespace ProdConsumerCS
 }
 ```
 
-By default, the storage for a [BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) is [ConcurrentQueue&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentQueue%601.html).
+By default, the storage for a [BlockingCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection%601) is [ConcurrentQueue&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue%601).
 
 ## See Also
 
-[System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html)
+[System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)
 
 [Thread-Safe Collections](../thread-safe-collections.md)
 

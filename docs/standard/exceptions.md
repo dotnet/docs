@@ -110,8 +110,6 @@ Place the sections of code that might throw exceptions in a **try** block and pl
 
 The following code example uses a **try**/**catch** block to catch a possible exception. The `Main` method contains a **try** block with a [StreamReader](http://dotnet.github.io/api/System.IO.StreamReader.html) statement that opens a data file called `data.txt` and writes a string from the file. Following the **try** block is a **catch** block that catches any exception that results from the **try** block.
 
-## Example
-
 C#
 ```
 using System;
@@ -205,8 +203,6 @@ public class Ex13
 When an exception occurs, execution stops and control is given to the closest exception handler. This often means that lines of code you expect to be executed are bypassed. Some resource cleanup, such as closing a file, needs to be done even if an exception is thrown. To do this, you can use a **finally** block. A **finally** block always executes, regardless of whether an exception is thrown.
 
 The following code example uses a **try**/**catch** block to catch an [ArgumentOutOfRangeException](http://dotnet.github.io/api/System.ArgumentOutOfRangeException.html). The `Main` method creates two arrays and attempts to copy one to the other. The action generates an **ArgumentOutOfRangeException** and the error is written to the console. The **finally** block executes regardless of the outcome of the copy action.
-
-## Example
 
 C#
 ```
@@ -401,9 +397,7 @@ Introduce a new exception class only when a predefined one doesn't apply. For ex
 
 ### End exception class names with the word "Exception"
 
-When a custom exception is necessary, name it appropriately and derive it from the [Exception](http://dotnet.github.io/api/System.Exception.html) class.
-
-For example:
+When a custom exception is necessary, name it appropriately and derive it from the [Exception](http://dotnet.github.io/api/System.Exception.html) class. For example:
 
 C#
 ```

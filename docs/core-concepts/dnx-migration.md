@@ -89,8 +89,6 @@ invoked using the familiar `dotnet <command>` syntax. More about this can be fou
 ### Installing dependencies
 As of v1, the .NET Core CLI tools don't have an `install` command for installing dependencies. In order to install a 
 package from NuGet, you would need to add it as a dependency to your `project.json` file and then run `dotnet restore`. 
-This is a point-in-time thing, as we will most likely be adding an install command to the toolset in the future in 
-some way or form. 
 
 ### Running your code
 There are two main ways to run your code. One is from source, with `dotnet run`. Unlike `dnx run`, this will not do any 
@@ -112,12 +110,12 @@ as Visual Studio) to differentiate between RC1 and RC2, they use the `"sdk": { "
 which project is RC1 or RC2. If `global.json` doesn't have this node at all, it is assumed to be the latest, that is RC2. 
 
 In order to update the `global.json` file to RC2, either remove the property or set it to the exact version of the 
-tools that you wish to use, in this case **1.0.0-preview1-002702**:
+tools that you wish to use, in this case **1.0.0-preview2-003118**:
 
 ```json
 {
     "sdk": {
-        "version": "1.0.0-preview1-002702"
+        "version": "1.0.0-preview2-003118"
     }
 }
 ```

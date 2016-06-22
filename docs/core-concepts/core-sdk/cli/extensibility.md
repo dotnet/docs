@@ -73,7 +73,7 @@ API, here is a console application's `project.json` file that uses that tool:
     "dependencies": {
         "Microsoft.NETCore.App": {
             "type": "platform",
-            "version": "1.0.0-rc2-*"
+            "version": "1.0.0"
         }
     },
     "tools": {
@@ -92,7 +92,7 @@ The `tools` node is structured in a similar way as the `dependencies` node. It n
 containing the tool and its version at the very least. In the example above, we can see that there is another statement, 
 the `imports` one. This influences the tool's restore process and specifies that the tool is also compatible, in 
 addition to any targeted frameworks the tools has, with `dnxcore50` target. For more information you can 
-consult the [project.json reference](). 
+consult the [project.json reference](../../../project-model/project-json-reference.md). 
 
 ### Building tools
 As mentioned, tools are just portable console applications. You would build one as you would build any console application. 
@@ -110,8 +110,8 @@ These kind of tools have a dependency graph that is completely separate from the
 uses them. The restore process will first restore the project's dependencies, and will then restore each of the tools and 
 their dependencies. 
 
-You can find richer examples and different combinations of this in the [.NET Core CLI repo](https://github.com/dotnet/cli/tree/rel/1.0.0/TestAssets/TestProjects). 
-You can also see the [implementation of tools used](https://github.com/dotnet/cli/tree/rel/1.0.0/TestAssets/TestPackages) in the same repo. 
+You can find richer examples and different combinations of this in the [.NET Core CLI repo](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestProjects). 
+You can also see the [implementation of tools used](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages) in the same repo. 
 
 Building tools that load project's build outputs for execution is slightly different. As stated, for these kinds of 
 tools there are two components:
@@ -138,9 +138,9 @@ the dispatcher tool which can then use that to find the needed binary that conta
 
 A good example of this approach can be found in the [.NET Core CLI repo](https://github.com/dotnet/cli):
 
-* [Sample project.json file](https://github.com/dotnet/cli/blob/rel/1.0.0/TestAssets/DesktopTestProjects/AppWithDirectDependencyDesktopAndPortable/project.json)
-* [Implementation of the dispatcher](https://github.com/dotnet/cli/tree/rel/1.0.0/TestAssets/TestPackages/dotnet-dependency-tool-invoker)
-* [Implementation of the framework-specific dependency](https://github.com/dotnet/cli/tree/rel/1.0.0/TestAssets/TestPackages/dotnet-desktop-and-portable)
+* [Sample project.json file](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/TestAssets/DesktopTestProjects/AppWithDirectDependencyDesktopAndPortable/project.json)
+* [Implementation of the dispatcher](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages/dotnet-dependency-tool-invoker)
+* [Implementation of the framework-specific dependency](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages/dotnet-desktop-and-portable)
 
 
 ### PATH-based extensibility
@@ -176,7 +176,7 @@ fi
 echo "Cleaning complete..."
 ```
 
-On OS X, we can save this script as `dotnet-clean` and set its executable bit with `chmod +x dotnet-clean`. We can then 
+On macOS, we can save this script as `dotnet-clean` and set its executable bit with `chmod +x dotnet-clean`. We can then 
 create a symbolic link to it in `/usr/local/bin` using the command `ln -s dotnet-clean /usr/local/bin/`. This will make 
 it possible to invoke the clean command using the `dotnet clean` syntax. You can test this by creating an app, running 
 `dotnet build` on it and then running `dotnet clean`. 

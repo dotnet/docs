@@ -35,11 +35,11 @@ Drops a C# project in the current directory.
 
 `dotnet new --lang f#`
     
-Drops a F# project in the current directory.
+Drops an F# project in the current directory.
 
 `dotnet new --lang c#`
     
-Drops a C# project in the current directory.
+Drops an C# project in the current directory.
 
 `dotnet new -t web`
     

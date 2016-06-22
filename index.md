@@ -89,7 +89,7 @@ ms.assetid:
                             <li class="column column-third">
                                 <a href="https://docs.asp.net">
                                     <h3>ASP.NET Core</h3>
-                                    <p>Learn how to build web sites and servicesb using ASP.NET Core.</p>
+                                    <p>Learn how to build web sites and services using ASP.NET Core.</p>
                                 </a>
                             </li>
                             <li class="column column-third">

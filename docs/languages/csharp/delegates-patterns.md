@@ -14,12 +14,10 @@ ms.assetid: 0ff8fdfd-6a11-4327-b061-0f2526f35b43
 
 # Common Patterns for Delegates
 
-By [Bill Wagner](https://github.com/BillWagner)
-
 [Previous](delegates-strongly-typed.md)
 
 Delegates provide a mechanism that enables software designs
-involving minimal coupling between compononents.
+involving minimal coupling between components.
 
 One excellent example for this kind of design is LINQ. The LINQ
 Query Expression Pattern relies on delegates for all of its
@@ -61,7 +59,7 @@ on multiple different platforms. There are a lot of common features in the
 component that manages the logs. It will need to accept messages from any
 component in the system. Those messages will have different priorities, which
 the core component can manage. The messages should have timestamps in their
-final archived form. For more advanced scenarios, you could filter mesages by
+final archived form. For more advanced scenarios, you could filter messages by
 the source component.
 
 There is one aspect of the feature that will change often: where messages are

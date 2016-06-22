@@ -2,7 +2,7 @@
 title: How to use specific exceptions in a Catch block
 description: How to use specific exceptions in a Catch block
 keywords: .NET, .NET Core
-author: BillWagner
+author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

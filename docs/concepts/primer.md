@@ -2,7 +2,7 @@
 title: .NET Primer
 description: .NET Primer
 keywords: .NET, .NET Core
-author: BillWagner
+author: richlander
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -13,8 +13,6 @@ ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 ---
 
 # .NET Primer
-
-By [Rich Lander](https://github.com/richlander), [Zlatko Knezevic](https://github.com/blackdwarf)
 
 .NET is a general purpose development platform. It can be used for any kind of app type or workload where general purpose solutions are used. It has several key features that are attractive to many developers, including automatic memory management and modern programming languages, that make it easier to efficiently build high-quality applications. .NET enables a high-level programming environment with many convenience features, while providing low-level access to native memory and APIs.
 

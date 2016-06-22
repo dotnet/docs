@@ -2,7 +2,7 @@
 title: .NET Core Application Deployment concepts
 description: .NET Core Application Deployment concepts
 keywords: .NET, .NET Core
-author: BillWagner
+author: dotnet-bot
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

@@ -2,7 +2,7 @@
 title: Development using Visual Studio 2015
 description: Development using Visual Studio 2015
 keywords: .NET, .NET Core
-author: BillWagner
+author: bleroy
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

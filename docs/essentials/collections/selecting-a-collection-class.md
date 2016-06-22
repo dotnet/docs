@@ -2,7 +2,7 @@
 title: Selecting a Collection Class
 description: Selecting a Collection Class
 keywords: .NET, .NET Core
-author: BillWagner
+author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

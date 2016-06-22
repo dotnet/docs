@@ -2,7 +2,7 @@
 title: Using MSBuild to build .NET Core projects
 description: Using MSBuild to build .NET Core projects
 keywords: .NET, .NET Core
-author: BillWagner
+author: dsplaisted
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -14,8 +14,6 @@ ms.assetid: 13c66464-4f14-4db6-aa8b-06f25e7ba894
 
 Using MSBuild to build .NET Core projects
 =========================================
-
-by [Daniel Plaisted](https://github.com/dsplaisted)
 
 The .NET Core tooling is going to [move from project.json to MSBuild based projects](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/).
 We expect the first version of the .NET Core tools that use MSBuild to ship along with the next version of Visual Studio.  However, it is possible to use MSBuild for .NET Core

@@ -2,7 +2,7 @@
 title: Runtime IDentifier (RID) catalog
 description: Runtime IDentifier (RID) catalog
 keywords: .NET, .NET Core
-author: BillWagner
+author: blackdwarf
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

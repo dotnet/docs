@@ -2,7 +2,7 @@
 title: How to: Add Bounding and Blocking Functionality to a Collection
 description: How to: Add Bounding and Blocking Functionality to a Collection
 keywords: .NET, .NET Core
-author: BillWagner
+author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

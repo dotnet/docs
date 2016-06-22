@@ -2,7 +2,7 @@
 title: Authoring Libraries for .NET Core RC2
 description: Authoring Libraries for .NET Core RC2
 keywords: .NET, .NET Core
-author: BillWagner
+author: cartermp
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

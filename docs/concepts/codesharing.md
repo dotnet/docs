@@ -2,7 +2,7 @@
 title: Code Sharing with the .NET Standard Library #
 description: Code Sharing with the .NET Standard Library #
 keywords: .NET, .NET Core
-author: BillWagner
+author: rpetrusha
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

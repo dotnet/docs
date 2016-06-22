@@ -2,7 +2,7 @@
 title: What is the .NET Core Platform?
 description: What is the .NET Core Platform?
 keywords: .NET, .NET Core
-author: BillWagner
+author: rpetrusha
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

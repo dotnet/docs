@@ -2,7 +2,7 @@
 title: Sorted Collection Types  
 description: Sorted Collection Types  
 keywords: .NET, .NET Core
-author: BillWagner
+author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

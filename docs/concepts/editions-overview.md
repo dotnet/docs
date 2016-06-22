@@ -2,7 +2,7 @@
 title: Overview of .NET Implementations
 description: Overview of .NET Implementations
 keywords: .NET, .NET Core
-author: BillWagner
+author: blackdwarf
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

@@ -12,11 +12,9 @@ ms.devlang: dotnet
 ms.assetid: adf73dde-1e52-4df3-9929-2e0670e28e16
 ---
 
-[Previous -- Executing Expressions](expression-trees-execution.md)
-
-By [Bill Wagner](https://github.com/BillWagner)
-
 # Interpreting Expressions
+
+[Previous -- Executing Expressions](expression-trees-execution.md)
 
 Now, let's write some code to examine the structure of an 
 *expression tree*. Every node in an expression tree will be

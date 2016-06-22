@@ -1,6 +1,6 @@
 ---
-title: Summary
-description: Summary
+title: Expression Trees Summary
+description: Expression Trees Summary
 keywords: .NET, .NET Core
 author: BillWagner
 manager: wpickett
@@ -12,11 +12,9 @@ ms.devlang: dotnet
 ms.assetid: eb687ebd-1149-4453-9fc1-12a084495a66
 ---
 
+# Expression Trees Summary
+
 [Previous -- Translating Expressions](expression-trees-translating.md)
-
-By [Bill Wagner](https://github.com/BillWagner)
-
-# Summary
 
 In this series, you've seen how you can use *expression trees* to
 create dynamic programs that interpret code as data and build
@@ -29,7 +27,7 @@ expression trees that represent modified versions of the original code.
 You can also use expression trees to look at an algorithm, and
 translate that algorithm into another language or environment. 
 
-## Limitiations
+## Limitations
 
 There are some newer C# language elements that don't translate
 well into expression trees. Expression trees cannot contain

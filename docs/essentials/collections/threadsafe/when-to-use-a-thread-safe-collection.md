@@ -2,7 +2,7 @@
 title: When to Use a Thread-Safe Collection
 description: When to Use a Thread-Safe Collection
 keywords: .NET, .NET Core
-author: BillWagner
+author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

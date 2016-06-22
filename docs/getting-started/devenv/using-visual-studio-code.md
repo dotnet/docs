@@ -281,7 +281,7 @@ namespace TestApp
     {
         [Fact]
         public void TestThing() {
-            Assert.Equal(42, new Thing().Get(19.23));
+            Assert.Equal(42, new Thing().Get(19, 23));
         }
     }
 }
@@ -387,7 +387,7 @@ Add the `debugType` node under `buildOptions`:
 
 Set a breakpoint at the `WriteLine` statement in `Main`. You do this
 by pressing the `F9` key, or by clicking the mouse in the left margin
-on the line you want the breakpoint). 
+on the line you want the breakpoint. 
 Open the debugger by pressing the debug
 icon on the left of the VS Code screen (see figure). Then,
 press the Play button to start the application under the debugger.

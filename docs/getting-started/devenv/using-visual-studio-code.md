@@ -20,9 +20,9 @@ by [Bertrand Le Roy](https://github.com/bleroy),  [Phillip Carter](https://githu
 Contributions by [Toni Solarin-Sodara](https://github.com/tsolarin)
 
 This document provides a tour of the steps and workflow to create a .NET
-Core Solution using [Visual Studio Code](http://codde.visualstudio.com).
+Core Solution using [Visual Studio Code](http://code.visualstudio.com).
 You'll learn how to create projects, create unit tests, use the debugging
-tools, and incorproate third-party libraries via [NuGet](http://nuget.org).
+tools, and incorporate third-party libraries via [NuGet](http://nuget.org).
 
 This article uses Visual Studio Code on Mac OS. Where there are differences,
 it points out the differences for the Windows platform.
@@ -30,8 +30,8 @@ it points out the differences for the Windows platform.
 Prerequisites
 -------------
 
-Before starting, you'll need to install the [.NET Core SDK](https://www.microsoft.com/net/download),
-currently in a preview relese. The .NET Core SDK includes the latest release
+Before starting, you'll need to install the [.NET Core SDK](https://www.microsoft.com/net/core),
+currently in a preview release. The .NET Core SDK includes the latest release
 of the .NET Core framework and runtime.
 
 You'll also need to install [Visual Studio Code](http://code.visualstudio.com).
@@ -54,7 +54,7 @@ By the time we're done, you'll create three projects: a library project,
 tests for that library project, and a console application that makes
 use of the library. You'll follow a standard folder structure for
 the three projects. Following this standard folder structure
-maeans that the .NET Core SDK tools understand the relationship between
+means that the .NET Core SDK tools understand the relationship between
 your production code projects and your test code projects. That makes
 your development exerience more productive.
 
@@ -72,7 +72,7 @@ The contents of `global.json` are:
 
 ```js
 {
-    projects: [
+    "projects": [
         "src",
         "test"
     ]
@@ -102,7 +102,7 @@ The `dotnet new` command creates a new application project. Because
 you want a library project, you're going to make a few changes to
 the generated `project.json` file.
 
-First, remote the `buildOptions` node:
+First, remove the `buildOptions` node:
 
 ```js
 "buildOptions" {
@@ -111,7 +111,7 @@ First, remote the `buildOptions` node:
 ```
 
 Next, you'll need to update the dependencies section to create
-a library assembly, rather than an appliction. You'll remove the
+a library assembly, rather than an application. You'll remove the
 `Microsoft.NETCore.App` node:
 
 ```js
@@ -126,7 +126,9 @@ And replace it with a reference to the .NET Standard library:
 
 ```js
 "dependencies": {
-    "NETStandard.Library": "1.5.0-rc2-24027"
+    "NETStandard.Library": {
+        "version": "1.5.0-rc2-24027"
+    }
 }
 ```
 
@@ -155,19 +157,19 @@ add a reference to the `Newtonsoft.Json` NuGet package. In`project.json`
 add the latest pre-release version of the package as a dependency:
 
 ```js
-"depdendencies": {
+"dependencies": {
     "NETStandard.Library": {
         "version": "1.5.0-rc2-24027"
     },
     "Newtonsoft.Json": "9.0.1-beta1"
-}
+},
 ```
 
 After you've finished adding those dependencies, you need to install those
-packages into workspace. The `dotnet restore` command updates all dependencies,
-and writes a `project.lock.json` file in the project directory. This
+packages into workspace. Run the `dotnet restore` command to updates all dependencies,
+and write a `project.lock.json` file in the project directory. This
 file contains the full dependency tree of all the dependencies in your
-project. You don't need to read this file, its used by tools in the .NET
+project. You don't need to read this file, it's used by tools in the .NET
 Core SDK.
 
 Now, let's update the C# code. Let's create a `Thing` class that contains
@@ -189,7 +191,9 @@ namespace Library
 }
 ```
 
-This makes use of a number of modern C# features that you can learn
+This makes use of a number of modern C# features, such as 
+static usings, expression bodied members, and interpolated strings,
+that you can learn
 about in the [Learn C#](/languages/csharp/index.md) section.
 
 Now that you've updated the code, you can build the library using
@@ -225,7 +229,7 @@ above. Open `project.json` and update the dependencies section to the following:
         "type": "platform",
         "version": "1.0.0-rc2-3002702"
     },
-    "xunit" "2.1.0",
+    "xunit": "2.1.0",
     "dotnet-test-xunit": "1.0.0-rc2-build10025",
     "library": {
         "target": "project",

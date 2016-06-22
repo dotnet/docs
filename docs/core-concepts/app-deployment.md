@@ -265,6 +265,6 @@ Third-party libraries do not already have to be present on the system on which t
 
 Note that you can only deploy a self-contained app with a third-party library to platforms supported by that library.
 
-<a name="crossgen"></a>## Native Image Generation ##
+## <a name="crossgen"></a> Native Image Generation ##
 
 NET Core uses a just in time (JIT) compiler  that stores application code in an intermediate format and compiles it to native code at runtime.  To increase startup performance, the shared framework is pre-compiled using a tool called `crossgen`.  To improve performance of your application, you can use the same tool on your application's binaries.  Its performance impact is more noticeable when deploying a standalone application, since the entire framework is part of the application.  For more details see [crossgen](core-sdk/cli/crossgen.md).  Crossgen must be run on a machine of the same platform type that you are targeting, but need not be done on the same machine, unlike ngen for the desktop framework.  As such if you are producing a platform specific installer for your application it is reccomended that you crossgen as part of the installer build process. 

@@ -44,9 +44,9 @@ The additional tasks for a Docker installation will work for an ASP.NET
 Core application. 
 
 ## Prerequisites
-You’ll need to setup your machine to run .NET core. See the 
-[.NET Core Getting Started page](http://dotnet.github.io/getting-started/)
-for instructions on installing .NET core on your machine.
+You’ll need to setup your machine to run .NET core. You can find the
+installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
+page.
 You can run this application on Windows, Ubuntu Linux, OS X or in a Docker container. 
 You’ll need to install your favorite code editor. The descriptions below
 use [Visual Studio Code](https://code.visualstudio.com/) which is an open

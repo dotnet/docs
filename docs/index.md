@@ -27,4 +27,4 @@ In this docset, you will find tutorials that will teach you how to get started w
 
 ## Need more help?
 
-Don't forget that we have a [vibrant community](http://dotnet.github.io/support/) that you can use for support. We're always happy to help. 
+Don't forget that we have a [vibrant community](https://www.microsoft.com/net/community) that you can use for support. We're always happy to help. 

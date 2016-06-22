@@ -30,9 +30,10 @@ C# objects.
 
 There are a lot of features in this tutorial. Let’s build them one by one. 
 ## Prerequisites
-You’ll need to setup your machine to run .NET core. Instructions are
-[here](http://dotnet.github.io/getting-started/). You can run this
-application on Windows, Ubuntu Linux, OS X or in a Docker container. 
+You’ll need to setup your machine to run .NET core. You can find the
+installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
+page. You can run this
+application on Windows, Linux, OS X or in a Docker container. 
 You’ll need to install your favorite code editor. The descriptions below
 use [Visual Studio Code](https://code.visualstudio.com/) which is an open
 source, cross platform editor. However, you can use whatever tools you are

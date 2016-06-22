@@ -2,7 +2,7 @@
 title: Using user-filtered exception handlers
 description: Using user-filtered exception handlers
 keywords: .NET, .NET Core
-author: BillWagner
+author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

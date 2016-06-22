@@ -2,7 +2,7 @@
 title: Writing .NET Core console apps using the CLI tools: A step-by-step guide
 description: Writing .NET Core console apps using the CLI tools: A step-by-step guide
 keywords: .NET, .NET Core
-author: BillWagner
+author: tdykstra
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

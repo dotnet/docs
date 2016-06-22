@@ -12,11 +12,9 @@ ms.devlang: dotnet
 ms.assetid: b453c591-acc6-4e08-8175-97e5bc65958e
 ---
 
-[Previous -- Building Expressions](expression-trees-building.md)
-
-By [Bill Wagner](https://github.com/BillWagner)
-
 # Translating Expression Trees
+
+[Previous -- Building Expressions](expression-trees-building.md)
 
 In this final section, you'll learn how to visit each node
 in an expression tree, while building a modified copy of that

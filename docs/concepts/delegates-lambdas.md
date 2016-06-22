@@ -2,7 +2,7 @@
 title: Delegates and lambdas
 description: Delegates and lambdas
 keywords: .NET, .NET Core
-author: BillWagner
+author: richlander
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

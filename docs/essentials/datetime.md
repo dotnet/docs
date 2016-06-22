@@ -2,7 +2,7 @@
 title: Working with dates
 description: Working with dates
 keywords: .NET, .NET Core
-author: BillWagner
+author: rpetrusha
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

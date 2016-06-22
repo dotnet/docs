@@ -1,8 +1,8 @@
 ---
-title: .NET Core Software Development Kit (SDK) Overview 
-description: .NET Core Software Development Kit (SDK) Overview 
+title: .NET Core SDK Overview 
+description: .NET Core SDK Overview 
 keywords: .NET, .NET Core
-author: BillWagner
+author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: 26bc9822-e42b-48ec-b0d6-499dc604add7
 ---
 
-# .NET Core Software Development Kit (SDK) Overview 
+# .NET Core SDK Overview 
 
 ## Introduction
-.NET Core Software Development Kit is a set of libraries and tools that allow developers to create .NET Core applications
+.NET Core Software Development Kit (SDK) is a set of libraries and tools that allow developers to create .NET Core applications
 and libraries. This is the package that developers will most likely acquire. 
 
 It contains the following components:
@@ -36,8 +36,8 @@ require administrative privileges on the machine. You can view the installation 
 [.NET Core getting started page](https://aka.ms/dotnetcoregs).
 
 Install scripts, on the other hand, do not require administrative privileges. However, they will also not install any 
-prerequisites on the machine; you need to install all of the pre-requisites manually. The scripts are meant mostly for 
-setting up build servers or when you wish to install the tools without admin privileges (do note the pre-requisites 
+prerequisites on the machine; you need to install all of the prerequisites manually. The scripts are meant mostly for 
+setting up build servers or when you wish to install the tools without admin privileges (do note the prerequisites 
 caveat above). You can find more information on the [install script reference topic](cli/dotnet-install-script.md). If you are 
 interested in how to set up SDK on your CI build server you can take a look at the [SDK with CI servers](cli/using-ci-with-cli.md) 
 document. 

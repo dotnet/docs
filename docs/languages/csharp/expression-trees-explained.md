@@ -12,11 +12,10 @@ ms.devlang: dotnet
 ms.assetid: bbcdd339-86eb-4ae5-9911-4c214a39a92d
 ---
 
+# Expression Trees Explained
+
 [Previous -- Overview](expression-trees.md)
 
-By [Bill Wagner](https://github.com/BillWagner)
-
-# Expression Trees Explained
 An Expression Tree is a data structure that defines code. They are based on the same structures
 that a compiler uses to analyze code and generate the compiled output. As you read through this
 tutorial, you will notice quite a bit of similarity between Expression Trees and the types used

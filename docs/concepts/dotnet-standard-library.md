@@ -2,7 +2,7 @@
 title: .NET Standard Library
 description: .NET Standard Library
 keywords: .NET, .NET Core
-author: BillWagner
+author: richlander
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

@@ -2,7 +2,7 @@
 title: Learn F
 description: Learn F
 keywords: .NET, .NET Core
-author: BillWagner
+author: jackfoxy
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

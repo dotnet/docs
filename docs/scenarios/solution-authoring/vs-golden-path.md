@@ -2,7 +2,7 @@
 title: Building simple Csolutions with Visual Studio
 description: Building simple Csolutions with Visual Studio
 keywords: .NET, .NET Core
-author: BillWagner
+author: bleroy
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

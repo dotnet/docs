@@ -2,7 +2,7 @@
 title: Best practices for exceptions
 description: Best practices for exceptions
 keywords: .NET, .NET Core
-author: BillWagner
+author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

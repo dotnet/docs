@@ -2,7 +2,7 @@
 title: How to trim your package dependencies
 description: How to trim your package dependencies
 keywords: .NET, .NET Core
-author: BillWagner
+author: cartermp
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -13,8 +13,6 @@ ms.assetid: 916251e3-87f9-4eee-81ec-94076215e6fa
 ---
 
 # How to trim your package dependencies
-
-By [Phillip Carter](https://github.com/cartermp)
 
 This article covers what you need to know about trimming your package dependencies to use only the packages you need for .NET Core RC2.
 

@@ -18,13 +18,13 @@ Want to make your libraries multi-platform? Want to see how much work is require
 
 ## New Targets
 
-*   [.NET Core 5](https://www.dotnetfoundation.org/netcore5): Has a modular design, employs side-by-side, and targets cross-platform scenarios. Side-by-side allows you to adopt new .NET Core versions without breaking other apps.
-*   [ASP.NET 5](https://www.dotnetfoundation.org/aspnet-5): is a modern web-framework built on .NET Core 5 thus giving developers the same benefits.
+*   [.NET Core](https://www.dotnetfoundation.org/netcore): Has a modular design, employs side-by-side, and targets cross-platform scenarios. Side-by-side allows you to adopt new .NET Core versions without breaking other apps.
+*   [ASP.NET Core](http://www.dotnetfoundation.org/aspnet-core): is a modern web-framework built on .NET Core 5 thus giving developers the same benefits.
 *   [.NET Native](http://blogs.msdn.com/b/dotnet/archive/2014/04/24/dotnetnative-performance.aspx): Improve performance of your Windows Store apps that run on x64 and ARM machines by using .NET Native’s static compilation.
 
 ## How to Use Portability Analyzer
 
-To begin using the .NET Portability Analyzer, download the extension from the Visual Studio Gallery. You can configure it in Visual Studio via _Tools_ >> _Options_ >> _.NET Portability Analyzer_ and select your Target Platforms. For now, please use ASP.NET 5 as a proxy for all .NET Core 5-based platforms (e.g. [Windows 10 .NET UAP apps](http://blogs.windows.com/buildingapps/2015/03/02/a-first-look-at-the-windows-10-universal-app-platform/)).
+To begin using the .NET Portability Analyzer, download the extension from the Visual Studio Gallery. You can configure it in Visual Studio via _Tools_ >> _Options_ >> _.NET Portability Analyzer_ and select your Target Platforms. For now, please use ASP.NET Core as a proxy for all .NET Core-based platforms (for example, [Windows 10 .NET UAP apps](http://blogs.windows.com/buildingapps/2015/03/02/a-first-look-at-the-windows-10-universal-app-platform/)).
 
 ![../images/portability_screenshot.png](../images/portability_screenshot.png)
 

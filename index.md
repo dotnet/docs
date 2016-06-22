@@ -19,10 +19,11 @@ ms.assetid:
 <article id="main">
     <section id="hero-content" class="graph">
         <h1>.NET Documentation</h1>
-        <h2>.NET is a general purpose development platform that you can use for your next [cloud | desktop | mobile | web | IoT] app or game. It includes the C#, F# and Visual Basic programming languages, an extensive class library and API bindings for popular operating systems. Start learning .NET today!</h2>
+        <h2>Welcome to .NET! This is the home of the technical documentation for .NET, C#, F# and Visual Basic, including basic concepts, getting started instructions, tutorials and samples. Start reading and exploring, to learn .NET for the first time or to find an answer to today's challenge.</h2>
+        <h3>New to .NET? Visit the <a href="">.NET Products page</a> &rarr;</h3>
     </section>
     <aside class="alert section-border">
-        <p>Download .NET Core today and get started</p>
+        <p>Download .NET Core today</p>
         <ol class="action-list">
             <li><a href="https://dot.net/core" class="button-bordered button-translucent">Get it!</a></li>
         </ol>

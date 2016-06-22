@@ -2,7 +2,7 @@
 title: Asynchronous programming
 description: Asynchronous programming
 keywords: .NET, .NET Core
-author: BillWagner
+author: cartermp
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -13,8 +13,6 @@ ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
 ---
 
 # Asynchronous programming
-
-By [Phillip Carter](https://github.com/cartermp)
 
 C# and Visual Basic share a language-level asynchronous programming model which allows for easily writing asynchronous code without having to juggle callbacks or conform to a library which supports asynchrony. It follows what is known as the [Task-based Asynchronous Pattern (TAP)](https://msdn.microsoft.com/library/hh873175.aspx).
 
@@ -111,7 +109,7 @@ It’s important to reason about Tasks as abstractions of work happening in the 
 
 Here’s a 10,000 foot view of what happens with a typical async call:
 
-The call (such as `GetStringAsync` from `HttpClient`) makes its way through the .NET libraries until it reaches a system interop call (such as `P/Invoke` on Windows). This eventually makes the proper System API call (such as `write` to a socket file descriptor on Linux). That System API call is then dealt with in the kernel, where the I/O request is sent to the proper subsystem. Although details about scheduling the work on the appropriate device driver are different for each OS, eventually an “incomplete task” signal will be sent from the device driver, bubbling its way back up to the .NET runtime. This will be converted into a `Task` or `Task<T>` by the runtime and returned to the calling method. When `await` is encountered, execuction is yielded and the system can go do something else useful while the Task is running.
+The call (such as `GetStringAsync` from `HttpClient`) makes its way through the .NET libraries until it reaches a system interop call (such as `P/Invoke` on Windows). This eventually makes the proper System API call (such as `write` to a socket file descriptor on Linux). That System API call is then dealt with in the kernel, where the I/O request is sent to the proper subsystem. Although details about scheduling the work on the appropriate device driver are different for each OS, eventually an “incomplete task” signal will be sent from the device driver, bubbling its way back up to the .NET runtime. This will be converted into a `Task` or `Task<T>` by the runtime and returned to the calling method. When `await` is encountered, execution is yielded and the system can go do something else useful while the Task is running.
 
 When the device driver has the data, it sends an interrupt which eventually allows the OS to bubble the result back up to the runtime, which will the queue up the result of the Task. Eventually execution will return to the method which called `GetStringAsync` at the `await`, and will “unwrap” the return value from the `Task<string>` which was being awaited. The method now has the result!
 
@@ -137,7 +135,7 @@ This is the convention used in .NET to more-easily differentiate synchronous and
 
 *   `async void` **should only be used for event handlers.**
 
-`async void` is the only way to allow asynchronous event handlers to work because events do not have return types (thus cannot make use of `Task` and `Task<T>`). Any other use of ``async void` does not follow the TAP model and can be challenging to use, such as:
+`async void` is the only way to allow asynchronous event handlers to work because events do not have return types (thus cannot make use of `Task` and `Task<T>`). Any other use of `async void` does not follow the TAP model and can be challenging to use, such as:
 
   *   Exceptions thrown in an `async void` method can’t be caught outside of that method.
   *   `async void` methods are very difficult to test.

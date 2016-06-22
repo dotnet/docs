@@ -2,7 +2,7 @@
 title: dotnet-install scripts reference
 description: dotnet-install scripts reference
 keywords: .NET, .NET Core
-author: BillWagner
+author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -32,7 +32,7 @@ OS X/Linux:
     [--shared-runtime]`
 
 ## DESCRIPTION
-The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the scripts from our [CLI GitHub repo](https://github.com/dotnet/cli/tree/rel/1.0.0-preview1/scripts/obtain). 
+The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the scripts from our [CLI GitHub repo](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/scripts/obtain). 
 
 Their main use case is to help with automation scenarios and non-admin installations. There are two scripts, one for PowerShell that works on Windows and a bash script that works on Linux/OS X. They both have the same behavior. Bash script also "understands" PowerShell switches so you can use them across the board. 
 
@@ -41,7 +41,7 @@ will download the SDK and install it; if you want to get just the shared runtime
 
 By default, the script will add the install location to the $PATH for the current session. This can be overridden if the `--no-path` argument is used. 
 
-Before running the script, please install all the required [dependencies](https://github.com/dotnet/cli/tree/rel/1.0.0/Documentation/cli-prerequisites.md).
+Before running the script, please install all the required [dependencies](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md).
 
 You can install a specific version using the `--version` argument. The version needs to be specified as 3-part version (for example 1.0.0-13232). If omitted, it will default to the first global.json file found in the hierarchy above the folder where the script was invoked in that contains the `sdkVersion` property. If that is not present, it will use Latest.
 

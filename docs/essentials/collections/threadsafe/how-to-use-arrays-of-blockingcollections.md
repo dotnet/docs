@@ -2,7 +2,7 @@
 title: How to: Use Arrays of Blocking Collections in a Pipeline
 description: How to: Use Arrays of Blocking Collections in a Pipeline
 keywords: .NET, .NET Core
-author: BillWagner
+author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

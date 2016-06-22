@@ -2,7 +2,7 @@
 title: Building simple Csolutions with the .NET CLI
 description: Building simple Csolutions with the .NET CLI
 keywords: .NET, .NET Core
-author: BillWagner
+author: bleroy
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

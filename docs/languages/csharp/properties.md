@@ -14,8 +14,6 @@ ms.assetid: 6950d25a-bba1-4744-b7c7-a3cc90438c55
 
 # Properties
 
-Author: [Bill Wagner](https://github.com/BillWagner)
-
 Properties are first class citizens in C#. The language
 defines syntax that enables developers to write code
 that accurately expresses their design intent.

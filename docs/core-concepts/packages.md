@@ -2,7 +2,7 @@
 title: Packages, Metapackages and Frameworks
 description: Packages, Metapackages and Frameworks
 keywords: .NET, .NET Core
-author: BillWagner
+author: richlander
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -36,12 +36,12 @@ Some of these benefits are only used in certain circumstances. For example, NET 
 
 The following is a list of the key NuGet packages for .NET Core:
 
-- [System.Runtime](https://www.nuget.org/packages/System.Runtime) - The most fundamental .NET Core package, including [Object](http://dotnet.github.io/api/System.Object), [String](http://dotnet.github.io/api/System.String), [Array](http://dotnet.github.io/api/System.Array), [Action](http://dotnet.github.io/api/System.Action) and [IList&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.IList`1).
-- [System.Collections](https://www.nuget.org/packages/System.Collections) - A set of (primarily) generic collections, including [List&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Generic.List`1) and [Dictionary&lt;K,V&gt;](http://dotnet.github.io/api/System.Collections.Generic.Dictionary`2).
-- [System.Net.Http](https://www.nuget.org/packages/System.Net.Http) - A set of types for HTTP network communication, including [HttpClient](http://dotnet.github.io/api/System.Net.Http.HttpClient) and [HttpResponseMessage](http://dotnet.github.io/api/System.Net.Http.HttpResponseMessage).
-- [System.IO.FileSystem](https://www.nuget.org/packages/System.IO.FileSystem) - A set of types for reading and writing to local or networked disk-based storage, including [File](http://dotnet.github.io/api/System.IO.File) and [Directory](http://dotnet.github.io/api/System.IO.Directory).
-- [System.Linq](https://www.nuget.org/packages/System.Linq) - A set of types for querying objects, including Enumerable and [ILookup&lt;TKey, TElement&gt;](http://dotnet.github.io/api/System.Linq.ILookup`2);.
-- [System.Reflection](https://www.nuget.org/packages/System.Reflection) - A set of types for loading, inspecting and activating types, including [Assembly](http://dotnet.github.io/api/System.Reflection.Assembly), [TypeInfo](http://dotnet.github.io/api/System.Reflection.TypeInfo) and [MethodInfo](http://dotnet.github.io/api/System.Reflection.MethodInfo).
+- [System.Runtime](https://www.nuget.org/packages/System.Runtime) - The most fundamental .NET Core package, including [Object](http://docs.microsoft.com/dotnet/core/api/System.Object), [String](http://docs.microsoft.com/dotnet/core/api/System.String), [Array](http://docs.microsoft.com/dotnet/core/api/System.Array), [Action](http://docs.microsoft.com/dotnet/core/api/System.Action) and [IList&lt;T&gt;](http://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IList%601).
+- [System.Collections](https://www.nuget.org/packages/System.Collections) - A set of (primarily) generic collections, including [List&lt;T&gt;](http://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.List%601) and [Dictionary&lt;K,V&gt;](http://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary%602).
+- [System.Net.Http](https://www.nuget.org/packages/System.Net.Http) - A set of types for HTTP network communication, including [HttpClient](http://docs.microsoft.com/dotnet/core/api/System.Net.Http.HttpClient) and [HttpResponseMessage](http://docs.microsoft.com/dotnet/core/api/System.Net.Http.HttpResponseMessage).
+- [System.IO.FileSystem](https://www.nuget.org/packages/System.IO.FileSystem) - A set of types for reading and writing to local or networked disk-based storage, including [File](http://docs.microsoft.com/dotnet/core/api/System.IO.File) and [Directory](http://docs.microsoft.com/dotnet/core/api/System.IO.Directory).
+- [System.Linq](https://www.nuget.org/packages/System.Linq) - A set of types for querying objects, including Enumerable and [ILookup&lt;TKey, TElement&gt;](http://docs.microsoft.com/dotnet/core/api/System.Linq.ILookup%602);.
+- [System.Reflection](https://www.nuget.org/packages/System.Reflection) - A set of types for loading, inspecting and activating types, including [Assembly](http://docs.microsoft.com/dotnet/core/api/System.Reflection.Assembly), [TypeInfo](http://docs.microsoft.com/dotnet/core/api/System.Reflection.TypeInfo) and [MethodInfo](http://docs.microsoft.com/dotnet/core/api/System.Reflection.MethodInfo).
 
 Packages are referenced in project.json. In the example below, the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package is referenced. 
 

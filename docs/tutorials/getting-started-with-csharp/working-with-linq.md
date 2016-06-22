@@ -41,8 +41,9 @@ application and see the progress.
 
 
 ## Prerequisites
-You’ll need to setup your machine to run .NET core. Instructions are
-[here](http://dotnet.github.io/getting-started/). You can run this
+You’ll need to setup your machine to run .NET core. You can find the
+installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
+page. You can run this
 application on Windows, Ubuntu Linux, OS X or in a Docker container. 
 You’ll need to install your favorite code editor. The descriptions below
 use [Visual Studio Code](https://code.visualstudio.com/) which is an open

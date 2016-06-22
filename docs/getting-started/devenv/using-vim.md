@@ -2,7 +2,7 @@
 title: Development using vim
 description: Development using vim
 keywords: .NET, .NET Core
-author: BillWagner
+author: dotnet-bot
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

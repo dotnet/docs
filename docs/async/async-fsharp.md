@@ -2,7 +2,7 @@
 title: Async Programming in F#
 description: Async Programming in F#
 keywords: .NET, .NET Core
-author: BillWagner
+author: cartermp
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -13,8 +13,6 @@ ms.assetid: f9196bfc-b8a8-4d33-8b53-0dcbd58a69d8
 ---
 
 # Async Programming in F# #
-
-By [Phillip Carter](https://github.com/cartermp)
 
 Async programming in F# can be accomplished through a language-level programming model designed to be easy to use and natural to the language.
 

@@ -54,13 +54,13 @@ ms.assetid:
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="core/">
+                                <a href="core/index">
                                     <h3>Getting Started with .NET Core</h3>
                                     <p>Learn how to build .NET Core console apps at the command-line or in Visual Studio.</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="api/">
+                                <a href="core/api/index">
                                     <h3>API Reference</h3>
                                     <p>Browse the .NET API, organized by namespace.</p>
                                 </a>

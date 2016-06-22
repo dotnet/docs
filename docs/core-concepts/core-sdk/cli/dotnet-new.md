@@ -2,7 +2,7 @@
 title: dotnet-new
 description: dotnet-new
 keywords: .NET, .NET Core
-author: BillWagner
+author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -39,18 +39,22 @@ Language of the project. Defaults to `C#`. `csharp` (`fsharp`) or `cs` (`fs`) ar
 
 `-t`, `--type`
 
-Type of the project. Valid value is "console".
+Type of the project. Valid values are `console`, `web`, `lib` and `xunittest`. 
 
 ## EXAMPLES
 
 `dotnet new`
     
-Drops a sample C# project in the current directory.
+Drops a C# project in the current directory.
 
 `dotnet new --lang f#`
     
-Drops a sample F# project in the current directory.
+Drops an F# project in the current directory.
 
 `dotnet new --lang c#`
     
-Drops a sample C# project in the current directory.
+Drops an C# project in the current directory.
+
+`dotnet new -t web`
+    
+Drops a new ASP.NET Core project in the current directory. 

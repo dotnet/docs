@@ -14,8 +14,6 @@ ms.assetid: 564a683d-352b-4e57-8bac-b466529daf6b
 
 # Strongly Typed Delegates
 
-By [Bill Wagner](https://github.com/BillWagner)
-
 [Previous](delegate-class.md)
 
 In the previous article, you saw that you create specific delegate

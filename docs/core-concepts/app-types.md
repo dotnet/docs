@@ -2,7 +2,7 @@
 title: .NET Core App Types
 description: .NET Core App Types
 keywords: .NET, .NET Core
-author: BillWagner
+author: blackdwarf
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -117,11 +117,11 @@ If you want to publish for the RID that represents the operating system you are 
 on, you don't have to specify anything to `dotnet publish`. However, you still have to specify that RID in your 
 `project.json` in order to get a standalone application. 
 
-> One thing that is important to note is that in RC2 timeframe running and publishing a self-contained 
-> application will happen from the NuGet packages cache on the machine. This means that the dependencies for the self-
->contained application will not be ready-to-run even if they come from .NET Core libraries, which means that performance 
-> will not be the same between these two application types. This is in contrast with the 
-> portable application, which, as far as the .NET Core libraries are concerned, runs on ready-to-run images. 
+> An important thing to note is that in the .NET Core Tools Preview 2 timeframe, the self-contained application is being published 
+> from the NuGet cache on your machine. This means that all dependencies, including the actual .NET Core runtime and 
+> libraries, is not ready-to-run optimized, which means that it will have lower overall performance than portable 
+> applications. This is due to the fact that portable applications run against the installed .NET Core runtime and 
+> libraries which are ready-to-run. 
 
 The following `project.json` sample illustrates a simple self-contained application. 
 

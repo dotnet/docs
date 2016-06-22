@@ -2,7 +2,7 @@
 title: What is the .NET Core Platform?
 description: What is the .NET Core Platform?
 keywords: .NET, .NET Core
-author: BillWagner
+author: rpetrusha
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -56,7 +56,7 @@ Because .NET Core is not an operating system component, installation:
 
 - Is as simple as copying some files to a directory on the target computer or compiling the framework natively into the app.
 
-New developers can get started developing for .NET in under one minute, including downloading the frameworks and tools. You can install .NET Core from the [.NET Core getting started page](https://dotnet.github.io/getting-started/#/windows ".NET Core getting started page"). 
+New developers can get started developing for .NET in under one minute, including downloading the frameworks and tools. You can install .NET Core from the [.NET Core](https://www.microsoft.com/net/core) page. 
 
 ## Ease of Deployment ##
 

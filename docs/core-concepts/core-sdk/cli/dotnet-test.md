@@ -2,7 +2,7 @@
 title: dotnet-test
 description: dotnet-test
 keywords: .NET, .NET Core
-author: BillWagner
+author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -41,26 +41,30 @@ The following sample project.json shows the properties needed:
 
 ```json
 {
-    "version": "1.0.0-*",
-
-    "dependencies": {
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable"
+  },
+  "dependencies": {
+    "System.Runtime.Serialization.Primitives": "4.1.1",
+    "xunit": "2.1.0",
+    "dotnet-test-xunit": "1.0.0-rc2-192208-24"
+  },
+  "testRunner": "xunit",
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
         "Microsoft.NETCore.App": {
-            "version": "1.0.0-rc2-3002702",
-            "type": "platform"
-        },
-        "xunit": "2.1.0",
-        "dotnet-test-xunit": "1.0.0-rc2-build10015"
-    },
-    "testRunner": "xunit",
-
-    "frameworks": {
-        "netcoreapp1.0": {
-                "imports": [
-                    "dnxcore50",
-                    "portable-net45+win8"
-                ]
+          "type": "platform",
+          "version": "1.0.0"
         }
+      },
+      "imports": [
+        "dotnet5.4",
+        "portable-net451+win8"
+      ]
     }
+  }
 }
 ```
 `dotnet test` supports two running modes:

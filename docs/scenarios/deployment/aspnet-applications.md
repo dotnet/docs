@@ -2,7 +2,7 @@
 title: Deploying ASP.NET web applications 
 description: Deploying ASP.NET web applications 
 keywords: .NET, .NET Core
-author: BillWagner
+author: tdykstra
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

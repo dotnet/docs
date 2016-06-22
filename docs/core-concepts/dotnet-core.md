@@ -2,7 +2,7 @@
 title: .NET Core
 description: .NET Core
 keywords: .NET, .NET Core
-author: BillWagner
+author: richlander
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -32,7 +32,7 @@ Composition
 - A [.NET runtime](https://github.com/dotnet/coreclr), which provides a type system, assembly loading, a garbage collector, native interop and other basic services. 
 - A set of [framework libraries](https://github.com/dotnet/corefx), which provide primitive data types, app composition types and fundamental utilities. 
 - The 'dotnet' app host, which is used to launch .NET Core apps. It selects the runtime and hosts the runtime, provides an assembly loading policy and launches the app. The same host is also used to launch SDK tools in much the same way.
-- A [set of SDK tools](https://github.com/dotnet/cli) and language compilers that enable the base developer experience, available in the [.NET Core SDK](http://dotnet.github.io/docs/core-concepts/core-sdk).
+- A [set of SDK tools](https://github.com/dotnet/cli) and language compilers that enable the base developer experience, available in the [.NET Core SDK](core-sdk/index.md).
 
 Languages
 ---------

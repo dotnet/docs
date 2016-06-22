@@ -14,8 +14,6 @@ ms.assetid: 0fdc8629-2fdb-4a7c-a433-5b9d04eaf911
 
 # Distinguising Delegates and Events
 
-By [Bill Wagner](https://github.com/BillWagner)
-
 [Previous](modern-events.md)
 
 Developers that are new to the .NET Core platform often struggle

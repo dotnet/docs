@@ -12,11 +12,10 @@ ms.devlang: dotnet
 ms.assetid: 109e0ac5-2a9c-48b4-ac68-9b6219cdbccf
 ---
 
+# Executing Expression Trees
+
 [Previous -- Framework Types Supporting Expression Trees](expression-classes.md)
 
-By [Bill Wagner](https://github.com/BillWagner)
-
-# Executing Expression Trees
 An *expression tree* is a data structure that represents some code.
 It is not compiled and executable code. If you want to execute
 the .NET code that is represented by an expression tree, you must

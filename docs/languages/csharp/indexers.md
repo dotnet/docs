@@ -14,8 +14,6 @@ ms.assetid: 0e9496da-e766-45a9-b92b-91820d4a350e
 
 # Indexers
 
-Author: [Bill Wagner](https://github.com/BillWagner)
-
 *Indexers* are similar to properties. In many ways indexers build
 on the same language features as [properties](properties.md). Indexers
 enable *indexed* properties: properties referenced using one or more

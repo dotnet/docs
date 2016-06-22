@@ -1,3 +1,17 @@
+---
+title: Exception Class and Properties
+description: Exception Class and Properties
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: bf116df6-0042-46bf-be13-b69864816210
+---
+
 # Exception Class and Properties
 
 The [Exception](https://msdn.microsoft.com/library/system.exception) class is the base class from which exceptions inherit. Most exception objects are instances of some derived class of **Exception**, but you can throw any object that derives from the [Object](https://msdn.microsoft.com/library/system.object) class as an exception. Note that not all languages support throwing and catching objects that do not derive from **Exception**. In almost all cases, it is recommended to throw and catch only **Exception** objects.

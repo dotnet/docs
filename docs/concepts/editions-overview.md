@@ -1,3 +1,17 @@
+---
+title: Overview of .NET Implementations
+description: Overview of .NET Implementations
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 43c9fce8-4d39-4d10-aaeb-160e9a10d204
+---
+
 # Overview of .NET Implementations
 
 The .NET Platform is described by a set of [open standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) that define its architecture and semantic behavior. The [ECMA 335](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md#ecma-335---cli) standard, in particular, must be implemented to be considered a compliant .NET runtime. There are multiple implementations of these standards, provided by Microsoft and other companies, some of which are described below.

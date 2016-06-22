@@ -1,3 +1,17 @@
+---
+title: Introduction to Events
+description: Introduction to Events
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 9b8d2a00-1584-4a5b-8994-5003d54d8e0c
+---
+
 # Introduction to Events
 
 By [Bill Wagner](https://github.com/BillWagner)

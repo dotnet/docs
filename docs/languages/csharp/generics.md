@@ -1,3 +1,17 @@
+---
+title: Generics
+description: Generics
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 63d1fe21-bb1f-46e3-92a0-89efcf0815e8
+---
+
 # 🔧 Generics
 
 > **Note**

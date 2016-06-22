@@ -1,3 +1,17 @@
+---
+title: Native interoperability
+description: Native interoperability
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 54485caa-09e0-466c-86fa-6a9aab6c332b
+---
+
 # 🔧 Native interoperability
 
 > **Note**

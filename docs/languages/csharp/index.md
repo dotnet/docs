@@ -1,4 +1,18 @@
-﻿# Learn C# # 
+---
+title: Learn C
+description: Learn C
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 52db8280-0e53-40cf-858b-e8eef3997dea
+---
+
+# Learn C# # 
 
 *  [🔧 Syntax](syntax.md)
 *  [🔧 Features at a glance](features.md)

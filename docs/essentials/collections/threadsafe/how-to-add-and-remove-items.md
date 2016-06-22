@@ -1,6 +1,20 @@
+---
+title: How to: Add and Remove Items from a ConcurrentDictionary
+description: How to: Add and Remove Items from a ConcurrentDictionary
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: b7c04a5f-a8e6-42ae-8c84-0e1ae18896eb
+---
+
 # How to: Add and Remove Items from a ConcurrentDictionary
 
-This example shows how to add, retrieve, update, and remove items from a [System.Collections.Concurrent.ConcurrentDictionary&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentDictionary%602.html). This collection class is a thread-safe implementation. We recommend that you use it whenever multiple threads might be attempting to access the elements concurrently.
+This example shows how to add, retrieve, update, and remove items from a [System.Collections.Concurrent.ConcurrentDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary%602). This collection class is a thread-safe implementation. We recommend that you use it whenever multiple threads might be attempting to access the elements concurrently.
 
 `ConcurrentDictionary<TKey, TValue>` provides several convenience methods that make it unnecessary for code to first check whether a key exists before it attempts to add or remove data. The following table lists these convenience methods and describes when to use them.
 
@@ -263,7 +277,7 @@ namespace DictionaryHowTo
 }
 
 ```
-[ConcurrentDictionary&lt;TKey, TValue&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.ConcurrentDictionary%602.html) is designed for multithreaded scenarios. You do not have to use locks in your code to add or remove items from the collection. However, it is always possible for one thread to retrieve a value, and another thread to immediately update the collection by giving the same key a new value.
+[ConcurrentDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary%602) is designed for multithreaded scenarios. You do not have to use locks in your code to add or remove items from the collection. However, it is always possible for one thread to retrieve a value, and another thread to immediately update the collection by giving the same key a new value.
 
 Also, although all methods of `ConcurrentDictionary<TKey, TValue>` are thread-safe, not all methods are atomic, specifically `GetOrAdd` and `AddOrUpdate`. The user delegate that is passed to these methods is invoked outside of the dictionary's internal lock. (This is done to prevent unknown code from blocking all threads.) Therefore it is possible for this sequence of events to occur:
 
@@ -279,7 +293,7 @@ Therefore, it is not guaranteed that the data that is returned by `GetOrAdd` is 
 
 ## See Also
 
-[System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html)
+[System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)
 
 [Thread-Safe Collections](../thread-safe-collections.md)
 

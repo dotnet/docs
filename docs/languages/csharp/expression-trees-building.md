@@ -1,3 +1,17 @@
+---
+title: Building Expression Trees
+description: Building Expression Trees
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 542754a9-7f40-4293-b299-b9f80241902c
+---
+
 [Previous -- Interpreting Expressions](expression-trees-interpreting.md)
 
 By [Bill Wagner](https://github.com/BillWagner)

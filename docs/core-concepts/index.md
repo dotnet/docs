@@ -1,3 +1,17 @@
+---
+title: .NET Core Concepts
+description: .NET Core Concepts
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 004af823-9e37-483e-a5d8-211bbaa20167
+---
+
 # .NET Core Concepts
 * [.NET Core](dotnet-core.md)
 * [Types of portability in .NET Core](app-types.md)

@@ -1,3 +1,17 @@
+---
+title: Building simple Csolutions with the .NET CLI
+description: Building simple Csolutions with the .NET CLI
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 18c5f028-2e1b-47c6-bdaa-5a06b564f988
+---
+
 Building simple C# solutions with the .NET CLI
 ==============================================
 

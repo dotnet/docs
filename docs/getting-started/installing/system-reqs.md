@@ -1,3 +1,17 @@
+---
+title: .NET Core System Requirements
+description: .NET Core System Requirements
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: afd18cbd-a141-4d73-9844-40d4a8b25103
+---
+
 # .NET Core System Requirements
 
 This topic provides a list of the operating systems that are currently supported by .NET Core.

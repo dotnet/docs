@@ -1,3 +1,17 @@
+---
+title: Getting started
+description: Getting started
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: cc788dcf-2120-467f-9c34-c02a90e1f68f
+---
+
 ## Getting started
 
 In this docset, you will find tutorials that will teach you how to get started with .NET Core. You can also find the API reference documentation. 

@@ -1,6 +1,20 @@
+---
+title: How to: Add and Take Items Individually from a BlockingCollection
+description: How to: Add and Take Items Individually from a BlockingCollection
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 2b9d39ab-0993-4453-b021-b04870098bf7
+---
+
 # How to: Add and Take Items Individually from a BlockingCollection
 
-This example shows how to add and remove items from a [BlockingCollection&lt;T&gt;](http://dotnet.github.io/api/System.Collections.Concurrent.BlockingCollection%601.html) in both a blocking and non-blocking manner. For more information on `BlockingCollection<T>`, see [BlockingCollection Overview](blockingcollection-overview.md). 
+This example shows how to add and remove items from a [BlockingCollection&lt;T&gt;]( https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection%601) in both a blocking and non-blocking manner. For more information on `BlockingCollection<T>`, see [BlockingCollection Overview](blockingcollection-overview.md). 
 
 For an example of how to enumerate a `BlockingCollection<T>` until it is empty and no more elements will be added, see [How to: Use ForEach to Remove Items in a BlockingCollection](how-to-use-foreach-to-remove.md).
 
@@ -200,6 +214,6 @@ class ProgramWithCancellation
 
 ## See Also
 
-[System.Collections.Concurrent](http://dotnet.github.io/api/System.Collections.Concurrent.html)
+[System.Collections.Concurrent]( https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)
 
 [BlockingCollection Overview](blockingcollection-overview.md)

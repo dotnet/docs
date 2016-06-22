@@ -1,3 +1,17 @@
+---
+title: dotnet command
+description: dotnet command
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 93015521-2127-4fe9-8fce-ca79bcc4ff49
+---
+
 dotnet command
 ==============
 

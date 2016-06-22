@@ -1,3 +1,17 @@
+---
+title: .NET Core
+description: .NET Core
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: f2b312cb-f80c-4b0d-9101-93908f06a6fa
+---
+
 .NET Core
 =========
 

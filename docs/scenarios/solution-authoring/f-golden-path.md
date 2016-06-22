@@ -1,3 +1,17 @@
+---
+title: Building simple Fsolutions with the .NET CLI
+description: Building simple Fsolutions with the .NET CLI
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 615db1ec-6ef3-4de2-bae6-4586affa9771
+---
+
 Building simple F# solutions with the .NET CLI
 ==============================================
 

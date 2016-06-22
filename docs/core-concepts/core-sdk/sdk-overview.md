@@ -1,3 +1,17 @@
+---
+title: .NET Core Software Development Kit (SDK) Overview 
+description: .NET Core Software Development Kit (SDK) Overview 
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 26bc9822-e42b-48ec-b0d6-499dc604add7
+---
+
 # .NET Core Software Development Kit (SDK) Overview 
 
 ## Introduction

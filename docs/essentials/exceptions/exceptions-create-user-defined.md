@@ -1,3 +1,17 @@
+---
+title: How to create user-defined exceptions
+description: How to create user-defined exceptions
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 7f8e95a6-3026-44a1-8566-273059c45011
+---
+
 # How to create user-defined exceptions
 
 If you want users to be able to programmatically distinguish between some error conditions, you can create your own user-defined exceptions. The .NET Framework provides a hierarchy of exception classes ultimately derived from the base class [Exception](https://msdn.microsoft.com/library/system.exception). Each of these classes defines a specific exception, so in many cases you only have to catch the exception. You can also create your own exception classes by deriving from the **Exception** class.

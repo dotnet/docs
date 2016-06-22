@@ -1,3 +1,17 @@
+---
+title: How to use specific exceptions in a Catch block
+description: How to use specific exceptions in a Catch block
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: e814ffe5-4f6c-4e73-9745-cb6ee973d77c
+---
+
 # How to use specific exceptions in a Catch block
 
 When an exception occurs, it is passed up the stack and each catch block is given the opportunity to handle it. The order of catch statements is important. Put catch blocks targeted to specific exceptions before a general exception catch block or the compiler might issue an error. The proper catch block is determined by matching the type of the exception to the name of the exception specified in the catch block. If there is no specific catch block, the exception is caught by a general catch block, if one exists.

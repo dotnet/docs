@@ -1,3 +1,17 @@
+---
+title: Scenarios
+description: Scenarios
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 42c7ea39-8da5-499c-9a02-c1d27b37fc40
+---
+
 # Scenarios
 
 * [Authoring Solutions for .NET Core RC2](solution-authoring/index.md)

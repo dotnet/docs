@@ -1,3 +1,17 @@
+---
+title: Tooling to help you on the process 
+description: Tooling to help you on the process 
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 0375250f-5704-4993-a6d5-e21c499cea1e
+---
+
 # Tooling to help you on the process 
 
 Want to make your libraries multi-platform? Want to see how much work is required to make your application compatible with other .NET platforms? The [.NET Portability Analyzer](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b) is a tool that provides you with a detailed report on how flexible your program is across .NET platforms by analyzing assemblies. The Portability Analyzer is offered as a Visual Studio Extension and as a console app.

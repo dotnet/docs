@@ -1,3 +1,17 @@
+---
+title: Interpreting Expressions
+description: Interpreting Expressions
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: adf73dde-1e52-4df3-9929-2e0670e28e16
+---
+
 [Previous -- Executing Expressions](expression-trees-execution.md)
 
 By [Bill Wagner](https://github.com/BillWagner)
@@ -560,7 +574,7 @@ capabilities.
 Even the last example recognizes a subset of the possible node types.
 You can still feed it many expressions that will cause it to fail.
 A full implementation is included in the .NET Standard Library
-under the name [ExpressionVisitor](https://dotnet.github.io/api/System.Linq.Expressions.ExpressionVisitor.html)
+under the name [ExpressionVisitor](https:// docs.microsoft.com/dotnet/core/api/System.Linq.Expressions.ExpressionVisitor)
 and can handle all the possible node types.
 
 Finally, the library I used in this article was built for demonstration

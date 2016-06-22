@@ -1,3 +1,17 @@
+---
+title: Building simple Csolutions with Visual Studio
+description: Building simple Csolutions with Visual Studio
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: c0924e21-5cda-4e44-a183-fa175b51319c
+---
+
 Building simple C# solutions with Visual Studio
 ===============================================
 

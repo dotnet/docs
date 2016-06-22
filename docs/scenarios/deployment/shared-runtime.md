@@ -1,3 +1,17 @@
+---
+title: Deploying to a shared runtime
+description: Deploying to a shared runtime
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: afe42ac8-fac7-4413-807c-5667d2bb1161
+---
+
 # 🔧 Deploying to a shared runtime
 
 > **Note**

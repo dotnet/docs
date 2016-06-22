@@ -1,3 +1,17 @@
+---
+title: Development using vim
+description: Development using vim
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: bfc958c3-7db4-46a1-9711-3021f5eb1cb2
+---
+
 # 🔧 Development using vim
 
 > **Note**

@@ -1,3 +1,17 @@
+---
+title: Using user-filtered exception handlers
+description: Using user-filtered exception handlers
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 35309a65-1041-4e6f-971a-a150f2cfbddb
+---
+
 # Using user-filtered exception handlers
 
 Currently, Visual Basic supports user-filtered exceptions. User-filtered exception handlers catch and handle exceptions based on requirements you define for the exception. These handlers use the **Catch** statement with the **When** keyword.

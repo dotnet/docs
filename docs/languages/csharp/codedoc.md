@@ -1,3 +1,17 @@
+---
+title: Documenting your code
+description: Documenting your code
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
+---
+
 # 🔧 Documenting your code
 
 > **Note**

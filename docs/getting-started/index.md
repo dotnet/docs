@@ -1,3 +1,17 @@
+---
+title: Getting started
+description: Getting started
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: c2794d8d-023c-4be7-b994-b214ebcfd1ce
+---
+
 # Getting started
 
 *  [What is the .NET Core Platform?](what-is-dotnet.md)

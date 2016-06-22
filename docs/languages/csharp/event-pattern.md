@@ -1,3 +1,17 @@
+---
+title: The Standard .NET Event Pattern
+description: The Standard .NET Event Pattern
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 8a3133d6-4ef2-46f9-9c8d-a8ea8898e4c9
+---
+
 # The Standard .NET Event Pattern
 
 By [Bill Wagner](https://github.com/BillWagner)

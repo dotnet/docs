@@ -1,3 +1,17 @@
+---
+title: Publishing NuGet Packages
+description: Publishing NuGet Packages
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 2acd0bbf-8559-41c0-975e-a4e0f4ed9f55
+---
+
 # 🔧 Publishing NuGet Packages
 
 > **Note**

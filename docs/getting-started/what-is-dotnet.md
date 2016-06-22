@@ -1,3 +1,17 @@
+---
+title: What is the .NET Core Platform?
+description: What is the .NET Core Platform?
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: aa58847b-0d11-4971-b097-630901be9491
+---
+
 # What is the .NET Core Platform?
 
 .NET Core is a modular, cross-platform, open source implementation of the .NET Framework that runs on Windows devices, as well as on Linux and OS X. Unlike the .NET Framework, which is a monolithic, system-wide, Windows-only runtime environment, .NET Core can be used to create componentized libraries and applications that can target multiple platforms and that can be deployed along with the application itself. 
@@ -80,15 +94,15 @@ Microsoft.NetCore.App is included with the runtime and contains the basic types 
 
 -  Primitives, such as the Boolean type, signed and unsigned integral types, floating-point types, and the Char structure.
 
-- The String type. A string in .NET Core is a sequence of UTF-16 code units. .NET Core also includes a number of encoding types that let you convert UTF-16 encoded strings to an array of bytes in other encodings. For example, you can use the [UTF8Encoding class](https://dotnet.github.io/api/System.Text.UTF8Encoding.html "UTF8Encoding class") to convert a .NET Core string to a UTF-8 encoded byte array that represents a string on Linux.  
+- The String type. A string in .NET Core is a sequence of UTF-16 code units. .NET Core also includes a number of encoding types that let you convert UTF-16 encoded strings to an array of bytes in other encodings. For example, you can use the [UTF8Encoding class]( https://docs.microsoft.com/dotnet/core/api/System.Text.UTF8Encoding "UTF8Encoding class") to convert a .NET Core string to a UTF-8 encoded byte array that represents a string on Linux.  
   
 -  General-purpose exception classes, such as the ArgumentException, ArgumentNullException, and NullReferenceException types.
 
-- The task types, such as [Task](https://dotnet.github.io/api/System.Threading.Tasks.Task.html "Task") and [Task&lt;T&gt;](https://dotnet.github.io/api/System.Threading.Tasks.Task%601.html "Task&lt;T&gt;"), to support asynchronous programming.
+- The task types, such as [Task]( https://docs.microsoft.com/dotnet/core/api/System.Threading.Tasks.Task "Task") and [Task&lt;T&gt;]( https://docs.microsoft.com/dotnet/core/api/System.Threading.Tasks.Task%601 "Task&lt;T&gt;"), to support asynchronous programming.
 
 - Basic threading types.
 
-- The [Console class](https://dotnet.github.io/api/System.Console.html "Console class"), to support the development of console apps. 
+- The [Console class]( https://docs.microsoft.com/dotnet/core/api/System.Console "Console class"), to support the development of console apps. 
 
 Other libraries are installed as [NuGet](http://www.nuget.org/ "NuGet") packages
 

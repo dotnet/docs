@@ -1,3 +1,17 @@
+---
+title: Delegates & events
+description: Delegates & events
+keywords: .NET, .NET Core
+author: BillWagner
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 4e80e053-8022-4987-a8a0-209caec0315d
+---
+
 # Delegates & events
 
 > **Note**

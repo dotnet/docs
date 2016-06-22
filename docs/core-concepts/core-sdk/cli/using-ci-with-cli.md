@@ -58,7 +58,7 @@ The installation script reference can be found in the [dotnet-install](dotnet-in
 ### Dealing with the dependencies
 Using the installer script means that the native dependencies are not installed automatically and that you have to 
 install them if the operating system you are installing on already doesn't have them. You can see the list of prerequisites 
-in the [CLI repo](https://github.com/dotnet/cli/blob/rel/1.0.0/Documentation/cli-prerequisites.md). 
+in the [CLI repo](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md). 
 
 ## CI services setup examples
 The below sections show examples of configurations using the mentioned CI SaaS offerings. 

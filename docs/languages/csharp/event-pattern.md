@@ -14,8 +14,6 @@ ms.assetid: 8a3133d6-4ef2-46f9-9c8d-a8ea8898e4c9
 
 # The Standard .NET Event Pattern
 
-By [Bill Wagner](https://github.com/BillWagner)
-
 [Previous](events-overview.md)
 
 .NET events generally follow a few known patterns. Standardizing
@@ -286,7 +284,7 @@ create the event using syntax very similar to that used for
 [properties](properties.md). Notice that the handlers have different
 names: `add` and `remove`. These are called to subscribe to the event,
 or unsubscribe from the event. Notice that you also must declare a
-private backing field to store the event variable. It is initialzed
+private backing field to store the event variable. It is initialized
 to null.
 
 Next, let's add the overload of the Search() method that traverses

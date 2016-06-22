@@ -12,8 +12,6 @@ ms.devlang: dotnet
 ms.assetid: aceb4719-0d5a-4b19-b01f-b51063bcc54f
 ---
 
-By [Bill Wagner](https://github.com/BillWagner)
-
 # Expression Trees
 
 If you have used LINQ, you have experience with a rich library

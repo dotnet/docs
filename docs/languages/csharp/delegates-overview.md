@@ -14,9 +14,6 @@ ms.assetid: 59b61d77-84e5-457b-8da5-fb5f24ca6ed6
 
 # Introduction to Delegates
 
-By [Bill Wagner](https://github.com/BillWagner)
-
-
 [Previous](delegates-events.md)
 
 Delegates provide a *late binding* mechanism in .NET. Late Binding

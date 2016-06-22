@@ -2,7 +2,7 @@
 title: Understanding package management on .NET
 description: Understanding package management on .NET
 keywords: .NET, .NET Core
-author: BillWagner
+author: blackdwarf
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

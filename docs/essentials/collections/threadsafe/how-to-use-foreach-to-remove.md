@@ -2,7 +2,7 @@
 title: How to: Use ForEach to Remove Items in a BlockingCollection
 description: How to: Use ForEach to Remove Items in a BlockingCollection
 keywords: .NET, .NET Core
-author: BillWagner
+author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

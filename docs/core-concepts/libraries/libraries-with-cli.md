@@ -2,7 +2,7 @@
 title: Writing Libraries with Cross Platform Tools
 description: Writing Libraries with Cross Platform Tools
 keywords: .NET, .NET Core
-author: BillWagner
+author: cartermp
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -13,8 +13,6 @@ ms.assetid: 9f6e8679-bd7e-4317-b3f9-7255a260d9cf
 ---
 
 # Writing Libraries with Cross Platform Tools
-
-By [Phillip Carter](https://github.com/cartermp)
 
 **Some details are subject to change as the toolchain evolves.**
 

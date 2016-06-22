@@ -2,7 +2,7 @@
 title: How to use the Try/Catch block to catch exceptions
 description: How to use the Try/Catch block to catch exceptions
 keywords: .NET, .NET Core
-author: BillWagner
+author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

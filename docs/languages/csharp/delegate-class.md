@@ -14,8 +14,6 @@ ms.assetid: f3742fda-13c2-4283-8966-9e21c2674393
 
 # System.Delegate and the `delegate` keyword
 
-By [Bill Wagner](https://github.com/BillWagner)
-
 [Previous](delegates-overview.md)
 
 This article will cover the classes in the .NET framework

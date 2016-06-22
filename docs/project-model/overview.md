@@ -1,8 +1,8 @@
 ---
-title: .Net core project system
-description: .Net core project system
+title: .NET Core Project System
+description: .NET Core Project System
 keywords: .NET, .NET Core
-author: BillWagner
+author: dotnet-bot
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 2f444d85-5915-49d2-a279-7561b1516f28
 ---
 
-# .Net core project system
+# .NET Core Project System
 
 This page will provide an overview of the .NET Core project system
 

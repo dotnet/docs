@@ -2,7 +2,7 @@
 title: Asynchronous Programming with .NET
 description: Asynchronous Programming with .NET
 keywords: .NET, .NET Core
-author: BillWagner
+author: cartermp
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

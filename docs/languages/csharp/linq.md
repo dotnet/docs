@@ -2,7 +2,7 @@
 title: Language Integrated Query (LINQ)
 description: Language Integrated Query (LINQ)
 keywords: .NET, .NET Core
-author: BillWagner
+author: dotnet-bot
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

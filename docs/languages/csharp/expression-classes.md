@@ -12,11 +12,10 @@ ms.devlang: dotnet
 ms.assetid: e9c85021-0d36-48af-91b7-aaaa66f22654
 ---
 
+# Framework Types Supporting Expression Trees
+
 [Previous -- Expression Trees Explained](expression-trees-explained.md)
 
-By [Bill Wagner](https://github.com/BillWagner)
-
-# Framework Types Supporting Expression Trees
 There is a large list of classes in the .NET Core framework that work with Expression Trees.
 You can see the full
 list [here](https://docs.microsoft.com/dotnet/core/api/System.Linq.Expressions).

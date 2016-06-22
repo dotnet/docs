@@ -2,7 +2,7 @@
 title: .Net core project system
 description: .Net core project system
 keywords: .NET, .NET Core
-author: BillWagner
+author: aL3891
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

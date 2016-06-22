@@ -2,7 +2,7 @@
 title: Authoring Solutions for .NET Core RC2
 description: Authoring Solutions for .NET Core RC2
 keywords: .NET, .NET Core
-author: BillWagner
+author: bleroy
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article

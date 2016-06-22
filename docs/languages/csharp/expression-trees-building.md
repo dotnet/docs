@@ -12,11 +12,9 @@ ms.devlang: dotnet
 ms.assetid: 542754a9-7f40-4293-b299-b9f80241902c
 ---
 
-[Previous -- Interpreting Expressions](expression-trees-interpreting.md)
-
-By [Bill Wagner](https://github.com/BillWagner)
-
 # Building Expression Trees
+
+[Previous -- Interpreting Expressions](expression-trees-interpreting.md)
 
 All the expression trees you've seen so far have been created
 by the C# compiler. All you had to do was create a lambda expression

@@ -96,72 +96,36 @@ At this point, your directory tree should look like this:
 
 Your next task is to create the library. In the terminal window
 (either the embedded terminal in VS code, or another terminal),
-cd to `golden/src/library` and type the command `dotnet new`.
+cd to `golden/src/library` and type the command `dotnet new -t lib`.
+This creates a library project, with two files: `project.json` and
+`Library.cs`.
 
-The `dotnet new` command creates a new application project. Because
-you want a library project, you're going to make a few changes to
-the generated `project.json` file.
-
-First, remove the `buildOptions` node:
+`project.json` contains the following information:
 
 ```js
-"buildOptions" {
-    "emitEntryPoint": true
-}
-```
-
-Next, you'll need to update the dependencies section to create
-a library assembly, rather than an application. You'll remove the
-`Microsoft.NETCore.App` node:
-
-```js
-"dependencies": {
-    "Microsoft.NETCore.App": {
-        "type": "platform",
-        "version": "1.0.0-rc2-300702"
-    }
-}
-```
-And replace it with a reference to the .NET Standard library:
-
-```js
-"dependencies": {
-    "NETStandard.Library": {
-        "version": "1.5.0-rc2-24027"
-    }
-}
-```
-
-You'll also need to update the frameworks section to use 
-.NET Standard instead of `netcoreapp1.0`:
-
-```js
-"frameworks": {
-    "netcoreapp1.0" : {
-        "imports": "dnxcore50"
-    }
-}
-```
-
-becomes:
-
-```js
-"frameworks" : {
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable"
+  },
+  "dependencies": {},
+  "frameworks": {
     "netstandard1.6": {
-        "imports": "dnxcore50"
+      "dependencies": {
+        "NETStandard.Library": "1.6.0"
+      }
     }
+  }
 }
 ```
 
-This library will make use of JSON representation of objects, so you'll want to
+
+This library project will make use of JSON representation of objects, so you'll want to
 add a reference to the `Newtonsoft.Json` NuGet package. In`project.json`
 add the latest pre-release version of the package as a dependency:
 
 ```js
 "dependencies": {
-    "NETStandard.Library": {
-        "version": "1.5.0-rc2-24027"
-    },
     "Newtonsoft.Json": "9.0.1-beta1"
 },
 ```
@@ -176,8 +140,8 @@ Core SDK.
 Now, let's update the C# code. Let's create a `Thing` class that contains
 one public method. This method will return the sum of two numbers,
 but  will do so by converting that number to a JSON string, and then
-deserializing it. Rename the file `Program.cs` to `Thing.cs`. Then, replace
-the existing code (for the template-generated Hello World) with the following:
+deserializing it. Rename the file `Library.cs` to `Thing.cs`. Then, replace
+the existing code (for the template-generated Class1) with the following:
 
 ```cs
 using static Newtonsoft.Json.JsonConvert;
@@ -205,36 +169,20 @@ You now have a built `library.dll` file under `golden/src/library/bin/Debug/nets
 ### Writing the test project
 
 Let's build a test project for this library that you've build. Cd into the `test/test-library`
-directory. Run `dotnet new` to create a new project. 
+directory. Run `dotnet new -t xunittest` to create a new test project. 
 
-For the test project, you do want a console application project. However, the entry point
-for the test project is in the test runner NuGet package. That means you do have some
-changes to make to the `project.json` file.
-
-You need to remove the `buildOptions` node from `project.json` so that the build process
-does not emit the startup code:
-
-```js
-"buildOptions" {
-    "emitEntryPoint": true
-}
-```
-
-Next, you'll need to add three dependency nodes. These are the xUnit test library
-project, the .NET core xUnit Test Runner, and the library you wrote in the steps
-above. Open `project.json` and update the dependencies section to the following:
+You'll need to add a dependency node for the library you wrote in the steps
+above. Open `project.json` and update the dependencies section to the following
+(including the `library` node, which is the last node below):
 
 ```js
 "dependencies": {
-    "Microsoft.NETCore.App": {
-        "type": "platform",
-        "version": "1.0.0-rc2-3002702"
-    },
-    "xunit": "2.1.0",
-    "dotnet-test-xunit": "1.0.0-rc2-build10025",
-    "library": {
-        "target": "project"
-    }
+  "System.Runtime.Serialization.Primitives": "4.1.1",
+  "xunit": "2.1.0",
+  "dotnet-test-xunit": "1.0.0-rc2-192208-24",
+  "library": {
+    "target": "project"
+  }
 }
 ```
 
@@ -242,33 +190,8 @@ The `library` node specifies that this dependency should resolve to a project
 in the current workspace. Without explicitly specifying this, it's possible
 that the test project would build against a NuGet package of the same name.
 
-If you try to build at this point, you'll find that the test library does
-not build. That's because the `xunit` NuGet package was built to work
-against a Portable Class Library profile. You need to update the `project.json`
-file to include the portable profiles in the frameworks section:
-
-```js
-"frameworks": {
-    "netcoreapp1.0": {
-        "imports": [
-            "dnxcore50",
-            "portable-net45+win8"
-        ]
-    }
-}
-```
-
-Finally, you need to add a `testrunner` node to `project.json` that
-tells the .NET SDK that you are using the xUnit test runner. Place this
-node between the `version` and the `dependencies` nodes in your `project.json`
-file.
-
-```js
-"testRunner": "xunit",
-```
-
 Now that the dependencies have been properly configured, let's create
-the tests for your library. Rename `Program.cs` to `LibraryTest.cs` and
+the tests for your library. Open `Tests.cs` and
 replace its contents with the following code:
 
 ```csharp
@@ -303,13 +226,9 @@ node below the `Microsoft.NetCore.App` node as follows:
 
 ```js
 "dependencies": {
-    "Microsoft.NetCore.App": {
-        "type": "platform",
-        "version": "1.0.0-rc2-3002702"
-    },
-    "library": {
-        "target": "project"
-    }
+  "library": {
+    "target": "project"
+  }
 }
 ```
 

@@ -105,7 +105,7 @@ Next, copy over the package references into the `dependencies` section of the li
         "System.Linq": "4.1.0",
         "System.Net.Primitives": "4.0.11",
         "System.ObjectModel": "4.0.12",
-        "System.Reflection": "4.1.0-",
+        "System.Reflection": "4.1.0",
         "System.Reflection.Extensions": "4.0.1",
         "System.Reflection.Primitives": "4.0.1",
         "System.Resources.ResourceManager": "4.0.1",

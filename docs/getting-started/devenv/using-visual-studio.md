@@ -20,7 +20,7 @@ Visual Studio 2015 provides a full-featured development environment for developi
 
 ## Prerequisites
 
-* Visual Studio 2015 Update 2. If you don't have Visual Studio already, you can download [Visual Studio Community 2015](https://www.visualstudio.com/products/visual-studio-community-vs) for free. 
+* Visual Studio 2015 Update 3. If you don't have Visual Studio already, you can download [Visual Studio Community 2015](https://www.visualstudio.com/products/visual-studio-community-vs) for free. 
 
 * NuGet Manager extension for Visual Studio. NuGet is the package manager for the Microsoft development platform including .NET Core. When you use NuGet to install a package, it copies the library files to your solution and automatically updates your project (add references, change config files, etc.). 
 
@@ -32,11 +32,11 @@ Visual Studio 2015 provides a full-featured development environment for developi
 
 The following steps will set up Visual Studio 2015 for .NET Core development:
 
-1. Verify that you're running Visual Studio 2015 Update 2:
+1. Verify that you're running Visual Studio 2015 Update 3:
 
    * On the **File** menu, choose **Help**, **About Microsoft Visual Studio**.
 
-   * In the About Microsoft Visual Studio dialog, the version number should include "Update 2" (or higher).
+   * In the About Microsoft Visual Studio dialog, the version number should include "Update 3" (or higher).
 
 2. Download and install the [MSI Installer for .NET Core Tooling Preview 1](https://go.microsoft.com/fwlink/?linkid=798481). This will install the .NET Core Tooling Preview 1 for Visual Studio 2015.
 

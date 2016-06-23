@@ -1,4 +1,4 @@
-﻿---
+---
 title: Handling and throwing exceptions in .NET
 description: Understand how to use exceptions in .NET
 keywords: .NET, .NET Core
@@ -123,7 +123,7 @@ public class ProcessFile
         {
             StreamReader sr = File.OpenText("data.txt");
             Console.WriteLine("The first line of this file is {0}", sr.ReadLine());
-	    sr.Close();
+	        sr.Dispose();
         }
         catch (Exception e)
         {
@@ -266,7 +266,7 @@ public class ProcessFile
       finally
       {
          if (fs != null)
-            fs.Close();
+            fs.Dispose();
       }
    }
 }
@@ -485,5 +485,44 @@ In some cases, it's more appropriate to use the exception's constructor to build
 
 ### Clean up intermediate results when throwing an exception
 
-Callers should be able to assume that there are no side effects when an exception is thrown from a method.
+Callers should be able to assume that there are no side effects when an exception is thrown from a method. For example, if you have code that transfers money by withdrawing from one account and depositing in another account, and an exception is thrown while executing the deposit, you don't want the withdrawal to remain in effect.
 
+C#
+```
+public void TransferFunds(Account from, Account to, decimal amount)
+{
+    from.Withdrawal(amount);
+	// If the deposit fails, the withdrawal shouldn't remain in effect. 
+	to.Deposit(amount);
+}
+```
+
+One way to handle this situation is to catch any exceptions thrown by the deposit transaction and roll back the withdrawal.
+
+C#
+```
+private static void TransferFunds(Account from, Account to, decimal amount)
+{
+    string withdrawalTrxID = from.Withdrawal(amount);
+    try
+    {
+        to.Deposit(amount);
+    }
+    catch
+    {
+        from.RollbackTransaction(withdrawalTrxID);
+        throw
+    }
+}
+```
+
+This example illustrates the use of **throw** to re-throw the original exception, which can make it easier for callers to see the real cause of the problem without having to examine the [InnerException](https://docs.microsoft.com/dotnet/core/api/System.Exception#System_Exception_InnerException) property. An alternative is to throw a new exception and include the original exception as the inner exception:
+
+C#
+```
+catch (Exception ex)
+{
+    from.RollbackTransaction(withdrawalTrxID);
+    throw new Exception("Withdrawal failed", ex);
+}
+```

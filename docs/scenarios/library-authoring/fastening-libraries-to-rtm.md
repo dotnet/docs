@@ -1,6 +1,6 @@
 ---
-title: How to manage package dependency versions for .NET Core RC2
-description: How to manage package dependency versions for .NET Core RC2
+title: How to manage package dependency versions for .NET Core RTM
+description: How to manage package dependency versions for .NET Core RTM
 keywords: .NET, .NET Core
 author: cartermp
 manager: wpickett

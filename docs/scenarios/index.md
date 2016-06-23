@@ -28,6 +28,6 @@ ms.assetid: 42c7ea39-8da5-499c-9a02-c1d27b37fc40
     * [Deploying NuGet packages](deployment/nuget-packages.md)
     * [Deploying ASP.NET web applications](deployment/aspnet-applications.md)
 
-* [Authoring Libraries for .NET Core RC2](library-authoring/index.md)
+* [Authoring Libraries for .NET Core RTM](library-authoring/index.md)
     * [How to manage package dependency versions for .NET Core RTM](library-authoring/fastening-libraries-to-rtm.md)
     * [How to trim your package dependencies](library-authoring/trimming.md)

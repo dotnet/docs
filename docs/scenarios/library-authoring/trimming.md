@@ -14,11 +14,11 @@ ms.assetid: 916251e3-87f9-4eee-81ec-94076215e6fa
 
 # How to trim your package dependencies
 
-This article covers what you need to know about trimming your package dependencies to use only the packages you need for .NET Core RTM.
+This article covers what you need to know about trimming your package dependencies to use only the packages you need for .NET Core 1.0.
 
 ## What trimming means
 
-.NET Core RTM introduces the [.NET Standard Library metapackage](https://www.nuget.org/packages/NETStandard.Library/1.6.0), which is a NuGet package composed of other packages.  It is curated to be appropriate for developing libraries.  However, there's a good chance that your library won't use every single package it contains.  When authoring a library and distributing it over NuGet, it's a best practice to "trim" your dependencies down to only the packages you actually use.  This results in a smaller overall footprint for NuGet packages.
+.NET Core 1.0 introduces the [.NET Standard Library metapackage](https://www.nuget.org/packages/NETStandard.Library/1.6.0), which is a NuGet package composed of other packages.  It is curated to be appropriate for developing libraries.  However, there's a good chance that your library won't use every single package it contains.  When authoring a library and distributing it over NuGet, it's a best practice to "trim" your dependencies down to only the packages you actually use.  This results in a smaller overall footprint for NuGet packages.
 
 ## How to trim
 
@@ -84,7 +84,7 @@ Here's what the relevant section in the `project.lock.json` file looks like when
         "System.Threading": "4.0.11",
         "System.Threading.Tasks": "4.0.11",
         "System.Xml.ReaderWriter": "4.0.11",
-        "System.Xml.XDocument": "4.0.11"
+        "System.Xml.XDocument": "4.0.11e"
     }
 }
 ```

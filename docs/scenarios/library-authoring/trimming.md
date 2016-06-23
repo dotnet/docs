@@ -72,7 +72,7 @@ Here's what the relevant section in the `project.lock.json` file looks like when
         "System.Linq": "4.1.0",
         "System.Net.Primitives": "4.0.11",
         "System.ObjectModel": "4.0.12",
-        "System.Reflection": "4.1.0-",
+        "System.Reflection": "4.1.0",
         "System.Reflection.Extensions": "4.0.1",
         "System.Reflection.Primitives": "4.0.1",
         "System.Resources.ResourceManager": "4.0.1",

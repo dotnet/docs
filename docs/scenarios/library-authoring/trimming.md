@@ -84,7 +84,7 @@ Here's what the relevant section in the `project.lock.json` file looks like when
         "System.Threading": "4.0.11",
         "System.Threading.Tasks": "4.0.11",
         "System.Xml.ReaderWriter": "4.0.11",
-        "System.Xml.XDocument": "4.0.1"
+        "System.Xml.XDocument": "4.0.11"
     }
 }
 ```
@@ -117,7 +117,7 @@ Next, copy over the package references into the `dependencies` section of the li
         "System.Threading": "4.0.11",
         "System.Threading.Tasks": "4.0.11",
         "System.Xml.ReaderWriter": "4.0.11",
-        "System.Xml.XDocument": "4.0.1"
+        "System.Xml.XDocument": "4.0.11"
     },
     "frameworks":{
         "netstandard1.0": {}

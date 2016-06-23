@@ -16,7 +16,7 @@ ms.assetid: 9f6e8679-bd7e-4317-b3f9-7255a260d9cf
 
 **Some details are subject to change as the toolchain evolves.**
 
-Targeting .NET Core for libraries can be done entirely with the .NET CLI tools, which are a foundational set of tools used by Visual Studio and ASP.NET Core.  They provide an efficient and low-level experience that works across any supported OS.  You can still build libraries with Visual Studio, and if that is your preferred experience then you should [refer to the Visual Studio guide](libraries-with-vs.md).  This document will focus on using the CLI tools directly.
+This article covers how you can write libraries for .NET using cross-platform CLI tools.  They provide an efficient and low-level experience that works across any supported OS.  You can still build libraries with Visual Studio, and if that is your preferred experience then you should [refer to the Visual Studio guide](libraries-with-vs.md).
 
 * [Prerequisites](#prerequisites)
 * [How to target .NET Core](#how-to-target-net-core)
@@ -45,36 +45,40 @@ Additionally, if you wish to support older targets, you will need to install tar
 | 4.0 | Windows SDK for Windows 7 and .NET Framework 4 |
 | 2.0, 3.0, and 3.5 | .NET Framework 3.5 SP1 Runtime (or Windows 8+ version) |
 
-## How to target .NET Core
+## How to target the .NET Standard
 
-For the purposes of building a library, targeting ".NET Core" means targeting the .NET Platform Standard.  To see what that means exactly, see [.NET Platform Standard](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md).
+If you're not quite familiar with the .NET Standard, please refer to [the .NET Standard Library](../../concepts/dotnet-standard-library.md) to learn more.
 
-The following is what you need to know about .NET Platform Standard targeting:
+In that article, there is a table which maps .NET Standard versions to various implementations:
+
+| Platform Name | Alias |  |  |  |  |  | | |
+| :---------- | :--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |
+|.NET Standard | netstandard | 1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 |
+|.NET Core|netcoreapp|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|1.0|
+|.NET Framework|net|&rarr;|4.5|4.5.1|4.6|4.6.1|4.6.2|4.6.3|
+|Mono/Xamarin Platforms||&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|*|
+|Universal Windows Platform|uap|&rarr;|&rarr;|&rarr;|&rarr;|10.0|||
+|Windows|win|&rarr;|8.0|8.1|||||
+|Windows Phone|wpa|&rarr;|&rarr;|8.1|||||
+|Windows Phone Silverlight|wp|8.0|||||||
+
+Here's what this table means for the purposes of creating a library:
 
 The version of the .NET Platform Standard you pick will be a tradeoff between access to the newest APIs and ability to target more .NET platforms and Framework versions.  You can do that by picking a version of `netstandardXX` (Where `XX` is a version number) and adding it to your `project.json` file.
 
-Additionally, the corresponding [NuGet package to depend on](https://www.nuget.org/packages/NETStandard.Library/) is `NETStandard.Library` version `1.5.0-rc2-24027`.  Although there's nothing preventing you from depending on `Microsoft.NETCore.App` like with console apps, it's generally not recommended.  If you need APIs from a package not specified in `NETStandard.Library`, you can always specify that package in addition to `NETStandard.Library` in the `dependencies` section of your `project.json` file.
+Additionally, the corresponding [NuGet package to depend on](https://www.nuget.org/packages/NETStandard.Library/) is `NETStandard.Library` version `1.6.0`.  Although there's nothing preventing you from depending on `Microsoft.NETCore.App` like with console apps, it's generally not recommended.  If you need APIs from a package not specified in `NETStandard.Library`, you can always specify that package in addition to `NETStandard.Library` in the `dependencies` section of your `project.json` file.
 
-You have three primary options when targeting .NET Core, depending on your needs.
+You have three primary options when targeting the .NET Standard, depending on your needs.
 
-1. You can use the latest version of the .NET Platform Standard - `netstandard1.5` - which is for when you want access to the most APIs and don't want to worry about targeting anything other than .NET Core 1.0 or the .NET Framework 4.6.2 and higher. 
-2. You can use a lower version of the .NET Platform Standard to target earlier .NET platforms and versions. The cost here is not having access to some of the latest APIs. Example targets:
-
-    - .NET Framework 4.5.2, 4.5.1, or 4.5
-    - Windows Phone
-    - Windows Phone Silverlight
-    - Universal Windows Platform
-    - Xamarin Platforms
-    - Mono
-
-    [Refer to the platform mapping table](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md#mapping-the-net-platform-standard-to-platforms) to choose the `netstandardXX` moniker you need to target.
+1. You can use the latest version of the .NET Standard - `netstandard1.6` - which is for when you want access to the most APIs and don't mind if you have less reach across implementations.
+2. You can use a lower version of the .NET Standard to target earlier .NET implementations. The cost here is not having access to some of the latest APIs.
     
-    For example, if you wanted to have compatibility with .NET Core and .NET Framework 4.6, you would pick `netstandard1.3`.
+    For example, if you wanted to have guaranteed compatibility with .NET Framework 4.6 and higher, you would pick `netstandard1.3`:
 
     ```json
     {
         "dependencies":{
-            "NETStandard.Library":"1.5.0-rc2-24027"
+            "NETStandard.Library":"1.6.0"
         },
         "frameworks":{
             "netstandard1.3":{}
@@ -82,9 +86,9 @@ You have three primary options when targeting .NET Core, depending on your needs
     }
     ```
     
-    The .NET Platform Standard versions in a backward-compatible way. That means that `netstandard1.0` libraries run on `netstandard1.1` platforms and higher. When targeting `netstandard1.0`, you get the benefit of more platform reach than `netstandard1.1` but have access to fewer APIs. Each .NET Platform Standard version adds APIs and drops platforms. You should select the Standard version that has the right mix of APIs and platform support for your needs.
+    The .NET Standard versions in a backward-compatible way. That means that `netstandard1.0` libraries run on `netstandard1.1` platforms and higher.  However, there is no forwards-compatibility - lower .NET Standard platforms cannot reference higher ones.  This means that `netstandard1.0` libraries cannot reference libraries targeting `netstandard1.1` or higher.  You should select the Standard version that has the right mix of APIs and platform support for your needs.
     
-3. If you want to target the .NET Framework versions 4.0 or below, or you wish to use an API available in the .NET Framework but not in .NET Core (for example, `System.Drawing`), read the following sections and learn how to multitarget.
+3. If you want to target the .NET Framework versions 4.0 or below, or you wish to use an API available in the .NET Framework but not in the .NET Standard (for example, `System.Drawing`), read the following sections and learn how to multitarget.
 
 ## How to target the .NET Framework
 
@@ -105,6 +109,7 @@ If you want to reach the maximum developers and projects, use the .NET Framework
 .NET Framework 4.6   --> net46
 .NET Framework 4.6.1 --> net461
 .NET Framework 4.6.2 --> net462
+.NET Framework 4.6.3 --> net463
 ```
 
 For example, here's how you would write a library which targets the .NET Framework 4:
@@ -170,7 +175,7 @@ This folder contains the `.dll` files necessary to run your library.
 
 You may need to target older versions of the .NET Framework when your project supports both the .NET Framework and .NET Core. In this scenario, if you want to use newer APIs and language constructs for the newer targets, use `#if` directives in your code. You also might need to add different packages and dependencies in your `project.json file` for each platform you're targeting to include the different APIs needed for each case.
 
-For example, let's say you have a library that performs networking operations over HTTP. For .NET Core and the .NET Framework versions 4.5 or higher, you can use the `HttpClient` class from the `System.Net.Http` namespace. However, earlier versions of the .NET Framework don't have the `HttpClient` class, so you could use the `WebClient` class from the `System.Net` namespace for those instead.
+For example, let's say you have a library that performs networking operations over HTTP. For .NET Standard and the .NET Framework versions 4.5 or higher, you can use the `HttpClient` class from the `System.Net.Http` namespace. However, earlier versions of the .NET Framework don't have the `HttpClient` class, so you could use the `WebClient` class from the `System.Net` namespace for those instead.
 
 So, the `project.json` file could look like this:
 
@@ -191,16 +196,16 @@ So, the `project.json` file could look like this:
                 "System.Threading.Tasks":""
             }
         },
-        "netstandard1.5":{
+        "netstandard1.6":{
             "dependencies": {
-                "NETStandard.Library":"1.5.0-rc2",
+                "NETStandard.Library":"1.6.0",
             }
         }
     }
 }
 ```
 
-Note that the .NET Framework assemblies need to be referenced explicitly in the `net40` and `net452` target, and NuGet references are also explicitly listed in the `netstandard1.5` target.  This is required in multitargeting scenarios.
+Note that the .NET Framework assemblies need to be referenced explicitly in the `net40` and `net452` target, and NuGet references are also explicitly listed in the `netstandard1.6` target.  This is required in multitargeting scenarios.
 
 Next, the `using` statements in your source file can be adjusted like this:
 
@@ -233,6 +238,7 @@ The build system is aware of the following preprocessor symbols used in `#if` di
 .NET Standard 1.3    --> NETSTANDARD1_3
 .NET Standard 1.4    --> NETSTANDARD1_4
 .NET Standard 1.5    --> NETSTANDARD1_5
+.NET Standard 1.6    --> NETSTANDARD1_6
 ```
 
 And in the middle of the source, you can use `#if` directives to use those libraries conditionally. For example:
@@ -298,7 +304,7 @@ $ ls bin/Debug
 
 net40/
 net45/
-netstandard1.5/
+netstandard1.6/
 ```
 
 ### But What about Multitargeting with Portable Class Libraries?
@@ -310,9 +316,9 @@ For example, if you want to target [PCL profile 328](http://embed.plnkr.co/03ck2
 ```json
 {
     "frameworks":{
-        "netstandard1.5":{
+        "netstandard1.6":{
            "dependencies":{
-                "NETStandard.Library":"1.5.0-rc2-final",
+                "NETStandard.Library":"1.6.0",
             }
         },
         ".NETPortable,Version=v4.0,Profile=Profile328":{
@@ -356,7 +362,7 @@ Your `/bin/Debug` folder will look like this:
 $ ls bin/Debug
 
 portable-net40+sl50+netcore45+wpa81+wp8/
-netstandard1.5/
+netstandard1.6/
 ```
 
 ## How to use native dependencies
@@ -534,12 +540,12 @@ The `project.json` files for both **AwesomeLibrary.CSharp** and **AwesomeLibrary
 
 > **Note:** Failure to list the reference as a `project` target may result in NuGet resolving the dependency with an existing NuGet package which happens to have the same name.  Always specify `"target":"project"` when referencing a project in the same solution.
 
-If you are multitargeting, you may not be able to use a global `dependencies` entry and may have to reference **AwesomeLibrary.Core** in a target-level `dependencies` entry.  For example, if you were targeting `netstandard1.5`, you could do so like this:
+If you are multitargeting, you may not be able to use a global `dependencies` entry and may have to reference **AwesomeLibrary.Core** in a target-level `dependencies` entry.  For example, if you were targeting `netstandard1.6`, you could do so like this:
 
 ```json
 {
     "frameworks":{
-        "netstandard1.5":{
+        "netstandard1.6":{
             "dependencies":{
                 "AwesomeLibrary.Core":{
                     "version":"1.0.0",

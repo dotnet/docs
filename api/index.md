@@ -1,13 +1,13 @@
 # .NET Core API Reference 
 
-The .NET Core API Reference documents the types and type members available in .NET Core. You can navigate to the documentation for a particular type (a class, structure, delegate, enum, or interface) or type member (a constructor, method, field, property, or event) in any of three ways:
+The .NET Core API Reference documents the types and type members available in .NET Core. You can navigate to the documentation for a particular type (a class, structure, delegate, enum, or interface) or type member (a constructor, method, field, property, or event) in either of two ways:
 
-- By using the search function in the left-hand pane to search for the **type** by name. (Search by member name is not supported.)
+- By selecting the **namespace** where that type is found in the left hand pane. 
 
-- By navigating to the documentation for the type by expanding the **namespace** where that type is found in the left hand pane, and then selecting the type.
+- By selecting the namespace in the "Namespaces in the .NET Core Class Library" section below.
 
-- By selecting the namespace in the "Namespaces in the .NET Core Class Library" section below.  
- 
+This takes you to a list of types in that namespace. You can select the type you're interested in either from the list on the left or from the namespace page.
+
 Each topic contains the documentation for a type and all its unique public and protected members. Inherited members are not included. To view the inherited members of a type, click on one or more of its base classes in the Inheritance section immediately after the type description. 
 
 ## Namespaces ##

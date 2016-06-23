@@ -34,9 +34,6 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 * [embedInteropTypes](#embedinteroptypes)
 * [preprocess](#preprocess)
 * [shared](#shared)
-* [namedResource](#namedresource)
-* [packInclude](#packinclude)
-* [excludeBuiltIn](#excludebuiltin)
 * [dependencies](#dependencies)
 * [tools](#tools)
 * [commands](#commands)
@@ -253,41 +250,6 @@ For example:
 
     {
         "shared": "shared/**/*.cs"
-    }
-
-## namedResource
-Type: Object
-
-An object whose properties are names of named resources.
-
-For example:
-
-    {
-        "namedResource": {
-            "MyString" : "Hello there!"
-        }
-    }
-
-## packInclude
-Type: String or String[] with a globbing pattern
-
-Specifies which files are included when creating the NuGet package.
-
-For example:
-
-    {
-        "packInclude": "myDeploymentScripts/**/*.ps1"
-    }
-
-## excludeBuiltIn
-Type: String or String[] with a globbing pattern
-
-Specifies which files to exclude from the build.
-
-For example:
-
-    {
-        "excludeBuiltIn": ["bin/**", "obj/**"]
     }
 
 ## dependencies

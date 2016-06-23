@@ -14,7 +14,7 @@ namespace SetOperators
                 CustomerName = "Joe's Pizza",
                 Address = "123 Main",
                 City = "Houston",
-                Country = "USA",
+                CountryOrRegion = "USA",
                 Phone = "713-123-4567",
                 PostalCode = "12345",
                 Orders = Orders.Where(o => o.CustomerId == 1)
@@ -25,7 +25,7 @@ namespace SetOperators
                 CustomerName = "Alfreds Futterkiste",
                 Address = "Obere Str. 57",
                 City = "Berlin",
-                Country = "Germany",
+                CountryOrRegion = "Germany",
                 Phone = "030-0074321",
                 PostalCode = "1209",
                 Orders = Orders.Where(o => o.CustomerId == 2)
@@ -36,7 +36,7 @@ namespace SetOperators
                 CustomerName = "Around the Horn",
                 Address = "120 Hanover Sq.",
                 City = "London",
-                Country = "UK",
+                CountryOrRegion = "UK",
                 Phone = "171-555-7788",
                 PostalCode = "WA1 1DP",
                 Orders = Orders.Where(o => o.CustomerId == 3)
@@ -47,7 +47,7 @@ namespace SetOperators
                 CustomerName = "Bottom-Dollar Markets",
                 Address = "23 Tsawassen Blvd.",
                 City = "Tsawassen",
-                Country = "BC",
+                CountryOrRegion = "BC",
                 Phone = "604-555-4729",
                 PostalCode = "T24 8M4",
                 Orders = Orders.Where(o => o.CustomerId == 4)

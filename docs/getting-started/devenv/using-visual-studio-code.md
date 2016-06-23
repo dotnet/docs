@@ -344,17 +344,18 @@ Code C# Extension documentation](https://github.com/OmniSharp/omnisharp-vscode/b
 page.)
 
 After you install the extension, VS Code will ask that you restart the application
-to include the new extension. Once the extension is installed, you can open the
+to load the new extension. Once the extension is installed, you can open the
 debugger tab (see figure).
 
 ![VS Code Debugger](/docs/images/vscodedebugger.png)
 
 
-When you relaunch, VS Code will create a `.vscode` directory
+When you start the debugger, VS Code will instruct you to configure
+the debugger. When you do, it creates a `.vscode` directory
 with two files: `tasks.json` and `launch.json`. These two files control the debugger
 configuration. In most projects, this directory is not included in source control.
 It is included in the sample associated with this walk through so you can see
-the edit you need to make.
+the edits you need to make.
 
 Your solution contains multiple projects, so you'll want to modify each of these files
 to perform the correct commands. First, open `tasks.json`. The default build task

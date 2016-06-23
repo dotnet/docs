@@ -529,13 +529,18 @@ An object containing properties for compilation configuration.
 Type: String or String[] with a globbing pattern.
 
 Specifies which files to include in the build. The patterns are rooted at the project folder. Defaults to none.
-TODO
+
+For example:
+
+    {
+        "include":["wwwroot", "Views"]
+    }
 
 <a name="compile-exclude"></a>
 #### exclude
-Type: String or String[] with a globbing pattern. The exclude patterns have higher priority than the include patterns, so a file found in both will be excluded. The patterns are rooted at the project folder. Defaults to none.
+Type: String or String[] with a globbing pattern.
 
-Specifies which files to exclude from the build.
+Specifies which files to exclude from the build. The exclude patterns have higher priority than the include patterns, so a file found in both will be excluded. The patterns are rooted at the project folder. Defaults to none.
 
 For example:
 
@@ -548,26 +553,65 @@ For example:
 
 Type: String or String[] with a globbing pattern.
 
-TODO
+A list of file paths to include. The paths are rooted at the project folder. This list has a higher priority than the include and exclude globbing patterns, hence a file listed here and in the exclude globbing pattern will still be included. Defaults to none.
+
+For example:
+
+    {
+        "includeFiles": []
+    }
 
 <a name="compile-exclude-files"></a>
 #### excludeFiles
 
 Type: String or String[] with a globbing pattern.
 
-TODO
+A list of file paths to exclude. The paths are rooted at the project folder. This list has a higher priority than globbing patterns and the include paths, hence a file found in all will be excluded. Defaults to none.
+
+For example:
+
+    {
+        "excludeFiles":[],
+    }
 
 <a name="compile-builtins"></a>
 #### builtIns
+
 Type: Object
 
-TODO
+The defaults provided by the system. It can have `include` and `exclude` globbing patterns which are merged with the corresponding values of the `include` and `exclude` properties.
+
+For example:
+
+    {
+        "builtIns":[]
+    }
 
 <a name="compile-mappings"></a>
 #### mappings
 Type: Object
 
-TODO
+Keys to the object represent destination paths in the output layout.
+
+Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sectins"dest/path": "source/path" or "dest/path": { "include": "./src/path" }
+
+String example:
+
+    {
+        "mappings": {
+            "dest/path": "./src/path"
+        }
+    }
+
+Object example:
+
+    {
+        "mappings": {
+            "dest/path":{
+                "include":"./src/path"
+            }
+        }
+    }
 
 ### embed
 Type: Object

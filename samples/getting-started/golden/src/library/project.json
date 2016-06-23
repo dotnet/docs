@@ -1,5 +1,8 @@
 {
   "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable"
+  },
   "dependencies": {
     "NETStandard.Library": {
       "version": "1.5.0-rc2-24027"

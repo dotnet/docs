@@ -46,7 +46,7 @@ Getting Started
 The source for this tutorial is available on
 [GitHub](https://github.com/dotnet/core-docs/tree/master/samples/getting-started/golden).
 
-Start Visual Studio Code. Press Ctrl + '`' (the back-quote character) to open
+Start Visual Studio Code. Press Ctrl + '\`' (the back-quote character) to open
 an embedded terminal in VS Code. (Alternatively, you can use a separate
 terminal window, if you prefer).
 
@@ -133,7 +133,7 @@ And replace it with a reference to the .NET Standard library:
 ```
 
 You'll also need to update the frameworks section to use 
-.NET Standards instead of `netcoreapp1.0`:
+.NET Standard instead of `netcoreapp1.0`:
 
 ```js
 "frameworks": {
@@ -147,8 +147,9 @@ becomes:
 
 ```js
 "frameworks" : {
-    "netstandard1.5": {
+    "netstandard1.6": {
         "imports": "dnxcore50"
+    }
 }
 ```
 
@@ -232,8 +233,7 @@ above. Open `project.json` and update the dependencies section to the following:
     "xunit": "2.1.0",
     "dotnet-test-xunit": "1.0.0-rc2-build10025",
     "library": {
-        "target": "project",
-        "version": "1.0.0.*"
+        "target": "project"
     }
 }
 ```
@@ -308,8 +308,7 @@ node below the `Microsoft.NetCore.App` node as follows:
         "version": "1.0.0-rc2-3002702"
     },
     "library": {
-        "target": "project",
-        "version": "1.0.0-*"
+        "target": "project"
     }
 }
 ```
@@ -322,7 +321,7 @@ Run `dotnet restore` to restore all dependencies. Open `program.cs`
 and replace the contents of the `Main` method with this line:
 
 ```cs
-WriteLine($"The answer is {new Thing().Get(19, 23))}");
+WriteLine($"The answer is {new Thing().Get(19, 23)}");
 ```
 
 You'll need to add a couple using directives to the top of the file:
@@ -345,7 +344,13 @@ Code C# Extension documentation](https://github.com/OmniSharp/omnisharp-vscode/b
 page.)
 
 After you install the extension, VS Code will ask that you restart the application
-to include the new extension. When you relaunch, VS Code will create a `.vscode` directory
+to include the new extension. Once the extension is installed, you can open the
+debugger tab (see figure).
+
+![VS Code Debugger](/docs/images/vscodedebugger.png)
+
+
+When you relaunch, VS Code will create a `.vscode` directory
 with two files: `tasks.json` and `launch.json`. These two files control the debugger
 configuration. In most projects, this directory is not included in source control.
 It is included in the sample associated with this walk through so you can see
@@ -379,10 +384,13 @@ You'll change this to:
 If you are running on Windows, you'll need to update the Application's `project.json` 
 (in the `src/app` directory) to
 generate portable PDB files (this happens by default on Mac OSX and Linux).
-Add the `debugType` node under `buildOptions`:
+Add the `debugType` node inside `buildOptions`. You'll need to add the `debugType` node
+in `project.json` for both the `src/app` and `src/library` folders.
 
 ```js
-"debugType": "portable",
+  "buildOptions": {
+    "debugType": "portable"
+  },
 ```
 
 Set a breakpoint at the `WriteLine` statement in `Main`. You do this
@@ -391,8 +399,6 @@ on the line you want the breakpoint.
 Open the debugger by pressing the debug
 icon on the left of the VS Code screen (see figure). Then,
 press the Play button to start the application under the debugger.
-
-![VS Code Debugger](/docs/images/vscodedebugger.png)
 
 You should hit the breakpoint. Step into the `Get` method and make sure that you
 have passed in the correct arguments. Make sure that the answer is actually 42.

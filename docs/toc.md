@@ -82,7 +82,7 @@
 ### What's new in C# 6
 <!-- This page, or its parent should point to the Roslyn repo for folks that want
 to know what's next -->
-## C# Concepts
+## C# Concepts(languages/csharp/concepts.md)
 ### [🔧 C# Type system](languages/csharp/type-system.md)
 ### [Properties](languages/csharp/properties.md)
 ### [Indexers](languages/csharp/indexers.md)
@@ -100,7 +100,6 @@ to know what's next -->
 #### [Distinguishing Delegates and Events](languages/csharp/distinguish-delegates-events.md)
 ### [🔧 Parallel programming](languages/csharp/parallel.md)
 ### [Asynchronous programming](languages/csharp/async.md)
-### Errors and Exceptions
 ### [🔧 Lambda Expressions](languages/csharp/lambda-expressions.md)
 <!-- This is a sidebar the delegates topics. I don't think it
     needs to be linked into the TOC, but I wanted to leave it 

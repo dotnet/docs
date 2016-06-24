@@ -73,7 +73,7 @@ run on. Prime example of this is Kestrel, the ASP.NET Core cross-platform web se
 
 When you publish a portable application that has a native dependency, the published output will contain 
 all the same things as the portable application described in the previous section. For native dependencies, 
-the published output will contain a folder for each [Runtime Identifier (RID)](#what-are-rids) that the native dependency supports 
+the published output will contain a folder for each [Runtime Identifier (RID)](rid-catalog.md#what-are-rids) that the native dependency supports 
 (and that exists in its NuGet package). 
 
 The below `project.json` sample is showing an example of a portable application with a native dependency. 
@@ -113,7 +113,7 @@ will restore the needed runtime for all the RIDs specifies. Then, when you want 
 you publish it using the `--runtime <RID>` argument to `dotnet publish`. The RID specified in the 
 command invocation **has to be** an RID that is specified in your `project.json`; otherwise, an error is thrown. 
 
-If you want to publish for the RID that represents the operating system you are using the [.NET Core SDK](core-sdk/index.md) 
+If you want to publish for the RID that represents the operating system you are using the [.NET Core SDK](sdk/index.md) 
 on, you don't have to specify anything to `dotnet publish`. However, you still have to specify that RID in your 
 `project.json` in order to get a standalone application. 
 

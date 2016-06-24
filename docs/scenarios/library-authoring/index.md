@@ -1,6 +1,6 @@
 ---
-title: Authoring Libraries for .NET Core RC2
-description: Authoring Libraries for .NET Core RC2
+title: Authoring Libraries for .NET Core 1.0
+description: Authoring Libraries for .NET Core 1.0
 keywords: .NET, .NET Core
 author: cartermp
 manager: wpickett
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 93689fc6-eb31-4ca4-925f-f295db4083dd
 ---
 
-# Authoring Libraries for .NET Core RC2
+# Authoring Libraries for .NET Core 1.0
 
-* [How to manage package dependency versions for .NET Core RC2](fastening-libraries-to-rc2.md)
+* [How to manage package dependency versions for .NET Core 1.0](fastening-libraries.md)
 * [How to trim your package dependencies](trimming.md)

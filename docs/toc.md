@@ -23,7 +23,7 @@
 ### [🔧 Deploying NuGet packages](scenarios/deployment/nuget-packages.md)
 ### [🔧 Deploying ASP.NET web applications](scenarios/deployment/aspnet-applications.md)
 ## [Authoring Libraries for .NET Core 1.0](scenarios/library-authoring/index.md)
-### [How to manage package dependency versions for .NET Core 1.0](scenarios/library-authoring/fastening-libraries-to-rtm.md)
+### [How to manage package dependency versions for .NET Core 1.0](scenarios/library-authoring/fastening-libraries.md)
 ### [How to trim your package dependencies](scenarios/library-authoring/trimming.md)
 # [.NET Core concepts](core-concepts/index.md)
 ## [.NET Core](core-concepts/dotnet-core.md)

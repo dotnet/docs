@@ -24,7 +24,7 @@ The architecture defined in ECMA 335 enables CPU- and OS-agnostic programming mo
 
 The following are the main characteristics of .NET Core:
 
-**Cross-platform** - .NET Core currently supports three main operating systems: Linux, Windows and OS X. There are other OS ports in progress such as FreeBSD and Alpine. .NET Core libraries can run unmodified across supported OSes. The apps must be re-compiled per environment, given that apps use a native host. Users select the .NET Core supported environment that works best for their situation.
+**Cross-platform** - .NET Core currently supports three main operating systems: Linux, Windows and macOS. There are other OS ports in progress such as FreeBSD and Alpine. .NET Core libraries can run unmodified across supported OSes. The apps must be re-compiled per environment, given that apps use a native host. Users select the .NET Core supported environment that works best for their situation.
 
 **Open Source** - [.NET Core](https://github.com/dotnet/core) is available on GitHub, licensed with the [MIT](https://github.com/dotnet/coreclr/blob/master/LICENSE.TXT) and [Apache 2](https://github.com/dotnet/roslyn/blob/master/License.txt) licenses (licensing is per component). It also makes use of a significant set of open source industry [dependencies](https://github.com/dotnet/core/releases) (see release notes). 
 

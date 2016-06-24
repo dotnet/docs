@@ -10,7 +10,7 @@ for the most recent version of .NET Core.
 
 ## Prerequisites
 
-These scripts assume that .NET Core CLI (latest RC2 version), and
+These scripts assume that .NET Core CLI, and
 the .NET Core SDK Preview 1 are installed on the machine. You should
 also install Visual Studio Code, and the C# and Omnisharp extensions.
 

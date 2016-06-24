@@ -101,7 +101,7 @@ easier to deploy to the target machine, since you only deploy your application.
 
 Since the application carries the runtime within itself, you need to make an explicit choice which platforms your application 
 needs to run on. For instance, if you publish a self-contained application for Windows 10, that same application will 
-not work on OS X or Linux and vice versa. Of course, you can add or remove platforms during development at any given time. 
+not work on macOS or Linux and vice versa. Of course, you can add or remove platforms during development at any given time. 
 
 There are several steps to get to a self-contained application. The first is to remove any `"type": "platform"` properties 
 off of any dependencies you have. Second is to leave the dependency on `Microsoft.NETCore.App` as it will pull in

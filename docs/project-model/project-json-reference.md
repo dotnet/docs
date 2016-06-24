@@ -478,11 +478,11 @@ For example:
         "System.Reflection.Metadata": "1.2.0-rc3-23811",
         "Microsoft.Extensions.JsonParser.Sources": {
           "type": "build",
-          "version": "1.0.0-rc2-16453"
+          "version": "1.0.0"
         },
         "Microsoft.Extensions.HashCodeCombiner.Sources": {
           "type": "build",
-          "version": "1.0.0-rc2-16054"
+          "version": "1.0.0"
         },
         "Microsoft.Extensions.DependencyModel": "1.0.0-*"
     }
@@ -800,7 +800,7 @@ For example:
     "frameworks": {
         "dnxcore50": {
             "dependencies": {
-                "Microsoft.Extensions.JsonParser.Sources": "1.0.0-rc2-23811"
+                "Microsoft.Extensions.JsonParser.Sources": "1.0.0"
             }
         }
     }

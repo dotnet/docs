@@ -44,8 +44,8 @@ For simple instructions on how to install it, visit the [.NET Core website](http
 * Red Hat Enterprise Linux 7.2
 * Ubuntu 14.04 LTS
 
-## OS X
+## macOS
 
-.NET Core is supported in the following versions of OS X (64-bit only):
+.NET Core is supported in the following versions of macOS (64-bit only):
 
-* OS X 10.11 (El Capitan) and above
+* macOS 10.11 (El Capitan) and above

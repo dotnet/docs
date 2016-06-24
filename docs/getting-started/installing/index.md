@@ -17,4 +17,4 @@ ms.assetid: b7dd59c6-fda5-45d8-917d-c1313401b269
 *  [.NET Core System Requirements](system-reqs.md)
 *  [Installing .NET Core on Windows](installing-core-windows.md)
 *  [Installing .NET Core on Linux](installing-core-linux.md)
-*  [Installing .NET Core on OS X](installing-core-osx.md)
+*  [Installing .NET Core on macOS](installing-core-osx.md)

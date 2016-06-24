@@ -37,7 +37,7 @@ The RID graph is defined in a package called `Microsoft.NETCore.Platforms` in a 
 see on the [CoreFX repo](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/runtime.json). If 
 you use this file, you will notice that some of the RIDs have an `"#import"` statement in them. These statements are 
 compatibility statements. That means that a RID that has an imported RID in it, can be a target for restoring packages 
-for that RID. Slightly confusing, but let's look at an example. Let's take a look at OS X:
+for that RID. Slightly confusing, but let's look at an example. Let's take a look at macOS:
 
 ```json
 "osx.10.11-x64": {
@@ -119,7 +119,7 @@ wish to check if new ones are added, please check back here.
     * `linuxmint.17.2-x64`
     * `linuxmint.17.3-x64`
 
-## OS X RIDs
+## macOS RIDs
 
 * `osx.10.10-x64`
 * `osx.10.11-x64`

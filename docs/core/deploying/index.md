@@ -91,8 +91,7 @@ Deploying a portable app with no third-party dependencies simply involves buildi
 
 5. After you've debugged and tested the program, you can create the files to be deployed with your app by using the `dotnet publish -f netcoreapp1.0 -c release` command. This creates a release (rather than a debug) version of your app.
 
-   The resulting files are placed in a directory named `publish` that is in a subdirectory of your project's
-`.\bin\release\netcoreapp1.0` subdirectory.
+   The resulting files are placed in a directory named `publish` that is in a subdirectory of your project's `.\bin\release\netcoreapp1.0` subdirectory.
 
 6. Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.
 
@@ -100,7 +99,7 @@ The complete set of application  files can be deployed in any way you'd like. Fo
 
 Before deploying your app, you can also use `crossgen` to convert it to native code. However, its performance impact is smaller than for self-contained apps. For more information, see the [Native Image Generation](#crossgen) section.
 
-In addition to the application binaries, the installer should also either bundle the shared framework installer or check for it as a prerequisite as part of the application installation.  Installation of the shared framework requires Administrator/root access since it is machine wide. 
+In addition to the application binaries, the installer should also either bundle the shared framework installer or check for it as a prerequisite as part of the application installation.  Installation of the shared framework requires Administrator/root access since it is machine-wide.
 
 ### Deploying a Portable App with Third-Party Dependencies ###
 
@@ -108,8 +107,7 @@ Deploying a portable app with one or more third-party dependencies involves thre
 
 1. Add references to any third-party libraries to the `dependencies` section of your `project.json` file. The following  `dependencies` section uses Json.NET as a third-party library.
 
-
-    ```
+    ```json
     "dependencies": {
       "Microsoft.NETCore.App": {
         "type": "platform",
@@ -149,7 +147,7 @@ It also has a number of disadvantages:
 
 ### Deploying a Simple Self-Contained App ###
 
-Deploying a self-contained app with no third-party dependencies involves creating the project, modifying the project.json file, building, testing, and publishing the app.  A simple example written in C# illustrates the process. The example uses the dotnet utility from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.
+Deploying a self-contained app with no third-party dependencies involves creating the project, modifying the project.json file, building, testing, and publishing the app.  A simple example written in C# illustrates the process. The example uses the `dotnet` utility from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.
 
 1. Create a directory for your project, and from the command line, type `dotnet new` to create a new C# console project.
 
@@ -184,31 +182,35 @@ Deploying a self-contained app with no third-party dependencies involves creatin
                       Console.WriteLine("   #{0,2}: '{1}' at position {2}", ctr,
                                         matches[ctr].Value, matches[ctr].Index);
               }
-          } 
+          }
       }
     }
     ```
 
 3. Open the `project.json` file and find the `dependencies` section, which should appear as follows:
 
-    ```project.json
+    ```json
     "dependencies": {
        "Microsoft.NETCore.App": {
          "type": "platform",
-         "version": "1.0.0
+         "version": "1.0.0"
        }
     },
     ```
- Remove the following line in in the `dependencies` section:
+   Replace it with the following:
 
-    ```project.json
-    "type": "platform",
+    ```json
+    "dependencies": {
+      "NETStandard.Library": "1.6.0",
+      "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
+      "Microsoft.NETCore.DotNetHostPolicy":  "1.0.1"
+    },
     ```
-   The presence of `"type": "platform"` identifies `Microsoft.NETCore.App` as a platform package that is provided by the system.
+   This change removes the `"type": "platform"` attribute, which identifies `Microsoft.NETCore.App` as a platform package that is provided by the system. It also replaces the `Microsoft.NETCore.App` package, which includes a number of system components that are not used by self-contained apps, with  `NETStandard.Library`, the .NET Core runtime, and the .NET Core host. This produces a self-contained app with a smaller footprint than if you had simply modified your `dependencies` section to include the `Microsoft.NETCore.App` package.
 
-4. Create a `runtimes` section in your `project.json` file that defines the platforms your app targets and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](./rid-catalog.md) for a list of runtime identifiers. For example, the following `runtimes` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.10 operating system.
+5. Create a `runtimes` section in your `project.json` file that defines the platforms your app targets and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](./rid-catalog.md) for a list of runtime identifiers. For example, the following `runtimes` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.10 operating system.
 
-    ```project.json
+    ```json
         "runtimes": {
           "win10-x64": {},
           "osx.10.10-x64": {}
@@ -217,37 +219,39 @@ Deploying a self-contained app with no third-party dependencies involves creatin
 Note that you also need to add a comma to separate the `runtimes` section from the previous section.
 A complete sample `project.json` file appears later in this section.
 
-5. Run the `dotnet restore` command to restore the dependencies specified in your project.
+6. Run the `dotnet restore` command to restore the dependencies specified in your project.
 
-6. Create debug builds of your app on each of the target platforms by using the `dotnet build -r` command and specifying the [runtime identifier](./rid-catalog.md) of the platform. In our example, we would run two separate builds as follows:
+7. Create debug builds of your app on each of the target platforms by using the `dotnet build -r` command and specifying the [runtime identifier](./rid-catalog.md) of the platform. In our example, we would run two separate builds as follows:
 
-    ```project.json
+    ```console
     dotnet build -r win10-x64
     dotnet build -r osx.10.10-x64
     ```
 
-7. After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets. To do this, use the `dotnet publish -f netcoreapp1.0 -c release -r` command. This creates a release (rather than a debug) version of your app for each target platform. In our example, we would publish our project for two separate platforms as follows:
+8. After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets. To do this, use the `dotnet publish -f netcoreapp1.0 -c release -r` command. This creates a release (rather than a debug) version of your app for each target platform. In our example, we would publish our project for two separate platforms as follows:
 
-    ```project.json
+    ```console
     dotnet publish -c release -r win10-x64
     dotnet publish -c release -r osx.10.10-x64
     ```
    The resulting files are placed in a subdirectory named `publish` that is in a subdirectory of your project's `.\bin\release\netcoreapp1.0\<runtime_identifier>` subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
 
-8. Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.
+9. Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.
 
 The remaining files can be deployed in any way you'd like. For example, you can package them in a zip file, use a simple `copy` command, or deploy them with any installation package of your choice. Before packaging and deploying your app, you can also use `crossgen` to convert it to native code. For more information, see the [Native Image Generation](#crossgen) section.
 
 The following is the complete `project.json` file for this project.
 
-```project.json
+```json
     {
       "version": "1.0.0-*",
       "buildOptions": {
         "emitEntryPoint": true
       },
       "dependencies": {
-        "Microsoft.NETCore.App": "1.0.0"
+        "NETStandard.Library": "1.6.0",
+        "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
+        "Microsoft.NETCore.DotNetHostPolicy":  "1.0.1"
       },
       "frameworks": {
         "netcoreapp1.0": { }
@@ -265,16 +269,18 @@ Deploying a self-contained app with one or more third-party dependencies involve
 
 1. Add references to any third-party libraries to the `dependencies` section of your `project.json` file. The following  `dependencies` section uses Json.NET as a third-party library.
 
-    ```project.json
+    ```json
     "dependencies": {
-      "Microsoft.NETCore.App": "1.0.0",
+      "NETStandard.Library": "1.6.0",
+      "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
+      "Microsoft.NETCore.DotNetHostPolicy":  "1.0.1",
       "Newtonsoft.Json": "8.0.3"
     },
     ```
 
 2. If you haven't already, download the NuGet package containing the third-party dependency. For more information, see [Working with NuGet Packages](../packaging/working-with-nuget-packages.md).
 
-3. Be sure to execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system. 
+3. Be sure to execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
 
 When you deploy your application, any third-party dependencies used in your app are also contained with your application files. Third-party libraries do not already have to be present on the system on which the app is running.
 

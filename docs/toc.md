@@ -34,7 +34,7 @@
 ### [Using .NET Core on macOS](core/tutorials/using-on-macos.md)
 ### [🔧 Using .NET Core with F#](core/tutorials/using-with-fsharp.md)
 ### [🔧 Using .NET Core with VB](core/tutorials/using-with-visual-basic.md)
-### [Using Multiple Projects](core/tutorials/multiple-projects.md)
+### [🔧 Using Multiple Projects](core/tutorials/multiple-projects.md)
 ## [Application types](core/app-types.md)
 ## [🔧 Publishing Applications](core/publishing-applications.md)
 ## [Publishing Libraries](core/publishing-libraries.md)

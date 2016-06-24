@@ -1,3 +1,4 @@
+# [Welcome](welcome.md)
 # [About .NET](about/)
 ## [.NET Products](about/products.md)
 # [Getting started](getting-started/index.md)

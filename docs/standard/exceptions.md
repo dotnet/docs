@@ -18,7 +18,7 @@ Applications must be able to handle errors that occur during execution in a cons
 
 ## Exceptions
 
-An exception is any error condition or unexpected behavior that is encountered by an executing program. Exceptions can be raised because of a fault in your code or in code that you call (such as a shared library), unavailable operating system resources, unexpected conditions that the runtime encounters (such as code that cannot be verified), and so on. Your application can recover from some of these conditions, but not from others. Although you can recover from most application exceptions, you cannot recover from most runtime exceptions.
+An exception is any error condition or unexpected behavior that is encountered by an executing program. Exceptions can be thrown because of a fault in your code or in code that you call (such as a shared library), unavailable operating system resources, unexpected conditions that the runtime encounters (such as code that cannot be verified), and so on. Your application can recover from some of these conditions, but not from others. Although you can recover from most application exceptions, you cannot recover from most runtime exceptions.
 
 In .NET, an exception is an object that inherits from the [System.Exception](https://docs.microsoft.com/dotnet/core/api/System.Exception) class. An exception is thrown from an area of code where a problem has occurred. The exception is passed up the stack until the application handles it or the program terminates.
 
@@ -60,7 +60,7 @@ Each language implements these exception handlers according to its specification
 
 2. If a match occurs, the runtime creates an **Exception** object that describes the exception. The runtime then executes all **finally** or **fault** statements between the statement where the exception occurred and the statement that handles the exception. Note that the order of exception handlers is important; the innermost exception handler is evaluated first. Also note that exception handlers can access the local variables and local memory of the routine that catches the exception, but any intermediate values at the time the exception is thrown are lost.
 
-	If no match occurs in the current method, the runtime searches each caller of the current method, and it continues this path all the way up the stack. If no caller has a match, the runtime lets the debugger access the exception. On .NET runtimes that implement Application Domains, if the debugger does not attach to the exception, the runtime raises the [AppDomain.UnhandledException](https://msdn.microsoft.com/library/system.appdomain.unhandledexception) event. If there are no listeners for this event, the runtime dumps a stack trace and ends the application.
+	If no match occurs in the current method, the runtime searches each caller of the current method, and it continues this path all the way up the stack. If no caller has a match, the runtime lets the debugger access the exception. On .NET runtimes that implement Application Domains, if the debugger does not attach to the exception, the runtime throws the [AppDomain.UnhandledException](https://msdn.microsoft.com/library/system.appdomain.unhandledexception) event. If there are no listeners for this event, the runtime dumps a stack trace and ends the application.
 
 ## Exception class and properties
 

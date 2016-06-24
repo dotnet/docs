@@ -221,20 +221,9 @@ A complete sample `project.json` file appears later in this section.
 
 6. Run the `dotnet restore` command to restore the dependencies specified in your project.
 
-7. Create debug builds of your app on each of the target platforms by using the `dotnet build -r` command and specifying the [runtime identifier](./rid-catalog.md) of the platform. In our example, we would run two separate builds as follows:
+7. Create debug builds of your app on each of the target platforms by using the `dotnet build` command.
 
-    ```console
-    dotnet build -r win10-x64
-    dotnet build -r osx.10.10-x64
-    ```
-
-8. After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets. To do this, use the `dotnet publish -f netcoreapp1.0 -c release -r` command. This creates a release (rather than a debug) version of your app for each target platform. In our example, we would publish our project for two separate platforms as follows:
-
-    ```console
-    dotnet publish -c release -r win10-x64
-    dotnet publish -c release -r osx.10.10-x64
-    ```
-   The resulting files are placed in a subdirectory named `publish` that is in a subdirectory of your project's `.\bin\release\netcoreapp1.0\<runtime_identifier>` subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
+8. After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets. To do this, use the `dotnet publish -f netcoreapp1.0 -c release` command. This creates a release (rather than a debug) version of your app for each target platform. The resulting files are placed in a subdirectory named `publish` that is in a subdirectory of your project's `.\bin\release\netcoreapp1.0\<runtime_identifier>` subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
 
 9. Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.
 

@@ -36,7 +36,7 @@
 ### [🔧 Using .NET Core with VB](core/tutorials/using-with-visual-basic.md)
 ### [🔧 Using Multiple Projects](core/tutorials/multiple-projects.md)
 ## [Deploying Applications and Libraries](core/deploying/index.md)
-### [Deploying Applications](core/deploying/applications.md)
+### [🔧 Deploying Applications](core/deploying/applications.md)
 ### [Deploying Libraries](core/deploying/libraries.md)
 ## [Building ASP.NET Core applications](core/aspnet-core.md) 
 ## [Unit Testing](core/testing/index.md)

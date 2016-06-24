@@ -93,7 +93,7 @@ ms.assetid:
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="https://azure.microsoft.com/develop/net/">
+                                <a href="https://www.visualstudio.com/features/azure-tools-vs">
                                     <h3>Microsoft Azure</h3>
                                     <p>Get Started developing applications using Microsoft Azure</p>
                                 </a>

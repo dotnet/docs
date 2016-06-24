@@ -101,7 +101,6 @@ to know what's next -->
 ### [🔧 Parallel programming](languages/csharp/parallel.md)
 ### [Asynchronous programming](languages/csharp/async.md)
 ### Errors and Exceptions
-### [🔧 Syntax](languages/csharp/syntax.md)
 ### [🔧 Lambda Expressions](languages/csharp/lambda-expressions.md)
 <!-- This is a sidebar the delegates topics. I don't think it
     needs to be linked into the TOC, but I wanted to leave it 
@@ -120,6 +119,7 @@ to know what's next -->
 ### [🔧 Native interoperability](languages/csharp/interop.md)
 ### [🔧 Reflection & code generation](languages/csharp/reflection.md)
 ### [🔧 Documenting your code](languages/csharp/codedoc.md) <!-- A community member is working on this -->
+### [🔧 Syntax Reference](languages/csharp/syntax.md)
 
 <!-- Note to self: update languages/csharp/index.md to match this file
     once this is approved.  -->

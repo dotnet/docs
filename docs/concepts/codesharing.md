@@ -16,8 +16,8 @@ ms.assetid: d4c31c29-e977-48f2-b4c7-0335ef50d440
 
 The .NET Standard Library aims at maintaining binary compatibility between the .NET-capable platforms for which an application is developed and future versions of those platforms. It also supports source code compatibility between platforms that support a particular version of the .NET Standard.
 
-[!IMPORTANT]
-This is very preliminary documentation for the .NET Standard Library. Because the standard has not been formalized yet, it is subject to change.
+> [!IMPORTANT]
+> This is preliminary documentation for the .NET Standard Library. Because the standard has not been formalized yet, it is subject to change.
 
 The .NET Standard Library consists of two parts: a set of contracts (or reference assemblies) that are included in the standard, and a single moniker-based versioning scheme.
 

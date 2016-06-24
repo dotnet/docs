@@ -14,7 +14,7 @@ ms.assetid: bf116df6-0042-46bf-be13-b69864816210
 
 # Handling and throwing exceptions in .NET
 
-Applications must be able to handle errors that occur during execution in a consistent manner. .NET provides a model for notifying applications of errors in a uniform way: all .NET operations indicate failure by throwing exceptions.
+Applications must be able to handle errors that occur during execution in a consistent manner. .NET provides a model for notifying applications of errors in a uniform way: .NET operations indicate failure by throwing exceptions.
 
 ## Exceptions
 

@@ -422,7 +422,7 @@ It's important to be able to test across platforms.  It's easiest to use [xUnit]
 
    * `netcoreapp1.0` listed as the only entry under `frameworks`.
    * `dnxcore50` and `portable-net45+win8` added as `imports` under `netcoreapp1.0`.
-   * A reference to `Microsoft.NETCore.App` version `1.0.0-rc2-3002702`.
+   * A reference to `Microsoft.NETCore.App` version `1.0.0`.
    * A reference to xUnit version `2.1.0`.
    * A reference to `dotnet-test-xunit` version `1.0.0-rc2-build10025`
    * A project reference to the library being tested.
@@ -440,7 +440,7 @@ It's important to be able to test across platforms.  It's easiest to use [xUnit]
             },
             "Microsoft.NETCore.App":{
                 "type":"platform",
-                "version":"1.0.0-rc2"
+                "version":"1.0.0"
             },
             "xunit":"2.1.0",
             "dotnet-test-xunit":"1.0.0-rc2",
@@ -630,7 +630,7 @@ Lib.1.0.0.symbols.nupkg
 
 And now you have the necessary files to publish a NuGet package!
 
-> For .NET Core RC2, libraries are expected to be distributed as NuGet packages. This can only be done with `dotnet pack` when using the .NET CLI.  It is important that you use `dotnet pack` instead of `dotnet publish` for this.  Using `dotnet publish` for a library will error out.
+> For .NET Core 1.0, libraries are expected to be distributed as NuGet packages. This can only be done with `dotnet pack` when using the .NET CLI.  It is important that you use `dotnet pack` instead of `dotnet publish` for this.  Using `dotnet publish` for a library will error out.
 
 If you want to build a NuGet package with release mode binaries, all you need to do is add the `-c`/`--configuration` switch and use `release` as the argument.
 

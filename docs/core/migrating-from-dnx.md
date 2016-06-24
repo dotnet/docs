@@ -16,7 +16,7 @@ ms.assetid: c0d70120-78c8-4d26-bb3c-801f42fc2366
 
 ## Overview
 With RC1 release of .NET Core and ASP.NET Core 1.0, we introduced DNX tooling to the world. With RC2 release of .NET 
-Core and ASP.NET Core 1.0 we are transitioning to the .NET Core CLI.
+Core and ASP.NET Core 1.0 we transitioned to the .NET Core CLI.
 
 As a slight refresher, let's recap what DNX was about. DNX was a runtime and a toolset used to build .NET Core and, 
 more specifically, ASP.NET Core 1.0 applications. It consisted of 3 main pieces:
@@ -105,11 +105,11 @@ In addition to using new commands when working with your code, there are three m
 3. Migrating off of any DNX APIs to their BCL counterparts. 
 
 ### Changing the global.json file
-The `global.json` file acts like a solution file for both the RC1 and RC2 projects. In order for the CLI tools (as well 
-as Visual Studio) to differentiate between RC1 and RC2, they use the `"sdk": { "version" }` property to make the distinction
-which project is RC1 or RC2. If `global.json` doesn't have this node at all, it is assumed to be the latest, that is RC2. 
+The `global.json` file acts like a solution file for both the RC1 and RC2 (or later) projects. In order for the CLI tools (as well 
+as Visual Studio) to differentiate between RC1 and later versions, they use the `"sdk": { "version" }` property to make the distinction
+which project is RC1 or later. If `global.json` doesn't have this node at all, it is assumed to be the latest. 
 
-In order to update the `global.json` file to RC2, either remove the property or set it to the exact version of the 
+In order to update the `global.json` file, either remove the property or set it to the exact version of the 
 tools that you wish to use, in this case **1.0.0-preview2-003118**:
 
 ```json

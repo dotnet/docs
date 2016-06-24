@@ -33,7 +33,7 @@ There are a lot of features in this tutorial. Let’s build them one by one.
 You’ll need to setup your machine to run .NET core. You can find the
 installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
 page. You can run this
-application on Windows, Linux, OS X or in a Docker container. 
+application on Windows, Linux, macOS or in a Docker container. 
 You’ll need to install your favorite code editor. The descriptions below
 use [Visual Studio Code](https://code.visualstudio.com/) which is an open
 source, cross platform editor. However, you can use whatever tools you are
@@ -79,7 +79,7 @@ see one line that looks similar to this:
 "dependencies": {
     "Microsoft.NETCore.App": {
         "type": "platform",
-        "version": "1.0.0-rc2-3002702"
+        "version": "1.0.0"
     }
 },
 ```
@@ -90,10 +90,10 @@ You'll add two lines to this section to include the two new libraries:
 "dependencies": {
    "Microsoft.NETCore.App": {
         "type": "platform"
-        "version": "1.0.0-rc2-3002702",
+        "version": "1.0.0",
     },
-    "System.Runtime.Serialization.Json": "4.0.2-rc2-24027",
-    "System.Runtime.Serialization.Primitives": "4.1.1-rc2-24027"
+    "System.Runtime.Serialization.Json": "4.0.2",
+    "System.Runtime.Serialization.Primitives": "4.1.1"
 },
 ```
 
@@ -288,7 +288,7 @@ that library to project.json as a dependency. Add the following line to the depe
 of the project.json file (remember to add the comma separator on the line above):
 
 ```
-"System.Runtime.Serialization.Primitives" : "4.0.1-rc2-23704"
+"System.Runtime.Serialization.Primitives" : "4.0.1"
 ```
 
 After you save the file, run 'dotnet restore' to retrieve this package and update the project.json.lock

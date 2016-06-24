@@ -32,7 +32,7 @@ There are a lot of features in this tutorial. Let’s build them one by one.
 You’ll need to setup your machine to run .NET core. You can find the
 installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
 page. You can run this
-application on Windows, Ubuntu Linux, OS X or in a Docker container. 
+application on Windows, Linux, macOS or in a Docker container. 
 You’ll need to install your favorite code editor. 
 ## Create the Application
 The first step is to create a new application. Open a command prompt and

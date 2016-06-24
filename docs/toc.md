@@ -28,7 +28,7 @@
 ### [How to trim your package dependencies](scenarios/library-authoring/trimming.md)
 
 # [.NET Core Guide](core/index.md)
-## [Tutorials](tutorials/index.md)
+## [Tutorials](core/tutorials/index.md)
 ### [Using .NET Core on Windows](core/tutorials/using-on-windows.md)
 ### [Using .NET Core on macOS](core/tutorials/using-on-macos.md)
 ### [🔧 Using .NET Core on Linux](core/tutorials/using-on-linux.md)

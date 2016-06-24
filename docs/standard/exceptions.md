@@ -60,7 +60,7 @@ Each language implements these exception handlers according to its specification
 
 2. If a match occurs, the runtime creates an **Exception** object that describes the exception. The runtime then executes all **finally** or **fault** statements between the statement where the exception occurred and the statement that handles the exception. Note that the order of exception handlers is important; the innermost exception handler is evaluated first. Also note that exception handlers can access the local variables and local memory of the routine that catches the exception, but any intermediate values at the time the exception is thrown are lost.
 
-	If no match occurs in the current method, the runtime searches each caller of the current method, and it continues this path all the way up the stack. If no caller has a match, the runtime lets the debugger access the exception.
+	If no match occurs in the current method, the runtime searches each caller of the current method, and it continues this path all the way up the stack. If no caller has a match, the runtime lets the debugger access the exception. On .NET runtimes that implement Application Domains, if the debugger does not attach to the exception, the runtime raises the [AppDomain.UnhandledException](https://msdn.microsoft.com/library/system.appdomain.unhandledexception) event. If there are no listeners for this event, the runtime dumps a stack trace and ends the application.
 
 ## Exception class and properties
 

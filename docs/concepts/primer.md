@@ -61,7 +61,7 @@ Microsoft languages that .NET supports include C#, F#, and Visual Basic.
 
 > **Note**
 > 
-> In the RC2 release of .NET Core, only C# is fully supported.
+> In the current release of .NET Core, only C# is fully supported.
 >  
 
 ### Automatic memory management

@@ -73,7 +73,7 @@ run on. Prime example of this is Kestrel, the ASP.NET Core cross-platform web se
 
 When you publish a portable application that has a native dependency, the published output will contain 
 all the same things as the portable application described in the previous section. For native dependencies, 
-the published output will contain a folder for each [Runtime Identifier (RID)](#what-are-rids) that the native dependency supports 
+the published output will contain a folder for each [Runtime Identifier (RID)](rid-catalog.md#what-are-rids) that the native dependency supports 
 (and that exists in its NuGet package). 
 
 The below `project.json` sample is showing an example of a portable application with a native dependency. 

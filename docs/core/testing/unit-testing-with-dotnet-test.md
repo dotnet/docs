@@ -57,7 +57,7 @@ CD into that directory, and run `dotnet new` to create the source
 project.
 
 
-In RC2, `dotnet new` creates a console application project, so you'll want to
+The `dotnet new` command creates a console application project, so you'll want to
 make a modification to `project.json` so that you build a class library
 project. 
 

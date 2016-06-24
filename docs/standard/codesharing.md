@@ -69,7 +69,7 @@ Platforms that support the .NET Standard Library then provide implementations of
 
 - The .NET Framework, which, starting with Windows 8, is a system component included with the Windows operating system.
 
-- .NET Core,  which is a modular, cross-platform, open source implementation of the .NET Framework that runs on Windows devices, as well as on Linux and OS X.
+- .NET Core,  which is a modular, cross-platform, open source implementation of the .NET Framework that runs on Windows devices, as well as on Linux and macOS.
 
 - The Universal Windows Platform, an application architecture for creating apps that can run on a variety of Windows devices, such as desktop Windows systems, Windows tablets, and Windows phones.   
 

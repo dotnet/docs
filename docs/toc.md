@@ -4,7 +4,7 @@
 ### [.NET Core System Requirements](getting-started/installing/system-reqs.md)
 ### [Installing .NET Core on Windows](getting-started/installing/installing-core-windows.md)
 ### [Installing .NET Core on Linux](getting-started/installing/installing-core-linux.md)
-### [Installing .NET Core on OS X](getting-started/installing/installing-core-osx.md)
+### [Installing .NET Core on macOS](getting-started/installing/installing-core-osx.md)
 ## [Using the CLI tools to write console apps](getting-started/cli-console-app-tutorial.md)
 ## [Setting up your integrated development environment](getting-started/devenv/index.md)
 ### [🔧 Development using Visual Studio 2015](getting-started/devenv/using-visual-studio.md)

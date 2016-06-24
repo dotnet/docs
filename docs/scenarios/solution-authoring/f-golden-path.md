@@ -111,4 +111,4 @@ You should now be able to `dotnet run` and get "Hello World!" and "42" output to
 
 You should now be able to run the test and verify it passes by doing `dotnet test`.
 
-**Note**: This will temporarily fail on OS X. This is a known issue.
+**Note**: This will temporarily fail on macOS. This is a known issue.

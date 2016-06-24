@@ -52,12 +52,12 @@ Creating a library targeting .NET Core
 4. In Solution Explorer, right click on your project and choose **Properties**
 5. In the **Library** tab of the project properties, click on the **Target .NET Platform Standard** link, and click **Yes** in the dialog that is shown
 6. Open the `project.json` file in your project, and make the following changes:
-    - Change the version number of the `NETStandard.Library` package to `1.5.0-rc2-24027` (this is the .NET Core RC2 version of the package)
-    - Add the below `imports` definition inside the `netstandard1.5` framework definition.  This will allow your project to reference .NET Core compatible 
+    - Change the version number of the `NETStandard.Library` package to `1.6.0` (this is the .NET Core 1.0 version of the package)
+    - Add the below `imports` definition inside the `netstandard1.6` framework definition.  This will allow your project to reference .NET Core compatible 
 NuGet packages that haven't been updated to target .NET Standard
 
         ```json
-        "netstandard1.5": {
+        "netstandard1.6": {
             "imports": [ "dnxcore50", "portable-net452" ]
         }
         ```
@@ -71,7 +71,7 @@ which uses separate MSBuild targets files to target .NET Core instead of putting
 
 It is also possible to start by creating a project in Visual Studio and modifying it to target .NET Core.  The instructions below show the minimal steps
 to get this working.  In contrast to [CoreApp](https://github.com/dotnet/corefxlab/tree/master/samples/NetCoreSample/CoreApp) or
-[coretemplate](https://github.com/mellinoe/coretemplate), a project created this way won't include configurations for targeting Linux and OS X.
+[coretemplate](https://github.com/mellinoe/coretemplate), a project created this way won't include configurations for targeting Linux and macOS.
 
 1. In the Visual Studio menu bar, choose **File** | **New** | **Project** and select **Console Application**
 2. Choose a name and location for your project and click **OK**

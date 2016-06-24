@@ -22,7 +22,7 @@ The scripts in this document describe the steps necessary to build a number of t
 Prerequisites
 -------------
 
-These scripts assume that [Visual Studio 2015 Update 2](https://www.visualstudio.com/en-us/news/vs2015-update2-vs.aspx) and the [.NET Core RC2 SDK preview with Visual Studio tooling](https://www.microsoft.com/net/core) are installed on the machine.
+These scripts assume that [Visual Studio 2015 Update 3](https://www.visualstudio.com/en-us/news/vs2015-update2-vs.aspx) and the [.NET Core SDK preview with Visual Studio tooling](https://www.microsoft.com/net/core) are installed on the machine.
 
 A solution using only .NET Core projects
 ----------------------------------------
@@ -116,4 +116,4 @@ Moving a PCL to a NetStandard library
 
 The PCL library that we built in this script is based on a `csproj`project file. In order to move it to NetStandard, the simplest solution is to manually move its code into a new empty .NET Core Class Library project.
 
-If you have pre-RC2 PCL libraries with a `xproj` file and a `project.json`, you should be able to edit the `project.json` file instead, to reference `"NETStandard.Library": "1.5.0-rc2-24027"`, and target "netstandard1.3".
+If you have older PCL libraries with a `xproj` file and a `project.json`, you should be able to edit the `project.json` file instead, to reference `"NETStandard.Library": "1.6.0"`, and target "netstandard1.3".

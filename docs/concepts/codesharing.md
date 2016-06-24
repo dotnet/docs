@@ -116,9 +116,9 @@ The .NET Standard Library also ensures backward binary compatibility by using a 
 
 ### Binary Compatibility and .NET Core ###
 
-When you develop a library that targets .NET Core, you indicate the version of the .NET Standard that your library targets in your project file. For example, if you use Visual Studio to create a .NET Core class library project, the project.json file by default targets the .NET Standard Library 1.6, as the the default project.json file shows:
+When you develop a library that targets .NET Core, you indicate the version of the .NET Standard that your library targets in your project file. For example, if you use Visual Studio to create a .NET Core class library project, the project.json file by default targets the .NET Standard Library 1.6, as the default project.json file shows:
 
-```project.json
+```json
    {
       "version": "1.0.0-*",
       "buildOptions": {

@@ -761,7 +761,7 @@ For example:
 ## configurations
 Type: Object
 
-An object whos properties define different configurations for this project, such as Debug and Release. Each value is an object that can contain a `compilationOptions` object with options specific for this coniguration.
+An object whos properties define different configurations for this project, such as Debug and Release. Each value is an object that can contain a `compilationOptions` object with options specific for this configuration.
 
 For example:
 

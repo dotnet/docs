@@ -22,7 +22,7 @@ The scripts in this document describe the steps necessary to build a number of t
 Prerequisites
 -------------
 
-These scripts assume that .NET Core RC2 CLI SDK preview and VS Code or another code editor are installed on the machine.
+These scripts assume that .NET Core 1.0 and VS Code or another code editor are installed on the machine.
 
 A solution using only .NET Core projects
 ----------------------------------------

@@ -1,3 +1,17 @@
+---
+title: .NET Products
+description: .NET Products
+keywords: .NET, .NET Core
+author: richlander
+manager: wpickett
+ms.date: 06/23/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
+---
+
 .NET Products
 =============
 
@@ -15,7 +29,7 @@ Product Categories
 
 ### Desktop
 
-You can build desktop apps with for Windows and macOS.
+You can build desktop apps for Windows and macOS.
 
 - [Universal Windows Apps](https://developer.microsoft.com/windows) with [.NET Native](#net-native)
 - [Windows Presentation Framework (WPF)](https://msdn.microsoft.com/library/ms754130.aspx) for Windows with the [.NET Framework](#net-framework)
@@ -66,7 +80,7 @@ Major commercial and open source .NET implementations are listed below, in alpha
 
 The following are the main characteristics of .NET Core:
 
-**Cross-platform** - .NET Core supports three operating systems families: Linux, Windows and macOS. .NET Core apps are cross-platform by default. You need to build and publish a version per OS you want to target. The app host and the runtime are the primary OS-specific native dependencies. .NET Core libraries can run unmodified across supported OSes.
+**Cross-platform** - .NET Core supports three operating systems families: Linux, Windows and macOS. .NET Core apps are cross-platform by default. You can write apps and libraries that run unmodified across supported OSes.
 
 **Open Source** - [.NET Core](https://github.com/dotnet/core) is available on GitHub, licensed with the [MIT](https://github.com/dotnet/coreclr/blob/master/LICENSE.TXT) and [Apache 2](https://github.com/dotnet/roslyn/blob/master/License.txt) licenses (licensing is per component). Documentation is [CC-BY](https://github.com/dotnet/core-docs/blob/master/license.txt). .NET Core also makes use of a significant set of open source industry dependencies, listed in the [.NET Core release notes](https://github.com/dotnet/core/releases). 
 
@@ -77,7 +91,7 @@ The following are the main characteristics of .NET Core:
 .NET Framework
 --------------
 
-The .NET Framework is used to build apps for Windows and Windows Server. You can use it to build rich user interfaces with Windows Presentation Framework (WPF) and Windows Forms. You quickly build server apps with ASP.NET Web Forms, ASP.NET MVC and Windows Communication Framework (WCF). It is integrated into Visual Studio, which provides many rich designer experiences for building both client and server apps. It is the best choice for writing apps for Windows.
+The .NET Framework is used to build apps for Windows and Windows Server. You can use it to build rich user interfaces with Windows Presentation Framework (WPF) and Windows Forms. It also supports building server apps with ASP.NET Web Forms, ASP.NET MVC and Windows Communication Framework (WCF). Visual Studio provides rich designer experiences for the .NET Framework, making it easy to build both client and server apps. It is the best choice for writing apps for Windows.
 
 - Learn about the [.NET Framework](https://msdn.microsoft.com/library/w0x726c2.aspx)
 - [Download .NET Framework](https://dot.net)

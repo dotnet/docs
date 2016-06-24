@@ -20,7 +20,6 @@ ms.assetid:
     <section id="hero-content" class="graph">
         <h1>.NET Documentation</h1>
         <h2>Welcome to .NET! This is the home of the technical documentation for .NET, C#, F# and Visual Basic, including basic concepts, getting started instructions, tutorials and samples. Start reading and exploring, to learn .NET for the first time or to find an answer to today's challenge.</h2>
-        <h3>New to .NET? Visit the <a href="">.NET Products page</a> &rarr;</h3>
     </section>
     <aside class="alert section-border">
         <p>Download .NET Core today</p>
@@ -64,12 +63,6 @@ ms.assetid:
                                 <a href="core/api/index">
                                     <h3>API Reference</h3>
                                     <p>Browse the .NET API, organized by namespace.</p>
-                                </a>
-                            </li>
-                            <li class="column column-third">
-                                <a href="dotnet/primer">
-                                    <h3>.NET and C# Primers</h3>
-                                    <p>Learn about the fundamentals of the .NET platform by reading the .NET and C# Primers.</p>
                                 </a>
                             </li>
                         </ul>
@@ -121,13 +114,13 @@ ms.assetid:
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="">
+                                <a href="https://developer.xamarin.com/guides/ios/getting_started/">
                                     <h3>Android and iOS apps</h3>
                                     <p>Learn how to build native iOS and Android applications with Xamarin</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="">
+                                <a href="https://developer.microsoft.com/en-us/windows/getstarted">
                                     <h3>Universal Windows Platform</h3>
                                     <p>Learn how to build Windows 10 UWP apps, which can run on all Windows 10 devices.</p>
                                 </a>
@@ -175,13 +168,13 @@ ms.assetid:
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="http://unity3d.com/unity">
+                                <a href="http://docs.unity3d.com/Manual/index.html">
                                     <h3>Unity</h3>
                                     <p>Build games for desktop, console and mobile in C# with Unity.</p>
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="http://www.monogame.net">
+                                <a href="http://www.monogame.net/documentation/?page=main">
                                     <h3>MonoGame</h3>
                                     <p>Build games for desktop, console and mobile in C# with MonoGame.</p>
                                 </a>

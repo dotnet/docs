@@ -68,43 +68,71 @@
 ### [🔧 Porting NuGet packages](porting/nuget-packages.md)
 ## [project.json reference](project-model/project-json-reference.md)
 ## [Runtime IDentifier catalog](core-concepts/rid-catalog.md)
+
+<!-- Marker for the start of edits --> 
 # [Learn C#](languages/csharp/index.md)
-## [🔧 Syntax](languages/csharp/syntax.md)
-## [🔧 Features at a glance](languages/csharp/features.md)
-## [🔧 C# Type system](languages/csharp/type-system.md)
-## [Properties](languages/csharp/properties.md)
-## [Indexers](languages/csharp/indexers.md)
-## [🔧 Lambda Expressions](languages/csharp/lambda-expressions.md)
-## [Iterators](languages/csharp/iterators.md)
-## [Delegates & events](languages/csharp/delegates-events.md)
-### [Introduction to Delegates](languages/csharp/delegates-overview.md)
-### [System.Delegate and the delegate keyword](languages/csharp/delegate-class.md)
-### [Strongly Typed Delegates](languages/csharp/delegates-strongly-typed.md)
-### [Common Patterns for Delegates](languages/csharp/delegates-patterns.md)
-### [Introduction to Events](languages/csharp/events-overview.md)
-### [The .NET Event Pattern](languages/csharp/event-pattern.md)
-### [The Updated .NET Event Pattern](languages/csharp/modern-events.md)
-### [Distinguishing Delegates and Events](languages/csharp/distinguish-delegates-events.md)
-## [🔧 Generics](languages/csharp/generics.md)
-## [🔧 Language Integrated Query (LINQ)](languages/csharp/linq.md)
-## [Expression Trees](languages/csharp/expression-trees.md)
-### [Expression Trees Explained](languages/csharp/expression-trees-explained.md)
-### [Framework Types Supporting Expression Trees](languages/csharp/expression-classes.md)
-### [Executing Expressions](languages/csharp/expression-trees-execution.md)
-### [Interpreting Expressions](languages/csharp/expression-trees-interpreting.md)
-### [Building Expressions](languages/csharp/expression-trees-building.md)
-### [Translating Expressions](languages/csharp/expression-trees-translating.md)
-### [Summary](languages/csharp/expression-trees-summary.md)
-## [Asynchronous programming](languages/csharp/async.md)
-## [🔧 Parallel programming](languages/csharp/parallel.md)
-## [🔧 Native interoperability](languages/csharp/interop.md)
-## [🔧 Reflection & code generation](languages/csharp/reflection.md)
-## [🔧 Documenting your code](languages/csharp/codedoc.md)
+
 ## [C# Tutorials](tutorials/index.md)
 ### [Console Application](tutorials/getting-started-with-csharp/console-teleprompter.md)
 ### [REST client](tutorials/getting-started-with-csharp/console-webapiclient.md)
 ### [Working with LINQ](tutorials/getting-started-with-csharp/working-with-linq.md)
 ### [Microservices hosted in Docker](tutorials/getting-started-with-csharp/microservices.md)
+
+## [🔧 Features at a glance](languages/csharp/features.md)
+<!-- Should I reverse these two topics? -->
+### What's new in C# 6
+### What's Coming in C# 7
+## C# Concepts
+### [🔧 C# Type system](languages/csharp/type-system.md)
+### [Properties](languages/csharp/properties.md)
+### [Indexers](languages/csharp/indexers.md)
+### [🔧 Generics](languages/csharp/generics.md)
+### [Iterators](languages/csharp/iterators.md)
+### [🔧 Language Integrated Query (LINQ)](languages/csharp/linq.md)
+### [Delegates & events](languages/csharp/delegates-events.md)
+#### [Introduction to Delegates](languages/csharp/delegates-overview.md)
+#### [System.Delegate and the delegate keyword](languages/csharp/delegate-class.md)
+#### [Strongly Typed Delegates](languages/csharp/delegates-strongly-typed.md)
+#### [Common Patterns for Delegates](languages/csharp/delegates-patterns.md)
+#### [Introduction to Events](languages/csharp/events-overview.md)
+#### [The .NET Event Pattern](languages/csharp/event-pattern.md)
+#### [The Updated .NET Event Pattern](languages/csharp/modern-events.md)
+#### [Distinguishing Delegates and Events](languages/csharp/distinguish-delegates-events.md)
+### [🔧 Parallel programming](languages/csharp/parallel.md)
+### [Asynchronous programming](languages/csharp/async.md)
+### Errors and Exceptions
+
+<!-- Some of the content that already exists above may move down
+    to this section. The 'Concepts' section should be more conversational,
+    how to, focused. This section should be deeper and more precise. Not
+    quite spec language, but closer to the spec language than the
+    Concepts topics. -->
+
+## C# Reference
+### [🔧 Syntax](languages/csharp/syntax.md)
+### [🔧 Lambda Expressions](languages/csharp/lambda-expressions.md)
+<!-- This is a sidebar the delegates topics. I don't think it
+    needs to be linked into the TOC, but I wanted to leave it 
+    to get your thoughts. If it does belong in the TOC,
+    this is the location:
+#### [Implicitly Typed Lambda Expressions](languages/csharp/implicitly-typed-lambda-expressions.md)
+-->
+### [Expression Trees](languages/csharp/expression-trees.md)
+#### [Expression Trees Explained](languages/csharp/expression-trees-explained.md)
+#### [Framework Types Supporting Expression Trees](languages/csharp/expression-classes.md)
+#### [Executing Expressions](languages/csharp/expression-trees-execution.md)
+#### [Interpreting Expressions](languages/csharp/expression-trees-interpreting.md)
+#### [Building Expressions](languages/csharp/expression-trees-building.md)
+#### [Translating Expressions](languages/csharp/expression-trees-translating.md)
+#### [Summary](languages/csharp/expression-trees-summary.md)
+### [🔧 Native interoperability](languages/csharp/interop.md)
+### [🔧 Reflection & code generation](languages/csharp/reflection.md)
+### [🔧 Documenting your code](languages/csharp/codedoc.md) <!-- A community member is working on this -->
+
+<!-- Note to self: update languages/csharp/index.md to match this file
+    once this is approved.  -->
+
+<!-- marker for the end of edits -->
 # [Learn F#](languages/fsharp/index.md)
 ## [F# Learning Resources](http://fsharp.org/learn.html)
 ## [F# Language Reference](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/fsharp-language-reference)

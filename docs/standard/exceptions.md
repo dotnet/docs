@@ -24,43 +24,17 @@ In .NET, an exception is an object that inherits from the [System.Exception](htt
 
 ## Exceptions vs. traditional error-handling methods
 
-Traditionally, a language's error-handling model relied on either the language's unique way of detecting errors and locating handlers for them, or on the error-handling mechanism provided by the operating system. .NET implements exception handling with the following features:
+Traditionally, a language's error-handling model relied on either the language's unique way of detecting errors and locating handlers for them, or on the error-handling mechanism provided by the operating system. The way .NET implements exception handling provides the following advantages:
 
-- Handles exceptions without regard for the language that generates the exception or the language that handles the exception.
+- Exception throwing and handling works the same for .NET programming languages.
 
 - Does not require any particular language syntax for handling exceptions, but allows each language to define its own syntax.
 
-- Allows exceptions to be thrown across process and even machine boundaries.
+- Exceptions can be thrown across process and even machine boundaries.
 
-Exceptions offer several advantages over other methods of error notification, such as return codes. Failures do not go unnoticed. Invalid values do not continue to propagate through the system. You do not have to check return codes. Finally, exception-handling code can be easily added to increase program reliability.
+- Exception-handling code can be added to an application to increase program reliability.
 
-## How the runtime manages exceptions
-
-The runtime uses an exception-handling model based on exception objects and protected blocks of code. An [Exception](https://docs.microsoft.com/dotnet/core/api/System.Exception) object is created to represent an exception when it occurs.
-
-The runtime creates an exception information table for each executable. Each method of the executable has an associated array of exception-handling information (which can be empty) in the exception information table. Each entry in the array describes a protected block of code, any exception filters associated with that code, and any exception handlers (**catch** statements). This exception table is extremely efficient and does not cause any performance penalty in processor time or in memory use when an exception does not occur. You use resources only when an exception occurs.
-
-The exception information table represents four types of exception handlers for protected blocks:
-
-- A **finally** handler that executes whenever the block exits, whether that occurs by normal control flow or by an unhandled exception.
-
-- A fault handler that must execute if an exception occurs, but does not execute on completion of normal control flow.
-
-- A type-filtered handler that handles any exception of a specified class or any of its derived classes.
-
-- A user-filtered handler that runs user-specified code to determine whether the exception should be handled by the associated handler or should be passed to the next protected block.
-
-Each language implements these exception handlers according to its specifications. When an exception occurs, the runtime begins a two-step process:
-
-1. The runtime searches the array for the first protected block that does the following:
-
-  - Protects a region that includes the currently executing instruction.
-
-  - Contains an exception handler or contains a filter that handles the exception.
-
-2. If a match occurs, the runtime creates an **Exception** object that describes the exception. The runtime then executes all **finally** or **fault** statements between the statement where the exception occurred and the statement that handles the exception. Note that the order of exception handlers is important; the innermost exception handler is evaluated first. Also note that exception handlers can access the local variables and local memory of the routine that catches the exception, but any intermediate values at the time the exception is thrown are lost.
-
-	If no match occurs in the current method, the runtime searches each caller of the current method, and it continues this path all the way up the stack. If no caller has a match, the runtime lets the debugger access the exception. On .NET runtimes that implement Application Domains, if the debugger does not attach to the exception, the runtime throws the [AppDomain.UnhandledException](https://msdn.microsoft.com/library/system.appdomain.unhandledexception) event. If there are no listeners for this event, the runtime dumps a stack trace and ends the application.
+Exceptions offer advantages over other methods of error notification, such as return codes. Failures do not go unnoticed because if an exception is thrown and you don't handle it, the runtime terminates your application. Invalid values do not continue to propagate through the system as a result of code that fails to check for a failure return code. 
 
 ## Exception class and properties
 
@@ -123,7 +97,7 @@ public class ProcessFile
         {
             StreamReader sr = File.OpenText("data.txt");
             Console.WriteLine("The first line of this file is {0}", sr.ReadLine());
-	        sr.Dispose();
+            sr.Dispose();
         }
         catch (Exception e)
         {
@@ -135,8 +109,7 @@ public class ProcessFile
 
 The common language runtime catches exceptions that are not caught by a catch block. Depending on how the runtime is configured, a debug dialog box appears, or the program stops executing and a dialog box with exception information appears, or an error is printed out to STDERR.
 
-> **Note** 
-> 
+> [!NOTE] 
 > Almost any line of code can cause an exception, particularly exceptions that are thrown by the common language runtime itself, such as [OutOfMemoryException](https://docs.microsoft.com/dotnet/core/api/System.OutOfMemoryException). Most applications don't have to deal with these exceptions, but you should be aware of this possibility when writing libraries to be used by others. For suggestions on when to set code in a Try block, see [Best Practices for Exceptions](#best-practices-for-exceptions).
  
 # How to use specific exceptions in a Catch block
@@ -300,8 +273,7 @@ public class EmployeeListNotFoundException: Exception
 }
 ```
 
-> **Note** 
-> 
+> [!NOTE]
 > In situations where you are using remoting, you must ensure that the metadata for any user-defined exceptions is available at the server (callee) and to the client (the proxy object or caller). For more information, see [Best practices for exceptions](#best-practices-for-exceptions).
 
 ## Best practices for exceptions
@@ -310,9 +282,11 @@ A well-designed app handles exceptions and errors to prevent app crashes. This s
 
 ### Use try/catch/finally blocks
 
-Use **try**/**catch** blocks around code that can potentially generate an exception, and use a **finally** block to clean up resources, if necessary.
+Use **try**/**catch**/**finally** blocks around code that can potentially generate an exception. 
 
 In **catch** blocks, always order exceptions from the most specific to the least specific.
+
+Use a **finally** block to clean up resources, whether you can recover or not.
 
 ### Handle common conditions without throwing exceptions
 
@@ -492,8 +466,8 @@ C#
 public void TransferFunds(Account from, Account to, decimal amount)
 {
     from.Withdrawal(amount);
-	// If the deposit fails, the withdrawal shouldn't remain in effect. 
-	to.Deposit(amount);
+    // If the deposit fails, the withdrawal shouldn't remain in effect. 
+    to.Deposit(amount);
 }
 ```
 
@@ -526,3 +500,7 @@ catch (Exception ex)
     throw new Exception("Withdrawal failed", ex);
 }
 ```
+
+## Next steps
+
+To learn more about how exceptions work in .NET, see [What Every Dev needs to Know About Exceptions in the Runtime](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md).

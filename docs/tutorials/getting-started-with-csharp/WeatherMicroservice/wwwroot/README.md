@@ -1,8 +1,8 @@
-# Welcome to ASP.NET 5
+# Welcome to ASP.NET Core
 
 We've made some big updates in this release, so it’s **important** that you spend a few minutes to learn what’s new.
 
-You've created a new ASP.NET 5 project. [Learn what's new](http://go.microsoft.com/fwlink/?LinkId=518016)
+You've created a new ASP.NET Core project. [Learn what's new](http://go.microsoft.com/fwlink/?LinkId=518016)
 
 ## This application consists of:
 
@@ -22,8 +22,8 @@ You've created a new ASP.NET 5 project. [Learn what's new](http://go.microsoft.c
 
 ## Overview
 
-*   [Conceptual overview of what is ASP.NET 5](http://go.microsoft.com/fwlink/?LinkId=518008)
-*   [Fundamentals of ASP.NET 5 such as Startup and middleware.](http://go.microsoft.com/fwlink/?LinkId=699320)
+*   [Conceptual overview of what is ASP.NET Core](http://go.microsoft.com/fwlink/?LinkId=518008)
+*   [Fundamentals of ASP.NET Core such as Startup and middleware.](http://go.microsoft.com/fwlink/?LinkId=699320)
 *   [Working with Data](http://go.microsoft.com/fwlink/?LinkId=398602)
 *   [Security](http://go.microsoft.com/fwlink/?LinkId=398603)
 *   [Client side development](http://go.microsoft.com/fwlink/?LinkID=699321)

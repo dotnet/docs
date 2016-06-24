@@ -1,8 +1,8 @@
-----
+---
 -title: Welcome
 -description: Getting started
 -keywords: .NET
--author: runfaster2000
+-author: richlander
 -manager: wpickett
 -ms.date: 06/23/2016
 -ms.topic: article
@@ -10,14 +10,14 @@
 -ms.technology: .net-technologies
 -ms.devlang: dotnet
 -ms.assetid: cb788dcf-2120-467f-9c34-c02a90e1f68f
-----
+---
 
 Welcome to .NET
 ===============
 
 Welcome to .NET! You can build any kind of application you want with .NET, from cloud to IoT to games. You can start building your next application today, for Windows, Linux, Android, macOS, and iOS. There are millions of developers that use .NET to power mission critical applications, personal apps and immersive games. You can write the next one.
 
-You can develop apps and games on Windows, macOS and Linux. There are free tools that you can use to build apps or games and deploy them on servers or desktops or publish them to app stores. It's accessible to students and  used by large businesses throught the world.
+You can develop apps and games on Windows, macOS and Linux. There are free tools that you can use to build apps or games and deploy them on servers or desktops or publish them to app stores. It's accessible to students and  used by large businesses throughout the world.
 
 News
 ----

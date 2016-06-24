@@ -59,8 +59,8 @@
 ### [dotnet-pack](core/tools/dotnet-pack.md)
 ### [dotnet-publish](core/tools/dotnet-publish.md)
 ### [dotnet-install-script](core/tools/dotnet-install-script.md)
-### [project.json reference](core/tools/project-json.md)
-### [global.json reference](core/tools/global-json.md)
+### [project.json](core/tools/project-json.md)
+### [global.json](core/tools/global-json.md)
 ## [Migrating from DNX](core/migrating-from-dnx.md)
 
 # [Learn C#](languages/csharp/index.md)

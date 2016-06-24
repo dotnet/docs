@@ -1,6 +1,6 @@
 ---
 title: Code Sharing with .NET Core and the .NET Standard Library #
-description: Code Sharing with the .NET Standard Library #
+description: Code Sharing with .NET Core and the .NET Standard Library #
 keywords: .NET, .NET Core
 author: rpetrusha
 manager: wpickett
@@ -11,13 +11,13 @@ ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: d4c31c29-e977-48f2-b4c7-0335ef50d440
 ---
+
 # Code Sharing with .NET Core and the .NET Standard Library #
 
 The .NET Standard Library aims at maintaining binary compatibility between the .NET-capable platforms for which an application is developed and future versions of those platforms. It also supports source code compatibility between platforms that support a particular version of the .NET Standard.
 
-<aside style="border-style:double">
-**Important:** This is very preliminary documentation for the .NET Standard Library. Because the standard has not been formalized yet, it is subject to change.
-</aside>
+[!IMPORTANT]
+This is very preliminary documentation for the .NET Standard Library. Because the standard has not been formalized yet, it is subject to change.
 
 The .NET Standard Library consists of two parts: a set of contracts (or reference assemblies) that are included in the standard, and a single moniker-based versioning scheme.
 
@@ -25,9 +25,9 @@ The .NET Standard Library consists of two parts: a set of contracts (or referenc
 
 The .NET Standard Library is not itself a platform, but rather a standard that platforms implement. The standard defines a set of reference assemblies that platforms must support. These reference assemblies in turn define the API surface area that the platform must implement.
 
-An assembly in the .NET Standard Library is a library or executable file that targets a .NET-capable platform.  A reference assembly (also known as a contract) is a library that defines types and their members but contains no implementation code. Because they contain no implementation, reference assemblies are used for compilation only. The source code for the reference assemblies that comprise the .NET Standard Library are found on [GitHub](https://github.com/dotnet/corefx/tree/master/src "GitHub").
+An assembly in the .NET Standard Library is a library or executable file that targets a .NET-capable platform.  A reference assembly (also known as a contract) is a library that defines types and their members but contains no implementation code. Because they contain no implementation, reference assemblies are used for compilation only. The source code for the reference assemblies that comprise the .NET Standard Library are found on [GitHub](https://github.com/dotnet/corefx/tree/master/src).
 
-To take a simple example, the System.Resources.ResourceManager reference assembly defines one exception type with three unique members, two attribute types with two unique members each, and a [ResourceManager](https://docs.microsoft.com/dotnet/core/api/System.Resources.ResourceManager "ResourceManager") class with two constructors and two string retrieval methods. The following is the entire content of the System.Resources.ResourceManager reference assembly:
+To take a simple example, the System.Resources.ResourceManager reference assembly defines one exception type with three unique members, two attribute types with two unique members each, and a [ResourceManager](https://docs.microsoft.com/dotnet/core/api/System.Resources.ResourceManager) class with two constructors and two string retrieval methods. The following is the entire content of the System.Resources.ResourceManager reference assembly:
 
     namespace System.Resources
     {
@@ -64,7 +64,7 @@ To take a simple example, the System.Resources.ResourceManager reference assembl
           public string Version { get { return default(string); } }
        }
     }
-            
+
 Platforms that support the .NET Standard Library then provide implementations of the API surface area defined by these reference assemblies. Some of the implementing platforms are:
 
 - The .NET Framework, which, starting with Windows 8, is a system component included with the Windows operating system.
@@ -79,11 +79,11 @@ The .NET Standard Library is versioned. A particular version of the .NET Standar
 
 - The individual types and members found in those reference assemblies.
 
-Lower versions of the .NET Standard Library are always compatible with higher versions. This means that the APIs in a lower (or earlier) version of the standard are always a subset of the APIs in higher (or later) versions. Conversely, the APIs in higher (or later) versions of the standard are a superset of APIs in lower (or earlier) versions. This allows apps that target an earlier version of the .NET Standard Library to run on later versions. A unique moniker identifies each version. 
+Lower versions of the .NET Standard Library are always compatible with higher versions. This means that the APIs in a lower (or earlier) version of the standard are always a subset of the APIs in higher (or later) versions. Conversely, the APIs in higher (or later) versions of the standard are a superset of APIs in lower (or earlier) versions. This allows apps that target an earlier version of the .NET Standard Library to run on later versions. A unique moniker identifies each version.
 
-The current version of the .NET Standard Library is 1.6. 
+The current version of the .NET Standard Library is 1.6.
 
-For more information on the .NET Standard Library, see [.NET Standard Library](#https://docs.microsoft.com/dotnet/core/concepts/dotnet-standard-library ".NET Standard Library").
+For more information on the .NET Standard Library, see [.NET Standard Library](./dotnet-standard-library.md).
 
 ## Binary Compatibility ##
 
@@ -102,15 +102,15 @@ The Portable Class Library (PCL) was the sole mechanism that provided for cross-
 
 In addition, backward binary compatibility can be a problem for Portable Class Libraries. When these libraries are deployed as NuGet packages, they are expressed with a static set of platforms. For example, `portable-net45+win8` indicates that a library targets Windows Store apps on Windows 8 and the .NET Framework 4.5. This can limit their ability to be called from Portable Class Libraries that target future compatible platforms, such as the Universal Windows Platform for Windows 10.
 
-Although the .NET Standard Library was introduced simultaneously with the introduction of .NET Core, it has been versioned retroactively to support portability for existing Portable Class Libraries. For a list of some PCL profiles and their corresponding versions of the .NET Standard Library, see [.NET Standard Library](#https://docs.microsoft.com/dotnet/core/concepts/dotnet-standard-library ".NET Standard Library").
+Although the .NET Standard Library was introduced simultaneously with the introduction of .NET Core, it has been versioned retroactively to support portability for existing Portable Class Libraries. For a list of some PCL profiles and their corresponding versions of the .NET Standard Library, see [.NET Standard Library](./dotnet-standard-library.md).
 
 ### Binary Compatibility and the .NET Standard Library ###
 
 The .NET Standard Library ensures cross-platform binary compatibility in two ways:
 
-- Each platform must implement the full set of APIs defined in each .NET Standard Library reference assembly that it supports. In other words, platforms that target the same version of the .NET Standard Library have the same API surface area. 
+- Each platform must implement the full set of APIs defined in each .NET Standard Library reference assembly that it supports. In other words, platforms that target the same version of the .NET Standard Library have the same API surface area.
 
-- .NET implementations use a single file format across all platforms. Compilers translate source code to Intermediate Language (IL), which is output in a PE-formatted file. For more information on the Portable Executable format, which is a modified version of the Unix Common Object File Format (COFF), see [Microsoft PE and COFF Specification](https://msdn.microsoft.com/windows/hardware/gg463119.aspx "Microsoft PE and COFF Specification") 
+- .NET implementations use a single file format across all platforms. Compilers translate source code to Intermediate Language (IL), which is output in a PE-formatted file. For more information on the Portable Executable format, which is a modified version of the Unix Common Object File Format (COFF), see [Microsoft PE and COFF Specification](https://msdn.microsoft.com/windows/hardware/gg463119.aspx).
 
 The .NET Standard Library also ensures backward binary compatibility by using a single version-based moniker to express its support for specific platforms. For example, the moniker for binaries that target the .NET Standard 1.6 is simply `netstandard1.6`. Because the moniker uses linear versioning, NuGet and other tools can easily infer compatibility and enforce backward compatibility: higher (newer) .NET Standard Library versions are always compatible with lower (earlier) ones. For example, a binary that targets the .NET Standard Library 1.3 can run on a platform that implements the .NET Standard Library 1.6.
 
@@ -118,24 +118,24 @@ The .NET Standard Library also ensures backward binary compatibility by using a 
 
 When you develop a library that targets .NET Core, you indicate the version of the .NET Standard that your library targets in your project file. For example, if you use Visual Studio to create a .NET Core class library project, the project.json file by default targets the .NET Standard Library 1.6, as the the default project.json file shows:
 
-```
-{
-   "version": "1.0.0-*",
-   "buildOptions": {
-     "debugType": "portable"
-   }, 
-   "dependencies": {},
-   "frameworks": {
-     "netstandard1.6": {
-       "dependencies": {
-          "NETStandard.Library": "1.6.0"
-       }
-     }
+```project.json
+   {
+      "version": "1.0.0-*",
+      "buildOptions": {
+        "debugType": "portable"
+      },
+      "dependencies": {},
+      "frameworks": {
+        "netstandard1.6": {
+          "dependencies": {
+             "NETStandard.Library": "1.6.0"
+          }
+        }
+      }
    }
-}
 ```
 
-If you target an earlier (lower) version of the .NET Standard Library, a smaller subset of APIs is available, but your library will be callable from more platforms. If you target a later (higher) version, a larger subset of APIs is available, but you library can be called from fewer platforms. Note that you do not need to explicitly define that platforms that your library targets; you automatically target the platforms supported by the version of the .NET Standard library that your library targets. For a list of platforms supported by each version of the .NET Standard Library, see [.NET Standard Library](#https://docs.microsoft.com/dotnet/core/concepts/dotnet-standard-library ".NET Standard Library").
+If you target an earlier (lower) version of the .NET Standard Library, a smaller subset of APIs is available, but your library will be callable from more platforms. If you target a later (higher) version, a larger subset of APIs is available, but you library can be called from fewer platforms. Note that you do not need to explicitly define that platforms that your library targets; you automatically target the platforms supported by the version of the .NET Standard library that your library targets. For a list of platforms supported by each version of the .NET Standard Library, see [.NET Standard Library](./dotnet-standard-library.md).
 
 Because it targets version 1.6 of the .NET Standard Library, your library is callable from any platform that implements the .NET Standard Library, provided that:
 
@@ -157,8 +157,8 @@ Portable Class Libraries were intended to provide cross-platform binary librarie
 
 The .NET Standard Library addresses the problem of source code compatibility by defining the API surface area that a particular version of the standard must implement. This surface area is defined by the types and type members found in the reference assemblies that are included in a particular version of the .NET Standard Library.
 
-When a platform provides an implementation for a particular reference assembly or contract, it must implement all of the types and type members defined in that reference assembly. If the member has no implementation on that platform, it typically throws a [PlatformNotSupportedException](https://docs.microsoft.com/dotnet/core/api/System.PlatformNotSupportedException "PlatformNotSupportedException") exception. The fact that the .NET Standard Library defines a set of APIs that are present on all implementing platforms, and that the APIs available in later versions of the .NET Standard Library are a superset of those available in earlier versions, ensures that:
+When a platform provides an implementation for a particular reference assembly or contract, it must implement all of the types and type members defined in that reference assembly. If the member has no implementation on that platform, it typically throws a [PlatformNotSupportedException](https://docs.microsoft.com/dotnet/core/api/System.PlatformNotSupportedException) exception. The fact that the .NET Standard Library defines a set of APIs that are present on all implementing platforms, and that the APIs available in later versions of the .NET Standard Library are a superset of those available in earlier versions, ensures that:
 
-- Source code that targets a particular version of the .NET Standard Library on one platform can compile and execute on another platform that supports the same version of the .NET Standard Library. 
+- Source code that targets a particular version of the .NET Standard Library on one platform can compile and execute on another platform that supports the same version of the .NET Standard Library.
 
-- Source code that targets a particular version of the .NET Standard Library can compile and execute on any platform that supports a later version of the .NET Standard Library. 
+- Source code that targets a particular version of the .NET Standard Library can compile and execute on any platform that supports a later version of the .NET Standard Library.

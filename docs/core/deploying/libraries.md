@@ -18,16 +18,6 @@ ms.assetid: 9f6e8679-bd7e-4317-b3f9-7255a260d9cf
 
 This article covers how you can write libraries for .NET using cross-platform CLI tools.  They provide an efficient and low-level experience that works across any supported OS.  You can still build libraries with Visual Studio, and if that is your preferred experience then you should [refer to the Visual Studio guide](libraries-with-vs.md).
 
-* [Prerequisites](#prerequisites)
-* [How to target .NET Core](#how-to-target-net-core)
-* [How to target the .NET Framework](#how-to-target-the-net-framework)
-* [How to target a Portable Class Library (PCL)](#how-to-target-a-portable-class-library-pcl)
-* [How to multitarget](#how-to-multitarget)
-* [How to use native dependencies](#how-to-use-native-dependencies)
-* [How to test libraries on .NET Core](#how-to-test-libraries-on-net-core)
-* [How to use multiple projects](#how-to-use-multiple-projects)
-* [How to create a NuGet Package with your Library](#how-to-create-a-nuget-package-with-your-library)
-
 ## Prerequisites
 
 You must have .NET Core installed on your machine.  You will need [the .NET Core SDK and CLI](https://www.microsoft.com/net/core).

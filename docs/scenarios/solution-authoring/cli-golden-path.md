@@ -22,7 +22,7 @@ The scripts in this document describe the steps necessary to build a number of t
 Prerequisites
 -------------
 
-These scripts assume that .NET Core RC2 CLI SDK preview and VS Code or another code editor are installed on the machine.
+These scripts assume that .NET Core 1.0 and VS Code or another code editor are installed on the machine.
 
 A solution using only .NET Core projects
 ----------------------------------------
@@ -36,7 +36,7 @@ A solution using only .NET Core projects
 
 1. Open a command-line on `GoldenCLI/src/Library`, then do `dotnet new`.
 2. Edit `GoldenCLI/src/Library/project.json` and remove the `buildOptions` section.
-3. Change dependencies to `"NETStandard.Library": "1.5.0-rc2-24027", "Newtonsoft.Json": "9.0.1-beta1"`.
+3. Change dependencies to `"NETStandard.Library": "1.6.0", "Newtonsoft.Json": "9.0.1-beta1"`.
 4. Under `frameworks`, change `netcoreapp1.0` to `netstandard1.5`.
 5. From `GoldenCLI/src/Library`, run  `dotnet restore`.
 6. Rename `Program.cs` to `Thing.cs`, and replace its contents with:

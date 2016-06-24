@@ -117,7 +117,7 @@ You can learn more about both of these in the [application types overview](../..
 
 ## Migration from DNX
 If you used DNX in RC1 of .NET Core, you may be wondering what happened to it and how do these new tools
-relate to the DNX tools. In short, the DNX tools have been replaced with the .NET Core CLI tools in RC2. 
+relate to the DNX tools. In short, the DNX tools have been replaced with the .NET Core CLI tools. 
 If you have existing projects or are just wondering how the commands map, you
 can use the [DNX to CLI migration document](../../dnx-migration.md) to get all of the details. 
 

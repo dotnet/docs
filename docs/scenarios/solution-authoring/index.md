@@ -1,6 +1,6 @@
 ---
-title: Authoring Solutions for .NET Core RC2
-description: Authoring Solutions for .NET Core RC2
+title: Authoring Solutions for .NET Core 1.0
+description: Authoring Solutions for .NET Core 1.0
 keywords: .NET, .NET Core
 author: bleroy
 manager: wpickett
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: e06ebe27-7da5-498a-b1b7-a73b703074fa
 ---
 
-# Authoring Solutions for .NET Core RC2
+# Authoring Solutions for .NET Core 1.0
 
 * [Building simple C# solutions with Visual Studio](vs-golden-path.md)
 * [Building simple C# solutions with the .NET CLI](cli-golden-path.md)

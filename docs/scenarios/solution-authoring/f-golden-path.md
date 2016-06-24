@@ -22,7 +22,7 @@ The scripts in this document describe the steps necessary to build a number of t
 Prerequisites
 -------------
 
-These scripts assume that .NET Core RC2 CLI SDK preview and VS Code or another code editor are installed on the machine.
+These scripts assume that .NET Core 1.0 and VS Code or another code editor are installed on the machine.
 
 A solution using only .NET Core projects
 ----------------------------------------
@@ -111,4 +111,4 @@ You should now be able to `dotnet run` and get "Hello World!" and "42" output to
 
 You should now be able to run the test and verify it passes by doing `dotnet test`.
 
-**Note**: This will temporarily fail on OS X. This is a known issue.
+**Note**: This will temporarily fail on macOS. This is a known issue.

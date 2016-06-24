@@ -47,7 +47,7 @@ Core application.
 You’ll need to setup your machine to run .NET core. You can find the
 installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
 page.
-You can run this application on Windows, Ubuntu Linux, OS X or in a Docker container. 
+You can run this application on Windows, Ubuntu Linux, macOS or in a Docker container. 
 You’ll need to install your favorite code editor. The descriptions below
 use [Visual Studio Code](https://code.visualstudio.com/) which is an open
 source, cross platform editor. However, you can use whatever tools you are
@@ -56,7 +56,7 @@ comfortable with.
 You'll also need to install the Docker engine. See the 
 [Docker Installation page](https://docs.docker.com/engine/installation/) 
 for instructions.
-Docker can be installed in many Linux distributions, Mac OS, or Windows. The page
+Docker can be installed in many Linux distributions, macOS, or Windows. The page
 referenced above contains links to each of the available installations.
 
 You'll also need to install a number of command line tools that support
@@ -311,11 +311,11 @@ list of dependencies:
 ```
   "dependencies": {
     "Microsoft.NETCore.App": {
-      "version": "1.0.0-rc2-3002702",
+      "version": "1.0.0",
       "type": "platform"
     },
-    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0-rc2-final",
-    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc2-final",
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
     "Newtonsoft.Json": "8.0.4-beta1",
     "Microsoft.NETCore.Portable.Compatibility": "1.0.0"
   },

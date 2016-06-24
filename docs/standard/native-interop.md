@@ -26,7 +26,7 @@ Of course, the list above does not cover all of the potential situations and sce
 
 > **Note**
 > 
-> Most of the examples in this document will be presented for all three supported platforms for .NET Core (Windows, Linux, OS X). However, for some short and illustrative examples, I have decided to leave just one sample that will use Windows filenames and extensions (i.e. “dll” for libraries). This does not mean that those features are not available on Linux or OS X, it was done merely for conveince sake.
+> Most of the examples in this document will be presented for all three supported platforms for .NET Core (Windows, Linux, macOS). However, for some short and illustrative examples, I have decided to leave just one sample that will use Windows filenames and extensions (i.e. “dll” for libraries). This does not mean that those features are not available on Linux or macOS, it was done merely for conveince sake.
 
 ## Platform Invoke (P/Invoke)
 
@@ -60,7 +60,7 @@ The example above is pretty simple, but it does show off what is needed to invok
 
 The rest of the example is just invoking the method as you would any other managed method.
 
-The sample is similar for OS X. One thing that needs to change is, of course, the name of the library in the `DllImport` attribute, as OS X has a different scheme of naming dynamic libraries. The sample below uses the `getpid(2)` function to get the process ID of the application and print it out to the console.
+The sample is similar for macOS. One thing that needs to change is, of course, the name of the library in the `DllImport` attribute, as macOS has a different scheme of naming dynamic libraries. The sample below uses the `getpid(2)` function to get the process ID of the application and print it out to the console.
 
 ```cs
 using System;
@@ -154,7 +154,7 @@ With this in mind, let’s walk through the example:
 *   Lines #13 - 16 implement the delegate. For this simple example, we just want to output the handle to the console.
 *   Finally, in line #19 we invoke the external method and pass in the delegate.
 
-The Linux and OS X examples are shown below. For them, we use the `ftw` function that can be found in `libc`, the C library. This function is used to traverse directory hierarchies and it takes a pointer to a function as one of its parameters. The said function has the following signature: `int (*fn) (const char *fpath, const struct stat *sb, int typeflag)`.
+The Linux and macOS examples are shown below. For them, we use the `ftw` function that can be found in `libc`, the C library. This function is used to traverse directory hierarchies and it takes a pointer to a function as one of its parameters. The said function has the following signature: `int (*fn) (const char *fpath, const struct stat *sb, int typeflag)`.
 
 ```cs
 using System;
@@ -207,7 +207,7 @@ namespace PInvokeSamples {
 
 ```
 
-OS X example uses the same function, and the only difference is the argument to the `DllImport` attribute, as OS X keeps `libc` in a different place.
+macOS example uses the same function, and the only difference is the argument to the `DllImport` attribute, as macOS keeps `libc` in a different place.
 
 ```cs
 using System;
@@ -318,7 +318,7 @@ typedef struct _SYSTEMTIME {
 
 ```
 
-We already saw the Linux and OS X example for this in the previous example. It is shown again below.
+We already saw the Linux and macOS example for this in the previous example. It is shown again below.
 
 ```cs
 [StructLayout(LayoutKind.Sequential)]

@@ -50,7 +50,7 @@ Let's do a quick walkthrough:
         "dependencies": {
             "Microsoft.NETCore.App": {
                 "type": "platform",
-                "version": "1.0.0-rc2-3002702"
+                "version": "1.0.0"
             }
         },   
        "frameworks": {
@@ -108,7 +108,7 @@ This project's only dependency so far is `"Microsoft.NETCore.App"`. The `depende
 ```javascript
 "dependencies": {
 "Microsoft.NETCore.App": {
-    "version": "1.0.0-rc2-3002702"
+    "version": "1.0.0"
 }
 },
 ```

@@ -237,7 +237,7 @@ Moving a PCL to a NetStandard library
 
 The PCL library that we built in the previous procedure is based on a `csproj` project file. In order to move it to NetStandard, the simplest solution is to manually move its code into a new empty **.NET Core Class Library** project.
 
-If you have pre-RC2 PCL libraries with a `xproj` file and a `project.json` file, you should be able to edit the `project.json` file instead, to reference `"NETStandard.Library": "1.5.0-rc2-24027"`, and target "netstandard1.3".
+If you have older PCL libraries with a `xproj` file and a `project.json` file, you should be able to edit the `project.json` file instead, to reference `"NETStandard.Library": "1.6.0"`, and target "netstandard1.3".
 
 
 

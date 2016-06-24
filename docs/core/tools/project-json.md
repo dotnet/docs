@@ -14,12 +14,9 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 
 # project.json reference
 
- **Note**
-<<<<<<< b280eecc27e38909a78eb2067d77d627d31b7d27
-> This topic is likely to change before release! You can track the status of this issue through our public GitHub issue tracker.
-=======
+> **Note:**
+>
 > This topic is preliminary and subject to change in the next release. You can track the status of this issue through our public GitHub issue tracker.
->>>>>>> Update project-json-reference.md
 
 
 * [name](#name)
@@ -584,7 +581,7 @@ The defaults provided by the system. It can have `include` and `exclude` globbin
 For example:
 
     {
-        "builtIns":[]
+        "builtIns":{}
     }
 
 <a name="compile-mappings"></a>
@@ -622,7 +619,9 @@ An object containing properties for compilation configuration.
 #### include
 Type: String or String[] with a globbing pattern.
 
-TODO
+    {
+        "include":["wwwroot", "Views"]
+    }
 
 <a name="embed-exclude"></a>
 #### exclude
@@ -641,25 +640,52 @@ For example:
 
 Type: String or String[] with a globbing pattern.
 
-TODO
+    {
+        "includeFiles":[],
+    }
+
 <a name="embed-exclude-files"></a>
 #### excludeFiles
 
 Type: String or String[] with a globbing pattern.
 
-TODO
+    {
+        "excludeFiles":[],
+    }
 
 <a name="embed-builtins"></a>
 #### builtIns
 Type: Object
 
-TODO
+    {
+        "builtIns":{}
+    }
 
 <a name="embed-mappings"></a>
 #### mappings
 Type: Object
 
-TODO
+Keys to the object represent destination paths in the output layout.
+
+Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sectins"dest/path": "source/path" or "dest/path": { "include": "./src/path" }
+
+String example:
+
+    {
+        "mappings": {
+            "dest/path": "./src/path"
+        }
+    }
+
+Object example:
+
+    {
+        "mappings": {
+            "dest/path":{
+                "include":"./src/path"
+            }
+        }
+    }
 
 ### copyToOutput
 Type: Object
@@ -670,7 +696,9 @@ An object containing properties for compilation configuration.
 #### include
 Type: String or String[] with a globbing pattern.
 
-TODO
+    {
+        "include":["wwwroot", "Views"]
+    }
 
 <a name="copytooutput-exclude"></a>
 #### exclude
@@ -689,26 +717,52 @@ For example:
 
 Type: String or String[] with a globbing pattern.
 
-TODO
+    {
+        "includeFiles":[],
+    }
 
 <a name="copytooutput-exclude-files"></a>
 #### excludeFiles
 
 Type: String or String[] with a globbing pattern.
 
-TODO
+    {
+        "excludeFiles":[],
+    }
 
 <a name="copytooutput-builtins"></a>
 #### builtIns
 Type: Object
 
-TODO
+    {
+        "builtIns":{}
+    }
 
 <a name="copytooutput-mappings"></a>
 #### mappings
 Type: Object
 
-TODO
+Keys to the object represent destination paths in the output layout.
+
+Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sectins"dest/path": "source/path" or "dest/path": { "include": "./src/path" }
+
+String example:
+
+    {
+        "mappings": {
+            "dest/path": "./src/path"
+        }
+    }
+
+Object example:
+
+    {
+        "mappings": {
+            "dest/path":{
+                "include":"./src/path"
+            }
+        }
+    }
 
 ## publishOptions
 Type: Object
@@ -719,7 +773,9 @@ An object containing properties for compilation configuration.
 ### include
 Type: String or String[] with a globbing pattern.
 
-TODO
+    {
+        "include":["wwwroot", "Views"]
+    }
 
 <a name="publish-exclude"></a>
 ### exclude
@@ -738,26 +794,52 @@ For example:
 
 Type: String or String[] with a globbing pattern.
 
-TODO
+    {
+        "includeFiles":[],
+    }
 
 <a name="publish-exclude-files"></a>
 ### excludeFiles
 
 Type: String or String[] with a globbing pattern.
 
-TODO
+    {
+        "excludeFiles":[],
+    }
 
 <a name="publish-builtins"></a>
 ### builtIns
 Type: Object
 
-TODO
+    {
+        "builtIns":{}
+    }
 
 <a name="publish-mappings"></a>
 ### mappings
 Type: Object
 
-TODO
+Keys to the object represent destination paths in the output layout.
+
+Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sectins"dest/path": "source/path" or "dest/path": { "include": "./src/path" }
+
+String example:
+
+    {
+        "mappings": {
+            "dest/path": "./src/path"
+        }
+    }
+
+Object example:
+
+    {
+        "mappings": {
+            "dest/path":{
+                "include":"./src/path"
+            }
+        }
+    }
 
 ## runtimeOptions
 Type: Object
@@ -995,7 +1077,9 @@ TODO
 #### include
 Type: String or String[] with a globbing pattern.
 
-TODO
+    {
+        "include":["wwwroot", "Views"]
+    }
 
 <a name="files-exclude"></a>
 #### exclude
@@ -1014,26 +1098,52 @@ For example:
 
 Type: String or String[] with a globbing pattern.
 
-TODO
+    {
+        "includeFiles":[]
+    }
 
 <a name="files-exclude-files"></a>
 #### excludeFiles
 
 Type: String or String[] with a globbing pattern.
 
-TODO
+    {
+        "excludeFiles":[]
+    }
 
 <a name="files-builtins"></a>
 #### builtIns
 Type: Object
 
-TODO
+    {
+        "builtIns":{}
+    }
 
 <a name="files-mappings"></a>
 #### mappings
 Type: Object
 
-TODO
+Keys to the object represent destination paths in the output layout.
+
+Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sectins"dest/path": "source/path" or "dest/path": { "include": "./src/path" }
+
+String example:
+
+    {
+        "mappings": {
+            "dest/path": "./src/path"
+        }
+    }
+
+Object example:
+
+    {
+        "mappings": {
+            "dest/path":{
+                "include":"./src/path"
+            }
+        }
+    }
 
 ## analyzerOptions
 Type: Object

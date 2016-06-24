@@ -78,10 +78,10 @@
 ### [Working with LINQ](tutorials/getting-started-with-csharp/working-with-linq.md)
 ### [Microservices hosted in Docker](tutorials/getting-started-with-csharp/microservices.md)
 
-## [🔧 Features at a glance](languages/csharp/features.md)
-<!-- Should I reverse these two topics? -->
+## [🔧 Tour of C#](languages/csharp/features.md)
 ### What's new in C# 6
-### What's Coming in C# 7
+<!-- This page, or its parent should point to the Roslyn repo for folks that want
+to know what's next -->
 ## C# Concepts
 ### [🔧 C# Type system](languages/csharp/type-system.md)
 ### [Properties](languages/csharp/properties.md)
@@ -101,14 +101,6 @@
 ### [🔧 Parallel programming](languages/csharp/parallel.md)
 ### [Asynchronous programming](languages/csharp/async.md)
 ### Errors and Exceptions
-
-<!-- Some of the content that already exists above may move down
-    to this section. The 'Concepts' section should be more conversational,
-    how to, focused. This section should be deeper and more precise. Not
-    quite spec language, but closer to the spec language than the
-    Concepts topics. -->
-
-## C# Reference
 ### [🔧 Syntax](languages/csharp/syntax.md)
 ### [🔧 Lambda Expressions](languages/csharp/lambda-expressions.md)
 <!-- This is a sidebar the delegates topics. I don't think it

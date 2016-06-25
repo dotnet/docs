@@ -1,7 +1,7 @@
 C# Microservices Sample
 ================
 
-This sample is created during the [Creating Microservices hosted in Docker](../microservices.md)
+This sample is created during the [Creating Microservices hosted in Docker](https://docs.microsoft.com/dotnet/tutorials/getting-started-with-csharp/microservices.html)
 tutorial. Please see that topic for detailed steps on the code
 for this sample.
 

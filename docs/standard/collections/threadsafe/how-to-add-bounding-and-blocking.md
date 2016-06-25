@@ -281,6 +281,6 @@ By default, the storage for a [BlockingCollection&lt;T&gt;](https://docs.microso
 
 [System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)
 
-[Thread-Safe Collections](../thread-safe-collections.md)
+[Thread-Safe Collections](index.md)
 
 [BlockingCollection Overview](blockingcollection-overview.md)

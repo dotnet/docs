@@ -1,15 +1,13 @@
 # [Welcome](welcome.md)
 # [About .NET](about/index.md)
 ## [.NET Products](about/products.md)
-# [Tutorials](tutorials/index.md)
-# [Learn C#](languages/csharp/index.md)
 
+# [Learn C#](languages/csharp/index.md)
 ## [Tutorials](tutorials/index.md)
 ### [Console Application](tutorials/getting-started-with-csharp/console-teleprompter.md)
 ### [REST client](tutorials/getting-started-with-csharp/console-webapiclient.md)
 ### [Working with LINQ](tutorials/getting-started-with-csharp/working-with-linq.md)
 ### [Microservices hosted in Docker](tutorials/getting-started-with-csharp/microservices.md)
-
 ## [🔧 Tour of C#](languages/csharp/features.md)
 ### What's new in C# 6
 <!-- This page, or its parent should point to the Roslyn repo for folks that want
@@ -49,8 +47,8 @@ to know what's next -->
 #### [Summary](languages/csharp/expression-trees-summary.md)
 ### [🔧 Native interoperability](languages/csharp/interop.md)
 ### [🔧 Reflection & code generation](languages/csharp/reflection.md)
-### [🔧 Documenting your code](languages/csharp/codedoc.md) <!-- A community member is working on this -->
-### [🔧 Syntax Reference](languages/csharp/syntax.md)
+### [🔧 Documenting your code](languages/csharp/codedoc.md) 
+## [🔧 Syntax Reference](languages/csharp/syntax.md)
 
 <!-- Note to self: update languages/csharp/index.md to match this file
     once this is approved.  -->
@@ -60,6 +58,7 @@ to know what's next -->
 ## [F# Learning Resources](http://fsharp.org/learn.html)
 ## [F# Language Reference](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/fsharp-language-reference)
 ## [Visual F# Development Portal](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/visual-fsharp-development-portal)
+## [Asynchronous programming](fsharp/async.md)
 # [.NET Standard](standard/index.md)
 ## [.NET Standard Library](standard/library.md)
 ## [Frameworks](standard/frameworks.md)
@@ -74,15 +73,17 @@ to know what's next -->
 ## [Delegates and lambdas](standard/delegates-lambdas.md)
 ## [LINQ](standard/using-linq.md)
 ## [Common Type System & Common Language Specification](standard/common-type-system.md)
+## [Asynchronous programming](standard/async.md)
+### [Asynchronous programming in depth](standard/async-in-depth.md)
 ## [Native interoperability](standard/native-interop.md)
-## [Collections and Data Structures](standard/collections/collections-and-data-structures.md)
+## [Collections and Data Structures](standard/collections/index.md)
 ### [Selecting a Collection Class](standard/collections/selecting-a-collection-class.md)
 ### [Commonly Used Collection Types](standard/collections/commonly-used-collection-types.md)
 ### [When to Use Generic Collections](standard/collections/when-to-use-generic-collections.md)
 ### [Comparisons and Sorts Within Collections](standard/collections/comparisons-and-sorts-within-collections.md)
 ### [Sorted Collection Types](standard/collections/sorted-collection-types.md)
 ### [Hashtable and Dictionary Collection Types](standard/collections/hashtable-and-dictionary-collection-types.md)
-### [Thread-Safe Collections](standard/collections/thread-safe-collections.md)
+### [Thread-Safe Collections](standard/collections/threadsafe/index.md)
 #### [BlockingCollection Overview](standard/collections/threadsafe/blockingcollection-overview.md)
 #### [When to Use a Thread-Safe Collection](standard/collections/threadsafe/when-to-use-a-thread-safe-collection.md)
 #### [How to: Add and Remove Items from a ConcurrentDictionary](standard/collections/threadsafe/how-to-add-and-remove-items.md)
@@ -95,9 +96,9 @@ to know what's next -->
 
 # [.NET Core Guide](core/index.md)
 ## [Tutorials](core/tutorials/index.md)
-### [Using .NET Core on Windows](core/tutorials/using-on-windows.md)
-### [Using .NET Core on macOS](core/tutorials/using-on-macos.md)
-### [Using .NET Core on Windows, Linux, or macOS using the CLI](core/tutorials/using-with-xplat-cli.md)
+### [Getting started with .NET Core on Windows](core/tutorials/using-on-windows.md)
+### [Getting started with .NET Core on macOS](core/tutorials/using-on-macos.md)
+### [Getting started with .NET Core on Windows/Linux/macOS using the command line](core/tutorials/using-with-xplat-cli.md)
 ## [Deploying](core/deploying/index.md)
 ### [🔧 Deploying Applications](core/deploying/applications.md)
 ### [Deploying Libraries](core/deploying/libraries.md)
@@ -123,3 +124,4 @@ to know what's next -->
 ### [project.json](core/tools/project-json.md)
 ### [global.json](core/tools/global-json.md)
 ## [Migrating from DNX](core/migrating-from-dnx.md)
+# [Samples and Tutorials](samples-and-tutorials/index.md)

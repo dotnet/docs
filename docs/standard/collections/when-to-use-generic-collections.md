@@ -56,6 +56,6 @@ The [List&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collection
 
 ## See Also
 
-[Collections and Data Structures](collections-and-data-structures.md) 
+[Collections and Data Structures](index.md) 
 
 [Commonly Used Collection Types](commonly-used-collection-types.md)

@@ -123,7 +123,7 @@ For scenarios in which a consumer needs to take items from multiple collections 
 
 [System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)
 
-[Collections and Data Structures](../collections-and-data-structures.md)
+[Collections and Data Structures](../index.md)
 
-[Thread-Safe Collections](../thread-safe-collections.md)
+[Thread-Safe Collections](index.md)
 

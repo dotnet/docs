@@ -31,7 +31,7 @@ ms.assetid:
         <h2 class="section-heading"><span class="icon icon-lightbulb-checked"></span> Featured Content</h2>
         <div class="features row">
             <ul class="column-half">
-                <li><a href="core/core/index">Get started with .NET Core</a></li>
+                <li><a href="docs/core/index.md">Get started with .NET Core</a></li>
             </ul>
             <ul class="column-half">
                 <li><a href="https://docs.asp.net">Get started with ASP.NET Core</a></li>
@@ -54,7 +54,7 @@ ms.assetid:
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="core/welcome">
+                                <a href="docs/welcome.md">
                                     <h3>.NET Documentation</h3>
                                     <p>Learn .NET concepts and language syntax.</p>
                                 </a>
@@ -66,7 +66,7 @@ ms.assetid:
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="core/core/index">
+                                <a href="docs/core/index.md">
                                     <h3>Getting Started with .NET Core</h3>
                                     <p>Learn how to build .NET Core console apps at the command-line or in Visual Studio.</p>
                                 </a>

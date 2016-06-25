@@ -1,6 +1,6 @@
 ---
-title: Writing .NET Core console apps using the CLI tools - A step-by-step guide
-description: Writing .NET Core console apps using the CLI tools - A step-by-step guide
+title: Getting started with .NET Core on Windows/Linux/macOS using the command line
+description: Getting started with .NET Core on Windows, Linux, or macOS using the .NET Core command line interface (CLI)
 keywords: .NET, .NET Core
 author: cartermp
 manager: wpickett
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: be988f09-7349-43b0-97fb-3a703d4587ce
 ---
 
-# Writing .NET Core console apps using the CLI tools: A step-by-step guide
+# Getting started with .NET Core on Windows/Linux/macOS using the command line
 
 This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.
 

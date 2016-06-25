@@ -1,6 +1,6 @@
 ---
-title: Developing ASP.NET Core 1.0 applications    
-description: Developing ASP.NET Core 1.0 applications    
+title: Developing ASP.NET Core applications    
+description: Developing ASP.NET Core applications    
 keywords: .NET, .NET Core
 author:  tdykstra
 manager: wpickett
@@ -12,6 +12,6 @@ ms.devlang: dotnet
 ms.assetid: 4172512e-b93d-4169-abdb-bd0b0b2d657e
 ---
 
-# Developing ASP.NET Core 1.0 applications    
+# Developing ASP.NET Core applications    
     
 For information about how to write ASP.NET Core 1.0 web applications, we suggest you head over to [ASP.NET Core documentation](https://docs.asp.net).

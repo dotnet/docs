@@ -1,6 +1,6 @@
 ---
-title: Development using Visual Studio 2015
-description: Development using Visual Studio 2015
+title: Getting started with .NET Core on Windows
+description: Getting started with .NET Core on Windows, using Visual Studio 2015
 keywords: .NET, .NET Core
 author: bleroy
 manager: wpickett
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: d743134a-08a3-4ff6-aab7-49f71f0568c3
 ---
 
-# Development using Visual Studio 2015
+# Getting started with .NET Core on Windows, using Visual Studio 2015
 
 by [Bertrand Le Roy](https://github.com/bleroy) and [Phillip Carter](https://github.com/cartermp)
 

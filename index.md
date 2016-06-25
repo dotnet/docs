@@ -149,7 +149,7 @@ ms.assetid:
                             <li class="column column-third">
                                 <a href="https://msdn.microsoft.com/library/54xbah2z.aspx">
                                     <h3>Windows Desktop</h3>
-                                    <p>Learn how to buil Windows desktop applications with Windows Forms of Windows Presentation Framework (WPF).</p>
+                                    <p>Learn how to build Windows desktop applications with Windows Forms of Windows Presentation Framework (WPF).</p>
                                 </a>
                             </li>
                             <li class="column column-third">

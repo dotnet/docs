@@ -17,6 +17,6 @@ ms.assetid: f6f654b1-1d2c-4105-8376-7c1959e23803
 
 The following tutorials are available for learning about .NET Core.
 
-- [Using .NET Core on Windows](using-on-macos.md)
-- [Using .NET Core on macOS](using-on-macos.md)
-- [Using .NET Core on the Command-Line](using-with-xplat-cli.md)
+- [Getting started with .NET Core on Windows](using-on-macos.md)
+- [Getting started with .NET Core on macOS](using-on-macos.md)
+- [Getting started with .NET Core on Windows/Linux/macOS using the command line](using-with-xplat-cli.md)

@@ -15,12 +15,14 @@ ms.assetid: f2b312cb-f80c-4b0d-9101-93908f06a6fa
 .NET Core
 =========
 
-.NET Core is a general purpose development platform maintained by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core). It is cross-platform, supporting Windows, macOS and Linux and can be used in device, cloud and embedded/IoT scenarios. The [supported Operating Systems (OS)](https://github.com/dotnet/core/blob/master/roadmap.md), CPUs and application scenarios will grow over time, provided by Microsoft, other companies and individuals.
+.NET Core is a general purpose development platform maintained by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core). It is cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios. 
+
+If you want to get started right away with a tutorial that shows how to create a simple application and run it in .NET Core, see our [getting-started tutorials](tutorials/index.md). Or continue to read here for an introduction to .NET Core concepts and features.
 
 The following characteristics best define .NET Core:
 
 - **Flexible deployment:** app-local or side-by-side user- or machine-wide installation.
-- **Cross-platform:** Runs on Windows, macOS and Linux; can be ported to other OSes.
+- **Cross-platform:** Runs on Windows, macOS and Linux; can be ported to other OSes. The [supported Operating Systems (OS)](https://github.com/dotnet/core/blob/master/roadmap.md), CPUs and application scenarios will grow over time, provided by Microsoft, other companies, and individuals.
 - **Compatibility:** .NET Core is compatible with .NET Framework and Xamarin platforms, via the [.NET Standard Library](../standard/library.md).
 - **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses. Documentation is licensed under [CC-BY](http://creativecommons.org/licenses/by/4.0/). .NET Core is a [.NET Foundation](http://www.dotnetfoundation.org/) project.
 

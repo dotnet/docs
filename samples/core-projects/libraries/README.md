@@ -2,7 +2,7 @@
 
 **Note:** This document is  compatible with tooling that is still in active development.  Details are subject to change over time.
 
-These samples are buildable projects whose source is used for code snippets in [the guide for writing cross-platform libraries](../../../docs/libraries/libraries-with-cli.md).  They can be built and run using the .NET Core RC1 toolchain, and are intended to simply demonstrate how to target and build NuGet packages for different targets.  They aren't examples of how you'd build a real, feature-complete library.
+These samples are buildable projects whose source is used for code snippets in [the guide for writing cross-platform libraries](../../../docs/core-concepts/libraries-with-cli.md).  They can be built and run using the .NET Core RC1 toolchain, and are intended to simply demonstrate how to target and build NuGet packages for different targets.  They aren't examples of how you'd build a real, feature-complete library.
 
 To build/use any of these (using `new-library` as an example):
 
@@ -14,19 +14,15 @@ To build/use any of these (using `new-library` as an example):
 
 3. Restore packages by typing the following:
 
-	`$ dnu restore -s "https://myget.org/F/xunit"`
-	
-	`$ dnu restore`
-	
-	Note: The first `dnu restore` is currently needed to allow for unit tests to run.  This will not be required in the future.
-
+	`$ dotnet restore`
+		
 4. To build and package the library as a NuGet package, type the following:
 
 	`$ cd src/Library`
 	
-	`$ dnu build`
+	`$ dotnet build`
 	
-	`$ dnu pack`
+	`$ dotnet pack`
 	
 	Check out the `/bin/Debug` directory to see the generated artifacts and `.nupkg`.
 
@@ -34,7 +30,7 @@ To build/use any of these (using `new-library` as an example):
 
 	`$ cd ../../test/LibraryTests`
 	
-	`$ dnx test`
+	`$ dotnet test`
 
 And that's it!
 

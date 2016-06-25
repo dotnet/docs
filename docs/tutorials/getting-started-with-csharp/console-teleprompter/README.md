@@ -1,7 +1,7 @@
 C# Console Application Sample
 ================
 
-This sample is created during the [Console Application Tutorial](../console-teleprompter.html)
+This sample is created during the [Console Application Tutorial](../console-teleprompter.md)
 for learning C# features. Please see that topic for detailed steps on the code
 for this sample.
 

@@ -37,7 +37,7 @@ Additionally, if you wish to support older targets, you will need to install tar
 
 ## How to target the .NET Standard
 
-If you're not quite familiar with the .NET Standard, please refer to [the .NET Standard Library](../../concepts/dotnet-standard-library.md) to learn more.
+If you're not quite familiar with the .NET Standard, please refer to [the .NET Standard Library](../../standard/library.md) to learn more.
 
 In that article, there is a table which maps .NET Standard versions to various implementations:
 

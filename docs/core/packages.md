@@ -148,11 +148,11 @@ The two primary package-based frameworks used with .NET Core are:
 .NET Standard
 -------------
 
-The .NET Standard (TFM: `netstandard`) framework represents the APIs defined by and built on top of the [.NET Standard Library](../concepts/dotnet-standard-library.md). Libraries that are intended to run on multiple runtimes should target this framework. They will be supported on any .NET Standard compliant runtime, such as .NET Core, .NET Framework and Mono/Xamarin. Each of these runtimes supports a set of .NET Standard versions, depending on which APIs they implement. 
+The .NET Standard (TFM: `netstandard`) framework represents the APIs defined by and built on top of the [.NET Standard Library](../standard/library.md). Libraries that are intended to run on multiple runtimes should target this framework. They will be supported on any .NET Standard compliant runtime, such as .NET Core, .NET Framework and Mono/Xamarin. Each of these runtimes supports a set of .NET Standard versions, depending on which APIs they implement. 
 
 The `NETStandard.Library` metapackage targets the `netstandard` framework. The most common way to target `netstandard` is by referencing this metapackage. It describes and provides access to the ~40 .NET  libraries and associated APIs that define the .NET Standard Library. You can reference additional packages that target `netstandard` to get access to additional APIs.
 
-A given [NETStandard.Library version](versioning.md) matches the highest `netstandard` version it exposed (via its closure). The framework reference in project.json is used to select the correct assets from the underlying packages. In this case, `netstandard1.5` assets are required, as opposed to `netstandard1.4` or `net46`, for example. 
+A given [NETStandard.Library version](versions/index.md) matches the highest `netstandard` version it exposed (via its closure). The framework reference in project.json is used to select the correct assets from the underlying packages. In this case, `netstandard1.5` assets are required, as opposed to `netstandard1.4` or `net46`, for example. 
 
 ```json
 {

@@ -1,6 +1,6 @@
 ---
-title: How to manage package dependency versions for .NET Core 1.0
-description: How to manage package dependency versions for .NET Core 1.0
+title: How to Manage Package Dependency Versions for .NET Core 1.0
+description: How to Manage Package Dependency Versions for .NET Core 1.0
 keywords: .NET, .NET Core
 author: cartermp
 manager: wpickett
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 4424a947-bdf9-4775-8d48-dc350a4e0aee
 ---
 
-# How to manage package dependency versions for .NET Core 1.0
+# How to Manage Package Dependency Versions for .NET Core 1.0
 
 This article covers what you need to know about package versions for authoring libraries for .NET Core.
 

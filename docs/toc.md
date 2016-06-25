@@ -1,5 +1,5 @@
 # [Welcome](welcome.md)
-# [About .NET](about/)
+# [About .NET](about/index.md)
 ## [.NET Products](about/products.md)
 # [Getting started](getting-started/index.md)
 ## [What is the .NET Core Platform?](getting-started/what-is-dotnet.md)

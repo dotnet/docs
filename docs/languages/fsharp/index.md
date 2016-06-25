@@ -17,3 +17,4 @@ ms.assetid: ea27fb37-dad1-4bd4-a3cc-4f5c70767ae9
 * [F# Learning Resources](http://fsharp.org/learn.html)
 * [F# Language Reference](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/fsharp-language-reference)
 * [Visual F# Development Portal](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/visual-fsharp-development-portal)
+* [Asynchronous programming](async.md)

@@ -660,4 +660,6 @@ SUMMARY: Total: 1 targets, Passed: 1, Failed: 0.
  
 Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.  The next step is to create awesome console apps of your own!
  
+If a more advanced example of a console app interests you, check out the next tutorial: [Using the CLI tools to write console apps: An advanced step-by-step guide](../console/cli-console-app-tutorial-advanced.md).
+ 
 	

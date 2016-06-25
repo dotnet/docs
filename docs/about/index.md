@@ -25,4 +25,5 @@ Multiple [.NET implementations and products](products.md) are available, based o
 
 - Learn about [.NET](../standard/)
 - Learn about [C#](../csharp/)
+- Learn about [F#](../fsharp/)
 - Browse the [.NET API Library](../api)

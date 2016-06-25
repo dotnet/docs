@@ -4,11 +4,11 @@
 # [Tutorials](tutorials/index.md)
 # [Learn C#](languages/csharp/index.md)
 
-# [Tutorials](tutorials/index.md)
-## [Console Application](tutorials/getting-started-with-csharp/console-teleprompter.md)
-## [REST client](tutorials/getting-started-with-csharp/console-webapiclient.md)
-## [Working with LINQ](tutorials/getting-started-with-csharp/working-with-linq.md)
-## [Microservices hosted in Docker](tutorials/getting-started-with-csharp/microservices.md)
+## [Tutorials](tutorials/index.md)
+### [Console Application](tutorials/getting-started-with-csharp/console-teleprompter.md)
+### [REST client](tutorials/getting-started-with-csharp/console-webapiclient.md)
+### [Working with LINQ](tutorials/getting-started-with-csharp/working-with-linq.md)
+### [Microservices hosted in Docker](tutorials/getting-started-with-csharp/microservices.md)
 
 ## [🔧 Tour of C#](languages/csharp/features.md)
 ### What's new in C# 6

@@ -26,4 +26,4 @@ Multiple [.NET implementations and products](products.md) are available, based o
 - Learn about [.NET](../standard/index.md)
 - Learn about [C#](../languages/csharp/index.md)
 - Learn about [F#](../languages/fsharp/index.md)
-- Browse the [.NET API Library](../../core/api)
+- Browse the [.NET API Library](../../core/api/index)

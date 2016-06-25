@@ -21,7 +21,7 @@ The following characteristics best define .NET Core:
 
 - **Flexible deployment:** app-local or side-by-side user- or machine-wide installation.
 - **Cross-platform:** Runs on Windows, macOS and Linux; can be ported to other OSes.
-- **Compatibility:** .NET Core is compatible with .NET Framework and Xamarin platforms, via the [.NET Standard Library](../concepts/dotnet-standard-library.md).
+- **Compatibility:** .NET Core is compatible with .NET Framework and Xamarin platforms, via the [.NET Standard Library](../standard/library.md).
 - **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses. Documentation is licensed under [CC-BY](http://creativecommons.org/licenses/by/4.0/). .NET Core is a [.NET Foundation](http://www.dotnetfoundation.org/) project.
 
 Composition
@@ -32,7 +32,7 @@ Composition
 - A [.NET runtime](https://github.com/dotnet/coreclr), which provides a type system, assembly loading, a garbage collector, native interop and other basic services. 
 - A set of [framework libraries](https://github.com/dotnet/corefx), which provide primitive data types, app composition types and fundamental utilities. 
 - The 'dotnet' app host, which is used to launch .NET Core apps. It selects the runtime and hosts the runtime, provides an assembly loading policy and launches the app. The same host is also used to launch SDK tools in much the same way.
-- A [set of SDK tools](https://github.com/dotnet/cli) and language compilers that enable the base developer experience, available in the [.NET Core SDK](core-sdk/index.md).
+- A [set of SDK tools](https://github.com/dotnet/cli) and language compilers that enable the base developer experience, available in the [.NET Core SDK](sdk.md).
 
 Languages
 ---------
@@ -44,14 +44,14 @@ The C# Roslyn compiler and the .NET Core tools are or can be integrated into sev
 .NET APIs and Compatibility
 ---------------------------
 
-.NET Core can be thought of as a cross-platform version of the .NET Framework, at the layer of the .NET Framework Base Class Libraries (BCL). It implements the [.NET Standard Library](../concepts/dotnet-standard-library.md) specification. .NET Core provides a subset of the APIs that are available in the .NET Framework or Mono/Xamarin. In some cases, types are not fully implemented (some members are not available or have been moved).
+.NET Core can be thought of as a cross-platform version of the .NET Framework, at the layer of the .NET Framework Base Class Libraries (BCL). It implements the [.NET Standard Library](../standard/library.md) specification. .NET Core provides a subset of the APIs that are available in the .NET Framework or Mono/Xamarin. In some cases, types are not fully implemented (some members are not available or have been moved).
 
 Look at the [.NET Core roadmap](https://github.com/dotnet/core/blob/master/roadmap.md) to learn more about the .NET Core API roadmap.
 
 Relationship to the .NET Standard Library
 -----------------------------------------
 
-The [.NET Standard Library](../concepts/dotnet-standard-library.md) is an API spec that describes the consistent set of .NET APIs that developers can expect in each .NET implementation. .NET implementations need to implement this spec in order to be considered .NET Standard Library compliant and to support libraries that target the .NET Standard Library. 
+The [.NET Standard Library](../standard/library.md) is an API spec that describes the consistent set of .NET APIs that developers can expect in each .NET implementation. .NET implementations need to implement this spec in order to be considered .NET Standard Library compliant and to support libraries that target the .NET Standard Library. 
 
 .NET Core implements the .NET Standard Library, and therefore supports .NET Standard Libraries.
 
@@ -141,7 +141,7 @@ The .NET platform was first announced by Microsoft in 2000 and then evolved from
 The major differences between .NET Core and the .NET Framework: 
 
 - **App-models** -- .NET Core does not support all the .NET Framework app-models, in part because many of them are built on Windows technologies, such as WPF (built on top of DirectX). The console and ASP.NET Core app-models are supported by both .NET Core and .NET Framework. 
-- **APIs** -- .NET Core contains many of the same, but fewer, APIs as the .NET Framework, and with a different factoring (assembly names are different; type shape differs in key cases). These differences currently typically require changes to port source to .NET Core. .NET Core implements the [.NET Standard Library](../concepts/dotnet-standard-library.md) API, which will grow to include more of the .NET Framework BCL API over time.
+- **APIs** -- .NET Core contains many of the same, but fewer, APIs as the .NET Framework, and with a different factoring (assembly names are different; type shape differs in key cases). These differences currently typically require changes to port source to .NET Core. .NET Core implements the [.NET Standard Library](../standard/library.md) API, which will grow to include more of the .NET Framework BCL API over time.
 - **Subsystems** -- .NET Core implements a subset of the subsystems in the .NET Framework, with the goal of a simpler implementation and programming model. For example, Code Access Security (CAS) is not supported, while reflection is supported.
 - **Platforms** -- The .NET Framework supports Windows and Windows Server while .NET Core also supports macOS and Linux.
 - **Open Source** -- .NET Core is open source, while a [read-only subset of the .NET Framework](https://github.com/microsoft/referencesource) is open source.

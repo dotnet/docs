@@ -43,7 +43,7 @@ The `dotnet run` command must be used in the context of projects, not built asse
  
 `dotnet myapp.dll`
 
-For more information about the `dotnet` driver, see the [.NET Core Command Line Tools (CLI)](overview.md) topic.
+For more information about the `dotnet` driver, see the [.NET Core Command Line Tools (CLI)](index.md) topic.
 
 
 ## OPTIONS

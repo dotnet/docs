@@ -70,7 +70,7 @@ The following sample project.json shows the properties needed:
 `dotnet test` supports two running modes:
 
 1. Console: In console mode, `dotnet test` simply executes fully any command gets passed to it and outputs the results. Anytime you invoke `dotnet test` without passing --port, it runs in console mode, which in turn will cause the runner to run in console mode.
-2. Design time: used in the context of other tools, such as editors or Integrated Development Environments (IDEs). You can find out more about this mode in the [dotnet-test protocol](dotnet-test-protocol.md) document. 
+2. Design time: used in the context of other tools, such as editors or Integrated Development Environments (IDEs). You can find out more about this mode in the [dotnet-test protocol](test-protocol.md) document. 
 
 ## OPTIONS
 
@@ -122,4 +122,4 @@ Runs the tests in the test1 project.
 
 ## SEE ALSO
 
-* [dotnet-test communication protocol](dotnet-test-protocol.md)
+* [dotnet-test communication protocol](test-protocol.md)

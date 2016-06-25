@@ -113,13 +113,13 @@ CLI enables applications to be portable in two main ways:
 1. Completely portable application that can run anywhere .NET Core is installed
 2. Self-contained applications
 
-You can learn more about both of these in the [application types overview](../../app-types.md) topic. 
+You can learn more about both of these in the [application types overview](../app-types.md) topic. 
 
 ## Migration from DNX
 If you used DNX in RC1 of .NET Core, you may be wondering what happened to it and how do these new tools
 relate to the DNX tools. In short, the DNX tools have been replaced with the .NET Core CLI tools. 
 If you have existing projects or are just wondering how the commands map, you
-can use the [DNX to CLI migration document](../../dnx-migration.md) to get all of the details. 
+can use the [DNX to CLI migration document](../migrating-from-dnx.md) to get all of the details. 
 
 ## Extensibility
 Of course, not every tool that you could use in your workflow will be a part of the core CLI tools. However, .NET Core 

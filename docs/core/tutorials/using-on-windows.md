@@ -26,7 +26,7 @@ Visual Studio 2015 provides a full-featured development environment for developi
 
 * .NET Core Tooling Preview 1 for Visual Studio 2015. This installs templates and other tools as well as .NET Core itself.
 
-* A supported version of the Windows client or server operating system. For a list of supported versions, see [.NET Core System Requirements](../system-reqs.md). 
+* A supported version of the Windows client or server operating system. For a list of supported versions, see [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.0/Release-Notes-1.0.0.md).
 
 ## Getting Started
 

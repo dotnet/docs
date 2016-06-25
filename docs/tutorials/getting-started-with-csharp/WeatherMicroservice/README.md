@@ -1,7 +1,7 @@
 C# Microservices Sample
 ================
 
-This sample is created during the [Creating Microservices hosted in Docker](../microservices.html)
+This sample is created during the [Creating Microservices hosted in Docker](../microservices.md)
 tutorial. Please see that topic for detailed steps on the code
 for this sample.
 
@@ -24,4 +24,4 @@ To build and run the sample locally, type the following three commands:
 `dotnet build` creates the output assembly (or assemblies).
 `dotnet run` runs the output assembly.
 
-To install and run the sample in Docker, consult the [full tutorial](../microservices.html).
+To install and run the sample in Docker, consult the [full tutorial](../microservices.md).

@@ -62,11 +62,9 @@ Most of the classes that inherit from **Exception** do not implement additional 
 
 It is recommended to throw and catch only objects that derive from **Exception**, but you can throw any object that derives from the [Object](https://docs.microsoft.com/dotnet/core/api/System.Object) class as an exception. Note that not all languages support throwing and catching objects that do not derive from **Exception**.
 
-## Runtime Exceptions
+## Common Exceptions
 
-Critical exceptions, such as [OutOfMemoryException](https://docs.microsoft.com/dotnet/core/api/System.OutOfMemoryException), are thrown by the runtime.
-
-The following table lists the standard exceptions that the runtime throws.
+The following table lists some common exceptions with examples of what can cause them.
 
 | Exception type | Base type | Description | Example |
 | -------------- | --------- | ----------- | ------- |

@@ -51,6 +51,10 @@ This guide will show you how to use the .NET Core CLI tooling to build cross-pla
 
 ### Samples
 
+**[Iterators](../languages/csharp/iterators.md)**
+
+This sample demonstrates the syntax and features for creating and consuming C# iterators. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/iterators)
+
 **[Indexers](../languages/csharp/indexers.md)**
 
 This sample demonstrates the syntax and features for C# indexers. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/indexers)

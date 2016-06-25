@@ -4,15 +4,15 @@ The first step in the porting process is to understand your third party dependen
 
 ## Prerequisites
 
-This article will assume you are using Windows and Visual Studio.  For your NuGet package dependencies, you may also wish to download the [Nuget Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer).
+This article will assume you are using Windows and Visual Studio, and that you have code which runs on the .NET Framework today.
 
 ## Analyzing NuGet Packages
 
 Analyzing NuGet packages for portability is very easy.  Because a NuGet package is itself a set of folders which contain platform-specific assemblies, all you have to do is check to see if there is a folder which contains a .NET Core assembly.
 
-Inspecting NuGet Package folders is easiest with the [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer).  Here's how to do it.
+Inspecting NuGet Package folders is easiest with the [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) tool.  Here's how to do it.
 
-1. Open the NuGet Package Explorer.
+1. Download and open the NuGet Package Explorer.
 2. Click "Open package from online feed".
 3. Search for the name of the package.
 4. Expand the "lib" folder on the right-hand side and look at folder names.
@@ -30,6 +30,7 @@ netstandard1.4
 netstandard1.5
 netstandard1.6
 netcoreapp1.0
+portable-<tfm_list>-whatever
 ```
 
 These are the Target Framework Monikers (TFM for short) which map to versions of [The .NET Standard Library](../standard/library.md).  Note that `netcoreapp1.0`, while compatible, is for applications and not libraries.  Although there's nothing wrong with using a library which is `netcoreapp1.0`-based, that library may not be intended for anything *other* than consumption by other `netcoreapp1.0` applications.

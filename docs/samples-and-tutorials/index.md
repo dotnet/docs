@@ -29,7 +29,9 @@ online playground, try these [interactive tutorials](http://go.microsoft.com/fwl
 
 ## General
 
+**[Unit Testing in .NET Core using dotnet test](../core/testing/unit-testing-with-dotnet-test.md)**
 
+This guide shows how to create an ASP.NET Core web application and the associated unit tests. It will start by creating a simple web service application and then add tests, and continue by creating more tests to guide implementing new features.
 
 ### Samples
 

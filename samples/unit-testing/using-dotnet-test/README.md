@@ -1,7 +1,7 @@
 Unit Testing using dotnet test Sample
 ================
 
-This sample is part of the [unit testing tutorial](../../../docs/core-concepts/testing/unit-testing-with-dotnet-test.html)
+This sample is part of the [unit testing tutorial](https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test.html)
 for creating applications with unit tests included. Please see that topic for detailed steps on the code
 for this sample.
 

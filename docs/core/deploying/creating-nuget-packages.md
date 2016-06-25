@@ -50,6 +50,6 @@ And now you'll have a new `release` folder in `/bin` containing your NuGet packa
 $ ls bin/release
 
 netstandard1.0/
-Lib.1.0.0.nupkg
-Lib.1.0.0.symbols.nupkg
+SuperAwesomeLibrary.1.0.0.nupkg
+SuperAwesomeLibrary.1.0.0.symbols.nupkg
 ```

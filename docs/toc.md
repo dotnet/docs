@@ -98,9 +98,9 @@ to know what's next -->
 
 # [.NET Core Guide](core/index.md)
 ## [Tutorials](core/tutorials/index.md)
-### [Using .NET Core on Windows](core/tutorials/using-on-windows.md)
-### [Using .NET Core on macOS](core/tutorials/using-on-macos.md)
-### [Using .NET Core on Windows, Linux, or macOS using the CLI](core/tutorials/using-with-xplat-cli.md)
+### [Getting started with .NET Core on Windows](core/tutorials/using-on-windows.md)
+### [Getting started with .NET Core on macOS](core/tutorials/using-on-macos.md)
+### [Getting started with .NET Core on Windows/Linux/macOS using the command line](core/tutorials/using-with-xplat-cli.md)
 ## [Deploying](core/deploying/index.md)
 ### [🔧 Deploying Applications](core/deploying/applications.md)
 ### [Deploying Libraries](core/deploying/libraries.md)

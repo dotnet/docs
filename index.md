@@ -55,14 +55,20 @@ ms.assetid:
                         <ul class="row">
                             <li class="column column-third">
                                 <a href="core/index">
-                                    <h3>Getting Started with .NET Core</h3>
-                                    <p>Learn how to build .NET Core console apps at the command-line or in Visual Studio.</p>
+                                    <h3>.NET Documentation</h3>
+                                    <p>Learn .NET concepts and language syntax.</p>
                                 </a>
                             </li>
                             <li class="column column-third">
                                 <a href="core/api/index">
                                     <h3>API Reference</h3>
                                     <p>Browse the .NET API, organized by namespace.</p>
+                                </a>
+                            </li>
+                            <li class="column column-third">
+                                <a href="core/core/index">
+                                    <h3>Getting Started with .NET Core</h3>
+                                    <p>Learn how to build .NET Core console apps at the command-line or in Visual Studio.</p>
                                 </a>
                             </li>
                         </ul>

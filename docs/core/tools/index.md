@@ -14,7 +14,7 @@ ms.assetid: b70e9ac0-c8be-49f7-9332-95ab93e0e7bc
 
 # .NET Core Command Line Tools
 
-## What is the .NET Command Line Interface (CLI)?
+## What is the .NET Core Command Line Interface (CLI)?
 The .NET Core CLI is a new foundational cross-platform toolchain for developing 
 .NET Core applications. It is "foundational" because it is the primary layer on which other, 
 higher-level tools, such as Integrated Development Environments (IDEs), editors and 

@@ -88,8 +88,7 @@ The following are the main characteristics of .NET Core:
 
 **Modular platform** - .NET Core is built with a modular design, enabling applications to include only the .NET Core libraries and dependencies that are needed. Each application makes its own .NET Core versioning choices, avoiding conflicts with shared components. This approach aligns with the trend of developing software using container technologies like Docker.
 
-.NET Framework
---------------
+### .NET Framework
 
 The .NET Framework is used to build apps for Windows and Windows Server. You can use it to build rich user interfaces with Windows Presentation Framework (WPF) and Windows Forms. It also supports building server apps with ASP.NET Web Forms, ASP.NET MVC and Windows Communication Framework (WCF). Visual Studio provides rich designer experiences for the .NET Framework, making it easy to build both client and server apps. It is the best choice for writing apps for Windows.
 
@@ -109,15 +108,13 @@ The .NET Framework is used to build apps for Windows and Windows Server. You can
 - [ASP.NET WebAPI](http://www.asp.net/web-api) is a convention-based framework for creating REST services. 
 - [SignalR](http://www.asp.net/signalr) allows you to provide push-based communication to your web applications using the [WebSocket](https://en.wikipedia.org/wiki/WebSocket) protocol.
 
-.NET Native
------------
+### .NET Native
 
 .NET Native is a set of native build tools for .NET Core. .NET Native is an Ahead-of-Time (AOT) toolchain that produces native applications by compiling IL byte code to native machine code. This means that the resulting binary is what the OS executes; there is no JIT-ing, no runtime compilation. This leads to better startup performance, as well as some security benefits.
 
 .NET Native is primarily used by .NET [Universal Windows Platform (UWP)](https://msdn.microsoft.com/library/windows/apps/dn726767.aspx) applications.
 
-Mono
-----
+### Mono
 
 [Mono](http://www.mono-project.com/docs/about-mono/) is the original open source and cross-platform implementation of .NET, from the community [Mono Project](http://mono-project.com). It is now sponsored by Microsoft. It can be thought of as an open and cross-platform version of the .NET Framework. Its APIs follow the progress of the .NET Framework, not .NET Core.
 
@@ -131,8 +128,7 @@ There are several components that make up Mono:
 
 **Mono Class Library** - Mono also provides many classes that go above and beyond the Base Class Library provided by the .NET Framework. These provide additional functionality that are useful, especially in building Linux applications. Some examples are classes for Gtk+, Zip files, LDAP, OpenGL, Cairo, POSIX, etc.
 
-Xamarin SDK
------------
+### Xamarin SDK
 
 The [Xamarin SDK](https://open.xamarin.com) is used to build native mobile and device apps, primarily for Apple and Google ecosystems. It is based on Mono and is open source using the MIT license. You can use it to build iOS and Android apps for phones, tablets and watches. [Xamarin.Forms](https://www.xamarin.com/forms) is a popular way to write reusable UIs across Apple, Google and Windows apps.
 

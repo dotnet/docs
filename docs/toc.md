@@ -3,6 +3,11 @@
 ## [.NET Products](about/products.md)
 
 # [Learn C#](languages/csharp/index.md)
+## [Tutorials](tutorials/index.md)
+### [Console Application](tutorials/getting-started-with-csharp/console-teleprompter.md)
+### [REST client](tutorials/getting-started-with-csharp/console-webapiclient.md)
+### [Working with LINQ](tutorials/getting-started-with-csharp/working-with-linq.md)
+### [Microservices hosted in Docker](tutorials/getting-started-with-csharp/microservices.md)
 ## [🔧 Tour of C#](languages/csharp/features.md)
 ### What's new in C# 6
 <!-- This page, or its parent should point to the Roslyn repo for folks that want
@@ -43,7 +48,7 @@ to know what's next -->
 ### [🔧 Native interoperability](languages/csharp/interop.md)
 ### [🔧 Reflection & code generation](languages/csharp/reflection.md)
 ### [🔧 Documenting your code](languages/csharp/codedoc.md) 
-### [🔧 Syntax Reference](languages/csharp/syntax.md)
+## [🔧 Syntax Reference](languages/csharp/syntax.md)
 
 <!-- Note to self: update languages/csharp/index.md to match this file
     once this is approved.  -->

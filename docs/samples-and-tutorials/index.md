@@ -69,7 +69,7 @@ features in the C# language. A finished version of the code you'll build is loca
 
 This tutorial demonstrates many of the features of LINQ and the language elements that support it. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/charp-language/console-linq).
 
-** [Microservices hosted in Docker](getting-started-with-csharp/microservices.md)**
+** [Microservices hosted in Docker](../tutorials/getting-started-with-csharp/microservices.md)**
 
 This tutorial demonstrates building an asp.net core microservice and hosting it it Docker. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/charp-language/WeatherMicroservice).
 

@@ -34,7 +34,7 @@ Documentation
 This documentation will show you how to build an app from scratch or finish one that you are already working on. Key sections you should check out:
 
 - [C# Guide](languages/csharp/index.md)
-- [.NET Core API](core/api)
+- [.NET Core API](../core/api)
 - [.NET Core Guide](core/index.md)
 - [.NET Standard Guide](standard/index.md)
 

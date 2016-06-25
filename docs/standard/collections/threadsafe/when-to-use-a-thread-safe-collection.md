@@ -66,4 +66,4 @@ When bounding and blocking semantics are required, [System.Collections.Concurren
 
 [System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)
 
-[Thread-Safe Collections](../thread-safe-collections.md)
+[Thread-Safe Collections](index.md)

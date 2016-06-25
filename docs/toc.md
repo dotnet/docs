@@ -101,7 +101,7 @@ to know what's next -->
 ### [Getting started with .NET Core on macOS](core/tutorials/using-on-macos.md)
 ### [Getting started with .NET Core on Windows/Linux/macOS using the command line](core/tutorials/using-with-xplat-cli.md)
 ### [Writing Libraries with Cross Platform Tools](core/tutorials/libraries.md)
-### [Getting started with ASP.NET Core](core/tutorials/aspnet-core.md)
+### [Developing ASP.NET Core applications](core/tutorials/aspnet-core.md)
 ## [Deploying](core/deploying/index.md)
 ### [🔧 Deploying Applications](core/deploying/applications.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)

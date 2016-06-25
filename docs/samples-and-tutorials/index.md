@@ -31,10 +31,14 @@ online playground, try these [interactive tutorials](http://go.microsoft.com/fwl
 
 **[Unit Testing in .NET Core using dotnet test](../core/testing/unit-testing-with-dotnet-test.md)**
 
-This guide shows how to create an ASP.NET Core web application and the associated unit tests. It will start by creating a simple web service application and then add tests, and continue by creating more tests to guide implementing new features.
+This guide shows how to create an ASP.NET Core web application and the associated unit tests. It will start by creating a simple web service application and then add tests, and continue by creating more tests to guide implementing new features. The completed code is available [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/unit-testing/using-dotnet-test).
 
 ### Samples
 
+**[Writing Libraries with Cross Platform Tools](../core/deploying/libraries.md)**
+
+This sample covers how you can write libraries for .NET using cross-platform CLI tools.  They provide an efficient and low-level experience that works across any supported OS.
+The completed code is available [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/libraries-frameworks-library).
 
 ### Tutorials
 

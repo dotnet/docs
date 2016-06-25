@@ -123,5 +123,8 @@ to know what's next -->
 ### [dotnet-install-script](core/tools/dotnet-install-script.md)
 ### [project.json](core/tools/project-json.md)
 ### [global.json](core/tools/global-json.md)
+## [Porting from .NET Framework](core/porting/index.md)
+### [🔧 Analyzing third-party dependencies](core/porting/third-party-deps.md)
+### [🔧 NuGet packages](core/porting/nuget-packages.md)
 ## [Migrating from DNX](core/migrating-from-dnx.md)
 # [Samples and Tutorials](samples-and-tutorials/index.md)

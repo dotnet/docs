@@ -49,10 +49,13 @@ This guide will show you how to use the .NET Core CLI tooling to build cross-pla
 
 ## C# Language
 
+### Samples
 
-## Samples
+**[Delegates](../languages/csharp/delegates-events.md)**
 
-### Tutorials]
+This sample demonstrates the syntax and features for C# delegate. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/delegates-and-events).
+
+### Tutorials
 
 ** [Console Application](../tutorials/getting-started-with-csharp/console-teleprompter.md)**
 

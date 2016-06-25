@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 2f0415c1-110b-433d-87c1-ae3d543a8844
 ---
 
-## How to Create a NuGet Package with Cross Platform Tooling
+## How to Create a NuGet Package with Cross Platform Tools
 
 Imagine that you just wrote an awesome new library that you would like to distribute over NuGet.  You can create a NuGet package with cross platform tools to do exactly that!  The following example assumes a library called **SuperAwesomeLibrary** which targets `netstandard1.0`.
 

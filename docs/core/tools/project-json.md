@@ -854,9 +854,9 @@ A short description of the project.
 For example:
 
     {
-		"packOptions": {
-			"summary": "This is my library."
-		}
+        "packOptions": {
+            "summary": "This is my library."
+        }
     }
 
 ### tags
@@ -867,9 +867,9 @@ An array of strings with tags for the project, used for searching in NuGet.
 For example:
 
     {
-		"packOptions": {
-			"tags": ["hyperscale", "cats"]
-		}
+        "packOptions": {
+            "tags": ["hyperscale", "cats"]
+        }
     }
 
 ### owners
@@ -880,9 +880,9 @@ An array of strings with the names of the owners of the project.
 For example:
 
     {
-		"packOptions": {
-			"owners": ["Fabrikam", "Microsoft"]
-		}
+        "packOptions": {
+            "owners": ["Fabrikam", "Microsoft"]
+        }
     }
 
 ### releaseNotes
@@ -893,9 +893,9 @@ Release notes for the project.
 For example:
 
     {
-		"packOptions": {
-			"releaseNotes": "Initial version, implemented flimflams."
-		}
+        "packOptions": {
+            "releaseNotes": "Initial version, implemented flimflams."
+        }
     }
 
 ### iconUrl
@@ -906,9 +906,9 @@ The URL for an icon that will be used in various places such as the package expl
 For example:
 
     {
-		"packOptions": {
-			"iconUrl": "http://www.mylibrary.gov/favicon.ico"
-		}
+        "packOptions": {
+            "iconUrl": "http://www.mylibrary.gov/favicon.ico"
+        }
     }
 
 ### projectUrl
@@ -919,9 +919,9 @@ The URL for the homepage of the project.
 For example:
 
     {
-		"packOptions": {
-			"projectUrl": "http://www.mylibrary.gov"
-		}
+        "packOptions": {
+            "projectUrl": "http://www.mylibrary.gov"
+        }
     }
 
 ### licenseUrl
@@ -932,9 +932,9 @@ The URL for the license the project uses.
 For example:
 
     {
-		"packOptions": {
-			"licenseUrl": "http://www.mylibrary.gov/licence"
-		}
+        "packOptions": {
+            "licenseUrl": "http://www.mylibrary.gov/licence"
+        }
     }
 
 ### requireLicenseAcceptance
@@ -945,9 +945,9 @@ Type: Boolean
 For example:
 
     {
-		"packOptions": {
-			"requireLicenseAcceptance": true
-		}
+        "packOptions": {
+            "requireLicenseAcceptance": true
+        }
     }
    
 ### repository
@@ -963,10 +963,10 @@ Type of the repository. The default value is "git".
 For example:
 
     {
-		"packOptions": {
-        	"repository": {
-            	"type": "git"
-			}
+        "packOptions": {
+            "repository": {
+                "type": "git"
+            }
         }
     }
 
@@ -978,10 +978,10 @@ URL of the repository where the project is stored.
 For example:
 
     {
-		"packOptions": {
-        	"repository": {
-            	"url": "http://github.com/dotnet/corefx"
-			}
+        "packOptions": {
+            "repository": {
+                "url": "http://github.com/dotnet/corefx"
+            }
         }
     }
 

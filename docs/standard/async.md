@@ -34,7 +34,5 @@ Async code has the following characteritics:
 
 ## What’s next?
 
-Learn about async based on language experience:
+For a deep dive into async concepts and programming, see [Async in depth](async-in-depth.md).
 
-* [Async Programming in C#/VB](async-csharp-vb.md)
-* [Async Programming in F#](async-fsharp.md)

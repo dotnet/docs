@@ -1,7 +1,7 @@
 Hello Native Sample
 ================
 
-This sample is part of the [step-by-step tutorial](../../../docs/getting-started/cli-console-app-tutorial.html)
+This sample is part of the [step-by-step tutorial](https://docs.microsoft.com/dotnet/core/tutorials/using-with-xplat-cli.html)
 for creating .NET Core Console Applications. Please see that topic for detailed steps on the code
 for this sample.
 

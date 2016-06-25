@@ -16,7 +16,7 @@ ms.assetid: be988f09-7349-43b0-97fb-3a703d4587ce
 
 This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.
 
-If you're unfamiliar with the .NET Core CLI toolset, read [the .NET Core SDK overview](../sdk.md).  It's also helpful to have an understanding of the [console app paradigm](../console/overview.md).
+If you're unfamiliar with the .NET Core CLI toolset, read [the .NET Core SDK overview](../sdk.md).
 
 ## Prerequisites
 
@@ -660,6 +660,6 @@ SUMMARY: Total: 1 targets, Passed: 1, Failed: 0.
  
 Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.  The next step is to create awesome console apps of your own!
  
-If a more advanced example of a console app interests you, check out the next tutorial: [Using the CLI tools to write console apps: An advanced step-by-step guide](../console/cli-console-app-tutorial-advanced.md).
+If a more advanced example of a console app interests you, check out the next tutorial: [Using the CLI tools to write console apps: An advanced step-by-step guide](cli-console-app-tutorial-advanced.md).
  
 	

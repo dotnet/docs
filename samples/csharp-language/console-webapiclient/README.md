@@ -1,15 +1,15 @@
-C# LINQ Sample
+C# REST Client Sample
 ================
 
-This sample is created during the [Working with LINQ tutorial](../working-with-linq.md)
+This sample is created during the [REST client tutorial](https://docs.microsoft.com/dotnet/tutorials/getting-started-with-csharp/console-webapiclient.html)
 for learning C# features. Please see that topic for detailed steps on the code
 for this sample.
 
 Key Features
 ------------
 
-This sample demonstrates querying data sources and processing them using
-Language Integrated Query (LINQ) in C#.
+This sample demonstrates making HTTP requests to a web server, using `async`
+and `await`, converting JSON objects into C# objects, and terminal output.
 
 Build and Run
 -------------

@@ -26,7 +26,7 @@ For I/O-bound code, you `await` an operation which returns a `Task` or `Task<T>`
 
 For CPU-bound code, you `await` an operation which is started on a background thread with the `Task.Run` method.
 
-The `await` keyword is where the magic happens, because it yields control to the caller of the method which perform the `await`.  It is what ultimately allows a UI to be responsive, or a service to be elastic.
+The `await` keyword is where the magic happens, because it yields control to the caller of the method which performed the `await`.  It is what ultimately allows a UI to be responsive, or a service to be elastic.
 
 There are other ways to approach async code than `async` and `await` outlined in the TAP article linked above, but this document will focus on the language-level constructs from this point forward.
 
@@ -79,9 +79,9 @@ And that's it!  This code cleanly expresses the intent of the button's click eve
 
 ### What happens under the covers
 
-There's a lot of moving pieces where asynchronous operations are concerned.  If you're curious about what's happening underneath the covers of `Task` and `Task<T>`, checkout the [Async in-depth](async-in-depth.md) article for more information.
+There's a lot of moving pieces where asynchronous operations are concerned.  If you're curious about what's happening underneath the covers of `Task` and `Task<T>`, checkout the [Async in-depth](../../async/async-in-depth.md) article for more information.
 
-On the C# side of things, the compiler transforms your code into a state machine which keeps track of things like yielding execution when an `await` is reached, resuming execution when a background job has finished, and so on.
+On the C# side of things, the compiler transforms your code into a state machine which keeps track of things like yielding execution when an `await` is reached and resuming execution when a background job has finished.
 
 For the theoretically-inclined, this is an implementation of the [Promise Model of asynchrony](https://en.wikipedia.org/wiki/Futures_and_promises).
 
@@ -89,6 +89,7 @@ For the theoretically-inclined, this is an implementation of the [Promise Model 
 
 *   Async code can be used for both I/O-bound and CPU-bound code, but differently for each scenario.
 *   Async code uses `Task<T>` and `Task`, which are constructs used to model work being done in the background.
+* The `async` keyword turns a method into an async method, which allows you to use the `await` keyword in its body.
 *   When the `await` keyword is applied, it suspends the calling method and yields control back to its caller until the awaited task is complete.
 *   `await` can only be used inside an async method.
 
@@ -98,17 +99,19 @@ The first two examples of this guide showed how you can use `async` and `await` 
 
 Here are two questions you should ask before you write any code:
 
-1. Will my code be "waiting" for something, such as data from a database?
+1. Will you code be "waiting" for something, such as data from a database?
 
     If your answer is "yes", then your work is **I/O-bound**.
 
-2. Will my code be performing an expensive computation?
+2. Will your code be performing a very expensive computation?
 
     If you answered "yes", then your work is **CPU-bound**.
     
 If the work you have is **I/O-bound**, use `async` and `await` *without* `Task.Run`.  You *should not* use the Task Parallel Library.  The reason for this is outlined in the [Async in Depth article](../../async/async-in-depth.md).
 
-If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await` but spawn the work off on another thread *with* `Task.Run`.  If the work can be parallelized, you should also consider using the Task Parallel Library.
+If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await` but spawn the work off on another thread *with* `Task.Run`.  If the work is appropriate for concurrency and parallelism, you should also consider using the Task Parallel Library.
+
+Additionally, you should always measure the execution of your code.  For example, you may find yourself in a situation where your CPU-bound work is not costly enough compared with the overhead of context switches when multithreading.  Every choice has its tradeoff, and you should pick the correct tradeoff for your situation.
 
 ## More Examples
 
@@ -218,7 +221,7 @@ Although async programming is relatively straightforward, there are some details
 
 *  `async` **methods need to have an** `await` **keyword in their body or they will never yield!**
 
-This is important to keep in mind.  If `await` is not used in the body of an `async` method, the C# compiler will generate a warning, but the code will compile and run as if it were a normal method.
+This is important to keep in mind.  If `await` is not used in the body of an `async` method, the C# compiler will generate a warning, but the code will compile and run as if it were a normal method.  Note that this would also be incredibly inefficient, as the state machine generated by the C# compiler for the async method would not be accomplishing anything.
 
 *   **You should add “Async” as the suffix of every async method name you write.**
 

@@ -1,6 +1,6 @@
 ---
-title: Runtime IDentifier (RID) catalog
-description: Runtime IDentifier (RID) catalog
+title: .NET Core Runtime IDentifier (RID) catalog
+description: .NET Core Runtime IDentifier (RID) catalog
 keywords: .NET, .NET Core
 author: blackdwarf
 manager: wpickett
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: b2032f5d-771f-48d9-917c-587d9509035c
 ---
 
-# Runtime IDentifier (RID) catalog
+# .NET Core Runtime IDentifier (RID) catalog
 
 ## What are RIDs?
 RID is short for *Runtime IDentifier*. RIDs are used to identify target operating systems where an application or asset 

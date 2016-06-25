@@ -1,6 +1,6 @@
 ---
-title: Development using Visual Studio Code
-description: Development using Visual Studio Code
+title: Getting started with .NET Core on macOS
+description: Getting started with .NET Core on macOS, using Visual Studio Code
 keywords: .NET, .NET Core
 author: dotnet-bot
 manager: wpickett
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 8ad82148-dac8-4b31-9128-b0e9610f4d9b
 ---
 
-# Development using Visual Studio Code
+# Getting started with .NET Core on macOS, using Visual Studio Code
 
 by [Bertrand Le Roy](https://github.com/bleroy),  [Phillip Carter](https://github.com/cartermp),
 [Bill Wagner](https://github.com/billwagner)

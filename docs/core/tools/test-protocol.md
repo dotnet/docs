@@ -1,6 +1,6 @@
 ---
-title: dotnet-test communication protocol
-description: dotnet-test communication protocol
+title: .NET Core CLI test communication protocol
+description: .NET Core CLI test communication protocol
 keywords: .NET, .NET Core
 author: mairaw
 manager: wpickett
@@ -12,8 +12,8 @@ ms.devlang: dotnet
 ms.assetid: 88cba792-3640-41de-b55d-00f575e9d5e2
 ---
 
-dotnet-test communication protocol
-===================================
+.NET Core CLI test communication protocol
+=========================================
 
 ## Introduction
 Anytime you pass a port to dotnet test, the command will run in design time. That means that dotnet test will connect to that port

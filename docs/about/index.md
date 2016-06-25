@@ -58,7 +58,8 @@ The [.NET Core](https://github.com/dotnet/core) and [Mono](https://github.com/mo
 
 These general purpose runtimes can be used as the basis of academic research or teaching/learning or commercial products. Their open nature also means that anyone can contribute back to the upstream product code given a bug or the desire for a new feature.
 
-### Projects
+Projects
+--------
 
 - [CoreCLR](https://github.com/dotnet/coreclr) - .NET runtime, used by .NET Core.
 - [Mono](https://github.com/mono/mono) - .NET runtime, used by Xamarin and others.

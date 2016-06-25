@@ -20,7 +20,7 @@ The .NET ecosystem has a concept of frameworks. Frameworks define the API that y
 Framework Versions
 ==================
 
-The table below defines the set of frameworks that you can use, how they are referred to and which version of the [.NET Standard Library](dotnet-standard-library.md) that they implement.
+The table below defines the set of frameworks that you can use, how they are referred to and which version of the [.NET Standard Library](library.md) that they implement.
 
 | Framework | Latest Version | Target Framework Moniker (TFM) | Compact Target Framework Moniker (TFM) | .NET Standard Version | Metapackage |
 |:--------: | :--: | :--: | :--: | :--: | :--: | :--: |

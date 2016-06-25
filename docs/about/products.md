@@ -74,7 +74,7 @@ Major commercial and open source .NET implementations are listed below, in alpha
 
 .NET Core is used to build device, web, cloud and embedded/IoT apps. It is [open source](https://github.com/dotnet/core) and cross-platform, supporting Windows, macOS and Linux. [ASP.NET Core](http://docs.asp.net/) is the most popular workload for .NET Core. You can use it to build web apps and services, for on-premises and cloud deployment. You can also use .NET Core to build tools, utilities and cloud worker apps.
 
-- Learn about [.NET Core](../core)
+- Learn about [.NET Core](../core/index.md)
 - Learn about [ASP.NET Core](http://docs.asp.net/)
 - [Download .NET Core](http://dot.net/core)
 

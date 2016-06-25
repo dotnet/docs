@@ -16,7 +16,7 @@ ms.assetid: be988f09-7349-43b0-97fb-3a703d4587ce
 
 This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.
 
-If you're unfamiliar with the .NET Core CLI toolset, read [the .NET Core SDK overview](../core-concepts/core-sdk/sdk-overview.md).  It's also helpful to have an understanding of the [console app paradigm](../core-concepts/console/overview.md).
+If you're unfamiliar with the .NET Core CLI toolset, read [the .NET Core SDK overview](../sdk.md).  It's also helpful to have an understanding of the [console app paradigm](../console/overview.md).
 
 ## Prerequisites
 
@@ -38,7 +38,7 @@ Let's do a quick walkthrough:
 
 1. `$ dotnet new`
 
-   [`dotnet new`](../core-concepts/core-sdk/cli/dotnet-new.md) creates an up-to-date `project.json` file with NuGet dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
+   [`dotnet new`](../tools/dotnet-new.md) creates an up-to-date `project.json` file with NuGet dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
    
    `project.json`:
    ```javascript
@@ -78,24 +78,24 @@ Let's do a quick walkthrough:
 
 2. `$ dotnet restore`
 
-   [`dotnet restore`](../core-concepts/core-sdk/cli/dotnet-restore.md) calls into NuGet to restore the tree of dependencies. NuGet analyzes the `project.json` file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the `project.lock.json` file.  The `project.lock.json` file is necessary to be able to compile and run.
+   [`dotnet restore`](../tools/dotnet-restore.md) calls into NuGet to restore the tree of dependencies. NuGet analyzes the `project.json` file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the `project.lock.json` file.  The `project.lock.json` file is necessary to be able to compile and run.
    
    The `project.lock.json` file is a persisted and complete set of the graph of NuGet dependencies and other information describing an app.  This file is read by other tools, such as `dotnet build` and `dotnet run`, enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.
    
 3. `$ dotnet run`
 
-   [`dotnet run`](../core-concepts/core-sdk/cli/dotnet-run.md) calls `dotnet build` to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
+   [`dotnet run`](../tools/dotnet-run.md) calls `dotnet build` to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
    
 ```
 $ dotnet run
 Hello, World!
 ```
 
-You can also execute [`dotnet build`](../core-concepts/core-sdk/cli/dotnet-build.md) to compile and the code without running the build console applications.
+You can also execute [`dotnet build`](../tools/dotnet-build.md) to compile and the code without running the build console applications.
 
 ### Building a self-contained application
 
-Let's try compiling a self-contained application instead of a portable application. You can read more about the [types of portability in .NET Core](../core-concepts/app-types.md) to learn about the different application types, and how they are deployed.
+Let's try compiling a self-contained application instead of a portable application. You can read more about the [types of portability in .NET Core](../app-types.md) to learn about the different application types, and how they are deployed.
 
 You need to make some changes to your `project.json`
 file to direct the tools to build a self-contained application. You can see these in the
@@ -125,7 +125,7 @@ you'll build a Windows executable. If you are following these steps on a Mac, yo
 }
 ```
 
-See the full list of supported runtimes in the [RID catalog](../core-concepts/rid-catalog.md). 
+See the full list of supported runtimes in the [RID catalog](../rid-catalog.md). 
  
 After making those two changes you execute `dotnet restore`, followed by `dotnet build` to create the native executable. Then, you can run the generated
 native executable. 
@@ -635,7 +635,7 @@ public class PetTests
 }
 ```
    
-Now you can run tests!  The [`dotnet test`](../core-concepts/core-sdk/cli/dotnet-test.md) command runs the test runner you have specified in your project. Make sure you start at the top-level directory.
+Now you can run tests!  The [`dotnet test`](../tools/dotnet-test.md) command runs the test runner you have specified in your project. Make sure you start at the top-level directory.
  
 ```
 $ dotnet restore
@@ -660,6 +660,6 @@ SUMMARY: Total: 1 targets, Passed: 1, Failed: 0.
  
 Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.  The next step is to create awesome console apps of your own!
  
-If a more advanced example of a console app interests you, check out the next tutorial: [Using the CLI tools to write console apps: An advanced step-by-step guide](../core-concepts/console/cli-console-app-tutorial-advanced.md).
+If a more advanced example of a console app interests you, check out the next tutorial: [Using the CLI tools to write console apps: An advanced step-by-step guide](../console/cli-console-app-tutorial-advanced.md).
  
 	

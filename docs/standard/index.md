@@ -18,7 +18,7 @@ ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 
 Multiple implementations of .NET are available, based on open [.NET Standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) that specify the fundamentals of the platform. They are separately optimized for different application types (e.g. desktop, mobile, gaming, cloud) and support many chips (e.g. x86/x64, ARM) and operating systems (e.g. Windows, Linux, iOS, Android, macOS). Open source is also an important part of the .NET ecosystem, with multiple .NET implementations and many libraries available under OSI-approved licenses.
 
-You can take a look at the [Overview of .NET implementations](editions-overview.md) document to figure out all of the different editions of the .NET Framework that are available, both Microsoft's and others.
+You can take a look at the [Overview of .NET implementations](../about/products.md) document to figure out all of the different editions of the .NET Framework that are available, both Microsoft's and others.
 
 This Primer will help you understand some of the key concepts in the .NET Platform and point you to more resources 
 for each given topic. By the end of it, you should have enough information to be able to recognize significant terms and 
@@ -188,7 +188,7 @@ To learn more about async programming in .NET, start with the [Async Overview](.
 
 LINQ is a powerful set of features for C# and VB that allow you to write simple, declarative code for operating on data. The data can be in many forms (such as in-memory objects, in a SQL database, or an XML document), but the LINQ code you write typically won't look different for each data source!
 
-To learn more and see some samples, check out [LINQ (Language Integrated Query)](linq.md).
+To learn more and see some samples, check out [LINQ (Language Integrated Query)](using-linq.md).
 
 ### Native Interoperability
 

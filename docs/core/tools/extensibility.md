@@ -28,7 +28,7 @@ The two extensibility mechanisms outlined above are not exclusive; you can use b
 depends largely on what is the goal you are trying to achieve with your extension.
 
 ## Per-project based extensibility
-Per-project tools are [portable console applications](../../app-types.md) that are distributed as NuGet packages. Tools are 
+Per-project tools are [portable console applications](../app-types.md) that are distributed as NuGet packages. Tools are 
 only available in the context of the project that references them and for which they are restored; invocation outside 
 of the context of the project (for example, outside of the directory that contains the project) will fail as the command will 
 not be able to be found.
@@ -92,7 +92,7 @@ The `tools` node is structured in a similar way as the `dependencies` node. It n
 containing the tool and its version at the very least. In the example above, we can see that there is another statement, 
 the `imports` one. This influences the tool's restore process and specifies that the tool is also compatible, in 
 addition to any targeted frameworks the tools has, with `dnxcore50` target. For more information you can 
-consult the [project.json reference](../../../project-model/project-json-reference.md). 
+consult the [project.json reference](project-json.md).
 
 ### Building tools
 As mentioned, tools are just portable console applications. You would build one as you would build any console application. 
@@ -148,7 +148,7 @@ PATH-based extensibility is usually used for development machines where you need
 than a single project. The main drawback of this extensions mechanism is that it is tied to the machine where the 
 tool exists. If you need it on another machine, you would have to deploy it.
 
-This pattern of CLI toolset extensibility is very simple. As covered in the [.NET Core CLI overview](overview.md), `dotnet` driver 
+This pattern of CLI toolset extensibility is very simple. As covered in the [.NET Core CLI overview](index.md), `dotnet` driver 
 can run any command that is named after the `dotnet <command>` convention. The default resolution logic will first 
 probe several locations and will finally fall to the system PATH. If the requested command exists in the system PATH 
 and is a binary that can be invoked, `dotnet` driver will invoke it. 

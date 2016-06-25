@@ -1,7 +1,7 @@
 C# LINQ Sample
 ================
 
-This sample is created during the [Working with LINQ tutorial](../working-with-linq.html)
+This sample is created during the [Working with LINQ tutorial](../working-with-linq.md)
 for learning C# features. Please see that topic for detailed steps on the code
 for this sample.
 

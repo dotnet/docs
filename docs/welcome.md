@@ -25,6 +25,8 @@ News
 There is always something new to learn or explore in the .NET community. Here's the latest news you may want to check out.
 
 - [Announcing .NET Core 1.0](https://blogs.msdn.microsoft.com/dotnet/announcing-net-core-1-0)
+- [Announcing ASP.NET Core 1.0](https://blogs.msdn.microsoft.com/webdev/2016/06/27/announcing-asp-net-core-1-0/)
+- [Open Source Xamarin, Ready for you!](https://blog.xamarin.com/live-from-evolve-open-source-xamarin-ready-for-you/)
 - [The week in .NET](https://aka.ms/the-week-in-dotnet)
 - [Thank you for watching dotnetConf 2016!](https://blogs.msdn.microsoft.com/dotnet/2016/06/09/thank-you-for-watching-dotnetconf-2016/)
 
@@ -33,8 +35,8 @@ Documentation
 
 This documentation will show you how to build an app from scratch or finish one that you are already working on. Key sections you should check out:
 
-- [C# Guide](languages/csharp/index.md)
-- [.NET Core API](core/api)
+- [C# Guide](csharp/index.md)
+- [.NET Core API](../api/index.md)
 - [.NET Core Guide](core/index.md)
 - [.NET Standard Guide](standard/index.md)
 

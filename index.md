@@ -31,7 +31,7 @@ ms.assetid:
         <h2 class="section-heading"><span class="icon icon-lightbulb-checked"></span> Featured Content</h2>
         <div class="features row">
             <ul class="column-half">
-                <li><a href="core/index">Get started with .NET Core</a></li>
+                <li><a href="core/core/index">Get started with .NET Core</a></li>
             </ul>
             <ul class="column-half">
                 <li><a href="https://docs.asp.net">Get started with ASP.NET Core</a></li>

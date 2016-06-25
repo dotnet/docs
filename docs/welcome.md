@@ -15,6 +15,10 @@
 Welcome to .NET
 ===============
 
+Test!!
+
+git commit -am "Test commit as dotnet-bot" --author "dotnet-bot <dotnet-bot@microsoft.com>"
+
 Welcome to .NET! You can build any kind of application you want with .NET, from cloud to IoT to games. You can start building your next application today, for Windows, Linux, Android, macOS, and iOS. There are millions of developers that use .NET to power mission critical applications, personal apps and immersive games. You can write the next one.
 
 You can develop apps and games on Windows, macOS and Linux. There are free tools that you can use to build apps or games and deploy them on servers or desktops or publish them to app stores. It's accessible to students and  used by large businesses throughout the world.

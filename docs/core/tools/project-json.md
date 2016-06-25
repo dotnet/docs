@@ -14,108 +14,8 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 
 # project.json reference
 
-> **Note:**
->
+> [!NOTE]
 > This topic is preliminary and subject to change in the next release. You can track the status of this issue through our public GitHub issue tracker.
-
-
-* [name](#name)
-* [version](#version)
-* [description](#description)
-* [copyright](#copyright)
-* [title](#title)
-* [entryPoint](#entrypoint)
-* [testRunner](#testrunner)
-* [authors](#authors)
-* [language](#language)
-* [embedInteropTypes](#embedinteroptypes)
-* [preprocess](#preprocess)
-* [shared](#shared)
-* [dependencies](#dependencies)
-* [tools](#tools)
-* [commands](#commands)
-* [scripts](#scripts)
-* [buildOptions](#buildoptions)
-    * [define](#define)
-    * [nowarn](#nowarn)
-    * [additionalArguments](#additionalarguments)
-    * [languageVersion](#languageversion)
-    * [allowUnsafe](#allowunsafe)
-    * [platform](#platform)
-    * [warningsAsErrors](#warningsaserrors)
-    * [optimize](#optimize)
-    * [keyFile](#keyfile)
-    * [delaySign](#delaysign)
-    * [publicSign](#publicsign)
-    * [emitEntryPoint](#emitentrypoint)
-    * [xmlDoc](#xmldoc)
-    * [preserveCompilationContext](#preservecompilationcontext)
-    * [compilerName](#compilername)
-    * [compile](#compile)
-        * [include](#compile-include)
-        * [exclude](#compile-exclude)
-        * [includeFiles](#compile-include-files)
-        * [excludeFiles](#compile-exclude-files)
-        * [builtIns](#compile-builtins)
-        * [mappings](#compile-mappings)
-    * [embed](#embed)
-        * [include](#embed-include)
-        * [exclude](#embed-exclude)
-        * [includeFiles](#embed-include-files)
-        * [excludeFiles](#embed-exclude-files)
-        * [builtIns](#embed-builtins)
-        * [mappings](#embed-mappings)
-    * [copyToOutput](#copytooutput)
-        * [include](#copytooutput-include)
-        * [exclude](#copytooutput-exclude)
-        * [includeFiles](#copytooutput-include-files)
-        * [excludeFiles](#copytooutput-exclude-files)
-        * [builtIns](#copytooutput-builtins)
-        * [mappings](#copytooutput-mappings)
-* [publishOptions](#publishoptions)
-    * [include](#publish-include)
-    * [exclude](#publish-exclude)
-    * [includeFiles](#publish-include-files)
-    * [excludeFiles](#publish-exclude-files)
-    * [builtIns](#publish-builtins)
-    * [mappings](#publish-mappings)
-* [runtimeOptions](#runtimeoptions)
-    * [configProperties](#configproperties)
-        * [System.GC.Server](#gcserver)
-        * [System.GC.Concurrent](#gcconcurrent)
-        * [System.GC.RetainVM](#gcretainvm)
-        * [System.Threading.ThreadPool.MinThreads](#minthreads)
-        * [System.Threading.ThreadPool.MaxThreads](#maxthreads)
-    * [framework](#framework)
-        * [name](#framework-name)
-        * [version](#framework-version)
-        * [rollForward](#rollforward)      
-* [packOptions](#packoptions)
-    * [summary](#summary)
-    * [tags](#tags)
-    * [owners](#owners)
-    * [releaseNotes](#releasenotes)
-    * [iconUrl](#iconurl)
-    * [projectUrl](#projecturl)
-    * [licenseUrl](#licenseurl)
-    * [requireLicenseAcceptance](#requirelicenseacceptance)
-    * [repository](#repository)
-    * [files](#files)
-        * [include](#files-include)
-        * [exclude](#files-exclude)
-        * [includeFiles](#files-include-files)
-        * [excludeFiles](#files-exclude-files)
-        * [builtIns](#files-builtins)
-        * [mappings](#files-mappings)
-* [analyzerOptions](#analyzeroptions)
-    * [languageId](#languageid)
-* [configurations](#configurations)
-* [frameworks](#frameworks)
-    * [dependencies](#frameworks-dependencies)
-    * [frameworkAssemblies](#frameworkassemblies)
-    * [wrappedProject](#wrappedproject)   
-    * [bin](#bin)
-    * [imports](#imports)
 
 ## name
 Type: String
@@ -289,7 +189,6 @@ TODO: Investigate actual status
 
 Commands are deprecated in the cli. (?)
 
-<a name="scripts"></a>
 ## scripts
 Type: Object
 
@@ -521,7 +420,6 @@ Type: Object
 
 An object containing properties for compilation configuration.
 
-<a name="compile-include"></a>
 #### include
 Type: String or String[] with a globbing pattern.
 
@@ -533,7 +431,6 @@ For example:
         "include":["wwwroot", "Views"]
     }
 
-<a name="compile-exclude"></a>
 #### exclude
 Type: String or String[] with a globbing pattern.
 
@@ -545,7 +442,6 @@ For example:
         "exclude": ["bin/**", "obj/**"]
     }
 
-<a name="compile-include-files"></a>
 #### includeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -558,7 +454,6 @@ For example:
         "includeFiles": []
     }
 
-<a name="compile-exclude-files"></a>
 #### excludeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -571,7 +466,6 @@ For example:
         "excludeFiles":[],
     }
 
-<a name="compile-builtins"></a>
 #### builtIns
 
 Type: Object
@@ -584,7 +478,6 @@ For example:
         "builtIns":{}
     }
 
-<a name="compile-mappings"></a>
 #### mappings
 Type: Object
 
@@ -615,7 +508,6 @@ Type: Object
 
 An object containing properties for compilation configuration.
 
-<a name="embed-include"></a>
 #### include
 Type: String or String[] with a globbing pattern.
 
@@ -623,7 +515,6 @@ Type: String or String[] with a globbing pattern.
         "include":["wwwroot", "Views"]
     }
 
-<a name="embed-exclude"></a>
 #### exclude
 Type: String or String[] with a globbing pattern.
 
@@ -635,7 +526,6 @@ For example:
         "exclude": ["bin/**", "obj/**"]
     }
 
-<a name="embed-include-files"></a>
 #### includeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -644,7 +534,6 @@ Type: String or String[] with a globbing pattern.
         "includeFiles":[],
     }
 
-<a name="embed-exclude-files"></a>
 #### excludeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -653,7 +542,6 @@ Type: String or String[] with a globbing pattern.
         "excludeFiles":[],
     }
 
-<a name="embed-builtins"></a>
 #### builtIns
 Type: Object
 
@@ -661,7 +549,6 @@ Type: Object
         "builtIns":{}
     }
 
-<a name="embed-mappings"></a>
 #### mappings
 Type: Object
 
@@ -692,7 +579,6 @@ Type: Object
 
 An object containing properties for compilation configuration.
 
-<a name="copytooutput-include"></a>
 #### include
 Type: String or String[] with a globbing pattern.
 
@@ -700,7 +586,6 @@ Type: String or String[] with a globbing pattern.
         "include":["wwwroot", "Views"]
     }
 
-<a name="copytooutput-exclude"></a>
 #### exclude
 Type: String or String[] with a globbing pattern.
 
@@ -712,7 +597,6 @@ For example:
         "exclude": ["bin/**", "obj/**"]
     }
 
-<a name="copytooutput-include-files"></a>
 #### includeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -721,7 +605,6 @@ Type: String or String[] with a globbing pattern.
         "includeFiles":[],
     }
 
-<a name="copytooutput-exclude-files"></a>
 #### excludeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -730,7 +613,6 @@ Type: String or String[] with a globbing pattern.
         "excludeFiles":[],
     }
 
-<a name="copytooutput-builtins"></a>
 #### builtIns
 Type: Object
 
@@ -738,7 +620,6 @@ Type: Object
         "builtIns":{}
     }
 
-<a name="copytooutput-mappings"></a>
 #### mappings
 Type: Object
 
@@ -769,7 +650,6 @@ Type: Object
 
 An object containing properties for compilation configuration.
 
-<a name="publish-include"></a>
 ### include
 Type: String or String[] with a globbing pattern.
 
@@ -777,7 +657,6 @@ Type: String or String[] with a globbing pattern.
         "include":["wwwroot", "Views"]
     }
 
-<a name="publish-exclude"></a>
 ### exclude
 Type: String or String[] with a globbing pattern.
 
@@ -789,7 +668,6 @@ For example:
         "exclude": ["bin/**", "obj/**"]
     }
 
-<a name="publish-include-files"></a>
 ### includeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -798,7 +676,6 @@ Type: String or String[] with a globbing pattern.
         "includeFiles":[],
     }
 
-<a name="publish-exclude-files"></a>
 ### excludeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -807,7 +684,6 @@ Type: String or String[] with a globbing pattern.
         "excludeFiles":[],
     }
 
-<a name="publish-builtins"></a>
 ### builtIns
 Type: Object
 
@@ -815,7 +691,6 @@ Type: Object
         "builtIns":{}
     }
 
-<a name="publish-mappings"></a>
 ### mappings
 Type: Object
 
@@ -851,11 +726,10 @@ Type: Object
 
 Contains configuration properties to configure the runtime and the framework.
 
-<a name="gcserver"></a>
 #### System.GC.Server
 Type: Boolean
 
-**true** to enable server garbage collection; otherwise, **false**. The default is **true** (?).
+**true** to enable server garbage collection; otherwise, **false**. The default is **false**.
 
 For example:
 
@@ -867,11 +741,10 @@ For example:
         }
     }
 
-<a name="gcconcurrent"></a>
 #### System.GC.Concurrent
 Type: Boolean
 
-**true** to enable concurrent garbage collection; otherwise, **false**. The default is **false** (?).
+**true** to enable concurrent garbage collection; otherwise, **false**. The default is **false**.
 
 For example:
 
@@ -883,7 +756,6 @@ For example:
         }
     }
 
-<a name="gcretainvm"></a>
 #### System.GC.RetainVM
 Type: Boolean
 
@@ -899,7 +771,6 @@ For example:
         }
     }
 
-<a name="minthreads"></a>
 #### System.Threading.ThreadPool.MinThreads
 Type: Integer
 
@@ -913,7 +784,6 @@ Overrides the number of minimum threads for the ThreadPool worker pool.
         }
     }
 
-<a name="maxthreads"></a>
 #### System.Threading.ThreadPool.MaxThreads
 Type: Integer
 
@@ -932,7 +802,6 @@ Type: Object
 
 Contains shared framework properties to use when activating the application. The presence of this section indicates that the application is a portable app designed to use a shared redistributable framework.
 
-<a name="framework-name"></a>
 #### name
 Type: String
 
@@ -946,7 +815,6 @@ Name of the shared framework.
         }
     }
 
-<a name="framework-version"></a>
 #### version
 Type: String
 
@@ -976,7 +844,7 @@ Type: Boolean
 ## packOptions
 Type: Object
 
-TODO
+Defines options pertaining to the packaging of the project output into a NuGet package.
 
 ### summary
 Type: String
@@ -986,7 +854,9 @@ A short description of the project.
 For example:
 
     {
-        "summary": "This is my library."
+		"packOptions": {
+			"summary": "This is my library."
+		}
     }
 
 ### tags
@@ -997,7 +867,9 @@ An array of strings with tags for the project, used for searching in NuGet.
 For example:
 
     {
-        "tags": ["hyperscale", "cats"]
+		"packOptions": {
+			"tags": ["hyperscale", "cats"]
+		}
     }
 
 ### owners
@@ -1008,7 +880,9 @@ An array of strings with the names of the owners of the project.
 For example:
 
     {
-        "owners": ["Fabrikam", "Microsoft"]
+		"packOptions": {
+			"owners": ["Fabrikam", "Microsoft"]
+		}
     }
 
 ### releaseNotes
@@ -1019,7 +893,9 @@ Release notes for the project.
 For example:
 
     {
-        "releaseNotes": "Initial version, implemented flimflams."
+		"packOptions": {
+			"releaseNotes": "Initial version, implemented flimflams."
+		}
     }
 
 ### iconUrl
@@ -1030,7 +906,9 @@ The URL for an icon that will be used in various places such as the package expl
 For example:
 
     {
-        "iconUrl": "http://www.mylibrary.gov/favicon.ico"
+		"packOptions": {
+			"iconUrl": "http://www.mylibrary.gov/favicon.ico"
+		}
     }
 
 ### projectUrl
@@ -1041,7 +919,9 @@ The URL for the homepage of the project.
 For example:
 
     {
-        "projectUrl": "http://www.mylibrary.gov"
+		"packOptions": {
+			"projectUrl": "http://www.mylibrary.gov"
+		}
     }
 
 ### licenseUrl
@@ -1052,7 +932,9 @@ The URL for the license the project uses.
 For example:
 
     {
-        "licenseUrl": "http://www.mylibrary.gov/licence"
+		"packOptions": {
+			"licenseUrl": "http://www.mylibrary.gov/licence"
+		}
     }
 
 ### requireLicenseAcceptance
@@ -1063,17 +945,48 @@ Type: Boolean
 For example:
 
     {
-        "requireLicenseAcceptance": true
+		"packOptions": {
+			"requireLicenseAcceptance": true
+		}
     }
-    
+   
 ### repository
 Type: Object
 
-TODO
+Contains information about the repository where the project is stored.
+
+#### type
+Type: String
+
+Type of the repository. The default value is "git".
+
+For example:
+
+    {
+		"packOptions": {
+        	"repository": {
+            	"type": "git"
+			}
+        }
+    }
+
+#### url
+Type: String
+
+URL of the repository where the project is stored.
+
+For example:
+
+    {
+		"packOptions": {
+        	"repository": {
+            	"url": "http://github.com/dotnet/corefx"
+			}
+        }
+    }
 
 ### files
 
-<a name="files-include"></a>
 #### include
 Type: String or String[] with a globbing pattern.
 
@@ -1081,7 +994,6 @@ Type: String or String[] with a globbing pattern.
         "include":["wwwroot", "Views"]
     }
 
-<a name="files-exclude"></a>
 #### exclude
 Type: String or String[] with a globbing pattern.
 
@@ -1093,7 +1005,6 @@ For example:
         "exclude": ["bin/**", "obj/**"]
     }
 
-<a name="files-include-files"></a>
 #### includeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -1102,7 +1013,6 @@ Type: String or String[] with a globbing pattern.
         "includeFiles":[]
     }
 
-<a name="files-exclude-files"></a>
 #### excludeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -1111,7 +1021,6 @@ Type: String or String[] with a globbing pattern.
         "excludeFiles":[]
     }
 
-<a name="files-builtins"></a>
 #### builtIns
 Type: Object
 
@@ -1119,7 +1028,6 @@ Type: Object
         "builtIns":{}
     }
 
-<a name="files-mappings"></a>
 #### mappings
 Type: Object
 
@@ -1159,8 +1067,7 @@ For example:
 ### languageId
 Type: String
 
-TODO: Check language ids
-The id of the language to analyze.
+The id of the language to analyze. "cs" represents C#, "vb" represents Visual Basic and "fs" represents F#.
 
 For example:
 
@@ -1199,7 +1106,6 @@ For example:
         }
     }
 
-<a name="frameworks-dependencies"></a>
 ### dependencies
 Type: Object
 
@@ -1235,7 +1141,15 @@ For example:
 ### wrappedProject
 Type: String
 
-TODO
+Specifies the location of the dependency project. 
+
+For example:
+
+    "frameworks": {
+        "net451": {
+            "wrappedProject": "MyProject.csproj"
+            }
+        }
 
 ### bin
 Type: Object
@@ -1252,11 +1166,9 @@ For example:
       }
     }
 
-<a name="imports"></a>
 ### imports
 Type: String
 
-TODO
 Specifies other framework profiles that this project is compatible with.
 
 For example:

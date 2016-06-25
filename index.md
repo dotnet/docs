@@ -54,7 +54,7 @@ ms.assetid:
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
-                                <a href="core/index">
+                                <a href="core/welcome">
                                     <h3>.NET Documentation</h3>
                                     <p>Learn .NET concepts and language syntax.</p>
                                 </a>

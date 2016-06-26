@@ -485,7 +485,7 @@ Console.WriteLine(repo.LastPush);
 ```
 
 Your version should now match the finished version located
-[here](https://github.com/dotnet/core-docs/tree/master/docs/tutorials/getting-started-with-csharp/console-webapiclient).
+[here](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/console-webapiclient).
  
 ## Conclusion
 

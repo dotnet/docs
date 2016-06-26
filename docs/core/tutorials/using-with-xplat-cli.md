@@ -99,7 +99,7 @@ Let's try compiling a self-contained application instead of a portable applicati
 
 You need to make some changes to your `project.json`
 file to direct the tools to build a self-contained application. You can see these in the
-[HelloNative](https://github.com/dotnet/core-docs/samples/core-projects/console-apps/HelloNative)
+[HelloNative](https://github.com/dotnet/core-docs/tree/master/samples/core-projects/console-apps/HelloNative)
 project in the samples directory.
 
 The first change is to remove the `"type": "platform"` element from all dependencies. 

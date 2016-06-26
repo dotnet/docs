@@ -117,9 +117,7 @@ Deploying a portable app with one or more third-party dependencies involves thre
     },
     ```
 
-2. If you haven't already, download the NuGet package containing the third-party dependency. For more information, see [Working with NuGet Packages](../packaging/working-with-nuget-packages.md).
-
-3. Be sure to execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
+2. If you haven't already, download the NuGet package containing the third-party dependency. To download the package, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
 
 Note that a portable app with third-party dependencies will only be as portable as its third-party dependencies. For example, if a third-party library only supports macOS, the app will not be portable to Windows systems.
 
@@ -267,9 +265,7 @@ Deploying a self-contained app with one or more third-party dependencies involve
     },
     ```
 
-2. If you haven't already, download the NuGet package containing the third-party dependency. For more information, see [Working with NuGet Packages](../packaging/working-with-nuget-packages.md).
-
-3. Be sure to execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
+2. If you haven't already, download the NuGet package containing the third-party dependency. To download the package, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
 
 When you deploy your application, any third-party dependencies used in your app are also contained with your application files. Third-party libraries do not already have to be present on the system on which the app is running.
 

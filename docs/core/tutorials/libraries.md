@@ -1,6 +1,6 @@
 ---
-title: Writing Libraries with Cross Platform Tools
-description: Writing Libraries with Cross Platform Tools
+title: Developing Libraries with Cross Platform Tools
+description: Developing Libraries with Cross Platform Tools
 keywords: .NET, .NET Core
 author: cartermp
 manager: wpickett

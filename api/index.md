@@ -460,7 +460,7 @@ The .NET Core class library includes the following namespaces:
 <tr>
    <td><a href="./System.Threading.Tasks">System.Threading.Tasks</a></td>
    <td>
-   Provides types that simplify the work of writing concurrent and asynchronous code. The main types are <a href="./System.Threading.Tasks.Task">Task</a>, which represents an asynchronous operation that can be waited on and canceled, and <a href="./System.Threading.Tasks.Task%601">Task&ltTResult&gt</a>, which is a task that can return a value. 
+   Provides types that simplify the work of writing concurrent and asynchronous code. The main types are <a href="./System.Threading.Tasks.Task">Task</a>, which represents an asynchronous operation that can be waited on and canceled, and <a href="./System.Threading.Tasks.Task-1">Task&ltTResult&gt</a>, which is a task that can return a value. 
    </td>
 </tr>
 <tr>

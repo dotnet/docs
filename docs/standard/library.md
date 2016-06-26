@@ -135,4 +135,4 @@ You can see the set of PCL profiles that are compatible with the .NET Standard:
 Targeting .NET Standard Library
 ===============================
 
-You can [build .NET Standard Libraries](../core/deploying/libraries.md) using a combination of the `netstandard` framework and the NETStandard.Library metapackage. You can see examples of [targeting the .NET Standard Library with .NET Core tools](../core/packages.md).
+You can [build .NET Standard Libraries](../core/tutorials/libraries.md) using a combination of the `netstandard` framework and the NETStandard.Library metapackage. You can see examples of [targeting the .NET Standard Library with .NET Core tools](../core/packages.md).

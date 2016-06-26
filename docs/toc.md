@@ -128,7 +128,7 @@ to know what's next -->
 ### [project.json](core/tools/project-json.md)
 ### [global.json](core/tools/global-json.md)
 ## [Porting from .NET Framework](core/porting/index.md)
-### [🔧 Analyzing third-party dependencies](core/porting/third-party-deps.md)
+### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
 ### [🔧 NuGet packages](core/porting/nuget-packages.md)
 ## [Migrating from DNX](core/migrating-from-dnx.md)
 # [Samples and Tutorials](samples-and-tutorials/index.md)

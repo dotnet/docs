@@ -65,7 +65,7 @@ The SIMD-enabled vector types in .NET Core include the following:
 
 * [System.Numerics.Vector2](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Vector2), [System.Numerics.Vector3](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Vector3), and [System.Numerics.Vector4](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Vector4) types, which are 2-, 3-, and 4-dimensional vectors of type `Single`.
 
-* The [Vector&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Vector%601) structure that allows you to create a vector of any primitive numeric type. The primitive numeric types include all numeric types in the System namespace except for Decimal.
+* The [Vector&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Vector-1) structure that allows you to create a vector of any primitive numeric type. The primitive numeric types include all numeric types in the System namespace except for Decimal.
 
 * Two matrix types, [System.Numerics.Matrix3x2](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Matrix3x2), which represents a 3x2 matrix; and [System.Numerics.Matrix4x4](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Matrix4x4), which represents a 4x4 matrix. 
 

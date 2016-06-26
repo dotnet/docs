@@ -14,7 +14,7 @@ ms.assetid: 278a6566-09ba-4022-8802-e160e75b86af
 
 # How to: Use Arrays of Blocking Collections in a Pipeline
 
-The following example shows how to use arrays of [System.Collections.Concurrent.BlockingCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection%601) objects with static methods such as `TryAddToAny` and `TryTakeFromAny` to implement fast and flexible data transfer between components. 
+The following example shows how to use arrays of [System.Collections.Concurrent.BlockingCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1) objects with static methods such as `TryAddToAny` and `TryTakeFromAny` to implement fast and flexible data transfer between components. 
 
 ## Example
 

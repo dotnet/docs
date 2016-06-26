@@ -14,8 +14,6 @@ ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
 
 # Async in depth
 
-By [Phillip Carter](https://github.com/cartermp)
-
 Writing I/O- and CPU-bound asynchronous code is straightforward using the .NET Task-based async model. The model is exposed by the `Task` and `Task<T>` types and the `async` and `await` language keywords. This article explains how to use .NET async and provides insight into the async framework used under the covers.
 
 ## Task and Task&lt;T&gt;
@@ -77,7 +75,7 @@ public async Task<string> GetFirstCharactersCountAsync(string url, int count)
 
 The call to `GetStringAsync()` calls through lower-level .NET libraries (perhaps calling other async methods) until it reaches a P/Invoke interop call into a native networking library. The native library may subsequently call into a System API call (such as `write()` to a socket on Linux). A task object will be created at the native/managed boundary, possibly using [TaskCompletionSource](https://msdn.microsoft.com/en-us/library/dd449202(v=vs.110).aspx). The task object will be passed up through the layers, possibly operated on or directly returned, eventually returned to the initial caller. 
 
-In the second example above, a `Task<T>` object will be returned from `GetStringAsync`. The use of the `await` keyword causes the method to return a newly created task object. Control returns to the caller from this location in the `GetFirstCharactersCountAsync` method. The methods and properties of the [Task](https://dotnet.github.io/api/System.Threading.Tasks.Task%601) object enable callers to monitor the progress of the task, which will complete when the remaining code in GetFirstCharactersCountAsync has executed.
+In the second example above, a `Task<T>` object will be returned from `GetStringAsync`. The use of the `await` keyword causes the method to return a newly created task object. Control returns to the caller from this location in the `GetFirstCharactersCountAsync` method. The methods and properties of the [Task&lt;T&gt;](http://docs.microsoft.com/dotnet/core/api/System.Threading.Tasks.Task-1) object enable callers to monitor the progress of the task, which will complete when the remaining code in GetFirstCharactersCountAsync has executed.
 
 After the System API call, the request is now in kernel space, making its way to the networking subsystem of the OS (such as `/net` in the Linux Kernel).  Here the OS will handle the networking request *asynchronously*.  Details may be different depending on the OS used (the device driver call may be scheduled as a signal sent back to the runtime, or a device driver call may be made and *then* a signal sent back), but eventually the runtime will be informed that the networking request is in progress.  At this time, the work for the device driver will either be scheduled, in-progress, or already finished (the request is already out "over the wire") - but because this is all happening asynchronously, the device driver is able to immediately handle something else!
 

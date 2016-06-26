@@ -29,16 +29,11 @@ online playground, try these [interactive tutorials](http://go.microsoft.com/fwl
 
 ## General
 
+### Samples
+
 **[Unit Testing in .NET Core using dotnet test](../core/testing/unit-testing-with-dotnet-test.md)**
 
 This guide shows how to create an ASP.NET Core web application and the associated unit tests. It will start by creating a simple web service application and then add tests, and continue by creating more tests to guide implementing new features. The completed code is available [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/unit-testing/using-dotnet-test).
-
-### Samples
-
-**[Writing Libraries with Cross Platform Tools](../core/deploying/libraries.md)**
-
-This sample covers how you can write libraries for .NET using cross-platform CLI tools.  They provide an efficient and low-level experience that works across any supported OS.
-The completed code is available [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/libraries-frameworks-library).
 
 ### Tutorials
 
@@ -46,6 +41,10 @@ The completed code is available [in the core-docs repository on GitHub](https://
 
 This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/core-projects/console-apps).
 
+**[Writing Libraries with Cross Platform Tools](../core/tutorials/libraries.md)**
+
+This sample covers how you can write libraries for .NET using cross-platform CLI tools.  They provide an efficient and low-level experience that works across any supported OS.
+The completed code is available [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/core-projects/libraries/frameworks-library).
 
 ## C# Language
 
@@ -70,27 +69,27 @@ This sample demonstrates many of the problems that can be solved by using Expres
 
 **LINQ Samples**
 
-These series of samples demonstrate many of the features of Language Integrated Query.  A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/linq).
+These series of samples demonstrate many of the features of Language Integrated Query.  A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/linq/csharp).
 
 ### Tutorials
 
 ** [Console Application](../tutorials/getting-started-with-csharp/console-teleprompter.md)**
 
 This tutorial demonstrates Console I/O, the structure of a Console application, and
-the basics of the Task based asynchronous programming model. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/charp-language/console-teleprompter).
+the basics of the Task based asynchronous programming model. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/console-teleprompter).
 
 ** [REST Client](../tutorials/getting-started-with-csharp/console-webapiclient.md)**
 
 This tutorial demonstrates web communications, JSON serialization, and Object Oriented
 features in the C# language. A finished version of the code you'll build is located
-[in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/charp-language/console-webapiclient).
+[in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/console-webapiclient).
 
 ** [Working with LINQ](../tutorials/getting-started-with-csharp/working-with-linq.md)**
 
-This tutorial demonstrates many of the features of LINQ and the language elements that support it. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/charp-language/console-linq).
+This tutorial demonstrates many of the features of LINQ and the language elements that support it. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/console-linq).
 
 ** [Microservices hosted in Docker](../tutorials/getting-started-with-csharp/microservices.md)**
 
-This tutorial demonstrates building an asp.net core microservice and hosting it it Docker. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/charp-language/WeatherMicroservice).
+This tutorial demonstrates building an asp.net core microservice and hosting it it Docker. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/WeatherMicroservice).
 
 

@@ -1,7 +1,7 @@
 C# Events Sample
 ================
 
-This sample is created during the [Delegates and Events topic](../../docs/languages/csharp/delegates-and-events.html)
+This sample is created during the [Delegates and Events topic](../../docs/csharp/delegates-and-events.html)
 for learning C# features. Please see that topic for detailed steps on the code
 for this sample.
 

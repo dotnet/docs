@@ -21,10 +21,12 @@ ms.assetid: f2b312cb-f80c-4b0d-9101-93908f06a6fa
 
 The following characteristics best define .NET Core:
 
-- **Flexible deployment:** app-local or side-by-side user- or machine-wide installation.
+- **Flexible deployment:** Can be included in your app or installed side-by-side user- or machine-wide.
 - **Cross-platform:** Runs on Windows, macOS and Linux; can be ported to other OSes. The [supported Operating Systems (OS)](https://github.com/dotnet/core/blob/master/roadmap.md), CPUs and application scenarios will grow over time, provided by Microsoft, other companies, and individuals.
-- **Compatibility:** .NET Core is compatible with .NET Framework and Xamarin platforms, via the [.NET Standard Library](../standard/library.md).
+- **Command-line tools:**  All product scenarios can be exercised at the command-line. 
+- **Compatible:** .NET Core is compatible with .NET Framework, Xamarin and Mono, via the [.NET Standard Library](../standard/library.md).
 - **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses. Documentation is licensed under [CC-BY](http://creativecommons.org/licenses/by/4.0/). .NET Core is a [.NET Foundation](http://www.dotnetfoundation.org/) project.
+- **Supported by Microsoft:** .NET Core is supported by Microsoft, per [.NET Core Support](https://www.microsoft.com/net/core/support/)
 
 Composition
 ===========
@@ -33,8 +35,8 @@ Composition
 
 - A [.NET runtime](https://github.com/dotnet/coreclr), which provides a type system, assembly loading, a garbage collector, native interop and other basic services. 
 - A set of [framework libraries](https://github.com/dotnet/corefx), which provide primitive data types, app composition types and fundamental utilities. 
+- A [set of SDK tools](https://github.com/dotnet/cli) and [language compilers](https://github.com/dotnet/roslyn) that enable the base developer experience, available in the [.NET Core SDK](sdk.md).
 - The 'dotnet' app host, which is used to launch .NET Core apps. It selects the runtime and hosts the runtime, provides an assembly loading policy and launches the app. The same host is also used to launch SDK tools in much the same way.
-- A [set of SDK tools](https://github.com/dotnet/cli) and language compilers that enable the base developer experience, available in the [.NET Core SDK](sdk.md).
 
 Languages
 ---------
@@ -60,7 +62,7 @@ The [.NET Standard Library](../standard/library.md) is an API spec that describe
 Workloads
 ---------
 
-By itself, .NET Core includes a single application model: console apps, which are useful for tools, local services and text-based games. Additional application models were built on top of .NET Core to extend its functionality, such as:
+By itself, .NET Core includes a single application model -- console apps -- which is useful for tools, local services and text-based games. Additional application models have been built on top of .NET Core to extend its functionality, such as:
 
 - [ASP.NET Core](http://asp.net)
 - [Windows 10 Universal Windows Platform (UWP)](https://developer.microsoft.com/windows)
@@ -121,7 +123,7 @@ You can see in the chart below that the vast majority of [CoreFX](https://github
 
 ![CoreFX: Lines of Code per Platform](../images/corefx-platforms-loc.png)
 
-Windows and unix implementations are similar in size. Windows has a larger implementation since CoreFX implements some Windows-only features, such as [Microsoft.Win32.Registry](https://github.com/dotnet/corefx/tree/master/src/Microsoft.Win32.Registry) but does not yet implement any unix-only concepts. You will also see that the majority of the Linux and macOS implementations are shared across a unix implementation, while the Linux- and macOS-specific implementations are roughly similar in size.
+Windows and Unix implementations are similar in size. Windows has a larger implementation since CoreFX implements some Windows-only features, such as [Microsoft.Win32.Registry](https://github.com/dotnet/corefx/tree/master/src/Microsoft.Win32.Registry) but does not yet implement any Unix-only concepts. You will also see that the majority of the Linux and macOS implementations are shared across a Unix implementation, while the Linux- and macOS-specific implementations are roughly similar in size.
 
 
 There are a mix of platform-specific and platform-neutral libraries in .NET Core. You can see the pattern in a few examples:

@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: dotnet
-ms.assetid: dab9e2f9-9088-4089-b990-fbc3d8dcd611
+ms.assetid: 1db00fb1-d947-480d-8d7d-7152e67b0585
 ---
 
 # 🔧 Deploying .NET Core applications

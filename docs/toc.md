@@ -50,10 +50,6 @@ to know what's next -->
 ### [🔧 Documenting your code](csharp/codedoc.md) 
 ## [🔧 Syntax Reference](csharp/syntax.md)
 
-<!-- Note to self: update csharp/index.md to match this file
-    once this is approved.  -->
-
-<!-- marker for the end of edits -->
 # [Learn F#](languages/fsharp/index.md)
 ## [F# Learning Resources](http://fsharp.org/learn.html)
 ## [F# Language Reference](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/fsharp-language-reference)

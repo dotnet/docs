@@ -1,7 +1,7 @@
 C# Expression Trees Sample
 ================
 
-This sample is created during the [Expression Trees topic](https://docs.microsoft.com/dotnet/languages/csharp/expression-trees.html)
+This sample is created during the [Expression Trees topic](https://docs.microsoft.com/dotnet/csharp/expression-trees.html)
 for learning C# features. Please see that topic for detailed steps on the code
 for this sample.
 

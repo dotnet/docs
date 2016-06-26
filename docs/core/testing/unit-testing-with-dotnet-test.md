@@ -16,11 +16,11 @@ ms.assetid: bdcdb812-6f13-4f20-9e90-0c0977937142
 
 By [Steve Smith](http://ardalis.com) and [Bill Wagner](https://github.com/BillWagner)
 
-[View or download sample code](https://github.com/dotnet/core-docs/tree/UnitTestingInCore/samples/unit-testing/using-dotnet-test)
+[View or download sample code](https://github.com/dotnet/core-docs/tree/master/samples/unit-testing/using-dotnet-test)
 
 # Creating the Projects
 
-[Writing Libraries with Cross Platform Tools](/docs/core-concepts/libraries/libraries-with-cli.md#how-to-test-libraries-on-net-core)
+[Writing Libraries with Cross Platform Tools](../tutorials/libraries.md)
 has information on organizing multi-project solutions for both the
 source and the tests. This article follows those conventions. The
 final project structure will be something like this:

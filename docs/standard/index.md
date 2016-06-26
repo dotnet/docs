@@ -182,7 +182,7 @@ Read more about it in the [Generic Types (Generics) Overview](generics.md) docum
 
 Async programming is a first-class concept within .NET, with async support in the runtime, the framework libraries, and .NET language constructs. Internally, they are based off of objects (such as `Task`) which take advantage of the operating system to perform I/O-bound jobs as efficiently as possible.
 
-To learn more about async programming in .NET, start with the [Async Overview](../async/async-overview.md).
+To learn more about async programming in .NET, start with the [Async Overview](../async.md).
 
 ### Language Integrated Query (LINQ)
 

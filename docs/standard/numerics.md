@@ -33,7 +33,7 @@ Type | Signed/Unsigned | Size (bytes) | Minimum Value | Maximum Value
 
 Each integral type supports a standard set of arithmetic, comparison, equality, explicit conversion, and implicit conversion operators. Each integer also includes methods to perform equality comparisons and relative comparisons, to convert the string representation of a number to that integer, and to convert an integer to its string representation. Some additional mathematical operations beyond those handled by the standard operators, such as rounding and identifying the smaller or larger value of two integers, are available from the [System.Math](https://docs.microsoft.com/dotnet/core/api/System.Math) class. You can also work with the individual bits in an integer value by using the [System.BitConverter](https://docs.microsoft.com/dotnet/core/api/System.BitConverter) class. 
      
-Note that the unsigned integral types are not CLS-compliant. For more information, see [Language Independence and Language-Independent Components](languageIndependence.md).
+Note that the unsigned integral types are not CLS-compliant. For more information, see [.NET Common Type System & Common Language Specification](common-type-sysstem.md).
 
 ## Floating-point types
 

@@ -44,7 +44,7 @@ This guide will show you how to use the .NET Core CLI tooling to build cross-pla
 **[Writing Libraries with Cross Platform Tools](../core/tutorials/libraries.md)**
 
 This sample covers how you can write libraries for .NET using cross-platform CLI tools.  They provide an efficient and low-level experience that works across any supported OS.
-The completed code is available [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/libraries/frameworks-library).
+The completed code is available [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/core-projects/libraries/frameworks-library).
 
 ## C# Language
 

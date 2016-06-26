@@ -1,6 +1,6 @@
 # Analyzing your 3rd Party Dependencies
 
-The first step in the porting process is to understand your third party dependencies, figure out which of them (if any), don't run on .NET Core, and develop a contingency plan for those which don't run on .NET Core.
+The first step in the porting process is to understand your third party dependencies.  You need to figure out which of them, if any, don't yet run on .NET Core, and develop a contingency plan for those which don't run on .NET Core.
 
 ## Prerequisites
 
@@ -30,24 +30,29 @@ netstandard1.4
 netstandard1.5
 netstandard1.6
 netcoreapp1.0
-portable-<tfm_list>-whatever
+portable-net45-win8
+portable-win8-wpa8
+portable-net451-win81
+portable-net45-win8-wpa8-wpa81
 ```
 
-These are the Target Framework Monikers (TFM for short) which map to versions of [The .NET Standard Library](../standard/library.md).  Note that `netcoreapp1.0`, while compatible, is for applications and not libraries.  Although there's nothing wrong with using a library which is `netcoreapp1.0`-based, that library may not be intended for anything *other* than consumption by other `netcoreapp1.0` applications.
+These are the Target Framework Monikers (TFM for short) which map to versions of [The .NET Standard Library](../standard/library.md) and traditional Portable Class Library (PCL) profiles which are compatible with .NET Core.  Note that `netcoreapp1.0`, while compatible, is for applications and not libraries.  Although there's nothing wrong with using a library which is `netcoreapp1.0`-based, that library may not be intended for anything *other* than consumption by other `netcoreapp1.0` applications.
 
 There are also some legacy TFMs used in pre-release versions of .NET Core that may also be compatible:
 
 ```
 dnxcore50
-dotnet1.0
-dotnet1.1
-dotnet1.2
-dotnet1.3
-dotnet1.4
-dotnet1.5
+dotnet5.0
+dotnet5.1
+dotnet5.2
+dotnet5.3
+dotnet5.4
+dotnet5.5
 ```
 
-**While these may work with your code, there is no guarantee of compatibility**.  Be on the lookout for when these packages update to The .NET STandard Library.
+**While these will likely work with your code, there is no guarantee of compatibility**.  Packages with these TFMs were built with pre-release .NET Core packages.  Take note of when (or if) packages like this are updated to be `netstandard`-based.
+
+> **Note:** To use a package targeting a traditional PCL or pre-release .NET Core target, you must use the `imports` directive in your `project.json` file.
 
 ### What to do when your NuGet package dependency doesn't run on .NET Core
 
@@ -59,7 +64,11 @@ There are a few things you can do if a NuGet package you depend on won't run on 
 4. You can attempt to write the code the package was doing yourself.
 5. You could eliminate the dependency on the package by changing the functionality of your app, at least until a compatible version of the package becomes available.
 
+Please remember that open source project maintainers and NuGet package publishers are often volunteers who contribute because they care about a given domain, do it for free, and often have a different daytime job. If you do reach out, you might start with a positive statement about the library before asking about .NET Core support.
+
 If you're unable to resolve your issue with any of the above, you may have to port to .NET Core at a later date.
+
+The .NET Team would like to know which libraries are the most important to support next with .NET Core. You can also send us mail at dotnet@microsoft.com about the libraries you'd like to use.
 
 ## Analyzing Dependencies which aren't NuGet Packages
 
@@ -67,4 +76,4 @@ You may have a dependency that isn't a NuGet package, such as a `.dll` in the fi
 
 ## Next steps
 
-If you're porting a library, check out [Porting your Lbraries](libraries.md).
+If you're porting a library, check out [Porting your Libraries](libraries.md).

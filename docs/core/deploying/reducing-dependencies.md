@@ -18,11 +18,13 @@ This article covers what you need to know about reducing your package dependenci
 
 ## Why it's Important
 
-.NET Core 1.0 introduces the [.NET Standard Library metapackage](https://www.nuget.org/packages/NETStandard.Library/1.6.0), which is a NuGet package composed of other packages.  It is curated to be appropriate for developing libraries.  However, there's a good chance that your library won't use every single package it contains.  When authoring a library and distributing it over NuGet, it's a best practice to "trim" your dependencies down to only the packages you actually use.  This results in a smaller overall footprint for NuGet packages.
+.NET Core is a product made up of NuGet packages.  An essential package is the [.NET Standard Library metapackage](https://www.nuget.org/packages/NETStandard.Library/1.6.0), which is a NuGet package composed of other packages.  It provides you with the set of packages that are guaranteed to work on multiple .NET implementations, such as .NET Framework, .NET Core and Xamarin/Mono.
+
+However, there's a good chance that your library won't use every single package it contains.  When authoring a library and distributing it over NuGet, it's a best practice to "trim" your dependencies down to only the packages you actually use.  This results in a smaller overall footprint for NuGet packages.
 
 ## How to do it
 
-Currently, there is no official tooling which supports package trimming.  You'll have to do it manually.  The general process looks like the following:
+Currently, there is no official `dotnet` command which trims package references.  Instead, you'll have to do it manually.  The general process looks like the following:
 
 1. Reference `NETStandard.Library` version `1.6.0` in a `dependencies` section of your `project.json`.
 2. Restore packages with `dotnet restore` from the command line.

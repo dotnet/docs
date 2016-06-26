@@ -62,8 +62,8 @@ You can build Mobile apps for iOS, Android and Windows.
 
 You can build Web and Cloud apps for Windows and Linux.
 
-- [ASP.NET] for Windows with the [.NET Framework](#net-framework)
-- [ASP.NET Core] for Windows, macOS and Linux with [.NET Core](#net-core)
+- [ASP.NET](http://www.asp.net/) for Windows with the [.NET Framework](#net-framework)
+- [ASP.NET Core](http://docs.asp.net/) for Windows, macOS and Linux with [.NET Core](#net-core)
 
 .NET Implementations
 --------------------

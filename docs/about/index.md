@@ -72,4 +72,4 @@ Standardized
 ------------
 
 .NET is specified via open [ECMA standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) that outline its capabilities and that can be used to make a new implementation. There are other .NET implementations, with Mono and Unity being the most popular beyond the Microsoft ones.
->>>>>>> master
+

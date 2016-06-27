@@ -18,14 +18,16 @@
     }
   ],
   "notification_subscribers": [],
-  "branches_to_filter": [
-    "live"
-  ],
   "skip_source_output_uploading": false,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "master"
+    },
+    {
+      "path_to_root": "api_ref",
+      "url": "https://github.com/docascode/coreapi.git",
       "branch": "master"
     }
   ]

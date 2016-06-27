@@ -119,7 +119,7 @@ wish to check if new ones are added, please check back here.
     * `linuxmint.17.2-x64`
     * `linuxmint.17.3-x64`
 
-## OS X RIDs
+## macOS RIDs
 
 * `osx.10.10-x64`
 * `osx.10.11-x64`

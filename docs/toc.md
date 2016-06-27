@@ -9,9 +9,7 @@
 ### [Working with LINQ](tutorials/getting-started-with-csharp/working-with-linq.md)
 ### [Microservices hosted in Docker](tutorials/getting-started-with-csharp/microservices.md)
 ## [🔧 Tour of C#](csharp/features.md)
-### What's new in C# 6
-<!-- This page, or its parent should point to the Roslyn repo for folks that want
-to know what's next -->
+### [What's new in C# 6](csharp/csharp-6.md)
 ## [🔧 C# Concepts](csharp/concepts.md)
 ### [🔧 C# Type system](csharp/type-system.md)
 ### [Properties](csharp/properties.md)

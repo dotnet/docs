@@ -48,7 +48,7 @@ In addition, many collection classes contain the following features:
 
 *   **Synchronization for access from multiple threads** ([System.Collections](https://docs.microsoft.com/dotnet/core/api/System.Collections) classes only).
 
-    Non-generic collection types in the [System.Collections](https://docs.microsoft.com/dotnet/core/api/System.Collections) namespace provide some thread safety with synchronization; typically exposed through the `SyncRoot` and `IsSynchronized` members. These collections are not thread-safe by default. If you require scalable and efficient multi-threaded access to a collection, use one of the classes in the [System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent) namespace or consider using an immutable collection. For more information, see [Thread-Safe Collections](thread-safe-collections.md).    
+    Non-generic collection types in the [System.Collections](https://docs.microsoft.com/dotnet/core/api/System.Collections) namespace provide some thread safety with synchronization; typically exposed through the `SyncRoot` and `IsSynchronized` members. These collections are not thread-safe by default. If you require scalable and efficient multi-threaded access to a collection, use one of the classes in the [System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent) namespace or consider using an immutable collection. For more information, see [Thread-Safe Collections](threadsafe/index.md).    
     
 ## Choosing a collection 
 
@@ -75,7 +75,7 @@ Title | Description
 [Comparisons and Sorts Within Collections](comparisons-and-sorts-within-collections.md) | Discusses the use of equality comparisons and sorting comparisons in collections.
 [Sorted Collection Types](sorted-collection-types.md) | Describes sorted collections performance and characteristics.
 [Hashtable and Dictionary Collection Types](hashtable-and-dictionary-collection-types.md) | Describes the features of generic and non-generic hash-based dictionary types.
-[Thread-Safe Collections](thread-safe-collections.md) | Describes collection types such as [System.Collections.Concurrent.BlockingCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1) and [System.Collections.Concurrent.ConcurrentBag&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1) that support safe and efficient concurrent access from multiple threads.
+[Thread-Safe Collections](threadsafe/index.md) | Describes collection types such as [System.Collections.Concurrent.BlockingCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1) and [System.Collections.Concurrent.ConcurrentBag&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1) that support safe and efficient concurrent access from multiple threads.
 
 ## Reference
 

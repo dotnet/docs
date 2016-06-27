@@ -436,7 +436,7 @@ Pattern | Description
  
 ## Word Boundary: \b
 
-The **\b** anchor specifies that the match must occur on a boundary between a word character (the **\w** language element) and a non-word character (the **\W** language element). Word characters consist of alphanumeric characters and underscores; a non-word character is any character that is not alphanumeric or an underscore. (For more information, see [Character Classes in Regular Expressions](characterclasses.md).) The match may also occur on a word boundary at the beginning or end of the string.
+The **\b** anchor specifies that the match must occur on a boundary between a word character (the **\w** language element) and a non-word character (the **\W** language element). Word characters consist of alphanumeric characters and underscores; a non-word character is any character that is not alphanumeric or an underscore. (For more information, see [Character Classes in Regular Expressions](classes.md).) The match may also occur on a word boundary at the beginning or end of the string.
 
 The **\b** anchor is frequently used to ensure that a subexpression matches an entire word instead of just the beginning or end of a word. The regular expression `\bare\w*\b` in the following example illustrates this usage. It matches any word that begins with the substring "are". The output from the example also illustrates that **\b** matches both the beginning and the end of the input string. 
 

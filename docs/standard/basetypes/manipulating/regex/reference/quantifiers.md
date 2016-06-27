@@ -30,7 +30,7 @@ The quantities *n* and *m* are integer constants. Ordinarily, quantifiers are gr
 
 > **Important**
 >
-> Nesting quantifiers (for example, as the regular expression pattern `(a*)*` does) can increase the number of comparisons that the regular expression engine must perform, as an exponential function of the number of characters in the input string. For more information about this behavior and its workarounds, see [Backtracking in Regular Expressions](backtracking.md).
+> Nesting quantifiers (for example, as the regular expression pattern `(a*)*` does) can increase the number of comparisons that the regular expression engine must perform, as an exponential function of the number of characters in the input string. For more information about this behavior and its workarounds, see [Backtracking in Regular Expressions](../behavior/backtracking.md).
 
 ## Regular Expression Quantifiers
 
@@ -38,7 +38,7 @@ The following sections list the quantifiers supported by .NET Core regular expre
 
 > **Note**
 >
-> If the \*, +, ?, {, and } characters are encountered in a regular expression pattern, the regular expression engine interprets them as quantifiers or part of quantifier constructs unless they are included in a [character class](class.md). To interpret these as literal characters outside a character class, you must escape them by preceding them with a backslash. For example, the string `\*` in a regular expression pattern is interpreted as a literal asterisk ("*") character.
+> If the \*, +, ?, {, and } characters are encountered in a regular expression pattern, the regular expression engine interprets them as quantifiers or part of quantifier constructs unless they are included in a [character class](classes.md). To interpret these as literal characters outside a character class, you must escape them by preceding them with a backslash. For example, the string `\*` in a regular expression pattern is interpreted as a literal asterisk ("*") character.
 
 ### Match Zero or More Times: *
 
@@ -518,5 +518,5 @@ public class Example
 
 [Regular Expression Language - Quick Reference](index.md)
 
-[Backtracking in Regular Expressions](backtracking.md)
+[Backtracking in Regular Expressions](../behavior/backtracking.md)
 

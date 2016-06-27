@@ -51,7 +51,7 @@ Because each time zone is characterized by a base offset from UTC, as well as by
 
 * `ConvertTime(DateTimeOffset, TimeZoneInfo)`, which converts a [System.DateTimeOffset](https://docs.microsoft.com/dotnet/core/api/System.DateTimeOffset) to the time in a particular time zone. 
 
-For details on converting times between time zones, see [Converting Times Between Time Zones](ConvertingBetweenTimeZones.md).
+For details on converting times between time zones, see [Converting Times Between Time Zones](converting-between-time-zones.md).
 
 ## See Also
 

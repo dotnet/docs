@@ -29,7 +29,7 @@ Traditional NFA engines are favored by programmers because they offer greater co
 
 > ** Note**
 >
-> For information about the performance penalty caused by excessive backtracking and ways to craft a regular expression to work around them, see [Backtracking in Regular Expressions](../backtracking.md).
+> For information about the performance penalty caused by excessive backtracking and ways to craft a regular expression to work around them, see [Backtracking in Regular Expressions](backtracking.md).
  
 ## .NET Framework Engine Capabilities
 
@@ -374,9 +374,9 @@ Pattern | Description
 
 Title | Description
 ----- | ----------- 
-[Backtracking](../backtracking.md) | Provides information about how regular expression backtracking branches to find alternative matches.
-[Compilation and Reuse](../compilation.md) | Provides information about compiling and reusing regular expressions to increase performance.
-[Thread Safety](../threadsafety.md) | Provides information about regular expression thread safety and explains when you should synchronize access to regular expression objects.
+[Backtracking](backtracking.md) | Provides information about how regular expression backtracking branches to find alternative matches.
+[Compilation and Reuse](compilation.md) | Provides information about compiling and reusing regular expressions to increase performance.
+[Thread Safety](threadsafety.md) | Provides information about regular expression thread safety and explains when you should synchronize access to regular expression objects.
 
 ## Reference
 

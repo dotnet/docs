@@ -193,8 +193,8 @@ Syntax | Meaning
 Title | Description
 ----- | -----------
 [The Regular Expression Object Model](objectmodel.md) | Provides information and code examples that illustrate how to use the regular expression classes.
-[Details of Regular Expression Behavior](behavior/regexbehavior.md) | Provides information about the capabilities and behavior of .NET Coreregular expressions.
-[Regular Expression Examples](examples/regexexamples.md) | Provides code examples that illustrate typical uses of regular expressions.
+[Details of Regular Expression Behavior](behavior/index.md) | Provides information about the capabilities and behavior of .NET Coreregular expressions.
+[Regular Expression Examples](examples/index.md) | Provides code examples that illustrate typical uses of regular expressions.
 
 
 ## Reference

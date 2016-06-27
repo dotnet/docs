@@ -26,7 +26,7 @@ Applications often respond to users by constructing messages based on user input
 
 [Comparing Strings](comparing.md) - Describes how to compare the contents of two or more strings.
 
-[Changing Case](,,/changingcase.md) - Describes how to change the case of characters within a string.
+[Changing Case](../basic/changingcase.md) - Describes how to change the case of characters within a string.
 
 [Using the StringBuilder Class](stringbuilder.md) - Describes how to create and modify dynamic string objects with the [StringBuilder](https://docs.microsoft.com/dotnet/core/api/System.Text.StringBuilder) class.
 

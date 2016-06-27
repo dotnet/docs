@@ -42,7 +42,7 @@ We’ve also provided this information in two formats that you can download and 
 
 * [Download in Word (.docx) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)
     
-* [Download in PDF (.pdf) format]("http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)
+* [Download in PDF (.pdf) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)
     
 ## Character Escapes
 
@@ -100,13 +100,13 @@ Assertion | Description | Pattern | Matches
 
 ## Grouping Constructs
 
-Grouping constructs delineate subexpressions of a regular expression and typically capture substrings of an input string. Grouping constructs include the language elements listed in the following table. For more information, see [Grouping Constructs in Regular Expressions](groupng.md).
+Grouping constructs delineate subexpressions of a regular expression and typically capture substrings of an input string. Grouping constructs include the language elements listed in the following table. For more information, see [Grouping Constructs in Regular Expressions](grouping.md).
 
 Grouping construct | Description | Pattern | Matches
 ------------------ | ----------- | ------- | ------- 
 **(**_subexpression_**)** | Captures the matched subexpression and assigns it a one-based ordinal number. | `(\w)\1` | "ee" in "deep"
 **(?**<name> _subexpression_**)** | Captures the matched subexpression into a named group. | `(?<double>\w)\k<double>` | "ee" in "deep"
-**(?**<name1-name2> _subexpression_**)** | Defines a balancing group definition. For more information, see the "Balancing Group Definition" section in [Grouping Constructs in Regular Expressions](groupng.md). | `(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$` | "((1-3)*(3-1))" in "3+2^((1-3)*(3-1))"
+**(?**<name1-name2> _subexpression_**)** | Defines a balancing group definition. For more information, see the "Balancing Group Definition" section in [Grouping Constructs in Regular Expressions](grouping.md). | `(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$` | "((1-3)*(3-1))" in "3+2^((1-3)*(3-1))"
 **(?**: subexpression**)** | Defines a noncapturing group. | `Write(?:Line)?` | "WriteLine" in "Console.WriteLine()", "Write" in "Console.Write(value)"
 **(?imnsx-imnsx**: _subexpression_**)** | Applies or disables the specified options within _subexpression_. For more information, see [Regular Expression Options](options.md). | `A\d{2}(?i:\w+)\b` | "A12xl", "A12XL" in "A12xl A12XL a12xl"
 **(?**= _subexpression_**)** | Zero-width positive lookahead assertion. | `\w+(?=\.)` | "is", "ran", and "out" in "He is. The dog ran. The sun is out."
@@ -206,7 +206,7 @@ Construct | Definition | Example
 
 [Download in Word (.docx) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)
     
-[Download in PDF (.pdf) format]("http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)
+[Download in PDF (.pdf) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)
 
 
 

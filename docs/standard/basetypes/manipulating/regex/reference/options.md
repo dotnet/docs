@@ -700,7 +700,7 @@ The following example defines the following regular expression pattern:
 
 `\b \(? ( (?>\w+) ,?\s? )+ [\.!?] \)? # Matches an entire sentence`.
 
-This pattern is similar to the pattern defined in the [Explicit Captures Only](Explicit-Captures-Only) section, except that it uses the [RegexOptions.IgnorePatternWhitespace](https://docs.microsoft.com/dotnet/core/api/System.Text.RegularExpressions.RegexOptions#System_Text_RegularExpressions_RegexOptions_IgnorePatternWhitespace) option to ignore pattern white space.
+This pattern is similar to the pattern defined in the [Explicit Captures Only](#Explicit-Captures-Only) section, except that it uses the [RegexOptions.IgnorePatternWhitespace](https://docs.microsoft.com/dotnet/core/api/System.Text.RegularExpressions.RegexOptions#System_Text_RegularExpressions_RegexOptions_IgnorePatternWhitespace) option to ignore pattern white space.
 
 ```csharp
 using System;

@@ -42,7 +42,7 @@ The only character that can appear either in a regular expression pattern or in 
  
 ## Substituting a Numbered Group
 
-The **$**_number_ language element includes the last substring matched by the number capturing group in the replacement string, where *number* is the index of the capturing group. For example, the replacement pattern `$1` indicates that the matched substring is to be replaced by the first captured group. For more information about numbered capturing groups, see [Grouping Constructs in Regular Expressions](groupimg.md).
+The **$**_number_ language element includes the last substring matched by the number capturing group in the replacement string, where *number* is the index of the capturing group. For example, the replacement pattern `$1` indicates that the matched substring is to be replaced by the first captured group. For more information about numbered capturing groups, see [Grouping Constructs in Regular Expressions](grouping.md).
 
 All digits that follow **$** are interpreted as belonging to the number group. If this is not your intent, you can substitute a named group instead. For example, you can use the replacement string **${1}1** instead of **$11** to define the replacement string as the value of the first captured group along with the number "1". For more information, see [Substituting a Named Group](#Substituting-a-Named-Group). 
 
@@ -84,7 +84,7 @@ Pattern | Description
  
 ## Substituting a Named Group
 
-The **${**_name_**}** language element substitutes the last substring matched by the *name* capturing group, where *name* is the name of a capturing group defined by the **(?<**_name_**>)** language element. For more information about named capturing groups, see [Grouping Constructs in Regular Expressions](groupimg.md).
+The **${**_name_**}** language element substitutes the last substring matched by the *name* capturing group, where *name* is the name of a capturing group defined by the **(?<**_name_**>)** language element. For more information about named capturing groups, see [Grouping Constructs in Regular Expressions](grouping.md).
 
 If *name* doesn't specify a valid named capturing group defined in the regular expression pattern but consists of digits, **${**_name_**}** is interpreted as a numbered group. 
 

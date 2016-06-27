@@ -52,10 +52,10 @@
       [
         {
           "files": [
-            "docs/images/**",
-            "images/**",
-            "_themes/**"
+            "images/**"
           ],
+          "src": "docs",
+          "dest": "articles",
           "exclude": [
             "**/obj/**",
             "_themes/DocPacker/**"

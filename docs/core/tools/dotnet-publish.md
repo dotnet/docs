@@ -88,5 +88,5 @@ Publishes the current application using the `netcoreapp1.0` framework.
 	
 `dotnet publish --framework netcoreapp1.0 --runtime osx.10.11-x64`
     
-Publishes the current application using the `netcoreapp1.0` framework and runtime for `macOS 10.10`. This RID has to 
+Publishes the current application using the `netcoreapp1.0` framework and runtime for `OS X 10.10`. This RID has to 
 exist in the `project.json` `runtimes` node.

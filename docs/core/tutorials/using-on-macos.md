@@ -56,7 +56,7 @@ use of the library. You'll follow a standard folder structure for
 the three projects. Following this standard folder structure
 means that the .NET Core SDK tools understand the relationship between
 your production code projects and your test code projects. That makes
-your development exerience more productive.
+your development experience more productive.
 
 Let's start by creating those folders. In the terminal, create a 'golden'
 directory. Under that directory create `src` and `test`
@@ -258,7 +258,7 @@ can type `dotnet run` to run the executable.
 You can debug your code in VS Code using the C# extension.
 You install this extension by pressing `F1` to open the VS Code
 palette. Type `ext install` to see the list of extensions. Select the `C#`
-extension. (More details are availble on the [Visual Studio
+extension. (More details are available on the [Visual Studio
 Code C# Extension documentation](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md)
 page.)
 
@@ -266,7 +266,7 @@ After you install the extension, VS Code will ask that you restart the applicati
 to load the new extension. Once the extension is installed, you can open the
 debugger tab (see figure).
 
-![VS Code Debugger](/docs/images/vscodedebugger.png)
+![VS Code Debugger](./media/vscodedebugger.png)
 
 
 When you start the debugger, VS Code will instruct you to configure

@@ -1,6 +1,6 @@
 ---
-title: Porting to .NET Core - Analyzing your 3rd Party Dependencies
-description: Porting to .NET Core - Analyzing your 3rd Party Dependencies
+title: Porting to .NET Core - Analyzing your Third-Party Dependencies
+description: Porting to .NET Core - Analyzing your Third-Party Dependencies
 keywords: .NET, .NET Core
 author: cartermp
 manager: wpickett
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: b446e9e0-72f6-48f6-92c6-70ad0ce3f86a
 ---
 
-# Porting to .NET Core - Analyzing your 3rd Party Dependencies
+# Porting to .NET Core - Analyzing your Third-Party Dependencies
 
 The first step in the porting process is to understand your third party dependencies.  You need to figure out which of them, if any, don't yet run on .NET Core, and develop a contingency plan for those which don't run on .NET Core.
 
@@ -31,9 +31,9 @@ Inspecting NuGet Package folders is easiest with the [NuGet Package Explorer](ht
 3. Search for the name of the package.
 4. Expand the "lib" folder on the right-hand side and look at folder names.
 
-You can also see what a package supports on [nuget.org](nuget.org) under the **Dependencies** section of the page for that package.
+You can also see what a package supports on [nuget.org](https://nuget.org) under the **Dependencies** section of the page for that package.
 
-In either case, you'll need to look for a folder or entry on [nuget.org](nuget.org) with any of the following names:
+In either case, you'll need to look for a folder or entry on [nuget.org](https://nuget.org) with any of the following names:
 
 ```
 netstandard1.0
@@ -50,7 +50,7 @@ portable-net451-win81
 portable-net45-win8-wpa8-wpa81
 ```
 
-These are the Target Framework Monikers (TFM for short) which map to versions of [The .NET Standard Library](../standard/library.md) and traditional Portable Class Library (PCL) profiles which are compatible with .NET Core.  Note that `netcoreapp1.0`, while compatible, is for applications and not libraries.  Although there's nothing wrong with using a library which is `netcoreapp1.0`-based, that library may not be intended for anything *other* than consumption by other `netcoreapp1.0` applications.
+These are the Target Framework Monikers (TFM for short) which map to versions of the [.NET Standard Library](../../standard/library.md) and traditional Portable Class Library (PCL) profiles which are compatible with .NET Core.  Note that `netcoreapp1.0`, while compatible, is for applications and not libraries.  Although there's nothing wrong with using a library which is `netcoreapp1.0`-based, that library may not be intended for anything *other* than consumption by other `netcoreapp1.0` applications.
 
 There are also some legacy TFMs used in pre-release versions of .NET Core that may also be compatible:
 
@@ -73,7 +73,7 @@ dotnet5.5
 There are a few things you can do if a NuGet package you depend on won't run on .NET Core.
 
 1. If the project is open source and hosted somewhere like GitHub, you can engage the developer(s) directly.
-2. You can contact the author directly on nuget.org by searching for the package and clicking "Contact Owners" on the left hand side of the package's page.
+2. You can contact the author directly on [nuget.org](https://nuget.org) by searching for the package and clicking "Contact Owners" on the left hand side of the package's page.
 3. You can look for another package that runs on .NET Core which accomplishes the same task as the package you were using.
 4. You can attempt to write the code the package was doing yourself.
 5. You could eliminate the dependency on the package by changing the functionality of your app, at least until a compatible version of the package becomes available.

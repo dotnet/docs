@@ -14,11 +14,13 @@ ms.assetid: f9196bfc-b8a8-4d33-8b53-0dcbd58a69d8
 
 # Async Programming in F# #
 
+> **Note:** Some inaccuracies have been discovered in this article.  It is being rewritten.  See [Issue #666](https://github.com/dotnet/core-docs/issues/666) to learn about the changes.
+
 Async programming in F# can be accomplished through a language-level programming model designed to be easy to use and natural to the language.
 
-The core of async programming in F# is `Async<'a>`, a representation of work that can be triggered to run in the background, where `'a` is either the type returned via the special `return` keyword or `unit` if the async workflow has no result to return.
+The core of async programming in F# is `Async<'T>`, a representation of work that can be triggered to run in the background, where `'T` is either the type returned via the special `return` keyword or `unit` if the async workflow has no result to return.
 
-The key concept to understand is that an async expression’s type is `Async<'a>`, which is merely a _specification_ of work to be done in an asynchronous context. It is not executed until you explicitly start it with one of the starting functions (such as `Async.RunSynchronously`). Although this is a different way of thinking about doing work, it ends up being quite simple in practice.
+The key concept to understand is that an async expression’s type is `Async<'T>`, which is merely a _specification_ of work to be done in an asynchronous context. It is not executed until you explicitly start it with one of the starting functions (such as `Async.RunSynchronously`). Although this is a different way of thinking about doing work, it ends up being quite simple in practice.
 
 For example, say you wanted to download the HTML from dotnetfoundation.org without blocking the main thread. You can accomplish it like this:
 
@@ -68,11 +70,11 @@ let fetchHtmlAsync url = async {
 let html = "http://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
 
 // you actually have the result from fetchHtmlAsync now!
-printfn "%A" html
+printfn "%s" html
 
 ```
 
-1.  `Async.Start` will start an async workflow on another thread, and will **not** await its result.
+2.  `Async.Start` will start an async workflow on another thread, and will **not** await its result.
 
 ```cs
 let uploadDataAsync url data = async {
@@ -98,7 +100,7 @@ The phrase “on another thread” is mentioned above, but it is important to kn
 
 ## How to Add Parallelism to Async Code
 
-Sometimes you may need to perform multiple non-blocking asynchronous jobs in parallel, collect their results, and interpret them in some way. `Async.Parallel` allows you to do this without needing to use the Task Parallel Library, which would involve needing to coerce `Task<'a>` and `Async<'a>` types.
+Sometimes you may need to perform multiple asynchronous jobs in parallel, collect their results, and interpret them in some way. `Async.Parallel` allows you to do this without needing to use the Task Parallel Library, which would involve needing to coerce `Task<T>` and `Async<'T>` types.
 
 The following example will use `Async.Parallel` to download the HTML from four popular sites in parallel, wait for those tasks to complete, and then print the HTML which was downloaded.
 
@@ -117,24 +119,15 @@ let fetchHtmlAsync url = async {
 }
 
 let getHtmlList =
-    Seq.map fetchHtmlAsync    // Build an Async<'a> for each site
-    >> Async.Parallel         // Partition each Async<'a> across different threads
-    >> Async.RunSynchronously // Run each Async<'a> and do a non-blocking wait
+    Seq.map fetchHtmlAsync    // Build an Async<'T> for each site
+    >> Async.Parallel         // Returns an Async<'T []>
+    >> Async.RunSynchronously // Wait for the result of the parallel work
 
 let htmlList = urlList |> getHtmlList
 
 // We now have the downloaded HTML for each site!
 for html in htmlList do
     printfn "%s" html
-
-```
-
-## Larger Example
-
-TODO - something more complex than above
-
-```cs
-// TODO
 
 ```
 
@@ -154,23 +147,15 @@ This section assumes you’re familiar with the async model in C#/VB. If you are
 
 There is a fundamental difference between the C#/VB async model and the F# async model.
 
-When you call a function which returns a `Task` or `Task<T>`, that job has already begun execution. The handle returned represents an already-running asynchronous job. In contrast, when you call an async function in F#, the `Async<'a>` returned represents a job which will be **generated** at some point. Understanding this model is powerful, because it allows for asynchronous jobs in F# to be chained together easier, performed conditionally, and be started with a finer grain of control.
+When you call a function which returns a `Task` or `Task<T>`, that job has already begun execution. The handle returned represents an already-running asynchronous job. In contrast, when you call an async function in F#, the `Async<'aT` returned represents a job which will be **generated** at some point. Understanding this model is powerful, because it allows for asynchronous jobs in F# to be chained together easier, performed conditionally, and be started with a finer grain of control.
 
 There are a few other similarities and differences worth noting.
 
 ### Similarities
 
-*   `Async.RunSynchronously` is analogous to `await` when calling async code from a normal function.
-
-Although it technically operates very differently from `await`, conceptually `Async.RunSynchronously` accomplishes a similar goal: waiting for an asynchronous job to finish and collecting its result (after starting that job).
-
 *   `let!`, `use!`, and `do!` are analogous to `await` when calling an async job from within an `async{ }` block.
 
 The three keywords can only be used within an `async { }` block, similar to how `await` can only be invoked inside an `async` method. In short, `let!` is for when you want to capture and use a result, `use!` is the same but for something whose resources should get cleaned after it’s used, and `do!` is for when you want to wait for an async workflow with no return value to finish before moving on.
-
-*   For the purposes of representing async work, F#’s model doesn’t differ much conceptually.
-
-Although F#’s model doesn’t use a `Task` or `Task<T>`, conceptually its type, `Async<'a>`, is similar in that it ultimately models work being done in an asynchronous context. The main difference is `Async<'a>` is a job which is ready to be started, whereas `Task` and `Task<T>` are jobs which are already happening.
 
 *   F# supports data-parallelism in a similar way.
 
@@ -178,11 +163,15 @@ Although it operates very differently, `Async.Parallel` corresponds to `Task.Whe
 
 ### Differences
 
+*   Nested `let!` is not allowed, unlike nested `await`
+
+Unlike `await`, which can be nested indefinitely, `let!` cannot and must have its result bound before using it inside of another `let!`, `do!`, or `use!`.
+
 *   Cancellation support is simpler in F# than in C#/VB.
 
 Supporting cancellation of a task midway through its execution in C#/VB requires checking the `IsCancellationRequested` property or calling `ThrowIfCancellationRequested()` on a `CancellationToken` object that’s passed into the async method.
 
-In contrast, F# async workflows are naturally cancellable. Cancellation is a simple three-step process.
+In contrast, F# async workflows are more naturally cancellable. Cancellation is a simple three-step process.
 
 1.  Create a new `CancellationTokenSource`.
 2.  Pass it into a starting function.
@@ -208,10 +197,6 @@ token.Cancel()
 ```
 
 And that’s it!
-
-*   Nested `let!` is not allowed.
-
-Unlike `await`, which can be nested indefinitely, `let!` cannot and must have its result bound before using it inside of a `let!`, `do!`, or `use!`.
 
 ## Further resources:
 

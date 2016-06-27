@@ -30,7 +30,7 @@ ms.assetid: d1453a0d-317c-4da6-b68e-422a2c0bfe49
 
 For installation instructions, see [Install for Windows](https://www.microsoft.com/net/core#windows). 
 
-For a getting started tutorial that walks you through installation and development of a simple .NET Core application, choose from the following options:
+For a getting started tutorial that walks you through development of a simple .NET Core application, choose from the following options:
 
 * [Getting started with .NET Core on Windows, using Visual Studio 2015](tutorials/using-on-windows.md) - Use [Visual Studio](https://www.visualstudio.com/), the full-featured integrated development environment (IDE) for Windows.  
 * [Getting started with .NET Core on macOS, using Visual Studio Code](tutorials/using-on-macos.md) - Use [Visual Studio Code](https://www.visualstudio.com/products/code-vs), Microsoft's lightweight cross-platform code editor. Though this tutorial is written primarily for macOS, it includes instructions for Windows wherever usage on Windows differs from macOS.
@@ -47,7 +47,7 @@ For a getting started tutorial that walks you through installation and developme
 * [CentOS 7.1 & Oracle Linux 7.1](https://www.microsoft.com/net/core#centos)
 * [openSUSE 13.2](https://www.microsoft.com/net/core#opensuse)
 
-For a getting started tutorial that walks you through installation and development of a simple .NET Core application, choose from the following options:
+For a getting started tutorial that walks you through development of a simple .NET Core application, choose from the following options:
 
 * [Getting started with .NET Core on macOS, using Visual Studio Code](tutorials/using-on-macos.md) - Use [Visual Studio Code](https://www.visualstudio.com/products/code-vs), Microsoft's lightweight cross-platform code editor. Though written primarily for macOS, the development procedures are substantially similar on Linux. 
 * [Getting started with .NET Core using the command line](tutorials/using-with-xplat-cli.md) - Use the [.NET Core cross-platform command-line interface (CLI)](tools/index.md).
@@ -58,7 +58,7 @@ For a getting started tutorial that walks you through installation and developme
 
 For installation instructions, see [Install for Mac OS X 10.11](https://www.microsoft.com/net/core#macos). 
 
-For a getting started tutorial that walks you through installation and development of a simple .NET Core application, choose from the following options:
+For a getting started tutorial that walks you through development of a simple .NET Core application, choose from the following options:
 
 * [Getting started with .NET Core on macOS, using Visual Studio Code](tutorials/using-on-macos.md) - Use [Visual Studio Code](https://www.visualstudio.com/products/code-vs), Microsoft's lightweight cross-platform code editor.  
 * [Getting started with .NET Core using the command line](tutorials/using-with-xplat-cli.md) - Use the [.NET Core cross-platform command-line interface (CLI)](tools/index.md).

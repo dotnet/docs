@@ -29,7 +29,7 @@ usage mechanisms should be similar.
 If using installers that require administrative privileges is not something that presents a problem, native installers for 
 each platform can be used to set up the build server. This approach, especially in the case of Linux build servers, has 
 one advantage which is automatic installing of dependencies needed for the SDK to run. The native installers will also 
-install a system-wide version of the SDK, which may be desired; if its not, you should look into the 
+install a system-wide version of the SDK, which may be desired; if it's not, you should look into the 
 [installer script usage](#using-the-installer-script) outlined below. 
 
 Using this approach is simple. For Linux, there is a choice of using a feed-based package manager, such as `apt-get` for 
@@ -77,13 +77,13 @@ Just use:
 os: Visual Studio 2015
 ```
 
-It's possibile to install a specific version of .NET Core SDK, see [example appveyor.yml](https://github.com/dotnet/core-docs/blob/master/appveyor.yml) 
+It's possible to install a specific version of .NET Core SDK, see [example appveyor.yml](https://github.com/dotnet/core-docs/blob/master/appveyor.yml) 
 for more info. 
 
-In the example the .NET Core SDK binaries are downloaded, unzipped in a subdirectory and added to `PATH` env var
+In the example, the .NET Core SDK binaries are downloaded, unzipped in a subdirectory and added to `PATH` env var.
 
 A build matrix can be added to run integration tests with multiple version of 
-the .NET Core SDK
+the .NET Core SDK.
 
 ```yaml
 environment:

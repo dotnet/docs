@@ -94,6 +94,7 @@
 ## [Numerics in .NET Core](standard/numerics.md)
 
 # [.NET Core Guide](core/index.md)
+## [Getting started](core/getting-started.md)
 ## [Tutorials](core/tutorials/index.md)
 ### [Getting started with .NET Core on Windows](core/tutorials/using-on-windows.md)
 ### [Getting started with .NET Core on macOS](core/tutorials/using-on-macos.md)

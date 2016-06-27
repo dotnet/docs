@@ -734,10 +734,10 @@ Type: Boolean
 For example:
 
     {
-		"runtimeOptions": {
-        	"configProperties": {
-            	"System.GC.Server": true
-			}
+        "runtimeOptions": {
+            "configProperties": {
+                "System.GC.Server": true
+            }
         }
     }
 
@@ -749,10 +749,10 @@ Type: Boolean
 For example:
 
     {
-		"runtimeOptions": {
-        	"configProperties": {
-            	"System.GC.Concurrent": true
-			}
+        "runtimeOptions": {
+            "configProperties": {
+                "System.GC.Concurrent": true
+            }
         }
     }
 
@@ -764,10 +764,10 @@ Type: Boolean
 For example:
 
     {
-		"runtimeOptions": {
-        	"configProperties": {
-            	"System.GC.RetainVM": true
-			}
+        "runtimeOptions": {
+            "configProperties": {
+                "System.GC.RetainVM": true
+            }
         }
     }
 
@@ -777,10 +777,10 @@ Type: Integer
 Overrides the number of minimum threads for the ThreadPool worker pool.
 
     {
-		"runtimeOptions": {
-        	"configProperties": {
-            	"System.Threading.ThreadPool.MinThreads": 4
-			}
+        "runtimeOptions": {
+            "configProperties": {
+                "System.Threading.ThreadPool.MinThreads": 4
+            }
         }
     }
 
@@ -790,10 +790,10 @@ Type: Integer
 Overrides the number of maximum threads for the ThreadPool worker pool.
 
     {
-		"runtimeOptions": {
-        	"configProperties": {
-            	"System.Threading.ThreadPool.MaxThreads": 25
-			}
+        "runtimeOptions": {
+            "configProperties": {
+                "System.Threading.ThreadPool.MaxThreads": 25
+            }
         }
     }
 
@@ -808,10 +808,10 @@ Type: String
 Name of the shared framework.
 
     {
-		"runtimeOptions": {
-        	"framework": {
-            	"name": "Microsoft.DotNetCore"
-			}
+        "runtimeOptions": {
+            "framework": {
+                "name": "Microsoft.DotNetCore"
+            }
         }
     }
 
@@ -821,10 +821,10 @@ Type: String
 Version of the shared framework.
 
     {
-		"runtimeOptions": {
-        	"framework": {
-            	"version": "1.0.1"
-			}
+        "runtimeOptions": {
+            "framework": {
+                "version": "1.0.1"
+            }
         }
     }
 
@@ -834,10 +834,10 @@ Type: Boolean
 **true** to use the framework from either the same or a higher version that differs only in the `SemVer` patch field. **false** for the host to use only the exact framework version. The default is **true**.
 
     {
-		"runtimeOptions": {
-        	"framework": {
-            	"rollForward": true
-			}
+        "runtimeOptions": {
+            "framework": {
+                "rollForward": true
+            }
         }
     }
 

@@ -1,6 +1,6 @@
 ---
-title: Learn C
-description: Learn C
+title: C# Guide
+description: C# Guide
 keywords: .NET, .NET Core
 author: BillWagner
 manager: wpickett
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 52db8280-0e53-40cf-858b-e8eef3997dea
 ---
 
-# Learn C#
+# C# Guide
 
 * [Tutorials](../tutorials/index.md)
     * [Console Application](../tutorials/getting-started-with-csharp/console-teleprompter.md)

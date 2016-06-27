@@ -38,7 +38,7 @@ For a getting started tutorial that walks you through development of a simple .N
 
 ## Linux
 
-.NET Core is supported in many 64-bit distributions/versions of Linux (click the links for installation instructions):
+.NET Core is supported by many 64-bit distributions/versions of Linux (click the links for installation instructions):
 
 * [Red Hat Enterprise Linux 7 Server](https://www.microsoft.com/net/core#redhat)
 * [Ubuntu 14.04, 16.04 & Linux Mint 17](https://www.microsoft.com/net/core#ubuntu)
@@ -54,7 +54,7 @@ For a getting started tutorial that walks you through development of a simple .N
 
 ## macOS
 
-.NET Core is supported in 64-bit macOS 10.11 (El Capitan) and above.
+.NET Core is supported by 64-bit macOS 10.11 (El Capitan) and above.
 
 For installation instructions, see [Install for Mac OS X 10.11](https://www.microsoft.com/net/core#macos). 
 

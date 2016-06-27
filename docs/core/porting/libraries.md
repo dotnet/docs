@@ -48,7 +48,7 @@ AppDomains can be used for different purposes on the .NET Framework. For code is
 
 ### Remoting
 
-For communication across processes, inter-process communication (IPC) mechanisms can be used as an alternative to Remoting, such as [Pipes](http://dotnet.github.io/api/System.IO.Pipes.html) or [Memory Mapped Files](http://dotnet.github.io/api/System.IO.MemoryMappedFiles.html).
+For communication across processes, inter-process communication (IPC) mechanisms can be used as an alternative to Remoting, such as [Pipes](https://.docs.microsoft.com/en-us/dotnet/core/api/system.io.pipes) or [Memory Mapped Files](hhttps://docs.microsoft.com/en-us/dotnet/core/api/system.io.memorymappedfiles.memorymappedfile#System_IO_MemoryMappedFiles_MemoryMappedFile).
 
 Across machines, you can use a network based solution as an alternative, preferably a low-overhead plain text protocol such as HTTP.  [KestrelHttpServer](https://github.com/aspnet/KestrelHttpServer), the web server used by ASP.NET Core, is an option here.  Remote proxy generation via [Castle.Core](https://github.com/castleproject/Core) is also an option to consider.
 
@@ -57,8 +57,8 @@ Across machines, you can use a network based solution as an alternative, prefera
 As an alternative to Binary Serialization, there are multiple different serialization technologies to choose.  You should choose one that fits your goals for formatting and footprint.  Popular choices include:
 
 * [JSON.NET](http://www.newtonsoft.com/json) for JSON
-* [Data contract serialization](http://dotnet.github.io/api/System.Runtime.Serialization.DataContractSerializer.html) for both XML and JSON
-* [XML serialization](http://dotnet.github.io/api/System.Xml.Serialization.XmlSerializer.html) for XML
+* [Data contract serialization](https://docs.microsoft.com/en-us/dotnet/core/api/system.runtime.serialization.datacontractserializer#System_Runtime_Serialization_DataContractSerializer) for both XML and JSON
+* [XML serialization](https://docs.microsoft.com/en-us/dotnet/core/api/system.xml.serialization.xmlserializer#System_Xml_Serialization_XmlSerializer) for XML
 * [protobuf-net](https://github.com/mgravell/protobuf-net) for Protocol Buffers
 
 Refer to the linked resources to learn about their benefits and choose what is appropriate for your needs.  There are many other serialization formats and technologies out there, many of which are open source.

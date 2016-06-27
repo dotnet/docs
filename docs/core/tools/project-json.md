@@ -157,14 +157,14 @@ An object that defines the package dependencies of the project, each key of this
 For example:
 
     "dependencies": {
-        "System.Reflection.Metadata": "1.2.0-rc3-23811",
+        "System.Reflection.Metadata": "1.3.0",
         "Microsoft.Extensions.JsonParser.Sources": {
           "type": "build",
-          "version": "1.0.0"
+          "version": "1.0.0-rc2-20221"
         },
         "Microsoft.Extensions.HashCodeCombiner.Sources": {
           "type": "build",
-          "version": "1.0.0"
+          "version": "1.1.0-alpha1-21456"
         },
         "Microsoft.Extensions.DependencyModel": "1.0.0-*"
     }
@@ -1099,7 +1099,7 @@ Specifies which frameworks this project supports, such as the .NET Framework or 
 For example:
 
     "frameworks": {
-        "dnxcore50": {
+        "netcoreapp1.0": {
             "buildOptions": {
                 "define": ["FOO", "BIZ"]
             }
@@ -1114,9 +1114,9 @@ Dependencies that are specific for this framework. This is useful in scenarios w
 For example:
 
     "frameworks": {
-        "dnxcore50": {
+        "netstandard1.5": {
             "dependencies": {
-                "Microsoft.Extensions.JsonParser.Sources": "1.0.0"
+                "Microsoft.Extensions.JsonParser.Sources": "1.0.0-rc2-20221"
             }
         }
     }
@@ -1159,7 +1159,7 @@ An object with a single property, `assembly`, whose value is the assembly path.
 For example:
 
     "frameworks": {
-      "dnxcore50": {
+      "netcoreapp1.0": {
          "bin": {
            "assembly" :"c:/otherProject/otherdll.dll"
         }
@@ -1174,9 +1174,9 @@ Specifies other framework profiles that this project is compatible with.
 For example:
 
     "frameworks": {
-      "dnxcore50": {
+      "netcoreapp1.0": {
          "imports": "portable-net45+win8"
       }
     }
 
-Will cause other packages targeting `portable-net45+win8` to be usable when targeting `dnxcore50` with the current project.
+Will cause other packages targeting `portable-net45+win8` to be usable when targeting `netcoreapp1.0` with the current project.

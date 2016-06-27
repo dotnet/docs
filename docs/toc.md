@@ -2,7 +2,7 @@
 # [About .NET](about/index.md)
 ## [.NET Products](about/products.md)
 
-# [Learn C#](csharp/index.md)
+# [C# Guide](csharp/index.md)
 ## [Tutorials](tutorials/index.md)
 ### [Console Application](tutorials/getting-started-with-csharp/console-teleprompter.md)
 ### [REST client](tutorials/getting-started-with-csharp/console-webapiclient.md)

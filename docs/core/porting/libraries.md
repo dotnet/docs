@@ -49,7 +49,7 @@ A key thing to understand is that **a project targeting a lower version cannot r
 
 It's recommended that you pick the lowest possible .NET Standard version and use that throughout your project.
 
-Read more in [The .NET Platform Standard Library]../standard/library.md).
+Read more in [.NET Platform Standard Library](../standard/library.md).
 
 ## Key Technologies Not Yet Available on the .NET Standard or .NET Core
 

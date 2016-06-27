@@ -15,7 +15,7 @@ ms.assetid: a0fd860d-d6b6-4659-b325-8a6e6f5fa4a1
 
 # Porting to .NET Core - Libraries
 
-With the release of The .NET Standard and .NET Core 1.0, there is an opportunity to port existing library code so that it can run cross-platform.  There are a number of things to learn if this is your goal, including unavailable technologies, how to account for the smaller number of APIs available on .NET Core 1.0, and how to use the tooling that ships with Preview 2 of the .NET Core SDK.
+With the release of .NET Core 1.0, there is an opportunity to port existing library code so that it can run cross-platform.  This article  the .NET Standard Library, unavailable technologies, how to account for the smaller number of APIs available on .NET Core 1.0, how to use the tooling that ships with .NET Core SDK Preview 2, and recommended approaches to porting your code.
 
 Porting is a task that may take time, especially if you have a large codebase.  You should also be prepared to adapt the guidance here as needed to best fit your code.  Every codebase is different, so this article attempts to frame things in a flexible way, but you may find yourself needing to diverge from the prescribed guidance.
 
@@ -27,11 +27,11 @@ This article also assumes that you have understood the [overview of the porting 
 
 ## Targeting the .NET Standard Library
 
-The first thing to understand about porting to the .NET Standard and .NET Core means targeting the [.NET Standard Library](../standard/library.md).  The .NET Standard Library is the formal specification of .NET APIs that are intended to be available on all .NET runtimes.  It is supported, in full, by the .NET Core runtime.
+The best way to build a cross-platform library for .NET Core is to target the [.NET Standard Library](../standard/library.md).  The .NET Standard Library is the formal specification of .NET APIs that are intended to be available on all .NET runtimes.  It is supported by the .NET Core runtime.
 
 What this means is that you'll have to make a tradeoff between APIs you can use and platforms you can support, and pick the version of the .NET Platform Standard that best suits the tradeoff you wish to make.
 
-As of right now, there are 7 different versions to consider: .NET Standard 1.0 through 1.6.  If you pick a higher version, you get access to more APIs at the cost of running on less targets.  If you pick a lower version, your code can run on more targets but at the cost of less APIs available to you.
+As of right now, there are 7 different versions to consider: .NET Standard 1.0 through 1.6.  If you pick a higher version, you get access to more APIs at the cost of running on fewer targets.  If you pick a lower version, your code can run on more targets but at the cost of fewer APIs available to you.
 
 For your convenience, here is a matrix of each .NET Standard version and each specific area it runs on:
 
@@ -48,7 +48,7 @@ For your convenience, here is a matrix of each .NET Standard version and each sp
 
 A key thing to understand is that **a project targeting a lower version cannot reference a project targeting a higher version**.  For example, a project targeting the .NET Platform Standard version 1.2 cannot reference projects that target .NET Platform Standard version 1.3 or higher.  Projects **can** reference lower versions, though, so a project targeting .NET Platform Standard 1.3 can reference a project targeting .NET Platform Standard 1.2 or lower.
 
-It's recommended that you pick the lowest possible .NET Standard version and use that throughout your library.
+It's recommended that you pick the lowest possible .NET Standard version and use that throughout your project.
 
 Read more in [The .NET Platform Standard Library]../standard/library.md).
 
@@ -75,20 +75,22 @@ As an alternative to Binary Serialization, there are multiple different serializ
 * [XML serialization](https://docs.microsoft.com/en-us/dotnet/core/api/system.xml.serialization.xmlserializer#System_Xml_Serialization_XmlSerializer) for XML
 * [protobuf-net](https://github.com/mgravell/protobuf-net) for Protocol Buffers
 
-Refer to the linked resources to learn about their benefits and choose what is appropriate for your needs.  There are many other serialization formats and technologies out there, many of which are open source.
+Refer to the linked resources to learn about their benefits and choose the ones for your needs.  There are many other serialization formats and technologies out there, many of which are open source.
 
-### Sandboxing
+### Sandboxes
 
 As an alternative to Sandboxing, you can use operating system provided security boundaries, such as user accounts for running processes with the least set of privileges.
 
 ## Overview of `project.json`
 
-The [project.json project model](../tools/project-json.md) is a project model that ships with the Preview 2 SDK with .NET Core 1.0.  While it is eventually going to be deprecated, it can be used to build libraries on the .NET Standard today.  It offers some benefits you may wish to take advantage of today:
+The [project.json project model](../tools/project-json.md) is a project model that ships with .NET Core SDK 1.0 Preview 2.  It offers some benefits you may wish to take advantage of today:
 
 * Simple multitargeting where target-specific assemblies can be generated from a single build.
 * The ability to easily generate a NuGet package with a build of the project.
 * No need to list files in your project file.
 * Unification of NuGet package dependencies and project-to-project dependencies.
+
+> While `project.json` is eventually going to be deprecated, it can be used to build libraries on the .NET Standard today.
 
 ### The Project File: `project.json`
 
@@ -240,9 +242,9 @@ You can target .NET Core with the traditional project system in Visual Studio, b
 
 If you have more advanced project system needs, this should be your choice.  Note that if you wish to multitarget by generating platform-specific assemblies like with the `xproj` project system, you'll need to create a "Bait and Switch" PCL, as described in [How to Make Portable Class Libraries Work for You](https://blogs.msdn.microsoft.com/dsplaisted/2012/08/27/how-to-make-portable-class-libraries-work-for-you/).
 
-## Retargeting your .NET Framework Code to .NET Framework 4.6.2
+## Retargeting your .NET Framework Code to .NET Framework 4.6.1
 
-If your code is not targeting .NET Framework 4.6.2, it's highly recommended that you retarget.  This ensures that you can use the latest API alternatives for cases where the .NET Standard can't support existing APIs.
+If your code is not targeting .NET Framework 4.6.1, it's recommended that you retarget.  This ensures that you can use the latest API alternatives for cases where the .NET Standard can't support existing APIs.
 
 For each of your projects in Visual Studio you wish to port, do the following:
 

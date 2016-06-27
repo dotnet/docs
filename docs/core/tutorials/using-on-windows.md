@@ -20,13 +20,21 @@ Visual Studio 2015 provides a full-featured development environment for developi
 
 ## Prerequisites
 
+<<<<<<< 3d43ed87757f91be40b32b5b46bc112f8a9f6a86
 * [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs). If you don't have Visual Studio already, you can download [Visual Studio Community 2015](https://www.visualstudio.com/products/visual-studio-community-vs) for free.
+=======
+* Visual Studio 2015 Update 3. If you don't have Visual Studio already, you can download [Visual Studio Community 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs) for free. 
+>>>>>>> Updated Using on Windows topic
 
 * NuGet Manager extension for Visual Studio. NuGet is the package manager for the Microsoft development platform including .NET Core. When you use NuGet to install a package, it copies the library files to your solution and automatically updates your project (add references, change config files, etc.).
 
+<<<<<<< 3d43ed87757f91be40b32b5b46bc112f8a9f6a86
 * [.NET Core Tooling Preview 2 for Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkId=817245). This installs templates and other tools for Visual Studio 2015, as well as .NET Core 1.0 itself.
+=======
+* .NET Core for Visual Studio 2015. This installs templates and other tools as well as .NET Core itself.
+>>>>>>> Updated Using on Windows topic
 
-* A supported version of the Windows client or server operating system. For a list of supported versions, see [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.0/Release-Notes-1.0.0.md).
+* A supported version of the Windows client or server operating system. For a list of supported versions, see [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0.md).
 
 ## Getting Started
 
@@ -38,9 +46,13 @@ The following steps will set up Visual Studio 2015 for .NET Core development:
 
    * In the About Microsoft Visual Studio dialog, the version number should include "Update 3" (or higher).
 
+<<<<<<< 3d43ed87757f91be40b32b5b46bc112f8a9f6a86
    * If Update 3 (or higher) is not already installed, you can download [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
 
 2. Download and install the [MSI Installer for .NET Core Tooling Preview 2](https://go.microsoft.com/fwlink/?LinkId=817245). This will install the .NET Core Tooling Preview 2 for Visual Studio 2015, which provides both .NET Core 1.0 and the Visual Studio tool set for .NET Core 1.0.
+=======
+2. Download and install the [.NET Core for Visual Studio official MSI Installer](https://go.microsoft.com/fwlink/?linkid=817245). This will install the .NET Core Tooling Preview 1 for Visual Studio 2015.
+>>>>>>> Updated Using on Windows topic
 
 3. Download and install [NuGet Manager extension for Visual Studio](https://dist.nuget.org/visualstudio-2015-vsix/v3.5.0-beta/NuGet.Tools.vsix). This will install the latest version of the extension.
 
@@ -53,7 +65,7 @@ A solution using only .NET Core projects
 
 ### Writing the library
 
-1. In Visual Studio, choose **File**, **New**, **Project**. In the **New Project** dialog, expand the **Visual C#** and **.NET Core** nodes, and choose **Class Library (.NET Core)**. 
+1. In Visual Studio, choose **File**, **New**, **Project**. In the **New Project** dialog, expand the **Visual C#** node and choose the **.NET Core** node, and then choose **Class Library (.NET Core)**. 
 
 2. Name the project "Library" and the solution "Golden". Leave **Create directory for solution** checked. Click **OK**.
 
@@ -92,9 +104,9 @@ A solution using only .NET Core projects
 
 7. Open the context menu for the **References** node and choose **Manage NuGet Packages**.
 
-8. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Check the **Including prerelease** checkbox, and then browse for **xUnit** version 2.1.0, and then click **Install**. 
+8. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Check the **Including prerelease** checkbox, and then browse for **xUnit** version 2.2.0 or newer, and then click **Install**. 
 
-9. Browse for **dotnet-test-xunit** version 1.0.0-rc2 or newer, and then click **Install**.
+9. Browse for **dotnet-test-xunit** version 2.2.0 or newer, and then click **Install**.
 
 10. Edit `project.json` and replace `"imports": "dnxcore50"` with `"imports": [ "dnxcore50", "portable-net45+win8" ]`. 
 
@@ -109,7 +121,7 @@ A solution using only .NET Core projects
         Assert.Equal(42, new Thing().Get(42));
     }
     ```
-    * Optionally, delete the `Program.cs` file from the **TestLibrary** project, and remove `"buildOptions": {"emitEntryPoint": true}` from `project.json`.
+    * Optionally, delete the `Program.cs` file from the **TestLibrary** project, and remove `"buildOptions": {"emitEntryPoint": true,` from `project.json`.
 
    You should now be able to build the solution. 
    

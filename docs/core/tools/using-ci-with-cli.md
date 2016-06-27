@@ -29,7 +29,7 @@ usage mechanisms should be similar.
 If using installers that require administrative privileges is not something that presents a problem, native installers for 
 each platform can be used to set up the build server. This approach, especially in the case of Linux build servers, has 
 one advantage which is automatic installing of dependencies needed for the SDK to run. The native installers will also 
-install a system-wide version of the SDK, which may be desired; if its not, you should look into the 
+install a system-wide version of the SDK, which may be desired; if it's not, you should look into the 
 [installer script usage](#using-the-installer-script) outlined below. 
 
 Using this approach is simple. For Linux, there is a choice of using a feed-based package manager, such as `apt-get` for 
@@ -67,6 +67,33 @@ The below sections show examples of configurations using the mentioned CI SaaS o
 **TODO**
 
 ### AppVeyor
-**TODO**
 
+The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK preview1 already installed 
+in the build worker image `Visual Studio 2015`
+
+Just use:
+
+```yaml
+os: Visual Studio 2015
+```
+
+It's possible to install a specific version of .NET Core SDK, see [example appveyor.yml](https://github.com/dotnet/core-docs/blob/master/appveyor.yml) 
+for more info. 
+
+In the example, the .NET Core SDK binaries are downloaded, unzipped in a subdirectory and added to `PATH` env var.
+
+A build matrix can be added to run integration tests with multiple version of 
+the .NET Core SDK.
+
+```yaml
+environment:
+  matrix:
+    - CLI_VERSION: 1.0.0-preview2-003118
+    - CLI_VERSION: Latest
+
+install:
+  # .NET Core SDK binaries
+  - ps: $url = "https://dotnetcli.blob.core.windows.net/dotnet/preview/Binaries/$($env:CLI_VERSION)/dotnet-dev-win-x64.$($env:CLI_VERSION.ToLower()).zip"
+  # follow normal installation from binaries
+```
 

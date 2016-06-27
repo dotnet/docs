@@ -1,4 +1,3 @@
-
 ---
 title: Porting to .NET Core - Libraries
 description: Porting to .NET Core - Libraries
@@ -15,7 +14,7 @@ ms.assetid: a0fd860d-d6b6-4659-b325-8a6e6f5fa4a1
 
 # Porting to .NET Core - Libraries
 
-With the release of .NET Core 1.0, there is an opportunity to port existing library code so that it can run cross-platform.  This article  the .NET Standard Library, unavailable technologies, how to account for the smaller number of APIs available on .NET Core 1.0, how to use the tooling that ships with .NET Core SDK Preview 2, and recommended approaches to porting your code.
+With the release of .NET Core 1.0, there is an opportunity to port existing library code so that it can run cross-platform.  This article discusses the .NET Standard Library, unavailable technologies, how to account for the smaller number of APIs available on .NET Core 1.0, how to use the tooling that ships with .NET Core SDK Preview 2, and recommended approaches to porting your code.
 
 Porting is a task that may take time, especially if you have a large codebase.  You should also be prepared to adapt the guidance here as needed to best fit your code.  Every codebase is different, so this article attempts to frame things in a flexible way, but you may find yourself needing to diverge from the prescribed guidance.
 

@@ -20,7 +20,7 @@ In the .NET Core library, the namespace name serves to identify a type's functio
  
 The .NET Core class library includes the following namespaces:
 
-<table>
+<table class="table table-bordered table-striped table-condensed">
 <thead>
    <tr>
       <th>Namespace</th>

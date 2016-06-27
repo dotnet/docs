@@ -15,6 +15,8 @@
 Welcome to .NET
 ===============
 
+> Check out the ["Getting Started with .NET Core" tutorials](core/tutorials/index.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
+
 Welcome to .NET! You can build any kind of application you want with .NET, from cloud to IoT to games. You can start building your next application today, for Windows, Linux, Android, macOS, and iOS. There are millions of developers that use .NET to power mission critical applications, personal apps and immersive games. You can write the next one.
 
 You can develop apps and games on Windows, macOS and Linux. There are free tools that you can use to build apps or games and deploy them on servers or desktops or publish them to app stores. It's accessible to students and  used by large businesses throughout the world.

@@ -24,7 +24,7 @@ Visual Studio 2015 provides a full-featured development environment for developi
 
 * NuGet Manager extension for Visual Studio. NuGet is the package manager for the Microsoft development platform including .NET Core. When you use NuGet to install a package, it copies the library files to your solution and automatically updates your project (add references, change config files, etc.).
 
-* [.NET Core Tooling Preview 2 for Visual Studio 2015]((https://go.microsoft.com/fwlink/?LinkId=817245)). This installs templates and other tools for Visual Studio 2015, as well as .NET Core 1.0 itself.
+* [.NET Core Tooling Preview 2 for Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkId=817245). This installs templates and other tools for Visual Studio 2015, as well as .NET Core 1.0 itself.
 
 * A supported version of the Windows client or server operating system. For a list of supported versions, see [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.0/Release-Notes-1.0.0.md).
 

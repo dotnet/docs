@@ -1,5 +1,5 @@
 ---
-title: Porting to .NET Core - Analyzing your Third-Party Party Dependencies
+title: Porting to .NET Core - Analyzing your Third-Party Dependencies
 description: Porting to .NET Core - Analyzing your Third-Party Dependencies
 keywords: .NET, .NET Core
 author: cartermp
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: b446e9e0-72f6-48f6-92c6-70ad0ce3f86a
 ---
 
-# Porting to .NET Core - Analyzing your Third-Party Party Dependencies
+# Porting to .NET Core - Analyzing your Third-Party Dependencies
 
 The first step in the porting process is to understand your third party dependencies.  You need to figure out which of them, if any, don't yet run on .NET Core, and develop a contingency plan for those which don't run on .NET Core.
 

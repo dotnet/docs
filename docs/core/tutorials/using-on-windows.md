@@ -34,7 +34,7 @@ The following steps will set up Visual Studio 2015 for .NET Core development:
 
 1. Verify that you're running Visual Studio 2015 Update 3:
 
-   * On the **File** menu, choose **Help**, **About Microsoft Visual Studio**.
+   * On the **Help** menu, choose **About Microsoft Visual Studio**.
 
    * In the About Microsoft Visual Studio dialog, the version number should include "Update 3" (or higher).
 

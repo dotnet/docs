@@ -12,8 +12,7 @@ ms.devlang: dotnet
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 ---
 
-.NET Standard Library
-=====================
+# .NET Standard Library
 
 The .NET Standard Library is a formal specification of .NET APIs that are intended to be available on all .NET runtimes. The motivation behind the Standard Library is establishing greater uniformity in the .NET ecosystem. [ECMA 335](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) continues to establish uniformity for .NET runtime behavior, but there is no similar spec for the .NET Base Class Libraries (BCL) for .NET library implementations. 
 
@@ -25,8 +24,7 @@ The .NET Standard Library enables the following key scenarios:
 
 The various .NET runtimes implement specific versions of the .NET Standard Library. Each .NET runtime version advertises the highest .NET Standard version it supports, a statement that means it also supports previous versions. For example, the .NET Framework 4.6 implements the .NET Standard Library 1.3, which means that it exposes all APIs defined in .NET Standard Library versions 1.0 through 1.3. Similarly, the .NET Framework 4.6.2 implements .NET Standard Library 1.5, while .NET Core 1.0 implements the .NET Standard Library 1.6.
 
-.NET Platforms Support
-======================
+## .NET Platforms Support
 
 You can see the complete set of .NET runtimes that support the .NET Standard Library.
 
@@ -41,8 +39,7 @@ You can see the complete set of .NET runtimes that support the .NET Standard Lib
 |Windows Phone|wpa|&rarr;|&rarr;|8.1|||||
 |Windows Phone Silverlight|wp|8.0|||||||
 
-Comparison to Portable Class Libraries
-======================================
+## Comparison to Portable Class Libraries
 
 .NET Standard Library can be thought of as the next generation of [Portable Class Libraries (PCL)](https://msdn.microsoft.com/library/gg597391.aspx). The .NET Standard Library improves on the experience of creating portable libraries by curating a standard BCL and establishing greater uniformity across .NET runtimes as a result. A library that targets the .NET Standard Library is a PCL or a ".NET Standard-based PCL". Existing PCLs are "profile-based PCLs".
 
@@ -58,13 +55,11 @@ Differences:
 - The .NET Standard Library linearly versions, while PCL profiles do not.
 - PCL profiles represents Microsoft platforms while the .NET Standard Library is agnostic to platform.
 
-Specification
-=============
+## Specification
 
 The .NET Standard Library spec is a standardized set of APIs. The spec is maintained by .NET runtime implementors, specifically Microsoft (includes .NET Framework, .NET Core and Mono) and Unity. A public feedback process is used as part of establishing new .NET Standard Library versions.
 
-Official Artifacts
-------------------
+### Official Artifacts
 
 The official spec is a set of .cs files that define the APIs that are part of the standard. The [ref directory](https://github.com/dotnet/corefx/tree/master/src/System.Runtime/ref) for each [component](https://github.com/dotnet/corefx/tree/master/src) defines the .NET Standard Library APIs. While the ref artifacts reside in the [CoreFX repo](https://github.com/dotnet/corefx), they are not .NET Core specific.
 
@@ -80,8 +75,7 @@ Derivative artifacts are provided to enable more convenient reading and to enabl
 - API list in markdown (TBD)
 - Reference assemblies, distributed as [NuGet packages](../core/packages.md) and referenced by the [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library/) metapackage.
 
-Package Representation
-----------------------
+### Package Representation
 
 The primary distribution vehicle for the .NET Standard Library reference assemblies is [NuGet packages](../core/packages.md). Implementations will be delivered in a variety of ways, appropriate for each .NET runtime.
 
@@ -89,8 +83,7 @@ NuGet packages target one of more [frameworks](frameworks.md). The .NET Standard
 
 The `NETStandard.Library` metapackage references the complete set of NuGet packages that define the .NET Standard Library.  The most common way to target `netstandard` is by referencing this metapackage. It describes and provides access to the ~40 .NET  libraries and associated APIs that define the .NET Standard Library. You can reference additional packages that target `netstandard` to get access to additional APIs. 
 
-Versioning
-----------
+### Versioning
 
 The spec is not singular, but an incrementally growing and linearly versioned set of APIs. The first version of the standard establishes a baseline set of APIs. Subsequent versions add APIs and inherit APIs defined by previous versions. There is no established provision for removing APIs from the standard.
 
@@ -104,8 +97,7 @@ APIs added to any of the runtimes (such as, .NET Framework, .NET Core and Mono) 
 - Use libraries that depend on the same .NET Standard Library version or lower.
 - If you find a library that depends on a higher .NET Standard Library version, you either need to adopt that same version or decide not to use that library.
 
-PCL Compatibility
------------------
+### PCL Compatibility
 
 The .NET Standard Library is compatible with a subset of PCL profiles. .NET Standard Library 1.0, 1.1 and 1.2 each overlap with a set of PCL profiles. This overlap was created for two reasons:
 
@@ -132,7 +124,6 @@ You can see the set of PCL profiles that are compatible with the .NET Standard:
 | Profile157 .NET Portable Subset (Windows 8.1, Windows Phone 8.1, Windows Phone Silverlight 8.1) | 1.0 |
 | Profile259 .NET Portable Subset (.NET Framework 4.5, Windows 8, Windows Phone 8.1, Windows Phone Silverlight 8) | 1.0 |
 
-Targeting .NET Standard Library
-===============================
+## Targeting .NET Standard Library
 
 You can [build .NET Standard Libraries](../core/tutorials/libraries.md) using a combination of the `netstandard` framework and the NETStandard.Library metapackage. You can see examples of [targeting the .NET Standard Library with .NET Core tools](../core/packages.md).

@@ -31,7 +31,7 @@ The C# language provides
 features for both these scenarios. This article provides an overview
 of those features.
 
-# Iterating with foreach
+## Iterating with foreach
 
 Enumerating a collection is simple: The `foreach` keyword enumerates
 a collection, executing the embedded statement once for each element
@@ -53,7 +53,7 @@ to generate the code necessary to iterate a collection: `IEnumerable<T>` and
 Both of these interfaces also have non-generic counterparts: `IEnumerable` and 
 `IEnumerator`. The [generic](generics.md) versions are preferred for modern code.
 
-# Enumeration sources with iterator methods
+## Enumeration sources with iterator methods
 
 Another great feature of the C# language enables you to build methods that create
 a source for an enumeration. These are referred to as *iterator methods*. An iterator
@@ -197,7 +197,7 @@ Look at the methods above. The first uses the standard `return` statement to ret
 either an empy collection, or the iterator created by the second method. The second
 method uses the `yield return` statement to create the requested sequence.
 
-# Deeper Dive into `foreach`
+## Deeper Dive into `foreach`
 
 The `foreach` statement expands into a standard idiom that uses the
 `IEnumable<T>` and `IEnumerator<T>` interfaces to iterate across all

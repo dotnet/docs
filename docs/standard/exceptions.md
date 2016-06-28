@@ -110,7 +110,7 @@ The common language runtime catches exceptions that are not caught by a catch bl
 > [!NOTE] 
 > Almost any line of code can cause an exception, particularly exceptions that are thrown by the common language runtime itself, such as [OutOfMemoryException](https://docs.microsoft.com/dotnet/core/api/System.OutOfMemoryException). Most applications don't have to deal with these exceptions, but you should be aware of this possibility when writing libraries to be used by others. For suggestions on when to set code in a Try block, see [Best Practices for Exceptions](#best-practices-for-exceptions).
  
-# How to use specific exceptions in a Catch block
+## How to use specific exceptions in a Catch block
 
 The preceding code example illustrates a basic **catch** statement that catches any exception. In general, though, it's good programming practice to catch a specific type of exception rather than use a basic **catch** statement.
 

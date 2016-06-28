@@ -24,7 +24,7 @@ Let's go through these standard patterns so you will have all
 the knowledge you need to create standard event sources, and
 subscribe and process standard events in your code.
 
-# Event Delegate Signatures
+## Event Delegate Signatures
 
 The standard signature for a .NET event delegate is:
 
@@ -109,7 +109,7 @@ public class FileSearcher
 }
 ```
 
-# Definining and Raising Field-Like Events
+## Definining and Raising Field-Like Events
 
 The simplest way to add an event to your class is to declare that
 event as a public field, as in the above example:
@@ -144,7 +144,7 @@ be a different instance of the delegate, and silently do nothing.
 Code outside the class cannot raise the event, nor can it perform any
 other operations.
 
-# Returning Values from Event Subscribers
+## Returning Values from Event Subscribers
 
 Your simple version is working fine. Let's add another feature:
 Cancellation.
@@ -228,7 +228,7 @@ EventHandler<FileFoundArgs> handler = (sender, eventArgs) =>
 };
 ```
 
-# Adding Another Event Declaration
+## Adding Another Event Declaration
 
 Let's add one more feature, and demonstrate other language idioms
 for events. Let's add an overload of the `Search()` method that

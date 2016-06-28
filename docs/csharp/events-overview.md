@@ -39,7 +39,7 @@ Subscribing to an event also creates a coupling between two objects (the event
 source, and the event sink). You need to ensure that the event sink unsubscribes
 from the event source when no longer interested in events.
 
-# Design Goals for Event Support
+## Design Goals for Event Support
 
 The language design for events targets these goals.
 
@@ -57,7 +57,7 @@ also support having no event subscribers attached.
 You can see that the goals for events are very similar to the goals for delegates.
 That's why the event language support is built on the delegate language support.
 
-# Language Support for Events
+## Language Support for Events
 
 The syntax for defining events, and subscribing or unsubscribing from events is
 an extension of the syntax for delegates.

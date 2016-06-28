@@ -48,7 +48,7 @@ particular base class. You don't need to implement a specific interface.
 The only requirement is to provide the implementation of one method that
 is fundamental to the task at hand.
 
-# Building Your Own Components with Delegates
+## Building Your Own Components with Delegates
 
 Let's build on that example by creating a component using a design that
 relies on delegates.
@@ -79,7 +79,7 @@ to different storage media. The built in support for multicast delegates
 makes it easy to support scenarios where messages must be written to multiple
 locations (a file, and a console).
 
-# A First Implementation
+## A First Implementation
 
 Let's start small: the initial implementation will accept new messages,
 and write them using any attached delegate. You can start with one delegate
@@ -115,7 +115,7 @@ the WriteMessage delegate declared in the logger:
 Logger.WriteMessage += LogToConsole;
 ```
 
-# Practices
+## Practices
 
 Our sample so far is fairly simple, but it still demonstrates some
 of the important guidelines for designs involving delegates.
@@ -129,7 +129,7 @@ The interfaces used are as minimal and as flexible as possible: To create
 a new output logger, you must create one method. That method may be a static
 method, or an instance method. It may have any access.
 
-# Formatting Output
+## Formatting Output
 
 Let's make this first version a bit more robust, and then start
 creating other logging mechanisms.
@@ -181,7 +181,7 @@ public static class Logger
     }
 }
 ```
-# Practices
+## Practices
 
 You've added new features to the logging infrastructure. Because
 the logger component is very loosely coupled to any output mechanism,
@@ -194,7 +194,7 @@ any changes to other locations. In fact, in a larger application, the logger
 output classes might be in a different assembly, and not even need to be
 rebuilt.
 
-# Building a Second Output Engine
+## Building a Second Output Engine
 
 The Log component is coming along well. Let's add one more output
 engine that logs messages to a file. This will be a slightly more
@@ -257,7 +257,7 @@ delegates without any other issues to the system:
 Logger.WriteMessage -= LogToConsole;
 ```
 
-# Practices
+## Practices
 
 Now, you've added a second output handler for the logging sub-system.
 This one needs a bit more infrastructure to correctly support the file
@@ -285,7 +285,7 @@ more coupling between the classes.
 None of the code in the Logger class would need to be updated
 in order to support either scenario.
 
-# Handling Null Delegates
+## Handling Null Delegates
 
 Finally, let's update the LogMessage method so that it is robust
 for those cases when no output mechanism is selected. The current
@@ -312,7 +312,7 @@ a type safe `Invoke` method for any delegate type declared. In this example,
 that means `Invoke` takes a single `string` argument, and has a void
 return type.
 
-# Summary of Practices
+## Summary of Practices
 
 You've seen the beginnings of a log component that could be expanded
 with other writers, and other features. By using delegates in the design

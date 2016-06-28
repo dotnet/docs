@@ -22,7 +22,7 @@ briefly introduces unit tests (and how they differ from other kinds of tests).
 Linked resources demonstrates how to add a test project to your solution and
 then run unit tests using either the command line or Visual Studio.
 
-# Getting Started with Testing
+## Getting Started with Testing
  
 Having a suite of automated tests is one of the best ways to ensure a
 software application does what its authors intended it to do. There are

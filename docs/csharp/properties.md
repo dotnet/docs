@@ -23,7 +23,7 @@ However, unlike fields, properties are implemented
 with accessors that define the statements executed
 when a property is accessed or assigned.
 
-# Property Syntax
+## Property Syntax
 The syntax for properties is a natural extension to
 fields. A field defines a storage location:
 
@@ -78,13 +78,13 @@ That's the basics of the syntax. There are many different variations that suppor
 a variety of different design idioms. Let's explore those, and learn the syntax
 options for each. 
 
-# Scenarios
+## Scenarios
 
 The examples above showed one of the simplest cases of property definition:
 a read-write property with no validation. By writing the code you want in the
 `get` and `set` accessors, you can create many different scenarios.  
 
-## Validation
+### Validation
 
 You can write code in the `set` accessor to ensure that the values represented
 by a property are always valid. For example, suppose one rule for the `Person`
@@ -121,7 +121,7 @@ That is a simple case of validation. You can extend this same syntax to anything
 in your scenario. You can check the relationships between different properties, or validate
 against any external conditions. Any valid C# statements are valid in a property accessor.
 
-## Read-only
+### Read-only
 
 Up to this point, all the property definitions you have seen are read/write properties
 with public accessors. That's not the only valid accessibility for properties.
@@ -154,7 +154,7 @@ It is also legal to place the more restrictive modifier on the `get` accessor. F
 have a `public` property, but restrict the `get` accessor to `private`. That scenario is rarely done
 in practice.
  
-## Computed Properties
+### Computed Properties
 
 A property does not need to simply return the value of a member field. You can create properties
 that return a computed value. Let's expand the `Person` object to return the full name, computed
@@ -214,7 +214,7 @@ public class Person
 define a method that contain a single expression. Here, that
 expression returns the full name for the person object.
 
-## Lazy Evaluated Properties
+### Lazy Evaluated Properties
 
 You can mix the concept of a computed property with storage and create
 a *lazy evaluated property*.  For example, you could update the `FullName`
@@ -301,7 +301,7 @@ details of the implementation. None of these internal changes affect the
 use of the Person object. That's the key reason for using Properties to
 expose data members of an object. 
  
-## INotifyPropertyChanged
+### INotifyPropertyChanged
 
 A final scenario where you need to write code in a property accessor is to
 support the `INotifyPropertyChanged` interface used to notify data binding

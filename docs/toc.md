@@ -9,9 +9,7 @@
 ### [Working with LINQ](tutorials/getting-started-with-csharp/working-with-linq.md)
 ### [Microservices hosted in Docker](tutorials/getting-started-with-csharp/microservices.md)
 ## [🔧 Tour of C#](csharp/features.md)
-### What's new in C# 6
-<!-- This page, or its parent should point to the Roslyn repo for folks that want
-to know what's next -->
+### [What's new in C# 6](csharp/csharp-6.md)
 ## [🔧 C# Concepts](csharp/concepts.md)
 ### [🔧 C# Type system](csharp/type-system.md)
 ### [Properties](csharp/properties.md)
@@ -96,6 +94,7 @@ to know what's next -->
 ## [Numerics in .NET Core](standard/numerics.md)
 
 # [.NET Core Guide](core/index.md)
+## [Getting started](core/getting-started.md)
 ## [Tutorials](core/tutorials/index.md)
 ### [Getting started with .NET Core on Windows](core/tutorials/using-on-windows.md)
 ### [Getting started with .NET Core on macOS](core/tutorials/using-on-macos.md)
@@ -103,6 +102,7 @@ to know what's next -->
 ### [Developing Libraries with Cross Platform Tools](core/tutorials/libraries.md)
 ### [Developing ASP.NET Core applications](core/tutorials/aspnet-core.md)
 ### [How to Manage Package Dependency Versions for .NET Core 1.0](core/tutorials/managing-package-dependency-versions.md)
+### [Using MSBuild to build .NET Core projects](core/tutorials/target-dotnetcore-with-msbuild.md)
 ## [Deploying](core/deploying/index.md)
 ### [🔧 Deploying Applications](core/deploying/applications.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
@@ -113,6 +113,7 @@ to know what's next -->
 ### [Servicing](core/versions/servicing.md)
 ## [Runtime IDentifier catalog](core/rid-catalog.md)
 ## [.NET Core Tools](core/tools/index.md)
+### [Telemetry](core/tools/telemetry.md)
 ### [Extensibility Model](core/tools/extensibility.md)
 ### [Test communication protocol](core/tools/test-protocol.md)
 ### [Continuous Integration](core/tools/using-ci-with-cli.md)

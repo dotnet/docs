@@ -12,13 +12,11 @@ ms.devlang: dotnet
 ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 ---
 
-Frameworks
-==========
+# Frameworks
 
 The .NET ecosystem has a concept of frameworks. Frameworks define the API that you can use to target a particular platform. The .NET Framework 4.6 is one of those platforms. Frameworks are used in Visual Studio and other IDEs and editors to provide you with the correct set of APIs. They are also used by NuGet, for both production and consumption of NuGet packages, to ensure that you produce and use appropriate packages (and underlying assets) for the framework you are targeting. One can think of frameworks as one of the key currencies in the .NET ecosystem. The concept is there for correctness, to help you and your customers seeing [MissingMethodException](https://docs.microsoft.com/dotnet/core/api/System.MissingMethodException) and friends at runtime.
 
-Framework Versions
-==================
+## Framework Versions
 
 The table below defines the set of frameworks that you can use, how they are referred to and which version of the [.NET Standard Library](library.md) that they implement.
 
@@ -30,8 +28,7 @@ The table below defines the set of frameworks that you can use, how they are ref
 
 Note: These framework versions are the latest stable versions. There may be pre-released versioned as well that are not described by this table.
 
-Writing about Frameworks
-========================
+## Writing about Frameworks
 
 There are multiple ways to refer to frameworks in written form, most of which are used in this documentation. They are described below, both as a legend for interpreting the documentation but also to guide use in other documents.
 

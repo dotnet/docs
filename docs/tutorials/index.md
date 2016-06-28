@@ -1,6 +1,6 @@
 ---
-title: CTutorials
-description: CTutorials
+title: C# Tutorials
+description: C# Tutorials
 keywords: .NET, .NET Core
 author: BillWagner
 manager: wpickett

@@ -52,7 +52,7 @@ You can get started developing .NET Core apps by following these step-by-step tu
 * [Getting started with .NET Core on macOS, using Visual Studio Code](tutorials/using-on-macos.md) - Use [Visual Studio Code](https://www.visualstudio.com/products/code-vs), Microsoft's lightweight cross-platform code editor. This tutorial is written for macOS, but Visual Studio Code also works on Linux. 
 * [Getting started with .NET Core using the command line](tutorials/using-with-xplat-cli.md) - Use any code editor with the [.NET Core cross-platform command-line interface (CLI)](tools/index.md).
 
-.Net Core is supported by the Linux distributions and versions listed above in the installation links.
+.NET Core is supported by the Linux distributions and versions listed above in the installation links.
 
 ## OS X / macOS
 

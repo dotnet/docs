@@ -50,18 +50,26 @@ when you first run the `dotnet` tool, you see the following text. This is how Mi
 Welcome to .NET Core!
 ---------------------
 
-Learn more about .NET Core @ https://aka.ms/dotnet-docs. Use dotnet --help to see available commands or go to https://aka.ms/dotnet-cli-docs.
+Learn more about .NET Core @ https://aka.ms/dotnet-docs. Use dotnet --help to
+see available commands or go to https://aka.ms/dotnet-cli-docs.
 
 Telemetry
 --------------
 
-The .NET Core tools collect usage data in order to improve your experience. The data is anonymous and does not include commandline arguments. The data is collected by Microsoft and shared with the community.
-You can opt out of telemetry by setting a DOTNET_CLI_TELEMETRY_OPTOUT environment variable to 1 using your favorite shell.
+The .NET Core tools collect usage data in order to improve your experience.
+The data is anonymous and does not include commandline arguments. The data is
+collected by Microsoft and shared with the community.
 
-You can read more about .NET Core tools telemetry @ https://aka.ms/dotnet-cli-telemetry.
+You can opt out of telemetry by setting a DOTNET_CLI_TELEMETRY_OPTOUT
+environment variable to 1 using your favorite shell.
+
+You can read more about .NET Core tools telemetry @ https://aka.ms/dotnet-cli-
+telemetry.
 
 Configuring...
 -------------------
 
-A command is running to initially populate your local package cache, to improve restore speed and enable offline access. This command will take up to a minute to complete and will only happen once.
+A command is running to initially populate your local package cache, to
+improve restore speed and enable offline access. This command will take up to
+a minute to complete and will only happen once. 
 ```

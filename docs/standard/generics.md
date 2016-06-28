@@ -14,7 +14,7 @@ ms.assetid: a315b111-8e48-446c-ab19-acb6405894a7
 
 # Generic Types (Generics) Overview
 
-We use generics all the time in C#, whether implicitly of explicitly. When you use LINQ in C#, did you ever notice that you are working with IEnumerable<T>? Or if you every saw an online sample of a “generic repository” for talking to databases using Entity Framework, did you see that most methods return IQueryable<T>? You may have wondered what the **T** is in these examples and why is it in there?
+We use generics all the time in C#, whether implicitly of explicitly. When you use LINQ in C#, did you ever notice that you are working with IEnumerable<T>? Or if you ever saw an online sample of a “generic repository” for talking to databases using Entity Framework, did you see that most methods return IQueryable<T>? You may have wondered what the **T** is in these examples and why is it in there?
 
 First introduced to the .NET Framework 2.0, generics involved changes to both the C# language and the Common Language Runtime (CLR). **Generics** are essentially a “code template” that allows developers to define [type-safe](https://msdn.microsoft.com/library/hbzz1a9a.aspx) data structures without committing to an actual data type. For example, `List<T>` is a [Generic Collection](https://msdn.microsoft.com/library/System.Collections.Generic.aspx) that can be declared and used with any type: `List<int>`, `List<string>`, `List<Person>`, etc.
 
@@ -34,7 +34,7 @@ Here is a small program that illustrates the efficiency of knowing the data stru
     class Program {
       static void Main(string[] args) {
         //generic list
-        List ListGeneric = new List { 5, 9, 1, 4 };
+        List<int> ListGeneric = new List<int> { 5, 9, 1, 4 };
         //non-generic list
         ArrayList ListNonGeneric = new ArrayList { 5, 9, 1, 4 };
         // timer for generic list sort

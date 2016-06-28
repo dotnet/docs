@@ -16,7 +16,7 @@ ms.assetid: d743134a-08a3-4ff6-aab7-49f71f0568c3
 
 by [Bertrand Le Roy](https://github.com/bleroy) and [Phillip Carter](https://github.com/cartermp)
 
-Visual Studio 2015 provides a full-featured development environment for developing .NET Core applications. The procedures in this document describe the steps necessary to build a number of typical .NET Core solutions, or solutions that include .NET Core components, using Visual Studio. The scenarios include testing and using third-party libraries that have not been explicitly built for the most recent version of .NET Core.
+Visual Studio 2015 provides a full-featured development environment for developing .NET Core applications. The procedures in this document describe the steps necessary to build a number of typical .NET Core solutions, or solutions that include .NET Core components, using Visual Studio. The scenarios include testing and using third-party libraries that have not been explicitly built for the most recent version of .NET Core. 
 
 ## Prerequisites
 

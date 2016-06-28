@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 2f0415c1-110b-433d-87c1-ae3d543a8844
 ---
 
-## How to Create a NuGet Package with Cross Platform Tools
+# How to Create a NuGet Package with Cross Platform Tools
 
 > **Note:** The following shows command-line samples using unix.  The `dotnet pack` command as shown here works the same way on Windows.
 

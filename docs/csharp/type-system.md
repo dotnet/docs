@@ -1,6 +1,6 @@
 ---
-title: CType system
-description: CType system
+title: C# Type system
+description: C# Type system
 keywords: .NET, .NET Core
 author: dotnet-bot
 manager: wpickett

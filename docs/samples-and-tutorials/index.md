@@ -1,15 +1,15 @@
 ---
--title: Samples and Tutorials
--description: Samples and Tutorials
--keywords: .NET
--author: BillWagner
--manager: wpickett
--ms.date: 06/25/2016
--ms.topic: article
--ms.prod: .net
--ms.technology: .net-technologies
--ms.devlang: dotnet
--ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
+title: Samples and Tutorials
+description: Samples and Tutorials
+keywords: .NET
+author: BillWagner
+manager: wpickett
+ms.date: 06/25/2016
+ms.topic: article
+ms.prod: .net
+ms.technology: .net-technologies
+ms.devlang: dotnet
+ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
 ---
 
 # Samples and Tutorials

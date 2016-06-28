@@ -33,7 +33,7 @@ method syntax for use with the `?.` operator.
 With all those similarities, it is easy to have trouble determining when
 to use which.
 
-# Listening to Events is Optional
+## Listening to Events is Optional
 
 The most important consideration in determining which language feature
 to use is whether or not there must be an attached subscriber. If your
@@ -55,7 +55,7 @@ all the files that were sought, even with no event subscribers attached.
 UX controls still work correctly, even when there are no subscribers
 listening to the events. They both use designs based on events.
 
-# Return Values Require Delegates
+## Return Values Require Delegates
 
 Another consideration is the method prototype you would want for your
 delegate method. As you've seen, the delegates used for events all
@@ -69,7 +69,7 @@ Notice that these two heuristics may often both be present: If your
 delegate method returns a value, it will likely impact the algorithm
 in some way.
 
-# Event Listeners Often Have Longer Lifetimes 
+## Event Listeners Often Have Longer Lifetimes 
 
 This is a slightly weaker justification. However, you may find that
 event-based designs are more natural when the event source will be
@@ -82,7 +82,7 @@ Contrast that with many delegate-based designs, where a delegate is
 used as an argument to a method, and the delegate is not used after that
 method returns.
 
-# Evaluate Carefully
+## Evaluate Carefully
 
 The above considerations are not hard and fast rules. Instead, they
 represent guidance that can help you decide which choice is best for

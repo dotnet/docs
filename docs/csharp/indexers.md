@@ -20,7 +20,7 @@ enable *indexed* properties: properties referenced using one or more
 arguments. Those arguments provide an index into some collection
 of values.
 
-# Indexer Syntax
+## Indexer Syntax
 
 You access an indexer through a variable name and square brackets . You place the indexer
 arguments inside the brackets:
@@ -61,7 +61,7 @@ indexers from properties. You may define mulitple indexers on a type, as long
 as the argument lists for each indexer is unique. Let's explore different
 scenarios where you might use one or more indexers in a class definition. 
 
-# Scenarios
+## Scenarios
 
 You would define *indexers* in your type when its API models some
 collection where you define the arguments to that collection. Your indexers
@@ -79,7 +79,7 @@ access the
 [sample folder](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/indexers)
 directly.
 
-## Arrays and Vectors
+### Arrays and Vectors
 
 One of the most common scenarios for creating indexers is when your
 type models an array, or a vector. You can create an indexer to model
@@ -219,7 +219,7 @@ memory collection. Notice that the `Page` class is a private nested
 class that is not part of the public interface. Those details are hidden
 from any users of this class.
 
-## Dictionaries
+### Dictionaries
 
 Another common scenario is when you need to model a dictionary
 or a map. This scenario is when your type stores values based on key,
@@ -276,7 +276,7 @@ the `Action` associated with that option. If not, it returns an `Action` that
 does nothing. The public accessor does not include a `set` accessor. Rather,
 the design using a public method for setting options.
 
-## Multi-Dimensional Maps
+### Multi-Dimensional Maps
 
 You can create indexers that use multiple arguments. In addition,
 those arguments are not constrained to be the same type. Let's look at
@@ -406,7 +406,7 @@ used to index into the collections. The .NET framework does not include a Date o
 Developers use the `DateTime` type, but use the `Date` property to ensure that any
 `DateTime` object from that day are equal.
 
-# Summing Up
+## Summing Up
 
 You should create indexers anytime you have a property-like element in your
 class where that property represents not a single value, but rather a collection

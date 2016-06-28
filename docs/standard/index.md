@@ -47,7 +47,7 @@ As any mature and advanced application development framework, .NET has many powe
 *   [Native interoperability](#native-interoperability)
 *   [Unsafe Code](#unsafe-code)
 
-## Programming languages
+### Programming languages
 
 As a developer, you can choose any programming language that supports .NET to create your application. Because .NET provides language independence and interoperability, you can interact with other .NET applications and components regardless of the language with which they were developed.
 

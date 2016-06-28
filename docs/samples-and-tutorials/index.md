@@ -1,15 +1,15 @@
 ---
--title: Samples and Tutorials
--description: Samples and Tutorials
--keywords: .NET
--author: BillWagner
--manager: wpickett
--ms.date: 06/25/2016
--ms.topic: article
--ms.prod: .net
--ms.technology: .net-technologies
--ms.devlang: dotnet
--ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
+title: Samples and Tutorials
+description: Samples and Tutorials
+keywords: .NET
+author: BillWagner
+manager: wpickett
+ms.date: 06/25/2016
+ms.topic: article
+ms.prod: .net
+ms.technology: .net-technologies
+ms.devlang: dotnet
+ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
 ---
 
 # Samples and Tutorials
@@ -73,22 +73,22 @@ These series of samples demonstrate many of the features of Language Integrated 
 
 ### Tutorials
 
-** [Console Application](../tutorials/getting-started-with-csharp/console-teleprompter.md)**
+**[Console Application](../tutorials/getting-started-with-csharp/console-teleprompter.md)**
 
 This tutorial demonstrates Console I/O, the structure of a Console application, and
 the basics of the Task based asynchronous programming model. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/console-teleprompter).
 
-** [REST Client](../tutorials/getting-started-with-csharp/console-webapiclient.md)**
+**[REST Client](../tutorials/getting-started-with-csharp/console-webapiclient.md)**
 
 This tutorial demonstrates web communications, JSON serialization, and Object Oriented
 features in the C# language. A finished version of the code you'll build is located
 [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/console-webapiclient).
 
-** [Working with LINQ](../tutorials/getting-started-with-csharp/working-with-linq.md)**
+**[Working with LINQ](../tutorials/getting-started-with-csharp/working-with-linq.md)**
 
 This tutorial demonstrates many of the features of LINQ and the language elements that support it. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/console-linq).
 
-** [Microservices hosted in Docker](../tutorials/getting-started-with-csharp/microservices.md)**
+**[Microservices hosted in Docker](../tutorials/getting-started-with-csharp/microservices.md)**
 
 This tutorial demonstrates building an asp.net core microservice and hosting it it Docker. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/WeatherMicroservice).
 

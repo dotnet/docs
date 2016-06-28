@@ -1,24 +1,22 @@
-# .NET Core API Reference 
+---
+title: .NET Core API Reference 
+description: .NET Core API Reference 
+keywords: .NET, .NET Core, .NET Core API Reference, .NET Core class library, .NET class library
+author: rpetrusha
+manager: wpickett
+ms.date: 06/20/2016
+ms.topic: managed-reference
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: ab0b8c9f-925f-4c45-b337-b1deeb8aec4e
+---
 
-The .NET Core API Reference documents the types and type members available in .NET Core. You can navigate to the documentation for a particular type (a class, structure, delegate, enum, or interface) or type member (a constructor, method, field, property, or event) in either of two ways:
-
-- By selecting the **namespace** where that type is found in the left hand pane. 
-
-- By selecting the namespace in the "Namespaces in the .NET Core Class Library" section below.
-
-This takes you to a list of types in that namespace. You can select the type you're interested in either from the list on the left or from the namespace page.
-
-Each topic contains the documentation for a type and all its unique public and protected members. Inherited members are not included. To view the inherited members of a type, click on one or more of its base classes in the Inheritance section immediately after the type description. 
-
-## Namespaces ##
-
-The types in the .NET Core class library documentation are organized by namespace. A namespace is a virtual label that allows a type or type member to be uniquely identified without requiring the type name itself to be unique. For example, a class library might include two types named `People` that have different members and offer different functionality. Locating them within namespaces (such as `Application.Collections.People` and `Application.ApplicationObjects.People`) allows compilers to resolve what might otherwise be ambiguous references to `People` objects.
-  
-In the .NET Core library, the namespace name serves to identify a type's functionality.
+# .NET Core API Reference
 
 ## Namespaces in the .NET Core Class Library ##
- 
-The .NET Core class library includes the following namespaces:
+
+The following is a list of namespaces in the .NET Core class library. Each namespace contains a set of functionally-related types.
 
 <table class="table table-bordered table-striped table-condensed">
 <thead>

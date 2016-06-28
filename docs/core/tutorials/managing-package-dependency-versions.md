@@ -71,7 +71,7 @@ If so, you need to fixed your other dependencies to 1.0.  See the correct packag
 ### A note on using a splat string (\*) when versioning
 
 You may have adopted a versioning pattern which uses a splat (\*) string like this:
-`"System.Collections":"4.0.11.-*"`.
+`"System.Collections":"4.0.11-*"`.
 
 **You should not do this**.  Using the splat string could result in restoring packages from different builds, some of which may be further along than .NET Core 1.0.  This could then result in some packages being incompatible.
 

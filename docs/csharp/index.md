@@ -20,7 +20,7 @@ ms.assetid: 52db8280-0e53-40cf-858b-e8eef3997dea
     * [Working with LINQ](../tutorials/getting-started-with-csharp/working-with-linq.md)
     * [Microservices hosted in Docker](../tutorials/getting-started-with-csharp/microservices.md)
 * [🔧 Tour of C#](features.md)
-    * What's new in C# 6
+    * [What's new in C# 6](csharp-6.md)
 <!-- This page, or its parent should point to the Roslyn repo for folks that want
 to know what's next -->
 * [🔧 C# Concepts](concepts.md)

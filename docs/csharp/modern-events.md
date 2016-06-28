@@ -78,7 +78,7 @@ not have any subscribers in any existing codebases. New event types
 that do not derive from `System.EventArgs` will not break those
 codebases.
 
-# Events with Async subscribers
+## Events with Async subscribers
 
 You have one final pattern to learn: How to correctly write event
 subscribers that call async code. The challenge is described in

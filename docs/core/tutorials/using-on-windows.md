@@ -107,7 +107,7 @@ A solution using only .NET Core projects
         Assert.Equal(42, new Thing().Get(42));
     }
     ```
-    * Optionally, delete the `Program.cs` file from the **TestLibrary** project, and remove `"buildOptions": {"emitEntryPoint": true,` from `project.json`.
+    * Optionally, delete the `Program.cs` file from the **TestLibrary** project, and remove `"buildOptions": {"emitEntryPoint": true},` from `project.json`.
 
    You should now be able to build the solution. 
    

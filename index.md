@@ -149,13 +149,13 @@ ms.assetid:
                             <li class="column column-third">
                                 <a href="https://msdn.microsoft.com/library/54xbah2z.aspx">
                                     <h3>Windows Desktop</h3>
-                                    <p>Learn how to build Windows desktop applications with Windows Forms of Windows Presentation Framework (WPF).</p>
+                                    <p>Learn how to build Windows desktop applications with Windows Forms or Windows Presentation Framework (WPF).</p>
                                 </a>
                             </li>
                             <li class="column column-third">
                                 <a href="https://developer.xamarin.com/guides/cross-platform/macios/">
                                     <h3>macOS Desktop</h3>
-                                    <p>Learn how to buil macOS desktop applications with Xamarin.</p>
+                                    <p>Learn how to build macOS desktop applications with Xamarin.</p>
                                 </a>
                             </li>
                         </ul>

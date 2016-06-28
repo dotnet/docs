@@ -101,7 +101,7 @@ ms.assetid:
                             <li class="column column-third">
                                 <a href="https://www.visualstudio.com/features/azure-tools-vs">
                                     <h3>Microsoft Azure</h3>
-                                    <p>Get Started developing applications using Microsoft Azure</p>
+                                    <p>Get Started developing applications using Microsoft Azure.</p>
                                 </a>
                             </li>
                         </ul>
@@ -114,7 +114,7 @@ ms.assetid:
                             <p>Mobile</p>
                         </div>
                         <p class="description column-two-thirds">
-                            Learn how .NET Core and Xamarin can enable you to develop for iOS and Android using C# or about building applications using the Universal Windows Platform (UWP) for Windows 10 devices
+                            Learn how .NET Core and Xamarin can enable you to develop for iOS and Android using C# or about building applications using the Universal Windows Platform (UWP) for Windows 10 devices.
                         </p>
                     </header>
                     <section class="journey-step-elements content">
@@ -122,7 +122,7 @@ ms.assetid:
                             <li class="column column-third">
                                 <a href="https://developer.xamarin.com/guides/ios/getting_started/">
                                     <h3>Android and iOS apps</h3>
-                                    <p>Learn how to build native iOS and Android applications with Xamarin</p>
+                                    <p>Learn how to build native iOS and Android applications with Xamarin.</p>
                                 </a>
                             </li>
                             <li class="column column-third">

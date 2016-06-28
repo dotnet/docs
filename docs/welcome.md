@@ -29,7 +29,7 @@ There is always something new to learn or explore in the .NET community. Here's 
 - [Announcing .NET Core 1.0](https://blogs.msdn.microsoft.com/dotnet/announcing-net-core-1-0)
 - [Announcing ASP.NET Core 1.0](https://blogs.msdn.microsoft.com/webdev/2016/06/27/announcing-asp-net-core-1-0/)
 - [Open Source Xamarin, Ready for you!](https://blog.xamarin.com/live-from-evolve-open-source-xamarin-ready-for-you/)
-- [The week in .NET](https://aka.ms/the-week-in-dotnet)
+- [The week in .NET](https://blogs.msdn.microsoft.com/dotnet/tag/week-in-net/)
 - [Thank you for watching dotnetConf 2016!](https://blogs.msdn.microsoft.com/dotnet/2016/06/09/thank-you-for-watching-dotnetconf-2016/)
 
 Documentation

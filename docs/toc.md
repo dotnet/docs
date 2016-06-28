@@ -113,6 +113,7 @@
 ### [Servicing](core/versions/servicing.md)
 ## [Runtime IDentifier catalog](core/rid-catalog.md)
 ## [.NET Core Tools](core/tools/index.md)
+### [Telemetry](core/tools/telemetry.md)
 ### [Extensibility Model](core/tools/extensibility.md)
 ### [Test communication protocol](core/tools/test-protocol.md)
 ### [Continuous Integration](core/tools/using-ci-with-cli.md)

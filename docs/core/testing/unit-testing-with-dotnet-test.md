@@ -18,7 +18,7 @@ By [Steve Smith](http://ardalis.com) and [Bill Wagner](https://github.com/BillWa
 
 [View or download sample code](https://github.com/dotnet/core-docs/tree/master/samples/unit-testing/using-dotnet-test)
 
-# Creating the Projects
+## Creating the Projects
 
 [Writing Libraries with Cross Platform Tools](../tutorials/libraries.md)
 has information on organizing multi-project solutions for both the
@@ -50,7 +50,7 @@ contains the names of your `src` and `test` directories:
 }
 ```
 
-## Creating the source project
+### Creating the source project
 
 Then, in the `src` directory, create the `PrimeService` directory.
 CD into that directory, and run `dotnet new` to create the source
@@ -94,7 +94,7 @@ namespace Prime.Services
 
 ```
 
-## Creating the test project
+### Creating the test project
 
 Next, cd into the 'test' directory, and create the `PrimeServices.Tests` directory.
 CD into the `PrimeServices.Tests` directory and create a new project using `dotnet new`.
@@ -166,7 +166,7 @@ After this initial structure is in place, you can write your first test.
 Once you verify that first unit test, everything is configured and should run smoothly
 as you add features and tests.
 
-# Creating the first test
+## Creating the first test
 
 The TDD approach calls for writing one failing test, then making it pass,
 then repeating the process. So, let's write that one failing test. Remove
@@ -222,7 +222,7 @@ public bool IsPrime(int candidate)
 } 
 ```
 
-## Adding More Features
+### Adding More Features
 
 Now, that you've made one test pass, it's time to write more.
 There are a few other simple cases for prime numbers: 0, -1. You

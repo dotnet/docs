@@ -63,4 +63,4 @@ You can get started developing .NET Core apps by following these step-by-step tu
 * [Getting started with .NET Core on macOS, using Visual Studio Code](tutorials/using-on-macos.md) - Use [Visual Studio Code](https://www.visualstudio.com/products/code-vs), Microsoft's lightweight cross-platform code editor.  
 * [Getting started with .NET Core using the command line](tutorials/using-with-xplat-cli.md) - Use any code editor with the [.NET Core cross-platform command-line interface (CLI)](tools/index.md).
 
-.NET Core is supported by 64-bit OS X 10.11 (El Capitan). It isn't yet supported by macOS Sierrra, but will be soon.
+.NET Core is supported by 64-bit OS X 10.11 (El Capitan). It isn't yet supported by macOS Sierra, but will be soon.

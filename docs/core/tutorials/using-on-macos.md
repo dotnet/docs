@@ -164,7 +164,7 @@ about in the [Learn C#](/csharp/index.md) section.
 Now that you've updated the code, you can build the library using
 `dotnet build`.
 
-You now have a built `library.dll` file under `golden/src/library/bin/Debug/netstandard1.5`.
+You now have a built `library.dll` file under `golden/src/library/bin/Debug/netstandard1.6`.
 
 ### Writing the test project
 

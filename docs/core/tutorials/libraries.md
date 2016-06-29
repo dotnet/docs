@@ -421,10 +421,9 @@ It's important to be able to test across platforms.  It's easiest to use [xUnit]
 2. Create a new test project by creating a `project.json` file under your `/test` folder.  You can also run the `dotnet new` command and modify the `project.json` file afterwards.  It should have the following:
 
    * `netcoreapp1.0` listed as the only entry under `frameworks`.
-   * `dnxcore50` and `portable-net45+win8` added as `imports` under `netcoreapp1.0`.
    * A reference to `Microsoft.NETCore.App` version `1.0.0`.
-   * A reference to xUnit version `2.1.0`.
-   * A reference to `dotnet-test-xunit` version `1.0.0-rc2-build10025`
+   * A reference to xUnit version `2.2.0-beta2-build3300`.
+   * A reference to `dotnet-test-xunit` version `1.0.0-preview2-build1029`
    * A project reference to the library being tested.
    * The entry `"testRunner":"xunit"`.
    
@@ -439,16 +438,14 @@ It's important to be able to test across platforms.  It's easiest to use [xUnit]
                 "target":"project"
             },
             "Microsoft.NETCore.App":{
-                "type":"platform",
-                "version":"1.0.0"
+                "version":"1.0.0",
+                "type":"platform"
             },
-            "xunit":"2.1.0",
-            "dotnet-test-xunit":"1.0.0-rc2",
+            "xunit":"2.2.0-beta2-build3300",
+            "dotnet-test-xunit":".0.0-preview2-build1029",
         },
         "frameworks":{
-            "netcoreapp1.0":{
-                "imports":[ "dnxcore50", "portable-net45+win8" ]
-            }
+            "netcoreapp1.0":{}
         }
    }
    ```

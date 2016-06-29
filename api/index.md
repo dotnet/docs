@@ -422,7 +422,7 @@ The following is a list of namespaces in the .NET Core class library. Each names
 <tr>
    <td><a href="./System.Security.Cryptography.Xml">System.Security.Cryptography.Xml</a></td>
    <td>
-   Contains a single type that represents the <b>&ltX509IssuerSerial&gt</b> element of an XML digital signature.
+   Contains a single type that represents the <b>&lt;X509IssuerSerial&gt;</b> element of an XML digital signature.
    </td>
 </tr>
 <tr>
@@ -458,7 +458,7 @@ The following is a list of namespaces in the .NET Core class library. Each names
 <tr>
    <td><a href="./System.Threading.Tasks">System.Threading.Tasks</a></td>
    <td>
-   Provides types that simplify the work of writing concurrent and asynchronous code. The main types are <a href="./System.Threading.Tasks.Task">Task</a>, which represents an asynchronous operation that can be waited on and canceled, and <a href="./System.Threading.Tasks.Task-1">Task&ltTResult&gt</a>, which is a task that can return a value. 
+   Provides types that simplify the work of writing concurrent and asynchronous code. The main types are <a href="./System.Threading.Tasks.Task">Task</a>, which represents an asynchronous operation that can be waited on and canceled, and <a href="./System.Threading.Tasks.Task-1">Task&lt;TResult&gt;</a>, which is a task that can return a value. 
    </td>
 </tr>
 <tr>

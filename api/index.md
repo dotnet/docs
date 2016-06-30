@@ -458,7 +458,7 @@ The following is a list of namespaces in the .NET Core class library. Each names
 <tr>
    <td>@System.Threading.Tasks </td>
    <td>
-   Provides types that simplify the work of writing concurrent and asynchronous code. The main types are @System.Threading.Tasks.Task, which represents an asynchronous operation that can be waited on and canceled, and @System.Threading.Tasks.Task`1, which is a task that can return a value. 
+   Provides types that simplify the work of writing concurrent and asynchronous code. The main types are @System.Threading.Tasks.Task, which represents an asynchronous operation that can be waited on and canceled, and @System.Threading.Tasks.Task%601, which is a task that can return a value. 
     </td>
 </tr>
 <tr>

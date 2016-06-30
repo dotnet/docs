@@ -20,9 +20,9 @@ Visual Studio 2015 provides a full-featured development environment for developi
 
 ## Prerequisites
 
-* Visual Studio 2015 Update 3. If you don't have Visual Studio already, you can download [Visual Studio Community 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs) for free. 
+* [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs). If you don't have Visual Studio already, you can download [Visual Studio Community 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs) for free. 
 
-* NuGet Manager extension for Visual Studio. NuGet is the package manager for the Microsoft development platform including .NET Core. When you use NuGet to install a package, it copies the library files to your solution and automatically updates your project (add references, change config files, etc.).
+* [NuGet Manager extension for Visual Studio](https://dist.nuget.org/visualstudio-2015-vsix/v3.5.0-beta/NuGet.Tools.vsix). NuGet is the package manager for the Microsoft development platform including .NET Core. When you use NuGet to install a package, it copies the library files to your solution and automatically updates your project (add references, change config files, etc.).
 
 * [.NET Core Tooling Preview 2 for Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkId=817245). This installs templates and other tools for Visual Studio 2015, as well as .NET Core 1.0 itself.
 
@@ -38,7 +38,7 @@ The following steps will set up Visual Studio 2015 for .NET Core development:
 
    * In the About Microsoft Visual Studio dialog, the version number should include "Update 3" (or higher).
 
-2. Download and install the [.NET Core for Visual Studio official MSI Installer](https://go.microsoft.com/fwlink/?linkid=817245). This will install the .NET Core Tooling Preview 1 for Visual Studio 2015.
+2. Download and install the [.NET Core for Visual Studio official MSI Installer](https://go.microsoft.com/fwlink/?linkid=817245). This will install the .NET Core Tooling Preview 2 for Visual Studio 2015.
 
 3. Download and install [NuGet Manager extension for Visual Studio](https://dist.nuget.org/visualstudio-2015-vsix/v3.5.0-beta/NuGet.Tools.vsix). This will install the latest version of the extension.
 
@@ -57,7 +57,7 @@ A solution using only .NET Core projects
 
 3. In Solution Explorer, open the context menu for the **References** node and choose **Manage NuGet Packages**.
 
-4. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Check the **Including prerelease** checkbox, and then browse for **Newtonsoft.Json**. Click **Install**. 
+4. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Check the **Include prerelease** checkbox, and then browse for **Newtonsoft.Json**. Click **Install**. 
 
 5. Open the context menu for the **References** node and choose  **Restore packages**.
 
@@ -90,7 +90,7 @@ A solution using only .NET Core projects
 
 7. Open the context menu for the **References** node and choose **Manage NuGet Packages**.
 
-8. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Check the **Including prerelease** checkbox, and then browse for **xUnit** version 2.2.0 or newer, and then click **Install**. 
+8. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Check the **Include prerelease** checkbox, and then browse for **xUnit** version 2.2.0 or newer, and then click **Install**. 
 
 9. Browse for **dotnet-test-xunit** version 2.2.0 or newer, and then click **Install**.
 
@@ -158,7 +158,7 @@ Starting from the solution obtained with the previous script, execute the follow
 
 5. Name the project "FxApp", and set the location to `Golden\src`.
 
-6. In the **FxApp** project, open the the context menu for the **References** node and choose **Add Reference**.
+6. In the **FxApp** project, open the context menu for the **References** node and choose **Add Reference**.
 
 7. In the **Reference Manager** dialog, choose **Browse** and browse to the location of the built `Library.dll` (under the ..Golden\src\Library\bin\Debug\netstandard1.4 path), and then click **Add**. 
 
@@ -166,7 +166,7 @@ Starting from the solution obtained with the previous script, execute the follow
 
 8. Open the context menu for the **References** node and choose **Manage NuGet Packages**.
 
-9. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Check the **Including prerelease** checkbox, and then browse for **Newtonsoft.Json**. Click **Install**. 
+9. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Check the **Include prerelease** checkbox, and then browse for **Newtonsoft.Json**. Click **Install**. 
 
 10. In the **FxApp** project, open the `Program.cs` file and add a `using Library;` directive to the top of the file, and add `Console.WriteLine($"The answer is {new Thing().Get(42)}.");` to the `Main` method of the program.
 
@@ -208,7 +208,7 @@ Close the previous solution if it was open: you will be starting a new script fr
 
 3. In Solution Explorer, open the context menu for the **References** node and choose **Manage NuGet Packages**.
 
-4. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Check the **Including prerelease** checkbox, and then browse for **Newtonsoft.Json**. Click **Install**. 
+4. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Check the **Include prerelease** checkbox, and then browse for **Newtonsoft.Json**. Click **Install**. 
 
 5. Rename the class "Thing" and add a method: `public int Get(int number) => Newtonsoft.Json.JsonConvert.DeserializeObject<int>($"{number}");`
 
@@ -216,7 +216,7 @@ Close the previous solution if it was open: you will be starting a new script fr
 
 ### Writing the console app
 
-1. In Solution Explorer, open the contaxt menu for the **Solution 'GoldenPCL'** node and choose **Add**. **New Project**. In the **New Project** dialog, expand the **Visual C#** node, choose **Console Application**, and name the project "App". 
+1. In Solution Explorer, open the context menu for the **Solution 'GoldenPCL'** node and choose **Add**. **New Project**. In the **New Project** dialog, expand the **Visual C#** node, choose **Console Application**, and name the project "App". 
 
 2. In the **App** project, open the context menu for the **References** node and choose **Add**,  **Reference**. 
 

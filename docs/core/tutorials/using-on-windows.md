@@ -141,7 +141,7 @@ A mixed .NET Core library and .NET Framework application
 Starting from the solution obtained with the previous script, execute the following steps:
 
 1. In Solution Explorer, open the `project.json` file for the **Library** project and replace `"frameworks": {
-    "netstandard1.5"` with `"frameworks": {
+    "netstandard1.6"` with `"frameworks": {
     "netstandard1.4"`.
 
 2. In the **Library** project, open the context menu for the **References** node and choose **Restore Packages**.

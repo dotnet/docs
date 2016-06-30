@@ -16,18 +16,19 @@ ms.assetid: 9f6e8679-bd7e-4317-b3f9-7255a260d9cf
 
 **Some details are subject to change as the toolchain evolves.**
 
-This article covers how you can write libraries for .NET using cross-platform CLI tools.  They provide an efficient and low-level experience that works across any supported OS.  You can still build libraries with Visual Studio, and if that is your preferred experience then you should [refer to the Visual Studio guide](libraries-with-vs.md).
+This article covers how to write libraries for .NET using cross-platform CLI tools.  The CLI provides an efficient and low-level experience that works across any supported OS.  You can still build libraries with Visual Studio, and if that is your preferred experience [refer to the Visual Studio guide](libraries-with-vs.md).
 
 ## Prerequisites
 
-You must have .NET Core installed on your machine.  You will need [the .NET Core SDK and CLI](https://www.microsoft.com/net/core).
+You need [the .NET Core SDK and CLI](https://www.microsoft.com/net/core) installed on your machine.
 
-The sections of this document dealing with the .NET Framework versions or Portable Class Libraries (PCL) need the .NET Framework installed.  They are only supported on Windows.  To do this, [install the .NET Framework](http://getdotnet.azurewebsites.net).
+For the sections of this document dealing with .NET Framework versions or Portable Class Libraries (PCL), you need the [.NET Framework](http://getdotnet.azurewebsites.net/) installed on a Windows machine.  
 
-Additionally, if you wish to support older targets, you will need to install targeting/developer packs for older framework versions from the [target platforms page](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html).  Refer to this table:
+Additionally, if you wish to support older .NET Framework targets, you need to install targeting/developer packs for older framework versions from the [.NET target platforms page](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html).  Refer to this table:
 
 | .NET Framework Version | What to download |
 | ---------------------- | ----------------- |
+| 4.6.1 | .NET Framework 4.6.1 Targeting Pack |
 | 4.6 | .NET Framework 4.6 Targeting Pack |
 | 4.5.2 | .NET Framework 4.5.2 Developer Pack |
 | 4.5.1 | .NET Framework 4.5.1 Developer Pack |
@@ -37,7 +38,7 @@ Additionally, if you wish to support older targets, you will need to install tar
 
 ## How to target the .NET Standard
 
-If you're not quite familiar with the .NET Standard, please refer to [the .NET Standard Library](../../standard/library.md) to learn more.
+If you're not quite familiar with the .NET Standard, refer to [the .NET Standard Library](../../standard/library.md) to learn more.
 
 In that article, there is a table which maps .NET Standard versions to various implementations:
 
@@ -54,7 +55,7 @@ In that article, there is a table which maps .NET Standard versions to various i
 
 Here's what this table means for the purposes of creating a library:
 
-The version of the .NET Platform Standard you pick will be a tradeoff between access to the newest APIs and ability to target more .NET platforms and Framework versions.  You can do that by picking a version of `netstandardXX` (Where `XX` is a version number) and adding it to your `project.json` file.
+The version of the .NET Platform Standard you pick will be a tradeoff between access to the newest APIs and ability to target more .NET platforms and Framework versions.  You control the range of targetable platforms and versions by picking a version of `netstandardX.X` (Where `X.X` is a version number) and adding it to your `project.json` file.
 
 Additionally, the corresponding [NuGet package to depend on](https://www.nuget.org/packages/NETStandard.Library/) is `NETStandard.Library` version `1.6.0`.  Although there's nothing preventing you from depending on `Microsoft.NETCore.App` like with console apps, it's generally not recommended.  If you need APIs from a package not specified in `NETStandard.Library`, you can always specify that package in addition to `NETStandard.Library` in the `dependencies` section of your `project.json` file.
 
@@ -76,7 +77,7 @@ You have three primary options when targeting the .NET Standard, depending on yo
     }
     ```
     
-    The .NET Standard versions in a backward-compatible way. That means that `netstandard1.0` libraries run on `netstandard1.1` platforms and higher.  However, there is no forwards-compatibility - lower .NET Standard platforms cannot reference higher ones.  This means that `netstandard1.0` libraries cannot reference libraries targeting `netstandard1.1` or higher.  You should select the Standard version that has the right mix of APIs and platform support for your needs.
+    .NET Standard versions are backward compatible. That means that `netstandard1.0` libraries run on `netstandard1.1` platforms and higher.  However, there is no forward compatibility - lower .NET Standard platforms cannot reference higher ones.  This means that `netstandard1.0` libraries cannot reference libraries targeting `netstandard1.1` or higher.  Select the Standard version that has the right mix of APIs and platform support for your needs.
     
 3. If you want to target the .NET Framework versions 4.0 or below, or you wish to use an API available in the .NET Framework but not in the .NET Standard (for example, `System.Drawing`), read the following sections and learn how to multitarget.
 
@@ -86,7 +87,7 @@ You have three primary options when targeting the .NET Standard, depending on yo
 
 Keep in mind that some of the .NET Framework versions used here are no longer in support.  Refer to the [.NET Framework Support Lifecycle Policy FAQ](https://support.microsoft.com/gp/framework_faq/en-us) about unsupported versions.
 
-If you want to reach the maximum developers and projects, use the .NET Framework 4 as your baseline target. To target the .NET Framework, you will need to begin by using the correct Target Framework Moniker (TFM) that corresponds to the .NET Framework version you wish to support.
+If you want to reach the maximum number of developers and projects, use the .NET Framework 4 as your baseline target. To target the .NET Framework, you will need to begin by using the correct Target Framework Moniker (TFM) that corresponds to the .NET Framework version you wish to support.
 
 ```
 .NET Framework 2.0   --> net20
@@ -142,18 +143,9 @@ The following is an example targeting PCL Profile 328. Profile 328 supports: .NE
 }
 ```
 
-You can now build.
+When you build a project that includes PCL Profile 328 as a framework in the *project.json* file, it will have this subfolder in the */bin/debug* folder:
 
 ```
-$ dotnet restore
-$ dotnet build
-```
-
-Notice the following entry in the `/bin/Debug` folder:
-
-```
-$ ls bin/Debug
-
 portable-net40+sl50+netcore45+wpa81+wp8/
 ```
 
@@ -280,18 +272,9 @@ And in the middle of the source, you can use `#if` directives to use those libra
     }
 ```
 
-Now you can build.
+When you build a project that includes `net40`, `net45`, and `netstandard1.6` as frameworks in the *project.json* file, it will have these subfolders in the */bin/debug* folder:
 
 ```
-$ dotnet restore
-$ dotnet build
-```
-
-Your `/bin/Debug` folder will look like this:
-
-```
-$ ls bin/Debug
-
 net40/
 net45/
 netstandard1.6/
@@ -339,18 +322,9 @@ using System.Threading.Tasks;
 
 Because `PORTABLE328` is now recognized by the compiler, the PCL Profile 328 library generated by a compiler will not include `System.Net.Http` or `System.Threading.Tasks`.
 
-Now you can build.
+When you build a project that includes PCL Profile 328 and `netstandard1.6` as frameworks in the *project.json* file, it will have these subfolders in the */bin/debug* folder:
 
 ```
-$ dotnet restore
-$ dotnet build
-```
-
-Your `/bin/Debug` folder will look like this:
-
-```
-$ ls bin/Debug
-
 portable-net40+sl50+netcore45+wpa81+wp8/
 netstandard1.6/
 ```
@@ -399,7 +373,7 @@ To see an example of packaging up cross-platform native binaries, check out the 
 
 ## How to test libraries on .NET Core
 
-It's important to be able to test across platforms.  It's easiest to use [xUnit](http://xunit.github.io/), which is also the testing tool used by .NET Core projects.  Setting up your solution with test projects will depend on the [structure of your solution](#structuring-your-solution).  The following example assumes that all source projects are under a top-level `/src` folder and all test projects are under a top-level `/test` folder.
+It's important to be able to test across platforms.  It's easiest to use [xUnit](http://xunit.github.io/), which is also the testing tool used by .NET Core projects.  How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution).  The following example assumes that all source projects are under a top-level `/src` folder and all test projects are under a top-level `/test` folder.
 
 1. Ensure you have a `global.json` file at the solution level which understands where the test projects are:
     
@@ -418,7 +392,7 @@ It's important to be able to test across platforms.  It's easiest to use [xUnit]
     |__/test
     ```
     
-2. Create a new test project by creating a `project.json` file under your `/test` folder.  You can also run the `dotnet new` command and modify the `project.json` file afterwards.  It should have the following:
+2. Create a new test project by creating a project folder under your `/test` folder, and a `project.json` file in the new project folder.  To create the `project.json` file you can run the `dotnet new` command and modify the `project.json` file afterwards.  The file should have the following:
 
    * `netcoreapp1.0` listed as the only entry under `frameworks`.
    * A reference to `Microsoft.NETCore.App` version `1.0.0`.
@@ -488,7 +462,7 @@ let result =
     |> AwesomeLibrary.process
 ```
 
-Consumtion scenarios like this mean that the APIs being accessed have to have a different structure for C# and F#.  A common approach to accomplishing this is to factor all of the logic of a library into a core project, with C# and F# projects defining the API layers that call into that core project.  The rest of the section will use the following names:
+Consumption scenarios like this mean that the APIs being accessed have to have a different structure for C# and F#.  A common approach to accomplishing this is to factor all of the logic of a library into a core project, with C# and F# projects defining the API layers that call into that core project.  The rest of the section will use the following names:
 
 * **AwesomeLibrary.Core** - A core project which contains all logic for the library
 * **AwesomeLibrary.CSharp** - A project with public APIs intended for consumption in C#

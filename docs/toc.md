@@ -65,7 +65,7 @@
 ## [Common Language Runtime (CLR)](standard/clr.md)
 ## [Framework Libraries](standard/framework-libraries.md)
 ## [.NET Class libraries](standard/class-libraries.md)
-## [Portability Analyzer](standard/portability-analyzer)
+## [Portability Analyzer](standard/portability-analyzer.md)
 ## [Handling and throwing exceptions](standard/exceptions.md)
 ## [.NET Assembly File Format](standard/assembly-format.md)
 ## [Garbage Collection](standard/gc-overview.md)

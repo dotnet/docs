@@ -25,8 +25,8 @@ keyword.
 Let's start with the 'delegate' keyword, because that's primarily what
 you will use as you work with delegates. The code that the
 compiler generates when you use the `delegate` keyword will
-map to method calls that invoke members of the [`System.Delegate`](../..//core/api/System.Delegate)
-and [`System.Multicast`](../../core/api/System.MulticastDelegate) classes. 
+map to method calls that invoke members of the @System.Delegate 
+and @System.MulticastDelegate classes. 
 
 You define a delegate type using syntax that is similar to defining
 a method signature. You just add the `delegate` keyword to the
@@ -53,7 +53,8 @@ a variable, but it is actually declaring a *type*. You can
 define delegate types inside classes, directly inside namespaces,
 or even in the global namespace.
 
-> Note: Declaring delegate types (or other types) directly in
+> [!NOTE]
+> Declaring delegate types (or other types) directly in
 > the global namespace is not recommended. 
 
 The compiler also generates add and remove handlers for this new
@@ -62,7 +63,7 @@ invocation list. The compiler will enforce that the signature
 of the method being added or removed matches the signature
 used when declaring the method. 
 
-## Declaring instances of delgates
+## Declaring instances of delegates
 
 After defining the delegate, you can create an instance of that type.
 Like all variables in C#, you cannot declare delegate instances directly
@@ -168,8 +169,7 @@ have multiple target methods attached to a delegate object.
 The language support desccribed above provides the features
 and support you'll typically need to work with delegates. These
 features are built on two classes in the .NET Core
-framework: [`System.Delegate`](../../core/api/System.Delegate)
-and [`System.Multicast`](../../core/api/System.MulticastDelegate).
+framework: @System.Delegate and @System.MulticastDelegate .
 
 The `System.Delegate` class, and its single direct sub-class,
 `System.MulticastDelegate`, provide the framework support for

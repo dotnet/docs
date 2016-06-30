@@ -38,12 +38,11 @@ either case, they should be small, well-named, and fast, since ideally
 you will want to be able to run hundreds of them before pushing your
 changes into the project’s shared code repository.
 
-> **Note**
->
+> [!NOTE]
 > Developers often struggle with coming up with good names for their
 > test classes and methods. As a starting point, the ASP.NET product
 > team follows
-> [these conventions](https://github.com/aspnet/Home/wiki/Engineering-guidelines#unit-tests-and-functional-tests)
+> [these conventions](https://github.com/aspnet/Home/wiki/Engineering-guidelines#unit-tests-and-functional-tests).
 
 When writing unit tests, be careful you don’t accidentally introduce
 dependencies on infrastructure. These tend to make tests slower and

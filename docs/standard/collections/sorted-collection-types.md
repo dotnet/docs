@@ -20,9 +20,8 @@ ms.assetid: bdc9c13e-e56a-433b-a293-c92364f6e9cb
  
  *   Each element is a key/value pair for enumeration purposes.   
   
-> **Note**  
- >   
->The nongeneric [SortedList](https://docs.microsoft.com/dotnet/core/api/System.Collections.SortedList) class returns [DictionaryEntry](https://docs.microsoft.com/dotnet/core/api/System.Collections.DictionaryEntry) objects when enumerated, although the two generic types return [KeyValuePair&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.KeyValuePair-2) objects.  
+> [!NOTE]  
+> The nongeneric [SortedList](https://docs.microsoft.com/dotnet/core/api/System.Collections.SortedList) class returns [DictionaryEntry](https://docs.microsoft.com/dotnet/core/api/System.Collections.DictionaryEntry) objects when enumerated, although the two generic types return [KeyValuePair&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.KeyValuePair-2) objects.  
    
 *   Elements are sorted according to a [System.Collections.IComparer](https://docs.microsoft.com/dotnet/core/api/System.Collections.IComparer) implementation (for nongeneric `SortedList`) or a [System.Collections.Generic.IComparer&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IComparer-1) implementation (for the two generic classes).  
    
@@ -39,9 +38,8 @@ The following table lists some of the differences between the two sorted list cl
   
  For sorted lists or dictionaries that must be accessible concurrently from multiple threads, you can add sorting logic to a class that derives from [ConcurrentDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2).  
   
- > **Note**  
- >   
- >For values that contain their own keys (for example, employee records that contain an employee ID number), you can create a keyed collection that has some characteristics of a list and some characteristics of a dictionary by deriving from the [KeyedCollection&lt;TKey, TItem&gt;]() generic class.  
+ > [!NOTE]  
+ > For values that contain their own keys (for example, employee records that contain an employee ID number), you can create a keyed collection that has some characteristics of a list and some characteristics of a dictionary by deriving from the [KeyedCollection&lt;TKey, TItem&gt;]() generic class.  
    
  The [SortedSet&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.SortedSet-1) class provides a self-balancing tree that maintains data in sorted order after insertions, deletions, and searches. This class and the [HashSet&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.HashSet-1) class implement the [ISet&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.ISet-1) interface.  
    

@@ -18,6 +18,11 @@ ms.assetid: ab0b8c9f-925f-4c45-b337-b1deeb8aec4e
 
 The following is a list of namespaces in the .NET Core class library. Each namespace contains a set of functionally-related types.
 
+| Namespace                       | Description |
+| ------------------------------- | ----------- |
+| @Microsoft.CSharp.RuntimeBinder | Provides types that support interoperation between the Dynamic Language Runtime and C#. |
+| @Microsoft.SqlServer.Server     | Contains classes for integrating .NET Core with Microsoft SQL Server and the SQL Server database engine process execution environment. |
+
 <table>
 <thead>
    <tr>

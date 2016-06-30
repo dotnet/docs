@@ -18,7 +18,7 @@ ms.assetid: ab0b8c9f-925f-4c45-b337-b1deeb8aec4e
 
 The following is a list of namespaces in the .NET Core class library. Each namespace contains a set of functionally-related types.
 
-<table>
+<table class="table table-bordered table-striped table-condensed">
 <thead>
    <tr>
       <th>Namespace</th>

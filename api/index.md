@@ -18,11 +18,6 @@ ms.assetid: ab0b8c9f-925f-4c45-b337-b1deeb8aec4e
 
 The following is a list of namespaces in the .NET Core class library. Each namespace contains a set of functionally-related types.
 
-| Namespace                       | Description |
-| ------------------------------- | ----------- |
-| @Microsoft.CSharp.RuntimeBinder | Provides types that support interoperation between the Dynamic Language Runtime and C#. |
-| @Microsoft.SqlServer.Server     | Contains classes for integrating .NET Core with Microsoft SQL Server and the SQL Server database engine process execution environment. |
-
 <table>
 <thead>
    <tr>
@@ -427,7 +422,7 @@ The following is a list of namespaces in the .NET Core class library. Each names
 <tr>
    <td>@System.Security.Cryptography.Xml </td>
    <td>
-   Contains a single type that represents the <b>&ltX509IssuerSerial&gt</b> element of an XML digital signature.
+   Contains a single type that represents the <b>&lt;X509IssuerSerial&gt;</b> element of an XML digital signature.
     </td>
 </tr>
 <tr>

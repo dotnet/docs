@@ -292,7 +292,7 @@ Note that you can only deploy a self-contained app with a third-party library to
 
 The previous two sections on deploying a self-contained app created and deployed an app that contained the entire .NET Core library. You can also deploy a modular self-contained app that includes only the .NET Core assemblies actually needed by your app.
 
-The word parsing example shown earlier in the [Deploying a Simple Self-Contained App](#simpleSelf)section uses the console, which is defined in the System.Console assembly, and the regular expression engine, which is defined in the System.Text.RegularExpressions assembly. Instead of deploying all of the .NET Standard Library with our app, we can package just the assemblies we need, along with their dependencies and the libraries that contain basic .NET Core types. This requires a modification of the `dependencies` section of our project.json file:
+The word parsing example shown earlier in the [Deploying a Simple Self-Contained App](#simpleSelf) section uses the console, which is defined in the System.Console assembly, and the regular expression engine, which is defined in the System.Text.RegularExpressions assembly. Instead of deploying all of the .NET Standard Library with our app, we can deploy just the assemblies we need, the dependencies of those assemblies, and the libraries that contain basic .NET Core types. This requires a modification of the `dependencies` section of our project.json file:
 
 ```json
   "dependencies": {
@@ -305,7 +305,7 @@ The word parsing example shown earlier in the [Deploying a Simple Self-Contained
 
 For more information, see [Reducing Package Dependencies with project.json](reducing-dependencies.md).
 
-Otherwise, the steps required to create a modular self-contained appl are the same as those listed in the [Deploying a Simple Self-Contained App](#simpleSelf)section. The result is an app with a much smaller footprint than the self-contained app that encludes the entire .NET Core Class Library. 
+Otherwise, the steps required to create a modular self-contained appl are the same as those listed in the [Deploying a Simple Self-Contained App](#simpleSelf) section. The result is an app with a much smaller footprint than the self-contained app that includes the entire .NET Core Class Library. 
 
 The complete project.json file for this modular self-contained app is:
 

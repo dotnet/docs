@@ -15,7 +15,7 @@ ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
 About .NET
 ==========
 
-> Check out the ["Getting Started with .NET Core" tutorials](../core/tutorials/index.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
+> Check out the ["Getting Started with .NET Core" tutorials](../core/tutorials/getting-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
 
 .NET is a general purpose development platform. It can be used for any kind of app type or workload where general purpose solutions are used. It has several key features that are attractive to many developers, including automatic memory management and modern programming languages, that make it easier to efficiently build high-quality applications. .NET enables a high-level programming environment with many convenience features, while providing low-level access to native memory and APIs.
 

@@ -14,11 +14,11 @@ ms.assetid: 52db8280-0e53-40cf-858b-e8eef3997dea
 
 # C# Guide
 
-* [Tutorials](../tutorials/index.md)
-    * [Console Application](../tutorials/getting-started-with-csharp/console-teleprompter.md)
-    * [REST client](../tutorials/getting-started-with-csharp/console-webapiclient.md)
-    * [Working with LINQ](../tutorials/getting-started-with-csharp/working-with-linq.md)
-    * [Microservices hosted in Docker](../tutorials/getting-started-with-csharp/microservices.md)
+* [Tutorials](tutorials/index.md)
+    * [Console Application](tutorials/console-teleprompter.md)
+    * [REST client](tutorials/console-webapiclient.md)
+    * [Working with LINQ](tutorials/working-with-linq.md)
+    * [Microservices hosted in Docker](tutorials/microservices.md)
 * [🔧 Tour of C#](features.md)
     * [What's new in C# 6](csharp-6.md)
 <!-- This page, or its parent should point to the Roslyn repo for folks that want

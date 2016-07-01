@@ -14,9 +14,7 @@ ms.assetid: 4e80e053-8022-4987-a8a0-209caec0315d
 
 # Delegates & events
 
-> **Note**
-> 
-> This topic will be covered under the following articles:
+This topic will be covered under the following articles:
 
 <style type="text/css">
 ol {
@@ -29,7 +27,7 @@ ol {
 
 2. [System.Delegate and the `delegate` keyword](delegate-class.md)
 
-    This article covers the classes in the .NET Core Framework that support delegates    and how that maps to the `delegate` keyword.
+    This article covers the classes in the .NET Core Framework that support delegates and how that maps to the `delegate` keyword.
 
 3. [Strongly Typed Delegates](delegates-strongly-typed.md)
 

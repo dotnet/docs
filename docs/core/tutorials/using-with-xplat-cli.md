@@ -331,7 +331,7 @@ public static void Main(string[] args)
     var generator = new FibonacciGenerator();
     foreach (var digit in generator.Generate(15))
     {
-        Console.WriteLine(digit);
+        WriteLine(digit);
     }
 }
 ```
@@ -567,7 +567,7 @@ The whole project structure should look like this:
       |__project.json
 |__/test
    |__NewTypesTests
-      |__TypesTests.cs
+      |__PetTests.cs
       |__project.json
 |__global.json
 ```
@@ -591,10 +591,10 @@ There are two new things to make sure you have in your test project:
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type":"platform",
-      "version": "1.0.0-rc2-3002702"
+      "version": "1.0.0"
     },
-    "xunit":"2.1.0",
-    "dotnet-test-xunit": "1.0.0-rc2-build10015",
+    "xunit":"2.2.0-beta2-build3300",
+    "dotnet-test-xunit": "2.2.0-preview2-build1029",
     "NewTypes": "1.0.0"
   },
   "frameworks": {
@@ -661,5 +661,3 @@ SUMMARY: Total: 1 targets, Passed: 1, Failed: 0.
 Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.  The next step is to create awesome console apps of your own!
  
 If a more advanced example of a console app interests you, check out the next tutorial: [Using the CLI tools to write console apps: An advanced step-by-step guide](cli-console-app-tutorial-advanced.md).
- 
-	

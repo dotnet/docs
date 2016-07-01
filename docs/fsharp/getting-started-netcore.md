@@ -1,10 +1,10 @@
 ---
-title: Building simple Fsolutions with the .NET CLI
-description: Building simple Fsolutions with the .NET CLI
+title: Getting started with F# on .NET Core
+description: Getting started with F# on .NET Core
 keywords: .NET, .NET Core
 author: cartermp
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 07/01/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -12,23 +12,20 @@ ms.devlang: dotnet
 ms.assetid: 615db1ec-6ef3-4de2-bae6-4586affa9771
 ---
 
-Getting started with F# on .NET Core
-====================================
+# Getting started with F# on .NET Core
 
 This article covers how you can get started with using F# on .NET Core with the .NET Core Preview 2 SDK.  It will go through building a multi-project solution with a Class Library, Console App, and xUnit test project.
 
-Prerequisites
--------------
+## Prerequisites
 
-To begin, you must install the [.NET Core Preview 2 SDK](https://www.microsoft.com/net/core).
+To begin, you must install the [.NET Core 1.0 SDK Preview 2](https://www.microsoft.com/net/core).
 
-This article uses the Command Line and [Visual Studio Code](https://code.visualstudio.com) as the text editor.  You can use any editor you like.
+This article uses the command line and [Visual Studio Code](https://code.visualstudio.com) as the text editor.  You can use any editor you like.
 
-Building a Simple Multi-project Solution
-----------------------------------------
+## Building a Simple Multi-project Solution
 
 1. Open up a Command Line/Terminal.
-2. Create a new directory named `FSNetCore`.  Open Visual Studio code or your preferred editor inside this directory.  If you haven't already, 
+2. Create a new directory named `FSNetCore`.  Open Visual Studio code or your preferred editor inside this directory. 
 3. Under `FSNetCore`, create `src` and `test` directories.
 4. Under `FSNetCore`, create a new file called `global.json`.  It should have this as its contents:
 
@@ -50,7 +47,7 @@ FSNetCore/
 ### Writing a Class library
 
 1. Create a `Library` folder under `FSNetCore/src`.
-2. From `FSNetCore/src/Library`, `dotnet new -l F#`.
+2. In the command line, execute `dotnet new -l F#` in `FSNetCore/src/Library`.
 3. Remove the `NuGet.Config` file.
 4. Rename `Program.fs` to `Lib.fs`.
 5. Open the `project.json` file and remove the `emitEntryPoint` entry from `buildOptions`.
@@ -59,7 +56,7 @@ FSNetCore/
 8. Under `frameworks`, change `netcoreapp1.0` to `netstandard1.6`.
 9. Under `frameworks/netstandard1.6`, remove the `imports` section.
 10. Under `frameworks/netstandard1.6/dependencies`, replace the `Microsoft.NETCore.App` package with `"NETStandard.Library":"1.6.0"`.  Add `"Microsoft.FSharp.Core.netcore": "1.0.0-alpha-160629"` and `"Newtonsoft.Json": "9.0.1-beta1"`.
-11. Open `Lib.fs` and change the contents to the following code::
+11. Open `Lib.fs` and change the contents to the following code:
     ```fsharp
     module Library
 
@@ -119,7 +116,7 @@ let getJsonNetJson value =
 ### Writing a Console Application which Consumes the Class Library
 
 1. Create an `App` folder under `FSNetCore/src`.
-2. From `FSNetCore/src/App`, `dotnet new -l F#`
+2. In the command line, execute `dotnet new -l F#` in `FSNetCore/src/App`.
 3. Remove the `NuGet.Config` file.
 4. Open the `project.json` file.
 5. Remove the global `dependencies` section.
@@ -147,13 +144,13 @@ let getJsonNetJson value =
         0 // return an integer exit code
     ```
 7. Enter `dotnet restore` and `dotnet build` into the command line.  These should succeed.
-8. Enter `dotnet run Hey Jude` into the command line.  You should see results like this:
+8. Enter `dotnet run Hello World` into the command line.  You should see results like this:
 
 ```
 Nice command line arguments!  Here's what JSON.NET has to say about them:
 
-I used to be hey but now I'm ""hey""!
-I used to be jude but now I'm ""jude""!
+I used to be Hello but now I'm ""Hello""!
+I used to be World but now I'm ""World""!
 ```
 
 Your `project.json` file should look like this:
@@ -214,10 +211,10 @@ let main argv =
     0 // return an integer exit code
 ```
 
-### Testing the Class Library with xUnit
+### Testing the Class Library with xUnit.net
 
 1. Create a `TestLibrary` folder under `NETCoreFS/test`.
-2. From `GoldenF/test/TestLibrary`, `dotnet new -l F#`
+2. In the command line, execute `dotnet new -l F#` in `FSNetCore/src/Tests`.
 3. Remove the `NuGet.Config`.
 4. Rename `Program.fs` to `Tests.fs`.
 5. Open the `project.json` file.
@@ -253,7 +250,8 @@ let main argv =
 
 You should now be able to run the test and verify it passes by doing `dotnet test`.
 
-**Note**: This will temporarily fail on OS X. This is a known issue.
+> [!NOTE]
+> This will temporarily fail on macOS. This is a known issue.
 
 Your `project.json` file should look like this:
 

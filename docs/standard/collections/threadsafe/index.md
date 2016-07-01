@@ -29,7 +29,7 @@ The following table lists the collection types in the [System.Collections.Concur
 
 Type | Description
 ---- | -----------
-[BlockingCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1) | Provides bounding and blocking functionality for any type that implements [IProducerConsumerCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1). For more information, see [BlockingCollection Overview](threadsafe/blockingcollection-overview.md).
+[BlockingCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1) | Provides bounding and blocking functionality for any type that implements [IProducerConsumerCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1). For more information, see [BlockingCollection Overview](blockingcollection-overview.md).
 [ConcurrentBag&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1) | Thread-safe implementation of an unordered collection of elements.
 [ConcurrentDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2) | Thread-safe implementation of a dictionary of key-value pairs.
 [ConcurrentQueue&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1) | Thread-safe implementation of a FIFO (first-in, first-out) queue.

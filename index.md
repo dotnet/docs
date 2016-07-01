@@ -60,7 +60,7 @@ ms.assetid:
                                 </a>
                             </li>
                             <li class="column column-third">
-                                <a href="core/api/index">
+                                <a href="api/index.md">
                                     <h3>API Reference</h3>
                                     <p>Browse the .NET API, organized by namespace.</p>
                                 </a>

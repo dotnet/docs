@@ -15,9 +15,7 @@ ms.assetid: 615db1ec-6ef3-4de2-bae6-4586affa9771
 Getting started with F# on .NET Core
 ====================================
 
-TODO intro
-
-The scripts in this document describe the steps necessary to build a number of typical .NET Core F# solutions, using the .NET CLI. The scenarios include testing, and using third-party libraries.
+This article covers how you can get started with using F# on .NET Core with the .NET Core Preview 2 SDK.  It will go through building a multi-project solution with a Class Library, Console App, and xUnit test project.
 
 Prerequisites
 -------------

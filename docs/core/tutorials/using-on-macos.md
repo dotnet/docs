@@ -159,7 +159,7 @@ namespace Library
 This makes use of a number of modern C# features, such as 
 static usings, expression bodied members, and interpolated strings,
 that you can learn
-about in the [Learn C#](/csharp/index.md) section.
+about in the [C# Guide](../../csharp/index.md) section.
 
 Now that you've updated the code, you can build the library using
 `dotnet build`.

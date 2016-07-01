@@ -22,11 +22,11 @@ Porting is a task that may take time, especially if you have a large codebase.  
 
 This article assumes you are using Visual Studio 2015 or later on Windows.  The bits required for building .NET Core code are not available on previous versions of Visual Studio.
 
-This article also assumes that you have understood the [overview of the porting process](overview.md) and that you have resolved any issues with [third-party dependencies](third-party-deps.md).
+This article also assumes that you understand the [recommended porting process](index.md) and that you have resolved any issues with [third-party dependencies](third-party-deps.md).
 
 ## Targeting the .NET Standard Library
 
-The best way to build a cross-platform library for .NET Core is to target the [.NET Standard Library](../standard/library.md).  The .NET Standard Library is the formal specification of .NET APIs that are intended to be available on all .NET runtimes.  It is supported by the .NET Core runtime.
+The best way to build a cross-platform library for .NET Core is to target the [.NET Standard Library](../../standard/library.md).  The .NET Standard Library is the formal specification of .NET APIs that are intended to be available on all .NET runtimes.  It is supported by the .NET Core runtime.
 
 What this means is that you'll have to make a tradeoff between APIs you can use and platforms you can support, and pick the version of the .NET Platform Standard that best suits the tradeoff you wish to make.
 
@@ -49,7 +49,7 @@ A key thing to understand is that **a project targeting a lower version cannot r
 
 It's recommended that you pick the lowest possible .NET Standard version and use that throughout your project.
 
-Read more in [.NET Platform Standard Library](../standard/library.md).
+Read more in [.NET Platform Standard Library](../../standard/library.md).
 
 ## Key Technologies Not Yet Available on the .NET Standard or .NET Core
 
@@ -57,11 +57,11 @@ You may be using some technologies available for the .NET Framework that are not
 
 ### App Domains
 
-AppDomains can be used for different purposes on the .NET Framework. For code isolation, we recommend separate processes and/or containers as an alternative. For dynamic loading of assemblies, we recommend the new [AssemblyLoadContext](http://dotnet.github.io/api/System.Runtime.Loader.AssemblyLoadContext.html) class.
+AppDomains can be used for different purposes on the .NET Framework. For code isolation, we recommend separate processes and/or containers as an alternative. For dynamic loading of assemblies, we recommend the new  @System.Runtime.Loader.AssemblyLoadContext class.
 
 ### Remoting
 
-For communication across processes, inter-process communication (IPC) mechanisms can be used as an alternative to Remoting, such as [Pipes](https://.docs.microsoft.com/en-us/dotnet/core/api/system.io.pipes) or [Memory Mapped Files](hhttps://docs.microsoft.com/en-us/dotnet/core/api/system.io.memorymappedfiles.memorymappedfile#System_IO_MemoryMappedFiles_MemoryMappedFile).
+For communication across processes, inter-process communication (IPC) mechanisms can be used as an alternative to Remoting, such as [Pipes](https://docs.microsoft.com/dotnet/core/api/system.io.pipes) or [Memory Mapped Files](https://docs.microsoft.com/dotnet/core/api/system.io.memorymappedfiles.memorymappedfile).
 
 Across machines, you can use a network based solution as an alternative, preferably a low-overhead plain text protocol such as HTTP.  [KestrelHttpServer](https://github.com/aspnet/KestrelHttpServer), the web server used by ASP.NET Core, is an option here.  Remote proxy generation via [Castle.Core](https://github.com/castleproject/Core) is also an option to consider.
 
@@ -70,8 +70,8 @@ Across machines, you can use a network based solution as an alternative, prefera
 As an alternative to Binary Serialization, there are multiple different serialization technologies to choose.  You should choose one that fits your goals for formatting and footprint.  Popular choices include:
 
 * [JSON.NET](http://www.newtonsoft.com/json) for JSON
-* [Data contract serialization](https://docs.microsoft.com/en-us/dotnet/core/api/system.runtime.serialization.datacontractserializer#System_Runtime_Serialization_DataContractSerializer) for both XML and JSON
-* [XML serialization](https://docs.microsoft.com/en-us/dotnet/core/api/system.xml.serialization.xmlserializer#System_Xml_Serialization_XmlSerializer) for XML
+* @System.Runtime.Serialization.DataContractSerializer for both XML and JSON
+* @System.Xml.Serialization.XmlSerializer for XML
 * [protobuf-net](https://github.com/mgravell/protobuf-net) for Protocol Buffers
 
 Refer to the linked resources to learn about their benefits and choose the ones for your needs.  There are many other serialization formats and technologies out there, many of which are open source.

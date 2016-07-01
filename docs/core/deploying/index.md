@@ -324,7 +324,7 @@ The complete project.json file for this modular self-contained app is:
   "frameworks": {
     "netstandard1.6": {}
   },
-"runtimes": {
+  "runtimes": {
     "win10-x64": {},
     "osx.10.10-x64": {}
   }

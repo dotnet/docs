@@ -128,7 +128,7 @@ be used as the comparison method when attached to a delegate. The
 calling code will have this method attached to the target list of
 the delegate object, and can access it through that delegate.
 
-You create that releationship by passing that method to the
+You create that relationship by passing that method to the
 `List.Sort()` method:
 
 ```cs
@@ -169,7 +169,7 @@ have multiple target methods attached to a delegate object.
 The language support desccribed above provides the features
 and support you'll typically need to work with delegates. These
 features are built on two classes in the .NET Core
-framework: @System.Delegate and @System.MulticastDelegate .
+framework: @System.Delegate and @"System.MulticastDelegate".
 
 The `System.Delegate` class, and its single direct sub-class,
 `System.MulticastDelegate`, provide the framework support for

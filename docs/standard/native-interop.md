@@ -12,9 +12,9 @@ ms.devlang: dotnet
 ms.assetid: 3c357112-35fb-44ba-a07b-6a1c140370ac
 ---
 
-# Native Interoperability
+# Native interoperability
 
-In this document, we will dive a little bit deeper into all three ways of doing “native interoperability” that are available on the .NET platform.
+In this document we will dive a little bit deeper into all three ways of doing “native interoperability” that are available on the .NET platform.
 
 There are a few of reasons why you would want to call into native code:
 
@@ -24,8 +24,9 @@ There are a few of reasons why you would want to call into native code:
 
 Of course, the list above does not cover all of the potential situations and scenarios in which the developer would want/like/need to interface with native components. .NET class library, for instance, uses the native interoperability support to implement a fair number of its APIs, like console support and manipulation, file system access and others. However, it is important to note that there is an option, should one need it.
 
-> [!NOTE]
-> Most of the examples in this document will be presented for all three supported platforms for .NET Core (Windows, Linux and macOS). However, for some short and illustrative examples, just one sample is shown that uses Windows filenames and extensions (that is, “dll” for libraries). This does not mean that those features are not available on Linux or macOS, it was done merely for convenience sake.
+> **Note**
+> 
+> Most of the examples in this document will be presented for all three supported platforms for .NET Core (Windows, Linux, macOS). However, for some short and illustrative examples, I have decided to leave just one sample that will use Windows filenames and extensions (i.e. “dll” for libraries). This does not mean that those features are not available on Linux or macOS, it was done merely for conveince sake.
 
 ## Platform Invoke (P/Invoke)
 

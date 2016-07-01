@@ -22,8 +22,9 @@ Some of the concurrent collection types use lightweight synchronization mechanis
 
 The [ConcurrentQueue&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1) and [ConcurrentStack&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1) classes do not use locks at all. Instead, they rely on Interlocked operations to achieve thread-safety.
 
-> [!NOTE]
-> Because the concurrent collections classes support [ICollection](https://docs.microsoft.com/dotnet/core/api/System.Collections.ICollection), they provide implementations for the `IsSynchronized` and `SyncRoot` properties, even though these properties are irrelevant. `IsSynchronized` always returns `false` and `SyncRoot` is always null.
+> **Note**  
+>
+>Because the concurrent collections classes support [ICollection](https://docs.microsoft.com/dotnet/core/api/System.Collections.ICollection), they provide implementations for the `IsSynchronized` and `SyncRoot` properties, even though these properties are irrelevant. `IsSynchronized` always returns `false` and `SyncRoot` is always null.
 
 The following table lists the collection types in the [System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent) namespace.
 

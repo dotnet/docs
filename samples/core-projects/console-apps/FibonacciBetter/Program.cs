@@ -1,4 +1,4 @@
-﻿using static System.Console;
+﻿using System;
 using Fibonacci;
 
 namespace ConsoleApplication
@@ -10,7 +10,7 @@ namespace ConsoleApplication
             var generator = new FibonacciGenerator();
             foreach (var digit in generator.Generate(15))
             {
-                WriteLine(digit);
+                Console.WriteLine(digit);
             }
         }
     }

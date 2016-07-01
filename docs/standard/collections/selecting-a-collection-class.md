@@ -76,4 +76,4 @@ LINQ to Objects enables developers to use LINQ queries to access in-memory objec
 
 [System.Collections.Generic](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic)
 
-[Thread-Safe Collections](thread-safe-collections.md)
+[Thread-Safe Collections](threadsafe/index.md)

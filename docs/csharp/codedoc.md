@@ -12,16 +12,23 @@ ms.devlang: dotnet
 ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
 ---
 
-# 🔧 Documenting your code
+# XML Documentation
 
-> **Note**
-> 
-> This topic hasn’t been written yet! 
->
-> We welcome your input to help shape the scope and approach. You can track the status and provide input on this
-> [issue](https://github.com/dotnet/core-docs/issues/494) at GitHub.
-> 
-> If you would like to review early drafts and outlines of this topic, please leave a note with your contact information in the issue.
->
-> Learn more about how you can contribute on [GitHub](https://github.com/dotnet/core-docs/blob/master/CONTRIBUTING.md).
->
+* [&lt;c&gt;](#c)
+* [&lt;code&gt;](#code)
+* [&lt;example&gt;](#example)
+* [&lt;exception&gt;](#exception)
+* [&lt;include&gt;](#include)
+* [&lt;list&gt;](#list)
+* [&lt;para&gt;](#para)
+* [&lt;param&gt;](#param)
+* [&lt;paramref&gt;](#paramref)
+* [&lt;permission&gt;](#permission)
+* [&lt;remarks&gt;](#remarks)
+* [&lt;returns&gt;](#returns)
+* [&lt;see&gt;](#see)
+* [&lt;seealso&gt;](#seealso)
+* [&lt;summary&gt;](#summary)
+* [&lt;typeparam&gt;](#typeparam)
+* [&lt;typeparamref&gt;](#typeparamref)
+* [&lt;value&gt;](#value)

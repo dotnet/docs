@@ -1,10 +1,10 @@
 ---
 title: project.json reference
 description: project.json reference
-keywords: .NET, .NET Core
+keywords: .NET, .NET Core, project.json
 author: aL3891
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -261,16 +261,16 @@ For example:
         }
     }
 
-### languageVersion
-Type: String
+### warningsAsErrors
+Type: Boolean
 
-The version of the language used by the compiler: ISO-1, ISO-2, 3, 4, 5, 6, or Default
+**true** to treat warnings as errors; otherwise, **false**. The default is **false**.
 
 For example:
 
     {
         "buildOptions": {
-            "languageVersion": "5"
+            "warningsAsErrors": true
         }
     }
 
@@ -287,29 +287,16 @@ For example:
         }
     }
 
-### platform
-Type: String
-
-The name of the target platform, such as AnyCpu, x86 or x64.
-
-For example:
-
-    {
-        "buildOptions": {
-            "platform": "x64"
-        }
-    }
-
-### warningsAsErrors
+### emitEntryPoint
 Type: Boolean
 
-**true** to treat warnings as errors; otherwise, **false**. The default is **false**.
+**true** to create an executable; **false** to produce a `.dll` file. The default is **false**.
 
 For example:
 
     {
         "buildOptions": {
-            "warningsAsErrors": true
+            "emitEntryPoint": true
         }
     }
 
@@ -323,6 +310,32 @@ For example:
     {
         "buildOptions": {
             "optimize": true
+        }
+    }
+
+### platform
+Type: String
+
+The name of the target platform, such as AnyCpu, x86 or x64.
+
+For example:
+
+    {
+        "buildOptions": {
+            "platform": "x64"
+        }
+    }
+
+### languageVersion
+Type: String
+
+The version of the language used by the compiler: ISO-1, ISO-2, 3, 4, 5, 6, or Default
+
+For example:
+
+    {
+        "buildOptions": {
+            "languageVersion": "5"
         }
     }
 
@@ -365,16 +378,16 @@ For example:
         }
     }
 
-### emitEntryPoint
-Type: Boolean
+### debugType
+Type: String
 
-**true** to create an executable; **false** to produce a `.dll` file. The default is **false**.
+Indicates the type of symbol file (PDF file) to generate. The options are "portable" (for .NET Core projects), "full" (the traditional Windows-only PDB files) or "none".
 
 For example:
 
     {
         "buildOptions": {
-            "emitEntryPoint": true
+            "debugType": "portable"
         }
     }
 
@@ -401,6 +414,19 @@ For example:
     {
         "buildOptions": {
             "preserveCompilationContext": true
+        }
+    }
+
+### outputName
+Type: String
+
+Change the name of the output file. 
+
+For example:
+
+    {
+        "buildOptions": {
+            "outputName": "MyApp"
         }
     }
 
@@ -1033,7 +1059,7 @@ Type: Object
 
 Keys to the object represent destination paths in the output layout.
 
-Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sectins"dest/path": "source/path" or "dest/path": { "include": "./src/path" }
+Values are either a string or an object representing the source path of files to include.  The object representation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sections. 
 
 String example:
 

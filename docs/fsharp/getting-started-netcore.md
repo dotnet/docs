@@ -30,7 +30,7 @@ Building a Simple Multi-project Solution
 1. Open up a Command Line/Terminal.
 2. Create a new directory named `FSNetCore`.  Open Visual Studio code or your preferred editor inside this directory.  If you haven't already, 
 3. Under `FSNetCore`, create `src` and `test` directories.
-4s. Under `FSNetCore`, create a new file called `global.json`.  It should have this as its contents:
+4. Under `FSNetCore`, create a new file called `global.json`.  It should have this as its contents:
 
 ```json
 {

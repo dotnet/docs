@@ -20,7 +20,7 @@ This article covers how you can get started with using F# on .NET Core with the 
 
 To begin, you must install the [.NET Core 1.0 SDK Preview 2](https://www.microsoft.com/net/core).
 
-This article uses the command line and [Visual Studio Code](https://code.visualstudio.com) as the text editor.  You can use any editor you like.
+This article uses the command line and [Visual Studio Code](https://code.visualstudio.com) as the text editor.  You're free to use any editor you like, though.  To get awesome features like intellisense, better syntax highlighting, and more, you can also download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp) and get a lightweight IDE experience in Visual Studio Code.
 
 ## Building a Simple Multi-project Solution
 

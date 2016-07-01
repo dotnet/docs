@@ -88,7 +88,7 @@ At this point, your directory tree should look like this:
 |__/src
    |__/app
    |__/library
-/test
+|__/test
    |__/test-library
 ```
 

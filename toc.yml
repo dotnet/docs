@@ -1,10 +1,14 @@
-﻿- name: .NET Home
-  href: /dotnet/
-  homepage: /dotnet/index
+- name: Docs
+  href: /
+  homepage: /
   items:
-  - name: Documentation
-    href: /dotnet/articles/
-    homepage: /dotnet/articles/welcome
-  - name: API reference
-    href: /dotnet/core/api/
-    homepage: /dotnet/core/api/index
+  - name: .NET Home
+    href: /dotnet/
+    homepage: /dotnet/index
+    items:
+    - name: Documentation
+      href: /dotnet/articles/
+      homepage: /dotnet/articles/welcome
+    - name: API reference
+      href: /dotnet/core/api/
+      homepage: /dotnet/core/api/index

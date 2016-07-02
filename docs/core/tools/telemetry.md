@@ -12,15 +12,31 @@ ms.devlang: dotnet
 ms.assetid: f2b312bb-f80b-4b0d-9101-93908f06a6fa
 ---
 
-#.NET Core Tools Telemetry
+# .NET Core Tools Telemetry
 
-The .NET Core tools include a [telemetry feature](https://github.com/dotnet/cli/pull/2145) so that the .NET Team can collect usage information about the .NET Core Tools. It’s important that the team understands how the tools are being used so that we can improve them. The telemetry is only in the tools and does not affect your apps.
+The .NET Core Tools include a [telemetry feature](https://github.com/dotnet/cli/pull/2145) that collects usage information. It’s important that the .NET Team understands how the tools are being used so that we can improve them.
+
+The data collected is anonymous and will be published in an aggregated form for use by both Microsoft and community engineers under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/).
+
+## Scope
+
+The `dotnet` command is used to launch both apps and the .NET Core Tools. The `dotnet` command itself does not collect telemetry. It is the .NET Core Tools that are run via the `dotnet` command that collect telemetry.
+
+.NET Core commands (telemetry is not enabled):
+
+- `dotnet`
+- `dotnet [path-to-app]`
+
+.NET Core Tools [commands](index.md) (telemetry is enabled), such as:
+
+- `dotnet build`
+- `dotnet pack`
+- `dotnet restore`
+- `dotnet run`
 
 ##Behavior
 
-The telemetry feature is on by default. The data collected is anonymous in nature and will be published in an aggregated form for use by both Microsoft and community engineers under a Creative Commons license.
-
-You can opt-out of the telemetry feature by setting an environment variable DOTNET_CLI_TELEMETRY_OPTOUT (for example, export on OS X/Linux, set on Windows) to true (for example, “true”, 1). Doing this will stop the collection process from running.
+The .NET Core Tools telemetry feature is enabled by default. You can opt-out of the telemetry feature by setting an environment variable DOTNET_CLI_TELEMETRY_OPTOUT (for example, `export` on macOS/Linux, `set` on Windows) to true (for example, “true”, 1).
 
 ##Data Points
 
@@ -36,11 +52,24 @@ The feature collects the following pieces of data:
 
 The feature will not collect any personal data, such as usernames or emails. It will not scan your code and not extract any project-level data that can be considered sensitive, such as name, repo or author (if you set those in your project.json). We want to know how the tools are used, not what you are building with the tools. If you find sensitive data being collected, that’s a bug. Please [file an issue](https://github.com/dotnet/cli/issues) and it will be fixed.
 
-We use the [MICROSOFT .NET LIBRARY EULA](https://aka.ms/dotnet-core-eula) for the .NET Core Tools, which we also use for all .NET NuGet packages. We recently added a “DATA” section re-printed below, to enable telemetry from the tools. We want to stay with one EULA for .NET Core and only intend to collect data from the tools, not the runtime or libraries.
+##License
 
-##Disclosure
+The Microsoft distribution of .NET Core is licensed with the [MICROSOFT .NET LIBRARY EULA](https://aka.ms/dotnet-core-eula). This includes the “DATA” section re-printed below, to enable telemetry.
 
-When you first run the `dotnet` tool, you see the following text. This is how Microsoft notifies you about data collection. This same experience also initially populates your NuGet cache with the libraries in the .NET Core SDK, avoiding network calls for those libraries.
+[.NET NuGet packages](https://www.nuget.org/profiles/dotnetframework) use this same license but do not enable telemetry (see [Scope](#scope) above).
+
+```
+2.      DATA.  The software may collect information about you and your use of
+the software, and send that to Microsoft. Microsoft may use this information
+to improve our products and services. You can learn more about data collection
+and use in the help documentation and the privacy statement at
+http://go.microsoft.com/fwlink/?LinkId=528096 . Your use of the software
+operates as your consent to these practices.
+```
+
+## Disclosure
+
+The .NET Core Tools display the following text when you first run one of the commands (for example, `dotnet restore`). This "first run" experience is how Microsoft notifies you about data collection. This same experience also initially populates your NuGet cache with the libraries in the .NET Core SDK, avoiding requests to NuGet.org (or other NuGet feed) for these libraries.
 
 ```
 Welcome to .NET Core!

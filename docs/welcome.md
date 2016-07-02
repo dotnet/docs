@@ -15,7 +15,7 @@ ms.assetid: cb788dcf-2120-467f-9c34-c02a90e1f68f
 Welcome to .NET
 ===============
 
-> Check out the ["Getting Started with .NET Core" tutorials](core/tutorials/getting-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
+> Check out the ["Getting Started with .NET Core" tutorials](core/getting-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
 
 Welcome to .NET! You can build any kind of application you want with .NET, from cloud to IoT to games. You can start building your next application today, for Windows, Linux, Android, macOS, and iOS. There are millions of developers that use .NET to power mission critical applications, personal apps and immersive games. You can write the next one.
 

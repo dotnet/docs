@@ -14,13 +14,13 @@ ms.assetid: 615db1ec-6ef3-4de2-bae6-4586affa9771
 
 # Getting started with F# on .NET Core
 
-This article covers how you can get started with using F# on .NET Core with the .NET Core 1.0 Preview 2 SDK.  It will go through building a multi-project solution with a Class Library, a Console App, and an xUnit test project.
+This article covers how you can get started with using F# on .NET Core with the ..NET Core SDK 1.0 Preview 2.  It will go through building a multi-project solution with a Class Library, a Console App, and an xUnit test project.
 
 ## Prerequisites
 
-To begin, you must install the [.NET Core 1.0 SDK Preview 2](https://www.microsoft.com/net/core).
+To begin, you must install the [.NET Core SDK 1.0 Preview 2](https://www.microsoft.com/net/core).
 
-This article uses the command line and [Visual Studio Code](https://code.visualstudio.com) as the text editor.  You're free to use any editor you like, though.  To get awesome features like intellisense, better syntax highlighting, and more, you can also download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp) and get a lightweight IDE experience in Visual Studio Code.
+This article uses the command line and [Visual Studio Code](https://code.visualstudio.com) as the text editor.  You're free to use any editor you like, though.  To get awesome features like Intellisense, better syntax highlighting, and more, you can also download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp) and get a lightweight IDE experience in Visual Studio Code.
 
 ## Building a Simple Multi-project Solution
 

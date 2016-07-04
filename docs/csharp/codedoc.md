@@ -16,8 +16,8 @@ ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
 
 by [Toni Solarin-Sodara](https://github.com/tsolarin)
 
-XML documentation tags are specially formatted comments, added above class and method 
-definitions, used to document your code. You can generate the XML doc file at compile time 
+XML documentation tags are specially formatted comments, added above the definition of a class 
+or its members, used to document your code. You can generate the XML documentation file at compile time 
 by adding `"xmlDoc": true` under `buildOptions` in your `project.json`
 
 * [&lt;c&gt;](#c)

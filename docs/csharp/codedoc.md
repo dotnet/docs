@@ -14,6 +14,8 @@ ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
 
 # XML Documentation
 
+by [Toni Solarin-Sodara](https://github.com/tsolarin)
+
 XML documentation tags are specially formatted comments, added above class and method 
 definitions, used to document your code. You can generate the XML doc file at compile time 
 by adding `"xmlDoc": true` under `buildOptions` in your `project.json`

@@ -77,7 +77,7 @@ Defines a configuration under which to build.  If omitted, it defaults to Debug.
 
 Target runtime to build for. 
 
---version-suffix [VERSION_SUFFIX]
+`--version-suffix` [VERSION_SUFFIX]
 
 Defines what `*` should be replaced with in the version field in the project.json file. The format follows NuGet's version guidelines. 
 

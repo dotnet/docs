@@ -150,33 +150,35 @@ Starting from the solution obtained with the previous script, execute the follow
 
    The solution should still build and function exactly like it did before: the test should pass, and the console application should run and be debuggable.
 
-3. In Solution Explorer, open the context menu for the `src` folder, and choose **Add**. , **New Project**.
+3. In the **Library"" Project, open the context menu and choose **Build**.
 
-4. In the **New Project** dialog, choose the **Visual C#** node, and then choose **Console Application**.
+4. In Solution Explorer, open the context menu for the `src` folder, and choose **Add**. , **New Project**.
+
+5. In the **New Project** dialog, choose the **Visual C#** node, and then choose **Console Application**.
 
    > **Important**
    >
    > Make sure you choose a standard console application, not the .NET Core version. In this section, you'll be  consuming the library from a .NET Framework application
 
-5. Name the project "FxApp", and set the location to `Golden\src`.
+6. Name the project "FxApp", and set the location to `Golden\src`.
 
-6. In the **FxApp** project, open the context menu for the **References** node and choose **Add Reference**.
+7. In the **FxApp** project, open the context menu for the **References** node and choose **Add Reference**.
 
-7. In the **Reference Manager** dialog, choose **Browse** and browse to the location of the built `Library.dll` (under the ..Golden\src\Library\bin\Debug\netstandard1.4 path), and then click **Add**. 
+8. In the **Reference Manager** dialog, choose **Browse** and browse to the location of the built `Library.dll` (under the ..Golden\src\Library\bin\Debug\netstandard1.4 path), and then click **Add**. 
 
    You could also package the library and reference the package, as another way to reference .NET Core code from the .NET Framework.
 
-8. Open the context menu for the **References** node and choose **Manage NuGet Packages**.
+9. Open the context menu for the **References** node and choose **Manage NuGet Packages**.
 
-9. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Check the **Include prerelease** checkbox, and then browse for **Newtonsoft.Json**. Click **Install**. 
+10. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Check the **Include prerelease** checkbox, and then browse for **Newtonsoft.Json**. Click **Install**. 
 
-10. In the **FxApp** project, open the `Program.cs` file and add a `using Library;` directive to the top of the file, and add `Console.WriteLine($"The answer is {new Thing().Get(42)}.");` to the `Main` method of the program.
+11. In the **FxApp** project, open the `Program.cs` file and add a `using Library;` directive to the top of the file, and add `Console.WriteLine($"The answer is {new Thing().Get(42)}.");` to the `Main` method of the program.
 
-11. Set a breakpoint after the line that you just added.
+12. Set a breakpoint after the line that you just added.
 
-12. Make **FxApp** the startup application for the solution.
+13. Make **FxApp** the startup application for the solution.
 
-13. Press F5 to run the app.
+14. Press F5 to run the app.
 
    The application should build and hit the breakpoint. The application output should be "The answer is 42.".
 

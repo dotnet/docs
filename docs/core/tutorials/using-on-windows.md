@@ -121,17 +121,19 @@ A solution using only .NET Core projects
 
 2. In the **App** project, open the context menu for the **References** node and choose **Add**,  **Reference**. 
 
-3. In the **Reference Manager** dialog, check **Library** under the **Projects**, **Solution** node, and then click **OK** 
+3. In the **Reference Manager** dialog, check **Library** under the **Projects**, **Solution** node, and then click **OK**
 
-4. Open the context menu for the **References** node and choose **Restore Packages**.
+4. In the **App** project, open the `project.json` file, and replace `"Library": "1.0.0-*"` with `"Library": {"target": "project", "version": "1.0.0-*"}`.
 
-5. Open the context menu for the **App** node and choose **Set as StartUp Project**.
+5. Open the context menu for the **References** node and choose **Restore Packages**.
 
-6. Open the `Program.cs` file, add a `using Library;` directive to the top of the file, and then add `Console.WriteLine($"The answer is {new Thing().Get(42)}");` to the `Main` method.
+6. Open the context menu for the **App** node and choose **Set as StartUp Project**.
 
-7. Set a breakpoint after the line that you just added.
+7. Open the `Program.cs` file, add a `using Library;` directive to the top of the file, and then add `Console.WriteLine($"The answer is {new Thing().Get(42)}");` to the `Main` method.
 
-8. Press F5 to run the application..
+8. Set a breakpoint after the line that you just added.
+
+9. Press F5 to run the application..
 
    The application should build without error, and should hit the breakpoint. You should also be able to check that the application output "The answer is 42.".
 

@@ -8,6 +8,16 @@ If your issue is that a topic is missing, please preface
 the issue title with [NewTopic]. That helps us find requests
 for new topics.
 
+General
+=======
+
+We use issues to drive the discussion for changes to
+existing topics, and the creation of new topics.
+
+This way, we have those discussions before significant
+effort is spent writing a new topic. Please see our
+Contributing.md guidelines for details.
+
 Issues with Existing Topics
 ===========================
 

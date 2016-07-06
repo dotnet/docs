@@ -4,7 +4,7 @@ description: .NET Core
 keywords: .NET, .NET Core
 author: richlander
 manager: wpickett
-ms.date: 06/27/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies

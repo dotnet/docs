@@ -1,7 +1,7 @@
 C# Indexers Sample
 ================
 
-This sample is created during the [Indexers](https://docs.microsoft.com/dotnet/csharp/indexers.html)
+This sample is created during the [Indexers](https://docs.microsoft.com/dotnet/articles/csharp/indexers)
 for learning C# features. Please see that topic for detailed steps on the code
 for this sample.
 

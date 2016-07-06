@@ -58,7 +58,7 @@ The Microsoft distribution of .NET Core is licensed with the [MICROSOFT .NET LIB
 
 [.NET NuGet packages](https://www.nuget.org/profiles/dotnetframework) use this same license but do not enable telemetry (see [Scope](#scope) above).
 
-```
+```text
 2.      DATA.  The software may collect information about you and your use of
 the software, and send that to Microsoft. Microsoft may use this information
 to improve our products and services. You can learn more about data collection

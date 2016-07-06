@@ -4,7 +4,7 @@ description: project.json reference
 keywords: .NET, .NET Core, project.json
 author: aL3891
 manager: wpickett
-ms.date: 06/30/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -573,7 +573,7 @@ Type: Object
 
 Keys to the object represent destination paths in the output layout.
 
-Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sectins"dest/path": "source/path" or "dest/path": { "include": "./src/path" }
+Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sections.
 
 String example:
 
@@ -644,7 +644,7 @@ Type: Object
 
 Keys to the object represent destination paths in the output layout.
 
-Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sectins"dest/path": "source/path" or "dest/path": { "include": "./src/path" }
+Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sections.
 
 String example:
 
@@ -715,7 +715,7 @@ Type: Object
 
 Keys to the object represent destination paths in the output layout.
 
-Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sectins"dest/path": "source/path" or "dest/path": { "include": "./src/path" }
+Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sections.
 
 String example:
 

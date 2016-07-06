@@ -71,7 +71,7 @@ operates as your consent to these practices.
 
 The .NET Core Tools display the following text when you first run one of the commands (for example, `dotnet restore`). This "first run" experience is how Microsoft notifies you about data collection. This same experience also initially populates your NuGet cache with the libraries in the .NET Core SDK, avoiding requests to NuGet.org (or other NuGet feed) for these libraries.
 
-```
+```text
 Welcome to .NET Core!
 ---------------------
 
@@ -79,7 +79,7 @@ Learn more about .NET Core @ https://aka.ms/dotnet-docs. Use dotnet --help to
 see available commands or go to https://aka.ms/dotnet-cli-docs.
 
 Telemetry
---------------
+---------
 
 The .NET Core tools collect usage data in order to improve your experience.
 The data is anonymous and does not include commandline arguments. The data is
@@ -92,7 +92,7 @@ You can read more about .NET Core tools telemetry @ https://aka.ms/dotnet-cli-
 telemetry.
 
 Configuring...
--------------------
+--------------
 
 A command is running to initially populate your local package cache, to
 improve restore speed and enable offline access. This command will take up to

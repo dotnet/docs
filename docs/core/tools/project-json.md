@@ -182,13 +182,6 @@ For example:
         }
     }
 
-## commands
-Type: Object
-
-TODO: Investigate actual status
-
-Commands are deprecated in the cli. (?)
-
 ## scripts
 Type: Object
 
@@ -785,7 +778,7 @@ For example:
 #### System.GC.RetainVM
 Type: Boolean
 
-**true** to put segments that should be deleted on a standby list for future use instead of releasing them back to the operating system (OS); otherwise, **false**. The default is **false** (?).
+**true** to put segments that should be deleted on a standby list for future use instead of releasing them back to the operating system (OS); otherwise, **false**.
 
 For example:
 
@@ -854,16 +847,14 @@ Version of the shared framework.
         }
     }
 
-#### rollForward
+### applyPatches
 Type: Boolean
 
 **true** to use the framework from either the same or a higher version that differs only in the `SemVer` patch field. **false** for the host to use only the exact framework version. The default is **true**.
 
     {
         "runtimeOptions": {
-            "framework": {
-                "rollForward": true
-            }
+            "applyPatches": false
         }
     }
 

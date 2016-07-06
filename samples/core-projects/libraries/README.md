@@ -2,7 +2,7 @@
 
 **Note:** This document is  compatible with tooling that is still in active development.  Details are subject to change over time.
 
-These samples are buildable projects whose source is used for code snippets in [the guide for writing cross-platform libraries](../../../docs/core-concepts/libraries-with-cli.md).  They can be built and run using the .NET Core RC1 toolchain, and are intended to simply demonstrate how to target and build NuGet packages for different targets.  They aren't examples of how you'd build a real, feature-complete library.
+These samples are buildable projects whose source is used for code snippets in [the guide for writing cross-platform libraries](../../../docs/core/tutorials/libraries.md).  They can be built and run using the .NET Core RC1 toolchain, and are intended to simply demonstrate how to target and build NuGet packages for different targets.  They aren't examples of how you'd build a real, feature-complete library.
 
 To build/use any of these (using `new-library` as an example):
 
@@ -46,7 +46,7 @@ There are two libraries showcased.  The first, `DependencyLibrary`, contains fun
 
 **IMPORTANT:** This project requires Windows and .NET Framework installed on your machine.
 
-The project under `/frameworks-library` demonstrates a project for targeting .NET Framework that you can build and run with the CLI tools.  It does so with a simple project targeting .NET Framework 4.0.  You could extend this to target additional version so of .NET Framework by adding new build targets in the `project.json`.  Check out the [section on cross-compiling](../../../docs/libraries/libraries-with-cli.md#how-to-cross-compile-for-net-core-and-net-framework) in the CLI libraries article for more information.
+The project under `/frameworks-library` demonstrates a project for targeting .NET Framework that you can build and run with the CLI tools.  It does so with a simple project targeting .NET Framework 4.0.  You could extend this to target additional version so of .NET Framework by adding new build targets in the `project.json`.  Check out the [section on cross-compiling](../../../docs/core/tutorials/libraries.md#how-to-multitarget) in the CLI libraries article for more information.
 
 ## net45-compat-library
 

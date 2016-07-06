@@ -1,6 +1,6 @@
 ---
-title: How to&#58; Create an Object Pool by Using a ConcurrentBag
-description: How to&#58; Create an Object Pool by Using a ConcurrentBag
+title: "How to: Create an Object Pool by Using a ConcurrentBag"
+description: "How to: Create an Object Pool by Using a ConcurrentBag"
 keywords: .NET, .NET Core
 author: mairaw
 manager: wpickett

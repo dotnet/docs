@@ -24,7 +24,7 @@ the text.
 
 This may not be necessary depending on the scope of the PR 
 changes. (For example, "fix typo in introduction.md" is
-sufficient to describe that PR).
+sufficient to describe that PR.)
 
 Suggested Reviewers
 ===================

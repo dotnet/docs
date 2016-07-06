@@ -2,7 +2,10 @@ Issue Title
 ===========
 
 Your issue title is above. Please include the path to the
-topic with the issue.
+topic with the issue. For example, if your issue is that
+our [list of samples](https://stage.docs.microsoft.com/en-us/dotnet/articles/samples-and-tutorials/index)
+is missing a sample, you'd put [samples-and-tutorials/index.md]
+in the issue title.
 
 If your issue is that a topic is missing, please preface
 the issue title with [NewTopic]. That helps us find requests

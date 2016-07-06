@@ -1,6 +1,6 @@
 ---
-title: How to: Add and Remove Items from a ConcurrentDictionary
-description: How to: Add and Remove Items from a ConcurrentDictionary
+title: How to&#58; Add and Remove Items from a ConcurrentDictionary
+description: How to&#58; Add and Remove Items from a ConcurrentDictionary
 keywords: .NET, .NET Core
 author: mairaw
 manager: wpickett

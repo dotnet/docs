@@ -108,7 +108,6 @@
 ## [Deploying](core/deploying/index.md)
 ### [🔧 Deploying Applications](core/deploying/applications.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
-### [Reducing Package Dependencies with project.json](core/deploying/reducing-dependencies.md)
 ## [Unit Testing](core/testing/index.md)
 ### [Unit Testing with dotnet test](core/testing/unit-testing-with-dotnet-test.md)
 ## [Releases](core/versions/index.md)

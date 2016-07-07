@@ -123,7 +123,7 @@ A solution using only .NET Core projects
 
 3. In the **Reference Manager** dialog, check **Library** under the **Projects**, **Solution** node, and then click **OK**
 
-4. In the **App** project, open the `project.json` file, and replace `"Library": "1.0.0-*"` with `"Library": {"target": "project", "version": "1.0.0-*"}`.
+4. In the **App** project, open the `project.json` file, and replace `"Library": "1.0.0-*"` with `"Library": {"target": "project"}`.
 
 5. Open the context menu for the **References** node and choose **Restore Packages**.
 

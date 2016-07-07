@@ -113,7 +113,7 @@ Deploying a portable app with one or more third-party dependencies involves thre
         "type": "platform",
         "version": "1.0.0"
       },
-      "Newtonsoft.Json": "8.0.3"
+      "Newtonsoft.Json": "9.0.1"
     },
     ```
 
@@ -261,7 +261,7 @@ Deploying a self-contained app with one or more third-party dependencies involve
       "NETStandard.Library": "1.6.0",
       "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
       "Microsoft.NETCore.DotNetHostPolicy":  "1.0.1",
-      "Newtonsoft.Json": "8.0.3"
+      "Newtonsoft.Json": "9.0.1"
     },
     ```
 

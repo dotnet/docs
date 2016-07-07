@@ -130,6 +130,7 @@
 ### [project.json](core/tools/project-json.md)
 ### [global.json](core/tools/global-json.md)
 ## [Porting from .NET Framework](core/porting/index.md)
+### [Organizing projects for .NET Core](core/porting/project-structure.md)
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
 ### [Porting libraries](core/porting/libraries.md)
 ### [🔧 NuGet packages](core/porting/nuget-packages.md)

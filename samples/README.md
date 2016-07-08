@@ -10,7 +10,7 @@ Some of the articles will have more than one sample associated with them.
 The readme.md file for each sample will refer to the article so that
 you can read more about the concepts covered in each sample.
 
-## building a sample
+## Building a sample
 
 You build the samples using the .NET CLI. You can download the CLI from
 [the .NET Core home page](http://microsoft.com/net/core). Then, execute
@@ -23,14 +23,14 @@ dotnet run
 ```
 
 These will install any needed dependencies, build the project, and run
-the project respetively.
+the project respectively.
 
 Multi-project samples have instructions in their root directory in
 a `README.md` file.  
 
 Except where noted, all samples will build from the command line, on
 any platform supported by .NET Core. There are a few samples that are
-specific to Visual Studio, and will require Visual Studio 2015, Update 3
+specific to Visual Studio, and will require Visual Studio 2015 Update 3
 or a newer version. In addition, some samples show platform specific features,
 and will require a specific platform.
 
@@ -40,8 +40,8 @@ If you wish to add a code sample:
 
 1. Your sample **must be part of a buildable project**
 2. Your sample **cannot be a Visual Studio Project**
-	- We do not want Windows and Visual Studio to be a dependency for people building these on their own. The only exception is if your sample highlights particular tooling and is referenced by a topic that explains the pre-requisites.
-3. Your sample shoud conform to the [corefx coding style](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md) to maintain consistency.
+	- We do not want Windows and Visual Studio to be a dependency for people building these on their own. The only exception is if your sample highlights particular tooling and is referenced by a topic that explains the prerequisites.
+3. Your sample should conform to the [corefx coding style](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md) to maintain consistency.
 	- Additionally, we prefer the use of `static` methods rather than instance methods when demonstrating something that doesn't require instantiating a new object.
 
 We will eventually have a CI system in place to build these projects.
@@ -64,7 +64,7 @@ To create a sample:
         }
     }
   ```
-  To to build and run your sample...
+  To build and run your sample...
 
 5. Restore dependencies
 
@@ -82,5 +82,5 @@ To create a sample:
     dotnet run
  ```
 
-8. Add a readme.md
+8. Add a readme.md to the root directory of your sample.
     - This should include a brief description of the code, and refer people to the article that references the sample.

@@ -61,7 +61,7 @@ The &lt;c&gt; tag is used to indicate that a single line of text should be marke
 ## &lt;code&gt;
 
 The &lt;code&gt; tag is used to indicate that multiple lines of text should be marked as code.
-It is used within the &lt;example&gt; tag
+See the &lt;example&gt; tag for sample usage.
 
 <a name="example"></a>
 ## &lt;example&gt;
@@ -112,10 +112,129 @@ The `cref` parameter represents a reference to an exception that is available fr
 The &lt;include&gt; tag lets you refer to comments in a separate XML file that describe the types and members 
 in your source code as opposed to placing documentation comments directly in your source code file.
 
+    
+    /// <include file='docs.xml' path='Docs/Members[@name="someclass"]/SomeClass/*' />
+    public class SomeClass
+    {
+        /// <include file='docs.xml' path='Docs/Members[@name="someclass"]/DoStuff/*' />
+        public void DoStuff(int a)
+        {
+
+        }
+    }
+
+    /// <include file='docs.xml' path='Docs/Members[@name="someotherclass"]/SomeOtherClass/*' />
+    public class SomeOtherClass
+    {
+
+    }
+
+    /*
+        Contents of docs.xml
+        --------------------
+
+        <Docs>
+            <Members name="someclass">
+                <SomeClass>
+                    <summary>
+                    This class does something
+                    </summary>
+                </SomeClass>
+                <DoStuff>
+                    <summary>
+                    This method does stuff
+                    </summary>
+                </DoStuff>
+            </Members>
+            <Members name="someotherclass">
+                <SomeOtherClass>
+                    <summary>
+                    This class does some other thing
+                    </summary>
+                </SomeOtherClass>
+            </Members>
+        </Docs>
+    */
+
+The `filename` attribute represents the name of the XML file containing the documentation.
+
+The `tagpath` attribute represents the path of the tags in `filename` that leads to the `tag name`.
+
+The `name` attribute represents the name specifier in the tag that precedes the comments
+
+The `id` attribute represents the ID for the tag that precedes the comments
+
 <a name="list"></a>
 ## &lt;list&gt;
 
 The &lt;list&gt; tag lets you format documentation information as an ordered list, unordered list or table.
+
+    /// <summary>
+    /// This class does something
+    /// </summary>
+    public class SomeClass
+    {
+        /// <summary>
+        /// An example of an unordered list
+        /// <list type="bullet">
+        /// <item>
+        /// <term>Some term</term>
+        /// <description>Some description</description>
+        /// </item>
+        /// <item>
+        /// <term>Some term</term>
+        /// <description>Some description</description>
+        /// </item>
+        /// </list>
+        /// </summary>
+        public void DoStuff(int a)
+        {
+
+        }
+
+        /// <summary>
+        /// An example of an ordered list
+        /// <list type="number">
+        /// <item>
+        /// <term>Some term</term>
+        /// <description>Some description</description>
+        /// </item>
+        /// <item>
+        /// <term>Some term</term>
+        /// <description>Some description</description>
+        /// </item>
+        /// </list>
+        /// </summary>
+        public void DoMoreStuff(int a, string b)
+        {
+
+        }
+
+        /// <summary>
+        /// An example of a table
+        /// <list type="table">
+        /// <listheader>
+        /// <term>Table Heading Col 1</term>
+        /// <term>Table Heading Col 2</term>
+        /// <term>Table Heading Col 3</term>
+        /// </listheader>
+        /// <item>
+        /// <term>Col 1 Row 1</term>
+        /// <term>Col 2 Row 1</term>
+        /// <term>Col 3 Row 1</term>
+        /// </item>
+        /// <item>
+        /// <term>Col 1 Row 2</term>
+        /// <term>Col 2 Row 2</term>
+        /// <term>Col 3 Row 2</term>
+        /// </item>
+        /// </list>
+        /// </summary>
+        public void DoALotMoreStuff(params string[] args)
+        {
+
+        }
+    }
 
 <a name="para"></a>
 ## &lt;para&gt;
@@ -275,7 +394,7 @@ The &lt;seealso&gt; tag lets you specify the text that you might want to appear 
 <a name="summary"></a>
 ## &lt;summary&gt;
 
-The &lt;summary&gt; tag contains the primary information of a class or method
+The &lt;summary&gt; tag contains the primary information of a class or method.
 
     /// <summary>
     /// This class does something

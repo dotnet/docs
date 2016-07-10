@@ -262,7 +262,7 @@ when they are used, are always the final method of a query. (Hence the name).
 
 You can see this in action when you use it to determine when the deck
 is back in its original order. Put the shuffle code inside a loop, and stop when
-the sequence is back in its orginal order by applying the `SequenceEquals()`
+the sequence is back in its original order by applying the `SequenceEquals()`
 method. You can see it would always be the final method in any query, because it
 returns a single value instead of a sequence:
 
@@ -406,7 +406,7 @@ Run again, and the inner shuffle is down to 30 queries. Run again with the outer
 and you'll see similar improvements. (It now executes 162 queries).
 
 Don't misinterpret this example by thinking that all queries should run
-eagerly. This example is desgined to highlight the use cases where lazy
+eagerly. This example is designed to highlight the use cases where lazy
 evaluation can cause performance difficulties. That's because each new
 arrangement of the deck of cards is built from the previous arrangement.
 Using lazy evaluation means each new deck configuration is built from
@@ -428,7 +428,7 @@ the best permanent solution. You've leveraged *anonymous types* for the cards, a
 card is represented by strings.
 
 *Anonymous Types* have many productivity advantages. You don't need to define a class yourself
-to represent the storage. The compiler generates the type for you. The compiler genreated type
+to represent the storage. The compiler generates the type for you. The compiler generated type
 utilizes many of the best practices for simple data objects. It's *immutable*, meaning that
 none of its properties can be changed after it has been constructed. Anonymous types are
 internal to an assembly, so they aren't seen as part of the public API for that assembly.
@@ -564,6 +564,6 @@ faro shuffle because they can control where every card moves in the deck.
 In some tricks, the magician has an audience member place a card on top
 of the deck, and shuffles a few times, knowing where that card goes. Other
 illusions require the deck set a certain way. A magician will set the deck
-prioring to performing the trick. Then she will shuffle the deck 5 times
+prior to performing the trick. Then she will shuffle the deck 5 times
 using an inner shuffle. On stage, she can show what looks like a random
 deck, shuffle it 3 more times, and have the deck set exactly how she wants.

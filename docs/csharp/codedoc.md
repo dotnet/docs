@@ -43,10 +43,25 @@ by adding `"xmlDoc": true` under `buildOptions` in your `project.json`
 
 The &lt;c&gt; tag is used to indicate that a single line of text should be marked as code
 
+    /// <summary>
+    /// <c>SomeClass</c> does something
+    /// </summary>
+    public class SomeClass
+    {
+        /// <summary>
+        /// <c>DoStuff</c> does stuff on an instance of <c>SomeClass</c>
+        /// </summary>
+        public void DoStuff()
+        {
+
+        }
+    }
+
 <a name="code"></a>
 ## &lt;code&gt;
 
-The &lt;code&gt; tag is used to indicate that multiple lines of text should be marked as code
+The &lt;code&gt; tag is used to indicate that multiple lines of text should be marked as code.
+It is used within the &lt;example&gt; tag
 
 <a name="example"></a>
 ## &lt;example&gt;
@@ -54,11 +69,42 @@ The &lt;code&gt; tag is used to indicate that multiple lines of text should be m
 The &lt;example&gt; tag lets you specify an example of how to use a method or other library member. 
 This commonly involves using the &lt;code&gt; tag.
 
+    /// <summary>
+    /// This class does something
+    /// </summary>
+    public class SomeClass
+    {
+        /// <example>
+        /// <code>
+        /// SomeClass someClass = new SomeClass();
+        /// someClass.DoStuff();
+        /// </code>
+        /// </example>
+        public void DoStuff()
+        {
+
+        }
+    }
+
 <a name="exception"></a>
 ## &lt;exception&gt;
 
 The &lt;exception&gt; tag lets you specify possible exceptions that can be thrown. 
 It's applicable to methods, properties, events, and indexers.
+
+    /// <summary>
+    /// This class does something
+    /// </summary>
+    public class SomeClass
+    {
+        /// <exception cref="System.Exception">Thrown when there's no stuff to do</exception>
+        public void DoStuff()
+        {
+
+        }
+    }
+
+The `cref` parameter represents a reference to an exception that is available from the current compilation environment.
 
 <a name="include"></a>
 ## &lt;include&gt;
@@ -77,11 +123,43 @@ The &lt;list&gt; tag lets you format documentation information as an ordered lis
 The &lt;para&gt; tag is for use inside a tag, such as &lt;summary&gt;, &lt;remarks&gt;, 
 or &lt;returns&gt;, and lets you add structure to the text.
 
+    /// <summary>
+    /// <para>This class does something</para>
+    /// </summary>
+    public class SomeClass
+    {
+        public void DoStuff()
+        {
+
+        }
+    }
+
 <a name="param"></a>
 ## &lt;param&gt;
 
 The &lt;param&gt; tag should be used in the comment for a method declaration to describe one of the parameters for the method.
 To document multiple parameters, use multiple &lt;param&gt; tags.
+
+    /// <summary>
+    /// This class does something
+    /// </summary>
+    public class SomeClass
+    {
+        /// <param name="a">The stuff to do</param>
+        public void DoStuff(int a)
+        {
+
+        }
+
+        /// <param name="a">A stuff to do</param>
+        /// <param name="b">Another stuff to do</param>
+        public void DoMoreStuff(int a, string b)
+        {
+
+        }
+    }
+
+The `name` parameter represents the name of a method parameter
 
 <a name="paramref"></a>
 ## &lt;paramref&gt;
@@ -89,30 +167,137 @@ To document multiple parameters, use multiple &lt;param&gt; tags.
 The &lt;paramref&gt; tag gives you a way to indicate that a word in the code comments, 
 for example in a &lt;summary&gt; or &lt;remarks&gt; block refers to a parameter.
 
+    /// <summary>
+    /// This class does something
+    /// </summary>
+    public class SomeClass
+    {
+        /// <summary>
+        /// This method does stuff.
+        /// The <paramref name="a"/> takes a number
+        /// </summary>
+        /// <param name="a">The stuff to do</param>
+        public void DoStuff(int a)
+        {
+
+        }
+    }
+
 <a name="remarks"></a>
 ## &lt;remarks&gt;
 
 The &lt;remarks&gt; tag is used to add information about a type, supplementing the information specified with &lt;summary&gt;.
+
+    /// <summary>
+    /// This class primarily does something
+    /// </summary>
+    /// <remarks>
+    /// It can also do everything
+    /// </remarks>
+    public class SomeClass
+    {
+        
+    }
 
 <a name="returns"></a>
 ## &lt;returns&gt;
 
 The &lt;returns&gt; tag should be used in the comment for a method declaration to describe the return value.
 
+    /// <summary>
+    /// This class does something
+    /// </summary>
+    public class SomeClass
+    {
+        /// <returns>Stuff it has done</returns>
+        public int DoStuff(int a)
+        {
+            return a;
+        }
+    }
+
 <a name="see"></a>
 ## &lt;see&gt;
 
-The &lt;see&gt; tag lets you specify a link from within text. Use the `cref` Attribute to create internal hyperlinks to documentation pages for code elements.
+The &lt;see&gt; tag lets you specify a link from within text. Use the `cref` attribute to create internal hyperlinks to documentation pages for code elements.
+
+    /// <summary>
+    /// This class does something
+    /// </summary>
+    public class SomeClass
+    {
+        /// <summary>
+        /// This method does stuff
+        /// See <see cref="SomeClass.DoMoreStuff" /> to do more stuff
+        /// </summary>
+        public void DoStuff(int a)
+        {
+
+        }
+
+        /// <summary>
+        /// This method does more stuff
+        /// </summary>
+        public void DoMoreStuff(int a, string b)
+        {
+
+        }
+    }
 
 <a name="seealso"></a>
 ## &lt;seealso&gt;
 
-The &lt;seealso&gt; tag lets you specify the text that you might want to appear in a See Also section. 
+The &lt;seealso&gt; tag lets you specify the text that you might want to appear in a See Also section.
+
+    /// <summary>
+    /// This class does something
+    /// </summary>
+    public class SomeClass
+    {
+        /// <summary>
+        /// This method does stuff
+        /// <seealso cref="SomeClass.DoMoreStuff" />
+        /// </summary>
+        public void DoStuff(int a)
+        {
+
+        }
+
+        /// <summary>
+        /// This method does more stuff
+        /// </summary>
+        public void DoMoreStuff(int a, string b)
+        {
+
+        }
+    }
 
 <a name="summary"></a>
 ## &lt;summary&gt;
 
 The &lt;summary&gt; tag contains the primary information of a class or method
+
+    /// <summary>
+    /// This class does something
+    /// </summary>
+    public class SomeClass
+    {
+        /// <summary>
+        /// This method does stuff
+        /// </summary>
+        public void DoStuff(int a)
+        {
+
+        }
+
+        /// <summary>
+        /// This method does more stuff
+        /// </summary>
+        public void DoMoreStuff(int a, string b)
+        {
+
+        }
+    }
 
 <a name="typeparam"></a>
 ## &lt;typeparam&gt;
@@ -120,13 +305,52 @@ The &lt;summary&gt; tag contains the primary information of a class or method
 The &lt;typeparam&gt; tag should be used in the comment for a generic type or method declaration to describe a type parameter. 
 Add a tag for each type parameter of the generic type or method.
 
+    /// <summary>
+    /// This class does something
+    /// </summary>
+    public class SomeClass
+    {
+        /// <summary>
+        /// Does generic stuff
+        /// </summary>
+        /// <typeparam name="T">The generic stuff to do</param>
+        public void DoGenericStuff<T>()
+        {
+
+        }
+    }
+
 <a name="typeparamref"></a>
 ## &lt;typeparamref&gt;
 
 The &lt;typeparamref&gt; tag gives you a way to indicate that a word in the code comments, 
 for example in a &lt;summary&gt; or &lt;remarks&gt; block refers to a type parameter.
 
+    /// <summary>
+    /// This class does something
+    /// </summary>
+    public class SomeClass
+    {
+        /// <summary>
+        /// Does generic stuff <typeparamref name="T"/>
+        /// </summary>
+        /// <typeparam name="T">The generic stuff to do</param>
+        public void DoGenericStuff<T>()
+        {
+
+        }
+    }
+
 <a name="value"></a>
 ## &lt;value&gt;
 
 The &lt;value&gt; lets you describe the value that a property represents.
+
+    /// <summary>
+    /// This class does something
+    /// </summary>
+    public class SomeClass
+    {
+        /// <value>The Name property gets/sets the name value of something</value>
+        public string Name { get; set; }
+    }

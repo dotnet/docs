@@ -1,10 +1,10 @@
 ---
 title: project.json reference
 description: project.json reference
-keywords: .NET, .NET Core
+keywords: .NET, .NET Core, project.json
 author: aL3891
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -14,73 +14,9 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 
 # project.json reference
 
- **Note**
-> This topic is likely to change before release! You can track the status of this issue through our public GitHub issue tracker.
+> [!NOTE]
+> This topic is preliminary and subject to change in the next release. You can track the status of this issue through our public GitHub issue tracker.
 
-
-* [name](#name)
-* [version](#version)
-* [summary](#summary)
-* [description](#description)
-* [copyright](#copyright)
-* [title](#title)
-* [entryPoint](#entryPoint)
-* [projectUrl](#projectUrl)
-* [licenseUrl](#licenseUrl)
-* [iconUrl](#iconUrl)
-* [compilerName](#compilerName)
-* [testRunner](#testRunner)
-* [authors](#authors)
-* [owners](#owners)
-* [tags](#tags)
-* [language](#language)
-* [releaseNotes](#releaseNotes)
-* [requireLicenseAcceptance](#requireLicenseAcceptance)
-* [embedInteropTypes](#embedInteropTypes)
-* [compile](#compile)
-* [content](#content)
-* [resource](#resource)
-* [preprocess](#preprocess)
-* [publishExclude](#publishExclude)
-* [shared](#shared)
-* [namedResource](#namedResource)
-* [packInclude](#packInclude)
-* [exclude](#exclude)
-* [contentBuiltIn](#contentBuiltIn)
-* [compileBuiltIn](#compileBuiltIn)
-* [resourceBuiltIn](#resourceBuiltIn)
-* [excludeBuiltIn](#excludeBuiltIn)
-* [dependencies](#dependencies)
-* [tools](#tools)
-* [commands](#commands)
-* [scripts](#scripts)
-* [compilationOptions](#compilationOptions)
-    * [define](#define)
-    * [nowarn](#nowarn)
-    * [additionalArguments](#additionalArguments)
-    * [languageVersion](#languageVersion)
-    * [allowUnsafe](#allowUnsafe)
-    * [platform](#platform)
-    * [warningsAsErrors](#warningsAsErrors)
-    * [optimize](#optimize)
-    * [keyFile](#keyFile)
-    * [delaySign](#delaySign)
-    * [publicSign](#publicSign)
-    * [emitEntryPoint](#emitEntryPoint)
-    * [xmlDoc](#xmlDoc)
-    * [preserveCompilationContext](#preserveCompilationContext)
-* [analyzerOptions](#analyzerOptions)
-    * [languageId](#languageId)
-* [configurations](#configurations)
-* [frameworks](#frameworks)
-    * [dependencies](#dependencies)
-    * [frameworkAssemblies](#frameworkAssemblies)
-    * [wrappedProject](#wrappedProject)
-    * [imports](#imports)
-    * [bin](#bin)
-        * [assembly](#assembly)
-
-<a name="name"></a>
 ## name
 Type: String
 
@@ -92,11 +28,10 @@ For example:
         "name": "MyLibrary"
     }
 
-<a name="version"></a>
 ## version
 Type: String
 
-The [Semver](http://semver.org/spec/v1.0.0.html) version of the project, also used for the nuget package.
+The [Semver](http://semver.org/spec/v1.0.0.html) version of the project, also used for the NuGet package.
 
 For example:
 
@@ -104,19 +39,6 @@ For example:
         "version": "1.0.0-*"
     }
 
-<a name="summary"></a>
-## summary
-Type: String
-
-A short description of the project.
-
-For example:
-
-    {
-        "summary": "This is my library."
-    }
-
-<a name="description"></a>
 ## description
 Type: String
 
@@ -128,7 +50,6 @@ For example:
         "description": "This is my library and it's really great!"
     }
 
-<a name="copyright"></a>
 ## copyright
 Type: String
 
@@ -140,7 +61,6 @@ For example:
         "copyright": "Fabrikam 2016"
     }
 
-<a name="title"></a>
 ## title
 Type: String
 
@@ -152,7 +72,6 @@ For example:
         "title": "My Library"
     }
 
-<a name="entryPoint"></a>
 ## entryPoint
 Type: String
 
@@ -163,60 +82,11 @@ For example:
     {
         "entryPoint": "ADifferentMethod"
     }
-
-<a name="projectUrl"></a>
-## projectUrl
-Type: String
-
-The url for the homepage of the project.
-
-For example:
-
-    {
-        "projectUrl": "http://www.mylibrary.gov"
-    }
-
-<a name="licenseUrl"></a>
-## licenseUrl
-Type: String
-
-The url for the licence the project uses.
-
-For example:
-
-    {
-        "licenseUrl": "http://www.mylibrary.gov/licence"
-    }
-
-<a name="iconUrl"></a>
-## iconUrl
-Type: String
-
-The url for an icon that will be used in various places such as the package explorer.
-
-For example:
-
-    {
-        "iconUrl": "http://www.mylibrary.gov/favicon.ico"
-    }
-
-<a name="compilerName"></a>
-## compilerName
-Type: String
-
-The name of the compiler used for this project. `csc` by default. Currently `csc`, the c# compiler or `fsc`, the f# compiler are supported.
- 
-For example:
-
-    {
-        "compilerName": "fsc"
-    }
-
-<a name="testRunner"></a>
+    
 ## testRunner
 Type: String
 
-The name of the testrunner, such as [NUnit](http://nunit.org/) or [xUnit](http://xunit.github.io/), to use with this project, setting this also marks the project as a test project.
+The name of the test runner, such as [NUnit](http://nunit.org/) or [xUnit](http://xunit.github.io/), to use with this project. Setting this also marks the project as a test project.
 
 For example:
 
@@ -224,7 +94,6 @@ For example:
         "testRunner": "NUnit"
     }
 
-<a name="authors"></a>
 ## authors
 Type: String[]
 
@@ -236,35 +105,10 @@ For example:
         "authors": ["Anne", "Bob"]
     }
 
-<a name="owners"></a>
-## owners
-Type: String[]
-
-An array of strings with the names of the owners of the project.
-
-For example:
-
-    {
-        "owners": ["Fabrikam", "Microsoft"]
-    }
-
-<a name="tags"></a>
-## tags
-Type: String[]
-
-An array of strings with tags for the project, used for searching in NuGet.
-
-For example:
-
-    {
-        "tags": ["hyperscale", "cats"]
-    }
-
-<a name="language"></a>
 ## language
 Type: String
 
-The (human) language of the project, corresponds to the "neutral-language" compiler argument.
+The (human) language of the project. Corresponds to the "neutral-language" compiler argument.
 
 For example:
 
@@ -272,35 +116,10 @@ For example:
         "language": "en-US"
     }
 
-<a name="releaseNotes"></a>
-## releaseNotes
-Type: String
-
-Release notes for the project.
-
-For example:
-
-    {
-        "releaseNotes": "Initial version, implemented flimflams."
-    }
-
-<a name="requireLicenseAcceptance"></a>
-## requireLicenseAcceptance
-Type: Boolean
-
-A boolean that causes a prompt to accept the package license when installing the package to be shown. Only used for nuget packages, ignored in other uses.
-
-For example:
-
-    {
-        "requireLicenseAcceptance": true
-    }
-
-<a name="embedInteropTypes"></a>
 ## embedInteropTypes
 Type: Boolean
 
-If set to true, embeds COM interop types in the assembly. 
+**true** to embed COM interop types in the assembly; otherwise, **false**. 
 
 For example:
 
@@ -308,47 +127,10 @@ For example:
         "embedInteropTypes": true
     }
 
-<a name="compile"></a>
-## compile
-Type: String or String[] with a globbing pattern
-
-Specifies what files are included in compilation.
-
-For example:
-
-    {
-        "compile": "**/*.cs"
-    }
-
-<a name="content"></a>
-## content
-Type: String or String[] with a globbing pattern
-
-Specifies what files are included in the build output, such as images or fonts.
-
-For example:
-
-    {
-        "content": "content/*.jpg"
-    }
-
-<a name="resource"></a>
-## resource
-Type: String or String[] with a globbing pattern
-
-Specifies resource files for the project.
-
-For example:
-
-    {
-        "resource": [ "compiler/resources/**/*", "**/*.resx" ]
-    }
-
-<a name="preprocess"></a>
 ## preprocess
 Type: String or String[] with a globbing pattern
 
-Specifies what files are included in preprocessing.
+Specifies which files are included in preprocessing.
 
 For example:
 
@@ -356,23 +138,10 @@ For example:
         "preprocess": "compiler/preprocess/**/*.cs"
     }
 
-<a name="publishExclude"></a>
-## publishExclude
-Type: String or String[] with a globbing pattern
-
-Specifies what files are excluded from publishing.
-
-For example:
-
-    {
-        "publishExclude": "**/*.pdb"
-    }
-
-<a name="shared"></a>
 ## shared
 Type: String or String[] with a globbing pattern
 
-Specifies what files are shared, this is used for library export.
+Specifies which files are shared, this is used for library export.
 
 For example:
 
@@ -380,93 +149,6 @@ For example:
         "shared": "shared/**/*.cs"
     }
 
-<a name="namedResource"></a>
-## namedResource
-Type: Object
-
-An object whose properties are names of named resources.
-
-For example:
-
-    {
-        "namedResource": {
-            "MyString" : "Hello there!"
-        }
-    }
-
-<a name="packInclude"></a>
-## packInclude
-Type: String or String[] with a globbing pattern
-
-Specifies what files are included when creating the NuGet package.
-
-For example:
-
-    {
-        "packInclude": "myDeploymentScripts/**/*.ps1"
-    }
-
-<a name="exclude"></a>
-## exclude
-Type: String or String[] with a globbing pattern
-
-Specifies what files to exclude from the build.
-
-For example:
-
-    {
-        "exclude": ["bin/**", "obj/**"]
-    }
-
-<a name="contentBuiltIn"></a>
-## contentBuiltIn
-Type: String or String[] with a globbing pattern
-
-Specifies what files are considerd content by the build.
-
-For example:
-
-    {
-        "contentBuiltIn": "content/*.jpg"
-    }
-
-<a name="compileBuiltIn"></a>
-## compileBuiltIn
-Type: String or String[] with a globbing pattern
-
-Specifies what files are included in compilation.
-
-For example:
-
-    {
-        "compileBuiltIn": "**/*.cs"
-    }
-
-<a name="resourceBuiltIn"></a>
-## resourceBuiltIn
-Type: String or String[] with a globbing pattern
-
-Specifies resource files for the project.
-
-For example:
-
-    {
-        "resourceBuiltIn": [ "compiler/resources/**/*", "**/*.resx" ]
-    }
-
-<a name="excludeBuiltIn"></a>
-## excludeBuiltIn
-Type: String or String[] with a globbing pattern
-
-Specifies what files to exclude from the build.
-
-For example:
-
-    {
-        "excludeBuiltIn": ["bin/**", "obj/**"]
-    }
-
-<a name="dependencies"></a>
 ## dependencies
 Type: Object
 
@@ -475,19 +157,18 @@ An object that defines the package dependencies of the project, each key of this
 For example:
 
     "dependencies": {
-        "System.Reflection.Metadata": "1.2.0-rc3-23811",
+        "System.Reflection.Metadata": "1.3.0",
         "Microsoft.Extensions.JsonParser.Sources": {
           "type": "build",
-          "version": "1.0.0"
+          "version": "1.0.0-rc2-20221"
         },
         "Microsoft.Extensions.HashCodeCombiner.Sources": {
           "type": "build",
-          "version": "1.0.0"
+          "version": "1.1.0-alpha1-21456"
         },
         "Microsoft.Extensions.DependencyModel": "1.0.0-*"
     }
 
-<a name="tools"></a>
 ## tools
 Type: Object
 
@@ -501,19 +182,10 @@ For example:
         }
     }
 
-<a name="commands"></a>
-## commands
-Type: Object
-
-TODO: Investigate actual status
-
-Commands are deprecated in the cli. (?)
-
-<a name="scripts"></a>
 ## scripts
 Type: Object
 
-An object that defines scripts run during the build proces. each key in this object identifies where in the build the script is run, each value is either a string with the script to run or an array of strings containg scripts that will run in order.
+An object that defines scripts run during the build process. Each key in this object identifies where in the build the script is run. Each value is either a string with the script to run or an array of strings containing scripts that will run in order.
 The supported events are:
 * precompile
 * postcompile
@@ -529,19 +201,18 @@ For example:
         }
     }
 
-<a name="compilationOptions"></a>
-## compilationOptions
+## buildOptions
 Type: Object
 
-An object whose properties control various aspects of compilation, the valid properties are listed below. Can also be specified per target framework as described in the [frameworks section](#frameworks)
+An object whose properties control various aspects of compilation. The valid properties are listed below. Can also be specified per target framework as described in the [frameworks section](#frameworks).
 
 For example:
 
-    "compilationOptions": {
-      "allowUnsafe": true
+    "buildOptions": {
+      "allowUnsafe": true,
+      "emitEntryPoint": true
     }
 
-<a name="define"></a>
 ### define
 Type: String[]
 
@@ -550,12 +221,11 @@ A list of defines such as "DEBUG" or "TRACE" that can be used in conditional com
 For example:
 
     {
-        "compilationOptions": {
+        "buildOptions": {
             "define": ["TEST", "OTHERCONDITION"]
         }
     }
 
-<a name="nowarn"></a>
 ### nowarn
 Type: String[]
 
@@ -564,14 +234,13 @@ A list of warnings to ignore.
 For example:
 
     {
-        "compilationOptions": {
+        "buildOptions": {
             "nowarn": ["CS0168", "CS0219"]
         }
     }
 
 This ignores the warnings `The variable 'var' is assigned but its value is never used` and `The variable 'var' is assigned but its value is never used`
 
-<a name="additionalArguments"></a>
 ### additionalArguments
 Type: String[]
 
@@ -580,40 +249,63 @@ A list of extra arguments that will be passed to the compiler.
 For example:
 
     {
-        "compilationOptions": {
+        "buildOptions": {
             "additionalArguments": ["/parallel", "/nostdlib"]
         }
     }
 
-<a name="languageVersion"></a>
-### languageVersion
-Type: String
+### warningsAsErrors
+Type: Boolean
 
-The version of the language used by the compiler: ISO-1, ISO-2, 3, 4, 5, 6, or Default
+**true** to treat warnings as errors; otherwise, **false**. The default is **false**.
 
 For example:
 
     {
-        "compilationOptions": {
-            "languageVersion": "5"
+        "buildOptions": {
+            "warningsAsErrors": true
         }
     }
 
-<a name="allowUnsafe"></a>
 ### allowUnsafe
 Type: Boolean
 
-Allows unsafe code in this project.
+**true** to allow unsafe code in this project; otherwise, **false**. The default is **false**.
 
 For example:
 
     {
-        "compilationOptions": {
+        "buildOptions": {
             "allowUnsafe": true
         }
     }
 
-<a name="platform"></a>
+### emitEntryPoint
+Type: Boolean
+
+**true** to create an executable; **false** to produce a `.dll` file. The default is **false**.
+
+For example:
+
+    {
+        "buildOptions": {
+            "emitEntryPoint": true
+        }
+    }
+
+### optimize
+Type: Boolean
+
+**true** to enable the compiler to optimize the code in this project; otherwise, **false**. The default is **false**.
+
+For example:
+
+    {
+        "buildOptions": {
+            "optimize": true
+        }
+    }
+
 ### platform
 Type: String
 
@@ -622,40 +314,24 @@ The name of the target platform, such as AnyCpu, x86 or x64.
 For example:
 
     {
-        "compilationOptions": {
+        "buildOptions": {
             "platform": "x64"
         }
     }
 
-<a name="warningsAsErrors"></a>
-### warningsAsErrors
-Type: Boolean
+### languageVersion
+Type: String
 
-If set to true, treats warnings as errors.
-
-For example:
-
-    {
-        "compilationOptions": {
-            "warningsAsErrors": true
-        }
-    }
-
-<a name="optimize"></a>
-### optimize
-Type: Boolean
-
-Enables the compiler to optimize the code in this project.
+The version of the language used by the compiler: ISO-1, ISO-2, 3, 4, 5, 6, or Default
 
 For example:
 
     {
-        "compilationOptions": {
-            "optimize": true
+        "buildOptions": {
+            "languageVersion": "5"
         }
     }
 
-<a name="keyFile"></a>
 ### keyFile
 Type: String
 
@@ -664,74 +340,736 @@ The path for the key file used for signing this assembly.
 For example:
 
     {
-        "compilationOptions": {
+        "buildOptions": {
             "keyFile": "../keyfile.snk"
         }
     }
 
-<a name="delaySign"></a>
 ### delaySign
 Type: Boolean
 
-Causes signing to be delayed.
+**true** to delay signing; otherwise, **false**. The default is **false**.
 
 For example:
 
     {
-        "compilationOptions": {
+        "buildOptions": {
             "delaySign": true
         }
     }
 
-<a name="publicSign"></a>
 ### publicSign
 Type: Boolean
 
-Enables signing of the resulting assembly.
+**true** to enable signing of the resulting assembly; otherwise, **false**. The default is **false**.
 
 For example:
 
     {
-        "compilationOptions": {
+        "buildOptions": {
             "publicSign": true
         }
     }
 
-<a name="emitEntryPoint"></a>
-### emitEntryPoint
-Type: Boolean
+### debugType
+Type: String
 
-Creates an executable if set to true, otherwise the project will produce a `.dll`.
+Indicates the type of symbol file (PDF file) to generate. The options are "portable" (for .NET Core projects), "full" (the traditional Windows-only PDB files) or "none".
 
 For example:
 
     {
-        "compilationOptions": {
-            "emitEntryPoint": true
+        "buildOptions": {
+            "debugType": "portable"
         }
     }
 
-<a name="xmlDoc"></a>
 ### xmlDoc
 Type: Boolean
 
-Enables xml docs to be generated from comments in the source code.
+**true** to generate XML documentation from triple-slash comments in the source code; otherwise, **false**. The default is **false**.
 
 For example:
 
     {
-        "compilationOptions": {
+        "buildOptions": {
             "xmlDoc": true
         }
     }
 
-<a name="preserveCompilationContext"></a>
 ### preserveCompilationContext
 Type: Boolean
 
-TODO
+**true** to preserve reference assemblies and other context data to allow for runtime compilation; otherwise, **false**. The default is **false**.
 
-<a name="analyzerOptions"></a>
+For example:
+
+    {
+        "buildOptions": {
+            "preserveCompilationContext": true
+        }
+    }
+
+### outputName
+Type: String
+
+Change the name of the output file. 
+
+For example:
+
+    {
+        "buildOptions": {
+            "outputName": "MyApp"
+        }
+    }
+
+### compilerName
+Type: String
+
+The name of the compiler used for this project. `csc` by default. Currently, `csc` (the C# compiler) or `fsc` (the F# compiler) are supported.
+ 
+For example:
+
+    {
+        "compilerName": "fsc"
+    }
+    
+### compile
+Type: Object
+
+An object containing properties for compilation configuration.
+
+#### include
+Type: String or String[] with a globbing pattern.
+
+Specifies which files to include in the build. The patterns are rooted at the project folder. Defaults to none.
+
+For example:
+
+    {
+        "include":["wwwroot", "Views"]
+    }
+
+#### exclude
+Type: String or String[] with a globbing pattern.
+
+Specifies which files to exclude from the build. The exclude patterns have higher priority than the include patterns, so a file found in both will be excluded. The patterns are rooted at the project folder. Defaults to none.
+
+For example:
+
+    {
+        "exclude": ["bin/**", "obj/**"]
+    }
+
+#### includeFiles
+
+Type: String or String[] with a globbing pattern.
+
+A list of file paths to include. The paths are rooted at the project folder. This list has a higher priority than the include and exclude globbing patterns, hence a file listed here and in the exclude globbing pattern will still be included. Defaults to none.
+
+For example:
+
+    {
+        "includeFiles": []
+    }
+
+#### excludeFiles
+
+Type: String or String[] with a globbing pattern.
+
+A list of file paths to exclude. The paths are rooted at the project folder. This list has a higher priority than globbing patterns and the include paths, hence a file found in all will be excluded. Defaults to none.
+
+For example:
+
+    {
+        "excludeFiles":[],
+    }
+
+#### builtIns
+
+Type: Object
+
+The defaults provided by the system. It can have `include` and `exclude` globbing patterns which are merged with the corresponding values of the `include` and `exclude` properties.
+
+For example:
+
+    {
+        "builtIns":{}
+    }
+
+#### mappings
+Type: Object
+
+Keys to the object represent destination paths in the output layout.
+
+Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sections.
+
+String example:
+
+    {
+        "mappings": {
+            "dest/path": "./src/path"
+        }
+    }
+
+Object example:
+
+    {
+        "mappings": {
+            "dest/path":{
+                "include":"./src/path"
+            }
+        }
+    }
+
+### embed
+Type: Object
+
+An object containing properties for compilation configuration.
+
+#### include
+Type: String or String[] with a globbing pattern.
+
+    {
+        "include":["wwwroot", "Views"]
+    }
+
+#### exclude
+Type: String or String[] with a globbing pattern.
+
+Specifies which files to exclude from the build.
+
+For example:
+
+    {
+        "exclude": ["bin/**", "obj/**"]
+    }
+
+#### includeFiles
+
+Type: String or String[] with a globbing pattern.
+
+    {
+        "includeFiles":[],
+    }
+
+#### excludeFiles
+
+Type: String or String[] with a globbing pattern.
+
+    {
+        "excludeFiles":[],
+    }
+
+#### builtIns
+Type: Object
+
+    {
+        "builtIns":{}
+    }
+
+#### mappings
+Type: Object
+
+Keys to the object represent destination paths in the output layout.
+
+Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sections.
+
+String example:
+
+    {
+        "mappings": {
+            "dest/path": "./src/path"
+        }
+    }
+
+Object example:
+
+    {
+        "mappings": {
+            "dest/path":{
+                "include":"./src/path"
+            }
+        }
+    }
+
+### copyToOutput
+Type: Object
+
+An object containing properties for compilation configuration.
+
+#### include
+Type: String or String[] with a globbing pattern.
+
+    {
+        "include":["wwwroot", "Views"]
+    }
+
+#### exclude
+Type: String or String[] with a globbing pattern.
+
+Specifies which files to exclude from the build.
+
+For example:
+
+    {
+        "exclude": ["bin/**", "obj/**"]
+    }
+
+#### includeFiles
+
+Type: String or String[] with a globbing pattern.
+
+    {
+        "includeFiles":[],
+    }
+
+#### excludeFiles
+
+Type: String or String[] with a globbing pattern.
+
+    {
+        "excludeFiles":[],
+    }
+
+#### builtIns
+Type: Object
+
+    {
+        "builtIns":{}
+    }
+
+#### mappings
+Type: Object
+
+Keys to the object represent destination paths in the output layout.
+
+Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sections.
+
+String example:
+
+    {
+        "mappings": {
+            "dest/path": "./src/path"
+        }
+    }
+
+Object example:
+
+    {
+        "mappings": {
+            "dest/path":{
+                "include":"./src/path"
+            }
+        }
+    }
+
+## publishOptions
+Type: Object
+
+An object containing properties for compilation configuration.
+
+### include
+Type: String or String[] with a globbing pattern.
+
+    {
+        "include":["wwwroot", "Views"]
+    }
+
+### exclude
+Type: String or String[] with a globbing pattern.
+
+Specifies which files to exclude from the build.
+
+For example:
+
+    {
+        "exclude": ["bin/**", "obj/**"]
+    }
+
+### includeFiles
+
+Type: String or String[] with a globbing pattern.
+
+    {
+        "includeFiles":[],
+    }
+
+### excludeFiles
+
+Type: String or String[] with a globbing pattern.
+
+    {
+        "excludeFiles":[],
+    }
+
+### builtIns
+Type: Object
+
+    {
+        "builtIns":{}
+    }
+
+### mappings
+Type: Object
+
+Keys to the object represent destination paths in the output layout.
+
+Values are either a string or an object representing the source path of files to include.  The object represtation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sections.
+
+String example:
+
+    {
+        "mappings": {
+            "dest/path": "./src/path"
+        }
+    }
+
+Object example:
+
+    {
+        "mappings": {
+            "dest/path":{
+                "include":"./src/path"
+            }
+        }
+    }
+
+## runtimeOptions
+Type: Object
+
+Specifies parameters to be provided to the runtime during initialization.
+
+### configProperties
+Type: Object
+
+Contains configuration properties to configure the runtime and the framework.
+
+#### System.GC.Server
+Type: Boolean
+
+**true** to enable server garbage collection; otherwise, **false**. The default is **false**.
+
+For example:
+
+    {
+        "runtimeOptions": {
+            "configProperties": {
+                "System.GC.Server": true
+            }
+        }
+    }
+
+#### System.GC.Concurrent
+Type: Boolean
+
+**true** to enable concurrent garbage collection; otherwise, **false**. The default is **false**.
+
+For example:
+
+    {
+        "runtimeOptions": {
+            "configProperties": {
+                "System.GC.Concurrent": true
+            }
+        }
+    }
+
+#### System.GC.RetainVM
+Type: Boolean
+
+**true** to put segments that should be deleted on a standby list for future use instead of releasing them back to the operating system (OS); otherwise, **false**.
+
+For example:
+
+    {
+        "runtimeOptions": {
+            "configProperties": {
+                "System.GC.RetainVM": true
+            }
+        }
+    }
+
+#### System.Threading.ThreadPool.MinThreads
+Type: Integer
+
+Overrides the number of minimum threads for the ThreadPool worker pool.
+
+    {
+        "runtimeOptions": {
+            "configProperties": {
+                "System.Threading.ThreadPool.MinThreads": 4
+            }
+        }
+    }
+
+#### System.Threading.ThreadPool.MaxThreads
+Type: Integer
+
+Overrides the number of maximum threads for the ThreadPool worker pool.
+
+    {
+        "runtimeOptions": {
+            "configProperties": {
+                "System.Threading.ThreadPool.MaxThreads": 25
+            }
+        }
+    }
+
+### framework
+Type: Object
+
+Contains shared framework properties to use when activating the application. The presence of this section indicates that the application is a portable app designed to use a shared redistributable framework.
+
+#### name
+Type: String
+
+Name of the shared framework.
+
+    {
+        "runtimeOptions": {
+            "framework": {
+                "name": "Microsoft.DotNetCore"
+            }
+        }
+    }
+
+#### version
+Type: String
+
+Version of the shared framework.
+
+    {
+        "runtimeOptions": {
+            "framework": {
+                "version": "1.0.1"
+            }
+        }
+    }
+
+### applyPatches
+Type: Boolean
+
+**true** to use the framework from either the same or a higher version that differs only in the `SemVer` patch field. **false** for the host to use only the exact framework version. The default is **true**.
+
+    {
+        "runtimeOptions": {
+            "applyPatches": false
+        }
+    }
+
+## packOptions
+Type: Object
+
+Defines options pertaining to the packaging of the project output into a NuGet package.
+
+### summary
+Type: String
+
+A short description of the project.
+
+For example:
+
+    {
+        "packOptions": {
+            "summary": "This is my library."
+        }
+    }
+
+### tags
+Type: String[]
+
+An array of strings with tags for the project, used for searching in NuGet.
+
+For example:
+
+    {
+        "packOptions": {
+            "tags": ["hyperscale", "cats"]
+        }
+    }
+
+### owners
+Type: String[]
+
+An array of strings with the names of the owners of the project.
+
+For example:
+
+    {
+        "packOptions": {
+            "owners": ["Fabrikam", "Microsoft"]
+        }
+    }
+
+### releaseNotes
+Type: String
+
+Release notes for the project.
+
+For example:
+
+    {
+        "packOptions": {
+            "releaseNotes": "Initial version, implemented flimflams."
+        }
+    }
+
+### iconUrl
+Type: String
+
+The URL for an icon that will be used in various places such as the package explorer.
+
+For example:
+
+    {
+        "packOptions": {
+            "iconUrl": "http://www.mylibrary.gov/favicon.ico"
+        }
+    }
+
+### projectUrl
+Type: String
+
+The URL for the homepage of the project.
+
+For example:
+
+    {
+        "packOptions": {
+            "projectUrl": "http://www.mylibrary.gov"
+        }
+    }
+
+### licenseUrl
+Type: String
+
+The URL for the license the project uses.
+
+For example:
+
+    {
+        "packOptions": {
+            "licenseUrl": "http://www.mylibrary.gov/licence"
+        }
+    }
+
+### requireLicenseAcceptance
+Type: Boolean
+
+**true** to cause a prompt to accept the package license when installing the package to be shown; otherwise, **false**. Only used for NuGet packages, ignored in other uses. The default is **false**.
+
+For example:
+
+    {
+        "packOptions": {
+            "requireLicenseAcceptance": true
+        }
+    }
+   
+### repository
+Type: Object
+
+Contains information about the repository where the project is stored.
+
+#### type
+Type: String
+
+Type of the repository. The default value is "git".
+
+For example:
+
+    {
+        "packOptions": {
+            "repository": {
+                "type": "git"
+            }
+        }
+    }
+
+#### url
+Type: String
+
+URL of the repository where the project is stored.
+
+For example:
+
+    {
+        "packOptions": {
+            "repository": {
+                "url": "http://github.com/dotnet/corefx"
+            }
+        }
+    }
+
+### files
+
+#### include
+Type: String or String[] with a globbing pattern.
+
+    {
+        "include":["wwwroot", "Views"]
+    }
+
+#### exclude
+Type: String or String[] with a globbing pattern.
+
+Specifies which files to exclude from the build.
+
+For example:
+
+    {
+        "exclude": ["bin/**", "obj/**"]
+    }
+
+#### includeFiles
+
+Type: String or String[] with a globbing pattern.
+
+    {
+        "includeFiles":[]
+    }
+
+#### excludeFiles
+
+Type: String or String[] with a globbing pattern.
+
+    {
+        "excludeFiles":[]
+    }
+
+#### builtIns
+Type: Object
+
+    {
+        "builtIns":{}
+    }
+
+#### mappings
+Type: Object
+
+Keys to the object represent destination paths in the output layout.
+
+Values are either a string or an object representing the source path of files to include.  The object representation can have its own `include`, `exclude`, `includeFiles` and `excludeFiles` sections. 
+
+String example:
+
+    {
+        "mappings": {
+            "dest/path": "./src/path"
+        }
+    }
+
+Object example:
+
+    {
+        "mappings": {
+            "dest/path":{
+                "include":"./src/path"
+            }
+        }
+    }
+
 ## analyzerOptions
 Type: Object
 
@@ -743,12 +1081,10 @@ For example:
         "analyzerOptions": { }
     }
 
-<a name="languageId"></a>
 ### languageId
 Type: String
 
-TODO: Check language ids
-The id of the language to analyze.
+The id of the language to analyze. "cs" represents C#, "vb" represents Visual Basic and "fs" represents F#.
 
 For example:
 
@@ -757,39 +1093,36 @@ For example:
       }
     }
 
-<a name="configurations"></a>
 ## configurations
 Type: Object
 
-An object whos properties define different configurations for this project, such as Debug and Release. Each value is an object that can contain a `compilationOptions` object with options specific for this coniguration.
+An object whose properties define different configurations for this project, such as Debug and Release. Each value is an object that can contain a `buildOptions` object with options specific for this configuration.
 
 For example:
 
     "configurations": {
       "Release": {
-        "compilationOptions": {
+        "buildOptions": {
           "allowUnsafe": false
         }
       }
     }
 
-<a name="frameworks"></a>
 ## frameworks
 Type: Object
 
-Specifies what frameworks this project supports, such as .NET Framework or Universal Windows Platform (UWP). Must be a valid Target Framework Moniker (TFM). Each value is an object that can contain information specific to this framework such as `compilationoptions`, `analyzerOptions`, `dependencies` as well as the properties in the following sections.
+Specifies which frameworks this project supports, such as the .NET Framework or Universal Windows Platform (UWP). Must be a valid Target Framework Moniker (TFM). Each value is an object that can contain information specific to this framework such as `buildOptions`, `analyzerOptions`, `dependencies` as well as the properties in the following sections.
 
 For example:
 
     "frameworks": {
-        "dnxcore50": {
-            "compilationoptions": {
+        "netcoreapp1.0": {
+            "buildOptions": {
                 "define": ["FOO", "BIZ"]
             }
         }
     }
 
-<a name="dependencies"></a>
 ### dependencies
 Type: Object
 
@@ -798,18 +1131,17 @@ Dependencies that are specific for this framework. This is useful in scenarios w
 For example:
 
     "frameworks": {
-        "dnxcore50": {
+        "netstandard1.5": {
             "dependencies": {
-                "Microsoft.Extensions.JsonParser.Sources": "1.0.0"
+                "Microsoft.Extensions.JsonParser.Sources": "1.0.0-rc2-20221"
             }
         }
     }
 
-<a name="frameworkAssemblies"></a>
 ### frameworkAssemblies
 Type: Object
 
-Similar to dependencies but contains reference to assemblies in the GAC that are not nuget packages. Can also specify the version to use as well as the dependency type. This is used when targeting .NET Framework and Portable Class Library(PCL) targets. You can only build a project with this specified on Windows.
+Similar to dependencies but contains reference to assemblies in the GAC that are not NuGet packages. Can also specify the version to use as well as the dependency type. This is used when targeting .NET Framework and Portable Class Library (PCL) targets. You can only build a project with this specified on Windows.
 
 For example:
 
@@ -823,13 +1155,19 @@ For example:
             }
         }
 
-<a name="wrappedProject"></a>
 ### wrappedProject
 Type: String
 
-TODO
+Specifies the location of the dependency project. 
 
-<a name="bin"></a>
+For example:
+
+    "frameworks": {
+        "net451": {
+            "wrappedProject": "MyProject.csproj"
+            }
+        }
+
 ### bin
 Type: Object
 
@@ -838,26 +1176,24 @@ An object with a single property, `assembly`, whose value is the assembly path.
 For example:
 
     "frameworks": {
-      "dnxcore50": {
+      "netcoreapp1.0": {
          "bin": {
            "assembly" :"c:/otherProject/otherdll.dll"
         }
       }
     }
 
-<a name="imports"></a>
 ### imports
 Type: String
 
-TODO
 Specifies other framework profiles that this project is compatible with.
 
 For example:
 
     "frameworks": {
-      "dnxcore50": {
+      "netcoreapp1.0": {
          "imports": "portable-net45+win8"
       }
     }
 
-Will cause other packages targeting `portable-net45+win8` to be usable when targeting `dnxcore50` with the current project
+Will cause other packages targeting `portable-net45+win8` to be usable when targeting `netcoreapp1.0` with the current project.

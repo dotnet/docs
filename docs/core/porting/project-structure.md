@@ -14,15 +14,28 @@ ms.assetid: 3af62252-1dfa-4336-8d2f-5cfdb57d7724
 
 # Organizing Your Project to Support .NET Framework and .NET Core
 
-This article is to help project owners who want to compile their solution against .NET Framework and .NET Code side-by-side.  It provides several options to organize projects to help developers achieve this goal.
+This article is to help project owners who want to compile their solution against .NET Framework and .NET Code side-by-side.  It provides several options to organize projects to help developers achieve this goal.  Here are some typical scenarios to consider when you are deciding how to setup your project layout with .NET Core.
 
-## General Guidance
+* You want to be able to continue building existing applications for different versions of the .NET Framework (2.0, 3.0, 4.X)
+    * [You want to have single projects that build existing .NET Framework versions as well as .NET Core][option-xproj]
+      
+      This is an option to consider when you have a repository that builds for multiple platforms and you want to simplify the build process by only compiling a single project rather than multiple projects targeting different frameworks.  Using a .NET Core project (xproj) provides an additional benefit of being able to generate a NuGet package with the .NET Core tools.
+    * [You want your existing projects to continue building as-is and you want to be able to build new projects for .NET Core][option-xproj-folder]
+      
+      This is an option to consider when you have an older repository containing legacy projects you don't want to modify but want to support newer platforms.
+* [You want to continue supporting your existing projects on older versions of Visual Studio][option-xproj-folder]
+  
+  This is an option to consider when you have developers/contributors who may not have Visual Studio 2015 and to continue to support their development on existing projects without having to upgrade.
+* [Your existing projects contain complex build operations such as custom MSBuild Tasks and Targets][option-pcl]
 
-When organizing your projects, there are different strategies you can use:
-*  [Create a .NET Core Project (.xproj) that targets multiple frameworks.](#replace-existing-projects-with-a-multi-targeted-net-core-project-xproj)
-*  [For projects that use complex logic in their build process, create a Portable Class Library (PCL) that targets .NET Core.](#create-a-portable-class-library-pcl-to-target-net-core)
+  This is an option to consider when you have complex modifications in your C# project files (csproj) to support loading or building your existing projects.  Complex modifications could be the inclusion of custom MSBuild Tasks and Targets in your *.csproj file.
+* You have several different project types in your solution including things like desktop apps, web apps and libraries
+    * [You want to share the libraries across projects][option-pcl]
 
-These are general rules for organizing your project. The scenarios below outline a few variations that can be made based on what fits your repository best.
+      This is an option to consider when you have applications targeting the full .NET Framework you do not want to modify but want that project to reference your .NET Core library in the same solution.
+    * [You want your existing projects to continue building as-is and you want to be able to build new projects for .NET Core][option-xproj-folder]
+
+      This is an option to consider when you have an older repository containing legacy projects you don't want to modify but want to support newer platforms.
 
 ## Example
 
@@ -34,7 +47,7 @@ Consider the repository below:
 
 There are several different ways to add support for .NET Core for this repository depending on the constraints and complexity of existing projects which are described below.
 
-### Replace Existing Projects with a Multi-targeted .NET Core Project (.xproj)
+### Replace Existing Projects with a Multi-targeted .NET Core Project (xproj)
 
 The repository can be reorganized so that any existing *.csproj files are removed and a single *.xproj is created that targets multiple frameworks.  This is a great option because a single project is able to compile for different frameworks.  It also has the power to handle different compilation options, dependencies, etc. per targeted framework.
 
@@ -89,3 +102,7 @@ Changes to note are:
 
 [example-pcl]: _static/project.pcl.png "PCL Targeting .NET Core"
 [example-pcl-code]: ../../../samples/core-projects/libraries/migrate-library-pcl
+
+[option-xproj]: #replace-existing-projects-with-a-multi-targeted-net-core-project-xproj
+[option-pcl]: #create-a-portable-class-library-pcl-to-target-net-core
+[option-xproj-folder]: #keep-existing-projects-and-create-a-net-core-project

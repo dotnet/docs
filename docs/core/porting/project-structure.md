@@ -71,7 +71,7 @@ If existing projects contain complex build operations or properties in their *.c
 Changes to note are:
 *  Renaming `project.json` to `{project-name}.project.json`
     * This prevents potential conflict in Visual Studio when trying to restore packages for the libraries in the same directory. For more information, see the [NuGet FAQ](https://docs.nuget.org/consume/nuget-faq#working-with-packages) under "_I have multiple projects in the same folder, how can I use separate packages.config or project.json files for each project?_".
-    *  **Alternative**: Create the PCL in another folder and reference the original source code to avoid this issue
+    *  **Alternative**: Create the PCL in another folder and reference the original source code to avoid this issue.  Placing the PCL in another folder has an added benefit that users who do not have Visual Studio 2015 can still work on the older projects without loading the new solution.
 *  To target .NET Standard after creating the PCL, in Visual Studio, open the **Project's Properties**. Under the **Targets** section, click on the link **"Target .NET Platform Standard"**.  This change can be reversed by repeating the same steps.
 
 ### Keep Existing Projects and Create a .NET Core Project

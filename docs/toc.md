@@ -22,11 +22,16 @@
 ### [What's new in C# 6](csharp/csharp-6.md)
 ## [C# Concepts](csharp/concepts.md)
 ### [🔧 C# Type system](csharp/type-system.md)
+### [🔧 Namespaces and Assemblies](csharp/index.md)
+### [🔧 Basic Types](csharp/index.md)
+### [🔧 Classes](csharp/index.md)
+### [🔧 Structs](csharp/index.md)
+### [🔧 Interfaces](csharp/index.md)
+### [🔧 Methods and Lambda Expressions](csharp/lambda-expressions.md)
 ### [Properties](csharp/properties.md)
 ### [Indexers](csharp/indexers.md)
 ### [🔧 Generics](csharp/generics.md)
 ### [Iterators](csharp/iterators.md)
-### [🔧 Language Integrated Query (LINQ)](csharp/linq.md)
 ### [Delegates & events](csharp/delegates-events.md)
 #### [Introduction to Delegates](csharp/delegates-overview.md)
 #### [System.Delegate and the delegate keyword](csharp/delegate-class.md)
@@ -36,15 +41,9 @@
 #### [The .NET Event Pattern](csharp/event-pattern.md)
 #### [The Updated .NET Event Pattern](csharp/modern-events.md)
 #### [Distinguishing Delegates and Events](csharp/distinguish-delegates-events.md)
-### [🔧 Parallel programming](csharp/parallel.md)
+### [🔧 Language Integrated Query (LINQ)](csharp/linq.md)
 ### [Asynchronous programming](csharp/async.md)
-### [🔧 Lambda Expressions](csharp/lambda-expressions.md)
-<!-- This is a sidebar the delegates topics. I don't think it
-    needs to be linked into the TOC, but I wanted to leave it 
-    to get your thoughts. If it does belong in the TOC,
-    this is the location:
-#### [Implicitly Typed Lambda Expressions](csharp/implicitly-typed-lambda-expressions.md)
--->
+### [🔧 Parallel programming](csharp/parallel.md)
 ### [Expression Trees](csharp/expression-trees.md)
 #### [Expression Trees Explained](csharp/expression-trees-explained.md)
 #### [Framework Types Supporting Expression Trees](csharp/expression-classes.md)
@@ -60,6 +59,11 @@
 
 <!-- Note to self: update languages/csharp/index.md to match this file
     once this is approved.  -->
+<!-- Note to self 2: update all references to index.md so that it falls to
+    a placeholder document, and create a new issue.  -->
+<!-- Note to self 3: remove interop.md, type-system.md, and reflection.md
+    Then, close issues #487, 492, 493..  -->
+    
 
 <!-- marker for the end of edits -->
 

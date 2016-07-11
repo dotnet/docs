@@ -71,8 +71,8 @@ If existing projects contain complex build operations or properties in their *.c
 Changes to note are:
 *  Renaming `project.json` to `{project-name}.project.json`
     * This prevents potential conflict in Visual Studio when trying to restore packages for the libraries in the same directory. For more information, see the [NuGet FAQ](https://docs.nuget.org/consume/nuget-faq#working-with-packages) under "_I have multiple projects in the same folder, how can I use separate packages.config or project.json files for each project?_".
-    *  __Alternative__: Create the PCL in another folder and reference the original source code to avoid this issue
-*  To target .NET Standard after creating the PCL, open the __Project's Properties__. Under the __Targets__ section, click on the link __"Target .NET Platform Standard"__.  This change can be reversed by repeating the same steps.
+    *  **Alternative**: Create the PCL in another folder and reference the original source code to avoid this issue
+*  To target .NET Standard after creating the PCL, in Visual Studio, open the **Project's Properties**. Under the **Targets** section, click on the link **"Target .NET Platform Standard"**.  This change can be reversed by repeating the same steps.
 
 ### Keep Existing Projects and Create a .NET Core Project
 
@@ -87,8 +87,12 @@ Changes to note are:
     * This avoids the package restore issue that was mentioned above due to multiple project.json/package.config files being in the same folder.
     * Keeping projects in separate folders avoids forcing you to have Visual Studio 2015 (due to project.json).  You can create a separate solution that only opens the old projects.
 
-[sln-only-netcore-projects]: ../tutorials/using-on-windows#a-solution-using-only-net-core-projects
+## Further Reading
 
+Please see [.NET Core porting documentation][porting-doc] for more guidance on moving to project.json and xproj.
+
+[sln-only-netcore-projects]: ../tutorials/using-on-windows#a-solution-using-only-net-core-projects
+[porting-doc]: index.md
 [example-initial-project]: _static/project.png "Existing project"
 [example-initial-project-code]: ../../../samples/core-projects/libraries/migrate-library/
 

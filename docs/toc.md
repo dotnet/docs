@@ -56,6 +56,13 @@
 ### [🔧 Reflection & code generation](csharp/reflection.md)
 ### [Documenting your code](csharp/codedoc.md) 
 ## [🔧 Syntax Reference](csharp/syntax.md)
+<!--
+    The C# Reference section can be ported from here: 
+    https://msdn.microsoft.com/en-us/library/618ayhy6.aspx
+
+    with appropriate updates for the latest version of the language. 
+-->
+
 
 <!-- Note to self: update languages/csharp/index.md to match this file
     once this is approved.  -->

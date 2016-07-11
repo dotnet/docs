@@ -262,7 +262,11 @@ This code will partition `facebookUsers` across system threads as necessary, sum
 
 In diagram form:
 
+<<<<<<< HEAD
 ![PLINQ diagram](./media/using-linq/plinq-diagram.png)
+=======
+![PLINQ diagram](./media/PLINQ-diagram.png)
+>>>>>>> 205d63bb5a772e4db5a1f4723150ed042b4ecce7
 
 Parallelizable CPU-bound jobs which can be easily expressed via LINQ (in other words, are pure functions and have no side effects) are a great candidate for PLINQ. For jobs which _do_ have a side effect, consider using the [Task Parallel Library](https://msdn.microsoft.com/library/dd460717.aspx).
 

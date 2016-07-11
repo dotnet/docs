@@ -38,13 +38,21 @@ MSBuild's extensibility in your build for scenarios that are not well supported 
 
 1. In the Visual Studio menu bar, choose **File** | **New** | **Project** and select **Class Library (Portable)**
 
+<<<<<<< HEAD:docs/core/tutorials/target-dotnetcore-with-msbuild.md
   ![New Project](./media/target-dotnetcore-with-msbuild/new-project-dialog-class-library-portable.png)
+=======
+  ![New Project](./media/new-project-dialog-class-library-portable.png)
+>>>>>>> 205d63bb5a772e4db5a1f4723150ed042b4ecce7:docs/scenarios/solution-authoring/target-dotnetcore-with-msbuild.md
 
 2. Choose a name and location for your project and click **OK**
 
 3. The "Add Portable Class Library" dialog will appear.  Select **.NET Framework 4.6** and **ASP.NET Core 1.0** as targets and click **OK**
 
+<<<<<<< HEAD:docs/core/tutorials/target-dotnetcore-with-msbuild.md
   ![Portable targets dialog](./media/target-dotnetcore-with-msbuild/pcl-targets-dialog-net46-aspnetcore10.png)
+=======
+  ![Portable targets dialog](./media/pcl-targets-dialog-net46-aspnetcore10.png)
+>>>>>>> 205d63bb5a772e4db5a1f4723150ed042b4ecce7:docs/scenarios/solution-authoring/target-dotnetcore-with-msbuild.md
 
 4. In Solution Explorer, right click on your project and choose **Properties**
 5. In the **Library** tab of the project properties, click on the **Target .NET Platform Standard** link, and click **Yes** in the dialog that is shown

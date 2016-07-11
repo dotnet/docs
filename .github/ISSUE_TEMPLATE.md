@@ -14,7 +14,7 @@ for Contributing link above for details.
 
 ## Issues with Existing Topics
 
-If the issue is a simple typo or similar correction, just submit it PR.
+If the issue is a simple typo or similar correction, just submit a PR.
 Otherwise, let us know what's wrong or what we should improve. Include a
 link to the topic.
 

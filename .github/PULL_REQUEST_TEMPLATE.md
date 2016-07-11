@@ -1,18 +1,18 @@
 # Title
 
-Provide title that describes
+Provide a title that describes
 what you've fixed (or created) with this Pull Request (PR).
 
 ## Summary
 
 Fixes #Issue_Number
 
->note: The "Fixes #nnn" syntax in the PR description causes
+>Note: The "Fixes #nnn" syntax in the PR description causes
 >GitHub to automatically close the issue when this PR is merged.
 > Remove that line if you don't have issues associated with this
 > PR. Click on the Guidelines for Contributing link above for details.
 
-Insert short (one or two sentence) summary here.
+Insert a short (one or two sentence) summary here.
 
 ## Details
 

@@ -15,7 +15,7 @@ ms.assetid: cb788dcf-2120-467f-9c34-c02a90e1f68f
 Welcome to .NET
 ===============
 
-> Check out the ["Getting Started with .NET Core" tutorials](core/tutorials/index.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
+> Check out the ["Getting Started with .NET Core" tutorials](core/getting-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
 
 Welcome to .NET! You can build any kind of application you want with .NET, from cloud to IoT to games. You can start building your next application today, for Windows, Linux, Android, macOS, and iOS. There are millions of developers that use .NET to power mission critical applications, personal apps and immersive games. You can write the next one.
 
@@ -46,7 +46,7 @@ This documentation will show you how to build an app from scratch or finish one 
 Open Source
 -----------
 
-Many parts of .NET are built by open source contributors. You can contribute to this [.NET Documentation](https://github.com/dotnet/core-docs). You can also read the source of and contribute to .NET products, including [.NET Core](https://github.com/core) and [Xamarin](https://open.xamarin.com). Key projects from Microsoft have been contributed to the [.NET Foundation](http://dotnetfoundation.org).
+Many parts of .NET are built by open source contributors. You can contribute to this [.NET Documentation](https://github.com/dotnet/core-docs). You can also read the source of and contribute to .NET products, including [.NET Core](https://github.com/core) and [Xamarin](http://open.xamarin.com). Key projects from Microsoft have been contributed to the [.NET Foundation](http://dotnetfoundation.org).
 
 Community
 ---------

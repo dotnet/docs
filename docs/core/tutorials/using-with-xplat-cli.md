@@ -487,7 +487,7 @@ namespace ConsoleApplication
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type": "platform",
-      "version": "1.0.0-rc2-3002702"
+      "version": "1.0.0"
     }
   },
   "frameworks": {

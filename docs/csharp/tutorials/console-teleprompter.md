@@ -422,7 +422,14 @@ private static async Task GetInput(TelePrompterConfig config)
 ```
 
 This new version of `ShowTeleprompter` calls a new method in the
-`TeleprompterConfig` class. To finish, you'll need to add the
+`TeleprompterConfig` class. Now, you need to update Main to call 
+`RunTeleprompter` instead of `ShowTeleprompter`:
+
+```cs
+RunTeleprompter().Wait();
+```
+
+To finish, you'll need to add the
 `SetDone` method, and the `Done` property to the `TelePrompterConfig` class:
 
 ```cs

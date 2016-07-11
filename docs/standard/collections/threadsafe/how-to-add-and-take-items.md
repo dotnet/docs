@@ -1,6 +1,6 @@
 ---
-title: How to: Add and Take Items Individually from a BlockingCollection
-description: How to: Add and Take Items Individually from a BlockingCollection
+title: "How to: Add and Take Items Individually from a BlockingCollection"
+description: "How to: Add and Take Items Individually from a BlockingCollection"
 keywords: .NET, .NET Core
 author: mairaw
 manager: wpickett

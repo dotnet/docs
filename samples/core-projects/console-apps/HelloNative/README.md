@@ -1,7 +1,7 @@
 Hello Native Sample
 ================
 
-This sample is part of the [step-by-step tutorial](https://docs.microsoft.com/dotnet/core/tutorials/using-with-xplat-cli.html)
+This sample is part of the [step-by-step tutorial](https://docs.microsoft.com/dotnet/articles/core/tutorials/using-with-xplat-cli)
 for creating .NET Core Console Applications. Please see that topic for detailed steps on the code
 for this sample.
 
@@ -27,4 +27,4 @@ To build and run the sample, type the following three commands:
 `dotnet build` creates the output assembly (or assemblies).
 `.\bin\Debug\netcoreapp1.0\win10-x64\HelloNative.exe` runs the output executable. The example
 shows the Windows path. Replace `win10-x64` with your platform's RID from the list of
-[supported RIDs](../../../docs/core-concepts/rid-catalog.html)
+[supported RIDs](../../../../docs/core/rid-catalog.md).

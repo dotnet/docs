@@ -14,28 +14,34 @@ ms.assetid: 3af62252-1dfa-4336-8d2f-5cfdb57d7724
 
 # Organizing Your Project to Support .NET Framework and .NET Core
 
-This article is to help project owners who want to compile their solution against .NET Framework and .NET Code side-by-side.  It provides several options to organize projects to help developers achieve this goal.  Here are some typical scenarios to consider when you are deciding how to setup your project layout with .NET Core.
+This article is to help project owners who want to compile their solution against .NET Framework and .NET Core side-by-side.  It provides several options to organize projects to help developers achieve this goal.  Here are some typical scenarios to consider when you are deciding how to setup your project layout with .NET Core.  They may not cover everything you want; prioritize based on your project's needs.
 
-* You want to be able to continue building existing applications for different versions of the .NET Framework (2.0, 3.0, 4.X)
-    * [You want to have single projects that build existing .NET Framework versions as well as .NET Core][option-xproj]
-      
-      This is an option to consider when you have a repository that builds for multiple platforms and you want to simplify the build process by only compiling a single project rather than multiple projects targeting different frameworks.  Using a .NET Core project (xproj) provides an additional benefit of being able to generate a NuGet package with the .NET Core tools.
-    * [You want your existing projects to continue building as-is and you want to be able to build new projects for .NET Core][option-xproj-folder]
-      
-      This is an option to consider when you have an older repository containing legacy projects you don't want to modify but want to support newer platforms.
-* [You want to continue supporting your existing projects on older versions of Visual Studio][option-xproj-folder]
+* [**Combine existing projects and .NET Core projects into single projects**][option-xproj]
   
-  This is an option to consider when you have developers/contributors who may not have Visual Studio 2015 and to continue to support their development on existing projects without having to upgrade.
-* [Your existing projects contain complex build operations such as custom MSBuild Tasks and Targets][option-pcl]
+  *What this is good for:*
+  * Simplifying your build process by compiling a single project rather than compiling multiple projects, each targeting a different .NET Framework version or platform.
+  * Easily generating a NuGet package for consumption.
+  * Allows you to write code for a specific .NET Framework version in your libraries through the use of compiler directives.
+  
+  *Unsupported scenarios:*
+  * Does not allow developers without Visual Studio 2015 to open existing projects. To support older versions of Visual Studio, the [keeping your project files in different folders](#support-vs) is a better option.
+  * Does not allow you to share your .NET Core library across different project types in the same solution file. To support this, [creating a Portable Class Library](#support-pcl) is a better option.
+  * Does not allow for project build or load modifications that are supported by MSBuild Targets and Tasks. To support this, [creating a Portable Class Library](#support-pcl) is a better option.
 
-  This is an option to consider when you have complex modifications in your C# project files (csproj) to support loading or building your existing projects.  Complex modifications could be the inclusion of custom MSBuild Tasks and Targets in your *.csproj file.
-* You have several different project types in your solution including things like desktop apps, web apps and libraries
-    * [You want to share the libraries across projects][option-pcl]
+* <a name="support-vs"></a>[**Keep existing projects and new .NET Core projects separate**][option-xproj-folder]
+  
+  *What this is good for:*
+  * Continuing to support development on existing projects without having to upgrade for developers/contributors who may not have Visual Studio 2015.
+  * Decreasing the possibility in creating new bugs in existing projects because no code churn is required in those projects.
 
-      This is an option to consider when you have applications targeting the full .NET Framework you do not want to modify but want that project to reference your .NET Core library in the same solution.
-    * [You want your existing projects to continue building as-is and you want to be able to build new projects for .NET Core][option-xproj-folder]
+* <a name="support-pcl"></a>[**Keep existing projects and create Portable Class Libraries (PCLs) targeting .NET Core**][option-pcl]
 
-      This is an option to consider when you have an older repository containing legacy projects you don't want to modify but want to support newer platforms.
+  *What this is good for:*
+  * Referencing your .NET Core libraries in desktop and/or web projects targeting the full .NET Framework in the same solution.
+  * Supporting modifications in the project build or load process. These modifications could be the inclusion of MSBuild Tasks and Targets in your *.csproj file.
+
+  *Unsupported scenarios:*
+  * Does not allow you to write code for a specific .NET Framework version because compiler directives are not supported.
 
 ## Example
 

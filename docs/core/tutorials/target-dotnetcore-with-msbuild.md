@@ -12,8 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 13c66464-4f14-4db6-aa8b-06f25e7ba894
 ---
 
-Using MSBuild to build .NET Core projects
-=========================================
+# Using MSBuild to build .NET Core projects
 
 The .NET Core tooling is going to [move from project.json to MSBuild based projects](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/).
 We expect the first version of the .NET Core tools that use MSBuild to ship along with the next version of Visual Studio.  However, it is possible to use MSBuild for .NET Core
@@ -29,25 +28,31 @@ reasons:
 You may want to use MSBuild to target .NET Core for existing projects that already use MSBuild that you want to port to .NET Core, or if you are using
 MSBuild's extensibility in your build for scenarios that are not well supported for project.json projects.
 
-Prerequisites
--------------
+## Prerequisites
 
 - [Visual Studio 2015 Update 3 RC](https://www.visualstudio.com/downloads/visual-studio-prerelease-downloads#sec1) or higher
 - [.NET Core tools for Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs)
 - NuGet Visual Studio extension [v3.5.0-beta](https://dist.nuget.org/visualstudio-2015-vsix/v3.5.0-beta/NuGet.Tools.vsix) or later
 
-Creating a library targeting .NET Core
---------------------------------------
+## Creating a library targeting .NET Core
 
 1. In the Visual Studio menu bar, choose **File** | **New** | **Project** and select **Class Library (Portable)**
 
-  ![New Project](../../images/new-project-dialog-class-library-portable.png)
+<<<<<<< HEAD:docs/core/tutorials/target-dotnetcore-with-msbuild.md
+  ![New Project](./media/target-dotnetcore-with-msbuild/new-project-dialog-class-library-portable.png)
+=======
+  ![New Project](./media/new-project-dialog-class-library-portable.png)
+>>>>>>> 205d63bb5a772e4db5a1f4723150ed042b4ecce7:docs/scenarios/solution-authoring/target-dotnetcore-with-msbuild.md
 
 2. Choose a name and location for your project and click **OK**
 
 3. The "Add Portable Class Library" dialog will appear.  Select **.NET Framework 4.6** and **ASP.NET Core 1.0** as targets and click **OK**
 
-  ![Portable targets dialog](../../images/pcl-targets-dialog-net46-aspnetcore10.png)
+<<<<<<< HEAD:docs/core/tutorials/target-dotnetcore-with-msbuild.md
+  ![Portable targets dialog](./media/target-dotnetcore-with-msbuild/pcl-targets-dialog-net46-aspnetcore10.png)
+=======
+  ![Portable targets dialog](./media/pcl-targets-dialog-net46-aspnetcore10.png)
+>>>>>>> 205d63bb5a772e4db5a1f4723150ed042b4ecce7:docs/scenarios/solution-authoring/target-dotnetcore-with-msbuild.md
 
 4. In Solution Explorer, right click on your project and choose **Properties**
 5. In the **Library** tab of the project properties, click on the **Target .NET Platform Standard** link, and click **Yes** in the dialog that is shown
@@ -62,8 +67,7 @@ NuGet packages that haven't been updated to target .NET Standard
         }
         ```
 
-Creating a .NET Core console application
-----------------------------------------
+## Creating a .NET Core console application
 Building a console application for .NET Core requires some customization of the MSBuild build process.  You can find a sample project for a .NET Core console
 application called [CoreApp](https://github.com/dotnet/corefxlab/tree/master/samples/NetCoreSample/CoreApp) in the
 [corefxlab](https://github.com/dotnet/corefxlab) repo.  Another good option is to start with [coretemplate](https://github.com/mellinoe/coretemplate),

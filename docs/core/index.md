@@ -108,7 +108,7 @@ People commonly ask how .NET Core is implemented in order to support multiple op
 
 You can see in the chart below that the vast majority of [CoreFX](https://github.com/dotnet/corefx) is platform-neutral code that is shared across all platforms. Platform-neutral code can be implemented as a single portable assembly that be used on all platforms.
 
-![CoreFX: Lines of Code per Platform](../images/corefx-platforms-loc.png)
+![CoreFX: Lines of Code per Platform](./media/corefx-platforms-loc.png)
 
 Windows and Unix implementations are similar in size. Windows has a larger implementation since CoreFX implements some Windows-only features, such as [Microsoft.Win32.Registry](https://github.com/dotnet/corefx/tree/master/src/Microsoft.Win32.Registry) but does not yet implement any Unix-only concepts. You will also see that the majority of the Linux and macOS implementations are shared across a Unix implementation, while the Linux- and macOS-specific implementations are roughly similar in size.
 

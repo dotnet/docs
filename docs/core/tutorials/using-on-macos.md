@@ -2,7 +2,7 @@
 title: Getting started with .NET Core on macOS
 description: Getting started with .NET Core on macOS, using Visual Studio Code
 keywords: .NET, .NET Core
-author: dotnet-bot
+author: bleroy
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -266,7 +266,11 @@ After you install the extension, VS Code will ask that you restart the applicati
 to load the new extension. Once the extension is installed, you can open the
 debugger tab (see figure).
 
-![VS Code Debugger](../../images/vscodedebugger.png)
+<<<<<<< HEAD
+![VS Code Debugger](./media/using-on-macos/vscodedebugger.png)
+=======
+![VS Code Debugger](./media/vscodedebugger.png)
+>>>>>>> 205d63bb5a772e4db5a1f4723150ed042b4ecce7
 
 
 When you start the debugger, VS Code will instruct you to configure

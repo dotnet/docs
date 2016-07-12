@@ -87,7 +87,7 @@ Changes to note are:
     * This avoids the package restore issue that was mentioned above due to multiple project.json/package.config files being in the same folder.
     * Keeping projects in separate folders avoids forcing you to have Visual Studio 2015 (due to project.json).  You can create a separate solution that only opens the old projects.
 
-## Further Reading
+## See Also
 
 Please see [.NET Core porting documentation][porting-doc] for more guidance on moving to project.json and xproj.
 

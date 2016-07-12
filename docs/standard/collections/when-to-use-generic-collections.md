@@ -24,7 +24,7 @@ The following generic types correspond to existing collection types:
 
 *   [Dictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2 ) and [ConcurrentDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2 ) are the generic classes that correspond to [Hashtable](https://docs.microsoft.com/dotnet/core/api/System.Collections.Hashtable ). 
 
-*   [Collection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.ObjectModel.Collection-1 ) is the generic class that corresponds to [CollectionBase](https://docs.microsoft.com/dotnet/core/api/System.Collections.CollectionBase ). `Collection&lt<T>` can be used as a base class, but unlike `CollectionBase`, it is not abstract. This makes it much easier to use.
+*   [Collection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.ObjectModel.Collection-1 ) is the generic class that corresponds to [CollectionBase](https://docs.microsoft.com/dotnet/core/api/System.Collections.CollectionBase ). `Collection<T>` can be used as a base class, but unlike `CollectionBase`, it is not abstract. This makes it much easier to use.
 
 *   [ReadOnlyCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.ObjectModel.ReadOnlyCollection-1 ) is the generic class that corresponds to [ReadOnlyCollectionBase](https://docs.microsoft.com/dotnet/core/api/System.Collections.ReadOnlyCollectionBase ). `ReadOnlyCollection<T>` is not abstract, and has a constructor that makes it easy to expose an existing [List&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.List-1 ) as a read-only collection.
 

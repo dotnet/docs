@@ -14,23 +14,24 @@ for Contributing link above for details.
 
 ## Issues with Existing Topics
 
-If the issue is a simple typo or similar correction, just submit a PR.
+If the issue is a simple typo or similar correction, you can just submit a PR.
 Otherwise, let us know what's wrong or what we should improve. Include a
 link to the topic.
 
 ## Requests for new Topics
 
-Tell us where this topic should go in the Table of Contents. Consider where you
-looked for this information before opening an issue.
+1. Tell us where this topic should go in the Table of Contents.
 
-1. Write an abstract
+   - Consider where you looked for this information before opening an issue.
+
+2. Write an abstract
 
    - In one **short** paragraph, describe what this topic will cover.
 
-2. Fill in an outline
+3. Fill in an outline
 
     - Write a complete outline for the new topic. We'll help review the outline and approve that before anyone writes a topic.
 
-3. Suggest reviewers
+4. Suggest reviewers
 
     - If you know someone who can provide feedback, use '@' to ask them to review.

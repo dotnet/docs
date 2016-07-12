@@ -1,9 +1,11 @@
 # Title
 
-Provide a title that describes
+On the title describe
 what you've fixed (or created) with this Pull Request (PR).
 
 ## Summary
+
+Insert a short (one or two sentence) summary here.
 
 Fixes #Issue_Number
 
@@ -11,8 +13,6 @@ Fixes #Issue_Number
 >GitHub to automatically close the issue when this PR is merged.
 > Remove that line if you don't have issues associated with this
 > PR. Click on the Guidelines for Contributing link above for details.
-
-Insert a short (one or two sentence) summary here.
 
 ## Details
 
@@ -22,8 +22,8 @@ above, just referencing the issue is preferred to copying
 the text.
 
 This may not be necessary depending on the scope of the PR 
-changes. (For example, "fix typo in introduction.md" is
-sufficient to describe that PR.)
+changes. For example, "fix typo in introduction.md" is
+sufficient to describe that PR.
 
 ## Suggested Reviewers
 

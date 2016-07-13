@@ -52,7 +52,7 @@ proceeds to restore the tool's dependencies as specified in its project.json.
 
 `-s`, `--source` [SOURCE]
 
-Specifies a source to use during the restore operation. This overrides all of the sources specified in the NuGet.config file(s). Multiple sources are provided by specifying this option multiple times.
+Specifies a source to use during the restore operation. This overrides all of the sources specified in the NuGet.config file(s). Multiple sources can be provided by specifying this option multiple times.
 
 `--packages` [DIR]
 
@@ -64,7 +64,7 @@ Disables restoring multiple projects in parallel.
 
 `-f`, `--fallbacksource` [FEED]
 
-Specifies a fallback source that will be used in the restore operation if all other sources fail. All valid feed formats are allowed. Multiple fallback sources are provided by specifying this option multiple times.
+Specifies a fallback source that will be used in the restore operation if all other sources fail. All valid feed formats are allowed. Multiple fallback sources can be provided by specifying this option multiple times.
 
 `--configfile` [FILE]
 
@@ -90,7 +90,7 @@ Restores the dependencies and tools for the project in the current directory usi
 
 `dotnet restore -f c:\packages\mypackages -f c:\packages\myotherpackages`
 	
-Restores the dependencies and tools for the project in the current directory using the 2 file paths provided as the fallback sources. 
+Restores the dependencies and tools for the project in the current directory using the two file paths provided as the fallback sources. 
 
 `dotnet restore --verbosity Error`
     

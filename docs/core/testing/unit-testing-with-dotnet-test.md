@@ -16,7 +16,7 @@ ms.assetid: bdcdb812-6f13-4f20-9e90-0c0977937142
 
 By [Steve Smith](http://ardalis.com) and [Bill Wagner](https://github.com/BillWagner)
 
-[View or download sample code](https://github.com/dotnet/core-docs/tree/master/samples/unit-testing/using-dotnet-test)
+[View or download sample code](https://github.com/dotnet/core-docs/tree/master/samples/core-projects/unit-testing/using-dotnet-test)
 
 ## Creating the Projects
 
@@ -127,6 +127,7 @@ get xUnit.net to work with .NET Core RTM:
   }
 ```
 
+<<<<<<< 69b9dd581cc765e4865c776fc0fd5b8ae33e5d5c
 
 The test project requires other packages to create and run unit tests.
 `dotnet new` added xunit, and the xunit runner. You need to add the PrimeService
@@ -260,9 +261,9 @@ Now, these tests all pass.
 You continue to iterate by adding more tests, more theories,
 and more code in the main library. You'll quickly end up
 with the
-[finished version of the tests](https://github.com/dotnet/core-docs/blob/master/samples/unit-testing/using-dotnet-test/test/PrimeService.Tests/PrimeServie_IsPrimeShould.cs)
+[finished version of the tests](https://github.com/dotnet/core-docs/blob/master/samples/core-projects/unit-testing/using-dotnet-test/test/PrimeService.Tests/PrimeServie_IsPrimeShould.cs)
 and the
-[complete implementation of the library](https://github.com/dotnet/core-docs/blob/master/samples/unit-testing/using-dotnet-test/src/PrimeService/PrimeService.cs).
+[complete implementation of the library](https://github.com/dotnet/core-docs/blob/master/samples/core-projects/unit-testing/using-dotnet-test/src/PrimeService/PrimeService.cs).
 
 You've built a small library and a set of unit tests for that library.
 You've structured this solution so that adding new packages and tests

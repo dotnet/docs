@@ -101,14 +101,36 @@ This starts the local preview on [localhost:8080](http://localhost:8080). You ca
 
 **Note:** the local preview currently doesn't contain any themes at the moment so the look and feel won't be the same as in the documentation site. We're working towards fixing that experience.
 
-## Contributing to samples
+# Contributing to samples
 
-See the [Samples Readme](https://github.com/dotnet/core-docs/blob/master/samples/README.md).
+We encourage samples for any of our topics. Readers can download and run the samples. They
+can explore the code and experiment with their own changes.
 
-## Contributor License Agreement
+All samples should be complete applications or libraries. Where the sample creates a library,
+it should include unit tests or an application that lets readers run the code.
 
-You must sign the [.NET Foundation Contribution License Agreement (CLA)](http://cla2.dotnetfoundation.org) before your PR is merged. This is a one-time requirement for projects in the .NET Foundation. You can read more about [Contribution License Agreements (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
+The samples are organized in directories that match the directories under
+docs in this repo:
 
-The agreement: [net-foundation-contribution-license-agreement.pdf](https://cla2.dotnetfoundation.org/cladoc/net-foundation-contribution-license-agreement.pdf)
+- `core-projects` contains all .NET Core samples. These are referenced by topics under `/docs/core`.
 
-You don't have to do this up-front. You can simply clone, fork, and submit your PR as usual. When your PR is created, it is classified by a CLA bot. If the change is trivial (for example, you just fixed a typo), then the PR is labeled with `cla-not-required`. Otherwise, it's classified as `cla-required`. Once you signed the CLA, the current and all future pull requests will be labeled as `cla-signed`.
+- `charp-language` contains all C# language samples. These are referenced by topics under `docs/csharp`.
+
+- `getting-started` contains all getting started samples. These are referenced by topics under `docs/*/tutorials`
+
+- `linq` contains all the 101 LINQ samples that were originally created when LINQ was developed. These don't have topics associated with them yet.
+
+NOTE to Reviewers: The C# Tutorials (/docs/csharp/tutorials) have their sample code in /samples/csharp. I think that
+code should move to /samples/getting-started to match the new description in this file. I'll wait to do the move,
+and update all references in the topic until I get some feedback on the text here so far.
+
+Each sample that you create should contain a `readme.md` file. This file should
+contain a short description of the sample (one or two paragraphs.) It should tell
+readers if they want to explore the sample more fully. The readme.md file should also contain
+a link to the live document on the [.net documentation site](http://docs.microsoft.com/dotnet/articles/welcome).
+To determine where a given file in the repository maps to that site, replace `/docs` in the repository path
+with `http://docs.microsoft.com/dotnet/articles`.   
+
+Your topic will also contain links to the sample. Link directly to the sample's folder on GitHub.
+
+For more information, see the [Samples Readme](https://github.com/dotnet/core-docs/blob/master/samples/README.md).

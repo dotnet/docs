@@ -41,7 +41,7 @@ Let's do a quick walkthrough:
    [`dotnet new`](../tools/dotnet-new.md) creates an up-to-date `project.json` file with NuGet dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
    
    `project.json`:
-   ```javascript
+   ```json
    {
         "version": "1.0.0-*",
         "buildOptions": {
@@ -105,11 +105,11 @@ project in the samples directory.
 The first change is to remove the `"type": "platform"` element from all dependencies. 
 This project's only dependency so far is `"Microsoft.NETCore.App"`. The `dependencies` section should look like this:
 
-```javascript
+```json
 "dependencies": {
-"Microsoft.NETCore.App": {
-    "version": "1.0.0"
-}
+    "Microsoft.NETCore.App": {
+        "version": "1.0.0"
+    }
 },
 ```
 
@@ -118,7 +118,7 @@ Next, you need to add a `runtimes` node to specify all the target execution envi
 The build system will generate native executables for the current environment. If you are following these steps on a Windows machine,
 you'll build a Windows executable. If you are following these steps on a Mac, you'll build the OS X executable.
 
-```javascript
+```json 
 "runtimes": {
   "win10-x64": {},
   "osx.10.11-x64": {}
@@ -300,7 +300,7 @@ the `System.Collections.dll` assembly as part of your project. You can verify th
 running `dotnet publish` and examining the files that are part of the installed
 package. You'll see `System.Collections.dll` in the list. 
 
-```javascript
+```json
 {
   "version": "1.0.0-*",
   "buildOptions": {
@@ -478,7 +478,7 @@ namespace ConsoleApplication
 ```
 
 `project.json`:
-```javascript
+```json
 {
   "version": "1.0.0-*",
   "buildOptions": {
@@ -538,11 +538,11 @@ You'll probably be wanting to test your projects at some point.  Here's a good w
    ```
 
    `global.json`:
-   ```javascript
+   ```json
    {
-   	"projects": [
-   		"src", "test"
-   	]
+      "projects": [
+         "src", "test"
+      ]
    }
    ```
 
@@ -583,7 +583,7 @@ There are two new things to make sure you have in your test project:
 2. An Xunit test class.
 
 `NewTypesTests/project.json`:
-```javascript
+```json
 {
   "version": "1.0.0-*",
   "testRunner": "xunit",

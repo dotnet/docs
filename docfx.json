@@ -52,7 +52,11 @@
       [
         {
           "files": [
-            "images/**"
+            "images/**", 
+            "**/*.png",
+            "**/*.jpg",
+            "**/*.gif",
+            "**/*.bmp"
           ],
           "src": "docs",
           "dest": "articles",

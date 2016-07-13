@@ -66,7 +66,7 @@ By refg a metapackage, you are, in effect, adding a reference to each of its dep
 Note: The 'lib' and 'ref' terms refer to folders in NuGet packages. 'ref' folders describe the public API of a package via assembly metadata. 'lib' folders contain the implementation of that public API for a given
 framework. 
 
-There antages to using metapackages:
+There are advantages to using metapackages:
 
 - Provides a convenient user experience to reference a large set of fine-grained packages. 
 - Defines a set of packages (including specific versions) that are tested and work well together.

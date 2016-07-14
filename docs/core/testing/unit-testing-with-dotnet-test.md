@@ -120,7 +120,7 @@ get xUnit.net to work with .NET Core RTM:
   "frameworks": {
     "netcoreapp1.0": {
       "imports": [
-        "dnxcore54",
+        "dotnet54",
         "portable-net45+win8" 
       ]
     }

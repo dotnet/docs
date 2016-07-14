@@ -1,21 +1,22 @@
-﻿{
-    "version": "1.0.0-*",
-    "buildOptions": {
-        "emitEntryPoint": true
-    },
-
-    "dependencies": {
-       "Microsoft.NETCore.App": {
-            "version": "1.0.0-rc2-3002702",
-            "type": "platform"
-        },
-        "System.Runtime.Serialization.Json": "4.0.2-rc2-24027",
-        "System.Runtime.Serialization.Primitives": "4.1.1-rc2-24027"
-    },
-
-    "frameworks": {
-        "netcoreapp1.0": {
-            "imports":"dnxcore50"
-        }
-    }
+﻿{ 
+  "version": "1.0.0-*", 
+  "buildOptions": { 
+    "debugType": "portable", 
+    "emitEntryPoint": true 
+  }, 
+  "dependencies": {
+    "System.Runtime.Serialization.Json": "4.0.2",
+    "System.Runtime.Serialization.Primitives": "4.1.1"
+  }, 
+  "frameworks": { 
+    "netcoreapp1.0": { 
+      "dependencies": { 
+        "Microsoft.NETCore.App": { 
+          "type": "platform", 
+          "version": "1.0.0" 
+        } 
+      }, 
+      "imports": "dnxcore50" 
+    } 
+  } 
 }

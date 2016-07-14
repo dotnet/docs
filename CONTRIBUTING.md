@@ -125,8 +125,8 @@ code should move to /samples/getting-started to match the new description in thi
 and update all references in the topic until I get some feedback on the text here so far.
 
 Each sample that you create should contain a `readme.md` file. This file should
-contain a short description of the sample (one or two paragraphs.) It should tell
-readers if they want to explore the sample more fully. The readme.md file should also contain
+contain a short description of the sample (one or two paragraphs.) Your readme.md
+should tell readers what they will learn by exploring this sample. The readme.md file should also contain
 a link to the live document on the [.net documentation site](http://docs.microsoft.com/dotnet/articles/welcome).
 To determine where a given file in the repository maps to that site, replace `/docs` in the repository path
 with `http://docs.microsoft.com/dotnet/articles`.   

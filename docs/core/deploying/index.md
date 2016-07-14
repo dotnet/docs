@@ -4,7 +4,7 @@ description: .NET Core Application Deployment
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 07/14/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -16,9 +16,9 @@ ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 
 You can deploy your .NET Core app in either of two ways:
 
-- As a portable app. A portable app relies on a shared system-wide version of the .NET Core framework that is present on a system. Portable applications are .dll files that can be launched by using the [dotnet utility](../tools/dotnet.md) from the command line. For example, `dotnet app.dll` runs a portable application named `app`.
+- As a portable app. A portable app relies on a shared system-wide version of .NET Core to be present on the target system. Because .NET Core is already present, your app is portable between installations of .NET Core. Your app contains only its own code and any third-party dependencies that are outside of the .NET Core libraries. Portable applications are .dll files that can be launched by using the [dotnet utility](../tools/dotnet.md) from the command line. For example, `dotnet app.dll` runs a portable application named `app`.
 
-- As a self-contained application. All components, including .NET Core itself, are included with the application and are isolated from other .NET Core applications. Self-contained applications include an executable (such as `app.exe` on Windows platforms for a self-contained application named `app`), which is  a renamed version of the platform-specific .NET Core host, and a .dll file (such as `app.dll`), which is the actual application.
+- As a self-contained application. Unlike a portable app, a self-contained app does not rely on any shared components to be present on the target system. All components, including both .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. Self-contained applications include an executable (such as `app.exe` on Windows platforms for a self-contained application named `app`), which is  a renamed version of the platform-specific .NET Core host, and a .dll file (such as `app.dll`), which is the actual application.
 
 For more information on .NET Core application types, see [.NET Core App Types](../app-types.md).
 
@@ -185,32 +185,27 @@ Deploying a self-contained app with no third-party dependencies involves creatin
     }
     ```
 
-3. Open the `project.json` file and replace the `frameworks` section with the following:
+3. Open the `project.json` file and in the `frameworks` section, remove the following line:
+
+   ```json
+   "type": "platform",
+   ```
+The Framework section should appear as follows after you've modified it:
 
     ```json
     "frameworks": {
-      "netstandard1.6": { }
+      "netcoreapp1.0": {
+        "dependencies": {
+          "Microsoft.NETCore.App": {
+             "version": "1.0.0"
+          }
+        }
+      }
     }
     ```
+Removing the `"type": "platform"` attribute indicates that the framework is provided as a set of components local to our app, rather than as a system-wide platform package.
 
-This does two things:
-
-    * It indicates that, instead of using the entire `netcoreapp1.0` framework, which includes .NET Core CLR, the .NET Core Library, and a number of other system components, our app uses only the .NET Standard Library.
-
-    * By removing the `"type": "platform"` attribute, it indicates that the framework is provided as a set of components local to our app, rather than as a system-wide platform package.
-
-4. Replace the `dependencies` section with the following:
-
-    ```json
-    "dependencies": {
-      "NETStandard.Library": "1.6.0",
-      "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
-      "Microsoft.NETCore.DotNetHostPolicy":  "1.0.1"
-    },
-    ```
-   This defines the system components used by our app. The system components packaged with our app include the .NET Standard Library, the .NET Core runtime, and the .NET Core host. This produces a self-contained app with a smaller footprint than if you had simply modified the `frameworks` section to indicate that your app is providing the entire `netcoreapp1.0` framework.
-
-5. Create a `runtimes` section in your `project.json` file that defines the platforms your app targets and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. For example, the following `runtimes` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.10 operating system.
+4. Create a `runtimes` section in your `project.json` file that defines the platforms your app targets, and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. For example, the following `runtimes` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.10 operating system.
 
     ```json
         "runtimes": {
@@ -229,6 +224,7 @@ A complete sample `project.json` file appears later in this section.
     dotnet build -r win10-x64
     dotnet build -r osx.10.10-x64
     ```
+The debug builds of your app for each platform will be found in the project's `.\bin\Debug\netcoreapp1.0\<runtime_identifier>` subdirectory.
 
 8. After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets by using the `dotnet publish` command for both target platforms as follows:
 
@@ -236,10 +232,151 @@ A complete sample `project.json` file appears later in this section.
    dotnet publish -c release -r win10-x64
    dotnet publish -c release -r osx.10.10-x64
    ```
-
-This creates a release (rather than a debug) version of your app for each target platform. The resulting files are placed in a subdirectory named `publish` that is in a subdirectory of your project's `.\bin\release\netstandard1.6\<runtime_identifier>` subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
+This creates a release (rather than a debug) version of your app for each target platform. The resulting files are placed in a subdirectory named `publish` that is in a subdirectory of your project's `.\bin\release\netcoreapp1.0\<runtime_identifier>` subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
 
 9. Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.
+
+The published files can be deployed in any way you'd like. For example, you can package them in a zip file, use a simple `copy` command, or deploy them with any installation package of your choice. Before packaging and deploying your app, you can also use `crossgen` to convert it to native code. For more information, see the [Native Image Generation](#crossgen) section.
+
+The following is the complete `project.json` file for this project.
+
+```json
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable",
+    "emitEntryPoint": true
+  },
+  "dependencies": {},
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  "runtimes": {
+    "win10-x64": {},
+    "osx.10.10-x64": {}
+  }
+}
+```
+
+### Deploying a Self-Contained App with Third-Party Dependencies ###
+
+Deploying a self-contained app with one or more third-party dependencies involves three additional steps before you can run the `dotnet restore` command:
+
+1. Add references to any third-party libraries to the `dependencies` section of your `project.json` file. The following  `dependencies` section uses Json.NET as a third-party library.
+
+    ```json
+    "dependencies": {
+      "Microsoft.NETCore.App": "1.0.0",
+      "Newtonsoft.Json": "8.0.3"
+    },
+    ```
+
+2. Modify the `frameworks` section as follows to ensure that the `dotnet` utility will not consider .NET Core and Json.NET to be incompatible:
+
+   ```json
+   "frameworks": {
+     "netcoreapp1.0": {
+       "imports": "dnxcore50"
+     }
+   },
+   ```
+
+3. If you haven't already, download the NuGet package containing the third-party dependency to your system. To make the dependency available to your app, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
+
+The following is the complete project.json file for this project:
+
+```json
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable",
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    "Microsoft.NETCore.App": "1.0.0",
+    "Newtonsoft.Json": "8.0.3"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    }
+  },
+  "runtimes": {
+    "win10-x64": {},
+    "osx.10.10-x64": {}
+  }
+}
+```
+
+When you deploy your application, any third-party dependencies used in your app are also contained with your application files. Third-party libraries do not already have to be present on the system on which the app is running.
+
+Note that you can only deploy a self-contained app with a third-party library to platforms supported by that library.
+
+### Deploying a Self-Contained App with a Smaller Footprint ###
+
+If the availability of adequate storage space on target systems is likely to be an issue, you can reduce the overall footprint of your app by excluding some system components. To do this, you explicitly define the .NET Core components that your app includes in your project.json file.
+
+To create a self-contained app with a smaller footprint, start by following the first two steps for creating a self-contained app. Once you've run the `dotnet new` command and added the C# source code to your app, do the following:
+
+1. Open the `project.json` file and replace the `frameworks` section with the following:
+
+    ```json
+    "frameworks": {
+      "netstandard1.6": { }
+    }
+    ```
+This does two things:
+
+    * It indicates that, instead of using the entire `netcoreapp1.0` framework, which includes .NET Core CLR, the .NET Core Library, and a number of other system components, our app uses only the .NET Standard Library.
+
+    * By removing the `"type": "platform"` attribute, it indicates that the framework is provided as a set of components local to our app, rather than as a system-wide platform package.
+
+2. Replace the `dependencies` section with the following:
+
+    ```json
+    "dependencies": {
+      "NETStandard.Library": "1.6.0",
+      "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
+      "Microsoft.NETCore.DotNetHostPolicy":  "1.0.1"
+    },
+    ```
+   This defines the system components used by our app. The system components packaged with our app include the .NET Standard Library, the .NET Core runtime, and the .NET Core host. This produces a self-contained app with a smaller footprint than if you had simply modified the `frameworks` section to indicate that your app is providing the entire `netcoreapp1.0` framework.
+
+3. Create a `runtimes` section in your `project.json` file that defines the platforms your app targets and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. For example, the following `runtimes` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.10 operating system.
+
+    ```json
+        "runtimes": {
+          "win10-x64": {},
+          "osx.10.10-x64": {}
+        }
+    ```
+Note that you also need to add a comma to separate the `runtimes` section from the previous section.
+A complete sample `project.json` file appears later in this section.
+
+4. Run the `dotnet restore` command to restore the dependencies specified in your project.
+
+5. Create debug builds of your app on each of the target platforms by using the `dotnet build` command. Unless you specify the runtime identifier you'd like to build, the `dotnet build` command creates a build only for the current system's runtime ID. You can build your app for both target platforms with the commands:
+
+    ```console
+    dotnet build -r win10-x64
+    dotnet build -r osx.10.10-x64
+    ```
+
+6. After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets by using the `dotnet publish` command for both target platforms as follows:
+
+   ```console
+   dotnet publish -c release -r win10-x64
+   dotnet publish -c release -r osx.10.10-x64
+   ```
+This creates a release (rather than a debug) version of your app for each target platform. The resulting files are placed in a subdirectory named `publish` that is in a subdirectory of your project's `.\bin\release\netstandard1.6\<runtime_identifier>` subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
+
+7. Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.
 
 The published files can be deployed in any way you'd like. For example, you can package them in a zip file, use a simple `copy` command, or deploy them with any installation package of your choice. Before packaging and deploying your app, you can also use `crossgen` to convert it to native code. For more information, see the [Native Image Generation](#crossgen) section.
 
@@ -265,70 +402,6 @@ The following is the complete `project.json` file for this project.
        "osx.10.10-x64": {}
      }
    }
-```
-
-## Deploying a Self-Contained App with Third-Party Dependencies ##
-
-Deploying a self-contained app with one or more third-party dependencies involves three additional steps before you can run the `dotnet restore` command:
-
-1. Add references to any third-party libraries to the `dependencies` section of your `project.json` file. The following  `dependencies` section uses Json.NET as a third-party library.
-
-    ```json
-    "dependencies": {
-      "NETStandard.Library": "1.6.0",
-      "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
-      "Microsoft.NETCore.DotNetHostPolicy":  "1.0.1",
-      "Newtonsoft.Json": "9.0.1"
-    },
-    ```
-
-2. If you haven't already, download the NuGet package containing the third-party dependency. To download the package, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
-
-When you deploy your application, any third-party dependencies used in your app are also contained with your application files. Third-party libraries do not already have to be present on the system on which the app is running.
-
-Note that you can only deploy a self-contained app with a third-party library to platforms supported by that library.
-
-## Deploying a Modular Self-Contained App ##
-
-The previous two sections on deploying a self-contained app created and deployed an app that contained the entire .NET Core library. You can also deploy a modular self-contained app that includes only the .NET Core assemblies actually needed by your app.
-
-The word parsing example shown earlier in the [Deploying a Simple Self-Contained App](#simpleSelf) section uses the console, which is defined in the System.Console assembly, and the regular expression engine, which is defined in the System.Text.RegularExpressions assembly. Instead of deploying all of the .NET Standard Library with our app, we can deploy just the assemblies we need, the dependencies of those assemblies, and the libraries that contain basic .NET Core types. This requires a modification of the `dependencies` section of our project.json file:
-
-```json
-  "dependencies": {
-    "System.Console": "4.0.0",
-    "System.Text.RegularExpressions": "4.1.0",
-    "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
-    "Microsoft.NETCore.DotNetHostPolicy": "1.0.1"
-  },
-```
-
-For more information, see [Reducing Package Dependencies with project.json](reducing-dependencies.md).
-
-Otherwise, the steps required to create a modular self-contained appl are the same as those listed in the [Deploying a Simple Self-Contained App](#simpleSelf) section. The result is an app with a much smaller footprint than the self-contained app that includes the entire .NET Core Class Library. 
-
-The complete project.json file for this modular self-contained app is:
-
-```json
-{
-  "version": "1.0.0-*",
-  "buildOptions": {
-    "emitEntryPoint": true
-  },
-  "dependencies": {
-    "System.Console": "4.0.0",
-    "System.Text.RegularExpressions": "4.1.0",
-    "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
-    "Microsoft.NETCore.DotNetHostPolicy": "1.0.1"
-  },
-  "frameworks": {
-    "netstandard1.6": {}
-  },
-  "runtimes": {
-    "win10-x64": {},
-    "osx.10.10-x64": {}
-  }
-}
 ```
 
 ## <a name="crossgen"></a> Native Image Generation ##

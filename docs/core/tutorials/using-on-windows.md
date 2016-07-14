@@ -143,14 +143,14 @@ A mixed .NET Core library and .NET Framework application
 Starting from the solution obtained with the previous script, execute the following steps:
 
 1. In Solution Explorer, open the `project.json` file for the **Library** project and replace `"frameworks": {
-    "netstandard1.6"` with `"frameworks": {
-    "netstandard1.4"`.
+    "netstandard1.6" }` with `"frameworks": {
+    "netstandard1.4" }`.
 
 2. In the **Library** project, open the context menu for the **References** node and choose **Restore Packages**.
 
    The solution should still build and function exactly like it did before: the test should pass, and the console application should run and be debuggable.
 
-3. In the **Library"" Project, open the context menu and choose **Build**.
+3. In the **Library** project, open the context menu and choose **Build**.
 
 4. In Solution Explorer, open the context menu for the `src` folder, and choose **Add**. , **New Project**.
 
@@ -187,7 +187,7 @@ Moving a library from netstandard 1.4 to 1.3
 
 1. In Solution Explorer, open the `project.json` file in the **Library** project.
 
-2. Replace `frameworks": { "netstandard1.4"` with `frameworks": { "netstandard1.3"`.
+2. Replace `frameworks": { "netstandard1.4" }` with `frameworks": { "netstandard1.3" }`.
 
 3. In the **Library** project, open the context menu for the **References** node and choose **Restore Packages**.
 

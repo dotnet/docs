@@ -4,7 +4,8 @@
       "src": [
         {
           "files": [
-            "corefx/src/**/ref/**/*.csproj"
+            "corefx/src/**/ref/**/*.csproj",
+            "wcf/src/**/ref/**/*.csproj"
           ],
           "exclude": [ "**/bin/**", "**/obj/**"],
           "cwd": ".."
@@ -17,6 +18,7 @@
         {
           "files": [
             "corefx/src/**/src/**/*.csproj",
+            "wcf/src/**/src/**/*.csproj",
             "coreclr/src/mscorlib/System.Private.CoreLib.csproj"
           ],
           "exclude": [ "**/bin/**", "**/obj/**"],

@@ -97,43 +97,11 @@ namespace Prime.Services
 ### Creating the test project
 
 Next, cd into the 'test' directory, and create the `PrimeServices.Tests` directory.
-CD into the `PrimeServices.Tests` directory and create a new project using `dotnet new`.
-Once again, `dotnet new` creates a console application. Your unit test project is
-a console application, but the unit test assembly should not contain the application
-entry point. The xunit testrunner contains the entry point to run the console application.
-Therefore, you need to modify
-`project.json` by removing the `buildOptions` node.
- 
-```json
-"buildOptions" : {
-    "emitEntryPoint": true
-}
-```
+CD into the `PrimeServices.Tests` directory and create a new project using
+`dotnet new -t xunittest`. `dotnet new -t xunittest` creates a test project
+that uses xunit as the test library. 
 
-The test project requires other packages to create and run unit tests.
-You'll need to add xunit, the xunit runner, and the PrimeService
-package as dependencies to the project:
-
-```json
-"dependencies": {
-    "Microsoft.NETCore.App": {
-        "type": "platform",
-        "version": "1.0.0-rc2-3002702"
-    },
-    "xunit": "2.1.0",
-    "dotnet-test-xunit": "1.0.0-rc2-build10025",
-    "PrimeService": "1.0.0"
-}
-```
-
-Notice that the `PrimeService` project does not include
-any directory path information. Because you created the
-project structure to match the expected organization of
-`src` and `test`, and the `global.json` file indicates
-that, the build system will find the correct location
-for the project.
-
-You'll also need to add a node to specify the test runner
+The generated template configured the test runner
 at the root of `project.json`:
 
 ```json
@@ -144,20 +112,49 @@ at the root of `project.json`:
 }
 ```
 
-Finally, you need to set the framework node to use
+The template also sets the framework node to use
 `netcoreapp1.0`, and include the required imports to
-get xUnit.net to work with RC2:
+get xUnit.net to work with .NET Core RTM:
 
 ```json
   "frameworks": {
     "netcoreapp1.0": {
       "imports": [
-        "dnxcore50",
+        "dotnet54",
         "portable-net45+win8" 
       ]
     }
   }
 ```
+
+
+The test project requires other packages to create and run unit tests.
+`dotnet new` added xunit, and the xunit runner. You need to add the PrimeService
+package as another dependency to the project:
+
+```json
+"dependencies": {
+  "Microsoft.NETCore.App": {
+    "type":"platform",
+    "version": "1.0.0"
+  },
+  "xunit":"2.1.0",
+  "dotnet-test-xunit": "1.0.0-rc2-192208-24",
+  "PrimeService": {
+    "target": "project"
+  }
+}
+```
+
+Notice that the `PrimeService` project does not include
+any directory path information. Because you created the
+project structure to match the expected organization of
+`src` and `test`, and the `global.json` file indicates
+that, the build system will find the correct location
+for the project. You add the `"target": "project"` element
+to inform NuGet that it should look in project directories,
+not in the NuGet feed. Without this key, you might download
+a package with the same name as your internal library.
 
 You can see the entire file in the [samples repository](https://github.com/dotnet/core-docs/blob/master/samples/unit-testing/using-dotnet-test/test/PrimeService.Tests/project.json)
 on GitHub.

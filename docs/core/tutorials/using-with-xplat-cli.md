@@ -301,20 +301,22 @@ running `dotnet publish` and examining the files that are part of the installed
 package. You'll see `System.Collections.dll` in the list. 
 
 ```json
-{
-  "version": "1.0.0-*",
-  "buildOptions": {
-    "emitEntryPoint": true
-  },
-  "dependencies": {
-    "Microsoft.NETCore.App": {
-      "version": "1.0.0-rc2-3002702"
-    }
-  },
-  "frameworks": {
-    "netcoreapp1.0": {
-      "imports": "dnxcore50"
-    }
+{ 
+  "version": "1.0.0-*", 
+  "buildOptions": { 
+    "debugType": "portable", 
+    "emitEntryPoint": true 
+  }, 
+  "dependencies": {}, 
+  "frameworks": { 
+    "netcoreapp1.0": { 
+      "dependencies": { 
+        "Microsoft.NETCore.App": { 
+          "version": "1.0.0" 
+        } 
+      }, 
+      "imports": "dnxcore50" 
+    } 
   },
   "runtimes": {
     "win10-x64": {},

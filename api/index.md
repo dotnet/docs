@@ -432,6 +432,42 @@ The following is a list of namespaces in the .NET Core class library. Each names
     </td>
 </tr>
 <tr>
+   <td>@System.ServiceModel </td>
+   <td>
+   Provides classes related to the service model.
+    </td>
+</tr>
+<tr>
+   <td>@System.ServiceModel.Channels </td>
+   <td>
+   Provides classes related to service model channels.
+    </td>
+</tr>
+<tr>
+   <td>@System.ServiceModel.Description </td>
+   <td>
+   Provides classes related to the service model description.
+    </td>
+</tr>
+<tr>
+   <td>@System.ServiceModel.Dispatcher </td>
+   <td>
+   Provides classes related to dispatching the service model.
+    </td>
+</tr>
+<tr>
+   <td>@System.ServiceModel.Security </td>
+   <td>
+   Deals with general security-related topics.
+    </td>
+</tr>
+<tr>
+   <td>@System.ServiceModel.Security.Tokens </td>
+   <td>
+   Deals with security tokens and certificates.
+    </td>
+</tr>
+<tr>
    <td>@System.ServiceProcess </td>
    <td>
    Provides types that allow you to connect to and control a Windows service application. Windows services are long-running executables with no user interface. 

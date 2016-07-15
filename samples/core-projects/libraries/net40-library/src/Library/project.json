@@ -1,17 +1,13 @@
 {
 	"frameworks": {
-		"dotnet55":{
+		"netstandard1.6":{
 			"dependencies": {
-				"System.Runtime":"4.0.0-rc1-*",
-				"System.Net.Http":"4.0.0-rc1-*",
-				"System.Threading.Tasks":"4.0.0-rc1-*",
-				"System.Text.RegularExpressions": "4.0.0-rc1-*"
+				"NETStandard.Library": "1.6.0"
 			}
 		},
 		"net40":{
 			"frameworkAssemblies": {
-				"System.Net":"",
-				"System.Text.RegularExpressions":""
+				"System.Net":""
 			}
 		}
 	}

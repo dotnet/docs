@@ -1,14 +1,19 @@
 ﻿{
     "version": "1.0.0-*",
-    "compilationOptions": {
-        "emitEntryPoint": true
+    "buildOptions": {
+        "emitEntryPoint": true,
+        "debugType": "portable"
     },
-
-    "dependencies": {
-        "NETStandard.Library": "1.0.0-rc2-23704"
-    },
-
+    "dependencies": {},
     "frameworks": {
-        "dnxcore50": { }
+        "netcoreapp1.0": { 
+            "dependencies": {
+                "Microsoft.NETCore.App" :{
+                    "type":"platform",
+                    "version": "1.0.0"
+                }
+            },
+            "imports":"dnxcore50"
+        }
     }
 }

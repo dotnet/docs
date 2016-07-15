@@ -38,10 +38,10 @@ This article is to help project owners who want to compile their solution agains
 
   *What this is good for:*
   * Referencing your .NET Core libraries in desktop and/or web projects targeting the full .NET Framework in the same solution.
-  * Supporting modifications in the project build or load process. These modifications could be the inclusion of MSBuild Tasks and Targets in your *.csproj file.
+  * Supporting modifications in the project build or load process. These modifications could be the inclusion of MSBuild Tasks and Targets in your \*.csproj file.
 
   *Unsupported scenarios:*
-  * Does not allow you to write code for a specific .NET Framework version because the [preprocessor symbols for each platform][how-to-multitarget] are not supported.
+  * Does not allow you to write code for a specific .NET Framework version because the [predefiend preprocessor symbols][how-to-multitarget] are not supported.
 
 ## Example
 
@@ -55,7 +55,7 @@ There are several different ways to add support for .NET Core for this repositor
 
 ### Replace Existing Projects with a Multi-targeted .NET Core Project (xproj)
 
-The repository can be reorganized so that any existing *.csproj files are removed and a single *.xproj is created that targets multiple frameworks.  This is a great option because a single project is able to compile for different frameworks.  It also has the power to handle different compilation options, dependencies, etc. per targeted framework.
+The repository can be reorganized so that any existing \*.csproj files are removed and a single \*.xproj file is created that targets multiple frameworks.  This is a great option because a single project is able to compile for different frameworks.  It also has the power to handle different compilation options, dependencies, etc. per targeted framework.
 
 ![][example-xproj]
 
@@ -68,7 +68,7 @@ Changes to note are:
 
 ### Create a Portable Class Library (PCL) to target .NET Core
 
-If existing projects contain complex build operations or properties in their *.csproj, it may be easier to create a PCL.
+If existing projects contain complex build operations or properties in their \*.csproj, it may be easier to create a PCL.
 
 ![][example-pcl]
 
@@ -78,7 +78,7 @@ Changes to note are:
 *  Renaming `project.json` to `{project-name}.project.json`
     * This prevents potential conflict in Visual Studio when trying to restore packages for the libraries in the same directory. For more information, see the [NuGet FAQ](https://docs.nuget.org/consume/nuget-faq#working-with-packages) under "_I have multiple projects in the same folder, how can I use separate packages.config or project.json files for each project?_".
     *  **Alternative**: Create the PCL in another folder and reference the original source code to avoid this issue.  Placing the PCL in another folder has an added benefit that users who do not have Visual Studio 2015 can still work on the older projects without loading the new solution.
-*  To target .NET Standard after creating the PCL, in Visual Studio, open the **Project's Properties**. Under the **Targets** section, click on the link **"Target .NET Platform Standard"**.  This change can be reversed by repeating the same steps.
+*  To target .NET Standard after creating the PCL, in Visual Studio, open the **Project's Properties*\*. Under the **Targets** section, click on the link **"Target .NET Platform Standard"*\*.  This change can be reversed by repeating the same steps.
 
 ### Keep Existing Projects and Create a .NET Core Project
 

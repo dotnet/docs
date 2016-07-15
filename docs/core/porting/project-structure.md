@@ -20,11 +20,12 @@ This article is to help project owners who want to compile their solution agains
   
   *What this is good for:*
   * Simplifying your build process by compiling a single project rather than compiling multiple projects, each targeting a different .NET Framework version or platform.
+  * Simplifying source file management for multi-targeted projects because you have to manage a single project file.  When adding/removing source files, the alternatives require you to manually sync these with your other projects.
   * Easily generating a NuGet package for consumption.
   * Allows you to write code for a specific .NET Framework version in your libraries through the use of compiler directives.
   
   *Unsupported scenarios:*
-  * Does not allow developers without Visual Studio 2015 to open existing projects. To support older versions of Visual Studio, the [keeping your project files in different folders](#support-vs) is a better option.
+  * Does not allow developers without Visual Studio 2015 to open existing projects. To support older versions of Visual Studio, [keeping your project files in different folders](#support-vs) is a better option.
   * Does not allow you to share your .NET Core library across different project types in the same solution file. To support this, [creating a Portable Class Library](#support-pcl) is a better option.
   * Does not allow for project build or load modifications that are supported by MSBuild Targets and Tasks. To support this, [creating a Portable Class Library](#support-pcl) is a better option.
 

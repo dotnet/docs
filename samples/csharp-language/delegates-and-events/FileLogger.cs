@@ -22,7 +22,7 @@ public class FileLogger
                 log.WriteLine(msg);
                 log.Flush();
             }
-        } catch (Exception e)
+        } catch (Exception)
         {
             // Hmm. We caught an exception while 
             // logging. We can't really log the 

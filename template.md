@@ -5,7 +5,7 @@ title: [ARTICLE TITLE | SERVICE NAME]
 description:
 keywords:
 author: [GITHUB USERNAME]
-manager: [MANAGER ALIAS]
+manager: wpickett
 ms.date: [CREATION/UPDATE DATE]
 ms.topic: article
 ms.prod: .net-core
@@ -18,9 +18,6 @@ ms.assetid: [GET ONE FROM guidgenerator.com]
 #audience:
 #ms.devlang: dotnet
 #ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -36,39 +33,45 @@ When creating a Markdown file, you should copy this template to a new file, fill
 The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/dotnet/core-docs/master/template.md)), divided into required fields and optional fields. Some key notes:
 
 - You **must** have a space between the colon (:) and the value for a metadata element.
-- If an optional metadata element does not have a value, comment out the element with a # (do not leave it blank or use "na"); if you are adding a value to an element that was commented out, be sure to remove the #.
-- Colons in a value (for example, a title) break the metadata parser. In their place, use the HTML encoding for a colon of `&#58;` (for example, `"title: Writing .NET Core console apps&#58 An advanced step-by-step guide"`).
-- **title**: This title will appear in search engine results. The title should end with a pipe (|) followed by the name of the service (for example, see above). The title doesn't need (and probably shouldn't) be identical to the title in your H1 heading. It should be roughly 65 characters (including | SERVICE NAME)
-- **author**, **manager**, **reviewer**: The author field should contain the **GitHub username** of the author, not their alias.  The "manager" and "reviewer" fields, on the other hand, should contain aliases. ms.reviewer specifies the name of the PM associated with the article or service.
-- **ms.assetid**: This is the GUID of the article from CAPS. When creating a new Markdown file, get a GUID from [https://www.guidgenerator.com](https://www.guidgenerator.com). 
+- If an optional metadata element does not have a value, comment out the element with a # or remove it (do not leave it blank or use "na"); if you are adding a value to an element that was commented out, be sure to remove the #.
+- Colons in a value (for example, a title) break the metadata parser. In this case, surround the title with double quotes (for example, `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
+- **title**: This title will appear in search engine results. You can also add a pipe (|) followed by the product name (for example, `title: Developing Libraries with Cross Platform Tools | .NET Core`). The title doesn't need be identical to the title in your H1 heading and it should contain 65 characters or less (including | PRODUCT NAME).
+- **author**, **manager**, **ms.reviewer**: The author field should contain the **GitHub username** of the author, not their alias.  The "manager" and "ms.reviewer" fields, on the other hand, should contain Microsoft aliases. ms.reviewer specifies the name of the PM/dev associated with the article or feature.
+- **ms.devlang** defines the technology. Some of the supported values are: dotnet, cpp, csharp, fsharp, xml, vb and xml.
+- **ms.assetid**: This is the GUID of the article that is used for internal tracking purposes such as Business Intelligence (BI). When creating a new Markdown file, get a GUID from [https://www.guidgenerator.com](https://www.guidgenerator.com). 
 
 ## Basic Markdown, GFM, and special characters
 
-All basic and GitHub-flavored Markdown is supported. For more information on these, see:
+All basic and GitHub-flavored Markdown (GFM) is supported. For more information on these, see:
 
 - [Baseline Markdown syntax](https://daringfireball.net/projects/markdown/syntax)
-- [GitHub-flavored Markdown (GFM) documentation](https://guides.github.com/features/mastering-markdown)
+- [GitHub-flavored Markdown documentation](https://guides.github.com/features/mastering-markdown)
 
 Markdown uses special characters such as \*, \`, and \# for formatting. If you wish to include one of these characters in your content, you must do one of two things:
 
-- Put a backslash before the special character to "escape" it (for example, \\\* for a \*)
-- Use the [HTML entity code](http://www.ascii.cl/htmlcodes.htm) for the character (for example, \&\#42\; for a &#42;).
+- Put a backslash before the special character to "escape" it (for example, `\*` for a \*)
+- Use the [HTML entity code](http://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a &#42;).
 
 ## File name
 
 File names use the following rules:
 * Contain only lowercase letters, numbers, and hyphens.
 * No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
-* No more than 80 characters - this is a publishing system limit.
 * Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
 * No small words - don't include a, and, the, in, or, etc.
 * Must be in Markdown and use the .md file extension.
 
 ## Headings
 
+Use sentence-style capitalization. Always capitalize:
+- The first word of a heading. 
+- The word following a colon in a title or heading (for example, "How to: Sort an array"). 
+
 Headings should be done using atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above. 
 
-There **must** be only one first-level heading (H1) in your topic, which will be displayed as the on-page title.  
+There **must** be only one first-level heading (H1) in your topic, which will be displayed as the on-page title.
+
+If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Async Programming in F# #`.     
 
 Second-level headings will generate the on-page TOC that appears in the "In this article" section underneath the on-page title.
 
@@ -76,12 +79,14 @@ Second-level headings will generate the on-page TOC that appears in the "In this
 #### Fourth-level heading
 ##### Fifth level heading
 ###### Sixth-level heading
-
+ 
 ## Text styling
 
-*Italics* 
+*Italics*
+ Use for files, folders, paths (for long items, split onto their own line) - new terms - URLs (unless rendered as links, which is the default).
 
-**Bold** 
+**Bold**
+Use for UI elements.
 
 ~~Strikethrough~~
 
@@ -111,6 +116,20 @@ To link to an external file, use the full URL as the link.
 If a URL appears in a Markdown file, it will be transformed into a clickable link.
 
 - Example: http://www.github.com
+
+### Links to APIs
+
+Our build system has some extensions that are compatible with GFM and allow us to link to .NET Core APIs without having to use external links.  
+When linking to APIs, you can use its unique identifier (UID) that are auto-generated from the source code.
+
+You can use one of the following syntax:
+1. Markdown link: `[link_text](xref:UID)`
+2. Auto link: `<xref:UID>`
+3. Shorthand form: `@UID`
+
+For example, @System.String or [String class](xref:System.String). For more information about using this notation, see [Using cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-cross-reference).
+
+> Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to search for it in this repo: https://github.com/docascode/coreapi. We're working on having a better system in the future.
 
 ## Lists
 
@@ -173,20 +192,21 @@ If a URL appears in a Markdown file, it will be transformed into a clickable lin
 
 ## Code
 
-### Generic codeblock
+### Generic code block
 
-Indent code four spaces for generic codeblock coding.
+Use three backticks (&#96;&#96;&#96;) for generic code block coding. 
 
-    function fancyAlert(arg) {
-      if(arg) {
+```
+function fancyAlert(arg) {
+    if(arg) {
         $.docs({div:'#foo'})
-      }
     }
+}
+```
 
+### Code blocks with language identifier
 
-### Codeblocks with language identifier
-
-Use three backticks (&#96;&#96;&#96;) + a language ID to apply language-specific color coding to a code block.  Here is the entire list of [GitHub Flavored Markdown (GFM) language IDs](https://github.com/jmm/gfm-lang-ids/wiki/GitHub-Flavored-Markdown-(GFM)-language-IDs).
+Use three backticks (&#96;&#96;&#96;) + a language ID to apply language-specific color coding to a code block. Here is the entire list of [GFM language IDs](https://github.com/jmm/gfm-lang-ids/wiki/GitHub-Flavored-Markdown-(GFM)-language-IDs).
 
 ##### C&#9839;
 
@@ -225,7 +245,7 @@ $Files = Get-Childitem $Directory -recurse -Include *.log `
 
 ### Inline code
 
-Use backticks (&#96;) for `inline code`.
+Use backticks (&#96;) for `inline code`. Use inline code for command-line commands, database table and column names, and language keywords.
 
 ## Blockquotes
 
@@ -233,17 +253,13 @@ Use backticks (&#96;) for `inline code`.
 
 ## Images
 
-### Static Image
+### Static Image or Animated gif
 
 ![this is the alt text](./images/Logo_DotNet.png)
 
 ### Linked Image
 
 [![alt text for linked image](./images/Logo_DotNet.png)](https://dot.net) 
-
-### Animated gif
-
-![animated gif](https://github.com/Microsoft/Docs/tree/master/media/hololens.gif)
 
 ## Alerts
 
@@ -279,7 +295,7 @@ Use backticks (&#96;) for `inline code`.
 
 ## docs.ms extensions
 
-Doc.ms provides a few extensions to GitHub Flavored Markdown. 
+Docs.ms provides a few extensions to GitHub Flavored Markdown. 
 
 ###  Includes
 
@@ -290,16 +306,16 @@ You can embed the Markdown of one file into another using an include.
 ### Buttons
 
 > [!div class="button"]
-[button links](/rights-management)
+[button links](./docs/core/index.md)
 
 ### Selectors
 
 > [!div class="op_single_selector"]
-- [foo](/rights-management/template.md)
-- [bar](/rights-management/scratch.md)
+- [macOS](./docs/core/tutorials/using-on-macos.md)
+- [Windows](./docs/core/tutorials/using-on-windows.md)
 
 ### Step-By-Steps
 
 >[!div class="step-by-step"]
-[Pre](https://www.example.com)
-[Next](https://www.example.com)
+[Pre](./docs/csharp/expression-trees-interpreting.md)
+[Next](./docs/csharp/expression-trees-translating.md)

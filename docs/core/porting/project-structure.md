@@ -41,7 +41,7 @@ This article is to help project owners who want to compile their solution agains
   * Supporting modifications in the project build or load process. These modifications could be the inclusion of MSBuild Tasks and Targets in your *.csproj file.
 
   *Unsupported scenarios:*
-  * Does not allow you to write code for a specific .NET Framework version because compiler directives are not supported.
+  * Does not allow you to write code for a specific .NET Framework version because the [preprocessor symbols for each platform][how-to-multitarget] are not supported.
 
 ## Example
 
@@ -116,3 +116,5 @@ Please see [.NET Core porting documentation][porting-doc] for more guidance on m
 [option-xproj]: #replace-existing-projects-with-a-multi-targeted-net-core-project-xproj
 [option-pcl]: #create-a-portable-class-library-pcl-to-target-net-core
 [option-xproj-folder]: #keep-existing-projects-and-create-a-net-core-project
+
+[how-to-multitarget]: https://github.com/dotnet/core-docs/blob/master/docs/core/tutorials/libraries.md#how-to-multitarget

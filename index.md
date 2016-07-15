@@ -55,8 +55,8 @@ ms.assetid:
                         <ul class="row">
                             <li class="column column-third">
                                 <a href="docs/welcome.md">
-                                    <h3>.NET Documentation</h3>
-                                    <p>Learn .NET concepts and language syntax.</p>
+                                    <h3>.NET Core Documentation</h3>
+                                    <p>Learn .NET Core concepts and language syntax.</p>
                                 </a>
                             </li>
                             <li class="column column-third">

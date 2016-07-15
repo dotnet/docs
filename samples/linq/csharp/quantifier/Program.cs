@@ -3,7 +3,7 @@ namespace Quantifier
     public class Program
     {
         //Entry point of application
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
             //Invoke the linq quantifiers examples within the project
             AnySample1.Example();

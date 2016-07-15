@@ -2,7 +2,7 @@ namespace Element
 {
     public class Program
     {
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
             FirstSample1.MethodSyntaxExample();
             FirstSample1.QuerySyntaxExample();

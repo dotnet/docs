@@ -2,7 +2,7 @@ namespace Concatenation
 {
     public class Program
     {
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
             Concat1.MethodSyntaxExample();
             

@@ -3,7 +3,7 @@ namespace Projection
     public class Program
     {
         //Entry point of application
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
             //Invoke the linq projection examples within the project
             SelectSample1.MethodSyntaxExample();

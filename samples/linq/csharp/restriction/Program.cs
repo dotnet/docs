@@ -3,7 +3,7 @@ namespace Restriction
     public class Program
     {
         //Entry point of application
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
             //Invoke the linq restriction examples within the project
             WhereClause1.QuerySyntaxExample();

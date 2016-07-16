@@ -42,10 +42,10 @@ The full metadata block is above (in the [raw Markdown](https://raw.githubuserco
 
 ## Basic Markdown, GFM, and special characters
 
-All basic and GitHub-flavored Markdown (GFM) is supported. For more information on these, see:
+All basic and GitHub Flavored Markdown (GFM) is supported. For more information on these, see:
 
 - [Baseline Markdown syntax](https://daringfireball.net/projects/markdown/syntax)
-- [GitHub-flavored Markdown documentation](https://guides.github.com/features/mastering-markdown)
+- [GFM documentation](https://guides.github.com/features/mastering-markdown)
 
 Markdown uses special characters such as \*, \`, and \# for formatting. If you wish to include one of these characters in your content, you must do one of two things:
 
@@ -60,6 +60,7 @@ File names use the following rules:
 * Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
 * No small words - don't include a, and, the, in, or, etc.
 * Must be in Markdown and use the .md file extension.
+* Keep file names reasonably short. They are part of the URL for your articles.  
 
 ## Headings
 
@@ -88,15 +89,14 @@ Second-level headings will generate the on-page TOC that appears in the "In this
 **Bold**
 Use for UI elements.
 
-~~Strikethrough~~
-
 ## Links
 
 ### Internal Links
 
-To link to a header in the same Markdown file, view the source of the published article, find the id of the head (for example, `id="blockquote"`), and link using # + id (for example, `#blockquote`).
+To link to a header in the same Markdown file (also known as anchor links), you'll need to find out the id of the header you're trying to link to. To confirm the ID, view the source of the rendered article, find the id of the header (for example, `id="blockquote"`), and link using # + id (for example, `#blockquote`).
+The id is auto-generated based on the header text. So, for example, given a unique section named `## Step 2`, the id would look like this `id="step-2"`.
 
-- Example: [Blockquotes](#blockquote)
+- Example: [Chapter 1](#chapter-1)
 
 To link to a Markdown file in the same repo, use [relative links](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2), including the ".md" at the end of the filename.
 
@@ -120,16 +120,19 @@ If a URL appears in a Markdown file, it will be transformed into a clickable lin
 ### Links to APIs
 
 Our build system has some extensions that are compatible with GFM and allow us to link to .NET Core APIs without having to use external links.  
-When linking to APIs, you can use its unique identifier (UID) that are auto-generated from the source code.
+When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code.
 
 You can use one of the following syntax:
 1. Markdown link: `[link_text](xref:UID)`
 2. Auto link: `<xref:UID>`
 3. Shorthand form: `@UID`
 
-For example, @System.String or [String class](xref:System.String). For more information about using this notation, see [Using cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-cross-reference).
+- Example: `@System.String`
+- Example: `[String class](xref:System.String)` 
 
-> Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to search for it in this repo: https://github.com/docascode/coreapi. We're working on having a better system in the future.
+For more information about using this notation, see [Using cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-cross-reference).
+
+> Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to search for it in this repo: [docascode/coreapi](https://github.com/docascode/coreapi). We're working on having a better system in the future.
 
 ## Lists
 
@@ -192,21 +195,9 @@ For example, @System.String or [String class](xref:System.String). For more info
 
 ## Code
 
-### Generic code block
-
-Use three backticks (&#96;&#96;&#96;) for generic code block coding. 
-
-```
-function fancyAlert(arg) {
-    if(arg) {
-        $.docs({div:'#foo'})
-    }
-}
-```
-
 ### Code blocks with language identifier
 
-Use three backticks (&#96;&#96;&#96;) + a language ID to apply language-specific color coding to a code block. Here is the entire list of [GFM language IDs](https://github.com/jmm/gfm-lang-ids/wiki/GitHub-Flavored-Markdown-(GFM)-language-IDs).
+Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the entire list of [GFM language IDs](https://github.com/jmm/gfm-lang-ids/wiki/GitHub-Flavored-Markdown-(GFM)-language-IDs).
 
 ##### C&#9839;
 
@@ -243,6 +234,20 @@ $Files = Get-Childitem $Directory -recurse -Include *.log `
 -ErrorAction SilentlyContinue
 ```
 
+### Generic code block
+
+Use three backticks (&#96;&#96;&#96;) for generic code block coding.   
+
+> The recommended approach is to use code blocks with language identifiers as explained in the previous section to ensure the proper syntax highlighting in our site. Use generic code blocks only when necessary.
+
+```
+function fancyAlert(arg) {
+    if(arg) {
+        $.docs({div:'#foo'})
+    }
+}
+```
+
 ### Inline code
 
 Use backticks (&#96;) for `inline code`. Use inline code for command-line commands, database table and column names, and language keywords.
@@ -261,28 +266,6 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 
 [![alt text for linked image](./images/Logo_DotNet.png)](https://dot.net) 
 
-## Alerts
-
-### Note
-
-> [!NOTE]
-> This is NOTE
-
-### Warning
-
-> [!WARNING]
-> This is WARNING
-
-### Tip
-
-> [!TIP]
-> This is TIP
-
-### Important
-
-> [!IMPORTANT]
-> This is IMPORTANT
-
 ## Videos
 
 ### Channel 9
@@ -293,9 +276,36 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/g2a4W6Q7aRw" frameborder="0" allowfullscreen></iframe>
 
-## docs.ms extensions
+## docs.microsoft extensions
 
-Docs.ms provides a few extensions to GitHub Flavored Markdown. 
+docs.microsoft provides a few additional extensions to GitHub Flavored Markdown. 
+
+### Alerts
+
+It's important to use the following alert styles so they render with the proper style in our site. However, the rendering engine on GitHub doesn't diferentiate them.     
+
+#### Note
+
+> [!NOTE]
+> This is a NOTE
+
+#### Warning
+
+> [!WARNING]
+> This is a WARNING
+
+#### Tip
+
+> [!TIP]
+> This is a TIP
+
+#### Important
+
+> [!IMPORTANT]
+> This is IMPORTANT
+
+And they'll render like this:
+![Alert styles](./images/alerts.png)
 
 ###  Includes
 
@@ -308,14 +318,20 @@ You can embed the Markdown of one file into another using an include.
 > [!div class="button"]
 [button links](./docs/core/index.md)
 
+You can see an example of buttons in action at the [Intune docs](https://docs.microsoft.com/en-us/intune/get-started/choose-how-to-enroll-devices). 
+
 ### Selectors
 
 > [!div class="op_single_selector"]
 - [macOS](./docs/core/tutorials/using-on-macos.md)
 - [Windows](./docs/core/tutorials/using-on-windows.md)
 
+You can see an example of selectors in action at the [Intune docs](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
+
 ### Step-By-Steps
 
 >[!div class="step-by-step"]
 [Pre](./docs/csharp/expression-trees-interpreting.md)
 [Next](./docs/csharp/expression-trees-translating.md)
+
+You can see an example of step-by-steps in action at the [Advanced Threat Analytics docs](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/install-ata-step2).

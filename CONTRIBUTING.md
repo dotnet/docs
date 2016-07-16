@@ -81,11 +81,13 @@ On a certain cadence, we push all commits from master branch into the live branc
 Below is a short list of guiding rules that you should keep in mind when you are contributing to .NET documentation.
 
 - **DON'T** surprise us with big pull requests. Instead, file an issue and start a discussion so we can agree on a direction before you invest a large amount of time.
-- **DO** read our [voice and tone](voice-tone.md) guidelines.
-- **DO** use our [template](template.md) file as the starting point of your work. This file also contains our style guide guidelines.
+- **DO** read our [style guide](template.md) and [voice and tone](voice-tone.md) guidelines.
+- **DO** use our [template](template.md) file as the starting point of your work.
 - **DO** create a separate branch on your fork before working on the articles.
 - **DO** follow the [GitHub Flow workflow](https://guides.github.com/introduction/flow/). 
 - **DO** blog and tweet (or whatever) about your contributions, frequently!
+
+> Note: you might notice that some of our topics are not currently following all the guidelines specified here and on our [style guide](template.md) as well. We're working towards achieving consistency throughout our site. Check the list of [open issues](https://github.com/dotnet/core-docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal. 
 
 ## Building the docs ##
 
@@ -102,7 +104,9 @@ If you are comfortable with other ways listed on the link above, feel free to us
 
 You can build and preview the resulting site locally using a built-in web server. Navigate to the core-docs folder on your machine and type the following command:
 
-	docfx .\docfx.json --serve
+```
+docfx .\docfx.json --serve
+```
 	
 This starts the local preview on [localhost:8080](http://localhost:8080). You can then view the changes by going to `http://localhost:8080/docs/[path]`, such as http://localhost:8080/docs/articles/.
 
@@ -112,9 +116,9 @@ This starts the local preview on [localhost:8080](http://localhost:8080). You ca
 
 See the [Samples Readme](https://github.com/dotnet/core-docs/blob/master/samples/README.md).
 
-##Contributor License Agreement
+## Contributor License Agreement
 
-You must sign a [.NET Foundation Contribution License Agreement (CLA)](http://cla2.dotnetfoundation.org) before your PR will be merged. This a one-time requirement for projects in the .NET Foundation. You can read more about [Contribution License Agreements (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
+You must sign a [.NET Foundation Contribution License Agreement (CLA)](http://cla2.dotnetfoundation.org) before your PR will be merged. This is a one-time requirement for projects in the .NET Foundation. You can read more about [Contribution License Agreements (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
 
 Signing the CLA is super simple and can be done in less than a minute.
 

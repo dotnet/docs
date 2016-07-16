@@ -119,7 +119,7 @@ If a URL appears in a Markdown file, it will be transformed into a clickable lin
 
 ### Links to APIs
 
-Our build system has some extensions that are compatible with GFM and allow us to link to .NET Core APIs without having to use external links.  
+Our build system has some extensions that allow us to link to .NET Core APIs without having to use external links.  
 When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code.
 
 You can use one of the following syntax:
@@ -192,6 +192,7 @@ For more information about using this notation, see [Using cross reference](http
 | col 2 is      | centered      |   $12 |
 | col 1 is default | left-aligned     |    $1 |
 
+You can use a [Markdown table generator tool](http://www.tablesgenerator.com/markdown_tables) to help creating them more easily. 
 
 ## Code
 

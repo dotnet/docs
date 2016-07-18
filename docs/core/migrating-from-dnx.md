@@ -110,12 +110,12 @@ as Visual Studio) to differentiate between RC1 and later versions, they use the 
 which project is RC1 or later. If `global.json` doesn't have this node at all, it is assumed to be the latest. 
 
 In order to update the `global.json` file, either remove the property or set it to the exact version of the 
-tools that you wish to use, in this case **1.0.0-preview2-003118**:
+tools that you wish to use, in this case **1.0.0-preview2-003121**:
 
 ```json
 {
     "sdk": {
-        "version": "1.0.0-preview2-003118"
+        "version": "1.0.0-preview2-003121"
     }
 }
 ```

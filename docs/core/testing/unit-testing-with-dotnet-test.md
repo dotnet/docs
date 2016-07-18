@@ -53,29 +53,11 @@ contains the names of your `src` and `test` directories:
 ### Creating the source project
 
 Then, in the `src` directory, create the `PrimeService` directory.
-CD into that directory, and run `dotnet new` to create the source
+CD into that directory, and run `dotnet new -t lib` to create the source
 project.
 
 
-The `dotnet new` command creates a console application project, so you'll want to
-make a modification to `project.json` so that you build a class library
-project. 
-
-* note: You can track [this issue](https://github.com/dotnet/cli/issues/2052)
-for other project types coming for the .NET Core SDK, including class libraries.
-Once this issue is addressed, you won't need to make these changes.
-
-Simply remove the `buildOptions` node that instructs the compiler
-to emit the program entry point:
-
-```json
-"buildOptions" : {
-    "emitEntryPoint": true
-}
-```
-
-You'll also want to remove `program.cs` and replace it with the class for the
-`PrimeService`. To use TDD, you'll create a failing implementation of the
+Rename`Library.cs` and as 'PrimeService.cs`. To use TDD, you'll create a failing implementation of the
 `PrimeService` class:
 
 ```cs

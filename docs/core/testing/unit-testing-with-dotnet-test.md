@@ -127,8 +127,6 @@ get xUnit.net to work with .NET Core RTM:
   }
 ```
 
-<<<<<<< 69b9dd581cc765e4865c776fc0fd5b8ae33e5d5c
-
 The test project requires other packages to create and run unit tests.
 `dotnet new` added xunit, and the xunit runner. You need to add the PrimeService
 package as another dependency to the project:

@@ -9,7 +9,7 @@ os: Visual Studio 2015
 ##   ## 1) from direct url  
 ##   - ps: $url = "https://go.microsoft.com/fwlink/?LinkID=798402" # v1.0.0-preview1 x64
 ##   ## 2) from url based on version, for example using an env var CLI_VERSION that can be a
-##   ##    a specific version `1.0.0-preview2-003118` or `Latest` (for latest dev version)
+##   ##    a specific version `1.0.0-preview2-003121` or `Latest` (for latest dev version)
 ##   - ps: $url = "https://dotnetcli.blob.core.windows.net/dotnet/preview/Binaries/$($env:CLI_VERSION)/dotnet-dev-win-x64.$($env:CLI_VERSION.ToLower()).zip"
 ##   # Download .NET Core SDK and add to PATH
 ##   - ps: $env:DOTNET_INSTALL_DIR = "$pwd\.dotnetsdk"

@@ -2,7 +2,7 @@ namespace Aggregate
 {
     public class Program
     {
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
             AggregateSample1.MethodSyntaxExample();
             AggregateSample2.MethodSyntaxExample();

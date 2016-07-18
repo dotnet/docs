@@ -3,7 +3,7 @@ namespace Join
     public class Program
     {
         //Entry point of application
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
             //Invoke the linq join examples within the project
             CrossJoinExample1.MethodSyntaxExample();

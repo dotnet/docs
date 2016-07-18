@@ -2,7 +2,7 @@ namespace Equality
 {
     public class Program
     {
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
             SequenceEqual1.MethodSyntaxExample();
             

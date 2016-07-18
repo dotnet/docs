@@ -3,7 +3,7 @@ namespace SetOperators
     public class Program
     {
         //Entry point of application
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
             //Invoke the linq set operator examples within the project
            SetDistinct1.MethodSyntaxExample();

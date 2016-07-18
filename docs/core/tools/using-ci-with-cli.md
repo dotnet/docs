@@ -88,7 +88,7 @@ the .NET Core SDK.
 ```yaml
 environment:
   matrix:
-    - CLI_VERSION: 1.0.0-preview2-003118
+    - CLI_VERSION: 1.0.0-preview2-003121
     - CLI_VERSION: Latest
 
 install:

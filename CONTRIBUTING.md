@@ -112,13 +112,19 @@ it should include unit tests or an application that lets readers run the code.
 The samples are organized in directories that match the directories under
 docs in this repo:
 
-- `core-projects` contains all .NET Core samples. These are referenced by topics under `/docs/core`.
+- `getting-started` contains getting started samples. These are referenced by topics under `docs/*/tutorials`
 
-- `charp-language` contains all C# language samples. These are referenced by topics under `docs/csharp`.
+- `core-projects` contains .NET Core samples. These are referenced by topics under `/docs/core`.
 
-- `getting-started` contains all getting started samples. These are referenced by topics under `docs/*/tutorials`
+- `charp-language` contains C# language samples. These are referenced by topics under `docs/csharp`.
 
 - `linq` contains all the 101 LINQ samples that were originally created when LINQ was developed. These don't have topics associated with them yet.
+
+We will expand these directories as the core-docs repository adds new content.
+
+Sample code may fit more than one of these areas. In those cases, place the sample so it matches
+the topics you are covering in your documents. Ask yourself what readers will learn from reading
+your topic. What will they learn from building and running your sample? 
 
 NOTE to Reviewers: The C# Tutorials (/docs/csharp/tutorials) have their sample code in /samples/csharp. I think that
 code should move to /samples/getting-started to match the new description in this file. I'll wait to do the move,

@@ -14,14 +14,6 @@ ms.assetid: ebc727cd-8112-42e7-b59c-3c2873ad661c
 
 # Features at a glance
 
-The opening sentence of the C# Specification states:
-
-> C# (pronounced "See Sharp") is a simple, modern, object-oriented, and type-safe programming language.
-
-C# has grown since that was written, but it is still true to its roots. C# is still a simple,
-modern, and type-safe language. It's now more multi-paradigm after adding more and more support
-for functional concepts. It is still an expressive, and productive language to program with.
-
 ## Unified Type System
 
 C# leverages the .NET Unified Type System. All C# types ultimately derive from `object`

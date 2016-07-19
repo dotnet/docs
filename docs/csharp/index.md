@@ -14,49 +14,35 @@ ms.assetid: 52db8280-0e53-40cf-858b-e8eef3997dea
 
 # C# Guide
 
-* [Tutorials](tutorials/index.md)
-    * [Console Application](tutorials/console-teleprompter.md)
-    * [REST client](tutorials/console-webapiclient.md)
-    * [Working with LINQ](tutorials/working-with-linq.md)
-    * [Microservices hosted in Docker](tutorials/microservices.md)
-* [🔧 Tour of C#](features.md)
-    * [What's new in C# 6](csharp-6.md)
-<!-- This page, or its parent should point to the Roslyn repo for folks that want
-to know what's next -->
-* [🔧 C# Concepts](concepts.md)
-    * [🔧 C# Type system](type-system.md)
-    * [Properties](properties.md)
-    * [Indexers](indexers.md)
-    * [🔧 Generics](generics.md)
-    * [Iterators](iterators.md)
-    * [🔧 Language Integrated Query (LINQ)](linq.md)
-    * [Delegates & events](delegates-events.md)
-        * [Introduction to Delegates](delegates-overview.md)
-        * [System.Delegate and the delegate keyword](delegate-class.md)
-        * [Strongly Typed Delegates](delegates-strongly-typed.md)
-        * [Common Patterns for Delegates](delegates-patterns.md)
-        * [Introduction to Events](events-overview.md)
-        * [The .NET Event Pattern](event-pattern.md)
-        * [The Updated .NET Event Pattern](modern-events.md)
-        * [Distinguishing Delegates and Events](distinguish-delegates-events.md)
-    * [🔧 Parallel programming](parallel.md)
-    * [Asynchronous programming](async.md)
-    * [🔧 Lambda Expressions](lambda-expressions.md)
-<!-- This is a sidebar the delegates topics. I don't think it
-    needs to be linked into the TOC, but I wanted to leave it 
-    to get your thoughts. If it does belong in the TOC,
-    this is the location:
-        * [Implicitly Typed Lambda Expressions](implicitly-typed-lambda-expressions.md)
--->
-    * [Expression Trees](expression-trees.md)
-        * [Expression Trees Explained](expression-trees-explained.md)
-        * [Framework Types Supporting Expression Trees](expression-classes.md)
-        * [Executing Expressions](expression-trees-execution.md)
-        * [Interpreting Expressions](expression-trees-interpreting.md)
-        * [Building Expressions](expression-trees-building.md)
-        * [Translating Expressions](expression-trees-translating.md)
-        * [Summary](expression-trees-summary.md)
-    * [🔧 Native interoperability](interop.md)
-    * [🔧 Reflection & code generation](reflection.md)
-    * [🔧 Documenting your code](codedoc.md) 
-* [🔧 Syntax Reference](syntax.md)
+The opening sentence of the C# Specification states:
+
+> C# (pronounced "See Sharp") is a simple, modern, object-oriented, and type-safe programming language.
+
+C# has grown since that was written, but it is still true to its roots.
+C# is still a simple, modern, and type-safe language. It's now more
+multi-paradigm after adding more and more support for functional concepts.
+It is still an expressive, and productive general purpose programming
+language.
+
+The C# Guide has content for experienced C# developers that want to learn
+more, experienced developers that are new to C#, and people learning to
+program. The three recommendations below can help you find the content you
+need. Most people won't fit one of these profiles exactly. But, they
+can still help you decide which sections will best help you.
+
+## Experienced C# Developers
+
+
+.. start with "What's new" in recent versions.
+.. Search for areas you want to explore more deeply.
+
+## For Developers new to C#
+
+.. Explore the walk throughs
+.. Explore C# features of interest
+
+## For new developers
+
+.. Getting Started Section
+.. Explore walk throughs
+.. examine the guide at your own pace

@@ -62,6 +62,8 @@ File names use the following rules:
 * Must be in Markdown and use the .md file extension.
 * Keep file names reasonably short. They are part of the URL for your articles.  
 
+
+
 ## Headings
 
 Use sentence-style capitalization. Always capitalize:
@@ -119,7 +121,7 @@ If a URL appears in a Markdown file, it will be transformed into a clickable lin
 
 ### Links to APIs
 
-Our build system has some extensions that allow us to link to .NET Core APIs without having to use external links.  
+The build system has some extensions that allow us to link to .NET Core APIs without having to use external links.  
 When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code.
 
 You can use one of the following syntax:
@@ -239,7 +241,7 @@ $Files = Get-Childitem $Directory -recurse -Include *.log `
 
 Use three backticks (&#96;&#96;&#96;) for generic code block coding.   
 
-> The recommended approach is to use code blocks with language identifiers as explained in the previous section to ensure the proper syntax highlighting in our site. Use generic code blocks only when necessary.
+> The recommended approach is to use code blocks with language identifiers as explained in the previous section to ensure the proper syntax highlighting in the documentation site. Use generic code blocks only when necessary.
 
 ```
 function fancyAlert(arg) {
@@ -283,7 +285,7 @@ docs.microsoft provides a few additional extensions to GitHub Flavored Markdown.
 
 ### Alerts
 
-It's important to use the following alert styles so they render with the proper style in our site. However, the rendering engine on GitHub doesn't diferentiate them.     
+It's important to use the following alert styles so they render with the proper style in the documentation site. However, the rendering engine on GitHub doesn't diferentiate them.     
 
 #### Note
 

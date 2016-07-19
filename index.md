@@ -1,5 +1,4 @@
 ---
-asset_id: 
 layout: HubPage
 
 title: .NET Core Documentation 

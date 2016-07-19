@@ -26,7 +26,7 @@ You can skip this step for small changes.
 
 **Step 4:** Write your article. 
 
-If it's a new topic, you can use this [template file](template.md) as your starting point. It contains the writing guidelines and also explains the metadata required for each article, such as author information.
+If it's a new topic, you can use this [template file](./styleguide/template.md) as your starting point. It contains the writing guidelines and also explains the metadata required for each article, such as author information.
 
 Navigate to the folder that corresponds to the TOC location determined for your article in step 1.
 That folder contains the Markdown files for all articles in that section.
@@ -34,7 +34,7 @@ If necessary, create a new folder to place the files for your content. The main 
 For images and other static resources, create a subfolder called **media** inside the folder that contains your article, if it doesn't already exist. Inside the **media** folder, create a subfolder with the article name (except for the index file).
 Larger samples should be included in the `samples` folder under the root of the repo.
 
-Be sure to follow the proper Markdown syntax. See the [style guide](template.md) for more information.
+Be sure to follow the proper Markdown syntax. See the [style guide](./styleguide/template.md) for more information.
 
 Also, remove the "wrench" icon (🔧) from the TOC and the file heading, if applicable. 
 
@@ -71,13 +71,13 @@ On a certain cadence, we push all commits from master branch into the live branc
 Below is a short list of guiding rules that you should keep in mind when you are contributing to the .NET documentation.
 
 - **DON'T** surprise us with big pull requests. Instead, file an issue and start a discussion so we can agree on a direction before you invest a large amount of time.
-- **DO** read the [style guide](template.md) and [voice and tone](voice-tone.md) guidelines.
-- **DO** use the [template](template.md) file as the starting point of your work.
+- **DO** read the [style guide](./styleguide/template.md) and [voice and tone](./styleguide/voice-tone.md) guidelines.
+- **DO** use the [template](./styleguide/template.md) file as the starting point of your work.
 - **DO** create a separate branch on your fork before working on the articles.
 - **DO** follow the [GitHub Flow workflow](https://guides.github.com/introduction/flow/). 
 - **DO** blog and tweet (or whatever) about your contributions, frequently!
 
-> Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/dotnet/core-docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal. 
+> Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/dotnet/core-docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal. 
 
 ## Building the docs
 

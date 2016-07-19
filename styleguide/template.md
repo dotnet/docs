@@ -23,7 +23,7 @@ ms.assetid: [GET ONE FROM guidgenerator.com]
 
 # Metadata and Markdown Template
 
-This core-docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/core-docs/master/template.md) and the [rendered view](https://github.com/dotnet/core-docs/blob/master/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
+This core-docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/core-docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/core-docs/blob/master/styleguide/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
 
 When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
 
@@ -102,12 +102,12 @@ The id is auto-generated based on the header text. So, for example, given a uniq
 
 To link to a Markdown file in the same repo, use [relative links](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2), including the ".md" at the end of the filename.
 
-- Example: [Readme file](readme.md)
-- Example: [Welcome to .NET](./docs/welcome.md)
+- Example: [Readme file](../readme.md)
+- Example: [Welcome to .NET](../docs/welcome.md)
 
 To link to a header in a Markdown file in the same repo, use relative linking + hashtag linking.
 
-- Example: [.NET Community](./docs/welcome.md#community)
+- Example: [.NET Community](../docs/welcome.md#community)
 
 ### External Links
 
@@ -263,11 +263,11 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 
 ### Static Image or Animated gif
 
-![this is the alt text](./images/Logo_DotNet.png)
+![this is the alt text](../images/Logo_DotNet.png)
 
 ### Linked Image
 
-[![alt text for linked image](./images/Logo_DotNet.png)](https://dot.net) 
+[![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net) 
 
 ## Videos
 
@@ -308,33 +308,33 @@ It's important to use the following alert styles so they render with the proper 
 > This is IMPORTANT
 
 And they'll render like this:
-![Alert styles](./images/alerts.png)
+![Alert styles](../images/alerts.png)
 
 ###  Includes
 
 You can embed the Markdown of one file into another using an include.
 
-[!INCLUDE[sample include file](./includes/sampleinclude.md)]
+[!INCLUDE[sample include file](../includes/sampleinclude.md)]
 
 ### Buttons
 
 > [!div class="button"]
-[button links](./docs/core/index.md)
+[button links](../docs/core/index.md)
 
 You can see an example of buttons in action at the [Intune docs](https://docs.microsoft.com/en-us/intune/get-started/choose-how-to-enroll-devices). 
 
 ### Selectors
 
 > [!div class="op_single_selector"]
-- [macOS](./docs/core/tutorials/using-on-macos.md)
-- [Windows](./docs/core/tutorials/using-on-windows.md)
+- [macOS](../docs/core/tutorials/using-on-macos.md)
+- [Windows](../docs/core/tutorials/using-on-windows.md)
 
 You can see an example of selectors in action at the [Intune docs](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
 
 ### Step-By-Steps
 
 >[!div class="step-by-step"]
-[Pre](./docs/csharp/expression-trees-interpreting.md)
-[Next](./docs/csharp/expression-trees-translating.md)
+[Pre](../docs/csharp/expression-trees-interpreting.md)
+[Next](../docs/csharp/expression-trees-translating.md)
 
 You can see an example of step-by-steps in action at the [Advanced Threat Analytics docs](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/install-ata-step2).

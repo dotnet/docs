@@ -34,8 +34,7 @@ There are two main types that we can observe:
 
 ## Portable applications
 Portable applications are the default type in .NET Core. They require .NET Core to be installed on the targeted machine 
-in order for them to run. To you as a developer, this means that your application is portable between installations of 
-.NET Core. 
+in order for them to run. 
 
 This type of application will only carry its own code and dependencies that are outside of .NET Core libraries. 
 As an example, let's say you are making a console application that has the ability to invoke a certain REST API 
@@ -63,6 +62,9 @@ and have your frameworks aligned as the below sample shows.
 The `Microsoft.NETCore.App` is a "metapackage" that states that you are targeting the .NET Core libraries. The `type: platform` 
 property on that dependency means that at publish time, the tooling will skip publishing the assemblies for that dependency 
 to the published output. You don't need these since they will be installed with .NET Core on the targeted machine. 
+
+For an example and a how-to article on how to deploy applications please consult the [deploying applications](deploying/index.md) 
+document. 
 
 ### Portable application with native dependencies
 A subgroup of the above, this type is a portable application that has native dependencies specified 
@@ -137,4 +139,11 @@ The following `project.json` sample illustrates a simple self-contained applicat
     "osx.10.11-x64": {}
 }
 ```
+
+### Making a smaller self-contained application
+As mentioned, self-contained application will package the entire runtime with the application. The "entire runtime" here 
+means the contents of the `Microsoft.NETCore.App` meta-package. Your applications may not use all of the available APIs
+ that come with this package and so you may want to decrease the size of your application. If this is the case, you can 
+consult the [deployment article](deploying/index.md) to see how to decrease the size by tailoring your dependencies to 
+use a smaller meta-package. 
 

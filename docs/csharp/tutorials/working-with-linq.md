@@ -37,7 +37,8 @@ then perform a sequence of shuffles, writing the sequence out each time.
 You'll also compare the updated order to the original order.
 
 This tutorial has multiple steps. After each step, you can run the
-application and see the progress.
+application and see the progress. You can also see the completed
+sample in our [GitHub repository.](https://github.com/dotnet/core-docs/blob/master/samples/getting-started/csharp/console-linq)
 
 
 ## Prerequisites

@@ -130,7 +130,7 @@ There are several components that make up Mono:
 
 ### Xamarin SDK
 
-The [Xamarin SDK](https://open.xamarin.com) is used to build native mobile and device apps, primarily for Apple and Google ecosystems. It is based on Mono and is open source using the MIT license. You can use it to build iOS and Android apps for phones, tablets and watches. [Xamarin.Forms](https://www.xamarin.com/forms) is a popular way to write reusable UIs across Apple, Google and Windows apps.
+The [Xamarin SDK](http://open.xamarin.com) is used to build native mobile and device apps, primarily for Apple and Google ecosystems. It is based on Mono and is open source using the MIT license. You can use it to build iOS and Android apps for phones, tablets and watches. [Xamarin.Forms](https://www.xamarin.com/forms) is a popular way to write reusable UIs across Apple, Google and Windows apps.
 
 - Learn about the [Xamarin SDK](https://developer.xamarin.com/)
 - [Download Xamarin](https://www.xamarin.com/platform)

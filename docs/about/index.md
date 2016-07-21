@@ -68,7 +68,7 @@ Projects
 - [CoreFX](https://github.com/dotnet/coreclr) - .NET class libraries, used by .NET Core and to a degree by Mono via source sharing.
 - [Roslyn](https://github.com/dotnet/roslyn) - C# and Visual Basic compilers, used by most .NET platforms and tools. Exposes APIs for reading, writing and analyzing source code.
 - [F#](https://github.com/microsoft/visualfsharp) - F# compiler.
-- [Xamarin SDK](https://open.xamarin.com) -- Tools and libraries needed to write Android, iOS and macOS in C# and F#.
+- [Xamarin SDK](http://open.xamarin.com) - Tools and libraries needed to write Android, iOS and macOS in C# and F#.
 
 Standardized
 ------------

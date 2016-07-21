@@ -32,6 +32,8 @@ Along the way, you'll also see some C# language features:
 * How to process incoming HTTP Requests and generate the HTTP Response
 * How to work with nullable value types
 
+You can retrieve the code from our [GitHub repository.]()https://github.com/dotnet/core-docs/tree/master/samples/getting-started/csharp/WeatherMicroservice)
+
 ### Why Docker?
 
 Docker makes it easy to create standard machine images to

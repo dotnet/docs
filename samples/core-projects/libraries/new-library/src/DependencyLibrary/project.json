@@ -1,8 +1,12 @@
 {
+	"version": "1.0.0",
+	"buildOptions": {
+		"debugType": "portable"
+	},
 	"frameworks": {
-		"dotnet55":{
+		"netstandard1.6":{
 			"dependencies": {
-				"System.Runtime":"4.0.0-rc1-*"
+				"NETStandard.Library": "1.6.0"
 			}
 		}
 	}

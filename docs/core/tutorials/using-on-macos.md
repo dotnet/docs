@@ -2,7 +2,7 @@
 title: Getting started with .NET Core on macOS
 description: Getting started with .NET Core on macOS, using Visual Studio Code
 keywords: .NET, .NET Core
-author: dotnet-bot
+author: bleroy
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -88,7 +88,7 @@ At this point, your directory tree should look like this:
 |__/src
    |__/app
    |__/library
-/test
+|__/test
    |__/test-library
 ```
 
@@ -159,7 +159,7 @@ namespace Library
 This makes use of a number of modern C# features, such as 
 static usings, expression bodied members, and interpolated strings,
 that you can learn
-about in the [Learn C#](/csharp/index.md) section.
+about in the [Learn C#](../../csharp/index.md) section.
 
 Now that you've updated the code, you can build the library using
 `dotnet build`.
@@ -266,7 +266,7 @@ After you install the extension, VS Code will ask that you restart the applicati
 to load the new extension. Once the extension is installed, you can open the
 debugger tab (see figure).
 
-![VS Code Debugger](/docs/images/vscodedebugger.png)
+![VS Code Debugger](./media/using-on-macos/vscodedebugger.png)
 
 
 When you start the debugger, VS Code will instruct you to configure

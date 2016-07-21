@@ -113,7 +113,7 @@ Deploying a portable app with one or more third-party dependencies involves thre
         "type": "platform",
         "version": "1.0.0"
       },
-      "Newtonsoft.Json": "8.0.3"
+      "Newtonsoft.Json": "9.0.1"
     },
     ```
 

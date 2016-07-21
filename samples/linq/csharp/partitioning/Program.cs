@@ -5,7 +5,7 @@ namespace Partitioning
     public class Program
     {
         //Entry point of application
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
             //Invoke the linq partitioning examples within the project
             TakeSample1.Example();

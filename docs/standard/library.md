@@ -79,7 +79,7 @@ Derivative artifacts are provided to enable more convenient reading and to enabl
 
 The primary distribution vehicle for the .NET Standard Library reference assemblies is [NuGet packages](../core/packages.md). Implementations will be delivered in a variety of ways, appropriate for each .NET runtime.
 
-NuGet packages target one of more [frameworks](frameworks.md). The .NET Standard Library packages target the ".NET Standard" framework. You can target the .NET Standard Framework using the `netstandard` [compact TFM](frameworks.md) (for example, `netstandard1.4`). Libraries that are intended to run on multiple runtimes should target this framework. 
+NuGet packages target one or more [frameworks](frameworks.md). The .NET Standard Library packages target the ".NET Standard" framework. You can target the .NET Standard Framework using the `netstandard` [compact TFM](frameworks.md) (for example, `netstandard1.4`). Libraries that are intended to run on multiple runtimes should target this framework. 
 
 The `NETStandard.Library` metapackage references the complete set of NuGet packages that define the .NET Standard Library.  The most common way to target `netstandard` is by referencing this metapackage. It describes and provides access to the ~40 .NET  libraries and associated APIs that define the .NET Standard Library. You can reference additional packages that target `netstandard` to get access to additional APIs. 
 

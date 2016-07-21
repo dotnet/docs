@@ -1,8 +1,7 @@
 ---
-asset_id: 
 layout: HubPage
 
-title: .NET Documentation 
+title: .NET Core Documentation 
 description:   
 keywords:  
 author:   
@@ -18,8 +17,8 @@ ms.assetid:
 
 <article id="main">
     <section id="hero-content" class="graph">
-        <h1>.NET Documentation</h1>
-        <h2>Welcome to .NET! This is the home of the technical documentation for .NET, C#, F# and Visual Basic, including basic concepts, getting started instructions, tutorials and samples. You can look for an answer to a challenging problem or learn .NET for the first time.</h2>
+        <h1>.NET Core Documentation</h1>
+        <h2>Welcome to .NET! This is the home of the technical documentation for .NET Core, C#, F# and Visual Basic, including basic concepts, getting started instructions, tutorials and samples. You can look for an answer to a challenging problem or learn .NET for the first time.</h2>
     </section>
     <aside class="alert section-border">
         <p>Download .NET Core today</p>
@@ -55,8 +54,8 @@ ms.assetid:
                         <ul class="row">
                             <li class="column column-third">
                                 <a href="docs/welcome.md">
-                                    <h3>.NET Documentation</h3>
-                                    <p>Learn .NET concepts and language syntax.</p>
+                                    <h3>.NET Core Documentation</h3>
+                                    <p>Learn .NET Core concepts and language syntax.</p>
                                 </a>
                             </li>
                             <li class="column column-third">

@@ -1,7 +1,7 @@
 C# Console Application Sample
 ================
 
-This sample is created during the [Console Application Tutorial](https://docs.microsoft.com/dotnet/tutorials/getting-started-with-csharp/console-teleprompter.html)
+This sample is created during the [Console Application Tutorial](https://docs.microsoft.com/dotnet/articles/csharp/tutorials/console-teleprompter)
 for learning C# features. Please see that topic for detailed steps on the code
 for this sample.
 

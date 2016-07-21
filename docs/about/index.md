@@ -15,7 +15,7 @@ ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
 About .NET
 ==========
 
-> Check out the ["Getting Started with .NET Core" tutorials](../core/tutorials/index.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
+> Check out the ["Getting Started with .NET Core" tutorials](../core/getting-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
 
 .NET is a general purpose development platform. It can be used for any kind of app type or workload where general purpose solutions are used. It has several key features that are attractive to many developers, including automatic memory management and modern programming languages, that make it easier to efficiently build high-quality applications. .NET enables a high-level programming environment with many convenience features, while providing low-level access to native memory and APIs.
 
@@ -68,7 +68,7 @@ Projects
 - [CoreFX](https://github.com/dotnet/coreclr) - .NET class libraries, used by .NET Core and to a degree by Mono via source sharing.
 - [Roslyn](https://github.com/dotnet/roslyn) - C# and Visual Basic compilers, used by most .NET platforms and tools. Exposes APIs for reading, writing and analyzing source code.
 - [F#](https://github.com/microsoft/visualfsharp) - F# compiler.
-- [Xamarin SDK](https://open.xamarin.com) -- Tools and libraries needed to write Android, iOS and macOS in C# and F#.
+- [Xamarin SDK](http://open.xamarin.com) - Tools and libraries needed to write Android, iOS and macOS in C# and F#.
 
 Standardized
 ------------

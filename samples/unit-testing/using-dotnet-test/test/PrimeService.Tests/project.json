@@ -5,17 +5,25 @@
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type":"platform",
-      "version": "1.0.0-rc2-3002702"
+      "version": "1.0.0"
     },
     "xunit":"2.1.0",
-    "dotnet-test-xunit": "1.0.0-rc2-build10015",
-    "PrimeService": "1.0.0"
+    "dotnet-test-xunit": "1.0.0-rc2-192208-24",
+    "PrimeService": {
+      "target": "project"
+    }
   },
   "frameworks": {
     "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        }
+      },
       "imports": [
-        "dnxcore50",
-        "portable-net45+win8" 
+        "dotnet5.4",
+        "portable-net451+win8"
       ]
     }
   }

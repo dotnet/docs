@@ -103,7 +103,7 @@ This starts the local preview on [localhost:8080](http://localhost:8080). You ca
 
 # Contributing to samples
 
-We encourage samples for any of our topics. Readers can download and run the samples. They
+We encourage samples for all the topics in .NET documentation. Readers can download and run the samples. They
 can explore the code and experiment with their own changes.
 
 All samples should be complete applications or libraries. Where the sample creates a library,
@@ -112,13 +112,31 @@ it should include unit tests or an application that lets readers run the code.
 The samples are organized in directories that match the directories under
 docs in this repo:
 
-- `getting-started` contains getting started samples. These are referenced by topics under `docs/*/tutorials`
+- `getting-started` contains getting started samples. 
 
 - `core-projects` contains .NET Core samples. These are referenced by topics under `/docs/core`.
 
-- `charp-language` contains C# language samples. These are referenced by topics under `docs/csharp`.
+- `csharp-language` contains C# language samples. These are referenced by topics under `docs/csharp`.
 
 - `linq` contains all the 101 LINQ samples that were originally created when LINQ was developed. These don't have topics associated with them yet.
+
+These areas can overlap. The guidance below should halp you determine the proper location of a sample.
+
+## Getting Started 
+
+Each top-level section of our documentation contains a "getting-started" or "tutorials" section.  These topics
+and their associated samples represent the first look(s) at a topic area. Each of the folders directly
+kunder '/docs' 
+
+## Core Projects
+
+
+
+## CSharp Language
+
+## LINQ
+
+
 
 We will expand these directories as the core-docs repository adds new content.
 

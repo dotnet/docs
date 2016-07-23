@@ -72,7 +72,7 @@ Configuration to use when building the project. If not specified, will default t
 
 `--version-suffix`
 
-Updates the star in `-*` package version suffix with a specified one.
+Updates the star in `-*` package version suffix with a specified string.
 
 ## EXAMPLES
 

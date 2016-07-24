@@ -4,7 +4,7 @@ description: Documenting your code
 keywords: .NET, .NET Core
 author: tsolarin
 manager: wpickett
-ms.date: 07/19/2016
+ms.date: 07/24/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -85,7 +85,7 @@ public class SomeClass
     /// <summary>
     /// This method does stuff.
     /// </summary>
-    /// <returns>Stuff it has done</returns>
+    /// <returns>Stuff it has done.</returns>
     public int DoStuff(int a)
     {
         return a;
@@ -97,7 +97,7 @@ public class SomeClass
 ## &lt;example&gt;
 
 The &lt;example&gt; tag lets you specify an example of how to use a method or other library member. 
-This commonly involves using the [&lt;code&gt;](#code) tag.
+This commonly involves using the [&lt;code&gt;](#code) and sometimes the [&lt;c&gt;](#c) tag.
 
 ```csharp
 /// <summary>
@@ -105,6 +105,9 @@ This commonly involves using the [&lt;code&gt;](#code) tag.
 /// </summary>
 public class SomeClass
 {
+    /// <summary>
+    /// This method does stuff.
+    /// </summary>
     /// <example>
     /// <code>
     /// SomeClass someClass = new SomeClass();
@@ -129,7 +132,10 @@ The &lt;value&gt; lets you describe the value that a property represents.
 /// </summary>
 public class SomeClass
 {
-    /// <value>The Name property gets/sets the name value of something.</value>
+    /// <summary>
+    /// This is the Name property.
+    /// </summary>
+    /// <value>Gets or sets the name value of something.</value>
     public string Name { get; set; }
 }
 ```
@@ -146,11 +152,18 @@ It's applicable to methods, properties, events, and indexers.
 /// </summary>
 public class SomeClass
 {
-    /// <exception cref="System.ArgumentNullException">Thrown when there's no stuff to do</exception>
-    /// <exception cref="System.InvalidOperationException">Thrown when it tries to do the wrong stuff</exception>
-    public void DoStuff()
+    /// <summary>
+    /// This method does stuff.
+    /// </summary>
+    /// <exception cref="System.ArgumentNullException">Thrown when there's no stuff to do.</exception>
+    /// <exception cref="System.InvalidOperationException">Thrown when it tries to do the wrong stuff.</exception>
+    public void DoStuff(string a)
     {
+        if (a == null)
+            throw new System.ArgumentNullException();
 
+        if (a == "wrong stuff")
+            throw new System.InvalidOperationException();
     }
 }
 ```
@@ -160,7 +173,7 @@ The `cref` attribute represents a reference to an exception that is available fr
 <a name="c"></a>
 ## &lt;c&gt;
 
-The &lt;c&gt; tag is used to indicate inline code
+The &lt;c&gt; tag is used to indicate inline code.
 
 ```csharp
 /// <summary>
@@ -169,7 +182,7 @@ The &lt;c&gt; tag is used to indicate inline code
 public class SomeClass
 {
     /// <summary>
-    /// <c>DoStuff</c> does stuff on an instance of <c>SomeClass</c>
+    /// <c>DoStuff</c> does stuff on an instance of <c>SomeClass</c>.
     /// </summary>
     public void DoStuff()
     {
@@ -193,11 +206,15 @@ or &lt;returns&gt;, and lets you add paragraphs to text.
 
 ```csharp
 /// <summary>
-/// <para>This class does something</para>
-/// <para>This is a new paragraph</para>
+/// <para>This class does something.</para>
+/// <para>This is a new paragraph.</para>
 /// </summary>
 public class SomeClass
 {
+    /// <summary>
+    /// This method does stuff.
+    /// <para>This is a paragraph</para>
+    /// </summary>
     public void DoStuff()
     {
 
@@ -282,7 +299,10 @@ public class SomeClass
 <a name="see"></a>
 ## &lt;see&gt;
 
-The &lt;see&gt; tag lets you specify a link from within text. Use the `cref` attribute to create internal hyperlinks to documentation pages for code elements.
+The &lt;see&gt; tag lets you specify a link from within text. 
+Use the `cref` attribute to create internal hyperlinks to documentation pages for code elements.
+
+The `cref` attribute represents a reference to a type or its member that is available from the current compilation environment.
 
 ```csharp
 /// <summary>
@@ -292,7 +312,7 @@ public class SomeClass
 {
     /// <summary>
     /// This method does stuff.
-    /// See <see cref="SomeClass.DoMoreStuff"/> to do more stuff
+    /// See <see cref="SomeClass.DoMoreStuff"/> to do more stuff.
     /// </summary>
     public void DoStuff(int a)
     {
@@ -312,7 +332,9 @@ public class SomeClass
 <a name="seealso"></a>
 ## &lt;seealso&gt;
 
-The &lt;seealso&gt; tag lets you specify the text that you might want to appear in a See Also section.
+This tag identifies cross-references in the documentation to other types or members.
+The tags are typically broken out into a separate "See Also" section.
+This tag is useful because it allows tools to generate cross-references, indexes, and hyperlinked views of the documentation.
 
 ```csharp
 /// <summary>
@@ -339,6 +361,8 @@ public class SomeClass
 }
 ```
 
+The `cref` attribute represents a reference to a type or its member that is available from the current compilation environment.
+
 <a name="param"></a>
 ## &lt;param&gt;
 
@@ -351,14 +375,20 @@ To document multiple parameters, use multiple &lt;param&gt; tags.
 /// </summary>
 public class SomeClass
 {
-    /// <param name="a">The stuff to do</param>
+    /// <summary>
+    /// This method does stuff.
+    /// </summary>
+    /// <param name="a">The stuff to do.</param>
     public void DoStuff(int a)
     {
 
     }
 
-    /// <param name="a">A stuff to do</param>
-    /// <param name="b">Another stuff to do</param>
+    /// <summary>
+    /// This method does more stuff.
+    /// </summary>
+    /// <param name="a">A stuff to do.</param>
+    /// <param name="b">Another stuff to do.</param>
     public void DoMoreStuff(int a, string b)
     {
 
@@ -382,9 +412,9 @@ public class SomeClass
 {
     /// <summary>
     /// This method does stuff.
-    /// The parameter <paramref name="a"/> takes a number
+    /// The parameter <paramref name="a"/> takes a number.
     /// </summary>
-    /// <param name="a">The stuff to do</param>
+    /// <param name="a">The stuff to do.</param>
     public void DoStuff(int a)
     {
 
@@ -407,7 +437,7 @@ public class SomeClass
     /// <summary>
     /// Does generic stuff.
     /// </summary>
-    /// <typeparam name="T">The generic stuff to do</typeparam>
+    /// <typeparam name="T">The generic stuff to do.</typeparam>
     public void DoGenericStuff<T>()
     {
 
@@ -423,14 +453,14 @@ for example in a &lt;summary&gt; or &lt;remarks&gt; block refers to a type param
 
 ```csharp
 /// <summary>
-/// This class does something
+/// This class does something.
 /// </summary>
 public class SomeClass
 {
     /// <summary>
-    /// Does generic stuff <typeparamref name="T"/>
+    /// Does generic stuff <typeparamref name="T"/>.
     /// </summary>
-    /// <typeparam name="T">The generic stuff to do</typeparam>
+    /// <typeparam name="T">The generic stuff to do.</typeparam>
     public void DoGenericStuff<T>()
     {
 
@@ -469,19 +499,19 @@ public class SomeOtherClass
         <Members name="someclass">
             <SomeClass>
                 <summary>
-                This class does something
+                This class does something.
                 </summary>
             </SomeClass>
             <DoStuff>
                 <summary>
-                This method does stuff
+                This method does stuff.
                 </summary>
             </DoStuff>
         </Members>
         <Members name="someotherclass">
             <SomeOtherClass>
                 <summary>
-                This class does some other thing
+                This class does some other thing.
                 </summary>
             </SomeOtherClass>
         </Members>
@@ -496,3 +526,23 @@ The `path` attribute represents an [XPath](https://msdn.microsoft.com/en-us/libr
 The `name` attribute represents the name specifier in the tag that precedes the comments
 
 The `id` attribute represents the ID for the tag that precedes the comments
+
+<a name="user-defined"></a>
+## User Defined Tags
+
+All the tags outlined above represent those that are recognized by the C# compiler. However, a user is free to define their own tags.
+Tools like Sandcastle bring support for extra tags like &lt;event&gt;, &lt;note&gt; and even support documenting namespaces.
+Custom or in-house documentation generation tools can also be used with the standard tags and multiple output formats from HTML to PDF can be supported.
+
+<a name="recommendations"></a>
+## Recommendations
+
+Documenting code is definitely a recommended practice for lots of reasons. However, there are some best practices and general use case scenarios
+that need to be taken into consideration when using XML documentation tags in your C# code.
+
+* For the sake of consistency all publicly visible types and their members should be documented. If you must do it, do it all.
+* In addition to other tags, types and their members should have a &lt;summary&gt; tag.
+* Documentation text should be written using complete sentences ending with full stops.
+* Partial classes are fully supported and documentation information will be concatenated into one.
+* The compiler verifies the syntax of &lt;exception&gt;, &lt;include&gt;, &lt;param&gt;, &lt;see&gt;, &lt;seealso&gt; and &lt;typeparam&gt; tags.
+It validates the parameters that contain file paths and references to other parts of the code.

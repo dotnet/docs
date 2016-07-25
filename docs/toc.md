@@ -56,6 +56,7 @@
 ## [F# Learning Resources](http://fsharp.org/learn.html)
 ## [F# Language Reference](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/fsharp-language-reference)
 
+##[Visual F# Documentation](fsharp/index.md)
 ###[Visual F#](fsharp/conceptual/visual-fsharp.md)
 ####[Visual F# Development Portal](fsharp/conceptual/visual-fsharp-development-portal.md)
 

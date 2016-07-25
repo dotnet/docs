@@ -238,7 +238,29 @@ Close the previous solution if it was open: you will be starting a new script fr
 
 Moving a PCL to a NetStandard library
 -------------------------------------
+The Portable Class Library tooling can automatically modify your PCL to target .NET Standard. 
 
-The PCL library that we built in the previous procedure is based on a `csproj` project file. In order to move it to NetStandard, the simplest solution is to manually move its code into a new empty **.NET Core Class Library** project.
+1.	Double click on the “Properties” node to open the Project Property page*
 
-If you have older PCL libraries with a `xproj` file and a `project.json` file, you should be able to edit the `project.json` file instead, to reference `"NETStandard.Library": "1.6.0"`, and target "netstandard1.3".
+2.	Under the “Targeting header” click the hyperlink “Target .NET Platform Standard”
+
+3.	Click “Yes” when asked for confirmation
+
+The tooling will automatically select the version of .NET Standard that includes all of the targets originally targeted by your PCL. You can target a different version of .NET Standard using the .NET Standard dropdown in the project property page.
+ 
+* If you previously had a packages.config, you may be prompted to uninstall any installed packages before the conversion.
+
+### Manually edit project.json to target .NET Standard from an existing Portable Class Library
+
+1.	If your project.json contains “dnxcore50” in the “supports” element, remove it.
+
+2.	Remove the dependency on “Microsoft.NETCore”
+
+3.	Modify the dependency on “Microsoft.NETCore.Portable.Compatibility” version “1.0.0” to version “1.0.1”
+
+4.	Add a dependency on “NETStandard.Library” version “1.6.0”
+
+5.	From the “frameworks” element, remove the “dotnet” framework (and the “imports” element within it)
+
+6.	Add ` "netstandard1.x” : { } ` to the frameworks element, where x is replaced with the version of .NET Standard you want to target
+

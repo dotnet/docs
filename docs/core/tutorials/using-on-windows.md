@@ -272,3 +272,23 @@ The tooling will automatically select the version of .NET Standard that includes
 
 6.	Add ` "netstandard1.x” : { } ` to the frameworks element, where x is replaced with the version of .NET Standard you want to target
 
+### Example project.json
+
+This project.json includes supports clauses for UWP and .NET 4.6 and targets netstandard1.3:
+```
+{
+  "supports": {
+    "net46.app": {},
+    "uwp.10.0.app": {},
+  },
+  "dependencies": {
+    "NETStandard.Library": "1.6.0",
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.1"
+  },
+  "frameworks": {
+    "netstandard1.3" : {}
+  }
+}
+```
+
+

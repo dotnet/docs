@@ -56,6 +56,7 @@
 ## [F# Learning Resources](http://fsharp.org/learn.html)
 ## [F# Language Reference](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/fsharp-language-reference)
 ## [Visual F# Development Portal](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/visual-fsharp-development-portal)
+[!include[FS-exp](fsharp/conceptual/TOC.md)]
 ## [Getting started with .NET Core](fsharp/getting-started-netcore.md)
 ## [Asynchronous programming](fsharp/async.md)
 

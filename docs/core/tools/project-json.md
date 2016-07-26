@@ -374,7 +374,7 @@ For example:
 ### debugType
 Type: String
 
-Indicates the type of symbol file (PDF file) to generate. The options are "portable" (for .NET Core projects), "full" (the traditional Windows-only PDB files) or "none".
+Indicates the type of symbol file (PDB file) to generate. The options are "portable" (for .NET Core projects), "full" (the traditional Windows-only PDB files) or "none".
 
 For example:
 

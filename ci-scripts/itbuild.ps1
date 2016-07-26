@@ -16,3 +16,5 @@ $Content = Get-Content "$HomePath\test.txt" | Foreach-Object {
         }
     }
 }
+
+exit 0

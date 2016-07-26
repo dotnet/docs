@@ -70,6 +70,10 @@ Places the temporary build artifacts in the specified directory. By default, the
 
 Configuration to use when building the project. If not specified, will default to "Debug".
 
+`--version-suffix`
+
+Updates the star in `-*` package version suffix with a specified string.
+
 ## EXAMPLES
 
 `dotnet pack`
@@ -82,8 +86,12 @@ Packs the app1 project.
 	
 `dotnet pack --output nupkgs`
     
-Packs the current application and place the resulting packages into the specified folder.
+Packs the current project and place the resulting packages into the specified folder.
 
 `dotnet pack --no-build --output nupkgs`
 
 Packs the current project into the specified folder and skips the build step.
+
+`dotnet pack --version-suffix "ci-1234"`
+
+Packs the current project and updates the resulting packages version with the given suffix. E.g. version `1.0.0-*` will be updated to `1.0.0-ci-1234`.

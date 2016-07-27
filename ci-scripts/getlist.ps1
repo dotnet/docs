@@ -23,7 +23,7 @@ foreach($item in $FullOutput){
 
 foreach($target in $itemsToRemove)
 {
-    Write-Host $target
+    Write-Host $target.Directory.ToString()
 }
 
 $FullOutput | Format-Table FullName -HideTableHeaders | Out-File single.projects

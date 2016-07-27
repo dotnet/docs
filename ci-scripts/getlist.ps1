@@ -19,7 +19,7 @@ $itemsToRemove = New-Object "System.Collections.Generic.List[System.Object]"
 foreach($item in $FullOutput){
     foreach ($blockedItem in $globalProjects){
         Write-Host $item.Directory.ToString() " against " $blockedItem.Directory.ToString()
-        if ($item.FullName -contains $blockedItem.Directory){
+        if ($item.Directory.ToString() -contains $blockedItem.Directory.ToString()){
             $itemsToRemove.Add($item)
             break      
         }

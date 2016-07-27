@@ -1,6 +1,6 @@
 $HomePath = (Get-Item -Path ".\" -Verbose).FullName
 
-$buildResults = New-Object 'System.Collections.Generic.Dictionary[String,String]'
+$buildResults = New-Object 'System.Collections.Generic.Dictionary[String,Int32]'
 
 $Content = Get-Content "$HomePath\test.txt" | Foreach-Object {
     if ($_) {
@@ -27,7 +27,7 @@ $Content = Get-Content "$HomePath\test.txt" | Foreach-Object {
     }
 }
 
-$brutalFailures = $buildResults | where {$_.Value -eq "1"}
+$brutalFailures = $buildResults | where {$_.Value -eq 1}
 $numberOfBrutalFailures = $brutalFailures.Count
 
 Write-Host "Number of brutal failures in this build: " $numberOfBrutalFailures

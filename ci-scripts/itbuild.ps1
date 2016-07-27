@@ -35,6 +35,7 @@ $Content = Get-Content "$HomePath\test.txt" | Foreach-Object {
 
 Write-Host "Total samples built: " $buildResults.Count
 
+## Obviously the color does nothing when this shows up in the VSTS console.
 Write-Host ($buildResults | Out-String) -ForegroundColor Yellow
 
 $brutalFailures = @($buildResults.GetEnumerator())| where {$_.Value -eq 1}
@@ -44,8 +45,7 @@ Write-Host "Number of brutal failures in this build: " $numberOfBrutalFailures
 
 ## Check if we have any breaking errors - currently warnings are ignored as those do
 ## not impede the overall sample performance. Those are still logged.
-
-if ($numberOfBrutalFailures > 0){
+if ($numberOfBrutalFailures -gt 0){
     Write-Error "Build failed. See log for details."
     exit 1
 }

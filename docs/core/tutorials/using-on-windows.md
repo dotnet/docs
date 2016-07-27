@@ -20,7 +20,7 @@ Visual Studio 2015 provides a full-featured development environment for developi
 
 ## Prerequisites
 
-Follow the instructions on [our prerequisites page](../prerequisites.md) to update your environment.
+Follow the instructions on [our prerequisites page](../windows-prerequisites.md) to update your environment.
 
 ## Getting Started
 

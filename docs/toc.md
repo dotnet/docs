@@ -97,7 +97,7 @@
 
 # [.NET Core Guide](core/index.md)
 ## [Getting started](core/getting-started.md)
-## [PreRequisites](core/prerequisites.md)
+## [Pre-Requisites](core/prerequisites.md)
 ## [Tutorials](core/tutorials/index.md)
 ### [Getting started with .NET Core on Windows](core/tutorials/using-on-windows.md)
 ### [Getting started with .NET Core on macOS](core/tutorials/using-on-macos.md)

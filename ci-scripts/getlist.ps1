@@ -4,14 +4,14 @@
 ## Author: Den Delimarsky (dendeli)
 ## Last Modified: 7/27/2016
 
-$HomePath = (Get-Item -Path ".\" -Verbose).FullName
+$homePath = (Get-Item -Path ".\" -Verbose).FullName
 
-[System.Collections.ArrayList]$globalProjects = Get-ChildItem $HomePath -Recurse | where {$_.Name -eq "global.json"}
-[System.Collections.ArrayList]$FullOutput = Get-ChildItem $HomePath -Recurse | where {$_.Name -eq "project.json" }
+[System.Collections.ArrayList]$globalProjects = Get-ChildItem $homePath -Recurse | where {$_.Name -eq "global.json"}
+[System.Collections.ArrayList]$singleProjects = Get-ChildItem $homePath -Recurse | where {$_.Name -eq "project.json" }
 
 $itemsToRemove = New-Object "System.Collections.Generic.List[System.Object]"
 
-foreach($item in $FullOutput){
+foreach($item in $singleProjects){
     foreach ($blockedItem in $globalProjects){
         if ($item.Directory.ToString().StartsWith($blockedItem.Directory.ToString() + "\")){
             Write-Host "Found match in " $item.Directory.ToString()
@@ -21,14 +21,15 @@ foreach($item in $FullOutput){
     }
 }
 
-Write-Host "Single projects before cleanup: " $FullOutput.Count
+Write-Host "Single projects before cleanup: " $singleProjects.Count
 
 foreach($target in $itemsToRemove)
 {
     Write-Host "Removing " $target.Directory " from the list of single projects."
-    $FullOutput.Remove($target)
+    $singleProjects.Remove($target)
 }
 
-Write-Host "Single projects after cleanup: " $FullOutput.Count
+Write-Host "Single projects after cleanup: " $singleProjects.Count
 
-$FullOutput | Format-Table FullName -HideTableHeaders | Out-File single.projects
+$singleProjects | Format-Table FullName -HideTableHeaders | Out-File single.projects
+$globalProjects | Format-Table FullName -HideTableHeaders | Out-File global.projects

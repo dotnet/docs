@@ -16,6 +16,7 @@ $itemsToRemove = New-Object "System.Collections.Generic.List[System.Object]"
 
 foreach($item in $FullOutput){
     foreach ($blockedItem in $globalProjects){
+        Write-Host "$item.FullName against $blockedItem.Directory"
         if ($item.FullName -contains $blockedItem.Directory){
             $itemsToRemove.Add($item)
             break      
@@ -25,6 +26,7 @@ foreach($item in $FullOutput){
 
 foreach($target in $itemsToRemove)
 {
+    Write-Host $target
 }
 
 $FullOutput | Format-Table FullName -HideTableHeaders | Out-File single.projects

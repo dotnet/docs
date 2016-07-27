@@ -1,4 +1,4 @@
-## Script that iteratively builds the samples in the repository.
+## Script that iteratively builds the samples in the repository that are single projects (aka one project.json file)
 ## Spec reference:https://microsoft.sharepoint.com/teams/CE_CSI/_layouts/OneNote.aspx?id=%2Fteams%2FCE_CSI%2FSiteAssets%2FCE_CSI%20Notebook&wd=target%28Samples%20CI%2FGeneral%20Architecture.one%7CAF430CFB-930B-4949-BD23-198A8485E1C9%2FSpec%7CB6587481-E481-450D-BDF2-2C2E2C2E70B3%2F%29
 ## This script it used by the VSTS build agents.
 ## Author: Den Delimarsky (dendeli)
@@ -8,7 +8,7 @@ $HomePath = (Get-Item -Path ".\" -Verbose).FullName
 
 $buildResults = @{}
 
-$Content = Get-Content "$HomePath\test.txt" | Foreach-Object {
+$Content = Get-Content "$HomePath\single.projects" | Foreach-Object {
     if ($_) {
 
         $Folder = (Get-Item $_.ToString().Trim()).Directory.ToString()
@@ -20,7 +20,7 @@ $Content = Get-Content "$HomePath\test.txt" | Foreach-Object {
 
         Write-Host "Exited with EXCODE: " $LastExitCode
 
-        # Add the current build result to the dictionary that tracks the overall success.
+        ## Add the current build result to the dictionary that tracks the overall success.
         $buildResults.Add($Folder, $LastExitCode)
 
         if ($LastExitCode) {

@@ -21,10 +21,14 @@ foreach($item in $FullOutput){
     }
 }
 
+Write-Host "Single projects before cleanup: " $FullOutput.Count
+
 foreach($target in $itemsToRemove)
 {
     Write-Host "Removing " $target.Directory " from the list of single projects."
     $FullOutput.Remove($target)
 }
+
+Write-Host "Single projects after cleanup: " $FullOutput.Count
 
 $FullOutput | Format-Table FullName -HideTableHeaders | Out-File single.projects

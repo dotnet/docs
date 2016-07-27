@@ -4,6 +4,9 @@
 ## Author: Den Delimarsky (dendeli)
 ## Last Modified: 7/27/2016
 
+## This is needed for JSON parsing
+[System.Reflection.Assembly]::LoadWithPartialName("System.Web.Extensions")
+
 $HomePath = (Get-Item -Path ".\" -Verbose).FullName
 
 $buildResults = @{}
@@ -17,7 +20,8 @@ $Content = Get-Content "$HomePath\single.projects" | Foreach-Object {
 
         $Folder = (Get-Item $_.ToString().Trim()).Directory.ToString()
         Write-Host "Working on $Folder..."
-
+        Write-Host $_
+        
         $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore 2>&1 `| Write-Host `| dotnet build 2>&1 `| Write-Host "
         
         powershell.exe -Command $CustomCommand

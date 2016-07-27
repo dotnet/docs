@@ -37,7 +37,7 @@ Write-Host "Total samples built: " $buildResults.Count
 
 Write-Host ($buildResults | Out-String) -ForegroundColor Yellow
 
-$brutalFailures = $buildResults | where {$_.Value -eq 1}
+$brutalFailures = @($buildResults.GetEnumerator())| where {$_.Value -eq 1}
 $numberOfBrutalFailures = $brutalFailures.Count
 
 Write-Host "Number of brutal failures in this build: " $numberOfBrutalFailures

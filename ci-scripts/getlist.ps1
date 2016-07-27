@@ -13,8 +13,8 @@ $itemsToRemove = New-Object "System.Collections.Generic.List[System.Object]"
 
 foreach($item in $FullOutput){
     foreach ($blockedItem in $globalProjects){
-        Write-Host $item.Directory.ToString() " against " $blockedItem.Directory.ToString()
-        if ($item.Directory.ToString() -contains $blockedItem.Directory.ToString()){
+        if ($item.Directory.ToString().StartsWith($blockedItem.Directory.ToString() + "\")){
+            Write-Host "Found match in " $item.Directory.ToString()
             $itemsToRemove.Add($item)
             break      
         }

@@ -42,8 +42,11 @@ $numberOfBrutalFailures = $brutalFailures.Count
 
 Write-Host "Number of brutal failures in this build: " $numberOfBrutalFailures
 
-if ($numberOfBrutalFailures > 0)
-{
+## Check if we have any breaking errors - currently warnings are ignored as those do
+## not impede the overall sample performance. Those are still logged.
+
+if ($numberOfBrutalFailures > 0){
+    Write-Error "Build failed. See log for details."
     exit 1
 }
 else {

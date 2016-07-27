@@ -53,7 +53,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
         $Folder = (Get-Item $_.ToString().Trim()).Directory.ToString()
         Write-Host "Working on $Folder..."
 
-        $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore 2>&1 `| Write-Host `| dotnet build 2>&1 `| Write-Host "
+        $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore `| dotnet build "
         
         powershell.exe -Command $CustomCommand
 

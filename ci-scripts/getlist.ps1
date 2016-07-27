@@ -23,7 +23,8 @@ foreach($item in $FullOutput){
 
 foreach($target in $itemsToRemove)
 {
-    Write-Host $target.Directory.ToString()
+    Write-Host "Removing " $target.Directory " from the list of single projects."
+    $FullOutput.Remove($target)
 }
 
 $FullOutput | Format-Table FullName -HideTableHeaders | Out-File single.projects

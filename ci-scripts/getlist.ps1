@@ -11,4 +11,20 @@ $globalProjects = Get-ChildItem $HomePath -Recurse | where {$_.Name -eq "global.
 $globalProjects | Format-Table Directory
 
 $FullOutput = Get-ChildItem $HomePath -Recurse | where {$_.Name -eq "project.json" }
+
+$itemsToRemove = New-Object "System.Collections.Generic.List[System.Object]"
+
+foreach($item in $FullOutput){
+    foreach ($blockedItem in $globalProjects){
+        if ($item.FullName -contains $blockedItem.Directory){
+            $itemsToRemove.Add($item)
+            break      
+        }
+    }
+}
+
+foreach($target in $itemsToRemove)
+{
+}
+
 $FullOutput | Format-Table FullName -HideTableHeaders | Out-File single.projects

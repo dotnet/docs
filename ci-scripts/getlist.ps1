@@ -6,8 +6,8 @@
 
 $HomePath = (Get-Item -Path ".\" -Verbose).FullName
 
-$globalProjects = Get-ChildItem $HomePath -Recurse | where {$_.Name -eq "global.json"}
-$FullOutput = Get-ChildItem $HomePath -Recurse | where {$_.Name -eq "project.json" }
+[System.Collections.ArrayList]$globalProjects = Get-ChildItem $HomePath -Recurse | where {$_.Name -eq "global.json"}
+[System.Collections.ArrayList]$FullOutput = Get-ChildItem $HomePath -Recurse | where {$_.Name -eq "project.json" }
 
 $itemsToRemove = New-Object "System.Collections.Generic.List[System.Object]"
 

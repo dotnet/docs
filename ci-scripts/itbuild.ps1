@@ -8,7 +8,7 @@ $Content = Get-Content "$HomePath\test.txt" | Foreach-Object {
         $Folder = (Get-Item $_.ToString().Trim()).Directory.ToString()
         Write-Host "Working on $Folder..."
 
-        $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore `| dotnet build"
+        $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore 2>&1 `| Write-Host `| dotnet build 2>&1 `| Write-Host "
         
         powershell.exe -Command $CustomCommand
 
@@ -26,6 +26,8 @@ $Content = Get-Content "$HomePath\test.txt" | Foreach-Object {
         }
     }
 }
+
+Write-Host "Total samples built: " $buildResults.Count
 
 $brutalFailures = $buildResults | where {$_.Value -eq 1}
 $numberOfBrutalFailures = $brutalFailures.Count

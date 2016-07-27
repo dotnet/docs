@@ -36,7 +36,7 @@ The following steps will set up Visual Studio 2015 for .NET Core development:
 
    * If you don't have Update 3, it's available from [the Visual Studio website](https://www.visualstudio.com/en-us/news/releasenotes/vs2015-update3-vs). Installing Update 3 will auto-update to 3.3 upon install.
 
-   * You can read more about the changes in Update 3.3 in the (release notes)[https://www.visualstudio.com/en-us/news/releasenotes/vs2015-update3-vs]
+   * You can read more about the changes in Update 3.3 in the [release notes](https://www.visualstudio.com/en-us/news/releasenotes/vs2015-update3-vs).
 
 2. Download and install the [.NET Core for Visual Studio official MSI Installer](https://go.microsoft.com/fwlink/?linkid=817245). This will install the .NET Core Tooling Preview 2 for Visual Studio 2015.
 

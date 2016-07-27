@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 ---
 
-# Pre-Requisites
-
-## Pre-Requisites for Windows Development
+# Pre-Requisites for Windows Development
 
 * [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs). If you don't have Visual Studio already, you can download [Visual Studio Community 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs) for free. 
 

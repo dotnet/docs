@@ -6,7 +6,7 @@
 
 $HomePath = (Get-Item -Path ".\" -Verbose).FullName
 
-$buildResults = New-Object 'System.Collections.Generic.Dictionary[String,Int32]'
+$buildResults = @{}
 
 $Content = Get-Content "$HomePath\test.txt" | Foreach-Object {
     if ($_) {
@@ -35,9 +35,7 @@ $Content = Get-Content "$HomePath\test.txt" | Foreach-Object {
 
 Write-Host "Total samples built: " $buildResults.Count
 
-$buildResults | Foreach-Object {
-    Write-Host "$_.Key exited with $_.Value"
-}
+Write-Host ($buildResults | Out-String) -ForegroundColor Yellow
 
 $brutalFailures = $buildResults | where {$_.Value -eq 1}
 $numberOfBrutalFailures = $brutalFailures.Count

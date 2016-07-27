@@ -7,12 +7,7 @@
 $HomePath = (Get-Item -Path ".\" -Verbose).FullName
 
 $globalProjects = Get-ChildItem $HomePath -Recurse | where {$_.Name -eq "global.json"}
-
-$globalProjects | Format-Table Directory
-
 $FullOutput = Get-ChildItem $HomePath -Recurse | where {$_.Name -eq "project.json" }
-
-$FullOutput | Format-Table -Auto
 
 $itemsToRemove = New-Object "System.Collections.Generic.List[System.Object]"
 

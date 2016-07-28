@@ -48,11 +48,27 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                 $errorStream = ""
                 $outputStream = ""
 
-                Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError $errorStream -RedirectStandardOutput $outputStream -Wait
+                $pinfo = New-Object System.Diagnostics.ProcessStartInfo
+                $pinfo.FileName = "powershell.exe"
+                $pinfo.RedirectStandardError = $true
+                $pinfo.RedirectStandardOutput = $true
+                $pinfo.UseShellExecute = $false
+                $pinfo.Arguments = "-Command $CustomCommand"
+                $p = New-Object System.Diagnostics.Process
+                $p.StartInfo = $pinfo
+                $p.Start() | Out-Null
+                $p.WaitForExit()
+                $stdout = $p.StandardOutput.ReadToEnd()
+                $stderr = $p.StandardError.ReadToEnd()
+                Write-Host "stdout: $stdout"
+                Write-Host "stderr: $stderr"
+                Write-Host "exit code: " + $p.ExitCode
 
-                Write-Host ">>> EXITED WITH $LastExitCode"
-                Write-Host $errorStream
-                Write-Host $outputStream
+                #Start-Process -FilePath powershell.exe -ArgumentList  -RedirectStandardError $errorStream -RedirectStandardOutput $outputStream -Wait
+
+                # Write-Host ">>> EXITED WITH $LastExitCode"
+                # Write-Host $errorStream
+                # Write-Host $outputStream
 
                 if ($LastExitCode) 
                 {
@@ -117,7 +133,7 @@ $Content = Get-Content "$HomePath\single.projects" | Foreach-Object {
         $errorStream = ""
         $outputStream = ""
 
-        Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError $errorStream -RedirectStandardOutput $outputStream -Wait
+        Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError $true -RedirectStandardOutput $true -Wait
 
         Write-Host ">>> EXITED WITH $LastExitCode"
         Write-Host $errorStream

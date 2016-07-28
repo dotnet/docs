@@ -48,7 +48,7 @@ If you wish to add a code sample:
     - `win8-x64`
     - `win81-x64`
 
-We will eventually have a CI system in place to build these projects shortly.
+We will have a CI system in place to build these projects shortly.
 
 To create a sample:
 

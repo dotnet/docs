@@ -126,7 +126,7 @@ docs in this repo:
 
  - `linq` contains all the 101 LINQ samples that were originally created when LINQ was developed. These don't have topics associated with them yet.
 
-   * The `linq` directory contains samples that are specific to understanding the concepts and implementation behind Language Integrated Query (LINQ). 
+   * The `linq` directory contains samples that are specific to understanding the concepts and implementation behind Language Integrated Query (LINQ). These samples should be focused on the language support and library methods that are specific to LINQ. Other samples my use the LINQ libraries, but unless they are focused on explaining LINQ concepts, they should be in one of the other directories.
 
 We will expand these directories as the core-docs repository adds new content. 
 
@@ -135,7 +135,7 @@ the topics you are covering in your documents. Ask yourself what readers will le
 your topic. What will they learn from building and running your sample? 
 
 Each sample that you create should contain a `readme.md` file. This file should
-contain a short description of the sample (one or two paragraphs.) Your readme.md
+contain a short description of the sample (one or two paragraphs). Your readme.md
 should tell readers what they will learn by exploring this sample. The readme.md file should also contain
 a link to the live document on the [.NET documentation site](http://docs.microsoft.com/dotnet/articles/welcome).
 To determine where a given file in the repository maps to that site, replace `/docs` in the repository path

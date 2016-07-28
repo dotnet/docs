@@ -9,6 +9,8 @@
 
 $HomePath = (Get-Item -Path ".\" -Verbose).FullName
 
+get-host
+
 $buildResults = @{}
 
 ## =============================================

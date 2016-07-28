@@ -49,11 +49,11 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
 
                 if ($LastExitCode) 
                 {
-                    Write-Error "[STATUS - BAD] Build for project failed."
+                    Write-Error "[$projectPath][STATUS - BAD] Build for project failed."
                 }
                 else
                 {
-                    Write-Host "[STATUS - OK] Build for project OK."
+                    Write-Host "[$projectPath][STATUS - OK] Build for project OK."
                 }
 
                 ## Add the current build result to the dictionary that tracks the overall success.
@@ -72,11 +72,11 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
 
                     if ($LastExitCode) 
                     {
-                        Write-Error "[STATUS - BAD] Build for project failed."
+                        Write-Error "[$projectPath][STATUS - BAD] Build for project failed."
                     }
                     else
                     {
-                        Write-Host "[STATUS - OK] Build for project OK."
+                        Write-Host "[$projectPath][STATUS - OK] Build for project OK."
                     }
 
                     ## Add the current build result to the dictionary that tracks the overall success.

@@ -41,21 +41,20 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
             {
                 Write-Host "FILEINFO"
                 $projectPath = Split-Path -parent $singleProjectContainer.FullName
-                Write-Host $projectPath
 
-                # $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
+                $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
-                # powershell.exe -Command $CustomCommand
+                powershell.exe -Command $CustomCommand
             }
             else 
             {
                 Write-Host "NOT-FILEINFO"
                 foreach($sProject in $singleProjects)
                 {
-                    Write-Host $sProject
-                    # $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd project `| dotnet build "
+                    $projectPath = Split-Path -parent $sProject.FullName
+                    $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
-                    # powershell.exe -Command $CustomCommand
+                    powershell.exe -Command $CustomCommand
                 }
             }
         }

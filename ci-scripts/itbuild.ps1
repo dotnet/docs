@@ -51,6 +51,8 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                 Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError errorStream -RedirectStandardOutput outputStream | Wait-Process
 
                 Write-Host ">>> EXITED WITH $LastExitCode"
+                Write-Host $errorStream
+                Write-Host $outputStream
 
                 if ($LastExitCode) 
                 {
@@ -77,6 +79,8 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                     Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError errorStream -RedirectStandardOutput outputStream | Wait-Process
 
                     Write-Host ">>> EXITED WITH $LastExitCode"
+                    Write-Host $errorStream
+                    Write-Host $outputStream
 
                     if ($LastExitCode) 
                     {
@@ -115,8 +119,9 @@ $Content = Get-Content "$HomePath\single.projects" | Foreach-Object {
 
         Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError errorStream -RedirectStandardOutput outputStream | Wait-Process
 
-
-        Write-Host "Exited with EXCODE: " $LastExitCode
+        Write-Host ">>> EXITED WITH $LastExitCode"
+        Write-Host $errorStream
+        Write-Host $outputStream
 
         ## Add the current build result to the dictionary that tracks the overall success.
         $buildResults.Add($Folder, $LastExitCode)

@@ -35,14 +35,27 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
         {
             $comboPath = Join-Path $Folder $project
             Write-Host $comboPath
-            [System.Collections.ArrayList]$singleProjects = Get-ChildItem $comboPath -Recurse | where {$_.Name -eq "project.json" }
+            
+            $singleProjectContainer = Get-ChildItem $comboPath -Recurse | where {$_.Name -eq "project.json" }
 
-            foreach($sProject in $singleProjects)
+            if ($singleProjectContainer -is [System.IO.FileInfo])
             {
-                Write-Host $sProject
-                # $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd project `| dotnet build "
+                $projectPath = Split-Path -parent $singleProjectContainer.Name
+                Write-Host $projectPath
 
-                # powershell.exe -Command $CustomCommand
+                $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
+
+                powershell.exe -Command $CustomCommand
+            }
+            else 
+            {
+                foreach($sProject in $singleProjects)
+                {
+                    Write-Host $sProject
+                    # $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd project `| dotnet build "
+
+                    # powershell.exe -Command $CustomCommand
+                }
             }
         }
 

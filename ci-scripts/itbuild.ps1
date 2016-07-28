@@ -14,7 +14,7 @@ $buildResults = @{}
 ## =============================================
 ## Global Projects
 ## =============================================
-Write-Host "Bootstraping build for global projects..."
+Write-Host "===== Bootstraping build for global projects... ====="
 $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
     if ($_) {
 
@@ -41,8 +41,9 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
             {
                 $projectPath = Split-Path -parent $singleProjectContainer.FullName
 
-                $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2>&1 `| Write-Host"
+                $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
+                #2>&1 `| Write-Host
                 powershell.exe -Command $CustomCommand
 
                 if ($LastExitCode) 
@@ -62,7 +63,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                 foreach($sProject in $singleProjects)
                 {
                     $projectPath = Split-Path -parent $sProject.FullName
-                    $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2>&1 `| Write-Host"
+                    $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
                     powershell.exe -Command $CustomCommand
 
@@ -84,12 +85,12 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
 }
 
 Write-Host "Total samples built by now: " $buildResults.Count
-Write-Host "Building of global projects is complete."
+Write-Host "===== Building of global projects is complete. ====="
 
 ## =============================================
 ## Single Projects
 ## =============================================
-Write-Host "Bootstraping build for single projects..."
+Write-Host "===== Bootstraping build for single projects... ====="
 $Content = Get-Content "$HomePath\single.projects" | Foreach-Object {
     if ($_) {
 
@@ -116,7 +117,7 @@ $Content = Get-Content "$HomePath\single.projects" | Foreach-Object {
 }
 
 Write-Host "Total samples built by now: " $buildResults.Count
-Write-Host "Building of single projects is complete."
+Write-Host "===== Building of single projects is complete. ====="
 
 ## Obviously the color does nothing when this shows up in the VSTS console.
 Write-Host ($buildResults | Out-String) -ForegroundColor Yellow
@@ -128,7 +129,8 @@ Write-Host "Number of brutal failures in this build: " $numberOfBrutalFailures
 
 ## Check if we have any breaking errors - currently warnings are ignored as those do
 ## not impede the overall sample performance. Those are still logged.
-if ($numberOfBrutalFailures -gt 0){
+if ($numberOfBrutalFailures -gt 0)
+{
     Write-Error "Build failed. See log for details."
     exit 1
 }

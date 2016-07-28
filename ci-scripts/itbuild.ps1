@@ -40,7 +40,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
 
             if ($singleProjectContainer -is [System.IO.FileInfo])
             {
-                Write-Host $singleProjectContainer
+                Write-Host $singleProjectContainer.Name
                 $projectPath = Split-Path -parent $singleProjectContainer.Name
                 Write-Host $projectPath
 

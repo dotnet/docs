@@ -67,7 +67,7 @@ The .NET Core Tooling package installs .NET Core, project templates and other to
 
 ## Issues
 
-You may be blocked from installing the Tooling installer due to temporary bug. To workaround it, run the installer from the commandline with the `SKIP_VSU_CHECK=1` argument, as you see in the example below.
+You may be blocked from installing the [.NET Core Tooling Preview 2 for Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkId=817245) installer due to a temporary bug. To workaround it, run the installer from the commandline with the `SKIP_VSU_CHECK=1` argument, as you see in the example below.
 
 ```
 DotNetCore.1.0.0-VS2015Tools.Preview2.exe SKIP_VSU_CHECK=1

@@ -20,8 +20,7 @@ $Content = Get-Content "$HomePath\single.projects" | Foreach-Object {
 
         $Folder = (Get-Item $_.ToString().Trim()).Directory.ToString()
         Write-Host "Working on $Folder..."
-        Write-Host $_
-        
+
         $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore 2>&1 `| Write-Host `| dotnet build 2>&1 `| Write-Host "
         
         powershell.exe -Command $CustomCommand
@@ -57,9 +56,23 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
         $Folder = (Get-Item $_.ToString().Trim()).Directory.ToString()
         Write-Host "Working on $Folder..."
 
-        $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore `| dotnet build "
-        
+        $rawJson = Get-Content $_
+
+        $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
+        $globalObject = $ser.DeserializeObject($rawJson)
+        $projects = $globalObject.projects
+
+        $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore "
+
         powershell.exe -Command $CustomCommand
+
+        foreach($project in $projects)
+        {
+            Write-Host "Combined path: " $Folder "\" $project
+            $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder\$project `| dotnet build "
+
+            powershell.exe -Command $CustomCommand
+        }
 
         Write-Host "Exited with EXCODE: " $LastExitCode
 

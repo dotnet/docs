@@ -6,6 +6,8 @@
 
 $homePath = (Get-Item -Path ".\" -Verbose).FullName
 
+Write-Host $homePath
+
 [System.Collections.ArrayList]$globalProjects = Get-ChildItem $homePath -Recurse | where {$_.Name -eq "global.json"}
 [System.Collections.ArrayList]$singleProjects = Get-ChildItem $homePath -Recurse | where {$_.Name -eq "project.json" }
 

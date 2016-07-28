@@ -32,7 +32,7 @@ You can see the full set of [suppported operating systems](https://github.com/do
 
 ## .NET Core dependencies
 
-.NET Core requires the VC++ Redistributable when running on Windows. It is installed for you by the .NET Core installer. The only time you need to install the Visual C++ redistributable manually is if you are installing .NET Core via the installer script (`dotnet-install.ps1`). 
+.NET Core requires the VC++ Redistributable when running on Windows. It is installed for you by the .NET Core installer. You need to install the Visual C++ redistributable manually is if you are installing .NET Core via the installer script (`dotnet-install.ps1`). 
 
 The Visual C++ Redistributable version differs by Windows version.
 
@@ -63,7 +63,7 @@ NuGet is the package manager for the Microsoft development platform including .N
 
 Download and install the [.NET Core Tooling Preview 2 for Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkId=817245). 
 
-This installs templates and other tools for Visual Studio 2015, as well as .NET Core 1.0.
+The .NET Core Tooling package installs .NET Core, project templates and other tools for Visual Studio 2015.
 
 ## Issues
 
@@ -72,4 +72,3 @@ You may be blocked from installing the Tooling installer due to temporary bug. T
 ```
 DotNetCore.1.0.0-VS2015Tools.Preview2.exe SKIP_VSU_CHECK=1
 ```
-

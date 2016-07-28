@@ -33,7 +33,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
 
         foreach($project in $projects)
         {
-            $comboPath = Join-Path $Folder $project
+            $comb;oPath = Join-Path $Folder $project
             
             $singleProjectContainer = Get-ChildItem $comboPath -Recurse | where {$_.Name -eq "project.json" }
 
@@ -44,7 +44,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                 $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
                 #2>&1 `| Write-Host
-                powershell.exe -Command $CustomCommand
+                powershell.exe -Command $CustomCommand | Out-Null
 
                 if ($LastExitCode) 
                 {
@@ -65,7 +65,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                     $projectPath = Split-Path -parent $sProject.FullName
                     $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
-                    powershell.exe -Command $CustomCommand
+                    powershell.exe -Command $CustomCommand | Out-Null
 
                     if ($LastExitCode) 
                     {
@@ -99,7 +99,7 @@ $Content = Get-Content "$HomePath\single.projects" | Foreach-Object {
 
         $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore 2>&1 `| Write-Host `| dotnet build 2>&1 `| Write-Host "
         
-        powershell.exe -Command $CustomCommand
+        powershell.exe -Command $CustomCommand | Out-Null
 
         Write-Host "Exited with EXCODE: " $LastExitCode
 

@@ -114,39 +114,25 @@ docs in this repo:
 
 - `getting-started` contains getting started samples. 
 
+   * Each top-level section of our documentation contains a "getting-started" or "tutorials" section.  These topics and their associated samples represent the first look(s) at a topic area. If your sample's goal is to help beginners get started with the platform or the technology, place your sample under `samples/getting-started`. There should be a directory that matches the section for your tutorial (such as `samples/getting-started/csharp`), but if not, simply create a new folder.
+
 - `core-projects` contains .NET Core samples. These are referenced by topics under `/docs/core`.
+
+   * The `core-projects` directory contains samples that highlight .NET Core. The purpose of your sample should be to teach developers something about .NET Core. This includes the framework packaging, the new tooling, or the cross-platform experience.
 
 - `csharp-language` contains C# language samples. These are referenced by topics under `docs/csharp`.
 
-- `linq` contains all the 101 LINQ samples that were originally created when LINQ was developed. These don't have topics associated with them yet.
+   * The `csharp-language` directory contains samples where the purpose is to explain the C# language. While these samples will use frameworks and libraries, their focus is on the C# language.
 
-These areas can overlap. The guidance below should halp you determine the proper location of a sample.
+ - `linq` contains all the 101 LINQ samples that were originally created when LINQ was developed. These don't have topics associated with them yet.
 
-## Getting Started 
+   * The `linq` directory contains samples that are specific to understanding the concepts and implementation behind Language Integrated Query (LINQ). 
 
-Each top-level section of our documentation contains a "getting-started" or "tutorials" section.  These topics
-and their associated samples represent the first look(s) at a topic area. Each of the folders directly
-kunder '/docs' 
-
-## Core Projects
-
-
-
-## CSharp Language
-
-## LINQ
-
-
-
-We will expand these directories as the core-docs repository adds new content.
+We will expand these directories as the core-docs repository adds new content. 
 
 Sample code may fit more than one of these areas. In those cases, place the sample so it matches
 the topics you are covering in your documents. Ask yourself what readers will learn from reading
 your topic. What will they learn from building and running your sample? 
-
-NOTE to Reviewers: The C# Tutorials (/docs/csharp/tutorials) have their sample code in /samples/csharp. I think that
-code should move to /samples/getting-started to match the new description in this file. I'll wait to do the move,
-and update all references in the topic until I get some feedback on the text here so far.
 
 Each sample that you create should contain a `readme.md` file. This file should
 contain a short description of the sample (one or two paragraphs.) Your readme.md

@@ -41,7 +41,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
             {
                 $projectPath = Split-Path -parent $singleProjectContainer.FullName
 
-                $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2>&1 `| Write-Host"
+                $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
                 $customCommandResult = powershell.exe -Command $CustomCommand
 
@@ -49,7 +49,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
 
                 if ($LastExitCode) 
                 {
-                    Write-Host "[$projectPath][STATUS - BAD] Build for project failed."
+                    Write-Host "[][$projectPath][STATUS - BAD] Build for project failed."
                 }
                 else
                 {
@@ -64,7 +64,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                 foreach($sProject in $singleProjects)
                 {
                     $projectPath = Split-Path -parent $sProject.FullName
-                    $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2>&1 `| Write-Host"
+                    $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
                     $customCommandResult = powershell.exe -Command $CustomCommand
 
@@ -72,7 +72,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
 
                     if ($LastExitCode) 
                     {
-                        Write-Host "[$projectPath][STATUS - BAD] Build for project failed."
+                        Write-Host "[][$projectPath][STATUS - BAD] Build for project failed."
                     }
                     else
                     {

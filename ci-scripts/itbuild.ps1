@@ -53,7 +53,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                 }
                 else
                 {
-                    Write-Host "[$projectPath][STATUS - OK] Build for project OK."
+                    Write-Host "[][$projectPath][STATUS - OK] Build for project OK."
                 }
 
                 ## Add the current build result to the dictionary that tracks the overall success.
@@ -76,7 +76,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                     }
                     else
                     {
-                        Write-Host "[$projectPath][STATUS - OK] Build for project OK."
+                        Write-Host "[][$projectPath][STATUS - OK] Build for project OK."
                     }
 
                     ## Add the current build result to the dictionary that tracks the overall success.

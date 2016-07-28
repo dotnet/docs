@@ -34,12 +34,12 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
         foreach($project in $projects)
         {
             $comboPath = Join-Path $Folder $project
-            Write-Host $comboPath
             
             $singleProjectContainer = Get-ChildItem $comboPath -Recurse | where {$_.Name -eq "project.json" }
 
             if ($singleProjectContainer -is [System.IO.FileInfo])
             {
+                Write-Host "FILEINFO"
                 $projectPath = $singleProjectContainer.Name
                 Write-Host $projectPath
                 Write-Host $singleProjectContainer | Format-Table -Auto
@@ -49,6 +49,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
             }
             else 
             {
+                Write-Host "NOT-FILEINFO"
                 foreach($sProject in $singleProjects)
                 {
                     Write-Host $sProject

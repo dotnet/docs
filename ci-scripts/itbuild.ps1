@@ -45,6 +45,8 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
 
                 powershell.exe -Command $CustomCommand | Out-Null
 
+                Write-Host ">>> EXITED WITH $LastExitCode"
+
                 if ($LastExitCode) 
                 {
                     Write-Error "[STATUS - BAD] Build for project failed."
@@ -65,6 +67,8 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                     $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2>&1 `| Write-Host"
 
                     powershell.exe -Command $CustomCommand | Out-Null
+
+                    Write-Host ">>> EXITED WITH $LastExitCode"
 
                     if ($LastExitCode) 
                     {

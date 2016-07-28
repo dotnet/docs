@@ -68,10 +68,17 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
 
         foreach($project in $projects)
         {
-            Write-Host "Combined path: " $Folder "\" $project
-            $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder\$project `| dotnet build "
+            $comboPath = Join-Path $Folder $project
 
-            powershell.exe -Command $CustomCommand
+            [System.Collections.ArrayList]$singleProjects = Get-ChildItem $comboPath -Recurse | where {$_.Name -eq "project.json" }
+
+            foreach($sProject in $singleProjects)
+            {
+                Write-Host $sProject
+                # $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd project `| dotnet build "
+
+                # powershell.exe -Command $CustomCommand
+            }
         }
 
         Write-Host "Exited with EXCODE: " $LastExitCode

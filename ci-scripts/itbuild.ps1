@@ -48,7 +48,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                 $errorStream = ""
                 $outputStream = ""
 
-                Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError errorStream -RedirectStandardOutput outputStream -Wait
+                Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError $errorStream -RedirectStandardOutput $outputStream -Wait
 
                 Write-Host ">>> EXITED WITH $LastExitCode"
                 Write-Host $errorStream
@@ -76,7 +76,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                     $errorStream = ""
                     $outputStream = ""
 
-                    Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError errorStream -RedirectStandardOutput outputStream -Wait
+                    Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError $errorStream -RedirectStandardOutput $outputStream -Wait
 
                     Write-Host ">>> EXITED WITH $LastExitCode"
                     Write-Host $errorStream
@@ -117,7 +117,7 @@ $Content = Get-Content "$HomePath\single.projects" | Foreach-Object {
         $errorStream = ""
         $outputStream = ""
 
-        Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError errorStream -RedirectStandardOutput outputStream -Wait
+        Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError $errorStream -RedirectStandardOutput $outputStream -Wait
 
         Write-Host ">>> EXITED WITH $LastExitCode"
         Write-Host $errorStream

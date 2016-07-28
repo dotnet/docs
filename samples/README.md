@@ -43,8 +43,12 @@ If you wish to add a code sample:
 	- We do not want Windows and Visual Studio to be a dependency for people building these on their own. The only exception is if your sample highlights particular tooling and is referenced by a topic that explains the prerequisites.
 3. Your sample should conform to the [corefx coding style](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md) to maintain consistency.
 	- Additionally, we prefer the use of `static` methods rather than instance methods when demonstrating something that doesn't require instantiating a new object.
+4. If your sample builds a standalone package, you must include the runtimes used by our CI build system, in addition to any runtimes used by your sample:
+    - `win7-x64`
+    - `win8-x64`
+    - `win81-x64`
 
-We will eventually have a CI system in place to build these projects.
+We will have a CI system in place to build these projects shortly.
 
 To create a sample:
 

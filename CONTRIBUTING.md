@@ -101,14 +101,46 @@ This starts the local preview on [localhost:8080](http://localhost:8080). You ca
 
 **Note:** the local preview currently doesn't contain any themes at the moment so the look and feel won't be the same as in the documentation site. We're working towards fixing that experience.
 
-## Contributing to samples
+# Contributing to samples
 
-See the [Samples Readme](https://github.com/dotnet/core-docs/blob/master/samples/README.md).
+We encourage samples for all the topics in .NET documentation. Readers can download and run the samples. They
+can explore the code and experiment with their own changes.
 
-## Contributor License Agreement
+All samples should be complete applications or libraries. Where the sample creates a library,
+it should include unit tests or an application that lets readers run the code.
 
-You must sign the [.NET Foundation Contribution License Agreement (CLA)](http://cla2.dotnetfoundation.org) before your PR is merged. This is a one-time requirement for projects in the .NET Foundation. You can read more about [Contribution License Agreements (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
+The samples are organized in directories that match the directories under
+docs in this repo:
 
-The agreement: [net-foundation-contribution-license-agreement.pdf](https://cla2.dotnetfoundation.org/cladoc/net-foundation-contribution-license-agreement.pdf)
+- `getting-started` contains getting started samples. 
 
-You don't have to do this up-front. You can simply clone, fork, and submit your PR as usual. When your PR is created, it is classified by a CLA bot. If the change is trivial (for example, you just fixed a typo), then the PR is labeled with `cla-not-required`. Otherwise, it's classified as `cla-required`. Once you signed the CLA, the current and all future pull requests will be labeled as `cla-signed`.
+   * Each top-level section of our documentation contains a "getting-started" or "tutorials" section.  These topics and their associated samples represent the first look(s) at a topic area. If your sample's goal is to help beginners get started with the platform or the technology, place your sample under `samples/getting-started`. There should be a directory that matches the section for your tutorial (such as `samples/getting-started/csharp`), but if not, simply create a new folder.
+
+- `core-projects` contains .NET Core samples. These are referenced by topics under `/docs/core`.
+
+   * The `core-projects` directory contains samples that highlight .NET Core. The purpose of your sample should be to teach developers something about .NET Core. This includes the framework packaging, the new tooling, or the cross-platform experience.
+
+- `csharp-language` contains C# language samples. These are referenced by topics under `docs/csharp`.
+
+   * The `csharp-language` directory contains samples where the purpose is to explain the C# language. While these samples will use frameworks and libraries, their focus is on the C# language.
+
+ - `linq` contains all the 101 LINQ samples that were originally created when LINQ was developed. These don't have topics associated with them yet.
+
+   * The `linq` directory contains samples that are specific to understanding the concepts and implementation behind Language Integrated Query (LINQ). These samples should be focused on the language support and library methods that are specific to LINQ. Other samples my use the LINQ libraries, but unless they are focused on explaining LINQ concepts, they should be in one of the other directories.
+
+We will expand these directories as the core-docs repository adds new content. 
+
+Sample code may fit more than one of these areas. In those cases, place the sample so it matches
+the topics you are covering in your documents. Ask yourself what readers will learn from reading
+your topic. What will they learn from building and running your sample? 
+
+Each sample that you create should contain a `readme.md` file. This file should
+contain a short description of the sample (one or two paragraphs). Your readme.md
+should tell readers what they will learn by exploring this sample. The readme.md file should also contain
+a link to the live document on the [.NET documentation site](http://docs.microsoft.com/dotnet/articles/welcome).
+To determine where a given file in the repository maps to that site, replace `/docs` in the repository path
+with `http://docs.microsoft.com/dotnet/articles`.   
+
+Your topic will also contain links to the sample. Link directly to the sample's folder on GitHub.
+
+For more information, see the [Samples Readme](https://github.com/dotnet/core-docs/blob/master/samples/README.md).

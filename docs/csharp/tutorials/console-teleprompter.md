@@ -80,8 +80,8 @@ namespace TeleprompterConsole
 ## Reading and Echoing the File
 The first feature to add is to read a text file, and display all that text
 to the console. First, let’s add a text file. Copy the 
-[sampleQuotes.txt](https://github.com/dotnet/core-docs/blob/master/samples/csharp-language/console-teleprompter/sampleQuotes.txt)
-file from the GitHub repository for this [sample](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/console-teleprompter) into your project directory. 
+[sampleQuotes.txt](https://github.com/dotnet/core-docs/blob/master/samples/getting-started/csharp/console-teleprompter/sampleQuotes.txt)
+file from the GitHub repository for this [sample](https://github.com/dotnet/core-docs/tree/master/samples/getting-started/csharp/console-teleprompter) into your project directory. 
 This will serve as the script for your
 application.
 
@@ -202,13 +202,6 @@ to add that using statement at the top of file:
 ```cs
 using System.Threading.Tasks;
 ```
-
-> Note: In RC2, you need to run the application using a different
-> command to see the correct output. This is due to an issue
-> in the CLI that [has been filed](https://github.com/dotnet/cli/issues/2976).
-> To run the application, instead of `dotnet run` use
-> `dotnet .\bin\Debug\netcoreapp1.0\console-teleprompter.dll` 
-> substituting the correct path to your output DLL.  
 
 Run the sample, and check the output. Now, each single word is printed,
 followed by a 200 ms delay. However, the displayed output shows some

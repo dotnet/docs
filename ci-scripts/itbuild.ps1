@@ -40,13 +40,12 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
 
             if ($singleProjectContainer -is [System.IO.FileInfo])
             {
-                Write-Host $singleProjectContainer.Name
-                $projectPath = Split-Path -parent $singleProjectContainer.Name
+                $projectPath = $singleProjectContainer.Name
                 Write-Host $projectPath
+                Write-Host $singleProjectContainer | Format-Table -Auto
+                # $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
-                $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
-
-                powershell.exe -Command $CustomCommand
+                # powershell.exe -Command $CustomCommand
             }
             else 
             {

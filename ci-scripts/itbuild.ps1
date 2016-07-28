@@ -45,7 +45,10 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
 
                 $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2>&1 "
 
-                Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError | Wait-Process
+                $errorStream = ""
+                $outputStream = ""
+
+                Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError errorStream -RedirectStandardOutput outputStream | Wait-Process
 
                 Write-Host ">>> EXITED WITH $LastExitCode"
 
@@ -68,7 +71,10 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                     $projectPath = Split-Path -parent $sProject.FullName
                     $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2>&1 "
 
-                    Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError | Wait-Process
+                    $errorStream = ""
+                    $outputStream = ""
+
+                    Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError errorStream -RedirectStandardOutput outputStream | Wait-Process
 
                     Write-Host ">>> EXITED WITH $LastExitCode"
 
@@ -104,7 +110,11 @@ $Content = Get-Content "$HomePath\single.projects" | Foreach-Object {
 
         $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore 2>&1 `| Write-Host `| dotnet build 2>&1 `| Write-Host "
         
-        Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError | Wait-Process
+        $errorStream = ""
+        $outputStream = ""
+
+        Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError errorStream -RedirectStandardOutput outputStream | Wait-Process
+
 
         Write-Host "Exited with EXCODE: " $LastExitCode
 

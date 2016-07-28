@@ -2,7 +2,7 @@
 ## Spec reference:https://microsoft.sharepoint.com/teams/CE_CSI/_layouts/OneNote.aspx?id=%2Fteams%2FCE_CSI%2FSiteAssets%2FCE_CSI%20Notebook&wd=target%28Samples%20CI%2FGeneral%20Architecture.one%7CAF430CFB-930B-4949-BD23-198A8485E1C9%2FSpec%7CB6587481-E481-450D-BDF2-2C2E2C2E70B3%2F%29
 ## This script it used by the VSTS build agents.
 ## Author: Den Delimarsky (dendeli)
-## Last Modified: 7/27/2016
+## Last Modified: 7/28/2016
 
 ## This is needed for JSON parsing
 [System.Reflection.Assembly]::LoadWithPartialName("System.Web.Extensions")
@@ -39,37 +39,46 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
 
             if ($singleProjectContainer -is [System.IO.FileInfo])
             {
-                Write-Host "FILEINFO"
                 $projectPath = Split-Path -parent $singleProjectContainer.FullName
 
-                $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
+                $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2>&1 `| Write-Host"
 
                 powershell.exe -Command $CustomCommand
+
+                if ($LastExitCode) 
+                {
+                    Write-Error "[STATUS - BAD] Build for project failed."
+                }
+                else
+                {
+                    Write-Host "[STATUS - OK] Build for project OK."
+                }
+
+                ## Add the current build result to the dictionary that tracks the overall success.
+                $buildResults.Add($projectPath, $LastExitCode)
             }
             else 
             {
-                Write-Host "NOT-FILEINFO"
                 foreach($sProject in $singleProjects)
                 {
                     $projectPath = Split-Path -parent $sProject.FullName
-                    $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
+                    $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2>&1 `| Write-Host"
 
                     powershell.exe -Command $CustomCommand
+
+                    if ($LastExitCode) 
+                    {
+                        Write-Error "[STATUS - BAD] Build for project failed."
+                    }
+                    else
+                    {
+                        Write-Host "[STATUS - OK] Build for project OK."
+                    }
+
+                    ## Add the current build result to the dictionary that tracks the overall success.
+                    $buildResults.Add($projectPath, $LastExitCode)
                 }
             }
-        }
-
-        Write-Host "Exited with EXCODE: " $LastExitCode
-
-        ## Add the current build result to the dictionary that tracks the overall success.
-        $buildResults.Add($Folder, $LastExitCode)
-
-        if ($LastExitCode) {
-            Write-Warning "Build for project failed."
-        }
-        else
-        {
-            Write-Host "Build for project OK."
         }
     }
 }

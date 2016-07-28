@@ -43,9 +43,9 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
             {
                 $projectPath = Split-Path -parent $singleProjectContainer.FullName
 
-                $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2`>`&1 "
+                $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2>&1 "
 
-                $customCommandResult = powershell.exe -Command $CustomCommand
+                Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError | Wait-Process
 
                 Write-Host ">>> EXITED WITH $LastExitCode"
 
@@ -66,9 +66,9 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                 foreach($sProject in $singleProjects)
                 {
                     $projectPath = Split-Path -parent $sProject.FullName
-                    $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2`>`&1 "
+                    $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2>&1 "
 
-                    $customCommandResult = powershell.exe -Command $CustomCommand
+                    Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError | Wait-Process
 
                     Write-Host ">>> EXITED WITH $LastExitCode"
 
@@ -104,7 +104,7 @@ $Content = Get-Content "$HomePath\single.projects" | Foreach-Object {
 
         $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore 2>&1 `| Write-Host `| dotnet build 2>&1 `| Write-Host "
         
-        $customCommandResult = powershell.exe -Command $CustomCommand
+        Start-Process -FilePath powershell.exe -ArgumentList "-Command $CustomCommand" -RedirectStandardError | Wait-Process
 
         Write-Host "Exited with EXCODE: " $LastExitCode
 

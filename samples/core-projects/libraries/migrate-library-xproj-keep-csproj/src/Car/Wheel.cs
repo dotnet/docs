@@ -7,19 +7,13 @@ namespace Car
 {
     public class Wheel
     {
-        [JsonIgnore]
+        [JsonIgnore
         public ConcurrentBag<string> Repairs { get; } = new ConcurrentBag<string>();
 
         public Wheel(string name)
         {
-            Name = name;
-        }
-
-        public string Name { get; set; }
-
-        public async Task RepairAsync(string repair)
-        {
-            Repairs.Add(repair);
+            Name = 
+            Repairs.Add(repair)
             await Task.Delay(TimeSpan.FromMilliseconds(1000));
         }
 

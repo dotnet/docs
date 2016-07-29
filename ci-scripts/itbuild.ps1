@@ -10,7 +10,7 @@
 $homePath = (Get-Item -Path ".\" -Verbose).FullName
 
 $logIdentifier = [Guid]::NewGuid().ToString()
-$logFile = "$homePath\$logIdentifier.txt"
+$logFile = "$homePath\$logIdentifier.buildlog"
 
 $buildResults = @{}
 

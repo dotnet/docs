@@ -36,20 +36,21 @@ Function ProcessBuildCommand ($command, $activePath)
 
     $stdout = $p.StandardOutput.ReadToEnd()
     $stderr = $p.StandardError.ReadToEnd()
+    $exCode = $p.ExitCode
 
     $p.WaitForExit()
 
     LogWrite "OUT: $stdout"
     LogWrite "ERROR: $stderr"
-    LogWrite "EXCODE: "$p.ExitCode
+    LogWrite "EXCODE: $exCode"
 
-    if ($p.ExitCode)
+    if ($exCode)
     {
-        LogWrite "[][$activePath] Failure with current operation."
+        LogWrite "[$activePath] Failure with current operation."
     }
     else
     {
-        LogWrite "[][$activePath] Operation succeeded."
+        LogWrite "[$activePath] Operation succeeded."
     }
 
     ## Add the current build result to the dictionary that tracks the overall success.
@@ -113,7 +114,9 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
     }
 }
 
-LogWrite "Total samples built by now: " $buildResults.Count
+$resultsCount = $buildResults.Count
+LogWrite "Total samples built by now: $resultsCount"
+
 LogWrite "===== Building of global projects is complete. ====="
 
 ## =============================================
@@ -132,7 +135,8 @@ $Content = Get-Content "$homePath\single.projects" | Foreach-Object {
     }
 }
 
-LogWrite "Total samples built by now: " $buildResults.Count
+$resultsCount = $buildResults.Count
+LogWrite "Total samples built by now: $resultsCount" 
 LogWrite "===== Building of single projects is complete. ====="
 
 ## Obviously the color does nothing when this shows up in the VSTS console.
@@ -141,7 +145,7 @@ LogWrite ($buildResults | Out-String) -ForegroundColor Yellow
 $brutalFailures = @($buildResults.GetEnumerator())| where {$_.Value -eq 1}
 $numberOfBrutalFailures = $brutalFailures.Count
 
-LogWrite "Number of brutal failures in this build: " $numberOfBrutalFailures
+LogWrite "Number of brutal failures in this build: $numberOfBrutalFailures" 
 
 ## Check if we have any breaking errors - currently warnings are ignored as those do
 ## not impede the overall sample performance. Those are still logged.

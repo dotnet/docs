@@ -45,33 +45,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
 
                 $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
-                $pinfo = New-Object System.Diagnostics.ProcessStartInfo
-                $pinfo.FileName = "powershell.exe"
-                $pinfo.RedirectStandardError = $true
-                $pinfo.RedirectStandardOutput = $true
-                $pinfo.UseShellExecute = $false
-                $pinfo.Arguments = "-Command $CustomCommand"
-                $p = New-Object System.Diagnostics.Process
-                $p.StartInfo = $pinfo
-                $p.Start() | Out-Null
-                $p.WaitForExit()
-                $stdout = $p.StandardOutput.ReadToEnd()
-                $stderr = $p.StandardError.ReadToEnd()
-                Write-Host "OUT: $stdout"
-                Write-Host "ERROR: $stderr"
-                Write-Host "EXCODE: "$p.ExitCode
-
-                if ($p.ExitCode) 
-                {
-                    Write-Host "[][$projectPath][STATUS - BAD] Build for project failed."
-                }
-                else
-                {
-                    Write-Host "[][$projectPath][STATUS - OK] Build for project OK."
-                }
-
-                ## Add the current build result to the dictionary that tracks the overall success.
-                $buildResults.Add($projectPath, $p.ExitCode)
+                ProcessBuildCommand($CustomCommand, $projectPath)
             }
             else 
             {
@@ -80,33 +54,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                     $projectPath = Split-Path -parent $sProject.FullName
                     $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2>&1 "
 
-                    $pinfo = New-Object System.Diagnostics.ProcessStartInfo
-                    $pinfo.FileName = "powershell.exe"
-                    $pinfo.RedirectStandardError = $true
-                    $pinfo.RedirectStandardOutput = $true
-                    $pinfo.UseShellExecute = $false
-                    $pinfo.Arguments = "-Command $CustomCommand"
-                    $p = New-Object System.Diagnostics.Process
-                    $p.StartInfo = $pinfo
-                    $p.Start() | Out-Null
-                    $p.WaitForExit()
-                    $stdout = $p.StandardOutput.ReadToEnd()
-                    $stderr = $p.StandardError.ReadToEnd()
-                    Write-Host "OUT: $stdout"
-                    Write-Host "ERROR: $stderr"
-                    Write-Host "EXCODE: "$p.ExitCode
-
-                    if ($p.ExitCode) 
-                    {
-                        Write-Host "[][$projectPath][STATUS - BAD] Build for project failed."
-                    }
-                    else
-                    {
-                        Write-Host "[][$projectPath][STATUS - OK] Build for project OK."
-                    }
-
-                    ## Add the current build result to the dictionary that tracks the overall success.
-                    $buildResults.Add($projectPath, $p.ExitCode)
+                    ProcessBuildCommand($CustomCommand, $projectPath)
                 }
             }
         }
@@ -128,32 +76,7 @@ $Content = Get-Content "$HomePath\single.projects" | Foreach-Object {
 
         $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore `| dotnet build "
         
-        $pinfo = New-Object System.Diagnostics.ProcessStartInfo
-        $pinfo.FileName = "powershell.exe"
-        $pinfo.RedirectStandardError = $true
-        $pinfo.RedirectStandardOutput = $true
-        $pinfo.UseShellExecute = $false
-        $pinfo.Arguments = "-Command $CustomCommand"
-        $p = New-Object System.Diagnostics.Process
-        $p.StartInfo = $pinfo
-        $p.Start() | Out-Null
-        $p.WaitForExit()
-        $stdout = $p.StandardOutput.ReadToEnd()
-        $stderr = $p.StandardError.ReadToEnd()
-        Write-Host "OUT: $stdout"
-        Write-Host "ERROR: $stderr"
-        Write-Host "EXCODE: "$p.ExitCode
-
-        if ($p.ExitCode) {
-            Write-Host "Build for project failed."
-        }
-        else
-        {
-            Write-Host "Build for project OK."
-        }
-
-        ## Add the current build result to the dictionary that tracks the overall success.
-        $buildResults.Add($Folder, $p.ExitCode)
+        ProcessBuildCommand($CustomCommand, $Folder)
     }
 }
 
@@ -178,4 +101,35 @@ if ($numberOfBrutalFailures -gt 0)
 else 
 {
     exit 0
+}
+
+function ProcessBuildCommand ($command, $path)
+{
+    $pinfo = New-Object System.Diagnostics.ProcessStartInfo
+    $pinfo.FileName = "powershell.exe"
+    $pinfo.RedirectStandardError = $true
+    $pinfo.RedirectStandardOutput = $true
+    $pinfo.UseShellExecute = $false
+    $pinfo.Arguments = "-Command $command"
+    $p = New-Object System.Diagnostics.Process
+    $p.StartInfo = $pinfo
+    $p.Start() | Out-Null
+    $p.WaitForExit()
+    $stdout = $p.StandardOutput.ReadToEnd()
+    $stderr = $p.StandardError.ReadToEnd()
+    Write-Host "OUT: $stdout"
+    Write-Host "ERROR: $stderr"
+    Write-Host "EXCODE: "$p.ExitCode
+
+    if ($p.ExitCode) 
+    {
+        Write-Host "[][$path][STATUS - BAD] Build for project failed."
+    }
+    else
+    {
+        Write-Host "[][$path][STATUS - OK] Build for project OK."
+    }
+
+    ## Add the current build result to the dictionary that tracks the overall success.
+    $buildResults.Add($path, $p.ExitCode)
 }

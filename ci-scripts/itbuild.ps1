@@ -13,7 +13,7 @@ get-host
 
 $buildResults = @{}
 
-Function ProcessBuildCommand ($command, $path)
+Function ProcessBuildCommand ($command, $activePath)
 {
     $pinfo = New-Object System.Diagnostics.ProcessStartInfo
     $pinfo.FileName = "powershell.exe"
@@ -33,15 +33,15 @@ Function ProcessBuildCommand ($command, $path)
 
     if ($p.ExitCode) 
     {
-        Write-Host "[][$path][STATUS - BAD] Build for project failed."
+        Write-Host "[][$activePath][STATUS - BAD] Build for project failed."
     }
     else
     {
-        Write-Host "[][$path][STATUS - OK] Build for project OK."
+        Write-Host "[][$activePath][STATUS - OK] Build for project OK."
     }
 
     ## Add the current build result to the dictionary that tracks the overall success.
-    $buildResults.Add($path, $p.ExitCode)
+    $buildResults.Add($activePath, $p.ExitCode)
 }
 
 ## =============================================

@@ -33,11 +33,11 @@ Function ProcessBuildCommand ($command, $activePath)
 
     if ($p.ExitCode) 
     {
-        Write-Host "[][$activePath][STATUS - BAD] Build for project failed."
+        Write-Host "[][$activePath] Failure with current operation."
     }
     else
     {
-        Write-Host "[][$activePath][STATUS - OK] Build for project OK."
+        Write-Host "[][$activePath] Operation succeeded."
     }
 
     ## Add the current build result to the dictionary that tracks the overall success.
@@ -51,8 +51,8 @@ Write-Host "===== Bootstraping build for global projects... ====="
 $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
     if ($_) {
 
-        $Folder = (Get-Item $_.ToString().Trim()).Directory.ToString()
-        Write-Host "Working on $Folder..."
+        $restorePath = (Get-Item $_.ToString().Trim()).Directory.ToString()
+        Write-Host "Working on $restorePath..."
 
         $rawJson = Get-Content $_
 
@@ -60,9 +60,9 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
         $globalObject = $ser.DeserializeObject($rawJson)
         $projects = $globalObject.projects
 
-        $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore "
+        $customCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $restorePath `| dotnet restore "
 
-        powershell.exe -Command $CustomCommand
+        ProcessBuildCommand $customCommand $restorePath
 
         foreach($project in $projects)
         {
@@ -74,18 +74,18 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
             {
                 $projectPath = Split-Path -parent $singleProjectContainer.FullName
 
-                $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
+                $customCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
-                ProcessBuildCommand($CustomCommand, $projectPath)
+                ProcessBuildCommand $customCommand $projectPath
             }
             else 
             {
                 foreach($sProject in $singleProjects)
                 {
                     $projectPath = Split-Path -parent $sProject.FullName
-                    $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2>&1 "
+                    $customCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
-                    ProcessBuildCommand($CustomCommand, $projectPath)
+                    ProcessBuildCommand $customCommand $projectPath
                 }
             }
         }
@@ -102,12 +102,12 @@ Write-Host "===== Bootstraping build for single projects... ====="
 $Content = Get-Content "$HomePath\single.projects" | Foreach-Object {
     if ($_) {
 
-        $Folder = (Get-Item $_.ToString().Trim()).Directory.ToString()
-        Write-Host "Working on $Folder..."
+        $projectPath = (Get-Item $_.ToString().Trim()).Directory.ToString()
+        Write-Host "Working on $projectPath..."
 
-        $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore `| dotnet build "
+        $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet restore `| dotnet build "
         
-        ProcessBuildCommand($CustomCommand, $Folder)
+        ProcessBuildCommand $CustomCommand $projectPath
     }
 }
 

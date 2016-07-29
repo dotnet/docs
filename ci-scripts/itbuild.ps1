@@ -43,10 +43,7 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
             {
                 $projectPath = Split-Path -parent $singleProjectContainer.FullName
 
-                $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build 2>&1 "
-
-                $errorStream = ""
-                $outputStream = ""
+                $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
                 $pinfo = New-Object System.Diagnostics.ProcessStartInfo
                 $pinfo.FileName = "powershell.exe"
@@ -60,15 +57,9 @@ $Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
                 $p.WaitForExit()
                 $stdout = $p.StandardOutput.ReadToEnd()
                 $stderr = $p.StandardError.ReadToEnd()
-                Write-Host "stdout: $stdout"
-                Write-Host "stderr: $stderr"
-                Write-Host "exit code: " + $p.ExitCode
-
-                #Start-Process -FilePath powershell.exe -ArgumentList  -RedirectStandardError $errorStream -RedirectStandardOutput $outputStream -Wait
-
-                # Write-Host ">>> EXITED WITH $LastExitCode"
-                # Write-Host $errorStream
-                # Write-Host $outputStream
+                Write-Host "OUT: $stdout"
+                Write-Host "ERROR: $stderr"
+                Write-Host "EXCODE: "$p.ExitCode
 
                 if ($LastExitCode) 
                 {

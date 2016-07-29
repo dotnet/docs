@@ -61,10 +61,13 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
         Write-Host "Bootstraping restore on $restorePath..."
 
         $rawJson = Get-Content $_
+        Write-Host "Getting information for $_"
 
         $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
         $globalObject = $ser.DeserializeObject($rawJson)
         $projects = $globalObject.projects
+
+        Write-Host "Ready to work on restore for $_. Executing command..."
 
         $customCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $restorePath `| dotnet restore "
 

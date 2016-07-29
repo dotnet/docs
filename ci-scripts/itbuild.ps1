@@ -2,114 +2,159 @@
 ## Spec reference:https://microsoft.sharepoint.com/teams/CE_CSI/_layouts/OneNote.aspx?id=%2Fteams%2FCE_CSI%2FSiteAssets%2FCE_CSI%20Notebook&wd=target%28Samples%20CI%2FGeneral%20Architecture.one%7CAF430CFB-930B-4949-BD23-198A8485E1C9%2FSpec%7CB6587481-E481-450D-BDF2-2C2E2C2E70B3%2F%29
 ## This script it used by the VSTS build agents.
 ## Author: Den Delimarsky (dendeli)
-## Last Modified: 7/27/2016
+## Last Modified: 7/29/2016
 
 ## This is needed for JSON parsing
 [System.Reflection.Assembly]::LoadWithPartialName("System.Web.Extensions")
 
-$HomePath = (Get-Item -Path ".\" -Verbose).FullName
+$homePath = (Get-Item -Path ".\" -Verbose).FullName
+
+$logIdentifier = [Guid]::NewGuid().ToString()
+$logFile = "$homePath\$logIdentifier.buildlog"
 
 $buildResults = @{}
+
+Function LogWrite
+{
+   Param ([string]$logString)
+
+   Write-Host $logString
+   Add-content $logFile -value $logString
+}
+
+Function ProcessBuildCommand ($command, $activePath)
+{
+    $pinfo = New-Object System.Diagnostics.ProcessStartInfo
+    $pinfo.FileName = "powershell.exe"
+    $pinfo.RedirectStandardError = $true
+    $pinfo.RedirectStandardOutput = $true
+    $pinfo.UseShellExecute = $false
+    $pinfo.Arguments = "-Command $command"
+    $p = New-Object System.Diagnostics.Process
+    $p.StartInfo = $pinfo
+    $p.Start() | Out-Null
+
+    $stdout = $p.StandardOutput.ReadToEnd()
+    $stderr = $p.StandardError.ReadToEnd()
+    $exCode = $p.ExitCode
+
+    $p.WaitForExit()
+
+    LogWrite "OUT: $stdout"
+    LogWrite "ERROR: $stderr"
+    LogWrite "EXCODE: $exCode"
+
+    if ($exCode)
+    {
+        LogWrite "[$activePath] Failure with current operation."
+    }
+    else
+    {
+        LogWrite "[$activePath] Operation succeeded."
+    }
+
+    ## Add the current build result to the dictionary that tracks the overall success.
+    $buildResults.Add($activePath, $p.ExitCode)
+}
 
 ## =============================================
 ## Global Projects
 ## =============================================
-Write-Host "Bootstraping build for global projects..."
-$Content = Get-Content "$HomePath\global.projects" | Foreach-Object {
+
+LogWrite "===== Bootstraping build for global projects... ====="
+
+$Content = Get-Content "$homePath\global.projects" | Foreach-Object {
     if ($_) {
 
-        $Folder = (Get-Item $_.ToString().Trim()).Directory.ToString()
-        Write-Host "Working on $Folder..."
+        $restorePath = (Get-Item $_.ToString().Trim()).Directory.ToString()
+        $restoreFileName = $_.ToString().Trim()
 
-        $rawJson = Get-Content $_
+        LogWrite "Bootstraping restore on $restorePath..."
+
+        $rawJson = Get-Content $restoreFileName
+        LogWrite "Getting information for $restoreFileName..."
 
         $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
         $globalObject = $ser.DeserializeObject($rawJson)
         $projects = $globalObject.projects
 
-        $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore "
+        LogWrite "Ready to work on restore for $restoreFileName. Executing command..."
 
-        powershell.exe -Command $CustomCommand
+        $customCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $restorePath `| dotnet restore "
+
+        ProcessBuildCommand $customCommand $restorePath
+
+        LogWrite "Restore complete."
 
         foreach($project in $projects)
         {
-            $comboPath = Join-Path $Folder $project
-            Write-Host $comboPath
-            [System.Collections.ArrayList]$singleProjects = Get-ChildItem $comboPath -Recurse | where {$_.Name -eq "project.json" }
+            $comboPath = Join-Path $restorePath $project
 
-            foreach($sProject in $singleProjects)
+            $singleProjectContainer = Get-ChildItem $comboPath -Recurse | where {$_.Name -eq "project.json" }
+
+            if ($singleProjectContainer -is [System.IO.FileInfo])
             {
-                Write-Host $sProject
-                # $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd project `| dotnet build "
+                $projectPath = Split-Path -parent $singleProjectContainer.FullName
 
-                # powershell.exe -Command $CustomCommand
+                $customCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
+
+                ProcessBuildCommand $customCommand $projectPath
             }
-        }
+            else
+            {
+                foreach($sProject in $singleProjects)
+                {
+                    $projectPath = Split-Path -parent $sProject.FullName
+                    $customCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
-        Write-Host "Exited with EXCODE: " $LastExitCode
-
-        ## Add the current build result to the dictionary that tracks the overall success.
-        $buildResults.Add($Folder, $LastExitCode)
-
-        if ($LastExitCode) {
-            Write-Warning "Build for project failed."
-        }
-        else
-        {
-            Write-Host "Build for project OK."
+                    ProcessBuildCommand $customCommand $projectPath
+                }
+            }
         }
     }
 }
 
-Write-Host "Total samples built by now: " $buildResults.Count
-Write-Host "Building of global projects is complete."
+$resultsCount = $buildResults.Count
+LogWrite "Total samples built by now: $resultsCount"
+
+LogWrite "===== Building of global projects is complete. ====="
 
 ## =============================================
 ## Single Projects
 ## =============================================
-Write-Host "Bootstraping build for single projects..."
-$Content = Get-Content "$HomePath\single.projects" | Foreach-Object {
+LogWrite "===== Bootstraping build for single projects... ====="
+$Content = Get-Content "$homePath\single.projects" | Foreach-Object {
     if ($_) {
 
-        $Folder = (Get-Item $_.ToString().Trim()).Directory.ToString()
-        Write-Host "Working on $Folder..."
+        $projectPath = (Get-Item $_.ToString().Trim()).Directory.ToString()
+        LogWrite "Working on $projectPath..."
 
-        $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $Folder `| dotnet restore 2>&1 `| Write-Host `| dotnet build 2>&1 `| Write-Host "
-        
-        powershell.exe -Command $CustomCommand
+        $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet restore `| dotnet build "
 
-        Write-Host "Exited with EXCODE: " $LastExitCode
-
-        ## Add the current build result to the dictionary that tracks the overall success.
-        $buildResults.Add($Folder, $LastExitCode)
-
-        if ($LastExitCode) {
-            Write-Warning "Build for project failed."
-        }
-        else
-        {
-            Write-Host "Build for project OK."
-        }
+        ProcessBuildCommand $CustomCommand $projectPath
     }
 }
 
-Write-Host "Total samples built by now: " $buildResults.Count
-Write-Host "Building of single projects is complete."
+$resultsCount = $buildResults.Count
+LogWrite "Total samples built by now: $resultsCount" 
+LogWrite "===== Building of single projects is complete. ====="
 
 ## Obviously the color does nothing when this shows up in the VSTS console.
-Write-Host ($buildResults | Out-String) -ForegroundColor Yellow
+LogWrite ($buildResults | Out-String) -ForegroundColor Yellow
 
 $brutalFailures = @($buildResults.GetEnumerator())| where {$_.Value -eq 1}
 $numberOfBrutalFailures = $brutalFailures.Count
 
-Write-Host "Number of brutal failures in this build: " $numberOfBrutalFailures
+LogWrite "Number of brutal failures in this build: $numberOfBrutalFailures" 
 
 ## Check if we have any breaking errors - currently warnings are ignored as those do
 ## not impede the overall sample performance. Those are still logged.
-if ($numberOfBrutalFailures -gt 0){
-    Write-Error "Build failed. See log for details."
+if ($numberOfBrutalFailures -gt 0)
+{
+    LogWrite "Build failed. See log for details."
     exit 1
 }
-else {
+else
+{
     exit 0
 }

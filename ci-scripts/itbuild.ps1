@@ -175,6 +175,7 @@ if ($numberOfBrutalFailures -gt 0)
     Write-Error "Build failed. See log for details."
     exit 1
 }
-else {
+else 
+{
     exit 0
 }

@@ -81,7 +81,7 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
 
         foreach($project in $projects)
         {
-            $comboPath = Join-Path $Folder $project
+            $comboPath = Join-Path $restorePath $project
 
             $singleProjectContainer = Get-ChildItem $comboPath -Recurse | where {$_.Name -eq "project.json" }
 

@@ -2,7 +2,7 @@
 ## Spec reference:https://microsoft.sharepoint.com/teams/CE_CSI/_layouts/OneNote.aspx?id=%2Fteams%2FCE_CSI%2FSiteAssets%2FCE_CSI%20Notebook&wd=target%28Samples%20CI%2FGeneral%20Architecture.one%7CAF430CFB-930B-4949-BD23-198A8485E1C9%2FSpec%7CB6587481-E481-450D-BDF2-2C2E2C2E70B3%2F%29
 ## This script it used by the VSTS build agents.
 ## Author: Den Delimarsky (dendeli)
-## Last Modified: 7/28/2016
+## Last Modified: 7/29/2016
 
 $homePath = (Get-Item -Path ".\" -Verbose).FullName
 
@@ -15,7 +15,7 @@ foreach($item in $singleProjects){
     foreach ($blockedItem in $globalProjects){
         if ($item.Directory.ToString().StartsWith($blockedItem.Directory.ToString() + "\")){
             $itemsToRemove.Add($item)
-            break      
+            break
         }
     }
 }

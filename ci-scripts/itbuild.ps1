@@ -10,7 +10,7 @@
 $homePath = (Get-Item -Path ".\" -Verbose).FullName
 
 $logIdentifier = [Guid]::NewGuid().ToString()
-$logFile = "$homePath\$logIdentifier.txt"
+$logFile = "$homePath\$logIdentifier".txt
 
 $buildResults = @{}
 
@@ -18,7 +18,7 @@ Function LogWrite
 {
    Param ([string]$logString)
    Write-Host $logString
-   Add-content $logFile -value $logString
+   Add-Content $logFile -value $logString
 }
 
 Function ProcessBuildCommand ($command, $activePath)
@@ -35,12 +35,12 @@ Function ProcessBuildCommand ($command, $activePath)
     $p.WaitForExit()
     $stdout = $p.StandardOutput.ReadToEnd()
     $stderr = $p.StandardError.ReadToEnd()
-    
+
     LogWrite "OUT: $stdout"
     LogWrite "ERROR: $stderr"
     LogWrite "EXCODE: "$p.ExitCode
 
-    if ($p.ExitCode) 
+    if ($p.ExitCode)
     {
         LogWrite "[][$activePath] Failure with current operation."
     }
@@ -76,11 +76,11 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
         ProcessBuildCommand $customCommand $restorePath
 
         LogWrite "Restore complete."
-        
+
         foreach($project in $projects)
         {
             $comboPath = Join-Path $Folder $project
-            
+
             $singleProjectContainer = Get-ChildItem $comboPath -Recurse | where {$_.Name -eq "project.json" }
 
             if ($singleProjectContainer -is [System.IO.FileInfo])
@@ -91,7 +91,7 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
 
                 ProcessBuildCommand $customCommand $projectPath
             }
-            else 
+            else
             {
                 foreach($sProject in $singleProjects)
                 {
@@ -119,7 +119,7 @@ $Content = Get-Content "$homePath\single.projects" | Foreach-Object {
         LogWrite "Working on $projectPath..."
 
         $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet restore `| dotnet build "
-        
+
         ProcessBuildCommand $CustomCommand $projectPath
     }
 }
@@ -142,7 +142,7 @@ if ($numberOfBrutalFailures -gt 0)
     LogWrite "Build failed. See log for details."
     exit 1
 }
-else 
+else
 {
     exit 0
 }

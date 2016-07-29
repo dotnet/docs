@@ -63,7 +63,7 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
     if ($_) {
 
         $restorePath = (Get-Item $_.ToString().Trim()).Directory.ToString()
-        LogWrite "Working on $restorePath..."
+        LogWrite "Bootstraping restore on $restorePath..."
 
         $rawJson = Get-Content $_
 
@@ -75,6 +75,8 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
 
         ProcessBuildCommand $customCommand $restorePath
 
+        LogWrite "Restore complete."
+        
         foreach($project in $projects)
         {
             $comboPath = Join-Path $Folder $project

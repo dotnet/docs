@@ -79,7 +79,7 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
 
         LogWrite "Ready to work on restore for $restoreFileName. Executing command..."
 
-        $customCommand = "dotnet --version; `$core = Get-ChildItem Env:path;LogWrite `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';LogWrite `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $restorePath `| dotnet restore "
+        $customCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $restorePath `| dotnet restore "
 
         ProcessBuildCommand $customCommand $restorePath
 
@@ -95,7 +95,7 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
             {
                 $projectPath = Split-Path -parent $singleProjectContainer.FullName
 
-                $customCommand = "dotnet --version; `$core = Get-ChildItem Env:path;LogWrite `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';LogWrite `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
+                $customCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
                 ProcessBuildCommand $customCommand $projectPath
             }
@@ -104,7 +104,7 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
                 foreach($sProject in $singleProjects)
                 {
                     $projectPath = Split-Path -parent $sProject.FullName
-                    $customCommand = "dotnet --version; `$core = Get-ChildItem Env:path;LogWrite `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';LogWrite `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
+                    $customCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet build "
 
                     ProcessBuildCommand $customCommand $projectPath
                 }
@@ -126,7 +126,7 @@ $Content = Get-Content "$homePath\single.projects" | Foreach-Object {
         $projectPath = (Get-Item $_.ToString().Trim()).Directory.ToString()
         LogWrite "Working on $projectPath..."
 
-        $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;LogWrite `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';LogWrite `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet restore `| dotnet build "
+        $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet restore `| dotnet build "
 
         ProcessBuildCommand $CustomCommand $projectPath
     }

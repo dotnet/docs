@@ -10,16 +10,11 @@
 $homePath = (Get-Item -Path ".\" -Verbose).FullName
 
 $logIdentifier = [Guid]::NewGuid().ToString()
-$logFile = "$homePath\$logIdentifier".txt
+$logFile = "$homePath\$logIdentifier.txt"
 
 $buildResults = @{}
 
-Function LogWrite
-{
-   Param ([string]$logString)
-   Write-Host $logString
-   Add-Content $logFile -value $logString
-}
+Start-Transcript -path $logFile -append
 
 Function ProcessBuildCommand ($command, $activePath)
 {
@@ -36,17 +31,17 @@ Function ProcessBuildCommand ($command, $activePath)
     $stdout = $p.StandardOutput.ReadToEnd()
     $stderr = $p.StandardError.ReadToEnd()
 
-    LogWrite "OUT: $stdout"
-    LogWrite "ERROR: $stderr"
-    LogWrite "EXCODE: "$p.ExitCode
+    Write-Host "OUT: $stdout"
+    Write-Host "ERROR: $stderr"
+    Write-Host "EXCODE: "$p.ExitCode
 
     if ($p.ExitCode)
     {
-        LogWrite "[][$activePath] Failure with current operation."
+        Write-Host "[][$activePath] Failure with current operation."
     }
     else
     {
-        LogWrite "[][$activePath] Operation succeeded."
+        Write-Host "[][$activePath] Operation succeeded."
     }
 
     ## Add the current build result to the dictionary that tracks the overall success.
@@ -57,13 +52,13 @@ Function ProcessBuildCommand ($command, $activePath)
 ## Global Projects
 ## =============================================
 
-LogWrite "===== Bootstraping build for global projects... ====="
+Write-Host "===== Bootstraping build for global projects... ====="
 
 $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
     if ($_) {
 
         $restorePath = (Get-Item $_.ToString().Trim()).Directory.ToString()
-        LogWrite "Bootstraping restore on $restorePath..."
+        Write-Host "Bootstraping restore on $restorePath..."
 
         $rawJson = Get-Content $_
 
@@ -75,7 +70,7 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
 
         ProcessBuildCommand $customCommand $restorePath
 
-        LogWrite "Restore complete."
+        Write-Host "Restore complete."
 
         foreach($project in $projects)
         {
@@ -105,18 +100,18 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
     }
 }
 
-LogWrite "Total samples built by now: " $buildResults.Count
-LogWrite "===== Building of global projects is complete. ====="
+Write-Host "Total samples built by now: " $buildResults.Count
+Write-Host "===== Building of global projects is complete. ====="
 
 ## =============================================
 ## Single Projects
 ## =============================================
-LogWrite "===== Bootstraping build for single projects... ====="
+Write-Host "===== Bootstraping build for single projects... ====="
 $Content = Get-Content "$homePath\single.projects" | Foreach-Object {
     if ($_) {
 
         $projectPath = (Get-Item $_.ToString().Trim()).Directory.ToString()
-        LogWrite "Working on $projectPath..."
+        Write-Host "Working on $projectPath..."
 
         $CustomCommand = "dotnet --version; `$core = Get-ChildItem Env:path;Write-Host `$path.Value;`$pathValue = `$core.Value -Replace 'C:\\Program Files\\dotnet','C:\\dotnet';Write-Host `$pathValue;`$env:Path = `$pathValue;dotnet --version;cd $projectPath `| dotnet restore `| dotnet build "
 
@@ -124,22 +119,22 @@ $Content = Get-Content "$homePath\single.projects" | Foreach-Object {
     }
 }
 
-LogWrite "Total samples built by now: " $buildResults.Count
-LogWrite "===== Building of single projects is complete. ====="
+Write-Host "Total samples built by now: " $buildResults.Count
+Write-Host "===== Building of single projects is complete. ====="
 
 ## Obviously the color does nothing when this shows up in the VSTS console.
-LogWrite ($buildResults | Out-String) -ForegroundColor Yellow
+Write-Host ($buildResults | Out-String) -ForegroundColor Yellow
 
 $brutalFailures = @($buildResults.GetEnumerator())| where {$_.Value -eq 1}
 $numberOfBrutalFailures = $brutalFailures.Count
 
-LogWrite "Number of brutal failures in this build: " $numberOfBrutalFailures
+Write-Host "Number of brutal failures in this build: " $numberOfBrutalFailures
 
 ## Check if we have any breaking errors - currently warnings are ignored as those do
 ## not impede the overall sample performance. Those are still logged.
 if ($numberOfBrutalFailures -gt 0)
 {
-    LogWrite "Build failed. See log for details."
+    Write-Host "Build failed. See log for details."
     exit 1
 }
 else

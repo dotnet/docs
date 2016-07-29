@@ -27,9 +27,11 @@ Function ProcessBuildCommand ($command, $activePath)
     $p = New-Object System.Diagnostics.Process
     $p.StartInfo = $pinfo
     $p.Start() | Out-Null
-    $p.WaitForExit()
+
     $stdout = $p.StandardOutput.ReadToEnd()
     $stderr = $p.StandardError.ReadToEnd()
+
+    $p.WaitForExit()
 
     Write-Host "OUT: $stdout"
     Write-Host "ERROR: $stderr"

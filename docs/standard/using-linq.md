@@ -69,7 +69,7 @@ For a significant chunk of software out in the wild, everything revolves around 
 Consider the following: finding all XML elements with a specific attribute value.
 
 ```cs
-public static FindAllElementsWithAttribute(XElement documentRoot, string elementName,
+public static IEnumerable<XElement> FindAllElementsWithAttribute(XElement documentRoot, string elementName,
                                            string attributeName, string value)
 {
     return from el in documentRoot.Elements(elementName)

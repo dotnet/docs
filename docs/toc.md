@@ -2,7 +2,16 @@
 # [About .NET](about/index.md)
 ## [.NET Products](about/products.md)
 # [C# Guide](csharp/index.md)
+## [🔧 Getting Started](csharp/index.md)
+### [🔧 Getting started with Visual Studio](csharp/index.md)
+### [🔧 Getting started with Visual Studio Code and OmniSharp](csharp/index.md)
+### [🔧 Getting started with cross-platform tools](csharp/index.md)
 ## [Tutorials](csharp/tutorials/index.md)
+### [🔧 Using Visual Studio to create, debug, and deploy an application](csharp/index.md)
+### [🔧 Creating portable libraries](charp/index.md)
+### [🔧 Asynchronous UI programming](csharp/index.md)
+### [🔧 Asynchronous server programming](csharp/index.md)
+### [🔧 Concurrent programming](csharp/index.md)
 ### [Console Application](csharp/tutorials/console-teleprompter.md)
 ### [REST client](csharp/tutorials/console-webapiclient.md)
 ### [Working with LINQ](csharp/tutorials/working-with-linq.md)
@@ -22,6 +31,7 @@
 ### [What's new in C# 6](csharp/csharp-6.md)
 ## [C# Concepts](csharp/concepts.md)
 ### [🔧 C# Type system](csharp/type-system.md)
+### [🔧 Using C# Interactive](csharp/index.md)
 ### [🔧 Namespaces and Assemblies](csharp/index.md)
 ### [🔧 Basic Types](csharp/index.md)
 ### [🔧 Classes](csharp/index.md)
@@ -60,7 +70,9 @@
     The C# Reference section can be ported from here: 
     https://msdn.microsoft.com/en-us/library/618ayhy6.aspx
 
-    with appropriate updates for the latest version of the language. 
+    with appropriate updates for the latest version of the language.
+
+    Or, should this instead point to an online version of the C# Language spec? 
 -->
 
 

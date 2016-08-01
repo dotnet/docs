@@ -28,6 +28,7 @@
 ### [Enums](csharp/tour-of-csharp/enums.md)
 ### [Delegates](csharp/tour-of-csharp/delegates.md)
 ### [Attributes](csharp/tour-of-csharp/attributes.md)
+### [🔧 What's new in C# 7](csharp/index.md)
 ### [What's new in C# 6](csharp/csharp-6.md)
 ## [C# Concepts](csharp/concepts.md)
 ### [🔧 C# Type system](csharp/type-system.md)

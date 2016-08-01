@@ -1,7 +1,7 @@
 ---
 title: Getting started with F# on .NET Core
 description: Getting started with F# on .NET Core
-keywords: .NET, .NET Core
+keywords: .NET, .NET Core, F#, functional
 author: cartermp
 manager: wpickett
 ms.date: 07/01/2016

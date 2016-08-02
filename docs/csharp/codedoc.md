@@ -4,7 +4,7 @@ description: Documenting your code
 keywords: .NET, .NET Core
 author: tsolarin
 manager: wpickett
-ms.date: 07/29/2016
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -19,7 +19,9 @@ Unlike regular C# comments documentation comments are not ignored by the compile
 by adding `"xmlDoc": true` under `buildOptions` in your `project.json` when using .NET Core or use the `/doc` compiler option for the .NET framework.
 Go [here](https://msdn.microsoft.com/en-us/library/3260k4x7.aspx) to learn how to enable XML documentation generation in Visual Studio.
 
-Documentation tags are commented using three forward slashes (`///`) as opposed to two forward slashes (`//`) used for single line comments and `/** **/` for multiline comments.
+Comments are used to add documentation to your C# code. Single line comments start with double forward slashes `//` while multiline comments start with `/*` and terminates with `*/`,
+XML documentation comments span multiple lines but each must begin with triple forward slashes `///`.
+
 There are tools tools like [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) that help you generate documentation websites from your documentation tags,
 also, distributing the compiler generated XML file along with your library allows Visual Studio and other IDEs to show quick information about types or members when performing intellisense. 
 

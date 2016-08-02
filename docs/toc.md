@@ -66,6 +66,10 @@
 ### [🔧 Native interoperability](csharp/interop.md)
 ### [🔧 Reflection & code generation](csharp/reflection.md)
 ### [Documenting your code](csharp/codedoc.md) 
+## [🔧 C# Interactive](csharp/index.md)
+### [🔧 Using C# Interaactive in Visual Studio](csharp/index.md)
+### [🔧 Using C# Interaactive from Powershell](csharp/index.md)
+### [🔧 Using C# Interaactive from MacOS Terminal](csharp/index.md)
 ## [🔧 Syntax Reference](csharp/syntax.md)
 <!--
     The C# Reference section can be ported from here: 

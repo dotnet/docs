@@ -1,6 +1,6 @@
 ---
-title: .NET Core Pre-Requisites
-description: .NET Core Pre-Requisites
+title: .NET Core Prerequisites
+description: .NET Core Prerequisites
 keywords: .NET, .NET Core
 author: billwagner
 manager: wpickett
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 ---
 
-# Pre-Requisites for Windows Development
+# Prerequisites for Windows Development
 
 .NET Core development on Windows with Visual Studio requires:
 
@@ -23,12 +23,12 @@ ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 
 ## Supported Windows Versions
 
-.NET Core 1.0 is supported on the following verions of Windows:
+.NET Core 1.0 is supported on the following versions of Windows:
 
 - Windows 7+ / Server 2012 R2+
 - Windows Nano Server TP5
 
-You can see the full set of [suppported operating systems](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0.md#rtm-platform-support) in in the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0.md).
+You can see the full set of [supported operating systems](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0.md#rtm-platform-support) in the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0.md).
 
 ## .NET Core dependencies
 

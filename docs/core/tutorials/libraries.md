@@ -369,7 +369,7 @@ For the second option, you'll need to build a NuGet package out of your `.dll` f
 }
 ```
 
-To see an example of packaging up cross-platform native binaries, check out the [ASP.NET Libuv Package](https://github.com/aspnet/libuv-package) and the [corresponding reference in KestrelHttpServer](https://github.com/aspnet/KestrelHttpServer/blob/dev/src/Microsoft.AspNetCore.Server.Kestrel/project.json#L18).
+To see an example of packaging up cross-platform native binaries, check out the [ASP.NET Libuv Package](https://github.com/aspnet/libuv-package) and the [corresponding reference in KestrelHttpServer](https://github.com/aspnet/KestrelHttpServer/blob/1.0.0/src/Microsoft.AspNetCore.Server.Kestrel/project.json#L19).
 
 ## How to test libraries on .NET Core
 

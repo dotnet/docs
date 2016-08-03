@@ -149,7 +149,7 @@ than a single project. The main drawback of this extensions mechanism is that it
 tool exists. If you need it on another machine, you would have to deploy it.
 
 This pattern of CLI toolset extensibility is very simple. As covered in the [.NET Core CLI overview](index.md), `dotnet` driver 
-can run any command that is named after the `dotnet <command>` convention. The default resolution logic will first 
+can run any command that is named after the `dotnet-<command>` convention. The default resolution logic will first 
 probe several locations and will finally fall to the system PATH. If the requested command exists in the system PATH 
 and is a binary that can be invoked, `dotnet` driver will invoke it. 
 

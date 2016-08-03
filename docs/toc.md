@@ -10,7 +10,7 @@
 ### [Microservices hosted in Docker](csharp/tutorials/microservices.md)
 ## [🔧 Tour of C#](csharp/features.md)
 ### [What's new in C# 6](csharp/csharp-6.md)
-## [🔧 C# Concepts](csharp/concepts.md)
+## [C# Concepts](csharp/concepts.md)
 ### [🔧 C# Type system](csharp/type-system.md)
 ### [Properties](csharp/properties.md)
 ### [Indexers](csharp/indexers.md)

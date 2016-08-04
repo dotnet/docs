@@ -57,7 +57,7 @@ CD into that directory, and run `dotnet new -t lib` to create the source
 project.
 
 
-Rename`Library.cs` as 'PrimeService.cs`. To use TDD, you'll create a failing implementation of the
+Rename`Library.cs` as `PrimeService.cs`. To use TDD, you'll create a failing implementation of the
 `PrimeService` class:
 
 ```cs

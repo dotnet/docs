@@ -137,7 +137,8 @@ to inform NuGet that it should look in project directories,
 not in the NuGet feed. Without this key, you might download
 a package with the same name as your internal library.
 
-You can see the entire file in the [samples repository](https://github.com/dotnet/core-docs/blob/master/samples/unit-testing/using-dotnet-test/test/PrimeService.Tests/project.json)
+You can see the entire file in the
+[samples repository](https://github.com/dotnet/core-docs/blob/master/samples/core-projects/unit-testing/using-dotnet-test/test/PrimeService.Tests/project.json)
 on GitHub.
 
 After this initial structure is in place, you can write your first test.

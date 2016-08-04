@@ -165,7 +165,7 @@ static void Main(string[] args)
 			Console.WriteLine("One argument");
 			break;
 		default:
-			Console.WriteLine("{0} arguments", n);
+			Console.WriteLine($"{n} arguments");
 			break;
 		}
 	}
@@ -474,7 +474,8 @@ public class Color
 	public static readonly Color Green = new Color(0, 255, 0);
 	public static readonly Color Blue = new Color(0, 0, 255);
 	private byte r, g, b;
-	public Color(byte r, byte g, byte b) {
+	public Color(byte r, byte g, byte b) 
+	{
 		this.r = r;
 		this.g = g;
 		this.b = b;
@@ -482,50 +483,54 @@ public class Color
 }
 ```
 As shown in the previous example, ***read-only fields*** may be declared with a `readonly` modifier. Assignment to a `readonly` field can only occur as part of the field’s declaration or in a constructor in the same class.
-<<< Start Here>>>
+
 ### Methods
-A method is a member that implements a computation or action that can be performed by an object or class. Static methods are accessed through the class. Instance methods are accessed through instances of the class.
-Methods have a (possibly empty) list of parameters, which represent values or variable references passed to the method, and a return type, which specifies the type of the value computed and returned by the method. A method’s return type is void if it does not return a value.
+A ***method*** is a member that implements a computation or action that can be performed by an object or class. ***Static methods*** are accessed through the class. ***Instance methods*** are accessed through instances of the class.
+Methods have a (possibly empty) list of ***parameters***, which represent values or variable references passed to the method, and a ***return type***, which specifies the type of the value computed and returned by the method. A method’s return type is void if it does not return a value.
 Like types, methods may also have a set of type parameters, for which type arguments must be specified when the method is called. Unlike types, the type arguments can often be inferred from the arguments of a method call and need not be explicitly given.
-The signature of a method must be unique in the class in which the method is declared. The signature of a method consists of the name of the method, the number of type parameters and the number, modifiers, and types of its parameters. The signature of a method does not include the return type.
+The ***signature*** of a method must be unique in the class in which the method is declared. The signature of a method consists of the name of the method, the number of type parameters and the number, modifiers, and types of its parameters. The signature of a method does not include the return type.
 #### Parameters
-Parameters are used to pass values or variable references to methods. The parameters of a method get their actual values from the arguments that are specified when the method is invoked. There are four kinds of parameters: value parameters, reference parameters, output parameters, and parameter arrays.
-A value parameter is used for input parameter passing. A value parameter corresponds to a local variable that gets its initial value from the argument that was passed for the parameter. Modifications to a value parameter do not affect the argument that was passed for the parameter. 
+Parameters are used to pass values or variable references to methods. The parameters of a method get their actual values from the ***arguments*** that are specified when the method is invoked. There are four kinds of parameters: value parameters, reference parameters, output parameters, and parameter arrays.
+A ***value parameter*** is used for input parameter passing. A value parameter corresponds to a local variable that gets its initial value from the argument that was passed for the parameter. Modifications to a value parameter do not affect the argument that was passed for the parameter. 
 Value parameters can be optional, by specifying a default value so that corresponding arguments can be omitted.
-A reference parameter is used for both input and output parameter passing. The argument passed for a reference parameter must be a variable, and during execution of the method, the reference parameter represents the same storage location as the argument variable. A reference parameter is declared with the ref modifier. The following example shows the use of ref parameters.
+A ***reference parameter*** is used for both input and output parameter passing. The argument passed for a reference parameter must be a variable, and during execution of the method, the reference parameter represents the same storage location as the argument variable. A reference parameter is declared with the ref modifier. The following example shows the use of ref parameters.
 ```csharp
 using System;
-class Test
+class Example
 {
-	static void Swap(ref int x, ref int y) {
+	static void Swap(ref int x, ref int y) 
+	{
 		int temp = x;
 		x = y;
 		y = temp;
 	}
-	static void Main() {
+	static void Main() 
+	{
 		int i = 1, j = 2;
 		Swap(ref i, ref j);
-		Console.WriteLine("{0} {1}", i, j);			// Outputs "2 1"
+		Console.WriteLine($"{i} {j}");			// Outputs "2 1"
 	}
 }
 ```
-An output parameter is used for output parameter passing. An output parameter is similar to a reference parameter except that the initial value of the caller-provided argument is unimportant. An output parameter is declared with the out modifier. The following example shows the use of out parameters.
+An ***output parameter*** is used for output parameter passing. An output parameter is similar to a reference parameter except that the initial value of the caller-provided argument is unimportant. An output parameter is declared with the out modifier. The following example shows the use of out parameters.
 ```csharp
 using System;
-class Test
+class Example
 {
-	static void Divide(int x, int y, out int result, out int remainder) {
+	static void Divide(int x, int y, out int result, out int remainder) 
+	{
 		result = x / y;
 		remainder = x % y;
 	}
-	static void Main() {
+	static void Main() 
+	{
 		int res, rem;
 		Divide(10, 3, out res, out rem);
 		Console.WriteLine("{0} {1}", res, rem);	// Outputs "3 1"
 	}
 }
 ```
-A parameter array permits a variable number of arguments to be passed to a method. A parameter array is declared with the params modifier. Only the last parameter of a method can be a parameter array, and the type of a parameter array must be a single-dimensional array type. The Write and WriteLine methods of the System.Console class are good examples of parameter array usage. They are declared as follows.
+A ***parameter array*** permits a variable number of arguments to be passed to a method. A parameter array is declared with the params modifier. Only the last parameter of a method can be a parameter array, and the type of a parameter array must be a single-dimensional array type. The Write and WriteLine methods of the System.Console class are good examples of parameter array usage. They are declared as follows.
 ```csharp
 public class Console
 {
@@ -549,43 +554,49 @@ Console.WriteLine(s, args);
 ```
 #### Method body and local variables
 A method’s body specifies the statements to execute when the method is invoked.
-A method body can declare variables that are specific to the invocation of the method. Such variables are called local variables. A local variable declaration specifies a type name, a variable name, and possibly an initial value. The following example declares a local variable i with an initial value of zero and a local variable j with no initial value.
+A method body can declare variables that are specific to the invocation of the method. Such variables are called ***local variables***. A local variable declaration specifies a type name, a variable name, and possibly an initial value. The following example declares a local variable i with an initial value of zero and a local variable j with no initial value.
 ```csharp
 using System;
 class Squares
 {
-	static void Main() {
+	static void Main() 
+	{
 		int i = 0;
 		int j;
-		while (i < 10) {
+		while (i < 10) 
+		{
 			j = i * i;
-			Console.WriteLine("{0} x {0} = {1}", i, j);
+			Console.WriteLine($"{i} x {i} = {j}");
 			i = i + 1;
 		}
 	}
 }
 ```
-C# requires a local variable to be definitely assigned before its value can be obtained. For example, if the declaration of the previous i did not include an initial value, the compiler would report an error for the subsequent usages of i because i would not be definitely assigned at those points in the program.
-A method can use return statements to return control to its caller. In a method returning void, return statements cannot specify an expression. In a method returning non-void, return statements must include an expression that computes the return value.
+C# requires a local variable to be ***definitely assigned*** before its value can be obtained. For example, if the declaration of the previous i did not include an initial value, the compiler would report an error for the subsequent usages of i because i would not be definitely assigned at those points in the program.
+A method can use `return` statements to return control to its caller. In a method returning `void`, `return` statements cannot specify an expression. In a method returning non-void, `return` statements must include an expression that computes the return value.
 #### Static and instance methods
-A method declared with a static modifier is a static method. A static method does not operate on a specific instance and can only directly access static members.
-A method declared without a static modifier is an instance method. An instance method operates on a specific instance and can access both static and instance members. The instance on which an instance method was invoked can be explicitly accessed as this. It is an error to refer to this in a static method.
+A method declared with a static modifier is a ***static method***. A static method does not operate on a specific instance and can only directly access static members.
+A method declared without a static modifier is an ***instance method***. An instance method operates on a specific instance and can access both static and instance members. The instance on which an instance method was invoked can be explicitly accessed as this. It is an error to refer to this in a static method.
 The following Entity class has both static and instance members.
 ```csharp
 class Entity
 {
 	static int nextSerialNo;
 	int serialNo;
-	public Entity() {
+	public Entity() 
+	{
 		serialNo = nextSerialNo++;
 	}
-	public int GetSerialNo() {
+	public int GetSerialNo() 
+	{
 		return serialNo;
 	}
-	public static int GetNextSerialNo() {
+	public static int GetNextSerialNo() 
+	{
 		return nextSerialNo;
 	}
-	public static void SetNextSerialNo(int value) {
+	public static void SetNextSerialNo(int value) 
+	{
 		nextSerialNo = value;
 	}
 }
@@ -595,25 +606,26 @@ The GetNextSerialNo and SetNextSerialNo static methods can access the nextSerial
 The following example shows the use of the Entity class.
 ```csharp
 using System;
-class Test
+class Example
 {
-	static void Main() {
+	static void Main() 
+	{
 		Entity.SetNextSerialNo(1000);
 		Entity e1 = new Entity();
 		Entity e2 = new Entity();
-		Console.WriteLine(e1.GetSerialNo());				// Outputs "1000"
-		Console.WriteLine(e2.GetSerialNo());				// Outputs "1001"
-		Console.WriteLine(Entity.GetNextSerialNo());		// Outputs "1002"
+		Console.WriteLine(e1.GetSerialNo());            // Outputs "1000"
+		Console.WriteLine(e2.GetSerialNo());            // Outputs "1001"
+		Console.WriteLine(Entity.GetNextSerialNo());    // Outputs "1002"
 	}
 }
 ```
-Note that the SetNextSerialNo and GetNextSerialNo static methods are invoked on the class whereas the GetSerialNo instance method is invoked on instances of the class.
+Note that the `SetNextSerialNo` and `GetNextSerialNo` static methods are invoked on the class whereas the `GetSerialNo` instance method is invoked on instances of the class.
 #### Virtual, override, and abstract methods
-When an instance method declaration includes a virtual modifier, the method is said to be a virtual method. When no virtual modifier is present, the method is said to be a non-virtual method.
-When a virtual method is invoked, the run-time type of the instance for which that invocation takes place determines the actual method implementation to invoke. In a nonvirtual method invocation, the compile-time type of the instance is the determining factor.
-A virtual method can be overridden in a derived class. When an instance method declaration includes an override modifier, the method overrides an inherited virtual method with the same signature. Whereas a virtual method declaration introduces a new method, an override method declaration specializes an existing inherited virtual method by providing a new implementation of that method.
-An abstract method is a virtual method with no implementation. An abstract method is declared with the abstract modifier and is permitted only in a class that is also declared abstract. An abstract method must be overridden in every non-abstract derived class.
-The following example declares an abstract class, Expression, which represents an expression tree node, and three derived classes, Constant, VariableReference, and Operation, which implement expression tree nodes for constants, variable references, and arithmetic operations. (This is similar to, but not to be confused with the expression tree types introduced in §10.7).
+When an instance method declaration includes a `virtual` modifier, the method is said to be a ***virtual method***. When no virtual modifier is present, the method is said to be a ***non-virtual method***.
+When a virtual method is invoked, the ***run-time type*** of the instance for which that invocation takes place determines the actual method implementation to invoke. In a nonvirtual method invocation, the ***compile-time type*** of the instance is the determining factor.
+A virtual method can be ***overridden*** in a derived class. When an instance method declaration includes an override modifier, the method overrides an inherited virtual method with the same signature. Whereas a virtual method declaration introduces a new method, an override method declaration specializes an existing inherited virtual method by providing a new implementation of that method.
+An ***abstract method*** is a virtual method with no implementation. An abstract method is declared with the abstract modifier and is permitted only in a class that is also declared abstract. An abstract method must be overridden in every non-abstract derived class.
+The following example declares an abstract class, Expression, which represents an expression tree node, and three derived classes, Constant, VariableReference, and Operation, which implement expression tree nodes for constants, variable references, and arithmetic operations. (This is similar to, but not to be confused with the expression tree types).
 ```csharp
 using System;
 using System.Collections;
@@ -624,22 +636,27 @@ public abstract class Expression
 public class Constant: Expression
 {
 	double value;
-	public Constant(double value) {
+	public Constant(double value) 
+	{
 		this.value = value;
 	}
-	public override double Evaluate(Hashtable vars) {
+	public override double Evaluate(Hashtable vars) 
+	{
 		return value;
 	}
 }
 public class VariableReference: Expression
 {
 	string name;
-	public VariableReference(string name) {
+	public VariableReference(string name) 
+	{
 		this.name = name;
 	}
-	public override double Evaluate(Hashtable vars) {
+	public override double Evaluate(Hashtable vars) 
+	{
 		object value = vars[name];
-		if (value == null) {
+		if (value == null) 
+		{
 			throw new Exception("Unknown variable: " + name);
 		}
 		return Convert.ToDouble(value);
@@ -650,12 +667,14 @@ public class Operation: Expression
 	Expression left;
 	char op;
 	Expression right;
-	public Operation(Expression left, char op, Expression right) {
+	public Operation(Expression left, char op, Expression right) 
+	{
 		this.left = left;
 		this.op = op;
 		this.right = right;
 	}
-	public override double Evaluate(Hashtable vars) {
+	public override double Evaluate(Hashtable vars) 
+	{
 		double x = left.Evaluate(vars);
 		double y = right.Evaluate(vars);
 		switch (op) {
@@ -668,22 +687,23 @@ public class Operation: Expression
 	}
 }
 ```
-The previous four classes can be used to model arithmetic expressions. For example, using instances of these classes, the expression x + 3 can be represented as follows.
+The previous four classes can be used to model arithmetic expressions. For example, using instances of these classes, the expression `x + 3` can be represented as follows.
 ```csharp
 Expression e = new Operation(
 	new VariableReference("x"),
 	'+',
 	new Constant(3));
 ```
-The Evaluate method of an Expression instance is invoked to evaluate the given expression and produce a double value. The method takes as an argument a Hashtable that contains variable names (as keys of the entries) and values (as values of the entries). The Evaluate method is a virtual abstract method, meaning that non-abstract derived classes must override it to provide an actual implementation.
-A Constant’s implementation of Evaluate simply returns the stored constant. A VariableReference’s implementation looks up the variable name in the hashtable and returns the resulting value. An Operation’s implementation first evaluates the left and right operands (by recursively invoking their Evaluate methods) and then performs the given arithmetic operation.
-The following program uses the Expression classes to evaluate the expression x * (y + 2) for different values of x and y.
+The `Evaluate` method of an `Expression` instance is invoked to evaluate the given expression and produce a `double` value. The method takes as an argument a `Hashtable` that contains variable names (as keys of the entries) and values (as values of the entries). The Evaluate method is a virtual abstract method, meaning that non-abstract derived classes must override it to provide an actual implementation.
+A `Constant`'s implementation of `Evaluate` simply returns the stored constant. A `VariableReference`'s implementation looks up the variable name in the hashtable and returns the resulting value. An `Operation`'s implementation first evaluates the left and right operands (by recursively invoking their `Evaluate` methods) and then performs the given arithmetic operation.
+The following program uses the `Expression` classes to evaluate the expression `x * (y + 2)` for different values of `x` and `y`.
 ```csharp
 using System;
 using System.Collections;
-class Test
+class Example
 {
-	static void Main() {
+	static void Main() 
+	{
 		Expression e = new Operation(
 			new VariableReference("x"),
 			'*',
@@ -704,163 +724,195 @@ class Test
 }
 ```
 #### Method overloading
-Method overloading permits multiple methods in the same class to have the same name as long as they have unique signatures. When compiling an invocation of an overloaded method, the compiler uses overload resolution to determine the specific method to invoke. Overload resolution finds the one method that best matches the arguments or reports an error if no single best match can be found. The following example shows overload resolution in effect. The comment for each invocation in the Main method shows which method is actually invoked.
+Method ***overloading*** permits multiple methods in the same class to have the same name as long as they have unique signatures. When compiling an invocation of an overloaded method, the compiler uses ***overload resolution*** to determine the specific method to invoke. Overload resolution finds the one method that best matches the arguments or reports an error if no single best match can be found. The following example shows overload resolution in effect. The comment for each invocation in the Main method shows which method is actually invoked.
 ```csharp
-class Test
+class Example
 {
-	static void F() {
+	static void F() 
+	{
 		Console.WriteLine("F()");
 	}
-	static void F(object x) {
+	static void F(object x) 
+	{
 		Console.WriteLine("F(object)");
 	}
-	static void F(int x) {
+	static void F(int x) 
+	{
 		Console.WriteLine("F(int)");
 	}
-	static void F(double x) {
+	static void F(double x) 
+	{
 		Console.WriteLine("F(double)");
 	}
-	static void F<T>(T x) {
+	static void F<T>(T x) 
+	{
 		Console.WriteLine("F<T>(T)");
 	}
-	static void F(double x, double y) {
+	static void F(double x, double y) 
+	{
 		Console.WriteLine("F(double, double)");
 	}
-	static void Main() {
-		F();					// Invokes F()
-		F(1);					// Invokes F(int)
-		F(1.0);				// Invokes F(double)
-		F("abc");			// Invokes F(object)
-		F((double)1);		// Invokes F(double)
-		F((object)1);		// Invokes F(object)
-		F<int>(1);			// Invokes F<T>(T)
-		F(1, 1);				// Invokes F(double, double)	}
+	static void Main()
+	{
+		F();            // Invokes F()
+		F(1);           // Invokes F(int)
+		F(1.0);         // Invokes F(double)
+		F("abc");       // Invokes F<string>(string)
+		F((double)1);   // Invokes F(double)
+		F((object)1);   // Invokes F(object)
+		F<int>(1);      // Invokes F<T>(T)
+		F(1, 1);        // Invokes F(double, double)
+	}
 }
 ```
 As shown by the example, a particular method can always be selected by explicitly casting the arguments to the exact parameter types and/or explicitly supplying type arguments.
 ### Other function members
-
-Members that contain executable code are collectively known as the function members of a class. The preceding subclause describes methods, which are the primary kind of function members. This subclause describes the other kinds of function members supported by C#: constructors, properties, indexers, events, operators, and finalizers.
-The following table shows a generic class called List<T>, which implements a growable list of objects. The class contains several examples of the most common kinds of function members.
+Members that contain executable code are collectively known as the ***function members*** of a class. The preceding section describes methods, which are the primary kind of function members. This section describes the other kinds of function members supported by C#: constructors, properties, indexers, events, operators, and finalizers.
+The following shows a generic class called List<T>, which implements a growable list of objects. The class contains several examples of the most common kinds of function members.
 ```csharp
 public class List<T>
 {
-	const int defaultCapacity = 4;	Constant
+	// Constant
+	const int defaultCapacity = 4;
+
+	// Fields
 	T[] items;
-	int count;	Fields
-	public List(int capacity = defaultCapacity) {
+	int count;
+
+	// Constructor
+	public List(int capacity = defaultCapacity) 
+	{
 		items = new T[capacity];
-	}	Constructors
-	public int Count {
-		get { return count; }
 	}
-	public int Capacity {
-		get {
-			return items.Length;
-		}
-		set {
+
+	// Properties
+	public int Count => count; 
+
+	public int Capacity 
+	{
+		get { return items.Length; }
+		set 
+		{
 			if (value < count) value = count;
-			if (value != items.Length) {
+			if (value != items.Length) 
+			{
 				T[] newItems = new T[value];
 				Array.Copy(items, 0, newItems, 0, count);
 				items = newItems;
 			}
 		}
-	}	Properties
+	}
 
-	public T this[int index] {
-		get {
+	// Indexer
+	public T this[int index] 
+	{
+		get 
+		{
 			return items[index];
 		}
-		set {
+		set 
+		{
 			items[index] = value;
 			OnChanged();
 		}
-	}	Indexer
-	public void Add(T item) {
+	}
+	
+	// Methods
+	public void Add(T item) 
+	{
 		if (count == Capacity) Capacity = count * 2;
 		items[count] = item;
 		count++;
 		OnChanged();
 	}
-	protected virtual void OnChanged() {
-		if (Changed != null) Changed(this, EventArgs.Empty);
-	}
-	public override bool Equals(object other) {
-		return Equals(this, other as List<T>);
-	}
-	static bool Equals(List<T> a, List<T> b) {
+	protected virtual void OnChanged() =>
+		Changed?.Invoke(this, EventArgs.Empty);
+
+	public override bool Equals(object other) =>
+		Equals(this, other as List<T>);
+
+	static bool Equals(List<T> a, List<T> b) 
+	{
 		if (a == null) return b == null;
-		if (b == null || a.count != b.count) return false;
-		for (int i = 0; i < a.count; i++) {
-			if (!object.Equals(a.items[i], b.items[i])) {
+		if (b == null || a.count != b.count) 
+		return false;
+		for (int i = 0; i < a.count; i++) 
+		{
+			if (!object.Equals(a.items[i], b.items[i])) 
+			{
 				return false;
 			}
 		}
       return true;
-	}	Methods
-	public event EventHandler Changed;	Event
-	public static bool operator ==(List<T> a, List<T> b) {
-		return Equals(a, b);
 	}
-	public static bool operator !=(List<T> a, List<T> b) {
-		return !Equals(a, b);
-	}	Operators
+
+	// Event
+	public event EventHandler Changed;
+
+	// Operators
+	public static bool operator ==(List<T> a, List<T> b) => 
+		Equals(a, b);
+
+	public static bool operator !=(List<T> a, List<T> b) => 
+		!Equals(a, b);
 }
 ```
 
 #### Constructors
-C# supports both instance and static constructors. An instance constructor is a member that implements the actions required to initialize an instance of a class. A static constructor is a member that implements the actions required to initialize a class itself when it is first loaded.
+C# supports both instance and static constructors. An ***instance constructor*** is a member that implements the actions required to initialize an instance of a class. A ***static constructor*** is a member that implements the actions required to initialize a class itself when it is first loaded.
 A constructor is declared like a method with no return type and the same name as the containing class. If a constructor declaration includes a static modifier, it declares a static constructor. Otherwise, it declares an instance constructor.
-Instance constructors can be overloaded, and can have optional parameters. For example, the List<T> class declares an instance constructor that takes an optional int parameter.two instance constructors, one with no parameters and one that takes an int parameter. Instance constructors are invoked using the new operator. The following statements allocate two List<string> instances using the constructor of the List class with and without the optional argument.each of the constructors of the List class.
+Instance constructors can be overloaded, and can have optional parameters. For example, the `List<T>` class declares an instance constructor that takes an optional int parameter.two instance constructors, one with no parameters and one that takes an int parameter. Instance constructors are invoked using the new operator. The following statements allocate two List<string> instances using the constructor of the List class with and without the optional argument.each of the constructors of the List class.
 ```csharp
 List<string> list1 = new List<string>();
 List<string> list2 = new List<string>(10);
 ```
 Unlike other members, instance constructors are not inherited, and a class has no instance constructors other than those actually declared in the class. If no instance constructor is supplied for a class, then an empty one with no parameters is automatically provided.
 #### Properties
-Properties are a natural extension of fields. Both are named members with associated types, and the syntax for accessing fields and properties is the same. However, unlike fields, properties do not denote storage locations. Instead, properties have accessors that specify the statements to be executed when their values are read or written.
-A property is declared like a field, except that the declaration ends with a get accessor and/or a set accessor written between the delimiters { and } instead of ending in a semicolon. A property that has both a get accessor and a set accessor is a read-write property, a property that has only a get accessor is a read-only property, and a property that has only a set accessor is a write-only property.
+***Properties*** are a natural extension of fields. Both are named members with associated types, and the syntax for accessing fields and properties is the same. However, unlike fields, properties do not denote storage locations. Instead, properties have ***accessors*** that specify the statements to be executed when their values are read or written.
+A property is declared like a field, except that the declaration ends with a get accessor and/or a set accessor written between the delimiters `{` and `}` instead of ending in a semicolon. A property that has both a get accessor and a set accessor is a ***read-write property***, a property that has only a get accessor is a ***read-only property***, and a property that has only a set accessor is a ***write-only property***.
 A get accessor corresponds to a parameterless method with a return value of the property type. Except as the target of an assignment, when a property is referenced in an expression, the get accessor of the property is invoked to compute the value of the property.
 A set accessor corresponds to a method with a single parameter named value and no return type. When a property is referenced as the target of an assignment or as the operand of ++ or --, the set accessor is invoked with an argument that provides the new value.
-The List<T> class declares two properties, Count and Capacity, which are read-only and read-write, respectively. The following is an example of use of these properties.
+The `List<T>` class declares two properties, Count and Capacity, which are read-only and read-write, respectively. The following is an example of use of these properties.
 
 ```csharp
 List<string> names = new List<string>();
-names.Capacity = 100;			// Invokes set accessor
-int i = names.Count;				// Invokes get accessor
-int j = names.Capacity;			// Invokes get accessor
+names.Capacity = 100;   // Invokes set accessor
+int i = names.Count;    // Invokes get accessor
+int j = names.Capacity; // Invokes get accessor
 ```
 Similar to fields and methods, C# supports both instance properties and static properties. Static properties are declared with the static modifier, and instance properties are declared without it.
-The accessor(s) of a property can be virtual. When a property declaration includes a virtual, abstract, or override modifier, it applies to the accessor(s) of the property.
+The accessor(s) of a property can be virtual. When a property declaration includes a `virtual`, `abstract`, or `override` modifier, it applies to the accessor(s) of the property.
 #### Indexers
-An indexer is a member that enables objects to be indexed in the same way as an array. An indexer is declared like a property except that the name of the member is this followed by a parameter list written between the delimiters [ and ]. The parameters are available in the accessor(s) of the indexer. Similar to properties, indexers can be read-write, read-only, and write-only, and the accessor(s) of an indexer can be virtual.
-The List class declares a single read-write indexer that takes an int parameter. The indexer makes it possible to index List instances with int values. For example
+An ***indexer*** is a member that enables objects to be indexed in the same way as an array. An indexer is declared like a property except that the name of the member is this followed by a parameter list written between the delimiters `[` and `]`. The parameters are available in the accessor(s) of the indexer. Similar to properties, indexers can be read-write, read-only, and write-only, and the accessor(s) of an indexer can be virtual.
+The `List` class declares a single read-write indexer that takes an `int` parameter. The indexer makes it possible to index `List` instances with `int` values. For example
 ```csharp
 List<string> names = new List<string>();
 names.Add("Liz");
 names.Add("Martha");
 names.Add("Beth");
-for (int i = 0; i < names.Count; i++) {
+for (int i = 0; i < names.Count; i++) 
+{
 	string s = names[i];
 	names[i] = s.ToUpper();
 }
 ```
 Indexers can be overloaded, meaning that a class can declare multiple indexers as long as the number or types of their parameters differ.
 #### Events
-An event is a member that enables a class or object to provide notifications. An event is declared like a field except that the declaration includes an event keyword and the type must be a delegate type.
-Within a class that declares an event member, the event behaves just like a field of a delegate type (provided the event is not abstract and does not declare accessors). The field stores a reference to a delegate that represents the event handlers that have been added to the event. If no event handlers are present, the field is null.
-The List<T> class declares a single event member called Changed, which indicates that a new item has been added to the list. The Changed event is raised by the OnChanged virtual method, which first checks whether the event is null (meaning that no handlers are present). The notion of raising an event is precisely equivalent to invoking the delegate represented by the event—thus, there are no special language constructs for raising events.
-Clients react to events through event handlers. Event handlers are attached using the += operator and removed using the -= operator. The following example attaches an event handler to the Changed event of a List<string>.
+An ***event*** is a member that enables a class or object to provide notifications. An event is declared like a field except that the declaration includes an event keyword and the type must be a delegate type.
+Within a class that declares an event member, the event behaves just like a field of a delegate type (provided the event is not abstract and does not declare accessors). The field stores a reference to a delegate that represents the event handlers that have been added to the event. If no event handlers are present, the field is `null`.
+The `List<T>` class declares a single event member called `Changed`, which indicates that a new item has been added to the list. The Changed event is raised by the `OnChanged` virtual method, which first checks whether the event is `null` (meaning that no handlers are present). The notion of raising an event is precisely equivalent to invoking the delegate represented by the event—thus, there are no special language constructs for raising events.
+Clients react to events through ***event handlers***. Event handlers are attached using the += operator and removed using the -= operator. The following example attaches an event handler to the `Changed` event of a `List<string>`.
 ```csharp
 using System;
-class Test
+class Example
 {
 	static int changeCount;
-	static void ListChanged(object sender, EventArgs e) {
+	static void ListChanged(object sender, EventArgs e) 
+	{
 		changeCount++;
 	}
-	static void Main() {
+	static void Main() 
+	{
 		List<string> names = new List<string>();
 		names.Changed += new EventHandler(ListChanged);
 		names.Add("Liz");
@@ -872,61 +924,67 @@ class Test
 ```
 For advanced scenarios where control of the underlying storage of an event is desired, an event declaration can explicitly provide add and remove accessors, which are somewhat similar to the set accessor of a property.
 #### Operators
-An operator is a member that defines the meaning of applying a particular expression operator to instances of a class. Three kinds of operators can be defined: unary operators, binary operators, and conversion operators. All operators must be declared as public and static.
-The List<T> class declares two operators, operator == and operator !=, and thus gives new meaning to expressions that apply those operators to List instances. Specifically, the operators define equality of two List<T> instances as comparing each of the contained objects using their Equals methods. The following example uses the == operator to compare two List<int> instances.
+An ***operator*** is a member that defines the meaning of applying a particular expression operator to instances of a class. Three kinds of operators can be defined: unary operators, binary operators, and conversion operators. All operators must be declared as `public` and `static`.
+The `List<T>` class declares two operators, `operator ==` and `operator !=`, and thus gives new meaning to expressions that apply those operators to List instances. Specifically, the operators define equality of two `List<T>` instances as comparing each of the contained objects using their Equals methods. The following example uses the == operator to compare two `List<int>` instances.
 ```csharp
 using System;
-class Test
+class Example
 {
-	static void Main() {
+	static void Main() 
+	{
 		List<int> a = new List<int>();
 		a.Add(1);
 		a.Add(2);
 		List<int> b = new List<int>();
 		b.Add(1);
 		b.Add(2);
-		Console.WriteLine(a == b);		// Outputs "True" 
+		Console.WriteLine(a == b);  // Outputs "True" 
 		b.Add(3);
-		Console.WriteLine(a == b);		// Outputs "False"
+		Console.WriteLine(a == b);  // Outputs "False"
 	}
 }
 ```
-The first Console.WriteLine outputs True because the two lists contain the same number of objects with the same values in the same order. Had List<T> not defined operator ==, the first Console.WriteLine would have output False because a and b reference different List<int> instances.
+The first `Console.WriteLine` outputs True because the two lists contain the same number of objects with the same values in the same order. Had `List<T>` not defined `operator ==`, the first `Console.WriteLine` would have output False because `a` and `b` reference different `List<int>` instances.
 #### Finalizers
-A finalizer is a member that implements the actions required to finalize an instance of a class. Finalizers cannot have parameters, they cannot have accessibility modifiers, and they cannot be invoked explicitly. The finalizer for an instance is invoked automatically during garbage collection.
+A ***finalizer*** is a member that implements the actions required to finalize an instance of a class. Finalizers cannot have parameters, they cannot have accessibility modifiers, and they cannot be invoked explicitly. The finalizer for an instance is invoked automatically during garbage collection.
 The garbage collector is allowed wide latitude in deciding when to collect objects and run finalizers. Specifically, the timing of finalizer invocations is not deterministic, and finalizers may be executed on any thread. For these and other reasons, classes should implement finalizers only when no other solutions are feasible.
-The using statement provides a better approach to object destruction.
-1.8 Structs
-Like classes, structs are data structures that can contain data members and function members, but unlike classes, structs are value types and do not require heap allocation. A variable of a struct type directly stores the data of the struct, whereas a variable of a class type stores a reference to a dynamically allocated object. Struct types do not support user-specified inheritance, and all struct types implicitly inherit from type object.
-Structs are particularly useful for small data structures that have value semantics. Complex numbers, points in a coordinate system, or key-value pairs in a dictionary are all good examples of structs. The use of structs rather than classes for small data structures can make a large difference in the number of memory allocations an application performs. For example, the following program creates and initializes an array of 100 points. With Point implemented as a class, 101 separate objects are instantiated—one for the array and one each for the 100 elements.
+The `using` statement provides a better approach to object destruction.
+## Structs
+Like classes, ***structs*** are data structures that can contain data members and function members, but unlike classes, structs are value types and do not require heap allocation. A variable of a struct type directly stores the data of the struct, whereas a variable of a class type stores a reference to a dynamically allocated object. Struct types do not support user-specified inheritance, and all struct types implicitly inherit from type `object`.
+Structs are particularly useful for small data structures that have value semantics. Complex numbers, points in a coordinate system, or key-value pairs in a dictionary are all good examples of structs. The use of structs rather than classes for small data structures can make a large difference in the number of memory allocations an application performs. For example, the following program creates and initializes an array of 100 points. With `Point` implemented as a class, 101 separate objects are instantiated—one for the array and one each for the 100 elements.
 ```csharp
 class Point
 {
 	public int x, y;
-	public Point(int x, int y) {
+	public Point(int x, int y) 
+	{
 		this.x = x;
 		this.y = y;
 	}
 }
-class Test
+class Example
 {
-	static void Main() {
+	static void Main() 
+	{
 		Point[] points = new Point[100];
 		for (int i = 0; i < 100; i++)
 			points[i] = new Point(i, i);
 	}
 }
+```
 An alternative is to make Point a struct.
+```csharp
 struct Point
 {
 	public int x, y;
-	public Point(int x, int y) {
+	public Point(int x, int y) 
+	{
 		this.x = x;
 		this.y = y;
 	}
 }
 ```
-Now, only one object is instantiated—the one for the array—and the Point instances are stored in-line in the array.
+Now, only one object is instantiated—the one for the array—and the `Point` instances are stored in-line in the array.
 Struct constructors are invoked with the new operator, but that does not imply that memory is being allocated. Instead of dynamically allocating an object and returning a reference to it, a struct constructor simply returns the struct value itself (typically in a temporary location on the stack), and this value is then copied as necessary.
 With classes, it is possible for two variables to reference the same object and thus possible for operations on one variable to affect the object referenced by the other variable. With structs, the variables each have their own copy of the data, and it is not possible for operations on one to affect the other. For example, the output produced by the following code fragment depends on whether Point is a class or a struct.
 ```csharp
@@ -935,35 +993,38 @@ Point b = a;
 a.x = 20;
 Console.WriteLine(b.x);
 ```
-If Point is a class, the output is 20 because a and b reference the same object. If Point is a struct, the output is 10 because the assignment of a to b creates a copy of the value, and this copy is unaffected by the subsequent assignment to a.x.
-The previous example highlights two of the limitations of structs. First, copying an entire struct is typically less efficient than copying an object reference, so assignment and value parameter passing can be more expensive with structs than with reference types. Second, except for ref and out parameters, it is not possible to create references to structs, which rules out their usage in a number of situations.
+If `Point` is a class, the output is 20 because a and b reference the same object. If Point is a struct, the output is 10 because the assignment of a to b creates a copy of the value, and this copy is unaffected by the subsequent assignment to a.x.
+The previous example highlights two of the limitations of structs. First, copying an entire struct is typically less efficient than copying an object reference, so assignment and value parameter passing can be more expensive with structs than with reference types. Second, except for `ref` and `out` parameters, it is not possible to create references to structs, which rules out their usage in a number of situations.
 ## Arrays
-An array is a data structure that contains a number of variables that are accessed through computed indices. The variables contained in an array, also called the elements of the array, are all of the same type, and this type is called the element type of the array.
-Array types are reference types, and the declaration of an array variable simply sets aside space for a reference to an array instance. Actual array instances are created dynamically at run-time using the new operator. The new operation specifies the length of the new array instance, which is then fixed for the lifetime of the instance. The indices of the elements of an array range from 0 to Length - 1. The new operator automatically initializes the elements of an array to their default value, which, for example, is zero for all numeric types and null for all reference types.
-The following example creates an array of int elements, initializes the array, and prints out the contents of the array.
+An ***array*** is a data structure that contains a number of variables that are accessed through computed indices. The variables contained in an array, also called the ***elements*** of the array, are all of the same type, and this type is called the ***element type*** of the array.
+Array types are reference types, and the declaration of an array variable simply sets aside space for a reference to an array instance. Actual array instances are created dynamically at run-time using the new operator. The new operation specifies the ***length*** of the new array instance, which is then fixed for the lifetime of the instance. The indices of the elements of an array range from `0` to `Length - 1`. The `new` operator automatically initializes the elements of an array to their default value, which, for example, is zero for all numeric types and `null` for all reference types.
+The following example creates an array of `int` elements, initializes the array, and prints out the contents of the array.
 ```csharp
 using System;
-class Test
+class ArrayExample
 {
-	static void Main() {
+	static void Main() 
+	{
 		int[] a = new int[10];
-		for (int i = 0; i < a.Length; i++) {
+		for (int i = 0; i < a.Length; i++) 
+		{
 			a[i] = i * i;
 		}
-		for (int i = 0; i < a.Length; i++) {
-			Console.WriteLine("a[{0}] = {1}", i, a[i]);
+		for (int i = 0; i < a.Length; i++) 
+		{
+			Console.WriteLine($"a[{i}] = {a[i]}");
 		}
 	}
 }
 ```
-This example creates and operates on a single-dimensional array. C# also supports multi-dimensional arrays. The number of dimensions of an array type, also known as the rank of the array type, is one plus the number of commas written between the square brackets of the array type. The following example allocates a onesingle-dimensional, a two-dimensional, and a three-dimensional array, respectively.
+This example creates and operates on a ***single-dimensional array***. C# also supports ***multi-dimensional arrays***. The number of dimensions of an array type, also known as the ***rank*** of the array type, is one plus the number of commas written between the square brackets of the array type. The following example allocates a onesingle-dimensional, a two-dimensional, and a three-dimensional array, respectively.
 ```csharp
 int[] a1 = new int[10];
 int[,] a2 = new int[10, 5];
 int[,,] a3 = new int[10, 5, 2];
 ```
-The a1 array contains 10 elements, the a2 array contains 50 (10 × 5) elements, and the a3 array contains 100 (10 × 5 × 2) elements.
-The element type of an array can be any type, including an array type. An array with elements of an array type is sometimes called a jagged array because the lengths of the element arrays do not all have to be the same. The following example allocates an array of arrays of int:
+The `a1` array contains 10 elements, the `a2` array contains 50 (10 × 5) elements, and the `a3` array contains 100 (10 × 5 × 2) elements.
+The element type of an array can be any type, including an array type. An array with elements of an array type is sometimes called a ***jagged array*** because the lengths of the element arrays do not all have to be the same. The following example allocates an array of arrays of int:
 ```csharp
 int[][] a = new int[3][];
 a[0] = new int[10];
@@ -971,7 +1032,7 @@ a[1] = new int[5];
 a[2] = new int[20];
 ```
 The first line creates an array with three elements, each of type int[] and each with an initial value of null. The subsequent lines then initialize the three elements with references to individual array instances of varying lengths.
-The new operator permits the initial values of the array elements to be specified using an array initializer, which is a list of expressions written between the delimiters { and }. The following example allocates and initializes an int[] with three elements.
+The new operator permits the initial values of the array elements to be specified using an ***array initializer***, which is a list of expressions written between the delimiters `{` and `}`. The following example allocates and initializes an `int[]` with three elements.
 ```csharp
 int[] a = new int[] {1, 2, 3};
 ```
@@ -988,8 +1049,8 @@ t[2] = 3;
 int[] a = t;
 ```
 ## Interfaces
-An interface defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface does not provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
-Interfaces may employ multiple inheritance. In the following example, the interface IComboBox inherits from both ITextBox and IListBox.
+An ***interface*** defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface does not provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
+Interfaces may employ ***multiple inheritance***. In the following example, the interface `IComboBox` inherits from both `ITextBox` and `IListBox`.
 ```csharp
 interface IControl
 {
@@ -1005,7 +1066,7 @@ interface IListBox: IControl
 }
 interface IComboBox: ITextBox, IListBox {}
 ```
-Classes and structs can implement multiple interfaces. In the following example, the class EditBox implements both IControl and IDataBound.
+Classes and structs can implement multiple interfaces. In the following example, the class `EditBox` implements both `IControl` and `IDataBound`.
 ```csharp
 interface IDataBound
 {
@@ -1023,13 +1084,13 @@ EditBox editBox = new EditBox();
 IControl control = editBox;
 IDataBound dataBound = editBox;
 ```
-In cases where an instance is not statically known to implement a particular interface, dynamic type casts can be used. For example, the following statements use dynamic type casts to obtain an object’s IControl and IDataBound interface implementations. Because the run-time actual type of the object is EditBox, the casts succeed.
+In cases where an instance is not statically known to implement a particular interface, dynamic type casts can be used. For example, the following statements use dynamic type casts to obtain an object’s `IControl` and `IDataBound` interface implementations. Because the run-time actual type of the object is `EditBox`, the casts succeed.
 ```csharp
 object obj = new EditBox();
 IControl control = (IControl)obj;
 IDataBound dataBound = (IDataBound)obj;
 ```
-In the previous EditBox class, the Paint method from the IControl interface and the Bind method from the IDataBound interface are implemented using public members. C# also supports explicit interface member implementations, using which the class or struct can avoid making the members public. An explicit interface member implementation is written using the fully qualified interface member name. For example, the EditBox class could implement the IControl.Paint and IDataBound.Bind methods using explicit interface member implementations as follows.
+In the previous `EditBox` class, the `Paint` method from the `IControl` interface and the `Bind` method from the `IDataBound` interface are implemented using public members. C# also supports explicit ***interface member implementations***, using which the class or struct can avoid making the members public. An explicit interface member implementation is written using the fully qualified interface member name. For example, the `EditBox` class could implement the `IControl.Paint` and `IDataBound.Bind` methods using explicit interface member implementations as follows.
 ```csharp
 public class EditBox: IControl, IDataBound
 {
@@ -1037,15 +1098,15 @@ public class EditBox: IControl, IDataBound
 	void IDataBound.Bind(Binder b) {...}
 }
 ```
-Explicit interface members can only be accessed via the interface type. For example, the implementation of IControl.Paint provided by the previous EditBox class can only be invoked by first converting the EditBox reference to the IControl interface type.
+Explicit interface members can only be accessed via the interface type. For example, the implementation of `IControl.Paint` provided by the previous EditBox class can only be invoked by first converting the `EditBox` reference to the `IControl` interface type.
 ```csharp
 EditBox editBox = new EditBox();
-editBox.Paint();						// Error, no such method
+editBox.Paint();            // Error, no such method
 IControl control = editBox;
-control.Paint();						// Ok
+control.Paint();            // Ok
 ```
 ## Enums
-An enum type is a distinct value type with a set of named constants. The following example declares and uses an enum type named Color with three constant values, Red, Green, and Blue.
+An ***enum type*** is a distinct value type with a set of named constants. The following example declares and uses an enum type named `Color` with three constant values, `Red`, `Green`, and `Blue`.
 ```csharp
 using System;
 enum Color
@@ -1054,10 +1115,12 @@ enum Color
 	Green,
 	Blue
 }
-class Test
+class EnumExample
 {
-	static void PrintColor(Color color) {
-		switch (color) {
+	static void PrintColor(Color color) 
+	{
+		switch (color) 
+		{
 			case Color.Red:
 				Console.WriteLine("Red");
 				break;
@@ -1072,15 +1135,16 @@ class Test
 				break;
 		}
 	}
-	static void Main() {
+	static void Main() 
+	{
 		Color c = Color.Red;
 		PrintColor(c);
 		PrintColor(Color.Blue);
 	}
 }
 ```
-Each enum type has a corresponding integral type called the underlying type of the enum type. An enum type that does not explicitly declare an underlying type has an underlying type of int. An enum type’s storage format and range of possible values are determined by its underlying type. The set of values that an enum type can take on is not limited by its enum members. In particular, any value of the underlying type of an enum can be cast to the enum type and is a distinct valid value of that enum type.
-The following example declares an enum type named Alignment with an underlying type of sbyte.
+Each enum type has a corresponding integral type called the ***underlying type*** of the enum type. An enum type that does not explicitly declare an underlying type has an underlying type of int. An enum type’s storage format and range of possible values are determined by its underlying type. The set of values that an enum type can take on is not limited by its enum members. In particular, any value of the underlying type of an enum can be cast to the enum type and is a distinct valid value of that enum type.
+The following example declares an enum type named `Alignment` with an underlying type of `sbyte`.
 ```csharp
 enum Alignment: sbyte
 {
@@ -1095,12 +1159,12 @@ Enum values can be converted to integral values and vice versa using type casts.
 int i = (int)Color.Blue;		// int i = 2;
 Color c = (Color)2;				// Color c = Color.Blue;
 ```
-The default value of any enum type is the integral value zero converted to the enum type. In cases where variables are automatically initialized to a default value, this is the value given to variables of enum types. In order for the default value of an enum type to be easily available, the literal 0 implicitly converts to any enum type. Thus, the following is permitted.
+The default value of any enum type is the integral value zero converted to the enum type. In cases where variables are automatically initialized to a default value, this is the value given to variables of enum types. In order for the default value of an enum type to be easily available, the literal `0` implicitly converts to any enum type. Thus, the following is permitted.
 ```csharp
 Color c = 0;
 ```
 ## Delegates
-A delegate type represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are similar to the concept of function pointers found in some other languages, but unlike function pointers, delegates are object-oriented and type-safe.
+A ***delegate type*** represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are similar to the concept of function pointers found in some other languages, but unlike function pointers, delegates are object-oriented and type-safe.
 The following example declares and uses a delegate type named Function.
 ```csharp
 using System;
@@ -1108,24 +1172,29 @@ delegate double Function(double x);
 class Multiplier
 {
 	double factor;
-	public Multiplier(double factor) {
+	public Multiplier(double factor) 
+	{
 		this.factor = factor;
 	}
-	public double Multiply(double x) {
+	public double Multiply(double x) 
+	{
 		return x * factor;
 	}
 }
-class Test
+class DelegateExample
 {
-	static double Square(double x) {
+	static double Square(double x) 
+	{
 		return x * x;
 	}
-	static double[] Apply(double[] a, Function f) {
+	static double[] Apply(double[] a, Function f) 
+	{
 		double[] result = new double[a.Length];
 		for (int i = 0; i < a.Length; i++) result[i] = f(a[i]);
 		return result;
 	}
-	static void Main() {
+	static void Main() 
+	{
 		double[] a = {0.0, 0.5, 1.0};
 		double[] squares = Apply(a, Square);
 		double[] sines = Apply(a, Math.Sin);
@@ -1134,16 +1203,16 @@ class Test
 	}
 }
 ```
-An instance of the Function delegate type can reference any method that takes a double argument and returns a double value. The Apply method applies a given Function to the elements of a double[], returning a double[] with the results. In the Main method, Apply is used to apply three different functions to a double[].
-A delegate can reference either a static method (such as Square or Math.Sin in the previous example) or an instance method (such as m.Multiply in the previous example). A delegate that references an instance method also references a particular object, and when the instance method is invoked through the delegate, that object becomes this in the invocation.
-Delegates can also be created using anonymous functions, which are “in-line methods” that are created on the fly. Anonymous functions can see the local variables of the sourrounding methods. Thus, the multiplier example above can be written more easily without using a Multiplier class:
+An instance of the `Function` delegate type can reference any method that takes a `double` argument and returns a `double` value. The `Apply` method applies a given Function to the elements of a `double[]`, returning a `double[]` with the results. In the `Main` method, `Apply` is used to apply three different functions to a `double[]`.
+A delegate can reference either a static method (such as `Square` or `Math.Sin` in the previous example) or an instance method (such as `m.Multiply` in the previous example). A delegate that references an instance method also references a particular object, and when the instance method is invoked through the delegate, that object becomes this in the invocation.
+Delegates can also be created using anonymous functions, which are "in-line methods" that are created on the fly. Anonymous functions can see the local variables of the sourrounding methods. Thus, the multiplier example above can be written more easily without using a Multiplier class:
 ```csharp
 double[] doubles =  Apply(a, (double x) => x * 2.0);
 ```
 An interesting and useful property of a delegate is that it does not know or care about the class of the method it references; all that matters is that the referenced method has the same parameters and return type as the delegate.
 ## Attributes
-Types, members, and other entities in a C# program support modifiers that control certain aspects of their behavior. For example, the accessibility of a method is controlled using the public, protected, internal, and private modifiers. C# generalizes this capability such that user-defined types of declarative information can be attached to program entities and retrieved at run-time. Programs specify this additional declarative information by defining and using attributes.
-The following example declares a HelpAttribute attribute that can be placed on program entities to provide links to their associated documentation.
+Types, members, and other entities in a C# program support modifiers that control certain aspects of their behavior. For example, the accessibility of a method is controlled using the `public`, `protected`, `internal`, and `private` modifiers. C# generalizes this capability such that user-defined types of declarative information can be attached to program entities and retrieved at run-time. Programs specify this additional declarative information by defining and using ***attributes***.
+The following example declares a `HelpAttribute` attribute that can be placed on program entities to provide links to their associated documentation.
 
 ```csharp
 using System;
@@ -1152,19 +1221,20 @@ public class HelpAttribute: Attribute
 {
 	string url;
 	string topic;
-	public HelpAttribute(string url) {
+	public HelpAttribute(string url) 
+	{
 		this.url = url;
 	}
-	public string Url { 
-		get { return url; }
-	}
+
+	public string Url => url;
+
 	public string Topic {
 		get { return topic; }
 		set { topic = value; }
 	}
 }
 ```
-All attribute classes derive from the System.Attribute base class provided by the standard library. Attributes can be applied by giving their name, along with any arguments, inside square brackets just before the associated declaration. If an attribute’s name ends in Attribute, that part of the name can be omitted when the attribute is referenced. For example, the HelpAttribute attribute can be used as follows.
+All attribute classes derive from the System.Attribute base class provided by the standard library. Attributes can be applied by giving their name, along with any arguments, inside square brackets just before the associated declaration. If an attribute’s name ends in Attribute, that part of the name can be omitted when the attribute is referenced. For example, the `HelpAttribute` attribute can be used as follows.
 ```csharp
 [Help("http://msdn.microsoft.com/…/MyClass.htm")]
 public class Widget
@@ -1173,5 +1243,5 @@ public class Widget
 	public void Display(string text) {}
 }
 ```
-This example attaches a HelpAttribute to the Widget class …and another HelpAttribute to the Display method in the class. The public constructors of an attribute class control the information that must be provided when the attribute is attached to a program entity. Additional information can be provided by referencing public read-write properties of the attribute class (such as the reference to the Topic property previously).
+This example attaches a `HelpAttribute` to the `Widget` class ...and another `HelpAttribute` to the `Display` method in the class. The public constructors of an attribute class control the information that must be provided when the attribute is attached to a program entity. Additional information can be provided by referencing public read-write properties of the attribute class (such as the reference to the Topic property previously).
 When a particular attribute is requested through reflection, the constructor for the attribute class is invoked with the information provided in the program source, and the resulting attribute instance is returned. If additional information was provided through properties, those properties are set to the given values before the attribute instance is returned.

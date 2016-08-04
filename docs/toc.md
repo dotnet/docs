@@ -8,7 +8,7 @@
 ### [REST client](csharp/tutorials/console-webapiclient.md)
 ### [Working with LINQ](csharp/tutorials/working-with-linq.md)
 ### [Microservices hosted in Docker](csharp/tutorials/microservices.md)
-## [🔧 Tour of C#](csharp/features.md)
+## [🔧 Tour of C#](csharp/tour-of-csharp.md)
 ### [What's new in C# 6](csharp/csharp-6.md)
 ## [C# Concepts](csharp/concepts.md)
 ### [🔧 C# Type system](csharp/type-system.md)

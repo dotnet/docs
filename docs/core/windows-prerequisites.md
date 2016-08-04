@@ -32,7 +32,7 @@ You can see the full set of [supported operating systems](https://github.com/dot
 
 ## .NET Core dependencies
 
-.NET Core requires the VC++ Redistributable when running on Windows. It is installed for you by the .NET Core installer. You need to install the Visual C++ redistributable manually is if you are installing .NET Core via the installer script (`dotnet-install.ps1`). 
+.NET Core requires the VC++ Redistributable when running on Windows. It is installed for you by the .NET Core installer. You need to install the Visual C++ redistributable manually if you are installing .NET Core via the installer script (`dotnet-install.ps1`). 
 
 The Visual C++ Redistributable version differs by Windows version.
 

@@ -4,7 +4,7 @@ description: .NET Core Prerequisites
 keywords: .NET, .NET Core
 author: billwagner
 manager: wpickett
-ms.date: 07/27/16
+ms.date: 07/27/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies

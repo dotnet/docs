@@ -67,7 +67,7 @@ The [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) me
 
 A given component, like System.Runtime, describes:
 
-- Part of .NET Standard Library (just it's scope).
+- Part of .NET Standard Library (just its scope).
 - Multiple versions of .NET Standard Library, for that scope.
 
 Derivative artifacts are provided to enable more convenient reading and to enable certain developer scenarios (for example, using a compiler).

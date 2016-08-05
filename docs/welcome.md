@@ -46,7 +46,7 @@ This documentation will show you how to build an app from scratch or finish one 
 Open Source
 -----------
 
-Many parts of .NET are built by open source contributors. You can contribute to this [.NET Documentation](https://github.com/dotnet/core-docs). You can also read the source of and contribute to .NET products, including [.NET Core](https://github.com/core) and [Xamarin](http://open.xamarin.com). Key projects from Microsoft have been contributed to the [.NET Foundation](http://dotnetfoundation.org).
+Many parts of .NET are built by open source contributors. You can contribute to this [.NET Documentation](https://github.com/dotnet/core-docs). You can also read the source of and contribute to .NET products, including [.NET Core](https://github.com/dotnet/core) and [Xamarin](http://open.xamarin.com). Key projects from Microsoft have been contributed to the [.NET Foundation](http://dotnetfoundation.org).
 
 Community
 ---------

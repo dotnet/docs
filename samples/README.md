@@ -1,5 +1,5 @@
 # .NET Core Samples
-
+  
 This folder contains all the sample code that is part of any topic under
 the .NET Core documentation. There are several different projects that
 are organized in sub-folders. These sub-folders are organized similar
@@ -47,6 +47,7 @@ If you wish to add a code sample:
     - `win7-x64`
     - `win8-x64`
     - `win81-x64`
+    - `ubuntu.16.04-x64`
 
 We will have a CI system in place to build these projects shortly.
 

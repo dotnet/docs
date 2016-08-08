@@ -397,7 +397,7 @@ It's important to be able to test across platforms.  It's easiest to use [xUnit]
    * `netcoreapp1.0` listed as the only entry under `frameworks`.
    * A reference to `Microsoft.NETCore.App` version `1.0.0`.
    * A reference to xUnit version `2.2.0-beta2-build3300`.
-   * A reference to `dotnet-test-xunit` version `1.0.0-preview2-build1029`
+   * A reference to `dotnet-test-xunit` version `2.2.0-preview2-build1029`
    * A project reference to the library being tested.
    * The entry `"testRunner":"xunit"`.
    
@@ -416,7 +416,7 @@ It's important to be able to test across platforms.  It's easiest to use [xUnit]
                 "type":"platform"
             },
             "xunit":"2.2.0-beta2-build3300",
-            "dotnet-test-xunit":".0.0-preview2-build1029",
+            "dotnet-test-xunit":"2.2.0-preview2-build1029",
         },
         "frameworks":{
             "netcoreapp1.0":{}

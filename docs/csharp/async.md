@@ -52,7 +52,7 @@ And that’s it! The code expresses the intent (downloading some data asynchrono
 
 ### CPU-bound Example: Performing a Calculation for a Game
 
-Say you're writing a mobile game where pressing a button can inflict damage on many enemies on the screen.  Performing the damage calcuation can be expensive, and doing it on the UI thread would make the game appear to pause as the calculation is performed!
+Say you're writing a mobile game where pressing a button can inflict damage on many enemies on the screen.  Performing the damage calculation can be expensive, and doing it on the UI thread would make the game appear to pause as the calculation is performed!
 
 The best way to handle this is to start a background thread which does the work using `Task.Run`, and `await` its result.  This will allow the UI to feel smooth as the work is being done.
 
@@ -121,7 +121,7 @@ The following examples demonstrate various ways you can write async code in C#. 
 
 This snippet downloads the HTML from www.dotnetfoundation.org and counts the number of times the string ".NET" occurs in the HTML.  It uses ASP.NET MVC to define a web controller method which performs this task, returning the number.
 
-*Note: you shouldn't ever use Regexes if you plan on doing actual HTML parsing.  Please using a parsing library if this is your aim in production code.*
+*Note: you shouldn't ever use regular expressions if you plan on doing actual HTML parsing.  Please using a parsing library if this is your aim in production code.*
 
 ```csharp
 private readonly HttpClient _httpClient = new HttpClient();

@@ -23,7 +23,7 @@ C#, F# and Visual Basic are popular languages that target and rely on the .NET p
 
 There is great diversity across these languages, in philosophy and syntax, but also symmetry provided by a shared type system. This type system is provided by the underlying runtime environment. .NET was designed around the idea of a "common language runtime" that could support the requirements of diverse languages -- for example, dynamic and statically typed languages -- and enable interoperability between them. For example, it's possible to pass a collection of `People` objects between languages with no loss in semantics or capability.
 
-Multiple [.NET implementations and products](products.md) are available, based on open [.NET Standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) that specify the fundamentals of the platform. They are separately optimized for different application types (for example, desktop, mobile, gaming, cloud) and support many chips (e.g. x86/x64, ARM) and operating systems (e.g. Windows, Linux, iOS, Android, macOS). Open source is also an important part of the .NET ecosystem, with multiple .NET implementations and many libraries available under OSI-approved licenses.
+Multiple [.NET implementations and products](products.md) are available, based on open [.NET Standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) that specify the fundamentals of the platform. They are separately optimized for different application types (for example, desktop, mobile, gaming, cloud) and support many chips (for example, x86/x64, ARM) and operating systems (for example, Windows, Linux, iOS, Android, macOS). Open source is also an important part of the .NET ecosystem, with multiple .NET implementations and many libraries available under OSI-approved licenses.
 
 - Learn about [.NET](../standard/index.md)
 - Learn about [C#](../csharp/index.md)
@@ -56,7 +56,7 @@ Features
 Open source
 -----------
 
-The [.NET Core](https://github.com/dotnet/core) and [Mono](https://github.com/mono/mono) implementations of .NET are open source, using the MIT license. Documentation uses the [Creative Commons CC-BY](https://creativecommons.org/licenses/by/4.0/) license. .NET Core and Mono are sponsored by Microsoft and have many contributers from the community. 
+The [.NET Core](https://github.com/dotnet/core) and [Mono](https://github.com/mono/mono) implementations of .NET are open source, using the MIT license. Documentation uses the [Creative Commons CC-BY](https://creativecommons.org/licenses/by/4.0/) license. .NET Core and Mono are sponsored by Microsoft and have many contributors from the community. 
 
 These general purpose runtimes can be used as the basis of academic research or teaching/learning or commercial products. Their open nature also means that anyone can contribute back to the upstream product code given a bug or the desire for a new feature.
 

@@ -33,7 +33,7 @@ online playground, try these [interactive tutorials](http://go.microsoft.com/fwl
 
 **[Unit Testing in .NET Core using dotnet test](../core/testing/unit-testing-with-dotnet-test.md)**
 
-This guide shows how to create an ASP.NET Core web application and the associated unit tests. It will start by creating a simple web service application and then add tests, and continue by creating more tests to guide implementing new features. The completed code is available [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/unit-testing/using-dotnet-test).
+This guide shows how to create an ASP.NET Core web application and the associated unit tests. It will start by creating a simple web service application and then add tests, and continue by creating more tests to guide implementing new features. The completed code is available [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/core-projects/unit-testing/using-dotnet-test).
 
 ### Tutorials
 
@@ -76,18 +76,18 @@ These series of samples demonstrate many of the features of Language Integrated 
 **[Console Application](../csharp/tutorials/console-teleprompter.md)**
 
 This tutorial demonstrates Console I/O, the structure of a Console application, and
-the basics of the Task based asynchronous programming model. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/console-teleprompter).
+the basics of the Task based asynchronous programming model. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/getting-started/csharp/console-teleprompter).
 
 **[REST Client](../csharp/tutorials/console-webapiclient.md)**
 
 This tutorial demonstrates web communications, JSON serialization, and Object Oriented
 features in the C# language. A finished version of the code you'll build is located
-[in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/console-webapiclient).
+[in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/getting-started/csharp/console-webapiclient).
 
 **[Working with LINQ](../csharp/tutorials/working-with-linq.md)**
 
-This tutorial demonstrates many of the features of LINQ and the language elements that support it. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/console-linq).
+This tutorial demonstrates many of the features of LINQ and the language elements that support it. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/getting-started/csharp/console-linq).
 
 **[Microservices hosted in Docker](../csharp/tutorials/microservices.md)**
 
-This tutorial demonstrates building an asp.net core microservice and hosting it it Docker. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/WeatherMicroservice).
+This tutorial demonstrates building an asp.net core microservice and hosting it it Docker. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/getting-started/csharp/WeatherMicroservice).

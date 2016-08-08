@@ -4,7 +4,7 @@ Developers will be reading your documents to learn .NET core, and to use it in t
 Your goal is to create useful documentation that helps the reader on their journey. Our guidelines
 help with that. Our style guide contains four recommendations:
 - [Use a Conversational Tone](#use-a-conversational-tone)
-- [Write in 2nd Person](#write-in-2nd-person)
+- [Write in Second Person](#write-in-2nd-person)
 - [Use Active Voice](#use-active-voice)
 - [Target a 5th Grade Reading Level](#target-a-5th-grade-reading-level)
 
@@ -32,7 +32,7 @@ One feels that they are reading a dry account of a very dry topic.
 The first paragraph above follows our recommendation conversational style. The second
 is a more academic style. You see the difference immediately. 
 
-### Write in 2nd person
+### Write in second person
 #### Appropriate Style:
 You should write your articles as though you are speaking directly to the reader. You
 should use second person often (as I just have in these two sentences). 2nd person doesn't
@@ -40,18 +40,18 @@ always mean using the word 'you'. Write directly to the reader. Write imperative
 Tell your reader what you want them to learn.
 
 #### Inappropriate Style: 
-An author could also choose to write in 3rd person. In that model, an author must find some
-pronoun or noun to use when referring to the reader. A reader might often find this 3rd
+An author could also choose to write in third person. In that model, an author must find some
+pronoun or noun to use when referring to the reader. A reader might often find this third
 person style less engaging and less enjoyable to read.
 
-The first paragrah follows our recommended style. The second uses 3rd person. Please write
+The first paragraph follows our recommended style. The second uses third person. Please write
 in second person. You probably found that much easier to read.
 
 ### Use Active Voice
 
 Write your articles in active voice. Active voice means that the subject of the sentence performs
 the action (verb) of that sentence. It contrasts with passive voice, where the sentence is arranged
-such that the subject of the sentence is acted upon. Constrast these two examples:
+such that the subject of the sentence is acted upon. Contrast these two examples:
 
 >The compiler transformed source code into an executable.
 
@@ -62,7 +62,7 @@ The first sentence uses active voice. The second sentence was written in passive
 
 We recommend active voice because it is more readable. Passive voice can be more difficult to read.
 
-### Target a 5th Grade Reading Level
+### Target a Fifth Grade Reading Level
 
 We provide this final guideline because many of our readers are not native English speakers.
 You are reaching an international audience with your articles. Please take into account that

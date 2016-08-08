@@ -30,7 +30,7 @@ The .NET binary format is based on the Windows [PE file](http://en.wikipedia.org
 
 ![Assembly headers](./media/assembly-format/assembly-headers.png)
 
-Assembly Headers Assemblies headers from ECMA 335 II.25.1, Structure of the runtime file format.
+Assembly Headers from ECMA 335 II.25.1, Structure of the runtime file format.
 
 ## Processing the Assemblies
 

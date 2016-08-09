@@ -10,4 +10,5 @@ Samples
 Current build status for .NET core samples:
 
 ## Ubuntu 16.04 (x64)
-![Build Status](http://seoul.westus.cloudapp.azure.com/buildStatus/icon?job=dotnetcore-samples-ubuntu1604-x64)](http://seoul.westus.cloudapp.azure.com/job/dotnetcore-samples-ubuntu1604-x64)
+
+![Build Status](http://seoul.westus.cloudapp.azure.com/buildStatus/icon?job=dotnetcore-samples-ubuntu1604-x64)

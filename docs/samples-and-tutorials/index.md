@@ -76,7 +76,7 @@ These series of samples demonstrate many of the features of Language Integrated 
 **[Console Application](../csharp/tutorials/console-teleprompter.md)**
 
 This tutorial demonstrates Console I/O, the structure of a Console application, and
-the basics of the Task based asynchronous programming model. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/getting-started/csharp/console-teleprompter).
+the basics of the Task based asynchronous programming model. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp/getting-started/console-teleprompter).
 
 **[REST Client](../csharp/tutorials/console-webapiclient.md)**
 

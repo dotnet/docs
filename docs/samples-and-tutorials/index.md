@@ -82,7 +82,7 @@ the basics of the Task based asynchronous programming model. A finished version 
 
 This tutorial demonstrates web communications, JSON serialization, and Object Oriented
 features in the C# language. A finished version of the code you'll build is located
-[in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/getting-started/csharp/console-webapiclient).
+[in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp/getting-started/console-webapiclient).
 
 **[Working with LINQ](../csharp/tutorials/working-with-linq.md)**
 

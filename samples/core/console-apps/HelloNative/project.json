@@ -1,7 +1,6 @@
-﻿{ 
+{ 
   "version": "1.0.0-*", 
   "buildOptions": { 
-    "debugType": "portable", 
     "emitEntryPoint": true 
   }, 
   "dependencies": {}, 
@@ -14,12 +13,14 @@
       }, 
       "imports": "dnxcore50" 
     } 
-  },
+  }, 
   "runtimes": {
     "win7-x64": {},
     "win8-x64": {},
     "win81-x64": {},
     "win10-x64": {},
-    "osx.10.11-x64": {}
+    "osx.10.11-x64": {},
+    "ubuntu.16.04-x64": {}
   }
 }
+

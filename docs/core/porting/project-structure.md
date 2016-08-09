@@ -111,7 +111,7 @@ Please see [.NET Core porting documentation][porting-doc] for more guidance on m
 [example-xproj-different-code]: https://github.com/dotnet/core-docs/tree/master/samples/framework/libraries/migrate-library-xproj-keep-csproj/
 
 [example-pcl]: media/project-structure/project.pcl.png "PCL Targeting .NET Core"
-[example-pcl-code]: https://github.com/dotnet/core-docs/tree/master/samples/cframework/libraries/migrate-library-pcl
+[example-pcl-code]: https://github.com/dotnet/core-docs/tree/master/samples/framework/libraries/migrate-library-pcl
 
 [option-xproj]: #replace-existing-projects-with-a-multi-targeted-net-core-project-xproj
 [option-pcl]: #create-a-portable-class-library-pcl-to-target-net-core

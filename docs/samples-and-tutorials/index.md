@@ -56,7 +56,7 @@ This sample demonstrates the syntax and features for creating and consuming C# i
 
 **[Indexers](../csharp/indexers.md)**
 
-This sample demonstrates the syntax and features for C# indexers. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/indexers).
+This sample demonstrates the syntax and features for C# indexers. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp/indexers).
 
 **[Delegates and Events](../csharp/delegates-events.md)**
 

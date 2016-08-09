@@ -65,7 +65,7 @@ This sample demonstrates the syntax and features for C# delegates and events. A 
 
 **[Expression Trees](../csharp/expression-trees.md)**
 
-This sample demonstrates many of the problems that can be solved by using Expression Trees. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/expression-trees).
+This sample demonstrates many of the problems that can be solved by using Expression Trees. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp/expression-trees).
 
 **LINQ Samples**
 

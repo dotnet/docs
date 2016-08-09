@@ -9,4 +9,5 @@ Samples
 ===
 Current build status for .NET core samples:
 
-![](https://dendeli-ms.visualstudio.com/_apis/public/build/definitions/9fc8ed28-e0a3-4cde-b7a6-a977d004e315/1/badge)
+## Ubuntu 16.04 (x64)
+[![Build Status](http://seoul.westus.cloudapp.azure.com/buildStatus/icon?job=dotnetcore-samples-ubuntu1604-x64)](http://seoul.westus.cloudapp.azure.com/job/dotnetcore-samples-ubuntu1604-x64)

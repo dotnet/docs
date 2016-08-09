@@ -27,8 +27,7 @@ tools, and incorporate third-party libraries via [NuGet](http://nuget.org).
 This article uses Visual Studio Code on Mac OS. Where there are differences,
 it points out the differences for the Windows platform.
 
-Prerequisites
--------------
+## Prerequisites
 
 Before starting, you'll need to install the [.NET Core SDK](https://www.microsoft.com/net/core),
 currently in a preview release. The .NET Core SDK includes the latest release
@@ -40,8 +39,7 @@ that will improve the .NET Core development experience.
 
 You can find the links to all of these at the [.NET home page](http://dot.net).
 
-Getting Started
----------------
+## Getting Started
 
 The source for this tutorial is available on
 [GitHub](https://github.com/dotnet/core-docs/tree/master/samples/getting-started/golden).

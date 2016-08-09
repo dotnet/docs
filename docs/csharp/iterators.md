@@ -194,14 +194,14 @@ private IEnumerable<int> IteratorMethod()
 ```
  
 Look at the methods above. The first uses the standard `return` statement to return
-either an empy collection, or the iterator created by the second method. The second
+either an empty collection, or the iterator created by the second method. The second
 method uses the `yield return` statement to create the requested sequence.
 
 ## Deeper Dive into `foreach`
 
 The `foreach` statement expands into a standard idiom that uses the
 `IEnumable<T>` and `IEnumerator<T>` interfaces to iterate across all
-elements of a colleciton. It also  minimizes errors developers make
+elements of a collection. It also  minimizes errors developers make
 by not properly managing resources. 
 
 The compiler translates the `foreach` loop shown in the first

@@ -69,7 +69,7 @@ This sample demonstrates many of the problems that can be solved by using Expres
 
 **LINQ Samples**
 
-These series of samples demonstrate many of the features of Language Integrated Query.  A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/linq/csharp).
+These series of samples demonstrate many of the features of Language Integrated Query.  A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/core/linq/csharp).
 
 ### Tutorials
 

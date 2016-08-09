@@ -52,7 +52,7 @@ The completed code is available [in the core-docs repository on GitHub](https://
 
 **[Iterators](../csharp/iterators.md)**
 
-This sample demonstrates the syntax and features for creating and consuming C# iterators. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/iterators).
+This sample demonstrates the syntax and features for creating and consuming C# iterators. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp/iterators).
 
 **[Indexers](../csharp/indexers.md)**
 

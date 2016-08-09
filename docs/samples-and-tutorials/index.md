@@ -86,7 +86,7 @@ features in the C# language. A finished version of the code you'll build is loca
 
 **[Working with LINQ](../csharp/tutorials/working-with-linq.md)**
 
-This tutorial demonstrates many of the features of LINQ and the language elements that support it. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/getting-started/csharp/console-linq).
+This tutorial demonstrates many of the features of LINQ and the language elements that support it. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp/getting-started/console-linq).
 
 **[Microservices hosted in Docker](../csharp/tutorials/microservices.md)**
 

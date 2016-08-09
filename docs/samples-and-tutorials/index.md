@@ -90,4 +90,4 @@ This tutorial demonstrates many of the features of LINQ and the language element
 
 **[Microservices hosted in Docker](../csharp/tutorials/microservices.md)**
 
-This tutorial demonstrates building an asp.net core microservice and hosting it it Docker. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/getting-started/csharp/WeatherMicroservice).
+This tutorial demonstrates building an asp.net core microservice and hosting it it Docker. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/csharp/getting-started/WeatherMicroservice).

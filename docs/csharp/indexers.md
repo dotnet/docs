@@ -76,7 +76,7 @@ Let's walk through some of the common scenarios for using *indexers*.
 The code for all the samples is available at the core-docs [GitHub
 repository](https://github.com/dotnet/core-docs). Or, you can
 access the 
-[sample folder](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/indexers)
+[sample folder](https://github.com/dotnet/core-docs/tree/master/samples/csharp/indexers)
 directly.
 
 ### Arrays and Vectors

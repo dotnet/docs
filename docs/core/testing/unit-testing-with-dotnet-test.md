@@ -16,7 +16,7 @@ ms.assetid: bdcdb812-6f13-4f20-9e90-0c0977937142
 
 By [Steve Smith](http://ardalis.com) and [Bill Wagner](https://github.com/BillWagner)
 
-[View or download sample code](https://github.com/dotnet/core-docs/tree/master/samples/core-projects/unit-testing/using-dotnet-test)
+[View or download sample code](https://github.com/dotnet/core-docs/tree/master/samples/core/getting-started/unit-testing-using-dotnet-test)
 
 ## Creating the Projects
 
@@ -138,7 +138,7 @@ not in the NuGet feed. Without this key, you might download
 a package with the same name as your internal library.
 
 You can see the entire file in the
-[samples repository](https://github.com/dotnet/core-docs/blob/master/samples/core-projects/unit-testing/using-dotnet-test/test/PrimeService.Tests/project.json) 
+[samples repository](https://github.com/dotnet/core-docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/test/PrimeService.Tests/project.json) 
 on GitHub.
 
 After this initial structure is in place, you can write your first test.
@@ -242,9 +242,9 @@ Now, these tests all pass.
 You continue to iterate by adding more tests, more theories,
 and more code in the main library. You'll quickly end up
 with the
-[finished version of the tests](https://github.com/dotnet/core-docs/blob/master/samples/core-projects/unit-testing/using-dotnet-test/test/PrimeService.Tests/PrimeServie_IsPrimeShould.cs)
+[finished version of the tests](https://github.com/dotnet/core-docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/test/PrimeService.Tests/PrimeServie_IsPrimeShould.cs)
 and the
-[complete implementation of the library](https://github.com/dotnet/core-docs/blob/master/samples/core-projects/unit-testing/using-dotnet-test/src/PrimeService/PrimeService.cs).
+[complete implementation of the library](https://github.com/dotnet/core-docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/src/PrimeService/PrimeService.cs).
 
 You've built a small library and a set of unit tests for that library.
 You've structured this solution so that adding new packages and tests

@@ -42,7 +42,7 @@ You can find the links to all of these at the [.NET home page](http://dot.net).
 ## Getting Started
 
 The source for this tutorial is available on
-[GitHub](https://github.com/dotnet/core-docs/tree/master/samples/getting-started/golden).
+[GitHub](https://github.com/dotnet/core-docs/tree/master/samples/core/getting-started/golden).
 
 Start Visual Studio Code. Press Ctrl + '\`' (the back-quote character) to open
 an embedded terminal in VS Code. (Alternatively, you can use a separate

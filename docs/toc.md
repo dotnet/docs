@@ -8,7 +8,7 @@
 ### [🔧 Getting started with cross-platform tools](csharp/index.md)
 ## [Tutorials](csharp/tutorials/index.md)
 ### [🔧 Using Visual Studio to create, debug, and deploy an application](csharp/index.md)
-### [🔧 Creating portable libraries](charp/index.md)
+### [🔧 Creating portable libraries](csharp/index.md)
 ### [🔧 Asynchronous UI programming](csharp/index.md)
 ### [🔧 Asynchronous server programming](csharp/index.md)
 ### [🔧 Concurrent programming](csharp/index.md)

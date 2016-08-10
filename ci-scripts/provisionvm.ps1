@@ -85,6 +85,6 @@ $jnlpCredentialsFlag="-jnlpCredentials"
 $credentials="admin:0dc7f5e2d5142967db8179c9faf4cebf"
 
 LogWrite "Will execute this:"
-LogWrite $java + " " + $jar + " " + $destSource + " " + $jnlpCredentialsFlag + " " + $credentials + " " + $jnlpUrl + " " + $serverURL
+LogWrite "$java $jar $destSource $jnlpCredentialsFlag $credentials $jnlpUrl $serverURL"
 
 & $java $jar $destSource $jnlpCredentialsFlag $credentials $jnlpUrl $serverURL

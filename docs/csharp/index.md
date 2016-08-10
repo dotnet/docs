@@ -18,7 +18,7 @@ The C# guide provides a wealth of information about the C# language. This site h
 
 ## For new developers
 
-Start with our [tutorials](tutorials/index) section. These tutorials show you how to create C# programs from scratch. The tutorials provide a step-by-step process to create programs. You'll learn the language concepts, and how to build C# programs on your own.
+Start with our [tutorials](tutorials/index.md) section. These tutorials show you how to create C# programs from scratch. The tutorials provide a step-by-step process to create programs. You'll learn the language concepts, and how to build C# programs on your own.
 
 If you prefer reading overview information first, try our [tour of the C# language](tour-of-csharp/index.md). It explains the concepts of the C# language. After reading this, you'll have a basic understanding of the language, and be ready to try the tutorials, or build something on your own.
 
@@ -32,4 +32,4 @@ Or, check out the [C# Concepts](concepts.md) to learn the features of the C# lan
 
 ## Experienced C# Developers
 
-If you've used C# before, you should start by reading what's in the latest version of the language. Check out [What's new in C# 6](csharp6.md) for the new features in the current version. Then, explore the [C# Concepts](concepts.md) where you want more depth.
+If you've used C# before, you should start by reading what's in the latest version of the language. Check out [What's new in C# 6](csharp-6.md) for the new features in the current version. Then, explore the [C# Concepts](concepts.md) where you want more depth.

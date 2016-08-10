@@ -1,3 +1,3 @@
-# Introduction to Functional Programming in F#
+# Introduction to Functional Programming in F# #
 
 TODO

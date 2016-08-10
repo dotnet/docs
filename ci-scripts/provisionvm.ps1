@@ -55,5 +55,5 @@ $serverURL=$jenkinsserverurl+"computer/" + $vmname + "/slave-agent.jnlp"
 $jnlpCredentialsFlag="-jnlpCredentials"
 # syntax for credentials username:apitoken or username:password
 # you can get api token by clicking on your username --> configure --> show api token
-$credentails="admin:0dc7f5e2d5142967db8179c9faf4cebf"
-& $java $jar $destSource $jnlpCredentialsFlag $credentails $jnlpUrl $serverURL
+$credentials="admin:0dc7f5e2d5142967db8179c9faf4cebf"
+& $java $jar $destSource $jnlpCredentialsFlag $credentials $jnlpUrl $serverURL

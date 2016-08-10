@@ -14,27 +14,22 @@ ms.assetid: 52db8280-0e53-40cf-858b-e8eef3997dea
 
 # C# Guide
 
-## Experienced C# Developers
-
-
-.. start with "What's new" in recent versions.
-.. Search for areas you want to explore more deeply.
-
-## For Developers new to C#
-
-.. Explore the walk throughs
-.. Explore C# features of interest
+The C# guide provides a wealth of information about the C# language. This site has many different audiences. Depending on your experience with programming, or with the C# language and .NET, you may wish to explore different sections of this guide.
 
 ## For new developers
 
-.. Getting Started Section
-.. Explore walk throughs
-.. examine the guide at your own pace
+Start with our [tutorials](tutorials/index) section. These tutorials show you how to create C# programs from scratch. The tutorials provide a step-by-step process to create programs. You'll learn the language concepts, and how to build C# programs on your own.
 
-Links to What's new in C# 7
+If you prefer reading overview information first, try our [tour of the C# language](tour-of-csharp/index.md). It explains the concepts of the C# language. After reading this, you'll have a basic understanding of the language, and be ready to try the tutorials, or build something on your own.
 
-Links to What's new in C# 6
+## For Developers new to C#
 
-> Close #608 with this PR
-> closes 486 on the PR request
+If you've done development before, but are new to C#, read the [tour of the C# language](tour-of-csharp/index.md). It will provide with a starting point, and you can use it to contrast C# with other languages you've used.
 
+You can also browse the [tutorials](tutorials/index.md) to try basic C# programs.
+
+Or, check out the [C# Concepts](concepts.md) to learn the features of the C# langauge in depth.
+
+## Experienced C# Developers
+
+If you've used C# before, you should start by reading what's in the latest version of the language. Check out [What's new in C# 6](csharp6.md) for the new features in the current version. Then, explore the [C# Concepts](concepts.md) where you want more depth.

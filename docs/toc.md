@@ -1,7 +1,6 @@
 # [Welcome](welcome.md)
 # [About .NET](about/index.md)
 ## [.NET Products](about/products.md)
-
 # [C# Guide](csharp/index.md)
 ## [Tutorials](csharp/tutorials/index.md)
 ### [Console Application](csharp/tutorials/console-teleprompter.md)
@@ -20,8 +19,6 @@
 ### [Enums](csharp/tour-of-csharp/enums.md)
 ### [Delegates](csharp/tour-of-csharp/delegates.md)
 ### [Attributes](csharp/tour-of-csharp/attributes.md)
-
-
 ### [What's new in C# 6](csharp/csharp-6.md)
 ## [C# Concepts](csharp/concepts.md)
 ### [🔧 C# Type system](csharp/type-system.md)

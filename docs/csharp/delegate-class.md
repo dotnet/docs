@@ -166,7 +166,7 @@ have multiple target methods attached to a delegate object.
 
 ## Delegate and MulticastDelegate classes
 
-The language support desccribed above provides the features
+The language support described above provides the features
 and support you'll typically need to work with delegates. These
 features are built on two classes in the .NET Core
 framework: @System.Delegate and @"System.MulticastDelegate".

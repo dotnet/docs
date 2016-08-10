@@ -36,7 +36,9 @@ And that's it!
 
 ## new-library
 
-The project under `/new-library` is a project targeting **only** .NET Core.
+The project under `/new-library` is a project targeting **only** .NET Core. For that reason,
+this project is stored under the core project directory, so our build server builds it on
+all platforms. Look under https://github.com/dotnet/core-docs/tree/master/samples/core/libraries/new-library/
 
 It demonstrates two other things: how to use multiple projects and how to test.
 

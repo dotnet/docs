@@ -61,7 +61,7 @@ In most cases, you will not reference the lower-level .NET Core packages directl
 Metapackages are a NuGet package convention for describing a set of packages that are meaningful together. They represent this set of packages by making them dependencies. They can optionally establish a
 framework for this set of packages by specifying a framework. 
 
-By refg a metapackage, you are, in effect, adding a reference to each of its dependent packages as a single gesture. That means that all of the libraries in those packages (refs or libs) are available for IntelliSense (or similar experience) and for publishing (libs only) your app. 
+By referencing a metapackage, you are, in effect, adding a reference to each of its dependent packages as a single gesture. That means that all of the libraries in those packages (refs or libs) are available for IntelliSense (or similar experience) and for publishing (libs only) your app. 
 
 Note: The 'lib' and 'ref' terms refer to folders in NuGet packages. 'ref' folders describe the public API of a package via assembly metadata. 'lib' folders contain the implementation of that public API for a given
 framework. 

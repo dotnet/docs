@@ -6,6 +6,9 @@
 # ---------------------------------------------------
 
 Set-ExecutionPolicy Unrestricted
+# Jenkins plugin will dynamically pass the server name and VM name.
+$jenkinsserverurl = $args[0]
+$vmname = $args[1]
 
 $logFile = "C:\provisionlog.txt"
 
@@ -16,10 +19,6 @@ Function LogWrite
    Write-Host $logString
    Add-content $logFile -value $logString
 }
-
-# Jenkins plugin will dynamically pass the server name and VM name.
-$jenkinsserverurl = $args[0]
-$vmname = $args[1]
 
 LogWrite "Bootrstapping provisioning..."
 LogWrite "Server URL: $jenkinsserverurl"
@@ -38,6 +37,13 @@ choco install git -params '"/GitAndUnixToolsOnPath"' -y --force | Out-Null
 $env:Path = [Environment]::GetEnvironmentVariable('Path',[System.EnvironmentVariableTarget]::Machine) + ";C:\Program Files\Git\cmd"
 LogWrite "Git tools installed. Current PATH is:"
 LogWrite $env:Path
+
+# Install VCREDIST
+LogWrite "Installing Visual C++ Redistributable for Visual Studio 2015 (x64)..."
+$newPath = "C:\vcredist"
+mkdir $newPath
+Invoke-WebRequest "https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe" -OutFile "$newPath\vcredist_x64.exe"
+Start-Process $newPath\vcredist_x64.exe -ArgumentList '/q' -NoNewWindow -Wait
 
 # Install .NET Core
 LogWrite "Installing .NET Core..."

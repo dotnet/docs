@@ -57,7 +57,7 @@ to indexers. The only exception to that rule is
 generate the correct storage for an indexer.
 
 The presence of arguments to reference an item in a set of items distinguishes
-indexers from properties. You may define mulitple indexers on a type, as long
+indexers from properties. You may define multiple indexers on a type, as long
 as the argument lists for each indexer is unique. Let's explore different
 scenarios where you might use one or more indexers in a class definition. 
 
@@ -76,7 +76,7 @@ Let's walk through some of the common scenarios for using *indexers*.
 The code for all the samples is available at the core-docs [GitHub
 repository](https://github.com/dotnet/core-docs). Or, you can
 access the 
-[sample folder](https://github.com/dotnet/core-docs/tree/master/samples/csharp-language/indexers)
+[sample folder](https://github.com/dotnet/core-docs/tree/master/samples/csharp/indexers)
 directly.
 
 ### Arrays and Vectors

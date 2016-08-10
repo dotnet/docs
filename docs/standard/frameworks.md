@@ -49,7 +49,7 @@ You can refer to a framework or targeting of a framework using long- or short-fo
 
 **Referring to a family of Frameworks**
 
-You can refer to a family of frameworks using long- or short-forms of the framework ID. Bother are equally valid in the general case.
+You can refer to a family of frameworks using long- or short-forms of the framework ID. Both are equally valid in the general case.
 
 - `.NETFramework`
 - `net`

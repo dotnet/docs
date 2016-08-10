@@ -59,7 +59,7 @@
 ## [Getting Started](fsharp/getting-started/index.md)
 ### [Getting Started with Visual Studio](fsharp/getting-started/getting-started-visual-studio.md)
 ### [Getting Started with Visual Studio Code and Ionide](fsharp/getting-started/getting-started-vscode.md)
-### [Getting Started with Cross-platform Tools]((fsharp/getting-started/getting-started-cross-platform-tooling.md)
+### [Getting Started with Cross-platform Tools](fsharp/getting-started/getting-started-cross-platform-tooling.md)
 
 ## [Introduction to Functional Programming](fsharp/introduction-to-functional-programming/index.md)
 ### [Functions as First-Class Values](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)

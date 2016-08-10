@@ -11,6 +11,7 @@ $jenkinsserverurl = $args[0]
 $vmname = $args[1]
 
 $logFile = "C:\provisionlog.txt"
+$ProvisionArtifacts = "C:\prstack"
 
 Function LogWrite
 {
@@ -40,16 +41,15 @@ LogWrite $env:Path
 
 # Install VCREDIST
 LogWrite "Installing Visual C++ Redistributable for Visual Studio 2015 (x64)..."
-$newPath = "C:\vcredist"
-mkdir $newPath
-Invoke-WebRequest "https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe" -OutFile "$newPath\vcredist_x64.exe"
-Start-Process $newPath\vcredist_x64.exe -ArgumentList '/q' -NoNewWindow -Wait
+
+mkdir $ProvisionArtifacts
+Invoke-WebRequest "https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe" -OutFile "$ProvisionArtifacts\vcredist_x64.exe"
+Start-Process $ProvisionArtifacts\vcredist_x64.exe -ArgumentList '/q' -NoNewWindow -Wait
 
 # Install .NET Core
 LogWrite "Installing .NET Core..."
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0-preview2/scripts/obtain/dotnet-install.ps1" -OutFile "./dotnet-install.ps1"
 ./dotnet-install.ps1 -Version 1.0.0-preview2-003121 -InstallDir "C:\dotnet"
-$env:Path += ";C:\dotnet"
 LogWrite ".NET Core installed. Current PATH is:"
 LogWrite $env:Path
 
@@ -57,8 +57,7 @@ LogWrite $env:Path
 # and extract it. This is our Java runtime.
 LogWrite "Downloading Zulu SDK..."
 $source = "http://cdn.azul.com/zulu/bin/zulu8.15.0.1-jdk8.0.92-win_x64.zip?jenkins"
-mkdir c:\azurecsdir
-$destination = "c:\azurecsdir\zuluJDK.zip"
+$destination = "$ProvisionArtifacts\zuluJDK.zip"
 $wc = New-Object System.Net.WebClient
 $wc.DownloadFile($source, $destination)
 

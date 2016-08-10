@@ -1,15 +1,15 @@
 ---
-title: Expressions | .NET Core
-description: Expressions
-keywords: .NET, csharp
+title: C# Expressions | A tour of the C# language
+description: expressions, operands, and operators are building blocks of the C# language
+keywords: .NET, csharp, expression, operator, operand
 author: BillWagner
 manager: wpickett
 ms.date: 2016/08/10
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.assetid: 20d5eb10-7381-47b9-ad90-f1cc895aa27e
+ms.prod: visual-studio-dev-14
+ms.technology: devlang-csharp
 ms.devlang: csharp
+ms.assetid: 20d5eb10-7381-47b9-ad90-f1cc895aa27e
 ---
 
 # Expressions
@@ -27,10 +27,8 @@ Precedence and associativity can be controlled using parentheses. For example, `
 
 Most operators can be ***overloaded***. Operator overloading permits user-defined operator implementations to be specified for operations where one or both of the operands are of a user-defined class or struct type.
 
-The following summarizes C#’s operators, listing the operator categories in order of precedence from highest to lowest. Operators in the same category have equal precedence.
+The following summarizes C#’s operators, listing the operator categories in order of precedence from highest to lowest. Operators in the same category have equal precedence. Under each category is a list of expressions in that category along with the description of that expression type.
 
-* ***Category***
-    - ***Expression*** : ***Description***
 * Primary
     - `x.m`: Member access
 	- `x(...)`: Method and delegate invocation
@@ -92,5 +90,5 @@ The following summarizes C#’s operators, listing the operator categories in or
 * Assignment or anonymous function
     - `x = y`: Assignment
 	- `x op= y`: Compound assignment; supported operators are
-        * `*=`   `/=`   `%=`   `+=`   `-=`   `<<=`   `>>=`   `&=`  `^=`  `|=`
+        - `*=`   `/=`   `%=`   `+=`   `-=`   `<<=`   `>>=`   `&=`  `^=`  `|=`
 	- `(T x) => y`: Anonymous function (lambda expression)

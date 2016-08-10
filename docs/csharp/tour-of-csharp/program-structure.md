@@ -1,21 +1,21 @@
 ---
-title: Program Structure | .NET Core
-description: Program Structure
+title: C# Program Structure | A Tour of the C# Language
+description: Learn the basic building blocks of a C# program
 keywords: .NET .NET Core
 author: Bill Wagner
 manager: wpickett
 ms.date: 08/10/2016
 ms.topic: article
-ms.prod: csharp
-ms.technology: .net-core-technologies
+ms.prod: visual-studio-dev-14
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: 984f0314-507f-47a0-af56-9011243f5e65
-
-ms.devlang: dotnet
 ---
 
 # Program Structure
 
-The key organizational concepts in C# are ***programs***, ***namespaces***, ***types***, ***members***, and ***assemblies***. C# programs consist of one or more source files. Programs declare types, which contain members and can be organized into namespaces. Classes and interfaces are examples of types. Fields, methods, properties, and events are examples of members. When C# programs are compiled, they are physically packaged into assemblies. Assemblies typically have the file extension .exe or .dll, depending on whether they implement ***applications*** or ***libraries***, respectively.
+The key organizational concepts in C# are ***programs***, ***namespaces***, ***types***, ***members***, and ***assemblies***. C# programs consist of one or more source files. Programs declare types, which contain members and can be organized into namespaces. Classes and interfaces are examples of types. Fields, methods, properties, and events are examples of members. When C# programs are compiled, they are physically packaged into assemblies. Assemblies typically have the file extension `.exe` or `.dll`, depending on whether they implement ***applications*** or ***libraries***, respectively.
+
 The example
 
 ```csharp
@@ -62,13 +62,15 @@ csc /t:library acme.cs
 ```
 
 compiles the example as a library (code without a `Main` entry point) and produces an assembly named `acme.dll`.
+
 Assemblies contain executable code in the form of Intermediate Language (IL) instructions, and symbolic information in the form of metadata. Before it is executed, the IL code in an assembly is automatically converted to processor-specific code by the Just-In-Time (JIT) compiler of .NET Common Language Runtime.
+
 Because an assembly is a self-describing unit of functionality containing both code and metadata, there is no need for `#include` directives and header files in C#. The public types and members contained in a particular assembly are made available in a C# program simply by referencing that assembly when compiling the program. For example, this program uses the `Acme.Collections.Stack` class from the `acme.dll` assembly:
 
 ```csharp
 using System;
 using Acme.Collections;
-class Test
+class Example
 {
     static void Main() 
 	{

@@ -1,15 +1,15 @@
 ---
-title: Statements | .NET Core
-description: Statements
-keywords: .NET, csharp
+title: C# Statements | A tour of the C# language
+description: You create the actions of a C# program using statements
+keywords: .NET, csharp, statements, syntax
 author: BillWagner
 manager: wpickett
 ms.date: 2016/08/10
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.assetid: 5409c379-5622-4fae-88b5-1654276ea8d4
+ms.prod: visual-studio-dev-14
+ms.technology: devlang-csharp
 ms.devlang: csharp
+ms.assetid: 5409c379-5622-4fae-88b5-1654276ea8d4
 ---
 
 # Statements
@@ -49,7 +49,9 @@ static void Main()
 	Console.WriteLine(a + b + c);
 }
 ```
+
 ***Local constant declaration***
+
 ```csharp
 static void Main()
 {
@@ -58,7 +60,9 @@ static void Main()
 	Console.WriteLine(pi * r * r);
 }
 ```
+
 ***Expression statement***
+
 ```csharp 
 static void Main()
 {
@@ -69,7 +73,9 @@ static void Main()
 	Console.WriteLine(i);   // Expression statement
 }
 ```
+
 ***`if` statement***
+
 ```csharp
 static void Main(string[] args) 
 {
@@ -83,7 +89,9 @@ static void Main(string[] args)
 	}
 }
 ```
+
 ***`switch` statement***
+
 ```csharp
 static void Main(string[] args) 
 {
@@ -103,7 +111,9 @@ static void Main(string[] args)
 	}
 }
 ```
+
 ***`while` statement***
+
 ``` csharp
 static void Main(string[] args) 
 {
@@ -115,7 +125,9 @@ static void Main(string[] args)
 	}
 }
 ```
+
 ***`do` statement***
+
 ```csharp
 static void Main() 
 {
@@ -127,7 +139,9 @@ static void Main()
 	} while (s != null);
 }
 ```
+
 ***`for` statement***
+
 ```csharp
 static void Main(string[] args) 
 {
@@ -136,7 +150,9 @@ static void Main(string[] args)
 	}
 }
 ```
+
 ***`foreach` statement***
+
 ```csharp
 static void Main(string[] args) 
 {
@@ -146,7 +162,9 @@ static void Main(string[] args)
 	}
 }
 ```
+
 ***`break` statement***
+
 ```csharp
 static void Main()
 {
@@ -159,7 +177,9 @@ static void Main()
 	}
 }
 ```
+
 ***`continue` statement***
+
 ```csharp
 static void Main(string[] args) 
 {
@@ -171,7 +191,11 @@ static void Main(string[] args)
 	}
 }
 ```
-goto statement	static void Main(string[] args) {
+
+***`goto` statement***
+
+```csharp
+static void Main(string[] args) {
 	int i = 0;
 	goto check;
 	loop:
@@ -181,7 +205,9 @@ goto statement	static void Main(string[] args) {
         goto loop;
 }
 ```
+
 ***`return` statement***
+
 ```csharp
 static int Add(int a, int b) 
 {
@@ -193,7 +219,9 @@ static void Main()
     return;
 }
 ```
+
 ***`yield` statement***
+
 ```csharp
 static IEnumerable<int> Range(int from, int to) 
 {
@@ -211,7 +239,9 @@ static void Main()
 	}
 }
 ```
+
 ***`throw` statements and `try` statements***
+
 ```csharp
 static double Divide(double x, double y) 
 {
@@ -241,7 +271,9 @@ static void Main(string[] args)
 	}
 }
 ```
+
 ***`checked` and `unchecked` statements***
+
 ```csharp
 static void Main() 
 {
@@ -256,7 +288,9 @@ static void Main()
     }
 }
 ```
+
 ***`lock` statement***
+
 ```csharp
 class Account
 {
@@ -275,7 +309,12 @@ class Account
 		}
 	}
 }
-using statement	static void Main() 
+```
+
+***`using` statement***
+
+```csharp
+static void Main() 
 {
 	using (TextWriter w = File.CreateText("test.txt")) 
     {

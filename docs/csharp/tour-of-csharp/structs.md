@@ -1,16 +1,15 @@
 ---
-title: structs | .NET Core
-description: structs in C# 
-keywords:
+title: C# structs | A tour of the C# language
+description: Learn the basics of C# value types, called structs
+keywords: .NET, C#, struct, value type
 author: BillWagner
 manager: wpickett
 ms.date: 2016/08/10
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.assetid: 88a74571-f741-4a31-a2b5-1ccf165535b8
+ms.prod: visual-studio-dev-14
+ms.technology: devlang-csharp
 ms.devlang: csharp
-
+ms.assetid: 88a74571-f741-4a31-a2b5-1ccf165535b8
 ---
 
 # Structs
@@ -28,7 +27,7 @@ class Point
 		this.y = y;
 	}
 }
-class Example
+class StructExample
 {
 	static void Main() 
 	{

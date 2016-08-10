@@ -1,15 +1,15 @@
 ---
-title: Classes and Objects | .NET Core
-description: Classes and objects
-keywords: .NET, csharp
+title: Classes and Objects in C# | A tour of the C# Language
+description: New to C#? Read this overview of classes, objects and inheritance
+keywords: .NET, csharp, class, instance, object, inheritance, polymorphism
 author: Bill Wagner
 manager: wpickett
 ms.date: 2016/08/10
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.assetid: 63a89bde-0f05-4bc4-b0cd-4f693854f0cd
+ms.prod: visual-studio-dev-14
+ms.technology: devlang-csharp
 ms.devlang: csharp
+ms.assetid: 63a89bde-0f05-4bc4-b0cd-4f693854f0cd
 ---
 # Classes and objects
 
@@ -18,6 +18,7 @@ ms.devlang: csharp
 New classes are created using class declarations. A class declaration starts with a header that specifies the attributes and modifiers of the class, the name of the class, the base class (if given), and the interfaces implemented by the class. The header is followed by the class body, which consists of a list of member declarations written between the delimiters `{` and `}`.
 
 The following is a declaration of a simple class named `Point`:
+
 ```csharp
 public class Point
 {
@@ -29,7 +30,9 @@ public class Point
 	}
 }
 ```
+
 Instances of classes are created using the new operator, which allocates memory for a new instance, invokes a constructor to initialize the instance, and returns a reference to the instance. The following statements create two Point objects and store references to those objects in two variables:
+
 ```csharp
 Point p1 = new Point(0, 0);
 Point p2 = new Point(10, 20);
@@ -188,7 +191,7 @@ A ***reference parameter*** is used for both input and output parameter passing.
 
 ```csharp
 using System;
-class Example
+class RefExample
 {
 	static void Swap(ref int x, ref int y) 
 	{
@@ -209,7 +212,7 @@ An ***output parameter*** is used for output parameter passing. An output parame
 
 ```csharp
 using System;
-class Example
+class OutExample
 {
 	static void Divide(int x, int y, out int result, out int remainder) 
 	{
@@ -237,10 +240,13 @@ public class Console
 ```
 
 Within a method that uses a parameter array, the parameter array behaves exactly like a regular parameter of an array type. However, in an invocation of a method with a parameter array, it is possible to pass either a single argument of the parameter array type or any number of arguments of the element type of the parameter array. In the latter case, an array instance is automatically created and initialized with the given arguments. This example
+
 ```csharp
 Console.WriteLine("x={0} y={1} z={2}", x, y, z);
 ```
+
 is equivalent to writing the following.
+
 ```csharp
 string s = "x={0} y={1} z={2}";
 object[] args = new object[3];
@@ -249,6 +255,7 @@ args[1] = y;
 args[2] = z;
 Console.WriteLine(s, args);
 ```
+
 ### Method body and local variables
 
 A method’s body specifies the statements to execute when the method is invoked.
@@ -284,6 +291,7 @@ A method declared with a static modifier is a ***static method***. A static meth
 A method declared without a static modifier is an ***instance method***. An instance method operates on a specific instance and can access both static and instance members. The instance on which an instance method was invoked can be explicitly accessed as this. It is an error to refer to this in a static method.
 
 The following Entity class has both static and instance members.
+
 ```csharp
 class Entity
 {
@@ -308,14 +316,15 @@ class Entity
 }
 ```
 
-Each Entity instance contains a serial number (and presumably some other information that is not shown here). The Entity constructor (which is like an instance method) initializes the new instance with the next available serial number. Because the constructor is an instance member, it is permitted to access both the serialNo instance field and the nextSerialNo static field.
+Each `Entity` instance contains a serial number (and presumably some other information that is not shown here). The `Entity` constructor (which is like an instance method) initializes the new instance with the next available serial number. Because the constructor is an instance member, it is permitted to access both the `serialNo` instance field and the `nextSerialNo` static field.
 
-The GetNextSerialNo and SetNextSerialNo static methods can access the nextSerialNo static field, but it would be an error for them to directly access the serialNo instance field.
+The `GetNextSerialNo` and `SetNextSerialNo` static methods can access the `nextSerialNo` static field, but it would be an error for them to directly access the `serialNo` instance field.
 
 The following example shows the use of the Entity class.
+
 ```csharp
 using System;
-class Example
+class EntityExample
 {
 	static void Main() 
 	{
@@ -341,7 +350,7 @@ A virtual method can be ***overridden*** in a derived class. When an instance me
 
 An ***abstract method*** is a virtual method with no implementation. An abstract method is declared with the abstract modifier and is permitted only in a class that is also declared abstract. An abstract method must be overridden in every non-abstract derived class.
 
-The following example declares an abstract class, Expression, which represents an expression tree node, and three derived classes, Constant, VariableReference, and Operation, which implement expression tree nodes for constants, variable references, and arithmetic operations. (This is similar to, but not to be confused with the expression tree types).
+The following example declares an abstract class, `Expression`, which represents an expression tree node, and three derived classes, `Constant`, `VariableReference`, and `Operation`, which implement expression tree nodes for constants, variable references, and arithmetic operations. (This is similar to, but not to be confused with the expression tree types).
 
 ```csharp
 using System;
@@ -414,7 +423,7 @@ Expression e = new Operation(
 	new Constant(3));
 ```
 
-The `Evaluate` method of an `Expression` instance is invoked to evaluate the given expression and produce a `double` value. The method takes as an argument a `Hashtable` that contains variable names (as keys of the entries) and values (as values of the entries). The Evaluate method is a virtual abstract method, meaning that non-abstract derived classes must override it to provide an actual implementation.
+The `Evaluate` method of an `Expression` instance is invoked to evaluate the given expression and produce a `double` value. The method takes as an argument a `Hashtable` that contains variable names (as keys of the entries) and values (as values of the entries). The `Evaluate` method is a `virtual abstract` method, meaning that non-abstract derived classes must override it to provide an actual implementation.
 
 A `Constant`'s implementation of `Evaluate` simply returns the stored constant. A `VariableReference`'s implementation looks up the variable name in the hashtable and returns the resulting value. An `Operation`'s implementation first evaluates the left and right operands (by recursively invoking their `Evaluate` methods) and then performs the given arithmetic operation.
 
@@ -423,7 +432,7 @@ The following program uses the `Expression` classes to evaluate the expression `
 ```csharp
 using System;
 using System.Collections;
-class Example
+class InheritanceExample
 {
 	static void Main() 
 	{
@@ -449,10 +458,10 @@ class Example
 
 ### Method overloading
 
-Method ***overloading*** permits multiple methods in the same class to have the same name as long as they have unique signatures. When compiling an invocation of an overloaded method, the compiler uses ***overload resolution*** to determine the specific method to invoke. Overload resolution finds the one method that best matches the arguments or reports an error if no single best match can be found. The following example shows overload resolution in effect. The comment for each invocation in the Main method shows which method is actually invoked.
+Method ***overloading*** permits multiple methods in the same class to have the same name as long as they have unique signatures. When compiling an invocation of an overloaded method, the compiler uses ***overload resolution*** to determine the specific method to invoke. Overload resolution finds the one method that best matches the arguments or reports an error if no single best match can be found. The following example shows overload resolution in effect. The comment for each invocation in the `Main` method shows which method is actually invoked.
 
 ```csharp
-class Example
+class OverloadingExample
 {
 	static void F() 
 	{
@@ -486,7 +495,7 @@ class Example
 		F("abc");       // Invokes F<string>(string)
 		F((double)1);   // Invokes F(double)
 		F((object)1);   // Invokes F(object)
-		F<int>(1);      // Invokes F<T>(T)
+		F<int>(1);      // Invokes F<int>(int)
 		F(1, 1);        // Invokes F(double, double)
 	}
 }
@@ -595,7 +604,7 @@ C# supports both instance and static constructors. An ***instance constructor***
 
 A constructor is declared like a method with no return type and the same name as the containing class. If a constructor declaration includes a static modifier, it declares a static constructor. Otherwise, it declares an instance constructor.
 
-Instance constructors can be overloaded, and can have optional parameters. For example, the `List<T>` class declares an instance constructor that takes an optional int parameter.two instance constructors, one with no parameters and one that takes an int parameter. Instance constructors are invoked using the new operator. The following statements allocate two List<string> instances using the constructor of the List class with and without the optional argument.each of the constructors of the List class.
+Instance constructors can be overloaded, and can have optional parameters. For example, the `List<T>` class declares two instance constructors, one with no parameters and one that takes an int parameter. Instance constructors are invoked using the new operator. The following statements allocate two `List<string>` instances using the constructor of the `List` class with and without the optional argument.
 
 ```csharp
 List<string> list1 = new List<string>();
@@ -632,6 +641,7 @@ The accessor(s) of a property can be virtual. When a property declaration includ
 An ***indexer*** is a member that enables objects to be indexed in the same way as an array. An indexer is declared like a property except that the name of the member is this followed by a parameter list written between the delimiters `[` and `]`. The parameters are available in the accessor(s) of the indexer. Similar to properties, indexers can be read-write, read-only, and write-only, and the accessor(s) of an indexer can be virtual.
 
 The `List` class declares a single read-write indexer that takes an `int` parameter. The indexer makes it possible to index `List` instances with `int` values. For example
+
 ```csharp
 List<string> names = new List<string>();
 names.Add("Liz");
@@ -654,10 +664,11 @@ Within a class that declares an event member, the event behaves just like a fiel
 
 The `List<T>` class declares a single event member called `Changed`, which indicates that a new item has been added to the list. The Changed event is raised by the `OnChanged` virtual method, which first checks whether the event is `null` (meaning that no handlers are present). The notion of raising an event is precisely equivalent to invoking the delegate represented by the event—thus, there are no special language constructs for raising events.
 
-Clients react to events through ***event handlers***. Event handlers are attached using the += operator and removed using the -= operator. The following example attaches an event handler to the `Changed` event of a `List<string>`.
+Clients react to events through ***event handlers***. Event handlers are attached using the `+=` operator and removed using the `-=` operator. The following example attaches an event handler to the `Changed` event of a `List<string>`.
+
 ```csharp
 using System;
-class Example
+class EventExample
 {
 	static int changeCount;
 	static void ListChanged(object sender, EventArgs e) 
@@ -676,16 +687,17 @@ class Example
 }
 ```
 
-For advanced scenarios where control of the underlying storage of an event is desired, an event declaration can explicitly provide add and remove accessors, which are somewhat similar to the set accessor of a property.
+For advanced scenarios where control of the underlying storage of an event is desired, an event declaration can explicitly provide `add` and `remove` accessors, which are somewhat similar to the `set` accessor of a property.
 
 ### Operators
 
 An ***operator*** is a member that defines the meaning of applying a particular expression operator to instances of a class. Three kinds of operators can be defined: unary operators, binary operators, and conversion operators. All operators must be declared as `public` and `static`.
 
-The `List<T>` class declares two operators, `operator ==` and `operator !=`, and thus gives new meaning to expressions that apply those operators to List instances. Specifically, the operators define equality of two `List<T>` instances as comparing each of the contained objects using their Equals methods. The following example uses the == operator to compare two `List<int>` instances.
+The `List<T>` class declares two operators, `operator ==` and `operator !=`, and thus gives new meaning to expressions that apply those operators to `List` instances. Specifically, the operators define equality of two `List<T>` instances as comparing each of the contained objects using their Equals methods. The following example uses the `==` operator to compare two `List<int>` instances.
+
 ```csharp
 using System;
-class Example
+class OperatorExample
 {
 	static void Main() 
 	{
@@ -702,7 +714,7 @@ class Example
 }
 ```
 
-The first `Console.WriteLine` outputs True because the two lists contain the same number of objects with the same values in the same order. Had `List<T>` not defined `operator ==`, the first `Console.WriteLine` would have output False because `a` and `b` reference different `List<int>` instances.
+The first `Console.WriteLine` outputs `True` because the two lists contain the same number of objects with the same values in the same order. Had `List<T>` not defined `operator ==`, the first `Console.WriteLine` would have output `False` because `a` and `b` reference different `List<int>` instances.
 
 ### Finalizers
 

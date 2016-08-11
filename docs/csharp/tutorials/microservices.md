@@ -345,7 +345,7 @@ for our purposes. Let's go over its contents.
 The first line specifies the source image:
 
 ```
-FROM microsoft/dotnet:onbuild
+FROM microsoft/dotnet:latest
 ```
 
 Docker allows you to configure a machine image based on a
@@ -354,26 +354,18 @@ the machine parameters when you start, you only need to
 supply any changes. The changes here will be to include
 our application.
 
-In this first sample, we'll use the `onbuild` version of
-the RC2 image. This is the easiest way to create a working Docker
-environment. However, the image it creates is larger than necessary.
-This image include the dotnet core runtime, and the dotnet SDK. 
+In this first sample, we'll use the `latest` version of
+the dotnet image. This is the easiest way to create a working Docker
+environment. This image include the dotnet core runtime, and the dotnet SDK. 
+That makes it easier to get started and build, but does create a larger image.
 
-The next two lines load SQLite onto the machine:
-
-```
-RUN printf "deb http://ftp.us.debian.org/debian jessie main\n" >> /etc/apt/sources.list
-RUN apt-get -qq update && apt-get install -qqy sqlite3 libsqlite3-dev && rm -rf /var/lib/apt/lists/*
-```
-
-We're not using SQLite, but leave it in place for reference if you need it later.
-
-The next three lines setup your application:
+The next four lines setup and build your application:
 
 ```
 COPY . /app
 WORKDIR /app
 RUN ["dotnet", "restore"]
+RUN ["dotnet", "build"]
 ```
 
 This will copy the contents of the current directory to the docker VM, and restore
@@ -387,7 +379,8 @@ ENTRYPOINT ["dotnet", "run"]
 ```
 
 Notice that this Dockerfile uses the dotnet cli to build and run your docker image.
-That's why the larger image is needed.
+That's why the larger image is needed. The dotnet cli is delivered with the
+dotnet sdk.
 
 Here are the steps to build the image and deploy it. The information below is 
 for the PowerShell CLI. Different shells will have slightly different syntax

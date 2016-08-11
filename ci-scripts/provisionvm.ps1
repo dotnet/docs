@@ -95,8 +95,11 @@ $executedCommand = "$java $jar $destSource $jnlpCredentialsFlag $credentials $jn
 LogWrite $executedCommand
 
 Invoke-WebRequest "https://raw.githubusercontent.com/dotnet/core-docs/master/ci-scripts/agentman.ps1" -OutFile "$ProvisionArtifacts\agentman.ps1"
-$executedCommand | Out-File $ProvisionArtifacts\agentman.ps1 -append
+$executedCommand | Out-File -Encoding "UTF8" $ProvisionArtifacts\agentman.ps1 -append
 
-SchTasks /Create /SC MINUTE /MO 1 /TN "Jenkins Agent Inspector" /TR "powershell.exe -File $ProvisionArtifacts\agentman.ps1 -WindowStyle Hidden"
+# SchTasks /Create /SC MINUTE /MO 1 /TN "Jenkins Agent Inspector" /TR "powershell.exe -File $ProvisionArtifacts\agentman.ps1 -WindowStyle Hidden"
 
-& $java $jar $destSource $jnlpCredentialsFlag $credentials $jnlpUrl $serverURL
+while ($true)
+{
+    & $java $jar $destSource $jnlpCredentialsFlag $credentials $jnlpUrl $serverURL | Out-Null
+}

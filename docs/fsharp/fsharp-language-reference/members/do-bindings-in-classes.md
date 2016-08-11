@@ -47,12 +47,12 @@ Initializing object 1 2 2 4 8 16
 ```
 
 ## See Also
-[Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md)
+[Members](index.md)
 
-[Classes &#40;F&#35;&#41;](Classes-%5BFSharp%5D.md)
+[Classes](../classes.md)
 
-[Constructors &#40;F&#35;&#41;](Constructors-%5BFSharp%5D.md)
+[Constructors](constructors.md)
 
-[let Bindings in Classes &#40;F&#35;&#41;](let-Bindings-in-Classes-%5BFSharp%5D.md)
+[`let` Bindings in Classes](let-bindings-in-classes.md)
 
-[do Bindings &#40;F&#35;&#41;](do-Bindings-%5BFSharp%5D.md)
+[`do` Bindings](../functions/do-Bindings.md)

@@ -23,35 +23,35 @@ ms.assetid: 98b363a5-ee6a-4b7b-b8ae-b244f2a0b316
 [ attributes ]
 [ static ] member [accessibility-modifier] [self-identifier.]PropertyName
 with [accessibility-modifier] get() =
-get-function-body
+    get-function-body
 and [accessibility-modifier] set parameter =
-set-function-body
+    set-function-body
 
 // Alternative syntax for a property that has get and set.
 [ attributes-for-get ]
 [ static ] member [accessibility-modifier-for-get] [self-identifier.]PropertyName =
-get-function-body
+    get-function-body
 [ attributes-for-set ]
 [ static ] member [accessibility-modifier-for-set] [self-identifier.]PropertyName
 with set parameter =
-set-function-body
+    set-function-body
 
 // Property that has get only.
 [ attributes ]
 [ static ] member [accessibility-modifier] [self-identifier.]PropertyName =
-get-function-body
+    get-function-body
 
 // Alternative syntax for property that has get only.
 [ attributes ]
 [ static ] member [accessibility-modifier] [self-identifier.]PropertyName
 with get() =
-get-function-body
+    get-function-body
 
 // Property that has set only.
 [ attributes ]
 [ static ] member [accessibility-modifier] [self-identifier.]PropertyName
 with set parameter =
-set-function-body
+    set-function-body
 
 // Automatically implemented properties.
 [ attributes ]
@@ -81,11 +81,12 @@ Automatically implemented properties are part of the initialization of a type, s
 
 ```fsharp
 type MyClass() =
-let random  = new System.Random()
-member val AutoProperty = random.Next() with get, set
-member this.ExplicitProperty = random.Next()
+    let random  = new System.Random()
+    member val AutoProperty = random.Next() with get, set
+    member this.ExplicitProperty = random.Next()
 
 let class1 = new MyClass()
+
 printfn "class1.AutoProperty = %d" class1.AutoProperty
 printfn "class1.AutoProperty = %d" class1.AutoProperty
 printfn "class1.ExplicitProperty = %d" class1.ExplicitProperty
@@ -109,9 +110,9 @@ There are some libraries, such as the Entity Framework (`System.Data.Entity`) th
 
 Properties can be members of classes, structures, discriminated unions, records, interfaces, and type extensions and can also be defined in object expressions.
 
-Attributes can be applied to properties. To apply an attribute to a property, write the attribute on a separate line before the property. For more information, see [Attributes &#40;F&#35;&#41;](Attributes-%5BFSharp%5D.md).
+Attributes can be applied to properties. To apply an attribute to a property, write the attribute on a separate line before the property. For more information, see [Attributes](../attributes.md).
 
-By default, properties are public. Accessibility modifiers can also be applied to properties. To apply an accessibility modifier, add it immediately before the name of the property if it is meant to apply to both the `get` and `set` methods; add it before the `get` and `set` keywords if different accessibility is required for each accessor. The *accessibility-modifier* can be one of the following: `public`, `private`, `internal`. For more information, see [Access Control &#40;F&#35;&#41;](Access-Control-%5BFSharp%5D.md).
+By default, properties are public. Accessibility modifiers can also be applied to properties. To apply an accessibility modifier, add it immediately before the name of the property if it is meant to apply to both the `get` and `set` methods; add it before the `get` and `set` keywords if different accessibility is required for each accessor. The *accessibility-modifier* can be one of the following: `public`, `private`, `internal`. For more information, see [Access Control](../access-control.md).
 
 Property implementations are executed each time a property is accessed.
 
@@ -123,7 +124,7 @@ The following static property definition is based on a scenario in which you hav
 
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet3204.fs)]
 
-Properties can also be array-like, in which case they are called *indexed properties*. For more information, see [Indexed Properties &#40;F&#35;&#41;](Indexed-Properties-%5BFSharp%5D.md).
+Properties can also be array-like, in which case they are called *indexed properties*. For more information, see [Indexed Properties](indexed-properties.md).
 
 
 ## Type Annotation for Properties
@@ -140,11 +141,11 @@ The output is **20**.
 
 
 ## Abstract Properties
-Properties can be abstract. As with methods, `abstract` just means that there is a virtual dispatch associated with the property. Abstract properties can be truly abstract, that is, without a definition in the same class. The class that contains such a property is therefore an abstract class. Alternatively, abstract can just mean that a property is virtual, and in that case, a definition must be present in the same class. Note that abstract properties must not be private, and if one accessor is abstract, the other must also be abstract. For more information about abstract classes, see [Abstract Classes &#40;F&#35;&#41;](Abstract-Classes-%5BFSharp%5D.md).
+Properties can be abstract. As with methods, `abstract` just means that there is a virtual dispatch associated with the property. Abstract properties can be truly abstract, that is, without a definition in the same class. The class that contains such a property is therefore an abstract class. Alternatively, abstract can just mean that a property is virtual, and in that case, a definition must be present in the same class. Note that abstract properties must not be private, and if one accessor is abstract, the other must also be abstract. For more information about abstract classes, see [Abstract Classes](Abstract-Classes.md).
 
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet3207.fs)]
 
 ## See Also
-[Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md)
+[Members](index.md)
 
-[Methods &#40;F&#35;&#41;](Methods-%5BFSharp%5D.md)
+[Methods](methods.md)

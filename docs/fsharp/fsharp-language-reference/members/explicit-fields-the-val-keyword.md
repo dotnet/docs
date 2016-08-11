@@ -13,7 +13,7 @@ ms.assetid: 3bdbc745-436b-407f-bf54-5d11ca829cd0
 
 # Explicit Fields: The val Keyword
 
-The `val` keyword is used to declare a location to store a value in a class or structure type, without initializing it. Storage locations declared in this manner are called *explicit fields*. Another use of the `val` keyword is in conjunction with the `member` keyword to declare an auto-implemented property. For more information on auto-implemented properties, see [Properties &#40;F&#35;&#41;](Properties-%5BFSharp%5D.md).
+The `val` keyword is used to declare a location to store a value in a class or structure type, without initializing it. Storage locations declared in this manner are called *explicit fields*. Another use of the `val` keyword is in conjunction with the `member` keyword to declare an auto-implemented property. For more information on auto-implemented properties, see [Properties](properties.md).
 
 
 ## Syntax
@@ -44,7 +44,7 @@ For a mutable field, the .NET compiled representation is a .NET field.
 
 
 >[!WARNING] 
-`Note` The .NET Framework namespace `N:System.ComponentModel` contains an attribute that has the same name. For information about this attribute, see `System.ComponentModel.DefaultValueAttribute`.
+`Note` The .NET Framework namespace `System.ComponentModel` contains an attribute that has the same name. For information about this attribute, see `System.ComponentModel.DefaultValueAttribute`.
 
 
 The following code shows the use of explicit fields and, for comparison, a `let` binding in a class that has a primary constructor. Note that the `let`-bound field `myInt1` is private. When the `let`-bound field `myInt1` is referenced from a member method, the self identifier `this` is not required. But when you are referencing the explicit fields `myInt2` and `myString`, the self identifier is required.
@@ -70,14 +70,14 @@ The following code shows the use of explicit fields in a structure. Because a st
 
 The output is `11 xyz`.
 
-Explicit fields are not intended for routine use. In general, when possible you should use a `let` binding in a class instead of an explicit field. Explicit fields are useful in certain interoperability scenarios, such as when you need to define a structure that will be used in a platform invoke call to a native API, or in COM interop scenarios. For more information, see [External Functions &#40;F&#35;&#41;](External-Functions-%5BFSharp%5D.md). Another situation in which an explicit field might be necessary is when you are working with an F# code generator which emits classes without a primary constructor. Explicit fields are also useful for thread-static variables or similar constructs. For more information, see `System.ThreadStaticAttribute`.
+Explicit fields are not intended for routine use. In general, when possible you should use a `let` binding in a class instead of an explicit field. Explicit fields are useful in certain interoperability scenarios, such as when you need to define a structure that will be used in a platform invoke call to a native API, or in COM interop scenarios. For more information, see [External Functions](../functions/external-functions.md). Another situation in which an explicit field might be necessary is when you are working with an F# code generator which emits classes without a primary constructor. Explicit fields are also useful for thread-static variables or similar constructs. For more information, see `System.ThreadStaticAttribute`.
 
-When the keywords `member val` appear together in a type definition, it is a definition of an automatically implemented property. For more information, see [Properties &#40;F&#35;&#41;](Properties-%5BFSharp%5D.md).
+When the keywords `member val` appear together in a type definition, it is a definition of an automatically implemented property. For more information, see [Properties](properties.md).
 
 
 ## See Also
-[Properties &#40;F&#35;&#41;](Properties-%5BFSharp%5D.md)
+[Properties](properties.md)
 
-[Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md)
+[Members](index).md)
 
-[let Bindings in Classes &#40;F&#35;&#41;](let-Bindings-in-Classes-%5BFSharp%5D.md)
+[`let` Bindings in Classes](let-bindings-in-classes.md)

@@ -104,7 +104,7 @@ let floatLists = arrayOf10Lists<float>
 
 [Generics](index.md)
 
-[Statically Resolved Type Parameters](../members/statically-resolved-type-parameters.md)
+[Statically Resolved Type Parameters](statically-resolved-type-parameters.md)
 
 [Constraints](constraints.md)
 

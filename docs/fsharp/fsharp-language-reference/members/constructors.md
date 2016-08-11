@@ -19,7 +19,7 @@ This topic describes how to define and use constructors to create and initialize
 ## Construction of Class Objects
 Objects of class types have constructors. There are two kinds of constructors. One is the primary constructor, whose parameters appear in parentheses just after the type name. You specify other, optional additional constructors by using the `new` keyword. Any such additional constructors must call the primary constructor.
 
-The primary constructor contains `let` and `do` bindings that appear at the start of the class definition. A `let` binding declares private fields and methods of the class; a `do` binding executes code. For more information about `let` bindings in class constructors, see [let Bindings in Classes &#40;F&#35;&#41;](let-Bindings-in-Classes-%5BFSharp%5D.md). For more information about `do` bindings in constructors, see [do Bindings in Classes &#40;F&#35;&#41;](do-Bindings-in-Classes-%5BFSharp%5D.md).
+The primary constructor contains `let` and `do` bindings that appear at the start of the class definition. A `let` binding declares private fields and methods of the class; a `do` binding executes code. For more information about `let` bindings in class constructors, see [`let` Bindings in Classes](let-bindings-in-classes.md). For more information about `do` bindings in constructors, see [`do` Bindings in Classes](do-bindings-in-classes.md).
 
 Regardless of whether the constructor you want to call is a primary constructor or an additional constructor, you can create objects by using a `new` expression, with or without the optional `new` keyword. You initialize your objects together with constructor arguments, either by listing the arguments in order and separated by commas and enclosed in parentheses, or by using named arguments and values in parentheses. You can also set properties on an object during the construction of the object by using the property names and assigning values just as you use named constructor arguments.
 
@@ -43,7 +43,7 @@ Also, structures often have fields that are created by using the `val` keyword; 
 
 [!code-fsharp[Main](../../../../samples/snippets/fslangref2/snippet3502.fs)]
 
-For more information, see [Explicit Fields: The val Keyword &#40;F&#35;&#41;](Explicit-Fields-The-val-Keyword-%5BFSharp%5D.md).
+For more information, see [Explicit Fields: The `val` Keyword](explicit-fields-the-val-keyword.md).
 
 
 ## Executing Side Effects in Constructors
@@ -83,8 +83,8 @@ The following version of the previous code illustrates the combination of ordina
 [!code-fsharp[Main](../../../../samples/snippets/fslangref2/snippet3507.fs)]
     
 ## Static Constructors or Type Constructors
-In addition to specifying code for creating objects, static `let` and `do` bindings can be authored in class types that execute before the type is first used to perform initialization at the type level. For more information, see [let Bindings in Classes &#40;F&#35;&#41;](let-Bindings-in-Classes-%5BFSharp%5D.md) and [do Bindings in Classes &#40;F&#35;&#41;](do-Bindings-in-Classes-%5BFSharp%5D.md).
+In addition to specifying code for creating objects, static `let` and `do` bindings can be authored in class types that execute before the type is first used to perform initialization at the type level. For more information, see [`let` Bindings in Classes](let-bindings-in-classes.md) and [`do` Bindings in Classes](do-bindings-in-classes.md).
 
 
 ## See Also
-[Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md)
+[Members](index.md)

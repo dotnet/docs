@@ -21,24 +21,24 @@ ms.assetid: f1266b8b-e2e3-4f49-9332-65c6d34dc0f3
 ```fsharp
 // Indexed property that has both get and set defined.
 member self-identifier.PropertyName
-with get(index-variable) =
-get-function-body
-and set index-variablesvalue-variables =
-set-function-body
+    with get(index-variable) =
+        get-function-body
+    and set index-variablesvalue-variables =
+        set-function-body
 
 // Indexed property that has get only.
 member self-identifier.PropertyName(index-variable) =
-get-function-body
+    get-function-body
 
 // Alternative syntax for indexed property with get only
 member self-identifier.PropertyName
-with get(index-variables) =
-get-function-body
+    with get(index-variables) =
+        get-function-body
 
 // Indexed property that has set only.
 member self-identifier.PropertyName
-with set index-variablesvalue-variables = 
-set-function-body
+    with set index-variablesvalue-variables = 
+        set-function-body
 ```
 
 ## Remarks
@@ -48,7 +48,7 @@ When the *PropertyName* is `Item`, the compiler treats the property as a default
 
 The syntax for accessing a nondefault indexed property is to provide the name of the property and the index in parentheses. For example, if the property is `Ordinal`, you write `obj.Ordinal(index)` to access it.
 
-Regardless of which form you use, you should always use the curried form for the `set` method on an indexed property. For information about curried functions, see [Functions &#40;F&#35;&#41;](Functions-%5BFSharp%5D.md).
+Regardless of which form you use, you should always use the curried form for the `set` method on an indexed property. For information about curried functions, see [Functions](functions/index.md).
 
 ## Example
 
@@ -72,4 +72,4 @@ The following code demonstrates the use of an indexed property with multiple ind
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet3302.fs)]
     
 ## See Also
-[Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md)
+[Members](index.md)

@@ -26,7 +26,7 @@ The type of the `Add` method is `('a -> unit) -> unit`. Therefore, the event han
 [!code-fsharp[Main](../../../../samples/snippets/fslangref2/snippet3602.fs)]
     
 ## Creating Custom Events
-F# events are represented by the F# [Event](https://msdn.microsoft.com/library/f3b47c8a-4ee5-4ce8-9a72-ad305a17c4b9) class, which implements the [IEvent](https://msdn.microsoft.com/library/8dbca0df-f8a1-40bd-8d50-aa26f6a8b862) interface. `IEvent` is itself an interface that combines the functionality of two other interfaces, `System.IObservable&#96;1` and [IDelegateEvent](https://msdn.microsoft.com/library/3d849465-6b8e-4fc5-b36c-2941d734268a). Therefore, `Event`s have the equivalent functionality of delegates in other languages, plus the additional functionality from `IObservable`, which means that F# events support event filtering and using F# first-class functions and lambda expressions as event handlers. This functionality is provided in the [Event module](https://msdn.microsoft.com/library/8b883baa-a460-4840-9baa-de8260351bc7).
+F# events are represented by the F# [Event](https://msdn.microsoft.com/library/f3b47c8a-4ee5-4ce8-9a72-ad305a17c4b9) class, which implements the [IEvent](https://msdn.microsoft.com/library/8dbca0df-f8a1-40bd-8d50-aa26f6a8b862) interface. `IEvent` is itself an interface that combines the functionality of two other interfaces, `System.IObservable<'T>` and [IDelegateEvent](https://msdn.microsoft.com/library/3d849465-6b8e-4fc5-b36c-2941d734268a). Therefore, `Event`s have the equivalent functionality of delegates in other languages, plus the additional functionality from `IObservable`, which means that F# events support event filtering and using F# first-class functions and lambda expressions as event handlers. This functionality is provided in the [Event module](https://msdn.microsoft.com/library/8b883baa-a460-4840-9baa-de8260351bc7).
 
 To create an event on a class that acts just like any other .NET Framework event, add to the class a `let` binding that defines an `Event` as a field in a class. You can specify the desired event argument type as the type argument, or leave it blank and have the compiler infer the appropriate type. You also must define an event member that exposes the event as a CLI event. This member should have the [CLIEvent](https://msdn.microsoft.com/library/d359f1dd-ffa5-42fb-8808-b4c8131a0333) attribute. It is declared like a property and its implementation is just a call to the [Publish](https://msdn.microsoft.com/library/b0fdaad5-25e5-43d0-9c0c-ce37c4aeb68e) property of the event. Users of your class can use the `Add` method of the published event to add a handler. The argument for the `Add` method can be a lambda expression. You can use the `Trigger` property of the event to raise the event, passing the arguments to the handler function. The following code example illustrates this. In this example, the inferred type argument for the event is a tuple, which represents the arguments for the lambda expression.
 
@@ -38,7 +38,7 @@ The output is as follows.
 Event1 occurred! Object data: Hello World!
 ```
 
-The additional functionality provided by the **Event** module is illustrated here. The following code example illustrates the basic use of **Event.create** to create an event and a trigger method, add two event handlers in the form of lambda expressions, and then trigger the event to execute both lambda expressions.
+The additional functionality provided by the `Event` module is illustrated here. The following code example illustrates the basic use of `Event.create` to create an event and a trigger method, add two event handlers in the form of lambda expressions, and then trigger the event to execute both lambda expressions.
 
 [!code-fsharp[Main](../../../../samples/snippets/fslangref2/snippet3603.fs)]
 
@@ -50,7 +50,7 @@ Given a value: Event occurred.
 ```
 
 ## Processing Event Streams
-Instead of just adding an event handler for an event by using the [Event.add](https://msdn.microsoft.com/library/10670d3b-8d47-4f6e-b8df-ebc6f64ef4fd) function, you can use the functions in the **Event** module to process streams of events in highly customized ways. To do this, you use the forward pipe (**|&gt;**) together with the event as the first value in a series of function calls, and the **Event** module functions as subsequent function calls.
+Instead of just adding an event handler for an event by using the [Event.add](https://msdn.microsoft.com/library/10670d3b-8d47-4f6e-b8df-ebc6f64ef4fd) function, you can use the functions in the `Event` module to process streams of events in highly customized ways. To do this, you use the forward pipe (`|>`) together with the event as the first value in a series of function calls, and the `Event` module functions as subsequent function calls.
 
 The following code example shows how to set up an event for which the handler is only called under certain conditions.
 
@@ -113,7 +113,7 @@ inpc.PropertyChanged.Add(appForm.OnPropertyChanged)
 Application.Run(appForm)
 ```
 
-If you want to hook up the event in the constructor, the code is a bit more complicated because the event hookup must be in a **then** block in an additional constructor, as in the following example:
+If you want to hook up the event in the constructor, the code is a bit more complicated because the event hookup must be in a `then` block in an additional constructor, as in the following example:
 
 ```fsharp
 module CustomForm
@@ -173,14 +173,14 @@ Application.Run(appForm)
 ```
 
 ## See Also
-[Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md)
+[Members](index.md)
 
 [Handling and Raising Events](https://msdn.microsoft.com/library/edzehd2t.aspx)
 
-[Lambda Expressions: The fun Keyword &#40;F&#35;&#41;](Lambda-Expressions-The-fun-Keyword-%5BFSharp%5D.md)
+[Lambda Expressions: The `fun` Keyword](../functions/lambda-expressions-the-fun-keyword.md)
 
-[Control.Event Module &#40;F&#35;&#41;](Control.Event-Module-%5BFSharp%5D.md)
+[Control.Event Module](Control.Event-Module.md)
 
-[Control.Event&#60;'T&#62; Class &#40;F&#35;&#41;](Control.Event%5B%27T%5D-Class-%5BFSharp%5D.md)
+[Control.Event&#60;'T&#62; Class](Control.Event%5B%27T%5D-Class.md)
 
-[Control.Event&#60;'Delegate,'Args&#62; Class &#40;F&#35;&#41;](Control.Event%5B%27Delegate%2C%27Args%5D-Class-%5BFSharp%5D.md)
+[Control.Event&#60;'Delegate,'Args&#62; Class](Control.Event%5B%27Delegate%2C%27Args%5D-Class.md)

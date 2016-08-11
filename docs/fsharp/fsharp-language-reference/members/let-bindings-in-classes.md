@@ -46,13 +46,13 @@ The output is as follows.
 ```
 
 ## Alternative Ways to Create Fields
-You can also use the `val` keyword to create a private field. When using the `val` keyword, the field is not given a value when the object is created, but instead is initialized with a default value. For more information, see [Explicit Fields: The val Keyword &#40;F&#35;&#41;](Explicit-Fields-The-val-Keyword-%5BFSharp%5D.md).
+You can also use the `val` keyword to create a private field. When using the `val` keyword, the field is not given a value when the object is created, but instead is initialized with a default value. For more information, see [Explicit Fields: The val Keyword](explicit-fields-the-val-keyword.md).
 
-You can also define private fields in a class by using a member definition and adding the keyword `private` to the definition. This can be useful if you expect to change the accessibility of a member without rewriting your code. For more information, see [Access Control &#40;F&#35;&#41;](Access-Control-%5BFSharp%5D.md).
+You can also define private fields in a class by using a member definition and adding the keyword `private` to the definition. This can be useful if you expect to change the accessibility of a member without rewriting your code. For more information, see [Access Control](../access-control.md).
 
 ## See Also
-[Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md)
+[Members](index.md)
 
-[do Bindings in Classes &#40;F&#35;&#41;](do-Bindings-in-Classes-%5BFSharp%5D.md)
+[`do` Bindings in Classes](do-bindings-in-classes.md)
 
-[let Bindings &#40;F&#35;&#41;](let-Bindings-%5BFSharp%5D.md)
+[`let` Bindings](../functions/let-bindings.md)

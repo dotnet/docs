@@ -21,7 +21,7 @@ The term *binding* means associating a name with a definition. The `let` keyword
 
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet601.fs)]
 
-The type of a value is inferred from the definition. For a primitive type, such as an integral or floating point number, the type is determined from the type of the literal. Therefore, in the previous example, the compiler infers the type of `b` to be `unsigned int`, whereas the compiler infers the type of `a` to be `int`. The type of a function value is determined from the return value in the function body. For more information about function value types, see [Functions](functions.md). For more information about literal types, see [Literals](literals.md).
+The type of a value is inferred from the definition. For a primitive type, such as an integral or floating point number, the type is determined from the type of the literal. Therefore, in the previous example, the compiler infers the type of `b` to be `unsigned int`, whereas the compiler infers the type of `a` to be `int`. The type of a function value is determined from the return value in the function body. For more information about function value types, see [Functions](../functions/index.md). For more information about literal types, see [Literals](../literals.md).
 
 
 ## Why Immutable?

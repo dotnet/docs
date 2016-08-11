@@ -117,6 +117,6 @@ class end
 ```
 
 ## See Also
-[Generics](../generics.md)
+[Generics](index.md)
 
 [Constraints](constraints.md)

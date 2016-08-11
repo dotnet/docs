@@ -61,7 +61,7 @@ The output is as follows.
 ```
 
 ## See Also
-[Generics](../generics.md)
+[Generics](index.md)
 
 [Type Inference](../type-inference.md)
 

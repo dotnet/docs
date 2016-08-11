@@ -22,12 +22,12 @@ A *method* is a function that is associated with a type. In object-oriented prog
 // Instance method definition.
 [ attributes ]
 member [inline] self-identifier.method-nameparameter-list [ : return-type ]=
-method-body
+    method-body
 
 // Static method definition.
 [ attributes ]
 static member [inline] method-nameparameter-list [ : return-type ]=
-method-body
+    method-body
 
 // Abstract method declaration or virtual dispatch slot.
 [ attributes ]
@@ -38,20 +38,20 @@ abstract member self-identifier.method-name : type-signature
 abstract member [inline] self-identifier.method-name : type-signature
 [ attributes ]
 default member [inline] self-identifier.method-nameparameter-list[ : return-type ] =
-method-body
+    method-body
 
 // Override of inherited virtual method.
 [ attributes ]
 override member [inline] self-identifier.method-nameparameter-list [ : return-type ]=
-method-body
+    method-body
 ```
 
 ## Remarks
 In the previous syntax, you can see the various forms of method declarations and definitions. In longer method bodies, a line break follows the equal sign (=), and the whole method body is indented.
 
-Attributes can be applied to any method declaration. They precede the syntax for a method definition and are usually listed on a separate line. For more information, see [Attributes &#40;F&#35;&#41;](Attributes-%5BFSharp%5D.md).
+Attributes can be applied to any method declaration. They precede the syntax for a method definition and are usually listed on a separate line. For more information, see [Attributes](../attributes.md).
 
-Methods can be marked `inline`. For information about `inline`, see [Inline Functions &#40;F&#35;&#41;](Inline-Functions-%5BFSharp%5D.md).
+Methods can be marked `inline`. For information about `inline`, see [Inline Functions](../functions/inline-functions.md).
 
 Non-inline methods can be used recursively within the type; there is no need to explicitly use the `rec` keyword.
 
@@ -76,7 +76,7 @@ The following example illustrates the definition and use of static methods. Assu
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet3402.fs)]
 
 ## Abstract and Virtual Methods
-The keyword `abstract` indicates that a method has a virtual dispatch slot and might not have a definition in the class. A *virtual dispatch slot* is an entry in an internally maintained table of functions that is used at run time to look up virtual function calls in an object-oriented type. The virtual dispatch mechanism is the mechanism that implements *polymorphism*, an important feature of object-oriented programming. A class that has at least one abstract method without a definition is an *abstract class*, which means that no instances can be created of that class. For more information about abstract classes, see [Abstract Classes &#40;F&#35;&#41;](Abstract-Classes-%5BFSharp%5D.md).
+The keyword `abstract` indicates that a method has a virtual dispatch slot and might not have a definition in the class. A *virtual dispatch slot* is an entry in an internally maintained table of functions that is used at run time to look up virtual function calls in an object-oriented type. The virtual dispatch mechanism is the mechanism that implements *polymorphism*, an important feature of object-oriented programming. A class that has at least one abstract method without a definition is an *abstract class*, which means that no instances can be created of that class. For more information about abstract classes, see [Abstract Classes](../abstract-classes.md).
 
 Abstract method declarations do not include a method body. Instead, the name of the method is followed by a colon (:) and a type signature for the method. The type signature of a method is the same as that shown by IntelliSense when you pause the mouse pointer over a method name in the Visual Studio Code Editor, except without parameter names. Type signatures are also displayed by the interpreter, fsi.exe, when you are working interactively. The type signature of a method is formed by listing out the types of the parameters, followed by the return type, with appropriate separator symbols. Curried parameters are separated by `->` and tuple parameters are separated by `*`. The return value is always separated from the arguments by a `->` symbol. Parentheses can be used to group complex parameters, such as when a function type is a parameter, or to indicate when a tuple is treated as a single parameter rather than as two parameters.
 
@@ -101,4 +101,4 @@ The following example contains a type that has examples of fields, private funct
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet3406.fs)]
 
 ## See Also
-[Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md)
+[Members](index.md)

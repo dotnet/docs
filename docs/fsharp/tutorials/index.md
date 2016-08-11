@@ -1,3 +1,4 @@
 # F# Tutorials
 
-> [!NOTE] This is still in-progress.
+> [!NOTE]
+This is still in-progress.

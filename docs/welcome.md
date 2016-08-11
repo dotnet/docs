@@ -26,6 +26,7 @@ News
 
 There is always something new to learn or explore in the .NET community. Here's the latest news you may want to check out.
 
+- [Announcing .NET Framework 4.6.2](https://blogs.msdn.microsoft.com/dotnet/2016/08/02/announcing-net-framework-4-6-2/)
 - [Announcing .NET Core 1.0](https://blogs.msdn.microsoft.com/dotnet/announcing-net-core-1-0)
 - [Announcing ASP.NET Core 1.0](https://blogs.msdn.microsoft.com/webdev/2016/06/27/announcing-asp-net-core-1-0/)
 - [Open Source Xamarin, Ready for you!](https://blog.xamarin.com/live-from-evolve-open-source-xamarin-ready-for-you/)

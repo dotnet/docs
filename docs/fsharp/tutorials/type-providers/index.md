@@ -13,7 +13,8 @@ ms.assetid: 25697ef6-465e-4248-9de5-1d199d4a8b59
 
 # Type Providers
 
-> [!NOTE] This guide was written from F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
+> [!NOTE]
+This guide was written from F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
 
 An F# type provider is a component that provides types, properties, and methods for use in your program. Type providers are a significant part of F# 3.0 support for information-rich programming. The key to information-rich programming is to eliminate barriers to working with diverse information sources found on the Internet and in modern enterprise environments. One significant barrier to including a source of information into a program is the need to represent that information as types, properties, and methods for use in a programming language environment. Writing these types manually is very time-consuming and difficult to maintain. A common alternative is to use a code generator which adds files to your project; however, the conventional types of code generation do not integrate well into exploratory modes of programming supported by F# because the generated code must be replaced each time a service reference is adjusted.
 
@@ -44,4 +45,4 @@ Where necessary, you can create your own custom type providers, or reference typ
 ## See Also
 [F# Language Reference](../../fsharp-language-reference/index.md)
 
-[Visual F#](index.md)
+[Visual F#](../../index.md)

@@ -13,7 +13,8 @@ ms.assetid: 1c413eb0-16a5-4c1a-9a4e-ad6877e645d6
 
 # Walkthrough: Accessing a SQL Database by Using Type Providers
 
-> [!NOTE] This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
+> [!NOTE]
+This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
 
 This walkthrough explains how to use the SqlDataConnection (LINQ to SQL) type provider that is available in F# 3.0 to generate types for data in a SQL database when you have a live connection to a database. If you do not have a live connection to a database, but you do have a LINQ to SQL schema file (DBML file), see [Walkthrough: Generating F# Types from a DBML File](generating-fsharp-types-from-dbml.md).
 
@@ -145,7 +146,7 @@ let query1 =
 query1 |> Seq.iter (fun row -> printfn "%s %d" row.Name row.TestData1)
 ```
 
-The appearance of the word `query` indicates that this is a query expression, a type of computation expression that generates a collection of results similar of a typical database query. If you hover over query, you will see that it is an instance of [Linq.QueryBuilder Class &#40;F&#35;&#41;](Linq.QueryBuilder-Class-%5BFSharp%5D.md), a type that defines the query computation expression. If you hover over `query1`, you will see that it is an instance of `System.Linq.IQueryable`. As the name suggests, `System.Linq.IQueryable` represents data that may be queried, not the result of a query. A query is subject to lazy evaluation, which means that the database is only queried when the query is evaluated. The final line passes the query through `Seq.iter`. Queries are enumerable and may be iterated like sequences. For more information, see [Query Expressions &#40;F&#35;&#41;](../../fsharp-language-reference/query-expressions.md).
+The appearance of the word `query` indicates that this is a query expression, a type of computation expression that generates a collection of results similar of a typical database query. If you hover over query, you will see that it is an instance of [Linq.QueryBuilder Class &#40;F&#35;&#41;](Linq.QueryBuilder-Class-%5BFSharp%5D.md), a type that defines the query computation expression. If you hover over `query1`, you will see that it is an instance of `System.Linq.IQueryable`. As the name suggests, `System.Linq.IQueryable` represents data that may be queried, not the result of a query. A query is subject to lazy evaluation, which means that the database is only queried when the query is evaluated. The final line passes the query through `Seq.iter`. Queries are enumerable and may be iterated like sequences. For more information, see [Query Expressions](../../fsharp-language-reference/query-expressions.md).
 
 <br />
 
@@ -479,9 +480,9 @@ INSERT INTO Table3 (Id, Name, Data)
 
 [SqlDataConnection Type Provider](SqlDataConnection-Type-Provider-%5BFSharp%5D.md)
 
-[Walkthrough: Generating F@ Types from a DBML File](generating-fshar-types-from-dbml.md)
+[Walkthrough: Generating F@ Types from a DBML File](generating-fsharp-types-from-dbml.md)
 
-[Query Expressions](../../fsharp-language-reference/query-expressions-.md)
+[Query Expressions](../../fsharp-language-reference/query-expressions.md)
 
 [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)
 

@@ -13,7 +13,8 @@ ms.assetid: dc82a932-5401-4d19-9fb3-92c50d8db514
 
 # Walkthrough: Accessing a SQL Database by Using Type Providers and Entities
 
-> [!NOTE] This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
+> [!NOTE]
+This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
 
 This walkthrough for F# 3.0 shows you how to access typed data for a SQL database based on the ADO.NET Entity Data Model. This walkthrough shows you how to set up the F# `SqlEntityConnection` type provider for use with a SQL database, how to write queries against the data, how to call stored procedures on the database, as well as how to use some of the ADO.NET Entity Framework types and methods to update the database.
 
@@ -227,7 +228,7 @@ When you use a query expression, you must remember that the query is subject to 
 
 
 ## Next Steps
-Explore other query options by reviewing the query operators available in [Query Expressions &#40;F&#35;&#41;](../../fsharp-language-reference/query-expressions.md), and also review the [ADO.NET Entity Framework](https://msdn.microsoft.com/library/bb399572) to understand what functionality is available to you when you use this type provider.
+Explore other query options by reviewing the query operators available in [Query Expressions](../../fsharp-language-reference/query-expressions.md), and also review the [ADO.NET Entity Framework](https://msdn.microsoft.com/library/bb399572) to understand what functionality is available to you when you use this type provider.
 
 
 ## See Also

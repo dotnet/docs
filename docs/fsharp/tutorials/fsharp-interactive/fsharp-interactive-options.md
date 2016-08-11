@@ -13,7 +13,8 @@ ms.assetid: f9f3e39b-ce6c-41ff-991f-0625f46441ae
 
 # F# Interactive Options
 
-> [!NOTE] This article currently describes the experience for Windows only.  It will be rewritten.
+> [!NOTE]
+This article currently describes the experience for Windows only.  It will be rewritten.
 
 This topic describes the command-line options supported by F# Interactive, `fsi.exe`. F# Interactive accepts many of the same command line options as the F# compiler, but also accepts some additional options.
 

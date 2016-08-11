@@ -13,7 +13,8 @@ ms.assetid: 81adb2eb-625f-4ad8-aeaa-8f672a6d79a2
 
 # Walkthrough: Generating F# Types from an EDMX Schema File
 
-> [!NOTE] This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
+> [!NOTE]
+This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
 
 This walkthrough for F# 3.0 shows you how to create types for data that is represented by the Entity Data Model (EDM), the schema for which is specified in an .edmx file. This walkthrough also shows how to use the EdmxFile type provider. Before you begin, consider whether a SqlEntityConnection type provider is a more appropriate type provider option. The SqlEntityConnection type provider works best for scenarios where you have a live database that you can connect to during the development phase of your project, and you do not mind specifying the connection string at compile time. However, this type provider is also limited in that it doesn't expose as much database functionality as the EdmxFile type provider. Also, if you don't have a live database connection for a database project that uses the Entity Data Model, you can use the .edmx file to code against the database. When you use the EdmxFile type provider, the F# compiler runs EdmGen.exe to generate the types that it provides.
 
@@ -256,7 +257,7 @@ You should complete this procedure only if you want to know how to generate a fu
 
 
 ## Next Steps
-Explore other queries by looking at the available query operators as listed in [Query Expressions](../../fsharp-language-reference/query-expressions-.md).
+Explore other queries by looking at the available query operators as listed in [Query Expressions](../../fsharp-language-reference/query-expressions.md).
 
 
 ## See Also

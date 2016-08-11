@@ -13,7 +13,8 @@ ms.assetid: 6fbb6ccc-248f-4226-95e9-f6f99541dbe4
 
 # Walkthrough: Generating F# Types from a DBML File
 
-> [!NOTE] This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
+> [!NOTE]
+This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
 
 This walkthrough for F# 3.0 describes how to create types for data from a database when you have schema information encoded in a .dbml file. LINQ to SQL uses this file format to represent database schema. You can generate a LINQ to SQL schema file in Visual Studio by using the Object Relational (O/R) Designer. For more information, see [O&#47;R Designer Overview](https://msdn.microsoft.com/library/bb384511.aspx) and [Code Generation in LINQ to SQL](Code-Generation-in-https://msdn.microsoft.com/library/bb386976).
 
@@ -154,4 +155,4 @@ You can proceed to use other query expressions, or get a database connection fro
 
 [SqlMetal.exe &#40;Code Generation Tool&#41;](https://msdn.microsoft.com/library/bb386987)
 
-[Query Expressions](../../fsharp-language-reference/query-expressions-.md)
+[Query Expressions](../../fsharp-language-reference/query-expressions.md)

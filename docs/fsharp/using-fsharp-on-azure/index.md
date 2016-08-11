@@ -1,7 +1,4 @@
 # Using F# on Azure
 
-TODO
-
-## Introduction to Azure
-
-TODO
+> [!NOTE]
+This is still in progress.

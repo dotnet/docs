@@ -13,7 +13,8 @@ ms.assetid: 82bec076-19d4-470c-979f-6c3a14b7c70a
 
 # Tutorial: Creating a Type Provider
 
-> [!NOTE] This guide was written for F# 3.0 and will be updated.
+> [!NOTE]
+This guide was written for F# 3.0 and will be updated.
 
 The type provider mechanism in F# 3.0 is a significant part of its support for information rich programming. This tutorial explains how to create your own type providers by walking you through the development of several simple type providers to illustrate the basic concepts. For more information about the type provider mechanism in F#, see [Type Providers](index.md).
 

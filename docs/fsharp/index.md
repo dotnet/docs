@@ -14,7 +14,8 @@ ms.assetid: ea27fb37-dad1-4bd4-a3cc-4f5c70767ae9
 
 # F# Guide
 
-> [!NOTE] This is still in-progress.
+> [!NOTE]
+This is still in-progress.
 
 * [F# Learning Resources](http://fsharp.org/learn.html)
 * [F# Language Reference](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/fsharp-language-reference)

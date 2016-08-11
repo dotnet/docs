@@ -29,4 +29,4 @@ If you encounter a problem when you work with type providers, you can review the
 |**Not Valid Path**. A path to a file was not valid.|Verify whether the path is correct and the file exists. In addition, you must either quote any backlashes in the path appropriately or use a verbatim string or triple-quoted string.|
 
 ## See Also
-[Type Providers](Type-Providers.md)
+[Type Providers](index.md)

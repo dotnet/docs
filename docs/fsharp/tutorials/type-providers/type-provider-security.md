@@ -34,4 +34,4 @@ If you decide to change the trust setting directly in Visual Studio, perform the
 
 
 ## See Also
-[Type Providers](Type-Providers.md)
+[Type Providers](index.md)

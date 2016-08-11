@@ -13,9 +13,11 @@ ms.assetid: 6fbb6ccc-248f-4226-95e9-f6f99541dbe4
 
 # Walkthrough: Generating F# Types from a DBML File
 
+> [!NOTE] This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
+
 This walkthrough for F# 3.0 describes how to create types for data from a database when you have schema information encoded in a .dbml file. LINQ to SQL uses this file format to represent database schema. You can generate a LINQ to SQL schema file in Visual Studio by using the Object Relational (O/R) Designer. For more information, see [O&#47;R Designer Overview](https://msdn.microsoft.com/library/bb384511.aspx) and [Code Generation in LINQ to SQL](Code-Generation-in-https://msdn.microsoft.com/library/bb386976).
 
-The Database Markup Language (DBML) type provider allows you to write code that uses types based on a database schema without requiring you to specify a static connection string at compile time. That can be useful if you need to allow for the possibility that the final application will use a different database, different credentials, or a different connection string than the one you use to develop the application. If you have a direct database connection that you can use at compile time and this is the same database and credentials that you will eventually use in your built application, you can also use the SQLDataConnection type provider. For more information, see [Walkthrough: Accessing a SQL Database by Using Type Providers &#40;F&#35;&#41;](Walkthrough-Accessing-a-SQL-Database-by-Using-Type-Providers-%5BFSharp%5D.md).
+The Database Markup Language (DBML) type provider allows you to write code that uses types based on a database schema without requiring you to specify a static connection string at compile time. That can be useful if you need to allow for the possibility that the final application will use a different database, different credentials, or a different connection string than the one you use to develop the application. If you have a direct database connection that you can use at compile time and this is the same database and credentials that you will eventually use in your built application, you can also use the SQLDataConnection type provider. For more information, see [Walkthrough: Accessing a SQL Database by Using Type Providers](accessing-a-sql-database.md).
 
 This walkthrough illustrates the following tasks. They should be completed in this order for the walkthrough to succeed:
 
@@ -98,29 +100,28 @@ In this section, you create a type provider and generate types from the schema t
 <br />
 
 ```fsharp
-  open Microsoft.FSharp.Data.TypeProviders
-  
-  
-  type dbml = DbmlFile<"MyDatabase.dbml", ResolutionFolder = @"<path to folder that contains .dbml file>>
-  
-  // This connection string can be specified at run time.
-  let connectionString = "Data Source=MYSERVER\INSTANCE;Initial Catalog=MyDatabase;Integrated Security=SSPI;"
-  let dataContext = new dbml.Mydatabase(connectionString)
+open Microsoft.FSharp.Data.TypeProviders
+
+
+type dbml = DbmlFile<"MyDatabase.dbml", ResolutionFolder = @"<path-to-folder-that-contains-.dbml-file>>
+
+// This connection string can be specified at run time.
+let connectionString = "Data Source=MYSERVER\INSTANCE;Initial Catalog=MyDatabase;Integrated Security=SSPI;"
+let dataContext = new dbml.Mydatabase(connectionString)
 ```
 
 The DataContext type provides access to all the generated types and inherits from `System.Data.Linq.DataContext`. The DbmlFile type provider has various static parameters that you can set. For example, you can use a different name for the DataContext type by specifying `DataContext=MyDataContext`. In that case, your code resembles the following example:
 <br />
 
 ```fsharp
-  open Microsoft.FSharp.Data.TypeProviders
-  
-  
-  type dbml = DbmlFile<"MyDatabase.dbml",
-  ContextTypeName = "MyDataContext">
-  
-  // This connection string can be specified at run time.
-  let connectionString = "Data Source=MYSERVER\INSTANCE;Initial Catalog=MyDatabase;Integrated Security=SSPI;"
-  let db = new dbml.MyDataContext(connectionString)
+open Microsoft.FSharp.Data.TypeProviders
+
+
+type dbml = DbmlFile<"MyDatabase.dbml", ContextTypeName = "MyDataContext">
+
+// This connection string can be specified at run time.
+let connectionString = "Data Source=MYSERVER\INSTANCE;Initial Catalog=MyDatabase;Integrated Security=SSPI;"
+let db = new dbml.MyDataContext(connectionString)
 ```
 
 ## Querying the database
@@ -134,24 +135,23 @@ In this section, you use F# query expressions to query the database.
 
 ```fsharp
   query {
-  for row in db.Table1 do
-  where (row.TestData1 > 2)
-  select row
-  }
-  |> Seq.iter (fun row -> printfn "%d %s" row.TestData1 row.Name)
+    for row in db.Table1 do
+    where (row.TestData1 > 2)
+    select row
+  } |> Seq.iter (fun row -> printfn "%d %s" row.TestData1 row.Name)
 ```
 
 ## Next Steps
-You can proceed to use other query expressions, or get a database connection from the data context and perform normal ADO.NET data operations. For additional steps, see the sections after "Query the Data" in [Walkthrough: Accessing a SQL Database by Using Type Providers &#40;F&#35;&#41;](Walkthrough-Accessing-a-SQL-Database-by-Using-Type-Providers-%5BFSharp%5D.md).
+You can proceed to use other query expressions, or get a database connection from the data context and perform normal ADO.NET data operations. For additional steps, see the sections after "Query the Data" in [Walkthrough: Accessing a SQL Database by Using Type Providers](accessing-a-sql-database.md).
 
 
 ## See Also
 [DbmlFile Type Provider &#40;F&#35;&#41;](DbmlFile-Type-Provider-%5BFSharp%5D.md)
 
-[Type Providers](Type-Providers.md)
+[Type Providers](index.md)
 
-[Walkthrough: Accessing a SQL Database by Using Type Providers &#40;F&#35;&#41;](Walkthrough-Accessing-a-SQL-Database-by-Using-Type-Providers-%5BFSharp%5D.md)
+[Walkthrough: Accessing a SQL Database by Using Type Providers &#40;F&#35;&#41;](accessing-a-sql-database.md)
 
 [SqlMetal.exe &#40;Code Generation Tool&#41;](https://msdn.microsoft.com/library/bb386987)
 
-[Query Expressions &#40;F&#35;&#41;](Query-Expressions-%5BFSharp%5D.md)
+[Query Expressions](../../fsharp-language-reference/query-expressions-.md)

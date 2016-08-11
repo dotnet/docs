@@ -30,7 +30,7 @@ The last two measures define what are known as *higher-order operations* or *hig
 
 ## Give the Value a Name
 
-If a function is a first-class value, you must be able to name it, just as you can name integers, strings, and other built-in types. This is referred to in functional programming literature as binding an identifier to a value. F# uses [let expressions](../fsharp-language-reference/functions/let-bindings.md) to bind names to values: `let <identifier> = <value>`. The following code shows two examples.
+If a function is a first-class value, you must be able to name it, just as you can name integers, strings, and other built-in types. This is referred to in functional programming literature as binding an identifier to a value. F# uses [`let` bindings](../fsharp-language-reference/functions/let-bindings.md) to bind names to values: `let <identifier> = <value>`. The following code shows two examples.
 
 [!code-fsharp[Main](../../../samples/snippets/fscontour/snippet20.fs)]
 
@@ -151,7 +151,7 @@ The following example uses implicit currying to write a shorter version of `make
 
 [!code-fsharp[Main](../../../samples/snippets/fscontour/snippet42.fs)]
 
-For more information about currying, see "Partial Application of Arguments" in [Functions](../fsharp-language-reference/functions).
+For more information about currying, see "Partial Application of Arguments" in [Functions](../fsharp-language-reference/functions/index.md).
 
 
 ## Identifier and Function Definition Are Interchangeable
@@ -201,6 +201,6 @@ The following code contains all the examples in this topic.
 
 [Functions](../fsharp-language-reference/functions/index.md)
 
-[let Bindings](../fsharp-language-reference/functions/let-bindings.md)
+[`let` Bindings](../fsharp-language-reference/functions/let-bindings.md)
 
 [Lambda Expressions: The `fun` Keyword](../fsharp-language-reference/functions/lambda-expressions-the-fun-keyword.md)

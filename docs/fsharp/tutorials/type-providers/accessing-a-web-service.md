@@ -13,6 +13,8 @@ ms.assetid: 63374fa9-8fb8-43ac-bcb9-ef2290d9f851
 
 # Walkthrough: Accessing a Web Service by Using Type Providers
 
+> [!NOTE] This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
+
 This walkthrough shows you how to use the Web Services Description Language (WSDL) type provider that is available in F# 3.0 to access a WSDL service. In other .NET languages, you generate the code to access the web service by calling svcutil.exe, or by adding a web reference in, for example, a C# project to get Visual Studio to call svcutil.exe for you. In F#, you have the additional option of using the WSDL type provider, so as soon as you write the code that creates the WsdlService type, the types are generated and become available. This process relies on the service being available when you are writing the code.
 
 This walkthrough illustrates the following tasks. You must complete them in this order for the walkthrough to succeed:
@@ -59,17 +61,17 @@ In this step, you use the WSDL type provider to generate types for the TerraServ
 <br />
 
 ```fsharp
-  open System
-  open System.ServiceModel
-  open Microsoft.FSharp.Linq
-  open Microsoft.FSharp.Data.TypeProviders
+open System
+open System.ServiceModel
+open Microsoft.FSharp.Linq
+open Microsoft.FSharp.Data.TypeProviders
 ```
 
 2. Add the following line of code to invoke the type provider with a web service. In this example, use the TerraServer web service.
 <br />
 
 ```fsharp
-  type TerraService = WsdlService<" HYPERLINK "http://terraserver-usa.com/TerraService2.asmx?WSDL" http://msrmaps.com/TerraService2.asmx?WSDL">
+type TerraService = WsdlService<" HYPERLINK "http://terraserver-usa.com/TerraService2.asmx?WSDL" http://msrmaps.com/TerraService2.asmx?WSDL">
 ```
 
   A red squiggle appears under this line of code if the service URI is misspelled or if the service itself is down or isn’t performing. If you point to the code, an error message describes the problem. You can find the same information in the **Error List** window or in the **Output Window** after you build.
@@ -86,19 +88,19 @@ Each web service has its own set of types that are used as parameters for its me
 <br />
 
 ```fsharp
-  try
+try
   let terraClient = TerraService.GetTerraServiceSoap ()
   let myPlace = new TerraService.ServiceTypes.msrmaps.com.Place(City = "Redmond", State = "Washington", Country = "United States")
   let myLocation = terraClient.ConvertPlaceToLonLatPt(myPlace)
   printfn "Redmond Latitude: %f Longitude: %f" (myLocation.Lat) (myLocation.Lon)
-  with
-  | :? ServerTooBusyException as exn ->
+with
+| :? ServerTooBusyException as exn ->
   let innerMessage =
-  match (exn.InnerException) with
-  | null -> ""
-  | innerExn -> innerExn.Message
+    match (exn.InnerException) with
+    | null -> ""
+    | innerExn -> innerExn.Message
   printfn "An exception occurred:\n %s\n %s" exn.Message innerMessage
-  | exn -> printfn "An exception occurred: %s" exn.Message
+| exn -> printfn "An exception occurred: %s" exn.Message
 ```
 
 Notice that you create the data types that are needed for the web service, such as **Place** and **Location**, as nested types under the WsdlService type **TerraService**.
@@ -108,4 +110,4 @@ Notice that you create the data types that are needed for the web service, such 
 ## See Also
 [WsdlService Type Provider &#40;F&#35;&#41;](WsdlService-Type-Provider-%5BFSharp%5D.md)
 
-[Type Providers](Type-Providers.md)
+[Type Providers](index.md)

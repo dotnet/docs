@@ -13,6 +13,8 @@ ms.assetid: dc82a932-5401-4d19-9fb3-92c50d8db514
 
 # Walkthrough: Accessing a SQL Database by Using Type Providers and Entities
 
+> [!NOTE] This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
+
 This walkthrough for F# 3.0 shows you how to access typed data for a SQL database based on the ADO.NET Entity Data Model. This walkthrough shows you how to set up the F# `SqlEntityConnection` type provider for use with a SQL database, how to write queries against the data, how to call stored procedures on the database, as well as how to use some of the ADO.NET Entity Framework types and methods to update the database.
 
 This walkthrough illustrates the following tasks, which you should perform in this order for the walkthrough to succeed:
@@ -83,20 +85,20 @@ In this step, you create a project and set it up to use a type provider.
 <br />
 
 ```fsharp
-  module internal SchoolEDM
-  
-  open System.Data.Linq
-  open System.Data.Entity
-  open Microsoft.FSharp.Data.TypeProviders
+module internal SchoolEDM
+
+open System.Data.Linq
+open System.Data.Entity
+open Microsoft.FSharp.Data.TypeProviders
 ```
 
 6. To run the code in this walkthrough interactively as a script instead of as a compiled program, open the shortcut menu for the project node, choose **Add New Item**, add an F# script file, and then add the code in each step to the script. To load the assembly references, add the following lines.
 <br />
 
 ```fsharp
-  #r "System.Data.Entity.dll"
-  #r "FSharp.Data.TypeProviders.dll"
-  #r "System.Data.Linq.dll"
+#r "System.Data.Entity.dll"
+#r "FSharp.Data.TypeProviders.dll"
+#r "System.Data.Linq.dll"
 ```
 
 7. Highlight each block of code as you add it, and choose the Alt + Enter keys to run it in F# Interactive.
@@ -112,9 +114,7 @@ In this step, you set up a type provider with a data connection and obtain a dat
 <br />
 
 ```fsharp
-  type private EntityConnection = SqlEntityConnection<ConnectionString="Server=SERVER\InstanceName;Initial Catalog=School;Integrated Security=SSPI;MultipleActiveResultSets=true",
-  Pluralize = true>
-  >
+type private EntityConnection = SqlEntityConnection<ConnectionString="Server=SERVER\InstanceName;Initial Catalog=School;Integrated Security=SSPI;MultipleActiveResultSets=true",Pluralize = true>
 ```
 
   This action sets up a type provider with the database connection that you created earlier. The property `MultipleActiveResultSets` is needed when you use the ADO.NET Entity Framework because this property allows multiple commands to execute asynchronously on the database in one connection, which can occur frequently in ADO.NET Entity Framework code. For more information, see [Multiple Active Result Sets (MARS)](http://go.microsoft.com/fwlink/?LinkId=236929).
@@ -124,7 +124,7 @@ In this step, you set up a type provider with a data connection and obtain a dat
 <br />
 
 ```fsharp
-  let context = EntityConnection.GetDataContext()
+let context = EntityConnection.GetDataContext()
 ```
 
 ## Querying the database
@@ -137,25 +137,29 @@ In this step, you use F# query expressions to execute various queries on the dat
 <br />
 
 ```fsharp
-  query { for course in context.Courses do
-  select course }
-  |> Seq.iter (fun course -> printfn "%s" course.Title)
-  
-  query { for person in context.People do
-  select person }
-  |> Seq.iter (fun person -> printfn "%s %s" person.FirstName person.LastName)
-  
-  // Add a where clause to filter results.
-  query { for course in context.Courses do
+query { 
+  for course in context.Courses do
+  select course
+} |> Seq.iter (fun course -> printfn "%s" course.Title)
+
+query { 
+  for person in context.People do
+  select person 
+} |> Seq.iter (fun person -> printfn "%s %s" person.FirstName person.LastName)
+
+// Add a where clause to filter results.
+query {
+  for course in context.Courses do
   where (course.DepartmentID = 1)
-  select course }
-  |> Seq.iter (fun course -> printfn "%s" course.Title)
-  
-  // Join two tables.
-  query { for course in context.Courses do
+  select course
+} |> Seq.iter (fun course -> printfn "%s" course.Title)
+
+// Join two tables.
+query { 
+  for course in context.Courses do
   join dept in context.Departments on (course.DepartmentID = dept.DepartmentID)
-  select (course, dept.Name) }
-  |> Seq.iter (fun (course, deptName) -> printfn "%s %s" course.Title deptName)
+  select (course, dept.Name) 
+} |> Seq.iter (fun (course, deptName) -> printfn "%s %s" course.Title deptName)
 ```
 
 ## Updating the database
@@ -168,24 +172,26 @@ To update the database, you use the Entity Framework classes and methods. You ca
 <br />
 
 ```fsharp
-  // The full data context
-  let fullContext = context.DataContext
-  
-  // A helper function.
-  let nullable value = new System.Nullable<_>(value)
-  
-  let addInstructor(lastName, firstName, hireDate, office) =
-  let hireDate = DateTime.Parse(hireDate)
-  let newPerson = new EntityConnection.ServiceTypes.Person(LastName = lastName,
-  FirstName = firstName,
-  HireDate = nullable hireDate)
-  fullContext.AddObject("People", newPerson)
-  let newOffice = new EntityConnection.ServiceTypes.OfficeAssignment(Location = office)
-  fullContext.AddObject("OfficeAssignments", newOffice)
-  fullContext.CommandTimeout <- nullable 1000
-  fullContext.SaveChanges() |> printfn "Saved changes: %d object(s) modified."
-  
-  addInstructor("Parker", "Darren", "1/1/1998", "41/3720")
+// The full data context
+let fullContext = context.DataContext
+
+// A helper function.
+let nullable value = new System.Nullable<_>(value)
+
+let addInstructor(lastName, firstName, hireDate, office) =
+let hireDate = DateTime.Parse(hireDate)
+let newPerson = new EntityConnection.ServiceTypes.Person(LastName = lastName,
+                                                         FirstName = firstName,
+                                                         HireDate = nullable hireDate)
+fullContext.AddObject("People", newPerson)
+
+let newOffice = new EntityConnection.ServiceTypes.OfficeAssignment(Location = office)
+
+fullContext.AddObject("OfficeAssignments", newOffice)
+fullContext.CommandTimeout <- nullable 1000
+fullContext.SaveChanges() |> printfn "Saved changes: %d object(s) modified."
+
+addInstructor("Parker", "Darren", "1/1/1998", "41/3720")
 ```
 
 Nothing is changed in the database until you call `System.Data.Objects.ObjectContext.SaveChanges`.
@@ -195,26 +201,25 @@ Nothing is changed in the database until you call `System.Data.Objects.ObjectCon
 <br />
 
 ```fsharp
-  let deleteInstructor(lastName, firstName) =
-  query {
+let deleteInstructor(lastName, firstName) =
+query {
   for person in context.People do
   where (person.FirstName = firstName &&
   person.LastName = lastName)
   select person
-  }
-  |> Seq.iter (fun person->
-  query {
-  for officeAssignment in context.OfficeAssignments do
-  where (officeAssignment.Person.PersonID = person.PersonID)
-  select officeAssignment }
-  |> Seq.iter (fun officeAssignment -> fullContext.DeleteObject(officeAssignment))
-  
-  fullContext.DeleteObject(person))
-  
-  // The call to SaveChanges should be outside of any iteration on the queries.
-  fullContext.SaveChanges() |> printfn "Saved changed: %d object(s) modified."
-  
-  deleteInstructor("Parker", "Darren")
+} |> Seq.iter (fun person->
+                  query {
+                    for officeAssignment in context.OfficeAssignments do
+                    where (officeAssignment.Person.PersonID = person.PersonID)
+                    select officeAssignment
+                  } |> Seq.iter (fun officeAssignment -> fullContext.DeleteObject(officeAssignment))
+
+fullContext.DeleteObject(person))
+
+// The call to SaveChanges should be outside of any iteration on the queries.
+fullContext.SaveChanges() |> printfn "Saved changed: %d object(s) modified."
+
+deleteInstructor("Parker", "Darren")
 ```
 
 >[!WARNING] 
@@ -222,15 +227,15 @@ When you use a query expression, you must remember that the query is subject to 
 
 
 ## Next Steps
-Explore other query options by reviewing the query operators available in [Query Expressions &#40;F&#35;&#41;](Query-Expressions-%5BFSharp%5D.md), and also review the [ADO.NET Entity Framework](https://msdn.microsoft.com/library/bb399572) to understand what functionality is available to you when you use this type provider.
+Explore other query options by reviewing the query operators available in [Query Expressions &#40;F&#35;&#41;](../../fsharp-language-reference/query-expressions.md), and also review the [ADO.NET Entity Framework](https://msdn.microsoft.com/library/bb399572) to understand what functionality is available to you when you use this type provider.
 
 
 ## See Also
-[Type Providers](Type-Providers.md)
+[Type Providers](index.md)
 
 [SqlEntityConnection Type Provider &#40;F&#35;&#41;](SqlEntityConnection-Type-Provider-%5BFSharp%5D.md)
 
-[Walkthrough: Generating F&#35; Types from an EDMX Schema File &#40;F&#35;&#41;](Walkthrough-Generating-FSharp-Types-from-an-EDMX-Schema-File-%5BFSharp%5D.md)
+[Walkthrough: Generating F# Types from an EDMX Schema File](generating-fsharp-types-from-edmx.md)
 
 [ADO.NET Entity Framework](https://msdn.microsoft.com/library/bb399572)
 

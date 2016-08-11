@@ -13,6 +13,8 @@ ms.assetid: 81adb2eb-625f-4ad8-aeaa-8f672a6d79a2
 
 # Walkthrough: Generating F# Types from an EDMX Schema File
 
+> [!NOTE] This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
+
 This walkthrough for F# 3.0 shows you how to create types for data that is represented by the Entity Data Model (EDM), the schema for which is specified in an .edmx file. This walkthrough also shows how to use the EdmxFile type provider. Before you begin, consider whether a SqlEntityConnection type provider is a more appropriate type provider option. The SqlEntityConnection type provider works best for scenarios where you have a live database that you can connect to during the development phase of your project, and you do not mind specifying the connection string at compile time. However, this type provider is also limited in that it doesn't expose as much database functionality as the EdmxFile type provider. Also, if you don't have a live database connection for a database project that uses the Entity Data Model, you can use the .edmx file to code against the database. When you use the EdmxFile type provider, the F# compiler runs EdmGen.exe to generate the types that it provides.
 
 This walkthrough illustrates the following tasks, which you must perform in this order for the walkthrough to succeed:
@@ -76,9 +78,9 @@ In this step, you create a project and add appropriate references to it to use t
 <br />
 
 ```fsharp
-  open System.Data.Linq
-  open System.Data.Entity
-  open Microsoft.FSharp.Data.TypeProviders
+open System.Data.Linq
+open System.Data.Entity
+open Microsoft.FSharp.Data.TypeProviders
 ```
 
 ## Finding or creating the connection string for the Entity Data Model
@@ -97,18 +99,18 @@ For more information about EDMX connection strings, see [Connection Strings](htt
 <br />
 
 ```fsharp
-  open System
-  open System.Data
-  open System.Data.SqlClient
-  open System.Data.EntityClient
-  open System.Data.Metadata.Edm
-  
-  let getEDMConnectionString(dbConnectionString) =
-  let dbConnection = new SqlConnection(connectionString)
-  let resourceArray = [| "res://*/" |]
-  let assemblyList = [| System.Reflection.Assembly.GetCallingAssembly() |]
-  let metaData = MetadataWorkspace(resourceArray, assemblyList)
-  new EntityConnection(metaData, dbConnection)
+open System
+open System.Data
+open System.Data.SqlClient
+open System.Data.EntityClient
+open System.Data.Metadata.Edm
+
+let getEDMConnectionString(dbConnectionString) =
+let dbConnection = new SqlConnection(connectionString)
+let resourceArray = [| "res://*/" |]
+let assemblyList = [| System.Reflection.Assembly.GetCallingAssembly() |]
+let metaData = MetadataWorkspace(resourceArray, assemblyList)
+new EntityConnection(metaData, dbConnection)
 ```
 
 ## Configuring the type provider
@@ -127,11 +129,11 @@ In this step, you create and configure the type provider with the EDMX connectio
 <br />
 
 ```fsharp
-  type edmx = EdmxFile<"Model1.edmx", ResolutionFolder = @"<folder that contains your .edmx file>>
-  
-  let edmConnectionString =
-  getEDMConnectionString("Data Source=SERVER\instance;Initial Catalog=School;Integrated Security=true;")
-  let context = new edmx.SchoolModel.SchoolEntities(edmConnectionString)
+type edmx = EdmxFile<"Model1.edmx", ResolutionFolder = @"<path-tofolder-that-containsyour.edmx-file>>
+
+let edmConnectionString =
+getEDMConnectionString("Data Source=SERVER\instance;Initial Catalog=School;Integrated Security=true;")
+let context = new edmx.SchoolModel.SchoolEntities(edmConnectionString)
 ```
 
 ## Querying the data
@@ -144,25 +146,29 @@ In this step, you use F# query expressions to query the database.
 <br />
 
 ```fsharp
-  query { for course in context.Courses do
-  select course }
-  |> Seq.iter (fun course -> printfn "%s" course.Title)
-  
-  query { for person in context.Person do
-  select person }
-  |> Seq.iter (fun person -> printfn "%s %s" person.FirstName person.LastName)
-  
-  // Add a where clause to filter results
-  query { for course in context.Courses do
+query { 
+  for course in context.Courses do
+  select course 
+} |> Seq.iter (fun course -> printfn "%s" course.Title)
+
+query { 
+  for person in context.Person do
+  select person 
+} |> Seq.iter (fun person -> printfn "%s %s" person.FirstName person.LastName)
+
+// Add a where clause to filter results
+query { 
+  for course in context.Courses do
   where (course.DepartmentID = 1)
   select course)
-  |> Seq.iter (fun course -> printfn "%s" course.Title)
-  
-  // Join two tables
-  query { for course in context.Courses do
+} |> Seq.iter (fun course -> printfn "%s" course.Title)
+
+// Join two tables
+query { 
+  for course in context.Courses do
   join (for dept in context.Departments -> course.DepartmentID = dept.DepartmentID)
-  select (course, dept.Name) }
-  |> Seq.iter (fun (course, deptName) -> printfn "%s %s" course.Title deptName)
+  select (course, dept.Name) 
+} |> Seq.iter (fun (course, deptName) -> printfn "%s %s" course.Title deptName)
 ```
 
 ## Calling a stored procedure
@@ -175,23 +181,23 @@ You can call stored procedures by using the EDMX type provider. In the following
 <br />
 
 ```fsharp
-  // Call a stored procedure.
-  let nullable value = new System.Nullable<_>(value)
-  
-  // Assume now that you must correct someone's hire date.
-  // Throw an exception if more than one matching person is found.
-  let changeHireDate(lastName, firstName, hireDate) =
-  
-  query { for person in context.People do
+// Call a stored procedure.
+let nullable value = new System.Nullable<_>(value)
+
+// Assume now that you must correct someone's hire date.
+// Throw an exception if more than one matching person is found.
+let changeHireDate(lastName, firstName, hireDate) =
+
+query { 
+  for person in context.People do
   where (person.LastName = lastName &&
   person.FirstName = firstName)
-  exactlyOne }
-  |> (fun person ->
-  context.UpdatePerson(nullable person.PersonID, person.LastName,
-  person.FirstName, nullable hireDate, person.EnrollmentDate))
-  
-  changeHireDate("Abercrombie", "Kim", DateTime.Parse("1/12/1998"))
-  |> printfn "Result: %d"
+  exactlyOne 
+} |> (fun person ->
+          context.UpdatePerson(nullable person.PersonID, person.LastName, person.FirstName, nullable hireDate, person.EnrollmentDate))
+
+changeHireDate("Abercrombie", "Kim", DateTime.Parse("1/12/1998"))
+|> printfn "Result: %d"
 ```
 
 The result is 1 if you succeed. Notice that **exactlyOne** is used in the query expression to ensure that only one result is returned; otherwise, an exception is thrown. Also, to work with nullable values more easily, you can use the simple **nullable** function that's defined in this code to create a nullable value out of an ordinary value.
@@ -250,15 +256,15 @@ You should complete this procedure only if you want to know how to generate a fu
 
 
 ## Next Steps
-Explore other queries by looking at the available query operators as listed in [Query Expressions &#40;F&#35;&#41;](Query-Expressions-%5BFSharp%5D.md).
+Explore other queries by looking at the available query operators as listed in [Query Expressions](../../fsharp-language-reference/query-expressions-.md).
 
 
 ## See Also
-[Type Providers](Type-Providers.md)
+[Type Providers](index.md)
 
 [EdmxFile Type Provider &#40;F&#35;&#41;](EdmxFile-Type-Provider-%5BFSharp%5D.md)
 
-[Walkthrough: Accessing a SQL Database by Using Type Providers and Entities &#40;F&#35;&#41;](Walkthrough-Accessing-a-SQL-Database-by-Using-Type-Providers-and-Entities-%5BFSharp%5D.md)
+[Walkthrough: Accessing a SQL Database by Using Type Providers and Entities](accessing-a-sql-database-entities.md)
 
 [Entity Framework](http://msdn.microsoft.com/data/ef)
 

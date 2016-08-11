@@ -9,6 +9,8 @@ Set-ExecutionPolicy Unrestricted
 # Jenkins plugin will dynamically pass the server name and VM name.
 $jenkinsserverurl = $args[0]
 $vmname = $args[1]
+$userName = $args[2]
+$apiKey = $args[3]
 
 $logFile = "C:\provisionlog.txt"
 $ProvisionArtifacts = "C:\prstack"
@@ -86,7 +88,7 @@ $jar="-jar"
 $jnlpUrl="-jnlpUrl" 
 $serverURL=$jenkinsserverurl+"computer/" + $vmname + "/slave-agent.jnlp"
 $jnlpCredentialsFlag="-jnlpCredentials"
-$credentials="admin:0dc7f5e2d5142967db8179c9faf4cebf"
+$credentials="$userName:$apiKey"
 
 LogWrite "Will execute this:"
 LogWrite "$java $jar $destSource $jnlpCredentialsFlag $credentials $jnlpUrl $serverURL"

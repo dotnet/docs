@@ -21,7 +21,7 @@ The term *binding* means associating a name with a definition. The `let` keyword
 
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet601.fs)]
 
-The type of a value is inferred from the definition. For a primitive type, such as an integral or floating point number, the type is determined from the type of the literal. Therefore, in the previous example, the compiler infers the type of `b` to be `unsigned int`, whereas the compiler infers the type of `a` to be `int`. The type of a function value is determined from the return value in the function body. For more information about function value types, see [Functions &#40;F&#35;&#41;](Functions-%5BFSharp%5D.md). For more information about literal types, see [Literals &#40;F&#35;&#41;](Literals-%5BFSharp%5D.md).
+The type of a value is inferred from the definition. For a primitive type, such as an integral or floating point number, the type is determined from the type of the literal. Therefore, in the previous example, the compiler infers the type of `b` to be `unsigned int`, whereas the compiler infers the type of `a` to be `int`. The type of a function value is determined from the return value in the function body. For more information about function value types, see [Functions](functions.md). For more information about literal types, see [Literals](literals.md).
 
 
 ## Why Immutable?
@@ -44,10 +44,10 @@ You can assign an initial value to a mutable variable by using the `let` keyword
 
 |Title|Description|
 |-----|-----------|
-|[let Bindings &#40;F&#35;&#41;](let-Bindings-%5BFSharp%5D.md)|Provides information about using the `let`keyword to bind names to values and functions.|
-|[Functions &#40;F&#35;&#41;](Functions-%5BFSharp%5D.md)|Provides an overview of functions in F#.|
+|[let Bindings](../functions/let-bindings.md)|Provides information about using the `let`keyword to bind names to values and functions.|
+|[Functions](../functions/index.md)|Provides an overview of functions in F#.|
 
 ## See Also
-[Null Values &#40;F&#35;&#41;](Null-Values-%5BFSharp%5D.md)
+[Null Values](null-Values.md)
 
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](../index.md)

@@ -25,8 +25,6 @@ type-parameter-list when constraint1 [ and constraint2]
 ## Remarks
 There are several different constraints you can apply to limit the types that can be used in a generic type. The following table lists and describes these constraints.
 
-
-
 |Constraint|Syntax|Description|
 |----------|------|-----------|
 |Type Constraint|*type-parameter* :&gt; *type*|The provided type must be equal to or derived from the type specified, or, if the type is an interface, the provided type must implement the interface.|
@@ -39,14 +37,14 @@ There are several different constraints you can apply to limit the types that ca
 |Delegate Constraint|: delegate&lt;*tuple-parameter-type*, *return-type*&gt;|The provided type must be a delegate type that has the specified arguments and return value; not intended for common use.|
 |Comparison Constraint|: comparison|The provided type must support comparison.|
 |Equality Constraint|: equality|The provided type must support equality.|
-|Unmanaged Constraint|: unmanaged|The provided type must be an unmanaged type. Unmanaged types are either certain primitive types (**sbyte**, **byte**, **char**, **nativeint**, **unativeint**, **float32**, **float**, **int16**, **uint16**, **int32**, **uint32**, **int64**, **uint64**, or **decimal**), enumeration types, **nativeptr&lt;_&gt;**, or a non-generic structure whose fields are all unmanaged types.|
+|Unmanaged Constraint|: unmanaged|The provided type must be an unmanaged type. Unmanaged types are either certain primitive types (`sbyte`, `byte`, `char`, `nativeint`, `unativeint`, `float32`, `float`, `int16`, `uint16`, `int32`, `uint32`, `int64`, `uint64`, or `decimal`), enumeration types, `nativeptr&lt;_&gt;`, or a non-generic structure whose fields are all unmanaged types.|
 You have to add a constraint when your code has to use a feature that is available on the constraint type but not on types in general. For example, if you use the type constraint to specify a class type, you can use any one of the methods of that class in the generic function or type.
 
 Specifying constraints is sometimes required when writing type parameters explicitly, because without a constraint, the compiler has no way of verifying that the features that you are using will be available on any type that might be supplied at run time for the type parameter.
 
 The most common constraints you use in F# code are type constraints that specify base classes or interfaces. The other constraints are either used by the F# library to implement certain functionality, such as the explicit member constraint, which is used to implement operator overloading for arithmetic operators, or are provided mainly because F# supports the complete set of constraints that is supported by the common language runtime.
 
-During the type inference process, some constraints are inferred automatically by the compiler. For example, if you use the **+** operator in a function, the compiler infers an explicit member constraint on variable types that are used in the expression.
+During the type inference process, some constraints are inferred automatically by the compiler. For example, if you use the `+` operator in a function, the compiler infers an explicit member constraint on variable types that are used in the expression.
 
 The following code illustrates some constraint declarations.
 
@@ -119,6 +117,6 @@ class end
 ```
 
 ## See Also
-[Generics &#40;F&#35;&#41;](Generics-%5BFSharp%5D.md)
+[Generics](../generics.md)
 
-[Constraints &#40;F&#35;&#41;](Constraints-%5BFSharp%5D.md)
+[Constraints](constraints.md)

@@ -61,12 +61,12 @@ The output is as follows.
 ```
 
 ## See Also
-[Generics &#40;F&#35;&#41;](Generics-%5BFSharp%5D.md)
+[Generics](../generics.md)
 
-[Type Inference &#40;F&#35;&#41;](Type-Inference-%5BFSharp%5D.md)
+[Type Inference](../type-inference.md)
 
-[Automatic Generalization &#40;F&#35;&#41;](Automatic-Generalization-%5BFSharp%5D.md)
+[Automatic Generalization](automatic-generalization.md)
 
-[Constraints &#40;F&#35;&#41;](Constraints-%5BFSharp%5D.md)
+[Constraints](constraints.md)
 
-[Inline Functions &#40;F&#35;&#41;](Inline-Functions-%5BFSharp%5D.md)
+[Inline Functions](../functions/inline-functions.md)

@@ -60,7 +60,7 @@ Typically, the value restriction error occurs either when you want a construct t
 
 - The following code examples illustrate each of these scenarios.
 
-Case 1: Too complex an expression. In this example, the list **counter** is intended to be **int option ref**, but it is not defined as a simple immutable value.
+Case 1: Too complex an expression. In this example, the list `counter` is intended to be `int option ref`, but it is not defined as a simple immutable value.
 
 ```fsharp
 let counter = ref None
@@ -100,11 +100,11 @@ let floatLists = arrayOf10Lists<float>
 ```
 
 ## See Also
-[Type Inference &#40;F&#35;&#41;](Type-Inference-%5BFSharp%5D.md)
+[Type Inference](../type-inference.md)
 
-[Generics &#40;F&#35;&#41;](Generics-%5BFSharp%5D.md)
+[Generics](index.md)
 
-[Statically Resolved Type Parameters &#40;F&#35;&#41;](Statically-Resolved-Type-Parameters-%5BFSharp%5D.md)
+[Statically Resolved Type Parameters](../members/statically-resolved-type-parameters.md)
 
-[Constraints &#40;F&#35;&#41;](Constraints-%5BFSharp%5D.md)
+[Constraints](constraints.md)
 

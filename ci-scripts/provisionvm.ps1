@@ -4,13 +4,12 @@
 # Originally referenced here: https://gist.github.com/snallami/5aa9ea2c57836a3b3635
 # Modified by Den Delimarsky (dendeli)
 # ---------------------------------------------------
+param([String]$serverAddress="NONE")
+param([String]$vmName="NONE")
+param([String]$userName="NONE")
+param([String]$apiKey="NONE")
 
 Set-ExecutionPolicy Unrestricted
-# Jenkins plugin will dynamically pass the server name and VM name.
-$jenkinsserverurl = $args[0]
-$vmname = $args[1]
-$userName = $args[2]
-$apiKey = $args[3]
 
 $logFile = "C:\provisionlog.txt"
 $ProvisionArtifacts = "C:\prstack"
@@ -24,8 +23,8 @@ Function LogWrite
 }
 
 LogWrite "Bootrstapping provisioning..."
-LogWrite "Server URL: $jenkinsserverurl"
-LogWrite "VM: $vmname"
+LogWrite "Server URL: $serverAddress"
+LogWrite "VM: $vmName"
 
 # Install Chocolatey, and subsequently - GIT tools
 # This will do a silent install and by far one that will cause the least headache.
@@ -72,7 +71,7 @@ LogWrite "Successfully downloaded and extracted Zulu SDK."
 
 # Downloading Jenkins slave JAR
 LogWrite "Downloading Jenkins slave JAR..."
-$slaveSource = $jenkinsserverurl + "jnlpJars/slave.jar"
+$slaveSource = $serverAddress + "jnlpJars/slave.jar"
 $destSource = "c:\java\slave.jar"
 
 LogWrite "Slave source: $slaveSource"
@@ -86,7 +85,7 @@ LogWrite "Running Jenkins slave process..."
 $java="c:\java\zulu8.15.0.1-jdk8.0.92-win_x64\bin\java.exe"
 $jar="-jar"
 $jnlpUrl="-jnlpUrl" 
-$serverURL=$jenkinsserverurl+"computer/" + $vmname + "/slave-agent.jnlp"
+$serverURL=$serverAddress+"computer/" + $vmName + "/slave-agent.jnlp"
 $jnlpCredentialsFlag="-jnlpCredentials"
 $credentials="$userName:$apiKey"
 

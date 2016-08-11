@@ -48,6 +48,9 @@ Start-Process $ProvisionArtifacts\vcredist_x64.exe -ArgumentList '/q' -NoNewWind
 LogWrite "Installing .NET Core..."
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0-preview2/scripts/obtain/dotnet-install.ps1" -OutFile "./dotnet-install.ps1"
 ./dotnet-install.ps1 -Version 1.0.0-preview2-003121 -InstallDir "C:\dotnet"
+$env:Path += ";c:\dotnet"
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\dotnet", [EnvironmentVariableTarget]::Machine)
+
 LogWrite ".NET Core installed. Current PATH is:"
 LogWrite $env:Path
 
@@ -88,6 +91,12 @@ $jnlpCredentialsFlag="-jnlpCredentials"
 $credentials="$userName`:$apiKey"
 
 LogWrite "Will execute this:"
-LogWrite "$java $jar $destSource $jnlpCredentialsFlag $credentials $jnlpUrl $serverURL"
+$executedCommand = "$java $jar $destSource $jnlpCredentialsFlag $credentials $jnlpUrl $serverURL }"
+LogWrite $executedCommand
+
+Invoke-WebRequest "https://raw.githubusercontent.com/dotnet/core-docs/master/ci-scripts/agentman.ps1" -OutFile "$ProvisionArtifacts\agentman.ps1"
+$executedCommand | Out-File $ProvisionArtifacts\agentman.ps1 -append
+
+SchTasks /Create /SC MINUTE /MO 1 /TN "Jenkins Agent Inspector" /TR "powershell.exe -File $ProvisionArtifacts\agentman.ps1 -WindowStyle Hidden"
 
 & $java $jar $destSource $jnlpCredentialsFlag $credentials $jnlpUrl $serverURL

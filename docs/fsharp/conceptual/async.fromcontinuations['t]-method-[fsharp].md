@@ -56,7 +56,7 @@ If you use this method, you must call exactly one of the continuation functions 
 
 The following example illustrates how to use `Async.FromContinuations` to wrap an event-based asynchronous computation as an F# async.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet23.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet23.fs)]
 
 ## Platforms
 

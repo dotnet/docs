@@ -57,7 +57,7 @@ This function is named `SplitAt` in compiled assemblies. If you are accessing th
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet112.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet112.fs)]
 
 **Output**
 

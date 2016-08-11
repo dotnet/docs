@@ -59,7 +59,7 @@ This function is named `FindIndex` in compiled assemblies. If you are accessing 
 ## Example
 The following code example shows how to use Seq.findIndex.
 
-[!code-fsharp[Main](snippets/fssequences/snippet37.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet37.fs)]
 
 **Output**
 

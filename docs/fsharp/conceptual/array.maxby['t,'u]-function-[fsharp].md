@@ -53,7 +53,7 @@ This function is named `MaxBy` in compiled assemblies. If you are accessing the 
 
 The following code example demonstrates the use of `Array.maxBy`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet56.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet56.fs)]
 
 **Output**
 

@@ -61,7 +61,7 @@ This function is named `FoldBack2` in the .NET assembly. If accessing the member
 
 The following code shows how to use Array.foldBack2.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet47.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet47.fs)]
 
 **Output**
 

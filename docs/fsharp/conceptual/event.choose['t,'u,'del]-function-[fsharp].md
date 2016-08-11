@@ -55,7 +55,7 @@ This function is named `Choose` in compiled assemblies. If you are accessing the
 
 In this example, the function is used to select only events when the mouse button is down. At the same time, the function transforms the input data of type MouseEventArgs into a more convenient format, a tuple of two integers that represent the current mouse position.
 
-[!code-fsharp[Main](snippets/fsevents/snippet2.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsevents/snippet2.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

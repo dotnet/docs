@@ -49,7 +49,7 @@ Interface declarations resemble class declarations except that no members are im
 
 You can optionally give each method parameter a name using normal F# syntax:
 
-[!code-fsharp[Main](snippets/fslangref1/snippet24032.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet24032.fs)]
 
 In the above `ISprintable` example, the `Print` method has a single parameter of the type `string` with the name `format`.
 
@@ -63,7 +63,7 @@ The .NET coding style is to begin all interfaces with a capital `I`.
 ## Implementing Interfaces by Using Class Types
 You can implement one or more interfaces in a class type by using the `interface` keyword, the name of the interface, and the `with` keyword, followed by the interface member definitions, as shown in the following code.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2801.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2801.fs)]
 
 Interface implementations are inherited, so any derived classes do not need to reimplement them.
 
@@ -73,21 +73,21 @@ Interface methods can be called only through the interface, not through any obje
 
 To call the interface method when you have an object of type `SomeClass`, you must upcast the object to the interface type, as shown in the following code.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2802.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2802.fs)]
 
 An alternative is to declare a method on the object that upcasts and calls the interface method, as in the following example.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2803.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2803.fs)]
     
 ## Implementing Interfaces by Using Object Expressions
 Object expressions provide a short way to implement an interface. They are useful when you do not have to create a named type, and you just want an object that supports the interface methods, without any additional methods. An object expression is illustrated in the following code.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2804.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2804.fs)]
     
 ## Interface Inheritance
 Interfaces can inherit from one or more base interfaces.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2805.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2805.fs)]
     
 ## See Also
 [F&#35; Language Reference](FSharp-Language-Reference.md)

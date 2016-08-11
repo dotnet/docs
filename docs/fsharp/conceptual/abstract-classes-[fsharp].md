@@ -45,7 +45,7 @@ The following code illustrates an abstract class Shape, which has two non-abstra
 
 The rotation method can be overridden, as in the Circle class, which is rotation invariant because of its symmetry. So in the Circle class, the rotation method is replaced by a method that does nothing.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2901.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2901.fs)]
 
 **Output:**
 

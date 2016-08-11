@@ -37,7 +37,7 @@ The error event as an object that implements [`IEvent`](https://msdn.microsoft.c
 
 The following code shows how to use the `Error` event to handle an exception that occurs in the body of the agent.
 
-[!code-fsharp[Main](snippets/fsmailboxprocessor/snippet23.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmailboxprocessor/snippet23.fs)]
 
 An example session follows.
 

@@ -53,7 +53,7 @@ This function is named `Collect` in compiled assemblies. If you are accessing th
 ## Example
 The following code demonstrates the use of `Array.collect` to concatenate subarrays that are generated from each array element.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet15.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet15.fs)]
 
 ```
 [|0; 1; 0; 1; 2; 3; 4; 5; 0; 1; 2; 3; 4; 5; 6; 7; 8; 9; 10|]

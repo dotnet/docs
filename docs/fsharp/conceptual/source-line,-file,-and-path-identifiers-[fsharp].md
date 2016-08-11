@@ -42,7 +42,7 @@ For more information about the `#line` directive, see [Compiler Directives &#40;
 
 The following code example demonstrates the use of these values.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet7401.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet7401.fs)]
 
 Output:
 

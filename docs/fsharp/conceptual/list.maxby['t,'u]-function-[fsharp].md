@@ -59,7 +59,7 @@ This function is named `MaxBy` in compiled assemblies. If you are accessing the 
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet56.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet56.fs)]
 
 **Output**
 

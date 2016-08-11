@@ -92,7 +92,7 @@ This type is named `FSharpMailboxProcessor` in the .NET assembly. If accessing t
 
 The following example shows the basic use of the `MailboxProcessor` class.
 
-[!code-fsharp[Main](snippets/fsmailboxprocessor/snippet2.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmailboxprocessor/snippet2.fs)]
 
 **Sample Output**
 
@@ -107,7 +107,7 @@ Message count = 2. Waiting for next message.
 
 **The following example shows how to use MailboxProcessor to create a simple agent that accepts various types of messages and returns appropriate replies. This server agent represents a market maker, which is a buying and selling agent on a stock exchange that sets bid and ask prices for assets. Clients can query for prices, or buy and sell shares.**
 
-[!code-fsharp[Main](snippets/fsmailboxprocessor/snippet3.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmailboxprocessor/snippet3.fs)]
 
 **Sample Output**
 

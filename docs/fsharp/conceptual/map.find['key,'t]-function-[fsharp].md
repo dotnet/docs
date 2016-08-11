@@ -60,7 +60,7 @@ This function is named `Find` in compiled assemblies. If you are accessing the f
 
 The following examples shows how to use Map.filter.
 
-[!code-fsharp[Main](snippets/fsmaps/snippet6.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmaps/snippet6.fs)]
 
 **Output**
 

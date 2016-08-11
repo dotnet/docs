@@ -72,7 +72,7 @@ This function is named `CopyTo` in compiled assemblies. If you are accessing the
 ## Example
 The following code example illustrates the use of Array.blit.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet30.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet30.fs)]
 
 **Output**
 

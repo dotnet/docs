@@ -48,7 +48,7 @@ This function is named `Unzip` in compiled assemblies. If you are accessing the 
 
 The following code shows how to use `Array.unzip`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet70.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet70.fs)]
 
 **Output**
 

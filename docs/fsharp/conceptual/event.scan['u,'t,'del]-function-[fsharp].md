@@ -63,7 +63,7 @@ This function is named `Scan` in compiled assemblies. If you are accessing the f
 ## Example
 This code implements a simple click counter. Every time the user clicks on the form, the state increments by 1 and the form's text is changed to display the new state.
 
-[!code-fsharp[Main](snippets/fsevents/snippet8.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsevents/snippet8.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

@@ -47,7 +47,7 @@ This function is named `ToArray` in compiled assemblies. If you are accessing th
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet64.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet64.fs)]
 
 **Output**
 

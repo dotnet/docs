@@ -46,7 +46,7 @@ This function is named `ToSeq` in compiled assemblies. If you are accessing the 
 
 ## Example
 
-[!code-fsharp[Main](snippets/FsLists/snippet68.fs)]
+[!code-fsharp[Main](../../../samples/snippets/FsLists/snippet68.fs)]
 
 **Output**
 

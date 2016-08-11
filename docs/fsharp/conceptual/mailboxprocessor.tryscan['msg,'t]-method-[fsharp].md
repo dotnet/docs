@@ -56,7 +56,7 @@ If a timeout period is exceeded, `None` is returned. This method is for use with
 
 The following code example shows how to use the `TryScan` method. This example is a job submission agent. There are three agents: one called `runAgent` that starts each job, another called inprogressAgent that represents all running jobs, and one called `completeAgent` that represents notification that a job is completed. `TryScan` is used in the `cancelJob` function to find a job to cancel, or fail if there is no matching job.
 
-[!code-fsharp[Main](snippets/fsmailboxprocessor/snippet22.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmailboxprocessor/snippet22.fs)]
 
 Following is an example session.
 

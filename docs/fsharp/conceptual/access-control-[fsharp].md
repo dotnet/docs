@@ -51,11 +51,11 @@ Access control is subject to the following rules:
 ## Example
 The following code illustrates the use of access control specifiers. There are two files in the project, `Module1.fs` and `Module2.fs`. Each file is implicitly a module. Therefore, there are two modules, `Module1` and `Module2`. A private type and an internal type are defined in `Module1`. The private type cannot be accessed from `Module2`, but the internal type can.
 
-[!code-fsharp[Main](snippets/fsaccesscontrol/snippet1.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsaccesscontrol/snippet1.fs)]
     
 The following code tests the accessibility of the types created in `Module1.fs`.
 
-[!code-fsharp[Main](snippets/fsaccesscontrol/snippet2.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsaccesscontrol/snippet2.fs)]
     
 ## See Also
 [F&#35; Language Reference](FSharp-Language-Reference.md)

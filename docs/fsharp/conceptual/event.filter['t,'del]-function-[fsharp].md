@@ -56,7 +56,7 @@ This function is named `Filter` in compiled assemblies. If you are accessing the
 
 The following code example shows how to use the Event.filter function. In this example, mouse events are passed on only when the mouse pointer is in a certain region.
 
-[!code-fsharp[Main](snippets/fsevents/snippet3.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsevents/snippet3.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

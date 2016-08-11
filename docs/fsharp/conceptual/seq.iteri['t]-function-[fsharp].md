@@ -58,7 +58,7 @@ This function is named `IterateIndexed` in the .NET assembly. If accessing the m
 ## Example
 The following code shows how to use `Seq.iteri` and compares its behavior to related functions.
 
-[!code-fsharp[Main](snippets/fssequences/snippet43.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet43.fs)]
 
 **Output**
 

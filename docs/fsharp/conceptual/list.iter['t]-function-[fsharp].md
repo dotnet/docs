@@ -49,7 +49,7 @@ This function is named `Iterate` in compiled assemblies. If you are accessing th
 
 ## Example
 
-[!code-fsharp[Main](snippets/fssamples101/snippet3004.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssamples101/snippet3004.fs)]
 
 ### Output
 

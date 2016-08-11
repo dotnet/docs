@@ -58,7 +58,7 @@ This function is named `Initialize` in compiled assemblies. If you are accessing
 
 The following code demonstrates the use of `Array2D.init` to create a two-dimensional array.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet21.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet21.fs)]
 
 ## Platforms
 

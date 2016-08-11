@@ -42,7 +42,7 @@ This function is named `PrintFormatLine` in compiled assemblies. If you are acce
 
 The following code example demonstrates the use of `printfn` with various format specifiers. For more information on format specifiers, see [Printf Module](https://msdn.microsoft.com/library/ea074733-6b5d-498c-ac88-7e4e0f8ded25).
 
-[!code-fsharp[Main](snippets/fscorelib2/snippet9.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fscorelib2/snippet9.fs)]
 
 **Output**
 

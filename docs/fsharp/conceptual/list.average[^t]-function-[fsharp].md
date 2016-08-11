@@ -56,7 +56,7 @@ This function is named `Average` in compiled assemblies. If you are accessing th
 
 The following code example illustrates the use of List.average.
 
-[!code-fsharp[Main](snippets/fslists/snippet111.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet111.fs)]
 
 **Output**
 

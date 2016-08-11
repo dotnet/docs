@@ -61,7 +61,7 @@ This function is named `Filter` in compiled assemblies. If you are accessing the
 ## Example
 The following code shows the use of Seq.filter to filter an infinite sequence of random numbers to select only even numbers.
 
-[!code-fsharp[Main](snippets/fssequences/snippet35.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet35.fs)]
 
 **Output**
 

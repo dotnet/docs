@@ -55,7 +55,7 @@ This function is named `Append` in compiled assemblies. If you are accessing the
 
 The following code example illustrates the use of `List.append` to join two lists together. Use [`List.concat`](https://msdn.microsoft.com/library/c5afd433-8764-4ea8-a6a8-937fb4d77c4c) to join more than two lists.
 
-[!code-fsharp[Main](snippets/fslists/snippet26.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet26.fs)]
 
 **Output**
 

@@ -37,7 +37,7 @@ static member (~-) (v : Vector)
 
 The following code illustrates a vector class that has just two operators, one for unary minus and one for multiplication by a scalar. In the example, two overloads for scalar multiplication are needed because the operator must work regardless of the order in which the vector and scalar appear.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet4001.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4001.fs)]
 
 ## Creating New Operators
 You can overload all the standard operators, but you can also create new operators out of sequences of certain characters. Allowed operator characters are `!`, `%`, `&`, `*`, `+`, `-`, `.`, `/`, `<`, `=`, `>`, `?`, `@`, `^`, `|`, and `~`. The `~` character has the special meaning of making an operator unary, and is not part of the operator character sequence. Not all operators can be made unary, as is described in [Prefix and Infix Operators](https://msdn.microsoft.com/library/#prefix) later in this topic.
@@ -132,7 +132,7 @@ Only certain operators can be used as prefix operators. Some operators are alway
 
 The following code illustrates the use of operator overloading to implement a fraction type. A fraction is represented by a numerator and a denominator. The function `hcf` is used to determine the highest common factor, which is used to reduce fractions.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet4002.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4002.fs)]
 
 **Output:**
 
@@ -147,7 +147,7 @@ The following code illustrates the use of operator overloading to implement a fr
 ## Operators at the Global Level
 You can also define operators at the global level. The following code defines an operator `+?`.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet4003.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4003.fs)]
 
 The output of the above code is `12`.
 

@@ -67,7 +67,7 @@ This function is named `Fold` in compiled assemblies. If you are accessing the f
 
 The following code shows how to use `Seq.fold` to implement a function that computes the sum of the elements of a sequence.
 
-[!code-fsharp[Main](snippets/fssequences/snippet38.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet38.fs)]
 
 **Output**
 

@@ -59,7 +59,7 @@ This function is named `Pick` in compiled assemblies. If you are accessing the f
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet9.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet9.fs)]
 
 **Output**
 

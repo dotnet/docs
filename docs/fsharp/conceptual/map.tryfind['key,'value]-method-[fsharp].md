@@ -43,7 +43,7 @@ The mapped value, or `None` if the key is not in the map.
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsmaps/snippet16.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmaps/snippet16.fs)]
 
 **Output**
 

@@ -57,7 +57,7 @@ This function is named `AverageBy` in compiled assemblies. If you are accessing 
 
 The following example illustrates the use of `Array.averageBy`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet29.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet29.fs)]
 
 **Output**
 

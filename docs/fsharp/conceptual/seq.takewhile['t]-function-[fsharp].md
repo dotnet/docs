@@ -61,7 +61,7 @@ This function is named `TakeWhile` in compiled assemblies. If you are accessing 
 
 The following example demonstrates the use of `Seq.takeWhile`. The sequence contains squares of integers that are less than 10.
 
-[!code-fsharp[Main](snippets/fssequences/snippet170.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet170.fs)]
 
 ```
 1 4 9

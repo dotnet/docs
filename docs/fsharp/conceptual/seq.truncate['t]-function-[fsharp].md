@@ -61,7 +61,7 @@ This function is named `Truncate` in compiled assemblies. If you are accessing t
 
 The following example demonstrates the use of `Seq.truncate` and contrasts the behavior with `Seq.take`.
 
-[!code-fsharp[Main](snippets/fssequences/snippet16.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet16.fs)]
 
 ```
 1 4 9 16 25

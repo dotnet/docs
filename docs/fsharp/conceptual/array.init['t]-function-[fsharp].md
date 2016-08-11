@@ -56,7 +56,7 @@ This function is named `Initialize` in compiled assemblies. If you are accessing
 
 The following code demonstrates the use of `Array.init`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet101.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet101.fs)]
 
 ```
 Array of squares: [|0; 1; 4; 9; 16; 25; 36; 49; 64; 81|]

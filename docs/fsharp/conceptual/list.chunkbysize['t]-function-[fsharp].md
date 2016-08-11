@@ -58,7 +58,7 @@ This function is named `ChunkBySize` in compiled assemblies. If you are accessin
 ## Example
 
 The following code shows how to use List.chunkBySize.
-[!code-fsharp[Main](snippets/fslists/snippet69.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet69.fs)]
 
 ### Output
 

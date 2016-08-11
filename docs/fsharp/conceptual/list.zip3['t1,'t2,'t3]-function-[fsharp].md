@@ -61,7 +61,7 @@ This function is named `Zip3` in compiled assemblies. If you are accessing the f
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet40.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet40.fs)]
 
 **Output**
 

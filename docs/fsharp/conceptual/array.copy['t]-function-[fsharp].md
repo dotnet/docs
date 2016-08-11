@@ -48,7 +48,7 @@ This function is named `Copy` in compiled assemblies. If you are accessing the f
 
 The following code illustrates the use of `Array.copy`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet31.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet31.fs)]
 
 **Output**
 

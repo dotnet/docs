@@ -48,7 +48,7 @@ If all child computations succeed, an array of results is passed to the success 
 
 The following code example shows how to use Async.Parallel to run computations that write to a number of files asynchronously.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet32.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet32.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

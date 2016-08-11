@@ -57,7 +57,7 @@ This function is named `ForAll` in compiled assemblies. If you are accessing the
 
 The following example shows the use of `Array.forall` to test the elements of an array.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet241.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet241.fs)]
 
 ```
 false

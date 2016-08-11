@@ -52,7 +52,7 @@ This function is named `SortInPlaceWith` in compiled assemblies. If accessing th
 
 The following code example shows how to use Array.sortInPlaceWith.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet64.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet64.fs)]
 
 **Output**
 

@@ -57,7 +57,7 @@ This function is named `SortBy` in compiled assemblies. If you are accessing the
 
 The following code illustrates the use of `Array.sortBy`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet38.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet38.fs)]
 
 **Output**
 

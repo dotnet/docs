@@ -62,7 +62,7 @@ This function is named `Windowed` in compiled assemblies. If you are accessing t
 
 The following example demonstrates the use of `Seq.windowed` as part of a computation of a moving average for a sequence of numbers.
 
-[!code-fsharp[Main](snippets/fssequences/snippet180.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet180.fs)]
 
 **Output:**
 

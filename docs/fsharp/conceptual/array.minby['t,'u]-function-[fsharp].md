@@ -53,7 +53,7 @@ This function is named `MinBy` in compiled assemblies. If you are accessing the 
 
 The following code example demonstrates the use of `Array.minBy`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet58.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet58.fs)]
 
 **Output**
 

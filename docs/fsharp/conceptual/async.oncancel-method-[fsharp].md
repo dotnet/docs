@@ -52,7 +52,7 @@ async { use! holder = Async.OnCancel interruption ... }
 
 The following code example demonstrates the use of `Async.OnCancel`.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet8.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet8.fs)]
 
 **Output**
 

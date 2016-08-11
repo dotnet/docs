@@ -52,7 +52,7 @@ The function result.
 
 The following example demonstrates the use of the forward pipe operator.
 
-[!code-fsharp[Main](snippets/fsoperators/snippet1.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsoperators/snippet1.fs)]
 
 **Output:**
 

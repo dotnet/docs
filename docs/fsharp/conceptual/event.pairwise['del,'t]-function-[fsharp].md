@@ -48,7 +48,7 @@ This function is named `Pairwise` in compiled assemblies. If you are accessing t
 
 In this example, the function makes data available from more than one MouseMove event, and the data is used to draw a line between consecutive mouse positions.
 
-[!code-fsharp[Main](snippets/fsevents/snippet6.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsevents/snippet6.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

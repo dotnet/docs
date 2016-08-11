@@ -62,7 +62,7 @@ This function is named `AverageBy` in compiled assemblies. If you are accessing 
 ## Example
 The following code example shows how to use Seq.averageBy,also compares [Seq.average](https://msdn.microsoft.com/library/609d793b-c70f-4e36-9ab4-d928056d65b8) and Seq.averageBy.
 
-[!code-fsharp[Main](snippets/fssequences/snippet26.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet26.fs)]
 
 **Output**
 

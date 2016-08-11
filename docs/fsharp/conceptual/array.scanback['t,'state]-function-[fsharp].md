@@ -62,7 +62,7 @@ This function is named `ScanBack` in compiled assemblies. If you are accessing t
 
 The following code contrasts the behavior of [`Array.scan`](https://msdn.microsoft.com/library/f6893608-9146-450d-9ebb-a0016803fbb0) and `Array.scanBack`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet36.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet36.fs)]
 
 **Output**
 

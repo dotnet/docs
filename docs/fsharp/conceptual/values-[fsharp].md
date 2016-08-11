@@ -19,7 +19,7 @@ Values in F# are quantities that have a specific type; values can be integral or
 ## Binding a Value
 The term *binding* means associating a name with a definition. The `let` keyword binds a value, as in the following examples:
 
-[!code-fsharp[Main](snippets/fslangref1/snippet601.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet601.fs)]
 
 The type of a value is inferred from the definition. For a primitive type, such as an integral or floating point number, the type is determined from the type of the literal. Therefore, in the previous example, the compiler infers the type of `b` to be `unsigned int`, whereas the compiler infers the type of `a` to be `int`. The type of a function value is determined from the return value in the function body. For more information about function value types, see [Functions &#40;F&#35;&#41;](Functions-%5BFSharp%5D.md). For more information about literal types, see [Literals &#40;F&#35;&#41;](Literals-%5BFSharp%5D.md).
 
@@ -37,7 +37,7 @@ You can use the keyword `mutable` to specify a variable that can be changed. Mut
 
 You can assign an initial value to a mutable variable by using the `let` keyword in the same way as you would define a value. However, the difference is that you can subsequently assign new values to mutable variables by using the `&lt;-` operator, as in the following example.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet602.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet602.fs)]
     
 ## Related Topics
 

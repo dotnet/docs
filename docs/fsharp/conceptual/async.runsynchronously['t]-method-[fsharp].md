@@ -63,9 +63,9 @@ If you provide a cancelable cancellation token, the timeout is ignored. Instead,
 
 The following example shows how to use `Async.RunSynchronously` to run an asynchronous computation created by using [`Async.Parallel`](https://msdn.microsoft.com/library/aa9b0355-2d55-4858-b943-cbe428de9dc4), with no timeout.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet1.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet1.fs)]
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet2.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet2.fs)]
 
 **Sample Output**
 

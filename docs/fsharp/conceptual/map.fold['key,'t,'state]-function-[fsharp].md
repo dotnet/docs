@@ -60,7 +60,7 @@ This function is named `Fold` in compiled assemblies. If you are accessing the f
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsmaps/snippet8.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmaps/snippet8.fs)]
 
 **Output**
 

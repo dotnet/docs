@@ -48,7 +48,7 @@ The following table shows the possible values and their meaning.
 
 This enumeration is often used with the [CompilationRepresentationAttribute](core.compilationrepresentationattribute-class-%5bfsharp%5d.md):
 
-[!code-fsharp[Main](snippets/fscorelib2/snippet16.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fscorelib2/snippet16.fs)]
 
 F# modules are compiled as static classes, but this can sometimes cause naming conflicts with namespaces. In the above example, you may wish to also have a namespace named `Foo`, but you can't have both. Using `ModuleSuffix` instructs the compiler that the `Foo` module should be compiled to a class called `FooModule`. Other F# code will still refer to the `Foo` module, but from C# or Visual Basic .NET, the name of the class will be visible as `FooModule`.
 

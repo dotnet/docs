@@ -56,7 +56,7 @@ This function is named `Map2` in compiled assemblies. If you are accessing the f
 
 The following code example shows the use of `Array.map2`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet52.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet52.fs)]
 
 **Output**
 

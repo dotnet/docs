@@ -48,7 +48,7 @@ This function is named `Max` in compiled assemblies. If you are accessing the fu
 
 The following code example demonstrates how to use Array.max.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet55.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet55.fs)]
 
 **Output**
 

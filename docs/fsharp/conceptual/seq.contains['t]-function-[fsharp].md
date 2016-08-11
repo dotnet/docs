@@ -57,7 +57,7 @@ This function is named `Contains` in compiled assemblies. If you are accessing t
 
 The following code shows how to use Seq.contains.
 
-[!code-fsharp[Main](snippets/fssequences/snippet205.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet205.fs)]
 
 **Output**
 

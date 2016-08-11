@@ -61,7 +61,7 @@ This function is named `Collect` in compiled assemblies. If you are accessing th
 ## Example
 The following code demonstrates the use of Seq.collect.
 
-[!code-fsharp[Main](snippets/fssequences/snippet28.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet28.fs)]
 
 **Output**
 

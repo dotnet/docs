@@ -35,7 +35,7 @@ Your computer might show different names or locations for some of the Visual Stu
 <br />
 
 2. Use .NET and F# APIs to access data from the Internet site of the United States Federal Reserve. Type in the following code.
-[!code-fsharp[Main](snippets/fsfedrates/snippet100.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsfedrates/snippet100.fs)]
 
 Notice the following:
 <br />
@@ -125,11 +125,11 @@ Notice the following:
   - You create pipelines by using the pipe operator (**|&gt;**). The pipe operator takes the return value from one expression and uses it as the argument for the function on the next line. Pipelines and F# Interactive allow for easy partial execution of data processing code.
 <br />
 
-[!code-fsharp[Main](snippets/fsfedrates/snippet3.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsfedrates/snippet3.fs)]
 
 6. You will now give this functionality a name. Remove the series ID **bcb44e57fb57efbe90002369321bfb3f** from the definition of **url**, and replace it with **%s** to make the string literal a format string. Add **seriesID** after the format string. Select all code except the open directives, and press TAB. Above the indented block of code, add the following lines of code.
 
-[!code-fsharp[Main](snippets/fsfedrates/snippet41.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsfedrates/snippet41.fs)]
 
 At the end of the indented block, add **interest**. Notice the following:
 <br />
@@ -141,7 +141,7 @@ At the end of the indented block, add **interest**. Notice the following:
 
 The code now resembles the following.
 
-[!code-fsharp[Main](snippets/fsfedrates/snippet4.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsfedrates/snippet4.fs)]
 
 7. You will now use this functionality on new inputs. Select all the code and press ALT+ENTER to execute it by using F# Interactive. At the F# Interactive prompt, call the new **loadRates** function on other maturity rates: **1**, **2**, and **5**, in years. Notice the following:
 <br />
@@ -162,7 +162,7 @@ The code now resembles the following.
 
 1. You will now create an F# class that exposes the desired functionality. In **Solution Explorer**, right-click the project, point to **Add**, and then click **New Item**. In the **Add New Item** dialog box, select **F# Source File**. Name the file **Analyzer.fs**. Right-click **Script.fsx** in **Solution Explorer** and then click **Move Down**. (Alternatively, press ALT+DOWN ARROW.) Paste the following code into **Analyzer.fs**:
 
-[!code-fsharp[Main](snippets/fsfedrates/snippet5.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsfedrates/snippet5.fs)]
 
 Notice the following:
 

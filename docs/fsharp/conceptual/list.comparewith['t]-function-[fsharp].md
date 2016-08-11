@@ -58,7 +58,7 @@ This function is named `CompareWith` in compiled assemblies. If you are accessin
 
 The following example demonstrates the use of List.compareWith to compare two sequences using a custom comparison function.
 
-[!code-fsharp[Main](snippets/fslists/snippet114.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet114.fs)]
 
 **Output**
 

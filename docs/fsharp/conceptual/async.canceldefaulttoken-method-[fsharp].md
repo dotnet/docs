@@ -33,7 +33,7 @@ Async.CancelDefaultToken ()
 
 The following example shows how to create a cancellable asynchronous operation in a Windows Forms application. It also shows how to use `Async.CancelDefaultToken` to cancel the operation.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet5.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet5.fs)]
 
 ## Platforms
 

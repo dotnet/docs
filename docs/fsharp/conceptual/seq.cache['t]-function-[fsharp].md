@@ -54,7 +54,7 @@ This function is named `Cache` in compiled assemblies. If you are accessing the 
 
 The following code example demonstrates how to use Seq.cache to avoid recomputing elements of a sequence.
 
-[!code-fsharp[Main](snippets/fssequences/snippet27.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet27.fs)]
 
 **Output**
 

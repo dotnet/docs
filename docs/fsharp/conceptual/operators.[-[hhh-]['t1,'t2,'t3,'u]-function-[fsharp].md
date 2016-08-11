@@ -66,7 +66,7 @@ The function result.
 
 The following code demonstrates the use of the `<|||` operator.
 
-[!code-fsharp[Main](snippets/fsoperators/snippet6.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsoperators/snippet6.fs)]
 
 **Output:**
 

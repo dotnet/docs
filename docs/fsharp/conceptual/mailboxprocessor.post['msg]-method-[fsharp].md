@@ -41,7 +41,7 @@ The message to post.
 
 The following code example shows how to start a mailbox processor agent and post messages to it.
 
-[!code-fsharp[Main](snippets/fsmailboxprocessor/snippet2.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmailboxprocessor/snippet2.fs)]
 
 Following is an example session.
 

@@ -65,7 +65,7 @@ This function is named `Fill` in compiled assemblies. If you are accessing the f
 ## Example
 The following example demonstrates the use of Array.fill to overwrite a section of an array with zeroes.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet28.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet28.fs)]
 
 ```
 [|1; 2; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 23; 24; 25|]

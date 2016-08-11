@@ -53,7 +53,7 @@ This function is named `Item` in compiled assemblies. If you are accessing the f
 
 ## Example
 
-[!code-fsharp[Main](snippets/fssequences/snippet203.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet203.fs)]
 
 **Output:**
 

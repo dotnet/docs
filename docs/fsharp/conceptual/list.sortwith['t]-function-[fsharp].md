@@ -55,7 +55,7 @@ This function is named `SortWith` in compiled assemblies. If you are accessing t
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet62.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet62.fs)]
 
 **Output**
 

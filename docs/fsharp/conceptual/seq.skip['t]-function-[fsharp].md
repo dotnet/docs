@@ -62,7 +62,7 @@ This function is named `Skip` in compiled assemblies. If you are accessing the f
 
 The following example demonstrates the use of `Seq.skip` to skip the first five squares of a list of squares.
 
-[!code-fsharp[Main](snippets/fssequences/snippet171.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet171.fs)]
 
 ```
 36 49 64 81 100

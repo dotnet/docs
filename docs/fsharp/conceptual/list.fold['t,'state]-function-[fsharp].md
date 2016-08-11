@@ -60,7 +60,7 @@ This function is named `Fold` in compiled assemblies. If you are accessing the f
 
 ## Example
 
-[!code-fsharp[Main](snippets/fssamples101/snippet3006.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssamples101/snippet3006.fs)]
 
 ### Output
 
@@ -70,7 +70,7 @@ Total number of animals: 14
 
 The following code example illustrates additional uses of `List.fold`. Note that library functions exist that already encapsulate the functionality implemented below. For example, [`List.sum`](https://msdn.microsoft.com/library/54d47fe3-5ecf-4883-beb5-e915342a17f9) is available to add up all the elements of a list.
 
-[!code-fsharp[Main](snippets/fslists/snippet27.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet27.fs)]
 
 **Output**
 

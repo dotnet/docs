@@ -54,7 +54,7 @@ This function is named `SortInPlaceBy` in compiled assemblies. If you are access
 
 The following code illustrates the use of Array.sortInPlaceBy.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet41.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet41.fs)]
 
 **Output**
 

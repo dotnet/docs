@@ -65,7 +65,7 @@ This function is named `Take` in compiled assemblies. If you are accessing the f
 
 The following example demonstrates the use of `Seq.take` and contrasts the behavior with `Seq.truncate`.
 
-[!code-fsharp[Main](snippets/fssequences/snippet16.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet16.fs)]
 
 ```
 1 4 9 16 25

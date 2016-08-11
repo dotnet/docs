@@ -45,8 +45,8 @@ This function is named `PrintFormatLineToTextWriter` in compiled assemblies. If 
 
 The following example demonstrates the use of `fprintfn` to print a listing of the contents of a directory to a specified file, `directorylisting.txt`.
 
-[!code-fsharp[Main](snippets/fscorelib2/snippet5.fs)]
-[!code-fsharp[Main](snippets/fscorelib2/snippet6.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fscorelib2/snippet5.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fscorelib2/snippet6.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

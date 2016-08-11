@@ -62,7 +62,7 @@ This function is named `Fold` in compiled assemblies. If you are accessing the f
 
 The following code illustrates the use of Array.fold.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet32.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet32.fs)]
 
 **Output**
 

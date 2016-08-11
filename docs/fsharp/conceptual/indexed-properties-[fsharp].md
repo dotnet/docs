@@ -54,7 +54,7 @@ Regardless of which form you use, you should always use the curried form for the
 
 The following code example illustrates the definition and use of default and non-default indexed properties that have get and set methods.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet3301.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet3301.fs)]
 
 ## Output
 
@@ -69,7 +69,7 @@ Indexed properties can have more than one index variable. In that case, the vari
 
 The following code demonstrates the use of an indexed property with multiple index variables.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet3302.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet3302.fs)]
     
 ## See Also
 [Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md)

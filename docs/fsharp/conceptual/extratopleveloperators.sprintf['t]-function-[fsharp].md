@@ -39,7 +39,7 @@ This function is named `PrintFormatToString` in compiled assemblies. If you are 
 
 ## Example
 
-[!code-fsharp[Main](snippets/fscorelib2/snippet10.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fscorelib2/snippet10.fs)]
 
 ```
 Formatted string with value 109...

@@ -65,7 +65,7 @@ This function is named `IterateIndexed2` in compiled assemblies. If you are acce
 
 The following code example illustrates the use of List.iteri2 and compares its behavior with related functions.
 
-[!code-fsharp[Main](snippets/fslists/snippet17.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet17.fs)]
 
 **Output**
 

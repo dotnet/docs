@@ -57,7 +57,7 @@ The returned sequence may be passed between threads safely. However, individual 
 
 The following example shows the use of `Seq.initInfinite` to create a sequence 1/n^2, with alternating signs.
 
-[!code-fsharp[Main](snippets/fssequences/snippet13.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet13.fs)]
 
 **Output**
 ```

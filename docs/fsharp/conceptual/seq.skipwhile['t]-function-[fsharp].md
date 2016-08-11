@@ -61,7 +61,7 @@ This function is named `SkipWhile` in compiled assemblies. If you are accessing 
 
 The following example demonstrates the use of Seq.skipWhile. The resulting sequences contains only elements that are greater than 10.
 
-[!code-fsharp[Main](snippets/fssequences/snippet172.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet172.fs)]
 
 ```
 16 25 36 49 64 81 100

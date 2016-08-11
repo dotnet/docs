@@ -61,7 +61,7 @@ This function is named `Fold2` in compiled assemblies. If you are accessing the 
 
 The following code shows how to use `Array.fold2`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet45.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet45.fs)]
 
 **Output**
 

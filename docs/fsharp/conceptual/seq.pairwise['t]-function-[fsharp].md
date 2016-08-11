@@ -54,7 +54,7 @@ This function is named `Pairwise` in compiled assemblies. If you are accessing t
 
 The following example demonstrates the use of `Seq.pairwise`. The initial sequence is a sequence of squares up to 100. The `Seq.pairwise` function generates a sequence of tuples of consecutive squares, `{ (1, 4), (4, 9), (9, 16) ... }`. The second part of the example produces a list of the differences in each pair of squares.
 
-[!code-fsharp[Main](snippets/fssequences/snippet18.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet18.fs)]
 
 ```
 (1, 4) (4, 9) (9, 16) (16, 25) (25, 36) (36, 49) (49, 64) (64, 81) (81, 100)

@@ -55,7 +55,7 @@ This function is named `Find` in compiled assemblies. If you are accessing the f
 ## Example
 The following example demonstrates the use of `Array.find` and `Array.findIndex` to identify the first integer greater than 1 that is both a square and a cube.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet25.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet25.fs)]
 
 ```
 The first element that is both a square and a cube is 64 and its index is 62.

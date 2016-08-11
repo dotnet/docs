@@ -59,7 +59,7 @@ This function is named `Exists2` in compiled assemblies. If you are accessing th
 
 The following example shows the use `Array.exists2` to test whether two arrays have at least one equal element.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet232.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet232.fs)]
 
 ```
 true

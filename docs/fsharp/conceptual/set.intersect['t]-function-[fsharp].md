@@ -54,7 +54,7 @@ This function is named `Intersect` in compiled assemblies. If you are accessing 
 
 ## Example
 
-[!code-fsharp[Main](snippets/fssets/snippet4.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssets/snippet4.fs)]
 
 **Output**
 

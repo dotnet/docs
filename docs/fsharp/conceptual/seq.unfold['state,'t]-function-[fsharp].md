@@ -60,7 +60,7 @@ This function is named `Unfold` in compiled assemblies. If you are accessing the
 
 The following code demonstrates the use `Seq.unfold` to generate two sequences. The first just generates a sequence of integers. The second generates a sequence of Fibonacci numbers, which are composed by adding the two previous numbers in the sequence. The first two numbers in the Fibonacci sequence are (1, 1), which forms the initial state parameter. The state at each step consists of the two numbers whose sum produces the next Fibonacci number.
 
-[!code-fsharp[Main](snippets/fssequences/snippet14.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet14.fs)]
 
 **Output**
 

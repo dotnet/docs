@@ -51,7 +51,7 @@ This function is named `Sort` in compiled assemblies. If you are accessing the f
 
 The following code illustrates the use of `Array.sort`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet37.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet37.fs)]
 
 **Output**
 

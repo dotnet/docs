@@ -52,7 +52,7 @@ This function is named `Length` in compiled assemblies. If you are accessing the
 
 ## Example
 
-[!code-fsharp[Main](snippets/fssequences/snippet44.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet44.fs)]
 
 **Output**
 

@@ -64,7 +64,7 @@ This function is named `Iterate2` in compiled assemblies. If you are accessing t
 
 The following code shows how to use `Seq.iter2` and compares its behavior to related functions.
 
-[!code-fsharp[Main](snippets/fssequences/snippet43.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet43.fs)]
 
 **Output**
 

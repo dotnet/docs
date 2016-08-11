@@ -58,7 +58,7 @@ This function is named `CountBy` in compiled assemblies. If you are accessing th
 
 The following example demonstrates the use of List.countBy to determine the number of elements in a list that are odd or even.
 
-[!code-fsharp[Main](snippets/fslists/snippet115.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet115.fs)]
 
 **Output**
 ```

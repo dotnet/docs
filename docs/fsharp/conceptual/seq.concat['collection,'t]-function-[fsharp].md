@@ -54,7 +54,7 @@ This function is named `Concat` in compiled assemblies. If you are accessing the
 ## Example
 The following code shows how to use Seq.concat.
 
-[!code-fsharp[Main](snippets/fssequences/snippet29.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet29.fs)]
 
 **Output**
 

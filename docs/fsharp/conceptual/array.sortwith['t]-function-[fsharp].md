@@ -57,7 +57,7 @@ This function is named `SortWith` in compiled assemblies. If you are accessing t
 
 The following code shows the use of Array.sortWith.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet65.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet65.fs)]
 
 **Output**
 

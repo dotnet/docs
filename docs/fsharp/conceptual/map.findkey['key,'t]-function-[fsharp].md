@@ -60,7 +60,7 @@ This function is named `FindKey` in compiled assemblies. If you are accessing th
 
 The following example shows how to use Map.findKey.
 
-[!code-fsharp[Main](snippets/fsmaps/snippet7.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmaps/snippet7.fs)]
 
 **Output**
 

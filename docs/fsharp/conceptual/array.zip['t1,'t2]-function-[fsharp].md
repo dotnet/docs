@@ -51,7 +51,7 @@ This function is named `Zip` in compiled assemblies. If you are accessing the fu
 
 The following code shows how to use `Array.zip`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet72.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet72.fs)]
 
 **Output**
 

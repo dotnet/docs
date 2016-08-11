@@ -55,7 +55,7 @@ This function is named `Partition` in compiled assemblies. If you are accessing 
 
 The following code illustrates the use of Array.partition.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet33.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet33.fs)]
 
 **Output**
 

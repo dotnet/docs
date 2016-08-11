@@ -64,7 +64,7 @@ This function is named `Iterate2` in compiled assemblies. If you are accessing t
 
 The following code example illustrates the use of List.iter2 and compares its behavior with related functions.
 
-[!code-fsharp[Main](snippets/fslists/snippet17.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet17.fs)]
 
 **Output**
 

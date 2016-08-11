@@ -62,7 +62,7 @@ This function is named `Map2` in compiled assemblies. If you are accessing the f
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet19.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet19.fs)]
 
 **Output**
 

@@ -55,7 +55,7 @@ This function is named `Filter` in compiled assemblies. If accessing the functio
 ## Example
 The following example shows how to use Array.filter to select elements from an array.
 
-[!code-fsharp[Main](snippets/fssamples101/snippet1007.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssamples101/snippet1007.fs)]
 
 ```
 names = [|"Bob"; "Ann"; "Stephen"; "Vivek"; "Fred"; "Kim"; "Brian"; "Ling"; "Jane"; "Jonathan"|]

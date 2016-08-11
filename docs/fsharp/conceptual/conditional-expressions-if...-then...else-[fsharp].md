@@ -30,7 +30,7 @@ Unlike in other languages, the `if...then...else` construct is an expression, no
 ## Example
 The following example illustrates how to use the `if...then...else` expression.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet4501.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4501.fs)]
 
 ```
 John

@@ -49,7 +49,7 @@ This function is named `ContainsKey` in compiled assemblies. If you are accessin
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsmaps/snippet3.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmaps/snippet3.fs)]
 
 **Output**
 

@@ -51,7 +51,7 @@ This function is named `Min` in compiled assemblies. If you are accessing the fu
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet57.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet57.fs)]
 
 **Output**
 

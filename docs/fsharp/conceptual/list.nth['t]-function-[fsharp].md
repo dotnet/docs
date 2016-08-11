@@ -59,7 +59,7 @@ This function is named `Get` in compiled assemblies. If you are accessing the fu
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet49.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet49.fs)]
 
 **Output**
 

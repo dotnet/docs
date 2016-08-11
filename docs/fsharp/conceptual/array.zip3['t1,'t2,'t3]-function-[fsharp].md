@@ -57,7 +57,7 @@ This function is named `Zip3` in compiled assemblies. If you are accessing the f
 
 The following code shows how to use `Array.zip3`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet73.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet73.fs)]
 
 **Output**
 

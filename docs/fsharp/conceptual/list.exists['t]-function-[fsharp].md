@@ -57,7 +57,7 @@ This function is named `Exists` in compiled assemblies. If you are accessing the
 
 The following code illustrates the use of `List.exists` to determine whether a given element exists in a list.
 
-[!code-fsharp[Main](snippets/fslists/snippet1.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet1.fs)]
 
 **Output**
 

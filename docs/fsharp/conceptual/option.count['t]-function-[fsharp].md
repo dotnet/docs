@@ -49,7 +49,7 @@ This function is named `Count` in compiled assemblies. If you are accessing the 
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsoptions/snippet2.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsoptions/snippet2.fs)]
 
 **Output**
 

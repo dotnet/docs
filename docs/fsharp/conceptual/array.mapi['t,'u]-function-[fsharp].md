@@ -55,7 +55,7 @@ This function is named `MapIndexed` in compiled assemblies. If you are accessing
 
 The following code demonstrates the use of `Array.mapi`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet53.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet53.fs)]
 
 **Output**
 

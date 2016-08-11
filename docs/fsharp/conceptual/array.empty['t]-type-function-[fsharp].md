@@ -41,7 +41,7 @@ This function is named `Empty` in compiled assemblies. If you are accessing the 
 
 The following code shows how to use `Array.empty`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet44.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet44.fs)]
 
 **Output**
 

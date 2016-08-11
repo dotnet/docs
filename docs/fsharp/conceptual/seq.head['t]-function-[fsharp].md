@@ -55,7 +55,7 @@ This function is named `Head` in compiled assemblies. If you are accessing the f
 
 ## Example
 
-[!code-fsharp[Main](snippets/fssequences/snippet41.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet41.fs)]
 
 **Output**
 

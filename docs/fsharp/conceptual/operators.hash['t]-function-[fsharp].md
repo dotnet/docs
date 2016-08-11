@@ -48,7 +48,7 @@ This function is named `Hash` in compiled assemblies. If you are accessing the f
 
 The following examples shows the use of the hash function to generate hashes for a variety of data types.
 
-[!code-fsharp[Main](snippets/fssamples101/snippet1010.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssamples101/snippet1010.fs)]
 
 **Output:**
 

@@ -49,7 +49,7 @@ This function is named `Add` in compiled assemblies. If you are accessing the fu
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsevents/snippet1.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsevents/snippet1.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

@@ -60,7 +60,7 @@ This function is named `SumBy` in compiled assemblies. If you are accessing the 
 ## Example
 The following code example illustrates the use of [List.sum](https://msdn.microsoft.com/library/54d47fe3-5ecf-4883-beb5-e915342a17f9), List.sumBy, and [List.average](https://msdn.microsoft.com/library/2b9a627b-106d-4548-8c4c-ab5058b8f8e1):
 
-[!code-fsharp[Main](snippets/fslists/snippet11.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet11.fs)]
 
 **Output**
 

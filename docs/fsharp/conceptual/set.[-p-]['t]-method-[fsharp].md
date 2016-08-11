@@ -52,7 +52,7 @@ The union of the two input sets.
 
 The following code illustrates the use of the `+` and `-` operators on sets.
 
-[!code-fsharp[Main](snippets/fssets/snippet1.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssets/snippet1.fs)]
 
 **Output**
 

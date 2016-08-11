@@ -55,7 +55,7 @@ This operator is referred to as the *backward* or *reverse composition operator*
 
 The following example demonstrates the use of the reverse composition operator (`<<`).
 
-[!code-fsharp[Main](snippets/fsoperators/snippet8.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsoperators/snippet8.fs)]
 
 **Output:**
 ```

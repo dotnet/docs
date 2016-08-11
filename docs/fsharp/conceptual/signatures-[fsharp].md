@@ -71,11 +71,11 @@ The rules for value signatures are as follows:
 
 The following code example shows an example of a signature file that has namespace, module, function value, and type signatures together with the appropriate attributes. It also shows the corresponding implementation file.
 
-[!code-fsharp[Main](snippets/fssignatures/snippet9002.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssignatures/snippet9002.fs)]
 
 The following code shows the implementation file.
 
-[!code-fsharp[Main](snippets/fssignatures/snippet9001.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssignatures/snippet9001.fs)]
     
 ## See Also
 [F&#35; Language Reference](FSharp-Language-Reference.md)

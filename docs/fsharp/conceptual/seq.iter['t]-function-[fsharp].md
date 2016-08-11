@@ -56,7 +56,7 @@ This function is named `Iterate` in compiled assemblies. If you are accessing th
 
 ## Examples
 
-[!code-fsharp[Main](snippets/fssamples101/snippet1003.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssamples101/snippet1003.fs)]
 
 ```fsharp
 Seq.iter: (1, 1) (2, 4) (3, 9) (4, 16) (5, 25)
@@ -64,7 +64,7 @@ Seq.iter: (1, 1) (2, 4) (3, 9) (4, 16) (5, 25)
 
 The following example illustrates the use of `Seq.iter` to work with CSV (Comma-Separated Value) files.
 
-[!code-fsharp[Main](snippets/fssamples101/snippet2003.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssamples101/snippet2003.fs)]
 
 ```
 -------Enumeration 1------

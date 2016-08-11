@@ -49,7 +49,7 @@ This function is named `Distinct` in compiled assemblies. If you are accessing t
 ## Example
 The following example demonstrates the use of List.distinct. The example generates the binary representation of a number as a list. It then determines that the only unique numbers are 0 and 1.
 
-[!code-fsharp[Main](snippets/fslists/snippet70.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet70.fs)]
 
 **Output**
 ```

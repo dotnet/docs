@@ -48,7 +48,7 @@ This function is named `OfSeq` in compiled assemblies. If you are accessing the 
 
 The following example demonstrates how to create a set from a sequence by using `Set.ofSeq`.
 
-[!code-fsharp[Main](snippets/fssamples101/snippet2001.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssamples101/snippet2001.fs)]
 
 **Output:**
 

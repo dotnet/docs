@@ -73,7 +73,7 @@ This function is named `Fold2` in compiled assemblies. If you are accessing the 
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet28.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet28.fs)]
 
 **Output**
 
@@ -83,7 +83,7 @@ The sum of the greater of each pair of elements in the two lists is 8.
 
 The following code example illustrates the use of `List.fold2` to compute the ending balance in a bank account after a series of transactions. The two input lists represent the transaction type (deposit or withdrawal) and the transaction amount.
 
-[!code-fsharp[Main](snippets/fslists/snippet29.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet29.fs)]
 
 **Output**
 

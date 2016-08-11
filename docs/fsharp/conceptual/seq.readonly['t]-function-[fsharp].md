@@ -54,7 +54,7 @@ This function is named `ReadOnly` in compiled assemblies. If you are accessing t
 
 The following code uses `Seq.readonly` to create an immutable view of a mutable array.
 
-[!code-fsharp[Main](snippets/fssequences/snippet24.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet24.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

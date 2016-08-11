@@ -50,7 +50,7 @@ The resulting map, in which the given key maps to the given value. If the key of
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsmaps/snippet2.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmaps/snippet2.fs)]
 
 **Output**
 

@@ -53,7 +53,7 @@ This function is named `Partition` in compiled assemblies. If you are accessing 
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsmaps/snippet13.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmaps/snippet13.fs)]
 
 **Output**
 

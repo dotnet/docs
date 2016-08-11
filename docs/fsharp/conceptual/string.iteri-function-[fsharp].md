@@ -55,7 +55,7 @@ This function is named `IterateIndexed` in compiled assemblies. If you are acces
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsstrings/snippet9.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsstrings/snippet9.fs)]
 
 **Output**
 

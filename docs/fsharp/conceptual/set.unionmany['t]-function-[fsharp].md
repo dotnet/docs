@@ -48,7 +48,7 @@ This function is named `UnionMany` in compiled assemblies. If you are accessing 
 ## Example
 The following code illustrates the use of the Set.unionMany function.
 
-[!code-fsharp[Main](snippets/fssets/snippet15.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssets/snippet15.fs)]
 
 **Output**
 

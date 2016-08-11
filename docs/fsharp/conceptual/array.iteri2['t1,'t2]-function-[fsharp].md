@@ -52,7 +52,7 @@ This function is named `IterateIndexed2` in compiled assemblies. If you are acce
 
 The following code examples shows the differences between [`Array.iter`](https://msdn.microsoft.com/library/94eba0f1-ecd7-459f-b89f-ed2a2923e516), [`Array.iter2`](https://msdn.microsoft.com/library/018aa9b9-f186-4142-be8a-a62462794fdc), [`Array.iteri`](https://msdn.microsoft.com/library/8bbe2ed4-ada7-4906-ac3e-cb09f9db6486), and `Array.iteri2`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet49.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet49.fs)]
 
 **Output**
 

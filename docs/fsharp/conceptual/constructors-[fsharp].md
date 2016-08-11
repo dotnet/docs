@@ -25,7 +25,7 @@ Regardless of whether the constructor you want to call is a primary constructor 
 
 The following code illustrates a class that has a constructor and various ways of creating objects.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet3501.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet3501.fs)]
 
 The output is as follows.
 
@@ -41,7 +41,7 @@ Structures follow all the rules of classes. Therefore, you can have a primary co
 
 Also, structures often have fields that are created by using the `val` keyword; classes can also have these fields. Structures and classes that have fields defined by using the `val` keyword can also be initialized in additional constructors by using record expressions, as shown in the following code.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet3502.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet3502.fs)]
 
 For more information, see [Explicit Fields: The val Keyword &#40;F&#35;&#41;](Explicit-Fields-The-val-Keyword-%5BFSharp%5D.md).
 
@@ -49,7 +49,7 @@ For more information, see [Explicit Fields: The val Keyword &#40;F&#35;&#41;](Ex
 ## Executing Side Effects in Constructors
 A primary constructor in a class can execute code in a `do` binding. However, what if you have to execute code in an additional constructor, without a `do` binding? To do this, you use the `then` keyword.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet3503.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet3503.fs)]
 
 The side effects of the primary constructor still execute. Therefore, the output is as follows.
 
@@ -62,11 +62,11 @@ Created an invalid person object.
 ## Self Identifiers in Constructors
 In other members, you provide a name for the current object in the definition of each member. You can also put the self identifier on the first line of the class definition by using the `as` keyword immediately following the constructor parameters. The following example illustrates this syntax.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet3504.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet3504.fs)]
 
 In additional constructors, you can also define a self identifier by putting the `as` clause right after the constructor parameters. The following example illustrates this syntax.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet3505.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet3505.fs)]
 
 Problems can occur when you try to use an object before it is fully defined. Therefore, uses of the self identifier can cause the compiler to emit a warning and insert additional checks to ensure the members of an object are not accessed before the object is initialized. You should only use the self identifier in the `do` bindings of the primary constructor, or after the `then` keyword in additional constructors.
 
@@ -76,11 +76,11 @@ The name of the self identifier does not have to be `this`. It can be any valid 
 ## Assigning Values to Properties at Initialization
 You can assign values to the properties of a class object in the initialization code by appending a list of assignments of the form `property = value` to the argument list for a constructor. This is shown in the following code example.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet3506.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet3506.fs)]
 
 The following version of the previous code illustrates the combination of ordinary arguments, optional arguments, and property settings in one constructor call.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet3507.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet3507.fs)]
     
 ## Static Constructors or Type Constructors
 In addition to specifying code for creating objects, static `let` and `do` bindings can be authored in class types that execute before the type is first used to perform initialization at the type level. For more information, see [let Bindings in Classes &#40;F&#35;&#41;](let-Bindings-in-Classes-%5BFSharp%5D.md) and [do Bindings in Classes &#40;F&#35;&#41;](do-Bindings-in-Classes-%5BFSharp%5D.md).

@@ -55,7 +55,7 @@ This function is named `Cast` in compiled assemblies. If you are accessing the f
 
 The following code demonstrates the use of `Seq.cast` to convert a weakly typed `System.Collections.ArrayList`, where the element type is just `System.Object`, into a sequence of int.
 
-[!code-fsharp[Main](snippets/fssequences/snippet12.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet12.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

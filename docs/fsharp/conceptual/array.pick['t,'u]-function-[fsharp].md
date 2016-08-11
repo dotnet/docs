@@ -51,7 +51,7 @@ This function is named `Pick` in compiled assemblies. If you are accessing the f
 
 The following code example shows how to use Array.pick.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet62.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet62.fs)]
 
 **Output**
 

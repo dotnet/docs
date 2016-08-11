@@ -48,7 +48,7 @@ Attributes and accessibility modifiers are allowed on structures, and follow the
 
 The following code examples illustrate structure definitions.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2501.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2501.fs)]
     
 ## See Also
 [F&#35; Language Reference](FSharp-Language-Reference.md)

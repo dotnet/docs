@@ -54,7 +54,7 @@ This function is named `Collect` in compiled assemblies. If you are accessing th
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet42.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet42.fs)]
 
 **Output**
 

@@ -60,7 +60,7 @@ This function is named `FoldBack` in compiled assemblies. If you are accessing t
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsmaps/snippet9.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmaps/snippet9.fs)]
 
 **Output**
 

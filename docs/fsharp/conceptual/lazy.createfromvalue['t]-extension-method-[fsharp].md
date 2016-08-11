@@ -46,7 +46,7 @@ The created [`Lazy`](https://msdn.microsoft.com/library/b29d0af5-6efb-4a55-a278-
 
 The following code example illustrates the use of the `Lazy.CreateFromValue` extension method. In this example, a dictionary is used to store previously computed values. When the factorial function is called, if the value is already computed, then `Lazy.CreateFromValue` is called with the cached result. If the value is not already computed, then `Lazy.Create` is used.
 
-[!code-fsharp[Main](snippets/fscorelib2/snippet12.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fscorelib2/snippet12.fs)]
 
 **Output**
 

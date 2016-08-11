@@ -29,11 +29,11 @@ The `raise` function is the equivalent of `throw` in C# or C++. Use `reraise` in
 
 The following code examples illustrate the use of the `raise` function to generate an exception.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet5801.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet5801.fs)]
 
 The `raise` function can also be used to raise .NET exceptions, as shown in the following example.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet5802.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet5802.fs)]
     
 ## See Also
 [Exception Handling &#40;F&#35;&#41;](Exception-Handling-%5BFSharp%5D.md)

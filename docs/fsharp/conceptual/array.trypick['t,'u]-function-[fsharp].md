@@ -56,7 +56,7 @@ This function is named `TryPick` in compiled assemblies. If you are accessing th
 
 The following example demonstrates the use of `Array.tryPick` to attempt to locate an element that satisfies a condition, and also return some additional data about the element, in this case the square root and the cube root.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet27.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet27.fs)]
 
 ```
 Found an element 1 with square root 1 and cube root 1.

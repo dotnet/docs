@@ -49,7 +49,7 @@ This method is for use within the body of the agent. Returns `None` if a timeout
 
 The following example shows how to use `TryReceive`. If a message is not received within 10 seconds, a timeout occurs and the message ID increments by 1.
 
-[!code-fsharp[Main](snippets/fsmailboxprocessor/snippet18.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmailboxprocessor/snippet18.fs)]
 
 A sample session follows. Notice that the message number 2 is skipped due to the timeout.
 

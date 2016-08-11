@@ -46,7 +46,7 @@ This function is named `Unzip3` in compiled assemblies. If you are accessing the
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet39.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet39.fs)]
 
 **Output**
 

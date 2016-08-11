@@ -61,7 +61,7 @@ This function is named `AverageBy` in compiled assemblies. If you are accessing 
 
 The following code example illustrates the use of List.averageBy.
 
-[!code-fsharp[Main](snippets/fslists/snippet12.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet12.fs)]
 
 **Output**
 

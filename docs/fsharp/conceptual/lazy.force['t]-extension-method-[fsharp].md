@@ -37,7 +37,7 @@ The value of the [`Lazy`](https://msdn.microsoft.com/library/b29d0af5-6efb-4a55-
 
 ## Example
 
-[!code-fsharp[Main](snippets/fscorelib2/snippet13.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fscorelib2/snippet13.fs)]
 
 The output indicates that when Force is called to create the value for lazyVal1, the computed value is retrieved when printing the values.
 

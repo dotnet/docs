@@ -50,7 +50,7 @@ This function is named `Delay` in compiled assemblies. If you are accessing the 
 
 The following code shows how to use `Seq.delay` to delay the evaluation of a sequence that is created from a collection that is normally evaluated immediately.
 
-[!code-fsharp[Main](snippets/fssequences/snippet30.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet30.fs)]
 
 **Output**
 
@@ -72,7 +72,7 @@ Evaluating 0.
 
 The following code example is equivalent to the previous example, except that it does not use `Seq.delay`. Notice the difference in the output.
 
-[!code-fsharp[Main](snippets/fssequences/snippet31.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet31.fs)]
 
 **Output**
 

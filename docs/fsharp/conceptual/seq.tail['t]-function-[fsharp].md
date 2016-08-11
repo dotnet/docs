@@ -54,7 +54,7 @@ This function is named `Tail` in compiled assemblies. If you are accessing the f
 
 The following code shows how to use Seq.tail.
 
-[!code-fsharp[Main](snippets/fssequences/snippet204.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet204.fs)]
 
 **Output**
 

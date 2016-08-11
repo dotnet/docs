@@ -54,7 +54,7 @@ This function is named `Create` in compiled assemblies. If you are accessing the
 ## Example
 The following code illustrates the use of `Array.create` as well as setting and getting array values.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet9.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet9.fs)]
 
 ```
 0 1 2 3 4 5 6 7 8 9

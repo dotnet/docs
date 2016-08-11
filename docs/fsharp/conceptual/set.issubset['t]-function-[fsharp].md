@@ -53,7 +53,7 @@ This function is named `IsSubset` in compiled assemblies. If you are accessing t
 
 ## Example
 
-[!code-fsharp[Main](snippets/fssets/snippet11.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssets/snippet11.fs)]
 
 **Output**
 

@@ -48,7 +48,7 @@ This function is named `Min` in compiled assemblies. If you are accessing the fu
 
 The following code demonstrates the use of `Array.min`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet57.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet57.fs)]
 
 **Output**
 

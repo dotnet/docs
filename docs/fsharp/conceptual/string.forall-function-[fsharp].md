@@ -58,7 +58,7 @@ This function is named `ForAll` in compiled assemblies. If you are accessing the
 ## Example
 The following code shows how to use String.forall.
 
-[!code-fsharp[Main](snippets/fsstrings/snippet4.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsstrings/snippet4.fs)]
 
 **Output**
 ```

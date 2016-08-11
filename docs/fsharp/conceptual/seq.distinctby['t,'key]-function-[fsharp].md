@@ -59,7 +59,7 @@ This function is named `DistinctBy` in compiled assemblies. If you are accessing
 
 The following example demonstrates the use of `Seq.distinctBy` to keep only the elements in a sequence that have a distinct absolute value. The first element with a given result is retained in the new sequence, so the positive numbers from 1 to 5 are dropped in the sequence from -5 to +10.
 
-[!code-fsharp[Main](snippets/fssequences/snippet23.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet23.fs)]
 
 ```
 Original sequence:

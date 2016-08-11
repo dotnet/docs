@@ -47,7 +47,7 @@ This function is named `IntersectMany` in compiled assemblies. If you are access
 
 ## Example
 
-[!code-fsharp[Main](snippets/fssets/snippet5.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssets/snippet5.fs)]
 
 **Output**
 

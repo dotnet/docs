@@ -51,7 +51,7 @@ This function is named `ReduceBack` in compiled assemblies. If you are accessing
 
 The following code example compares [`Array.reduce`](https://msdn.microsoft.com/library/fd62a985-89fe-4f49-a9d4-0c808ac6749d) and `Array.reduceBack`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet63.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet63.fs)]
 
 **Output**
 

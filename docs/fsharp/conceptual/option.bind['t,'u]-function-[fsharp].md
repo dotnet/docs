@@ -55,7 +55,7 @@ This function is named `Bind` in compiled assemblies. If you are accessing the f
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsoptions/snippet1.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsoptions/snippet1.fs)]
 
 **Output**
 

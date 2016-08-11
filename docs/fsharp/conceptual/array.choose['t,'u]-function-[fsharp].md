@@ -54,7 +54,7 @@ This function is named `Choose` in compiled assemblies. If you are accessing the
 ## Example
 The following code demonstrates the use of Array.choose to perform an operation only on the even numbers in an array.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet14.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet14.fs)]
 
 ```
 [|3.0; 15.0; 35.0; 63.0; 99.0|]

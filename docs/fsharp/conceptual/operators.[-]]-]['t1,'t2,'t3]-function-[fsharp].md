@@ -52,7 +52,7 @@ The composition of the input functions.
 
 The following example demonstrates the use of the composition operator (`>>`).
 
-[!code-fsharp[Main](snippets/fsoperators/snippet7.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsoperators/snippet7.fs)]
 
 **Output:**
 

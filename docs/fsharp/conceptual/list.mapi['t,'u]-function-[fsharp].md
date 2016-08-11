@@ -53,7 +53,7 @@ This function is named `MapIndexed` in compiled assemblies. If you are accessing
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet36.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet36.fs)]
 
 **Output**
 

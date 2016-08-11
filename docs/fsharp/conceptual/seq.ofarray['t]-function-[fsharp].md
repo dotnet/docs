@@ -52,7 +52,7 @@ This function is named `OfArray` in compiled assemblies. If you are accessing th
 
 ## Example
 
-[!code-fsharp[Main](snippets/fssequences/snippet60.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet60.fs)]
 
 **F# Interactive Output**
 

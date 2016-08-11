@@ -46,7 +46,7 @@ This function is named `OfSeq` in compiled assemblies. If you are accessing the 
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet60.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet60.fs)]
 
 **F# Interactive Output**
 

@@ -67,7 +67,7 @@ The computation will respond to cancellation while waiting for the completion of
 
 The following code example shows how to create an F# asynchronous computation from a .NET asynchronous API that uses the Begin/End pattern. The example uses the .NET socket API in `System.Net.Sockets`. It is an implementation of a simple server application that accepts a connection, receives data from a client, and sends a response.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet200.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet200.fs)]
 
 **Output**
 
@@ -82,7 +82,7 @@ Completed.
 
 The following code example shows the client code that can be used together with the server code in the previous example.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet20.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet20.fs)]
 
 **Sample Output**
 

@@ -47,7 +47,7 @@ The following is a typical XML documentation comment in a signature file.
 
 
 ### Code
-[!code-fsharp[Main](snippets/fslangref2/snippet7101.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet7101.fs)]
     
 ## Example
 
@@ -56,7 +56,7 @@ The following example shows the alternative method, without XML tags. In this ex
 
 
 ### Code
-[!code-fsharp[Main](snippets/fslangref2/snippet7102.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet7102.fs)]
     
 ## See Also
 [F&#35; Language Reference](FSharp-Language-Reference.md)

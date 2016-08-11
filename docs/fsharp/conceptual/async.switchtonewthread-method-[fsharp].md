@@ -38,7 +38,7 @@ A computation that will execute on a new thread.
 
 The following code example shows how to use `Async.SwitchToNewThread` and [`Async.SwitchToThreadPool`](https://msdn.microsoft.com/library/c2708739-5389-487a-a3c9-490f417bcdc6) to wrap a synchronous method call as an asynchronous method.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet28.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet28.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

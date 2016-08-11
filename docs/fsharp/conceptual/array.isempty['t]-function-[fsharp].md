@@ -48,7 +48,7 @@ This function is named `IsEmpty` in compiled assemblies. If you are accessing th
 
 The following code shows how to use `Array.isEmpty`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet48.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet48.fs)]
 
 **Output**
 

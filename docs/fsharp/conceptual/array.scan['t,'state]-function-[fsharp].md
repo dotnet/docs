@@ -62,7 +62,7 @@ This function is named `Scan` in compiled assemblies. If you are accessing the f
 
 The following code illustrates the use of `Array.scan`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet35.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet35.fs)]
 
 **Output**
 

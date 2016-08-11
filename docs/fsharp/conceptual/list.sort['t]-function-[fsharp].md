@@ -47,7 +47,7 @@ This function is named `Sort` in compiled assemblies. If you are accessing the f
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet5.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet5.fs)]
 
 **Output**
 

@@ -46,7 +46,7 @@ This function is named `IsEmpty` in compiled assemblies. If you are accessing th
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet47.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet47.fs)]
 
 **Output**
 

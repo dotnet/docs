@@ -55,7 +55,7 @@ This function is named `Map` in the compiled assembly. If you are accessing the 
 
 In this example, the event handler arguments are transformed into a more convenient format.
 
-[!code-fsharp[Main](snippets/fsevents/snippet4.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsevents/snippet4.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

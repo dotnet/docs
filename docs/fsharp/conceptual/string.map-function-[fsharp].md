@@ -59,7 +59,7 @@ This function is named `Map` in compiled assemblies. If you are accessing the fu
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsstrings/snippet7.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsstrings/snippet7.fs)]
 
 **Output**
 

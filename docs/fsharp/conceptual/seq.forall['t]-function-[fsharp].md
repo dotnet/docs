@@ -58,7 +58,7 @@ This function is named `ForAll` in compiled assemblies. If you are accessing the
 
 ## Example
 
-[!code-fsharp[Main](snippets/fssequences/snippet39.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet39.fs)]
 
 **Output**
 

@@ -55,7 +55,7 @@ This function is named `MapIndexed2` in compiled assemblies. If you are accessin
 
 The following code demonstrates the use of `Array.mapi2`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet54.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet54.fs)]
 
 **Output**
 

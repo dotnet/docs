@@ -58,7 +58,7 @@ This function is named `Concat` in compiled assemblies. If you are accessing the
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsstrings/snippet2.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsstrings/snippet2.fs)]
 
 **Output**
 

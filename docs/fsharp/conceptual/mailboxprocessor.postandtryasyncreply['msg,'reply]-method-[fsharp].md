@@ -51,7 +51,7 @@ An asynchronous computation ([Async](https://msdn.microsoft.com/library/03eb4d12
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsmailboxprocessor/snippet19.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmailboxprocessor/snippet19.fs)]
 
 A sample session follows.
 

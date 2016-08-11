@@ -37,7 +37,7 @@ This function is named `Empty` in compiled assemblies. If you are accessing the 
 
 The following code shows how to use `List.empty`.
 
-[!code-fsharp[Main](snippets/fslists/snippet44.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet44.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

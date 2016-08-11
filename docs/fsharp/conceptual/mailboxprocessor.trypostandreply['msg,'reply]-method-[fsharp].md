@@ -53,7 +53,7 @@ The reply from the agent or None if the timeout expires.
 
 The following example shows how to use `TryPostAndReply`. In this example, the agent has a delay that eventually results in a timeout.
 
-[!code-fsharp[Main](snippets/fsmailboxprocessor/snippet16.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmailboxprocessor/snippet16.fs)]
 
 A sample session follows.
 

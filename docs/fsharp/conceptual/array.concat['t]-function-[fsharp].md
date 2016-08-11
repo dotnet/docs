@@ -48,7 +48,7 @@ This function is named `Concat` in compiled assemblies. If you are accessing the
 ## Example
 The following example demonstrates the use of Array.concat.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet16.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet16.fs)]
 
 **Output:**
 

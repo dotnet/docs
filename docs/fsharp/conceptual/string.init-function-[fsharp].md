@@ -59,7 +59,7 @@ This function is named `Initialize` in compiled assemblies. If you are accessing
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsstrings/snippet5.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsstrings/snippet5.fs)]
 **Output**
 
 ```

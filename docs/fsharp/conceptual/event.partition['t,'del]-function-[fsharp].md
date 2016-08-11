@@ -54,7 +54,7 @@ This function is named `Partition` in compiled assemblies. If you are accessing 
 ## Example
 The following code shows how to use the Event.partition function to split an event into two events, each with its own event handling code.
 
-[!code-fsharp[Main](snippets/fsevents/snippet7.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsevents/snippet7.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

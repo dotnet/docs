@@ -60,7 +60,7 @@ This function is named `Find` in compiled assemblies. If you are accessing the f
 ## Example
 The following code example shows how to use Seq.find.
 
-[!code-fsharp[Main](snippets/fssequences/snippet36.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet36.fs)]
 
 **Output**
 5

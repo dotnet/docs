@@ -28,7 +28,7 @@ The type of the identifier is inferred from the type of the *start* and *finish*
 
 Although technically an expression, `for...to` is more like a traditional statement in an imperative programming language. The return type for the *body-expression* must be `unit`. The following examples show various uses of the `for...to` expression.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet5101.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet5101.fs)]
 
 The output of the previous code is as follows.
 

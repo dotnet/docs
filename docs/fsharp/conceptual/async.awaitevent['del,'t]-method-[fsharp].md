@@ -56,7 +56,7 @@ The computation will respond to cancellation while waiting for the event. If a c
 
 The following code example demonstrates how to use `Async.AwaitEvent` to set up a file operation that runs in response to an event that indicates that a file is changed. In this case, waiting for the event prevents an attempt to access the file while it is locked.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet14.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet14.fs)]
 
 **Sample Output**
 

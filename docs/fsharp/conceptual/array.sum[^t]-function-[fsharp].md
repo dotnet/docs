@@ -53,7 +53,7 @@ This function is named `Sum` in compiled assemblies. If you are accessing the fu
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsarrays/snippet66.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet66.fs)]
 
 **Output**
 

@@ -55,7 +55,7 @@ This function is named `TryFindIndex` in compiled assemblies. If you are accessi
 
 The following code example illustrates the use of `List.tryFind` and `List.tryFindIndex`.
 
-[!code-fsharp[Main](snippets/fslists/snippet10.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet10.fs)]
 
 **Output**
 

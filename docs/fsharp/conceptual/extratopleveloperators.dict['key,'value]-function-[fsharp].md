@@ -43,7 +43,7 @@ This function is named `CreateDictionary` in compiled assemblies. If you are acc
 
 ## Example
 
-[!code-fsharp[Main](snippets/fscorelib2/snippet1.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fscorelib2/snippet1.fs)]
 
 **The output is as follows.**
 

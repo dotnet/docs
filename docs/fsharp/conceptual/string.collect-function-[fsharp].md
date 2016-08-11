@@ -59,7 +59,7 @@ This function is named `Collect` in compiled assemblies. If you are accessing th
 ## Example
 The following code shows how to use String.collect.
 
-[!code-fsharp[Main](snippets/fsstrings/snippet1.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsstrings/snippet1.fs)]
 
 **Output**
 

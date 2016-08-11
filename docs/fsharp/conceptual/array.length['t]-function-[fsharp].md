@@ -50,7 +50,7 @@ This function is named `Length` in compiled assemblies. If you are accessing the
 
 The following code example demonstrates how to use `Array.length`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet50.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet50.fs)]
 
 **Output**
 

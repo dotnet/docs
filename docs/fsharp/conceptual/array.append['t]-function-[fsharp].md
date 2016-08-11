@@ -55,7 +55,7 @@ This function is named `Append` in compiled assemblies. If you are accessing the
 
 The following example demonstrates the use of `Array.append`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet13.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet13.fs)]
 
 ```
 [|1; 2; 3; 4; 5; 6|]

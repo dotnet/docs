@@ -56,7 +56,7 @@ The `body` function is used to generate the asynchronous computation executed by
 
 The following code example shows how to start a mailbox processor agent. In this example, each line of input from the console is posted to a message queue. The program reads each message and replies by using a reply channel. When the special message "Stop" is received, the Stop reply is sent and the program exits.
 
-[!code-fsharp[Main](snippets/fsmailboxprocessor/snippet7.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmailboxprocessor/snippet7.fs)]
 
 Following is an example session.
 

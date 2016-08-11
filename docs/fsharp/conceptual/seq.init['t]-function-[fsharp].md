@@ -66,7 +66,7 @@ The returned sequence may be passed between threads safely. However, individual 
 
 The following example demonstrates the use of `Seq.init` to create a sequence of the first five multiples of 10.
 
-[!code-fsharp[Main](snippets/fssequences/snippet10.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet10.fs)]
 
 ```
 0 10 20 30 40

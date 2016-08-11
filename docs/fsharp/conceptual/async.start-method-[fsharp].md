@@ -53,7 +53,7 @@ If no cancellation token is provided then the default cancellation token is used
 
 The following code example shows how to start an asynchronous computation on the thread pool.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet31.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet31.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

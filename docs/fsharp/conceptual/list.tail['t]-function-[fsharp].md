@@ -43,7 +43,7 @@ This function is named `Tail` in compiled assemblies. If you are accessing the f
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet63.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet63.fs)]
 
 **Abbreviated Output**
 

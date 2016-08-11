@@ -55,7 +55,7 @@ This function is named `Map` in compiled assemblies. If you are accessing the fu
 
 The following code example shows how to use `Array.map`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet510.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet510.fs)]
 
 **Output**
 ```

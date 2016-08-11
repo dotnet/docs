@@ -56,7 +56,7 @@ This function is named `TryFind` in compiled assemblies. If you are accessing th
 
 The following example demonstrates the use of `Array.tryFind` to attempt to locate array elements that are both perfect cubes and perfect squares.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet26.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet26.fs)]
 
 ```
 Found an element: 1

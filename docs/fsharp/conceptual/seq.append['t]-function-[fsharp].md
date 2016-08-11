@@ -61,7 +61,7 @@ This function is named `Append` in compiled assemblies. If you are accessing the
 
 The following example hows how to use `Seq.append`.
 
-[!code-fsharp[Main](snippets/fssequences/snippet25.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet25.fs)]
 
 **Output**
 

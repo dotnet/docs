@@ -63,7 +63,7 @@ This function is named `GetSubArray` in compiled assemblies. If accessing the fu
 
 The following example shows the use of `Array.sub` to specify a subarray. The output shows that the subarray starts at a zero-based index of 5 and has 10 elements.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet12.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet12.fs)]
 
 ```
 [|5; 6; 7; 8; 9; 10; 11; 12; 13; 14|]

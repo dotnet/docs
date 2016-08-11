@@ -60,7 +60,7 @@ The expression **fold f s inp** evaluates to **match inp with None -&gt; s | Som
 This function is named **Fold** in compiled assemblies. If you are accessing the function from a language other than F#, or through reflection, use this name.
 
 **The following code illustrates the use of Option.fold.**
-[!code-fsharp[Main](snippets/fsoptions/snippet4.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsoptions/snippet4.fs)]
 **Output**
 **[1; 2; 3; 4; 5; 6; 7; 8; 9; 10][0; 1; 2; 3; 4; 5; 6; 7; 8; 9; 10]Enter a number: New list: []Enter a number: 10New list: [10]Enter a number: 1New list: [1; 10]Enter a number: abcNew list: [1; 10]Enter a number: 9New list: [9; 1; 10]**
 ## Platforms

@@ -57,7 +57,7 @@ This function is named `Contains` in compiled assemblies. If you are accessing t
 
 The following code shows how to use Array.contains.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet511.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet511.fs)]
 
 **Output**
 

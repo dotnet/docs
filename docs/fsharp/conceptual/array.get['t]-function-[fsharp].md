@@ -55,7 +55,7 @@ This function is named `Get` in compiled assemblies. If you are accessing the fu
 
 The following code illustrates creating, setting and getting array values.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet9.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet9.fs)]
 
 ```
 0 1 2 3 4 5 6 7 8 9

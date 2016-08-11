@@ -54,7 +54,7 @@ This function is named `Filter` in compiled assembly. If you are accessing the f
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet24.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet24.fs)]
 
 ### Output
 
@@ -62,7 +62,7 @@ This function is named `Filter` in compiled assembly. If you are accessing the f
 The resulting list is [2; 4; 6].****The following example shows another typical use for List.filter.
 ```
 
-[!code-fsharp[Main](snippets/fssamples101/snippet3007.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssamples101/snippet3007.fs)]
 
 ### Output
 

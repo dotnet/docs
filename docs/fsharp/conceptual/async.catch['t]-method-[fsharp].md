@@ -44,7 +44,7 @@ The input computation that returns the type 'T.
 
 The following code example shows how to use `Async.Catch` to run an asynchronous computation that might throw an exception.
 
-[!code-fsharp[Main](snippets/fscorelib1/snippet1002.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fscorelib1/snippet1002.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

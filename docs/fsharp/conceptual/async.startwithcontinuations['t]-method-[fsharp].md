@@ -65,7 +65,7 @@ If no cancellation token is provided, the default cancellation token is used.
 
 The following code example illustrates the use of `Async.StartWithContinuations`.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet5.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet5.fs)]
 
 ## Platforms
 

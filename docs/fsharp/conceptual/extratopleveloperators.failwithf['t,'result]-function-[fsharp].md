@@ -39,7 +39,7 @@ This function is named `PrintFormatToStringThenFail` in compiled assemblies. If 
 
 ## Example
 
-[!code-fsharp[Main](snippets/fscorelib2/snippet4.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fscorelib2/snippet4.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

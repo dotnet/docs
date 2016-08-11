@@ -51,7 +51,7 @@ This function is named `Reduce` in compiled assemblies. If you are accessing the
 
 The following example demonstrates the use of `Array.reduce`.
 
-[!code-fsharp[Main](snippets/fssamples101/snippet1006.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssamples101/snippet1006.fs)]
 
 **Output**
 

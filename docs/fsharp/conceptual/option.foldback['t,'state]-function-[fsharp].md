@@ -60,7 +60,7 @@ The expression **fold f inp s** evaluates to **match inp with None -&gt; s | Som
 This function is named **FoldBack** in compiled assemblies. If you are accessing the function from a language other than F#, or through reflection, use this name.
 
 **The following code illustrates the use of Option.foldBack.**
-[!code-fsharp[Main](snippets/fsoptions/snippet5.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsoptions/snippet5.fs)]
 **Output**
 **[1; 2; 3; 4; 5; 6; 7; 8; 9; 10][0; 1; 2; 3; 4; 5; 6; 7; 8; 9; 10]**
 ## Platforms

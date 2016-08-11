@@ -69,7 +69,7 @@ This function is named `ForAll2` in compiled assemblies. If you are accessing th
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet4.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet4.fs)]
 
 **Output**
 

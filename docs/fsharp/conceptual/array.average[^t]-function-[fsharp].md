@@ -53,7 +53,7 @@ This function is named `Average` in compiled assemblies. If you are accessing th
 
 The following code shows how to use Array.average.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet43.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet43.fs)]
 
 **Output**
 

@@ -43,7 +43,7 @@ The input key.
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsmaps/snippet4.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmaps/snippet4.fs)]
 
 **Output**
 

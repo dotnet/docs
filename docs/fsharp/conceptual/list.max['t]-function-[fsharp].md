@@ -52,7 +52,7 @@ This function is named `Max` in compiled assemblies. If you are accessing the fu
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet55.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet55.fs)]
 
 **Output**
 

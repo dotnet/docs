@@ -53,7 +53,7 @@ This function is named `IsProperSubset` in compiled assemblies. If you are acces
 
 ## Example
 
-[!code-fsharp[Main](snippets/fssets/snippet7.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssets/snippet7.fs)]
 
 **Output**
 

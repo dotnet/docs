@@ -61,7 +61,7 @@ This method is for use within the body of the agent. For each agent, at most one
 
 The following example shows how to use the `Scan` method. In this code, mailbox processor agents manage a series of simulated jobs that run and compute a result.
 
-[!code-fsharp[Main](snippets/fsmailboxprocessor/snippet21.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmailboxprocessor/snippet21.fs)]
 
 A sample session follows.
 

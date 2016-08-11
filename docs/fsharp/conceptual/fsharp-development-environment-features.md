@@ -75,7 +75,7 @@ The following table summarizes IntelliSense features supported and not supported
 |Feature|Description|Supported in F#?|
 |-------|-----------|----------------|
 |Automatically implement interfaces|Generates code stubs for interface methods.|No|
-|Code snippets|Injects code from a library of common coding constructs into topics.|No|
+|Code ../../../samples/snippets|Injects code from a library of common coding constructs into topics.|No|
 |Complete Word|Saves typing by completing words and names as you type.|Yes|
 |Consume-first completion mode|When enabled, causes the word completion to select the first match as you type, instead of waiting for you to select one or press **CTRL+SPACE**.|No|
 |Generate code elements|Enables you to generate stub code for a variety of constructs.|No|

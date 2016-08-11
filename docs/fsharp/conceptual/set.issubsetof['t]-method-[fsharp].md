@@ -43,7 +43,7 @@ The set to test against.
 
 ## Example
 
-[!code-fsharp[Main](snippets/fssets/snippet10.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssets/snippet10.fs)]
 
 **Output**
 

@@ -36,7 +36,7 @@ In the previous syntax, the *typename* represents an existing class type or inte
 
 The following example illustrates several different types of object expressions.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet4301.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4301.fs)]
 
 ## Using Object Expressions
 You use object expressions when you want to avoid the extra code and overhead that is required to create a new, named type. If you use object expressions to minimize the number of types created in a program, you can reduce the number of lines of code and prevent the unnecessary proliferation of types. Instead of creating many types just to handle specific situations, you can use an object expression that customizes an existing type or provides an appropriate implementation of an interface for the specific case at hand.

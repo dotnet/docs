@@ -45,7 +45,7 @@ A computation that is equivalent to the input computation, but disregards the re
 
 The following code example illustrates the use of `Async.Ignore`.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet34.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet34.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

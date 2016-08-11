@@ -56,7 +56,7 @@ This function is named `Exists` in compiled assemblies. If you are accessing the
 ## Example
 The following example demonstrates how to test the elements of an array by using Array.exists.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet231.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet231.fs)]
 
 ```
 true

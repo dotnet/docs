@@ -48,7 +48,7 @@ This function is named `ToList` in compiled assemblies. If you are accessing the
 
 The following code example shows how to use `Array.toList`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet68.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet68.fs)]
 
 **Output**
 

@@ -47,7 +47,7 @@ This function is named `Length` in compiled assemblies. If you are accessing the
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet48.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet48.fs)]
 
 **Output**
 

@@ -53,7 +53,7 @@ This method is for use within the body of the agent. For each agent, at most one
 ## Example
 The following example shows how to use the Receive method. In this case, a timeout of 10 seconds is specified. In general, the message processing function runs on a different thread from the [Post](https://msdn.microsoft.com/library/70597a62-6aa9-4565-9b37-c0877cd3283b) function, so you must catch the timeout exception in the message processor function. In this example, the timeout exception just causes the loop to continue, and increases the message number by 1.
 
-[!code-fsharp[Main](snippets/fsmailboxprocessor/snippet10.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmailboxprocessor/snippet10.fs)]
 
 A typical session follows. Notice that message 2 is skipped, due to the timeout.
 

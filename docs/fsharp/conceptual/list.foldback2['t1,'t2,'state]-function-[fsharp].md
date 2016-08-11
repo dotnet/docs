@@ -75,7 +75,7 @@ This function is named `FoldBack2` in compiled assemblies. If you are accessing 
 ## Example
 The following code examples illustrate the difference between [`List.fold2`](https://msdn.microsoft.com/library/6cfcd043-a65d-4423-805a-2ab234cb5343) and `List.foldBack2`.
 
-[!code-fsharp[Main](snippets/fslists/snippet31.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet31.fs)]
 
 **Output**
 
@@ -83,7 +83,7 @@ The following code examples illustrate the difference between [`List.fold2`](htt
 1210.020833
 ```
 
-[!code-fsharp[Main](snippets/fslists/snippet32.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet32.fs)]
 
 **Output**
 

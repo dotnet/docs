@@ -62,7 +62,7 @@ This function is named `ScanBack` in compiled assemblies. If you are accessing t
 
 The following code example shows how to use `List.scanBack`, and also contrasts its behavior with [`List.scan`](https://msdn.microsoft.com/library/21f636db-885c-4a72-970e-e3841f33a1b8).
 
-[!code-fsharp[Main](snippets/fslists/snippet61.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet61.fs)]
 
 **Output**
 

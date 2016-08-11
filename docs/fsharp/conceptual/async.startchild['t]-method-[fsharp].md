@@ -69,7 +69,7 @@ When used in this way, each use of `StartChild` starts an instance of `childComp
 
 The following code example illustrates the use of `Async.StartChild`.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet4.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet4.fs)]
 
 **Sample Output**
 

@@ -54,7 +54,7 @@ This function is named `Union` in the compiled assembly. If you are accessing th
 
 ## Example
 
-[!code-fsharp[Main](snippets/fssets/snippet14.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssets/snippet14.fs)]
 
 **Output**
 

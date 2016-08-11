@@ -61,7 +61,7 @@ This function is named `Add` in compiled assemblies. If you are accessing the fu
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsmaps/snippet1.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmaps/snippet1.fs)]
 
 **Output**
 

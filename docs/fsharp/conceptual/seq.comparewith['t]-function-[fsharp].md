@@ -60,7 +60,7 @@ This function is named `CompareWith` in compiled assemblies. If you are accessin
 
 The following example demonstrates the use of `Seq.compareWith` to compare two sequences using a custom comparison function.
 
-[!code-fsharp[Main](snippets/fssequences/snippet19.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet19.fs)]
 
 **Output**
 

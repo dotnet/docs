@@ -55,7 +55,7 @@ This function is named `Permute` in compiled assemblies. If accessing the functi
 
 The following code illustrates the use of `Array.permute`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet34.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet34.fs)]
 
 **Output**
 

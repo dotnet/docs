@@ -61,7 +61,7 @@ This function is named `FindIndex` in compiled assemblies. If you are accessing 
 
 The following code shows how to use `List.findIndex` and compares its behavior to that of [`List.find`](https://msdn.microsoft.com/library/0594593e-9c75-44c1-8f5a-a37b2e561c06).
 
-[!code-fsharp[Main](snippets/fslists/snippet45.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet45.fs)]
 
 **Output**
 

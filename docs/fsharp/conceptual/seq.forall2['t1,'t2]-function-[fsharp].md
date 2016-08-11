@@ -67,7 +67,7 @@ This function is named `ForAll2` in compiled assemblies. If you are accessing th
 ## Example
 The following code shows how to use Seq.forall2.
 
-[!code-fsharp[Main](snippets/fssequences/snippet40.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet40.fs)]
 
 **Output**
 ```

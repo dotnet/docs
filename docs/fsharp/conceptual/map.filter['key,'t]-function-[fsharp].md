@@ -53,7 +53,7 @@ This function is named `Filter` in compiled assemblies. If you are accessing the
 
 ## Example
 
-[!code-fsharp[Main](snippets/fsmaps/snippet5.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsmaps/snippet5.fs)]
 
 **Output**
 

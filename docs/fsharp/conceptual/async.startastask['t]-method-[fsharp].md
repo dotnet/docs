@@ -55,7 +55,7 @@ Returns a System.Threading.Tasks.Task&lt;'T&gt; object that represents the given
 
 The following code example demonstrates the use of `Async.StartAsTask`.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet330.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet330.fs)]
 
 ## Platforms
 

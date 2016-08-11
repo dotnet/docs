@@ -55,7 +55,7 @@ This function is named `Sum` in compiled assemblies. If you are accessing the fu
 
 The following code example illustrates the use of List.sum, [List.sumBy](https://msdn.microsoft.com/library/b7623389-0fe1-4762-9c67-51079903ab7d), and [List.average](https://msdn.microsoft.com/library/2b9a627b-106d-4548-8c4c-ab5058b8f8e1):
 
-[!code-fsharp[Main](snippets/fslists/snippet11.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet11.fs)]
 
 **Output**
 

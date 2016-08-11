@@ -56,7 +56,7 @@ This function is named `Choose` in compiled assemblies. If you are accessing the
 
 The following code demonstrates the use of List.choose to select capitalized words out of a list of words.
 
-[!code-fsharp[Main](snippets/fslists/snippet25.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet25.fs)]
 
 **Output**
 

@@ -55,7 +55,7 @@ This function is named `Split` in compiled assemblies. If you are accessing the 
 ## Example
 The following code shows how to use the Event.split function to implement the ability to move a control on a form. The splitter function is the active pattern recognizer (|Down|Up|), which represents the state of the mouse buttons. If a user presses the mouse button while moving the mouse when it is over the button, the button moves. There is also code that sometimes changes the color of the button while it is moving, depending on which mouse button is used. This test uses a different color for each mouse button. The other event path, which is used when the mouse button is not down, restores the original color of the button after the button is released.
 
-[!code-fsharp[Main](snippets/fsevents/snippet9.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsevents/snippet9.fs)]
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

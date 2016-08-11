@@ -57,7 +57,7 @@ This function is named `Contains` in compiled assemblies. If you are accessing t
 
 The following code shows how to use List.contains.
 
-[!code-fsharp[Main](snippets/fslists/snippet113.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet113.fs)]
 
 **Output**
 

@@ -48,7 +48,7 @@ This function is named `ToSeq` in compiled assemblies. If you are accessing the 
 
 The following code shows how to use `Array.toSeq`.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet69.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet69.fs)]
 
 **Output**
 

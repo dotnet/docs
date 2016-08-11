@@ -56,7 +56,7 @@ This function is named `Map` in compiled assemblies. If you are accessing the fu
 
 The following example demonstrates the use of `List.map`.
 
-[!code-fsharp[Main](snippets/fssamples101/snippet3002.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssamples101/snippet3002.fs)]
 
 ### Output
 
@@ -68,7 +68,7 @@ Tupling up using map = [(1, 1); (2, 2); (3, 3); (4, 4)]
 
 The next example demonstrates the use of `List.map` to transform data into a different format.
 
-[!code-fsharp[Main](snippets/fssamples101/snippet1004.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssamples101/snippet1004.fs)]
 
 ### Output
 

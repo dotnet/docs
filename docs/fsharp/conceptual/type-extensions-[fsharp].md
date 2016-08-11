@@ -49,13 +49,13 @@ If multiple intrinsic type extensions exist for one type, all members must be un
 
 In the following example, a type in a module has an intrinsic type extension. To client code outside the module, the type extension appears as a regular member of the type in all respects.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet3701.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet3701.fs)]
 
 You can use intrinsic type extensions to separate the definition of a type into sections. This can be useful in managing large type definitions, for example, to keep compiler-generated code and authored code separate or to group together code created by different people or associated with different functionality.
 
 In the following example, an optional type extension extends the `System.Int32` type with an extension method `FromString` that calls the static member `Parse`. The `testFromString` method demonstrates that the new member is called just like any instance member.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet3702.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet3702.fs)]
 
 The new instance member will appear like any other method of the `Int32` type in IntelliSense, but only when the module that contains the extension is open or otherwise in scope.
 

@@ -44,7 +44,7 @@ Returns an asynchronous computation that will sleep for the given time.
 
 The following code example shows how to use `Async.Sleep` to simulate computations that run for specific durations.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet6.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsasyncapis/snippet6.fs)]
 
 **Sample Output**
 

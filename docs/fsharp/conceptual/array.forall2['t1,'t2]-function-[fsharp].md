@@ -58,7 +58,7 @@ This function is named `ForAll2` in compiled assemblies. If accessing the functi
 
 The following example shows the use of `Array.forall2` to test the equality of all the elements in two arrays.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet242.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet242.fs)]
 
 ```
 true

@@ -30,11 +30,11 @@ In the previous syntax, the identifiers are names for partitions of the input da
 
 As an example, consider the following active pattern with an argument.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet5001.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet5001.fs)]
 
 You can use the active pattern in a pattern matching expression, as in the following example.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet5002.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet5002.fs)]
 
 The output of this program is as follows:
 
@@ -46,7 +46,7 @@ The output of this program is as follows:
 
 Another use of active patterns is to decompose data types in multiple ways, such as when the same underlying data has various possible representations. For example, a `Color` object could be decomposed into an RGB representation or an HSB representation.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet5003.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet5003.fs)]
 
 The output of the above program is as follows:
 
@@ -76,7 +76,7 @@ The resulting pattern matching expressions enable data to be written in a conven
 ## Partial Active Patterns
 Sometimes, you need to partition only part of the input space. In that case, you write a set of partial patterns each of which match some inputs but fail to match other inputs. Active patterns that do not always produce a value are called *partial active patterns*; they have a return value that is an option type. To define a partial active pattern, you use a wildcard character (_) at the end of the list of patterns inside the banana clips. The following code illustrates the use of a partial active pattern.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet5004.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet5004.fs)]
 
 The output of the previous example is as follows:
 
@@ -90,7 +90,7 @@ Something else : Not matched.
 
 When using partial active patterns, sometimes the individual choices can be disjoint or mutually exclusive, but they need not be. In the following example, the pattern Square and the pattern Cube are not disjoint, because some numbers are both squares and cubes, such as 64. The following program prints out all integers up to 1000000 that are both squares and cubes.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet5005.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet5005.fs)]
 
 The output is as follows:
 
@@ -110,7 +110,7 @@ The output is as follows:
 ## Parameterized Active Patterns
 Active patterns always take at least one argument for the item being matched, but they may take additional arguments as well, in which case the name *parameterized active pattern* applies. Additional arguments allow a general pattern to be specialized. For example, active patterns that use regular expressions to parse strings often include the regular expression as an extra parameter, as in the following code, which also uses the partial active pattern `Integer` defined in the previous code example. In this example, strings that use regular expressions for various date formats are given to customize the general ParseRegex active pattern. The Integer active pattern is used to convert the matched strings into integers that can be passed to the DateTime constructor.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet5006.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet5006.fs)]
 
 The output of the previous code is as follows:
 

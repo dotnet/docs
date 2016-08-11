@@ -47,7 +47,7 @@ This function is named `OfList` in compiled assemblies. If you are accessing the
 
 ## Example
 
-[!code-fsharp[Main](snippets/fssequences/snippet61.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet61.fs)]
 
 **F# Interactive Output**
 

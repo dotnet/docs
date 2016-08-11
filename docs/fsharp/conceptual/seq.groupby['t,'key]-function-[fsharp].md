@@ -57,7 +57,7 @@ This function is named `GroupBy` in compiled assemblies. If you are accessing th
 
 The following example demonstrates the use of `Seq.groupBy` to group the odd and even numbers in a sequence into two separate sequences.
 
-[!code-fsharp[Main](snippets/fssequences/snippet21.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet21.fs)]
 
 **Output**
 

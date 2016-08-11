@@ -66,7 +66,7 @@ The function result.
 
 The following example demonstrates the use of the `|||>` operator.
 
-[!code-fsharp[Main](snippets/fsoperators/snippet3.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsoperators/snippet3.fs)]
 
 ```
 ("abc", "def", "ghi") |||> append4 gives  "abc.def.ghi"**

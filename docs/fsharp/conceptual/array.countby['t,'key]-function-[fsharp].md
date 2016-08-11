@@ -58,7 +58,7 @@ This function is named `CountBy` in compiled assemblies. If you are accessing th
 
 The following example demonstrates the use of Array.countBy to determine the number of elements in an array that are odd or even.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet115.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsarrays/snippet115.fs)]
 
 **Output**
 ```

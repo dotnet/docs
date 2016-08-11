@@ -60,7 +60,7 @@ This function is named `Choose` in compiled assemblies. If you are accessing the
 
 The following code example demonstrates the use of `Seq.choose` to select elements from a sequence by using a lambda expression that uses pattern matching to return an option type.
 
-[!code-fsharp[Main](snippets/fssamples101/snippet1008.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssamples101/snippet1008.fs)]
 
 ```fsharp
 numbers = seq [1; 2; 3; 4; ...]

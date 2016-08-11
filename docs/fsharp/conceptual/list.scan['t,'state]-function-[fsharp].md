@@ -60,7 +60,7 @@ This function is named `Scan` in compiled assemblies. If you are accessing the f
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet54.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslists/snippet54.fs)]
 
 **Output**
 

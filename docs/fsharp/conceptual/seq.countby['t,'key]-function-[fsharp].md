@@ -58,7 +58,7 @@ This function is named `CountBy` in compiled assemblies. If you are accessing th
 
 The following example demonstrates the use of `Seq.countBy` to determine the number of elements in a sequence that are odd or even.
 
-[!code-fsharp[Main](snippets/fssequences/snippet20.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssequences/snippet20.fs)]
 
 **Output**
 ```

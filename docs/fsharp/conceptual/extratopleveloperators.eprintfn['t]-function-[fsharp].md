@@ -39,7 +39,7 @@ This function is named `PrintFormatLineToError` in compiled assemblies. If you a
 
 ## Example
 
-[!code-fsharp[Main](snippets/fscorelib2/snippet3.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fscorelib2/snippet3.fs)]
 
 **Output**
 

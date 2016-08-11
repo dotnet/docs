@@ -60,7 +60,7 @@ module Map
 
 The following code example uses functions in the Map module to create a histogram of the occurrences of particular Unicode characters using a [Microsoft.FSharp.Collections.Map](https://msdn.microsoft.com/library/975316ea-55e3-4987-9994-90897ad45664).
 
-[!code-fsharp[Main](snippets/fssamples101/snippet2002.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fssamples101/snippet2002.fs)]
 
 **Output:**
 

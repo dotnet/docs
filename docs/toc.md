@@ -81,7 +81,7 @@
 ### [Asynchronous and Concurrent Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/index.md)
 #### [Asynchronous Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
 
-## [Using F# inVisual Studio](fsharp/tutorials/using-fsharp-in-visual-studio/index.md)
+## [Using F# in Visual Studio](fsharp/tutorials/using-fsharp-in-visual-studio/index.md)
 ### [Visual F# Development Environment Features](fsharp/tutorials/using-fsharp-in-visual-studio/visual-fsharp-development-environment-features.md)
 ### [Configuring Projects](fsharp/tutorials/using-fsharp-in-visual-studio/configuring-projects.md)
 ### [Targeting Older Versions of .NET](fsharp/tutorials/using-fsharp-in-visual-studio/targeting-older-versions-of-net.md)

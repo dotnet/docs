@@ -1,13 +1,14 @@
+Param([string]$serverAddress)
+Param([string]$vmName)
+Param([string]$userName)
+Param([string]$apiKey)
+
 # ---------------------------------------------------
 # Script used to provision Windows Server 2012 VMs
 # for .NET sample testing.
 # Originally referenced here: https://gist.github.com/snallami/5aa9ea2c57836a3b3635
 # Modified by Den Delimarsky (dendeli)
 # ---------------------------------------------------
-Param([string]$serverAddress)
-Param([string]$vmName)
-Param([string]$userName)
-Param([string]$apiKey)
 
 Set-ExecutionPolicy Unrestricted
 

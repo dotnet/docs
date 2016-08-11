@@ -20,7 +20,7 @@ This topic describes the `try...with` expression, the expression that is used fo
 
 ```fsharp
 try
-expression1
+    expression1
 with
 | pattern1 -> expression2
 | pattern2 -> expression3
@@ -56,12 +56,12 @@ The following code examples illustrate the use of the various exception handler 
 The `try...with` construct is a separate expression from the `try...finally` expression. Therefore, if your code requires both a `with` block and a `finally` block, you will have to nest the two expressions.
 
 >[!NOTE] 
-You can use `try...with` in asynchronous workflows and other computation expressions, in which case a customized version of the `try...with` expression is used. For more information, see [Asynchronous Workflows &#40;F&#35;&#41;](Asynchronous-Workflows-%5BFSharp%5D.md), and [Computation Expressions &#40;F&#35;&#41;](Computation-Expressions-%5BFSharp%5D.md).
+You can use `try...with` in asynchronous workflows and other computation expressions, in which case a customized version of the `try...with` expression is used. For more information, see [Asynchronous Workflows](../asynchronous-workflows.md), and [Computation Expressions](../computation-expressions/md).
 
 
 ## See Also
-[Exception Handling &#40;F&#35;&#41;](Exception-Handling-%5BFSharp%5D.md)
+[Exception Handling](index.md)
 
-[Exception Types &#40;F&#35;&#41;](Exception-Types-%5BFSharp%5D.md)
+[Exception Types](exception-types.md)
 
-[Exceptions: The try...finally Expression &#40;F&#35;&#41;](Exceptions-The-try...finally-Expression-%5BFSharp%5D.md)
+[Exceptions: The `try...finally` Expression](the-try-finally-expression.md)

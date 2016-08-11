@@ -38,14 +38,14 @@ System.ArgumentException: Month parameter out of range.
 ```
 
 ## See Also
-[Exception Handling &#40;F&#35;&#41;](Exception-Handling-%5BFSharp%5D.md)
+[Exception Handling](index.md)
 
-[Exception Types &#40;F&#35;&#41;](Exception-Types-%5BFSharp%5D.md)
+[Exception Types](exception-types.md)
 
-[Exceptions: The try...with Expression &#40;F&#35;&#41;](Exceptions-The-try...with-Expression-%5BFSharp%5D.md)
+[Exceptions: The `try...with` Expression](the-try-with-expression.md)
 
-[Exceptions: The try...finally Expression &#40;F&#35;&#41;](Exceptions-The-try...finally-Expression-%5BFSharp%5D.md)
+[Exceptions: The `try...finally` Expression](the-try-finally-expression.md)
 
-[Exceptions: the raise Function &#40;F&#35;&#41;](Exceptions-the-raise-Function-%5BFSharp%5D.md)
+[Exceptions: the `raise` Function](the-raise-function.md)
 
-[Exceptions: The failwith Function &#40;F&#35;&#41;](Exceptions-The-failwith-Function-%5BFSharp%5D.md)
+[Exceptions: The `failwith` Function](the-failwith-function.md)

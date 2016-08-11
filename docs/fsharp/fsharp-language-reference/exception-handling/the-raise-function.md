@@ -36,14 +36,14 @@ The `raise` function can also be used to raise .NET exceptions, as shown in the 
 [!code-fsharp[Main](../../../../samples/snippets/fslangref2/snippet5802.fs)]
     
 ## See Also
-[Exception Handling &#40;F&#35;&#41;](Exception-Handling-%5BFSharp%5D.md)
+[Exception Handling](index.md)
 
-[Exception Types &#40;F&#35;&#41;](Exception-Types-%5BFSharp%5D.md)
+[Exception Types](exception-types.md)
 
-[Exceptions: The try...with Expression &#40;F&#35;&#41;](Exceptions-The-try...with-Expression-%5BFSharp%5D.md)
+[Exceptions: The `try...with` Expression](the-try...with-expression.md)
 
-[Exceptions: The try...finally Expression &#40;F&#35;&#41;](Exceptions-The-try...finally-Expression-%5BFSharp%5D.md)
+[Exceptions: The `try...finally` Expression](the-try-finally-expression.md)
 
-[Exceptions: The failwith Function &#40;F&#35;&#41;](Exceptions-The-failwith-Function-%5BFSharp%5D.md)
+[Exceptions: The `failwith` Function](the-failwith-function.md)
 
-[Exceptions: The invalidArg Function &#40;F&#35;&#41;](Exceptions-The-invalidArg-Function-%5BFSharp%5D.md)
+[Exceptions: The `invalidArg` Function](the-invalidArg-function.md)

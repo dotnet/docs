@@ -20,9 +20,9 @@ The `try...finally` expression enables you to execute clean-up code even if a bl
 
 ```fsharp
 try
-expression1
+    expression1
 finally
-expression2
+    expression2
 ```
 
 ## Remarks
@@ -47,10 +47,10 @@ Note that the `try...with` construct is a separate construct from the `try...fin
 
 [!code-fsharp[Main](../../../../samples/snippets/fslangref2/snippet5702.fs)]
 
-In the context of computation expressions, including sequence expressions and asynchronous workflows, **try...finally** expressions can have a custom implementation. For more information, see [Computation Expressions &#40;F&#35;&#41;](Computation-Expressions-%5BFSharp%5D.md).
+In the context of computation expressions, including sequence expressions and asynchronous workflows, **try...finally** expressions can have a custom implementation. For more information, see [Computation Expressions](../computation-expressions.md).
 
 
 ## See Also
-[Exception Handling &#40;F&#35;&#41;](Exception-Handling-%5BFSharp%5D.md)
+[Exception Handling](index.md)
 
-[Exceptions: The try...with Expression &#40;F&#35;&#41;](Exceptions-The-try...with-Expression-%5BFSharp%5D.md)
+[Exceptions: The `try...with` Expression](the-try-with-expression.md)

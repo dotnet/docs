@@ -34,9 +34,9 @@ The following types can be used with bitwise operators: `byte`, `sbyte`, `int16`
 
 
 ## See Also
-[Symbol and Operator Reference &#40;F&#35;&#41;](Symbol-and-Operator-Reference-%5BFSharp%5D.md)
+[Symbol and Operator Reference](index.md)
 
-[Arithmetic Operators &#40;F&#35;&#41;](Arithmetic-Operators-%5BFSharp%5D.md)
+[Arithmetic Operators](arithmetic-operators.md)
 
-[Boolean Operators &#40;F&#35;&#41;](Boolean-Operators-%5BFSharp%5D.md)
+[Boolean Operators](boolean-operators.md)
 

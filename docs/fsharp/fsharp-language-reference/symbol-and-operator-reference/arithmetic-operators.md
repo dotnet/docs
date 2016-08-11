@@ -20,12 +20,12 @@ The following table summarizes the binary arithmetic operators that are availabl
 
 |Binary operator|Notes|
 |---------------|-----|
-|**+** (addition, plus)|Unchecked. Possible overflow condition when numbers are added together and the sum exceeds the maximum absolute value supported by the type.|
-|**-** (subtraction, minus)|Unchecked. Possible underflow condition when unsigned types are subtracted, or when floating-point values are too small to be represented by the type.|
-|**&#42;** (multiplication, times)|Unchecked. Possible overflow condition when numbers are multiplied and the product exceeds the maximum absolute value supported by the type.|
-|**/** (division, divided by)|Division by zero causes a [DivideByZeroException](https://msdn.microsoft.com/library/system.dividebyzeroexception.aspx) for integral types. For floating-point types, division by zero gives you the special floating-point values `+Infinity` or `-Infinity`. There is also a possible underflow condition when a floating-point number is too small to be represented by the type.|
-|**%** (modulus, mod)|Returns the remainder of a division operation. The sign of the result is the same as the sign of the first operand.|
-|**&#42;&#42;** (exponentiation, to the power of)|Possible overflow condition when the result exceeds the maximum absolute value for the type.<br /><br />The exponentiation operator works only with floating-point types.|
+|`+` (addition, plus)|Unchecked. Possible overflow condition when numbers are added together and the sum exceeds the maximum absolute value supported by the type.|
+|`-` (subtraction, minus)|Unchecked. Possible underflow condition when unsigned types are subtracted, or when floating-point values are too small to be represented by the type.|
+|`*` (multiplication, times)|Unchecked. Possible overflow condition when numbers are multiplied and the product exceeds the maximum absolute value supported by the type.|
+|`/` (division, divided by)|Division by zero causes a [DivideByZeroException](https://msdn.microsoft.com/library/system.dividebyzeroexception.aspx) for integral types. For floating-point types, division by zero gives you the special floating-point values `+Infinity` or `-Infinity`. There is also a possible underflow condition when a floating-point number is too small to be represented by the type.|
+|`%` (modulus, mod)|Returns the remainder of a division operation. The sign of the result is the same as the sign of the first operand.|
+|`**` (exponentiation, to the power of)|Possible overflow condition when the result exceeds the maximum absolute value for the type.<br /><br />The exponentiation operator works only with floating-point types.|
 
 ## Summary of Unary Arithmetic Operators
 The following table summarizes the unary arithmetic operators that are available for integral and floating-point types.
@@ -33,8 +33,8 @@ The following table summarizes the unary arithmetic operators that are available
 
 |Unary operator|Notes|
 |--------------|-----|
-|**+** (positive)|Can be applied to any arithmetic expression. Does not change the sign of the value.|
-|**-** (negation, negative)|Can be applied to any arithmetic expression. Changes the sign of the value.|
+|`+` (positive)|Can be applied to any arithmetic expression. Does not change the sign of the value.|
+|`-` (negation, negative)|Can be applied to any arithmetic expression. Changes the sign of the value.|
 The behavior at overflow or underflow for integral types is to wrap around. This causes an incorrect result. Integer overflow is a potentially serious problem that can contribute to security issues when software is not written to account for it. If this is a concern for your application, consider using the checked operators in `Microsoft.FSharp.Core.Operators.Checked`.
 
 
@@ -47,12 +47,12 @@ Floating-point numbers should never be directly compared for equality, because t
 
 |Operator|Notes|
 |--------|-----|
-|**=** (equality, equals)|This is not an assignment operator. It is used only for comparison. This is a generic operator.|
-|**&gt;** (greater than)|This is a generic operator.|
-|**&lt;** (less than)|This is a generic operator.|
-|**&gt;=** (greater than or equals)|This is a generic operator.|
-|**&lt;=** (less than or equals)|This is a generic operator.|
-|**&lt;&gt;** (not equal)|This is a generic operator.|
+|`=` (equality, equals)|This is not an assignment operator. It is used only for comparison. This is a generic operator.|
+|`>` (greater than)|This is a generic operator.|
+|`<` (less than)|This is a generic operator.|
+|`>=` (greater than or equals)|This is a generic operator.|
+|`<=` (less than or equals)|This is a generic operator.|
+|`<>` (not equal)|This is a generic operator.|
 
 ## Overloaded and Generic Operators
 All of the operators discussed in this topic are defined in the **Microsoft.FSharp.Core.Operators** namespace. Some of the operators are defined by using statically resolved type parameters. This means that there are individual definitions for each specific type that works with that operator. All of the unary and binary arithmetic and bitwise operators are in this category. The comparison operators are generic and therefore work with any type, not just primitive arithmetic types. Discriminated union and record types have their own custom implementations that are generated by the F# compiler. Class types use the method [Equals](https://msdn.microsoft.com/library/bsc2ak47.aspx).
@@ -66,10 +66,10 @@ The use of an operator in an expression constrains type inference on that operat
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet3501.fs)]
     
 ## See Also
-[Symbol and Operator Reference &#40;F&#35;&#41;](Symbol-and-Operator-Reference-%5BFSharp%5D.md)
+[Symbol and Operator Reference](index.md)
 
-[Operator Overloading &#40;F&#35;&#41;](Operator-Overloading-%5BFSharp%5D.md)
+[Operator Overloading](operator-overloading.md)
 
-[Bitwise Operators &#40;F&#35;&#41;](Bitwise-Operators-%5BFSharp%5D.md)
+[Bitwise Operators](bitwise-operators.md)
 
-[Boolean Operators &#40;F&#35;&#41;](Boolean-Operators-%5BFSharp%5D.md)
+[Boolean Operators](boolean-operators.md)

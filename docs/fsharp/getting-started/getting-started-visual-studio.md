@@ -164,4 +164,4 @@ For more information about functional programming and additional examples, see [
 
 [F# Language Reference](../fsharp-language-reference/index.md)
 
-[Functions as First-Class Values](introduction-to-functional-programming/functions-as-first-class-values.md)
+[Functions as First-Class Values](../introduction-to-functional-programming/functions-as-first-class-values.md)

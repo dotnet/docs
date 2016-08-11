@@ -145,7 +145,7 @@ To verify that the function still works as it did before, try the original test 
 [!code-fsharp[Main](../../../samples/snippets/fscontour/snippet41.fs)]
     
 >[!NOTE] 
-You can restrict currying by enclosing parameters in tuples. For more information, see "Parameter Patterns" in [Parameters and Arguments](fsharp-language-reference/parameters-and-arguments.md).
+You can restrict currying by enclosing parameters in tuples. For more information, see "Parameter Patterns" in [Parameters and Arguments](../fsharp-language-reference/parameters-and-arguments.md).
 
 The following example uses implicit currying to write a shorter version of `makeGame`. The details of how `makeGame` constructs and returns the `game` function are less explicit in this format, but you can verify by using the original test cases that the result is the same.
 

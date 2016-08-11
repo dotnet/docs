@@ -476,11 +476,11 @@ INSERT INTO Table3 (Id, Name, Data)
 
 
 ## See Also
-[Type Providers](Type-Providers.md)
+[Type Providers](index.md)
 
 [SqlDataConnection Type Provider](SqlDataConnection-Type-Provider-%5BFSharp%5D.md)
 
-[Walkthrough: Generating F@ Types from a DBML File](generating-fsharp-types-from-dbml.md)
+[Walkthrough: Generating F# Types from a DBML File](generating-fsharp-types-from-dbml.md)
 
 [Query Expressions](../../fsharp-language-reference/query-expressions.md)
 

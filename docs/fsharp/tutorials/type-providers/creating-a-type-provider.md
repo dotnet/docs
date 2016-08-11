@@ -1217,4 +1217,4 @@ You might find the following tips helpful during the development process.
 
 
 ## See Also
-[Type Providers](Type-Providers.md)
+[Type Providers](index.md)

@@ -1,11 +1,13 @@
-FROM microsoft/dotnet:onbuild
+FROM microsoft/dotnet:latest
 
-RUN printf "deb http://ftp.us.debian.org/debian jessie main\n" >> /etc/apt/sources.list
-RUN apt-get -qq update && apt-get install -qqy sqlite3 libsqlite3-dev && rm -rf /var/lib/apt/lists/*
+COPY . /app
 
-COPY . /dotnetapp
-WORKDIR /dotnetapp
+WORKDIR /app
 
 RUN ["dotnet", "restore"]
-EXPOSE 80
-ENTRYPOINT ["dotnet", "run"]
+
+RUN ["dotnet", "build"]
+
+EXPOSE 5000/tcp
+
+ENTRYPOINT ["dotnet", "run", "--server.urls", "http://0.0.0.0:5000"]

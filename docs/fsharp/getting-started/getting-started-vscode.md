@@ -1,3 +1,3 @@
 # Getting Started with F# in Visual Studio Code with Ionide
 
-TODO
+> [!NOTE] This is still in-progress.

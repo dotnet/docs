@@ -4,10 +4,10 @@
 # Originally referenced here: https://gist.github.com/snallami/5aa9ea2c57836a3b3635
 # Modified by Den Delimarsky (dendeli)
 # ---------------------------------------------------
-param([String]$serverAddress="NONE")
-param([String]$vmName="NONE")
-param([String]$userName="NONE")
-param([String]$apiKey="NONE")
+Param([string]$serverAddress)
+Param([string]$vmName)
+Param([string]$userName)
+Param([string]$apiKey)
 
 Set-ExecutionPolicy Unrestricted
 

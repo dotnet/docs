@@ -13,7 +13,7 @@ ms.assetid: bee69edc-d5ae-46bd-8b56-f02d97725d0d
 
 # let Bindings
 
-A *binding* associates an identifier with a value or function. You use the **let** keyword to bind a name to a value or function.
+A *binding* associates an identifier with a value or function. You use the `let` keyword to bind a name to a value or function.
 
 ## Syntax
 
@@ -56,11 +56,11 @@ In general, parameters are patterns, such as a tuple pattern:
 
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet1107.fs)]
 
-A `let` binding expression evaluates to the value of the last expression. Therefore, in the following code example, the value of `result` is computed from `100 &#42; function3 (1, 2)`, which evaluates to `300`.
+A `let` binding expression evaluates to the value of the last expression. Therefore, in the following code example, the value of `result` is computed from `100 * function3 (1, 2)`, which evaluates to `300`.
 
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet1109.fs)]
 
-For more information, see [Functions &#40;F&#35;&#41;](Functions-%5BFSharp%5D.md).
+For more information, see [Functions](index.md).
 
 ## Type Annotations
 
@@ -70,7 +70,7 @@ You can specify types for parameters by including a colon (:) followed by a type
 
 When there are no explicit type parameters, type inference is used to determine the types of parameters of functions. This can include automatically generalizing the type of a parameter to be generic.
 
-For more information, see [Automatic Generalization &#40;F&#35;&#41;](Automatic-Generalization-%5BFSharp%5D.md) and [Type Inference &#40;F&#35;&#41;](Type-Inference-%5BFSharp%5D.md).
+For more information, see [Automatic Generalization](Automatic-Generalization.md) and [Type Inference](Type-Inference.md).
 
 ## let Bindings in Classes
 
@@ -78,11 +78,11 @@ A `let` binding can appear in a class type but not in a structure or record type
 
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet1110.fs)]
 
-The scopes of `field1` and `field2` are limited to the type in which they are declared. For more information, see [let Bindings in Classes &#40;F&#35;&#41;](let-Bindings-in-Classes-%5BFSharp%5D.md) and [Classes &#40;F&#35;&#41;](Classes-%5BFSharp%5D.md).
+The scopes of `field1` and `field2` are limited to the type in which they are declared. For more information, see [`let` Bindings in Classes](../members/let-bindings-in-classes.md) and [Classes](../classes.md).
 
 ## Type Parameters in let Bindings
 
-A `let` binding at the module level, in a type, or in a computation expression can have explicit type parameters. A let binding in an expression, such as within a function definition, cannot have type parameters. For more information, see [Generics &#40;F&#35;&#41;](Generics-%5BFSharp%5D.md).
+A `let` binding at the module level, in a type, or in a computation expression can have explicit type parameters. A let binding in an expression, such as within a function definition, cannot have type parameters. For more information, see [Generics](../generics/index.md).
 
 ## Attributes on let Bindings
 
@@ -114,10 +114,10 @@ let function3 x =
 
 Some modules have the attribute [RequireQualifiedAccess](https://msdn.microsoft.com/library/8b9b6ade-0471-4413-ac5d-638cd0de5f15), which means that the functions that they expose must be qualified with the name of the module. For example, the F# List module has this attribute.
 
-For more information on modules and access control, see [Modules &#40;F&#35;&#41;](Modules-%5BFSharp%5D.md) and [Access Control &#40;F&#35;&#41;](Access-Control-%5BFSharp%5D.md).
+For more information on modules and access control, see [../Modules](modules.md) and [Access Control](../access-control.md).
 
 ## See Also
 
-[Functions &#40;F&#35;&#41;](Functions-%5BFSharp%5D.md)
+[Functions](index.md)
 
-[let Bindings in Classes &#40;F&#35;&#41;](let-Bindings-in-Classes-%5BFSharp%5D.md)
+[`let` Bindings in Classes](../members/let-bindings-in-classes.md)

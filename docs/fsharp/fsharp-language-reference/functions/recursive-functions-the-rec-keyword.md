@@ -53,4 +53,4 @@ The following example shows two mutually recursive functions.
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet4002.fs)]
 
 ## See Also
-[Functions &#40;F&#35;&#41;](Functions-%5BFSharp%5D.md)
+[Functions](index.md)

@@ -13,7 +13,7 @@ ms.assetid: e5d3565c-d7cc-433f-a619-886ed92523a7
 
 # Lambda Expressions: The fun Keyword (F#)
 
-The **fun** keyword is used to define a lambda expression, that is, an anonymous function.
+The `fun` keyword is used to define a lambda expression, that is, an anonymous function.
 
 
 ## Syntax
@@ -23,7 +23,7 @@ fun parameter-list -> expression
 ```
 
 ## Remarks
-The *parameter-list* typically consists of names and, optionally, types of parameters. More generally, the *parameter-list* can be composed of any F# patterns. For a full list of possible patterns, see [Pattern Matching &#40;F&#35;&#41;](Pattern-Matching-%5BFSharp%5D.md). Lists of valid parameters include the following examples.
+The *parameter-list* typically consists of names and, optionally, types of parameters. More generally, the *parameter-list* can be composed of any F# patterns. For a full list of possible patterns, see [Pattern Matching](../pattern-matching.md). Lists of valid parameters include the following examples.
 
 ```fsharp
 // Lambda expressions with parameter lists.
@@ -48,4 +48,4 @@ Lambda expressions are especially useful when you want to perform operations on 
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet302.fs)]
     
 ## See Also
-[Functions &#40;F&#35;&#41;](Functions-%5BFSharp%5D.md)
+[Functions](index.md)

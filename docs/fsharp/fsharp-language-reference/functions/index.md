@@ -69,7 +69,7 @@ However, the compiler will attempt to make the function as generic as possible. 
 let f x = (x, x)
 ```
 
-The function creates a tuple from one argument of any type. Because the type is not specified, the function can be used with any argument type. For more information, see [Automatic Generalization &#40;F&#35;&#41;](Automatic-Generalization-%5BFSharp%5D.md).
+The function creates a tuple from one argument of any type. Because the type is not specified, the function can be used with any argument type. For more information, see [Automatic Generalization](../generics/automatic-generalization.md).
 
 
 ## Function Bodies
@@ -77,7 +77,7 @@ A function body can contain definitions of local variables and functions. Such v
 
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet103.fs)]
 
-For more information, see [Code Formatting Guidelines &#40;F&#35;&#41;](Code-Formatting-Guidelines-%5BFSharp%5D.md) and [Verbose Syntax &#40;F&#35;&#41;](Verbose-Syntax-%5BFSharp%5D.md).
+For more information, see [Code Formatting Guidelines](../code-formatting-guidelines.md) and [Verbose Syntax](../verbose-syntax.md).
 
 
 ## Return Values
@@ -140,7 +140,7 @@ A *lambda expression* is an unnamed function. In the previous examples, instead 
 
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet112.fs)]
 
-You define lambda expressions by using the `fun` keyword. A lambda expression resembles a function definition, except that instead of the `=` token, the `->` token is used to separate the argument list from the function body. As in a regular function definition, the argument types can be inferred or specified explicitly, and the return type of the lambda expression is inferred from the type of the last expression in the body. For more information, see [Lambda Expressions: The fun Keyword &#40;F&#35;&#41;](Lambda-Expressions-The-fun-Keyword-%5BFSharp%5D.md).
+You define lambda expressions by using the `fun` keyword. A lambda expression resembles a function definition, except that instead of the `=` token, the `->` token is used to separate the argument list from the function body. As in a regular function definition, the argument types can be inferred or specified explicitly, and the return type of the lambda expression is inferred from the type of the last expression in the body. For more information, see [Lambda Expressions: The `fun` Keyword](../functions/lambda-expressions-the-fun-keyword.md).
 
 
 ## Function Composition and Pipelining
@@ -197,10 +197,10 @@ let result4 = Pipeline2 2
 ```
 
 ## Overloading Functions
-You can overload methods of a type but not functions. For more information, see [Methods &#40;F&#35;&#41;](Methods-%5BFSharp%5D.md).
+You can overload methods of a type but not functions. For more information, see [Methods](../members/methods.md).
 
 
 ## See Also
-[Values &#40;F&#35;&#41;](Values-%5BFSharp%5D.md)
+[Values](../values/index.md)
 
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](../index.md)

@@ -32,7 +32,7 @@ Assume you have a native C++ DLL that contains the following exported function.
 #include <stdio.h>
 extern "C" void __declspec(dllexport) HelloWorld()
 {
-printf("Hello world, invoked by F#!\n");
+    printf("Hello world, invoked by F#!\n");
 }
 ```
 
@@ -53,4 +53,4 @@ Interoperability with native code is referred to as *platform invoke* and is a f
 
 ## See Also
 
-[Functions &#40;F&#35;&#41;](Functions-%5BFSharp%5D.md)
+[Functions](index.md)

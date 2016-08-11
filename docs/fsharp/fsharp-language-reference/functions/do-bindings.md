@@ -13,7 +13,7 @@ ms.assetid: 4c1057a3-3aa1-4b64-b46a-25ffe33f0be9
 
 # do Bindings
 
-A `do` binding is used to execute code without defining a function or value. Also, do bindings can be used in classes, see [do Bindings in Classes &#40;F&#35;&#41;](do-Bindings-in-Classes-%5BFSharp%5D.md).
+A `do` binding is used to execute code without defining a function or value. Also, do bindings can be used in classes, see [`do` Bindings in Classes](../members/do-bindings-in-classes.md).
 
 
 ## Syntax
@@ -31,7 +31,7 @@ Attributes can be applied to a top-level `do` binding. For example, if your prog
 [!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet201.fs)]
     
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](../index.md)
 
-[Functions &#40;F&#35;&#41;](Functions-%5BFSharp%5D.md)
+[Functions](index.md)
 

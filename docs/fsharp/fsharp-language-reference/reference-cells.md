@@ -31,7 +31,7 @@ You can dereference a reference cell by using the `!` (bang) operator.
 
 The following code example illustrates the declaration and use of reference cells.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2201.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2201.fs)]
 
 The output is **50**.
 
@@ -65,7 +65,7 @@ There are several ways to access the underlying value. The value returned by the
 
 Both the `Value` property and the `contents` field are assignable values. Therefore, you can use these to either access or change the underlying value, as shown in the following code.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2203.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2203.fs)]
 
 The output is as follows.
 
@@ -80,7 +80,7 @@ The field `contents` is provided for compatibility with other versions of ML and
 
 The following code illustrates the use of reference cells in parameter passing. The Incrementor type has a method Increment that takes a parameter that includes byref in the parameter type. The byref in the parameter type indicates that callers must pass a reference cell or the address of a typical variable of the specified type, in this case int. The remaining code illustrates how to call Increment with both of these types of arguments, and shows the use of the ref operator on a variable to create a reference cell (ref myDelta1). It then shows the use of the address-of operator (&amp;) to generate an appropriate argument. Finally, the Increment method is called again by using a reference cell that is declared by using a let binding. The final line of code demonstrates the use of the ! operator to dereference the reference cell for printing.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2204.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2204.fs)]
 
 For more information about how to pass by reference, see [Parameters and Arguments &#40;F&#35;&#41;](Parameters-and-Arguments-%5BFSharp%5D.md).
 
@@ -91,13 +91,13 @@ Reference cells and mutable variables can often be used in the same situations. 
 
 The following code example demonstrates the scenario in which you must use a reference cell.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2205.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2205.fs)]
 
 In the previous code, the reference cell `finished` is included in local state, that is, variables that are in the closure are created and used entirely within the expression, in this case a sequence expression. Consider what occurs when the variables are non-local. Closures can also access non-local state, but when this occurs, the variables are copied and stored by value. This process is known as *value semantics*. This means that the values at the time of the copy are stored, and any subsequent changes to the variables are not reflected. If you want to track the changes of non-local variables, or, in other words, if you need a closure that interacts with non-local state by using *reference semantics*, you must use a reference cell.
 
 The following code examples demonstrate the use of reference cells in closures. In this case, the closure results from the partial application of function arguments.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2207.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2207.fs)]
 
 ## See Also
 [F&#35; Language Reference](FSharp-Language-Reference.md)

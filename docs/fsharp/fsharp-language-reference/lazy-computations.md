@@ -31,7 +31,7 @@ To force the computation to be performed, you call the method `Force`. `Force` c
 
 The following code illustrates the use of lazy computation and the use of `Force`. In this code, the type of `result` is `Lazy<int>`, and the `Force` method returns an `int`.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet73011.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet73011.fs)]
 
 Lazy evaluation, but not the `Lazy` type, is also used for sequences. For more information, see [Sequences &#40;F&#35;&#41;](Sequences-%5BFSharp%5D.md).
 

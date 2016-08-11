@@ -19,7 +19,7 @@ This topic describes *code quotations*, a language feature that enables you to g
 ## Quoted Expressions
 A *quoted expression* is an F# expression in your code that is delimited in such a way that it is not compiled as part of your program, but instead is compiled into an object that represents an F# expression. You can mark a quoted expression in one of two ways: either with type information or without type information. If you want to include type information, you use the symbols `<@` and `@>` to delimit the quoted expression. If you do not need type information, you use the symbols `<@@` and `@@>`. The following code shows typed and untyped quotations.
 
-[!code-fsharp[Main](snippets/fslangref3/snippet501.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref3/snippet501.fs)]
 
 Traversing a large expression tree is faster if you do not include type information. The resulting type of an expression quoted with the typed symbols is `Expr<'T>`, where the type parameter has the type of the expression as determined by the F# compiler's type inference algorithm. When you use code quotations without type information, the type of the quoted expression is the non-generic type [Expr](https://msdn.microsoft.com/library/ed6a2caf-69d4-45c2-ab97-e9b3be9bce65). You can call the [Raw](https://msdn.microsoft.com/library/47fb94f1-e77f-4c68-aabc-2b0ba40d59c2) property on the typed `Expr` class to obtain the untyped `Expr` object.
 
@@ -36,7 +36,7 @@ Therefore, the following expression is not valid.
 
 But the following expressions are valid.
 
-[!code-fsharp[Main](snippets/fslangref3/snippet502.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref3/snippet502.fs)]
 
 To use code quotations, you must add an import declaration (by using the `open` keyword) that opens the [Microsoft.FSharp.Quotations](https://msdn.microsoft.com/library/e9ce8a3a-e00c-4190-bad5-cce52ee089b2) namespace.
 
@@ -67,7 +67,7 @@ The following example illustrates the use of code quotations to put F# code into
 
 
 ### Code
-[!code-fsharp[Main](snippets/fslangref3/snippet601.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref3/snippet601.fs)]
     
 ### Output
 
@@ -88,7 +88,7 @@ The code in the other active pattern branches just regenerates the same expressi
 
 
 ### Code
-[!code-fsharp[Main](snippets/fslangref3/snippet701.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref3/snippet701.fs)]
     
 ### Output
 

@@ -31,11 +31,11 @@ The `Invoke` method on the delegate type calls the encapsulated function. Also, 
 
 The following code shows the syntax for creating delegates that represent various methods in a class. Depending on whether the method is a static method or an instance method, and whether it has arguments in the tuple form or the curried form, the syntax for declaring and assigning the delegate is a little different.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet4201.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4201.fs)]
 
 The following code shows some of the different ways you can work with delegates.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet4202.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4202.fs)]
 
 The output of the previous code example is as follows.
 

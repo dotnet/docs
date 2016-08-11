@@ -61,7 +61,7 @@ Instance methods are declared with the `member` keyword and a *self-identifier*,
 
 The following example illustrates the definition and use of a non-abstract instance method.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet3401.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet3401.fs)]
 
 Within instance methods, do not use the self identifier to access fields defined by using let bindings. Use the self identifier when accessing other members and properties.
 
@@ -73,7 +73,7 @@ The example in the next section shows fields declared with the `let` keyword, pr
 
 The following example illustrates the definition and use of static methods. Assume that these method definitions are in the `SomeType` class in the previous section.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet3402.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet3402.fs)]
 
 ## Abstract and Virtual Methods
 The keyword `abstract` indicates that a method has a virtual dispatch slot and might not have a definition in the class. A *virtual dispatch slot* is an entry in an internally maintained table of functions that is used at run time to look up virtual function calls in an object-oriented type. The virtual dispatch mechanism is the mechanism that implements *polymorphism*, an important feature of object-oriented programming. A class that has at least one abstract method without a definition is an *abstract class*, which means that no instances can be created of that class. For more information about abstract classes, see [Abstract Classes &#40;F&#35;&#41;](Abstract-Classes-%5BFSharp%5D.md).
@@ -86,11 +86,11 @@ Regardless of whether a base class implements its abstract methods, derived clas
 
 The following example illustrates an abstract method `Rotate` that has a default implementation, the equivalent of a .NET Framework virtual method.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet3403.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet3403.fs)]
 
 The following example illustrates a derived class that overrides a base class method. In this case, the override changes the behavior so that the method does nothing.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet3404.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet3404.fs)]
 
 ## Overloaded Methods
 Overloaded methods are methods that have identical names in a given type but that have different arguments. In F#, optional arguments are usually used instead of overloaded methods. However, overloaded methods are permitted in the language, provided that the arguments are in tuple form, not curried form.
@@ -98,7 +98,7 @@ Overloaded methods are methods that have identical names in a given type but tha
 ## Example: Properties and Methods
 The following example contains a type that has examples of fields, private functions, properties, and a static method.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet3406.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet3406.fs)]
 
 ## See Also
 [Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md)

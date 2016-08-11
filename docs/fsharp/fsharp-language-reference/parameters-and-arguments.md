@@ -46,15 +46,15 @@ let function2 param1 (param2a, param2b) param3 = ...
 
 Other patterns can also be used in parameter lists, but if the parameter pattern does not match all possible inputs, there might be an incomplete match at run time. The exception `MatchFailureException` is generated when the value of an argument does not match the patterns specified in the parameter list. The compiler issues a warning when a parameter pattern allows for incomplete matches. At least one other pattern is commonly useful for parameter lists, and that is the wildcard pattern. You use the wildcard pattern in a parameter list when you simply want to ignore any arguments that are supplied. The following code illustrates the use of the wildcard pattern in an argument list.
 
-[!code-fsharp[Main](snippets/fsparametersandarguments/snippet3801.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsparametersandarguments/snippet3801.fs)]
 
 The wildcard pattern can be useful whenever you do not need the arguments passed in, such as in the main entry point to a program, when you are not interested in the command-line arguments that are normally supplied as a string array, as in the following code.
 
-[!code-fsharp[Main](snippets/fsparametersandarguments/snippet3802.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsparametersandarguments/snippet3802.fs)]
 
 Other patterns that are sometimes used in arguments are the `as` pattern, and identifier patterns associated with discriminated unions and active patterns. You can use the single-case discriminated union pattern as follows.
 
-[!code-fsharp[Main](snippets/fsparametersandarguments/snippet3803.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsparametersandarguments/snippet3803.fs)]
 
 The output is as follows.
 
@@ -76,17 +76,17 @@ let angle (Polar(_, theta)) = theta
 
 You can use the `as` pattern to store a matched value as a local value, as is shown in the following line of code.
 
-[!code-fsharp[Main](snippets/fsparametersandarguments/snippet3805.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsparametersandarguments/snippet3805.fs)]
 
 Another pattern that is used occasionally is a function that leaves the last argument unnamed by providing, as the body of the function, a lambda expression that immediately performs a pattern match on the implicit argument. An example of this is the following line of code.
 
-[!code-fsharp[Main](snippets/fsparametersandarguments/snippet3804.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsparametersandarguments/snippet3804.fs)]
 
 This code defines a function that takes a generic list and returns `true` if the list is empty, and `false` otherwise. The use of such techniques can make code more difficult to read.
 
 Occasionally, patterns that involve incomplete matches are useful, for example, if you know that the lists in your program have only three elements, you might use a pattern like the following in a parameter list.
 
-[!code-fsharp[Main](snippets/fsparametersandarguments/snippet3806.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsparametersandarguments/snippet3806.fs)]
 
 The use of patterns that have incomplete matches is best reserved for quick prototyping and other temporary uses. The compiler will issue a warning for such code. Such patterns cannot cover the general case of all possible inputs and therefore are not suitable for component APIs.
 
@@ -99,11 +99,11 @@ Named arguments are allowed only for methods, not for `let`-bound functions, fun
 
 The following code example demonstrates the use of named arguments.
 
-[!code-fsharp[Main](snippets/fsparametersandarguments/snippet3807.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsparametersandarguments/snippet3807.fs)]
 
 In a call to a class constructor, you can set the values of properties of the class by using a syntax similar to that of named arguments. The following example shows this syntax.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet3506.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet3506.fs)]
 
 For more information, see [Constructors (F#)](https://msdn.microsoft.com/library/2cd0ed07-d214-4125-8317-4f288af99f05).
 
@@ -114,7 +114,7 @@ You can also use a function `defaultArg`, which sets a default value of an optio
 
 The following example illustrates the use of optional parameters.
 
-[!code-fsharp[Main](snippets/fsparametersandarguments/snippet3808.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsparametersandarguments/snippet3808.fs)]
 
 The output is as follows.
 
@@ -131,11 +131,11 @@ Passing by reference in .NET languages evolved as a way to return more than one 
 
 The following examples illustrate the use of the `byref` keyword. Note that when you use a reference cell as a parameter, you must create a reference cell as a named value and use that as the parameter, not just add the `ref` operator as shown in the first call to `Increment` in the following code. Because creating a reference cell creates a copy of the underlying value, the first call just increments a temporary value.
 
-[!code-fsharp[Main](snippets/fsparametersandarguments/snippet3809.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsparametersandarguments/snippet3809.fs)]
 
 You can use a tuple as a return value to store any `out` parameters in .NET library methods. Alternatively, you can treat the `out` parameter as a `byref` parameter. The following code example illustrates both ways.
 
-[!code-fsharp[Main](snippets/fsparametersandarguments/snippet3810.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsparametersandarguments/snippet3810.fs)]
 
 ## Parameter Arrays
 Occasionally it is necessary to define a function that takes an arbitrary number of parameters of heterogeneous type. It would not be practical to create all the possible overloaded methods to account for all the types that could be used. The .NET platform provides support for such methods through the parameter array feature. A method that takes a parameter array in its signature can be provided with an arbitrary number of parameters. The parameters are put into an array. The type of the array elements determines the parameter types that can be passed to the function. If you define the parameter array with `System.Object` as the element type, then client code can pass values of any type.
@@ -146,7 +146,7 @@ You define a parameter array by using the `ParamArray` attribute. The `ParamArra
 
 The following code illustrates both calling a .NET method that takes a parameter array and the definition of a type in F# that has a method that takes a parameter array.
 
-[!code-fsharp[Main](snippets/fsparametersandarguments2/snippet3811.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsparametersandarguments2/snippet3811.fs)]
 
 When run in a project, the output of the previous code is as follows:
 

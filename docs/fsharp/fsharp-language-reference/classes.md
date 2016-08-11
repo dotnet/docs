@@ -63,7 +63,7 @@ The body of the new constructor must invoke the primary constructor that is spec
 
 The following example illustrates this concept. In the following code, `MyClass` has two constructors, a primary constructor that takes two arguments and another constructor that takes no arguments.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2401.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2401.fs)]
     
 ## let and do Bindings
 
@@ -100,11 +100,11 @@ The self identifier that is declared with the `as` keyword is not initialized un
 
 Generic type parameters are specified in angle brackets (`<` and `>`), in the form of a single quotation mark followed by an identifier. Multiple generic type parameters are separated by commas. The generic type parameter is in scope throughout the declaration. The following code example shows how to specify generic type parameters.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2403.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2403.fs)]
 
 Type arguments are inferred when the type is used. In the following code, the inferred type is a sequence of tuples.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet24031.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet24031.fs)]
     
 ## Specifying Inheritance
 
@@ -122,7 +122,7 @@ You can define static or instance methods, properties, interface implementations
 ## Mutually Recursive Types
 When you define types that reference each other in a circular way, you string together the type definitions by using the `and` keyword. The `and` keyword replaces the `type` keyword on all except the first definition, as follows.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet2404.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2404.fs)]
 
 The output is a list of all the files in the current directory.
 

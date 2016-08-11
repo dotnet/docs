@@ -49,7 +49,7 @@ For a mutable field, the .NET compiled representation is a .NET field.
 
 The following code shows the use of explicit fields and, for comparison, a `let` binding in a class that has a primary constructor. Note that the `let`-bound field `myInt1` is private. When the `let`-bound field `myInt1` is referenced from a member method, the self identifier `this` is not required. But when you are referencing the explicit fields `myInt2` and `myString`, the self identifier is required.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet6701.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fslangref2/snippet6701.fs)]
 
 The output is as follows:
 
@@ -60,13 +60,13 @@ The output is as follows:
 
 The following code shows the use of explicit fields in a class that does not have a primary constructor. In this case, the `DefaultValue` attribute is not required, but all the fields must be initialized in the constructors that are defined for the type.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet6702.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fslangref2/snippet6702.fs)]
 
 The output is `35 22`.
 
 The following code shows the use of explicit fields in a structure. Because a structure is a value type, it automatically has a default constructor that sets the values of its fields to zero. Therefore, the `DefaultValue` attribute is not required.
 
-[!code-fsharp[Main](snippets/fslangref2/snippet6703.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fslangref2/snippet6703.fs)]
 
 The output is `11 xyz`.
 

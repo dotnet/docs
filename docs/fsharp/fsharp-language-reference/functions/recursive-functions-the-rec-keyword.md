@@ -36,7 +36,7 @@ Recursive functions, functions that call themselves, are identified explicitly i
 
 The following code illustrates a recursive function that computes the *n*th Fibonacci number.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet4001.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet4001.fs)]
 
 >[!NOTE]
 In practice, code like that above is wasteful of memory and processor time because it involves the recomputation of previously computed values.
@@ -50,7 +50,7 @@ Sometimes functions are *mutually recursive*, meaning that calls form a circle, 
 
 The following example shows two mutually recursive functions.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet4002.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet4002.fs)]
 
 ## See Also
 [Functions &#40;F&#35;&#41;](Functions-%5BFSharp%5D.md)

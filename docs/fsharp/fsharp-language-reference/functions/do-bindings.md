@@ -28,7 +28,7 @@ Use a `do` binding when you want to execute code independently of a function or 
 
 Attributes can be applied to a top-level `do` binding. For example, if your program uses COM interop, you might want to apply the `STAThread` attribute to your program. You can do this by using an attribute on a `do` binding, as shown in the following code.
 
-[!code-fsharp[Main](snippets/fslangref1/snippet201.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fslangref1/snippet201.fs)]
     
 ## See Also
 [F&#35; Language Reference](FSharp-Language-Reference.md)

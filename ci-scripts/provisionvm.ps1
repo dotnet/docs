@@ -87,7 +87,7 @@ $jar="-jar"
 $jnlpUrl="-jnlpUrl" 
 $serverURL=$serverAddress+"computer/" + $vmName + "/slave-agent.jnlp"
 $jnlpCredentialsFlag="-jnlpCredentials"
-$credentials="$userName:$apiKey"
+$credentials="$userName`:$apiKey"
 
 LogWrite "Will execute this:"
 LogWrite "$java $jar $destSource $jnlpCredentialsFlag $credentials $jnlpUrl $serverURL"

@@ -30,7 +30,7 @@ The following table summarizes the templates that are available for use in F# pr
 |Item templates|File types available in the **Add New Item** dialog box.|<ul><li>F# source file (.fs)<br /></li><li>F# script (.fsx)<br /></li><li>F# signature file (.fsi)<br /></li><li>Configuration file (.config)<br /></li><li>SQL Database Connection (LINQ-to-SQL type provider)<br /></li><li>SQL Database Connection (LINQ to Entities type provider)<br /></li><li>OData Service Connection (LINQ type provider)<br /></li><li>WSDL Service Connection (type provider)<br /></li><li>XML file (.xml)<br /></li><li>Text file<br /></li><ul/>|
 To create an application that can run as a standalone executable, choose the F# Application project type. To create a library (that is, a managed assembly or .DLL file) for use on the Windows desktop platform, choose F# Library. To create a portable library that can be used on any supported platform, choose F# Portable Library. F# Portable Library projects reference a version of FSharp.Core.dll that is appropriate to create an F# library that can be used with applications that run on platforms such as Windows Store apps, the .NET Framework 4.5, Xamarin.iOS and Xamarin.Android.
 
-For more information about the item templates for data access, see [Type Providers](Type-Providers.md).
+For more information about the item templates for data access, see [Type Providers](../tutorials/type-providers/index.md).
 
 The following table summarizes project-properties features supported and not supported in F#. For more information, see [Configuring Projects &#40;F&#35;&#41;](Configuring-Projects-%5BFSharp%5D.md) and [Introduction to the Project Designer](https://msdn.microsoft.com/library/898dd854-c98d-430c-ba1b-a913ce3c73d7).
 
@@ -116,7 +116,7 @@ The following table summarizes the support for F# in Visual Studio tools.
 |Code Metrics|Gathers information about your code, such as line counts.|No|
 |Class View|Provides a type-based view of the code in a project.|No|
 |[Error List Window](https://msdn.microsoft.com/library/33df3b7a.aspx)|Shows a list of errors in code.|Yes|
-|[F&#35; Interactive &#40;fsi.exe&#41; Reference](FSharp-Interactive-%5Bfsi.exe%5D-Reference.md)|Enables you to type (or copy and paste) F# code and run it immediately, independently of the building of your project. The F# Interactive window is a Read, Evaluate, Print Loop (REPL).|Yes|
+|[F# Interactive Reference](../tutorials/fsharp-interactive/fharp-interactive-reference.md)|Enables you to type (or copy and paste) F# code and run it immediately, independently of the building of your project. The F# Interactive window is a Read, Evaluate, Print Loop (REPL).|Yes|
 |Object Browser|Enables you to view the types in an assembly.|F# types as they appear in compiled assemblies do not appear exactly as you author them. You can browse through the compiled representation of F# types, but you cannot view the types as they appear from F#.|
 |[Output Window](https://msdn.microsoft.com/library/3hk6fby3.aspx)|Displays build output.|Yes|
 |Performance analysis|Provides tools for measuring the performance of your code.|Yes|
@@ -128,6 +128,6 @@ The following table summarizes the support for F# in Visual Studio tools.
 |Toolbox|Displays tabs that contain draggable objects such as controls and sections of text or code.|Yes|
 
 ## See Also
-[Using Visual Studio to Write F&#35; Programs](Using-Visual-Studio-to-Write-FSharp-Programs.md)
+[Getting Started with F# in Visual Studio](../getting-started/getting-started-with-visual-studio.md)
 
-[Configuring Projects &#40;F&#35;&#41;](Configuring-Projects-%5BFSharp%5D.md)
+[Configuring Projects](configuring-projects.md)

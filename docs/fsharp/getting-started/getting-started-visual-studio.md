@@ -156,12 +156,12 @@ The following lines are displayed.
 
 
 ## Next Steps
-For more information about functional programming and additional examples, see [Functions as First-Class Values &#40;F&#35;&#41;](Functions-as-First-Class-Values-%5BFSharp%5D.md). For more information about tuples, lists, let expressions, function definitions, classes, members, and many other topics, see [F&#35; Language Reference](FSharp-Language-Reference.md).
+For more information about functional programming and additional examples, see [Functions as First-Class Values](introduction-to-functional-programming/functions-as-first-class-values.md). For more information about tuples, lists, let expressions, function definitions, classes, members, and many other topics, see [F# Language Reference](fsharp-language-reference/index.md).
 
 
 ## See Also
-[Visual F&#35;](Visual-FSharp.md)
+[Visual F#](index.md)
 
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](fSharp-language-reference/index.md)
 
-[Functions as First-Class Values &#40;F&#35;&#41;](Functions-as-First-Class-Values-%5BFSharp%5D.md)
+[Functions as First-Class Values](introduction-to-functional-programming/functions-as-first-class-values.md)

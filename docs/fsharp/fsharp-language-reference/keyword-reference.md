@@ -22,15 +22,15 @@ The following table shows all F# keywords in alphabetical order, together with b
 |Keyword|Link|Description|
 |-------|----|-----------|
 |`abstract`|[Members](members/index.md)<br /><br />[Abstract Classes](abstract-classes.md)|Indicates a method that either has no implementation in the type in which it is declared or that is virtual and has a default implementation.|
-|`and`|[`let` Bindings](functions/let-mindings.md)<br /><br />[Members](members/index.md)<br /><br />[Constraints](generics/constraints.md)|Used in mutually recursive bindings, in property declarations, and with multiple constraints on generic parameters.|
+|`and`|[`let` Bindings](functions/let-bindings.md)<br /><br />[Members](members/index.md)<br /><br />[Constraints](generics/constraints.md)|Used in mutually recursive bindings, in property declarations, and with multiple constraints on generic parameters.|
 |`as`|[Classes](classes.md)<br /><br />[Pattern Matching](Pattern-Matching.md)|Used to give the current class object an object name. Also used to give a name to a whole pattern within a pattern match.|
 |`assert`|[Assertions](assertions.md)|Used to verify code during debugging.|
-|`base`|[Classes](classes.md)<br /><br />[Inheritance](inhertiance.md)|Used as the name of the base class object.|
+|`base`|[Classes](classes.md)<br /><br />[Inheritance](inheritance.md)|Used as the name of the base class object.|
 |`begin`|[Verbose Syntax](verbose-syntax.md)|In verbose syntax, indicates the start of a code block.|
 |`class`|[Classes](classes.md)|In verbose syntax, indicates the start of a class definition.|
 |`default`|[Members](members/index.md)|Indicates an implementation of an abstract method; used together with an abstract method declaration to create a virtual method.|
 |`delegate`|[Delegates](delegates.md)|Used to declare a delegate.|
-|`do`|[do Bindings](do-bindings.md)<br /><br />[Loops: `for...to` Expression](loops-for-to-expression.md)<br /><br />[Loops: `for...in` Expression](loops-for-in-expression.md)<br /><br />[Loops: `while...do` Expression](loops-while-do-expression.md)|Used in looping constructs or to execute imperative code.|
+|`do`|[do Bindings](functions/do-bindings.md)<br /><br />[Loops: `for...to` Expression](loops-for-to-expression.md)<br /><br />[Loops: `for...in` Expression](loops-for-in-expression.md)<br /><br />[Loops: `while...do` Expression](loops-while-do-expression.md)|Used in looping constructs or to execute imperative code.|
 |`done`|[Verbose Syntax](verbose-syntax.md)|In verbose syntax, indicates the end of a block of code in a looping expression.|
 |`downcast`|[Casting and Conversions](casting-and-conversions.md)|Used to convert to a type that is lower in the inheritance chain.|
 |`downto`|[Loops: `for...to` Expression](loops-for-to-expression.md)|In a `for` expression, used when counting in reverse.|
@@ -52,7 +52,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`interface`|[Interfaces](interfaces.md)|Used to declare and implement interfaces.|
 |`internal`|[Access Control](access-control.md)|Used to specify that a member is visible inside an assembly but not outside it.|
 |`lazy`|[Lazy Computations](lazy-computations.md)|Used to specify a computation that is to be performed only when a result is needed.|
-|`let`|[let Bindings](let-bindings.md)|Used to associate, or bind, a name to a value or function.|
+|`let`|[`let` Bindings](functions/let-bindings.md)|Used to associate, or bind, a name to a value or function.|
 |`let!`|[Asynchronous Workflows](asynchronous-workflows.md)<br /><br />[Computation Expressions](computation-expressions.md)|Used in asynchronous workflows to bind a name to the result of an asynchronous computation, or, in other computation expressions, used to bind a name to a result, which is of the computation type.|
 |`match`|[Match Expressions](match-expressions.md)|Used to branch by comparing a value to a pattern.|
 |`member`|[Members](members/index.md)|Used to declare a property or method in an object type.|
@@ -61,8 +61,8 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`namespace`|[Namespaces](namespaces.md)|Used to associate a name with a group of related types and modules, to logically separate it from other code.|
 |`new`|[Constructors](members/constructors.md)<br /><br />[Constraints](generics/constraints.md)|Used to declare, define, or invoke a constructor that creates or that can create an object.<br /><br />Also used in generic parameter constraints to indicate that a type must have a certain constructor.|
 |`not`|[Symbol and Operator Reference](symbol-and-operator-reference/index.md)<br /><br />[Constraints](generics/constraints.md)|Not actually a keyword. However, `not struct` in combination is used as a generic parameter constraint.|
-|`null`|[Null Values](null-values.md)<br /><br />[Constraints](generics/constraints.md)|Indicates the absence of an object.<br /><br />Also used in generic parameter constraints.|
-|`of`|[Discriminated Unions](discriminated-unions.md)<br /><br />[Delegates](delegates.md)<br /><br />[Exception Types](exception-types/exception-types.md)|Used in discriminated unions to indicate the type of categories of values, and in delegate and exception declarations.|
+|`null`|[Null Values](values/null-values.md)<br /><br />[Constraints](generics/constraints.md)|Indicates the absence of an object.<br /><br />Also used in generic parameter constraints.|
+|`of`|[Discriminated Unions](discriminated-unions.md)<br /><br />[Delegates](delegates.md)<br /><br />[Exception Types](exception-types/index.md)|Used in discriminated unions to indicate the type of categories of values, and in delegate and exception declarations.|
 |`open`|[Import Declarations: The `open` Keyword](import-declarations-the-open-keyword.md)|Used to make the contents of a namespace or module available without qualification.|
 |`or`|[Symbol and Operator Reference](symbol-and-operator-reference/index.md)<br /><br />[Constraints](generics/constraints.md)|Used with Boolean conditions as a Boolean `or` operator. Equivalent to `||`.<br /><br />Also used in member constraints.|
 |`override`|[Members](members/index.md)|Used to implement a version of an abstract or virtual method that differs from the base version.|

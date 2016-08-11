@@ -1,7 +1,4 @@
-Param([string]$serverAddress)
-Param([string]$vmName)
-Param([string]$userName)
-Param([string]$apiKey)
+Param([string]$serverAddress, [string]$vmName, [string]$userName, [string]$apiKey)
 
 # ---------------------------------------------------
 # Script used to provision Windows Server 2012 VMs

@@ -78,6 +78,6 @@ When the keywords `member val` appear together in a type definition, it is a def
 ## See Also
 [Properties](properties.md)
 
-[Members](index).md)
+[Members](index.md)
 
 [`let` Bindings in Classes](let-bindings-in-classes.md)

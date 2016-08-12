@@ -48,7 +48,7 @@ When the *PropertyName* is `Item`, the compiler treats the property as a default
 
 The syntax for accessing a nondefault indexed property is to provide the name of the property and the index in parentheses. For example, if the property is `Ordinal`, you write `obj.Ordinal(index)` to access it.
 
-Regardless of which form you use, you should always use the curried form for the `set` method on an indexed property. For information about curried functions, see [Functions](functions/index.md).
+Regardless of which form you use, you should always use the curried form for the `set` method on an indexed property. For information about curried functions, see [Functions](../functions/index.md).
 
 ## Example
 

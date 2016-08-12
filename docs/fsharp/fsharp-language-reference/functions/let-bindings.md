@@ -70,7 +70,7 @@ You can specify types for parameters by including a colon (:) followed by a type
 
 When there are no explicit type parameters, type inference is used to determine the types of parameters of functions. This can include automatically generalizing the type of a parameter to be generic.
 
-For more information, see [Automatic Generalization](Automatic-Generalization.md) and [Type Inference](Type-Inference.md).
+For more information, see [Automatic Generalization](../generics/automatic-generalization.md) and [Type Inference](../type-inference.md).
 
 ## let Bindings in Classes
 
@@ -114,7 +114,7 @@ let function3 x =
 
 Some modules have the attribute [RequireQualifiedAccess](https://msdn.microsoft.com/library/8b9b6ade-0471-4413-ac5d-638cd0de5f15), which means that the functions that they expose must be qualified with the name of the module. For example, the F# List module has this attribute.
 
-For more information on modules and access control, see [../Modules](modules.md) and [Access Control](../access-control.md).
+For more information on modules and access control, see [Modules](../modules.md) and [Access Control](../access-control.md).
 
 ## See Also
 

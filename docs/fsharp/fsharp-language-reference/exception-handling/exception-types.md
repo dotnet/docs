@@ -43,6 +43,6 @@ The exception type that you define with the `exception` keyword in F# is a new t
 ## See Also
 [Exception Handling](index.md)
 
-[Exceptions: the `raise` Function](exceptions-the-raise-function.md)
+[Exceptions: the `raise` Function](the-raise-function.md)
 
 [Exception Hierarchy](https://msdn.microsoft.com/library/z4c5tckx.aspx)

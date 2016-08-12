@@ -40,7 +40,7 @@ The `raise` function can also be used to raise .NET exceptions, as shown in the 
 
 [Exception Types](exception-types.md)
 
-[Exceptions: The `try...with` Expression](the-try...with-expression.md)
+[Exceptions: The `try...with` Expression](the-try-with-expression.md)
 
 [Exceptions: The `try...finally` Expression](the-try-finally-expression.md)
 

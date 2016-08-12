@@ -13,6 +13,9 @@ ms.assetid: ee2bb9bf-e04a-4fbe-bf58-46d07229e981
 
 # Asynchronous Workflows
 
+> [!NOTE]
+The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+
 This topic describes support in F# for performing computations asynchronously, that is, without blocking execution of other work. For example, asynchronous computations can be used to write applications that have UIs that remain responsive to users as the application performs other work.
 
 ## Syntax
@@ -70,4 +73,4 @@ The `runAll` function launches three asynchronous workflows in parallel and wait
 
 [Computation Expressions](computation-expressions.md)
 
-[Control.Async Class](Control.Async-Class.md)
+[Control.Async Class](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/control.async-class-%5bfsharp%5d)

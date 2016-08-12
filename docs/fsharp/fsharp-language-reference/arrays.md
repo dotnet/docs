@@ -13,6 +13,9 @@ ms.assetid: 61fa9084-abdc-4cf5-8213-91ec1211866b
 
 # Arrays
 
+> [!NOTE]
+The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+
 Arrays are fixed-size, zero-based, mutable collections of consecutive data elements that are all of the same type.
 
 ## Creating Arrays
@@ -196,7 +199,7 @@ Array indexing and slicing syntax is supported for arrays up to rank 4. When you
     
 The type of a two-dimensional array is written out as `<type>[,]` (for example, `int[,]`, `double[,]`), and the type of a three-dimensional array is written as `<type>[,,]`, and so on for arrays of higher dimensions.
 
-Only a subset of the functions available for one-dimensional arrays is also available for multidimensional arrays. For more information, see [`Collections.Array Module (F#)`](Collections.Array-Module-%5BFSharp%5D.md), [`Collections.Array2D Module (F#)`](Collections.Array2D-Module-%5BFSharp%5D.md), [`Collections.Array3D Module (F#)`](Collections.Array3D-Module-%5BFSharp%5D.md), and [`Collections.Array4D Module (F#)`](Collections.Array4D-Module-%5BFSharp%5D.md).
+Only a subset of the functions available for one-dimensional arrays is also available for multidimensional arrays. For more information, see [`Collections.Array Module`](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/collections.array-module-%5bfsharp%5d), [`Collections.Array2D Module`](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/collections.array2d-module-%5bfsharp%5d), [`Collections.Array3D Module`](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/collections.array3d-module-%5bfsharp%5d), and [`Collections.Array4D Module`]https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/collections.array4d-module-%5bfsharp%5d).
 
 ### Array Slicing and Multidimensional Arrays
 
@@ -382,7 +385,7 @@ The variations [`Array.iteri`](https://msdn.microsoft.com/library/8bbe2ed4-ada7-
 
 The functions [`Array.fold`](https://msdn.microsoft.com/library/5ed9dd3b-3694-4567-94d0-fd9a24474e09), [`Array.foldBack`](https://msdn.microsoft.com/library/1121a453-dead-4711-a0ca-cc147752989c), [`Array.reduce`](https://msdn.microsoft.com/library/fd62a985-89fe-4f49-a9d4-0c808ac6749d), [`Array.reduceBack`](https://msdn.microsoft.com/library/4fdd4cbe-2238-4c5c-b286-597a7e9036f9), [`Array.scan`](https://msdn.microsoft.com/library/f6893608-9146-450d-9ebb-a0016803fbb0), and [`Array.scanBack`](https://msdn.microsoft.com/library/7610f406-7a5c-41db-a0ca-8e2a2a4826ad) execute algorithms that involve all the elements of an array. Similarly, the variations [`Array.fold2`](https://msdn.microsoft.com/library/5c845087-d041-476e-8cc4-53ae6849ef79) and [`Array.foldBack2`](https://msdn.microsoft.com/library/aa51b405-df20-4c51-9998-a6530f7db862) perform computations on two arrays.
 
-These functions for performing computations correspond to the functions of the same name in the [List module](https://msdn.microsoft.com/library/a2264ba3-2d45-40dd-9040-4f7aa2ad9788). For usage examples, see [Lists &#40;F&#35;&#41;](Lists-%5BFSharp%5D.md).
+These functions for performing computations correspond to the functions of the same name in the [List module](https://msdn.microsoft.com/library/a2264ba3-2d45-40dd-9040-4f7aa2ad9788). For usage examples, see [Lists](lists.md).
 
 ### Modifying Arrays
 

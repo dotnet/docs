@@ -13,6 +13,9 @@ ms.assetid: 35df2d80-e6d2-4873-b2de-9b45b9e9e650
 
 # Query Expressions
 
+> [!NOTE]
+The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+
 Query expressions enable you to query a data source and put the data in a desired form. Query expressions provide support for LINQ in F#.
 
 ## Syntax
@@ -46,7 +49,7 @@ query1
 
 In the previous code example, the query expression is in curly braces. The meaning of the code in the expression is, return every customer in the Customers table in the database in the query results. Query expressions return a type that implements `System.Linq.IQueryable&#96;1` and `System.Collections.Generic.IEnumerable&#96;1`, and so they can be iterated using the [Seq module](https://msdn.microsoft.com/library/54e8f059-ca52-4632-9ae9-49685ee9b684) as the example shows.
 
-Every computation expression type is built from a builder class. The builder class for the query computation expression is `QueryBuilder`. For more information, see [Computation Expressions](computation-expressions.md) and [Linq.QueryBuilder Class](Linq.QueryBuilder-Class.md).
+Every computation expression type is built from a builder class. The builder class for the query computation expression is `QueryBuilder`. For more information, see [Computation Expressions](computation-expressions.md) and [Linq.QueryBuilder Class](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d).
 
 
 ## Query Operators
@@ -2428,6 +2431,6 @@ end
 ## See Also
 [F# Language Reference](index.md)
 
-[Linq.QueryBuilder Class](Linq.QueryBuilder-Classe.md)
+[Linq.QueryBuilder Class](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d)
 
 [Computation Expressions](Computation-Expressions.md)

@@ -13,8 +13,10 @@ ms.assetid: df7624e5-ca6c-4e77-9e2b-87ca7e5e6f52
 
 # Strings
 
-The `string` type represents immutable text as a sequence of Unicode characters. `string` is an alias for `System.String` in the .NET Framework.
+> [!NOTE]
+The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
+The `string` type represents immutable text as a sequence of Unicode characters. `string` is an alias for `System.String` in the .NET Framework.
 
 ## Remarks
 String literals are delimited by the quotation mark (") character. The backslash character (\) is used to encode certain special characters. The backslash and the next character together are known as an *escape sequence*. Escape sequences supported in F# string literals are shown in the following table.
@@ -82,7 +84,7 @@ By using the `Chars` property of `System.String`, you can access the individual 
 [!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet1005.fs)]
     
 ## String Module
-Additional functionality for string handling is included in the `String` module in the `FSharp.Core` namespace. For more information, see [Core.String Module &#40;F&#35;&#41;](Core.String-Module-%5BFSharp%5D.md).
+Additional functionality for string handling is included in the `String` module in the `FSharp.Core` namespace. For more information, see [Core.String Module](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/core.string-module-%5bfsharp%5d).
 
 ## See Also
 [F# Language Reference](index.md)

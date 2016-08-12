@@ -13,8 +13,10 @@ ms.assetid: 28b588f2-0c9e-4c0d-babf-901ed934638a
 
 # Events
 
-Events enable you to associate function calls with user actions and are important in GUI programming. Events can also be triggered by your applications or by the operating system.
+> [!NOTE]
+The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
+Events enable you to associate function calls with user actions and are important in GUI programming. Events can also be triggered by your applications or by the operating system.
 
 ## Handling Events
 When you use a GUI library like Windows Forms or Windows Presentation Foundation (WPF), much of the code in your application runs in response to events that are predefined by the library. These predefined events are members of GUI classes such as forms and controls. You can add custom behavior to a preexisting event, such as a button click, by referencing the specific named event of interest (for example, the `Click` event of the `Form` class) and invoking the `Add` method, as shown in the following code. If you run this from F# Interactive, omit the call to `System.Windows.Forms.Application.Run(System.Windows.Forms.Form)`.
@@ -179,8 +181,8 @@ Application.Run(appForm)
 
 [Lambda Expressions: The `fun` Keyword](../functions/lambda-expressions-the-fun-keyword.md)
 
-[Control.Event Module](Control.Event-Module.md)
+[Control.Event Module](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/control.event-module-%5bfsharp%5d)
 
-[Control.Event&#60;'T&#62; Class](Control.Event%5B%27T%5D-Class.md)
+[Control.Event&#60;'T&#62; Class](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/control.event%5b%27t%5d-class-%5bfsharp%5d)
 
-[Control.Event&#60;'Delegate,'Args&#62; Class](Control.Event%5B%27Delegate%2C%27Args%5D-Class.md)
+[Control.Event&#60;'Delegate,'Args&#62; Class](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/control.event%5b%27delegate%2c%27args%5d-class-%5bfsharp%5d)

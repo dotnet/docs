@@ -13,6 +13,9 @@ ms.assetid: a1a6075f-064d-4aee-8222-2b59ff16cc12
 
 # Lists
 
+> [!NOTE]
+The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+
 A list in F# is an ordered, immutable series of elements of the same type. To perform basic operations on lists, use the functions in the [List module](https://msdn.microsoft.com/library/a2264ba3-2d45-40dd-9040-4f7aa2ad9788).
 
 
@@ -434,7 +437,7 @@ The `List` module provides functions for converting to and from both sequences a
 
 
 ### Additional Operations
-For information about additional operations on lists, see the library reference topic [Collections.List Module](Collections.List-Module.md).
+For information about additional operations on lists, see the library reference topic [Collections.List Module](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/collections.list-module-%5bfsharp%5d).
 
 
 ## See Also

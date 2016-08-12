@@ -15,7 +15,6 @@ ms.assetid: 16e2a011-c785-48c8-859f-79df7f3a0e29
 
 Discriminated unions provide support for values that can be one of a number of named cases, possibly each with different values and types. Discriminated unions are useful for heterogeneous data; data that can have special cases, including valid and error cases; data that varies in type from one instance to another; and as an alternative for small object hierarchies. In addition, recursive discriminated unions are used to represent tree data structures.
 
-
 ## Syntax
 
 ```fsharp
@@ -112,7 +111,6 @@ Discriminated unions work well if the nodes in the tree are heterogeneous. In th
 [!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2006.fs)]
 
 When this code is executed, the value of `result` is 5.
-
 
 ## See Also
 [F# Language Reference](index.md)

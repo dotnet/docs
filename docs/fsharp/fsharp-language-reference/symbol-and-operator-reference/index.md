@@ -75,9 +75,9 @@ The following table describes symbols used in the F# language, provides links to
 |`<>?`|[Nullable Operators](nullable-operators.md)|<ul><li>Computes the "not equal" operation when the right side is a nullable type.<br /></li><ul/>|
 |`<=`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is less than or equal to the right side; otherwise, returns `false`.<br /></li><ul/>|
 |`<=?`|[Nullable Operators](nullable-operators.md)|<ul><li>Computes the "less than or equal to" operation when the right side is a nullable type.<br /></li><ul/>|
-|<code><&#124;</code>|[Functions](../functions/index.md)|<ul><li>Passes the result of the expression on the right side to the function on left side (backward pipe operator).<br /></li><ul/>|
-|<code><&#124;&#124;</code>|[Operators.&#40; &#60;&#124;&#124; &#41;&#60;'T1,'T2,'U&#62; Function](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/operators.%5b-%5bhh-%5d%5b%27t1%2c%27t2%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Passes the tuple of two arguments on the right side to the function on left side.<br /></li><ul/>|
-|<code><&#124;&#124;&#124;</code>|[Operators.&#40; &#60;&#124;&#124;&#124; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/operators.%5b-%5bhhh-%5d%5b%27t1%2c%27t2%2c%27t3%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Passes the tuple of three arguments on the right side to the function on left side.<br /></li><ul/>|
+|<code>&lt;&#124;</code>|[Functions](../functions/index.md)|<ul><li>Passes the result of the expression on the right side to the function on left side (backward pipe operator).<br /></li><ul/>|
+|<code>&lt;&#124;&#124;</code>|[Operators.&#40; &#60;&#124;&#124; &#41;&#60;'T1,'T2,'U&#62; Function](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/operators.%5b-%5bhh-%5d%5b%27t1%2c%27t2%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Passes the tuple of two arguments on the right side to the function on left side.<br /></li><ul/>|
+|<code>&lt;&#124;&#124;&#124;</code>|[Operators.&#40; &#60;&#124;&#124;&#124; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/operators.%5b-%5bhhh-%5d%5b%27t1%2c%27t2%2c%27t3%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Passes the tuple of three arguments on the right side to the function on left side.<br /></li><ul/>|
 |`<@...@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits a typed code quotation.<br /></li><ul/>|
 |`<@@...@@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits an untyped code quotation.<br /></li><ul/>|
 |`=`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is equal to the right side; otherwise, returns `false`.<br /></li><ul/>|
@@ -102,7 +102,7 @@ The following table describes symbols used in the F# language, provides links to
 |`^`|[Statically Resolved Type Parameters](../generics/statically-resolved-type-parameters.md)<br /><br />[Strings](../strings.md)|<ul><li>Specifies type parameters that must be resolved at compile time, not at runtime.<br /></li><li>Concatenates strings.<br /></li><ul/>|
 |`^^^`|[Bitwise Operators](bitwise-operators.md)|<ul><li>Computes the bitwise exclusive OR operation.<br /></li><ul/>|
 |`_`|[Match Expressions](../match-expressions.md)<br /><br />[Generics](../generics/index.md)|<ul><li>Indicates a wildcard pattern.<br /></li><li>Specifies an anonymous generic parameter.<br /></li><ul/>|
-|`&#96;`|[Automatic Generalization](../generics/automatic-generalization.md)|<ul><li>Used internally to indicate a generic type parameter.<br /></li><ul/>|
+|<code>&#96;</code>|[Automatic Generalization](../generics/automatic-generalization.md)|<ul><li>Used internally to indicate a generic type parameter.<br /></li><ul/>|
 |`{...}`|[Sequences](../sequences.md)<br /><br />[Records](../records.md)|<ul><li>Delimits sequence expressions and computation expressions.<br /></li><li>Used in record definitions.<br /></li><ul/>|
 |<code>&#124;</code>|[Match Expressions](../match-expressions.md)|<ul><li>Delimits individual match cases, individual discriminated union cases, and enumeration values.<br /></li><ul/>|
 |<code>&#124;&#124;</code>|[Boolean Operators](boolean-operators.md)|<ul><li>Computes the Boolean OR operation.<br /></li><ul/>|

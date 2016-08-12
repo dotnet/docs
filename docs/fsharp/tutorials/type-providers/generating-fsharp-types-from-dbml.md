@@ -42,7 +42,7 @@ This walkthrough illustrates the following tasks. They should be completed in th
 ## Prerequisites
 
 ## Creating a .dbml file
-If you do not have a database to test on, create one by following the instructions at the bottom of [Walkthrough: Accessing a SQL Database by Using Type Providers](accessing-a-sql-database). If you follow these instructions, you will create a database called MyDatabase that contains a few simple tables and stored procedures on your SQL Server.
+If you do not have a database to test on, create one by following the instructions at the bottom of [Walkthrough: Accessing a SQL Database by Using Type Providers](accessing-a-sql-database.md). If you follow these instructions, you will create a database called MyDatabase that contains a few simple tables and stored procedures on your SQL Server.
 
 If you already have a .dbml file, you can skip to the section, **Create and Set Up an F# Project**. Otherwise, you can create a .dbml file given an existing SQL database and by using the command-line tool SqlMetal.exe.
 

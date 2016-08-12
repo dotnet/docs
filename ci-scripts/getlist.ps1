@@ -1,7 +1,13 @@
-$homePath = (Get-Item -Path ".\" -Verbose).FullName
+## Script that gets the list of projects that need to be built.
+## This script it used by the VSTS build agents.
+## Author: Den Delimarsky (dendeli)
+## Last Modified: 8/12/2016
 
-[System.Collections.ArrayList]$globalProjects = Get-ChildItem $homePath -Recurse | where {$_.Name -eq "global.json"}
-[System.Collections.ArrayList]$singleProjects = Get-ChildItem $homePath -Recurse | where {$_.Name -eq "project.json" }
+$homePath = (Get-Item -Path ".\" -Verbose).FullName
+$corePath = $homePath + "\samples\core"
+
+[System.Collections.ArrayList]$globalProjects = Get-ChildItem $corePath -Recurse | where {$_.Name -eq "global.json"}
+[System.Collections.ArrayList]$singleProjects = Get-ChildItem $corePath -Recurse | where {$_.Name -eq "project.json" }
 
 $itemsToRemove = New-Object "System.Collections.Generic.List[System.Object]"
 
@@ -24,5 +30,5 @@ foreach($target in $itemsToRemove)
 
 Write-Host "Single projects after cleanup: " $singleProjects.Count
 
-$singleProjects | Format-Table FullName -HideTableHeaders | Out-File single.projects
-$globalProjects | Format-Table FullName -HideTableHeaders | Out-File global.projects
+($singleProjects | select-object FullName | ConvertTo-Csv -NoTypeInformation | % { $_ -replace '"', ""} ) | Select-Object -Skip 1 | Set-Content -Path single.projects
+($globalProjects | select-object FullName | ConvertTo-Csv -NoTypeInformation | % { $_ -replace '"', ""} ) | Select-Object -Skip 1 | Set-Content -Path global.projects

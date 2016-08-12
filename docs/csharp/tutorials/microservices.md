@@ -1,14 +1,14 @@
 ---
-title: Microservices hosted in Docker
-description: Microservices hosted in Docker
-keywords: .NET, .NET Core
+title: Microservices hosted in Docker | C#
+description: Learn to create asp.net core services that run in Docker containers
+keywords: .NET, .NET Core, Docker, C#, ASP.NET, Microservice
 author: BillWagner
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 08/12/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.devlang: csharp
 ms.assetid: 87e93838-a363-4813-b859-7356023d98ed
 ---
 
@@ -56,10 +56,10 @@ source, cross platform editor. However, you can use whatever tools you are
 comfortable with.
 
 You'll also need to install the Docker engine. See the 
-[Docker Installation page](https://docs.docker.com/engine/installation/) 
-for instructions.
+[Docker Installation page](http://www.docker.com/products/docker) 
+for instructions for your platform.
 Docker can be installed in many Linux distributions, macOS, or Windows. The page
-referenced above contains links to each of the available installations.
+referenced above contains sections to each of the available installations.
 
 You'll also need to install a number of command line tools that support
 ASP.NET core development. The command line templates use Yeoman, Bower,
@@ -373,7 +373,8 @@ RUN ["dotnet", "build"]
 ```
 
 This will copy the contents of the current directory to the docker VM, and restore
-all the packages.
+all the packages. Using the dotnet CLI means that the Docker image must include the
+.NET Core SDK. 
 
 The final lines of the file set the tcp port (5000) this container 
 listens on and runs the application:
@@ -383,20 +384,15 @@ EXPOSE 5000/tcp
 ENTRYPOINT ["dotnet", "run", "--server.urls", "http://0.0.0.0:5000"]
 ```
 
-The Dockerfile uses declares port 5000 here because that's the default port that an
+The Dockerfile uses declares port 5000 here because it's the default port that an
 ASP.NET Core application will listen on. That same port is declared as the argument
 to the `--server.urls` command line option in the `dotnet run` command. Those must
 match for your container to listen on the proper port.
 
-Notice that this Dockerfile uses the dotnet cli to build and run your docker image.
-That's why the larger image is needed. The dotnet cli is delivered with the
-dotnet sdk.
-
 ## Building and running the image
 
-Let's build an image and run the service inside a Docker container. The next step is to
-build the container.  You do that using the docker build command. Run the following
-command from the directory containing your code.
+Let's build an image and run the service inside a Docker container. You build a container
+using the docker build command. Run the following command from the directory containing your code.
 
 ```
 docker build -t weather-microservice .
@@ -466,11 +462,17 @@ When you are done working with your container, you can stop it:
 docker stop hello-docker
 ```
 
-The container image is still available for you to restart.  If you want to remove
-the image from your machine, you use this command:
+The container and image is still available for you to restart.  If you want to remove
+the container from your machine, you use this command:
 
 ```
 docker rm hello-docker
+```
+
+If you want to remove unused images from your machine, you use this command:
+
+```
+docker rmi hello-docker
 ```
 
 ## Conclusion 

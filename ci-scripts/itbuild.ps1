@@ -51,7 +51,7 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
         cd $restorePath
 
         dotnet restore | Write-Host
-        $buildResults.Add($restorePath, $LastExitCode)
+        $buildResults.Add(([GUID]::NewGuid()).GUID, $LastExitCode)
 
         LogWrite "Restore complete."
 
@@ -67,7 +67,7 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
 
                 cd $projectPath
                 dotnet build | Write-Host
-                $buildResults.Add($projectPath, $LastExitCode)
+                $buildResults.Add(([GUID]::NewGuid()).GUID, $LastExitCode)
             }
             else
             {
@@ -75,7 +75,7 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
                 {
                     cd $projectPath
                     dotnet build | Write-Host
-                    $buildResults.Add($projectPath, $LastExitCode)
+                    $buildResults.Add(([GUID]::NewGuid()).GUID, $LastExitCode)
                 }
             }
         }
@@ -99,9 +99,9 @@ $Content = Get-Content "$homePath\single.projects" | Foreach-Object {
 
         cd $projectPath
         dotnet restore | Write-Host
-        $buildResults.Add($projectPath, $LastExitCode)
+        $buildResults.Add(([GUID]::NewGuid()).GUID, $LastExitCode)
         dotnet build | Write-Host
-        $buildResults.Add($projectPath, $LastExitCode)
+        $buildResults.Add(([GUID]::NewGuid()).GUID, $LastExitCode)
     }
 }
 

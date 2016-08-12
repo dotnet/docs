@@ -61,6 +61,6 @@ NuGet is the package manager for the Microsoft development platform including .N
 
 ## .NET Core Tools for Visual Studio 2015
 
-Download and install the [.NET Core Tooling Preview 2 for Visual Studio 2015](http://go.microsoft.com/fwlink/?LinkID=824849). 
+Download and install the [.NET Core Tooling Preview 2 for Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkID=824849). 
 
 The .NET Core Tooling package installs .NET Core, project templates and other tools for Visual Studio 2015.

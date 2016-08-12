@@ -276,7 +276,11 @@ public class WeatherReport
 }
 ```
 
-Next, build a constructor that randomly sets those values:
+Next, build a constructor that randomly sets those values. This constructor uses
+the values for the latitude and longitude to seed the Random number generator. That
+means the forecast for the same location is the same. If you change the arguments for
+the latitude and longitude, you'll get a different forecast (because you start with a 
+different seed.)
 
 ```cs
 public WeatherReport(double latitude, double longitude, int daysInFuture)
@@ -371,77 +375,50 @@ RUN ["dotnet", "build"]
 This will copy the contents of the current directory to the docker VM, and restore
 all the packages.
 
-The final lines of the file set the output port (80) and run the application:
+The final lines of the file set the tcp port (5000) this container 
+listens on and runs the application:
 
 ```
-EXPOSE 80
-ENTRYPOINT ["dotnet", "run"]
+EXPOSE 5000/tcp
+ENTRYPOINT ["dotnet", "run", "--server.urls", "http://0.0.0.0:5000"]
 ```
+
+The Dockerfile uses declares port 5000 here because that's the default port that an
+ASP.NET Core application will listen on. That same port is declared as the argument
+to the `--server.urls` command line option in the `dotnet run` command. Those must
+match for your container to listen on the proper port.
 
 Notice that this Dockerfile uses the dotnet cli to build and run your docker image.
 That's why the larger image is needed. The dotnet cli is delivered with the
 dotnet sdk.
 
-Here are the steps to build the image and deploy it. The information below is 
-for the PowerShell CLI. Different shells will have slightly different syntax
-that will be highlighted below.
+## Building and running the image
 
-First, you have to create a new docker machine called 'weather-service':
-
-```
-docker-machine create --driver virtualbox weather-service
-```
-
-This command creates a new virtual machine in your Docker installation. You can see
-the machine by typing the following command:
+Let's build an image and run the service inside a Docker container. The next step is to
+build the container.  You do that using the docker build command. Run the following
+command from the directory containing your code.
 
 ```
-docker-machine ls
+docker build -t weather-microservice .
 ```
 
-To connect to the machine, you need to retrieve its environment. That's done with
-the env command in docker-machine:
+This command builds the container image based on all the information in your Dockerfile. The `-t`
+argument provides a tag, or name, for this container image. In the command line above, the
+tag used for the Docker container is `weather-microservice`. When this command completes,
+you have a container ready to run your new service. Run the following command to start
+the container and launch your service:
 
 ```
-docker-machine env --shell powershell weather-service
+docker run -d -p 80:5000 --name hello-docker weather-microservice
 ```
 
-Substitute your shell of choice for 'powershell' in the command above. This command
-echoes back a command to configure your shell to communicate with the docker container.
-In PowerShell it is as follows:
-
-```
- & "C:\Program Files\Docker Toolbox\docker-machine.exe" env --shell powershell weather-service | Invoke-Expression
-```
-
-If you are using a different shell, the output from the docker-machine command
-above will show you what command to use in its place. Execute the command that was generated
-for you. 
-
-> Note: The `docker-machine` command will include the shell's comment character,
-> `#` in the case of powershell in the output for the command to run. Make sure
-> you remove this character when you execute the command.
-
-Finally, build the docker image from your application:
-
-```
-docker build -t weather-service .
-```
-
-> Note: You may need to restart the Docker machine for the `docker build` command
-> to work. You do that by executing the `docker restart` command:
-> 
-> `docker restart weather-service`
-
-The build command builds the image using your source, and the configuration
-settings in your
-Dockerfile.
-
-And finally run the application in the docker container:
-
-```
-docker run -t -d -p 80:5000 weather-service
-```
+The `-d` option means to run the container detached from the current terminal. That means you
+won't see the command output in your terminal. The `-p` option indicates the port mapping between
+the service and the host. Here it says that any incoming request on port 80 should be forwarded
+to port 5000 on the container. Using 5000 matches the port your service is listening on from
+the command line arguments specified in the Dockerfile above. The `--name` argument
+names your running container. It's a convenient name you can use to work with that
+container. 
 
 You can see if the image is running by checking the command:
 
@@ -452,20 +429,57 @@ docker ps
 If your container is running, you'll see a line that lists
 it in the running processes. (It may be the only one).
 
-To navigate to your service, find the IP address for the machine:
+You can test your service by opening a browser and navigating to localhost, and
+specifying a latitude and longitude:
 
 ```
-docker-machine ip weather-service
+http://localhost/?lat=35.5&long=40.75
 ```
 
-Open a browser on the docker host and navigate to that site, and you should see your 
-weather service running. 
+## Attaching to a running container
+
+When you ran your sevice in a command window, you could see diagnostic information printed
+for each request. You don't see that information when your container is running in detached
+mode. The Docker attach command enables you to attach to a running container so that you
+can see the log information.  Run this command from a command window:
+
+```
+docker attach --sig-proxy=false hello-docker
+```
+
+The `--sig-proxy=false` argument means that `Ctrl-C` commands do not get sent to the
+container process, but rather stop the `docker attach` command. The final argument
+is the name given to the container in the `docker run` command. 
+
+> [!NOTE]
+> You can also use the docker assigned container ID to refer to any container. If you
+> didn't specify a name for your container in `docker run` you must use the container id.
+
+Open a browser and navigate to your service. You'll see the diagnostic messages in
+the command windows from the attached running container.
+
+Press `Ctrl-C` to stop the attach process.
+
+When you are done working with your container, you can stop it:
+
+```
+docker stop hello-docker
+```
+
+The container image is still available for you to restart.  If you want to remove
+the image from your machine, you use this command:
+
+```
+docker rm hello-docker
+```
 
 ## Conclusion 
 
 In this tutorial, you built an asp.net core microservice, and added a few
-features.
+simple features.
 
-You built a docker machine, created an image of your new application and
-ran that application in the docker vm.
+You built a docker container image for that service, and ran that container on
+your machine. You attached a terminal window to the service, and saw the
+diagnostic messages from your service.
+
 Along the way, you saw several features of the C# language in action.

@@ -106,7 +106,7 @@ $Content = Get-Content "$homePath\single.projects" | Foreach-Object {
 }
 
 $resultsCount = $buildResults.Count
-LogWrite "Total samples built by now: $resultsCount"
+LogWrite "Commands triggered that can result in errors: $resultsCount"
 LogWrite "===== Building of single projects is complete. ====="
 
 ## Obviously the color does nothing when this shows up in the VSTS console.

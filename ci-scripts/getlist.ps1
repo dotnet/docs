@@ -1,13 +1,13 @@
 ## Script that gets the list of projects that need to be built.
-## Spec reference:https://microsoft.sharepoint.com/teams/CE_CSI/_layouts/OneNote.aspx?id=%2Fteams%2FCE_CSI%2FSiteAssets%2FCE_CSI%20Notebook&wd=target%28Samples%20CI%2FGeneral%20Architecture.one%7CAF430CFB-930B-4949-BD23-198A8485E1C9%2FSpec%7CB6587481-E481-450D-BDF2-2C2E2C2E70B3%2F%29
 ## This script it used by the VSTS build agents.
 ## Author: Den Delimarsky (dendeli)
-## Last Modified: 7/29/2016
+## Last Modified: 8/12/2016
 
 $homePath = (Get-Item -Path ".\" -Verbose).FullName
+$corePath = $homePath + "\samples\core"
 
-[System.Collections.ArrayList]$globalProjects = Get-ChildItem $homePath -Recurse | where {$_.Name -eq "global.json"}
-[System.Collections.ArrayList]$singleProjects = Get-ChildItem $homePath -Recurse | where {$_.Name -eq "project.json" }
+[System.Collections.ArrayList]$globalProjects = Get-ChildItem $corePath -Recurse | where {$_.Name -eq "global.json"}
+[System.Collections.ArrayList]$singleProjects = Get-ChildItem $corePath -Recurse | where {$_.Name -eq "project.json" }
 
 $itemsToRemove = New-Object "System.Collections.Generic.List[System.Object]"
 
@@ -30,5 +30,5 @@ foreach($target in $itemsToRemove)
 
 Write-Host "Single projects after cleanup: " $singleProjects.Count
 
-$singleProjects | Format-Table FullName -HideTableHeaders | Out-File single.projects
-$globalProjects | Format-Table FullName -HideTableHeaders | Out-File global.projects
+($singleProjects | select-object FullName | ConvertTo-Csv -NoTypeInformation | % { $_ -replace '"', ""} ) | Select-Object -Skip 1 | Set-Content -Path single.projects
+($globalProjects | select-object FullName | ConvertTo-Csv -NoTypeInformation | % { $_ -replace '"', ""} ) | Select-Object -Skip 1 | Set-Content -Path global.projects

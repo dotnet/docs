@@ -45,11 +45,11 @@ fun arg ->
     | ...
 ```    
 
-For more information about lambda expressions, see [Lambda Expressions: The fun Keyword &#40;F&#35;&#41;](Lambda-Expressions-The-fun-Keyword-%5BFSharp%5D.md).
+For more information about lambda expressions, see [Lambda Expressions: The `fun` Keyword](functions/lambda-expressions-the-fun-keyword.md).
 
 The whole set of patterns should cover all the possible matches of the input variable. Frequently, you use the wildcard pattern (`_`) as the last pattern to match any previously unmatched input values.
 
-The following code illustrates some of the ways in which the `match` expression is used. For a reference and examples of all the possible patterns that can be used, see [Pattern Matching &#40;F&#35;&#41;](Pattern-Matching-%5BFSharp%5D.md).
+The following code illustrates some of the ways in which the `match` expression is used. For a reference and examples of all the possible patterns that can be used, see [Pattern Matching](pattern-matching.md).
 
 [!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4601.fs)]
 
@@ -67,6 +67,8 @@ Note that because values other than literals cannot be used in the pattern, you 
 
 ## See Also
 
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Active Patterns &#40;F&#35;&#41;](Active-Patterns-%5BFSharp%5D.md)
+[Active Patterns](active-patterns.md)
+
+[Pattern Matching](pattern-matching.md)

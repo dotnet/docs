@@ -15,7 +15,6 @@ ms.assetid: 2f23d98b-551b-4fd2-9f4f-0fd7254288ed
 
 This topic lists the fundamental primitive types that are used in the F# language. It also provides the corresponding .NET types and the minimum and maximum values for each type.
 
-
 ## Summary of Primitive Types
 The following table summarizes the properties of the primitive F# types.
 
@@ -44,4 +43,4 @@ The following table summarizes the properties of the primitive F# types.
 You can perform computations with integers too big for the 64-bit integer type by using the [bigint](https://msdn.microsoft.com/library/dc8be18d-4042-46c4-b136-2f21a84f6efa) type. `bigint` is not considered a primitive type; it is an abbreviation for `System.Numerics.BigInteger`.
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)

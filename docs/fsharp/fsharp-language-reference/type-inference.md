@@ -15,7 +15,6 @@ ms.assetid: 2d5fa4b1-732a-4d71-a62d-07f7ee79fe06
 
 This topic describes how the F# compiler infers the types of values, variables, parameters and return values.
 
-
 ## Type Inference in General
 The idea of type inference is that you do not have to specify the types of F# constructs except when the compiler cannot conclusively deduce the type. Omitting explicit type information does not mean that F# is a dynamically typed language or that values in F# are weakly typed. F# is a statically typed language, which means that the compiler deduces an exact type for each construct during compilation. If there is not enough information for the compiler to deduce the types of each construct, you must supply additional type information, typically by adding explicit type annotations somewhere in the code.
 
@@ -63,4 +62,4 @@ Type inference is described in more detail in the F# Language Specification.
 
 
 ## See Also
-[Automatic Generalization &#40;F&#35;&#41;](Automatic-Generalization-%5BFSharp%5D.md)
+[Automatic Generalization](automatic-generalization.md)

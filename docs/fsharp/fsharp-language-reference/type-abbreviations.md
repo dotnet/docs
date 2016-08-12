@@ -15,7 +15,6 @@ ms.assetid: 560af74f-935f-415c-af56-604cddb9da6b
 
 A *type abbreviation* is an alias or alternate name for a type.
 
-
 ## Syntax
 
 ```fsharp
@@ -35,9 +34,9 @@ In the previous code, `transform` is a type abbreviation that represents a funct
 
 Type abbreviations are not preserved in the .NET Framework MSIL code. Therefore, when you use an F# assembly from another .NET Framework language, you must use the underlying type name for a type abbreviation.
 
-Type abbreviations can also be used on units of measure. For more information, see [Units of Measure &#40;F&#35;&#41;](Units-of-Measure-%5BFSharp%5D.md).
+Type abbreviations can also be used on units of measure. For more information, see [Units of Measure](units-of-measure.md).
 
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 

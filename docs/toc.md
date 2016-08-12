@@ -166,7 +166,7 @@
 #### [The failwith Function](fsharp/fsharp-language-reference/exception-handling/the-failwith-function.md)
 #### [The invalidArg Function](fsharp/fsharp-language-reference/exception-handling/the-invalidArg-function.md)
 ### [Attributes](fsharp/fsharp-language-reference/attributes.md)
-### [The use Keyword](fsharp/fsharp-language-reference/resource-management-the-use-keyword.md)
+### [Resource Management: the use Keyword](fsharp/fsharp-language-reference/resource-management-the-use-keyword.md)
 ### [Namespaces](fsharp/fsharp-language-reference/namespaces.md)
 ### [Modules](fsharp/fsharp-language-reference/modules.md)
 ### [Import Declarations: The open Keyword](fsharp/fsharp-language-reference/import-declarations-the-open-keyword.md)

@@ -15,16 +15,13 @@ ms.assetid: 35069073-9a82-410f-8dea-912e2a152e6d
 
 A *tuple* is a grouping of unnamed but ordered values, possibly of different types.
 
-
 ## Syntax
 
 ```fsharp
 ( element , ... , element )
 ```
-
 ## Remarks
 Each *element* in the previous syntax can be any expression.
-
 
 ## Examples
 Examples of tuples include pairs, triples, and so on, of the same or different types. Some examples are illustrated in the following code.
@@ -72,7 +69,7 @@ The usual syntax for defining the function `let sum a b = a + b` enables you to 
 
 [!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet1208.fs)]
 
-Using a tuple as the parameter disables currying. For more information, see "Partial Application of Arguments" in [Functions &#40;F&#35;&#41;](Functions-%5BFSharp%5D.md).
+Using a tuple as the parameter disables currying. For more information, see "Partial Application of Arguments" in [Functions](functions.md).
 
 
 ## Names of Tuple Types
@@ -88,6 +85,6 @@ If you are only using tuples from F# and not exposing them to other languages, a
 Tuples are compiled into objects of one of several generic types, all named `System.Tuple`, that are overloaded on the arity, or number of type parameters. Tuple types appear in this form when you view them from another language, such as C# or Visual Basic, or when you are using a tool that is not aware of F# constructs. The `Tuple` types were introduced in .NET Framework 4. If you are targeting an earlier version of the .NET Framework, the compiler uses versions of [System.Tuple](https://msdn.microsoft.com/library/5ac7953d-acdc-4a58-bfb7-c1f6406c0fa3) from the 2.0 version of the F# Core Library. The types in this library are used only for applications that target the 2.0, 3.0, and 3.5 versions of the .NET Framework. Type forwarding is used to ensure binary compatibility between .NET Framework 2.0 and .NET Framework 4 F# components.
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[F&#35; Types](FSharp-Types.md)
+[F# Types](fsharp-types.md)

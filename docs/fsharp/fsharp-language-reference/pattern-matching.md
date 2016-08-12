@@ -17,21 +17,19 @@ Patterns are rules for transforming input data. They are used throughout the F# 
 
 
 ## Remarks
-Patterns are used in many language constructs, such as the `match` expression. They are used when you are processing arguments for functions in `let` bindings, lambda expressions, and in the exception handlers associated with the `try...with` expression. For more information, see [Match Expressions &#40;F&#35;&#41;](Match-Expressions-%5BFSharp%5D.md), [let Bindings &#40;F&#35;&#41;](let-Bindings-%5BFSharp%5D.md), [Lambda Expressions: The fun Keyword &#40;F&#35;&#41;](Lambda-Expressions-The-fun-Keyword-%5BFSharp%5D.md), and [Exceptions: The try...with Expression &#40;F&#35;&#41;](Exceptions-The-try...with-Expression-%5BFSharp%5D.md).
+Patterns are used in many language constructs, such as the `match` expression. They are used when you are processing arguments for functions in `let` bindings, lambda expressions, and in the exception handlers associated with the `try...with` expression. For more information, see [Match Expressions](match-expressions.md), [let Bindings](functions/let-bindings.md), [Lambda Expressions: The `fun` Keyword](functions/lambda-expressions-the-fun-keyword.md), and [Exceptions: The `try...with` Expression](exception-handling/the-try-with-expression.md).
 
 For example, in the `match` expression, the *pattern* is what follows the pipe symbol.
 
-match *expression* with
-
-| *pattern* [ when* condition* ] -&gt; *result-expression*
-
+```fsharp
+match expression with
+| pattern [ when condition ] -> result-expression
 ...
+```
 
-Each pattern acts as a rule for transforming input in some way. In the `match` expression, each pattern is examined in turn to see if the input data is compatible with the pattern. If a match is found, the result expression is executed. If a match is not found, the next pattern rule is tested. The optional when *condition* part is explained in [Match Expressions &#40;F&#35;&#41;](Match-Expressions-%5BFSharp%5D.md).
+Each pattern acts as a rule for transforming input in some way. In the `match` expression, each pattern is examined in turn to see if the input data is compatible with the pattern. If a match is found, the result expression is executed. If a match is not found, the next pattern rule is tested. The optional when *condition* part is explained in [Match Expressions](match-expressions.md).
 
 Supported patterns are shown in the following table. At run time, the input is tested against each of the following patterns in the order listed in the table, and patterns are applied recursively, from first to last as they appear in your code, and from left to right for the patterns on each line.
-
-
 
 |Name|Description|Example|
 |----|-----------|-------|
@@ -58,7 +56,8 @@ Constant patterns are numeric, character, and string literals, enumeration const
 The following example demonstrates the use of literal patterns, and also uses a variable pattern and an OR pattern.
 
 [!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4801.fs)]
-    Another example of a literal pattern is a pattern based on enumeration constants. You must specify the enumeration type name when you use enumeration constants.
+
+Another example of a literal pattern is a pattern based on enumeration constants. You must specify the enumeration type name when you use enumeration constants.
 
 [!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4802.fs)]
 
@@ -79,17 +78,17 @@ For discriminated unions that have named fields, you use the equals sign (=) to 
 
 ```fsharp
 type Shape =
-| Rectangle of height : float * width : float
-| Circle of radius : float
+    | Rectangle of height : float * width : float
+    | Circle of radius : float
 ```
 
 You can use the named fields in a pattern matching expression as follows.
 
 ```fsharp
 let matchShape shape =
-match shape with
-| Rectangle(height = h) -> printfn "Rectangle with length %f" h
-| Circle(r) -> printfn "Circle with radius %f" r
+    match shape with
+    | Rectangle(height = h) -> printfn "Rectangle with length %f" h
+    | Circle(r) -> printfn "Circle with radius %f" r
 ```
 
 The use of the named field is optional, so in the previous example, both `Circle(r)` and `Circle(radius = r)` have the same effect.
@@ -102,13 +101,13 @@ match shape with
 | _ -> ()
 ```
 
-Active patterns enable you to define more complex custom pattern matching. For more information about active patterns, see [Active Patterns &#40;F&#35;&#41;](Active-Patterns-%5BFSharp%5D.md).
+Active patterns enable you to define more complex custom pattern matching. For more information about active patterns, see [Active Patterns](active-patterns.md).
 
-The case in which the identifier is an exception is used in pattern matching in the context of exception handlers. For information about pattern matching in exception handling, see [Exceptions: The try...with Expression &#40;F&#35;&#41;](Exceptions-The-try...with-Expression-%5BFSharp%5D.md).
+The case in which the identifier is an exception is used in pattern matching in the context of exception handlers. For information about pattern matching in exception handling, see [Exceptions: The `try...with` Expression](exception-handling/the-try-with-expression.md).
 
 
 ## Variable Patterns
-The variable pattern assigns the value being matched to a variable name, which is then available for use in the execution expression to the right of the `-&gt;` symbol. A variable pattern alone matches any input, but variable patterns often appear within other patterns, therefore enabling more complex structures such as tuples and arrays to be decomposed into variables.
+The variable pattern assigns the value being matched to a variable name, which is then available for use in the execution expression to the right of the `->` symbol. A variable pattern alone matches any input, but variable patterns often appear within other patterns, therefore enabling more complex structures such as tuples and arrays to be decomposed into variables.
 
 The following example demonstrates a variable pattern within a tuple pattern.
 
@@ -168,7 +167,7 @@ The record pattern is used to decompose records to extract the values of fields.
 [!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4814.fs)]
 
 ## Wildcard Pattern
-The wildcard pattern is represented by the underscore (`_`) character and matches any input, just like the variable pattern, except that the input is discarded instead of assigned to a variable. The wildcard pattern is often used within other patterns as a placeholder for values that are not needed in the expression to the right of the `-&gt;` symbol. The wildcard pattern is also frequently used at the end of a list of patterns to match any unmatched input. The wildcard pattern is demonstrated in many code examples in this topic. See the preceding code for one example.
+The wildcard pattern is represented by the underscore (`_`) character and matches any input, just like the variable pattern, except that the input is discarded instead of assigned to a variable. The wildcard pattern is often used within other patterns as a placeholder for values that are not needed in the expression to the right of the `->` symbol. The wildcard pattern is also frequently used at the end of a list of patterns to match any unmatched input. The wildcard pattern is demonstrated in many code examples in this topic. See the preceding code for one example.
 
 
 ## Patterns That Have Type Annotations
@@ -191,8 +190,8 @@ The following example uses the null pattern and the variable pattern.
 [!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4817.fs)]
 
 ## See Also
-[Match Expressions &#40;F&#35;&#41;](Match-Expressions-%5BFSharp%5D.md)
+[Match Expressions](match-expressions.md)
 
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[Active Patterns](active-patterns.md)
 
-[Active Patterns &#40;F&#35;&#41;](Active-Patterns-%5BFSharp%5D.md)
+[F# Language Reference](index.md)

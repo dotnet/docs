@@ -36,11 +36,11 @@ The following table describes symbols used in the F# language, provides links to
 |`&&`|[Boolean Operators](boolean-operators.md)|<ul><li>Computes the Boolean AND operation.<br /></li><ul/>|
 |`&&&`|[Bitwise Operators](bitwise-operators.md)|<ul><li>Computes the bitwise AND operation.<br /></li><ul/>|
 |`'`|[Literals](../literals.md)<br /><br />[Automatic Generalization](../generics/automatic-generalization.md)|<ul><li>Delimits a single-character literal.<br /></li><li>Indicates a generic type parameter.<br /></li><ul/>|
-|&#96;&#96;...&#96;&#96;|No more information available.|<ul><li>Delimits an identifier that would otherwise not be a legal identifier, such as a language keyword.<br /></li><ul/>|
+|<code>&#96;&#96;...&#96;&#96;</code>|No more information available.|<ul><li>Delimits an identifier that would otherwise not be a legal identifier, such as a language keyword.<br /></li><ul/>|
 |`( )`|[Unit Type](../unit-type.md)|<ul><li>Represents the single value of the unit type.<br /></li><ul/>|
 |`(...)`|[Tuples](../tuples.md)<br /><br />[Operator Overloading](../operator-overloading.md)|<ul><li>Indicates the order in which expressions are evaluated.<br /></li><li>Delimits a tuple.<br /></li><li>Used in operator definitions.<br /></li><ul/>|
 |`(*...*)`||<ul><li>Delimits a comment that could span multiple lines.<br /></li><ul/>|
-|<code>(|...|)</code>|[Active Patterns](../active-patterns.md)|<ul><li>Delimits an active pattern. Also called *banana clips*.<br /></li><ul/>|
+|<code>(&#124;...&#124;)</code>|[Active Patterns](../active-patterns.md)|<ul><li>Delimits an active pattern. Also called *banana clips*.<br /></li><ul/>|
 |`*`|[Arithmetic Operators](arithmetic-operators.md)<br /><br />[Tuples](../tuples.md)<br /><br />[Units of Measure](../units-of-measure.md)|<ul><li>When used as a binary operator, multiplies the left and right sides.<br /></li><li>In types, indicates pairing in a tuple.<br /></li><li>Used in units of measure types.<br /></li><ul/>|
 |`*?`|[Nullable Operators](nullable-operators.md)|<ul><li>Multiplies the left and right sides, when the right side is a nullable type.<br /></li><ul/>|
 |`**`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Computes the exponentiation operation (`x ** y` means `x` to the power of `y`).<br /></li><ul/>|
@@ -75,9 +75,9 @@ The following table describes symbols used in the F# language, provides links to
 |`<>?`|[Nullable Operators](nullable-operators.md)|<ul><li>Computes the "not equal" operation when the right side is a nullable type.<br /></li><ul/>|
 |`<=`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is less than or equal to the right side; otherwise, returns `false`.<br /></li><ul/>|
 |`<=?`|[Nullable Operators](nullable-operators.md)|<ul><li>Computes the "less than or equal to" operation when the right side is a nullable type.<br /></li><ul/>|
-|<code><|</code>|[Functions](../functions/index.md)|<ul><li>Passes the result of the expression on the right side to the function on left side (backward pipe operator).<br /></li><ul/>|
-|<code><||</code>|[Operators.&#40; &#60;&#124;&#124; &#41;&#60;'T1,'T2,'U&#62; Function](Operators.%5B-%5Bhh-%5D%5B%27T1%2C%27T2%2C%27U%5D-Function.md)|<ul><li>Passes the tuple of two arguments on the right side to the function on left side.<br /></li><ul/>|
-|<code><|||</code>|[Operators.&#40; &#60;&#124;&#124;&#124; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](Operators.%5B-%5Bhhh-%5D%5B%27T1%2C%27T2%2C%27T3%2C%27U%5D-Function.md)|<ul><li>Passes the tuple of three arguments on the right side to the function on left side.<br /></li><ul/>|
+|<code><&#124;</code>|[Functions](../functions/index.md)|<ul><li>Passes the result of the expression on the right side to the function on left side (backward pipe operator).<br /></li><ul/>|
+|<code><&#124;&#124;</code>|[Operators.&#40; &#60;&#124;&#124; &#41;&#60;'T1,'T2,'U&#62; Function](Operators.%5B-%5Bhh-%5D%5B%27T1%2C%27T2%2C%27U%5D-Function.md)|<ul><li>Passes the tuple of two arguments on the right side to the function on left side.<br /></li><ul/>|
+|<code><&#124;&#124;&#124;</code>|[Operators.&#40; &#60;&#124;&#124;&#124; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](Operators.%5B-%5Bhhh-%5D%5B%27T1%2C%27T2%2C%27T3%2C%27U%5D-Function.md)|<ul><li>Passes the tuple of three arguments on the right side to the function on left side.<br /></li><ul/>|
 |`<@...@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits a typed code quotation.<br /></li><ul/>|
 |`<@@...@@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits an untyped code quotation.<br /></li><ul/>|
 |`=`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is equal to the right side; otherwise, returns `false`.<br /></li><ul/>|
@@ -96,7 +96,7 @@ The following table describes symbols used in the F# language, provides links to
 |`?>=?`, `?>?`, `?<=?`, `?<?`, `?=?`, `?<>?`, `?+?`, `?-?`, `?*?`, `?/?`|[Nullable Operators](nullable-operators.md)|<ul><li>Equivalent to the corresponding operators without the surrounding question marks, where both sides are nullable types.<br /></li><ul/>|
 |`@`|[Lists](../lists.md)<br /><br />[Strings](../strings.md)|<ul><li>Concatenates two lists.<br /></li><li>When placed before a string literal, indicates that the string is to be interpreted verbatim, with no interpretation of escape characters.<br /></li><ul/>|
 |`[...]`|[Lists](../lists.md)|<ul><li>Delimits the elements of a list.<br /></li><ul/>|
-|<code>[|...|]</code>|[Arrays](../arrays.md)|<ul><li>Delimits the elements of an array.<br /></li><ul/>|
+|<code>[&#124;...&#124;]</code>|[Arrays](../arrays.md)|<ul><li>Delimits the elements of an array.<br /></li><ul/>|
 |`[<...>]`|[Attributes](../attributes.md)|<ul><li>Delimits an attribute.<br /></li><ul/>|
 |`\`|[Strings](../strings.md)|<ul><li>Escapes the next character; used in character and string literals.<br /></li><ul/>|
 |`^`|[Statically Resolved Type Parameters](../statically-resolved-type-parameters.md)<br /><br />[Strings](../strings.md)|<ul><li>Specifies type parameters that must be resolved at compile time, not at runtime.<br /></li><li>Concatenates strings.<br /></li><ul/>|
@@ -104,12 +104,12 @@ The following table describes symbols used in the F# language, provides links to
 |`_`|[Match Expressions](../match-expressions.md)<br /><br />[Generics](../generics.md)|<ul><li>Indicates a wildcard pattern.<br /></li><li>Specifies an anonymous generic parameter.<br /></li><ul/>|
 |`&#96;`|[Automatic Generalization](../generics/automatic-generalization.md)|<ul><li>Used internally to indicate a generic type parameter.<br /></li><ul/>|
 |`{...}`|[Sequences](../sequences.md)<br /><br />[Records](../records.md)|<ul><li>Delimits sequence expressions and computation expressions.<br /></li><li>Used in record definitions.<br /></li><ul/>|
-|<code>|</code>|[Match Expressions](../match-expressions.md)|<ul><li>Delimits individual match cases, individual discriminated union cases, and enumeration values.<br /></li><ul/>|
-|<code>||</code>|[Boolean Operators](boolean-operators.md)|<ul><li>Computes the Boolean OR operation.<br /></li><ul/>|
-|<code>|||</code>|[Bitwise Operators](bitwise-operators.md)|<ul><li>Computes the bitwise OR operation.<br /></li><ul/>|
-|<code>|></code>|[Functions](../functions/index.md)|<ul><li>Passes the result of the left side to the function on the right side (forward pipe operator).<br /></li><ul/>|
-|<code>||></code>|[Operators.&#40; &#124;&#124;&#62; &#41;&#60;'T1,'T2,'U&#62; Function](Operators.%5B-hh%5D-%5D%5B%27T1%2C%27T2%2C%27U%5D-Function.md)|<ul><li>Passes the tuple of two arguments on the left side to the function on the right side.<br /></li><ul/>|
-|`|||>`|[Operators.&#40; &#124;&#124;&#124;&#62; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](Operators.%5B-hhh%5D-%5D%5B%27T1%2C%27T2%2C%27T3%2C%27U%5D-Function.md)|<ul><li>Passes the tuple of three arguments on the left side to the function on the right side.<br /></li><ul/>|
+|<code>&#124;</code>|[Match Expressions](../match-expressions.md)|<ul><li>Delimits individual match cases, individual discriminated union cases, and enumeration values.<br /></li><ul/>|
+|<code>&#124;&#124;</code>|[Boolean Operators](boolean-operators.md)|<ul><li>Computes the Boolean OR operation.<br /></li><ul/>|
+|<code>&#124;&#124;&#124;</code>|[Bitwise Operators](bitwise-operators.md)|<ul><li>Computes the bitwise OR operation.<br /></li><ul/>|
+|<code>&#124;></code>|[Functions](../functions/index.md)|<ul><li>Passes the result of the left side to the function on the right side (forward pipe operator).<br /></li><ul/>|
+|<code>&#124;&#124;></code>|[Operators.&#40; &#124;&#124;&#62; &#41;&#60;'T1,'T2,'U&#62; Function](Operators.%5B-hh%5D-%5D%5B%27T1%2C%27T2%2C%27U%5D-Function.md)|<ul><li>Passes the tuple of two arguments on the left side to the function on the right side.<br /></li><ul/>|
+|<code>&#124;&#124;&#124;></code>|[Operators.&#40; &#124;&#124;&#124;&#62; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](Operators.%5B-hhh%5D-%5D%5B%27T1%2C%27T2%2C%27T3%2C%27U%5D-Function.md)|<ul><li>Passes the tuple of three arguments on the left side to the function on the right side.<br /></li><ul/>|
 |`~~`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary negation operator.<br /></li><ul/>|
 |`~~~`|[Bitwise Operators](bitwise-operators.md)|<ul><li>Computes the bitwise NOT operation.<br /></li><ul/>|
 |`~-`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary minus operator.<br /></li><ul/>|
@@ -124,7 +124,7 @@ The following table shows the order of precedence of operators and other express
 |--------|-------------|
 |`as`|Right|
 |`when`|Right|
-|<code>|</code> (pipe)|Left|
+|<code>&#124;</code> (pipe)|Left|
 |`;`|Right|
 |`let`|Nonassociative|
 |`function`, `fun`, `match`, `try`|Nonassociative|
@@ -143,7 +143,7 @@ The following table shows the order of precedence of operators and other express
 |`*`*op*, `/`*op*, `%`*op*|Left|
 |`**`*op*|Right|
 |`f x` (function application)|Left|
-|<code>|</code> (pattern match)|Right|
+|<code>&#124;</code> (pattern match)|Right|
 |prefix operators (`+`*op*, `-`*op*, `%`, `%%`, `&`, `&&`, `!`*op*, `~`*op*)|Left|
 |`.`|Left|
 |`f(x)`|Left|

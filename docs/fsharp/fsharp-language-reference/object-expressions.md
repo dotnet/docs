@@ -21,13 +21,13 @@ An *object expression* is an expression that creates a new instance of a dynamic
 ```fsharp
 // When typename is a class:
 { new typename [type-params]arguments with
-member-definitions
-[ additional-interface-definitions ]
+    member-definitions
+    [ additional-interface-definitions ]
 }
 // When typename is not a class:
 { new typename [generic-type-args] with
-member-definitions
-[ additional-interface-definitions ]
+    member-definitions
+    [ additional-interface-definitions ]
 }
 ```
 
@@ -43,4 +43,4 @@ You use object expressions when you want to avoid the extra code and overhead th
 
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)

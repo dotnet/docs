@@ -15,22 +15,21 @@ ms.assetid: c9d7ce27-f5ad-4766-b9e9-34187da5bc24
 
 Type extensions let you add new members to a previously defined object type.
 
-
 ## Syntax
 
 ```fsharp
 // Intrinsic extension.
 type typename with
-member self-identifier.member-name =
-body
-...
+    member self-identifier.member-name =
+        body
+    ...
 [ end ]
 
 // Optional extension.
 type typename with
-member self-identifier.member-name =
-body
-...
+    member self-identifier.member-name =
+        body
+    ...
 [ end ]
 ```
 
@@ -59,7 +58,6 @@ In the following example, an optional type extension extends the `System.Int32` 
 
 The new instance member will appear like any other method of the `Int32` type in IntelliSense, but only when the module that contains the extension is open or otherwise in scope.
 
-
 ## Generic Extension Methods
 Before F# 3.1, the F# compiler didn't support the use of C#-style extension methods with a generic type variable, array type, tuple type, or an F# function type as the “this” parameter. F# 3.1 supports the use of these extension members.
 
@@ -73,9 +71,9 @@ This approach is particularly useful when the generic type parameter is constrai
 
 ```fsharp
 type seq<’T> with
-/// Repeat each element of the sequence n times
-member xs.RepeatElements(n: int) =
-seq { for x in xs do for i in 1 .. n do yield x }
+    /// Repeat each element of the sequence n times
+    member xs.RepeatElements(n: int) =
+        seq { for x in xs do for i in 1 .. n do yield x }
 ```
 
 However, for a generic type, the type variable may not be constrained. You can now declare a C#-style extension member in F# to work around this limitation. When you combine this kind of declaration with the inline feature of F#, you can present generic algorithms as extension members.
@@ -85,8 +83,8 @@ Consider the following declaration:
 ```fsharp
 [<Extension>]
 type ExtraCSharpStyleExtensionMethodsInFSharp () =
-[<Extension>]
-static member inline Sum(xs: seq<’T>) = Seq.sum xs
+    [<Extension>]
+    static member inline Sum(xs: seq<’T>) = Seq.sum xs
 ```
 
 By using this declaration, you can write code that resembles the following sample.
@@ -102,6 +100,6 @@ In this code, the same generic arithmetic code is applied to lists of two types 
 
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md)
+[Members](members/index.md)

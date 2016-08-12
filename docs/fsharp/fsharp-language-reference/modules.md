@@ -22,7 +22,7 @@ In the context of the F# language, a *module* is a grouping of F# code, such as 
 module [accessibility-modifier] [qualified-namespace.]module-namedeclarations
 // Local module declaration.
 module [accessibility-modifier] module-name =
-declarations
+    declarations
 ```
 
 ## Remarks
@@ -46,7 +46,7 @@ If you have multiple modules in a file, you must use a local module declaration 
 
 If you have multiple files in a project or in a single compilation, or if you are building a library, you must include a namespace declaration or module declaration at the top of the file. The F# compiler only determines a module name implicitly when there is only one file in a project or compilation command line, and you are creating an application.
 
-The *accessibility-modifier* can be one of the following: `public`, `private`, `internal`. For more information, see [Access Control &#40;F&#35;&#41;](Access-Control-%5BFSharp%5D.md). The default is public.
+The *accessibility-modifier* can be one of the following: `public`, `private`, `internal`. For more information, see [Access Control](access-control.md). The default is public.
 
 
 ## Referencing Code in Modules
@@ -54,7 +54,7 @@ When you reference functions, types, and values from another module, you must ei
 
 `Namespace1.Namespace2.ModuleName.Identifier`
 
-You can open the module or one or more of the namespaces to simplify the code. For more information about opening namespaces and modules, see [Import Declarations: The open Keyword &#40;F&#35;&#41;](Import-Declarations-The-open-Keyword-%5BFSharp%5D.md).
+You can open the module or one or more of the namespaces to simplify the code. For more information about opening namespaces and modules, see [Import Declarations: The `open` Keyword](import-declarations-the-open-keyword.md).
 
 The following code example shows a top-level module that contains all the code up to the end of the file.
 
@@ -86,6 +86,6 @@ If you want all the code in a file to be in a single outer module and you want i
 [!code-fsharp[Main](../../../samples/snippets/fsmodules/snippet6612.fs)]
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Namespaces &#40;F&#35;&#41;](Namespaces-%5BFSharp%5D.md)
+[Namespaces](namespaces.md)

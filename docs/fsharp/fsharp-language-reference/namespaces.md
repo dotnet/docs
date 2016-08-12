@@ -50,7 +50,7 @@ Module1 10 20
 Module2 5 6
 ```
 
-For more information, see [Modules &#40;F&#35;&#41;](Modules-%5BFSharp%5D.md).
+For more information, see [Modules](modules.md).
 
 ## Nested Namespaces
 When you create a nested namespace, you must fully qualify it. Otherwise, you create a new top-level namespace. Indentation is ignored in namespace declarations.
@@ -73,6 +73,6 @@ You can also use global to reference the top-level .NET namespace, for example, 
 [!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet6408.fs)]
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Modules &#40;F&#35;&#41;](Modules-%5BFSharp%5D.md)
+[Modules](modules.md)

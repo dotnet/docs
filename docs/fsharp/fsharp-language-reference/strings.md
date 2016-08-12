@@ -19,8 +19,6 @@ The `string` type represents immutable text as a sequence of Unicode characters.
 ## Remarks
 String literals are delimited by the quotation mark (") character. The backslash character (\) is used to encode certain special characters. The backslash and the next character together are known as an *escape sequence*. Escape sequences supported in F# string literals are shown in the following table.
 
-
-
 |Character|Escape sequence|
 |---------|---------------|
 |Backspace|\b|
@@ -87,4 +85,4 @@ By using the `Chars` property of `System.String`, you can access the individual 
 Additional functionality for string handling is included in the `String` module in the `FSharp.Core` namespace. For more information, see [Core.String Module &#40;F&#35;&#41;](Core.String-Module-%5BFSharp%5D.md).
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)

@@ -59,6 +59,6 @@ The following example shows the alternative method, without XML tags. In this ex
 [!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet7102.fs)]
     
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Compiler Options &#40;F&#35;&#41;](Compiler-Options-%5BFSharp%5D.md)
+[Compiler Options](compiler-options.md)

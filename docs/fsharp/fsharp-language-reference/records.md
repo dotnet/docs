@@ -15,17 +15,16 @@ ms.assetid: 3a3701ea-4308-4fa1-9b5c-b955c470f17a
 
 Records represent simple aggregates of named values, optionally with members.
 
-
 ## Syntax
 
 ```fsharp
 [ attributes ]
 type [accessibility-modifier] typename = {
-[ mutable ] label1 : type1;
-[ mutable ] label2 : type2;
-...
+	[ mutable ] label1 : type1;
+	[ mutable ] label2 : type2;
+	...
 }
-member-list
+	[ member-list ]
 ```
 
 ## Remarks
@@ -37,7 +36,7 @@ Following are some examples.
 
 When each label is on a separate line, the semicolon is optional.
 
-You can set values in expressions known as *record expressions*. The compiler infers the type from the labels used (if the labels are sufficiently distinct from those of other record types). Braces ({ }) enclose the record expression. The following code shows a record expression that initializes a record with three float elements with labels **x**, **y** and **z**.
+You can set values in expressions known as *record expressions*. The compiler infers the type from the labels used (if the labels are sufficiently distinct from those of other record types). Braces ({ }) enclose the record expression. The following code shows a record expression that initializes a record with three float elements with labels `x`, `y` and `z`.
 
 [!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet1907.fs)]
 
@@ -63,7 +62,7 @@ The semicolons after the last field in the record expression and in the type def
 
 When you create a record, you must supply values for each field. You cannot refer to the values of other fields in the initialization expression for any field.
 
-In the following code, the type of **myRecord2** is inferred from the names of the fields. Optionally, you can specify the type name explicitly.
+In the following code, the type of `myRecord2` is inferred from the names of the fields. Optionally, you can specify the type name explicitly.
 
 [!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet1905.fs)]
 
@@ -119,10 +118,10 @@ If you write the same code with classes, the two class objects would be unequal 
 
 
 ## See Also
-[F&#35; Types](FSharp-Types.md)
+[F# Types](fsharp-types.md)
 
-[Classes &#40;F&#35;&#41;](Classes-%5BFSharp%5D.md)
+[Classes](classes.md)
 
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Pattern Matching &#40;F&#35;&#41;](Pattern-Matching-%5BFSharp%5D.md)
+[Pattern Matching](pattern-matching.md)

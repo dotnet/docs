@@ -21,9 +21,9 @@ This topic describes how to overload arithmetic operators in a class or record t
 ```fsharp
 // Overloading an operator as a class or record member.
 static member (operator-symbols) (parameter-list) =
-method-body
+    method-body
 // Overloading an operator at the global level
-let [inline] (operator-symbols) parameter-list =    function-body
+let [inline] (operator-symbols) parameter-list = function-body
 ```
 
 ## Remarks
@@ -40,13 +40,13 @@ The following code illustrates a vector class that has just two operators, one f
 [!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4001.fs)]
 
 ## Creating New Operators
-You can overload all the standard operators, but you can also create new operators out of sequences of certain characters. Allowed operator characters are `!`, `%`, `&`, `*`, `+`, `-`, `.`, `/`, `<`, `=`, `>`, `?`, `@`, `^`, `|`, and `~`. The `~` character has the special meaning of making an operator unary, and is not part of the operator character sequence. Not all operators can be made unary, as is described in [Prefix and Infix Operators](https://msdn.microsoft.com/library/#prefix) later in this topic.
+You can overload all the standard operators, but you can also create new operators out of sequences of certain characters. Allowed operator characters are `!`, `%`, `&`, `*`, `+`, `-`, `.`, `/`, `<`, `=`, `>`, `?`, `@`, `^`, `|`, and `~`. The `~` character has the special meaning of making an operator unary, and is not part of the operator character sequence. Not all operators can be made unary.
 
 Depending on the exact character sequence you use, your operator will have a certain precedence and associativity. Associativity can be either left to right or right to left and is used whenever operators of the same level of precedence appear in sequence without parentheses.
 
 The operator character `.` does not affect precedence, so that, for example, if you want to define your own version of multiplication that has the same precedence and associativity as ordinary multiplication, you could create operators such as `.*`.
 
-A table that shows the precedence of all operators in F# can be found in [Symbol and Operator Reference &#40;F&#35;&#41;](Symbol-and-Operator-Reference-%5BFSharp%5D.md).
+A table that shows the precedence of all operators in F# can be found in [Symbol and Operator Reference](symbol-and-operator-reference/index.md).
 
 
 ## Overloaded Operator Names
@@ -68,7 +68,7 @@ The following table shows the standard operators and their corresponding generat
 |`^`|`op_Concatenate`|
 |`%`|`op_Modulus`|
 |`&&&`|`op_BitwiseAnd`|
-|`|||`|`op_BitwiseOr`|
+|<code>&#124;&#124;&#124;</code>|`op_BitwiseOr`|
 |`^^^`|`op_ExclusiveOr`|
 |`<<<`|`op_LeftShift`|
 |`~~~`|`op_LogicalNot`|
@@ -82,8 +82,8 @@ The following table shows the standard operators and their corresponding generat
 |`>`|`op_GreaterThan`|
 |`?`|`op_Dynamic`|
 |`?<-`|`op_DynamicAssignment`|
-|`|>`|`op_PipeRight`|
-|`<|`|`op_PipeLeft`|
+|<code>&#124;></code>|`op_PipeRight`|
+|<code><&#124;</code>|`op_PipeLeft`|
 |`!`|`op_Dereference`|
 |`>>`|`op_ComposeRight`|
 |`<<`|`op_ComposeLeft`|
@@ -112,7 +112,7 @@ Other combinations of operator characters that are not listed here can be used a
 |`%`|`Percent`|
 |`.`|`Dot`|
 |`&`|`Amp`|
-|`|`|`Bar`|
+|<code>&#124;</code>|`Bar`|
 |`@`|`At`|
 |`^`|`Hat`|
 |`!`|`Bang`|
@@ -153,7 +153,7 @@ The output of the above code is `12`.
 
 You can redefine the regular arithmetic operators in this manner because the scoping rules for F# dictate that newly defined operators take precedence over the built-in operators.
 
-The keyword `inline` is often used with global operators, which are often small functions that are best integrated into the calling code. Making operator functions inline also enables them to work with statically resolved type parameters to produce statically resolved generic code. For more information, see [Inline Functions &#40;F&#35;&#41;](Inline-Functions-%5BFSharp%5D.md) and [Statically Resolved Type Parameters &#40;F&#35;&#41;](Statically-Resolved-Type-Parameters-%5BFSharp%5D.md).
+The keyword `inline` is often used with global operators, which are often small functions that are best integrated into the calling code. Making operator functions inline also enables them to work with statically resolved type parameters to produce statically resolved generic code. For more information, see [Inline Functions](functions/inline-functions.md) and [Statically Resolved Type Parameters](generics/statically-resolved-type-parameters.md).
 
 ## See Also
-[Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md)
+[Members](members/index.md)

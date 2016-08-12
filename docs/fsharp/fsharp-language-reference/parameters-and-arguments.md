@@ -23,7 +23,7 @@ Parameters can be specified in tuple or curried form, or in some combination of 
 
 
 ## Parameter Patterns
-Parameters supplied to functions and methods are, in general, patterns separated by spaces. This means that, in principle, any of the patterns described in [Match Expressions &#40;F&#35;&#41;](Match-Expressions-%5BFSharp%5D.md) can be used in a parameter list for a function or member.
+Parameters supplied to functions and methods are, in general, patterns separated by spaces. This means that, in principle, any of the patterns described in [Match Expressions](match-expressions.md) can be used in a parameter list for a function or member.
 
 Methods usually use the tuple form of passing arguments. This achieves a clearer result from the perspective of other .NET languages because the tuple form matches the way arguments are passed in .NET methods.
 
@@ -67,8 +67,9 @@ Active patterns can be useful as parameters, for example, when transforming an a
 
 ```fsharp
 type Point = { x : float; y : float }
+
 let (| Polar |) { x = x; y = y} =
-( sqrt (x*x + y*y), System.Math.Atan (y/ x) )
+    ( sqrt (x*x + y*y), System.Math.Atan (y/ x) )
 
 let radius (Polar(r, _)) = r
 let angle (Polar(_, theta)) = theta
@@ -161,4 +162,4 @@ true
 ```
 
 ## See Also
-[Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md)
+[Members](members/index.md)

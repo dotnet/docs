@@ -37,6 +37,6 @@ Some constructs expect a `unit` value. For example, a `do` binding or any code a
 This warning is a characteristic of functional programming; it does not appear in other .NET programming languages. In a purely functional program, in which functions do not have any side effects, the final return value is the only result of a function call. Therefore, when the result is ignored, it is a possible programming error. Although F# is not a purely functional programming language, it is a good practice to follow functional programming style whenever possible.
 
 ## See Also
-[Primitive Types &#40;F&#35;&#41;](Primitive-Types-%5BFSharp%5D.md)
+[Primitive](primitive-types.md)
 
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)

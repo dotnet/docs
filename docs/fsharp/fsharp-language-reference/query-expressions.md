@@ -46,7 +46,7 @@ query1
 
 In the previous code example, the query expression is in curly braces. The meaning of the code in the expression is, return every customer in the Customers table in the database in the query results. Query expressions return a type that implements `System.Linq.IQueryable&#96;1` and `System.Collections.Generic.IEnumerable&#96;1`, and so they can be iterated using the [Seq module](https://msdn.microsoft.com/library/54e8f059-ca52-4632-9ae9-49685ee9b684) as the example shows.
 
-Every computation expression type is built from a builder class. The builder class for the query computation expression is `QueryBuilder`. For more information, see [Computation Expressions &#40;F&#35;&#41;](Computation-Expressions-%5BFSharp%5D.md) and [Linq.QueryBuilder Class &#40;F&#35;&#41;](Linq.QueryBuilder-Class-%5BFSharp%5D.md).
+Every computation expression type is built from a builder class. The builder class for the query computation expression is `QueryBuilder`. For more information, see [Computation Expressions](computation-expressions.md) and [Linq.QueryBuilder Class](Linq.QueryBuilder-Class.md).
 
 
 ## Query Operators
@@ -58,7 +58,7 @@ Table 1 shows available query operators. In addition, see Table2, which compares
 
 This table assumes a database in the following form:
 
-![Sample Database Diagram](images/StudentCourseDB.png)
+![Sample Database Diagram](../../../images/StudentCourseDB.png)
 
 The code in the tables that follow also assumes the following database connection code. Projects should add references to System.Data,  System.Data.Linq, and FSharp.Data.TypeProviders assemblies. The code that creates this database is included at the end of this topic.
 
@@ -2426,8 +2426,8 @@ end
 ```
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Linq.QueryBuilder Class &#40;F&#35;&#41;](Linq.QueryBuilder-Class-%5BFSharp%5D.md)
+[Linq.QueryBuilder Class](Linq.QueryBuilder-Classe.md)
 
-[Computation Expressions &#40;F&#35;&#41;](Computation-Expressions-%5BFSharp%5D.md)
+[Computation Expressions](Computation-Expressions.md)

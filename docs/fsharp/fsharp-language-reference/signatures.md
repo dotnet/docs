@@ -21,7 +21,7 @@ For each F# code file, you can have a *signature file*, which is a file that has
 
 A signature file describes the namespaces, modules, types, and members in the corresponding implementation file. You use the information in a signature file to specify what parts of the code in the corresponding implementation file can be accessed from code outside the implementation file, and what parts are internal to the implementation file. The namespaces, modules, and types that are included in the signature file must be a subset of the namespaces, modules, and types that are included in the implementation file. With some exceptions noted later in this topic, those language elements that are not listed in the signature file are considered private to the implementation file. If no signature file is found in the project or command line, the default accessibility is used.
 
-For more information about the default accessibility, see [Access Control &#40;F&#35;&#41;](Access-Control-%5BFSharp%5D.md).
+For more information about the default accessibility, see [Access Control](access-control.md).
 
 In a signature file, you do not repeat the definition of the types and the implementations of each method or function. Instead, you use the signature for each method and function, which acts as a complete specification of the functionality that is implemented by a module or namespace fragment. The syntax for a type signature is the same as that used in abstract method declarations in interfaces and abstract classes, and is also shown by IntelliSense and by the F# interpreter fsi.exe when it displays correctly compiled input.
 
@@ -78,8 +78,8 @@ The following code shows the implementation file.
 [!code-fsharp[Main](../../../samples/snippets/fssignatures/snippet9001.fs)]
     
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Access Control &#40;F&#35;&#41;](Access-Control-%5BFSharp%5D.md)
+[Access Control](access-control.md)
 
-[Compiler Options &#40;F&#35;&#41;](Compiler-Options-%5BFSharp%5D.md)
+[Compiler Options](compiler-options.md)

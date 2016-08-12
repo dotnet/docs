@@ -29,14 +29,12 @@ Each of these values has type `string`.
 
 The following table summarizes the source line, file, and path identifiers that are available in F#. These identifiers are not preprocessor macros; they are built-in values that are recognized by the compiler.
 
-
-
 |Predefined identifier|Description|
 |---------------------|-----------|
 |`__LINE__`|Evaluates to the current line number, considering `#line` directives.|
 |`__SOURCE_DIRECTORY__`|Evaluates to the current full path of the source directory, considering `#line` directives.|
 |`__SOURCE_FILE__`|Evaluates to the current source file name and its path, considering `#line` directives.|
-For more information about the `#line` directive, see [Compiler Directives &#40;F&#35;&#41;](Compiler-Directives-%5BFSharp%5D.md).
+For more information about the `#line` directive, see [Compiler Directives](compiler-directives.md).
 
 ## Example
 
@@ -53,6 +51,6 @@ Source File: C:\Users\username\Documents\Visual Studio 2010\Projects\SourceInfo\
 ```
 
 ## See Also
-[Compiler Directives &#40;F&#35;&#41;](Compiler-Directives-%5BFSharp%5D.md)
+[Compiler Directives](compiler-directives.md)
 
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](fsharp-language-reference.md)

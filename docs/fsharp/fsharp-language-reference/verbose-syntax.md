@@ -349,8 +349,8 @@ module <module-name> =
 
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Compiler Directives &#40;F&#35;&#41;](Compiler-Directives-%5BFSharp%5D.md)
+[Compiler Directives](compiler-directives.md)
 
-[Code Formatting Guidelines &#40;F&#35;&#41;](Code-Formatting-Guidelines-%5BFSharp%5D.md)
+[Code Formatting Guidelines](code-formatting-guidelines.md)

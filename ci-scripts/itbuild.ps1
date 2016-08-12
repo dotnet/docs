@@ -1,7 +1,7 @@
 ## Script that iteratively builds the samples in the repository
 ## This script it used by the VSTS build agents.
 ## Author: Den Delimarsky (dendeli)
-## Last Modified: 7/29/2016
+## Last Modified: 8/12/2016
 
 ## This is needed for JSON parsing
 [System.Reflection.Assembly]::LoadWithPartialName("System.Web.Extensions")
@@ -49,7 +49,9 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
         LogWrite "Ready to work on restore for $restoreFileName. Executing command..."
         Write-Host $restorePath
         cd $restorePath
+
         dotnet restore | Write-Host
+        $buildResults.Add($restorePath, $LastExitCode)
 
         LogWrite "Restore complete."
 
@@ -65,6 +67,7 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
 
                 cd $projectPath
                 dotnet build | Write-Host
+                $buildResults.Add($projectPath, $LastExitCode)
             }
             else
             {
@@ -72,6 +75,7 @@ $Content = Get-Content "$homePath\global.projects" | Foreach-Object {
                 {
                     cd $projectPath
                     dotnet build | Write-Host
+                    $buildResults.Add($projectPath, $LastExitCode)
                 }
             }
         }
@@ -95,7 +99,9 @@ $Content = Get-Content "$homePath\single.projects" | Foreach-Object {
 
         cd $projectPath
         dotnet restore | Write-Host
+        $buildResults.Add($projectPath, $LastExitCode)
         dotnet build | Write-Host
+        $buildResults.Add($projectPath, $LastExitCode)
     }
 }
 

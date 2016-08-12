@@ -16,6 +16,9 @@ ms.assetid: 63374fa9-8fb8-43ac-bcb9-ef2290d9f851
 > [!NOTE]
 This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
 
+> [!NOTE]
+The API reference links will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+
 This walkthrough shows you how to use the Web Services Description Language (WSDL) type provider that is available in F# 3.0 to access a WSDL service. In other .NET languages, you generate the code to access the web service by calling svcutil.exe, or by adding a web reference in, for example, a C# project to get Visual Studio to call svcutil.exe for you. In F#, you have the additional option of using the WSDL type provider, so as soon as you write the code that creates the WsdlService type, the types are generated and become available. This process relies on the service being available when you are writing the code.
 
 This walkthrough illustrates the following tasks. You must complete them in this order for the walkthrough to succeed:
@@ -76,7 +79,7 @@ type TerraService = WsdlService<" HYPERLINK "http://terraserver-usa.com/TerraSer
 ```
 
   A red squiggle appears under this line of code if the service URI is misspelled or if the service itself is down or isn’t performing. If you point to the code, an error message describes the problem. You can find the same information in the **Error List** window or in the **Output Window** after you build.
-<br />  There are two ways to specify configuration settings for a WSDL connection, by using the app.config file for the project, or by using the static type parameters in the type provider declaration. You can use svcutil.exe to generate appropriate configuration file elements. For more information about using svcutil.exe to generate configuration information for a web service, see [ServiceModel Metadata Utility Tool &#40;Svcutil.exe&#41;](https://msdn.microsoft.com/library/aa347733.aspx).For a full description of the static type parameters for the WSDL type provider, see [WsdlService Type Provider &#40;F&#35;&#41;](WsdlService-Type-Provider-%5BFSharp%5D.md).
+<br />  There are two ways to specify configuration settings for a WSDL connection, by using the app.config file for the project, or by using the static type parameters in the type provider declaration. You can use svcutil.exe to generate appropriate configuration file elements. For more information about using svcutil.exe to generate configuration information for a web service, see [ServiceModel Metadata Utility Tool &#40;Svcutil.exe&#41;](https://msdn.microsoft.com/library/aa347733.aspx).For a full description of the static type parameters for the WSDL type provider, see [WsdlService Type Provider](WsdlService-Type-Provider-%5BFSharp%5D.md).
 <br />
 
 ## Calling the web service, and processing the results
@@ -109,6 +112,6 @@ Notice that you create the data types that are needed for the web service, such 
 
 
 ## See Also
-[WsdlService Type Provider &#40;F&#35;&#41;](WsdlService-Type-Provider-%5BFSharp%5D.md)
+[WsdlService Type Provider](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/wsdlservice-type-provider-%5bfsharp%5d)
 
 [Type Providers](index.md)

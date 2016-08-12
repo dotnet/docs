@@ -13,13 +13,13 @@ ms.assetid: ab453800-d4d0-4a11-9d55-2b358d56af27
 
 # Symbol and Operator Reference
 
-This topic includes a table of symbols and operators that are used in the F# language.
+> [!NOTE]
+The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
+This topic includes a table of symbols and operators that are used in the F# language.
 
 ## Table of Symbols and Operators
 The following table describes symbols used in the F# language, provides links to topics that provide more information, and provides a brief description of some of the uses of the symbol. Symbols are ordered according to the ASCII character set ordering.
-
-
 
 |Symbol or operator|Links|Description|
 |------------------|-----|-----------|
@@ -76,8 +76,8 @@ The following table describes symbols used in the F# language, provides links to
 |`<=`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is less than or equal to the right side; otherwise, returns `false`.<br /></li><ul/>|
 |`<=?`|[Nullable Operators](nullable-operators.md)|<ul><li>Computes the "less than or equal to" operation when the right side is a nullable type.<br /></li><ul/>|
 |<code><&#124;</code>|[Functions](../functions/index.md)|<ul><li>Passes the result of the expression on the right side to the function on left side (backward pipe operator).<br /></li><ul/>|
-|<code><&#124;&#124;</code>|[Operators.&#40; &#60;&#124;&#124; &#41;&#60;'T1,'T2,'U&#62; Function](Operators.%5B-%5Bhh-%5D%5B%27T1%2C%27T2%2C%27U%5D-Function.md)|<ul><li>Passes the tuple of two arguments on the right side to the function on left side.<br /></li><ul/>|
-|<code><&#124;&#124;&#124;</code>|[Operators.&#40; &#60;&#124;&#124;&#124; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](Operators.%5B-%5Bhhh-%5D%5B%27T1%2C%27T2%2C%27T3%2C%27U%5D-Function.md)|<ul><li>Passes the tuple of three arguments on the right side to the function on left side.<br /></li><ul/>|
+|<code><&#124;&#124;</code>|[Operators.&#40; &#60;&#124;&#124; &#41;&#60;'T1,'T2,'U&#62; Function](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/operators.%5b-%5bhh-%5d%5b%27t1%2c%27t2%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Passes the tuple of two arguments on the right side to the function on left side.<br /></li><ul/>|
+|<code><&#124;&#124;&#124;</code>|[Operators.&#40; &#60;&#124;&#124;&#124; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/operators.%5b-%5bhhh-%5d%5b%27t1%2c%27t2%2c%27t3%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Passes the tuple of three arguments on the right side to the function on left side.<br /></li><ul/>|
 |`<@...@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits a typed code quotation.<br /></li><ul/>|
 |`<@@...@@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits an untyped code quotation.<br /></li><ul/>|
 |`=`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is equal to the right side; otherwise, returns `false`.<br /></li><ul/>|
@@ -108,8 +108,8 @@ The following table describes symbols used in the F# language, provides links to
 |<code>&#124;&#124;</code>|[Boolean Operators](boolean-operators.md)|<ul><li>Computes the Boolean OR operation.<br /></li><ul/>|
 |<code>&#124;&#124;&#124;</code>|[Bitwise Operators](bitwise-operators.md)|<ul><li>Computes the bitwise OR operation.<br /></li><ul/>|
 |<code>&#124;></code>|[Functions](../functions/index.md)|<ul><li>Passes the result of the left side to the function on the right side (forward pipe operator).<br /></li><ul/>|
-|<code>&#124;&#124;></code>|[Operators.&#40; &#124;&#124;&#62; &#41;&#60;'T1,'T2,'U&#62; Function](Operators.%5B-hh%5D-%5D%5B%27T1%2C%27T2%2C%27U%5D-Function.md)|<ul><li>Passes the tuple of two arguments on the left side to the function on the right side.<br /></li><ul/>|
-|<code>&#124;&#124;&#124;></code>|[Operators.&#40; &#124;&#124;&#124;&#62; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](Operators.%5B-hhh%5D-%5D%5B%27T1%2C%27T2%2C%27T3%2C%27U%5D-Function.md)|<ul><li>Passes the tuple of three arguments on the left side to the function on the right side.<br /></li><ul/>|
+|<code>&#124;&#124;></code>|[Operators.&#40; &#124;&#124;&#62; &#41;&#60;'T1,'T2,'U&#62; Function](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/operators.%5b-hh%5d-%5d%5b%27t1%2c%27t2%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Passes the tuple of two arguments on the left side to the function on the right side.<br /></li><ul/>|
+|<code>&#124;&#124;&#124;></code>|[Operators.&#40; &#124;&#124;&#124;&#62; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/operators.%5b-hhh%5d-%5d%5b%27t1%2c%27t2%2c%27t3%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Passes the tuple of three arguments on the left side to the function on the right side.<br /></li><ul/>|
 |`~~`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary negation operator.<br /></li><ul/>|
 |`~~~`|[Bitwise Operators](bitwise-operators.md)|<ul><li>Computes the bitwise NOT operation.<br /></li><ul/>|
 |`~-`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary minus operator.<br /></li><ul/>|
@@ -117,8 +117,6 @@ The following table describes symbols used in the F# language, provides links to
 
 ## Operator Precedence
 The following table shows the order of precedence of operators and other expression keywords in the F# language, in order from lowest precedence to the highest precedence. Also listed is the associativity, if applicable.
-
-
 
 |Operator|Associativity|
 |--------|-------------|

@@ -234,7 +234,7 @@ Explore other query options by reviewing the query operators available in [Query
 ## See Also
 [Type Providers](index.md)
 
-[SqlEntityConnection Type Provider &#40;F&#35;&#41;](SqlEntityConnection-Type-Provider-%5BFSharp%5D.md)
+[SqlEntityConnection Type Provider](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/sqlentityconnection-type-provider-%5bfsharp%5d)
 
 [Walkthrough: Generating F# Types from an EDMX Schema File](generating-fsharp-types-from-edmx.md)
 

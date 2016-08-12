@@ -52,7 +52,7 @@ The two floating-point types, `float` and `double`, are represented using the 32
 
 The `decimal` type is a 128-bit data type suitable for financial and monetary calculations.
 
-C#’s `bool` type is used to represent Boolean values—values that are either true or false.
+C#’s `bool` type is used to represent Boolean values—values that are either `true` or `false`.
 
 Character and string processing in C# uses Unicode encoding. The `char` type represents a UTF-16 code unit, and the `string` type represents a sequence of UTF-16 code units.
 
@@ -127,3 +127,7 @@ There are several kinds of ***variables*** in C#, including fields, array elemen
     - A `null` reference, a reference to an instance of that array type, or a reference to an instance of a compatible array type
 * Delegate type
     - A `null` reference or a reference to an instance of a compatible that delegate type
+
+>[!div class="step-by-step"]
+[Pre](program-structure.md)
+[Next](expressions.md)

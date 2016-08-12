@@ -97,8 +97,7 @@ A class type that is declared to take type parameters is called a ***generic cla
 When the generic class is used, type arguments must be provided for each of the type parameters:
 
 ```csharp
-Pair<int,string> pair = new Pair<int,string>
- 	{ First = 1, Second = “two” };
+Pair<int,string> pair = new Pair<int,string> { First = 1, Second = “two” };
 int i = pair.First;     // TFirst is int
 string s = pair.Second; // TSecond is string
 ```
@@ -260,7 +259,7 @@ Console.WriteLine(s, args);
 
 A method’s body specifies the statements to execute when the method is invoked.
 
-A method body can declare variables that are specific to the invocation of the method. Such variables are called ***local variables***. A local variable declaration specifies a type name, a variable name, and possibly an initial value. The following example declares a local variable i with an initial value of zero and a local variable j with no initial value.
+A method body can declare variables that are specific to the invocation of the method. Such variables are called ***local variables***. A local variable declaration specifies a type name, a variable name, and possibly an initial value. The following example declares a local variable `i` with an initial value of zero and a local variable `j` with no initial value.
 
 ```csharp
 using System;
@@ -280,7 +279,7 @@ class Squares
 }
 ```
 
-C# requires a local variable to be ***definitely assigned*** before its value can be obtained. For example, if the declaration of the previous i did not include an initial value, the compiler would report an error for the subsequent usages of i because i would not be definitely assigned at those points in the program.
+C# requires a local variable to be ***definitely assigned*** before its value can be obtained. For example, if the declaration of the previous `i` did not include an initial value, the compiler would report an error for the subsequent usages of `i` because `i` would not be definitely assigned at those points in the program.
 
 A method can use `return` statements to return control to its caller. In a method returning `void`, `return` statements cannot specify an expression. In a method returning non-void, `return` statements must include an expression that computes the return value.
 
@@ -288,7 +287,7 @@ A method can use `return` statements to return control to its caller. In a metho
 
 A method declared with a static modifier is a ***static method***. A static method does not operate on a specific instance and can only directly access static members.
 
-A method declared without a static modifier is an ***instance method***. An instance method operates on a specific instance and can access both static and instance members. The instance on which an instance method was invoked can be explicitly accessed as this. It is an error to refer to this in a static method.
+A method declared without a static modifier is an ***instance method***. An instance method operates on a specific instance and can access both static and instance members. The instance on which an instance method was invoked can be explicitly accessed as `this`. It is an error to refer to `this` in a static method.
 
 The following Entity class has both static and instance members.
 
@@ -604,7 +603,7 @@ C# supports both instance and static constructors. An ***instance constructor***
 
 A constructor is declared like a method with no return type and the same name as the containing class. If a constructor declaration includes a static modifier, it declares a static constructor. Otherwise, it declares an instance constructor.
 
-Instance constructors can be overloaded, and can have optional parameters. For example, the `List<T>` class declares two instance constructors, one with no parameters and one that takes an `int` parameter. Instance constructors are invoked using the new operator. The following statements allocate two `List<string>` instances using the constructor of the `List` class with and without the optional argument.
+Instance constructors can be overloaded, and can have optional parameters. For example, the `List<T>` class declares two instance constructors, one with no parameters and one that takes an `int` parameter. Instance constructors are invoked using the `new` operator. The following statements allocate two `List<string>` instances using the constructor of the `List` class with and without the optional argument.
 
 ```csharp
 List<string> list1 = new List<string>();
@@ -723,3 +722,7 @@ A ***finalizer*** is a member that implements the actions required to finalize a
 The garbage collector is allowed wide latitude in deciding when to collect objects and run finalizers. Specifically, the timing of finalizer invocations is not deterministic, and finalizers may be executed on any thread. For these and other reasons, classes should implement finalizers only when no other solutions are feasible.
 
 The `using` statement provides a better approach to object destruction.
+
+>[!div class="step-by-step"]
+[Pre](statements.md)
+[Next](structs.md)

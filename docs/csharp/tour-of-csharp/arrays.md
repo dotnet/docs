@@ -80,3 +80,7 @@ t[1] = 2;
 t[2] = 3;
 int[] a = t;
 ```
+
+>[!div class="step-by-step"]
+[Pre](structs.md)
+[Next](interfaces.md)

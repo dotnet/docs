@@ -82,3 +82,7 @@ editBox.Paint();            // Error, no such method
 IControl control = editBox;
 control.Paint();            // Ok
 ```
+
+>[!div class="step-by-step"]
+[Pre](arrays.md)
+[Next](enums.md)

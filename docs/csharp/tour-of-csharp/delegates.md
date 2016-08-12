@@ -67,3 +67,7 @@ double[] doubles =  Apply(a, (double x) => x * 2.0);
 ```
 
 An interesting and useful property of a delegate is that it does not know or care about the class of the method it references; all that matters is that the referenced method has the same parameters and return type as the delegate.
+
+>[!div class="step-by-step"]
+[Pre](enums.md)
+[Next](attributes.md)

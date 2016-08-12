@@ -37,7 +37,7 @@ Instances of classes are created using the new operator, which allocates memory 
 Point p1 = new Point(0, 0);
 Point p2 = new Point(10, 20);
 ```
-The memory occupied by an object is automatically reclaimed when the object is no longer reachablein use. It is neither necessary nor possible to explicitly deallocate objects in C#.
+The memory occupied by an object is automatically reclaimed when the object is no longer reachable. It is neither necessary nor possible to explicitly deallocate objects in C#.
 
 ## Members
 
@@ -228,7 +228,7 @@ class OutExample
 }
 ```
 
-A ***parameter array*** permits a variable number of arguments to be passed to a method. A parameter array is declared with the params modifier. Only the last parameter of a method can be a parameter array, and the type of a parameter array must be a single-dimensional array type. The Write and WriteLine methods of the System.Console class are good examples of parameter array usage. They are declared as follows.
+A ***parameter array*** permits a variable number of arguments to be passed to a method. A parameter array is declared with the `params` modifier. Only the last parameter of a method can be a parameter array, and the type of a parameter array must be a single-dimensional array type. The Write and WriteLine methods of the `@System.Console` class are good examples of parameter array usage. They are declared as follows.
 
 ```csharp
 public class Console
@@ -342,7 +342,7 @@ Note that the `SetNextSerialNo` and `GetNextSerialNo` static methods are invoked
 
 ### Virtual, override, and abstract methods
 
-When an instance method declaration includes a `virtual` modifier, the method is said to be a ***virtual method***. When no virtual modifier is present, the method is said to be a ***non-virtual method***.
+When an instance method declaration includes a `virtual` modifier, the method is said to be a ***virtual method***. When no virtual modifier is present, the method is said to be a ***nonvirtual method***.
 
 When a virtual method is invoked, the ***run-time type*** of the instance for which that invocation takes place determines the actual method implementation to invoke. In a nonvirtual method invocation, the ***compile-time type*** of the instance is the determining factor.
 
@@ -604,7 +604,7 @@ C# supports both instance and static constructors. An ***instance constructor***
 
 A constructor is declared like a method with no return type and the same name as the containing class. If a constructor declaration includes a static modifier, it declares a static constructor. Otherwise, it declares an instance constructor.
 
-Instance constructors can be overloaded, and can have optional parameters. For example, the `List<T>` class declares two instance constructors, one with no parameters and one that takes an int parameter. Instance constructors are invoked using the new operator. The following statements allocate two `List<string>` instances using the constructor of the `List` class with and without the optional argument.
+Instance constructors can be overloaded, and can have optional parameters. For example, the `List<T>` class declares two instance constructors, one with no parameters and one that takes an `int` parameter. Instance constructors are invoked using the new operator. The following statements allocate two `List<string>` instances using the constructor of the `List` class with and without the optional argument.
 
 ```csharp
 List<string> list1 = new List<string>();
@@ -640,7 +640,7 @@ The accessor(s) of a property can be virtual. When a property declaration includ
 
 An ***indexer*** is a member that enables objects to be indexed in the same way as an array. An indexer is declared like a property except that the name of the member is this followed by a parameter list written between the delimiters `[` and `]`. The parameters are available in the accessor(s) of the indexer. Similar to properties, indexers can be read-write, read-only, and write-only, and the accessor(s) of an indexer can be virtual.
 
-The `List` class declares a single read-write indexer that takes an `int` parameter. The indexer makes it possible to index `List` instances with `int` values. For example
+The `List` class declares a single read-write indexer that takes an `int` parameter. The indexer makes it possible to index `List` instances with `int` values. For example:
 
 ```csharp
 List<string> names = new List<string>();

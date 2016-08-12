@@ -14,7 +14,9 @@ ms.assetid: 7faba1cc-6ea9-4a19-adb9-0335e4b132e5
 	
 # Enums
 
-An ***enum type*** is a distinct value type with a set of named constants. The following example declares and uses an enum type named `Color` with three constant values, `Red`, `Green`, and `Blue`.
+An ***enum type*** is a distinct value type with a set of named constants. You define enums when you need to define a type that can have a set of discrete values. They use one of the integral value types as their underlying storage. They provide semantic meaning to the discrete values.
+
+The following example declares and uses an enum type named `Color` with three constant values, `Red`, `Green`, and `Blue`.
 
 ```csharp
 using System;

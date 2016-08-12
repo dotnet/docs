@@ -13,7 +13,7 @@ ms.assetid: 2badaad7-f086-47e7-99c1-91f35117da83
 
 # Assertions
 
-The **assert** expression is a debugging feature that you can use to test an expression. Upon failure in Debug mode, an assertion generates a system error dialog box.
+The `assert` expression is a debugging feature that you can use to test an expression. Upon failure in Debug mode, an assertion generates a system error dialog box.
 
 ## Syntax
 
@@ -23,7 +23,7 @@ assert condition
 
 ## Remarks
 
-The `assert`* expression has type `bool -> unit`.
+The `assert` expression has type `bool -> unit`.
 
 In the previous syntax, *condition* represents a Boolean expression that is to be tested. If the expression evaluates to `true`, execution continues unaffected. If it evaluates to `false`, a system error dialog box is generated. The error dialog box has a caption that contains the string **Assertion Failed**. The dialog box contains a stack trace that indicates where the assertion failure occurred.
 
@@ -41,4 +41,4 @@ The following code example illustrates the use of the `assert` expression.
     
 ## See Also
 
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)

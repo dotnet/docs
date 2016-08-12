@@ -67,12 +67,12 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |**--warnon:&lt;int-list&gt;**|Enable specific warnings that might be off by default or disabled by another command line option. In F# 3.0, only the 1182 (unused variables) warning is off by default.|
 |**--warnaserror**[**+**&#124;**-**] [**&lt;int-list&gt;**]|Enables or disables the option to report warnings as errors. You can provide specific warning numbers to be disabled or enabled. Options later in the command line override options earlier in the command line. For example, to specify the warnings that you don't want reported as errors, specify **--warnaserror+ --warnaserror-:&lt;int-list&gt;**.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;warnaserror &#40;C&#35; Compiler Options&#41;](https://msdn.microsoft.com/library/406xhdz3.aspx).|
 |**--win32manifest:manifest-filename**|Adds a Win32 manifest file to the compilation. This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32manifest &#40;C&#35; Compiler Options&#41;](https://msdn.microsoft.com/library/bb545961.aspx).|
-|**--win32res:resource-filename**|Adds a Win32 resource file to the compilation.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32res &#40;C&#35; Compiler Options&#41;](https://msdn.microsoft.com/library/8f2f5x2e.aspx).|
+|**--win32res:resource-filename**|Adds a Win32 resource file to the compilation.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32res (&#40;C&#35); Compiler Options&#41;](https://msdn.microsoft.com/library/8f2f5x2e.aspx).|
 
 ## Related Topics
 
 
 |Title|Description|
 |-----|-----------|
-|[F&#35; Interactive Options](FSharp-Interactive-Options.md)|Describes command-line options supported by the F# interpreter, fsi.exe.|
+|[F# Interactive Options](../tutorials/fsharp-interactive/fsharp-interactive-reference.md)|Describes command-line options supported by the F# interpreter, fsi.exe.|
 |[Project Properties Reference](https://msdn.microsoft.com/library/16satcwx.aspx)|Describes the UI for projects, including project property pages that provide build options.|

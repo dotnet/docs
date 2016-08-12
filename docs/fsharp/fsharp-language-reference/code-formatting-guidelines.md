@@ -19,7 +19,7 @@ This topic summarizes code indentation guidelines for F#. Because the F# languag
 ## General Rules for Indentation
 When indentation is required, you must use spaces, not tabs. At least one space is required. Your organization can create coding standards to specify the number of spaces to use for indentation; three or four spaces of indentation at each level where indentation occurs is typical. You can configure Visual Studio to match your organization's indentation standards by changing the options in the `Options` dialog box, which is available from the `Tools` menu. In the `Text Editor` node, expand `F#` and then click `Tabs`. For a description of the available options, see [Options, Text Editor, All Languages, Tabs](https://msdn.microsoft.com/library/7sffa753.aspx).
 
-In general, when the compiler parses your code, it maintains an internal stack that indicates the current level of nesting. When code is indented, a new level of nesting is created, or pushed onto this internal stack. When a construct ends, the level is popped. Indentation is one way to signal the end of a level and pop the internal stack, but certain tokens also cause the level to be popped, such as the **end** keyword, or a closing brace or parenthesis.
+In general, when the compiler parses your code, it maintains an internal stack that indicates the current level of nesting. When code is indented, a new level of nesting is created, or pushed onto this internal stack. When a construct ends, the level is popped. Indentation is one way to signal the end of a level and pop the internal stack, but certain tokens also cause the level to be popped, such as the `end` keyword, or a closing brace or parenthesis.
 
 Code in a multiline construct, such as a type definition, function definition, `try...with` construct, and looping constructs, must be indented relative to the opening line of the construct. The first indented line establishes a column position for subsequent code in the same construct. The indentation level is called a *context*. The column position sets a minimum column, referred to as an *offside line*, for subsequent lines of code that are in the same context. When a line of code is encountered that is indented less than this established column position, the compiler assumes that the context has ended and that you are now coding at the next level up, in the previous context. The term *offside* is used to describe the condition in which a line of code triggers the end of a construct because it is not indented far enough. In other words, code to the left of an offside line is offside. In correctly indented code, you take advantage of the offside rule in order to delineate the end of constructs. If you use indentation improperly, an offside condition can cause the compiler to issue a warning or can lead to the incorrect interpretation of your code.
 
@@ -74,7 +74,7 @@ The following code examples illustrate this.
 [!code-fsharp[Main](../../../samples/snippets/fscodeformatting/snippet3.fs)]
 [!code-fsharp[Main](../../../samples/snippets/fscodeformatting/snippet4.fs)]
 
-For more information, see [Modules &#40;F&#35;&#41;](Modules-%5BFSharp%5D.md).
+For more information, see [Modules](modules.md).
 
 
 ## Exceptions to the Basic Indentation Rules
@@ -113,4 +113,4 @@ The constructs that permit a reset of column position are as follows:
 
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)

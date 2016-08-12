@@ -20,8 +20,8 @@ Discriminated unions provide support for values that can be one of a number of n
 
 ```fsharp
 type type-name =
-| case-identifier1 [of [ fieldname1 : ] type1 [ * [ fieldname2 : ] type2 ...]
-| case-identifier2 [of [fieldname3 : ]type3 [ * [ fieldname4 : ]type4 ...]
+    | case-identifier1 [of [ fieldname1 : ] type1 [ * [ fieldname2 : ] type2 ...]
+    | case-identifier2 [of [fieldname3 : ]type3 [ * [ fieldname4 : ]type4 ...]
 ...
 ```
 
@@ -32,9 +32,9 @@ For example, consider the following declaration of a Shape type.
 
 ```fsharp
 type Shape =
-| Rectangle of width : float * length : float
-| Circle of radius : float
-| Prism of width : float * float * height : float
+    | Rectangle of width : float * length : float
+    | Circle of radius : float
+    | Prism of width : float * float * height : float
 ```
 
 The preceding code declares a discriminated union Shape, which can have values of any of three cases: Rectangle, Circle, and Prism. Each case has a different set of fields. The Rectangle case has two named fields, both of type `float`, that have the names width and length. The Circle case has just one named field, radius. The Prism case has three fields, two of which are named Unnamed fields are referred to as anonymous fields.
@@ -54,8 +54,8 @@ The `option` type is a simple discriminated union in the F# core library. The `o
 ```fsharp
 // The option type is a discriminated union.
 type Option<'a> =
-| Some of 'a
-| None
+    | Some of 'a
+    | None
 ```
 
 The previous code specifies that the type `Option` is a discriminated union that has two cases, `Some` and `None`. The `Some` case has an associated value that consists of one anonymous field whose type is represented by the type parameter `'a`. The `None` case has no associated value. Thus the `option` type specifies a generic type that either has a value of some type or no value. The type `Option` also has a lowercase type alias, `option`, that is more commonly used.
@@ -72,10 +72,10 @@ In pattern matching expressions, you can use named fields to specify discriminat
 
 ```fsharp
 let getShapeHeight shape =
-match shape with
-| Rectangle(height = h) -> h
-| Circle(radius = r) -> 2. * r
-| Prism(height = h) -> h
+    match shape with
+    | Rectangle(height = h) -> h
+    | Circle(radius = r) -> 2. * r
+    | Prism(height = h) -> h
 ```
 
 Normally, the case identifiers can be used without qualifying them with the name of the union. If you want the name to always be qualified with the name of the union, you can apply the [RequireQualifiedAccess](https://msdn.microsoft.com/library/8b9b6ade-0471-4413-ac5d-638cd0de5f15) attribute to the union type definition.
@@ -105,14 +105,14 @@ Discriminated unions can be recursive, meaning that the union itself can be incl
 
 In the previous code, `resultSumTree` has the value 10. The following illustration shows the tree structure for `myTree`.
 
-![Tree structure for myTree](images/TreeStructureDiagram.png)
+![Tree structure for myTree](../../../images/TreeStructureDiagram.png)
 
 Discriminated unions work well if the nodes in the tree are heterogeneous. In the following code, the type `Expression` represents the abstract syntax tree of an expression in a simple programming language that supports addition and multiplication of numbers and variables. Some of the union cases are not recursive and represent either numbers (`Number`) or variables (`Variable`). Other cases are recursive, and represent operations (`Add` and `Multiply`), where the operands are also expressions. The `Evaluate` function uses a match expression to recursively process the syntax tree.
 
 [!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2006.fs)]
 
-When this code is executed, the value of **result** is 5.
+When this code is executed, the value of `result` is 5.
 
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F&#35; Language Reference](index.md)

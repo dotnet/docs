@@ -47,8 +47,8 @@ ccccc
 ```
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Parameters and Arguments &#40;F&#35;&#41;](Parameters-and-Arguments-%5BFSharp%5D.md)
+[Parameters and Arguments](parameters-and-arguments.md)
 
-[Events &#40;F&#35;&#41;](Events-%5BFSharp%5D.md)
+[Events](members/events.md)

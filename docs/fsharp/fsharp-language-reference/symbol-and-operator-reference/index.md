@@ -83,7 +83,7 @@ The following table describes symbols used in the F# language, provides links to
 |`=`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is equal to the right side; otherwise, returns `false`.<br /></li><ul/>|
 |`=?`|[Nullable Operators](nullable-operators.md)|<ol><li>Computes the "equal" operation when the right side is a nullable type.<br /></li><ol/>|
 |`==`|Not applicable.|<ul><li>Not used in F#. Use `=` for equality operations.<br /></li><ul/>|
-|`&gt;`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is greater than the right side; otherwise, returns `false`.<br /></li><ul/>|
+|`>`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is greater than the right side; otherwise, returns `false`.<br /></li><ul/>|
 |`>?`|[Nullable Operators](nullable-operators.md)|<ol><li>Computes the "greather than" operation when the right side is a nullable type.<br /></li><ol/>|
 |`>>`|[Functions](../functions/index.md)|<ul><li>Composes two functions (forward composition operator).<br /></li><ul/>|
 |`>>>`|[Bitwise Operators](bitwise-operators.md)|<ul><li>Shifts bits in the quantity on the left side to the right by the number of places specified on the right side.<br /></li><ul/>|

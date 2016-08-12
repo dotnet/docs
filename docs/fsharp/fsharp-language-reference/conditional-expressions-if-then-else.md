@@ -19,7 +19,7 @@ The `if...then...else` expression runs different branches of code and also evalu
 ## Syntax
 
 ```fsharp
-if Boolean-expression then expression1 [ else expression2 ]
+if boolean-expression then expression1 [ else expression2 ]
 ```
 
 ## Remarks
@@ -39,5 +39,5 @@ You are only 9 years old and already learning F#? Wow!
 ```
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 

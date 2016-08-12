@@ -107,4 +107,4 @@ Although you do not usually need to specify the attribute target explicitly, val
 
 ## See Also
 
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)

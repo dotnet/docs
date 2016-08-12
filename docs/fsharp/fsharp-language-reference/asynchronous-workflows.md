@@ -66,8 +66,8 @@ The `runAll` function launches three asynchronous workflows in parallel and wait
 
 ## See Also
 
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Computation Expressions &#40;F&#35;&#41;](Computation-Expressions-%5BFSharp%5D.md)
+[Computation Expressions](computation-expressions.md)
 
-[Control.Async Class &#40;F&#35;&#41;](Control.Async-Class-%5BFSharp%5D.md)
+[Control.Async Class](Control.Async-Class.md)

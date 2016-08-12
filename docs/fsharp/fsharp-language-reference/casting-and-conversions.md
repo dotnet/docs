@@ -36,6 +36,6 @@ If you were to update only on field of that record you could use the *copy and u
 [!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet1906.fs)]
 
 ## See Also
-[Records (F&#35;)](records-[fsharp].md)
+[Records](records.md)
 
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)

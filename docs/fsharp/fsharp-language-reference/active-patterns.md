@@ -119,7 +119,7 @@ The output of the previous code is as follows:
 ```
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Match Expressions &#40;F&#35;&#41;](Match-Expressions-%5BFSharp%5D.md)
+[Match Expressions](match-expressions.md)
 

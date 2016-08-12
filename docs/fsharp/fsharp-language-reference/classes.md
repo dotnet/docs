@@ -37,13 +37,13 @@ and [access-modifier] type-name2 ...
 ## Remarks
 Classes represent the fundamental description of .NET object types; the class is the primary type concept that supports object-oriented programming in F#.
 
-In the preceding syntax, the `type-name` is any valid identifier. The `type-params` describes optional generic type parameters. It consists of type parameter names and constraints enclosed in angle brackets (`<` and `>`). For more information, see [Generics &#40;F&#35;&#41;](Generics-%5BFSharp%5D.md) and [Constraints &#40;F&#35;&#41;](Constraints-%5BFSharp%5D.md). The `parameter-list` describes constructor parameters. The first access modifier pertains to the type; the second pertains to the primary constructor. In both cases, the default is `public`.
+In the preceding syntax, the `type-name` is any valid identifier. The `type-params` describes optional generic type parameters. It consists of type parameter names and constraints enclosed in angle brackets (`<` and `>`). For more information, see [Generics](generics/index.md) and [Constraints](generics/constraints.md). The `parameter-list` describes constructor parameters. The first access modifier pertains to the type; the second pertains to the primary constructor. In both cases, the default is `public`.
 
 You specify the base class for a class by using the `inherit` keyword. You must supply arguments, in parentheses, for the base class constructor.
 
 You declare fields or function values that are local to the class by using `let` bindings, and you must follow the general rules for `let` bindings. The `do-bindings` section includes code to be executed upon object construction.
 
-The `member-list` consists of additional constructors, instance and static method declarations, interface declarations, abstract bindings, and property and event declarations. These are described in [Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md).
+The `member-list` consists of additional constructors, instance and static method declarations, interface declarations, abstract bindings, and property and event declarations. These are described in [Members](members/index.md).
 
 The `identifier` that is used with the optional `as` keyword gives a name to the instance variable, or self identifier, which can be used in the type definition to refer to the instance of the type. For more information, see the section Self Identifiers later in this topic.
 
@@ -84,11 +84,11 @@ The following code example illustrates the two ways to create a self identifier.
 
 ```fsharp
 type MyClass2(dataIn) as self =
-let data = dataIn
-do
-self.PrintMessage()
-member this.PrintMessage() =
-printf "Creating MyClass2 with Data %d" data
+    let data = dataIn
+    do
+        self.PrintMessage()
+    member this.PrintMessage() =
+        printf "Creating MyClass2 with Data %d" data
 ```
 
 Unlike in other .NET languages, you can name the self identifier however you want; you are not restricted to names such as `self`, `Me`, or `this`.
@@ -108,15 +108,15 @@ Type arguments are inferred when the type is used. In the following code, the in
     
 ## Specifying Inheritance
 
-The `inherit` clause identifies the direct base class, if there is one. In F#, only one direct base class is allowed. Interfaces that a class implements are not considered base classes. Interfaces are discussed in the [Interfaces &#40;F&#35;&#41;](Interfaces-%5BFSharp%5D.md) topic.
+The `inherit` clause identifies the direct base class, if there is one. In F#, only one direct base class is allowed. Interfaces that a class implements are not considered base classes. Interfaces are discussed in the [Interfaces](Interfaces.md) topic.
 
 You can access the methods and properties of the base class from the derived class by using the language keyword `base` as an identifier, followed by a period (.) and the name of the member.
 
-For more information, see [Inheritance &#40;F&#35;&#41;](Inheritance-%5BFSharp%5D.md).
+For more information, see [Inheritance](inheritance.md).
 
 
 ## Members Section
-You can define static or instance methods, properties, interface implementations, abstract members, event declarations, and additional constructors in this section. Let and do bindings cannot appear in this section. Because members can be added to a variety of F# types in addition to classes, they are discussed in a separate topic, [Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md).
+You can define static or instance methods, properties, interface implementations, abstract members, event declarations, and additional constructors in this section. Let and do bindings cannot appear in this section. Because members can be added to a variety of F# types in addition to classes, they are discussed in a separate topic, [Members](members/index.md).
 
 
 ## Mutually Recursive Types
@@ -130,19 +130,19 @@ The output is a list of all the files in the current directory.
 ## When to Use Classes, Unions, Records, and Structures
 Given the variety of types to choose from, you need to have a good understanding of what each type is designed for to select the appropriate type for a particular situation. Classes are designed for use in object-oriented programming contexts. Object-oriented programming is the dominant paradigm used in applications that are written for the .NET Framework. If your F# code has to work closely with the .NET Framework or another object-oriented library, and especially if you have to extend from an object-oriented type system such as a UI library, classes are probably appropriate.
 
-If you are not interoperating closely with object-oriented code, or if you are writing code that is self-contained and therefore protected from frequent interaction with object-oriented code, you should consider using records and discriminated unions. A single, well thought–out discriminated union, together with appropriate pattern matching code, can often be used as a simpler alternative to an object hierarchy. For more information about discriminated unions, see [Discriminated Unions &#40;F&#35;&#41;](Discriminated-Unions-%5BFSharp%5D.md).
+If you are not interoperating closely with object-oriented code, or if you are writing code that is self-contained and therefore protected from frequent interaction with object-oriented code, you should consider using records and discriminated unions. A single, well thought–out discriminated union, together with appropriate pattern matching code, can often be used as a simpler alternative to an object hierarchy. For more information about discriminated unions, see [Discriminated Unions](discriminated-unions.md).
 
-Records have the advantage of being simpler than classes, but records are not appropriate when the demands of a type exceed what can be accomplished with their simplicity. Records are basically simple aggregates of values, without separate constructors that can perform custom actions, without hidden fields, and without inheritance or interface implementations. Although members such as properties and methods can be added to records to make their behavior more complex, the fields stored in a record are still a simple aggregate of values. For more information about records, see [Records &#40;F&#35;&#41;](Records-%5BFSharp%5D.md).
+Records have the advantage of being simpler than classes, but records are not appropriate when the demands of a type exceed what can be accomplished with their simplicity. Records are basically simple aggregates of values, without separate constructors that can perform custom actions, without hidden fields, and without inheritance or interface implementations. Although members such as properties and methods can be added to records to make their behavior more complex, the fields stored in a record are still a simple aggregate of values. For more information about records, see [Records](records.md).
 
-Structures are also useful for small aggregates of data, but they differ from classes and records in that they are .NET value types. Classes and records are .NET reference types. The semantics of value types and reference types are different in that value types are passed by value. This means that they are copied bit for bit when they are passed as a parameter or returned from a function. They are also stored on the stack or, if they are used as a field, embedded inside the parent object instead of stored in their own separate location on the heap. Therefore, structures are appropriate for frequently accessed data when the overhead of accessing the heap is a problem. For more information about structures, see [Structures &#40;F&#35;&#41;](Structures-%5BFSharp%5D.md).
+Structures are also useful for small aggregates of data, but they differ from classes and records in that they are .NET value types. Classes and records are .NET reference types. The semantics of value types and reference types are different in that value types are passed by value. This means that they are copied bit for bit when they are passed as a parameter or returned from a function. They are also stored on the stack or, if they are used as a field, embedded inside the parent object instead of stored in their own separate location on the heap. Therefore, structures are appropriate for frequently accessed data when the overhead of accessing the heap is a problem. For more information about structures, see [Structures](structures.md).
 
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Members &#40;F&#35;&#41;](Members-%5BFSharp%5D.md)
+[Members](members/index.md)
 
-[Inheritance &#40;F&#35;&#41;](Inheritance-%5BFSharp%5D.md)
+[Inheritance](inheritance.md)
 
-[Interfaces &#40;F&#35;&#41;](Interfaces-%5BFSharp%5D.md)
+[Interfaces](interfaces.md)
 

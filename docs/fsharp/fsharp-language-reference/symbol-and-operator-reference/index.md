@@ -36,7 +36,7 @@ The following table describes symbols used in the F# language, provides links to
 |`&&`|[Boolean Operators](boolean-operators.md)|<ul><li>Computes the Boolean AND operation.<br /></li><ul/>|
 |`&&&`|[Bitwise Operators](bitwise-operators.md)|<ul><li>Computes the bitwise AND operation.<br /></li><ul/>|
 |`'`|[Literals](../literals.md)<br /><br />[Automatic Generalization](../generics/automatic-generalization.md)|<ul><li>Delimits a single-character literal.<br /></li><li>Indicates a generic type parameter.<br /></li><ul/>|
-|`&#96;&#96;...&#96;&#96;`|No more information available.|<ul><li>Delimits an identifier that would otherwise not be a legal identifier, such as a language keyword.<br /></li><ul/>|
+|&#96;&#96;...&#96;&#96;|No more information available.|<ul><li>Delimits an identifier that would otherwise not be a legal identifier, such as a language keyword.<br /></li><ul/>|
 |`( )`|[Unit Type](../unit-type.md)|<ul><li>Represents the single value of the unit type.<br /></li><ul/>|
 |`(...)`|[Tuples](../tuples.md)<br /><br />[Operator Overloading](../operator-overloading.md)|<ul><li>Indicates the order in which expressions are evaluated.<br /></li><li>Delimits a tuple.<br /></li><li>Used in operator definitions.<br /></li><ul/>|
 |`(*...*)`||<ul><li>Delimits a comment that could span multiple lines.<br /></li><ul/>|
@@ -109,7 +109,7 @@ The following table describes symbols used in the F# language, provides links to
 |`|||`|[Bitwise Operators](bitwise-operators.md)|<ul><li>Computes the bitwise OR operation.<br /></li><ul/>|
 |`|>`|[Functions](../functions/index.md)|<ul><li>Passes the result of the left side to the function on the right side (forward pipe operator).<br /></li><ul/>|
 |`||>`|[Operators.&#40; &#124;&#124;&#62; &#41;&#60;'T1,'T2,'U&#62; Function](Operators.%5B-hh%5D-%5D%5B%27T1%2C%27T2%2C%27U%5D-Function.md)|<ul><li>Passes the tuple of two arguments on the left side to the function on the right side.<br /></li><ul/>|
-|`|||>`|[Operators.&#40; &#124;&#124;&#124;&#62; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](Operators.%5B-hhh%5D-%5D%5B%27T1%2C%27T2%2C%27T3%2C%27U%5D-Function.md)|<ol><li>Passes the tuple of three arguments on the left side to the function on the right side.<br /></li><ol/>|
+|`|||>`|[Operators.&#40; &#124;&#124;&#124;&#62; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](Operators.%5B-hhh%5D-%5D%5B%27T1%2C%27T2%2C%27T3%2C%27U%5D-Function.md)|<ul><li>Passes the tuple of three arguments on the left side to the function on the right side.<br /></li><ul/>|
 |`~~`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary negation operator.<br /></li><ul/>|
 |`~~~`|[Bitwise Operators](bitwise-operators.md)|<ul><li>Computes the bitwise NOT operation.<br /></li><ul/>|
 |`~-`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary minus operator.<br /></li><ul/>|

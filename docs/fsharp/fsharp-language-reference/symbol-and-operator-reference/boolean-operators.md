@@ -22,7 +22,7 @@ The following table summarizes the Boolean operators that are available in the F
 |Operator|Description|
 |--------|-----------|
 |`not`|Boolean negation|
-|`||`|Boolean OR|
+|<code>&#124;&#124;</code>|Boolean OR|
 |`&&`|Boolean AND|
 
 The Boolean AND and OR operators perform *short-circuit evaluation*, that is, they evaluate the expression on the right of the operator only when it is necessary to determine the overall result of the expression. The second expression of the `&&` operator is evaluated only if the first expression evaluates to `true`; the second expression of the `||` operator is evaluated only if the first expression evaluates to `false`.

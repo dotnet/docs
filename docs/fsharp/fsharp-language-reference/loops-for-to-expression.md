@@ -20,7 +20,7 @@ The `for...to` expression is used to iterate in a loop over a range of values of
 
 ```fsharp
 for identifier = start [ to | downto ] finish do
-body-expression
+    body-expression
 ```
 
 ## Remarks
@@ -39,8 +39,8 @@ The output of the previous code is as follows.
 ```
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Loops: for...in Expression &#40;F&#35;&#41;](Loops-for...in-Expression-%5BFSharp%5D.md)
+[Loops: `for...in` Expression](loops-for-in-expression.md)
 
-[Loops: while...do Expression &#40;F&#35;&#41;](Loops-while...do-Expression-%5BFSharp%5D.md)
+[Loops: `while...do` Expression](loops-while-do-expression.md)

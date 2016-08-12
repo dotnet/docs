@@ -17,11 +17,11 @@ Inheritance is used to model the "is-a" relationship, or subtyping, in object-or
 
 
 ## Specifying Inheritance Relationships
-You specify inheritance relationships by using the **inherit** keyword in a class declaration. The basic syntactical form is shown in the following example.
+You specify inheritance relationships by using the `inherit` keyword in a class declaration. The basic syntactical form is shown in the following example.
 
 ```fsharp
 type MyDerived(...) =
-inherit MyBase(...)
+    inherit MyBase(...)
 ```
 
 A class can have at most one direct base class. If you do not specify a base class by using the `inherit` keyword, the class implicitly inherits from `System.Object`.
@@ -38,13 +38,17 @@ The keyword `base` is available in derived classes and refers to the base class 
 ## Virtual Methods and Overrides
 Virtual methods (and properties) work somewhat differently in F# as compared to other .NET languages. To declare a new virtual member, you use the `abstract` keyword. You do this regardless of whether you provide a default implementation for that method. Thus a complete definition of a virtual method in a base class follows this pattern:
 
-`abstract``member`*method-name* : *type*
+```fsharp
+abstract member [method-name] : [type]
 
-`default`*self-identifier*.*method-name`argument-list* = *method-body*
+default [self-identifier].[method-name] [argument-list] = [method-body]
+```
 
 And in a derived class, an override of this virtual method follows this pattern:
 
-`override`*self-identifier*.*method-name`argument-list* = *method-body*
+```fsharp
+override [self-identifier].[method-name] [argument-list] = [method-body]
+```
 
 If you omit the default implementation in the base class, the base class becomes an abstract class.
 
@@ -59,19 +63,20 @@ The following code shows a base class and a derived class, where the derived cla
 
 [!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2602.fs)]
 
-In the case of multiple constructors, the following code can be used. The first line of the derived class constructors is the `inherit` clause, and the fields appear as explicit fields that are declared with the `val` keyword. For more information, see [Explicit Fields: The val Keyword](https://msdn.microsoft.com/library/a58c4413-16c7-4e1a-8995-0ccc6e044157).
+In the case of multiple constructors, the following code can be used. The first line of the derived class constructors is the `inherit` clause, and the fields appear as explicit fields that are declared with the `val` keyword. For more information, see [Explicit Fields: The `val` Keyword](members/explicit-fields-the-val-keyword.md).
 
 ```fsharp
 type BaseClass =
-val string1 : string
-new (str) = { string1 = str }
-new () = { string1 = "" }
+    val string1 : string
+    new (str) = { string1 = str }
+    new () = { string1 = "" }
 
 type DerivedClass =
-inherit BaseClass
-val string2 : string
-new (str1, str2) = { inherit BaseClass(str1); string2 = str2 }
-new (str2) = { inherit BaseClass(); string2 = str2 }
+    inherit BaseClass
+
+    val string2 : string
+    new (str1, str2) = { inherit BaseClass(str1); string2 = str2 }
+    new (str2) = { inherit BaseClass(); string2 = str2 }
 
 let obj1 = DerivedClass("A", "B")
 let obj2 = DerivedClass("A")
@@ -82,12 +87,12 @@ In cases where a minor modification of a type is required, consider using an obj
 
 [!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2603.fs)]
 
-For more information about object expressions, see [Object Expressions &#40;F&#35;&#41;](Object-Expressions-%5BFSharp%5D.md).
+For more information about object expressions, see [Object Expressions](object-expressions.md).
 
-When you are creating object hierarchies, consider using a discriminated union instead of inheritance. Discriminated unions can also model varied behavior of different objects that share a common overall type. A single discriminated union can often eliminate the need for a number of derived classes that are minor variations of each other. For information about discriminated unions, see [Discriminated Unions &#40;F&#35;&#41;](Discriminated-Unions-%5BFSharp%5D.md).
+When you are creating object hierarchies, consider using a discriminated union instead of inheritance. Discriminated unions can also model varied behavior of different objects that share a common overall type. A single discriminated union can often eliminate the need for a number of derived classes that are minor variations of each other. For information about discriminated unions, see [Discriminated Unions](discriminated-unions.md).
 
 
 ## See Also
-[Object Expressions &#40;F&#35;&#41;](Object-Expressions-%5BFSharp%5D.md)
+[Object Expressions](object-expressions.md)
 
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)

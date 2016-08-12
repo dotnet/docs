@@ -33,7 +33,7 @@ A flexible type is equivalent to a generic type that has a constraint that limit
 'T when 'T :> SomeType
 ```
 
-Flexible types are useful in several types of situations. For example, when you have a higher order function (a function that takes a function as an argument), it is often useful to have the function return a flexible type. In the following example, the use of a flexible type with a sequence argument in **iterate2** enables the higher order function to work with functions that generate sequences, arrays, lists, and any other enumerable type.
+Flexible types are useful in several types of situations. For example, when you have a higher order function (a function that takes a function as an argument), it is often useful to have the function return a flexible type. In the following example, the use of a flexible type with a sequence argument in `iterate2` enables the higher order function to work with functions that generate sequences, arrays, lists, and any other enumerable type.
 
 Consider the following two functions, one of which returns a sequence, the other of which returns a flexible type.
 
@@ -53,7 +53,7 @@ You can pass any of the following enumerable sequences to this function:
 - An array of sequences
 - Any other combination of enumerable sequences
 
-The following code uses **Seq.concat** to demonstrate the scenarios that you can support by using flexible types.
+The following code uses `Seq.concat` to demonstrate the scenarios that you can support by using flexible types.
 
 [!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4102.fs)]
 
@@ -71,6 +71,6 @@ In F#, as in other object-oriented languages, there are contexts in which derive
 
 ## See Also
 
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Generics &#40;F&#35;&#41;](Generics-%5BFSharp%5D.md)
+[Generics](generics/index.md)

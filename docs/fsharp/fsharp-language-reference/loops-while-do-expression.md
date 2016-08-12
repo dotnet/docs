@@ -20,7 +20,7 @@ The `while...do` expression is used to perform iterative execution (looping) whi
 
 ```fsharp
 while test-expression do
-body-expression
+    body-expression
 ```
 
 ## Remarks
@@ -38,12 +38,12 @@ Found a 10!
 ```
 
 >[!NOTE] 
-You can use `while...do` in sequence expressions and other computation expressions, in which case a customized version of the `while...do` expression is used. For more information, see [Sequences &#40;F&#35;&#41;](Sequences-%5BFSharp%5D.md), [Asynchronous Workflows &#40;F&#35;&#41;](Asynchronous-Workflows-%5BFSharp%5D.md), and [Computation Expressions &#40;F&#35;&#41;](Computation-Expressions-%5BFSharp%5D.md).
+You can use `while...do` in sequence expressions and other computation expressions, in which case a customized version of the `while...do` expression is used. For more information, see [Sequences](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Computation Expressions](computation-expressions.md).
 
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Loops: for...in Expression &#40;F&#35;&#41;](Loops-for...in-Expression-%5BFSharp%5D.md)
+[Loops: `for...in` Expression](loops-for-in-expression.md)
 
-[Loops: for...to Expression &#40;F&#35;&#41;](Loops-for...to-Expression-%5BFSharp%5D.md)
+[Loops: `for...to` Expression](loops-for-to-expression.md)

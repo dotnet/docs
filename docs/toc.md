@@ -169,7 +169,7 @@
 ### [The use Keyword](fsharp/fsharp-language-reference/resource-management-the-use-keyword.md)
 ### [Namespaces](fsharp/fsharp-language-reference/namespaces.md)
 ### [Modules](fsharp/fsharp-language-reference/modules.md)
-### [The open Keyword](fsharp/fsharp-language-reference/import-declarations-the-open-keyword.md)
+### [Import Declarations: The open Keyword](fsharp/fsharp-language-reference/import-declarations-the-open-keyword.md)
 ### [Signatures](fsharp/fsharp-language-reference/signatures.md)
 ### [Units of Measure](fsharp/fsharp-language-reference/units-of-measure.md)
 ### [XML Documentation](fsharp/fsharp-language-reference/xml-documentation.md)

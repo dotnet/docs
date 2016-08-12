@@ -15,33 +15,32 @@ ms.assetid: 3a082459-17d4-45cf-9153-0b7550a154ec
 
 *Interfaces* specify sets of related members that other classes implement.
 
-
 ## Syntax
 
 ```fsharp
 // Interface declaration:
 [ attributes ]
 type interface-name =
-[ interface ]     [ inherit base-interface-name ...]
-abstract member1 : [ argument-types1 -> ] return-type1
-abstract member2 : [ argument-types2 -> ] return-type2
-...
+    [ interface ]     [ inherit base-interface-name ...]
+    abstract member1 : [ argument-types1 -> ] return-type1
+    abstract member2 : [ argument-types2 -> ] return-type2
+    ...
 [ end ]
 
 // Implementing, inside a class type definition:
 interface interface-name with
-member self-identifier.member1argument-list = method-body1
-member self-identifier.member2argument-list = method-body2
+    member self-identifier.member1argument-list = method-body1
+    member self-identifier.member2argument-list = method-body2
 
 // Implementing, by using an object expression:
 [ attributes ]
 let class-name (argument-list) =
-{ new interface-name with
-member self-identifier.member1argument-list = method-body1
-member self-identifier.member2argument-list = method-body2
-[ base-interface-definitions ]
-}
-member-list
+    { new interface-name with
+        member self-identifier.member1argument-list = method-body1
+        member self-identifier.member2argument-list = method-body2
+        [ base-interface-definitions ]
+    }
+    member-list
 ```
 
 ## Remarks
@@ -90,8 +89,8 @@ Interfaces can inherit from one or more base interfaces.
 [!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2805.fs)]
     
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Object Expressions &#40;F&#35;&#41;](Object-Expressions-%5BFSharp%5D.md)
+[Object Expressions](object-expressions.md)
 
-[Classes &#40;F&#35;&#41;](Classes-%5BFSharp%5D.md)
+[Classes](classes.md)

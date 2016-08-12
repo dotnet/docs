@@ -51,6 +51,6 @@ The default `enum` function works with type `int32`. Therefore, it cannot be use
 [!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2104.fs)]
     
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Casting and Conversions &#40;F&#35;&#41;](Casting-and-Conversions-%5BFSharp%5D.md)
+[Casting and Conversions](casting-and-conversions.md)

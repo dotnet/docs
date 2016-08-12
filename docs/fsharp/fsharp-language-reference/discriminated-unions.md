@@ -115,4 +115,4 @@ When this code is executed, the value of `result` is 5.
 
 
 ## See Also
-[F&#35; Language Reference](index.md)
+[F# Language Reference](index.md)

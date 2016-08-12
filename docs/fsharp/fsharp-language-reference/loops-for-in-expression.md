@@ -20,11 +20,11 @@ This looping construct is used to iterate over the matches of a pattern in an en
 
 ```fsharp
 for pattern in enumerable-expression do
-body-expression
+    body-expression
 ```
 
 ## Remarks
-The `for…in` expression can be compared to the `for each` statement in other .NET languages because it is used to loop over the values in an enumerable collection. However, `for…in` also supports pattern matching over the collection instead of just iteration over the whole collection.
+The `for...in` expression can be compared to the `for each` statement in other .NET languages because it is used to loop over the values in an enumerable collection. However, `for...in` also supports pattern matching over the collection instead of just iteration over the whole collection.
 
 The enumerable expression can be specified as an enumerable collection or, by using the `..` operator, as a range on an integral type. Enumerable collections include lists, sequences, arrays, sets, maps, and so on. Any type that implements `System.Collections.IEnumerable` can be used.
 
@@ -133,12 +133,12 @@ The output is as follows.
 Number of elements in list1: 5
 ```
 
-`Note` You can use `for...in` in sequence expressions and other computation expressions, in which case a customized version of the `for...in` expression is used. For more information, see [Sequences &#40;F&#35;&#41;](Sequences-%5BFSharp%5D.md), [Asynchronous Workflows &#40;F&#35;&#41;](Asynchronous-Workflows-%5BFSharp%5D.md), and [Computation Expressions &#40;F&#35;&#41;](Computation-Expressions-%5BFSharp%5D.md).
+`Note` You can use `for...in` in sequence expressions and other computation expressions, in which case a customized version of the `for...in` expression is used. For more information, see [Sequences](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Computation Expressions](computation-expressions.md).
 
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[Loops: for...to Expression &#40;F&#35;&#41;](Loops-for...to-Expression-%5BFSharp%5D.md)
+[Loops: `for...to` Expression](loops-for-to-expression.md)
 
-[Loops: while...do Expression &#40;F&#35;&#41;](Loops-while...do-Expression-%5BFSharp%5D.md)
+[Loops: `while...do` Expression](loops-while-do-expression.md)

@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 1e98e48c-52e9-4314-8954-85d5583125f0 
 ---
 
-# Import Declarations: The open Keyword
+# Import Declarations: The `open` Keyword
 
 An *import declaration* specifies a module or namespace whose elements you can reference without using a fully qualified name.
 
@@ -25,7 +25,7 @@ open module-or-namespace-name
 ## Remarks
 Referencing code by using the fully qualified namespace or module path every time can create code that is hard to write, read, and maintain. Instead, you can use the `open` keyword for frequently used modules and namespaces so that when you reference a member of that module or namespace, you can use the short form of the name instead of the fully qualified name. This keyword is similar to the `using` keyword in C#, `using``namespace` in Visual C++, and `Imports` in Visual Basic.
 
-The module or namespace provided must be in the same project or in a referenced project or assembly. If it is not, you can add a reference to the project, or use the `-reference` command`-`line option (or its abbreviation, `-r`). For more information, see [Compiler Options &#40;F&#35;&#41;](Compiler-Options-%5BFSharp%5D.md).
+The module or namespace provided must be in the same project or in a referenced project or assembly. If it is not, you can add a reference to the project, or use the `-reference` command`-`line option (or its abbreviation, `-r`). For more information, see [Compiler Options](compiler-options.md).
 
 The import declaration makes the names available in the code that follows the declaration, up to the end of the enclosing namespace, module, or file.
 
@@ -35,7 +35,7 @@ The following code shows the use of the `open` keyword to simplify code.
 
 [!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet6801.fs)]
 
-The F# compiler does not emit an error or warning when ambiguities occur when the same name occurs in more than one open module or namespace. When ambiguities occur, F# gives preference to the more recently opened module or namespace. For example, in the following code, **empty** means **Seq.empty**, even though **empty** is located in both the **List** and **Seq** modules.
+The F# compiler does not emit an error or warning when ambiguities occur when the same name occurs in more than one open module or namespace. When ambiguities occur, F# gives preference to the more recently opened module or namespace. For example, in the following code, `empty` means `Seq.empty`, even though `empty` is located in both the `List` and `Seq` modules.
 
 ```fsharp
 open List
@@ -58,17 +58,17 @@ Some namespaces are so frequently used in F# code that they are opened implicitl
 |`Microsoft.FSharp.Text`|Contains functions for formatted IO, such as the `printf` function.|
 
 ## AutoOpen Attribute
-You can apply the `AutoOpen` attribute to an assembly if you want to automatically open a namespace or module when the assembly is referenced. You can also apply the `AutoOpen` attribute to a module to automatically open that module when the parent module or namespace is opened. For more information, see [Core.AutoOpenAttribute Class &#40;F&#35;&#41;](Core.AutoOpenAttribute-Class-%5BFSharp%5D.md).
+You can apply the `AutoOpen` attribute to an assembly if you want to automatically open a namespace or module when the assembly is referenced. You can also apply the `AutoOpen` attribute to a module to automatically open that module when the parent module or namespace is opened. For more information, see [Core.AutoOpenAttribute Class](Core.AutoOpenAttribute-Class.md).
 
 
 ## RequireQualifiedAccess Attribute
-Some modules, records, or union types may specify the `RequireQualifiedAccess` attribute. When you reference elements of those modules, records, or unions, you must use a qualified name regardless of whether you include an import declaration. If you use this attribute strategically on types that define commonly used names, you help avoid name collisions and thereby make code more resilient to changes in libraries. For more information, see [Core.RequireQualifiedAccessAttribute Class &#40;F&#35;&#41;](Core.RequireQualifiedAccessAttribute-Class-%5BFSharp%5D.md).
+Some modules, records, or union types may specify the `RequireQualifiedAccess` attribute. When you reference elements of those modules, records, or unions, you must use a qualified name regardless of whether you include an import declaration. If you use this attribute strategically on types that define commonly used names, you help avoid name collisions and thereby make code more resilient to changes in libraries. For more information, see [Core.RequireQualifiedAccessAttribute Class](Core.RequireQualifiedAccessAttribute-Class.md).
 
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[# Language Reference](index.md)
 
-[Namespaces &#40;F&#35;&#41;](Namespaces-%5BFSharp%5D.md)
+[Namespaces](namespaces.md)
 
-[Modules &#40;F&#35;&#41;](Modules-%5BFSharp%5D.md)
+[Modules](modules.md)
 

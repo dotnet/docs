@@ -434,16 +434,16 @@ The `List` module provides functions for converting to and from both sequences a
 
 
 ### Additional Operations
-For information about additional operations on lists, see the library reference topic [Collections.List Module &#40;F&#35;&#41;](Collections.List-Module-%5BFSharp%5D.md).
+For information about additional operations on lists, see the library reference topic [Collections.List Module](Collections.List-Module.md).
 
 
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
+[F# Language Reference](index.md)
 
-[F&#35; Types](FSharp-Types.md)
+[F# Types](fsharp-types.md)
 
-[Sequences &#40;F&#35;&#41;](Sequences-%5BFSharp%5D.md)
+[Sequences](sequences.md)
 
-[Arrays &#40;F&#35;&#41;](Arrays-%5BFSharp%5D.md)
+[Arrays](arrays.md)
 
-[Options &#40;F&#35;&#41;](Options-%5BFSharp%5D.md)
+[Options](options.md)

@@ -69,7 +69,7 @@ The usual syntax for defining the function `let sum a b = a + b` enables you to 
 
 [!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet1208.fs)]
 
-Using a tuple as the parameter disables currying. For more information, see "Partial Application of Arguments" in [Functions](functions.md).
+Using a tuple as the parameter disables currying. For more information, see "Partial Application of Arguments" in [Functions](functions/index.md).
 
 
 ## Names of Tuple Types

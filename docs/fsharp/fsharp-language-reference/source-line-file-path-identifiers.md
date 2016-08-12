@@ -53,4 +53,4 @@ Source File: C:\Users\username\Documents\Visual Studio 2010\Projects\SourceInfo\
 ## See Also
 [Compiler Directives](compiler-directives.md)
 
-[F# Language Reference](fsharp-language-reference.md)
+[F# Language Reference](index.md)

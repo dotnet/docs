@@ -62,4 +62,4 @@ Type inference is described in more detail in the F# Language Specification.
 
 
 ## See Also
-[Automatic Generalization](automatic-generalization.md)
+[Automatic Generalization](generics/automatic-generalization.md)

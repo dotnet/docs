@@ -50,10 +50,10 @@ The following code examples illustrate structure definitions.
 [!code-fsharp[Main](../../../samples/snippets/fslangref1/snippet2501.fs)]
     
 ## See Also
-[F# Language Reference](fsharp-language-reference.md)
+[F# Language Reference](index.md)
 
 [Classes](classes.md)
 
 [Records](records.md)
 
-[Members](members.md)
+[Members](members/index.md)

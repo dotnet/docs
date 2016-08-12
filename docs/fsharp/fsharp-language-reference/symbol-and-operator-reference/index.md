@@ -99,9 +99,9 @@ The following table describes symbols used in the F# language, provides links to
 |<code>[&#124;...&#124;]</code>|[Arrays](../arrays.md)|<ul><li>Delimits the elements of an array.<br /></li><ul/>|
 |`[<...>]`|[Attributes](../attributes.md)|<ul><li>Delimits an attribute.<br /></li><ul/>|
 |`\`|[Strings](../strings.md)|<ul><li>Escapes the next character; used in character and string literals.<br /></li><ul/>|
-|`^`|[Statically Resolved Type Parameters](../statically-resolved-type-parameters.md)<br /><br />[Strings](../strings.md)|<ul><li>Specifies type parameters that must be resolved at compile time, not at runtime.<br /></li><li>Concatenates strings.<br /></li><ul/>|
+|`^`|[Statically Resolved Type Parameters](../generics/statically-resolved-type-parameters.md)<br /><br />[Strings](../strings.md)|<ul><li>Specifies type parameters that must be resolved at compile time, not at runtime.<br /></li><li>Concatenates strings.<br /></li><ul/>|
 |`^^^`|[Bitwise Operators](bitwise-operators.md)|<ul><li>Computes the bitwise exclusive OR operation.<br /></li><ul/>|
-|`_`|[Match Expressions](../match-expressions.md)<br /><br />[Generics](../generics.md)|<ul><li>Indicates a wildcard pattern.<br /></li><li>Specifies an anonymous generic parameter.<br /></li><ul/>|
+|`_`|[Match Expressions](../match-expressions.md)<br /><br />[Generics](../generics/index.md)|<ul><li>Indicates a wildcard pattern.<br /></li><li>Specifies an anonymous generic parameter.<br /></li><ul/>|
 |`&#96;`|[Automatic Generalization](../generics/automatic-generalization.md)|<ul><li>Used internally to indicate a generic type parameter.<br /></li><ul/>|
 |`{...}`|[Sequences](../sequences.md)<br /><br />[Records](../records.md)|<ul><li>Delimits sequence expressions and computation expressions.<br /></li><li>Used in record definitions.<br /></li><ul/>|
 |<code>&#124;</code>|[Match Expressions](../match-expressions.md)|<ul><li>Delimits individual match cases, individual discriminated union cases, and enumeration values.<br /></li><ul/>|

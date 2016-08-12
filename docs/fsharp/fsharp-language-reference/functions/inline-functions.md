@@ -44,6 +44,6 @@ This means that the function accepts any type that supports a conversion to **fl
 ## See Also
 [Functions](index.md)
 
-[Constraints](../members/constraints.md)
+[Constraints](../generics/constraints.md)
 
-[Statically Resolved Type Parameters](../members/statically-resolved-type-parameters.md)
+[Statically Resolved Type Parameters](../generics/statically-resolved-type-parameters.md)

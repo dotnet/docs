@@ -54,14 +54,14 @@ If you omit the default implementation in the base class, the base class becomes
 
 The following code example illustrates the declaration of a new virtual method `function1` in a base class and how to override it in a derived class.
 
-[!code-fsharp[Main](../../../samples/fsharp/lang-ref-1/snippet2601.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2601.fs)]
     
 ## Constructors and Inheritance
 The constructor for the base class must be called in the derived class. The arguments for the base class constructor appear in the argument list in the `inherit` clause. The values that are used must be determined from the arguments supplied to the derived class constructor.
 
 The following code shows a base class and a derived class, where the derived class calls the base class constructor in the inherit clause:
 
-[!code-fsharp[Main](../../../samples/fsharp/lang-ref-1/snippet2602.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2602.fs)]
 
 In the case of multiple constructors, the following code can be used. The first line of the derived class constructors is the `inherit` clause, and the fields appear as explicit fields that are declared with the `val` keyword. For more information, see [Explicit Fields: The `val` Keyword](members/explicit-fields-the-val-keyword.md).
 
@@ -85,7 +85,7 @@ let obj2 = DerivedClass("A")
 ## Alternatives to Inheritance
 In cases where a minor modification of a type is required, consider using an object expression as an alternative to inheritance. The following example illustrates the use of an object expression as an alternative to creating a new derived type:
 
-[!code-fsharp[Main](../../../samples/fsharp/lang-ref-1/snippet2603.fs)]
+[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2603.fs)]
 
 For more information about object expressions, see [Object Expressions](object-expressions.md).
 

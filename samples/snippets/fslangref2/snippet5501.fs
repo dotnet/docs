@@ -1,0 +1,2 @@
+
+exception MyError of string

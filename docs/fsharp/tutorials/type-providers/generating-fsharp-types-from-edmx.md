@@ -260,7 +260,7 @@ You should complete this procedure only if you want to know how to generate a fu
 
 
 ## Next Steps
-Explore other queries by looking at the available query operators as listed in [Query Expressions](../../fsharp-language-reference/query-expressions.md).
+Explore other queries by looking at the available query operators as listed in [Query Expressions](../../language-reference/query-expressions.md).
 
 
 ## See Also

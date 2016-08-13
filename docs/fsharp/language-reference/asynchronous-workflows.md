@@ -65,7 +65,7 @@ You use the function [`Async.RunSynchronously`](https://msdn.microsoft.com/libra
 
 The `runAll` function launches three asynchronous workflows in parallel and waits until they have all completed.
 
-[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet8003.fs)]
+[!code-fsharp[Main](../../../samples/fsharp/lang-ref-2/snippet8003.fs)]
 
 ## See Also
 

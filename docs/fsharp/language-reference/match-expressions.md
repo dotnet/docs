@@ -51,7 +51,7 @@ The whole set of patterns should cover all the possible matches of the input var
 
 The following code illustrates some of the ways in which the `match` expression is used. For a reference and examples of all the possible patterns that can be used, see [Pattern Matching](pattern-matching.md).
 
-[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4601.fs)]
+[!code-fsharp[Main](../../../samples/fsharp/lang-ref-2/snippet4601.fs)]
 
 ## Guards on Patterns
 
@@ -59,11 +59,11 @@ You can use a `when` clause to specify an additional condition that the variable
 
 The following example illustrates the use of a guard to specify a numeric range for a variable pattern. Note that multiple conditions are combined by using Boolean operators.
 
-[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4602.fs)]
+[!code-fsharp[Main](../../../samples/fsharp/lang-ref-2/snippet4602.fs)]
 
 Note that because values other than literals cannot be used in the pattern, you must use a `when` clause if you have to compare some part of the input against a value. This is shown in the following code.
 
-[!code-fsharp[Main](../../../samples/snippets/fslangref2/snippet4603.fs)]
+[!code-fsharp[Main](../../../samples/fsharp/lang-ref-2/snippet4603.fs)]
 
 ## See Also
 

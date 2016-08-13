@@ -72,7 +72,7 @@ val anIntSquared : int = 25
 
 1. Add the following lines to **Program.fs**.
 
-[!code-fsharp[Main](../../../../samples/fsharp/contour/snippet2.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet2.fs)]
 
 2. Press CTRL+F5 to run the code. A Command Prompt window appears that contains the following values.
 <br />  **5**
@@ -85,13 +85,13 @@ val anIntSquared : int = 25
 ### To define and run a function
 
 1. Use a **let** expression to define a squaring function, as shown in the following code. The function has one parameter, **n**, and returns the square of the argument sent to **n**.
-[!code-fsharp[Main](../../../../samples/fsharp/contour/snippet3.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet3.fs)]
 
 2. Press CTRL+F5 to run the code. The result displayed is 25.
 <br />
 
 3. A recursive function requires a **let rec** expression. The following example defines a function that calculates the factorial of parameter **n**.
-[!code-fsharp[Main](../../../../samples/fsharp/contour/snippet4.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet4.fs)]
 
 4. Press CTRL+F5 to run the function. The result displayed is 120, the factorial of 5.
 <br />
@@ -104,15 +104,15 @@ val anIntSquared : int = 25
 [!code-fsharp[Main](../../../../samples/fsharp/contour/snippet5.fs)]
 
 2. Another way to aggregate values is by using a list, as shown in the following code.
-[!code-fsharp[Main](../../../../samples/fsharp/contour/snippet7.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet7.fs)]
 
 Add a new best friend to the list by using the "cons" operator (::). Note that the operation does not change the value of **bffs**. The value of **bffs** is immutable and cannot be changed.
 
-[!code-fsharp[Main](../../../../samples/fsharp/contour/snippet8.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet8.fs)]
 
 Use **printfn** to display the lists. Function **printfn** shows the individual elements that are contained in structured values.
 
-[!code-fsharp[Main](../../../../samples/fsharp/contour/snippet9.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet9.fs)]
 
 3. You can view the results either by pressing CTRL+F5 or by selecting a section of the code and then pressing ALT+ENTER.
 <br />
@@ -125,7 +125,7 @@ Use **printfn** to display the lists. Function **printfn** shows the individual 
 [!code-fsharp[Main](../../../../samples/fsharp/contour/snippet10.fs)]
 
 2. To test the class, declare two **Person** objects, make some changes, and display the results, as shown in the following code.
-[!code-fsharp[Main](../../../../samples/fsharp/contour/snippet11.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet11.fs)]
 
 The following lines are displayed.
 

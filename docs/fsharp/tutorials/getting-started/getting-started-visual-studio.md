@@ -46,7 +46,7 @@ Note: General Settings
 ### To use the let keyword to declare and use identifiers
 
 1. Copy and paste the following code into **Program.fs**. You are binding each identifier, **anInt**, **aString**, and **anIntSquared**, to a value.
-[!code-fsharp[Main](../../../../../samples/snippets/fscontour/snippet1.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fscontour/snippet1.fs)]
         
 >[!NOTE]
 If you cannot see the code in Classic view, make sure that the **Language Filter** in the header below the topic title is set to include F#.

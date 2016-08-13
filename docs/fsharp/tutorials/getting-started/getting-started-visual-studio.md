@@ -47,7 +47,7 @@ Note: General Settings
 
 1. Copy and paste the following code into **Program.fs**. You are binding each identifier, **anInt**, **aString**, and **anIntSquared**, to a value.
 
-[!code-fsharp[Main](../../../../samples/fsharp/contour/snippet1.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet1.fs)]
         
 >[!NOTE]
 If you cannot see the code in Classic view, make sure that the **Language Filter** in the header below the topic title is set to include F#.
@@ -101,7 +101,7 @@ val anIntSquared : int = 25
 
 1. One way to aggregate values is by using a tuple, as shown in the following code.
 
-[!code-fsharp[Main](../../../../samples/fsharp/contour/snippet5.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet5.fs)]
 
 2. Another way to aggregate values is by using a list, as shown in the following code.
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet7.fs)]
@@ -122,7 +122,7 @@ Use **printfn** to display the lists. Function **printfn** shows the individual 
 
 1. The following code creates a **Person** class that has two properties, **Name** and **Age**. **Name** is a read-only property. Its value is immutable, as are most values in functional programming. You can create mutable values in F# if you need them, but you must explicitly define them as mutable. In the following class definition, the value of **Age** is stored in a mutable local variable, **internalAge**. The value of **internalAge** can be changed.
 
-[!code-fsharp[Main](../../../../samples/fsharp/contour/snippet10.fs)]
+[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet10.fs)]
 
 2. To test the class, declare two **Person** objects, make some changes, and display the results, as shown in the following code.
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet11.fs)]

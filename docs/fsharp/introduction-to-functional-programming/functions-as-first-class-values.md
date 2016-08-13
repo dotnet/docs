@@ -164,12 +164,13 @@ The following example defines a `Boolean` function called `isNegative`, and then
 To take it one step further, substitute the value that `applyIt` is bound to for `applyIt`.
 
 [!code-fsharp[Main](../../../samples/fsharp/contour/snippet44.fs)]
-    
+
 ## Functions Are First-Class Values in F# #
 
 The examples in the previous sections demonstrate that functions in F# satisfy the criteria for being first-class values in F#:
 
 - You can bind an identifier to a function definition.
+
 [!code-fsharp[Main](../../../samples/fsharp/contour/snippet21.fs)]
 
 - You can store a function in a data structure.

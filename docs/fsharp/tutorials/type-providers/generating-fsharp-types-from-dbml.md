@@ -158,4 +158,4 @@ You can proceed to use other query expressions, or get a database connection fro
 
 [SqlMetal.exe &#40;Code Generation Tool&#41;](https://msdn.microsoft.com/library/bb386987)
 
-[Query Expressions](../../fsharp-language-reference/query-expressions.md)
+[Query Expressions](../../language-reference/query-expressions.md)

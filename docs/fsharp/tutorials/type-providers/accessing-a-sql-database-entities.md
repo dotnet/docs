@@ -231,7 +231,7 @@ When you use a query expression, you must remember that the query is subject to 
 
 
 ## Next Steps
-Explore other query options by reviewing the query operators available in [Query Expressions](../../fsharp-language-reference/query-expressions.md), and also review the [ADO.NET Entity Framework](https://msdn.microsoft.com/library/bb399572) to understand what functionality is available to you when you use this type provider.
+Explore other query options by reviewing the query operators available in [Query Expressions](../../language-reference/query-expressions.md), and also review the [ADO.NET Entity Framework](https://msdn.microsoft.com/library/bb399572) to understand what functionality is available to you when you use this type provider.
 
 
 ## See Also

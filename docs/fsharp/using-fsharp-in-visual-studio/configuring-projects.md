@@ -43,8 +43,8 @@ The following table summarizes settings that are specific to F#.
 |`Build`|`Other flags`|Allows you to specify additional compiler command-line options.|
 
 ## See Also
-[Getting Started with F# in Visual Studio](../getting-started/getting-started-visual-studio.md)
+[Getting Started with F# in Visual Studio](../tutorials/getting-started/getting-started-visual-studio.md)
 
-[Compiler Options](../fsharp-language-reference/compiler-options.md)
+[Compiler Options](../language-reference/compiler-options.md)
 
 [Introduction to the Project Designer](https://msdn.microsoft.com/library/898dd854-c98d-430c-ba1b-a913ce3c73d7)

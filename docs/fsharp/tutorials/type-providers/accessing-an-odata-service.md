@@ -241,7 +241,7 @@ The output of the previous code is:
 
 
 ## See Also
-[Query Expressions](../../fsharp-language-reference/query-expressions.md)
+[Query Expressions](../../language-reference/query-expressions.md)
 
 [LINQ Considerations (WCF Data Services)](https://msdn.microsoft.com/library/ee622463.aspx)
 

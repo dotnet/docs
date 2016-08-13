@@ -149,7 +149,7 @@ let query1 =
 query1 |> Seq.iter (fun row -> printfn "%s %d" row.Name row.TestData1)
 ```
 
-The appearance of the word `query` indicates that this is a query expression, a type of computation expression that generates a collection of results similar of a typical database query. If you hover over query, you will see that it is an instance of [Linq.QueryBuilder Class](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d), a type that defines the query computation expression. If you hover over `query1`, you will see that it is an instance of `System.Linq.IQueryable`. As the name suggests, `System.Linq.IQueryable` represents data that may be queried, not the result of a query. A query is subject to lazy evaluation, which means that the database is only queried when the query is evaluated. The final line passes the query through `Seq.iter`. Queries are enumerable and may be iterated like sequences. For more information, see [Query Expressions](../../fsharp-language-reference/query-expressions.md).
+The appearance of the word `query` indicates that this is a query expression, a type of computation expression that generates a collection of results similar of a typical database query. If you hover over query, you will see that it is an instance of [Linq.QueryBuilder Class](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d), a type that defines the query computation expression. If you hover over `query1`, you will see that it is an instance of `System.Linq.IQueryable`. As the name suggests, `System.Linq.IQueryable` represents data that may be queried, not the result of a query. A query is subject to lazy evaluation, which means that the database is only queried when the query is evaluated. The final line passes the query through `Seq.iter`. Queries are enumerable and may be iterated like sequences. For more information, see [Query Expressions](../../language-reference/query-expressions.md).
 
 <br />
 
@@ -485,7 +485,7 @@ INSERT INTO Table3 (Id, Name, Data)
 
 [Walkthrough: Generating F# Types from a DBML File](generating-fsharp-types-from-dbml.md)
 
-[Query Expressions](../../fsharp-language-reference/query-expressions.md)
+[Query Expressions](../../language-reference/query-expressions.md)
 
 [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)
 

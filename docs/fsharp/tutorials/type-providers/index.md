@@ -43,6 +43,6 @@ Where necessary, you can create your own custom type providers, or reference typ
 |[Troubleshooting Type Providers](troubleshooting-type-providers.md)|Provides information about common problems that can arise when working with type providers and includes suggestions for solutions.|
 
 ## See Also
-[F# Language Reference](../../fsharp-language-reference/index.md)
+[F# Language Reference](../../language-reference/index.md)
 
 [Visual F#](../../index.md)

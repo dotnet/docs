@@ -30,11 +30,11 @@ The last two measures define what are known as *higher-order operations* or *hig
 
 ## Give the Value a Name
 
-If a function is a first-class value, you must be able to name it, just as you can name integers, strings, and other built-in types. This is referred to in functional programming literature as binding an identifier to a value. F# uses [`let` bindings](../fsharp-language-reference/functions/let-bindings.md) to bind names to values: `let <identifier> = <value>`. The following code shows two examples.
+If a function is a first-class value, you must be able to name it, just as you can name integers, strings, and other built-in types. This is referred to in functional programming literature as binding an identifier to a value. F# uses [`let` bindings](../language-reference/functions/let-bindings.md) to bind names to values: `let <identifier> = <value>`. The following code shows two examples.
 
 [!code-fsharp[Main](../../../samples/snippets/fscontour/snippet20.fs)]
 
-You can name a function just as easily. The following example defines a function named `squareIt` by binding the identifier `squareIt` to the [lambda expression](../fsharp-language-reference/functions/lambda-expressions-the-fun-keyword.md) `fun n -> n * n`. Function `squareIt` has one parameter, `n`, and it returns the square of that parameter.
+You can name a function just as easily. The following example defines a function named `squareIt` by binding the identifier `squareIt` to the [lambda expression](../language-reference/functions/lambda-expressions-the-fun-keyword.md) `fun n -> n * n`. Function `squareIt` has one parameter, `n`, and it returns the square of that parameter.
 
 [!code-fsharp[Main](../../../samples/snippets/fscontour/snippet21.fs)]
 
@@ -73,11 +73,11 @@ In the following example, function `applyIt` has two parameters, `op` and `arg`.
 
 The ability to send a function as an argument to another function underlies common abstractions in functional programming languages, such as map or filter operations. A map operation, for example, is a higher-order function that captures the computation shared by functions that step through a list, do something to each element, and then return a list of the results. You might want to increment each element in a list of integers, or to square each element, or to change each element in a list of strings to uppercase. The error-prone part of the computation is the recursive process that steps through the list and builds a list of the results to return. That part is captured in the mapping function. All you have to write for a particular application is the function that you want to apply to each list element individually (adding, squaring, changing case). That function is sent as an argument to the mapping function, just as `squareIt` is sent to `applyIt` in the previous example.
 
-F# provides map methods for most collection types, including [lists](../fsharp-language-reference/lists.md), [arrays](../fsharp-language-reference/arrays.md), and [sequences](../fsharp-language-reference/sequences.md). The following examples use lists. The syntax is `List.map <the function> <the list>`.
+F# provides map methods for most collection types, including [lists](../language-reference/lists.md), [arrays](../language-reference/arrays.md), and [sequences](../language-reference/sequences.md). The following examples use lists. The syntax is `List.map <the function> <the list>`.
 
 [!code-fsharp[Main](../../../samples/snippets/fscontour/snippet28.fs)]
 
-For more information, see [Lists](../fsharp-language-reference/lists.md).
+For more information, see [Lists](../language-reference/lists.md).
 
 ## Return the Value from a Function Call
 
@@ -145,13 +145,13 @@ To verify that the function still works as it did before, try the original test 
 [!code-fsharp[Main](../../../samples/snippets/fscontour/snippet41.fs)]
     
 >[!NOTE] 
-You can restrict currying by enclosing parameters in tuples. For more information, see "Parameter Patterns" in [Parameters and Arguments](../fsharp-language-reference/parameters-and-arguments.md).
+You can restrict currying by enclosing parameters in tuples. For more information, see "Parameter Patterns" in [Parameters and Arguments](../language-reference/parameters-and-arguments.md).
 
 The following example uses implicit currying to write a shorter version of `makeGame`. The details of how `makeGame` constructs and returns the `game` function are less explicit in this format, but you can verify by using the original test cases that the result is the same.
 
 [!code-fsharp[Main](../../../samples/snippets/fscontour/snippet42.fs)]
 
-For more information about currying, see "Partial Application of Arguments" in [Functions](../fsharp-language-reference/functions/index.md).
+For more information about currying, see "Partial Application of Arguments" in [Functions](../language-reference/functions/index.md).
 
 
 ## Identifier and Function Definition Are Interchangeable
@@ -181,7 +181,7 @@ The examples in the previous sections demonstrate that functions in F# satisfy t
 - You can return a function as the value of a function call.
 [!code-fsharp[Main](../../../samples/snippets/fscontour/snippet32.fs)]
 
-For more information about F#, see the [F# Language Reference](../fsharp-language-reference/index.md).
+For more information about F#, see the [F# Language Reference](../language-reference/index.md).
 
 ## Example
 
@@ -195,12 +195,12 @@ The following code contains all the examples in this topic.
     
 ## See Also
 
-[Lists](../fsharp-language-reference/lists.md)
+[Lists](../language-reference/lists.md)
 
-[Tuples](../fsharp-language-reference/tuples.md)
+[Tuples](../language-reference/tuples.md)
 
-[Functions](../fsharp-language-reference/functions/index.md)
+[Functions](../language-reference/functions/index.md)
 
-[`let` Bindings](../fsharp-language-reference/functions/let-bindings.md)
+[`let` Bindings](../language-reference/functions/let-bindings.md)
 
-[Lambda Expressions: The `fun` Keyword](../fsharp-language-reference/functions/lambda-expressions-the-fun-keyword.md)
+[Lambda Expressions: The `fun` Keyword](../language-reference/functions/lambda-expressions-the-fun-keyword.md)

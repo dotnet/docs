@@ -36,7 +36,7 @@ If you know your way around F#, you'll find a lot of use in the [Language Refere
 
 ## Documentation
 
-* [Getting Started](getting-started/index.md)
+* [Getting Started](tutorials/getting-started/index.md)
 * [Introduction to Functional Programming](introduction-to-functional-programming/index.md)
 * [Tutorials](tutorials/index.md)
 * [Language Reference](language-reference/index.md)

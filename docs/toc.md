@@ -62,10 +62,10 @@
 ### [Functions as First-Class Values](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)
 
 ## [Tutorials](fsharp/tutorials/index.md)
-### [Getting Started](fsharp/getting-started/index.md)
-#### [Getting Started with Visual Studio](fsharp/getting-started/getting-started-visual-studio.md)
-#### [Getting Started with Visual Studio Code and Ionide](fsharp/getting-started/getting-started-vscode.md)
-#### [Getting Started with Cross-platform Tools](fsharp/getting-started/getting-started-cross-platform-tooling.md)
+### [Getting Started](fsharp/tutorials/getting-started/index.md)
+#### [Getting Started with Visual Studio](fsharp/tutorials/getting-started/getting-started-visual-studio.md)
+#### [Getting Started with Visual Studio Code and Ionide](fsharp/tutorials/getting-started/getting-started-vscode.md)
+#### [Getting Started with Cross-platform Tools](fsharp/tutorials/getting-started/getting-started-cross-platform-tooling.md)
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
 #### [F# Interactive Options](fsharp/tutorials/fsharp-interactive/fsharp-interactive-options.md)
 ### [Type Providers](fsharp/tutorials/type-providers/index.md)
@@ -184,8 +184,6 @@
 ### [Verbose Syntax](fsharp/language-reference/verbose-syntax.md)
 ### [Code Formatting Guidelines](fsharp/language-reference/code-formatting-guidelines.md)
 <!-- End F# Content -->
-
-## [Getting started with .NET Core](fsharp/getting-started-netcore.md)
 
 # [.NET Standard](standard/index.md)
 ## [.NET Standard Library](standard/library.md)

@@ -341,7 +341,17 @@ you set the content type to 'application/json', and write the string.
 
 The application now runs and returns random forecasts.
 
-## Load into Docker
+## Build a Docker image
+
+Our final task is to run the application in Docker. We'll create a
+Docker container that runs a Docker image that represents our application.
+
+A ***Docker Image*** is a file that defines the environment for running the application.
+
+A ***Docker Container*** represents a running instance of a Docker image.
+
+By analogy, you can think of the *Docker Image* as a *class*, and the
+*Docker Container* as an object, or an instance of that class.  
 
 The Dockerfile created by the asp.net template will serve
 for our purposes. Let's go over its contents.
@@ -384,14 +394,18 @@ EXPOSE 5000/tcp
 ENTRYPOINT ["dotnet", "run", "--server.urls", "http://0.0.0.0:5000"]
 ```
 
-The Dockerfile uses declares port 5000 here because it's the default port that an
-ASP.NET Core application will listen on. That same port is declared as the argument
-to the `--server.urls` command line option in the `dotnet run` command. Those must
-match for your container to listen on the proper port.
+The `EXPOSE` command informs Docker to listen on port 5000. The Dockerfile created
+by the asp.net core generator uses this port because it is the default port
+for asp.net core applications. This same port is referenced in the `--server.urls`
+argument to `dotnet run` on the next line of the Dockerfile. The `ENTRYPOINT` command
+informs Docker  what command and command line options start the service. 
 
-## Building and running the image
+> [!Note]
+> You could also specify the TCP port in code with the `WebHostBuilder.UseUrls("http://0.0.0.0:5000")` method.
 
-Let's build an image and run the service inside a Docker container. You build a container
+## Building and running the image in a container.
+
+Let's build an image and run the service inside a Docker container. You build the image
 using the docker build command. Run the following command from the directory containing your code.
 
 ```

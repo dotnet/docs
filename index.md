@@ -1,17 +1,17 @@
 ---
 layout: HubPage
 
-title: .NET Core Documentation 
-description:   
-keywords:  
-author:   
-manager:   
-ms.date: 06/20/2016  
-ms.topic: hubpage  
-ms.prod:   
-ms.service:   
-ms.technology:   
-ms.suite: 
+title: .NET Core Documentation
+description:
+keywords:
+author:
+manager:
+ms.date: 06/20/2016
+ms.topic: hubpage
+ms.prod:
+ms.service:
+ms.technology:
+ms.suite:
 ms.assetid:
 ---
 
@@ -177,13 +177,13 @@ ms.assetid:
                                     <h3>CRYENGINE</h3>
                                     <p>Build games for desktop, console and mobile in C# with CRYENGINE.</p>
                                 </a>
-                            </li>                        
+                            </li>
                             <li class="column column-third">
                                 <a href="http://www.monogame.net/documentation/?page=main">
                                     <h3>MonoGame</h3>
                                     <p>Build games for desktop, console and mobile in C# with MonoGame.</p>
                                 </a>
-                            </li>                            
+                            </li>
                             <li class="column column-third">
                                 <a href="http://docs.unity3d.com/Manual/index.html">
                                     <h3>Unity</h3>

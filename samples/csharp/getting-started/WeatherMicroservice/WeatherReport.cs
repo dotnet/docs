@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Runtime.Serialization;
+using System;
 
 namespace WeatherMicroservice
 {
@@ -18,7 +14,6 @@ namespace WeatherMicroservice
             "Rain"
         };
 
-
         public WeatherReport(double latitude, double longitude, int daysInFuture)
         {
             var generator = new Random((int)(latitude + longitude) + daysInFuture);
@@ -30,11 +25,8 @@ namespace WeatherMicroservice
         }
 
         public int HiTemperature { get; }
-
         public int LoTemperature { get; }
-
         public int AverageWindSpeed { get; }
-
         public string Conditions { get; }
     }
 }

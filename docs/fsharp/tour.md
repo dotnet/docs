@@ -9,7 +9,7 @@ There are two primary concepts in F#: functions and types.  This tour will empha
 >![NOTE]
 Eventually, this documentation site will have the ability to run these code samples directly in your browser.
 
-The quickest way to run these code samples is to use [F# Interactive](tutorials/fsharp-interactive/index.md).  Just copy/paste the code samples and run them there.  Alternatively you can set up a project to compile and run the code as a Console Application in [Visual Studio](tutorials/getting-started/getting-started-with-visual-studio.md) or [Visual Studio Code and Ionide](tutorials/getting-started/getting-started-with-vscode.md).
+The quickest way to run these code samples is to use [F# Interactive](tutorials/fsharp-interactive/index.md).  Just copy/paste the code samples and run them there.  Alternatively you can set up a project to compile and run the code as a Console Application in [Visual Studio](tutorials/getting-started/getting-started-visual-studio.md) or [Visual Studio Code and Ionide](tutorials/getting-started/getting-started-vscode.md).
 
 ## Functions and Modules
 
@@ -65,7 +65,7 @@ Arrays, Lists, and Sequences are three primary collection types in the F# core l
 
 ## Recursive Functions
 
-Processing collections or sequences of elements is typically done with [recursion](link-to-wikipedia) in F#.  Although F# has support for loops and imperative programming, recursion is preferred because it is easier to guarantee correctness.
+Processing collections or sequences of elements is typically done with [recursion](language-reference/functions/index.md#recursive-functions) in F#.  Although F# has support for loops and imperative programming, recursion is preferred because it is easier to guarantee correctness.
 
 >![NOTE]
 This same makes use of the pattern matching via the `match` expression.  This fundamental construct is covered later in this article.
@@ -102,7 +102,7 @@ Because Discriminated Unions allow you to represent the recursive structure of t
 
 [[!code-fsharp[PatternMatching]](../../samples/snippets/fsharp/tour.fs#L496-528)
 
-You can also use the shorthand `function` construct for pattern matching, which is useful when you're writing functions which make use of [Partial Application](https://en.wikipedia.org/wiki/Partial_application):
+You can also use the shorthand `function` construct for pattern matching, which is useful when you're writing functions which make use of [Partial Application](language-reference/functions/index.md#partial-application-of-arguments):
 
 [[!code-fsharp[PatternMatching]](../../samples/snippets/fsharp/tour.fs#L530-547)
 
@@ -135,7 +135,7 @@ The F# Core library defines many SI unit types and unit conversions.  To learn m
 
 ## Classes and Interfaces
 
-F# also has full support for .NET classes, [Interfaces](language-reference/interfaces), [Abstract Classes](language-reference/abstract-classes.md), [Inheritance](language-reference/inheritance.md), and so on.
+F# also has full support for .NET classes, [Interfaces](language-reference/interfaces.md), [Abstract Classes](language-reference/abstract-classes.md), [Inheritance](language-reference/inheritance.md), and so on.
 
 [Classes](language-reference/classes.md) are types that represent .NET objects, which can have properties, methods, and events as its [Members](language-reference/members/index.md).
 

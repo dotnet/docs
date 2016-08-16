@@ -13,7 +13,7 @@ ms.assetid: 23dc7d75-cd26-4df2-9be3-9d1aba5c4443
 
 # Sequences
 
-> [!NOTE]
+> [[!NOTE]OTE]
 The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 A *sequence* is a logical series of elements all of one type. Sequences are particularly useful when you have a large, ordered collection of data but do not necessarily expect to use all the elements. Individual sequence elements are computed only as required, so a sequence can provide better performance than a list in situations in which not all the elements are used. Sequences are represented by the `seq<'T>` type, which is an alias for `System.Collections.Generic.IEnumerable`. Therefore, any .NET Framework type that implements `System.IEnumerable` can be used as a sequence. The [Seq module](https://msdn.microsoft.com/library/54e8f059-ca52-4632-9ae9-49685ee9b684) provides support for manipulations involving sequences.

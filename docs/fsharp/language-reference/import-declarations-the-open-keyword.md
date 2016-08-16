@@ -13,7 +13,7 @@ ms.assetid: 1e98e48c-52e9-4314-8954-85d5583125f0
 
 # Import Declarations: The `open` Keyword
 
-> [!NOTE]
+> [[!NOTE]OTE]
 The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 An *import declaration* specifies a module or namespace whose elements you can reference without using a fully qualified name.

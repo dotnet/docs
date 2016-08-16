@@ -38,7 +38,7 @@ The following code illustrates a recursive function that computes the *n*th Fibo
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet4001.fs)]
 
->[!NOTE]
+>[[!NOTE]OTE]
 In practice, code like that above is wasteful of memory and processor time because it involves the recomputation of previously computed values.
 
 

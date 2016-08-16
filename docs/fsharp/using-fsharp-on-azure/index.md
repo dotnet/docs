@@ -1,4 +1,4 @@
 # Using F# on Azure
 
-> [!NOTE]
+> [[!NOTE]OTE]
 This is still in progress.

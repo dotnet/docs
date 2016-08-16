@@ -39,7 +39,7 @@ The effect of disabling a warning applies to the entire file, including portions
 Code that is deactivated by one of these directives appears dimmed in the Visual StudioCode Editor.
 
 
->[!NOTE] 
+>[[!NOTE]OTE] 
 The behavior of the conditional compilation directives is not the same as it is in other languages. For example, you cannot use Boolean expressions involving symbols, and `true` and `false` have no special meaning. Symbols that you use in the `if` directive must be defined by the command line or in the project settings; there is no `define` preprocessor directive.
 
 

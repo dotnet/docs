@@ -13,7 +13,7 @@ ms.assetid: ab453800-d4d0-4a11-9d55-2b358d56af27
 
 # Symbol and Operator Reference
 
-> [!NOTE]
+> [[!NOTE]OTE]
 The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 This topic includes a table of symbols and operators that are used in the F# language.

@@ -251,7 +251,7 @@ let main argv =
 
 You should now be able to run the test and verify it passes by doing `dotnet test`.
 
-> [!NOTE]
+> [[!NOTE]OTE]
 > This will temporarily fail on macOS. [There is an issue here to track this](https://github.com/xunit/xunit/issues/859).
 
 Your `project.json` file should look like this:

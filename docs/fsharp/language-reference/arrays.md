@@ -13,7 +13,7 @@ ms.assetid: 61fa9084-abdc-4cf5-8213-91ec1211866b
 
 # Arrays
 
-> [!NOTE]
+> [[!NOTE]OTE]
 The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 Arrays are fixed-size, zero-based, mutable collections of consecutive data elements that are all of the same type.

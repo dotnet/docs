@@ -1,4 +1,4 @@
 # Asynchronous and Concurrent Programming in F# #
 
-> [!NOTE]
+> [[!NOTE]OTE]
 This is still in-progress.

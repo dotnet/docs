@@ -13,7 +13,7 @@ ms.assetid: 35df2d80-e6d2-4873-b2de-9b45b9e9e650
 
 # Query Expressions
 
-> [!NOTE]
+> [[!NOTE]OTE]
 The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 Query expressions enable you to query a data source and put the data in a desired form. Query expressions provide support for LINQ in F#.

@@ -13,7 +13,7 @@ ms.assetid: 809e9a34-b271-4c87-8356-2426b44f4721
 
 # Visual F# Development Environment Features
 
-> [!NOTE]
+> [[!NOTE]OTE]
 This article is not up to date with the latest Visual Studio.  It will be updated.
 
 This topic includes information about which features of Visual Studio 2012 are supported in F#.

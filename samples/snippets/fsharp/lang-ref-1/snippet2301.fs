@@ -1,2 +1,2 @@
 
-type sizeType = uint32
+type SizeType = uint32

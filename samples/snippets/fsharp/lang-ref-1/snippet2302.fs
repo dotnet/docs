@@ -1,2 +1,2 @@
 
-type transform<'a> = 'a -> 'a
+type Transform<'a> = 'a -> 'a

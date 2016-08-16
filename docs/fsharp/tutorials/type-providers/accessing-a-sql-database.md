@@ -13,10 +13,10 @@ ms.assetid: 1c413eb0-16a5-4c1a-9a4e-ad6877e645d6
 
 # Walkthrough: Accessing a SQL Database by Using Type Providers
 
-> [[!NOTE]OTE]
+> [!NOTE]
 This guide was written for F# 3.0 and will be updated.  See [FSharp.Data](http://fsharp.github.io/FSharp.Data/) for up-to-date, cross-platform type providers.
 
-> [[!NOTE]OTE]
+> [!NOTE]
 The API reference links will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 This walkthrough explains how to use the SqlDataConnection (LINQ to SQL) type provider that is available in F# 3.0 to generate types for data in a SQL database when you have a live connection to a database. If you do not have a live connection to a database, but you do have a LINQ to SQL schema file (DBML file), see [Walkthrough: Generating F# Types from a DBML File](generating-fsharp-types-from-dbml.md).

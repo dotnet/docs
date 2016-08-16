@@ -84,7 +84,7 @@ The following code illustrates the use of reference cells in parameter passing. 
 
 For more information about how to pass by reference, see [Parameters and Arguments](parameters-and-arguments.md).
 
->[[!NOTE]OTE]
+>[!NOTE]
 C# programmers should know that ref works differently in F# than it does in C#. For example, the use of ref when you pass an argument does not have the same effect in F# as it does in C#.
 
 ## Reference Cells vs. Mutable Variables

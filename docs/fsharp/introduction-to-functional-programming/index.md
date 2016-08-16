@@ -1,4 +1,4 @@
 # Introduction to Functional Programming in F# #
 
-> [[!NOTE]OTE]
+> [!NOTE]
 This is still in-progress.

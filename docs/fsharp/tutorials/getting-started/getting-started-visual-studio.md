@@ -13,7 +13,7 @@ ms.assetid: 8db75596-19a9-4eda-b20d-a12d517c8cc1
 
 # Getting Started with F# in Visual Studio
 
-> [[!NOTE]OTE]
+> [!NOTE]
 This article is not up to date with the latest Visual Studio.  It will be updated.
 
 Visual Studio 2010 includes a new programming language, F#. F# is a multiparadigm language that supports functional programming in addition to traditional object-oriented programming and .NET concepts. The following examples introduce some of its features and syntax. The examples show how to declare simple variables, to write and test functions, to create tuples and lists, and to define and use a class.
@@ -49,7 +49,7 @@ Note: General Settings
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet1.fs)]
         
->[[!NOTE]OTE]
+>[!NOTE]
 If you cannot see the code in Classic view, make sure that the **Language Filter** in the header below the topic title is set to include F#.
 
 ### To see results in the F# Interactive window

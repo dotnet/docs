@@ -37,7 +37,7 @@ The output of the previous code is a stream of random numbers between 1 and 20, 
 Found a 10!
 ```
 
->[[!NOTE]OTE] 
+>[!NOTE] 
 You can use `while...do` in sequence expressions and other computation expressions, in which case a customized version of the `while...do` expression is used. For more information, see [Sequences](sequences.md), [Asynchronous Workflows](asynchronous-workflows.md), and [Computation Expressions](computation-expressions.md).
 
 

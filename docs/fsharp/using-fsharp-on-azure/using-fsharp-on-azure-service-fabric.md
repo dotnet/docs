@@ -1,4 +1,4 @@
 # Using F# on Azure Service Fabric
 
-> [[!NOTE]OTE]
+> [!NOTE]
 This is still in progress.

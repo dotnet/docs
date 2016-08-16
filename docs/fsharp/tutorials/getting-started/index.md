@@ -1,4 +1,4 @@
 # F# Guide
 
-> [[!NOTE]OTE]
+> [!NOTE]
 This is still in-progress.

@@ -13,7 +13,7 @@ ms.assetid: 63989543-95c3-4ab7-81f3-3834a8b15010
 
 # Targeting Older Versions of .NET
 
-> [[!NOTE]OTE]
+> [!NOTE]
 This article is not up to date with the latest Visual Studio.  It will be updated.
 
 The following error might appear if you try to target the .NET Framework 2.0, 3.0, or 3.5 in an F# project when Visual Studio is installed on Windows 8.1: 

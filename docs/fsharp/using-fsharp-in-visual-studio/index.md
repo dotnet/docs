@@ -1,4 +1,4 @@
 # Using F# in Visual Studio
 
-> [[!NOTE]OTE]
+> [!NOTE]
 This is still in progress.

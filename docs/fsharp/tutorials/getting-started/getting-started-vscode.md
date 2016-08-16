@@ -1,4 +1,4 @@
 # Getting Started with F# in Visual Studio Code with Ionide
 
-> [[!NOTE]OTE]
+> [!NOTE]
 This is still in-progress.

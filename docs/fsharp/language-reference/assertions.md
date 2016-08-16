@@ -31,7 +31,8 @@ Assertion checking is enabled only when you compile in Debug mode; that is, if t
 
 The assertion failure error cannot be caught by using F# exception handling.
 
->[!NOTE] The `assert` function resolves to [`System.Diagnostics.Debug.Assert`](https://msdn.microsoft.com/library/system.diagnostics.debug.assert.aspx).
+>[!NOTE]
+The `assert` function resolves to [`System.Diagnostics.Debug.Assert`](https://msdn.microsoft.com/library/system.diagnostics.debug.assert.aspx).
 
 ## Example
 

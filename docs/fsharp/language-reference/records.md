@@ -13,7 +13,7 @@ ms.assetid: 3a3701ea-4308-4fa1-9b5c-b955c470f17a
 
 # Records
 
-> ![NOTE]
+> [!NOTE]
 > The following article does not cover using the `struct` attribute for Records yet, which is an F# 4.1 feature.  It will be documented here.
 
 Records represent simple aggregates of named values, optionally with members.

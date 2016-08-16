@@ -576,7 +576,7 @@ module UnitsOfMeasure =
     [<Measure>]
     type mile =
         /// Conversion factor mile to meter: meter is defined in SI.UnitNames
-        static member asMeter = 1600.<meter/mile>
+        static member asMeter = 1609.<meter/mile>
 
     let d  = 50.<mile>          // Distance expressed using imperial units
     let d2 = d * mile.asMeter   // Same distance expressed using metric system

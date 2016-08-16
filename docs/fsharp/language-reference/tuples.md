@@ -13,7 +13,7 @@ ms.assetid: 35069073-9a82-410f-8dea-912e2a152e6d
 
 # Tuples
 
-> ![NOTE]
+> [!NOTE]
 > The following article does not cover struct tuples yet, which are an F# 4.1 feature.  They will be documented here.
 
 A *tuple* is a grouping of unnamed but ordered values, possibly of different types.

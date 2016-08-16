@@ -1,23 +1,23 @@
 # Tour of F# #
 
-The best way to learn about F# is to read and write F# code.  This tour of some of the features of the language will highlight some things and give you some code snippets that you can execute on your machine.  To learn about setting up a development environment, check out [Getting Started](tutorials/getting-started/index.md).
+The best way to learn about F# is to read and write F# code.  This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine.  To learn about setting up a development environment, check out [Getting Started](tutorials/getting-started/index.md).
 
 There are two primary concepts in F#: functions and types.  This tour will emphasize features of the language which fall into these two concepts.
 
 ## How to Run the Code Samples
 
->![NOTE]
-Eventually, this documentation site will have the ability to run these code samples directly in your browser.
+>[!NOTE]
+Eventually, this documentation site will have the ability to run these code samples directly in your browser.  If your browser supports Silverlight, you can use [TryFsharp](http://www.tryfsharp.org/Create) for the time being.
 
 The quickest way to run these code samples is to use [F# Interactive](tutorials/fsharp-interactive/index.md).  Just copy/paste the code samples and run them there.  Alternatively you can set up a project to compile and run the code as a Console Application in [Visual Studio](tutorials/getting-started/getting-started-visual-studio.md) or [Visual Studio Code and Ionide](tutorials/getting-started/getting-started-vscode.md).
 
 ## Functions and Modules
 
-The most fundamental pieces of any F# program are Functions organized into Modules.  [Functions](language-reference/functions/index.md) perform work on inputs to produce outputs, and they are organized under Modules, which are the primary way you group things in F#.  They are defined using the [`let` binding](language-reference/functions/let-bindings.md), which give the function a name and define its arguments.
+The most fundamental pieces of any F# program are ***functions*** organized into ***modules***.  [Functions](language-reference/functions/index.md) perform work on inputs to produce outputs, and they are organized under Modules, which are the primary way you group things in F#.  They are defined using the [`let` binding](language-reference/functions/let-bindings.md), which give the function a name and define its arguments.
 
 [!code-fsharp[BasicFunctions](../../samples/snippets/fsharp/tour.fs#L25-L51)]
 
-`let` bindings are also how you bind a value to a name, similar to a variable in other languages.  However, unlike language such as C#, these values are immutable by default.  The lines between values and functions are a bit blurred, and that's intentional.  More on that later.
+`let` bindings are also how you bind a value to a name, similar to a variable in other languages.  `let` bindings are ***immutable*** by default, which means that once a value or function is bound to a name, it cannot be changed in-place.  This is in contrast to variables in other languages, which are ***mutable***, meaning their values can be changed at any point in time.  If you require a mutable binding, you can use `let mutable ...` syntax.
 
 ## Integers, Booleans, and Strings
 
@@ -41,25 +41,19 @@ And here's what basic [string](language-reference/strings.md) manipulation looks
 
 [!code-fsharp[Tuples](../../samples/snippets/fsharp/tour.fs#L98-L112)]
 
-You can also use *struct tuples* with the `struct` keyword.  This tells the compiler that the tuple is allocated on the program Stack, rather than the program Heap.  This is helpful for some high-performance scenarios.
-
-[!code-fsharp[Tuples](../../samples/snippets/fsharp/tour.fs#L114-L121)]
-
-Note that struct tuples and "regular" tuples are distinct types.  You cannot "fool" the compiler into thinking one is the other.  Instead, you must explicitly transfer the values from one tuple type to the other if you wish to work with both types of tuples.
-
-## Arrays, Lists, and Sequences
+## Lists, Arrays, and Sequences
 
 Arrays, Lists, and Sequences are three primary collection types in the F# core library.
 
-[Arrays](language-reference/arrays.md) are fixed-size, *mutable* collections of elements of the same type.  They are also all loaded into memory, thus they support fast random access of elements.
-
-[!code-fsharp[Arrays](../../samples/snippets/fsharp/tour.fs#L246-L276)]
-
-[Lists](language-reference/lists.md) are ordered, immutable collections of elements of the same type.  Under the covers, they are singly-linked lists, which makes them lightweight and good for enumeration, but a poor choice for random access and concatenation if they're large.
+[Lists](language-reference/lists.md) are ordered, immutable collections of elements of the same type.  They are singly-linked lists, which means they are meant for enumeration, but a poor choice for random access and concatenation if they're large.  This in contrast to Lists in other popular languages, which typically do not use a singly-linked list to represent Lists.
 
 [!code-fsharp[Lists](../../samples/snippets/fsharp/tour.fs#L129-L161)]
 
-[Sequences](language-reference/sequences.md) are a logical series of elements, all of the same type.  These are a more general type that Lists and Arrays, capable of being your "view" into any logical series of types.  They also stand out because they are *lazy*, which means that elements are computed only when they are needed.
+[Arrays](language-reference/arrays.md) are fixed-size, *mutable* collections of elements of the same type.  They support fast random access of elements, and are faster than F# lists because they are just contiguous blocks of memory.
+
+[!code-fsharp[Arrays](../../samples/snippets/fsharp/tour.fs#L246-L276)]
+
+[Sequences](language-reference/sequences.md) are a logical series of elements, all of the same type.  These are a more general type than Lists and Arrays, capable of being your "view" into any logical series of elements.  They also stand out because can be ***lazy***, which means that elements are computed only when they are needed.
 
 [!code-fsharp[Sequences](../../samples/snippets/fsharp/tour.fs#L289-L315)]
 
@@ -67,18 +61,18 @@ Arrays, Lists, and Sequences are three primary collection types in the F# core l
 
 Processing collections or sequences of elements is typically done with [recursion](language-reference/functions/index.md#recursive-functions) in F#.  Although F# has support for loops and imperative programming, recursion is preferred because it is easier to guarantee correctness.
 
->![NOTE]
-This same makes use of the pattern matching via the `match` expression.  This fundamental construct is covered later in this article.
+>[!NOTE]
+The following example makes use of the pattern matching via the `match` expression.  This fundamental construct is covered later in this article.
 
 [!code-fsharp[RecursiveFunctions](../../samples/snippets/fsharp/tour.fs#L323-L349)]
 
-F# also has full support for "tail call optimization", which for the uninitiated is a way to optimize recursive calls so that they are just as fast as a loop construct.  This is fairly unique, as most languages require implementing things like Stack Trampolines to avoid overflowing the program Stack with recursive calls.
+F# also has full support for "tail call optimization", which is a way to optimize recursive calls so that they are just as fast as a loop construct.
 
 ## Record and Discriminated Union Types
 
 Record and Union types are two fundamental data types used in F# code, and are generally the best way to represent data in an F# program.  Although this makes them similar to classes in other languages, one of their primary differences is that they have structural equality semantics.  This means that they are "natively" comparable and equality is straightforward - just check if one is equal to the other.
 
-[Records](language-reference/records.md) are an aggregate of named values, with optional members (such as methods).  If you're familiar with C# or Java, then these should feel similar to POCOs or POJOs - just with less ceremony and structural equality.
+[Records](language-reference/records.md) are an aggregate of named values, with optional members (such as methods).  If you're familiar with C# or Java, then these should feel similar to POCOs or POJOs - just structural equality and less ceremony.
 
 [!code-fsharp[Records](../../samples/snippets/fsharp/tour.fs#L357-L373)]
 
@@ -94,11 +88,11 @@ Additionally, Discriminated Unions also support recursive definitions, allowing 
 
 [[!code-fsharp[Unions](../../samples/snippets/fsharp/tour.fs#L439-L466)]
 
-Because Discriminated Unions allow you to represent the recursive structure of the tree in the data type, operating on it is very straightforward and nets you correctness guarantees with pattern matching.  See below for more.
+Because Discriminated Unions allow you to represent the recursive structure of the tree in the data type, operating on this recursive structure is straightforward and guarantees correctness.  It is also supported in pattern matching, as shown below.
 
 ## Pattern Matching
 
-[Pattern Matching](language-reference/pattern-matching.md) is the F# languag feature which enables correctness for operating on F# types.  In the above samples, you probably noticed quite a bit of `match x with ...` syntax.  This construct allows the compiler, which can understand the "shape" of data types, to enforce you to account for all possible cases when using a data type through what is known as Exhausting Pattern Matching.  This is incredibly powerful for correctness, and can be cleverly used to "lift" what would normally be a runtime concern into compile-time.
+[Pattern Matching](language-reference/pattern-matching.md) is the F# language feature which enables correctness for operating on F# types.  In the above samples, you probably noticed quite a bit of `match x with ...` syntax.  This construct allows the compiler, which can understand the "shape" of data types, to force you to account for all possible cases when using a data type through what is known as Exhaustive Pattern Matching.  This is incredibly powerful for correctness, and can be cleverly used to "lift" what would normally be a runtime concern into compile-time.
 
 [[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L496-L528)]
 
@@ -106,13 +100,13 @@ You can also use the shorthand `function` construct for pattern matching, which 
 
 [[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L530-L547)]
 
-Something you may have noticed is the use of the `_` pattern.  This is known as the "wildcard" pattern, which is basically a way of saying "I don't care what it is, since it doesn't matter to me".  Although convenient, you can accidentaly bypass Exhaustive Pattern Matching and no longer benefit from compile-time enforcements if you aren't careful.
+Something you may have noticed is the use of the `_` pattern.  This is known as the [Wildcard Pattern](language-reference/pattern-matching.md#wildcard-pattern), which is a way of saying "I don't care what something is".  Although convenient, you can accidentaly bypass Exhaustive Pattern Matching and no longer benefit from compile-time enforcements if you aren't careful in using `_`.
 
 [Active Patterns](language-reference/active-patterns.md) are another powerful construct to use with pattern matching.  They allow you to partition input data into custom forms, decomposing them at the pattern match call site.  They can also be parameterized, thus allowing to define the partition as a function.  Expanding the previous example to support Active Patterns looks something like this:
 
 [[!code-fsharp[ActivePatterns](../../samples/snippets/fsharp/tour.fs#L530-L564)]
 
->![NOTE]
+>[!NOTE]
 The previous above example creates a `Result` type.  This has been added to the language with F# 4.1.  This document will be updated once F# 4.1 is shipped.
 
 ## Optional Types
@@ -148,6 +142,18 @@ Defining generic classes is also very straightforward.
 To implement an Interface, you can use `interface ... with` syntax.
 
 [[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L229-L238)]
+
+## Which Types to Use
+
+The presence of Classes, Records, Discriminated Unions, and Tuples leads to an important question: which should you use?  Like most everything in life, the answer depends on your circumstances.
+
+Tuples are great for returning multiple values from a function, and using an ad-hoc aggregate of values as a value itself.
+
+Records are a "step up" from Tuples, having named labels and suport for optional members.  They are great for a low-ceremony representation of data in-transit through your program.  Because they have structural equality, they can be used in Pattern Matching.
+
+Discriminated Unions have many reasons, but the core benefit is to be able to utilize them in conjunction with Pattern Matching to account for all possible "shapes" that a data can have.  
+
+Classes are great for a huge number of reasons, such as when you need to represent information and also tie that information to functionality.  As a rule of thumb, when you have functionality which is conceptually tied to some data, using Classes and the principles of Object-Oriented Programming is a big benefit.  Classes are also the preferred data type when interoperating with C# and Visual Basic, as these languages use classes for nearly everything.
 
 ## Next Steps
 

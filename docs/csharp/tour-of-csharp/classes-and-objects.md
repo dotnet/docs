@@ -172,7 +172,7 @@ As shown in the previous example, ***read-only fields*** may be declared with a 
 
 A ***method*** is a member that implements a computation or action that can be performed by an object or class. ***Static methods*** are accessed through the class. ***Instance methods*** are accessed through instances of the class.
 
-Methods have a (possibly empty) list of ***parameters***, which represent values or variable references passed to the method, and a ***return type***, which specifies the type of the value computed and returned by the method. A method’s return type is void if it does not return a value.
+Methods may have a list of ***parameters***, which represent values or variable references passed to the method, and a ***return type***, which specifies the type of the value computed and returned by the method. A method’s return type is `void` if it does not return a value.
 
 Like types, methods may also have a set of type parameters, for which type arguments must be specified when the method is called. Unlike types, the type arguments can often be inferred from the arguments of a method call and need not be explicitly given.
 
@@ -186,7 +186,7 @@ A ***value parameter*** is used for input parameter passing. A value parameter c
 
 Value parameters can be optional, by specifying a default value so that corresponding arguments can be omitted.
 
-A ***reference parameter*** is used for both input and output parameter passing. The argument passed for a reference parameter must be a variable, and during execution of the method, the reference parameter represents the same storage location as the argument variable. A reference parameter is declared with the ref modifier. The following example shows the use of ref parameters.
+A ***reference parameter*** is used for both input and output parameter passing. The argument passed for a reference parameter must be a variable, and during execution of the method, the reference parameter represents the same storage location as the argument variable. A reference parameter is declared with the `ref` modifier. The following example shows the use of `ref` parameters.
 
 ```csharp
 using System;
@@ -207,7 +207,7 @@ class RefExample
 }
 ```
 
-An ***output parameter*** is used for output parameter passing. An output parameter is similar to a reference parameter except that the initial value of the caller-provided argument is unimportant. An output parameter is declared with the out modifier. The following example shows the use of out parameters.
+An ***output parameter*** is used for output parameter passing. An output parameter is similar to a reference parameter except that the initial value of the caller-provided argument is unimportant. An output parameter is declared with the `out` modifier. The following example shows the use of `out` parameters.
 
 ```csharp
 using System;
@@ -289,7 +289,7 @@ A method declared with a static modifier is a ***static method***. A static meth
 
 A method declared without a static modifier is an ***instance method***. An instance method operates on a specific instance and can access both static and instance members. The instance on which an instance method was invoked can be explicitly accessed as `this`. It is an error to refer to `this` in a static method.
 
-The following Entity class has both static and instance members.
+The following `Entity` class has both static and instance members.
 
 ```csharp
 class Entity
@@ -422,7 +422,7 @@ Expression e = new Operation(
 	new Constant(3));
 ```
 
-The `Evaluate` method of an `Expression` instance is invoked to evaluate the given expression and produce a `double` value. The method takes as an argument a `Hashtable` that contains variable names (as keys of the entries) and values (as values of the entries). The `Evaluate` method is a `virtual abstract` method, meaning that non-abstract derived classes must override it to provide an actual implementation.
+The `Evaluate` method of an `Expression` instance is invoked to evaluate the given expression and produce a `double` value. The method takes as an argument a @`Hashtable` that contains variable names (as keys of the entries) and values (as values of the entries). The `Evaluate` method is a `virtual abstract` method, meaning that non-abstract derived classes must override it to provide an actual implementation.
 
 A `Constant`'s implementation of `Evaluate` simply returns the stored constant. A `VariableReference`'s implementation looks up the variable name in the hashtable and returns the resulting value. An `Operation`'s implementation first evaluates the left and right operands (by recursively invoking their `Evaluate` methods) and then performs the given arithmetic operation.
 
@@ -572,9 +572,9 @@ public class List<T>
 
 	static bool Equals(List<T> a, List<T> b) 
 	{
-		if (a == null) return b == null;
-		if (b == null || a.count != b.count) 
-		return false;
+        if (Object.ReferenceEquals(a, null)) return Object.ReferenceEquals(b, null);
+        if (Object.ReferenceEquals(b, null) || a.count != b.count)
+            return false;
 		for (int i = 0; i < a.count; i++) 
 		{
 			if (!object.Equals(a.items[i], b.items[i])) 

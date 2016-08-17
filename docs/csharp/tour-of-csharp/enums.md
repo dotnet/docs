@@ -70,7 +70,7 @@ enum Alignment: sbyte
 
 As shown by the previous example, an `enum` member declaration can include a constant expression that specifies the value of the member. The constant value for each `enum` member must be in the range of the underlying type of the `enum`. When an `enum` member declaration does not explicitly specify a value, the member is given the value zero (if it is the first member in the `enum` type) or the value of the textually preceding `enum` member plus one.
 
-`Enum` values can be converted to integral values and vice versa using type casts. For example
+`Enum` values can be converted to integral values and vice versa using type casts. For example:
 
 ```csharp
 int i = (int)Color.Blue;		// int i = 2;

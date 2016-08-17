@@ -593,7 +593,7 @@ The following is a list of namespaces in the .NET Core class library. Each names
    Contains a single type, @Windows.UI.Xaml.Media.Media3D.Matrix3D, that represents a 4 × 4 matrix used for transformations in a 3-D space in Universal Windows Platform apps. 
     </td>
 </tr>
-</table> 
+</table>  
 
 ## Improving the Documentation ##
 

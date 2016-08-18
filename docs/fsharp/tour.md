@@ -1,3 +1,17 @@
+---
+title: Tour of F#
+description: Tour of F# 
+keywords: .NET, .NET Core, F#, Tour
+author: cartermp
+manager: wpickett
+ms.date: 08/18/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 49775139-082e-442f-b5a2-dd402399b5d2
+---
+
 # Tour of F# #
 
 The best way to learn about F# is to read and write F# code.  This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine.  To learn about setting up a development environment, check out [Getting Started](tutorials/getting-started/index.md).
@@ -47,15 +61,15 @@ Arrays, Lists, and Sequences are three primary collection types in the F# core l
 
 [Lists](language-reference/lists.md) are ordered, immutable collections of elements of the same type.  They are singly-linked lists, which means they are meant for enumeration, but a poor choice for random access and concatenation if they're large.  This in contrast to Lists in other popular languages, which typically do not use a singly-linked list to represent Lists.
 
-[!code-fsharp[Lists](../../samples/snippets/fsharp/tour.fs#L129-L161)]
+[!code-fsharp[Lists](../../samples/snippets/fsharp/tour.fs#L119-L151)]
 
 [Arrays](language-reference/arrays.md) are fixed-size, *mutable* collections of elements of the same type.  They support fast random access of elements, and are faster than F# lists because they are just contiguous blocks of memory.
 
-[!code-fsharp[Arrays](../../samples/snippets/fsharp/tour.fs#L246-L276)]
+[!code-fsharp[Arrays](../../samples/snippets/fsharp/tour.fs#L236-L266)]
 
 [Sequences](language-reference/sequences.md) are a logical series of elements, all of the same type.  These are a more general type than Lists and Arrays, capable of being your "view" into any logical series of elements.  They also stand out because can be ***lazy***, which means that elements are computed only when they are needed.
 
-[!code-fsharp[Sequences](../../samples/snippets/fsharp/tour.fs#L289-L315)]
+[!code-fsharp[Sequences](../../samples/snippets/fsharp/tour.fs#L274-L305)]
 
 ## Recursive Functions
 
@@ -64,7 +78,7 @@ Processing collections or sequences of elements is typically done with [recursio
 >[!NOTE]
 The following example makes use of the pattern matching via the `match` expression.  This fundamental construct is covered later in this article.
 
-[!code-fsharp[RecursiveFunctions](../../samples/snippets/fsharp/tour.fs#L323-L349)]
+[!code-fsharp[RecursiveFunctions](../../samples/snippets/fsharp/tour.fs#L313-L339)]
 
 F# also has full support for "tail call optimization", which is a way to optimize recursive calls so that they are just as fast as a loop construct.
 
@@ -74,19 +88,19 @@ Record and Union types are two fundamental data types used in F# code, and are g
 
 [Records](language-reference/records.md) are an aggregate of named values, with optional members (such as methods).  If you're familiar with C# or Java, then these should feel similar to POCOs or POJOs - just structural equality and less ceremony.
 
-[!code-fsharp[Records](../../samples/snippets/fsharp/tour.fs#L357-L373)]
+[!code-fsharp[Records](../../samples/snippets/fsharp/tour.fs#L347-L363)]
 
 [Discriminated Unions](language-reference/discriminated-unions.md) are values which could be a number of named forms or cases.  Data stored in the type can be one of several distinct values.
 
-[[!code-fsharp[Unions](../../samples/snippets/fsharp/tour.fs#L381-L432)]
+[[!code-fsharp[Unions](../../samples/snippets/fsharp/tour.fs#L371-L422)]
 
 You can also use Unions as *single-case unions*, to help with domain modeling over primitive types.  Often times, strings and other primitive types are used to represent types of information that shouldn't be interchangeable.  However, using only the string representation can lead to that mistake quite easily!  Representing each type of information as a distinct single-case union can enforce correctness in this scenario.
 
-[[!code-fsharp[Unions](../../samples/snippets/fsharp/tour.fs#L434-L437)]
+[[!code-fsharp[Unions](../../samples/snippets/fsharp/tour.fs#L424-L427)]
 
 Additionally, Discriminated Unions also support recursive definitions, allowing you to easily represent trees and inherently recursive data.  For example, here's how you can represent a Binary Search Tree with `exists` and `insert` functions.
 
-[[!code-fsharp[Unions](../../samples/snippets/fsharp/tour.fs#L439-L466)]
+[[!code-fsharp[Unions](../../samples/snippets/fsharp/tour.fs#L429-L456)]
 
 Because Discriminated Unions allow you to represent the recursive structure of the tree in the data type, operating on this recursive structure is straightforward and guarantees correctness.  It is also supported in pattern matching, as shown below.
 
@@ -94,17 +108,17 @@ Because Discriminated Unions allow you to represent the recursive structure of t
 
 [Pattern Matching](language-reference/pattern-matching.md) is the F# language feature which enables correctness for operating on F# types.  In the above samples, you probably noticed quite a bit of `match x with ...` syntax.  This construct allows the compiler, which can understand the "shape" of data types, to force you to account for all possible cases when using a data type through what is known as Exhaustive Pattern Matching.  This is incredibly powerful for correctness, and can be cleverly used to "lift" what would normally be a runtime concern into compile-time.
 
-[[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L496-L528)]
+[[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L486-L518)]
 
 You can also use the shorthand `function` construct for pattern matching, which is useful when you're writing functions which make use of [Partial Application](language-reference/functions/index.md#partial-application-of-arguments):
 
-[[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L530-L547)]
+[[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L520-L537)]
 
 Something you may have noticed is the use of the `_` pattern.  This is known as the [Wildcard Pattern](language-reference/pattern-matching.md#wildcard-pattern), which is a way of saying "I don't care what something is".  Although convenient, you can accidentaly bypass Exhaustive Pattern Matching and no longer benefit from compile-time enforcements if you aren't careful in using `_`.
 
 [Active Patterns](language-reference/active-patterns.md) are another powerful construct to use with pattern matching.  They allow you to partition input data into custom forms, decomposing them at the pattern match call site.  They can also be parameterized, thus allowing to define the partition as a function.  Expanding the previous example to support Active Patterns looks something like this:
 
-[[!code-fsharp[ActivePatterns](../../samples/snippets/fsharp/tour.fs#L530-L564)]
+[[!code-fsharp[ActivePatterns](../../samples/snippets/fsharp/tour.fs#L538-L548)]
 
 >[!NOTE]
 The previous above example creates a `Result` type.  This has been added to the language with F# 4.1.  This document will be updated once F# 4.1 is shipped.
@@ -115,7 +129,7 @@ One special case of Discriminated Union types is the Option Type, which is so us
 
 [The Option Type](language-reference/options.md) is a type which represents one of two cases: a value, or nothing at all.  It is used in any scenario where a value may or may not result from a particular operation.  This then forces you to account for both cases, making it a compile-time concern rather than a runtime concern.  These are often used in APIs where `null` is used to represent "nothing" instead, thus eliminating the need to worry about `NulReferenceException` in many circumstances.
 
-[[!code-fsharp[Options](../../samples/snippets/fsharp/tour.fs#L472-L489)]
+[[!code-fsharp[Options](../../samples/snippets/fsharp/tour.fs#L462-L479)]
 
 ## Units of Measure
 
@@ -123,7 +137,7 @@ One unique feature of F#'s type system is the ability to provide context for num
 
 [Units of Measure](language-reference/units-of-measure.md) allow you to associate a numeric type to a unit, such as Meters, and have functions perform work on units rather than numeric literals.  This enables the compiler to verify that the types of numeric literals passed in make sense under a certain context, and eliminate runtime errors associated with that kind of work.
 
-[[!code-fsharp[UnitsOfMeasure](../../samples/snippets/fsharp/tour.fs#L570-L585)]
+[[!code-fsharp[UnitsOfMeasure](../../samples/snippets/fsharp/tour.fs#L5554-L569)]
 
 The F# Core library defines many SI unit types and unit conversions.  To learn more, check out the [Microsoft.FSharp.Data.UnitSystems.SI Namespace](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/microsoft.fsharp.data.unitsystems.si-namespace-%5bfsharp%5d).
 
@@ -133,15 +147,15 @@ F# also has full support for .NET classes, [Interfaces](language-reference/inter
 
 [Classes](language-reference/classes.md) are types that represent .NET objects, which can have properties, methods, and events as its [Members](language-reference/members/index.md).
 
-[[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L169-L192)]
+[[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L159-L182)]
 
 Defining generic classes is also very straightforward.
 
-[[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L200-L221)]
+[[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L190-L211)]
 
 To implement an Interface, you can use `interface ... with` syntax.
 
-[[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L229-L238)]
+[[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L220-L228)]
 
 ## Which Types to Use
 

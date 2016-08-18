@@ -111,16 +111,6 @@ module Tuples =
 
     printfn "tuple1: %A    tuple2: %A" tuple1 tuple2
 
-    /// The origin, represented as a struct tuple
-    let origin = struct (0, 0)
-
-    /// Explicitly annotate the inputs as struct tuples.  This is not required.
-    let getDistance ((x1, x2): struct(int*int)) ((y1, y2): struct(int*int)) =
-        sqrt ((x2 - x1)**2 + (y1 - y1)**2)
-
-    printfn "The distance between the (0, 0) and (12, 13) is: %A" (getDistance origin struct (12,13))
-    
-
 
 // ---------------------------------------------------------------
 //         Lists and list processing
@@ -446,22 +436,22 @@ module UnionTypes =
 
     /// Check if an item exists in the binary search tree.
     /// Searches recursively.  Returns true if it exists; otherwise, false.
-    let rec exists x bst =
-        match x with
+    let rec exists item bst =
+        match bst with
         | Empty -> false
-        | Node (item, left, right) ->
+        | Node (x, left, right) ->
             if item = x then true
-            elif item < x then exists x left
-            else exists x right 
+            elif item < x then (exists item left) // Check the left subtree.
+            else (exists item right) // Check the right subtree.
 
     /// Inserts an item in the Binary Search Tree.
     /// Finds the place to insert recursively, then inserts a new node.
     /// If the item is already present, it does not insert anything.
     let rec insert item bst =
-        match x with
-        | Empty -> Node(x, Empty, Empty)
-        | Node(item, left, right) ->
-            if item = x then Node // No need to insert, it already exists.
+        match bst with
+        | Empty -> Node(item, Empty, Empty)
+        | Node(x, left, right) as node ->
+            if item = x then node // No need to insert, it already exists; return the node.
             elif item < x then Node(item, insert x left, right) // Call into left subtree.
             else Node(item, left, insert x right) // Call into right subtree.
 
@@ -529,22 +519,16 @@ module PatternMatching =
 
     open System
 
-    type Result<'TSuccess, 'TError> =
-        | Success of 'TSuccess
-        | Error of 'TError
-
-    type CouldNotParseError = CouldNotParseError of string
-
     let private parseHelper f = f >> function // Use the shorthand and partial application
-        | (true, item) -> Success(item)
-        | (false, _) -> Error(CouldNotParseError("Couldn't parse it!'"))
+        | (true, item) -> Some item
+        | (false, _) -> None
     
     let parseDateTimeOffset = parseHelper DateTimeOffset.TryParse
 
     let result = parseDateTimeOffset "1970-01-01"
     match result with
-    | Success dto -> printfn "It parsed!"
-    | Error e -> printfn "%s" e
+    | Some dto -> printfn "It parsed!"
+    | None -> printfn "It didn't parse!"
 
     /// Define some more functions which parse
     let parseInt = parseHelper Int32.TryParse
@@ -561,7 +545,7 @@ module PatternMatching =
     let parse = function
         | Int x -> printfn "%d" x
         | Double x -> printfn "%f" x
-        | Date d-> printfn "%s" d
+        | Date d -> printfn "%s" (d.ToString())
 
 // ---------------------------------------------------------------
 //         Units of measure

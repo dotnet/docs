@@ -250,13 +250,13 @@ module Arrays =
     /// An array initialized by index and containing the even numbers from 0 to 2000
     let evenNumbers = Array.init 1001 (fun n -> n * 2) 
 
-    /// sub-array extracted using slicing notation
+    /// Sub-array extracted using slicing notation
     let evenNumbersSlice = evenNumbers.[0..500]
 
     for word in array4 do 
         printfn "word: %s" word
 
-    // modify an array element using the left arrow assignment operator
+    // Mdify an array element using the left arrow assignment operator
     array2.[1] <- "WORLD!"
 
     /// Calculates the sum of the lengths of the words that start with 'h'
@@ -283,7 +283,7 @@ module Sequences =
 
     let numbersSeq = seq { 1 .. 1000 }
 
-    /// another array containing only the words "hello" and "world"
+    /// Another array containing only the words "hello" and "world"
     let seq3 = 
         seq { for word in seq2 do
                   if word.Contains("l") then 
@@ -346,7 +346,7 @@ module RecursiveFunctions  =
 
 module RecordTypes = 
 
-    // define a record type
+    // Define a record type
     type ContactCard = 
         { Name     : string;
           Phone    : string;
@@ -354,7 +354,7 @@ module RecordTypes =
               
     let contact1 = { Name = "Alf" ; Phone = "(206) 555-0157" ; Verified = false }
 
-    // create a new record that is a copy of contact1, 
+    // Create a new record that is a copy of contact1, 
     // but has different values for the 'Phone' and 'Verified' fields
     let contact2 = { contact1 with Phone = "(206) 555-0112"; Verified = true }
 
@@ -578,7 +578,7 @@ module ParallelArrayProgramming =
               
     let oneBigArray = [| 0 .. 100000 |]
     
-    // do some CPU intensive computation 
+    // Do some CPU intensive computation 
     let rec computeSomeFunction x = 
         if x <= 2 then 1 
         else computeSomeFunction (x - 1) + computeSomeFunction (x - 2)

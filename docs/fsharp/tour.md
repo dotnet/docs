@@ -1,14 +1,14 @@
 ---
 title: Tour of F#
 description: Tour of F# 
-keywords: .NET, .NET Core, F#, Tour
+keywords: visual f#, f#, functional programming, .NET, tour
 author: cartermp
 manager: wpickett
 ms.date: 08/18/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.devlang: devlang-fsharp
 ms.assetid: 49775139-082e-442f-b5a2-dd402399b5d2
 ---
 
@@ -92,15 +92,15 @@ Record and Union types are two fundamental data types used in F# code, and are g
 
 [Discriminated Unions](language-reference/discriminated-unions.md) are values which could be a number of named forms or cases.  Data stored in the type can be one of several distinct values.
 
-[[!code-fsharp[Unions](../../samples/snippets/fsharp/tour.fs#L371-L422)]
+[!code-fsharp[Unions](../../samples/snippets/fsharp/tour.fs#L371-L422)]
 
 You can also use Unions as *single-case unions*, to help with domain modeling over primitive types.  Often times, strings and other primitive types are used to represent types of information that shouldn't be interchangeable.  However, using only the string representation can lead to that mistake quite easily!  Representing each type of information as a distinct single-case union can enforce correctness in this scenario.
 
-[[!code-fsharp[Unions](../../samples/snippets/fsharp/tour.fs#L424-L427)]
+[!code-fsharp[Unions](../../samples/snippets/fsharp/tour.fs#L424-L427)]
 
 Additionally, Discriminated Unions also support recursive definitions, allowing you to easily represent trees and inherently recursive data.  For example, here's how you can represent a Binary Search Tree with `exists` and `insert` functions.
 
-[[!code-fsharp[Unions](../../samples/snippets/fsharp/tour.fs#L429-L456)]
+[!code-fsharp[Unions](../../samples/snippets/fsharp/tour.fs#L429-L456)]
 
 Because Discriminated Unions allow you to represent the recursive structure of the tree in the data type, operating on this recursive structure is straightforward and guarantees correctness.  It is also supported in pattern matching, as shown below.
 
@@ -108,17 +108,17 @@ Because Discriminated Unions allow you to represent the recursive structure of t
 
 [Pattern Matching](language-reference/pattern-matching.md) is the F# language feature which enables correctness for operating on F# types.  In the above samples, you probably noticed quite a bit of `match x with ...` syntax.  This construct allows the compiler, which can understand the "shape" of data types, to force you to account for all possible cases when using a data type through what is known as Exhaustive Pattern Matching.  This is incredibly powerful for correctness, and can be cleverly used to "lift" what would normally be a runtime concern into compile-time.
 
-[[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L486-L518)]
+[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L486-L518)]
 
 You can also use the shorthand `function` construct for pattern matching, which is useful when you're writing functions which make use of [Partial Application](language-reference/functions/index.md#partial-application-of-arguments):
 
-[[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L520-L537)]
+[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L520-L537)]
 
 Something you may have noticed is the use of the `_` pattern.  This is known as the [Wildcard Pattern](language-reference/pattern-matching.md#wildcard-pattern), which is a way of saying "I don't care what something is".  Although convenient, you can accidentaly bypass Exhaustive Pattern Matching and no longer benefit from compile-time enforcements if you aren't careful in using `_`.
 
 [Active Patterns](language-reference/active-patterns.md) are another powerful construct to use with pattern matching.  They allow you to partition input data into custom forms, decomposing them at the pattern match call site.  They can also be parameterized, thus allowing to define the partition as a function.  Expanding the previous example to support Active Patterns looks something like this:
 
-[[!code-fsharp[ActivePatterns](../../samples/snippets/fsharp/tour.fs#L538-L548)]
+[!code-fsharp[ActivePatterns](../../samples/snippets/fsharp/tour.fs#L538-L548)]
 
 >[!NOTE]
 The previous above example creates a `Result` type.  This has been added to the language with F# 4.1.  This document will be updated once F# 4.1 is shipped.
@@ -137,7 +137,7 @@ One unique feature of F#'s type system is the ability to provide context for num
 
 [Units of Measure](language-reference/units-of-measure.md) allow you to associate a numeric type to a unit, such as Meters, and have functions perform work on units rather than numeric literals.  This enables the compiler to verify that the types of numeric literals passed in make sense under a certain context, and eliminate runtime errors associated with that kind of work.
 
-[[!code-fsharp[UnitsOfMeasure](../../samples/snippets/fsharp/tour.fs#L5554-L569)]
+[!code-fsharp[UnitsOfMeasure](../../samples/snippets/fsharp/tour.fs#L5554-L569)]
 
 The F# Core library defines many SI unit types and unit conversions.  To learn more, check out the [Microsoft.FSharp.Data.UnitSystems.SI Namespace](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/microsoft.fsharp.data.unitsystems.si-namespace-%5bfsharp%5d).
 
@@ -147,15 +147,15 @@ F# also has full support for .NET classes, [Interfaces](language-reference/inter
 
 [Classes](language-reference/classes.md) are types that represent .NET objects, which can have properties, methods, and events as its [Members](language-reference/members/index.md).
 
-[[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L159-L182)]
+[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L159-L182)]
 
 Defining generic classes is also very straightforward.
 
-[[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L190-L211)]
+[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L190-L211)]
 
 To implement an Interface, you can use `interface ... with` syntax.
 
-[[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L220-L228)]
+[!code-fsharp[Classes](../../samples/snippets/fsharp/tour.fs#L220-L228)]
 
 ## Which Types to Use
 

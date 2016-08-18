@@ -129,7 +129,7 @@ One special case of Discriminated Union types is the Option Type, which is so us
 
 [The Option Type](language-reference/options.md) is a type which represents one of two cases: a value, or nothing at all.  It is used in any scenario where a value may or may not result from a particular operation.  This then forces you to account for both cases, making it a compile-time concern rather than a runtime concern.  These are often used in APIs where `null` is used to represent "nothing" instead, thus eliminating the need to worry about `NulReferenceException` in many circumstances.
 
-[[!code-fsharp[Options](../../samples/snippets/fsharp/tour.fs#L462-L479)]
+[!code-fsharp[Options](../../samples/snippets/fsharp/tour.fs#L462-L479)]
 
 ## Units of Measure
 
@@ -137,7 +137,7 @@ One unique feature of F#'s type system is the ability to provide context for num
 
 [Units of Measure](language-reference/units-of-measure.md) allow you to associate a numeric type to a unit, such as Meters, and have functions perform work on units rather than numeric literals.  This enables the compiler to verify that the types of numeric literals passed in make sense under a certain context, and eliminate runtime errors associated with that kind of work.
 
-[!code-fsharp[UnitsOfMeasure](../../samples/snippets/fsharp/tour.fs#L5554-L569)]
+[!code-fsharp[UnitsOfMeasure](../../samples/snippets/fsharp/tour.fs#L554-L569)]
 
 The F# Core library defines many SI unit types and unit conversions.  To learn more, check out the [Microsoft.FSharp.Data.UnitSystems.SI Namespace](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/microsoft.fsharp.data.unitsystems.si-namespace-%5bfsharp%5d).
 

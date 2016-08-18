@@ -32,7 +32,6 @@ The type of the array elements is inferred from the literals used and must be co
 ```fsharp
 // Causes an error.
 // let array2 = [| 1.0; 2; 3 |]
-
 ```
 
 You can also use sequence expressions to create arrays. Following is an example that creates an array of squares of integers from 1 to 10.

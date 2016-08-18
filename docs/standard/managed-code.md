@@ -28,7 +28,7 @@ What is “Intermediate Language” (or IL for short)? It is a product of compil
 
 Once you produce IL from your high-level code, you will most likely want to run it. This is where the CLR takes over and starts the process of **Just-In-Time** compiling, or **JIT-ing** your code from IL to machine code that can actually be run on a CPU. In this way, the CLR knows exactly what your code is doing and can effectivelly _manage_ it.
 
-## Umanaged code interoperability
+## Unmanaged code interoperability
 
 Of course, the CLR allows passing the boundaries between managed and unmanaged world, and there is a lot of code that does that, even in the [Base Class Libraries](framework-libraries.md). This is called **interoperability** or just **interop** for short. These provisions would allow you to, for example, wrap up an unmanaged library and call into it. However, it is important to note that once you do this, when the code passes the boundaries of the runtime, the actual management of the execution is again in the hand of unmanged code, and thus falls under the same restrictions.
 

@@ -45,10 +45,7 @@ namespace ObjectPoolExample
         public T GetObject()
         {
             T item;
-            if (_objects.TryTake(out item)) return item;
-            {
-                return _objectGenerator();
-            }
+            return _objects.TryTake(out item) ? item : _objectGenerator();
         }
 
         public void PutObject(T item)

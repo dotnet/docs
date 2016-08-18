@@ -40,291 +40,77 @@ The following lists the kinds of statements that can be used, and provides an ex
 
 ***Local variable declaration***
 
-```csharp
-static void Main()
-{
-	int a; 
-	int b = 2, c = 3; 
-	a = 1;
-	Console.WriteLine(a + b + c);
-}
-```
+[!code-csharp[Declarations](../../../samples/snippets/csharp/tour/statements/Program.cs#L9-L15)]
 
 ***Local constant declaration***
 
-```csharp
-static void Main()
-{
-	const float pi = 3.1415927f;
-	const int r = 25;
-	Console.WriteLine(pi * r * r);
-}
-```
+[!code-csharp[ConstantDeclarations](../../../samples/snippets/csharp/tour/statements/Program.cs#L17-L22)]
 
 ***Expression statement***
 
-```csharp 
-static void Main()
-{
-	int i;
-	i = 123;                // Expression statement
-	Console.WriteLine(i);   // Expression statement
-	i++;                    // Expression statement
-	Console.WriteLine(i);   // Expression statement
-}
-```
+[!code-csharp[Expressions](../../../samples/snippets/csharp/tour/statements/Program.cs#L24-L31)]
 
 ***`if` statement***
 
-```csharp
-static void Main(string[] args) 
-{
-	if (args.Length == 0)
-    {
-		Console.WriteLine("No arguments");
-	}
-	else 
-    {
-		Console.WriteLine("One or more arguments");
-	}
-}
-```
+[!code-csharp[IfStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L33-L43)]
 
 ***`switch` statement***
 
-```csharp
-static void Main(string[] args) 
-{
-	int n = args.Length;
-	switch (n) 
-    {
-		case 0:
-			Console.WriteLine("No arguments");
-			break;
-		case 1:
-			Console.WriteLine("One argument");
-			break;
-		default:
-			Console.WriteLine($"{n} arguments");
-			break;
-		}
-	}
-}
-```
+[!code-csharp[SwitchStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L45-L60)]
 
 ***`while` statement***
 
-``` csharp
-static void Main(string[] args) 
-{
-	int i = 0;
-	while (i < args.Length) 
-    {
-		Console.WriteLine(args[i]);
-		i++;
-	}
-}
-```
+[!code-csharp[WhileStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L62-L70)]
 
 ***`do` statement***
 
-```csharp
-static void Main() 
-{
-	string s;
-	do 
-    {
-		s = Console.ReadLine();
-		if (s != null) Console.WriteLine(s);
-	} while (s != null);
-}
-```
+[!code-csharp[DoStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L72-L81)]
 
 ***`for` statement***
 
-```csharp
-static void Main(string[] args) 
-{
-	for (int i = 0; i < args.Length; i++) {
-		Console.WriteLine(args[i]);
-	}
-}
-```
+[!code-csharp[ForStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L83-L89)]
 
 ***`foreach` statement***
 
-```csharp
-static void Main(string[] args) 
-{
-	foreach (string s in args) 
-    {
-		Console.WriteLine(s);
-	}
-}
-```
+[!code-csharp[ForEachStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L91-L97)]
 
 ***`break` statement***
 
-```csharp
-static void Main()
-{
-	while (true) 
-    {
-		string s = Console.ReadLine();
-		if (s == null) 
-            break;
-		Console.WriteLine(s);
-	}
-}
-```
+[!code-csharp[BreakStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L99-L108)]
 
 ***`continue` statement***
 
-```csharp
-static void Main(string[] args) 
-{
-	for (int i = 0; i < args.Length; i++) 
-    {
-		if (args[i].StartsWith("/")) 
-            continue;
-		Console.WriteLine(args[i]);
-	}
-}
-```
+[!code-csharp[ContinueStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L110-L118)]
 
 ***`goto` statement***
 
-```csharp
-static void Main(string[] args) {
-	int i = 0;
-	goto check;
-	loop:
-	Console.WriteLine(args[i++]);
-	check:
-	if (i < args.Length) 
-        goto loop;
-}
-```
+[!code-csharp[GotoStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L120-L129)]
 
 ***`return` statement***
 
-```csharp
-static int Add(int a, int b) 
-{
-    return a + b;
-}
-static void Main() 
-{
-    Console.WriteLine(Add(1, 2));
-    return;
-}
-```
+[!code-csharp[ReturnStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L131-L139)]
 
 ***`yield` statement***
 
-```csharp
-static IEnumerable<int> Range(int from, int to) 
-{
-	for (int i = from; i < to; i++) 
-    {
-		yield return i;
-	}
-	yield break;
-}
-static void Main() 
-{
-	foreach (int x in Range(-10,10)) 
-    {
-		Console.WriteLine(x);
-	}
-}
-```
+[!code-csharp[YieldStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L141-L155)]
 
 ***`throw` statements and `try` statements***
 
-```csharp
-static double Divide(double x, double y) 
-{
-	if (y == 0) 
-        throw new DivideByZeroException();
-	return x / y;
-}
-static void Main(string[] args) 
-{
-	try 
-    {
-		if (args.Length != 2) 
-        {
-			throw new Exception("Two numbers required");
-		}
-		double x = double.Parse(args[0]);
-		double y = double.Parse(args[1]);
-		Console.WriteLine(Divide(x, y));
-	}
-	catch (Exception e) 
-    {
-		Console.WriteLine(e.Message);
-	}
-	finally 
-    {
-		Console.WriteLine(“Good bye!”);
-	}
-}
-```
+[!code-csharp[TryThrow](../../../samples/snippets/csharp/tour/statements/Program.cs#L157-L183)]
 
 ***`checked` and `unchecked` statements***
 
-```csharp
-static void Main() 
-{
-    int x = int.MaxValue;
-    checked 
-    {
-        Console.WriteLine(x + 1);  // Exception
-    }     
-    unchecked 
-    {
-       Console.WriteLine(x + 1);  // Overflow
-    }
-}
-```
+[!code-csharp[CheckedUncheckedStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L185-L196)]
 
 ***`lock` statement***
 
-```csharp
-class Account
-{
-	decimal balance;
-	private readonly object sync = new object();
-	public void Withdraw(decimal amount) 
-    {
-		lock (thissync) 
-        {
-			if (amount > balance) 
-            {
-				throw new Exception(
-					"Insufficient funds");
-			}
-			balance -= amount;
-		}
-	}
-}
-```
+[!code-csharp[LockStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L257-L273)]
 
 ***`using` statement***
 
-```csharp
-static void Main() 
-{
-	using (TextWriter w = File.CreateText("test.txt")) 
-    {
-		w.WriteLine("Line one");
-		w.WriteLine("Line two");
-		w.WriteLine("Line three");
-	}
-}
-```
+[!code-csharp[UsingStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L198-L206)]
 
 >[!div class="step-by-step"]
 [Pre](expressions.md)
 [Next](classes-and-objects.md)
+	

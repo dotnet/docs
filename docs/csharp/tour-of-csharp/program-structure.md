@@ -18,42 +18,7 @@ The key organizational concepts in C# are ***programs***, ***namespaces***, ***t
 
 The example declares a class named `Stack` in a namespace called `Acme.Collections`:
 
-```csharp
-using System;
-namespace Acme.Collections
-{
-    public class Stack
-    {
-        Entry top;
-        public void Push(object data) 
-		{
-			top = new Entry(top, data);
-		}
-		
-		public object Pop() 
-		{
-			if (top == null)
-			{
-				throw new InvalidOperationException();
-			}
-			object result = top.data;
-			top = top.next;
-			return result;
-		}
-
-		class Entry
-		{
-			public Entry next;
-			public object data;
-			public Entry(Entry next, object data) 
-			{
-				this.next = next;
-				this.data = data;
-			}
-		}
-	}
-}
-```
+[!code-csharp[Stack](../../../samples/snippets/csharp/tour/program-structure/program.cs#L1-L34)]
 
 The fully qualified name of this class is `Acme.Collections.Stack`. The class contains several members: a field named `top`, two methods named `Push` and `Pop`, and a nested class named `Entry`. The `Entry` class further contains three members: a field named `next`, a field named `data`, and a constructor. Assuming that the source code of the example is stored in the file `acme.cs`, the command line
 
@@ -67,23 +32,7 @@ Assemblies contain executable code in the form of Intermediate Language (IL) ins
 
 Because an assembly is a self-describing unit of functionality containing both code and metadata, there is no need for `#include` directives and header files in C#. The public types and members contained in a particular assembly are made available in a C# program simply by referencing that assembly when compiling the program. For example, this program uses the `Acme.Collections.Stack` class from the `acme.dll` assembly:
 
-```csharp
-using System;
-using Acme.Collections;
-class Example
-{
-    static void Main() 
-	{
-        Stack s = new Stack();
-        s.Push(1);
-        s.Push(10);
-        s.Push(100);
-        Console.WriteLine(s.Pop());
-        Console.WriteLine(s.Pop());
-        Console.WriteLine(s.Pop());
-	}
-}
-```
+[!code-csharp[UsingStack](../../../samples/snippets/csharp/tour/program-structure/Program.cs#L38-L52)]
 
 If the program is stored in the file `example.cs`, when `example.cs` is compiled, the acme.dll assembly can be referenced using the compiler’s /r option:
 

@@ -28,16 +28,7 @@ To ensure that C# programs and libraries can evolve over time in a compatible ma
 
 The “Hello, World” program is traditionally used to introduce a programming language. Here it is in C#:
 
-```csharp
-using System;
-class Hello
-{
-    static void Main()
-	{
-        Console.WriteLine("Hello, World");
-	}
-}
-```
+[!code-csharp[Hello World](../../../samples/snippets/csharp/tour/hello/Program.cs#L1-L8)]
 
 C# source files typically have the file extension `.cs`. Assuming that the “Hello, World” program is stored in the file `hello.cs`, the program might be compiled using the command line:
 

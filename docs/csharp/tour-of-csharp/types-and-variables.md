@@ -94,18 +94,7 @@ Nullable value types also do not have to be declared before they can be used. Fo
 
 C#’s type system is unified such that a value of any type can be treated as an `object`. Every type in C# directly or indirectly derives from the `object` class type, and `object` is the ultimate base class of all types. Values of reference types are treated as objects simply by viewing the values as type `object`. Values of value types are treated as objects by performing ***boxing*** and ***unboxing operations***. In the following example, an `int` value is converted to `object` and back again to `int`.
 
-```csharp
-using System;
-class BoxingExample
-{
-    static void Main()
-    {
-        int i = 123;
-        object o = i;    // Boxing
-        int j = (int)o;  // Unboxing
-    }
-}
-```
+[!code-csharp[Boxing](../../../samples/snippets/csharp/tour/types-and-variables/Program.cs#L1-L10)]
 
 When a value of a value type is converted to type `object`, an object instance, also called a “box,” is allocated to hold the value, and the value is copied into that box. Conversely, when an `object` reference is cast to a value type, a check is made that the referenced `object` is a box of the correct value type, and, if the check succeeds, the value in the box is copied out.
 

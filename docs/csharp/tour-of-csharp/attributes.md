@@ -18,37 +18,11 @@ Types, members, and other entities in a C# program support modifiers that contro
 
 The following example declares a `HelpAttribute` attribute that can be placed on program entities to provide links to their associated documentation.
 
-```csharp
-using System;
-
-public class HelpAttribute: Attribute
-{
-	string url;
-	string topic;
-	public HelpAttribute(string url) 
-	{
-		this.url = url;
-	}
-
-	public string Url => url;
-
-	public string Topic {
-		get { return topic; }
-		set { topic = value; }
-	}
-}
-```
+[!code-csharp[AttributeDefined](../../../samples/snippets/csharp/tour/attributes/Program.cs#L3-L20)]
 
 All attribute classes derive from the @System.Attribute base class provided by the standard library. Attributes can be applied by giving their name, along with any arguments, inside square brackets just before the associated declaration. If an attribute’s name ends in `Attribute`, that part of the name can be omitted when the attribute is referenced. For example, the `HelpAttribute` attribute can be used as follows.
 
-```csharp
-[Help("https://docs.microsoft.com/dotnet/articles/csharp/tour-of-csharp/attributes")]
-public class Widget
-{
-	[Help("https://docs.microsoft.com/dotnet/articles/csharp/tour-of-csharp/attributes", Topic = "Display")]
-	public void Display(string text) {}
-}
-```
+[!code-csharp[AttributeApplied](../../../samples/snippets/csharp/tour/attributes/Program.cs#L22-L28)]
 
 This example attaches a `HelpAttribute` to the `Widget` class. It adds another `HelpAttribute` to the `Display` method in the class. The public constructors of an attribute class control the information that must be provided when the attribute is attached to a program entity. Additional information can be provided by referencing public read-write properties of the attribute class (such as the reference to the `Topic` property previously).
 

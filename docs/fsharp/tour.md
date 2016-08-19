@@ -112,7 +112,7 @@ Because Discriminated Unions allow you to represent the recursive structure of t
 
 You can also use the shorthand `function` construct for pattern matching, which is useful when you're writing functions which make use of [Partial Application](language-reference/functions/index.md#partial-application-of-arguments):
 
-[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L520-L537)]
+[!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L520-L536)]
 
 Something you may have noticed is the use of the `_` pattern.  This is known as the [Wildcard Pattern](language-reference/pattern-matching.md#wildcard-pattern), which is a way of saying "I don't care what something is".  Although convenient, you can accidentaly bypass Exhaustive Pattern Matching and no longer benefit from compile-time enforcements if you aren't careful in using `_`.
 

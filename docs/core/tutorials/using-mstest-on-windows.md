@@ -47,13 +47,9 @@ Follow the instructions on [Getting started with .NET Core on Windows](./using-m
 
 8. Browse for **dotnet-test-mstest** version 1.1.1-preview or newer, and then click **Install**.
 
-9. Edit `project.json` and replace `"imports": "dnxcore50"` with `"imports": [ "dnxcore50", "portable-net45+win8" ]`. 
+9. Edit `project.json` to add `"testRunner": "mstest",` after the `"version"` section.
 
-   This enables the MSTest libraries to be correctly restored and used by the project: those libraries have been compiled to be used with portable profiles that include "portable-net45+win8", but not .NET Core, which didn't exist when they were built. The `import` relaxes the tooling version checks at build time. You may now restore packages without error.
-
-10. Edit `project.json` to add `"testRunner": "mstest",` after the `"version"` section.
-
-11. Add a `LibraryTests.cs` class file to the **TestLibrary** project, add the `using` directives `Microsoft.VisualStudio.TestTools.UnitTesting;` and `using Library;` to the top of the file, and add the following code to the class:
+10. Add a `LibraryTests.cs` class file to the **TestLibrary** project, add the `using` directives `Microsoft.VisualStudio.TestTools.UnitTesting;` and `using Library;` to the top of the file, and add the following code to the class:
     ```csharp
     [TestClass]
     public class LibraryTests
@@ -69,6 +65,6 @@ Follow the instructions on [Getting started with .NET Core on Windows](./using-m
 
    You should now be able to build the solution. 
    
-12. On the **Test** menu, choose **Windows**, **Test Explorer**, and in Test Explorer choose **Run All**.
+11. On the **Test** menu, choose **Windows**, **Test Explorer**, and in Test Explorer choose **Run All**.
    
    The test should pass.

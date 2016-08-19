@@ -382,11 +382,11 @@ public class MyFileNotFoundException : Exception
 
 Use at least the three common constructors when creating your own exception classes: the default constructor, a constructor that takes a string message, and a constructor that takes a string message and an inner exception.
 
-- @System.Exception.#ctor , which uses default values.
+- @System.Exception.%23ctor , which uses default values.
 
-- @System.Exception.#ctor(System.String) , which accepts a string message.
+- @System.Exception.%23ctor(System.String) , which accepts a string message.
 
-- @System.Exception.#ctor(System.String,System.Exception) , which accepts a string message and an inner exception.
+- @System.Exception.%23ctor(System.String,System.Exception) , which accepts a string message and an inner exception.
 
 For an example, see [How to: Create User-Defined Exceptions](#how-to-create-user-defined-exceptions).
 

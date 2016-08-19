@@ -20,7 +20,7 @@ Applications must be able to handle errors that occur during execution in a cons
 
 An exception is any error condition or unexpected behavior that is encountered by an executing program. Exceptions can be thrown because of a fault in your code or in code that you call (such as a shared library), unavailable operating system resources, unexpected conditions that the runtime encounters (such as code that cannot be verified), and so on. Your application can recover from some of these conditions, but not from others. Although you can recover from most application exceptions, you cannot recover from most runtime exceptions.
 
-In .NET, an exception is an object that inherits from the [System.Exception](@System.Exception) class. An exception is thrown from an area of code where a problem has occurred. The exception is passed up the stack until the application handles it or the program terminates.
+In .NET, an exception is an object that inherits from the [System.Exception](xref:System.Exception) class. An exception is thrown from an area of code where a problem has occurred. The exception is passed up the stack until the application handles it or the program terminates.
 
 ## Exceptions vs. traditional error-handling methods
 
@@ -382,11 +382,11 @@ public class MyFileNotFoundException : Exception
 
 Use at least the three common constructors when creating your own exception classes: the default constructor, a constructor that takes a string message, and a constructor that takes a string message and an inner exception.
 
-- @System.Exception.#ctor, which uses default values.
+- @System.Exception.#ctor , which uses default values.
 
-- @System.Exception.#ctor(System.String), which accepts a string message.
+- @System.Exception.#ctor(System.String) , which accepts a string message.
 
-- @System.Exception.#ctor(System.String,System.Exception), which accepts a string message and an inner exception.
+- @System.Exception.#ctor(System.String,System.Exception) , which accepts a string message and an inner exception.
 
 For an example, see [How to: Create User-Defined Exceptions](#how-to-create-user-defined-exceptions).
 

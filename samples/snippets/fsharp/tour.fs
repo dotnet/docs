@@ -546,6 +546,8 @@ module PatternMatching =
         | Int x -> printfn "%d" x
         | Double x -> printfn "%f" x
         | Date d -> printfn "%s" (d.ToString())
+        | TimeSpan t -> printfn "%s" (t.ToString())
+        | _ -> printfn "Nothing was parse-able!"
 
 // ---------------------------------------------------------------
 //         Units of measure

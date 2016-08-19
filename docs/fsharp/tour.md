@@ -27,7 +27,7 @@ The quickest way to run these code samples is to use [F# Interactive](tutorials/
 
 ## Functions and Modules
 
-The most fundamental pieces of any F# program are ***functions*** organized into ***modules***.  [Functions](language-reference/functions/index.md) perform work on inputs to produce outputs, and they are organized under [Modules(language-reference/modules.md)], which are the primary way you group things in F#.  They are defined using the [`let` binding](language-reference/functions/let-bindings.md), which give the function a name and define its arguments.
+The most fundamental pieces of any F# program are ***functions*** organized into ***modules***.  [Functions](language-reference/functions/index.md) perform work on inputs to produce outputs, and they are organized under [Modules](language-reference/modules.md), which are the primary way you group things in F#.  They are defined using the [`let` binding](language-reference/functions/let-bindings.md), which give the function a name and define its arguments.
 
 [!code-fsharp[BasicFunctions](../../samples/snippets/fsharp/tour.fs#L25-L51)]
 

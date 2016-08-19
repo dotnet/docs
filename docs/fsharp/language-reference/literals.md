@@ -50,7 +50,7 @@ The following table shows the literal types in F#. Characters that represent dig
 ## Remarks
 Unicode strings can contain explicit encodings that you can specify by using `\u` followed by a 16-bit hexadecimal code or UTF-32 encodings that you can specify by using `\U` followed by a 32-bit hexadecimal code that represents a Unicode surrogate pair.
 
-As of F# 3.1, you can use the + sign to combine string literals. You can also use the bitwise or (|||) operator to combine enum flags. For example, the following code is legal in F# 3.1:
+As of F# 3.1, you can use the `+` sign to combine string literals. You can also use the bitwise or (`|||`) operator to combine enum flags. For example, the following code is legal in F# 3.1:
 
 ```fsharp
 [<Literal>]

@@ -41,7 +41,7 @@ A solution using only .NET Core projects
 
 3. In Solution Explorer, open the context menu for the **References** node and choose **Manage NuGet Packages**.
 
-4. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Check the **Include prerelease** checkbox, and then browse for **Newtonsoft.Json**. Click **Install**. 
+4. Choose "nuget.org" as the **Package source**, and choose the **Browse** tab. Browse for **Newtonsoft.Json**. Click **Install**. 
 
 5. Open the context menu for the **References** node and choose  **Restore packages**.
 

@@ -58,7 +58,7 @@ The @System.Exception class has the following properties that help make understa
 | @System.Exception.Source | Gets or sets the name of the application or the object that causes the error. |
 | @System.Exception.StackTrace | Contains a stack trace that can be used to determine where an error occurred. The stack trace includes the source file name and program line number if debugging information is available. |
 
-Most of the classes that inherit from @System.Exception do not implement additional members or provide additional functionality; they simply inherit from @System.Exception . Therefore, the most important information for an exception can be found in the hierarchy of exception classes, the exception name, and the information contained in the exception.
+Most of the classes that inherit from @System.Exception do not implement additional members or provide additional functionality; they simply inherit from [Exception](xref:System.Exception). Therefore, the most important information for an exception can be found in the hierarchy of exception classes, the exception name, and the information contained in the exception.
 
 It is recommended to throw and catch only objects that derive from @System.Exception, but you can throw any object that derives from the @System.Object class as an exception. Note that not all languages support throwing and catching objects that do not derive from @System.Exception.
 

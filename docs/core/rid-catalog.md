@@ -25,12 +25,12 @@ Ubuntu 14.04. Although .NET Core and CLI work on top of that version of Ubuntu, 
 without any modifications, the restore operation for any package will fail. This is because we currently don't 
 have a RID that designates Elementary OS as a platform. 
 
-RIDs that represent concrete operating systems should be of the form: `[os].[version]-[arch]` where:
-- `[os]` is the operating system moniker, for example, `win`
-- `[version]` is the operating system version in the form of a dot (`.`) separated version number, for example, `10.1511`, 
+RIDs that represent concrete operating systems usually follow this pattern: `[os].[version]-[arch]` where:
+- `[os]` is the operating system moniker, for example, `ubuntu`.
+- `[version]` is the operating system version in the form of a dot (`.`) separated version number, for example, `15.10`, 
 accurate enough to reasonably enable assets to target operating system platform APIs represented by that version.
   - This **shouldn't** be marketing versions, as they often represent multiple discrete versions of the operating 
-system with varying platform API surface area, for example, `win.10-x64`
+system with varying platform API surface area.
 - `[arch]` is the processor architecture, for example, `x86`, `x64`, `arm`, `arm64`, etc.
 
 The RID graph is defined in a package called `Microsoft.NETCore.Platforms` in a file called `runtime.json`, which you can 
@@ -87,18 +87,18 @@ For the latest version, please check the [runtime.json](https://github.com/dotne
 
 ## Windows RIDs
 
-* Windows 7
+* Windows 7 / Windows Server 2008 R2
     * `win7-x64`
     * `win7-x86`
-* Windows 8
+* Windows 8 / Windows Server 2012
     * `win8-x64`
     * `win8-x86`
     * `win8-arm`
-* Windows 8.1
+* Windows 8.1 / Windows Server 2012 R2
     * `win81-x64`
     * `win81-x86`
     * `win81-arm`
-* Windows 10
+* Windows 10 / Windows Server 2016
     * `win10-x64`
     * `win10-x86`
     * `win10-arm`

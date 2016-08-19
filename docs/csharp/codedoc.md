@@ -777,7 +777,7 @@ public class SomeClass
 
 ### Putting it all together
 
-If you've followed this tutorial and applied the tags to your code where necessary your code should look like the following:
+If you've followed this tutorial and applied the tags to your code where necessary your code should look similar to the following:
 
 ```csharp
 /*
@@ -1025,8 +1025,8 @@ public class Math
 }
 ```
 
-From our sample code above we can generate a well detailed documentation website complete with clickable cross-references but we've introduced another problem, our code has become had to read.
-This is going to be a nightmare for any developers who want to contribute to this code, so much information to sift through. 
+From our sample code above we can generate a well detailed documentation website complete with clickable cross-references but we've introduced another problem, our code has become hard to read.
+This is going to be a nightmare for any developer who wants to contribute to this code, so much information to sift through. 
 Thankfully there's an XML tag that helps us deal with this:
 
 ### &lt;include&gt;

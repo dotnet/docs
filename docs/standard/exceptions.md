@@ -53,7 +53,7 @@ The @System.Exception class has the following properties that help make understa
 | ------------- | ----------- |
 | @System.Exception.Data | An @System.Collections.IDictionary that holds arbitrary data in key-value pairs. |
 | @System.Exception.HelpLink | Can hold a URL (or URN) to a help file that provides extensive information about the cause of an exception. |
-| @System.Exception.InnerException | This property can be used to create and preserve a series of exceptions during exception handling. You can use it to create a new exception that contains previously caught exceptions. The original exception can be captured by the second exception in the @System.Exception.InnerException property, allowing code that handles the second exception to examine the additional information. For example, suppose you have a method that receives an argument that's improperly formatted.  The code tries to read the argument, but an exception is thrown. The method catches the exception and throws a @System.FormatException . To improve the caller's ability to determine the reason an exception is thrown, it is sometimes desirable for a method to catch an exception thrown by a helper routine and then throw an exception more indicative of the error that has occurred. A new and more meaningful exception can be created, where the inner exception reference can be set to the original exception. This more meaningful exception can then be thrown to the caller. Note that with this functionality, you can create a series of linked exceptions that ends with the exception that was thrown first. |
+| @System.Exception.InnerException | This property can be used to create and preserve a series of exceptions during exception handling. You can use it to create a new exception that contains previously caught exceptions. The original exception can be captured by the second exception in the @System.Exception.InnerException property, allowing code that handles the second exception to examine the additional information. For example, suppose you have a method that receives an argument that's improperly formatted.  The code tries to read the argument, but an exception is thrown. The method catches the exception and throws a [FormatException](xref:System.FormatException). To improve the caller's ability to determine the reason an exception is thrown, it is sometimes desirable for a method to catch an exception thrown by a helper routine and then throw an exception more indicative of the error that has occurred. A new and more meaningful exception can be created, where the inner exception reference can be set to the original exception. This more meaningful exception can then be thrown to the caller. Note that with this functionality, you can create a series of linked exceptions that ends with the exception that was thrown first. |
 | @System.Exception.Message | Provides details about the cause of an exception.
 | @System.Exception.Source | Gets or sets the name of the application or the object that causes the error. |
 | @System.Exception.StackTrace | Contains a stack trace that can be used to determine where an error occurred. The stack trace includes the source file name and program line number if debugging information is available. |
@@ -382,11 +382,11 @@ public class MyFileNotFoundException : Exception
 
 Use at least the three common constructors when creating your own exception classes: the default constructor, a constructor that takes a string message, and a constructor that takes a string message and an inner exception.
 
-- @System.Exception.%23ctor , which uses default values.
+- @System.Exception.%23ctor, which uses default values.
 
-- @System.Exception.%23ctor(System.String) , which accepts a string message.
+- @System.Exception.%23ctor(System.String), which accepts a string message.
 
-- @System.Exception.%23ctor(System.String,System.Exception) , which accepts a string message and an inner exception.
+- @System.Exception.%23ctor(System.String,System.Exception), which accepts a string message and an inner exception.
 
 For an example, see [How to: Create User-Defined Exceptions](#how-to-create-user-defined-exceptions).
 

@@ -139,7 +139,7 @@ For the latest version, please check the [runtime.json](https://github.com/dotne
     * `linuxmint.17.3-x64`
     * `linuxmint.18-x64`
 
-## Mac RIDs
+## OS X RIDs
 
 * `osx.10.10-x64`
 * `osx.10.11-x64`

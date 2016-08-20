@@ -15,7 +15,7 @@ let async1(syncContext, form : System.Windows.Forms.Form) =
         let threadName = System.Threading.Thread.CurrentThread.Name
         let threadNumber = System.Threading.Thread.CurrentThread.ManagedThreadId
         label1.Text <- label1.Text + sprintf "Something [%s] [%d]" threadName threadNumber
-    
+
         // Switch to the UI thread and update the UI.
         do! Async.SwitchToContext(syncContext)
         let threadName = System.Threading.Thread.CurrentThread.Name

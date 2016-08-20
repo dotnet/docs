@@ -11,7 +11,7 @@ let form = new Form(Text = "F# Windows Form",
                     TopMost = true)
 
 let initialState = 0
-           
+
 form.Click
 |> Event.scan (fun state _ -> state + 1) initialState
 |> Event.add (fun state -> form.Text <- state.ToString() )

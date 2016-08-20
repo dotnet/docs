@@ -36,10 +36,10 @@ let writeLongFileInChunks filename (data : byte array) =
                     Continue (Success(()))
                 else
                     Continue Cancel
-                    
+
             with
             | exn -> Continue (Failure(exn))
-                     
+
         return! result
     }
 

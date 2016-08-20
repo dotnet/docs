@@ -2,7 +2,7 @@ type Delegate1 = delegate of int * char -> string
 
 let replicate n c = String.replicate n (string c)
 
-// An F# function value constructed from an unapplied let-bound function 
+// An F# function value constructed from an unapplied let-bound function
 let function1 = replicate
 
 // A delegate object constructed from an F# function value

@@ -5,5 +5,5 @@ let rec printList l =
     match l with
     | head :: tail -> printf "%d " head; printList tail
     | [] -> printfn ""
-  
+
 printList list1

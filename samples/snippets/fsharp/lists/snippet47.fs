@@ -1,4 +1,4 @@
-let printList list1 = 
+let printList list1 =
     if (List.isEmpty list1) then
         printfn "There are no elements in this list."
     else

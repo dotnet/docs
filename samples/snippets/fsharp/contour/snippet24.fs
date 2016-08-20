@@ -2,6 +2,6 @@
 // were defined previously.
 let funAndArgTuple = (squareIt, num)
 
-// The following expression applies squareIt to num, returns 100, and 
+// The following expression applies squareIt to num, returns 100, and
 // then displays 100.
 System.Console.WriteLine((fst funAndArgTuple)(snd funAndArgTuple))

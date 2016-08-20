@@ -1,4 +1,4 @@
-let printArray array1 = 
+let printArray array1 =
     if (Array.isEmpty array1) then
         printfn "There are no elements in this array."
     else

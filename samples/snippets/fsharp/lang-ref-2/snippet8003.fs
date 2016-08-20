@@ -7,7 +7,7 @@ let urlList = [ "Microsoft.com", "http://www.microsoft.com/"
               ]
 
 let fetchAsync(name, url:string) =
-    async { 
+    async {
         try
             let uri = new System.Uri(url)
             let webClient = new WebClient()
@@ -20,7 +20,7 @@ let fetchAsync(name, url:string) =
 let runAll() =
     urlList
     |> Seq.map fetchAsync
-    |> Async.Parallel 
+    |> Async.Parallel
     |> Async.RunSynchronously
     |> ignore
 

@@ -11,10 +11,10 @@ let makeSequence function1 maxNumber = Seq.delay (fun () ->
     loop maxNumber []
     |> Seq.ofList)
 printfn "Calling makeSequence."
-let seqSquares = makeSequence (fun x -> x * x) 4          
+let seqSquares = makeSequence (fun x -> x * x) 4
 let seqCubes = makeSequence (fun x -> x * x * x) 4
 printfn "Printing sequences."
 printfn "Squares:"
 seqSquares |> Seq.iter (fun x -> printf "%d " x)
 printfn "\nCubes:"
-seqCubes |> Seq.iter (fun x -> printf "%d " x)                       
+seqCubes |> Seq.iter (fun x -> printf "%d " x)

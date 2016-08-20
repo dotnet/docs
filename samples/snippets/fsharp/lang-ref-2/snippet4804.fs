@@ -3,7 +3,7 @@ type PersonName =
     | LastOnly of string
     | FirstLast of string * string
 
-let constructQuery personName = 
+let constructQuery personName =
     match personName with
     | FirstOnly(firstName) -> printf "May I call you %s?" firstName
     | LastOnly(lastName) -> printf "Are you Mr. or Ms. %s?" lastName

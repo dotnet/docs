@@ -11,7 +11,7 @@ let button2 = new Button(Text = "Start Invalid", Top = controlHeight + spacing)
 let cancelAsyncButton = new Button(Text = "Cancel",
                                    Top = 2 * (controlHeight + spacing),
                                    Enabled = false)
-let updown1 = new System.Windows.Forms.NumericUpDown(Top = 3 * (controlHeight + spacing), 
+let updown1 = new System.Windows.Forms.NumericUpDown(Top = 3 * (controlHeight + spacing),
                                                      Value = 20m, Minimum = 0m,
                                                      Maximum = 1000000m)
 let label1 = new Label (Text = "", Top = 4 * (controlHeight + spacing),
@@ -68,8 +68,8 @@ let async1 context value =
                         // Handle the case in which the operation succeeds.
                         do! Async.SwitchToContext(context)
                         label1.Text <- sprintf "%s" ((!nthPrime).ToString())
-                    with 
-                        | e -> 
+                    with
+                        | e ->
                             // Handle the case in which an exception is thrown.
                             do! Async.SwitchToContext(context)
                             MessageBox.Show(e.Message) |> ignore
@@ -77,11 +77,11 @@ let async1 context value =
     async {
         try
             do! Async.TryCancelled(asyncTryWith,
-                                   (fun oce -> 
+                                   (fun oce ->
                                       // Handle the case in which the user cancels the operation.
                                       context.Post((fun _ ->
                                           label1.Text <- "Canceled"), null)))
-        finally 
+        finally
             context.Post((fun _ ->
                 updown1.Enabled <- true
                 startAsyncButton.Enabled <- true
@@ -89,7 +89,7 @@ let async1 context value =
                 null)
     }
 
-startAsyncButton.Click.Add(fun args -> 
+startAsyncButton.Click.Add(fun args ->
     cancelAsyncButton.Enabled <- true
     let context = System.Threading.SynchronizationContext.Current
     Async.Start(async1 context (int updown1.Value)))

@@ -1,4 +1,4 @@
-let array1 = 
+let array1 =
     [|
         1
         2

@@ -1,5 +1,5 @@
 let mySeq1 = seq { 1.. 100 }
-let printSeq seq1 = 
+let printSeq seq1 =
     seq1
     |> Seq.iter (printf "%A ")
     printfn ""

@@ -8,7 +8,7 @@ let divide x y =
       writer.Flush()
       printfn "Closing stream"
       stream.Close()
-      
+
 let result =
   try
      divide 100 0

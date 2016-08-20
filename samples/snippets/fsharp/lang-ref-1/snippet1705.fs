@@ -4,7 +4,7 @@ let function3 (x : 'a) (y : 'a) =
     printf "%A %A" x y
 
 // A generic record, with the type parameter in angle brackets.
-type GR<'a> = 
+type GR<'a> =
     {
         Field1: 'a;
         Field2: 'a;

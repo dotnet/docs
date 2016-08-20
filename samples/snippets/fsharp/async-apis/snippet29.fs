@@ -5,7 +5,7 @@ let form = new Form(Text = "Test Form", Width = 400, Height = 400)
 let syncContext = System.Threading.SynchronizationContext()
 
 let pen = Pens.Black
-let graphics = form.CreateGraphics()   
+let graphics = form.CreateGraphics()
 
 let mutable x0 = 0
 let mutable y0 = 0

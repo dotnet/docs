@@ -19,16 +19,16 @@ form.Controls.AddRange [| button1; button2; label1 |]
 
 let bufferData = Array.zeroCreate<byte> 100000000
 
-let async1 filename = 
-    async { 
+let async1 filename =
+    async {
         printfn "Creating file %s." filename
         use outputFile = File.Create(filename)
         printfn "Attempting to write to file %s." filename
         do! outputFile.AsyncWrite(bufferData)
     }
 
-let async2 filename = 
-    async { 
+let async2 filename =
+    async {
         printfn "Waiting for file system watcher notification."
         // If you omit the call to AwaitEvent, an exception is thrown that indicates that the
         // file is locked.
@@ -40,13 +40,13 @@ let async2 filename =
         return buffer
     }
 
-button1.Click.Add <| fun _ -> 
+button1.Click.Add <| fun _ ->
     // Start these as tasks simultaneously.
     async1 filename |> Async.StartAsTask |> ignore
     async2 filename |> Async.StartAsTask |> ignore
-    
-button2.Click.Add <| fun _ -> 
+
+button2.Click.Add <| fun _ ->
     async1 filename |> Async.StartAsTask |> ignore
     async2 "longoutputX.dat" |> Async.StartAsTask |> ignore
-    
+
 Application.Run(form)

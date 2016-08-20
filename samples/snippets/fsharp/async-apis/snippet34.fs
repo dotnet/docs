@@ -1,7 +1,7 @@
 open System
 open System.IO
 
-let writeToFile filename numBytes = 
+let writeToFile filename numBytes =
     async {
         use file = File.Create(filename)
         printfn "Writing to file %s." filename
@@ -15,7 +15,7 @@ let readFile filename numBytes =
         // Throw away the data being read.
         do! file.AsyncRead(numBytes) |> Async.Ignore
     }
-    
+
 let filename = "BigFile.dat"
 let numBytes = 100000000
 

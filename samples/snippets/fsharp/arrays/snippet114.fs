@@ -5,7 +5,7 @@ let array2 = [| 1; 2; 4; |]
 let compareArrays = Array.compareWith (fun elem1 elem2 ->
     if elem1 > elem2 then 1
     elif elem1 < elem2 then -1
-    else 0) 
+    else 0)
 
 // Prints Array1 is less than Array2
 match compareArrays array1 array2 with

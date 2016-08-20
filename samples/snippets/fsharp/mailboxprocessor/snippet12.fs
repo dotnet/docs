@@ -6,18 +6,18 @@ let formatString = "Message number {0} was received. Message contents: {1}"
 
 let agent = MailboxProcessor<Message>.Start(fun inbox ->
     let rec loop n =
-        async {            
+        async {
             try
                 let! (message, replyChannel) = inbox.Receive(10000);
-                
+
                 if (message = "Stop") then
                     replyChannel.Reply("Stop")
                 else
                     replyChannel.Reply(String.Format(formatString, n, message))
                 do! loop (n + 1)
-            
+
             with
-            | :? TimeoutException -> 
+            | :? TimeoutException ->
                 printfn "The mailbox processor timed out."
         }
     loop (0))

@@ -5,7 +5,7 @@ let bufferData number =
 let writeFile fileName bufferData =
     async {
         use outputFile = System.IO.File.Create(fileName)
-        do! outputFile.AsyncWrite(bufferData) 
+        do! outputFile.AsyncWrite(bufferData)
     }
 
 Seq.init 1000 (fun num -> bufferData num)

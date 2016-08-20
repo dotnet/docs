@@ -1,7 +1,7 @@
  // Distance, meters.
-[<Measure>] type m 
-// Time, seconds. 
-[<Measure>] type s 
+[<Measure>] type m
+// Time, seconds.
+[<Measure>] type s
 
 // Define a vector together with a measure type parameter.
 // Note the attribute applied to the type parameter.

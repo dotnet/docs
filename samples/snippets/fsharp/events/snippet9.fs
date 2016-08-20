@@ -19,12 +19,12 @@ let mutable xOff, yOff = (0, 0)
 
 let (|Down|Up|) (evArgs:MouseEventArgs) =
     match evArgs.Button with
-    | MouseButtons.Left 
-    | MouseButtons.Right 
+    | MouseButtons.Left
+    | MouseButtons.Right
     | MouseButtons.Middle -> Down(evArgs)
     | _ -> Up
 
-button.MouseDown 
+button.MouseDown
 |> Event.add(fun evArgs ->
     xOff <- evArgs.X
     yOff <- evArgs.Y)
@@ -52,5 +52,5 @@ dragButton |> Event.add ( fun evArgs ->
 
 // Restore the button's original color when the mouse is moved after
 // the release of the button.
-noDragButton |> Event.add ( fun () -> 
+noDragButton |> Event.add ( fun () ->
     button.BackColor <- originalColor)

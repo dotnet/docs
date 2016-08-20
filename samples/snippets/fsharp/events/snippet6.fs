@@ -5,7 +5,7 @@ let form = new Form(Text = "F# Windows Form",
                     Visible = true,
                     TopMost = true)
 
-let graphics = BufferedGraphicsManager.Current.Allocate(form.CreateGraphics(), 
+let graphics = BufferedGraphicsManager.Current.Allocate(form.CreateGraphics(),
                                 new Rectangle( 0, 0, form.Width, form.Height ))
 let whitePen = new Pen(Color.White)
 

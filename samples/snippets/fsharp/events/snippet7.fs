@@ -6,7 +6,7 @@ let form = new Form(Text = "F# Windows Form",
                     TopMost = true)
 
 let (event1, event2) =
-    form.MouseMove 
+    form.MouseMove
     |> Event.partition (fun evArgs -> evArgs.X > 100)
 
 event1 |> Event.add ( fun evArgs ->

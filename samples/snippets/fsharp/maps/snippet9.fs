@@ -4,4 +4,4 @@ let result1 = Map.foldBack (fun key value state -> state + key) map1 0
 printfn "Result: %d" result1
 // Concatenate the values.
 let result2 = Map.foldBack (fun key value state -> state + value + " ") map1 ""
-printfn "Result: %s" result2 
+printfn "Result: %s" result2

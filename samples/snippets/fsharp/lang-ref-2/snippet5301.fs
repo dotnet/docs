@@ -7,7 +7,7 @@ let lookForValue value maxValue =
     // Generate a random number between 1 and maxValue.
     let rand = randomNumberGenerator.Next(maxValue)
     printf "%d " rand
-    if rand = value then 
+    if rand = value then
        printfn "\nFound a %d!" value
        continueLooping <- false
 

@@ -10,7 +10,7 @@ let makeSequence function1 maxNumber =
     loop maxNumber []
     |> Seq.ofList
 printfn "Calling makeSequence."
-let seqSquares = makeSequence (fun x -> x * x) 4          
+let seqSquares = makeSequence (fun x -> x * x) 4
 let seqCubes = makeSequence (fun x -> x * x * x) 4
 printfn "Printing sequences."
 printfn "Squares:"

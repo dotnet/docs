@@ -17,7 +17,7 @@ type Account(accountNumber : int, ?first: string, ?last: string, ?bal : float) =
       and set(value) = balance <- value
    member this.Deposit(amount: float) = this.Balance <- this.Balance + amount
    member this.Withdraw(amount: float) = this.Balance <- this.Balance - amount
- 
- 
+
+
 let account1 = new Account(8782108, bal = 543.33,
                           FirstName="Raman", LastName="Iyer")

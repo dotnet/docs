@@ -1,4 +1,4 @@
-// An array of functions that transform 
+// An array of functions that transform
 // integers. (int -> int)
 let ops1 =
  [| fun x -> x + 1

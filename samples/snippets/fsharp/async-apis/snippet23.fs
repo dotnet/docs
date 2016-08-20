@@ -6,9 +6,9 @@ type BackgroundWorker with
         member this.AsyncRunWorker (computation, argument : 'T, progressChangedHandler) : Async<'U> =
             let workerAsync =
                 Async.FromContinuations (fun (cont, econt, ccont) ->
-                            let handler = new RunWorkerCompletedEventHandler (fun sender args ->          
+                            let handler = new RunWorkerCompletedEventHandler (fun sender args ->
                                 if args.Cancelled then
-                                    ccont (new OperationCanceledException()) 
+                                    ccont (new OperationCanceledException())
                                 elif args.Error <> null then
                                     econt args.Error
                                 else
@@ -22,7 +22,7 @@ type BackgroundWorker with
                             this.RunWorkerAsync(argument)
                         )
 
-            async { 
+            async {
                 use! holder = Async.OnCancel(fun _ -> this.CancelAsync())
                 return! workerAsync
              }
@@ -71,7 +71,7 @@ let computeNthPrime (number, worker: BackgroundWorker, eventArgs: DoWorkEventArg
                  num <- num + 1I
          count <- count + 1
      num
-         
+
 let async1 (progressBar:ProgressBar) (label:Label) value =
      let worker = new BackgroundWorker()
      label.Text <- "Computing..."
@@ -92,7 +92,7 @@ let spacing = 5
 let button1 = new Button(Text = "Start")
 let button2 = new Button(Text = "Start Invalid", Top = button1.Height + spacing)
 let button3 = new Button(Text = "Cancel", Top = 2 * (button1.Height + spacing))
-let updown1 = new System.Windows.Forms.NumericUpDown(Top = 3 * (button1.Height + spacing), 
+let updown1 = new System.Windows.Forms.NumericUpDown(Top = 3 * (button1.Height + spacing),
                                                      Value = 20m,
                                                      Minimum = 0m,
                                                      Maximum = 1000000m)

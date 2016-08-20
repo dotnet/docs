@@ -9,7 +9,7 @@ let trace1 = trace {
    let! y = 2
    let sum = x + y
    // return executes the Return method.
-   return sum  
+   return sum
    }
 
 // Execute the code. Start with the Delay method.

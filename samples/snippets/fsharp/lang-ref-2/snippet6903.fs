@@ -1,6 +1,6 @@
-// Distance, meters. 
-[<Measure>] type m 
-// Time, seconds. 
+// Distance, meters.
+[<Measure>] type m
+// Time, seconds.
 [<Measure>] type s
 
 let genericSumUnits ( x : float<'u>) (y: float<'u>) = x + y

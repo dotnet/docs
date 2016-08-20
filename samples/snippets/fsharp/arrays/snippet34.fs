@@ -8,4 +8,4 @@ let printPermutation n array1 =
 let array1 = [| 1 .. 5 |]
 // There are 5 valid permutations of array1, with n from 0 to 4.
 for n in 0 .. 4 do
-    printPermutation n array1 
+    printPermutation n array1

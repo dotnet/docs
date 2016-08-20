@@ -7,7 +7,7 @@ let mutable x = 10
 // Not recommended: Does not actually increment the variable.
 incrementor.Increment(ref x)
 // Prints 10.
-printfn "%d" x  
+printfn "%d" x
 
 let mutable y = 10
 incrementor.Increment(&y)

@@ -13,5 +13,5 @@ printfn "%s" ((append1 << append2 << append3) "abc")
 let appendString (string1:string) (string2:string) = string1 + string2
 
 let appendFileExtension extension =
-    appendString extension << appendString "." 
+    appendString extension << appendString "."
 printfn "%s" (appendFileExtension "myfile" "txt")

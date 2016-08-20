@@ -12,7 +12,7 @@ let computation (tokenSource:System.Threading.CancellationTokenSource) =
 let tokenSource1 = new System.Threading.CancellationTokenSource()
 let tokenSource2 = new System.Threading.CancellationTokenSource()
 
-Async.StartWithContinuations(computation tokenSource1, 
+Async.StartWithContinuations(computation tokenSource1,
                              (fun _ -> printfn "Computation 1 completed." ),
                              (fun _ -> printfn "Computation 1 exception." ),
                              (fun _ -> printfn "Computation 1 canceled." ),

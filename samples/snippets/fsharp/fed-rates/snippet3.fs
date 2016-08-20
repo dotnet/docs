@@ -1,4 +1,4 @@
-let interest = 
+let interest =
     csv.Split([|'\n'|])
     |> Seq.skip 8
     |> Seq.map (fun line -> line.Trim())

@@ -13,4 +13,4 @@ if dictionary1.IsReadOnly then
 if dictionary1.ContainsKey(5) then
     Console.WriteLine("Value for key 5: {0}", dictionary1.Item(5))
 for elem in dictionary1 do
-   Console.WriteLine("Key: {0} Value: {1}", elem.Key, elem.Value) 
+   Console.WriteLine("Key: {0} Value: {1}", elem.Key, elem.Value)

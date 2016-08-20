@@ -35,7 +35,7 @@ let computeSum epsilon =
     let maxTerms =  10000000
     async {
         let result = infiniteSum squaresSeries epsilon maxTerms
-        printfn "Result: %f pi*pi/6: %f" result (pi*pi/6.0) 
+        printfn "Result: %f pi*pi/6: %f" result (pi*pi/6.0)
     }
 
 // Start the computation on a new thread.

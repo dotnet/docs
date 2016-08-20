@@ -47,7 +47,7 @@ let inprogressAgent = new MailboxProcessor<Job>(fun _ -> async { () })
 // This agent starts each job in the order in which it is received.
 let runAgent = MailboxProcessor<Job>.Start(fun inbox ->
     let rec loop n =
-        async {          
+        async {
             let! (id, job, source) = inbox.Receive()
             printfn "Starting job #%d" id
             // Post to the in-progress queue.
@@ -80,7 +80,7 @@ let cancelJob(cancelId) =
                     Some(action)
                 else
                     None), 1000))
-    
+
 
 printfn "Specify a job by number to cancel it, then press Enter."
 

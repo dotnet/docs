@@ -3,9 +3,9 @@
 // Mass, kilograms.
 [<Measure>] type kg
 // Weight, pounds.
-[<Measure>] type lb 
+[<Measure>] type lb
 
-// Distance, meters. 
+// Distance, meters.
 [<Measure>] type m
 // Distance, cm
 [<Measure>] type cm
@@ -19,15 +19,15 @@
 [<Measure>] type s
 
 // Force, Newtons.
-[<Measure>] type N = kg m / s 
+[<Measure>] type N = kg m / s
 
 // Pressure, bar.
-[<Measure>] type bar 
+[<Measure>] type bar
 // Pressure, Pascals
-[<Measure>] type Pa = N / m^2 
+[<Measure>] type Pa = N / m^2
 
 // Volume, milliliters.
-[<Measure>] type ml 
+[<Measure>] type ml
 // Volume, liters.
 [<Measure>] type L
 

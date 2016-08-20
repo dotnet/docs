@@ -3,7 +3,7 @@ open System
 [<Obsolete("Do not use. Use newFunction instead.")>]
 let obsoleteFunction x y =
   x + y
-  
+
 let newFunction x y =
   x + 2 * y
 

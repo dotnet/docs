@@ -1,6 +1,6 @@
 let array1 = [| 1 .. 100 |]
-let printArray anarray = 
-    anarray 
+let printArray anarray =
+    anarray
     |> Array.iter (printf "%A ")
     printfn ""
 let arrayResult = Array.countBy (fun elem ->

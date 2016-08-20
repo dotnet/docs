@@ -14,7 +14,7 @@ type PointWithCounter(a: int, b: int) =
     // A do binding.
     do
        count <- count + 1
-    
+
     member this.Prop1 = x
     member this.Prop2 = y
     member this.CreatedCount = count

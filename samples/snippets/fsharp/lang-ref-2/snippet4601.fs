@@ -6,10 +6,10 @@ let rec printList listx =
     match listx with
     | head :: tail -> printf "%d " head; printList tail
     | [] -> printfn ""
-  
+
 printList list1
 
-// Pattern matching with multiple alternatives on the same line.  
+// Pattern matching with multiple alternatives on the same line.
 let filter123 x =
     match x with
     | 1 | 2 | 3 -> printfn "Found 1, 2, or 3!"

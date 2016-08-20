@@ -17,9 +17,9 @@ let callback operation (successContinuation : unit -> unit,
             successContinuation()
     with
     | exn -> exceptionContinuation(exn)
-    
 
-let operation = 
+
+let operation =
     async {
         printfn "Operation started."
         do! Async.FromContinuations(callback (fun () -> printfn "Operation executing."

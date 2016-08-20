@@ -12,8 +12,8 @@ let async1 (label:System.Windows.Forms.Label) filename =
          (fun _ -> label.Text <- "Operation completed."),
          (fun _ -> label.Text <- "Operation failed."),
          (fun _ -> label.Text <- "Operation canceled."))
-    
-  
+
+
 
 let form = new Form(Text = "Test Form")
 let button1 = new Button(Text = "Start")

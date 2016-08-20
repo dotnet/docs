@@ -6,4 +6,4 @@ type MyStruct =
        new(x, y, z) = { X = x; Y = y; Z = z }
     end
 
-let myStructure1 = new MyStruct(1, 2, 3) 
+let myStructure1 = new MyStruct(1, 2, 3)

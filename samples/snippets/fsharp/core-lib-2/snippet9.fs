@@ -19,7 +19,7 @@ printfn "Printing floating point numbers %F %F" x1 x2
 printfn "Printing floating point numbers %g %G" x1 x2
 printfn "Using the width and precision modifiers: %10.5e %10.3e" x1 x2
 
-printfn "Using the flags:\nZero Pad:|%010d| Plus:|%+10d |LeftJustify:|%-10d| SpacePad:|% d|" 1001 1001 1001 1001 
+printfn "Using the flags:\nZero Pad:|%010d| Plus:|%+10d |LeftJustify:|%-10d| SpacePad:|% d|" 1001 1001 1001 1001
 printfn "zero pad   | |+- both   | |- and ' ' | |' ' and 0 | | normal "
 for i in -115 .. 17 .. 100 do
     printfn "|%010d| |%+-10d| |%- 10d| |% 010d| |%10d|" (80-i) (i+85) (100+i) (99992/i) (i-80)

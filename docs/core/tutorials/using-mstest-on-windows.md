@@ -22,7 +22,7 @@ While xUnit is maybe a better choice when targeting multiple platforms, with .NE
 
 Follow the instructions on [Getting started with .NET Core on Windows](./using-mstest-on-windows.md) to create the library project.
 
-### Writing the test project
+### Writing the test project using MSTest
 
 1. In Solution Explorer, open the context menu for the **Solution** node and choose **Add**, **New Solution Folder**. Name the folder "test". 
    This is only a solution folder, not a physical folder.

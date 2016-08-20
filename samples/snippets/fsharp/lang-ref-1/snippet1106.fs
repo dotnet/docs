@@ -1,2 +1,2 @@
- let function1 a =
-     a + 1
+let function1 a =
+    a + 1

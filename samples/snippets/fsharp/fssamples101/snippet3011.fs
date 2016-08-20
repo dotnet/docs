@@ -1,2 +1,2 @@
-    // Create an empty sequence
-    let emptySeq = Seq.empty
+// Create an empty sequence
+let emptySeq = Seq.empty

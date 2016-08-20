@@ -1,4 +1,3 @@
-
 namespace Outer
 
     // Full name: Outer.MyClass

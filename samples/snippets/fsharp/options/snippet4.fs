@@ -1,4 +1,3 @@
-
     let consOption list opt =
         Option.fold (fun state value -> value :: state) list opt
     printfn "%A" <| consOption [1 .. 10] None

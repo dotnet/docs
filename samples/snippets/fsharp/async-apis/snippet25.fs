@@ -1,4 +1,3 @@
-
     open System.Windows.Forms
 
     let form = new Form(Text = "Test Form", Width = 400, Height = 400)

@@ -1,4 +1,3 @@
-
     let opt1 = Some("test")
     let opt2 = None
     printfn "%A %A" (Option.count opt1) (Option.count opt2)

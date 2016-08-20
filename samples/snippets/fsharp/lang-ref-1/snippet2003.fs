@@ -1,4 +1,3 @@
-
 type Shape =
   // The value here is the radius.
 | Circle of float

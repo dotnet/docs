@@ -1,4 +1,3 @@
-
     let map1 = [ for i in 1 .. 100 -> (i, i*i) ] |> Map.ofList
     let result = Map.tryFindKey (fun key value -> key = value) map1
     match result with

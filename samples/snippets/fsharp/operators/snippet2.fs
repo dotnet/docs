@@ -1,4 +1,3 @@
-
     let append string1 string2 = string1 + "." + string2
 
     let result1 = ("abc", "def") ||> append

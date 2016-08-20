@@ -1,4 +1,3 @@
-
 // Case 1: Too complex an expression.
 // In this example, the list sqrList is intended to be a list of integers,
 // but it is not defined as a simple immutable value.

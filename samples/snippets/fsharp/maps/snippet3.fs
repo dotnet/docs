@@ -1,4 +1,3 @@
-
     let map1 = Map.ofList [ (1, "one"); (2, "two"); (3, "three") ]
     let findKeyAndPrint key map =
         if (Map.containsKey key map) then

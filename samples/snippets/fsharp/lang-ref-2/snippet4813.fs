@@ -1,4 +1,3 @@
-
 let detectZeroTuple point =
     match point with
     | (0, 0) -> printfn "Both values zero."

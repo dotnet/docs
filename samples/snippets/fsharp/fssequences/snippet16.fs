@@ -1,4 +1,3 @@
-
 let mySeq = seq { for i in 1 .. 10 -> i*i }
 let truncatedSeq = Seq.truncate 5 mySeq
 let takenSeq = Seq.take 5 mySeq

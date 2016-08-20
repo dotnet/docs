@@ -1,4 +1,3 @@
-
     let set1 = Set.ofList [ 1 .. 3 ]
     let set2 = Set.ofList [ 4 .. 6 ]
 

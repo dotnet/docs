@@ -1,4 +1,3 @@
-
  let IsPrimeMultipleTest n x =
     x = n || x % n <> 0
 

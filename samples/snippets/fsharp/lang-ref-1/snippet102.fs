@@ -1,4 +1,3 @@
-
  let list1 = [ 1; 2; 3]
  let sumPlus x =
  // OK: inner list1 hides the outer list1.

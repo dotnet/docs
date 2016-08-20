@@ -1,4 +1,3 @@
-
 type MyClassBase2(x: int) =
    let mutable z = x * x
    do for i in 1..z do printf "%d " i

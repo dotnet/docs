@@ -1,4 +1,3 @@
-
     // An array of functions that transform 
     // integers. (int -> int)
     let ops1 =

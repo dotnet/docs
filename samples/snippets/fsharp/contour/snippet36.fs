@@ -1,4 +1,3 @@
-
 let makeGame target = 
     // Build a lambda expression that is the function that plays the game.
     let game = fun guess -> 

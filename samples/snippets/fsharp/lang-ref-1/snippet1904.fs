@@ -1,4 +1,3 @@
-
  type MyRecord = {
      X: int;
      Y: int;

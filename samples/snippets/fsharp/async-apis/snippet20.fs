@@ -1,4 +1,3 @@
-
 module SocketClient =
 
     open System.Net

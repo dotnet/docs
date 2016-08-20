@@ -1,4 +1,3 @@
-
     // This code implements a simple click counter. Every time
     // the user clicks the form, the state increments by 1
     // and the form's text is changed to display the new state.

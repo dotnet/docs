@@ -1,4 +1,3 @@
-
     let delta = 1.0e-10
     let isPerfectSquare (x:int) =
         let y = sqrt (float x)

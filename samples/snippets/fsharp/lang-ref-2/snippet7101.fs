@@ -1,4 +1,3 @@
-
   /// <summary>Builds a new string whose characters are the results of applying the function <c>mapping</c>
   /// to each of the characters of the input string and concatenating the resulting
   /// strings.</summary>

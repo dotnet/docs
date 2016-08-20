@@ -1,4 +1,3 @@
-
     let bufferData (number:int) =
         [| for i in 1 .. 1000 -> byte (i % 256) |]
         |> Array.permute (fun index -> index)

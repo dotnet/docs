@@ -1,4 +1,3 @@
-
     let seq1 = Seq.unfold (fun state -> if (state > 20) then None else Some(state, state + 1)) 0
     printfn "The sequence seq1 contains numbers from 0 to 20."
     for x in seq1 do printf "%d " x

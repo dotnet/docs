@@ -1,4 +1,3 @@
-
 type Car = {
     Make : string
     Model : string

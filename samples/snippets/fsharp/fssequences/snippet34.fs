@@ -1,4 +1,3 @@
-
     // Use Seq.exists2 to compare elements in two sequences.
     // isEqualElement returns true if any elements at the same position in two supplied
     // sequences match.

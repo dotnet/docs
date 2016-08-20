@@ -1,4 +1,3 @@
-
 // Abstract property in abstract class.
 // The property is an int type that has a get and
 // set method

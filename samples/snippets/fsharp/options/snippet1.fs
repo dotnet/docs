@@ -1,4 +1,3 @@
-
     let stringOpt1 = Some("Mirror Image")
     let stringOpt2 = None
     let reverse (string : System.String) =

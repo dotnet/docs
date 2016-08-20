@@ -1,4 +1,3 @@
-
     let replaceNth n newChar inputString =
         let result = String.mapi (fun i c -> if i = n then newChar else c) inputString
         printfn "%s" result

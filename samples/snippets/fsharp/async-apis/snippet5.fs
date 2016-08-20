@@ -1,4 +1,3 @@
-
     open System.Windows.Forms
 
     let bufferData = Array.zeroCreate<byte> 100000000

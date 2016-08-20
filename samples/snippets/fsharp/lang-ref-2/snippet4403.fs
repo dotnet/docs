@@ -1,4 +1,3 @@
-
 type Base1() =
     abstract member F : unit -> unit
     default u.F() =

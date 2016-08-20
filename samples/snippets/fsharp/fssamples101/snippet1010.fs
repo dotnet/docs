@@ -1,4 +1,3 @@
-
     let show a = printfn "hash(%A) : %d" a (hash a) 
     show 1;
     show 2;

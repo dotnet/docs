@@ -1,4 +1,3 @@
-
     // When the mouse button is down, the form changes color
     // as the mouse pointer is moved.
 

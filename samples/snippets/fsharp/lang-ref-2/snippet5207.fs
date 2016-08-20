@@ -1,4 +1,3 @@
-
 let mutable count = 0
 for _ in list1 do
    count <- count + 1

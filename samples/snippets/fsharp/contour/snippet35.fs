@@ -1,4 +1,3 @@
-
 // Functions squareIt and doubleIt were defined in a previous example.
 let doubleAndSquare = compose squareIt doubleIt
 // The following expression doubles 3, squares 6, and returns and

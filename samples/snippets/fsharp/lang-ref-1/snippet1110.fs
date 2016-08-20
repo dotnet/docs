@@ -1,4 +1,3 @@
-
  type MyClass(a) =
      let field1 = a
      let field2 = "text"

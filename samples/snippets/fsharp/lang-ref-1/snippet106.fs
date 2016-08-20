@@ -1,4 +1,3 @@
-
  let smallPipeRadius = 2.0
  let bigPipeRadius = 3.0
 

@@ -1,4 +1,3 @@
-
     open Microsoft.FSharp.Quotations
     // A typed code quotation.
     let expr : Expr<int> = <@ 1 + 1 @>

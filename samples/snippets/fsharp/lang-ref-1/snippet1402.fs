@@ -1,4 +1,3 @@
-
 open System.IO
 let openFile filename =
     try

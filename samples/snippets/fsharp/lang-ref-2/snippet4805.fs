@@ -1,4 +1,3 @@
-
 let function1 x =
     match x with
     | (var1, var2) when var1 > var2 -> printfn "%d is greater than %d" var1 var2 

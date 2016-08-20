@@ -1,4 +1,3 @@
-
     let initialBalance = 1122.73
     let transactions = [| -100.00; +450.34; -62.34; -127.00; -13.50; -12.92 |]
     let balances =

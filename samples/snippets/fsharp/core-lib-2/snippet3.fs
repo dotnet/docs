@@ -1,4 +1,3 @@
-
     let maxValue = 10
     let function1 x =
        if (x > maxValue) then

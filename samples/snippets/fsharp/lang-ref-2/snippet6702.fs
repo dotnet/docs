@@ -1,4 +1,3 @@
-
 type MyClass =
     val a : int
     val b : int

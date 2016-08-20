@@ -1,4 +1,3 @@
-
 // Without the import declaration, you must include the full
 // path to .NET Framework namespaces such as System.IO.
 let writeToFile1 filename (text: string) =

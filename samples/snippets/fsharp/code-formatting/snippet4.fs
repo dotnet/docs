@@ -1,4 +1,3 @@
-
 // Program2.fs
 // A1 and A2 are local modules.
 module A1 =

@@ -1,4 +1,3 @@
-
     let isDone = false
     printfn "Printing Boolean values: %b %b" isDone (not isDone)
     let s1,s2 = "test1", @"C:\test2"

@@ -1,4 +1,3 @@
-
     let seqOfSets =
         seq { for i in 1 .. 9 do yield Set.ofList [ i .. i .. 10000 ] }  
     let setResult = Set.intersectMany seqOfSets

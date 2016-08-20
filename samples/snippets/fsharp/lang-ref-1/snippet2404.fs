@@ -1,4 +1,3 @@
-
 open System.IO
 
 type Folder(pathIn: string) =

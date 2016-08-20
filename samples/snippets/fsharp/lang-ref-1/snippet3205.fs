@@ -1,4 +1,3 @@
-
     // To apply a type annotation to a property that does not have an explicit 
     // get or set, apply the type annotation directly to the property.
     member this.MyProperty1 : int = myInternalValue

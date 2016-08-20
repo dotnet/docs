@@ -1,4 +1,3 @@
-
     // Compare the output of this example with that of the previous.
     // Notice that Seq.delay delays the
     // execution of the loop until the sequence is used.

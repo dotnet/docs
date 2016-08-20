@@ -1,4 +1,3 @@
-
     let data = [1;2;3;4]
     let r1 = data |> List.map (fun x -> x + 1)
     printfn "Adding '1' using map = %A" r1

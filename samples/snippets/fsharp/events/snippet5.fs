@@ -1,4 +1,3 @@
-
     let form = new Form(Text = "F# Windows Form",
                         Visible = true,
                         TopMost = true)

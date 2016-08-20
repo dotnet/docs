@@ -1,4 +1,3 @@
-
  type Point = { x : float; y: float; z: float; }
  type Point3D = { x: float; y: float; z: float }
  // Ambiguity: Point or Point3D?

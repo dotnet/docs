@@ -1,4 +1,3 @@
-
 // Open a file and create a stream reader.
 let fileStream1 =
     try

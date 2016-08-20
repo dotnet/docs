@@ -1,4 +1,3 @@
-
     // Write a test file
     System.IO.File.WriteAllLines(@"test.csv", [| "Desmond, Barrow, Market Place, 2"; 
                                                  "Molly, Singer, Band, 12" |]);

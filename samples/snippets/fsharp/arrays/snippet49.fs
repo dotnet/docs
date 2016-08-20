@@ -1,4 +1,3 @@
-
     let array1 = [| 1; 2; 3 |]
     let array2 = [| 4; 5; 6 |]
     Array.iter (fun x -> printfn "Array.iter: element is %d" x) array1

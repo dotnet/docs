@@ -1,4 +1,3 @@
-
 let printToFile2 obj (file1 : System.IO.StreamWriter) =
     file1.WriteLine(obj.ToString())
 

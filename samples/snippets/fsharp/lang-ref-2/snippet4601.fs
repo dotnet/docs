@@ -1,4 +1,3 @@
-
 let list1 = [ 1; 5; 100; 450; 788 ]
 
 // Pattern matching by using the cons pattern and a list

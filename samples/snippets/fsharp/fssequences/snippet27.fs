@@ -1,4 +1,3 @@
-
    // Recursive isprime function.
    let isPrime n =
        let rec check i =

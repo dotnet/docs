@@ -1,4 +1,3 @@
-
  #light "off"
  let g x =
     begin

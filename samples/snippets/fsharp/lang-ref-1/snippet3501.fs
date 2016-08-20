@@ -1,4 +1,3 @@
-
 // x, y and return value inferred to be int
 // function1: int -> int -> int
 let function1 x y = x + y

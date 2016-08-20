@@ -1,4 +1,3 @@
-
 let TestNumber input =
    match input with
    | Even -> printfn "%d is even" input

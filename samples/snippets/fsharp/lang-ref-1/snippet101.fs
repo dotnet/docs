@@ -1,4 +1,3 @@
-
  let list1 = [ 1; 2; 3]
  // Error: duplicate definition.
  let list1 = []  

@@ -1,4 +1,3 @@
-
  type MyClass1(x) as this =
      // This use of the self identifier produces a warning - avoid.
      let x1 = this.X

@@ -1,4 +1,3 @@
-
     let show a b = 
         printfn "%A < %A: %b" a b (a < b)
         printfn "%A = %A: %b" a b (a = b)

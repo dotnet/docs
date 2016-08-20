@@ -1,4 +1,3 @@
-
 type MyClass2(dataIn) as self =
    let data = dataIn
    do

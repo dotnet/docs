@@ -1,4 +1,3 @@
-
 exception InnerError of string
 exception OuterError of string
 

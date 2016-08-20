@@ -1,4 +1,3 @@
-
     let sequence1 = seq { 1 .. 10 }
     let sequence2 = seq { 10 .. -1 .. 1 }
 

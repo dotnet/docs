@@ -1,4 +1,3 @@
-
     let average1 = Array.average [| 1.0 .. 10.0 |]
     printfn "Average: %f" average1
     // To get the average of an array of integers, 

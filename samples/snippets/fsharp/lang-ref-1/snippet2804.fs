@@ -1,4 +1,3 @@
-
 let makePrintable(x: int, y: float) =
     { new IPrintable with
               member this.Print() = printfn "%d %f" x y }

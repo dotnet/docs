@@ -1,4 +1,3 @@
-
     let printOption opt =
         if (Option.isSome opt) then
             printfn "%A" <| Option.get opt

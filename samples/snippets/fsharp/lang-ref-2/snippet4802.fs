@@ -1,4 +1,3 @@
-
 type Color =
     | Red = 0
     | Green = 1

@@ -1,4 +1,3 @@
-
 let myFunction1 a b = a + b
 let myFunction2(a, b) = a + b
 let someFunction param1 param2 =

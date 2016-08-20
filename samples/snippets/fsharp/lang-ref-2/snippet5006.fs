@@ -1,4 +1,3 @@
-
 open System.Text.RegularExpressions
 
 // ParseRegex parses a regular expression and returns a list of the strings that match each group in

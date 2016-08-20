@@ -1,4 +1,3 @@
-
     let interest = 
         csv.Split([|'\n'|])
         |> Seq.skip 8

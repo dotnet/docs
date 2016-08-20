@@ -1,4 +1,3 @@
-
     let fileName = "directoryListing.txt"
     let printDirectoryInfo (dirName:string) (fileName:string) =
         use file = System.IO.File.CreateText(fileName)

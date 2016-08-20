@@ -1,4 +1,3 @@
-
 // Error:
 printfn "%d" x  
 let x = 100

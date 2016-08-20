@@ -1,5 +1,3 @@
-
-
     let cacheMap = new System.Collections.Generic.Dictionary<_, _>()
     cacheMap.Add(0, 1I)
     cacheMap.Add(1, 1I)

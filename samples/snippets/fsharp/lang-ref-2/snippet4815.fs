@@ -1,4 +1,3 @@
-
 let detect1 x =
     match x with
     | 1 -> printfn "Found a 1!"

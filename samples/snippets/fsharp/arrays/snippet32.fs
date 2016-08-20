@@ -1,4 +1,3 @@
-
     let sumArray array = Array.fold (fun acc elem -> acc + elem) 0 array
     printfn "Sum of the elements of array %A is %d." [ 1 .. 3 ] (sumArray [| 1 .. 3 |])
 

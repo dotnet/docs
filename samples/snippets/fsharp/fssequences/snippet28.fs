@@ -1,4 +1,3 @@
-
     let addNegations seq1 =
        Seq.collect (fun x -> seq { yield x; yield -x }) seq1
        |> Seq.sort

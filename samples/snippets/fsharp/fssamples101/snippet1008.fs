@@ -1,4 +1,3 @@
-
     let numbers = seq {1..20}
     let evens = Seq.choose(fun x -> 
                                 match x with

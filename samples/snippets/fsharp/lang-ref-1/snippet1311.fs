@@ -1,4 +1,3 @@
-
  let sumList = List.map2 (fun x y -> x + y) list1 list2
  printfn "%A" sumList
 

@@ -1,4 +1,3 @@
-
 type ArrayContainer(start, finish) =
     let internalArray = [| start .. finish |]
     member this.RangeSeq = Seq.readonly internalArray

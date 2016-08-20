@@ -1,4 +1,3 @@
-
     let sequence = seq { 1 .. 100 }
     let printSeq seq1 = Seq.iter (printf "%A ") seq1; printfn ""
     let sequences3 = Seq.groupBy (fun index ->

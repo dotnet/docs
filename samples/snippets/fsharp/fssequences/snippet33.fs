@@ -1,4 +1,3 @@
-
     // Use Seq.exists to determine whether there is an element of a sequence
     // that satisfies a given Boolean expression.
     // containsNumber returns true if any of the elements of the supplied sequence match 

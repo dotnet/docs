@@ -1,4 +1,3 @@
-
  let list1 = [ 1; 2; 3 ]
 
  // Properties

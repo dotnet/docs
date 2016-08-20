@@ -1,4 +1,3 @@
-
     let data = [1;2;3;4]
     printfn "data = \n%A" data
     printfn "List.head data = %d" (List.head data)

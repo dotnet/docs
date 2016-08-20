@@ -1,4 +1,3 @@
-
 // Determine the highest common factor between
 // two positive integers, a helper for reducing
 // fractions.

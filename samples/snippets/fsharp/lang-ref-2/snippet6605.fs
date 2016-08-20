@@ -1,4 +1,3 @@
-
 open System
 
 [<Obsolete("Do not use. Use newFunction instead.")>]

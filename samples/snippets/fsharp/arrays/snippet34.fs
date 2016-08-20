@@ -1,4 +1,3 @@
-
     let printPermutation n array1 =
         let length = Array.length array1
         if (n > 0 && n < length) then

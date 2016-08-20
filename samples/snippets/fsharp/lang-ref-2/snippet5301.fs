@@ -1,4 +1,3 @@
-
 open System
 
 let lookForValue value maxValue =

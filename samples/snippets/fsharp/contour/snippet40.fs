@@ -1,4 +1,3 @@
-
 // Access one layer at a time.
 System.Console.WriteLine(((compose4 doubleIt) squareIt) 3)
 

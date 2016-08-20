@@ -1,4 +1,3 @@
-
 // Define the function, again using lambda expression syntax.
 let applyIt = fun op arg -> op arg
 

@@ -1,4 +1,3 @@
-
    let printNumbersToFile fileName n =
       // "use" will cause the file to be closed when it
       // goes out of scope.

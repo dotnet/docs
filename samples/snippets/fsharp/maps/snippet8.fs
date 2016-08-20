@@ -1,4 +1,3 @@
-
     let map1 = Map.ofList [ (1, "one"); (2, "two"); (3, "three") ]
     // Sum the keys.
     let result1 = Map.fold (fun state key value -> state + key) 0 map1

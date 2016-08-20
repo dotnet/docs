@@ -1,4 +1,3 @@
-
 // infiniteSequences.fs
 // generateInfiniteSequence generates sequences of floating point
 // numbers. The sequences generated are computed from the fDenominator

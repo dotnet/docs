@@ -1,4 +1,3 @@
-
 // Declare a reference.
 let refVar = ref 6
 

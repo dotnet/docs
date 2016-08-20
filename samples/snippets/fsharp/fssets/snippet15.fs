@@ -1,4 +1,3 @@
-
     let seqOfSets =
         seq { for i in 2 .. 5 do yield Set.ofList [ i .. i .. 40 ] }  
     let setResult = Set.unionMany seqOfSets

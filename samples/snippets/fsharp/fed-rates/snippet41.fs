@@ -1,4 +1,3 @@
-
 let loadRates maturity =
     // The following tuples associate various maturity durations, in years,
     // with codes defined for treasury bills by the Federal Reserve.

@@ -1,4 +1,3 @@
-
     [| 1 .. 10 |]
     |> Array.toList
     |> List.rev

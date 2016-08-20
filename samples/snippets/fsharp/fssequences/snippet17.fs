@@ -1,4 +1,3 @@
-
     // takeWhile
     let mySeqLessThan10 = Seq.takeWhile (fun elem -> elem < 10) mySeq
     mySeqLessThan10 |> printSeq

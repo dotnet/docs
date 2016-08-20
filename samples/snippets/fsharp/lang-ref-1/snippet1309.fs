@@ -1,4 +1,3 @@
-
  let list1 = [1;2;3]
  let list2 = [4;5;6]
  List.iter (fun x -> printfn "List.iter: element is %d" x) list1

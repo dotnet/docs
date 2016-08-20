@@ -1,4 +1,3 @@
-
 let playGame = makeGame 7
 // Send in some guesses.
 playGame 2

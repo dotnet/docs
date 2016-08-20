@@ -1,4 +1,3 @@
-
 // Tuple of two integers.
 ( 1, 2 ) 
 

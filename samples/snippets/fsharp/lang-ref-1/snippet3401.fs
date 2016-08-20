@@ -1,4 +1,3 @@
-
 type SomeType(factor0: int) =
    let factor = factor0
    member this.SomeMethod(a, b, c) =

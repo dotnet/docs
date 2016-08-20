@@ -1,4 +1,3 @@
-
   // Executing side effects in the primary constructor and
  // additional constructors.
  type Person(nameIn : string, idIn : int) =

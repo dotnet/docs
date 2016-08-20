@@ -1,4 +1,3 @@
-
 // You can pull a function out of a tuple and apply it. Both squareIt and num
 // were defined previously.
 let funAndArgTuple = (squareIt, num)

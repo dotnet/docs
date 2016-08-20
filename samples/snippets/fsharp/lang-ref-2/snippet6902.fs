@@ -1,4 +1,3 @@
-
  [<Measure>] type degC // temperature, Celsius/Centigrade
  [<Measure>] type degF // temperature, Fahrenheit
 

@@ -1,4 +1,3 @@
-
  // Mass, grams.
  [<Measure>] type g
  // Mass, kilograms.

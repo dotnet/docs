@@ -1,4 +1,3 @@
-
 // In this case, the type argument is inferred to be int.
 function1 10 20
 // In this case, the type argument is float.

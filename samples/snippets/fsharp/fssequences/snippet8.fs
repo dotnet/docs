@@ -1,4 +1,3 @@
-
 // Yield the values of a binary tree in a sequence.
 type Tree<'a> =
    | Tree of 'a * Tree<'a> * Tree<'a>

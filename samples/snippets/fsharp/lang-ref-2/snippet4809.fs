@@ -1,4 +1,3 @@
-
 let list1 = [ 1; 2; 3; 4 ]
 
 // This example uses a cons pattern and a list pattern.

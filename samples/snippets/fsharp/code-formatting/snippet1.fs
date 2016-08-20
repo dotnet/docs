@@ -1,4 +1,3 @@
-
 let printList list1 =
     for elem in list1 do
         if elem > 0 then

@@ -1,4 +1,3 @@
-
     [| 1 .. 10 |]
     |> Array.toSeq
     |> Seq.truncate 5

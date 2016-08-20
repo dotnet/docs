@@ -1,4 +1,3 @@
-
     // This function can be used on any sequence, so the same function
     // works with both lists and arrays.
     let allEqual coll = Seq.forall2 (fun elem1 elem2 -> elem1 = elem2) coll

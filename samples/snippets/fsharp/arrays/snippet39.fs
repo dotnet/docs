@@ -1,4 +1,3 @@
-
     type Widget = { ID: int; Rev: int }
 
     let compareWidgets widget1 widget2 =

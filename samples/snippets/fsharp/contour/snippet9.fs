@@ -1,4 +1,3 @@
-
 printfn "%A" bffs
 // Output: ["Susan"; "Kerry"; "Linda"; "Maria"]
 printfn "%A" newBffs

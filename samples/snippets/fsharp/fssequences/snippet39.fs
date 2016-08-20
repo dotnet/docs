@@ -1,4 +1,3 @@
-
     // This function can be used on any sequence, so the same function
     // works with both lists and arrays.
     let allPositive coll = Seq.forall (fun elem -> elem > 0) coll

@@ -1,4 +1,3 @@
-
     let data = "The quick brown fox jumps over the lazy dog" 
     let histogram = 
         data.ToCharArray()

@@ -1,4 +1,3 @@
-
   type Account(accountNumber : int, ?first: string, ?last: string, ?bal : float) =
      let mutable balance = defaultArg bal 0.0
      let mutable number = accountNumber

@@ -1,4 +1,3 @@
-
     // Use Array.fold2 to perform computations over two arrays (of equal size)
     // at the same time.
     // Example: Add the greater element at each array position.

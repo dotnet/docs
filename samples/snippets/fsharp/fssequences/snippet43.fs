@@ -1,4 +1,3 @@
-
     let seq1 = [1; 2; 3]
     let seq2 = [4; 5; 6]
     Seq.iter (fun x -> printfn "Seq.iter: element is %d" x) seq1

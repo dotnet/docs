@@ -1,4 +1,3 @@
-
     let openingHours day = 
         match day with 
         | DayOfWeek.Monday 

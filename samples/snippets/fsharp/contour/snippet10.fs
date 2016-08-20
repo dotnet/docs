@@ -1,4 +1,3 @@
-
 // The declaration creates a constructor that takes two values, name and age.
 type Person(name:string, age:int) =
     // A Person object's age can be changed. The mutable keyword in the

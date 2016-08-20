@@ -1,4 +1,3 @@
-
     // This is a mock cancellable computation. It checks the token source
     // to see if the cancel signal was received.
     let computation (tokenSource:System.Threading.CancellationTokenSource) =

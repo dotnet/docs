@@ -1,4 +1,3 @@
-
     open System.IO
 
     let streamWriter1 = File.CreateText("test1.txt")

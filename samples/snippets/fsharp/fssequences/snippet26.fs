@@ -1,4 +1,3 @@
-
     // You can use Seq.average to average elements of a list, array, or sequence.
     let average1 = Seq.average [ 1.0 .. 10.0 ]
     printfn "Average: %f" average1

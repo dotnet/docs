@@ -1,4 +1,3 @@
-
     let findPerfectSquareAndCube array1 =
         let delta = 1.0e-10
         let isPerfectSquare (x:int) =

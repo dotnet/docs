@@ -1,4 +1,3 @@
-
     let findKeyFromValue findValue map =
         printfn "With value %A, found key %A." findValue (Map.findKey (fun key value -> value = findValue) map)
     let map1 = Map.ofList [ (1, "one"); (2, "two"); (3, "three") ]

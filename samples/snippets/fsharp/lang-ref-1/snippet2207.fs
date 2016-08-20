@@ -1,4 +1,3 @@
-
 // The following code demonstrates the use of reference
 // cells to enable partially applied arguments to be changed
 // by later code.

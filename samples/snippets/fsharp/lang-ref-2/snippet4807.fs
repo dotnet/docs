@@ -1,4 +1,3 @@
-
 let detectZeroOR point =
     match point with
     | (0, 0) | (0, _) | (_, 0) -> printfn "Zero found."

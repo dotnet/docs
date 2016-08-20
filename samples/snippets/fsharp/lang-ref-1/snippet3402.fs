@@ -1,4 +1,3 @@
-
    static member SomeStaticMethod(a, b, c) =
       (a + b + c)
 

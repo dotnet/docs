@@ -1,4 +1,3 @@
-
 // An abstract class that has some methods and properties defined
 // and some left abstract.
 [<AbstractClass>]

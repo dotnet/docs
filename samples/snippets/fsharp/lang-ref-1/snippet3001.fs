@@ -1,4 +1,3 @@
-
 type PointWithCounter(a: int, b: int) =
     // A variable i.
     let mutable i = 0

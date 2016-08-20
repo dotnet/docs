@@ -1,4 +1,3 @@
-
 // A simple for...to loop.
 let function1() =
   for i = 1 to 10 do

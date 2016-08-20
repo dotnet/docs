@@ -1,4 +1,3 @@
-
     let data = Some(1,3)
     printfn "data = %A" data;
     printfn "data.IsSome = %b" data.IsSome

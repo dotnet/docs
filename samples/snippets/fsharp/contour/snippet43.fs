@@ -1,4 +1,3 @@
-
 let isNegative = fun n -> n < 0
 
 // This example uses the names of the function argument and the integer

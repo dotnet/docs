@@ -1,4 +1,3 @@
-
     let findAndPrint key map =
         printfn "With key %d, found value %A." key (Map.find key map)
     let map1 = Map.ofList [ (1, "one"); (2, "two"); (3, "three") ]

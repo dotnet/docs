@@ -1,4 +1,3 @@
-
  // This class has a primary constructor that takes three arguments
  // and an additional constructor that calls the primary constructor.
  type MyClass(x0, y0, z0) =

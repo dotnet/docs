@@ -1,4 +1,3 @@
-
     let isWholeNumber string1 =
         if (String.forall (fun c -> System.Char.IsDigit(c)) string1) then
             printfn "The string \"%s\" is a whole number." string1

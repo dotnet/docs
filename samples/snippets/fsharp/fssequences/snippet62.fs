@@ -1,4 +1,3 @@
-
     let valuesSeq = [ ("a", 1); ("b", 2); ("c", 3) ]
 
     let resultPick = Seq.pick (fun elem ->

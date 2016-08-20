@@ -1,4 +1,3 @@
-
     let generateInfiniteSequence fDenominator isAlternating =
         if (isAlternating) then
             Seq.initInfinite (fun index -> 1.0 /(fDenominator index) * (if (index % 2 = 0) then -1.0 else 1.0))

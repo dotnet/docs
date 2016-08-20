@@ -1,4 +1,3 @@
-
 let rec tryFindMatch pred list =
     match list with
     | head :: tail -> if pred(head)

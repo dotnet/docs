@@ -1,4 +1,3 @@
-
  type MyStruct =
      struct
         val X : int

@@ -1,4 +1,3 @@
-
     // A read-only property.
     member this.MyReadOnlyProperty = myInternalValue
     // A write-only property.

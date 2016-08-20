@@ -1,4 +1,3 @@
-
     // Normally sequences are evaluated lazily.  In this case,
     // the sequence is created from a list, which is not evaluated
     // lazily. Therefore, without Seq.delay, the elements would be

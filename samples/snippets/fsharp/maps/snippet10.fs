@@ -1,4 +1,3 @@
-
     let makeMap (f : float -> float) min max step =
         seq { for x in min .. step .. max -> (x, f x) } |> Map.ofSeq
     let functions = [ sin; cos; tan ]

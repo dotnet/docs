@@ -1,4 +1,3 @@
-
     // Accesses elements from 0 to 2.
 
     array1.[0..2]  

@@ -1,4 +1,3 @@
-
     let append1 string1 = string1 + ".append1"
     let append2 string1 = string1 + ".append2"
 

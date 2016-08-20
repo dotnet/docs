@@ -1,4 +1,3 @@
-
 // An integer is passed to squareIt. Both squareIt and num are defined in 
 // previous examples.
 //let num = 10

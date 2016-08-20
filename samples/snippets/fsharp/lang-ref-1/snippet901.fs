@@ -1,4 +1,3 @@
-
 let function1 x y = x + y
 // The next line results in a compiler warning.
 function1 10 20 

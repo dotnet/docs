@@ -1,4 +1,3 @@
-
 // Print all the lines read in from the console.
 let PrintLines1() =
     let mutable finished = false

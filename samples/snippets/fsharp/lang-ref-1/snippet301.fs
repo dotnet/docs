@@ -1,4 +1,3 @@
-
 fun x -> x + 1
 fun a b c -> printfn "%A %A %A" a b c
 fun (a: int) (b: int) (c: int) -> a + b * c

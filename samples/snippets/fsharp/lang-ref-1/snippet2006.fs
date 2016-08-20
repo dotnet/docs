@@ -1,4 +1,3 @@
-
 type Expression = 
     | Number of int
     | Add of Expression * Expression

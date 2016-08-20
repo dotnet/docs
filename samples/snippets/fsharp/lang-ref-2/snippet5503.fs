@@ -1,4 +1,3 @@
-
 exception Error1 of string
 // Using a tuple type as the argument type.
 exception Error2 of string * int

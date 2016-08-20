@@ -1,4 +1,3 @@
-
 let makeGame2 target guess =
     if guess = target then
        System.Console.WriteLine("You win!")

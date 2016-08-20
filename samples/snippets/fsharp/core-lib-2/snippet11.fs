@@ -1,4 +1,3 @@
-
     let lazyValue n = Lazy.Create (fun () ->
         let rec factorial n =
             match n with

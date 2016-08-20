@@ -1,4 +1,3 @@
-
 // This example shows the use of the as keyword to assign a name to a
 // .NET exception.
 let divide2 x y =

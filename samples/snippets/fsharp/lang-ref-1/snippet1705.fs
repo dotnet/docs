@@ -1,4 +1,3 @@
-
     // A generic function.
     // In this example, the generic type parameter 'a makes function3 generic.
     let function3 (x : 'a) (y : 'a) =

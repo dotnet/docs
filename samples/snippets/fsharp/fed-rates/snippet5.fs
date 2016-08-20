@@ -1,4 +1,3 @@
-
 module RateAnalysis.Analyzer
 
 open RateLoader

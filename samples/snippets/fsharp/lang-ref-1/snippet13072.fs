@@ -1,4 +1,3 @@
-
  let sum list =
     let rec loop list acc =
         match list with

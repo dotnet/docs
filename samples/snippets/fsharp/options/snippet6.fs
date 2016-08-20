@@ -1,4 +1,3 @@
-
     let isEven opt =
         Option.forall (fun elem -> elem % 2 = 0) opt
     printfn "%b" <| isEven (Some(2))

@@ -1,4 +1,3 @@
-
     type Delegate1 = delegate of int * char -> string
 
     let replicate n c = String.replicate n (string c)

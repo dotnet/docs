@@ -1,4 +1,3 @@
-
     // Computes ((1 - 2) - 3) - 4 = -8
     Array.reduce (fun elem acc -> elem - acc) [| 1; 2; 3; 4 |]
     |> printfn "%A"

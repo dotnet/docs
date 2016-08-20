@@ -1,4 +1,3 @@
-
 type MyClassBase1() =
    let mutable z = 0
    abstract member function1 : int -> int

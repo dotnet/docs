@@ -1,4 +1,3 @@
-
     let data = [("Cats",4);
                 ("Dogs",5);
                 ("Mice",3);

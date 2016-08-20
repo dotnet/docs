@@ -1,4 +1,3 @@
-
 type Incrementor(delta) =
     member this.Increment(i : int byref) =
         i <- i + delta

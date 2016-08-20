@@ -1,4 +1,3 @@
-
 type PersonName =
     | FirstOnly of string
     | LastOnly of string

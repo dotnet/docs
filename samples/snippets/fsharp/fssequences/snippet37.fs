@@ -1,4 +1,3 @@
-
     let seqA = [| 2 .. 100 |]
     let delta = 1.0e-10
     let isPerfectSquare (x:int) =

@@ -1,4 +1,3 @@
-
     open System.Windows.Forms
     open System.Drawing
     open Microsoft.FSharp.Core

@@ -1,4 +1,3 @@
-
     let random = new System.Random()
     Seq.initInfinite (fun _ -> random.Next())
     |> Seq.filter (fun x -> x % 2 = 0)

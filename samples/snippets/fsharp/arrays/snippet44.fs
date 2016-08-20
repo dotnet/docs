@@ -1,4 +1,3 @@
-
     // Specify the type by using a type argument.
     let array1 = Array.empty<int>
     // Specify the type by using a type annotation.

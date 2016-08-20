@@ -1,4 +1,3 @@
-
     let isValue opt value =
         Option.exists (fun elem -> elem = value) opt
     let testOpt1 = Some(10)

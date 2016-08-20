@@ -48,7 +48,7 @@ If no `project.json` can be found, `dotnet publish` will throw an error.
 
 `-f`, `--framework` [FID]
 
-Publishes the application for a given framework identifier (FID). If not specified, FID is read from `project.json`. In no valid framework is found, the command will throw an error. If multiple valid frameworks are found, the command will publish for all valid frameworks. 
+Publishes the application for a given framework identifier (FID). If not specified, FID is read from `project.json`. If no valid framework is found, the command will throw an error. If multiple valid frameworks are found, the command will publish for all valid frameworks. 
 
 
 `-r`, `--runtime` [RID]

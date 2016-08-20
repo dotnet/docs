@@ -16,7 +16,7 @@ ms.assetid:
 
 by [Nicolò Caradini](https://github.com/ncarandini)
 
-While xUnit is actually a better choice when targeting multiple platforms, on Windows is also possible to use MSUnit to write test projects.
+While xUnit is maybe a better choice when targeting multiple platforms, with .NET Core on Windows is also possible to use MSUnit.
 
 ## Prerequisites
 

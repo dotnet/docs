@@ -1,4 +1,3 @@
-
 type MyType() =
     let mutable myInt1 = 10
     [<DefaultValue>] val mutable myInt2 : int

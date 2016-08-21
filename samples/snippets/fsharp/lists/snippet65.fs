@@ -14,7 +14,7 @@ let findPerfectSquareAndCube list1 =
     // Test an element to see whether it is a perfect square and a perfect
     // cube, and, if so, return the element, square root, and cube root
     // as an option value. Otherwise, return None.
-    let testElement elem = 
+    let testElement elem =
         if isPerfectSquare elem && isPerfectCube elem then
             Some(elem, intFunction sqrt elem, intFunction cubeRoot elem)
         else None

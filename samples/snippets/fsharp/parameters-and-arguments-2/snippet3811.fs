@@ -1,6 +1,5 @@
-
 open System
-       
+
 type X() =
     member this.F([<ParamArray>] args: Object[]) =
         for arg in args do

@@ -1,4 +1,3 @@
-
 let beginning x y = x - 2*y
 let ending x y = x + 2*y
 

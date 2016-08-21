@@ -1,2 +1,1 @@
-
- let function2 (a, b) = a + b
+let function2 (a, b) = a + b

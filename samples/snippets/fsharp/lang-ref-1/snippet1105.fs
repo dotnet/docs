@@ -1,6 +1,5 @@
-
 // Error:
-printfn "%d" x  
+printfn "%d" x
 let x = 100
-// OK: 
+// OK:
 printfn "%d" x

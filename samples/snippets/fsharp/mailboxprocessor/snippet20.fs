@@ -18,7 +18,7 @@ type Result = double
 // a Job consists of a job ID and a computation that produces a single result.
 type Job = int * Async<Result>
 
-type Message = int * Result 
+type Message = int * Result
 
 let context = System.Threading.SynchronizationContext.Current
 
@@ -35,7 +35,7 @@ let completeAgent = MailboxProcessor<Message>.Start(fun inbox ->
 // This agent starts each job in the order it is received.
 let runAgent = MailboxProcessor<Job>.Start(fun inbox ->
     let rec loop n =
-        async {          
+        async {
             let! (id, job) = inbox.Receive()
             printfn "Starting job #%d" id
             // Start each job, and specify a continuation that

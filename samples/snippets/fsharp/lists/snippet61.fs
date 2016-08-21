@@ -1,4 +1,4 @@
-// A list of functions that transform 
+// A list of functions that transform
 // integers. (int -> int)
 let ops1 =
   [ (fun x -> x + 1), "add 1"

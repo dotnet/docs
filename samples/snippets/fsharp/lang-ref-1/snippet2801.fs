@@ -1,4 +1,3 @@
-
 type IPrintable =
    abstract member Print : unit -> unit
 

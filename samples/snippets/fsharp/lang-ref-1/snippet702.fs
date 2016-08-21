@@ -1,9 +1,8 @@
-
 // Open a file and create a stream reader.
 let fileStream1 =
     try
         System.IO.File.OpenRead("TextFile1.txt")
-    with 
+    with
         | :? System.IO.FileNotFoundException -> printfn "Error: TextFile1.txt not found."; exit(1)
 
 let streamReader = new System.IO.StreamReader(fileStream1)

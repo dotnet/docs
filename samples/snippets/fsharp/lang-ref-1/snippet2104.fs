@@ -1,4 +1,3 @@
-
 type uColor =
    | Red = 0u
    | Green = 1u

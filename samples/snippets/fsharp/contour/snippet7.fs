@@ -1,3 +1,2 @@
-
 // List of best friends.
-let bffs = [ "Susan"; "Kerry"; "Linda"; "Maria" ] 
+let bffs = [ "Susan"; "Kerry"; "Linda"; "Maria" ]

@@ -1,4 +1,3 @@
-
 type RectangleXY(x1 : float, y1: float, x2: float, y2: float) =
     // Field definitions.
     let height = y2 - y1

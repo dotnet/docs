@@ -1,4 +1,3 @@
-
 open System.Drawing
 
 let (|RGB|) (col : System.Drawing.Color) =

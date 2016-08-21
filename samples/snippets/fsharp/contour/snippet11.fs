@@ -1,4 +1,3 @@
-
 // The following let expressions are not part of the Person class. Make sure
 // they begin at the left margin.
 let person1 = Person("John", 43)

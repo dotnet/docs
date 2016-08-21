@@ -1,4 +1,3 @@
-
 // An abstract class that has some methods and properties defined
 // and some left abstract.
 [<AbstractClass>]
@@ -22,7 +21,7 @@ type Shape2D(x0 : float, y0 : float) =
     member this.Move dx dy =
        x <- x + dx
        y <- y + dy
-  
+
     // An abstract method that is given a default implementation
     // is equivalent to a virtual method in other .NET languages.
     // Rotate changes the internal angle of rotation of the square.
@@ -44,7 +43,7 @@ type Circle(x, y, radius) =
     override this.Area = PI * this.Radius * this.Radius
     override this.Perimeter = 2. * PI * this.Radius
     // Rotating a circle does nothing, so use the wildcard
-    // character to discard the unused argument and 
+    // character to discard the unused argument and
     // evaluate to unit.
     override this.Rotate(_) = ()
     override this.Name = "Circle"

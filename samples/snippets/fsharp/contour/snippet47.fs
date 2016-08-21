@@ -1,5 +1,3 @@
-
-
 // ** GIVE THE VALUE A NAME **
 
 
@@ -26,11 +24,11 @@ let squareIt2 n = n * n
 let integerList = [ 1; 2; 3; 4; 5; 6; 7 ]
 let stringList = [ "one"; "two"; "three" ]
 
-// You cannot mix types in a list. The following declaration causes a 
+// You cannot mix types in a list. The following declaration causes a
 // type-mismatch compiler error.
 //let failedList = [ 5; "six" ]
 
-// In F#, functions can be stored in a list, as long as the functions 
+// In F#, functions can be stored in a list, as long as the functions
 // have the same signature.
 
 // Function doubleIt has the same signature as squareIt, declared previously.
@@ -41,9 +39,9 @@ let doubleIt = fun n -> 2 * n
 let funList = [ squareIt; doubleIt ]
 
 // Function squareIt cannot be stored in a list together with a function
-// that has a different signature, such as the following body mass 
+// that has a different signature, such as the following body mass
 // index (BMI) calculator.
-let BMICalculator = fun ht wt -> 
+let BMICalculator = fun ht wt ->
                     (float wt / float (squareIt ht)) * 703.0
 
 // The following expression causes a type-mismatch compiler error.
@@ -73,7 +71,7 @@ let moreMixedTuple = ( num, "two", 3.3, squareIt )
 // were defined previously.
 let funAndArgTuple = (squareIt, num)
 
-// The following expression applies squareIt to num, returns 100, and 
+// The following expression applies squareIt to num, returns 100, and
 // then displays 100.
 System.Console.WriteLine((fst funAndArgTuple)(snd funAndArgTuple))
 
@@ -91,7 +89,7 @@ System.Console.WriteLine((fst funAndArgTuple2)(snd funAndArgTuple2))
 // ** PASS THE VALUE AS AN ARGUMENT **
 
 
-// An integer is passed to squareIt. Both squareIt and num are defined in 
+// An integer is passed to squareIt. Both squareIt and num are defined in
 // previous examples.
 //let num = 10
 //let squareIt = fun n -> n * n
@@ -110,8 +108,8 @@ System.Console.WriteLine(repeatString greeting)
 // Define the function, again using lambda expression syntax.
 let applyIt = fun op arg -> op arg
 
-// Send squareIt for the function, op, and num for the argument you want to 
-// apply squareIt to, arg. Both squareIt and num are defined in previous 
+// Send squareIt for the function, op, and num for the argument you want to
+// apply squareIt to, arg. Both squareIt and num are defined in previous
 // examples. The result returned and displayed is 100.
 System.Console.WriteLine(applyIt squareIt num)
 
@@ -163,9 +161,9 @@ let lowercase = str.ToLower()
 
 System.Console.WriteLine((fun n -> n % 2 = 1) 15)
 
- 
 
-let checkFor item = 
+
+let checkFor item =
     let functionToReturn = fun lst ->
                            List.exists (fun a -> a = item) lst
     functionToReturn
@@ -176,7 +174,7 @@ let checkFor item =
 //let integerList = [ 1; 2; 3; 4; 5; 6; 7 ]
 //let stringList = [ "one"; "two"; "three" ]
 
-// The returned function is given the name checkFor7. 
+// The returned function is given the name checkFor7.
 let checkFor7 = checkFor 7
 
 // The result displayed when checkFor7 is applied to integerList is True.
@@ -190,16 +188,16 @@ System.Console.WriteLine(checkForSeven stringList)
 
 
 
-// Function compose takes two arguments. Each argument is a function 
+// Function compose takes two arguments. Each argument is a function
 // that takes one argument of the same type. The following declaration
 // uses lambda expresson syntax.
-let compose = 
+let compose =
     fun op1 op2 ->
         fun n ->
             op1 (op2 n)
 
 // To clarify what you are returning, use a nested let expression:
-let compose2 = 
+let compose2 =
     fun op1 op2 ->
         // Use a let expression to build the function that will be returned.
         let funToReturn = fun n ->
@@ -228,12 +226,12 @@ System.Console.WriteLine(squareAndDouble 3)
 
 
 
-let makeGame target = 
+let makeGame target =
     // Build a lambda expression that is the function that plays the game.
-    let game = fun guess -> 
+    let game = fun guess ->
                    if guess = target then
                       System.Console.WriteLine("You win!")
-                   else 
+                   else
                       System.Console.WriteLine("Wrong. Try again.")
     // Now just return it.
     game
@@ -251,7 +249,7 @@ playGame 7
 // Wrong. Try again.
 // You win!
 
-// The following game specifies a character instead of an integer for target. 
+// The following game specifies a character instead of an integer for target.
 let alphaGame = makeGame 'q'
 alphaGame 'c'
 alphaGame 'r'
@@ -278,12 +276,12 @@ let compose4curried =
         fun op2 ->
             fun n -> op1 (op2 n)
 
-  
+
 
 // Access one layer at a time.
 System.Console.WriteLine(((compose4 doubleIt) squareIt) 3)
 
-// Access as in the original compose examples, sending arguments for 
+// Access as in the original compose examples, sending arguments for
 // op1 and op2, then applying the resulting function to a value.
 System.Console.WriteLine((compose4 doubleIt squareIt) 3)
 
@@ -305,9 +303,9 @@ System.Console.WriteLine(squareAndDouble4 3)
 let makeGame2 target guess =
     if guess = target then
        System.Console.WriteLine("You win!")
-    else 
+    else
        System.Console.WriteLine("Wrong. Try again.")
-        
+
 let playGame2 = makeGame2 7
 playGame2 2
 playGame2 9
@@ -333,7 +331,7 @@ System.Console.WriteLine(applyIt isNegative num)
 
 // This example substitutes the value that num is bound to for num, and the
 // value that isNegative is bound to for isNegative.
-System.Console.WriteLine(applyIt (fun n -> n < 0) 10) 
+System.Console.WriteLine(applyIt (fun n -> n < 0) 10)
 
 
 
@@ -353,7 +351,7 @@ let funTuple2 = ( BMICalculator, fun n -> n * n )
 let increments = List.map (fun n -> n + 1) [ 1; 2; 3; 4; 5; 6; 7 ]
 
 
-//let checkFor item = 
+//let checkFor item =
 //    let functionToReturn = fun lst ->
 //                           List.exists (fun a -> a = item) lst
 //    functionToReturn

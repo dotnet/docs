@@ -5,7 +5,7 @@
 //         Integers and basic functions
 // ---------------------------------------------------------------
 
-module Integers = 
+module Integers =
 
     let sampleInteger = 176
 
@@ -22,15 +22,15 @@ module Integers =
     printfn "The table of squares from 0 to 99 is:\n%A" sampleTableOfSquares
 
 
-module BasicFunctions = 
+module BasicFunctions =
 
-    // Use 'let' to define a function that accepts an integer argument and returns an integer. 
-    let func1 x = x*x + 3             
+    // Use 'let' to define a function that accepts an integer argument and returns an integer.
+    let func1 x = x*x + 3
 
     // Parenthesis are optional for function arguments
-    let func1a (x) = x*x + 3             
+    let func1a (x) = x*x + 3
 
-    /// Apply the function, naming the function return result using 'let'. 
+    /// Apply the function, naming the function return result using 'let'.
     /// The variable type is inferred from the function return type.
     let result1 = func1 4573
     printfn "The result of squaring the integer 4573 and adding 3 is %d" result1
@@ -41,10 +41,10 @@ module BasicFunctions =
     let result2 = func2 (7 + 4)
     printfn "The result of applying the 1st sample function to (7 + 4) is %d" result2
 
-    let func3 x = 
-        if x < 100.0 then 
+    let func3 x =
+        if x < 100.0 then
             2.0*x*x - x/5.0 + 3.0
-        else 
+        else
             2.0*x*x + x/5.0 - 37.0
 
     let result3 = func3 (6.5 + 4.5)
@@ -56,7 +56,7 @@ module BasicFunctions =
 //         Booleans
 // ---------------------------------------------------------------
 
-module SomeBooleanValues = 
+module SomeBooleanValues =
 
     let boolean1 = true
     let boolean2 = false
@@ -71,7 +71,7 @@ module SomeBooleanValues =
 //         Strings
 // ---------------------------------------------------------------
 
-module StringManipulation = 
+module StringManipulation =
 
     let string1 = "Hello"
     let string2  = "world"
@@ -95,12 +95,12 @@ module StringManipulation =
 //         Tuples (ordered sets of values)
 // ---------------------------------------------------------------
 
-module Tuples = 
+module Tuples =
 
     /// A simple tuple of integers
     let tuple1 = (1, 2, 3)
 
-    /// A function that swaps the order of two values in a tuple. 
+    /// A function that swaps the order of two values in a tuple.
     /// QuickInfo shows that the function is inferred to have a generic type.
     let swapElems (a, b) = (b, a)
 
@@ -116,7 +116,7 @@ module Tuples =
 //         Lists and list processing
 // ---------------------------------------------------------------
 
-module Lists = 
+module Lists =
 
     let list1 = [ ]            /// an empty list
 
@@ -127,25 +127,25 @@ module Lists =
     let numberList = [ 1 .. 1000 ]  /// list of integers from 1 to 1000
 
     /// A list containing all the days of the year
-    let daysList = 
+    let daysList =
         [ for month in 1 .. 12 do
-              for day in 1 .. System.DateTime.DaysInMonth(2012, month) do 
+              for day in 1 .. System.DateTime.DaysInMonth(2012, month) do
                   yield System.DateTime(2012, month, day) ]
 
     /// A list containing the tuples which are the coordinates of the black squares on a chess board.
-    let blackSquares = 
+    let blackSquares =
         [ for i in 0 .. 7 do
-              for j in 0 .. 7 do 
-                  if (i+j) % 2 = 1 then 
+              for j in 0 .. 7 do
+                  if (i+j) % 2 = 1 then
                       yield (i, j) ]
 
-    /// Square the numbers in numberList, using the pipeline operator to pass an argument to List.map    
-    let squares = 
-        numberList 
-        |> List.map (fun x -> x*x) 
+    /// Square the numbers in numberList, using the pipeline operator to pass an argument to List.map
+    let squares =
+        numberList
+        |> List.map (fun x -> x*x)
 
     /// Computes the sum of the squares of the numbers divisible by 3.
-    let sumOfSquares = 
+    let sumOfSquares =
         numberList
         |> List.filter (fun x -> x % 3 = 0)
         |> List.sumBy (fun x -> x * x)
@@ -156,27 +156,27 @@ module Lists =
 //         Classes
 // ---------------------------------------------------------------
 
-module DefiningClasses = 
+module DefiningClasses =
 
-    /// The class's constructor takes two arguments: dx and dy, both of type 'float'. 
-    type Vector2D(dx : float, dy : float) = 
+    /// The class's constructor takes two arguments: dx and dy, both of type 'float'.
+    type Vector2D(dx : float, dy : float) =
         /// The length of the vector, computed when the object is constructed
         let length = sqrt (dx*dx + dy*dy)
 
         // 'this' specifies a name for the object's self identifier.
         // In instance methods, it must appear before the member name.
-        member this.DX = dx  
+        member this.DX = dx
 
         member this.DY = dy
 
         member this.Length = length
 
         member this.Scale(k) = Vector2D(k * this.DX, k * this.DY)
-    
+
     /// An instance of the Vector2D class
     let vector1 = Vector2D(3.0, 4.0)
 
-    /// Get a new scaled vector object, without modifying the original object 
+    /// Get a new scaled vector object, without modifying the original object
     let vector2 = vector1.Scale(10.0)
 
     printfn "Length of vector1: %f      Length of vector2: %f" vector1.Length vector2.Length
@@ -187,7 +187,7 @@ module DefiningClasses =
 //         Generic classes
 // ---------------------------------------------------------------
 
-module DefiningGenericClasses = 
+module DefiningGenericClasses =
 
     type StateTracker<'T>(initialElement: 'T) = // 'T is the type parameter for the class
 
@@ -195,7 +195,7 @@ module DefiningGenericClasses =
         let mutable states = [ initialElement ]
 
         /// Add a new element to the list of states
-        member this.UpdateState newState = 
+        member this.UpdateState newState =
             states <- newState :: states  // use the '<-' operator to mutate the value
 
         /// Get the entire list of historical states
@@ -224,7 +224,7 @@ type ReadFile() =
     member this.ReadLine() = file.ReadLine()
 
     // this class's implementation of IDisposable members
-    interface System.IDisposable with    
+    interface System.IDisposable with
         member this.Dispose() = file.Close()
 
 
@@ -233,7 +233,7 @@ type ReadFile() =
 //         Arrays
 // ---------------------------------------------------------------
 
-module Arrays = 
+module Arrays =
 
     /// The empty array
     let array1 = [| |]
@@ -244,23 +244,23 @@ module Arrays =
 
     /// An array containing only the words "hello" and "world"
     let array4 = [| for word in array2 do
-                        if word.Contains("l") then 
+                        if word.Contains("l") then
                             yield word |]
 
     /// An array initialized by index and containing the even numbers from 0 to 2000
-    let evenNumbers = Array.init 1001 (fun n -> n * 2) 
+    let evenNumbers = Array.init 1001 (fun n -> n * 2)
 
     /// Sub-array extracted using slicing notation
     let evenNumbersSlice = evenNumbers.[0..500]
 
-    for word in array4 do 
+    for word in array4 do
         printfn "word: %s" word
 
     // Mdify an array element using the left arrow assignment operator
     array2.[1] <- "WORLD!"
 
     /// Calculates the sum of the lengths of the words that start with 'h'
-    let sumOfLengthsOfWords = 
+    let sumOfLengthsOfWords =
         array2
         |> Array.filter (fun x -> x.StartsWith "h")
         |> Array.sumBy (fun x -> x.Length)
@@ -271,8 +271,8 @@ module Arrays =
 //         Sequences
 // ---------------------------------------------------------------
 
-module Sequences = 
-    // Sequences are evaluated on-demand and are re-evaluated each time they are iterated. 
+module Sequences =
+    // Sequences are evaluated on-demand and are re-evaluated each time they are iterated.
     // An F# sequence is an instance of a System.Collections.Generic.IEnumerable<'T>,
     // so Seq functions can be applied to Lists and Arrays as well.
 
@@ -284,12 +284,12 @@ module Sequences =
     let numbersSeq = seq { 1 .. 1000 }
 
     /// Another array containing only the words "hello" and "world"
-    let seq3 = 
+    let seq3 =
         seq { for word in seq2 do
-                  if word.Contains("l") then 
+                  if word.Contains("l") then
                       yield word }
 
-    let evenNumbers = Seq.init 1001 (fun n -> n * 2) 
+    let evenNumbers = Seq.init 1001 (fun n -> n * 2)
 
     let rnd = System.Random()
 
@@ -299,8 +299,8 @@ module Sequences =
         seq { yield x
               yield! randomWalk (x + rnd.NextDouble() - 0.5) }
 
-    let first100ValuesOfRandomWalk = 
-        randomWalk 5.0 
+    let first100ValuesOfRandomWalk =
+        randomWalk 5.0
         |> Seq.truncate 100
         |> Seq.toList
 
@@ -310,18 +310,18 @@ module Sequences =
 //         Recursive functions
 // ---------------------------------------------------------------
 
-module RecursiveFunctions  = 
-              
+module RecursiveFunctions  =
+
     /// Compute the factorial of an integer. Use 'let rec' to define a recursive function
-    let rec factorial n = 
+    let rec factorial n =
         if n = 0 then 1 else n * factorial (n-1)
 
-    /// Computes the greatest common factor of two integers. 
+    /// Computes the greatest common factor of two integers.
     //  Since all of the recursive calls are tail calls, the compiler will turn the function into a loop,
     //  which improves performance and reduces memory consumption.
-    let rec greatestCommonFactor a b =                       
+    let rec greatestCommonFactor a b =
         if a = 0 then b
-        elif a < b then greatestCommonFactor a (b - a)           
+        elif a < b then greatestCommonFactor a (b - a)
         else greatestCommonFactor (a - b) b
 
     /// Computes the sum of a list of integers using recursion.
@@ -344,81 +344,81 @@ module RecursiveFunctions  =
 //         Record types
 // ---------------------------------------------------------------
 
-module RecordTypes = 
+module RecordTypes =
 
     // Define a record type
-    type ContactCard = 
+    type ContactCard =
         { Name     : string;
           Phone    : string;
           Verified : bool }
-              
+
     let contact1 = { Name = "Alf" ; Phone = "(206) 555-0157" ; Verified = false }
 
-    // Create a new record that is a copy of contact1, 
+    // Create a new record that is a copy of contact1,
     // but has different values for the 'Phone' and 'Verified' fields
     let contact2 = { contact1 with Phone = "(206) 555-0112"; Verified = true }
 
     /// Converts a 'ContactCard' object to a string
-    let showCard c = 
+    let showCard c =
         c.Name + " Phone: " + c.Phone + (if not c.Verified then " (unverified)" else "")
-        
+
 
 
 // ---------------------------------------------------------------
 //         Union types
 // ---------------------------------------------------------------
 
-module UnionTypes = 
+module UnionTypes =
 
     /// Represents the suit of a playing card
-    type Suit = 
-        | Hearts 
-        | Clubs 
-        | Diamonds 
+    type Suit =
+        | Hearts
+        | Clubs
+        | Diamonds
         | Spades
 
     /// Represents the rank of a playing card
-    type Rank = 
+    type Rank =
         /// Represents the rank of cards 2 .. 10
         | Value of int
         | Ace
         | King
         | Queen
         | Jack
-        static member GetAllRanks() = 
+        static member GetAllRanks() =
             [ yield Ace
               for i in 2 .. 10 do yield Value i
               yield Jack
               yield Queen
               yield King ]
-                                   
+
     type Card =  { Suit: Suit; Rank: Rank }
-              
+
     /// Returns a list representing all the cards in the deck
-    let fullDeck = 
+    let fullDeck =
         [ for suit in [ Hearts; Diamonds; Clubs; Spades] do
-              for rank in Rank.GetAllRanks() do 
+              for rank in Rank.GetAllRanks() do
                   yield { Suit=suit; Rank=rank } ]
 
     /// Converts a 'Card' object to a string
-    let showCard c = 
-        let rankString = 
-            match c.Rank with 
+    let showCard c =
+        let rankString =
+            match c.Rank with
             | Ace -> "Ace"
             | King -> "King"
             | Queen -> "Queen"
             | Jack -> "Jack"
             | Value n -> string n
-        let suitString = 
-            match c.Suit with 
+        let suitString =
+            match c.Suit with
             | Clubs -> "clubs"
             | Diamonds -> "diamonds"
             | Spades -> "spades"
             | Hearts -> "hearts"
         rankString  + " of " + suitString
 
-    let printAllCards() = 
-        for card in fullDeck do 
+    let printAllCards() =
+        for card in fullDeck do
             printfn "%s" (showCard card)
 
     /// Use single-case Unions for domain modeling.
@@ -459,14 +459,14 @@ module UnionTypes =
 //         Option types
 // ---------------------------------------------------------------
 
-module OptionTypes = 
+module OptionTypes =
     /// Option values are any kind of value tagged with either 'Some' or 'None'.
     /// They are used extensively in F# code to represent the cases where many other
     /// languages would use null references.
 
     type Customer = { zipCode : decimal option }
 
-    /// Abstract class that computes the shipping zone for the customer's zip code, 
+    /// Abstract class that computes the shipping zone for the customer's zip code,
     /// given implementations for the 'getState' and 'getShippingZone' abstract methods.
     [<AbstractClass>]
     type ShippingCalculator =
@@ -483,35 +483,35 @@ module OptionTypes =
 //         Pattern matching
 // ---------------------------------------------------------------
 
-module PatternMatching = 
+module PatternMatching =
 
     /// A record for a person's first and last name
-    type Person = {     
+    type Person = {
         First : string
         Last  : string
     }
 
     /// define a discriminated union of 3 different kinds of employees
-    type Employee = 
+    type Employee =
         | Engineer  of Person
         | Manager   of Person * list<Employee>            // manager has list of reports
         | Executive of Person * list<Employee> * Employee // executive also has an assistant
 
     /// count everyone underneath the employee in the management hierarchy, including the employee
-    let rec countReports(emp : Employee) = 
+    let rec countReports(emp : Employee) =
         1 + match emp with
-            | Engineer(id) -> 
+            | Engineer(id) ->
                 0
-            | Manager(id, reports) -> 
-                reports |> List.sumBy countReports 
+            | Manager(id, reports) ->
+                reports |> List.sumBy countReports
             | Executive(id, reports, assistant) ->
                 (reports |> List.sumBy countReports) + countReports assistant
 
 
     /// find all managers/executives named "Dave" who do not have any reports
     let rec findDaveWithOpenPosition(emps : Employee list) =
-        emps 
-        |> List.filter(function 
+        emps
+        |> List.filter(function
                        | Manager({First = "Dave"}, []) -> true       // [] matches the empty list
                        | Executive({First = "Dave"}, [], _) -> true
                        | _ -> false)                                 // '_' is a wildcard pattern that matches anything
@@ -522,7 +522,7 @@ module PatternMatching =
     let private parseHelper f = f >> function // Use the shorthand and partial application
         | (true, item) -> Some item
         | (false, _) -> None
-    
+
     let parseDateTimeOffset = parseHelper DateTimeOffset.TryParse
 
     let result = parseDateTimeOffset "1970-01-01"
@@ -553,7 +553,7 @@ module PatternMatching =
 //         Units of measure
 // ---------------------------------------------------------------
 
-module UnitsOfMeasure = 
+module UnitsOfMeasure =
 
     // Code can be annotated with units of measure when using F# arithmetic over numeric types
 
@@ -576,15 +576,15 @@ module UnitsOfMeasure =
 //         Parallel array programming
 // ---------------------------------------------------------------
 
-module ParallelArrayProgramming = 
-              
+module ParallelArrayProgramming =
+
     let oneBigArray = [| 0 .. 100000 |]
-    
-    // Do some CPU intensive computation 
-    let rec computeSomeFunction x = 
-        if x <= 2 then 1 
+
+    // Do some CPU intensive computation
+    let rec computeSomeFunction x =
+        if x <= 2 then 1
         else computeSomeFunction (x - 1) + computeSomeFunction (x - 2)
-       
+
     // Do a parallel map over a large input array
     let computeResults() = oneBigArray |> Array.Parallel.map (fun x -> computeSomeFunction (x % 20))
 
@@ -596,12 +596,12 @@ module ParallelArrayProgramming =
 //         Using events
 // ---------------------------------------------------------------
 
-module Events = 
+module Events =
 
     open System
 
     // create instance of Event object that consists of subscription point (event.Publish) and event trigger (event.Trigger)
-    let simpleEvent = new Event<int>() 
+    let simpleEvent = new Event<int>()
 
     // add handler
     simpleEvent.Publish.Add(
@@ -611,7 +611,7 @@ module Events =
     simpleEvent.Trigger(5)
 
     // create instance of Event that follows standard .NET convention: (sender, EventArgs)
-    let eventForDelegateType = new Event<EventHandler, EventArgs>()    
+    let eventForDelegateType = new Event<EventHandler, EventArgs>()
 
     // add handler
     eventForDelegateType.Publish.AddHandler(

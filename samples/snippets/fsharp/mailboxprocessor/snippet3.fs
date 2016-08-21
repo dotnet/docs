@@ -84,22 +84,22 @@ let marketMaker = new MailboxProcessor<Message>(fun inbox ->
 marketMaker.Start()
 
 // Query price.
-let reply1 = marketMaker.PostAndReply(fun replyChannel -> 
+let reply1 = marketMaker.PostAndReply(fun replyChannel ->
     printfn "Posting message for AAA"
     Query("AAA", replyChannel))
-    
+
 // Test Buy Order.
-let reply2 = marketMaker.PostAndReply(fun replyChannel -> 
+let reply2 = marketMaker.PostAndReply(fun replyChannel ->
     printfn "Posting message for BBB"
     Order(Buy("BBB", 100), replyChannel))
 
 // Test Sell Order.
-let reply3 = marketMaker.PostAndReply(fun replyChannel -> 
+let reply3 = marketMaker.PostAndReply(fun replyChannel ->
     printfn "Posting message for CCC"
     Order(Sell("CCC", 100), replyChannel))
 
 // Test incorrect code.
-let reply4 = marketMaker.PostAndReply(fun replyChannel -> 
+let reply4 = marketMaker.PostAndReply(fun replyChannel ->
     printfn "Posting message for WrongCode"
     Order(Buy("WrongCode", 100), replyChannel))
 

@@ -10,7 +10,7 @@ let agent = MailboxProcessor<Message>.Start(fun inbox ->
                 let! (message, replyChannel) = inbox.Receive();
                 if (message = "Stop") then
                     replyChannel.Reply("Stopping.")
-                else   
+                else
                     replyChannel.Reply(String.Format(formatString, n, message))
                 do! loop (n + 1)
         }
@@ -31,7 +31,7 @@ let rec loop() =
     else
         ()
 loop()
-           
+
 
 printfn "Press Enter to continue."
 Console.ReadLine() |> ignore

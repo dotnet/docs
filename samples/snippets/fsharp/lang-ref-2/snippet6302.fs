@@ -1,4 +1,3 @@
-
 open System.IO
 
 let writetofile2 filename obj =

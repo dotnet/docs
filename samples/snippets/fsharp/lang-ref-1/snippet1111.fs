@@ -1,3 +1,2 @@
-
-     [<Obsolete>]
-     let function1 x y = x + y
+[<Obsolete>]
+let function1 x y = x + y

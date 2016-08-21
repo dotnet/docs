@@ -1,4 +1,3 @@
-
 type Test1() =
   static member add(a : int, b : int) =
      a + b

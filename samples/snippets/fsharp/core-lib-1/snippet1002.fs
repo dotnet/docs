@@ -1,7 +1,7 @@
 open System
 open System.IO
 
-let writeToFile filename numBytes = 
+let writeToFile filename numBytes =
     async {
         use file = File.Create(filename)
         printfn "Writing to file %s." filename
@@ -23,7 +23,7 @@ let result1 = writeToFile filename numBytes
              |> Async.RunSynchronously
 match result1 with
 | Choice1Of2 _ -> printfn "Successfully wrote to file."; ()
-| Choice2Of2 exn -> 
+| Choice2Of2 exn ->
       printfn "Exception occurred writing to file %s: %s" filename exn.Message
 
 // Start these next two operations asynchronously, forcing an exception due

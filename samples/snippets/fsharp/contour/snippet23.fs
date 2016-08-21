@@ -1,15 +1,14 @@
-
 // Lists.
 
 // Storing integers and strings.
 let integerList = [ 1; 2; 3; 4; 5; 6; 7 ]
 let stringList = [ "one"; "two"; "three" ]
 
-// You cannot mix types in a list. The following declaration causes a 
+// You cannot mix types in a list. The following declaration causes a
 // type-mismatch compiler error.
 //let failedList = [ 5; "six" ]
 
-// In F#, functions can be stored in a list, as long as the functions 
+// In F#, functions can be stored in a list, as long as the functions
 // have the same signature.
 
 // Function doubleIt has the same signature as squareIt, declared previously.
@@ -20,9 +19,9 @@ let doubleIt = fun n -> 2 * n
 let funList = [ squareIt; doubleIt ]
 
 // Function squareIt cannot be stored in a list together with a function
-// that has a different signature, such as the following body mass 
+// that has a different signature, such as the following body mass
 // index (BMI) calculator.
-let BMICalculator = fun ht wt -> 
+let BMICalculator = fun ht wt ->
                     (float wt / float (squareIt ht)) * 703.0
 
 // The following expression causes a type-mismatch compiler error.

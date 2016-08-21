@@ -1,4 +1,3 @@
-
 // In Point3D, three immutable values are defined.
 // x, y, and z will be initialized to 0.0.
 type Point3D =

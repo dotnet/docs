@@ -6,9 +6,9 @@ let formatString = "Message number {0} was received. Message contents: {1}"
 
 let agent = MailboxProcessor<Message>.Start(fun inbox ->
     let rec loop n =
-        async {            
+        async {
                 let! (message, replyChannel) = inbox.Receive();
-                
+
                 if (message = "Stop") then
                     replyChannel.Reply("Stop")
                 else

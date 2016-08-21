@@ -1,10 +1,9 @@
-
 let makeGame2 target guess =
     if guess = target then
        System.Console.WriteLine("You win!")
-    else 
+    else
        System.Console.WriteLine("Wrong. Try again.")
-        
+
 let playGame2 = makeGame2 7
 playGame2 2
 playGame2 9

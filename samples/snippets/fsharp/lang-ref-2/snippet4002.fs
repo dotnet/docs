@@ -1,4 +1,3 @@
-
 // Determine the highest common factor between
 // two positive integers, a helper for reducing
 // fractions.
@@ -44,7 +43,7 @@ type Fraction =
       let dTemp = f2.d
       let hcfTemp = hcf nTemp dTemp
       { n = nTemp / hcfTemp; d = dTemp / hcfTemp }
-   
+
    // Subtract one fraction from another.
    static member (-) (f1 : Fraction, f2 : Fraction) =
       if (f2.n * f1.d > f1.n * f2.d)

@@ -1,4 +1,3 @@
-
 type MyStruct =
     struct
         val mutable myInt : int

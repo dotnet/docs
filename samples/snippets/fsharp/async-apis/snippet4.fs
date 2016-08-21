@@ -1,4 +1,3 @@
-
 open System.Windows.Forms
 
 let bufferData = Array.zeroCreate<byte> 100000000
@@ -20,7 +19,7 @@ let asyncParent =
             let! result2 = childAsync2
             printfn "Parent job end."
         }
-      
+
 
 let form = new Form(Text = "Test Form")
 let button = new Button(Text = "Start")

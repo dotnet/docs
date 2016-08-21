@@ -1,4 +1,3 @@
-
 module SocketClient =
 
     open System.Net
@@ -23,13 +22,13 @@ module SocketClient =
                                    this.BeginConnect(ipAddress, port, callback, state)),
                                this.EndConnect)
         member this.MySendAsync(data, flags : SocketFlags) =
-            Async.FromBeginEnd(toIList data, flags, 
+            Async.FromBeginEnd(toIList data, flags,
                                (fun (data : IList<System.ArraySegment<byte>>,
                                      flags : SocketFlags, callback, state) ->
                                          this.BeginSend(data, flags, callback, state)),
                                this.EndSend)
         member this.MyReceiveAsync(data, flags : SocketFlags) =
-            Async.FromBeginEnd(toIList data, flags, 
+            Async.FromBeginEnd(toIList data, flags,
                                (fun (data : IList<System.ArraySegment<byte>>,
                                      flags : SocketFlags, callback, state) ->
                                          this.BeginReceive(data, flags, callback, state)),
@@ -40,7 +39,7 @@ module SocketClient =
     let socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp)
     let ipHostEntry = Dns.Resolve("hostname.contoso.com")
     printfn "Server address: %s" (ipHostEntry.AddressList.[0].ToString())
-    
+
     let connectSendReceive (socket : Socket) =
         async {
             do! socket.MyConnectAsync(ipHostEntry.AddressList.[0], 11000)
@@ -69,6 +68,6 @@ module SocketClient =
         }
 
     let taskClient = Async.StartAsTask(connectSendReceive(socket))
-    
+
     taskClient.Wait()
     taskClient.Result |> Array.iter (fun elem -> printf "%d " elem)

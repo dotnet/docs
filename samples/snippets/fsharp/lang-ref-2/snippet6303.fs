@@ -1,4 +1,3 @@
-
 let printToFile (file1 : System.IO.StreamWriter) =
     file1.WriteLine("Test output");
 

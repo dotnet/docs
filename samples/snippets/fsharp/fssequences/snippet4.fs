@@ -1,4 +1,3 @@
-
 let (height, width) = (10, 10)
 let coordinates = seq {
      for row in 0 .. width - 1 do

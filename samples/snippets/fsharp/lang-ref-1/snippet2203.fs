@@ -1,4 +1,3 @@
-
 let xRef : int ref = ref 10
 
 printfn "%d" (xRef.Value)

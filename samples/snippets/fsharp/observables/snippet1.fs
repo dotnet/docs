@@ -1,4 +1,3 @@
-
 open System
 open System.Diagnostics
 
@@ -7,7 +6,7 @@ type ObservableSource<'T>() =
 
     let protect function1 =
         let mutable ok = false
-        try 
+        try
             function1()
             ok <- true
         finally
@@ -19,21 +18,21 @@ type ObservableSource<'T>() =
     // method, so thread-safe snapshots of subscribers to iterate over are needed.
     let mutable subscriptions = Map.empty : Map<int, IObserver<'T>>
 
-    let next(obs) = 
-        subscriptions |> Seq.iter (fun (KeyValue(_, value)) -> 
+    let next(obs) =
+        subscriptions |> Seq.iter (fun (KeyValue(_, value)) ->
             protect (fun () -> value.OnNext(obs)))
 
-    let completed() = 
-        subscriptions |> Seq.iter (fun (KeyValue(_, value)) -> 
+    let completed() =
+        subscriptions |> Seq.iter (fun (KeyValue(_, value)) ->
             protect (fun () -> value.OnCompleted()))
 
-    let error(err) = 
-        subscriptions |> Seq.iter (fun (KeyValue(_, value)) -> 
+    let error(err) =
+        subscriptions |> Seq.iter (fun (KeyValue(_, value)) ->
             protect (fun () -> value.OnError(err)))
 
     let thisLock = new obj()
 
-    let obs = 
+    let obs =
         { new IObservable<'T> with
             member this.Subscribe(obs) =
                 let key1 =
@@ -42,9 +41,9 @@ type ObservableSource<'T>() =
                         key <- key + 1
                         subscriptions <- subscriptions.Add(key1, obs)
                         key1)
-                { new IDisposable with 
-                    member this.Dispose() = 
-                        lock thisLock (fun () -> 
+                { new IDisposable with
+                    member this.Dispose() =
+                        lock thisLock (fun () ->
                             subscriptions <- subscriptions.Remove(key1)) } }
 
     let mutable finished = false
@@ -65,7 +64,7 @@ type ObservableSource<'T>() =
         finished <- true
         error err
 
-    // The IObservable object returned is thread-safe; you can subscribe 
+    // The IObservable object returned is thread-safe; you can subscribe
     // and unsubscribe (Dispose) concurrently.
     member this.AsObservable = obs
 
@@ -73,7 +72,7 @@ type ObservableSource<'T>() =
 let source = new ObservableSource<int>()
 
 // Get an IObservable from the source.
-let obs = source.AsObservable 
+let obs = source.AsObservable
 
 // Add a simple subscriber.
 let unsubA = obs |> Observable.subscribe (fun x -> printfn "A: %d" x)
@@ -99,7 +98,7 @@ source.Next(4)
 
 // Have subscriber A unsubscribe.
 unsubA.Dispose()
-    
+
 // Send more messages from the source.
 // No output
 source.Next(5)

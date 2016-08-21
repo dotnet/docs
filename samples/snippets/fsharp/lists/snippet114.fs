@@ -5,7 +5,7 @@ let list2 = [ 1; 2; 4; ]
 let compareLists = List.compareWith (fun elem1 elem2 ->
     if elem1 > elem2 then 1
     elif elem1 < elem2 then -1
-    else 0) 
+    else 0)
 
 // Prints List1 is less than List2
 match compareLists list1 list2 with

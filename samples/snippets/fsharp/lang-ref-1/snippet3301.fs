@@ -1,4 +1,3 @@
-
 type NumberStrings() =
    let mutable ordinals = [| "one"; "two"; "three"; "four"; "five";
                              "six"; "seven"; "eight"; "nine"; "ten" |]
@@ -14,13 +13,13 @@ type NumberStrings() =
    member this.Cardinal
       with get(index) = cardinals.[index]
       and set index value = cardinals.[index] <- value
-             
+
 let nstrs = new NumberStrings()
 nstrs.[0] <- "ONE"
 for i in 0 .. 9 do
   printf "%s " (nstrs.[i])
 printfn ""
-  
+
 nstrs.Cardinal(5) <- "6th"
 
 for i in 0 .. 9 do

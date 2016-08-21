@@ -1,3 +1,2 @@
-
- open Microsoft.FSharp.Core
- let height:float<cm> = LanguagePrimitives.FloatWithMeasure x
+open Microsoft.FSharp.Core
+let height:float<cm> = LanguagePrimitives.FloatWithMeasure x

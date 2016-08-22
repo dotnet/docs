@@ -71,7 +71,7 @@ Garbage collection occurs when one of the following conditions is true:
 
 * The memory that is used by allocated objects on the managed heap surpasses an acceptable threshold. This threshold is continuously adjusted as the process runs.
 
-* The [GC.Collect](https://docs.microsoft.com/dotnet/core/api/System.GC#System_GC_Collect) method is called. In almost all cases, you do not have to call this method, because the garbage collector runs continuously. This method is primarily used for unique situations and testing. 
+* The [GC.Collect](@System.GC#System_GC_Collect) method is called. In almost all cases, you do not have to call this method, because the garbage collector runs continuously. This method is primarily used for unique situations and testing. 
 
 ## The managed heap
 
@@ -79,8 +79,7 @@ After the garbage collector is initialized by the CLR, it allocates a segment of
 
 There is a managed heap for each managed process. All threads in the process allocate memory for objects on the same heap.
 
-> **Important**
->
+> [!IMPORTANT]
 > The size of segments allocated by the garbage collector is implementation-specific and is subject to change at any time, including in periodic updates. Your app should never make assumptions about or depend on a particular segment size, nor should it attempt to configure the amount of memory available for segment allocations. 
  
 The fewer objects allocated on the heap, the less work the garbage collector has to do. When you allocate objects, do not use rounded-up values that exceed your needs, such as allocating an array of 32 bytes when you need only 15 bytes. 
@@ -138,7 +137,7 @@ A garbage collection has the following phases:
 
 Because generation 2 collections can occupy multiple segments, objects that are promoted into generation 2 can be moved into an older segment. Both generation 1 and generation 2 survivors can be moved to a different segment, because they are promoted to generation 2. 
 
-Ordinarily, the large object heap is not compacted, because copying large objects imposes a performance penalty. However,  you can use the [GCSettings.LargeObjectHeapCompactionMode](https://docs.microsoft.com/dotnet/core/api/GCSettings#System_Runtime_GCSettings_LargeObjectHeapCompactionMode) property to compact the large object heap on demand. 
+Ordinarily, the large object heap is not compacted, because copying large objects imposes a performance penalty. However,  you can use the [GCSettings.LargeObjectHeapCompactionMode](@GCSettings#System_Runtime_GCSettings_LargeObjectHeapCompactionMode) property to compact the large object heap on demand. 
 
 The garbage collector uses the following information to determine whether objects are live: 
 

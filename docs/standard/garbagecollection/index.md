@@ -27,19 +27,19 @@ Title | Description
  
 ## Reference
 
-[System.GC](https://docs.microsoft.com/dotnet/core/api/System.GC)
+[System.GC](@System.GC)
 
-[System.GCCollectionMode](https://docs.microsoft.com/dotnet/core/api/System.GCCollectionMode)
+[System.GCCollectionMode](@System.GCCollectionMode)
 
-[System.Runtime.GCLatencyMode](https://docs.microsoft.com/dotnet/core/api/System.Runtime.GCLatencyMode)
+[System.Runtime.GCLatencyMode](@System.Runtime.GCLatencyMode)
 
-[System.Runtime.GCSettings](https://docs.microsoft.com/dotnet/core/api/System.Runtime.GCSettings)
+[System.Runtime.GCSettings](@System.Runtime.GCSettings)
 
-[GCSettings.LargeObjectHeapCompactionMode](https://docs.microsoft.com/dotnet/core/api/System.Runtime.GCSettingsGCSettings.LargeObjectHeapCompactionMode)
+[GCSettings.LargeObjectHeapCompactionMode](@System.Runtime.GCSettingsGCSettings.LargeObjectHeapCompactionMode)
 
-[Object.Finalize](https://docs.microsoft.com/dotnet/core/api/System.Object#System_Object_Finalize)
+[Object.Finalize](@System.Object#System_Object_Finalize)
 
-[System.IDisposable](https://docs.microsoft.com/dotnet/core/api/System.IDisposable)
+[System.IDisposable](@System.IDisposable)
 
 ## See Also
 

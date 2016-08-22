@@ -48,7 +48,7 @@ For the majority of the objects that your application creates, you can rely on t
 
 ## See Also
 
-[System.GC](https://docs.microsoft.com/dotnet/core/api/System.GC)
+[System.GC](@System.GC)
 
 [Garbage Collection](garbage-collection.md)
 

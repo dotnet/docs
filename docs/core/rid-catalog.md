@@ -49,22 +49,15 @@ be able to restore packages that specify that they need `osx.10.10-x64` on `osx.
 
 A slightly bigger example RID graph:  
 
-- `win.10.1511-x64`
-  - `win.10.1511`
-  - `win.10-x64`
-    - `win.10`
-    - `win.6.3.9200-x64`
-      - `win.6.3-x64`
-      - `win.6.3`
-      - `win.6.3.9200`
-      - `win.6.2.9200-x64`
-        - `win.6.2.9200`
-        - `win.6.1.7600-x64`
-          - `win.6.1.7600`
-          - `win.6.1-x64`
-            - `win.6.1`
-              - `win`
-                - `any`
+- `win10-arm`
+  - `win10`
+  - `win81-arm`
+    - `win81`
+    - `win8-arm`
+      - `win8`
+        - `win7`
+          - `win`
+            - `any`
 
 All RIDs eventually map back to the root `any` RID.
 

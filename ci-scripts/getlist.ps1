@@ -4,7 +4,7 @@
 ## Last Modified: 8/12/2016
 
 $homePath = (Get-Item -Path ".\" -Verbose).FullName
-$corePath = $homePath + "\samples\core"
+$corePath = $homePath + "\samples\core-projects"
 
 [System.Collections.ArrayList]$globalProjects = Get-ChildItem $corePath -Recurse | where {$_.Name -eq "global.json"}
 [System.Collections.ArrayList]$singleProjects = Get-ChildItem $corePath -Recurse | where {$_.Name -eq "project.json" }

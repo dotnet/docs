@@ -73,20 +73,24 @@ In many object-oriented languages, upcasting is implicit; in F#, the rules are s
 
 The `:>` operator performs a static cast, which means that the success of the cast is determined at compile time. If a cast that uses `:>` compiles successfully, it is a valid cast and has no chance of failure at run time.
 
-You can also use the `upcast` operator to perform such a conversion. The following expression specifies a conversion up the hierarchy.
+You can also use the `upcast` operator to perform such a conversion. The following expression specifies a conversion up the hierarchy:
 
-**upcast** *expression*
+```fsharp
+upcast expression
+```
 
 When you use the upcast operator, the compiler attempts to infer the type you are converting to from the context. If the compiler is unable to determine the target type, the compiler reports an error.
 
 ### Downcasting
 The `:?>` operator performs a dynamic cast, which means that the success of the cast is determined at run time. A cast that uses the `:?>` operator is not checked at compile time; but at run time, an attempt is made to cast to the specified type. If the object is compatible with the target type, the cast succeeds. If the object is not compatible with the target type, the runtime raises an `InvalidCastException`.
 
-You can also use the `downcast` operator to perform a dynamic type conversion. The following expression specifies a conversion down the hierarchy to a type that is inferred from program context.
+You can also use the `downcast` operator to perform a dynamic type conversion. The following expression specifies a conversion down the hierarchy to a type that is inferred from program context:
 
-**downcast** *expression*
+```fsharp
+downcast expression
+```
 
-As for the upcast operator, if the compiler cannot infer a specific target type from the context, it reports an error.
+As for the `upcast` operator, if the compiler cannot infer a specific target type from the context, it reports an error.
 
 The following code illustrates the use of the `:>` and `:?>` operators. The code illustrates that the `:?>` operator is best used when you know that conversion will succeed, because it throws `InvalidCastException` if the conversion fails. If you do not know that a conversion will succeed, a type test that uses a `match` expression is better because it avoids the overhead of generating an exception.
 

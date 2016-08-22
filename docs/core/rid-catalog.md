@@ -4,7 +4,7 @@ description: .NET Core Runtime IDentifier (RID) catalog
 keywords: .NET, .NET Core
 author: blackdwarf
 manager: wpickett
-ms.date: 08/08/2016
+ms.date: 08/22/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies

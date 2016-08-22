@@ -499,6 +499,6 @@ catch (Exception ex)
 }
 ```
 
-## Next steps
+## See Also
 
 To learn more about how exceptions work in .NET, see [What Every Dev needs to Know About Exceptions in the Runtime](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md).

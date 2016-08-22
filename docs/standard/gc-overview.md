@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: db39a0f5-e363-490f-a7e6-adb9a6ff2a8c
 ---
 
-# Garbage Collection
+# Garbage collection
 
 Garbage collection is one of most important features of the .NET managed code platform. The garbage collector (GC) manages allocating and releasing memory for you. You do not need to how to allocate and release memory or manage the lifetime of the objects that use that memory. An allocation is made any time you _new_ an object or a value type is boxed. Allocations are typically very fast. When there isn’t enough memory to allocate an object, the GC must collect and dispose of garbage memory to make memory available for new allocations. This process is called “garbage collection”.
 
@@ -29,4 +29,4 @@ The GC has has an additional heap for large objects called the Large Object Heap
 
 Generation 2 and LOH collections can take noticeable time for programs that have run for a long time or operate over large amounts of data. Large server programs are known to have heaps in the 10s of GBs. The GC employs a variety of techniques to reduce the amount of time that it blocks program execution. The primary approach is to do as much garbage collection work as possible on a background thread in a way that does not interfere with program execution. The GC also exposes a few ways for developers to influence its behavior, which can be quite useful to improve performance.
 
-For more information, see [Automatic memory management and garbage collection](gc.md).
+For more information, see [Automatic memory management and garbage collection](garbagecollection/gc.md).

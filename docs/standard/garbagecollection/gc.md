@@ -48,7 +48,7 @@ For the majority of the objects that your application creates, you can rely on t
 
 ## See Also
 
-[System.GC](@System.GC)
+[System.GC](xref:System.GC)
 
 [Garbage Collection](garbage-collection.md)
 

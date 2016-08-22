@@ -14,7 +14,7 @@ ms.assetid: df780a6e-734e-44b8-9747-9f7783f79e20
 
 # Using objects that implement IDisposable
 
-The common language runtime's garbage collector reclaims the memory used by unmanaged objects, but types that use unmanaged resources implement the [IDisposable](@System.IDisposable) interface to allow this unmanaged memory to be reclaimed. When you finish using an object that implements [IDisposable](@System.IDisposable), you should call the object's [IDisposable.Dispose](@System.IDisposable#System_IDisposable_Dispose) implementation. You can do this in one of two ways:
+The common language runtime's garbage collector reclaims the memory used by unmanaged objects, but types that use unmanaged resources implement the [IDisposable](xref:System.IDisposable) interface to allow this unmanaged memory to be reclaimed. When you finish using an object that implements [IDisposable](xref:System.IDisposable), you should call the object's [IDisposable.Dispose](xref:System.IDisposable#System_IDisposable_Dispose) implementation. You can do this in one of two ways:
 
 * With the C# `using` statement or the Visual Basic `Using` statement.
 
@@ -24,7 +24,7 @@ The common language runtime's garbage collector reclaims the memory used by unma
 
 The `using` statement  in C# and the `Using` statement in Visual Basic simplify the code that you must write to create and clean up an object. The `using` statement obtains one or more resources, executes the statements that you specify, and automatically disposes of the object. However, the `using` statement is useful only for objects that are used within the scope of the method in which they are constructed. 
 
-The following example uses the `using` statement to create and release a [System.IO.StreamReader](@System.IO.StreamReader) object.
+The following example uses the `using` statement to create and release a [System.IO.StreamReader](xref:System.IO.StreamReader) object.
 
 ```cs
 using System;
@@ -70,7 +70,7 @@ Module Example
 End Module
 ```
 
-Note that although the [StreamReader](@System.IO.StreamReader) class implements the [IDisposable](@System.IDisposable) interface, which indicates that it uses an unmanaged resource, the example doesn't explicitly call the [StreamReader.Dispose](@System.IO.StreamReader#System_IO_StreamReader_Dispose_System_Boolean_) method. When the C# or Visual Basic compiler encounters the `using` statement, it emits intermediate language (IL) that is equivalent to the following code that explicitly contains a `try/finally` block. 
+Note that although the [StreamReader](xref:System.IO.StreamReader) class implements the [IDisposable](xref:System.IDisposable) interface, which indicates that it uses an unmanaged resource, the example doesn't explicitly call the [StreamReader.Dispose](xref:System.IO.StreamReader#System_IO_StreamReader_Dispose_System_Boolean_) method. When the C# or Visual Basic compiler encounters the `using` statement, it emits intermediate language (IL) that is equivalent to the following code that explicitly contains a `try/finally` block. 
 
 ```cs
 using System;
@@ -127,7 +127,7 @@ End With
 End Module
 ```
 
-The C# `using` statement also allows you to acquire multiple resources in a single statement, which is internally equivalent to nested using statements. The following example instantiates two [StreamReader](@System.IO.StreamReader) objects to read the contents of two different files. 
+The C# `using` statement also allows you to acquire multiple resources in a single statement, which is internally equivalent to nested using statements. The following example instantiates two [StreamReader](xref:System.IO.StreamReader) objects to read the contents of two different files. 
 
 ```cs
 using System;
@@ -162,9 +162,9 @@ Instead of wrapping a `try/finally` block in a `using` statement, you may choose
 
 * To include a `catch` block to handle any exceptions thrown in the ``try block. Otherwise, any exceptions thrown by the `using` statement are unhandled, as are any exceptions thrown within the `using` block if a `try/catch` block isn't present. 
 
-* To instantiate an object that implements [IDisposable](@System.IDisposable) whose scope is not local to the block within which it is declared. 
+* To instantiate an object that implements [IDisposable](xref:System.IDisposable) whose scope is not local to the block within which it is declared. 
 
-The following example is similar to the previous example, except that it uses a `try/catch/finally` block to instantiate, use, and dispose of a [StreamReader](@System.IO.StreamReader) object, and to handle any exceptions thrown by the [StreamReader](@System.IO.StreamReader) constructor and its [ReadToEnd](@System.IO.StreamReader#System_IO_StreamReader_ReadToEnd) method. Note that the code in the `finally` block checks that the object that implements [IDisposable](@System.IDisposable) isn't `null` before it calls the [Dispose](@System.IDisposable#System_IDisposable_Dispose) method. Failure to do this can result in a [NullReferenceException](@System.NullReferenceException) exception at run time. 
+The following example is similar to the previous example, except that it uses a `try/catch/finally` block to instantiate, use, and dispose of a [StreamReader](xref:System.IO.StreamReader) object, and to handle any exceptions thrown by the [StreamReader](xref:System.IO.StreamReader) constructor and its [ReadToEnd](xref:System.IO.StreamReader#System_IO_StreamReader_ReadToEnd) method. Note that the code in the `finally` block checks that the object that implements [IDisposable](xref:System.IDisposable) isn't `null` before it calls the [Dispose](xref:System.IDisposable#System_IDisposable_Dispose) method. Failure to do this can result in a [NullReferenceException](xref:System.NullReferenceException) exception at run time. 
 
 ```cs
 using System;
@@ -225,7 +225,7 @@ Module Example
 End Module
 ```
 
-You can follow this basic pattern if you choose to implement or must implement a `try/finally` block, because your programming language doesn't support a `using` statement but does allow direct calls to the [Dispose](@System.IDisposable#System_IDisposable_Dispose) method. 
+You can follow this basic pattern if you choose to implement or must implement a `try/finally` block, because your programming language doesn't support a `using` statement but does allow direct calls to the [Dispose](xref:System.IDisposable#System_IDisposable_Dispose) method. 
 
 ## See Also
 

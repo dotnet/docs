@@ -1,6 +1,6 @@
 ---
-title: Garbage collection
-description: Garbage collection
+title: Garbage collection in .NET
+description: Garbage collection in .NET
 keywords: .NET, .NET Core
 author: shoag
 manager: wpickett
@@ -27,19 +27,19 @@ Title | Description
  
 ## Reference
 
-[System.GC](@System.GC)
+[System.GC](xref:System.GC)
 
-[System.GCCollectionMode](@System.GCCollectionMode)
+[System.GCCollectionMode](xref:System.GCCollectionMode)
 
-[System.Runtime.GCLatencyMode](@System.Runtime.GCLatencyMode)
+[System.Runtime.GCLatencyMode](xref:System.Runtime.GCLatencyMode)
 
-[System.Runtime.GCSettings](@System.Runtime.GCSettings)
+[System.Runtime.GCSettings](xref:System.Runtime.GCSettings)
 
-[GCSettings.LargeObjectHeapCompactionMode](@System.Runtime.GCSettingsGCSettings.LargeObjectHeapCompactionMode)
+[GCSettings.LargeObjectHeapCompactionMode](xref:System.Runtime.GCSettingsGCSettings.LargeObjectHeapCompactionMode)
 
-[Object.Finalize](@System.Object#System_Object_Finalize)
+[Object.Finalize](xref:System.Object#System_Object_Finalize)
 
-[System.IDisposable](@System.IDisposable)
+[System.IDisposable](xref:System.IDisposable)
 
 ## See Also
 

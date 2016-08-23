@@ -118,5 +118,5 @@ There are several kinds of ***variables*** in C#, including fields, array elemen
     - A `null` reference or a reference to an instance of a compatible that delegate type
 
 >[!div class="step-by-step"]
-[Pre](program-structure.md)
+[Previous](program-structure.md)
 [Next](expressions.md)

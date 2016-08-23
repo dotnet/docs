@@ -293,5 +293,5 @@ The garbage collector is allowed wide latitude in deciding when to collect objec
 The `using` statement provides a better approach to object destruction.
 
 >[!div class="step-by-step"]
-[Pre](statements.md)
+[Previous](statements.md)
 [Next](structs.md)

@@ -29,4 +29,4 @@ This example attaches a `HelpAttribute` to the `Widget` class. It adds another `
 When a particular attribute is requested through reflection, the constructor for the attribute class is invoked with the information provided in the program source, and the resulting attribute instance is returned. If additional information was provided through properties, those properties are set to the given values before the attribute instance is returned.
 
 >[!div class="step-by-step"]
-[Pre](attributes.md)
+[Pre](delegates.md)

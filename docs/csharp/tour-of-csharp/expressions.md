@@ -94,5 +94,5 @@ The following summarizes C#’s operators, listing the operator categories in or
 	- `(T x) => y`: Anonymous function (lambda expression)
 
 >[!div class="step-by-step"]
-[Pre](types-and-variables.md)
+[Previous](types-and-variables.md)
 [Next](statements.md)

@@ -37,5 +37,5 @@ The default value of any `enum` type is the integral value zero converted to the
 [!code-csharp[EnumZero](../../../samples/snippets/csharp/tour/enums/Program.cs#L58-L58)]
 
 >[!div class="step-by-step"]
-[Pre](interfaces.md)
+[Previous](interfaces.md)
 [Next](delegates.md)

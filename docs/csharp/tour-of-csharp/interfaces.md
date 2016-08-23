@@ -41,5 +41,5 @@ Explicit interface members can only be accessed via the interface type. For exam
 [!code-csharp[InterfacesFive](../../../samples/snippets/csharp/tour/interfaces/Program.cs#L71-L74)]
 
 >[!div class="step-by-step"]
-[Pre](arrays.md)
+[Previous](arrays.md)
 [Next](enums.md)

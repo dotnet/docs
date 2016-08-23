@@ -6,8 +6,10 @@
 ### [🔧 Getting started with Visual Studio](csharp/index.md)
 ### [🔧 Getting started with Visual Studio Code and OmniSharp](csharp/index.md)
 ### [🔧 Getting started with cross-platform tools](csharp/index.md)
+### [🔧 Getting started with C# Interactive](csharp/index.md)
 ## [Tutorials](csharp/tutorials/index.md)
 ### [🔧 Using Visual Studio to create, debug, and deploy an application](csharp/index.md)
+### [🔧 Using C# Interactive to explore and experiment](csharp/index.md)
 ### [🔧 Creating portable libraries](csharp/index.md)
 ### [🔧 Asynchronous UI programming](csharp/index.md)
 ### [🔧 Asynchronous server programming](csharp/index.md)
@@ -29,10 +31,9 @@
 ### [Delegates](csharp/tour-of-csharp/delegates.md)
 ### [Attributes](csharp/tour-of-csharp/attributes.md)
 ### [🔧 What's new in C# 7](csharp/index.md)
-### [What's new in C# 6](csharp/csharp-6.md)
+### [🔧 What's new in C# 6](csharp/csharp-6.md)
 ## [C# Concepts](csharp/concepts.md)
 ### [🔧 C# Type system](csharp/type-system.md)
-### [🔧 Using C# Interactive](csharp/index.md)
 ### [🔧 Namespaces and Assemblies](csharp/index.md)
 ### [🔧 Basic Types](csharp/index.md)
 ### [🔧 Classes](csharp/index.md)
@@ -67,9 +68,9 @@
 ### [🔧 Reflection & code generation](csharp/reflection.md)
 ### [Documenting your code](csharp/codedoc.md) 
 ## [🔧 C# Interactive](csharp/index.md)
-### [🔧 Using C# Interaactive in Visual Studio](csharp/index.md)
-### [🔧 Using C# Interaactive from Powershell](csharp/index.md)
-### [🔧 Using C# Interaactive from MacOS Terminal](csharp/index.md)
+### [🔧 Using C# Interactive in Visual Studio](csharp/index.md)
+### [🔧 Using C# Interactive from Powershell](csharp/index.md)
+### [🔧 Using C# Interactive from MacOS Terminal](csharp/index.md)
 ## [🔧 Syntax Reference](csharp/syntax.md)
 <!--
     The C# Reference section can be ported from here: 
@@ -80,16 +81,12 @@
     Or, should this instead point to an online version of the C# Language spec? 
 -->
 
-
 <!-- Note to self: update languages/csharp/index.md to match this file
     once this is approved.  -->
 <!-- Note to self 2: update all references to index.md so that it falls to
     a placeholder document, and create a new issue.  -->
-<!-- Note to self 3: remove interop.md, type-system.md, and reflection.md
-    Then, close issues #487, 492, 493..  -->
-    
-
-<!-- marker for the end of edits -->
+<!-- Note to self 3: remove interop.md, and reflection.md
+    Then, close issues #487, 493..  -->
 
 <!-- F# Content -->
 # [F# Guide](fsharp/index.md)

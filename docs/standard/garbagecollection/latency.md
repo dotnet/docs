@@ -58,4 +58,4 @@ When you use [LowLatency](xref:System.Runtime.GCLatencyMode#System_Runtime_GCLat
 
 [Induced Collections](induced.md)
 
-[Garbage Collection](garbage-collection.md)
+[Garbage collection in .NET](index.md)

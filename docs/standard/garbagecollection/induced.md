@@ -41,4 +41,4 @@ You can call the [GC.Collect(Int32, GCCollectionMode, Boolean)](xref:System.
 
 [Latency modes](latency.md)
 
-[Garbage collection](garbage-collection.md)
+[Garbage collection in .NET](index.md)

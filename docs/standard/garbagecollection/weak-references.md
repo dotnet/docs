@@ -52,4 +52,4 @@ Avoid using weak references as an automatic solution to memory management proble
 
 ## See Also
 
-[Garbage collection](garbage-collection.md)
+[Garbage collection in .NET](index.md)

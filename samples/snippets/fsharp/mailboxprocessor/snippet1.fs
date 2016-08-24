@@ -24,7 +24,7 @@ Async.Start(async { do! mailbox.PostAndReply(fun _ ->
     printfn "Reply received via PostAndReply."
     Message.CreateMessage("DEF")) })
 
-Async.Start(async { 
+Async.Start(async {
     let! resultOption =  mailbox.PostAndTryAsyncReply(fun _ ->
                    printfn "Reply received via PostAndTryAsyncReply."
                    Message.CreateMessage("XYZ"))

@@ -1,4 +1,3 @@
-
 type Vector(x: float, y : float) =
    member this.x = x
    member this.y = y

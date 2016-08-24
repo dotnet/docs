@@ -1,4 +1,3 @@
-
 // This example shows the use of the as keyword to assign a name to a
 // .NET exception.
 let divide2 x y =
@@ -15,7 +14,7 @@ let divide3 x y flag =
   with
      | ex when flag -> printfn "TRUE: %s" (ex.ToString()); 0
      | ex when not flag -> printfn "FALSE: %s" (ex.ToString()); 1
-     
+
 let result2 = divide3 100 0 true
 
 // This version shows the use of F# exceptions.
@@ -29,6 +28,6 @@ let function1 x y =
    with
       | Error1(str) -> printfn "Error1 %s" str
       | Error2(str, i) -> printfn "Error2 %s %d" str i
- 
+
 function1 10 10
 function1 9 2

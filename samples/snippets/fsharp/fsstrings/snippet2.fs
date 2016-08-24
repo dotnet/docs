@@ -1,4 +1,3 @@
-
-    let strings = [ "tomatoes"; "bananas"; "apples" ]
-    let fullString = String.concat ", " strings
-    printfn "%s" fullString
+let strings = [ "tomatoes"; "bananas"; "apples" ]
+let fullString = String.concat ", " strings
+printfn "%s" fullString

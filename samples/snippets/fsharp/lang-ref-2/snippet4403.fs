@@ -1,15 +1,14 @@
-
 type Base1() =
     abstract member F : unit -> unit
     default u.F() =
      printfn "F Base1"
-  
+
 type Derived1() =
     inherit Base1()
     override u.F() =
       printfn "F Derived1"
-      
-      
+
+
 let d1 : Derived1 = Derived1()
 
 // Upcast to Base1.

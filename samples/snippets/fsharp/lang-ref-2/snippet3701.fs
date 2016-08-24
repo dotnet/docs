@@ -1,4 +1,3 @@
-
 module MyModule1 =
 
     // Define a type.

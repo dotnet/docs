@@ -1,4 +1,3 @@
-
 open System
 
 let object1 = { new Object() with

@@ -1,4 +1,3 @@
-
 // This example uses a record pattern.
 
 type MyRecord = { Name: string; ID: int }

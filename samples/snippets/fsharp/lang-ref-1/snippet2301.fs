@@ -1,2 +1,1 @@
-
 type SizeType = uint32

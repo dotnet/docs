@@ -1,14 +1,13 @@
-
-// Function compose takes two arguments. Each argument is a function 
+// Function compose takes two arguments. Each argument is a function
 // that takes one argument of the same type. The following declaration
 // uses lambda expresson syntax.
-let compose = 
+let compose =
     fun op1 op2 ->
         fun n ->
             op1 (op2 n)
 
 // To clarify what you are returning, use a nested let expression:
-let compose2 = 
+let compose2 =
     fun op1 op2 ->
         // Use a let expression to build the function that will be returned.
         let funToReturn = fun n ->

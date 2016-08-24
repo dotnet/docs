@@ -1,4 +1,3 @@
-
 namespace Widgets
 
 module WidgetModule1 =

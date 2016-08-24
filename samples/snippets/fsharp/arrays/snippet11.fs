@@ -1,4 +1,3 @@
-
 open System.Text
 
 let firstArray : StringBuilder array = Array.init 3 (fun index -> new StringBuilder(""))

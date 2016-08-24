@@ -1,4 +1,3 @@
-
 let turnChoices = ("right", "left")
 System.Console.WriteLine(turnChoices)
 // Output: (right, left)

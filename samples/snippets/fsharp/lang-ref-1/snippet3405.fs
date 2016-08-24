@@ -1,4 +1,3 @@
-
 type SomeType2 =
    member this.SomeMethod(a : int, b : int) =
      a + b

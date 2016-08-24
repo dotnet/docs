@@ -6,7 +6,7 @@ let formatString = "Message number {0} was received. Message contents: {1}"
 
 let agent = MailboxProcessor<Message>.Start(fun inbox ->
     let rec loop n =
-        async {            
+        async {
                 let! (message, replyChannel) = inbox.Receive();
                 // Delay so that the responses come in a different order.
                 do! Async.Sleep( 5000 - 1000 * n);
@@ -17,7 +17,7 @@ let agent = MailboxProcessor<Message>.Start(fun inbox ->
 
 printfn "Mailbox Processor Test"
 printfn "Type some text and press Enter to submit a message."
-    
+
 let isCompleted = false
 while (not isCompleted) do
     printf "> "
@@ -27,7 +27,7 @@ while (not isCompleted) do
     // Set up a continuation function (the first argument below) that prints the reply.
     // The second argument is the exception continuation (not used).
     // The third argument is the cancellation continuation (not used).
-    Async.StartWithContinuations(messageAsync, 
+    Async.StartWithContinuations(messageAsync,
          (fun reply -> printfn "%s" reply),
          (fun _ -> ()),
          (fun _ -> ()))

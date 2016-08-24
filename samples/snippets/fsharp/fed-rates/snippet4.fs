@@ -1,4 +1,3 @@
-
 open System.Net
 open System.IO
 
@@ -19,10 +18,10 @@ let loadRates maturity =
     let stream = resp.GetResponseStream()
     let reader = new StreamReader(stream)
     let csv = reader.ReadToEnd()
-        
 
 
-    let interest = 
+
+    let interest =
         csv.Split([|'\n'|])
         |> Seq.skip 8
         |> Seq.map (fun line -> line.Trim())

@@ -1,4 +1,3 @@
-
 type Ellipse(a0 : float, b0 : float, theta0 : float) =
     let mutable axis1 = a0
     let mutable axis2 = b0

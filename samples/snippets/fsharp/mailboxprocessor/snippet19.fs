@@ -6,7 +6,7 @@ let formatString = "Message number {0} was received. Message contents: {1}"
 
 let agent = MailboxProcessor<Message>.Start(fun inbox ->
     let rec loop n =
-        async {          
+        async {
             let! (message, replyChannel) = inbox.Receive();
             // The delay gets longer with each message, and eventually triggers a timeout.
             do! Async.Sleep(200 * n );
@@ -30,8 +30,8 @@ while (not isCompleted) do
     // Set up a continuation function (the first argument below) that prints the reply.
     // The second argument is the exception continuation.
     // The third argument is the cancellation continuation (not used).
-    Async.StartWithContinuations(messageAsync, 
-         (fun reply -> 
+    Async.StartWithContinuations(messageAsync,
+         (fun reply ->
              match reply with
              | None -> printfn "Reply timeout exceeded."
              | Some reply -> if (reply = "Stop") then

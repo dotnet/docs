@@ -1,4 +1,3 @@
-
 let playGame = makeGame 7
 // Send in some guesses.
 playGame 2
@@ -10,7 +9,7 @@ playGame 7
 // Wrong. Try again.
 // You win!
 
-// The following game specifies a character instead of an integer for target. 
+// The following game specifies a character instead of an integer for target.
 let alphaGame = makeGame 'q'
 alphaGame 'c'
 alphaGame 'r'

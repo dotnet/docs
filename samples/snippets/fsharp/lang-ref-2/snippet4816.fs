@@ -1,4 +1,3 @@
-
 open System.Windows.Forms
 
 let RegisterControl(control:Control) =

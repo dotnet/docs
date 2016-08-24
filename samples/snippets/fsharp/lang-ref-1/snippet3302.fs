@@ -1,4 +1,3 @@
-
 open System.Collections.Generic
 
 type SparseMatrix() =

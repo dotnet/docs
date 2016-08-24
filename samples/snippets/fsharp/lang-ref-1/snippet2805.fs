@@ -1,4 +1,3 @@
-
 type Interface1 =
     abstract member Method1 : int -> int
 

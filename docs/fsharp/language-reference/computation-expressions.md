@@ -66,26 +66,26 @@ In the above code, the calls to `Run` and `Delay` are omitted if they are not de
 
 |Expression|Translation|
 |----------|-----------|
-|`{| let binding in cexpr |}`|`let binding in {| cexpr |}`|
-|`{| let! pattern = expr in cexpr |}`|`builder.Bind(expr, (fun pattern -> {| cexpr |}))`|
-|`{| do! expr in cexpr |}`|`builder.Bind(expr1, (fun () -> {| cexpr |}))`|
-|`{| yield expr |}`|`builder.Yield(expr)`|
-|`{| yield! expr |}`|`builder.YieldFrom(expr)`|
-|`{| return expr |}`|`builder.Return(expr)`|
-|`{| return! expr |}`|`builder.ReturnFrom(expr)`|
-|`{| use pattern = expr in cexpr |}`|`builder.Using(expr, (fun pattern -> {| cexpr |}))`|
-|`{| use! value = expr in cexpr |}`|`builder.Bind(expr, (fun value -> builder.Using(value, (fun value -> {| cexpr |}))))`|
-|`{| if expr then cexpr0 |}`|`if expr then {| cexpr0 |} else binder.Zero()`|
-|`{| if expr then cexpr0 else cexpr1 |}`|`if expr then {| cexpr0 |} else {| cexpr1 |}`|
-|`{| match expr with | pattern_i -> cexpr_i |}`|`match expr with | pattern_i -> {| cexpr_i |}`|
-|`{| for pattern in expr do cexpr |}`|`builder.For(enumeration, (fun pattern -> {| cexpr }|))`|
-|`{| for identifier = expr1 to expr2 do cexpr |}`|`builder.For(enumeration, (fun identifier -> {| cexpr }|))`|
-|`{| while expr do cexpr |}`|`builder.While(fun () -> expr), builder.Delay({|cexpr |})`|
-|`{| try cexpr with | pattern_i -> expr_i |}`|`builder.TryWith(builder.Delay({| cexpr |}), (fun value -> match value with | pattern_i -> expr_i | exn -> reraise exn)))`|
-|`{| try cexpr finally expr |}`|`builder.TryFinally(builder.Delay( {| cexpr |}), (fun () -> expr))`|
-|`{| cexpr1; cexpr2 |}`|`builder.Combine({|cexpr1 |}, {| cexpr2 |})`|
-|`{| other-expr; cexpr |}`|`expr; {| cexpr |}`|
-|`{| other-expr |}`|`expr; builder.Zero()`|
+|<code>{&#124; let binding in cexpr &#124;}</code>|<code>let binding in {&#124; cexpr &#124;}</code>|
+|<code>{&#124; let! pattern = expr in cexpr &#124;}</code>|<code>builder.Bind(expr, (fun pattern -> {&#124; cexpr &#124;}))</code>|
+|<code>{&#124; do! expr in cexpr &#124;}</code>|<code>builder.Bind(expr1, (fun () -> {&#124; cexpr &#124;}))</code>|
+|<code>{&#124; yield expr &#124;}</code>|`builder.Yield(expr)`|
+|<code>{&#124; yield! expr &#124;}</code>|`builder.YieldFrom(expr)`|
+|<code>{&#124; return expr &#124;}<code>|`builder.Return(expr)`|
+|<code>{&#124; return! expr &#124;}</code>|`builder.ReturnFrom(expr)`|
+|<code>{&#124; use pattern = expr in cexpr &#124;}</code>|<code>builder.Using(expr, (fun pattern -> {&#124; cexpr &#124;}))</code>|
+|<code>{&#124; use! value = expr in cexpr &#124;}</code>|<code>builder.Bind(expr, (fun value -> builder.Using(value, (fun value -> {&#124; cexpr &#124;}))))</code>|
+|<code>{&#124; if expr then cexpr0 &#124;}</code>|<code>if expr then {&#124; cexpr0 &#124;} else binder.Zero()</code>|
+|<code>{&#124; if expr then cexpr0 else cexpr1 &#124;}</code>|<code>if expr then {&#124; cexpr0 &#124;} else {&#124; cexpr1 &#124;}</code>|
+|<code>{&#124; match expr with &#124; pattern_i -> cexpr_i &#124;}</code>|<code>match expr with &#124; pattern_i -> {&#124; cexpr_i &#124;}</code>|
+|<code>{&#124; for pattern in expr do cexpr &#124;}</code>|<code>builder.For(enumeration, (fun pattern -> {&#124; cexpr &#124;}))</code>|
+|<code>{&#124; for identifier = expr1 to expr2 do cexpr &#124;}<code>|<code>builder.For(enumeration, (fun identifier -> {&#124; cexpr &#124;}))</code>|
+|<code>{&#124; while expr do cexpr &#124;}</code>|<code>builder.While(fun () -> expr), builder.Delay({&#124;cexpr &#124;})</code>|
+|<code>{&#124; try cexpr with &#124; pattern_i -> expr_i &#124;}</code>|<code>builder.TryWith(builder.Delay({&#124; cexpr &#124;}), (fun value -> match value with &#124; pattern_i -> expr_i &#124; exn -> reraise exn)))</code>|
+|<code>{&#124; try cexpr finally expr &#124;}</code>|<code>builder.TryFinally(builder.Delay( {&#124; cexpr &#124;}), (fun () -> expr))</code>|
+|<code>{&#124; cexpr1; cexpr2 &#124;}</code>|<code>builder.Combine({&#124;cexpr1 &#124;}, {&#124; cexpr2 &#124;})</code>|
+|<code>{&#124; other-expr; cexpr &#124;}</code>|<code>expr; {&#124; cexpr &#124;}</code>|
+|<code>{&#124; other-expr &#124;}</code>|`expr; builder.Zero()`|
 In the previous table, `other-expr` describes an expression that is not otherwise listed in the table. A builder class does not need to implement all of the methods and support all of the translations listed in the previous table. Those constructs that are not implemented are not available in computation expressions of that type. For example, if you do not want to support the `use` keyword in your computation expressions, you can omit the definition of `Use` in your builder class.
 
 The following code example shows a computation expression that encapsulates a computation as a series of steps that can be evaluated one step at a time. A discriminated union type, `OkOrException`, encodes the error state of the expression as evaluated so far. This code demonstrates several typical patterns that you can use in your computation expressions, such as boilerplate implementations of some of the builder methods.
@@ -97,80 +97,82 @@ type Eventually<'T> =
     | NotYetDone of (unit -> Eventually<'T>)
 
 module Eventually =
-// The bind for the computations. Append 'func' to the
-// computation.
-let rec bind func expr =
-    match expr with
-    | Done value -> NotYetDone (fun () -> func value)
-    | NotYetDone work -> NotYetDone (fun () -> bind func (work()))
+    // The bind for the computations. Append 'func' to the
+    // computation.
+    let rec bind func expr =
+        match expr with
+        | Done value -> NotYetDone (fun () -> func value)
+        | NotYetDone work -> NotYetDone (fun () -> bind func (work()))
 
-// Return the final value wrapped in the Eventually type.
-let result value = Done value
+    // Return the final value wrapped in the Eventually type.
+    let result value = Done value
 
-type OkOrException<'T> =
-    | Ok of 'T
-    | Exception of System.Exception
+    type OkOrException<'T> =
+        | Ok of 'T
+        | Exception of System.Exception
 
-// The catch for the computations. Stitch try/with throughout
-// the computation, and return the overall result as an OkOrException.
-let rec catch expr =
-    match expr with
-    | Done value -> result (Ok value)
-    | NotYetDone work ->
-        NotYetDone (fun () ->
-            let res = try Ok(work()) with | exn -> Exception exn
+    // The catch for the computations. Stitch try/with throughout
+    // the computation, and return the overall result as an OkOrException.
+    let rec catch expr =
+        match expr with
+        | Done value -> result (Ok value)
+        | NotYetDone work ->
+            NotYetDone (fun () ->
+                let res = try Ok(work()) with | exn -> Exception exn
+                match res with
+                | Ok cont -> catch cont // note, a tailcall
+                | Exception exn -> result (Exception exn))
+
+    // The delay operator.
+    let delay func = NotYetDone (fun () -> func())
+
+    // The stepping action for the computations.
+    let step expr =
+        match expr with
+        | Done _ -> expr
+        | NotYetDone func -> func ()
+
+    // The rest of the operations are boilerplate.
+    // The tryFinally operator.
+    // This is boilerplate in terms of "result", "catch", and "bind".
+    let tryFinally expr compensation =
+        catch (expr)
+        |> bind (fun res -> 
+            compensation();
             match res with
-            | Ok cont -> catch cont // note, a tailcall
-            | Exception exn -> result (Exception exn))
+            | Ok value -> result value
+            | Exception exn -> raise exn)
 
-// The delay operator.
-let delay func = NotYetDone (fun () -> func())
+    // The tryWith operator.
+    // This is boilerplate in terms of "result", "catch", and "bind".
+    let tryWith exn handler =
+        catch exn
+        |> bind (function Ok value -> result value | Exception exn -> handler exn)
 
-// The stepping action for the computations.
-let step expr =
-    match expr with
-    | Done _ -> expr
-    | NotYetDone func -> func ()
+    // The whileLoop operator.
+    // This is boilerplate in terms of "result" and "bind".
+    let rec whileLoop pred body =
+        if pred() then body |> bind (fun _ -> whileLoop pred body)
+        else result ()
 
-// The rest of the operations are boilerplate.
-// The tryFinally operator.
-// This is boilerplate in terms of "result", "catch", and "bind".
-let tryFinally expr compensation =
-    catch (expr)
-    |> bind (fun res -> 
-        compensation();
-        match res with
-        | Ok value -> result value
-        | Exception exn -> raise exn)
+    // The sequential composition operator.
+    // This is boilerplate in terms of "result" and "bind".
+    let combine expr1 expr2 =
+        expr1 |> bind (fun () -> expr2)
 
-// The tryWith operator.
-// This is boilerplate in terms of "result", "catch", and "bind".
-let tryWith exn handler =
-    catch exn
-    |> bind (function Ok value -> result value | Exception exn -> handler exn)
+    // The using operator.
+    let using (resource: #System.IDisposable) func =
+        tryFinally (func resource) (fun () -> resource.Dispose())
 
-// The whileLoop operator.
-// This is boilerplate in terms of "result" and "bind".
-let rec whileLoop pred body =
-    if pred() then body |> bind (fun _ -> whileLoop pred body)
-    else result ()
-
-// The sequential composition operator.
-// This is boilerplate in terms of "result" and "bind".
-let combine expr1 expr2 =
-    expr1 |> bind (fun () -> expr2)
-
-// The using operator.
-let using (resource: #System.IDisposable) func =
-    tryFinally (func resource) (fun () -> resource.Dispose())
-
-// The forLoop operator.
-// This is boilerplate in terms of "catch", "result", and "bind".
-let forLoop (collection:seq<_>) func =
-    let ie = collection.GetEnumerator()
-    tryFinally (whileLoop (fun () -> ie.MoveNext())
-        (delay (fun () -> let value = ie.Current in func value)))
-    (fun () -> ie.Dispose())
+    // The forLoop operator.
+    // This is boilerplate in terms of "catch", "result", and "bind".
+    let forLoop (collection:seq<_>) func =
+        let ie = collection.GetEnumerator()
+        tryFinally 
+            (whileLoop 
+                (fun () -> ie.MoveNext()) 
+                (delay (fun () -> let value = ie.Current in func value)))
+            (fun () -> ie.Dispose())
 
 // The builder class.
 type EventuallyBuilder() =
@@ -188,8 +190,8 @@ type EventuallyBuilder() =
 let eventually = new EventuallyBuilder()
 
 let comp = eventually {
-    for x in 1 .. 2 do
-    printfn " x = %d" x
+    for x in 1..2 do
+        printfn " x = %d" x
     return 3 + 4 }
 
 // Try the remaining lines in F# interactive to see how this 

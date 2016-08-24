@@ -1,4 +1,3 @@
-
 let compose4curried =
     fun op1 ->
         fun op2 ->

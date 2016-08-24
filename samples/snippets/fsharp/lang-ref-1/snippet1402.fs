@@ -1,4 +1,3 @@
-
 open System.IO
 let openFile filename =
     try
@@ -6,4 +5,4 @@ let openFile filename =
         Some(file)
     with
         | ex -> eprintf "An exception occurred with message %s" ex.Message
-                None    
+                None

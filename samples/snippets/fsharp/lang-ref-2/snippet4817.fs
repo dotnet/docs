@@ -1,4 +1,3 @@
-
 let ReadFromFile (reader : System.IO.StreamReader) =
     match reader.ReadLine() with
     | null -> printfn "\n"; false

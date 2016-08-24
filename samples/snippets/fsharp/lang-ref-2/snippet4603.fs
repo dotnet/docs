@@ -1,4 +1,3 @@
-
 // This example uses patterns that have when guards.
 let detectValue point target =
     match point with

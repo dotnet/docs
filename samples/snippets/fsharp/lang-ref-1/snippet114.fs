@@ -1,2 +1,1 @@
-
- let result6 = 100 |> function1 |> function2
+let result6 = 100 |> function1 |> function2

@@ -1,4 +1,3 @@
-
 namespace global
 
 type SomeType() =

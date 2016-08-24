@@ -1,5 +1,5 @@
 let list1 = [ 1 .. 100 ]
-let printList alist = 
+let printList alist =
     alist
     |> List.iter (printf "%A ")
     printfn ""

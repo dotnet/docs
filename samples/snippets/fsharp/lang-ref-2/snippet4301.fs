@@ -1,8 +1,7 @@
-
 // This object expression specifies a System.Object but overrides the
 // ToString method.
 let obj1 = { new System.Object() with member x.ToString() = "F#" }
-printfn "%A" obj1 
+printfn "%A" obj1
 
 // This object expression implements the IFormattable interface.
 let Delimiter(delim1 : string, delim2 : string ) = { new System.IFormattable with
@@ -10,7 +9,7 @@ let Delimiter(delim1 : string, delim2 : string ) = { new System.IFormattable wit
                   if format = "D" then delim1 + x.ToString() + delim2
                   else x.ToString()
            }
-           
+
 let obj2 = Delimiter("{","}");
 
 printfn "%A" (System.String.Format("{0:D}", obj2))
@@ -19,7 +18,7 @@ printfn "%A" (System.String.Format("{0:D}", obj2))
 type IFirst =
   abstract F : unit -> unit
   abstract G : unit -> unit
-  
+
 type ISecond =
   inherit IFirst
   abstract H : unit -> unit

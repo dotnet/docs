@@ -21,6 +21,6 @@ agent.Error.Add(fun exn ->
 
 printfn "Mailbox Processor Test"
 printfn "Type some text and press Enter to submit a message."
-  
+
 while true do
     Console.ReadLine() |> agent.Post

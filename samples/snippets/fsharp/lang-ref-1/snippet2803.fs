@@ -1,4 +1,3 @@
-
 type SomeClass2(x: int, y: float) =
    member this.Print() = (this :> IPrintable).Print()
    interface IPrintable with

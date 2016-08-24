@@ -1,4 +1,3 @@
-
 module Widgets.WidgetModule
 
 let widgetFunction x y =

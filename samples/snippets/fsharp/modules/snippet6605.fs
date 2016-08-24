@@ -1,4 +1,3 @@
-
 // Fully qualify the function name.
 let result1 = Arithmetic.add 5 9
 // Open the module.

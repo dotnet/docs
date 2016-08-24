@@ -20,7 +20,7 @@ F# is a cross-platform, open source programming languge for .NET which provides 
 
 If you're new to programming, start with the [Tutorials](tutorials/index.md) section.  The tutorials have a beginner's section which show you how to write and run your own F# programs.
 
-Alternatively, if you prefer to an overview of information, check out the [Tour of F#](tour.md).  It covers an overview of F# and some of its distinguishing features.
+Alternatively, if you prefer to get a thematic overview of F# and some of its distinguishing features, check out the [Tour of F#](tour.md).
 
 ## If You're New to F# #
 

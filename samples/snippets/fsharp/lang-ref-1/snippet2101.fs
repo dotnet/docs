@@ -1,4 +1,3 @@
-
 // Declaration of an enumeration.
 type Color =
    | Red = 0

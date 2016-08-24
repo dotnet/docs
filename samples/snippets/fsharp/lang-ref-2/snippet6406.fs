@@ -1,4 +1,3 @@
-
 namespace Widgets
 
 type MyWidget1 =

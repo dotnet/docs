@@ -1,4 +1,3 @@
-
 open System
 
 type MyType(a:int, b:int) as this =

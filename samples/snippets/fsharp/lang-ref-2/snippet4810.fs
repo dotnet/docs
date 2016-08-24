@@ -1,4 +1,3 @@
-
 // This example uses a list pattern.
 let listLength list =
     match list with

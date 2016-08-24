@@ -1,4 +1,3 @@
-
 module SocketServer =
 
     open System.Net
@@ -21,13 +20,13 @@ module SocketServer =
                                    this.BeginConnect(ipAddress, port, callback, state)),
                                this.EndConnect)
         member this.MySendAsync(data : byte array, flags : SocketFlags) =
-            Async.FromBeginEnd(toIList data, flags, 
+            Async.FromBeginEnd(toIList data, flags,
                                (fun (data : IList<System.ArraySegment<byte>>,
                                      flags : SocketFlags, callback, state) ->
                                          this.BeginSend(data, flags, callback, state)),
                                this.EndSend)
         member this.MyReceiveAsync(data : byte array, flags : SocketFlags) =
-            Async.FromBeginEnd(toIList data, flags, 
+            Async.FromBeginEnd(toIList data, flags,
                                (fun (data : IList<System.ArraySegment<byte>>,
                                      flags : SocketFlags, callback, state) ->
                                          this.BeginReceive(data, flags, callback, state)),
@@ -59,7 +58,7 @@ module SocketServer =
             socket.Listen(10)
             printfn "Accepting..."
             let! socket = socket.MyAcceptAsync()
-            
+
             let buffer1 = Array.zeroCreate<byte> 256
             let flags = new SocketFlags()
             printfn "Receiving..."
@@ -72,6 +71,6 @@ module SocketServer =
             return buffer2
         }
 
-    let taskServer = Async.StartAsTask(acceptReceiveSend(socket))    
+    let taskServer = Async.StartAsTask(acceptReceiveSend(socket))
     taskServer.Wait()
     socket.Close()

@@ -11,7 +11,7 @@ type MyClassWithCLIEvent() =
         event1.Trigger(this, arg)
 
 let classWithEvent = new MyClassWithCLIEvent()
-classWithEvent.Event1.Add(fun (sender, arg) -> 
+classWithEvent.Event1.Add(fun (sender, arg) ->
         printfn "Event1 occurred! Object data: %s" arg)
 
 classWithEvent.TestEvent("Hello World!")

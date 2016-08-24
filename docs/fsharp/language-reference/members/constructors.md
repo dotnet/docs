@@ -82,9 +82,11 @@ The following version of the previous code illustrates the combination of ordina
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-2/snippet3507.fs)]
     
+## Constructors in inherited class
+When inheriting from a base class that has a constructor, you must specify its arguments in the inherit clause. For more information, see [Constructors and inheritance](../inheritance.md#constructors-and-inheritance).
+
 ## Static Constructors or Type Constructors
 In addition to specifying code for creating objects, static `let` and `do` bindings can be authored in class types that execute before the type is first used to perform initialization at the type level. For more information, see [`let` Bindings in Classes](let-bindings-in-classes.md) and [`do` Bindings in Classes](do-bindings-in-classes.md).
-
 
 ## See Also
 [Members](index.md)

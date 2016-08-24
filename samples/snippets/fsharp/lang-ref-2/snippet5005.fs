@@ -1,4 +1,3 @@
-
 let err = 1.e-10
 
 let isNearlyIntegral (x:float) = abs (x - round(x)) < err

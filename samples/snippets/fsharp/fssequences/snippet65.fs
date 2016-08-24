@@ -1,2 +1,1 @@
-
-    let seq1 = Seq.singleton "zero"
+let seq1 = Seq.singleton "zero"

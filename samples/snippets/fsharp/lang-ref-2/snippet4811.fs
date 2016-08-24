@@ -1,4 +1,3 @@
-
 // This example uses array patterns.
 let vectorLength vec =
     match vec with

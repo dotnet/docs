@@ -1,4 +1,3 @@
-
 type Point3D = { x: float; y: float; z: float }
 let evaluatePoint (point: Point3D) =
     match point with

@@ -1,7 +1,6 @@
+let result =
 
- let result =
+    let i, j, k = (1, 2, 3)
 
-     let i, j, k = (1, 2, 3)
-
-     // Body expression: 
-     i + 2*j + 3*k
+    // Body expression:
+    i + 2*j + 3*k

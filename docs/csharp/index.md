@@ -32,7 +32,8 @@ There are seven sections in the C# Guide. You can read them in order, or jump di
 * [Getting Started](getting-started/index.md):
     - This section covers what you need to install for a C# development environment on your preferred platform. The different topics under this section explain how to create your first C# program in different supported environments.
 
-.. tutorials
+* [Tutorials](tutorials/index.md):
+    - This section provides a variety of end to end scenarios, including descriptions and code. You'll learn why certain idioms are preferred, what C# features work best in different situations, and see reference implemetntaions for common tasks. If you learn best by seeing code, start in this section. You can also download all the code and experiment in your own environment.
 
 .. tour
 

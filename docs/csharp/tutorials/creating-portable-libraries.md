@@ -1,26 +1,25 @@
 ---
-title: Getting started with C# and the cross platform tools | C# Guide
-description: Getting Started with C# and the cross platform tools
-keywords: C#, Getting Started, Acquisition,  Cross Platform
+title: Creating Portable Libraries| C# Guide
+description: Learn how to create portable libraries, and specify the platforms and versions your library supports.
+keywords: C#, UWP, Portable Assembly, Cross Platform
 author: BillWagner
 manager: wpickett
-ms.date: 08/23/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: visual-studio-dev-14
 ms.technology: devlang-csharp
 ms.devlang: csharp
-ms.assetid: 48cac496-2dc2-4dc7-b8fd-b9ade0fcdfd2
-
+ms.assetid: 254836c0-3be7-4549-bd9a-40fc0f445c31
 ---
 
-# 🔧 Getting started with C# using the cross platform command line tools
+# 🔧 Creating Portable Libraries
 
 > **Note**
 > 
 > This topic hasn’t been written yet! 
 >
 > We welcome your input to help shape the scope and approach. You can track the status and provide input on this
-> [issue](https://github.com/dotnet/core-docs/issues/946) at GitHub.
+> [issue](https://github.com/dotnet/core-docs/issues/950) at GitHub.
 > 
 > If you would like to review early drafts and outlines of this topic, please leave a note with your contact information in the issue.
 >

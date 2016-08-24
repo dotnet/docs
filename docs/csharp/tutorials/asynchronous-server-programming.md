@@ -1,26 +1,25 @@
 ---
-title: Getting started with C# and the cross platform tools | C# Guide
-description: Getting Started with C# and the cross platform tools
-keywords: C#, Getting Started, Acquisition,  Cross Platform
+title: Asynchronous Server Programming | C# Guide
+description: Learn techniques for offloading server workloads using asynchronous programming techniques
+keywords: C#, async, CPU bound, network bound
 author: BillWagner
 manager: wpickett
-ms.date: 08/23/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: visual-studio-dev-14
 ms.technology: devlang-csharp
 ms.devlang: csharp
-ms.assetid: 48cac496-2dc2-4dc7-b8fd-b9ade0fcdfd2
-
+ms.assetid: 7402b29b-1093-456d-be4c-f60ecb8926bb
 ---
 
-# 🔧 Getting started with C# using the cross platform command line tools
+# 🔧 Asynchronous Server Programming
 
 > **Note**
 > 
 > This topic hasn’t been written yet! 
 >
 > We welcome your input to help shape the scope and approach. You can track the status and provide input on this
-> [issue](https://github.com/dotnet/core-docs/issues/946) at GitHub.
+> [issue](https://github.com/dotnet/core-docs/issues/952) at GitHub.
 > 
 > If you would like to review early drafts and outlines of this topic, please leave a note with your contact information in the issue.
 >

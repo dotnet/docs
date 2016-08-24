@@ -1,26 +1,26 @@
 ---
-title: Getting started with C# and the cross platform tools | C# Guide
-description: Getting Started with C# and the cross platform tools
-keywords: C#, Getting Started, Acquisition,  Cross Platform
+title: Using Visual Studio to create, debug and deploy applications | C# Guide
+description: Understanding the Visual Studio tools that enable creating, debugging and deploying applications.
+keywords: C#, Getting Started, Visual Studio, Tutorial
 author: BillWagner
 manager: wpickett
-ms.date: 08/23/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: visual-studio-dev-14
 ms.technology: devlang-csharp
 ms.devlang: csharp
-ms.assetid: 48cac496-2dc2-4dc7-b8fd-b9ade0fcdfd2
+ms.assetid: 9b5ce7a7-7325-45b6-86c9-c199d0203997
 
 ---
 
-# 🔧 Getting started with C# using the cross platform command line tools
+# 🔧 Using Visual Studio to create, debug, and deploy applications
 
 > **Note**
 > 
 > This topic hasn’t been written yet! 
 >
 > We welcome your input to help shape the scope and approach. You can track the status and provide input on this
-> [issue](https://github.com/dotnet/core-docs/issues/946) at GitHub.
+> [issue](https://github.com/dotnet/core-docs/issues/948) at GitHub.
 > 
 > If you would like to review early drafts and outlines of this topic, please leave a note with your contact information in the issue.
 >

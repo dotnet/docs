@@ -4,7 +4,7 @@ description: Documenting your code
 keywords: .NET, .NET Core
 author: tsolarin
 manager: wpickett
-ms.date: 08/18/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -13,42 +13,6 @@ ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
 ---
 
 # Documenting your code
-
-Documenting C# code is recommended practice as it helps make code easy to understand and maintain.
-Comments are a great way to add documentation to your C# code, they can help explain parts of your code and the great thing is,
-they do not add any overhead to your workflow because they usually are completely ignored by the compiler.
-
-## Single Line Comments
-
-Single line comments are a great way to explain C# code. They can be on a separate line or inline with your code.
-The comment body is prefixed by double forward slashes (`//`).
-
-```csharp
-// This comment describes variable i
-// Multiple lines could be a hassle
-int i = 0;
-int j = 1; // This comment describes variable j
-```
-
-## Multiline Comments
-
-Multiline comments function just like single line comments except that they make it easier to have comments that span multiple lines.
-The comment body starts with (`/*`) and ends with (`*/`).
-
-```csharp
-/*
-This describes variables i and j
-Multiline is less of a hassle
-*/
-int i = 0, j = 1;
-```
-
-Single line and Multiline comments are very useful for explaining code and getting new contributors up to speed with the codebase. They however 
-do not account for situations where the .NET assembly is distributed as a binary to third party developers with no available source code.
-This is where XML documentation comments come in handy.
-
-
-## XML Documentation Comments
 
 XML documentation comments are a special kind of comment, added above the definition of any user defined type or member. 
 They are special because they can be processed by the compiler to generate an XML documentation file at compile time.
@@ -72,68 +36,9 @@ public class SomeClass
 
 ## Walkthrough
 
-In this section I'm going to walk you through documenting a very basic math library to make it easy for new developers to understand/contribute and for third party developers to use.
-We're going to use a combination of single line comments, multiline comments and XML documentation tags.
+In this section you're going to be walked through documenting a very basic math library to make it easy for new developers to understand/contribute and for third party developers to use.
 
 Here's code for the simple math library:
-
-```csharp
-public class Math
-{
-    public static int Add(int a, int b)
-    {
-        if ((a == int.MaxValue && b > 0) || (b == int.MaxValue && a > 0))
-            throw new System.OverflowException();
-
-        return a + b;
-    }
-
-    public static double Add(double a, double b)
-    {
-        if ((a == double.MaxValue && b > 0) || (b == double.MaxValue && a > 0))
-            throw new System.OverflowException();
-
-        return a + b;
-    }
-
-    public static int Subtract(int a, int b)
-    {
-        return a - b;
-    }
-
-    public static double Subtract(double a, double b)
-    {
-        return a - b;
-    }
-
-    public static int Multiply(int a, int b)
-    {
-        return a * b;
-    }
-
-    public static double Multiply(double a, double b)
-    {
-        return a * b;
-    }
-
-    public static int Divide(int a, int b)
-    {
-        return a / b;
-    }
-
-    public static double Divide(double a, double b)
-    {
-        return a / b;
-    }
-}
-```
-
-The sample library above doesn't do much, it supports four major arithmetic operations `add`, `subtract`, `multiply` and `divide` on `int` and `double` datatypes.
-Now let's assume this is one huge library that is going to have a ton of developers, we'll need to add some comments to make it easier to understand.
-In this sample we'll use multiline comments for class definitions and single line comments otherwise, these are not imposed conventions however,
-so feel free to use the kind of comment the situation requires.
-
-Here's the updated library code with comments added:
 
 ```csharp
 /*
@@ -200,15 +105,15 @@ public class Math
 }
 ```
 
-And there you have it! now any new developer can easily get quick insight into what each method and the overall class does.
+The sample library above doesn't do much, it supports four major arithmetic operations `add`, `subtract`, `multiply` and `divide` on `int` and `double` datatypes.
 
-Next we want to be able to create an API reference document from our code for third party developers who use our library but don't have access to the source code.
-As mentioned earlier XML documentation tags can be used to achieve this, I will now introduce you to the standard XML tags the C# compiler supports.
+Now you want to be able to create an API reference document from your code for third party developers who use your library but don't have access to the source code.
+As mentioned earlier XML documentation tags can be used to achieve this, You will now be introduced to the standard XML tags the C# compiler supports.
 
 ### &lt;summary&gt;
 
-First off is the `<summary>` tag and as the name suggests it is used to add brief information about a type or member.
-I'll demonstrate its use by adding it to the `Math` class definition and the first `Add` method, feel free to apply it to the rest of the code.
+First off is the `<summary>` tag and as the name suggests you use it to add brief information about a type or member.
+I'll demonstrate its use by adding it to the `Math` class definition and the first `Add` method, feel free to apply it to the rest of your code.
 
 ```csharp
 /*
@@ -237,12 +142,12 @@ public class Math
 }
 ```
 
-The `<summary>` tag is super important and I strongly advice it be included because its content is the primary source of type or member description in the resulting API reference document. 
+The `<summary>` tag is super important and you are strongly advised to include it because its content is the primary source of type or member description in the resulting API reference document. 
 
 ### &lt;remarks&gt;
 
-The `<remarks>` tag is used to add information about types or members, supplementing the information specified with `<summary>`.
-In this example I'll just add it to the class.
+You use the `<remarks>` tag to add information about types or members, supplementing the information specified with `<summary>`.
+In this example you'll just add it to the class.
 
 ```csharp
 /*
@@ -264,7 +169,7 @@ public class Math
 
 ### &lt;returns&gt;
 
-As the name suggests the `<returns>` tag is used in the comment for a method declaration to describe its return value.
+As the name suggests you use the `<returns>` tag in the comment for a method declaration to describe its return value.
 Like before this will be illustrated on the first `Add` method go ahead an implement it on other methods.
 
 ```csharp
@@ -288,8 +193,8 @@ Like before this will be illustrated on the first `Add` method go ahead an imple
 
 ### &lt;value&gt;
 
-The `<value>` works similarly to the `<returns>` tag except that it is used for properties.
-Let's assume our `Math` library had a static property called `PI` here's how we'll use this tag:
+The `<value>` works similarly to the `<returns>` tag except that you use it for properties.
+Assuming your `Math` library had a static property called `PI` here's how you'll use this tag:
 
 ```csharp
 /*
@@ -312,7 +217,7 @@ public class Math
 
 ### &lt;example&gt;
 
-The `<example>` tag lets you specify an example of how to use a class, method or other member. 
+You use the `<example>` tag to include an example in your XML documentation.
 This involves using the child `<code>` tag.
 
 ```csharp
@@ -347,9 +252,9 @@ The `code` tag preserves line breaks and indentation for longer examples.
 
 ### &lt;para&gt;
 
-Sometimes there is need to format the content of certain tags and that's where the `<para>` tag comes in.
-It is for use inside a tag, such as `<summary>`, `<remarks>`, or `<returns>`, and lets divide text into paragraphs.
-We'll go ahead and format the contents of the `<summary>` tag for our class definition.
+You may find you need to format the content of certain tags and that's where the `<para>` tag comes in.
+You usually use it inside a tag, such as `<summary>`, `<remarks>`, or `<returns>`, and lets you divide text into paragraphs.
+You can go ahead and format the contents of the `<summary>` tag for your class definition.
 
 ```csharp
 /*
@@ -368,7 +273,7 @@ public class Math
 
 ### &lt;c&gt;
 
-Still on the topic of formatting, let me introduce the `<c>` tag which is used for marking part of text as code.
+Still on the topic of formatting, you use the `<c>` tag for marking part of text as code.
 It's like the `<code>` tag but inline and is great when you want to show a quick code example as part of a tag's content.
 Let's update the documentation for the `Math` class.
 
@@ -391,8 +296,8 @@ public class Math
 
 There's no getting rid of exceptions, there will always be exceptional situations your code is not built to handle.
 Good news is there's a way to let your developers know that certain methods can throw certain exceptions and that's by using the `<exception>` tag.
-Looking at our little Math library we can see that both `Add` methods throw an exception if a certain condition is met not so obvious though
-is that both `Divide` methods will throw as well if the parameter `b` is zero. Let's go ahead to add exception documentation these methods.
+Looking at your little Math library you can see that both `Add` methods throw an exception if a certain condition is met, not so obvious though
+is that both `Divide` methods will throw as well if the parameter `b` is zero. Now go ahead to add exception documentation to these methods.
 
 ```csharp
 /*
@@ -537,7 +442,7 @@ This can be any type defined in the project or a referenced assembly.
 
 ## &lt;seealso&gt;
 
-The `<seealso>` tag works similarly to the `<see>` tag, the only difference is that it's content is typically broken into a "See Also" section not that different from
+You use the `<seealso>` tag in the same way you do the `<see>` tag, the only difference is that it's content is typically broken into a "See Also" section not that different from
 the one you sometimes see on the MSDN documentation pages. Here we'll add a `seealso` tag on the integer `Add` method to reference other methods in the class that accept interger parameters:
 
 ```csharp
@@ -586,7 +491,7 @@ This can be any type defined in the project or a referenced assembly.
 
 ### &lt;param&gt;
 
-The `<param>` tag is used for describing the parameters a method takes. Here's an example on the double `Add` method:
+You use the `<param>` tag for describing the parameters a method takes. Here's an example on the double `Add` method:
 The parameter the tag describes is specified in the **required** `name` attribute.
 
 ```csharp
@@ -622,22 +527,27 @@ public class Math
 
 ### &lt;typeparam&gt;
 
-The `<typeparam>` tag functions just like the `<param>` tag but for generic type or method declarations to describe a generic parameter.
-Since our math library doesn't have a generic method I'll just bring in `SomeClass` to demonstrate it.
+You use `<typeparam>` tag just like the `<param>` tag but for generic type or method declarations to describe a generic parameter.
+Go ahead and add a quick generic method to your `Math` class to check if 
 
 ```csharp
+/*
+    The main Math class
+    Contains all methods for performing basic math functions
+*/
 /// <summary>
-/// This class does something.
+/// <para>The main <c>Math</c> class.</para>
+/// <para>Contains all methods for performing basic math functions.</para>
 /// </summary>
-public class SomeClass
+public class Math
 {
     /// <summary>
-    /// Does generic stuff.
+    /// Checks if an IComparable is greater than another.
     /// </summary>
-    /// <typeparam name="T">The generic stuff to do.</typeparam>
-    public void DoGenericStuff<T>()
+    /// <typeparam name="T">A type that inherits from the IComparable interface.</typeparam>
+    public static bool GreaterThan<T>(T a, T b) where T : IComparable
     {
-
+        return a.CompareTo(b) > 0;
     }
 }
 ```
@@ -681,103 +591,8 @@ public class Math
 
 ### &lt;typeparamref&gt;
 
-The `<typeparamref>` tag functions just like the `<paramref>` tag but for generic type or method declarations to describe a generic parameter.
-Since our math library doesn't have a generic method I'll just bring in `SomeClass` to demonstrate it.
-
-```csharp
-/// <summary>
-/// This class does something.
-/// </summary>
-public class SomeClass
-{
-    /// <summary>
-    /// Does generic stuff <typeparamref name="T"/>.
-    /// </summary>
-    /// <typeparam name="T">The generic stuff to do.</typeparam>
-    public void DoGenericStuff<T>()
-    {
-
-    }
-}
-```
-
-### &lt;list&gt;
-
-Although we don't get to use it with our math library the `<list>` tag is a very useful tag because it lets you format documentation information as an ordered list, unordered list or table.
-Here's a quick example with `SomeClass`:
-
-```csharp
-/// <summary>
-/// This class does something.
-/// </summary>
-public class SomeClass
-{
-    /// <summary>
-    /// An example of an unordered list.
-    /// <list type="bullet">
-    /// <item>
-    /// <term>Some term</term>
-    /// <description>Some description</description>
-    /// </item>
-    /// <item>
-    /// <term>Some term</term>
-    /// <description>Some description</description>
-    /// </item>
-    /// </list>
-    /// </summary>
-    public void DoStuff(int a)
-    {
-
-    }
-
-    /// <summary>
-    /// An example of an ordered list.
-    /// <list type="number">
-    /// <item>
-    /// <term>Some term</term>
-    /// <description>Some description</description>
-    /// </item>
-    /// <item>
-    /// <term>Some term</term>
-    /// <description>Some description</description>
-    /// </item>
-    /// </list>
-    /// </summary>
-    public void DoMoreStuff(int a, string b)
-    {
-
-    }
-
-    /// <summary>
-    /// An example of a table.
-    /// <list type="table">
-    /// <listheader>
-    /// <term>Table Heading Col 1</term>
-    /// <term>Table Heading Col 2</term>
-    /// <term>Table Heading Col 3</term>
-    /// </listheader>
-    /// <item>
-    /// <term>Col 1 Row 1</term>
-    /// <term>Col 2 Row 1</term>
-    /// <term>Col 3 Row 1</term>
-    /// </item>
-    /// <item>
-    /// <term>Col 1 Row 2</term>
-    /// <term>Col 2 Row 2</term>
-    /// <term>Col 3 Row 2</term>
-    /// </item>
-    /// </list>
-    /// </summary>
-    public void DoALotMoreStuff(params string[] args)
-    {
-
-    }
-}
-```
-
-### Putting it all together
-
-If you've followed this tutorial and applied the tags to your code where necessary your code should look similar to the following:
+You use `<typeparamref>` tag just like the `<paramref>` tag but for generic type or method declarations to describe a generic parameter.
+You can use the same generic method you previously created.
 
 ```csharp
 /*
@@ -787,6 +602,123 @@ If you've followed this tutorial and applied the tags to your code where necessa
 /// <summary>
 /// <para>The main <c>Math</c> class.</para>
 /// <para>Contains all methods for performing basic math functions.</para>
+/// </summary>
+public class Math
+{
+    /// <summary>
+    /// Checks if an IComparable <typeparamref name="T"/> is greater than another.
+    /// </summary>
+    /// <typeparam name="T">A type that inherits from the IComparable interface.</typeparam>
+    public static bool GreaterThan<T>(T a, T b) where T : IComparable
+    {
+        return a.CompareTo(b) > 0;
+    }
+}
+```
+
+### &lt;list&gt;
+
+You use the `<list>` tag to format documentation information as an ordered list, unordered list or table.
+You'll make an unordered list of every math operation your `Math` library supports, you also get stub samples for ordered list and table.
+
+```csharp
+/*
+    The main Math class
+    Contains all methods for performing basic math functions
+*/
+/// <summary>
+/// <para>The main <c>Math</c> class.</para>
+/// <para>Contains all methods for performing basic math functions.</para>
+/// <list type="bullet">
+/// <item>
+/// <term>Add</term>
+/// <description>Addition Operation</description>
+/// </item>
+/// <item>
+/// <term>Subtract</term>
+/// <description>Subtraction Operation</description>
+/// </item>
+/// <item>
+/// <term>Multiply</term>
+/// <description>Multiplication Operation</description>
+/// </item>
+/// <item>
+/// <term>Divide</term>
+/// <description>Division Operation</description>
+/// </item>
+/// </list>
+/// </summary>
+
+/// <summary>
+/// An example of an ordered list.
+/// <list type="number">
+/// <item>
+/// <term>Some term</term>
+/// <description>Some description</description>
+/// </item>
+/// <item>
+/// <term>Some term</term>
+/// <description>Some description</description>
+/// </item>
+/// </list>
+/// </summary>
+
+/// <summary>
+/// An example of a table.
+/// <list type="table">
+/// <listheader>
+/// <term>Table Heading Col 1</term>
+/// <term>Table Heading Col 2</term>
+/// <term>Table Heading Col 3</term>
+/// </listheader>
+/// <item>
+/// <term>Col 1 Row 1</term>
+/// <term>Col 2 Row 1</term>
+/// <term>Col 3 Row 1</term>
+/// </item>
+/// <item>
+/// <term>Col 1 Row 2</term>
+/// <term>Col 2 Row 2</term>
+/// <term>Col 3 Row 2</term>
+/// </item>
+/// </list>
+/// </summary>
+public class Math
+{
+
+}
+```
+
+### Putting it all together
+
+You've followed this tutorial and applied the tags to your code where necessary, your code should now look similar to the following:
+
+```csharp
+/*
+    The main Math class
+    Contains all methods for performing basic math functions
+*/
+/// <summary>
+/// <para>The main <c>Math</c> class.</para>
+/// <para>Contains all methods for performing basic math functions.</para>
+/// <list type="bullet">
+/// <item>
+/// <term>Add</term>
+/// <description>Addition Operation</description>
+/// </item>
+/// <item>
+/// <term>Subtract</term>
+/// <description>Subtraction Operation</description>
+/// </item>
+/// <item>
+/// <term>Multiply</term>
+/// <description>Multiplication Operation</description>
+/// </item>
+/// <item>
+/// <term>Divide</term>
+/// <description>Division Operation</description>
+/// </item>
+/// </list>
 /// </summary>
 /// <remarks>
 /// This class can add, subtract, multiply and divide.
@@ -1025,15 +957,15 @@ public class Math
 }
 ```
 
-From our sample code above we can generate a well detailed documentation website complete with clickable cross-references but we've introduced another problem, our code has become hard to read.
+From your code you can generate a well detailed documentation website complete with clickable cross-references but then you're faced with another problem, your code has become hard to read.
 This is going to be a nightmare for any developer who wants to contribute to this code, so much information to sift through. 
-Thankfully there's an XML tag that helps us deal with this:
+Thankfully there's an XML tag that can help you deal with this:
 
 ### &lt;include&gt;
 
 The `<include>` tag lets you refer to comments in a separate XML file that describe the types and members in your source code as opposed to placing documentation comments directly in your source code file.
 
-Now we're going to move all our XML tags into a separate XML file named `docs.xml`, feel free to name the file whatever you want.
+Now you're going to move all your XML tags into a separate XML file named `docs.xml`, feel free to name the file whatever you want.
 
 ```xml
 <docs>
@@ -1239,8 +1171,8 @@ Now we're going to move all our XML tags into a separate XML file named `docs.xm
 </docs>
 ```
 
-In our XML I basically put each member's documentation comments directly inside a tag named after what they do, you can choose your own strategy. 
-Now that we have our XML comments in a separate file let's see how our code can be made more readable using the `<include>` tag:
+In the above XML each member's documentation comments appears directly inside a tag named after what they do, you can choose your own strategy. 
+Now that you have your XML comments in a separate file let's see how your code can be made more readable using the `<include>` tag:
 
 ```csharp
 /*
@@ -1342,7 +1274,7 @@ that need to be taken into consideration when using XML documentation tags in yo
 
 * For the sake of consistency all publicly visible types and their members should be documented. If you must do it, do it all.
 * Private members can also be documented using XML comments, however this exposes the inner (potentially confidential) workings of your library.
-* In addition to other tags, types and their members should have at the very list `<summary>` tag.
+* In addition to other tags, types and their members should have at the very least a `<summary>` tag.
 * Documentation text should be written using complete sentences ending with full stops.
 * Partial classes are fully supported and documentation information will be concatenated into one.
 * The compiler verifies the syntax of `<exception>`, `<include>`, `<param>`, `<see>`, `<seealso>` and `<typeparam>` tags.

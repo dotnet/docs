@@ -2,7 +2,7 @@
 title: Getting started with visual Studio Code | C# Guide
 description: Getting Started with Visual Studio Code
 keywords: C#, Getting Started, Acquisition, Install, Visual Studio Code, Cross Platform
-author: BillWagner
+author: dotnet-bot
 manager: wpickett
 ms.date: 08/23/2016
 ms.topic: article

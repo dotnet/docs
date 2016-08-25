@@ -1,26 +1,25 @@
 ---
-title: Getting started with C# and the cross platform tools | C# Guide
-description: Getting Started with C# and the cross platform tools
-keywords: C#, Getting Started, Acquisition,  Cross Platform
-author: dotnet-bot
+title: Interfaces | C# Guide
+description: Learn about creating and using interfaces in C#
+keywords: .NET, .NET Core, C#
+author:  dotnet-bot
 manager: wpickett
-ms.date: 08/23/2016
+ms.date: 06/25/2016
 ms.topic: article
-ms.prod: visual-studio-dev-14
-ms.technology: devlang-csharp
+ms.prod: .net-core
+ms.technology: .net-core-technologies
 ms.devlang: csharp
-ms.assetid: 48cac496-2dc2-4dc7-b8fd-b9ade0fcdfd2
-
+ms.assetid: be9a19c8-642c-48be-b481-2dab7d216fad
 ---
 
-# 🔧 Getting started with C# using the cross platform command line tools
+# 🔧 Interfaces
 
 > **Note**
 > 
 > This topic hasn’t been written yet! 
 >
 > We welcome your input to help shape the scope and approach. You can track the status and provide input on this
-> [issue](https://github.com/dotnet/core-docs/issues/945) at GitHub.
+> [issue](https://github.com/dotnet/core-docs/issues/967) at GitHub.
 > 
 > If you would like to review early drafts and outlines of this topic, please leave a note with your contact information in the issue.
 >

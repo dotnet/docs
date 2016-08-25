@@ -2,7 +2,7 @@
 title: Using C# Interactive to explore and experiment | C# Guide
 description: C# interactive provides a great environment for learning about an API. You can explore interactively and quickly.
 keywords: C#, Getting Started, Cross Platform, REPL, Interactive
-author: BillWagner
+author: dotnet-bot
 manager: wpickett
 ms.date: 08/24/2016
 ms.topic: article

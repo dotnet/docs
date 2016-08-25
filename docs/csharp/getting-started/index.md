@@ -2,7 +2,7 @@
 title: Getting Started | C# Guide
 description: Getting Started with C#
 keywords: C#, Getting Started, Acquisition, Install
-author: BillWagner
+author: dotnet-bot
 manager: wpickett
 ms.date: 08/23/2016
 ms.topic: article

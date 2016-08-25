@@ -2,7 +2,7 @@
 title: Getting started with Visual Studio | C# Guide
 description: Getting Started with Visual Studio
 keywords: C#, Getting Started, Acquisition, Install, Visual Studio
-author: BillWagner
+author: dotnet-bot
 manager: wpickett
 ms.date: 08/23/2016
 ms.topic: article

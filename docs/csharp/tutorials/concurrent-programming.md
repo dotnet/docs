@@ -2,7 +2,7 @@
 title: Concurrent Programming | C# Guide
 description: Learn techniques for running (likely CPU bound) tasks in parallel
 keywords: C#, async, CPU bound, network bound
-author: BillWagner
+author: dotnet-bot
 manager: wpickett
 ms.date: 08/24/2016
 ms.topic: article

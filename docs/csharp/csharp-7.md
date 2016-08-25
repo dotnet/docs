@@ -1,25 +1,25 @@
 ---
-title: Asynchronous Server Programming | C# Guide
-description: Learn techniques for offloading server workloads using asynchronous programming techniques
-keywords: C#, async, CPU bound, network bound
-author: dotnet-bot
+title: What's New in C# 7 | C# Guide
+description: What's New in C# 7    
+keywords: .NET, .NET Core, Latest Features, What's New
+author:  tdykstra
 manager: wpickett
-ms.date: 08/24/2016
+ms.date: 06/20/2016
 ms.topic: article
-ms.prod: visual-studio-dev-14
-ms.technology: devlang-csharp
-ms.devlang: csharp
-ms.assetid: 7402b29b-1093-456d-be4c-f60ecb8926bb
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 ---
 
-# 🔧 Asynchronous Server Programming
+# 🔧 What's new in C# 7
 
 > **Note**
 > 
 > This topic hasn’t been written yet! 
 >
 > We welcome your input to help shape the scope and approach. You can track the status and provide input on this
-> [issue](https://github.com/dotnet/core-docs/issues/952) at GitHub.
+> [issue](https://github.com/dotnet/core-docs/issues/961) at GitHub.
 > 
 > If you would like to review early drafts and outlines of this topic, please leave a note with your contact information in the issue.
 >

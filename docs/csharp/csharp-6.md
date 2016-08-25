@@ -1,5 +1,5 @@
 ---
-title: What's New in C# 6
+title: What's New in C# 6 | C# Guide
 description: What's New in C# 6    
 keywords: .NET, .NET Core
 author:  tdykstra

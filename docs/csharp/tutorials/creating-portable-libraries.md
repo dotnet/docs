@@ -2,7 +2,7 @@
 title: Creating Portable Libraries| C# Guide
 description: Learn how to create portable libraries, and specify the platforms and versions your library supports.
 keywords: C#, UWP, Portable Assembly, Cross Platform
-author: BillWagner
+author: dotnet-bot
 manager: wpickett
 ms.date: 08/24/2016
 ms.topic: article

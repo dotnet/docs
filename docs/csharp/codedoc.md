@@ -36,7 +36,7 @@ public class SomeClass
 
 ## Walkthrough
 
-In this section you're going to be walked through documenting a very basic math library to make it easy for new developers to understand/contribute and for third party developers to use.
+Let's walk through documenting a very basic math library to make it easy for new developers to understand/contribute and for third party developers to use.
 
 Here's code for the simple math library:
 
@@ -105,7 +105,7 @@ public class Math
 }
 ```
 
-The sample library above doesn't do much, it supports four major arithmetic operations `add`, `subtract`, `multiply` and `divide` on `int` and `double` datatypes.
+The sample library supports four major arithmetic operations `add`, `subtract`, `multiply` and `divide` on `int` and `double` datatypes.
 
 Now you want to be able to create an API reference document from your code for third party developers who use your library but don't have access to the source code.
 As mentioned earlier XML documentation tags can be used to achieve this, You will now be introduced to the standard XML tags the C# compiler supports.
@@ -142,7 +142,7 @@ public class Math
 }
 ```
 
-The `<summary>` tag is super important and you are strongly advised to include it because its content is the primary source of type or member description in the resulting API reference document. 
+The `<summary>` tag is super important and you are strongly advised to include it because its content is the primary source of type or member description in intellisense and the resulting API reference document.
 
 ### &lt;remarks&gt;
 
@@ -174,21 +174,21 @@ Like before this will be illustrated on the first `Add` method go ahead an imple
 
 ```csharp
 // Adds two integers and returns the result
-    /// <summary>
-    /// Adds two integers and returns the result.
-    /// </summary>
-    /// <returns>
-    /// The sum of two integers.
-    /// </returns>
-    public static int Add(int a, int b)
-    {
-        // If any parameter is equal to the max value of an integer
-        // and the other is greater than zero
-        if ((a == int.MaxValue && b > 0) || (b == int.MaxValue && a > 0))
-            throw new System.OverflowException();
+/// <summary>
+/// Adds two integers and returns the result.
+/// </summary>
+/// <returns>
+/// The sum of two integers.
+/// </returns>
+public static int Add(int a, int b)
+{
+    // If any parameter is equal to the max value of an integer
+    // and the other is greater than zero
+    if ((a == int.MaxValue && b > 0) || (b == int.MaxValue && a > 0))
+        throw new System.OverflowException();
 
-        return a + b;
-    }
+    return a + b;
+}
 ```
 
 ### &lt;value&gt;
@@ -207,6 +207,7 @@ Assuming your `Math` library had a static property called `PI` here's how you'll
 /// </summary>
 /// <remarks>
 /// This class can add, subtract, multiply and divide.
+/// These operations can be performed on both integers and doubles
 /// </remarks>
 public class Math
 {
@@ -222,30 +223,30 @@ This involves using the child `<code>` tag.
 
 ```csharp
 // Adds two integers and returns the result
-    /// <summary>
-    /// Adds two integers and returns the result.
-    /// </summary>
-    /// <returns>
-    /// The sum of two integers.
-    /// </returns>
-    /// <example>
-    /// <code>
-    /// int c = Math.Add(4, 5);
-    /// if (c > 10)
-    /// {
-    ///     Console.WriteLine(c);
-    /// }
-    /// </code>
-    /// </example>
-    public static int Add(int a, int b)
-    {
-        // If any parameter is equal to the max value of an integer
-        // and the other is greater than zero
-        if ((a == int.MaxValue && b > 0) || (b == int.MaxValue && a > 0))
-            throw new System.OverflowException();
+/// <summary>
+/// Adds two integers and returns the result.
+/// </summary>
+/// <returns>
+/// The sum of two integers.
+/// </returns>
+/// <example>
+/// <code>
+/// int c = Math.Add(4, 5);
+/// if (c > 10)
+/// {
+///     Console.WriteLine(c);
+/// }
+/// </code>
+/// </example>
+public static int Add(int a, int b)
+{
+    // If any parameter is equal to the max value of an integer
+    // and the other is greater than zero
+    if ((a == int.MaxValue && b > 0) || (b == int.MaxValue && a > 0))
+        throw new System.OverflowException();
 
-        return a + b;
-    }
+    return a + b;
+}
 ```
 
 The `code` tag preserves line breaks and indentation for longer examples.
@@ -253,8 +254,8 @@ The `code` tag preserves line breaks and indentation for longer examples.
 ### &lt;para&gt;
 
 You may find you need to format the content of certain tags and that's where the `<para>` tag comes in.
-You usually use it inside a tag, such as `<summary>`, `<remarks>`, or `<returns>`, and lets you divide text into paragraphs.
-You can go ahead and format the contents of the `<summary>` tag for your class definition.
+You usually use it inside a tag, such as `<remarks>`, or `<returns>`, and lets you divide text into paragraphs.
+You can go ahead and format the contents of the `<remarks>` tag for your class definition.
 
 ```csharp
 /*
@@ -262,9 +263,13 @@ You can go ahead and format the contents of the `<summary>` tag for your class d
     Contains all methods for performing basic math functions
 */
 /// <summary>
-/// <para>The main Math class.</para>
-/// <para>Contains all methods for performing basic math functions.</para>
+/// The main Math class.
+/// Contains all methods for performing basic math functions.
 /// </summary>
+/// <remarks>
+/// <para>This class can add, subtract, multiply and divide.</para>
+/// <para>These operations can be performed on both integers and doubles.</para>
+/// </remarks>
 public class Math
 {
 
@@ -283,8 +288,8 @@ Let's update the documentation for the `Math` class.
     Contains all methods for performing basic math functions
 */
 /// <summary>
-/// <para>The main <c>Math</c> class.</para>
-/// <para>Contains all methods for performing basic math functions.</para>
+/// The main <c>Math</c> class.
+/// Contains all methods for performing basic math functions.
 /// </summary>
 public class Math
 {
@@ -305,8 +310,8 @@ is that both `Divide` methods will throw as well if the parameter `b` is zero. N
     Contains all methods for performing basic math functions
 */
 /// <summary>
-/// <para>The main <c>Math</c> class.</para>
-/// <para>Contains all methods for performing basic math functions.</para>
+/// The main <c>Math</c> class.
+/// Contains all methods for performing basic math functions.
 /// </summary>
 public class Math
 {
@@ -325,7 +330,8 @@ public class Math
     /// }
     /// </code>
     /// </example>
-    /// <exception cref="System.OverflowException">Thrown when one parameter is max and the other is greater than 0.</exception>
+    /// <exception cref="System.OverflowException">Thrown when one parameter is max 
+    /// and the other is greater than 0.</exception>
     public static int Add(int a, int b)
     {
         if ((a == int.MaxValue && b > 0) || (b == int.MaxValue && a > 0))
@@ -340,7 +346,8 @@ public class Math
     /// <returns>
     /// The sum of two doubles.
     /// </returns>
-    /// <exception cref="System.OverflowException">Thrown when one parameter is max and the other is greater than zero.</exception>
+    /// <exception cref="System.OverflowException">Thrown when one parameter is max 
+    /// and the other is greater than zero.</exception>
     public static double Add(double a, double b)
     {
         if ((a == double.MaxValue && b > 0) || (b == double.MaxValue && a > 0))
@@ -389,8 +396,8 @@ The `<see>` tag is one that let's you create clickable links to documentation pa
     Contains all methods for performing basic math functions
 */
 /// <summary>
-/// <para>The main <c>Math</c> class.</para>
-/// <para>Contains all methods for performing basic math functions.</para>
+/// The main <c>Math</c> class.
+/// Contains all methods for performing basic math functions.
 /// </summary>
 public class Math
 {
@@ -409,7 +416,8 @@ public class Math
     /// }
     /// </code>
     /// </example>
-    /// <exception cref="System.OverflowException">Thrown when one parameter is max and the other is greater than 0.</exception>
+    /// <exception cref="System.OverflowException">Thrown when one parameter is max 
+    /// and the other is greater than 0.</exception>
     /// See <see cref="Math.Add(double, double)"/> to add doubles.
     public static int Add(int a, int b)
     {
@@ -425,7 +433,8 @@ public class Math
     /// <returns>
     /// The sum of two doubles.
     /// </returns>
-    /// <exception cref="System.OverflowException">Thrown when one parameter is max and the other is greater than zero.</exception>
+    /// <exception cref="System.OverflowException">Thrown when one parameter is max 
+    /// and the other is greater than zero.</exception>
     /// See <see cref="Math.Add(int, int)"/> to add integers.
     public static double Add(double a, double b)
     {
@@ -451,8 +460,8 @@ the one you sometimes see on the MSDN documentation pages. Here we'll add a `see
     Contains all methods for performing basic math functions
 */
 /// <summary>
-/// <para>The main <c>Math</c> class.</para>
-/// <para>Contains all methods for performing basic math functions.</para>
+/// The main <c>Math</c> class.
+/// Contains all methods for performing basic math functions.
 /// </summary>
 public class Math
 {
@@ -471,7 +480,8 @@ public class Math
     /// }
     /// </code>
     /// </example>
-    /// <exception cref="System.OverflowException">Thrown when one parameter is max and the other is greater than 0.</exception>
+    /// <exception cref="System.OverflowException">Thrown when one parameter is max 
+    /// and the other is greater than 0.</exception>
     /// See <see cref="Math.Add(double, double)"/> to add doubles.
     /// <seealso cref="Math.Subtract(int, int)"/>
     /// <seealso cref="Math.Multiply(int, int)"/>
@@ -500,8 +510,8 @@ The parameter the tag describes is specified in the **required** `name` attribut
     Contains all methods for performing basic math functions
 */
 /// <summary>
-/// <para>The main <c>Math</c> class.</para>
-/// <para>Contains all methods for performing basic math functions.</para>
+/// The main <c>Math</c> class.
+/// Contains all methods for performing basic math functions.
 /// </summary>
 public class Math
 {
@@ -511,7 +521,8 @@ public class Math
     /// <returns>
     /// The sum of two doubles.
     /// </returns>
-    /// <exception cref="System.OverflowException">Thrown when one parameter is max and the other is greater than zero.</exception>
+    /// <exception cref="System.OverflowException">Thrown when one parameter is max 
+    /// and the other is greater than zero.</exception>
     /// See <see cref="Math.Add(int, int)"/> to add integers.
     /// <param name="a">A double precision number.</param>
     /// <param name="b">A double precision number.</param>
@@ -528,7 +539,7 @@ public class Math
 ### &lt;typeparam&gt;
 
 You use `<typeparam>` tag just like the `<param>` tag but for generic type or method declarations to describe a generic parameter.
-Go ahead and add a quick generic method to your `Math` class to check if 
+Go ahead and add a quick generic method to your `Math` class to check if one quantity is greater than another.
 
 ```csharp
 /*
@@ -536,8 +547,8 @@ Go ahead and add a quick generic method to your `Math` class to check if
     Contains all methods for performing basic math functions
 */
 /// <summary>
-/// <para>The main <c>Math</c> class.</para>
-/// <para>Contains all methods for performing basic math functions.</para>
+/// The main <c>Math</c> class.
+/// Contains all methods for performing basic math functions.
 /// </summary>
 public class Math
 {
@@ -564,8 +575,8 @@ the parameter name is specified in the **required** `name` attribute.
     Contains all methods for performing basic math functions
 */
 /// <summary>
-/// <para>The main <c>Math</c> class.</para>
-/// <para>Contains all methods for performing basic math functions.</para>
+/// The main <c>Math</c> class.
+/// Contains all methods for performing basic math functions.
 /// </summary>
 public class Math
 {
@@ -575,7 +586,8 @@ public class Math
     /// <returns>
     /// The sum of two doubles.
     /// </returns>
-    /// <exception cref="System.OverflowException">Thrown when one parameter is max and the other is greater than zero.</exception>
+    /// <exception cref="System.OverflowException">Thrown when one parameter is max 
+    /// and the other is greater than zero.</exception>
     /// See <see cref="Math.Add(int, int)"/> to add integers.
     /// <param name="a">A double precision number.</param>
     /// <param name="b">A double precision number.</param>
@@ -600,8 +612,8 @@ You can use the same generic method you previously created.
     Contains all methods for performing basic math functions
 */
 /// <summary>
-/// <para>The main <c>Math</c> class.</para>
-/// <para>Contains all methods for performing basic math functions.</para>
+/// The main <c>Math</c> class.
+/// Contains all methods for performing basic math functions.
 /// </summary>
 public class Math
 {
@@ -619,7 +631,7 @@ public class Math
 ### &lt;list&gt;
 
 You use the `<list>` tag to format documentation information as an ordered list, unordered list or table.
-You'll make an unordered list of every math operation your `Math` library supports, you also get stub samples for ordered list and table.
+You'll make an unordered list of every math operation your `Math` library supports.
 
 ```csharp
 /*
@@ -627,8 +639,8 @@ You'll make an unordered list of every math operation your `Math` library suppor
     Contains all methods for performing basic math functions
 */
 /// <summary>
-/// <para>The main <c>Math</c> class.</para>
-/// <para>Contains all methods for performing basic math functions.</para>
+/// The main <c>Math</c> class.
+/// Contains all methods for performing basic math functions.
 /// <list type="bullet">
 /// <item>
 /// <term>Add</term>
@@ -648,46 +660,13 @@ You'll make an unordered list of every math operation your `Math` library suppor
 /// </item>
 /// </list>
 /// </summary>
-
-/// <summary>
-/// An example of an ordered list.
-/// <list type="number">
-/// <item>
-/// <term>Some term</term>
-/// <description>Some description</description>
-/// </item>
-/// <item>
-/// <term>Some term</term>
-/// <description>Some description</description>
-/// </item>
-/// </list>
-/// </summary>
-
-/// <summary>
-/// An example of a table.
-/// <list type="table">
-/// <listheader>
-/// <term>Table Heading Col 1</term>
-/// <term>Table Heading Col 2</term>
-/// <term>Table Heading Col 3</term>
-/// </listheader>
-/// <item>
-/// <term>Col 1 Row 1</term>
-/// <term>Col 2 Row 1</term>
-/// <term>Col 3 Row 1</term>
-/// </item>
-/// <item>
-/// <term>Col 1 Row 2</term>
-/// <term>Col 2 Row 2</term>
-/// <term>Col 3 Row 2</term>
-/// </item>
-/// </list>
-/// </summary>
 public class Math
 {
 
 }
 ```
+
+You can make an ordered list or table by changing the `type` attribute to `number` or `table` respectively.
 
 ### Putting it all together
 
@@ -699,8 +678,8 @@ You've followed this tutorial and applied the tags to your code where necessary,
     Contains all methods for performing basic math functions
 */
 /// <summary>
-/// <para>The main <c>Math</c> class.</para>
-/// <para>Contains all methods for performing basic math functions.</para>
+/// The main <c>Math</c> class.
+/// Contains all methods for performing basic math functions.
 /// <list type="bullet">
 /// <item>
 /// <term>Add</term>
@@ -721,7 +700,8 @@ You've followed this tutorial and applied the tags to your code where necessary,
 /// </list>
 /// </summary>
 /// <remarks>
-/// This class can add, subtract, multiply and divide.
+/// <para>This class can add, subtract, multiply and divide.</para>
+/// <para>These operations can be performed on both integers and doubles.</para>
 /// </remarks>
 public class Math
 {
@@ -741,7 +721,8 @@ public class Math
     /// }
     /// </code>
     /// </example>
-    /// <exception cref="System.OverflowException">Thrown when one parameter is max and the other is greater than 0.</exception>
+    /// <exception cref="System.OverflowException">Thrown when one parameter is max 
+    /// and the other is greater than 0.</exception>
     /// See <see cref="Math.Add(double, double)"/> to add doubles.
     /// <seealso cref="Math.Subtract(int, int)"/>
     /// <seealso cref="Math.Multiply(int, int)"/>
@@ -774,7 +755,8 @@ public class Math
     /// }
     /// </code>
     /// </example>
-    /// <exception cref="System.OverflowException">Thrown when one parameter is max and the other is greater than 0.</exception>
+    /// <exception cref="System.OverflowException">Thrown when one parameter is max 
+    /// and the other is greater than 0.</exception>
     /// See <see cref="Math.Add(int, int)"/> to add integers.
     /// <seealso cref="Math.Subtract(double, double)"/>
     /// <seealso cref="Math.Multiply(double, double)"/>
@@ -972,11 +954,12 @@ Now you're going to move all your XML tags into a separate XML file named `docs.
     <members name="math">
         <Math>
             <summary>
-            <para>The main <c>Math</c> class.</para>
-            <para>Contains all methods for performing basic math functions.</para>
+            The main <c>Math</c> class.
+            Contains all methods for performing basic math functions.
             </summary>
             <remarks>
-            This class can add, subtract, multiply and divide.
+            <para>This class can add, subtract, multiply and divide.</para>
+            <para>These operations can be performed on both integers and doubles.</para>
             </remarks>
         </Math>
         <AddInt>
@@ -1171,7 +1154,7 @@ Now you're going to move all your XML tags into a separate XML file named `docs.
 </docs>
 ```
 
-In the above XML each member's documentation comments appears directly inside a tag named after what they do, you can choose your own strategy. 
+In the above XML each member's documentation comments appears directly inside a tag named after what they do; you can choose your own strategy. 
 Now that you have your XML comments in a separate file let's see how your code can be made more readable using the `<include>` tag:
 
 ```csharp
@@ -1274,7 +1257,7 @@ that need to be taken into consideration when using XML documentation tags in yo
 
 * For the sake of consistency all publicly visible types and their members should be documented. If you must do it, do it all.
 * Private members can also be documented using XML comments, however this exposes the inner (potentially confidential) workings of your library.
-* In addition to other tags, types and their members should have at the very least a `<summary>` tag.
+* In addition to other tags, types and their members should have at the very least a `<summary>` tag because its content is needed for intellisense.
 * Documentation text should be written using complete sentences ending with full stops.
 * Partial classes are fully supported and documentation information will be concatenated into one.
 * The compiler verifies the syntax of `<exception>`, `<include>`, `<param>`, `<see>`, `<seealso>` and `<typeparam>` tags.

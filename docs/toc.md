@@ -37,6 +37,10 @@
 ## [🔧 Latest features] 
 ### [🔧 What's new in C# 7](csharp/index.md)
 ### [🔧 What's new in C# 6](csharp/csharp-6.md)
+## [🔧 C# Interactive](csharp/interactive.md)
+### [🔧 Using C# Interactive in Visual Studio](csharp/interactive-with-visualstudio.md)
+### [🔧 Using C# Interactive from Powershell](csharp/interactive-with-powershell.md)
+### [🔧 Using C# Interactive from MacOS or Linux Terminal](csharp/interactive-with-bash.md)
 ## [C# Concepts](csharp/concepts.md)
 ### [🔧 C# Type system](csharp/type-system.md)
 ### [🔧 Namespaces and Assemblies](csharp/namespaces-and-assemblies.md)
@@ -72,11 +76,7 @@
 ### [🔧 Native interoperability](csharp/interop.md)
 ### [🔧 Reflection & code generation](csharp/reflection.md)
 ### [Documenting your code](csharp/codedoc.md) 
-## [🔧 C# Interactive](csharp/interactive.md)
-### [🔧 Using C# Interactive in Visual Studio](csharp/interactive-with-visual-studio.md)
-### [🔧 Using C# Interactive from Powershell](csharp/interactive-with-powershell.md)
-### [🔧 Using C# Interactive from MacOS or Linux Terminal](csharp/index.md)
-## [🔧 Using Roslyn APIs](csharp/index.md)
+## [🔧 Using the .NET Compiler Platform](csharp/roslyn/index.md)
 ## [🔧 Syntax Reference](csharp/syntax.md)
 <!--
     The C# Reference section can be ported from here: 
@@ -86,13 +86,6 @@
 
     Or, should this instead point to an online version of the C# Language spec? 
 -->
-
-<!-- Note to self: update languages/csharp/index.md to match this file
-    once this is approved.  -->
-<!-- Note to self 2: update all references to index.md so that it falls to
-    a placeholder document, and create a new issue.  -->
-<!-- Note to self 3: remove interop.md, and reflection.md
-    Then, close issues #487, 493..  -->
 
 <!-- F# Content -->
 # [F# Guide](fsharp/index.md)

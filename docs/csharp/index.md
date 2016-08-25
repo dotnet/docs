@@ -33,4 +33,3 @@ Or, check out the [C# Concepts](concepts.md) to learn the features of the C# lan
 ## Experienced C# developers
 
 If you've used C# before, you should start by reading what's in the latest version of the language. Check out [What's new in C# 6](csharp-6.md) for the new features in the current version. Then, explore the [C# Concepts](concepts.md) where you want more depth.
- 

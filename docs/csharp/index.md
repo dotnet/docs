@@ -36,19 +36,19 @@ There are seven sections in the C# Guide. You can read them in order, or jump di
     - This section provides a variety of end to end scenarios, including descriptions and code. You'll learn why certain idioms are preferred, what C# features work best in different situations, and see reference implemetntaions for common tasks. If you learn best by seeing code, start in this section. You can also download all the code and experiment in your own environment.
 
 * [A Tour of C#](tour-of-csharp/index.md): 
-    - This ssection provides an overview of the language. You'll learn the elements that make up C# programs, the capabilities of the language. You'll see small samples of all the syntax elements of C# and discussions of the major C# language topics. 
+    - This section provides an overview of the language. You'll learn the elements that make up C# programs, the capabilities of the language. You'll see small samples of all the syntax elements of C# and discussions of the major C# language topics. 
 
 * [Latest Features](whats-new.md):
     - Learn about new features in the language. Learn about new tools like C# Interactive (C#'s REPL), and the .NET Compiler Platform SDK. You'll learn how the language is evolving. You'll see how the new tools can make you more productive in exploring the language, and automating tasks. 
 
-* [C# Interactive](interactive.md)
+* [C# Interactive](interactive.md):
     - C# Interactive is a Read-Eval-Print Loop (REPL) that you can use to interactively explore the language. It can also be used to explore different libraries and frameworks by trying different actions using an interactive approach. In this section you'll learn how to install and start C# interactive, and how to explore APIs with it. You'll also learn how to use C# interactive to export tested classes for later use.  
 
 * [C# Concepts](concepts.md):
     - Learn the concepts that are most useful to C# programmers. This section contains several end to end scenarios that show you different techniques for C# development. It focuses on the language, but the nature of the end to end scenarios are that this section also includes several programs that demonstrate different frameworks and libraries that are part of the .NET ecosystem.
 
-* [.NET Compiler Platform SDK](roslyn/index.md)
+* [.NET Compiler Platform SDK](roslyn/index.md):
     - The .NET Compiler Platform SDK enables you to write components that analyze code, and suggest or make improvements to that code. In this section, you'll learn how the APIs are organized, and how you can create code that enables rules and practices for your team. You'll also see samples, end to end scenarios, and links to other libraries with more examples using these APIs.
 
-* [Syntax Reference](syntax.md)
-    - This section contains the reference material that defines the C# language in depth. 
+* [Syntax Reference](syntax.md):
+    - This section contains the reference material on the C# language. This material will help you understand the syntax and semantics of C#. 

@@ -978,7 +978,8 @@ Now you're going to move all your XML tags into a separate XML file named `docs.
             }
             </code>
             </example>
-            <exception cref="System.OverflowException">Thrown when one parameter is max and the other is greater than 0.</exception>
+            <exception cref="System.OverflowException">Thrown when one parameter is max 
+            and the other is greater than 0.</exception>
             See <see cref="Math.Add(double, double)"/> to add doubles.
             <seealso cref="Math.Subtract(int, int)"/>
             <seealso cref="Math.Multiply(int, int)"/>
@@ -1002,7 +1003,8 @@ Now you're going to move all your XML tags into a separate XML file named `docs.
             }
             </code>
             </example>
-            <exception cref="System.OverflowException">Thrown when one parameter is max and the other is greater than 0.</exception>
+            <exception cref="System.OverflowException">Thrown when one parameter is max 
+            and the other is greater than 0.</exception>
             See <see cref="Math.Add(int, int)"/> to add integers.
             <seealso cref="Math.Subtract(double, double)"/>
             <seealso cref="Math.Multiply(double, double)"/>

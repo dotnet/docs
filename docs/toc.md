@@ -55,7 +55,7 @@
 #### [Summary](csharp/expression-trees-summary.md)
 ### [🔧 Native interoperability](csharp/interop.md)
 ### [🔧 Reflection & code generation](csharp/reflection.md)
-### [🔧 Documenting your code](csharp/codedoc.md) 
+### [Documenting your code](csharp/codedoc.md) 
 ## [🔧 Syntax Reference](csharp/syntax.md)
 
 <!-- Note to self: update languages/csharp/index.md to match this file

@@ -20,7 +20,7 @@ Applications must be able to handle errors that occur during execution in a cons
 
 An exception is any error condition or unexpected behavior that is encountered by an executing program. Exceptions can be thrown because of a fault in your code or in code that you call (such as a shared library), unavailable operating system resources, unexpected conditions that the runtime encounters (such as code that cannot be verified), and so on. Your application can recover from some of these conditions, but not from others. Although you can recover from most application exceptions, you cannot recover from most runtime exceptions.
 
-In .NET, an exception is an object that inherits from the [System.Exception](https://docs.microsoft.com/dotnet/core/api/System.Exception) class. An exception is thrown from an area of code where a problem has occurred. The exception is passed up the stack until the application handles it or the program terminates.
+In .NET, an exception is an object that inherits from the [System.Exception](xref:System.Exception) class. An exception is thrown from an area of code where a problem has occurred. The exception is passed up the stack until the application handles it or the program terminates.
 
 ## Exceptions vs. traditional error-handling methods
 
@@ -38,7 +38,7 @@ Exceptions offer advantages over other methods of error notification, such as re
 
 ## Exception class and properties
 
-The [Exception](https://docs.microsoft.com/dotnet/core/api/System.Exception) class is the base class from which exceptions inherit. For example, the [InvalidCastException](https://docs.microsoft.com/dotnet/core/api/System.InvalidCastException) class hierarchy is as follows:
+The @System.Exception class is the base class from which exceptions inherit. For example, the @System.InvalidCastException class hierarchy is as follows:
 
 ```
 Object
@@ -47,20 +47,20 @@ Object
        InvalidCastException
 ```
 
-The **Exception** class has the following properties that help make understanding an exception easier.
+The @System.Exception class has the following properties that help make understanding an exception easier.
 
 | Property Name | Description |
 | ------------- | ----------- |
-| [Data](https://docs.microsoft.com/dotnet/core/api/System.Exception#System_Exception_Data) | An [IDictionary](https://docs.microsoft.com/dotnet/core/api/System.Collections.IDictionary) that holds arbitrary data in key-value pairs. |
-| [HelpLink](https://docs.microsoft.com/dotnet/core/api/System.Exception#System_Exception_HelpLink) | Can hold a URL (or URN) to a help file that provides extensive information about the cause of an exception. |
-| [InnerException](https://docs.microsoft.com/dotnet/core/api/System.Exception#System_Exception_InnerException) | This property can be used to create and preserve a series of exceptions during exception handling. You can use it to create a new exception that contains previously caught exceptions. The original exception can be captured by the second exception in the **InnerException** property, allowing code that handles the second exception to examine the additional information. For example, suppose you have a method that receives an argument that's improperly formatted.  The code tries to read the argument, but an exception is thrown. The method catches the exception and throws a [FormatException](https://docs.microsoft.com/dotnet/core/api/System.FormatException). To improve the caller's ability to determine the reason an exception is thrown, it is sometimes desirable for a method to catch an exception thrown by a helper routine and then throw an exception more indicative of the error that has occurred. A new and more meaningful exception can be created, where the inner exception reference can be set to the original exception. This more meaningful exception can then be thrown to the caller. Note that with this functionality, you can create a series of linked exceptions that ends with the exception that was thrown first. |
-| [Message](https://docs.microsoft.com/dotnet/core/api/System.Exception#System_Exception_Message) | Provides details about the cause of an exception.
-| [Source](https://docs.microsoft.com/dotnet/core/api/System.Exception#System_Exception_Source) | Gets or sets the name of the application or the object that causes the error. |
-| [StackTrace](https://docs.microsoft.com/dotnet/core/api/System.Exception#System_Exception_StackTrace) | Contains a stack trace that can be used to determine where an error occurred. The stack trace includes the source file name and program line number if debugging information is available. |
+| @System.Exception.Data | An @System.Collections.IDictionary that holds arbitrary data in key-value pairs. |
+| @System.Exception.HelpLink | Can hold a URL (or URN) to a help file that provides extensive information about the cause of an exception. |
+| @System.Exception.InnerException | This property can be used to create and preserve a series of exceptions during exception handling. You can use it to create a new exception that contains previously caught exceptions. The original exception can be captured by the second exception in the @System.Exception.InnerException property, allowing code that handles the second exception to examine the additional information. For example, suppose you have a method that receives an argument that's improperly formatted.  The code tries to read the argument, but an exception is thrown. The method catches the exception and throws a @System.FormatException. To improve the caller's ability to determine the reason an exception is thrown, it is sometimes desirable for a method to catch an exception thrown by a helper routine and then throw an exception more indicative of the error that has occurred. A new and more meaningful exception can be created, where the inner exception reference can be set to the original exception. This more meaningful exception can then be thrown to the caller. Note that with this functionality, you can create a series of linked exceptions that ends with the exception that was thrown first. |
+| @System.Exception.Message | Provides details about the cause of an exception.
+| @System.Exception.Source | Gets or sets the name of the application or the object that causes the error. |
+| @System.Exception.StackTrace | Contains a stack trace that can be used to determine where an error occurred. The stack trace includes the source file name and program line number if debugging information is available. |
 
-Most of the classes that inherit from **Exception** do not implement additional members or provide additional functionality; they simply inherit from **Exception**. Therefore, the most important information for an exception can be found in the hierarchy of exception classes, the exception name, and the information contained in the exception.
+Most of the classes that inherit from @System.Exception do not implement additional members or provide additional functionality; they simply inherit from @System.Exception. Therefore, the most important information for an exception can be found in the hierarchy of exception classes, the exception name, and the information contained in the exception.
 
-It is recommended to throw and catch only objects that derive from **Exception**, but you can throw any object that derives from the [Object](https://docs.microsoft.com/dotnet/core/api/System.Object) class as an exception. Note that not all languages support throwing and catching objects that do not derive from **Exception**.
+It is recommended to throw and catch only objects that derive from @System.Exception, but you can throw any object that derives from the @System.Object class as an exception. Note that not all languages support throwing and catching objects that do not derive from @System.Exception.
 
 ## Common Exceptions
 
@@ -68,19 +68,19 @@ The following table lists some common exceptions with examples of what can cause
 
 | Exception type | Base type | Description | Example |
 | -------------- | --------- | ----------- | ------- |
-| [Exception](https://docs.microsoft.com/dotnet/core/api/System.Exception) | [Object](https://docs.microsoft.com/dotnet/core/api/System.Object) | Base class for all exceptions. | None (use a derived class of this exception). |
-| [IndexOutOfRangeException](https://docs.microsoft.com/dotnet/core/api/System.IndexOutOfRangeException) | [Exception](https://docs.microsoft.com/dotnet/core/api/System.Exception) | Thrown by the runtime only when an array is indexed improperly. | Indexing an array outside its valid range: `arr[arr.Length+1]` |
-| [NullReferenceException](https://docs.microsoft.com/dotnet/core/api/System.NullReferenceException) | [Exception](https://docs.microsoft.com/dotnet/core/api/System.Exception) | Thrown by the runtime only when a null object is referenced. | `object o = null; o.ToString();` |
-| [InvalidOperationException](https://docs.microsoft.com/dotnet/core/api/System.InvalidOperationException) | [Exception](https://docs.microsoft.com/dotnet/core/api/System.Exception) | Thrown by methods when in an invalid state. | Calling `Enumerator.GetNext()` after removing an Item from the underlying collection. |
-| [ArgumentException](https://docs.microsoft.com/dotnet/core/api/System.ArgumentException) | [Exception](https://docs.microsoft.com/dotnet/core/api/System.Exception) | Base class for all argument exceptions. | None (use a derived class of this exception). |
-| [ArgumentNullException](https://docs.microsoft.com/dotnet/core/api/System.ArgumentNullException) | [Exception](https://docs.microsoft.com/dotnet/core/api/System.Exception) | Thrown by methods that do not allow an argument to be null. | `String s = null; "Calculate".IndexOf (s);` |
-| [ArgumentOutOfRangeException](https://docs.microsoft.com/dotnet/core/api/System.ArgumentOutOfRangeException) | [Exception](https://docs.microsoft.com/dotnet/core/api/System.Exception) | Thrown by methods that verify that arguments are in a given range. | `String s = "string"; s.Chars[9];` |
+| @System.Exception | @System.Object | Base class for all exceptions. | None (use a derived class of this exception). |
+| @System.IndexOutOfRangeException | @System.Exception | Thrown by the runtime only when an array is indexed improperly. | Indexing an array outside its valid range: `arr[arr.Length+1]` |
+| @System.NullReferenceException | @System.Exception | Thrown by the runtime only when a null object is referenced. | `object o = null; o.ToString();` |
+| @System.InvalidOperationException | @System.Exception | Thrown by methods when in an invalid state. | Calling `Enumerator.GetNext()` after removing an Item from the underlying collection. |
+| @System.ArgumentException | @System.Exception | Base class for all argument exceptions. | None (use a derived class of this exception). |
+| @System.ArgumentNullException | @System.Exception | Thrown by methods that do not allow an argument to be null. | `String s = null; "Calculate".IndexOf (s);` |
+| @System.ArgumentOutOfRangeException | @System.Exception | Thrown by methods that verify that arguments are in a given range. | `String s = "string"; s.Chars[9];` |
 
 ## How to use the try/catch block to catch exceptions
 
-Place the sections of code that might throw exceptions in a **try** block and place code that handles exceptions in a **catch** block. The **catch** block is a series of statements beginning with the keyword **catch**, followed by an exception type and an action to be taken.
+Place the sections of code that might throw exceptions in a `try` block and place code that handles exceptions in a `catch` block. The `catch` block is a series of statements beginning with the keyword `catch`, followed by an exception type and an action to be taken.
 
-The following code example uses a **try**/**catch** block to catch a possible exception. The `Main` method contains a **try** block with a [StreamReader](https://docs.microsoft.com/dotnet/core/api/System.IO.StreamReader) statement that opens a data file called `data.txt` and writes a string from the file. Following the **try** block is a **catch** block that catches any exception that results from the **try** block.
+The following code example uses a `try`/`catch` block to catch a possible exception. The `Main` method contains a `try` block with a @System.IO.StreamReader statement that opens a data file called `data.txt` and writes a string from the file. Following the `try` block is a `catch` block that catches any exception that results from the `try` block.
 
 C#
 ```
@@ -108,15 +108,15 @@ public class ProcessFile
 The common language runtime catches exceptions that are not caught by a catch block. Depending on how the runtime is configured, a debug dialog box appears, or the program stops executing and a dialog box with exception information appears, or an error is printed out to STDERR.
 
 > [!NOTE] 
-> Almost any line of code can cause an exception, particularly exceptions that are thrown by the common language runtime itself, such as [OutOfMemoryException](https://docs.microsoft.com/dotnet/core/api/System.OutOfMemoryException). Most applications don't have to deal with these exceptions, but you should be aware of this possibility when writing libraries to be used by others. For suggestions on when to set code in a Try block, see [Best Practices for Exceptions](#best-practices-for-exceptions).
+> Almost any line of code can cause an exception, particularly exceptions that are thrown by the common language runtime itself, such as @System.OutOfMemoryException. Most applications don't have to deal with these exceptions, but you should be aware of this possibility when writing libraries to be used by others. For suggestions on when to set code in a Try block, see [Best Practices for Exceptions](#best-practices-for-exceptions).
  
 ## How to use specific exceptions in a Catch block
 
-The preceding code example illustrates a basic **catch** statement that catches any exception. In general, though, it's good programming practice to catch a specific type of exception rather than use a basic **catch** statement.
+The preceding code example illustrates a basic `catch` statement that catches any exception. In general, though, it's good programming practice to catch a specific type of exception rather than use a basic `catch` statement.
 
 When an exception occurs, it is passed up the stack and each catch block is given the opportunity to handle it. The order of catch statements is important. Put catch blocks targeted to specific exceptions before a general exception catch block or the compiler might issue an error. The proper catch block is determined by matching the type of the exception to the name of the exception specified in the catch block. If there is no specific catch block, the exception is caught by a general catch block, if one exists.
 
-The following code example uses a **try**/**catch** block to catch an [InvalidCastException](https://docs.microsoft.com/dotnet/core/api/System.InvalidCastException). The sample creates a class called `Employee` with a single property, employee level (`Emlevel`). A method, `PromoteEmployee`, takes an object and increments the employee level. An **InvalidCastException** occurs when a [DateTime](https://docs.microsoft.com/dotnet/core/api/System.DateTime) instance is passed to the `PromoteEmployee` method.
+The following code example uses a `try`/`catch` block to catch an @System.InvalidCastException. The sample creates a class called `Employee` with a single property, employee level (`Emlevel`). A method, `PromoteEmployee`, takes an object and increments the employee level. An @System.InvalidCastException occurs when a @System.DateTime instance is passed to the `PromoteEmployee` method.
 
 C#
 ```
@@ -171,9 +171,9 @@ public class Ex13
 
 ## How to use finally blocks
 
-When an exception occurs, execution stops and control is given to the appropriate exception handler. This often means that lines of code you expect to be executed are bypassed. Some resource cleanup, such as closing a file, needs to be done even if an exception is thrown. To do this, you can use a **finally** block. A **finally** block always executes, regardless of whether an exception is thrown.
+When an exception occurs, execution stops and control is given to the appropriate exception handler. This often means that lines of code you expect to be executed are bypassed. Some resource cleanup, such as closing a file, needs to be done even if an exception is thrown. To do this, you can use a `finally` block. A `finally` block always executes, regardless of whether an exception is thrown.
 
-The following code example uses a **try**/**catch** block to catch an [ArgumentOutOfRangeException](https://docs.microsoft.com/dotnet/core/api/System.ArgumentOutOfRangeException). The `Main` method creates two arrays and attempts to copy one to the other. The action generates an **ArgumentOutOfRangeException** and the error is written to the console. The **finally** block executes regardless of the outcome of the copy action.
+The following code example uses a `try`/`catch` block to catch an @System.ArgumentOutOfRangeException. The `Main` method creates two arrays and attempts to copy one to the other. The action generates an @System.ArgumentOutOfRangeException and the error is written to the console. The `finally` block executes regardless of the outcome of the copy action.
 
 C#
 ```
@@ -204,9 +204,9 @@ class ArgumentOutOfRangeExample
 
 ## How to explicitly throw exceptions
 
-You can explicitly throw an exception using the **throw** statement. You can also throw a caught exception again using the **throw** statement. It is good coding practice to add information to an exception that is re-thrown to provide more information when debugging.
+You can explicitly throw an exception using the `throw` statement. You can also throw a caught exception again using the `throw` statement. It is good coding practice to add information to an exception that is re-thrown to provide more information when debugging.
 
-The following code example uses a **try**/**catch** block to catch a possible [FileNotFoundException](https://docs.microsoft.com/dotnet/core/api/System.IO.FileNotFoundException). Following the **try** block is a **catch** block that catches the **FileNotFoundException** and writes a message to the console if the data file is not found. The next statement is the **throw** statement that throws a new **FileNotFoundException** and adds text information to the exception.
+The following code example uses a `try`/`catch` block to catch a possible @System.IO.FileNotFoundException. Following the `try` block is a `catch` block that catches the @System.IO.FileNotFoundException and writes a message to the console if the data file is not found. The next statement is the `throw` statement that throws a new @System.IO.FileNotFoundException and adds text information to the exception.
 
 C#
 ```
@@ -245,9 +245,9 @@ public class ProcessFile
 
 ## How to create user-defined exceptions
 
-.NET provides a hierarchy of exception classes ultimately derived from the base class [Exception](https://docs.microsoft.com/dotnet/core/api/System.Exception). However, if none of the predefined exceptions meets your needs, you can create your own exception classes by deriving from the **Exception** class.
+.NET provides a hierarchy of exception classes ultimately derived from the base class @System.Exception. However, if none of the predefined exceptions meets your needs, you can create your own exception classes by deriving from the @System.Exception class.
 
-When creating your own exceptions, end the class name of the user-defined exception with the word "Exception," and implement the three common constructors, as shown in the following example. The example defines a new exception class named `EmployeeListNotFoundException`. The class is derived from **Exception** and includes three constructors.
+When creating your own exceptions, end the class name of the user-defined exception with the word "Exception," and implement the three common constructors, as shown in the following example. The example defines a new exception class named `EmployeeListNotFoundException`. The class is derived from @System.Exception and includes three constructors.
 
 C#
 ```
@@ -280,15 +280,15 @@ A well-designed app handles exceptions and errors to prevent app crashes. This s
 
 ### Use try/catch/finally blocks
 
-Use **try**/**catch**/**finally** blocks around code that can potentially generate an exception. 
+Use `try`/`catch`/`finally` blocks around code that can potentially generate an exception. 
 
-In **catch** blocks, always order exceptions from the most specific to the least specific.
+In `catch` blocks, always order exceptions from the most specific to the least specific.
 
-Use a **finally** block to clean up resources, whether you can recover or not.
+Use a `finally` block to clean up resources, whether you can recover or not.
 
 ### Handle common conditions without throwing exceptions
 
-For conditions that are likely to occur but might trigger an exception, consider handling them in a way that will avoid the exception. For example, if you try to close a connection that is already closed, you'll get an `InvalidOperationException`. You can avoid that by using an **if** statement to check the connection state before trying to close it.
+For conditions that are likely to occur but might trigger an exception, consider handling them in a way that will avoid the exception. For example, if you try to close a connection that is already closed, you'll get an `InvalidOperationException`. You can avoid that by using an `if` statement to check the connection state before trying to close it.
 
 C#
 ```
@@ -321,7 +321,7 @@ The method to choose depends on how often you expect the event to occur.
 
 ### Design classes so that exceptions can be avoided
 
-A class can provide methods or properties that enable you to avoid making a call that would trigger an exception. For example, a [FileStream](https://docs.microsoft.com/dotnet/core/api/System.IO.FileStream) class provides methods that help determine whether the end of the file has been reached. These can be used to avoid the exception that is thrown if you read past the end of the file. The following example shows how to read to the end of a file without triggering an exception.
+A class can provide methods or properties that enable you to avoid making a call that would trigger an exception. For example, a @System.IO.FileStream class provides methods that help determine whether the end of the file has been reached. These can be used to avoid the exception that is thrown if you read past the end of the file. The following example shows how to read to the end of a file without triggering an exception.
 
 C#
 ```
@@ -363,13 +363,13 @@ Exceptions ensure that failures do not go unnoticed because calling code didn't 
 
 Introduce a new exception class only when a predefined one doesn't apply. For example:
 
-- Throw an [InvalidOperationException](https://docs.microsoft.com/dotnet/core/api/System.InvalidOperationException) exception if a property set or method call is not appropriate given the object's current state.
+- Throw an @System.InvalidOperationException exception if a property set or method call is not appropriate given the object's current state.
 
-- Throw an [ArgumentException](https://docs.microsoft.com/dotnet/core/api/System.ArgumentException) exception or one of the predefined classes that derive from [ArgumentException](https://docs.microsoft.com/dotnet/core/api/System.ArgumentException) if invalid parameters are passed.
+- Throw an @System.ArgumentException exception or one of the predefined classes that derive from @System.ArgumentException if invalid parameters are passed.
 
-### End exception class names with the word "Exception"
+### End exception class names with the word `Exception`
 
-When a custom exception is necessary, name it appropriately and derive it from the [Exception](https://docs.microsoft.com/dotnet/core/api/System.Exception) class. For example:
+When a custom exception is necessary, name it appropriately and derive it from the @System.Exception class. For example:
 
 C#
 ```
@@ -382,11 +382,11 @@ public class MyFileNotFoundException : Exception
 
 Use at least the three common constructors when creating your own exception classes: the default constructor, a constructor that takes a string message, and a constructor that takes a string message and an inner exception.
 
-- [Exception()](https://docs.microsoft.com/dotnet/core/api/System.Exception#System_Exception__ctor), which uses default values.
+- @System.Exception.%23ctor, which uses default values.
 
-- [Exception(String)](https://docs.microsoft.com/dotnet/core/api/System.Exception#System_Exception__ctor_System_String_), which accepts a string message.
+- @System.Exception.%23ctor(System.String), which accepts a string message.
 
-- [Exception(String, Exception)](https://docs.microsoft.com/dotnet/core/api/System.Exception#System_Exception__ctor_System_String_System_Exception_), which accepts a string message and an inner exception.
+- @System.Exception.%23ctor(System.String,System.Exception), which accepts a string message and an inner exception.
 
 For an example, see [How to: Create User-Defined Exceptions](#how-to-create-user-defined-exceptions).
 
@@ -394,7 +394,7 @@ For an example, see [How to: Create User-Defined Exceptions](#how-to-create-user
 
 When you create user-defined exceptions, ensure that the metadata for the exceptions is available to code that is executing remotely. 
 
-For example, on .NET runtimes that implement App Domains, exceptions may occur across App domains. Suppose App Domain A creates App Domain B, which executes code that throws an exception. For App Domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by App Domain B. If App Domain B throws an exception that is contained in an assembly under its application base, but not under App Domain A's application base, App Domain A will not be able to find the exception, and the common language runtime will throw a [FileNotFoundException](https://docs.microsoft.com/dotnet/core/api/System.IO.FileNotFoundException) exception. To avoid this situation, you can deploy the assembly that contains the exception information in two ways:
+For example, on .NET runtimes that implement App Domains, exceptions may occur across App domains. Suppose App Domain A creates App Domain B, which executes code that throws an exception. For App Domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by App Domain B. If App Domain B throws an exception that is contained in an assembly under its application base, but not under App Domain A's application base, App Domain A will not be able to find the exception, and the common language runtime will throw a @System.IO.FileNotFoundException exception. To avoid this situation, you can deploy the assembly that contains the exception information in two ways:
 
 - Put the assembly into a common application base shared by both app domains.
 
@@ -412,11 +412,11 @@ Write clear sentences and include ending punctuation. Each sentence in a descrip
 
 ### In custom exceptions, provide additional properties as needed
 
-Provide additional properties for an exception (in addition to the description string) only when there's a programmatic scenario where the additional information is useful. For example, the [FileNotFoundException](https://docs.microsoft.com/dotnet/core/api/System.IO.FileNotFoundException) provides the [FileName](https://docs.microsoft.com/dotnet/core/api/System.IO.FileNotFoundException#System_IO_FileNotFoundException_FileName) property.
+Provide additional properties for an exception (in addition to the description string) only when there's a programmatic scenario where the additional information is useful. For example, the @System.IO.FileNotFoundException provides the @System.IO.FileNotFoundException.FileName property.
 
 ### Place throw statements so that the stack trace will be helpful
 
-The stack trace begins at the statement where the exception is thrown and ends at the **catch** statement that catches the exception.
+The stack trace begins at the statement where the exception is thrown and ends at the `catch` statement that catches the exception.
 
 ### Use exception builder methods
 
@@ -453,7 +453,7 @@ class FileReader
 
 ```
 
-In some cases, it's more appropriate to use the exception's constructor to build the exception. An example is a global exception class such as [ArgumentException](https://docs.microsoft.com/dotnet/core/api/System.ArgumentException), 
+In some cases, it's more appropriate to use the exception's constructor to build the exception. An example is a global exception class such as @System.ArgumentException, 
 
 ### Clean up intermediate results when throwing an exception
 
@@ -488,7 +488,7 @@ private static void TransferFunds(Account from, Account to, decimal amount)
 }
 ```
 
-This example illustrates the use of **throw** to re-throw the original exception, which can make it easier for callers to see the real cause of the problem without having to examine the [InnerException](https://docs.microsoft.com/dotnet/core/api/System.Exception#System_Exception_InnerException) property. An alternative is to throw a new exception and include the original exception as the inner exception:
+This example illustrates the use of `throw` to re-throw the original exception, which can make it easier for callers to see the real cause of the problem without having to examine the @System.Exception.InnerException property. An alternative is to throw a new exception and include the original exception as the inner exception:
 
 C#
 ```
@@ -499,6 +499,6 @@ catch (Exception ex)
 }
 ```
 
-## Next steps
+## See Also
 
 To learn more about how exceptions work in .NET, see [What Every Dev needs to Know About Exceptions in the Runtime](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md).

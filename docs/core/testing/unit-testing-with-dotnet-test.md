@@ -32,7 +32,7 @@ final project structure will be something like this:
    |__/PrimeService
       |__Source Files
       |__project.json
-/test
+/__test
    |__/PrimeService.Tests
       |__Test Files
       |__project.json

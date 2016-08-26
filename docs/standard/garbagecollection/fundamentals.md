@@ -151,7 +151,7 @@ Before a garbage collection starts, all managed threads are suspended except for
 
 The following illustration shows a thread that triggers a garbage collection and causes the other threads to be suspended.
 
-! [When a thread triggers a garbage collection](standard/media/fundamentals/IC393001.png)
+! [When a thread triggers a garbage collection](./media/fundamentals/393001.png)
 
 Thread that triggers a garbage collection
 

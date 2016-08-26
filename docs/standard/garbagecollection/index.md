@@ -33,7 +33,7 @@ Generation 2 and LOH collections can take noticeable time for programs that have
 
 Title | Description
 ----- | ----------- 
-[Automatic memory management and garbage collection](garbagecollection/gc.md) | Introduces the basic concepts of memory management in .NET
+[Automatic memory management and garbage collection](gc.md) | Introduces the basic concepts of memory management in .NET
 [Fundamentals of garbage collection](fundamentals.md) | Describes how garbage collection works, how objects are allocated on the managed heap, and other core concepts.
 [Induced collections](induced.md) | Describes how to make a garbage collection occur.
 [Latency modes](latency.md) | Describes the modes that determine the intrusiveness of garbage collection.

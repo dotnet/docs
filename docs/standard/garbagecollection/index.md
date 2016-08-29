@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: db39a0f5-e363-490f-a7e6-adb9a6ff2a8c
 ---
 
-# Garbage Collection
+# Garbage collection
 
 Garbage collection is one of most important features of the .NET managed code platform. The garbage collector (GC) manages allocating and releasing memory for you. You do not need to how to allocate and release memory or manage the lifetime of the objects that use that memory. An allocation is made any time you _new_ an object or a value type is boxed. Allocations are typically very fast. When there isn’t enough memory to allocate an object, the GC must collect and dispose of garbage memory to make memory available for new allocations. This process is called “garbage collection”.
 
@@ -29,4 +29,33 @@ The GC has has an additional heap for large objects called the Large Object Heap
 
 Generation 2 and LOH collections can take noticeable time for programs that have run for a long time or operate over large amounts of data. Large server programs are known to have heaps in the 10s of GBs. The GC employs a variety of techniques to reduce the amount of time that it blocks program execution. The primary approach is to do as much garbage collection work as possible on a background thread in a way that does not interfere with program execution. The GC also exposes a few ways for developers to influence its behavior, which can be quite useful to improve performance.
 
-For more information, see [Garbage Collection](http://msdn.microsoft.com/library/0xy59wtx.aspx) on MSDN.
+## Related Topics
+
+Title | Description
+----- | ----------- 
+[Automatic memory management and garbage collection](gc.md) | Introduces the basic concepts of memory management in .NET
+[Fundamentals of garbage collection](fundamentals.md) | Describes how garbage collection works, how objects are allocated on the managed heap, and other core concepts.
+[Induced collections](induced.md) | Describes how to make a garbage collection occur.
+[Latency modes](latency.md) | Describes the modes that determine the intrusiveness of garbage collection.
+[Weak references](weak-references.md) | Describes features that permit the garbage collector to collect an object while still allowing the application to access that object.
+ 
+## Reference
+
+[System.GC](xref:System.GC)
+
+[System.GCCollectionMode](xref:System.GCCollectionMode)
+
+[System.Runtime.GCLatencyMode](xref:System.Runtime.GCLatencyMode)
+
+[System.Runtime.GCSettings](xref:System.Runtime.GCSettings)
+
+[GCSettings.LargeObjectHeapCompactionMode](xref:System.Runtime.GCSettingsGCSettings.LargeObjectHeapCompactionMode)
+
+[Object.Finalize](xref:System.Object#System_Object_Finalize)
+
+[System.IDisposable](xref:System.IDisposable)
+
+## See Also
+
+[Cleaning up unmanaged resources](unmanaged.md)
+

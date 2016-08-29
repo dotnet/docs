@@ -20,7 +20,7 @@ While xUnit could be a better choice when targeting multiple platforms, with .NE
 
 ## Prerequisites
 
-Follow the instructions on [Getting started with .NET Core on Windows](./using-mstest-on-windows.md) to create the library project.
+Follow the instructions on [Getting started with .NET Core on Windows](./using-on-windows.md) to create the library project.
 
 ### Writing the test project using MSTest
 

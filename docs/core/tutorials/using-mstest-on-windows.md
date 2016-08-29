@@ -16,7 +16,7 @@ ms.assetid:
 
 by [Nicolò Caradini](https://github.com/ncarandini)
 
-While xUnit could be a better choice when targeting multiple platforms, with .NET Core on Windows is also possible to use MSUnit.
+While xUnit could be a better choice when targeting multiple platforms, with .NET Core on Windows is also possible to use MSTest.
 
 ## Prerequisites
 

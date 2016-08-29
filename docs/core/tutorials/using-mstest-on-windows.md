@@ -29,8 +29,7 @@ Follow the instructions on [Getting started with .NET Core on Windows](./using-o
 
 2. Open the context menu for the **test** folder and choose **Add**. **New Project**. In the **New Project** dialog, choose **Console Application (.NET Core)**. Name it "TestLibrary" and explicitly put it under the `Golden\test` path. 
 
-   > **Important**
-   >
+   > [!IMPORTANT]
    > The project needs to be a console application, not a class library.
 
 3. In the **TestLibrary** project, open the context menu for the **References** node and choose **Add Reference**. 

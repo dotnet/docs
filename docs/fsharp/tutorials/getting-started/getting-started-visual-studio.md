@@ -104,6 +104,7 @@ val anIntSquared : int = 25
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet5.fs)]
 
 2. Another way to aggregate values is by using a list, as shown in the following code.
+
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet7.fs)]
 
 Add a new best friend to the list by using the "cons" operator (::). Note that the operation does not change the value of **bffs**. The value of **bffs** is immutable and cannot be changed.
@@ -125,6 +126,7 @@ Use **printfn** to display the lists. Function **printfn** shows the individual 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet10.fs)]
 
 2. To test the class, declare two **Person** objects, make some changes, and display the results, as shown in the following code.
+
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet11.fs)]
 
 The following lines are displayed.

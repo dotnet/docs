@@ -14,7 +14,8 @@ ms.assetid: f9196bfc-b8a8-4d33-8b53-0dcbd58a69d8
 
 # Async Programming in F# #
 
-> **Note:** Some inaccuracies have been discovered in this article.  It is being rewritten.  See [Issue #666](https://github.com/dotnet/core-docs/issues/666) to learn about the changes.
+> [!NOTE]
+> Some inaccuracies have been discovered in this article.  It is being rewritten.  See [Issue #666](https://github.com/dotnet/core-docs/issues/666) to learn about the changes.
 
 Async programming in F# can be accomplished through a language-level programming model designed to be easy to use and natural to the language.
 

@@ -3,7 +3,7 @@ title: Use MSTest with .NET Core on Windows
 description: How to use MSTest with .NET Core on Windows, using Visual Studio 2015
 keywords: MSTest, .NET, .NET Core
 author: ncarandini
-manager: 
+manager: wpickett
 ms.date: 08/18/2016
 ms.topic: article
 ms.prod: .net-core

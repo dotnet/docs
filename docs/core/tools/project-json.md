@@ -721,7 +721,8 @@ String example:
 
     {
         "mappings": {
-            "dest/path": "./src/path"
+            "dest/file": "./src/file",
+            "dest/folder/": "./src/folder/**/*"
         }
     }
 
@@ -729,8 +730,11 @@ Object example:
 
     {
         "mappings": {
-            "dest/path":{
-                "include":"./src/path"
+            "dest/file":{
+                "include":"./src/file"
+            },
+            "dest/folder/":{
+                "include":"./src/folder/**/*"
             }
         }
     }

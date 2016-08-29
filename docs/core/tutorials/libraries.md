@@ -470,21 +470,10 @@ Consumption scenarios like this mean that the APIs being accessed have to have a
 
 ### Project-to-project referencing
 
-To reference a project, you need to do two things:
+The best way to reference a project is to do the following:
 
-1. Understand the name and version number of the project you wish to reference.
-2. List that project as a dependency using the name and version number from (1).
-
-In the above case, you may wish to set up the `project.json` for **AwesomeLibrary.Core** as follows:
-
-```json
-{
-    "name":"AwesomeLibrary.Core",
-    "version":"1.0.0"
-}
-```
-
-You can use these entries in the `project.json` to control the name and version of the project.  If you don't specify these, the default configuration is to use the name of the containing folder as the name and 1.0.0 as the version number.
+1. Make sure the project you wish to reference has a good name for its containing folder on disk.  This will be the name used to reference your project.
+2. Reference the name from (1) in the `project.json` file of the consuming project specifying `"target":"project"`.
 
 The `project.json` files for both **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** now need to reference **AwesomeLibrary.Core** as a `project` target.  If you aren't multitargeting, you can use the global `dependencies` entry:
 
@@ -492,14 +481,11 @@ The `project.json` files for both **AwesomeLibrary.CSharp** and **AwesomeLibrary
 {
     "dependencies":{
         "AwesomeLibrary.Core":{
-            "version":"1.0.0",
             "target":"project"
         }
     }
 }
 ```
-
-> **Note:** Failure to list the reference as a `project` target may result in NuGet resolving the dependency with an existing NuGet package which happens to have the same name.  Always specify `"target":"project"` when referencing a project in the same solution.
 
 If you are multitargeting, you may not be able to use a global `dependencies` entry and may have to reference **AwesomeLibrary.Core** in a target-level `dependencies` entry.  For example, if you were targeting `netstandard1.6`, you could do so like this:
 
@@ -509,7 +495,6 @@ If you are multitargeting, you may not be able to use a global `dependencies` en
         "netstandard1.6":{
             "dependencies":{
                 "AwesomeLibrary.Core":{
-                    "version":"1.0.0",
                     "target":"project"
                 }
             }
@@ -535,7 +520,7 @@ Another important aspect of multi-project solutions is establishing a good overa
    |__/AwesomeLibrary.FSharp
       |__Source Files
       |__project.json
-/test
+|__/test
    |__/AwesomeLibrary.Core.Tests
       |__Test Files
       |__project.json

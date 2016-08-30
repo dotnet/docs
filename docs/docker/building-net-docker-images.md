@@ -56,7 +56,7 @@ microsoft/dotnet    1.0.0-core           b8da4a1fd280        253.2 MB
 - Yeoman tooling for ASP.NET for creating the Web API application
 - Yeoman tools for Docker from Microsoft
 
-The Yeoman tools are install using npm 
+The Yeoman tools are installed using npm 
 
 ```
 npm install -g yo generator-aspnet generator-docker

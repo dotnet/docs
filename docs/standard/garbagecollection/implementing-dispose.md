@@ -83,7 +83,7 @@ The body of the method consists of two blocks of code:
 
 * A conditional block that frees managed resources. This block executes if the value of *disposing* is `true`. The managed resources that it frees can include: 
 
-    **Managed objects that implement IDisposable**. The conditional block can be used to call their [Dispose](xref:System.IDisposable.Dispose) implementation. If you have used a safe handle to wrap your unmanaged resource, you should call the [SafeHandle.Dispose(Boolean](xref:System.Runtime.InteropServices.SafeHandle.html#System_Runtime_InteropServices_SafeHandle_Dispose_System_Boolean_) implementation here. 
+    **Managed objects that implement IDisposable**. The conditional block can be used to call their [Dispose](xref:System.IDisposable.Dispose) implementation. If you have used a safe handle to wrap your unmanaged resource, you should call the [SafeHandle.Dispose(Boolean](xref:System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)) implementation here. 
 
     **Managed objects that consume large amounts of memory or consume scarce resources.** Freeing these objects explicitly in the `Dispose` method releases them faster than if they were reclaimed non-deterministically by the garbage collector. 
 

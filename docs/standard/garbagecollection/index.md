@@ -49,7 +49,7 @@ Title | Description
 
 [System.Runtime.GCSettings](xref:System.Runtime.GCSettings)
 
-[GCSettings.LargeObjectHeapCompactionMode](xref:System.Runtime.GCSettingsGCSettings.LargeObjectHeapCompactionMode)
+[GCSettings.LargeObjectHeapCompactionMode](xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode)
 
 [Object.Finalize](xref:System.Object.Finalize)
 

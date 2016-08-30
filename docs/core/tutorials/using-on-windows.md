@@ -165,6 +165,9 @@ Starting from the solution obtained with the previous script, execute the follow
 14. Press F5 to run the app.
 
    The application should build and hit the breakpoint. The application output should be "The answer is 42.".
+   
+   > [!TIP]
+   > On Windows platform you can you can use MSTest. You can find out more in the [Using MSTest on Windows document](../testing/using-mstest-on-windows.md).
 
 Moving a library from netstandard 1.4 to 1.3
 --------------------------------------------

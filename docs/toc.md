@@ -239,6 +239,7 @@
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
 ## [Unit Testing](core/testing/index.md)
 ### [Unit Testing with dotnet test](core/testing/unit-testing-with-dotnet-test.md)
+### [Unit testing with MSTest on Windows](core/testing/using-mstest-on-windows.md)
 ## [Releases](core/versions/index.md)
 ### [Servicing](core/versions/servicing.md)
 ## [Runtime IDentifier catalog](core/rid-catalog.md)

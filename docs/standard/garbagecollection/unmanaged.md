@@ -2,7 +2,7 @@
 title: Cleaning up unmanaged resources
 description: Cleaning up unmanaged resources
 keywords: .NET, .NET Core
-author: shoag
+author: stevehoag
 manager: wpickett
 ms.date: 08/18/2016
 ms.topic: article
@@ -18,17 +18,17 @@ For the majority of the objects that your app creates, you can rely on the .NET 
 
 If your types use unmanaged resources, you should do the following: 
 
-* Implement the dispose pattern. This requires that you provide an [IDisposable.Dispose](xref:System.IDisposable#System_IDisposable_Dispose) implementation to enable the deterministic release of unmanaged resources. A consumer of your type calls [Dispose](xref:System.IDisposable#System_IDisposable_Dispose) when the object (and the resources it uses) is no longer needed. The [Dispose](xref:System.IDisposable#System_IDisposable_Dispose) method immediately releases the unmanaged resources. 
+* Implement the dispose pattern. This requires that you provide an [IDisposable.Dispose](xref:System.IDisposable.Dispose) implementation to enable the deterministic release of unmanaged resources. A consumer of your type calls [Dispose](xref:System.IDisposable.Dispose) when the object (and the resources it uses) is no longer needed. The [Dispose](xref:System.IDisposable.Dispose) method immediately releases the unmanaged resources. 
 
-* Provide for your unmanaged resources to be released in the event that a consumer of your type forgets to call [Dispose](xref:System.IDisposable#System_IDisposable_Dispose). There are two ways to do this: 
+* Provide for your unmanaged resources to be released in the event that a consumer of your type forgets to call [Dispose](xref:System.IDisposable.Dispose). There are two ways to do this: 
 
-	* Use a safe handle to wrap your unmanaged resource. This is the recommended technique. Safe handles are derived from the [System.Runtime.InteropServices.SafeHandle](xref:System.Runtime.InteropServices.SafeHandle) class and include a robust [Finalize](xref:System.Object#System_Object_Finalize) method. When you use a safe handle, you simply implement the [IDisposable](xref:System.IDisposable) interface and call your safe handle's [Dispose](xref:System.IDisposable#System_IDisposable_Dispose) method in your [IDisposable.Dispose](xref:System.IDisposable#System_IDisposable_Dispose) implementation. The safe handle's finalizer is called automatically by the garbage collector if its [Dispose](xref:System.IDisposable#System_IDisposable_Dispose) method is not called. 
+	* Use a safe handle to wrap your unmanaged resource. This is the recommended technique. Safe handles are derived from the [System.Runtime.InteropServices.SafeHandle](xref:System.Runtime.InteropServices.SafeHandle) class and include a robust [Finalize](xref:System.Object.Finalize) method. When you use a safe handle, you simply implement the [IDisposable](xref:System.IDisposable) interface and call your safe handle's [Dispose](xref:System.IDisposable.Dispose) method in your [IDisposable.Dispose](xref:System.IDisposable.Dispose) implementation. The safe handle's finalizer is called automatically by the garbage collector if its [Dispose](xref:System.IDisposable.Dispose) method is not called. 
 
       —or—
 
-	* Override the [Object.Finalize](xref:System.Object#System_Object_Finalize) method. Finalization enables the non-deterministic release of unmanaged resources when the consumer of a type fails to call [IDisposable.Dispose](xref:System.IDisposable#System_IDisposable_Dispose) to dispose of them deterministically. However, because object finalization can be a complex and error-prone operation, we recommend that you use a safe handle instead of providing your own finalizer. 
+	* Override the [Object.Finalize](xref:System.Object.Finalize) method. Finalization enables the non-deterministic release of unmanaged resources when the consumer of a type fails to call [IDisposable.Dispose](xref:System.IDisposable.Dispose) to dispose of them deterministically. However, because object finalization can be a complex and error-prone operation, we recommend that you use a safe handle instead of providing your own finalizer. 
 
-Consumers of your type can then call your [IDisposable.Dispose](xref:System.IDisposable#System_IDisposable_Dispose) implementation directly to free memory used by unmanaged resources. When you properly implement a [Dispose](xref:System.IDisposable#System_IDisposable_Dispose) method, either your safe handle's [Finalize](xref:System.Object#System_Object_Finalize) method or your own override of the [Object.Finalize](xref:System.Object#System_Object_Finalize) method becomes a safeguard to clean up resources in the event that the [Dispose](xref:System.IDisposable#System_IDisposable_Dispose) method is not called. 
+Consumers of your type can then call your [IDisposable.Dispose](xref:System.IDisposable.Dispose) implementation directly to free memory used by unmanaged resources. When you properly implement a [Dispose](xref:System.IDisposable.Dispose) method, either your safe handle's [Finalize](xref:System.Object.Finalize) method or your own override of the [Object.Finalize](xref:System.Object.Finalize) method becomes a safeguard to clean up resources in the event that the [Dispose](xref:System.IDisposable.Dispose) method is not called. 
 
 ## In This Section
 
@@ -40,6 +40,6 @@ Consumers of your type can then call your [IDisposable.Dispose](xref:System.IDis
 
 [System.IDisposable](xref:System.IDisposable) - Defines the `Dispose` method for releasing unmanaged resources.
 
-[Object.Finalize](xref:System.Object#System_Object_Finalize) - Provides for object finalization if unmanaged resources are not released by the `Dispose` method. 
+[Object.Finalize](xref:System.Object.Finalize) - Provides for object finalization if unmanaged resources are not released by the `Dispose` method. 
 
 [GC.SuppressFinalize](xref:System.GC#System_GC_SuppressFinalize_System_Object_) - Suppresses finalization. This method is customarily called from a `Dispose` method to prevent a finalizer from executing. 

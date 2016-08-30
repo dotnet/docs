@@ -2,7 +2,7 @@
 title: Implementing a dispose method
 description: Implementing a dispose method
 keywords: .NET, .NET Core
-author: shoag
+author: stevehoag
 manager: wpickett
 ms.date: 08/16/2016
 ms.topic: article
@@ -14,28 +14,28 @@ ms.assetid: eca6cdc3-6a14-4296-86fb-1eb2f21455b0
 
 # Implementing a dispose method
 
-You implement a [Dispose](xref:System.IDisposable#System_IDisposable_Dispose) method to release unmanaged resources used by your application. The .NET garbage collector does not allocate or release unmanaged memory. 
+You implement a [Dispose](xref:System.IDisposable.Dispose) method to release unmanaged resources used by your application. The .NET garbage collector does not allocate or release unmanaged memory. 
 
 The pattern for disposing an object, referred to as a dispose pattern, imposes order on the lifetime of an object. The dispose pattern is used only for objects that access unmanaged resources, such as file and pipe handles, registry handles, wait handles, or pointers to blocks of unmanaged memory. This is because the garbage collector is very efficient at reclaiming unused managed objects, but it is unable to reclaim unmanaged objects.
 
 The dispose pattern has two variations:
 
-* You wrap each unmanaged resource that a type uses in a safe handle (that is, in a class derived from [System.Runtime.InteropServices.SafeHandle](xref:System.Runtime.InteropServices.SafeHandle)). In this case, you implement the [IDisposable](xref:System.IDisposable) interface and an additional `Dispose(Boolean)` method. This is the recommended variation and doesn't require overriding the [Object.Finalize](xref:System.Object#System_Object_Finalize) method. 
+* You wrap each unmanaged resource that a type uses in a safe handle (that is, in a class derived from [System.Runtime.InteropServices.SafeHandle](xref:System.Runtime.InteropServices.SafeHandle)). In this case, you implement the [IDisposable](xref:System.IDisposable) interface and an additional `Dispose(Boolean)` method. This is the recommended variation and doesn't require overriding the [Object.Finalize](xref:System.Object.Finalize) method. 
 
 > [!NOTE]
 > The [Microsoft.Win32.SafeHandles](xref:Microsoft.Win32.SafeHandles) namespace provides a set of classes derived from [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle), which are listed in the [Using safe handles](#Using-safe-handles) section. If you can't find a class that is suitable for releasing your unmanaged resource, you can implement your own subclass of [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle). 
  
-* You implement the [IDisposable](xref:System.IDisposable) interface and an additional `Dispose(Boolean`) method, and you also override the [Object.Finalize](xref:System.Object#System_Object_Finalize) method. You must override [Finalize](xref:System.Object#System_Object_Finalize) to ensure that unmanaged resources are disposed of if your [IDisposable.Dispose](xref:System.IDisposable#System_IDisposable_Dispose) implementation is not called by a consumer of your type. If you use the recommended technique discussed in the previous bullet, the [System.Runtime.InteropServices.SafeHandle](xref:System.Runtime.InteropServices.SafeHandle) class does this on your behalf. 
+* You implement the [IDisposable](xref:System.IDisposable) interface and an additional `Dispose(Boolean`) method, and you also override the [Object.Finalize](xref:System.Object.Finalize) method. You must override [Finalize](xref:System.Object.Finalize) to ensure that unmanaged resources are disposed of if your [IDisposable.Dispose](xref:System.IDisposable.Dispose) implementation is not called by a consumer of your type. If you use the recommended technique discussed in the previous bullet, the [System.Runtime.InteropServices.SafeHandle](xref:System.Runtime.InteropServices.SafeHandle) class does this on your behalf. 
 
-To help ensure that resources are always cleaned up appropriately, a [Dispose](xref:System.IDisposable#System_IDisposable_Dispose) method should be callable multiple times without throwing an exception. 
+To help ensure that resources are always cleaned up appropriately, a [Dispose](xref:System.IDisposable.Dispose) method should be callable multiple times without throwing an exception. 
 
-The code example provided for the [GC.KeepAlive](xref:System.GC#System_GC_KeepAlive_System_Object_) method shows how aggressive garbage collection can cause a finalizer to run while a member of the reclaimed object is still executing. It is a good idea to call the [KeepAlive](xref:System.GC#System_GC_KeepAlive_System_Object_) method at the end of a lengthy `Dispose` method.
+The code example provided for the [GC.KeepAlive](xref:System.GC.KeepAlive(System.Object)) method shows how aggressive garbage collection can cause a finalizer to run while a member of the reclaimed object is still executing. It is a good idea to call the [KeepAlive](xref:System.GC.KeepAlive(System.Object)) method at the end of a lengthy `Dispose` method.
 
 ## Dispose() and Dispose(Boolean)
 
-The [IDisposable](xref:System.IDisposable) interface requires the implementation of a single parameterless method, [Dispose](xref:System.IDisposable#System_IDisposable_Dispose). However, the dispose pattern requires two `Dispose` methods to be implemented: 
+The [IDisposable](xref:System.IDisposable) interface requires the implementation of a single parameterless method, [Dispose](xref:System.IDisposable.Dispose). However, the dispose pattern requires two `Dispose` methods to be implemented: 
 
-* A public non-virtual (`NonInheritable` in Visual Basic) [IDisposable.Dispose](xref:System.IDisposable#System_IDisposable_Dispose) implementation that has no parameters.
+* A public non-virtual (`NonInheritable` in Visual Basic) [IDisposable.Dispose](xref:System.IDisposable.Dispose) implementation that has no parameters.
 
 * A protected virtual (`Overridable` in Visual Basic) `Dispose` method whose signature is:
 
@@ -71,11 +71,11 @@ Public Sub Dispose() _
 End Sub
 ```
 
-The `Dispose` method performs all object cleanup, so the garbage collector no longer needs to call the objects' [Object.Finalize](xref:System.Object#System_Object_Finalize) override. Therefore, the call to the [GC.SuppressFinalize](xref:System.GC.System_GC_SuppressFinalize_System_Object_) method prevents the garbage collector from running the finalizer. If the type has no finalizer, the call to [SuppressFinalize](xref:System.GC.System_GC_SuppressFinalize_System_Object_) has no effect. Note that the actual work of releasing unmanaged resources is performed by the second overload of the `Dispose` method.
+The `Dispose` method performs all object cleanup, so the garbage collector no longer needs to call the objects' [Object.Finalize](xref:System.Object.Finalize) override. Therefore, the call to the [GC.SuppressFinalize](xref:System.GC.SuppressFinalize(System.Object)) method prevents the garbage collector from running the finalizer. If the type has no finalizer, the call to [SuppressFinalize](xref:System.GC.SuppressFinalize(System.Object)) has no effect. Note that the actual work of releasing unmanaged resources is performed by the second overload of the `Dispose` method.
 
 ### The Dispose(Boolean) overload
 
-In the second overload, the *disposing* parameter is a [Boolean](xref:System.Boolean) that indicates whether the method call comes from a [Dispose](xref:System.IDisposable#System_IDisposable_Dispose) method (its value is `true`) or from a finalizer (its value is `false`). 
+In the second overload, the *disposing* parameter is a [Boolean](xref:System.Boolean) that indicates whether the method call comes from a [Dispose](xref:System.IDisposable.Dispose) method (its value is `true`) or from a finalizer (its value is `false`). 
 
 The body of the method consists of two blocks of code: 
 
@@ -83,7 +83,7 @@ The body of the method consists of two blocks of code:
 
 * A conditional block that frees managed resources. This block executes if the value of *disposing* is `true`. The managed resources that it frees can include: 
 
-    **Managed objects that implement IDisposable**. The conditional block can be used to call their [Dispose](xref:System.IDisposable#System_IDisposable_Dispose) implementation. If you have used a safe handle to wrap your unmanaged resource, you should call the [SafeHandle.Dispose(Boolean](xref:System.Runtime.InteropServices.SafeHandle.html#System_Runtime_InteropServices_SafeHandle_Dispose_System_Boolean_) implementation here. 
+    **Managed objects that implement IDisposable**. The conditional block can be used to call their [Dispose](xref:System.IDisposable.Dispose) implementation. If you have used a safe handle to wrap your unmanaged resource, you should call the [SafeHandle.Dispose(Boolean](xref:System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)) implementation here. 
 
     **Managed objects that consume large amounts of memory or consume scarce resources.** Freeing these objects explicitly in the `Dispose` method releases them faster than if they were reclaimed non-deterministically by the garbage collector. 
 
@@ -97,11 +97,11 @@ If you implement the dispose pattern for a base class, you must provide the foll
 > [!IMPORTANT]
 > You should implement this pattern for all base classes that implement [IDisposable](xref:System.IDisposable) and are not `sealed`. 
  
-* A [Dispose](xref:System.IDisposable#System_IDisposable_Dispose) implementation that calls the `Dispose(Boolean)` method. 
+* A [Dispose](xref:System.IDisposable.Dispose) implementation that calls the `Dispose(Boolean)` method. 
 
 * A `Dispose(Boolean)` method that performs the actual work of releasing resources. 
 
-* Either a class derived from [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle) that wraps your unmanaged resource (recommended), or an override to the [Object.Finalize](xref:System.Object#System_Object_Finalize) method. The [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle)SafeHandle class provides a finalizer that frees you from having to code one. 
+* Either a class derived from [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle) that wraps your unmanaged resource (recommended), or an override to the [Object.Finalize](xref:System.Object.Finalize) method. The [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle)SafeHandle class provides a finalizer that frees you from having to code one. 
 
 Here's the general pattern for implementing the dispose pattern for a base class that uses a safe handle. 
 
@@ -180,7 +180,7 @@ End Class
 > [!NOTE] 
 > The previous example uses a [SafeFileHandle](xref:Microsoft.Win32.SafeHandles.SafeFileHandle) object to illustrate the pattern; any object derived from [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle) could be used instead. Note that the example does not properly instantiate its [SafeFileHandle](xref:Microsoft.Win32.SafeHandles.SafeFileHandle) object. 
  
-Here's the general pattern for implementing the dispose pattern for a base class that overrides [Object.Finalize](xref:System.Object#System_Object_Finalize). 
+Here's the general pattern for implementing the dispose pattern for a base class that overrides [Object.Finalize](xref:System.Object.Finalize). 
 
 ```cs
 using System;
@@ -253,16 +253,16 @@ End Class
 ```
 
 > [!NOTE]
-> In C#, you override [Object.Finalize](xref:System.Object#System_Object_Finalize) by defining a `destructor`. 
+> In C#, you override [Object.Finalize](xref:System.Object.Finalize) by defining a `destructor`. 
 
 
 ## Implementing the dispose pattern for a derived class
 
-A class derived from a class that implements the [IDisposable](xref:System.IDisposable) interface shouldn't implement [IDisposable](xref:System.IDisposable), because the base class implementation of [IDisposable.Dispose](xref:System.IDisposable#System_IDisposable_Dispose) is inherited by its derived classes. Instead, to implement the dispose pattern for a derived class, you provide the following: 
+A class derived from a class that implements the [IDisposable](xref:System.IDisposable) interface shouldn't implement [IDisposable](xref:System.IDisposable), because the base class implementation of [IDisposable.Dispose](xref:System.IDisposable.Dispose) is inherited by its derived classes. Instead, to implement the dispose pattern for a derived class, you provide the following: 
 
 * A `protected Dispose(Boolean)` method that overrides the base class method and performs the actual work of releasing the resources of the derived class. This method should also call the `Dispose(Boolean)` method of the base class and pass it a value of `true` for the *disposing* argument. 
 
-* Either a class derived from [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle) that wraps your unmanaged resource (recommended), or an override to the [Object.Finalize](xref:System.Object#System_Object_Finalize) method. The [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle) class provides a finalizer that frees you from having to code one. If you do provide a finalizer, it should call the `Dispose(Boolean)` overload with a *disposing* argument of `false`. 
+* Either a class derived from [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle) that wraps your unmanaged resource (recommended), or an override to the [Object.Finalize](xref:System.Object.Finalize) method. The [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle) class provides a finalizer that frees you from having to code one. If you do provide a finalizer, it should call the `Dispose(Boolean)` overload with a *disposing* argument of `false`. 
 
 Here's the general pattern for implementing the dispose pattern for a derived class that uses a safe handle: 
 
@@ -333,7 +333,7 @@ End Class
 > [!NOTE] 
 > The previous example uses a [SafeFileHandle](xref:Microsoft.Win32.SafeHandles.SafeFileHandle) object to illustrate the pattern; any object derived from [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle) could be used instead. Note that the example does not properly instantiate its [SafeFileHandle](xref:Microsoft.Win32.SafeHandles.SafeFileHandle) object. 
 
-Here's the general pattern for implementing the dispose pattern for a derived class that overrides [Object.Finalize](xref:System.Object#System_Object_Finalize):
+Here's the general pattern for implementing the dispose pattern for a derived class that overrides [Object.Finalize](xref:System.Object.Finalize):
 
 ```cs
 using System;
@@ -398,7 +398,7 @@ End Class
 ```
 
 > [!NOTE]
-> In C#, you override [Object.Finalize](xref:System.Object#System_Object_Finalize) by defining a `destructor`.
+> In C#, you override [Object.Finalize](xref:System.Object.Finalize) by defining a `destructor`.
 
 ## Using safe handles
 
@@ -714,14 +714,14 @@ End Class
 
 ## See Also
 
-[SuppressFinalize](xref:System.GC#System_GC_SuppressFinalize_System_Object_)
+[SuppressFinalize](xref:System.GC.SuppressFinalize(System.Object))
 
 [IDisposable](xref:System.IDisposable)
 
-[IDisposable.Dispose](xref:System.IDisposable#System_IDisposable_Dispose)
+[IDisposable.Dispose](xref:System.IDisposable.Dispose)
 
 [Microsoft.Win32.SafeHandles](xref:Microsoft.Win32.SafeHandles)
 
 [System.Runtime.InteropServices.SafeHandle](xref:System.Runtime.InteropServices.SafeHandle)
 
-[IDisposable.Dispose](xref:System.IDisposable#System_IDisposable_Dispose)
+[IDisposable.Dispose](xref:System.IDisposable.Dispose)

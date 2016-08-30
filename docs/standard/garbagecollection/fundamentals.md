@@ -29,8 +29,7 @@ This topic describes the core concepts of garbage collection. It contains the fo
 
 * [Fundamentals of memory](#Fundamentals-of-memory)
 
-* [Conditions for a garbage collection](#Condition
-* s-for-a-garbage-collection)
+* [Conditions for a garbage collection](#Conditions-for-a-garbage-collection)
 
 * [The managed heap](#The-managed-heap)
 

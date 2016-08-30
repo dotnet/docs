@@ -37,11 +37,11 @@ Supported patterns are shown in the following table. At run time, the input is t
 |Identifier pattern|A case value of a discriminated union, an exception label, or an active pattern case|`Some(x)`<br /><br />`Failure(msg)`|
 |Variable pattern|*identifier*|`a`|
 |`as` pattern|*pattern* as *identifier*|`(a, b) as tuple1`|
-|OR pattern|*pattern1* &#124; *pattern2*|`([h] &#124; [h; _])`|
-|AND pattern|*pattern1* &amp; *pattern2*|`(a, b) &amp; (_, "test")`|
+|OR pattern|*pattern1* &#124; *pattern2*|<code>([h] &#124; [h; _])</code>|
+|AND pattern|*pattern1* &amp; *pattern2*|`(a, b) & (_, "test")`|
 |Cons pattern|*identifier* :: *list-identifier*|`h :: t`|
 |List pattern|[ *pattern_1*; ... ; *pattern_n* ]|`[ a; b; c ]`|
-|Array pattern|[&#124; *pattern_1*; ..; *pattern_n* ]|`[&#124; a; b; c &#124;]`|
+|Array pattern|[&#124; *pattern_1*; ..; *pattern_n* &#124;]|<code>[&#124; a; b; c &#124;]</code>|
 |Parenthesized pattern|( *pattern* )|`( a )`|
 |Tuple pattern|( *pattern_1*, ... , *pattern_n* )|`( a, b )`|
 |Record pattern|{ *identifier1* = *pattern_1*; ... ; *identifier_n* = *pattern_n* }|`{ Name = name; }`|

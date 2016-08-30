@@ -19,22 +19,22 @@ In order to get an understanding of how to use .NET Core and Docker together, we
 
 ## Docker image variatons
 
-The `microsoft/dotnet` images are offerred in three different variatons, each for a specific use case.
+The `microsoft/dotnet` images are offered in three different variations, each for a specific use case.
 
-- `microsoft/dotnet:<version>-sdk` : i.e. **microsoft/dotnet-preview2-sdk**, this image contains the .NET Core SDK which includes the .NET Core and Command Line Tools (CLI). Use this image for your development processes; dev, test debug.
+- `microsoft/dotnet:<version>-sdk` : that is **microsoft/dotnet-preview2-sdk**, this image contains the .NET Core SDK which includes the .NET Core and Command Line Tools (CLI). Use this image for your development processes; dev, test debug.
 
-- `microsoft/dotnet:<version>-onbuild` : i.e. **microsoft/dotnet:onbuild**, contains `ONBUILD` triggers which should cover most applications. The build will `COPY` you application, run `dotnet restore` and create an `ENTRYPOINT dotnet run` instruction to run the application when the Docker image is run.
+- `microsoft/dotnet:<version>-onbuild` : that is **microsoft/dotnet:onbuild**, contains `ONBUILD` triggers which should cover most applications. The build will `COPY` you application, run `dotnet restore` and create an `ENTRYPOINT dotnet run` instruction to run the application when the Docker image is run.
 
-- `microsoft/dotnet:<version>-core` : i.e. **microsoft/dotnet:1.0.0-core**, image contains only .NET Core (runtime and libraries) and it is optimized for running [portable .NET Core applications](https://docs.microsoft.com/en-us/dotnet/articles/core/app-types).
+- `microsoft/dotnet:<version>-core` : that is **microsoft/dotnet:1.0.0-core**, image contains only .NET Core (runtime and libraries) and it is optimized for running [portable .NET Core applications](https://docs.microsoft.com/en-us/dotnet/articles/core/app-types).
 
-- `microsoft/dotnet:<version>-core-deps` : i.e. **microsoft/dotnet:1.0.0-core-deps**, if you wish to run self-contained applications use this image.  Contains the operating system with all of the native dependencies needed bt .NET Core. Can also be used to build a custom copy of .NET core by compiling coreclr and corefx.
+- `microsoft/dotnet:<version>-core-deps` : that is **microsoft/dotnet:1.0.0-core-deps**, if you wish to run self-contained applications use this image.  Contains the operating system with all of the native dependencies needed bt .NET Core. Can also be used to build a custom copy of .NET core by compiling coreclr and corefx.
 
 Latest versions of each variant:
 
-- `microsoft/dotnet` or `microsoft/dotnet:latest` (aka sdk)
+- `microsoft/dotnet` or `microsoft/dotnet:latest` (includes SDK)
 - `microsoft/dotnet:onbuild`
 - `microsoft/dotnet:core`
-- `microsoft/dotnet-core-deps`
+- `microsoft/dotnet:core-deps`
 
 Here is a list of the images after a `docker pull <imagename>` on a development machine to show the various sizes.
 
@@ -56,7 +56,7 @@ microsoft/dotnet    1.0.0-core           b8da4a1fd280        253.2 MB
 - Yeoman tooling for ASP.NET for creating the Web API application
 - Yeoman tools for Docker from Microsoft
 
-The Yeoman tools are installed using npm 
+Install the Yeoman generators for ASP.NET Core and Docker using npm 
 
 ```
 npm install -g yo generator-aspnet generator-docker
@@ -72,7 +72,7 @@ Using the ASP.NET Yeoman generator, open a command or terminal session and type 
 yo aspnet
 ```
 
-Select **Web API Application** and type **api** for the name of the app ann tap enter.  Once the application is scaffolded, change to the `/api` directory and restore the NuGet dependencies using `dotnet restore`
+Select **Web API Application** and type **api** for the name of the app and tap enter.  Once the application is scaffolded, change to the `/api` directory and restore the NuGet dependencies using `dotnet restore`
 
 ```
 cd api
@@ -91,7 +91,7 @@ Test the application using `dotnet run` and browsing to **http://localhost:5000/
 Use `Ctrl+C` to stop the application.
 
 ## Adding Docker support
-Adding Docker support the project is achieved using the Yeoman generator from Microsoft. It currently supports .NET Core, node.js and Golang projects by creating a Dockerfile and scripts that help build and run project inside containers. Visual Studio Code specific files are also added (launch.json, tasks.json) for editor debugging and command pallete support.
+Adding Docker support to the project is achieved using the Yeoman generator from Microsoft. It currently supports .NET Core, Node.js and Go projects by creating a Dockerfile and scripts that help build and run projects inside containers. Visual Studio Code specific files are also added (launch.json, tasks.json) for editor debugging and command palette support.
 
 ```console
 $ yo docker
@@ -116,7 +116,7 @@ $ yo docker
 - Select `.NET Core` as the project type
 - `rtm` for the version of .NET Core
 - `Y` the project uses a web server
-- `5000` is the port the Web API application is listening on (i.e. http://localhost:5000)
+- `5000` is the port the Web API application is listening on (http://localhost:5000)
 - `api` for the image name
 - `api` for the service name
 - `api` for the compose project 
@@ -133,14 +133,14 @@ When the generator is complete the following files are added to the project
 - dockerTask.sh
 - .vscode/tasks.json
 
-The generator creates a two Dockerfiles.
+The generator creates two Dockerfiles.
 
-**Dockerfile.debug** - this file is based on the **microsoft/dotnet:1.0.0-preview2-sdk** image which if you note from the list of image variants, includes the SDK, CLI and .NET Core. Aptly named ".debug", will be the image used for debugging and development (F5) thus producing a larger image roughly 540MB.
+**Dockerfile.debug** - this file is based on the **microsoft/dotnet:1.0.0-preview2-sdk** image which if you note from the list of image variants, includes the SDK, CLI and .NET Core and will be the image used for development and debugging (F5). Including all of these components produces a larger image with a size roughly 540MB.
 
 **Dockerfile** - this image is the release image based on **microsoft/dotnet:1.0.0-core** and should be used for production. This image when built is approximately 253 MB.
 
 ### Creating the Docker images
-Using the `dockerTask.sh` script we can build or compose the image and container for the **api** application for a specific environment. Build the **debug** image by running the following command.
+Using the `dockerTask.sh` script, we can build or compose the image and container for the **api** application for a specific environment. Build the **debug** image by running the following command.
 
 ```bash
 ./dockerTask.sh build debug
@@ -159,13 +159,13 @@ Another way to generate the image and run the application within the Docker cont
 
 Select the debugging icon in the View Bar on the left side of VS Code.
 
-![vscode debugging icon](../images/debugging_debugicon.png)
+![vscode debugging icon](./media/building-net-docker-images/debugging_debugicon.png)
 
 Then tap the play icon or F5 to generate the image and start the application within the container. The Web API will be launched using your default web browser at http://localhost:5000.
 
-![VSCode Docker Tools Debug](../images/docker-tools-vscode-f5.png)
+![VSCode Docker Tools Debug](./media/building-net-docker-images/docker-tools-vscode-f5.png)
 
-You may set break points in your application, step through etc. just as if the application was running locally on your dev machine as opposed to inside the container. The benefit to debugging within the container is this is the same image that would be deployed to a production environment.
+You may set break points in your application, step through, etc. just as if the application was running locally on your development machine as opposed to inside the container. The benefit to debugging within the container is this is the same image that would be deployed to a production environment.
 
 Creating the release image requires simply running the command from the terminal passing the `release` environment name.
 
@@ -173,7 +173,7 @@ Creating the release image requires simply running the command from the terminal
 ./dockerTask build release
 ```
 
-The command creates the image based on the smaller **microsoft/dotnet:core** base image, `EXPOSE` port 5000, sets the `ENTRYPOINT` for `dotnet api.dll` and copies it the app directory. There is no debugger, SDK or `dotnet restore` resulting in a much smaller image. The image is named **api** with a `TAG` of **latest**.
+The command creates the image based on the smaller **microsoft/dotnet:core** base image, `EXPOSE` port 5000, sets the `ENTRYPOINT` for `dotnet api.dll` and copies it to the `/app` directory. There is no debugger, SDK or `dotnet restore` resulting in a much smaller image. The image is named **api** with a `TAG` of **latest**.
 
 ```
 REPOSITORY          TAG                  IMAGE ID            CREATED             SIZE

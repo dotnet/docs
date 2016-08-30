@@ -14,8 +14,6 @@ ms.assetid: ed447641-3e85-4e50-b7ed-004630048a3e
 
 # Unit testing with MSTest and .NET Core on Windows, using Visual Studio 2015
 
-by [Nicolò Caradini](https://github.com/ncarandini)
-
 While xUnit could be a better choice when targeting multiple platforms, with .NET Core on Windows is also possible to use MSTest.
 
 ## Prerequisites

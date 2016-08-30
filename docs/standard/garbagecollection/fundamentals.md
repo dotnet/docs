@@ -29,7 +29,8 @@ This topic describes the core concepts of garbage collection. It contains the fo
 
 * [Fundamentals of memory](#Fundamentals-of-memory)
 
-* [Conditions for a garbage collection](#Conditions-for-a-garbage-collection)
+* [Conditions for a garbage collection](#Condition
+* s-for-a-garbage-collection)
 
 * [The managed heap](#The-managed-heap)
 
@@ -71,7 +72,7 @@ Garbage collection occurs when one of the following conditions is true:
 
 * The memory that is used by allocated objects on the managed heap surpasses an acceptable threshold. This threshold is continuously adjusted as the process runs.
 
-* The [GC.Collect](xref:System.GC#System_GC_Collect) method is called. In almost all cases, you do not have to call this method, because the garbage collector runs continuously. This method is primarily used for unique situations and testing. 
+* The [GC.Collect](xref:System.GC.Collect) method is called. In almost all cases, you do not have to call this method, because the garbage collector runs continuously. This method is primarily used for unique situations and testing. 
 
 ## The managed heap
 
@@ -137,7 +138,7 @@ A garbage collection has the following phases:
 
 Because generation 2 collections can occupy multiple segments, objects that are promoted into generation 2 can be moved into an older segment. Both generation 1 and generation 2 survivors can be moved to a different segment, because they are promoted to generation 2. 
 
-Ordinarily, the large object heap is not compacted, because copying large objects imposes a performance penalty. However,  you can use the [GCSettings.LargeObjectHeapCompactionMode](xref:GCSettings#System_Runtime_GCSettings_LargeObjectHeapCompactionMode) property to compact the large object heap on demand. 
+Ordinarily, the large object heap is not compacted, because copying large objects imposes a performance penalty. However,  you can use the [GCSettings.LargeObjectHeapCompactionMode](xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode) property to compact the large object heap on demand. 
 
 The garbage collector uses the following information to determine whether objects are live: 
 

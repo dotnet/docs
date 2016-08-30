@@ -51,7 +51,7 @@ Title | Description
 
 [GCSettings.LargeObjectHeapCompactionMode](xref:System.Runtime.GCSettingsGCSettings.LargeObjectHeapCompactionMode)
 
-[Object.Finalize](xref:System.Object#System_Object_Finalize)
+[Object.Finalize](xref:System.Object.Finalize)
 
 [System.IDisposable](xref:System.IDisposable)
 

@@ -22,9 +22,9 @@ Weak references are useful for objects that use a lot of memory, but can be recr
 
 Suppose a tree view displays a complex hierarchical choice of options to the user. If the underlying data is large, keeping the tree in memory is inefficient when the user is involved with something else in the application. 
 
-When the user switches away to another part of the application, you can use the [WeakReference](xref:System.WeakReference) or [WeakReference&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/core/api/System.WeakReference-1) class to create a weak reference to the tree and destroy all strong references. When the user switches back to the tree, the application attempts to obtain a strong reference to the tree and, if successful, avoids reconstructing the tree.
+When the user switches away to another part of the application, you can use the [WeakReference](xref:System.WeakReference) or [WeakReference&lt;T&gt;](xref:System.WeakReference%601) class to create a weak reference to the tree and destroy all strong references. When the user switches back to the tree, the application attempts to obtain a strong reference to the tree and, if successful, avoids reconstructing the tree.
 
-To establish a weak reference with an object, you create a [WeakReference](xref:System.WeakReference) using the instance of the object to be tracked. You then set the [Target](xref:System.WeakReference.html#System_WeakReference_Target) property to that object and set the original reference to the object to null. 
+To establish a weak reference with an object, you create a [WeakReference](xref:System.WeakReference) using the instance of the object to be tracked. You then set the [Target](xref:System.WeakReference.Target) property to that object and set the original reference to the object to null. 
 
 ## Short and Long Weak References
 
@@ -36,11 +36,11 @@ You can create a short weak reference or a long weak reference:
 
 * Long
 
-  A long weak reference is retained after the object's [Finalize](xref:System.Object#System_Object_Finalize) method has been called. This allows the object to be recreated, but the state of the object remains unpredictable. To use a long reference, specify `true` in the [WeakReference](xref:System.WeakReference) constructor. 
+  A long weak reference is retained after the object's [Finalize](xref:System.Object.Finalize) method has been called. This allows the object to be recreated, but the state of the object remains unpredictable. To use a long reference, specify `true` in the [WeakReference](xref:System.WeakReference) constructor. 
 
-  If the object's type does not have a [Finalize](xref:system.object#System_Object_Finalize) method, the short weak reference functionality applies and the weak reference is valid only until the target is collected, which can occur anytime after the finalizer is run.
+  If the object's type does not have a [Finalize](xref:System.Object.Finalize) method, the short weak reference functionality applies and the weak reference is valid only until the target is collected, which can occur anytime after the finalizer is run.
 
-To establish a strong reference and use the object again, cast the [Target](xref:System.WeakReference.html#System_WeakReference_Target) property of a [WeakReference](xref:System.WeakReference) to the type of the object. If the [Target](xref:System.WeakReference.html#System_WeakReference_Target) property returns `null`, the object was collected; otherwise, you can continue to use the object because the application has regained a strong reference to it.
+To establish a strong reference and use the object again, cast the [Target](xref:System.WeakReference.Target) property of a [WeakReference](xref:System.WeakReference) to the type of the object. If the [Target](xref:System.WeakReference.Target) property returns `null`, the object was collected; otherwise, you can continue to use the object because the application has regained a strong reference to it.
 
 ## Guidelines for Using Weak References
 

@@ -41,7 +41,7 @@ Supported patterns are shown in the following table. At run time, the input is t
 |AND pattern|*pattern1* &amp; *pattern2*|`(a, b) & (_, "test")`|
 |Cons pattern|*identifier* :: *list-identifier*|`h :: t`|
 |List pattern|[ *pattern_1*; ... ; *pattern_n* ]|`[ a; b; c ]`|
-|Array pattern|[&#124; *pattern_1*; ..; *pattern_n* ]|<code>[&#124; a; b; c &#124;]</code>|
+|Array pattern|[&#124; *pattern_1*; ..; *pattern_n* &#124;]|<code>[&#124; a; b; c &#124;]</code>|
 |Parenthesized pattern|( *pattern* )|`( a )`|
 |Tuple pattern|( *pattern_1*, ... , *pattern_n* )|`( a, b )`|
 |Record pattern|{ *identifier1* = *pattern_1*; ... ; *identifier_n* = *pattern_n* }|`{ Name = name; }`|

@@ -2,7 +2,7 @@
 title: Weak references
 description: Weak references
 keywords: .NET, .NET Core
-author: shoag
+author: stevehoag
 manager: wpickett
 ms.date: 08/19/2016
 ms.topic: article

@@ -2,7 +2,7 @@
 title: Induced collections
 description: Induced collections
 keywords: .NET, .NET Core
-author: shoag
+author: stevehoag
 manager: wpickett
 ms.date: 08/16/2016
 ms.topic: article

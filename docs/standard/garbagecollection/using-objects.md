@@ -2,7 +2,7 @@
 title: Using objects that implement IDisposable
 description: Using objects that implement IDisposable
 keywords: .NET, .NET Core
-author: shoag
+author: stevehoag
 manager: wpickett
 ms.date: 08/19/2016
 ms.topic: article

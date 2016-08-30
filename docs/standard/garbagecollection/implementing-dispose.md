@@ -2,7 +2,7 @@
 title: Implementing a dispose method
 description: Implementing a dispose method
 keywords: .NET, .NET Core
-author: shoag
+author: stevehoag
 manager: wpickett
 ms.date: 08/16/2016
 ms.topic: article

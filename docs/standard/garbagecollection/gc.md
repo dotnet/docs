@@ -2,7 +2,7 @@
 title: Automatic memory management and garbage collection
 description: Automatic memory management and garbage collection
 keywords: .NET, .NET Core
-author: shoag
+author: stevehoag
 manager: wpickett
 ms.date: 07/22/2016
 ms.topic: article

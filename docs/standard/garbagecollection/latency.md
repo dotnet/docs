@@ -2,7 +2,7 @@
 title: Latency modes
 description: Latency modes
 keywords: .NET, .NET Core
-author: shoag
+author: stevehoag
 manager: wpickett
 ms.date: 08/18/2016
 ms.topic: article

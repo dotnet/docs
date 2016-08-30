@@ -33,7 +33,6 @@ The following table lists the application scenarios for using the [GCLatencyMode
 Latency mode | Application scenarios
 ------------ | --------------------- 
 [Batch](xref:System.Runtime.GCLatencyMode.Batch) | For applications that have no UI or server-side operations. This is the default mode when [concurrent garbage collection](https://msdn.microsoft.com/en-us/library/yhwwzef8(v=vs.110).aspx) is disabled.
-
 [Interactive](xref:System.Runtime.GCLatencyMode.Interactive) | For most applications that have a UI. For applications that have no UI or server-side operations. This is the default mode when [concurrent garbage collection](https://msdn.microsoft.com/en-us/library/yhwwzef8(v=vs.110).aspx) is enabled.
 [LowLatency](xref:System.Runtime.GCLatencyMode.LowLatency) | For applications that have short-term, time-sensitive operations during which interruptions from the garbage collector could be disruptive. For example, applications that do animation rendering or data acquisition functions.
 [SustainedLowLatency](xref:System.Runtime.GCLatencyMode.SustainedLowLatency) | For applications that have time-sensitive operations for a contained but potentially longer duration of time during which interruptions from the garbage collector could be disruptive. For example, applications that need quick response times as market data changes during trading hours.   This mode results in a larger managed heap size than other modes. Because it does not compact the managed heap, higher fragmentation is possible. Ensure that sufficient memory is available.

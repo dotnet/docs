@@ -1036,10 +1036,7 @@ CLS-compliant arrays conform to the following rules:
   End Class
   ' Compilation produces a compiler warning like the following:
   '    warning BC40027: Return type of function 'GetTenPrimes' is not CLS-compliant.
-  '    
-  '       Public Shared Function GetTenPrimes() As UInt32()
-  ' 
-  ```                             ~~~~~~~~~~~~
+  ```                             
 
 * Overload resolution for methods that have array parameters is based on the fact that they are arrays and on their element type. For this reason, the following definition of an overloaded `GetSquares` method is CLS-compliant. 
 

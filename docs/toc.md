@@ -200,7 +200,7 @@
 ## [Frameworks](standard/frameworks.md)
 ## [What is "managed code"?](standard/managed-code.md)
 ## [Common Language Runtime (CLR)](standard/clr.md)
-## [Language independence and language-independent components](standard/language-independence.md)
+## [Language Independence](standard/language-independence.md)
 ## [Framework Libraries](standard/framework-libraries.md)
 ## [.NET Class libraries](standard/class-libraries.md)
 ## [Portability Analyzer](standard/portability-analyzer.md)

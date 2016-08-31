@@ -956,22 +956,22 @@ CLS-compliant arrays conform to the following rules:
 
   public class Numbers
   {
-  public static Array GetTenPrimes()
-  {
-      Array arr = Array.CreateInstance(typeof(Int32), new int[] {10}, new int[] {1});
-      arr.SetValue(1, 1);
-      arr.SetValue(2, 2);
-      arr.SetValue(3, 3);
-      arr.SetValue(5, 4);
-      arr.SetValue(7, 5);
-      arr.SetValue(11, 6);
-      arr.SetValue(13, 7);
-      arr.SetValue(17, 8);
-      arr.SetValue(19, 9);
-      arr.SetValue(23, 10);
+    public static Array GetTenPrimes()
+    {
+        Array arr = Array.CreateInstance(typeof(Int32), new int[] {10}, new int[] {1});
+        arr.SetValue(1, 1);
+        arr.SetValue(2, 2);
+        arr.SetValue(3, 3);
+        arr.SetValue(5, 4);
+        arr.SetValue(7, 5);
+        arr.SetValue(11, 6); 
+        arr.SetValue(13, 7);
+        arr.SetValue(17, 8);
+        arr.SetValue(19, 9);
+        arr.SetValue(23, 10);
 
-      return arr; 
-  }
+        return arr; 
+    }
   }
   ```
 
@@ -1005,17 +1005,17 @@ CLS-compliant arrays conform to the following rules:
 
   public class Numbers
   {
-  public static UInt32[] GetTenPrimes()
-  {
-      uint[] arr = { 1u, 2u, 3u, 5u, 7u, 11u, 13u, 17u, 19u };
-      return arr;
-  }
+    public static UInt32[] GetTenPrimes()
+    {
+        uint[] arr = { 1u, 2u, 3u, 5u, 7u, 11u, 13u, 17u, 19u };
+        return arr;
+    }
 
-  public static Object[] GetFivePrimes()
-  {
-      Object[] arr = { 1, 2, 3, 5u, 7u };
-      return arr;
-  }
+    public static Object[] GetFivePrimes()
+    {
+        Object[] arr = { 1, 2, 3, 5u, 7u };
+        return arr;
+    }
   }
   // Compilation produces a compiler warning like the following:
   //    Array2.cs(8,27): warning CS3002: Return type of 'Numbers.GetTenPrimes()' is not
@@ -1048,30 +1048,30 @@ CLS-compliant arrays conform to the following rules:
 
   public class Numbers
   {
-  public static byte[] GetSquares(byte[] numbers)
+    public static byte[] GetSquares(byte[] numbers)
+    {
+        byte[] numbersOut = new byte[numbers.Length];
+        for (int ctr = 0; ctr < numbers.Length; ctr++) {
+            int square = ((int) numbers[ctr]) * ((int) numbers[ctr]); 
+            if (square <= Byte.MaxValue)
+                numbersOut[ctr] = (byte) square;
+            // If there's an overflow, assign MaxValue to the corresponding 
+            // element.
+            else
+                numbersOut[ctr] = Byte.MaxValue;
+
+        }
+        return numbersOut;
+    }
+
+    public static BigInteger[] GetSquares(BigInteger[] numbers)
   {
-      byte[] numbersOut = new byte[numbers.Length];
-      for (int ctr = 0; ctr < numbers.Length; ctr++) {
-          int square = ((int) numbers[ctr]) * ((int) numbers[ctr]); 
-          if (square <= Byte.MaxValue)
-              numbersOut[ctr] = (byte) square;
-          // If there's an overflow, assign MaxValue to the corresponding 
-          // element.
-          else
-              numbersOut[ctr] = Byte.MaxValue;
+        BigInteger[] numbersOut = new BigInteger[numbers.Length];
+        for (int ctr = 0; ctr < numbers.Length; ctr++)
+            numbersOut[ctr] = numbers[ctr] * numbers[ctr]; 
 
-      }
-      return numbersOut;
-  }
-
-  public static BigInteger[] GetSquares(BigInteger[] numbers)
-  {
-      BigInteger[] numbersOut = new BigInteger[numbers.Length];
-      for (int ctr = 0; ctr < numbers.Length; ctr++)
-          numbersOut[ctr] = numbers[ctr] * numbers[ctr]; 
-
-     return numbersOut;
-  }
+       return numbersOut;
+    }
   }
   ```
 

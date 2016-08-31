@@ -1,6 +1,6 @@
 ---
 title: Building .NET Core Docker Images
-description: Understading Docker images and .NET Core
+description: Understanding Docker images and .NET Core
 keywords: .NET, .NET Core, Docker
 author: spboyer
 manager: wpickett
@@ -15,19 +15,37 @@ ms.assetid: 03c28597-7e73-46d6-a9c3-f9cb55642739
 
 #Building Docker Images for .NET Core Applications
 
-In order to get an understanding of how to use .NET Core and Docker together, we must first get to know the different Docker images that are offered and when is the right use case for them. Here we will walk through the variatons offered, build an ASP.NET Core Web API, use the Yeoman Docker tools to create a debuggable container as well as peek at how Visual Studio Code can assist in the process. 
+In order to get an understanding of how to use .NET Core and Docker together, we must first get to know the different Docker images that are offered and when is the right use case for them. Here we will walk through the variations offered, build an ASP.NET Core Web API, use the Yeoman Docker tools to create a debuggable container as well as peek at how Visual Studio Code can assist in the process. 
 
-## Docker image variatons
+## Docker Image Optimizations
 
-The `microsoft/dotnet` images are offered in three different variations, each for a specific use case.
+When building docker images for developers, we focused on 3 main scenarios
 
-- `microsoft/dotnet:<version>-sdk` : that is **microsoft/dotnet-preview2-sdk**, this image contains the .NET Core SDK which includes the .NET Core and Command Line Tools (CLI). Use this image for your development processes; dev, test debug.
+- Images used to develop .NET Core apps
+- Images used to build .NET Core apps
+- Images used to run .NET Core apps
 
-- `microsoft/dotnet:<version>-onbuild` : that is **microsoft/dotnet:onbuild**, contains [ONBUILD](https://docs.docker.com/engine/reference/builder/#/onbuild) triggers which should cover most applications. The build will [COPY](https://docs.docker.com/engine/reference/builder/#/copy) you application, run `dotnet restore` and create an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#/entrypoint) `dotnet run` instruction to run the application when the Docker image is run.
+Why 3 images?
+When developing, building and running containerized applications, we have different priorities.
+- **Development:**  How fast can you iterate changes, and the ability to debug the changes. The size of the image isn't as important, rather can you make changes to your code and see them quickly. Some of our tools, like [yo docker](https://aka.ms/yodocker) for use in VS Code use this image during development time. 
+- **Build:** What's needed to compile your app. This includes the compiler and any other dependencies to optimize the binaries. This image isn't the image you deploy, rather it's an image you use to build the content you place into a production image. This image would be used in your continuous integration, or build environment. For instance, rather than installing all the dependencies directly on a build agent, the build agent would instance a build image to compile the application with all the dependencies required to build the app contained within the image. Your build agent only needs to know how to run this docker image. 
+- **Prod:** How fast you can you deploy and start your image. This image is small so it can quickly travel across the network from your docker registry to your docker hosts. The contents are ready to run enabling the fastest time from docker run to processing results. In the immutable docker model, there's no need for dynamic compilation of code, nor razor files (`.cshtml`) as the contents of an image would never change. The content you place in this image would be limited to the binaries and content needed to run the applicaiton. For example, the published output using `dotnet publish` which contains the compiled binaries, images, .js and .css files. Over time, you'll see images that contain pre-jitted packages.   
 
-- `microsoft/dotnet:<version>-core` : that is **microsoft/dotnet:1.0.0-core**, image contains only .NET Core (runtime and libraries) and it is optimized for running [portable .NET Core applications](https://docs.microsoft.com/en-us/dotnet/articles/core/app-types).
+## Docker image variations
 
-- `microsoft/dotnet:<version>-core-deps` : that is **microsoft/dotnet:1.0.0-core-deps**, if you wish to run self-contained applications use this image.  Contains the operating system with all of the native dependencies needed by .NET Core. Can also be used to build a custom copy of .NET core by compiling coreclr and corefx.
+To achieve the goals above, we provide image variants under [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/).
+
+- `microsoft/dotnet:<version>-sdk` : that is **microsoft/dotnet-preview2-sdk**, this image contains the .NET Core SDK which includes the .NET Core and Command Line Tools (CLI). This image maps to the **development scenario**. You would use this image for local development, debugging and unit testing. For example, all the development you do, before you check in your code. This image can also be used for your **build** scenarios.
+
+- `microsoft/dotnet:<version>-core` : that is **microsoft/dotnet:1.0.0-core**, image which runs [portable .NET Core applications](https://docs.microsoft.com/en-us/dotnet/articles/core/app-types) and it is optimized for running your application in **production**. It does not contain the SDK, and is meant to take the optimized output of `dotnet publish`. The portable runtime is well suited for docker container scenarios as running multiple containers benefit from shared image layers.  
+
+## Alternative images
+
+In addition to the optimized scenarios of development, build and production, we provide additional images:
+
+- `microsoft/dotnet:<version>-onbuild` : that is **microsoft/dotnet:onbuild**, contains [ONBUILD](https://docs.docker.com/engine/reference/builder/#/onbuild) triggers. The build will [COPY](https://docs.docker.com/engine/reference/builder/#/copy) you application, run `dotnet restore` and create an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#/entrypoint) `dotnet run` instruction to run the application when the Docker image is run. While not an optimized image for production, some may find it useful to simply copy their source code into an image and run it. 
+
+- `microsoft/dotnet:<version>-core-deps` : that is **microsoft/dotnet:1.0.0-core-deps**, if you wish to run self-contained applications use this image.  Contains the operating system with all of the native dependencies needed by .NET Core. Can also be used to build a custom copy of .NET core by compiling coreclr and corefx. While the **onbuild** variant is optimized to simply place your code in an image and run it, this image is optimized to have only the operating system dependencies required to run .NET Core apps that have the .NET Runtime packaged with the application. This image isn't generally optimized for running multiple .NET Core containers on the same host, as each image caries the .NET Core runtime within the application, and you will not benefit from image layering.   
 
 Latest versions of each variant:
 
@@ -36,7 +54,9 @@ Latest versions of each variant:
 - `microsoft/dotnet:core`
 - `microsoft/dotnet:core-deps`
 
-Here is a list of the images after a `docker pull <imagename>` on a development machine to show the various sizes.
+Here is a list of the images after a `docker pull <imagename>` on a development machine to show the various sizes. Notice, the development/build variant ('microsoft/dotnet:1.0.0-preview2-sdk) is larger as it contains the SDK to develop and build your application. 
+The production variant, `microsoft/dotnet:core` is smaller, as it only contains the .NET Core runtime. 
+The minimal image capable of being used on Linux, `core-deps`, is quite smaller, however your application will need to copy a private copy of the .NET Runtime with it. Since containers are already private isolation barriers, you will lose that optimization when running multiple dotnet based containers. 
 
 ```
 REPOSITORY          TAG                  IMAGE ID            SIZE
@@ -51,10 +71,12 @@ microsoft/dotnet    1.0.0-core           b8da4a1fd280        253.2 MB
 
 ## Prerequisites
 
+To build and run, we'll need a few things installed:
+
 - [.NET Core](http://dot.net)
-- Docker Engine : see [Docker Installation page](http://www.docker.com/products/docker)
+- [Docker for Windows or Docker for Mac](http://www.docker.com/products/docker) from Docker to run your docker containers locally 
 - [Yeoman generator for ASP.NET](https://github.com/omnisharp/generator-aspnet) for creating the Web API application
-- [Yeoman generator for Docker](https://github.com/microsoft/generator-docker) from Microsoft
+- [Yeoman generator for Docker](http://aka.ms/yodocker) from Microsoft
 
 Install the Yeoman generators for ASP.NET Core and Docker using npm 
 
@@ -67,12 +89,16 @@ npm install -g yo generator-aspnet generator-docker
 
 ## Creating the Web API application
 
-Open a command or terminal session and using the ASP.NET Yeoman generator type the following.
+For a reference point, before we containerize the application, we'll first run the application locally. 
+
+Create a directory for your application.
+
+Open a command or terminal session in that directory and use the ASP.NET Yeoman generator by typing the following:
 ```
 yo aspnet
 ```
 
-Select **Web API Application** and type **api** for the name of the app and tap enter.  Once the application is scaffolded, change to the `/api` directory and restore the NuGet dependencies using `dotnet restore`
+Select **Web API Application** and type **api** for the name of the app and tap enter.  Once the application is scaffolded, change to the `/api` directory and restore the NuGet dependencies using `dotnet restore`.
 
 ```
 cd api
@@ -91,6 +117,7 @@ Test the application using `dotnet run` and browsing to **http://localhost:5000/
 Use `Ctrl+C` to stop the application.
 
 ## Adding Docker support
+
 Adding Docker support to the project is achieved using the Yeoman generator from Microsoft. It currently supports .NET Core, Node.js and Go projects by creating a Dockerfile and scripts that help build and run projects inside containers. Visual Studio Code specific files are also added (launch.json, tasks.json) for editor debugging and command palette support.
 
 ```console
@@ -167,7 +194,7 @@ Then tap the play icon or F5 to generate the image and start the application wit
 
 You may set break points in your application, step through, etc. just as if the application was running locally on your development machine as opposed to inside the container. The benefit to debugging within the container is this is the same image that would be deployed to a production environment.
 
-Creating the release image requires simply running the command from the terminal passing the `release` environment name.
+Creating the release or production image requires simply running the command from the terminal passing the `release` environment name.
 
 ```bash
 ./dockerTask build release
@@ -183,7 +210,6 @@ api                 latest               ef17184c8de6        1 hour ago        2
 
 ## Summary
 
-Using the Docker generator to add the necessary files to our Web API application made the process simple to create the debug and release versions of the images.  The tooling is cross platform by also providing a PowerShell script to accomplish the same results on Windows and Visual Studio Code integration allowed for step through debugging of the application within the container. 
-
+Using the Docker generator to add the necessary files to our Web API application made the process simple to create the development and production versions of the images.  The tooling is cross platform by also providing a PowerShell script to accomplish the same results on Windows and Visual Studio Code integration providing step through debugging of the application within the container. By understanding the image variants and the target scenarios, you can optimize your inner-loop development process, while achieving optimized images for production deployments.  
 
 

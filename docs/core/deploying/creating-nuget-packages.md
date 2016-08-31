@@ -14,7 +14,8 @@ ms.assetid: 2f0415c1-110b-433d-87c1-ae3d543a8844
 
 # How to Create a NuGet Package with Cross Platform Tools
 
-> **Note:** The following shows command-line samples using unix.  The `dotnet pack` command as shown here works the same way on Windows.
+> [!NOTE]
+> The following shows command-line samples using Unix.  The `dotnet pack` command as shown here works the same way on Windows.
 
 For .NET Core 1.0, libraries are expected to be distributed as NuGet packages.  This is in fact how all of the .NET Standard libraries are distributed and consumed.  This is most easily done with the `dotnet pack` command.
 

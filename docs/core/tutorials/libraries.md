@@ -83,7 +83,8 @@ You have three primary options when targeting the .NET Standard, depending on yo
 
 ## How to target the .NET Framework
 
-**NOTE:** These instructions assume you have the .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) to get dependencies installed.
+> [!NOTE]
+> These instructions assume you have the .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) to get dependencies installed.
 
 Keep in mind that some of the .NET Framework versions used here are no longer in support.  Refer to the [.NET Framework Support Lifecycle Policy FAQ](https://support.microsoft.com/gp/framework_faq/en-us) about unsupported versions.
 
@@ -117,7 +118,8 @@ And that's it!  Although this compiled only for the .NET Framework 4, you can us
 
 ## How to target a Portable Class Library (PCL)
 
-**NOTE:** These instructions assume you have the .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) to get dependencies installed.
+> [!NOTE]
+> These instructions assume you have the .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) to get dependencies installed.
 
 Targeting a PCL profile is a bit trickier than targeting .NET Standard or the .NET Framework.  For starters, [reference this list of PCL profiles](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview) to find the NuGet target which corresponds to the PCL profile you are targeting.
 
@@ -153,7 +155,8 @@ This folder contains the `.dll` files necessary to run your library.
 
 ## How to Multitarget
 
-**NOTE:** These following instructions assume you have the .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) section to learn which dependencies you need to install and where to download them from.
+> [!NOTE]
+> The following instructions assume you have the .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) section to learn which dependencies you need to install and where to download them from.
 
 You may need to target older versions of the .NET Framework when your project supports both the .NET Framework and .NET Core. In this scenario, if you want to use newer APIs and language constructs for the newer targets, use `#if` directives in your code. You also might need to add different packages and dependencies in your `project.json file` for each platform you're targeting to include the different APIs needed for each case.
 

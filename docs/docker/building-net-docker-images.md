@@ -45,7 +45,7 @@ In addition to the optimized scenarios of development, build and production, we 
 
 - `microsoft/dotnet:<version>-onbuild` : that is **microsoft/dotnet:onbuild**, contains [ONBUILD](https://docs.docker.com/engine/reference/builder/#/onbuild) triggers. The build will [COPY](https://docs.docker.com/engine/reference/builder/#/copy) your application, run `dotnet restore` and create an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#/entrypoint) `dotnet run` instruction to run the application when the Docker image is run. While not an optimized image for production, some may find it useful to simply copy their source code into an image and run it. 
 
-- `microsoft/dotnet:<version>-core-deps` : that is **microsoft/dotnet:1.0.0-core-deps**, if you wish to run self-contained applications use this image. It contains the operating system with all of the native dependencies needed by .NET Core. This image can also be used as a base image for your own custom corefx or coreclr builds. While the **onbuild** variant is optimized to simply place your code in an image and run it, this image is optimized to have only the operating system dependencies required to run .NET Core apps that have the .NET Runtime packaged with the application. This image isn't generally optimized for running multiple .NET Core containers on the same host, as each image carries the .NET Core runtime within the application, and you will not benefit from image layering.   
+- `microsoft/dotnet:<version>-core-deps` : that is **microsoft/dotnet:1.0.0-core-deps**, if you wish to run self-contained applications use this image. It contains the operating system with all of the native dependencies needed by .NET Core. This image can also be used as a base image for your own custom CoreFX or CoreCLR builds. While the **onbuild** variant is optimized to simply place your code in an image and run it, this image is optimized to have only the operating system dependencies required to run .NET Core apps that have the .NET Runtime packaged with the application. This image isn't generally optimized for running multiple .NET Core containers on the same host, as each image carries the .NET Core runtime within the application, and you will not benefit from image layering.   
 
 Latest versions of each variant:
 
@@ -70,7 +70,7 @@ microsoft/dotnet    1.0.0-core           b8da4a1fd280        253.2 MB
 
 ## Prerequisites
 
-To build and run, we'll need a few things installed:
+To build and run, you'll need a few things installed:
 
 - [.NET Core](http://dot.net)
 - [Docker for Windows or Docker for Mac](http://www.docker.com/products/docker) from Docker to run your Docker containers locally 
@@ -88,7 +88,7 @@ npm install -g yo generator-aspnet generator-docker
 
 ## Creating the Web API application
 
-For a reference point, before we containerize the application, we'll first run the application locally. 
+For a reference point, before we containerize the application, first run the application locally. 
 
 Create a directory for your application.
 

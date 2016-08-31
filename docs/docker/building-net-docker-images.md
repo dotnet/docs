@@ -135,7 +135,7 @@ When the generator is complete, the following files are added to the project
 
 The generator creates two Dockerfiles.
 
-**Dockerfile.debug** - this file is based on the **microsoft/dotnet:1.0.0-preview2-sdk** image which if you note from the list of image variants, includes the SDK, CLI and .NET Core and will be the image used for development and debugging (F5). Including all of these components produces a larger image with a size roughly 540MB.
+**Dockerfile.debug** - this file is based on the **microsoft/dotnet:1.0.0-preview2-sdk** image which if you note from the list of image variants, includes the SDK, CLI and .NET Core and will be the image used for development and debugging (F5). Including all of these components produces a larger image with a size roughly of 540MB.
 
 **Dockerfile** - this image is the release image based on **microsoft/dotnet:1.0.0-core** and should be used for production. This image when built is approximately 253 MB.
 

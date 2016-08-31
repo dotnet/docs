@@ -19,13 +19,13 @@ In order to get an understanding of how to use .NET Core and Docker together, we
 
 ## Docker Image Optimizations
 
-When building Docker images for developers, we focused on 3 main scenarios
+When building Docker images for developers, we focused on three main scenarios:
 
 - Images used to develop .NET Core apps
 - Images used to build .NET Core apps
 - Images used to run .NET Core apps
 
-Why Three images?
+Why three images?
 When developing, building and running containerized applications, we have different priorities.
 - **Development:**  How fast can you iterate changes, and the ability to debug the changes. The size of the image isn't as important, rather can you make changes to your code and see them quickly. Some of our tools, like [yo docker](https://aka.ms/yodocker) for use in VS Code use this image during development time. 
 - **Build:** What's needed to compile your app. This includes the compiler and any other dependencies to optimize the binaries. This image isn't the image you deploy, rather it's an image you use to build the content you place into a production image. This image would be used in your continuous integration, or build environment. For instance, rather than installing all the dependencies directly on a build agent, the build agent would instance a build image to compile the application with all the dependencies required to build the app contained within the image. Your build agent only needs to know how to run this Docker image. 

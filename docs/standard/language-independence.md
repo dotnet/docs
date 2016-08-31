@@ -2,7 +2,7 @@
 title: Language independence and language-independent components
 description: Language independence and language-independent components
 keywords: .NET, .NET Core
-author: shoag
+author: stevehoag
 manager: wpickett
 ms.date: 07/22/2016
 ms.topic: article
@@ -163,11 +163,11 @@ Constructors | [Constructors](#constructors) | An object constructor shall not b
 Enumerations | [Enumerations](#enumerations) | The underlying type of an enum shall be a built-in CLS integer type, the name of the field shall be "value__", and that field shall be marked `RTSpecialName`. |  7
 Enumerations | [Enumerations](#enumerations) | There are two distinct kinds of enums, indicated by the presence or absence of the [System.FlagsAttribute](xref:System.FlagsAttribute) (see Partition IV Library) custom attribute. One represents named integer values; the other represents named bit flags that can be combined to generate an unnamed value. The value of an `enum` is not limited to the specified values. |  8
 Enumerations | [Enumerations](#enumerations) | Literal static fields of an enum shall have the type of the enum itself. |  9
-Events | [Events](#events) | The methods that implement an event shall be marked `SpecialName` in themetadata. |29
+Events | [Events](#events) | The methods that implement an event shall be marked `SpecialName` in the metadata. |29
 Events | [Events](#events) | The accessibility of an event and of its accessors shall be identical. |30
 Events | [Events](#events) | The `add` and `remove` methods for an event shall both either be present or absent. |31
 Events | [Events](#events) | The `add`and `remove` methods for an event shall each take one parameter whose type defines the type of the event and that shall be derived from [System.Delegate](xref:System.Delegate). |32
-Events | [Events](#events) |  |33
+Events | [Events](#events) | Events shall adhere to a specific naming pattern. The SpecialName attribute referred to in CLS rule 29 shall be ignored in appropriate name comparisons and shall adhere to identifier rules.  |33
 Exceptions | [Exceptions](#exceptions) | Objects that are thrown shall be of type [System.Exception](xref:System.Exception) or a type inheriting from it. Nonetheless, CLS-compliant methods are not required to block the propagation of other types of exceptions. | 40
 General | [CLS compliance rules](#cls-compliance-rules) | CLS rules apply only to those parts of a type that are accessible or visible outsideof the defining assembly. | 1
 General | [CLS compliance rules](#cls-compliance-rules) | Members of non-CLS compliant types shall not be marked CLS-compliant. | 2
@@ -951,165 +951,163 @@ CLS-compliant arrays conform to the following rules:
 
 * All dimensions of an array must have a lower bound of zero. The following example creates a non-CLS-compliant array with a lower bound of one. Note that, despite the presence of the [CLSCompliantAttribute](xref:System.CLSCompliantAttribute) attribute, the compiler does not detect that the array returned by the `Numbers.GetTenPrimes` method is not CLS-compliant. 
 
-    ```csharp
-    [assembly: CLSCompliant(true)]
+  ```csharp
+  [assembly: CLSCompliant(true)]
 
-    public class Numbers
-    {
-    public static Array GetTenPrimes()
-    {
-        Array arr = Array.CreateInstance(typeof(Int32), new int[] {10}, new int[] {1});
-        arr.SetValue(1, 1);
-        arr.SetValue(2, 2);
-        arr.SetValue(3, 3);
-        arr.SetValue(5, 4);
-        arr.SetValue(7, 5);
-        arr.SetValue(11, 6);
-        arr.SetValue(13, 7);
-        arr.SetValue(17, 8);
-        arr.SetValue(19, 9);
-        arr.SetValue(23, 10);
+  public class Numbers
+  {
+  public static Array GetTenPrimes()
+  {
+      Array arr = Array.CreateInstance(typeof(Int32), new int[] {10}, new int[] {1});
+      arr.SetValue(1, 1);
+      arr.SetValue(2, 2);
+      arr.SetValue(3, 3);
+      arr.SetValue(5, 4);
+      arr.SetValue(7, 5);
+      arr.SetValue(11, 6);
+      arr.SetValue(13, 7);
+      arr.SetValue(17, 8);
+      arr.SetValue(19, 9);
+      arr.SetValue(23, 10);
 
-        return arr; 
-    }
-    }
-    ```
+      return arr; 
+  }
+  }
+  ```
 
-    ```vb
-    <Assembly: CLSCompliant(True)>
+  ```vb
+  <Assembly: CLSCompliant(True)>
 
-    Public Class Numbers
-       Public Shared Function GetTenPrimes() As Array
-          Dim arr As Array = Array.CreateInstance(GetType(Int32), {10}, {1})
-          arr.SetValue(1, 1)
-          arr.SetValue(2, 2)
-          arr.SetValue(3, 3)
-          arr.SetValue(5, 4)
-          arr.SetValue(7, 5)
-          arr.SetValue(11, 6)
-          arr.SetValue(13, 7)
-          arr.SetValue(17, 8)
-          arr.SetValue(19, 9)
-          arr.SetValue(23, 10)
-
-          Return arr
-       End Function
-    End Class
-    ```
+  Public Class Numbers
+     Public Shared Function GetTenPrimes() As Array
+        Dim arr As Array = Array.CreateInstance(GetType(Int32), {10}, {1})
+        arr.SetValue(1, 1)
+        arr.SetValue(2, 2)
+        arr.SetValue(3, 3)
+        arr.SetValue(5, 4)
+        arr.SetValue(7, 5)
+        arr.SetValue(11, 6)
+        arr.SetValue(13, 7)
+        arr.SetValue(17, 8)
+        arr.SetValue(19, 9)
+        arr.SetValue(23, 10)
+        Return arr
+     End Function
+  End Class
+  ```
 
 * All array elements must consist of CLS-compliant types. The following example defines two methods that return non-CLS-compliant arrays. The first returns an array of [UInt32](xref:System.UInt32) values. The second returns an [Object](xref:System.Object) array that includes [Int32](xref:System.Int32) and `UInt32` values. Although the compiler identifies the first array as non-compliant because of its `UInt32` type, it fails to recognize that the second array includes non-CLS-compliant elements. 
 
-    ```csharp
-    using System;
+  ```csharp
+  using System;
 
-    [assembly: CLSCompliant(true)]
+  [assembly: CLSCompliant(true)]
 
-    public class Numbers
-    {
-    public static UInt32[] GetTenPrimes()
-    {
-        uint[] arr = { 1u, 2u, 3u, 5u, 7u, 11u, 13u, 17u, 19u };
-        return arr;
-    }
+  public class Numbers
+  {
+  public static UInt32[] GetTenPrimes()
+  {
+      uint[] arr = { 1u, 2u, 3u, 5u, 7u, 11u, 13u, 17u, 19u };
+      return arr;
+  }
 
-    public static Object[] GetFivePrimes()
-    {
-        Object[] arr = { 1, 2, 3, 5u, 7u };
-        return arr;
-    }
-    }
-    // Compilation produces a compiler warning like the following:
-    //    Array2.cs(8,27): warning CS3002: Return type of 'Numbers.GetTenPrimes()' is not
-    //            CLS-compliant
-    ```
+  public static Object[] GetFivePrimes()
+  {
+      Object[] arr = { 1, 2, 3, 5u, 7u };
+      return arr;
+  }
+  }
+  // Compilation produces a compiler warning like the following:
+  //    Array2.cs(8,27): warning CS3002: Return type of 'Numbers.GetTenPrimes()' is not
+  //            CLS-compliant
+  ```
 
-    ```vb
-    <Assembly: CLSCompliant(True)>
+  ```vb
+  <Assembly: CLSCompliant(True)>
 
-    Public Class Numbers
-       Public Shared Function GetTenPrimes() As UInt32()
-          Return { 1ui, 2ui, 3ui, 5ui, 7ui, 11ui, 13ui, 17ui, 19ui }
-       End Function
-
-       Public Shared Function GetFivePrimes() As Object()
-          Dim arr() As Object = { 1, 2, 3, 5ui, 7ui }
-          Return arr
-       End Function
-    End Class
-    ' Compilation produces a compiler warning like the following:
-    '    warning BC40027: Return type of function 'GetTenPrimes' is not CLS-compliant.
-    '    
-    '       Public Shared Function GetTenPrimes() As UInt32()
-    ' 
-    ```                             ~~~~~~~~~~~~
+  Public Class Numbers
+     Public Shared Function GetTenPrimes() As UInt32()
+        Return { 1ui, 2ui, 3ui, 5ui, 7ui, 11ui, 13ui, 17ui, 19ui }
+     End Function
+     Public Shared Function GetFivePrimes() As Object()
+        Dim arr() As Object = { 1, 2, 3, 5ui, 7ui }
+        Return arr
+     End Function
+  End Class
+  ' Compilation produces a compiler warning like the following:
+  '    warning BC40027: Return type of function 'GetTenPrimes' is not CLS-compliant.
+  '    
+  '       Public Shared Function GetTenPrimes() As UInt32()
+  ' 
+  ```                             ~~~~~~~~~~~~
 
 * Overload resolution for methods that have array parameters is based on the fact that they are arrays and on their element type. For this reason, the following definition of an overloaded `GetSquares` method is CLS-compliant. 
 
-    ```csharp
-    using System;
-    using System.Numerics;
+  ```csharp
+  using System;
+  using System.Numerics;
 
-    [assembly: CLSCompliant(true)]
+  [assembly: CLSCompliant(true)]
 
-    public class Numbers
-    {
-    public static byte[] GetSquares(byte[] numbers)
-    {
-        byte[] numbersOut = new byte[numbers.Length];
-        for (int ctr = 0; ctr < numbers.Length; ctr++) {
-            int square = ((int) numbers[ctr]) * ((int) numbers[ctr]); 
-            if (square <= Byte.MaxValue)
-                numbersOut[ctr] = (byte) square;
-            // If there's an overflow, assign MaxValue to the corresponding 
-            // element.
-            else
-                numbersOut[ctr] = Byte.MaxValue;
+  public class Numbers
+  {
+  public static byte[] GetSquares(byte[] numbers)
+  {
+      byte[] numbersOut = new byte[numbers.Length];
+      for (int ctr = 0; ctr < numbers.Length; ctr++) {
+          int square = ((int) numbers[ctr]) * ((int) numbers[ctr]); 
+          if (square <= Byte.MaxValue)
+              numbersOut[ctr] = (byte) square;
+          // If there's an overflow, assign MaxValue to the corresponding 
+          // element.
+          else
+              numbersOut[ctr] = Byte.MaxValue;
 
-        }
-        return numbersOut;
-    }
+      }
+      return numbersOut;
+  }
 
-    public static BigInteger[] GetSquares(BigInteger[] numbers)
-    {
-        BigInteger[] numbersOut = new BigInteger[numbers.Length];
-        for (int ctr = 0; ctr < numbers.Length; ctr++)
-            numbersOut[ctr] = numbers[ctr] * numbers[ctr]; 
+  public static BigInteger[] GetSquares(BigInteger[] numbers)
+  {
+      BigInteger[] numbersOut = new BigInteger[numbers.Length];
+      for (int ctr = 0; ctr < numbers.Length; ctr++)
+          numbersOut[ctr] = numbers[ctr] * numbers[ctr]; 
 
-        return numbersOut;
-    }
-    }
-    ```
+     return numbersOut;
+  }
+  }
+  ```
 
-    ```vb
-    Imports System.Numerics
+  ```vb
+  Imports System.Numerics
 
-    <Assembly: CLSCompliant(True)>
+  <Assembly: CLSCompliant(True)>
 
-    Public Module Numbers
-       Public Function GetSquares(numbers As Byte()) As Byte()
-          Dim numbersOut(numbers.Length - 1) As Byte
-          For ctr As Integer = 0 To numbers.Length - 1
-             Dim square As Integer = (CInt(numbers(ctr)) * CInt(numbers(ctr))) 
-             If square <= Byte.MaxValue Then
-                numbersOut(ctr) = CByte(square)
-             ' If there's an overflow, assign MaxValue to the corresponding 
-             ' element.
-             Else
-                numbersOut(ctr) = Byte.MaxValue
-             End If   
-          Next
-          Return numbersOut
-       End Function
+  Public Module Numbers
+     Public Function GetSquares(numbers As Byte()) As Byte()
+        Dim numbersOut(numbers.Length - 1) As Byte
+        For ctr As Integer = 0 To numbers.Length - 1
+           Dim square As Integer = (CInt(numbers(ctr)) * CInt(numbers(ctr))) 
+           If square <= Byte.MaxValue Then
+              numbersOut(ctr) = CByte(square)
+           ' If there's an overflow, assign MaxValue to the corresponding 
+           ' element.
+           Else
+              numbersOut(ctr) = Byte.MaxValue
+           End If   
+        Next
+        Return numbersOut
+     End Function
 
-       Public Function GetSquares(numbers As BigInteger()) As BigInteger()
-           Dim numbersOut(numbers.Length - 1) As BigInteger
-           For ctr As Integer = 0 To numbers.Length - 1
-              numbersOut(ctr) = numbers(ctr) * numbers(ctr) 
-           Next
-           Return numbersOut
-       End Function
-    End Module
-    ```
+     Public Function GetSquares(numbers As BigInteger()) As BigInteger()
+         Dim numbersOut(numbers.Length - 1) As BigInteger
+         For ctr As Integer = 0 To numbers.Length - 1
+            numbersOut(ctr) = numbers(ctr) * numbers(ctr) 
+         Next
+         Return numbersOut
+     End Function
+  End Module
+  ```
 
 ### Interfaces
 
@@ -1121,28 +1119,27 @@ CLS-compliant interfaces can define properties, events, and virtual methods (met
 
 * Methods that are not CLS-compliant. For example, the following interface definition includes a method, `INumber.GetUnsigned`, that is marked as non-CLS-compliant. This example generates a compiler warning. 
 
-    ```csharp
-    using System;
+  ```csharp
+  using System;
 
-    [assembly:CLSCompliant(true)]
+  [assembly:CLSCompliant(true)]
 
-    public interface INumber
-    {
-        int Length();
-        [CLSCompliant(false)] ulong GetUnsigned();
-    }
-    // Attempting to compile the example displays output like the following:
-    //    Interface2.cs(8,32): warning CS3010: 'INumber.GetUnsigned()': CLS-compliant interfaces
-    //            must have only CLS-compliant members
-    ```
+  public interface INumber
+  {
+      int Length();
+      [CLSCompliant(false)] ulong GetUnsigned();
+  }
+  // Attempting to compile the example displays output like the following:
+  //    Interface2.cs(8,32): warning CS3010: 'INumber.GetUnsigned()': CLS-compliant interfaces
+  //            must have only CLS-compliant members
+  ```
 
-    ```vb
-    <Assembly: CLSCompliant(True)>
+  ```vb
+  <Assembly: CLSCompliant(True)>
 
-    Public Interface INumber
-       Function Length As Integer
-
-       <CLSCompliant(False)> Function GetUnsigned As ULong   
+  Public Interface INumber
+    Function Length As Integer
+      <CLSCompliant(False)> Function GetUnsigned As ULong   
     End Interface
     ' Attempting to compile the example displays output like the following:
     '    Interface2.vb(9) : warning BC40033: Non CLS-compliant 'function' is not allowed in a 
@@ -1150,9 +1147,9 @@ CLS-compliant interfaces can define properties, events, and virtual methods (met
     '    
     '       <CLSCompliant(False)> Function GetUnsigned As ULong
     '                                      ~~~~~~~~~~~
-    ```
+  ```
 
-    Because of this rule, CLS-compliant types are not required to implement non-CLS-compliant members. If a CLS-compliant framework does expose a class that implements a non-CLS compliant interface, it should also provide concrete implementations of all non-CLS-compliant members. 
+  Because of this rule, CLS-compliant types are not required to implement non-CLS-compliant members. If a CLS-compliant framework does expose a class that implements a non-CLS compliant interface, it should also provide concrete implementations of all non-CLS-compliant members. 
 
 CLS-compliant language compilers must also allow a class to provide separate implementations of members that have the same name and signature in multiple interfaces. C# supports explicit interface implementations to provide different implementations of identically named methods. The following example illustrates this scenario by defining a `Temperature` class that implements the `ICelsius` and `IFahrenheit` interfaces as explicit interface implementations. 
 
@@ -1626,7 +1623,7 @@ End Module
 '       Outer`1+Inner1B`1[System.String,System.Int32]
 ```
 
-Generic type names are encoded in the form *name`n*, where *name* is the type name, *`* is a character literal, and *n* is the number of parameters declared on the type, or, for nested generic types, the number of newly introduced type parameters. This encoding of generic type names is primarily of interest to developers who use reflection to access CLS-complaint generic types in a library. 
+Generic type names are encoded in the form *name*'*n*, where *name* is the type name, *`* is a character literal, and *n* is the number of parameters declared on the type, or, for nested generic types, the number of newly introduced type parameters. This encoding of generic type names is primarily of interest to developers who use reflection to access CLS-complaint generic types in a library. 
 
 If constraints are applied to a generic type, any types used as constraints must also be CLS-compliant. The following example defines a class named `BaseClass` that is not CLS-compliant and a generic class named `BaseCollection` whose type parameter must derive from `BaseClass`. But because `BaseClass`is not CLS-compliant, the compiler emits a warning. 
 

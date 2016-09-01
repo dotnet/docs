@@ -2,7 +2,18 @@
 # [About .NET](about/index.md)
 ## [.NET Products](about/products.md)
 # [C# Guide](csharp/index.md)
+## [🔧 Getting Started](csharp/getting-started/index.md)
+### [🔧 Getting started with Visual Studio](csharp/getting-started/with-visual-studio.md)
+### [🔧 Getting started with Visual Studio Code and OmniSharp](csharp/getting-started/with-visual-studio-code.md)
+### [🔧 Getting started with cross-platform tools](csharp/getting-started/with-cross-platform-tools.md)
+### [🔧 Getting started with C# Interactive](csharp/getting-started/with-csharp-interactive.md)
 ## [Tutorials](csharp/tutorials/index.md)
+### [🔧 Using Visual Studio to create, debug, and deploy an application](csharp/tutorials/create-debug-deploy.md)
+### [🔧 Using C# Interactive to explore and experiment](csharp/tutorials/exploring-with-csharp-interactive.md)
+### [🔧 Creating portable libraries](csharp/tutorials/creating-portable-libraries.md)
+### [🔧 Asynchronous UI programming](csharp/tutorials/asynchronous-ui-programming.md)
+### [🔧 Asynchronous server programming](csharp/tutorials/asynchronous-server-programming.md)
+### [🔧 Concurrent programming](csharp/tutorials/concurrent-programming.md)
 ### [Console Application](csharp/tutorials/console-teleprompter.md)
 ### [REST client](csharp/tutorials/console-webapiclient.md)
 ### [Working with LINQ](csharp/tutorials/working-with-linq.md)
@@ -19,14 +30,29 @@
 ### [Enums](csharp/tour-of-csharp/enums.md)
 ### [Delegates](csharp/tour-of-csharp/delegates.md)
 ### [Attributes](csharp/tour-of-csharp/attributes.md)
-### [What's new in C# 6](csharp/csharp-6.md)
+## [🔧 C# Interactive](csharp/index.md)
+### [🔧 Using C# Interactive in Visual Studio](csharp/index.md)
+### [🔧 Using C# Interactive from Powershell](csharp/index.md)
+### [🔧 Using C# Interactive from MacOS Terminal](csharp/index.md)
+## [🔧 Latest features] 
+### [🔧 What's new in C# 7](csharp/index.md)
+### [🔧 What's new in C# 6](csharp/csharp-6.md)
+## [🔧 C# Interactive](csharp/interactive.md)
+### [🔧 Using C# Interactive in Visual Studio](csharp/interactive-with-visualstudio.md)
+### [🔧 Using C# Interactive from Powershell](csharp/interactive-with-powershell.md)
+### [🔧 Using C# Interactive from MacOS or Linux Terminal](csharp/interactive-with-bash.md)
 ## [C# Concepts](csharp/concepts.md)
 ### [🔧 C# Type system](csharp/type-system.md)
+### [🔧 Namespaces and Assemblies](csharp/namespaces-and-assemblies.md)
+### [🔧 Basic Types](csharp/basic-types.md)
+### [🔧 Classes](csharp/classes.md)
+### [🔧 Structs](csharp/structs.md)
+### [🔧 Interfaces](csharp/interfaces.md)
+### [🔧 Methods and Lambda Expressions](csharp/lambda-expressions.md)
 ### [Properties](csharp/properties.md)
 ### [Indexers](csharp/indexers.md)
 ### [🔧 Generics](csharp/generics.md)
 ### [Iterators](csharp/iterators.md)
-### [🔧 Language Integrated Query (LINQ)](csharp/linq.md)
 ### [Delegates & events](csharp/delegates-events.md)
 #### [Introduction to Delegates](csharp/delegates-overview.md)
 #### [System.Delegate and the delegate keyword](csharp/delegate-class.md)
@@ -36,15 +62,9 @@
 #### [The .NET Event Pattern](csharp/event-pattern.md)
 #### [The Updated .NET Event Pattern](csharp/modern-events.md)
 #### [Distinguishing Delegates and Events](csharp/distinguish-delegates-events.md)
-### [🔧 Parallel programming](csharp/parallel.md)
+### [🔧 Language Integrated Query (LINQ)](csharp/linq.md)
 ### [Asynchronous programming](csharp/async.md)
-### [🔧 Lambda Expressions](csharp/lambda-expressions.md)
-<!-- This is a sidebar the delegates topics. I don't think it
-    needs to be linked into the TOC, but I wanted to leave it 
-    to get your thoughts. If it does belong in the TOC,
-    this is the location:
-#### [Implicitly Typed Lambda Expressions](csharp/implicitly-typed-lambda-expressions.md)
--->
+### [🔧 Parallel programming](csharp/parallel.md)
 ### [Expression Trees](csharp/expression-trees.md)
 #### [Expression Trees Explained](csharp/expression-trees-explained.md)
 #### [Framework Types Supporting Expression Trees](csharp/expression-classes.md)
@@ -56,12 +76,16 @@
 ### [🔧 Native interoperability](csharp/interop.md)
 ### [🔧 Reflection & code generation](csharp/reflection.md)
 ### [Documenting your code](csharp/codedoc.md) 
+## [🔧 Using the .NET Compiler Platform](csharp/roslyn/index.md)
 ## [🔧 Syntax Reference](csharp/syntax.md)
+<!--
+    The C# Reference section can be ported from here: 
+    https://msdn.microsoft.com/en-us/library/618ayhy6.aspx
 
-<!-- Note to self: update languages/csharp/index.md to match this file
-    once this is approved.  -->
+    with appropriate updates for the latest version of the language.
 
-<!-- marker for the end of edits -->
+    Or, should this instead point to an online version of the C# Language spec? 
+-->
 
 <!-- F# Content -->
 # [F# Guide](fsharp/index.md)
@@ -205,7 +229,15 @@
 ## [Portability Analyzer](standard/portability-analyzer.md)
 ## [Handling and throwing exceptions](standard/exceptions.md)
 ## [.NET Assembly File Format](standard/assembly-format.md)
-## [Garbage Collection](standard/gc-overview.md)
+## [Garbage collection](standard/garbagecollection/index.md)
+### [Automatic memory management and garbage collection](standard/garbagecollection/gc.md)
+### [Fundamentals of garbage collection](standard/garbagecollection/fundamentals.md)
+### [Induced collections](standard/garbagecollection/induced.md)
+### [Latency modes](standard/garbagecollection/latency.md)
+### [Weak references](standard/garbagecollection/weak-references.md)
+### [Cleaning up unmanaged resources](standard/garbagecollection/unmanaged.md)
+### [Implementing a dispose method](standard/garbagecollection/implementing-dispose.md)
+### [Using objects that implement IDisposable](standard/garbagecollection/using-objects.md)
 ## [Generic types](standard/generics.md)
 ## [Delegates and lambdas](standard/delegates-lambdas.md)
 ## [LINQ](standard/using-linq.md)
@@ -242,6 +274,7 @@
 ### [Developing ASP.NET Core applications](core/tutorials/aspnet-core.md)
 ### [How to Manage Package Dependency Versions for .NET Core 1.0](core/tutorials/managing-package-dependency-versions.md)
 ### [Using MSBuild to build .NET Core projects](core/tutorials/target-dotnetcore-with-msbuild.md)
+### [Building Docker Images for .NET Core Applications](core/docker/building-net-docker-images.md)
 ## [App Types](core/app-types.md)
 ## [Packages, Metapackages and Frameworks](core/packages.md)
 ## [Deploying](core/deploying/index.md)
@@ -249,6 +282,7 @@
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
 ## [Unit Testing](core/testing/index.md)
 ### [Unit Testing with dotnet test](core/testing/unit-testing-with-dotnet-test.md)
+### [Unit testing with MSTest on Windows](core/testing/using-mstest-on-windows.md)
 ## [Releases](core/versions/index.md)
 ### [Servicing](core/versions/servicing.md)
 ## [Runtime IDentifier catalog](core/rid-catalog.md)

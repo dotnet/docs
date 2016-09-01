@@ -83,7 +83,8 @@ You have three primary options when targeting the .NET Standard, depending on yo
 
 ## How to target the .NET Framework
 
-**NOTE:** These instructions assume you have the .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) to get dependencies installed.
+> [!NOTE]
+> These instructions assume you have the .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) to get dependencies installed.
 
 Keep in mind that some of the .NET Framework versions used here are no longer in support.  Refer to the [.NET Framework Support Lifecycle Policy FAQ](https://support.microsoft.com/gp/framework_faq/en-us) about unsupported versions.
 
@@ -117,7 +118,8 @@ And that's it!  Although this compiled only for the .NET Framework 4, you can us
 
 ## How to target a Portable Class Library (PCL)
 
-**NOTE:** These instructions assume you have the .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) to get dependencies installed.
+> [!NOTE]
+> These instructions assume you have the .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) to get dependencies installed.
 
 Targeting a PCL profile is a bit trickier than targeting .NET Standard or the .NET Framework.  For starters, [reference this list of PCL profiles](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview) to find the NuGet target which corresponds to the PCL profile you are targeting.
 
@@ -153,7 +155,8 @@ This folder contains the `.dll` files necessary to run your library.
 
 ## How to Multitarget
 
-**NOTE:** These following instructions assume you have the .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) section to learn which dependencies you need to install and where to download them from.
+> [!NOTE]
+> The following instructions assume you have the .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) section to learn which dependencies you need to install and where to download them from.
 
 You may need to target older versions of the .NET Framework when your project supports both the .NET Framework and .NET Core. In this scenario, if you want to use newer APIs and language constructs for the newer targets, use `#if` directives in your code. You also might need to add different packages and dependencies in your `project.json file` for each platform you're targeting to include the different APIs needed for each case.
 
@@ -470,21 +473,10 @@ Consumption scenarios like this mean that the APIs being accessed have to have a
 
 ### Project-to-project referencing
 
-To reference a project, you need to do two things:
+The best way to reference a project is to do the following:
 
-1. Understand the name and version number of the project you wish to reference.
-2. List that project as a dependency using the name and version number from (1).
-
-In the above case, you may wish to set up the `project.json` for **AwesomeLibrary.Core** as follows:
-
-```json
-{
-    "name":"AwesomeLibrary.Core",
-    "version":"1.0.0"
-}
-```
-
-You can use these entries in the `project.json` to control the name and version of the project.  If you don't specify these, the default configuration is to use the name of the containing folder as the name and 1.0.0 as the version number.
+1. Make sure the project you wish to reference has a good name for its containing folder on disk.  This will be the name used to reference your project.
+2. Reference the name from (1) in the `project.json` file of the consuming project specifying `"target":"project"`.
 
 The `project.json` files for both **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** now need to reference **AwesomeLibrary.Core** as a `project` target.  If you aren't multitargeting, you can use the global `dependencies` entry:
 
@@ -492,14 +484,11 @@ The `project.json` files for both **AwesomeLibrary.CSharp** and **AwesomeLibrary
 {
     "dependencies":{
         "AwesomeLibrary.Core":{
-            "version":"1.0.0",
             "target":"project"
         }
     }
 }
 ```
-
-> **Note:** Failure to list the reference as a `project` target may result in NuGet resolving the dependency with an existing NuGet package which happens to have the same name.  Always specify `"target":"project"` when referencing a project in the same solution.
 
 If you are multitargeting, you may not be able to use a global `dependencies` entry and may have to reference **AwesomeLibrary.Core** in a target-level `dependencies` entry.  For example, if you were targeting `netstandard1.6`, you could do so like this:
 
@@ -509,7 +498,6 @@ If you are multitargeting, you may not be able to use a global `dependencies` en
         "netstandard1.6":{
             "dependencies":{
                 "AwesomeLibrary.Core":{
-                    "version":"1.0.0",
                     "target":"project"
                 }
             }
@@ -535,7 +523,7 @@ Another important aspect of multi-project solutions is establishing a good overa
    |__/AwesomeLibrary.FSharp
       |__Source Files
       |__project.json
-/test
+|__/test
    |__/AwesomeLibrary.Core.Tests
       |__Test Files
       |__project.json

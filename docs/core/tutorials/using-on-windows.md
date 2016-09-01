@@ -58,9 +58,8 @@ A solution using only .NET Core projects
 
 2. Open the context menu for the **test** folder and choose **Add**. **New Project**. In the **New Project** dialog, choose **Console Application (.NET Core)**. Name it "TestLibrary" and explicitly put it under the `Golden\test` path. 
 
-   > **Important**
-   >
-   > The project needs to be a console application, not a class library.
+> [!IMPORTANT]
+> The project needs to be a console application, not a class library.
 
 3. In the **TestLibrary** project, open the context menu for the **References** node and choose **Add Reference**. 
 
@@ -140,9 +139,8 @@ Starting from the solution obtained with the previous script, execute the follow
 
 5. In the **New Project** dialog, choose the **Visual C#** node, and then choose **Console Application**.
 
-   > **Important**
-   >
-   > Make sure you choose a standard console application, not the .NET Core version. In this section, you'll be  consuming the library from a .NET Framework application
+> [!IMPORTANT]
+> Make sure you choose a standard console application, not the .NET Core version. In this section, you'll be consuming the library from a .NET Framework application.
 
 6. Name the project "FxApp", and set the location to `Golden\src`.
 
@@ -165,6 +163,9 @@ Starting from the solution obtained with the previous script, execute the follow
 14. Press F5 to run the app.
 
    The application should build and hit the breakpoint. The application output should be "The answer is 42.".
+   
+   > [!TIP]
+   > On Windows platform you can you can use MSTest. You can find out more in the [Using MSTest on Windows document](../testing/using-mstest-on-windows.md).
 
 Moving a library from netstandard 1.4 to 1.3
 --------------------------------------------

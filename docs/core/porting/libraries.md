@@ -241,9 +241,9 @@ You can target .NET Core with the traditional project system in Visual Studio, b
 
 If you have more advanced project system needs, this should be your choice.  Note that if you wish to multitarget by generating platform-specific assemblies like with the `xproj` project system, you'll need to create a "Bait and Switch" PCL, as described in [How to Make Portable Class Libraries Work for You](https://blogs.msdn.microsoft.com/dsplaisted/2012/08/27/how-to-make-portable-class-libraries-work-for-you/).
 
-## Retargeting your .NET Framework Code to .NET Framework 4.6.1
+## Retargeting your .NET Framework Code to .NET Framework 4.6.2
 
-If your code is not targeting .NET Framework 4.6.1, it's recommended that you retarget.  This ensures that you can use the latest API alternatives for cases where the .NET Standard can't support existing APIs.
+If your code is not targeting .NET Framework 4.6.2, it's recommended that you retarget.  This ensures that you can use the latest API alternatives for cases where the .NET Standard can't support existing APIs.
 
 For each of your projects in Visual Studio you wish to port, do the following:
 

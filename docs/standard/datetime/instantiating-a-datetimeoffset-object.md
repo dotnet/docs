@@ -361,11 +361,11 @@ The offset of the resulting [DateTimeOffset](xref:System.DateTimeOffset) value d
 
 The [System.DateTimeOffset](xref:System.DateTimeOffset) type supports four methods that allow you to convert the string representation of a date and time into a [DateTimeOffset](xref:System.DateTimeOffset) value:
 
-* [Parse](xref:System.DateTimeOffset.Parse_System_String_), which tries to convert the string representation of a date and time to a [DateTimeOffset](xref:System.DateTimeOffset) value and throws an exception if the conversion fails.
+* [Parse](xref:System.DateTimeOffset.Parse), which tries to convert the string representation of a date and time to a [DateTimeOffset](xref:System.DateTimeOffset) value and throws an exception if the conversion fails.
 
 * [TryParse](xref:System.DateTimeOffset), which tries to convert the string representation of a date and time to a [DateTimeOffset](xref:System.DateTimeOffset) value and returns `false` if the conversion fails.
 
-* [ParseExact](xref:System.DateTimeOffset.ParseExact_System_String_System_String_System_IFormatProvider_), which tries to convert the string representation of a date and time in a specified format to a [DateTimeOffset](xref:System.DateTimeOffset) value. The method throws an exception if the conversion fails.
+* [ParseExact](xref:System.DateTimeOffset.ParseExact), which tries to convert the string representation of a date and time in a specified format to a [DateTimeOffset](xref:System.DateTimeOffset) value. The method throws an exception if the conversion fails.
 
 * [TryParseExact](xref:System.DateTimeOffset), which tries to convert the string representation of a date and time in a specified format to a [DateTimeOffset](xref:System.DateTimeOffset) value. The method returns `false` if the conversion fails.
 

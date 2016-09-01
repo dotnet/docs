@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: How to: instantiate a TimeZoneInfo object
+description: How to: instantiate a TimeZoneInfo object
 keywords: .NET, .NET Core
 author: stevehoag
 manager: wpickett
@@ -20,7 +20,7 @@ The most common way to instantiate a [TimeZoneInfo](xref:system.timezoneinfo) ob
 
 1. Declare a [TimeZoneInfo](xref:system.timezoneinfo) object.
 
-2. Call the `static` (`Shared` in Visual Basic) [TimeZoneInfo.FindSystemTimeZoneById](xref:system.timezoneinfo.FindSystemTimeZoneById_System_String_) method.
+2. Call the `static` (`Shared` in Visual Basic) [TimeZoneInfo.FindSystemTimeZoneById](xref:system.timezoneinfo.FindSystemTimeZoneById) method.
 
 3. Handle any exceptions thrown by the method.
 
@@ -96,7 +96,7 @@ Catch e As OutOfMemoryException
 End
 ``` 
 
-The [TimeZoneInfo.FindSystemTimeZoneById](xref:system.timezoneinfo.FindSystemTimeZoneById_System_String_) method's single parameter is the identifier of the time zone that you want to retrieve, which corresponds to the object's [TimeZoneInfo.Id](xref:system.timezoneinfo.Id) property. The time zone identifier is a key field that uniquely identifies the time zone. While most keys are relatively short, the time zone identifier is comparatively long. In most cases, its value corresponds to the [StandardName](xref:system.timezoneinfo.StandardName) property of a [TimeZoneInfo](xref:system.timezoneinfo) object, which is used to provide the name of the time zone's standard time. However, there are exceptions. The best way to make sure that you supply a valid identifier is to enumerate the time zones available on your system and note the identifiers of the time zones present on them. For an illustration, see [How to: enumerate time zones present on a computer](enumerate-time-zones.md). The [Finding the time zones defined on a local system](finding-the-time-zones-on-local-system.md) topic also contains a list of selected time zone identifiers.
+The [TimeZoneInfo.FindSystemTimeZoneById](xref:system.timezoneinfo.FindSystemTimeZoneById) method's single parameter is the identifier of the time zone that you want to retrieve, which corresponds to the object's [TimeZoneInfo.Id](xref:system.timezoneinfo.Id) property. The time zone identifier is a key field that uniquely identifies the time zone. While most keys are relatively short, the time zone identifier is comparatively long. In most cases, its value corresponds to the [StandardName](xref:system.timezoneinfo.StandardName) property of a [TimeZoneInfo](xref:system.timezoneinfo) object, which is used to provide the name of the time zone's standard time. However, there are exceptions. The best way to make sure that you supply a valid identifier is to enumerate the time zones available on your system and note the identifiers of the time zones present on them. For an illustration, see [How to: enumerate time zones present on a computer](enumerate-time-zones.md). The [Finding the time zones defined on a local system](finding-the-time-zones-on-local-system.md) topic also contains a list of selected time zone identifiers.
 
 If the time zone is found, the method returns its [TimeZoneInfo](xref:system.timezoneinfo) object. If the time zone is found but its data is corrupted or incomplete, the method throws an [InvalidTimeZoneException](xref:system.invalidtimezoneexception). 
 

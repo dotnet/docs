@@ -26,13 +26,13 @@ This article shows how to let a user resolve an ambiguous time.
 
 1. Get the date and time input by the user.
 
-2. Call the [IsAmbiguousTime(DateTime)](xref:System.TimeZoneInfo.IsAmbiguousTime_System_DateTime_) or [IsAmbiguousTime(DateTimeOffset)](xref:System.TimeZoneInfo.IsAmbiguousTime_System_DateTimeOffset_) method to determine whether the time is ambiguous.
+2. Call the [IsAmbiguousTime(DateTime)](xref:System.TimeZoneInfo.IsAmbiguousTime) or [IsAmbiguousTime(DateTimeOffset)](xref:System.TimeZoneInfo.IsAmbiguousTime) method to determine whether the time is ambiguous.
 
 3. Let the user select the desired offset.
 
 4. Get the UTC date and time by subtracting the offset selected by the user from the local time.
 
-5. Call the `static` (`Shared` in Visual Basic ) [SpecifyKind](xref:system.datetime.SpecifyKind_System_DateTime_System_DateTimeKind_) method to set the UTC date and time value's [Kind](xref:system.datetime.Kind) property to [DateTimeKind.Utc](xref:system.datetimekind.Utc).
+5. Call the `static` (`Shared` in Visual Basic ) [SpecifyKind](xref:system.datetime.SpecifyKind) method to set the UTC date and time value's [Kind](xref:system.datetime.Kind) property to [DateTimeKind.Utc](xref:system.datetimekind.Utc).
 
 ## Example
 

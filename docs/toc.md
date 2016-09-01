@@ -272,7 +272,7 @@
 ### [How to: instantiate a TimeZoneInfo object](standard/datetime/instantiate-time-zone-info.md)
 ### [Instantiating a DateTimeOffset object](standard/datetime/instantiating-a-datetimeoffset-object.md)
 ### [Performing arithmetic operations with dates and times](standard/datetime/performing-arithmetic-operations.md)
-### [title: How to: use time zones in date and time arithmetic](standard/datetime/use-time-zones-in-arithmetic.md)
+### [How to: use time zones in date and time arithmetic](standard/datetime/use-time-zones-in-arithmetic.md)
 ### [Converting between DateTime and DateTimeOffset](standard/datetime/converting-between-datetime-and-offset.md)
 ### [Converting times between time zones](standard/datetime/converting-between-time-zones.md)
 ### [How to: resolve ambiguous times](standard/datetime/resolve-ambiguous-times.md)

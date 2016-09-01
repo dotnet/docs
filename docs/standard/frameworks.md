@@ -4,7 +4,7 @@ description: Frameworks
 keywords: .NET, .NET Core
 author: richlander
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -14,7 +14,7 @@ ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 
 # Frameworks
 
-The .NET ecosystem has a concept of frameworks. Frameworks define the API that you can use to target a particular platform. The .NET Framework 4.6 is one of those platforms. Frameworks are used in Visual Studio and other IDEs and editors to provide you with the correct set of APIs. They are also used by NuGet, for both production and consumption of NuGet packages, to ensure that you produce and use appropriate packages (and underlying assets) for the framework you are targeting. One can think of frameworks as one of the key currencies in the .NET ecosystem. The concept is there for correctness, to help you and your customers avoid seeing [MissingMethodException](https://docs.microsoft.com/dotnet/core/api/System.MissingMethodException) and friends at runtime.
+The .NET ecosystem has a concept of frameworks. Frameworks define the API that you can use to target a particular platform. The .NET Framework 4.6 is one of those platforms. Frameworks are used in Visual Studio and other IDEs and editors to provide you with the correct set of APIs. They are also used by NuGet, for both production and consumption of NuGet packages, to ensure that you produce and use appropriate packages (and underlying assets) for the framework you are targeting. One can think of frameworks as one of the key currencies in the .NET ecosystem. The concept is there for correctness, to help you and your customers avoid seeing @System.MissingMethodException and friends at runtime.
 
 ## Framework Versions
 
@@ -23,10 +23,11 @@ The table below defines the set of frameworks that you can use, how they are ref
 | Framework | Latest Version | Target Framework Moniker (TFM) | Compact Target Framework Moniker (TFM) | .NET Standard Version | Metapackage |
 |:--------: | :--: | :--: | :--: | :--: | :--: | :--: |
 | .NET Standard | 1.6 | .NETStandard,Version=1.6 | netstandard1.6 | N/A | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library)|
-| .NET Core Application | 1.0 | .NETCoreApp,Version=1.0 | netcoreapp1.0 | 1.5 | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App)|
-| .NET Framework | 4.6.1 | .NETFramework,Version=4.6.1 | net461 | 1.4 | N/A |
+| .NET Core Application | 1.0 | .NETCoreApp,Version=1.0 | netcoreapp1.0 | 1.6 | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App)|
+| .NET Framework | 4.6.2 | .NETFramework,Version=4.6.2 | net462 | 1.5 | N/A |
 
-Note: These framework versions are the latest stable versions. There may be pre-released versioned as well that are not described by this table.
+> [!NOTE]
+> These framework versions are the latest stable versions. There may be pre-released versions as well that are not described by this table.
 
 ## Writing about Frameworks
 

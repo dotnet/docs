@@ -369,7 +369,7 @@ Non-compliant type | Description | CLS-compliant alternative
 
 If a type is not CLS-compliant, you should apply the [CLSCompliantAttribute](xref:System.CLSCompliantAttribute) attribute with an *isCompliant* parameter with a value of `false` to it. For more information, see the [CLSCompliantAttribute attribute](#the-clscompliantattribute-attribute) section.  
 
-The following example illustrates the problem of CLS compliance in a method signature and in generic type instantiation. It defines an `InvoiceItem` class with a property of type [UInt32](xref:System.UInt32), a property of type [Nullable(Of UInt32)](xref:System.Nullable-1), and a constructor with parameters of type `UInt32` and `Nullable(Of UInt32)`. You get four compiler warnings when you try to compile this example.
+The following example illustrates the problem of CLS compliance in a method signature and in generic type instantiation. It defines an `InvoiceItem` class with a property of type [UInt32](xref:System.UInt32), a property of type [Nullable(Of UInt32)](xref:System.Nullable%601), and a constructor with parameters of type `UInt32` and `Nullable(Of UInt32)`. You get four compiler warnings when you try to compile this example.
 
 ```csharp
 using System;

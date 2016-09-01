@@ -38,7 +38,7 @@ ms.assetid: 2dd84ee8-9f0f-4054-9537-155857a460cd
 
 ## The DateTime structure
 
-A [System.DateTime](xref:System.DateTime) value defines a particular date and time. It includes a [Kind](xref:System.DateTime.Kind) property that provides limited information about the time zone to which that date and time belongs. The [DateTimeKind](xref:System.DateTimeKind) value returned by the [Kind](xref:System.DateTime.Kind) property indicates whether the [DateTime](xref:System.DateTime) value represents the local time [DateTimeKind.Local](xref:System.DateTimeKind.Local)), Coordinated Universal Time (UTC) [DateTimeKind.Utc](xref:System.DateTimeKind.Utc), or an unspecified time [DateTimeKind.Unspecified](xref:System.DateTimekind.Unspecified).
+A [System.DateTime](xref:System.DateTime) value defines a particular date and time. It includes a [Kind](xref:System.DateTime.Kind) property that provides limited information about the time zone to which that date and time belongs. The [DateTimeKind](xref:System.DateTimeKind) value returned by the [Kind](xref:System.DateTime.Kind) property indicates whether the [DateTime](xref:System.DateTime) value represents the local time [DateTimeKind.Local](xref:System.DateTimeKind.Local)), Coordinated Universal Time (UTC) [DateTimeKind.Utc](xref:System.DateTimeKind.Utc), or an unspecified time [DateTimeKind.Unspecified](xref:System.DateTimeKind.Unspecified).
 
 The [DateTime](xref:System.DateTime) structure is suitable for applications that do the following: 
 

@@ -34,6 +34,14 @@ The [Tutorials](tutorials/index.md) also have step-by-step guides for various sk
 
 If you know your way around F#, you'll find a lot of use in the [Language Reference](language-reference/index.md), which documents each aspect of the language thoroughly, supplemented by numerous code samples.  You'll also find a lot of use in the [F# Core Library Reference](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/fsharp-core-library-reference).
 
+## The F# Software Foundation
+
+Although Microsoft is the primary developer of the F# language and Visual F# Tooling, F# is also backed by an independent foundation, the F# Software Foundation (or FSSF for short).
+
+The mission of the F# Software Foundation is to promote, protect, and advance the F# programming language, and to support and facilitate the growth of a diverse and international community of F# programmers.
+
+To learn more and get involved, check out [fsharp.org](fsharp.org)
+
 ## Documentation
 
 * [Getting Started](tutorials/getting-started/index.md)

@@ -18,20 +18,20 @@ The [System.TimeZoneInfo](xref:System.TimeZoneInfo) class provides two propertie
 
 ## To access the Coordinated Universal Time (UTC) TimeZoneInfo object
 
-1. Use the **static** (**Shared** in Visual Basic) [TimeZoneInfo.Utc](xref:system.timezoneinfo.Utc) property to access Coordinated Universal Time.
+1. Use the **static** (**Shared** in Visual Basic) [TimeZoneInfo.Utc](xref:System.TimeZoneInfo.Utc) property to access Coordinated Universal Time.
 
-2. Rather than assigning the [TimeZoneInfo](xref:System.TimeZoneInfo) object returned by the property to an object variable, continue to access Coordinated Universal Time through the [TimeZoneInfo.Utc](xref:system.timezoneinfo.Utc) property.
+2. Rather than assigning the [TimeZoneInfo](xref:System.TimeZoneInfo) object returned by the property to an object variable, continue to access Coordinated Universal Time through the [TimeZoneInfo.Utc](xref:System.TimeZoneInfo.Utc) property.
 
 
 ## To access the local time zone
 
-1. Use the **static** (**Shared** in Visual Basic) [TimeZoneInfo.Local](xref:system.timezoneinfo.Local) property to access the local system time zone.
+1. Use the **static** (**Shared** in Visual Basic) [TimeZoneInfo.Local](xref:System.TimeZoneInfo.Local) property to access the local system time zone.
 
-2. Rather than assigning the [TimeZoneInfo](xref:System.TimeZoneInfo) object returned by the property to an object variable, continue to access the local time zone through the [TimeZoneInfo.Local](xref:system.timezoneinfo.Local) property.
+2. Rather than assigning the [TimeZoneInfo](xref:System.TimeZoneInfo) object returned by the property to an object variable, continue to access the local time zone through the [TimeZoneInfo.Local](xref:System.TimeZoneInfo.Local) property.
 
 ## Example
 
-The following code uses the [TimeZoneInfo.Local](xref:system.timezoneinfo.Local) and [TimeZoneInfo.Utc](xref:system.timezoneinfo.Utc) properties to convert a time from the U.S. and Canadian Eastern Standard time zone, as well as to display the time zone name to the console.
+The following code uses the [TimeZoneInfo.Local](xref:System.TimeZoneInfo.Local) and [TimeZoneInfo.Utc](xref:System.TimeZoneInfo.Utc) properties to convert a time from the U.S. and Canadian Eastern Standard time zone, as well as to display the time zone name to the console.
 
 ```csharp
 // Create Eastern Standard Time value and TimeZoneInfo object      
@@ -104,7 +104,7 @@ Catch e As InvalidTimeZoneException
 End Try
 ```
 
-You should always access the local time zone through the [TimeZoneInfo.Local](xref:system.timezoneinfo.Local) property rather than assigning the local time zone to a [TimeZoneInfo](xref:System.TimeZoneInfo) object variable. Similarly, you should always access Coordinated Universal Time through the [TimeZoneInfo.Utc](xref:system.timezoneinfo.Utc) property rather than assigning the UTC zone to a [TimeZoneInfo](xref:System.TimeZoneInfo) object variable. This prevents the [TimeZoneInfo](xref:System.TimeZoneInfo) object variable from being invalidated by an external method.
+You should always access the local time zone through the [TimeZoneInfo.Local](xref:System.TimeZoneInfo.Local) property rather than assigning the local time zone to a [TimeZoneInfo](xref:System.TimeZoneInfo) object variable. Similarly, you should always access Coordinated Universal Time through the [TimeZoneInfo.Utc](xref:System.TimeZoneInfo.Utc) property rather than assigning the UTC zone to a [TimeZoneInfo](xref:System.TimeZoneInfo) object variable. This prevents the [TimeZoneInfo](xref:System.TimeZoneInfo) object variable from being invalidated by an external method.
 
 
 ## See Also

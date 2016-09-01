@@ -18,7 +18,7 @@ Successfully working with a designated time zone requires that information about
 
 ## To enumerate the time zones present on the local system
 
-1. Call the [TimeZoneInfo.GetSystemTimeZones](xref:system.timezoneinfo.GetSystemTimeZones) method. The method returns a generic [ReadOnlyCollection&lt;T&gt;](xref:System.Collections.ObjectModel.ReadOnlyCollection%601) collection of [TimeZoneInfo](xref:system.timezoneinfo) objects. The entries in the collection are sorted by their [DisplayName](xref:system.timezoneinfo.DisplayName) property. For example:
+1. Call the [TimeZoneInfo.GetSystemTimeZones](xref:System.TimeZoneInfo.GetSystemTimeZones) method. The method returns a generic [ReadOnlyCollection&lt;T&gt;](xref:System.Collections.ObjectModel.ReadOnlyCollection%601) collection of [TimeZoneInfo](xref:System.TimeZoneInfo) objects. The entries in the collection are sorted by their [DisplayName](xref:System.TimeZoneInfo.DisplayName) property. For example:
 
     ```csharp
     ReadOnlyCollection<TimeZoneInfo> tzCollection;
@@ -29,7 +29,7 @@ Successfully working with a designated time zone requires that information about
     Dim tzCollection As ReadOnlyCollection(Of TimeZoneInfo) = TimeZoneInfo.GetSystemTimeZones
     ```
 
-2. Enumerate the individual [TimeZoneInfo](xref:system.timezoneinfo) objects in the collection by using a `foreach` loop (in C#) or a For Each…Next loop (in Visual Basic), and perform any necessary processing on each object. For example, the following code enumerates the [ReadOnlyCollection&lt;T&gt;](xref:system.collections.objectmodel.readonlycollection-1) collection of [TimeZoneInfo](xref:system.timezoneinfo) objects returned in step 1 and lists the display name of each time zone on the console.
+2. Enumerate the individual [TimeZoneInfo](xref:System.TimeZoneInfo) objects in the collection by using a `foreach` loop (in C#) or a For Each…Next loop (in Visual Basic), and perform any necessary processing on each object. For example, the following code enumerates the [ReadOnlyCollection&lt;T&gt;](xref:System.Collections.Objectmodel.ReadOnlyCollection%601) collection of [TimeZoneInfo](xref:System.TimeZoneInfo) objects returned in step 1 and lists the display name of each time zone on the console.
 
     ```csharp
     foreach (TimeZoneInfo timeZone in tzCollection)

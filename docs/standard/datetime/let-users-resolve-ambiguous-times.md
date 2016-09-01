@@ -32,11 +32,11 @@ This article shows how to let a user resolve an ambiguous time.
 
 4. Get the UTC date and time by subtracting the offset selected by the user from the local time.
 
-5. Call the `static` (`Shared` in Visual Basic ) [SpecifyKind](xref:system.datetime.SpecifyKind) method to set the UTC date and time value's [Kind](xref:system.datetime.Kind) property to [DateTimeKind.Utc](xref:system.datetimekind.Utc).
+5. Call the `static` (`Shared` in Visual Basic ) [SpecifyKind](xref:System.DateTime.SpecifyKind) method to set the UTC date and time value's [Kind](xref:System.DateTime.Kind) property to [DateTimeKind.Utc](xref:System.DateTimeKind.Utc).
 
 ## Example
 
-The following example prompts the user to enter a date and time and, if it is ambiguous, lets the user select the UTC time that the ambiguous time maps to. The example uses a [DateTime](xref:system.datetime) object; you can substitute a [DateTimeOffset](xref:system.datetimeoffset) object if desired.
+The following example prompts the user to enter a date and time and, if it is ambiguous, lets the user select the UTC time that the ambiguous time maps to. The example uses a [DateTime](xref:System.DateTime) object; you can substitute a [DateTimeOffset](xref:System.DateTimeOffset) object if desired.
 
 ```csharp
 private void GetUserDateInput()
@@ -151,9 +151,9 @@ Private Function GetUserDateTime() As Date
 End Function
 ```
 
-The core of the example code uses an array of [TimeSpan](xref:system.timespan) objects to indicate possible offsets of the ambiguous time from UTC. However, these offsets are unlikely to be meaningful to the user. To clarify the meaning of the offsets, the code also notes whether an offset represents the local time zone's standard time or its daylight saving time. The code determines which time is standard and which time is daylight by comparing the offset with the value of the [BaseUtcOffset](xref:system.timezoneinfo.BaseUtcOffset) property. This property indicates the difference between the UTC and the time zone's standard time.
+The core of the example code uses an array of [TimeSpan](xref:System.TimeSpan) objects to indicate possible offsets of the ambiguous time from UTC. However, these offsets are unlikely to be meaningful to the user. To clarify the meaning of the offsets, the code also notes whether an offset represents the local time zone's standard time or its daylight saving time. The code determines which time is standard and which time is daylight by comparing the offset with the value of the [BaseUtcOffset](xref:System.TimeZoneInfo.BaseUtcOffset) property. This property indicates the difference between the UTC and the time zone's standard time.
 
-In this example, all references to the local time zone are made through the [TimeZoneInfo.Local](xref:system.timezoneinfo.Local) property; the local time zone is never assigned to an object variable. This is a recommended practice because another call could clear the cached data and invalidate any objects that the local time zone is assigned to.
+In this example, all references to the local time zone are made through the [TimeZoneInfo.Local](xref:System.TimeZoneInfo.Local) property; the local time zone is never assigned to an object variable. This is a recommended practice because another call could clear the cached data and invalidate any objects that the local time zone is assigned to.
 
 ## See Also
 

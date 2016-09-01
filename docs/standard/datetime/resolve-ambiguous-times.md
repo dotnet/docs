@@ -26,13 +26,13 @@ This article shows how to resolve an ambiguous time by assuming that it represen
 
 1. Call the [System.TimeZoneInfo.IsAmbiguousTime(DateTime)](xref:System.TimeZoneInfo.IsAmbiguousTime) or [System.TimeZoneInfo.IsAmbiguousTime(DateTimeOffset)](xref:System.TimeZoneInfo.IsAmbiguousTime) method to determine whether the time is ambiguous.
 
-2. If the time is ambiguous, subtract the time from the [TimeSpan](xref:system.timespan) object returned by the time zone's 'BaseUtcOffset' property.
+2. If the time is ambiguous, subtract the time from the [TimeSpan](xref:System.TimeSpan) object returned by the time zone's 'BaseUtcOffset' property.
 
-3. Call the `static` (`Shared` in Visual Basic) [SpecifyKind](xref:system.datetime.SpecifyKind) method to set the UTC date and time value's [Kind](xref:system.datetime.Kind) property to [DateTimeKind.Utc](xref:system.datetimekind.Utc).
+3. Call the `static` (`Shared` in Visual Basic) [SpecifyKind](xref:System.DateTime.SpecifyKind) method to set the UTC date and time value's [Kind](xref:System.DateTime.Kind) property to [DateTimeKind.Utc](xref:System.DateTimekind.Utc).
 
 ## Example
 
-The following example illustrates how to convert an ambiguous [DateTime](xref:system.datetime) to UTC by assuming that it represents the local time zone's standard time. 
+The following example illustrates how to convert an ambiguous [DateTime](xref:System.DateTime) to UTC by assuming that it represents the local time zone's standard time. 
 
 ```csharp
 private DateTime ResolveAmbiguousTime(DateTime ambiguousTime)
@@ -68,9 +68,9 @@ Private Function ResolveAmbiguousTime(ambiguousTime As Date) As Date
 End Function
 ```
 
-The example consists of a method named `ResolveAmbiguousTime` that determines whether the [DateTime](xref:system.datetime) value passed to it is ambiguous. If the value is ambiguous, the method returns a [DateTime](xref:system.datetime) value that represents the corresponding UTC time. The method handles this conversion by subtracting the value of the local time zone's [BaseUtcOffset](xref:system.timezoneinfo.BaseUtcOffset) property from the local time. 
+The example consists of a method named `ResolveAmbiguousTime` that determines whether the [DateTime](xref:System.DateTime) value passed to it is ambiguous. If the value is ambiguous, the method returns a [DateTime](xref:System.DateTime) value that represents the corresponding UTC time. The method handles this conversion by subtracting the value of the local time zone's [BaseUtcOffset](xref:System.TimeZoneInfo.BaseUtcOffset) property from the local time. 
 
-Ordinarily, an ambiguous time is handled by calling the [GetAmbiguousTimeOffsets](xref:system.timezoneinfo.GetAmbiguousTimeOffsets) method to retrieve an array of [TimeSpan](xref:system.timespan) objects that contain the ambiguous time's possible UTC offsets. However, this example makes the arbitrary assumption that an ambiguous time should always be mapped to the time zone's standard time. The [BaseUtcOffset](xref:system.timezoneinfo.BaseUtcOffset) property returns the offset between UTC and a time zone's standard time.
+Ordinarily, an ambiguous time is handled by calling the [GetAmbiguousTimeOffsets](xref:System.TimeZoneInfo.GetAmbiguousTimeOffsets) method to retrieve an array of [TimeSpan](xref:System.TimeSpan) objects that contain the ambiguous time's possible UTC offsets. However, this example makes the arbitrary assumption that an ambiguous time should always be mapped to the time zone's standard time. The [BaseUtcOffset](xref:System.TimeZoneInfo.BaseUtcOffset) property returns the offset between UTC and a time zone's standard time.
 
 ## See Also
 

@@ -28,13 +28,13 @@ The easiest way to convert a time to UTC is to call the `static` (`Shared` in Vi
 > [!IMPORTANT]
 > The `TimeZoneInfo.ConvertTimeToUtc(DateTime)' method isn't currently available in .NET Core. 
 
-The exact conversion performed by the method depends on the value of the `DateTime` parameter's [Kind](xref:system.datetime.Kind) property, as the following table shows.
+The exact conversion performed by the method depends on the value of the `DateTime` parameter's [Kind](xref:System.DateTime.Kind) property, as the following table shows.
 
-[DateTime.Kind](xref:system.datetimekind) property | Conversion
+[DateTime.Kind](xref:System.DateTimeKind) property | Conversion
 ---------------------------------------------------------------------------------------------- | ----------
-[DateTimeKind.Local](xref:system.datetimekind.Local) | Converts local time to UTC.
-[DateTimeKind.Unspecified](xref:system.datetimekind.Unspecified) | Assumes the `DateTime` parameter is local time and converts local time to UTC.
-[DateTimeKind.Utc](xref:system.datetimekind.Utc) | Returns the `DateTime` parameter unchanged.
+[DateTimeKind.Local](xref:System.DateTimeKind.Local) | Converts local time to UTC.
+[DateTimeKind.Unspecified](xref:System.DateTimeKind.Unspecified) | Assumes the `DateTime` parameter is local time and converts local time to UTC.
+[DateTimeKind.Utc](xref:System.DateTimeKind.Utc) | Returns the `DateTime` parameter unchanged.
 
 The following code converts the current local time to UTC and displays the result to the console.
 
@@ -51,9 +51,9 @@ Console.WriteLine("The date and time are {0} UTC.", _
 ```
 
 > [!NOTE]
->The [TimeZoneInfo.ConvertTimeToUtc(DateTime)](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx) method does not necessarily produce results that are identical to the [TimeZone.ToUniversalTime](https://msdn.microsoft.com/en-us/library/system.timezone.touniversaltime(v=vs.110).aspx) and [DateTime.ToUniversalTime](xref:system.datetime.ToUniversalTime) methods. If the host system's local time zone includes multiple adjustment rules, [TimeZoneInfo.ConvertTimeToUtc(DateTime)](https://msdn.microsoft.com/en-us/library/system.timezoneinfo.converttimetoutc(v=vs.110).aspx) applies the appropriate rule to a particular date and time. The other two methods always apply the latest adjustment rule.
+>The [TimeZoneInfo.ConvertTimeToUtc(DateTime)](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx) method does not necessarily produce results that are identical to the [TimeZone.ToUniversalTime](https://msdn.microsoft.com/en-us/library/System.TimeZone.ToUniversalTime(v=vs.110).aspx) and [DateTime.ToUniversalTime](xref:System.DateTime.ToUniversalTime) methods. If the host system's local time zone includes multiple adjustment rules, [TimeZoneInfo.ConvertTimeToUtc(DateTime)](https://msdn.microsoft.com/en-us/library/System.TimeZone.ConvertTimeToUtc(v=vs.110).aspx) applies the appropriate rule to a particular date and time. The other two methods always apply the latest adjustment rule.
 
-If the date and time value does not represent either the local time or UTC, the [ToUniversalTime](https://msdn.microsoft.com/en-us/library/system.timezone.touniversaltime(v=vs.110).aspx) method will likely return an erroneous result. However, you can use the [TimeZoneInfo.ConvertTimeToUtc](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx) method to convert the date and time from a specified time zone. (For details on retrieving a TimeZoneInfo object that represents the destination time zone, see [Finding the Time Zones Defined on a Local System](finding-the-time-zones-on-local-system.md). The following code uses the [TimeZoneInfo.ConvertTimeToUtc](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx) method to convert Eastern Standard Time to UTC.
+If the date and time value does not represent either the local time or UTC, the [ToUniversalTime](https://msdn.microsoft.com/en-us/library/System.TimeZone.ToUniversalTime(v=vs.110).aspx) method will likely return an erroneous result. However, you can use the [TimeZoneInfo.ConvertTimeToUtc](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx) method to convert the date and time from a specified time zone. (For details on retrieving a TimeZoneInfo object that represents the destination time zone, see [Finding the Time Zones Defined on a Local System](finding-the-time-zones-on-local-system.md). The following code uses the [TimeZoneInfo.ConvertTimeToUtc](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx) method to convert Eastern Standard Time to UTC.
 
 ```csharp
 DateTime easternTime = new DateTime(2007, 01, 02, 12, 16, 00);
@@ -92,9 +92,9 @@ Catch e As InvalidTimeZoneException
 End Try    
 ```
 
-Note that this method throws an [ArgumentException](xref:system.argumentexception) if the [DateTime](xref:System.DateTime) object's [Kind](xref:system.datetimekind) property and the time zone are mismatched. A mismatch occurs if the Kind property is [DateTimeKind.Local](xref:system.datetimekind.Local) but the [TimeZoneInfo](xref:system.timezoneinfo) object does not represent the local time zone, or if the Kind property is [DateTimeKind.Utc](xref:system.datetimekind.Utc) but the [TimeZoneInfo](xref:system.timezoneinfo) object does not equal [DateTimeKind.Utc](xref:system.datetimekind.Utc).
+Note that this method throws an [ArgumentException](xref:System.ArgumentException) if the [DateTime](xref:System.DateTime) object's [Kind](xref:System.DateTimeKind) property and the time zone are mismatched. A mismatch occurs if the Kind property is [DateTimeKind.Local](xref:System.DateTimeKind.Local) but the [TimeZoneInfo](xref:System.TimeZoneInfo) object does not represent the local time zone, or if the Kind property is [DateTimeKind.Utc](xref:System.DateTimeKind.Utc) but the [TimeZoneInfo](xref:System.TimeZoneInfo) object does not equal [DateTimeKind.Utc](xref:System.DateTimeKind.Utc).
 
-All of these methods take [DateTime](xref:System.DateTime) values as parameters and return a [DateTime](xref:System.DateTime) value. For [DateTimeOffset](xref:System.DateTimeOffset) values, the [DateTimeOffset](xref:System.DateTimeOffset) structure has a [ToUniversalTime](xref:system.datetimeoffset.ToUniversalTime) instance method that converts the date and time of the current instance to UTC. The following example calls the [ToUniversalTime](xref:system.datetimeoffset.ToUniversalTime) method to convert a local time and several other times to Coordinated Universal Time (UTC).
+All of these methods take [DateTime](xref:System.DateTime) values as parameters and return a [DateTime](xref:System.DateTime) value. For [DateTimeOffset](xref:System.DateTimeOffset) values, the [DateTimeOffset](xref:System.DateTimeOffset) structure has a [ToUniversalTime](xref:System.DateTimeOffset.ToUniversalTime) instance method that converts the date and time of the current instance to UTC. The following example calls the [ToUniversalTime](xref:System.DateTimeOffset.ToUniversalTime) method to convert a local time and several other times to Coordinated Universal Time (UTC).
 
 ```csharp
 DateTimeOffset localTime, otherTime, universalTime;
@@ -182,14 +182,14 @@ Console.WriteLine()
 
 To convert UTC to local time, see the [Converting UTC to Local Time](#Converting-UTC-to-Local-Time) section that follows. 
 
-To convert UTC to the time in any time zone that you designate, call the [ConvertTimeFromUtc](https://msdn.microsoft.com/en-us/library/system.timezoneinfo.converttimefromutc(v=vs.110).aspx) method. 
+To convert UTC to the time in any time zone that you designate, call the [ConvertTimeFromUtc](https://msdn.microsoft.com/en-us/library/System.TimeZoneInfo.converttimefromutc(v=vs.110).aspx) method. 
 
 > [!IMPORTANT]
 > The `TimeZoneInfo.ConvertTimeFromUtc' method isn't currently available in .NET Core. 
 
 The method takes two parameters:
 
-* The UTC to convert. This must be a [DateTime](xref:System.DateTime) value whose [Kind](xref:system.datetime.Kind) property is set to [DateTimeKind.Utc](xref:system.datetimekind.Utc) or [DateTimeKind.Unspecified](xref:system.datetimekind.Unspecified). 
+* The UTC to convert. This must be a [DateTime](xref:System.DateTime) value whose [Kind](xref:System.DateTime.Kind) property is set to [DateTimeKind.Utc](xref:System.DateTimeKind.Utc) or [DateTimeKind.Unspecified](xref:System.DateTimeKind.Unspecified). 
 
 * The time zone to convert the UTC to. 
 
@@ -234,21 +234,21 @@ End Try
 
 ## Converting UTC to Local Time
 
-To convert UTC to local time, call the [DateTime.ToLocalTime](xref:System.DateTime) method of the [DateTime](xref:System.DateTime) object whose time you want to convert. The exact behavior of the method depends on the value of the object’s [Kind](xref:system.datetime.Kind) property, as the following table shows.
+To convert UTC to local time, call the [DateTime.ToLocalTime](xref:System.DateTime) method of the [DateTime](xref:System.DateTime) object whose time you want to convert. The exact behavior of the method depends on the value of the object’s [Kind](xref:System.DateTime.Kind) property, as the following table shows.
 
-[DateTime.Kind](xref:system.datetimekind) property | Conversion
+[DateTime.Kind](xref:System.DateTimeKind) property | Conversion
 ---------------------------------------------------------------------------------------------- | ----------
-[DateTimeKind.Local](xref:system.datetimekind.Local) | Returns the [DateTime](xref:System.DateTime) value unchanged.
-[DateTimeKind.Unspecified](xref:system.datetimekind.Unspecified) | Assumes that the [DateTime](xref:System.DateTime) value is UTC and converts the UTC to local time.
-[DateTimeKind.Utc](xref:system.datetimekind.Utc) | Converts the [DateTime](xref:System.DateTime) value to local time.
+[DateTimeKind.Local](xref:System.DateTimeKind.Local) | Returns the [DateTime](xref:System.DateTime) value unchanged.
+[DateTimeKind.Unspecified](xref:System.DateTimeKind.Unspecified) | Assumes that the [DateTime](xref:System.DateTime) value is UTC and converts the UTC to local time.
+[DateTimeKind.Utc](xref:System.DateTimeKind.Utc) | Converts the [DateTime](xref:System.DateTime) value to local time.
 
 ## Converting Between Any Two Time Zones
 
 You can convert between any two time zones by using the static [TimeZoneInfo.ConvertTime](xref:System.TimeZoneInfo.ConvertTime) method. This method's parameters are the [DateTime](xref:System.DateTime) value to convert, a [TimeZoneInfo](xref:System.TimeZoneInfo) object that represents the time zone of the date and time value, and a [TimeZoneInfo](xref:System.TimeZoneInfo) object that represents the time zone to convert the date and time value to.
 
-The method requires that the [Kind](xref:system.datetime.Kind) property of the date and time value to convert and the [TimeZoneInfo](xref:System.TimeZoneInfo) object or time zone identifier that represents its time zone correspond to one another. Otherwise, an [ArgumentException](xref:System.ArgumentException) is thrown. For example, if the [Kind](xref:system.datetime.Kind) property of the date and time value is [DateTimeKind.Local](xref:system.datetimekind.Local), an exception is thrown if the [TimeZoneInfo](xref:System.TimeZoneInfo) object passed as a parameter to the method is not equal to [TimeZoneInfo.Local](xref:system.timezoneinfo.Local). An exception is also thrown if the identifier passed as a parameter to the method is not equal to [TimeZoneInfo.Id](xref:system.timezoneinfo.Id).
+The method requires that the [Kind](xref:System.DateTime.Kind) property of the date and time value to convert and the [TimeZoneInfo](xref:System.TimeZoneInfo) object or time zone identifier that represents its time zone correspond to one another. Otherwise, an [ArgumentException](xref:System.ArgumentException) is thrown. For example, if the [Kind](xref:System.DateTime.Kind) property of the date and time value is [DateTimeKind.Local](xref:System.DateTimeKind.Local), an exception is thrown if the [TimeZoneInfo](xref:System.TimeZoneInfo) object passed as a parameter to the method is not equal to [TimeZoneInfo.Local](xref:System.TimeZoneInfo.Local). An exception is also thrown if the identifier passed as a parameter to the method is not equal to [TimeZoneInfo.Id](xref:System.TimeZoneInfo.Id).
 
-The following example uses the [ConvertTime](xref:system.timezoneinfo.ConvertTime) method to convert from Hawaiian Standard Time to local time.
+The following example uses the [ConvertTime](xref:System.TimeZoneInfo.ConvertTime) method to convert from Hawaiian Standard Time to local time.
 
 ```csharp
 DateTime hwTime = new DateTime(2007, 02, 01, 08, 00, 00);
@@ -287,7 +287,7 @@ End Try
 
 ## Converting DateTimeOffset Values
 
-Date and time values represented by [System.DateTimeOffset](xref:System.DateTimeOffset) objects are not fully time-zone aware because the object is disassociated from its time zone at the time it is instantiated. However, in many cases an application simply needs to convert a date and time based on two different offsets from UTC rather than on the time in particular time zones. To perform this conversion, you can call the current instance's [ToOffset](xref:system.datetimeoffset.ToOffset) method. The method's single parameter is [TimeSpan](xref:system.timespan) representing the offset of the new date and time value that the method is to return.  
+Date and time values represented by [System.DateTimeOffset](xref:System.DateTimeOffset) objects are not fully time-zone aware because the object is disassociated from its time zone at the time it is instantiated. However, in many cases an application simply needs to convert a date and time based on two different offsets from UTC rather than on the time in particular time zones. To perform this conversion, you can call the current instance's [ToOffset](xref:System.DateTimeOffset.ToOffset) method. The method's single parameter is [TimeSpan](xref:System.TimeSpan) representing the offset of the new date and time value that the method is to return.  
 
 For example, if the date and time of a user request for a Web page is known and is serialized as a string in the format MM/dd/yyyy hh:mm:ss zzzz, the following `ReturnTimeOnServer` method converts this date and time value to the date and time on the Web server.
 
@@ -327,7 +327,7 @@ End Function
 
 If the method is passed the string "9/1/2007 5:32:07 -05:00", which represents the date and time in a time zone five hours earlier than UTC, it returns 9/1/2007 3:32:07 AM -07:00 for a server located in the U.S. Pacific Standard Time zone.
 
-The [TimeZoneInfo](xref:System.TimeZoneInfo) class also includes an overloaded [TimeZoneInfo.ConvertTime(DateTimeOffset, TimeZoneInfo)](xref:System.TimeZoneInfo.ConvertTime) method that performs time zone conversions with [System.DateTimeOffset](xref:System.DateTimeOffset) values. The method's parameters are a [System.DateTimeOffset](xref:System.DateTimeOffset) value and a reference to the time zone to which the time is to be converted. The method call returns a [System.DateTimeOffset](xref:System.DateTimeOffset) value. For example, the `ReturnTimeOnServer` method in the previous example could be rewritten as follows to call the [ConvertTime(DateTimeOffset, TimeZoneInfo)](xref:system.timezoneinfo.ConvertTime) method.
+The [TimeZoneInfo](xref:System.TimeZoneInfo) class also includes an overloaded [TimeZoneInfo.ConvertTime(DateTimeOffset, TimeZoneInfo)](xref:System.TimeZoneInfo.ConvertTime) method that performs time zone conversions with [System.DateTimeOffset](xref:System.DateTimeOffset) values. The method's parameters are a [System.DateTimeOffset](xref:System.DateTimeOffset) value and a reference to the time zone to which the time is to be converted. The method call returns a [System.DateTimeOffset](xref:System.DateTimeOffset) value. For example, the `ReturnTimeOnServer` method in the previous example could be rewritten as follows to call the [ConvertTime(DateTimeOffset, TimeZoneInfo)](xref:System.TimeZoneInfo.ConvertTime) method.
 
 ```csharp
 public DateTimeOffset ReturnTimeOnServer(string clientString)

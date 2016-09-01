@@ -45,11 +45,11 @@ In .NET, a [System.TimeZoneInfo](xref:System.TimeZoneInfo) object represents a t
 
 Because each time zone is characterized by a base offset from UTC, as well as by an offset from UTC that reflects any existing adjustment rules, a time in one time zone can be easily converted to the time in another time zone. For this purpose, the [TimeZoneInfo](xref:System.TimeZoneInfo) object includes several conversion methods, including:
 
-* [ConvertTime(DateTime, TimeZoneInfo)](xref:system.timezoneinfo.ConvertTime), which converts a [System.DateTime](xref:System.DateTime) to the time in a particular time zone.
+* [ConvertTime(DateTime, TimeZoneInfo)](xref:System.TimeZoneInfo.ConvertTime), which converts a [System.DateTime](xref:System.DateTime) to the time in a particular time zone.
 
-* [ConvertTime(DateTime, TimeZoneInfo, TimeZoneInfo)](xref:system.timezoneinfo.ConvertTime), which converts a [DateTime](xref:system.datetime) from one time zone to another.
+* [ConvertTime(DateTime, TimeZoneInfo, TimeZoneInfo)](xref:System.TimeZoneInfo.ConvertTime), which converts a [DateTime](xref:System.DateTime) from one time zone to another.
 
-* [ConvertTime(DateTimeOffset, TimeZoneInfo)](xref:system.timezoneinfo.ConvertTime), which converts a [System.DateTimeOffset](xref:System.DateTimeOffset) to the time in a particular time zone. 
+* [ConvertTime(DateTimeOffset, TimeZoneInfo)](xref:System.TimeZoneInfo.ConvertTime), which converts a [System.DateTimeOffset](xref:System.DateTimeOffset) to the time in a particular time zone. 
 
 For details on converting times between time zones, see [Converting times between time zones](converting-between-time-zones.md).
 

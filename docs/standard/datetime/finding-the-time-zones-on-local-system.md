@@ -18,13 +18,13 @@ The [System.TimeZoneInfo](xref:System.TimeZoneInfo) class does not expose a publ
 
 ## Accessing Individual Time Zones
 
-The [TimeZoneInfo](xref:System.TimeZoneInfo) class provides two predefined time zone objects that represent the UTC time and the local time zone. They are available from the [TimeZoneInfo.Utc](xref:system.timezoneinfo.Utc) and [TimeZoneInfo.Local](xref:system.timezoneinfo.Local) properties, respectively. For instructions on accessing the UTC or local time zones, see [How to: access the predefined UTC and local time zone objects](access-utc-and-local.md). 
+The [TimeZoneInfo](xref:System.TimeZoneInfo) class provides two predefined time zone objects that represent the UTC time and the local time zone. They are available from the [TimeZoneInfo.Utc](xref:System.TimeZoneInfo.Utc) and [TimeZoneInfo.Local](xref:System.TimeZoneInfo.Local) properties, respectively. For instructions on accessing the UTC or local time zones, see [How to: access the predefined UTC and local time zone objects](access-utc-and-local.md). 
 
 You can also instantiate a [TimeZoneInfo](xref:System.TimeZoneInfo) object that represents any time zone defined by the operating system. For instructions on instantiating a specific time zone object, see [How to: instantiate a TimeZoneInfo object](instantiate-time-zone-info.md).
 
 ## Time Zone Identifiers
 
-The time zone identifier is a key field that uniquely identifies the time zone. While most keys are relatively short, the time zone identifier is comparatively long. In most cases, its value corresponds to the [TimeZoneInfo.StandardName](xref:system.timezoneinfo.StandardName) property, which is used to provide the name of the time zone's standard time. However, there are exceptions. The best way to make sure that you supply a valid identifier is to enumerate the time zones available on your system and note their associated identifiers. For instructions on enumerating time zones, see [How to: enumerate time zones present on a computer](enumerate-time-zones.md).
+The time zone identifier is a key field that uniquely identifies the time zone. While most keys are relatively short, the time zone identifier is comparatively long. In most cases, its value corresponds to the [TimeZoneInfo.StandardName](xref:System.TimeZoneInfo.StandardName) property, which is used to provide the name of the time zone's standard time. However, there are exceptions. The best way to make sure that you supply a valid identifier is to enumerate the time zones available on your system and note their associated identifiers. For instructions on enumerating time zones, see [How to: enumerate time zones present on a computer](enumerate-time-zones.md).
 
 ## See Also
 

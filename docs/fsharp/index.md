@@ -40,7 +40,7 @@ Although Microsoft is the primary developer of the F# language and Visual F# Too
 
 The mission of the F# Software Foundation is to promote, protect, and advance the F# programming language, and to support and facilitate the growth of a diverse and international community of F# programmers.
 
-To learn more and get involved, check out [fsharp.org](fsharp.org)
+To learn more and get involved, check out [fsharp.org](http://fsharp.org)
 
 ## Documentation
 
@@ -54,4 +54,5 @@ To learn more and get involved, check out [fsharp.org](fsharp.org)
 
 * [F# Learning Resources](http://fsharp.org/learn.html)
 * [F# for Fun and Profit](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/)
+* [F# Snippets](http://www.fssnip.net)
 * [F# Software Foundation](http://fsharp.org)

@@ -12,8 +12,7 @@ ms.devlang: dotnet
 ms.assetid: cae32148-aef4-4e64-a7f0-88072bad4400
 ---
 
-Docker and .NET Core 
-=====================
+#Docker and .NET Core 
 
 The following tutorials are available for learning about using Docker with .NET Core.
 

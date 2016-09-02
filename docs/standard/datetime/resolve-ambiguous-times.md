@@ -1,6 +1,6 @@
 ---
-title: How to: resolve ambiguous times
-description: How to: resolve ambiguous times
+title: How to resolve ambiguous times
+description: How to resolve ambiguous times
 keywords: .NET, .NET Core
 author: stevehoag
 manager: wpickett

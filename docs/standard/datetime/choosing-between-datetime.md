@@ -33,7 +33,7 @@ ms.assetid: 2dd84ee8-9f0f-4054-9537-155857a460cd
 .NET includes the [System.DateTime](xref:System.DateTime), [System.DateTimeOffset](xref:System.DateTimeOffset), [System.TimeSpan](xref:System.TimeSpan), and [System.TimeZoneInfo](xref:System.TimeZoneInfo) types, all of which can be used to build applications that work with dates and times. 
 
 > [!NOTE]
-> This topic does not the older `TimeZone` type, because its functionality is almost entirely incorporated in the [System.TimeZoneInfo](xref:System.TimeZoneInfo) class. Whenever possible, developers should use the [System.TimeZoneInfo](xref:System.TimeZoneInfo) class instead of the `TimeZone` class.
+> This topic does not discuss the older `TimeZone` type, because its functionality is almost entirely incorporated in the [System.TimeZoneInfo](xref:System.TimeZoneInfo) class. Whenever possible, developers should use the [System.TimeZoneInfo](xref:System.TimeZoneInfo) class instead of the `TimeZone` class.
 
 
 ## The DateTime structure
@@ -76,7 +76,7 @@ The [DateTimeOffset](xref:System.DateTimeOffset) type includes all of the functi
 > [!NOTE]
 > These uses for [DateTimeOffset](xref:System.DateTimeOffset) values are much more common than those for [DateTime](xref:System.DateTime) values. As a result, [DateTimeOffset](xref:System.DateTimeOffset) should be considered the default date and time type for application development.
 
-A [DateTimeOffset](xref:System.DateTimeOffset) value is not tied to a particular time zone, but can originate from any of a variety of time zones. To illustrate this, the following example lists the time zones to which a number of [DateTimeOffset](xref:System.DateTimeOffset)` values (including a local Pacific Standard Time) can belong.
+A [DateTimeOffset](xref:System.DateTimeOffset) value is not tied to a particular time zone, but can originate from any of a variety of time zones. To illustrate this, the following example lists the time zones to which a number of [DateTimeOffset](xref:System.DateTimeOffset) values (including a local Pacific Standard Time) can belong.
 
 ```csharp
 using System;

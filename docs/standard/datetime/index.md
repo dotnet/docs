@@ -36,13 +36,11 @@ This section of the documentation provides the information that you need to work
 
 [Instantiating a DateTimeOffset Object](instantiating-a-datetimeoffset-object.md) - Discusses the ways in which a [System.DateTimeOffset](xref:System.DateTimeOffset) object can be instantiated, and the ways in which a [System.DateTime](xref:System.DateTime) value can be converted to a [System.DateTimeOffset](xref:System.DateTimeOffset) value.
 
-[Performing Arithmetic Operations with Dates and Times]performing-arithmetic-operations.md) - Discusses the issues involved in adding, subtracting, and comparing [System.DateTime](xref:System.DateTime) and [System.DateTimeOffset](xref:System.DateTimeOffset) values.
+[Performing Arithmetic Operations with Dates and Times](performing-arithmetic-operations.md) - Discusses the issues involved in adding, subtracting, and comparing [System.DateTime](xref:System.DateTime) and [System.DateTimeOffset](xref:System.DateTimeOffset) values.
 
 [Converting Between DateTime and DateTimeOffset](converting-between-datetime-and-offset.md) - Describes how to convert between [System.DateTime](xref:System.DateTime) and [System.DateTimeOffset](xref:System.DateTimeOffset) values.
 
 [Converting Times Between Time Zones](converting-between-time-zones.md) - Describes how to convert times from one time zone to another.
-
-## Related Topics
 
 [How to: Enumerate Time Zones Present on a Computer](enumerate-time-zones.md) - Provides examples that enumerate the time zones defined in a computer's registry and that let users select a predefined time zone from a list.
 

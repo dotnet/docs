@@ -437,7 +437,7 @@ The `List` module provides functions for converting to and from both sequences a
 
 
 ### Additional Operations
-For information about additional operations on lists, see the library reference topic [Collections.List Module](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/collections.list-module-%5bfsharp%5d).
+For information about additional operations on lists, see the library reference topic [Collections.List Module](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.list-module-%5bfsharp%5d).
 
 
 ## See Also

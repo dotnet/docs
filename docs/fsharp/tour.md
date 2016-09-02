@@ -114,7 +114,7 @@ You can also use the shorthand `function` construct for pattern matching, which 
 
 [!code-fsharp[PatternMatching](../../samples/snippets/fsharp/tour.fs#L520-L536)]
 
-Something you may have noticed is the use of the `_` pattern.  This is known as the [Wildcard Pattern](language-reference/pattern-matching.md#wildcard-pattern), which is a way of saying "I don't care what something is".  Although convenient, you can accidentaly bypass Exhaustive Pattern Matching and no longer benefit from compile-time enforcements if you aren't careful in using `_`.
+Something you may have noticed is the use of the `_` pattern.  This is known as the [Wildcard Pattern](language-reference/pattern-matching.md#wildcard-pattern), which is a way of saying "I don't care what something is".  Although convenient, you can accidentally bypass Exhaustive Pattern Matching and no longer benefit from compile-time enforcements if you aren't careful in using `_`.
 
 [Active Patterns](language-reference/active-patterns.md) are another powerful construct to use with pattern matching.  They allow you to partition input data into custom forms, decomposing them at the pattern match call site.  They can also be parameterized, thus allowing to define the partition as a function.  Expanding the previous example to support Active Patterns looks something like this:
 
@@ -136,7 +136,7 @@ One unique feature of F#'s type system is the ability to provide context for num
 
 [!code-fsharp[UnitsOfMeasure](../../samples/snippets/fsharp/tour.fs#L556-L571)]
 
-The F# Core library defines many SI unit types and unit conversions.  To learn more, check out the [Microsoft.FSharp.Data.UnitSystems.SI Namespace](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/microsoft.fsharp.data.unitsystems.si-namespace-%5bfsharp%5d).
+The F# Core library defines many SI unit types and unit conversions.  To learn more, check out the [Microsoft.FSharp.Data.UnitSystems.SI Namespace](https://msdn.microsoft.com/visualfsharpdocs/conceptual/microsoft.fsharp.data.unitsystems.si-namespace-%5bfsharp%5d).
 
 ## Classes and Interfaces
 
@@ -160,7 +160,7 @@ The presence of Classes, Records, Discriminated Unions, and Tuples leads to an i
 
 Tuples are great for returning multiple values from a function, and using an ad-hoc aggregate of values as a value itself.
 
-Records are a "step up" from Tuples, having named labels and suport for optional members.  They are great for a low-ceremony representation of data in-transit through your program.  Because they have structural equality, they can be used in Pattern Matching.
+Records are a "step up" from Tuples, having named labels and support for optional members.  They are great for a low-ceremony representation of data in-transit through your program.  Because they have structural equality, they can be used in Pattern Matching.
 
 Discriminated Unions have many reasons, but the core benefit is to be able to utilize them in conjunction with Pattern Matching to account for all possible "shapes" that a data can have.  
 

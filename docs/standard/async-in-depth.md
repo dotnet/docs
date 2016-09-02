@@ -29,7 +29,7 @@ Tasks expose an API protocol for monitoring, waiting upon and accessing the resu
 
 Using `await` allows your application or service to perform useful work while a task is running by yielding control to its caller until the task is done. Your code does not need to rely on callbacks or events to continue execution after the task has been completed. The language and task API integration does that for you. If you’re using `Task<T>`, the `await` keyword will additionally “unwrap” the value returned when the Task is complete.  The details of how this works are explained further below.
 
-You can learn more about tasks and the different ways to interact with them in the [Task-based Asynchronous Pattern (TAP) Article](https://msdn.microsoft.com/en-us/library/hh873175(v=vs.110).aspx).
+You can learn more about tasks and the different ways to interact with them in the [Task-based Asynchronous Pattern (TAP) Article](https://msdn.microsoft.com/library/hh873175.aspx).
 
 ## Deeper Dive into Tasks for an I/O-Bound Operation
 
@@ -73,9 +73,9 @@ public async Task<string> GetFirstCharactersCountAsync(string url, int count)
 }
 ```
 
-The call to `GetStringAsync()` calls through lower-level .NET libraries (perhaps calling other async methods) until it reaches a P/Invoke interop call into a native networking library. The native library may subsequently call into a System API call (such as `write()` to a socket on Linux). A task object will be created at the native/managed boundary, possibly using [TaskCompletionSource](https://msdn.microsoft.com/en-us/library/dd449202(v=vs.110).aspx). The task object will be passed up through the layers, possibly operated on or directly returned, eventually returned to the initial caller. 
+The call to `GetStringAsync()` calls through lower-level .NET libraries (perhaps calling other async methods) until it reaches a P/Invoke interop call into a native networking library. The native library may subsequently call into a System API call (such as `write()` to a socket on Linux). A task object will be created at the native/managed boundary, possibly using [TaskCompletionSource](xref:System.Threading.Tasks.TaskCompletionSource%601.SetResult(%600)). The task object will be passed up through the layers, possibly operated on or directly returned, eventually returned to the initial caller. 
 
-In the second example above, a `Task<T>` object will be returned from `GetStringAsync`. The use of the `await` keyword causes the method to return a newly created task object. Control returns to the caller from this location in the `GetFirstCharactersCountAsync` method. The methods and properties of the [Task&lt;T&gt;](http://docs.microsoft.com/dotnet/core/api/System.Threading.Tasks.Task-1) object enable callers to monitor the progress of the task, which will complete when the remaining code in GetFirstCharactersCountAsync has executed.
+In the second example above, a `Task<T>` object will be returned from `GetStringAsync`. The use of the `await` keyword causes the method to return a newly created task object. Control returns to the caller from this location in the `GetFirstCharactersCountAsync` method. The methods and properties of the [Task&lt;T&gt;](xref:System.Threading.Tasks.Task%601) object enable callers to monitor the progress of the task, which will complete when the remaining code in GetFirstCharactersCountAsync has executed.
 
 After the System API call, the request is now in kernel space, making its way to the networking subsystem of the OS (such as `/net` in the Linux Kernel).  Here the OS will handle the networking request *asynchronously*.  Details may be different depending on the OS used (the device driver call may be scheduled as a signal sent back to the runtime, or a device driver call may be made and *then* a signal sent back), but eventually the runtime will be informed that the networking request is in progress.  At this time, the work for the device driver will either be scheduled, in-progress, or already finished (the request is already out "over the wire") - but because this is all happening asynchronously, the device driver is able to immediately handle something else!
 

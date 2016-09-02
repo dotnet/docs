@@ -20,7 +20,7 @@ The compiler generated XML file can be distributed alongside your .NET assembly 
 Additionally the XML file can be run through tools like [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) to generate full on API reference websites.
 
 XML documentation comments like all other comments are ignored by the compiler, to enable generation of the XML file add `"xmlDoc":true` under `buildOptions` in your `project.json` when using .NET Core or use the `/doc` compiler option for the .NET framework.
-Go [here](https://msdn.microsoft.com/en-us/library/3260k4x7.aspx) to learn how to enable XML documentation generation in Visual Studio.
+See the [/doc](https://msdn.microsoft.com/library/3260k4x7.aspx) article on MSDN to learn how to enable XML documentation generation in Visual Studio.
 
 XML documentation comments are characterized by triple forward slashes (`///`) and an XML formatted comment body.
 
@@ -1239,11 +1239,11 @@ An there you have it, our code is back to being readable and no documentation in
 
 The `filename` attribute represents the name of the XML file containing the documentation.
 
-The `path` attribute represents an [XPath](https://msdn.microsoft.com/en-us/library/ms256115(v=vs.110).aspx) query to the `tag name` present in the specified `filename`
+The `path` attribute represents an [XPath](https://msdn.microsoft.com/library/ms256115.aspx) query to the `tag name` present in the specified `filename`.
 
-The `name` attribute represents the name specifier in the tag that precedes the comments
+The `name` attribute represents the name specifier in the tag that precedes the comments.
 
-The `id` attribute which can be used in place of `name` represents the ID for the tag that precedes the comments
+The `id` attribute which can be used in place of `name` represents the ID for the tag that precedes the comments.
 
 ### User Defined Tags
 

@@ -77,4 +77,4 @@ In pattern matching expressions, identifiers that begin with lowercase character
 
 ## See Also
 
-[Core.LiteralAttribute Class](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/core.literalattribute-class-%5bfsharp%5d)
+[Core.LiteralAttribute Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.literalattribute-class-%5bfsharp%5d)

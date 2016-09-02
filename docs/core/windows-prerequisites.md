@@ -50,10 +50,10 @@ Verify that you're running [Visual Studio 2015 Update 3.3](https://www.visualstu
 
 * On the **Help** menu, choose **About Microsoft Visual Studio**.
 * In the About Microsoft Visual Studio dialog, the version number should be 14.0.25424.00 or higher, and include "Update 3".
-* If you don't have Update 3, you can download and install [Visual Studio 2015 Update 3](https://www.visualstudio.com/en-us/news/releasenotes/vs2015-update3-vs).
-* If you have Update 3, you download and install [Visual Studio 2015 Update 3.3](https://msdn.microsoft.com/en-us/library/mt752379.aspx).
+* If you don't have Update 3, you can download and install [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
+* If you have Update 3, you download and install [Visual Studio 2015 Update 3.3](https://msdn.microsoft.com/library/mt752379.aspx).
 
-You can read more about the changes in Update 3.3 in the [release notes](https://www.visualstudio.com/en-us/news/releasenotes/vs2015-update3-vs).
+You can read more about the changes in Update 3.3 in the [release notes](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
 
 ## NuGet Manager extension for Visual Studio
 

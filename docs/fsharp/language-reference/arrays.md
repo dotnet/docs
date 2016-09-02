@@ -48,7 +48,7 @@ You can access array elements by using a dot operator (`.`) and brackets (`[` an
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet5.fs)]
 
-Array indices start at 0.
+Array indexes start at 0.
 
 You can also access array elements by using slice notation, which enables you to specify a subrange of the array. Examples of slice notation follow.
 
@@ -192,13 +192,13 @@ You can also use the function [`Array2D.init`](https://msdn.microsoft.com/librar
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet21.fs)]
 
-Array indexing and slicing syntax is supported for arrays up to rank 4. When you specify an index in multiple dimensions, you use commas to separate the indices, as illustrated in the following code example.
+Array indexing and slicing syntax is supported for arrays up to rank 4. When you specify an index in multiple dimensions, you use commas to separate the indexes, as illustrated in the following code example.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet22.fs)]
     
 The type of a two-dimensional array is written out as `<type>[,]` (for example, `int[,]`, `double[,]`), and the type of a three-dimensional array is written as `<type>[,,]`, and so on for arrays of higher dimensions.
 
-Only a subset of the functions available for one-dimensional arrays is also available for multidimensional arrays. For more information, see [`Collections.Array Module`](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/collections.array-module-%5bfsharp%5d), [`Collections.Array2D Module`](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/collections.array2d-module-%5bfsharp%5d), [`Collections.Array3D Module`](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/collections.array3d-module-%5bfsharp%5d), and [`Collections.Array4D Module`]https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/collections.array4d-module-%5bfsharp%5d).
+Only a subset of the functions available for one-dimensional arrays is also available for multidimensional arrays. For more information, see [`Collections.Array Module`](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.array-module-%5bfsharp%5d), [`Collections.Array2D Module`](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.array2d-module-%5bfsharp%5d), [`Collections.Array3D Module`](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.array3d-module-%5bfsharp%5d), and [`Collections.Array4D Module`](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.array4d-module-%5bfsharp%5d).
 
 ### Array Slicing and Multidimensional Arrays
 

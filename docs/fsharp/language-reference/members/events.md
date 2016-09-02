@@ -181,8 +181,8 @@ Application.Run(appForm)
 
 [Lambda Expressions: The `fun` Keyword](../functions/lambda-expressions-the-fun-keyword.md)
 
-[Control.Event Module](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/control.event-module-%5bfsharp%5d)
+[Control.Event Module](https://msdn.microsoft.com/visualfsharpdocs/conceptual/control.event-module-%5bfsharp%5d)
 
-[Control.Event&#60;'T&#62; Class](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/control.event%5b%27t%5d-class-%5bfsharp%5d)
+[Control.Event&#60;'T&#62; Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/control.event%5b%27t%5d-class-%5bfsharp%5d)
 
-[Control.Event&#60;'Delegate,'Args&#62; Class](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/control.event%5b%27delegate%2c%27args%5d-class-%5bfsharp%5d)
+[Control.Event&#60;'Delegate,'Args&#62; Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/control.event%5b%27delegate%2c%27args%5d-class-%5bfsharp%5d)

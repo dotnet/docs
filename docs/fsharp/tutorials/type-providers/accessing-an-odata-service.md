@@ -1,6 +1,6 @@
 ---
-title: Walkthrough - Accessing an OData Service by Using Type Providers (F#)
-description: Walkthrough - Accessing an OData Service by Using Type Providers (F#)
+title: "Walkthrough: Accessing an OData Service by Using Type Providers (F#)"
+description: "Walkthrough: Accessing an OData Service by Using Type Providers (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

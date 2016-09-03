@@ -1,6 +1,6 @@
 ---
-title: Resource Management - The use Keyword (F#)
-description: Resource Management - The use Keyword (F#)
+title: "Resource Management: The use Keyword (F#)"
+description: "Resource Management: The use Keyword (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

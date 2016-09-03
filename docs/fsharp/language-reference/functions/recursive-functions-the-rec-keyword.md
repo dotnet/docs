@@ -1,6 +1,6 @@
 ---
-title: Recursive Functions: The rec Keyword (F#)
-description: Recursive Functions: The rec Keyword (F#)
+title: "Recursive Functions: The rec Keyword (F#)"
+description: "Recursive Functions: The rec Keyword (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

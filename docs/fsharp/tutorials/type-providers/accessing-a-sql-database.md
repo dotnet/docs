@@ -1,6 +1,6 @@
 ---
-title: Walkthrough - Accessing a SQL Database by Using Type Providers (F#)
-description: Walkthrough - Accessing a SQL Database by Using Type Providers (F#)
+title: "Walkthrough: Accessing a SQL Database by Using Type Providers (F#)"
+description: "Walkthrough: Accessing a SQL Database by Using Type Providers (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

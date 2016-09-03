@@ -1,6 +1,6 @@
 ---
-title: Explicit Fields: The val Keyword (F#)
-description: Explicit Fields: The val Keyword (F#)
+title: "Explicit Fields: The val Keyword (F#)"
+description: "Explicit Fields: The val Keyword (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

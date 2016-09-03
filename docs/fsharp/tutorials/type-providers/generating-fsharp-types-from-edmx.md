@@ -1,6 +1,6 @@
 ---
-title: Walkthrough - Generating F# Types from an EDMX Schema File (F#)
-description: Walkthrough - Generating F# Types from an EDMX Schema File (F#)
+title: "Walkthrough: Generating F# Types from an EDMX Schema File (F#)"
+description: "Walkthrough: Generating F# Types from an EDMX Schema File (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

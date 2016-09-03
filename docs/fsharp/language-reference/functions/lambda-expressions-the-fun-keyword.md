@@ -1,6 +1,6 @@
 ---
-title: Lambda Expressions - The fun Keyword (F#)
-description: Lambda Expressions - The fun Keyword (F#)
+title: "Lambda Expressions: The fun Keyword (F#)"
+description: "Lambda Expressions: The fun Keyword (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

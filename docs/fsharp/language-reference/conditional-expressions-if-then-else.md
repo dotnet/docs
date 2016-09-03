@@ -1,6 +1,6 @@
 ---
-title: Conditional Expressions - if... then...else (F#)
-description: Conditional Expressions - if... then...else (F#)
+title: "Conditional Expressions: if... then...else (F#)"
+description: "Conditional Expressions: if... then...else (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

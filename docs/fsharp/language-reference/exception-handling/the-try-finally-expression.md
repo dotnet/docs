@@ -1,6 +1,6 @@
 ---
-title: Exceptions - The try...finally Expression (F#)
-description: Exceptions - The try...finally Expression (F#)
+title: "Exceptions: The try...finally Expression (F#)"
+description: "Exceptions: The try...finally Expression (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

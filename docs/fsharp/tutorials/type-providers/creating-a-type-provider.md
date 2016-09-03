@@ -1,6 +1,6 @@
 ---
-title: Tutorial - Creating a Type Provider (F#)
-description: Tutorial - Creating a Type Provider (F#)
+title: "Tutorial: Creating a Type Provider (F#)"
+description: "Tutorial: Creating a Type Provider (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

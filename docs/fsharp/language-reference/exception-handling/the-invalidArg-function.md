@@ -1,6 +1,6 @@
 ---
-title: Exceptions - The invalidArg Function (F#)
-description: Exceptions - The invalidArg Function (F#)
+title: "Exceptions: The invalidArg Function (F#)"
+description: "Exceptions: The invalidArg Function (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

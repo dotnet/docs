@@ -44,15 +44,23 @@ To learn more and get involved, check out [fsharp.org](http://fsharp.org).
 
 ## Documentation
 
-* [Getting Started](tutorials/getting-started/index.md)
-* [Introduction to Functional Programming](introduction-to-functional-programming/index.md)
 * [Tutorials](tutorials/index.md)
+* [Introduction to Functional Programming](introduction-to-functional-programming/index.md)
 * [Language Reference](language-reference/index.md)
 * [F# Core Library Reference](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/fsharp-core-library-reference)
 
+## Free Learning Resources
+
+* [F# for Fun and Profit Gitbook](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/) 
+* [F# Programming Wikibook](https://en.wikibooks.org/wiki/F_Sharp_Programming)
+
+## Video Learning Resources
+
+* [Introduction to Programming with F# series on YouTube](introduction-to-functional-programming/index.md)
+* [Introduction to F# series on FSharpTV](https://fsharp.tv/courses/fsharp-programming-intro/)
+
 ## Further Resources
 
-* [F# Learning Resources](http://fsharp.org/learn.html)
-* [F# for Fun and Profit](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/)
-* [F# Snippets](http://www.fssnip.net)
+* [F# Learning Resources on fsharp.org](http://fsharp.org/learn.html)
+* [F# Snippets Website](http://www.fssnip.net)
 * [F# Software Foundation](http://fsharp.org)

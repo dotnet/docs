@@ -317,7 +317,7 @@ module Sequences =
     let rnd = System.Random()
 
     // An infinite sequence which is a random walk.
-    // Use yield! to return each element of a subsequence, similar to IEnumerable.SelectMany.
+    // Use yield! to return each element of a subsequence.
     let rec randomWalk x =
         seq { yield x
               yield! randomWalk (x + rnd.NextDouble() - 0.5) }
@@ -502,7 +502,7 @@ module OptionTypes =
 
         // Return the shipping zone corresponding to the customer's ZIP code.
         // Customer may not yet have a ZIP code or the ZIP code may be invalid.
-        member this.customerShippingZone(customer : Customer) =
+        member this.CustomerShippingZone(customer : Customer) =
             customer.ZipCode 
             |> Option.bind this.GetState 
             |> Option.map this.GetShippingZone
@@ -523,8 +523,8 @@ module PatternMatching =
     // Define a discriminated union of 3 different kinds of employees
     type Employee =
         | Engineer  of Person
-        | Manager   of Person * list<Employee>            // Manager has list of reports
-        | Executive of Person * list<Employee> * Employee // Executive also has an assistant
+        | Manager   of Person * list<Employee> // Manager has a list of reports.
+        | Executive of Person * list<Employee> * Employee // Executive has an assistant.
 
     // Count everyone underneath the employee in the management hierarchy,
     // including the employee.
@@ -543,7 +543,7 @@ module PatternMatching =
     let rec findDaveWithOpenPosition(emps : Employee list) =
         emps
         |> List.filter(function
-                       | Manager({First = "Dave"}, []) -> true // [] matches the empty list.
+                       | Manager({First = "Dave"}, []) -> true // [] matches an empty list.
                        | Executive({First = "Dave"}, [], _) -> true
                        | _ -> false) // '_' is a wildcard pattern that matches anything
                                      // this handles the "or else" case.
@@ -562,7 +562,7 @@ module PatternMatching =
     | Some dto -> printfn "It parsed!"
     | None -> printfn "It didn't parse!"
 
-    // Define some more functions which parse
+    // Define some more functions which parse with the helper function.
     let parseInt = parseHelper Int32.TryParse
     let parseDouble = parseHelper Double.TryParse
     let parseTimeSpan = parseHelper TimeSpan.TryParse

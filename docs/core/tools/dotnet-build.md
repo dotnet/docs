@@ -45,11 +45,11 @@ compilation process to be incremental:
 - not load compilation tools from PATH (for example, resgen, compilers)
 - use only known compilers (csc, vbc, fsc)
 
-In order to build an executable application, you need a special configuration section in your project.json file:
+In order to build an executable application instead of a DLL, you need a [special configuration](project-json.md#emitentrypoint) section in your project.json file:
 
 ```json
 { 
-    "compilerOptions": {
+    "buildOptions": {
       "emitEntryPoint": true
     }
 }

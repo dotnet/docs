@@ -1,5 +1,5 @@
 ---
-title: How to enumerate time zones present on a computer
+title: "How to: enumerate time zones present on a computer"
 description: How to enumerate time zones present on a computer
 keywords: .NET, .NET Core
 author: stevehoag

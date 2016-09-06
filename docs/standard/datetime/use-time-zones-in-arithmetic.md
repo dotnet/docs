@@ -1,5 +1,5 @@
 ---
-title: How to use time zones in date and time arithmetic
+title: "How to: use time zones in date and time arithmetic"
 description: How to use time zones in date and time arithmetic
 keywords: .NET, .NET Core
 author: stevehoag

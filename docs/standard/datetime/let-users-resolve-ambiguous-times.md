@@ -1,5 +1,5 @@
 ---
-title: How to let users resolve ambiguous times
+title: "How to: let users resolve ambiguous times"
 description: How to let users resolve ambiguous times
 keywords: .NET, .NET Core
 author: stevehoag

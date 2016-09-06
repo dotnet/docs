@@ -1,5 +1,5 @@
 ---
-title: How to instantiate a TimeZoneInfo object
+title: "How to: instantiate a TimeZoneInfo object"
 description: How to instantiate a TimeZoneInfo object
 keywords: .NET, .NET Core
 author: stevehoag

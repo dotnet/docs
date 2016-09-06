@@ -49,7 +49,7 @@ To learn more and get involved, check out [fsharp.org](http://fsharp.org).
 * [Language Reference](language-reference/index.md)
 * [F# Core Library Reference](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/fsharp-core-library-reference)
 
-## Online Learning Resources
+## Online Reading Resources
 
 * [F# for Fun and Profit Gitbook](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/) 
 * [F# Programming Wikibook](https://en.wikibooks.org/wiki/F_Sharp_Programming)

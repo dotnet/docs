@@ -79,7 +79,7 @@ type TerraService = WsdlService<" HYPERLINK "http://terraserver-usa.com/TerraSer
 ```
 
   A red squiggle appears under this line of code if the service URI is misspelled or if the service itself is down or isn’t performing. If you point to the code, an error message describes the problem. You can find the same information in the **Error List** window or in the **Output Window** after you build.
-<br />  There are two ways to specify configuration settings for a WSDL connection, by using the app.config file for the project, or by using the static type parameters in the type provider declaration. You can use svcutil.exe to generate appropriate configuration file elements. For more information about using svcutil.exe to generate configuration information for a web service, see [ServiceModel Metadata Utility Tool &#40;Svcutil.exe&#41;](https://msdn.microsoft.com/library/aa347733.aspx).For a full description of the static type parameters for the WSDL type provider, see [WsdlService Type Provider](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/wsdlservice-type-provider-%5bfsharp%5d).
+<br />  There are two ways to specify configuration settings for a WSDL connection, by using the app.config file for the project, or by using the static type parameters in the type provider declaration. You can use svcutil.exe to generate appropriate configuration file elements. For more information about using svcutil.exe to generate configuration information for a web service, see [ServiceModel Metadata Utility Tool &#40;Svcutil.exe&#41;](https://msdn.microsoft.com/library/aa347733.aspx). For a full description of the static type parameters for the WSDL type provider, see [WsdlService Type Provider](https://msdn.microsoft.com/visualfsharpdocs/conceptual/wsdlservice-type-provider-%5bfsharp%5d).
 <br />
 
 ## Calling the web service, and processing the results
@@ -112,6 +112,6 @@ Notice that you create the data types that are needed for the web service, such 
 
 
 ## See Also
-[WsdlService Type Provider](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/wsdlservice-type-provider-%5bfsharp%5d)
+[WsdlService Type Provider](https://msdn.microsoft.com/visualfsharpdocs/conceptual/wsdlservice-type-provider-%5bfsharp%5d)
 
 [Type Providers](index.md)

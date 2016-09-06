@@ -32,7 +32,7 @@ The [Tutorials](tutorials/index.md) also have step-by-step guides for various sk
 
 ## If You're Experienced with F# #
 
-If you know your way around F#, you'll find a lot of use in the [Language Reference](language-reference/index.md), which documents each aspect of the language thoroughly, supplemented by numerous code samples.  You'll also find a lot of use in the [F# Core Library Reference](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/fsharp-core-library-reference).
+If you know your way around F#, you'll find a lot of use in the [Language Reference](language-reference/index.md), which documents each aspect of the language thoroughly, supplemented by numerous code samples.  You'll also find a lot of use in the [F# Core Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference).
 
 ## The F# Software Foundation
 
@@ -48,7 +48,7 @@ To learn more and get involved, check out [fsharp.org](http://fsharp.org).
 * [Introduction to Functional Programming](introduction-to-functional-programming/index.md)
 * [Tutorials](tutorials/index.md)
 * [Language Reference](language-reference/index.md)
-* [F# Core Library Reference](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/fsharp-core-library-reference)
+* [F# Core Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference)
 
 ## Further Resources
 

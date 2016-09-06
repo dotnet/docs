@@ -332,7 +332,7 @@ The best way to make sure everything works when you've ported your code is to te
 * [NUnit](http://www.nunit.org/)
   - [Getting Started](https://github.com/nunit/docs/wiki/Installation)
   - [Blog post about migrating from MSTest to NUnit](http://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)
-* [MSTest](https://msdn.microsoft.com/en-us/library/ms243147(v=vs.90).aspx)
+* [MSTest](https://msdn.microsoft.com/library/ms243147.aspx)
 
 ## Recommended Approach to Porting
 

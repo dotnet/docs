@@ -84,7 +84,7 @@ By using the `Chars` property of `System.String`, you can access the individual 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1005.fs)]
     
 ## String Module
-Additional functionality for string handling is included in the `String` module in the `FSharp.Core` namespace. For more information, see [Core.String Module](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/core.string-module-%5bfsharp%5d).
+Additional functionality for string handling is included in the `String` module in the `FSharp.Core` namespace. For more information, see [Core.String Module](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.string-module-%5bfsharp%5d).
 
 ## See Also
 [F# Language Reference](index.md)

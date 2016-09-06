@@ -20,7 +20,7 @@ Latency refers to the time that the garbage collector intrudes in your applicati
 
 * [LowLatency](xref:System.Runtime.GCLatencyMode.LowLatency) suppresses generation 2 collections and performs only generation 0 and 1 collections. It can be used only for short periods of time. Over longer periods, if the system is under memory pressure, the garbage collector will trigger a collection, which can briefly pause the application and disrupt a time-critical operation. This setting is available only for workstation garbage collection. 
 
-* [SustainedLowLatency](xref:System.Runtime.GCLatencyMode.SustainedLowLatency) suppresses foreground generation 2 collections and performs only generation 0, 1, and background generation 2 collections. It can be used for longer periods of time, and is available for both workstation and server garbage collection. This setting cannot be used if [concurrent garbage collection](https://msdn.microsoft.com/en-us/library/yhwwzef8(v=vs.110).aspx) is disabled.
+* [SustainedLowLatency](xref:System.Runtime.GCLatencyMode.SustainedLowLatency) suppresses foreground generation 2 collections and performs only generation 0, 1, and background generation 2 collections. It can be used for longer periods of time, and is available for both workstation and server garbage collection. This setting cannot be used if [concurrent garbage collection](https://msdn.microsoft.com/library/yhwwzef8.aspx) is disabled.
 
 During low latency periods, generation 2 collections are suppressed unless the following occurs:
 
@@ -32,8 +32,8 @@ The following table lists the application scenarios for using the [GCLatencyMode
 
 Latency mode | Application scenarios
 ------------ | --------------------- 
-[Batch](xref:System.Runtime.GCLatencyMode.Batch) | For applications that have no UI or server-side operations. This is the default mode when [concurrent garbage collection](https://msdn.microsoft.com/en-us/library/yhwwzef8(v=vs.110).aspx) is disabled.
-[Interactive](xref:System.Runtime.GCLatencyMode.Interactive) | For most applications that have a UI. For applications that have no UI or server-side operations. This is the default mode when [concurrent garbage collection](https://msdn.microsoft.com/en-us/library/yhwwzef8(v=vs.110).aspx) is enabled.
+[Batch](xref:System.Runtime.GCLatencyMode.Batch) | For applications that have no UI or server-side operations. This is the default mode when [concurrent garbage collection](https://msdn.microsoft.com/library/yhwwzef8.aspx) is disabled.
+[Interactive](xref:System.Runtime.GCLatencyMode.Interactive) | For most applications that have a UI. For applications that have no UI or server-side operations. This is the default mode when [concurrent garbage collection](https://msdn.microsoft.com/library/yhwwzef8.aspx) is enabled.
 [LowLatency](xref:System.Runtime.GCLatencyMode.LowLatency) | For applications that have short-term, time-sensitive operations during which interruptions from the garbage collector could be disruptive. For example, applications that do animation rendering or data acquisition functions.
 [SustainedLowLatency](xref:System.Runtime.GCLatencyMode.SustainedLowLatency) | For applications that have time-sensitive operations for a contained but potentially longer duration of time during which interruptions from the garbage collector could be disruptive. For example, applications that need quick response times as market data changes during trading hours.   This mode results in a larger managed heap size than other modes. Because it does not compact the managed heap, higher fragmentation is possible. Ensure that sufficient memory is available.
  

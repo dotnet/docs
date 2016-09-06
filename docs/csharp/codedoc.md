@@ -4,7 +4,7 @@ description: Documenting your code
 keywords: .NET, .NET Core
 author: tsolarin
 manager: wpickett
-ms.date: 08/24/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -449,7 +449,7 @@ public class Math
 The `cref` is a **required** attribute that represents a reference to a type or its member that is available from the current compilation environment. 
 This can be any type defined in the project or a referenced assembly.
 
-## &lt;seealso&gt;
+### &lt;seealso&gt;
 
 You use the `<seealso>` tag in the same way you do the `<see>` tag, the only difference is that it's content is typically broken into a "See Also" section not that different from
 the one you sometimes see on the MSDN documentation pages. Here we'll add a `seealso` tag on the integer `Add` method to reference other methods in the class that accept interger parameters:

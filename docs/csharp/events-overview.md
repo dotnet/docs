@@ -75,9 +75,14 @@ Event declarations should be a verb, or a verb phrase.
 Use past tense (as in this example) when
 the event reports something that has happened. Use a present tense verb (for
 example, `Closing`) to report something that is about to happen. Often, using
-present tense indicates that the event supports cancellation. For example,
+present tense indicates that your class supports some kind of customization
+behavior. One of the most common scenarios is to support cancellation. For example,
 a `Closing` event may include an argument that would indicate if the close
-operation should continue, or not.  
+operation should continue, or not.  Other scenarios may enable callers to modify
+behavior by updating properties of the event arguments. You may raise an
+event to indicate a proposed next action an algorithm will take. The event
+handler may mandate a different action by modifying  properties of the event
+argument.
 
 When you want to raise the event, you call the event handlers using the delegate invocation
 syntax:

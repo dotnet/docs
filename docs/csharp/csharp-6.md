@@ -4,7 +4,7 @@ description: What's New in C# 6
 keywords: .NET, .NET Core
 author:  BillWagner
 manager: wpickett
-ms.date: 06/26/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: visual-studio-dev-14
 ms.technology: devlang-csharp

@@ -93,7 +93,7 @@ when there are no subscribers to that event.
 You subscribe to an event by using the `+=` operator:
 
 ```cs
-EventHandler<FileListArgs> OnProgress = (sender, eventArgs) => 
+EventHandler<FileListArgs> onProgress = (sender, eventArgs) => 
     Console.WriteLine(eventArgs.FoundFile);
 lister.Progress += OnProgress;
 ```
@@ -104,7 +104,7 @@ by the event name, as shown above.
 You unsubscribe using the `-=` operator:
 
 ```cs
-lister.Progress -= OnProgress;
+lister.Progress -= onProgress;
 ```
 
 It's important to note that I declared a local variable for the expression that

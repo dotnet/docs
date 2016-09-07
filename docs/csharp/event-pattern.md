@@ -126,7 +126,7 @@ that the event objects can only be accessed in safe ways. The only
 operations available on a field-like event are add handler:
 
 ```cs
-EventHandler<FileFoundArgs> OnFoundFile = (sender, eventArgs) =>
+EventHandler<FileFoundArgs> onFoundFile = (sender, eventArgs) =>
     Console.WriteLine(eventArgs.FoundFile);
 lister.FoundFile += OnFoundFile;
 ```
@@ -221,7 +221,7 @@ Let's update the subscriber so that it requests a cancellation once
 it finds the first executable:
 
 ```cs
-EventHandler<FileFoundArgs> OnFoundFile = (sender, eventArgs) =>
+EventHandler<FileFoundArgs> onFoundFile = (sender, eventArgs) =>
 {
     Console.WriteLine(eventArgs.FoundFile);
     eventArgs.CancelRequested = true;
@@ -270,12 +270,12 @@ need extra code in those handlers in this project, but this shows how
 you would create them.
 
 ```cs
-internal event EventHandler<SearchDirectoryArgs> ChangeDirectory
+internal event EventHandler<SearchDirectoryArgs> ChangedDirectory
 {
     add { changeDirectory += value; }
     remove { changeDirectory -= value; }
 }
-private event EventHandler<SearchDirectoryArgs> changeDirectory;
+private EventHandler<SearchDirectoryArgs> changedDirectory;
 ```
 
 In may ways, the code you write here mirrors the code the compiler

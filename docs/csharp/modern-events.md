@@ -93,7 +93,7 @@ create a safe `async void` method. The basics of the pattern you need
 to implement are below:
 
 ```cs
-worker.OnStartWorking += async (sender, eventArgs) =>
+worker.StartWorking += async (sender, eventArgs) =>
 {
     try 
     {

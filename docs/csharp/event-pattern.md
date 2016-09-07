@@ -29,7 +29,7 @@ subscribe and process standard events in your code.
 The standard signature for a .NET event delegate is:
 
 ```cs
-void Handler(object sender, EventArgs args);
+void OnEventRaised(object sender, EventArgs args);
 ```
 
 The return type is void. Events are based on delegates and are
@@ -97,13 +97,13 @@ a pattern, and raise the correct event when a match is discovered.
 ```cs
 public class FileSearcher
 {
-    public event EventHandler<FileFoundArgs> OnFoundFile;
+    public event EventHandler<FileFoundArgs> FoundFile;
 
     public void Search(string directory, string searchPattern)
     {
         foreach (var file in Directory.EnumerateFiles(directory, searchPattern))
         {
-            OnFoundFile?.Invoke(this, new FileFoundArgs(file));
+            FoundFile?.Invoke(this, new FileFoundArgs(file));
         }
     }
 }
@@ -115,7 +115,7 @@ The simplest way to add an event to your class is to declare that
 event as a public field, as in the above example:
 
 ```cs
-public event EventHandler<FileFoundArgs> OnFoundFile;
+public event EventHandler<FileFoundArgs> FoundFile;
 ```
 
 This looks like it's declaring a public field, which would appear to
@@ -126,15 +126,15 @@ that the event objects can only be accessed in safe ways. The only
 operations available on a field-like event are add handler:
 
 ```cs
-EventHandler<FileFoundArgs> handler = (sender, eventArgs) =>
+EventHandler<FileFoundArgs> OnFoundFile = (sender, eventArgs) =>
     Console.WriteLine(eventArgs.FoundFile);
-lister.OnFoundFile += handler;
+lister.FoundFile += OnFoundFile;
 ```
 
 and remove handler:
 
 ```cs
-lister.OnFoundFile -= handler;
+lister.FoundFile -= OnFoundFile;
 ```
 
 Note that there's a local variable for the handler. If you used
@@ -205,7 +205,7 @@ public void List(string directory, string searchPattern)
     foreach (var file in Directory.EnumerateFiles(directory, searchPattern))
     {
         var args = new FileFoundArgs(file);
-        OnFoundFile?.Invoke(this, args);
+        FoundFile?.Invoke(this, args);
         if (args.CancelRequested)
             break;
     }
@@ -221,7 +221,7 @@ Let's update the subscriber so that it requests a cancellation once
 it finds the first executable:
 
 ```cs
-EventHandler<FileFoundArgs> handler = (sender, eventArgs) =>
+EventHandler<FileFoundArgs> OnFoundFile = (sender, eventArgs) =>
 {
     Console.WriteLine(eventArgs.FoundFile);
     eventArgs.CancelRequested = true;
@@ -270,7 +270,7 @@ need extra code in those handlers in this project, but this shows how
 you would create them.
 
 ```cs
-internal event EventHandler<SearchDirectoryArgs> OnChangeDirectory
+internal event EventHandler<SearchDirectoryArgs> ChangeDirectory
 {
     add { changeDirectory += value; }
     remove { changeDirectory -= value; }
@@ -323,7 +323,7 @@ private void SearchDirectory(string directory, string searchPattern)
     foreach (var file in Directory.EnumerateFiles(directory, searchPattern))
     {
         var args = new FileFoundArgs(file);
-        OnFoundFile?.Invoke(this, args);
+        FoundFile?.Invoke(this, args);
         if (args.CancelRequested)
             break;
     }
@@ -332,14 +332,14 @@ private void SearchDirectory(string directory, string searchPattern)
 
 At this point, you can run the application calling the overload for
 searching all sub-directories. There are no subscribers on the new
-`OnChangeDirectory` event, but using the `?.Invoke()` idiom ensures
+`ChangeDirectory` event, but using the `?.Invoke()` idiom ensures
 that this works correctly.
 
  Let's add a handler to write a line that shows the progress in the
  console window. 
 
 ```cs
-lister.OnChangeDirectory += (sender, eventArgs) =>
+lister.ChangeDirectory += (sender, eventArgs) =>
 {
     Console.Write($"Entering '{eventArgs.CurrentSearchDirectory}'.");
     Console.WriteLine($" {eventArgs.CompletedDirs} of {eventArgs.TotalDirs} completed...");

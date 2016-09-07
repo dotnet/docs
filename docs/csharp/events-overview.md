@@ -65,7 +65,7 @@ an extension of the syntax for delegates.
 To define an event you use the `event` keyword:
 
 ```cs
-public event EventHandler<FileListArgs> OnProgress;
+public event EventHandler<FileListArgs> Progress;
 ```
 
 The type of the event (`EventHandler<FileListArgs>` in this example) must be a
@@ -74,16 +74,16 @@ when declaring an event. Typically, the event delegate type has a void return.
 Prefix event declarations with 'On'.
 The remainder of the name is a verb. Use past tense (as in this example) when
 the event reports something that has happened. Use a present tense verb (for
-example, `OnClosing`) to report something that is about to happen. Often, using
+example, `Closing`) to report something that is about to happen. Often, using
 present tense indicates that the event supports cancellation. For example,
-an `OnClosing` event may include an argument that would indicate if the close
+an `Closing` event may include an argument that would indicate if the close
 operation should continue, or not.  
 
 When you want to raise the event, you call the event using the delegate invocation
 syntax:
 
 ```cs
-OnProgress?.Invoke(this, new FileListArgs(file));
+Progress?.Invoke(this, new FileListArgs(file));
 ```
 
 As discussed in the section on [delegates](delegates-patterns.md), the ?.
@@ -93,15 +93,15 @@ when there are no subscribers to that event.
 You subscribe to an event by using the `+=` operator:
 
 ```cs
-EventHandler<FileListArgs> handler = (sender, eventArgs) => 
+EventHandler<FileListArgs> OnProgress = (sender, eventArgs) => 
     Console.WriteLine(eventArgs.FoundFile);
-lister.OnProgress += handler;
+lister.Progress += OnProgress;
 ```
 
 You unsubscribe using the `-=` operator:
 
 ```cs
-lister.OnProgress -= handler;
+lister.Progress -= OnProgress;
 ```
 
 It's important to note that I declared a local variable for the expression that

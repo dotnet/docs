@@ -15,24 +15,24 @@ namespace EventSampleCode
             var lister = new FileSearcher();
             int filesFound = 0;
 
-            EventHandler<FileFoundArgs> handler = (sender, eventArgs) =>
+            EventHandler<FileFoundArgs> OnFoundFile = (sender, eventArgs) =>
             {
                 Console.WriteLine(eventArgs.FoundFile);
                 filesFound++;
                 //eventArgs.CancelRequested = true;
             };
 
-            lister.OnFoundFile += handler;
+            lister.FoundFile += OnFoundFile;
 
-            lister.OnChangeDirectory += (sender, eventArgs) =>
+            lister.ChangeDirectory += (sender, eventArgs) =>
             {
                 Console.Write($"Entering '{eventArgs.CurrentSearchDirectory}'.");
                 Console.WriteLine($" {eventArgs.CompletedDirs} of {eventArgs.TotalDirs} completed...");
             };
 
-            lister.Search(".", "*.exe", true);
+            lister.Search(".", "*.dll", true);
 
-            lister.OnFoundFile -= handler;
+            lister.FoundFile -= OnFoundFile;
         }
     }
 
@@ -62,8 +62,8 @@ namespace EventSampleCode
     }
     public class FileSearcher
     {
-        public event EventHandler<FileFoundArgs> OnFoundFile;
-        internal event EventHandler<SearchDirectoryArgs> OnChangeDirectory
+        public event EventHandler<FileFoundArgs> FoundFile;
+        internal event EventHandler<SearchDirectoryArgs> ChangeDirectory
         {
             add { changeDirectory += value; }
             remove { changeDirectory -= value; }
@@ -100,7 +100,7 @@ namespace EventSampleCode
             foreach (var file in Directory.EnumerateFiles(directory, searchPattern))
             {
                 var args = new FileFoundArgs(file);
-                OnFoundFile?.Invoke(this, args);
+                FoundFile?.Invoke(this, args);
                 if (args.CancelRequested)
                     break;
             }

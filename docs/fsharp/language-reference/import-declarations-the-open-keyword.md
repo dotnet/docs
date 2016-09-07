@@ -1,6 +1,6 @@
 ---
-title: Import Declarations: The open Keyword (F#)
-description: Import Declarations: The open Keyword (F#)
+title: "Import Declarations: The open Keyword (F#)"
+description: "Import Declarations: The open Keyword (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -61,11 +61,11 @@ Some namespaces are so frequently used in F# code that they are opened implicitl
 |`Microsoft.FSharp.Text`|Contains functions for formatted IO, such as the `printf` function.|
 
 ## AutoOpen Attribute
-You can apply the `AutoOpen` attribute to an assembly if you want to automatically open a namespace or module when the assembly is referenced. You can also apply the `AutoOpen` attribute to a module to automatically open that module when the parent module or namespace is opened. For more information, see [Core.AutoOpenAttribute Class](https://stage.docs.microsoft.com/en-us/dotnet/articles/fsharp/language-reference/core.autoopenattribute-class).
+You can apply the `AutoOpen` attribute to an assembly if you want to automatically open a namespace or module when the assembly is referenced. You can also apply the `AutoOpen` attribute to a module to automatically open that module when the parent module or namespace is opened. For more information, see [Core.AutoOpenAttribute Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.autoopenattribute-class-%5bfsharp%5d).
 
 
 ## RequireQualifiedAccess Attribute
-Some modules, records, or union types may specify the `RequireQualifiedAccess` attribute. When you reference elements of those modules, records, or unions, you must use a qualified name regardless of whether you include an import declaration. If you use this attribute strategically on types that define commonly used names, you help avoid name collisions and thereby make code more resilient to changes in libraries. For more information, see [Core.RequireQualifiedAccessAttribute Class](https://stage.docs.microsoft.com/en-us/dotnet/articles/fsharp/language-reference/core.requirequalifiedaccessattribute-class).
+Some modules, records, or union types may specify the `RequireQualifiedAccess` attribute. When you reference elements of those modules, records, or unions, you must use a qualified name regardless of whether you include an import declaration. If you use this attribute strategically on types that define commonly used names, you help avoid name collisions and thereby make code more resilient to changes in libraries. For more information, see [Core.RequireQualifiedAccessAttribute Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.requirequalifiedaccessattribute-class-%5Bfsharp%5D).
 
 
 ## See Also

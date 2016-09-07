@@ -1,6 +1,6 @@
 ---
-title: Walkthrough - Accessing a SQL Database by Using Type Providers (F#)
-description: Walkthrough - Accessing a SQL Database by Using Type Providers (F#)
+title: "Walkthrough: Accessing a SQL Database by Using Type Providers (F#)"
+description: "Walkthrough: Accessing a SQL Database by Using Type Providers (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -149,7 +149,7 @@ let query1 =
 query1 |> Seq.iter (fun row -> printfn "%s %d" row.Name row.TestData1)
 ```
 
-The appearance of the word `query` indicates that this is a query expression, a type of computation expression that generates a collection of results similar of a typical database query. If you hover over query, you will see that it is an instance of [Linq.QueryBuilder Class](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d), a type that defines the query computation expression. If you hover over `query1`, you will see that it is an instance of `System.Linq.IQueryable`. As the name suggests, `System.Linq.IQueryable` represents data that may be queried, not the result of a query. A query is subject to lazy evaluation, which means that the database is only queried when the query is evaluated. The final line passes the query through `Seq.iter`. Queries are enumerable and may be iterated like sequences. For more information, see [Query Expressions](../../language-reference/query-expressions.md).
+The appearance of the word `query` indicates that this is a query expression, a type of computation expression that generates a collection of results similar of a typical database query. If you hover over query, you will see that it is an instance of [Linq.QueryBuilder Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d), a type that defines the query computation expression. If you hover over `query1`, you will see that it is an instance of `System.Linq.IQueryable`. As the name suggests, `System.Linq.IQueryable` represents data that may be queried, not the result of a query. A query is subject to lazy evaluation, which means that the database is only queried when the query is evaluated. The final line passes the query through `Seq.iter`. Queries are enumerable and may be iterated like sequences. For more information, see [Query Expressions](../../language-reference/query-expressions.md).
 
 <br />
 
@@ -195,7 +195,7 @@ findData 10 |> Seq.iter (fun row -> printfn "Found row: %d %d %f %s" row.Id row.
 ## Working with nullable fields
 In databases, fields often allow null values. In the .NET type system, you cannot use the ordinary numerical data types for data that allows nulls because those types do not have null as a possible value. Therefore, these values are represented by instances of `System.Nullable` type. Instead of accessing the value of such fields directly with the name of the field, you need to add some extra steps. You can use the `System.Nullable.Value` property to access the underlying value of a nullable type. The `System.Nullable.Value` property throws an exception if the object is null rather than having a value. You can use the `System.Nullable.HasValue` Boolean method to determine if a value exists, or use `System.Nullable.GetValueOrDefault()` to ensure that you have an actual value in all cases. If you use `System.Nullable.GetValueOrDefault()` and there is a null in the database, then it is replaced with a value such as an empty string for string types, 0 for integral types or 0.0 for floating point types.
 
-When you need to perform equality tests or comparisons on nullable values in a `where` clause in a query, you can use the nullable operators found in the [Linq.NullableOperators Module](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/linq.nullableoperators-module-%5bfsharp%5d). These are like the regular comparison operators `=`, `>`, `<=`, and so on, except that a question mark appears on the left or right of the operator where the nullable values are. For example, the operator `>?` is a greater-than operator with a nullable value on the right. The way these operators work is that if either side of the expression is null, the expression evaluates to `false`. In a `where` clause, this generally means that the rows that contain null fields are not selected and not returned in the query results.
+When you need to perform equality tests or comparisons on nullable values in a `where` clause in a query, you can use the nullable operators found in the [Linq.NullableOperators Module](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.nullableoperators-module-%5bfsharp%5d). These are like the regular comparison operators `=`, `>`, `<=`, and so on, except that a question mark appears on the left or right of the operator where the nullable values are. For example, the operator `>?` is a greater-than operator with a nullable value on the right. The way these operators work is that if either side of the expression is null, the expression evaluates to `false`. In a `where` clause, this generally means that the rows that contain null fields are not selected and not returned in the query results.
 
 
 #### To work with nullable fields
@@ -219,7 +219,7 @@ query {
 ```
 
 ## Calling a stored procedure
-Any stored procedures on the database can be called from F#. You must set the static parameter `StoredProcedures` to `true` in the type provider instantiation. The type provider `SqlDataConnection` contains several static methods that you can use to configure the types that are generated. For a complete description of these, see [SqlDataConnection Type Provider](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/sqldataconnection-type-provider-%5bfsharp%5d). A method on the data context type is generated for each stored procedure.
+Any stored procedures on the database can be called from F#. You must set the static parameter `StoredProcedures` to `true` in the type provider instantiation. The type provider `SqlDataConnection` contains several static methods that you can use to configure the types that are generated. For a complete description of these, see [SqlDataConnection Type Provider](https://msdn.microsoft.com/visualfsharpdocs/conceptual/sqldataconnection-type-provider-%5bfsharp%5d). A method on the data context type is generated for each stored procedure.
 
 
 #### To call a stored procedure
@@ -481,7 +481,7 @@ INSERT INTO Table3 (Id, Name, Data)
 ## See Also
 [Type Providers](index.md)
 
-[SqlDataConnection Type Provider](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/sqldataconnection-type-provider-%5bfsharp%5d)
+[SqlDataConnection Type Provider](https://msdn.microsoft.com/visualfsharpdocs/conceptual/sqldataconnection-type-provider-%5bfsharp%5d)
 
 [Walkthrough: Generating F# Types from a DBML File](generating-fsharp-types-from-dbml.md)
 

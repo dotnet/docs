@@ -252,4 +252,4 @@ will be seamless, and you can concentrate on the problem at hand. The
 tools will run automatically.
    
    > [!TIP]
-   > On Windows platform you can you can use MSTest. You can find out more in the [Using MSTest on Windows document](./using-mstest-on-windows.md).
+   > On Windows platform you can use MSTest. Find out more in the [Using MSTest on Windows document](./using-mstest-on-windows.md).

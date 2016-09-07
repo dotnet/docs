@@ -1,6 +1,6 @@
 ---
-title: Exceptions - the raise Function (F#)
-description: Exceptions - the raise Function (F#)
+title: "Exceptions: the raise Function (F#)"
+description: "Exceptions: the raise Function (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

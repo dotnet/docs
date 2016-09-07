@@ -1,6 +1,6 @@
 ---
-title: Walkthrough - Accessing an OData Service by Using Type Providers (F#)
-description: Walkthrough - Accessing an OData Service by Using Type Providers (F#)
+title: "Walkthrough: Accessing an OData Service by Using Type Providers (F#)"
+description: "Walkthrough: Accessing an OData Service by Using Type Providers (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -179,7 +179,7 @@ salesIn1997
                 printfn "Category: %s Sales: %M" sales.CategoryName (sales.CategorySales.GetValueOrDefault()))
 ```
 
-The operators `?>` and `?<` are nullable operators. You can use a full set of nullable equality and comparison operators. For more information, see [Linq.NullableOperators Module](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/linq.nullableoperators-module-%5bfsharp%5d).
+The operators `?>` and `?<` are nullable operators. You can use a full set of nullable equality and comparison operators. For more information, see [Linq.NullableOperators Module](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.nullableoperators-module-%5bfsharp%5d).
 <br />
 
 7. Use the `sortBy` query operator to specify ordering, and use `thenBy` to specify another level of ordering. Notice also the use of a tuple in the select part of the query. Therefore, the query has a tuple as an element type.
@@ -245,4 +245,4 @@ The output of the previous code is:
 
 [LINQ Considerations (WCF Data Services)](https://msdn.microsoft.com/library/ee622463.aspx)
 
-[ODataService Type Provider (F#)](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/odataservice-type-provider-%5bfsharp%5d)
+[ODataService Type Provider (F#)](https://msdn.microsoft.com/visualfsharpdocs/conceptual/odataservice-type-provider-%5bfsharp%5d)

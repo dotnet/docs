@@ -1,6 +1,6 @@
 ---
-title: Loops - while...do Expression (F#)
-description: Loops - while...do Expression (F#)
+title: "Loops: while...do Expression (F#)"
+description: "Loops: while...do Expression (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

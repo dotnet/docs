@@ -1,6 +1,6 @@
 ---
-title: Walkthrough - Your First F# Program
-description: Walkthrough - Your First F# Program
+title: Getting Started with F# in Visual Studio
+description: Getting Started with F# in Visual Studio
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

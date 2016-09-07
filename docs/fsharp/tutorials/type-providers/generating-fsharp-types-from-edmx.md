@@ -1,6 +1,6 @@
 ---
-title: Walkthrough - Generating F# Types from an EDMX Schema File (F#)
-description: Walkthrough - Generating F# Types from an EDMX Schema File (F#)
+title: "Walkthrough: Generating F# Types from an EDMX Schema File (F#)"
+description: "Walkthrough: Generating F# Types from an EDMX Schema File (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -243,7 +243,7 @@ You should complete this procedure only if you want to know how to generate a fu
 9. Make sure the check box to save the entity connection string to the **App.Config** file is selected, and make note of the string value in the text box, which should help you locate the connection string later, if needed.
 <br />
 
-10. On the next pagechoose **Tables** and **Stored Procedures and Functions**.
+10. On the next page, choose **Tables** and **Stored Procedures and Functions**.
 <br />  By choosing these top-level nodes, you choose all tables, stored procedures, and functions. You can also choose these individually, if you want.
 <br />
 
@@ -266,7 +266,7 @@ Explore other queries by looking at the available query operators as listed in [
 ## See Also
 [Type Providers](index.md)
 
-[EdmxFile Type Provider](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/edmxfile-type-provider-%5bfsharp%5d)
+[EdmxFile Type Provider](https://msdn.microsoft.com/visualfsharpdocs/conceptual/edmxfile-type-provider-%5bfsharp%5d)
 
 [Walkthrough: Accessing a SQL Database by Using Type Providers and Entities](accessing-a-sql-database-entities.md)
 

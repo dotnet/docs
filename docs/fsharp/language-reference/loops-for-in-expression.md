@@ -1,6 +1,6 @@
 ---
-title: Loops - for...in Expression (F#)
-description: Loops - for...in Expression (F#)
+title: "Loops: for...in Expression (F#)"
+description: "Loops: for...in Expression (F#)"
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe

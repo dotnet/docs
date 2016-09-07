@@ -59,7 +59,7 @@ One example of using asynchronous workflows is included here; there are many oth
 
 This example shows how to use asynchronous workflows to perform computations in parallel.
 
-In the following code example, a function fetchAsync gets the HTML text returned from a Web request. The fetchAsync function contains an asynchronous block of code. When a binding is made to the result of an asynchronous primitive, in this case [`AsyncDownloadString`](https://msdn.microsoft.com/library/8a85a9b7-f712-4cac-a0ce-0a797f8ea32a), let! is used instead of let.
+In the following code example, a function `fetchAsync` gets the HTML text returned from a Web request. The `fetchAsync` function contains an asynchronous block of code. When a binding is made to the result of an asynchronous primitive, in this case [`AsyncDownloadString`](https://msdn.microsoft.com/library/8a85a9b7-f712-4cac-a0ce-0a797f8ea32a), let! is used instead of let.
 
 You use the function [`Async.RunSynchronously`](https://msdn.microsoft.com/library/0a6663a9-50f2-4d38-8bf3-cefd1a51fd6b) to execute an asynchronous operation and wait for its result. As an example, you can execute multiple asynchronous operations in parallel by using the [`Async.Parallel`](https://msdn.microsoft.com/library/aa9b0355-2d55-4858-b943-cbe428de9dc4) function together with the `Async.RunSynchronously` function. The `Async.Parallel` function takes a list of the `Async` objects, sets up the code for each `Async` task object to run in parallel, and returns an `Async` object that represents the parallel computation. Just as for a single operation, you call `Async.RunSynchronously` to start the execution.
 
@@ -73,4 +73,4 @@ The `runAll` function launches three asynchronous workflows in parallel and wait
 
 [Computation Expressions](computation-expressions.md)
 
-[Control.Async Class](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/control.async-class-%5bfsharp%5d)
+[Control.Async Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/control.async-class-%5bfsharp%5d)

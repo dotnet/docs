@@ -38,7 +38,7 @@ create more readable code, and concentrate more on your core features
 than on the constructs of the language.
 
 The remainder of this topic provides an overview of these features, with
-links where you can explore more about any of the fetures.
+links where you can explore more about any of the features.
 
 ## Auto Property enhancements 
 

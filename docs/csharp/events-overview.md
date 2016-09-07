@@ -71,15 +71,15 @@ public event EventHandler<FileListArgs> Progress;
 The type of the event (`EventHandler<FileListArgs>` in this example) must be a
 delegate type. There are a number of conventions that you should follow
 when declaring an event. Typically, the event delegate type has a void return.
-Prefix event declarations with 'On'.
-The remainder of the name is a verb. Use past tense (as in this example) when
+Event declarations should be a verb, or verb phrase.
+Use past tense (as in this example) when
 the event reports something that has happened. Use a present tense verb (for
 example, `Closing`) to report something that is about to happen. Often, using
 present tense indicates that the event supports cancellation. For example,
 an `Closing` event may include an argument that would indicate if the close
 operation should continue, or not.  
 
-When you want to raise the event, you call the event using the delegate invocation
+When you want to raise the event, you call the event handlers using the delegate invocation
 syntax:
 
 ```cs
@@ -97,6 +97,9 @@ EventHandler<FileListArgs> OnProgress = (sender, eventArgs) =>
     Console.WriteLine(eventArgs.FoundFile);
 lister.Progress += OnProgress;
 ```
+
+The handler method typically is the prefix 'On' followed
+by the event name, as shown above.
 
 You unsubscribe using the `-=` operator:
 

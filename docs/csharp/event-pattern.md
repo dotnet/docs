@@ -97,13 +97,13 @@ a pattern, and raise the correct event when a match is discovered.
 ```cs
 public class FileSearcher
 {
-    public event EventHandler<FileFoundArgs> FoundFile;
+    public event EventHandler<FileFoundArgs> FileFound;
 
     public void Search(string directory, string searchPattern)
     {
         foreach (var file in Directory.EnumerateFiles(directory, searchPattern))
         {
-            FoundFile?.Invoke(this, new FileFoundArgs(file));
+            FileFound?.Invoke(this, new FileFoundArgs(file));
         }
     }
 }
@@ -115,7 +115,7 @@ The simplest way to add an event to your class is to declare that
 event as a public field, as in the above example:
 
 ```cs
-public event EventHandler<FileFoundArgs> FoundFile;
+public event EventHandler<FileFoundArgs> FileFound;
 ```
 
 This looks like it's declaring a public field, which would appear to
@@ -126,15 +126,15 @@ that the event objects can only be accessed in safe ways. The only
 operations available on a field-like event are add handler:
 
 ```cs
-EventHandler<FileFoundArgs> onFoundFile = (sender, eventArgs) =>
+EventHandler<FileFoundArgs> onFileFound = (sender, eventArgs) =>
     Console.WriteLine(eventArgs.FoundFile);
-lister.FoundFile += OnFoundFile;
+lister.FileFound += onFIleFound;
 ```
 
 and remove handler:
 
 ```cs
-lister.FoundFile -= OnFoundFile;
+lister.FileFound -= onFileFound;
 ```
 
 Note that there's a local variable for the handler. If you used
@@ -205,7 +205,7 @@ public void List(string directory, string searchPattern)
     foreach (var file in Directory.EnumerateFiles(directory, searchPattern))
     {
         var args = new FileFoundArgs(file);
-        FoundFile?.Invoke(this, args);
+        FileFound?.Invoke(this, args);
         if (args.CancelRequested)
             break;
     }
@@ -221,7 +221,7 @@ Let's update the subscriber so that it requests a cancellation once
 it finds the first executable:
 
 ```cs
-EventHandler<FileFoundArgs> onFoundFile = (sender, eventArgs) =>
+EventHandler<FileFoundArgs> onFileFound = (sender, eventArgs) =>
 {
     Console.WriteLine(eventArgs.FoundFile);
     eventArgs.CancelRequested = true;
@@ -270,12 +270,12 @@ need extra code in those handlers in this project, but this shows how
 you would create them.
 
 ```cs
-internal event EventHandler<SearchDirectoryArgs> ChangedDirectory
+internal event EventHandler<SearchDirectoryArgs> DirectoryChanged
 {
-    add { changeDirectory += value; }
-    remove { changeDirectory -= value; }
+    add { directoryChanged += value; }
+    remove { directoryChanged -= value; }
 }
-private EventHandler<SearchDirectoryArgs> changedDirectory;
+private EventHandler<SearchDirectoryArgs> directoryChanged;
 ```
 
 In may ways, the code you write here mirrors the code the compiler
@@ -302,13 +302,13 @@ public void Search(string directory, string searchPattern, bool searchSubDirs = 
         var totalDirs = allDirectories.Length + 1;
         foreach (var dir in allDirectories)
         {
-            changeDirectory?.Invoke(this,
+            directoryChanged?.Invoke(this,
                 new SearchDirectoryArgs(dir, totalDirs, completedDirs++));
             // Recursively search this child directory:
             SearchDirectory(dir, searchPattern);
         }
         // Include the Current Directory:
-        changeDirectory?.Invoke(this,
+        directoryChanged?.Invoke(this,
             new SearchDirectoryArgs(directory, totalDirs, completedDirs++));
         SearchDirectory(directory, searchPattern);
     }
@@ -323,7 +323,7 @@ private void SearchDirectory(string directory, string searchPattern)
     foreach (var file in Directory.EnumerateFiles(directory, searchPattern))
     {
         var args = new FileFoundArgs(file);
-        FoundFile?.Invoke(this, args);
+        FileFound?.Invoke(this, args);
         if (args.CancelRequested)
             break;
     }
@@ -339,7 +339,7 @@ that this works correctly.
  console window. 
 
 ```cs
-lister.ChangeDirectory += (sender, eventArgs) =>
+lister.DirectoryChanged += (sender, eventArgs) =>
 {
     Console.Write($"Entering '{eventArgs.CurrentSearchDirectory}'.");
     Console.WriteLine($" {eventArgs.CompletedDirs} of {eventArgs.TotalDirs} completed...");

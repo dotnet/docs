@@ -15,16 +15,16 @@ namespace EventSampleCode
             var lister = new FileSearcher();
             int filesFound = 0;
 
-            EventHandler<FileFoundArgs> onFoundFile = (sender, eventArgs) =>
+            EventHandler<FileFoundArgs> onFileFound = (sender, eventArgs) =>
             {
                 Console.WriteLine(eventArgs.FoundFile);
                 filesFound++;
                 //eventArgs.CancelRequested = true;
             };
 
-            lister.FoundFile += onFoundFile;
+            lister.FileFound += onFileFound;
 
-            lister.ChangedDirectory += (sender, eventArgs) =>
+            lister.DirectoryChanged += (sender, eventArgs) =>
             {
                 Console.Write($"Entering '{eventArgs.CurrentSearchDirectory}'.");
                 Console.WriteLine($" {eventArgs.CompletedDirs} of {eventArgs.TotalDirs} completed...");
@@ -32,7 +32,7 @@ namespace EventSampleCode
 
             lister.Search(".", "*.dll", true);
 
-            lister.FoundFile -= onFoundFile;
+            lister.FileFound -= onFileFound;
         }
     }
 
@@ -62,13 +62,13 @@ namespace EventSampleCode
     }
     public class FileSearcher
     {
-        public event EventHandler<FileFoundArgs> FoundFile;
-        internal event EventHandler<SearchDirectoryArgs> ChangedDirectory
+        public event EventHandler<FileFoundArgs> FileFound;
+        internal event EventHandler<SearchDirectoryArgs> DirectoryChanged
         {
-            add { changeDirectory += value; }
-            remove { changeDirectory -= value; }
+            add { directoryChanged += value; }
+            remove { directoryChanged -= value; }
         }
-        private EventHandler<SearchDirectoryArgs> changeDirectory;
+        private EventHandler<SearchDirectoryArgs> directoryChanged;
 
         public void Search(string directory, string searchPattern, bool searchSubDirs = false)
         {
@@ -79,13 +79,13 @@ namespace EventSampleCode
                 var totalDirs = allDirectories.Length + 1;
                 foreach (var dir in allDirectories)
                 {
-                    changeDirectory?.Invoke(this,
+                    directoryChanged?.Invoke(this,
                         new SearchDirectoryArgs(dir, totalDirs, completedDirs++));
                     // Recursively search this child directory:
                     SearchDirectory(dir, searchPattern);
                 }
                 // Include the Current Directory:
-                changeDirectory?.Invoke(this,
+                directoryChanged?.Invoke(this,
                     new SearchDirectoryArgs(directory, totalDirs, completedDirs++));
                 SearchDirectory(directory, searchPattern);
             }
@@ -100,7 +100,7 @@ namespace EventSampleCode
             foreach (var file in Directory.EnumerateFiles(directory, searchPattern))
             {
                 var args = new FileFoundArgs(file);
-                FoundFile?.Invoke(this, args);
+                FileFound?.Invoke(this, args);
                 if (args.CancelRequested)
                     break;
             }

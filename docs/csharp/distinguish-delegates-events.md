@@ -48,7 +48,7 @@ properly sort the elements. LINQ queries must be supplied with delegates
 in order to determine what elements to return. Both used a design built
 with delegates.
 
-Consider the `OnProgress` event handler. It reports progress on a task.
+Consider the `Progress` event. It reports progress on a task.
 The task continues to proceed whether or not there are any listeners.
 The `FileSearcher` is another example. It would still search and find
 all the files that were sought, even with no event subscribers attached.

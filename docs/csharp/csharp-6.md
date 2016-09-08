@@ -17,7 +17,7 @@ ms.assetid: 4d879f69-f889-4d3f-a781-75194e143400
 The 6.0 release of C# contained many features that improves
 productivity for developers. Features in this release include:
 
-* Auto Property Initializers
+* [Auto Property Initializers](#auto-property-initializers)
 * Getter-only Auto properties
 * Expression Bodied function members
 * using static
@@ -38,23 +38,25 @@ create more readable code, and concentrate more on your core features
 than on the constructs of the language.
 
 The remainder of this topic provides an overview of these features, with
-links where you can explore more about any of the features.
+links where you can explore more about any of the features. Sub-topics
+explore each feature in more detail. 
 
 ## Auto Property enhancements 
 
 The syntax for auto-properties made it very easy to create properties
 that had simple get and set methods:
 
-```csharp
-public string Name {get;set;}
-```
+[!code-csharp[ClassicAutoProperty](../../samples/snippets/csharp/new-in-6/oldcode.cs#L5-L5)]
 
-However, this simple syntax left out some common scenarios. C# 6 improves
-the capabilities for auto properties so that ou can use them in more
-of these scenarios. You'll fall back on the more verbose syntax of declaring
+However, this simple syntax limited the kinds of designs you could support using
+auto properties. C# 6 improves the auto properties capabilities so that ou can use
+them in more scenarios. You'll fall back on the more verbose syntax of declaring
 the backing field by hand, and manipulating that backing field less often.
 
-### Initializers for auto-properties
+The new syntax addresses scenarios for read only properties, and for initializing
+the variable storage behind an auto-property.
+
+### Auto Property Initializers
 
 One common scenario is to initialize the value of the property. This is quite
 common for properties that expose collections:

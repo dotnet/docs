@@ -4,7 +4,7 @@ description: .NET Core Application Deployment
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 manager: wpickett
-ms.date: 07/20/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -16,9 +16,9 @@ ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 
 You can create two types of deployments for .NET Core applications: 
 
-- Framework-dependent deployment. As the name implies, framework-dependent deployment (FDD for short) relies on a shared system-wide version of .NET Core to be present on the target system. Because .NET Core is already present, your app is also portable between installations of .NET Core. Your app contains only its own code and any third-party dependencies that are outside of the .NET Core libraries. FDDs contain .dll files that can be launched by using the [dotnet utility](../tools/dotnet.md) from the command line. For example, `dotnet app.dll` runs an application named `app`.
+- Framework-dependent deployment. As the name implies, framework-dependent deployment (FDD) relies on a shared system-wide version of .NET Core to be present on the target system. Because .NET Core is already present, your app is also portable between installations of .NET Core. Your app contains only its own code and any third-party dependencies that are outside of the .NET Core libraries. FDDs contain .dll files that can be launched by using the [dotnet utility](../tools/dotnet.md) from the command line. For example, `dotnet app.dll` runs an application named `app`.
 
-- Self-contained deployment. Unlike FDD, a self-contained deployment (SCD for short) does not rely on any shared components to be present on the target system. All components, including both .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. SCDs include an executable (such as `app.exe` on Windows platforms for an application named `app`), which is  a renamed version of the platform-specific .NET Core host, and a .dll file (such as `app.dll`), which is the actual application.
+- Self-contained deployment. Unlike FDD, a self-contained deployment (SCD) does not rely on any shared components to be present on the target system. All components, including both .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. SCDs include an executable (such as `app.exe` on Windows platforms for an application named `app`), which is  a renamed version of the platform-specific .NET Core host, and a .dll file (such as `app.dll`), which is the actual application.
 
 ## Framework-dependent deployments (FDD) ##
 
@@ -95,7 +95,7 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
 The complete set of application  files can be deployed in any way you'd like. For example, you can package them in a zip file, use a simple `copy` command, or deploy them with any installation package of your choice.
 
-Before deploying your app, you can also use `crossgen` to convert it to native code. However, its performance impact is smaller than for Self-contained deployments. For more information, see the [Native Image Generation](#crossgen) section.
+Before deploying your app, you can also use `crossgen` to convert it to native code. However, its performance impact is smaller than for self-contained deployments. For more information, see the [Native Image Generation](#crossgen) section.
 
 In addition to the application binaries, the installer should also either bundle the shared framework installer or check for it as a prerequisite as part of the application installation.  Installation of the shared framework requires Administrator/root access since it is machine-wide.
 
@@ -117,11 +117,11 @@ Deploying a framework-dependent deployment with one or more third-party dependen
 
 2. If you haven't already, download the NuGet package containing the third-party dependency. To download the package, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
 
-Note that a framework-dependent deployment with third-party dependencies will only be as portable as its third-party dependencies. For example, if a third-party library only supports macOS, the app will not be portable to Windows systems. This can happen if the third-party dependency itself depends on native code. A good example of this is Kestrel server. When an FDD is created for an application with this kind of third-party dependency, the published output will contain a folder for each [Runtime Identifier (RID)](rid-catalog.md#what-are-rids) that the native dependency supports (and that exists in its NuGet package).
+Note that a framework-dependent deployment with third-party dependencies will only be as portable as its third-party dependencies. For example, if a third-party library only supports macOS, the app will not be portable to Windows systems. This can happen if the third-party dependency itself depends on native code. A good example of this is Kestrel server. When an FDD is created for an application with this kind of third-party dependency, the published output will contain a folder for each [Runtime Identifier (RID)](../rid-catalog.md#what-are-rids) that the native dependency supports (and that exists in its NuGet package).
 
 ## Self-contained deployments (SCD) ##
 
-For a self-contained deployment, you deploy not only your app and any third-party dependencies, but the version of .NET Core that you build your app with. Creating an SCD does not, however, include the native dependencies of .NET Core itself on various platforms (for example, OpenSSL on macOS) so these need to be installed before running the application. 
+For a self-contained deployment, you deploy not only your app and any third-party dependencies, but the version of .NET Core that you build your app with. Creating an SCD does not, however, include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) itself on various platforms (for example, OpenSSL on macOS) so these need to be installed before running the application. 
 
 ### Why deploy a Self-contained deployment? ###
 
@@ -135,7 +135,7 @@ It also has a number of disadvantages:
 
 - Because .NET Core is included in your deployment package, you must select the target platforms for which you build deployment packages in advance.
 
-- Presently, the .NET Core runtime files are published from the NuGet cache, which means that they are not crossgen-ed which can impact performance of your application. 
+- Presently, the .NET Core runtime files are published from the NuGet cache, which means that they are not crossgen-ed. This can impact performance of your application. 
 
 - The size of your deployment package is relatively large, since you have to include .NET Core as well as your app and its third-party dependencies.
 
@@ -302,7 +302,7 @@ The following is the complete project.json file for this project:
 
 When you deploy your application, any third-party dependencies used in your app are also contained with your application files. Third-party libraries do not already have to be present on the system on which the app is running.
 
-Note that you can only deploy a self-contained deployment with a third-party library to platforms supported by that library. This is similar to having third-party dependencies with native dependencies in your framework-dependenent deployment. 
+Note that you can only deploy a self-contained deployment with a third-party library to platforms supported by that library. This is similar to having third-party dependencies with native dependencies in your framework-dependent deployment. 
 
 ### Deploying a self-contained deployment with a smaller footprint ###
 

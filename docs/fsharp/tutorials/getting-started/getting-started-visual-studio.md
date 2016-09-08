@@ -2,9 +2,9 @@
 title: Getting Started with F# in Visual Studio
 description: Getting Started with F# in Visual Studio
 keywords: visual f#, f#, functional programming
-author: dend
+author: cartermp
 manager: danielfe
-ms.date: 05/16/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: visual-studio-dev14
 ms.technology: devlang-fsharp
@@ -13,17 +13,17 @@ ms.assetid: 8db75596-19a9-4eda-b20d-a12d517c8cc1
 
 # Getting Started with F# in Visual Studio
 
-F# and the Visual F# tooling are supported in the Visual Studio IDE.  To begin, you should [download Visual Studio](https://visualstudio.com/downloads/).  The rest of the article will assume Visual Studio 2015 Community Edition.
+F# and the Visual F# tooling are supported in the Visual Studio IDE.  To begin, you should [download Visual Studio](https://visualstudio.com/downloads/), if you haven't already.  This article uses the Visual Studio 2015 Community Edition, but you can use F# with the version of your choice.
 
 ## Installing the Visual F# Tools
 
-After Visual Studio is finished initializing, select **Custom** as shown here:
+Visual Studio will first initialize the installer.  After it is intilized, select **Custom** as shown here:
 
-![](../../media/vs2015-install-1.png)
+![](../../media/getting-started-vs/vs2015-install-1.png)
 
 Select the Visual F# Tools under Programming Languages here:
 
-![](../../media/vs2015-install-2.png)
+![](../../media/getting-started-vs/vs2015-install-2.png)
 
 Feel free to customize your installation further, and then continue with the installation.  After a while, Visual Studio will complete installation and you can create an F# project!
 
@@ -31,23 +31,21 @@ Feel free to customize your installation further, and then continue with the ins
 
 One of the most basic projects in Visual Studio is the Console Application.  Here's how to do it.  Once Visual Studio is open:
 
-1. On the **File** menu, point to **New**, and then click **Project**.
+1. On the **File** menu, point to **New**, and then choose **Project**.
 
-![](../../media/vs2015-install-3.png)
+![](../../media/getting-started-vs/vs2015-install-3.png)
 
-2.  In the New Project dialog, under **Templates**, you should see ***Visual F#**.  Click this to bring up the F# templates.
+2.  In the New Project dialog, under **Templates**, you should see **Visual F#**.  Choose this to show the F# templates.
 
-![](../../media/vs2015-install-4.png)
+![](../../media/getting-started-vs/vs2015-install-4.png)
 
-3. Click the **Okay** button to create the F# project!  You should see something like this under **Solution Explorer**:
+3. Choose the **Okay** button to create the F# project!  You should see something like this under **Solution Explorer**:
 
-![](../../media/vs2015-install-5.png)
-
->[!NOTE] You might have a different name for your solution and project.  This is okay!
+![](../../media/getting-started-vs/vs2015-install-5.png)
 
 ## Writing your code
 
-To see some output, you'll first have to write some code.  Make sure that the `Program.fs` file is open, and then replace its contents with the following:
+Let's get started by writing some code first.  Make sure that the `Program.fs` file is open, and then replace its contents with the following:
 
 ```fsharp
 let square x = x * x
@@ -58,7 +56,7 @@ let main argv =
     0 // Return an integer exit code
 ```
 
-In the above code sample, a function `square` has been defined which takes an input named `x` and multiplies it by itself.  Because F# uses [Type Inference](../../language-reference/type-inference.md), the type of `x` need not be specified.  The F# compiler understands the types where multiplication is valid, and will assign a type to `x` based on how `square` is called.  If you hover over `square`, you should see the following:
+In the previous code sample, a function `square` has been defined which takes an input named `x` and multiplies it by itself.  Because F# uses [Type Inference](../../language-reference/type-inference.md), the type of `x` doesn't need to be specified.  The F# compiler understands the types where multiplication is valid, and will assign a type to `x` based on how `square` is called.  If you hover over `square`, you should see the following:
 
 ```
 val square: x:int -> int
@@ -72,7 +70,7 @@ It is in this function that we call the `square` function with an argument of `1
 
 ## Running Your Code
 
-You can run the code and see results by pressing **ctrl-f5**.  This will run the program without debugging and allow you to see the results.  Alternative, you can click the **Debug** top-level menu item in Visual Studio and click **Start Without Debugging**.
+You can run the code and see results by pressing **ctrl-f5**.  This will run the program without debugging and allows you to see the results.  Alternatively, you can choose the **Debug** top-level menu item in Visual Studio and choose **Start Without Debugging**.
 
 You should now see the following printed to the console window that Visual Studio popped up:
 
@@ -80,13 +78,13 @@ You should now see the following printed to the console window that Visual Studi
 12 squared is 144!
 ```
 
-Congratulations!  You've created your first F# project in Visual Studio, written an F# function printed the results of calling that function, and ran the project to see some results.
+Congratulations!  You've created your first F# project in Visual Studio, written an F# function printed the results of calling that function, and run the project to see some results.
 
 ## Using F# Interactive
 
-One of the best features of the Visual F# tooling in Visual Studio is the F# Interactive Window.  It allows you to send code over to a process which allows you to call that code and see the result interactively.
+One of the best features of the Visual F# tooling in Visual Studio is the F# Interactive Window.  It allows you to send code over to a process where you can call that code and see the result interactively.
 
-To begin, highlight the `square` function defined in your code.  Next, hold the **Alt** key and press **Enter**.  This executes the code in the F# Interactive Window.  You should see the F# Interactive Window appear with the following in it:
+To begin using it, highlight the `square` function defined in your code.  Next, hold the **Alt** key and press **Enter**.  This executes the code in the F# Interactive Window.  You should see the F# Interactive Window appear with the following in it:
 
 ```
 >
@@ -96,7 +94,7 @@ val square : x:int -> int
 >
 ```
 
-This shows the same function signature for the `square` function, which which you saw earlier when you hovered over the function.  Because `square` is now defined in the F# Interactive process, you can call it with different values:
+This shows the same function signature for the `square` function, which you saw earlier when you hovered over the function.  Because `square` is now defined in the F# Interactive process, you can call it with different values:
 
 ```
 > square 12;;

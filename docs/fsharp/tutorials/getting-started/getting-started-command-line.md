@@ -1,5 +1,5 @@
 ---
-title: Getting started with F# with Command-line Tools
+title: Getting started with F# with command-line tools
 description: Getting started with F# on .NET Core
 keywords: visual f#, f#, functional programming, .NET, .NET Core
 author: cartermp
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 615db1ec-6ef3-4de2-bae6-4586affa9771
 ---
 
-# Getting started with F# with Command-line Tools
+# Getting started with F# with command-line tools
 
 This article covers how you can get started with using F# on .NET Core with the ..NET Core SDK 1.0 Preview 2.  It will go through building a multi-project solution with a Class Library, a Console App, and an xUnit test project.
 
@@ -20,7 +20,7 @@ This article covers how you can get started with using F# on .NET Core with the 
 
 To begin, you must install the [.NET Core SDK 1.0 Preview 2](https://www.microsoft.com/net/core).
 
-This article assumes that you know how to use a command line and have a preferred text editor.  Visual Studio Code is a great optionTo get awesome features like Intellisense, better syntax highlighting, and more, you can also download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp) and get a lightweight IDE experience in Visual Studio Code.
+This article assumes that you know how to use a command line and have a preferred text editor.  [Visual Studio Code](https://code.visualstudio.com) is a great option.  To get awesome features like Intellisense, better syntax highlighting, and more, you can also download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp) and get a lightweight IDE experience for F# in Visual Studio Code.
 
 ## Building a Simple Multi-project Solution
 

@@ -29,12 +29,12 @@ dotnet-build -- Builds a project and all of its dependencies
 ## DESCRIPTION
 
 The `dotnet build` command builds multiple source file from a source project and its dependencies into a binary. 
-The binary will be in Intermediate Language (IL) by default and will have a DLL extension. 
-`dotnet build` will also drop a `\*.deps` file which outlines what the host needs to run the application.  
+By default, the resulting binary is in Intermediate Language (IL) and has a DLL extension. 
+`dotnet build` also drops a `\*.deps` file which outlines what the host needs to run the application.  
 
 Building requires the existence of a lock file, which means that you have to run [`dotnet restore`](dotnet-restore.md) prior to building your code.
 
-Before any compilation begins, the build verb analyzes the project and its dependencies for incremental safety checks.
+Before any compilation begins, the `build` verb analyzes the project and its dependencies for incremental safety checks.
 If all checks pass, then build proceeds with incremental compilation of the project and its dependencies; 
 otherwise, it falls back to non-incremental compilation. Via a profile flag, users can choose to receive additional 
 information on how they can improve their build times.
@@ -45,11 +45,11 @@ compilation process to be incremental:
 - not load compilation tools from PATH (for example, resgen, compilers)
 - use only known compilers (csc, vbc, fsc)
 
-In order to build an executable application, you need a special configuration section in your project.json file:
+In order to build an executable application instead of a library, you need a [special configuration](project-json.md#emitentrypoint) section in your project.json file:
 
 ```json
 { 
-    "compilerOptions": {
+    "buildOptions": {
       "emitEntryPoint": true
     }
 }

@@ -58,14 +58,14 @@ Here is a list of the images after a `docker pull <imagename>` on a development 
 The minimal image capable of being used on Linux, `core-deps`, is quite smaller, however your application will need to copy a private copy of the .NET Runtime with it. Since containers are already private isolation barriers, you will lose that optimization when running multiple dotnet based containers. 
 
 ```
-REPOSITORY          TAG                  IMAGE ID            SIZE
-microsoft/dotnet    onbuild              19b6a6c4b1db        540.4 MB
-microsoft/dotnet    1.0.0-preview2-sdk   a92c3d9ad0e7        540.4 MB
-microsoft/dotnet    core                 5224a9f2a2aa        253.2 MB
-microsoft/dotnet    1.0.0-core-deps      c981a2eebe0e        166.2 MB
-microsoft/dotnet    core-deps            c981a2eebe0e        166.2 MB
-microsoft/dotnet    latest               03c10abbd08a        540.4 MB
-microsoft/dotnet    1.0.0-core           b8da4a1fd280        253.2 MB
+REPOSITORY          TAG                     IMAGE ID            SIZE
+microsoft/dotnet    1.0.0-preview2-onbuild  19b6a6c4b1db        540.4 MB
+microsoft/dotnet    1.0.0-preview2-sdk      a92c3d9ad0e7        540.4 MB
+microsoft/dotnet    core                    5224a9f2a2aa        253.2 MB
+microsoft/dotnet    1.0.0-core-deps         c981a2eebe0e        166.2 MB
+microsoft/dotnet    core-deps               c981a2eebe0e        166.2 MB
+microsoft/dotnet    latest                  03c10abbd08a        540.4 MB
+microsoft/dotnet    1.0.0-core              b8da4a1fd280        253.2 MB
 ```
 
 ## Prerequisites

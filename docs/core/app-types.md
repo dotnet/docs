@@ -16,4 +16,4 @@ ms.assetid: 93488a0b-c94c-4ed6-97ea-571bb23a862e
 ===================
 
 ## Content moved!
-This content has merged and moved to the [.NET Core Application Deployment](deployment/index.md) topic. 
+This content has merged and moved to the [.NET Core Application Deployment](deploying/index.md) topic. 

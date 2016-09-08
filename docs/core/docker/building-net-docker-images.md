@@ -35,7 +35,7 @@ When developing, building and running containerized applications, we have differ
 
 To achieve the goals above, we provide image variants under [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/).
 
-- `microsoft/dotnet:<version>-sdk` : that is **microsoft/dotnet-preview2-sdk**, this image contains the .NET Core SDK which includes the .NET Core and Command Line Tools (CLI). This image maps to the **development scenario**. You would use this image for local development, debugging and unit testing. For example, all the development you do, before you check in your code. This image can also be used for your **build** scenarios.
+- `microsoft/dotnet:<version>-sdk` : that is **microsoft/dotnet:preview2-sdk**, this image contains the .NET Core SDK which includes the .NET Core and Command Line Tools (CLI). This image maps to the **development scenario**. You would use this image for local development, debugging and unit testing. For example, all the development you do, before you check in your code. This image can also be used for your **build** scenarios.
 
 - `microsoft/dotnet:<version>-core` : that is **microsoft/dotnet:1.0.0-core**, image which runs [portable .NET Core applications](../app-types.md) and it is optimized for running your application in **production**. It does not contain the SDK, and is meant to take the optimized output of `dotnet publish`. The portable runtime is well suited for Docker container scenarios as running multiple containers benefit from shared image layers.  
 

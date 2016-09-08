@@ -61,12 +61,12 @@ let main argv =
 In the above code sample, a function `square` has been defined which takes an input named `x` and multiplies it by itself.  Because F# uses [Type Inference](../../language-reference/type-inference.md), the type of `x` need not be specified.  The F# compiler understands the types where multiplication is valid, and will assign a type to `x` based on how `square` is called.  If you hover over `square`, you should see the following:
 
 ```
-val square: x:int -> int // TODO check this
+val square: x:int -> int
 ```
 
-This is what is known as the function's type signature.  It can be read like this: "Square is a function which takes an integer and produces another integer".  Note that the compiler gaive `square` the `int` type for now - this is because multiplication is not generic across *all* types, but rather is generic across a closed set of types.  The F# compiler picked `int` at this point, but it will adjust the type signature if you call `square` with a different type, such as a `float`.
+This is what is known as the function's type signature.  It can be read like this: "Square is a function which takes an integer named x and produces an integer".  Note that the compiler gave `square` the `int` type for now - this is because multiplication is not generic across *all* types, but rather is generic across a closed set of types.  The F# compiler picked `int` at this point, but it will adjust the type signature if you call `square` with a different input type, such as a `float`.
 
-Another function, `main` is defined, which is decorated with the `EntryPoint` attribute to tell the F# compiler that program execution should start there.  It follows the same convention as other [C-style programming languages](https://en.wikipedia.org/wiki/Entry_point#C_and_C.2B.2B), where command-line arguments can be passed to this function, and an integer code is returned (typically `0`).
+Another function, `main`, is defined, which is decorated with the `EntryPoint` attribute to tell the F# compiler that program execution should start there.  It follows the same convention as other [C-style programming languages](https://en.wikipedia.org/wiki/Entry_point#C_and_C.2B.2B), where command-line arguments can be passed to this function, and an integer code is returned (typically `0`).
 
 It is in this function that we call the `square` function with an argument of `12`.  The F# compiler then assigns the type of `square` to be `int -> int` (that is, a function which takes an `int` and produces an `int`).  The call to `printfn` is a formatted printing function which uses a format string, similar to C-style programming languages, parameters which correspond to those specified in the format string, and then prints the result and a new line.
 

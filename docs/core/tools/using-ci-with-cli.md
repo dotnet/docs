@@ -78,8 +78,8 @@ for more information.
 
 ### AppVeyor
 
-The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK preview1 already installed 
-in the build worker image `Visual Studio 2015`
+The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK preview2 already installed 
+in the build worker image `Visual Studio 2015`.
 
 Just use:
 

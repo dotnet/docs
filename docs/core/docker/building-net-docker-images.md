@@ -62,6 +62,7 @@ The minimal image capable of being used on Linux, `core-deps`, is quite smaller,
 ```
 REPOSITORY          TAG                     IMAGE ID            SIZE
 microsoft/dotnet    1.0.0-preview2-onbuild  19b6a6c4b1db        540.4 MB
+microsoft/dotnet    onbuild                 19b6a6c4b1db        540.4 MB
 microsoft/dotnet    1.0.0-preview2-sdk      a92c3d9ad0e7        540.4 MB
 microsoft/dotnet    core                    5224a9f2a2aa        253.2 MB
 microsoft/dotnet    1.0.0-core-deps         c981a2eebe0e        166.2 MB
@@ -75,7 +76,7 @@ microsoft/dotnet    1.0.0-core              b8da4a1fd280        253.2 MB
 To build and run, you'll need a few things installed:
 
 - [.NET Core](http://dot.net)
-- [Docker for Windows or Docker for Mac](http://www.docker.com/products/docker) from Docker to run your Docker containers locally 
+- [Docker](https://www.docker.com/products/docker) to run your Docker containers locally 
 - [Yeoman generator for ASP.NET](https://github.com/omnisharp/generator-aspnet) for creating the Web API application
 - [Yeoman generator for Docker](http://aka.ms/yodocker) from Microsoft
 

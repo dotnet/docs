@@ -4,7 +4,7 @@ description: .NET Core Application Deployment
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 manager: wpickett
-ms.date: 07/20/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -14,21 +14,19 @@ ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 
 # .NET Core Application Deployment #
 
-You can deploy your .NET Core app in either of two ways:
+You can create two types of deployments for .NET Core applications: 
 
-- As a portable app. A portable app relies on a shared system-wide version of .NET Core to be present on the target system. Because .NET Core is already present, your app is portable between installations of .NET Core. Your app contains only its own code and any third-party dependencies that are outside of the .NET Core libraries. Portable applications are .dll files that can be launched by using the [dotnet utility](../tools/dotnet.md) from the command line. For example, `dotnet app.dll` runs a portable application named `app`.
+- Framework-dependent deployment. As the name implies, framework-dependent deployment (FDD) relies on a shared system-wide version of .NET Core to be present on the target system. Because .NET Core is already present, your app is also portable between installations of .NET Core. Your app contains only its own code and any third-party dependencies that are outside of the .NET Core libraries. FDDs contain .dll files that can be launched by using the [dotnet utility](../tools/dotnet.md) from the command line. For example, `dotnet app.dll` runs an application named `app`.
 
-- As a self-contained application. Unlike a portable app, a self-contained app does not rely on any shared components to be present on the target system. All components, including both .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. Self-contained applications include an executable (such as `app.exe` on Windows platforms for a self-contained application named `app`), which is  a renamed version of the platform-specific .NET Core host, and a .dll file (such as `app.dll`), which is the actual application.
+- Self-contained deployment. Unlike FDD, a self-contained deployment (SCD) does not rely on any shared components to be present on the target system. All components, including both .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. SCDs include an executable (such as `app.exe` on Windows platforms for an application named `app`), which is  a renamed version of the platform-specific .NET Core host, and a .dll file (such as `app.dll`), which is the actual application.
 
-For more information on .NET Core application types, see [.NET Core App Types](../app-types.md).
+## Framework-dependent deployments (FDD) ##
 
-## Portable applications ##
+For an FDD, you deploy only your app and any third-party dependencies. You do not have to deploy .NET Core, since your app will use the version of .NET Core that's present on the target system. This is the default deployment model for .NET Core apps.
 
-For a portable app, you deploy only your app and any third-party dependencies. You do not have to deploy .NET Core, since your app will use the version of .NET Core that's present on the target system. This is the default deployment model for .NET Core apps.
+### Why create a framework-dependent deployment? ###
 
-### Why deploy a portable app? ###
-
-Deploying a portable app has a number of advantages:
+Deploying an FDD has a number of advantages:
 
 - You do not have to define the target operating systems that your .NET Core app will run on in advance. Because .NET Core uses a common PE file format for executables and libraries regardless of operating system, .NET Core can execute your app regardless of the underlying operating system. For more information on the PE file format, see [.NET Assembly File Format](../../standard/assembly-format.md).
 
@@ -42,9 +40,9 @@ There are also a few disadvantages:
 
 - It is possible for the .NET Core runtime and libraries to change without your knowledge in future releases. In rare cases, this may change the behavior of your app.
 
-### Deploying a simple portable app ###
+### Deploying a framework-dependent deployment ###
 
-Deploying a portable app with no third-party dependencies simply involves building, testing, and publishing the app. A simple example written in C# illustrates the process. The example uses the [dotnet utility](../tools/dotnet.md) from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.
+Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app. A simple example written in C# illustrates the process. The example uses the [dotnet utility](../tools/dotnet.md) from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.
 
 1. Create a directory for your project, and from the command line, type [dotnet new](../tools/dotnet-new.md) to create a new C# console project.
 
@@ -97,13 +95,13 @@ Deploying a portable app with no third-party dependencies simply involves buildi
 
 The complete set of application  files can be deployed in any way you'd like. For example, you can package them in a zip file, use a simple `copy` command, or deploy them with any installation package of your choice.
 
-Before deploying your app, you can also use `crossgen` to convert it to native code. However, its performance impact is smaller than for self-contained apps. For more information, see the [Native Image Generation](#crossgen) section.
+Before deploying your app, you can also use `crossgen` to convert it to native code. However, its performance impact is smaller than for self-contained deployments. For more information, see the [Native Image Generation](#crossgen) section.
 
 In addition to the application binaries, the installer should also either bundle the shared framework installer or check for it as a prerequisite as part of the application installation.  Installation of the shared framework requires Administrator/root access since it is machine-wide.
 
-### Deploying a portable app with third-party dependencies ###
+### Deploying a framework-dependent deployment with third-party dependencies ###
 
-Deploying a portable app with one or more third-party dependencies involves three additional steps before you can run the `dotnet restore` command:
+Deploying a framework-dependent deployment with one or more third-party dependencies involves three additional steps before you can run the `dotnet restore` command:
 
 1. Add references to any third-party libraries to the `dependencies` section of your `project.json` file. The following  `dependencies` section uses Json.NET as a third-party library.
 
@@ -119,17 +117,15 @@ Deploying a portable app with one or more third-party dependencies involves thre
 
 2. If you haven't already, download the NuGet package containing the third-party dependency. To download the package, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
 
-Note that a portable app with third-party dependencies will only be as portable as its third-party dependencies. For example, if a third-party library only supports macOS, the app will not be portable to Windows systems.
+Note that a framework-dependent deployment with third-party dependencies will only be as portable as its third-party dependencies. For example, if a third-party library only supports macOS, the app will not be portable to Windows systems. This can happen if the third-party dependency itself depends on native code. A good example of this is Kestrel server. When an FDD is created for an application with this kind of third-party dependency, the published output will contain a folder for each [Runtime Identifier (RID)](../rid-catalog.md#what-are-rids) that the native dependency supports (and that exists in its NuGet package).
 
-When you deploy your application, any third-party dependencies used in your app are resolved from the local NuGet cache of the system on which your app is running. In other words, the third-party library must be present on the target machine for your app to run successfully.
+## Self-contained deployments (SCD) ##
 
-## Self-contained applications ##
+For a self-contained deployment, you deploy not only your app and any third-party dependencies, but the version of .NET Core that you build your app with. Creating an SCD does not, however, include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) itself on various platforms (for example, OpenSSL on macOS) so these need to be installed before running the application. 
 
-For a self-contained app, you deploy not only your app and any third-party dependencies, but the version of .NET Core that you build your app with.
+### Why deploy a Self-contained deployment? ###
 
-### Why deploy a self-contained app? ###
-
-Deploying a self-contained app has two major advantages:
+Deploying a Self-contained deployment has two major advantages:
 
 - You have sole control of the version of .NET Core that is deployed with your app. .NET Core can be serviced only by you.
 
@@ -139,13 +135,15 @@ It also has a number of disadvantages:
 
 - Because .NET Core is included in your deployment package, you must select the target platforms for which you build deployment packages in advance.
 
+- Presently, the .NET Core runtime files are published from the NuGet cache, which means that they are not crossgen-ed. This can impact performance of your application. 
+
 - The size of your deployment package is relatively large, since you have to include .NET Core as well as your app and its third-party dependencies.
 
 - Deploying numerous self-contained .NET Core apps to a system can consume significant amounts of disk space, since each app duplicates .NET Core files.
 
-### <a name="simpleSelf"></a> Deploying a simple self-contained app ###
+### <a name="simpleSelf"></a> Deploying a simple self-contained deployment ###
 
-Deploying a self-contained app with no third-party dependencies involves creating the project, modifying the project.json file, building, testing, and publishing the app.  A simple example written in C# illustrates the process. The example uses the `dotnet` utility from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.
+Deploying a self-contained deployment with no third-party dependencies involves creating the project, modifying the project.json file, building, testing, and publishing the app.  A simple example written in C# illustrates the process. The example uses the `dotnet` utility from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.
 
 1. Create a directory for your project, and from the command line, type `dotnet new` to create a new C# console project.
 
@@ -264,30 +262,19 @@ The following is the complete `project.json` file for this project.
 }
 ```
 
-### Deploying a self-contained app with third-party dependencies ###
+### Deploying a self-contained deployment with third-party dependencies ###
 
-Deploying a self-contained app with one or more third-party dependencies involves three additional steps before you can run the `dotnet restore` command:
+Deploying a self-contained deployment with one or more third-party dependencies involves adding the third party dependency:
 
 1. Add references to any third-party libraries to the `dependencies` section of your `project.json` file. The following  `dependencies` section uses Json.NET as a third-party library.
 
     ```json
     "dependencies": {
       "Microsoft.NETCore.App": "1.0.0",
-      "Newtonsoft.Json": "8.0.3"
+      "Newtonsoft.Json": "9.0.1"
     },
     ```
-
-2. Modify the `frameworks` section as follows to ensure that the `dotnet` utility will not consider .NET Core and Json.NET to be incompatible:
-
-   ```json
-   "frameworks": {
-     "netcoreapp1.0": {
-       "imports": "dnxcore50"
-     }
-   },
-   ```
-
-3. If you haven't already, download the NuGet package containing the third-party dependency to your system. To make the dependency available to your app, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
+2. If you haven't already, download the NuGet package containing the third-party dependency to your system. To make the dependency available to your app, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
 
 The following is the complete project.json file for this project:
 
@@ -300,11 +287,10 @@ The following is the complete project.json file for this project:
   },
   "dependencies": {
     "Microsoft.NETCore.App": "1.0.0",
-    "Newtonsoft.Json": "8.0.3"
+    "Newtonsoft.Json": "9.0.1"
   },
   "frameworks": {
     "netcoreapp1.0": {
-      "imports": "dnxcore50"
     }
   },
   "runtimes": {
@@ -316,13 +302,13 @@ The following is the complete project.json file for this project:
 
 When you deploy your application, any third-party dependencies used in your app are also contained with your application files. Third-party libraries do not already have to be present on the system on which the app is running.
 
-Note that you can only deploy a self-contained app with a third-party library to platforms supported by that library.
+Note that you can only deploy a self-contained deployment with a third-party library to platforms supported by that library. This is similar to having third-party dependencies with native dependencies in your framework-dependent deployment. 
 
-### Deploying a self-contained app with a smaller footprint ###
+### Deploying a self-contained deployment with a smaller footprint ###
 
 If the availability of adequate storage space on target systems is likely to be an issue, you can reduce the overall footprint of your app by excluding some system components. To do this, you explicitly define the .NET Core components that your app includes in your project.json file.
 
-To create a self-contained app with a smaller footprint, start by following the first two steps for creating a self-contained app. Once you've run the `dotnet new` command and added the C# source code to your app, do the following:
+To create a self-contained deployment with a smaller footprint, start by following the first two steps for creating a self-contained deployment. Once you've run the `dotnet new` command and added the C# source code to your app, do the following:
 
 1. Open the `project.json` file and replace the `frameworks` section with the following:
 
@@ -346,9 +332,9 @@ This does two things:
       "Microsoft.NETCore.DotNetHostPolicy":  "1.0.1"
     },
     ```
-   This defines the system components used by our app. The system components packaged with our app include the .NET Standard Library, the .NET Core runtime, and the .NET Core host. This produces a self-contained app with a smaller footprint.
+   This defines the system components used by our app. The system components packaged with our app include the .NET Standard Library, the .NET Core runtime, and the .NET Core host. This produces a self-contained deployment with a smaller footprint.
 
-3. As you did in the [Deploying a Simple Self-Contained App](#simpleSelf) example, create a `runtimes` section in your `project.json` file that defines the platforms your app targets and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. For example, the following `runtimes` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.10 operating system.
+3. As you did in the [Deploying a simple self-contained deployment](#simpleSelf) example, create a `runtimes` section in your `project.json` file that defines the platforms your app targets and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. For example, the following `runtimes` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.10 operating system.
 
     ```json
         "runtimes": {
@@ -406,4 +392,4 @@ The following is the complete `project.json` file for this project.
 
 ## <a name="crossgen"></a> Native image Generation ##
 
-NET Core uses a just in time (JIT) compiler that stores application code in an intermediate format and compiles it to native code at runtime.  To increase startup performance, the shared framework is pre-compiled using a tool called `crossgen`.  To improve performance of your application, you can use the same tool on your application's binaries.  Its performance impact is more noticeable when deploying a self-contained application, since the entire framework is part of the application. Crossgen must be run on a machine of the same platform type that you are targeting, but need not be done on the same machine, unlike ngen for the desktop framework.  If you are producing a platform-specific installer for your application, we recommend that you crossgen as part of the installer build process.
+NET Core uses a just in time (JIT) compiler that stores application code in an intermediate format and compiles it to native code at runtime.  To increase startup performance, the shared framework is pre-compiled using a tool called `crossgen`.  To improve performance of your application, you can use the same tool on your application's binaries.  Its performance impact is more noticeable when deploying a self-contained deploymentlication, since the entire framework is part of the application. Crossgen must be run on a machine of the same platform type that you are targeting, but need not be done on the same machine, unlike ngen for the desktop framework.  If you are producing a platform-specific installer for your application, we recommend that you crossgen as part of the installer build process.

@@ -500,7 +500,7 @@ End Module
 
 **(?<**=_subexpression_**)** is a positive lookbehind assertion; that is, the character or characters before the current position must match *subexpression*. **(?<!**_subexpression_**)** is a negative lookbehind assertion; that is, the character or characters before the current position must not match *subexpression*. Both positive and negative lookbehind assertions are most useful when *subexpression* is a subset of the previous *subexpression*. 
 
-The following example uses two equivalent regular expression patterns that validate the user name in an e-mail address. The first pattern is subject to poor performance because of excessive backtracking. The second pattern modifies the first regular expression by replacing a nested quantifier with a positive lookbehind assertion. The output from the example displays the execution time of the [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch) method.
+The following example uses two equivalent regular expression patterns that validate the user name in an e-mail address. The first pattern is subject to poor performance because of excessive backtracking. The second pattern modifies the first regular expression by replacing a nested quantifier with a positive lookbehind assertion. The output from the example displays the execution time of the [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)) method.
 
 ```csharp
 using System;
@@ -563,7 +563,7 @@ The first regular expression pattern, `^[0-9A-Z]([-.\w]*[0-9A-Z])*@, is defined 
 Pattern | Description
 ------- | ----------- 
 `^` | Start the match at the beginning of the string.
-`[0-9A-Z]` | Match an alphanumeric character. This comparison is case-insensitive, because the [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch) method is called with the [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) option.
+`[0-9A-Z]` | Match an alphanumeric character. This comparison is case-insensitive, because the [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)) method is called with the [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) option.
 `[-.\w]*` | Match zero, one, or more occurrences of a hyphen, period, or word character. 
 `[0-9A-Z]` | Match an alphanumeric character. 
 `([-.\w]*[0-9A-Z])*` | Match zero or more occurrences of the combination of zero or more hyphens, periods, or word characters, followed by an alphanumeric character. This is the first capturing group.
@@ -574,7 +574,7 @@ The second regular expression pattern, `^[0-9A-Z][-.\w]*(?<=[0-9A-Z])@`, uses a 
 Pattern | Description
 ------- | ----------- 
 `^` | Start the match at the beginning of the string.
-`[0-9A-Z]` | Match an alphanumeric character. This comparison is case-insensitive, because the [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch) method is called with the [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) option.
+`[0-9A-Z]` | Match an alphanumeric character. This comparison is case-insensitive, because the [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)) method is called with the [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) option.
 `[-.\w]*` | Match zero or more occurrences of a hyphen, period, or word character.
 `(?<=[0-9A-Z])` | Look back at the last matched character and continue the match if it is alphanumeric. Note that alphanumeric characters are a subset of the set that consists of periods, hyphens, and all word characters.
 `@` | Match an at sign ("@").
@@ -585,7 +585,7 @@ Pattern | Description
 
 **(?**=_subexpression_**)** is a positive lookahead assertion; that is, the character or characters after the current position must match *subexpression*. **(?!**_subexpression_**)** is a negative lookahead assertion; that is, the character or characters after the current position must not match *subexpression*. Both positive and negative lookahead assertions are most useful when *subexpression* is a subset of the next *subexpression*. 
 
-The following example uses two equivalent regular expression patterns that validate a fully qualified type name. The first pattern is subject to poor performance because of excessive backtracking. The second modifies the first regular expression by replacing a nested quantifier with a positive lookahead assertion. The output from the example displays the execution time of the [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch) method.
+The following example uses two equivalent regular expression patterns that validate a fully qualified type name. The first pattern is subject to poor performance because of excessive backtracking. The second modifies the first regular expression by replacing a nested quantifier with a positive lookahead assertion. The output from the example displays the execution time of the [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)) method.
 
 ```csharp
 using System;
@@ -651,7 +651,7 @@ The first regular expression pattern, `^(([A-Z]\w*)+\.)*[A-Z]\w*$`, is defined a
 Pattern | Description
 ------- | ----------- 
 `^` | Start the match at the beginning of the string.
-`([A-Z]\w*)+\.` | Match an alphabetical character (A-Z) followed by zero or more word characters one or more times, followed by a period. This comparison is case-insensitive, because the [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch) method is called with the [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) option.
+`([A-Z]\w*)+\.` | Match an alphabetical character (A-Z) followed by zero or more word characters one or more times, followed by a period. This comparison is case-insensitive, because the [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)) method is called with the [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) option.
 `(([A-Z]\w*)+\.)*` | Match the previous pattern zero or more times. 
 `[A-Z]\w*` | Match an alphabetical character followed by zero or more word characters.
 `$` | End the match at the end of the input string.
@@ -662,7 +662,7 @@ The second regular expression pattern, `^((?=[A-Z])\w+\.)*[A-Z]\w*$`, uses a pos
 Pattern | Description
 ------- | ----------- 
 `^` | Start the match at the beginning of the string.
-`(?=[A-Z])` | Look ahead to the first character and continue the match if it is alphabetical (A-Z). This comparison is case-insensitive, because the [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch) method is called with the [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) option.
+`(?=[A-Z])` | Look ahead to the first character and continue the match if it is alphabetical (A-Z). This comparison is case-insensitive, because the [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)) method is called with the [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) option.
 `\w+\.` | Match one or more word characters followed by a period.
 `((?=[A-Z])\w+\.)*` | Match the pattern of one or more word characters followed by a period zero or more times. The initial word character must be alphabetical. 
 `[A-Z]\w*` | Match an alphabetical character followed by zero or more word characters.

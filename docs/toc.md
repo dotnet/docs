@@ -285,7 +285,6 @@
 ### [Developing ASP.NET Core applications](core/tutorials/aspnet-core.md)
 ### [How to Manage Package Dependency Versions for .NET Core 1.0](core/tutorials/managing-package-dependency-versions.md)
 ### [Using MSBuild to build .NET Core projects](core/tutorials/target-dotnetcore-with-msbuild.md)
-## [App Types](core/app-types.md)
 ## [Packages, Metapackages and Frameworks](core/packages.md)
 ## [Deploying](core/deploying/index.md)
 ### [🔧 Deploying Applications](core/deploying/applications.md)

@@ -19,11 +19,11 @@ F# and the Visual F# tooling are supported in the Visual Studio IDE.  To begin, 
 
 Visual Studio will first initialize the installer.  After it is intilized, select **Custom** as shown here:
 
-![](../../media/getting-started-vs/vs2015-install-1.png)
+![](media/getting-started-vs/vs2015-install-1.png)
 
 Select the Visual F# Tools under Programming Languages here:
 
-![](../../media/getting-started-vs/vs2015-install-2.png)
+![](media/getting-started-vs/vs2015-install-2.png)
 
 Feel free to customize your installation further, and then continue with the installation.  After a while, Visual Studio will complete installation and you can create an F# project!
 
@@ -33,15 +33,15 @@ One of the most basic projects in Visual Studio is the Console Application.  Her
 
 1. On the **File** menu, point to **New**, and then choose **Project**.
 
-![](../../media/getting-started-vs/vs2015-install-3.png)
+![](media/getting-started-vs/vs2015-install-3.png)
 
 2.  In the New Project dialog, under **Templates**, you should see **Visual F#**.  Choose this to show the F# templates.
 
-![](../../media/getting-started-vs/vs2015-install-4.png)
+![](media/getting-started-vs/vs2015-install-4.png)
 
 3. Choose the **Okay** button to create the F# project!  You should see something like this under **Solution Explorer**:
 
-![](../../media/getting-started-vs/vs2015-install-5.png)
+![](media/getting-started-vs/vs2015-install-5.png)
 
 ## Writing your code
 

@@ -64,12 +64,22 @@ in the [CLI repo](https://github.com/dotnet/core/blob/master/Documentation/prere
 The below sections show examples of configurations using the mentioned CI SaaS offerings. 
 
 ### TravisCI
-**TODO**
+
+The [travis-ci](https://travis-ci.org/) can be configured to install the .NET Core SDK using the `csharp` language and the `dotnet` key.
+
+Just use:
+
+```yaml
+dotnet: 1.0.0-preview2-003121
+```
+
+Travis can run both `osx` (OS X 10.11) and `linux` ( Ubuntu 14.04 ) job in a build matrix, see [example .travis.yml](https://github.com/dotnet/core-docs/blob/master/.travis.yml) 
+for more information.
 
 ### AppVeyor
 
-The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK preview1 already installed 
-in the build worker image `Visual Studio 2015`
+The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK preview2 already installed 
+in the build worker image `Visual Studio 2015`.
 
 Just use:
 

@@ -95,7 +95,7 @@
 ### [Getting Started](fsharp/tutorials/getting-started/index.md)
 #### [Getting Started with Visual Studio](fsharp/tutorials/getting-started/getting-started-visual-studio.md)
 #### [Getting Started with Visual Studio Code and Ionide](fsharp/tutorials/getting-started/getting-started-vscode.md)
-#### [Getting Started with Cross-platform Tools](fsharp/tutorials/getting-started/getting-started-cross-platform-tooling.md)
+#### [Getting Started with Command-line Tools](fsharp/tutorials/getting-started/getting-started-command-line.md)
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
 #### [F# Interactive Options](fsharp/tutorials/fsharp-interactive/fsharp-interactive-options.md)
 ### [Type Providers](fsharp/tutorials/type-providers/index.md)

@@ -2,10 +2,10 @@
 title: Getting Started with F# in Visual Studio
 description: Getting Started with F# in Visual Studio
 keywords: visual f#, f#, functional programming
-author: dend
+author: cartermp
 manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
+ms.date: 09/08/2016
+ms.topic: article
 ms.prod: visual-studio-dev14
 ms.technology: devlang-fsharp
 ms.assetid: 8db75596-19a9-4eda-b20d-a12d517c8cc1 
@@ -13,160 +13,130 @@ ms.assetid: 8db75596-19a9-4eda-b20d-a12d517c8cc1
 
 # Getting Started with F# in Visual Studio
 
-> [!NOTE]
-This article is not up to date with the latest Visual Studio.  It will be updated.
+F# and the Visual F# tooling are supported in the Visual Studio IDE.  To begin, you should [download Visual Studio](https://visualstudio.com/downloads/), if you haven't already.  This article uses the Visual Studio 2015 Community Edition, but you can use F# with the version of your choice.
 
-Visual Studio 2010 includes a new programming language, F#. F# is a multiparadigm language that supports functional programming in addition to traditional object-oriented programming and .NET concepts. The following examples introduce some of its features and syntax. The examples show how to declare simple variables, to write and test functions, to create tuples and lists, and to define and use a class.
+## Installing the Visual F# Tools
 
-Note: General Settings
+Visual Studio will first initialize the installer.  After it is intilized, select **Custom** as shown here:
 
+![](media/getting-started-vs/vs2015-install-1.png)
 
-### To create a new console application
+Select the Visual F# Tools under Programming Languages here:
 
-1. On the **File** menu, point to **New**, and then click **Project**.
-<br />
+![](media/getting-started-vs/vs2015-install-2.png)
 
-2. If you cannot see Visual F# in the **Templates Categories** pane, click **Other Languages**, and then click **Visual F#**. The **Templates** pane in the center lists the F# templates.
-<br />
+Feel free to customize your installation further, and then continue with the installation.  After a while, Visual Studio will complete installation and you can create an F# project!
 
-3. Look at the top of the **Templates** pane to make sure that **.NET Framework 4** appears in the **Target Framework** box.
-<br />
+## Creating a Console Application
 
-4. Click **F# Application** in the list of templates.
-<br />
+One of the most basic projects in Visual Studio is the Console Application.  Here's how to do it.  Once Visual Studio is open:
 
-5. Type a name for your project in the **Name** field.
-<br />
+1. On the **File** menu, point to **New**, and then choose **Project**.
 
-6. Click **OK**.
-<br />  The new project appears in **Solution Explorer**.
-<br />
+![](media/getting-started-vs/vs2015-install-3.png)
 
+2.  In the New Project dialog, under **Templates**, you should see **Visual F#**.  Choose this to show the F# templates.
 
-### To use the let keyword to declare and use identifiers
+![](media/getting-started-vs/vs2015-install-4.png)
 
-1. Copy and paste the following code into **Program.fs**. You are binding each identifier, **anInt**, **aString**, and **anIntSquared**, to a value.
+3. Choose the **Okay** button to create the F# project!  You should see something like this under **Solution Explorer**:
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet1.fs)]
-        
->[!NOTE]
-If you cannot see the code in Classic view, make sure that the **Language Filter** in the header below the topic title is set to include F#.
+![](media/getting-started-vs/vs2015-install-5.png)
 
-### To see results in the F# Interactive window
+## Writing your code
 
-1. Select the **let** expressions in the previous procedure.
-<br />
+Let's get started by writing some code first.  Make sure that the `Program.fs` file is open, and then replace its contents with the following:
 
-2. Right-click the selected area and then click **Send to Interactive**. Alternatively, press ALT+ENTER.
-<br />
+[!code-fsharp[HelloSquare](../../../../samples/snippets/fsharp/getting-started/hello-square.fs)]
 
-3. The **F# Interactive** window opens and the results of interpreting the **let** expressions are displayed, as shown in the following lines. The types are inferred from the specified values.
+In the previous code sample, a function `square` has been defined which takes an input named `x` and multiplies it by itself.  Because F# uses [Type Inference](../../language-reference/type-inference.md), the type of `x` doesn't need to be specified.  The F# compiler understands the types where multiplication is valid, and will assign a type to `x` based on how `square` is called.  If you hover over `square`, you should see the following:
 
-```fsharp
-val anInt : int = 5
-val aString : string = "Hello"
-val anIntSquared : int = 25
+```
+val square: x:int -> int
 ```
 
-### To see the results in a Command Prompt window
+This is what is known as the function's type signature.  It can be read like this: "Square is a function which takes an integer named x and produces an integer".  Note that the compiler gave `square` the `int` type for now - this is because multiplication is not generic across *all* types, but rather is generic across a closed set of types.  The F# compiler picked `int` at this point, but it will adjust the type signature if you call `square` with a different input type, such as a `float`.
 
-1. Add the following lines to **Program.fs**.
+Another function, `main`, is defined, which is decorated with the `EntryPoint` attribute to tell the F# compiler that program execution should start there.  It follows the same convention as other [C-style programming languages](https://en.wikipedia.org/wiki/Entry_point#C_and_C.2B.2B), where command-line arguments can be passed to this function, and an integer code is returned (typically `0`).
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet2.fs)]
+It is in this function that we call the `square` function with an argument of `12`.  The F# compiler then assigns the type of `square` to be `int -> int` (that is, a function which takes an `int` and produces an `int`).  The call to `printfn` is a formatted printing function which uses a format string, similar to C-style programming languages, parameters which correspond to those specified in the format string, and then prints the result and a new line.
 
-2. Press CTRL+F5 to run the code. A Command Prompt window appears that contains the following values.
-<br />  **5**
-<br />  **Hello**
-<br />  **25**
-<br />  You can verify the inferred types by resting the mouse pointer on the identifier names **anInt**, **aString**, and **anIntSquared** in the previous **WriteLine** statements.
-<br />
+## Running Your Code
 
+You can run the code and see results by pressing **ctrl-f5**.  This will run the program without debugging and allows you to see the results.  Alternatively, you can choose the **Debug** top-level menu item in Visual Studio and choose **Start Without Debugging**.
 
-### To define and run a function
+You should now see the following printed to the console window that Visual Studio popped up:
 
-1. Use a **let** expression to define a squaring function, as shown in the following code. The function has one parameter, **n**, and returns the square of the argument sent to **n**.
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet3.fs)]
+```
+12 squared is 144!
+```
 
-2. Press CTRL+F5 to run the code. The result displayed is 25.
-<br />
+Congratulations!  You've created your first F# project in Visual Studio, written an F# function printed the results of calling that function, and run the project to see some results.
 
-3. A recursive function requires a **let rec** expression. The following example defines a function that calculates the factorial of parameter **n**.
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet4.fs)]
+## Using F# Interactive
 
-4. Press CTRL+F5 to run the function. The result displayed is 120, the factorial of 5.
-<br />
+One of the best features of the Visual F# tooling in Visual Studio is the F# Interactive Window.  It allows you to send code over to a process where you can call that code and see the result interactively.
 
+To begin using it, highlight the `square` function defined in your code.  Next, hold the **Alt** key and press **Enter**.  This executes the code in the F# Interactive Window.  You should see the F# Interactive Window appear with the following in it:
 
-### To create collections: lists and tuples
+```
+>
 
-1. One way to aggregate values is by using a tuple, as shown in the following code.
+val square : x:int -> int
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet5.fs)]
+>
+```
 
-2. Another way to aggregate values is by using a list, as shown in the following code.
+This shows the same function signature for the `square` function, which you saw earlier when you hovered over the function.  Because `square` is now defined in the F# Interactive process, you can call it with different values:
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet7.fs)]
+```
+> square 12;;
+val it : int = 144
+>square 13;;
+val it : int = 169
+```
 
-Add a new best friend to the list by using the "cons" operator (::). Note that the operation does not change the value of **bffs**. The value of **bffs** is immutable and cannot be changed.
+This executes the function, binds the result to a new name `it`, and displays the type and value of `it`.  Note that you must terminate each line with `;;`.  This is how F# Interactive knows when your function call is finished.  You can also define new functions in F# Interactive:
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet8.fs)]
+```
+> let isOdd x = x % 2 <> 0;;
 
-Use **printfn** to display the lists. Function **printfn** shows the individual elements that are contained in structured values.
+val isOdd : x:int -> bool
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet9.fs)]
+> isOdd 12;;
+val it : bool = false
+```
 
-3. You can view the results either by pressing CTRL+F5 or by selecting a section of the code and then pressing ALT+ENTER.
-<br />
+The above defines a new function, `isOdd`, which takes an `int` and checks to see if it's odd!  You can call this function to see what it returns with different inputs.  You can call functions within function calls:
 
+```
+> isOdd (square 15);;
+val it : bool = true
+```
 
-### To create and use a class
+You can also use the [pipe-forward operator](../../language-reference/symbol-and-operator-reference/index.md) to pipeline the value into the two functions:
 
-1. The following code creates a **Person** class that has two properties, **Name** and **Age**. **Name** is a read-only property. Its value is immutable, as are most values in functional programming. You can create mutable values in F# if you need them, but you must explicitly define them as mutable. In the following class definition, the value of **Age** is stored in a mutable local variable, **internalAge**. The value of **internalAge** can be changed.
+```
+> 15 |> square |> isOdd;;
+val it : bool = true
+```
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet10.fs)]
+The pipe-forward operator, and more, are covered in later tutorials.
 
-2. To test the class, declare two **Person** objects, make some changes, and display the results, as shown in the following code.
-
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/contour/snippet11.fs)]
-
-The following lines are displayed.
-
-<br />  **Name:  John**
-<br />  **Age:   44**
-<br />  **Name:  Mary**
-<br />  **Age:   15**
-<br />  **False**
-<br />
-
-
-### To view other examples in the F# tutorial
-
-1. On the **File** menu, point to **New**, and then click **Project**.
-<br />
-
-2. If you cannot see Visual F# in the **Templates Categories** pane, click **Other Languages**, and then click **Visual F#**. The **Templates** pane in the center lists the F# templates.
-<br />
-
-3. Look at the top of the **Templates** pane to make sure that **.NET Framework 4** appears in the **Target Framework** box.
-<br />
-
-4. Click **F# Tutorial** in the list of templates.
-<br />
-
-5. Click **OK**.
-<br />
-
-6. The tutorial appears in **Solution Explorer**.
-<br />
-
+This is only a glimpse into what you can do with F# Interactive.  To learn more, check out [Interactive Programming with F#](../fsharp-interactive/index.md).
 
 ## Next Steps
-For more information about functional programming and additional examples, see [Functions as First-Class Values](../../introduction-to-functional-programming/functions-as-first-class-values.md). For more information about tuples, lists, let expressions, function definitions, classes, members, and many other topics, see [F# Language Reference](../../language-reference/index.md).
 
+If you haven't already, check out the [Tour of F#](../../tour.md), which covers some of the core features of the F# language.  It will give you an overview of some of the capabilities of F#, and provide ample code samples that you can copy into Visual Studio and run.  There are also some great external resources you can use, showcased in the [F# Guide](../../index.md).
 
 ## See Also
-[Visual F#](index.md)
+
+[Visual F#](../../index.md)
+
+[Tour of F#](../../tour.md)
 
 [F# Language Reference](../../language-reference/index.md)
 
-[Functions as First-Class Values](../../introduction-to-functional-programming/functions-as-first-class-values.md)
+[Type Inference](../../language-reference/type-inference.md)
+
+[Symbol and Operator Reference](../../language-reference/symbol-and-operator-reference/index.md)

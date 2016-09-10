@@ -14,71 +14,44 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 
 # project.json reference
 
-> [!NOTE]
-> This topic is preliminary and subject to change in the next release. You can track the status of this issue through our public GitHub issue tracker.
-
 ## Overview
 
-    {
-        "name": String,
-        "version": String,
-        "description": String,
-        "copyright": String,
-        "title": String,
-        "entryPoint": String,
-        "testRunner": String,
-        "authors": String[],
-        "language": String,
-        "embedInteropTypes": Boolean,
-        "preprocess": String or String[],
-        "shared": String or String[],
-        "dependencies": Object,
-        "tools": Object,
-        "scripts": Object,
-        "buildOptions": Object {
-            "define": String[],
-            "nowarn": String[],
-            "additionalArguments": String[],
-            "warningsAsErrors": Boolean,
-            "allowUnsafe": Boolean,
-            "emitEntryPoint": Boolean,
-            "optimize": Boolean,
-            "platform": String,
-            "languageVersion": String,
-            "keyFile": String,
-            "delaySign": Boolean,
-            "publicSign": Boolean,
-            "debugType": String,
-            "xmlDoc": Boolean,
-            "preserveCompilationContext": Boolean,
-            "outputName": String,
-            "compilerName": String,
-            "compile": Object {
-                "include": String or String[],
-                "exclude": String or String[],
-                "includeFiles": String or String[],
-                "excludeFiles": String or String[],
-                "builtIns": Object,
-                "mappings": Object
-            },
-            "embed": Object {
-                "include": String or String[],
-                "exclude": String or String[],
-                "includeFiles": String or String[],
-                "excludeFiles": String or String[],
-                "builtIns": Object,
-                "mappings": Object
-            },
-            "copyToOutput": Object {
-                "include": String or String[],
-                "exclude": String or String[],
-                "includeFiles": String or String[],
-                "excludeFiles": String or String[],
-                "builtIns": Object,
-                "mappings": Object
-            }
-        },
-        "publishOptions": Object {
+```
+{
+    "name": String,
+    "version": String,
+    "description": String,
+    "copyright": String,
+    "title": String,
+    "entryPoint": String,
+    "testRunner": String,
+    "authors": String[],
+    "language": String,
+    "embedInteropTypes": Boolean,
+    "preprocess": String or String[],
+    "shared": String or String[],
+    "dependencies": Object,
+    "tools": Object,
+    "scripts": Object,
+    "buildOptions": Object {
+        "define": String[],
+        "nowarn": String[],
+        "additionalArguments": String[],
+        "warningsAsErrors": Boolean,
+        "allowUnsafe": Boolean,
+        "emitEntryPoint": Boolean,
+        "optimize": Boolean,
+        "platform": String,
+        "languageVersion": String,
+        "keyFile": String,
+        "delaySign": Boolean,
+        "publicSign": Boolean,
+        "debugType": String,
+        "xmlDoc": Boolean,
+        "preserveCompilationContext": Boolean,
+        "outputName": String,
+        "compilerName": String,
+        "compile": Object {
             "include": String or String[],
             "exclude": String or String[],
             "includeFiles": String or String[],
@@ -86,54 +59,80 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
             "builtIns": Object,
             "mappings": Object
         },
-        "runtimeOptions": Object {
-            "configProperties": Object {
-                "System.GC.Server": Boolean,
-                "System.GC.Concurrent": Boolean,
-                "System.GC.RetainVM": Boolean,
-                "System.Threading.ThreadPool.MinThreads": Integer,
-                "System.Threading.ThreadPool.MaxThreads": Integer
-            },
-            "framework": Object {
-                "name": String,
-                "version": String,
-            },
-            "applyPatches": Boolean
+        "embed": Object {
+            "include": String or String[],
+            "exclude": String or String[],
+            "includeFiles": String or String[],
+            "excludeFiles": String or String[],
+            "builtIns": Object,
+            "mappings": Object
         },
-        "packOptions": Object {
-            "summary": String,
-            "tags": String[],
-            "owners": String[],
-            "releaseNotes": String,
-            "iconUrl": String,
-            "projectUrl": String,
-            "licenseUrl": String,
-            "requireLicenseAcceptance": Boolean,
-            "repository": Object {
-                "type": String,
-                "url": String
-            },
-            "files": Object {
-                "include": String or String[],
-                "exclude": String or String[],
-                "includeFiles": String or String[],
-                "excludeFiles": String or String[],
-                "builtIns": Object,
-                "mappings": Object
-            }
-        },
-        "analyzerOptions": Object {
-            "languageId": String
-        },
-        "configurations": Object,
-        "frameworks": Object {
-            "dependencies": Object,
-            "frameworkAssemblies": Object,
-            "wrappedProject": String,
-            "bin": Object,
-            "imports": String
+        "copyToOutput": Object {
+            "include": String or String[],
+            "exclude": String or String[],
+            "includeFiles": String or String[],
+            "excludeFiles": String or String[],
+            "builtIns": Object,
+            "mappings": Object
         }
+    },
+    "publishOptions": Object {
+        "include": String or String[],
+        "exclude": String or String[],
+        "includeFiles": String or String[],
+        "excludeFiles": String or String[],
+        "builtIns": Object,
+        "mappings": Object
+    },
+    "runtimeOptions": Object {
+        "configProperties": Object {
+            "System.GC.Server": Boolean,
+            "System.GC.Concurrent": Boolean,
+            "System.GC.RetainVM": Boolean,
+            "System.Threading.ThreadPool.MinThreads": Integer,
+            "System.Threading.ThreadPool.MaxThreads": Integer
+        },
+        "framework": Object {
+            "name": String,
+            "version": String,
+        },
+        "applyPatches": Boolean
+    },
+    "packOptions": Object {
+        "summary": String,
+        "tags": String[],
+        "owners": String[],
+        "releaseNotes": String,
+        "iconUrl": String,
+        "projectUrl": String,
+        "licenseUrl": String,
+        "requireLicenseAcceptance": Boolean,
+        "repository": Object {
+            "type": String,
+            "url": String
+        },
+        "files": Object {
+            "include": String or String[],
+            "exclude": String or String[],
+            "includeFiles": String or String[],
+            "excludeFiles": String or String[],
+            "builtIns": Object,
+            "mappings": Object
+        }
+    },
+    "analyzerOptions": Object {
+        "languageId": String
+    },
+    "configurations": Object,
+    "frameworks": Object {
+        "dependencies": Object,
+        "frameworkAssemblies": Object,
+        "wrappedProject": String,
+        "bin": Object,
+        "imports": String
     }
+}
+```
 
 ## name
 Type: String
@@ -443,7 +442,7 @@ For example:
 ### emitEntryPoint
 Type: Boolean
 
-`true` to create an executable; `false` to produce a `.dll` file. The default is `false`.
+`true` to create an executable; `false` to produce a library. The default is `false`.
 
 For example:
 

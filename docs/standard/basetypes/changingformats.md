@@ -14,7 +14,7 @@ ms.assetid: 3e196697-981c-4c1d-93dd-c3b236ef36dd
 
 # Regular expression example: changing date formats
 
-The following code example uses the [Regex.Replace](xref:System.Text.RegularExpressions.Regex.Replace) method to replace dates that have the form *mm/dd/yy* with dates that have the form *dd-mm-yy*.
+The following code example uses the [Regex.Replace](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String)) method to replace dates that have the form *mm/dd/yy* with dates that have the form *dd-mm-yy*.
 
 ## Example
 

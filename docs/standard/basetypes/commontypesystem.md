@@ -270,7 +270,7 @@ For example, a delegate that has a parameter of type [IEnumerable](xref:System.C
 
 In many cases, such as with callback methods, a delegate represents only one method, and the only actions you have to take are creating the delegate and invoking it. 
 
-For delegates that represent multiple methods, .NET provides methods of the [Delegate](xref:System.Delegate) and [MulticastDelegate](xref:System.MulticastDelegate) delegate classes to support operations such as adding a method to a delegate's invocation list (the [Delegate.Combine](xref:System.Delegate.Combine(System.Delegate,System.Delegate)) method), removing a method (the [Delegate.Remove](xref:System.Delegate.Remove(System.Delegate,System,Delegate)) method), and getting the invocation list (the [Delegate.GetInvocationList](xref:System.Delegate.GetInvocationList) method).
+For delegates that represent multiple methods, .NET provides methods of the [Delegate](xref:System.Delegate) and [MulticastDelegate](xref:System.MulticastDelegate) delegate classes to support operations such as adding a method to a delegate's invocation list (the [Delegate.Combine](xref:System.Delegate.Combine(System.Delegate,System.Delegate)) method), removing a method (the [Delegate.Remove](xref:System.Delegate.Remove(System.Delegate,System.Delegate)) method), and getting the invocation list (the [Delegate.GetInvocationList](xref:System.Delegate.GetInvocationList) method).
 
 > [!NOTE]
 > It is not necessary to use these methods for event-handler delegates in C# or Visual Basic, because these languages provide syntax for adding and removing event handlers.
@@ -512,7 +512,7 @@ virtual | Methods, properties, and events | The method can be implemented by a d
 
 ### Overloading
 
-Each type member has a unique signature. Method signatures consist of the method name and a parameter list (the order and types of the method's arguments). Multiple methods with the same name can be defined within a type as long as their signatures differ. When two or more methods with the same name are defined, the method is said to be overloaded. For example, in [System.Char](xref:System.Char), the [IsDigit](xref:System.Char.IsDigit) method is overloaded. One method takes a [Char](xref:System.Char). The other method takes a [String](xref:System.String) and an [Int32](xref:System.Int32). 
+Each type member has a unique signature. Method signatures consist of the method name and a parameter list (the order and types of the method's arguments). Multiple methods with the same name can be defined within a type as long as their signatures differ. When two or more methods with the same name are defined, the method is said to be overloaded. For example, in [System.Char](xref:System.Char), the `IsDigit` method is overloaded. One method takes a [Char](xref:System.Char). The other method takes a [String](xref:System.String) and an [Int32](xref:System.Int32). 
 
 > [!NOTE]
 > The return type is not considered part of a method's signature. That is, methods cannot be overloaded if they differ only by return type.
@@ -529,7 +529,6 @@ A derived type inherits all members of its base type; that is, these members are
 
 [Type Conversion in the .NET Framework](typeconversion.md)
 
-[Common Language Runtime](clr.md)
 
 
 

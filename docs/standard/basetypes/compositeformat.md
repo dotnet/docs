@@ -18,7 +18,7 @@ The .NET composite formatting feature takes a list of objects and a composite fo
 
 The composite formatting feature is supported by methods such as the following: 
 
-* [String.Format](xref:System.String.Format(System.IFormatProvider, System.Object)), which returns a formatted result string. 
+* [String.Format](xref:System.String.Format(System.IFormatProvider,System.Object)), which returns a formatted result string. 
 
 * [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider, System.String, System.Object), which appends a formatted result string to a [StringBuilder](xref:System.Text.StringBuilder) object.
 
@@ -26,17 +26,17 @@ The composite formatting feature is supported by methods such as the following:
 
 * Some overloads of the [TextWriter](xref:System.IO.TextWriter) `WriteLine` method, which write the formatted result string to a stream or file. Classes derived from [TextWriter](xref:System.IO.TextWriter), such as [StreamWriter](xref:System.IO.StreamWriter), also share this functionality.
 
-* [Debug.WriteLine(String, Object[])](xref:System.Diagnostics.Debug.WriteLine(System.String, System.Object)), which outputs a formatted message to trace listeners. 
+* [Debug.WriteLine(String, Object[])](xref:System.Diagnostics.Debug.WriteLine(System.String,System.Object)), which outputs a formatted message to trace listeners. 
 
-* The [Trace.TraceError(String, Object[])](xref:Trace.TraceError(System.String, System.Object[])), [Trace.TraceInformation(String, Object[])](xref:Trace.TraceInformation(System.String, System.Object[])), and [Trace.TraceWarning(String, Object[])](xref:Trace.TraceWarning(System.String, System.Object[])) methods, which output formatted messages to trace listeners. 
+* The [Trace.TraceError(String, Object[])](xref:Trace.TraceError(System.String,System.Object[])), [Trace.TraceInformation(String, Object[])](xref:Trace.TraceInformation(System.String,System.Object[])), and [Trace.TraceWarning(String, Object[])](xref:Trace.TraceWarning(System.String,System.Object[])) methods, which output formatted messages to trace listeners. 
 
-* The [TraceSource.TraceInformation(String, Object[])](xref:System.Diagnostics.TraceSource.TraceInformation(System.String, System.Object[])) method, which writes an informational method to trace listeners. 
+* The [TraceSource.TraceInformation(String, Object[])](xref:System.Diagnostics.TraceSource.TraceInformation(System.String,System.Object[])) method, which writes an informational method to trace listeners. 
 
 ## Composite Format String
 
 A composite format string and object list are used as arguments of methods that support the composite formatting feature. A composite format string consists of zero or more runs of fixed text intermixed with one or more format items. The fixed text is any string that you choose, and each format item corresponds to an object or boxed structure in the list. The composite formatting feature returns a new result string where each format item is replaced by the string representation of the corresponding object in the list.
 
-Consider the following [Format](xref:System.String.Format(System.IFormatProvider, System.Object)) code fragment.
+Consider the following [Format](xref:System.String.Format(System.IFormatProvider,System.Object)) code fragment.
 
 ```csharp
 string name = "Fred";
@@ -221,7 +221,7 @@ Each value in the parameter list that corresponds to a format item is converted 
 
 1. If the value to be formatted is `null`, an empty string ("") is returned. 
 
-2. If an [ICustomFormatter](xref:System.ICustomFormatter) implementation is available, the runtime calls its [Format](xref:System.ICustomFormatter.Format(System.String, System.Object, System.IFormatProvider)) method. It passes the method the format item's *formatString* value, if one is present, or `null` if it is not, along with the [IFormatProvider](xref:System.IFormatProvider) implementation. 
+2. If an [ICustomFormatter](xref:System.ICustomFormatter) implementation is available, the runtime calls its [Format](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)) method. It passes the method the format item's *formatString* value, if one is present, or `null` if it is not, along with the [IFormatProvider](xref:System.IFormatProvider) implementation. 
 
 3. If the value implements the [IFormattable](xref:System.IFormattable) interface, the interface's [ToString(String, IFormatProvider)](xref:System.IFormattable.ToString(System.String, System.IFormatProvider)) method is called. The method is passed the *formatString* value, if one is present in the format item, or `null` if it is not. The [IFormatProvider](xref:System.IFormatProvider) argument is determined as follows:
 
@@ -229,7 +229,7 @@ Each value in the parameter list that corresponds to a format item is converted 
     
     * For a date and time value, if a composite formatting method with a non-null [IFormatProvider](xref:System.IFormatProvider) argument is called, the runtime requests a [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) object from its [IFormatProvider.GetFormat](xref:System.IFormatProvider._GetFormat(System.Type) method. If it is unable to supply one, if the value of the argument is `null`, or if the composite formatting method does not have an [IFormatProvider](xref:System.IFormatProvider) parameter, the [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) object for the current thread culture is used. 
     
-    * For objects of other types, if a composite formatting is called with an [IFormatProvider](xref:System.IFormatProvider) argument, its value (including a `null`, if no [IFormatProvider](xref:System.IFormatProvider) object is supplied) is passed directly to the [IFormattable.ToString](xref:System.IFormattable.ToString(System.String, System.IFormatProvider)) implementation. Otherwise, a [CultureInfo](xref:System.Globalization.CultureInfo) object that represents the current thread culture is passed to the [IFormattable.ToString](xref:System.IFormattable.ToString(System.String, System.IFormatProvider)) implementation. 
+    * For objects of other types, if a composite formatting is called with an [IFormatProvider](xref:System.IFormatProvider) argument, its value (including a `null`, if no [IFormatProvider](xref:System.IFormatProvider) object is supplied) is passed directly to the [IFormattable.ToString](xref:System.IFormattable.ToString(System.String,System.IFormatProvider)) implementation. Otherwise, a [CultureInfo](xref:System.Globalization.CultureInfo) object that represents the current thread culture is passed to the [IFormattable.ToString](xref:System.IFormattable.ToString(System.String,System.IFormatProvider)) implementation. 
     
 4. The type's parameterless `ToString` method, which either overrides [Object.ToString()](xref:System.Object.ToString) or inherits the behavior of its base class, is called. In this case, the format string specified by the *formatString* component in the format item, if it is present, is ignored.
 
@@ -251,7 +251,7 @@ Dim FormatString2 As String = DateTime.Now.ToString("dddd MMMM")
 
 Assuming that the current day is a Thursday in May, the value of both strings in the preceding example is `Thursday May` in the U.S. English culture.
 
-[Console.WriteLine](xref:System.Console.WriteLine) exposes the same functionality as [String.Format](xref:System.String.Format(System.IFormatProvider, System.Object)). The only difference between the two methods is that [String.Format](xref:System.String.Format(System.IFormatProvider, System.Object)) returns its result as a string, while [Console.WriteLine](xref:System.Console.WriteLine) writes the result to the output stream associated with the [Console](xref:System.Console) object. The following example uses the [Console.WriteLine](xref:System.Console.WriteLine) method to format the value of `MyInt` to a currency value.
+[Console.WriteLine](xref:System.Console.WriteLine) exposes the same functionality as [String.Format](xref:System.String.Format(System.IFormatProvider,System.Object)). The only difference between the two methods is that [String.Format](xref:System.String.Format(System.IFormatProvider,System.Object)) returns its result as a string, while [Console.WriteLine](xref:System.Console.WriteLine) writes the result to the output stream associated with the [Console](xref:System.Console) object. The following example uses the [Console.WriteLine](xref:System.Console.WriteLine) method to format the value of `MyInt` to a currency value.
 
 ```csharp
 int MyInt = 100;
@@ -352,7 +352,7 @@ Console.WriteLine(FormatPrice)
 
 [Console.WriteLine](xref:System.Console.WriteLine)
 
-[String.Format](xref:System.String.Format(System.IFormatProvider, System.Object))
+[String.Format](xref:System.String.Format(System.IFormatProvider,System.Object))
 
 [Formatting types](formattingtypes.md)
 

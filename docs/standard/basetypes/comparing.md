@@ -18,18 +18,18 @@ ms.assetid: 920ee5e8-3d61-4941-b5af-fc50eaee427c
 
 Method name | Use
 ----------- | ---
-[String.Compare](xref:System.String.Compare(System.String, System.Int32, System.String, System.Int32,System.Int32)) | Compares the values of two strings. Returns an integer value.
-[String.CompareOrdinal](xref:System.String.CompareOrdinal(System.String, System.Int32, System.String, System.Int32,System.Int32)) | Compares two strings without regard to local culture. Returns an integer value.
+[String.Compare](xref:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)) | Compares the values of two strings. Returns an integer value.
+[String.CompareOrdinal](xref:System.String.CompareOrdinal(System.String,System.Int32,System.String,System.Int32,System.Int32)) | Compares two strings without regard to local culture. Returns an integer value.
 [String.CompareTo](xref:System.String.CompareTo(System.String)) | Compares the current string object to another string. Returns an integer value.
 [String.StartsWith](xref:System.String.StartsWith(System.String)) | Determines whether a string begins with the string passed. Returns a Boolean value.
 [String.EndsWith](xref:System.String.CompareTo(System.String)) | Determines whether a string ends with the string passed. Returns a Boolean value.
 [String.Equals](xref:System.String.CompareTo(System.String)) | Determines whether two strings are the same. Returns a Boolean value.
 [String.IndexOf](xref:System.String.IndexOf(System.Char)) | Returns the index position of a character or string, starting from the beginning of the string you are examining. Returns an integer value.
-[String.LastIndexOf](System.String.LastIndexOf(System.Char)) | Returns the index position of a character or string, starting from the end of the string you are examining. Returns an integer value.
+[String.LastIndexOf](xref:System.String.LastIndexOf(System.Char)) | Returns the index position of a character or string, starting from the end of the string you are examining. Returns an integer value.
 
 ## Compare
 
-The static [String.Compare](xref:System.String.Compare(System.String, System.Int32, System.String, System.Int32,System.Int32)) method provides a thorough way of comparing two strings. This method is culturally aware. You can use this function to compare two strings or substrings of two strings. Additionally, overloads are provided that regard or disregard case and cultural variance. The following table shows the three integer values that this method might return. 
+The static [String.Compare](xref:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)) method provides a thorough way of comparing two strings. This method is culturally aware. You can use this function to compare two strings or substrings of two strings. Additionally, overloads are provided that regard or disregard case and cultural variance. The following table shows the three integer values that this method might return. 
 
 Return value | Condition
 ------------ | ---------
@@ -38,9 +38,9 @@ A negative integer | The first string precedes the second string in the sort ord
 A positive integer, or 1 | The first string follows the second string in the sort order, or the second string is null.
  
 > [!IMPORTANT]
-> The [String.Compare](xref:System.String.Compare(System.String, System.Int32, System.String, System.Int32,System.Int32)) method is primarily intended for use when ordering or sorting strings. You should not use the [String.Compare](xref:System.String.Compare(System.String, System.Int32, System.String, System.Int32,System.Int32)) method to test for equality (that is, to explicitly look for a return value of 0 with no regard for whether one string is less than or greater than the other). Instead, to determine whether two strings are equal, use the [String.Equals(String, String, StringComparison)](xref:System.String.Equals(System.String, System.String, System.StringComparison)) method.
+> The [String.Compare](xref:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)) method is primarily intended for use when ordering or sorting strings. You should not use the [String.Compare](xref:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)) method to test for equality (that is, to explicitly look for a return value of 0 with no regard for whether one string is less than or greater than the other). Instead, to determine whether two strings are equal, use the [String.Equals(String, String, StringComparison)](xref:System.String.Equals(System.String,System.String,System.StringComparison)) method.
 
-The following example uses the [String.Compare](xref:System.String.Compare(System.String, System.Int32, System.String, System.Int32,System.Int32)) method to determine the relative values of two strings.
+The following example uses the [String.Compare](xref:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)) method to determine the relative values of two strings.
 
 ```csharp
 string string1 = "Hello World!";
@@ -56,10 +56,10 @@ This example displays `-1` to the console.
 
 ## CompareOrdinal
 
-The [String.CompareOrdinal](xref:System.String.CompareOrdinal(System.String, System.Int32, System.String, System.Int32,System.Int32)) method compares two string objects without considering the local culture. The return values of this method are identical to the values returned by the `Compare` method in the previous table.
+The [String.CompareOrdinal](xref:System.String.CompareOrdinal(System.String,System.Int32,System.String,System.Int32,System.Int32)) method compares two string objects without considering the local culture. The return values of this method are identical to the values returned by the `Compare` method in the previous table.
 
 > [!IMPORTANT]
-> The [String.CompareOrdinal](xref:System.String.CompareOrdinal(System.String, System.Int32, System.String, System.Int32,System.Int32)) method is primarily intended for use when ordering or sorting strings. You should not use the [String.CompareOrdinal](xref:System.String.CompareOrdinal(System.String, System.Int32, System.String, System.Int32,System.Int32)) method to test for equality (that is, to explicitly look for a return value of 0 with no regard for whether one string is less than or greater than the other). Instead, to determine whether two strings are equal, use the [String.Equals(String, String, StringComparison)](xref:System.String.Equals(System.String, System.String, System.StringComparison)) method.
+> The [String.CompareOrdinal](xref:System.String.CompareOrdinal(System.String,System.Int32,System.String,System.Int32,System.Int32)) method is primarily intended for use when ordering or sorting strings. You should not use the [String.CompareOrdinal](xref:System.String.CompareOrdinal(System.String,System.Int32,System.String,System.Int32,System.Int32)) method to test for equality (that is, to explicitly look for a return value of 0 with no regard for whether one string is less than or greater than the other). Instead, to determine whether two strings are equal, use the [String.Equals(String, String, StringComparison)](xref:System.String.Equals(System.String,System.String,System.StringComparison)) method.
 
 The following example uses the `CompareOrdinal` method to compare the values of two strings.
 
@@ -80,7 +80,7 @@ This example displays `-32` to the console.
 The [String.CompareTo](xref:System.String.CompareTo(System.String)) method compares the string that the current string object encapsulates to another string or object. The return values of this method are identical to the values returned by the `String.Compare` method in the previous table.
 
 > [!IMPORTANT]
-> The [String.CompareTo](xref:System.String.CompareTo(System.String)) method is primarily intended for use when ordering or sorting strings. You should not use the [String.CompareTo](xref:System.String.CompareTo(System.String)) method to test for equality (that is, to explicitly look for a return value of 0 with no regard for whether one string is less than or greater than the other). Instead, to determine whether two strings are equal, use the [String.Equals(String, String, StringComparison)](xref:System.String.Equals(System.String, System.String, System.StringComparison)) method.
+> The [String.CompareTo](xref:System.String.CompareTo(System.String)) method is primarily intended for use when ordering or sorting strings. You should not use the [String.CompareTo](xref:System.String.CompareTo(System.String)) method to test for equality (that is, to explicitly look for a return value of 0 with no regard for whether one string is less than or greater than the other). Instead, to determine whether two strings are equal, use the [String.Equals(String, String, StringComparison)](xref:System.String.Equals(System.String,System.String,System.StringComparison)) method.
 
 The following example uses the `String.CompareTo` method to compare the `string1` object to the `string2` object.
 
@@ -180,7 +180,7 @@ Console.WriteLine(string1.IndexOf("l"))
 
 This example displays `2` to the console.
 
-The [String.LastIndexOf](System.String.LastIndexOf(System.Char)) method is similar to the `String.IndexOf` method except that it returns the position of the last occurrence of a particular character within a string. It is case-sensitive and uses a zero-based index. 
+The [String.LastIndexOf](xref:System.String.LastIndexOf(System.Char)) method is similar to the `String.IndexOf` method except that it returns the position of the last occurrence of a particular character within a string. It is case-sensitive and uses a zero-based index. 
 
 The following example uses the `LastIndexOf` method to search for the last occurrence of the '`l`' character in a string.
 

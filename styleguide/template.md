@@ -137,8 +137,8 @@ For more information about using this notation, see [Using cross reference](http
 > Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to search for it in this repo: [docascode/coreapi](https://github.com/docascode/coreapi). We're working on having a better system in the future.
 
 When the UID contains the special characters \` or \#, the UID value needs to be HTML encoded as %60 and %23 respectively as in the following examples:
-- Example: `@System.Threading.Tasks.Task%601`
-- Example: `@System.Exception.%23ctor`
+- Example: @System.Threading.Tasks.Task\`1 becomes `@System.Threading.Tasks.Task%601`
+- Example: @System.Exception.\#ctor becomes `@System.Exception.%23ctor`
 
 ## Lists
 

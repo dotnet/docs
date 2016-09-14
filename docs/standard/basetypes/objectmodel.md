@@ -214,7 +214,7 @@ End Module
 
 ### Replacing a Matched Substring
 
-The [Regex.Replace](xref:System.Text.RegularExpressions.Regex.Replace(System.String, System.String)) method replaces each substring that matches the regular expression pattern with a specified string or regular expression pattern, and returns the entire input string with replacements. For example, the following code adds a U.S. currency symbol before a decimal number in a string.
+The [Regex.Replace](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String)) method replaces each substring that matches the regular expression pattern with a specified string or regular expression pattern, and returns the entire input string with replacements. For example, the following code adds a U.S. currency symbol before a decimal number in a string.
 
 ```csharp
 using System;
@@ -1111,5 +1111,5 @@ Pattern | Description
 
 [.NET regular expressions](regularexpressions.md)
 
-[Regular expression language - quick reference](.quickref.md)
+[Regular expression language - quick reference](quickref.md)
 

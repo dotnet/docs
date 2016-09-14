@@ -26,7 +26,7 @@ You can add leading zeros to an integer by using the "D" [standard numeric forma
     
     * To display the integer as a hexadecimal value, call its `ToString(String)` method and pass the string "X*n*" as the value of the format parameter, where *n* represents the minimum length of the string.
     
-  You can also use the format string in a method, such as [Console.WriteLine](xref:System.Console.WriteLine) or [String.Format](xref:System.String.Format(System.IFormatProvider, System.String, System.Object)), that uses [composite formatting](compositeformat.md).  
+  You can also use the format string in a method, such as [Console.WriteLine](xref:System.Console.WriteLine) or [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)), that uses [composite formatting](compositeformat.md).  
   
 The following example formats several integer values with leading zeros so that the total length of the formatted number is at least eight characters.
 

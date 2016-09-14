@@ -33,7 +33,7 @@ RegexOptions member | Inline character | Effect
 
 You can specify options for regular expressions in one of three ways:
 
-* In the *options* parameter of a [System.Text.RegularExpressions.Regex](xref:System.Text.RegularExpressions.Regex) class constructor such as [Regex.Regex(String, RegexOptions)](xref:System.Text.RegularExpressions.Regex.#ctor(System.String,System.Text.RegularExpressions.RegexOptions)) or static (Shared in Visual Basic) pattern-matching method, such as  [Regex.Match(String, String, RegexOptions)](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions)). The *options* parameter is a bitwise OR combination of [System.Text.RegularExpressions.RegexOptions](xref:System.Text.RegularExpressions.RegexOptions) enumerated values. 
+* In the *options* parameter of a [System.Text.RegularExpressions.Regex](xref:System.Text.RegularExpressions.Regex) class constructor such as [Regex.Regex(String, RegexOptions)](xref:System.Text.RegularExpressions.Regex.%23ctor(System.String,System.Text.RegularExpressions.RegexOptions)) or static (Shared in Visual Basic) pattern-matching method, such as  [Regex.Match(String, String, RegexOptions)](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions)). The *options* parameter is a bitwise OR combination of [System.Text.RegularExpressions.RegexOptions](xref:System.Text.RegularExpressions.RegexOptions) enumerated values. 
 
   When options are supplied to a [Regex](xref:System.Text.RegularExpressions.Regex) instance by using the *options* parameter of a class constructor, the options are are assigned to the [System.Text.RegularExpressions.RegexOptions](xref:System.Text.RegularExpressions.RegexOptions) property. However, the [System.Text.RegularExpressions.RegexOptions](xref:System.Text.RegularExpressions.RegexOptions) property does not reflect inline options in the regular expression pattern itself. 
 
@@ -64,7 +64,7 @@ You can specify options for regular expressions in one of three ways:
   '    'decidedly ' found at index 9.  
   ```
 
-* By applying inline options in a regular expression pattern with the syntax **(?imnsx-imnsx)**. The option applies to the pattern from the point that the option is defined to either the end of the pattern or to the point at which the option is undefined by another inline option. Note that the [System.Text.RegularExpressions.RegexOptions](xref:System.Text.RegularExpressions.RegexOptions) property of a [Regex](xref:System.Text.RegularExpressions.Regex) instance does not reflect these inline options. For more information, see the [Miscellaneous Constructs in Regular Expressions](../miscellaneous.md) topic.
+* By applying inline options in a regular expression pattern with the syntax **(?imnsx-imnsx)**. The option applies to the pattern from the point that the option is defined to either the end of the pattern or to the point at which the option is undefined by another inline option. Note that the [System.Text.RegularExpressions.RegexOptions](xref:System.Text.RegularExpressions.RegexOptions) property of a [Regex](xref:System.Text.RegularExpressions.Regex) instance does not reflect these inline options. For more information, see the [Miscellaneous Constructs in Regular Expressions](miscellaneous.md) topic.
 
   The following example provides an illustration. It uses inline options to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".
 
@@ -91,7 +91,7 @@ You can specify options for regular expressions in one of three ways:
   '    'decidedly ' found at index 9.  
   ```
 
-* By applying inline options in a particular grouping construct in a regular expression pattern with the syntax **(?imnsx-imnsx:**_subexpression_**)**. No sign before a set of options turns the set on; a minus sign before a set of options turns the set off. (**?** is a fixed part of the language construct's syntax that is required whether options are enabled or disabled.) The option applies only to that group. For more information, see [Grouping Constructs in Regular Expressions](../grouping.md).
+* By applying inline options in a particular grouping construct in a regular expression pattern with the syntax **(?imnsx-imnsx:**_subexpression_**)**. No sign before a set of options turns the set on; a minus sign before a set of options turns the set off. (**?** is a fixed part of the language construct's syntax that is required whether options are enabled or disabled.) The option applies only to that group. For more information, see [Grouping Constructs in Regular Expressions](grouping.md).
 
   The following example provides an illustration. It uses inline options in a grouping construct to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".
 
@@ -1272,7 +1272,7 @@ End Module
 '       'builder ' found at position 0.
 ```
 
-Also note that the lookahead assertion (the **(?**=_subexpression_**)** language element) and the lookbehind assertion (the **(?<**=_subexpression_**)** language element) do not change direction. The lookahead assertions look to the right; the lookbehind assertions look to the left. For example, the regular expression `(?<=\d{1,2}\s)\w+,?\s\d{4}` uses the lookbehind assertion to test for a date that precedes a month name. The regular expression then matches the month and the year. For information on lookahead and lookbehind assertsions, see [Grouping Constructs in Regular Expressions](../grouping.md).
+Also note that the lookahead assertion (the **(?**=_subexpression_**)** language element) and the lookbehind assertion (the **(?<**=_subexpression_**)** language element) do not change direction. The lookahead assertions look to the right; the lookbehind assertions look to the left. For example, the regular expression `(?<=\d{1,2}\s)\w+,?\s\d{4}` uses the lookbehind assertion to test for a date that precedes a month name. The regular expression then matches the month and the year. For information on lookahead and lookbehind assertsions, see [Grouping Constructs in Regular Expressions](grouping.md).
 
 ```csharp
 using System;
@@ -1344,7 +1344,7 @@ The [RegexOptions.ECMAScript](xref:System.Text.RegularExpressions.RegexOptions.E
 
 The behavior of ECMAScript and canonical regular expressions differs in three areas: character class syntax, self-referencing capturing groups, and octal versus backreference interpretation. 
 
-* Character class syntax. Because canonical regular expressions support Unicode whereas ECMAScript does not, character classes in ECMAScript have a more limited syntax, and some character class language elements have a different meaning. For example, ECMAScript does not support language elements such as the Unicode category or block elements *\p* and **\P**. Similarly, the **\w** element, which matches a word character, is equivalent to the **[a-zA-Z_0-9]** character class when using ECMAScript and **[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]** when using canonical behavior. For more information, see [Character Classes in Regular Expressions](../classes.md).
+* Character class syntax. Because canonical regular expressions support Unicode whereas ECMAScript does not, character classes in ECMAScript have a more limited syntax, and some character class language elements have a different meaning. For example, ECMAScript does not support language elements such as the Unicode category or block elements *\p* and **\P**. Similarly, the **\w** element, which matches a word character, is equivalent to the **[a-zA-Z_0-9]** character class when using ECMAScript and **[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]** when using canonical behavior. For more information, see [Character Classes in Regular Expressions](classes.md).
 
   The following example illustrates the difference between canonical and ECMAScript pattern matching. It defines a regular expression, `\b(\w+\s*)+`, that matches words followed by white-space characters. The input consists of two strings, one that uses the Latin character set and the other that uses the Cyrillic character set. As the output shows, the call to the [Regex.IsMatch(String, String, RegexOptions)](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)) method that uses ECMAScript matching fails to match the Cyrillic words, whereas the method call that uses canonical matching does match these words. 
 
@@ -1606,7 +1606,7 @@ Thread.CurrentThread.CurrentCulture = defaultCulture
 ```
 
 > [!NOTE]
->   For more information about string comparisons that are case-sensitive and that use the invariant culture, see [Best Practices for Using Strings](../bestpractices.md).
+>   For more information about string comparisons that are case-sensitive and that use the invariant culture, see [Best Practices for Using Strings](bestpractices.md).
  
 Instead of using the case-insensitive comparisons of the current culture, you can specify the [RegexOptions.CultureInvariant](xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant) option to ignore cultural differences in language and to use the conventions of the invariant culture.
 
@@ -1657,5 +1657,5 @@ Thread.CurrentThread.CurrentCulture = defaultCulture
 
 ## See Also
 
-[Regular expression language - quick reference](../quickref.md)
+[Regular expression language - quick reference](quickref.md)
 

@@ -11,3 +11,22 @@ ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 8103c0a6-61d3-40dd-a3e9-2a32ba6a4c05
 ---
+
+# Parsing strings in .NET
+
+A parsing operation converts a string that represents a .NET base type into that base type. For example, a parsing operation is used to convert a string to a floating-point number or to a date and time value. The method most commonly used to perform a parsing operation is the `Parse` method. Because parsing is the reverse operation of formatting (which involves converting a base type into its string representation), many of the same rules and conventions apply. Just as formatting uses an object that implements the [IFormatProvider](xref:System.IFormatProvider) interface to provide culture-sensitive formatting information, parsing also uses an object that implements the [IFormatProvider](xref:System.IFormatProvider) interface to determine how to interpret a string representation. For more information, see [Formatting Types in .NET](formattingtypes.md).
+
+## In This Section
+
+[Parsing Numeric Strings in .NET](parsingnumeric.md) - Describes how to convert strings into .NET numeric types.
+
+[Parsing Date and Time Strings in .NET](parsingdatetime.md) - Describes how to convert strings into .NET `DateTime` types.
+
+[Parsing Other Strings in .NET](parsingother.md) - Describes how to convert strings into [Char](xref:System.Char), [Boolean](xref:System.Boolean), and [Enum](xref:System.Enum) types.
+
+[Formatting Types in .NET](formattingtypes.md) - Describes basic formatting concepts like format specifiers and format providers.
+
+[Type Conversion in .NET](conversion.md) - Describes how to convert types.
+
+[Working with Base Types in .NET](basetypes.md) - Describes common operations that you can perform on .NET base types.
+

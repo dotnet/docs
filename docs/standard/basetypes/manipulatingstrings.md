@@ -22,7 +22,7 @@ ms.assetid: da3c277e-b06e-48bd-ae1f-1e7e4240b93e
 
 [Regular Expressions](regularexpressions.md) - Provides detailed information about .NET regular expressions, including language elements, regular expression behavior, and examples.
 
-[Basic String Operations](basicstringoperations.md) - Describes string operations provided by the [System.String](@System.String) and [System.Text.StringBuilder](@System.Text.StringBuilder) classes, including creating new strings from arrays of bytes, comparing string values, and modifying existing strings.
+[Basic String Operations](basicstringoperations.md) - Describes string operations provided by the @System.String and @System.Text.StringBuilder classes, including creating new strings from arrays of bytes, comparing string values, and modifying existing strings.
 
 [Character Encoding in .NET](characterencoding.md) - Describes how to encode and decode character formats such as Unicode.
 

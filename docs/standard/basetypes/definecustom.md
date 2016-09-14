@@ -28,7 +28,7 @@ In some cases (such as when an application must display a formatted account numb
 
 1. Define a class that implements the [IFormatProvider](xref:System.IFormatProvider) and [ICustomFormatter](xref:System.ICustomFormatter) interfaces. 
 
-2. Implement the [IFormatProvider.GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) method. [GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) is a callback method that the formatting method (such as the [String.Format(IFormatProvider, String, Object[])](xref:System.String.Format(System.IFormatProvider, System.String, System.Object)) method) invokes to retrieve the object that is actually responsible for performing custom formatting. A typical implementation of [GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) does the following:
+2. Implement the [IFormatProvider.GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) method. [GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) is a callback method that the formatting method (such as the [String.Format(IFormatProvider,String,Object[])](xref:System.String.Format(System.IFormatProvider, System.String, System.Object)) method) invokes to retrieve the object that is actually responsible for performing custom formatting. A typical implementation of [GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) does the following:
 
     a. Determines whether the [Type](xref:System.Type) object passed as a method parameter represents an [ICustomFormatter](xref:System.ICustomFormatter) interface.
     
@@ -36,7 +36,7 @@ In some cases (such as when an application must display a formatted account numb
     
     c. If the parameter does not represent the [ICustomFormatter](xref:System.ICustomFormatter) interface, [GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) returns `null`.
     
-3. Implement the [ICustomFormatter.Format](xref:System.ICustomFormatter.Format(System.String, System.Object, System.IFormatProvider)) method. This method is called by the [String.Format(IFormatProvider, String, Object[])](xref:System.String.Format(System.IFormatProvider, System.String, System.Object)) method and is responsible for returning the string representation of a number. Implementing the method typically involves the following:
+3. Implement the [ICustomFormatter.Format](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)) method. This method is called by the [String.Format(IFormatProvider,String,Object[])](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) method and is responsible for returning the string representation of a number. Implementing the method typically involves the following:
 
     a. Optionally, make sure that the method is legitimately intended to provide formatting services by examining the *provider* parameter. For formatting objects that implement both [IFormatProvider](xref:System.IFormatProvider) and [ICustomFormatter](xref:System.ICustomFormatter), this involves testing the *provider* parameter for equality with the current formatting object.
     
@@ -50,7 +50,7 @@ In some cases (such as when an application must display a formatted account numb
 
 1. Create a new instance of the custom formatting class.
 
-2. Call the [String.Format(IFormatProvider, String, Object[])](xref:System.String.Format(System.IFormatProvider, System.String, System.Object)) formatting method, passing it the custom formatting object, the formatting specifier (or [String.Empty](xref:System.String.Empty), if one is not used), and the numeric value to be formatted. 
+2. Call the [String.Format(IFormatProvider,String,Object[])](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) formatting method, passing it the custom formatting object, the formatting specifier (or [String.Empty](xref:System.String.Empty), if one is not used), and the numeric value to be formatted. 
 
 ## Example
 
@@ -196,9 +196,9 @@ Public Module TestTelephoneFormatter
 End Module
 ```
 
-The custom numeric format provider can be used only with the [String.Format(IFormatProvider, String, Object[])](xref:System.StringSystem.String.Format(System.IFormatProvider, System.String, System.Object)) method. The other overloads of numeric formatting methods (such as `ToString`) that have a parameter of type [IFormatProvider](xref:System.IFormatProvider) all pass the [IFormatProvider.GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) implementation a [Type](xref:System.Type) object that represents the [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) type. In return, they expect the method to return a [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) object. If it does not, the custom numeric format provider is ignored, and the [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) object for the current culture is used in its place. In the example, the `TelephoneFormatter.GetFormat` method handles the possibility that it may be inappropriately passed to a numeric formatting method by examining the method parameter and returning *null* if it represents a type other than [ICustomFormatter](xref:System.ICustomFormatter).
+The custom numeric format provider can be used only with the [String.Format(IFormatProvider,String,Object[])](xref:System.StringSystem.String.Format(System.IFormatProvider,System.String,System.Object)) method. The other overloads of numeric formatting methods (such as `ToString`) that have a parameter of type [IFormatProvider](xref:System.IFormatProvider) all pass the [IFormatProvider.GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) implementation a [Type](xref:System.Type) object that represents the [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) type. In return, they expect the method to return a [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) object. If it does not, the custom numeric format provider is ignored, and the [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) object for the current culture is used in its place. In the example, the `TelephoneFormatter.GetFormat` method handles the possibility that it may be inappropriately passed to a numeric formatting method by examining the method parameter and returning *null* if it represents a type other than [ICustomFormatter](xref:System.ICustomFormatter).
 
-If a custom numeric format provider supports a set of format specifiers, make sure you provide a default behavior if no format specifier is supplied in the format item used in the S[String.Format(IFormatProvider, String, Object[])](xref:System.StringSystem.String.Format(System.IFormatProvider, System.String, System.Object)) method call. In the example, "N" is the default format specifier. This allows for a number to be converted to a formatted telephone number by providing an explicit format specifier. The following example illustrates such a method call.
+If a custom numeric format provider supports a set of format specifiers, make sure you provide a default behavior if no format specifier is supplied in the format item used in the S[String.Format(IFormatProvider,String,Object[])](xref:System.StringSystem.String.Format(System.IFormatProvider,System.String,System.Object)) method call. In the example, "N" is the default format specifier. This allows for a number to be converted to a formatted telephone number by providing an explicit format specifier. The following example illustrates such a method call.
 
 ```csharp
 Console.WriteLine(String.Format(new TelephoneFormatter(), "{0:N}", 4257884748));
@@ -218,7 +218,7 @@ Console.WriteLine(String.Format(new TelephoneFormatter(), "{0}", 4257884748));
 Console.WriteLine(String.Format(New TelephoneFormatter, "{0}", 4257884748))
 ```
 
-If no default format specifier is defined, your implementation of the [ICustomFormatter.Format](xref:System.ICustomFormatter.Format(System.String, System.Object, System.IFormatProvider)) method should include code such as the following so that .NET can provide formatting that your code does not support.
+If no default format specifier is defined, your implementation of the [ICustomFormatter.Format](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)) method should include code such as the following so that .NET can provide formatting that your code does not support.
 
 ```csharp
 if (arg is IFormattable) 
@@ -235,7 +235,7 @@ ElseIf arg IsNot Nothing Then
 End If
 ```
 
-In the case of this example, the method that implements [ICustomFormatter.Format](xref:System.ICustomFormatter.Format(System.String, System.Object, System.IFormatProvider)) is intended to serve as a callback method for the [String.Format(IFormatProvider, String, Object[])](xref:System.StringSystem.String.Format(System.IFormatProvider, System.String, System.Object)) method. Therefore, it examines the *formatProvider* parameter to determine whether it contains a reference to the current `TelephoneFormatter` object. However, the method can also be called directly from code. In that case, you can use the *formatProvider *parameter to provide a [CultureInfo](xref:System.Globalization.CultureInfo) or [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) object that supplies culture-specific formatting information.
+In the case of this example, the method that implements [ICustomFormatter.Format](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)) is intended to serve as a callback method for the [String.Format(IFormatProvider,String,Object[])](xref:System.StringSystem.String.Format(System.IFormatProvider,System.String,System.Object)) method. Therefore, it examines the *formatProvider* parameter to determine whether it contains a reference to the current `TelephoneFormatter` object. However, the method can also be called directly from code. In that case, you can use the *formatProvider *parameter to provide a [CultureInfo](xref:System.Globalization.CultureInfo) or [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) object that supplies culture-specific formatting information.
 
 ## See Also
 

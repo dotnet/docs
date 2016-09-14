@@ -17,11 +17,11 @@ ms.assetid: 4d879f69-f889-4d3f-a781-75194e143400
 The 6.0 release of C# contained many features that improves
 productivity for developers. Features in this release include:
 
+* [Readonly Auto properties](#readonly-auto-properties)
 * [Auto Property Initializers](#auto-property-initializers)
-* Getter-only Auto properties
-* Expression Bodied function members
-* using static
-* Null - conditional operators
+* [Expression Bodied function members](#Expression-bodied-function-members)
+* [using static](#using-static)
+* [Null - conditional operators](#null-conditional-operators)
 * String Interpolation
 * nameof Expressions
 * index initializers
@@ -46,7 +46,7 @@ explore each feature in more detail.
 The syntax for auto-properties made it very easy to create properties
 that had simple get and set methods:
 
-[!code-csharp[ClassicAutoProperty](../../samples/snippets/csharp/new-in-6/oldcode.cs#L5-L5)]
+[!code-csharp[ClassicAutoProperty](../../samples/snippets/csharp/new-in-6/oldcode.cs#L7-L8)]
 
 However, this simple syntax limited the kinds of designs you could support using
 auto properties. C# 6 improves the auto properties capabilities so that ou can use
@@ -56,50 +56,31 @@ the backing field by hand, and manipulating that backing field less often.
 The new syntax addresses scenarios for read only properties, and for initializing
 the variable storage behind an auto-property.
 
-### Auto Property Initializers
+### Readonly auto-properties
 
-One common scenario is to initialize the value of the property. This is quite
-common for properties that expose collections:
+***Readonly auto-properties*** provide a more concise syntax to create
+immutable types. The closest you could get to immutable types
+in earlier versions of C# was to declare private setters:
 
-```csharp
-public IList<int> RecordedValues {get; private set; } = new List<int>();
-```
+[!code-csharp[ClassicReadOnlyAutoProperty](../../samples/snippets/csharp/new-in-6/oldcode.cs#L16-L17)]
+ 
+Using this syntax, the compiler doesn't ensure that the type really is immutable. It only
+enforces that the `FirstName` and `LastName` properties are not modified from any
+code outisde the class.
 
-You no longer need to explicitly declare a backing field in order to
-initialize a property's value when an object is created. Nor do you need
-to write a constructor and write an assignment statement. Simply write
-the initial value when you declare the property.
+Readonly auto-properties enable true readonly behavior. You declare the auto-property
+with only a get accessor:
 
-This syntax works for both read write and read only properties.
+[!code-csharp[ReadOnlyAutoProperty](../../samples/snippets/csharp/new-in-6/newcode.cs#L19-L20)]
 
-```csharp
-// Does this compile? It's not a constant.
-public DateTime LastModified {get; set; } = DateTime.Now; 
-```
+The `FirstName` and `LastName` properties can be set only in the body of a constructor:
 
-### Getter only auto-properties
-
-Getter only auto-properties makes it easier to create read only properties
-using auto property syntax. You declare an auto-property with only a get
-accessor:
-
-```csharp
-public string LastName { get;}
-```
-
-The `LastName` property can be set only in the body of a constructor:
-
-```csharp
-public Person(string lastName)
-{
-    this.LastName = lastName;
-}
-```
+[!code-csharp[ReadOnlyAutoProperty](../../samples/snippets/csharp/new-in-6/newcode.cs#L11-L20)]
 
 Trying to set `LastName` in another method generates a `CS0200` compilation error:
 
 ```csharp
-public class Person
+public class Student
 {
     public string LastName { get;  }
 
@@ -111,56 +92,82 @@ public class Person
 }
 ```
 
-Before this feture, you needed to create a private setter, compromising your design. Or,
-forego using auto-properties and write the field definition by hand.
+This features enables true language support for creating immutable types and using
+the more concise and convenient auto-property syntax.
 
-## Expression Bodied function members
+### Auto Property Initializers
+
+***Auto Property Initializers*** let you declare the initial value for
+an auto property as part of the property declaration.  In earlier versions,
+these properties would need to have setters and a class author would need
+to use that setter to initialize the data storage used by the backing
+field. Consider this class for a student that contains the name and a
+list of the student's grades:
+
+[!code-csharp[Construction](../../samples/snippets/csharp/new-in-6/oldcode.cs#L5-L15)]
+ 
+As this class grows, you may include other constructors. Each constructor
+needs to initialize this field, or you'll introduce errors.
+
+C# 6 enables you to assign an initial value for the storage used by an
+auto property in the auto property declaration:
+
+[!code-csharp[Initialization](../../samples/snippets/csharp/new-in-6/newcode.cs#L21-L21)]
+
+The `grades` member is initialized where it is declared. That makes it
+easier to perform the initialization exactly once. The initialization
+is part of the property declaration, making it easier to equate the
+storage allocation with public interface for `Student` objects.
+
+Property Initializers can be used with read / write properties as well
+as read only properties, as shown below.
+
+[!code-csharp[ReadWriteInitialization](../../samples/snippets/csharp/new-in-6/newcode.cs#L22-L22)]
+
+## Expression bodied function members
 
 Many of the members that we write consist of single return statements.
 Instead of all that ceremony, write an ***expression bodied member***
 instead. For example, an override of `ToString()` is often a great candidate:
 
-```csharp
-public override string ToString() => @"{LastName}, {FirstName}";
-```
+[!code-csharp[ToStringExpressionMember](../../samples/snippets/csharp/new-in-6/newcode.cs#L25-L25)]
 
 You can also use expression bodied members in read only properties as well:
 
-```csharp
-public string FullName => @"{FirstName} {LastName}";
-```
+[!code-csharp[FullNameExpressionMember](../../samples/snippets/csharp/new-in-6/newcode.cs#L23-L23)]
 
 ## Using static
 
+The ***using static*** enhancement enables you to import the static methods
+of a single class. Previously, the `using` statement imported all types
+from all classes in a namespace. 
+
 Often we use a class and its static methods throughout our code. Repeatedly
-typing the class name can obscure the meaning of your code. A common example
-is when you write classes that perform many numeric calculations. Your code
-will be littered with `Math.Sin`, `Math.Sqrt` and other calls to different
-methods in the `Math` class. The new `using static` syntax can make these
+typing the class name can obscure the meaning of your code. A common
+example is when you write classes that perform many numeric calculations.
+Your code will be littered with `Math.Sin`, `Math.Sqrt` and other calls
+to different methods in the `Math` class. The new `using static` syntax can make these
 classes much cleaner to read. You specify the class you're using:
 
-```csharp
-using static System.Math;
-```
+[!code-csharp[UsingStaticMath](../../samples/snippets/csharp/new-in-6/newcode.cs#L1-L1)]
 
 And now, you can use any static method in the `Math` class without
-qualifying the `Math` class.
+qualifying the `Math` class. The `Math` class does not contain any
+instance methods. You can also use `using static` to import a
+class' static methods for a class that has both static
+and instance methods. One of the most useful examples 
+`System.String`:
 
-***Need an example here***
-
-The `Math` class contains only static methods, so every method
-can now be accessed without qualifying the name using the `Math`
-class name. You can reference classes with both instance and
-static methods using `static using.` The `String` class has many
-static methods. You can include it in a static using:
-
-```csharp
-using static System.String;
-```
+[!code-csharp[UsingStatic](../../samples/snippets/csharp/new-in-6/newcode.cs#L2-L2)]
 
 > [!NOTE]
 > You must use the fully qualified class name, `System.String`. 
 > You can't use the `string` keyword in a static using statement. 
+
+You can now call static methods defined in the `String` class without
+qualifying those methods as members of that class:
+
+[!code-csharp[UsingStaticString](../../samples/snippets/csharp/new-in-6/newcode.cs#L13-L14)]
 
 The `static using` feature and extension methods interact in
 interesting ways, and the language design included some rules
@@ -169,29 +176,39 @@ minimize any chances of breaking changes in existing codebases,
 including yours.
 
 Extension methods are only in scope when called using the
-extension method syntax, not when called as a static method.
+extension method invocation syntax, not when called as a static method.
+You'll often see this in LINQ queries. You can import the LINQ pattern
+by importing `System.Linq.Enumerable`. 
 
-NOTE TO SELF: Check the spec for correct terminology on calling
-style.
+[!code-csharp[UsingStaticLinq](../../samples/snippets/csharp/new-in-6/newcode.cs#L5-L5)]
 
-For example:
+This imports all the methods in the `System.Linq.Enumerable` namespace.
+However, the extension methods are only in scope when called as extension
+methods. They are not in scope if they are called as though they are static
+methods:
 
-```csharp
-// LINQ query example using
-// static syntax and extension method syntax.
- 
-```
+[!code-csharp[UsingStaticLinq](../../samples/snippets/csharp/new-in-6/newcode.cs#L27-L32)]
+
+This decision is because extension methods are typically called using
+extension method invocation expressions. In the rare case where they are
+called using the static method call syntax it is to resolve ambiguity.
+Requiring the class name as part of the invocation seems wise.
+
+There's one last feature of `static using`. The `static using` directive
+also imports any nested types. That enables you to reference any nested
+types without qualification.
 
 ## Null-conditional operators
 
-Null values complicate your code. You need to check every access
-of a variable to ensure it isn't null. The null conditional operator
-makes those checks much easier.
+Null values complicate code. You need to check every access
+of variables to ensure you are not dereferencing `null`. The
+***null conditional operator*** makes those checks much easier
+and fluid.
 
 Simply replace the member access `.` with `?.`:
 
 ```csharp
-var first = person?.FirstName; 
+[!code-csharp[NullConditional](../../samples/snippets/csharp/new-in-6/program.cs#L14-L14)]
 ```
 
 In the above example, the variable `first` is assigned `null` if the person object
@@ -207,7 +224,7 @@ You can often use this construct with the ***null coalescing*** operator to assi
 default values when one of the properties are null:
 
 ```csharp
-var first = person?.FirstName ?? "Unspecified";
+[!code-csharp[NullCoalescing](../../samples/snippets/csharp/new-in-6/program.cs#L16-L16)]
 ```
 
 The right hand side operand of the `?.` operator is not limited to properties or fields.

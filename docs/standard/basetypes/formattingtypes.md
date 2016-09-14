@@ -712,8 +712,8 @@ Method | Type of *formatType* parameter
 ------ | ------------------------------
 `ToString` method of numeric types | [System.Globalization.NumberFormatInfo](xref:System.Globalization.NumberFormatInfo)
 `ToString` method of date and time types | [System.Globalization.DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo)
-[String.Format](xref:System.String.Format(System.IFormatProvider, System.String, System.Object)) | [System.ICustomFormatter](xref:System.ICustomFormatter)
-[StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider, System.String, System.Object)) | [System.ICustomFormatter](xref:System.ICustomFormatter)
+[String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) | [System.ICustomFormatter](xref:System.ICustomFormatter)
+[StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)) | [System.ICustomFormatter](xref:System.ICustomFormatter)
 
 .NET provides three classes that implement [IFormatProvider](xref:System.IFormatProvider): 
 
@@ -979,11 +979,11 @@ End Module
 
 ## The IFormattable Interface
 
-Typically, types that overload the `ToString` method with a format string and an [IFormatProvider](xref:System.IFormatProvider) parameter also implement the [IFormattable](xref:System.IFormattable) interface. This interface has a single member, [IFormattable.ToString(String, IFormatProvider)](xref:System.IFormattable.ToString(System.String, System.IFormatProvider)), that includes both a format string and a format provider as parameters.
+Typically, types that overload the `ToString` method with a format string and an [IFormatProvider](xref:System.IFormatProvider) parameter also implement the [IFormattable](xref:System.IFormattable) interface. This interface has a single member, [IFormattable.ToString(String, IFormatProvider)](xref:System.IFormattable.ToString(System.String,System.IFormatProvider)), that includes both a format string and a format provider as parameters.
 
 Implementing the [IFormattable](xref:System.IFormattable) interface for your application-defined class offers two advantages: 
 
-* Support for string conversion by the [Convert](xref:System.Convert) class. Calls to the [Convert.ToString(Object)](xref:System.Convert.ToString(System.Object)) and [Convert.ToString(Object, IFormatProvider)](xref:System.Convert.ToString(System.Object, System.IFormatProvider)) methods call your [IFormattable](xref:System.IFormattable) implementation automatically.
+* Support for string conversion by the [Convert](xref:System.Convert) class. Calls to the [Convert.ToString(Object)](xref:System.Convert.ToString(System.Object)) and [Convert.ToString(Object, IFormatProvider)](xref:System.Convert.ToString(System.Object,System.IFormatProvider)) methods call your [IFormattable](xref:System.IFormattable) implementation automatically.
 
 * Support for composite formatting. If a format item that includes a format string is used to format your custom type, the Common Language Runtime automatically calls your [IFormattable](xref:System.IFormattable) implementation and passes it the format string. For more information about composite formatting with methods such as `String.Format` or `Console.WriteLine`, see the [Composite Formatting](#Composite-Formatting) section.
 
@@ -1118,7 +1118,7 @@ Public Class Temperature : Implements IFormattable
 End Class
 ```
 
-The following example instantiates a `Temperature` object. It then calls the [ToString](xref:System.Convert.ToString(System.Object, System.IFormatProvider)) method and uses several composite format strings to obtain different string representations of a `Temperature` object. Each of these method calls, in turn, calls the [IFormattable](xref:System.IFormattable) implementation of the `Temperature` class.
+The following example instantiates a `Temperature` object. It then calls the [ToString](xref:System.Convert.ToString(System.Object,System.IFormatProvider)) method and uses several composite format strings to obtain different string representations of a `Temperature` object. Each of these method calls, in turn, calls the [IFormattable](xref:System.IFormattable) implementation of the `Temperature` class.
 
 ```csharp
 public class Example
@@ -1231,9 +1231,9 @@ For more information about composite formatting, see [Composite Formatting](comp
 
 ## Custom Formatting with ICustomFormatter
 
-Two composite formatting methods, [String.Format(IFormatProvider, String, Object[])](xref:System.String.Format(System.IFormatProvider, System,String, System.Object)) and [StringBuilder.AppendFormat(IFormatProvider, String, Object[])](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider, System.String, System.Object)), include a format provider parameter that supports custom formatting. When either of these formatting methods is called, it passes a [Type](xref:System.Type) object that represents an [ICustomFormatter](xref:System.ICustomFormatter) interface to the format provider’s `GetFormat` method. The `GetFormat` method is then responsible for returning the [ICustomFormatter](xref:System.ICustomFormatter) implementation that provides custom formatting.
+Two composite formatting methods, [String.Format(IFormatProvider, String, Object[])](xref:System.String.Format(System.IFormatProvider,System,String,System.Object)) and [StringBuilder.AppendFormat(IFormatProvider, String, Object[])](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)), include a format provider parameter that supports custom formatting. When either of these formatting methods is called, it passes a [Type](xref:System.Type) object that represents an [ICustomFormatter](xref:System.ICustomFormatter) interface to the format provider’s `GetFormat` method. The `GetFormat` method is then responsible for returning the [ICustomFormatter](xref:System.ICustomFormatter) implementation that provides custom formatting.
 
-The [ICustomFormatter](xref:System.ICustomFormatter) interface has a single method, [Format(String, Object, IFormatProvider)](xref:System.ICustomFormatter.Format(System.String, System.Object, System.IFormatProvider)), that is called automatically by a composite formatting method, once for each format item in a composite format string. The [Format(String, Object, IFormatProvider)](xref:System.ICustomFormatter.Format(System.String, System.Object, System.IFormatProvider)) method has three parameters: a format string, which represents the *formatString* argument in a format item, an object to format, and an [IFormatProvider](xref:System.IFormatProvider) object that provides formatting services. Typically, the class that implements [ICustomFormatter](xref:System.ICustomFormatter) also implements [IFormatProvider](xref:System.IFormatProvider), so this last parameter is a reference to the custom formatting class itself. The method returns a custom formatted string representation of the object to be formatted. If the method cannot format the object, it should return a null reference.
+The [ICustomFormatter](xref:System.ICustomFormatter) interface has a single method, [Format(String, Object, IFormatProvider)](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)), that is called automatically by a composite formatting method, once for each format item in a composite format string. The [Format(String, Object, IFormatProvider)](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)) method has three parameters: a format string, which represents the *formatString* argument in a format item, an object to format, and an [IFormatProvider](xref:System.IFormatProvider) object that provides formatting services. Typically, the class that implements [ICustomFormatter](xref:System.ICustomFormatter) also implements [IFormatProvider](xref:System.IFormatProvider), so this last parameter is a reference to the custom formatting class itself. The method returns a custom formatted string representation of the object to be formatted. If the method cannot format the object, it should return a null reference.
 
 The following example provides an [ICustomFormatter](xref:System.ICustomFormatter) implementation named `ByteByByteFormatter` that displays integer values as a sequence of two-digit hexadecimal values followed by a space.
 
@@ -1332,7 +1332,7 @@ Public Class ByteByByteFormatter : Implements IFormatProvider, ICustomFormatter
 End Class
 ```
 
-The following example uses the `ByteByByteFormatter` class to format integer values. Note that the [ICustomFormatter.Format](xref:System.ICustomFormatter.Format(System.String, System.Object, System.IFormatProvider)) method is called more than once in the second [String.Format(IFormatProvider, String, Object[])](xref:System.ICustomFormatter.Format(System.String, System.Object, System.IFormatProvider)) method call, and that the default [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) provider is used in the third method call because the `.ByteByByteFormatter.Format` method does not recognize the "N0" format string and returns a null reference.
+The following example uses the `ByteByByteFormatter` class to format integer values. Note that the [ICustomFormatter.Format](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)) method is called more than once in the second [String.Format(IFormatProvider, String, Object[])](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)) method call, and that the default [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) provider is used in the third method call because the `.ByteByByteFormatter.Format` method does not recognize the "N0" format string and returns a null reference.
 
 ```csharp
 public class Example

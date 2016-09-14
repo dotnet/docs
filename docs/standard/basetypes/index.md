@@ -27,5 +27,3 @@ This section describes .NET base type operations, including formatting, conversi
 [Parsing Strings](parsingstrings.md) - Describes how to convert strings into types.
 
 [Common Type System](commontypesystem.md) - Describes types used in .NET.
-
-[Working with Dates](datetime/index.md) - Describes how to work with time zones and time zone conversions in time zone-aware applications.

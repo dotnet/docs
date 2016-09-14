@@ -223,7 +223,7 @@ Each value in the parameter list that corresponds to a format item is converted 
 
 2. If an [ICustomFormatter](xref:System.ICustomFormatter) implementation is available, the runtime calls its [Format](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)) method. It passes the method the format item's *formatString* value, if one is present, or `null` if it is not, along with the [IFormatProvider](xref:System.IFormatProvider) implementation. 
 
-3. If the value implements the [IFormattable](xref:System.IFormattable) interface, the interface's [ToString(String,IFormatProvider)](xref:System.IFormattable.ToString(System.String, System.IFormatProvider)) method is called. The method is passed the *formatString* value, if one is present in the format item, or `null` if it is not. The [IFormatProvider](xref:System.IFormatProvider) argument is determined as follows:
+3. If the value implements the [IFormattable](xref:System.IFormattable) interface, the interface's [ToString(String,IFormatProvider)](xref:System.IFormattable.ToString(System.String,System.IFormatProvider)) method is called. The method is passed the *formatString* value, if one is present in the format item, or `null` if it is not. The [IFormatProvider](xref:System.IFormatProvider) argument is determined as follows:
 
     *   For a numeric value, if a composite formatting method with a non-null [IFormatProvider](xref:System.IFormatProvider) argument is called, the runtime requests a [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) object from its [IFormatProvider.GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) method. If it is unable to supply one, if the value of the argument is `null`, or if the composite formatting method does not have an [IFormatProvider](xref:System.IFormatProvider) parameter, the [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo object for the current thread culture is used. 
     
@@ -251,7 +251,7 @@ Dim FormatString2 As String = DateTime.Now.ToString("dddd MMMM")
 
 Assuming that the current day is a Thursday in May, the value of both strings in the preceding example is `Thursday May` in the U.S. English culture.
 
-[Console.WriteLine](xref:System.Console.WriteLine) exposes the same functionality as [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)). The only difference between the two methods is that [String.Format](xref:System.String.Format(System.IFormatProvider,System.Object)) returns its result as a string, while [Console.WriteLine](xref:System.Console.WriteLine) writes the result to the output stream associated with the [Console](xref:System.Console) object. The following example uses the [Console.WriteLine](xref:System.Console.WriteLine) method to format the value of `MyInt` to a currency value.
+[Console.WriteLine](xref:System.Console.WriteLine) exposes the same functionality as [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)). The only difference between the two methods is that [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) returns its result as a string, while [Console.WriteLine](xref:System.Console.WriteLine) writes the result to the output stream associated with the [Console](xref:System.Console) object. The following example uses the [Console.WriteLine](xref:System.Console.WriteLine) method to format the value of `MyInt` to a currency value.
 
 ```csharp
 int MyInt = 100;

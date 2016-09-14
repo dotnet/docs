@@ -14,7 +14,7 @@ ms.assetid: 88a8f8b9-f5c9-4503-b968-84468b52bb8e
 
 # How to: extract the day of the week from a specific date
 
-.NET makes it easy to determine the ordinal day of the week for a particular date, and to display the localized weekday name for a particular date. An enumerated value that indicates the day of the week corresponding to a particular date is available from the [Datetime.DayOfWeek](xref:System.DateTime.DayOfWeek) or [DateTimeOffset.DayOfWeek](xref:System.DateTimeOffset.DayOfWeek) property. In contrast, retrieving the weekday name is a formatting operation that can be performed by calling a formatting method, such as a date and time value's `ToString` method or the [String.Format](xref:System.String.Format(System.IFormatProvider, System.String, System.Object)) method. This topic shows how to perform these formatting operations.
+.NET makes it easy to determine the ordinal day of the week for a particular date, and to display the localized weekday name for a particular date. An enumerated value that indicates the day of the week corresponding to a particular date is available from the [Datetime.DayOfWeek](xref:System.DateTime.DayOfWeek) or [DateTimeOffset.DayOfWeek](xref:System.DateTimeOffset.DayOfWeek) property. In contrast, retrieving the weekday name is a formatting operation that can be performed by calling a formatting method, such as a date and time value's `ToString` method or the [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) method. This topic shows how to perform these formatting operations.
 
 ## To extract a number indicating the day of the week from a specific date
 
@@ -369,7 +369,7 @@ Module Example
 End Module
 ``` 
 
-You can also use the value returned by the [Datetime.DayOfWeek](xref:System.DateTime.DayOfWeek) property to retrieve the weekday name of a particular date. This requires only a call to the [Enum.ToString](xref:System.Enum.System#IConvertible#ToString(System.IFormatProvider)) method on the [DayOfWeek](xref:System.DayOfWeek) value returned by the property. However, this technique does not produce a localized weekday name for the current culture, as the following example illustrates. 
+You can also use the value returned by the [Datetime.DayOfWeek](xref:System.DateTime.DayOfWeek) property to retrieve the weekday name of a particular date. This requires only a call to the [Enum.ToString](xref:System.Enum.ToString(System.IFormatProvider)) method on the [DayOfWeek](xref:System.DayOfWeek) value returned by the property. However, this technique does not produce a localized weekday name for the current culture, as the following example illustrates. 
 
 ```csharp
 using System;

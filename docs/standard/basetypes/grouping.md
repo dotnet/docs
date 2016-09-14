@@ -1056,7 +1056,7 @@ Substrings that are matched by a regular expression capturing group are represen
 
 * The first [Group](xref:System.Text.RegularExpressions.Group) object in the collection (the object at index zero) represents the entire match.
 
-* The next set of [Group](xref:System.Text.RegularExpressions.Group) objects represent unnamed (numbered) capturing groups. They appear in the order in which they are defined in the regular expression, from left to right. The index values of these groups range from 1 to the number of unnamed capturing groups in the collection. (The index of a particular group is equivalent to its numbered backreference. For more information about backreferences, see [Backreference Constructs in Regular Expressions](backreference.md.)
+* The next set of [Group](xref:System.Text.RegularExpressions.Group) objects represent unnamed (numbered) capturing groups. They appear in the order in which they are defined in the regular expression, from left to right. The index values of these groups range from 1 to the number of unnamed capturing groups in the collection. (The index of a particular group is equivalent to its numbered backreference. For more information about backreferences, see [Backreference Constructs in Regular Expressions](backreference.md)
 
 * The final set of [Group](xref:System.Text.RegularExpressions.Group) objects represent named capturing groups. They appear in the order in which they are defined in the regular expression, from left to right. The index value of the first named capturing group is one greater than the index of the last unnamed capturing group. If there are no unnamed capturing groups in the regular expression, the index value of the first named capturing group is one. 
 

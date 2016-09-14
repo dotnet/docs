@@ -21,7 +21,7 @@ A [TimeSpan](xref:System.TimeSpan) format string defines the string representati
 
 > Custom [TimeSpan](xref:System.TimeSpan) format specifiers also do not include a sign symbol that enables you to differentiate between negative and positive time intervals. To include a sign symbol, you have to construct a format string by using conditional logic. The [Other Characters](#Other-Characters) section includes an example. 
 
-The string representations of [TimeSpan](xref:System.TimeSpan) values are produced by calls to the overloads of the [TimeSpan](xref:System.TimeSpan) `ToString` method, as well as by methods that support composite formatting, such as [String.Format](xref:System.String.Format(System.IFormatProvider, System.String, System.Object)). For more information, see [Formatting Types](formattingtypes.md) and [Composite Formatting](compositeformat.md). The following example illustrates the use of standard format strings in formatting operations.
+The string representations of [TimeSpan](xref:System.TimeSpan) values are produced by calls to the overloads of the [TimeSpan](xref:System.TimeSpan) `ToString` method, as well as by methods that support composite formatting, such as [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)). For more information, see [Formatting Types](formattingtypes.md) and [Composite Formatting](compositeformat.md). The following example illustrates the use of standard format strings in formatting operations.
 
 ```csharp
 using System;

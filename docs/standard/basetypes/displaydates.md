@@ -58,7 +58,7 @@ Two different techniques can be used to display the date in a particular calenda
   > [!NOTE]
   > The [CultureInfo](xref:System.Globalization.CultureInfo) class also has a [Calendar](xref:System.Globalization.CultureInfo.Calendar) property. However, it is read-only and constant; it does not change to reflect the new default calendar assigned to the [DateTimeFormatInfo.Calendar](xref:System.Globalization.DateTimeFormatInfo.Calendar) property.
   
-5. Call either the [DateTime.ToString(IFormatProvider)](xref:System.DateTime.ToString(System.IFormatProvider)) or the [DateTime.ToString(String, IFormatProvider)](xref:System.DateTime.ToString(System.String, System.IFormatProvider)) method, and pass it the [CultureInfo](xref:System.Globalization.CultureInfo) object whose default calendar was modified in the previous step.
+5. Call either the [DateTime.ToString(IFormatProvider)](xref:System.DateTime.ToString(System.IFormatProvider)) or the [DateTime.ToString(String,IFormatProvider)](xref:System.DateTime.ToString(System.String,System.IFormatProvider)) method, and pass it the [CultureInfo](xref:System.Globalization.CultureInfo) object whose default calendar was modified in the previous step.
 
 ## To display the date in any calendar
 

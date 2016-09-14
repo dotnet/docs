@@ -18,7 +18,7 @@ The default date and time formatting methods, such as [DateTime.ToString()](xref
 
 ## To display the millisecond component of a DateTime value
 
-1. If you are working with the string representation of a date, convert it to a [DateTime](xref:System.DateTime) or a [DateTimeOffset](xref:System.DateTimeOffset) value by using the static [DateTime.Parse(String)](xref:System.DateTime.Parse(System.String)) or [DateTimeOffset.Parse(String)](xref:System.DateTimeOffset.Parse(System.String)_) method.
+1. If you are working with the string representation of a date, convert it to a [DateTime](xref:System.DateTime) or a [DateTimeOffset](xref:System.DateTimeOffset) value by using the static [DateTime.Parse(String)](xref:System.DateTime.Parse(System.String)) or [DateTimeOffset.Parse(String)](xref:System.DateTimeOffset.Parse(System.String)) method.
 
 2. To extract the string representation of a time's millisecond component, call the date and time value's [DateTime.ToString(String)](xref:System.DateTime.ToString(System.String)) or [DateTimeOffset.ToString](xref:System.DateTimeOffset.ToString(System.String)) method, and pass the `fff` or `FFF` custom format pattern either alone or with other custom format specifiers as the format parameter.
 

@@ -339,7 +339,7 @@ Individual languages may provide functionality that duplicates or supplements th
 
 * `WeekdayName`, which returns the name of the week in the current culture that corresponds to a particular weekday number.
 
-The following example illustrates the use of the Visual Basic Weekday and WeekdayName functions.
+The following example illustrates the use of the Visual Basic `Weekday` and `WeekdayName` functions.
 
 ```vb
 Imports System.Globalization

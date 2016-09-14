@@ -38,9 +38,9 @@ The following characteristics best define .NET Core:
 
 ### Languages
 
-The C# language (F# and VB are coming) can be used to write applications and libraries for .NET Core. The compilers run on .NET Core, enabling you to develop for .NET Core anywhere it runs. In general, you will not use the compilers directly, but indirectly using the SDK tools.
+The C# and F# languages (Visual Basic is coming) can be used to write applications and libraries for .NET Core. The compilers run on .NET Core, enabling you to develop for .NET Core anywhere it runs. In general, you will not use the compilers directly, but indirectly using the SDK tools.
 
-The C# Roslyn compiler and the .NET Core tools are or can be integrated into several text editors and IDEs, including Visual Studio, [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text and Vim, making .NET Core development an option in your favorite coding environment and OS. This integration is provided, in part, by the good folks of the [OmniSharp project](http://www.omnisharp.net/).
+The C# and F# compilers and the .NET Core tools are or can be integrated into several text editors and IDEs, including Visual Studio, [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp), Sublime Text and Vim, making .NET Core development an option in your favorite coding environment and OS. This integration is provided, in part, by the good folks of the [OmniSharp project](http://www.omnisharp.net/).
 
 ### .NET APIs and Compatibility
 

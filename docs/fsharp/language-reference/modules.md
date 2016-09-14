@@ -19,7 +19,8 @@ In the context of the F# language, a *module* is a grouping of F# code, such as 
 
 ```fsharp
 // Top-level module declaration.
-module [accessibility-modifier] [qualified-namespace.]module-namedeclarations
+module [accessibility-modifier] [qualified-namespace.]module-name
+declarations
 // Local module declaration.
 module [accessibility-modifier] module-name =
     declarations

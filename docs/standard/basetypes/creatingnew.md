@@ -32,9 +32,9 @@ Method name | Use
 ----------- | ---
 [String.Format](xref:System.String.Format(System.String,System.Object)) | Builds a formatted string from a set of input objects.
 [String.Concat](xref:System.String.Concat(System.String,System.String)) | Builds strings from two or more strings.
-[String.Join](xref:System.String.Join(System.String,System.String)) |Builds a new string by combining an array of strings.
+[String.Join](xref:System.String.Join(System.String,System.String[])) |Builds a new string by combining an array of strings.
 [String.Insert](xref:System.String.Insert(System.Int32,System.String)) | Builds a new string by inserting a string into the specified index of an existing string.
-[String.CopyTo](xref:System.String.CopyTo(System.Int32,System.Char,System.Int32,System.Int32)) | Copies specified characters in a string into a specified position in an array of characters.
+[String.CopyTo](xref:System.String.CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)) | Copies specified characters in a string into a specified position in an array of characters.
 
 ### Format
 

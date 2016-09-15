@@ -22,7 +22,7 @@ Substitution | Description
 ------------ | ----------- 
 **$**_number_ | Includes the last substring matched by the capturing group that is identified by *number*, where *number* is a decimal value, in the replacement string. For more information, see [Substituting a Numbered Group](#Substituting-a-Numbered-Group).
 **${**_name_**}** | Includes the last substring matched by the named group that is designated by **(?<**_name_**>)** in the replacement string. For more information, see [Substituting a Named Group](#Substituting-a-Named-Group).
-**$$** | Includes a single "$" literal in the replacement string. For more information, see [Substituting a "$" Symbol](#Substituting-a-"$"-Symbol).
+**$$** | Includes a single "$" literal in the replacement string. For more information, see [Substituting a "$" Symbol](#Substituting-a-$-Symbol).
 **$&** | Includes a copy of the entire match in the replacement string. For more information, see [Substituting the Entire Match](#Substituting-the-Entire-Match).
 **$`** | Includes all the text of the input string before the match in the replacement string. For more information, see [Substituting the Text before the Match](#Substituting-the-Text-before-the-Match).
 **$'** | Includes all the text of the input string after the match in the replacement string. For more information, see [Substituting the Text after the Match](#Substituting-the-Text-after-the-Match). 
@@ -152,7 +152,7 @@ Pattern | Description
 `\d*` | Match zero or more decimal digits.
 `(?<amount>\s?\d[.,]?\d*)` | Match a white space, followed by one or more decimal digits, followed by zero or one period or comma, followed by zero or more decimal digits. This is the capturing group named amount. Because the replacement pattern is `${amount}`, the call to the [Regex.Replace](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions)) method replaces the entire matched substring with this captured group. 
  
-## Substituting a "$" Character
+## Substituting a $ Character
 
 The **$$** substitution inserts a literal "$" character in the replaced string. 
 

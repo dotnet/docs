@@ -29,13 +29,15 @@ Why three images?
 When developing, building and running containerized applications, we have different priorities.
 - **Development:**  How fast can you iterate changes, and the ability to debug the changes. The size of the image isn't as important, rather can you make changes to your code and see them quickly. Some of our tools, like [yo docker](https://aka.ms/yodocker) for use in VS Code use this image during development time. 
 - **Build:** What's needed to compile your app. This includes the compiler and any other dependencies to optimize the binaries. This image isn't the image you deploy, rather it's an image you use to build the content you place into a production image. This image would be used in your continuous integration, or build environment. For instance, rather than installing all the dependencies directly on a build agent, the build agent would instance a build image to compile the application with all the dependencies required to build the app contained within the image. Your build agent only needs to know how to run this Docker image. 
-- **Production:** How fast you can deploy and start your image. This image is small so it can quickly travel across the network from your Docker Registry to your Docker hosts. The contents are ready to run enabling the fastest time from Docker run to processing results. In the immutable Docker model, there's no need for dynamic compilation of code. The content you place in this image would be limited to the binaries and content needed to run the application. For example, the published output using `dotnet publish` which contains the compiled binaries, images, .js and .css files. Over time, you'll see images that contain pre-jitted packages.   
+- **Production:** How fast you can deploy and start your image. This image is small so it can quickly travel across the network from your Docker Registry to your Docker hosts. The contents are ready to run enabling the fastest time from Docker run to processing results. In the immutable Docker model, there's no need for dynamic compilation of code. The content you place in this image would be limited to the binaries and content needed to run the application. For example, the published output using `dotnet publish` which contains the compiled binaries, images, .js and .css files. Over time, you'll see images that contain pre-jitted packages.  
+
+Though there are multiple versions of the .NET Core image, they all share one or more layers. The amount of disk space needed to store or the delta to pull from your registry is much smaller than the whole because all of the images share the same base layer and potentially others.  
 
 ## Docker image variations
 
 To achieve the goals above, we provide image variants under [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/).
 
-- `microsoft/dotnet:<version>-sdk` : that is **microsoft/dotnet-preview2-sdk**, this image contains the .NET Core SDK which includes the .NET Core and Command Line Tools (CLI). This image maps to the **development scenario**. You would use this image for local development, debugging and unit testing. For example, all the development you do, before you check in your code. This image can also be used for your **build** scenarios.
+- `microsoft/dotnet:<version>-sdk` : that is **microsoft/dotnet:preview2-sdk**, this image contains the .NET Core SDK which includes the .NET Core and Command Line Tools (CLI). This image maps to the **development scenario**. You would use this image for local development, debugging and unit testing. For example, all the development you do, before you check in your code. This image can also be used for your **build** scenarios.
 
 - `microsoft/dotnet:<version>-core` : that is **microsoft/dotnet:1.0.0-core**, image which runs [portable .NET Core applications](../app-types.md) and it is optimized for running your application in **production**. It does not contain the SDK, and is meant to take the optimized output of `dotnet publish`. The portable runtime is well suited for Docker container scenarios as running multiple containers benefit from shared image layers.  
 
@@ -43,7 +45,7 @@ To achieve the goals above, we provide image variants under [microsoft/dotnet](h
 
 In addition to the optimized scenarios of development, build and production, we provide additional images:
 
-- `microsoft/dotnet:<version>-onbuild` : that is **microsoft/dotnet:onbuild**, contains [ONBUILD](https://docs.docker.com/engine/reference/builder/#/onbuild) triggers. The build will [COPY](https://docs.docker.com/engine/reference/builder/#/copy) your application, run `dotnet restore` and create an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#/entrypoint) `dotnet run` instruction to run the application when the Docker image is run. While not an optimized image for production, some may find it useful to simply copy their source code into an image and run it. 
+- `microsoft/dotnet:<version>-onbuild` : that is **microsoft/dotnet:1.0.0-preview2-onbuild**, contains [ONBUILD](https://docs.docker.com/engine/reference/builder/#/onbuild) triggers. The build will [COPY](https://docs.docker.com/engine/reference/builder/#/copy) your application, run `dotnet restore` and create an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#/entrypoint) `dotnet run` instruction to run the application when the Docker image is run. While not an optimized image for production, some may find it useful to simply copy their source code into an image and run it. 
 
 - `microsoft/dotnet:<version>-core-deps` : that is **microsoft/dotnet:1.0.0-core-deps**, if you wish to run self-contained applications use this image. It contains the operating system with all of the native dependencies needed by .NET Core. This image can also be used as a base image for your own custom CoreFX or CoreCLR builds. While the **onbuild** variant is optimized to simply place your code in an image and run it, this image is optimized to have only the operating system dependencies required to run .NET Core apps that have the .NET Runtime packaged with the application. This image isn't generally optimized for running multiple .NET Core containers on the same host, as each image carries the .NET Core runtime within the application, and you will not benefit from image layering.   
 
@@ -58,14 +60,15 @@ Here is a list of the images after a `docker pull <imagename>` on a development 
 The minimal image capable of being used on Linux, `core-deps`, is quite smaller, however your application will need to copy a private copy of the .NET Runtime with it. Since containers are already private isolation barriers, you will lose that optimization when running multiple dotnet based containers. 
 
 ```
-REPOSITORY          TAG                  IMAGE ID            SIZE
-microsoft/dotnet    onbuild              19b6a6c4b1db        540.4 MB
-microsoft/dotnet    1.0.0-preview2-sdk   a92c3d9ad0e7        540.4 MB
-microsoft/dotnet    core                 5224a9f2a2aa        253.2 MB
-microsoft/dotnet    1.0.0-core-deps      c981a2eebe0e        166.2 MB
-microsoft/dotnet    core-deps            c981a2eebe0e        166.2 MB
-microsoft/dotnet    latest               03c10abbd08a        540.4 MB
-microsoft/dotnet    1.0.0-core           b8da4a1fd280        253.2 MB
+REPOSITORY          TAG                     IMAGE ID            SIZE
+microsoft/dotnet    1.0.0-preview2-onbuild  19b6a6c4b1db        540.4 MB
+microsoft/dotnet    onbuild                 19b6a6c4b1db        540.4 MB
+microsoft/dotnet    1.0.0-preview2-sdk      a92c3d9ad0e7        540.4 MB
+microsoft/dotnet    core                    5224a9f2a2aa        253.2 MB
+microsoft/dotnet    1.0.0-core-deps         c981a2eebe0e        166.2 MB
+microsoft/dotnet    core-deps               c981a2eebe0e        166.2 MB
+microsoft/dotnet    latest                  03c10abbd08a        540.4 MB
+microsoft/dotnet    1.0.0-core              b8da4a1fd280        253.2 MB
 ```
 
 ## Prerequisites
@@ -73,7 +76,7 @@ microsoft/dotnet    1.0.0-core           b8da4a1fd280        253.2 MB
 To build and run, you'll need a few things installed:
 
 - [.NET Core](http://dot.net)
-- [Docker for Windows or Docker for Mac](http://www.docker.com/products/docker) from Docker to run your Docker containers locally 
+- [Docker](https://www.docker.com/products/docker) to run your Docker containers locally 
 - [Yeoman generator for ASP.NET](https://github.com/omnisharp/generator-aspnet) for creating the Web API application
 - [Yeoman generator for Docker](http://aka.ms/yodocker) from Microsoft
 

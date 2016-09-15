@@ -52,7 +52,7 @@ Dim MyChar As Char = Char.Parse(MyString1)
 
 ## Enumeration
 
-You can use the static [Parse](xref:System.Enum.Parse(System.Type, System.String)) method to initialize an enumeration type to the value of a string. This method accepts the enumeration type you are parsing, the string to parse, and an optional `Boolean` flag indicating whether or not the parse is case-sensitive. The string you are parsing can contain several values separated by commas, which can be preceded or followed by one or more empty spaces (also called white spaces). When the string contains multiple values, the value of the returned object is the value of all specified values combined with a bitwise OR operation.
+You can use the static [Parse](xref:System.Enum.Parse(System.Type,System.String)) method to initialize an enumeration type to the value of a string. This method accepts the enumeration type you are parsing, the string to parse, and an optional `Boolean` flag indicating whether or not the parse is case-sensitive. The string you are parsing can contain several values separated by commas, which can be preceded or followed by one or more empty spaces (also called white spaces). When the string contains multiple values, the value of the returned object is the value of all specified values combined with a bitwise OR operation.
 
 The following example uses the `Parse` method to convert a string representation into an enumeration value. The [DayOfWeek](xref:System.DayOfWeek) enumeration is initialized to Thursday from a string.
 

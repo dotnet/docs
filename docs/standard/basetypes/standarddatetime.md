@@ -63,7 +63,7 @@ If a standard format string in a formatting operation maps to a particular cultu
   Console.WriteLine(thisDate.ToString("d"))     ' Displays 3/15/2008
   ```
   
-* You can pass a [CultureInfo](xref:CultureInfo) object representing the culture whose formatting is to be used to a method that has an [IFormatProvider](xref:System.IFormatProvider) parameter. The following example displays a date using the short date format of the pt-BR culture.
+* You can pass a [CultureInfo](xref:System.Globalization.CultureInfo) object representing the culture whose formatting is to be used to a method that has an [IFormatProvider](xref:System.IFormatProvider) parameter. The following example displays a date using the short date format of the pt-BR culture.
   
   ```csharp
   // Display using pt-BR culture's short date format
@@ -79,7 +79,7 @@ If a standard format string in a formatting operation maps to a particular cultu
   Console.WriteLine(thisDate.ToString("d", culture))   ' Displays 15/3/2008
   ```
   
-* You can pass a [DateTimeFormatInfo](xref:DateTimeFormatInfo) object that provides formatting information to a method that has an [IFormatProvider](xref:System.IFormatProvider) parameter. The following example displays a date using the short date format from a DateTimeFormatInfo object for the hr-HR culture.  
+* You can pass a [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) object that provides formatting information to a method that has an [IFormatProvider](xref:System.IFormatProvider) parameter. The following example displays a date using the short date format from a DateTimeFormatInfo object for the hr-HR culture.  
 
   ```csharp
   // Display using date format information from hr-HR culture
@@ -147,7 +147,7 @@ Console.WriteLine(date1.ToString("d", _
 
 The "D" standard format specifier represents a custom date and time format string that is defined by the current [DateTimeFormatInfo.LongDatePattern](xref:System.Globalization.DateTimeFormatInfo.LongDatePattern) property. For example, the custom format string for the invariant culture is "dddd, dd MMMM yyyy".
 
-The following table lists the [DateTimeFormatInfo](xref:DateTimeFormatInfo) object properties that control the formatting of the returned string.
+The following table lists the [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) object properties that control the formatting of the returned string.
 
 Property | Description
 -------- | -----------

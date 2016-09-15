@@ -369,7 +369,7 @@ Module Example
 End Module
 ``` 
 
-You can also use the value returned by the [Datetime.DayOfWeek](xref:System.DateTime.DayOfWeek) property to retrieve the weekday name of a particular date. This requires only a call to the [Enum.ToString](xref:System.Enum.ToString(System.IFormatProvider)) method on the [DayOfWeek](xref:System.DayOfWeek) value returned by the property. However, this technique does not produce a localized weekday name for the current culture, as the following example illustrates. 
+You can also use the value returned by the [Datetime.DayOfWeek](xref:System.DateTime.DayOfWeek) property to retrieve the weekday name of a particular date. This requires only a call to the [Enum.ToString](xref:System.Enum.ToString(System.String)) method on the [DayOfWeek](xref:System.DayOfWeek) value returned by the property. However, this technique does not produce a localized weekday name for the current culture, as the following example illustrates. 
 
 ```csharp
 using System;

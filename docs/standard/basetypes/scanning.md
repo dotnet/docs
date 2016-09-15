@@ -101,7 +101,7 @@ End Sub
 '       Found href http://blogs.msdn.com/bclteam/) at 176
 ```
 
-The regular expression pattern `href\s*=\s*(?:["'](?<1>[^"']*)["']|(?<1>\S+))` is interpreted as shown in the following table.
+The regular expression pattern `href\s*=\s*(?:["']&#40;?<1>[^"']*)["']|(?<1>\S+))` is interpreted as shown in the following table.
 
 Pattern | Description
 ------- | ----------- 
@@ -109,7 +109,7 @@ Pattern | Description
 `\s*` | Match zero or more white-space characters.
 `=` |`Match the equals sign.
 `\s*` | Match zero or more white-space characters.
-`(?:["'](?<1>[^"']*)"&#124;(?<1>\S+)) | Match one of the following without assigning the result to a captured group: A quotation mark or apostrophe, followed by zero or more occurrences of any character other than a quotation mark or apostrophe, followed by a quotation mark or apostrophe. The group named `1` is included in this pattern. -or- One or more non-white-space characters. The group named `1` is included in this pattern.
+`(?:["']&#40;?<1>[^"']*)"&#124;(?<1>\S+))` | Match one of the following without assigning the result to a captured group: A quotation mark or apostrophe, followed by zero or more occurrences of any character other than a quotation mark or apostrophe, followed by a quotation mark or apostrophe. The group named `1` is included in this pattern. -or- One or more non-white-space characters. The group named `1` is included in this pattern.
 `(?<1>[^"']*)` | Assign zero or more occurrences of any character other than a quotation mark or apostrophe to the capturing group named `1`.
 `"(?<1>\S+)` | Assign one or more non-white-space characters to the capturing group named `1`.
  

@@ -85,7 +85,7 @@ __\P{__*name*__}__ | Matches any single character that is not in the Unicode gen
 
 ## Anchors
 
-Anchors, or atomic zero-width assertions, cause a match to succeed or fail depending on the current position in the string, but they do not cause the engine to advance through the string or consume characters. The metacharacters listed in the following table are anchors. For more information, see [Anchors in Regular Expressions](anchors.md)).
+Anchors, or atomic zero-width assertions, cause a match to succeed or fail depending on the current position in the string, but they do not cause the engine to advance through the string or consume characters. The metacharacters listed in the following table are anchors. For more information, see [Anchors in Regular Expressions](anchors.md).
 
 Assertion | Description | Pattern | Matches
 --------- | ----------- | ------- | ------- 
@@ -94,7 +94,7 @@ Assertion | Description | Pattern | Matches
 **\A** | The match must occur at the start of the string. | `\A\d{3}` | "901" in "901-333-"
 **\Z** | The match must occur at the end of the string or before **\n** at the end of the string. | `-\d{3}\Z` | "-333" in "-901-333"
 **\z** | The match must occur at the end of the string. | `-\d{3}\z` | "-333" in "-901-333"
-**\G** | The match must occur at the point where the previous match ended. | `\G\(\d\)` | "(1)", "(3)", "(5)" in "(1)(3)(5)[7](9)"
+**\G** | The match must occur at the point where the previous match ended. | `\G\(\d\)` | "(1)", "(3)", "(5)" in "(1)(3)(5)[7]&#40;9)"
 **\b** | The match must occur on a boundary between a **\w** (alphanumeric) and a **\W** (nonalphanumeric) character. | `\b\w+\s\w+\b` | "them theme", "them them" in "them theme them them" 
 **\B** | The match must not occur on a **\b** boundary. | `\Bend\w*\b` | "ends", "ender" in "end sends endure lender"
 

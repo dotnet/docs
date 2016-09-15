@@ -62,7 +62,7 @@ Microsoft languages that .NET supports include C#, F#, and Visual Basic.
 * Visual Basic is an easy language to learn that you can use to build a variety of applications that run on .NET.
 
 > [!NOTE]
-> In the current release of .NET Core, only C# is fully supported.
+> In the current release of .NET Core, only C# is fully supported across all Microsoft tools.  F# is supported in the .NET Core SDK, but does not have Visual Studio tooling yet.  Visual Basic support for the SDK and Visual Studio tooling are coming.
 
 ### Automatic memory management
 

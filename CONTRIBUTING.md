@@ -89,7 +89,7 @@ There are several ways to use DocFX, and most of them are covered in the [DocFX 
 The following instructions use the [command-line based](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool) version of the tool. 
 If you are comfortable with other ways listed on the link above, feel free to use those. 
 
-**Note:** please note that as of now, DocFX requires the .NET Framework on Windows or Mono for Linux or macOS. We'll be working towards porting it to .NET Core in the future. 
+**Note:** Currently DocFX requires the .NET Framework on Windows or Mono (for Linux or macOS). We hope to port it to .NET Core in the future. 
 
 You can build and preview the resulting site locally using a built-in web server. Navigate to the core-docs folder on your machine and type the following command:
 

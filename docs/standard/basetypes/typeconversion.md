@@ -45,7 +45,7 @@ Widening conversions involve the creation of a new value from the value of an ex
 > [!NOTE]
 > Although code that performs an implicit conversion can call a conversion method or use a casting operator, their use is not required by compilers that support implicit conversions.
 
-For example, the [Decimal](xref:System.Decimal) type supports implicit conversions from [Byte](xref:System.Byte), [Char](xref:System.Char), [Int16](xref:System.Int16), [Int32](xref:System.Int32), [Int64](xref:System.Int64), [SByte](xref:System.SByte), [UInt16](xref:System.UInt16), [UInt32](xref:System.UInt362), and [UInt64](xref:System.UInt64) values. The following example illustrates some of these implicit conversions in assigning values to a `Decimal` variable.
+For example, the [Decimal](xref:System.Decimal) type supports implicit conversions from [Byte](xref:System.Byte), [Char](xref:System.Char), [Int16](xref:System.Int16), [Int32](xref:System.Int32), [Int64](xref:System.Int64), [SByte](xref:System.SByte), [UInt16](xref:System.UInt16), [UInt32](xref:System.UInt32), and [UInt64](xref:System.UInt64) values. The following example illustrates some of these implicit conversions in assigning values to a `Decimal` variable.
 
 ```csharp
 byte byteValue = 16;

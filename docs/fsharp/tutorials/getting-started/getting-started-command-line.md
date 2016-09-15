@@ -14,13 +14,13 @@ ms.assetid: 615db1ec-6ef3-4de2-bae6-4586affa9771
 
 # Getting started with F# with command-line tools
 
-This article covers how you can get started with using F# on .NET Core with the ..NET Core SDK 1.0 Preview 2.  It will go through building a multi-project solution with a Class Library, a Console App, and an xUnit test project.
+This article covers how you can get started with using F# on .NET Core 1.0 with the .NET Core SDK 2.0.1 Preview 2.  It will go through building a multi-project solution with a Class Library, a Console App, and an xUnit test project.
 
 ## Prerequisites
 
-To begin, you must install the [.NET Core SDK 1.0 Preview 2](https://www.microsoft.com/net/core).
+To begin, you must install the [.NET Core SDK 2.0.1-preview2](dot.net/core).  If you have installed a previous version, you must uninstall that previous version.
 
-This article assumes that you know how to use a command line and have a preferred text editor.  [Visual Studio Code](https://code.visualstudio.com) is a great option.  To get awesome features like Intellisense, better syntax highlighting, and more, you can also download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp) and get a lightweight IDE experience for F# in Visual Studio Code.
+This article assumes that you know how to use a command line and have a preferred text editor.  If you don't already use it, [Visual Studio Code](https://code.visualstudio.com) is a great option as a text editor for F#.  To get awesome features like Intellisense, better syntax highlighting, and more, you can download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).
 
 ## Building a Simple Multi-project Solution
 
@@ -47,17 +47,8 @@ FSNetCore/
 ### Writing a Class library
 
 1. Create a `Library` folder under `FSNetCore/src`.
-2. In the command line, execute `dotnet new -l F#` in `FSNetCore/src/Library`.
-3. Remove the `NuGet.Config` file.
-4. Rename `Program.fs` to `Lib.fs`.
-5. Open the `project.json` file and remove the `emitEntryPoint` entry from `buildOptions`.
-6. Under `buildOptions/compile/includeFiles`, replace `Program.fs` with `Lib.fs`.
-7. Remove the global `dependencies` section.
-8. Under `tools/dotnet-compile-fsc`, remove the `imports` section.
-9. Under `frameworks`, change `netcoreapp1.0` to `netstandard1.6`.
-11. Under `frameworks/netstandard1.6`, remove the `imports` section.
-12. Under `frameworks/netstandard1.6/dependencies`, replace the `Microsoft.NETCore.App` package with `"NETStandard.Library":"1.6.0"`.  Add `"Microsoft.FSharp.Core.netcore": "1.0.0-alpha-160629"` and `"Newtonsoft.Json": "9.0.1"`.
-13. Open `Lib.fs` and change the contents to the following code:
+2. In the command line, execute `dotnet new -l F# -t lib` in `FSNetCore/src/Library`.
+3. Replaces the contents of `Library.fs` with the following:
 
     ```fsharp
     module Library
@@ -65,70 +56,45 @@ FSNetCore/
     open Newtonsoft.Json
 
     let getJsonNetJson value = 
-        sprintf "I used to be %s but now I'm %s!" value  (JsonConvert.SerializeObject(value))
+        sprintf "I used to be %s but now I'm %s thanks to JSON.NET!" value  (JsonConvert.SerializeObject(value))
     ```
 
-14. Run `dotnet restore` and `dotnet build`.  These should succeed.
+5. Replace the contents of `project.json` with the following:
 
-Your `project.json` file should look like this:
-
-```json
-{
-  "version": "1.0.0-*",
-  "buildOptions": {
-    "compilerName": "fsc",
-    "compile": {
-      "includeFiles": [
-        "Lib.fs"
-      ]
-    }
-  },
-  "tools": {
-    "dotnet-compile-fsc":"1.0.0-preview2-*"
-  },
-  "frameworks": {
-    "netstandard1.6": {
-      "dependencies": {
-        "NETStandard.Library":"1.6.0",
-        "Microsoft.FSharp.Core.netcore": "1.0.0-alpha-160629",
-        "Newtonsoft.Json": "9.0.1"    
+    ```json
+    {
+      "version": "1.0.0-*",
+      "buildOptions": {
+        "debugType":"portable",
+        "compilerName": "fsc",
+        "compile": {
+          "includeFiles": [
+            "Library.fs"
+          ]
+        }
+      },
+      "tools": {
+        "dotnet-compile-fsc":"1.0.0-preview2-*"
+      },
+      "frameworks": {
+        "netstandard1.6": {
+          "dependencies": {
+            "NETStandard.Library":"1.6.0",
+            "Microsoft.FSharp.Core.netcore":"1.0.0-alpha-160629",
+            "Newtonsoft.Json":"9.0.1"    
+          }
+        }
       }
     }
-  }
-}
-```
+    ```
 
-And your `Lib.fs` file should look like this:
-
-```fsharp
-module Library
-
-open Newtonsoft.Json
-
-let getJsonNetJson value = 
-    sprintf "I used to be %s but now I'm %s!" value  (JsonConvert.SerializeObject(value))
-```
+6. Run `dotnet restore` and `dotnet build`.  These should succeed.
 
 ### Writing a Console Application which Consumes the Class Library
 
 1. Create an `App` folder under `FSNetCore/src`.
 2. In the command line, execute `dotnet new -l F#` in `FSNetCore/src/App`.
-3. Remove the `NuGet.Config` file.
-4. Open the `project.json` file.
-5. Remove the global `dependencies` section.
-6. Under `tools/dotnet-compile-fsc`, remove the `imports` section.
-7. Under `frameworks/netcoreapp1.0/`, remove the `imports` section.
-8. Under `frameworks/netcoreapp1.0/dependencies`, add the following after `Microsoft.NETCore.App`:
-
-    ```json
-    "Microsoft.FSharp.Core.netcore": "1.0.0-alpha-160629",
-    "Library":{
-      "version":"1.0.0",
-      "target": "project"
-    }
-    ```
-
-9. Change `Program.fs` to:
+3. Change `Program.fs` to:
 
     ```fs
     open System
@@ -136,13 +102,48 @@ let getJsonNetJson value =
 
     [<EntryPoint>]
     let main argv = 
-        printfn "Nice command line arguments!.  Here's what JSON.NET has to say about them:"
+        printfn "Nice command line arguments!  Here's what JSON.NET has to say about them:"
 
         argv
         |> Array.map getJsonNetJson
         |> Array.iter (printfn "%s")
 
         0 // return an integer exit code
+    ```
+
+4. Add a reference to the `Library` project you just created in the `project.json` file.  It should look like this:
+
+    ```json
+    {
+      "version": "1.0.0-*",
+      "buildOptions": {
+        "debugType":"portable",
+        "emitEntryPoint": true,
+        "compilerName": "fsc",
+        "compile": {
+          "includeFiles": [
+            "Program.fs"
+          ]
+        }
+      },
+      "tools": {
+        "dotnet-compile-fsc":"1.0.0-preview2-*"
+      },
+      "frameworks": {
+        "netcoreapp1.0": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "type": "platform",
+              "version": "1.0.0"
+            },
+            "Microsoft.FSharp.Core.netcore": "1.0.0-alpha-160629",
+            "Library":{
+              "target": "project"
+            }
+          }
+        }
+      }
+    }
     ```
 
 10. Enter `dotnet restore` and `dotnet build` into the command line.  These should succeed.
@@ -153,155 +154,4 @@ Nice command line arguments!  Here's what JSON.NET has to say about them:
 
 I used to be Hello but now I'm ""Hello""!
 I used to be World but now I'm ""World""!
-```
-
-Your `project.json` file should look like this:
-
-```json
-{
-  "version": "1.0.0-*",
-  "buildOptions": {
-    "emitEntryPoint": true,
-    "compilerName": "fsc",
-    "compile": {
-      "includeFiles": [
-        "Program.fs"
-      ]
-    }
-  },
-  "tools": {
-    "dotnet-compile-fsc":"1.0.0-preview2-*"
-  },
-  "frameworks": {
-    "netcoreapp1.0": {
-      "dependencies": {
-        "Microsoft.NETCore.App": {
-          "type": "platform",
-          "version": "1.0.0"
-        },
-        "Microsoft.FSharp.Core.netcore": "1.0.0-alpha-160629",
-        "Library":{
-          "version":"1.0.0",
-          "target": "project"
-        }
-      }
-    }
-  }
-}
-```
-
-And your `Program.fs` file should look like this:
-
-```fsharp
-open System
-open Library
-
-[<EntryPoint>]
-let main argv = 
-    printfn "Nice command line arguments!.  Here's what JSON.NET has to say about them:"
-
-    argv
-    |> Array.map getJsonNetJson
-    |> Array.iter (printfn "%s")
-
-    0 // return an integer exit code
-```
-
-### Testing the Class Library with xUnit.net
-
-1. Create a `TestLibrary` folder under `NETCoreFS/test`.
-2. In the command line, execute `dotnet new -l F#` in `FSNetCore/src/Tests`.
-3. Remove the `NuGet.Config`.
-4. Rename `Program.fs` to `Tests.fs`.
-5. Open the `project.json` file.
-6. Remove the `emitEntryPoint` entry under `buildOptions`.
-7. Under `buildOptions/compile/includeFiles`, replace `Program.fs` with `Tests.fs`.
-8. Remove the global `dependencies` section. 
-9. Under `tools/dotnet-compile-fsc`, remove the `imports` section.
-9. Under `frameworks/netcoreapp1.0/`, remove the `imports` section.
-10. Under `frameworks/netcoreapp1.0/dependencies`, add the following after `Microsoft.NETCore.App`:
-
-    ```json
-    "Microsoft.FSharp.Core.netcore": "1.0.0-alpha-160629",
-    "xunit":"2.2.0-beta2-build3300",
-    "dotnet-test-xunit":"2.2.0-preview2-build1029",
-    "Library":{
-      "version": "1.0.0",
-      "target": "project"
-    },
-    ```
-
-11. After the `frameworks` section, add `"testRunner":"xunit"`.  Note that you can add this section anywhere in the `project.json` file.
-12. In `test.fs`, paste the following code:
-
-    ```fs
-    module Test
-
-    open Xunit
-    open Library
-
-    [<Fact>]    
-    let ``Library converts "Banana" correctly``() =
-        let expected = """I used to be Banana but now I'm "Banana"!"""
-        let actual =  getJsonNetJson "Banana"
-        Assert.Equal(expected, actual)
-    ```
-
-10. Run `dotnet restore` and `dotnet build`.
-
-You should now be able to run the test and verify it passes by doing `dotnet test`.
-
-> [!NOTE]
-> This will temporarily fail on macOS. [There is an issue here to track this](https://github.com/xunit/xunit/issues/859).
-
-Your `project.json` file should look like this:
-
-```json
-{
-  "version": "1.0.0-*",
-  "buildOptions": {
-    "compilerName": "fsc",
-    "compile": {
-      "includeFiles": [
-        "Tests.fs"
-      ]
-    }
-  },
-  "tools": {
-    "dotnet-compile-fsc":"1.0.0-preview2-*"
-  },
-  "frameworks": {
-    "netcoreapp1.0": {
-      "dependencies": {
-        "Microsoft.NETCore.App": {
-          "type": "platform",
-          "version": "1.0.0"
-        },
-        "Microsoft.FSharp.Core.netcore": "1.0.0-alpha-160629",
-        "xunit":"2.2.0-beta2-build3300",
-        "dotnet-test-xunit":"2.2.0-preview2-build1029",
-        "Library":{
-          "version": "1.0.0",
-          "target": "project"
-        },
-      }
-    }
-  },
-  "testRunner": "xunit"
-}
-```
-
-And your `Tests.fs` file should look like this:
-
-```fsharp
-module Test
-
-open Xunit
-open Library
-
-[<Fact>]    
-let ``Library converts "Banana" correctly``() =
-    let expected = """I used to be Banana but now I'm "Banana"!"""
-    let actual =  getJsonNetJson "Banana"
-    Assert.Equal(expected, actual)
 ```

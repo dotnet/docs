@@ -166,7 +166,7 @@ The regular expression `\b[A-Z]+\b(?=\P{P})` is defined as shown in the followin
 Pattern | Description
 ------- | -----------
 `\b` | Begin the match at a word boundary.
-`[A-Z]+` | Match any alphabetic character one or more times. Because the [Regex.Matches](xref:System.Text.RegularExpressions.Regex.Matches(System_String)) method is called with the [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) option, the comparison is case-insensitive. 
+`[A-Z]+` | Match any alphabetic character one or more times. Because the [Regex.Matches](xref:System.Text.RegularExpressions.Regex.Matches(System.String)) method is called with the [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) option, the comparison is case-insensitive. 
 `\b` | End the match at a word boundary.
 `(?=\P{P})` | Look ahead to determine whether the next character is a punctuation symbol. If it is not, the match succeeds.
 
@@ -477,7 +477,7 @@ For more information about nonbacktracking subexpressions, see [Grouping Constru
 
 ### Right-to-left matching
 
-Right-to-left matching, which is specified by supplying the [RegexOptions.RightToLeft](xref:System.Text.RegularExpressions.RegexOptions._RightToLeft) option to a [Regex](xref:System.Text.RegularExpressions.Regex) class constructor or static instance matching method. This feature is useful when searching from right to left instead of from left to right, or in cases where it is more efficient to begin a match at the right part of the pattern instead of the left. As the following example illustrates, using right-to-left matching can change the behavior of greedy quantifiers. The example conducts two searches for a sentence that ends in a number. The left-to-right search that uses the greedy quantifier `+` matches one of the six digits in the sentence, whereas the right-to-left search matches all six digits. For an description of the regular expression pattern, see the example that illustrates lazy quantifiers earlier in this section.
+Right-to-left matching, which is specified by supplying the [RegexOptions.RightToLeft](xref:System.Text.RegularExpressions.RegexOptions.RightToLeft) option to a [Regex](xref:System.Text.RegularExpressions.Regex) class constructor or static instance matching method. This feature is useful when searching from right to left instead of from left to right, or in cases where it is more efficient to begin a match at the right part of the pattern instead of the left. As the following example illustrates, using right-to-left matching can change the behavior of greedy quantifiers. The example conducts two searches for a sentence that ends in a number. The left-to-right search that uses the greedy quantifier `+` matches one of the six digits in the sentence, whereas the right-to-left search matches all six digits. For an description of the regular expression pattern, see the example that illustrates lazy quantifiers earlier in this section.
 
 ```csharp
 using System;

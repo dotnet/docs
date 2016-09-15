@@ -35,7 +35,7 @@ The quantities *n* and *m* are integer constants. Ordinarily, quantifiers are gr
 The following sections list the quantifiers supported by .NET regular expressions. 
 
 > [!NOTE]
-> If the \*, +, ?, {, and } characters are encountered in a regular expression pattern, the regular expression engine interprets them as quantifiers or part of quantifier constructs unless they are included in a [character class](class.md). To interpret these as literal characters outside a character class, you must escape them by preceding them with a backslash. For example, the string `\*` in a regular expression pattern is interpreted as a literal asterisk ("*") character.
+> If the \*, +, ?, {, and } characters are encountered in a regular expression pattern, the regular expression engine interprets them as quantifiers or part of quantifier constructs unless they are included in a [character class](classes.md). To interpret these as literal characters outside a character class, you must escape them by preceding them with a backslash. For example, the string `\*` in a regular expression pattern is interpreted as a literal asterisk ("*") character.
 
 ### Match Zero or More Times: *
 
@@ -780,7 +780,7 @@ End Module
 
 ## See Also
 
-[Regular expression language - quick reference](quickref/md)
+[Regular expression language - quick reference](quickref.md)
 
 [Backtracking in regular expressions](backtracking.md)
 

@@ -1,6 +1,6 @@
 ---
-title: Common type system in depth
-description: Common type system in depth
+title: Formatting types
+description: Formatting types
 keywords: .NET, .NET Core
 author: stevehoag
 manager: wpickett

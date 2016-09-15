@@ -14,17 +14,17 @@ ms.assetid: 615db1ec-6ef3-4de2-bae6-4586affa9771
 
 # Getting started with F# with command-line tools
 
-This article covers how you can get started with using F# on .NET Core 1.0 with the .NET Core SDK 2.0.1 Preview 2.  It will go through building a multi-project solution with a Class Library that is called by a Console Application.
+This article covers how you can get started with using F# on .NET Core 1.0 with the .NET Core SDK 1.0.0 - Preview 2 (build 003131).  It will go through building a multi-project solution with a Class Library that is called by a Console Application.
 
 ## Prerequisites
 
-To begin, you must install the [.NET Core SDK 2.0.1-preview2](dot.net/core).  If you have installed a previous version, you must uninstall that previous version.
+To begin, you must install the [.NET Core SDK 1.0.0 - Preview 2 (build 003131)](https://dot.net/core).  There is no need to uninstall a previous version of the .NET Core SDK, as it supports side-by-side installations.
 
-This article assumes that you know how to use a command line and have a preferred text editor.  If you don't already use it, [Visual Studio Code](https://code.visualstudio.com) is a great option as a text editor for F#.  To get awesome features like Intellisense, better syntax highlighting, and more, you can download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).
+This article assumes that you know how to use a command line and have a preferred text editor.  If you don't already use it, [Visual Studio Code](https://code.visualstudio.com) is a great option as a text editor for F#.  To get awesome features like IntelliSense, better syntax highlighting, and more, you can download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).
 
 ## Building a Simple Multi-project Solution
 
-1. Open up a Command Line/Terminal.
+1. Open a Command Line/Terminal.
 2. Create a new directory named `FSNetCore`.  Open Visual Studio code or your preferred editor inside this directory. 
 3. Under `FSNetCore`, create `src` and `test` directories.
 4. Under `FSNetCore`, create a new file called `global.json`.  It should have this as its contents:
@@ -48,7 +48,7 @@ FSNetCore/
 
 1. Create a `Library` folder under `FSNetCore/src`.
 2. In the command line, execute `dotnet new -l F# -t lib` in `FSNetCore/src/Library`.
-3. Replaces the contents of `Library.fs` with the following:
+3. Replace the contents of `Library.fs` with the following:
 
     ```fsharp
     module Library

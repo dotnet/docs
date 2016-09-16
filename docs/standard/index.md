@@ -61,9 +61,6 @@ Microsoft languages that .NET supports include C#, F#, and Visual Basic.
 
 * Visual Basic is an easy language to learn that you can use to build a variety of applications that run on .NET.
 
-> [!NOTE]
-> In the current release of .NET Core, only C# is fully supported.
-
 ### Automatic memory management
 
 Garbage collection is the most well-known of .NET features. Developers do not need to actively manage memory, although there are mechanisms to provide more information to the garbage collector (GC). C# includes the `new` keyword to allocate memory in terms of a particular type, and the `using` keyword to provide scope for the usage of the object. The GC operates on a lazy approach to memory management, preferring application throughput to the immediate collection of memory.

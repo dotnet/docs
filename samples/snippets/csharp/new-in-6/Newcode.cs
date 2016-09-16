@@ -20,10 +20,12 @@ namespace NewStyle
         public string LastName { get;  }
         public ICollection<double> Grades { get; } = new List<double>();
         public Standing YearInSchool { get; set;} = Standing.Freshman;
-        public string FullName => @"{FirstName} {LastName}";
+        public string FullName => $"{FirstName} {LastName}";
 
-        public override string ToString() => @"{LastName}, {FirstName}";
+        public override string ToString() => $"{LastName}, {FirstName}";
 
+        public string GetFormattedGradePoint() =>
+            $"Name: {LastName}, {FirstName}. G.P.A: {Grades.Average()}";
         public bool MakesDeansList()
         {
             return Grades.All(g => g > 3.5) && Grades.Any();

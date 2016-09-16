@@ -22,7 +22,7 @@ productivity for developers. Features in this release include:
 * [Expression Bodied function members](#Expression-bodied-function-members)
 * [using static](#using-static)
 * [Null - conditional operators](#null-conditional-operators)
-* String Interpolation
+* [String Interpolation](#String-Interpolation)
 * nameof Expressions
 * index initializers
 * Extension methods for collection initializers
@@ -62,7 +62,7 @@ the variable storage behind an auto-property.
 immutable types. The closest you could get to immutable types
 in earlier versions of C# was to declare private setters:
 
-[!code-csharp[ClassicReadOnlyAutoProperty](../../samples/snippets/csharp/new-in-6/oldcode.cs#L16-L17)]
+[!code-csharp[ClassicReadOnlyAutoProperty](../../samples/snippets/csharp/new-in-6/oldcode.cs#L30-L31)]
  
 Using this syntax, the compiler doesn't ensure that the type really is immutable. It only
 enforces that the `FirstName` and `LastName` properties are not modified from any
@@ -223,20 +223,14 @@ expresion.
 You can often use this construct with the ***null coalescing*** operator to assign`
 default values when one of the properties are null:
 
-```csharp
 [!code-csharp[NullCoalescing](../../samples/snippets/csharp/new-in-6/program.cs#L16-L16)]
-```
 
 The right hand side operand of the `?.` operator is not limited to properties or fields.
 You can also use it to conditionally invoke methods. The most common use of member functions
  with the null conditional operator is to safely invoke delegates
-(or event handlers) that may be null:
-
-```csharp
-someDelegate?.Invoke(a,b,c);
-```
-Here, the delegate is invoked if and only if it is not null. In cases where the delegate
-is null, nothing happens. 
+(or event handlers) that may be null.  You'll do this by calling the delegate's `Invoke` method
+using the `?.` operator to access the member. You can see an example where we discuss 
+[delegate patterns](delegates-patterns.md#Handling-Null-Delegates)
 
 The rules of the `?.` operator ensure that the left hand side of the operator is
 evaluated only once. This is important and enables many idioms, including the
@@ -244,7 +238,7 @@ example using event handlers. Let's start with the event handler usage. In previ
 versions of C#, you were encouraged to write code like this:
 
 ```csharp
-var handler = this.OnEvent;
+var handler = this.SomethingHappened;
 if (handler != null)
     handler(this, eventArgs);
 ```
@@ -253,31 +247,33 @@ This was preferred over a simpler syntax:
 
 ```csharp
 // Not recommended
-if (this.OnEvent != null)
-    this.OnEvent(this, eventArgs);
+// Introduces a race condition
+// The SomethingHappened event
+// may have subscribers when checked,
+// and those subscribers may have been
+// removed before the event is raised. 
+if (this.SomethingHappened != null)
+    this.SomethingHappened(this, eventArgs);
 ```
 
-In this second version, the `OnEvent` event handler might
+In this second version, the `SomethingHappened` event handler might
 be non-null when tested, but if other code removes a handler,
 it could still be null when the event handler was called.
 
 The compiler generates code for for the `?.` operator that ensures
-the left side (`this.onEvent`) below is evaluated once, and the result
+the left side (`this.SomethingHappened`) below is evaluated once, and the result
 is cached:
 
 ```csharp
 // preferred in C# 6:
-this.OnEvent?.Invoke(this, eventArgs);
+this.SomethingHappened?.Invoke(this, eventArgs);
 ```
 
 Ensuring that the left side is evaluated only once also enables you
 to use any expression, including method calls, on the left side of the
 `?.` Even if these have side-effects, they are evaluated once, so the
-side effects occur only once.
-
-```csharp
-// Need an example here
-```
+side effects occur only once. You can see an example in our content
+on [events](events-overview.md#Language-Support-for-Events)
 
 ## String Interpolation
 
@@ -287,25 +283,20 @@ and expressions that can be evaluated to produce other string values.
 Traditionally, you needed to use positional parameters in a method
 like `string.Format`:
 
-```csharp
-var distance = string.Format("The point [{0}, {1}] is {2} from the origin", X, Y, Distance);
-```
+[!code-csharp[stringFormat](../../samples/snippets/csharp/new-in-6/oldcode.cs#L16-L22)]
 
 With C# 6, the new string interpolation feature enables you to embed the expressions in
-the format string. Simple preface the string with `@`:
+the format string. Simple preface the string with `$`:
 
-```csharp
-var distance = @"the point [{X}, {Y}] is {Distance} from the origin";
-```
+[!code-csharp[stringInterpolation](../../samples/snippets/csharp/new-in-6/newcode.cs#L23-L23)]
 
 This initial example used variable expressions for the substituted expressions.
 You can expand on this syntax to use any expression. For example, you could
-compute the distance as part of the variable substitution:
+compute a student's grade point average as part of the interpolation:
 
-```csharp
-var distance = @"the point [{X}, {Y}] is {Math.Sqrt(X * X + Y + Y)} from the origin";
-```
+[!code-csharp[stringInterpolation](../../samples/snippets/csharp/new-in-6/newcode.cs#L27-L28)]
 
+{{{ HERE }}}}
 Running the above example, you would find that the output for `Distance` might have
 more decimal places than you would like. The string interpolation syntax supports
 all the format strings available using earlier formatting methods. You add

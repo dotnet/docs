@@ -38,7 +38,7 @@ let f x = x + 1
 
 In the previous example, the function name is `f`, the argument is `x`, which has type `int`, the function body is `x + 1`, and the return value is of type `int`.
 
-The inline specifier is a hint to the compiler that the function is small and that the code for the function can be integrated into the body of the caller.
+Functions can be marked `inline`. For information about `inline`, see [Inline Functions](../functions/inline-functions.md).
 
 
 ## Scope

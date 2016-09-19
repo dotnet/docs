@@ -114,15 +114,15 @@ docs in this repo.
 
 - `core` contains .NET Core samples. These are referenced by topics under `/docs/core`.
 
-   * The `core` directory contains samples that highlight .NET Core. The purpose of your sample should be to teach developers something about .NET Core. This includes the framework packaging, the new tooling, or the cross-platform experience. Our CI buid server builds these samples on multiple supported platforms. Therefore, every sample must be configured to build on Linux, Mac, and Windows.
+   * The `core` directory contains samples that highlight .NET Core. The purpose of your sample should be to teach developers something about .NET Core. This includes the framework packaging, the new tooling, or the cross-platform experience. Our CI build server builds these samples on multiple supported platforms. Therefore, every sample must be configured to build on Linux, Mac, and Windows.
 
 - `csharp` contains C# language samples. These are referenced by topics under `docs/csharp`.
 
-   * The `csharp` directory contains samples where the purpose is to explain the C# language. While these samples will use frameworks and libraries, their focus is on the C# language. Our CI buid server builds these samples on multiple supported platforms. Therefore, every sample must be configured to build on Linux, Mac, and Windows.
+   * The `csharp` directory contains samples where the purpose is to explain the C# language. While these samples will use frameworks and libraries, their focus is on the C# language. Our CI build server builds these samples on multiple supported platforms. Therefore, every sample must be configured to build on Linux, Mac, and Windows.
 
-- `framework` contains .NET Framework samples. These are referenced by topics under many different locations in the documentation. However, what is significant about these samples is that they buid only on Windows where the .NET framework, and Visual Studio are installed.
+- `framework` contains .NET Framework samples. These are referenced by topics under many different locations in the documentation. These samples build only on Windows where the .NET framework and Visual Studio are installed.
 
-   * The `framework` directory contains samples that highlight .NET with platform dependencies. These may include migration samples, platform specific samples, or other samples that require the framework or the Windows based tools. Our CI buid server builds these samples on Windows only. Do not place any samples here that should be checked for cross-platform builds.
+   * The `framework` directory contains samples that highlight .NET with platform dependencies. These may include migration samples, platform specific samples, or other samples that require the framework or the Windows based tools. Our CI build server builds these samples on Windows only. Do not place any samples here that should be checked for cross-platform builds.
 
 We will expand these directories as the core-docs repository adds new content. For example, we will add Xamarin directories, like `xamarin-ios` and `xamarin-android` directories. 
 

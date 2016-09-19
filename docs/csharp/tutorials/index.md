@@ -24,4 +24,4 @@ demonstrates web communications, JSON serialization, and Object Oriented
 features in the C# language.
 * [Working with LINQ](working-with-linq.md) This tutorial demonstrates many of the features of LINQ and the language elements that support it.
 
-* [Microservices hosted in Docker](microservices.md) This tutorial demonstrates building an asp.net core microservice and hosting it it Docker.
+* [Microservices hosted in Docker](microservices.md) This tutorial demonstrates building an ASP.NET Core microservice and hosting it in Docker.

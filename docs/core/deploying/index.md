@@ -95,8 +95,6 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
 The complete set of application  files can be deployed in any way you'd like. For example, you can package them in a zip file, use a simple `copy` command, or deploy them with any installation package of your choice.
 
-Before deploying your app, you can also use `crossgen` to convert it to native code. However, its performance impact is smaller than for self-contained deployments. For more information, see the [Native Image Generation](#crossgen) section.
-
 In addition to the application binaries, the installer should also either bundle the shared framework installer or check for it as a prerequisite as part of the application installation.  Installation of the shared framework requires Administrator/root access since it is machine-wide.
 
 ### Deploying a framework-dependent deployment with third-party dependencies ###
@@ -134,8 +132,6 @@ Deploying a Self-contained deployment has two major advantages:
 It also has a number of disadvantages:
 
 - Because .NET Core is included in your deployment package, you must select the target platforms for which you build deployment packages in advance.
-
-- Presently, the .NET Core runtime files are published from the NuGet cache, which means that they are not crossgen-ed. This can impact performance of your application. 
 
 - The size of your deployment package is relatively large, since you have to include .NET Core as well as your app and its third-party dependencies.
 
@@ -234,7 +230,7 @@ This creates a release (rather than a debug) version of your app for each target
 
 9. Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.
 
-The published files can be deployed in any way you'd like. For example, you can package them in a zip file, use a simple `copy` command, or deploy them with any installation package of your choice. Before packaging and deploying your app, you can also use `crossgen` to convert it to native code. For more information, see the [Native Image Generation](#crossgen) section.
+The published files can be deployed in any way you'd like. For example, you can package them in a zip file, use a simple `copy` command, or deploy them with any installation package of your choice. 
 
 The following is the complete `project.json` file for this project.
 
@@ -364,7 +360,7 @@ This creates a release (rather than a debug) version of your app for each target
 
 7. Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.
 
-The published files can be deployed in any way you'd like. For example, you can package them in a zip file, use a simple `copy` command, or deploy them with any installation package of your choice. Before packaging and deploying your app, you can also use `crossgen` to convert it to native code. For more information, see the [Native Image Generation](#crossgen) section.
+The published files can be deployed in any way you'd like. For example, you can package them in a zip file, use a simple `copy` command, or deploy them with any installation package of your choice. 
 
 The following is the complete `project.json` file for this project.
 
@@ -389,7 +385,3 @@ The following is the complete `project.json` file for this project.
      }
    }
 ```
-
-## <a name="crossgen"></a> Native image Generation ##
-
-NET Core uses a just in time (JIT) compiler that stores application code in an intermediate format and compiles it to native code at runtime.  To increase startup performance, the shared framework is pre-compiled using a tool called `crossgen`.  To improve performance of your application, you can use the same tool on your application's binaries.  Its performance impact is more noticeable when deploying a self-contained deploymentlication, since the entire framework is part of the application. Crossgen must be run on a machine of the same platform type that you are targeting, but need not be done on the same machine, unlike ngen for the desktop framework.  If you are producing a platform-specific installer for your application, we recommend that you crossgen as part of the installer build process.

@@ -1,6 +1,6 @@
 ---
 title: "Regular expression example: scanning for HREFs"
-description: Regular expression example: scanning for HREFs
+description: Regular expression example scanning for HREFs
 keywords: .NET, .NET Core
 author: stevehoag
 manager: wpickett

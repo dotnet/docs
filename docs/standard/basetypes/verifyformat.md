@@ -1,6 +1,6 @@
 ---
 title: "How to: verify that strings are in valid email format"
-description: How to: verify that strings are in valid email format
+description: How to verify that strings are in valid email format
 keywords: .NET, .NET Core
 author: stevehoag
 manager: wpickett

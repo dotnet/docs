@@ -1,6 +1,6 @@
 ---
 title: "How to: strip invalid characters from a string"
-description: How to: strip invalid characters from a string
+description: How to strip invalid characters from a string
 keywords: .NET, .NET Core
 author: stevehoag
 manager: wpickett

@@ -1,6 +1,6 @@
 ---
 title: "How to: extract a protocol and port number from a URL"
-description: How to: extract a protocol and port number from a URL
+description: How to extract a protocol and port number from a URL
 keywords: .NET, .NET Core
 author: stevehoag
 manager: wpickett

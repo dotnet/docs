@@ -1,6 +1,6 @@
 ---
 title: "How to: define and use custom numeric format providers"
-description: How to: define and use custom numeric format providers
+description: How to define and use custom numeric format providers
 keywords: .NET, .NET Core
 author: stevehoag
 manager: wpickett

@@ -1,6 +1,6 @@
 ---
 title: "How to: perform basic string manipulations"
-description: How to: perform basic string manipulations
+description: How to perform basic string manipulations
 keywords: .NET, .NET Core
 author: stevehoag
 manager: wpickett

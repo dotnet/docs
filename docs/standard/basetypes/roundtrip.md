@@ -1,6 +1,6 @@
 ---
 title: "How to: round-trip date and time values"
-description: How to: round-trip date and time values
+description: How to round-trip date and time values
 keywords: .NET, .NET Core
 author: stevehoag
 manager: wpickett

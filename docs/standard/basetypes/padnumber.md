@@ -1,6 +1,6 @@
 ---
 title: "How to: pad a number with leading zeros"
-description: How to: pad a number with leading zeros
+description: How to pad a number with leading zeros
 keywords: .NET, .NET Core
 author: stevehoag
 manager: wpickett

@@ -1,6 +1,6 @@
 ---
 title: "How to: display milliseconds in date and time values"
-description: How to: display milliseconds in date and time values
+description: How to display milliseconds in date and time values
 keywords: .NET, .NET Core
 author: stevehoag
 manager: wpickett

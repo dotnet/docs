@@ -1,6 +1,6 @@
 ---
 title: "Regular expression example: changing date formats"
-description: Regular expression example: changing date formats
+description: Regular expression example changing date formats
 keywords: .NET, .NET Core
 author: stevehoag
 manager: wpickett

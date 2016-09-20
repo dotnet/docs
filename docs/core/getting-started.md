@@ -20,7 +20,6 @@ ms.assetid: d1453a0d-317c-4da6-b68e-422a2c0bfe49
 
 Install .NET Core on [Windows](https://www.microsoft.com/net/core#windows) and see the [Prerequisites for Windows development](windows-prerequisites.md) topic for a list of the supported Windows versions.
 
-
 ## Linux
 
 Install .NET Core on your distribution/version:
@@ -32,13 +31,13 @@ Install .NET Core on your distribution/version:
 * [CentOS 7.1 & Oracle Linux 7.1](https://www.microsoft.com/net/core#centos)
 * [openSUSE 13.2](https://www.microsoft.com/net/core#opensuse)
 
-
 ## OS X / macOS
 
 Install .NET Core for [Mac OS X 10.11](https://www.microsoft.com/net/core#macos).
 
 **Note**: .NET Core is supported by 64-bit OS X 10.11 (El Capitan). It isn't yet supported by macOS Sierra, but will be soon.
 
+## Tutorials:
 
 You can get started developing .NET Core apps by following these step-by-step tutorials:
 

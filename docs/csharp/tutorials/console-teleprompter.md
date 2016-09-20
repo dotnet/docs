@@ -81,7 +81,7 @@ namespace TeleprompterConsole
 The first feature to add is to read a text file, and display all that text
 to the console. First, let’s add a text file. Copy the 
 [sampleQuotes.txt](https://github.com/dotnet/core-docs/blob/master/samples/csharp/getting-started/console-teleprompter/sampleQuotes.txt)
-file from the GitHub repository for this [sample](https://github.com/dotnet/core-docs/tree/master/samples/csharp/csharp/console-tconsole-teleprompter) into your project directory. 
+file from the GitHub repository for this [sample](https://github.com/dotnet/core-docs/tree/master/samples/csharp/getting-started/console-teleprompter) into your project directory. 
 This will serve as the script for your
 application.
 

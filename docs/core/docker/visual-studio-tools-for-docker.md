@@ -24,7 +24,7 @@ Developing and debugging your application in a Docker container can be a ceremon
 - [Docker For Windows](https://www.docker.com/products/docker#/windows) to run your Docker containers locally
 
 ## Installation and setup
-Download and install the [Visual Studio Tools for Docker](https://visualstudiogallery.msdn.microsoft.com/0f5b2caa-ea00-41c8-b8a2-058c7da0b3e4) from the [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/) or you can search for it in **Extensions and Updates** within Visual Studio. 
+Download and install the [Visual Studio Tools for Docker](https://aka.ms/DockerToolsForVS) from the [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/) or you can search for it in **Extensions and Updates** within Visual Studio. 
 
 A required configuration is to setup **[Shared Drives](https://docs.docker.com/docker-for-windows/#/shared-drives)** in Docker for Windows. The setting is required for the volume mapping and debugging support.
 
@@ -47,9 +47,9 @@ Project Context Menu
 The following files are added to the project.
 
 - **Dockerfile**: the Docker file for ASP.NET Core applications is based on the [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore) image. This image includes the ASP.NET Core NuGet packages, which have been pre-jitted improving startup performance. When building .NET Core Console Applications, the Dockerfile FROM will reference the most recent [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet) image.
-- **docker-compose.yml**: base Docker Compose file
-- **docker-compose.dev.debug.yml**: Docker Compose file with additional settings for ASPNETCORE_ENVIRONMENT, volume mapping and NuGet packages
-- **docker-compose.dev.release.yml**: Docker Compose file for settings in release mode, a subset of those in debug.
+- **docker-compose.yml**: base Docker Compose file used to define the collection of images to be built and run with docker-compose build/run.  
+- **docker-compose.dev.debug.yml**: additional docker-compose file with for iterative changes when your configuration is set to debug. Visual Studio will call -f docker-compose.yml -f docker-compose.dev.debug.yml to merge these together. This compose file is used by Visual Studio development tools.   
+- **docker-compose.dev.release.yml**: additional Docker Compose file to debug your release definition. It will volume mount the debugger so it doesn't change the contents of the production image.  
 
 The docker-compose.yml file contains the name of the image that is created when project is run. 
 
@@ -69,18 +69,19 @@ services:
 
 In this example, `image: user/hellodockertools${TAG}` generates the image `user/hellodockertools:dev` when the application is run in **Debug** mode and `user/hellodockertools:latest` in **Release** mode respectively. 
 
-You will want to change the `user` to your Docker Hub username if you plan to push the image to the registry. For example, `spboyer/hellodockertools`, or remove the `user/` for private registries depending on your configuration.
+You will want to change the `user` to your Docker Hub username if you plan to push the image to the registry. For example, `spboyer/hellodockertools`, or change to your private registry url `privateregistry.domain.com/` depending on your configuration.
 
 ### Debugging
 Select **Docker** from the debug dropdown in the toolbar and use F5 to start debugging the application. 
 
 - The microsoft/aspnetcore image is acquired (if not already in your cache)
 - ASPNETCORE_ENVIRONMENT is set to Development within the container
-- PORT 80 is EXPOSED and mapped to 32769 on your localhost
+- PORT 80 is EXPOSED and mapped to a dynamically assigned port for localhost. The port is determined by the docker host and can be queried with docker ps. 
 - Your application is copied to the container
-- Default browser is launched with the debugger attached to the container 
+- Default browser is launched with the debugger attached to the container, using the dynamically assigned port. 
 
 The resulting Docker image built is the `dev` image of your application with the `microsoft/aspnetcore` images as the base image.
+Note: the dev image is empty of your app contents as Debug confgurations use volume mounting to provide the iterative experience. To push an image, use the Release configuration.
 
 ```console
 REPOSITORY                  TAG         IMAGE ID            CREATED         SIZE
@@ -118,4 +119,3 @@ microsoft/aspnetcore       1.0.1               189ad4312ce7        5 days ago   
 ```
 
 There may be an expectation for the production or release image to be smaller in size by comparison to the **dev** image, however through the use of the volume mapping; the debugger and application were actually being run from your local machine and not within the container. The **latest** image has packaged the entire application code needed to run the application on a host machine, therefore the delta is the size of your application code.
-

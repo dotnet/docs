@@ -42,5 +42,5 @@ Install .NET Core for [Mac OS X 10.11](https://www.microsoft.com/net/core#macos)
 You can get started developing .NET Core apps by following these step-by-step tutorials:
 
 * [Getting started with .NET Core on Windows, using Visual Studio 2015](tutorials/using-on-windows.md) - Use [Visual Studio](https://www.visualstudio.com/), the full-featured integrated development environment (IDE) for Windows.  
-* [Getting started with .NET Core on any platform, using Visual Studio Code](tutorials/using-on-macos.md) - Use [Visual Studio Code](https://www.visualstudio.com/products/code-vs), Microsoft's lightweight cross-platform code editor. This tutorial is written for macOS, but Visual Studio Code also works on Windows and Linux.
+* [Getting started with .NET Core on any platform, using Visual Studio Code](tutorials/using-on-macos.md) - Use [Visual Studio Code](http://code.visualstudio.com/), Microsoft's lightweight cross-platform code editor. This tutorial is written for macOS, but Visual Studio Code also works on Windows and Linux.
 * [Getting started with .NET Core using the command line](tutorials/using-with-xplat-cli.md) - Use any code editor with the [.NET Core cross-platform command-line interface (CLI)](tools/index.md).

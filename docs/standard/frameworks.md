@@ -4,7 +4,7 @@ description: Frameworks
 keywords: .NET, .NET Core
 author: richlander
 manager: wpickett
-ms.date: 09/01/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies

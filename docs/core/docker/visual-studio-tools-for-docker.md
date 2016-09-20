@@ -20,11 +20,11 @@ Developing and debugging your application in a Docker container can be a ceremon
 
 ## Prerequisites
 - [Microsoft Visual Studio 2015 Update 3](https://www.visualstudio.com/downloads/download-visual-studio-vs)
-- [Microsoft .NET Core 1.0.1 RTM VS 2015 Tooling Preview 2, with the 1.0.1 updates](https://go.microsoft.com/fwlink/?LinkID=827546)
+- [.NET Core 1.0.1 - VS 2015 Tooling Preview 2](https://go.microsoft.com/fwlink/?LinkID=827546)
 - [Docker For Windows](https://www.docker.com/products/docker#/windows) to run your Docker containers locally
 
 ## Installation and setup
-Download and install the [Visual Studio Tools for Docker](https://visualstudiogallery.msdn.microsoft.com/0f5b2caa-ea00-41c8-b8a2-058c7da0b3e4) from the [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/).
+Download and install the [Visual Studio Tools for Docker](https://visualstudiogallery.msdn.microsoft.com/0f5b2caa-ea00-41c8-b8a2-058c7da0b3e4) from the [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/) or you can search for it in **Extensions and Updates** within Visual Studio. 
 
 A required configuration is to setup **[Shared Drives](https://docs.docker.com/docker-for-windows/#/shared-drives)** in Docker for Windows. The setting is required for the volume mapping and debugging support.
 
@@ -34,7 +34,7 @@ Right click the Docker icon in the System Tray, click Settings and select Shared
 
 ## Create an ASP.NET Web Application and add Docker Support
 
-Using Visual Studio, create a new ASP.NET Core Web Application. When the application is loaded, either select **Add Docker Support** from the **Project Menu** or right click the project from the Solution Explorer and select Add > Docker Support.
+Using Visual Studio, create a new ASP.NET Core Web Application. When the application is loaded, either select **Add Docker Support** from the **Project Menu** or right click the project from the Solution Explorer and select **Add** > **Docker Support**.
 
 Project Menu
 
@@ -44,9 +44,9 @@ Project Context Menu
 
 ![Right Click Add Docker Support](./media/visual-studio-tools-for-docker/right-click-add-docker-support.png)
 
-The following files are added the to the project.
+The following files are added to the project.
 
-- **Dockerfile**: the Docker file for ASP.NET Core applications is based on the [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore) image. This image includes the ASP.NET Core NuGet packages, which have been pre-jitted improving startup performance. When building .NET Core Console Applications, the Dockerfile FROM will reference the [microsoft/dotnet:1.0.1](https://hub.docker.com/r/microsoft/dotnet) image.
+- **Dockerfile**: the Docker file for ASP.NET Core applications is based on the [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore) image. This image includes the ASP.NET Core NuGet packages, which have been pre-jitted improving startup performance. When building .NET Core Console Applications, the Dockerfile FROM will reference the most recent [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet) image.
 - **docker-compose.yml**: base Docker Compose file
 - **docker-compose.dev.debug.yml**: Docker Compose file with additional settings for ASPNETCORE_ENVIRONMENT, volume mapping and NuGet packages
 - **docker-compose.dev.release.yml**: Docker Compose file for settings in release mode, a subset of those in debug.

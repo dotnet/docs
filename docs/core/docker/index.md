@@ -17,6 +17,6 @@ ms.assetid: cae32148-aef4-4e64-a7f0-88072bad4400
 The following tutorials are available for learning about using Docker with .NET Core.
 
 - [Building Docker Images for .NET Core Applications](building-net-docker-images.md)
-
+- [Visual Studio Tools for Docker](visual-studio-tools-for-docker.md)
 
 For tutorials about developing ASP.NET Core web applications, we suggest you head over to [ASP.NET Core documentation](https://docs.asp.net).

@@ -13,7 +13,7 @@ ms.assetid: 8db75596-19a9-4eda-b20d-a12d517c8cc1
 
 # Getting Started with F# in Visual Studio
 
-F# and the Visual F# tooling are supported in the Visual Studio IDE.  To begin, you should [download Visual Studio](https://visualstudio.com/downloads/), if you haven't already.  This article uses the Visual Studio 2015 Community Edition, but you can use F# with the version of your choice.
+F# and the Visual F# tooling are supported in the Visual Studio IDE.  To begin, you should [download Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs), if you haven't already.  This article uses the Visual Studio 2015 Community Edition, but you can use F# with the version of your choice.
 
 ## Installing the Visual F# Tools
 

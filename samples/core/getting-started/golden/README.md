@@ -1,7 +1,7 @@
 Getting Started using Visual Studio Code Sample
 ================
 
-This sample is part of the [Getting started with .NET Core on macOS, using Visual Studio Code](../../../docs/core/tutorials/using-on-macos.md)
+This sample is part of the [Getting started with .NET Core on macOS, using Visual Studio Code](../../../../docs/core/tutorials/using-on-macos.md)
 walkthrough. Please see that topic for detailed steps on the code
 for this sample.
 

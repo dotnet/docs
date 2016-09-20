@@ -291,6 +291,7 @@
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
 ## [Docker](core/docker/index.md)
 ### [Building Docker Images for .NET Core Applications](core/docker/building-net-docker-images.md)
+### [Visual Studio Tools for Docker](core/docker/visual-studio-tools-for-docker.md)
 ## [Unit Testing](core/testing/index.md)
 ### [Unit Testing with dotnet test](core/testing/unit-testing-with-dotnet-test.md)
 ### [Unit testing with MSTest on Windows](core/testing/using-mstest-on-windows.md)

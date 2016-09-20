@@ -4,7 +4,7 @@ description: .NET Core Prerequisites
 keywords: .NET, .NET Core
 author: billwagner
 manager: wpickett
-ms.date: 07/27/2016
+ms.date: 09/15/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 ---
 
-# Prerequisites for Windows Development
+# Prerequisites for Windows development
 
 .NET Core development on Windows with Visual Studio requires:
 
@@ -21,12 +21,17 @@ ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 * NuGet Manager extension for Visual Studio
 * .NET Core Tooling Preview 2
 
-## Supported Windows Versions
+## Supported Windows versions
 
-.NET Core 1.0 is supported on the following versions of Windows:
+.NET Core is supported by the following versions of Windows:
 
-- Windows 7+ / Server 2012 R2+
-- Windows Nano Server TP5
+* Windows 7 SP1
+* Windows 8.1
+* Windows 10
+* Windows Server 2008 R2 SP1 (Full Server or Server Core)
+* Windows Server 2012 SP1 (Full Server or Server Core)
+* Windows Server 2012 R2 SP1 (Full Server or Server Core)
+* Windows Server 2016 (Full Server, Server Core or Nano Server)
 
 You can see the full set of [supported operating systems](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0.md#rtm-platform-support) in the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0.md).
 
@@ -46,21 +51,21 @@ The Visual C++ Redistributable version differs by Windows version.
 
 You need Visual Studio 2015 to develop .NET Core apps. You can download [Visual Studio Community 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs) for free. 
 
-Verify that you're running [Visual Studio 2015 Update 3.3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs):
+Verify that you're running [Visual Studio 2015 Update 3.3](https://msdn.microsoft.com/library/mt752379.aspx):
 
 * On the **Help** menu, choose **About Microsoft Visual Studio**.
-* In the About Microsoft Visual Studio dialog, the version number should be 14.0.25424.00 or higher, and include "Update 3".
-* If you don't have Update 3, you can download and install [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
-* If you have Update 3, you download and install [Visual Studio 2015 Update 3.3](https://msdn.microsoft.com/library/mt752379.aspx).
+* In the **About Microsoft Visual Studio** dialog, the version number should be 14.0.25424.00 or higher, and include "Update 3".
+* If you don't have Update 3, you first need to download and install [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
+* If you have Update 3 but the version number is smaller than 14.0.25424.00, you need to download and install [Visual Studio 2015 Update 3.3](https://msdn.microsoft.com/library/mt752379.aspx).
 
-You can read more about the changes in Update 3.3 in the [release notes](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
+You can read more about the changes in Update 3 in the [release notes](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
 
 ## NuGet Manager extension for Visual Studio
 
 NuGet is the package manager for the Microsoft development platform including .NET Core. You need [NuGet 3.5.0](https://dist.nuget.org/visualstudio-2015-vsix/v3.5.0-beta/NuGet.Tools.vsix) or higher to build .NET Core apps.
 
-## .NET Core Tools for Visual Studio 2015
+## .NET Core tools for Visual Studio 2015
 
-Download and install the [.NET Core Tooling Preview 2 for Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkID=824849). 
+Download and install the [.NET Core 1.0.1 - VS 2015 Tooling Preview 2](https://go.microsoft.com/fwlink/?LinkID=827546). 
 
 The .NET Core Tooling package installs .NET Core, project templates and other tools for Visual Studio 2015.

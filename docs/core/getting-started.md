@@ -37,7 +37,7 @@ Install .NET Core for [Mac OS X 10.11](https://www.microsoft.com/net/core#macos)
 
 **Note**: .NET Core is supported by 64-bit OS X 10.11 (El Capitan). It isn't yet supported by macOS Sierra, but will be soon.
 
-## Tutorials:
+## Tutorials
 
 You can get started developing .NET Core apps by following these step-by-step tutorials:
 

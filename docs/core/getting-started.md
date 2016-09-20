@@ -4,7 +4,7 @@ description: Getting started with .NET Core
 keywords: .NET, .NET Core
 author: mairaw
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 09/15/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -14,7 +14,7 @@ ms.assetid: d1453a0d-317c-4da6-b68e-422a2c0bfe49
 
 # Getting started with .NET Core
 
-.NET Core runs on [Windows](#windows), [Linux](#linux), and [macOS / OS X](#macos)
+.NET Core runs on [Windows](#windows), [Linux](#linux), and [macOS / OS X](#os-x--macos).
 
 ## Windows
 
@@ -26,15 +26,7 @@ You can get started developing .NET Core apps by following these step-by-step tu
 * [Getting started with .NET Core on macOS, using Visual Studio Code](tutorials/using-on-macos.md) - Use [Visual Studio Code](https://www.visualstudio.com/products/code-vs), Microsoft's lightweight cross-platform code editor. This tutorial is written for macOS, but Visual Studio Code also works on Windows.
 * [Getting started with .NET Core using the command line](tutorials/using-with-xplat-cli.md) - Use any code editor with the [.NET Core cross-platform command-line interface (CLI)](tools/index.md).
 
-.NET Core is supported by the following versions of Windows (both 32-bit and 64-bit):
-
-* Windows 7 SP1
-* Windows 8.1
-* Windows 10
-* Windows Server 2008 R2 SP1 (Full Server or Server Core)
-* Windows Server 2012 SP1 (Full Server or Server Core)
-* Windows Server 2012 R2 SP1 (Full Server or Server Core)
-* Windows Server 2016 (Full Server, Server Core or Nano Server)
+See the [Prerequisites for Windows development](windows-prerequisites.md) topic for a list of the supported Windows versions. 
 
 ## Linux
 
@@ -54,7 +46,6 @@ You can get started developing .NET Core apps by following these step-by-step tu
 
 .NET Core is supported by the Linux distributions and versions listed above in the installation links.
 
-<a name="macos"></a>
 ## OS X / macOS
 
 Install .NET Core for [Mac OS X 10.11](https://www.microsoft.com/net/core#macos).

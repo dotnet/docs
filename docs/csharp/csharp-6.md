@@ -26,7 +26,7 @@ productivity for developers. Features in this release include:
 * [Exception filters](#Exception-Filters)
 * [nameof Expressions](#nameof-Expressions)
 * [await in catch and finally blocks](#Await-in-Catch-and-Finally-blocks)
-* [index initializers](Index-Initializers)
+* [index initializers](#Index-Initializers)
 * [Extension methods for collection initializers](#Extension-Add-methods-in-collection-initializers)
 * [Improved overload resolution](#Improved-overload-resolution)
 
@@ -517,11 +517,11 @@ if any, is lost.
 initializers more consistent. In earlier releases of C#, you could use
 ***collection initializers*** only with sequence style collections:
 
-[!code-csharp[ListInitializer](../../samples/snippets/csharp/new-in-6/initializer.cs#L7-L12)]
+[!code-csharp[ListInitializer](../../samples/snippets/csharp/new-in-6/initializers.cs#L7-L12)]
 
 Now, you can also use them with `Dictionary` collections and similar types:
 
-[!code-csharp[ListInitializer](../../samples/snippets/csharp/new-in-6/initializer.cs#L14-L18)]
+[!code-csharp[ListInitializer](../../samples/snippets/csharp/new-in-6/initializers.cs#L14-L18)]
 
 This features means that associative containers can be initialized using
 syntax similar to what's been in place for sequence containers for several

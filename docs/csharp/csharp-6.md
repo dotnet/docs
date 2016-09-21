@@ -23,12 +23,12 @@ productivity for developers. Features in this release include:
 * [using static](#using-static)
 * [Null - conditional operators](#null-conditional-operators)
 * [String Interpolation](#String-Interpolation)
-* nameof Expressions
-* index initializers
-* Extension methods for collection initializers
-* Exception filters
-* await in catch and finally blocks
-* improved overload resolution
+* [Exception filters](#Exception-Filters)
+* [nameof Expressions](#nameof-Expressions)
+* [await in catch and finally blocks](#Await-in-Catch-and-Finally-blocks)
+* [index initializers](Index-Initializers)
+* [Extension methods for collection initializers](#Extension-Add-methods-in-collection-initializers)
+* [Improved overload resolution](#Improved-overload-resolution)
 
 The overall effect of these features is that you write more concise code
 that is also more readable. The syntax contains less ceremony for many
@@ -187,7 +187,7 @@ However, the extension methods are only in scope when called as extension
 methods. They are not in scope if they are called as though they are static
 methods:
 
-[!code-csharp[UsingStaticLinq](../../samples/snippets/csharp/new-in-6/newcode.cs#L27-L32)]
+[!code-csharp[UsingStaticLinq](../../samples/snippets/csharp/new-in-6/newcode.cs#L36-L41)]
 
 This decision is because extension methods are typically called using
 extension method invocation expressions. In the rare case where they are
@@ -208,7 +208,7 @@ and fluid.
 Simply replace the member access `.` with `?.`:
 
 ```csharp
-[!code-csharp[NullConditional](../../samples/snippets/csharp/new-in-6/program.cs#L14-L14)]
+[!code-csharp[NullConditional](../../samples/snippets/csharp/new-in-6/program.cs#L16-L16)]
 ```
 
 In the above example, the variable `first` is assigned `null` if the person object
@@ -223,7 +223,7 @@ expresion.
 You can often use this construct with the ***null coalescing*** operator to assign`
 default values when one of the properties are null:
 
-[!code-csharp[NullCoalescing](../../samples/snippets/csharp/new-in-6/program.cs#L16-L16)]
+[!code-csharp[NullCoalescing](../../samples/snippets/csharp/new-in-6/program.cs#L18-L18)]
 
 The right hand side operand of the `?.` operator is not limited to properties or fields.
 You can also use it to conditionally invoke methods. The most common use of member functions
@@ -285,301 +285,231 @@ like `string.Format`:
 
 [!code-csharp[stringFormat](../../samples/snippets/csharp/new-in-6/oldcode.cs#L16-L22)]
 
-With C# 6, the new string interpolation feature enables you to embed the expressions in
-the format string. Simple preface the string with `$`:
+With C# 6, the new string interpolation feature enables you to embed
+the expressions in the format string. Simple preface the string with
+`$`:
 
 [!code-csharp[stringInterpolation](../../samples/snippets/csharp/new-in-6/newcode.cs#L23-L23)]
 
-This initial example used variable expressions for the substituted expressions.
-You can expand on this syntax to use any expression. For example, you could
-compute a student's grade point average as part of the interpolation:
+This initial example used variable expressions for the substituted
+expressions. You can expand on this syntax to use any expression. For
+example, you could compute a student's grade point average as part of
+the interpolation:
 
-[!code-csharp[stringInterpolation](../../samples/snippets/csharp/new-in-6/newcode.cs#L27-L28)]
+[!code-csharp[stringInterpolationExpression](../../samples/snippets/csharp/new-in-6/newcode.cs#L27-L28)]
 
-{{{ HERE }}}}
-Running the above example, you would find that the output for `Distance` might have
-more decimal places than you would like. The string interpolation syntax supports
-all the format strings available using earlier formatting methods. You add
-the format strings inside the braces. Add a `:` following the expression to format:
+Running the above example, you would find that the output for `Grades.Average()`
+might have more decimal places than you would like. The string interpolation
+syntax supports all the format strings available using earlier formatting
+methods. You add the format strings inside the braces. Add a `:` following
+the expression to format:
+
+[!code-csharp[stringInterpolationFormat](../../samples/snippets/csharp/new-in-6/newcode.cs#L30-L31)]
+
+The above line of code will format the value for `Grades.Average()` as
+a floating point number with 2 decimal places.
+
+The `:` is always interpreted as the separator between the expression
+being formatted and the format string. This can introduce problems when
+your expression uses a `:` in another way, such as a conditional operator:
 
 ```csharp
-var distance = @"the point [{X:F2}, {Y:F2}] is {Math.Sqrt(X * X + Y + Y):F2} from the origin";
-```
-
-The above line of code will format the values for `X`, `Y` and distance
-as a floating point number with 2 decimal places.
-
-The `:` is always interpreted as the separator between the expression being 
-formatted and the format string. This can introduce problems when your expression
-uses a `:` in another way, such as a conditional operator:
-
-```csharp
-// need a better example here.
+public string GetGradePointPercentages() =>
+    $"Name: {LastName}, {FirstName}. G.P.A: {Grades.Any() ? Grades.Average() : double.NaN:F2}";
 ```
 
 Above, the `:` is parsed as the beginning of the format string, not part
-of the conditional operator. In all cases where this happens, you can surround
-the expression with parentheses to force the compiler to interpret
+of the conditional operator. In all cases where this happens, you can
+surround the expression with parentheses to force the compiler to interpret
 the expression as you intend:
 
-```csharp
-// also a better example.
-```
+[!code-csharp[stringInterpolationConditional](../../samples/snippets/csharp/new-in-6/newcode.cs#L33-L34)]
 
-There aren't any limitations on the expressions you can place between the braces.
-You can execute a complex LINQ query inside an interpolated string to perform
-computations and display the result:
+There aren't any limitations on the expressions you can place between
+the braces. You can execute a complex LINQ query inside an interpolated
+string to perform computations and display the result:
 
-```csharp
-// Dig up the big one from the user group demos.
-```
+[!code-csharp[stringInterpolationConditional](../../samples/snippets/csharp/new-in-6/newcode.cs#L43-L45)]
 
-You can also nest interpolated strings inside other interpolated string expressions:
-
-```csharp
-// one final difficult example.
-```
+You can see from the above sample that you can even nest a string interpolation
+expression inside another string interpolation expression. The example
+above is very likely more complex than you would want in production code.
+Rather, it is illustrative of the breadth of the feature. Any C# expression
+can be placed between the curly braces of an interpolated string.
 
 ### String Interpolation and Specific Cultures
 
 All the examples shown above will format the strings using the current
-culture and language set on the machine where the code executes. Often you may
-want need to format the string produced using a specific culture. The object
-produced from a string interpolation is a type that has an implicit conversion
-to either `System.String` or `System.IFormattableString`.
+culture and language on the machine where the code executes. Often you
+may want need to format the string produced using a specific culture.
+The object produced from a string interpolation is a type that has an
+implicit conversion to either `System.String` or `System.IFormattableString`.
 
-The `FormattableString` type contains the format string, and the results of evaluating
-the arguments before converting them to strings. You can use public methods of `FormattableString`
-to specify the culture when formatting a string. For example, this will produce a string
-using German as the language and culture. (It will use the ',' character to separate the integer
-portion from the decimal portion, and the '.' character as the thousands separator.)
+The `FormattableString` type contains the format string, and the results
+of evaluating the arguments before converting them to strings. You can
+use public methods of `FormattableString` to specify the culture when
+formatting a string. For example, the following will produce a string
+using German as the language and culture. (It will use the ',' character
+to separate the integer portion from the decimal portion of a number,
+and the '.' character as the thousands separator.)
 
 ```csharp
-FormattableString str = @"the point [{X}, {Y}] is {Math.Sqrt(X * X + Y + Y)} from the origin";
-var distance = string.Format(null, 
+FormattableString str = @"Average grade is {s.Grades.Average()}";
+var gradeStr = string.Format(null, 
     System.Globalization.CultureInfo.CreateSpecificCulture("de-de"),
     str.GetFormat(), str.GetArguments());
 ```
 
-In general, string interpolation expressions produce strings as their output. However,
-when you want greater control over the culture used to format the string, you can
-specify a specific output.  If this is a capability you often need, you can create
-convenience methods, as extension methods, to enable easy formating with specific 
-cultures:
+> [!NOTE]
+> The above example is not supported in .NET Core version 1.0.1. It is
+> only supported in the full .NET Framework.
 
-```csharp
-// something like:
-
-publist static string AsGerman(this FormattableString src)
-{
-    return string.Format(...);
-}
-
-// call it:
-var result = 
-@"the point [{X}, {Y}] is {Math.Sqrt(X * X + Y + Y)} from the origin".AsGerman(); 
-```
+In general, string interpolation expressions produce strings as their
+output. However, when you want greater control over the culture used to
+format the string, you can specify a specific output.  If this is a capability
+you often need, you can create convenience methods, as extension methods,
+to enable easy formating with specific cultures.
 
 ## Exception Filters
 
-Another new feature in C# 6 is ***exception filters***. Exception Filters are
-clauses that determine when a given catch clause should be applied. If the 
-expression used for an exception filter evaluates to `true`, the catch clause
-performs its normal procesing on an exception.
+Another new feature in C# 6 is ***exception filters***. Exception Filters
+are clauses that determine when a given catch clause should be applied.
+If the expression used for an exception filter evaluates to `true`, the
+catch clause performs its normal procesing on an exception. If the
+expression evaluates to `false`, then the `catch` clause is skipped.
 
 One use is to examine information about an exception to determine if a
 catch clause can process the exception:
 
-```csharp
-// basic example, using some property of a network exception.
-```
+[!code-csharp[ExceptionFilter](../../samples/snippets/csharp/new-in-6/NetworkClient.cs#L8-L20)]
 
 The code generated by exception filters provides better information about
-an exception that is thrown and not processed. Before exception filters were added to the language
-you would need to create code like the following:
+an exception that is thrown and not processed. Before exception filters
+were added to the language you would need to create code like the following:
 
-```csharp
-// old school version of previous example
-```
+[!code-csharp[ExceptionFilterOld](../../samples/snippets/csharp/new-in-6/NetworkClient.cs#L75-L89)]
 
-The point where the exception is thrown changes between these two examples. In
-the previous code, where a `throw` clause is used, any stack trace analysis or examination
-of crash dumps will show that the exception was thrown from the `throw` statement in
-your catch clause. The actual exception object will contain the original call stack, but
-all other information about any variables in the call stack between this throw point and
-the location of the original error has been lost. 
+The point where the exception is thrown changes between these two examples.
+In the previous code, where a `throw` clause is used, any stack trace
+analysis or examination of crash dumps will show that the exception was
+thrown from the `throw` statement in your catch clause. The actual exception
+object will contain the original call stack, but all other information
+about any variables in the call stack between this throw point and the
+location of the original error has been lost. 
 
-Contrast that with how the code using an exception filter is processed: The exception filter
-expression evaluates to `false`. Execution never enters the `catch` clause. No stack
-unwinding takes place. The original throw location is preserved for any debugging activities
-that would take place later.
+Contrast that with how the code using an exception filter is processed:
+The exception filter expression evaluates to `false`. Execution never
+enters the `catch` clause. No stack unwinding takes place. The original
+throw location is preserved for any debugging activities that would take
+place later.
 
-Whenever you need to evaluate fields or properties of an exception, instead of
-relying on solely on the exception type, use an exception filter to
+Whenever you need to evaluate fields or properties of an exception, instead
+of relying on solely on the exception type, use an exception filter to
 preserve more debugging information.
 
 Another recommended pattern with exception filters is to use them for
-logging routines. This usage also leverages the manner in which the
-exception throw point is preserved when an exception filter evaluates to `false`.
+logging routines. This usage also leverages the manner in which the exception
+throw point is preserved when an exception filter evaluates to `false`.
 
 A logging method would be a method whose argument is the exception that
 unconditionally returns `false`:
 
-```csharp
-public static bool LogException(Exception e)
-{
-    Console.Error.WriteLine(@"Exceptions happen: {e}");
-    return false;
-}  
-```
+[!code-csharp[ExceptionFilterLogging](../../samples/snippets/csharp/new-in-6/ExceptionFilterHelpers.cs#L7-L11)]
 
 Whenever you want to log an exception, you can add a catch clause, and
 use this method as the exception filter:
 
-```csharp
-public void MethodThatFailsSometimes()
-{
-    try {
-        PerformFailingOperation();
-    } catch (Exception e) when (LogException(e))
-    {
-        // This is never reached!
-    }
-} 
-```
+[!code-csharp[LogException](../../samples/snippets/csharp/new-in-6/program.cs#L36-L44)]
 
 The exceptions are never caught, because the `LogException` method always
 returns `false`. That always false exception filte means that you can
 place this logging handler before any other exception handlers:
 
+[!code-csharp[LogExceptionRecovery](../../samples/snippets/csharp/new-in-6/program.cs#L46-L61)]
 
-```csharp
-public void MethodThatFailsSometimes()
-{
-    try {
-        PerformFailingOperation();
-    } catch (Exception e) when (LogException(e))
-    {
-        // This is never reached!
-    }
-    catch (RecoverableException ex)
-    {
-        // This can still catch the more specific
-        // exception because the exception filter
-        // above always returns false.
-        // perform recovery here 
-    }
-} 
-```
+The above example highlights a very important facet of exception filters.
+The exception filters enable scenarios where a more general exception
+catch clause may appear before a more specific one. It's also possible
+to have the same exception type appear in multiple catch clauses:
 
-The above example highlights a very important facet of
-exception filters. The exception filters enable scenarios
-where a more general exception catch clause may appear before
-a more specific one. It's also possible to have the same
-exception type appear in multiple catch clauses:
+[!code-csharp[HandleNotChanged](../../samples/snippets/csharp/new-in-6/NetworkClient.cs#L20-L34)]
 
-```csharp
-// Example that catches an exception with a property. 
-// Add a catch clause with different where clauses
-// for values of the property.
-```
+Another recommended pattern helps prevent catch clauses from processing
+exceptions when a debugger is attached. This technique enables you to
+run an application with the debugger, and stop execution when an exception
+is thrown.
 
-Another recommended pattern is to prevent catch clauses
-from processing exceptions when a debugger is attached.
-This technique enables you to run an application with
-the debugger, and stop execution when an exception is thrown.
+In the code, add an exception filter so that any recovery code executes
+only when a debugger is not attached:
 
-In the code, add an exception filter so that any recovery code
-executes only when a debugger is not attached:
+[!code-csharp[LogExceptionDebugger](../../samples/snippets/csharp/new-in-6/program.cs#L64-L78)]
 
-```csharp
-public void MethodThatFailsSometimes()
-{
-    try {
-        PerformFailingOperation();
-    } catch (Exception e) when (LogException(e))
-    {
-        // This is never reached!
-    }
-    catch (RecoverableException ex) when (!System.Diagnostics.Debugger.IsAttached)
-    {
-        // Only catch exceptions when a debugger is not attached.
-        // Otherwise, this shouls stop in the debugger. 
-    }
-} 
-```
+After adding this in code, you set your debugger to break on all unhandled
+exceptions. Run the program under the debugger, and the debugger breaks
+whenever `PerformFailingOperation()` throws a `RecoverableException`.
+The debugger breaks your program, because the catch clause won't be executed
+due to the false-returning exception filter.
 
-After adding this in code, you set your debugger to break on all
-unhandled exceptions. Run the program under the debugger, and the
-debugger breaks whenever `PerformFailingOperation()` throws a
-`RecoverableException`. The debugger breaks your program, because
-the catch clause won't be executed due to the false-returning
-exception filter.
-
-## nameof Expressions
-
+## `nameof` Expressions
 
 The `nameof` expression evaluates to the name of a symbol. It's a great
 way to get tools working with you whenever you need the name of a variable,
 a property, or a member field.
 
-One of the most common uses for `nameof` is to provide the name of the
-argument that caused an `ArgumentNullException`:
+One of the most common uses for `nameof` is to provide the name of a symbol
+that caused an exception:
 
-```csharp
-public void UpdateLabel(string newLabel)
-{
-    if (newLabel == null)
-        throw new ArgumentNullException(nameof(newLabel), "the new label cannot be null");
-}
-```
+[!code-csharp[nameof](../../samples/snippets/csharp/new-in-6/NewCode.cs#L13-L14)]
 
 Another use is with XAML based applications that implement the `INotifyPropertyChanged`
 interface:
 
-```csharp
-public string LastName
-{
-    get { return lastName; }
-    set
-    {
-        if (lastName != value)
-        {
-            lastName = value;
-            OnPropertyChanged?.Invoke(this, nameof(LastName));
-        }
-    }
-}
-```
+[!code-csharp[nameofNotify](../../samples/snippets/csharp/new-in-6/viewmodel.cs#L5-L23)]
 
-The advantage of using the `nameof` operator over a constant string
-is that tools can understand the symbol. If you use refactoring tools
-to rename the symbol, it will rename it in the `nameof` expression.
-Constant strings don't have that advantage.
+The advantage of using the `nameof` operator over a constant string is
+that tools can understand the symbol. If you use refactoring tools to
+rename the symbol, it will rename it in the `nameof` expression. Constant
+strings don't have that advantage. Try it yourself in your favorite editor:
+Rename a variable, and any nameof expressions will update as well.
+
+The `nameof` expression produces the unqualified name of its argument
+(`LastName` in the examples above) even if you use the fully qualified
+name for the argument:
+
+[!code-csharp[nameofNotify](../../samples/snippets/csharp/new-in-6/viewmodel.cs#L24-L37)]
+
+The above `nameof` expression produces `FirstName`, not `UXComponents.ViewModel.FirstName`.
 
 ## Await in Catch and Finally blocks
 
 C# 5 had several limitations around where you could place `await` expressions.
-One of those has been removed in C# 6. You can now use `await` in `catch` or
-`finally` expressions. 
+One of those has been removed in C# 6. You can now use `await` in `catch`
+or `finally` expressions. 
 
-The addition of await expressions in catch and finally blocks may
-appear to complicate how those are processed. Let's add an example
-to discuss how this appears:
+The addition of await expressions in catch and finally blocks may appear
+to complicate how those are processed. Let's add an example to discuss
+how this appears. In any async method, you can use an await expression
+in a finally clause:
 
-```csharp
-// Example outline:
+[!code-csharp[AwaitFinally](../../samples/snippets/csharp/new-in-6/NetworkClient.cs#L35-L52)]
 
-// First, add an await in a finally, and show that happens
-// upstream: it's just like normal await expressions.
+With C# 6, you can also await in catch expressions. This is most often
+used with logging scenarios:
 
-// Now, add an await in the catch clause. Again, not so hard.
+[!code-csharp[AwaitFinally](../../samples/snippets/csharp/new-in-6/NetworkClient.cs#L41-L48)]
 
-// Now, modify the async code so that it does throw a 
-// new exception. Explain the flow (how the catch clause throws
-// a new exception when the awaited task completed. This results
-// in a faulted task upstream.)
-```
+The implementation details for adding `await` support inside `catch`
+and `finally` clauses ensures that the behavior is consistent with the
+behavior for synchronous code. When code executed in a `catch` or `finally`
+clause throws, execution looks for a suitable `catch` clause in the next
+surrounding block. If there was a current exception, that exception is
+lost. The same happens with `await`ed expressions in `catch` and `finally`
+clauses: a suitable `catch` is searched for, and the current exception,
+if any, is lost.  
+
+> [!NOTE]
+> This behavior is the reason it's recommended to write `catch` and `finally`
+> clauses carefully, to avoid introducing new exceptions.
 
 ## Index Initializers
 
@@ -587,50 +517,58 @@ to discuss how this appears:
 initializers more consistent. In earlier releases of C#, you could use
 ***collection initializers*** only with sequence style collections:
 
-```csharp
-// example with a List
-```
+[!code-csharp[ListInitializer](../../samples/snippets/csharp/new-in-6/initializer.cs#L7-L12)]
 
 Now, you can also use them with `Dictionary` collections and similar types:
 
-```csharp
-// example with a Dictionary collection
-```
+[!code-csharp[ListInitializer](../../samples/snippets/csharp/new-in-6/initializer.cs#L14-L18)]
 
-### Extension add methods in collection initializers
+This features means that associative containers can be initialized using
+syntax similar to what's been in place for sequence containers for several
+versions.
 
-Another feature that makes collection initialization easier is the
-ability for an extension method to the accessible `Add` method
-that enables collection initializers.
+### Extension `Add` methods in collection initializers
 
-This feature is added for parity with Visual Basic.
+Another feature that makes collection initialization easier is the ability
+to use an ***extension method*** for the `Add` method. This feature was
+added for parity with Visual Basic. 
 
-For example:
+The feature is most useful when you have a custom collection class that
+has a method with a different name to semantically add new items:
 
-```csharp
-// Define custom collection that doesn't implement Add
-```
+For example, consider a collection of students like this:
+
+[!code-csharp[Enrollment](../../samples/snippets/csharp/new-in-6/enrollment.cs#L5-L24)]
+
+The `Enroll` method adds a student. But it doesn't follow the `Add` pattern.
+In previous versions of C#, you could not use collection initializers with an
+`Enrollment` object:
+
+[!code-csharp[InitializeEnrollment](../../samples/snippets/csharp/new-in-6/classList.cs#L7-L11)]
+
+Now you can, but only if you create an extension method that maps `Add` to
+`Enroll`:
+
+[!code-csharp[ExtensionAdd](../../samples/snippets/csharp/new-in-6/classList.cs#L15-L18)]
 
 ## Improved overload resolution
 
-This last feature is one you probably won't notice. There were
-times when the previous version of the C# compiler may have found
-some method calls involving lambda expressions ambiguious:
+This last feature is one you probably won't notice. There were constructs
+where the previous version of the C# compiler may have found some method
+calls involving lambda expressions ambiguious. Consider this method:
 
-```csharp
-// Dig up the one example that failed
+[!code-csharp[AsyncMethod](../../samples/snippets/csharp/new-in-6/overloads.cs#L7-L10)]
 
-static Task DoThings() { return Task.FromResult(0);
+In earlier versions of C#, calling that method using the method group
+syntax would fail:
 
-Task.Run(DoThings); // failed.
-// Could have been Task.Run(Action) or Task.Run(Func<Task>);
-// Now, correctly picks Task.Run(Func<Task>()
+[!code-csharp[MethodGroup](../../samples/snippets/csharp/new-in-6/overloads.cs#L14-L14)]
+ 
+The earlier compiler could not distinguish correctly between `Task.Run(Action)`
+and `Task.Run(Func<Task>())`. In previous versions, you'd need to use
+a lambda expression as an argument:
 
-// Old code needed to use the lambda expression instead of the
-// method group name.
-```
+[!code-csharp[Lambda](../../samples/snippets/csharp/new-in-6/overloads.cs#L16-L16)]
 
-Constructs such as these will now pick the correct method.
-
-    
-For information about new features in C# 6, we suggest you head over to [the Roslyn repository in GitHub](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6).
+The C# 6 compiler correctly determines that `Task.Run(Func<Task>()` is
+a better choice.

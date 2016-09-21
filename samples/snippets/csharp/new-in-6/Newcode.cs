@@ -11,7 +11,7 @@ namespace NewStyle
         public Student(string firstName, string lastName)
         {
             if (IsNullOrWhiteSpace(lastName))
-                throw new ArgumentException("firstName", "Cannot be blank");
+                throw new ArgumentException(nameof(firstName), "Cannot be blank");
             FirstName = firstName;
             LastName = lastName;
         }
@@ -26,6 +26,13 @@ namespace NewStyle
 
         public string GetFormattedGradePoint() =>
             $"Name: {LastName}, {FirstName}. G.P.A: {Grades.Average()}";
+
+        public string GetGradePointPercentage() =>
+            $"Name: {LastName}, {FirstName}. G.P.A: {Grades.Average():F2}";
+            
+        public string GetGradePointPercentages() =>
+            $"Name: {LastName}, {FirstName}. G.P.A: {(Grades.Any() ? Grades.Average() : double.NaN):F2}";
+
         public bool MakesDeansList()
         {
             return Grades.All(g => g > 3.5) && Grades.Any();
@@ -33,6 +40,8 @@ namespace NewStyle
             //return All(Grades, g => g > 3.5) && Grades.Any();
         }
 
-        
+        public string GetAllGrades() =>
+            $@"All Grades: {Grades.OrderByDescending(g => g)
+            .Select(s => s.ToString("F2")).Aggregate((partial, element) => $"{partial}, {element}")}";
     }
 }

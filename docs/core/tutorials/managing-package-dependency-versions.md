@@ -66,7 +66,7 @@ If so, you should ensure that the metapackage you start with is fixed to 1.0.  T
 
 **Are you depending on packages outside the** `NETStandard.Library` **or** `Microsoft.NETCore.App` **metapackages?**
 
-If so, you need to fixed your other dependencies to 1.0.  See the correct package versions and build numbers at the end of this article.
+If so, you need to fix your other dependencies to 1.0.  See the correct package versions and build numbers at the end of this article.
 
 ### A note on using a splat string (\*) when versioning
 

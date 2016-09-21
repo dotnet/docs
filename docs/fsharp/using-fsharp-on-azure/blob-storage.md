@@ -363,9 +363,7 @@ to learn more.
 ### Conceptual guides
 
 - [Transfer data with the AzCopy command-line utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/)
-- [Get started with File storage for .NET](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-files/)
-- [How to use Azure blob storage with the WebJobs SDK](https://azure.microsoft.com/en-us/documentation/articles/websites-dotnet-webjobs-sdk-storage-blobs-how-to/)
-- [Azure Storage Team Blog]: http://blogs.msdn.com/b/windowsazurestorage/
+- [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)
 - [Configuring Connection Strings](http://msdn.microsoft.com/library/azure/ee758697.aspx)
 - [.NET client library reference](http://go.microsoft.com/fwlink/?LinkID=390731&clcid=0x409)
 - [REST API reference](http://msdn.microsoft.com/library/azure/dd179355)

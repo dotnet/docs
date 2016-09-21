@@ -30,7 +30,7 @@ See the [Prerequisites for Windows development](windows-prerequisites.md) topic 
 
 ## Linux
 
-Install Linux on your distribution/version:
+Install .NET Core on your distribution/version:
 
 * [Red Hat Enterprise Linux 7 Server](https://www.microsoft.com/net/core#redhat)
 * [Ubuntu 14.04, 16.04 & Linux Mint 17](https://www.microsoft.com/net/core#ubuntu)

@@ -46,7 +46,7 @@ explore each feature in more detail.
 The syntax for auto-properties made it very easy to create properties
 that had simple get and set methods:
 
-[!code-csharp[ClassicAutoProperty](../../samples/snippets/csharp/new-in-6/oldcode.cs#L7-L8)]
+[!code-csharp[ClassicAutoProperty](../../samples/snippets/csharp/new-in-6/oldcode.cs#ClassicAutoProperties)]
 
 However, this simple syntax limited the kinds of designs you could support using
 auto properties. C# 6 improves the auto properties capabilities so that ou can use

@@ -4,7 +4,9 @@ namespace OldStyle
 {
     public class Student
     {
+        // <ClassicAutoProperties>
         public string FirstName { get; set; }
+        // </ClassicAutoProperties>
         public string LastName { get; set; }
         public ICollection<double> Grades { get; private set;}
 

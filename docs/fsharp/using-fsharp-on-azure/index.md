@@ -26,6 +26,7 @@ In the sections below, you will find resources on how to use a range of Azure se
 ## Using Azure Storage with F#
 
 * [Get started with Azure Blob storage using F#](blob-storage.md)
+* [Get started with Azure File storage using F#](file-storage.md)
 * [Get started with Azure Queue storage using F#](queue-storage.md)
 * [Get started with Azure Table storage using F#](table-storage.md)
 

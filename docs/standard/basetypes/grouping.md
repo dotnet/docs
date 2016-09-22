@@ -47,7 +47,7 @@ The following grouping construct captures a matched subexpression:
 
 **(**_subexpression_**)**
 
-where *subexpressio* is any valid regular expression pattern. Captures that use parentheses are numbered automatically from left to right based on the order of the opening parentheses in the regular expression, starting from one. The capture that is numbered zero is the text matched by the entire regular expression pattern.
+where *subexpression* is any valid regular expression pattern. Captures that use parentheses are numbered automatically from left to right based on the order of the opening parentheses in the regular expression, starting from one. The capture that is numbered zero is the text matched by the entire regular expression pattern.
 
 > [!NOTE]
 > By default, the (subexpression) language element captures the matched subexpression. But if the RegexOptions parameter of a regular expression pattern matching method includes the RegexOptions.ExplicitCapture flag, or if the n option is applied to this subexpression (see Group options later in this topic), the matched subexpression is not captured.

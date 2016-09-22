@@ -68,7 +68,7 @@ UTF-32 | [UTF32Encoding](xref:System.Text.UTF32Encoding) | Represents each Unico
 
 These encodings enable you to work with Unicode characters as well as with encodings that are most commonly used in legacy applications. In addition, you can create a custom encoding by defining a class that derives from [Encoding](xref:System.Text.Encoding) and overriding its members.
 
-> [!PLATFORM NOTE: .NET CORE]
+> [!NOTE]
 > By default, .NET Core does not make available any code page encodings other than code page 28591 and the Unicode encodings, such as UTF-8 and UTF-16. However, you can add the code page encodings found in standard Windows apps that target the .NET Framework to your app. For complete information, see the [EncodingProvider](xref:System.Text.EncodingProvider) topic. 
 
 ## Selecting an Encoding Class

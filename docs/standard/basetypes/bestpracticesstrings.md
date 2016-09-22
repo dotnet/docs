@@ -525,7 +525,7 @@ The [CultureInfo.InvariantCulture](xref:System.Globalization.CultureInfo.Invaria
 
 InvariantCulture: a + ̊ = å
 
-The LATIN SMALL LETTER A character "a" (\u0061), when it is next to the COMBINING RING ABOVE character "+ " ̊" (\u030a), is interpreted as the LATIN SMALL LETTER A WITH RING ABOVE character "å" (\u00e5). As the following example shows, this behavior differs from ordinal comparison.
+The latin small lette A character "a" (\u0061), when it is next to the combining ring above character "+ " ̊" (\u030a), is interpreted as the latin small letter A with ring above character "å" (\u00e5). As the following example shows, this behavior differs from ordinal comparison.
 
 ```csharp
 string separated = "\u0061\u030a";

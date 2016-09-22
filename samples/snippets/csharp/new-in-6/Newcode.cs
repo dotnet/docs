@@ -19,7 +19,7 @@ namespace NewStyle
         {
             // <UsingStaticString>
             if (IsNullOrWhiteSpace(lastName))
-                throw new ArgumentException(nameof(firstName), "Cannot be blank");
+                throw new ArgumentException(nameof(lastName), "Cannot be blank");
             // </UsingStaticString>
             FirstName = firstName;
             LastName = lastName;
@@ -65,7 +65,8 @@ namespace NewStyle
         public bool MakesDeansList()
         {
             return Grades.All(g => g > 3.5) && Grades.Any();
-            // Generates CS0103: The name 'All' does not exist in the current context.
+            // Code below generates CS0103: 
+            // The name 'All' does not exist in the current context.
             //return All(Grades, g => g > 3.5) && Grades.Any();
         }
         // </UsingStaticLinkMethod>

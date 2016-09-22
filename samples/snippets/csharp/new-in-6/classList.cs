@@ -7,8 +7,8 @@ namespace NewStyle
             // <InitializeEnrollment>
             var classList = new Enrollment()
             {
-                new Student("Bill", "Wagner"),
-                new Student("First", "Last")
+                new Student("Richard", "Feynman"),
+                new Student("Albert", "Einstein")
             };
             // </InitializeEnrollment>
         }           

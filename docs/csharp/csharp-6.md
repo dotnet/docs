@@ -19,37 +19,35 @@ productivity for developers. Features in this release include:
 
 * [Readonly Auto properties](#readonly-auto-properties)
 * [Auto Property Initializers](#auto-property-initializers)
-* [Expression Bodied function members](#Expression-bodied-function-members)
+* [Expression Bodied function members](#expression-bodied-function-members)
 * [using static](#using-static)
 * [Null - conditional operators](#null-conditional-operators)
-* [String Interpolation](#String-Interpolation)
-* [Exception filters](#Exception-Filters)
-* [nameof Expressions](#nameof-Expressions)
-* [await in catch and finally blocks](#Await-in-Catch-and-Finally-blocks)
-* [index initializers](#Index-Initializers)
-* [Extension methods for collection initializers](#Extension-Add-methods-in-collection-initializers)
-* [Improved overload resolution](#Improved-overload-resolution)
+* [String Interpolation](#string-Interpolation)
+* [Exception filters](#exception-Filters)
+* [nameof Expressions](#nameof-expressions)
+* [await in catch and finally blocks](#await-in-catch-and-finally-blocks)
+* [index initializers](#index-initializers)
+* [Extension methods for collection initializers](#extension-add-methods-in-collection-initializers)
+* [Improved overload resolution](#improved-overload-resolution)
 
 The overall effect of these features is that you write more concise code
 that is also more readable. The syntax contains less ceremony for many
 common practices. It's easier to see the design intent with less
 ceremony. Learn these features well, and you'll be more productive,
-create more readable code, and concentrate more on your core features
+write more readable code, and concentrate more on your core features
 than on the constructs of the language.
 
-The remainder of this topic provides an overview of these features, with
-links where you can explore more about any of the features. Sub-topics
-explore each feature in more detail. 
+The remainder of this topic provides details on each these features.
 
 ## Auto Property enhancements 
 
 The syntax for auto-properties made it very easy to create properties
-that had simple get and set methods:
+that had simple get and set accessors:
 
 [!code-csharp[ClassicAutoProperty](../../samples/snippets/csharp/new-in-6/oldcode.cs#ClassicAutoProperty)]
 
 However, this simple syntax limited the kinds of designs you could support using
-auto properties. C# 6 improves the auto properties capabilities so that ou can use
+auto properties. C# 6 improves the auto properties capabilities so that you can use
 them in more scenarios. You'll fall back on the more verbose syntax of declaring
 the backing field by hand, and manipulating that backing field less often.
 
@@ -140,9 +138,9 @@ You can also use expression bodied members in read only properties as well:
 
 The ***using static*** enhancement enables you to import the static methods
 of a single class. Previously, the `using` statement imported all types
-from all classes in a namespace. 
+in a namespace. 
 
-Often we use a class and its static methods throughout our code. Repeatedly
+Often we use a class' static methods throughout our code. Repeatedly
 typing the class name can obscure the meaning of your code. A common
 example is when you write classes that perform many numeric calculations.
 Your code will be littered with `Math.Sin`, `Math.Sqrt` and other calls
@@ -152,7 +150,8 @@ classes much cleaner to read. You specify the class you're using:
 [!code-csharp[UsingStaticMath](../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStaticMath)]
 
 And now, you can use any static method in the `Math` class without
-qualifying the `Math` class. The `Math` class does not contain any
+qualifying the `Math` class. The `Math` class is a great use case for
+this feature because it does not contain any
 instance methods. You can also use `using static` to import a
 class' static methods for a class that has both static
 and instance methods. One of the most useful examples 
@@ -161,8 +160,9 @@ and instance methods. One of the most useful examples
 [!code-csharp[UsingStatic](../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStatic)]
 
 > [!NOTE]
-> You must use the fully qualified class name, `System.String`. 
-> You can't use the `string` keyword in a static using statement. 
+> You must use the fully qualified class name, `System.String`
+> in a static using statement. 
+> You can't use the `string` keyword instead. 
 
 You can now call static methods defined in the `String` class without
 qualifying those methods as members of that class:
@@ -182,7 +182,7 @@ by importing `System.Linq.Enumerable`.
 
 [!code-csharp[UsingStaticLinq](../../samples/snippets/csharp/new-in-6/newcode.cs#usingStaticLinq)]
 
-This imports all the methods in the `System.Linq.Enumerable` namespace.
+This imports all the methods in the `System.Linq.Enumerable` class.
 However, the extension methods are only in scope when called as extension
 methods. They are not in scope if they are called as though they are static
 methods:
@@ -207,20 +207,18 @@ and fluid.
 
 Simply replace the member access `.` with `?.`:
 
-```csharp
 [!code-csharp[NullConditional](../../samples/snippets/csharp/new-in-6/program.cs#NullConditional)]
-```
 
 In the above example, the variable `first` is assigned `null` if the person object
 is null. Otherwise, it gets assigned the value of the `FirstName` property. Most importantly,
 the `?.` means that the above line of code does not generate a `NullReferenceException` when
-the `person` variable is null. Instead, it short-circuits and returns null.
+the `person` variable is null. Instead, it short-circuits and produces null.
 
 Also, note that this expression returns a `string`, regardless of the value of `person`.
 In the case of short circuiting, the null value returned is typed to match the full
-expresion.
+expression.
 
-You can often use this construct with the ***null coalescing*** operator to assign`
+You can often use this construct with the ***null coalescing*** operator to assign
 default values when one of the properties are null:
 
 [!code-csharp[NullCoalescing](../../samples/snippets/csharp/new-in-6/program.cs#NullCoalescing)]
@@ -230,7 +228,7 @@ You can also use it to conditionally invoke methods. The most common use of memb
  with the null conditional operator is to safely invoke delegates
 (or event handlers) that may be null.  You'll do this by calling the delegate's `Invoke` method
 using the `?.` operator to access the member. You can see an example where we discuss 
-[delegate patterns](delegates-patterns.md#Handling-Null-Delegates)
+[delegate patterns](delegates-patterns.md#Handling-Null-Delegates).
 
 The rules of the `?.` operator ensure that the left hand side of the operator is
 evaluated only once. This is important and enables many idioms, including the
@@ -273,7 +271,7 @@ Ensuring that the left side is evaluated only once also enables you
 to use any expression, including method calls, on the left side of the
 `?.` Even if these have side-effects, they are evaluated once, so the
 side effects occur only once. You can see an example in our content
-on [events](events-overview.md#Language-Support-for-Events)
+on [events](events-overview.md#Language-Support-for-Events).
 
 ## String Interpolation
 
@@ -395,7 +393,7 @@ analysis or examination of crash dumps will show that the exception was
 thrown from the `throw` statement in your catch clause. The actual exception
 object will contain the original call stack, but all other information
 about any variables in the call stack between this throw point and the
-location of the original error has been lost. 
+location of the original throw point has been lost. 
 
 Contrast that with how the code using an exception filter is processed:
 The exception filter expression evaluates to `false`. Execution never

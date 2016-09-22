@@ -1,10 +1,10 @@
 ---
 title: What's New in C# 6 | C# Guide
-description: What's New in C# 6    
+description: Learn the new features in C# Version 6    
 keywords: .NET, .NET Core
 author:  BillWagner
 manager: wpickett
-ms.date: 09/08/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: visual-studio-dev-14
 ms.technology: devlang-csharp
@@ -180,14 +180,14 @@ extension method invocation syntax, not when called as a static method.
 You'll often see this in LINQ queries. You can import the LINQ pattern
 by importing `System.Linq.Enumerable`. 
 
-[!code-csharp[UsingStaticLinq](../../samples/snippets/csharp/new-in-6/newcode.cs#L5-L5)]
+[!code-csharp[UsingStaticLinq](../../samples/snippets/csharp/new-in-6/newcode.cs#usingStaticLinq)]
 
 This imports all the methods in the `System.Linq.Enumerable` namespace.
 However, the extension methods are only in scope when called as extension
 methods. They are not in scope if they are called as though they are static
 methods:
 
-[!code-csharp[UsingStaticLinq](../../samples/snippets/csharp/new-in-6/newcode.cs#L36-L41)]
+[!code-csharp[UsingStaticLinqMethod](../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStaticLinkMethod)]
 
 This decision is because extension methods are typically called using
 extension method invocation expressions. In the rare case where they are

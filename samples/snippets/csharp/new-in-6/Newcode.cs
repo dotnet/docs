@@ -6,7 +6,9 @@ using static System.String;
 // </UsingStatic>
 using System;
 using System.Collections.Generic;
+// <usingStaticLinq>
 using static System.Linq.Enumerable;
+// </usingStaticLinq>
 
 namespace NewStyle
 {
@@ -59,12 +61,14 @@ namespace NewStyle
             $"Name: {LastName}, {FirstName}. G.P.A: {(Grades.Any() ? Grades.Average() : double.NaN):F2}";
         // </stringInterpolationConditional>
         
+        // <UsingStaticLinkMethod>
         public bool MakesDeansList()
         {
             return Grades.All(g => g > 3.5) && Grades.Any();
             // Generates CS0103: The name 'All' does not exist in the current context.
             //return All(Grades, g => g > 3.5) && Grades.Any();
         }
+        // </UsingStaticLinkMethod>
 
         // <stringInterpolationLinq>
         public string GetAllGrades() =>

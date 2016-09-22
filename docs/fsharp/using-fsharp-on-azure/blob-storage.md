@@ -164,13 +164,10 @@ Optionally, you can set the `UseFlatBlobListing` parameter of of the `ListBlobs`
     for item in container.ListBlobs(null, true) do
         match item with 
         | :? CloudBlockBlob as blob -> 
-            Console.WriteLine(
-                "Block blob of length {0}: {1}", 
-                blob.Properties.Length, blob.Uri)
+            printfn "Block blob of length %d: %O" blob.Properties.Length blob.Uri
 
         | _ ->
-            Console.WriteLine("Unexpected blob type: {0}", 
-                item.GetType().ToString())
+            printfn "Unexpected blob type: %O" (item.GetType())
 
 and, depending on the current contents of your container, the results look like this:
 
@@ -226,7 +223,7 @@ Because the sample method calls an asynchronous method, it must be prefaced with
         async {
 
             // List blobs to the console window, with paging.
-            Console.WriteLine("List blobs in pages:")
+            printfn "List blobs in pages:"
 
             // Call ListBlobsSegmentedAsync and enumerate the result segment
             // returned, while the continuation token is non-null.
@@ -246,12 +243,12 @@ Because the sample method calls an asynchronous method, it must be prefaced with
                     |> Async.AwaitTask
 
                 if (resultSegment.Results |> Seq.length > 0) then
-                    Console.WriteLine("Page {0}:", i)
+                    printfn "Page %d:" i
 
                 for blobItem in resultSegment.Results do
-                    Console.WriteLine("\t{0}", blobItem.StorageUri.PrimaryUri)
+                    printfn "\t%O" blobItem.StorageUri.PrimaryUri
 
-                Console.WriteLine()
+                printfn ""
 
                 // Get the continuation token.
                 let continuationToken = resultSegment.ContinuationToken
@@ -307,13 +304,12 @@ The example below creates a new append blob and appends some data to it, simulat
     // Simulate a logging operation by writing text data and byte data to the 
     // end of the append blob.
     for i in 0 .. numBlocks - 1 do
-        let msg = 
-            String.Format("Timestamp: {0:u} \tLog Entry: {1}{2}",
-                DateTime.UtcNow, bytes.[i], Environment.NewLine)
+        let msg = sprintf "Timestamp: %u \tLog Entry: %d\n" DateTime.UtcNow bytes.[i]
         appendBlob.AppendText(msg)
 
     // Read the append blob to the console window.
-    Console.WriteLine(appendBlob.DownloadText())
+    let downloadedText = appendBlob.DownloadText()
+    printfn "%s" downloadedText
 
 See [Understanding Block Blobs, Page Blobs, and Append Blobs](https://msdn.microsoft.com/library/azure/ee691964.aspx) for more information about the differences between the three types of blobs.
 

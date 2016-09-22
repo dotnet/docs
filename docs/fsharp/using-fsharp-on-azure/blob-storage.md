@@ -39,11 +39,7 @@ Next, use a [package manager](package-management.md) such as Paket or NuGet to i
 
 Add the following `open` statements to the top of the `blobs.fsx` file:
 
-    open System
-    open System.IO
-    open Microsoft.Azure // Namespace for CloudConfigurationManager
-    open Microsoft.WindowsAzure.Storage // Namespace for CloudStorageAccount
-    open Microsoft.WindowsAzure.Storage.Blob // Namespace for Blob storage types
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L1-L5)]
 
 ### Get your connection string
 
@@ -51,15 +47,13 @@ You'll need an Azure Storage connection string for this tutorial. For more infor
 
 For the tutorial, you'll enter your connection string in your script, like this:
 
-    let storageConnString = "..." // fill this in from your storage account
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L11)]
 
 However, this is a **bad idea** for real projects. Your storage account key is similar to the root password for your storage account. Always be careful to protect your storage account key. Avoid distributing it to other users, hard-coding it, or saving it in a plain-text file that is accessible to others. You can regenerate your key using the Azure Portal if you believe it may have been compromised.
 
 For real applications, the best way to maintain your storage connection string is in a configuration file. To fetch the connection string from a configuration file, you can do this:
 
-    // Parse the connection string and return a reference to the storage account.
-    let storageConnString = 
-        CloudConfigurationManager.GetSetting("StorageConnectionString")
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L13-L15)]
 
 Using Azure Configuration Manager is optional. You can also use an API such as the .NET Framework's `ConfigurationManager` type.
 
@@ -67,8 +61,7 @@ Using Azure Configuration Manager is optional. You can also use an API such as t
 
 To parse the connection string, use:
 
-    // Parse the connection string and return a reference to the storage account.
-    let storageAccount = CloudStorageAccount.Parse(storageConnString)
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L21-L22)]
 
 This will return a `CloudStorageAccount`.
 
@@ -76,15 +69,13 @@ This will return a `CloudStorageAccount`.
 
 Before we begin, create some dummy local data in the directory of our script. Later you will upload this data.
 
-    // Create a dummy file in a local subdirectory to upload
-    let localFile = __SOURCE_DIRECTORY__ + "/myfile.txt"
-    File.WriteAllText(localFile, "some data")
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L28-L30)]
 
 ### Create the Blob service client
 
 The `CloudBlobClient` type enables you to retrieve containers and blobs stored in Blob storage. Here's one way to create the service client:
 
-    let blobClient = storageAccount.CreateCloudBlobClient()
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L36)]
 
 Now you are ready to write code that reads data from and writes data to Blob storage.
 
@@ -92,16 +83,11 @@ Now you are ready to write code that reads data from and writes data to Blob sto
 
 This example shows how to create a container if it does not already exist:
 
-    // Retrieve a reference to a container.
-    let container = blobClient.GetContainerReference("mydata")
-
-    // Create the container if it doesn't already exist.
-    container.CreateIfNotExists()
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L42-L46)]
 
 By default, the new container is private, meaning that you must specify your storage access key to download blobs from this container. If you want to make the files within the container available to everyone, you can set the container to be public using the following code:
 
-    let permissions = BlobContainerPermissions(PublicAccess=BlobContainerPublicAccessType.Blob)
-    container.SetPermissions(permissions)
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L48-L49)]
 
 Anyone on the Internet can see blobs in a public container, but you can modify or delete them only if you have the appropriate account access key or a shared access signature.
 
@@ -111,45 +97,26 @@ Azure Blob Storage supports block blobs and page blobs. In the majority of cases
 
 To upload a file to a block blob, get a container reference and use it to get a block blob reference. Once you have a blob reference, you can upload any stream of data to it by calling the `UploadFromStream` method. This operation will create the blob if it didn't previously exist, or overwrite it if it does exist.
 
-    // Retrieve reference to a blob named "myblob.txt".
-    let blockBlob = container.GetBlockBlobReference("myblob.txt")
-
-    // Create or overwrite the "myblob.txt" blob with contents from the local file.
-    do
-        use fileStream = File.OpenRead localFile
-        blockBlob.UploadFromStream(fileStream)
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L55-L61)]
 
 ## List the blobs in a container
 
 To list the blobs in a container, first get a container reference. You can then use the container's `ListBlobs` method to retrieve the blobs and/or directories within it. To access the rich set of properties and methods for a returned `IListBlobItem`, you must cast it to a `CloudBlockBlob`, `CloudPageBlob`, or `CloudBlobDirectory` object. If the type is unknown, you can use a type check to determine which to cast it to. The following code demonstrates how to retrieve and output the URI of each item in the `mydata` container:
 
-    // Loop over items within the container and output the length and URI.
-    for item in container.ListBlobs(null, false) do
-        match item with 
-        | :? CloudBlockBlob as blob -> 
-            printfn "Block blob of length %d: %O" blob.Properties.Length blob.Uri
-
-        | :? CloudPageBlob as pageBlob ->
-            printfn "Page blob of length %d: %O" pageBlob.Properties.Length pageBlob.Uri
-
-        | :? CloudBlobDirectory as directory ->
-            printfn "Directory: %O" directory.Uri
-
-        | _ ->
-            printfn "Unknown blob type: %O" (item.GetType())
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L67-L80)]
 
 As shown above, you can name blobs with path information in their names. This creates a virtual directory structure that you can organize and traverse as you would a traditional file system. Note that the directory structure is virtual only - the only resources available in Blob storage are containers and blobs. However, the storage client library offers a `CloudBlobDirectory` object to refer to a virtual directory and simplify the process of working with blobs that are organized in this way.
 
 For example, consider the following set of block blobs in a container named `photos`:
 
-	photo1.jpg
-	2015/architecture/description.txt
-	2015/architecture/photo3.jpg
-	2015/architecture/photo4.jpg
-	2016/architecture/photo5.jpg
-	2016/architecture/photo6.jpg
-	2016/architecture/description.txt
-	2016/photo7.jpg
+    photo1.jpg
+    2015/architecture/description.txt
+    2015/architecture/photo3.jpg
+    2015/architecture/photo4.jpg
+    2016/architecture/photo5.jpg
+    2016/architecture/photo6.jpg
+    2016/architecture/description.txt
+    2016/photo7.jpg
 
 When you call `ListBlobs` on the 'photos' container (as in the above sample), a hierarchical listing is returned. It contains both `CloudBlobDirectory` and `CloudBlockBlob` objects, representing the directories and blobs in the container, respectively. The resulting output looks like:
 
@@ -160,14 +127,7 @@ When you call `ListBlobs` on the 'photos' container (as in the above sample), a 
 
 Optionally, you can set the `UseFlatBlobListing` parameter of of the `ListBlobs` method to `true`. In this case, every blob in the container is returned as a `CloudBlockBlob` object. The call to `ListBlobs` to return a flat listing looks like this:
 
-    // Loop over items within the container and output the length and URI.
-    for item in container.ListBlobs(null, true) do
-        match item with 
-        | :? CloudBlockBlob as blob -> 
-            printfn "Block blob of length %d: %O" blob.Properties.Length blob.Uri
-
-        | _ ->
-            printfn "Unexpected blob type: %O" (item.GetType())
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L82-L89)]
 
 and, depending on the current contents of your container, the results look like this:
 
@@ -185,31 +145,18 @@ and, depending on the current contents of your container, the results look like 
 
 To download blobs, first retrieve a blob reference and then call the `DownloadToStream` method. The following example uses the `DownloadToStream` method to transfer the blob contents to a stream object that you can then persist to a local file.
 
-    // Retrieve reference to a blob named "myblob.txt".
-    let blobToDownload = container.GetBlockBlobReference("myblob.txt")
-
-    // Save blob contents to a file.
-    do
-        use fileStream = File.OpenWrite(__SOURCE_DIRECTORY__ + "/path/download.txt")
-        blobToDownload.DownloadToStream(fileStream)
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L95-L101)]
 
 You can also use the `DownloadToStream` method to download the contents of a blob as a text string.
 
-    let text =
-        use memoryStream = new MemoryStream()
-        blobToDownload.DownloadToStream(memoryStream)
-        Text.Encoding.UTF8.GetString(memoryStream.ToArray())
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L103-L106)]
 
 ## Delete blobs
 
 To delete a blob, first get a blob reference and then call the
 `Delete` method on it.
 
-    // Retrieve reference to a blob named "myblob.txt".
-    let blobToDelete = container.GetBlockBlobReference("myblob.txt")
-
-    // Delete the blob.
-    blobToDelete.Delete()
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L112-L116)]
 
 ## List blobs in pages asynchronously
 
@@ -219,58 +166,16 @@ This example shows a flat blob listing, but you can also perform a hierarchical 
 
 Because the sample method calls an asynchronous method, it must be prefaced with the `async` keyword, and it must return a `Task` object. The await keyword specified for the `ListBlobsSegmentedAsync` method suspends execution of the sample method until the listing task completes.
 
-    let ListBlobsSegmentedInFlatListing(container:CloudBlobContainer) =
-        async {
-
-            // List blobs to the console window, with paging.
-            printfn "List blobs in pages:"
-
-            // Call ListBlobsSegmentedAsync and enumerate the result segment
-            // returned, while the continuation token is non-null.
-            // When the continuation token is null, the last page has been 
-            // returned and execution can exit the loop.
-
-            let rec loop continuationToken (i:int) = 
-            async {
-                // This overload allows control of the page size. You can return
-                // all remaining results by passing null for the maxResults 
-                // parameter, or by calling a different overload.
-                let! ct = Async.CancellationToken
-                let! resultSegment = 
-                    container.ListBlobsSegmentedAsync(
-                        "", true, BlobListingDetails.All, Nullable 10, 
-                        continuationToken, null, null, ct) 
-                    |> Async.AwaitTask
-
-                if (resultSegment.Results |> Seq.length > 0) then
-                    printfn "Page %d:" i
-
-                for blobItem in resultSegment.Results do
-                    printfn "\t%O" blobItem.StorageUri.PrimaryUri
-
-                printfn ""
-
-                // Get the continuation token.
-                let continuationToken = resultSegment.ContinuationToken
-                if (continuationToken <> null) then
-                    do! loop continuationToken (i+1)
-            }
-        
-            do! loop null 1
-        }
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L122-L160)]
 
 We can now use this asynchronous routine as follows. First we upload some dummy data (using the local
 file created earlier in this tutorial).
 
-    // Create some dummy data by upoading the same file over andd over again
-    for i in 1 .. 100 do
-        let blob  = container.GetBlockBlobReference("myblob" + string i + ".txt")
-        use fileStream = System.IO.File.OpenRead(localFile)
-        blob.UploadFromStream fileStream
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L162-L166)]
 
 Now, call the routine. We use ``Async.RunSynchronously`` to force the execution of the asynchronous operation.
 
-    ListBlobsSegmentedInFlatListing container |> Async.RunSynchronously
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L168)]
 
 ## Writing to an append blob
 
@@ -280,36 +185,7 @@ Each block in an append blob can be a different size, up to a maximum of 4 MB, a
 
 The example below creates a new append blob and appends some data to it, simulating a simple logging operation.
 
-    // Get a reference to a container.
-    let appendContainer = blobClient.GetContainerReference("my-append-blobs")
-
-    // Create the container if it does not already exist.
-    appendContainer.CreateIfNotExists() |> ignore
-
-    // Get a reference to an append blob.
-    let appendBlob = appendContainer.GetAppendBlobReference("append-blob.log")
-
-    // Create the append blob. Note that if the blob already exists, the 
-    // CreateOrReplace() method will overwrite it. You can check whether the 
-    // blob exists to avoid overwriting it by using CloudAppendBlob.Exists().
-    appendBlob.CreateOrReplace()
-
-    let numBlocks = 10
-
-    // Generate an array of random bytes.
-    let rnd = new Random()
-    let bytes = Array.zeroCreate<byte>(numBlocks)
-    rnd.NextBytes(bytes)
-
-    // Simulate a logging operation by writing text data and byte data to the 
-    // end of the append blob.
-    for i in 0 .. numBlocks - 1 do
-        let msg = sprintf "Timestamp: %u \tLog Entry: %d\n" DateTime.UtcNow bytes.[i]
-        appendBlob.AppendText(msg)
-
-    // Read the append blob to the console window.
-    let downloadedText = appendBlob.DownloadText()
-    printfn "%s" downloadedText
+[!code-fsharp[BlobStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L174-L203)]
 
 See [Understanding Block Blobs, Page Blobs, and Append Blobs](https://msdn.microsoft.com/library/azure/ee691964.aspx) for more information about the differences between the three types of blobs.
 

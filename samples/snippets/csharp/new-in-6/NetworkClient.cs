@@ -5,6 +5,7 @@ namespace NewStyle
 {
     public class NetworkClient
     {
+        // <ExceptionFilter>
         public static async Task<string> MakeRequest()
         { 
             var client = new System.Net.Http.HttpClient();
@@ -17,7 +18,9 @@ namespace NewStyle
                 return "Site Moved";
             }
         }
+        // </ExceptionFilter>
 
+        // <HandleNotChanged>
         public static async Task<string> MakeRequestWithNotModifiedSupport()
         { 
             var client = new System.Net.Http.HttpClient();
@@ -33,6 +36,9 @@ namespace NewStyle
                 return "Use the Cache";
             }
         }
+        // </HandleNotChanged>
+        
+        // <AwaitFinally>
         public static async Task<string> MakeRequestAndLogFailures()
         { 
             await logMethodEntrance();
@@ -52,6 +58,7 @@ namespace NewStyle
                 client.Dispose();
             }
         }
+        // </AwaitFinally>
 
         private static Task logMethodEntrance()
         {
@@ -72,6 +79,7 @@ namespace OldStyle
 {
     public class NetworkClient
     {
+        // <ExceptionFilterOld>
         public static async Task<string> MakeRequest()
         { 
             var client = new System.Net.Http.HttpClient();
@@ -87,5 +95,6 @@ namespace OldStyle
                     throw;
             }
         }
+        // </ExceptionFilterOld>
     }
 }

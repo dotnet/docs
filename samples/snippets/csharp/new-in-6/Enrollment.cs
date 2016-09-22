@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace NewStyle
 {
+    // <Enrollment>
     public class Enrollment : IEnumerable<Student>
     {
         private List<Student> allStudents = new List<Student>();
@@ -22,4 +23,5 @@ namespace NewStyle
             return ((IEnumerable<Student>)allStudents).GetEnumerator();
         }
     }
+    // </Enrollment>
 }

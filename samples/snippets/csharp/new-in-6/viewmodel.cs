@@ -6,6 +6,7 @@ namespace UXComponents
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        // <nameofNotify>
         public string LastName
         {
             get { return lastName; }
@@ -20,7 +21,9 @@ namespace UXComponents
             }
         }
         private string lastName;
+        // </nameofNotify>
 
+        // <QualifiedNameofNotify>
         public string FirstName
         {
             get { return firstName; }
@@ -35,5 +38,6 @@ namespace UXComponents
             }
         }
         private string firstName;
+        // </QualifiedNameofNotify>
     }
 }

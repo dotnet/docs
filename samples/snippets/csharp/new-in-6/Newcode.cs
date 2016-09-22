@@ -1,5 +1,9 @@
+// <UsingStaticMath>
 using static System.Math;
+// </UsingStaticMath>
+// <UsingStatic>
 using static System.String;
+// </UsingStatic>
 using System;
 using System.Collections.Generic;
 using static System.Linq.Enumerable;
@@ -8,31 +12,53 @@ namespace NewStyle
 {
     public class Student
     {
+        // <ReadOnlyAutoPropertyConstructor>
         public Student(string firstName, string lastName)
         {
+            // <UsingStaticString>
             if (IsNullOrWhiteSpace(lastName))
                 throw new ArgumentException(nameof(firstName), "Cannot be blank");
+            // </UsingStaticString>
             FirstName = firstName;
             LastName = lastName;
         }
+        // </ReadOnlyAutoPropertyConstructor>
 
+        // <ReadOnlyAutoProperty>
         public string FirstName { get; }
         public string LastName { get;  }
+        // </ReadOnlyAutoProperty>
+
+        // <Initialization>
         public ICollection<double> Grades { get; } = new List<double>();
+        // </Initialization>
+        // <ReadWriteInitialization>
         public Standing YearInSchool { get; set;} = Standing.Freshman;
+        // </ReadWriteInitialization>
+
+        // <FullNameExpressionMember>
         public string FullName => $"{FirstName} {LastName}";
+        // </FullNameExpressionMember>
 
+        // <ToStringExpressionMember>
         public override string ToString() => $"{LastName}, {FirstName}";
+        // </ToStringExpressionMember>
 
+        // <stringInterpolationExpression>
         public string GetFormattedGradePoint() =>
             $"Name: {LastName}, {FirstName}. G.P.A: {Grades.Average()}";
+        // </stringInterpolationExpression>
 
+        // <stringInterpolationFormat>
         public string GetGradePointPercentage() =>
             $"Name: {LastName}, {FirstName}. G.P.A: {Grades.Average():F2}";
-            
+        // </stringInterpolationFormat?
+
+        // <stringInterpolationConditional>            
         public string GetGradePointPercentages() =>
             $"Name: {LastName}, {FirstName}. G.P.A: {(Grades.Any() ? Grades.Average() : double.NaN):F2}";
-
+        // </stringInterpolationConditional>
+        
         public bool MakesDeansList()
         {
             return Grades.All(g => g > 3.5) && Grades.Any();
@@ -40,8 +66,10 @@ namespace NewStyle
             //return All(Grades, g => g > 3.5) && Grades.Any();
         }
 
+        // <stringInterpolationLinq>
         public string GetAllGrades() =>
             $@"All Grades: {Grades.OrderByDescending(g => g)
             .Select(s => s.ToString("F2")).Aggregate((partial, element) => $"{partial}, {element}")}";
+        // </stringInterpolationLinq>
     }
 }

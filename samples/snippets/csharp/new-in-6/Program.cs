@@ -13,9 +13,13 @@ namespace NewInCSharp6
 
             var person = new NewStyle.Student("first", "last");
 
+            // <NullConditional>
             var first = person?.FirstName; 
+            // </NullConditional>
 
+            // <NullCoalescing>                
             first = person?.FirstName ?? "Unspecified";
+            // </NullCoalescing>
 
             var test = new NewStyle.Student("first", "last");
             test.Grades.Add(1.0);
@@ -33,6 +37,7 @@ namespace NewInCSharp6
             Console.WriteLine(test.GetAllGrades());
         }
 
+        // <LogException>
         public void MethodThatFailsSometimes()
         {
             try {
@@ -42,7 +47,9 @@ namespace NewInCSharp6
                 // This is never reached!
             }
         } 
+        // </LogException>
         
+        // <LogExceptionRecovery>
         public void MethodThatFailsButHasRecoveryPath()
         {
             try {
@@ -60,7 +67,9 @@ namespace NewInCSharp6
                 // perform recovery here 
             }
         }
+        // </LogExceptionRecovery>
 
+        // <LogExceptionDebugger>
         public void MethodThatFailsWhenDebuggerIsNotAttached()
         {
             try {
@@ -75,7 +84,8 @@ namespace NewInCSharp6
                 // Only catch exceptions when a debugger is not attached.
                 // Otherwise, this should stop in the debugger. 
             }
-        } 
+        }
+        // </LogExceptionDebugger>
 
 
         private void PerformFailingOperation() {}

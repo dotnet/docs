@@ -72,6 +72,14 @@ To parse the connection string, use:
 
 This will return a `CloudStorageAccount`.
 
+### Create some local dummy data
+
+Before we begin, create some dummy local data in the directory of our script. Later you will upload this data.
+
+    // Create a dummy file in a local subdirectory to upload
+    let localFile = __SOURCE_DIRECTORY__ + "/myfile.txt"
+    File.WriteAllText(localFile, "some data")
+
 ### Create the Blob service client
 
 The `CloudBlobClient` type enables you to retrieve containers and blobs stored in Blob storage. Here's one way to create the service client:
@@ -85,7 +93,7 @@ Now you are ready to write code that reads data from and writes data to Blob sto
 This example shows how to create a container if it does not already exist:
 
     // Retrieve a reference to a container.
-    let container = blobClient.GetContainerReference("photos")
+    let container = blobClient.GetContainerReference("mydata")
 
     // Create the container if it doesn't already exist.
     container.CreateIfNotExists()
@@ -103,44 +111,32 @@ Azure Blob Storage supports block blobs and page blobs. In the majority of cases
 
 To upload a file to a block blob, get a container reference and use it to get a block blob reference. Once you have a blob reference, you can upload any stream of data to it by calling the `UploadFromStream` method. This operation will create the blob if it didn't previously exist, or overwrite it if it does exist.
 
-    // Retrieve reference to a blob named "myblob".
-    let blockBlob = container.GetBlockBlobReference("myblob")
+    // Retrieve reference to a blob named "myblob.txt".
+    let blockBlob = container.GetBlockBlobReference("myblob.txt")
 
-    // Create a dummy file in a local subdirectory to upload
-    let localFile = __SOURCE_DIRECTORY__ + "/myfile.txt"
-    File.WriteAllText(localFile, "some data")
-
-    // Create or overwrite the "myblob" blob with contents from the local file.
+    // Create or overwrite the "myblob.txt" blob with contents from the local file.
     do
-        use fileStream = System.IO.File.OpenRead(localFile)
+        use fileStream = File.OpenRead localFile
         blockBlob.UploadFromStream(fileStream)
 
 ## List the blobs in a container
 
-To list the blobs in a container, first get a container reference. You can then use the container's `ListBlobs` method to retrieve the blobs and/or directories within it. To access the rich set of properties and methods for a returned `IListBlobItem`, you must cast it to a `CloudBlockBlob`, `CloudPageBlob`, or `CloudBlobDirectory` object. If the type is unknown, you can use a type check to determine which to cast it to. The following code demonstrates how to retrieve and output the URI of each item in the `photos` container:
-
-    // Retrieve reference to a previously created container.
-    let photosContainer = blobClient.GetContainerReference("photos")
+To list the blobs in a container, first get a container reference. You can then use the container's `ListBlobs` method to retrieve the blobs and/or directories within it. To access the rich set of properties and methods for a returned `IListBlobItem`, you must cast it to a `CloudBlockBlob`, `CloudPageBlob`, or `CloudBlobDirectory` object. If the type is unknown, you can use a type check to determine which to cast it to. The following code demonstrates how to retrieve and output the URI of each item in the `mydata` container:
 
     // Loop over items within the container and output the length and URI.
-    for item in photosContainer.ListBlobs(null, false) do
+    for item in container.ListBlobs(null, false) do
         match item with 
         | :? CloudBlockBlob as blob -> 
-            Console.WriteLine(
-                "Block blob of length {0}: {1}", 
-                blob.Properties.Length, blob.Uri)
+            printfn "Block blob of length %d: %O" blob.Properties.Length blob.Uri
 
         | :? CloudPageBlob as pageBlob ->
-            Console.WriteLine(
-                "Page blob of length {0}: {1}", 
-                pageBlob.Properties.Length, pageBlob.Uri)
+            printfn "Page blob of length %d: %O" pageBlob.Properties.Length pageBlob.Uri
 
         | :? CloudBlobDirectory as directory ->
-            Console.WriteLine("Directory: {0}", directory.Uri)
+            printfn "Directory: %O" directory.Uri
 
         | _ ->
-            Console.WriteLine("Unknown blob type: {0}", 
-                item.GetType().ToString())
+            printfn "Unknown blob type: %O" (item.GetType())
 
 As shown above, you can name blobs with path information in their names. This creates a virtual directory structure that you can organize and traverse as you would a traditional file system. Note that the directory structure is virtual only - the only resources available in Blob storage are containers and blobs. However, the storage client library offers a `CloudBlobDirectory` object to refer to a virtual directory and simplify the process of working with blobs that are organized in this way.
 
@@ -176,7 +172,7 @@ Optionally, you can set the `UseFlatBlobListing` parameter of of the `ListBlobs`
             Console.WriteLine("Unexpected blob type: {0}", 
                 item.GetType().ToString())
 
-and the results look like this:
+and, depending on the current contents of your container, the results look like this:
 
 	Block blob of length 4: https://<accountname>.blob.core.windows.net/photos/2015/architecture/description.txt
 	Block blob of length 314618: https://<accountname>.blob.core.windows.net/photos/2015/architecture/photo3.jpg
@@ -192,22 +188,19 @@ and the results look like this:
 
 To download blobs, first retrieve a blob reference and then call the `DownloadToStream` method. The following example uses the `DownloadToStream` method to transfer the blob contents to a stream object that you can then persist to a local file.
 
-    // Retrieve reference to a blob named "photo1.jpg".
-    let photoBlob = container.GetBlockBlobReference("photo1.jpg")
+    // Retrieve reference to a blob named "myblob.txt".
+    let blobToDownload = container.GetBlockBlobReference("myblob.txt")
 
     // Save blob contents to a file.
     do
-        use fileStream = File.OpenWrite(__SOURCE_DIRECTORY__ + "/path/myfile")
-        photoBlob.DownloadToStream(fileStream)
+        use fileStream = File.OpenWrite(__SOURCE_DIRECTORY__ + "/path/download.txt")
+        blobToDownload.DownloadToStream(fileStream)
 
 You can also use the `DownloadToStream` method to download the contents of a blob as a text string.
 
-    // Retrieve reference to a blob named "myblob.txt"
-    let photoBlob2 = container.GetBlockBlobReference("myblob.txt")
-
     let text =
         use memoryStream = new MemoryStream()
-        photoBlob2.DownloadToStream(memoryStream)
+        blobToDownload.DownloadToStream(memoryStream)
         Text.Encoding.UTF8.GetString(memoryStream.ToArray())
 
 ## Delete blobs
@@ -216,10 +209,10 @@ To delete a blob, first get a blob reference and then call the
 `Delete` method on it.
 
     // Retrieve reference to a blob named "myblob.txt".
-    let blockBlob3 = container.GetBlockBlobReference("myblob.txt")
+    let blobToDelete = container.GetBlockBlobReference("myblob.txt")
 
     // Delete the blob.
-    blockBlob3.Delete()
+    blobToDelete.Delete()
 
 ## List blobs in pages asynchronously
 
@@ -265,9 +258,22 @@ Because the sample method calls an asynchronous method, it must be prefaced with
                 if (continuationToken <> null) then
                     do! loop continuationToken (i+1)
             }
-    
+        
             do! loop null 1
         }
+
+We can now use this asynchronous routine as follows. First we upload some dummy data (using the local
+file created earlier in this tutorial).
+
+    // Create some dummy data by upoading the same file over andd over again
+    for i in 1 .. 100 do
+        let blob  = container.GetBlockBlobReference("myblob" + string i + ".txt")
+        use fileStream = System.IO.File.OpenRead(localFile)
+        blob.UploadFromStream fileStream
+
+Now, call the routine. We use ``Async.RunSynchronously`` to force the execution of the asynchronous operation.
+
+    ListBlobsSegmentedInFlatListing container |> Async.RunSynchronously
 
 ## Writing to an append blob
 
@@ -323,10 +329,10 @@ For further information see [Managing Concurrency in Microsoft Azure Storage](ht
 
 ## Naming containers
 
-Every blob in Azure storage must reside in a container. The container forms part of the blob name. For example, `mycontainer` is the name of the container in these sample blob URIs:
+Every blob in Azure storage must reside in a container. The container forms part of the blob name. For example, `mydata` is the name of the container in these sample blob URIs:
 
-	https://storagesample.blob.core.windows.net/mycontainer/blob1.txt
-	https://storagesample.blob.core.windows.net/mycontainer/photos/myphoto.jpg
+	https://storagesample.blob.core.windows.net/mydata/blob1.txt
+	https://storagesample.blob.core.windows.net/mydata/photos/myphoto.jpg
 
 A container name must be a valid DNS name, conforming to the following naming rules:
 

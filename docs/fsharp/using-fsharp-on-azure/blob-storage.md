@@ -85,16 +85,15 @@ Now you are ready to write code that reads data from and writes data to Blob sto
 This example shows how to create a container if it does not already exist:
 
     // Retrieve a reference to a container.
-    let container = blobClient.GetContainerReference("mycontainer")
+    let container = blobClient.GetContainerReference("photos")
 
     // Create the container if it doesn't already exist.
     container.CreateIfNotExists()
 
 By default, the new container is private, meaning that you must specify your storage access key to download blobs from this container. If you want to make the files within the container available to everyone, you can set the container to be public using the following code:
 
-    container.SetPermissions(
-        BlobContainerPermissions(
-            PublicAccess = BlobContainerPublicAccessType.Blob))
+    let permissions = BlobContainerPermissions(PublicAccess=BlobContainerPublicAccessType.Blob)
+    container.SetPermissions(permissions)
 
 Anyone on the Internet can see blobs in a public container, but you can modify or delete them only if you have the appropriate account access key or a shared access signature.
 
@@ -107,9 +106,13 @@ To upload a file to a block blob, get a container reference and use it to get a 
     // Retrieve reference to a blob named "myblob".
     let blockBlob = container.GetBlockBlobReference("myblob")
 
-    // Create or overwrite the "myblob" blob with contents from a local file.
+    // Create a dummy file in a local subdirectory to upload
+    let localFile = __SOURCE_DIRECTORY__ + "/myfile.txt"
+    File.WriteAllText(localFile, "some data")
+
+    // Create or overwrite the "myblob" blob with contents from the local file.
     do
-        use fileStream = File.OpenRead(@"path\myfile")
+        use fileStream = System.IO.File.OpenRead(localFile)
         blockBlob.UploadFromStream(fileStream)
 
 ## List the blobs in a container
@@ -163,7 +166,15 @@ Optionally, you can set the `UseFlatBlobListing` parameter of of the `ListBlobs`
 
     // Loop over items within the container and output the length and URI.
     for item in container.ListBlobs(null, true) do
-        ...
+        match item with 
+        | :? CloudBlockBlob as blob -> 
+            Console.WriteLine(
+                "Block blob of length {0}: {1}", 
+                blob.Properties.Length, blob.Uri)
+
+        | _ ->
+            Console.WriteLine("Unexpected blob type: {0}", 
+                item.GetType().ToString())
 
 and the results look like this:
 
@@ -186,7 +197,7 @@ To download blobs, first retrieve a blob reference and then call the `DownloadTo
 
     // Save blob contents to a file.
     do
-        use fileStream = File.OpenWrite(@"path\myfile")
+        use fileStream = File.OpenWrite(__SOURCE_DIRECTORY__ + "/path/myfile")
         photoBlob.DownloadToStream(fileStream)
 
 You can also use the `DownloadToStream` method to download the contents of a blob as a text string.
@@ -345,25 +356,21 @@ For details on encrypting blob data, see [the .NET guide for blob storage sectio
 
 ## Next steps
 
-Now that you've learned the basics of Blob storage, follow these links
-to learn more.
+Now that you've learned the basics of Blob storage, follow these links to learn more.
 
-### Microsoft Azure Storage Explorer
+### Tools
+- [F# AzureStorageTypeProvider](http://fsprojects.github.io/AzureStorageTypeProvider/) An F# Type Provider which can be used to explore Blob, Table and Queue Azure Storage assets and easily apply CRUD operations on them.
+- [FSharp.Azure.Storage](https://github.com/fsprojects/FSharp.Azure.Storage) An F# API for using Microsoft Azure Table Storage service
 - [Microsoft Azure Storage Explorer (MASE)](https://azure.microsoft.com/en-us/documentation/articles/vs-azure-tools-storage-manage-with-storage-explorer/) is a free, standalone app from Microsoft that enables you to work visually with Azure Storage data on Windows, OS X, and Linux.
-
-### Blob storage samples
-
-- [Getting Started with Azure Blob Storage in C#](https://azure.microsoft.com/documentation/samples/storage-blob-dotnet-getting-started/)
 
 ### Blob storage reference
 
 - [Storage Client Library for .NET reference](http://go.microsoft.com/fwlink/?LinkID=390731&clcid=0x409)
 - [REST API reference](http://msdn.microsoft.com/library/azure/dd179355)
 
-### Conceptual guides
+### Related guides
 
+- [Getting Started with Azure Blob Storage in C#](https://azure.microsoft.com/documentation/samples/storage-blob-dotnet-getting-started/)
 - [Transfer data with the AzCopy command-line utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/)
-- [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)
 - [Configuring Connection Strings](http://msdn.microsoft.com/library/azure/ee758697.aspx)
-- [.NET client library reference](http://go.microsoft.com/fwlink/?LinkID=390731&clcid=0x409)
-- [REST API reference](http://msdn.microsoft.com/library/azure/dd179355)
+- [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)

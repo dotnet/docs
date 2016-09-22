@@ -78,8 +78,8 @@ This will return a `CloudStorageAccount`.
 
 The `CloudTableClient` class enables you to retrieve tables and entities stored in Table storage. Here's one way to create the service client:
 
-	// Create the table client.
-	let tableClient = storageAccount.CreateCloudTableClient()
+    // Create the table client.
+    let tableClient = storageAccount.CreateCloudTableClient()
 
 Now you are ready to write code that reads data from and writes data to Table storage.
 
@@ -191,148 +191,63 @@ Sometimes, you don't know if the entity exists in the table or not. And if it do
     with e ->
         Console.WriteLine("Update failed")
 
-TODO: from here
-
 ## Query a subset of entity properties
 
-A table query can retrieve just a few properties from an entity instead of all the entity properties. This technique, called projection, reduces bandwidth and can improve query performance, especially for large entities. The query in the
-following code returns only the email addresses of entities in the
-table. This is done by using a query of **DynamicTableEntity** and
-also **EntityResolver**. You can learn more about projection on the [Introducing Upsert and Query Projection blog post][]. Note that projection is not supported on the local storage emulator, so this code runs only when you're using an account on the Table service.
-
-    // Retrieve the storage account from the connection string.
-    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
-        CloudConfigurationManager.GetSetting("StorageConnectionString"));
-
-    // Create the table client.
-    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
-
-    // Create the CloudTable that represents the "people" table.
-    CloudTable table = tableClient.GetTableReference("people");
+A table query can retrieve just a few properties from an entity instead of all of them. This technique, called projection, can improve query performance, especially for large entities. Here, we return only email addresses using `DynamicTableEntity` and `EntityResolver`. Note that projection is not supported on the local storage emulator, so this code runs only when you're using an account on the Table service.
 
     // Define the query, and select only the Email property.
-    TableQuery<DynamicTableEntity> projectionQuery = new TableQuery<DynamicTableEntity>().Select(new string[] { "Email" });
+    let projectionQ = TableQuery<DynamicTableEntity>().Select([|"Email"|])
 
     // Define an entity resolver to work with the entity after retrieval.
-    EntityResolver<string> resolver = (pk, rk, ts, props, etag) => props.ContainsKey("Email") ? props["Email"].StringValue : null;
+    let resolver = EntityResolver<string>(fun pk rk ts props etag ->
+        if props.ContainsKey("Email") then
+            props.["Email"].StringValue
+        else
+            null
+        )
 
-    foreach (string projectedEmail in table.ExecuteQuery(projectionQuery, resolver, null, null))
-    {
-        Console.WriteLine(projectedEmail);
-    }
+    table.ExecuteQuery(projectionQ, resolver, null, null)
 
 ## Delete an entity
 
-You can easily delete an entity after you have retrieved it, by using the same pattern
-shown for updating an entity.  The following code
-retrieves and deletes a customer entity.
+You can delete an entity after you have retrieved it. As with updating an entity, this will fail if the entity has changed since you retrieved it.
 
-    // Retrieve the storage account from the connection string.
-    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
-        CloudConfigurationManager.GetSetting("StorageConnectionString"));
-
-    // Create the table client.
-    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
-
-    // Create the CloudTable that represents the "people" table.
-    CloudTable table = tableClient.GetTableReference("people");
-
-    // Create a retrieve operation that expects a customer entity.
-    TableOperation retrieveOperation = TableOperation.Retrieve<CustomerEntity>("Smith", "Ben");
-
-    // Execute the operation.
-    TableResult retrievedResult = table.Execute(retrieveOperation);
-
-    // Assign the result to a CustomerEntity.
-    CustomerEntity deleteEntity = (CustomerEntity)retrievedResult.Result;
-
-    // Create the Delete TableOperation.
-	if (deleteEntity != null)
-	{
-	   TableOperation deleteOperation = TableOperation.Delete(deleteEntity);
-
-	   // Execute the operation.
-	   table.Execute(deleteOperation);
-
-	   Console.WriteLine("Entity deleted.");
-	}
-
-	else
-	   Console.WriteLine("Could not retrieve the entity.");
+    let deleteOp = TableOperation.Delete(customer)
+    table.Execute(deleteOp)
 
 ## Delete a table
 
-Finally, the following code example deletes a table from a storage account. A
-table that has been deleted will be unavailable to be re-created for a
-period of time following the deletion.
+You can delete a table from a storage account. A table that has been deleted will be unavailable to be re-created for a period of time following the deletion.
 
-    // Retrieve the storage account from the connection string.
-    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
-        CloudConfigurationManager.GetSetting("StorageConnectionString"));
-
-    // Create the table client.
-    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
-
-    // Create the CloudTable that represents the "people" table.
-    CloudTable table = tableClient.GetTableReference("people");
-
-    // Delete the table it if exists.
-    table.DeleteIfExists();
+    table.DeleteIfExists()
 
 ## Retrieve entities in pages asynchronously
 
-If you are reading a large number of entities, and you want to process/display entities as they are retrieved rather than waiting for them all to return, you can retrieve entities by using a segmented query. This example shows how to return results in pages by using the Async-Await pattern so that execution is not blocked while you're waiting for a large set of results to return. For more details on using the Async-Await pattern in .NET, see [Asynchronous programming with Async and Await (C# and Visual Basic)](https://msdn.microsoft.com/library/hh191443.aspx).
+If you are reading a large number of entities, and you want to process them as they are retrieved rather than waiting for them all to return, you can use a segmented query. Here, we return results in pages by using an async workflow so that execution is not blocked while you're waiting for a large set of results to return.
 
-    // Initialize a default TableQuery to retrieve all the entities in the table.
-    TableQuery<CustomerEntity> tableQuery = new TableQuery<CustomerEntity>();
+    let tableQ = TableQuery<Customer>()
 
-    // Initialize the continuation token to null to start from the beginning of the table.
-    TableContinuationToken continuationToken = null;
+    async {
+        let rec q (cont: TableContinuationToken) = async {
+            let! result = 
+                table.ExecuteQuerySegmentedAsync(tableQ, cont) 
+                |> Async.AwaitTask
 
-    do
-    {
-        // Retrieve a segment (up to 1,000 entities).
-        TableQuerySegment<CustomerEntity> tableQueryResult =
-            await table.ExecuteQuerySegmentedAsync(tableQuery, continuationToken);
-
-        // Assign the new continuation token to tell the service where to
-        // continue on the next iteration (or null if it has reached the end).
-        continuationToken = tableQueryResult.ContinuationToken;
-
-        // Print the number of rows retrieved.
-        Console.WriteLine("Rows retrieved {0}", tableQueryResult.Results.Count);
-
-    // Loop until a null continuation token is received, indicating the end of the table.
-    } while(continuationToken != null);
+            // Process the result here.
+            match result.ContinuationToken with
+            | null -> return ()
+            | cont -> q cont |> Async.RunSynchronously
+        }
+        q null |> Async.RunSynchronously
+    } |> Async.RunSynchronously
 
 ## Next steps
 
 Now that you've learned the basics of Table storage, follow these links
 to learn about more complex storage tasks:
 
-- See more Table storage samples in [Getting Started with Azure Table Storage in .NET](https://azure.microsoft.com/documentation/samples/storage-table-dotnet-getting-started/)
-- View the Table service reference documentation for complete details about available APIs:
-    - [Storage Client Library for .NET reference](http://go.microsoft.com/fwlink/?LinkID=390731&clcid=0x409)
-    - [REST API reference](http://msdn.microsoft.com/library/azure/dd179355)
-- Learn how to simplify the code you write to work with Azure Storage by using the [Azure WebJobs SDK](../app-service-web/websites-dotnet-webjobs-sdk-get-started.md)
-- View more feature guides to learn about additional options for storing data in Azure.
-    - [Get started with Azure Blob storage using .NET](storage-dotnet-how-to-use-blobs.md) to store unstructured data.
-    - [How to use Azure SQL Database in .NET applications](sql-database-dotnet-how-to-use.md) to store relational data.
-
-  [Download and install the Azure SDK for .NET]: /develop/net/
-  [Creating an Azure Project in Visual Studio]: http://msdn.microsoft.com/library/azure/ee405487.aspx
-
-  [Blob5]: ./media/storage-dotnet-how-to-use-table-storage/blob5.png
-  [Blob6]: ./media/storage-dotnet-how-to-use-table-storage/blob6.png
-  [Blob7]: ./media/storage-dotnet-how-to-use-table-storage/blob7.png
-  [Blob8]: ./media/storage-dotnet-how-to-use-table-storage/blob8.png
-  [Blob9]: ./media/storage-dotnet-how-to-use-table-storage/blob9.png
-
-  [Introducing Upsert and Query Projection blog post]: http://blogs.msdn.com/b/windowsazurestorage/archive/2011/09/15/windows-azure-tables-introducing-upsert-and-query-projection.aspx
-  [.NET Client Library reference]: http://go.microsoft.com/fwlink/?LinkID=390731&clcid=0x409
-  [Azure Storage Team blog]: http://blogs.msdn.com/b/windowsazurestorage/
-  [Configure Azure Storage connection strings]: http://msdn.microsoft.com/library/azure/ee758697.aspx
-  [OData]: http://nuget.org/packages/Microsoft.Data.OData/5.0.2
-  [Edm]: http://nuget.org/packages/Microsoft.Data.Edm/5.0.2
-  [Spatial]: http://nuget.org/packages/System.Spatial/5.0.2
-  [How to: Programmatically access Table storage]: #tablestorage
+- [Storage Client Library for .NET reference](http://go.microsoft.com/fwlink/?LinkID=390731&clcid=0x409)
+- [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)
+- [Configuring Connection Strings](http://msdn.microsoft.com/library/azure/ee758697.aspx)
+- [REST API reference](http://msdn.microsoft.com/library/azure/dd179355)
+- [Getting Started with Azure Table Storage in .NET](https://azure.microsoft.com/documentation/samples/storage-table-dotnet-getting-started/)

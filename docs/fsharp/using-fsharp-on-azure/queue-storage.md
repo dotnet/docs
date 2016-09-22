@@ -196,5 +196,4 @@ to learn about more complex storage tasks.
 - [Storage Client Library for .NET reference](http://go.microsoft.com/fwlink/?LinkID=390731&clcid=0x409)
 - [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)
 - [Configuring Connection Strings](http://msdn.microsoft.com/library/azure/ee758697.aspx)
-- [.NET client library reference](http://go.microsoft.com/fwlink/?LinkID=390731&clcid=0x409)
 - [REST API reference](http://msdn.microsoft.com/library/azure/dd179355)

@@ -35,11 +35,7 @@ Next, use a [package manager](package-management.md) such as Paket or NuGet to i
 
 Add the following `open` statements to the top of the `blobs.fsx` file:
 
-    open System
-    open System.IO
-    open Microsoft.Azure // Namespace for CloudConfigurationManager
-    open Microsoft.WindowsAzure.Storage // Namespace for CloudStorageAccount
-    open Microsoft.WindowsAzure.Storage.File // Namespace for File storage types
+[!code-fsharp[FileStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L1-L5)]
 
 ### Get your connection string
 
@@ -47,15 +43,13 @@ You'll need an Azure Storage connection string for this tutorial. For more infor
 
 For the tutorial, you'll enter your connection string in your script, like this:
 
-    let storageConnString = "..." // fill this in from your storage account
+[!code-fsharp[FileStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L11)]
 
 However, this is a **bad idea** for real projects. Your storage account key is similar to the root password for your storage account. Always be careful to protect your storage account key. Avoid distributing it to other users, hard-coding it, or saving it in a plain-text file that is accessible to others. You can regenerate your key using the Azure Portal if you believe it may have been compromised.
 
 For real applications, the best way to maintain your storage connection string is in a configuration file. To fetch the connection string from a configuration file, you can do this:
 
-    // Parse the connection string and return a reference to the storage account.
-    let storageConnString = 
-        CloudConfigurationManager.GetSetting("StorageConnectionString")
+[!code-fsharp[FileStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L13-L15)]
 
 Using Azure Configuration Manager is optional. You can also use an API such as the .NET Framework's `ConfigurationManager` type.
 
@@ -63,8 +57,7 @@ Using Azure Configuration Manager is optional. You can also use an API such as t
 
 To parse the connection string, use:
 
-    // Parse the connection string and return a reference to the storage account.
-    let storageAccount = CloudStorageAccount.Parse(storageConnString)
+[!code-fsharp[FileStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L21-L22)]
 
 This will return a `CloudStorageAccount`.
 
@@ -72,7 +65,7 @@ This will return a `CloudStorageAccount`.
 
 The `CloudFileClient` type enables you to programmatically use files stored in File storage. Here's one way to create the service client:
 
-    let fileClient = storageAccount.CreateCloudFileClient()
+[!code-fsharp[FileStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L28)]
 
 Now you are ready to write code that reads data from and writes data to Blob storage.
 
@@ -80,36 +73,19 @@ Now you are ready to write code that reads data from and writes data to Blob sto
 
 This example shows how to create a file share if it does not already exist:
 
-    let share = fileClient.GetShareReference("myFiles")
-    share.CreateIfNotExists()
+[!code-fsharp[FileStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L34-L35)]
 
 ### Access the file share programmatically
 
 Here, we get the root directory and get a sub-directory of the root. If the sub-directory exists, we get a file in the sub-directory, and if that exists too, we download the file, appending the contents to a local file.
 
-    let rootDir = share.GetRootDirectoryReference()
-    let subDir = rootDir.GetDirectoryReference("myLogs")
-
-    if subDir.Exists() then
-        let file = subDir.GetFileReference("log.txt")
-        if file.Exists() then
-            file.DownloadToFile("log.txt", FileMode.Append)
+[!code-fsharp[FileStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L41-L47)]
 
 ### Set the maximum size for a file share
 
 The example below shows how to check the current usage for a share and how to set the quota for the share. `FetchAttributes` must be called to populate a share's `Properties`, and `SetProperties` to propagate local changes to Azure File storage.
 
-    // stats.Usage is current usage in GB
-    let stats = share.GetStats()
-    share.FetchAttributes()
-
-    // Set the quota to 10 GB plus current usage
-    share.Properties.Quota <- stats.Usage + 10 |> Nullable
-    share.SetProperties()
-
-    // Remove the quota
-    share.Properties.Quota <- Nullable()
-    share.SetProperties()
+[!code-fsharp[FileStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L53-L63)]
 
 ### Generate a shared access signature for a file or file share
 
@@ -117,24 +93,7 @@ You can generate a shared access signature (SAS) for a file share or for an indi
 
 Here, we create a shared access policy on a share, and then use that policy to provide the constraints for a SAS on a file in the share.
 
-    // Create a 24 hour read/write policy.
-    let policy = SharedAccessFilePolicy()
-    policy.SharedAccessExpiryTime <- 
-        DateTimeOffset.UtcNow.AddHours(24.) |> Nullable
-    policy.Permissions <- 
-        SharedAccessFilePermissions.Read ||| SharedAccessFilePermissions.Write
-
-    // Set the policy on the share.
-    let permissions = share.GetPermissions()
-    permissions.SharedAccessPolicies.Add("policyName", policy)
-    share.SetPermissions(permissions)
-
-    let file = subDir.GetFileReference("log.txt")
-    let sasToken = file.GetSharedAccessSignature(policy)
-    let sasUri = Uri(file.StorageUri.PrimaryUri.ToString() + sasToken)
-
-    let fileSas = CloudFile(sasUri)
-    fileSas.UploadText("This write operation is authenticated via SAS")
+[!code-fsharp[FileStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L69-L86)]
 
 For more information about creating and using shared access signatures, see [Using Shared Access Signatures (SAS)](https://azure.microsoft.com/en-gb/documentation/articles/storage-dotnet-shared-access-signature-part-1/) and [Create and use a SAS with Blob storage](https://azure.microsoft.com/en-gb/documentation/articles/storage-dotnet-shared-access-signature-part-2/).
 
@@ -146,27 +105,13 @@ You can copy a file to another file, a file to a blob, or a blob to a file. If y
 
 Here, we copy a file to another file in the same share. Because this copy operation copies between files in the same storage account, you can use Shared Key authentication to perform the copy.
 
-    let destFile = subDir.GetFileReference("log_copy.txt")
-    destFile.StartCopy(file)
+[!code-fsharp[FileStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L92-L93)]
 
 ### Copy a file to a blob
 
 Here, we create a file and copy it to a blob within the same storage account. We create a SAS for the source file, which the service uses to authenticate access to the source file during the copy operation.
 
-    // Get a reference to the blob to which the file will be copied.
-    let blobClient = storageAccount.CreateCloudBlobClient()
-    let container = blobClient.GetContainerReference("myContainer")
-    container.CreateIfNotExists()
-    let destBlob = container.GetBlockBlobReference("log_blob.txt")
-
-    let filePolicy = SharedAccessFilePolicy()
-    filePolicy.Permissions <- SharedAccessFilePermissions.Read
-    filePolicy.SharedAccessExpiryTime <- 
-        DateTimeOffset.UtcNow.AddHours(24.) |> Nullable
-
-    let fileSas2 = file.GetSharedAccessSignature(filePolicy)
-    let sasUri2 = Uri(file.StorageUri.PrimaryUri.ToString() + fileSas2)
-    destBlob.StartCopy(sasUri2)
+[!code-fsharp[FileStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L99-L112)]
 
 You can copy a blob to a file in the same way. If the source object is a blob, then create a SAS to authenticate access to that blob during the copy operation.
 
@@ -176,20 +121,7 @@ Azure Storage Analytics supports metrics for File storage. With metrics data, yo
 
 You can enable metrics for File storage from the [Azure Portal](https://portal.azure.com), or you can do it from F# like this:
 
-    open Microsoft.WindowsAzure.Storage.File.Protocol
-    open Microsoft.WindowsAzure.Storage.Shared.Protocol
-
-    let props = FileServiceProperties()
-    props.HourMetrics <- MetricsProperties()
-    props.HourMetrics.MetricsLevel <- MetricsLevel.ServiceAndApi
-    props.HourMetrics.RetentionDays <- 14 |> Nullable
-    props.HourMetrics.Version <- "1.0"
-    props.MinuteMetrics <- MetricsProperties()
-    props.MinuteMetrics.MetricsLevel <- MetricsLevel.ServiceAndApi
-    props.MinuteMetrics.RetentionDays <- 7 |> Nullable
-    props.MinuteMetrics.Version <- "1.0"
-
-    fileClient.SetServiceProperties(props)
+[!code-fsharp[FileStorage](../../samples/snippets/fsharp/azure/blob-storage.fsx#L118-L131)]
 
 ## Next steps
 

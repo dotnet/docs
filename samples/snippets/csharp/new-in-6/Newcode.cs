@@ -52,7 +52,7 @@ namespace NewStyle
         // <stringInterpolationFormat>
         public string GetGradePointPercentage() =>
             $"Name: {LastName}, {FirstName}. G.P.A: {Grades.Average():F2}";
-        // </stringInterpolationFormat?
+        // </stringInterpolationFormat>
 
         // <stringInterpolationConditional>            
         public string GetGradePointPercentages() =>

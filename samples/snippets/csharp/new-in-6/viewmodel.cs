@@ -33,7 +33,7 @@ namespace UXComponents
                 {
                     firstName = value;
                     PropertyChanged?.Invoke(this, 
-                        new PropertyChangedEventArgs(nameof(UXComponents.ViewModel.FastName)));
+                        new PropertyChangedEventArgs(nameof(UXComponents.ViewModel.FirstName)));
                 }
             }
         }

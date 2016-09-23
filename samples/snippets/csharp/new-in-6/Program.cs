@@ -64,7 +64,7 @@ namespace NewInCSharp6
                 // This can still catch the more specific
                 // exception because the exception filter
                 // above always returns false.
-                // perform recovery here 
+                // Perform recovery here 
             }
         }
         // </LogExceptionRecovery>

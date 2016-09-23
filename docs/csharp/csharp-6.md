@@ -556,7 +556,7 @@ items to a collection to a method named `Add` by creating an
 extension method: 
 
 [!code-csharp[Enrollment](../../samples/snippets/csharp/new-in-6/enrollment.cs#Enrollment)]
-[!code-csharp[ExtensionSample](../../samples/snippets/csharp/new-in-6/classList.cs#ExtensionSample)]
+[!code-csharp[ExtensionAddSample](../../samples/snippets/csharp/new-in-6/classList.cs#ExtensionAddSample)]
 
 ## Improved overload resolution
 

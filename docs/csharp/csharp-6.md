@@ -399,7 +399,7 @@ about any variables in the call stack between this throw point and the
 location of the original throw point has been lost. 
 
 Contrast that with how the code using an exception filter is processed:
-the exception filter expression evaluates to `false`.Therefore, execution never
+the exception filter expression evaluates to `false`. Therefore, execution never
 enters the `catch` clause. Because the `catch` clause does not execute,
 no stack unwinding takes place. That means the original
 throw location is preserved for any debugging activities that would take
@@ -551,13 +551,18 @@ Now you can, but only if you create an extension method that maps `Add` to
 
 [!code-csharp[ExtensionAdd](../../samples/snippets/csharp/new-in-6/classList.cs#ExtensionAdd)]
 
-The final 
+What you are doing with this feature is to map whatever method adds
+items to a collection to a method named `Add` by creating an
+extension method: 
+
+[!code-csharp[Enrollment](../../samples/snippets/csharp/new-in-6/enrollment.cs#Enrollment)]
+[!code-csharp[ExtensionSample](../../samples/snippets/csharp/new-in-6/classList.cs#ExtensionSample)]
 
 ## Improved overload resolution
 
 This last feature is one you probably won't notice. There were constructs
 where the previous version of the C# compiler may have found some method
-calls involving lambda expressions ambiguious. Consider this method:
+calls involving lambda expressions ambiguous. Consider this method:
 
 [!code-csharp[AsyncMethod](../../samples/snippets/csharp/new-in-6/overloads.cs#AsyncMethod)]
 

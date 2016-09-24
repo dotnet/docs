@@ -4,7 +4,7 @@ description: project.json reference
 keywords: .NET, .NET Core, project.json
 author: aL3891
 manager: wpickett
-ms.date: 07/06/2016
+ms.date: 09/23/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -13,6 +13,16 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 ---
 
 # project.json reference
+
+The project.json file is used on .NET Core projects to define project metadata, compilation information, and dependencies. 
+In this reference topic, you'll see the list of all the properties you can define in your project.json file.
+
+> [!NOTE]
+> The .NET Core tooling is going to move from project.json to MSBuild-based projects in a future release. 
+> The recommendation is to still use project.json files for new .NET Core projects since there will be a path to convert your project to MSBuild when the tooling is released.
+>
+> For more information, see the [Changes to project.json](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/) post on the .NET blog and 
+> the [Using MSBuild to build .NET Core projects](../tutorials/target-dotnetcore-with-msbuild.md) topic.
 
 ## Overview
 
@@ -128,9 +138,11 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
         "dependencies": Object,
         "frameworkAssemblies": Object,
         "wrappedProject": String,
-        "bin": Object,
-        "imports": String
-    }
+        "bin": Object {
+            assembly: String
+        }
+    },
+    "runtimes": Object
 }
 ```
 
@@ -1026,6 +1038,7 @@ For example:
 Type: Boolean
 
 `true` to put segments that should be deleted on a standby list for future use instead of releasing them back to the operating system (OS); otherwise, `false`.
+The default is `false`.
 
 For example:
 
@@ -1479,7 +1492,9 @@ For example:
 ### bin
 Type: Object
 
-An object with a single property, `assembly`, whose value is the assembly path.
+This is used wrap a DLL file. You can reference and generate a package containing this DLL. 
+
+It contains a single String  property, `assembly`, whose value is the assembly path.   
 
 For example:
 
@@ -1487,25 +1502,26 @@ For example:
 "frameworks": {
     "netcoreapp1.0": {
         "bin": {
-            "assembly" :"c:/otherProject/otherdll.dll"
+            "assembly" : "c:/otherProject/otherdll.dll"
         }
     }
 }
 ```
 
-### imports
-Type: String
+## runtimes
+Type: Object
 
-Specifies other framework profiles that this project is compatible with.
+List of [runtime identifiers (RIDs)](../rid-catalog.md) supported by the project (used when publishing [self-contained deployments](../deploying/index.md#self-contained-deployments-scd)).
 
 For example:
 
 ```json
-"frameworks": {
-    "netcoreapp1.0": {
-        "imports": "portable-net45+win8"
-    }
-}
-```
-
-Will cause other packages targeting `portable-net45+win8` to be usable when targeting `netcoreapp1.0` with the current project.
+  "runtimes": {
+    "win7-x64": {},
+    "win8-x64": {},
+    "win81-x64": {},
+    "win10-x64": {},
+    "osx.10.11-x64": {},
+    "ubuntu.16.04-x64": {}
+  }
+  ```

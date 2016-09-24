@@ -154,7 +154,7 @@ foreach (var line in lines)
 ```
 
 Run the program (using `dotnet run` and you can see every line printed out
-to the console.  
+to the console).  
 
 ## Adding Delays and Formatting output
 What you have is being displayed far too fast to read aloud. Now you need

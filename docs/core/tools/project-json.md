@@ -1502,7 +1502,7 @@ For example:
 "frameworks": {
     "netcoreapp1.0": {
         "bin": {
-            "assembly" : "c:/otherProject/otherdll.dll"
+            "assembly": "c:/otherProject/otherdll.dll"
         }
     }
 }

@@ -219,7 +219,7 @@ to create a new console application.
 
 Your console application depends on the library you built and tested
 in the previous steps. You need to indicate that by editing `project.json`
-to add this dependency.  In the `dependencies` node, add the `Library`
+to add this dependency.  In the `dependencies` node, add the `library`
 node as follows:
 
 ```js

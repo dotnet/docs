@@ -16,11 +16,11 @@ ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
 
 ## Introduction
 This tutorial teaches you a number of features in .NET Core and the C# language. You’ll learn:
-*	The basics of the .NET Core Command Line Interface (CLI).
-*	The structure of a C# Console Application.
-*	Console I/O.
-*	The basics of File I/O APIS in .NET Core
-*	The basics of the Task Asynchronous Programming Model in .NET Core. 
+*	The basics of the .NET Core Command Line Interface (CLI)
+*	The structure of a C# Console Application
+*	Console I/O
+*	The basics of File I/O APIs in .NET Core
+*	The basics of the Task Asynchronous Programming Model in .NET Core
 
 You’ll build an application that reads a text file, and echoes the
 contents of that text file to the console. The output to the console will
@@ -37,25 +37,25 @@ You’ll need to install your favorite code editor.
 ## Create the Application
 The first step is to create a new application. Open a command prompt and
 create a new directory for your application. Make that the current
-directory. Type the command "dotnet new" at the command prompt. This
+directory. Type the command `dotnet new` at the command prompt. This
 creates the starter files for a basic “Hello World” application.
 
 Before you start making modifications, let’s go through the steps to run
 the simple Hello World application. After creating the application, type
-"dotnet restore" at the command prompt. This command runs the NuGet
+`dotnet restore` at the command prompt. This command runs the NuGet
 package restore process. NuGet is a .NET package manager. This command
 downloads any of the missing dependencies for your project. As this is a
 new project, none of the dependencies are in place, so the first run will
 download the .NET Core framework. After this initial step, you will only
-need to run dotnet restore when you add new dependent packages, or update
+need to run `dotnet restore` when you add new dependent packages, or update
 the versions of any of your dependencies. This process also creates the
 project lock file (project.lock.json) in your project directory. This file
 helps to manage the project dependencies. It contains the local location
 of all the project dependencies. You do not need to put the file in source
-control; it will be generated when you run “dotnet restore”. 
+control; it will be generated when you run `dotnet restore`. 
 
-After restoring packages, you run “dotnet build”. This executes the build
-engine and creates your application executable. Finally, you execute “dotnet run” to
+After restoring packages, you run `dotnet build`. This executes the build
+engine and creates your application executable. Finally, you execute `dotnet run` to
 run your application.  
 
 The simple Hello World application code is all in Program.cs. Open that
@@ -66,12 +66,12 @@ At the top of the file, see a using statement:
 using System;
 ```
 
-This statement tells the compiler that any types from the System namespace
+This statement tells the compiler that any types from the `System` namespace
 are in scope. Like other Object Oriented languages you may have used, C#
 uses namespaces to organize types. This hello world program is no
 different. You can see that the program is enclosed in the
 `ConsoleApplication` namespace. That’s not a very descriptive name, so
-change it to `TeleprompterConsole`.
+change it to `TeleprompterConsole`:
 
 ```cs
 namespace TeleprompterConsole
@@ -85,7 +85,7 @@ file from the GitHub repository for this [sample](https://github.com/dotnet/docs
 This will serve as the script for your
 application.
 
-Next, add the following method in your Program class (right below the Main 
+Next, add the following method in your Program class (right below the `Main` 
 method):
 
 ```cs
@@ -111,8 +111,8 @@ using System.IO;
 ```
 
 The `IEnumerable<T>` interface is defined in the 
-`System.Collections.Generic` namespace. The File class is defined in the
-`System.IO namespace`.
+`System.Collections.Generic` namespace. The `File` class is defined in the
+`System.IO` namespace.
 
 This method is a special type of C# method called an *Enumerator method*. 
 Enumerator methods return sequences that are evaluated lazily. That means 
@@ -128,7 +128,7 @@ indicates that there are no more items.
 
 There are two other C# syntax elements that may be new to you. The `using` 
 statement in this method manages resource cleanup. The variable that is
-initialized in the using statement (`reader`, in this example) must
+initialized in the `using` statement (`reader`, in this example) must
 implement the `IDisposable` interface. The `IDisposable` interface
 defines a single method, `Dispose()`, that should be called when the
 resource should be released. The compiler generates that call when
@@ -137,13 +137,13 @@ compiler-generated code ensures that the resource is released even if an
 exception is thrown from the code in the block defined by the using
 statement.
 
-The reader variable is defined using the `var` keyword. `var` defines an
+The `reader` variable is defined using the `var` keyword. `var` defines an
 *implicitly typed local variable*. That means the type of the variable is
 determined by the compile time type of the object assigned to the
 variable. Here, that is the return value from `File.OpenText()`, which is
 a `StreamReader` object.
  
-Now, let’s fill in the code to read the file in the Main method: 
+Now, let’s fill in the code to read the file in the `Main` method: 
 
 ```cs
 var lines = ReadFrom("SampleQuotes.txt");
@@ -153,8 +153,8 @@ foreach (var line in lines)
 }
 ```
 
-Run the program (using "dotnet run" and you can see every line printed out
-to the console.  
+Run the program (using `dotnet run` and you can see every line printed out
+to the console).  
 
 ## Adding Delays and Formatting output
 What you have is being displayed far too fast to read aloud. Now you need
@@ -179,7 +179,7 @@ yield return Environment.NewLine;
 ```
 
 Next, you need to modify how you consume the lines of the file, and add a
-delay after writing each word. Replace the `Console.WriteLine()` statement
+delay after writing each word. Replace the `Console.WriteLine(line)` statement
 in the `Main` method with the following block:
 
 ```cs
@@ -197,7 +197,7 @@ in the `Main` method with the following block:
 ```
 
 The `Task` class is in the `System.Threading.Tasks` namespace, so you need
-to add that using statement at the top of file:
+to add that `using` statement at the top of file:
 
 ```cs
 using System.Threading.Tasks;
@@ -216,7 +216,7 @@ certain threshold. Declare a local variable after the declaration of
 var lineLength = 0;
 ```
  
-Then, add the following code after the `yield return word;` statement
+Then, add the following code after the `yield return word + " ";` statement
 (before the closing brace):
 
 ```cs
@@ -239,8 +239,8 @@ steps in it and by the end, you’ll have all the updates that you need.
 The first step is to create an asynchronous `Task` returning method that
 represents the code you’ve created so far to read and display the file.
 
-Add this method to your Program class: (It’s taken from the body of your
-Main method:
+Add this method to your Program class (It’s taken from the body of your
+`Main` method):
 
 ```cs
 private static async Task ShowTeleprompter()
@@ -261,16 +261,16 @@ You’ll notice two changes. First, in the body of the method, instead of
 calling `Wait()` to synchronously wait for a task to finish, this version
 uses the `await` keyword. In order to do that, you need to add the `async`
 modifier to the method signature. This method returns a `Task`. Notice that
-there are no return statements that return a Task object. Instead, that
+there are no return statements that return a `Task` object. Instead, that
 `Task` object is created by code the compiler generates when you use the
 `await` operator. You can imagine that this method returns when it reaches
-an `await`. The returned Task indicates that the work has not completed.
+an `await`. The returned `Task` indicates that the work has not completed.
 The method resumes when the awaited task completes. When it has executed
 to completion, the returned `Task` indicates that it is complete.
 Calling code can
-monitor that returned task to determine when it has completed.
+monitor that returned `Task` to determine when it has completed.
 
-You can call this new method in your Main program:
+You can call this new method in your `Main` method:
 
 ```cs
 ShowTeleprompter().Wait();
@@ -313,9 +313,9 @@ from the Console and modifies a local variable representing the delay when
 the user presses the ‘<’ or ‘>’ keys. This method uses `Console.ReadKey()`
 to block and wait for the user to press a key.
 
-To finish this feature, you need to create a new async task returning
+To finish this feature, you need to create a new `async Task` returning
 method that starts both of these tasks (`GetInput()` and 
-`ShowTeleprompter()`, and also manage the shared data between these two
+`ShowTeleprompter()`), and also manages the shared data between these two
 tasks.
  
 It’s time to create a class that can handle the shared data between these
@@ -344,10 +344,10 @@ namespace TeleprompterConsole
 ```
 
 Put that class in a new file, and enclose that class in the
-`TeleprompterConsole` namespace as shown above. You’ll also need to add a `static using`
+`TeleprompterConsole` namespace as shown above. You’ll also need to add a `using static`
 statement so that you can reference the `Min` and `Max` method without the
-enclosing class or namespace names. A static using statement imports the
-methods from one class. This is in contrast with the using statements used
+enclosing class or namespace names. A `using static` statement imports the
+methods from one class. This is in contrast with the `using` statements used
 up to this point that have imported all classes from a namespace.
 
 ```cs
@@ -357,12 +357,12 @@ using static System.Math;
 The other language feature that’s new is the `lock` statement. This
 statement ensures that only a single thread can be in that code at any
 given time. If one thread is in the locked section, other threads must
-wait for the first thread to exit that section. The lock statement uses an
+wait for the first thread to exit that section. The `lock` statement uses an
 object that guards the lock section. This class follows a standard idiom
 to lock a private object in the class.
 
 Next, you need to update the `ShowTeleprompter` and `GetInput` methods to
-use the new config object. Write one final Task returning async method to
+use the new `config` object. Write one final `Task` returning `async` method to
 start both tasks and exit when the first task finishes:
 
 ```cs
@@ -376,11 +376,11 @@ private static async Task RunTeleprompter()
 }
 ```
 
-The one new method here is the `Task.WhenAny()` call. That creates a Task
+The one new method here is the `Task.WhenAny()` call. That creates a `Task`
 that finishes as soon as any of the tasks in its argument list completes.
 
-Next, you need to update both the ShowTeleprompter and GetInput methods to
-use the config object for the delay:
+Next, you need to update both the `ShowTeleprompter` and `GetInput` methods to
+use the `config` object for the delay:
 
 ```cs
 private static async Task ShowTeleprompter(TelePrompterConfig config)
@@ -415,7 +415,7 @@ private static async Task GetInput(TelePrompterConfig config)
 ```
 
 This new version of `ShowTeleprompter` calls a new method in the
-`TeleprompterConfig` class. Now, you need to update Main to call 
+`TeleprompterConfig` class. Now, you need to update `Main` to call 
 `RunTeleprompter` instead of `ShowTeleprompter`:
 
 ```cs

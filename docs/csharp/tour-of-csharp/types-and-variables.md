@@ -14,7 +14,7 @@ ms.assetid: f8a8051e-0049-43f1-b594-9c84cc7b1224
 
 # Types and variables
 
-There are two kinds of types in C#: *value types* and *reference types*. Variables of value types directly contain their data whereas variables of reference types store references to their data, the latter being known as objects. With reference types, it is possible for two variables to reference the same object and thus possible for operations on one variable to affect the object referenced by the other variable. With value types, the variables each have their own copy of the data, and it is not possible for operations on one to affect the other (except in the case of ref and out parameter variables).
+There are two kinds of types in C#: *value types* and *reference types*. Variables of value types directly contain their data whereas variables of reference types store references to their data, the latter being known as objects. With reference types, it is possible for two variables to reference the same object and thus possible for operations on one variable to affect the object referenced by the other variable. With value types, the variables each have their own copy of the data, and it is not possible for operations on one to affect the other (except in the case of `ref` and `out` parameter variables).
 
 C#’s value types are further divided into *simple types*, *enum types*, *struct types*, and *nullable value types*. C#’s reference types are further divided into *class types*, *interface types*, *array types*, and *delegate types*.
 

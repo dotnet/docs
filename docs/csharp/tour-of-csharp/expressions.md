@@ -14,18 +14,18 @@ ms.assetid: 20d5eb10-7381-47b9-ad90-f1cc895aa27e
 
 # Expressions
 
-***Expressions*** are constructed from ***operands*** and ***operators***. The operators of an expression indicate which operations to apply to the operands. Examples of operators include `+`, `-`, `*`, `/`, and `new`. Examples of operands include literals, fields, local variables, and expressions.
+*Expressions* are constructed from *operands* and *operators*. The operators of an expression indicate which operations to apply to the operands. Examples of operators include `+`, `-`, `*`, `/`, and `new`. Examples of operands include literals, fields, local variables, and expressions.
 
-When an expression contains multiple operators, the ***precedence*** of the operators controls the order in which the individual operators are evaluated. For example, the expression `x + y * z` is evaluated as `x + (y * z)` because the `*` operator has higher precedence than the `+` operator.
+When an expression contains multiple operators, the *precedence* of the operators controls the order in which the individual operators are evaluated. For example, the expression `x + y * z` is evaluated as `x + (y * z)` because the `*` operator has higher precedence than the `+` operator.
 
-When an operand occurs between two operators with the same precedence, the ***associativity*** of the operators controls the order in which the operations are performed:
+When an operand occurs between two operators with the same precedence, the *associativity* of the operators controls the order in which the operations are performed:
 
-*	Except for the assignment operators, all binary operators are ***left-associative***, meaning that operations are performed from left to right. For example, `x + y + z` is evaluated as `(x + y) + z`.
-*	The assignment operators and the conditional operator (`?:`) are ***right-associative***, meaning that operations are performed from right to left. For example, `x = y = z` is evaluated as `x = (y = z)`.
+*	Except for the assignment operators, all binary operators are *left-associative*, meaning that operations are performed from left to right. For example, `x + y + z` is evaluated as `(x + y) + z`.
+*	The assignment operators and the conditional operator (`?:`) are *right-associative*, meaning that operations are performed from right to left. For example, `x = y = z` is evaluated as `x = (y = z)`.
 
 Precedence and associativity can be controlled using parentheses. For example, `x + y * z` first multiplies `y` by `z` and then adds the result to `x`, but `(x + y) * z` first adds `x` and `y` and then multiplies the result by `z`.
 
-Most operators can be ***overloaded***. Operator overloading permits user-defined operator implementations to be specified for operations where one or both of the operands are of a user-defined class or struct type.
+Most operators can be *overloaded*. Operator overloading permits user-defined operator implementations to be specified for operations where one or both of the operands are of a user-defined `class` or `struct` type.
 
 The following summarizes C#’s operators, listing the operator categories in order of precedence from highest to lowest. Operators in the same category have equal precedence. Under each category is a list of expressions in that category along with the description of that expression type.
 
@@ -39,7 +39,7 @@ The following summarizes C#’s operators, listing the operator categories in or
 	- `new T(...){...}`: Object creation with initializer
 	- `new {...}`:  Anonymous object initializer
 	- `new T[...]`: Array creation
-	- `typeof(T)`: Obtain System.Type object for `T`
+	- `typeof(T)`: Obtain `System.Type` object for `T`
 	- `checked(x)`: Evaluate expression in checked context
 	- `unchecked(x)`: Evaluate expression in unchecked context
 	- `default(T)`: Obtain default value of type `T`
@@ -78,13 +78,13 @@ The following summarizes C#’s operators, listing the operator categories in or
 * Logical XOR
     - `x ^ y`: Integer bitwise XOR, boolean logical XOR
 * Logical OR
-    `x | y`: Integer bitwise OR, boolean logical OR
+    - `x | y`: Integer bitwise OR, boolean logical OR
 * Conditional AND
     - `x && y`: Evaluates `y` only if `x` is not `false`
 * Conditional OR
     - `x || y`: Evaluates `y` only if `x` is not `true`
 * Null coalescing
-    - `X ?? y`: Evaluates to `y` if `x` is null, to `x` otherwise
+    - `X ?? y`: Evaluates to `y` if `x` is `null`, to `x` otherwise
 * Conditional
     - `x ? y : z`: Evaluates `y` if `x` is `true`, `z` if `x` is `false`
 * Assignment or anonymous function

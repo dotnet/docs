@@ -315,7 +315,7 @@ to block and wait for the user to press a key.
 
 To finish this feature, you need to create a new `async Task` returning
 method that starts both of these tasks (`GetInput()` and 
-`ShowTeleprompter()`, and also manage the shared data between these two
+`ShowTeleprompter()`), and also manages the shared data between these two
 tasks.
  
 It’s time to create a class that can handle the shared data between these

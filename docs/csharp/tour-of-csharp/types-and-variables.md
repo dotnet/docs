@@ -69,12 +69,12 @@ This summarizes C#’s numeric types.
     - `uint`   : 32 bits, range from 0 - 4,294,967,295
     - `ulong`  : 64 bits, range from 0 - 18,446,744,073,709,551,615
 * Floating point
-    - `float`  : 32 bits, range from 1.5 × 10^−45 - 3.4 × 10^38,    7-digit precision
-	- `double` : 64 bits, range from 5.0 × 10^−324 - 1.7 × 10^308, 15-digit precision
+    - `float`  : 32 bits, range from 1.5 × 10<sup>−45<\sup> - 3.4 × 10<sup>38<\sup>,    7-digit precision
+	- `double` : 64 bits, range from 5.0 × 10<sup>−324<\sup> - 1.7 × 10<sup>308<\sup>, 15-digit precision
 * Decimal
-    - `decimal` : 128 bits, range is at least –7.9 × 10^−28 -  7.9 × 10^28, with at least 28-digit precision
+    - `decimal` : 128 bits, range is at least –7.9 × 10<sup>−28<\sup> -  7.9 × 10<sup>28<\sup>, with at least 28-digit precision
     
-C# programs use *type declarations* to create new types. A type declaration specifies the name and the members of the new type. Five of C#’s categories of types are user-definable: `class` types, `struct` types, `interface` types, `enum` types, and `delegate` types.
+C# programs use *type declarations* to create new types. A type declaration specifies the name and the members of the new type. Five of C#’s categories of types are user-definable: class types, struct types, interface types, enum types, and delegate types.
 
 A `class` type defines a data structure that contains data members (fields) and function members (methods, properties, and others). Class types support single inheritance and polymorphism, mechanisms whereby derived classes can extend and specialize base classes.
 
@@ -96,7 +96,7 @@ C#’s type system is unified such that a value of any type can be treated as an
 
 [!code-csharp[Boxing](../../../samples/snippets/csharp/tour/types-and-variables/Program.cs#L1-L10)]
 
-When a value of a value type is converted to type `object`, an `object` instance, also called a “box,” is allocated to hold the value, and the value is copied into that box. Conversely, when an `object` reference is cast to a value type, a check is made that the referenced `object` is a box of the correct value type, and, if the check succeeds, the value in the box is copied out.
+When a value of a value type is converted to type `object`, an `object` instance, also called a “box”, is allocated to hold the value, and the value is copied into that box. Conversely, when an `object` reference is cast to a value type, a check is made that the referenced `object` is a box of the correct value type, and, if the check succeeds, the value in the box is copied out.
 
 C#’s unified type system effectively means that value types can become objects “on demand.” Because of the unification, general-purpose libraries that use type `object` can be used with both reference types and value types.
 

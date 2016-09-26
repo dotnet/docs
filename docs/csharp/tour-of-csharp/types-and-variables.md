@@ -69,10 +69,10 @@ This summarizes C#’s numeric types.
     - `uint`   : 32 bits, range from 0 - 4,294,967,295
     - `ulong`  : 64 bits, range from 0 - 18,446,744,073,709,551,615
 * Floating point
-    - `float`  : 32 bits, range from 1.5 × 10<sup>−45<\sup> - 3.4 × 10<sup>38<\sup>,    7-digit precision
-	- `double` : 64 bits, range from 5.0 × 10<sup>−324<\sup> - 1.7 × 10<sup>308<\sup>, 15-digit precision
+    - `float`  : 32 bits, range from 1.5 × 10<sup>−45</sup> - 3.4 × 10<sup>38</sup>,    7-digit precision
+	- `double` : 64 bits, range from 5.0 × 10<sup>−324</sup> - 1.7 × 10<sup>308</sup>, 15-digit precision
 * Decimal
-    - `decimal` : 128 bits, range is at least –7.9 × 10<sup>−28<\sup> -  7.9 × 10<sup>28<\sup>, with at least 28-digit precision
+    - `decimal` : 128 bits, range is at least –7.9 × 10<sup>−28</sup> -  7.9 × 10<sup>28</sup>, with at least 28-digit precision
     
 C# programs use *type declarations* to create new types. A type declaration specifies the name and the members of the new type. Five of C#’s categories of types are user-definable: class types, struct types, interface types, enum types, and delegate types.
 

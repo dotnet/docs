@@ -14,10 +14,12 @@ In this topic, we'll cover:
 
 ## Process for contributing
 
-**Step 1:** Open an issue describing the article you wish to write and how it relates to existing content.
+**Step 1:** Open an [issue](https://github.com/dotnet/core-docs/issues) describing the article you wish to write and how it relates to existing content.
 The content inside the **docs** folder is organized into sections that are reflected in the Table of Contents (TOC). Define where the topic will be located in the TOC. Get feedback on your proposal. 
 
 You can skip this step for small changes.
+
+You can also look at our [open issues](https://github.com/dotnet/core-docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/core-docs/labels/up-for-grabs) label to tag issues we think the community could easily help us out.
 
 **Step 2:** Fork the `/dotnet/core-docs` repo.
 

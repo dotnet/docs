@@ -19,9 +19,7 @@ F# is a superb language for cloud programming and is frequently used to write we
 
 In the sections below, you will find resources on how to use a range of Azure services with F#.
 
-> Note: If a particular Azure service doesn't have documentation below, please consult the C# documentation for that service. Some
-> Azure services are entirely language-independent systems services and require no language-specific documentation, and in this
-> case are not listed here.
+> [!NOTE] If a particular Azure service doesn't have documentation below, please consult the C# documentation for that service. Some Azure services are entirely language-independent systems services and require no language-specific documentation, and in this case are not listed here.
 
 ## Using Azure Storage with F#
 

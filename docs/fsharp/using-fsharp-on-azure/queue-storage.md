@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 70dc554c-8f4d-42a7-8e2a-6438657d012a
 ---
 
-# Get started with Azure Queue storage using F#
+# Get started with Azure Queue storage using F# #
 
 Azure Queue storage provides cloud messaging between application components. In designing applications for scale, application components are often decoupled, so that they can scale independently. Queue storage delivers asynchronous messaging for communication between application components, whether they are running in the cloud, on the desktop, on an on-premises server, or on a mobile device. Queue storage also supports managing asynchronous tasks and building process work flows.
 

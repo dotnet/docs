@@ -117,6 +117,10 @@
 ### [Targeting Older Versions of .NET](fsharp/using-fsharp-in-visual-studio/targeting-older-versions-of-net.md)
 
 ## [Using F# on Azure](fsharp/using-fsharp-on-azure/index.md)
+### [Get started with Azure Blob storage using F#](fsharp/using-fsharp-on-azure/blob-storage.md)
+### [Get started with Azure File storage using F#](fsharp/using-fsharp-on-azure/file-storage.md)
+### [Get started with Azure Queue storage using F#](fsharp/using-fsharp-on-azure/queue-storage.md)
+### [Get started with Azure Table storage using F#](fsharp/using-fsharp-on-azure/table-storage.md)
 ### [Using F# on Azure Service Fabric](fsharp/using-fsharp-on-azure/using-fsharp-on-azure-service-fabric.md)
 
 ## [F# Language Reference](fsharp/language-reference/index.md)

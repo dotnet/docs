@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 9e5d6cea-a98c-461e-a5cc-75f1d154eafd
 ---
 
-# Get started with Azure Table storage using F# 
+# Get started with Azure Table storage using F# #
 
 Azure Table storage is a service that stores structured NoSQL data in the cloud. Table storage is a key/attribute store with a schemaless design. Because Table storage is schemaless, it's easy to adapt your data as the needs of your application evolve. Access to data is fast and cost-effective for all kinds of applications. Table storage is typically significantly lower in cost than traditional SQL for similar volumes of data.
 

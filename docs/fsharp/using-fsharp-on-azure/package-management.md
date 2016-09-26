@@ -2,7 +2,7 @@
 title: Using Package Management with F# for Azure
 description: Use Paket or Nuget to manage F# Azure dependencies
 keywords: visual f#, f#, functional programming, .NET, .NET Core, Azure
-author: syclebsc
+author: sylvanc
 manager: jbronsk
 ms.date: 09/20/2016
 ms.topic: article

@@ -2,7 +2,7 @@
 title: Get started with Azure File storage using F# 
 description: Store file data in the cloud with Azure File storage, and mount your cloud file share from an Azure virtual machine (VM) or from an on-premises application running Windows.
 keywords: visual f#, f#, functional programming, .NET, .NET Core, Azure
-author: syclebsc
+author: sylvanc
 manager: jbronsk
 ms.date: 09/20/2016
 ms.topic: article
@@ -43,7 +43,7 @@ You'll need an Azure Storage connection string for this tutorial. For more infor
 
 For the tutorial, you'll enter your connection string in your script, like this:
 
-[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L11)]
+[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L11-L11)]
 
 However, this is a **bad idea** for real projects. Your storage account key is similar to the root password for your storage account. Always be careful to protect your storage account key. Avoid distributing it to other users, hard-coding it, or saving it in a plain-text file that is accessible to others. You can regenerate your key using the Azure Portal if you believe it may have been compromised.
 
@@ -65,7 +65,7 @@ This will return a `CloudStorageAccount`.
 
 The `CloudFileClient` type enables you to programmatically use files stored in File storage. Here's one way to create the service client:
 
-[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L28)]
+[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L28-L28)]
 
 Now you are ready to write code that reads data from and writes data to Blob storage.
 

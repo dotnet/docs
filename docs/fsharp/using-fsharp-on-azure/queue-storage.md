@@ -2,7 +2,7 @@
 title: Get started with Azure Queue storage using F# 
 description: Azure Queues provide reliable, asynchronous messaging between application components. Cloud messaging enables your application components to scale independently.
 keywords: visual f#, f#, functional programming, .NET, .NET Core, Azure
-author: syclebsc
+author: sylvanc
 manager: jbronsk
 ms.date: 09/20/2016
 ms.topic: article
@@ -69,7 +69,7 @@ This will return a `CloudStorageAccount`.
 
 The `CloudQueueClient` class enables you to retrieve queues stored in Queue storage. Here's one way to create the service client:
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L26)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L26-L26)]
 
 Now you are ready to write code that reads data from and writes data to Queue storage.
 

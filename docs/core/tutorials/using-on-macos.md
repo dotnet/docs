@@ -241,7 +241,7 @@ and replace the contents of the `Main` method with this line:
 WriteLine($"The answer is {new Thing().Get(19, 23)}");
 ```
 
-You'll need to add a couple using directives to the top of the file:
+You'll need to add a couple `using` directives to the top of the file:
 
 ```cs
 using static System.Console;
@@ -255,7 +255,7 @@ can type `dotnet run` to run the executable.
 
 You can debug your code in VS Code using the C# extension.
 You install this extension by pressing `F1` to open the VS Code
-palette. Type `ext install` to see the list of extensions. Select the `C#`
+palette. Type `ext install` to see the list of extensions. Select the C#
 extension. (More details are available on the [Visual Studio
 Code C# Extension documentation](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md)
 page.)

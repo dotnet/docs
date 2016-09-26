@@ -84,7 +84,7 @@ The following summarizes C#’s operators, listing the operator categories in or
 * Conditional OR
     - `x || y`: Evaluates `y` only if `x` is not `true`
 * Null coalescing
-    - `X ?? y`: Evaluates to `y` if `x` is `null`, to `x` otherwise
+    - `x ?? y`: Evaluates to `y` if `x` is null, to `x` otherwise
 * Conditional
     - `x ? y : z`: Evaluates `y` if `x` is `true`, `z` if `x` is `false`
 * Assignment or anonymous function

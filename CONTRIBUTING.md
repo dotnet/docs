@@ -7,7 +7,7 @@ In this topic, you'll see the basic process for adding or updating content in th
 In this topic, we'll cover: 
 
 * [Process for contributing](#process-for-contributing) 
-* [Guidance checklist](#guidance-checklist)
+* [DOs and DON'Ts](#dos-and-donts)
 * [Building the docs](#building-the-docs)
 * [Contributing to samples](#contributing-to-samples)
 * [Contributor License Agreement](#contributor-license-agreement)
@@ -102,7 +102,7 @@ This starts the local preview on [localhost:8080](http://localhost:8080). You ca
 
 **Note:** the local preview currently doesn't contain any themes at the moment so the look and feel won't be the same as in the documentation site. We're working towards fixing that experience.
 
-# Contributing to samples
+## Contributing to samples
 
 We encourage samples for all the topics in .NET documentation. Readers can download and run the samples. They
 can explore the code and experiment with their own changes.
@@ -141,3 +141,11 @@ with `http://docs.microsoft.com/dotnet/articles`.
 Your topic will also contain links to the sample. Link directly to the sample's folder on GitHub.
 
 For more information, see the [Samples Readme](https://github.com/dotnet/docs/blob/master/samples/README.md).
+
+## Contributor License Agreement
+
+You must sign the [.NET Foundation Contribution License Agreement (CLA)](http://cla2.dotnetfoundation.org) before your PR is merged. This is a one-time requirement for projects in the .NET Foundation. You can read more about [Contribution License Agreements (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
+
+The agreement: [net-foundation-contribution-license-agreement.pdf](https://cla2.dotnetfoundation.org/cladoc/net-foundation-contribution-license-agreement.pdf)
+
+You don't have to do this up-front. You can simply clone, fork, and submit your PR as usual. When your PR is created, it is classified by a CLA bot. If the change is trivial (for example, you just fixed a typo), then the PR is labeled with `cla-not-required`. Otherwise, it's classified as `cla-required`. Once you signed the CLA, the current and all future pull requests will be labeled as `cla-signed`.

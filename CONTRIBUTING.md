@@ -19,7 +19,7 @@ The content inside the **docs** folder is organized into sections that are refle
 
 You can skip this step for small changes.
 
-You can also look at our [open issues](https://github.com/dotnet/core-docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/core-docs/labels/up-for-grabs) label to tag issues we think the community could easily help us out.
+You can also look at our [open issues](https://github.com/dotnet/core-docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/core-docs/labels/up-for-grabs) label to tag issues open for contribution.
 
 **Step 2:** Fork the `/dotnet/core-docs` repo.
 

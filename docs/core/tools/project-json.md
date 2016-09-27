@@ -1516,12 +1516,26 @@ List of [runtime identifiers (RIDs)](../rid-catalog.md) supported by the project
 For example:
 
 ```json
-  "runtimes": {
+"runtimes": {
     "win7-x64": {},
     "win8-x64": {},
     "win81-x64": {},
     "win10-x64": {},
     "osx.10.11-x64": {},
     "ubuntu.16.04-x64": {}
-  }
-  ```
+}
+```
+
+## userSecretsId
+Type: String
+
+Specifies a user secret identifier to be used at development-time. 
+For more information, see [Safe storage of app secrets during development](https://docs.asp.net/en/latest/security/app-secrets.html).
+
+For example:
+
+```json
+{
+    "userSecretsId": "aspnet-WebApp1-c23d27a4-eb88-4b18-9b77-2a93f3b15119"
+}
+```

@@ -4,7 +4,7 @@ description: project.json reference
 keywords: .NET, .NET Core, project.json
 author: aL3891
 manager: wpickett
-ms.date: 09/23/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -142,7 +142,8 @@ In this reference topic, you'll see the list of all the properties you can defin
             assembly: String
         }
     },
-    "runtimes": Object
+    "runtimes": Object,
+    "userSecretsId": String
 }
 ```
 

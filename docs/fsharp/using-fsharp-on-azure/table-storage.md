@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 9e5d6cea-a98c-461e-a5cc-75f1d154eafd
 ---
 
-# Get started with Azure Table storage using F# 
+# Get started with Azure Table storage using F# #
 
 Azure Table storage is a service that stores structured NoSQL data in the cloud. Table storage is a key/attribute store with a schemaless design. Because Table storage is schemaless, it's easy to adapt your data as the needs of your application evolve. Access to data is fast and cost-effective for all kinds of applications. Table storage is typically significantly lower in cost than traditional SQL for similar volumes of data.
 
@@ -39,9 +39,9 @@ Next, use a [package manager](package-management.md) such as Paket or NuGet to i
 
 ### Add namespace declarations
 
-Add the following `open` statements to the top of the `blobs.fsx` file:
+Add the following `open` statements to the top of the `tables.fsx` file:
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L1-L5)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L1-L5)]
 
 ### Get your connection string
 
@@ -49,13 +49,13 @@ You'll need an Azure Storage connection string for this tutorial. For more infor
 
 For the tutorial, you'll enter your connection string in your script, like this:
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L11-L11)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L11-L11)]
 
 However, this is a **not recommended** for real projects. Your storage account key is similar to the root password for your storage account. Always be careful to protect your storage account key. Avoid distributing it to other users, hard-coding it, or saving it in a plain-text file that is accessible to others. You can regenerate your key using the Azure Portal if you believe it may have been compromised.
 
 For real applications, the best way to maintain your storage connection string is in a configuration file. To fetch the connection string from a configuration file, you can do this:
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L13-L15)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L13-L15)]
 
 Using Azure Configuration Manager is optional. You can also use an API such as the .NET Framework's `ConfigurationManager` type.
 
@@ -63,7 +63,7 @@ Using Azure Configuration Manager is optional. You can also use an API such as t
 
 To parse the connection string, use:
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L21-L22)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L21-L22)]
 
 This will return a `CloudStorageAccount`.
 
@@ -71,7 +71,7 @@ This will return a `CloudStorageAccount`.
 
 The `CloudTableClient` class enables you to retrieve tables and entities stored in Table storage. Here's one way to create the service client:
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L28-L29)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L28-L29)]
 
 Now you are ready to write code that reads data from and writes data to Table storage.
 
@@ -79,7 +79,7 @@ Now you are ready to write code that reads data from and writes data to Table st
 
 This example shows how to create a table if it does not already exist:
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L35-L39)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L35-L39)]
 
 ## Add an entity to a table
 
@@ -89,11 +89,11 @@ An entity's partition and row key uniquely identify the entity in the table. Ent
 
 Here's an example of a `Customer` that uses the `lastName` as the partition key and the `firstName` as the row key.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L45-L53)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L45-L53)]
 
 Now we'll add our `Customer` to the table. To do so, we create a `TableOperation` that we will execute on the table. In this case, we create an `Insert` operation.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L55-L56)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L55-L56)]
 
 ## Insert a batch of entities
 
@@ -106,61 +106,61 @@ You can insert a batch of entities into a table using a single write operation. 
 
 Here's some code that combines two inserts into a batch operation:
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L62-L68)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L62-L68)]
 
 ## Retrieve all entities in a partition
 
 To query a table for all entities in a partition, use a `TableQuery` object. Here, we filter for entities where "Buster" is the partition key.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L74-L79)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L74-L79)]
 
 ## Retrieve a range of entities in a partition
 
 If you don't want to query all the entities in a partition, you can specify a range by combining the partition key filter with a row key filter. Here, we use two filters to get all entities in the "Buster" partition where the row key (first name) starts with a letter earlier than "M" in the alphabet.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L85-L94)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L85-L94)]
 
 ## Retrieve a single entity
 
 You can write a query to retrieve a single, specific entity. Here, we use a `TableOperation` to specify the customer "Larry Buster". Instead of a collection, we get back a `Customer`. Specifying both the partition key and the row key in a query is the fastest way to retrieve a single entity from the Table service.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L100-L101)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L100-L101)]
 
 ## Replace an entity
 
 To update an entity, retrieve it from the Table service, modify the entity object, and then save the changes back to the Table service using a `Replace` operation. This causes the entity to be fully replaced on the server, unless the entity on the server has changed since it was retrieved, in which case the operation will fail. This failure is to prevent your application from inadvertently overwriting changes from other sources.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L107-L113)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L107-L113)]
 
 ## Insert-or-replace an entity
 
 Sometimes, you don't know if the entity exists in the table or not. And if it does, the current values stored in it are no longer needed. We can use `InsertOrReplace` to create the entity, or replace it if it exists, regardless of its state.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L119-L124)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L119-L124)]
 
 ## Query a subset of entity properties
 
 A table query can retrieve just a few properties from an entity instead of all of them. This technique, called projection, can improve query performance, especially for large entities. Here, we return only email addresses using `DynamicTableEntity` and `EntityResolver`. Note that projection is not supported on the local storage emulator, so this code runs only when you're using an account on the Table service.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L130-L141)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L130-L141)]
 
 ## Delete an entity
 
 You can delete an entity after you have retrieved it. As with updating an entity, this will fail if the entity has changed since you retrieved it.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L147-L148)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L147-L148)]
 
 ## Delete a table
 
 You can delete a table from a storage account. A table that has been deleted will be unavailable to be re-created for a period of time following the deletion.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L154-L154)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L154-L154)]
 
 ## Retrieve entities in pages asynchronously
 
 If you are reading a large number of entities, and you want to process them as they are retrieved rather than waiting for them all to return, you can use a segmented query. Here, we return results in pages by using an async workflow so that execution is not blocked while you're waiting for a large set of results to return.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L160-L174)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L160-L174)]
 
 ## Next steps
 

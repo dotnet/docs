@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: c5b74a4f-dcd1-4849-930c-904b6c8a04e1
 ---
 
-# Get started with Azure Blob storage using F# 
+# Get started with Azure Blob storage using F# #
 
 Azure Blob storage is a service that stores unstructured data in the cloud as objects/blobs. Blob storage can store any type of text or binary data, such as a document, media file, or application installer. Blob storage is also referred to as object storage.
 

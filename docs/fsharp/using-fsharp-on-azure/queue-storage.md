@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 70dc554c-8f4d-42a7-8e2a-6438657d012a
 ---
 
-# Get started with Azure Queue storage using F#
+# Get started with Azure Queue storage using F# #
 
 Azure Queue storage provides cloud messaging between application components. In designing applications for scale, application components are often decoupled, so that they can scale independently. Queue storage delivers asynchronous messaging for communication between application components, whether they are running in the cloud, on the desktop, on an on-premises server, or on a mobile device. Queue storage also supports managing asynchronous tasks and building process work flows.
 
@@ -39,7 +39,7 @@ Next, use a [package manager](package-management.md) such as Paket or NuGet to i
 
 Add the following `open` statements to the top of the `queues.fsx` file:
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L1-L3)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L1-L3)]
 
 ### Get your connection string
 
@@ -47,13 +47,13 @@ You'll need an Azure Storage connection string for this tutorial. For more infor
 
 For the tutorial, you'll enter your connection string in your script, like this:
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L9-L13)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L9-L13)]
 
 However, this is a **not recommended** for real projects. Your storage account key is similar to the root password for your storage account. Always be careful to protect your storage account key. Avoid distributing it to other users, hard-coding it, or saving it in a plain-text file that is accessible to others. You can regenerate your key using the Azure Portal if you believe it may have been compromised.
 
 For real applications, the best way to maintain your storage connection string is in a configuration file. To fetch the connection string from a configuration file, you can do this:
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L11-L13)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L11-L13)]
 
 Using Azure Configuration Manager is optional. You can also use an API such as the .NET Framework's `ConfigurationManager` type.
 
@@ -61,7 +61,7 @@ Using Azure Configuration Manager is optional. You can also use an API such as t
 
 To parse the connection string, use:
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L19-L20)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L19-L20)]
 
 This will return a `CloudStorageAccount`.
 
@@ -69,7 +69,7 @@ This will return a `CloudStorageAccount`.
 
 The `CloudQueueClient` class enables you to retrieve queues stored in Queue storage. Here's one way to create the service client:
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L26-L26)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L26-L26)]
 
 Now you are ready to write code that reads data from and writes data to Queue storage.
 
@@ -77,7 +77,7 @@ Now you are ready to write code that reads data from and writes data to Queue st
 
 This example shows how to create a queue if it doesn't already exist:
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L32-L36)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L32-L36)]
 
 ## Insert a message into a queue
 
@@ -86,14 +86,14 @@ To insert a message into an existing queue, first create a new
 `CloudQueueMessage` can be created from either a string (in UTF-8
 format) or a `byte` array, like this:
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L42-L44)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L42-L44)]
 
 ## Peek at the next message
 
 You can peek at the message in the front of a queue, without removing it
 from the queue, by calling the `PeekMessage` method.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L50-L52)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L50-L52)]
 
 ## Change the contents of a queued message
 
@@ -110,7 +110,7 @@ you would keep a retry count as well, and if the message is retried more
 than some number of times, you would delete it. This protects against a message
 that triggers an application error each time it is processed.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L58-L62)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L58-L62)]
 
 ## De-queue the next message
 
@@ -125,13 +125,13 @@ software failure, another instance of your code can get the same message
 and try again. Your code calls `DeleteMessage` right after the message
 has been processed.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L68-L69)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L68-L69)]
 
 ## Use Async-Await pattern with common Queue storage APIs
 
 This example shows how to use an async workflow with common Queue storage APIs.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L75-L81)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L75-L81)]
 
 ## Additional options for de-queuing messages
 
@@ -145,20 +145,20 @@ each message. Note that the 5 minutes starts for all messages at the same
 time, so after 5 minutes have passed since the call to `GetMessages`, any 
 messages which have not been deleted will become visible again.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L87-L89)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L87-L89)]
 
 ## Get the queue length
 
 You can get an estimate of the number of messages in a queue. The `FetchAttributes` method asks the Queue service to retrieve the queue attributes, including the message count. The `ApproximateMessageCount` property returns the last value retrieved by the `FetchAttributes` method, without calling the Queue service.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L95-L96)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L95-L96)]
 
 ## Delete a queue
 
 To delete a queue and all the messages contained in it, call the
 `Delete` method on the queue object.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L102-L103)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L102-L103)]
 
 ## Next steps
 

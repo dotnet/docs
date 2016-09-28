@@ -5,9 +5,7 @@ let toPigLatin (word: string) =
         | 'A' | 'E' | 'I' | 'O' | 'U' -> true
         |_ -> false
     
-    let chars = word.ToCharArray()
-    
-    if isVowel chars.[0] then
+    if isVowel word.[0] then
         word + "yay"
     else
-        System.String.Concat(chars.[1..]) + string(chars.[0]) + "ay"
+        string(word.[1..]) + string(word.[0]) + "ay"

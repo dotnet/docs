@@ -129,7 +129,7 @@ Open `Script.fsx`, and add the following code at the end of it:
 
 This function converts a word to a form of [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin).  Don't worry about the details of the code - that will be covered below.  The next step is to execute it using F# Interactive (FSI).
 
-Highlight the entire function (it should be 13 lines long).  Once it is highlighted, hold the **alt** key and hit **Enter**.  You'll notice a Window pop up below, and it should show something like this:
+Highlight the entire function (it should be 11 lines long).  Once it is highlighted, hold the **alt** key and hit **Enter**.  You'll notice a Window pop up below, and it should show something like this:
 
 ![](media/getting-started-vscode/vscode-fsi-new.png)
 
@@ -184,24 +184,19 @@ val toPigLatin : word:string -> string
 
 This states that `toPigLatin` is a function which takes in a `string` as input (called `word`), and produces another `string`.  This is known as the [type signature of the function](https://fsharpforfunandprofit.com/posts/function-signatures/), a fundamental piece of F# that's key to understanding F# code.  You'll also notice this if you hover over the function in Visual Studio Code.
 
-In the body of the function, you'll notice three distinct parts:
+In the body of the function, you'll notice two distinct parts:
 
 1. An inner function, called `isVowel`, which determines if a given character (`c`) is a vowel by checking if it matches one of the provided patterns via [Pattern Matching](../../language-reference/pattern-matching.md):
 
 [!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L2-L6)]
 
-2. A call to `word.ToCharArray()`, which converts the input word into an [array](../../language-reference/arrays.md) of characters:
-
-[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8-L8)]
-
 3. An [`if..then..else`](../../language-reference/conditional-expressions-if-then-else.md) expression which checks if the first character is a vowel, and constructs a return value out of the input characters based on if the first character was a vowel or not:
 
-[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8-L8)]
+[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8-L11)]
 
 The flow of `toPigLatin` is thus:
 
-1. Convert the input word into a character array.
-2. Check if the first character is a vowel.
+1. Check if the first character of the input word is a vowel.
 
     a. If it is, attach "yay" to the end of the word.
 
@@ -217,7 +212,7 @@ The next step is to incorporate code in your F# script file into F# source code.
 
 Next, create a new [`module`](../../language-reference/modules.md) called `PigLatin` and copy the `toPigLatin` function into it as such:
 
-[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L16)]
+[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L14)]
 
 This is one of the many ways you can organize functions in F# code, and a common approach if you also want to call your code from C# or Visual Basic projects.
 

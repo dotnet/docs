@@ -10,6 +10,8 @@ namespace AspNetMVCMagic8ball.Controllers
     {
         public ActionResult Index()
         {
+            // Ask a question.
+            // Return with the answer.
             return View();
         }
 

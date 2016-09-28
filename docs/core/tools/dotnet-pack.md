@@ -4,7 +4,7 @@ description: dotnet-pack
 keywords: .NET, .NET Core
 author: mairaw
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -31,19 +31,7 @@ dotnet-pack
 The `dotnet pack` command builds the project and creates NuGet packages. The result of this operation is two packages with the `nupkg` extension. One package contains the code and the other contains the debug symbols. 
 
 NuGet dependencies of the project being packed are added to the nuspec file, so they are able to be resolved when the package is installed. 
-Project-to-project references are not packaged inside the project by default. If you wish to do this, you need to reference the required project in your dependencies node with a `type` set to "build" like in the following example:
-
-```json
-{
-    "version": "1.0.0-*",
-    "dependencies": {
-        "ProjectA": {
-            "target": "project",
-            "type": "build"
-        }
-    }
-}
-```
+Project-to-project references are not packaged inside the project. Currently, you need to have a package per project if you have project-to-project dependencies.
 
 `dotnet pack` by default first builds the project. If you wish to avoid this, pass the `--no-build` option. This can be useful in Continuous Integration (CI) build scenarios in which you know the code was just previously built, for example. 
 
@@ -94,4 +82,4 @@ Packs the current project into the specified folder and skips the build step.
 
 `dotnet pack --version-suffix "ci-1234"`
 
-Packs the current project and updates the resulting packages version with the given suffix. E.g. version `1.0.0-*` will be updated to `1.0.0-ci-1234`.
+Packs the current project and updates the resulting packages version with the given suffix. For example, version `1.0.0-*` will be updated to `1.0.0-ci-1234`.

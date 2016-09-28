@@ -192,11 +192,11 @@ In the body of the function, you'll notice three distinct parts:
 
 2. A call to `word.ToCharArray()`, which converts the input word into an [array](../../language-reference/arrays.md) of characters:
 
-[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8)]
+[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8-L8)]
 
 3. An [`if..then..else`](../../language-reference/conditional-expressions-if-then-else.md) expression which checks if the first character is a vowel, and constructs a return value out of the input characters based on if the first character was a vowel or not:
 
-[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8)]
+[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8-L8)]
 
 The flow of `toPigLatin` is thus:
 

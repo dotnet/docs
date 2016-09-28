@@ -22,7 +22,16 @@ In the sections below, you will find resources on how to use a range of Azure se
 > [!NOTE]
 > If a particular Azure service isn't in this documentation set, please consult the C# documentation for that service. Some Azure services are entirely language-independent systems services and require no language-specific documentation, and in this case are not listed here.
 
+## Using Azure Virtual Machines with F# #
+
+Azure supports a wide range of virtual machine (VM) configurations, see [Linux and Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/)
+
+To install F# on a virtual machine for execution, compilation and/or scripting see [Using F# on Linux](http://fsharp.org/use/linux) and
+[Using F# on Windows](http://fsharp.org/use/windows).
+
 ## Using Azure Storage with F# #
+
+Azure Storage is a base layer of storage services for modern applications that rely on durability, availability, and scalability to meet the needs of customers. F# programs can interact directy with Azure storage services, using the techinques described in the articles below.
 
 * [Get started with Azure Blob storage using F#](blob-storage.md)
 * [Get started with Azure File storage using F#](file-storage.md)

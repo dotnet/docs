@@ -57,7 +57,7 @@ Azure Storage can also be used in conjunction with Azure Functions through decla
 Azure DocumentDB can be used with F# in two ways:
 
 1. Through the creation of F# Azure Functions which react to or cause changes to DocumentDB collections. See [Azure Function triggers for DocumentDB](https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-documentdb/), or
-2. By using the [.NET SDK for Azure](https://azure.microsoft.com/en-us/documentation/articles/documentdb-get-started-quickstart/) directly. Note these examples are in C#.
+2. By using the [.NET SDK for Azure](https://azure.microsoft.com/en-us/documentation/articles/documentdb-get-started-quickstart/). Note these examples are in C#.
 
 ## Using Azure Event Hubs with F# #
 
@@ -65,8 +65,30 @@ Azure DocumentDB can be used with F# in two ways:
 
 Azure Event Hubs can be used with F# in two ways:
 
-1. Through the creation of F# Azure Functions which are triggered by events. See [Azure Function triggers for E|vent Hubs](https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-event-hubs/), or
-2. By using the [.NET SDK for Azure](https://azure.microsoft.com/en-us/documentation/articles/event-hubs-csharp-ephcs-getstarted/) directly. Note these examples are in C#.
+1. Through the creation of F# Azure Functions which are triggered by events. See [Azure Function triggers for Event Hubs](https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-event-hubs/), or
+2. By using the [.NET SDK for Azure](https://azure.microsoft.com/en-us/documentation/articles/event-hubs-csharp-ephcs-getstarted/). Note these examples are in C#.
+
+## Using Azure Notifcation Hubs with F# #
+
+[Azure Notification Hubs](https://azure.microsoft.com/en-us/documentation/services/notification-hubs/) are multiplatform, scaled-out push infrastructure that enables you to send mobile push notifications from any backend (in the cloud or on-premises) to any mobile platform.
+
+Azure Notification Hubs can be used with F# in two ways:
+
+1. Through the creation of F# Azure Functions which send results to a notification hub. See [Azure Function output triggers for Notification Hubs](https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-notification-hubs/), or
+2. By using the [.NET SDK for Azure](https://blogs.msdn.microsoft.com/azuremobile/2014/04/08/push-notifications-using-notification-hub-and-net-backend/). Note these examples are in C#.
+
+
+## Implementing WebHooks on Azure with F# #
+
+A [Webhook](https://en.wikipedia.org/wiki/Webhook) is a callback triggered via a web request. Webhooks are used by sites such as GitHub to signal events. 
+
+Webhooks can be implemented in F# and hosted on Azure via an [Azure Function in F# with a Webhook Binding](https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-http-webhook/).
+
+## Implementing Timers on Azure with F# #
+
+Timer triggers call functions based on a schedule, one time or recurring.
+
+Timers can be implemented in F# and hosted on Azure via an [Azure Function in F# with a Timer Trigger](https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-timer/).
 
 ## Other resources
 

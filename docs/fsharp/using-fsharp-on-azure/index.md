@@ -28,12 +28,6 @@ Azure supports a wide range of virtual machine (VM) configurations, see [Linux a
 
 To install F# on a virtual machine for execution, compilation and/or scripting see [Using F# on Linux](http://fsharp.org/use/linux) and [Using F# on Windows](http://fsharp.org/use/windows).
 
-## Deploying and Managing Azure Resources with F# Scripts #
-
-Azure VMs may be programmatically deployed and managed from F# scripts by using the Microsoft.Azure.Management packages and APIs. For example, see [Get Started with the Management Libraries for .NET](https://msdn.microsoft.com/en-us/library/dn722415.aspx) and [Using Azure Resource Manager](https://azure.microsoft.com/en-us/documentation/articles/resource-manager-deployment-model/). Note that these samples are in C#.
-
-Likewise, other Azure resources may also be deployed and managed from F# scripts using these components. For example, you can create storage accounts, deploy services, create DocumentDB instances and manage Azure Notifcation Hubs programmatically from F# scripts.
-
 
 ## Using Azure Functions with F# #
 
@@ -97,6 +91,12 @@ Webhooks can be implemented in F# and hosted on Azure via an [Azure Function in 
 Timer triggers call functions based on a schedule, one time or recurring.
 
 Timers can be implemented in F# and hosted on Azure via an [Azure Function in F# with a Timer Trigger](https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-timer/).
+
+## Deploying and Managing Azure Resources with F# Scripts #
+
+Azure VMs may be programmatically deployed and managed from F# scripts by using the Microsoft.Azure.Management packages and APIs. For example, see [Get Started with the Management Libraries for .NET](https://msdn.microsoft.com/en-us/library/dn722415.aspx) and [Using Azure Resource Manager](https://azure.microsoft.com/en-us/documentation/articles/resource-manager-deployment-model/). Note that these samples are in C#.
+
+Likewise, other Azure resources may also be deployed and managed from F# scripts using the same components. For example, you can create storage accounts, deploy Azure Cloud Services, create Azure DocumentDB instances and manage Azure Notifcation Hubs programmatically from F# scripts.
 
 ## Other resources
 

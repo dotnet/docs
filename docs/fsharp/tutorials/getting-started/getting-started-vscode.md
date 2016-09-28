@@ -127,13 +127,13 @@ Open `Script.fsx`, and add the following code at the end of it:
 
 [!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx)]
 
-This function converts a word to a form of [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin).  Don't worry about the details of the code - that will be covered below.  The next step is to execute it using F# Interactive (fsi).
+This function converts a word to a form of [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin).  Don't worry about the details of the code - that will be covered below.  The next step is to execute it using F# Interactive (FSI).
 
 Highlight the entire function (it should be 13 lines long).  Once it is highlighted, hold the **alt** key and hit **Enter**.  You'll notice a Window pop up below, and it should show something like this:
 
 ![](media/getting-started-vscode/vscode-fsi-new.png)
 
-This did two things:
+This did three things:
 
 1. It started the FSI process.
 2. It sent the code you highlighted over the FSI process.
@@ -219,7 +219,7 @@ Next, create a new [`module`](../../language-reference/modules.md) called `PigLa
 
 [!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L16)]
 
-This is one of the many ways you can organize functions in F# code, and a very common approach, especially if you intend for C# or Visual Basic projects to call this code.
+This is one of the many ways you can organize functions in F# code, and a common approach if you also want to call your code from C# or Visual Basic projects.
 
 Next, open the `Script.fsx` file again, and delete the entire `toPigLatin` function, but make sure to keep the following two lines in the file:
 
@@ -239,7 +239,7 @@ val it : string = "ananabay"
 val it : string = "appleyay"
 ```
 
-Success!  You get the same results as before, but now loaded from an F# source file.  The majoy difference here is that F# source files are compiled into assemblies which can be executed anywhere, not just in FSI.
+Success!  You get the same results as before, but now loaded from an F# source file.  The major difference here is that F# source files are compiled into assemblies which can be executed anywhere, not just in FSI.
 
 ## Summary
 
@@ -259,7 +259,11 @@ To learn more about F# and the features of the language, check out [Tour of F#](
 ## See also
 
 [Tour of F#](../../tour.md)
+
 [F# Language Reference](../../language-reference/index.md)
+
 [Functions](../../language-reference/functions/index.md)
+
 [Modules](../../language-reference/modules.md)
+
 [Namespaces]([Functions](../../language-reference/namespaces.md)

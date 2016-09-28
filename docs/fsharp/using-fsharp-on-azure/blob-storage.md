@@ -28,7 +28,7 @@ To use this guide, you must first [create an Azure storage account](https://azur
 
 The samples in this article can be used in either an F# application or an F# script. To create an F# script, create a file with the `.fsx` extension, for example `blobs.fsx`, in your F# development environment.
 
-Next, use a [package manager](package-management.md) such as Paket or NuGet to install the `WindowsAzure.Storage` package and reference `WindowsAzure.Storage.dll` in your script using a `#r` directive.
+Next, use a [package manager](package-management.md) such as [Paket](https://fsprojects.github.io/Paket/) or [NuGet](https://www.nuget.org/) to install the `WindowsAzure.Storage` package and reference `WindowsAzure.Storage.dll` in your script using a `#r` directive.
 
 ### Add namespace declarations
 
@@ -44,7 +44,7 @@ For the tutorial, you'll enter your connection string in your script, like this:
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L11-L11)]
 
-However, this is a **not recommended** for real projects. Your storage account key is similar to the root password for your storage account. Always be careful to protect your storage account key. Avoid distributing it to other users, hard-coding it, or saving it in a plain-text file that is accessible to others. You can regenerate your key using the Azure Portal if you believe it may have been compromised.
+However, this is **not recommended** for real projects. Your storage account key is similar to the root password for your storage account. Always be careful to protect your storage account key. Avoid distributing it to other users, hard-coding it, or saving it in a plain-text file that is accessible to others. You can regenerate your key using the Azure Portal if you believe it may have been compromised.
 
 For real applications, the best way to maintain your storage connection string is in a configuration file. To fetch the connection string from a configuration file, you can do this:
 
@@ -225,7 +225,7 @@ For details on how to control access to blob storage, see [the .NET guide for bl
 
 Azure Storage supports encrypting blob data both at the client and on the server.
 
-For details on encrypting blob data, see [the .NET guide for blob storage section on enryption](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-blobs/#encrypting-blob-data).
+For details on encrypting blob data, see [the .NET guide for blob storage section on encryption](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-blobs/#encrypting-blob-data).
 
 ## Next steps
 

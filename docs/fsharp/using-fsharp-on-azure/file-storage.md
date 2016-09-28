@@ -16,11 +16,9 @@ ms.assetid: 5c26a0aa-186e-476c-9f87-e0191754579e
 
 Azure File storage is a service that offers file shares in the cloud using the standard [Server Message Block (SMB) Protocol](https://msdn.microsoft.com/library/windows/desktop/aa365233.aspx). Both SMB 2.1 and SMB 3.0 are supported. With Azure File storage, you can migrate legacy applications that rely on file shares to Azure quickly and without costly rewrites. Applications running in Azure virtual machines or cloud services or from on-premises clients can mount a file share in the cloud, just as a desktop application mounts a typical SMB share. Any number of application components can then mount and access the File storage share simultaneously.
 
-### Conceptual overview
-
 For a conceptual overview of file storage, please see [the .NET guide for file storage](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-files/).
 
-### Create an Azure storage account
+## Prerequisites
 
 To use this guide, you must first [create an Azure storage account](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account/).
 You'll also need your storage access key for this account.
@@ -29,7 +27,7 @@ You'll also need your storage access key for this account.
 
 The samples in this article can be used in either an F# application or an F# script. To create an F# script, create a file with the `.fsx` extension, for example `files.fsx`, in your F# development environment.
 
-Next, use a [package manager](package-management.md) such as Paket or NuGet to install the `WindowsAzure.Storage` package and reference `WindowsAzure.Storage.dll` in your script using a `#r` directive.
+Next, use a [package manager](package-management.md) such as [Paket](https://fsprojects.github.io/Paket/) or [NuGet](https://www.nuget.org/) to install the `WindowsAzure.Storage` package and reference `WindowsAzure.Storage.dll` in your script using a `#r` directive.
 
 ### Add namespace declarations
 
@@ -45,7 +43,7 @@ For the tutorial, you'll enter your connection string in your script, like this:
 
 [!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L11-L11)]
 
-However, this is a **not recommended** for real projects. Your storage account key is similar to the root password for your storage account. Always be careful to protect your storage account key. Avoid distributing it to other users, hard-coding it, or saving it in a plain-text file that is accessible to others. You can regenerate your key using the Azure Portal if you believe it may have been compromised.
+However, this is **not recommended** for real projects. Your storage account key is similar to the root password for your storage account. Always be careful to protect your storage account key. Avoid distributing it to other users, hard-coding it, or saving it in a plain-text file that is accessible to others. You can regenerate your key using the Azure Portal if you believe it may have been compromised.
 
 For real applications, the best way to maintain your storage connection string is in a configuration file. To fetch the connection string from a configuration file, you can do this:
 
@@ -71,7 +69,7 @@ Now you are ready to write code that reads data from and writes data to File sto
 
 ## Create a file share
 
-This example shows how to create a file share if it does not already exist:asdasd
+This example shows how to create a file share if it does not already exist:
 
 [!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L34-L35)]
 

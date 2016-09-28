@@ -1,3 +1,4 @@
+<<<<<<< e14a28e7908c76eec7ef4efd7d762ab1825a973a
 ---
 title: Docker on .NET Framework
 description: Docker on .NET Framework
@@ -7,7 +8,7 @@ manager: wpickett
 ms.date: 09/28/2016
 ms.topic: article
 ms.prod: .net-framework-4.6
-ms.technology: vs-ide-deployment
+ms.technology: .net
 ms.devlang: dotnet
 ms.assetid: a27b2ae4-154e-4b2b-b221-0c4c05185274
 ---
@@ -20,3 +21,10 @@ In this section you'll learn the techniques needed to run your existing .NET Fra
 2. [Running ASP.NET MVC applications in Docker](aspnetmvc.md)
 
 You can learn more about Windows Containers, including what they are and the requirements for running them, on the [Windows Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview) and [Getting Started with Docker for Windows](https://docs.docker.com/docker-for-windows/) articles. 
+
+In this section you'll learn techniques to run your existing .NET
+applications using Docker images running in Windows servers.
+
+You can begin by [moving a console application to Docker](console.md).
+If you are more interested in an ASP.NET MVC application, try the
+[ASP.NET MVC application in Docker](aspnetmvc.md).

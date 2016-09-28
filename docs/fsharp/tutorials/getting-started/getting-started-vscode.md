@@ -125,7 +125,7 @@ Open the `ClassLibraryDemo` folder.  You'll notice a few files:
 
 Open `Script.fsx`, and add the following code at the end of it:
 
-[!code-fsharp[ToPigLatin](../../../..samples/snippets/fsharp/getting-started/to-pig-latin.fsx)]
+[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx)]
 
 This function converts a word to a form of [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin).  Don't worry about the details of the code - that will be covered below.  The next step is to execute it using F# Interactive (fsi).
 
@@ -188,15 +188,15 @@ In the body of the function, you'll notice three distinct parts:
 
 1. An inner function, called `isVowel`, which determines if a given character (`c`) is a vowel by checking if it matches one of the provided patterns via [Pattern Matching](../../language-reference/pattern-matching.md):
 
-[!code-fsharp[ToPigLatin](../../../..samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L2-L6)]
+[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L2-L6)]
 
 2. A call to `word.ToCharArray()`, which converts the input word into an [array](../../language-reference/arrays.md) of characters:
 
-[!code-fsharp[ToPigLatin](../../../..samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8)]
+[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8)]
 
 3. An [`if..then..else`](../../language-reference/conditional-expressions-if-then-else.md) expression which checks if the first character is a vowel, and constructs a return value out of the input characters based on if the first character was a vowel or not:
 
-[!code-fsharp[ToPigLatin](../../../..samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8)]
+[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8)]
 
 The flow of `toPigLatin` is thus:
 
@@ -217,7 +217,7 @@ The next step is to incorporate code in your F# script file into F# source code.
 
 Next, create a new [`module`](../../language-reference/modules.md) called `PigLatin` and copy the `toPigLatin` function into it as such:
 
-[!code-fsharp[ToPigLatin](../../../..samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L16)]
+[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L16)]
 
 This is one of the many ways you can organize functions in F# code, and a very common approach, especially if you intend for C# or Visual Basic projects to call this code.
 

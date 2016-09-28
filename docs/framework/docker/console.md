@@ -1,7 +1,7 @@
 ---
 title: Running Console applications in Docker
 description: Running Console applications in Docker
-keywords: .NET, Container, Console, Applications
+keywords: .NET, .NET Server, .NET Desktop, Docker
 author: spboyer
 manager: wpickett
 ms.date: 09/28/2016

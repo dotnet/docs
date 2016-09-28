@@ -50,6 +50,24 @@ Azure Storage is a base layer of storage services for modern applications that r
 
 Azure Storage can also be used in conjunction with Azure Functions through declarative configuration rather than explicit API calls. See the information above on using Azure Functions with F#.
 
+## Using Azure DocumentDB with F# #
+
+[Azure DocumentDB](https://azure.microsoft.com/en-us/services/documentdb/) is a NoSQL service for highly available, globally distributed apps.
+
+Azure DocumentDB can be used with F# in two ways:
+
+1. Through the creation of F# Azure Functions which react to or cause changes to DocumentDB collections. See [Azure Function triggers for DocumentDB](https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-documentdb/), or
+2. By using the [.NET SDK for Azure](https://azure.microsoft.com/en-us/documentation/articles/documentdb-get-started-quickstart/) directly. Note these examples are in C#.
+
+## Using Azure Event Hubs with F# #
+
+[Azure Event Hubs](https://azure.microsoft.com/en-us/services/event-hubs/) provide cloud-scale telemetry ingestion from websites, apps, and devices.
+
+Azure Event Hubs can be used with F# in two ways:
+
+1. Through the creation of F# Azure Functions which are triggered by events. See [Azure Function triggers for E|vent Hubs](https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-event-hubs/), or
+2. By using the [.NET SDK for Azure](https://azure.microsoft.com/en-us/documentation/articles/event-hubs-csharp-ephcs-getstarted/) directly. Note these examples are in C#.
+
 ## Other resources
 
 * [Full documentation on all Azure services](https://azure.microsoft.com/en-us/documentation/)

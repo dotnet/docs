@@ -30,7 +30,7 @@ To install F# on a virtual machine for execution, compilation and/or scripting s
 
 ## Deploying and Managing Azure Resources with F# Scripts #
 
-Azure VMs may be programmatically deployed and managed from F# scripts by using the Microsoft.Azure.Management packages and APIs. For example, see [Get Started with the Management Libraries for .NET](https://msdn.microsoft.com/en-us/library/dn722415.aspx). Note that these samples are in C#.
+Azure VMs may be programmatically deployed and managed from F# scripts by using the Microsoft.Azure.Management packages and APIs. For example, see [Get Started with the Management Libraries for .NET](https://msdn.microsoft.com/en-us/library/dn722415.aspx) and [Using Azure Resource Manager](https://azure.microsoft.com/en-us/documentation/articles/resource-manager-deployment-model/). Note that these samples are in C#.
 
 Likewise, other Azure resources may also be deployed and managed from F# scripts using these components. For example, you can create storage accounts, deploy services, create DocumentDB instances and manage Azure Notifcation Hubs programmatically from F# scripts.
 
@@ -55,7 +55,7 @@ Azure Storage is a base layer of storage services for modern applications that r
 * [Get started with Azure Queue storage using F#](queue-storage.md)
 * [Get started with Azure Table storage using F#](table-storage.md)
 
-Azure Storage can also be used in conjunction with Azure Functions through declarative configuration rather than explicit API calls. See the information above on using Azure Functions with F#.
+Azure Storage can also be used in conjunction with Azure Functions through declarative configuration rather than explicit API calls. See [Azure Functions triggers and bindings for Azure Storage](https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-storage/) which includes F# examples.
 
 
 ## Using Azure DocumentDB with F# #

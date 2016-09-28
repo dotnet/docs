@@ -1,8 +1,5 @@
 # Getting Started with F# in Visual Studio Code with Ionide
 
-> [!NOTE]
-This is still in-progress.
-
 You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the [Ionide plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp), to get a cross-platform, lightweight IDE experience with IntelliSense and basic code refactorings.
 
 ## Prerequisites
@@ -101,7 +98,7 @@ This will select a template for a specific type of project.  There are quite a f
 
 Here you can choose to create the project in a specific directory.  If you leave it blank, it will choose the current directory Visual Studio Code is opened in.  This article uses the current directory.  Once you've made your decision, hit **Enter** to bring up the final stage:
 
-![](media/getting-started-vscode/vscode-new-dir.png)
+![](media/getting-started-vscode/vscode-proj-name.png)
 
 This lets you name your project.  F# uses PascalCase for project names.  This article uses `ClassLibrarySample` as the name.  Once you've entered the name you want for your project, hit **Enter**.
 

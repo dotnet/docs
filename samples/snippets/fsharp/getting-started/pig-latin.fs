@@ -11,4 +11,4 @@ module PigLatin =
         if isVowel word.[0] then
             word + "yay"
         else
-            string(word.[1..]) + string(word.[0]) + "ay"
+            word.[1..] + string(word.[0]) + "ay"

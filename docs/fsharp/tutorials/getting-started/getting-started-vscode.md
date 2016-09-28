@@ -1,6 +1,6 @@
 # Getting Started with F# in Visual Studio Code with Ionide
 
-You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the [Ionide plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp), to get a cross-platform, lightweight IDE experience with IntelliSense and basic code refactorings.
+You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the [Ionide plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp), to get a great cross-platform, lightweight IDE experience with IntelliSense and basic code refactorings.  Visit [Ionide.io](http://ionide.io) to learn more about the plugin.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ Alternatively, you can following the following instructions:
     * [Windows 8 SDK](http://msdn.microsoft.com/windows/hardware/hh852363.aspx)
     * [Windows 7 SDK](http://www.microsoft.com/download/details.aspx?id=8279)
 
-3. Install the [Microsoft Build Tools 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48159).
+3. Install the [Microsoft Build Tools 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48159).  You may also need to install [Microsoft Build Tools 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40760).
 
 4. Install the [Visual F# Tools](https://www.microsoft.com/en-us/download/details.aspx?id=48179).
 
@@ -41,7 +41,7 @@ C:\Program Files\Microsoft SDKs\F#\4.0\Framework\v4.0\fsi.exe
 C:\Program Files\Microsoft SDKs\F#\4.0\Framework\v4.0\fsiAnyCpu.exe
 ```
 
-You will need to add these to your PATH for Ionide to work.
+Ionide automatically detects the compiler and tools, but if it doesn't for some reason, you can manually add the containing folder (`...\Microsoft SDKs\F#\4.0`) to your PATH.
 
 ### macOS
 
@@ -84,7 +84,7 @@ To create a new F# project, open the Command Palette (ctrl-P on Windows, ⌘-P o
 >f#: New Project
 ```
 
-You should see something like this:
+This is powered by the [FORGE](https://github.com/fsprojects/Forge) project.  You should see something like this:
 
 ![](media/getting-started-vscode/vscode-new-proj.png)
 
@@ -92,7 +92,7 @@ Select it by hitting **Enter**, which will take you to this step:
 
 ![](media/getting-started-vscode/vscode-proj-type.png)
 
-This will select a template for a specific type of project.  There are quite a few options here, such as an FsLab template for Data Science or Suave template for Web Programming.  This article uses the `classlib` template, so highlight that and hit **Enter**.  You will then reach this step:
+This will select a template for a specific type of project.  There are quite a few options here, such as an [FsLab](http://fslab.org) template for Data Science or [Suave](https://suave.io) template for Web Programming.  This article uses the `classlib` template, so highlight that and hit **Enter**.  You will then reach this step:
 
 ![](media/getting-started-vscode/vscode-new-dir.png)
 
@@ -131,7 +131,7 @@ This function converts a word to a form of [Pig Latin](https://en.wikipedia.org/
 
 Highlight the entire function (it should be 11 lines long).  Once it is highlighted, hold the **alt** key and hit **Enter**.  You'll notice a Window pop up below, and it should show something like this:
 
-![](media/getting-started-vscode/vscode-fsi-new.png)
+![](media/getting-started-vscode/vscode-fsi.png)
 
 This did three things:
 
@@ -261,4 +261,4 @@ To learn more about F# and the features of the language, check out [Tour of F#](
 
 [Modules](../../language-reference/modules.md)
 
-[Namespaces]([Functions](../../language-reference/namespaces.md)
+[Namespaces](../../language-reference/namespaces.md)

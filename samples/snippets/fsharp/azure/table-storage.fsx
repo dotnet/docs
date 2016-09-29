@@ -108,8 +108,9 @@ for customer in rangeResult do
 
 let retrieveOp = TableOperation.Retrieve<Customer>("Buster", "Larry")
 
-// Execute the query and show the result
 let retrieveResult = table.Execute(retrieveOp)
+
+// Show the result
 let retrieveCustomer = retrieveResult.Result :?> Customer
 printfn "customer: %A %A" retrieveCustomer.RowKey retrieveCustomer.PartitionKey
 
@@ -166,7 +167,9 @@ let asyncQuery =
         let! ct = Async.CancellationToken
         let! result = table.ExecuteQuerySegmentedAsync(tableQ, cont, ct) |> Async.AwaitTask
 
-        // Process the result here.
+        // ...process the result here...
+        
+        // Continue to the next segment
         match result.ContinuationToken with
         | null -> ()
         | cont -> return! loop cont 

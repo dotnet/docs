@@ -33,7 +33,7 @@ To install F# on a virtual machine for execution, compilation and/or scripting s
 
 [Azure Functions](https://azure.microsoft.com/en-us/services/functions/) is a solution for easily running small pieces of code, or "functions," in the cloud. You can write just the code you need for the problem at hand, without worrying about a whole application or the infrastructure to run it. Your functions are connected to events in Azure storage and other cloud-hosted resources. Data flows into your F# functions via function arguments. You can use your development language of choice, trusting Azure to scale as needed.
 
-Azure Functions support F# as a first-class language with efficient, reactive, scalable execution of F# code. See the [Azure Functions F# Developer Reference](https://azure.microsoft.com/en-us/documentation/articles/functions-reference-fsharp/) for reference doccumentation on how to use F# with Azure Functions.
+Azure Functions support F# as a first-class language with efficient, reactive, scalable execution of F# code. See the [Azure Functions F# Developer Reference](https://azure.microsoft.com/en-us/documentation/articles/functions-reference-fsharp/) for reference documentation on how to use F# with Azure Functions.
 
 Other resources for using Azure Functions and F#:
 

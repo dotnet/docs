@@ -67,11 +67,11 @@ share.SetProperties()
 //
 
 // Create a 24 hour read/write policy.
-let policy = SharedAccessFilePolicy()
-policy.SharedAccessExpiryTime <- 
-    DateTimeOffset.UtcNow.AddHours(24.) |> Nullable
-policy.Permissions <- 
-    SharedAccessFilePermissions.Read ||| SharedAccessFilePermissions.Write
+let policy = 
+    SharedAccessFilePolicy(
+        SharedAccessExpiryTime = DateTimeOffset.UtcNow.AddHours(24.) |> Nullable,
+        Permissions = SharedAccessFilePermissions.Read ||| SharedAccessFilePermissions.Write
+    )
 
 // Set the policy on the share.
 let permissions = share.GetPermissions()
@@ -102,10 +102,10 @@ let container = blobClient.GetContainerReference("myContainer")
 container.CreateIfNotExists()
 let destBlob = container.GetBlockBlobReference("log_blob.txt")
 
-let filePolicy = SharedAccessFilePolicy()
-filePolicy.Permissions <- SharedAccessFilePermissions.Read
-filePolicy.SharedAccessExpiryTime <- 
-    DateTimeOffset.UtcNow.AddHours(24.) |> Nullable
+let filePolicy = 
+    SharedAccessFilePolicy
+        (Permissions = SharedAccessFilePermissions.Read,
+         SharedAccessExpiryTime = DateTimeOffset.UtcNow.AddHours(24.) |> Nullable)
 
 let fileSas2 = file.GetSharedAccessSignature(filePolicy)
 let sasUri2 = Uri(file.StorageUri.PrimaryUri.ToString() + fileSas2)

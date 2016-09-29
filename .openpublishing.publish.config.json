@@ -21,6 +21,11 @@
     }
   ],
   "notification_subscribers": [],
+  "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
   "skip_source_output_uploading": false,
   "dependent_repositories": [
     {
@@ -32,6 +37,11 @@
       "path_to_root": "api_ref",
       "url": "https://github.com/docascode/coreapi.git",
       "branch": "master"
+    },
+    {
+        "path_to_root": "_themes.pdf",
+        "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+        "branch": "master"
     }
   ]
 }

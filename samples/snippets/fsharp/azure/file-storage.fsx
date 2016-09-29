@@ -35,16 +35,25 @@ let share = fileClient.GetShareReference("myfiles")
 share.CreateIfNotExists()
 
 //
-// Access the file share programmatically.
+// Create a root directory and a subdirectory
 //
 
 let rootDir = share.GetRootDirectoryReference()
 let subDir = rootDir.GetDirectoryReference("myLogs")
+subDir.CreateIfNotExists()
 
-if subDir.Exists() then
-    let file = subDir.GetFileReference("log.txt")
-    if file.Exists() then
-        file.DownloadToFile("log.txt", FileMode.Append)
+//
+// Upload a file to a subdirectory
+//
+
+let file = subDir.GetFileReference("log.txt")
+file.UploadText("This is the content of the log file")
+
+//
+// Download a file to a local fie
+//
+
+file.DownloadToFile("log.txt", FileMode.Append)
 
 //
 // Set the maximum size for a file share.
@@ -78,7 +87,6 @@ let permissions = share.GetPermissions()
 permissions.SharedAccessPolicies.Add("policyName", policy)
 share.SetPermissions(permissions)
 
-let file = subDir.GetFileReference("log.txt")
 let sasToken = file.GetSharedAccessSignature(policy)
 let sasUri = Uri(file.StorageUri.PrimaryUri.ToString() + sasToken)
 

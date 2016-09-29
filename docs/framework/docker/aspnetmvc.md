@@ -2,7 +2,7 @@
 title: Running ASP.NET MVC applications in Docker
 description: Learn how to take an existing ASP.NET MVC application and run it in a Windows Docker Container
 keywords: .NET, .NET Server, .NET Desktop
-author: dotnet-bot
+author: BillWagner
 manager: wpickett
 ms.date: 09/28/2016
 ms.topic: article
@@ -59,7 +59,7 @@ on the Docker site.
 Before starting, you need to install [Docker for Windows](https://docs.docker.com/docker-for-windows/).
 You need to install version 1.12 Beta 26, or newer for Windows container support.
 After installing and starting Docker, you'll need to right-click on the
-tray icon and select 'Switch to Windows containers...` in order to run
+tray icon and select 'Switch to Windows containers...' in order to run
 Docker images based on Windows OSs. This command takes a few seconds to
 execute.
 
@@ -198,9 +198,34 @@ address and the configured port (8000), `http://172.31.194.61:8000`
 in the example shown. Type that URL into your browser, and you should
 see the running site.
 
+> [!NOTE]
+> Some VPN or proxy software may prevent you from navigating to your site.
+> You can temporarily disable it to make sure your container is working.
+
 The sample directory on GitHub contains a 
 [powershell script](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator/run.ps1)
-that executes these commands for you.
+that executes these commands for you. Open a Powershell window, cd to
+your solution directory, and type:
+
+```
+./run.ps1
+```
+
+It will build the image, display the list of images on your machine, start
+a container, and display the IP address for that container. 
+
+When you are done, and you want to stop your container, issue a docker
+stop command:
+
+```
+docker stop randomanswers
+```
+
+To remove the container, issue a docker rm command:
+
+```
+docker rm randomanswers
+```
 
 ## Closing
 

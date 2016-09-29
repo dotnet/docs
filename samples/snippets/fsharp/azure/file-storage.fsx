@@ -69,8 +69,8 @@ share.SetProperties()
 // Create a 24 hour read/write policy.
 let policy = 
     SharedAccessFilePolicy(
-        SharedAccessExpiryTime = DateTimeOffset.UtcNow.AddHours(24.) |> Nullable,
-        Permissions = SharedAccessFilePermissions.Read ||| SharedAccessFilePermissions.Write
+        SharedAccessExpiryTime = (DateTimeOffset.UtcNow.AddHours(24.) |> Nullable),
+        Permissions = (SharedAccessFilePermissions.Read ||| SharedAccessFilePermissions.Write)
     )
 
 // Set the policy on the share.

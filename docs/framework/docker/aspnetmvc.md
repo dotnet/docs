@@ -14,16 +14,15 @@ ms.assetid: c9f1d52c-b4bd-4b5d-b7f9-8f9ceaf778c4
 
 # Running ASP.NET MVC Applications in Windows Docker Containers
 
-Running an existing .NET Framework based application in a Docker container
+Running an existing .NET Framework based application in a Windows Docker container
 requires creating the Docker image that contains your application, and
-starting one or more containers that run that image. This topic explains
+starting one or more containers to run that image. This topic explains
 the tasks you must perform to take an existing ASP.NET MVC application
-and run that application in a Windows Server Core Docker container.
+and deploy it in a Windows Docker container.
 
 You'll start with an existing ASP.NET MVC application. You'll see how to
 build the assets to publish using Visual Studio. You'll use the Docker tools
-to build an image that contains all the services you need to run an ASP.NET
-MVC application. You'll build the image that contains your application, and
+to build the image that contains your application, and
 runs that application when it is started. You'll see how to connect to your
 application running in a Windows based Docker container.
 
@@ -53,10 +52,16 @@ You scale an application by running the same image in many containers.
 Conceptually, this is similar to running the same application in multiple
 hosts.
 
+You can learn more about the Docker architecture by reading the 
+[Docker Overview](https://docs.docker.com/engine/understanding-docker/)
+on the Docker site. 
+
 Before starting, you need to install [Docker for Windows](https://docs.docker.com/docker-for-windows/).
 You need to install version 1.12 Beta 26, or newer for Windows container support.
-After installing and starting Docker, you'll need to right-click on the tray icon and select 'Switch to Windows containers...`
-in order to run Docker images based on Windows OSs.
+After installing and starting Docker, you'll need to right-click on the
+tray icon and select 'Switch to Windows containers...` in order to run
+Docker images based on Windows OSs. This command takes a few seconds to
+execute.
 
 Moving your application involves these steps:
 
@@ -68,18 +73,20 @@ Moving your application involves these steps:
 ## Publish script
 
 You can use the Visual Studio Publish command to create a publish profile
-for your application. You'll copy all the assets to your Docker image
-later in this tutorial. The publish command will put all the publish
-assets in one directory. Right-click on your solution in Visual Studio,
-and select "Publish". Click the "Custom" profile button, and then select
-"File System" as the method (see image). Choose a new directory in your
-solution folder. (The downloaded sample uses "containerImage" as the 
-folder name).
+for your application. You'll copy all the published assets to your Docker
+image later in this tutorial. The publish command will put all the publish
+assets in one directory tree that you will copy to your target image.
+Right-click on your solution in Visual Studio, and select "Publish".
+Click the "Custom" profile button, and then select "File System" as the
+method (see image). Choose a new directory in your solution folder. (The
+downloaded sample uses "containerImage" as the folder name).
 
 ![Publish Connection][publish-connection]
 
 Next, open the "Advanced" section of the "File Publish" options. Select
-"Precompile during publishing". 
+"Precompile during publishing". This optimization means that you be
+compiling views in the Docker container, you are copying the precompiled
+views.
 
 ![Publish Settings][publish-settings]
 
@@ -88,8 +95,8 @@ destination folder.
 
 ## Build the image
 
-Let's build an image based on the `microsft/aspnet` image located
-on [Docker Hub](https://hub.docker.com/r/microsoft/aspnet/).
+To run your application, you'll build an image based on the `microsft/aspnet`
+image located on [Docker Hub](https://hub.docker.com/r/microsoft/aspnet/).
 
 You'll compose this image using the `microsoft/aspnet` image as the base:
 
@@ -103,7 +110,8 @@ The next command creates the directory that holds your application:
 RUN mkdir C:\randomanswers
 ```
 
-After that, you run a powershell command to setup the new site: 
+After that, you run a powershell command in the Docker image to setup
+the new site: 
 
 ```
 RUN powershell -NoProfile -Command \
@@ -139,7 +147,7 @@ REPOSITORY                    TAG                 IMAGE ID            CREATED   
 mvcrandomanswers              latest              86838648aab6        2 minutes ago       8.104 GB
 ```
 
-Now, let's run the applicaton.
+The IMAGE ID will be different on your machine. Now, let's run the applicaton.
 
 ## Start a container
 
@@ -153,7 +161,7 @@ The `-d` argument tells Docker to start the image in detached mode. That
 means the Docker image runs disconnected from the current shell.
 
 The `-p 8000:8000` argument tells docker how to map incoming ports. In this
-example, I'm using port 8000 on the host and the container.
+example, I'm using port 8000 on both the host and the container.
 
 The `--name randomanswers` gives a name to the running container. You can use
 this name instead of the container ID in most commands.
@@ -187,7 +195,8 @@ Ethernet adapter Ethernet 2:
 
 You can connect to the running container using the IPv4 
 address and the configured port (8000), `http://172.31.194.61:8000`
-in the example shown.
+in the example shown. Type that URL into your browser, and you should
+see the running site.
 
 The sample directory on GitHub contains a 
 [powershell script](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator/run.ps1)
@@ -196,8 +205,11 @@ that executes these commands for you.
 ## Closing
 
 In this topic, you've seen the step you must take to move an existing
-ASP.NET MVC application to run in a Windows container.
-
+ASP.NET MVC application to run in a Windows container. Running an
+existing application does not require any changes to your the
+application. You need to run the tasks to publish your application,
+build a Docker image, and start that image in a new container. You're
+existing ASP.NET MVC applications are container-ready.
 
 [publish-connection]: media/aspnetmvc/PublishConnection.png "Publish to File System"
 [publish-settings]: media/aspnetmvc/PublishSettings.png "Publish Settings"

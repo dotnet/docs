@@ -25,7 +25,7 @@ let storageAccount = CloudStorageAccount.Parse(storageConnString)
 // Create some local dummy data.
 //
 
-// Create a dummy file in a local subdirectory to upload
+// Create a dummy file to upload
 let localFile = __SOURCE_DIRECTORY__ + "/myfile.txt"
 File.WriteAllText(localFile, "some data")
 

@@ -324,7 +324,7 @@
 
 # [🔧 .NET Framework](framework/index.md)
 ## [🔧 Docker](framework/docker/index.md)
-### [🔧 Running Console Applications in Containers](framework/docker/console.md)
-### [🔧 Running Console Applications in Containers](framework/docker/aspnetmvc.md)
+### [🔧 Running Console Apps in Containers](framework/docker/console.md)
+### [🔧 Running ASP.NET MVC Apps in Containers](framework/docker/aspnetmvc.md)
 
 # [Samples and Tutorials](samples-and-tutorials/index.md)

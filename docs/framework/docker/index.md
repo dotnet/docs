@@ -6,8 +6,8 @@ author: dotnet-bot
 manager: wpickett
 ms.date: 09/28/2016
 ms.topic: article
-ms.prod: .net
-ms.technology: .net
+ms.prod: .net-framework-4.6
+ms.technology: vs-ide-deployment
 ms.devlang: dotnet
 ms.assetid: a27b2ae4-154e-4b2b-b221-0c4c05185274
 ---

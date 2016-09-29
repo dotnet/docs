@@ -1,4 +1,3 @@
-<<<<<<< e14a28e7908c76eec7ef4efd7d762ab1825a973a
 ---
 title: Docker on .NET Framework
 description: Docker on .NET Framework

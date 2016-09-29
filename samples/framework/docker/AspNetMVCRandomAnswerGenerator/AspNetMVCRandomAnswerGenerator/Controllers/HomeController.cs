@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace AspNetMVCMagic8ball.Controllers
+namespace AspNetMVCRandomNumberGenerator.Controllers
 {
     public class HomeController : Controller
     {

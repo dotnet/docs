@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace AspNetMVCMagic8ball
+namespace AspNetMVCRandomNumberGenerator
 {
     public class BundleConfig
     {

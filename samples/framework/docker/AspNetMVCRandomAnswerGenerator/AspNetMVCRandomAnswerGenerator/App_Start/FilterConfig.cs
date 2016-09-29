@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace AspNetMVCMagic8ball
+namespace AspNetMVCRandomNumberGenerator
 {
     public class FilterConfig
     {

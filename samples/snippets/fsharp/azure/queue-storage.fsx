@@ -52,21 +52,28 @@ let peekedMessage = queue.PeekMessage()
 let msgAsString = peekedMessage.AsString
 
 //
-// Change the contents of a queued message.
+// Get the next message.
+//
+
+// Get the next message. Successful processing must be indicated via DeleteMessage later.
+let retrieved = queue.GetMessage()
+
+//
+// Change the contents of a retrieved message.
 //
 
 // Update the message contents and set a new timeout.
-message.SetMessageContent("Updated contents.")
-queue.UpdateMessage(message,
+retrieved.SetMessageContent("Updated contents.")
+queue.UpdateMessage(retrieved,
     TimeSpan.FromSeconds(60.0),
     MessageUpdateFields.Content ||| MessageUpdateFields.Visibility)
 
 //
-// De-queue the next message.
+// De-queue the next message, indicating successful processing
 //
 
 // Process the message in less than 30 seconds, and then delete the message.
-queue.DeleteMessage(message)
+queue.DeleteMessage(retrieved)
 
 //
 // Use Async-Await pattern with common Queue storage APIs.
@@ -74,10 +81,13 @@ queue.DeleteMessage(message)
 
 async {
     let! exists = queue.CreateIfNotExistsAsync() |> Async.AwaitTask
-    let msg = new CloudQueueMessage("My message")
-    queue.AddMessageAsync(msg) |> Async.AwaitTask
+
     let! retrieved = queue.GetMessageAsync() |> Async.AwaitTask
-    queue.DeleteMessageAsync(retrieved) |> Async.AwaitTask
+
+    // ... process the message here ...
+
+    // Now indicate successful processing:
+    do! queue.DeleteMessageAsync(retrieved) |> Async.AwaitTask
 }
 
 //

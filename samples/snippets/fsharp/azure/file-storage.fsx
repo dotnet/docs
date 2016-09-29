@@ -105,7 +105,7 @@ let destBlob = container.GetBlockBlobReference("log_blob.txt")
 let filePolicy = 
     SharedAccessFilePolicy
         (Permissions = SharedAccessFilePermissions.Read,
-         SharedAccessExpiryTime = DateTimeOffset.UtcNow.AddHours(24.) |> Nullable)
+         SharedAccessExpiryTime = (DateTimeOffset.UtcNow.AddHours(24.) |> Nullable))
 
 let fileSas2 = file.GetSharedAccessSignature(filePolicy)
 let sasUri2 = Uri(file.StorageUri.PrimaryUri.ToString() + fileSas2)

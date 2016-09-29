@@ -93,9 +93,17 @@ from the queue, by calling the `PeekMessage` method.
 
 [!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L50-L52)]
 
+## Get the next message for processing
+
+You can retrieve the message at the front of a queue for processing by calling the `GetMessage` method.
+
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L58-L59)]
+
+You later indicate successful processing of the message by using `DeleteMessage`.
+
 ## Change the contents of a queued message
 
-You can change the contents of a message in-place in the queue. If the
+You can change the contents of a retrieved message in-place in the queue. If the
 message represents a work task, you could use this feature to update the
 status of the work task. The following code updates the queue message
 with new contents, and sets the visibility timeout to extend another 60
@@ -108,7 +116,7 @@ you would keep a retry count as well, and if the message is retried more
 than some number of times, you would delete it. This protects against a message
 that triggers an application error each time it is processed.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L58-L62)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L65-L69)]
 
 ## De-queue the next message
 
@@ -123,13 +131,13 @@ software failure, another instance of your code can get the same message
 and try again. Your code calls `DeleteMessage` right after the message
 has been processed.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L68-L69)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L75-L76)]
 
 ## Use Async-Await pattern with common Queue storage APIs
 
 This example shows how to use an async workflow with common Queue storage APIs.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L75-L81)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L82-L91)]
 
 ## Additional options for de-queuing messages
 
@@ -143,20 +151,20 @@ each message. Note that the 5 minutes starts for all messages at the same
 time, so after 5 minutes have passed since the call to `GetMessages`, any 
 messages which have not been deleted will become visible again.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L87-L89)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L97-L99)]
 
 ## Get the queue length
 
 You can get an estimate of the number of messages in a queue. The `FetchAttributes` method asks the Queue service to retrieve the queue attributes, including the message count. The `ApproximateMessageCount` property returns the last value retrieved by the `FetchAttributes` method, without calling the Queue service.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L95-L96)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L105-L106)]
 
 ## Delete a queue
 
 To delete a queue and all the messages contained in it, call the
 `Delete` method on the queue object.
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L102-L103)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L112-L113)]
 
 ## Next steps
 
@@ -164,6 +172,7 @@ Now that you've learned the basics of Queue storage, follow these links
 to learn about more complex storage tasks.
 
 - [Storage Client Library for .NET reference](http://go.microsoft.com/fwlink/?LinkID=390731&clcid=0x409)
+- [Azure Storage Type Provider](https://github.com/fsprojects/AzureStorageTypeProvider)
 - [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)
 - [Configuring Connection Strings](http://msdn.microsoft.com/library/azure/ee758697.aspx)
 - [REST API reference](http://msdn.microsoft.com/library/azure/dd179355)

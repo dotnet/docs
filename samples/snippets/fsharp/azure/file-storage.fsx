@@ -31,7 +31,7 @@ let fileClient = storageAccount.CreateCloudFileClient()
 // Create a file share.
 //
 
-let share = fileClient.GetShareReference("myFiles")
+let share = fileClient.GetShareReference("myfiles")
 share.CreateIfNotExists()
 
 //

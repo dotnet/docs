@@ -75,7 +75,7 @@ This example shows how to create a file share if it does not already exist:
 
 ## Create a root directory and a subdirectory
 
-Here, you get the root directory and get a sub-directory of the root. We create both if they don't already exist.
+Here, you get the root directory and get a sub-directory of the root. You create both if they don't already exist.
 
 [!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L41-L43)]
 
@@ -101,7 +101,7 @@ The example below shows how to check the current usage for a share and how to se
 
 You can generate a shared access signature (SAS) for a file share or for an individual file. You can also create a shared access policy on a file share to manage shared access signatures. Creating a shared access policy is recommended, as it provides a means of revoking the SAS if it should be compromised.
 
-Here, we create a shared access policy on a share, and then use that policy to provide the constraints for a SAS on a file in the share.
+Here, you create a shared access policy on a share, and then use that policy to provide the constraints for a SAS on a file in the share.
 
 [!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L78-L94)]
 
@@ -113,13 +113,13 @@ You can copy a file to another file, a file to a blob, or a blob to a file. If y
 
 ### Copy a file to another file
 
-Here, we copy a file to another file in the same share. Because this copy operation copies between files in the same storage account, you can use Shared Key authentication to perform the copy.
+Here, you copy a file to another file in the same share. Because this copy operation copies between files in the same storage account, you can use Shared Key authentication to perform the copy.
 
 [!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L100-L101)]
 
 ### Copy a file to a blob
 
-Here, we create a file and copy it to a blob within the same storage account. We create a SAS for the source file, which the service uses to authenticate access to the source file during the copy operation.
+Here, you create a file and copy it to a blob within the same storage account. You create a SAS for the source file, which the service uses to authenticate access to the source file during the copy operation.
 
 [!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L107-L120)]
 

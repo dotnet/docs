@@ -9,11 +9,11 @@ open Microsoft.WindowsAzure.Storage.File // Namespace for File storage types
 //
 
 let storageConnString = "..." // fill this in from your storage account
-
+(*
 // Parse the connection string and return a reference to the storage account.
 let storageConnString = 
     CloudConfigurationManager.GetSetting("StorageConnectionString")
-
+*)
 //
 // Parse the connection string.
 //

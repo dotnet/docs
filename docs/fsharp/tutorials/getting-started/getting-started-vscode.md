@@ -1,3 +1,17 @@
+---
+title: Getting Started with F# in Visual Studio Code with Ionide
+description: Learn how to write and run F# code in Visual Studio Code with Ionide 
+keywords: visual f#, f#, functional programming, .NET, Visual Studio Code, vscode, Ionide
+author: cartermp
+manager: wpickett
+ms.date: 09/28/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: devlang-fsharp
+ms.assetid: 49775139-082e-442f-b5a2-dd402399b5d2
+---
+
 # Getting Started with F# in Visual Studio Code with Ionide
 
 You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the [Ionide plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp), to get a great cross-platform, lightweight IDE experience with IntelliSense and basic code refactorings.  Visit [Ionide.io](http://ionide.io) to learn more about the plugin.
@@ -8,9 +22,9 @@ F# 4.0 or higher must be installed on your machine to use Ionide.
 
 ### Windows
 
-If you're on Windows, the easiest way to do that is to install [Visual Studio with the Visual F# Tools](getting-started-visual-studio.md#installing-the-visual-f#-tools).
+If you're on Windows, the easiest way to do that is to install [Visual Studio with the Visual F# Tools](getting-started-visual-studio.md#installing-the-visual-f#-tools).  This will install all of the necessary components to write and execute F# code.
 
-Alternatively, you can following the following instructions:
+If you prefer not to install Visual Studio, use the following instructions:
 
 1. Install [.NET Framework 4.5 or higher](https://www.microsoft.com/en-US/download/details.aspx?id=30653) if you're running Windows 7.  If you're using Windows 8 or higher, you do not need to do this.
 
@@ -62,12 +76,12 @@ sudo apt-get install mono-complete fsharp
 
 ## Installing Visual Studio Code and the Ionide plugin
 
-You can install Visual Studio Code on the [code.visualstudio.com](https://code.visualstudio.com) website.  After that, there are a two ways to find the Ionide plugin:
+You can install Visual Studio Code on the [code.visualstudio.com](https://code.visualstudio.com) website.  After that, there are two ways to find the Ionide plugin:
 
-1. Use the Command Palette (ctrl-P on Windows, ⌘-P on macOS, ctrl-shift-P on Linux) and type the following:
+1. Use the Command Palette (Ctrl-P on Windows, ⌘-P on macOS, Ctrl-Shift-P on Linux) and type the following:
 
     ```
-    ext install Ionide
+    >ext install Ionide
     ```
 
 2. Click the Extensions icon and search for "Ionide":
@@ -88,7 +102,7 @@ This is powered by the [FORGE](https://github.com/fsprojects/Forge) project.  Yo
 
 ![](media/getting-started-vscode/vscode-new-proj.png)
 
-Select it by hitting **Enter**, which will take you to this step:
+Select "F#: New Project" by hitting **Enter**, which will take you to this step:
 
 ![](media/getting-started-vscode/vscode-proj-type.png)
 
@@ -100,7 +114,7 @@ Here you can choose to create the project in a specific directory.  If you leave
 
 ![](media/getting-started-vscode/vscode-proj-name.png)
 
-This lets you name your project.  F# uses PascalCase for project names.  This article uses `ClassLibrarySample` as the name.  Once you've entered the name you want for your project, hit **Enter**.
+This lets you name your project.  F# uses [Pascal case](http://c2.com/cgi/wiki?PascalCase) for project names.  This article uses `ClassLibrarySample` as the name.  Once you've entered the name you want for your project, hit **Enter**.
 
 If you followed these steps, you should get the Explorer on the left-hand side to look something like this:
 
@@ -112,11 +126,11 @@ This template generates a few things you'll find useful:
 2. The correct directory structure for adding packages via [`Paket`](http://fsprojects.github.io/Paket/).
 3. A cross-platform build script with [`FAKE`](http://fsharp.github.io/FAKE/).
 4. The `paket.exe` executable which can fetch packages and resolve dependencies for you.
-5. A useful `.gitignore` file if you wish to add this project to Git-based source control.
+5. A `.gitignore` file if you wish to add this project to Git-based source control.
 
 ## Writing some code
 
-Open the `ClassLibraryDemo` folder.  You'll notice a few files:
+Open the *ClassLibraryDemo* folder.  You should see the following files:
 
 1. `ClassLibraryDemo.fs`, an F# source file with a class defined.
 2. `CassLibraryDemo.fsproj`, an F# project file used to build this project.
@@ -127,9 +141,9 @@ Open `Script.fsx`, and add the following code at the end of it:
 
 [!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx)]
 
-This function converts a word to a form of [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin).  Don't worry about the details of the code - that will be covered below.  The next step is to execute it using F# Interactive (FSI).
+This function converts a word to a form of [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin).  Don't worry about the details of the code - that will be covered in a [later section](getting-started-vscode#explaining-the-code).  The next step is to execute it using F# Interactive (FSI).
 
-Highlight the entire function (it should be 11 lines long).  Once it is highlighted, hold the **alt** key and hit **Enter**.  You'll notice a Window pop up below, and it should show something like this:
+Highlight the entire function (it should be 11 lines long).  Once it is highlighted, hold the **Alt** key and hit **Enter**.  You'll notice a Window pop up below, and it should show something like this:
 
 ![](media/getting-started-vscode/vscode-fsi.png)
 
@@ -151,7 +165,7 @@ You should see the following result:
 val it : string = "ananabay"
 ```
 
-Hooray!  It works when the first character isn't a vowel.  What about when it's a vowel?  Enter the following:
+Now, let's try with a vowel as the first letter. Enter the following:
 
 ```fsharp
 toPigLatin "apple";;
@@ -238,7 +252,7 @@ Success!  You get the same results as before, but now loaded from an F# source f
 
 ## Summary
 
-In this article, you learned a number of this:
+In this article, you've learned:
 
 1. How to set up Visual Studio Code with Ionide.
 2. How to create your first F# project with Ionide.

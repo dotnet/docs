@@ -35,7 +35,7 @@ topics show how to move and manage persistent storage in containerized
 applications.
 
 The finished application is located in the
-[dotnet/core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/AspNetMVCRandomAnswerGenerator).
+[dotnet/core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator).
 
 ## Define some Terms
 

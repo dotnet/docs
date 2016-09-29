@@ -2,7 +2,7 @@
 title: Using F# on Azure
 description: Guide to using Azure services with F#
 keywords: Azure, cloud, visual f#, f#, functional programming, .NET, .NET Core
-author: dsyme
+author: sylvanc
 manager: jbronsk
 ms.date: 09/22/2016
 ms.topic: article

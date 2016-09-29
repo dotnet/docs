@@ -17,14 +17,7 @@ namespace AspNetMVCMagic8ball.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "The Magic 8 Ball on the web";
 
             return View();
         }

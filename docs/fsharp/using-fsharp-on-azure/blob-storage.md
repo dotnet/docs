@@ -62,7 +62,7 @@ This will return a `CloudStorageAccount`.
 
 ### Create some local dummy data
 
-Before we begin, create some dummy local data in the directory of our script. Later you will upload this data.
+Before you begin, create some dummy local data in the directory of our script. Later you will upload this data.
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L28-L30)]
 
@@ -163,12 +163,12 @@ Because the sample method calls an asynchronous method, it must be prefaced with
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L122-L160)]
 
-We can now use this asynchronous routine as follows. First we upload some dummy data (using the local
+We can now use this asynchronous routine as follows. First you upload some dummy data (using the local
 file created earlier in this tutorial).
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L162-L166)]
 
-Now, call the routine. We use ``Async.RunSynchronously`` to force the execution of the asynchronous operation.
+Now, call the routine. You use ``Async.RunSynchronously`` to force the execution of the asynchronous operation.
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L168-L168)]
 

@@ -37,34 +37,167 @@ applications.
 The finished application is located in the
 [dotnet/core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator).
 
-## Define some Terms
-
 You need to be familiar with some Docker terms before you begin working
 on moving your application to a container.
 
 > A **Docker image** is a read-only template that defines the environment
 > for a running container, including the OS, system components, and application(s).
 
+One important feature of Docker images is that images are composed from a
+base image. Each new image adds a small set of features to an existing
+image. 
+
 > A **Docker container** is a running instance of an image. 
 
+You scale an application by running the same image in many containers.
+Conceptually, this is similar to running the same application in multiple
+hosts.
 
-.. Define Image
-.. Explain where images can be built on each other
-.. Define container
-.. Explain multiple containers
+Before starting, you need to install [Docker for Windows](https://docs.docker.com/docker-for-windows/).
+You need to install version 1.12 Beta 26, or newer for Windows container support.
+After installing and starting Docker, you'll need to right-click on the tray icon and select 'Switch to Windows containers...`
+in order to run Docker images based on Windows OSs.
+
+Moving your application involves these steps:
+
+1. Creating a publish task to build the assets for an image.
+2. Building a Docker image that will run your application.
+3. Starting a Docker container that runs your image.
+4. Verifying the application using your browser.
 
 ## Publish script
 
-## Build the images
+You can use the Visual Studio Publish command to create a publish profile
+for your application. You'll copy all the assets to your Docker image
+later in this tutorial. The publish command will put all the publish
+assets in one directory. Right-click on your solution in Visual Studio,
+and select "Publish". Click the "Custom" profile button, and then select
+"File System" as the method (see image). Choose a new directory in your
+solution folder. (The downloaded sample uses "containerImage" as the 
+folder name).
+
+![Publish Connection][publish-connection]
+
+Next, open the "Advanced" section of the "File Publish" options. Select
+"Precompile during publishing". 
+
+![Publish Settings][publish-settings]
+
+Click publish, and Visual Studio will copy all the needed assets to the
+destination folder. 
+
+## Build the image
+
+Let's build an image based on the `microsft/aspnet` image located
+on [Docker Hub](https://hub.docker.com/r/microsoft/aspnet/).
+
+You'll compose this image using the `microsoft/aspnet` image as the base:
+
+```
+FROM microsoft/aspnet
+```
+
+The next command creates the directory that holds your application:
+
+```
+RUN mkdir C:\randomanswers
+```
+
+After that, you run a powershell command to setup the new site: 
+
+```
+RUN powershell -NoProfile -Command \
+    Import-module IISAdministration; \
+    New-IISSite -Name "ASPNET" -PhysicalPath C:\randomanswers -BindingInformation "*:8000:"
+```
+
+Following that, you instruct your Docker image to listen on port 8000: 
+
+```
+EXPOSE 8000
+```
+
+And last, you copy everything from your publish directory to the Docker image:
+
+```
+ADD containerImage/ /randomanswers
+```
+
+Run a Docker build command to create the image that will run your asp.net
+application. Open a powershell window, and type the following command in
+the solution directory:
+
+```
+docker build -t mvcrandomanswers .
+```
+
+Once that command completes, you can run the `docker images` command
+to see information on the new image:
+
+```
+REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
+mvcrandomanswers              latest              86838648aab6        2 minutes ago       8.104 GB
+```
+
+Now, let's run the applicaton.
 
 ## Start a container
 
+You start a container by executing the `docker run` command:
+
+```
+docker run -d -p 8000:8000 --name randomanswers mvcrandomanswers
+```
+
+The `-d` argument tells Docker to start the image in detached mode. That
+means the Docker image runs disconnected from the current shell.
+
+The `-p 8000:8000` argument tells docker how to map incoming ports. In this
+example, I'm using port 8000 on the host and the container.
+
+The `--name randomanswers` gives a name to the running container. You can use
+this name instead of the container ID in most commands.
+
+The `mvcrandomanswers` is the name of the image to start.
 
 ## Find the IP address
 
-## Broswe
+Once the container starts, you'll need to find its IP address so that you
+can connect to your running container from a browser. You use the `docker exec`
+command to do that:
+
+```
+docker exec randomanswers ipconfig
+```
+
+You will see output similar to this:
+
+```
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet 2:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::91d:ce97:dd27:460d%5
+   IPv4 Address. . . . . . . . . . . : 172.31.194.61
+   Subnet Mask . . . . . . . . . . . : 255.240.0.0
+   Default Gateway . . . . . . . . . : 172.16.0.1
+```
+
+You can connect to the running container using the IPv4 
+address and the configured port (8000), `http://172.31.194.61:8000`
+in the example shown.
+
+The sample directory on GitHub contains a 
+[powershell script](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator/run.ps1)
+that executes these commands for you.
 
 ## Closing
 
+In this topic, you've seen the step you must take to move an existing
+ASP.NET MVC application to run in a Windows container.
 
-Coming soon!
+
+[publish-connection]: media/aspnetmvc/PublishConnection.png "Publish to File System"
+[publish-settings]: media/aspnetmvc/PublishSettings.png "Publish Settings"

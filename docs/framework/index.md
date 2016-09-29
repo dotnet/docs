@@ -2,7 +2,7 @@
 title: .NET Framework Guide
 description: Learn about the .NET Framework
 keywords: .NET, .NET Framework, .NET Server, .NET Desktop
-author: dotnet-bot
+author: BillWagner
 manager: wpickett
 ms.date: 09/28/2016
 ms.topic: article
@@ -15,7 +15,7 @@ ms.assetid: a27b2ae4-154e-4b2b-b221-0c4c05185274
 # .NET Framework
 
 .NET Framework is a framework and associated tools that enable developers
-to create mobile, desktop, and web applications that run on Windowws PCs,
+to create mobile, desktop, and web applications that run on Windows PCs,
 devices and servers.
 
 This section will be expanded with documentation on Universal Windows

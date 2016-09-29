@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVCRandomAnswerGenerator.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,21 +9,32 @@ namespace MVCRandomAnswerGenerator.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        private static List<QuestionAndAnswer> allAnswers = new List<QuestionAndAnswer>();
+
+    public ActionResult Index()
         {
-            return View();
+            // Ask a question.
+            // Return with the answer.
+            return View(allAnswers);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Index(string NextQuestion)
+        {
+            var latest = new QuestionAndAnswer
+            {
+                Question = NextQuestion,
+                Answer = AnswerGenerator.GenerateAnswer(NextQuestion)
+            };
+
+            allAnswers.Insert(0,latest);
+
+            return View(allAnswers);
+        }
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "The ASP.NET MVC Random Answer Generator";
 
             return View();
         }

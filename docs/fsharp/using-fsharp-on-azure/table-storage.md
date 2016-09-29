@@ -160,7 +160,7 @@ A table query can retrieve just a few properties from an entity instead of all o
 
 If you are reading a large number of entities, and you want to process them as they are retrieved rather than waiting for them all to return, you can use a segmented query. Here, you return results in pages by using an async workflow so that execution is not blocked while you're waiting for a large set of results to return.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L165-L177)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L163-L177)]
 
 You now execute this computation synchronously:
 

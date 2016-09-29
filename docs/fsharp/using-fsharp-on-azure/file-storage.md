@@ -73,17 +73,29 @@ This example shows how to create a file share if it does not already exist:
 
 [!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L34-L35)]
 
-### Access the file share programmatically
+## Create a root directory and a subdirectory
 
-Here, we get the root directory and get a sub-directory of the root. If the sub-directory exists, we get a file in the sub-directory, and if that exists too, we download the file, appending the contents to a local file.
+Here, you get the root directory and get a sub-directory of the root. We create both if they don't already exist.
 
-[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L41-L47)]
+[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L41-L43)]
+
+## Upload text as a file
+
+This example shows how to upload text as a file.
+
+[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L49-L50)]
+
+### Download a file to a local copy of the file
+
+Here you download the file just created, appending the contents to a local file.
+
+[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L56-L56)]
 
 ### Set the maximum size for a file share
 
 The example below shows how to check the current usage for a share and how to set the quota for the share. `FetchAttributes` must be called to populate a share's `Properties`, and `SetProperties` to propagate local changes to Azure File storage.
 
-[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L53-L63)]
+[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L62-L72)]
 
 ### Generate a shared access signature for a file or file share
 
@@ -91,7 +103,7 @@ You can generate a shared access signature (SAS) for a file share or for an indi
 
 Here, we create a shared access policy on a share, and then use that policy to provide the constraints for a SAS on a file in the share.
 
-[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L69-L86)]
+[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L78-L94)]
 
 For more information about creating and using shared access signatures, see [Using Shared Access Signatures (SAS)](https://azure.microsoft.com/en-gb/documentation/articles/storage-dotnet-shared-access-signature-part-1/) and [Create and use a SAS with Blob storage](https://azure.microsoft.com/en-gb/documentation/articles/storage-dotnet-shared-access-signature-part-2/).
 
@@ -103,13 +115,13 @@ You can copy a file to another file, a file to a blob, or a blob to a file. If y
 
 Here, we copy a file to another file in the same share. Because this copy operation copies between files in the same storage account, you can use Shared Key authentication to perform the copy.
 
-[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L92-L93)]
+[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L100-L101)]
 
 ### Copy a file to a blob
 
 Here, we create a file and copy it to a blob within the same storage account. We create a SAS for the source file, which the service uses to authenticate access to the source file during the copy operation.
 
-[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L99-L112)]
+[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L107-L120)]
 
 You can copy a blob to a file in the same way. If the source object is a blob, then create a SAS to authenticate access to that blob during the copy operation.
 
@@ -119,7 +131,7 @@ Azure Storage Analytics supports metrics for File storage. With metrics data, yo
 
 You can enable metrics for File storage from the [Azure Portal](https://portal.azure.com), or you can do it from F# like this:
 
-[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L118-L131)]
+[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L126-L139)]
 
 ## Next steps
 

@@ -10,7 +10,7 @@ Key Features
 
 This sample demonstrates creating a library and writing effective unit tests that validate the features in that library. 
 
-The example provides a service that indicates whether a number prime.
+The example provides a service that indicates whether a number is prime.
 
 Build and Run
 -------------

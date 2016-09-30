@@ -22,4 +22,4 @@ function Invoke-Docker-Build ([string]$ImageName, [string]$ImagePath, [string]$D
 }
 
 Invoke-MSBuild -MSBuildPath "MSBuild.exe" -MSBuildParameters ".\ConsoleRandomAnswerGenerator.csproj /p:OutputPath=.\publish /p:Configuration=Release"
-Invoke-Docker-Build -ImageName $ImageName -ImagePath "."
+Invoke-Docker-Build -ImageName $ImageName -ImagePath "." 

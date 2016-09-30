@@ -29,7 +29,7 @@ You'll need to have Docker for Windows, version 1.12 Beta 26 or higher to suppor
 
 Moving your console application is a matter of a few steps.
 
-1. Writing a PowerShell script to build the application
+1. Build the application
 1. Creating a Dockerfile for the image
 1. Process to build and run the Docker container
 
@@ -51,18 +51,11 @@ The base image used for a Console .NET Framework applications is `microsoft/wind
 
 ```
 FROM microsoft/windowsservercore
-```
-
-The next line in the file copies the application assets from the **publish** folder to root folder of the container.
-
-```
 ADD publish/ /
-```
-
-Last, setting the ENTRYPOINT of the image states that this is the command or application that will run when the container starts. 
-```
 ENTRYPOINT ConsoleRandomAnswerGenerator.exe
 ```
+
+The `ADD` in the file copies the application assets from the **publish** folder to root folder of the container and last; setting the `ENTRYPOINT` of the image states that this is the command or application that will run when the container starts. 
 
 ## Creating the image
 Adding the following code to the **build.ps1** script, when run the Docker image called `console-random-answer-generator` is created after the compilation is complete.
@@ -98,7 +91,7 @@ The output is
 The answer to your question: 'Are you a square container?' is Concentrate and ask again on (70C3D48F4343)
 ```
 
-If you run the `docker ps -a` command from PowerShell, you can see that the container is still running.
+If you run the `docker ps -a` command from PowerShell, you can see that the container still exists.
 
 ```
 CONTAINER ID        IMAGE                             COMMAND                  CREATED             STATUS                          

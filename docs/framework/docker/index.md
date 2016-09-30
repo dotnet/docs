@@ -1,8 +1,8 @@
---
+---
 title: Docker on .NET Framework
 description: Docker on .NET Framework
 keywords: .NET, .NET Server, Docker, Windows Containers
-author: dotnet-bot
+author: BillWagner
 manager: wpickett
 ms.date: 09/28/2016
 ms.topic: article

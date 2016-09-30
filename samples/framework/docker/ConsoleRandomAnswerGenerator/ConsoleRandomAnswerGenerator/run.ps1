@@ -8,4 +8,4 @@ function Invoke-Docker-Run ([string]$DockerImage, [string]$Question) {
 	Invoke-Expression "docker run --rm $ImageName $Question"
 }
 
-Invoke-Docker-Run -DockerImage $ImageName -Question $QuestionArgs 
+Invoke-Docker-Run -DockerImage $ImageName -Question $QuestionArgs

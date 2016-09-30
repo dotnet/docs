@@ -98,3 +98,7 @@ This tutorial demonstrates building an ASP.NET Core microservice and hosting it 
 
 This tutorial demonstrates how to deploy an existing ASP.NET MVC application in a Windows Docker Container.
 A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator).
+
+**[Running .NET Framework Console Applications in Windows Containers](../framework/docker/console.md)**
+
+This tutorial demonstrates how to deploy and existing console application in a Windows container. A finished version of the code you'll build is location [in the core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator).

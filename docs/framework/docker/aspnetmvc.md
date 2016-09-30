@@ -1,7 +1,7 @@
 ---
 title: Migrating ASP.NET MVC Applications to Windows Containers
 description: Learn how to take an existing ASP.NET MVC application and run it in a Windows Docker Container
-keywords: .NET, .NET Server, .NET Desktop
+keywords: Windows Containers, Docker, ASP.NET MVC
 author: BillWagner
 manager: wpickett
 ms.date: 09/28/2016
@@ -64,7 +64,7 @@ in the Beta channel at this time.
 > before you can run Docker containers.
 
 After installing and starting Docker, you'll need to right-click on the
-tray icon and select **Switch to Windows containers...** in order to run
+tray icon and select **Switch to Windows containers** in order to run
 Docker images based on Windows. This command takes a few seconds to
 execute:
 
@@ -74,7 +74,7 @@ execute:
 
 The first step is to get all the assets that you'll need to load into
 a Docker image in one place. Fortunately, you can use the Visual Studio
-Publish command to create a publish profile for your application. This
+**Publish** command to create a publish profile for your application. This
 profile will put all the assets in one directory tree that you will
 copy to your target image later in this tutorial.
 
@@ -156,7 +156,7 @@ REPOSITORY                    TAG                 IMAGE ID            CREATED   
 mvcrandomanswers              latest              86838648aab6        2 minutes ago       8.104 GB
 ```
 
-The IMAGE ID will be different on your machine. Now, let's run the applicaton.
+The IMAGE ID will be different on your machine. Now, let's run the application.
 
 ## Start a container
 
@@ -236,7 +236,7 @@ stop` command:
 docker stop randomanswers
 ```
 
-To remove the container, issue a docker rm command:
+To remove the container, issue a `docker rm` command:
 
 ```
 docker rm randomanswers

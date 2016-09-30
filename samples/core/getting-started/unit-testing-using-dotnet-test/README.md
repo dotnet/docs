@@ -29,7 +29,8 @@ dotnet run
 
 To run the tests, navigate to the `tests/PrimeService.Tests` directory and type the following commands:
 
-```dotnet restore
+```
+dotnet restore
 dotnet build
 dotnet test
 ```

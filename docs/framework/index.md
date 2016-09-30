@@ -14,13 +14,6 @@ ms.assetid: a27b2ae4-154e-4b2b-b221-0c4c05185274
 
 # .NET Framework
 
-.NET Framework is a framework and associated tools that enable developers
-to create mobile, desktop, and web applications that run on Windows PCs,
-devices and servers.
+> Check out [Docker on .NET Framework](docker/index.md) to learn how to run your existing applications on [Windows Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview).
 
-This section will be expanded with documentation on Universal Windows
-apps, Win32 Desktop apps, and ASP.NET apps. 
-
-This first important part of the story is that you can now run
-your .NET Framework applications in [Docker containers on Windows](docker/index.md).
-
+The .NET Framework is a development platform for building applications for Windows, Windows Phone, Windows Server, and Microsoft Azure. It consists of the common language runtime (CLR) and the .NET Framework class library, which includes classes, interfaces, and value types that support an extensive range of technologies. The .NET Framework provides a managed execution environment, simplified development and deployment, and integration with a variety of programming languages, including Visual Basic and Visual C#.

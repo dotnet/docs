@@ -72,7 +72,7 @@ assets in one directory tree that you will copy to your target image.
 Right-click on your solution in Visual Studio, and select "Publish".
 Click the "Custom" profile button, and then select "File System" as the
 method (see image). Choose a new directory in your solution folder. (The
-downloaded sample uses "containerImage" as the folder name).
+downloaded sample uses "bin/PublishOutput" as the folder name).
 
 ![Publish Connection][publish-connection]
 

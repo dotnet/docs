@@ -20,7 +20,7 @@ F# is a superb language for cloud programming and is frequently used to write we
 In the sections below, you will find resources on how to use a range of Azure services with F#.
 
 > [!NOTE]
-> If a particular Azure service isn't in this documentation set, please consult either the Azure Functions or .NET documentation for that service. Some Azure services are entirely language-independent systems services and require no language-specific documentation, and in this case are not listed here.
+> If a particular Azure service isn't in this documentation set, please consult either the Azure Functions or .NET documentation for that service. Some Azure services are language-independent and require no language-specific documentation and are not listed here.
 
 ## Using Azure Virtual Machines with F# #
 
@@ -72,7 +72,7 @@ Azure Event Hubs can be used with F# in two ways:
 
 ## Using Azure Notifcation Hubs with F# #
 
-[Azure Notification Hubs](https://azure.microsoft.com/en-us/documentation/services/notification-hubs/) are multiplatform, scaled-out push infrastructure that enables you to send mobile push notifications from any backend (in the cloud or on-premises) to any mobile platform.
+[Azure Notification Hubs](https://azure.microsoft.com/en-us/documentation/services/notification-hubs/) are multiplatform, scaled-out push infrastructure that enable you to send mobile push notifications from any backend (in the cloud or on-premises) to any mobile platform.
 
 Azure Notification Hubs can be used with F# in two ways:
 

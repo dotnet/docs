@@ -16,11 +16,11 @@ ms.assetid: 85cca1d5-c9a4-4eb2-93e6-4f878de07fd7
 
 Console applications are used for many purposes; from simple querying of a status to long running document image processing tasks. In either case, the ability to start up and scale these applications are met with limitations of hardware acquisitions, startup times or running multiple instances.
 
-Moving your console applications to use Docker and Windows containers allows for starting these applications from clean state, perform the operation and then shutdown cleanly. This topic will show the steps needed to move a console application to a Windows based container and start it using a PowerShell script.
+Moving your console applications to use Docker and Windows Server containers allows for starting these applications from a clean state, enabling them to perform the operation and then shutdown cleanly. This topic will show the steps needed to move a console application to a Windows based container and start it using a PowerShell script.
 
 The sample console application is a simple example which takes an argument, a question in this case, and returns a random answer. This could take a `customer_id` and process their taxes, or create a thumbnail for an `image_url` argument.
 
-In addition to the answer, the `Environment.MachineName` has been added to the end of the answer to show when running the application locally, your local machine name should be returned and when running in a Windows Container; the container session id is returned.
+In addition to the answer, the `Environment.MachineName` has been added to the response to show the difference between running the application locally and in a Windows container. When running the application locally, your local machine name should be returned and when running in a Windows Container; the container session id is returned.
 
 The completed example is available in the [dotnet/core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator).
 
@@ -45,18 +45,24 @@ You can learn more about the Docker architecture by reading the
 on the Docker site. 
 
 ## Getting started
+Windows containers are supported on Microsoft Windows 10 Anniversary Update or newer or Windows Server 2016 or newer.
+
 You'll need to have Docker for Windows, version 1.12 Beta 26 or higher to support Windows containers. By default, Docker enables Linux based containers; switch to Windows containers by right clicking the Docker icon in the system tray and select "Switch to Windows Containers...". Docker will run the process to change and a restart may be required.
+
+![Windows-Containers](./media/console/SwitchContainer.png)
 
 Moving your console application is a matter of a few steps.
 
-1. Build the application
-1. Creating a Dockerfile for the image
-1. Process to build and run the Docker container
+1. [Build the application](#building-the-application)
+1. [Creating a Dockerfile for the image](#creating-the-dockerfile)
+1. [Process to build and run the Docker container](#creating-the-image)
 
 ## Building the application
-Typically console applications are distributed through an installer, FTP, or File Share deployment. Here the assets need to be compiled and staged to a location that can be used when the Docker image is created.
+Typically console applications are distributed through an installer, FTP, or File Share deployment. When deploying to a container, the assets need to be compiled and staged to a location that can be used when the Docker image is created.
 
-In **build.ps1** the script uses MSBuild to compile the application with a configuration of *Release* and publishes the assets to the *publish* folder.
+In **build.ps1** the script uses [MSBuild](https://msdn.microsoft.com/en-us/library/dd393574.aspx) to compile the application to complete the task of building the assets. There are a few parameters passed to MSBuild to finalize the needed assets. The name of the project file or solution to be compile,the location for the output and finally the configuration (Release or Debug).
+
+In the call to `Invoke-MSBuild` the `OutputPath` is set to *publish* and  `Configuration` set to *Release*. 
 
 ```
 function Invoke-MSBuild ([string]$MSBuildPath, [string]$MSBuildParameters) {
@@ -67,18 +73,17 @@ Invoke-MSBuild -MSBuildPath "MSBuild.exe" -MSBuildParameters ".\ConsoleRandomAns
 ```
 
 ## Creating the Dockerfile
-The base image used for a Console .NET Framework applications is `microsoft/windowsservercore`, publically available on [Docker Hub](https://hub.docker.com/r/microsoft/windowsservercore/). The image is the minimal installation of Windows Server 2016 and serves as the base OS image for Windows containers.
+The base image used for a Console .NET Framework applications is `microsoft/windowsservercore`, publically available on [Docker Hub](https://hub.docker.com/r/microsoft/windowsservercore/). The base image contains a minimal installation of Windows Server 2016, .NET Framework 4.6.2 and serves as the base OS image for Windows Containers.
 
 ```
 FROM microsoft/windowsservercore
 ADD publish/ /
 ENTRYPOINT ConsoleRandomAnswerGenerator.exe
 ```
-
-The `ADD` in the file copies the application assets from the **publish** folder to root folder of the container and last; setting the `ENTRYPOINT` of the image states that this is the command or application that will run when the container starts. 
+The first line in the Dockerfile designates the base image using the [`FROM`](https://docs.docker.com/engine/reference/builder/#/from) instruction. Next, [`ADD`](https://docs.docker.com/engine/reference/builder/#/add) in the file copies the application assets from the **publish** folder to root folder of the container and last; setting the [`ENTRYPOINT`](https://docs.docker.com/engine/reference/builder/#/entrypoint) of the image states that this is the command or application that will run when the container starts. 
 
 ## Creating the image
-Adding the following code to the **build.ps1** script, when run the Docker image called `console-random-answer-generator` is created after the compilation is complete.
+Adding the following code to the **build.ps1** script, when run the Docker image called `console-random-answer-generator` is created once the compilation is complete.
 
 ```
 $ImageName="console-random-answer-generator"
@@ -90,6 +95,8 @@ function Invoke-Docker-Build ([string]$ImageName, [string]$ImagePath, [string]$D
 
 Invoke-Docker-Build -ImageName $ImageName -ImagePath "."
 ```
+
+Run the script using `.\build.ps1` from the PowerShell command prompt.
 
 When the build is complete, using the `docker images` command from a command line or PowerShell prompt; you'll see that the image is created and ready to be run.
 

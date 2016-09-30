@@ -14,7 +14,7 @@ ms.assetid: 85cca1d5-c9a4-4eb2-93e6-4f878de07fd7
 
 # Running console applications in Windows containers
 
-Console applications are used for many purposes; from simple querying of a status to long running document image processing tasks. In either case, the ability to start up and scale these applications are met with limitations of hardware acquisitions, startup times or running multiple instances.
+Console applications are used for many purposes; from simple querying of a status to long running document image processing tasks. In any case, the ability to start up and scale these applications are met with limitations of hardware acquisitions, startup times or running multiple instances.
 
 Moving your console applications to use Docker and Windows Server containers allows for starting these applications from a clean state, enabling them to perform the operation and then shutdown cleanly. This topic will show the steps needed to move a console application to a Windows based container and start it using a PowerShell script.
 

@@ -1,5 +1,5 @@
 ---
-title: Running ASP.NET MVC applications in Docker
+title: Migrating ASP.NET MVC Applications to Windows Containers
 description: Learn how to take an existing ASP.NET MVC application and run it in a Windows Docker Container
 keywords: .NET, .NET Server, .NET Desktop
 author: BillWagner
@@ -12,19 +12,24 @@ ms.devlang: dotnet
 ms.assetid: c9f1d52c-b4bd-4b5d-b7f9-8f9ceaf778c4
 ---
 
-# Running ASP.NET MVC Applications in Windows Docker Containers
+# Migrating ASP.NET MVC Applications to Windows Containers
 
-Running an existing .NET Framework based application in a Windows Docker container
+Running an existing .NET Framework-based application in a Windows container
 requires creating the Docker image that contains your application, and
 starting one or more containers to run that image. This topic explains
 the tasks you must perform to take an existing ASP.NET MVC application
-and deploy it in a Windows Docker container.
+and deploy it in a Windows container.
 
 You'll start with an existing ASP.NET MVC application. You'll see how to
-build the assets to publish using Visual Studio. You'll use the Docker tools
+build the assets to publish using Visual Studio. You'll use Docker
 to build the image that contains your application, and
 runs that application when it is started. You'll see how to connect to your
-application running in a Windows based Docker container.
+application running in a Windows container.
+
+If you are unfamiliar with Docker, you can learn more about the Docker
+architecture by reading the 
+[Docker Overview](https://docs.docker.com/engine/understanding-docker/)
+on the Docker site. 
 
 The application you'll run in a container is a simple website that
 answers questions randomly. This application
@@ -33,42 +38,30 @@ storage. That lets you focus on moving the web tier to a container. Later
 topics show how to move and manage persistent storage in containerized
 applications.
 
+Moving your application involves these steps:
+
+1. [Creating a publish task to build the assets for an image.](#publish-script)
+2. [Building a Docker image that will run your application.](#build-the-image)
+3. [Starting a Docker container that runs your image.](#start-a-container)
+4. [Verifying the application using your browser.](#verify-in-the-browser)
+
 The finished application is located in the
 [dotnet/core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator).
 
-You need to be familiar with some Docker terms before you begin working
-on moving your application to a container.
+## Prerequisites
 
-> A **Docker image** is a read-only template that defines the environment
-> for a running container, including the OS, system components, and application(s).
-
-One important feature of Docker images is that images are composed from a
-base image. Each new image adds a small set of features to an existing
-image. 
-
-> A **Docker container** is a running instance of an image. 
-
-You scale an application by running the same image in many containers.
-Conceptually, this is similar to running the same application in multiple
-hosts.
-
-You can learn more about the Docker architecture by reading the 
-[Docker Overview](https://docs.docker.com/engine/understanding-docker/)
-on the Docker site. 
+Your development machine must be running Windows 10 Anniversary Update, or newe,
+or, Windows Server 2016, or newer.
 
 Before starting, you need to install [Docker for Windows](https://docs.docker.com/docker-for-windows/).
 You need to install version 1.12 Beta 26, or newer for Windows container support.
 After installing and starting Docker, you'll need to right-click on the
-tray icon and select 'Switch to Windows containers...' in order to run
-Docker images based on Windows OSs. This command takes a few seconds to
-execute.
+tray icon and select **Switch to Windows containers...** in order to run
+Docker images based on Windows. This command takes a few seconds to
+execute:
 
-Moving your application involves these steps:
+![Windows Container][windows-container]
 
-1. Creating a publish task to build the assets for an image.
-2. Building a Docker image that will run your application.
-3. Starting a Docker container that runs your image.
-4. Verifying the application using your browser.
 
 ## Publish script
 
@@ -83,14 +76,14 @@ downloaded sample uses "containerImage" as the folder name).
 
 ![Publish Connection][publish-connection]
 
-Next, open the "Advanced" section of the "File Publish" options. Select
+Next, open the "File Publish Options" section of the "Settings" tab. Select
 "Precompile during publishing". This optimization means that you be
 compiling views in the Docker container, you are copying the precompiled
 views.
 
 ![Publish Settings][publish-settings]
 
-Click publish, and Visual Studio will copy all the needed assets to the
+Click Publish, and Visual Studio will copy all the needed assets to the
 destination folder. 
 
 ## Build the image
@@ -98,46 +91,47 @@ destination folder.
 To run your application, you'll build an image based on the `microsft/aspnet`
 image located on [Docker Hub](https://hub.docker.com/r/microsoft/aspnet/).
 
-You'll compose this image using the `microsoft/aspnet` image as the base:
+The base image, `microsoft/aspnet` is a Windows Server image. In addition
+to the Windows Server Core, it has IIS enabled. It also has ASP.NET 4.6.2
+installed and enabled. When you run this image in a container, it will start
+IIS and any installed websites will be active.
+
+The Dockerfile that creates your image looks like this:
 
 ```
 FROM microsoft/aspnet
-```
-
-The next command creates the directory that holds your application:
-
-```
 RUN mkdir C:\randomanswers
-```
 
-After that, you run a powershell command in the Docker image to setup
-the new site: 
-
-```
 RUN powershell -NoProfile -Command \
     Import-module IISAdministration; \
     New-IISSite -Name "ASPNET" -PhysicalPath C:\randomanswers -BindingInformation "*:8000:"
-```
 
-Following that, you instruct your Docker image to listen on port 8000: 
-
-```
 EXPOSE 8000
-```
 
-And last, you copy everything from your publish directory to the Docker image:
-
-```
 ADD containerImage/ /randomanswers
 ```
 
-Run a Docker build command to create the image that will run your asp.net
-application. Open a powershell window, and type the following command in
+The `FROM` instruction specifies the base image. You're image is built by
+extending the `microsoft/aspnet` image. Next, this Dockerfile creates a
+directory for your application, and configures the new site in IIS.
+The next instruction tells the container to listen on port 8000. The
+final instruction copies the site you published earlier into the
+container.
+
+There is no `ENTRYPOINT` command in this Dockerfile. You don't need one.
+The base image ensures that IIS starts when the container starts. 
+
+Run a Docker build command to create the image that will run your ASP.NET
+application. Open a PowerShell window, and type the following command <in></in>
 the solution directory:
 
 ```
 docker build -t mvcrandomanswers .
 ```
+
+This command will build the new image by following the instructions in your
+Dockerfile. This may include puling the base image from [Docker Hub](http://hub.docker.com),
+Then it will add your application to that image.
 
 Once that command completes, you can run the `docker images` command
 to see information on the new image:
@@ -151,7 +145,7 @@ The IMAGE ID will be different on your machine. Now, let's run the applicaton.
 
 ## Start a container
 
-You start a container by executing the `docker run` command:
+You start a container by executing the follows `docker run` command:
 
 ```
 docker run -d -p 8000:8000 --name randomanswers mvcrandomanswers
@@ -160,15 +154,21 @@ docker run -d -p 8000:8000 --name randomanswers mvcrandomanswers
 The `-d` argument tells Docker to start the image in detached mode. That
 means the Docker image runs disconnected from the current shell.
 
-The `-p 8000:8000` argument tells docker how to map incoming ports. In this
-example, I'm using port 8000 on both the host and the container.
+The `-p 8000:8000` argument tells Docker how to map incoming ports. In this
+example, we're using port 8000 on both the host and the container.
 
 The `--name randomanswers` gives a name to the running container. You can use
 this name instead of the container ID in most commands.
 
 The `mvcrandomanswers` is the name of the image to start.
 
-## Find the IP address
+## Verify in the browser
+
+> [!NOTE]
+> With the current release, you can't use `http://localhost` to browse
+> to your site. This is because of a known behavior in WinNAT, and it will
+> be resolved in the future. Until that is addressed, you need to use
+> the IP address of the container.
 
 Once the container starts, you'll need to find its IP address so that you
 can connect to your running container from a browser. You use the `docker exec`
@@ -178,7 +178,7 @@ command to do that:
 docker exec randomanswers ipconfig
 ```
 
-You will see output similar to this:
+You will see an output similar to this:
 
 ```
 Windows IP Configuration
@@ -203,19 +203,19 @@ see the running site.
 > You can temporarily disable it to make sure your container is working.
 
 The sample directory on GitHub contains a 
-[powershell script](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator/run.ps1)
-that executes these commands for you. Open a Powershell window, cd to
+[PowerShell script](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator/run.ps1)
+that executes these commands for you. Open a PowerShell window, change directory to
 your solution directory, and type:
 
 ```
 ./run.ps1
 ```
 
-It will build the image, display the list of images on your machine, start
-a container, and display the IP address for that container. 
+It builds the image, displays the list of images on your machine, starts
+a container, and displays the IP address for that container. 
 
-When you are done, and you want to stop your container, issue a docker
-stop command:
+When you are done, and you want to stop your container, issue a `docker
+stop` command:
 
 ```
 docker stop randomanswers
@@ -227,14 +227,15 @@ To remove the container, issue a docker rm command:
 docker rm randomanswers
 ```
 
-## Closing
+## Summary
 
-In this topic, you've seen the step you must take to move an existing
+In this topic, you've seen the steps to move an existing
 ASP.NET MVC application to run in a Windows container. Running an
-existing application does not require any changes to your the
+existing application does not require any changes to your
 application. You need to run the tasks to publish your application,
-build a Docker image, and start that image in a new container. You're
+build a Docker image, and start that image in a new container. Your
 existing ASP.NET MVC applications are container-ready.
 
+[windows-container]: media/aspnetmvc/SwitchContainer.png "Switch to Windows Container"
 [publish-connection]: media/aspnetmvc/PublishConnection.png "Publish to File System"
 [publish-settings]: media/aspnetmvc/PublishSettings.png "Publish Settings"

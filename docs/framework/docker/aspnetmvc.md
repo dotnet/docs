@@ -58,6 +58,11 @@ Before starting, you need to install [Docker for Windows](https://docs.docker.co
 version 1.12 Beta 26, or newer. Windows Container support is only available
 in the Beta channel at this time.
 
+> [!IMPORTANT]
+> If you are using Windows Server 2016, you need to follow the
+> instructions for [Container Host Deployment - Windows Server](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/deployment/deployment)
+> before you can run Docker containers.
+
 After installing and starting Docker, you'll need to right-click on the
 tray icon and select **Switch to Windows containers...** in order to run
 Docker images based on Windows. This command takes a few seconds to

@@ -1,7 +1,7 @@
 # The `FROM` instruction specifies the base image. You are
 # extending the `microsoft/aspnet` image.
 
-FROM aspnet
+FROM microsoft/aspnet
 
 # Next, this Dockerfile creates a directory for your application
 RUN mkdir C:\randomanswers

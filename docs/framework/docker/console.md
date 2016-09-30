@@ -24,6 +24,26 @@ In addition to the answer, the `Environment.MachineName` has been added to the e
 
 The completed example is available in the [dotnet/core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator).
 
+You need to be familiar with some Docker terms before you begin working
+on moving your application to a container.
+
+> A **Docker image** is a read-only template that defines the environment
+> for a running container, including the OS, system components, and application(s).
+
+One important feature of Docker images is that images are composed from a
+base image. Each new image adds a small set of features to an existing
+image. 
+
+> A **Docker container** is a running instance of an image. 
+
+You scale an application by running the same image in many containers.
+Conceptually, this is similar to running the same application in multiple
+hosts.
+
+You can learn more about the Docker architecture by reading the 
+[Docker Overview](https://docs.docker.com/engine/understanding-docker/)
+on the Docker site. 
+
 ## Getting started
 You'll need to have Docker for Windows, version 1.12 Beta 26 or higher to support Windows containers. By default, Docker enables Linux based containers; switch to Windows containers by right clicking the Docker icon in the system tray and select "Switch to Windows Containers...". Docker will run the process to change and a restart may be required.
 

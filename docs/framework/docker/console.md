@@ -48,7 +48,7 @@ on the Docker site.
 Windows containers are supported on Microsoft Windows 10 Anniversary Update or newer or Windows Server 2016 or newer.
 
 > [!NOTE]
->If you are using Windows Server 2016 you must enable containers manually, the Docker for Windows installer will not enable the feature. Make sure all updates have run for the OS and then follow the instrunctions [here](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/deployment/deployment) to install the containers and Docker features.
+>If you are using Windows Server 2016 you must enable containers manually, the Docker for Windows installer will not enable the feature. Make sure all updates have run for the OS and then follow the instructions [here](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/deployment/deployment) to install the containers and Docker features.
 
 You'll need to have Docker for Windows, version 1.12 Beta 26 or higher to support Windows containers. By default, Docker enables Linux based containers; switch to Windows containers by right clicking the Docker icon in the system tray and select "Switch to Windows Containers...". Docker will run the process to change and a restart may be required.
 

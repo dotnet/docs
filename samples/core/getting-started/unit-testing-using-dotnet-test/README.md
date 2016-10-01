@@ -35,7 +35,7 @@ dotnet build
 dotnet test
 ```
 
-`dotnet test` runs all the configure tests.
+`dotnet test` runs all the configured tests.
 
 You must run `dotnet restore` in the `src/PrimeService` directory before you can run
 the tests. `dotnet build` will follow the dependency and build both the library and unit

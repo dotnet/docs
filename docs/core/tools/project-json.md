@@ -4,7 +4,7 @@ description: project.json reference
 keywords: .NET, .NET Core, project.json
 author: aL3891
 manager: wpickett
-ms.date: 09/27/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -40,7 +40,14 @@ In this reference topic, you'll see the list of all the properties you can defin
     "embedInteropTypes": Boolean,
     "preprocess": String or String[],
     "shared": String or String[],
-    "dependencies": Object,
+    "dependencies": Object {
+        version: String,
+        type: String,
+        target: String,
+        include: String,
+        exclude: String,
+        suppressParent: String
+    },
     "tools": Object,
     "scripts": Object,
     "buildOptions": Object {
@@ -135,7 +142,14 @@ In this reference topic, you'll see the list of all the properties you can defin
     },
     "configurations": Object,
     "frameworks": Object {
-        "dependencies": Object,
+        "dependencies": Object {
+            version: String,
+            type: String,
+            target: String,
+            include: String,
+            exclude: String,
+            suppressParent: String
+        },        
         "frameworkAssemblies": Object,
         "wrappedProject": String,
         "bin": Object {
@@ -307,6 +321,8 @@ For example:
 Type: Object
 
 An object that defines the package dependencies of the project, each key of this object is the name of a package and each value contains versioning information.
+For more information, see the [Dependency resolution](https://docs.nuget.org/ndocs/consume-packages/dependency-resolution#dependency-resolution-in-nuget-3-x) article on
+the NuGet documentation site.
 
 For example:
 
@@ -323,6 +339,106 @@ For example:
         },
         "Microsoft.Extensions.DependencyModel": "1.0.0-*"
     }
+```
+
+### version
+Type: String
+
+Specifies the version or version range of the dependency. Use the \* wildcard to specify a 
+[floating dependency version](https://docs.nuget.org/ndocs/consume-packages/dependency-resolution#floating-versions).
+
+For example:
+
+```json
+"dependencies": { 
+    "Newtonsoft.Json": { 
+        "version": "9.0.1" 
+    }
+}
+```
+
+### type
+Type: String
+
+Specifies the type of the dependency. It can be one of the following values: `default`, `build` or `platform`. The default value is `default`.
+
+`build` is known as a development dependency and is only used for build-time. It means that the package should not be published or added as a dependency to the output `.nupkg` file. 
+It has the same effect of setting [supressParent](#supressParent) to `all`.
+
+`platform` references the shared SDK. For more information, see the section on "Deploying a framework-dependent deployment with third-party dependencies" on the 
+[.NET Core Application Deployment](../deploying/index,md) topic.
+
+For example:
+
+```json
+ "dependencies": {
+   "Microsoft.NETCore.App": {
+     "type": "platform",
+     "version": "1.0.0"
+   }
+ }
+```
+
+### target
+Type: String
+
+Restricts the dependency to match only a `project` or a `package`.
+
+### include
+Type: String
+
+Includes parts of dependency packages. It can use one or more of the following flags: `all`, `runtime`, `compile`, `build`, `contentFiles`, `native`, `analyzers`, or `none`.
+Multiple flags are defined by a comma-delimited list.
+For more information, see the [Managing dependency package assets](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets) specification on the NuGet repo.
+
+For example:
+
+```json
+{
+  "dependencies": {
+    "packageA": {
+      "version": "1.0.0",
+      "include": "runtime"
+    }
+  }
+}
+```
+
+### exclude
+Type: String
+
+Excludes parts of dependency packages. It can be one or more of the following flags: `all`, `runtime`, `compile`, `build`, `contentFiles`, `native`, `analyzers`, or `none`.
+Multiple flags are defined by a comma-delimited list.
+For more information, see the [Managing dependency package assets](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets) specification on the NuGet repo.
+
+For example:
+
+```json
+{
+  "dependencies": {
+    "packageA": {
+      "version": "1.0.0",
+      "exclude": "contentFiles"
+    }
+  }
+}
+```
+
+### supressParent
+Type: String
+
+Defines additional excludes for consumers of the project. It can be one the following flags: `all`, `runtime`, `compile`, `build`, `contentFiles`, `native`, `analyzers`, or `none`.
+For more information, see the [Managing dependency package assets](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets) specification on the NuGet repo.
+
+```json
+{
+  "dependencies": {
+    "packageA": {
+      "version": "1.0.0",
+      "suppressParent": "compile"
+    }
+  }
+}
 ```
 
 ## tools
@@ -500,7 +616,7 @@ For example:
 ### languageVersion
 Type: String
 
-The version of the language used by the compiler: ISO-1, ISO-2, 3, 4, 5, 6, or Default
+The version of the language used by the compiler: ISO-1, ISO-2, 3, 4, 5, 6, or Default.
 
 For example:
 
@@ -1441,7 +1557,7 @@ For example:
 ### dependencies
 Type: Object
 
-Dependencies that are specific for this framework. This is useful in scenarios where you cannot simply specify a package-level dependency across all targets. Reasons for this can include one target lacking built-in support that other targets have, or requiring a different version of a dependency than other targets.
+Dependencies that are specific for this framework. This is useful in scenarios where you cannot simply specify a package-level dependency across all targets. Reasons for this can include one target lacking built-in support that other targets have, or requiring a different version of a dependency than other targets. To see a list of the other properties for this node, see the earlier [dependencies](#dependencies) section.
 
 For example:
 

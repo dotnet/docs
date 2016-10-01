@@ -322,10 +322,10 @@
 ## [Migrating from DNX](core/migrating-from-dnx.md)
 <!-- End .NET Core Content -->
 
-# [🔧 .NET Framework](framework/index.md)
-## [🔧 Docker](framework/docker/index.md)
-### [🔧 Running Console Apps in Containers](framework/docker/console.md)
-### [🔧 Running ASP.NET MVC Apps in Containers](framework/docker/aspnetmvc.md)
+# [.NET Framework](framework/index.md)
+## [Docker](framework/docker/index.md)
+### [Running Console Apps in Containers](framework/docker/console.md)
+### [Running ASP.NET MVC Apps in Containers](framework/docker/aspnetmvc.md)
 
 
 # [Samples and Tutorials](samples-and-tutorials/index.md)

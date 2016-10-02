@@ -393,7 +393,7 @@ CREATE TABLE [dbo].[Table1] (
   PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
--- Create the Table3 table.
+-- Create the Table2 table.
 CREATE TABLE [dbo].[Table2] (
   [Id]        INT        NOT NULL,
   [TestData1] INT        NULL,
@@ -420,9 +420,9 @@ SELECT TestData1 FROM Table1
 RETURN 0
 GO
 
--- Insert data into the Table1 table.
 USE MyDatabase
 
+-- Insert data into the Table1 table.
 INSERT INTO Table1 (Id, TestData1, TestData2, Name)
   VALUES(1, 10, 5.5, 'Testing1');
 INSERT INTO Table1 (Id, TestData1, TestData2, Name)
@@ -436,6 +436,7 @@ INSERT INTO Table2 (Id, TestData1, TestData2, Name)
 INSERT INTO Table2 (Id, TestData1, TestData2, Name)
   VALUES(3, NULL, NULL, 'Testing3');
 
+-- Insert data into the Table3 table.
 INSERT INTO Table3 (Id, Name, Data)
   VALUES (1, 'Testing1', 10);
 INSERT INTO Table3 (Id, Name, Data)

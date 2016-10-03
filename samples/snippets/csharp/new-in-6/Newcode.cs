@@ -19,7 +19,7 @@ namespace NewStyle
         {
             // <UsingStaticString>
             if (IsNullOrWhiteSpace(lastName))
-                throw new ArgumentException(nameof(lastName), "Cannot be blank");
+                throw new ArgumentException(message: "Cannot be blank", paramName: nameof(lastName));
             // </UsingStaticString>
             FirstName = firstName;
             LastName = lastName;

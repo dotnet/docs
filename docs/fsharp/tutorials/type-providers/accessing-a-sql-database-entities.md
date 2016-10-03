@@ -183,17 +183,17 @@ let fullContext = context.DataContext
 let nullable value = new System.Nullable<_>(value)
 
 let addInstructor(lastName, firstName, hireDate, office) =
-let hireDate = DateTime.Parse(hireDate)
-let newPerson = new EntityConnection.ServiceTypes.Person(LastName = lastName,
+  let hireDate = DateTime.Parse(hireDate)
+  let newPerson = new EntityConnection.ServiceTypes.Person(LastName = lastName,
                                                          FirstName = firstName,
                                                          HireDate = nullable hireDate)
-fullContext.AddObject("People", newPerson)
+  fullContext.AddObject("People", newPerson)
 
-let newOffice = new EntityConnection.ServiceTypes.OfficeAssignment(Location = office)
+  let newOffice = new EntityConnection.ServiceTypes.OfficeAssignment(Location = office)
 
-fullContext.AddObject("OfficeAssignments", newOffice)
-fullContext.CommandTimeout <- nullable 1000
-fullContext.SaveChanges() |> printfn "Saved changes: %d object(s) modified."
+  fullContext.AddObject("OfficeAssignments", newOffice)
+  fullContext.CommandTimeout <- nullable 1000
+  fullContext.SaveChanges() |> printfn "Saved changes: %d object(s) modified."
 
 addInstructor("Parker", "Darren", "1/1/1998", "41/3720")
 ```

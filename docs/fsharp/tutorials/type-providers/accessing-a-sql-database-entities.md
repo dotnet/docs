@@ -185,8 +185,8 @@ let nullable value = new System.Nullable<_>(value)
 let addInstructor(lastName, firstName, hireDate, office) =
   let hireDate = DateTime.Parse(hireDate)
   let newPerson = new EntityConnection.ServiceTypes.Person(LastName = lastName,
-                                                         FirstName = firstName,
-                                                         HireDate = nullable hireDate)
+                                                           FirstName = firstName,
+                                                           HireDate = nullable hireDate)
   fullContext.AddObject("People", newPerson)
 
   let newOffice = new EntityConnection.ServiceTypes.OfficeAssignment(Location = office)

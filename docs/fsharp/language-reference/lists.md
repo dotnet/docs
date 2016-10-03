@@ -40,7 +40,7 @@ An empty list is specified by a pair of square brackets with nothing in between 
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1304.fs)]
 
-You can also use a sequence expression to create a list. See [Sequence Expressions](sequences.md#sequence-expressions) for more. For example, the following code creates a list of squares of integers from 1 to 10.
+You can also use a sequence expression to create a list. See [Sequence Expressions](sequences.md#sequence-expressions) for more information. For example, the following code creates a list of squares of integers from 1 to 10.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1303.fs)]
 

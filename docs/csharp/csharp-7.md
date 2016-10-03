@@ -1,8 +1,8 @@
 ---
 title: What's New in C# 7 | C# Guide
-description: What's New in C# 7    
-keywords: .NET, .NET Core, Latest Features, What's New
-author:  tdykstra
+description: Get an overview of the new features coming in the upcoming version 7 of the C# language.    
+keywords: C#, .NET, .NET Core, Latest Features, What's New
+author:  BillWagner
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -13,6 +13,37 @@ ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 ---
 
 # 🔧 What's new in C# 7
+
+## `out` variables
+
+## Tuples
+
+### Named and unnamed Tuples
+
+### Deconstruction
+
+## Pattern matching
+
+### `is` expressions
+
+### `switch` expressions
+
+## Ref returns and locals
+
+## Local Functions
+
+## Expression Bodied Everything (Preview 5)
+
+## Throw Expressions (Preview 5)
+
+<!-- Generalized async return types -->
+
+## Literal Syntax
+
+### binary literals
+
+### digit separators
+
 
 > **Note**
 > 

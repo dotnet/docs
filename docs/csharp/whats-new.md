@@ -16,7 +16,7 @@ ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149
 
 
 * [C# 7](csharp-7.md):
-    - This page describes the latest features in the C# language. This covers C# 7, currently available in [Visual Studio 15 Preview 4](https://www.visualstudio.com/en-us/downloads/visual-studio-next-downloads-vs.aspx).
+    - This page describes the latest features in the C# language. This covers C# 7, currently available in [Visual Studio 15 Preview 4](https://www.visualstudio.com/visual-studio-pre-release-downloads/x).
 
 * [C# 6](csharp-6.md):
     - This page describes the latest features in the currently released version of C#, C# 6. These features are available in Visual Studio 2015 for Windows developers, and on .NET Core 1.0 for developers exploring C# on MacOS and Linux.

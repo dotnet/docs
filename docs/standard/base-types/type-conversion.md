@@ -346,36 +346,6 @@ catch (OverflowException) {
 //    2147483647 is outside the range of the Byte data type.
 ```
 
-```vb
-int largeValue = Int32.MaxValue;
-byte newValue;
-
-try {
-   newValue = unchecked((byte) largeValue);
-   Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.", 
-                     largeValue.GetType().Name, largeValue,
-                     newValue.GetType().Name, newValue);
-}
-catch (OverflowException) {
-   Console.WriteLine("{0} is outside the range of the Byte data type.", 
-                     largeValue);
-}
-
-try {
-   newValue = checked((byte) largeValue);
-   Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.", 
-                     largeValue.GetType().Name, largeValue,
-                     newValue.GetType().Name, newValue);
-}
-catch (OverflowException) {
-   Console.WriteLine("{0} is outside the range of the Byte data type.", 
-                     largeValue);
-}
-// The example displays the following output:
-//    Converted the Int32 value 2147483647 to the Byte value 255.
-//    2147483647 is outside the range of the Byte data type.
-```
-
 If a particular language compiler supports custom overloaded operators, you can also define explicit conversions in your own custom types. The following example provides a partial implementation of a signed byte data type named `ByteWithSign` that uses sign-and-magnitude representation. It supports explicit conversion of [Int32](xref:System.Int32) and [UInt32](xref:System.UInt32) values to `ByteWithSign` values.
 
 ```csharp
@@ -391,7 +361,8 @@ public struct ByteWithSign
    {
       // Check for overflow.
       if (value > ByteWithSign.MaxValue || value < ByteWithSign.MinValue)
-         throw new OverflowException(String.Format("'{0}' is out of range of the ByteWithSign data type.", 
+         throw new OverflowException(String.Format("'{0}' is out of range of the ByteWithSign 
+                                                   data type.", 
                                                    value));
 
       ByteWithSign newValue;
@@ -403,7 +374,8 @@ public struct ByteWithSign
    public static explicit operator ByteWithSign(uint value)
    {
       if (value > ByteWithSign.MaxValue) 
-         throw new OverflowException(String.Format("'{0}' is out of range of the ByteWithSign data type.", 
+         throw new OverflowException(String.Format("'{0}' is out of range of the ByteWithSign 
+                                                   data type.", 
                                                    value));
 
       ByteWithSign newValue;
@@ -430,7 +402,8 @@ Public Structure ByteWithSign
    Public Overloads Shared Narrowing Operator CType(value As Integer) As ByteWithSign
       ' Check for overflow.
       If value > ByteWithSign.MaxValue Or value < ByteWithSign.MinValue Then
-         Throw New OverflowException(String.Format("'{0}' is out of range of the ByteWithSign data type.", value))
+         Throw New OverflowException(String.Format("'{0}' is out of range of the ByteWithSign 
+                                                   data type.", value))
       End If
 
       Dim newValue As ByteWithSign
@@ -442,7 +415,8 @@ Public Structure ByteWithSign
 
    Public Overloads Shared Narrowing Operator CType(value As UInteger) As ByteWithSign
       If value > ByteWithSign.MaxValue Then 
-         Throw New OverflowException(String.Format("'{0}' is out of range of the ByteWithSign data type.", value))
+         Throw New OverflowException(String.Format("'{0}' is out of range of the ByteWithSign 
+                                                   data type.", value))
       End If
 
       Dim NewValue As ByteWithSign

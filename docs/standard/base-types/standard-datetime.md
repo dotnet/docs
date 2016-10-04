@@ -14,7 +14,7 @@ ms.assetid: be239871-10cc-4949-b548-200bb260630a
 
 # Standard date and time format strings
 
-A standard date and time format string uses a single format specifier to define the text representation of a date and time value. Any date and time format string that contains more than one character, including white space, is interpreted as a custom date and time format string; for more information, see [Custom Date and Time Format Strings](customdatetime.md). A standard or custom format string can be used in two ways:
+A standard date and time format string uses a single format specifier to define the text representation of a date and time value. Any date and time format string that contains more than one character, including white space, is interpreted as a custom date and time format string; for more information, see [Custom Date and Time Format Strings](custom-datetime.md). A standard or custom format string can be used in two ways:
 
 * To define the string that results from a formatting operation.
 
@@ -740,7 +740,7 @@ Formatting is influenced by properties of the current [DateTimeFormatInfo](xref:
 
 ## See Also
 
-[Formatting types](formattingtypes.md)
+[Formatting types](formatting-types.md)
 
-[Custom date and time format strings](customdatetime.md)
+[Custom date and time format strings](custom-datetime.md)
 

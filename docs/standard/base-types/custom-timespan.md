@@ -14,14 +14,14 @@ ms.assetid: e79745eb-6ebd-4e62-85c4-4f2830c27285
 
 # Custom TimeSpan format strings
 
-A [TimeSpan](xref:System.TimeSpan) format string defines the string representation of a [TimeSpan](xref:System.TimeSpan) value that results from a formatting operation. A custom format string consists of one or more custom [TimeSpan](xref:System.TimeSpan) format specifiers along with any number of literal characters. Any string that is not a [Standard TimeSpan](standardtimespan.md) format string is interpreted as a custom [TimeSpan](xref:System.TimeSpan) format string.
+A [TimeSpan](xref:System.TimeSpan) format string defines the string representation of a [TimeSpan](xref:System.TimeSpan) value that results from a formatting operation. A custom format string consists of one or more custom [TimeSpan](xref:System.TimeSpan) format specifiers along with any number of literal characters. Any string that is not a [Standard TimeSpan](standard-timespan.md) format string is interpreted as a custom [TimeSpan](xref:System.TimeSpan) format string.
 
 > [!IMPORTANT]
 > The custom [TimeSpan](xref:System.TimeSpan) format specifiers do not include placeholder separator symbols, such as the symbols that separate days from hours, hours from minutes, or seconds from fractional seconds. Instead, these symbols must be included in the custom format string as string literals. For example, `"dd\.hh\:mm"` defines a period (.) as the separator between days and hours, and a colon (:) as the separator between hours and minutes. 
 
 > Custom [TimeSpan](xref:System.TimeSpan) format specifiers also do not include a sign symbol that enables you to differentiate between negative and positive time intervals. To include a sign symbol, you have to construct a format string by using conditional logic. The [Other Characters](#Other-Characters) section includes an example. 
 
-The string representations of [TimeSpan](xref:System.TimeSpan) values are produced by calls to the overloads of the [TimeSpan](xref:System.TimeSpan) `ToString` method, as well as by methods that support composite formatting, such as [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)). For more information, see [Formatting Types](formattingtypes.md) and [Composite Formatting](compositeformat.md). The following example illustrates the use of standard format strings in formatting operations.
+The string representations of [TimeSpan](xref:System.TimeSpan) values are produced by calls to the overloads of the [TimeSpan](xref:System.TimeSpan) `ToString` method, as well as by methods that support composite formatting, such as [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)). For more information, see [Formatting Types](formatting-types.md) and [Composite Formatting](composite-format.md). The following example illustrates the use of standard format strings in formatting operations.
 
 ```csharp
 using System;
@@ -1776,7 +1776,7 @@ Console.WriteLine(interval.ToString(fmt))
 
 ## See Also
 
-[Formatting types](formattingtypes.md)
+[Formatting types](formatting-types.md)
 
-[Standard TimeSpan format strings](standardtimespan.md)  
+[Standard TimeSpan format strings](standard-timespan.md)  
 

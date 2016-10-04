@@ -18,12 +18,12 @@ This section describes .NET base type operations, including formatting, conversi
 
 ## In This Section
 
-[Type Conversion](typeconversion.md) - Describes how to convert from one type to another.
+[Type Conversion](type-conversion.md) - Describes how to convert from one type to another.
 
-[Formatting Types](formattingtypes.md) - Describes how to format strings using the string format specifiers.
+[Formatting Types](formatting-types.md) - Describes how to format strings using the string format specifiers.
 
-[Manipulating Strings](manipulatingstrings.md) - Describes how to manipulate and format strings.
+[Manipulating Strings](manipulating-strings.md) - Describes how to manipulate and format strings.
 
-[Parsing Strings](parsingstrings.md) - Describes how to convert strings into types.
+[Parsing Strings](parsing-strings.md) - Describes how to convert strings into types.
 
-[Common Type System](commontypesystem.md) - Describes types used in .NET.
+[Common Type System](common-type-system.md) - Describes types used in .NET.

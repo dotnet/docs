@@ -168,7 +168,7 @@ This technique always unambiguously identifies a [DateTimeOffset](xref:System.Da
 
 ## See Also
 
-[Performing formatting operations](performingformattingoperations.md)
+[Performing formatting operations](performing-formatting-operations.md)
 
-[Standard date and time format strings](standarddatetime.md)
+[Standard date and time format strings](standard-datetime.md)
 

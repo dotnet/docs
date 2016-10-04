@@ -14,9 +14,9 @@ ms.assetid: 4e0f02f1-4abd-47b5-8995-5c3ff45b0ce1
 
 # Standard TimeSpan format strings
 
-A standard [TimeSpan](xref:System.TimeSpan) format string uses a single format specifier to define the text representation of a [TimeSpan](xref:System.TimeSpan) value that results from a formatting operation. Any format string that contains more than one character, including white space, is interpreted as a custom [TimeSpan](xref:System.TimeSpan) format string. For more information, see [Custom TimeSpan Format Strings](customtimespan.md).
+A standard [TimeSpan](xref:System.TimeSpan) format string uses a single format specifier to define the text representation of a [TimeSpan](xref:System.TimeSpan) value that results from a formatting operation. Any format string that contains more than one character, including white space, is interpreted as a custom [TimeSpan](xref:System.TimeSpan) format string. For more information, see [Custom TimeSpan Format Strings](custom-timespan.md).
 
-The string representations of [TimeSpan](xref:System.TimeSpan) values are produced by calls to the overloads of the [TimeSpan.ToString](xref:System.TimeSpan.ToString) method, as well as by methods that support composite formatting, such as [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)). For more information, see [Formatting Types](formattingtypes.md) and [Composite Formatting](compositeformat.md). The following example illustrates the use of standard format strings in formatting operations
+The string representations of [TimeSpan](xref:System.TimeSpan) values are produced by calls to the overloads of the [TimeSpan.ToString](xref:System.TimeSpan.ToString) method, as well as by methods that support composite formatting, such as [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)). For more information, see [Formatting Types](formatting-types.md) and [Composite Formatting](composite-format.md). The following example illustrates the use of standard format strings in formatting operations
 
 ```csharp
 using System;
@@ -357,9 +357,9 @@ End Module
 
 ## See Also
 
-[Formatting types](formattingtypes.md)
+[Formatting types](formatting-types.md)
 
-[Composite formatting](compositeformat.md)
+[Composite formatting](composite-format.md)
 
-[Parsing strings](parsingstrings.md)
+[Parsing strings](parsing-strings.md)
 

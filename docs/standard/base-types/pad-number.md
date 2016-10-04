@@ -14,7 +14,7 @@ ms.assetid: a517c066-b11e-4815-826b-9262611eac40
 
 # How to: pad a number with leading zeros
 
-You can add leading zeros to an integer by using the "D" [standard numeric format string](standardnumeric.md) with a precision specifier. You can add leading zeros to both integer and floating-point numbers by using a [custom numeric format string](customnumeric.md). This topic shows how to use both methods to pad a number with leading zeros.
+You can add leading zeros to an integer by using the "D" [standard numeric format string](standard-numeric.md) with a precision specifier. You can add leading zeros to both integer and floating-point numbers by using a [custom numeric format string](custom-numeric.md). This topic shows how to use both methods to pad a number with leading zeros.
 
 ## To pad an integer with leading zeros to a specific length
 
@@ -26,7 +26,7 @@ You can add leading zeros to an integer by using the "D" [standard numeric forma
     
     * To display the integer as a hexadecimal value, call its `ToString(String)` method and pass the string "X*n*" as the value of the format parameter, where *n* represents the minimum length of the string.
     
-  You can also use the format string in a method, such as [Console.WriteLine](xref:System.Console.WriteLine) or [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)), that uses [composite formatting](compositeformat.md).  
+  You can also use the format string in a method, such as [Console.WriteLine](xref:System.Console.WriteLine) or [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)), that uses [composite formatting](composite-format.md).  
   
 The following example formats several integer values with leading zeros so that the total length of the formatted number is at least eight characters.
 
@@ -285,9 +285,9 @@ Next
 
 ## See Also
 
-[Standard numeric format strings](standardnumeric.md)
+[Standard numeric format strings](standard-numeric.md)
 
-[Custom numeric format strings](customnumeric.md)
+[Custom numeric format strings](custom-numeric.md)
 
-[Composite formatting](compositeformat.md)
+[Composite formatting](composite-format.md)
 

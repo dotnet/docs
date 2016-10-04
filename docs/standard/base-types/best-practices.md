@@ -47,7 +47,7 @@ To match unconstrained input, a regular expression must be able to efficiently h
 The last text type is especially problematic for a regular expression that has been written to handle constrained input. If that regular expression also relies on extensive [backtracking](backtracking.md), the regular expression engine can spend an inordinate amount of time (in some cases, many hours or days) processing seemingly innocuous text. 
 
 > [!WARNING]
-> The following example uses a regular expression that is prone to excessive backtracking and that is likely to reject valid email addresses. You should not use it in an email validation routine. If you would like a regular expression that validates email addresses, see [How to: Verify that Strings Are in Valid Email Format](verifyformat.md). 
+> The following example uses a regular expression that is prone to excessive backtracking and that is likely to reject valid email addresses. You should not use it in an email validation routine. If you would like a regular expression that validates email addresses, see [How to: Verify that Strings Are in Valid Email Format](verify-format.md). 
 
 
 For example, consider a very commonly used but extremely problematic regular expression for validating the alias of an email address. The regular expression `^[0-9A-Z]([-.\w]*[0-9A-Z])*$` is written to process what is considered to be a valid email address, which consists of an alphanumeric character, followed by zero or more characters that can be alphanumeric, periods, or hyphens. The regular expression must end with an alphanumeric character. However, as the following example shows, although this regular expression handles valid input easily, its performance is very inefficient when it is processing nearly valid input.
@@ -522,7 +522,7 @@ Pattern | Description
 Ordinarily, the regular expression engine uses linear progression to move through an input string and compare it to a regular expression pattern. However, when indeterminate quantifiers such as __*__, **+**, and **?** are used in a regular expression pattern, the regular expression engine may give up a portion of successful partial matches and return to a previously saved state in order to search for a successful match for the entire pattern. This process is known as backtracking.
 
 > [!NOTE]
-> For more information on backtracking, see [Details of Regular Expression Behavior](regexbehavior.md) and [Backtracking in Regular Expressions](backtracking.md).
+> For more information on backtracking, see [Details of Regular Expression Behavior](regex-behavior.md) and [Backtracking in Regular Expressions](backtracking.md).
  
 Support for backtracking gives regular expressions power and flexibility. It also places the responsibility for controlling the operation of the regular expression engine in the hands of regular expression developers. Because developers are often not aware of this responsibility, their misuse of backtracking or reliance on excessive backtracking often plays the most significant role in degrading regular expression performance. In a worst-case scenario, execution time can double for each additional character in the input string. In fact, by using backtracking excessively, it is easy to create the programmatic equivalent of an endless loop if input nearly matches the regular expression pattern; the regular expression engine may take hours or even days to process a relatively short input string.
 
@@ -1093,8 +1093,8 @@ You can disable captures in one of the following ways:
 
 Title | Description
 ----- | ----------- 
-[Details of regular expression behavior](regexbehavior.md) | Examines the implementation of the regular expression engine in .NET. The topic focuses on the flexibility of regular expressions and explains the developer's responsibility for ensuring the efficient and robust operation of the regular expression engine.
+[Details of regular expression behavior](regex-behavior.md) | Examines the implementation of the regular expression engine in .NET. The topic focuses on the flexibility of regular expressions and explains the developer's responsibility for ensuring the efficient and robust operation of the regular expression engine.
 [Backtracking in regular expressions](backtracking.md) | Explains what backtracking is and how it affects regular expression performance, and examines language elements that provide alternatives to backtracking.
-[Regular expression language - quick reference](quickref.md) | Describes the elements of the regular expression language in .NET and provides links to detailed documentation for each language element.
+[Regular expression language - quick reference](quick-ref.md) | Describes the elements of the regular expression language in .NET and provides links to detailed documentation for each language element.
  
 

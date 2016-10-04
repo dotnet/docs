@@ -55,5 +55,5 @@ Console.WriteLine(MyString.PadRight(20, "-"c))
 
 ## See Also
 
-[Basic string operations](basicstringoperations.md)
+[Basic string operations](basic-string-operations.md)
 

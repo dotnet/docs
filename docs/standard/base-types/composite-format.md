@@ -165,17 +165,17 @@ End Module
 
 ### Format String Component
 
-The optional *formatString* component is a format string that is appropriate for the type of object being formatted. Specify a standard or custom numeric format string if the corresponding object is a numeric value, a standard or custom date and time format string if the corresponding object is a [DateTime](xref:System.DateTime) object, or an [enumeration format string](enumerationformat.md) if the corresponding object is an enumeration value. If *formatString* is not specified, the general ("G") format specifier for a numeric, date and time, or enumeration type is used. The colon is required if *formatString* is specified.
+The optional *formatString* component is a format string that is appropriate for the type of object being formatted. Specify a standard or custom numeric format string if the corresponding object is a numeric value, a standard or custom date and time format string if the corresponding object is a [DateTime](xref:System.DateTime) object, or an [enumeration format string](enumeration-format.md) if the corresponding object is an enumeration value. If *formatString* is not specified, the general ("G") format specifier for a numeric, date and time, or enumeration type is used. The colon is required if *formatString* is specified.
 
 The following table lists types or categories of types in the .NET Framework class library that support a predefined set of format strings, and provides links to the topics that list the supported format strings. Note that string formatting is an extensible mechanism that makes it possible to define new format strings for all existing types as well as to define a set of format strings supported by an application-defined type. For more information, see the [IFormattable](xref:System.IFormattable) and [ICustomFormatter](xref:System.ICustomFormatter) interface topics. 
 
 Type or type category | See
 --------------------- | ---
-Date and time types ([DateTime](xref:System.DateTime), [DateTimeOffset](xref:System.DateTimeOffset)) | [Standard Date and Time Format Strings](standarddatetime.md), [Custom Date and Time Format Strings](customdatetime.md)
-Enumeration types (all types derived from [System.Enum](xref:System.Enum)) | [Enumeration Format Strings](enumerationformat.md)
-Numeric types ([BigInteger](xref:System.Numerics.BigInteger), [Byte](xref:System.Byte), [Decimal](xref:System.Decimal), [Double](xref:System.Double), [Int16](xref:System.Int16), [Int32](xref:System.Int32), [Int64](xref:System.Int64), [SByte](xref:System.SByte), [Single](xref:System.Single), [UInt16](xref:System.UInt16), [UInt32](xref:System.UInt32), [UInt64](xref:System.UInt64)) | [Standard Numeric Format Strings](standardnumeric.md), [Custom Numeric Format Strings](customnumeric.md)
+Date and time types ([DateTime](xref:System.DateTime), [DateTimeOffset](xref:System.DateTimeOffset)) | [Standard Date and Time Format Strings](standard-datetime.md), [Custom Date and Time Format Strings](custom-datetime.md)
+Enumeration types (all types derived from [System.Enum](xref:System.Enum)) | [Enumeration Format Strings](enumeration-format.md)
+Numeric types ([BigInteger](xref:System.Numerics.BigInteger), [Byte](xref:System.Byte), [Decimal](xref:System.Decimal), [Double](xref:System.Double), [Int16](xref:System.Int16), [Int32](xref:System.Int32), [Int64](xref:System.Int64), [SByte](xref:System.SByte), [Single](xref:System.Single), [UInt16](xref:System.UInt16), [UInt32](xref:System.UInt32), [UInt64](xref:System.UInt64)) | [Standard Numeric Format Strings](standard-numeric.md), [Custom Numeric Format Strings](custom-numeric.md)
 [Guid](xref:System.Guid) | [Guid.ToString(String)](xref:System.Guid.ToString(System.String))
-[TimeSpan](xref:System.TimeSpan) | [Standard TimeSpan Format Strings](standardtimespan.md), [Custom TimeSpan Format Strings](customtimespan.md)
+[TimeSpan](xref:System.TimeSpan) | [Standard TimeSpan Format Strings](standard-timespan.md), [Custom TimeSpan Format Strings](custom-timespan.md)
 
 ### Escaping Braces
 
@@ -354,18 +354,18 @@ Console.WriteLine(FormatPrice)
 
 [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))
 
-[Formatting types](formattingtypes.md)
+[Formatting types](formatting-types.md)
 
-[Standard date and time format strings](standarddatetime.md)
+[Standard date and time format strings](standard-datetime.md)
 
-[Custom date and time format strings](customdatetime.md)
+[Custom date and time format strings](custom-datetime.md)
 
-[Enumeration format strings](enumerationformat.md)
+[Enumeration format strings](enumeration-format.md)
 
-[Standard numeric format strings](standardnumeric.md)
+[Standard numeric format strings](standard-numeric.md)
 
-[Custom numeric format strings](customnumeric.md)
+[Custom numeric format strings](custom-numeric.md)
 
-[Standard TimeSpan format strings](standardtimespan.md)
+[Standard TimeSpan format strings](standard-timespan.md)
 
-[Custom TimeSpan format strings](customtimespan.md)
+[Custom TimeSpan format strings](custom-timespan.md)

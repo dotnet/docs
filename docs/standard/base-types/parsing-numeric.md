@@ -14,7 +14,7 @@ ms.assetid: e393430a-731a-49fa-83de-ff7ed52d5704
 
 # Parsing numeric strings in .NET
 
-All numeric types have two static parsing methods, `Parse` and `TryParse`, that you can use to convert the string representation of a number into a numeric type. These methods enable you to parse strings that were produced by using the format strings documented in [Standard Numeric Format Strings](standardnumeric.md) and [Custom Numeric Format Strings](customnumeric.md). By default, the `Parse` and `TryParse` methods can successfully convert strings that contain integral decimal digits only to integer values. They can successfully convert strings that contain integral and fractional decimal digits, group separators, and a decimal separator to floating-point values. The `Parse` method throws an exception if the operation fails, whereas the `TryParse` method returns `false`.
+All numeric types have two static parsing methods, `Parse` and `TryParse`, that you can use to convert the string representation of a number into a numeric type. These methods enable you to parse strings that were produced by using the format strings documented in [Standard Numeric Format Strings](standard-numeric.md) and [Custom Numeric Format Strings](custom-numeric.md). By default, the `Parse` and `TryParse` methods can successfully convert strings that contain integral decimal digits only to integer values. They can successfully convert strings that contain integral and fractional decimal digits, group separators, and a decimal separator to floating-point values. The `Parse` method throws an exception if the operation fails, whereas the `TryParse` method returns `false`.
 
 ## Parsing and Format Providers
 
@@ -317,7 +317,7 @@ End Module
 
 [System.Globalization.NumberStyles](xref:System.Globalization.NumberStyles)
 
-[Parsing strings in .NET](parsingstrings.md)
+[Parsing strings in .NET](parsing-strings.md)
 
-[Formatting types in .NET](formattingtypes.md)
+[Formatting types in .NET](formatting-types.md)
 

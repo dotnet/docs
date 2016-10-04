@@ -550,7 +550,7 @@ For more information about right-to-left matching, see [Regular Expression Optio
 
 ### Positive and negative lookbehind
 
-Positive and negative lookbehind: **(?<**=_subexpression_**)** for positive lookbehind, and **(?<!**_subexpression_**)** for negative lookbehind. This feature is similar to lookahead, which is discussed earlier in this topic. Because the regular expression engine allows complete right-to-left matching, regular expressions allow unrestricted lookbehinds. Positive and negative lookbehind can also be used to avoid nesting quantifiers when the nested subexpression is a superset of an outer expression. Regular expressions with such nested quantifiers often offer poor performance. For example, the following example verifies that a string begins and ends with an alphanumeric character, and that any other character in the string is one of a larger subset. It forms a portion of the regular expression used to validate e-mail addresses; for more information, see [How to: Verify that Strings Are in Valid Email Format](verifyformat.md).
+Positive and negative lookbehind: **(?<**=_subexpression_**)** for positive lookbehind, and **(?<!**_subexpression_**)** for negative lookbehind. This feature is similar to lookahead, which is discussed earlier in this topic. Because the regular expression engine allows complete right-to-left matching, regular expressions allow unrestricted lookbehinds. Positive and negative lookbehind can also be used to avoid nesting quantifiers when the nested subexpression is a superset of an outer expression. Regular expressions with such nested quantifiers often offer poor performance. For example, the following example verifies that a string begins and ends with an alphanumeric character, and that any other character in the string is one of a larger subset. It forms a portion of the regular expression used to validate e-mail addresses; for more information, see [How to: Verify that Strings Are in Valid Email Format](verify-format.md).
 
 ```csharp
 using System;
@@ -623,11 +623,11 @@ Title | Description
 ----- | ----------- 
 [Backtracking](backtracking.md) | Provides information about how regular expression backtracking branches to find alternative matches.
 [Compilation and reuse](compilation.md) | Provides information about compiling and reusing regular expressions to increase performance.
-[Thread safety](threadsafety.md) | Provides information about regular expression thread safety and explains when you should synchronize access to regular expression objects.
-[.NET regular expressions](regularexpressions.md) | Provides an overview of the programming language aspect of regular expressions.
-[The regular expression Object Model](objectmodel.md) | Provides information and code examples illustrating how to use the regular expression classes.
-[Regular expression examples](regexexamples.md) | Contains code examples that illustrate the use of regular expressions in common applications.
-[Regular expression language - quick reference](quickref.md) | Provides information about the set of characters, operators, and constructs that you can use to define regular expressions.
+[Thread safety](thread-safety.md) | Provides information about regular expression thread safety and explains when you should synchronize access to regular expression objects.
+[.NET regular expressions](regular-expressions.md) | Provides an overview of the programming language aspect of regular expressions.
+[The regular expression Object Model](object-model.md) | Provides information and code examples illustrating how to use the regular expression classes.
+[Regular expression examples](regex-examples.md) | Contains code examples that illustrate the use of regular expressions in common applications.
+[Regular expression language - quick reference](quick-ref.md) | Provides information about the set of characters, operators, and constructs that you can use to define regular expressions.
  
 ## Reference
 

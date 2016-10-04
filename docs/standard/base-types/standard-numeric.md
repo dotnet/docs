@@ -16,16 +16,16 @@ ms.assetid: 285faf73-466a-4af0-8eba-7e509958f240
 
 Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form **A**_xx_, where: 
 
-* **A** is a single alphabetic character called the *format specifier*. Any numeric format string that contains more than one alphabetic character, including white space, is interpreted as a custom numeric format string. For more information, see [Custom Numeric Format Strings](customnumeric.md). 
+* **A** is a single alphabetic character called the *format specifier*. Any numeric format string that contains more than one alphabetic character, including white space, is interpreted as a custom numeric format string. For more information, see [Custom Numeric Format Strings](custom-numeric.md). 
 
 * *xx* is an optional integer called the *precision specifier*. The precision specifier ranges from 0 to 99 and affects the number of digits in the result. Note that the precision specifier controls the number of digits in the string representation of a number. It does not round the number itself. To perform a rounding operation, use the [Math.Ceiling](xref:System.Math), [Math.Floor](xref:System.Math), or [Math.Round](xref:System.Math) methods. 
 
 When *precision specifier* controls the number of fractional digits in the result string, the result strings reflect numbers that are rounded away from zero (that is, using [MidpointRounding.AwayFromZero](xref:System.MidpointRounding.AwayFromZero)). 
 
 > [!NOTE]
-> The precision specifier determines the number of digits in the result string. To pad a result string with leading or trailing spaces, use the [composite formatting](compositeformat.md) feature and define an *alignment component* in the format item. 
+> The precision specifier determines the number of digits in the result string. To pad a result string with leading or trailing spaces, use the [composite formatting](composite-format.md) feature and define an *alignment component* in the format item. 
 
-Standard numeric format strings are supported by some overloads of the `ToString` method of all numeric types. For example, you can supply a numeric format string to the [ToString(String)](xref:System.Int32.ToString(System.String)) and [ToString(String, IFormatProvider)](xref:System.Int32.ToString(System.String,System.IFormatProvider)) methods of the [Int32](xref:System.Int32) type. Standard numeric format strings are also supported by the .NET [composite formatting](compositeformat.md) feature, which is used by some `Write` and `WriteLine` methods of the [Console](xref:System.Console) and [StreamWriter](xref:System.IO.StreamWriter) classes, the [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) method, and the [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)) method. The composite format feature allows you to include the string representation of multiple data items in a single string, to specify field width, and to align numbers in a field. For more information, see [Composite Formatting](compositeformat.md). 
+Standard numeric format strings are supported by some overloads of the `ToString` method of all numeric types. For example, you can supply a numeric format string to the [ToString(String)](xref:System.Int32.ToString(System.String)) and [ToString(String, IFormatProvider)](xref:System.Int32.ToString(System.String,System.IFormatProvider)) methods of the [Int32](xref:System.Int32) type. Standard numeric format strings are also supported by the .NET [composite formatting](composite-format.md) feature, which is used by some `Write` and `WriteLine` methods of the [Console](xref:System.Console) and [StreamWriter](xref:System.IO.StreamWriter) classes, the [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) method, and the [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)) method. The composite format feature allows you to include the string representation of multiple data items in a single string, to specify field width, and to align numbers in a field. For more information, see [Composite Formatting](composite-format.md). 
 
 The following table describes the standard numeric format specifiers and displays sample output produced by each format specifier. See the [Notes](#Notes) section for additional information about using standard numeric format strings, and the [Example](#Example) section for a comprehensive illustration of their use.
 
@@ -60,7 +60,7 @@ A standard numeric format string can be used to define the formatting of a numer
   ' Displays $123.46
   ```
   
-* It can be supplied as the *formatString* argument in a format item used with such methods as [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)), [Console.WriteLine](xref:System.Console.WriteLine), and [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)). For more information, see [Composite Formatting](compositeformat.md). The following example uses a format item to insert a currency value in a string.
+* It can be supplied as the *formatString* argument in a format item used with such methods as [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)), [Console.WriteLine](xref:System.Console.WriteLine), and [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)). For more information, see [Composite Formatting](composite-format.md). The following example uses a format item to insert a currency value in a string.
 
   ```csharp
   decimal value = 123.456m;
@@ -716,10 +716,10 @@ End Module
 
 [System.Globalization.NumberFormatInfo](xref:System.Globalization.NumberFormatInfo)
 
-[Custom numeric format strings](customnumeric.md)
+[Custom numeric format strings](custom-numeric.md)
 
-[Formatting types](formattingtypes.md)
+[Formatting types](formatting-types.md)
 
-[How to: pad a number with leading zeros](padnumber.md)
+[How to: pad a number with leading zeros](pad-number.md)
 
-[Composite formatting](compositeformat.md)
+[Composite formatting](composite-format.md)

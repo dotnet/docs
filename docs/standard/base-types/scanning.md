@@ -125,7 +125,7 @@ To address these problems, the [Regex](xref:System.Text.RegularExpressions.Regex
 
 ## See Also
 
-[.NET regular expressions](regularexpressions.md)
+[.NET regular expressions](regular-expressions.md)
 
-[Regular expression examples](regexexamples.md)
+[Regular expression examples](regex-examples.md)
 

@@ -20,21 +20,21 @@ This section contains code examples that illustrate the use of regular expressio
 
 [Regular expression example: scanning for HREFs](scanning.md) - Provides an example that searches an input string and prints out all the href="…" values and their locations in the string.
 
-[Regular expression example: changing date formats](changingformats.md) - Provides an example that replaces dates in the form mm/dd/yy with dates in the form dd-mm-yy.
+[Regular expression example: changing date formats](changing-formats.md) - Provides an example that replaces dates in the form mm/dd/yy with dates in the form dd-mm-yy.
 
-[How to: extract a protocol and port number from a URL](extractprotocol.md) - Provides an example that extracts a protocol and port number from a string that contains a URL. For example, "http://www.contoso.com:8080/letters/readme.html" returns "http:8080".
+[How to: extract a protocol and port number from a URL](extract-protocol.md) - Provides an example that extracts a protocol and port number from a string that contains a URL. For example, "http://www.contoso.com:8080/letters/readme.html" returns "http:8080".
 
-[How to: strip invalid characters from a string](stripcharacters.md) - Provides an example that strips invalid non-alphanumeric characters from a string.
+[How to: strip invalid characters from a string](strip-characters.md) - Provides an example that strips invalid non-alphanumeric characters from a string.
 
-[How to: verify that strings are in valid email format](verifyformat.md) - Provides an example that you can use to verify that a string is in valid email format.
+[How to: verify that strings are in valid email format](verify-format.md) - Provides an example that you can use to verify that a string is in valid email format.
 
-[.NET regular expressions](regularexpressions.md) - Provides an overview of the programming language aspect of regular expressions.
+[.NET regular expressions](regular-expressions.md) - Provides an overview of the programming language aspect of regular expressions.
 
-[The regular expression object model](objectmodel.md) - Describes the regular expression classes contained in the `System.Text.RegularExpression` namespace and provides examples of their use.
+[The regular expression object model](object-model.md) - Describes the regular expression classes contained in the `System.Text.RegularExpression` namespace and provides examples of their use.
 
-[Details of regular expression behavior](regexbehavior.md) - Provides information about the capabilities and behavior of .NET regular expressions.
+[Details of regular expression behavior](regex-behavior.md) - Provides information about the capabilities and behavior of .NET regular expressions.
 
-[Regular expression language - quick reference](quickref.md) - Provides information on the set of characters, operators, and constructs that you can use to define regular expressions.
+[Regular expression language - quick reference](quick-ref.md) - Provides information on the set of characters, operators, and constructs that you can use to define regular expressions.
 
 ## Reference
 

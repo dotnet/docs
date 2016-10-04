@@ -101,7 +101,7 @@ Console.WriteLine(MyStringBuilder)
 
 ### AppendFormat
 
-The [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)) method adds text to the end of the [StringBuilder](xref:System.Text.StringBuilder) object. It supports the composite formatting feature (for more information, see [Composite Formatting](compositeformat.md)) by calling the [IFormattable](xref:System.IFormattable) implementation of the object or objects to be formatted. Therefore, it accepts the standard format strings for numeric, date and time, and enumeration values, the custom format strings for numeric and date and time values, and the format strings defined for custom types. (For information about formatting, see [Formatting Types](formattingtypes.md).) You can use this method to customize the format of variables and append those values to a [StringBuilder](xref:System.Text.StringBuilder). The following example uses the AppendFormat method to place an integer value formatted as a currency value at the end of a [StringBuilder](xref:System.Text.StringBuilder) object.
+The [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)) method adds text to the end of the [StringBuilder](xref:System.Text.StringBuilder) object. It supports the composite formatting feature (for more information, see [Composite Formatting](composite-format.md)) by calling the [IFormattable](xref:System.IFormattable) implementation of the object or objects to be formatted. Therefore, it accepts the standard format strings for numeric, date and time, and enumeration values, the custom format strings for numeric and date and time values, and the format strings defined for custom types. (For information about formatting, see [Formatting Types](formatting-types.md).) You can use this method to customize the format of variables and append those values to a [StringBuilder](xref:System.Text.StringBuilder). The following example uses the AppendFormat method to place an integer value formatted as a currency value at the end of a [StringBuilder](xref:System.Text.StringBuilder) object.
 
 ```csharp
 int MyInt = 25; 
@@ -244,6 +244,6 @@ End Module
 
 [System.Text.StringBuilder](xref:System.Text.StringBuilder)
 
-[Basic string operations](basicstringoperations.md)
+[Basic string operations](basic-string-operations.md)
 
-[Formatting types](formattingtypes.md)
+[Formatting types](formatting-types.md)

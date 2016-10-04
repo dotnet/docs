@@ -28,7 +28,7 @@ Method name | Use
 
 To compare strings of mixed case to determine whether they are equal, their, call one of the overloads of the [String](xref:System) `Equals` method with a *comparisonType* parameter, and provide a value of either [StringComparison.CurrentCultureIgnoreCase](xref:System.StringComparison.CurrentCultureIgnoreCase) or [StringComparison.OrdinalIgnoreCase](xref:System.StringComparison.OrdinalIgnoreCase) for the *comparisonType* argument. 
 
-For more information, see [Best Practices for Using Strings](bestpractices.md). 
+For more information, see [Best Practices for Using Strings](best-practices.md). 
 
 ## ToUpper
 
@@ -68,4 +68,4 @@ Console.WriteLine(MyString.ToLower())
 
 ## See Also
 
-[Basic string operations](basicstringoperations.md)
+[Basic string operations](basic-string-operations.md)

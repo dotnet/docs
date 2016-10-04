@@ -180,5 +180,5 @@ Console.WriteLine("{0} seconds", dateValue.ToString("s.ffff"))
 
 [System.Globalization.DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo)
 
-[Custom date and time format strings](customdatetime.md)
+[Custom date and time format strings](custom-datetime.md)
 

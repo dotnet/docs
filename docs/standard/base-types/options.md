@@ -1606,7 +1606,7 @@ Thread.CurrentThread.CurrentCulture = defaultCulture
 ```
 
 > [!NOTE]
->   For more information about string comparisons that are case-sensitive and that use the invariant culture, see [Best Practices for Using Strings](bestpractices.md).
+>   For more information about string comparisons that are case-sensitive and that use the invariant culture, see [Best Practices for Using Strings](best-practices.md).
  
 Instead of using the case-insensitive comparisons of the current culture, you can specify the [RegexOptions.CultureInvariant](xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant) option to ignore cultural differences in language and to use the conventions of the invariant culture.
 
@@ -1657,5 +1657,5 @@ Thread.CurrentThread.CurrentCulture = defaultCulture
 
 ## See Also
 
-[Regular expression language - quick reference](quickref.md)
+[Regular expression language - quick reference](quick-ref.md)
 

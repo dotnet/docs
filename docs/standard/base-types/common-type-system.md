@@ -527,7 +527,7 @@ A derived type inherits all members of its base type; that is, these members are
 
 ## See Also
 
-[Type Conversion in the .NET Framework](typeconversion.md)
+[Type Conversion in the .NET Framework](type-conversion.md)
 
 
 

@@ -67,5 +67,5 @@ Type | Can be converted to
 
 [System.Convert](xref:System.Convert)
 
-[Type Conversion](typeconversion.md)
+[Type Conversion](type-conversion.md)
 

@@ -670,9 +670,9 @@ Pattern | Description
  
 ## See Also
 
-[.NET regular expressions](regularexpressions.md)
+[.NET regular expressions](regular-expressions.md)
 
-[Regular expression language - quick reference](quickref.md)
+[Regular expression language - quick reference](quick-ref.md)
 
 [Quantifiers in regular expressions](quantifiers.md)
 

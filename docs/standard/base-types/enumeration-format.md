@@ -152,5 +152,5 @@ Console.WriteLine("The value of myColor is 0x{0}.", _
 
 ## See Also
 
-[Formatting types](formattingtypes.md)
+[Formatting types](formatting-types.md)
 

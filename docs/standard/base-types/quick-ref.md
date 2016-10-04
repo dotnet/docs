@@ -14,7 +14,7 @@ ms.assetid: 8c5dee8c-7bc7-4e6e-aff1-986965c4d98e
 
 # Regular expression language - quick reference
 
-A regular expression is a pattern that the regular expression engine attempts to match in input text. A pattern consists of one or more character literals, operators, or constructs. For a brief introduction, see [Regular Expressions in .NET](regularexpressions.md). 
+A regular expression is a pattern that the regular expression engine attempts to match in input text. A pattern consists of one or more character literals, operators, or constructs. For a brief introduction, see [Regular Expressions in .NET](regular-expressions.md). 
 
 Each section in this quick reference lists a particular category of characters, operators, and constructs that you can use to define regular expressions: 
 
@@ -207,11 +207,11 @@ Construct | Definition | Example
 
 [Regex](xref:System.Text.RegularExpressions.Regex)
 
-[Regular expressions in .NET](regularexpressions.md)
+[Regular expressions in .NET](regular-expressions.md)
 
-[The regular expression object model](objectmodel.md)
+[The regular expression object model](object-model.md)
 
-[Regular expression examples](regexexamples.md)
+[Regular expression examples](regex-examples.md)
 
 [Download in Word (.docx) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)
     

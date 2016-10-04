@@ -689,7 +689,7 @@ End Try
 '       42.72 converted to 43.
 ```
 
-For a table that lists both the widening and narrowing conversions supported by the [Convert](xref:System.Convert) class, see [Type Conversion Tables](conversiontables.md).
+For a table that lists both the widening and narrowing conversions supported by the [Convert](xref:System.Convert) class, see [Type Conversion Tables](conversion-tables.md).
 
 ### Custom Conversions with the ChangeType Method
 
@@ -1220,5 +1220,5 @@ For more information about using type converters to perform conversions, see [Sy
 
 [IConvertible](xref:System.IConvertible)
 
-[Type Conversion Tables](conversiontables.md)
+[Type Conversion Tables](conversion-tables.md)
 

@@ -72,9 +72,9 @@ Console.WriteLine("{0:G}", MyDays)
 
 ## See Also
 
-[Parsing strings in .NET](parsingstrings.md)
+[Parsing strings in .NET](parsing-strings.md)
 
-[Formatting types in .NET](formattingtypes.md)
+[Formatting types in .NET](formatting-types.md)
 
-[Type conversion in .NET](typeconversion.md)
+[Type conversion in .NET](type-conversion.md)
 

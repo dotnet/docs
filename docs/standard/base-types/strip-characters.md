@@ -63,6 +63,6 @@ The regular expression pattern `[^\w\.@-]` matches any character that is not a w
 
 ## See Also
 
-[.NET regular expressions](regularexpressions.md)
+[.NET regular expressions](regular-expressions.md)
 
-[Regular expression examples](regexexamples.md)
+[Regular expression examples](regex-examples.md)

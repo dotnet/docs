@@ -14,9 +14,9 @@ ms.assetid: 7b1c16ee-956f-4e9c-8502-c3dd6598c51d
 
 # Custom numeric format strings
 
-You can create a custom numeric format string, which consists of one or more custom numeric specifiers, to define how to format numeric data. A custom numeric format string is any format string that is not a [standard numeric format string](standardnumeric.md). 
+You can create a custom numeric format string, which consists of one or more custom numeric specifiers, to define how to format numeric data. A custom numeric format string is any format string that is not a [standard numeric format string](standard-numeric.md). 
 
-Custom numeric format strings are supported by some overloads of the `ToString` method of all numeric types. For example, you can supply a numeric format string to the [ToString(String)](xref:System.Int32.ToString(System.String)) and [ToString(String, IFormatProvider)](xref:System.Int32.ToString(System.String,System.IFormatProvider)) methods of the [Int32](xref:System.Int32) type. Custom numeric format strings are also supported by the .NET Framework [composite formatting](compositeformat.md) feature, which is used by some `Write` and `WriteLine` methods of the [Console](xref:System.Console) and [StreamWriter](xref:System.IO.StreamWriter) classes, the [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) method, and the [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)) method.
+Custom numeric format strings are supported by some overloads of the `ToString` method of all numeric types. For example, you can supply a numeric format string to the [ToString(String)](xref:System.Int32.ToString(System.String)) and [ToString(String, IFormatProvider)](xref:System.Int32.ToString(System.String,System.IFormatProvider)) methods of the [Int32](xref:System.Int32) type. Custom numeric format strings are also supported by the .NET Framework [composite formatting](composite-format.md) feature, which is used by some `Write` and `WriteLine` methods of the [Console](xref:System.Console) and [StreamWriter](xref:System.IO.StreamWriter) classes, the [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) method, and the [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)) method.
 
 The following table describes the custom numeric format specifiers and displays sample output produced by each format specifier. See the [Notes](#Notes) section for additional information about using custom numeric format strings, and the [Example](#Example) section for a comprehensive illustration of their use.
 
@@ -217,7 +217,7 @@ Console.WriteLine(String.Format("{0:(###) ###-####}", value))
 ' Displays (123) 456-7890
 ```
 
-To return a result string in which absent digits or leading zeroes are replaced by spaces, use the [composite formatting](compositeformat.md) feature and specify a field width, as the following example illustrates.
+To return a result string in which absent digits or leading zeroes are replaced by spaces, use the [composite formatting](composite-format.md) feature and specify a field width, as the following example illustrates.
 
 ```csharp
 using System;
@@ -635,11 +635,11 @@ Console.WriteLine(value2)
 
 [System.Globalization.NumberFormatInfo](xref:System.Globalization.NumberFormatInfo)
 
-[Formatting types](formattingtypes.md)
+[Formatting types](formatting-types.md)
 
-[Standard numeric format strings](standardnumeric.md)
+[Standard numeric format strings](standard-numeric.md)
 
-[How to: pad a number with leading zeros](padnumber.md)
+[How to: pad a number with leading zeros](pad-number.md)
 
-[Composite formatting](compositeformat.md)
+[Composite formatting](composite-format.md)
 

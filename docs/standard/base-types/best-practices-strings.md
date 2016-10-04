@@ -1092,4 +1092,4 @@ However, if you replace the [CultureInfo.CurrentCulture](xref:System.Globalizati
 
 ## See Also
 
-[Manipulating strings](manipulatingstrings.md)
+[Manipulating strings](manipulating-strings.md)

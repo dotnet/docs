@@ -14,7 +14,7 @@ ms.assetid: e61514cd-5329-4eb8-b122-482fffb54ab7
 
 # Parsing date and time strings in .NET
 
-Parsing methods convert the string representation of a date and time to an equivalent [DateTime](xref:System.DateTime) object. The [Parse](xref:System.DateTime.Parse(System.String)) and [TryParse](xref:System.DateTime.TryParse(System.String,System.DateTime@)) methods convert any of several common representations of a date and time. The [ParseExact](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)) and [TryParseExact](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)) methods convert a string representation that conforms to the pattern specified by a date and time format string. (See the topics on [standard date and time format strings](standarddatetime.md) and [custom date and time format strings](customdatetime.md).) 
+Parsing methods convert the string representation of a date and time to an equivalent [DateTime](xref:System.DateTime) object. The [Parse](xref:System.DateTime.Parse(System.String)) and [TryParse](xref:System.DateTime.TryParse(System.String,System.DateTime@)) methods convert any of several common representations of a date and time. The [ParseExact](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)) and [TryParseExact](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)) methods convert a string representation that conforms to the pattern specified by a date and time format string. (See the topics on [standard date and time format strings](standard-datetime.md) and [custom date and time format strings](custom-datetime.md).) 
 
 Parsing is influenced by the properties of a format provider that supplies information such as the strings used for date and time separators, and the names of months, days, and eras. The format provider is the current [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) object, which is provided implicitly by the current thread culture or explicitly by the [IFormatProvider](xref:System.IFormatProvider) parameter of a parsing method. For the [IFormatProvider](xref:System.IFormatProvider) parameter, specify a [CultureInfo](xref:System.Globalization.CultureInfo) object, which represents a culture, or a [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) object. 
 
@@ -121,7 +121,7 @@ End Module
 
 ## ParseExact
 
-The [DateTime.ParseExact]((xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)) method converts a string that conforms to a specified string pattern to a `DateTime` object. When a string that is not of the form specified is passed to this method, a [FormatException](xref:System.FormatException) is thrown. You can specify one of the standard date and time format specifiers or a limited combination of the custom date and time format specifiers. Using the custom format specifiers, it is possible for you to construct a custom recognition string. For an explanation of the specifiers, see the topics on [standard date and time format strings](standarddatetime.md) and [custom date and time format strings](customdatetime.md). 
+The [DateTime.ParseExact]((xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)) method converts a string that conforms to a specified string pattern to a `DateTime` object. When a string that is not of the form specified is passed to this method, a [FormatException](xref:System.FormatException) is thrown. You can specify one of the standard date and time format specifiers or a limited combination of the custom date and time format specifiers. Using the custom format specifiers, it is possible for you to construct a custom recognition string. For an explanation of the specifiers, see the topics on [standard date and time format strings](standard-datetime.md) and [custom date and time format strings](custom-datetime.md). 
 
 Each overload of the [ParseExact](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)) method also has an [IFormatProvider](xref:System.IFormatProvider) parameter that typically provides culture-specific information about the formatting of the string. Typically, this [IFormatProvider](xref:System.IFormatProvider) object is a [CultureInfo](xref:System.Globalization.CultureInfo) object that represents a standard culture or a [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) object that is returned by the [CultureInfo.DateTimeFormat](xref:System.Globalization.CultureInfo.DateTimeFormat) property. However, unlike the other date and time parsing functions, this method also supports an [IFormatProvider](xref:System.IFormatProvider) that defines a non-standard date and time format. 
 
@@ -179,9 +179,9 @@ End Module
 
 ## See Also
 
-[Parsing strings in .NET](parsingstrings.md)
+[Parsing strings in .NET](parsing-strings.md)
 
-[Formatting types in .NET](formattingtypes.md)
+[Formatting types in .NET](formatting-types.md)
 
-[Type conversion in .NET](typeconversion.md)
+[Type conversion in .NET](type-conversion.md)
 

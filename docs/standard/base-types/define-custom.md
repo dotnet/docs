@@ -16,9 +16,9 @@ ms.assetid: 9b184114-6612-4c1a-a2db-2e24e65b0f77
 
 .NET gives you extensive control over the string representation of numeric values. It supports the following features for customizing the format of numeric values:
 
-* Standard numeric format strings, which provide a predefined set of formats for converting numbers to their string representation. You can use them with any numeric formatting method, such as [Decimal.ToString(String](xref:System.Decimal.ToString(System.String)), that has a format parameter. For details, see [Standard numeric format strings](standardnumeric.md).
+* Standard numeric format strings, which provide a predefined set of formats for converting numbers to their string representation. You can use them with any numeric formatting method, such as [Decimal.ToString(String](xref:System.Decimal.ToString(System.String)), that has a format parameter. For details, see [Standard numeric format strings](standard-numeric.md).
 
-* Custom numeric format strings, which provide a set of symbols that can be combined to define custom numeric format specifiers. They can also be used with any numeric formatting method, such as [Decimal.ToString(String](xref:System.Decimal.ToString(System.String)), that has a format parameter. For details, see [Custom numeric format strings](customnumeric.md).
+* Custom numeric format strings, which provide a set of symbols that can be combined to define custom numeric format specifiers. They can also be used with any numeric formatting method, such as [Decimal.ToString(String](xref:System.Decimal.ToString(System.String)), that has a format parameter. For details, see [Custom numeric format strings](custom-numeric.md).
 
 * Custom [CultureInfo](xref:System.Globalization.CultureInfo) or [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) objects, which define the symbols and format patterns used in displaying the string representations of numeric values. You can use them with any numeric formatting method, such as [ToString](xref:System.Int32.ToString(System.IFormatProvider)), that has a *provider* parameter. Typically, the *provider* parameter is used to specify culture-specific formatting.
 
@@ -239,4 +239,4 @@ In the case of this example, the method that implements [ICustomFormatter.Format
 
 ## See Also
 
-[Performing formatting operations](performingformattingoperations.md)
+[Performing formatting operations](performing-formatting-operations.md)

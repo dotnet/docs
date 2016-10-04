@@ -18,17 +18,17 @@ ms.assetid: da3c277e-b06e-48bd-ae1f-1e7e4240b93e
 
 ## In This Section
 
-[Best Practices for Using Strings](bestpracticesstrings.md)  - Examines string-sorting, comparison, and casing methods in .NET, and provides recommendations for selecting a string-handling method . 
+[Best Practices for Using Strings](best-practices-strings.md)  - Examines string-sorting, comparison, and casing methods in .NET, and provides recommendations for selecting a string-handling method . 
 
-[Regular Expressions](regularexpressions.md) - Provides detailed information about .NET regular expressions, including language elements, regular expression behavior, and examples.
+[Regular Expressions](regular-expressions.md) - Provides detailed information about .NET regular expressions, including language elements, regular expression behavior, and examples.
 
-[Basic String Operations](basicstringoperations.md) - Describes string operations provided by the @System.String and @System.Text.StringBuilder classes, including creating new strings from arrays of bytes, comparing string values, and modifying existing strings.
+[Basic String Operations](basic-string-operations.md) - Describes string operations provided by the @System.String and @System.Text.StringBuilder classes, including creating new strings from arrays of bytes, comparing string values, and modifying existing strings.
 
-[Character Encoding in .NET](characterencoding.md) - Describes how to encode and decode character formats such as Unicode.
+[Character Encoding in .NET](character-encoding.md) - Describes how to encode and decode character formats such as Unicode.
 
-[Type Conversion](typeconversion.md) - Describes how to convert from one type to another.
+[Type Conversion](type-conversion.md) - Describes how to convert from one type to another.
 
-[Formatting Types](formattingtypes.md) - Describes how to format strings using the string format specifiers.
+[Formatting Types](formatting-types.md) - Describes how to format strings using the string format specifiers.
 
-[Parsing Strings](parsingstrings.md) - Describes how to convert strings into types.
+[Parsing Strings](parsing-strings.md) - Describes how to convert strings into types.
 

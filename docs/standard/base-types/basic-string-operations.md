@@ -18,7 +18,7 @@ Applications often respond to users by constructing messages based on user input
 
 ## In This Section
 
-[Creating new strings](creatingnew.md) - Describes basic ways to convert objects into strings and to combine strings.
+[Creating new strings](creating-new.md) - Describes basic ways to convert objects into strings and to combine strings.
 
 [Trimming and removing characters](trimming.md) - Describes how to trim or remove characters in a string. 
 
@@ -26,16 +26,16 @@ Applications often respond to users by constructing messages based on user input
 
 [Comparing strings](comparing.md) - Describes how to compare the contents of two or more strings.
 
-[Changing case](changingcase.md) - Describes how to change the case of characters within a string.
+[Changing case](changing-case.md) - Describes how to change the case of characters within a string.
 
 [Using the StringBuilder class](stringbuilder.md) - Describes how to create and modify dynamic string objects with the [StringBuilder](xref:System.Text.StringBuilder) class.
 
-[How to: Perform basic string manipulations](basicmanipulations.md) - Demonstrates the use of basic string operations.
+[How to: Perform basic string manipulations](basic-manipulations.md) - Demonstrates the use of basic string operations.
 
 ## Related Sections
 
-[Type conversion](typeconversion.md) - Describes how to convert from one type to another.
+[Type conversion](type-conversion.md) - Describes how to convert from one type to another.
 
-[Formatting types](formattingtypes.md) - Describes how to format strings using the string format specifiers.
+[Formatting types](formatting-types.md) - Describes how to format strings using the string format specifiers.
 
 

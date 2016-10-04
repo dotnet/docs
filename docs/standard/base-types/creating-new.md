@@ -38,7 +38,7 @@ Method name | Use
 
 ### Format
 
-You can use the `String.Format` method to create formatted strings and concatenate strings representing multiple objects. This method automatically converts any passed object into a string. For example, if your application must display an [Int32](xref:System.Int32) value and a [DateTime](xref:System.DateTime) value to the user, you can easily construct a string to represent these values using the `Format` method. For information about formatting conventions used with this method, see the section on [composite formatting](compositeformat.md).
+You can use the `String.Format` method to create formatted strings and concatenate strings representing multiple objects. This method automatically converts any passed object into a string. For example, if your application must display an [Int32](xref:System.Int32) value and a [DateTime](xref:System.DateTime) value to the user, you can easily construct a string to represent these values using the `Format` method. For information about formatting conventions used with this method, see the section on [composite formatting](composite-format.md).
 
 The following example uses the `Format` method to create a string that uses an integer variable.
 
@@ -155,7 +155,7 @@ Console.WriteLine("The new character array: {0}", New String(charArray))
 
 ## See Also
 
-[Basic string operations](basicstringoperations.md)
+[Basic string operations](basic-string-operations.md)
 
-[Composite formatting](compositeformat.md)
+[Composite formatting](composite-format.md)
 

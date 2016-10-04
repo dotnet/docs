@@ -1207,7 +1207,5 @@ End Module
 
 ## See Also
 
-[Regular expression language - quick reference](quickref.md)
-
 [Regular expression options](options.md)
 

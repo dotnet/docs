@@ -14,7 +14,7 @@ ms.assetid: 141d5c94-08db-469c-8a33-708c0d3bba42
 
 # How to: perform basic string manipulations
 
-The following example uses some of the methods discussed in the [Basic string operations](basicstringoperations.md) topics to construct a class that performs string manipulations in a manner that might be found in a real-world application. The `MailToData` class stores the name and address of an individual in separate properties and provides a way to combine the `City`, `State`, and `Zip` fields into a single string for display to the user. Furthermore, the class allows the user to enter the city, state, and ZIP Code information as a single string; the application automatically parses the single string and enters the proper information into the corresponding property.
+The following example uses some of the methods discussed in the [Basic string operations](basic-string-operations.md) topics to construct a class that performs string manipulations in a manner that might be found in a real-world application. The `MailToData` class stores the name and address of an individual in separate properties and provides a way to combine the `City`, `State`, and `Zip` fields into a single string for display to the user. Furthermore, the class allows the user to enter the city, state, and ZIP Code information as a single string; the application automatically parses the single string and enters the proper information into the corresponding property.
 
 For simplicity, this example uses a console application with a command-line interface.
 
@@ -299,4 +299,4 @@ When the preceding code is executed, the user is asked to enter his or her name 
 
 ## See Also
 
-[Basic string operations](basicstringoperations.md)
+[Basic string operations](basic-string-operations.md)

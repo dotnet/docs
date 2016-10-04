@@ -200,7 +200,7 @@ Both methods are useful when used in conjunction with the [String.Remove](xref:S
 
 ## See Also
 
-[Basic string operations](basicstringoperations.md)
+[Basic string operations](basic-string-operations.md)
 
 
 

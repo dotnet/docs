@@ -1,4 +1,4 @@
----
+ ---
 title: Custom date and time format strings
 description: Custom date and time format strings
 keywords: .NET, .NET Core
@@ -14,7 +14,7 @@ ms.assetid: 45f286f5-92c9-4150-957c-fa6d394bc29b
 
 # Custom date and time format strings
 
-A date and time format string defines the text representation of a [DateTime](xref:System.DateTime) or [DateTimeOffset](xref:System.DateTimeOffset) value that results from a formatting operation . It can also define the representation of a date and time value that is required in a parsing operation in order to successfully convert the string to a date and time. A custom format string consists of one or more custom date and time format specifiers. Any string that is not a [standard date and time format string](standarddatetime.md) is interpreted as a custom date and time format string. 
+A date and time format string defines the text representation of a [DateTime](xref:System.DateTime) or [DateTimeOffset](xref:System.DateTimeOffset) value that results from a formatting operation . It can also define the representation of a date and time value that is required in a parsing operation in order to successfully convert the string to a date and time. A custom format string consists of one or more custom date and time format specifiers. Any string that is not a [standard date and time format string](standard-datetime.md) is interpreted as a custom date and time format string. 
 
 Custom date and time format strings can be used with both [DateTime](xref:System.DateTime) and [DateTimeOffset](xref:System.DateTimeOffset)  values.
 
@@ -1923,7 +1923,7 @@ The result string produced by many of the custom date and time format specifiers
 
 [System.IFormatProvider](xref:System.IFormatProvider)
 
-[Formatting types](formattingtypes.md)
+[Formatting types](formatting-types.md)
 
-[Standard date and time format strings](standarddatetime.md)
+[Standard date and time format strings](standard-datetime.md)
 

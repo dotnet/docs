@@ -22,21 +22,21 @@ The centerpiece of text processing with regular expressions is the regular expre
 
 * The regular expression pattern to identify in the text. 
   
-  In .NET, regular expression patterns are defined by a special syntax or language, which is compatible with Perl 5 regular expressions and adds some additional features such as right-to-left matching. For more information, see [Regular Expression Language - Quick Reference](quickref.md).
+  In .NET, regular expression patterns are defined by a special syntax or language, which is compatible with Perl 5 regular expressions and adds some additional features such as right-to-left matching. For more information, see [Regular Expression Language - Quick Reference](quick-ref.md).
   
 * The text to parse for the regular expression pattern.
 
 The methods of the [Regex](xref:System.Text.RegularExpressions.Regex) class let you perform the following operations:
 
-* Determine whether the regular expression pattern occurs in the input text by calling the [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String)) method. For an example that uses the [IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String)) method for validating text, see [How to: Verify that Strings Are in Valid Email Format](verifyformat.md).
+* Determine whether the regular expression pattern occurs in the input text by calling the [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String)) method. For an example that uses the [IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String)) method for validating text, see [How to: Verify that Strings Are in Valid Email Format](verify-format.md).
 
 * Retrieve one or all occurrences of text that matches the regular expression pattern by calling the [Regex.Match](xref:System.Text.RegularExpressions.Regex.Match(System.String)) or [Regex.Matches](xref:System.Text.RegularExpressions.Regex.Matches(System.String)) method. The former method returns a [System.Text.RegularExpressions.Match](xref:System.Text.RegularExpressions.Match) object that provides information about the matching text. The latter returns a [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) object that contains one [System.Text.RegularExpressions.Match](xref:System.Text.RegularExpressions.Match) object for each match found in the parsed text. 
 
-* Replace text that matches the regular expression pattern by calling the [Regex.Replace](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String)) method. For examples that use the [Replace](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String)) method to change date formats and remove invalid characters from a string, see [How to: Strip Invalid Characters from a String](stripcharacters.md) and [Regular Expression Example: Changing Date Formats](changingformats.md).
+* Replace text that matches the regular expression pattern by calling the [Regex.Replace](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String)) method. For examples that use the [Replace](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String)) method to change date formats and remove invalid characters from a string, see [How to: Strip Invalid Characters from a String](strip-characters.md) and [Regular Expression Example: Changing Date Formats](changing-formats.md).
 
-For an overview of the regular expression object model, see [The Regular Expression Object Model](objectmodel.md).
+For an overview of the regular expression object model, see [The Regular Expression Object Model](object-model.md).
 
-For more information about the regular expression language, see [Regular Expression Language - Quick Reference](quickref.md).
+For more information about the regular expression language, see [Regular Expression Language - Quick Reference](quick-ref.md).
 
 ## Regular Expression Examples
 
@@ -294,10 +294,10 @@ Syntax | Meaning
 
 Title | Description
 ----- | -----------
-[Regular expression language - quick reference](quickref.md) | Provides information on the set of characters, operators, and constructs that you can use to define regular expressions.
-[The regular expression object model](objectmodel.md) | Provides information and code examples that illustrate how to use the regular expression classes.
-[Details of regular expression behavior](regexbehavior.md) | Provides information about the capabilities and behavior of .NETregular expressions.
-[Regular expression examples](regexexamples.md) | Provides code examples that illustrate typical uses of regular expressions.
+[Regular expression language - quick reference](quick-ref.md) | Provides information on the set of characters, operators, and constructs that you can use to define regular expressions.
+[The regular expression object model](object-model.md) | Provides information and code examples that illustrate how to use the regular expression classes.
+[Details of regular expression behavior](regex-behavior.md) | Provides information about the capabilities and behavior of .NETregular expressions.
+[Regular expression examples](regex-examples.md) | Provides code examples that illustrate typical uses of regular expressions.
 
 
 ## Reference

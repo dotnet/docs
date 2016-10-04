@@ -4,7 +4,7 @@ description: Get an overview of the new features coming in the upcoming version 
 keywords: C#, .NET, .NET Core, Latest Features, What's New
 author:  BillWagner
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -13,6 +13,7 @@ ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 ---
 
 # 🔧 What's new in C# 7
+
 
 ## `out` variables
 

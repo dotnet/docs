@@ -1,6 +1,8 @@
 # [Welcome](welcome.md)
 # [About .NET](about/index.md)
 ## [.NET Products](about/products.md)
+
+<!-- Start of C# Content -->
 # [C# Guide](csharp/index.md)
 ## [🔧 Getting Started](csharp/getting-started/index.md)
 ### [🔧 Getting started with Visual Studio](csharp/getting-started/with-visual-studio.md)
@@ -82,6 +84,8 @@
 
     Or, should this instead point to an online version of the C# Language spec? 
 -->
+
+<!-- End of C# Content -->
 
 <!-- F# Content -->
 # [F# Guide](fsharp/index.md)

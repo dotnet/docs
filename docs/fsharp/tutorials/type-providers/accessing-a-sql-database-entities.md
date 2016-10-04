@@ -206,22 +206,22 @@ Nothing is changed in the database until you call `System.Data.Objects.ObjectCon
 
 ```fsharp
 let deleteInstructor(lastName, firstName) =
-query {
-  for person in context.People do
-  where (person.FirstName = firstName &&
-  person.LastName = lastName)
-  select person
-} |> Seq.iter (fun person->
-                  query {
-                    for officeAssignment in context.OfficeAssignments do
-                    where (officeAssignment.Person.PersonID = person.PersonID)
-                    select officeAssignment
-                  } |> Seq.iter (fun officeAssignment -> fullContext.DeleteObject(officeAssignment))
+  query {
+    for person in context.People do
+    where (person.FirstName = firstName &&
+           person.LastName = lastName)
+    select person
+  } |> Seq.iter (fun person->
+                    query {
+                      for officeAssignment in context.OfficeAssignments do
+                      where (officeAssignment.Person.PersonID = person.PersonID)
+                      select officeAssignment
+                    } |> Seq.iter (fun officeAssignment -> fullContext.DeleteObject(officeAssignment))
 
-fullContext.DeleteObject(person))
+                    fullContext.DeleteObject(person))
 
-// The call to SaveChanges should be outside of any iteration on the queries.
-fullContext.SaveChanges() |> printfn "Saved changed: %d object(s) modified."
+  // The call to SaveChanges should be outside of any iteration on the queries.
+  fullContext.SaveChanges() |> printfn "Saved changed: %d object(s) modified."
 
 deleteInstructor("Parker", "Darren")
 ```

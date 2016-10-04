@@ -1,4 +1,4 @@
----
+ ---
 title: Formatting types
 description: Formatting types
 keywords: .NET, .NET Core
@@ -655,7 +655,7 @@ Title | Definition
 [Standard Numeric Format Strings](standard-numeric.md) | Describes standard format strings that create commonly used string representations of numeric values. 
 [Custom Numeric Format Strings](custom-numeric.md) | Describes custom format strings that create application-specific formats for numeric values.
 [Standard Date and Time Format Strings](standard-datetime.md) | Describes standard format strings that create commonly used string representations of [DateTime](xref:System.DateTime) values.
-[Custom Date and Time Format Strings](customd-atetime.md) | Describes custom format strings that create application-specific formats for [DateTime](xref:System.DateTime) values.
+[Custom Date and Time Format Strings](custom-datetime.md) | Describes custom format strings that create application-specific formats for [DateTime](xref:System.DateTime) values.
 [Standard TimeSpan Format Strings](standard-timespan.md) | Describes standard format strings that create commonly used string representations of time intervals.
 [Custom TimeSpan Format Strings](custom-timespan.md) | Describes custom format strings that create application-specific formats for time intervals.
 [Enumeration Format Strings](enumeration-format.md) | Describes standard format strings that are used to create string representations of enumeration values.
@@ -1382,7 +1382,7 @@ Title | Definition
 [Custom Numeric Format Strings](custom-numeric.md) | Describes custom format strings that create application-specific formats for numeric values.
 [Standard Date and Time Format Strings](standard-datetime.md) |  Describes standard format strings that create commonly used string representations of [DateTime](xref:System.DateTime) values.
 [Custom Date and Time Format Strings](custom-datetime.md) | Describes custom format strings that create application-specific formats for [DateTime](xref:System.DateTime) values.
-[Standard TimeSpan Format Strings](standar-dtimespan.md) | Describes standard format strings that create commonly used string representations of time intervals.
+[Standard TimeSpan Format Strings](standard-timespan.md) | Describes standard format strings that create commonly used string representations of time intervals.
 [Custom TimeSpan Format Strings](custom-timespan.md) | Describes custom format strings that create application-specific formats for time intervals.
 [Enumeration Format Strings](enumeration-format.md) | Describes standard format strings that are used to create string representations of enumeration values.
 [Composite Formatting](composite-format.md) | Describes how to embed one or more formatted values in a string. The string can subsequently be displayed on the console or written to a stream.

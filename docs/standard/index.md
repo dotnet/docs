@@ -4,7 +4,7 @@ description: .NET Primer
 keywords: .NET, .NET Core
 author: richlander
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -18,20 +18,13 @@ ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 
 .NET is a general purpose development platform. It can be used for any kind of app type or workload where general purpose solutions are used. It has several key features that are attractive to many developers, including automatic memory management and modern programming languages, that make it easier to efficiently build high-quality applications. .NET enables a high-level programming environment with many convenience features, while providing low-level access to native memory and APIs.
 
-Multiple implementations of .NET are available, based on open [.NET Standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) that specify the fundamentals of the platform. They are separately optimized for different application types (e.g. desktop, mobile, gaming, cloud) and support many chips (e.g. x86/x64, ARM) and operating systems (e.g. Windows, Linux, iOS, Android, macOS). Open source is also an important part of the .NET ecosystem, with multiple .NET implementations and many libraries available under OSI-approved licenses.
+Multiple implementations of .NET are available, based on open [.NET Standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) that specify the fundamentals of the platform. They are separately optimized for different application types (for example, desktop, mobile, gaming, cloud) and support many chips (for example, x86/x64, ARM) and operating systems (for example, Windows, Linux, iOS, Android, macOS). Open source is also an important part of the .NET ecosystem, with multiple .NET implementations and many libraries available under OSI-approved licenses.
 
-You can take a look at the [Overview of .NET implementations](../about/products.md) document to figure out all of the different editions of the .NET Framework that are available, both Microsoft's and others.
+See the [Overview of .NET implementations](../about/products.md) document to figure out all of the different editions of .NET that are available, both Microsoft's and others.
 
 This Primer will help you understand some of the key concepts in the .NET Platform and point you to more resources 
 for each given topic. By the end of it, you should have enough information to be able to recognize significant terms and 
 concepts in the .NET Platform and to know how to further your knowledge about them. 
-
-## Key .NET Concepts
-
-There is a certain number of concepts that are very important to understand if you are new to the .NET Platform. These concepts are the cornerstone of the entire platform, and understanding them at the outset is important for general understanding of how .NET works.
-
-Most of these concepts are defined in the **What is .NET?** article. 
-
 
 ## A stroll through .NET
 
@@ -41,11 +34,11 @@ As any mature and advanced application development framework, .NET has many powe
 *   [Automatic memory management](#automatic-memory-management)
 *   [Type safety](#type-safety)
 *   [Delegates and lambdas](#delegates-and-lambdas)
-*   [Generic Types (Generics)](#generic-types-generics)
+*   [Generic types (Generics)](#generic-types-generics)
 *   [Language Integrated Query (LINQ)](#language-integrated-query-linq)
-*   [Async Programming](#async-programming)
+*   [Async programming](#async-programming)
 *   [Native interoperability](#native-interoperability)
-*   [Unsafe Code](#unsafe-code)
+*   [Unsafe code](#unsafe-code)
 
 ### Programming languages
 
@@ -102,7 +95,7 @@ int number = numbers[42]; // will throw (indexes are 0-based)
 
 ```
 
-### Type Safety
+### Type safety
 
 Objects are allocated in terms of types. The only operations allowed for a given object, and the memory it consumes, are those of its type. A `Dog` type may have `Jump` and `WagTail` methods, but not likely a `SumTotal` method. A program can only call the declared methods of a given type. All other calls will result either in a compile-time error or a run-time exception (in case of using dynamic features or `object`).
 
@@ -139,7 +132,7 @@ Some .NET languages support **type inference**. Type inference means that the co
 
 ```
 
-### Delegates and Lambdas
+### Delegates and lambdas
 
 Delegates are like C++ function pointers, with a big difference that they are type safe. They are a kind of disconnected method within the CLR type system. Regular methods are attached to a class and only directly callable through static or instance calling conventions.
 
@@ -147,13 +140,13 @@ Delegates are used in various APIs and places in the .NET world, especially thro
 
 Read more about it in the [Delegates and lambdas](delegates-lambdas.md) document.
 
-### Generic Types (Generics)
+### Generic types (Generics)
 
-Generic types, also commonly called "generics" are a feature that was added in .NET Framework 2.0. In short, generics allow the programmer to introduce a "type parameter" when designing their classes, that will allow the client code (the users of the type) to specify the exact type to use in place of the type parameter.
+Generic types, also commonly called "generics", are a feature that was added in .NET Framework 2.0. In short, generics allow the programmer to introduce a "type parameter" when designing their classes, that will allow the client code (the users of the type) to specify the exact type to use in place of the type parameter.
 
 Generics were added in order to help programmers implement generic data structures. Before their arrival, in order for a, say, _List_ type to be generic, it would have to work with elements that were of type _object_. This would have various performance as well as semantic problems, not to mention possible subtle runtime errors. The most notorious of the latter is when a data structure contains, for instance, both integers and strings, and an _InvalidCastException_ is thrown on working with the list's members.
 
-The below sample shows a basic program running using an instance of _List<T>_ types.
+The below sample shows a basic program running using an instance of @System.Collections.Generic.List%601 types.
 
 ```cs
 using System;
@@ -176,13 +169,13 @@ namespace GenericsSampleShort {
 
 ```
 
-Read more about it in the [Generic Types (Generics) Overview](generics.md) document.
+For more information, see the [Generic types (Generics) overview](generics.md) article.
 
-### Async Programming
+### Async programming
 
 Async programming is a first-class concept within .NET, with async support in the runtime, the framework libraries, and .NET language constructs. Internally, they are based off of objects (such as `Task`) which take advantage of the operating system to perform I/O-bound jobs as efficiently as possible.
 
-To learn more about async programming in .NET, start with the [Async Overview](async.md).
+To learn more about async programming in .NET, start with the [Async overview](async.md).
 
 ### Language Integrated Query (LINQ)
 
@@ -190,7 +183,7 @@ LINQ is a powerful set of features for C# and VB that allow you to write simple,
 
 To learn more and see some samples, check out [LINQ (Language Integrated Query)](using-linq.md).
 
-### Native Interoperability
+### Native interoperability
 
 Every operating system in current use provides a lot of platform support for various programming tasks. .NET provides several ways to tap into those APIs. Collectively, this support is called "native interoperability" and in this section we will take a look at how to access native APIs from managed, .NET code.
 
@@ -200,7 +193,7 @@ Most of Mono's (and thus Xamarin's) interoperability support for Java and Object
 
 Read more about it in the [Native interoperability](native-interop.md) document.
 
-### Unsafe Code
+### Unsafe code
 
 The CLR enables the ability to access native memory and do pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms and system interoperability. Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm. Unsafe code may not execute the same way in different environments, and also loses the benefits of a garbage collector and type safety. It's recommended to confine and centralize unsafe code as much as possible, and test that code thoroughly.
 

@@ -67,7 +67,7 @@ brew install mono
 
 ### Linux
 
-On Linux, Ionide also uses Mono.  If you're on Debian or Linux, you can use the following:
+On Linux, Ionide also uses Mono.  If you're on Debian or Ubuntu, you can use the following:
 
 ```
 sudo apt-get update
@@ -141,9 +141,9 @@ Open `Script.fsx`, and add the following code at the end of it:
 
 [!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx)]
 
-This function converts a word to a form of [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin).  Don't worry about the details of the code - that will be covered in a [later section](getting-started-vscode#explaining-the-code).  The next step is to execute it using F# Interactive (FSI).
+This function converts a word to a form of [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin).  Don't worry about the details of the code - that will be covered in a [later section](getting-started-vscode.md#explaining-the-code).  The next step is to execute it using F# Interactive (FSI).
 
-Highlight the entire function (it should be 11 lines long).  Once it is highlighted, hold the **Alt** key and hit **Enter**.  You'll notice a Window pop up below, and it should show something like this:
+Highlight the entire function (it should be 11 lines long).  Once it is highlighted, hold the **Alt** key and hit **Enter**.  You'll notice a window pop up below, and it should show something like this:
 
 ![](media/getting-started-vscode/vscode-fsi.png)
 
@@ -202,15 +202,15 @@ In the body of the function, you'll notice two distinct parts:
 
 1. An inner function, called `isVowel`, which determines if a given character (`c`) is a vowel by checking if it matches one of the provided patterns via [Pattern Matching](../../language-reference/pattern-matching.md):
 
-[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L2-L6)]
+    [!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L2-L6)]
 
-3. An [`if..then..else`](../../language-reference/conditional-expressions-if-then-else.md) expression which checks if the first character is a vowel, and constructs a return value out of the input characters based on if the first character was a vowel or not:
+2. An [`if..then..else`](../../language-reference/conditional-expressions-if-then-else.md) expression which checks if the first character is a vowel, and constructs a return value out of the input characters based on if the first character was a vowel or not:
 
-[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8-L11)]
+   [!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8-L11)]
 
 The flow of `toPigLatin` is thus:
 
-1. Check if the first character of the input word is a vowel.
+Check if the first character of the input word is a vowel.
 
     a. If it is, attach "yay" to the end of the word.
 

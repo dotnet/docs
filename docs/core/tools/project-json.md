@@ -366,7 +366,7 @@ Specifies the type of the dependency. It can be one of the following values: `de
 It has the same effect of setting [supressParent](#supressParent) to `all`.
 
 `platform` references the shared SDK. For more information, see the section on "Deploying a framework-dependent deployment with third-party dependencies" on the 
-[.NET Core Application Deployment](../deploying/index,md) topic.
+[.NET Core Application Deployment](../deploying/index.md) topic.
 
 For example:
 

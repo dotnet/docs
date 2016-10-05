@@ -66,6 +66,11 @@ NuGet is the package manager for the Microsoft development platform including .N
 
 ## .NET Core tools for Visual Studio 2015
 
-Download and install the [.NET Core 1.0.1 - VS 2015 Tooling Preview 2](https://go.microsoft.com/fwlink/?LinkID=827546). 
+Download and install the [.NET Core 1.0.1 - VS 2015 Tooling Preview 2][sdk]. 
 
 The .NET Core Tooling package installs .NET Core, project templates and other tools for Visual Studio 2015.
+
+> [!NOTE]
+Currently, you cannot download an offline installer for [.NET Core 1.0.1 - VS 2015 Tooling Preview 2][sdk]. Instead, you have to download the [regular bootstrapper][sdk] and run it with a command-line option (such as, `/layout c:\path`) to get an offline layout. After that, it can be used as an offline installer: just run the executable from the local path. Notice that because it's a full layout, this procedure downloads all the packages for all supported languages, which is around 1 GB in size.
+
+[sdk]: https://go.microsoft.com/fwlink/?LinkID=827546

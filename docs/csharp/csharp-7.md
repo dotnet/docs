@@ -6,7 +6,7 @@ author:  BillWagner
 manager: wpickett
 ms.date: 10/03/2016
 ms.topic: article
-ms.prod: visual-studio-dev-14
+ms.prod: visual-studio-dev-15
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
@@ -23,6 +23,8 @@ C# 7 adds a number of new features to the C# language:
 * [Local Functions](#local-expressions)
 * [Expression Bodied Everything](#expression-bodied-everything)
 * [`throw` Expressions](#throw-expressions)
+* [Generalized async return types](#generalized-async-return-types)
+* [Numeric literal syntax improvements](#numeric-literal-syntax-improvements)
 
 Two of the most interesting features don't make that list. The first
 is the shortened release cycle. C# 7 is following C# 6 much more quickly.
@@ -54,7 +56,7 @@ The remainder of this topic provides an overview
 
 ## Throw expressions (Preview 5)
 
-<!-- Generalized async return types -->
+## Generalized async return types 
 
 ## Numeric literal syntax improvements
 

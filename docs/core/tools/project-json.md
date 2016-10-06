@@ -4,7 +4,7 @@ description: project.json reference
 keywords: .NET, .NET Core, project.json
 author: aL3891
 manager: wpickett
-ms.date: 07/06/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -13,6 +13,16 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 ---
 
 # project.json reference
+
+The project.json file is used on .NET Core projects to define project metadata, compilation information, and dependencies. 
+In this reference topic, you'll see the list of all the properties you can define in your project.json file.
+
+> [!NOTE]
+> The .NET Core tooling is going to move from project.json to MSBuild-based projects in a future release. 
+> The recommendation is to still use project.json files for new .NET Core projects since there will be a path to convert your project to MSBuild when the tooling is released.
+>
+> For more information, see the [Changes to project.json](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/) post on the .NET blog and 
+> the [Using MSBuild to build .NET Core projects](../tutorials/target-dotnetcore-with-msbuild.md) topic.
 
 ## Overview
 
@@ -30,7 +40,14 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
     "embedInteropTypes": Boolean,
     "preprocess": String or String[],
     "shared": String or String[],
-    "dependencies": Object,
+    "dependencies": Object {
+        version: String,
+        type: String,
+        target: String,
+        include: String,
+        exclude: String,
+        suppressParent: String
+    },
     "tools": Object,
     "scripts": Object,
     "buildOptions": Object {
@@ -125,12 +142,22 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
     },
     "configurations": Object,
     "frameworks": Object {
-        "dependencies": Object,
+        "dependencies": Object {
+            version: String,
+            type: String,
+            target: String,
+            include: String,
+            exclude: String,
+            suppressParent: String
+        },        
         "frameworkAssemblies": Object,
         "wrappedProject": String,
-        "bin": Object,
-        "imports": String
-    }
+        "bin": Object {
+            assembly: String
+        }
+    },
+    "runtimes": Object,
+    "userSecretsId": String
 }
 ```
 
@@ -294,6 +321,8 @@ For example:
 Type: Object
 
 An object that defines the package dependencies of the project, each key of this object is the name of a package and each value contains versioning information.
+For more information, see the [Dependency resolution](https://docs.nuget.org/ndocs/consume-packages/dependency-resolution#dependency-resolution-in-nuget-3-x) article on
+the NuGet documentation site.
 
 For example:
 
@@ -310,6 +339,106 @@ For example:
         },
         "Microsoft.Extensions.DependencyModel": "1.0.0-*"
     }
+```
+
+### version
+Type: String
+
+Specifies the version or version range of the dependency. Use the \* wildcard to specify a 
+[floating dependency version](https://docs.nuget.org/ndocs/consume-packages/dependency-resolution#floating-versions).
+
+For example:
+
+```json
+"dependencies": { 
+    "Newtonsoft.Json": { 
+        "version": "9.0.1" 
+    }
+}
+```
+
+### type
+Type: String
+
+Specifies the type of the dependency. It can be one of the following values: `default`, `build` or `platform`. The default value is `default`.
+
+`build` is known as a development dependency and is only used for build-time. It means that the package should not be published or added as a dependency to the output `.nupkg` file. 
+It has the same effect of setting [supressParent](#supressParent) to `all`.
+
+`platform` references the shared SDK. For more information, see the section on "Deploying a framework-dependent deployment with third-party dependencies" on the 
+[.NET Core Application Deployment](../deploying/index.md) topic.
+
+For example:
+
+```json
+ "dependencies": {
+   "Microsoft.NETCore.App": {
+     "type": "platform",
+     "version": "1.0.0"
+   }
+ }
+```
+
+### target
+Type: String
+
+Restricts the dependency to match only a `project` or a `package`.
+
+### include
+Type: String
+
+Includes parts of dependency packages. It can use one or more of the following flags: `all`, `runtime`, `compile`, `build`, `contentFiles`, `native`, `analyzers`, or `none`.
+Multiple flags are defined by a comma-delimited list.
+For more information, see the [Managing dependency package assets](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets) specification on the NuGet repo.
+
+For example:
+
+```json
+{
+  "dependencies": {
+    "packageA": {
+      "version": "1.0.0",
+      "include": "runtime"
+    }
+  }
+}
+```
+
+### exclude
+Type: String
+
+Excludes parts of dependency packages. It can be one or more of the following flags: `all`, `runtime`, `compile`, `build`, `contentFiles`, `native`, `analyzers`, or `none`.
+Multiple flags are defined by a comma-delimited list.
+For more information, see the [Managing dependency package assets](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets) specification on the NuGet repo.
+
+For example:
+
+```json
+{
+  "dependencies": {
+    "packageA": {
+      "version": "1.0.0",
+      "exclude": "contentFiles"
+    }
+  }
+}
+```
+
+### supressParent
+Type: String
+
+Defines additional excludes for consumers of the project. It can be one the following flags: `all`, `runtime`, `compile`, `build`, `contentFiles`, `native`, `analyzers`, or `none`.
+For more information, see the [Managing dependency package assets](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets) specification on the NuGet repo.
+
+```json
+{
+  "dependencies": {
+    "packageA": {
+      "version": "1.0.0",
+      "suppressParent": "compile"
+    }
+  }
+}
 ```
 
 ## tools
@@ -487,7 +616,7 @@ For example:
 ### languageVersion
 Type: String
 
-The version of the language used by the compiler: ISO-1, ISO-2, 3, 4, 5, 6, or Default
+The version of the language used by the compiler: ISO-1, ISO-2, 3, 4, 5, 6, or Default.
 
 For example:
 
@@ -1026,6 +1155,7 @@ For example:
 Type: Boolean
 
 `true` to put segments that should be deleted on a standby list for future use instead of releasing them back to the operating system (OS); otherwise, `false`.
+The default is `false`.
 
 For example:
 
@@ -1427,7 +1557,7 @@ For example:
 ### dependencies
 Type: Object
 
-Dependencies that are specific for this framework. This is useful in scenarios where you cannot simply specify a package-level dependency across all targets. Reasons for this can include one target lacking built-in support that other targets have, or requiring a different version of a dependency than other targets.
+Dependencies that are specific for this framework. This is useful in scenarios where you cannot simply specify a package-level dependency across all targets. Reasons for this can include one target lacking built-in support that other targets have, or requiring a different version of a dependency than other targets. To see a list of the other properties for this node, see the earlier [dependencies](#dependencies) section.
 
 For example:
 
@@ -1479,7 +1609,9 @@ For example:
 ### bin
 Type: Object
 
-An object with a single property, `assembly`, whose value is the assembly path.
+This is used wrap a DLL file. You can reference and generate a package containing this DLL. 
+
+It contains a single String  property, `assembly`, whose value is the assembly path.   
 
 For example:
 
@@ -1487,25 +1619,40 @@ For example:
 "frameworks": {
     "netcoreapp1.0": {
         "bin": {
-            "assembly" :"c:/otherProject/otherdll.dll"
+            "assembly": "c:/otherProject/otherdll.dll"
         }
     }
 }
 ```
 
-### imports
-Type: String
+## runtimes
+Type: Object
 
-Specifies other framework profiles that this project is compatible with.
+List of [runtime identifiers (RIDs)](../rid-catalog.md) supported by the project (used when publishing [self-contained deployments](../deploying/index.md#self-contained-deployments-scd)).
 
 For example:
 
 ```json
-"frameworks": {
-    "netcoreapp1.0": {
-        "imports": "portable-net45+win8"
-    }
+"runtimes": {
+    "win7-x64": {},
+    "win8-x64": {},
+    "win81-x64": {},
+    "win10-x64": {},
+    "osx.10.11-x64": {},
+    "ubuntu.16.04-x64": {}
 }
 ```
 
-Will cause other packages targeting `portable-net45+win8` to be usable when targeting `netcoreapp1.0` with the current project.
+## userSecretsId
+Type: String
+
+Specifies a user secret identifier to be used at development-time. 
+For more information, see [Safe storage of app secrets during development](https://docs.asp.net/en/latest/security/app-secrets.html).
+
+For example:
+
+```json
+{
+    "userSecretsId": "aspnet-WebApp1-c23d27a4-eb88-4b18-9b77-2a93f3b15119"
+}
+```

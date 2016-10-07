@@ -1,6 +1,8 @@
 # [Welcome](welcome.md)
 # [About .NET](about/index.md)
 ## [.NET Products](about/products.md)
+
+<!-- Start of C# Content -->
 # [C# Guide](csharp/index.md)
 ## [🔧 Getting Started](csharp/getting-started/index.md)
 ### [🔧 Getting started with Visual Studio](csharp/getting-started/with-visual-studio.md)
@@ -43,8 +45,11 @@
 ### [🔧 Basic Types](csharp/basic-types.md)
 ### [🔧 Classes](csharp/classes.md)
 ### [🔧 Structs](csharp/structs.md)
+### [🔧 Tuples and unnamed types](csharp/tuples.md)
 ### [🔧 Interfaces](csharp/interfaces.md)
-### [🔧 Methods and Lambda Expressions](csharp/lambda-expressions.md)
+### [🔧 Methods and Lambda Expressions](csharp/methods-lambda-expressions.md)
+#### [🔧 methods](csharp/methods.md)
+#### [🔧 Lambda Expressions](csharp/lambda-expressions.md)
 ### [Properties](csharp/properties.md)
 ### [Indexers](csharp/indexers.md)
 ### [🔧 Generics](csharp/generics.md)
@@ -61,6 +66,7 @@
 ### [🔧 Language Integrated Query (LINQ)](csharp/linq.md)
 ### [Asynchronous programming](csharp/async.md)
 ### [🔧 Parallel programming](csharp/parallel.md)
+### [🔧 Pattern Matching](csharp/pattern-matching.md)
 ### [Expression Trees](csharp/expression-trees.md)
 #### [Expression Trees Explained](csharp/expression-trees-explained.md)
 #### [Framework Types Supporting Expression Trees](csharp/expression-classes.md)
@@ -82,6 +88,8 @@
 
     Or, should this instead point to an online version of the C# Language spec? 
 -->
+
+<!-- End of C# Content -->
 
 <!-- F# Content -->
 # [F# Guide](fsharp/index.md)

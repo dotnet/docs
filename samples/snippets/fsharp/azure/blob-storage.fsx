@@ -56,9 +56,9 @@ container.SetPermissions(permissions)
 let blockBlob = container.GetBlockBlobReference("myblob.txt")
 
 // Create or overwrite the "myblob.txt" blob with contents from the local file.
-do
-    use fileStream = File.OpenRead localFile
-    blockBlob.UploadFromStream(fileStream)
+do blockBlob.UploadFromFile(localFile)
+
+
 
 //
 // List the blobs in a container.
@@ -132,10 +132,10 @@ let ListBlobsSegmentedInFlatListing(container:CloudBlobContainer) =
 
         let rec loop continuationToken (i:int) = 
             async {
+                let! ct = Async.CancellationToken
                 // This overload allows control of the page size. You can return
                 // all remaining results by passing null for the maxResults 
                 // parameter, or by calling a different overload.
-                let! ct = Async.CancellationToken
                 let! resultSegment = 
                     container.ListBlobsSegmentedAsync(
                         "", true, BlobListingDetails.All, Nullable 10, 
@@ -159,11 +159,11 @@ let ListBlobsSegmentedInFlatListing(container:CloudBlobContainer) =
         do! loop null 1
     }
 
-// Create some dummy data by upoading the same file over andd over again
+// Create some dummy data by uploading the same file over and over again
 for i in 1 .. 100 do
     let blob  = container.GetBlockBlobReference("myblob" + string i + ".txt")
     use fileStream = System.IO.File.OpenRead(localFile)
-    blob.UploadFromStream fileStream
+    blob.UploadFromFile(localFile)
 
 ListBlobsSegmentedInFlatListing container |> Async.RunSynchronously
 

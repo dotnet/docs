@@ -17,7 +17,7 @@ ms.assetid: FAD4D11E-703A-42D4-9F72-893D9E0F569B
 
 F# is a superb language for cloud programming and is frequently used to write web applications, cloud services, cloud-hosted microservices, and for scalable data processing.
 
-In the sections below, you will find resources on how to use a range of Azure services with F#.
+In the following sections, you will find resources on how to use a range of Azure services with F#.
 
 > [!NOTE]
 > If a particular Azure service isn't in this documentation set, please consult either the Azure Functions or .NET documentation for that service. Some Azure services are language-independent and require no language-specific documentation and are not listed here.
@@ -38,11 +38,10 @@ Azure Functions support F# as a first-class language with efficient, reactive, s
 Other resources for using Azure Functions and F#:
 
 * [Scale Up Azure Functions in F# Using Suave](http://blog.tamizhvendan.in/blog/2016/09/19/scale-up-azure-functions-in-f-number-using-suave/)
-* [Azure Functions in Practice](https://www.troyhunt.com/azure-functions-in-practice/)
 
 ## Using Azure Storage with F# #
 
-Azure Storage is a base layer of storage services for modern applications that rely on durability, availability, and scalability to meet the needs of customers. F# programs can interact directly with Azure storage services, using the techinques described in the articles below.
+Azure Storage is a base layer of storage services for modern applications that rely on durability, availability, and scalability to meet the needs of customers. F# programs can interact directly with Azure storage services, using the techinques described in the following articles.
 
 * [Get started with Azure Blob storage using F#](blob-storage.md)
 * [Get started with Azure File storage using F#](file-storage.md)

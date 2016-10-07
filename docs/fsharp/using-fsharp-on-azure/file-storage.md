@@ -6,8 +6,8 @@ author: sylvanc
 manager: jbronsk
 ms.date: 09/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: visual-studio-dev14
+ms.technology: devlang-fsharp
 ms.devlang: dotnet
 ms.assetid: 5c26a0aa-186e-476c-9f87-e0191754579e
 ---
@@ -109,7 +109,7 @@ For more information about creating and using shared access signatures, see [Usi
 
 ### Copy files
 
-You can copy a file to another file, a file to a blob, or a blob to a file. If you are copying a blob to a file, or a file to a blob, you *must* use a shared access signature (SAS) to authenticate the source object, even if you are copying within the same storage account.
+You can copy a file to another file or to a blob, or a blob to a file. If you are copying a blob to a file, or a file to a blob, you *must* use a shared access signature (SAS) to authenticate the source object, even if you are copying within the same storage account.
 
 ### Copy a file to another file
 
@@ -131,7 +131,7 @@ Azure Storage Analytics supports metrics for File storage. With metrics data, yo
 
 You can enable metrics for File storage from the [Azure Portal](https://portal.azure.com), or you can do it from F# like this:
 
-[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L126-L139)]
+[!code-fsharp[FileStorage](../../../samples/snippets/fsharp/azure/file-storage.fsx#L126-L140)]
 
 ## Next steps
 
@@ -150,7 +150,7 @@ See these links for more information about Azure File storage.
 
 ### Reference
 
-- [Storage Client Library for .NET reference](https://msdn.microsoft.com/library/azure/dn261237.aspx)
+- [Storage Client Library for .NET reference](https://msdn.microsoft.com/library/azure/mt347887.aspx)
 - [File Service REST API reference](http://msdn.microsoft.com/library/azure/dn167006.aspx)
 
 ### Blog posts

@@ -75,12 +75,12 @@ share.SetProperties()
 // Generate a shared access signature for a file or file share.
 //
 
-// Create a 24 hour read/write policy.
+// Create a 24-hour read/write policy.
 let policy = 
-    SharedAccessFilePolicy(
-        SharedAccessExpiryTime = (DateTimeOffset.UtcNow.AddHours(24.) |> Nullable),
-        Permissions = (SharedAccessFilePermissions.Read ||| SharedAccessFilePermissions.Write)
-    )
+    SharedAccessFilePolicy
+       (SharedAccessExpiryTime = (DateTimeOffset.UtcNow.AddHours(24.) |> Nullable),
+        Permissions = (SharedAccessFilePermissions.Read ||| SharedAccessFilePermissions.Write))
+
 
 // Set the policy on the share.
 let permissions = share.GetPermissions()
@@ -126,14 +126,15 @@ destBlob.StartCopy(sasUri2)
 open Microsoft.WindowsAzure.Storage.File.Protocol
 open Microsoft.WindowsAzure.Storage.Shared.Protocol
 
-let props = FileServiceProperties()
-props.HourMetrics <- MetricsProperties()
-props.HourMetrics.MetricsLevel <- MetricsLevel.ServiceAndApi
-props.HourMetrics.RetentionDays <- 14 |> Nullable
-props.HourMetrics.Version <- "1.0"
-props.MinuteMetrics <- MetricsProperties()
-props.MinuteMetrics.MetricsLevel <- MetricsLevel.ServiceAndApi
-props.MinuteMetrics.RetentionDays <- 7 |> Nullable
-props.MinuteMetrics.Version <- "1.0"
+let props =
+    FileServiceProperties(
+       (HourMetrics = MetricsProperties(
+            MetricsLevel = MetricsLevel.ServiceAndApi,
+            RetentionDays = (14 |> Nullable),
+            Version = "1.0"),
+        MinuteMetrics = MetricsProperties(
+            MetricsLevel = MetricsLevel.ServiceAndApi,
+            RetentionDays = (7 |> Nullable),
+            Version = "1.0"))
 
 fileClient.SetServiceProperties(props)

@@ -6,8 +6,8 @@ author: sylvanc
 manager: jbronsk
 ms.date: 09/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: visual-studio-dev14
+ms.technology: devlang-fsharp
 ms.devlang: dotnet
 ms.assetid: c5b74a4f-dcd1-4849-930c-904b6c8a04e1
 ---
@@ -38,9 +38,9 @@ Add the following `open` statements to the top of the `blobs.fsx` file:
 
 ### Get your connection string
 
-You'll need an Azure Storage connection string for this tutorial. For more information about connection strings, see [Configure Storage Connection Strings](https://azure.microsoft.com/en-us/documentation/articles/storage-configure-connection-string/).
+You need an Azure Storage connection string for this tutorial. For more information about connection strings, see [Configure Storage Connection Strings](https://azure.microsoft.com/en-us/documentation/articles/storage-configure-connection-string/).
 
-For the tutorial, you'll enter your connection string in your script, like this:
+For the tutorial, you enter your connection string in your script, like this:
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L11-L11)]
 
@@ -58,11 +58,11 @@ To parse the connection string, use:
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L21-L22)]
 
-This will return a `CloudStorageAccount`.
+This returns a `CloudStorageAccount`.
 
 ### Create some local dummy data
 
-Before you begin, create some dummy local data in the directory of our script. Later you will upload this data.
+Before you begin, create some dummy local data in the directory of our script. Later you upload this data.
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L28-L30)]
 
@@ -88,11 +88,11 @@ Anyone on the Internet can see blobs in a public container, but you can modify o
 
 ## Upload a blob into a container
 
-Azure Blob Storage supports block blobs and page blobs. In the majority of cases, a block blob is the recommended type to use.
+Azure Blob Storage supports block blobs and page blobs. In most cases, a block blob is the recommended type to use.
 
-To upload a file to a block blob, get a container reference and use it to get a block blob reference. Once you have a blob reference, you can upload any stream of data to it by calling the `UploadFromStream` method. This operation will create the blob if it didn't previously exist, or overwrite it if it does exist.
+To upload a file to a block blob, get a container reference and use it to get a block blob reference. Once you have a blob reference, you can upload any stream of data to it by calling the `UploadFromFile` method. This operation creates the blob if it didn't previously exist, or overwrite it if it does exist.
 
-[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L55-L61)]
+[!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L55-L59)]
 
 ## List the blobs in a container
 
@@ -100,10 +100,11 @@ To list the blobs in a container, first get a container reference. You can then 
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L67-L80)]
 
-As shown above, you can name blobs with path information in their names. This creates a virtual directory structure that you can organize and traverse as you would a traditional file system. Note that the directory structure is virtual only - the only resources available in Blob storage are containers and blobs. However, the storage client library offers a `CloudBlobDirectory` object to refer to a virtual directory and simplify the process of working with blobs that are organized in this way.
+You can also name blobs with path information in their names. This creates a virtual directory structure that you can organize and traverse as you would a traditional file system. Note that the directory structure is virtual only - the only resources available in Blob storage are containers and blobs. However, the storage client library offers a `CloudBlobDirectory` object to refer to a virtual directory and simplify the process of working with blobs that are organized in this way.
 
 For example, consider the following set of block blobs in a container named `photos`:
 
+```none
     photo1.jpg
     2015/architecture/description.txt
     2015/architecture/photo3.jpg
@@ -112,13 +113,15 @@ For example, consider the following set of block blobs in a container named `pho
     2016/architecture/photo6.jpg
     2016/architecture/description.txt
     2016/photo7.jpg
+```
 
-When you call `ListBlobs` on the 'photos' container (as in the above sample), a hierarchical listing is returned. It contains both `CloudBlobDirectory` and `CloudBlockBlob` objects, representing the directories and blobs in the container, respectively. The resulting output looks like:
+When you call `ListBlobs` on a container (as in the above sample), a hierarchical listing is returned. If it contains both `CloudBlobDirectory` and `CloudBlockBlob` objects, representing the directories and blobs in the container, respectively, then the resulting output looks similar to this:
 
+```none
 	Directory: https://<accountname>.blob.core.windows.net/photos/2015/
 	Directory: https://<accountname>.blob.core.windows.net/photos/2016/
 	Block blob of length 505623: https://<accountname>.blob.core.windows.net/photos/photo1.jpg
-
+```
 
 Optionally, you can set the `UseFlatBlobListing` parameter of the `ListBlobs` method to `true`. In this case, every blob in the container is returned as a `CloudBlockBlob` object. The call to `ListBlobs` to return a flat listing looks like this:
 
@@ -126,6 +129,7 @@ Optionally, you can set the `UseFlatBlobListing` parameter of the `ListBlobs` me
 
 and, depending on the current contents of your container, the results look like this:
 
+```none
 	Block blob of length 4: https://<accountname>.blob.core.windows.net/photos/2015/architecture/description.txt
 	Block blob of length 314618: https://<accountname>.blob.core.windows.net/photos/2015/architecture/photo3.jpg
 	Block blob of length 522713: https://<accountname>.blob.core.windows.net/photos/2015/architecture/photo4.jpg
@@ -134,7 +138,7 @@ and, depending on the current contents of your container, the results look like 
 	Block blob of length 506388: https://<accountname>.blob.core.windows.net/photos/2016/architecture/photo6.jpg
 	Block blob of length 399751: https://<accountname>.blob.core.windows.net/photos/2016/photo7.jpg
 	Block blob of length 505623: https://<accountname>.blob.core.windows.net/photos/photo1.jpg
-
+```
 
 ## Download blobs
 
@@ -159,7 +163,7 @@ If you are listing a large number of blobs, or you want to control the number of
 
 This example shows a flat blob listing, but you can also perform a hierarchical listing, by setting the `useFlatBlobListing` parameter of the `ListBlobsSegmentedAsync` method to `false`.
 
-Because the sample method calls an asynchronous method, it must be prefaced with the `async` keyword, and it must return a `Task` object. The await keyword specified for the `ListBlobsSegmentedAsync` method suspends execution of the sample method until the listing task completes.
+The sample defines an asynchronous method, using an `async` block. The ``let!`` keyword suspends execution of the sample method until the listing task completes.
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L122-L160)]
 
@@ -178,7 +182,7 @@ An append blob is optimized for append operations, such as logging. Like a block
 
 Each block in an append blob can be a different size, up to a maximum of 4 MB, and an append blob can include a maximum of 50,000 blocks. The maximum size of an append blob is therefore slightly more than 195 GB (4 MB X 50,000 blocks).
 
-The example below creates a new append blob and appends some data to it, simulating a simple logging operation.
+The following example creates a new append blob and appends some data to it, simulating a simple logging operation.
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L174-L203)]
 
@@ -192,7 +196,7 @@ To support concurrent access to a blob from multiple clients or multiple process
 
 * **Lease** - provides a way to obtain exclusive, renewable, write or delete access to a blob for a period of time
 
-For further information see [Managing Concurrency in Microsoft Azure Storage](https://azure.microsoft.com/en-us/blog/managing-concurrency-in-microsoft-azure-storage-2/).
+For more information, see [Managing Concurrency in Microsoft Azure Storage](https://azure.microsoft.com/en-us/blog/managing-concurrency-in-microsoft-azure-storage-2/).
 
 ## Naming containers
 

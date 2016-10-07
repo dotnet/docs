@@ -6,8 +6,8 @@ author: sylvanc
 manager: jbronsk
 ms.date: 09/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: visual-studio-dev14
+ms.technology: devlang-fsharp
 ms.devlang: dotnet
 ms.assetid: 9e5d6cea-a98c-461e-a5cc-75f1d154eafd
 ---
@@ -142,19 +142,19 @@ You now print the results:
 
 To update an entity, retrieve it from the Table service, modify the entity object, and then save the changes back to the Table service using a `Replace` operation. This causes the entity to be fully replaced on the server, unless the entity on the server has changed since it was retrieved, in which case the operation will fail. This failure is to prevent your application from inadvertently overwriting changes from other sources.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L120-L127)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L121-L128)]
 
 ## Insert-or-replace an entity
 
 Sometimes, you don't know if the entity exists in the table or not. And if it does, the current values stored in it are no longer needed. You can use `InsertOrReplace` to create the entity, or replace it if it exists, regardless of its state.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L133-L139)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L134-L140)]
 
 ## Query a subset of entity properties
 
 A table query can retrieve just a few properties from an entity instead of all of them. This technique, called projection, can improve query performance, especially for large entities. Here, you return only email addresses using `DynamicTableEntity` and `EntityResolver`. Note that projection is not supported on the local storage emulator, so this code runs only when you're using an account on the Table service.
 
-[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L145-L156)]
+[!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L146-L157)]
 
 ## Retrieve entities in pages asynchronously
 

@@ -6,8 +6,8 @@ author: sylvanc
 manager: jbronsk
 ms.date: 09/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: visual-studio-dev14
+ms.technology: devlang-fsharp
 ms.devlang: dotnet
 ms.assetid: 70dc554c-8f4d-42a7-8e2a-6438657d012a
 ---
@@ -45,7 +45,7 @@ You'll need an Azure Storage connection string for this tutorial. For more infor
 
 For the tutorial, you'll enter your connection string in your script, like this:
 
-[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L9-L13)]
+[!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L9-L9)]
 
 However, this is **not recommended** for real projects. Your storage account key is similar to the root password for your storage account. Always be careful to protect your storage account key. Avoid distributing it to other users, hard-coding it, or saving it in a plain-text file that is accessible to others. You can regenerate your key using the Azure Portal if you believe it may have been compromised.
 
@@ -133,7 +133,7 @@ has been processed.
 
 [!code-fsharp[QueueStorage](../../../samples/snippets/fsharp/azure/queue-storage.fsx#L75-L76)]
 
-## Use Async-Await pattern with common Queue storage APIs
+## Use Async workflows with common Queue storage APIs
 
 This example shows how to use an async workflow with common Queue storage APIs.
 

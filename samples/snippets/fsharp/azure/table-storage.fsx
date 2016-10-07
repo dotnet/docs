@@ -49,7 +49,7 @@ type Customer(firstName, lastName, email: string, phone: string) =
     member val PhoneNumber = phone with get, set
 
 let customer = 
-    Customer("Larry", "Boomer", "larry@example.com", "425-555-0101")
+    Customer("Walter", "Harp", "Walter@contoso.com", "425-555-0101")
 
 let insertOp = TableOperation.Insert(customer)
 table.Execute(insertOp)
@@ -60,10 +60,10 @@ table.Execute(insertOp)
 //
 
 let customer1 =
-    Customer("Bob", "Buster", "bob@example.com", "425-555-0102")
+    Customer("Jeff", "Smith", "Jeff@contoso.com", "425-555-0102")
 
 let customer2 =
-    Customer("Jenny", "Buster", "jenny@example.com", "425-555-0102")
+    Customer("Ben", "Smith", "Ben@contoso.com", "425-555-0103")
 
 let batchOp = TableBatchOperation()
 batchOp.Insert(customer1)
@@ -77,7 +77,7 @@ table.ExecuteBatch(batchOp)
 let query =
     TableQuery<Customer>().Where(
         TableQuery.GenerateFilterCondition(
-            "PartitionKey", QueryComparisons.Equal, "Buster"))
+            "PartitionKey", QueryComparisons.Equal, "Smith"))
 
 let result = table.ExecuteQuery(query)
 
@@ -92,7 +92,7 @@ let range =
     TableQuery<Customer>().Where(
         TableQuery.CombineFilters(
             TableQuery.GenerateFilterCondition(
-                "PartitionKey", QueryComparisons.Equal, "Buster"),
+                "PartitionKey", QueryComparisons.Equal, "Smith"),
             TableOperators.And,
             TableQuery.GenerateFilterCondition(
                 "RowKey", QueryComparisons.LessThan, "M")))
@@ -106,7 +106,7 @@ for customer in rangeResult do
 // Retrieve a single entity.
 //
 
-let retrieveOp = TableOperation.Retrieve<Customer>("Buster", "Larry")
+let retrieveOp = TableOperation.Retrieve<Customer>("Smith", "Ben")
 
 let retrieveResult = table.Execute(retrieveOp)
 

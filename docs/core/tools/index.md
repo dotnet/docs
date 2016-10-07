@@ -1,10 +1,10 @@
 ---
-title: .NET Core Command Line Tools (CLI)
-description: .NET Core Command Line Tools (CLI)
-keywords: .NET, .NET Core
+title: .NET Core Command-Line Interface (CLI) Tools
+description: An overview of what the Command-Line Interface (CLI) is and its main features
+keywords: CLI, CLI tools, .NET, .NET Core
 author: mairaw
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 10/06/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -12,10 +12,11 @@ ms.devlang: dotnet
 ms.assetid: b70e9ac0-c8be-49f7-9332-95ab93e0e7bc
 ---
 
-# .NET Core Command Line Tools
+# .NET Core Command-Line Interface Tools
 
-## What is the .NET Core Command Line Interface (CLI)?
-The .NET Core CLI is a new foundational cross-platform toolchain for developing 
+By [Zlatko Knezevic](https://github.com/blackdwarf) and [Maira Wenzel](https://github.com/mairaw)
+
+The .NET Core Command-Line Interface (CLI) is a new foundational cross-platform toolchain for developing 
 .NET Core applications. It is "foundational" because it is the primary layer on which other, 
 higher-level tools, such as Integrated Development Environments (IDEs), editors and 
 build orchestrators can build on. 
@@ -38,11 +39,11 @@ prerequisites on the machine; you need to install all of the prerequisites manua
 setting up build servers or when you wish to install the tools without administrative privileges (do note the prerequisites 
 caveat above). You can find more information on the [install script reference topic](dotnet-install-script.md). If you are 
 interested in how to set up CLI on your continuous integration (CI) build server you can take a look at the 
-[CLI with CI servers](using-ci-with-cli.md) document. 
+[CLI with CI servers](using-ci-with-cli.md) topic. 
 
 By default, the CLI will install in a side-by-side (SxS) manner. This means that multiple versions of the CLI tools 
 can coexist at any given time on a single machine. How the correct version gets used is explained in more detail in 
-the [driver section](#driver) below. 
+the [driver](#driver) section. 
 
 ### What commands come in the box?
 The following commands are installed by default:
@@ -60,9 +61,8 @@ explained in greater detail in the [extensibility section](#extensibility).
 
 ## Working with the CLI
 
-### A short sample
 Before we go into any more details, let's see how working with the CLI looks like from a 10,000-foot view. 
-The sample below utilizes several commands from the CLI standard install to initialize a new simple console application, 
+The following example utilizes several commands from the CLI standard install to initialize a new simple console application, 
 restore the dependencies, build the application and then run it. 
 
 ```console
@@ -72,64 +72,59 @@ dotnet build --output /stuff
 dotnet /stuff/new.dll
 ```
 
-### How does it work?
-As we saw in the short sample [above](#a-short-sample), there is a pattern in the way you use the CLI tools. Within that pattern, we can 
+As you can see in the previous example, there is a pattern in the way you use the CLI tools. Within that pattern, we can 
 identify three main pieces of each command:
 
-1. The driver ("dotnet")
-2. The command, or "verb"
-3. Command arguments
-
-Let's dig into more details on each of the above.
+1. [The driver ("dotnet")](#driver)
+2. [The command, or "verb"](#the-verb)
+3. [Command arguments](#the-arguments)
 
 ### Driver
-The driver is named `dotnet`. It is the first part of what you invoke. The driver has two responsibilities:
+The driver is named [dotnet](dotnet.md). It is the first part of what you invoke. The driver has two responsibilities:
 
-1. Executing IL code
+1. Running portable apps
 2. Executing the verb
 
-Which of the two things it does is dependent on what is specified on the command line. In the first case, you would 
-specify an IL assembly that `dotnet` would run similar to this: `dotnet /path/to/your.dll`. 
+What it does depends on what is specified on the command-line. In the first case, you would 
+specify a portable app DLL that `dotnet` would run similar to this: `dotnet /path/to/your.dll`. 
 
-In the second case, the driver attempts to invoke the specified command. This will start the CLI command execution 
-process. First, the driver will determine the version of the tooling that you want. You can specify the version in the 
-`global.json` file using the `sdkVersion` property. If that is not available, the driver will find the latest version
-of the tools that is installed on disk and will use that version. Once the version is determined, it will execute the 
+In the second case, the driver attempts to invoke the specified command. This starts the CLI command execution 
+process. First, the driver determines the version of the tooling that you want. You can specify the version in the 
+[global.json](global-json.md) file using the [sdkVersion](global-json.md#sdkversion) property. If that is not available, the driver finds the latest version
+of the tools that is installed on disk and uses that version. Once the version is determined, it executes the 
 command. 
 
 ### The "verb"
-The verb is simply a command that performs an action. `dotnet build` will build your code. `dotnet publish` will publish 
+The verb is simply a command that performs an action. `dotnet build` builds your code. `dotnet publish` publishes 
 your code. The verb is implemented as a console application that is named per convention: `dotnet-{verb}`. All of the 
 logic is implemented in the console application that represents the verb. 
 
 ### The arguments
-The arguments that you pass on the command line are the arguments to the actual verb/command being invoked. 
-For example, when you type `dotnet publish --output publishedapp` the `--output` argument is passed to the 
+The arguments that you pass on the command-line are the arguments to the actual verb/command being invoked. 
+For example, when you type `dotnet publish --output publishedapp`, the `--output` argument is passed to the 
 `publish` command. 
 
 ## Types of application portability
 CLI enables applications to be portable in two main ways:
 
-1. Completely portable application that can run anywhere .NET Core is installed
-2. Self-contained applications
+1. Completely portable applications that can run anywhere .NET Core is installed
+2. Self-contained deployments
 
-You can learn more about both of these in the [application types overview](../app-types.md) topic. 
+You can learn more about both of these in the [.NET Core application deployment](../deploying/index.md) topic. 
 
 ## Migration from DNX
-If you used DNX in RC1 of .NET Core, you may be wondering what happened to it and how do these new tools
+If you used DNX in .NET Core RC1, you may be wondering what happened to it and how do these new tools
 relate to the DNX tools. In short, the DNX tools have been replaced with the .NET Core CLI tools. 
 If you have existing projects or are just wondering how the commands map, you
-can use the [DNX to CLI migration document](../migrating-from-dnx.md) to get all of the details. 
+can use the [DNX to CLI migration](../migrating-from-dnx.md) topic to get all the details. 
 
 ## Extensibility
-Of course, not every tool that you could use in your workflow will be a part of the core CLI tools. However, .NET Core 
+Of course, not every tool that you could use in your workflow will be part of the core CLI tools. However, .NET Core 
 CLI has an extensibility model that allows you to specify additional tools for your projects. You can find out more 
-in the [extensibility document](extensibility.md). 
+in the [.NET Core CLI extensibility model](extensibility.md) topic.
 
-## More resources
+## Summary
 This was a short overview of the most important features of the CLI. You can find out more by using the reference and 
 conceptual topics on this site. There are also other resources you can use:
-
-* [GitHub repo](https://github.com/dotnet/cli/)
+* [dotnet/CLI](https://github.com/dotnet/cli/) GitHub repo
 * [Getting Started instructions](https://aka.ms/dotnetcoregs/)
-

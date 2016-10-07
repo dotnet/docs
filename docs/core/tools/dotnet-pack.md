@@ -68,16 +68,21 @@ Updates the star in `-*` package version suffix with a specified string.
 ## Examples
 
 Pack the project in the current directory:
+
 `dotnet pack`
 
 Pack the app1 project:
+
 `dotnet pack ~/projects/app1/project.json`
 	
 Pack the project in the current directory and place the resulting packages into the specified folder:
+
 `dotnet pack --output nupkgs`
 
 Pack the project in the current directory into the specified folder and skip the build step:
+
 `dotnet pack --no-build --output nupkgs`
 
 Pack the current project and updates the resulting packages version with the given suffix. For example, version `1.0.0-*` will be updated to `1.0.0-ci-1234`.
+
 `dotnet pack --version-suffix "ci-1234"`

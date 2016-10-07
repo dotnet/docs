@@ -54,6 +54,6 @@ Create an F# project in the current directory:
 
 `dotnet new --lang f#`
   
-Create a new ASP.NET Core project in the current directory.
+Create a new ASP.NET Core project in the current directory:
 
 `dotnet new -t web`

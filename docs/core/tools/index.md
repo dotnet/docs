@@ -113,7 +113,7 @@ CLI enables applications to be portable in two main ways:
 You can learn more about both of these in the [.NET Core application deployment](../deploying/index.md) topic. 
 
 ## Migration from DNX
-If you used DNX in .NET Core RC1, you may be wondering what happened to it and how do these new tools
+If you used DNX in .NET Core 1.0 RC1, you may be wondering what happened to it and how do these new tools
 relate to the DNX tools. In short, the DNX tools have been replaced with the .NET Core CLI tools. 
 If you have existing projects or are just wondering how the commands map, you
 can use the [DNX to CLI migration](../migrating-from-dnx.md) topic to get all the details. 

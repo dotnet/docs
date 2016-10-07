@@ -1,6 +1,6 @@
 ---
-title: Lambda Expressions
-description: Lambda expressions are shorthand syntax for methods and delegates. Learn when to use them.
+title: Methods
+description: Methods are how you expression the actions a program takes. Learn how to describe them here.
 keywords: .NET, .NET Core
 author: dotnet-bot
 manager: wpickett
@@ -12,7 +12,7 @@ ms.devlang: csharp
 ms.assetid: b6a0539a-8ce5-4da7-adcf-44be345a2714
 ---
 
-# 🔧 Lambda Expressions
+# 🔧 Methods
 
 > **Note**
 > 

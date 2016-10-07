@@ -1,25 +1,25 @@
 ---
-title: Lambda Expressions
-description: Lambda expressions are shorthand syntax for methods and delegates. Learn when to use them.
-keywords: .NET, .NET Core
-author: dotnet-bot
+title: Tuples | C# Guide
+description: Learn about the unnamed tuple types in C#
+keywords: .NET, .NET Core, C#
+author:  dotnet-bot
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 10/04/2016
 ms.topic: article
-ms.prod: visual-studio-dev-14
-ms.technology: devlang-csharp
+ms.prod: .net-core
+ms.technology: .net-core-technologies
 ms.devlang: csharp
-ms.assetid: b6a0539a-8ce5-4da7-adcf-44be345a2714
+ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
 ---
 
-# 🔧 Lambda Expressions
+# 🔧 Tuples
 
 > **Note**
 > 
 > This topic hasn’t been written yet! 
 >
 > We welcome your input to help shape the scope and approach. You can track the status and provide input on this
-> [issue](https://github.com/dotnet/core-docs/issues/488) at GitHub.
+> [issue](https://github.com/dotnet/core-docs/issues/1113) at GitHub.
 > 
 > If you would like to review early drafts and outlines of this topic, please leave a note with your contact information in the issue.
 >

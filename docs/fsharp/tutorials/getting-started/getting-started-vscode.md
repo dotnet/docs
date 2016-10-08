@@ -14,7 +14,7 @@ ms.assetid: 49775139-082e-442f-b5a2-dd402399b5d2
 
 # Getting Started with F# in Visual Studio Code with Ionide
 
-You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the [Ionide plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp), to get a great cross-platform, lightweight IDE experience with IntelliSense and basic code refactorings.  Visit [Ionide.io](http://ionide.io) to learn more about the plugin.
+You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the [Ionide plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp), to get a great cross-platform, lightweight IDE experience with IntelliSense and basic code refactorings.  Visit [Ionide.io](http://ionide.io) to learn more about the plugin suite.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ F# 4.0 or higher must be installed on your machine to use Ionide.
 
 ### Windows
 
-If you're on Windows, the easiest way to do that is to install [Visual Studio with the Visual F# Tools](getting-started-visual-studio.md#installing-the-visual-f#-tools).  This will install all of the necessary components to write and execute F# code.
+If you're on Windows, the easiest way to do that is to install [Visual Studio with the Visual F# Tools](getting-started-visual-studio.md#installing-the-visual-f#-tools).  This will install all the necessary components to write, compile, and execute F# code.
 
 If you prefer not to install Visual Studio, use the following instructions:
 
@@ -55,11 +55,11 @@ C:\Program Files\Microsoft SDKs\F#\4.0\Framework\v4.0\fsi.exe
 C:\Program Files\Microsoft SDKs\F#\4.0\Framework\v4.0\fsiAnyCpu.exe
 ```
 
-Ionide automatically detects the compiler and tools, but if it doesn't for some reason, you can manually add the containing folder (`...\Microsoft SDKs\F#\4.0`) to your PATH.
+Ionide automatically detects the compiler and tools, but if it doesn't for some reason (e.g., the Visual F# Tools were installed to a different directory), you can manually add the containing folder (`...\Microsoft SDKs\F#\4.0`) to your PATH.
 
 ### macOS
 
-On macOS, Ionide uses Mono.  The easiest way to install Mono on macOS is via Homebrew.  Simply type the following into your terminal:
+On macOS, Ionide uses [Mono](http://www.mono-project.com).  The easiest way to install Mono on macOS is via Homebrew.  Simply type the following into your terminal:
 
 ```
 brew install mono
@@ -67,7 +67,7 @@ brew install mono
 
 ### Linux
 
-On Linux, Ionide also uses Mono.  If you're on Debian or Ubuntu, you can use the following:
+On Linux, Ionide also uses [Mono](http://www.mono-project.com).  If you're on Debian or Ubuntu, you can use the following:
 
 ```
 sudo apt-get update
@@ -76,9 +76,9 @@ sudo apt-get install mono-complete fsharp
 
 ## Installing Visual Studio Code and the Ionide plugin
 
-You can install Visual Studio Code on the [code.visualstudio.com](https://code.visualstudio.com) website.  After that, there are two ways to find the Ionide plugin:
+You can install Visual Studio Code from the [code.visualstudio.com](https://code.visualstudio.com) website.  After that, there are two ways to find the Ionide plugin:
 
-1. Use the Command Palette (Ctrl-P on Windows, ⌘-P on macOS, Ctrl-Shift-P on Linux) and type the following:
+1. Use the Command Palette (Ctrl+P on Windows, ⌘+P on macOS, Ctrl+Shift+P on Linux) and type the following:
 
     ```
     >ext install Ionide
@@ -88,11 +88,11 @@ You can install Visual Studio Code on the [code.visualstudio.com](https://code.v
 
     ![](media/getting-started-vscode/vscode-ext.png)
 
-The only plugin required is **Ionide-fsharp**.  However, you can also install **Ionide-FAKE** and **Ionide-Paket** to get [FAKE](http://fsharp.github.io/FAKE/) and [Paket](https://fsprojects.github.io/Paket/) support.
+The only plugin required for F# support in Visual Studio Code is [Ionide-fsharp](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).  However, you can also install [Ionide-FAKE](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-FAKE) and to get [FAKE](http://fsharp.github.io/FAKE/) support and [Ionide-Paket](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-Paket) to get [Paket](https://fsprojects.github.io/Paket/) support.  FAKE and Paket are additonal F# community tools for building projects and managing dependencies, respectively.
 
 ## Creating your first project Ionide
 
-To create a new F# project, open the Command Palette (ctrl-P on Windows, ⌘-P on macOS, ctrl-shift-P on Linux) and type the following:
+To create a new F# project, open the Command Palette (Ctrl+P on Windows, ⌘+P on macOS, Ctrl+Shift+P on Linux) and type the following:
 
 ```
 >f#: New Project
@@ -202,7 +202,7 @@ In the body of the function, you'll notice two distinct parts:
 
 1. An inner function, called `isVowel`, which determines if a given character (`c`) is a vowel by checking if it matches one of the provided patterns via [Pattern Matching](../../language-reference/pattern-matching.md):
 
-    [!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L2-L6)]
+   [!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L2-L6)]
 
 2. An [`if..then..else`](../../language-reference/conditional-expressions-if-then-else.md) expression which checks if the first character is a vowel, and constructs a return value out of the input characters based on if the first character was a vowel or not:
 
@@ -210,11 +210,7 @@ In the body of the function, you'll notice two distinct parts:
 
 The flow of `toPigLatin` is thus:
 
-Check if the first character of the input word is a vowel.
-
-    a. If it is, attach "yay" to the end of the word.
-
-    b. Otherwise, move that first character to the end of the word and add "ay" to it.
+Check if the first character of the input word is a vowel.  If it is, attach "yay" to the end of the word.  Otherwise, move that first character to the end of the word and add "ay" to it.
 
 There's one final thing to notice about this: there's no explicit instruction to return from the function, unlike many other languages out there.  This is because F# is Expression-based, and the last expression in the body of a function is the return value.  Because `if..then..else` is itself an expression, the body of the `then` block or the body of the `else` block will be returned depending on the input value.
 

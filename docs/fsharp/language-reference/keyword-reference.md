@@ -86,28 +86,51 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`void`|[Primitive Types](primitive-types.md)|Indicates the .NET `void` type. Used when interoperating with other .NET languages.|
 |`when`|[Constraints](generics/constraints.md)|Used for Boolean conditions (*when guards*) on pattern matches and to introduce a constraint clause for a generic type parameter.|
 |`while`|[Loops: `while...do` Expression](loops-while-do-expression.md)|Introduces a looping construct.|
-|`with`|[Match Expressions](match-expressions.md)<br /><br />[Object Expressions](object-expressions.md)<br /><br />[Copy and Update Record Expressions](copy-and-update-record-expressions.md)<br /><br />[Type Extensions](type-extensions.md)<br /><br />[Exceptions: The `try...with` Expression/>](exception-handling/the-try-with-expression.md)|Used together with the `match` keyword in pattern matching expressions. Also used in object expressions, record copying expressions, and type extensions to introduce member definitions, and to introduce exception handlers.|
+|`with`|[Match Expressions](match-expressions.md)<br /><br />[Object Expressions](object-expressions.md)<br /><br />[Copy and Update Record Expressions](copy-and-update-record-expressions.md)<br /><br />[Type Extensions](type-extensions.md)<br /><br />[Exceptions: The `try...with` Expression](exception-handling/the-try-with-expression.md)|Used together with the `match` keyword in pattern matching expressions. Also used in object expressions, record copying expressions, and type extensions to introduce member definitions, and to introduce exception handlers.|
 |`yield`|[Sequences](sequences.md)|Used in a sequence expression to produce a value for a sequence.|
 |`yield!`|[Computation Expressions](computation-expressions.md)<br /><br />[Asynchronous Workflows](asynchronous-workflows.md)|Used in a computation expression to append the result of a given computation expression to a collection of results for the containing computation expression.|
-In addition, the following tokens are reserved in F# because they are keywords in the OCaml language:
 
+The following tokens are reserved in F# because they are keywords in the OCaml language:
 
+* `asr`
+* `land`
+* `lor`
+* `lsl`
+* `lsr`
+* `lxor`
+* `mod`
+* `sig`
 
-||
-|-|
-|`asr`|`land`|`lor`|`lsl`|`lsr`|`lxor`|`mod`|`sig`|
-If you use the `--mlcompatibility` compiler option, these keywords are available for use as identifiers.
+If you use the `--mlcompatibility` compiler option, the above keywords are available for use as identifiers.
 
 The following tokens are reserved as keywords for future expansion of the F# language:
 
-
-
-||
-|-|
-|`atomic`|`break`|`checked`|`component`|`const`|`constraint`|`constructor`|
-|`continue`|`eager`|`event`|`external`|`fixed`|`functor`|`include`|
-|`method`|`mixin`|`object`|`parallel`|`process`|`protected`|`pure`|
-|`sealed`|`tailcall`|`trait`|`virtual`|`volatile`|||
+* `atomic`
+* `break`
+* `checked`
+* `component`
+* `const`
+* `constraint`
+* `constructor`
+* `continue`
+* `eager`
+* `event`
+* `external`
+* `fixed`
+* `functor`
+* `include`
+* `method`
+* `mixin`
+* `object`
+* `parallel`
+* `process`
+* `protected`
+* `pure`
+* `sealed`
+* `tailcall`
+* `trait`
+* `virtual`
+* `volatile`
 
 ## See Also
 [F# Language Reference](index.md)

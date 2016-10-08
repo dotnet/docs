@@ -70,7 +70,7 @@ Directory in which to place temporary outputs.
 
 `-f|--framework <FRAMEWORK>`
 
-Compiles for a specific framework. The framework needs to be defined in the [project.json](project-json,md#frameworks) file.
+Compiles for a specific framework. The framework needs to be defined in the [project.json](project-json.md#frameworks) file.
 
 `-c|--configuration [Debug|Release]`
 
@@ -82,7 +82,7 @@ Target runtime to build for. For a list of Runtime Identifiers (RIDs) you can us
 
 `--version-suffix [VERSION_SUFFIX]`
 
-Defines what `*` should be replaced with in the version field in the [project.json](project-json,md#version) file. The format follows NuGet's version guidelines. 
+Defines what `*` should be replaced with in the version field in the [project.json](project-json.md#version) file. The format follows NuGet's version guidelines. 
 
 `--build-profile`
 

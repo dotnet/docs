@@ -5,11 +5,33 @@
         {
           "files": [
             "corefx/src/**/ref/**/*.csproj",
-            "corefx/src/**/ref/**/project.json",
-            "wcf/src/**/ref/**/*.csproj",
-            "wcf/src/**/ref/**/project.json"
+            "wcf/src/**/ref/**/*.csproj"
           ],
-          "exclude": [ "**/bin/**", "**/obj/**"],
+          "exclude": [ "corefx/src/mscorlib/ref/Compat/mscorlib.csproj", "corefx/src/System.Runtime/ref/System.Runtime.csproj", "**/bin/**", "**/obj/**"],
+          "cwd": ".."
+        }
+      ],
+      "dest": "api"
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "corefx/src/mscorlib/ref/Compat/mscorlib.csproj"
+          ],
+          "exclude": [ "**/bin/**", "**/obj/**" ],
+          "cwd": ".."
+        }
+      ],
+      "dest": "api"
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "corefx/src/System.Runtime/ref/System.Runtime.csproj"
+          ],
+          "exclude": [ "**/bin/**", "**/obj/**" ],
           "cwd": ".."
         }
       ],
@@ -20,9 +42,7 @@
         {
           "files": [
             "corefx/src/**/src/**/*.csproj",
-            "corefx/src/**/src/**/project.json",
             "wcf/src/**/src/**/*.csproj",
-            "wcf/src/**/src/**/project.json",
             "coreclr/src/mscorlib/System.Private.CoreLib.csproj"
           ],
           "exclude": [ "**/bin/**", "**/obj/**"],

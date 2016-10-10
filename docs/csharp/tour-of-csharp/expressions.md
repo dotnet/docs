@@ -78,7 +78,7 @@ The following summarizes C#’s operators, listing the operator categories in or
 * Logical XOR
     - `x ^ y`: Integer bitwise XOR, boolean logical XOR
 * Logical OR
-    `x | y`: Integer bitwise OR, boolean logical OR
+    - `x | y`: Integer bitwise OR, boolean logical OR
 * Conditional AND
     - `x && y`: Evaluates `y` only if `x` is not `false`
 * Conditional OR

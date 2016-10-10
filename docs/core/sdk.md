@@ -22,7 +22,7 @@ It contains the following components:
 
 1. The .NET Core Command Line Tools that are used to build applications
 2. .NET Core (libraries and runtime) that allow applications to both be built and run
-3. The `dotnet` driver for running the CLI commands as well as running applications
+3. The `dotnet` driver for running the [CLI commands](tools/index.md) as well as running applications
 
 
 ## Acquiring the .NET Core SDK
@@ -44,5 +44,5 @@ document.
 
 By default, the SDK will install in a "side-by-side" (SxS) manner. This means that multiple versions of the CLI tools 
 can coexist at any given time on a single machine. How the correct version gets used is explained in more detail in 
-the [driver section](#driver) below. 
+the [driver section](tools/index.md#driver) of .NET Core Command Line Tools topic. 
 

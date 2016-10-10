@@ -410,7 +410,7 @@ Classes derived from the [System.Runtime.InteropServices.SafeHandle](xref:System
 
 * The [SafeMemoryMappedViewHandle](xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle) class, for memory views. 
 
-* The [SafeNCryptKeyHandle](xref:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle), [SafeNCryptProviderHandle](xref:Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle), and [SafeNCryptSecretHandle](xref:Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle) classes, for cryptography constructs. 
+* The [SafeNCryptKeyHandle](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptkeyhandle(v=vs.110).aspx), [SafeNCryptProviderHandle](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptproviderhandle(v=vs.110).aspx), and [SafeNCryptSecretHandle](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptsecrethandle(v=vs.110).aspx) classes, for cryptography constructs.
 
 * The [SafeRegistryHandle](xref:Microsoft.Win32.SafeHandles.SafeRegistryHandle) class, for registry keys. 
 

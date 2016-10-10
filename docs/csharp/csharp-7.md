@@ -57,7 +57,6 @@ Add a sample at RC that shows how if statements
 scope out variables.
 -->
 
-This small language change improves your productivity in important ways:
 * The code is easier to read. 
     - You declare the out variable where you use it, not on another line above.
 * No need to assign an initial value.
@@ -78,9 +77,10 @@ that contain multiple fields to represent the data members.
 The fields are not validated, and you cannot define your own methods
 
 > [!NOTE]
-> Tuples were available as an API class before C# 7, but had many limitations.
-> Most importantly, the members of these tuples were named `Item1`, `Item2`
-> and so on. The language features for Tuples address this limitations.
+> Tuples were available before C# 7 as an API, but had many limitations.
+> Most importantly, the members of these tuples were named 
+> `Item1`, `Item2` and so on. The language support enables semantic names
+> for the fields of a Tuple.
 
 You can create a tuple by assigning each member to a value:
 
@@ -116,6 +116,13 @@ with the names on the left side, `first` and `second`.
 The examples above show the basic syntax to declare tuples. Tuples are
 most useful as return types for `private` and `internal` methods. Tuples
 provide a simple syntax for those methods to return multiple discrete values:
+You save the work of authoring a `class` or a `struct` that
+defines the type returned. There is no need for creating a new symbol.
+
+Creating a tuple is more efficient and more productive.
+It is a simpler, lightweight syntax to define a data structure that carries
+more than one value. The example method below returns the minimimum and maximum
+values found in a sequence of integers:
 
 [!code-csharp[TupleReturningMethod](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#08_TupleReturningMethod "Tuple returning method")]
 
@@ -337,7 +344,7 @@ the return value is a reference:
 Now, the second `WriteLine` statement in the example above will print 
 out the value `24`, indicating that the storage in the matrix has been
 modified. The local variable has been declared with the `ref` modifier,
-and it will take a `ref` return. You must initialize a `ref` varaible when
+and it will take a `ref` return. You must initialize a `ref` variable when
 it is declared, you cannot split the declaration and the initialization.
 
 The C# language has two other rules that protect you from mis-using

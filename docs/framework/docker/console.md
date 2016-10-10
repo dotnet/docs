@@ -87,7 +87,7 @@ ENTRYPOINT ConsoleRandomAnswerGenerator.exe
 The first line in the Dockerfile designates the base image using the [`FROM`](https://docs.docker.com/engine/reference/builder/#/from) instruction. Next, [`ADD`](https://docs.docker.com/engine/reference/builder/#/add) in the file copies the application assets from the **publish** folder to root folder of the container and last; setting the [`ENTRYPOINT`](https://docs.docker.com/engine/reference/builder/#/entrypoint) of the image states that this is the command or application that will run when the container starts. 
 
 ## Creating the image
-Adding the following code to the *build.ps1* script, when run the Docker image called `console-random-answer-generator` is created once the compilation is complete.
+In order to create the Docker image, the following code is added to the *build.ps1* script. When the script is run, the `console-random-answer-generator` image is created using the assets compiled from MSBuild defined in the [Building the application](#building-the-application) section.
 
 ```
 $ImageName="console-random-answer-generator"

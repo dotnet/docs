@@ -107,7 +107,7 @@ In this section, you create a type provider and generate types from the schema t
 open Microsoft.FSharp.Data.TypeProviders
 
 
-type dbml = DbmlFile<"MyDatabase.dbml", ResolutionFolder = @"<path-to-folder-that-contains-.dbml-file>>
+type dbml = DbmlFile<"MyDatabase.dbml", ResolutionFolder = @"<path-to-folder-that-contains-.dbml-file>">
 
 // This connection string can be specified at run time.
 let connectionString = "Data Source=MYSERVER\INSTANCE;Initial Catalog=MyDatabase;Integrated Security=SSPI;"

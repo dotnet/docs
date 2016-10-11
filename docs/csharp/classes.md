@@ -18,7 +18,7 @@ A *class* is a construct that enables you to create your own custom types by gro
 ## Reference types  
 A type that is defined as a [class](https://msdn.microsoft.com/en-us/library/0b0thckt.aspx) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [null](https://msdn.microsoft.com/en-us/library/edakx9da.aspx) until you explicitly create an instance of the object by using the [new](https://msdn.microsoft.com/en-us/library/51y09td4.aspx) operator, or assign it an object that has been created elsewhere by using [new](https://msdn.microsoft.com/en-us/library/51y09td4.aspx), as shown in the following example:  
 
-[!code-csharp[Reference Types](../../samples/snippets/csharp/concepts/classes/reference-types.cs)]
+[!code-csharp[Reference Types](../../samples/snippets/csharp/concepts/classes/reference-type.cs)]
   
 When the object is created, the memory is allocated on the managed heap, and the variable holds only a reference to the location of the object. Types on the managed heap require overhead both when they are allocated and when they are reclaimed by the automatic memory management functionality of the CLR, which is known as *garbage collection*. However, garbage collection is also highly optimized, and in most scenarios it does not create a performance issue. For more information about garbage collection, see [Automatic memory management and garbage collection](../Standard/garbagecollection/gc.md).  
   
@@ -27,7 +27,7 @@ Reference types fully support *inheritance*, a fundamental characteristic of obj
 ## Declaring classes  
 Classes are declared by using the [class](https://msdn.microsoft.com/en-us/library/0b0thckt.aspx) keyword, as shown in the following example:  
   
-[!code-csharp[Declaring Classes](../../samples/snippets/csharp/concepts/classes/declaring_classes.cs)]  
+[!code-csharp[Declaring Classes](../../samples/snippets/csharp/concepts/classes/declaring-classes.cs)]  
   
 The **class** keyword is preceded by the access level. Because [public](https://msdn.microsoft.com/en-us/library/yzh058ae.aspx) is used in this case, anyone can create objects from this class. The name of the class follows the **class** keyword. The remainder of the definition is the class body, where the behavior and data are defined. Fields, properties, methods, and events on a class are collectively referred to as *class members*.  
   

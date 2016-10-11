@@ -18,7 +18,7 @@ A *class* is a construct that enables you to create your own custom types by gro
 ## Reference types  
 A type that is defined as a [class](https://msdn.microsoft.com/en-us/library/0b0thckt.aspx) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [null](https://msdn.microsoft.com/en-us/library/edakx9da.aspx) until you explicitly create an instance of the object by using the [new](https://msdn.microsoft.com/en-us/library/51y09td4.aspx) operator, or assign it an object that has been created elsewhere by using [new](https://msdn.microsoft.com/en-us/library/51y09td4.aspx), as shown in the following example:  
 
-[!code-csharp[Reference Types](../../../samples/snippets/csharp/concepts/classes/reference-types.cs)]
+[!code-csharp[Reference Types](../../samples/snippets/csharp/concepts/classes/reference-types.cs)]
   
 When the object is created, the memory is allocated on the managed heap, and the variable holds only a reference to the location of the object. Types on the managed heap require overhead both when they are allocated and when they are reclaimed by the automatic memory management functionality of the CLR, which is known as *garbage collection*. However, garbage collection is also highly optimized, and in most scenarios it does not create a performance issue. For more information about garbage collection, see [Automatic memory management and garbage collection](../Standard/garbagecollection/gc.md).  
   
@@ -27,7 +27,7 @@ Reference types fully support *inheritance*, a fundamental characteristic of obj
 ## Declaring classes  
 Classes are declared by using the [class](https://msdn.microsoft.com/en-us/library/0b0thckt.aspx) keyword, as shown in the following example:  
   
-[!code-csharp[Declaring Classes](../../../samples/snippets/csharp/concepts/classes/declaring_classes.cs)]  
+[!code-csharp[Declaring Classes](../../samples/snippets/csharp/concepts/classes/declaring_classes.cs)]  
   
 The **class** keyword is preceded by the access level. Because [public](https://msdn.microsoft.com/en-us/library/yzh058ae.aspx) is used in this case, anyone can create objects from this class. The name of the class follows the **class** keyword. The remainder of the definition is the class body, where the behavior and data are defined. Fields, properties, methods, and events on a class are collectively referred to as *class members*.  
   
@@ -36,22 +36,22 @@ Although they are sometimes used interchangeably, a class and an object are diff
   
 Objects can be created by using the [new](https://msdn.microsoft.com/en-us/library/51y09td4.aspx) keyword followed by the name of the class that the object will be based on, like this:  
   
-[!code-csharp[Creating Objects](../../../samples/snippets/csharp/concepts/classes/creating-objects.cs)]   
+[!code-csharp[Creating Objects](../../samples/snippets/csharp/concepts/classes/creating-objects.cs)]   
   
 When an instance of a class is created, a reference to the object is passed back to the programmer. In the previous example, `object1` is a reference to an object that is based on `Customer`. This reference refers to the new object but does not contain the object data itself. In fact, you can create an object reference without creating an object at all:  
   
-[!code-csharp[Creating Objects](../../../samples/snippets/csharp/concepts/classes/creating-objects2.cs)]  
+[!code-csharp[Creating Objects](../../samples/snippets/csharp/concepts/classes/creating-objects2.cs)]  
   
 We do not recommend creating object references such as this one that does not refer to an object because trying to access an object through such a reference will fail at run time. However, such a reference can be made to refer to an object, either by creating a new object, or by assigning it to an existing object, such as this:  
   
-[!code-csharp[Creating Objects](../../../samples/snippets/csharp/concepts/classes/creating-objects3.cs)]  
+[!code-csharp[Creating Objects](../../samples/snippets/csharp/concepts/classes/creating-objects3.cs)]  
   
 This code creates two object references that both refer to the same object. Therefore, any changes to the object made through `object3` will be reflected in subsequent uses of `object4`. Because objects that are based on classes are referred to by reference, classes are known as reference types.  
   
 ## Class inheritance  
 Inheritance is accomplished by using a *derivation*, which means a class is declared by using a *base class* from which it inherits data and behavior. A base class is specified by appending a colon and the name of the base class following the derived class name, like this:  
   
-[!code-csharp[Inheritance](../../../samples/snippets/csharp/concepts/classes/inheritance.cs)]  
+[!code-csharp[Inheritance](../../samples/snippets/csharp/concepts/classes/inheritance.cs)]  
   
 When a class declares a base class, it inherits all the members of the base class except the constructors.  
   
@@ -65,7 +65,7 @@ Class definitions can be split between different source files. For more informat
 ## Example
 In the following example, a public class that contains a single field, a method, and a special method called a constructor is defined. For more information, see [Constructors](https://msdn.microsoft.com/en-us/library/ace5hbzh.aspx). The class is then instantiated with the **new** keyword.
 
-[!code-csharp[Class Example](../../../samples/snippets/csharp/concepts/classes/class-example.cs)]  
+[!code-csharp[Class Example](../../samples/snippets/csharp/concepts/classes/class-example.cs)]  
   
 ## C# language specification  
 For more information, see the [C# language specification](https://msdn.microsoft.com/en-us/library/ms228593.aspx). The language specification is the definitive source for C# syntax and usage.

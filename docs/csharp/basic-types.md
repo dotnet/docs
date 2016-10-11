@@ -31,7 +31,7 @@ The information stored in a type can include the following:
   
 The compiler uses type information to make sure that all operations that are performed in your code are *type safe*. For example, if you declare a variable of type [int](https://msdn.microsoft.com/en-us/library/5kzh1b5w.aspx), the compiler allows you to use the variable in addition and subtraction operations. If you try to perform those same operations on a variable of type [bool](https://msdn.microsoft.com/en-us/library/c8f5xwh7.aspx), the compiler generates an error, as shown in the following example:  
   
-[!code-csharp[Type Safety](../../../samples/snippets/csharp/concepts/basic-types/type-safety.cs)]  
+[!code-csharp[Type Safety](../../samples/snippets/csharp/concepts/basic-types/type-safety.cs)]  
   
 > [!NOTE]  
 >  C and C++ developers, notice that in C#, [bool](https://msdn.microsoft.com/en-us/library/c8f5xwh7.aspx) is not convertible to [int](https://msdn.microsoft.com/en-us/library/5kzh1b5w.aspx).  
@@ -41,11 +41,11 @@ The compiler embeds the type information into the executable file as metadata. T
 ## Specifying types in variable declarations  
 When you declare a variable or constant in a program, you must either specify its type or use the [var](https://msdn.microsoft.com/en-us/library/bb383973.aspx) keyword to let the compiler infer the type. The following example shows some variable declarations that use both built-in numeric types and complex user-defined types:  
   
-[!code-csharp[Variable Declaration](../../../samples/snippets/csharp/concepts/basic-types/variable-declaration.cs)]  
+[!code-csharp[Variable Declaration](../../samples/snippets/csharp/concepts/basic-types/variable-declaration.cs)]  
   
 The types of method parameters and return values are specified in the method signature. The following signature shows a method that requires an [int](https://msdn.microsoft.com/en-us/library/5kzh1b5w.aspx) as an input argument and returns a string:  
   
-[!code-csharp[Method Signature](../../../samples/snippets/csharp/concepts/basic-types/method-signature.cs)]  
+[!code-csharp[Method Signature](../../samples/snippets/csharp/concepts/basic-types/method-signature.cs)]  
   
 After a variable is declared, it cannot be re-declared with a new type, and it cannot be assigned a value that is not compatible with its declared type. For example, you cannot declare an [int](https://msdn.microsoft.com/en-us/library/5kzh1b5w.aspx) and then assign it a Boolean value of [true](https://msdn.microsoft.com/en-us/library/06d3w013.aspx). However, values can be converted to other types, for example when they are assigned to new variables or passed as method arguments. A *type conversion* that does not cause data loss is performed automatically by the compiler. A conversion that might cause data loss requires a *cast* in the source code. 
 
@@ -60,7 +60,7 @@ You use the [struct](https://msdn.microsoft.com/en-us/library/ah19swz4.aspx), [c
 ## Generic types  
 A type can be declared with one or more *type parameters* that serve as a placeholder for the actual type (the *concrete type*) that client code will provide when it creates an instance of the type. Such types are called *generic types*. For example, the .NET Framework type @System.Collections.Generic.List%601 has one type parameter that by convention is given the name *T*. When you create an instance of the type, you specify the type of the objects that the list will contain, for example, string:  
   
-[!code-csharp[Generic types](../../../samples/snippets/csharp/concepts/basic-types/generic-type.cs)] 
+[!code-csharp[Generic types](../../samples/snippets/csharp/concepts/basic-types/generic-type.cs)] 
   
 The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](https://msdn.microsoft.com/en-us/library/9kkx3h3c.aspx). Generic collection classes are called *strongly-typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `strings` object in the previous example. For more information, see [Generics](generics.md). 
 
@@ -72,7 +72,7 @@ In some cases, it is inconvenient to create a named type for simple sets of rela
 ## The Common type system  
 It is important to understand two fundamental points about the type system in the .NET Framework:  
   
--   It supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy. All types, including built-in numeric types such as @System.Int32 (C# keyword: `int`), derive ultimately from a single base type, which is @System.Object (C# keyword: `object`). This unified type hierarchy is called the [Common type system](../standard/common-type-system.md) (CTS). For more information about inheritance in C#, see [Inheritance](.https://msdn.microsoft.com/en-us/library/ms173149.aspx).  
+-   It supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy. All types, including built-in numeric types such as @System.Int32 (C# keyword: `int`), derive ultimately from a single base type, which is @System.Object (C# keyword: `object`). This unified type hierarchy is called the [Common type system](../standard/common-type-system.md) (CTS). For more information about inheritance in C#, see [Inheritance](https://msdn.microsoft.com/en-us/library/ms173149.aspx).  
   
 -   Each type in the CTS is defined as either a *value type* or a *reference type*. This includes all custom types in the .NET Framework class library and also your own user-defined types. Types that you define by using the [struct](https://msdn.microsoft.com/en-us/library/ah19swz4.aspx) keyword are value types; all the built-in numeric types are **structs**. For more information about value types, see [Structs](structs.md).Types that you define by using the [class](https://msdn.microsoft.com/en-us/library/0b0thckt.aspx) keyword are reference types. For more information about reference types, see [Classes](classes.md). Reference types and value types have different compile-time rules, and different run-time behavior.
  

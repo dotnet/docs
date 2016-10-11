@@ -68,7 +68,7 @@ Or, for Mono development:
 
     > mono nuget.exe update
 
-# Referencing Assemblies
+## Referencing Assemblies
 
 In order to use your packages in your F# script, you need to reference the assemblies included in the packages using a `#r` directive. For example:
 

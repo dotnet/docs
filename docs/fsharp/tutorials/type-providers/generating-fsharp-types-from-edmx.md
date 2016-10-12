@@ -109,12 +109,12 @@ open System.Data.SqlClient
 open System.Data.EntityClient
 open System.Data.Metadata.Edm
 
-let getEDMConnectionString(dbConnectionString) =
-let dbConnection = new SqlConnection(connectionString)
-let resourceArray = [| "res://*/" |]
-let assemblyList = [| System.Reflection.Assembly.GetCallingAssembly() |]
-let metaData = MetadataWorkspace(resourceArray, assemblyList)
-new EntityConnection(metaData, dbConnection)
+let getEDMConnection(dbConnectionString) =
+  let dbConnection = new SqlConnection(dbConnectionString)
+  let resourceArray = [| "res://*/" |]
+  let assemblyList = [| System.Reflection.Assembly.GetCallingAssembly() |]
+  let metaData = MetadataWorkspace(resourceArray, assemblyList)
+  new EntityConnection(metaData, dbConnection)
 ```
 
 ## Configuring the type provider
@@ -133,11 +133,11 @@ In this step, you create and configure the type provider with the EDMX connectio
 <br />
 
 ```fsharp
-type edmx = EdmxFile<"Model1.edmx", ResolutionFolder = @"<path-tofolder-that-containsyour.edmx-file>>
+type edmx = EdmxFile<"Model1.edmx", ResolutionFolder = @"<path-tofolder-that-containsyour.edmx-file>">
 
-let edmConnectionString =
-getEDMConnectionString("Data Source=SERVER\instance;Initial Catalog=School;Integrated Security=true;")
-let context = new edmx.SchoolModel.SchoolEntities(edmConnectionString)
+use edmConnection =
+  getEDMConnection("Data Source=SERVER\instance;Initial Catalog=School;Integrated Security=true;")
+use context = new edmx.SchoolModel.SchoolEntities(edmConnection)
 ```
 
 ## Querying the data

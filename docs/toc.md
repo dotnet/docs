@@ -130,6 +130,7 @@
 ### [Get started with Azure Queue storage using F#](fsharp/using-fsharp-on-azure/queue-storage.md)
 ### [Get started with Azure Table storage using F#](fsharp/using-fsharp-on-azure/table-storage.md)
 ### [Using F# on Azure Service Fabric](fsharp/using-fsharp-on-azure/using-fsharp-on-azure-service-fabric.md)
+### [Package Management for F# Azure Dependencies](fsharp/using-fsharp-on-azure/package-management.md)
 
 ## [F# Language Reference](fsharp/language-reference/index.md)
 ### [Keyword Reference](fsharp/language-reference/keyword-reference.md)

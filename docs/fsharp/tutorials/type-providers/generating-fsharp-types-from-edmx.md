@@ -133,10 +133,10 @@ In this step, you create and configure the type provider with the EDMX connectio
 <br />
 
 ```fsharp
-type edmx = EdmxFile<"Model1.edmx", ResolutionFolder = @"<path-tofolder-that-containsyour.edmx-file>>
+type edmx = EdmxFile<"Model1.edmx", ResolutionFolder = @"<path-tofolder-that-containsyour.edmx-file>">
 
 let edmConnectionString =
-getEDMConnectionString("Data Source=SERVER\instance;Initial Catalog=School;Integrated Security=true;")
+  getEDMConnectionString("Data Source=SERVER\instance;Initial Catalog=School;Integrated Security=true;")
 let context = new edmx.SchoolModel.SchoolEntities(edmConnectionString)
 ```
 

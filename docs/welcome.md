@@ -4,7 +4,7 @@ description: Getting started
 keywords: .NET
 author: richlander
 manager: wpickett
-ms.date: 06/23/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net
 ms.technology: .net-technologies
@@ -26,6 +26,8 @@ News
 
 There is always something new to learn or explore in the .NET community. Here's the latest news you may want to check out.
 
+- [Introducing .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)
+- [.NET Core 1.0.1 announcement](https://blogs.msdn.microsoft.com/dotnet/2016/09/13/announcing-september-2016-updates-for-net-core-1-0/)
 - [Announcing .NET Framework 4.6.2](https://blogs.msdn.microsoft.com/dotnet/2016/08/02/announcing-net-framework-4-6-2/)
 - [Announcing .NET Core 1.0](https://blogs.msdn.microsoft.com/dotnet/announcing-net-core-1-0)
 - [Announcing ASP.NET Core 1.0](https://blogs.msdn.microsoft.com/webdev/2016/06/27/announcing-asp-net-core-1-0/)

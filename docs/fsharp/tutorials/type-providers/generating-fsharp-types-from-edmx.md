@@ -135,9 +135,9 @@ In this step, you create and configure the type provider with the EDMX connectio
 ```fsharp
 type edmx = EdmxFile<"Model1.edmx", ResolutionFolder = @"<path-tofolder-that-containsyour.edmx-file>">
 
-let edmConnection =
+use edmConnection =
   getEDMConnection("Data Source=SERVER\instance;Initial Catalog=School;Integrated Security=true;")
-let context = new edmx.SchoolModel.SchoolEntities(edmConnection)
+use context = new edmx.SchoolModel.SchoolEntities(edmConnection)
 ```
 
 ## Querying the data

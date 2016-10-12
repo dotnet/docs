@@ -110,11 +110,11 @@ open System.Data.EntityClient
 open System.Data.Metadata.Edm
 
 let getEDMConnectionString(dbConnectionString) =
-let dbConnection = new SqlConnection(connectionString)
-let resourceArray = [| "res://*/" |]
-let assemblyList = [| System.Reflection.Assembly.GetCallingAssembly() |]
-let metaData = MetadataWorkspace(resourceArray, assemblyList)
-new EntityConnection(metaData, dbConnection)
+  let dbConnection = new SqlConnection(dbConnectionString)
+  let resourceArray = [| "res://*/" |]
+  let assemblyList = [| System.Reflection.Assembly.GetCallingAssembly() |]
+  let metaData = MetadataWorkspace(resourceArray, assemblyList)
+  new EntityConnection(metaData, dbConnection)
 ```
 
 ## Configuring the type provider

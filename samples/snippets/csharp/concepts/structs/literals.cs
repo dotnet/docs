@@ -13,5 +13,5 @@ Console.WriteLine(s2);
 
 var b = 0b1010_1011_1100_1110_1111;
 string s3 = "I can specify bit patterns: " + b.ToString();
-// Outputs: "I can specify bit patterns: 
+// Outputs: "I can specify bit patterns: 703727
 Console.WriteLine(s3);

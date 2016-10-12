@@ -2,7 +2,7 @@
 title: Basic Types | C# Guide
 description: Learn about the core types (numerics, strings, and object) in all C# programs 
 keywords: .NET, .NET Core, C#
-author:  dotnet-bot
+author:  stevehoag
 manager: wpickett
 ms.date: 10/10/2016
 ms.topic: article
@@ -49,7 +49,7 @@ The types of method parameters and return values are specified in the method sig
   
 After a variable is declared, it cannot be re-declared with a new type, and it cannot be assigned a value that is not compatible with its declared type. For example, you cannot declare an [int](https://msdn.microsoft.com/en-us/library/5kzh1b5w.aspx) and then assign it a Boolean value of [true](https://msdn.microsoft.com/en-us/library/06d3w013.aspx). However, values can be converted to other types, for example when they are assigned to new variables or passed as method arguments. A *type conversion* that does not cause data loss is performed automatically by the compiler. A conversion that might cause data loss requires a *cast* in the source code. 
 
-For more information, see [Casting and type conversions](https://msdn.microsoft.com/en-us/library/ms173105.aspx)
+For more information, see [Casting and type conversions](https://msdn.microsoft.com/en-us/library/ms173105.aspx).
  
 ## Built-in types
 C# provides a standard set of built-in numeric types to represent integers, floating point values, Boolean expressions, text characters, decimal values, and other types of data. There are also built-in **string** and **object** types. These are available for you to use in any C# program. For a more information about the built-in types, see [Types reference tables](https://msdn.microsoft.com/en-us/library/1dhd7f2x.aspx).  
@@ -64,17 +64,19 @@ A type can be declared with one or more *type parameters* that serve as a placeh
   
 The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](https://msdn.microsoft.com/en-us/library/9kkx3h3c.aspx). Generic collection classes are called *strongly-typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `strings` object in the previous example. For more information, see [Generics](generics.md). 
 
-## Implicit Types, and Anonymous Types  
+## Implicit types, anonymous types, and tuple types  
 As stated previously, you can implicitly type a local variable (but not class members) by using the [var](https://msdn.microsoft.com/en-us/library/bb383973.aspx) keyword. The variable still receives a type at compile time, but the type is provided by the compiler. For more information, see [Implicitly typed local variables](https://msdn.microsoft.com/en-us/library/bb384061.aspx).  
   
 In some cases, it is inconvenient to create a named type for simple sets of related values that you do not intend to store or pass outside method boundaries. You can create *anonymous types* for this purpose. For more information, see [Anonymous types](https://msdn.microsoft.com/en-us/library/bb397696.aspx).
+
+It's common to want to return more than one value from a method. You can create *tuple types* that return multiple values in a single method call. For more information, see [Tuples](tuples.md)
 
 ## The Common type system  
 It is important to understand two fundamental points about the type system in the .NET Framework:  
   
 -   It supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy. All types, including built-in numeric types such as @System.Int32 (C# keyword: `int`), derive ultimately from a single base type, which is @System.Object (C# keyword: `object`). This unified type hierarchy is called the [Common type system](../standard/common-type-system.md) (CTS). For more information about inheritance in C#, see [Inheritance](https://msdn.microsoft.com/en-us/library/ms173149.aspx).  
   
--   Each type in the CTS is defined as either a *value type* or a *reference type*. This includes all custom types in the .NET Framework class library and also your own user-defined types. Types that you define by using the [struct](https://msdn.microsoft.com/en-us/library/ah19swz4.aspx) keyword are value types; all the built-in numeric types are **structs**. For more information about value types, see [Structs](structs.md).Types that you define by using the [class](https://msdn.microsoft.com/en-us/library/0b0thckt.aspx) keyword are reference types. For more information about reference types, see [Classes](classes.md). Reference types and value types have different compile-time rules, and different run-time behavior.
+-   Each type in the CTS is defined as either a *value type* or a *reference type*. This includes all custom types in the .NET Framework class library and also your own user-defined types. Types that you define by using the [struct](https://msdn.microsoft.com/en-us/library/ah19swz4.aspx) keyword are value types; all the built-in numeric types are **structs**. For more information about value types, see [Structs](structs.md). Types that you define by using the [class](https://msdn.microsoft.com/en-us/library/0b0thckt.aspx) keyword are reference types. For more information about reference types, see [Classes](classes.md). Reference types and value types have different compile-time rules, and different run-time behavior.
  
   
 ## See also

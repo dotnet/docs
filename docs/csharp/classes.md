@@ -2,7 +2,7 @@
 title: Classes | C# Guide
 description: Learn about the class types and how you create them
 keywords: .NET, .NET Core, C#
-author:  dotnet-bot
+author:  stevehoag
 manager: wpickett
 ms.date: 10/10/2016
 ms.topic: article
@@ -20,7 +20,7 @@ A type that is defined as a [class](https://msdn.microsoft.com/en-us/library/0b0
 
 [!code-csharp[Reference Types](../../samples/snippets/csharp/concepts/classes/reference-type.cs)]
   
-When the object is created, the memory is allocated on the managed heap, and the variable holds only a reference to the location of the object. Types on the managed heap require overhead both when they are allocated and when they are reclaimed by the automatic memory management functionality of the CLR, which is known as *garbage collection*. However, garbage collection is also highly optimized, and in most scenarios it does not create a performance issue. For more information about garbage collection, see [Automatic memory management and garbage collection](../Standard/garbagecollection/gc.md).  
+When the object is created, the memory is allocated on the managed heap, and the variable holds only a reference to the location of the object. Types on the managed heap require overhead both when they are allocated and when they are reclaimed by the automatic memory management functionality of the CLR, which is known as *garbage collection*. However, garbage collection is also highly optimized, and in most scenarios, it does not create a performance issue. For more information about garbage collection, see [Automatic memory management and garbage collection](../standard/garbagecollection/gc.md).  
   
 Reference types fully support *inheritance*, a fundamental characteristic of object-oriented programming. When you create a class, you can inherit from any other interface or class that is not defined as [sealed](https://msdn.microsoft.com/en-us/library/88c54tsw.aspx), and other classes can inherit from your class and override your virtual methods. For more information, see [Inheritance](https://msdn.microsoft.com/en-us/library/ms173149.aspx).
 
@@ -29,10 +29,10 @@ Classes are declared by using the [class](https://msdn.microsoft.com/en-us/libra
   
 [!code-csharp[Declaring Classes](../../samples/snippets/csharp/concepts/classes/declaring-classes.cs)]  
   
-The **class** keyword is preceded by the access level. Because [public](https://msdn.microsoft.com/en-us/library/yzh058ae.aspx) is used in this case, anyone can create objects from this class. The name of the class follows the **class** keyword. The remainder of the definition is the class body, where the behavior and data are defined. Fields, properties, methods, and events on a class are collectively referred to as *class members*.  
+The **class** keyword is preceded by the access modifier. Because [public](https://msdn.microsoft.com/en-us/library/yzh058ae.aspx) is used in this case, anyone can create objects from this class. The name of the class follows the **class** keyword. The remainder of the definition is the class body, where the behavior and data are defined. Fields, properties, methods, and events on a class are collectively referred to as *class members*.  
   
 ## Creating objects  
-Although they are sometimes used interchangeably, a class and an object are different things. A class defines a type of object, but it is not an object itself. An object is a concrete entity based on a class, and is sometimes referred to as an instance of a class.  
+A class defines a type of object, but it is not an object itself. An object is a concrete entity based on a class, and is sometimes referred to as an instance of a class.  
   
 Objects can be created by using the [new](https://msdn.microsoft.com/en-us/library/51y09td4.aspx) keyword followed by the name of the class that the object will be based on, like this:  
   
@@ -57,7 +57,7 @@ When a class declares a base class, it inherits all the members of the base clas
   
 Unlike C++, a class in C# can only directly inherit from one base class. However, because a base class may itself inherit from another class, a class may indirectly inherit multiple base classes. Furthermore, a class can directly implement more than one interface. For more information, see [Interfaces](interfaces.md).  
   
-A class can be declared [abstract](https://msdn.microsoft.com/en-us/library/sf985hc5.aspx). An abstract class contains abstract methods that have a signature definition but no implementation. Abstract classes cannot be instantiated. They can only be used through derived classes that implement the abstract methods. By constrast, a [sealed](https://msdn.microsoft.com/en-us/library/88c54tsw.aspx) class does not allow other classes to derive from it. For more information, see [Abstract and sealed classes and class members](https://msdn.microsoft.com/en-us/library/ms173150.aspx).  
+A class can be declared [abstract](https://msdn.microsoft.com/en-us/library/sf985hc5.aspx). An abstract class contains abstract methods that have a signature definition but no implementation. Abstract classes cannot be instantiated. They can only be used through derived classes that implement the abstract methods. By contrast, a [sealed](https://msdn.microsoft.com/en-us/library/88c54tsw.aspx) class does not allow other classes to derive from it. For more information, see [Abstract and sealed classes and class members](https://msdn.microsoft.com/en-us/library/ms173150.aspx).  
   
 Class definitions can be split between different source files. For more information, see [Partial class definitions](https://msdn.microsoft.com/en-us/library/wa80x488.aspx).  
   

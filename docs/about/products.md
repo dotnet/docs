@@ -32,7 +32,7 @@ Product Categories
 You can build desktop apps for Windows and macOS.
 
 - [Universal Windows Apps](https://developer.microsoft.com/windows) with [.NET Native](#net-native)
-- [Windows Presentation Framework (WPF)](https://msdn.microsoft.com/library/ms754130.aspx) for Windows with the [.NET Framework](#net-framework)
+- [Windows Presentation Foundation (WPF)](https://msdn.microsoft.com/library/ms754130.aspx) for Windows with the [.NET Framework](#net-framework)
 - [Windows Forms](https://msdn.microsoft.com/library/dd30h2yb.aspx) for Windows with the [.NET Framework](#net-framework)
 - Cocoa for macOS with [Xamarin](#xamarin-sdk)
 - [Electron](http://electron.atom.io/) for cross-platform desktop with [electron-edge](https://github.com/kexplo/electron-edge)

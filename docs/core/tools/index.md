@@ -85,7 +85,7 @@ The driver is named [dotnet](dotnet.md). It is the first part of what you invoke
 1. Running portable apps
 2. Executing the verb
 
-What it does depends on what is specified on the command-line. In the first case, you would 
+What it does depends on what is specified on the command line. In the first case, you would 
 specify a portable app DLL that `dotnet` would run similar to this: `dotnet /path/to/your.dll`. 
 
 In the second case, the driver attempts to invoke the specified command. This starts the CLI command execution 

@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 615db1ec-6ef3-4de2-bae6-4586affa9771
 ---
 
-# Getting Started with F#
+# Getting Started with F# #
 
 There are three primary ways to get started with F#:
 

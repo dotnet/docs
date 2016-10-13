@@ -170,7 +170,7 @@ query {
 // Join two tables
 query { 
   for course in context.Courses do
-  join (for dept in context.Departments -> course.DepartmentID = dept.DepartmentID)
+  join dept in context.Departments on (course.DepartmentID = dept.DepartmentID)
   select (course, dept.Name) 
 } |> Seq.iter (fun (course, deptName) -> printfn "%s %s" course.Title deptName)
 ```

@@ -4,7 +4,7 @@ description: The dotnet-build command builds a project and all of its dependenci
 keywords: dotnet-build, CLI, CLI command, .NET Core
 author: mairaw
 manager: wpickett
-ms.date: 10/07/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -95,3 +95,17 @@ Marks the build as unsafe for incremental build. This turns off incremental comp
 `--no-dependencies`
 
 Ignores project-to-project references and only builds the root project specified to build.
+
+## Examples
+
+Build a project and its dependencies:
+
+`dotnet build`
+
+Build a project and its dependencies using Release configuration:
+
+`dotnet build --configuration Release`
+
+Build a project and its dependencies for a specific runtime (in this excample, Ubuntu 16.04):
+
+`dotnet build --runtime ubuntu.16.04-x64`

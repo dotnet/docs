@@ -1,10 +1,10 @@
 ---
 title: dotnet-install scripts | .NET Core SDK
 description: Learn about the dotnet-install scripts to install the .NET Core CLI tools and the shared runtime. 
-keywords: .NET, .NET Core
+keywords: dotnet-install, dotnet-install scripts, .NET Core
 author: mairaw
 manager: wpickett
-ms.date: 10/07/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -56,7 +56,7 @@ Which channel (for example, `future`, `preview`, `production`) to install from. 
 
 `-Version [VERSION]`
 
-Which version of CLI to install; you need to specify the version as 3-part version (that is, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) that contains the [sdkVersion](global-json.md#sdkversion) property; if that is not present, it will use Latest. 	
+Which version of CLI to install; you need to specify the version as 3-part version (for example, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) that contains the [sdkVersion](global-json.md#sdkversion) property; if that is not present, it will use Latest. 	
 
 `-InstallDir [DIR]`
 
@@ -83,7 +83,7 @@ Which channel (for example "future", "preview", "production") to install from. T
 
 `--version [VERSION]`
 
-Which version of CLI to install; you need to specify the version as 3-part version (that is, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) that contains the [sdkVersion](global-json.md#sdkversion) property; if that is not present, it will use Latest. 	
+Which version of CLI to install; you need to specify the version as 3-part version (for example, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) that contains the [sdkVersion](global-json.md#sdkversion) property; if that is not present, it will use Latest. 	
 
 `--install-dir [DIR]`
 
@@ -111,7 +111,7 @@ Windows:
 
 `./dotnet-install.ps1 -Channel Future`
 
-OS X/Linux:
+macOS/Linux:
 
 `./dotnet-install.sh --channel Future`
 
@@ -121,6 +121,6 @@ Windows:
 
 `./dotnet-install.ps1 -Channel preview -InstallDir C:\cli`
 
-OS X/Linux:
+macOS/Linux:
 
 `./dotnet-install.sh --channel preview --install-dir ~/cli`

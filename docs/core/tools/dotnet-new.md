@@ -4,7 +4,7 @@ description: The dotnet-new command creates new .NET Core projects in the curren
 keywords: dotnet-new, CLI, CLI command, .NET Core
 author: mairaw
 manager: wpickett
-ms.date: 10/07/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -38,22 +38,22 @@ Prints out a short help for the command.
 
 `-l|--lang <C#|F#>`
 
-Language of the project. Defaults to `C#`. Valid values are `csharp`, `fsharp`, `cs` and `fs`.
+Language of the project. Defaults to `C#`. Other valid values are `csharp`, `fsharp`, `cs` and `fs`.
 
-`-t`, `--type`
+`-t|--type`
 
 Type of the project. Valid values for C# are `console`, `web`, `lib` and `xunittest` and for F# only `console` is valid. 
 
 ## Examples
 
-Create a C# project in the current directory:
+Create a C# console application in the current directory:
 
 `dotnet new` or `dotnet new --lang c#` 
    
-Create an F# project in the current directory:
+Create an F# console application in the current directory:
 
 `dotnet new --lang f#`
   
-Create a new ASP.NET Core project in the current directory:
+Create a new ASP.NET Core application in the current directory:
 
 `dotnet new -t web`

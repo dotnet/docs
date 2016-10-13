@@ -4,7 +4,7 @@ description: The dotnet-pack command creates NuGet packages for your .NET Core p
 keywords: dotnet-pack, CLI, CLI command, .NET Core
 author: mairaw
 manager: wpickett
-ms.date: 09/27/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -57,7 +57,7 @@ Does not build the project before packing.
 
 Places the temporary build artifacts in the specified directory. By default, they go to the `obj` directory in the current directory. 
 
-`-c`, `--configuration <Debug|Release>`
+`-c|--configuration <Debug|Release>`
 
 Configuration to use when building the project. If not specified, will default to `Debug`.
 

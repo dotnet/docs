@@ -186,26 +186,11 @@ The `mvcrandomanswers` is the name of the image to start.
 > the IP address of the container.
 
 Once the container starts, you'll need to find its IP address so that you
-can connect to your running container from a browser. You use the `docker exec`
-command to do that:
+can connect to your running container from a browser:
 
 ```
-docker exec randomanswers ipconfig
-```
-
-You will see an output similar to this:
-
-```
-Windows IP Configuration
-
-
-Ethernet adapter Ethernet 2:
-
-   Connection-specific DNS Suffix  . :
-   Link-local IPv6 Address . . . . . : fe80::91d:ce97:dd27:460d%5
-   IPv4 Address. . . . . . . . . . . : 172.31.194.61
-   Subnet Mask . . . . . . . . . . . : 255.240.0.0
-   Default Gateway . . . . . . . . . : 172.16.0.1
+docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" randomanswers
+172.31.194.61
 ```
 
 You can connect to the running container using the IPv4 

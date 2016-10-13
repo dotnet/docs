@@ -342,14 +342,18 @@ You may wish to write a library which depends on a native `.dll` file.  If you'r
 For the first option, you'll need to include the following in your `project.json` file:
 
 1. Setting `allowUnsafe` to `true` in a `buildOptions` section.
-2. Specifying the path to the native `.dll`(s) with a [Runtime Identifier (RID)](../rid-catalog.md) under `runtimes/{RID}/native`, under `mappings`, under `files` in the `packOptions` section.
+2. Specifying a [Runtime Identifier (RID)](../rid-catalog.md) in a `runtimes` section.
+3. Specifying the path to the native `.dll`(s) that you are referencing.
 
-If you're distributing your library as a package, it's recommended that you place the `.dll` file at the root level of your project.  Here's an example `project.json` for a native `.dll` file in the root directory of the project which runs on Windows 10 x64:
+Here's an example `project.json` for a native `.dll` file in the root directory of the project which runs on Windows:
 
 ```json
 {
     "buildOptions":{
         "allowUnsafe":true
+    },
+    "runtimes":{
+        "win10-x64":{}
     },
     "packOptions":{
         "files":{
@@ -359,12 +363,11 @@ If you're distributing your library as a package, it's recommended that you plac
                 }
             }            
         }
-    },
-    "runtimes":{
-        "win10-x64":{}
     }
 }
 ```
+
+If you're distributing your library as a package, it's recommended that you place the `.dll` file at the root level of your project.
 
 For the second option, you'll need to build a NuGet package out of your `.dll` file(s), host on a NuGet or MyGet feed, and depend on it directly.  You'll still need to set `allowUnsafe` to `true` in the `buildOptions` section of your `project.json`.  Here's an example (assuming `MyNativeLib` is a Nuget package at version `1.2.0`):
 

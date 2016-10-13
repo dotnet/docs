@@ -91,7 +91,7 @@ $ dotnet run
 Hello, World!
 ```
 
-You can also execute [`dotnet build`](../tools/dotnet-build.md) to compile and the code without running the build console applications.
+You can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the code without running the build console applications.
 
 ### Building a self-contained application
 

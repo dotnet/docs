@@ -12,7 +12,7 @@ ms.devlang: csharp
 ms.assetid: abed9e00-2ddc-468e-9cca-d033bd6a7e36
 ---
 
-# 🔧 UUsing the .NET Compiler SDK
+# 🔧 Using the .NET Compiler SDK
 
 > **Note**
 > 

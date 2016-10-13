@@ -164,7 +164,7 @@ query {
 query { 
   for course in context.Courses do
   where (course.DepartmentID = 1)
-  select course)
+  select course
 } |> Seq.iter (fun course -> printfn "%s" course.Title)
 
 // Join two tables

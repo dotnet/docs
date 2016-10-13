@@ -192,13 +192,13 @@ let nullable value = new System.Nullable<_>(value)
 // Throw an exception if more than one matching person is found.
 let changeHireDate(lastName, firstName, hireDate) =
 
-query { 
-  for person in context.People do
-  where (person.LastName = lastName &&
-  person.FirstName = firstName)
-  exactlyOne 
-} |> (fun person ->
-          context.UpdatePerson(nullable person.PersonID, person.LastName, person.FirstName, nullable hireDate, person.EnrollmentDate))
+  query { 
+    for person in context.People do
+    where (person.LastName = lastName &&
+           person.FirstName = firstName)
+    exactlyOne 
+  } |> (fun person ->
+            context.UpdatePerson(nullable person.PersonID, person.LastName, person.FirstName, nullable hireDate, person.EnrollmentDate))
 
 changeHireDate("Abercrombie", "Kim", DateTime.Parse("1/12/1998"))
 |> printfn "Result: %d"

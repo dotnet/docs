@@ -342,9 +342,9 @@ You may wish to write a library which depends on a native `.dll` file.  If you'r
 For the first option, you'll need to include the following in your `project.json` file:
 
 1. Setting `allowUnsafe` to `true` in a `buildOptions` section.
-2. Specifying the path to the native `.dll`(s) with a [Runtime Identifier (RID)](../rid-catalog.md) under `files` in the `packOptions` section.
+2. Specifying the path to the native `.dll`(s) with a [Runtime Identifier (RID)](../rid-catalog.md) under `runtimes/{RID}/native`, under `mappings`, under `files` in the `packOptions` section.
 
-If you're distributing your library as a package, it's recommended that you place the `.dll` file at the root level of your project.  Here's an example `project.json` for a native `.dll` file that runs on Windows x64:
+If you're distributing your library as a package, it's recommended that you place the `.dll` file at the root level of your project.  Here's an example `project.json` for a native `.dll` file in the root directory of the project which runs on Windows 10 x64:
 
 ```json
 {
@@ -353,8 +353,15 @@ If you're distributing your library as a package, it's recommended that you plac
     },
     "packOptions":{
         "files":{
-            "runtimes/win7-x64/native/":"native-lib.dll"
+            "mappings":{
+                "runtimes/win10-x64/native":{
+                    "includeFiles":[ "native-lib.dll"]
+                }
+            }            
         }
+    },
+    "runtimes":{
+        "win10-x64":{}
     }
 }
 ```

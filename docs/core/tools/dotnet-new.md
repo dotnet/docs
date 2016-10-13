@@ -46,14 +46,14 @@ Type of the project. Valid values for C# are `console`, `web`, `lib` and `xunitt
 
 ## Examples
 
-Create a C# console application in the current directory:
+Create a C# console application project in the current directory:
 
 `dotnet new` or `dotnet new --lang c#` 
    
-Create an F# console application in the current directory:
+Create an F# console application project in the current directory:
 
 `dotnet new --lang f#`
   
-Create a new ASP.NET Core application in the current directory:
+Create a new ASP.NET Core C# application project in the current directory:
 
 `dotnet new -t web`

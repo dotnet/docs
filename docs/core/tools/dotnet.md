@@ -1,10 +1,10 @@
 ---
-title: dotnet command
-description: dotnet command
-keywords: .NET, .NET Core
+title: dotnet command | .NET Core SDK
+description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.  
+keywords: dotnet, CLI, CLI commands, .NET Core
 author: mairaw
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -12,27 +12,26 @@ ms.devlang: dotnet
 ms.assetid: 93015521-2127-4fe9-8fce-ca79bcc4ff49
 ---
 
-dotnet command
-==============
+#dotnet command
 
-## NAME
+## Name
 
 dotnet -- General driver for running the command-line commands
 
-## SYNOPSIS
+## Synopsis
 
-`dotnet [--version] [--help] [--verbose] [--info] <command> [<args>]`
+`dotnet [--version] [--verbose] [--info] [command] [arguments] [--help]`
 
-## DESCRIPTION
+## Description
 `dotnet` is a generic driver for the Command Line Interface (CLI) toolchain. Invoked on its own, it will give out brief usage instructions. 
 
 Each specific feature is implemented as a command. In order to use the feature, the command is specified after `dotnet`, such as [`dotnet build`](dotnet-build.md). All of the arguments following the command are its own arguments. 
 
 The only time `dotnet` is used as a command on its own is to run portable apps. Just specify a portable application DLL after the `dotnet` verb to execute the application.    
 
+## Options
 
-## OPTIONS
-`-v, --verbose`
+`-v|--verbose`
 
 Enables verbose output.
 
@@ -44,11 +43,11 @@ Prints out the version of the CLI tooling.
 
 Prints out more detailed information about the CLI tooling, such as the current operating system, commit SHA for the version, etc. 
 
-`-h, --help`
+`-h|--help`
 
-Prints out a short help and a list of current commands. 
+Prints out a short help for the command. If using with `dotnet` only, it also prints a list of the available commands.  
 
-## DOTNET COMMANDS
+## dotnet commands
 
 The following commands exist for dotnet:
 
@@ -67,25 +66,24 @@ The following commands exist for dotnet:
 * [dotnet-pack](dotnet-pack.md)
    * Creates a NuGet package of your code.
 
-## EXAMPLES
+## Examples
+
+Initialize a sample .NET Core console application that can be compiled and run:
 
 `dotnet new`
 
-Initializes a sample .NET Core console application that can be compiled and run.
+Restore dependencies for a given application:
 
 `dotnet restore`
 
-Restores dependencies for a given application. 
+Build a project and its dependencies in a given directory: 
 
-`dotnet compile`
+`dotnet build`
 
-Compiles the application in a given directory. 
-
+Run a portable app named `myapp.dll`:
 `dotnet myapp.dll`
 
-Runs a portable app named `myapp.dll`. 
-
-## ENVIRONMENT 
+## Environment 
 
 `DOTNET_PACKAGES`
 
@@ -97,4 +95,4 @@ Specifies the location of the servicing index to use by the shared host when loa
 
 `DOTNET_CLI_TELEMETRY_OPTOUT`
 
-Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. **true** to opt-out of the telemetry feature (values true, 1 or yes accepted); otherwise, **false** (values false, 0 or no accepted). If not set, it defaults to **false**, that is, the telemetry feature is on.
+Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. `true` to opt-out of the telemetry feature (values true, 1 or yes accepted); otherwise, `false` (values false, 0 or no accepted). If not set, it defaults to `false`, that is, the telemetry feature is on.

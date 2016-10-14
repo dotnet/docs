@@ -1,10 +1,10 @@
 ---
-title: dotnet-build
-description: dotnet-build
-keywords: .NET, .NET Core
+title: dotnet-build command | .NET Core SDK
+description: The dotnet-build command builds a project and all of its dependencies. 
+keywords: dotnet-build, CLI, CLI command, .NET Core
 author: mairaw
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 10/13/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -12,21 +12,20 @@ ms.devlang: dotnet
 ms.assetid: 70285a83-4103-4617-be8b-d0e1e9a4a91d
 ---
 
-dotnet-build
-===========
+#dotnet-build
 
-## NAME 
+## Name 
 dotnet-build -- Builds a project and all of its dependencies 
 
-## SYNOPSIS
+## Synopsis
 
-`dotnet build [--output]  
+`dotnet build [--help] [--output]  
     [--build-base-path] [--framework]  
     [--configuration]  [--runtime] [--version-suffix]
     [--build-profile]  [--no-incremental] [--no-dependencies]
-    [<project>]`  
+    [<project>]`
 
-## DESCRIPTION
+## Description
 
 The `dotnet build` command builds multiple source file from a source project and its dependencies into a binary. 
 By default, the resulting binary is in Intermediate Language (IL) and has a DLL extension. 
@@ -55,31 +54,35 @@ In order to build an executable application instead of a library, you need a [sp
 }
 ```
 
-## OPTIONS
+## Options
 
-`-o`, `--output` [DIR]
+`-h|--help`
 
-Directory in which to place the built binaries. 
+Prints out a short help for the command.  
 
-`-b`, `--build-base-path` [DIR]
+`-o|--output <OUTPUT_DIRECTORY>`
+
+Directory in which to place the built binaries. You also need to define `--framework` when you specify this option.
+
+`-b|--build-base-path <OUTPUT_DIRECTORY>`
 
 Directory in which to place temporary outputs.
 
-`-f`, `--framework` [FRAMEWORK]
+`-f|--framework <FRAMEWORK>`
 
-Compiles for a specific framework. The framework needs to be defined in the project.json file.
+Compiles for a specific framework. The framework needs to be defined in the [project.json](project-json.md#frameworks) file.
 
-`-c`, `--configuration` [Debug|Release]
+`-c|--configuration [Debug|Release]`
 
-Defines a configuration under which to build.  If omitted, it defaults to Debug.
+Defines a configuration under which to build.  If omitted, it defaults to `Debug`.
 
-`-r`, `--runtime` [RUNTIME_IDENTIFIER]
+`-r|--runtime [RUNTIME_IDENTIFIER]`
 
-Target runtime to build for. 
+Target runtime to build for. For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../rid-catalog.md). 
 
-`--version-suffix` [VERSION_SUFFIX]
+`--version-suffix [VERSION_SUFFIX]`
 
-Defines what `*` should be replaced with in the version field in the project.json file. The format follows NuGet's version guidelines. 
+Defines what `*` should be replaced with in the version field in the [project.json](project-json.md#version) file. The format follows NuGet's version guidelines. 
 
 `--build-profile`
 
@@ -92,3 +95,17 @@ Marks the build as unsafe for incremental build. This turns off incremental comp
 `--no-dependencies`
 
 Ignores project-to-project references and only builds the root project specified to build.
+
+## Examples
+
+Build a project and its dependencies:
+
+`dotnet build`
+
+Build a project and its dependencies using Release configuration:
+
+`dotnet build --configuration Release`
+
+Build a project and its dependencies for a specific runtime (in this example, Ubuntu 16.04):
+
+`dotnet build --runtime ubuntu.16.04-x64`

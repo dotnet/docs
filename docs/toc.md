@@ -32,14 +32,14 @@
 ### [Enums](csharp/tour-of-csharp/enums.md)
 ### [Delegates](csharp/tour-of-csharp/delegates.md)
 ### [Attributes](csharp/tour-of-csharp/attributes.md)
-## [🔧 Latest features](csharp/whats-new.md) 
+## [Latest features](csharp/whats-new.md) 
 ### [🔧 What's new in C# 7](csharp/csharp-7.md)
 ### [What's new in C# 6](csharp/csharp-6.md)
 ## [🔧 C# Interactive](csharp/interactive.md)
 ### [🔧 Using C# Interactive in Visual Studio](csharp/interactive-with-visualstudio.md)
 ### [🔧 Using C# Interactive from Powershell](csharp/interactive-with-powershell.md)
-### [🔧 Using C# Interactive from MacOS or Linux Terminal](csharp/interactive-with-bash.md)
-## [C# Concepts](csharp/concepts.md)
+### [🔧 Using C# Interactive from macOS or Linux Terminal](csharp/interactive-with-bash.md)
+## [🔧 C# Concepts](csharp/concepts.md)
 ### [🔧 C# Type system](csharp/type-system.md)
 ### [🔧 Namespaces and Assemblies](csharp/namespaces-and-assemblies.md)
 ### [Basic Types](csharp/basic-types.md)
@@ -228,6 +228,7 @@
 ### [Code Formatting Guidelines](fsharp/language-reference/code-formatting-guidelines.md)
 <!-- End F# Content -->
 
+<!-- .NET Standard Content -->
 # [.NET Standard](standard/index.md)
 ## [.NET Standard Library](standard/library.md)
 ## [Frameworks](standard/frameworks.md)
@@ -345,20 +346,22 @@
 ### [Converting times between time zones](standard/datetime/converting-between-time-zones.md)
 ### [How to: resolve ambiguous times](standard/datetime/resolve-ambiguous-times.md)
 ### [How to: let users resolve ambiguous times](standard/datetime/let-users-resolve-ambiguous-times.md)
+<!-- End .NET Standard Content -->
 
+<!-- .NET Core Content -->
 # [.NET Core Guide](core/index.md)
 ## [Getting started](core/getting-started.md)
 ## [Windows Prerequisites](core/windows-prerequisites.md)
 ## [Tutorials](core/tutorials/index.md)
 ### [Getting started with .NET Core on Windows](core/tutorials/using-on-windows.md)
 ### [Getting started with .NET Core on macOS](core/tutorials/using-on-macos.md)
-### [Getting started with .NET Core on Windows/Linux/macOS using the command line](core/tutorials/using-with-xplat-cli.md)
+### [Getting started with .NET Core on using the command line](core/tutorials/using-with-xplat-cli.md)
 ### [Developing Libraries with Cross Platform Tools](core/tutorials/libraries.md)
 ### [Developing ASP.NET Core applications](core/tutorials/aspnet-core.md)
 ### [How to Manage Package Dependency Versions for .NET Core 1.0](core/tutorials/managing-package-dependency-versions.md)
 ### [Using MSBuild to build .NET Core projects](core/tutorials/target-dotnetcore-with-msbuild.md)
 ## [Packages, Metapackages and Frameworks](core/packages.md)
-## [Deploying](core/deploying/index.md)
+## [Application Deployment](core/deploying/index.md)
 ### [🔧 Deploying Applications](core/deploying/applications.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
 ## [Docker](core/docker/index.md)
@@ -368,7 +371,7 @@
 ### [Unit Testing with dotnet test](core/testing/unit-testing-with-dotnet-test.md)
 ### [Unit testing with MSTest on Windows](core/testing/using-mstest-on-windows.md)
 ## [Releases](core/versions/index.md)
-### [Servicing](core/versions/servicing.md)
+### [🔧 Servicing](core/versions/servicing.md)
 ## [Runtime IDentifier catalog](core/rid-catalog.md)
 ## [.NET Core Tools](core/tools/index.md)
 ### [Telemetry](core/tools/telemetry.md)
@@ -394,10 +397,11 @@
 ## [Migrating from DNX](core/migrating-from-dnx.md)
 <!-- End .NET Core Content -->
 
+<!-- .NET Framework Content -->
 # [.NET Framework](framework/index.md)
 ## [Docker](framework/docker/index.md)
 ### [Running Console Apps in Containers](framework/docker/console.md)
 ### [Running ASP.NET MVC Apps in Containers](framework/docker/aspnetmvc.md)
-
+<!-- End .NET Framework Content -->
 
 # [Samples and Tutorials](samples-and-tutorials/index.md)

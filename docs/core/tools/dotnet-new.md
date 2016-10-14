@@ -1,10 +1,10 @@
 ---
-title: dotnet-new
-description: dotnet-new
-keywords: .NET, .NET Core
+title: dotnet-new command | .NET Core
+description: The dotnet-new command creates new .NET Core projects in the current directory.
+keywords: dotnet-new, CLI, CLI command, .NET Core
 author: mairaw
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -12,19 +12,18 @@ ms.devlang: dotnet
 ms.assetid: 263c3d05-3a47-46a6-8023-3ca16b488410
 ---
 
-dotnet-new
-==========
+#dotnet-new
 
-## NAME
-dotnet-new -- Creates a new .NET Core project
+## Name
+dotnet-new -- Creates a new .NET Core project in the current directory
 
-## SYNOPSIS
-`dotnet new [--type] [--lang]`
+## Synopsis
+`dotnet new [--help] [--type] [--lang]`
 
-## DESCRIPTION
+## Description
 The `dotnet new` command provides a convenient way to initialize a valid .NET Core project and sample source code to try out the Command Line Interface (CLI) toolset. 
 
-This command is invoked in the context of a directory. When invoked, the command will result in two main artifacts being dropped to the directory: 
+This command is invoked in the context of a directory. When invoked, the command will result in two main artifacts being dropped to the current directory: 
 
 1. A `Program.cs` (or `Program.fs`) file that contains a sample "Hello World" program.
 2. A valid `project.json` file.
@@ -33,28 +32,28 @@ After this, the project is ready to be compiled and/or edited further.
 
 ## Options
 
-`-l`, `--lang [C#|F#]`
+`-h|--help`
 
-Language of the project. Defaults to `C#`. `csharp` (`fsharp`) or `cs` (`fs`) are also valid options.
+Prints out a short help for the command.  
 
-`-t`, `--type`
+`-l|--lang <C#|F#>`
 
-Type of the project. Valid values are `console`, `web`, `lib` and `xunittest`. 
+Language of the project. Defaults to `C#`. Other valid values are `csharp`, `fsharp`, `cs` and `fs`.
 
-## EXAMPLES
+`-t|--type`
 
-`dotnet new`
-    
-Drops a C# project in the current directory.
+Type of the project. Valid values for C# are `console`, `web`, `lib` and `xunittest` and for F# only `console` is valid. 
+
+## Examples
+
+Create a C# console application project in the current directory:
+
+`dotnet new` or `dotnet new --lang c#` 
+   
+Create an F# console application project in the current directory:
 
 `dotnet new --lang f#`
-    
-Drops an F# project in the current directory.
-
-`dotnet new --lang c#`
-    
-Drops an C# project in the current directory.
+  
+Create a new ASP.NET Core C# application project in the current directory:
 
 `dotnet new -t web`
-    
-Drops a new ASP.NET Core project in the current directory. 

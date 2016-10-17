@@ -51,6 +51,13 @@ Azure Storage is a base layer of storage services for modern applications that r
 Azure Storage can also be used in conjunction with Azure Functions through declarative configuration rather than explicit API calls. See [Azure Functions triggers and bindings for Azure Storage](https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-storage/) which includes F# examples.
 
 
+## Using Azure App Service with F# #
+
+[Azure App Service](https://azure.microsoft.com/en-us/services/app-service/) is a cloud platform to build powerful web and mobile apps that connect to data anywhere, in the cloud or on-premises.
+
+* [F# Azure Web API example](https://github.com/fsprojects/azure-webapi-example)
+* [Hosting F# in a web application on Azure](https://github.com/isaacabraham/fsharp-demonstrator)
+
 ## Using Azure DocumentDB with F# #
 
 [Azure DocumentDB](https://azure.microsoft.com/en-us/services/documentdb/) is a NoSQL service for highly available, globally distributed apps.
@@ -69,7 +76,7 @@ Azure Event Hubs can be used with F# in two ways:
 1. Through the creation of F# Azure Functions which are triggered by events. See [Azure Function triggers for Event Hubs](https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-event-hubs/), or
 2. By using the [.NET SDK for Azure](https://azure.microsoft.com/en-us/documentation/articles/event-hubs-csharp-ephcs-getstarted/). Note these examples are in C#.
 
-## Using Azure Notifcation Hubs with F# #
+## Using Azure Notification Hubs with F# #
 
 [Azure Notification Hubs](https://azure.microsoft.com/en-us/documentation/services/notification-hubs/) are multiplatform, scaled-out push infrastructure that enable you to send mobile push notifications from any backend (in the cloud or on-premises) to any mobile platform.
 

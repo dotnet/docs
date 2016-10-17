@@ -125,7 +125,7 @@ Delegates are like C++ function pointers, with a big difference that they are ty
 
 Delegates are used in various APIs and places in the .NET world, especially through lambda expressions, which are a cornerstone of LINQ.
 
-Read more about it in the [Delegates and lambdas](delegates-lambdas.md) document.
+Read more about it in the [Delegates and lambdas](../fundamentals/delegates-lambdas.md) document.
 
 ## Generic types (Generics)
 
@@ -156,19 +156,19 @@ namespace GenericsSampleShort {
 
 ```
 
-For more information, see the [Generic types (Generics) overview](generics.md) article.
+For more information, see the [Generic types (Generics) overview](../fundamentals/generics.md) article.
 
 ## Async programming
 
 Async programming is a first-class concept within .NET, with async support in the runtime, the framework libraries, and .NET language constructs. Internally, they are based off of objects (such as `Task`) which take advantage of the operating system to perform I/O-bound jobs as efficiently as possible.
 
-To learn more about async programming in .NET, start with the [Async overview](async.md).
+To learn more about async programming in .NET, start with the [Async overview](../fundamentals/async.md).
 
 ## Language Integrated Query (LINQ)
 
 LINQ is a powerful set of features for C# and VB that allow you to write simple, declarative code for operating on data. The data can be in many forms (such as in-memory objects, in a SQL database, or an XML document), but the LINQ code you write typically won't look different for each data source!
 
-To learn more and see some samples, check out [LINQ (Language Integrated Query)](using-linq.md).
+To learn more and see some samples, check out [LINQ (Language Integrated Query)](../fundamentals/using-linq.md).
 
 ## Native interoperability
 
@@ -178,7 +178,7 @@ The main way to do native interoperability is via "platform invoke" or P/Invoke 
 
 Most of Mono's (and thus Xamarin's) interoperability support for Java and Objective-C are built similarly, that is, they use the same principles.
 
-Read more about it in the [Native interoperability](native-interop.md) document.
+Read more about it in the [Native interoperability](../fundamentals/native-interop.md) document.
 
 ## Unsafe code
 

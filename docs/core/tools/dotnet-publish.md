@@ -100,5 +100,5 @@ exist in the `project.json` [runtimes](project-json.md#runtimes) node):
 `dotnet publish --framework netcoreapp1.0 --runtime osx.10.11-x64`
 
 ## See also
-* [Frameworks](../../standard/frameworks.md)
+* [Frameworks](../../fundamentals/frameworks.md)
 * [Runtime IDentifier (RID) catalog](../rid-catalog.md)

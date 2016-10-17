@@ -27,7 +27,7 @@ There is great diversity across these languages, in philosophy and syntax, but a
 
 Multiple [.NET implementations and products](products.md) are available, based on open [.NET Standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) that specify the fundamentals of the platform. They are separately optimized for different application types (for example, desktop, mobile, gaming, cloud) and support many chips (for example, x86/x64, ARM) and operating systems (for example, Windows, Linux, iOS, Android, macOS). Open source is also an important part of the .NET ecosystem, with multiple .NET implementations and many libraries available under OSI-approved licenses.
 
-- Learn about [.NET](../standard/index.md)
+- Learn about [.NET](../fundamentals/index.md)
 - Learn about [C#](../csharp/index.md)
 - Learn about [F#](../fsharp/index.md)
 - Browse the [.NET API Library](../../api/index.md)

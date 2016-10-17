@@ -33,7 +33,7 @@ You use the [struct](https://msdn.microsoft.com/en-us/library/ah19swz4.aspx) key
   
 [!code-csharp[Struct Keyword](../../samples/snippets/csharp/concepts/structs/struct-keyword.cs)]  
   
-For more information about value types in the .NET Framework, see [Common Type System](../standard/common-type-system.md).  
+For more information about value types in the .NET Framework, see [Common Type System](../fundamentals/common-type-system.md).  
     
 Structs share most of the same syntax as classes, although structs are more limited than classes:  
   

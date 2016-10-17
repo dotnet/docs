@@ -233,7 +233,7 @@
 <!-- End F# Content -->
 
 <!-- .NET Standard Content -->
-# [.NET Platform](platform/index.md)
+# [.NET Platform Guide](platform/index.md)
 ## [.NET Standard Library](platform/library.md)
 ## [Frameworks and Targets](platform/frameworks.md)
 ## [What is "managed code"?](platform/managed-code.md)

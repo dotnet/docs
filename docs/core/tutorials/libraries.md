@@ -343,7 +343,7 @@ For the first option, you'll need to include the following in your `project.json
 
 1. Setting `allowUnsafe` to `true` in a `buildOptions` section.
 2. Specifying a [Runtime Identifier (RID)](../rid-catalog.md) in a `runtimes` section.
-3. Specifying the path to the native `.dll`(s) that you are referencing.
+3. Specifying the path to the native `.dll` file(s) that you are referencing.
 
 Here's an example `project.json` for a native `.dll` file in the root directory of the project which runs on Windows:
 

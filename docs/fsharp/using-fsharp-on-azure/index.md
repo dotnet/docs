@@ -56,6 +56,7 @@ Azure Storage can also be used in conjunction with Azure Functions through decla
 [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/) is a cloud platform to build powerful web and mobile apps that connect to data anywhere, in the cloud or on-premises.
 
 * [F# Azure Web API example](https://github.com/fsprojects/azure-webapi-example)
+* [Hosting F# in a web application on Azure](https://github.com/isaacabraham/fsharp-demonstrator)
 
 ## Using Azure DocumentDB with F# #
 

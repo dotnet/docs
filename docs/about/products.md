@@ -14,6 +14,9 @@ ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
 
 # .NET Products
 
+>[!WARNING]
+This article will be rewritten.
+
 .NET is a very flexible, general purpose and inherently cross-platform [specification](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) for building developer products. It is used for all of the most popular app categories: desktop, mobile, cloud, gaming and IoT.
 
 There are two subtly different terms used in this document:

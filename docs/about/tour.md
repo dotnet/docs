@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 ---
 
-# .NET Primer
+# Tour of .NET
 
 > Check out the ["Getting Started with .NET Core" tutorials](../core/getting-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
 
@@ -30,17 +30,7 @@ concepts in the .NET Platform and to know how to further your knowledge about th
 
 As any mature and advanced application development framework, .NET has many powerful features that make the developer's job easier and aim to make writing code more powerful and expressive. This section will outline the basics of the most salient features and provide pointers to more detailed discussions where needed. After finishing this stroll, you should have enough information to be able to read the samples on our GitHub repos as well as other code and understand what is going on.
 
-*   [Programming languages](#programming-languages)
-*   [Automatic memory management](#automatic-memory-management)
-*   [Type safety](#type-safety)
-*   [Delegates and lambdas](#delegates-and-lambdas)
-*   [Generic types (Generics)](#generic-types-generics)
-*   [Language Integrated Query (LINQ)](#language-integrated-query-linq)
-*   [Async programming](#async-programming)
-*   [Native interoperability](#native-interoperability)
-*   [Unsafe code](#unsafe-code)
-
-### Programming languages
+## Programming languages
 
 As a developer, you can choose any programming language that supports .NET to create your application. Because .NET provides language independence and interoperability, you can interact with other .NET applications and components regardless of the language with which they were developed.
 
@@ -48,16 +38,13 @@ Languages that allow you to develop applications for the .NET Platform adhere to
 
 Microsoft languages that .NET supports include C#, F#, and Visual Basic. 
 
-* C# is simple, powerful, type-safe, and object-oriented while retaining the expressiveness and elegance of C-style languages. Anyone familiar with C and similar languages will find few problems in adapting to C#.
+* C# is simple, powerful, type-safe, and object-oriented while retaining the expressiveness and elegance of C-style languages. Anyone familiar with C and similar languages will find few problems in adapting to C#.  Check out the [C# Guide](../csharp/index.md) to learn more about C#.
 
-* F# is a cross-platform, functional-first programming language that also supports traditional object-oriented and imperative programming.
+* F# is a cross-platform, functional-first programming language that also supports traditional object-oriented and imperative programming.  Check out the [F# Guide](../fsharp/index.md) to learn more about F#.
 
 * Visual Basic is an easy language to learn that you can use to build a variety of applications that run on .NET.
 
-> [!NOTE]
-> In the current release of .NET Core, only C# is fully supported across all Microsoft tools.  F# is supported in the .NET Core SDK, but does not have Visual Studio tooling yet.  Visual Basic support for the SDK and Visual Studio tooling are coming.
-
-### Automatic memory management
+## Automatic memory management
 
 Garbage collection is the most well-known of .NET features. Developers do not need to actively manage memory, although there are mechanisms to provide more information to the garbage collector (GC). C# includes the `new` keyword to allocate memory in terms of a particular type, and the `using` keyword to provide scope for the usage of the object. The GC operates on a lazy approach to memory management, preferring application throughput to the immediate collection of memory.
 
@@ -95,7 +82,7 @@ int number = numbers[42]; // will throw (indexes are 0-based)
 
 ```
 
-### Type safety
+## Type safety
 
 Objects are allocated in terms of types. The only operations allowed for a given object, and the memory it consumes, are those of its type. A `Dog` type may have `Jump` and `WagTail` methods, but not likely a `SumTotal` method. A program can only call the declared methods of a given type. All other calls will result either in a compile-time error or a run-time exception (in case of using dynamic features or `object`).
 
@@ -132,7 +119,7 @@ Some .NET languages support **type inference**. Type inference means that the co
 
 ```
 
-### Delegates and lambdas
+## Delegates and lambdas
 
 Delegates are like C++ function pointers, with a big difference that they are type safe. They are a kind of disconnected method within the CLR type system. Regular methods are attached to a class and only directly callable through static or instance calling conventions.
 
@@ -140,7 +127,7 @@ Delegates are used in various APIs and places in the .NET world, especially thro
 
 Read more about it in the [Delegates and lambdas](delegates-lambdas.md) document.
 
-### Generic types (Generics)
+## Generic types (Generics)
 
 Generic types, also commonly called "generics", are a feature that was added in .NET Framework 2.0. In short, generics allow the programmer to introduce a "type parameter" when designing their classes, that will allow the client code (the users of the type) to specify the exact type to use in place of the type parameter.
 
@@ -171,19 +158,19 @@ namespace GenericsSampleShort {
 
 For more information, see the [Generic types (Generics) overview](generics.md) article.
 
-### Async programming
+## Async programming
 
 Async programming is a first-class concept within .NET, with async support in the runtime, the framework libraries, and .NET language constructs. Internally, they are based off of objects (such as `Task`) which take advantage of the operating system to perform I/O-bound jobs as efficiently as possible.
 
 To learn more about async programming in .NET, start with the [Async overview](async.md).
 
-### Language Integrated Query (LINQ)
+## Language Integrated Query (LINQ)
 
 LINQ is a powerful set of features for C# and VB that allow you to write simple, declarative code for operating on data. The data can be in many forms (such as in-memory objects, in a SQL database, or an XML document), but the LINQ code you write typically won't look different for each data source!
 
 To learn more and see some samples, check out [LINQ (Language Integrated Query)](using-linq.md).
 
-### Native interoperability
+## Native interoperability
 
 Every operating system in current use provides a lot of platform support for various programming tasks. .NET provides several ways to tap into those APIs. Collectively, this support is called "native interoperability" and in this section we will take a look at how to access native APIs from managed, .NET code.
 
@@ -193,7 +180,7 @@ Most of Mono's (and thus Xamarin's) interoperability support for Java and Object
 
 Read more about it in the [Native interoperability](native-interop.md) document.
 
-### Unsafe code
+## Unsafe code
 
 The CLR enables the ability to access native memory and do pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms and system interoperability. Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm. Unsafe code may not execute the same way in different environments, and also loses the benefits of a garbage collector and type safety. It's recommended to confine and centralize unsafe code as much as possible, and test that code thoroughly.
 

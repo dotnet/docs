@@ -40,7 +40,7 @@ This documentation will show you how to build an app from scratch or finish one 
 - [C# Guide](csharp/index.md)
 - [F# Guide](fsharp/index.md)
 - [.NET Core API](../api/index.md)
-- [.NET Fundamentals Guide](fundamentals/index.md)
+- [.NET Platform Guide](platform/index.md)
 - [.NET Core Guide](core/index.md)
 - [.NET Framework Guide](framework/index.md)
 

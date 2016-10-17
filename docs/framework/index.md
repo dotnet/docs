@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: a27b2ae4-154e-4b2b-b221-0c4c05185274
 ---
 
-# .NET Framework
+# .NET Framework Guide
 
 The .NET Framework is a development platform for building applications for Windows, Windows Phone, Windows Server, and Microsoft Azure. It consists of the common language runtime (CLR) and the .NET Framework class library, which includes classes, interfaces, and value types that support an extensive range of technologies. The .NET Framework provides a managed execution environment, simplified development and deployment, and integration with a variety of programming languages, including Visual Basic, Visual C# and F#.
 

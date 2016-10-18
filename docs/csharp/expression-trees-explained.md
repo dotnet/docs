@@ -23,7 +23,7 @@ in the Roslyn APIs to build [Analyzers and CodeFixes](https://github.com/dotnet/
 (Analyzers and CodeFixes are NuGet packages that perform static analysis on code and can suggest
 potential fixes for a developer.)
 The concepts are similar, and the end result
-is a data structure that allows examination of the source ode in a meaningful way. However, Expression
+is a data structure that allows examination of the source code in a meaningful way. However, Expression
 Trees are based on a totally different set of classes and APIs than the Roslyn APIs.
     
 Let's look at a simple example.

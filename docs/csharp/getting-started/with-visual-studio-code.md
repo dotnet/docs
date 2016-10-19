@@ -16,6 +16,7 @@ ms.assetid: 76c23597-4cf9-467e-8a47-0c3703ce37e7
 # Getting started with Visual Studio Code
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Note**
 > 
 > This topic hasn’t been written yet! 
@@ -29,6 +30,9 @@ ms.assetid: 76c23597-4cf9-467e-8a47-0c3703ce37e7
 >
 =======
 .NET Core gives you a blazing fast and modular platform for creating server applications that run on Windows, Linux and macOS. Use Visual Studio Code with the C# extension to get a powerful editing experience with full support for C# IntelliSense (smart code completion) and debugging.
+=======
+.NET Core gives you a fast and modular platform for creating server applications that run on Windows, Linux and macOS. Use Visual Studio Code with the C# extension to get a powerful editing experience with full support for C# IntelliSense (smart code completion) and debugging.
+>>>>>>> Deleted "blazing" and "fun"
 
 ## Getting Started
 
@@ -67,7 +71,7 @@ If you'd like to get started with a simple "Hello World" program on .NET Core, f
 
   ![dotnetRun](https://github.com/dotnet/core-docs/blob/master/docs/images/dotnetRun.PNG)
 
-You can also watch a short fun video tutorial for further setup help on [Windows](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core), [macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core-on-MacOS), or [Linux](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-Csharp-dotnet-Core-Ubuntu).
+You can also watch a short video tutorial for further setup help on [Windows](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core), [macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core-on-MacOS), or [Linux](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-Csharp-dotnet-Core-Ubuntu).
 
 <<<<<<< HEAD
 ## Next Steps

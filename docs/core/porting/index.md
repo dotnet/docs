@@ -28,7 +28,7 @@ The recommended process for porting follows the following series of steps.  Each
 
    This ensures that you can use API alternatives for .NET Framework-specific targets in the cases where .NET Core can't support a particular API.
    
-3. Use the [API Portability Analyzer tool](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/Introduction.md) to analyze your assemblies and develop a plan to port based on its results.
+3. Use the [API Portability Analyzer tool](https://github.com/Microsoft/dotnet-apiport/) to analyze your assemblies and develop a plan to port based on its results.
 
    The API Portability Analyzer tool will analyze your compiled assemblies and generate a report which shows a high-level portability summary and a breakdown of each API you're using that isn't available on .NET Core.  You can use this report alongside an analysis of your codebase to develop a plan for how you'll port your code over.
    
@@ -43,7 +43,7 @@ The recommended process for porting follows the following series of steps.  Each
 Here's a short list of the tools you'll find helpful:
 
 * NuGet - [Nuget Client](https://dist.nuget.org/index.html) or [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer), Microsoft's package manager for the .NET Platform.
-* Api Portability Analyzer - [command line tool](https://github.com/Microsoft/dotnet-apiport/releases) or [Visual Studio Extension](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b), a toolchain that can generate a report of how portable your code is between .NET Framework and .NET Core, with an assembly-by-assembly breakdown of issues.  See [Tooling to help you on the process](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/Introduction.md) for more information.
+* Api Portability Analyzer - [command line tool](https://github.com/Microsoft/dotnet-apiport/releases) or [Visual Studio Extension](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b), a toolchain that can generate a report of how portable your code is between .NET Framework and .NET Core, with an assembly-by-assembly breakdown of issues.  See [Tooling to help you on the process](https://github.com/Microsoft/dotnet-apiport/) for more information.
 * Reverse Package Search - A [useful web service](https://packagesearch.azurewebsites.net) that allows you to search for a type and find packages containing that type.
 
 ## Next steps

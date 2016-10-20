@@ -51,7 +51,7 @@ You can get started developing .NET Core apps by following these step-by-step tu
 
 ## OS X / macOS
 
-Install .NET Core for [macOS](https://www.microsoft.com/net/core#macos). .NET Core is supported on OS X El Capitan (version 10.11) and macOS Sierra (10.12).
+Install .NET Core for [macOS](https://www.microsoft.com/net/core#macos). .NET Core is supported on OS X El Capitan (version 10.11) and macOS Sierra (version 10.12).
 
 You can get started developing .NET Core apps by following these step-by-step tutorials.
 

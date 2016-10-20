@@ -2,7 +2,6 @@
 
 <!-- Start of .NET Platform Guide -->
 # [.NET Platform Guide](platform/index.md)
-## [About .NET](platform/about.md)
 ## [Tour of .NET](platform/tour.md)
 ## [Getting Started](platform/getting-started.md)
 ## [.NET Products](platform/products.md)

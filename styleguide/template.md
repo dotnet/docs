@@ -30,7 +30,7 @@ When creating a Markdown file, you should copy this template to a new file, fill
 
 ## Metadata 
 
-The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/dotnet/core-docs/master/template.md)), divided into required fields and optional fields. Some key notes:
+The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/dotnet/core-docs/master/styleguide/template.md)), divided into required fields and optional fields. Some key notes:
 
 - You **must** have a space between the colon (:) and the value for a metadata element.
 - If an optional metadata element does not have a value, comment out the element with a # or remove it (do not leave it blank or use "na"); if you are adding a value to an element that was commented out, be sure to remove the #.

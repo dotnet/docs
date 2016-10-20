@@ -50,6 +50,19 @@ Azure Storage is a base layer of storage services for modern applications that r
 
 Azure Storage can also be used in conjunction with Azure Functions through declarative configuration rather than explicit API calls. See [Azure Functions triggers and bindings for Azure Storage](https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-storage/) which includes F# examples.
 
+## Using Azure App Service with F# #
+
+[Azure App Service](https://azure.microsoft.com/en-us/services/app-service/) is a cloud platform to build powerful web and mobile apps that connect to data anywhere, in the cloud or on-premises.
+
+* [F# Azure Web API example](https://github.com/fsprojects/azure-webapi-example)
+* [Hosting F# in a web application on Azure](https://github.com/isaacabraham/fsharp-demonstrator)
+
+## Using Apache Spark with F# with Azure HDInsight
+
+[Apache Spark for Azure HDInsight](https://azure.microsoft.com/en-us/services/hdinsight/apache-spark/) is an open source processing framework that runs large-scale data analytics applications. Azure makes Apache Spark easy and cost effective to deploy. Develop your Spark application in F# using [Mobius](https://github.com/Microsoft/Mobius), a .NET API for Spark.
+
+* [Implementing Spark Apps in F# using Mobius](https://github.com/Microsoft/Mobius/blob/master/notes/spark-fsharp-mobius.md)
+* [Example F# Spark Apps using Mobius](https://github.com/Microsoft/Mobius/tree/master/examples/fsharp)
 
 ## Using Azure DocumentDB with F# #
 
@@ -69,7 +82,7 @@ Azure Event Hubs can be used with F# in two ways:
 1. Through the creation of F# Azure Functions which are triggered by events. See [Azure Function triggers for Event Hubs](https://azure.microsoft.com/en-us/documentation/articles/functions-bindings-event-hubs/), or
 2. By using the [.NET SDK for Azure](https://azure.microsoft.com/en-us/documentation/articles/event-hubs-csharp-ephcs-getstarted/). Note these examples are in C#.
 
-## Using Azure Notifcation Hubs with F# #
+## Using Azure Notification Hubs with F# #
 
 [Azure Notification Hubs](https://azure.microsoft.com/en-us/documentation/services/notification-hubs/) are multiplatform, scaled-out push infrastructure that enable you to send mobile push notifications from any backend (in the cloud or on-premises) to any mobile platform.
 

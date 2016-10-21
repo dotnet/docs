@@ -257,7 +257,7 @@ And that's it!  Because your projects now target .NET Framework 4.6.2, you can u
 
 The next step is to run the API Portability Analyzer (ApiPort) to generate a portability report that you can begin to analyze.
 
-You'll need to make sure you understand the [API Portability tool (ApiPort)](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/Introduction.md) and can generate portability reports for targeting .NET Core.  How you do this will likely vary based on your needs and personal tastes.  What follows are a few different approaches - you may find yourself mixing each approach depending on how your code is structured.
+You'll need to make sure you understand the [API Portability tool (ApiPort)](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/) and can generate portability reports for targeting .NET Core.  How you do this will likely vary based on your needs and personal tastes.  What follows are a few different approaches - you may find yourself mixing each approach depending on how your code is structured.
 
 ### Dealing Primarily with the Compiler
 

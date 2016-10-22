@@ -87,7 +87,7 @@ The .NET Team would like to know which libraries are the most important to suppo
 
 ## Analyzing Dependencies which aren't NuGet Packages
 
-You may have a dependency that isn't a NuGet package, such as a DLL in the filesystem.  The only way to determine the portability of that dependency is to run the [ApiPort tool](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/Introduction.md).
+You may have a dependency that isn't a NuGet package, such as a DLL in the filesystem.  The only way to determine the portability of that dependency is to run the [ApiPort tool](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/).
 
 ## Next steps
 

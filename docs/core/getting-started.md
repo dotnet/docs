@@ -4,7 +4,7 @@ description: Find resources to learn how to build .NET Core applications on Wind
 keywords: .NET, .NET Core
 author: mairaw
 manager: wpickett
-ms.date: 10/05/2016
+ms.date: 10/20/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -51,13 +51,10 @@ You can get started developing .NET Core apps by following these step-by-step tu
 
 ## OS X / macOS
 
-Install .NET Core for [Mac OS X 10.11](https://www.microsoft.com/net/core#macos).
+Install .NET Core for [macOS](https://www.microsoft.com/net/core#macos). .NET Core is supported on OS X El Capitan (version 10.11) and macOS Sierra (version 10.12).
 
 You can get started developing .NET Core apps by following these step-by-step tutorials.
 
 * [Get started with VS Code using C# and .NET Core on macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core-on-MacOS) - This Channel9 video shows you how to install and use [Visual Studio Code](https://www.visualstudio.com/products/code-vs), Microsoft's lightweight cross-platform code editor, to create your first console application in .NET Core. 
 * [Getting started with .NET Core on macOS, using Visual Studio Code](tutorials/using-on-macos.md) - A tour of the steps and workflow to create a .NET Core Solution using VS Code that includes unit tests, third-party libraries and how to use the debugging tools.
 * [Getting started with .NET Core using the command-line](tutorials/using-with-xplat-cli.md) - Use any code editor with the [.NET Core cross-platform command-line interface (CLI)](tools/index.md).
-
-> [!NOTE]
-> .NET Core is supported by 64-bit OS X 10.11 (El Capitan). It isn't yet supported by macOS Sierra, but it'll be soon.

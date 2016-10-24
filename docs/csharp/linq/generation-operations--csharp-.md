@@ -1,0 +1,41 @@
+---
+title: "Generation Operations (C#)"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "CSharp"
+ms.assetid: 1c421b3a-5954-448c-bcac-a27798d1858f
+caps.latest.revision: 3
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Generation Operations (C#)
+Generation refers to creating a new sequence of values.  
+  
+ The standard query operator methods that perform generation are listed in the following section.  
+  
+## Methods  
+  
+|Method Name|Description|C# Query Expression Syntax|More Information|  
+|-----------------|-----------------|---------------------------------|----------------------|  
+|DefaultIfEmpty|Replaces an empty collection with a default valued singleton collection.|Not applicable.|<xref:System.Linq.Enumerable.DefaultIfEmpty*?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.DefaultIfEmpty*?displayProperty=fullName>|  
+|Empty|Returns an empty collection.|Not applicable.|<xref:System.Linq.Enumerable.Empty*?displayProperty=fullName>|  
+|Range|Generates a collection that contains a sequence of numbers.|Not applicable.|<xref:System.Linq.Enumerable.Range*?displayProperty=fullName>|  
+|Repeat|Generates a collection that contains one repeated value.|Not applicable.|<xref:System.Linq.Enumerable.Repeat*?displayProperty=fullName>|  
+  
+## See Also  
+ <xref:System.Linq>   
+ [Standard Query Operators Overview (C#)](../linq/standard-query-operators-overview--csharp-.md)

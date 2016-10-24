@@ -1,0 +1,102 @@
+---
+title: "Compiler Error CS0269"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0269"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0269"
+ms.assetid: 7ef8374c-6f82-4096-bf4b-70080d4ddf88
+caps.latest.revision: 14
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS0269
+Use of unassigned out parameter 'parameter'  
+  
+ The compiler could not verify that the out parameter was assigned a value before it was used; its value may be undefined when assigned. Be sure to assign a value to `out` parameters in the called method before accessing the value. If you need to use the value of the variable passed in, use a `ref` parameter instead. For more information, see [Passing Parameters](../classes-and-structs/passing-parameters--csharp-programming-guide-.md).  
+  
+## Example  
+ The following sample generates CS0269:  
+  
+```c#  
+// CS0269.cs  
+class C  
+{  
+    public static void F(out int i)  
+    // One way to resolve the error is to use a ref parameter instead  
+    // of an out parameter.  
+    //public static void F(ref int i)  
+    {  
+        // The following line causes a compiler error because no value  
+        // has been assigned to i.  
+        int k = i;  // CS0269  
+        i = 1;  
+        // The error does not occur if the order of the two previous   
+        // lines is reversed.  
+    }  
+  
+    public static void Main()  
+    {  
+        int myInt = 1;  
+        F(out myInt);  
+        // If the declaration of method F is changed to require a ref  
+        // parameter, ref must be specified in the call as well.  
+        //F(ref myInt);  
+    }  
+}  
+```  
+  
+## Example  
+ This could also occur if the initialization of a variable occurs in a try block, which the compiler is unable to verify will execute successfully:  
+  
+```c#  
+// CS0269b.cs  
+class C  
+{  
+    public static void F(out int i)  
+    {  
+        try  
+        {  
+            // Assignment occurs, but compiler can't verify it  
+            i = 1;  
+        }  
+        catch  
+        {  
+        }  
+  
+        int k = i;  // CS0269  
+        i = 1;  
+    }  
+  
+    public static void Main()  
+    {  
+        int myInt;  
+        F(out myInt);  
+    }  
+}  
+```

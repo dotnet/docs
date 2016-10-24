@@ -1,0 +1,85 @@
+---
+title: "Compiler Error CS1708"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS1708"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1708"
+ms.assetid: df2fc580-2de5-4dd0-9ba3-b41248de5f41
+caps.latest.revision: 14
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS1708
+Fixed size buffers can only be accessed through locals or fields  
+  
+ A new feature in C# 2.0 is the ability to define an in-line array inside of a `struct`. Such arrays can only be accessed via local variables or fields, and may not be referenced as intermediate values on the left-hand side of an expression. Also, the arrays cannot be accessed by fields that are `static` or `readonly`.  
+  
+ To resolve this error, define an array variable, and assign the in-line array to the variable. Or, remove the `static` or `readonly` modifier from the field representing the in-line array.  
+  
+## Example  
+ The following sample generates CS1708.  
+  
+```c#  
+// CS1708.cs  
+// compile with: /unsafe  
+using System;  
+  
+unsafe public struct S  
+{  
+    public fixed char name[10];  
+}  
+  
+public unsafe class C  
+{  
+    public S UnsafeMethod()  
+    {  
+        S myS = new S();  
+        return myS;  
+    }  
+  
+    static void Main()  
+    {  
+        C myC = new C();  
+        myC.UnsafeMethod().name[3] = 'a';  // CS1708  
+        // Uncomment the following 2 lines to resolve:  
+        // S myS = myC.UnsafeMethod();  
+        // myS.name[3] = 'a';  
+  
+        // The field cannot be static.  
+        C._s1.name[3] = 'a';  // CS1708  
+  
+        // The field cannot be readonly.  
+        myC._s2.name[3] = 'a';  // CS1708  
+    }  
+  
+    static readonly S _s1;  
+    public readonly S _s2;  
+}  
+```

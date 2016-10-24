@@ -1,0 +1,75 @@
+---
+title: "How to: Implement and Call a Custom Extension Method (C# Programming Guide)"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "extension methods [C#], implementing and calling"
+ms.assetid: 7dab2a56-cf8e-4a47-a444-fe610a02772a
+caps.latest.revision: 15
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# How to: Implement and Call a Custom Extension Method (C# Programming Guide)
+This topic shows how to implement your own extension methods for any type in the [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=217856), or any other .NET type that you want to extend. Client code can use your extension methods by adding a reference to the DLL that contains them, and adding a [using](../keywords/using-directive--csharp-reference-.md) directive that specifies the namespace in which the extension methods are defined.  
+  
+### To define and call the extension method  
+  
+1.  Define a static [class](../classes-and-structs/static-classes-and-static-class-members--csharp-programming-guide-.md) to contain the extension method.  
+  
+     The class must be visible to client code. For more information about accessibility rules, see [Access Modifiers](../classes-and-structs/access-modifiers--csharp-programming-guide-.md).  
+  
+2.  Implement the extension method as a static method with at least the same visibility as the containing class.  
+  
+3.  The first parameter of the method specifies the type that the method operates on; it must be preceded with the [this](../keywords/this--csharp-reference-.md) modifier.  
+  
+4.  In the calling code, add a `using` directive to specify the [namespace](../keywords/namespace--csharp-reference-.md) that contains the extension method class.  
+  
+5.  Call the methods as if they were instance methods on the type.  
+  
+     Note that the first parameter is not specified by calling code because it represents the type on which the operator is being applied, and the compiler already knows the type of your object. You only have to provide arguments for parameters 2 through `n`.  
+  
+## Example  
+ The following example implements an extension method named `WordCount` in the `CustomExtensions.StringExtension` class. The method operates on the <xref:System.String> class, which is specified as the first method parameter. The `CustomExtensions` namespace is imported into the application namespace, and the method is called inside the `Main` method.  
+  
+ [!code[csProgGuideExtensionMethods#1](../classes-and-structs/codesnippet/CSharp/how-to--implement-and-call-a-custom-extension-method--csharp-programming-guide-_1.cs)]  
+  
+## Compiling the Code  
+ To run this code, copy and paste it into a Visual C# console application project that has been created in [!INCLUDE[vs_current_short](../classes-and-structs/includes/vs_current_short_md.md)]. By default, this project targets version 3.5 of the [!INCLUDE[dnprdnshort](../classes-and-structs/includes/dnprdnshort_md.md)], and it has a reference to System.Core.dll and a `using` directive for System.Linq. If one or more of these requirements are missing from the project, you can add them manually. For more information, see [How to: Create a LINQ Project](../Topic/How%20to:%20Create%20a%20LINQ%20Project.md).  
+  
+## .NET Framework Security  
+ Extension methods present no specific security vulnerabilities. They can never be used to impersonate existing methods on a type, because all name collisions are resolved in favor of the instance or static method defined by the type itself. Extension methods cannot access any private data in the extended class.  
+  
+## See Also  
+ [C# Programming Guide](../programming-guide/csharp-programming-guide.md)   
+ [Extension Methods](../classes-and-structs/extension-methods--csharp-programming-guide-.md)   
+ [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md)   
+ [Static Classes and Static Class Members](../classes-and-structs/static-classes-and-static-class-members--csharp-programming-guide-.md)   
+ [protected](../keywords/protected--csharp-reference-.md)   
+ [internal](../keywords/internal--csharp-reference-.md)   
+ [public](../keywords/public--csharp-reference-.md)   
+ [this](../keywords/this--csharp-reference-.md)   
+ [namespace](../keywords/namespace--csharp-reference-.md)

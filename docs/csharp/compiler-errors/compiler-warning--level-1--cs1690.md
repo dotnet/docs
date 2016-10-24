@@ -1,0 +1,64 @@
+---
+title: "Compiler Warning (level 1) CS1690"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS1690"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1690"
+ms.assetid: bc76efe0-4304-4449-8c11-950667aa8ac9
+caps.latest.revision: 12
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Warning (level 1) CS1690
+Accessing a member on 'member' may cause a runtime exception because it is a field of a marshal-by-reference class  
+  
+ This warning occurs when you try to call a method, property, or indexer on a member of a class that derives from <xref:System.MarshalByRefObject>, and the member is a value type. Objects that inherit from `MarshalByRefObject` are typically intended to be marshaled by reference across an application domain. If any code ever attempts to directly access the value-type member of such an object across an application domain, a runtime exception will occur. To resolve the warning, first copy the member into a local variable and call the method on that variable.  
+  
+ The following sample generates CS1690:  
+  
+```  
+// CS1690.cs  
+using System;  
+  
+class WarningCS1690: MarshalByRefObject  
+{  
+   int i = 5;  
+  
+   public static void Main()   
+   {  
+     WarningCS1690 e = new WarningCS1690();  
+     e.i.ToString();   // CS1690  
+  
+     // OK  
+     int i = e.i;  
+     i.ToString();  
+     e.i = i;  
+   }  
+}  
+```

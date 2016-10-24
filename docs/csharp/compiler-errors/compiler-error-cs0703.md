@@ -1,0 +1,53 @@
+---
+title: "Compiler Error CS0703"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0703"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0703"
+ms.assetid: 3f488412-248e-40ad-9d76-96cb3eb73778
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS0703
+Inconsistent accessibility: constraint type 'identifier' is less accessible than 'identifier'  
+  
+ A constraint may not force the generic parameter to be less accessible than the generic class itself. In the following example, while the generic class C\<T> is declared public, the constraint attempts to force T to implement an internal interface. Even if this were allowed, only clients with internal access would be able to create the parameter for the class, so in effect, the class could be used only by clients with internal access.  
+  
+ To get rid of this error, make sure the access level of the generic class is not less restrictive than any classes or interfaces that appear in the bounds.  
+  
+ The following sample generates CS0703:  
+  
+```  
+// CS0703.cs  
+internal interface I {}  
+public class C<T> where T : I  // CS0703 – I is internal; C<T> is public  
+{  
+}  
+```

@@ -1,0 +1,64 @@
+---
+title: "Compiler Error CS0834"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0834"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0834"
+ms.assetid: f3d26696-eeb4-4ea3-9667-b8f51577567e
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS0834
+A lambda expression must have an expression body to be converted to an expression tree.  
+  
+ Lambdas that are translated to expression trees must be expression lambdas; statement lambdas and anonymous methods can only be converted to delegate types.  
+  
+### To correct this error  
+  
+1.  Remove the statement from the lambda expression.  
+  
+## Example  
+ The following example generates CS0834:  
+  
+```  
+// cs0834.cs  
+using System;  
+using System.Linq;  
+using System.Linq.Expressions;  
+  
+public class C  
+{  
+    public static int Main()  
+    {  
+        Expression<Func<int, int>> e = x => { return x; }; // CS0834  
+    }  
+}  
+  
+```

@@ -1,0 +1,58 @@
+---
+title: "Compiler Error CS0446"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0446"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0446"
+ms.assetid: d7a07e24-722e-484d-b6d7-ca809b51858f
+caps.latest.revision: 10
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS0446
+Foreach cannot operate on a 'Method or Delegate'. Did you intend to invoke the 'Method or Delegate'?  
+  
+ This error is caused by specifying a method without parentheses or an anonymous method without parentheses in the part of the `foreach` statement where you would normally put a collection class. Note that it is valid, though unusual, to put a method call in that location, if the method returns a collection class.  
+  
+## Example  
+ The following code will generate CS0446.  
+  
+```  
+// CS0446.cs  
+using System;  
+class Tester   
+{  
+    static void Main()   
+    {  
+        int[] intArray = new int[5];  
+        foreach (int i in M) { } // CS0446  
+    }  
+    static void M() { }  
+}  
+```

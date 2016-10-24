@@ -1,0 +1,69 @@
+---
+title: "Compiler Error CS1943"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS1943"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1943"
+ms.assetid: eb3e36b7-1372-471c-8cfb-a955a86c379e
+caps.latest.revision: 5
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS1943
+An expression of type 'type' is not allowed in a subsequent from clause in a query expression with source type 'type'. Type inference failed in the call to 'method'.  
+  
+ All range variables must represent queryable types.  
+  
+### To correct this error  
+  
+1.  Make sure that the type is a queryable type that implements `IEnumerable`, `IEnumerable<T>` or a derived interface, or any other type which has a query pattern defined for it.  
+  
+2.  If the type is a non-generic `IEnumerable`, provide an explicit type on the range variable.  
+  
+## Example  
+ The following code generates CS1943:  
+  
+```  
+// cs1943.cs  
+using System.Linq;  
+class Test  
+{  
+    class TestClass  
+    { }  
+    static void Main()  
+    {  
+        int[] nums = { 0, 1, 2, 3, 4, 5 };  
+        TestClass tc = new TestClass();  
+  
+        var x = from n in nums  
+                from s in tc // CS1943  
+                select n + s;  
+    }  
+}  
+```

@@ -1,0 +1,73 @@
+---
+title: "break (C# Reference)"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "break"
+  - "break_CSharpKeyword"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "break keyword [C#]"
+ms.assetid: be2571ed-efb0-4965-b122-81e5b09db0b9
+caps.latest.revision: 21
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# break (C# Reference)
+The `break` statement terminates the closest enclosing loop or [switch](../keywords/switch--csharp-reference-.md) statement in which it appears. Control is passed to the statement that follows the terminated statement, if any.  
+  
+## Example  
+ In this example, the conditional statement contains a counter that is supposed to count from 1 to 100; however, the `break` statement terminates the loop after 4 counts.  
+  
+ [!code[csrefKeywordsJump#1](../keywords/codesnippet/CSharp/break--csharp-reference-_1.cs)]  
+  
+## Example  
+ In this example, the `break` statement is used to break out of an inner nested loop, and return control to the outer loop.  
+  
+ [!code[csrefKeywordsJump#7](../keywords/codesnippet/CSharp/break--csharp-reference-_2.cs)]  
+  
+## Example  
+ This example demonstrates the use of `break` in a [switch](../keywords/switch--csharp-reference-.md) statement.  
+  
+ [!code[csrefKeywordsJump#2](../keywords/codesnippet/CSharp/break--csharp-reference-_3.cs)]  
+  
+ If you entered `4`, the output would be:  
+  
+```  
+Enter your selection (1, 2, or 3): 4  
+Sorry, invalid selection.  
+```  
+  
+## C# Language Specification  
+ [!INCLUDE[CSharplangspec](../arrays/includes/csharplangspec_md.md)]  
+  
+## See Also  
+ [C# Reference](../language-reference/csharp-reference.md)   
+ [C# Programming Guide](../programming-guide/csharp-programming-guide.md)   
+ [C# Keywords](../keywords/csharp-keywords.md)   
+ [switch](../keywords/switch--csharp-reference-.md)   
+ [Jump Statements](../keywords/jump-statements--csharp-reference-.md)   
+ [Iteration Statements](../keywords/iteration-statements--csharp-reference-.md)

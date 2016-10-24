@@ -1,0 +1,74 @@
+---
+title: "Compiler Error CS1716"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS1716"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1716"
+ms.assetid: c9e65274-0cc3-41a6-967c-ac1804ecf3ba
+caps.latest.revision: 11
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS1716
+Do not use 'System.Runtime.CompilerServices.FixedBuffer' attribute. Use the 'fixed' field modifier instead.  
+  
+ This error arises in an unsafe code section that contains a fixed-size array declaration similar to a field declaration. Do not use this attribute. Instead, use the keyword `fixed`.  
+  
+## Example  
+ The following example generates CS1716.  
+  
+```  
+// CS1716.cs  
+// compile with: /unsafe  
+using System;  
+using System.Runtime.CompilerServices;  
+  
+public struct UnsafeStruct  
+{  
+    [FixedBuffer(typeof(int), 4)]  // CS1716  
+    unsafe public int aField;  
+    // Use this single line instead of the above two lines.  
+    // unsafe public fixed int aField[4];  
+}  
+  
+public class TestUnsafe  
+{  
+    static int Main()  
+    {  
+        UnsafeStruct us = new UnsafeStruct();  
+        unsafe  
+        {  
+            if (us.aField[0] == 0)  
+                return us.aField[1];  
+            else  
+                return us.aField[2];  
+        }  
+    }  
+}  
+```

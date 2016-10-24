@@ -1,0 +1,58 @@
+---
+title: "Introduction to Generics (C# Programming Guide)"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "generics [C#], about generics"
+ms.assetid: a1ad761e-42f7-41dd-a62f-452a2de26b9d
+caps.latest.revision: 32
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Introduction to Generics (C# Programming Guide)
+Generic classes and methods combine reusability, type safety and efficiency in a way that their non-generic counterparts cannot. Generics are most frequently used with collections and the methods that operate on them. Version 2.0 of the .NET Framework class library provides a new namespace, <xref:System.Collections.Generic>, which contains several new generic-based collection classes. It is recommended that all applications that target the [!INCLUDE[dnprdnshort](../classes-and-structs/includes/dnprdnshort_md.md)] 2.0 and later use the new generic collection classes instead of the older non-generic counterparts such as <xref:System.Collections.ArrayList>. For more information, see [Generics in the .NET Framework Class Library](../generics/generics-in-the-.net-framework-class-library--csharp-programming-guide-.md).  
+  
+ Of course, you can also create custom generic types and methods to provide your own generalized solutions and design patterns that are type-safe and efficient. The following code example shows a simple generic linked-list class for demonstration purposes. (In most cases, you should use the <xref:System.Collections.Generic.List`1> class provided by the .NET Framework class library instead of creating your own.) The type parameter `T` is used in several locations where a concrete type would ordinarily be used to indicate the type of the item stored in the list. It is used in the following ways:  
+  
+-   As the type of a method parameter in the `AddHead` method.  
+  
+-   As the return type of the public method `GetNext` and the `Data` property in the nested `Node` class.  
+  
+-   As the type of the private member data in the nested class.  
+  
+ Note that T is available to the nested `Node` class. When `GenericList<T>` is instantiated with a concrete type, for example as a `GenericList<int>`, each occurrence of `T` will be replaced with `int`.  
+  
+ [!code[csProgGuideGenerics#2](../generics/codesnippet/CSharp/introduction-to-generics--csharp-programming-guide-_1.cs)]  
+  
+ The following code example shows how client code uses the generic `GenericList<T>` class to create a list of integers. Simply by changing the type argument, the following code could easily be modified to create lists of strings or any other custom type:  
+  
+ [!code[csProgGuideGenerics#3](../generics/codesnippet/CSharp/introduction-to-generics--csharp-programming-guide-_2.cs)]  
+  
+## See Also  
+ <xref:System.Collections.Generic>   
+ [C# Programming Guide](../programming-guide/csharp-programming-guide.md)   
+ [Generics](../generics/generics--csharp-programming-guide-.md)

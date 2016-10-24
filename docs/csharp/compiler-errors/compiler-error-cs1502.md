@@ -1,0 +1,73 @@
+---
+title: "Compiler Error CS1502"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS1502"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1502"
+ms.assetid: f302f00a-5fe1-4e42-b91c-f185d6311671
+caps.latest.revision: 12
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS1502
+The best overloaded method match for 'name' has some invalid arguments  
+  
+ This error occurs when the argument types being passed to the method do not match the parameter types of that method. If the called method is overloaded, then none of the overloaded versions has a signature that matches the argument types being passed.  
+  
+ To resolve this problem, do one of the following:  
+  
+-   Double-check the types of the arguments being passed. Make sure that they match the arguments of the method being called.  
+  
+-   If appropriate, convert any mismatched parameters using the <xref:System.Convert> class.  
+  
+-   If appropriate, cast any mismatched parameters to match the type that the method is expecting.  
+  
+-   If appropriate, define another overloaded version of the method to match the parameter types that are being sent.  
+  
+ The following sample generates CS1502:  
+  
+```  
+// CS1502.cs  
+namespace x  
+{  
+   public class a  
+   {  
+      public a(char i)  
+      // try the following constructor instead  
+      // public a(int i)  
+      {  
+      }  
+  
+      public static void Main()  
+      {  
+         a aa = new a(2222);   // CS1502  
+      }  
+   }  
+}  
+```

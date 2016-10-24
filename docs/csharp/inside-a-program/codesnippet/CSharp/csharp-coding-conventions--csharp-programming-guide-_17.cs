@@ -1,0 +1,1 @@
+            var instance1 = new ExampleClass();

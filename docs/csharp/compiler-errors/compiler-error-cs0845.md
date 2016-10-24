@@ -1,0 +1,68 @@
+---
+title: "Compiler Error CS0845"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0845"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0845"
+ms.assetid: ed1d5fd1-d525-416e-91ab-2ce1aff0f83b
+caps.latest.revision: 5
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS0845
+An expression tree lambda may not contain a coalescing operator with a null literal left-hand side.  
+  
+ Because null by itself does not have a type, the null coalescing operator cannot operate on it.  
+  
+### To correct this error  
+  
+1.  Cast the null literal to an object.  
+  
+## Example  
+ The following code generates CS0845:  
+  
+```  
+// cs0845.cs  
+using System;  
+using System.Linq;  
+using System.Linq.Expressions;  
+  
+namespace ConsoleApplication1  
+{  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            Expression<Func<object>> e = () => null ?? null; // CS0845  
+            // Try the following line instead.  
+            // Expression<Func<object>> e = () => (object)null ?? null;  
+        }  
+    }  
+}  
+```

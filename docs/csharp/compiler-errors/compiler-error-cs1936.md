@@ -1,0 +1,71 @@
+---
+title: "Compiler Error CS1936"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS1936"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1936"
+ms.assetid: 980161b5-5bd7-4cb5-8b66-9bcbb062a8e6
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS1936
+Could not find an implementation of the query pattern for source type 'type'.  'method' not found.  
+  
+ In order to query a source type, that type must implement the standard query operator methods that you are invoking in the query. The implementation can be either in the form of class members or extension methods that are brought into scope with the appropriate `using` directive.  
+  
+### To correct this error  
+  
+-   Make sure that you are querying a collection of objects, not an individual object.  
+  
+-   Make sure that you have specified the necessary `using` directives.  
+  
+## Example  
+ The following example produces CS1936:  
+  
+```  
+// cs1936.cs  
+using System.Collections;  
+using System.Linq;  
+class Test  
+{  
+    static int Main()  
+    {  
+        object obj;  
+        IEnumerable e = from x in obj // CS1936  
+                        select x;  
+        return 0;  
+    }  
+}  
+```  
+  
+ This error typically occurs when you accidentally try to query an object of some type instead of a collection of those objects.  
+  
+## See Also  
+ [Standard Query Operators Overview](../Topic/Standard%20Query%20Operators%20Overview.md)

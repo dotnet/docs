@@ -1,0 +1,82 @@
+---
+title: "Compiler Error CS1640"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS1640"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1640"
+ms.assetid: 1393668e-05e9-4dc2-9203-3d9c2933406f
+caps.latest.revision: 9
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS1640
+foreach statement cannot operate on variables of type 'type' because it implements multiple instantiations of 'interface', try casting to a specific interface instantiation  
+  
+ The type inherits from two or more instances of IEnumerator\<T>, which means there is not a unique enumeration of the type that `foreach` could use. Specify the type of IEnumerator\<T> or use another looping construct.  
+  
+## Example  
+ The following sample generates CS1640:  
+  
+```  
+// CS1640.cs  
+  
+using System;  
+using System.Collections;  
+using System.Collections.Generic;  
+  
+public class C : IEnumerable, IEnumerable<int>, IEnumerable<string>  
+{  
+    IEnumerator<int> IEnumerable<int>.GetEnumerator()  
+    {  
+        yield break;  
+    }  
+  
+    IEnumerator<string> IEnumerable<string>.GetEnumerator()  
+    {  
+        yield break;  
+    }  
+  
+    IEnumerator IEnumerable.GetEnumerator()  
+    {  
+        return (IEnumerator)((IEnumerable<string>)this).GetEnumerator();  
+    }  
+}  
+  
+public class Test  
+{  
+    public static int Main()  
+    {  
+        foreach (int i in new C()){}    // CS1640  
+  
+        // Try specifing the type of IEnumerable<T>  
+        // foreach (int i in (IEnumerable<int>)new C()){}  
+        return 1;  
+    }  
+}  
+```

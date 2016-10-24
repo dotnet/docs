@@ -1,0 +1,112 @@
+---
+title: "Compiler Error CS1612"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS1612"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1612"
+ms.assetid: ef5db985-030a-4f15-b53f-e92c9297c6a3
+caps.latest.revision: 11
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS1612
+Cannot modify the return value of 'expression' because it is not a variable  
+  
+ An attempt was made to modify a value type that is produced as the result of an intermediate expression but is not stored in a variable. This error can occur when you attempt to directly modify a struct in a generic collection, as shown in the following example:  
+  
+```c#  
+List<myStruct> list = {…};  
+list[0].Name = "MyStruct42"; //CS1612  
+```  
+  
+ To modify the struct, first assign it to a local variable, modify the variable, then assign the variable back to the item in the collection.  
+  
+```c#  
+List<myStruct> list = {…};  
+MyStruct ms = list[0];  
+ms.Name = "MyStruct42";  
+list[0] = ms;  
+```  
+  
+ This error occurs because value types are copied on assignment. When you retrieve a value type from a property or indexer, you are getting a copy of the object, not a reference to the object itself. The copy that is returned is not stored by the property or indexer because they are actually methods, not storage locations (variables). You must store the copy into a variable that you declare before you can modify it.  
+  
+ The error does not occur with reference types because a property or indexer in that case returns a reference to an existing object, which is a storage location.  
+  
+ If you are defining the class or struct, you can resolve this error by modifying your property declaration to provide access to the members of a struct. If you are writing client code, you can resolve the error by creating your own instance of the struct, modifying its fields, and then assigning the entire struct back to the property. As a third alternative, you can change your struct to a class.  
+  
+## Example  
+ CS1612 also occurs when you attempt to access the member of a struct through a property on an enclosing class that is returning the entire struct, as shown in the following example:  
+  
+```c#  
+// CS1612.cs  
+using System;  
+  
+public struct MyStruct  
+{  
+    public int Width;  
+}  
+  
+public class ListView  
+{  
+    MyStruct ms;  
+    public MyStruct Size  
+    {  
+        get { return ms; }  
+        set { ms = value; }  
+    }  
+}  
+  
+public class MyClass  
+{  
+    public MyClass()  
+    {  
+        ListView lvi;  
+        lvi = new ListView();  
+        lvi.Size.Width = 5; // CS1612  
+  
+        // You can use the following lines instead.  
+        // MyStruct ms;  
+        // ms.Width = 5;  
+        // lvi.Size = ms;  // CS1612  
+    }  
+  
+    public static void Main()   
+    {  
+        MyClass mc = new MyClass();  
+        // Keep the console open in debug mode.  
+        Console.WriteLine("Press any key to exit.");  
+        Console.ReadKey();     
+    }  
+}  
+```  
+  
+## See Also  
+ [Structs](../classes-and-structs/structs--csharp-programming-guide-.md)   
+ [Value Types](../keywords/value-types--csharp-reference-.md)   
+ [Reference Types](../keywords/reference-types--csharp-reference-.md)

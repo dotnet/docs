@@ -1,0 +1,75 @@
+---
+title: "Compiler Error CS0445"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0445"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0445"
+ms.assetid: 43f3e5c5-115c-4a34-b0f3-1b7623c49d64
+caps.latest.revision: 15
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS0445
+Cannot modify the result of an unboxing conversion  
+  
+ The result of an unboxing conversion is a temporary variable. The compiler prevents you from modifying such variables because any modification would go away when the temporary variable goes away. To fix this, declare a new value-type variable to store the intermediate expression, and assign the result of the unboxing conversion to that variable.  
+  
+ The following code generates CS0455.  
+  
+```c#  
+  
+// CS0445.CS  
+class UnboxingTest  
+{  
+    public static void Main()  
+    {  
+        Point p;  
+        p.x = 1;  
+        p.y = 2;  
+        object obj = p;  
+        // The following line generates CS0445, because the result  
+        // of unboxing obj is a temporary variable.  
+        ((Point)obj).x = 2;  
+  
+        // The following lines resolve the error.  
+  
+        // Store the result of the unboxing conversion in p2.  
+        Point p2;       
+        p2 = (Point)obj;  
+        // Then you can modify the unboxed value.  
+        p2.x = 2;  
+    }  
+}  
+  
+struct Point  
+{  
+    public int x, y;  
+}  
+  
+```

@@ -1,0 +1,70 @@
+---
+title: "Compiler Error CS0311"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0311"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0311"
+ms.assetid: d095f0fa-efd7-491c-a80b-4c5704a90de7
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS0311
+The type 'type1' cannot be used as type parameter 'T' in the generic type or method '\<name>'. There is no implicit reference conversion from 'type1' to 'type2'.  
+  
+ When a constraint is applied to a generic type parameter, an implicit identity or reference conversion must exist from the concrete argument to the type of the constraint.  
+  
+### To correct this error  
+  
+1.  Change the argument you are using to create the class.  
+  
+2.  If you own the class, you can remove the constraint or else do something to enable an implicit reference or identity conversion. For example, you can make the second type inherit from the first.  
+  
+## Example  
+  
+```  
+// cs0311.cs  
+class B{}  
+class C{}  
+class Test<T> where T : C  
+{ }  
+  
+class Program  
+{  
+    static void Main()  
+    {  
+        Test<B> test = new Test<B>(); //CS0311  
+    }  
+}  
+```  
+  
+ If this error occurs when trying to use a value-type argument, notice that an implicit numeric conversion, for example from `short` to `int`, does not satisfy a generic type parameter.  
+  
+## See Also  
+ [Constraints on Type Parameters](../generics/constraints-on-type-parameters--csharp-programming-guide-.md)

@@ -1,0 +1,64 @@
+---
+title: "Compiler Error CS0260"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0260"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0260"
+ms.assetid: 58e091da-e093-4093-86df-dcd24ffab750
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS0260
+Missing partial modifier on declaration of type 'type'; another partial declaration of this type exists  
+  
+ This error indicates that you have declared multiple classes that have the same name. In addition, at least one but not all of the declarations contains the `partial` modifier. If you want to define a class in several parts, you must declare each part by using the keyword `partial`.  
+  
+ This error also occurs if you declare a class and accidentally give it the same name as a partial class that's declared elsewhere in the same namespace.  
+  
+ The following sample generates CS0260:  
+  
+```c#  
+// CS0260.cs  
+// You must mark both parts of the definition of class C   
+// by using the partial keyword.  
+  
+// The following line causes CS0260. To resolve the error, add  
+// the 'partial' keyword to the declaration.  
+class C    
+{  
+}  
+  
+partial class C  
+{  
+}  
+```  
+  
+## See Also  
+ [Partial Classes and Methods](../classes-and-structs/partial-classes-and-methods--csharp-programming-guide-.md)

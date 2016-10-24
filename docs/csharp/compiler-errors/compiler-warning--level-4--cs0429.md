@@ -1,0 +1,66 @@
+---
+title: "Compiler Warning (level 4) CS0429"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0429"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0429"
+ms.assetid: 906442de-9760-4e28-aea1-c94f0af918fb
+caps.latest.revision: 8
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Warning (level 4) CS0429
+Unreachable expression code detected  
+  
+ This error occurs whenever part of an expression in your code is unreachable. In the following example, the condition `false && myTest()` meets this criteria because the `myTest()` method will never get evaluated due to the fact that the left side of the `&&` operation is always false. As soon as the `&&` operator evaluates the `false` statement as false, it stops the evaluation, and will never evaluate the right side.  
+  
+## Example  
+ The following code generates CS0429.  
+  
+```  
+// CS0429.cs  
+public class cs0429   
+{  
+    public static void Main()   
+    {  
+        if (false && myTest())  // CS0429  
+        // Try the following line instead:  
+        // if (true && myTest())  
+        {  
+        }  
+        else  
+        {  
+            int i = 0;  
+            i++;  
+        }  
+    }  
+  
+    static bool myTest() { return true; }  
+}  
+```

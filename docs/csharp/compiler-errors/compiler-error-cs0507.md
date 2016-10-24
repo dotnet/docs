@@ -1,0 +1,86 @@
+---
+title: "Compiler Error CS0507"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0507"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0507"
+ms.assetid: ddbdb94c-38c3-4022-8d1c-68971d398b87
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS0507
+'function1' : cannot change access modifiers when overriding 'access' inherited member 'function2'  
+  
+ An attempt was made to change the access specification in a method override.  
+  
+## Example  
+ The following sample generates CS0507.  
+  
+```  
+// CS0507.cs  
+abstract public class clx  
+{  
+   virtual protected void f() {}  
+}  
+  
+public class cly : clx  
+{  
+   public override void f() {}   // CS0507  
+   public static void Main() {}  
+}  
+```  
+  
+## Example  
+ CS0507 can also occur if a class attempts to override a method marked as `protected internal` defined in referenced metadata. In this situation, the overriding method should be marked as `protected`.  
+  
+```  
+// CS0507_b.cs  
+// compile with: /target:library  
+abstract public class clx  
+{  
+   virtual protected internal void f() {}  
+}  
+```  
+  
+## Example  
+ The following sample generates CS0507.  
+  
+```  
+// CS0507_c.cs  
+// compile with: /reference:cs0507_b.dll  
+public class cly : clx  
+{  
+   protected internal override void f() {}   // CS0507  
+   // try the following line instead  
+   // protected override void f() {}   // OK  
+  
+   public static void Main() {}  
+}  
+```

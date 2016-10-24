@@ -1,0 +1,74 @@
+---
+title: "Compiler Error CS1026"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS1026"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1026"
+ms.assetid: 782c0570-19c2-425d-aa41-565d33aa9bc0
+caps.latest.revision: 5
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS1026
+) expected  
+  
+ An incomplete statement was found.  
+  
+ A common cause of this error is placing a statement, rather than an expression, within an inline expression in an ASP.NET page. For example, the following is incorrect:  
+  
+```  
+<%=new TimeSpan(DateTime.Now.Ticks - new DateTime(2001, 1, 1).Ticks).Days;%>  
+```  
+  
+ The following is correct:  
+  
+```  
+<%=new TimeSpan(DateTime.Now.Ticks - new DateTime(2001, 1, 1).Ticks).Days %>  
+```  
+  
+ It is interpreted as follows:  
+  
+```  
+<% Response.Write(new TimeSpan(DateTime.Now.Ticks - new DateTime(2001, 1, 1).Ticks).Days); %>  
+```  
+  
+ The following example generates CS1026:  
+  
+```  
+// CS1026.cs  
+#if (a == b   // CS1026, add closing )  
+#endif  
+  
+class x  
+{  
+   public static void Main()  
+   {  
+   }  
+}  
+```

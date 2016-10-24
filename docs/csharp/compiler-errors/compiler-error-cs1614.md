@@ -1,0 +1,84 @@
+---
+title: "Compiler Error CS1614"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS1614"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1614"
+ms.assetid: 787eef18-74a6-49d9-9f34-f0881aca8dff
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS1614
+'name' is ambiguous; between 'attribute1' and 'attribute2'. use either '@attribute' or 'attributeAttribute'  
+  
+ The compiler has encountered an ambiguous attribute specification.  
+  
+ For convenience, the C# compiler allows you to specify **ExampleAttribute** as just `[Example]`. However, ambiguity arises if an attribute class named `Example` exists along with **ExampleAttribute**, because the compiler cannot tell if `[Example]` refers to the `Example` attribute or the **ExampleAttribute** attribute. To clarify, use `[@Example]` for the `Example` attribute and `[ExampleAttribute]` for **ExampleAttribute**.  
+  
+ The following sample generates CS1614:  
+  
+```  
+// CS1614.cs  
+using System;  
+  
+// Both of the following classes are valid attributes with valid  
+// names (MySpecial and MySpecialAttribute). However, because the lookup  
+// rules for attributes involves auto-appending the 'Attribute' suffix  
+// to the identifier, these two attributes become ambiguous; that is,  
+// if you specify MySpecial, the compiler can't tell if you want  
+// MySpecial or MySpecialAttribute.  
+  
+public class MySpecial : Attribute {  
+   public MySpecial() {}  
+}  
+  
+public class MySpecialAttribute : Attribute {  
+   public MySpecialAttribute() {}  
+}  
+  
+class MakeAWarning {  
+   [MySpecial()] // CS1614  
+                 // Ambiguous: MySpecial or MySpecialAttribute?  
+   public static void Main() {  
+   }  
+  
+   [@MySpecial()] // This isn't ambiguous, it binds to the first attribute above.  
+   public static void NoWarning() {  
+   }  
+  
+   [MySpecialAttribute()] // This isn't ambiguous, it binds to the second attribute above.  
+   public static void NoWarning2() {  
+   }  
+  
+   [@MySpecialAttribute()] // This is also legal.  
+   public static void NoWarning3() {  
+   }  
+}  
+```

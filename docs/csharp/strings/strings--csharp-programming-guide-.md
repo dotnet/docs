@@ -1,0 +1,158 @@
+---
+title: "Strings (C# Programming Guide)"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "C# language, strings"
+  - "strings [C#]"
+ms.assetid: 21580405-cb25-4541-89d5-037846a38b07
+caps.latest.revision: 41
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Strings (C# Programming Guide)
+A string is an object of type <xref:System.String> whose value is text. Internally, the text is stored as a sequential read-only collection of <xref:System.Char> objects. There is no null-terminating character at the end of a C# string; therefore a C# string can contain any number of embedded null characters ('\0'). The <xref:System.String.Length*> property of a string represents the number of `Char` objects it contains, not the number of Unicode characters. To access the individual Unicode code points in a string, use the <xref:System.Globalization.StringInfo> object.  
+  
+## string vs. System.String  
+ In C#, the `string` keyword is an alias for <xref:System.String>. Therefore, `String` and `string` are equivalent, and you can use whichever naming convention you prefer. The `String` class provides many methods for safely creating, manipulating, and comparing strings. In addition, the C# language overloads some operators to simplify common string operations. For more information about the keyword, see [string](../keywords/string--csharp-reference-.md). For more information about the type and its methods, see <xref:System.String>.  
+  
+## Declaring and Initializing Strings  
+ You can declare and initialize strings in various ways, as shown in the following example:  
+  
+ [!code[csProgGuideStrings#1](../strings/codesnippet/CSharp/strings--csharp-programming-guide-_1.cs)]  
+  
+ Note that you do not use the [new](../keywords/new-operator--csharp-reference-.md) operator to create a string object except when initializing the string with an array of chars.  
+  
+ Initialize a string with the <xref:System.String.Empty> constant value to create a new <xref:System.String> object whose string is of zero length. The string literal representation of a zero-length string is "". By initializing strings with the <xref:System.String.Empty> value instead of [null](../keywords/null--csharp-reference-.md), you can reduce the chances of a <xref:System.NullReferenceException> occurring. Use the static <xref:System.String.IsNullOrEmpty(System.String)> method to verify the value of a string before you try to access it.  
+  
+## Immutability of String Objects  
+ String objects are *immutable*: they cannot be changed after they have been created. All of the <xref:System.String> methods and C# operators that appear to modify a string actually return the results in a new string object. In the following example, when the contents of `s1` and `s2` are concatenated to form a single string, the two original strings are unmodified. The `+=` operator creates a new string that contains the combined contents. That new object is assigned to the variable `s1`, and the original object that was assigned to `s1` is released for garbage collection because no other variable holds a reference to it.  
+  
+ [!code[csProgGuideStrings#2](../strings/codesnippet/CSharp/strings--csharp-programming-guide-_2.cs)]  
+  
+ Because a string "modification" is actually a new string creation, you must use caution when you create references to strings. If you create a reference to a string, and then "modify" the original string, the reference will continue to point to the original object instead of the new object that was created when the string was modified. The following code illustrates this behavior:  
+  
+ [!code[csProgGuideStrings#25](../strings/codesnippet/CSharp/strings--csharp-programming-guide-_3.cs)]  
+  
+ For more information about how to create new strings that are based on modifications such as search and replace operations on the original string, see [How to: Modify String Contents](../strings/how-to--modify-string-contents--csharp-programming-guide-.md).  
+  
+## Regular and Verbatim String Literals  
+ Use regular string literals when you must embed escape characters provided by C#, as shown in the following example:  
+  
+ [!code[csProgGuideStrings#3](../strings/codesnippet/CSharp/strings--csharp-programming-guide-_4.cs)]  
+  
+ Use verbatim strings for convenience and better readability when the string text contains backslash characters, for example in file paths. Because verbatim strings preserve new line characters as part of the string text, they can be used to initialize multiline strings. Use double quotation marks to embed a quotation mark inside a verbatim string. The following example shows some common uses for verbatim strings:  
+  
+ [!code[csProgGuideStrings#4](../strings/codesnippet/CSharp/strings--csharp-programming-guide-_5.cs)]  
+  
+## String Escape Sequences  
+  
+|Escape sequence|Character name|Unicode encoding|  
+|---------------------|--------------------|----------------------|  
+|\\'|Single quote|0x0027|  
+|\\"|Double quote|0x0022|  
+|\\\|Backslash|0x005C|  
+|\0|Null|0x0000|  
+|\a|Alert|0x0007|  
+|\b|Backspace|0x0008|  
+|\f|Form feed|0x000C|  
+|\n|New line|0x000A|  
+|\r|Carriage return|0x000D|  
+|\t|Horizontal tab|0x0009|  
+|\U|Unicode escape sequence for surrogate pairs.|\Unnnnnnnn|  
+|\u|Unicode escape sequence|\u0041 = "A"|  
+|\v|Vertical tab|0x000B|  
+|\x|Unicode escape sequence similar to "\u" except with variable length.|\x0041 = "A"|  
+  
+> [!NOTE]
+>  At compile time, verbatim strings are converted to ordinary strings with all the same escape sequences. Therefore, if you view a verbatim string in the debugger watch window, you will see the escape characters that were added by the compiler, not the verbatim version from your source code. For example, the verbatim string @"C:\files.txt" will appear in the watch window as "C:\\\files.txt".  
+  
+## Format Strings  
+ A format string is a string whose contents can be determined dynamically at runtime. You create a format string by using the static <xref:System.String.Format*> method and embedding placeholders in braces that will be replaced by other values at runtime. The following example uses a format string to output the result of each iteration of a loop:  
+  
+ [!code[csProgGuideStrings#26](../strings/codesnippet/CSharp/strings--csharp-programming-guide-_6.cs)]  
+  
+ One overload of the <xref:System.Console.WriteLine*> method takes a format string as a parameter. Therefore, you can just embed a format string literal without an explicit call to the method. However, if you use the <xref:System.Diagnostics.Trace.WriteLine*> method to display debug output in the Visual Studio **Output** window, you have to explicitly call the <xref:System.String.Format*> method because <xref:System.Diagnostics.Trace.WriteLine*> only accepts a string, not a format string. For more information about format strings, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+  
+## Substrings  
+ A substring is any sequence of characters that is contained in a string. Use the <xref:System.String.Substring*> method to create a new string from a part of the original string. You can search for one or more occurrences of a substring by using the <xref:System.String.IndexOf*> method. Use the <xref:System.String.Replace*> method to replace all occurrences of a specified substring with a new string. Like the <xref:System.String.Substring*> method, <xref:System.String.Replace*> actually returns a new string and does not modify the original string. For more information, see [How to: Search Strings Using String Methods](../strings/how-to--search-strings-using-string-methods--csharp-programming-guide-.md) and [How to: Modify String Contents](../strings/how-to--modify-string-contents--csharp-programming-guide-.md).  
+  
+ [!code[csProgGuideStrings#7](../strings/codesnippet/CSharp/strings--csharp-programming-guide-_7.cs)]  
+  
+## Accessing Individual Characters  
+ You can use array notation with an index value to acquire read-only access to individual characters, as in the following example:  
+  
+ [!code[csProgGuideStrings#9](../strings/codesnippet/CSharp/strings--csharp-programming-guide-_8.cs)]  
+  
+ If the <xref:System.String> methods do not provide the functionality that you must have to modify individual characters in a string, you can use a <xref:System.Text.StringBuilder> object to modify the individual chars "in-place", and then create a new string to store the results by using the <xref:System.Text.StringBuilder> methods. In the following example, assume that you must modify the original string in a particular way and then store the results for future use:  
+  
+ [!code[csProgGuideStrings#8](../strings/codesnippet/CSharp/strings--csharp-programming-guide-_9.cs)]  
+  
+## Null Strings and Empty Strings  
+ An empty string is an instance of a <xref:System.String?displayProperty=fullName> object that contains zero characters. Empty strings are used often in various programming scenarios to represent a blank text field. You can call methods on empty strings because they are valid <xref:System.String?displayProperty=fullName> objects. Empty strings are initialized as follows:  
+  
+```  
+string s = String.Empty;  
+```  
+  
+ By contrast, a null string does not refer to an instance of a <xref:System.String?displayProperty=fullName> object and any attempt to call a method on a null string causes a <xref:System.NullReferenceException>. However, you can use null strings in concatenation and comparison operations with other strings. The following examples illustrate some cases in which a reference to a null string does and does not cause an exception to be thrown:  
+  
+ [!code[csProgGuideStrings#27](../strings/codesnippet/CSharp/strings--csharp-programming-guide-_10.cs)]  
+  
+## Using StringBuilder for Fast String Creation  
+ String operations in .NET are highly optimized and in most cases do not significantly impact performance. However, in some scenarios such as tight loops that are executing many hundreds or thousands of times, string operations can affect performance. The <xref:System.Text.StringBuilder> class creates a string buffer that offers better performance if your program performs many string manipulations. The <xref:System.Text.StringBuilder> string also enables you to reassign individual characters, something the built-in string data type does not support. This code, for example, changes the content of a string without creating a new string:  
+  
+ [!code[csProgGuideStrings#20](../strings/codesnippet/CSharp/strings--csharp-programming-guide-_11.cs)]  
+  
+ In this example, a <xref:System.Text.StringBuilder> object is used to create a string from a set of numeric types:  
+  
+ [!code[csProgGuideStrings#15](../strings/codesnippet/CSharp/strings--csharp-programming-guide-_12.cs)]  
+  
+## Strings, Extension Methods and LINQ  
+ Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable`1>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they are available nevertheless. You can also use [!INCLUDE[vbteclinq](../classes-and-structs/includes/vbteclinq_md.md)] query expressions on strings. For more information, see [LINQ and Strings](../Topic/LINQ%20and%20Strings.md).  
+  
+## Related Topics  
+  
+|Topic|Description|  
+|-----------|-----------------|  
+|[How to: Modify String Contents](../strings/how-to--modify-string-contents--csharp-programming-guide-.md)|Provides a code example that illustrates how to modify the contents of strings.|  
+|[How to: Concatenate Multiple Strings](../strings/how-to--concatenate-multiple-strings--csharp-programming-guide-.md)|Illustrates how to use the `+` operator and the `Stringbuilder` class to join strings together at compile time and run time.|  
+|[How to: Compare Strings](../strings/how-to--compare-strings--csharp-programming-guide-.md)|Shows how to perform ordinal comparisons of strings.|  
+|[How to: Parse Strings Using String.Split ](../strings/how-to--parse-strings-using-string.split--csharp-programming-guide-.md)|Contains a code example that illustrates how to use the `String.Split` method to parse strings.|  
+|[How to: Search Strings Using String Methods](../strings/how-to--search-strings-using-string-methods--csharp-programming-guide-.md)|Explains how to use specific methods to search strings.|  
+|[How to: Search Strings Using Regular Expressions](../strings/how-to--search-strings-using-regular-expressions--csharp-programming-guide-.md)|Explains how to use regular expressions to search strings.|  
+|[How to: Determine Whether a String Represents a Numeric Value](../strings/a4e84e10-ea0a-489f-a868-503dded9d85f.md)|Shows how to safely parse a string to see whether it has a valid numeric value.|  
+|[How to: Convert a String to a DateTime](../strings/how-to--convert-a-string-to-a-datetime--csharp-programming-guide-.md)|Shows how to convert a string such as "01/24/2008" to a <xref:System.DateTime?displayProperty=fullName> object.|  
+|[Basic String Operations](../Topic/Basic%20String%20Operations%20in%20the%20.NET%20Framework.md)|Provides links to topics that use <xref:System.String?displayProperty=fullName> and <xref:System.Text.StringBuilder?displayProperty=fullName> methods to perform basic string operations.|  
+|[Parsing Strings](../Topic/Parsing%20Strings%20in%20the%20.NET%20Framework.md)|Describes how to insert characters or empty spaces into a string.|  
+|[Comparing Strings](../Topic/Comparing%20Strings%20in%20the%20.NET%20Framework.md)|Includes information about how to compare strings and provides examples in C# and Visual Basic.|  
+|[Using the StringBuilder Class](../Topic/Using%20the%20StringBuilder%20Class%20in%20the%20.NET%20Framework.md)|Describes how to create and modify dynamic string objects by using the <xref:System.Text.StringBuilder> class.|  
+|[LINQ and Strings](../Topic/LINQ%20and%20Strings.md)|Provides information about how to perform various string operations by using LINQ queries.|  
+|[C# Programming Guide](../programming-guide/csharp-programming-guide.md)|Provides links to topics that explain programming constructs in C#.|  
+  
+## Featured Book Chapter  
+ [More About Variables](http://go.microsoft.com/fwlink/?LinkId=221230) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)

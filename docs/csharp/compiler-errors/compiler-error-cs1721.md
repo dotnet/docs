@@ -1,0 +1,66 @@
+---
+title: "Compiler Error CS1721"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS1721"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1721"
+ms.assetid: f02dc9b1-8e38-4562-b013-4d752ad79061
+caps.latest.revision: 12
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS1721
+Class 'class' cannot have multiple base classes: 'class_1' and 'class_2'  
+  
+ The most common cause of this error message is attempting to use multiple inheritance. A class in C# may only inherit directly from one class. However, a class can implement any number of interfaces.  
+  
+## Example  
+ The following example shows one way in which SC1721 is generated, and then shows two possible ways to avoid the error.  
+  
+```  
+// CS1721.cs  
+public class A {}  
+public class B {}  
+public class MyClass : A, B {}   // CS1721  
+  
+// One possible fix is to use the following approach instead:  
+public class A {}  
+public class B : A {}  
+public class C : B {}  
+  
+// Another possible fix is to use interfaces instead of base classes:  
+public class A {}  
+public interface B {}  
+public class C : A, B {}  
+  
+```  
+  
+## See Also  
+ [Polymorphism](../classes-and-structs/polymorphism--csharp-programming-guide-.md)   
+ [Interfaces](../interfaces/interfaces--csharp-programming-guide-.md)

@@ -1,0 +1,64 @@
+---
+title: "Compiler Warning (level 1) CS0420"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0420"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0420"
+ms.assetid: 0f52f508-286e-493d-9151-180e05397bf9
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Warning (level 1) CS0420
+'identifier': a reference to a volatile field will not be treated as volatile  
+  
+ A volatile field should not normally be passed using a `ref` or **out** parameter, since it will not be treated as volatile within the scope of the function. There are exceptions to this, such as when calling an interlocked API. As with any warning, you may use the [#pragma warning](../preprocessor-directives/sharppragma-warning--csharp-reference-.md) to disable this warning in those rare cases where you are intentionally using a volatile field as a reference parameter.  
+  
+ The following sample generates CS0420:  
+  
+```  
+// CS0420.cs  
+// compile with: /W:1  
+using System;  
+  
+class TestClass  
+{  
+   private volatile int i;  
+  
+   public void TestVolatile(ref int ii)  
+   {  
+   }  
+  
+   public static void Main()  
+   {  
+      TestClass x = new TestClass();  
+      x.TestVolatile(ref x.i);   // CS0420   
+   }  
+}  
+```

@@ -1,0 +1,63 @@
+---
+title: "Compiler Error CS0552"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0552"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0552"
+ms.assetid: ce5cfb26-8406-4ca0-adb7-55d1d03d8145
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS0552
+'conversion routine' : user defined conversion to/from interface  
+  
+ You cannot create a user-defined conversion to or from an interface. If you need the conversion routine, resolve this error by making the interface a class or derive a class from the interface.  
+  
+ The following sample generates CS0552:  
+  
+```  
+// CS0552.cs  
+public interface ii  
+{  
+}  
+  
+public class a  
+{  
+   // delete the routine to resolve CS0552  
+   public static implicit operator ii(a aa) // CS0552  
+   {  
+      return new ii();  
+   }  
+  
+   public static void Main()  
+   {  
+   }  
+}  
+```

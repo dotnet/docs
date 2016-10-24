@@ -1,0 +1,79 @@
+---
+title: "Compiler Error CS0616"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0616"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0616"
+ms.assetid: ed60f7bb-40cf-4a93-b823-e29e83df7bf7
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS0616
+'class' is not an attribute class  
+  
+ An attempt was made to use a non-attribute class in an attribute block. All the attribute types need to be inherited from <xref:System.Attribute?displayProperty=fullName>.  
+  
+## Example  
+ The following sample generates CS0616.  
+  
+```  
+// CS0616.cs  
+// compile with: /target:library  
+[CMyClass(i = 5)]   // CS0616  
+public class CMyClass {}  
+```  
+  
+## Example  
+ The following sample shows how you might define an attribute:  
+  
+```  
+// CreateAttrib.cs  
+// compile with: /target:library  
+using System;  
+  
+[AttributeUsage(AttributeTargets.Class|AttributeTargets.Interface)]  
+public class MyAttr : Attribute  
+{  
+   public int Name = 0;  
+   public int Count = 0;  
+  
+   public MyAttr (int iCount, int sName)  
+   {  
+      Count = iCount;  
+      Name = sName;  
+   }  
+}  
+  
+[MyAttr(5, 50)]  
+class Class1 {}  
+  
+[MyAttr(6, 60)]  
+interface Interface1 {}  
+```

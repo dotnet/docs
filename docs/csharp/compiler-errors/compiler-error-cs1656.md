@@ -1,0 +1,141 @@
+---
+title: "Compiler Error CS1656"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS1656"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1656"
+ms.assetid: b5463a12-d685-4dae-9f88-08383e271b7a
+caps.latest.revision: 11
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS1656
+Cannot assign to 'variable' because it is a 'read-only variable type'  
+  
+ This error occurs when an assignment to variable occurs in a read-only context. Read-only contexts include [foreach](../keywords/foreach--in--csharp-reference-.md) iteration variables, [using](../keywords/using-statement--csharp-reference-.md) variables, and [fixed](../keywords/fixed-statement--csharp-reference-.md) variables. To resolve this error, avoid assignments to a statement variable in `using` blocks, `foreach` statements, and `fixed` statements.  
+  
+## Example  
+ The following example generates error CS1656 because it tries to replace complete elements of a collection inside a `foreach` loop. One way to work around the error is to change the `foreach` loop to a [for](../keywords/for--csharp-reference-.md) loop. Another way, not shown here, is to modify the members of the existing element; this is possible with classes, but not with structs.  
+  
+```  
+using System;  
+using System.Collections;  
+using System.Collections.Generic;  
+using System.Text;  
+  
+namespace CS1656_2  
+{  
+  
+    class Book  
+    {  
+        public string Title;  
+        public string Author;  
+        public double Price;  
+        public Book(string t, string a, double p)  
+        {  
+            Title=t;  
+            Author=a;  
+            Price=p;  
+  
+        }  
+    }  
+  
+    class Program  
+    {  
+        private List<Book> list;  
+        static void Main(string[] args)  
+        {  
+            Program prog = new Program();  
+            prog.list = new List<Book>();  
+            prog.list.Add(new Book ("The C# Programming Language",  
+                                    "Hejlsberg, Wiltamuth, Golde",  
+                                     29.95));  
+            prog.list.Add(new Book ("The C++ Programming Language",  
+                                    "Stroustrup",  
+                                     29.95));  
+            prog.list.Add(new Book ("The C Programming Language",  
+                                    "Kernighan, Ritchie",  
+                                    29.95));  
+            foreach(Book b in prog.list)  
+            {  
+                // Cannot modify an entire element in a foreach loop   
+                // even with reference types.  
+                // Use a for or while loop instead  
+                if (b.Title == "The C Programming Language")  
+                    // Cannot assign to 'b' because it is a 'foreach   
+                    // iteration variable'  
+                    b = new Book("Programming Windows, 5th Ed.", "Petzold", 29.95); //CS1656  
+            }  
+  
+            //With a for loop you can modify elements  
+            //for(int x = 0; x < prog.list.Count; x++)  
+            //{  
+            //    if(prog.list[x].Title== "The C Programming Language")  
+            //        prog.list[x] = new Book("Programming Windows, 5th Ed.", "Petzold", 29.95);  
+            //}  
+            //foreach(Book b in prog.list)  
+            //    Console.WriteLine(b.Title);  
+  
+        }  
+    }  
+}  
+```  
+  
+## Example  
+ The following sample demonstrates how CS1656 can be generated in other contexts besides a `foreach` loop:  
+  
+```  
+// CS1656.cs  
+// compile with: /unsafe  
+using System;  
+  
+class C : IDisposable  
+{  
+    public void Dispose() { }  
+}  
+  
+class CMain  
+{  
+    unsafe public static void Main()  
+    {  
+        using (C c = new C())  
+        {  
+            // Cannot assign to 'c' because it is a 'using variable'  
+            c = new C(); // CS1656  
+        }  
+  
+        int[] ary = new int[] { 1, 2, 3, 4 };  
+        fixed (int* p = ary)  
+        {  
+            // Cannot assign to 'p' because it is a 'fixed variable'  
+            p = null; // CS1656  
+        }  
+    }  
+}  
+```

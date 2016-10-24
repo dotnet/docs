@@ -1,0 +1,87 @@
+---
+title: "Compiler Error CS0229"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0229"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0229"
+ms.assetid: f1ff7e91-1243-4d36-b792-26ba69186f8f
+caps.latest.revision: 9
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Error CS0229
+Ambiguity between 'member1' and 'member2'  
+  
+ Members of different interfaces have the same name. If you want to keep the same names, you must qualify the names. For more information, see [Interfaces](../interfaces/interfaces--csharp-programming-guide-.md).  
+  
+> [!NOTE]
+>  In some cases, this ambiguity can be resolved by providing an explicit prefix to the identifier via a [using](../keywords/using-directive--csharp-reference-.md) alias.  
+  
+## Example  
+ The following example generates CS0229:  
+  
+```  
+// CS0229.cs  
+  
+interface IList  
+{  
+    int Count  
+    {  
+        get;  
+        set;  
+    }  
+  
+    void Counter();  
+}  
+  
+interface Icounter  
+{  
+    double Count  
+    {  
+        get;  
+        set;  
+    }  
+}  
+  
+interface IListCounter : IList , Icounter {}  
+  
+class MyClass  
+{  
+    void Test(IListCounter x)  
+    {  
+        x.Count = 1;  // CS0229  
+        // Try one of the following lines instead:  
+        // ((IList)x).Count = 1;  
+        // or  
+        // ((Icounter)x).Count = 1;  
+    }  
+  
+    public static void Main() {}  
+}  
+```

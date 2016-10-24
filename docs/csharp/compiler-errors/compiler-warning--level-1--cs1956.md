@@ -1,0 +1,84 @@
+---
+title: "Compiler Warning (level 1) CS1956"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS1956"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1956"
+ms.assetid: 841f8b2b-692b-49ae-a587-a40797cf9797
+caps.latest.revision: 9
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Compiler Warning (level 1) CS1956
+Member 'name' implements interface member 'name' in type 'type'. There are multiple matches for the interface member at run-time. It is implementation dependent which method will be called.  
+  
+ This warning can be generated when two interface methods are differentiated only by whether a particular parameter is marked with `ref` or with `out`. It is best to change your code to avoid this warning because it is not obvious or guaranteed which method is called at runtime.  
+  
+ Although C# distinguishes between `out` and `ref`, the CLR sees them as the same. When deciding which method implements the interface, the CLR just picks one.  
+  
+### To avoid this warning  
+  
+1.  Give the compiler some way to differentiate the methods. For example, you can give them different names or provide an additional parameter on one of them.  
+  
+## Example  
+ The following code generates CS1956 because the two `Test` methods in `Base` differ only by the `ref`/`out` modifier on the first parameter.  
+  
+```c#  
+// cs1956.cs  
+class Base<T, S>  
+{  
+    // This is the method that should be called.  
+    public virtual int Test(out T x) // CS1956  
+    {  
+        x = default(T);  
+        return 0;  
+    }  
+  
+    // This is the "last" method and is the one that ends up being called  
+    public virtual int Test(ref S x)  
+    {  
+        return 1;  
+    }  
+}  
+  
+interface IFace  
+{  
+    int Test(out int x);  
+}  
+  
+class Derived : Base<int, int>, IFace  
+{  
+    static int Main()  
+    {  
+        IFace x = new Derived();  
+        int y;  
+        return x.Test(out y);  
+    }  
+}  
+```

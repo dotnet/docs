@@ -3,6 +3,7 @@ title: Migrating from DNX to .NET Core CLI
 description: Migrating from DNX to .NET Core CLI
 keywords: .NET, .NET Core
 author: blackdwarf
+ms.author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -160,7 +161,7 @@ and the changes that the new [.NET Standard Library](https://github.com/dotnet/c
 brought, the framework needs to be one of the following:
 
 1. `netcoreapp1.0` - if you are writing applications on .NET Core (including ASP.NET Core applications)
-2. `netstandard1.5` - if you are writing class libraries for .NET Core
+2. `netstandard1.6` - if you are writing class libraries for .NET Core
 
 If you are using other `dnx` targets, like `dnx451` you will need to change those as well. `dnx451` should be changed to `net451`. 
 Please refer to the [.NET Standard Library document](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md) 

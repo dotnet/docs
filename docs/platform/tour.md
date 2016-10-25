@@ -18,7 +18,7 @@ ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 
 Multiple implementations of .NET are available, based on open [.NET Standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) that specify the fundamentals of the platform. They are separately optimized for different application types (for example, desktop, mobile, gaming, cloud) and support many chips (for example, x86/x64, ARM) and operating systems (for example, Windows, Linux, iOS, Android, macOS). Open source is also an important part of the .NET ecosystem, with multiple .NET implementations and many libraries available under OSI-approved licenses.
 
-See the [Overview of .NET implementations](products.md) document to figure out all of the different editions of .NET that are available, both Microsoft's and others.
+See the [Overview of .NET implementations](concept.md) document to figure out all of the different editions of .NET that are available, both Microsoft's and others.
 
 This Primer will help you understand some of the key concepts in the .NET Platform and point you to more resources 
 for each given topic. By the end of it, you should have enough information to be able to recognize significant terms and 

@@ -4,7 +4,7 @@
 # [.NET Platform Guide](platform/index.md)
 ## [Getting Started](platform/getting-started.md)
 ## [Tour of .NET](platform/tour.md)
-## [.NET Concepts](platform/products.md)
+## [.NET Concepts](platform/concepts.md)
 ## [.NET Standard Library](platform/library.md)
 ## [Frameworks and Targets](platform/frameworks.md)
 ## [What is "managed code"?](platform/managed-code.md)

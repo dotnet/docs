@@ -225,7 +225,7 @@ Moving a PCL to a NetStandard library
 -------------------------------------
 The Portable Class Library tooling can automatically modify your PCL to target .NET Standard. 
 
-1.	Double click on the “Properties” node to open the Project Property page*
+1.	Double click on the “Properties” node to open the Project Property page
 
 2.	Under the “Targeting header” click the hyperlink “Target .NET Platform Standard”
 

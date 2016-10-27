@@ -479,8 +479,8 @@ module UnionTypes =
         | Empty -> Node(item, Empty, Empty)
         | Node(x, left, right) as node ->
             if item = x then node // No need to insert, it already exists; return the node.
-            elif item < x then Node(item, insert x left, right) // Call into left subtree.
-            else Node(item, left, insert x right) // Call into right subtree.
+            elif item < x then Node(x, insert item left, right) // Call into left subtree.
+            else Node(x, left, insert item right) // Call into right subtree.
 
 // ---------------------------------------------------------------
 //         Option types

@@ -39,7 +39,8 @@
         {
           "files": ["**/*.md"],
           "src": "docs",
-          "dest": "articles"
+          "dest": "articles",
+          "exclude": ["**/includes/**"] 
         },
         {
           "files": ["*.md"],

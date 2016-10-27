@@ -20,6 +20,8 @@ You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the
 
 F# 4.0 or higher must be installed on your machine to use Ionide.
 
+You must also have [git installed](https://git-scm.com/download) and available on your PATH to make use of project templates in Ionide.  You can verify that it is installed correctly by typing `git` and pressing **Enter** into a command line. 
+
 ### Windows
 
 If you're on Windows, you have two options for installing F#.

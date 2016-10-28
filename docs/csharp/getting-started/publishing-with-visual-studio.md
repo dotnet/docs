@@ -15,7 +15,7 @@ ms.assetid: a19545d3-24af-4a32-9778-cfb5ae938287
 
 # Publishing Your Hello World Application with Visual Studio 2015 #
 
-Now that you've created your console app (in the [Building a Hello World Appllication with .NET Core in Visual Studio 2015](.\with-visual_studio.md) topic) and debugged it (in the [Debugging Your Hello World Application with Visual Studio 2015](.\debugging_with_visual_studio.md) topic), you can publish your application. This allows you to distribute your application and to run it outside of Visual Studio. To publish and run your application:
+Now that you've created your console app (in the [Building a Hello World Appllication with .NET Core in Visual Studio 2015](.\with-visual-studio.md) topic) and debugged it (in the [Debugging Your Hello World Application with Visual Studio 2015](.\debugging-with-visual-studio.md) topic), you can publish your application. This allows you to distribute your application and to run it outside of Visual Studio. To publish and run your application:
 
 1. Make sure that Visual Studio is building the release version of your application. If necessary, change change the build configuration setting on the toolbar from **Debug** to **Release**, as shown in the following figure.
 

@@ -61,7 +61,7 @@ The .NET team will review your PR and let you know if there are any other update
 
 The maintainers will merge your PR into the master branch once feedback has been applied and your PR is approved.
 
-We typically push all commits from master branch into the live branch. You'll be able to see your contribution live at https://docs.microsoft.com/dotnet/ within an hour of the contribution being merged.
+We periodically push all commits from master branch into the live branch. You'll be able to see your contribution at https://docs.microsoft.com/dotnet/ within a few hours of the contribution being merged.
 
 ## DOs and DON'Ts
 
@@ -80,7 +80,7 @@ Below is a short list of guiding rules that you should keep in mind when you are
 
 The documentation is written in [GitHub Flavored Markdown](https://help.github.com/categories/writing-on-github/) and built using [DocFX](http://dotnet.github.io/docfx/) and other internal publishing/building tools. It is hosted at [docs.microsoft.com](https://docs.microsoft.com/dotnet). 
 
-Install [DocFX](https://dotnet.github.io/docfx/) to build the docs.
+Install [DocFX](https://dotnet.github.io/docfx/) to build the docs locally.
 
 There are several ways to use DocFX as detailed in [DocFX getting started guide](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html). 
 We recommend the [command-line based](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool) version of the tools.

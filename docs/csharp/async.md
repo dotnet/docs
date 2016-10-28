@@ -79,7 +79,7 @@ And that's it!  This code cleanly expresses the intent of the button's click eve
 
 ### What happens under the covers
 
-There's a lot of moving pieces where asynchronous operations are concerned.  If you're curious about what's happening underneath the covers of `Task` and `Task<T>`, checkout the [Async in-depth](../platform/async-in-depth.md) article for more information.
+There's a lot of moving pieces where asynchronous operations are concerned.  If you're curious about what's happening underneath the covers of `Task` and `Task<T>`, checkout the [Async in-depth](../standard/async-in-depth.md) article for more information.
 
 On the C# side of things, the compiler transforms your code into a state machine which keeps track of things like yielding execution when an `await` is reached and resuming execution when a background job has finished.
 
@@ -107,7 +107,7 @@ Here are two questions you should ask before you write any code:
 
     If you answered "yes", then your work is **CPU-bound**.
     
-If the work you have is **I/O-bound**, use `async` and `await` *without* `Task.Run`.  You *should not* use the Task Parallel Library.  The reason for this is outlined in the [Async in Depth article](../platform/async-in-depth.md).
+If the work you have is **I/O-bound**, use `async` and `await` *without* `Task.Run`.  You *should not* use the Task Parallel Library.  The reason for this is outlined in the [Async in Depth article](../standard/async-in-depth.md).
 
 If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await` but spawn the work off on another thread *with* `Task.Run`.  If the work is appropriate for concurrency and parallelism, you should also consider using the Task Parallel Library.
 
@@ -266,5 +266,5 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 
 ## Other Resources
 
-* [Async in-depth](../platform/async-in-depth.md) provides more information about how Tasks work.
+* [Async in-depth](../standard/async-in-depth.md) provides more information about how Tasks work.
 * Lucian Wischik's [Six Essential Tips for Async](https://channel9.msdn.com/Series/Three-Essential-Tips-for-Async) are a wonderful resource for async programming

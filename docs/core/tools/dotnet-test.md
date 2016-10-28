@@ -127,6 +127,6 @@ Run the tests in the test1 project:
 
 [dotnet-test communication protocol](test-protocol.md)
 
-[Frameworks](../../platform/frameworks.md)
+[Frameworks](../../standard/frameworks.md)
 
 [Runtime IDentifier (RID) catalog](../rid-catalog.md)

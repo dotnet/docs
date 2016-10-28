@@ -57,11 +57,11 @@ If your PR is addressing an existing issue, add the `Fixes #Issue_Number` keywor
 
 The .NET team will review your PR and let you know if there are any other updates/changes necessary in order to approve it.
 
-**Step 6:** Rerspond to the PR feedback.
+**Step 6:** Respond to the PR feedback.
 
 The maintainers will merge your PR into the master branch once feedback has been applied and your PR is approved.
 
-We periodically push all commits from master branch into the live branch. You'll be able to see your contribution at https://docs.microsoft.com/dotnet/, typically within a few hours of the merge.
+We periodically push all commits from master branch into the live branch. You'll be able to see your contribution at https://docs.microsoft.com/dotnet/, typically within a few hours of the merge to live.
 ## DOs and DON'Ts
 
 Below is a short list of guiding rules that you should keep in mind when you are contributing to the .NET documentation.
@@ -71,7 +71,7 @@ Below is a short list of guiding rules that you should keep in mind when you are
 - **DO** use the [template](./styleguide/template.md) file as the starting point of your work.
 - **DO** create a separate branch on your fork before working on the articles.
 - **DO** follow the [GitHub Flow workflow](https://guides.github.com/introduction/flow/). 
-- **DO** blog, tweet and use other social media to annouce your contribution.
+- **DO** blog, tweet and use other social media to announce your contribution.
 
 > Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/dotnet/core-docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal. 
 

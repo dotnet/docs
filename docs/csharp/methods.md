@@ -150,7 +150,9 @@ The following example defines a method, `ExampleMethod`, that has one required a
 
 [!CODE [csSnippets.Methods#21](../../samples/snippets/csharp/concepts/methods/optional1.cs#21)]
 
-If a method with multiple optional arguments is invoked using positional arguments, there can be no comma-separated arguments included in the method call. The caller must supply an argument for all optional parameters from the first one to the last one for which an argument is supplied. In the case of the  `ExampleMethod` method, for example, if the caller supplies an argument for the `description` parameter, it must also supply one for the `optionalInt` parameter. If a method is called using named arguments or a combination of positional and named arguments, the caller can omit any arguments that follow the last positional argument in the method call.
+If a method with multiple optional arguments is invoked using positional arguments, the caller must supply an argument for all optional parameters from the first one to the last one for which an argument is supplied. In the case of the  `ExampleMethod` method, for example, if the caller supplies an argument for the `description` parameter, it must also supply one for the `optionalInt` parameter. `opt.ExampleMethod(2, 2, "Addition of 2 and 2");` is a valid method call; `opt.ExampleMethod(2, , "Addition of 2 and 0);` generates an "Argument missing" compiler error, 
+
+If a method is called using named arguments or a combination of positional and named arguments, the caller can omit any arguments that follow the last positional argument in the method call.
 
 The following example calls the `ExampleMethod` method three times.  The first two method calls use positional arguments. The first omits both optional arguments, while the second omits the last argument. The third method call supplies a positional argument for the required parameter, but uses a named argument to supply a value to the `description` parameter while omitting the `optionalInt` argument.
 
@@ -164,7 +166,7 @@ The use of optional parameters affects *overload resolution*, or the way in whic
 
 ## <a name="return" /> Return values ##
 
-Methods can return a value to the caller. If the return type (the type listed before the method name) is not `void`, the method can return the value by using the `return` keyword. A statement with the `return` keyword followed by a value that matches the return type will return that value to the method caller. Methods with a non-void return type are required to use the `return` keyword to return a value. The `return` keyword also stops the execution of the method.
+Methods can return a value to the caller. If the return type (the type listed before the method name) is not `void`, the method can return the value by using the `return` keyword. A statement with the `return` keyword followed by a variable, constant, or expression that matches the return type will return that value to the method caller. Methods with a non-void return type are required to use the `return` keyword to return a value. The `return` keyword also stops the execution of the method.
 
 If the return type is `void`, a `return` statement without a value is still useful to stop the execution of the method. Without the `return` keyword, the method will stop executing when it reaches the end of the code block.
 
@@ -241,12 +243,12 @@ For more information, see [Extension Methods](https://msdn.microsoft.com/en-us/l
 
 By using the async feature, you can invoke asynchronous methods without using explicit callbacks or manually splitting your code across multiple methods or lambda expressions.
 
-If you mark a method with the [async](https://msdn.microsoft.com/en-us/library/hh156513.aspx) modifier, you can use the [await](https://msdn.microsoft.com/en-us/library/hh156528.aspx) operator in the method. When control reaches an `await` expression in the async method, control returns to the caller, and progress in the method is suspended until the awaited task completes. When the task is complete, execution can resume in the method.
+If you mark a method with the [async](https://msdn.microsoft.com/en-us/library/hh156513.aspx) modifier, you can use the [await](https://msdn.microsoft.com/en-us/library/hh156528.aspx) operator in the method. When control reaches an `await` expression in the async method, control returns to the caller if the awaited task is not completed, and progress in the method with the `await` keyword is suspended until the awaited task completes. When the task is complete, execution can resume in the method.
 
 > [!NOTE]
 > An async method returns to the caller when either it encounters the first awaited object that’s not yet complete or it gets to the end of the async method, whichever occurs first.
 
-An async method can have a return type of @System.Threading.Tasks.Task<TResult>, @System.Threading.Tasks.Task, or `void`. The `void` return type is used primarily to define event handlers, where a `void` return type is required. An async method that returns `void` can't be awaited, and the caller of a void-returning method can't catch exceptions that the method throws.
+An async method can have a return type of @System.Threading.Tasks.Task<TResult>, @System.Threading.Tasks.Task, or `void`. The `void` return type is used primarily to define event handlers, where a `void` return type is required. An async method that returns `void` can't be awaited, and the caller of a void-returning method can't catch exceptions that the method throws. C# 7, when it is released, will ease this restriction to allow an async method [to return any task-like type](https://github.com/ljw1004/roslyn/blob/features/async-return/docs/specs/feature%20-%20arbitrary%20async%20returns.md).
 
 In the following example, `DelayAsync` is an async method that has a return statement that returns an integer. Because it is an async method, its method declaration must have a return type of `Task<int>`. Because the return type is `Task<int>`, the evaluation of the `await` expression in `DoSomethingAsync` produces an integer, as the following `int result = await delayTask` statement demonstrates.
 
@@ -275,9 +277,7 @@ If the method returns `void` or is an async method, the body of the method must 
 
 ## <a name="iterators" /> Iterators ##
 
-An iterator performs a custom iteration over a collection, such as a list or an array. An iterator uses the [yield return](https://msdn.microsoft.com/en-us/library/9k7k7cf0.aspx) statement to return each element one at a time. When a `yield return` statement is reached, the current location in code is remembered. Execution is restarted from that location when the iterator is called the next time.
-
-You call an iterator from client code by using a [foreach](https://msdn.microsoft.com/en-us/library/ttw7t8t6.aspx) statement.
+An iterator performs a custom iteration over a collection, such as a list or an array. An iterator uses the [yield return](https://msdn.microsoft.com/en-us/library/9k7k7cf0.aspx) statement to return each element one at a time. When a `yield return` statement is reached, the current location is remembered so that the caller can request the next element in the sequence.
 
 The return type of an iterator can be @System.Collections.IEnumerable, @System.Collections.Generic.IEnumerable%601, @System.Collections.IEnumerator, or @System.Collections.Generic.IEnumerator%601.
 

@@ -10,10 +10,10 @@ ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 93488a0b-c94c-4ed6-97ea-571bb23a862e
+redirect_url: /deploying/index
 ---
 
-.NET Core App Types
-===================
+# .NET Core App Types
 
 ## Content moved!
 This content has merged and moved to the [.NET Core Application Deployment](deploying/index.md) topic. 

@@ -57,7 +57,7 @@ If your PR is addressing an existing issue, add the `Fixes #Issue_Number` keywor
 
 The .NET team will review your PR and let you know if there are any other updates/changes necessary in order to approve it.
 
-**Step 6:** Terspond to the PR feedback.
+**Step 6:** Rerspond to the PR feedback.
 
 The maintainers will merge your PR into the master branch once feedback has been applied and your PR is approved.
 

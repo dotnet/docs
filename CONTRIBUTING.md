@@ -61,8 +61,7 @@ The .NET team will review your PR and let you know if there are any other update
 
 The maintainers will merge your PR into the master branch once feedback has been applied and your PR is approved.
 
-We periodically push all commits from master branch into the live branch. You'll be able to see your contribution at https://docs.microsoft.com/dotnet/ within a few hours of the contribution being merged.
-
+We periodically push all commits from master branch into the live branch. You'll be able to see your contribution at https://docs.microsoft.com/dotnet/, typically within a few hours of the merge.
 ## DOs and DON'Ts
 
 Below is a short list of guiding rules that you should keep in mind when you are contributing to the .NET documentation.

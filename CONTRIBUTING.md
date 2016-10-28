@@ -92,7 +92,7 @@ You can build and preview the resulting site locally using a built-in web server
 docfx -t default --serve
 ```
 	
-This starts the local preview on [localhost:8080](http://localhost:8080). You can then view the changes by going to `http://localhost:8080/[path]`, such as http://localhost:8080/articles/welcome.html.
+This starts the local preview on localhost:8080 where view the updated content in your browser.
 
 **Note:** the local preview currently doesn't contain any themes at the moment so the look and feel won't be the same as in the documentation site. We're working towards fixing that experience.
 

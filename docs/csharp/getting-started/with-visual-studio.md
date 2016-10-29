@@ -23,7 +23,7 @@ In order to develop the application, Visual Studio 2015 must be installed on you
 
 In addition, you must install the [.NET Core tools for Visual Studio 2015](https://go.microsoft.com/fwlink/?LinkID=827546).
 
-For more information, see [Prerequisites for Windows development](../../core/windows-prerequisites).
+For more information, see [Prerequisites for Windows development](../../core/windows-prerequisites.md).
 
 ## A simple "Hello World" application ##
 

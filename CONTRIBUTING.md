@@ -2,9 +2,9 @@
 
 Thank you for your interest in contributing to the .NET documentation!
 
-In this topic, you'll see the basic process for adding or updating content in the [.NET documentation site](https://docs.microsoft.com/dotnet). For the detailed step-by-step process and instructions, please see the [official guide](https://github.com/Microsoft/Docs/blob/master/readme.md) in the [Microsoft/Docs](https://github.com/Microsoft/Docs) repo.
+The document covers the basic process for adding or updating content in the [.NET documentation site](https://docs.microsoft.com/dotnet). For the detailed step-by-step process and instructions, see the [official guide](https://github.com/Microsoft/Docs/blob/master/readme.md) in the [Microsoft/Docs](https://github.com/Microsoft/Docs) repo.
 
-In this topic, we'll cover: 
+Sections: 
 
 * [Process for contributing](#process-for-contributing) 
 * [Guidance checklist](#guidance-checklist)
@@ -14,16 +14,13 @@ In this topic, we'll cover:
 
 ## Process for contributing
 
-**Step 1:** Open an issue describing the article you wish to write and how it relates to existing content.
-The content inside the **docs** folder is organized into sections that are reflected in the Table of Contents (TOC). Define where the topic will be located in the TOC. Get feedback on your proposal. 
-
-You can skip this step for small changes.
+**Step 1:** Skip this step for small changes. Open an issue describing the article you wish to write and how it relates to existing content. Define where the topic will be located in the TOC. Get feedback on your proposal. 
 
 **Step 2:** Fork the `/dotnet/core-docs` repo.
 
 **Step 3:** Create a `branch` for your article.
 
-**Step 4:** Write your article. 
+**Step 4:** Write or update an article. 
 
 If it's a new topic, you can use this [template file](./styleguide/template.md) as your starting point. It contains the writing guidelines and also explains the metadata required for each article, such as author information.
 
@@ -35,7 +32,7 @@ Larger samples should be included in the `samples` folder under the root of the 
 
 Be sure to follow the proper Markdown syntax. See the [style guide](./styleguide/template.md) for more information.
 
-Also, remove the "wrench" icon (🔧) from the TOC and the file heading, if applicable. 
+Remove the "wrench" icon (🔧) from the TOC and the file heading, if applicable. 
 
 ### Example structure
 
@@ -57,14 +54,13 @@ Also, remove the "wrench" icon (🔧) from the TOC and the file heading, if appl
 
 If your PR is addressing an existing issue, add the `Fixes #Issue_Number` keyword to the commit message or PR description, so the issue can be automatically closed when the PR is merged. For more information, see [Closing issues via commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
 
-The .NET team will review your PR and let you know if the change looks good or if there are any other updates/changes necessary in order to approve it.
+The .NET team will review your PR and let you know if there are any other updates/changes necessary in order to approve it.
 
-**Step 6:** Make any necessary updates to your branch as discussed with the team. 
+**Step 6:** Respond to the PR feedback.
 
-The maintainers will merge your PR into the master branch once feedback has been applied and your change looks good. 
+The maintainers will merge your PR into the master branch once feedback has been applied and your PR is approved.
 
-On a certain cadence, we push all commits from master branch into the live branch and then you'll be able to see your contribution live at https://docs.microsoft.com/dotnet/. 
-
+We periodically push all commits from master branch into the live branch. You'll be able to see your contribution at https://docs.microsoft.com/dotnet/, typically within a few hours of the merge to live.
 ## DOs and DON'Ts
 
 Below is a short list of guiding rules that you should keep in mind when you are contributing to the .NET documentation.
@@ -74,7 +70,7 @@ Below is a short list of guiding rules that you should keep in mind when you are
 - **DO** use the [template](./styleguide/template.md) file as the starting point of your work.
 - **DO** create a separate branch on your fork before working on the articles.
 - **DO** follow the [GitHub Flow workflow](https://guides.github.com/introduction/flow/). 
-- **DO** blog and tweet (or whatever) about your contributions, frequently!
+- **DO** blog, tweet and use other social media to announce your contribution.
 
 > Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal. 
 
@@ -82,11 +78,10 @@ Below is a short list of guiding rules that you should keep in mind when you are
 
 The documentation is written in [GitHub Flavored Markdown](https://help.github.com/categories/writing-on-github/) and built using [DocFX](http://dotnet.github.io/docfx/) and other internal publishing/building tools. It is hosted at [docs.microsoft.com](https://docs.microsoft.com/dotnet). 
 
-To build the docs locally, you need to install [DocFX](https://dotnet.github.io/docfx/); latest versions are the best.
+Install [DocFX](https://dotnet.github.io/docfx/) to build the docs locally.
 
-There are several ways to use DocFX, and most of them are covered in the [DocFX getting started guide](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html). 
-The following instructions use the [command-line based](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool) version of the tool. 
-If you are comfortable with other ways listed on the link above, feel free to use those. 
+There are several ways to use DocFX as detailed in [DocFX getting started guide](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html). 
+We recommend the [command-line based](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool) version of the tools.
 
 **Note:** Currently DocFX requires the .NET Framework on Windows or Mono (for Linux or macOS). We hope to port it to .NET Core in the future. 
 
@@ -96,7 +91,7 @@ You can build and preview the resulting site locally using a built-in web server
 docfx -t default --serve
 ```
 	
-This starts the local preview on [localhost:8080](http://localhost:8080). You can then view the changes by going to `http://localhost:8080/[path]`, such as http://localhost:8080/articles/welcome.html.
+This starts the local preview on localhost:8080 where view the updated content in your browser.
 
 **Note:** the local preview currently doesn't contain any themes at the moment so the look and feel won't be the same as in the documentation site. We're working towards fixing that experience.
 

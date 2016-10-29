@@ -12,8 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
 ---
 
-.NET Products
-=============
+# .NET Products
 
 .NET is a very flexible, general purpose and inherently cross-platform [specification](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) for building developer products. It is used for all of the most popular app categories: desktop, mobile, cloud, gaming and IoT.
 
@@ -22,8 +21,7 @@ There are two subtly different terms used in this document:
 - ".NET product" - Enables you to build an app for one or more target platforms.
 - ".NET implementation" - Some combination of a runtime, framework and tools that can execute ".NET code" on which products are based.
 
-Product Categories
-------------------
+## Product Categories
 
 .NET products are available for each of the following product categories.
 
@@ -66,8 +64,7 @@ You can build Web and Cloud apps for Windows and Linux.
 - [ASP.NET](http://www.asp.net/) for Windows with the [.NET Framework](#net-framework)
 - [ASP.NET Core](http://docs.asp.net/) for Windows, macOS and Linux with [.NET Core](#net-core)
 
-.NET Implementations
---------------------
+## .NET Implementations
 
 Major commercial and open source .NET implementations are listed below, in alphabetical order.
 
@@ -83,7 +80,7 @@ The following are the main characteristics of .NET Core:
 
 **Cross-platform** - .NET Core supports three operating systems families: Linux, Windows and macOS. .NET Core apps are cross-platform by default. You can write apps and libraries that run unmodified across supported OSes.
 
-**Open Source** - [.NET Core](https://github.com/dotnet/core) is available on GitHub, licensed with the [MIT](https://github.com/dotnet/coreclr/blob/master/LICENSE.TXT) and [Apache 2](https://github.com/dotnet/roslyn/blob/master/License.txt) licenses (licensing is per component). Documentation is [CC-BY](https://github.com/dotnet/core-docs/blob/master/license.txt). .NET Core also makes use of a significant set of open source industry dependencies, listed in the [.NET Core release notes](https://github.com/dotnet/core/releases). 
+**Open Source** - [.NET Core](https://github.com/dotnet/core) is available on GitHub, licensed with the [MIT](https://github.com/dotnet/coreclr/blob/master/LICENSE.TXT) and [Apache 2](https://github.com/dotnet/roslyn/blob/master/License.txt) licenses (licensing is per component). Documentation is [CC-BY](https://github.com/dotnet/docs/blob/master/license.txt). .NET Core also makes use of a significant set of open source industry dependencies, listed in the [.NET Core release notes](https://github.com/dotnet/core/releases). 
 
 **Natural acquisition** - NET Core is distributed in several forms, aligning with specific developer needs. You can acquire .NET Core with the [.NET Core SDK](https://dot.net/core) installer (or zips) or via OS-specific package managers, such as APT and Yum. [Official .NET Core Docker images](https://hub.docker.com/r/microsoft/dotnet/) are available on Docker Hub. Higher-level framework libraries and the larger .NET library ecosystem are available on [NuGet](http://www.nuget.org/). 
 

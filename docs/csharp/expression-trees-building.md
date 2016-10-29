@@ -203,7 +203,7 @@ we'd like to avoid in our everyday coding tasks.
 
 For this section, I've also updated the visitor code to visit every node in this expression
 tree and write out information about the nodes that are created in this sample. You can see
-the code in [the samples section](https://github.com/dotnet/core-docs/tree/master/samples/csharp/expression-trees).
+the code in [the samples section](https://github.com/dotnet/docs/tree/master/samples/csharp/expression-trees).
 You can experiment for yourself: build it and run the samples.
 
 ## Examining the APIs

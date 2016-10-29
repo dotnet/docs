@@ -94,7 +94,7 @@ LogWrite "Will execute this:"
 $executedCommand = "$java $jar $destSource $jnlpCredentialsFlag $credentials $jnlpUrl $serverURL }"
 LogWrite $executedCommand
 
-Invoke-WebRequest "https://raw.githubusercontent.com/dotnet/core-docs/master/ci-scripts/agentman.ps1" -OutFile "$ProvisionArtifacts\agentman.ps1"
+Invoke-WebRequest "https://raw.githubusercontent.com/dotnet/docs/master/ci-scripts/agentman.ps1" -OutFile "$ProvisionArtifacts\agentman.ps1"
 $executedCommand | Out-File -Encoding "UTF8" $ProvisionArtifacts\agentman.ps1 -append
 
 # SchTasks /Create /SC MINUTE /MO 1 /TN "Jenkins Agent Inspector" /TR "powershell.exe -File $ProvisionArtifacts\agentman.ps1 -WindowStyle Hidden"

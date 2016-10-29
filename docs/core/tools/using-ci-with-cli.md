@@ -73,7 +73,7 @@ Just use:
 dotnet: 1.0.0-preview2-003121
 ```
 
-Travis can run both `osx` (OS X 10.11) and `linux` ( Ubuntu 14.04 ) job in a build matrix, see [example .travis.yml](https://github.com/dotnet/core-docs/blob/master/.travis.yml) 
+Travis can run both `osx` (OS X 10.11) and `linux` ( Ubuntu 14.04 ) job in a build matrix, see [example .travis.yml](https://github.com/dotnet/docs/blob/master/.travis.yml) 
 for more information.
 
 ### AppVeyor
@@ -87,7 +87,7 @@ Just use:
 os: Visual Studio 2015
 ```
 
-It's possible to install a specific version of .NET Core SDK, see [example appveyor.yml](https://github.com/dotnet/core-docs/blob/master/appveyor.yml) 
+It's possible to install a specific version of .NET Core SDK, see [example appveyor.yml](https://github.com/dotnet/docs/blob/master/appveyor.yml) 
 for more info. 
 
 In the example, the .NET Core SDK binaries are downloaded, unzipped in a subdirectory and added to `PATH` env var.

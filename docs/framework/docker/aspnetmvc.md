@@ -46,7 +46,7 @@ Moving your application involves these steps:
 4. [Verifying the application using your browser.](#verify-in-the-browser)
 
 The finished application is located in the
-[dotnet/core-docs repository on GitHub](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator).
+[dotnet/core-docs repository on GitHub](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator).
 
 ## Prerequisites
 
@@ -203,7 +203,7 @@ see the running site.
 > You can temporarily disable it to make sure your container is working.
 
 The sample directory on GitHub contains a 
-[PowerShell script](https://github.com/dotnet/core-docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator/run.ps1)
+[PowerShell script](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator/run.ps1)
 that executes these commands for you. Open a PowerShell window, change directory to
 your solution directory, and type:
 

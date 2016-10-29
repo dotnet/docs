@@ -24,7 +24,7 @@ Before you begin, ensure you have the [latest .NET Core CLI tooling](https://www
 
 ## Hello, Console App!
 
-First, navigate to or create a new folder with a name you like.  "Hello" is the name chosen for the sample code, which can be found [here](https://github.com/dotnet/core-docs/tree/master/samples/core/console-apps/Hello).
+First, navigate to or create a new folder with a name you like.  "Hello" is the name chosen for the sample code, which can be found [here](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Hello).
 
 Open up a command prompt and type the following:
 
@@ -99,7 +99,7 @@ Let's try compiling a self-contained application instead of a portable applicati
 
 You need to make some changes to your `project.json`
 file to direct the tools to build a self-contained application. You can see these in the
-[HelloNative](https://github.com/dotnet/core-docs/tree/master/samples/core/console-apps/HelloNative)
+[HelloNative](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloNative)
 project in the samples directory.
 
 The first change is to remove the `"type": "platform"` element from all dependencies. 
@@ -258,7 +258,7 @@ Now the fun part: making the new file do something!
 
 ### Example: A Fibonacci Sequence Generator
 
-Let's say you want to build off of the previous [Fibonacci example](https://github.com/dotnet/core-docs/tree/master/samples/core/console-apps/Fibonacci) by caching some Fibonacci values and add some recursive flair.  Your code for a [better Fibonacci example](https://github.com/dotnet/core-docs/tree/master/samples/core/console-apps/FibonacciBetter) might look something like this:
+Let's say you want to build off of the previous [Fibonacci example](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Fibonacci) by caching some Fibonacci values and add some recursive flair.  Your code for a [better Fibonacci example](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/FibonacciBetter) might look something like this:
 
 ```csharp
 using System;
@@ -373,7 +373,7 @@ Say you wanted to introduce some new types to do work on.  You can do this by ad
 |__project.json
 ```
 
-This works great when the size of your project is relatively small.  However, if you have a larger app with many different data types and potentially multiple layers, you may wish to organize things logically.  This is where folders come into play.  You can either follow along with [the NewTypes sample project](https://github.com/dotnet/core-docs/tree/master/samples/core/console-apps/NewTypes) that this guide covers, or create your own files and folders.
+This works great when the size of your project is relatively small.  However, if you have a larger app with many different data types and potentially multiple layers, you may wish to organize things logically.  This is where folders come into play.  You can either follow along with [the NewTypes sample project](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes) that this guide covers, or create your own files and folders.
 
 To begin, create a new folder under the root of your project.  `/Model` is chosen here.
 
@@ -552,7 +552,7 @@ You'll probably be wanting to test your projects at some point.  Here's a good w
    
 ### Example: Extending the NewTypes project
 
-Now that the project system is in place, you can create your test project and start writing tests!  From here on out, this guide will use and extend [the sample Types project](https://github.com/dotnet/core-docs/tree/master/samples/core/console-apps/NewTypes).  Additionally, it will use the [Xunit](https://xunit.github.io/) test framework.  Feel free to follow along or create your own multi-project system with tests.
+Now that the project system is in place, you can create your test project and start writing tests!  From here on out, this guide will use and extend [the sample Types project](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes).  Additionally, it will use the [Xunit](https://xunit.github.io/) test framework.  Feel free to follow along or create your own multi-project system with tests.
 
 
 The whole project structure should look like this:

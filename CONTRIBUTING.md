@@ -1,5 +1,4 @@
-Contributing
-============
+# Contributing
 
 Thank you for your interest in contributing to the .NET documentation!
 
@@ -54,7 +53,7 @@ Also, remove the "wrench" icon (🔧) from the TOC and the file heading, if appl
         /porting
           porting_sample.cs
 
-**Step 5:** Submit a Pull Request (PR) from your branch to `dotnet/core-docs/master`.
+**Step 5:** Submit a Pull Request (PR) from your branch to `dotnet/docs/master`.
 
 If your PR is addressing an existing issue, add the `Fixes #Issue_Number` keyword to the commit message or PR description, so the issue can be automatically closed when the PR is merged. For more information, see [Closing issues via commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
 
@@ -77,7 +76,7 @@ Below is a short list of guiding rules that you should keep in mind when you are
 - **DO** follow the [GitHub Flow workflow](https://guides.github.com/introduction/flow/). 
 - **DO** blog and tweet (or whatever) about your contributions, frequently!
 
-> Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/dotnet/core-docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal. 
+> Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal. 
 
 ## Building the docs
 
@@ -139,4 +138,4 @@ with `http://docs.microsoft.com/dotnet/articles`.
 
 Your topic will also contain links to the sample. Link directly to the sample's folder on GitHub.
 
-For more information, see the [Samples Readme](https://github.com/dotnet/core-docs/blob/master/samples/README.md).
+For more information, see the [Samples Readme](https://github.com/dotnet/docs/blob/master/samples/README.md).

@@ -3,6 +3,7 @@ title: Packages, Metapackages and Frameworks
 description: Packages, Metapackages and Frameworks
 keywords: .NET, .NET Core
 author: richlander
+ms.author: mairaw
 manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
@@ -49,7 +50,7 @@ Packages are referenced in project.json. In the example below, the [System.Runti
     "System.Runtime": "4.1.0"
   },
   "frameworks": {
-    "netstandard1.5": {}
+    "netstandard1.6": {}
   }
 }
 ```
@@ -87,10 +88,10 @@ In the following example, the `NETStandard.Library` meta package is referenced, 
 ```json
 {
   "dependencies": {
-    "NETStandard.Library": "1.5.0"
+    "NETStandard.Library": "1.6.0"
   },
   "frameworks": {
-    "netstandard1.5": {}
+    "netstandard1.6": {}
   }
 }
 ```
@@ -147,15 +148,15 @@ The .NET Standard (TFM: `netstandard`) framework represents the APIs defined by 
 
 The `NETStandard.Library` metapackage targets the `netstandard` framework. The most common way to target `netstandard` is by referencing this metapackage. It describes and provides access to the ~40 .NET  libraries and associated APIs that define the .NET Standard Library. You can reference additional packages that target `netstandard` to get access to additional APIs.
 
-A given [NETStandard.Library version](versions/index.md) matches the highest `netstandard` version it exposed (via its closure). The framework reference in project.json is used to select the correct assets from the underlying packages. In this case, `netstandard1.5` assets are required, as opposed to `netstandard1.4` or `net46`, for example. 
+A given [NETStandard.Library version](versions/index.md) matches the highest `netstandard` version it exposed (via its closure). The framework reference in project.json is used to select the correct assets from the underlying packages. In this case, `netstandard1.6` assets are required, as opposed to `netstandard1.4` or `net46`, for example. 
 
 ```json
 {
   "dependencies": {
-    "NETStandard.Library": "1.5.0"
+    "NETStandard.Library": "1.6.0"
   },
   "frameworks": {
-    "netstandard1.5": {}
+    "netstandard1.6": {}
   }
 }
 ```
@@ -165,7 +166,7 @@ The framework and metapackage references in project.json do not need to match. F
 ```json
 {
   "dependencies": {
-    "NETStandard.Library": "1.5.0"
+    "NETStandard.Library": "1.6.0"
   },
   "frameworks": {
     "netstandard1.3": {}
@@ -173,9 +174,9 @@ The framework and metapackage references in project.json do not need to match. F
 }
 ```
 
-It may seem strange to target `netstandard1.3` but use the 1.5.0 version of `NETStandard.Library`. It is a valid use-case, since the metapackage maintains support for older `netstandard` versions. It could be the case you've standardized on the 1.5.0 version of the metapackage and use it for all your libraries, which target a variety of `netstandard` versions. With this approach, you only need to restore `NETStandard.Library` 1.5.0 and not earlier versions. 
+It may seem strange to target `netstandard1.3` but use the 1.6.0 version of `NETStandard.Library`. It is a valid use-case, since the metapackage maintains support for older `netstandard` versions. It could be the case you've standardized on the 1.6.0 version of the metapackage and use it for all your libraries, which target a variety of `netstandard` versions. With this approach, you only need to restore `NETStandard.Library` 1.6.0 and not earlier versions. 
 
-The reverse would not be valid: targeting `netstandard1.5` with the 1.3.0 version of `NETStandard.Library`. You cannot target a higher framework with a lower metapackage, since the lower version metapackage will not expose any assets for that higher framework. The [versioning scheme] for metapackages asserts that metapackages match the highest version of the framework they describe. By virtue of the versioning scheme, the first version of `NETStandard.Library` is v1.5.0 given that it contains `netstandard1.5` assets. v1.3.0 is used in the example above, for symmetry with the example above, but does not actually exist.
+The reverse would not be valid: targeting `netstandard1.6` with the 1.3.0 version of `NETStandard.Library`. You cannot target a higher framework with a lower metapackage, since the lower version metapackage will not expose any assets for that higher framework. The [versioning scheme] for metapackages asserts that metapackages match the highest version of the framework they describe. By virtue of the versioning scheme, the first version of `NETStandard.Library` is v1.6.0 given that it contains `netstandard1.6` assets. v1.3.0 is used in the example above, for symmetry with the example above, but does not actually exist.
 
 ### .NET Core Application
 

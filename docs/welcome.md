@@ -17,7 +17,7 @@ Welcome to .NET
 
 See ["Getting Started with .NET Core"](core/getting-started.md) to learn how to create a simple .NET Core app. 
 
-You can build many types of apps with .NET Core, such as cloud, IoT and games. Your app can run on Windows, Linux, Android, macOS, and iOS. There are free tools that you can use to build apps or games. You can deploy them on servers or desktops or publish them to app stores. It's accessible to students.
+You can build many types of apps with .NET, such as cloud, IoT and games. Your app can run on Windows, Linux, Android, macOS, and iOS. There are free tools that you can use to build apps or games. You can deploy them on servers or desktops or publish them to app stores. It's accessible to students.
 
 News
 ----

@@ -1,8 +1,8 @@
-#.NET Core Documentation
+#.NET Documentation
 
-This repo contains work-in-progress documentation for .NET Core. To contribute, see the [Contributing Guide](CONTRIBUTING.md) and the [issues list](https://github.com/dotnet/docs/issues). 
+This repo contains work-in-progress documentation for .NET. To contribute, see the [Contributing Guide](CONTRIBUTING.md) and the [issues list](https://github.com/dotnet/docs/issues). 
 
-We welcome contributions to help us improve and complete the .NET Core docs. Feel free to copy/paste documentation from [.NET Framework docs](https://msdn.microsoft.com/library/w0x726c2.aspx) as a starting point for .NET Core docs. We hope to port higher-quality .NET Core content to the .NET Framework docs, so investments in this repo will benefit all .NET users. We anticipate that [Xamarin](http://developer.xamarin.com/api/root/classlib/), [Mono](http://docs.go-mono.com/?link=root%3a%2fclasslib) and [Unity](http://docs.unity3d.com/Manual/index.html) will also use this documentation.
+We welcome contributions to help us improve and complete the .NET docs. Feel free to copy/paste documentation from [.NET Framework docs](https://msdn.microsoft.com/library/w0x726c2.aspx) as a starting point for .NET docs. We anticipate that [Xamarin](http://developer.xamarin.com/api/root/classlib/), [Mono](http://docs.go-mono.com/?link=root%3a%2fclasslib) and [Unity](http://docs.unity3d.com/Manual/index.html) will also use this documentation.
 
 Samples Build Status
 ===

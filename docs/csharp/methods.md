@@ -68,7 +68,7 @@ The method definition specifies the names and types of any parameters that are r
 
 The most common form of method invocation used positional arguments; it supplies arguments in the same order as method parameters. The methods of the `Motorcycle` class can therefore be called as in the following example. The call to the `Drive` method, for example, includes two arguments that correspond to the two parameters in the method's syntax. The first becomes the value of the `miles` parameter, the second the value of the `speed` parameter.
 
-[!CODE [csSnippets.Methods#41](../../samples/snippets/csharp/concepts/methods/method40.cs#41)]
+[!CODE [csSnippets.Methods#41](../../samples/snippets/csharp/concepts/methods/methods40.cs#41)]
 
 You can also used *named arguments* instead of positional arguments when invoking a method. When using named arguments, you specify the parameter name followed by a colon (":") and the argument. Arguments to the method can appear in any order, as long as all required arguments are present. The following example uses named arguments to invoke the `TestMotorcycle.Drive` method. In this example, the named arguments are passed in the opposite order from the method's parameter list.
 
@@ -178,7 +178,7 @@ To use a value returned from a method, the calling method can use the method cal
 
 [!CODE [csSnippets.Methods#45](../../samples/snippets/csharp/concepts/methods/return44.cs#45)]
 
-[!CODE [csSnippets.Methods#46](../../samples/snippets/csharp/concepts/methods/reteurn44.cs#46)]
+[!CODE [csSnippets.Methods#46](../../samples/snippets/csharp/concepts/methods/return44.cs#46)]
 
 Using a local variable, in this case, `result`, to store a value is optional. It may help the readability of the code, or it may be necessary if you need to store the original value of the argument for the entire scope of the method.
 

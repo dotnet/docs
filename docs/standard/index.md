@@ -1,10 +1,10 @@
 ---
 title: About .NET
-description: Learn about the .NET Platform
+description: Learn about the .NET Platform.
 keywords: .NET, .NET Core
 author: richlander
 manager: wpickett
-ms.date: 06/23/2016
+ms.date: 10/31/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies

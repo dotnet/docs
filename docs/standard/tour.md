@@ -1,6 +1,6 @@
 ---
-title: .NET Primer
-description: .NET Primer
+title: Tour of .NET
+description: A guided tour through some of the prominent features of the .NET platform.
 keywords: .NET, .NET Core
 author: richlander
 manager: wpickett

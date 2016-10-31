@@ -32,14 +32,14 @@ This topic contains the following sections:
 - [Return values](#return)
 - [Extension methods](#extension)
 - [Async Methods](#async)
-- [Expression body definitions](#expr)
+- [Expression bodied members](#expr)
 - [Iterators](#iterators)
 
 ## <a name="signatures" /a> Method signatures ##
 
 Methods are declared in a `class` or `struct` by specifying:
 
-- An access level, such as `public` or `private`.
+- An optional access level, such as `public` or `private`. The default is `private`.
 - Optional modifiers such as `abstract` or `sealed`.
 - The return value, or `void` if the method has none.
 - The method name.
@@ -54,7 +54,7 @@ The following example defines a class named `Motorcycle` that contains five meth
 
 [!CODE [csSnippets.Methods#40](../../samples/snippets/csharp/concepts/methods/methods40.cs#40)]
 
-Note that the `Motorcycle` class includes an overloaded method, `Drive`. Two methods have the same namne, but can be differentiated by their parameter types.
+Note that the `Motorcycle` class includes an overloaded method, `Drive`. Two methods have the same namne, but must be differentiated by their parameter types.
 
 ## <a name="invocation" /> Method invocation ##
 
@@ -108,7 +108,7 @@ The following example defines a class (which is a reference type) named `SampleR
 
 ### <a name="byref" /> Passing parameters by reference ###
 
-You pass a parameter by reference when you want to change the calling method to change the value of the parameter and refect that change in the calling program. To pass a parameter by reference, you use the `ref` or `out` keyword.
+You pass a parameter by reference when you want to change the value of an argument in a method and want to refect that change when control returns to the calling method. To pass a parameter by reference, you use the `ref` or `out` keyword.
 
 The following example is identical to the previous one, except the value is passed by reference to the `ModifyValue` method. When the value of the parameter is modified in the `ModifyValue` method, the change in value is reflected when control returns to the caller.
 
@@ -150,7 +150,7 @@ The following example defines a method, `ExampleMethod`, that has one required a
 
 [!CODE [csSnippets.Methods#21](../../samples/snippets/csharp/concepts/methods/optional1.cs#21)]
 
-If a method with multiple optional arguments is invoked using positional arguments, the caller must supply an argument for all optional parameters from the first one to the last one for which an argument is supplied. In the case of the  `ExampleMethod` method, for example, if the caller supplies an argument for the `description` parameter, it must also supply one for the `optionalInt` parameter. `opt.ExampleMethod(2, 2, "Addition of 2 and 2");` is a valid method call; `opt.ExampleMethod(2, , "Addition of 2 and 0);` generates an "Argument missing" compiler error, 
+If a method with multiple optional arguments is invoked using positional arguments, the caller must supply an argument for all optional parameters from the first one to the last one for which an argument is supplied. In the case of the  `ExampleMethod` method, for example, if the caller supplies an argument for the `description` parameter, it must also supply one for the `optionalInt` parameter. `opt.ExampleMethod(2, 2, "Addition of 2 and 2");` is a valid method call; `opt.ExampleMethod(2, , "Addition of 2 and 0);` generates an "Argument missing" compiler error.
 
 If a method is called using named arguments or a combination of positional and named arguments, the caller can omit any arguments that follow the last positional argument in the method call.
 
@@ -258,7 +258,7 @@ An async method can't declare any [ref](https://msdn.microsoft.com/en-us/library
 
  For more information about async methods, see [Asynchronous Programming with Async and Await](https://msdn.microsoft.com/en-us/library/mt674882.aspx), [Control Flow in Async Programs](https://msdn.microsoft.com/en-us/library/mt674892.aspx), and [Async Return Types](https://msdn.microsoft.com/en-us/library/mt674893.aspx).
 
-## <a name="expr" /> Expression body definitions ##
+## <a name="expr" /> Expression bodied members ##
 
 It is common to have method definitions that simply return immediately with the result of an expression, or that have a single statement as the body of the method.  There is a syntax shortcut for defining such methods using `=>`:
 

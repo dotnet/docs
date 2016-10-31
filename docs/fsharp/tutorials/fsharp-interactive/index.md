@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 36af8d1b-dc08-4a37-9497-d23c0a0ac11c 
 ---
 
-## Interactive Programming with F# #
+# Interactive Programming with F# #
 
 > [!NOTE]
 This article currently describes the experience for Windows only.  It will be rewritten.

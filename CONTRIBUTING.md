@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to the .NET documentation!
 
-In this topic, you'll see the basic process for adding or updating content in the [.NET documentation site](https://docs.microsoft.com/dotnet). For the detailed step-by-step process and instructions, please see the [official guide](https://github.com/Microsoft/Docs/blob/master/readme.md) in the [Microsoft/Docs](https://github.com/Microsoft/Docs) repo.
+In this topic, you'll see the basic process for adding or updating content in the [.NET documentation site](https://docs.microsoft.com/dotnet). 
 
 In this topic, we'll cover: 
 

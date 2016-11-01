@@ -1,7 +1,7 @@
 ---
 layout: HubPage
 
-title: .NET Core Documentation
+title: .NET Documentation
 description:
 keywords:
 author:

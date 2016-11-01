@@ -7,11 +7,11 @@ A new version of your library is source compatible with a previous version if co
 In contrast, a new version of your library is binary compatible if an application that depended on the old version can, without recompilation, work with the new version.
 
 Lucky for you C# has features to ensure that as a class evolves over time, through the addition of new members, other classes that derive from it still keep working as intended.
-This is achieved through the use of the `virtual`, `override` and `new` keywords.
+This is achieved through the use of the `virtual`, `override` and `new` modifiers.
 
 ## virtual
 
-You use the virtual keyword to indicate a method or property declaration whose implementation you want to be overridden in a derived class.
+You use the virtual modifier to indicate a method or property declaration whose implementation you want to be overridden in a derived class.
 As a library developer you might want to do this for members that could benefit from a custom implementation in a consuming application.
 
 Take the following example:
@@ -142,8 +142,8 @@ Area of Circle = 154
 ```
 
 From the sample code above you'll notice there's a base class `Shape` from which `Square` and `Circle` inherit.
-The `Circle` class provides its own implementation for the `Area` method by using the `override` keyword.
-Original method implementations can still be accessed on the `base` keyword, notice how the `Square` class uses the constructor of the base class,
+The `Circle` class provides its own implementation for the `Area` method by using the `override` modifier.
+Original method implementations can still be accessed on the `base` modifier, notice how the `Square` class uses the constructor of the base class,
 making a call to the original area method implementation is as simple as calling `base.Area()` in a derived class.
 
 When building or consuming a library here are some things to note about the override modifier:
@@ -152,6 +152,54 @@ When building or consuming a library here are some things to note about the over
 * Making a previously virtual method non-virtual is neither source nor binary compatible. It will cause errors during compilation and will break existing applications.
 * You cannot use the `override` modifier with `static`, `abstract`, `virtual` or `new` modifiers.
 
+
 ## new
 
-_*TODO*: Explain new keyword with code sample, explain how it ties into previous sample code_
+You might run into situations where you'd like to completely hide a member inherited from a base class, 
+one example that comes to mind is when you'd like to provide your own implementation for a non-virtual method which can't be overriden.
+
+Take the following example:
+
+```csharp
+public class BaseClass
+{
+    public void Method1()
+    {
+        Console.WriteLine("A base method");
+    }
+}
+
+public class DerivedClass : BaseClass
+{
+    new public void Method1()
+    {
+        Console.WriteLine("A derived method");
+    }
+}
+
+public static void Main()
+{
+    BaseClass b = new BaseClass();
+    DerivedClass d = new DerivedClass(7);
+
+    Console.WriteLine(b.Method1());
+    Console.WriteLine(b.Method1());
+}
+```
+
+#### Output
+
+```
+A base method
+A derived method
+```
+
+In this example you hide the `Method1` method from the base class in the derived class.
+If the `new` modifier is not included a compiler warning will be generated stating that you're hiding an inherited member,
+a compiler warning will also be generated if the `new` modifier is used with a method that doesn't hide an inherited member.
+
+When building or consuming a library here are some things to note about the `new` modifier:
+
+* Since the program still compiles despite compiler warnings the removal of a hidden method in the base class is both source and binary compatible.
+* Adding a new method to your library that shares the same signature with a method in the derived class will only cause compiler warnings as your method will be hidden by default.
+* You cannot use the `new` modifier with the `override` modifier.

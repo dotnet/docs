@@ -38,7 +38,7 @@ You'll also compare the updated order to the original order.
 
 This tutorial has multiple steps. After each step, you can run the
 application and see the progress. You can also see the completed
-sample in our [GitHub repository.](https://github.com/dotnet/core-docs/blob/master/samples/csharp/getting-started/console-linq)
+sample in our [GitHub repository.](https://github.com/dotnet/docs/blob/master/samples/csharp/getting-started/console-linq)
 
 
 ## Prerequisites

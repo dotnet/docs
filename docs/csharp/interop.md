@@ -19,9 +19,9 @@ ms.assetid: 54485caa-09e0-466c-86fa-6a9aab6c332b
 > This topic hasn’t been written yet! 
 >
 > We welcome your input to help shape the scope and approach. You can track the status and provide input on this
-> [issue](https://github.com/dotnet/core-docs/issues/492) at GitHub.
+> [issue](https://github.com/dotnet/docs/issues/492) at GitHub.
 > 
 > If you would like to review early drafts and outlines of this topic, please leave a note with your contact information in the issue.
 >
-> Learn more about how you can contribute on [GitHub](https://github.com/dotnet/core-docs/blob/master/CONTRIBUTING.md).
+> Learn more about how you can contribute on [GitHub](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md).
 >

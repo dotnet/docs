@@ -12,8 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
 ---
 
-About .NET
-==========
+# About .NET
 
 > Check out the ["Getting Started with .NET Core" tutorials](../core/getting-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
 
@@ -31,8 +30,7 @@ Multiple [.NET implementations and products](products.md) are available, based o
 - Browse the [.NET API Library](../../api/index.md)
 - [Introduction to the Common Language Runtime](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/intro-to-clr.md)
 
-Fundamentals
-------------
+## Fundamentals
 
 **Multi-Language** -- .NET provides a well-defined type system, file formats, runtime, framework and tools that can be used by multiple languages, both for their own execution and also to interoperate with other languages using those same components of .NET as their shared currency.
 
@@ -40,8 +38,7 @@ Fundamentals
 
 **Type Safety** -- The primary .NET model for functionality and memory representation is "types". Types define shape and optionally behavior. The runtime ensures that calling code can only operate on types according to their definition and specified visibility of members, providing consistent, reliable and secure results.
 
-Features
---------
+## Features
 
 **User-defined Value Types** -- Value types are a useful category of types since they offer the semantic of "pass by value" instead of "pass by reference", as is the case for classes. Value types are most obviously usefully for numeric data. .NET enables value types for both primitive types, like integers, and user-defined types.
 
@@ -53,15 +50,13 @@ Features
 
 **Cross-platform** -- .NET was intended to be cross platform from its inception. The binary format and the instruction set are operating system, CPU and pointer-size agnostic. A given .NET binary built in 2000 to run on a 32-bit Windows machine can run on the ARM64 iOS device on 2016 without modification.
 
-Open source
------------
+## Open source
 
 The [.NET Core](https://github.com/dotnet/core) and [Mono](https://github.com/mono/mono) implementations of .NET are open source, using the MIT license. Documentation uses the [Creative Commons CC-BY](https://creativecommons.org/licenses/by/4.0/) license. .NET Core and Mono are sponsored by Microsoft and have many contributors from the community. 
 
 These general purpose runtimes can be used as the basis of academic research or teaching/learning or commercial products. Their open nature also means that anyone can contribute back to the upstream product code given a bug or the desire for a new feature.
 
-Projects
---------
+## Projects
 
 - [CoreCLR](https://github.com/dotnet/coreclr) - .NET runtime, used by .NET Core.
 - [Mono](https://github.com/mono/mono) - .NET runtime, used by Xamarin and others.
@@ -70,8 +65,7 @@ Projects
 - [F#](https://github.com/microsoft/visualfsharp) - F# compiler.
 - [Xamarin SDK](http://open.xamarin.com) - Tools and libraries needed to write Android, iOS and macOS in C# and F#.
 
-Standardized
-------------
+## Standardized
 
 .NET is specified via open [ECMA standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) that outline its capabilities and that can be used to make a new implementation. There are other .NET implementations, with Mono and Unity being the most popular beyond the Microsoft ones.
 

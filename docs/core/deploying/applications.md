@@ -21,5 +21,5 @@ ms.assetid: 1db00fb1-d947-480d-8d7d-7152e67b0585
 > We welcome your input to help shape the scope and approach. 
 > 
 > Learn more about how you can contribute on
-> [GitHub](https://github.com/dotnet/core-docs/blob/master/CONTRIBUTING.md).
+> [GitHub](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md).
 >

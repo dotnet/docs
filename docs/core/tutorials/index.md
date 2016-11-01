@@ -12,8 +12,7 @@ ms.devlang: dotnet
 ms.assetid: f6f654b1-1d2c-4105-8376-7c1959e23803
 ---
 
-.NET Core Tutorials
-===================
+# .NET Core Tutorials
 
 The following tutorials are available for learning about .NET Core.
 

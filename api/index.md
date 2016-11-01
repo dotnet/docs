@@ -597,4 +597,4 @@ The following is a list of namespaces in the .NET Core class library. Each names
 
 ## Improving the Documentation ##
 
-If you find an issue or an inconsistency, we would love to hear about it! Go to the [.NET Core docs repo](https://github.com/dotnet/core-docs/ ".NET Core docs repo") on Github, and open an issue to let us know.
+If you find an issue or an inconsistency, we would love to hear about it! Go to the [.NET docs repo](https://github.com/dotnet/docs/) on Github, and open an issue to let us know.

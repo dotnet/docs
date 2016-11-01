@@ -3,6 +3,7 @@ title: Best practices for regular expressions
 description: Best practices for regular expressions
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/26/2016
 ms.topic: article
@@ -18,19 +19,19 @@ The regular expression engine in .NET is a powerful, full-featured tool that pro
 
 This topic outlines some of the best practices that developers can adopt to ensure that their regular expressions achieve optimal performance. It contains the following sections:
 
-* [Consider the Input Source](#Consider-the-Input-Source)
+* [Consider the input source](#consider-the-input-source)
 
-* [Handle Object Instantiation Appropriately](#Handle-Object-Instantiation-Appropriately)
+* [Handle object instantiation appropriately](#handle-object-instantiation-appropriately)
 
-* [Take Charge of Backtracking](#Take-Charge-of-Backtracking)
+* [Take charge of backtracking](#take-charge-of-backtracking)
 
-* [Use Time-out Values](#Use-Time-out-Values)
+* [Use time-out values](#use-time-out-values)
 
-* [Capture Only When Necessary](#Capture-Only-When-Necessary)
+* [Capture only when necessary](#capture-only-when-necessary)
 
-* [Related Topics](#Related-Topics)
+* [Related topics](#related-topics)
 
-## Consider the Input Source
+## Consider the input source
 
 In general, regular expressions can accept two types of input: constrained or unconstrained. Constrained input is text that originates from a known or reliable source and follows a predefined format. Unconstrained input is text that originates from an unreliable source, such as a web user, and may not follow a predefined or expected format.
 
@@ -47,7 +48,7 @@ To match unconstrained input, a regular expression must be able to efficiently h
 The last text type is especially problematic for a regular expression that has been written to handle constrained input. If that regular expression also relies on extensive [backtracking](backtracking.md), the regular expression engine can spend an inordinate amount of time (in some cases, many hours or days) processing seemingly innocuous text. 
 
 > [!WARNING]
-> The following example uses a regular expression that is prone to excessive backtracking and that is likely to reject valid email addresses. You should not use it in an email validation routine. If you would like a regular expression that validates email addresses, see [How to: Verify that Strings Are in Valid Email Format](verify-format.md). 
+> The following example uses a regular expression that is prone to excessive backtracking and that is likely to reject valid email addresses. You should not use it in an email validation routine. If you would like a regular expression that validates email addresses, see [How to: Verify that strings are in valid email format](verify-format.md). 
 
 
 For example, consider a very commonly used but extremely problematic regular expression for validating the alias of an email address. The regular expression `^[0-9A-Z]([-.\w]*[0-9A-Z])*$` is written to process what is considered to be a valid email address, which consists of an alphanumeric character, followed by zero or more characters that can be alphanumeric, periods, or hyphens. The regular expression must end with an alphanumeric character. However, as the following example shows, although this regular expression handles valid input easily, its performance is very inefficient when it is processing nearly valid input.
@@ -204,11 +205,11 @@ Because this regular expression was developed solely by considering the format o
 
 To solve this problem, you can do the following:
 
-* When developing a pattern, you should consider how backtracking might affect the performance of the regular expression engine, particularly if your regular expression is designed to process unconstrained input. For more information, see the [Take Charge of Backtracking](#Take-Charge-of-Backtracking) section.
+* When developing a pattern, you should consider how backtracking might affect the performance of the regular expression engine, particularly if your regular expression is designed to process unconstrained input. For more information, see the [Take charge of backtracking](#take-charge-of-backtracking) section.
 
 * Thoroughly test your regular expression using invalid and near-valid input as well as valid input. To generate input for a particular regular expression randomly, you can use [Rex](http://research.microsoft.com/en-us/projects/rex/), which is a regular expression exploration tool from Microsoft Research.
 
-## Handle Object Instantiation Appropriately
+## Handle object instantiation appropriately
 
 At the heart of .NET’s regular expression object model is the [System.Text.RegularExpressions.Regex](xref:System.Text.RegularExpressions.Regex) class, which represents the regular expression engine. Often, the single greatest factor that affects regular expression performance is the way in which the [Regex](xref:System.Text.RegularExpressions.Regex) engine is used. Defining a regular expression involves tightly coupling the regular expression engine with a regular expression pattern. That coupling process, whether it involves instantiating a [Regex](xref:System.Text.RegularExpressions.Regex) object by passing its constructor a regular expression pattern or calling a static method by passing it the regular expression pattern along with the string to be analyzed, is by necessity an expensive one.
 
@@ -223,7 +224,7 @@ You can couple the regular expression engine with a particular regular expressio
 > [!IMPORTANT]
 > The form of the method call (static, interpreted, compiled) affects performance if the same regular expression is used repeatedly in method calls, or if an application makes extensive use of regular expression objects.
  
-### Static Regular Expressions
+### Static regular Expressions
 
 Static regular expression methods are recommended as an alternative to repeatedly instantiating a regular expression object with the same regular expression. Unlike regular expression patterns used by regular expression objects, either the operation codes or the compiled Microsoft intermediate language (MSIL) from patterns used in instance method calls is cached internally by the regular expression engine. 
 
@@ -295,7 +296,7 @@ Pattern | Description
 `\s*` | Match zero or more white-space characters.
 `\d+` | Match one or more decimal digits.
  
-### Interpreted vs. Compiled Regular Expressions
+### Interpreted vs. compiled regular expressions
 
 Regular expression patterns that are not bound to the regular expression engine through the specification of the [RegexOptions.Compiled](xref:System.Text.RegularExpressions.RegexOptions.Compiled) option are interpreted. When a regular expression object is instantiated, the regular expression engine converts the regular expression to a set of operation codes. When an instance method is called, the operation codes are converted to MSIL and executed by the JIT compiler. Similarly, when a static regular expression method is called and the regular expression cannot be found in the cache, the regular expression engine converts the regular expression to a set of operation codes and stores them in the cache. It then converts these operation codes to MSIL so that the JIT compiler can execute them. Interpreted regular expressions reduce startup time at the cost of slower execution time. Because of this, they are best used when the regular expression is used in a small number of method calls, or if the exact number of calls to regular expression methods is unknown but is expected to be small. As the number of method calls increases, the performance gain from reduced startup time is outstripped by the slower execution speed.
 
@@ -517,12 +518,12 @@ Pattern | Description
 `\w+` | Match one or more word characters.
 `[.?:;!]` | Match a period, question mark, colon, semicolon, or exclamation point.
  
-## Take Charge of Backtracking
+## Take charge of backtracking
 
 Ordinarily, the regular expression engine uses linear progression to move through an input string and compare it to a regular expression pattern. However, when indeterminate quantifiers such as __*__, **+**, and **?** are used in a regular expression pattern, the regular expression engine may give up a portion of successful partial matches and return to a previously saved state in order to search for a successful match for the entire pattern. This process is known as backtracking.
 
 > [!NOTE]
-> For more information on backtracking, see [Details of Regular Expression Behavior](regex-behavior.md) and [Backtracking in Regular Expressions](backtracking.md).
+> For more information on backtracking, see [Details of regular expression behavior](regex-behavior.md) and [Backtracking in regular expressions](backtracking.md).
  
 Support for backtracking gives regular expressions power and flexibility. It also places the responsibility for controlling the operation of the regular expression engine in the hands of regular expression developers. Because developers are often not aware of this responsibility, their misuse of backtracking or reliance on excessive backtracking often plays the most significant role in degrading regular expression performance. In a worst-case scenario, execution time can double for each additional character in the input string. In fact, by using backtracking excessively, it is easy to create the programmatic equivalent of an endless loop if input nearly matches the regular expression pattern; the regular expression engine may take hours or even days to process a relatively short input string.
 
@@ -672,7 +673,7 @@ End Module
 '       Match not found.
 ```
 
-The regular expression language in .NET includes the following language elements that you can use to eliminate nested quantifiers. For more information, see [Grouping Constructs in Regular Expressions](grouping.md).
+The regular expression language in .NET includes the following language elements that you can use to eliminate nested quantifiers. For more information, see [Grouping constructs in regular expressions](grouping.md).
 
 Language element | Description
 ---------------- | ----------- 
@@ -1085,11 +1086,11 @@ You can disable captures in one of the following ways:
 
 * Use the [RegexOptions.ExplicitCapture](xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture) option. It disables all unnamed or implicit captures in the regular expression pattern. When you use this option, only substrings that match named groups defined with the **(?<**_name_**>**_subexpression_**)** language element can be captured. The [ExplicitCapture](xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture) flag can be passed to the options parameter of a [Regex](xref:System.Text.RegularExpressions.Regex) class constructor or to the options parameter of a [Regex](xref:System.Text.RegularExpressions.Regex) static matching method.
 
-* Use the **n** option in the **(?imnsx)** language element. This option disables all unnamed or implicit captures from the point in the regular expression pattern at which the element appears. Captures are disabled either until the end of the pattern or until the **(-n)** option enables unnamed or implicit captures. For more information, see [Miscellaneous Constructs in Regular Expressions](miscellaneous.md).
+* Use the **n** option in the **(?imnsx)** language element. This option disables all unnamed or implicit captures from the point in the regular expression pattern at which the element appears. Captures are disabled either until the end of the pattern or until the **(-n)** option enables unnamed or implicit captures. For more information, see [Miscellaneous constructs in regular expressions](miscellaneous.md).
 
 * Use the **n** option in the **(?imnsx:**_subexpression_**)** language element. This option disables all unnamed or implicit captures in *subexpression*. Captures by any unnamed or implicit nested capturing groups are disabled as well.
 
-## Related Topics
+## Related topics
 
 Title | Description
 ----- | ----------- 

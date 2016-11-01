@@ -3,6 +3,7 @@ title: What's New in C# 7 | C# Guide
 description: Get an overview of the new features coming in the upcoming version 7 of the C# language.    
 keywords: C#, .NET, .NET Core, Latest Features, What's New
 author:  BillWagner
+ms.author: wiwagn
 manager: wpickett
 ms.date: 10/03/2016
 ms.topic: article
@@ -20,15 +21,15 @@ C# 7 adds a number of new features to the C# language:
 * [Tuples](#tuples)
 * [Pattern Matching](#pattern-matching)
 * [`ref` locals and returns](#ref-locals-and-returns)
-* [Local Functions](#local-expressions)
-* [Expression Bodied Everything](#expression-bodied-everything)
-* [`throw` Expressions](#throw-expressions)
+* [Local Functions](#local-functions)
+* [Expression Bodied Everything](#expression-bodied-everything-preview-5)
+* [`throw` Expressions](#throw-expressions-preview-5)
 * [Generalized async return types](#generalized-async-return-types)
 * [Numeric literal syntax improvements](#numeric-literal-syntax-improvements)
 
 Two of the most interesting features don't make that list. The first
 is the shortened release cycle. C# 7 is following C# 6 much more quickly.
-The second is that C# 7 has [features contributed by the community](#expression-bodied-everything), not
+The second is that C# 7 has [features contributed by the community](#expression-bodied-everything-preview-5), not
 the C# compiler team. The language is truly open.
 
 The remainder of this topic provides an overview 

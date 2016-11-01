@@ -363,10 +363,10 @@ Type: String
 Specifies the type of the dependency. It can be one of the following values: `default`, `build` or `platform`. The default value is `default`.
 
 `build` is known as a development dependency and is only used for build-time. It means that the package should not be published or added as a dependency to the output `.nupkg` file. 
-It has the same effect of setting [supressParent](#supressParent) to `all`.
+It has the same effect of setting [supressParent](#supressparent) to `all`.
 
 `platform` references the shared SDK. For more information, see the section on "Deploying a framework-dependent deployment with third-party dependencies" on the 
-[.NET Core Application Deployment](../deploying/index.md) topic.
+[.NET Core application deployment](../deploying/index.md) topic.
 
 For example:
 

@@ -11,7 +11,7 @@ This is achieved through the use of the `virtual`, `override` and `new` keywords
 
 ## virtual
 
-You use the virtual keyword to indicate a method or property declarations whose implementation you want to be overridden in a derived class.
+You use the virtual keyword to indicate a method or property declaration whose implementation you want to be overridden in a derived class.
 As a library developer you might want to do this for members that could benefit from a custom implementation in a consuming application.
 
 Take the following example:
@@ -81,7 +81,76 @@ When building or consuming a library here are some things to note about the virt
 
 ## override
 
-_*TODO*: Explain override keyword with code sample, explain how it ties into previous sample code_
+You use the override modifier when you want to provide a new implementation for a member inherited from a base class.
+The method you override is known as the overridden base method and must have the same signature as the override method.
+
+Take the following example:
+
+```csharp
+public class Shape
+{
+    public int length;
+    public int width;
+
+    public Shape(int length, int width)
+    {
+        this.length = length;
+        this.width = width;
+    }
+
+    public virtual int Area()
+    {
+        return this.length * this.width;
+    }
+}
+
+public class Square : Shape
+{
+    public Square(int side) : base(side, side) { }
+}
+
+public class Circle : Shape
+{
+    public int radius;
+
+    public Circle(int radius)
+    {
+        this.radius = radius;
+    }
+
+    public override int Area()
+    {
+        return Math.PI * this.radius * this.radius;
+    }
+}
+
+public static void Main()
+{
+    Square square = new Square(5);
+    Circle circle = new Circle(7);
+
+    Console.WriteLine("Area of Square = {0}", square.Area());
+    Console.WriteLine("Area of Circle = {0}", circle.Area());
+}
+```
+
+#### Output
+
+```
+Area of Square = 25
+Area of Circle = 154
+```
+
+From the sample code above you'll notice there's a base class `Shape` from which `Square` and `Circle` inherit.
+The `Circle` class provides its own implementation for the `Area` method by using the `override` keyword.
+Original method implementations can still be accessed on the `base` keyword, notice how the `Square` class uses the constructor of the base class,
+making a call to the original area method implementation is as simple as calling `base.Area()` in a derived class.
+
+When building or consuming a library here are some things to note about the override modifier:
+
+* An override method must have the same access level modifier (public, private, protected, internal) as the overridden method.
+* Making a previously virtual method non-virtual is neither source nor binary compatible. It will cause errors during compilation and will break existing applications.
+* You cannot use the `override` modifier with `static`, `abstract`, `virtual` or `new` modifiers.
 
 ## new
 

@@ -5,7 +5,9 @@
 <!-- Start of C# Content -->
 # [C# Guide](csharp/index.md)
 ## [🔧 Getting Started](csharp/getting-started/index.md)
-### [🔧 Getting started with Visual Studio](csharp/getting-started/with-visual-studio.md)
+### [Getting started with Visual Studio](csharp/getting-started/with-visual-studio.md)
+#### [Debugging your Hello World application with Visual Studio](csharp/getting-started/debugging-with-visual-studio.md)
+#### [Publishing your Hello World application with Visual Studio](csharp/getting-started/publishing-with-visual-studio.md)
 ### [🔧 Getting started with Visual Studio Code and OmniSharp](csharp/getting-started/with-visual-studio-code.md)
 ### [🔧 Getting started with cross-platform tools](csharp/getting-started/with-cross-platform-tools.md)
 ### [🔧 Getting started with C# Interactive](csharp/getting-started/with-csharp-interactive.md)

@@ -20,7 +20,7 @@ A regular expression is a pattern that the regular expression engine attempts to
 Each section in this quick reference lists a particular category of characters, operators, and constructs that you can use to define regular expressions: 
 
 * [Character escapes](#character-escapes)
-      m
+
 * [Character classes](#character-classes)
       
 * [Anchors](#anchors)

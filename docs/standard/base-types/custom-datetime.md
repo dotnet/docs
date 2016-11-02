@@ -3,6 +3,7 @@ title: Custom date and time format strings
 description: Custom date and time format strings
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/25/2016
 ms.topic: article
@@ -166,7 +167,7 @@ The following sections provide additional information about each custom date and
 
 The "d" custom format specifier represents the day of the month as a number from 1 through 31. A single-digit day is formatted without a leading zero. 
 
-If the "d" format specifier is used without other custom format specifiers, it is interpreted as the "d" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic.
+If the "d" format specifier is used without other custom format specifiers, it is interpreted as the "d" standard date and time format specifier. For more information about using a single format specifier, see [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic.
 
 The following example includes the "d" custom format specifier in several format strings. 
 
@@ -282,7 +283,7 @@ Console.WriteLine(date1.ToString("dddd dd MMMM", _
 
 The "f" custom format specifier represents the most significant digit of the seconds fraction; that is, it represents the tenths of a second in a date and time value.
 
-If the "f" format specifier is used without other format specifiers, it is interpreted as the "f" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic.
+If the "f" format specifier is used without other format specifiers, it is interpreted as the "f" standard date and time format specifier. For more information about using a single format specifier, see [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic.
 
 When you use "f" format specifiers as part of a format string supplied to the [DateTime.ParseExact](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)), [DateTime.TryParseExact](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)), [DateTimeOffset.ParseExact](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider)), or [DateTimeOffset.TryParseExact](xref:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@) ) method, the number of "f" format specifiers indicates the number of most significant digits of the seconds fraction that must be present to successfully parse the string.
 
@@ -436,7 +437,7 @@ Although it is possible to display the ten millionths of a second component of a
 
 The "F" custom format specifier represents the most significant digit of the seconds fraction; that is, it represents the tenths of a second in a date and time value. Nothing is displayed if the digit is zero. 
 
-If the "F" format specifier is used without other format specifiers, it is interpreted as the "F" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic.
+If the "F" format specifier is used without other format specifiers, it is interpreted as the "F" standard date and time format specifier. For more information about using a single format specifier, see [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic.
 
 The number of "F" format specifiers used with the [DateTime.ParseExact](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)), [DateTime.TryParseExact](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)), [DateTimeOffset.ParseExact](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider)), or [DateTimeOffset.TryParseExact](xref:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@) ) method indicates the maximum number of most significant digits of the seconds fraction that can be present to successfully parse the string.
 
@@ -590,7 +591,7 @@ Although it is possible to display the ten millionths of a second component of a
 
 The "g" or "gg" custom format specifiers (plus any number of additional "g" specifiers) represents the period or era, such as A.D. The formatting operation ignores this specifier if the date to be formatted does not have an associated period or era string. 
 
-If the "g" format specifier is used without other custom format specifiers, it is interpreted as the "g" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic.
+If the "g" format specifier is used without other custom format specifiers, it is interpreted as the "g" standard date and time format specifier. For more information about using a single format specifier, see [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic.
 
 The following example includes the "g" custom format specifier in a custom format string.
 
@@ -620,7 +621,7 @@ Console.WriteLine(date1.ToString("MM/dd/yyyy g", _
 
 The "h" custom format specifier represents the hour as a number from 1 through 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon. A particular hour after midnight is indistinguishable from the same hour after noon. The hour is not rounded, and a single-digit hour is formatted without a leading zero. For example, given a time of 5:43 in the morning or afternoon, this custom format specifier displays "5". 
 
-If the "h" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a [FormatException](xref:System.FormatException). For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic.
+If the "h" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a [FormatException](xref:System.FormatException). For more information about using a single format specifier, see [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic.
 
 The following example includes the "h" custom format specifier in a custom format string.
 
@@ -706,7 +707,7 @@ Console.WriteLine(date1.ToString("hh:mm:ss.ff tt", _
 
 The "H" custom format specifier represents the hour as a number from 0 through 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight. A single-digit hour is formatted without a leading zero. 
 
-If the "H" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a [FormatException](xref:System.FormatException). For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic.
+If the "H" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a [FormatException](xref:System.FormatException). For more information about using a single format specifier, see [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic.
 
 The following example includes the "H" custom format specifier in a custom format string.
 
@@ -756,7 +757,7 @@ The "K" custom format specifier represents the time zone information of a date a
 
 For [DateTimeOffset](xref:System.DateTimeOffset) values, the "K" format specifier is equivalent to the "zz" format specifier, and produces a result string containing the [DateTimeOffset](xref:System.DateTimeOffset) value's offset from UTC. 
 
-If the "K" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a [FormatException](xref:System.FormatException). For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic.
+If the "K" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a [FormatException](xref:System.FormatException). For more information about using a single format specifier, see [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic.
 
 The following example displays the string that results from using the "K" custom format specifier with various [DateTime](xref:System.DateTime) and [DateTimeOffset](xref:System.DateTimeOffset) values on a system in the U.S. Pacific Time zone.
 
@@ -802,7 +803,7 @@ Console.WriteLine(New DateTimeOffset(2008, 5, 1, 6, 30, 0, _
 
 The "m" custom format specifier represents the minute as a number from 0 through 59. The minute represents whole minutes that have passed since the last hour. A single-digit minute is formatted without a leading zero. 
 
-If the "m" format specifier is used without other custom format specifiers, it is interpreted as the "m" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic. 
+If the "m" format specifier is used without other custom format specifiers, it is interpreted as the "m" standard date and time format specifier. For more information about using a single format specifier, see [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic. 
 
 The following example includes the "m" custom format specifier in a custom format string.
 
@@ -888,7 +889,7 @@ Console.WriteLine(date1.ToString("hh:mm:ss.ff tt", _
 
 The "M" custom format specifier represents the month as a number from 1 through 12 (or from 1 through 13 for calendars that have 13 months). A single-digit month is formatted without a leading zero. 
 
-If the "M" format specifier is used without other custom format specifiers, it is interpreted as the "M" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic.
+If the "M" format specifier is used without other custom format specifiers, it is interpreted as the "M" standard date and time format specifier. For more information about using a single format specifier, see [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic.
 
 The following example includes the "M" custom format specifier in a custom format string.
 
@@ -1000,7 +1001,7 @@ Console.WriteLine(date1.ToString("dddd dd MMMM", _
 
 The "s" custom format specifier represents the seconds as a number from 0 through 59. The result represents whole seconds that have passed since the last minute. A single-digit second is formatted without a leading zero. 
 
-If the "s" format specifier is used without other custom format specifiers, it is interpreted as the "s" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic. 
+If the "s" format specifier is used without other custom format specifiers, it is interpreted as the "s" standard date and time format specifier. For more information about using a single format specifier, see [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic. 
 
 The following example includes the "s" custom format specifier in a custom format string.
 
@@ -1086,7 +1087,7 @@ Console.WriteLine(date1.ToString("hh:mm:ss.ff tt", _
 
 The "t" custom format specifier represents the first character of the AM/PM designator. The appropriate localized designator is retrieved from the [DateTimeFormatInfo.AMDesignator](xref:System.Globalization.DateTimeFormatInfo.AMDesignator) or [DateTimeFormatInfo.PMDesignator](xref:System.Globalization.DateTimeFormatInfo.PMDesignator) property of the current or specific culture. The AM designator is used for all times from 0:00:00 (midnight) to 11:59:59.999. The PM designator is used for all times from 12:00:00 (noon) to 23:59:59.999. 
 
-If the "t" format specifier is used without other custom format specifiers, it is interpreted as the "t" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic.
+If the "t" format specifier is used without other custom format specifiers, it is interpreted as the "t" standard date and time format specifier. For more information about using a single format specifier, see [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic.
 
 The following example includes the "t" custom format specifier in a custom format string.
 
@@ -1174,7 +1175,7 @@ Console.WriteLine(date1.ToString("hh:mm:ss.ff tt", _
 
 The "y" custom format specifier represents the year as a one-digit or two-digit number. If the year has more than two digits, only the two low-order digits appear in the result. If the first digit of a two-digit year begins with a zero (for example, 2008), the number is formatted without a leading zero. 
 
-If the "y" format specifier is used without other custom format specifiers, it is interpreted as the "y" standard date and time format specifier. For more information about using a single format specifier, [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic.
+If the "y" format specifier is used without other custom format specifiers, it is interpreted as the "y" standard date and time format specifier. For more information about using a single format specifier, [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic.
 
 The following example includes the "y" custom format specifier in a custom format string.
 
@@ -1541,7 +1542,7 @@ With [DateTimeOffset](xref:System.DateTimeOffset) values, this format specifier 
 
 The offset is always displayed with a leading sign. A plus sign (+) indicates hours ahead of UTC, and a minus sign (-) indicates hours behind UTC. A single-digit offset is formatted without a leading zero. 
 
-If the "z" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a [FormatException](xref:System.FormatException). For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic. 
+If the "z" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a [FormatException](xref:System.FormatException). For more information about using a single format specifier, see [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic. 
 
 The following example includes the "z" custom format specifier in a custom format string.
 
@@ -1647,13 +1648,13 @@ Console.WriteLine(String.Format("{0:%z}, {0:zz}, {0:zzz}", _
 
 The ":" custom format specifier represents the time separator, which is used to differentiate hours, minutes, and seconds. 
 
-If the ":" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a [FormatException](xref:System.FormatException). For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic.
+If the ":" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a [FormatException](xref:System.FormatException). For more information about using a single format specifier, see [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic.
 
 ## The "/" custom format specifier
 
 The "/" custom format specifier represents the date separator, which is used to differentiate years, months, and days. 
 
-If the "/" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a [FormatException](xref:System.FormatException). For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#Using-Single-Custom-Format-Specifiers) later in this topic.
+If the "/" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a [FormatException](xref:System.FormatException). For more information about using a single format specifier, see [Using single custom format specifiers](#using-single-custom-format-specifiers) later in this topic.
 
 ## Character literals
 
@@ -1729,7 +1730,7 @@ End Module
 
 There are two ways to indicate that characters are to be interpreted as literal characters and not as reserve characters, so that they can be included in a result string or successfully parsed in an input string:
 
-* By escaping each reserved character. For more information, see [Using the Escape Character](#Using-the-Escape-Character). 
+* By escaping each reserved character. For more information, see [Using the escape character](#using-the-escape-character). 
   
   The following example includes the literal characters "pst" (for Pacific Standard time) to represent the local time zone in a format string. Because both "s" and "t" are custom format strings, both characters must be escaped to be interpreted as character literals. 
   
@@ -1879,7 +1880,7 @@ Console.WriteLine("'{0:h }'", dat1)
 '       '1 '
 ```
 
-### Using the Escape character
+### Using the escape character
 
 The "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":", or "/" characters in a format string are interpreted as custom format specifiers rather than as literal characters. To prevent a character from being interpreted as a format specifier, you can precede it with a backslash (\), which is the escape character. The escape character signifies that the following character is a character literal that should be included in the result string unchanged.
 
@@ -1917,7 +1918,7 @@ Formatting is influenced by properties of the current [DateTimeFormatInfo](xref:
 
 The result string produced by many of the custom date and time format specifiers also depends on properties of the current [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) object. Your application can change the result produced by some custom date and time format specifiers by changing the corresponding [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) property. For example, the "ddd" format specifier adds an abbreviated weekday name found in the [AbbreviatedDayNames](xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames) string array to the result string. Similarly, the "MMMM" format specifier adds a full month name found in the [MonthNames](xref:System.Globalization.DateTimeFormatInfo.MonthNames) string array to the result string.
 
-## See Also
+## See also
 
 [System.DateTime](xref:System.DateTime)
 

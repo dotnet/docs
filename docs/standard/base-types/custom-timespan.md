@@ -3,6 +3,7 @@ title: Custom TimeSpan format strings
 description: Custom TimeSpan format strings
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/25/2016
 ms.topic: article
@@ -14,14 +15,14 @@ ms.assetid: e79745eb-6ebd-4e62-85c4-4f2830c27285
 
 # Custom TimeSpan format strings
 
-A [TimeSpan](xref:System.TimeSpan) format string defines the string representation of a [TimeSpan](xref:System.TimeSpan) value that results from a formatting operation. A custom format string consists of one or more custom [TimeSpan](xref:System.TimeSpan) format specifiers along with any number of literal characters. Any string that is not a [Standard TimeSpan](standard-timespan.md) format string is interpreted as a custom [TimeSpan](xref:System.TimeSpan) format string.
+A [TimeSpan](xref:System.TimeSpan) format string defines the string representation of a [TimeSpan](xref:System.TimeSpan) value that results from a formatting operation. A custom format string consists of one or more custom [TimeSpan](xref:System.TimeSpan) format specifiers along with any number of literal characters. Any string that is not a [standard TimeSpan](standard-timespan.md) format string is interpreted as a custom [TimeSpan](xref:System.TimeSpan) format string.
 
 > [!IMPORTANT]
 > The custom [TimeSpan](xref:System.TimeSpan) format specifiers do not include placeholder separator symbols, such as the symbols that separate days from hours, hours from minutes, or seconds from fractional seconds. Instead, these symbols must be included in the custom format string as string literals. For example, `"dd\.hh\:mm"` defines a period (.) as the separator between days and hours, and a colon (:) as the separator between hours and minutes. 
 
-> Custom [TimeSpan](xref:System.TimeSpan) format specifiers also do not include a sign symbol that enables you to differentiate between negative and positive time intervals. To include a sign symbol, you have to construct a format string by using conditional logic. The [Other Characters](#Other-Characters) section includes an example. 
+> Custom [TimeSpan](xref:System.TimeSpan) format specifiers also do not include a sign symbol that enables you to differentiate between negative and positive time intervals. To include a sign symbol, you have to construct a format string by using conditional logic. The [Other characters](#other-characters) section includes an example. 
 
-The string representations of [TimeSpan](xref:System.TimeSpan) values are produced by calls to the overloads of the [TimeSpan](xref:System.TimeSpan) `ToString` method, as well as by methods that support composite formatting, such as [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)). For more information, see [Formatting Types](formatting-types.md) and [Composite Formatting](composite-format.md). The following example illustrates the use of standard format strings in formatting operations.
+The string representations of [TimeSpan](xref:System.TimeSpan) values are produced by calls to the overloads of the [TimeSpan](xref:System.TimeSpan) `ToString` method, as well as by methods that support composite formatting, such as [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)). For more information, see [Formatting types](formatting-types.md) and [Composite formatting](composite-format.md). The following example illustrates the use of standard format strings in formatting operations.
 
 ```csharp
 using System;
@@ -172,7 +173,7 @@ Format specifier | Description | Examples
 \ | The escape character. | `new TimeSpan(14, 32, 17):` `hh\:mm\:ss --> "14:32:17"`
 Any other character | Any other unescaped character is interpreted as a custom format specifier. | `new TimeSpan(14, 32, 17):` `hh\:mm\:ss --> "14:32:17"`
 
-## The "d" Custom Format Specifier
+## The "d" custom format specifier
 
 The "d" custom format specifier outputs the value of the [TimeSpan.Days](xref:System.TimeSpan.Days) property, which represents the number of whole days in the time interval. It outputs the full number of days in a [TimeSpan](xref:System.TimeSpan) value, even if the value has more than one digit. If the value of the [TimeSpan.Days](xref:System.TimeSpan.Days) property is zero, the specifier outputs "0".
 
@@ -214,7 +215,7 @@ Console.WriteLine(ts3.ToString("d\.hh\:mm\:ss"))
 '       3.04:03:17
 ```
 
-## The "dd"-"dddddddd" Custom Format Specifiers
+## The "dd"-"dddddddd" custom format specifiers
 
 The "dd", "ddd", "dddd", "ddddd", "dddddd", "ddddddd", and "dddddddd" custom format specifiers output the value of the [TimeSpan.Days](xref:System.TimeSpan.Days) property, which represents the number of whole days in the time interval. 
 
@@ -289,7 +290,7 @@ Next
 '       dddddddd\.hh\:mm\:ss --> 00000365.21:19:45
 ```
 
-## The "h" Custom Format Specifier
+## The "h" custom format specifier
 
 The "h" custom format specifier outputs the value of the [TimeSpan.Hours](xref:System.TimeSpan.Hours) property, which represents the number of whole hours in the time interval that is not counted as part of its day component. It returns a one-digit string value if the value of the [TimeSpan.Hours](xref:System.TimeSpan.Hours) property is 0 through 9, and it returns a two-digit string value if the value of the [TimeSpan.Hours](xref:System.TimeSpan.Hours) property ranges from 10 to 23.
 
@@ -360,7 +361,7 @@ Console.WriteLine(ts2.ToString("d\.h\:mm\:ss"))
 '       3.4:03:17
 ```
 
-## The "hh" Custom Format Specifier
+## The "hh" custom format specifier
 
 The "hh" custom format specifier outputs the value of the [TimeSpan.Hours](xref:System.TimeSpan.Hours) property, which represents the number of whole hours in the time interval that is not counted as part of its day component. For values from 0 through 9, the output string includes a leading zero. 
 
@@ -415,7 +416,7 @@ Console.WriteLine(ts2.ToString("d\.hh\:mm\:ss"))
 '       3.04:03:17
 ```
 
-## The "m" Custom Format Specifier
+## The "m" custom format specifier
 
 The "m" custom format specifier outputs the value of the [TimeSpan.Minutes](xref:System.TimeSpan.Minutes) property, which represents the number of whole minutes in the time interval that is not counted as part of its day component. It returns a one-digit string value if the value of the [TimeSpan.Minutes](xref:System.TimeSpan.Minutes) property is 0 through 9, and it returns a two-digit string value if the value of the [TimeSpan.Minutes](xref:System.TimeSpan.Minutes) property ranges from 10 to 59.
 
@@ -486,7 +487,7 @@ Console.WriteLine("Elapsed time: {0:m\:ss}", ts2)
 '       Elapsed time: 18:44
 ```
 
-## The "mm" Custom Format Specifier
+## The "mm" custom format specifier
 
 The "mm" custom format specifier outputs the value of the [TimeSpan.Minutes](xref:System.TimeSpan.Minutes) property, which represents the number of whole minutes in the time interval that is not included as part of its hours or days component. For values from 0 through 9, the output string includes a leading zero. 
 
@@ -537,7 +538,7 @@ Console.WriteLine("Travel time: {0:hh\:mm}",
 '       Travel time: 05:16
 ```
 
-## The "s" Custom Format Specifier
+## The "s" custom format specifier
 
 The "s" custom format specifier outputs the value of the [TimeSpan.Seconds](xref:System.TimeSpan.Seconds) property, which represents the number of whole seconds in the time interval that is not included as part of its hours, days, or minutes component. It returns a one-digit string value if the value of the [TimeSpan.Seconds](xref:System.TimeSpan.Seconds) property is 0 through 9, and it returns a two-digit string value if the value of the [TimeSpan.Seconds](xref:System.TimeSpan.Seconds) property ranges from 10 to 59. 
 
@@ -604,7 +605,7 @@ Console.WriteLine("Elapsed Time: {0:s\:fff} seconds",
 '       Elapsed Time: 6:003 seconds
 ```
 
-## The "ss" Custom Format Specifier
+## The "ss" custom format specifier
 
 The "ss" custom format specifier outputs the value of the [TimeSpan.Seconds](xref:System.TimeSpan.Seconds) property, which represents the number of whole seconds in the time interval that is not included as part of its hours, days, or minutes component. For values from 0 through 9, the output string includes a leading zero. 
 
@@ -667,7 +668,7 @@ Console.WriteLine(interval2.ToString("ss\.fff"))
 '       06.485
 ```
 
-## The "f" Custom Format Specifier
+## The "f" custom format specifier
 
 The "f" custom format specifier outputs the tenths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the [TimeSpan.ParseExact](xref:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)) or [TimeSpan.TryParseExact](xref:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)) method, the input string must contain exactly one fractional digit. 
 
@@ -745,7 +746,7 @@ Next
 '     s\.fffffff: 29.8765432
 ```
 
-## The "ff" Custom Format Specifier
+## The "ff" custom format specifier
 
 The "ff" custom format specifier outputs the hundredths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the [TimeSpan.ParseExact](xref:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)) or [TimeSpan.TryParseExact](xref:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)) method, the input string must contain exactly two fractional digits. 
 
@@ -821,7 +822,7 @@ Next
 '     s\.fffffff: 29.8765432
 ```
 
-## The "fff" Custom Format Specifier
+## The "fff" custom format specifier
 
 The "fff" custom format specifier (with three "f" characters) outputs the milliseconds in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the [TimeSpan.ParseExact](xref:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)) or [TimeSpan.TryParseExact](xref:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)) method, the input string must contain exactly three fractional digits. 
 
@@ -897,7 +898,7 @@ Next
 '     s\.fffffff: 29.8765432
 ```
 
-## The "ffff" Custom Format Specifier
+## The "ffff" custom format specifier
 The "ffff" custom format specifier (with four "f" characters) outputs the ten-thousandths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the [TimeSpan.ParseExact](xref:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)) or [TimeSpan.TryParseExact](xref:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)) method, the input string must contain exactly four fractional digits. 
 
 The following example uses the "ffff" custom format specifier to display the ten-thousandths of a second in a [TimeSpan](xref:System.TimeSpan) value. "ffff" is used first as the only format specifier, and then combined with the "s" specifier in a custom format string.
@@ -972,7 +973,7 @@ Next
 '     s\.fffffff: 29.8765432
 ```
 
-## The "fffff" Custom Format Specifier
+## The "fffff" custom format specifier
 The "fffff" custom format specifier (with five "f" characters) outputs the hundred-thousandths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the [TimeSpan.ParseExact](xref:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)) or [TimeSpan.TryParseExact](xref:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)) method, the input string must contain exactly five fractional digits. 
 
 The following example uses the "fffff" custom format specifier to display the hundred-thousandths of a second in a [TimeSpan](xref:System.TimeSpan) value. "fffff" is used first as the only format specifier, and then combined with the "s" specifier in a custom format string.
@@ -1047,7 +1048,7 @@ Next
 '     s\.fffffff: 29.8765432
 ```
 
-## The "ffffff" Custom Format Specifier
+## The "ffffff" custom format specifier
 
 The "ffffff" custom format specifier (with six "f" characters) outputs the millionths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. In a parsing operation that calls the [TimeSpan.ParseExact](xref:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)) or [TimeSpan.TryParseExact](xref:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)) method, the input string must contain exactly six fractional digits. 
 
@@ -1123,7 +1124,7 @@ Next
 '     s\.fffffff: 29.8765432
 ```
 
-## The "fffffff" Custom Format Specifier
+## The "fffffff" custom format specifier
 
 The "fffffff" custom format specifier (with seven "f" characters) outputs the ten-millionths of a second (or the fractional number of ticks) in a time interval. In a parsing operation that calls the [TimeSpan.ParseExact](xref:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)) or [TimeSpan.TryParseExact](xref:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)) method, the input string must contain exactly seven fractional digits. 
 
@@ -1199,7 +1200,7 @@ Next
 '     s\.fffffff: 29.8765432
 ```
 
-## The "F" Custom Format Specifier
+## The "F" custom format specifier
 
 The "F" custom format specifier outputs the tenths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If the value of the time interval's tenths of a second is zero, it is not included in the result string. In a parsing operation that calls the [TimeSpan.ParseExact](xref:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)) or [TimeSpan.TryParseExact](xref:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)) method, the presence of the tenths of a second digit is optional.
 
@@ -1272,7 +1273,7 @@ Next
 '       Cannot parse 0:0:03.12 with 'h\:m\:ss\.F'.
 ```
 
-## The "FF" Custom Format Specifier
+## The "FF" custom format specifier
 
 The "FF" custom format specifier outputs the hundredths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the [TimeSpan.ParseExact](xref:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)) or [TimeSpan.TryParseExact](xref:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)) method, the presence of the tenths and hundredths of a second digit is optional.
 
@@ -1343,7 +1344,7 @@ Next
 '       Cannot parse 0:0:03.127 with 'h\:m\:ss\.FF'.
 ```
 
-## The "FFF" Custom Format Specifier
+## The "FFF" custom format specifier
 
 The "FFF" custom format specifier (with three "F" characters) outputs the milliseconds in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the [TimeSpan.ParseExact](xref:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)) or [TimeSpan.TryParseExact](xref:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)) method, the presence of the tenths, hundredths, and thousandths of a second digit is optional.
 
@@ -1414,7 +1415,7 @@ Next
 '       Cannot parse 0:0:03.1279 with 'h\:m\:ss\.FFF'.
 ```
 
-## The "FFFF" Custom Format Specifier
+## The "FFFF" custom format specifier
 
 The "FFFF" custom format specifier (with four "F" characters) outputs the ten-thousandths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the [TimeSpan.ParseExact](xref:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)) or [TimeSpan.TryParseExact](xref:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)) method, the presence of the tenths, hundredths, thousandths, and ten-thousandths of a second digit is optional.
 
@@ -1485,7 +1486,7 @@ Next
 '       Cannot parse 0:0:03.12795 with 'h\:m\:ss\.FFFF'.
 ```
 
-## The "FFFFF" Custom Format Specifier
+## The "FFFFF" custom format specifier
 
 The "FFFFF" custom format specifier (with five "F" characters) outputs the hundred-thousandths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the [TimeSpan.ParseExact](xref:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)) or [TimeSpan.TryParseExact](xref:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)) method, the presence of the tenths, hundredths, thousandths, ten-thousandths, and hundred-thousandths of a second digit is optional.
 
@@ -1556,7 +1557,7 @@ Next
 '       Cannot parse 0:0:03.127956 with 'h\:m\:ss\.FFFF'.
 ```
 
-## The "FFFFFF" Custom Format Specifier
+## The "FFFFFF" custom format specifier
 
 The "FFFFFF" custom format specifier (with six "F" characters) outputs the millionths of a second in a time interval. In a formatting operation, any remaining fractional digits are truncated. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the [TimeSpan.ParseExact](xref:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)) or [TimeSpan.TryParseExact](xref:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)) method, the presence of the tenths, hundredths, thousandths, ten-thousandths, hundred-thousandths, and millionths of a second digit is optional.
 
@@ -1627,7 +1628,7 @@ Next
 '       Cannot parse 0:0:03.1279569 with 'h\:m\:ss\.FFFFFF'
 ```
 
-## The "FFFFFFF" Custom Format Specifier
+## The "FFFFFFF" custom format specifier
 
 The "FFFFFFF" custom format specifier (with seven "F" characters) outputs the ten-millionths of a second (or the fractional number of ticks) in a time interval. If there are any trailing fractional zeros, they are not included in the result string. In a parsing operation that calls the [TimeSpan.ParseExact](xref:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)) or [TimeSpan.TryParseExact](xref:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)) method, the presence of the seven fractional digits in the input string is optional.
 

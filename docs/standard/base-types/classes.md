@@ -40,7 +40,7 @@ A character class defines a set of characters, any one of which can occur in an 
 * A non-decimal digit. A character in the input string can be anything other than a Unicode decimal digit. For more information, see [Non-digit character](#non-digit-character-d).
 
 
-.NET supports character class subtraction expressions, which enables you to define a set of characters as the result of excluding one character class from another character class. For more information, see [Character class subtraction](#character-class-subtraction-base_group---excluded_group).
+.NET supports character class subtraction expressions, which enables you to define a set of characters as the result of excluding one character class from another character class. For more information, see [Character class subtraction](#character-class-subtraction).
 
 ## Positive character group: [ ]
 
@@ -253,9 +253,9 @@ Pattern | Description
 
 The period character (.) matches any character except **\n** (the newline character, **\u000A**), with the following two qualifications:
 
-* If a regular expression pattern is modified by the [RegexOptions.Singleline](xref:RegexOptions.Singleline) option, or if the portion of the pattern that contains the . character class is modified by the **s** option, . matches any character. For more information, see [Regular expression options](options.md).
+* If a regular expression pattern is modified by the [RegexOptions.Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline) option, or if the portion of the pattern that contains the . character class is modified by the **s** option, . matches any character. For more information, see [Regular expression options](options.md).
 
-  The following example illustrates the different behavior of the . character class by default and with the [RegexOptions.Singleline](xref:RegexOptions.Singleline) option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, **\r** or **\u000D**, but it does not match **\n**. Because the [RegexOptions.Singleline](xref:RegexOptions.Singleline) option interprets the entire input string as a single line, it matches every character in the input string, including **\n**.
+  The following example illustrates the different behavior of the . character class by default and with the [RegexOptions.Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline) option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, **\r** or **\u000D**, but it does not match **\n**. Because the [RegexOptions.Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline) option interprets the entire input string as a single line, it matches every character in the input string, including **\n**.
 
   ```csharp
   using System;
@@ -1137,6 +1137,7 @@ FE70 - FEFF | **IsArabicPresentationForms-B**
 FF00 - FFEF | **IsHalfwidthandFullwidthForms** 
 FFF0 - FFFF | **IsSpecials**
  
+<a name="character-class-subtraction"></a>
 ## Character class subtraction: [base_group - [excluded_group]]
 
 A character class defines a set of characters. Character class subtraction yields a set of characters that is the result of excluding the characters in one character class from another character class. 

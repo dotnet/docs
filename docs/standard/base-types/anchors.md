@@ -3,6 +3,7 @@ title: Anchors in regular expressions
 description: Anchors in regular expressions
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/28/2016
 ms.topic: article
@@ -29,7 +30,7 @@ Anchor | Description
  
 ## Start of String or Line: ^
 
-The **^** anchor specifies that the following pattern must begin at the first character position of the string. If you use **^** with the [RegexOptions.Multiline](xref:System.Text.RegularExpressions.RegexOptions.Multiline) option (see [Regular Expression Options](options.md)), the match must occur at the beginning of each line.
+The **^** anchor specifies that the following pattern must begin at the first character position of the string. If you use **^** with the [RegexOptions.Multiline](xref:System.Text.RegularExpressions.RegexOptions.Multiline) option (see [Regular expression options](options.md)), the match must occur at the beginning of each line.
 
 The following example uses the **^** anchor in a regular expression that extracts information about the years during which some professional baseball teams existed. The example calls two overloads of the `Regex.Matches` method: 
 
@@ -775,7 +776,7 @@ Pattern | Description
  
 ## Word Boundary: \b
 
-The **\b** anchor specifies that the match must occur on a boundary between a word character (the **\w** language element) and a non-word character (the **\W** language element). Word characters consist of alphanumeric characters and underscores; a non-word character is any character that is not alphanumeric or an underscore. (For more information, see [Character Classes in Regular Expressions](classes.md).) The match may also occur on a word boundary at the beginning or end of the string.
+The **\b** anchor specifies that the match must occur on a boundary between a word character (the **\w** language element) and a non-word character (the **\W** language element). Word characters consist of alphanumeric characters and underscores; a non-word character is any character that is not alphanumeric or an underscore. (For more information, see [Character classes in regular expressions](classes.md).) The match may also occur on a word boundary at the beginning or end of the string.
 
 The **\b** anchor is frequently used to ensure that a subexpression matches an entire word instead of just the beginning or end of a word. The regular expression `\bare\w*\b` in the following example illustrates this usage. It matches any word that begins with the substring "are". The output from the example also illustrates that **\b** matches both the beginning and the end of the input string. 
 

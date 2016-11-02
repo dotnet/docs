@@ -3,6 +3,7 @@ title: Type conversion
 description: Type conversion
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/22/2016
 ms.topic: article
@@ -28,17 +29,17 @@ Every value has an associated type, which defines attributes such as the amount 
 
 In addition to these automatic conversions, .NET provides several features that support custom type conversion. These include the following: 
 
-* The `Implicit` operator, which defines the available widening conversions between types. For more information, see the [Implicit Conversion with the Implicit Operator](#Implicit-Conversion-with-the-Implicit-Operator) section.
+* The `Implicit` operator, which defines the available widening conversions between types. For more information, see the [Implicit conversion with the Implicit operator](#implicit-conversion-with-the-implicit-operator) section.
 
-* The `Explicit` operator, which defines the available narrowing conversions between types. For more information, see the [Explicit Conversion with the Explicit Operator](#Explicit-Conversion-with-the-Explicit-Operator) section.
+* The `Explicit` operator, which defines the available narrowing conversions between types. For more information, see the [Explicit conversion with the Explicit operator](#explicit-conversion-with-the-explicit-operator) section.
 
-* The [IConvertible](xref:System.IConvertible) interface, which defines conversions to each of the base .NET data types. For more information, see the [The IConvertible Interface](#The-IConvertible-Interface) section.
+* The [IConvertible](xref:System.IConvertible) interface, which defines conversions to each of the base .NET data types. For more information, see the [The IConvertible interface](#the-iconvertible-interface) section.
 
-* The [Convert](xref:System.Convert) class, which provides a set of methods that implement the methods in the `IConvertible` interface. For more information, see the [The Convert Class](#The-Convert-Class) section.
+* The [Convert](xref:System.Convert) class, which provides a set of methods that implement the methods in the `IConvertible` interface. For more information, see the [The Convert class](#the-convert-class) section.
 
-* The [TypeConverter](xref:System.ComponentModel.TypeConverter) class, which is a base class that can be extended to support the conversion of a specified type to any other type. For more information, see the [The TypeConverter Class](#The-TypeConverter-Class) section.
+* The [TypeConverter](xref:System.ComponentModel.TypeConverter) class, which is a base class that can be extended to support the conversion of a specified type to any other type. For more information, see the [The TypeConverter class](#the-typeconverter-class) section.
 
-## Implicit Conversion with the Implicit Operator
+## Implicit conversion with the Implicit operator
 
 Widening conversions involve the creation of a new value from the value of an existing type that has either a more restrictive range or a more restricted member list than the target type. Widening conversions cannot result in data loss (although they may result in a loss of precision). Because data cannot be lost, compilers can handle the conversion implicitly or transparently, without requiring the use of an explicit conversion method or a casting operator.
 
@@ -199,7 +200,7 @@ Console.WriteLine(value.ToString())
 '       255
 ```
 
-## Explicit Conversion with the Explicit Operator
+## Explicit conversion with the Explicit operator
 
 Narrowing conversions involve the creation of a new value from the value of an existing type that has either a greater range or a larger member list than the target type. Because a narrowing conversion can result in a loss of data, compilers often require that the conversion be made explicit through a call to a conversion method or a casting operator. That is, the conversion must be handled explicitly in developer code. 
 
@@ -214,7 +215,7 @@ Type | Comparison with range of Int32
 [UInt32](xref:System.UInt32) | [UInt32.MaxValue](xref:System.UInt32.MaxValue) is greater than [Int32.MaxValue](xref:System.Int32.MaxValue).
 [UInt64](xref:System.UInt64) | [UInt64.MaxValue](xref:System.UInt64.MaxValue) is greater than [Int32.MaxValue](xref:System.Int32.MaxValue).
 
-To handle such narrowing conversions, .NET allows types to define an `Explicit` operator. Individual language compilers can then implement this operator using their own syntax, or a member of the [Convert](xref:System.Convert) class can be called to perform the conversion. (For more information about the `Convert` class, see [The Convert Class](#The-Convert-Class) later in this topic.) The following example illustrates the use of language features to handle the explicit conversion of these potentially out-of-range integer values to [Int32](xref:System.Int32) values. 
+To handle such narrowing conversions, .NET allows types to define an `Explicit` operator. Individual language compilers can then implement this operator using their own syntax, or a member of the [Convert](xref:System.Convert) class can be called to perform the conversion. (For more information about the `Convert` class, see [The Convert class](#the-convert-class) later in this topic.) The following example illustrates the use of language features to handle the explicit conversion of these potentially out-of-range integer values to [Int32](xref:System.Int32) values. 
 
 ```csharp
 long number1 = int.MaxValue + 20L;
@@ -482,7 +483,7 @@ End Try
 '       '1024' is out of range of the ByteWithSign data type.
 ```
 
-## The IConvertible Interface
+## The IConvertible interface
 
 To support the conversion of any type to a common language runtime base type, .NET provides the [IConvertible](xref:System.IConvertible) interface. The implementing type is required to provide the following:
 
@@ -508,18 +509,18 @@ Dim ch As Char = iConv.ToChar(Nothing)
 Console.WriteLine("Converted {0} to {1}.", codePoint, ch)
 ```
 
-The requirement to call the conversion method on its interface rather than on the implementing type makes explicit interface implementations relatively expensive. Instead, we recommend that you call the appropriate member of the [Convert](xref:System.Convert) class to convert between common language runtime base types. For more information, see the next section, [The Convert Class](#The-Convert-Class). 
+The requirement to call the conversion method on its interface rather than on the implementing type makes explicit interface implementations relatively expensive. Instead, we recommend that you call the appropriate member of the [Convert](xref:System.Convert) class to convert between common language runtime base types. For more information, see the next section, [The Convert class](#the-convert-class). 
 
 > [!NOTE]
 > In addition to the [IConvertible](xref:System.IConvertible) interface and the [Convert](xref:System.Convert) class provided by .NET, individual languages may also provide ways to perform conversions. For example, C# uses casting operators; Visual Basic uses compiler-implemented conversion functions such as `CType`, `CInt`, and `DirectCast`.
 
-For the most part, the [IConvertible](xref:System.IConvertible) interface is designed to support conversion between the base types in .NET. However, the interface can also be implemented by a custom type to support conversion of that type to other custom types. For more information, see the section [Custom Conversions with the ChangeType Method](#Custom-Conversions-with-the-ChangeType-Method) later in this topic.
+For the most part, the [IConvertible](xref:System.IConvertible) interface is designed to support conversion between the base types in .NET. However, the interface can also be implemented by a custom type to support conversion of that type to other custom types. For more information, see the section [Custom conversions with the ChangeType method](#custom-conversions-with-the-changetype-method) later in this topic.
 
-## The Convert Class
+## The Convert class
 
 Although each base type's [IConvertible](xref:System.IConvertible) interface implementation can be called to perform a type conversion, calling the methods of the [System.Convert](xref:System.Convert) class is the recommended language-neutral way to convert from one base type to another. In addition, the [Convert.ChangeType(Object, Type, IFormatProvider)](xref:System.Convert.ChangeType(System.Object,System.Type,System.IFormatProvider)) method can be used to convert from a specified custom type to another type. 
 
-### Conversions Between Base Types
+### Conversions between base types
 
 The [Convert](xref:System.Convert) class provides a language-neutral way to perform conversions between base types and is available to all languages that target the common language runtime. It provides a complete set of methods for both widening and narrowing conversions, and throws an [InvalidCastException](xref:System.InvalidCastException) for conversions that are not supported (such as the conversion of a [DateTime](xref:System.DateTime) value to an integer value). Narrowing conversions are performed in a checked context, and an [OverflowException](xref:System.OverflowException) is thrown if the conversion fails.
 
@@ -689,9 +690,9 @@ End Try
 '       42.72 converted to 43.
 ```
 
-For a table that lists both the widening and narrowing conversions supported by the [Convert](xref:System.Convert) class, see [Type Conversion Tables](conversion-tables.md).
+For a table that lists both the widening and narrowing conversions supported by the [Convert](xref:System.Convert) class, see [Type conversion tables](conversion-tables.md).
 
-### Custom Conversions with the ChangeType Method
+### Custom conversions with the ChangeType method
 
 In addition to supporting conversions to each of the base types, the [Convert](xref:System.Convert) class can be used to convert a custom type to one or more predefined types. This conversion is performed by the [Convert.ChangeType(Object, Type, IFormatProvider)](xref:System.Convert.ChangeType(System.Object,System.Type,System.IFormatProvider)) method, which in turn wraps a call to the [IConvertible.ToType](xref:System.IConvertible.ToType(System.Type,System.IFormatProvider)) method of the value parameter. This means that the object represented by the value parameter must provide an implementation of the [IConvertible](xref:System.IConvertible) interface.
 
@@ -1198,7 +1199,7 @@ Console.WriteLine("{0} equals {1}.", tempF2, tempF3)
 '       212°F equals 212°F.
 ```
 
-## The TypeConverter Class
+## The TypeConverter class
 
 .NET also allows you to define a type converter for a custom type by extending the [System.ComponentModel.TypeConverter](xref:System.ComponentModel.TypeConverter) class and associating the type converter with the type through a [System.ComponentModel.TypeConverterAttribute](xref:System.ComponentModel.TypeConverterAttribute) attribute. The following table highlights the differences between this approach and implementing the [IConvertible](xref:System.IConvertible) interface for a custom type.
 
@@ -1214,11 +1215,10 @@ Allows two-way type conversions from the custom type to other data types, and fr
 
 For more information about using type converters to perform conversions, see [System.ComponentModel.TypeConverter](xref:System.ComponentModel.TypeConverter).
 
-## See Also
+## See also
 
 [System.Convert](xref:System.Convert)
 
 [IConvertible](xref:System.IConvertible)
 
-[Type Conversion Tables](conversion-tables.md)
-
+[Type conversion tables](conversion-tables.md)

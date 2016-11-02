@@ -3,6 +3,7 @@ title: Regular expression options
 description: Regular expression options
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
@@ -18,18 +19,18 @@ By default, the comparison of an input string with any literal characters in a r
 
 RegexOptions member | Inline character | Effect
 ------------------- | ---------------- | ------ 
-[None](xref:System.Text.RegularExpressions.RegexOptions.None) | Not available | Use default behavior. For more information, see [Default Options](#Default-Options).
-[IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) | **i** | Use case-insensitive matching. For more information, see [Case-Insensitive Matching](#Case-Insensitive-Matching).
-[Multiline](xref:System.Text.RegularExpressions.RegexOptions.Multiline) | **m** | Use multiline mode, where **^** and **$** match the beginning and end of each line (instead of the beginning and end of the input string). For more information, see [Multiline Mode](#Multiline-Mode).
-[Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline) | **s** | Use single-line mode, where the period (**.**) matches every character (instead of every character except **\n**). For more information, see [Singleline Mode](#Singleline-Mode).
-[ExplicitCapture](xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture) | **n** | Do not capture unnamed groups. The only valid captures are explicitly named or numbered groups of the form **(?<**_name_**>** _subexpression_**)**. For more information, see [Explicit Captures Only](#Explicit-Captures-Only).
-[Compiled](xref:System.Text.RegularExpressions.RegexOptions.Compiled) | Not available | Compile the regular expression to an assembly. For more information, see [Compiled Regular Expressions](#Compiled-Regular-Expressions).
-[IgnorePatternWhitespace](xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace) | **x** | Exclude unescaped white space from the pattern, and enable comments after a number sign (**#**). For more information, see [Ignore Whitespace](#Ignore-Whitespace).
-[RightToLeft](xref:System.Text.RegularExpressions.RegexOptions.RightToLeft) | Not available | Change the search direction. Search moves from right to left instead of from left to right. For more information, see [Right-to-Left Mode](#Right-to-Left-Mode).
-[ECMAScript](xref:System.Text.RegularExpressions.RegexOptions.ECMAScript) | Not available | Enable ECMAScript-compliant behavior for the expression. For more information, see [ECMAScript Matching Behavior](#ECMAScript-Matching-Behavior).
-[CultureInvariant](xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant) | Not available | Ignore cultural differences in language. For more information, see [Comparison Using the Invariant Culture](#Comparison-Using-the-Invariant-Culture).
+[None](xref:System.Text.RegularExpressions.RegexOptions.None) | Not available | Use default behavior. For more information, see [Default options](#default-options).
+[IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) | **i** | Use case-insensitive matching. For more information, see [Case-insensitive matching](#case-insensitive-matching).
+[Multiline](xref:System.Text.RegularExpressions.RegexOptions.Multiline) | **m** | Use multiline mode, where **^** and **$** match the beginning and end of each line (instead of the beginning and end of the input string). For more information, see [Multiline mode](#multiline-mode).
+[Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline) | **s** | Use single-line mode, where the period (**.**) matches every character (instead of every character except **\n**). For more information, see [Singleline mode](#singleline-mode).
+[ExplicitCapture](xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture) | **n** | Do not capture unnamed groups. The only valid captures are explicitly named or numbered groups of the form **(?<**_name_**>** _subexpression_**)**. For more information, see [Explicit captures only](#explicit-captures-only).
+[Compiled](xref:System.Text.RegularExpressions.RegexOptions.Compiled) | Not available | Compile the regular expression to an assembly. For more information, see [Compiled regular expressions](#compiled-regular-expressions).
+[IgnorePatternWhitespace](xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace) | **x** | Exclude unescaped white space from the pattern, and enable comments after a number sign (**#**). For more information, see [Ignore whitespace](#ignore-whitespace).
+[RightToLeft](xref:System.Text.RegularExpressions.RegexOptions.RightToLeft) | Not available | Change the search direction. Search moves from right to left instead of from left to right. For more information, see [Right-to-left mode](#right-to-left-mode).
+[ECMAScript](xref:System.Text.RegularExpressions.RegexOptions.ECMAScript) | Not available | Enable ECMAScript-compliant behavior for the expression. For more information, see [ECMAScript matching behavior](#ecmascript-matching-behavior).
+[CultureInvariant](xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant) | Not available | Ignore cultural differences in language. For more information, see [Comparison using the invariant culture](#comparison-using-the-invariant-culture).
  
-## Specifying the Options
+## Specifying the options
 
 You can specify options for regular expressions in one of three ways:
 
@@ -64,7 +65,7 @@ You can specify options for regular expressions in one of three ways:
   '    'decidedly ' found at index 9.  
   ```
 
-* By applying inline options in a regular expression pattern with the syntax **(?imnsx-imnsx)**. The option applies to the pattern from the point that the option is defined to either the end of the pattern or to the point at which the option is undefined by another inline option. Note that the [System.Text.RegularExpressions.RegexOptions](xref:System.Text.RegularExpressions.RegexOptions) property of a [Regex](xref:System.Text.RegularExpressions.Regex) instance does not reflect these inline options. For more information, see the [Miscellaneous Constructs in Regular Expressions](miscellaneous.md) topic.
+* By applying inline options in a regular expression pattern with the syntax **(?imnsx-imnsx)**. The option applies to the pattern from the point that the option is defined to either the end of the pattern or to the point at which the option is undefined by another inline option. Note that the [System.Text.RegularExpressions.RegexOptions](xref:System.Text.RegularExpressions.RegexOptions) property of a [Regex](xref:System.Text.RegularExpressions.Regex) instance does not reflect these inline options. For more information, see the [Miscellaneous constructs in regular expressions](miscellaneous.md) topic.
 
   The following example provides an illustration. It uses inline options to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".
 
@@ -91,7 +92,7 @@ You can specify options for regular expressions in one of three ways:
   '    'decidedly ' found at index 9.  
   ```
 
-* By applying inline options in a particular grouping construct in a regular expression pattern with the syntax **(?imnsx-imnsx:**_subexpression_**)**. No sign before a set of options turns the set on; a minus sign before a set of options turns the set off. (**?** is a fixed part of the language construct's syntax that is required whether options are enabled or disabled.) The option applies only to that group. For more information, see [Grouping Constructs in Regular Expressions](grouping.md).
+* By applying inline options in a particular grouping construct in a regular expression pattern with the syntax **(?imnsx-imnsx:**_subexpression_**)**. No sign before a set of options turns the set on; a minus sign before a set of options turns the set off. (**?** is a fixed part of the language construct's syntax that is required whether options are enabled or disabled.) The option applies only to that group. For more information, see [Grouping constructs in regular expressions](grouping.md).
 
   The following example provides an illustration. It uses inline options in a grouping construct to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".
 
@@ -149,7 +150,7 @@ The following five regular expression options can be set using the *options* par
 
 * [RegexOptions.ECMAScript](xref:System.Text.RegularExpressions.RegexOptions.ECMAScript)
 
-## Determining the Options
+## Determining the options
 
 You can determine which options were provided to a [Regex](xref:System.Text.RegularExpressions.Regex) object when it was instantiated by retrieving the value of the read-only [Regex.Options](xref:System.Text.RegularExpressions.Regex.Options) property.
 
@@ -185,7 +186,7 @@ End If
 
 The following sections list the options supported by regular expression in  .NET. 
 
-## Default Options
+## Default options
 
 The [RegexOptions.None](xref:System.Text.RegularExpressions.RegexOptions.None) option indicates that no options have been specified, and the regular expression engine uses its default behavior. This includes the following:
 
@@ -210,7 +211,7 @@ The [RegexOptions.None](xref:System.Text.RegularExpressions.RegexOptions.None) o
  
 Because the [RegexOptions.None](xref:System.Text.RegularExpressions.RegexOptions.None) option represents the default behavior of the regular expression engine, it is rarely explicitly specified in a method call. A constructor or static pattern-matching method without an options parameter is called instead.
 
-## Case-Insensitive Matching
+## Case-insensitive matching
 
 The [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) option, or the **i** inline option, provides case-insensitive matching. By default, the casing conventions of the current culture are used.
 
@@ -329,7 +330,7 @@ End Module
 '       Found them at index 18.
 ```
 
-## Multiline Mode
+## Multiline mode
 
 The [RegexOptions.Multiline](xref:System.Text.RegularExpressions.RegexOptions.Multiline) option, or the **m** inline option, enables the regular expression engine to handle an input string that consists of multiple lines. It changes the interpretation of the **^** and **$** language elements so that they match the beginning and end of a line, instead of the beginning and end of the input string. 
 
@@ -538,7 +539,7 @@ End Class
 '    Joe: 164
 ```
 
-## Single-line Mode
+## Single-line mode
 
 The [RegexOptions.Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline) option, or the s inline option, causes the regular expression engine to treat the input string as if it consists of a single line. It does this by changing the behavior of the period (**.**) language element so that it matches every character, instead of matching every character except for the newline character **\n** or \u000A.
 
@@ -628,7 +629,7 @@ End Module
 '       This\ is\ one\ line\ and\r\nthis\ is\ the\ second\.
 ```
 
-## Explicit Captures Only
+## Explicit captures only
 
 By default, capturing groups are defined by the use of parentheses in the regular expression pattern. Named groups are assigned a name or number by the **(?<**_name_**>** _subexpression_**)** language option, whereas unnamed groups are accessible by index. In the [GroupCollection](xref:System.Text.RegularExpressions.GroupCollection) object, unnamed groups precede named groups. 
 
@@ -1084,7 +1085,7 @@ End Module
 '             Capture 0: Instead, it is a nonsensical paragraph.
 ```
 
-## Compiled Regular Expressions
+## Compiled regular expressions
 
 By default, regular expressions in .NET are interpreted. When a [Regex](xref:System.Text.RegularExpressions.Regex) object is instantiated or a static [Regex](xref:System.Text.RegularExpressions.Regex) method is called, the regular expression pattern is parsed into a set of custom opcodes, and an interpreter uses these opcodes to run the regular expression. This involves a tradeoff: The cost of initializing the regular expression engine is minimized at the expense of run-time performance.
 
@@ -1104,7 +1105,7 @@ However, this improvement in performance occurs only under the following conditi
 
 * A static regular expression is used in multiple calls to regular expression pattern-matching methods. (The performance improvement is possible because regular expressions used in static method calls are cached by the regular expression engine.) 
 
-## Ignore White Space
+## Ignore white space
 
 By default, white space in a regular expression pattern is significant; it forces the regular expression engine to match a white-space character in the input string. Because of this, the regular expression `"\b\w+\s"` and `"\b\w+ "` are roughly equivalent regular expressions. In addition, when the number sign (**#**) is encountered in a regular expression pattern, it is interpreted as a literal character to be matched.
 
@@ -1132,7 +1133,7 @@ The following example defines the following regular expression pattern:
 
 `\b \(? ( (?>\w+) ,?\s? )+ [\.!?] \)? # Matches an entire sentence`.
 
-This pattern is similar to the pattern defined in the [Explicit Captures Only](#Explicit-Captures-Only) section, except that it uses the [RegexOptions.IgnorePatternWhitespace](xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace) option to ignore pattern white space.
+This pattern is similar to the pattern defined in the [Explicit captures only](#explicit-captures-only) section, except that it uses the [RegexOptions.IgnorePatternWhitespace](xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace) option to ignore pattern white space.
 
 ```csharp
 using System;
@@ -1228,7 +1229,7 @@ End Module
 '       Instead, it is a nonsensical paragraph.
 ```
 
-## Right-to-Left Mode
+## Right-to-left mode
 
 By default, the regular expression engine searches from left to right. You can reverse the search direction by using the [RegexOptions.RightToLeft](xref:System.Text.RegularExpressions.RegexOptions.RightToLeft) option. The search automatically begins at the last character position of the string. For pattern-matching methods that include a starting position parameter, such as [Regex.Match(String, Int32)](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.Int32)), the starting position is the index of the rightmost character position at which the search is to begin. 
 
@@ -1272,7 +1273,7 @@ End Module
 '       'builder ' found at position 0.
 ```
 
-Also note that the lookahead assertion (the **(?**=_subexpression_**)** language element) and the lookbehind assertion (the **(?<**=_subexpression_**)** language element) do not change direction. The lookahead assertions look to the right; the lookbehind assertions look to the left. For example, the regular expression `(?<=\d{1,2}\s)\w+,?\s\d{4}` uses the lookbehind assertion to test for a date that precedes a month name. The regular expression then matches the month and the year. For information on lookahead and lookbehind assertsions, see [Grouping Constructs in Regular Expressions](grouping.md).
+Also note that the lookahead assertion (the **(?**=_subexpression_**)** language element) and the lookbehind assertion (the **(?<**=_subexpression_**)** language element) do not change direction. The lookahead assertions look to the right; the lookbehind assertions look to the left. For example, the regular expression `(?<=\d{1,2}\s)\w+,?\s\d{4}` uses the lookbehind assertion to test for a date that precedes a month name. The regular expression then matches the month and the year. For information on lookahead and lookbehind assertsions, see [Grouping constructs in regular expressions](grouping.md).
 
 ```csharp
 using System;
@@ -1333,7 +1334,7 @@ Pattern | Description
 `\s` | Match a white-space character.
 `\d{4}` | Match four decimal digits.
  
-## ECMAScript Matching Behavior
+## ECMAScript matching behavior
 
 By default, the regular expression engine uses canonical behavior when matching a regular expression pattern to input text. However, you can instruct the regular expression engine to use ECMAScript matching behavior by specifying the [RegexOptions.ECMAScript](xref:System.Text.RegularExpressions.RegexOptions.ECMAScript) option. 
 
@@ -1344,7 +1345,7 @@ The [RegexOptions.ECMAScript](xref:System.Text.RegularExpressions.RegexOptions.E
 
 The behavior of ECMAScript and canonical regular expressions differs in three areas: character class syntax, self-referencing capturing groups, and octal versus backreference interpretation. 
 
-* Character class syntax. Because canonical regular expressions support Unicode whereas ECMAScript does not, character classes in ECMAScript have a more limited syntax, and some character class language elements have a different meaning. For example, ECMAScript does not support language elements such as the Unicode category or block elements *\p* and **\P**. Similarly, the **\w** element, which matches a word character, is equivalent to the **[a-zA-Z_0-9]** character class when using ECMAScript and **[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]** when using canonical behavior. For more information, see [Character Classes in Regular Expressions](classes.md).
+* Character class syntax. Because canonical regular expressions support Unicode whereas ECMAScript does not, character classes in ECMAScript have a more limited syntax, and some character class language elements have a different meaning. For example, ECMAScript does not support language elements such as the Unicode category or block elements *\p* and **\P**. Similarly, the **\w** element, which matches a word character, is equivalent to the **[a-zA-Z_0-9]** character class when using ECMAScript and **[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]** when using canonical behavior. For more information, see [Character classes in regular expressions](classes.md).
 
   The following example illustrates the difference between canonical and ECMAScript pattern matching. It defines a regular expression, `\b(\w+\s*)+`, that matches words followed by white-space characters. The input consists of two strings, one that uses the Latin character set and the other that uses the Cyrillic character set. As the output shows, the call to the [Regex.IsMatch(String, String, RegexOptions)](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)) method that uses ECMAScript matching fails to match the Cyrillic words, whereas the method call that uses canonical matching does match these words. 
 
@@ -1558,7 +1559,7 @@ Regular expression | Canonical behavior | ECMAScript behavior
 **\** followed by a digit from 1 to 9, followed by no additional decimal digits | Interpret as a backreference. For example, \9 always means backreference 9, even if a ninth capturing group does not exist. If the capturing group does not exist, the regular expression parser throws an [ArgumentException](xref:System.ArgumentException). | If a single decimal digit capturing group exists, backreference to that digit. Otherwise, interpret the value as a literal.
 **\** followed by a digit from 1 to 9, followed by additional decimal digits | Interpret the digits as a decimal value. If that capturing group exists, interpret the expression as a backreference. Otherwise, interpret the leading octal digits up to octal 377; that is, consider only the low 8 bits of the value. Interpret the remaining digits as literals. For example, in the expression `\3000`, if capturing group 300 exists, interpret as backreference 300; if capturing group 300 does not exist, interpret as octal 300 followed by 0. | Interpret as a backreference by converting as many digits as possible to a decimal value that can refer to a capture. If no digits can be converted, interpret as an octal by using the leading octal digits up to octal 377; interpret the remaining digits as literals.
  
-## Comparison Using the Invariant Culture
+## Comparison using the invariant culture
 
 By default, when the regular expression engine performs case-insensitive comparisons, it uses the casing conventions of the current culture to determine equivalent uppercase and lowercase characters. 
 
@@ -1655,7 +1656,7 @@ Thread.CurrentThread.CurrentCulture = defaultCulture
 '        URLs that access files are not allowed.
 ```
 
-## See Also
+## See also
 
 [Regular expression language - quick reference](quick-ref.md)
 

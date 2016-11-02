@@ -224,7 +224,7 @@ You can couple the regular expression engine with a particular regular expressio
 > [!IMPORTANT]
 > The form of the method call (static, interpreted, compiled) affects performance if the same regular expression is used repeatedly in method calls, or if an application makes extensive use of regular expression objects.
  
-### Static regular Expressions
+### Static regular expressions
 
 Static regular expression methods are recommended as an alternative to repeatedly instantiating a regular expression object with the same regular expression. Unlike regular expression patterns used by regular expression objects, either the operation codes or the compiled Microsoft intermediate language (MSIL) from patterns used in instance method calls is cached internally by the regular expression engine. 
 
@@ -601,7 +601,7 @@ End Module
 In many cases, backtracking is essential for matching a regular expression pattern to input text. However, excessive backtracking can severely degrade performance and create the impression that an application has stopped responding. In particular, this happens when quantifiers are nested and the text that matches the outer subexpression is a subset of the text that matches the inner subexpression. 
 
 > [!WARNING]
-> In addition to avoiding excessive backtracking, you should use the timeout feature to ensure that excessive backtracking does not severely degrade regular expression performance. For more information, see the [Use Timeout Values](#Use-Timeout-Values) section.
+> In addition to avoiding excessive backtracking, you should use the timeout feature to ensure that excessive backtracking does not severely degrade regular expression performance. For more information, see the [Use timeout values](#use-timeout-values) section.
  
 For example, the regular expression pattern `^[0-9A-Z]([-.\w]*[0-9A-Z])*\$$` is intended to match a part number that consists of at least one alphanumeric character. Any additional characters can consist of an alphanumeric character, a hyphen, an underscore, or a period, though the last character must be alphanumeric. A dollar sign terminates the part number. In some cases, this regular expression pattern can exhibit extremely poor performance because quantifiers are nested, and because the subexpression `[0-9A-Z]` is a subset of the subexpression `[-.\w]*`.
 
@@ -682,7 +682,7 @@ Language element | Description
 **(?<**=_subexpression_**)** | Zero-width positive lookbehind. Look behind the current position to determine whether *subexpression* matches the input string.
 **(?<!**_subexpression_**)** | Zero-width negative lookbehind. Look behind the current position to determine whether *subexpression* does not match the input string.
  
-## Use Time-out Values
+## Use time-out values
 
 If your regular expressions processes input that nearly matches the regular expression pattern, it can often rely on excessive backtracking, which impacts its performance significantly. In addition to carefully considering your use of backtracking and testing the regular expression against near-matching input, you should always set a time-out value to ensure that the impact of excessive backtracking, if it occurs, is minimized.
 
@@ -887,7 +887,7 @@ Public Class RegexUtilities
 End Class
 ```
 
-## Capture Only When Necessary
+## Capture only when necessary
 
 Regular expressions in .NET support a number of grouping constructs, which let you group a regular expression pattern into one or more subexpressions. The most commonly used grouping constructs in .NET regular expression language are **(**_subexpression_**)**, which defines a numbered capturing group, and **(?<*_name_**>**_subexpression_**)**, which defines a named capturing group. Grouping constructs are essential for creating backreferences and for defining a subexpression to which a quantifier is applied. 
 

@@ -17,7 +17,7 @@ ms.assetid: cf497639-9f91-45cb-836f-998d1cea2f43
 
 Formatting is the process of converting an instance of a class, structure, or enumeration value to its string representation, often so that the resulting string can be displayed to users or deserialized to restore the original data type. This conversion can pose a number of challenges:
 
-* The way that values are stored internally does not necessarily reflect the way that users want to view them. For example, a telephone number might be stored in the form **8009999999**, which is not user-friendly. It should instead be displayed as **800-999-9999**. See the [Custom Format Strings](#Custom-Format-Strings) section for an example that formats a number in this way. 
+* The way that values are stored internally does not necessarily reflect the way that users want to view them. For example, a telephone number might be stored in the form **8009999999**, which is not user-friendly. It should instead be displayed as **800-999-9999**. See the [Custom format strings](#custom-format-strings) section for an example that formats a number in this way. 
 
 * Sometimes the conversion of an object to its string representation is not intuitive. For example, it is not clear how the string representation of a **Temperature** object or a **Person** object should appear. For an example that formats a **Temperature** object in a variety of ways, see the [Standard format strings](#standard-format-strings) section.
 
@@ -66,7 +66,7 @@ This overview contains the following sections:
 
 The basic mechanism for formatting is the default implementation of the [Object.ToString](xref:System.Object.ToString) method, which is discussed in the [Default formatting using the ToString method](#default-formatting-using-the-tostring-method) section later in this topic. However, .NET provides several ways to modify and extend its default formatting support. These include the following:
 
-* Overriding the [Object.ToString](xref:System.Object.ToString) method to define a custom string representation of an object’s value. For more information, see the [Overriding the ToString Method](#Overriding-the-ToString-Method) section later in this topic.
+* Overriding the [Object.ToString](xref:System.Object.ToString) method to define a custom string representation of an object’s value. For more information, see the [Overriding the ToString method](#overriding-the-tostring-method) section later in this topic.
 
 * Defining format specifiers that enable the string representation of an object’s value to take multiple forms. For example, the "X" format specifier in the following statement converts an integer to the string representation of a hexadecimal value.
 

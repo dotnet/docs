@@ -23,7 +23,7 @@ Alternation constructs modify a regular expression to enable either/or or condit
 
 * Conditional matching based on a valid captured group
 
-## Pattern Matching with |
+## Pattern matching with |
 
 You can use the vertical bar (|) character to match any one of a series of patterns, where the | character separates each pattern. 
 
@@ -163,7 +163,7 @@ where *expression* is the initial pattern to match, *yes* is the pattern to matc
 where **(?**=_expression_**)** is a zero-width assertion construct. (For more information, see [Grouping constructs in regular expressions](grouping.md).) Because the regular expression engine interprets *expression* as an anchor (a zero-width assertion), *expression* must either be a zero-width assertion (for more information, see [Anchors in regular expressions](anchors.md)) or a subexpression that is also contained in *yes*. Otherwise, the *yes* pattern cannot be matched. 
 
 > [!NOTE]
-> If *expression* is a named or numbered capturing group, the alternation construct is interpreted as a capture test; for more information, see the next section, [Conditional Matching Based on a Valid Capture Group](#conditional-matching-based-on-a-valid-capture-group). In other words, the regular expression engine does not attempt to match the captured substring, but instead tests for the presence or absence of the group.
+> If *expression* is a named or numbered capturing group, the alternation construct is interpreted as a capture test; for more information, see the next section, [Conditional matching based on a valid captured group](#conditional-matching-based-on-a-valid-captured-group). In other words, the regular expression engine does not attempt to match the captured substring, but instead tests for the presence or absence of the group.
  
 
 The following example is a variation of the example that appears in the previous section. It uses conditional matching to determine whether the first three characters after a word boundary are two digits followed by a hyphen. If they are, it attempts to match a U.S. Employer Identification Number (EIN). If not, it attempts to match a U.S. Social Security Number (SSN).

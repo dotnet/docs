@@ -3,6 +3,7 @@ title: Common type system in depth
 description: Common type system in depth
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/20/2016
 ms.topic: article
@@ -16,13 +17,13 @@ ms.assetid: b5482a1d-7bdc-40fe-aa45-10df930ceb5b
 
 This topic contains the following sections that explore the common type system in depth:
 
-* [Types in .NET](#Types-in-.NET)
+* [Types in .NET](#types-in-net)
 
-* [Type Definitions](#Type-Definitions)
+* [Type definitions](#type-definitions)
 
-* [Type Members](#Type-Members)
+* [Type members](#type-members)
 
-* [Characteristics of Type Members](#Characteristics-of-Type-Members)
+* [Characteristics of type members](#characteristics-of-type-members)
 
 
 ## Types in .NET
@@ -35,15 +36,15 @@ Reference types are data types whose objects are represented by a reference (sim
 
 The common type system in .NET supports the following five categories of types:
 
-* [Classes](#Classes)
+* [Classes](#classes)
 
-* [Structures](#Structures)
+* [Structures](#structures)
 
-* [Enumerations](#Enumerations)
+* [Enumerations](#enumerations)
 
-* [Interfaces](#Interfaces)
+* [Interfaces](#interfaces)
 
-* [Delegates](#Delegates)
+* [Delegates](#delegates)
 
 ### Classes
 
@@ -60,7 +61,7 @@ inherits | Indicates that instances of the class can be used anywhere the base c
 exported or not exported | Indicates whether a class is visible outside the assembly in which it is defined. This characteristic applies only to top-level classes and not to nested classes.
 
 > [!NOTE]
-> A class can also be nested in a parent class or structure. Nested classes also have member characteristics. For more information, see [Nested Types](#Nested-Types).
+> A class can also be nested in a parent class or structure. Nested classes also have member characteristics. For more information, see [Nested types](#nested-types).
 
 Class members that have no implementation are abstract members. A class that has one or more abstract members is itself abstract; new instances of it cannot be created. Some languages that target the runtime let you mark a class as abstract even if none of its members are abstract. You can use an abstract class when you want to encapsulate a basic set of functionality that derived classes can inherit or override when appropriate. Classes that are not abstract are referred to as concrete classes.
 
@@ -275,7 +276,7 @@ For delegates that represent multiple methods, .NET provides methods of the [Del
 > [!NOTE]
 > It is not necessary to use these methods for event-handler delegates in C# or Visual Basic, because these languages provide syntax for adding and removing event handlers.
 
-## Type Definitions
+## Type definitions
 
 A type definition includes the following: 
 
@@ -297,7 +298,7 @@ Attributes provide additional user-defined metadata. Most commonly, they are use
 
 Attributes are themselves classes that inherit from [System.Attribute](xref:System.Attribute). Languages that support the use of attributes each have their own syntax for applying attributes to a language element. Attributes can be applied to almost any language element; the specific elements to which an attribute can be applied are defined by the [AttributeUsageAttribute](xref:System.AttributeUsageAttribute) that is applied to that attribute class.
 
-### Type Accessibility
+### Type accessibility
 
 All types have a modifier that governs their accessibility from other types. The following table describes the type accessibilities supported by the runtime.
 
@@ -320,7 +321,7 @@ The accessibility domain of a nested member `M` declared in a type `T`within a p
 
 * If the declared accessibility of `M` is `private`, the accessibility domain of `M` is the program text of `T`.
 
-### Type Names
+### Type names
 
 The common type system imposes only two restrictions on names: 
 
@@ -332,27 +333,27 @@ However, most languages impose additional restrictions on type names. All compar
 
 Although a type might reference types from other modules and assemblies, a type must be fully defined within one .NET module. (Depending on compiler support, however, it can be divided into multiple source code files.) Type names need be unique only within a namespace. To fully identify a type, the type name must be qualified by the namespace that contains the implementation of the type.
 
-### Base Types and Interfaces
+### Base types and interfaces
 
 A type can inherit values and behaviors from another type. The common type system does not allow types to inherit from more than one base type.
 
 A type can implement any number of interfaces. To implement an interface, a type must implement all the virtual members of that interface. A virtual method can be implemented by a derived type and can be invoked either statically or dynamically.
 
-## Type Members
+## Type members
 
 The runtime enables you to define members of your type, which specifies the behavior and state of a type. Type members include the following:
 
-* [Fields](#Fields)
+* [Fields](#fields)
 
-* [Properties](#Properties)
+* [Properties](#properties)
 
-* [Methods](#Methods)
+* [Methods](#methods)
 
-* [Constructors](#Constructors)
+* [Constructors](#constructors)
 
-* [Events](#Events)
+* [Events](#events)
 
-* [Nested Types](#Nested-Types)
+* [Nested types](#nested-types)
 
 ### Fields
 
@@ -483,13 +484,13 @@ If the source code for a structure defines constructors, they must be parameteri
 
 An event defines an incident that can be responded to, and defines methods for subscribing to, unsubscribing from, and raising the event. Events are often used to inform other types of state changes.
 
-### Nested Types
+### Nested types
 
 A nested type is a type that is a member of some other type. Nested types should be tightly coupled to their containing type and must not be useful as a general-purpose type. Nested types are useful when the declaring type uses and creates instances of the nested type, and use of the nested type is not exposed in public members.
 
 Nested types are confusing to some developers and should not be publicly visible unless there is a compelling reason for visibility. In a well-designed library, developers should rarely have to use nested types to instantiate objects or declare variables.
 
-## Characteristics of Type Members
+## Characteristics of type members
 
 The common type system allows type members to have a variety of characteristics; however, languages are not required to support all these characteristics. The following table describes member characteristics.
 
@@ -517,7 +518,7 @@ Each type member has a unique signature. Method signatures consist of the method
 > [!NOTE]
 > The return type is not considered part of a method's signature. That is, methods cannot be overloaded if they differ only by return type.
 
-### Inheriting, Overriding, and Hiding Members
+### Inheriting, overriding, and hiding members
 
 A derived type inherits all members of its base type; that is, these members are defined on, and available to, the derived type. The behavior or qualities of inherited members can be modified in two ways: 
 
@@ -525,12 +526,6 @@ A derived type inherits all members of its base type; that is, these members are
 
 * A derived type can override an inherited virtual method. The overriding method provides a new definition of the method that will be invoked based on the type of the value at run time rather than the type of the variable known at compile time. A method can override a virtual method only if the virtual method is not marked as `final` and the new method is at least as accessible as the virtual method.
 
-## See Also
+## See also
 
-[Type Conversion in the .NET Framework](type-conversion.md)
-
-
-
-
-
-
+[Type conversion in the .NET Framework](type-conversion.md)

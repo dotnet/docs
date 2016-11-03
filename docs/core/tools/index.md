@@ -2,7 +2,8 @@
 title: .NET Core Command-Line Interface (CLI) Tools
 description: An overview of what the Command-Line Interface (CLI) is and its main features
 keywords: CLI, CLI tools, .NET, .NET Core
-author: mairaw
+author: blackdwarf
+ms.author: mairaw
 manager: wpickett
 ms.date: 10/06/2016
 ms.topic: article
@@ -12,11 +13,9 @@ ms.devlang: dotnet
 ms.assetid: b70e9ac0-c8be-49f7-9332-95ab93e0e7bc
 ---
 
-# .NET Core Command-Line Interface Tools
+# .NET Core command-line interface tools
 
-By [Zlatko Knezevic](https://github.com/blackdwarf) and [Maira Wenzel](https://github.com/mairaw)
-
-The .NET Core Command-Line Interface (CLI) is a new foundational cross-platform toolchain for developing 
+The .NET Core command-line interface (CLI) is a new foundational cross-platform toolchain for developing 
 .NET Core applications. It is "foundational" because it is the primary layer on which other, 
 higher-level tools, such as Integrated Development Environments (IDEs), editors and 
 build orchestrators can build on. 
@@ -90,7 +89,7 @@ specify a portable app DLL that `dotnet` would run similar to this: `dotnet /pat
 
 In the second case, the driver attempts to invoke the specified command. This starts the CLI command execution 
 process. First, the driver determines the version of the tooling that you want. You can specify the version in the 
-[global.json](global-json.md) file using the [sdkVersion](global-json.md#sdkversion) property. If that is not available, the driver finds the latest version
+[global.json](global-json.md) file using the `version` property. If that is not available, the driver finds the latest version
 of the tools that is installed on disk and uses that version. Once the version is determined, it executes the 
 command. 
 
@@ -127,4 +126,4 @@ in the [.NET Core CLI extensibility model](extensibility.md) topic.
 This was a short overview of the most important features of the CLI. You can find out more by using the reference and 
 conceptual topics on this site. There are also other resources you can use:
 * [dotnet/CLI](https://github.com/dotnet/cli/) GitHub repo
-* [Getting Started instructions](https://aka.ms/dotnetcoregs/)
+* [Getting started instructions](https://aka.ms/dotnetcoregs/)

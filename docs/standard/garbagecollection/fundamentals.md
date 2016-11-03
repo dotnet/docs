@@ -3,6 +3,7 @@ title: Fundamentals of garbage collection
 description: Fundamentals of garbage collection
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 08/16/2016
 ms.topic: article
@@ -27,17 +28,17 @@ In the Common Language Runtime (CLR), the garbage collector serves as an automat
 
 This topic describes the core concepts of garbage collection. It contains the following sections:
 
-* [Fundamentals of memory](#Fundamentals-of-memory)
+* [Fundamentals of memory](#fundamentals-of-memory)
 
-* [Conditions for a garbage collection](#Conditions-for-a-garbage-collection)
+* [Conditions for a garbage collection](#conditions-for-a-garbage-collection)
 
-* [The managed heap](#The-managed-heap)
+* [The managed heap](#the-managed-heap)
 
-* [Generations](#Generations)
+* [Generations](#generations)
 
-* [What happens during a garbage collection](#What-happens-during-a-garbage-collection)
+* [What happens during a garbage collection](#what-happens-during-a-garbage-collection)
 
-* [Manipulating unmanaged resources](#Manipulating-unmanaged-resources)
+* [Manipulating unmanaged resources](#manipulating-unmanaged-resources)
 
 ## Fundamentals of memory
 
@@ -163,6 +164,6 @@ Users of your managed object may not dispose the native resources used by the ob
 
 When a finalizable object is discovered to be dead, its finalizer is put in a queue so that its cleanup actions are executed, but the object itself is promoted to the next generation. Therefore, you have to wait until the next garbage collection that occurs on that generation (which is not necessarily the next garbage collection) to determine whether the object has been reclaimed.
 
-## See Also
+## See also
 
 [Garbage collection in .NET](gc.md)

@@ -3,6 +3,7 @@ title: Composite formatting
 description: Composite formatting
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/25/2016
 ms.topic: article
@@ -171,7 +172,7 @@ The following table lists types or categories of types in the .NET Framework cla
 
 Type or type category | See
 --------------------- | ---
-Date and time types ([DateTime](xref:System.DateTime), [DateTimeOffset](xref:System.DateTimeOffset)) | [Standard Date and Time Format Strings](standard-datetime.md), [Custom Date and Time Format Strings](custom-datetime.md)
+Date and time types ([DateTime](xref:System.DateTime), [DateTimeOffset](xref:System.DateTimeOffset)) | [Standard Date and Time Format Strings](standard-datetime.md), [Custom date and time format strings](custom-datetime.md)
 Enumeration types (all types derived from [System.Enum](xref:System.Enum)) | [Enumeration Format Strings](enumeration-format.md)
 Numeric types ([BigInteger](xref:System.Numerics.BigInteger), [Byte](xref:System.Byte), [Decimal](xref:System.Decimal), [Double](xref:System.Double), [Int16](xref:System.Int16), [Int32](xref:System.Int32), [Int64](xref:System.Int64), [SByte](xref:System.SByte), [Single](xref:System.Single), [UInt16](xref:System.UInt16), [UInt32](xref:System.UInt32), [UInt64](xref:System.UInt64)) | [Standard Numeric Format Strings](standard-numeric.md), [Custom Numeric Format Strings](custom-numeric.md)
 [Guid](xref:System.Guid) | [Guid.ToString(String)](xref:System.Guid.ToString(System.String))

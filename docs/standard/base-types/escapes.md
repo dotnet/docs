@@ -3,6 +3,7 @@ title: Character escapes in regular expressions
 description: Character escapes in regular expressions
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
@@ -31,14 +32,14 @@ Character or sequence | Description
 --------------------- | ----------- 
 All characters except for the following: **. $ ^ { [ ( &#124; ) * + ? \** | Characters other than those listed in the **Character or sequence** column have no special meaning in regular expressions; they match themselves. The characters included in the **Character or sequence** column are special regular expression language elements. To match them in a regular expression, they must be escaped or included in a positive character group. For example, the regular expression `\$\d+ or [$]\d+` matches "$1200". 
 **\a** | Matches a bell (alarm) character, **\u0007**.
-**\b** | In a __[__*character*_*group*__]__ character class, matches a backspace, **\u0008**. (See [Character Classes in Regular Expressions](classes.md).) Outside a character class, **\b** is an anchor that matches a word boundary. (See [Anchors in Regular Expressions](anchors.md).)
+**\b** | In a __[__*character*_*group*__]__ character class, matches a backspace, **\u0008**. (See [Character classes in regular expressions](classes.md).) Outside a character class, **\b** is an anchor that matches a word boundary. (See [Anchors in regular expressions](anchors.md).)
 **\t** | Matches a tab, **\u0009**.
 **\r** | Matches a carriage return, **\u000D**. Note that **\r** is not equivalent to the newline character, **\n**.
 **\v** | Matches a vertical tab, **\u000B**.
 **\f** | Matches a form feed, **\u000C**.
 **\n** | Matches a new line, **\u000A**.
 **\e** | Matches an escape, **\u001B**.
-**\**_nnn_ | Matches an ASCII character, where nnn consists of two or three digits that represent the octal character code. For example, `\040` represents a space character. This construct is interpreted as a backreference if it has only one digit (for example, `\2`) or if it corresponds to the number of a capturing group. (See [Backreference Constructs in Regular Expressions](backreference.md).) 
+**\**_nnn_ | Matches an ASCII character, where nnn consists of two or three digits that represent the octal character code. For example, `\040` represents a space character. This construct is interpreted as a backreference if it has only one digit (for example, `\2`) or if it corresponds to the number of a capturing group. (See [Backreference constructs in regular expressions](backreference.md).) 
 **\x**_nn_ | Matches an ASCII character, where *nn* is a two-digit hexadecimal character code.
 **\c**_X_ | Matches an ASCII control character, where *X* is the letter of the control character. For example, `\cC` is CTRL-C.
 **\u**_nnnn_ | Matches a UTF-16 code unit whose value is *nnnn* hexadecimal. **Note** The Perl 5 character escape that is used to specify Unicode is not supported by .NET. The Perl 5 character escape has the form **\x{####…}**, where **####…** is a series of hexadecimal digits. Instead, use **\u**_nnnn_. 

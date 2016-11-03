@@ -16,23 +16,20 @@ ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 # What's new in C# 7
 
 C# 7 adds a number of new features to the C# language:
-
 * [`out` variables](#out-variables)
 * [Tuples](#tuples)
 * [Pattern Matching](#pattern-matching)
 * [`ref` locals and returns](#ref-locals-and-returns)
 * [Local Functions](#local-functions)
-* [Expression Bodied Everything](#expression-bodied-everything-preview-5)
-* [`throw` Expressions](#throw-expressions-preview-5)
+<!-- Not available in Preview 5 * [More expression bodied members](#more-expression-bodied-members) -->
+<!-- * [`throw` Expressions](#throw-expressions) -->
 * [Generalized async return types](#generalized-async-return-types)
 * [Numeric literal syntax improvements](#numeric-literal-syntax-improvements)
 
-Two of the most interesting features don't make that list. The first
-is the shortened release cycle. C# 7 is following C# 6 much more quickly.
-The second is that C# 7 has [features contributed by the community](#expression-bodied-everything-preview-5), not
-the C# compiler team. The language is truly open.
-
-The remainder of this topic provides an overview 
+The remainder of this topic discusses each of the features. For each feature,
+you'll learn the reasoning behind it. You'll learn the syntax. You'll see
+some sample scenarios where using the new feature will make you more 
+productive as a developer. 
 
 ## `out` variables
 

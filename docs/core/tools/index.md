@@ -89,7 +89,7 @@ specify a portable app DLL that `dotnet` would run similar to this: `dotnet /pat
 
 In the second case, the driver attempts to invoke the specified command. This starts the CLI command execution 
 process. First, the driver determines the version of the tooling that you want. You can specify the version in the 
-[global.json](global-json.md) file using the [sdkVersion](global-json.md#sdkversion) property. If that is not available, the driver finds the latest version
+[global.json](global-json.md) file using the `version` property. If that is not available, the driver finds the latest version
 of the tools that is installed on disk and uses that version. Once the version is determined, it executes the 
 command. 
 

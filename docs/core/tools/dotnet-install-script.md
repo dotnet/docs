@@ -43,7 +43,7 @@ By default, the script will add the install location to the $PATH for the curren
 
 Before running the script, please install all the required [dependencies](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md).
 
-You can install a specific version using the `--version` argument. The version needs to be specified as 3-part version (for example, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) file found in the hierarchy above the folder where the script was invoked in that contains the `version` property. If that is not present, it will use Latest.
+You can install a specific version using the `--version` argument. The version needs to be specified as 3-part version (for example, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) file found in the hierarchy above the folder where the script was invoked that contains the `version` property. If that is not present, it will use Latest.
 
 You can also use this script to get the SDK or shared runtime debug binaries with debug symbols by using the `--debug` argument. If you do not do this on first install and realize you do need debug symbols later on, you can re-run the script with this argument and the version of the bits you installed. 
 

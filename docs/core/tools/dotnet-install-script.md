@@ -2,7 +2,8 @@
 title: dotnet-install scripts | .NET Core SDK
 description: Learn about the dotnet-install scripts to install the .NET Core CLI tools and the shared runtime. 
 keywords: dotnet-install, dotnet-install scripts, .NET Core
-author: mairaw
+author: blackdwarf
+ms.author: mairaw
 manager: wpickett
 ms.date: 10/12/2016
 ms.topic: article
@@ -42,7 +43,7 @@ By default, the script will add the install location to the $PATH for the curren
 
 Before running the script, please install all the required [dependencies](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md).
 
-You can install a specific version using the `--version` argument. The version needs to be specified as 3-part version (for example, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) file found in the hierarchy above the folder where the script was invoked in that contains the `sdkVersion` property. If that is not present, it will use Latest.
+You can install a specific version using the `--version` argument. The version needs to be specified as 3-part version (for example, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) file found in the hierarchy above the folder where the script was invoked that contains the `version` property. If that is not present, it will use Latest.
 
 You can also use this script to get the SDK or shared runtime debug binaries with debug symbols by using the `--debug` argument. If you do not do this on first install and realize you do need debug symbols later on, you can re-run the script with this argument and the version of the bits you installed. 
 
@@ -56,7 +57,7 @@ Which channel (for example, `future`, `preview`, `production`) to install from. 
 
 `-Version [VERSION]`
 
-Which version of CLI to install; you need to specify the version as 3-part version (for example, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) that contains the [sdkVersion](global-json.md#sdkversion) property; if that is not present, it will use Latest. 	
+Which version of CLI to install; you need to specify the version as 3-part version (for example, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) that contains the `version` property; if that is not present, it will use Latest. 	
 
 `-InstallDir [DIR]`
 
@@ -83,7 +84,7 @@ Which channel (for example "future", "preview", "production") to install from. T
 
 `--version [VERSION]`
 
-Which version of CLI to install; you need to specify the version as 3-part version (for example, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) that contains the [sdkVersion](global-json.md#sdkversion) property; if that is not present, it will use Latest. 	
+Which version of CLI to install; you need to specify the version as 3-part version (for example, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) that contains the `version` property; if that is not present, it will use Latest. 	
 
 `--install-dir [DIR]`
 

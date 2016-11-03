@@ -3,6 +3,7 @@ title: Backreference constructs in regular expressions
 description: Backreference constructs in regular expressions
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/28/2016
 ms.topic: article
@@ -17,9 +18,9 @@ ms.assetid: c453ed78-650f-4c3c-9ab4-9d89d250bf88
 Backreferences provide a convenient way to identify a repeated character or substring within a string. For example, if the input string contains multiple occurrences of an arbitrary substring, you can match the first occurrence with a capturing group, and then use a backreference to match subsequent occurrences of the substring. 
 
 > [!NOTE]
-> A separate syntax is used to refer to named and numbered capturing groups in replacement strings. For more information, see [Substitutions in Regular Expressions](substitutions.md).
+> A separate syntax is used to refer to named and numbered capturing groups in replacement strings. For more information, see [Substitutions in regular expressions](substitutions.md).
  
-.NET defines separate language elements to refer to numbered and named capturing groups. For more information about capturing groups, see [Grouping Constructs in Regular Expressions](grouping.md).
+.NET defines separate language elements to refer to numbered and named capturing groups. For more information about capturing groups, see [Grouping constructs in regular expressions](grouping.md).
 
 ## Numbered Backreferences
 

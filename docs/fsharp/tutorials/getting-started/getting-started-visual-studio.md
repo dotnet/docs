@@ -3,7 +3,8 @@ title: Getting Started with F# in Visual Studio
 description: Learn how to use F# with Visual Studio.
 keywords: visual f#, f#, functional programming
 author: cartermp
-manager: danielfe
+ms.author: phcart
+manager: wpickett
 ms.date: 09/08/2016
 ms.topic: article
 ms.prod: visual-studio-dev14
@@ -11,37 +12,37 @@ ms.technology: devlang-fsharp
 ms.assetid: 8db75596-19a9-4eda-b20d-a12d517c8cc1 
 ---
 
-# Getting Started with F# in Visual Studio
+# Getting started with F# in Visual Studio
 
 F# and the Visual F# tooling are supported in the Visual Studio IDE.  To begin, you should [download Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs), if you haven't already.  This article uses the Visual Studio 2015 Community Edition, but you can use F# with the version of your choice.
 
-## Installing the Visual F# Tools
+## Installing the Visual F# tools
 
 Visual Studio will first initialize the installer.  After it is intilized, select **Custom** as shown here:
 
-![](media/getting-started-vs/vs2015-install-1.png)
+![Select Custom install](./media/getting-started-vs/vs2015-install-1.png)
 
 Select the Visual F# Tools under Programming Languages here:
 
-![](media/getting-started-vs/vs2015-install-2.png)
+![Visual F#](./media/getting-started-vs/vs2015-install-2.png)
 
 Feel free to customize your installation further, and then continue with the installation.  After a while, Visual Studio will complete installation and you can create an F# project!
 
-## Creating a Console Application
+## Creating a console application
 
 One of the most basic projects in Visual Studio is the Console Application.  Here's how to do it.  Once Visual Studio is open:
 
 1. On the **File** menu, point to **New**, and then choose **Project**.
 
-![](media/getting-started-vs/vs2015-install-3.png)
+![File New Project](./media/getting-started-vs/vs2015-install-3.png)
 
 2.  In the New Project dialog, under **Templates**, you should see **Visual F#**.  Choose this to show the F# templates.
 
-![](media/getting-started-vs/vs2015-install-4.png)
+![Visual F# templates](./media/getting-started-vs/vs2015-install-4.png)
 
 3. Choose the **Okay** button to create the F# project!  You should see something like this under **Solution Explorer**:
 
-![](media/getting-started-vs/vs2015-install-5.png)
+![F# Project in Solution Explorer](./media/getting-started-vs/vs2015-install-5.png)
 
 ## Writing your code
 
@@ -61,7 +62,7 @@ Another function, `main`, is defined, which is decorated with the `EntryPoint` a
 
 It is in this function that we call the `square` function with an argument of `12`.  The F# compiler then assigns the type of `square` to be `int -> int` (that is, a function which takes an `int` and produces an `int`).  The call to `printfn` is a formatted printing function which uses a format string, similar to C-style programming languages, parameters which correspond to those specified in the format string, and then prints the result and a new line.
 
-## Running Your Code
+## Running your code
 
 You can run the code and see results by pressing **ctrl-f5**.  This will run the program without debugging and allows you to see the results.  Alternatively, you can choose the **Debug** top-level menu item in Visual Studio and choose **Start Without Debugging**.
 
@@ -125,18 +126,18 @@ The pipe-forward operator, and more, are covered in later tutorials.
 
 This is only a glimpse into what you can do with F# Interactive.  To learn more, check out [Interactive Programming with F#](../fsharp-interactive/index.md).
 
-## Next Steps
+## Next steps
 
 If you haven't already, check out the [Tour of F#](../../tour.md), which covers some of the core features of the F# language.  It will give you an overview of some of the capabilities of F#, and provide ample code samples that you can copy into Visual Studio and run.  There are also some great external resources you can use, showcased in the [F# Guide](../../index.md).
 
-## See Also
+## See also
 
 [Visual F#](../../index.md)
 
 [Tour of F#](../../tour.md)
 
-[F# Language Reference](../../language-reference/index.md)
+[F# language reference](../../language-reference/index.md)
 
-[Type Inference](../../language-reference/type-inference.md)
+[Type inference](../../language-reference/type-inference.md)
 
-[Symbol and Operator Reference](../../language-reference/symbol-and-operator-reference/index.md)
+[Symbol and operator reference](../../language-reference/symbol-and-operator-reference/index.md)

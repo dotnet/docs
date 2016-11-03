@@ -3,6 +3,7 @@ title: Details of regular expression behavior
 description: Details of regular expression behavior
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/28/2016
 ms.topic: article
@@ -117,7 +118,7 @@ Pattern | Description
 `(\d+)` | Match at least one numeric character, and assign it to the first capturing group.
 `\.` | Match a period.
  
-For more information about lazy quantifiers, see [Quantifiers in Regular Expressions](quantifiers.md).
+For more information about lazy quantifiers, see [Quantifiers in regular expressions](quantifiers.md).
 
 ### Positive lookahead
 
@@ -170,7 +171,7 @@ Pattern | Description
 `\b` | End the match at a word boundary.
 `(?=\P{P})` | Look ahead to determine whether the next character is a punctuation symbol. If it is not, the match succeeds.
 
-For more information about positive lookahead assertions, see [Grouping Constructs in Regular Expressions](grouping.md).
+For more information about positive lookahead assertions, see [Grouping constructs in regular expressions](grouping.md).
 
 ### Negative lookahead
 
@@ -225,7 +226,7 @@ Pattern | Description
 `(\w+)` | Match one or more word characters.
 `\b` | End the match at a word boundary.
  
-For more information about negative lookahead assertions, see [Grouping Constructs in Regular Expressions](grouping.md).
+For more information about negative lookahead assertions, see [Grouping constructs in regular expressions](grouping.md).
 
 ### Conditional evaluation
 
@@ -319,11 +320,11 @@ Pattern | Description
 `&#124;((\w+\p{P}?\s)+))` | If the `Pvt` capturing group does not exist, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character. Assign the substring to the third capturing group.
 `\r?$` | Match the end of a line or the end of the string.
  
-For more information about conditional evaluation, see [Alternation Constructs in Regular Expressions](alternation.md).
+For more information about conditional evaluation, see [Alternation constructs in regular expressions](alternation.md).
 
 ### Balancing group definitions
 
-Balancing group definitions: **(?<**_name1-name2_**>** _subexpression_**)**. This feature allows the regular expression engine to keep track of nested constructs such as parentheses or opening and closing brackets. For an example, see [Grouping Constructs in Regular Expressions](grouping.md).
+Balancing group definitions: **(?<**_name1-name2_**>** _subexpression_**)**. This feature allows the regular expression engine to keep track of nested constructs such as parentheses or opening and closing brackets. For an example, see [Grouping constructs in regular expressions](grouping.md).
 
 ### Nonbacktracking subexpressions
 
@@ -473,7 +474,7 @@ End Module
 '             Group 1: aaaaa
 ```
 
-For more information about nonbacktracking subexpressions, see [Grouping Constructs in Regular Expressions](grouping.md).
+For more information about nonbacktracking subexpressions, see [Grouping constructs in regular expressions](grouping.md).
 
 ### Right-to-left matching
 
@@ -546,7 +547,7 @@ End Module
 '       Number at end of sentence (right-to-left): 107325
 ```
 
-For more information about right-to-left matching, see [Regular Expression Options](options.md).
+For more information about right-to-left matching, see [Regular expression options](options.md).
 
 ### Positive and negative lookbehind
 
@@ -614,7 +615,7 @@ Pattern | Description
 `(?<=[A-Z0-9])` | Look behind to the previous character, which must be numeric or alphanumeric. (The comparison is case-insensitive.)
 `$` | End the match at the end of the string.
  
-For more information about positive and negative lookbehind, see [Grouping Constructs in Regular Expressions](grouping.md).
+For more information about positive and negative lookbehind, see [Grouping constructs in regular expressions](grouping.md).
 
 
 ## Related Topics

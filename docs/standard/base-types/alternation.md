@@ -3,6 +3,7 @@ title: Alternation constructs in regular expressions
 description: Alternation constructs in regular expressions
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/28/2016
 ms.topic: article
@@ -22,7 +23,7 @@ Alternation constructs modify a regular expression to enable either/or or condit
 
 * Conditional matching based on a valid captured group
 
-## Pattern Matching with |
+## Pattern matching with |
 
 You can use the vertical bar (|) character to match any one of a series of patterns, where the | character separates each pattern. 
 
@@ -149,7 +150,7 @@ Pattern | Description
 `(\d{2}-\d{7}|;\d{3}-\d{2}-\d{4})` | Match either of the following: two decimal digits followed by a hyphen followed by seven decimal digits; or three decimal digits, a hyphen, two decimal digits, another hyphen, and four decimal digits. 
 `\d` | End the match at a word boundary.
 										 
-## Conditional Matching with an Expression
+## Conditional matching with an expression
 
 This language element attempts to match one of two patterns depending on whether it can match an initial pattern. Its syntax is:
 
@@ -159,10 +160,10 @@ where *expression* is the initial pattern to match, *yes* is the pattern to matc
 
 **(?(?**=_expression_**)**_yes_**|**_no_**)**
 
-where **(?**=_expression_**)** is a zero-width assertion construct. (For more information, see [Grouping Constructs in Regular Expressions](grouping.md).) Because the regular expression engine interprets *expression* as an anchor (a zero-width assertion), *expression* must either be a zero-width assertion (for more information, see [Anchors in Regular Expressions](anchors.md)) or a subexpression that is also contained in *yes*. Otherwise, the *yes* pattern cannot be matched. 
+where **(?**=_expression_**)** is a zero-width assertion construct. (For more information, see [Grouping constructs in regular expressions](grouping.md).) Because the regular expression engine interprets *expression* as an anchor (a zero-width assertion), *expression* must either be a zero-width assertion (for more information, see [Anchors in regular expressions](anchors.md)) or a subexpression that is also contained in *yes*. Otherwise, the *yes* pattern cannot be matched. 
 
 > [!NOTE]
-> If *expression* is a named or numbered capturing group, the alternation construct is interpreted as a capture test; for more information, see the next section, [Conditional Matching Based on a Valid Capture Group](#Conditional-Matching-Based-on-a-Valid-Capture-Group). In other words, the regular expression engine does not attempt to match the captured substring, but instead tests for the presence or absence of the group.
+> If *expression* is a named or numbered capturing group, the alternation construct is interpreted as a capture test; for more information, see the next section, [Conditional matching based on a valid captured group](#conditional-matching-based-on-a-valid-captured-group). In other words, the regular expression engine does not attempt to match the captured substring, but instead tests for the presence or absence of the group.
  
 
 The following example is a variation of the example that appears in the previous section. It uses conditional matching to determine whether the first three characters after a word boundary are two digits followed by a hyphen. If they are, it attempts to match a U.S. Employer Identification Number (EIN). If not, it attempts to match a U.S. Social Security Number (SSN).
@@ -217,7 +218,7 @@ Pattern | Description
 `\d{3}-\d{2}-\d{4}` | If the previous pattern does not match, match three decimal digits, a hyphen, two decimal digits, another hyphen, and four decimal digits. 
 `\b` | Match a word boundary.
  
-## Conditional Matching Based on a Valid Captured Group
+## Conditional matching based on a valid captured group
 
 This language element attempts to match one of two patterns depending on whether it has matched a specified capturing group. Its syntax is:
 

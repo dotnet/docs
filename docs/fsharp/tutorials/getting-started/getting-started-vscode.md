@@ -3,6 +3,7 @@ title: Getting Started with F# in Visual Studio Code with Ionide
 description: Learn how to use F# with Visual Studio Code and the Ionide plugin suite.
 keywords: visual f#, f#, functional programming, .NET, Visual Studio Code, vscode, Ionide
 author: cartermp
+ms.author: phcart
 manager: wpickett
 ms.date: 09/28/2016
 ms.topic: article
@@ -24,7 +25,7 @@ F# 4.0 or higher must be installed on your machine to use Ionide.
 
 If you're on Windows, you have two options for installing F#.
 
-If you've already installed Visual Studio and don't have F#, you can [Install the Visual F# Tools](getting-started-visual-studio.md#installing-the-visual-f#-tools).  This will install all the necessary components to write, compile, and execute F# code.
+If you've already installed Visual Studio and don't have F#, you can [Install the Visual F# Tools](getting-started-visual-studio.md#installing-the-visual-f-tools).  This will install all the necessary components to write, compile, and execute F# code.
 
 If you prefer not to install Visual Studio, use the following instructions:
 

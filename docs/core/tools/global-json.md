@@ -58,31 +58,3 @@ For example:
     }
 }
 ```
-
-### architecture
-Type: String
-
-Specifies which processor architecture to target. Supported values: `x86` or `x64`.
-
-For example:
-```json
-{
-    "sdk": {
-        "architecture": "x86"
-    }
-}
-```
-
-### runtime
-Type: String
-
-Determines which runtime to target. Supported values: `clr` or `coreclr`.
-
-For example:
-```json
-{
-    "sdk": {
-        "runtime": "clr"
-    }
-}
-```

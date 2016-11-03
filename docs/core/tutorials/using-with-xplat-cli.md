@@ -95,7 +95,7 @@ You can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the c
 
 ### Building a self-contained application
 
-Let's try compiling a self-contained application instead of a portable application. You can read more about the [types of portability in .NET Core](../deployment) to learn about the different application types, and how they are deployed.
+Let's try compiling a self-contained application instead of a portable application. You can read more about the [types of portability in .NET Core](../deploying/index.md) to learn about the different application types, and how they are deployed.
 
 You need to make some changes to your `project.json`
 file to direct the tools to build a self-contained application. You can see these in the

@@ -50,14 +50,14 @@ If you'd like to get started with a simple "Hello World" program on .NET Core, f
     * Go to the File Explorer Tab on the left.
     * Open the folder you want you C# project to be in.
 
-  ![VSCodeOpenFolder](https://github.com/dotnet/core-docs/blob/master/docs/images/VSCodeOpenFolder.PNG)
+  ![VSCodeOpenFolder](media/with-visual-studio-code/VSCodeOpenFolder.PNG)
 
 2. Initialize a C# project:
     * Open the command prompt (or terminal). You can open the terminal from VS Code by typing <kbd>CTRL</kbd>+<kbd>`</kbd> (Back Tick)
     * Type `dotnet new`
     * This creates a `Program.cs` file in your folder with a simple "Hello World" program already written.
 
-  ![dotnetNew](https://github.com/dotnet/core-docs/blob/master/docs/images/dotnetNew.PNG)
+  ![dotnetNew](media/with-visual-studio-code/dotnetNew.PNG)
 
 3. Resolve the build assets by typing `dotnet restore`
 
@@ -65,11 +65,11 @@ If you'd like to get started with a simple "Hello World" program on .NET Core, f
     * You'll see a new `project.lock.json` file in your project folder.
     * This file contains information about your project's dependencies to make subsequent restores quicker.
 
-  ![Image dotnet restore](https://github.com/dotnet/core-docs/blob/master/docs/images/dotnetRestore.PNG)
+  ![Image dotnet restore](media/with-visual-studio-code/dotnetRestore.PNG)
 
 4. Run the "Hello World" program by typing `dotnet run`
 
-  ![dotnetRun](https://github.com/dotnet/core-docs/blob/master/docs/images/dotnetRun.PNG)
+  ![dotnetRun](media/with-visual-studio-code/dotnetRun.PNG)
 
 You can also watch a short video tutorial for further setup help on [Windows](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core), [macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core-on-MacOS), or [Linux](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-Csharp-dotnet-Core-Ubuntu).
 

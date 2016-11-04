@@ -1,6 +1,6 @@
 # Using the current-1.1 folder and sub-folders
 
-This folder is the top-level node that matches the [docs](../docs)
+This folder is the top-level node that matches the [docs](../index.md)
 folder, but contains deltas for the the .NET Core 1.1 release.
 
 The goal of this separate parallel folder structure is to provide a location

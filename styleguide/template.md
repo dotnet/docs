@@ -203,7 +203,7 @@ You can use a [Markdown table generator tool](http://www.tablesgenerator.com/mar
 ## Code
 
 The best way to include code is to include snippets from a working sample. Create your
-sample following the instructions in the [contributing guide](../contributing.md#contributing-to-samples).
+sample following the instructions in the [contributing guide](../CONTRIBUTING.md#contributing-to-samples).
 
 You can include the code using include syntax:
 

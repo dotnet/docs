@@ -40,7 +40,7 @@
           "files": ["**/*.md"],
           "src": "docs",
           "dest": "articles",
-          "exclude": ["**/includes/**"] 
+          "exclude": ["**/includes/**", "***/contributing.md"] 
         },
         {
           "files": ["*.md"],

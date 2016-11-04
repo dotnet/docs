@@ -3,6 +3,7 @@ title: "How to: extract the day of the week from a specific date"
 description: How to extract the day of the week from a specific date
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/26/2016
 ms.topic: article
@@ -18,7 +19,7 @@ ms.assetid: 88a8f8b9-f5c9-4503-b968-84468b52bb8e
 
 ## To extract a number indicating the day of the week from a specific date
 
-1. If you are working with the string representation of a date, convert it to a [DateTime](xref:System.DateTime) or a [DateTimeOffset](xref:System.DateTimeOffset) value by using the static [DateTime.Parse](xref:System.DateTime#System.DateTime.Parse(System.String)) or [DateTimeOffset.Parse](xref:System.DateTimeOffset.Parse(System.String)) method.
+1. If you are working with the string representation of a date, convert it to a [DateTime](xref:System.DateTime) or a [DateTimeOffset](xref:System.DateTimeOffset) value by using the static [DateTime.Parse](xref:System.DateTime.Parse(System.String)) or [DateTimeOffset.Parse](xref:System.DateTimeOffset.Parse(System.String)) method.
 
 2. Use the [Datetime.DayOfWeek](xref:System.DateTime.DayOfWeek) or [DateTimeOffset.DayOfWeek](xref:System.DateTimeOffset.DayOfWeek) property to retrieve a [DayOfWeek](xref:System.DayOfWeek) value that indicates the day of the week.
 
@@ -54,7 +55,7 @@ End Module
 
 ## To extract the abbreviated weekday name from a specific date
 
-1. If you are working with the string representation of a date, convert it to a [DateTime](xref:System.DateTime) or a [DateTimeOffset](xref:System.DateTimeOffset) value by using the static [DateTime.Parse](xref:System.DateTime#System.DateTime.Parse(System.String)) or [DateTimeOffset.Parse](xref:System.DateTimeOffset.Parse(System.String)) method.
+1. If you are working with the string representation of a date, convert it to a [DateTime](xref:System.DateTime) or a [DateTimeOffset](xref:System.DateTimeOffset) value by using the static [DateTime.Parse](xref:System.DateTime.Parse(System.String)) or [DateTimeOffset.Parse](xref:System.DateTimeOffset.Parse(System.String)) method.
 
 2. You can extract the abbreviated weekday name of the current culture or of a specific culture:
 
@@ -463,7 +464,7 @@ End Module
 '       lundi
 ```
 
-## See Also
+## See also
 
 [Performing formatting operations](performing-formatting-operations.md)
 

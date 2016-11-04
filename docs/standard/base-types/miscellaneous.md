@@ -3,6 +3,7 @@ title: Miscellaneous constructs in regular expressions
 description: Miscellaneous constructs in regular expressions
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
@@ -25,7 +26,7 @@ You can set or disable specific pattern matching options for part of a regular e
 (?imnsx-imnsx)
 ```
 
-You list the options you want to enable after the question mark, and the options you want to disable after the minus sign. The following table describes each option. For more information about each option, see [Regular Expression Options](options.md).
+You list the options you want to enable after the question mark, and the options you want to disable after the minus sign. The following table describes each option. For more information about each option, see [Regular expression options](options.md).
 
 Option | Description
 ------ | ----------- 
@@ -38,7 +39,7 @@ Option | Description
 Any change in regular expression options defined by the **(?imnsx-imnsx)** construct remains in effect until the end of the enclosing group.
 
 > [!NOTE]
-> The **(?imnsx-imnsx**:_subexpression_**)** grouping construct provides identical functionality for a subexpression. For more information, see [Grouping Constructs in Regular Expressions](grouping.md).
+> The **(?imnsx-imnsx**:_subexpression_**)** grouping construct provides identical functionality for a subexpression. For more information, see [Grouping constructs in regular expressions](grouping.md).
  
 The following example uses the **i**, **n**, and **x** options to enable case insensitivity and explicit captures, and to ignore white space in the regular expression pattern in the middle of a regular expression. 
 

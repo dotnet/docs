@@ -3,6 +3,7 @@ title: The regular expression object model
 description: The regular expression object model
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/28/2016
 ms.topic: article
@@ -16,19 +17,19 @@ ms.assetid: a1e611ec-c6a2-48c6-9c52-0ed845787621
 
 This topic describes the object model used in working with.NET regular expressions. It contains the following sections:
 
-* [The Regular Expression Engine](#The-Regular-Expression-Engine)
+* [The regular expression engine](#the-regular-expression-engine)
 
-* [The MatchCollection and Match Objects](#The-MatchCollection-and-Match-Objects)
+* [The MatchCollection and Match objects](#the-matchcollection-and-match-objects)
 
-* [The Group Collection](#The-Group-Collection)
+* [The Group collection](#the-group-collection)
 
-* [The Captured Group](#The-Captured-Group)
+* [The captured group](#the-captured-group)
 
-* [The Capture Collection](#The-Capture-Collection)
+* [The capture collection](#the-capture-collection)
 
-* [The Individual Capture](#The-Individual-Capture)
+* [The individual capture](#the-individual-capture)
 
-## The Regular Expression Engine
+## The regular expression engine
 
 The regular expression engine in .NET is represented by the [Regex](xref:System.Text.RegularExpressions.Regex) class. The regular expression engine is responsible for parsing and compiling a regular expression, and for performing operations that match the regular expression pattern with an input string. The engine is the central component in .NET regular expression object model.
 
@@ -52,7 +53,7 @@ You can call the methods of the [Regex](xref:System.Text.RegularExpressions.Rege
 
 These operations are described in the following sections.
 
-### Matching a Regular Expression Pattern
+### Matching a regular expression pattern
 
 The [Regex.IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String)) method returns `true` if the string matches the pattern, or `false` if it does not. The [IsMatch](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String)) method is often used to validate string input. For example, the following code ensures that a string matches a valid social security number in the United States.
 
@@ -112,7 +113,7 @@ Pattern | Description
 `\d{4}` | Match four decimal digits.
 `$` | Match the end of the input string.
  
-### Extracting a Single Match or the First Match
+### Extracting a single match or the first match
 
 The [Regex.Match](xref:System.Text.RegularExpressions.Regex.Match(System.String)) method returns a [Match](xref:System.Text.RegularExpressions.Match) object that contains information about the first substring that matches a regular expression pattern. If the `Match.Success` property returns `true`, indicating that a match was found, you can retrieve information about subsequent matches by calling the [Match.NextMatch](xref:System.Text.RegularExpressions.Match.NextMatch) method. These method calls can continue until the `Match.Success` property returns `false`. For example, the following code uses the [Regex.Match(String, String)](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String)) method to find the first occurrence of a duplicated word in a string. It then calls the [Match.NextMatch](xref:System.Text.RegularExpressions.Match.NextMatch) method to find any additional occurrences. The example examines the `Match.Success` property after each method call to determine whether the current match was successful and whether a call to the [Match.NextMatch](xref:System.Text.RegularExpressions.Match.NextMatch) method should follow.
 
@@ -170,7 +171,7 @@ Pattern | Description
 `(\1)` | Match the first captured string. This is the second capturing group. 
 `\b` | End the match on a word boundary.
  
-### Extracting All Matches
+### Extracting all matches
 
 The [Regex.Matches](xref:System.Text.RegularExpressions.Regex.Matches(System.String)) method returns a [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) object that contains information about all matches that the regular expression engine found in the input string. For example, the previous example could be rewritten to call the [Matches](xref:System.Text.RegularExpressions.Regex.Matches(System.String)) method instead of the [Match](xref:System.Text.RegularExpressions.Regex.Match(System.String)) and [NextMatch](xref:System.Text.RegularExpressions.Match.NextMatch) methods.
 
@@ -212,7 +213,7 @@ End Module
 '       Duplicate 'that' found at position 22.
 ```
 
-### Replacing a Matched Substring
+### Replacing a matched substring
 
 The [Regex.Replace](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String)) method replaces each substring that matches the regular expression pattern with a specified string or regular expression pattern, and returns the entire input string with replacements. For example, the following code adds a U.S. currency symbol before a decimal number in a string.
 
@@ -266,7 +267,7 @@ Pattern | Replacement string
 `$$` | The dollar sign (**$**) character.
 `$&` | The entire matched substring.
  
-### Splitting a Single String into an Array of Strings
+### Splitting a single string into an array of strings
 
 The [Regex.Split](xref:System.Text.RegularExpressions.Regex.Split(System.String)) method splits the input string at the positions defined by a regular expression match. For example, the following code places the items in a numbered list into a string array.
 
@@ -326,11 +327,11 @@ Pattern | Description
 `\.` | Match a period.
 `\s` | Match a white-space character.
  
-## The MatchCollection and Match Objects
+## The MatchCollection and Match objects
 
 [Regex](xref:System.Text.RegularExpressions.Regex) methods return two objects that are part of the regular expression object model: the [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) object, and the [Match](xref:System.Text.RegularExpressions.Match) object. 
 
-### The Match Collection
+### The Match collection
 
 The [Regex.Matches](xref:System.Text.RegularExpressions.Regex.Matches(System.String)) method returns a [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) object that contains [Match](xref:System.Text.RegularExpressions.Match) objects that represent all the matches that the regular expression engine found, in the order in which they occur in the input string. If there are no matches, the method returns a [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) object that contains  [Match](xref:System.Text.RegularExpressions.Match) object with no members. The [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) `Item` property lets you access individual members of the collection by index, from zero to one less than the value of the [MatchCollection.Count](xref:System.Text.RegularExpressions.MatchCollection.Count) property. 'Item` is the collection's indexer (in C#) and default property (in Visual Basic)..
 
@@ -511,7 +512,7 @@ Two properties of the [Match](xref:System.Text.RegularExpressions.Match) class r
 
 * The `Match.Captures` property returns a [CaptureCollection](xref:System.Text.RegularExpressions.CaptureCollection) object that is of limited use. The collection is not populated for a [Match](xref:System.Text.RegularExpressions.Match) object whose `Success` property is `false`. Otherwise, it contains a single [Capture](xref:System.Text.RegularExpressions.Capture) object that has the same information as the [Match](xref:System.Text.RegularExpressions.Match) object. 
 
-For more information about these objects, see the [The Group Collection](#The-Group-Collection) and [The Capture Collection](#The-Capture-Collection) sections later in this topic.
+For more information about these objects, see the [The Group collection](#the-group-collection) and [The capture collection](#the-capture-collection) sections later in this topic.
 
 Two additional properties of the [Match](xref:System.Text.RegularExpressions.Match) class provide information about the match. The `Match.Value` property returns the substring in the input string that matches the regular expression pattern. The `Match.Index` property returns the zero-based starting position of the matched string in the input string.
 
@@ -577,7 +578,7 @@ Pattern | Description
  
 The replacement pattern **$$ $&** indicates that the matched substring should be replaced by a dollar sign (**$**) symbol (the `$$` pattern), a space, and the value of the match (the `$&` pattern).
 
-## The Group Collection
+## The Group collection
 
 The [Match.Groups](xref:System.Text.RegularExpressions.Match.Groups) property returns a [GroupCollection](xref:System.Text.RegularExpressions.GroupCollection) object that contains [Group](xref:System.Text.RegularExpressions.Group) objects that represent captured groups in a single match. The first [Group](xref:System.Text.RegularExpressions.Group) object in the collection (at index 0) represents the entire match. Each object that follows represents the results of a single capturing group. 
 
@@ -653,7 +654,7 @@ Pattern | Description
 `(\d{4})` | Match four decimal digits. This is the third capturing group.
 `\b` | End the match on a word boundary.
  
-## The Captured Group
+## The captured group
 
 The [Group](xref:System.Text.RegularExpressions.Group) class represents the result from a single capturing group. [Group](xref:System.Text.RegularExpressions.Group) objects that represent the capturing groups defined in a regular expression are returned by the [Item](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32)) property of the [GroupCollection](xref:System.Text.RegularExpressions.GroupCollection) object returned by the [Match.Groups](xref:System.Text.RegularExpressions.Match.Groups) property. The [Item](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32)) property is the indexer (in C#) and the default property (in Visual Basic) of the [Group](xref:System.Text.RegularExpressions.Group) class. You can also retrieve individual members by iterating the collection using the `foreach` construct. For an example, see the previous section.
 
@@ -742,7 +743,7 @@ Pattern | Description
  
 The properties of the [Group](xref:System.Text.RegularExpressions.Group) class provide information about the captured group: The `Group.Value` property contains the captured substring, the `Group.Index` property indicates the starting position of the captured group in the input text, the `Group.Length` property contains the length of the captured text, and the `Group.Success` property indicates whether a substring matched the pattern defined by the capturing group.
 
-Applying quantifiers to a group (for more information, see [Quantifiers in Regular Expressions](quantifiers.md)) modifies the relationship of one capture per capturing group in two ways:
+Applying quantifiers to a group (for more information, see [Quantifiers in regular expressions](quantifiers.md)) modifies the relationship of one capture per capturing group in two ways:
 
 * If the __*__ or __*?__ quantifier (which specifies zero or more matches) is applied to a group, a capturing group may not have a match in the input string. When there is no captured text, the properties of the [Group](xref:System.Text.RegularExpressions.Group) object are set as shown in the following table.
 
@@ -842,7 +843,7 @@ Applying quantifiers to a group (for more information, see [Quantifiers in Regul
   '       Group 2: sentence
   ```
 
-## The Capture Collection
+## The capture collection
 
 The [Group](xref:System.Text.RegularExpressions.Group) object contains information only about the last capture. However, the entire set of captures made by a capturing group is still available from the [CaptureCollection](xref:System.Text.RegularExpressions.CaptureCollection) object that is returned by the [Group.Captures](xref:System.Text.RegularExpressions.Group.Captures) property. Each member of the collection is a [Capture](xref:System.Text.RegularExpressions.Capture) object that represents a capture made by that capturing group, in the order in which they were captured (and, therefore, in the order in which the captured strings were matched from left to right in the input string). You can retrieve individual [Capture](xref:System.Text.RegularExpressions.Capture) objects from the collection in either of two ways: 
 
@@ -1034,7 +1035,7 @@ End Module
 '             Capture 2: 'b' at position 7
 ```
 
-## The Individual Capture
+## The individual capture
 
 The [Capture](xref:System.Text.RegularExpressions.Capture) class contains the results from a single subexpression capture. The [Capture.Value](xref:System.Text.RegularExpressions.Capture.Value) property contains the matched text, and the [Capture.Index](xref:System.Text.RegularExpressions.Capture.Index) property indicates the zero-based position in the input string at which the matched substring begins. 
 
@@ -1105,7 +1106,7 @@ Pattern | Description
 `;` | Match a semicolon.
 `((\w+(\s\w+)*),(\d+);)+` | Match the pattern of a word followed by any additional words followed by a comma, one or more digits, and a semicolon, one or more times. This is the first capturing group. 
  
-## See Also
+## See also
 
 [System.Text.RegularExpressions](xref:System.Text.RegularExpressions)
 

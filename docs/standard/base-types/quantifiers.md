@@ -3,6 +3,7 @@ title: Quantifiers in regular expressions
 description: Quantifiers in regular expressions
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
@@ -18,28 +19,28 @@ Quantifiers specify how many instances of a character, group, or character class
 
 Greedy quantifier | Lazy quantifier | Description
 ----------------- | --------------- | ----------- 
-__*+__ | __*?__ | Match zero or more times.
+**\*** | **\*?** | Match zero or more times.
 **+** | **+?** | Match one or more times.
 **?** | **??** | Match zero or one time.
 **{**_n_**}** | **{**_n_**}?** | Match exactly n times.
 **{**_n_**,}** | **{**_n_**,}?** | Match at least n times.
 **{**_n_**,**_m_**}** | **{**_n_**,**_m_**}?** | Match from n to m times.
  
-The quantities *n* and *m* are integer constants. Ordinarily, quantifiers are greedy; they cause the regular expression engine to match as many occurrences of particular patterns as possible. Appending the `?` character to a quantifier makes it lazy; it causes the regular expression engine to match as few occurrences as possible. For a complete description of the difference between greedy and lazy quantifiers, see the section [Greedy and Lazy Quantifiers](#Greedy-and-Lazy-Quantifiers) later in this topic.
+The quantities *n* and *m* are integer constants. Ordinarily, quantifiers are greedy; they cause the regular expression engine to match as many occurrences of particular patterns as possible. Appending the `?` character to a quantifier makes it lazy; it causes the regular expression engine to match as few occurrences as possible. For a complete description of the difference between greedy and lazy quantifiers, see the section [Greedy and lazy quantifiers](#greedy-and-lazy-quantifiers) later in this topic.
 
 > [!IMPORTANT]
-> Nesting quantifiers (for example, as the regular expression pattern `(a*)*` does) can increase the number of comparisons that the regular expression engine must perform, as an exponential function of the number of characters in the input string. For more information about this behavior and its workarounds, see [Backtracking in Regular Expressions](backtracking.md).
+> Nesting quantifiers (for example, as the regular expression pattern `(a*)*` does) can increase the number of comparisons that the regular expression engine must perform, as an exponential function of the number of characters in the input string. For more information about this behavior and its workarounds, see [Backtracking in regular expressions](backtracking.md).
 
-## Regular Expression Quantifiers
+## Regular expression quantifiers
 
 The following sections list the quantifiers supported by .NET regular expressions. 
 
 > [!NOTE]
 > If the \*, +, ?, {, and } characters are encountered in a regular expression pattern, the regular expression engine interprets them as quantifiers or part of quantifier constructs unless they are included in a [character class](classes.md). To interpret these as literal characters outside a character class, you must escape them by preceding them with a backslash. For example, the string `\*` in a regular expression pattern is interpreted as a literal asterisk ("*") character.
 
-### Match Zero or More Times: *
+### Match zero or more times: \*
 
-The \* quantifier matches the preceding element zero or more times. It is equivalent to the **{0,}** quantifier. __*__ is a greedy quantifier whose lazy equivalent is __*?__.
+The \* quantifier matches the preceding element zero or more times. It is equivalent to the **{0,}** quantifier. **\*** is a greedy quantifier whose lazy equivalent is **\*?**.
 
 The following example illustrates this regular expression. Of the nine digits in the input string, five match the pattern and four (`95`, `929`, `9129`, and `9919`) do not.
 
@@ -80,7 +81,7 @@ Pattern | Description
 `9*` | Match zero or more "9" characters.
 `\b` | End at a word boundary.
  
-### Match One or More Times: +
+### Match one or more times: +
 
 The **+** quantifier matches the preceding element one or more times. It is equivalent to **{1,}**. **+** is a greedy quantifier whose lazy equivalent is **+?**.
 
@@ -123,7 +124,7 @@ Pattern | Description
 `\w*?` | Match a word character zero or more times, but as few times as possible.
 `\b` | End at a word boundary.
  
-### Match Zero or One Time: ?
+### Match zero or one time: ?
 
 The **?** quantifier matches the preceding element zero or one time. It is equivalent to **{0,1}**. **?** is a greedy quantifier whose lazy equivalent is **??**.
 
@@ -161,7 +162,7 @@ Pattern | Description
 `an?` | Match an "a" followed by zero or one "n" character. 
 `\b` | End at a word boundary.
  
-### Match Exactly n Times: {n}
+### Match exactly n times: {n}
 
 The **{**_n_**}** quantifier matches the preceding element exactly *n* times, where *n* is any integer. **{**_n_**}** is a greedy quantifier whose lazy equivalent is **{**_n_**}?**.
 
@@ -203,7 +204,7 @@ Pattern | Description
 `\d{3}` | Match three decimal digits.
 `\b` | End at a word boundary.
  
-### Match at Least n Times: {n,}
+### Match at least n times: {n,}
 
 The **{**_n_**,}** quantifier matches the preceding element at least *n* times, where *n* is any integer. **{**_n_**,}** is a greedy quantifier whose lazy equivalent is **{**_n_**}?**.
 
@@ -241,7 +242,7 @@ Pattern | Description
 `\b` | Match a word boundary.
 `\D+` | Match at least one non-decimal digit.
  
-### Match Between n and m Times: {n,m}
+### Match between n and m times: {n,m}
 
 The **{**_n_**,**_m_**}** quantifier matches the preceding element at least *n* times, but no more than *m* times, where *n* and *m* are integers. **{**_n_**,**_m_**}** is a greedy quantifier whose lazy equivalent is **{**_n_**,**_m_**}?**.
 
@@ -271,9 +272,9 @@ Next
 '       '00 00 00 00 ' found at position 35.
 ```
 
-### Match Zero or More Times (Lazy Match): *?
+### Match zero or more times (lazy match): \*?
 
-The __*?__ quantifier matches the preceding element zero or more times, but as few times as possible. It is the lazy counterpart of the greedy quantifier __*__.
+The **\*?** quantifier matches the preceding element zero or more times, but as few times as possible. It is the lazy counterpart of the greedy quantifier **\***.
 
 In the following example, the regular expression `\b\w*?oo\w*?\b` matches all words that contain the string `oo`. 
 
@@ -315,7 +316,7 @@ Pattern | Description
 `\w*?` | Match zero or more word characters, but as few characters as possible.
 `\b` | End on a word boundary.
  
-### Match One or More Times (Lazy Match): +?
+### Match one or more times (lazy match): +?
 
 The **+?** quantifier matches the preceding element one or more times, but as few times as possible. It is the lazy counterpart of the greedy quantifier **+**.
 
@@ -351,7 +352,7 @@ Next
 '       'Ff' found at position 15.
 ```
 
-### Match Zero or One Time (Lazy Match): ??
+### Match zero or one time (lazy match): ??
 
 The **??** quantifier matches the preceding element zero or one time, but as few times as possible. It is the lazy counterpart of the greedy quantifier **?**.
 
@@ -406,7 +407,7 @@ Pattern | Description
 `(Line)??` | Match zero or one occurrence of the string "Line".
 `\(??` | Match zero or one occurrence of the opening parenthesis.
  
-### Match Exactly n Times (Lazy Match): {n}?
+### Match exactly n times (lazy match): {n}?
 
 The **{**_n_**}?** quantifier matches the preceding element exactly *n* times, where *n* is any integer. It is the lazy counterpart of the greedy quantifier **{**_n_**}+**.
 
@@ -443,13 +444,13 @@ Pattern | Description
 `(\w{3,}?\.){2}?` | Match the pattern in the first group two times, but as few times as possible.
 `\b` | End the match on a word boundary.
  
-### Match at Least n Times (Lazy Match): {n,}?
+### Match at least n times (lazy match): {n,}?
 
 The **{**_n_**,}?** quantifier matches the preceding element at least *n* times, where *n* is any integer, but as few times as possible. It is the lazy counterpart of the greedy quantifier **{**_n_**,}**.
 
 See the example for the **{**_n_**}?** quantifier in the previous section for an illustration. The regular expression in that example uses the **{**_n_**,}** quantifier to match a string that has at least three characters followed by a period.
 
-### Match Between n and m Times (Lazy Match): {n,m}?
+### Match between n and m times (lazy match): {n,m}?
 
 The **{**_n_**,**_m_**}?** quantifier matches the preceding element between *n* and *m* times, where *n* and *m* are integers, but as few times as possible. It is the lazy counterpart of the greedy quantifier **{**_n_**,**_m_**}**.
 
@@ -495,7 +496,7 @@ Pattern | Description
 `{1,10}?` | Match the previous pattern between 1 and 10 times, but as few times as possible.
 `[.!?]` | Match any one of the punctuation characters ".", "!", or "?".
  
-## Greedy and Lazy Quantifiers
+## Greedy and lazy quantifiers
 
 A number of the quantifiers have two versions: 
 
@@ -508,7 +509,7 @@ A number of the quantifiers have two versions:
 
  A non-greedy quantifier tries to match an element as few times as possible. You can turn a greedy quantifier into a lazy quantifier by simply adding a **?**.
 
-Consider a simple regular expression that is intended to extract the last four digits from a string of numbers such as a credit card number. The version of the regular expression that uses the __*__ greedy quantifier is `\b.*([0-9]{4})\b`. However, if a string contains two numbers, this regular expression matches the last four digits of the second number only, as the following example shows.
+Consider a simple regular expression that is intended to extract the last four digits from a string of numbers such as a credit card number. The version of the regular expression that uses the **\*** greedy quantifier is `\b.*([0-9]{4})\b`. However, if a string contains two numbers, this regular expression matches the last four digits of the second number only, as the following example shows.
 
 ```csharp
 string greedyPattern = @"\b.*([0-9]{4})\b";
@@ -530,9 +531,9 @@ Next
 '       Account ending in ******1999.
 ```
 
-The regular expression fails to match the first number because the __*__ quantifier tries to match the previous element as many times as possible in the entire string, and so it finds its match at the end of the string.
+The regular expression fails to match the first number because the **\*** quantifier tries to match the previous element as many times as possible in the entire string, and so it finds its match at the end of the string.
 
-This is not the desired behavior. Instead, you can use the __*?__ lazy quantifier to extract digits from both numbers, as the following example shows.
+This is not the desired behavior. Instead, you can use the **\*?** lazy quantifier to extract digits from both numbers, as the following example shows.
 
 ```csharp
 string lazyPattern = @"\b.*?([0-9]{4})\b";
@@ -558,11 +559,11 @@ Next
 
 In most cases, regular expressions with greedy and lazy quantifiers return the same matches. They most commonly return different results when they are used with the wildcard (**.**) metacharacter, which matches any character. 
 
-## Quantifiers and Empty Matches
+## Quantifiers and empty matches
 
-The quantifiers __*__, **+**, and **{**_n_**,**_m_**}** and their lazy counterparts never repeat after an empty match when the minimum number of captures has been found. This rule prevents quantifiers from entering infinite loops on empty subexpression matches when the maximum number of possible group captures is infinite or near infinite.
+The quantifiers **\***, **+**, and **{**_n_**,**_m_**}** and their lazy counterparts never repeat after an empty match when the minimum number of captures has been found. This rule prevents quantifiers from entering infinite loops on empty subexpression matches when the maximum number of possible group captures is infinite or near infinite.
 
-For example, the following code shows the result of a call to the [Regex.Match](https://docs.microsoft.com/dotnet/core/api/System.Text.RegularExpressions.Regex.Match(System.String)) method with the regular expression pattern `(a?)*,` which matches zero or one "a" character zero or more times. Note that the single capturing group captures each "a" as well as [String.Empty](https://docs.microsoft.com/dotnet/core/api/System.String.Empty), but that there is no second empty match, because the first empty match causes the quantifier to stop repeating.
+For example, the following code shows the result of a call to the [Regex.Match](xref:System.Text.RegularExpressions.Regex.Match(System.String)) method with the regular expression pattern `(a?)*,` which matches zero or one "a" character zero or more times. Note that the single capturing group captures each "a" as well as [String.Empty](xref:System.String.Empty), but that there is no second empty match, because the first empty match causes the quantifier to stop repeating.
 
 ```csharp
 using System;
@@ -645,9 +646,9 @@ Pattern | Description
 ------- | -----------
 `(a\1` | Either match "a" along with the value of the first captured group …
 `&#124;(?(1)` | … or test whether the first captured group has been defined. (Note that the **(?(1)** construct does not define a capturing group.)
-`\1))` | If the first captured group exists, match its value. If the group does not exist, the group will match [String.Empty](https://docs.microsoft.com/dotnet/core/api/System.String.Empty). 
+`\1))` | If the first captured group exists, match its value. If the group does not exist, the group will match [String.Empty](xref:System.String.Empty). 
  
-The first regular expression tries to match this pattern between zero and two times; the second, exactly two times. Because the first pattern reaches its minimum number of captures with its first capture of [String.Empty](https://docs.microsoft.com/dotnet/core/api/System.String.Empty), it never repeats to try to match `a\1;` the `{0,2}` quantifier allows only empty matches in the last iteration. In contrast, the second regular expression does match "a" because it evaluates `a\1` a second time; the minimum number of iterations, 2, forces the engine to repeat after an empty match.
+The first regular expression tries to match this pattern between zero and two times; the second, exactly two times. Because the first pattern reaches its minimum number of captures with its first capture of [String.Empty](xref:System.String.Empty), it never repeats to try to match `a\1;` the `{0,2}` quantifier allows only empty matches in the last iteration. In contrast, the second regular expression does match "a" because it evaluates `a\1` a second time; the minimum number of iterations, 2, forces the engine to repeat after an empty match.
 
 ```csharp
 using System;
@@ -778,7 +779,7 @@ End Module
 '             Capture: 2: 'a' at position 0.
 ```
 
-## See Also
+## See also
 
 [Regular expression language - quick reference](quick-ref.md)
 

@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: dotnet
-ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
+ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 ---
 
 .NET Platform Guide

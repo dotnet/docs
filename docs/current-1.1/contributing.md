@@ -52,6 +52,7 @@ changes relatively easily.
 
 1. I'm using the term 'fast track' in this doc. I know that's wrong, but I don't have the current branding term.
 2. Warning language is first pass and needs review and update.
+3. We need to place this document in a different location. In this directory, it will be published to docs.microsoft.com (it is not in the TOC).
 
 ## Tasks before merge
 

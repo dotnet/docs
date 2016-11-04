@@ -23,10 +23,15 @@ There are two cases to adding new content for this release:
 All fast-track release files should have the following added near the
 top of the topic:
 
-> [!WARNING]
-> This topic represents pre-release software. This version will be supported
-> only until the following fast-track release. For the latest release with
-> long term support, see [link to corresponding LTS document](#link-instructions)
+[!include[current release track](includes/warning.md)]
+
+We've created a snippet to include with the following syntax:
+
+```markdown
+[!include[current release track](includes/warning.md)]
+```
+
+Adjust the path to `includes/warning.md` to match the location of your source file.
 
 ### link instructions
 

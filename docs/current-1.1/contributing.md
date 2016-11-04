@@ -16,12 +16,9 @@ fast track release.
 There are two cases to adding new content for this release:
 
 * Changes to existing documents
-> Copy the existing content into a parallel folder under this
-> structure. Make your changes, and add the modified file to the
-> TOC for the 1.1 preview release.
+    - Copy the existing content into a parallel folder under this structure. Make your changes, and add the modified file to the TOC for the 1.1 preview release.
 * New documents
-> Put the new document in the proper location, and add it to the TOC
-> under the node for the 1.1 preview release. 
+    - Put the new document in the proper location, and add it to the TOC under the node for the 1.1 preview release. 
 
 All fast-track release files should have the following added near the
 top of the topic:

@@ -215,11 +215,11 @@ The example above shows C# syntax, but other languages are supported.
 Use `code-fsharp` for F# samples; use `code-vbnet` for Visual Basic samples.
 Other languages that are supported are:
 * C++: `code-cpp`
-* HTML: `html`
-* JavaScript: `javascript`
-* Powershell: `ps`
-* SQL: `sql`
-* XML: `xml`
+* HTML: `code-html`
+* JavaScript: `code-javascript`
+* Powershell: `code-ps`
+* SQL: `code-sql`
+* XML: `code-xml`
 
 
 
@@ -229,14 +229,14 @@ code that should be included. Use the `#region` and `#endregion` preprocessor sy
 to specify the region of code to include.
 
 For cases where regions don't work, you can specify the start and end of a snippet
-using an XML element name. For example, you could write this in C#:
+using an XML element name in a single line comment. For example, you could write this in C#:
 
 ```csharp
 // <CodeToInclude>
 int j = 5;
 int i ; 10;
 int sum = i + j;
-// </CodeToInclude
+// </CodeToInclude>
 ```
 
 In other languages, use the comment syntax for that language.
@@ -244,7 +244,7 @@ Finally, you can use line
 numbers: `#L1-L10` would include lines 1 through 10. We discourage line numbers
 because they are very brittle.
 
-Including snippets from full programs ensures that all code runs through our CI
+Including snippets from full programs ensures that all code runs through our Continuous Integration (CI)
 system. However, if you need to show something that causes compile time or
 runtime errors, you can use inline code blocks.
 

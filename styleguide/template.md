@@ -228,7 +228,7 @@ is the path to the source file. The `<RegionName>` should be a region in your so
 code that should be included. Use the `#region` and `#endregion` preprocessor syntax
 to specify the region of code to include.
 
-For cases where regions don't work, you can specify the start and end of a region
+For cases where regions don't work, you can specify the start and end of a snippet
 using an XML element name. For example, you could write this in C#:
 
 ```csharp

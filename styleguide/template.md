@@ -213,8 +213,15 @@ You can include the code using include syntax:
 
 The example above shows C# syntax, but other languages are supported.
 Use `code-fsharp` for F# samples; use `code-vbnet` for Visual Basic samples.
-Any language supported by [highlight.js](http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html#language-names-and-aliases)
-is supported. 
+Other languages that are supported are:
+* C++: `code-cpp`
+* HTML: `html`
+* JavaScript: `javascript`
+* Powershell: `ps`
+* SQL: `sql`
+* XML: `xml`
+
+
 
 The text you place for `<title>` shows up as a rollover on the text. The `<pathToFile>`
 is the path to the source file. The `<RegionName>` should be a region in your source
@@ -222,7 +229,18 @@ code that should be included. Use the `#region` and `#endregion` preprocessor sy
 to specify the region of code to include.
 
 For cases where regions don't work, you can specify the start and end of a region
-using a triple-slash comment and an XML element name. Finally, you can use line
+using an XML element name. For example, you could write this in C#:
+
+```csharp
+// <CodeToInclude>
+int j = 5;
+int i ; 10;
+int sum = i + j;
+// </CodeToInclude
+```
+
+In other languages, use the comment syntax for that language.
+Finally, you can use line
 numbers: `#L1-L10` would include lines 1 through 10. We discourage line numbers
 because they are very brittle.
 

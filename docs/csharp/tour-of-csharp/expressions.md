@@ -4,7 +4,8 @@ description: expressions, operands, and operators are building blocks of the C# 
 keywords: .NET, csharp, expression, operator, operand
 author: BillWagner
 manager: wpickett
-ms.date: 2016/08/10
+ms.author: wiwagn
+ms.date: 2016/11/06
 ms.topic: article
 ms.prod: visual-studio-dev-14
 ms.technology: devlang-csharp
@@ -25,7 +26,7 @@ When an operand occurs between two operators with the same precedence, the *asso
 
 Precedence and associativity can be controlled using parentheses. For example, `x + y * z` first multiplies `y` by `z` and then adds the result to `x`, but `(x + y) * z` first adds `x` and `y` and then multiplies the result by `z`.
 
-Most operators can be *overloaded*. Operator overloading permits user-defined operator implementations to be specified for operations where one or both of the operands are of a user-defined `class` or `struct` type.
+Most operators can be *overloaded*. Operator overloading permits user-defined operator implementations to be specified for operations where one or both of the operands are of a user-defined class or struct type.
 
 The following summarizes C#’s operators, listing the operator categories in order of precedence from highest to lowest. Operators in the same category have equal precedence. Under each category is a list of expressions in that category along with the description of that expression type.
 
@@ -39,7 +40,7 @@ The following summarizes C#’s operators, listing the operator categories in or
 	- `new T(...){...}`: Object creation with initializer
 	- `new {...}`:  Anonymous object initializer
 	- `new T[...]`: Array creation
-	- `typeof(T)`: Obtain `System.Type` object for `T`
+	- `typeof(T)`: Obtain @System.Type object for `T`
 	- `checked(x)`: Evaluate expression in checked context
 	- `unchecked(x)`: Evaluate expression in unchecked context
 	- `default(T)`: Obtain default value of type `T`

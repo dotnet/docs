@@ -3,8 +3,9 @@ title: Console Application
 description: Console Application
 keywords: .NET, .NET Core
 author: BillWagner
+ms.author: wiwagn
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -111,14 +112,14 @@ using System.IO;
 ```
 
 The `IEnumerable<T>` interface is defined in the 
-`System.Collections.Generic` namespace. The `File` class is defined in the
+`System.Collections.Generic` namespace. The @System.IO.File class is defined in the
 `System.IO` namespace.
 
 This method is a special type of C# method called an *Enumerator method*. 
 Enumerator methods return sequences that are evaluated lazily. That means 
 each item in the sequence is generated as it is requested by the code 
 consuming the sequence. Enumerator methods are methods that contain one or 
-more `yield return` statements. The object returned by the `ReadFrom()` 
+more `yield return` statements. The object returned by the `ReadFrom` 
 method contains the code to generate each item in the sequence. In this 
 example, that involves reading the next line of text from the source file, 
 and returning that string. Each time the calling code requests the next 
@@ -129,8 +130,8 @@ indicates that there are no more items.
 There are two other C# syntax elements that may be new to you. The `using` 
 statement in this method manages resource cleanup. The variable that is
 initialized in the `using` statement (`reader`, in this example) must
-implement the `IDisposable` interface. The `IDisposable` interface
-defines a single method, `Dispose()`, that should be called when the
+implement the `IDisposable` interface. The @System.IDisposable interface
+defines a single method, `Dispose`, that should be called when the
 resource should be released. The compiler generates that call when
 execution reaches the closing brace of the `using` statement. The
 compiler-generated code ensures that the resource is released even if an
@@ -140,8 +141,8 @@ statement.
 The `reader` variable is defined using the `var` keyword. `var` defines an
 *implicitly typed local variable*. That means the type of the variable is
 determined by the compile time type of the object assigned to the
-variable. Here, that is the return value from `File.OpenText()`, which is
-a `StreamReader` object.
+variable. Here, that is the return value from @System.IO.File.OpenText, which is
+a @System.IO.StreamReader object.
  
 Now, let’s fill in the code to read the file in the `Main` method: 
 
@@ -183,16 +184,14 @@ delay after writing each word. Replace the `Console.WriteLine(line)` statement
 in the `Main` method with the following block:
 
 ```cs
+Console.Write(line);
+if (!string.IsNullOrWhiteSpace(line))
 {
-    Console.Write(line);
-    if (!string.IsNullOrWhiteSpace(line))
-    {
-        var pause = Task.Delay(200);
-        // Synchronously waiting on a task is an
-        // anti-pattern. This will get fixed in later
-        // steps.
-        pause.Wait();
-    }
+    var pause = Task.Delay(200);
+    // Synchronously waiting on a task is an
+    // anti-pattern. This will get fixed in later
+    // steps.
+    pause.Wait();
 }
 ```
 
@@ -236,10 +235,10 @@ In this final step, you’ll add the code to write the output asynchronously
 in one task, while also running another task to read input from the user
 if they want to speed up or slow down the text display. This has a few
 steps in it and by the end, you’ll have all the updates that you need.
-The first step is to create an asynchronous `Task` returning method that
+The first step is to create an asynchronous @System.Threading.Tasks.Task returning method that
 represents the code you’ve created so far to read and display the file.
 
-Add this method to your Program class (It’s taken from the body of your
+Add this method to your `Program` class (it’s taken from the body of your
 `Main` method):
 
 ```cs
@@ -258,7 +257,7 @@ private static async Task ShowTeleprompter()
 ```
 
 You’ll notice two changes. First, in the body of the method, instead of
-calling `Wait()` to synchronously wait for a task to finish, this version
+calling @System.Threading.Tasks.Task.Wait to synchronously wait for a task to finish, this version
 uses the `await` keyword. In order to do that, you need to add the `async`
 modifier to the method signature. This method returns a `Task`. Notice that
 there are no return statements that return a `Task` object. Instead, that
@@ -276,7 +275,7 @@ You can call this new method in your `Main` method:
 ShowTeleprompter().Wait();
 ```
 
-Here, in `Main()`, the code does synchronously wait. You should use the
+Here, in `Main`, the code does synchronously wait. You should use the
 `await` operator instead of synchronously waiting whenever possible. But,
 in a console application’s `Main` method, you cannot use the `await`
 operator. That would result in the application exiting before all tasks
@@ -308,14 +307,14 @@ private static async Task GetInput()
 }
 ```
 
-This creates a lambda expression to represent an `Action` that reads a key
+This creates a lambda expression to represent an @System.Action delegate that reads a key
 from the Console and modifies a local variable representing the delay when
-the user presses the ‘<’ or ‘>’ keys. This method uses `Console.ReadKey()`
+the user presses the ‘<’ or ‘>’ keys. This method uses @System.Console.ReadKey
 to block and wait for the user to press a key.
 
 To finish this feature, you need to create a new `async Task` returning
-method that starts both of these tasks (`GetInput()` and 
-`ShowTeleprompter()`), and also manages the shared data between these two
+method that starts both of these tasks (`GetInput` and 
+`ShowTeleprompter`), and also manages the shared data between these two
 tasks.
  
 It’s time to create a class that can handle the shared data between these
@@ -376,7 +375,7 @@ private static async Task RunTeleprompter()
 }
 ```
 
-The one new method here is the `Task.WhenAny()` call. That creates a `Task`
+The one new method here is the @System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[]) call. That creates a `Task`
 that finishes as soon as any of the tasks in its argument list completes.
 
 Next, you need to update both the `ShowTeleprompter` and `GetInput` methods to

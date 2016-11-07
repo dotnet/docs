@@ -54,11 +54,11 @@ The following example defines a class named `Motorcycle` that contains five meth
 
 [!CODE [csSnippets.Methods#40](../../samples/snippets/csharp/concepts/methods/methods40.cs#40)]
 
-Note that the `Motorcycle` class includes an overloaded method, `Drive`. Two methods have the same namne, but must be differentiated by their parameter types.
+Note that the `Motorcycle` class includes an overloaded method, `Drive`. Two methods have the same name, but must be differentiated by their parameter types.
 
 ## <a name="invocation" /> Method invocation ##
 
-Methods can be either *instance* or *static*. Invoking an instance method requires that you instantiate a object and call the method on that object; an instance method operates on that instance and its data. You invoke a static method by referencing the name of the type to which the method belongs; static methods operate do not operate on instance data. Attempting to call a static method through an object instance generates a compiler error.
+Methods can be either *instance* or *static*. Invoking an instance method requires that you instantiate an object and call the method on that object; an instance method operates on that instance and its data. You invoke a static method by referencing the name of the type to which the method belongs; static methods operate do not operate on instance data. Attempting to call a static method through an object instance generates a compiler error.
 
 Calling a method is like accessing a field. After the object name (if you are calling an instance method) or the type name (if you are calling a `static` method), add a period, the name of the method, and parentheses. Arguments are listed within the parentheses, and are separated by commas.
 

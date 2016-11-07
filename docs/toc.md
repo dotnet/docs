@@ -50,7 +50,7 @@
 ### [🔧 Tuples and unnamed types](csharp/tuples.md)
 ### [🔧 Interfaces](csharp/interfaces.md)
 ### [🔧 Methods and Lambda Expressions](csharp/methods-lambda-expressions.md)
-#### [🔧 methods](csharp/methods.md)
+#### [Methods](csharp/methods.md)
 #### [🔧 Lambda Expressions](csharp/lambda-expressions.md)
 ### [Properties](csharp/properties.md)
 ### [Indexers](csharp/indexers.md)

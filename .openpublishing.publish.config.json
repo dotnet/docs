@@ -4,6 +4,12 @@
   "need_preview_pull_request": "true",
   "git_repository_branch_open_to_public_contributors": "master",
   "git_repository_url_open_to_public_contributors": "https://github.com/dotnet/core-docs",
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf"
+    ]
+  },
   "docsets_to_publish": [
     {
       "docset_name": "core-docs",
@@ -39,9 +45,9 @@
       "branch": "master"
     },
     {
-        "path_to_root": "_themes.pdf",
-        "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-        "branch": "master"
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master"
     }
   ]
 }

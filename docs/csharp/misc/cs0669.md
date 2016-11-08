@@ -1,0 +1,60 @@
+---
+title: "Compiler Error CS0669 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0669"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0669"
+ms.assetid: c7f81869-79d7-481f-a026-2cef0e87df4c
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0669
+A class with the ComImport attribute cannot have a user-defined constructor  
+  
+ The COM interop layer in the common language runtime supplies the constructor for [ComImport](frlrfSystemRuntimeInteropServicesComImportAttributeClassTopic) classes. Consequently, a COM object can be used as a managed object in the runtime.  
+  
+ The following sample generates CS0669:  
+  
+```  
+// CS0669.cs  
+using System.Runtime.InteropServices;  
+[ComImport, Guid("00000000-0000-0000-0000-000000000001")]  
+class TestClass  
+{  
+   TestClass()   // CS0669, delete constructor to resolve  
+   {  
+   }  
+  
+   public static void Main()  
+   {  
+   }  
+}  
+```

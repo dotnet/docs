@@ -1,0 +1,69 @@
+---
+title: "Compiler Error CS0412 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0412"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0412"
+ms.assetid: eeb2afbc-9416-4bcf-b116-d6adc5cfd4ca
+caps.latest.revision: 8
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0412
+'generic': a parameter or local variable cannot have the same name as a method type parameter  
+  
+ There is a name conflict between the type parameter of a generic method and a local variable in the method or one of the method's parameters. To avoid this error, rename any conflicting parameters or local variables.  
+  
+## Example  
+ The following sample generates CS0412:  
+  
+```  
+// CS0412.cs  
+using System;  
+  
+class C  
+{  
+    // Parameter name is the same as method type parameter name  
+    public void G<T>(int T)  // CS0412  
+    {  
+    }  
+    public void F<T>()  
+    {  
+        // Method local variable name is the same as method type  
+        // parameter name  
+        double T = 0.0;  // CS0412  
+        Console.WriteLine(T);  
+    }  
+  
+    public static void Main()  
+    {  
+    }  
+}  
+```

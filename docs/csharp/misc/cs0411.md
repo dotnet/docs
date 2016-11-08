@@ -1,0 +1,81 @@
+---
+title: "Compiler Error CS0411 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0411"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0411"
+ms.assetid: 290947c9-10d0-427e-99f2-bff20299d533
+caps.latest.revision: 8
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0411
+The type arguments for method 'method' cannot be inferred from the usage. Try specifying the type arguments explicitly.  
+  
+ This error occurs if you call a generic method without explicitly providing the type arguments and the compiler cannot infer which type arguments are intended. To avoid this error, add the intended type arguments in angle brackets.  
+  
+## Example  
+ The following sample generates CS0411:  
+  
+```  
+// CS0411.cs  
+class C  
+{  
+    void G<T>()  
+    {  
+    }  
+  
+    public static void Main()  
+    {  
+        G();  // CS0411  
+        // Try this instead:  
+        // G<int>();  
+    }  
+}  
+```  
+  
+## Example  
+ Other possible error cases include when the parameter is `null`, which has no type information:  
+  
+```  
+// CS0411b.cs  
+class C  
+{  
+    public void F<T>(T t) where T : C   
+    {  
+    }  
+  
+    public static void Main()  
+    {  
+        C c = new C();  
+        c.F(null);  // CS0411  
+    }  
+}  
+```

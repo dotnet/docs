@@ -1,0 +1,71 @@
+---
+title: "Compiler Warning (level 3) CS0660 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0660"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0660"
+ms.assetid: 2f77b45b-c5c6-46af-abe9-002e67887896
+caps.latest.revision: 9
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Warning (level 3) CS0660
+'class' defines operator == or operator != but does not override Object.Equals(object o)  
+  
+ The compiler detected the user-defined equality or inequality operator, but no override for the **Equals** function. A user-defined equality or inequality operator implies that you also want to override the **Equals** function. For more information, see [NIB - Guidelines for Overriding Equals() and Operator == (C# Programming Guide)](http://msdn.microsoft.com/en-us/7e4c24c5-7693-4c45-88fb-ba5204fbcb20).  
+  
+ The following sample generates CS0660:  
+  
+```  
+// CS0660.cs  
+// compile with: /W:3 /warnaserror  
+class Test   // CS0660  
+{  
+   public static bool operator == (object o, Test t)  
+   {  
+      return true;  
+   }  
+  
+   // uncomment the Equals function to resolve  
+   // public override bool Equals(object o)  
+   // {  
+   //    return true;  
+   // }  
+  
+   public override int GetHashCode()  
+   {  
+      return 0;  
+   }  
+  
+   public static void Main()  
+   {  
+   }  
+}  
+```

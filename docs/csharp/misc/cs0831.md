@@ -1,0 +1,80 @@
+---
+title: "Compiler Error CS0831 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0831"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0831"
+ms.assetid: f626a77d-3844-4438-954b-b8201e72b1b5
+caps.latest.revision: 8
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0831
+An expression tree may not contain a base access.  
+  
+ A base access means to make a function call that would ordinarily be a virtual function call as a non-virtual function call on the base class method. This is not allowed in the expression tree itself, but you can invoke a helper method in your class that invokes the base class method.  
+  
+### To correct this error  
+  
+1.  If you must access a base class method in this manner, create a helper method that calls into the base class and have the expression tree call the helper method. This technique is shown in the following code.  
+  
+## Example  
+ The following example generates CS0831:  
+  
+```  
+// cs0831.cs  
+using System;  
+using System.Linq;  
+using System.Linq.Expressions;  
+  
+public class A  
+{  
+    public virtual int BaseMethod() { return 1; }  
+}  
+public class C : A  
+{  
+    public override int BaseMethod() { return 2; }  
+    public int Test(C c)  
+    {  
+        Expression<Func<int>> e = () => base.BaseMethod(); // CS0831  
+  
+        // Try the following line instead,   
+        // along with the BaseAccessHelper method.  
+        // Expression<Func<int>> e2 = () => BaseAccessHelper();  
+        return 1;  
+    }   
+    // Uncomment to call from e2 expression above.  
+    // int BaseAccessHelper()  
+    // {  
+    //     return base.BaseMethod();  
+    // }  
+  
+}   
+```

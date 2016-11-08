@@ -1,0 +1,52 @@
+---
+title: "Compiler Error CS1671 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1671"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1671"
+ms.assetid: 34255d2b-6ff6-4ac1-b617-3199e16726cf
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS1671
+A namespace declaration cannot have modifiers or attributes  
+  
+ Modifiers are not meaningful when applied to a namespace, so they are not allowed.  
+  
+ The following sample generates CS1671:  
+  
+```  
+// CS1671.cs  
+public namespace NS // CS1671  
+{  
+  
+}  
+```

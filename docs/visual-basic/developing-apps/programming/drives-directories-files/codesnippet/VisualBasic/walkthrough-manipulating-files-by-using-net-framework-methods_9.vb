@@ -1,0 +1,1 @@
+        DeleteEntry.enabled = True

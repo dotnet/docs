@@ -1,0 +1,42 @@
+---
+title: "Compiler Error CS0682 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0682"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0682"
+ms.assetid: 71c658d2-ac3c-4555-a2d3-52251be709b9
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0682
+'type1' cannot implement 'type2' because it is not supported by the language  
+  
+ This error occurs when you try to implement an interface written in another language and the compiler does not support the interface.

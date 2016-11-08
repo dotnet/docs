@@ -1,0 +1,72 @@
+---
+title: "Compiler Warning (level 1) CS1581 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1581"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1581"
+ms.assetid: b7ac7586-a724-492c-887f-795af1c3bcc4
+caps.latest.revision: 9
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Warning (level 1) CS1581
+Invalid return type in XML comment cref attribute  
+  
+ When attempting to reference a method, the compiler detected an error due to an invalid return type.  
+  
+## Example  
+ The following sample generates CS1581:  
+  
+```  
+// CS1581.cs  
+// compile with: /W:1 /doc:x.xml  
+  
+/// <summary>help text</summary>  
+public class MyClass  
+{  
+    /// <summary>help text</summary>  
+    public static void Main()  
+    {  
+    }  
+  
+    /// <summary>help text</summary>  
+    public static explicit operator int(MyClass f)  
+    {  
+        return 0;  
+    }  
+}  
+  
+/// <seealso cref="MyClass.explicit operator intt(MyClass)"/>  // CS1581  
+// try the following line instead  
+// /// <seealso cref="MyClass.explicit operator int(MyClass)"/>  
+public class MyClass2  
+{  
+}  
+```

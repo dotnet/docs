@@ -1,0 +1,6 @@
+# [XML Descendant Axis Property (Visual Basic)](xml-descendant-axis-property.md)
+# [Extension Indexer Property (Visual Basic)](extension-indexer-property.md)
+# [XML Child Axis Property (Visual Basic)](xml-child-axis-property.md)
+# [XML Axis Properties (Visual Basic)](xml-axis-properties.md)
+# [XML Value Property (Visual Basic)](xml-value-property.md)
+# [XML Attribute Axis Property (Visual Basic)](xml-attribute-axis-property.md)

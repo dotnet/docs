@@ -1,0 +1,50 @@
+---
+title: "&#39;&lt;name&gt;&#39; is not a member of &#39;&lt;classname&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30456"
+  - "vbc30456"
+helpviewer_keywords: 
+  - "BC30456"
+ms.assetid: 029f9742-858a-40c5-b771-7cdfb2c777cc
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# &#39;&lt;name&gt;&#39; is not a member of &#39;&lt;classname&gt;&#39;
+The member you have provided is not a member of the class.  
+  
+ **Error ID:** BC30456  
+  
+### To correct this error  
+  
+1.  Check the name of the member to ensure it is accurate.  
+  
+2.  Use an actual member of the class.  
+  
+## See Also  
+ [NOT IN BUILD: Class Methods](http://msdn.microsoft.com/en-us/326214bb-6367-48e7-bb24-714844791400)

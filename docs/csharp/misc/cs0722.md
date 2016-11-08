@@ -1,0 +1,63 @@
+---
+title: "Compiler Error CS0722 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0722"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0722"
+ms.assetid: 85f6854c-581d-482b-b4b0-1e665d9e3e6f
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0722
+'type': static types cannot be used as return types  
+  
+ A static type as a return type is not meaningful since instances of static types cannot be created.  
+  
+ The following sample generates CS0722:  
+  
+```  
+// CS0722.cs  
+public static class SC  
+{  
+}  
+  
+public class CMain  
+{  
+   public SC F()  // CS0722  
+   {  
+      return null;  
+   }  
+  
+   public static void Main()  
+   {  
+   }  
+}  
+```

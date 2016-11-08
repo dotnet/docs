@@ -1,0 +1,56 @@
+---
+title: "Compiler Error CS1910 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1910"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1910"
+ms.assetid: 0fef9727-e56f-451c-9255-ca4e5a26d7c6
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS1910
+Argument of type 'type' is not applicable for the DefaultValue attribute  
+  
+ For parameters whose type is object, the argument of the <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute> must be `null`, an integral type, a floating point, `bool`, `string`, `enum`, or `char`. The argument can not be of type <xref:System.Type> or any array type.  
+  
+## Example  
+ The following sample generates CS1910.  
+  
+```  
+// CS1910.cs  
+// compile with: /target:library  
+using System.Runtime.InteropServices;  
+  
+public interface MyI  
+{  
+   void Test([DefaultParameterValue(typeof(object))] object o);   // CS1910  
+}  
+```

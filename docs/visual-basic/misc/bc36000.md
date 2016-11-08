@@ -1,0 +1,56 @@
+---
+title: "&#39;Global&#39; must be followed by &#39;.&#39; and an identifier | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc36000"
+  - "vbc36000"
+helpviewer_keywords: 
+  - "BC36000"
+ms.assetid: 0007d7b4-54a2-4f09-904c-d5ad60a55f8e
+caps.latest.revision: 10
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# &#39;Global&#39; must be followed by &#39;.&#39; and an identifier
+The [Global - delete](http://msdn.microsoft.com/en-us/18c8ba14-40f6-4978-8096-6a5852324635) keyword appears in a context other than accessing a namespace.  
+  
+ The purpose of `Global` is to allow your code to access a root-level namespace from inside a namespace structure that has blocked the root-level namespace.  
+  
+ **Error ID:** BC36000  
+  
+### To correct this error  
+  
+-   If you want to access a root-level namespace, specify it following the `Global` keyword and a period (`.`).  
+  
+    ```  
+    Dim keyInfo As Global.System.ConsoleKeyInfo  
+    ```  
+  
+-   If you do not want to access a root-level namespace, remove the `Global` keyword.  
+  
+## See Also  
+ [Global - delete](http://msdn.microsoft.com/en-us/18c8ba14-40f6-4978-8096-6a5852324635)

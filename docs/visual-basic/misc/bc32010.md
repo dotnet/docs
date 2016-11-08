@@ -1,0 +1,50 @@
+---
+title: "&#39;&lt;name&gt;&#39; cannot be named as a parameter in an attribute specifier because it is not a field or property | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc32010"
+  - "bc32010"
+helpviewer_keywords: 
+  - "BC32010"
+ms.assetid: bfa68729-71ea-410e-bef1-83a7dab44d2a
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# &#39;&lt;name&gt;&#39; cannot be named as a parameter in an attribute specifier because it is not a field or property
+An attribute block sets a value for a nonvariable member of the attribute. You can assign values only to variable members such as fields or properties.  
+  
+ **Error ID:** BC32010  
+  
+### To correct this error  
+  
+1.  Ensure that the attribute and member names are spelled correctly.  
+  
+2.  Remove the argument from the attribute block if the member is nonvariable.  
+  
+## See Also  
+ [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)

@@ -1,0 +1,51 @@
+---
+title: "&#39;&lt;elementname&gt;&#39; is obsolete (Visual Basic Error) | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31075"
+  - "bc31075"
+helpviewer_keywords: 
+  - "BC31075"
+ms.assetid: 614d36a1-2fba-4d03-963c-1565e88b08a6
+caps.latest.revision: 10
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# &#39;&lt;elementname&gt;&#39; is obsolete (Visual Basic Error)
+A statement attempts to access a programming element which has been marked with the <xref:System.ObsoleteAttribute> attribute and the directive to treat it as an error.  
+  
+ You can mark any programming element as being no longer in use by applying <xref:System.ObsoleteAttribute> to it. If you do this, you can set the attribute's <xref:System.ObsoleteAttribute.IsError%2A> property to either `True` or `False`. If you set it to `True`, the compiler treats an attempt to use the element as an error. If you set it to `False`, or let it default to `False`, the compiler issues a warning if there is an attempt to use the element.  
+  
+ **Error ID:** BC31075  
+  
+### To correct this error  
+  
+-   Ensure that the source-code reference is spelling the element name correctly.  
+  
+## See Also  
+ [NOT IN BUILD: Attributes Used in Visual Basic](http://msdn.microsoft.com/en-us/22231318-8a40-49af-9245-e0aab723563b)   
+ [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)

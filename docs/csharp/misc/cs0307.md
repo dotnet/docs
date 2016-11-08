@@ -1,0 +1,59 @@
+---
+title: "Compiler Error CS0307 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0307"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0307"
+ms.assetid: 202a9985-ed7a-4e0a-9573-5624e066d314
+caps.latest.revision: 8
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0307
+The 'construct' 'identifier' is not a generic method. If you intended an expression list, use parentheses around the < expression.  
+  
+ The construct named was not a type or a method, the only constructs that can take generic arguments. Remove the type arguments in angle brackets. If a generic is needed, declare your generic construct as a generic type or method.  
+  
+ The following sample generates CS0307:  
+  
+```  
+// CS0307.cs  
+class C  
+{  
+   public int P { get { return 1; } }  
+   public static void Main()  
+   {  
+      C c = new C();  
+      int p = c.P<int>();  // CS0307 – C.P is a property  
+      // Try this instead  
+      // int p = c.P;  
+   }  
+}  
+```

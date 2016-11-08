@@ -1,0 +1,52 @@
+---
+title: "Construct makes an indirect reference to assembly &#39;&lt;assemblyname&gt;&#39;, which contains &#39;&lt;typename&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc31528"
+  - "vbc31528"
+helpviewer_keywords: 
+  - "BC31528"
+ms.assetid: 33459c3f-8615-492e-b6ae-531ed597999e
+caps.latest.revision: 10
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Construct makes an indirect reference to assembly &#39;&lt;assemblyname&gt;&#39;, which contains &#39;&lt;typename&gt;&#39;
+Construct makes an indirect reference to assembly '\<assemblyname>', which contains \<typename>. Add a file reference to \<filename> to your project.  
+  
+ An expression uses a type, such as a class, structure, interface, enumeration, or delegate, but your assembly does not have a project reference to the assembly that defines the type.  
+  
+ **Error ID:** BC31528  
+  
+### To correct this error  
+  
+-   In your project properties, add a reference to the file that contains the assembly that defines the type you are using.  
+  
+## See Also  
+ [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)   
+ [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
+ [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

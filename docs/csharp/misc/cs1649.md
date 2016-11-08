@@ -1,0 +1,74 @@
+---
+title: "Compiler Error CS1649 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1649"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1649"
+ms.assetid: 6355c7f2-157c-441d-8925-500062988636
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS1649
+Members of readonly field 'identifier' cannot be passed ref or out (except in a constructor)  
+  
+ This error occurs if you pass a variable to a function that is a member of a `readonly` field as a `ref` or `out` argument. Since `ref` and `out` parameters may be modified by the function, this is not allowed. To resolve this error, remove the `readonly` keyword on the field, or do not pass the members of the `readonly` field to the function. For example, you might try creating a temporary variable which can be modifed and passing the temporary as a `ref` argument, as shown in the following example.  
+  
+## Example  
+ The following sample generates CS1649:  
+  
+```  
+// CS1649.cs  
+public struct Inner  
+    {  
+        public int i;  
+    }  
+  
+class Outer  
+{  
+    public readonly Inner inner = new Inner();  
+}  
+  
+class D  
+{  
+    static void f(ref int iref)  
+    {  
+    }  
+  
+    static void Main()  
+    {  
+        Outer outer = new Outer();   
+        f(ref outer.inner.i);  // CS1649  
+        // Try this code instead:  
+        // int tmp = outer.inner.i;  
+        // f(ref tmp);  
+    }  
+}  
+```

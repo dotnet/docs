@@ -1,0 +1,92 @@
+---
+title: "Compiler Error CS0559 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0559"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0559"
+ms.assetid: 37122001-8a55-4cf5-873b-68997e196893
+caps.latest.revision: 11
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0559
+The parameter type for ++ or -- operator must be the containing type  
+  
+ The method declaration for an operator overload must follow certain guidelines. For the ++ and -- operators, it is required that the parameter be of the same type as the type in which the operator is being overloaded.  
+  
+## Example  
+ The following sample generates CS0559:  
+  
+```  
+// CS0559.cs  
+// compile with: /target:library  
+public class iii  
+{  
+   public static implicit operator int(iii x)  
+   {  
+      return 0;  
+   }  
+  
+   public static implicit operator iii(int x)  
+   {  
+      return null;  
+   }  
+  
+   public static int operator ++(int aa)   // CS0559  
+   // try the following line instead  
+   // public static iii operator ++(iii aa)  
+   {  
+      return (iii)0;  
+   }  
+}  
+```  
+  
+## Example  
+ The following sample generates CS0559.  
+  
+```  
+// CS0559_b.cs  
+// compile with: /target:library  
+public struct S  
+{  
+   public static S operator ++(S? s) { return new S(); }   // CS0559  
+   public static S operator --(S? s) { return new S(); }   // CS0559  
+}  
+  
+public struct T  
+{  
+// OK  
+   public static T operator --(T t) { return new T(); }  
+   public static T operator ++(T t) { return new T(); }  
+  
+   public static T? operator --(T? t) { return new T(); }  
+   public static T? operator ++(T? t) { return new T(); }  
+}  
+```

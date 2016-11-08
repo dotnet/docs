@@ -1,0 +1,50 @@
+---
+title: "&#39;&lt;name&gt;&#39;, necessary for compiling this construct, cannot be found | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30930"
+  - "bc30930"
+helpviewer_keywords: 
+  - "BC30930"
+ms.assetid: 95d8380b-3d08-4898-819d-e8b9c85b3c83
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# &#39;&lt;name&gt;&#39;, necessary for compiling this construct, cannot be found
+An element necessary for compilation cannot be found.  
+  
+ **Error ID:** BC30930  
+  
+### To correct this error  
+  
+1.  Supply the necessary helper element.  
+  
+2.  Make sure the code is valid managed code.  
+  
+## See Also  
+ [Managed Execution Process](../Topic/Managed%20Execution%20Process.md)

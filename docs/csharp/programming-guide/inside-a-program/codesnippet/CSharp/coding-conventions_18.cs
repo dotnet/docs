@@ -1,0 +1,1 @@
+            ExampleClass instance2 = new ExampleClass();

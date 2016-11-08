@@ -1,0 +1,50 @@
+---
+title: "&lt;type1&gt; &#39;&lt;typename&gt;&#39; and &lt;type2&gt; &#39;&lt;typename&gt;&#39; conflict in &lt;namespace&gt; &#39;&lt;namespacename&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30179"
+  - "bc30179"
+helpviewer_keywords: 
+  - "BC30179"
+ms.assetid: af482e30-c80b-4a46-8991-65f3972fdd7f
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# &lt;type1&gt; &#39;&lt;typename&gt;&#39; and &lt;type2&gt; &#39;&lt;typename&gt;&#39; conflict in &lt;namespace&gt; &#39;&lt;namespacename&gt;&#39;
+Two declared elements, such as a class and a module, have the same name in the same namespace.  
+  
+ **Error ID:** BC30179  
+  
+### To correct this error  
+  
+-   Move the declaration of one of the elements to a different namespace.  
+  
+-   Change the name of one of the elements.  
+  
+## See Also  
+ [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)

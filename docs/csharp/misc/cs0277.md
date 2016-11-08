@@ -1,0 +1,68 @@
+---
+title: "Compiler Error CS0277 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0277"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0277"
+ms.assetid: 8abec3eb-4d4c-4aab-87cc-d0444ab23535
+caps.latest.revision: 10
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0277
+'class' does not implement interface member 'accessor'. 'class accessor' is not public  
+  
+ This error occurs when you try to implement a property of an interface, but the implementation of the property accessor in the class is not public. Methods that implement interface members need to have public accessibility. To resolve, remove the access modifier on the property accessor.  
+  
+## Example  
+ The following example generates CS0277:  
+  
+```  
+// CS0277.cs  
+public interface MyInterface  
+{  
+    int Property  
+    {  
+        get;  
+        set;  
+    }  
+}  
+  
+public class MyClass : MyInterface   // CS0277  
+{  
+    public int Property  
+    {  
+        get { return 0; }  
+        // Try this instead:  
+        //set { }  
+        protected set { }  
+    }  
+}  
+```

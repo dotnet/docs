@@ -1,0 +1,45 @@
+---
+title: "Project &lt;project1&gt; references project &lt;project2&gt; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30966"
+  - "bc30966"
+helpviewer_keywords: 
+  - "BC30966"
+ms.assetid: 84130a29-9bd5-4762-835f-005e9b62667b
+caps.latest.revision: 2
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Project &lt;project1&gt; references project &lt;project2&gt;
+Insert introduction here.  
+  
+## Section Heading  
+ Insert section body here.  
+  
+### Subsection Heading  
+ Insert subsection body here.

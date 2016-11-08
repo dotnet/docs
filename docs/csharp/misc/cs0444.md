@@ -1,0 +1,46 @@
+---
+title: "Compiler Warning (level 2) CS0444 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0444"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0444"
+ms.assetid: 5beb8c06-39d3-4b59-a7c3-5590200bd43d
+caps.latest.revision: 11
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Warning (level 2) CS0444
+Predefined type 'type name 1' was not found in 'System namespace 1' but was found in 'System namespace 2'  
+  
+ A predefined object such as <xref:System.Int32> was not found where the compiler expected to find it, but instead found it in 'System namespace 2'.  
+  
+ The error could indicate that the .NET Framework is installed incorrectly. To fix this, reinstall the .NET Framework.  
+  
+ If you are writing your own base class libraries, you might also encounter this error. In this case, to resolve the error, rebuild mscorlib.

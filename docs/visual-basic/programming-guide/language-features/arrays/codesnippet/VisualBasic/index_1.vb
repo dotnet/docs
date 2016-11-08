@@ -1,0 +1,1 @@
+        Dim students(6) As Integer

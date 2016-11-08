@@ -1,0 +1,63 @@
+---
+title: "Compiler Error CS0694 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0694"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0694"
+ms.assetid: 048615e4-4599-4726-b5db-55322ccc936f
+caps.latest.revision: 8
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0694
+Type parameter 'identifier' has the same name as the containing type, or method  
+  
+ You must use a different name for the type parameter since the type parameter's name cannot be identical to the type or method name that contains the type parameter.  
+  
+## Example  
+ The following sample generates CS0694.  
+  
+```  
+// CS0694.cs  
+// compile with: /target:library  
+class C<C> {}   // CS0694  
+```  
+  
+## Example  
+ In addition to the above case involving a generic class, this error may occur with a method:  
+  
+```  
+// CS0694_2.cs  
+// compile with: /target:library  
+class A  
+{  
+   public void F<F>(F arg);   // CS0694  
+}  
+```

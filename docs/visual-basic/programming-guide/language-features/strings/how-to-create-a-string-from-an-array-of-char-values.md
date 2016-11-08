@@ -1,0 +1,54 @@
+---
+title: "How to: Create a String from An Array of Char Values (Visual Basic) | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "examples [Visual Basic], arrays"
+  - "examples [Visual Basic], Char data type"
+ms.assetid: 69f94e85-d57c-4ccc-a62a-426e829f5c5e
+caps.latest.revision: 10
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# How to: Create a String from An Array of Char Values (Visual Basic)
+This example creates the string "abcd" from individual characters.  
+  
+## Example  
+ [!code-vb[VbVbalrStrings#61](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-create-a-string-from-an-array-of-char-values_1.vb)]  
+  
+## Compiling the Code  
+ This method has no special requirements.  
+  
+ The syntax `"a"c`, where a single `c` follows a single character in quotation marks, is used to create a character literal.  
+  
+## Robust Programming  
+ Null characters (equivalent to `Chr(0)`) in the string lead to unexpected results when using the string. The null character will be included with the string, but characters following the null character will not be displayed in some situations.  
+  
+## See Also  
+ <xref:System.String>   
+ [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md)   
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)

@@ -1,0 +1,64 @@
+---
+title: "Compiler Error CS1953 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1953"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1953"
+ms.assetid: b8af5eed-0f3b-4258-b4e2-f5d184288239
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS1953
+An expression tree lambda may not contain a method group.  
+  
+ A method call requires the `()` operator. The method name without that operator refers to the method group, which is the set of all the overloaded methods with that name.  
+  
+### To correct this error  
+  
+1.  If you meant to call the method, add the `()` operator.  
+  
+## Example  
+ The following example generates CS1953:  
+  
+```  
+// cs1953.cs  
+using System;  
+using System.Linq.Expressions;  
+class CS1953  
+{  
+    public static void Main()  
+    {  
+        double num = 10;  
+        Expression<Func<bool>> testExpr =  
+              () => num.GetType is int; // CS1953   
+    }  
+}  
+```

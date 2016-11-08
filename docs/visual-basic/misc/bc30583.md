@@ -1,0 +1,50 @@
+---
+title: "&#39;&lt;methodname&gt;&#39; cannot be implemented more than once | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30583"
+  - "vbc30583"
+helpviewer_keywords: 
+  - "BC30583"
+ms.assetid: 4e47b7a3-566a-4bc7-aa3c-3c4262ed8cd9
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# &#39;&lt;methodname&gt;&#39; cannot be implemented more than once
+You have attempted to implement a method that has already been implemented.  
+  
+ **Error ID:** BC30583  
+  
+### To correct this error  
+  
+1.  Check the method name to make sure you have spelled it correctly.  
+  
+2.  If the method is redundant, remove the extra declaration.  
+  
+## See Also  
+ [NOT IN BUILD:How to: Perform Actions with Methods](http://msdn.microsoft.com/en-us/c5729e29-1042-44e8-904d-7b24e0d50b01)

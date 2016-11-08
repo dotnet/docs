@@ -1,0 +1,65 @@
+---
+title: "Compiler Error CS0832 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0832"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0832"
+ms.assetid: b5527209-a9bd-4f8c-a432-2e89bb1905d1
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0832
+An expression tree may not contain an assignment operator.  
+  
+ An expression tree does not preserve variable state or have any concept of a storage location.  
+  
+### To correct this error  
+  
+1.  Remove the assignment operator from the lambda or query expression.  
+  
+## Example  
+ In the example code, as in all lambda expressions, `x` is just an input parameter being passed by value. Its value cannot be changed in an expression tree. It can be changed in a delegate lambda.  
+  
+```  
+// cs0843.cs  
+using System;  
+using System.Linq;  
+using System.Linq.Expressions;  
+  
+public class C  
+{  
+    public static int Main()  
+    {  
+        Expression<Func<int, int>> e = x => x += 5; // CS0843  
+        return 1;  
+    }  
+}  
+```

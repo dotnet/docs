@@ -1,0 +1,56 @@
+---
+title: "Indirect reference is being made to assembly &lt;assemblyname&gt; version &lt;laterversionnumber&gt;, which contains &#39;&lt;typename&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc32207"
+  - "bc32207"
+helpviewer_keywords: 
+  - "BC32207"
+ms.assetid: a3de74b5-bedd-4e36-b379-485e4b3903f7
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Indirect reference is being made to assembly &lt;assemblyname&gt; version &lt;laterversionnumber&gt;, which contains &#39;&lt;typename&gt;&#39;
+Indirect reference is being made to assembly \<assemblyname> version \<laterversionnumber>, which contains '\<typename>'. This Project references a prior version of \<assemblyname> version \<earlierversionnumber>. To use '\<typename>', you must replace the reference to \<assemblyname> with version \<laterversionnumber> or higher.  
+  
+ An expression makes an indirect reference to another project, which has a reference to an earlier version of the same assembly.  
+  
+ You should normally use only the most recent version of an assembly.  
+  
+ **Error ID:** BC32207  
+  
+### To correct this error  
+  
+1.  Use the cited type name to determine which project also references the same assembly.  
+  
+2.  Determine which version of the assembly the other project references, and change your project to reference the same version.  
+  
+## See Also  
+ [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
+ [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [Troubleshooting Broken References](/visual-studio/ide/troubleshooting-broken-references)

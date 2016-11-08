@@ -1,0 +1,67 @@
+---
+title: "Compiler Warning (level 3) CS1718 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1718"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1718"
+ms.assetid: 7c1c11fd-4f91-482d-b8f7-efe2a361634e
+caps.latest.revision: 11
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Warning (level 3) CS1718
+Comparison made to same variable; did you mean to compare something else?  
+  
+ If you meant to compare to something else, then you should simply correct the statement.  
+  
+ But another possibility is that you were testing for true or false, and were doing so by statements such as `if (a == a) (true)` or `if (a < a) (false)`. It is better to simply say `if (true)` or `if (false)`. There are two reasons for this:  
+  
+-   It is simpler: it is always clearer to simply say what you mean.  
+  
+-   It helps avoid confusion: a new feature of C# 2.0 is nullable value types, which are analogous to the value `null` in T-SQL, the programming language used by SQL Server. Developers familiar with T-SQL might be concerned about the effect of nullable types on expressions such as `if (a == a)`, because of the use of ternary logic in T-SQL. If you use `true` or `false`, you avoid this possible confusion.  
+  
+## Example  
+ The following code generates warning CS1718.  
+  
+```  
+// CS1718.cs  
+using System;  
+public class Tester   
+{  
+    public static void Main()   
+    {   
+        int i = 0;  
+        if (i == i) { // CS1718.cs  
+        //if (true) {   
+            i++;  
+        }  
+    }  
+}  
+```

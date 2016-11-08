@@ -1,7 +1,7 @@
 # Using the current-1.1 folder and sub-folders
 
 This folder is the top-level node that matches the [docs](../welcome.md)
-folder, but contains deltas for the the .NET Core 1.1 release.
+folder, but contains deltas for the .NET Core 1.1 release.
 
 The goal of this separate parallel folder structure is to provide a location
 for the 1.1 release related content that can be relatively easily merged into
@@ -23,15 +23,15 @@ There are two cases to adding new content for this release:
 All current release files should have the following added near the
 top of the topic:
 
-[!include[current release track](includes/warning.md)]
+[!include[current release track](../includes/warning.md)]
 
 We've created a snippet to include with the following syntax:
 
 ```markdown
-[!include[current release track](includes/warning.md)]
+[!include[current release track](../includes/warning.md)]
 ```
 
-### link instructions
+### Link instructions
 
 In both cases, provide links from current release to the LTS page (or parent index.md)
 for navigational purposes.

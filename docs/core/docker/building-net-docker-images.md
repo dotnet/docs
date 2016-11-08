@@ -93,6 +93,9 @@ npm install -g yo generator-aspnet generator-docker
 
 For a reference point, before we containerize the application, first run the application locally. 
 
+The finished application is located in the
+[dotnet/core-docs repository on GitHub](https://github.com/dotnet/docs/tree/master/samples/core/docker/building-net-docker-images).
+
 Create a directory for your application.
 
 Open a command or terminal session in that directory and use the ASP.NET Yeoman generator by typing the following:

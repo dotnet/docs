@@ -96,7 +96,7 @@ names to each of the members of the tuple:
 [!code-csharp[NamedTuple](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#05_NamedTuple "Named tuple")]
 
 > [!NOTE]
-> The new tuples features require the @System.ValueTuple@ type. For Visual Studio 15
+> The new tuples features require the @System.ValueTuple type. For Visual Studio 15
 > Preview 5 and earlier preview releases, you must add the NuGet package "System.ValueTuple",
 > available in the pre-release stream.
 
@@ -125,7 +125,7 @@ Using tuples in this way offers several advantages:
 
 * You save the work of creating a `class` or a `struct` that defines the type returned. 
 * You do not need to create new symbol.
-* The language enhancements removes the need to call the @System.Tuple.Create methods.
+* The language enhancements removes the need to call the @System.Tuple.Create%60%601(%60%600) methods.
 
 The declaration for the method provides the names for the fields of the
 tuple that is returned. When you call the method, the return value is a 

@@ -33,8 +33,13 @@ productive as a developer.
 
 ## `out` variables
 
-The existing syntax that supports `out` parameter has been improved
+The existing syntax that supports `out` parameters has been improved
 in this version.  
+
+Previously, you would need to separate the declaration of the out variable
+and its initialization into two different statements:
+
+[!code-csharp[OutVariableOldStyle](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#03_OutVariableOldStyle "classic out variable declaration")]
 
 You can now declare `out` variables in the argument list of a method call,
 rather than writing a separate declaration statement:
@@ -52,37 +57,28 @@ Add a sample at RC that shows how if statements
 scope out variables.
 -->
 
-Previously, you would need to separate the declaration of the out variable
-and its initialization into two different statements:
-
-[!code-csharp[OutVariableOldStyle](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#03_OutVariableOldStyle "classic out variable declaration")]
-
-This small language change improves your productivity in a couple ways.
-First, the code is easier to read. You declare the out variable where you
-use it, not on another line above.
-Second, by declaring the `out` variable where it is used in a method call,
-you don't need to assign an initial value, and you can't accidentally use
-it before it is assigned.
-
-The scope of the variable declaration minimizes the chance for mis-using
-the variable as well.  The `out` variable is scoped to the enclosing block.
-By minimizing the scope, you avoid name collisions with other variables and
-you minimize the chance of misuse.
+This small language change improves your productivity in several ways:
+* The code is easier to read. 
+    - You declare the out variable where you use it, not on another line above.
+* No need to assign an initial value.
+    - By declaring the `out` variable where it is used in a method call, you can't accidentally use it before it is assigned.
+* The scope of the variable is minimized.
+    - The `out` variable is scoped to the enclosing block. By minimizing the scope, you avoid name collisions with other variables and you minimize the chance of misuse.
 
 The most common use for this feature will be the `TryParse` pattern. In this
-pattern, a method returns a `bool` indicating success or failure, and an
-`out` variable that provides the result, in cases when the method succeeds.
+pattern, a method returns a `bool` indicating success or failure and an
+`out` variable that provides the result if the method succeeds.
 
 ## Tuples
 
-The syntax used for classes and structs provides a rich syntax to explain
+C# provides a rich used for classes and structs provides to explain
 your design intent. But sometimes that rich syntax requires extra
 work with minimal benefit. You may often write methods that need a simple
-structure containing more than one data element. These scenarios are
-why *Tuples* were added to C#. Tuples are lightweight data structures
-that contain multiple elements.  You can't define methods, you simply
-have public get/set properties (without any validation) for the
-data members on the Tuple.
+structure containing more than one data element. To support these scenarios
+*tuples* were added to C#. Tuples are lightweight data structures
+that contain multiple elements.  Tuples are lightweight data structures
+that contain multiple fields to represent the data members of the tuple.
+The fields are not validated, and you cannot define your own methods
 
 > [!NOTE]
 > Tuples were available before C# 7, but had many limitations. Most importantly,
@@ -93,14 +89,14 @@ You can create a tuple by assigning each member to a value:
 [!code-csharp[UnnamedTuple](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#04_UnnamedTuple "Unnamed tuple")]
 
 That assignment creates a tuple whose members are `Item1` and `Item2`,
-following the existing `Tuple` syntax.
+following the existing @System.Tuple syntax.
 You can modify that assignment to create a tuple that provides semantic
 names to each of the members of the tuple:
 
 [!code-csharp[NamedTuple](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#05_NamedTuple "Named tuple")]
 
 > [!NOTE]
-> The new features in Tuples require the `System.ValueTuple` type. For Visual Studio 15
+> The new tuples features require the @System.ValueTuple@ type. For Visual Studio 15
 > Preview 5 and earlier preview releases, you must add the NuGet package "System.ValueTuple",
 > available in the pre-release stream.
 
@@ -121,16 +117,15 @@ with the names on the left side, `first` and `second`.
 
 The examples above show the basic syntax to declare tuples. Tuples are
 most useful as return types for `private` and `internal` methods. Tuples
-provide a simple syntax for those methods to return multiple discrete values.
-You save the work of creating a `class` or a `struct` that
-defines the type returned. There is no need for creating a new symbol.
-
-Creating a tuple is more efficient and more productive.
-It is a simpler, lightweight syntax to define a data structure that carries
-more than one value. The example method below returns the minimimum and maximum
-values found in a sequence of integers:
+provide a simple syntax for those methods to return multiple discrete values:
 
 [!code-csharp[TupleReturningMethod](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#08_TupleReturningMethod "Tuple returning method")]
+
+Using tuples in this way offers several advantages:
+
+* You save the work of creating a `class` or a `struct` that defines the type returned. 
+* You do not need to create new symbol.
+* The language enhancements removes the need to call the @System.Tuple.Create methods.
 
 The declaration for the method provides the names for the fields of the
 tuple that is returned. When you call the method, the return value is a 
@@ -139,7 +134,7 @@ tuple whose fields are `max` and `min`:
 [!code-csharp[CallingTupleMethod](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#09_CallingTupleMethod "Calling a tuple returning method")]
 
 There may be times when you want to unpackage the members of a tuple that
-was returned from a method.  You can do that by declaring separate variables
+were returned from a method.  You can do that by declaring separate variables
 for each of the values in the tuple. This is called *deconstructing* the tuple:
 
 [!code-csharp[CallingWithDeconstructor](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#10_CallingWithDeconstructor "Deconstructing a tuple")]
@@ -147,7 +142,7 @@ for each of the values in the tuple. This is called *deconstructing* the tuple:
 <!-- Add wildcards here, if they are in C# 7
 -->
 
-You can also provide a simailar deconstruction for any type in .NET. This is
+You can also provide a similar deconstruction for any type in .NET. This is
 done by writing a `Deconstruct` method as a member of the class. That
 `Deconstruct` method provides a set of `out` arguments for each of the
 properties you want to extract. Consider
@@ -165,25 +160,22 @@ can rename the extract variables as part of the assignment:
 
 [!code-csharp[DeconstructNames](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#13_DeconstructNames "Deconstruct with new names")]
 
-Tuples are a lightweight syntax that gives you the ability to declare data-only
-types with multiple fields. You can learn more in depth about them in the
+You can learn more in depth about tuples in the
 [tuples topic](tuples.md).
 
 ## Pattern matching
 
-*Pattern Matching* is a feature where you can implement method dispatch on
+*Pattern matching* is a feature that allows you to implement method dispatch on
 properties other than the type of an object. You're probably already familiar
 with method dispatch based on the type of an object. In Object Oriented programming,
 virtual and override methods provide language syntax to implement method dispatching
-based on an object's type. 
-
-Virtual methods and overrides to provide specific implementations of methods for different
-classes in a hierarchy. Pattern matching expressions extend this concept so that you can easily
+based on an object's type. Base and Derived classes provide different implementations. 
+Pattern matching expressions extend this concept so that you can easily
 implement similar dispatch patterns for types and data elements that are
 not related through an inheritance hierarchy. 
 
 Pattern matching supports `is` expressions and `switch` expressions. Each
-enable inspecting an object and its properties to determine if that object
+enables inspecting an object and its properties to determine if that object
 satisfies the sought pattern. You use the `when` keyword to specify additional
 rules to the pattern.
 
@@ -199,13 +191,13 @@ of a number of die rolls:
 
 [!code-csharp[SumDieRolls](../../samples/snippets/csharp/new-in-7/new-in-7/patternmatch.cs#14_SumDieRolls "Sum die rolls")]
 
-You might quickly find that you need to find the some of die rolls where
+You might quickly find that you need to find the sum of die rolls where
 some of the rolls are made with more than one die. Part of the input
-sequence may be sequences instead of a single number:
+sequence may be multiple results instead of a single number:
 
 [!code-csharp[SumDieRollsWithGroups](../../samples/snippets/csharp/new-in-7/new-in-7/patternmatch.cs#15_SumDieRollsWithGroups "Sum die rolls with groups")]
 
-The `is` pattern expression works quite well in this scenarios. As part of
+The `is` pattern expression works quite well in this scenario. As part of
 checking the type, you write a variable initialization. This creates
 a new variable of the validated runtime type.
 
@@ -221,7 +213,7 @@ to use a `switch` expression before adding new cases:
 
 [!code-csharp[SumUsingSwitch](../../samples/snippets/csharp/new-in-7/new-in-7/patternmatch.cs#16_SumUsingSwitch "Sum using switch")]
 
-The `switch` expressions have a slightly different syntax from the `is` expressions, where
+The `switch` expressions have a slightly different syntax than the `is` expressions, where
 you declare the type and variable at the beginning of the `case` expression.
 
 The `switch` expressions also support constants. This can save time by
@@ -229,7 +221,7 @@ factoring out simple cases:
 
 [!code-csharp[SwitchWithConstants](../../samples/snippets/csharp/new-in-7/new-in-7/patternmatch.cs#17_SwitchWithConstants "Switch with constants")]
 
-The code above adds cases for `0`, as a special case of `int`, and `null`
+The code above adds cases for `0` as a special case of `int`, and `null`
 as a special case when there is no input. This demonstrates one important
 new feature in switch pattern expressions: the order of the `case`
 expressions now matters. The `0` case must appear before the general `int`
@@ -267,7 +259,7 @@ dispatch algorithms based on an object's type, or other properties, using
 a clear and concise syntax. Pattern matching expressions enable these
 constructs on data types that are unrelated by inheritance.
 
-You can learn more about pattern matching in depth in the topic
+You can learn more about pattern matching in the topic
 dedicated to [pattern matching in C#](pattern-matching.md).
 
 ## Ref locals and returns
@@ -287,16 +279,16 @@ for public APIs.
 
 Second, this method is returning the indices to the item in the matrix.
 That leads callers to write code that uses those indices to dereference
-into the matrix and modify a single element:
+the matrix and modify a single element:
 
 [!code-csharp[UpdateItemFromIndices](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#21_UpdateItemFromIndices "Update Item From Indices")]
 
-That you'd rather write is a methood that would return a *reference*
+You'd rather write a methood that returns a *reference*
 to the element of the matrix that you want to change. You could only accomplish
 this by using unsafe code and returning a pointer to an `int` in previous versions.
 
 Let's walk through a series of changes to demonstrate the ref local feature
-and show how to create a method that returns a reference to the internal storage.
+and show how to create a method that returns a reference to internal storage.
 Along the way, you'll learn the rules of the ref return and ref local feature that
 protects you from accidentally mis-using it.
 
@@ -368,7 +360,7 @@ multiple times.
 
 ## Local functions
 
-Many designs for classes may include methods that are called from only
+Many designs for classes include methods that are called from only
 one location. These additional private methods keep each method small
 and focused. However, they can make it harder to understand a class
 when reading it the first time. These methods must be understood
@@ -383,7 +375,7 @@ There are two very common use cases for local functions: public iterator
 methods and public async methods. Both types of methods generate
 code that reports errors later than programmers might expect. In
 the case of iterator methods, any exceptions are observed only
-when calling code enumerates the returned sequence. In the case
+when calling code that enumerates the returned sequence. In the case
 of async methods, any exceptions are only observed when the returned
 `Task` is awaited.
 
@@ -409,7 +401,7 @@ method is not an iterator method; only the private method uses the
 `yield return` syntax. However, there are potential problems with this
 refactoring. The private method should only be called from the public
 interface method, because otherwise all argument validation is skipped.
-Readers of the class must discover this fact by reading the entire class,
+Readers of the class must discover this fact by reading the entire class
 and searching for any other references to the `alphabetSubsetImplementation` 
 method.
 
@@ -419,11 +411,10 @@ API method:
 
 [!code-csharp[22_IteratorMethodLocal](../../samples/snippets/csharp/new-in-7/new-in-7/Iterator.cs#28_IteratorMethodLocal "Iterator method with local function")]
 
- 
 The version above makes it clear that the local method is referenced
 only in the context of the outer method. The rules for local functions
 also ensure that a developer can't accidentally call the local function
-from another location in the class, bypassing the argument validation.
+from another location in the class and bypass the argument validation.
 
 The same technique can be employed with `async` methods to ensure that
 exceptions arising from argument validation are thrown before the asynchronous
@@ -446,7 +437,7 @@ work begins:
 
 Not available in Preview 5 
 The decision that `throw` was a statement meant that there
-were C# constructs where you could not use it. These locations
+were C# constructs where you could not use it. These
 included conditional expressions, null coalescing expressions, and some lambda
 expressions. The addition of expression bodied members adds more locations
 where `throw` expressions would be useful. C# 7 removes introduces *throw expressions*.
@@ -478,8 +469,8 @@ throw statements in the body of the constructor:
 > [!NOTE]
 > Both of the preceding constructs will cause exceptions to be thrown during
 > the construction of an object. Those are often difficult to recover from.
-> For that reason, designs that throw exceptions during construction can
-> be discouraged.
+> For that reason, designs that throw exceptions during construction are
+> discouraged.
 
 --> 
 
@@ -490,7 +481,8 @@ peformance bottlenecks in certain paths. `Task` is a reference
 type, so using it means allocating an object. In cases where a
 method declared with the `async` modifier returns a cached result, or
 completes synchronously, the extra allocations can become a significant
-time cost in hot paths.
+time cost in performance critical sections of code. It can become
+very costly if those allocations occur in tight loops.
 
 The new language feature means that async methods may return other
 types in addition to `Task`, `Task<T>` and `void`. The returned type
@@ -545,7 +537,7 @@ numbers, it would be common to use it as a thousands separator:
 
 [!code-csharp[LargeIntegers](../../samples/snippets/csharp/new-in-7/new-in-7/Program.cs#34_LargeIntegers "Large integer")]
 
-The digit separate can be used with `decimal`, `float` and `double`
+The digit separator can be used with `decimal`, `float` and `double`
 types as well:
 
 [!code-csharp[OtherConstants](../../samples/snippets/csharp/new-in-7/new-in-7/Program.cs#35_OtherConstants "non-integral constants")]

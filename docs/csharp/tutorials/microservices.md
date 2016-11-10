@@ -1,4 +1,4 @@
----
+﻿---
 title: Microservices hosted in Docker | C#
 description: Learn to create asp.net core services that run in Docker containers
 keywords: .NET, .NET Core, Docker, C#, ASP.NET, Microservice
@@ -63,7 +63,8 @@ referenced above contains sections to each of the available installations.
 
 You'll also need to install a number of command line tools that support
 ASP.NET core development. The command line templates use Yeoman, Bower,
-Grunt, and Gulp. You may already have many of these tools, but if not,
+Grunt, and Gulp to be installed using the node.js's package manager npm which can be install from [nodejs.org](https://nodejs.org). 
+One may already have many of these tools, but if not,
 run the following command in your favorite shell:
 
 `npm install -g yo bower grunt-cli gulp`

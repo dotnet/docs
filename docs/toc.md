@@ -77,7 +77,8 @@
 #### [Summary](csharp/expression-trees-summary.md)
 ### [🔧 Native interoperability](csharp/interop.md)
 ### [🔧 Reflection & code generation](csharp/reflection.md)
-### [Documenting your code](csharp/codedoc.md) 
+### [Documenting your code](csharp/codedoc.md)
+### [Versioning](csharp/versioning.md)
 ## [🔧 Using the .NET Compiler Platform](csharp/roslyn/index.md)
 ## [🔧 Syntax Reference](csharp/syntax.md)
 <!--

@@ -57,31 +57,8 @@ You use the new modifier to hide inherited members of a base class. This ensures
 
 Take the following example:
 
-```csharp
-public class BaseClass
-{
-    public void MyMethod()
-    {
-        Console.WriteLine("A base method");
-    }
-}
-
-public class DerivedClass : BaseClass
-{
-    public new void MyMethod()
-    {
-        Console.WriteLine("A derived method");
-    }
-}
-
-public static void Main()
-{
-    BaseClass b = new BaseClass();
-    DerivedClass d = new DerivedClass();
-
-    Console.WriteLine(b.MyMethod());
-    Console.WriteLine(b.MyMethod());
-}
+```
+[!code-csharp[Sample usage of the 'new' modifier](/samples/csharp/versioning/new/Program.cs#sample)]
 ```
 
 #### Output
@@ -104,31 +81,8 @@ makes that new version of your library both source and binary compatible with co
 The `override` modifier works very similar to the `new` modifier except that it extends the implementation of a base class member rather than
 hides it, also the base class member needs to have the `virtual` modifier applied to it.
 
-```csharp
-public class MyBaseClass
-{
-    public virtual string MethodOne()
-    {
-        return "Method One";
-    }
-}
-
-public class MyDerivedClass : MyBaseClass
-{
-    public override string MethodOne()
-    {
-        return "Derived Method One";
-    }
-}
-
-public static void Main()
-{
-    MyBaseClass b = new MyBaseClass();
-    MyDerivedClass d = new MyDerivedClass();
-
-    Console.WriteLine("Base Method One: {0}", b.MethodOne());
-    Console.WriteLine("Derived Method One: {0}", d.MethodOne());
-}
+```
+[!code-csharp[Sample usage of the 'override' modifier](/samples/csharp/versioning/override/Program.cs#sample)]
 ```
 
 #### Output

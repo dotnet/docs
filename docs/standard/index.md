@@ -12,8 +12,7 @@ ms.devlang: dotnet
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 ---
 
-.NET Platform Guide
-==========
+# .NET Platform Guide
 
 > [!NOTE]
 This article is going to be rewritten.

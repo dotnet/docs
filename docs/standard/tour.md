@@ -1,10 +1,10 @@
 ---
 title: Tour of .NET
 description: A guided tour through some of the prominent features of the .NET platform.
-keywords: .NET, .NET Core
+keywords: .NET, .NET Core, Tour, Programming Languages, 
 author: richlander
 manager: wpickett
-ms.date: 10/05/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -14,27 +14,24 @@ ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 
 # Tour of .NET
 
-.NET is a general purpose development platform. It can be used for any kind of app type or workload where general purpose solutions are used. It has several key features that are attractive to many developers, including automatic memory management and modern programming languages, that make it easier to efficiently build high-quality applications. .NET enables a high-level programming environment with many convenience features, while providing low-level access to native memory and APIs.
+.NET is a general purpose development platform.  It has several key features, such as multiple programming languages, asynchronous and concurrent programming models, and native interoperability which enable a wide range of scenarios across multiple platforms.
 
-Multiple implementations of .NET are available, based on open [.NET Standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) that specify the fundamentals of the platform. They are separately optimized for different application types (for example, desktop, mobile, gaming, cloud) and support many chips (for example, x86/x64, ARM) and operating systems (for example, Windows, Linux, iOS, Android, macOS). Open source is also an important part of the .NET ecosystem, with multiple .NET implementations and many libraries available under OSI-approved licenses.
+This article offers a guided tour through some of the key features of the .NET platform.
 
-See the [Overview of .NET implementations](components.md) document to figure out all of the different editions of .NET that are available, both Microsoft's and others.
+See the [.NET Architectural Components](components.md) to learn about each of the architectural "pieces" of .NET and what they're used for.
 
-This Primer will help you understand some of the key concepts in the .NET Platform and point you to more resources 
-for each given topic. By the end of it, you should have enough information to be able to recognize significant terms and 
-concepts in the .NET Platform and to know how to further your knowledge about them. 
+## How to run the code samples
 
-## A stroll through .NET
+> ![NOTE]
+In the future, this documentation site will have the ability to run these code samples in your browser.
 
-As any mature and advanced application development framework, .NET has many powerful features that make the developer's job easier and aim to make writing code more powerful and expressive. This section will outline the basics of the most salient features and provide pointers to more detailed discussions where needed. After finishing this stroll, you should have enough information to be able to read the samples on our GitHub repos as well as other code and understand what is going on.
+To learn how to set up a development environment to run the code samples, check out [Getting Started](getting-started.md).  You can copy and paste code samples from this page into your environment to execute them. 
 
 ## Programming languages
 
-As a developer, you can choose any programming language that supports .NET to create your application. Because .NET provides language independence and interoperability, you can interact with other .NET applications and components regardless of the language with which they were developed.
+.NET supports multiple programming languages.  .NET runtimes implement the [Common Language Infrastructure (CLI)](https://www.visualstudio.com/en-us/mt639507), which (among other things) specifies a language-independent runtime and language interoperability.  This means that you can choose any .NET language to build apps and services on .NET.
 
-Languages that allow you to develop applications for the .NET Platform adhere to the [Common Language Infrastructure (CLI) specification](https://www.visualstudio.com/en-us/mt639507).
-
-Microsoft languages that .NET supports include C#, F#, and Visual Basic. 
+Microsoft actively developes and supports three .NET languages: C#, F#, and Visual Basic .NET. 
 
 * C# is simple, powerful, type-safe, and object-oriented while retaining the expressiveness and elegance of C-style languages. Anyone familiar with C and similar languages will find few problems in adapting to C#.  Check out the [C# Guide](../csharp/index.md) to learn more about C#.
 
@@ -44,29 +41,29 @@ Microsoft languages that .NET supports include C#, F#, and Visual Basic.
 
 ## Automatic memory management
 
-Garbage collection is the most well-known of .NET features. Developers do not need to actively manage memory, although there are mechanisms to provide more information to the garbage collector (GC). C# includes the `new` keyword to allocate memory in terms of a particular type, and the `using` keyword to provide scope for the usage of the object. The GC operates on a lazy approach to memory management, preferring application throughput to the immediate collection of memory.
+.NET uses [garbage collection](garbage-collection/index.md) to provide automatic memory management for programs.  The GC operates on a lazy approach to memory management, preferring application throughput to the immediate collection of memory.  To learn more about the .NET GC, check out [Fundamentals of garbage collection](garbage-collection/fundamentals.md).
 
 The following two lines both allocate memory:
 
 ```cs
 var title = ".NET Primer";
-var list = new List<string>;
-
+var list = new List<string>();
 ```
 
-There is no analogous keyword to de-allocate memory, as de-allocation happens automatically when the garbage collector reclaims the memory through its scheduled running.
+There is no analogous keyword to de-allocate memory, as de-allocation happens automatically when the garbage collector reclaims the memory through its scheduled run.
 
-Method variables normally go out of scope once a method completes, at which point they can be collected. However, you can indicate to the GC that a particular object is out of scope sooner than method exit using the `using` statement.
+Types within a given scope normally go out of scope once a method completes, at which point they can be collected. However, you can indicate to the GC that a particular object is out of scope sooner than method exit using the `using` statement:
 
 ```cs
-using(FileStream stream = GetFileStream(context))
+using (FileStream stream = GetFileStream(context))
 {
-    //operations on the stream
+    // Operations on the stream
 }
-
 ```
 
 Once the `using` block completes, the GC will know that the `stream` object in the example above is free to be collected and its memory reclaimed.
+
+Rules for this have slightly different semantics in F#.  To learn more about resource management in F#, check out [Resource Management: The `use` Keyword](../fsharp/language-reference/resource-management-the-use-keyword.md)
 
 One of the less obvious but quite far-reaching features that a garbage collector enables is memory safety. The invariant of memory safety is very simple: a program is memory safe if it accesses only memory that has been allocated (and not freed). Dangling pointers are always bugs, and tracking them down is often quite difficult.
 
@@ -77,7 +74,6 @@ The following example will throw an exception as a result of memory safety.
 ```cs
 int[] numbers = new int[42];
 int number = numbers[42]; // will throw (indexes are 0-based)
-
 ```
 
 ## Type safety
@@ -87,35 +83,32 @@ Objects are allocated in terms of types. The only operations allowed for a given
 .NET languages are object-oriented, with hierarchies of base and derived classes. The .NET runtime will only allow object casts and calls that align with the object hierarchy. Remember that every type defined in any .NET language derives from the base `object` type.
 
 ```cs
-Dog dog = Dog.AdoptDog(); // Returns a Dog type
-Pet pet = (Pet)dog; // Dog derives from Pet
-pet.ActCute();
-Car car = (Car)dog; // will throw - no relationship between Car and Dog
-object temp = (object)dog; // legal - a Dog is an object
-car = (Car)temp; // will throw - the runtime isn't fooled
-car.Accelerate() // the dog won't like this, nor will the program get this far
-
+Dog dog = AnimalShelter.AdoptDog(); // Returns a Dog type.
+Pet pet = (Pet)dog; // Dog derives from Pet.
+Car car = (Car)dog; // Will throw - no relationship between Car and Dog.
+object temp = (object)dog; // Legal - a Dog is an object.
+car = (Car)temp; // Will throw - the runtime isn't fooled.
 ```
 
 Type safety is also used to help enforce encapsulation by guaranteeing the fidelity of the accessor keywords. Accessor keywords are artifacts which control access to members of a given type by other code. These are usually used for various kinds of data within a type that are used to manage its behavior.
 
 ```cs
 Dog dog = Dog._nextDogToBeAdopted; // will throw - this is a private field
-
 ```
 
-Some .NET languages support **type inference**. Type inference means that the compiler will deduce the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type **has** a strong type with everything that implies. Let's rewrite the first two lines of the previous example to introduce type inference. You will note that the rest of the example is completely the same.
+C#, Visual Basic, and F# support local **type inference**. Type inference means that the compiler will deduce the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type **has** a strong type with everything that implies. Let's rewrite the first two lines of the previous example to introduce type inference. You will note that the rest of the example is completely the same.
 
 ```cs
-  var dog = Dog.AdoptDog();
-  var pet = (Pet)dog;
-  pet.ActCute();
-  Car car = (Car)dog; // will throw - no relationship between Car and Dog
-  object temp = (object)dog; // legal - a Dog is an object
-  car = (Car)temp; // will throw - the runtime isn't fooled
-  car.Accelerate() // the dog won't like this, nor will the program get this far
-
+var dog = Dog.AdoptDog();
+var pet = (Pet)dog;
+pet.ActCute();
+Car car = (Car)dog; // will throw - no relationship between Car and Dog
+object temp = (object)dog; // legal - a Dog is an object
+car = (Car)temp; // will throw - the runtime isn't fooled
+car.Accelerate() // the dog won't like this, nor will the program get this far
 ```
+
+F# has even further type inference capabilities than method-local type inference found in C# and Visual Basic.  To learn more, check out [Type Inferece](../fsharp/language-reference/type-inference.md).
 
 ## Delegates and lambdas
 
@@ -123,11 +116,11 @@ Delegates are like C++ function pointers, with a big difference that they are ty
 
 Delegates are used in various APIs and places in the .NET world, especially through lambda expressions, which are a cornerstone of LINQ.
 
-Read more about it in the [Delegates and lambdas](../standard/delegates-lambdas.md) document.
+Read more about it in the [Delegates and lambdas](delegates-lambdas.md) document.
 
-## Generic types (Generics)
+## Generics
 
-Generic types, also commonly called "generics", are a feature that was added in .NET Framework 2.0. In short, generics allow the programmer to introduce a "type parameter" when designing their classes, that will allow the client code (the users of the type) to specify the exact type to use in place of the type parameter.
+Generics are a feature that was added in .NET Framework 2.0. In short, generics allow the programmer to introduce a "type parameter" when designing their classes, that will allow the client code (the users of the type) to specify the exact type to use in place of the type parameter.
 
 Generics were added in order to help programmers implement generic data structures. Before their arrival, in order for a, say, _List_ type to be generic, it would have to work with elements that were of type _object_. This would have various performance as well as semantic problems, not to mention possible subtle runtime errors. The most notorious of the latter is when a data structure contains, for instance, both integers and strings, and an _InvalidCastException_ is thrown on working with the list's members.
 
@@ -137,8 +130,10 @@ The below sample shows a basic program running using an instance of @System.Coll
 using System;
 using System.Collections.Generic;
 
-namespace GenericsSampleShort {
-    public static void Main(string[] args){
+namespace GenericsSampleShort
+{
+    public static void Main(string[] args)
+    {
         // List<string> is the client way of specifying the actual type for the type parameter T
         List<string> listOfStrings = new List<string> { "First", "Second", "Third" };
 
@@ -148,25 +143,23 @@ namespace GenericsSampleShort {
         // Below will throw a compile-time error, since the type parameter
         // specifies this list as containing only strings.
         listOfStrings.Add(1);
-
     }
 }
-
 ```
 
-For more information, see the [Generic types (Generics) overview](../standard/generics.md) article.
+For more information, see the [Generic types (Generics) overview](generics.md) article.
 
 ## Async programming
 
 Async programming is a first-class concept within .NET, with async support in the runtime, the framework libraries, and .NET language constructs. Internally, they are based off of objects (such as `Task`) which take advantage of the operating system to perform I/O-bound jobs as efficiently as possible.
 
-To learn more about async programming in .NET, start with the [Async overview](../standard/async.md).
+To learn more about async programming in .NET, start with the [Async overview](async.md).
 
 ## Language Integrated Query (LINQ)
 
 LINQ is a powerful set of features for C# and VB that allow you to write simple, declarative code for operating on data. The data can be in many forms (such as in-memory objects, in a SQL database, or an XML document), but the LINQ code you write typically won't look different for each data source!
 
-To learn more and see some samples, check out [LINQ (Language Integrated Query)](../standard/using-linq.md).
+To learn more and see some samples, check out [LINQ (Language Integrated Query)](using-linq.md).
 
 ## Native interoperability
 
@@ -176,7 +169,7 @@ The main way to do native interoperability is via "platform invoke" or P/Invoke 
 
 Most of Mono's (and thus Xamarin's) interoperability support for Java and Objective-C are built similarly, that is, they use the same principles.
 
-Read more about it in the [Native interoperability](../standard/native-interop.md) document.
+Read more about it in the [Native interoperability](native-interop.md) document.
 
 ## Unsafe code
 
@@ -186,49 +179,46 @@ The `ToString()` method from the [StringBuilder class](https://github.com/dotnet
 
 ```cs
 public override String ToString() {
-          Contract.Ensures(Contract.Result<String>() != null);
+    Contract.Ensures(Contract.Result<String>() != null);
 
-          VerifyClassInvariant();
+    VerifyClassInvariant();
 
-          if (Length == 0)
-              return String.Empty;
+    if (Length == 0)
+        return String.Empty;
 
-          string ret = string.FastAllocateString(Length);
-          StringBuilder chunk = this;
-          unsafe {
-              fixed (char* destinationPtr = ret)
-              {
-                  do
-                  {
-                      if (chunk.m_ChunkLength > 0)
-                      {
-                          // Copy these into local variables so that they are stable even in the presence of ----s (hackers might do this)
-                          char[] sourceArray = chunk.m_ChunkChars;
-                          int chunkOffset = chunk.m_ChunkOffset;
-                          int chunkLength = chunk.m_ChunkLength;
+    string ret = string.FastAllocateString(Length);
+    StringBuilder chunk = this;
+    unsafe {
+        fixed (char* destinationPtr = ret)
+        {
+            do
+            {
+                if (chunk.m_ChunkLength > 0)
+                {
+                    // Copy these into local variables so that they are stable even in the presence of ----s (hackers might do this)
+                    char[] sourceArray = chunk.m_ChunkChars;
+                    int chunkOffset = chunk.m_ChunkOffset;
+                    int chunkLength = chunk.m_ChunkLength;
 
-                          // Check that we will not overrun our boundaries.
-                          if ((uint)(chunkLength + chunkOffset) <= ret.Length && (uint)chunkLength <= (uint)sourceArray.Length)
-                          {
-                              fixed (char* sourcePtr = sourceArray)
-                                  string.wstrcpy(destinationPtr + chunkOffset, sourcePtr, chunkLength);
-                          }
-                          else
-                          {
-                              throw new ArgumentOutOfRangeException("chunkLength", Environment.GetResourceString("ArgumentOutOfRange_Index"));
-                          }
-                      }
-                      chunk = chunk.m_ChunkPrevious;
-                  } while (chunk != null);
-              }
-          }
-          return ret;
-      }
-
+                    // Check that we will not overrun our boundaries.
+                    if ((uint)(chunkLength + chunkOffset) <= ret.Length && (uint)chunkLength <= (uint)sourceArray.Length)
+                    {
+                        fixed (char* sourcePtr = sourceArray)
+                            string.wstrcpy(destinationPtr + chunkOffset, sourcePtr, chunkLength);
+                    }
+                    else
+                    {
+                        throw new ArgumentOutOfRangeException("chunkLength", Environment.GetResourceString("ArgumentOutOfRange_Index"));
+                    }
+                }
+                chunk = chunk.m_ChunkPrevious;
+            } while (chunk != null);
+        }
+    }
+    return ret;
+}
 ```
 
-## Notes
+## Next Steps
 
-The term ".NET runtime" is used throughout the document to accommodate for the multiple implementations of .NET, such as CLR, Mono, IL2CPP and others. The more specific names are only used if needed.
-
-This document is not intended to be historical in nature, but describe the .NET platform as it is now. It isn't important whether a .NET feature has always been available or was only recently introduced, only that it is important enough to highlight and discuss.
+blah blah getting started, standard library, languages, concepts

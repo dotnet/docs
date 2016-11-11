@@ -30,7 +30,7 @@ The most basic approach to SemVer is the 3 component format `MAJOR.MINOR.PATCH`,
 * `MINOR` is incremented when you add functionality in a backwards-compatible manner
 * `PATCH` is incremented when you make backwards-compatible bug fixes
 
-There are also ways to specify other scenarios like pre-release versions etc. Go [here]([http://semver.org/]) to get more information on SemVer
+There are also ways to specify other scenarios like pre-release versions etc. Go [here](http://semver.org/) to get more information on SemVer
 and how best to utilize it when applying version information to your .NET library.
 
 ## Application Configuration File

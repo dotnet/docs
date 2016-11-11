@@ -42,7 +42,7 @@ ms.assetid:
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="/docs/images/hub/featured-2.png" alt="" />
+                                        <img src="./docs/images/hub/featured-2.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -60,7 +60,7 @@ ms.assetid:
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="/docs/images/hub/featured-3.png" alt="" />
+                                        <img src="./docs/images/hub/featured-3.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -88,7 +88,7 @@ ms.assetid:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/docs/images/hub/net-gs-1.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-gs-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -107,7 +107,7 @@ ms.assetid:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/docs/images/hub/net-gs-2.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-gs-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -147,7 +147,7 @@ ms.assetid:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/docs/images/hub/net-gs-7.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-gs-7.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

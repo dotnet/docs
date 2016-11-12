@@ -26,7 +26,7 @@ You must also have [git installed](https://git-scm.com/download) and available o
 
 If you're on Windows, you have two options for installing F#.
 
-If you've already installed Visual Studio and don't have F#, you can [Install the Visual F# Tools](getting-started-visual-studio.md#installing-the-visual-f#-tools).  This will install all the necessary components to write, compile, and execute F# code.
+If you've already installed Visual Studio and don't have F#, you can [Install the Visual F# Tools](getting-started-visual-studio.md#installing-the-visual-f-tools).  This will install all the necessary components to write, compile, and execute F# code.
 
 If you prefer not to install Visual Studio, use the following instructions:
 

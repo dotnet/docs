@@ -243,7 +243,7 @@ ms.assetid:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.asp.net/en/latest/intro.html">
+                                <a href="https://docs.microsoft.com/en-us/aspnet/core/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -281,7 +281,7 @@ ms.assetid:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.asp.net/en/latest/tutorials/first-mvc-app/start-mvc.html">
+                                <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -320,7 +320,7 @@ ms.assetid:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.asp.net/en/latest/tutorials/your-first-mac-aspnet.html">
+                                <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/your-first-mac-aspnet">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

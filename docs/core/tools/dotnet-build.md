@@ -15,7 +15,7 @@ ms.assetid: 70285a83-4103-4617-be8b-d0e1e9a4a91d
 #dotnet-build
 
 ## Name 
-dotnet-build -- Builds a project and all of its dependencies 
+`dotnet-build` - Builds a project and all of its dependencies. 
 
 ## Synopsis
 

@@ -5,7 +5,7 @@ keywords: dotnet-nuget-locals, CLI, CLI command, .NET Core
 author: karann-msft
 ms.author: mairaw
 manager: wpickett
-ms.date: 11/10/2016
+ms.date: 11/11/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -18,7 +18,7 @@ ms.assetid: 8440229e-317e-4dc1-9463-cba5fdb12c3b
 [!INCLUDE[preview-warning](../../includes/warning.md)] 
 
 ## Name 
-dotnet-nuget-locals -- Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder. 
+`dotnet-nuget-locals` - Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder. 
 
 ## Synopsis
 
@@ -28,20 +28,24 @@ where `<cache_location>` is one of the following values: `all`, `http-cache`, `p
 
 ## Description
 
-The `dotnet nuget locals` command clears or lists local NuGet resources such as http request cache, temporary cache, or machine-wide global packages folder.
+The `dotnet nuget locals` command clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder.
 
 ## Arguments
 
 `all`
+
 Indicates that the specified operation should be applied to all the cache types, that is, http-request cache, global packages cache and temporary cache.
 
 `http-cache`
+
 Indicates that the specified operation should be applied only to the http-request cache. The other cache locations are not affected.
 
 `global-packages`
+
 Indicates that the specified operation should be applied only to the global packages cache. The other cache locations are not affected.
 
 `temp`
+
 Indicates that the specified operation should be applied only to the temporary cache. The other cache locations are not affected.
 
 ## Options
@@ -84,3 +88,5 @@ Clears all the files in local global-packages cache directory:
 Clears all the files in local temporary cache directory:
 
 `dotnet nuget locals -c temp`
+
+## See also

@@ -5,7 +5,7 @@ keywords: dotnet-nuget-delete, CLI, CLI command, .NET Core
 author: karann-msft
 ms.author: mairaw
 manager: wpickett
-ms.date: 11/10/2016
+ms.date: 11/11/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -18,7 +18,7 @@ ms.assetid: 6ddffde4-c789-4e90-990e-d35f6a6565d4
 [!INCLUDE[preview-warning](../../includes/warning.md)]
 
 ## Name 
-dotnet-nuget-delete -- Deletes or unlists a package from the server. 
+`dotnet-nuget-delete` - Deletes or unlists a package from the server. 
 
 ## Synopsis
 
@@ -53,14 +53,15 @@ The API key for the server.
 
 Forces command-line output to be in English.
 
-`--verbosity`
+`--verbosity <LEVEL>`
 
-Displays this amount of details in the output: normal, quiet, or detailed.
+Displays this amount of details in the output. Level can be `normal`, `quiet`, or `detailed`.
 
-`--config-file`
+`--config-file <FILE>`
 
 A NuGet configuration file used specifically for this command, replacing other config files found by the standard config file discovery and chaining process. 
-The path you specify here can be absolute or relative.
+The path can be absolute or relative.
+For more information on config files, see [Configuring NuGet Behavior](https://docs.nuget.org/ndocs/consume-packages/configuring-nuget-behavior). 
 
 ## Examples
 

@@ -5,7 +5,7 @@ keywords: dotnet-nuget-push, CLI, CLI command, .NET Core
 author: karann-msft
 ms.author: mairaw
 manager: wpickett
-ms.date: 11/10/2016
+ms.date: 11/11/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -18,18 +18,18 @@ ms.assetid: f54d9adf-94f8-41cc-bb52-42f7ca3be6ff
 [!INCLUDE[preview-warning](../../includes/warning.md)]
 
 ## Name 
-dotnet-nuget-push -- Pushes a package to the server and publishes it. 
+`dotnet-nuget-push` - Pushes a package to the server and publishes it. 
 
 ## Synopsis
 
 `dotnet nuget push [<package>] [--help] [--source] [--symbols-source] 
-    [--timeout] [api-key] [--symbol-api-key] [--disable-buffering] [--no-symbols] 
+    [--timeout] [--api-key] [--symbol-api-key] [--disable-buffering] [--no-symbols] 
     [--force-english-output] [--config-file] [--verbosity]`
 
 ## Description
 
 The `dotnet nuget push` command pushes a package to the server and publishes it. 
-The push command uses server and credential details found in the system's NuGet config file, or chain of config files (see <here> for more information on config files). 
+The push command uses server and credential details found in the system's NuGet config file, or chain of config files. For more information on config files, see [Configuring NuGet Behavior](https://docs.nuget.org/ndocs/consume-packages/configuring-nuget-behavior). 
 NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.local/share* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* 
 starting from root of drive and ending in current directory.
 
@@ -51,7 +51,7 @@ Specifies the symbol server URL.
 
 Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 also gives this default.
 
-`-k|api-key <API_KEY>`
+`-k|--api-key <API_KEY>`
 
 The API key for the server.
 
@@ -72,14 +72,15 @@ Does not push symbols (even if present).
 Forces all logged output to be in English. As well as the flexibility of producing English output on a non-English machine, the consistency across platforms provided by this option is a helpful feature for 
 automated tools which scrape the logs for text.
 
-`--config-file`
+`--config-file <FILE>`
 
 A NuGet configuration file used specifically for this command, replacing other config files found by the standard config file discovery and chaining process. 
-The path you specify here can be absolute or relative. 
+The path can be absolute or relative.
+For more information on config files, see [Configuring NuGet Behavior](https://docs.nuget.org/ndocs/consume-packages/configuring-nuget-behavior). 
 
-`--verbosity`
+`--verbosity <LEVEL>`
 
-Displays this amount of detail in the output: normal, quiet, or detailed.
+Displays this amount of details in the output. Level can be `normal`, `quiet`, or `detailed`.
 
 ## Examples
 

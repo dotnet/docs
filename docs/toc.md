@@ -157,7 +157,7 @@
 ### [Delegates](csharp/tour-of-csharp/delegates.md)
 ### [Attributes](csharp/tour-of-csharp/attributes.md)
 ## [Latest features](csharp/whats-new.md) 
-### [🔧 What's new in C# 7](csharp/csharp-7.md)
+### [What's new in C# 7](csharp/csharp-7.md)
 ### [What's new in C# 6](csharp/csharp-6.md)
 ## [🔧 C# Interactive](csharp/interactive.md)
 ### [🔧 Using C# Interactive in Visual Studio](csharp/interactive-with-visualstudio.md)

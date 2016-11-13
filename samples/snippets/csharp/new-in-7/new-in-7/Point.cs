@@ -18,10 +18,10 @@ namespace new_in_7
         public double X { get; }
         public double Y { get; }
 
-        public void Deconstruct(out double X, out double Y)
+        public void Deconstruct(out double x, out double y)
         {
-            X = this.X;
-            Y = this.Y;
+            x = this.X;
+            y = this.Y;
         }
     }
     #endregion

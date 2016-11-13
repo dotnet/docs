@@ -57,32 +57,30 @@ Add a sample at RC that shows how if statements
 scope out variables.
 -->
 
-This small language change improves your productivity in several ways:
+This small language change improves your productivity in important ways:
 * The code is easier to read. 
     - You declare the out variable where you use it, not on another line above.
 * No need to assign an initial value.
     - By declaring the `out` variable where it is used in a method call, you can't accidentally use it before it is assigned.
-* The scope of the variable is minimized.
-    - The `out` variable is scoped to the enclosing block. By minimizing the scope, you avoid name collisions with other variables and you minimize the chance of misuse.
 
-The most common use for this feature will be the `TryParse` pattern. In this
+The most common use for this feature will be the `Try` pattern. In this
 pattern, a method returns a `bool` indicating success or failure and an
 `out` variable that provides the result if the method succeeds.
 
 ## Tuples
 
-C# provides a rich used for classes and structs provides to explain
+C# provides a rich syntax used for classes and structs provides to explain
 your design intent. But sometimes that rich syntax requires extra
 work with minimal benefit. You may often write methods that need a simple
 structure containing more than one data element. To support these scenarios
 *tuples* were added to C#. Tuples are lightweight data structures
-that contain multiple elements.  Tuples are lightweight data structures
-that contain multiple fields to represent the data members of the tuple.
+that contain multiple fields to represent the data members.
 The fields are not validated, and you cannot define your own methods
 
 > [!NOTE]
-> Tuples were available before C# 7, but had many limitations. Most importantly,
-> the members of these tuples were named `Item1`, `Item2` and so on.
+> Tuples were available as an API class before C# 7, but had many limitations.
+> Most importantly, the members of these tuples were named `Item1`, `Item2`
+> and so on. The language features for Tuples address this limitations.
 
 You can create a tuple by assigning each member to a value:
 
@@ -123,7 +121,7 @@ provide a simple syntax for those methods to return multiple discrete values:
 
 Using tuples in this way offers several advantages:
 
-* You save the work of creating a `class` or a `struct` that defines the type returned. 
+* You save the work of authoring a `class` or a `struct` that defines the type returned. 
 * You do not need to create new symbol.
 * The language enhancements removes the need to call the @System.Tuple.Create%60%601(%60%600) methods.
 
@@ -345,7 +343,7 @@ it is declared, you cannot split the declaration and the initialization.
 The C# language has two other rules that protect you from mis-using
 the `ref` locals and returns:
 
-* You cannot assign a `ref` variable to a value.
+* You cannot assign a value to a `ref` variable.
     - That disallows statements like `ref int i = sequence.Count();`
 * You cannot return a `ref` to a variable whose lifetime does not extend beyond the execution of the method.
     - That means you cannot return a reference to a local variable, or similar scope.

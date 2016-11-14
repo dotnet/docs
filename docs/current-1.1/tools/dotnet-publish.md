@@ -22,19 +22,17 @@ ms.assetid: 8a7e1c52-5c57-4bf5-abad-727450ebeefd
 
 `dotnet publish [project] 
     [--help] [--framework]  
-    [--runtime] [--build-base-path] [--output]  
-    [--version-suffix] [--configuration] [--native-subdirectory] [--no-build]`
+    [--runtime] [--output]  
+    [--version-suffix] [--configuration]`
 
 ## Description
 
-`dotnet publish` compiles the application, reads through its dependencies specified in the [project.json](project-json.md) file and publishes the resulting set of files to a directory. 
+`dotnet publish` compiles the application, reads through its dependencies specified in the project file and publishes the resulting set of files to a directory. 
 
 Depending on the type of portable app, the resulting directory will contain the following:
 
-1. *Portable application* - application's intermediate language (IL) code and all of application's managed dependencies.
-    * *Portable application with native dependencies* - same as above with a sub-directory for the supported platform of each native
-    dependency. 
-2. *Self-contained application* - same as above plus the entire runtime for the targeted platform.
+1. *Framework-dependent deployment* - application's intermediate language (IL) code and all of application's managed dependencies.
+2. *Self-contained deployment* - same as above plus the entire runtime for the targeted platform.
 
 For more information, see the [.NET Core Application Deployment](../deploying/index.md) topic.
 
@@ -57,10 +55,6 @@ Publishes the application for a given framework identifier (FID). If not specifi
 
 Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../rid-catalog.md).
 
-`-b|--build-base-path <OUTPUT_DIRECTORY>`
-
-Directory in which to place temporary outputs.
-
 `-o|--output <OUTPUT_PATH>`
 
 Specify the path where to place the directory. If not specified, it will default to *_./bin/[configuration]/[framework]/_* 
@@ -73,12 +67,6 @@ Defines what `*` should be replaced with in the version field in the project.jso
 `-c|--configuration [Debug|Release]`
 
 Configuration to use when publishing. The default value is `Debug`.
-
-`[--native-subdirectory]`
-Temporary mechanism to include subdirectories from native assets of dependency packages in output. 
-
-`[--no-build]`
-Does not build projects before publishing.
 
 ## Examples
 

@@ -19,8 +19,7 @@ dotnet-build -- Builds a project and all of its dependencies
 
 ## Synopsis
 
-`dotnet build [--help] [--output]  
-    [--build-base-path] [--framework]  
+`dotnet build [--help] [--output]  [--framework]  
     [--configuration]  [--runtime] [--version-suffix]
     [--build-profile]  [--no-incremental] [--no-dependencies]
     [<project>]`
@@ -31,7 +30,7 @@ The `dotnet build` command builds multiple source file from a source project and
 By default, the resulting binary is in Intermediate Language (IL) and has a DLL extension. 
 `dotnet build` also drops a `\*.deps` file which outlines what the host needs to run the application.  
 
-Building requires the existence of a lock file, which means that you have to run [`dotnet restore`](dotnet-restore.md) prior to building your code.
+Building requires the existence of an asset file, which means that you have to run [`dotnet restore`](dotnet-restore.md) prior to building your code.
 
 Before any compilation begins, the `build` verb analyzes the project and its dependencies for incremental safety checks.
 If all checks pass, then build proceeds with incremental compilation of the project and its dependencies; 
@@ -44,14 +43,12 @@ compilation process to be incremental:
 - not load compilation tools from PATH (for example, resgen, compilers)
 - use only known compilers (csc, vbc, fsc)
 
-In order to build an executable application instead of a library, you need a [special configuration](project-json.md#emitentrypoint) section in your project.json file:
+In order to build an executable application instead of a library, you need to set the `<OutputType>` property:
 
-```json
-{ 
-    "buildOptions": {
-      "emitEntryPoint": true
-    }
-}
+```xml
+<PropertyGroup>
+    <OutputType>Exe</OutputType>
+</PropertyGroup>
 ```
 
 ## Options
@@ -63,10 +60,6 @@ Prints out a short help for the command.
 `-o|--output <OUTPUT_DIRECTORY>`
 
 Directory in which to place the built binaries. You also need to define `--framework` when you specify this option.
-
-`-b|--build-base-path <OUTPUT_DIRECTORY>`
-
-Directory in which to place temporary outputs.
 
 `-f|--framework <FRAMEWORK>`
 

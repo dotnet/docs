@@ -21,13 +21,15 @@ ms.assetid: 8b4b8cef-f56c-4a10-aa01-fde8bfaae53e
 ## Synopsis
 
 `dotnet pack [--help] [--output]  
-    [--no-build] [--build-base-path]  
+    [--no-build] [--include-symbols]
+    [--include-source] [--servicable]
     [--configuration]  [--version-suffix]
     [project]`  
 
 ## Description
 
-The `dotnet pack` command builds the project and creates NuGet packages. The result of this operation is two packages with the `nupkg` extension. One package contains the code and the other contains the debug symbols. 
+The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a nuget package. If the `--include-symbols` 
+option is present, another package containing the debug symbols will be created. 
 
 NuGet dependencies of the project being packed are added to the nuspec file, so they are able to be resolved when the package is installed. 
 Project-to-project references are not packaged inside the project. Currently, you need to have a package per project if you have project-to-project dependencies.
@@ -53,9 +55,13 @@ Places the built packages in the directory specified.
 
 Does not build the project before packing. 
 
-`--build-base-path`
+`--include-source`
 
-Places the temporary build artifacts in the specified directory. By default, they go to the `obj` directory in the current directory. 
+Includes the source files into the nuget package. The sources files are included in the `src` folder within the nupkg. 
+
+`--include-symbols`
+
+Generate the symbols nupkg. 
 
 `-c|--configuration <Debug|Release>`
 

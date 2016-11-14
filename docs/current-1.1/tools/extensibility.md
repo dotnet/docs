@@ -4,7 +4,7 @@ description: .NET Core CLI extensibility model
 keywords: CLI, extensibility, custom commands, .NET Core
 author: mairaw
 manager: wpickett
-ms.date: 06/20/2016
+ms.date: 11/13/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies

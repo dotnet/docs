@@ -1,0 +1,96 @@
+---
+title: dotnet-migrate command | .NET Core SDK
+description: The dotnet-migrate command migrates a project and all of its dependencies. 
+keywords: dotnet-migrate, CLI, CLI command, .NET Core
+author: mairaw
+manager: wpickett
+ms.date: 11/13/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 70285a83-4103-4617-be8b-d0e1e9a4a91d
+---
+
+#dotnet-migrate
+
+## Name 
+dotnet-migrate -- Migrates a Preview 2 .NET Core project to Preview 3 .NET Core project
+
+## Synopsis
+
+`dotnet migrate [--help] [--template-file]  
+    [--sdk-package-version] [--xproj-file]  
+    [--skip-project-references]  [--report-file] [--format-report-file-json]
+    [--skip-backup]
+    [<arguments>]`
+
+## Description
+The `dotnet migrate` command will migrate a valid Preview 2 `project.json` based project to a valid Preview 3 `csproj` project. 
+By default, the command will migrate the root project and any project references that the root project contains. This behavior 
+can be disabled using the `--skip-project-references` option at runtime. 
+
+Migration can be done on either:
+
+* A single project by specifying the `project.json` file to migrate
+* All of the directories specified in the `global.json` file by passing in a path to the `global.json` file
+* On all sub-directories of the given directory recursively 
+
+The migrate command will keep the migrated `project.json` file inside a `backup` directory which it will create if it doesn't 
+exist. This can be overriden using the `--skip-backup` option. 
+
+By default, the migration operation will output the state of the migration process to standard output (STDOUT). If you use the 
+`--report-file` option, that output will also be saved to a file that you specify. 
+
+As of Preview 3, the `dotnet migrate` command only supports valid Preview 2 `project.json` files. This means that you cannot 
+use it to migrate old DNX or Preview 1 `project.json` files directly to csproj; you first need to migrate them to Preview 2 project.json files and then 
+to csproj files. In the future, we will add support for Preview 1 projects. 
+
+## Options
+
+`-h|--help`
+
+Prints out a short help for the command.  
+
+`-t|--template-file <TEMPLATE_FILE>`
+
+Template csproj file to use for migration. By default, the same template as the one dropped by `dotnet new` will be used. 
+
+`-v|--sdk-package-version <VERSION>`
+
+The version of the sdk package that will be referenced in the migrated app. The default is the version of the sdk in dotnet new.
+
+`-x|--xproj-file <FILE>`
+
+The path to the xproj file to use. Required when there is more than one xproj in a project directory.
+
+`-s|--skip-project-references [Debug|Release]`
+
+Skip migrating project references. By default project references are migrated recursively.
+
+`-r|--report-file <REPORT_FILE>`
+
+Output migration report to a file in addition to the console.
+
+`--format-report-file-json <REPORT_FILE>`
+
+Output migration report file as json rather than user messages.
+
+`--skip-backup`
+
+Skip moving project.json, global.json, and \*.xproj to a `backup` directory after successful migration.
+
+## Examples
+
+Migrate a project in the current directory and all of its P2P dependencies:
+
+`dotnet migrate`
+
+Migrate all projects that `global.json` file points to:
+
+`dotnet migrate path/to/global.json`
+
+Migrate only the current project and no P2P dependencies and use a specific SDK version:
+
+`dotnet migrate -s -v 1.0.0-preview3`
+

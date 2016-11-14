@@ -21,6 +21,8 @@ You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the
 
 F# 4.0 or higher must be installed on your machine to use Ionide.
 
+You must also have [git installed](https://git-scm.com/download) and available on your PATH to make use of project templates in Ionide.  You can verify that it is installed correctly by typing `git` at a command prompt.and pressing **Enter**.
+
 ### Windows
 
 If you're on Windows, you have two options for installing F#.
@@ -93,7 +95,7 @@ You can install Visual Studio Code from the [code.visualstudio.com](https://code
 
 The only plugin required for F# support in Visual Studio Code is [Ionide-fsharp](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).  However, you can also install [Ionide-FAKE](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-FAKE) and to get [FAKE](http://fsharp.github.io/FAKE/) support and [Ionide-Paket](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-Paket) to get [Paket](https://fsprojects.github.io/Paket/) support.  FAKE and Paket are additonal F# community tools for building projects and managing dependencies, respectively.
 
-## Creating your first project Ionide
+## Creating your first project with Ionide
 
 To create a new F# project, open Visual Studio Code in a new directory (you can name it whatever you like).  Next, open the Command Palette (Ctrl+P on Windows, ⌘+P on macOS, Ctrl+Shift+P on Linux) and type the following:
 

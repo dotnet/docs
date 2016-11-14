@@ -16,8 +16,8 @@ ms.assetid: c0d70120-78c8-4d26-bb3c-801f42fc2366
 # Migrating from DNX to .NET Core CLI
 
 ## Overview
-With RC1 release of .NET Core and ASP.NET Core 1.0, we introduced DNX tooling to the world. With RC2 release of .NET 
-Core and ASP.NET Core 1.0 we transitioned to the .NET Core CLI.
+The RC1 release of .NET Core and ASP.NET Core 1.0 introduced DNX tooling. The RC2 release of .NET 
+Core and ASP.NET Core 1.0 moved from DNX to the .NET Core CLI.
 
 As a slight refresher, let's recap what DNX was about. DNX was a runtime and a toolset used to build .NET Core and, 
 more specifically, ASP.NET Core 1.0 applications. It consisted of 3 main pieces:

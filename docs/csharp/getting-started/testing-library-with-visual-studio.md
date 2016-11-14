@@ -1,10 +1,10 @@
 ---
-title: Testing a Class Library with .NET Core in Visual Studio 2017
+title: Testing a class library with .NET Core in Visual Studio 2017
 description: Learn how to test a class library written in C# using Visual Studio 2017
 keywords: .NET Core, .NET Standard class library, Visual Studio 2017, unit testing 
-author: rpetrusha
+author: stevehoag
 manager: wpickett
-ms.author: ronpet
+ms.author: shoag
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net-core
@@ -13,27 +13,27 @@ ms.devlang: dotnet
 ms.assetid: 069ad711-3eaa-45c6-94d7-b40249cc8b99
 ---
 
-# Testing a Class Library with .NET Core in Visual Studio 2017 RC #
+# Testing a class library with .NET Core in Visual Studio 2017 RC #
 
-In [Building a Class Library with C# and .NET Core in Visual Studio 2017 RC](library-with-visual-studio.md), we created a simple class library that adds an extension method to the @System.String class. Now, we'll create a unit test to make sure that it works as expected. We'll add our unit test project to the solution we created in the previous topic.
+In [Building a class library with C# and .NET Core in Visual Studio 2017 RC](library-with-visual-studio.md), we created a simple class library that adds an extension method to the @System.String class. Now, we'll create a unit test to make sure that it works as expected. We'll add our unit test project to the solution we created in the previous topic.
 
 ## Creating a unit test project ##
 
 To create the unit test project, do the following:
 
-1. In the Visual Studio Solution Explorer, right-click on the `ClassLibraryProject` solution, and choose *Add*, *New Project*.
+1. In Solution Explorer, open the context menu for the **ClassLibraryProject** solution node, and choose **Add**, **New Project**.
 
-      [!NOTE] In addition to a Unit Test project, you can also use Visual Studio to create an XUnit test project for .NET Core. For a walkthrough that includes an XUnit test project, see [Getting started with .NET Core on Windows, using Visual Studio 2015](../../core/tutorials/using-on-windows.md).
+   <!-- Need a VS 2017 version  [!NOTE] In addition to a Unit Test project, you can also use Visual Studio to create an XUnit test project for .NET Core. For a walkthrough that includes an XUnit test project, see [Getting started with .NET Core on Windows, using Visual Studio 2015](../../core/tutorials/using-on-windows.md). --> 
 
-1. In the *Add New Project* dialog box, open the *Visual C#* node and the *.NET Core* node. Then choose the *Unit Test Project (.NET Core)* project and name it `StringLibraryTest`, as the following figure shows.
+1. In the **Add New Project** dialog box, expand the **Visual C#** node and the **.NET Core** node, then choose the **Unit Test Project (.NET Core)** project template and name it `StringLibraryTest`, as the following figure shows.
 
-   [!Image](./media/testproject.jpg)
+   ![Image](./media/testproject.jpg)
 
-1. Choose the *OK* button to create the project. Visual Studio creates the project and opens the `UnitTest1.cs` file in the code window, as the following figure shows.
+1. Choose the **OK** button to create the project. Visual Studio creates the project and opens the `UnitTest1.cs` file in the code window, as the following figure shows.
 
-   [!Image](./media/unit_test_code_window.jpg)
+   ![Image](./media/unit_test_code_window.jpg)
 
-   The souce code created by the unit test template does the following:
+   The source code created by the unit test template does the following:
 
    - It imports the [Microsoft.VisualStudio.TestTools.UnitTesting](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.aspx) namespace, which contains the types used for unit testing.
 
@@ -41,11 +41,11 @@ To create the unit test project, do the following:
 
    - It applies the [\[TestMethod\]](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.testmethodattribute.aspx) attribute to define `TestMethod1` as a test method to be automatically executed when the unit test is run.
 
-1. Add a reference to our class library project, `StringLibrary`. To do this, right-click on **Dependencies** for the `StringLibraryTest` project in **Solution Explorer**, and choose **Add Reference**.
+1. In Solution Explorer, open the context menu for the **Dependencies** node of the **StringLibraryTest** project and choose **Add Reference**. This adds a reference to our class library project, `StringLibrary`. 
 
-1. In the **Reference Manager** dialog, choose **Solution** in the **Projects** node. Then check the box next to **StringLibrary**, as the following figure shows. Adding a reference to the `StringLibrary` assembly allows the compiler to resolve calls to **StringLibrary** methods.
+1. In the **Reference Manager** dialog, expand the **Projects** node and choose **Solution**, and then check the box next to **StringLibrary**, as the following figure shows. Adding a reference to the `StringLibrary` assembly allows the compiler to resolve calls to **StringLibrary** methods.
 
-   [!Image](./media/add_reference.jpg)
+   ![Image](./media/add_reference.jpg)
 
 1. Click the **OK** button to close the **Reference Manager** dialog.
 
@@ -65,7 +65,7 @@ The most common tests call members of the [Assert](https://msdn.microsoft.com/en
 
 In addition, the [\[ExpectedException\]](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.expectedexceptionattribute.aspx) attribute can be used to indicate the type of exception a test method is expected to throw. You use it to test conditions that should result in an exception. The test fails if the specified exception is not thrown.
 
-In testing the `StringLibrary.StartsWithUpper` method, we want to provide a number of strings that begin with an uppercase character. We expect the method to return True in these cases, so we can call the [Assert.IsTrue(Boolean, String)](https://msdn.microsoft.com/en-us/library/ms243754.aspx) method. Similarly, we want to provide a number of strings that begin with something other than an uppercase character. We expect the method to return False in these cases, so we can call the [Assert.IsFalse(Boolean, String)](https://msdn.microsoft.com/en-us/library/ms243805.aspx) method.
+In testing the `StringLibrary.StartsWithUpper` method, we want to provide a number of strings that begin with an uppercase character. We expect the method to return `True` in these cases, so we can call the [Assert.IsTrue(Boolean, String)](https://msdn.microsoft.com/en-us/library/ms243754.aspx) method. Similarly, we want to provide a number of strings that begin with something other than an uppercase character. We expect the method to return False in these cases, so we can call the [Assert.IsFalse(Boolean, String)](https://msdn.microsoft.com/en-us/library/ms243805.aspx) method.
 
 Since our library method handles strings, we also want to make sure that it successfully handles an [empty string](xref:System.String.Empty) (a valid string that has no characters and whose @System.String.Length is 0) and a `null` string (a string that has not been initialized). If `StartsWithUpper` is called as an extension method on a @System.String instance, it cannot be passed a `null` string. However, it can also be called directly as a static method and passed a single @System.String argument.
 
@@ -73,23 +73,23 @@ We'll define three methods, each of which calls its [Assert](https://msdn.micros
 
 To create the the test methods:
 
-1. Replace the `TestMethod1` method created by Visual Studio with the following code:
+1. Replace the code in the code window with the following code:
 
    [!CODE-csharp[Test#1](../../../samples/snippets/csharp/getting_started/library-with_visual_studio/testlib1.cs#1)]
 
    Note that our test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C), and the test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 
-1. Save the file by choosing **File**, **Save UnitTest1.cs As...***. In the **File Save As** dialog, choose the arrow beside the **Save** button, and choose **Save with Encoding...***.
+1. On the menu bar, choose **File**, **Save UnitTest1.cs As...**. In the **File Save As** dialog, choose the arrow beside the **Save** button, and then choose **Save with Encoding...***.
 
-1. Visual Studio will prompt whether you want to replace the existing file. Choose the **Yes** button.
+1. In the Confirm Save As dialog, choose the **Yes** button to save the file.
 
-1. From the **Encoding** drop-down list of the **Advanced Save Options** dialog, choose **Unicode (UTF-8 with signature) - Codepage 65001**, and choose **OK**.
+1. From the **Encoding** drop-down list of the **Advanced Save Options** dialog, choose **Unicode (UTF-8 with signature) - Codepage 65001**, and then choose **OK**.
 
    If you fail to save your source code in a UTF8-encoded file, Visual Studio may save it as an ASCII file. In that case, the runtime will not accurately decode characters outside the ASCII range, and the test results will not be accurate.
 
-1. Run the test by choosing **Test**, **Run**, **All Tests**. The **Test Explorer** window should open and show that both tests have run successfully, as the following figure shows. Note that the three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
+1. On the menu bar, choose **Test**, **Run**, **All Tests**. The **Test Explorer** window should open and show that both tests have run successfully, as the following figure shows. Note that the three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
 
-   [!Image](./media/first_test.jpg)
+   ![Image](./media/first_test.jpg)
 
 ## Handling test failures ##
 
@@ -104,11 +104,11 @@ Our test run had no failures, so let's change it slightly so that one of the tes
 
 1. Run the test by choosing **Test**, **Run**, **All Tests**. The **Test Explorer** window now indicates that two tests have succeeded and one failed, as the following figure shows.
 
-   [!Image](./media/failed_test.jpg)
+   ![Image](./media/failed_test.jpg)
 
 1. Choose the failed test, `TestDoesNotStartWith`, in the **Failed Tests** section. The lower pane of the **Test Explorer** displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True", as the following figure of **Test Explorer** shows. Because of the failure, all strings in the array after "Error" were not tested.
 
-   [!Image](./media/solution_explorer.jpg)
+   ![Image](./media/failed_test2.jpg)
 
 1. Remove the code that was added (`"Error", `) and rerun the test. It should now pass.
 
@@ -118,11 +118,11 @@ We've been running our tests against the Debug version of the library. Now that 
 
 To test the Release build:
 
-1. In the Visual Studio toolbar, change the build configuration from **Debug** to **Release**, and change the project to **StringLibrary** if necessary. The following figure shows a portion of the toolbar.
+1. In the Visual Studio toolbar, change the build configuration from **Debug** to **Release**. The following figure shows a portion of the toolbar.
 
-   [!Image](./media/lib_release.jpg)
+   ![Image](./media/lib_release.jpg)
 
-1. Recompile your library by right-clicking the `StringLibrary` project in **Solution Explorer** and choosing the **Build** option.
+1. In **Solution Explorer**, open the context menu for the **StringLibrary** project node and choose **Build** to recompile the library.
 
 1. Re-run the unit tests by choosing **Test**, **Run**, **All Tests** from the Visual Studio menu. The tests should all pass.
 

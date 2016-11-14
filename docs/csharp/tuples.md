@@ -25,3 +25,17 @@ ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
 >
 > Learn more about how you can contribute on [GitHub](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md).
 >
+
+<!-- 
+
+Ideas while writing the main C# 7 article:
+
+. Go into detail on the 'shape' of a tuple and assignment between Tuples
+
+. Go into detail on deconstruction methods
+
+. Consider examples where a LINQ query returns a subset of the columns for a database record.
+
+
+--> 
+

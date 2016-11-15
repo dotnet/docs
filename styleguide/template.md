@@ -254,7 +254,7 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 
 ##### C&#9839;
 
-```c#
+```cs
 using System;
 namespace HelloWorld
 {

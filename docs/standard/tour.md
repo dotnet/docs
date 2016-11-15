@@ -76,7 +76,7 @@ Objects are allocated in terms of types. The only operations allowed for a given
 
 Type safety is also used to help enforce encapsulation by guaranteeing the fidelity of the accessor keywords. Accessor keywords are artifacts which control access to members of a given type by other code. These are usually used for various kinds of data within a type that are used to manage its behavior.
 
-[!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L3)]
+[!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L3-L3)]
 
 C#, Visual Basic, and F# support local **type inference**. Type inference means that the compiler will deduce the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type **has** a strong type with everything that implies. Let's rewrite the first two lines of the previous example to introduce type inference. You will note that the rest of the example is completely the same.
 
@@ -136,7 +136,7 @@ Below is a modified version of the `ToString()` method from the `StringBuilder` 
 
 ## Next Steps
 
-If you're interested in a tour of C# features, check out [Tour of C#](../csharp/tour/index.md).
+If you're interested in a tour of C# features, check out [Tour of C#](../csharp/tour-of-csharp/index.md).
 
 If you're interested in a tour of F# features, check out [Tour of F#](../fsharp/tour.md).
 

@@ -15,7 +15,7 @@ ms.assetid: a19545d3-24af-4a32-9778-cfb5ae938287
 
 # Publishing your Hello World application with Visual Studio 2017
 
-Publishing for .NET Core console applications and class libraries has not yet been implemented in the RC release. It will be implement in the final release of Visual Studio 2015.
+Publishing for .NET Core console applications and class libraries has not yet been implemented in the RC release. It will be implemented in the final release of Visual Studio 2015.
 
 You can publish your application using the [dotnet.exe](../../core/tools/dotnet.md) command line utility. To do this:
 

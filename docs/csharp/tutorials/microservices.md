@@ -66,7 +66,7 @@ Otherwise install the latest NodeJs from [nodejs.org](https://nodejs.org) which 
 
 At this point you will need to install a number of command line tools that support
 ASP.NET core development. The command line templates use Yeoman, Bower,
-Grunt, and Gulp to be installed. If you have them installed that is good, otherwise type the following into your favorite shell:
+Grunt, and Gulp. If you have them installed that is good, otherwise type the following into your favorite shell:
 
 `npm install -g yo bower grunt-cli gulp`
 

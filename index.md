@@ -1,5 +1,6 @@
 ---
 layout: HubPage
+hide_bc: true
 
 title: .NET Documentation
 description:

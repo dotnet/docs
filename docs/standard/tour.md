@@ -32,7 +32,7 @@ To learn how to set up a development environment to run the code samples, check 
 
 .NET supports multiple programming languages.  .NET runtimes implement the [Common Language Infrastructure (CLI)](https://www.visualstudio.com/en-us/mt639507), which (among other things) specifies a language-independent runtime and language interoperability.  This means that you can choose any .NET language to build apps and services on .NET.
 
-Microsoft actively developes and supports three .NET languages: C#, F#, and Visual Basic .NET. 
+Microsoft actively develops and supports three .NET languages: C#, F#, and Visual Basic .NET. 
 
 * C# is simple, powerful, type-safe, and object-oriented while retaining the expressiveness and elegance of C-style languages. Anyone familiar with C and similar languages will find few problems in adapting to C#.  Check out the [C# Guide](../csharp/index.md) to learn more about C#.
 

@@ -14,15 +14,11 @@ ms.assetid: cb788dcf-2120-467f-9c34-c02a90e1f68f
 
 # Welcome to .NET
 
-> Check out the ["Getting Started with .NET Core" tutorials](core/getting-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
+See ["Getting Started with .NET Core"](core/getting-started.md) to learn how to create a simple .NET Core app. 
 
-Welcome to .NET! You can build any kind of application you want with .NET, from cloud to IoT to games. You can start building your next application today, for Windows, Linux, Android, macOS, and iOS. There are millions of developers that use .NET to power mission critical applications, personal apps and immersive games. You can write the next one.
-
-You can develop apps and games on Windows, macOS and Linux. There are free tools that you can use to build apps or games and deploy them on servers or desktops or publish them to app stores. It's accessible to students and  used by large businesses throughout the world.
+You can build many types of apps with .NET, such as cloud, IoT and games. Your app can run on Windows, Linux, Android, macOS, and iOS. There are free tools that you can use to build apps or games. You can deploy them on servers or desktops or publish them to app stores. It's accessible to students.
 
 ## News
-
-There is always something new to learn or explore in the .NET community. Here's the latest news you may want to check out.
 
 - [Introducing .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)
 - [.NET Core 1.0.1 announcement](https://blogs.msdn.microsoft.com/dotnet/2016/09/13/announcing-september-2016-updates-for-net-core-1-0/)
@@ -35,7 +31,7 @@ There is always something new to learn or explore in the .NET community. Here's 
 
 ## Documentation
 
-This documentation will show you how to build an app from scratch or finish one that you are already working on. Key sections you should check out:
+This documentation will show you how to build an app from scratch. Key sections:
 
 - [C# Guide](csharp/index.md)
 - [F# Guide](fsharp/index.md)
@@ -50,4 +46,4 @@ Many parts of .NET are built by open source contributors. You can contribute to 
 
 ## Community
 
-Welcome to the .NET community. You can join other people who are already active in the [.NET community](https://www.microsoft.com/net/community), to find out what's new or ask for help.
+You can join other people who are already active in the [.NET community](https://www.microsoft.com/net/community), to find out what's new or ask for help.

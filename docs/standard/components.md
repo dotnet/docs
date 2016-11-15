@@ -27,7 +27,7 @@ What follows is a brief explanation of each of the key concepts shown above.
 
 The .NET Standard Library is a set of APIs which are implemented by a .NET runtime.
 
-More formally, it is a specification of .NET APIs which defines a uniform set of API contracts that you compile your code against.  These contracts have underlying implementations in a given .NET runtime.  This set of contractsenable portability across different .NET runtimes, making it so that your code can effectively "run everywhere".
+More formally, it is a specification of .NET APIs which makeup a uniform set of contracts that you compile your code against.  These contracts have underlying implementations in a given .NET runtime.  This set of contracts enable portability across different .NET runtimes, making it so that your code can effectively "run everywhere".
 
 The .NET Standard Library is also a base level for specifying dependencies for your code, where it is known as the .NET Standard.  You can "target" .NET Standard 1.0-1.6 right now, and will be able to target .NET Standard 2.0+ in the future.  If your code targets a version of the .NET Standard, it is guaranteed to run on any .NET runtime which implements that version.
 

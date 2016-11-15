@@ -59,7 +59,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
 -   Delegates can be chained together; for example, multiple methods can be called on a single event.  
   
--   Methods do not have to match the delegate type exactly. For more information, see [Using Variance in Delegates](../Topic/Using%20Variance%20in%20Delegates%20\(C%23%20and%20Visual%20Basic\).md).  
+-   Methods do not have to match the delegate type exactly. For more information, see [Using Variance in Delegates](../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md).  
   
 -   C# version 2.0 introduced the concept of [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md), which allow code blocks to be passed as parameters in place of a separately defined method. C# 3.0 introduced lambda expressions as a more concise way of writing inline code blocks. Both anonymous methods and lambda expressions (in certain contexts) are compiled to delegate types. Together, these features are now known as anonymous functions. For more information about lambda expressions, see [Anonymous Functions](../../../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md).  
   
@@ -73,7 +73,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
 -   [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
   
--   [Using Variance in Delegates](../Topic/Using%20Variance%20in%20Delegates%20\(C%23%20and%20Visual%20Basic\).md)  
+-   [Using Variance in Delegates](../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md)  
   
 -   [How to: Combine Delegates (Multicast Delegates)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)  
   

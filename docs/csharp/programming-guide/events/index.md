@@ -52,7 +52,7 @@ Events enable a [class](../../../csharp/language-reference/keywords/class.md) or
   
 -   Events are typically used to signal user actions such as button clicks or menu selections in graphical user interfaces.  
   
--   When an event has multiple subscribers, the event handlers are invoked synchronously when an event is raised. To invoke events asynchronously, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+-   When an event has multiple subscribers, the event handlers are invoked synchronously when an event is raised. To invoke events asynchronously, see [Calling Synchronous Methods Asynchronously](https://msdn.microsoft.com/library/2e08f6yc).  
   
 -   In the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] class library, events are based on the <xref:System.EventHandler> delegate and the <xref:System.EventArgs> base class.  
   
@@ -67,7 +67,7 @@ Events enable a [class](../../../csharp/language-reference/keywords/class.md) or
   
 -   [How to:  Implement Interface Events](../../../csharp/programming-guide/events/how-to-implement-interface-events.md)  
   
--   [Thread Synchronization](../Topic/Thread%20Synchronization%20\(C%23%20and%20Visual%20Basic\).md)  
+-   [Thread Synchronization](../../../csharp/programming-guide/concepts/threading/thread-synchronization.md)  
   
 -   [How to: Use a Dictionary to Store Event Instances](../../../csharp/programming-guide/events/how-to-use-a-dictionary-to-store-event-instances.md)  
   
@@ -86,4 +86,4 @@ Events enable a [class](../../../csharp/language-reference/keywords/class.md) or
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Delegates](../../../csharp/programming-guide/delegates/index.md)   
  [Creating Event Handlers in Windows Forms](https://msdn.microsoft.com/library/dacysss4.aspx)   
- [Multithreaded Programming with the Event-based Asynchronous Pattern](../Topic/Multithreaded%20Programming%20with%20the%20Event-based%20Asynchronous%20Pattern.md)
+ [Multithreaded Programming with the Event-based Asynchronous Pattern](https://msdn.microsoft.com/library/hkasytyf)

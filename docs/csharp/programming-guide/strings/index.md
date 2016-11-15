@@ -133,7 +133,7 @@ string s = String.Empty;
  [!code-cs[csProgGuideStrings#15](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_12.cs)]  
   
 ## Strings, Extension Methods and LINQ  
- Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable%601>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they are available nevertheless. You can also use [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] query expressions on strings. For more information, see [LINQ and Strings](../Topic/LINQ%20and%20Strings.md).  
+ Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable%601>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they are available nevertheless. You can also use [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] query expressions on strings. For more information, see [LINQ and Strings](../../../csharp/programming-guide/concepts/linq/linq-and-strings.md).  
   
 ## Related Topics  
   
@@ -147,11 +147,11 @@ string s = String.Empty;
 |[How to: Search Strings Using Regular Expressions](../../../csharp/programming-guide/strings/how-to-search-strings-using-regular-expressions.md)|Explains how to use regular expressions to search strings.|  
 |[How to: Determine Whether a String Represents a Numeric Value](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)|Shows how to safely parse a string to see whether it has a valid numeric value.|  
 |[How to: Convert a String to a DateTime](../../../csharp/programming-guide/strings/how-to-convert-a-string-to-a-datetime.md)|Shows how to convert a string such as "01/24/2008" to a <xref:System.DateTime?displayProperty=fullName> object.|  
-|[Basic String Operations](../Topic/Basic%20String%20Operations%20in%20the%20.NET%20Framework.md)|Provides links to topics that use <xref:System.String?displayProperty=fullName> and <xref:System.Text.StringBuilder?displayProperty=fullName> methods to perform basic string operations.|  
-|[Parsing Strings](../Topic/Parsing%20Strings%20in%20the%20.NET%20Framework.md)|Describes how to insert characters or empty spaces into a string.|  
-|[Comparing Strings](../Topic/Comparing%20Strings%20in%20the%20.NET%20Framework.md)|Includes information about how to compare strings and provides examples in C# and Visual Basic.|  
-|[Using the StringBuilder Class](../Topic/Using%20the%20StringBuilder%20Class%20in%20the%20.NET%20Framework.md)|Describes how to create and modify dynamic string objects by using the <xref:System.Text.StringBuilder> class.|  
-|[LINQ and Strings](../Topic/LINQ%20and%20Strings.md)|Provides information about how to perform various string operations by using LINQ queries.|  
+|[Basic String Operations](https://msdn.microsoft.com/library/a292he7t)|Provides links to topics that use <xref:System.String?displayProperty=fullName> and <xref:System.Text.StringBuilder?displayProperty=fullName> methods to perform basic string operations.|  
+|[Parsing Strings](https://msdn.microsoft.com/library/b4w53z0y)|Describes how to insert characters or empty spaces into a string.|  
+|[Comparing Strings](https://msdn.microsoft.com/library/fbh501kz)|Includes information about how to compare strings and provides examples in C# and Visual Basic.|  
+|[Using the StringBuilder Class](../../../standard/base-types/stringbuilder.md)|Describes how to create and modify dynamic string objects by using the <xref:System.Text.StringBuilder> class.|  
+|[LINQ and Strings](../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)|Provides information about how to perform various string operations by using LINQ queries.|  
 |[C# Programming Guide](../../../csharp/programming-guide/index.md)|Provides links to topics that explain programming constructs in C#.|  
   
 ## Featured Book Chapter  

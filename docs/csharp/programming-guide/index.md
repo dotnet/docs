@@ -74,7 +74,7 @@ This section provides detailed information on key C# language features and featu
   
  [Generics](../../csharp/programming-guide/generics/index.md)  
   
- [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Iterators](../../csharp/programming-guide/concepts/iterators.md)
   
  [LINQ Query Expressions](../../csharp/programming-guide/linq-query-expressions/index.md)  
   
@@ -95,7 +95,7 @@ This section provides detailed information on key C# language features and featu
   
  [Attributes](../../csharp/programming-guide/concepts/attributes/index.md)  
   
- [Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Collections](../../csharp/programming-guide/concepts/collections.md)  
   
  [Exceptions and Exception Handling](../../csharp/programming-guide/exceptions/exceptions-and-exception-handling.md)  
   
@@ -103,7 +103,7 @@ This section provides detailed information on key C# language features and featu
   
  [Interoperability](../../csharp/programming-guide/interop/interoperability.md)  
   
- [Reflection](../Topic/Reflection%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Reflection](../../csharp/programming-guide/concepts/reflection.md)  
   
 ## Featured Book Chapter  
  [Advanced C#](http://go.microsoft.com/fwlink/?LinkId=195407) in [C# 3.0 in a Nutshell, Third Edition: A Desktop Quick Reference](http://go.microsoft.com/fwlink/?LinkId=195406)  

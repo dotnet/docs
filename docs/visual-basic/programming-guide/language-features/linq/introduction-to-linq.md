@@ -218,7 +218,6 @@ Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](..
  [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
  [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)   
  [LINQ to DataSet Overview](http://msdn.microsoft.com/library/dc20a8fb-03f6-4b68-9c2b-7f7299e3070b)   
- [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)   
- [LINQ Samples](../Topic/LINQ%20Samples.md)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
  [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)   
  [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

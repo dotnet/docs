@@ -1,9 +1,10 @@
 ---
 title: Tour of .NET
 description: A guided tour through some of the prominent features of the .NET platform.
-keywords: .NET, .NET Core, Tour, Programming Languages, 
-author: richlander
+keywords: .NET, .NET Core, Tour, Programming Languages, Unsafe, Memory Management, Type Safety, Async
+author: cartermp
 manager: wpickett
+ms.author: phcart
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net-core
@@ -45,21 +46,13 @@ Microsoft actively developes and supports three .NET languages: C#, F#, and Visu
 
 The following two lines both allocate memory:
 
-```cs
-var title = ".NET Primer";
-var list = new List<string>();
-```
+[!code-csharp[MemoryManagement](../../samples/csharp/scripts/tour/MemoryManagement.csx#L1-L2)]
 
 There is no analogous keyword to de-allocate memory, as de-allocation happens automatically when the garbage collector reclaims the memory through its scheduled run.
 
 Types within a given scope normally go out of scope once a method completes, at which point they can be collected. However, you can indicate to the GC that a particular object is out of scope sooner than method exit using the `using` statement:
 
-```cs
-using (FileStream stream = GetFileStream(context))
-{
-    // Operations on the stream
-}
-```
+[!code-csharp[MemoryManagement](../../samples/csharp/scripts/tour/MemoryManagement.csx#L6-L9)]
 
 Once the `using` block completes, the GC will know that the `stream` object in the example above is free to be collected and its memory reclaimed.
 
@@ -71,10 +64,7 @@ The .NET runtime provides additional services, to complete the promise of memory
 
 The following example will throw an exception as a result of memory safety.
 
-```cs
-int[] numbers = new int[42];
-int number = numbers[42]; // will throw (indexes are 0-based)
-```
+[!code-csharp[MemoryManagement](../../samples/csharp/scripts/tour/MemoryManagement.csx#L11-L12)]
 
 ## Type safety
 
@@ -82,31 +72,15 @@ Objects are allocated in terms of types. The only operations allowed for a given
 
 .NET languages are object-oriented, with hierarchies of base and derived classes. The .NET runtime will only allow object casts and calls that align with the object hierarchy. Remember that every type defined in any .NET language derives from the base `object` type.
 
-```cs
-Dog dog = AnimalShelter.AdoptDog(); // Returns a Dog type.
-Pet pet = (Pet)dog; // Dog derives from Pet.
-Car car = (Car)dog; // Will throw - no relationship between Car and Dog.
-object temp = (object)dog; // Legal - a Dog is an object.
-car = (Car)temp; // Will throw - the runtime isn't fooled.
-```
+[!code-csharp[TypeSafety](../../samples/csharp/scripts/tour/TypeSafety.csx#L18-L23)]
 
 Type safety is also used to help enforce encapsulation by guaranteeing the fidelity of the accessor keywords. Accessor keywords are artifacts which control access to members of a given type by other code. These are usually used for various kinds of data within a type that are used to manage its behavior.
 
-```cs
-Dog dog = Dog._nextDogToBeAdopted; // will throw - this is a private field
-```
+[!code-csharp[TypeSafety](../../samples/csharp/scripts/tour/TypeSafety.csx#L3)]
 
 C#, Visual Basic, and F# support local **type inference**. Type inference means that the compiler will deduce the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type **has** a strong type with everything that implies. Let's rewrite the first two lines of the previous example to introduce type inference. You will note that the rest of the example is completely the same.
 
-```cs
-var dog = Dog.AdoptDog();
-var pet = (Pet)dog;
-pet.ActCute();
-Car car = (Car)dog; // will throw - no relationship between Car and Dog
-object temp = (object)dog; // legal - a Dog is an object
-car = (Car)temp; // will throw - the runtime isn't fooled
-car.Accelerate() // the dog won't like this, nor will the program get this far
-```
+[!code-csharp[TypeSafety](../../samples/csharp/scripts/tour/TypeSafety.csx#L28-L34)]
 
 F# has even further type inference capabilities than method-local type inference found in C# and Visual Basic.  To learn more, check out [Type Inferece](../fsharp/language-reference/type-inference.md).
 
@@ -126,26 +100,7 @@ Generics were added in order to help programmers implement generic data structur
 
 The below sample shows a basic program running using an instance of @System.Collections.Generic.List%601 types.
 
-```cs
-using System;
-using System.Collections.Generic;
-
-namespace GenericsSampleShort
-{
-    public static void Main(string[] args)
-    {
-        // List<string> is the client way of specifying the actual type for the type parameter T
-        List<string> listOfStrings = new List<string> { "First", "Second", "Third" };
-
-        // listOfStrings can accept only strings, both on read and write.
-        listOfStrings.Add("Fourth");
-
-        // Below will throw a compile-time error, since the type parameter
-        // specifies this list as containing only strings.
-        listOfStrings.Add(1);
-    }
-}
-```
+[!code-csharp[GenericsShort](../../samples/csharp/scripts/tour/GenericsShort.csx)]
 
 For more information, see the [Generic types (Generics) overview](generics.md) article.
 
@@ -175,50 +130,16 @@ Read more about it in the [Native interoperability](native-interop.md) document.
 
 The CLR enables the ability to access native memory and do pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms and system interoperability. Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm. Unsafe code may not execute the same way in different environments, and also loses the benefits of a garbage collector and type safety. It's recommended to confine and centralize unsafe code as much as possible, and test that code thoroughly.
 
-The `ToString()` method from the [StringBuilder class](https://github.com/dotnet/coreclr/blob/master/src/mscorlib/src/System/Text/StringBuilder.cs#L327) illustrates how using `unsafe` code can efficiently implement an algorithm by moving around chunks of memory directly:
+Below is a modified version of the `ToString()` method from the `StringBuilder` class.  It illustrates how using `unsafe` code can efficiently implement an algorithm by moving around chunks of memory directly:
 
-```cs
-public override String ToString() {
-    Contract.Ensures(Contract.Result<String>() != null);
-
-    VerifyClassInvariant();
-
-    if (Length == 0)
-        return String.Empty;
-
-    string ret = string.FastAllocateString(Length);
-    StringBuilder chunk = this;
-    unsafe {
-        fixed (char* destinationPtr = ret)
-        {
-            do
-            {
-                if (chunk.m_ChunkLength > 0)
-                {
-                    // Copy these into local variables so that they are stable even in the presence of ----s (hackers might do this)
-                    char[] sourceArray = chunk.m_ChunkChars;
-                    int chunkOffset = chunk.m_ChunkOffset;
-                    int chunkLength = chunk.m_ChunkLength;
-
-                    // Check that we will not overrun our boundaries.
-                    if ((uint)(chunkLength + chunkOffset) <= ret.Length && (uint)chunkLength <= (uint)sourceArray.Length)
-                    {
-                        fixed (char* sourcePtr = sourceArray)
-                            string.wstrcpy(destinationPtr + chunkOffset, sourcePtr, chunkLength);
-                    }
-                    else
-                    {
-                        throw new ArgumentOutOfRangeException("chunkLength", Environment.GetResourceString("ArgumentOutOfRange_Index"));
-                    }
-                }
-                chunk = chunk.m_ChunkPrevious;
-            } while (chunk != null);
-        }
-    }
-    return ret;
-}
-```
+[!code-csharp[Unsafe](../../samples/csharp/scripts/tour/Unsafe.csx)]
 
 ## Next Steps
 
-blah blah getting started, standard library, languages, concepts
+If you're interested in a tour of C# features, check out [Tour of C#](../chsarp/tour/index.md).
+
+If you're interested in a tour of F# features, check out [Tour of F#](../fsharp/tour.md).
+
+If get started with writing code of your own, check out [Getting Started](getting-started.md).
+
+To learn about important components of .NET, check out [.NET Concepts](concepts.md).

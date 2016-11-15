@@ -65,6 +65,8 @@ The following commands exist for dotnet:
    * Runs tests using a test runner specified in the project.json.
 * [dotnet-pack](dotnet-pack.md)
    * Creates a NuGet package of your code.
+* [dotnet-migrate](dotnet-migrate.md)
+   * Migrates a valid Preview 2 project to a Preview 3 project
 
 ## Examples
 

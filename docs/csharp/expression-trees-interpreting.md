@@ -65,7 +65,7 @@ Expression<Func<int>> sum = () => 1 + 2;
 > because the right-hand side of the assignment is implicitly typed. To understand
 > this more deeply, read [here](implicitly-typed-lambda-expressions.md).
 
-The root node is a `LambaExpression`. In order to get the interesting
+The root node is a `LambdaExpression`. In order to get the interesting
 code on the right hand side of the `=>` operator, you need to find one
 of the children of the `LambdaExpression`. We'll do that with all the
 expressions in this section. The parent node does help us find the return

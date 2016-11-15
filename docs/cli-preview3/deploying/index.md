@@ -14,8 +14,6 @@ ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 
 # .NET Core Application Deployment #
 
-**TODO:** all remains the same except the csproj samples need to become csproj samples
-
 You can create two types of deployments for .NET Core applications: 
 
 - Framework-dependent deployment. As the name implies, framework-dependent deployment (FDD) relies on a shared system-wide version of .NET Core to be present on the target system. Because .NET Core is already present, your app is also portable between installations of .NET Core. Your app contains only its own code and any third-party dependencies that are outside of the .NET Core libraries. FDDs contain .dll files that can be launched by using the [dotnet utility](../tools/dotnet.md) from the command line. For example, `dotnet app.dll` runs an application named `app`.

@@ -82,7 +82,7 @@ Skip moving project.json, global.json, and \*.xproj to a `backup` directory afte
 
 ## Examples
 
-Migrate a project in the current directory and all of its P2P dependencies:
+Migrate a project in the current directory and all of its project to project dependencies:
 
 `dotnet migrate`
 
@@ -90,7 +90,7 @@ Migrate all projects that `global.json` file points to:
 
 `dotnet migrate path/to/global.json`
 
-Migrate only the current project and no P2P dependencies and use a specific SDK version:
+Migrate only the current project and no project to project dependencies and use a specific SDK version:
 
 `dotnet migrate -s -v 1.0.0-preview3`
 

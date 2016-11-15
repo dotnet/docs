@@ -1,6 +1,6 @@
 ---
 title: .NET Core Command Line Tools Preview 3 Architecture 
-description: Preview 3 brings about certain changes to the 
+description: Preview 3 brings about certain changes to the way the overall .NET Core tools are layered. 
 keywords: CLI, extensibility, custom commands, .NET Core
 author: blackdwarf
 manager: wpickett
@@ -24,7 +24,7 @@ This document will describe in high-level the changes that moving from `project.
 # Moving away from project.json
 The biggest change in the Preview 3 tooling for .NET Core is certainly the [move away from project.json to csproj](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/) as the project system. Preview 3 version of the command line tools is the first release of .NET Core command line tooling that does not contain any support for project.json. That means that it cannot be used to build, run or publish project.json based applications and libraries. In order to use this version of the tools, you will need to migrate your existing projects or start new ones. 
 
-As part of this move, the custom build engine that was developed to build project.json projects was replaced with a mature and fully capable build engine called [MSBuild](https://msdn.microsoft.com/en-us/library/dd637714.aspx). MSBuild is a well-known engine in the .NET community, since it has been a key technology since the platform's first release. Of course, because it needs to build .NET Core applications, MSBuild has been ported to .NET Core and can be used on any platform that .NET Core runs on. One of the main promises of .NET Core is that of a cross-platform development stack, and we have made sure that this move does not break that promise.
+As part of this move, the custom build engine that was developed to build project.json projects was replaced with a mature and fully capable build engine called [MSBuild](https://github.com/Microsoft/msbuild). MSBuild is a well-known engine in the .NET community, since it has been a key technology since the platform's first release. Of course, because it needs to build .NET Core applications, MSBuild has been ported to .NET Core and can be used on any platform that .NET Core runs on. One of the main promises of .NET Core is that of a cross-platform development stack, and we have made sure that this move does not break that promise.
 
 > **Note:** if you are new to MSBuild and would like to learn more about it, you can start by reading 
 > the [existing documentation](https://msdn.microsoft.com/en-us/library/dd637714.aspx). 

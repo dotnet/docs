@@ -30,18 +30,13 @@ The `dotnet build` command builds multiple source file from a source project and
 By default, the resulting binary is in Intermediate Language (IL) and has a DLL extension. 
 `dotnet build` also drops a `\*.deps` file which outlines what the host needs to run the application.  
 
-Building requires the existence of an asset file, which means that you have to run [`dotnet restore`](dotnet-restore.md) prior to building your code.
+Building requires the existence of an asset file (a file that lists all of the dependencies of your application), which 
+means that you have to run [`dotnet restore`](dotnet-restore.md) prior to building your code.
 
 Before any compilation begins, the `build` verb analyzes the project and its dependencies for incremental safety checks.
 If all checks pass, then build proceeds with incremental compilation of the project and its dependencies; 
 otherwise, it falls back to non-incremental compilation. Via a profile flag, users can choose to receive additional 
 information on how they can improve their build times.
-
-All projects in the dependency graph that need compilation must pass the following safety checks in order for the 
-compilation process to be incremental:
-- not use pre/post compile scripts
-- not load compilation tools from PATH (for example, resgen, compilers)
-- use only known compilers (csc, vbc, fsc)
 
 In order to build an executable application instead of a library, you need to set the `<OutputType>` property:
 
@@ -63,7 +58,7 @@ Directory in which to place the built binaries. You also need to define `--frame
 
 `-f|--framework <FRAMEWORK>`
 
-Compiles for a specific framework. The framework needs to be defined in the [project.json](project-json.md#frameworks) file.
+Compiles for a specific framework. The framework needs to be defined in the [project file](csproj.md).
 
 `-c|--configuration [Debug|Release]`
 
@@ -75,7 +70,7 @@ Target runtime to build for. For a list of Runtime Identifiers (RIDs) you can us
 
 `--version-suffix [VERSION_SUFFIX]`
 
-Defines what `*` should be replaced with in the version field in the [project.json](project-json.md#version) file. The format follows NuGet's version guidelines. 
+Defines what `*` should be replaced with in the version field in the [project file](project-json.md#version) file. The format follows NuGet's version guidelines. 
 
 `--build-profile`
 

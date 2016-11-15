@@ -44,7 +44,7 @@ Prints out a short help for the command.
 
 `[project]` 
     
-The project to pack. It can be either a path to a [project.json](project-json.md) file or to a directory. If omitted, it will
+The project to pack. It can be either a path to a [csproj file](csproj.md) or to a directory. If omitted, it will
 default to the current directory. 
 
 `-o|--output <OUTPUT_DIRECTORY>`
@@ -79,7 +79,7 @@ Pack the project in the current directory:
 
 Pack the app1 project:
 
-`dotnet pack ~/projects/app1/project.json`
+`dotnet pack ~/projects/app1/project.csproj`
 	
 Pack the project in the current directory and place the resulting packages into the specified folder:
 

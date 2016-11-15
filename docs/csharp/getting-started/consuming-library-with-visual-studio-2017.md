@@ -63,7 +63,7 @@ You can make your class library more widely available by publishing it as a NuGe
 
 1. Open a console window. For example, in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt`, and then choose the **Command Prompt** desktop app to open the console window.
 
-1. Navigate to the your library's project directory. Typically, unless you've reconfigured the file location, it is in the `Documents\Visual Studio 2017\Projects\ClassLibraryProjects\StringLibrary` directory. The directory contains your source code and a project file, `StringLibrary.csproj`.
+1. Navigate to your library's project directory. Typically, unless you've reconfigured the file location, it is in the `Documents\Visual Studio 2017\Projects\ClassLibraryProjects\StringLibrary` directory. The directory contains your source code and a project file, `StringLibrary.csproj`.
 
 1. Issue the command `dotnet.exe pack --no-build`. The `dotnet.exe` utility generates a package with a .nupkg extension.
 

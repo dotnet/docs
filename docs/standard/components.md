@@ -1,9 +1,10 @@
 ---
-title: .NET Concepts
+title: .NET Components
 description: Describes key .NET concepts such as the .NET Standard Library, .NET runtimes, tooling, and how they interplay.
 keywords: .NET, .NET Standard Library, .NET Standard, .NET Core, .NET Framework, Xamarin, MSBuild, C#, F#, VB, compilers
 author: cartermp
 manager: wpickett
+ms.author: cartermp
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net

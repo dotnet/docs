@@ -23,7 +23,7 @@ You can publish your application using the [dotnet.exe](../../core/tools/dotnet.
 
 1. Open a console window. For example, in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt`, and then choose the **Command Prompt** desktop app to open the console window.
 
-1. Navigate to the your library's project directory. Typically, unless you've reconfigured the file location, it is in the `Documents\Visual Studio 2017\Projects\HelloWorld\Hello` directory. The directory contains your source code and a project file, `HelloWorld.csproj`.
+1. Navigate to your library's project directory. Typically, unless you've reconfigured the file location, it is in the `Documents\Visual Studio 2017\Projects\HelloWorld\HelloWorld` directory. The directory contains your source code and a project file, `HelloWorld.csproj`.
 
 <!-- Steve, can you check this on your system? I'm sure I didn't do any renaming, but that's the directory I have on minem and I'd expect it to be HelloWorld instead of Hello. -->
 

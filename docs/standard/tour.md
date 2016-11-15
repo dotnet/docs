@@ -42,17 +42,17 @@ Microsoft actively developes and supports three .NET languages: C#, F#, and Visu
 
 ## Automatic memory management
 
-.NET uses [garbage collection](garbage-collection/index.md) to provide automatic memory management for programs.  The GC operates on a lazy approach to memory management, preferring application throughput to the immediate collection of memory.  To learn more about the .NET GC, check out [Fundamentals of garbage collection](garbage-collection/fundamentals.md).
+.NET uses [garbage collection](garbagecollection/index.md) to provide automatic memory management for programs.  The GC operates on a lazy approach to memory management, preferring application throughput to the immediate collection of memory.  To learn more about the .NET GC, check out [Fundamentals of garbage collection](garbagecollection/fundamentals.md).
 
 The following two lines both allocate memory:
 
-[!code-csharp[MemoryManagement](../../samples/csharp/scripts/tour/MemoryManagement.csx#L1-L2)]
+[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L1-L2)]
 
 There is no analogous keyword to de-allocate memory, as de-allocation happens automatically when the garbage collector reclaims the memory through its scheduled run.
 
 Types within a given scope normally go out of scope once a method completes, at which point they can be collected. However, you can indicate to the GC that a particular object is out of scope sooner than method exit using the `using` statement:
 
-[!code-csharp[MemoryManagement](../../samples/csharp/scripts/tour/MemoryManagement.csx#L6-L9)]
+[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L6-L9)]
 
 Once the `using` block completes, the GC will know that the `stream` object in the example above is free to be collected and its memory reclaimed.
 
@@ -64,7 +64,7 @@ The .NET runtime provides additional services, to complete the promise of memory
 
 The following example will throw an exception as a result of memory safety.
 
-[!code-csharp[MemoryManagement](../../samples/csharp/scripts/tour/MemoryManagement.csx#L11-L12)]
+[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L11-L12)]
 
 ## Type safety
 
@@ -72,15 +72,15 @@ Objects are allocated in terms of types. The only operations allowed for a given
 
 .NET languages are object-oriented, with hierarchies of base and derived classes. The .NET runtime will only allow object casts and calls that align with the object hierarchy. Remember that every type defined in any .NET language derives from the base `object` type.
 
-[!code-csharp[TypeSafety](../../samples/csharp/scripts/tour/TypeSafety.csx#L18-L23)]
+[!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L18-L23)]
 
 Type safety is also used to help enforce encapsulation by guaranteeing the fidelity of the accessor keywords. Accessor keywords are artifacts which control access to members of a given type by other code. These are usually used for various kinds of data within a type that are used to manage its behavior.
 
-[!code-csharp[TypeSafety](../../samples/csharp/scripts/tour/TypeSafety.csx#L3)]
+[!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L3)]
 
 C#, Visual Basic, and F# support local **type inference**. Type inference means that the compiler will deduce the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type **has** a strong type with everything that implies. Let's rewrite the first two lines of the previous example to introduce type inference. You will note that the rest of the example is completely the same.
 
-[!code-csharp[TypeSafety](../../samples/csharp/scripts/tour/TypeSafety.csx#L28-L34)]
+[!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L28-L34)]
 
 F# has even further type inference capabilities than method-local type inference found in C# and Visual Basic.  To learn more, check out [Type Inferece](../fsharp/language-reference/type-inference.md).
 
@@ -100,7 +100,7 @@ Generics were added in order to help programmers implement generic data structur
 
 The below sample shows a basic program running using an instance of @System.Collections.Generic.List%601 types.
 
-[!code-csharp[GenericsShort](../../samples/csharp/scripts/tour/GenericsShort.csx)]
+[!code-csharp[GenericsShort](../../samples/csharp/snippets/tour/GenericsShort.csx)]
 
 For more information, see the [Generic types (Generics) overview](generics.md) article.
 
@@ -132,11 +132,11 @@ The CLR enables the ability to access native memory and do pointer arithmetic vi
 
 Below is a modified version of the `ToString()` method from the `StringBuilder` class.  It illustrates how using `unsafe` code can efficiently implement an algorithm by moving around chunks of memory directly:
 
-[!code-csharp[Unsafe](../../samples/csharp/scripts/tour/Unsafe.csx)]
+[!code-csharp[Unsafe](../../samples/csharp/snippets/tour/Unsafe.csx)]
 
 ## Next Steps
 
-If you're interested in a tour of C# features, check out [Tour of C#](../chsarp/tour/index.md).
+If you're interested in a tour of C# features, check out [Tour of C#](../csharp/tour/index.md).
 
 If you're interested in a tour of F# features, check out [Tour of F#](../fsharp/tour.md).
 

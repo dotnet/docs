@@ -1,0 +1,45 @@
+---
+title: "Runtime errors might occur when converting &#39;&lt;type1&gt;&#39; to &#39;&lt;type2&gt;&#39;. | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc42322"
+  - "vbc42322"
+helpviewer_keywords: 
+  - "BC42322"
+ms.assetid: 6aabd280-b361-4a18-b743-2beeef90f978
+caps.latest.revision: 3
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Runtime errors might occur when converting &#39;&lt;type1&gt;&#39; to &#39;&lt;type2&gt;&#39;.
+You may encounter an error at run time when attempting to convert an interface type to a class type.  
+  
+ **Error ID:** BC42322  
+  
+### To correct this error  
+  
+1.

@@ -1,0 +1,1 @@
+    Dim customerList = From cust In customers

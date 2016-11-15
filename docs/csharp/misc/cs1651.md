@@ -1,0 +1,72 @@
+---
+title: "Compiler Error CS1651 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1651"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1651"
+ms.assetid: ce1043e3-b453-4b4c-b949-f344834e3845
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS1651
+Fields of static readonly field 'identifier' cannot be passed ref or out (except in a static constructor)  
+  
+ This error occurs if you pass a variable to a function that is a member of a static readonly field as a ref argument. Since ref parameters may be modified by the function, this is not allowed. To resolve this error, remove the **readonly** keyword on the field, or do not pass the members of the readonly field to the function. For example, you might try creating a temporary variable which can be modifed and passing the temporary as a ref argument, as shown in the following example.  
+  
+ The following sample generates CS1651:  
+  
+```  
+// CS1651.cs  
+public struct Inner  
+  {  
+    public int i;  
+  }  
+  
+class Outer  
+{    
+  public static readonly Inner inner = new Inner();  
+}  
+  
+class D  
+{  
+   static void f(ref int iref)  
+   {  
+   }  
+  
+   static void Main()  
+   {  
+      f(ref Outer.inner.i);  // CS1651  
+      // Try this instead:  
+      // int tmp = Outer.inner.i;  
+      // f(ref tmp);  
+   }  
+}  
+```

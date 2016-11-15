@@ -1,0 +1,53 @@
+---
+title: "&#39;System.Runtime.InteropServices.DispIdAttribute&#39; value cannot be applied to &#39;&lt;typename&gt;&#39; because &#39;Microsoft.VisualBasic.ComClassAttribute&#39; reserves values less than zero | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc32506"
+  - "vbc32506"
+helpviewer_keywords: 
+  - "BC32506"
+ms.assetid: c6f52e1d-45d8-45cb-9ecb-a2f23b3ca779
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# &#39;System.Runtime.InteropServices.DispIdAttribute&#39; value cannot be applied to &#39;&lt;typename&gt;&#39; because &#39;Microsoft.VisualBasic.ComClassAttribute&#39; reserves values less than zero
+A <xref:System.Runtime.InteropServices.DispIdAttribute> attribute block specifies a DISPID value less than 0, which is reserved by `COMClassAttribute` for special functions on the class to which it is applied.  
+  
+ The dispatch identifier (DISPID) is used in COM as an argument to the `IDispatch:Invoke` method to access the properties and methods exposed by a COM object.  
+  
+ **Error ID:** BC32506  
+  
+### To correct this error  
+  
+-   Specify a DISPID value greater than zero in `DispIdAttribute`.  
+  
+## See Also  
+ <xref:System.Runtime.InteropServices.DispIdAttribute>   
+ [NOT IN BUILD: Attributes Used in Visual Basic](http://msdn.microsoft.com/en-us/22231318-8a40-49af-9245-e0aab723563b)   
+ [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)   
+ [ComClassAttribute Class](http://msdn.microsoft.com/en-us/5c2f0835-9210-47dc-bc59-5c1769953574)

@@ -1,0 +1,48 @@
+---
+title: "Unable to open module file &#39;&lt;filename&gt;&#39;: &lt;error&gt; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31007"
+  - "bc31007"
+helpviewer_keywords: 
+  - "BC31007"
+ms.assetid: eba76bf8-93e9-4709-87e0-0cb9ade868a5
+caps.latest.revision: 7
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Unable to open module file &#39;&lt;filename&gt;&#39;: &lt;error&gt;
+A file containing a module for this project could not be opened.  
+  
+ **Error ID:** BC31007  
+  
+### To correct this error  
+  
+1.  Verify that the file is in the specified location, and is not locked by another application.  
+  
+## See Also  
+ [File Types and File Extensions in Visual Basic and Visual C#](http://msdn.microsoft.com/en-us/f793852c-da06-4d52-a826-65f635844772)

@@ -1,0 +1,51 @@
+---
+title: "Project &#39;&lt;projectname&gt;&#39; makes an indirect reference to assembly &#39;&lt;assemblyname&gt;&#39; which contains &#39;&lt;classname&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc31515"
+  - "vbc31515"
+helpviewer_keywords: 
+  - "BC31515"
+ms.assetid: f01a3cb8-a951-45ab-b6d9-2a0e6908468d
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Project &#39;&lt;projectname&gt;&#39; makes an indirect reference to assembly &#39;&lt;assemblyname&gt;&#39; which contains &#39;&lt;classname&gt;&#39;
+Project '\<projectname>' makes an indirect reference to assembly '\<assemblyname>' which contains '\<classname>'. Add a reference to '\<assemblyname>' to your project.  
+  
+ This project contains members that depend on an assembly that is not contained in the project references.  
+  
+ **Error ID:** BC31515  
+  
+### To correct this error  
+  
+-   Add a reference to the assembly by right-clicking **References** in the **Solution Explorer** and then clicking **Add Reference**.  
+  
+## See Also  
+ [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
+ [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

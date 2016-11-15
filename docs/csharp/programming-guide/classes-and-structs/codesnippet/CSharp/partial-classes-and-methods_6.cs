@@ -1,0 +1,1 @@
+        class Earth : Planet, IRotate, IRevolve { }

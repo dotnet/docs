@@ -1,0 +1,67 @@
+---
+title: "Compiler Error CS1914 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1914"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1914"
+ms.assetid: e61361b6-4660-41fd-a574-cc48e1b3873c
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS1914
+Static field 'name' cannot be assigned in an object initializer  
+  
+ Object initializers by definition initialize objects, or instances, of classes. They cannot be used to initialize a `static` field of a type. No matter how many instances of a class are created, there is only one copy of a `static` field.  
+  
+### To correct this error  
+  
+1.  Either change the field to an instance field in the type, or remove the attempt to initialize it from the object initializer.  
+  
+## Example  
+ The following code generates CS1914 because the initializer tries to initialize the `TestClass.Number` field, which is `static`:  
+  
+```  
+// cs1914.cs  
+using System.Linq;  
+public class TestClass  
+{  
+    public string Message { get; set; }  
+    public static int Number { get; set; }      
+}  
+class Test  
+{  
+    static void Main()  
+    {  
+        TestClass b = new TestClass() { Message = "Hello", Number = "555-1212" }; // CS1914  
+  
+    }  
+}  
+```

@@ -1,0 +1,64 @@
+---
+title: "Compiler Error CS0636 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0636"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0636"
+ms.assetid: 47597f89-fbe6-4708-9493-3c86c6f0ce56
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0636
+The FieldOffset attribute can only be placed on members of types marked with the StructLayout(LayoutKind.Explicit)  
+  
+ You must use the **StructLayout(LayoutKind.Explicit)** attribute on the struct declaration, if it contains any members marked with the **FieldOffset** attribute. For more information, see [FieldOffset](frlrfsystemruntimeinteropservicesfieldoffsetattributeclasstopic).  
+  
+ The following sample generates CS0636:  
+  
+```  
+// CS0636.cs  
+using System;  
+using System.Runtime.InteropServices;  
+  
+// To resolve the error, uncomment the following line:  
+// [StructLayout(LayoutKind.Explicit)]  
+struct Worksheet  
+{  
+   [FieldOffset(4)]public int i;   // CS0636   
+}  
+  
+public class MainClass  
+{  
+   public static void Main ()  
+   {  
+   }  
+}  
+```

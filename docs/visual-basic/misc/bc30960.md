@@ -1,0 +1,55 @@
+---
+title: "&#39;&lt;elementname&gt;&#39; refers to type &#39;&lt;typename&gt;&#39; in project &#39;&lt;projectname&gt;&#39;, but type &#39;&lt;typename&gt;&#39; was not found in project &#39;&lt;projectname&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30960"
+  - "bc30960"
+helpviewer_keywords: 
+  - "BC30960"
+ms.assetid: 4ed4bff5-c670-46f6-8360-7287444d50e5
+caps.latest.revision: 6
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# &#39;&lt;elementname&gt;&#39; refers to type &#39;&lt;typename&gt;&#39; in project &#39;&lt;projectname&gt;&#39;, but type &#39;&lt;typename&gt;&#39; was not found in project &#39;&lt;projectname&gt;&#39;
+An expression accesses a class, structure, module, or interface referred to in another project, but that project does not contain the specified type.  
+  
+ This error occurs when your project makes an indirect reference to another project in the same solution. Typically, your project makes a reference to an assembly that makes a reference to the other project. If the assembly accesses the specified type in the other project, the indirect reference to the type is established. However, if the type is not present in the other project, this error is generated.  
+  
+ **Error ID:** BC30960  
+  
+### To correct this error  
+  
+-   If the cited type is no longer defined anywhere, then remove or replace the statement that attempts to access it. You might also need to make the same change in the assembly that provides the indirect reference to the cited type.  
+  
+-   If the cited type is defined somewhere, then make a direct reference to the project or assembly that defines it.  
+  
+## See Also  
+ [NIB: Referencing Namespaces and Components](http://msdn.microsoft.com/en-us/568fa759-796b-44cd-bf5e-1cf8de6e38fd)   
+ [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
+ [NIB: Managing References](http://msdn.microsoft.com/en-us/910912ce-0dc9-4569-9274-32c44a20cb2c)   
+ [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

@@ -1,0 +1,48 @@
+---
+title: "Unrecognized option &lt;optionname&gt;; ignored | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc2007"
+  - "bc2007"
+helpviewer_keywords: 
+  - "BC2007"
+ms.assetid: 3668a70f-44fc-4f45-9af9-14dcaaaf7d8e
+caps.latest.revision: 11
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Unrecognized option &lt;optionname&gt;; ignored
+An option has been specified that is not valid from the command line.  
+  
+ **Error ID:** BC2007  
+  
+### To correct this error  
+  
+-   Check specified options to find the one that is not valid.  
+  
+## See Also  
+ [NOT IN BUILD: Switch Function](http://msdn.microsoft.com/en-us/8320196c-ad40-49d5-a9b8-d1af5dab652f)

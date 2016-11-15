@@ -1,0 +1,49 @@
+---
+title: "Friend assembly reference &lt;reference&gt; is invalid. InternalsVisibleTo declarations cannot have a version, culture, public key token, or processor architecture specified. | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc31534"
+  - "vbc31534"
+helpviewer_keywords: 
+  - "BC31534"
+ms.assetid: ae1e470e-3105-48f2-87b1-466e395a7d44
+caps.latest.revision: 4
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Friend assembly reference &lt;reference&gt; is invalid. InternalsVisibleTo declarations cannot have a version, culture, public key token, or processor architecture specified.
+The assembly name passed to the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute constructor contains a `Version`, `Culture`, `PublicKeyToken`, or `processorArchitecture` attribute.  
+  
+ **Error ID:** BC31534  
+  
+### To correct this error  
+  
+1.  Remove the `Version`, `Culture`, `PublicKeyToken`, or `processorArchitecture` attribute from the assembly name passed to the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute constructor.  
+  
+## See Also  
+ <xref:System.Reflection.AssemblyName>   
+ [NOT IN BUILD: Friend Assemblies (Visual Basic)](http://msdn.microsoft.com/en-us/80e7a33a-ca91-450b-a00e-c5a7986e228c)

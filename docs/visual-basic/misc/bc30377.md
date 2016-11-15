@@ -1,0 +1,48 @@
+---
+title: "Method &#39;&lt;methodname&gt;&#39; is already declared in interface &#39;&lt;interfacename&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30377"
+  - "bc30377"
+helpviewer_keywords: 
+  - "BC30377"
+ms.assetid: 8949bb5e-f023-46d7-9303-1d3cdc6ec9de
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Method &#39;&lt;methodname&gt;&#39; is already declared in interface &#39;&lt;interfacename&gt;&#39;
+You have declared an interface method a second time, duplicating it.  
+  
+ **Error ID:** BC30377  
+  
+### To correct this error  
+  
+-   Remove the duplicated declaration.  
+  
+## See Also  
+ [NOT IN BUILD: Interface Implementation Examples in Visual Basic](http://msdn.microsoft.com/en-us/50bf2a30-73b6-4126-a921-075fd6eec278)

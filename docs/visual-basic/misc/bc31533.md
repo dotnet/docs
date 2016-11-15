@@ -1,0 +1,57 @@
+---
+title: "Construct makes an indirect reference to project &#39;&lt;projectname&gt;&#39;, which contains &#39;&lt;typename&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31533"
+  - "bc31533"
+helpviewer_keywords: 
+  - "BC31533"
+ms.assetid: e3f55f9f-92be-4ecb-bc8f-9e57049a0805
+caps.latest.revision: 6
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Construct makes an indirect reference to project &#39;&lt;projectname&gt;&#39;, which contains &#39;&lt;typename&gt;&#39;
+Construct makes an indirect reference to project '\<projectname>', which contains '\<typename>'. Add a project reference to '\<projectname>' to your project.  
+  
+ An expression or statement accesses a type defined in another project, but your project does not have a direct reference to the defining project.  
+  
+ The type could be a class, structure, interface, module, or enumeration.  
+  
+ The project that defines the cited type produces an assembly containing the type. If your project does not directly reference the defining project, then the compiler cannot guarantee that the assembly containing the type is in the solution and available for access.  
+  
+ **Error ID:** BC31533  
+  
+### To correct this error  
+  
+-   Determine which project defines the cited type, and add a project reference to it.  
+  
+## See Also  
+ [NIB: Referencing Namespaces and Components](http://msdn.microsoft.com/en-us/568fa759-796b-44cd-bf5e-1cf8de6e38fd)   
+ [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
+ [NIB: Managing References](http://msdn.microsoft.com/en-us/910912ce-0dc9-4569-9274-32c44a20cb2c)   
+ [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

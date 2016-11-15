@@ -23,7 +23,7 @@ See the [.NET Architectural Components](components.md) to learn about each of th
 
 ## How to run the code samples
 
-> ![NOTE]
+> [!NOTE]
 In the future, this documentation site will have the ability to run these code samples in your browser.
 
 To learn how to set up a development environment to run the code samples, check out [Getting Started](getting-started.md).  You can copy and paste code samples from this page into your environment to execute them. 

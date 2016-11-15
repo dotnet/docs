@@ -5,7 +5,7 @@ keywords: dotnet-nuget-locals, CLI, CLI command, .NET Core
 author: karann-msft
 ms.author: mairaw
 manager: wpickett
-ms.date: 11/11/2016
+ms.date: 11/15/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -73,7 +73,7 @@ Displays the paths of all the local cache directories, that is, http-cache direc
 
 `dotnet nuget locals –l all`
 
-Displays the path for the local Http Cache directory:
+Displays the path for the local http-cache directory:
 
 `dotnet nuget locals --list http-cache`
 
@@ -89,4 +89,6 @@ Clears all the files in local temporary cache directory:
 
 `dotnet nuget locals -c temp`
 
-## See also
+## Troubleshooting
+
+For information about the most commonly faced problems and errors while using the `dotnet-nuget-locals` command, see  [Managing the NuGet cache](https://docs.nuget.org/ndocs/consume-packages/managing-the-nuget-cache).

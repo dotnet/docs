@@ -19,7 +19,7 @@ ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
 
 Here's a graphical overview of each of the "pieces" of .NET and how they fit.
 
-![All .NET Concepts Together](media/dotnet-things.png)
+![All .NET Concepts Together](media/components.png)
 
 What follows is a brief explanation of each of the key concepts shown above.  
 

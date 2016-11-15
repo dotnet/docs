@@ -6,7 +6,7 @@ description:
 keywords:
 author:
 manager:
-ms.date: 06/20/2016
+ms.date: 11/14/2016
 ms.topic: hubpage
 ms.prod:
 ms.service:
@@ -24,7 +24,7 @@ ms.assetid:
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="./docs/images/hub/featured-1.png" alt="" />
+                                        <img data-hoverimage="articles/images/hub/featured-1.svg" src="./docs/images/hub/featured-1.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -42,7 +42,7 @@ ms.assetid:
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="./docs/images/hub/featured-2.png" alt="" />
+                                        <img data-hoverimage="articles/images/hub/featured-2.svg" src="./docs/images/hub/featured-2.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -54,13 +54,13 @@ ms.assetid:
                 </a>
             </li>
             <li>
-                <a href="https://msdn.microsoft.com/en-us/library/mt472912(v=vs.110).aspx">
+                <a href="https://msdn.microsoft.com/library/mt472912(v=vs.110).aspx">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="./docs/images/hub/featured-3.png" alt="" />
+                                        <img data-hoverimage="articles/images/hub/featured-3.svg" src="./docs/images/hub/featured-3.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -92,10 +92,10 @@ ms.assetid:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://docs.microsoft.com/en-us/dotnet/articles/welcome">What is .NET?</a></h3>
+                                                <h3><a href="/dotnet/articles/welcome">What is .NET?</a></h3>
                                                 <p><a href="https://www.microsoft.com/net">Get Started</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/standard/#a-stroll-through-net">Tour of .NET</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/about/products">.NET Concepts</a></p>
+                                                <p><a href="/dotnet/articles/standard/#a-stroll-through-net">Tour of .NET</a></p>
+                                                <p><a href="/dotnet/articles/about/products">.NET Concepts</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -111,10 +111,10 @@ ms.assetid:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://docs.microsoft.com/en-us/dotnet/articles/core">.NET Core Guide</a></h3>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/core/getting-started">Get Started</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/core/tutorials">Tutorials</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/core/porting">Porting from .NET Framework</a></p>
+                                                <h3><a href="/dotnet/articles/core">.NET Core Guide</a></h3>
+                                                <p><a href="/dotnet/articles/core/getting-started">Get Started</a></p>
+                                                <p><a href="/dotnet/articles/core/tutorials">Tutorials</a></p>
+                                                <p><a href="/dotnet/articles/core/porting">Porting from .NET Framework</a></p>
                                                 <p><a href="https://docs.asp.net/en/latest/getting-started.html">ASP.NET Core</a></p>
                                             </div>
                                         </div>
@@ -131,11 +131,11 @@ ms.assetid:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://msdn.microsoft.com/en-us/library/zw4w595w(v=vs.110).aspx">.NET Framework Guide</a></h3>
-                                                <p><a href="https://msdn.microsoft.com/en-us/library/hh425099(v=vs.110).aspx">Get Started</a></p>
-                                                <p><a href="https://msdn.microsoft.com/en-us/library/hh156542(v=vs.110).aspx">Tutorials</a></p>
-                                                <p><a href="https://msdn.microsoft.com/en-us/library/54xbah2z(v=vs.110).aspx">Client Development</a></p>
-                                                <p><a href="https://msdn.microsoft.com/en-us/library/bb400852(v=vs.110).aspx">ASP.NET</a></p>
+                                                <h3><a href="https://msdn.microsoft.com/library/w0x726c2(v=vs.110).aspx">.NET Framework Guide</a></h3>
+                                                <p><a href="https://msdn.microsoft.com/library/hh425099(v=vs.110).aspx">Get Started</a></p>
+                                                <p><a href="https://msdn.microsoft.com/library/hh156542(v=vs.110).aspx">Tutorials</a></p>
+                                                <p><a href="https://msdn.microsoft.com/library/54xbah2z(v=vs.110).aspx">Client Development</a></p>
+                                                <p><a href="https://msdn.microsoft.com/library/bb400852(v=vs.110).aspx">ASP.NET</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -171,10 +171,10 @@ ms.assetid:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://docs.microsoft.com/en-us/dotnet/articles/csharp">C# Guide</a></h3>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/csharp/getting-started">Get Started</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/csharp/tour-of-csharp">Tour of C#</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/csharp/concepts">C# Concepts</a></p>
+                                                <h3><a href="/dotnet/articles/csharp">C# Guide</a></h3>
+                                                <p><a href="/dotnet/articles/csharp/getting-started">Get Started</a></p>
+                                                <p><a href="/dotnet/articles/csharp/tour-of-csharp">Tour of C#</a></p>
+                                                <p><a href="/dotnet/articles/csharp/language-reference">C# Language Reference</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -190,10 +190,10 @@ ms.assetid:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://docs.microsoft.com/en-us/dotnet/articles/fsharp">F# Guide</a></h3>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/fsharp/tutorials/getting-started">Get Started</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/fsharp/tour">Tour of F#</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/fsharp/language-reference">F# Language Reference</a></p>
+                                                <h3><a href="/dotnet/articles/fsharp">F# Guide</a></h3>
+                                                <p><a href="/dotnet/articles/fsharp/tutorials/getting-started">Get Started</a></p>
+                                                <p><a href="/dotnet/articles/fsharp/tour">Tour of F#</a></p>
+                                                <p><a href="/dotnet/articles/fsharp/language-reference">F# Language Reference</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -209,10 +209,10 @@ ms.assetid:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://msdn.microsoft.com/en-us/library/2x7h1hfk.aspx">Visual Basic Guide</a></h3>
-                                                <p><a href="https://msdn.microsoft.com/en-us/library/8hb2a397.aspx">Get Started</a></p>
-                                                <p><a href="https://msdn.microsoft.com/en-us/library/9a4y3z34.aspx">Tour of Visual Basic</a></p>
-                                                <p><a href="https://msdn.microsoft.com/en-us/library/sh9ywfdk.aspx">Visual Basic Language Reference</a></p>
+                                                <h3><a href="/dotnet/articles/visual-basic">Visual Basic Guide</a></h3>
+                                                <p><a href="/dotnet/articles/visual-basic/getting-started">Get Started</a></p>
+                                                <p><a href="/dotnet/articles/visual-basic/walkthroughs">Tour of Visual Basic</a></p>
+                                                <p><a href="/dotnet/articles/visual-basic/language-reference">Visual Basic Language Reference</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -243,7 +243,7 @@ ms.assetid:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/aspnet/core/">
+                                <a href="/aspnet/core/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -281,7 +281,7 @@ ms.assetid:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc">
+                                <a href="/aspnet/core/tutorials/first-mvc-app/start-mvc">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -301,7 +301,7 @@ ms.assetid:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/dotnet/articles/framework/docker/aspnetmvc">
+                                <a href="/dotnet/articles/framework/docker/aspnetmvc">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -320,7 +320,7 @@ ms.assetid:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/your-first-mac-aspnet">
+                                <a href="/aspnet/core/tutorials/your-first-mac-aspnet">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -345,7 +345,7 @@ ms.assetid:
                         <a href="#cloud">Cloud</a>
                         <ul id="cloud" class="cardsG">
                             <li>
-                                <a href="https://azure.microsoft.com/en-us/develop/net">
+                                <a href="https://azure.microsoft.com/develop/net">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -365,7 +365,7 @@ ms.assetid:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://azure.microsoft.com/en-us/documentation/articles/cloud-services-dotnet-get-started">
+                                <a href="https://azure.microsoft.com/documentation/articles/cloud-services-dotnet-get-started">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -384,7 +384,7 @@ ms.assetid:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/dotnet/articles/fsharp/using-fsharp-on-azure">
+                                <a href="/dotnet/articles/fsharp/using-fsharp-on-azure">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -404,7 +404,7 @@ ms.assetid:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://azure.microsoft.com/en-us/documentation/services/storage/">
+                                <a href="https://azure.microsoft.com/documentation/services/storage/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -491,7 +491,7 @@ ms.assetid:
                         <a href="#desktop">Desktop</a>
                         <ul id="desktop" class="cardsG">
                             <li>
-                                <a href="https://msdn.microsoft.com/en-us/library/windows/apps/dn609832.aspx">
+                                <a href="https://msdn.microsoft.com/library/windows/apps/dn609832.aspx">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

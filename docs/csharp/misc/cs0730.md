@@ -1,0 +1,64 @@
+---
+title: "Compiler Error CS0730 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0730"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0730"
+ms.assetid: bf291285-dc1e-4c8d-a449-119004adc088
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0730
+Cannot forward type 'type' because it is a nested type of 'type'  
+  
+ This error is generated when you try to forward a nested class.  
+  
+## Example  
+ The following sample generates CS0730. It consists of two source files. First, compile the library file `CS0730a.cs`, and the compile the file `CS0730.cs` referencing the library file.  
+  
+```  
+// CS0730a.cs  
+// compile with: /t:library  
+public class Outer  
+{  
+   public class Nested {}  
+}  
+```  
+  
+```  
+// CS0730.cs  
+// compile with: /t:library /r:CS0730a.dll  
+using System.Runtime.CompilerServices;  
+  
+[assembly:TypeForwardedToAttribute(typeof(Outer.Nested))]   // CS0730  
+  
+[assembly:TypeForwardedToAttribute(typeof(Outer))]   // OK  
+```

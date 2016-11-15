@@ -1,0 +1,1 @@
+            dialog1.Filter = "Wav Files (*.wav)|*.wav";

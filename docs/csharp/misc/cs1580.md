@@ -1,0 +1,71 @@
+---
+title: "Compiler Warning (level 1) CS1580 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1580"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1580"
+ms.assetid: ffd1b6d7-6cab-47e3-b7fe-c79cb435cddf
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Warning (level 1) CS1580
+Invalid type for parameter 'parameter number' in XML comment cref attribute  
+  
+ When attempting to reference an overload form of a method, the compiler detected a syntax error. Typically, this indicates that the parameter name, and not the type, was specified. A malformed line will appear in the generated XML file.  
+  
+ The following sample generates CS1580:  
+  
+```  
+// CS1580.cs  
+// compile with: /W:1 /doc:x.xml  
+using System;  
+  
+/// <seealso cref="Test(i)"/>   // CS1580  
+// try the following line instead  
+// /// <seealso cref="Test(int)"/>  
+public class MyClass  
+{  
+   /// <summary>help text</summary>  
+   public static void Main()  
+   {  
+   }  
+  
+   /// <summary>help text</summary>  
+   public void Test(int i)  
+   {  
+   }  
+  
+   /// <summary>help text</summary>  
+   public void Test(char i)  
+   {  
+   }  
+}  
+```

@@ -1,0 +1,1 @@
+        Dim sMatch As Boolean = myString Like "num[i-m]"

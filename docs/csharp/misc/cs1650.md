@@ -1,0 +1,63 @@
+---
+title: "Compiler Error CS1650 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1650"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1650"
+ms.assetid: 251a3a67-6e56-4795-874a-d54610c70595
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS1650
+Fields of static readonly field 'identifier' cannot be assigned to (except in a static constructor or a variable initializer)  
+  
+ This error occurs when you attempt to modify a member of a field which is readonly and static where it is not allowed to be modified. To resolve this error, limit assignments to readonly fields to the constructor or variable initializer, or remove the `readonly` keyword from the declaration of the field.  
+  
+```  
+// CS1650.cs  
+public struct Inner  
+{  
+    public int i;  
+}  
+  
+class Outer  
+{  
+    public static readonly Inner inner = new Inner();  
+}  
+  
+class D  
+{  
+    static void Main()  
+    {  
+        Outer.inner.i = 1;  // CS1650  
+    }  
+}  
+```

@@ -1,0 +1,1 @@
+        Dim WithEvents testInstance As TestInterface

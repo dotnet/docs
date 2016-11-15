@@ -61,17 +61,16 @@ for instructions for your platform.
 Docker can be installed in many Linux distributions, macOS, or Windows. The page
 referenced above contains sections to each of the available installations.
 
-You'll also need to install a number of command line tools that support
+Most components to be installed are done by a package manager. If you have node.js's package manager `npm` installed you can skip this step. 
+Otherwise install the latest NodeJs from [nodejs.org](https://nodejs.org) which will install the npm package manager. 
+
+At this point you will need to install a number of command line tools that support
 ASP.NET core development. The command line templates use Yeoman, Bower,
-Grunt, and Gulp to be installed using the node.js's package manager npm which 
-can be installed from [nodejs.org](https://nodejs.org). 
-One may already have many of these tools, but if not,
-run the following command in your favorite shell:
+Grunt, and Gulp to be installed. If you have them installed that is good, otherwise type the following into your favorite shell:
 
 `npm install -g yo bower grunt-cli gulp`
 
-This instructs the node package manager (npm) to install the needed tools.
-The '-g' option indicates that it is a global install, and those tools are
+The `-g` option indicates that it is a global install, and those tools are
 available system wide. (A local install scopes the package to a single
 project). Once you've installed those core tools, you need to install
 the yeoman asp.net template generators:

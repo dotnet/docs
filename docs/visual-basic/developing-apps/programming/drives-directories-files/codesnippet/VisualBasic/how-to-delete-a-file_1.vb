@@ -1,0 +1,1 @@
+        My.Computer.FileSystem.DeleteFile("C:\test.txt")

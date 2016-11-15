@@ -1,0 +1,45 @@
+---
+title: "Format not valid in resource file | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbrID325"
+ms.assetid: e986ab45-e3ce-430e-8704-5882e5da1104
+caps.latest.revision: 7
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Format not valid in resource file
+A resource file in your project does not follow the standard format for a Windows resource file or there is a mismatch between the resource file and the [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] project.  
+  
+## To correct this error  
+  
+1.  Recreate the resource source and resource files and adhere to the syntax documented in the Windows Software Development Kit.  
+  
+2.  Remove the invalid resource file from the project.  
+  
+## See Also  
+ [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

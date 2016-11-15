@@ -1,0 +1,60 @@
+---
+title: "&lt;&lt; Operator (C# Reference) | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "<<_CSharpKeyword"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "left shift operator (<<) [C#]"
+  - "<< operator [C#]"
+ms.assetid: a654eb56-1ff7-4bf3-9064-b631be0cdccc
+caps.latest.revision: 18
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# &lt;&lt; Operator (C# Reference)
+The left-shift operator (`<<`) shifts its first operand left by the number of bits specified by its second operand. The type of the second operand must be an [int](../../../csharp/language-reference/keywords/int.md) or a type that has a predefined implicit numeric conversion to `int`.  
+  
+## Remarks  
+ If the first operand is an [int](../../../csharp/language-reference/keywords/int.md) or [uint](../../../csharp/language-reference/keywords/uint.md) (32-bit quantity), the shift count is given by the low-order five bits of the second operand. That is, the actual shift count is 0 to 31 bits.  
+  
+ If the first operand is a [long](../../../csharp/language-reference/keywords/long.md) or [ulong](../../../csharp/language-reference/keywords/ulong.md) (64-bit quantity), the shift count is given by the low-order six bits of the second operand. That is, the actual shift count is 0 to 63 bits.  
+  
+ Any high-order bits that are not within the range of the type of the first operand after the shift are discarded, and the low-order empty bits are zero-filled. Shift operations never cause overflows.  
+  
+ User-defined types can overload the `<<` operator (see [operator](../../../csharp/language-reference/keywords/operator.md)); the type of the first operand must be the user-defined type, and the type of the second operand must be `int`. When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
+  
+## Example  
+ [!code-cs[csRefOperators#14](../../../csharp/language-reference/operators/codesnippet/CSharp/left-shift-operator_1.cs)]  
+  
+## Comments  
+ Note that `i<<1` and `i<<33` give the same result, because 1 and 33 have the same low-order five bits.  
+  
+## See Also  
+ [C# Reference](../../../csharp/language-reference/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Operators](../../../csharp/language-reference/operators/index.md)

@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 809148dd-b231-4f2c-bb81-f5bfc426378d
 ---
 
-# 🔧 C# Concepts
+# C# Concepts
 
 > **Note**
 

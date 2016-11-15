@@ -90,24 +90,24 @@ We recommend that you select an overload that does not use default values, for t
 
 * The intent of the code that relies on default values for method calls is not clear. In the following example, which relies on defaults, it is difficult to know whether the developer actually intended an ordinal or a linguistic comparison of two strings, or whether a case difference between `protocol` and "http" might cause the test for equality to return `false`.
 
-  ```csharp
-  string protocol = GetProtocol(url);       
-  if (String.Equals(protocol, "http", StringComparison.OrdinalIgnoreCase)) {
-     // ...Code to handle HTTP protocol.
-  }
-  else {
-     throw new InvalidOperationException();
-  }
-  ```
+```csharp
+string protocol = GetProtocol(url);       
+if (String.Equals(protocol, "http", StringComparison.OrdinalIgnoreCase)) {
+   // ...Code to handle HTTP protocol.
+}
+else {
+   throw new InvalidOperationException();
+}
+```
 
-  ```vb
-  Dim protocol As String = GetProtocol(url)       
-  If String.Equals(protocol, "http") Then
-    ' ...Code to handle HTTP protocol.
-  Else
-     Throw New InvalidOperationException()
-  End If
-  ```
+```vb
+Dim protocol As String = GetProtocol(url)       
+If String.Equals(protocol, "http") Then
+  ' ...Code to handle HTTP protocol.
+Else
+   Throw New InvalidOperationException()
+End If
+```
 
 In general, we recommend that you call a method that does not rely on defaults, because it makes the intent of the code unambiguous. This, in turn, makes the code more readable and easier to debug and maintain. The following example addresses the questions raised about the previous example. It makes it clear that ordinal comparison is used and that differences in case are ignored. 
 

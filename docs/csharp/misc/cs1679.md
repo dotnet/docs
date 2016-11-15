@@ -1,0 +1,57 @@
+---
+title: "Compiler Error CS1679 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1679"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1679"
+ms.assetid: c42e9bca-212a-458e-88f8-b81c812436bb
+caps.latest.revision: 10
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS1679
+Invalid extern alias for '/reference'; 'identifier' is not a valid identifier  
+  
+ When using the external assembly alias feature of the **/reference** option, the text that follows **/reference:** and that precedes the '=' must be a valid C# identifier or keyword according to the C# Language Specification.  
+  
+ To correct this error, change text before the "=" to a valid C# identifier or keyword.  
+  
+## Example  
+ The following example generates CS1679.  
+  
+```  
+// CS1679.cs  
+// compile with: /reference:123$BadIdentifier%=System.dll  
+class TestClass {  
+    static void Main()  
+    {  
+    }  
+}  
+```

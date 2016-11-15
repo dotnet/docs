@@ -1,0 +1,94 @@
+---
+title: "Of Clause (Visual Basic) | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "Of"
+  - "vb.Of"
+  - "vb.of"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "Of keyword"
+  - "arguments [Visual Basic], data types"
+  - "constraints, Visual Basic generic types"
+  - "generic parameters"
+  - "generics [Visual Basic], constraints"
+  - "parameters, type"
+  - "types [Visual Basic], generic"
+  - "parameters, generic"
+  - "type parameters"
+  - "data type arguments"
+ms.assetid: 0db8f65c-65af-4089-ab7f-6fcfecb60444
+caps.latest.revision: 17
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Of Clause (Visual Basic)
+Introduces an `Of` clause, which identifies a *type parameter* on a *generic* class, structure, interface, delegate, or procedure. For information on generic types, see [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md).  
+  
+## Using the Of Keyword  
+ The following code example uses the `Of` keyword to define the outline of a class that takes two type parameters. It *constrains* the `keyType` parameter by the <xref:System.IComparable> interface, which means the consuming code must supply a type argument that implements <xref:System.IComparable>. This is necessary so that the `add` procedure can call the <xref:System.IComparable.CompareTo%2A?displayProperty=fullName> method. For more information on constraints, see [Type List](../../../visual-basic/language-reference/statements/type-list.md).  
+  
+```  
+Public Class Dictionary(Of entryType, keyType As IComparable)  
+    Public Sub add(ByVal e As entryType, ByVal k As keyType)  
+        Dim dk As keyType  
+        If k.CompareTo(dk) = 0 Then  
+        End If  
+    End Sub  
+    Public Function find(ByVal k As keyType) As entryType  
+    End Function  
+End Class  
+```  
+  
+ If you complete the preceding class definition, you can construct a variety of `dictionary` classes from it. The types you supply to `entryType` and `keyType` determine what type of entry the class holds and what type of key it associates with each entry. Because of the constraint, you must supply to `keyType` a type that implements <xref:System.IComparable>.  
+  
+ The following code example creates an object that holds `String` entries and associates an `Integer` key with each one. `Integer` implements <xref:System.IComparable> and therefore satisfies the constraint on `keyType`.  
+  
+```  
+Dim d As New dictionary(Of String, Integer)  
+```  
+  
+ The `Of` keyword can be used in these contexts:  
+  
+ [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
+  
+ [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)  
+  
+ [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+  
+ [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
+  
+ [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
+  
+ [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+  
+## See Also  
+ <xref:System.IComparable>   
+ [Type List](../../../visual-basic/language-reference/statements/type-list.md)   
+ [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
+ [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)   
+ [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

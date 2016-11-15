@@ -24,7 +24,7 @@ ms.assetid:
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="articles/images/hub/featured-1.svg" src="./docs/images/hub/featured-1.png" alt="" />
+                                        <img data-hoverimage="articles/images/hub/featured-1.svg" src="articles/images/hub/featured-1.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -42,7 +42,7 @@ ms.assetid:
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="./docs/images/hub/featured-2.svg" src="./docs/images/hub/featured-2.png" alt="" />
+                                        <img data-hoverimage="articles/images/hub/featured-2.svg" src="articles/images/hub/featured-2.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -60,7 +60,7 @@ ms.assetid:
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="./docs/images/hub/featured-3.svg" src="./docs/images/hub/featured-3.png" alt="" />
+                                        <img data-hoverimage="articles/images/hub/featured-3.svg" src="articles/images/hub/featured-3.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -88,7 +88,7 @@ ms.assetid:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-gs-1.svg" alt="" />
+                                                    <img src="articles/images/hub/net-gs-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -107,7 +107,7 @@ ms.assetid:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-gs-2.svg" alt="" />
+                                                    <img src="articles/images/hub/net-gs-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -127,7 +127,7 @@ ms.assetid:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-gs-3.svg" alt="" />
+                                                    <img src="articles/images/hub/net-gs-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -147,7 +147,7 @@ ms.assetid:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-gs-7.svg" alt="" />
+                                                    <img src="articles/images/hub/net-gs-7.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -167,7 +167,7 @@ ms.assetid:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-gs-4.svg" alt="" />
+                                                    <img src="articles/images/hub/net-gs-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -186,7 +186,7 @@ ms.assetid:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-gs-5.svg" alt="" />
+                                                    <img src="articles/images/hub/net-gs-5.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -205,7 +205,7 @@ ms.assetid:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-gs-6.svg" alt="" />
+                                                    <img src="articles/images/hub/net-gs-6.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -230,7 +230,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-web-1.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-web-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -249,7 +249,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-web-2.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-web-2.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -268,7 +268,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-web-3.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-web-3.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -287,7 +287,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-web-4.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-web-4.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -307,7 +307,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-web-5.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-web-5.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -326,7 +326,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-web-6.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-web-6.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -351,7 +351,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-cloud-1.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-cloud-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -371,7 +371,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-cloud-2.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-cloud-2.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -390,7 +390,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-cloud-3.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-cloud-3.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -410,7 +410,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-cloud-4.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-cloud-4.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -435,7 +435,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-mobile-1.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-mobile-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -454,7 +454,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-mobile-2.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-mobile-2.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -473,7 +473,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-mobile-3.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-mobile-3.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -497,7 +497,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-desktop-1.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-desktop-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -518,7 +518,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-desktop-2.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-desktop-2.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -538,7 +538,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-desktop-3.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-desktop-3.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -557,7 +557,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-desktop-4.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-desktop-4.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -581,7 +581,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-gaming-1.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-gaming-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -602,7 +602,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-gaming-2.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-gaming-2.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -621,7 +621,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-gaming-3.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-gaming-3.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -641,7 +641,7 @@ ms.assetid:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./docs/images/hub/net-docs-gaming-4.svg" alt="" />
+                                                        <img src="articles/images/hub/net-docs-gaming-4.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

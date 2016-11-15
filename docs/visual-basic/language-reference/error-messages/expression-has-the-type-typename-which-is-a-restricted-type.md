@@ -45,7 +45,7 @@ An expression evaluates to a type that cannot be boxed by the common language ru
   
  **Error ID:** BC31393  
   
-### To correct this error  
+## To correct this error  
   
 1.  Locate the expression that evaluates to the cited type.  
   

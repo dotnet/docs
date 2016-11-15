@@ -35,7 +35,7 @@ translation.priority.mt:
 # Division by zero (Visual Basic Error)
 The value of an expression used as a divisor is zero.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the spelling of variables in the expression. A misspelled variable can implicitly create a numeric variable initialized to zero.  
   

@@ -41,7 +41,7 @@ The \<exception> tag provides a way to document the exceptions that may be throw
   
  **Error ID:** BC42319  
   
-### To correct this error  
+## To correct this error  
   
 -   Add the `cref` attribute to the exception as follows:  
   

@@ -41,7 +41,7 @@ A statement refers to a programming element, but the compiler cannot find an ele
   
  **Error ID:** BC30451  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the spelling of the name in the referring statement. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] is case-insensitive, but any other variation in the spelling is regarded as a completely different name. Note that the underscore (`_`) is part of the name and therefore part of the spelling.  
   

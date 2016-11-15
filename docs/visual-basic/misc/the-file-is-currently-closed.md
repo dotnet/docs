@@ -33,7 +33,7 @@ translation.priority.mt:
 # The file is currently closed
 An attempt has been made to perform an operation that can only be performed on an open file, but the file is currently closed.  
   
-### To correct this error  
+## To correct this error  
   
 -   Open the file and attempt the operation again.  
   

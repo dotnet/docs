@@ -96,4 +96,4 @@ translation.priority.ht:
   
 ## See Also  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [Converting Data Types](../Topic/Converting%20Data%20Types.md)
+ [Converting Data Types](../../../visual-basic/programming-guide/concepts/linq/converting-data-types.md)

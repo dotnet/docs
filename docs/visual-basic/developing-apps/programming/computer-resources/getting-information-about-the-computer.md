@@ -39,9 +39,8 @@ The `My.Computer.Info` object provides properties for getting information about 
 ## Remarks  
  This table lists tasks commonly accomplished through the `My.Computer.Info` object and points to topics demonstrating how to perform each.  
   
-|||  
-|-|-|  
 |To|See|  
+|---|---|   
 |Determine how much virtual address space is available for the computer on which the application is installed|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.TotalVirtualMemory%2A>|  
 |Determine the platform type of the computer on which the application is running|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.OSPlatform%2A>|  
 |Determine the operating system of the computer on which the application is running|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.OSFullName%2A>|  

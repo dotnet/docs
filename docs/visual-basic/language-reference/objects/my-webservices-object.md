@@ -74,9 +74,8 @@ Provides properties for creating and accessing a single instance of each XML Web
   
 ### Availability by Project Type  
   
-|||  
-|-|-|  
 |Project type|Available|  
+|---|---|  
 |Windows Application|**Yes**|  
 |Class Library|**Yes**|  
 |Console Application|**Yes**|  

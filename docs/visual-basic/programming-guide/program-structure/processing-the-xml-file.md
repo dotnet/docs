@@ -44,9 +44,8 @@ The compiler generates an ID string for each construct in your code that is tagg
   
 -   The first part of the ID string identifies the kind of member being identified, with a single character followed by a colon. The following member types are used.  
   
-|||  
-|-|-|  
 |Character|Description|  
+|---|---|  
 |N|namespace<br /><br /> You cannot add documentation comments to a namespace, but you can make CREF references to them, where supported.|  
 |T|type: `Class`, `Module`, `Interface`, `Structure`, `Enum`, `Delegate`|  
 |F|field: `Dim`|  

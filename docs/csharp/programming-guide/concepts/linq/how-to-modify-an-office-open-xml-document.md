@@ -27,7 +27,7 @@ This topic presents an example that opens an Office Open XML document, modifies 
   
  This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
   
-```c#  
+```cs  
 public static class LocalExtensions  
 {  
     public static string StringConcatenate(this IEnumerable<string> source)  

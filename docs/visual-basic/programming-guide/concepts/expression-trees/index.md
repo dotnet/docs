@@ -34,7 +34,7 @@ Expression trees represent code in a tree-like data structure, where each node i
 ## Creating Expression Trees from Lambda Expressions  
  When a lambda expression is assigned to a variable of type <xref:System.Linq.Expressions.Expression%601>, the compiler emits code to build an expression tree that represents the lambda expression.  
   
- The Visual Basic compiler can generate expression trees only from expression lambdas (or single-line lambdas). It cannot parse statement lambdas (or multi-line lambdas). For more information about lambda expressions in Visual Basic, see [Lambda Expressions](../../../../visual-basic/language-reference/procedures/lambda-expressions.md).  
+ The Visual Basic compiler can generate expression trees only from expression lambdas (or single-line lambdas). It cannot parse statement lambdas (or multi-line lambdas). For more information about lambda expressions in Visual Basic, see [Lambda Expressions](../../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
  The following code examples demonstrate how to have the Visual Basic compiler create an expression tree that represents the lambda expression `Function(num) num < 5`.  
   
@@ -89,6 +89,6 @@ Console.WriteLine(expr.Compile()(4))
  <xref:System.Linq.Expressions>   
  [How to: Execute Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)   
  [How to: Modify Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md)   
- [Lambda Expressions](../../../../visual-basic/language-reference/procedures/lambda-expressions.md)   
+ [Lambda Expressions](../../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
  [Dynamic Language Runtime Overview](../Topic/Dynamic%20Language%20Runtime%20Overview.md)   
  [Programming Concepts (Visual Basic)](../../../../visual-basic/programming-guide/concepts/index.md)

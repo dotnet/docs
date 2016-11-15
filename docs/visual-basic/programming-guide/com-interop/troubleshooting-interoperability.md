@@ -151,8 +151,8 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
 ## See Also  
  <xref:System.Runtime.InteropServices.MarshalAsAttribute>   
  [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)   
- [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md)   
- [Tlbexp.exe (Type Library Exporter)](../Topic/Tlbexp.exe%20\(Type%20Library%20Exporter\).md)   
+ [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/library/ec0a8d63-11b3-4acd-b398-da1e37e97382)   
+ [Tlbexp.exe (Type Library Exporter)](http://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)   
  [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)   
  [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)   
- [Global Assembly Cache](../Topic/Global%20Assembly%20Cache.md)
+ [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)

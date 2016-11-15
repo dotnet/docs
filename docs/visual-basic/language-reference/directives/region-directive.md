@@ -52,9 +52,8 @@ Collapses and hides sections of code in Visual Basic files.
   
 ## Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`identifier_string`|Required. String that acts as the title of a region when it is collapsed. Regions are collapsed by default.|  
 |`#End Region`|Terminates the `#Region` block.|  
   
@@ -68,5 +67,5 @@ Collapses and hides sections of code in Visual Basic files.
   
 ## See Also  
  [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)   
- [Outlining](/visual-studio/ide/outlining)   
+ [Outlining](/visualstudio/ide/outlining)   
  [How to: Collapse and Hide Sections of Code](../../../visual-basic/programming-guide/program-structure/how-to-collapse-and-hide-sections-of-code.md)

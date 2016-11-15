@@ -53,7 +53,7 @@ The `=>` token is called the lambda operator. It is used in *lambda expressions*
 ## Example  
  The following example shows how to write a lambda expression for the overload of the standard query operator <xref:System.Linq.Enumerable.Where%2A?displayProperty=fullName> that takes two arguments. Because the lambda expression has more than one parameter, the parameters must be enclosed in parentheses. The second parameter, `index`, represents the index of the current element in the collection. The `Where` expression returns all the strings whose lengths are less than their index positions in the array.  
   
-```c#  
+```cs  
 static void Main(string[] args)  
 {  
     string[] digits = { "zero", "one", "two", "three", "four", "five",   

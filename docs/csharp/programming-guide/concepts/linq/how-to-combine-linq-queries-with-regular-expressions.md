@@ -27,7 +27,7 @@ This example shows how to use the <xref:System.Text.RegularExpressions.Regex> cl
   
 ## Example  
   
-```c#  
+```cs  
 class QueryWithRegEx  
 {  
     public static void Main()  

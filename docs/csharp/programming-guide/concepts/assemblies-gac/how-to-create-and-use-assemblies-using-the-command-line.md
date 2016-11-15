@@ -35,7 +35,7 @@ An assembly, or a dynamic linking library (DLL), is linked to your program at ru
   
 ## Example  
   
-```c#  
+```cs  
 // File: Add.cs   
 namespace UtilityMethods  
 {  
@@ -49,7 +49,7 @@ namespace UtilityMethods
 }  
 ```  
   
-```c#  
+```cs  
 // File: Mult.cs  
 namespace UtilityMethods   
 {  
@@ -63,7 +63,7 @@ namespace UtilityMethods
 }  
 ```  
   
-```c#  
+```cs  
 // File: TestCode.cs  
   
 using UtilityMethods;  
@@ -101,13 +101,13 @@ class TestCode
   
  Notice that the `using` directive at the beginning of the file enables you to use the unqualified class names to reference the DLL methods at compile time, as follows:  
   
-```c#  
+```cs  
 MultiplyClass.Multiply(num1, num2);  
 ```  
   
  Otherwise, you have to use the fully qualified names, as follows:  
   
-```c#  
+```cs  
 UtilityMethods.MultiplyClass.Multiply(num1, num2);  
 ```  
   
@@ -119,7 +119,7 @@ UtilityMethods.MultiplyClass.Multiply(num1, num2);
 ## Compiling the Code  
  To build the file `MathLibrary.DLL`, compile the two files `Add` and `Mult` by using the following command line.  
   
-```c#  
+```cs  
 csc /target:library /out:MathLibrary.DLL Add.cs Mult.cs  
 ```  
   
@@ -127,7 +127,7 @@ csc /target:library /out:MathLibrary.DLL Add.cs Mult.cs
   
  To build the executable file, `TestCode.exe`, use the following command line:  
   
-```c#  
+```cs  
 csc /out:TestCode.exe /reference:MathLibrary.DLL TestCode.cs  
 ```  
   
@@ -137,5 +137,5 @@ csc /out:TestCode.exe /reference:MathLibrary.DLL TestCode.cs
   
 ## See Also  
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache.md)   
- [Creating a Class to Hold DLL Functions](../Topic/Creating%20a%20Class%20to%20Hold%20DLL%20Functions.md)
+ [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)   
+ [Creating a Class to Hold DLL Functions](http://msdn.microsoft.com/library/e08e4c34-0223-45f7-aa55-a3d8dd979b0f)

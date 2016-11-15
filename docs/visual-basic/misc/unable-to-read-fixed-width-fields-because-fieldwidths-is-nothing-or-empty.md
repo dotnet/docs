@@ -35,7 +35,7 @@ translation.priority.mt:
 # Unable to read fixed width fields because FieldWidths is Nothing or empty
 The `TextFieldParser` is unable to read fixed-width fields because the `FieldWidths` property is set to `Nothing` or is empty.  
   
-### To correct this error  
+## To correct this error  
   
 -   Set `FieldWidths` to a valid value.  
   

@@ -44,7 +44,7 @@ A dynamic-link library (DLL) is a library specified in the `Lib` clause of a `De
   
 -   The DLL or referenced DLL is not in a directory specified in the path.  
   
-### To correct this error  
+## To correct this error  
   
 -   If the file is a source-text file and therefore not DLL executable, it must be compiled and linked to a DLL-executable form.  
   

@@ -41,7 +41,7 @@ The most common use of the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 
   
  You can also bind to a data source at run time by setting the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.VirtualMode%2A> property to `True` and assigning a data source to the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.DataSource%2A> property. In this case, you will need to manage all interaction with the data source. For more information, see [Virtual Mode in the DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/virtual-mode-in-the-datarepeater-control-visual-studio.md).  
   
- [!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
 ### To create a data-bound DataRepeater  
   
@@ -56,7 +56,7 @@ The most common use of the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 
 3.  On the **Data** menu, click **Show Data Sources**.  
   
     > [!NOTE]
-    >  If the **Data Sources** window is empty, add a data source to it. For more information, see [Add new data sources](/visual-studio/data-tools/add-new-data-sources).  
+    >  If the **Data Sources** window is empty, add a data source to it. For more information, see [Add new data sources](/visualstudio/data-tools/add-new-data-sources).  
   
 4.  In the **Data Sources** window, select the top-level node for the table that contains the data that you want to bind.  
   
@@ -64,7 +64,7 @@ The most common use of the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 
   
 6.  Select the table node and drag it onto the item template region of the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control.  
   
-     You can specify which types of controls are displayed for each field. For more information, see [Set the control to be created when dragging from the Data Sources window](/visual-studio/data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window).  
+     You can specify which types of controls are displayed for each field. For more information, see [Set the control to be created when dragging from the Data Sources window](/visualstudio/data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window).  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>   

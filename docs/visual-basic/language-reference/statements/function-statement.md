@@ -75,7 +75,7 @@ End Function
   
 -   `attributelist`  
   
-     Optional. See [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md).  
+     Optional. See [Attribute List](attribute-list.md).  
   
 -   `accessmodifier`  
   
@@ -133,11 +133,11 @@ End Function
   
 -   `typeparamlist`  
   
-     Optional. List of type parameters for a generic procedure. See [Type List](../../../visual-basic/language-reference/statements/type-list.md).  
+     Optional. List of type parameters for a generic procedure. See [Type List](type-list.md).  
   
 -   `parameterlist`  
   
-     Optional. List of local variable names representing the parameters of this procedure. See [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md).  
+     Optional. List of local variable names representing the parameters of this procedure. See [Parameter List](parameter-list.md).  
   
 -   `returntype`  
   
@@ -145,7 +145,7 @@ End Function
   
 -   `Implements`  
   
-     Optional. Indicates that this procedure implements one or more `Function` procedures, each one defined in an interface implemented by this procedure's containing class or structure. See [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md).  
+     Optional. Indicates that this procedure implements one or more `Function` procedures, each one defined in an interface implemented by this procedure's containing class or structure. See [Implements Statement](implements-statement.md).  
   
 -   `implementslist`  
   
@@ -157,15 +157,14 @@ End Function
   
      `interface.definedname`  
   
-    |||  
-    |-|-|  
     |Part|Description|  
+    |---|---|  
     |`interface`|Required. Name of an interface implemented by this procedure's containing class or structure.|  
     |`definedname`|Required. Name by which the procedure is defined in `interface`.|  
   
 -   `Handles`  
   
-     Optional. Indicates that this procedure can handle one or more specific events. See [Handles](../../../visual-basic/language-reference/statements/handles-clause.md).  
+     Optional. Indicates that this procedure can handle one or more specific events. See [Handles](handles-clause.md).  
   
 -   `eventlist`  
   
@@ -177,9 +176,8 @@ End Function
   
      `eventvariable.event`  
   
-    |||  
-    |-|-|  
     |Part|Description|  
+    |---|---|  
     |`eventvariable`|Required. Object variable declared with the data type of the class or structure that raises the event.|  
     |`event`|Required. Name of the event this procedure handles.|  
   
@@ -197,7 +195,7 @@ End Function
  To return a value to the calling code, use a `Function` procedure; otherwise, use a `Sub` procedure.  
   
 ## Defining a Function  
- You can define a `Function` procedure only at the module level. Therefore, the declaration context for a function must be a class, a structure, a module, or an interface and can't be a source file, a namespace, a procedure, or a block. For more information, see [Declaration Contexts and Default Access Levels](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md).  
+ You can define a `Function` procedure only at the module level. Therefore, the declaration context for a function must be a class, a structure, a module, or an interface and can't be a source file, a namespace, a procedure, or a block. For more information, see [Declaration Contexts and Default Access Levels](declaration-contexts-and-default-access-levels.md).  
   
  `Function` procedures default to public access. You can adjust their access levels with the access modifiers.  
   
@@ -206,7 +204,7 @@ End Function
  If this procedure uses the `Implements` keyword, the containing class or structure must also have an `Implements` statement that immediately follows its `Class` or `Structure` statement. The `Implements` statement must include each interface that's specified in `implementslist`. However, the name by which an interface defines the `Function` (in `definedname`) doesn't need to match the name of this procedure (in `name`).  
   
 > [!NOTE]
->  You can use lambda expressions to define function expressions inline. For more information, see [Function Expression](../../../visual-basic/language-reference/operators/function-expression.md) and [Lambda Expressions](../../../visual-basic/language-reference/procedures/lambda-expressions.md).  
+>  You can use lambda expressions to define function expressions inline. For more information, see [Function Expression](../../../visual-basic/language-reference/operators/function-expression.md) and [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
 ## Returning from a Function  
  When the `Function` procedure returns to the calling code, execution continues with the statement that follows the statement that called the procedure.  
@@ -230,7 +228,7 @@ End Function
   
  You call a `Function` procedure the same way that you call any library function such as `Sqrt`, `Cos`, or `ChrW`.  
   
- You can also call a function by using the `Call` keyword. In that case, the return value is ignored. Use of the `Call` keyword isn't recommended in most cases. For more information, see [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md).  
+ You can also call a function by using the `Call` keyword. In that case, the return value is ignored. Use of the `Call` keyword isn't recommended in most cases. For more information, see [Call Statement](call-statement.md).  
   
  Visual Basic sometimes rearranges arithmetic expressions to increase internal efficiency. For that reason, you shouldn't use a `Function` procedure in an arithmetic expression when the function changes the value of variables in the same expression.  
   
@@ -246,18 +244,18 @@ End Function
   
  An `Async` function cannot declare any [ByRef](../../../visual-basic/language-reference/modifiers/byref.md) parameters.  
   
- A [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md) can also be marked with the `Async` modifier. This is primarily used for event handlers, where a value cannot be returned. An `Async``Sub` procedure can't be awaited, and the caller of an `Async``Sub` procedure can't catch exceptions that are thrown by the `Sub` procedure.  
+ A [Sub Statement](sub-statement.md) can also be marked with the `Async` modifier. This is primarily used for event handlers, where a value cannot be returned. An `Async``Sub` procedure can't be awaited, and the caller of an `Async``Sub` procedure can't catch exceptions that are thrown by the `Sub` procedure.  
   
- For more information about `Async` functions, see [Asynchronous Programming with Async and Await](../Topic/Asynchronous%20Programming%20with%20Async%20and%20Await%20\(C%23%20and%20Visual%20Basic\).md), [Control Flow in Async Programs](../Topic/Control%20Flow%20in%20Async%20Programs%20\(C%23%20and%20Visual%20Basic\).md), and [Async Return Types](../Topic/Async%20Return%20Types%20\(C%23%20and%20Visual%20Basic\).md).  
+ For more information about `Async` functions, see [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md), [Control Flow in Async Programs](../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md), and [Async Return Types](../../../visual-basic/programming-guide/concepts/async/async-return-types.md).  
   
 ## Iterator Functions  
- An *iterator* function performs a custom iteration over a collection, such as a list or array. An iterator function uses the [Yield](../../../visual-basic/language-reference/statements/yield-statement.md) statement to return each element one at a time. When a [Yield](../../../visual-basic/language-reference/statements/yield-statement.md) statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.  
+ An *iterator* function performs a custom iteration over a collection, such as a list or array. An iterator function uses the [Yield](yield-statement.md) statement to return each element one at a time. When a [Yield](yield-statement.md) statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.  
   
- You call an iterator from client code by using a [For Each…Next](../../../visual-basic/language-reference/statements/for-each-next-statement.md) statement.  
+ You call an iterator from client code by using a [For Each…Next](for-each-next-statement.md) statement.  
   
  The return type of an iterator function can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.  
   
- For more information, see [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md).  
+ For more information, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
   
 ## Example  
  The following example uses the `Function` statement to declare the name, parameters, and code that form the body of a `Function` procedure. The `ParamArray` modifier enables the function to accept a variable number of arguments.  
@@ -277,14 +275,14 @@ End Function
  [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/function-statement_5.vb)]  
   
 ## See Also  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Function Procedures](../../../visual-basic/language-reference/procedures/function-procedures.md)   
- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)   
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   
- [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md)   
- [Of](../../../visual-basic/language-reference/statements/of-clause.md)   
- [Parameter Arrays](../../../visual-basic/language-reference/procedures/parameter-arrays.md)   
+ [Sub Statement](sub-statement.md)   
+ [Function Procedures](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)   
+ [Parameter List](parameter-list.md)   
+ [Dim Statement](dim-statement.md)   
+ [Call Statement](call-statement.md)   
+ [Of](of-clause.md)   
+ [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)   
  [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)   
- [Troubleshooting Procedures](../../../visual-basic/language-reference/procedures/troubleshooting-procedures.md)   
- [Lambda Expressions](../../../visual-basic/language-reference/procedures/lambda-expressions.md)   
+ [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)   
+ [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
  [Function Expression](../../../visual-basic/language-reference/operators/function-expression.md)

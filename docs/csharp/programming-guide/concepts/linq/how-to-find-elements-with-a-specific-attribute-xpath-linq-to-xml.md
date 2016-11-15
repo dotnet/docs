@@ -27,7 +27,7 @@ Sometimes you want to find all elements that have a specific attribute. You are 
 ## Example  
  The following code selects just the elements that have the `Select` attribute.  
   
-```c#  
+```cs  
 XElement doc = XElement.Parse(  
 @"<Root>  
     <Child1>1</Child1>  

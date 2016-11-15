@@ -49,7 +49,7 @@ Data type(s) of the type parameter(s) cannot be inferred from these arguments. S
   
  The following code demonstrates the error.  
   
-```vb#  
+```vb  
 Module Module1  
   
     Sub Main()  
@@ -75,7 +75,7 @@ End Interface
   
  **Error ID:** BC36647 and BC36644  
   
-### To correct this error  
+## To correct this error  
   
 -   You may be able to specify a data type for the type parameter or parameters instead of relying on type inference.  
   

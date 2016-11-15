@@ -50,7 +50,7 @@ The following code example demonstrates how a string can be parsed using the <xr
   
  String.Split can take an array of strings (character sequences that act as separators for parsing the target string, instead of single characters).  
   
-```c#  
+```cs  
 class TestStringSplit  
 {  
     static void Main()  
@@ -86,4 +86,4 @@ class TestStringSplit
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Strings](../../../csharp/programming-guide/strings/index.md)   
- [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md)
+ [.NET Framework Regular Expressions](https://msdn.microsoft.com/library/hs600312)

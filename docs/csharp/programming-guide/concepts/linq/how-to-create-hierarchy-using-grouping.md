@@ -25,7 +25,7 @@ This example shows how to group data, and then generate XML based on the groupin
   
  This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md).  
   
-```c#  
+```cs  
 XElement doc = XElement.Load("Data.xml");  
 var newData =  
     new XElement("Root",  

@@ -35,7 +35,7 @@ translation.priority.mt:
 # Path &#39;&lt;pathname&gt;&#39; not found
 The operating system is unable to find the path specified path during a file-access or disk-access operation. The path to a file must include the drive specification and the directories and subdirectories that must be traversed to locate the file. A path can be relative or absolute.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Ensure that the path includes the required elements.  
   

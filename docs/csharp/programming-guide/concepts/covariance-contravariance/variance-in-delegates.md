@@ -27,7 +27,7 @@ translation.priority.mt:
   
  For example, consider the following code, which has two classes and two delegates: generic and non-generic.  
   
-```c#  
+```cs  
 public class First { }  
 public class Second : First { }  
 public delegate First SampleDelegate(Second a);  
@@ -36,7 +36,7 @@ public delegate R SampleGenericDelegate<A, R>(A a);
   
  When you create delegates of the `SampleDelegate` or `SampleGenericDelegate<A, R>` types, you can assign any one of the following methods to those delegates.  
   
-```c#  
+```cs  
 // Matching signature.  
 public static First ASecondRFirst(Second first)  
 { return new First(); }  
@@ -57,7 +57,7 @@ public static Second AFirstRSecond(First first)
   
  The following code example illustrates the implicit conversion between the method signature and the delegate type.  
   
-```c#  
+```cs  
 // Assigning a method with a matching signature   
 // to a non-generic delegate. No conversion is necessary.  
 SampleDelegate dNonGeneric = ASecondRFirst;  
@@ -84,7 +84,7 @@ SampleGenericDelegate<Second, First> dGenericConversion = AFirstRSecond;
   
  The following code example shows how you can create a delegate that has a covariant generic type parameter.  
   
-```c#  
+```cs  
 // Type T is declared covariant by using the out keyword.  
 public delegate T SampleGenericDelegate <out T>();  
   
@@ -102,7 +102,7 @@ public static void Test()
   
  In the following code example, `SampleGenericDelegate<String>` cannot be explicitly converted to `SampleGenericDelegate<Object>`, although `String` inherits `Object`. You can fix this problem by marking the generic parameter `T` with the `out` keyword.  
   
-```c#  
+```cs  
 public delegate T SampleGenericDelegate<T>();  
   
 public static void Test()  
@@ -165,7 +165,7 @@ public static void Test()
   
  The following example demonstrates that variance in generic type parameters is not supported for value types.  
   
-```c#  
+```cs  
 // The type T is covariant.  
 public delegate T DVariant<out T>();  
   
@@ -189,6 +189,6 @@ public static void Test()
 ```  
   
 ## See Also  
- [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)   
+ [Generics](https://msdn.microsoft.com/library/ms172192)   
  [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)   
  [How to: Combine Delegates (Multicast Delegates)](../../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)

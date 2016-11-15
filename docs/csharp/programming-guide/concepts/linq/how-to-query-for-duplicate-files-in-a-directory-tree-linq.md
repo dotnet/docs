@@ -27,7 +27,7 @@ Sometimes files that have the same name may be located in more than one folder. 
   
 ## Example  
   
-```c#  
+```cs  
 class QueryDuplicateFileNames  
 {  
     static void Main(string[] args)  

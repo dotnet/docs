@@ -1,5 +1,5 @@
 ---
-title: "Attributes (Visual Basic)2 | Microsoft Docs"
+title: "Attributes (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -158,4 +158,4 @@ Module: CLSCompliant(True)>
 ## See Also  
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
  [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)   
- [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md)
+ [Attributes](https://msdn.microsoft.com/library/5x6cd29c)

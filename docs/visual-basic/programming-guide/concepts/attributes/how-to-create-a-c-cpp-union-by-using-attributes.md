@@ -83,7 +83,7 @@ Structure TestExplicit
  <xref:System.Reflection>   
  <xref:System.Attribute>   
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
- [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md)   
+ [Attributes](https://msdn.microsoft.com/library/5x6cd29c)   
  [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)   
  [Attributes (Visual Basic)](../../../../visual-basic/language-reference/attributes.md)   
  [Creating Custom Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)   

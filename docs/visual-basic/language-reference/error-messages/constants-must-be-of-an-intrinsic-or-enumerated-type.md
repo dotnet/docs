@@ -43,7 +43,7 @@ You have attempted to declare a constant as a class, structure, or array type, o
   
  **Error ID:** BC30424  
   
-### To correct this error  
+## To correct this error  
   
 1.  Declare the constant as an intrinsic or `Enum` type.  
   

@@ -33,7 +33,7 @@ translation.priority.mt:
 # Invalid pattern string
 The pattern string specified in the `Like` operation of a search is invalid.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Review the valid characters for list expressions.  
   

@@ -35,7 +35,7 @@ translation.priority.mt:
 # Specified DLL function not found
 The dynamic-link library (DLL) in a user library reference was found, but the DLL function specified was not found within the DLL.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Specify a valid ordinal in the function declaration.  
   

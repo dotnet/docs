@@ -40,13 +40,11 @@ An important part of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concept
 ## Designing Windows Forms Applications  
  You can create Windows Forms and Windows service applications with [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)]. For more information, see the following topics:  
   
--   [Getting Started with Windows Forms](../Topic/Getting%20Started%20with%20Windows%20Forms.md). Provides information on how to create and program Windows Forms.  
+-   [Getting Started with Windows Forms](https://msdn.microsoft.com/library/ms229601.aspx). Provides information on how to create and program Windows Forms.  
+   
+-   [Windows Forms Controls](https://msdn.microsoft.com/library/ettb6e2a.aspx). Collection of topics detailing the use of Windows Forms controls.  
   
--   [Windows Forms Walkthroughs](http://msdn.microsoft.com/en-us/fd44d13d-4733-416f-aefc-32592e59e5d9). Lists topics that provide a step-by-step development of commonly created Windows Forms applications based on Windows Forms.  
-  
--   [Windows Forms Controls](../Topic/Windows%20Forms%20Controls.md). Collection of topics detailing the use of Windows Forms controls.  
-  
--   [Windows Service Applications](../Topic/Developing%20Windows%20Service%20Applications.md). Lists topics that explain how to create Windows services.  
+-   [Windows Service Applications](https://msdn.microsoft.com/library/y817hyb6.aspx). Lists topics that explain how to create Windows services.  
   
 ## Building Rich, Interactive User Interfaces  
  Windows Forms is the smart-client component of the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)], a set of managed libraries that enable common application tasks such as reading and writing to the file system. Using a development environment like [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)], you can create Windows Forms applications that display information, request input from users, and communicate with remote computers over a network.  
@@ -54,10 +52,10 @@ An important part of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concept
  In Windows Forms, a form is a visual surface on which you display information to the user. You commonly build Windows Forms applications by placing controls on forms and developing responses to user actions, such as mouse clicks or key presses. A *control* is a discrete user interface (UI) element that displays data or accepts data input.  
   
 ### Events  
- When a user does something to your form or one of its controls, it generates an event. Your application reacts to these events by using code, and processes the events when they occur. For more information, see [Creating Event Handlers in Windows Forms](../Topic/Creating%20Event%20Handlers%20in%20Windows%20Forms.md).  
+ When a user does something to your form or one of its controls, it generates an event. Your application reacts to these events by using code, and processes the events when they occur. For more information, see [Creating Event Handlers in Windows Forms](https://msdn.microsoft.com/library/dacysss4.aspx).  
   
 ### Controls  
- Windows Forms contains a variety of controls that you can place on forms: controls that display text boxes, buttons, drop-down boxes, radio buttons, and even Web pages. For a list of all the controls you can use on a form, see [Controls to Use on Windows Forms](../Topic/Controls%20to%20Use%20on%20Windows%20Forms.md). If an existing control does not meet your needs, Windows Forms also supports creating your own custom controls using the <xref:System.Windows.Forms.UserControl> class.  
+ Windows Forms contains a variety of controls that you can place on forms: controls that display text boxes, buttons, drop-down boxes, radio buttons, and even Web pages. For a list of all the controls you can use on a form, see [Controls to Use on Windows Forms](https://msdn.microsoft.com/library/3xdhey7w.aspx). If an existing control does not meet your needs, Windows Forms also supports creating your own custom controls using the <xref:System.Windows.Forms.UserControl> class.  
   
  Windows Forms has rich UI controls that emulate features in high-end applications like Microsoft Office. Using the <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.MenuStrip> control, you can create toolbars and menus that contain text and images, display submenus, and host other controls such as text boxes and combo boxes.  
   
@@ -71,11 +69,9 @@ An important part of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concept
 |To|See|  
 |--------|---------|  
 |Create a new Windows Forms application with [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)]|[Walkthrough: Creating a Simple Windows Form](http://msdn.microsoft.com/en-us/2d9daec0-0543-41d0-acb1-964f685bddbb)|  
-|Use controls on forms|[How to: Add Controls to Windows Forms](../Topic/How%20to:%20Add%20Controls%20to%20Windows%20Forms.md)|  
-|Handle events from a form and its controls|[How to: Create Event Handlers Using the Designer](http://msdn.microsoft.com/en-us/8461e9b8-14e8-406f-936e-3726732b23d2)|  
-|Use the <xref:System.Windows.Forms.ToolStrip> Control|[How to: Create a Basic ToolStrip with Standard Items Using the Designer](../Topic/How%20to:%20Create%20a%20Basic%20Windows%20Forms%20ToolStrip%20with%20Standard%20Items%20Using%20the%20Designer.md)|  
-|Create graphics with <xref:System.Drawing>|[Getting Started with Graphics Programming](../Topic/Getting%20Started%20with%20Graphics%20Programming.md)|  
-|Create custom controls|[How to: Inherit from the UserControl Class](../Topic/How%20to:%20Inherit%20from%20the%20UserControl%20Class.md)|  
+|Use controls on forms|[How to: Add Controls to Windows Forms](https://msdn.microsoft.com/library/0h5y8567.aspx)|   
+|Create graphics with <xref:System.Drawing>|[Getting Started with Graphics Programming](https://msdn.microsoft.com/library/da0f23z7.aspx)|  
+|Create custom controls|[How to: Inherit from the UserControl Class](https://msdn.microsoft.com/library/00ctb4z0.aspx)|  
   
 ## Displaying and Manipulating Data  
  Many applications must display data from a database, XML file, XML Web service, or other data source. Windows Forms provides a flexible control called the <xref:System.Windows.Forms.DataGridView> control for rendering such tabular data in a traditional row and column format, so that every piece of data occupies its own cell. Using <xref:System.Windows.Forms.DataGridView> you can customize the appearance of individual cells, lock arbitrary rows and columns in place, and display complex controls inside cells, among other features.  
@@ -92,10 +88,9 @@ An important part of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concept
   
 |To|See|  
 |--------|---------|  
-|Use the <xref:System.Windows.Forms.BindingSource> component|[How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](../Topic/How%20to:%20Bind%20Windows%20Forms%20Controls%20with%20the%20BindingSource%20Component%20Using%20the%20Designer.md)|  
-|Work with [!INCLUDE[vstecado](../../../csharp/programming-guide/concepts/linq/includes/vstecado_md.md)] data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](../Topic/How%20to:%20Sort%20and%20Filter%20ADO.NET%20Data%20with%20the%20Windows%20Forms%20BindingSource%20Component.md)|  
-|Use the Data Sources window|[Walkthrough: Displaying Data on a Windows Form](../Topic/Walkthrough:%20Displaying%20Data%20on%20a%20Windows%20Form.md)|  
-|Use application settings|[How to: Create Application Settings Using the Designer](http://msdn.microsoft.com/en-us/53b3af80-1c02-4e35-99c6-787663148945)|  
+|Use the <xref:System.Windows.Forms.BindingSource> component|[How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](https://msdn.microsoft.com/library/801dxw2t.aspx)|  
+|Work with [!INCLUDE[vstecado](../../../csharp/programming-guide/concepts/linq/includes/vstecado_md.md)] data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](https://msdn.microsoft.com/library/ya3sah92.aspx)|  
+|Use the Data Sources window|[Walkthrough: Displaying Data on a Windows Form](/visualstudio/data-tools/accessing-data-in-visual-studio)|  
   
 ## Deploying Applications to Client Computers  
  Once you have written your application, you must send it to your users so that they can install and run it on their own client computers. Using the [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)] technology, you can deploy your applications from within [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] by using just a few clicks and provide users with a URL pointing to your application on the Web. [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)] manages all of the elements and dependencies in your application and ensures that the application is properly installed on the client computer.  
@@ -104,13 +99,13 @@ An important part of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concept
   
  When you update your application, you publish a new deployment manifest and a new copy of your application to your Web server. [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)] detects that there is an update available and upgrades the user's installation; no custom programming is required to update old assemblies.  
   
- For a full introduction to [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)], see [ClickOnce Security and Deployment](/visual-studio/deployment/clickonce-security-and-deployment). For step-by-step information about using these features, see the following Help topics:  
+ For a full introduction to [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)], see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment). For step-by-step information about using these features, see the following Help topics:  
   
 |To|See|  
 |--------|---------|  
-|Deploy an application with [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)]|[How to: Publish a ClickOnce Application using the Publish Wizard](../Topic/How%20to:%20Publish%20a%20ClickOnce%20Application%20using%20the%20Publish%20Wizard.md)<br /><br /> [Walkthrough: Manually Deploying a ClickOnce Application](../Topic/Walkthrough:%20Manually%20Deploying%20a%20ClickOnce%20Application.md)|  
-|Update a [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)] deployment|[How to: Manage Updates for a ClickOnce Application](../Topic/How%20to:%20Manage%20Updates%20for%20a%20ClickOnce%20Application.md)|  
-|Manage security with [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)]|[How to: Enable ClickOnce Security Settings](../Topic/How%20to:%20Enable%20ClickOnce%20Security%20Settings.md)|  
+|Deploy an application with [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)]|[How to: Publish a ClickOnce Application using the Publish Wizard](/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard)<br /><br /> [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)|  
+|Update a [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)] deployment|[How to: Manage Updates for a ClickOnce Application](/visualstudio/deployment/how-to-manage-updates-for-a-clickonce-application)|  
+|Manage security with [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)]|[How to: Enable ClickOnce Security Settings](/visualstudio/deployment/how-to-enable-clickonce-security-settings)|  
   
 ## Other Controls and Features  
  There are many other features in Windows Forms that make implementing common tasks fast and easy, such as support for creating dialog boxes, printing, adding Help and documentation, and localizing your application to multiple languages. In addition, Windows Forms relies on the robust security system of the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)], enabling you to release more secure applications to your customers.  
@@ -119,11 +114,10 @@ An important part of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concept
   
 |To|See|  
 |--------|---------|  
-|Print the contents of a form|[How to: Print Graphics in Windows Forms](../Topic/How%20to:%20Print%20Graphics%20in%20Windows%20Forms.md)<br /><br /> [How to: Print a Multi-Page Text File in Windows Forms](../Topic/How%20to:%20Print%20a%20Multi-Page%20Text%20File%20in%20Windows%20Forms.md)|  
-|Globalize a Windows Forms application|[Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5)|  
-|Learn more about Windows Forms security|[Security in Windows Forms Overview](../Topic/Security%20in%20Windows%20Forms%20Overview.md)|  
+|Print the contents of a form|[How to: Print Graphics in Windows Forms](https://msdn.microsoft.com/library/741a0ktc.aspx)<br /><br /> [How to: Print a Multi-Page Text File in Windows Forms](https://msdn.microsoft.com/library/cwbe712d.aspx)|   
+|Learn more about Windows Forms security|[Security in Windows Forms Overview](https://msdn.microsoft.com/library/90k49ccb.aspx)|  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>   
- [Windows Forms Overview](../Topic/Windows%20Forms%20Overview.md)   
+ [Windows Forms Overview](https://msdn.microsoft.com/library/8bxxy49h.aspx)   
  [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)

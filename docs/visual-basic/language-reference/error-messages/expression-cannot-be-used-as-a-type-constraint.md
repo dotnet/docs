@@ -57,7 +57,7 @@ A constraint list includes an expression that does not represent a valid constra
   
  **Error ID:** BC32061  
   
-### To correct this error  
+## To correct this error  
   
 -   Verify that the expression and its elements are spelled correctly.  
   

@@ -36,7 +36,7 @@ translation.priority.ht:
 # This key is already associated with an element of this collection
 The specified a key for a collection member already identifies another member of the collection. A key is a string specified in the `Add` method that uniquely identifies a specific member of a collection.  
   
-### To correct this error  
+## To correct this error  
   
 -   Use a different key for this member.  
   

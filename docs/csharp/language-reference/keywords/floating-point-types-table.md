@@ -40,15 +40,15 @@ The following table shows the precision and approximate ranges for the floating-
   
 |Type|Approximate range|Precision|  
 |----------|-----------------------|---------------|  
-|[float](../../../csharp/language-reference/keywords/float.md)|±1.5e−45 to ±3.4e38|7 digits|  
-|[double](../../../csharp/language-reference/keywords/double.md)|±5.0e−324 to ±1.7e308|15-16 digits|  
+|[float](float.md)|±1.5e−45 to ±3.4e38|7 digits|  
+|[double](double.md)|±5.0e−324 to ±1.7e308|15-16 digits|  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)   
- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)   
- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)   
- [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)   
- [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)   
- [decimal](../../../csharp/language-reference/keywords/decimal.md)
+ [Default Values Table](default-values-table.md)   
+ [Built-In Types Table](built-in-types-table.md)   
+ [Integral Types Table](integral-types-table.md)   
+ [Formatting Numeric Results Table](formatting-numeric-results-table.md)   
+ [Reference Tables for Types](reference-tables-for-types.md)   
+ [decimal](decimal.md)

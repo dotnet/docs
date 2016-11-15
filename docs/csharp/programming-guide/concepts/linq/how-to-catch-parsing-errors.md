@@ -30,7 +30,7 @@ This topic shows how to detect badly formed or invalid XML.
 ## Example  
  The following code tries to parse invalid XML:  
   
-```c#  
+```cs  
 try {  
     XElement contacts = XElement.Parse(  
         @"<Contacts>  

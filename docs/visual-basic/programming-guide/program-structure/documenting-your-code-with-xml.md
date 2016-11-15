@@ -66,7 +66,7 @@ In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vb
   
 -   [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)  
   
--   [XML Tools in Visual Studio](/visual-studio/xml-tools/xml-tools-in-visual-studio)  
+-   [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
   
 ## See Also  
  [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)   

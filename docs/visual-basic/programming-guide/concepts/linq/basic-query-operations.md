@@ -70,13 +70,13 @@ This topic provides a brief introduction to [!INCLUDE[vbteclinqext](../../../../
   
  You can use logical operators such as `And` and `Or` to combine filter expressions in a `Where` clause. For example, to return only those customers who are from London and whose name is Devon, use the following code:  
   
-```vb#  
+```vb  
 Where cust.City = "London" And cust.Name = "Devon"   
 ```  
   
  To return customers from London or Paris, use the following code:  
   
-```vb#  
+```vb  
 Where cust.City = "London" Or cust.City = "Paris"   
 ```  
   

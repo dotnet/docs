@@ -35,7 +35,7 @@ translation.priority.mt:
 # &#39;Before&#39; and &#39;After&#39; arguments cannot be combined
 An argument list includes both the `Before` and `After` arguments, which are mutually exclusive.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Remove either the `Before` or `After` argument.  
   

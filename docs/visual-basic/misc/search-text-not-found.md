@@ -35,7 +35,7 @@ translation.priority.mt:
 # Search text not found
 The text you specified was not found.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check that the specified text is spelled correctly.  
   

@@ -60,7 +60,7 @@ As you read the code examples, you often encounter the comment symbol (`'`). Thi
  The following table provides general guidelines for what types of comments can precede a section of code. These are suggestions; [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] does not enforce rules for adding comments. Write what works best, both for you and for anyone else who reads your code.  
   
 |||  
-|-|-|  
+|---|---|  
 |Comment type|Comment description|  
 |Purpose|Describes what the procedure does (not how it does it)|  
 |Assumptions|Lists each external variable, control, open file, or other element accessed by the procedure|  

@@ -27,7 +27,7 @@ XPath expressions can find nodes in a particular namespace. XPath expressions us
 ## Example  
  The following example reads an XML tree that contains two namespaces. It uses an <xref:System.Xml.XmlReader> to read the XML document. It then gets an <xref:System.Xml.XmlNameTable> from the <xref:System.Xml.XmlReader>, and an <xref:System.Xml.XmlNamespaceManager> from the <xref:System.Xml.XmlNameTable>. It uses the <xref:System.Xml.XmlNamespaceManager> when selecting elements.  
   
-```c#  
+```cs  
 XmlReader reader = XmlReader.Create("ConsolidatedPurchaseOrders.xml");  
 XElement root = XElement.Load(reader);  
 XmlNameTable nameTable = reader.NameTable;  

@@ -23,7 +23,7 @@ This topic shows how deferred execution and lazy evaluation affect the execution
 ## Example  
  The following example shows the order of execution when using an extension method that uses deferred execution. The example declares an array of three strings. It then iterates through the collection returned by `ConvertCollectionToUpperCase`.  
   
-```c#  
+```cs  
 public static class LocalExtensions  
 {  
     public static IEnumerable<string>  

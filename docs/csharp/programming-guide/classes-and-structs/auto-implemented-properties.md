@@ -44,7 +44,7 @@ In C# 3.0 and later, auto-implemented properties make property-declaration more 
   
  In C# 6 and later, you can initialize auto-implemented properties similarly to fields:  
   
-```c#  
+```cs  
 public string FirstName { get; set; } = "Jane";  
 ```  
   

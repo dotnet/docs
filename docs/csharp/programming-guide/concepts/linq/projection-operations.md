@@ -39,7 +39,7 @@ Projection refers to the operation of transforming an object into a new form tha
 ### Select  
  The following example uses the `select` clause to project the first letter from each string in a list of strings.  
   
-```c#  
+```cs  
 List<string> words = new List<string>() { "an", "apple", "a", "day" };  
   
 var query = from word in words  
@@ -60,7 +60,7 @@ foreach (string s in query)
 ### SelectMany  
  The following example uses multiple `from` clauses  to project each word from each string in a list of strings.  
   
-```c#  
+```cs  
 List<string> phrases = new List<string>() { "an apple a day", "the quick brown fox" };  
   
 var query = from phrase in phrases  
@@ -99,7 +99,7 @@ foreach (string s in query)
 ### Code Example  
  The following example compares the behavior of `Select()` and `SelectMany()`. The code creates a "bouquet" of flowers by taking the first two items from each list of flower names in the source collection. In this example, the "single value" that the transform function <xref:System.Linq.Enumerable.Select%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29> uses is itself a collection of values. This requires the extra `foreach` loop in order to enumerate each string in each sub-sequence.  
   
-```c#  
+```cs  
 class Bouquet  
 {  
     public List<string> Flowers { get; set; }  

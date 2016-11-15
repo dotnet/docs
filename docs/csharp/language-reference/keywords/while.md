@@ -59,5 +59,5 @@ The `while` statement executes a statement or a block of statements until a spec
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [while Statement (C++)](/visual-cpp/cpp/while-statement-cpp)   
+ [while Statement (C++)](/cpp/cpp/while-statement-cpp)   
  [Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)

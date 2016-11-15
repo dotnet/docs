@@ -28,7 +28,7 @@ The various snippets and examples in this documentation use classes and types fr
 ## Example  
  The following code contains the `using` directives that the C# examples require to build and run. Not all `using` directives are required for every example.  
   
-```c#  
+```cs  
 using System;  
 using System.Diagnostics;  
 using System.Collections;  

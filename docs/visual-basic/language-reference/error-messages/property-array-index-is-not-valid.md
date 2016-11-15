@@ -36,7 +36,7 @@ translation.priority.ht:
 # Property array index is not valid
 The supplied value is not valid for a property array index.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check the component's documentation to make sure your index is within the valid range for the specified property.  
   

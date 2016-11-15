@@ -1,8 +1,0 @@
-# [Walkthrough: Multithreading with the BackgroundWorker Component (Visual Basic)](walkthrough-multithreading-with-the-backgroundworker-component.md)
-# [Parameters and Return Values for Multithreaded Procedures (Visual Basic)](parameters-and-return-values-for-multithreaded-procedures.md)
-# [How to: Use a Thread Pool (Visual Basic)](how-to-use-a-thread-pool.md)
-# [Thread Timers (Visual Basic)](thread-timers.md)
-# [Threading (Visual Basic)](index.md)
-# [Thread Pooling (Visual Basic)](thread-pooling.md)
-# [Thread Synchronization (Visual Basic)](thread-synchronization.md)
-# [Multithreaded Applications (Visual Basic)](multithreaded-applications.md)

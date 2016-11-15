@@ -41,7 +41,7 @@ A type name occurs where an expression is required. An expression must consist o
   
  **Error ID:** BC30108  
   
-### To correct this error  
+## To correct this error  
   
 -   Remove the type name and construct the expression using valid elements.  
   

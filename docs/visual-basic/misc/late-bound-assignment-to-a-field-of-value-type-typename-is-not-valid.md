@@ -35,7 +35,7 @@ translation.priority.mt:
 # Late-bound assignment to a field of value type &#39;&lt;typename&gt;&#39; is not valid when &#39;&lt;name&gt;&#39; is the result of a late-bound expression
 You attempted a late-bound assignment that is not valid.  
   
-### To correct this error  
+## To correct this error  
   
 -   Make the assignment early bound.  
   

@@ -41,7 +41,7 @@ translation.priority.ht:
   
  **Error ID:** BC30617  
   
-### To correct this error  
+## To correct this error  
   
 -   Move the `Module` statement to the top of your namespace declaration or source file.  
   

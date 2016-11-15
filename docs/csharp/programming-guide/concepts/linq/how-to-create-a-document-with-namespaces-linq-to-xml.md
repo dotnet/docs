@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Document with Namespaces (C#) (LINQ to XML)2 | Microsoft Docs"
+title: "How to: Create a Document with Namespaces (C#) (LINQ to XML) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -30,7 +30,7 @@ This topic shows how to create documents with namespaces.
   
  The following example creates a document with one namespace. By default, [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] serializes this document with a default namespace.  
   
-```c#  
+```cs  
 // Create an XML tree in a namespace.  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
@@ -50,7 +50,7 @@ Console.WriteLine(root);
 ## Example  
  The following example creates a document with one namespace. It also creates an attribute that declares the namespace with a namespace prefix. To create an attribute that declares a namespace with a prefix, you create an attribute where the name of the attribute is the namespace prefix, and this name is in the <xref:System.Xml.Linq.XNamespace.Xmlns%2A> namespace. The value of this attribute is the URI of the namespace.  
   
-```c#  
+```cs  
 // Create an XML tree in a namespace, with a specified prefix  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
@@ -73,7 +73,7 @@ Console.WriteLine(root);
   
  By including namespace attributes in the root element, the namespaces are serialized so that http://www.adventure-works.com is the default namespace, and www.fourthcoffee.com is serialized with a prefix of "fc". To create an attribute that declares a default namespace, you create an attribute with the name "xmlns", without a namespace. The value of the attribute is the default namespace URI.  
   
-```c#  
+```cs  
 // The http://www.adventure-works.com namespace is forced to be the default namespace.  
 XNamespace aw = "http://www.adventure-works.com";  
 XNamespace fc = "www.fourthcoffee.com";  
@@ -104,7 +104,7 @@ Console.WriteLine(root);
 ## Example  
  The following example creates a document that contains two namespaces, both with namespace prefixes.  
   
-```c#  
+```cs  
 XNamespace aw = "http://www.adventure-works.com";  
 XNamespace fc = "www.fourthcoffee.com";  
 XElement root = new XElement(aw + "Root",  
@@ -138,7 +138,7 @@ Console.WriteLine(root);
   
  If performance is an important issue, see [Pre-Atomization of XName Objects (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/pre-atomization-of-xname-objects-linq-to-xml.md) for more information  
   
-```c#  
+```cs  
 // Create an XML tree in a namespace, with a specified prefix  
 XElement root = new XElement("{http://www.adventure-works.com}Root",  
     new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  

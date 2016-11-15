@@ -33,7 +33,7 @@ translation.priority.mt:
 # Argument BasePath must be a path to a folder
 The argument `BasePath` must consist of a path to a folder. You may be parsing a string incorrectly and supplying a value that is not recognized as a valid path.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check the value you are supplying for `BasePath` to make sure it is a valid path to a folder.  
   

@@ -43,7 +43,7 @@ A `For Each` statement specifies an iterator variable that has more than one <xr
   
  **Error ID:** BC32096  
   
-### To correct this error  
+## To correct this error  
   
 -   Use [DirectCast Operator](../../../visual-basic/language-reference/operators/directcast-operator.md) or [TryCast Operator](../../../visual-basic/language-reference/operators/trycast-operator.md) to cast the iterator variable type to the interface defining the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method you want to use.  
   

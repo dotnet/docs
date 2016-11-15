@@ -170,7 +170,7 @@ End Sub
   
 ## See Also  
  <xref:System.IDisposable.Dispose%2A>   
- [Initialization and Termination of Components](../Topic/Initialization%20and%20Termination%20of%20Components.md)   
+ [Initialization and Termination of Components](http://msdn.microsoft.com/library/58444076-a9d2-4c91-b3f6-0e180dc0695d)   
  [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)   
- [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md)   
+ [Cleaning Up Unmanaged Resources](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)   
  [Nothing](../../../../visual-basic/language-reference/nothing.md)

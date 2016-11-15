@@ -51,9 +51,8 @@ Causes the compiler to make type information in the specified assemblies availab
   
 ## Arguments  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`fileList`|Required. Comma-delimited list of assembly file names. If the file name contains a space, enclose the name in quotation marks.|  
   
 ## Remarks  

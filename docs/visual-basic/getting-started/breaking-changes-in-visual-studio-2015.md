@@ -40,7 +40,7 @@ No changes in Visual Basic in Visual Studio 2015 will prevent an application tha
 ## See Also  
  [Arrays](../../visual-basic/programming-guide/language-features/arrays/index.md)   
  [LINQ](../../visual-basic/programming-guide/language-features/linq/index.md)   
- [Lambda Expressions](../../visual-basic/language-reference/procedures/lambda-expressions.md)   
+ [Lambda Expressions](../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
  [For Each...Next Statement](../../visual-basic/language-reference/statements/for-each-next-statement.md)   
  [Getting Started](../../visual-basic/getting-started/index.md)   
  [When is a non-breaking language fix breaking?](http://go.microsoft.com/fwlink/?LinkId=259542)

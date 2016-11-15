@@ -40,7 +40,7 @@ In C#, a method in a derived class can have the same name as a method in the bas
   
  In a console application, declare the following two classes, `BaseClass` and `DerivedClass`. `DerivedClass` inherits from `BaseClass`.  
   
-```c#  
+```cs  
 class BaseClass  
 {  
     public void Method1()  
@@ -69,7 +69,7 @@ class DerivedClass : BaseClass
   
  Because `bc` and `bcdc` have type `BaseClass`, they can only directly access `Method1`, unless you use casting. Variable `dc` can access both `Method1` and `Method2`. These relationships are shown in the following code.  
   
-```c#  
+```cs  
 class Program  
 {  
     static void Main(string[] args)  
@@ -94,7 +94,7 @@ class Program
   
  Next, add the following `Method2` method to `BaseClass`. The signature of this method matches the signature of the `Method2` method in `DerivedClass`.  
   
-```c#  
+```cs  
 public void Method2()  
 {  
     Console.WriteLine("Base - Method2");  
@@ -104,7 +104,7 @@ public void Method2()
   
  Because `BaseClass` now has a `Method2` method, a second calling statement can be added for `BaseClass` variables `bc` and `bcdc`, as shown in the following code.  
   
-```c#  
+```cs  
 bc.Method1();  
 bc.Method2();  
 dc.Method1();  
@@ -118,7 +118,7 @@ bcdc.Method2();
   
  Before adding `new`, run the program to see the output produced by the additional calling statements. The following results are displayed.  
   
-```c#  
+```cs  
 // Output:  
 // Base - Method1  
 // Base - Method2  
@@ -133,7 +133,7 @@ bcdc.Method2();
   
  To suppress the warning, add the `new` modifier to the definition of `Method2` in `DerivedClass`, as shown in the following code. The modifier can be added before or after `public`.  
   
-```c#  
+```cs  
 public new void Method2()  
 {  
     Console.WriteLine("Derived - Method2");  
@@ -145,7 +145,7 @@ public new void Method2()
   
  To contrast this behavior to the effects of using `override`, add the following method to `DerivedClass`. The `override` modifier can be added before or after `public`.  
   
-```c#  
+```cs  
 public override void Method1()  
 {  
     Console.WriteLine("Derived - Method1");  
@@ -155,7 +155,7 @@ public override void Method1()
   
  Add the `virtual` modifier to the definition of `Method1` in `BaseClass`. The `virtual` modifier can be added before or after `public`.  
   
-```c#  
+```cs  
 public virtual void Method1()  
 {  
     Console.WriteLine("Base - Method1");  
@@ -165,7 +165,7 @@ public virtual void Method1()
   
  Run the project again. Notice especially the last two lines of the following output.  
   
-```c#  
+```cs  
 // Output:  
 // Base - Method1  
 // Base - Method2  
@@ -180,7 +180,7 @@ public virtual void Method1()
   
  The following code contains the full example.  
   
-```c#  
+```cs  
 using System;  
 using System.Text;  
   
@@ -251,7 +251,7 @@ namespace OverrideAndNew
   
  The following example illustrates similar behavior in a different context. The example defines three classes: a base class named `Car` and two classes that are derived from it, `ConvertibleCar` and `Minivan`. The base class contains a `DescribeCar` method. The method displays a basic description of a car, and then calls `ShowDetails` to provide additional information. Each of the three classes defines a `ShowDetails` method. The `new` modifier is used to define `ShowDetails` in the `ConvertibleCar` class. The `override` modifier is used to define `ShowDetails` in the `Minivan` class.  
   
-```c#  
+```cs  
 // Define the base class, Car. The class defines two methods,  
 // DescribeCar and ShowDetails. DescribeCar calls ShowDetails, and each derived  
 // class also defines a ShowDetails method. The example tests which version of  
@@ -296,7 +296,7 @@ class Minivan : Car
   
  The example tests which version of `ShowDetails` is called. The following method, `TestCars1`, declares an instance of each class, and then calls `DescribeCar` on each instance.  
   
-```c#  
+```cs  
 public static void TestCars1()  
 {  
     System.Console.WriteLine("\nTestCars1");  
@@ -323,7 +323,7 @@ public static void TestCars1()
   
  `TestCars1` produces the following output. Notice especially the results for `car2`, which probably are not what you expected. The type of the object is `ConvertibleCar`, but `DescribeCar` does not access the version of `ShowDetails` that is defined in the `ConvertibleCar` class because that method is declared with the `new` modifier, not the `override` modifier. As a result, a `ConvertibleCar` object displays the same description as a `Car` object. Contrast the results for `car3`, which is a `Minivan` object. In this case, the `ShowDetails` method that is declared in the `Minivan` class overrides the `ShowDetails` method that is declared in the `Car` class, and the description that is displayed describes a minivan.  
   
-```c#  
+```cs  
   
 // TestCars1  
 // ----------  
@@ -341,7 +341,7 @@ public static void TestCars1()
   
  `TestCars2` creates a list of objects that have type `Car`. The values of the objects are instantiated from the `Car`, `ConvertibleCar`, and `Minivan` classes. `DescribeCar` is called on each element of the list. The following code shows the definition of `TestCars2`.  
   
-```c#  
+```cs  
 public static void TestCars2()  
 {  
     System.Console.WriteLine("\nTestCars2");  
@@ -361,7 +361,7 @@ public static void TestCars2()
   
  The following output is displayed. Notice that it is the same as the output that is displayed by `TestCars1`. The `ShowDetails` method of the `ConvertibleCar` class is not called, regardless of whether the type of the object is `ConvertibleCar`, as in `TestCars1`, or `Car`, as in `TestCars2`. Conversely, `car3` calls the `ShowDetails` method from the `Minivan` class in both cases, whether it has type `Minivan` or type `Car`.  
   
-```c#  
+```cs  
 // TestCars2  
 // ----------  
 // Four wheels and an engine.  
@@ -378,7 +378,7 @@ public static void TestCars2()
   
  Methods `TestCars3` and `TestCars4` complete the example. These methods call `ShowDetails` directly, first from objects declared to have type `ConvertibleCar` and `Minivan` (`TestCars3`), then from objects declared to have type `Car` (`TestCars4`). The following code defines these two methods.  
   
-```c#  
+```cs  
   
 public static void TestCars3()  
 {  
@@ -404,7 +404,7 @@ public static void TestCars4()
   
  The methods produce the following output, which corresponds to the results from the first example in this topic.  
   
-```c#  
+```cs  
 // TestCars3  
 // ----------  
 // A roof that opens up.  
@@ -419,7 +419,7 @@ public static void TestCars4()
   
  The following code shows the complete project and its output.  
   
-```c#  
+```cs  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  

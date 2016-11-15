@@ -152,7 +152,7 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 ## Associativity  
  When two or more operators that have the same precedence are present in an expression, they are evaluated based on associativity. Left-associative operators are evaluated in order from left to right. For example, `x * y / z` is evaluated as `(x * y) / z`. Right-associative operators are evaluated in order from right to left. For example, the assignment operator is right associative. If it were not, the following code would result in an error.  
   
-```c#  
+```cs  
 int a, b, c;  
 c = 1;  
 // The following two lines are equivalent.  

@@ -61,7 +61,7 @@ End Class
   
  **Error ID:** BC30686  
   
-### To correct this error  
+## To correct this error  
   
 -   Avoid inheriting any members with the same name. In the preceding example, if `testObj` does not need any of the members of, say, `Iface2`, then declare it as follows:  
   

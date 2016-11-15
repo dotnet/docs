@@ -41,7 +41,7 @@ Optional parameters must provide default values that can be used if no parameter
   
  **Error ID:** BC30812  
   
-### To correct this error  
+## To correct this error  
   
 -   Specify default values for optional parameters; for example:  
   

@@ -35,7 +35,7 @@ translation.priority.mt:
 # Method or data member not found
 The method or data member you have tried to access was not found.  
   
-### To correct this error  
+## To correct this error  
   
 -   Make sure you did not misspell the name of the method or data member.  
   

@@ -77,15 +77,15 @@ Public Class illustrateProperties
 End Class  
 ```  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, please see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, please see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42026  
   
-### To correct this error  
+## To correct this error  
   
 -   Rewrite the property definition to use the recommended approach as illustrated in the preceding example.  
   
 ## See Also  
- [Property Procedures](../../../visual-basic/language-reference/procedures/property-procedures.md)   
+ [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)   
  [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)   
  [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)

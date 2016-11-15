@@ -90,9 +90,8 @@ This Help page discusses how [!INCLUDE[vbprvb](../../../../csharp/programming-gu
   
  For finer control over how the comparisons are performed, you can use additional overloads of the <xref:System.String.Compare%2A> method. With the <xref:System.String.Compare%2A?displayProperty=fullName> method, you can use the `comparisonType` argument to specify which type of comparison to use.  
   
-||||  
-|-|-|-|  
 |Value for `comparisonType` argument|Type of comparison|When to use|  
+|---|---|---|  
 |`Ordinal`|Comparison based on strings' component bytes.|Use this value when comparing: case-sensitive identifiers, security-related settings, or other non-linguistic identifiers where the bytes must match exactly.|  
 |`OrdinalIgnoreCase`|Comparison based on strings' component bytes.<br /><br /> `OrdinalIgnoreCase` uses the invariant culture information to determine when two characters differ only in capitalization.|Use this value when comparing: case-insensitive identifiers, security-related settings, and data stored in Windows.|  
 |`CurrentCulture` or `CurrentCultureIgnoreCase`|Comparison based on the strings' interpretation in the current culture.|Use these values when comparing: data that is displayed to the user, most user input, and other data that requires linguistic interpretation.|  

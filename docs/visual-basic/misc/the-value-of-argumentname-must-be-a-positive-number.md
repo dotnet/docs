@@ -37,7 +37,7 @@ The value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Reserv
   
  The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace%2A> property specifies the amount of free disk space, in bytes, necessary before messages can be written to the log file  
   
-### To correct this error  
+## To correct this error  
   
 -   Set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace%2A> property to a positive number.  
   

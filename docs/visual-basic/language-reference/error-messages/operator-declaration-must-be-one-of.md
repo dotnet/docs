@@ -49,7 +49,7 @@ You can declare only an operator that is eligible for overloading. The following
   
  **Error ID:** BC33000  
   
-### To correct this error  
+## To correct this error  
   
 1.  Select an operator from the set of overloadable operators.  
   
@@ -57,7 +57,7 @@ You can declare only an operator that is eligible for overloading. The following
   
 ## See Also  
  [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)   
- [Operator Procedures](../../../visual-basic/language-reference/procedures/operator-procedures.md)   
- [How to: Define an Operator](../../../visual-basic/language-reference/procedures/how-to-define-an-operator.md)   
- [How to: Define a Conversion Operator](../../../visual-basic/language-reference/procedures/how-to-define-a-conversion-operator.md)   
+ [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)   
+ [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)   
+ [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)   
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)

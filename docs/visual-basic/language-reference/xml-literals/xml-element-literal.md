@@ -60,9 +60,8 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
   
     -   Literal text for the element name, of the form [`ePrefix``:`]`eName`, where:  
   
-        |||  
-        |-|-|  
         |Part|Description|  
+        |---|---|  
         |`ePrefix`|Optional. XML namespace prefix for the element. Must be a global XML namespace that is defined with an `Imports` statement in the file or at the project level, or a local XML namespace that is defined in this element or a parent element.|  
         |`eName`|Required. Name of the element. The format is one of the following:<br /><br /> -   Literal text. See [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).<br />-   Embedded expression of the form `<%=` e`NameExp` `%>`. The type of `eNameExp` must be `String` or a type that is implicitly convertible to <xref:System.Xml.Linq.XName>.|  
   
@@ -78,9 +77,8 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
   
     -   Attribute assignment, of the form [`aPrefix``:`]`aName``=``aValue`, where:  
   
-        |||  
-        |-|-|  
         |Part|Description|  
+        |---|---|  
         |`aPrefix`|Optional. XML namespace prefix for the attribute. Must be a global XML namespace that is defined with an `Imports` statement, or a local XML namespace that is defined in this element or a parent element.|  
         |`aName`|Required. Name of the attribute. The format is one of the following:<br /><br /> -   Literal text. See [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).<br />-   Embedded expression of the form `<%=` `aNameExp` `%>`. The type of `aNameExp` must be `String` or a type that is implicitly convertible to <xref:System.Xml.Linq.XName>.|  
         |`aValue`|Optional. Value of the attribute. The format is one of the following:<br /><br /> -   Literal text, enclosed in quotation marks.<br />-   Embedded expression of the form `<%=` `aValueExp` `%>`. Any type is allowed.|  

@@ -35,7 +35,7 @@ translation.priority.mt:
 # Public member &#39;&lt;membername&gt;&#39; on type &#39;&lt;typename&gt;&#39; not found
 The member you are trying to access cannot be found. This error can occur when accessing non-public members of late-bound objects.  
   
-### To correct this error  
+## To correct this error  
   
 1.  If the member exists, ensure that it is declared as `Public`.  
   

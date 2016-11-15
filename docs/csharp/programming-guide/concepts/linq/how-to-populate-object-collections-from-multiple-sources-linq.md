@@ -35,7 +35,7 @@ This example shows how to merge data from different sources into a sequence of n
 ## Example  
  The following example shows how to use a named type `Student` to store merged data from two in-memory collections of strings that simulate spreadsheet data in .csv format. The first collection of strings represents the student names and IDs, and the second collection represents the student ID (in the first column) and four exam scores. The ID is used as the foreign key.  
   
-```c#  
+```cs  
 class Student  
 {  
     public string FirstName { get; set; }  
@@ -118,7 +118,7 @@ class PopulateCollection
   
  If you do not have to store the results of a query, anonymous types can be more convenient than named types. Named types are required if you pass the query results outside the method in which the query is executed. The following example performs the same task as the previous example, but uses anonymous types instead of named types:  
   
-```c#  
+```cs  
 // Merge the data sources by using an anonymous type.  
 // Note the dynamic creation of a list of ints for the  
 // ExamScores member. We skip 1 because the first string  

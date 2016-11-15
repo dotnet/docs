@@ -33,7 +33,7 @@ translation.priority.mt:
 # Argument cannot be an empty string
 An argument has been defined as an empty string ("").  
   
-### To correct this error  
+## To correct this error  
   
 -   Supply a valid value for the argument.  
   

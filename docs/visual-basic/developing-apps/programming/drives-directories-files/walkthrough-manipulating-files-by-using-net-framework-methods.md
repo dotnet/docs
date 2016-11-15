@@ -64,9 +64,8 @@ This walkthrough demonstrates how to open and read a file using the <xref:System
   
 4.  Add the controls in the following table to the form and set the corresponding values for their properties.  
   
-||||  
-|-|-|-|  
 |**Object**|**Properties**|**Value**|  
+|---|---|---|   
 |<xref:System.Windows.Forms.Button>|**Name**<br /><br /> **Text**|`Submit`<br /><br /> **Submit Entry**|  
 |<xref:System.Windows.Forms.Button>|**Name**<br /><br /> **Text**|`Clear`<br /><br /> **Clear Entry**|  
 |<xref:System.Windows.Forms.TextBox>|**Name**<br /><br /> **Text**<br /><br /> **Multiline**|`Entry`<br /><br /> **Please enter something.**<br /><br /> `False`|  

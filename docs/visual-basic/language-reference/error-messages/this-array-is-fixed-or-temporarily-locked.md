@@ -42,7 +42,7 @@ This error has the following possible causes:
   
 -   Attempting to assign a value to a `Variant` variable containing an array, but the `Variant` is currently locked.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Make the original array dynamic rather than fixed by declaring it with `ReDim` (if the array is declared within a procedure), or by declaring it without specifying the number of elements (if the array is declared at the module level.  
   

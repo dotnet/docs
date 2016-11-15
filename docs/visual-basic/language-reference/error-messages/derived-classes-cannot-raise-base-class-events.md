@@ -41,7 +41,7 @@ An event can be raised only from the declaration space in which it is declared. 
   
  **Error ID:** BC30029  
   
-### To correct this error  
+## To correct this error  
   
 -   Move the `Event` statement or the `RaiseEvent` statement so they are in the same class.  
   

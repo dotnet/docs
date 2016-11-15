@@ -35,7 +35,7 @@ A *friend assembly* is an assembly that can access another assembly's [internal]
 > [!NOTE]
 >  When you compile an assembly (assembly `AssemblyB`) that will access internal types or internal members of another assembly (assembly *A*), you must explicitly specify the name of the output file (.exe or .dll) by using the **/out** compiler option. This is required because the compiler has not yet generated the name for the assembly it is building at the time it is binding to external references. For more information, see [/out (C#)](../../../../csharp/language-reference/compiler-options/out-compiler-option.md) .  
   
-```c#  
+```cs  
 using System.Runtime.CompilerServices;  
 using System;  
   
@@ -88,5 +88,5 @@ public class ClassWithFriendMethod
  <xref:System.Security.Permissions.StrongNameIdentityPermission>   
  [How to: Create Unsigned Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)   
  [How to: Create Signed Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)   
- [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache.md)   
+ [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)   
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)

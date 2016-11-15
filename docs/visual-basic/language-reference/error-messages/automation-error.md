@@ -36,7 +36,7 @@ translation.priority.ht:
 # Automation error
 An error occurred while executing a method or getting or setting a property of an object variable. The error was reported by the application that created the object.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the properties of the `Err` object to determine the source and nature of the error.  
   
@@ -44,4 +44,4 @@ An error occurred while executing a method or getting or setting a property of a
   
 ## See Also  
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)   
- [Talk to Us](/visual-studio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

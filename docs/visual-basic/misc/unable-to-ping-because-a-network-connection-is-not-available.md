@@ -35,7 +35,7 @@ translation.priority.mt:
 # Unable to ping because a network connection is not available
 The operation cannot be performed because no network connection is available.  
   
-### To correct this error  
+## To correct this error  
   
 -   Connect to the network and reattempt the operation.  
   

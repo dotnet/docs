@@ -58,7 +58,7 @@ The `switch` statement is a control statement that selects a *switch section* to
   
  Unlike C++, C# does not allow execution to continue from one switch section to the next. The following code causes an error.  
   
-```c#  
+```cs  
 switch (caseSwitch)  
 {  
     // The following switch section causes an error.  
@@ -73,7 +73,7 @@ switch (caseSwitch)
   
  C# requires the end of switch sections, including the final one, to be unreachable.  That is, unlike some other languages, your code may not fall through into the next switch section.  Although this requirement is usually met by using a `break` statement, the following case is also valid, because it ensures that the end of the statement list cannot be reached.  
   
-```c#  
+```cs  
 case 4:  
     while (true)  
         Console.WriteLine("Endless looping. . . .");  
@@ -96,5 +96,5 @@ case 4:
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [switch Statement (C++)](/visual-cpp/cpp/switch-statement-cpp)   
+ [switch Statement (C++)](/cpp/cpp/switch-statement-cpp)   
  [if-else](../../../csharp/language-reference/keywords/if-else.md)

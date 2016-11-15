@@ -33,7 +33,7 @@ translation.priority.mt:
 # File information cannot be queried if the file does not exist
 An attempt has been made to query a <xref:System.IO.FileInfo> object for information about a file that does not exist. Usually this is due to a mistake made when supplying the file name.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check that you are supplying the correct file name.  
   

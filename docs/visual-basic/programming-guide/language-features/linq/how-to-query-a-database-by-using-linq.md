@@ -43,11 +43,11 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
  The following example shows how to create a new application that performs queries against a SQL Server database.  
   
- The examples in this topic use the Northwind sample database. If you do not have the Northwind sample database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088) Web site. For instructions, see [Downloading Sample Databases](../Topic/Downloading%20Sample%20Databases.md).  
+ The examples in this topic use the Northwind sample database. If you do not have the Northwind sample database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088) Web site. For instructions, see [Downloading Sample Databases](https://msdn.microsoft.com/library/bb399411).  
   
  [!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
-### To create a connection to a database  
+## To create a connection to a database  
   
 1.  In Visual Studio, open **Server Explorer**/**Database Explorer** by clicking **Server Explorer**/**Database Explorer** on the **View** menu.  
   
@@ -55,7 +55,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
 3.  Specify a valid connection to the Northwind sample database.  
   
-### To add a project that contains a LINQ to SQL file  
+## To add a project that contains a LINQ to SQL file  
   
 1.  In Visual Studio, on the **File** menu, point to **New** and then click **Project**. Select Visual Basic **Windows Forms Application** as the project type.  
   
@@ -63,7 +63,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
 3.  Name the file `northwind.dbml`. Click **Add**. The Object Relational Designer (O/R Designer) is opened for the northwind.dbml file.  
   
-### To add tables to query to the O/R Designer  
+## To add tables to query to the O/R Designer  
   
 1.  In **Server Explorer**/**Database Explorer**, expand the connection to the Northwind database. Expand the **Tables** folder.  
   
@@ -77,7 +77,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
 4.  Save your project.  
   
-### To add code to query the database and display the results  
+## To add code to query the database and display the results  
   
 1.  From the **Toolbox**, drag a <xref:System.Windows.Forms.DataGridView> control onto the default Windows Form for your project, Form1.  
   
@@ -101,6 +101,5 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
 ## See Also  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
  [Queries](../../../../visual-basic/language-reference/queries/queries.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
- [DataContext Methods (O/R Designer)](/visual-studio/data-tools/datacontext-methods-o-r-designer)   
- [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)
+ [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)   
+ [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

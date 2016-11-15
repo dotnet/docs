@@ -41,7 +41,7 @@ An `If` expression can take either two or three arguments. When you send only tw
   
  For example, the following code contains two `If` expressions, one with three arguments and one with two arguments. The expressions calculate and return the same value.  
   
-```vb#  
+```vb  
 ' firstChoice is a nullable value type.  
 Dim firstChoice? As Integer = Nothing  
 Dim secondChoice As Integer = 1128  
@@ -53,7 +53,7 @@ Console.WriteLine(If(firstChoice, secondChoice))
   
  The following expressions cause this error:  
   
-```vb#  
+```vb  
 Dim choice1 = 4  
 Dim choice2 = 5  
 Dim booleanVar = True  
@@ -66,14 +66,14 @@ Dim booleanVar = True
   
  **Error ID:** BC33107  
   
-### To correct this error  
+## To correct this error  
   
 -   If you cannot change the code so that the first argument is a nullable type or reference type, consider converting to a three-argument `If` expression, or to an `If...Then...Else` statement.  
   
-    ```vb#  
-    Console.WriteLine(If(choice1 < choice2, 1, 2))  
-    Console.WriteLine(If(booleanVar, "Test returns True.", "Test returns False."))  
-    ```  
+```vb  
+Console.WriteLine(If(choice1 < choice2, 1, 2))  
+Console.WriteLine(If(booleanVar, "Test returns True.", "Test returns False."))  
+```  
   
 ## See Also  
  [If Operator](../../../visual-basic/language-reference/operators/if-operator.md)   

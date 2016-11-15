@@ -35,7 +35,7 @@ translation.priority.mt:
 # Named argument not found (Visual Basic)
 A named argument can not be used in a procedure invocation unless it appears in the procedure definition. You specified a named argument, but the procedure was not defined to accept an argument by that name.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check the spelling of the argument name.  
   

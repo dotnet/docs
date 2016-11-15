@@ -57,9 +57,8 @@ End With
   
 ## Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`objectExpression`|Required. An expression that evaluates to an object. The expression may be arbitrarily complex and is evaluated only once. The expression can evaluate to any data type, including elementary types.|  
 |`statements`|Optional. One or more statements between `With` and `End With` that may refer to members of an object that's produced by the evaluation of `objectExpression`.|  
 |`End With`|Required. Terminates the definition of the `With` block.|  

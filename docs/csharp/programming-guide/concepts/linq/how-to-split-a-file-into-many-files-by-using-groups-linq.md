@@ -59,7 +59,7 @@ This example shows one way to merge the contents of two files and then create a 
   
 ## Example  
   
-```c#  
+```cs  
 class SplitWithGroups  
 {  
     static void Main()  

@@ -25,7 +25,7 @@ You sometimes have to programmatically change the namespace for an element or an
 ## Example  
  The following code creates two XML trees in no namespace. It then changes the namespace of each of the trees, and combines them into a single tree.  
   
-```c#  
+```cs  
 XElement tree1 = new XElement("Data",  
     new XElement("Child", "content",  
         new XAttribute("MyAttr", "content")  

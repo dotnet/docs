@@ -51,7 +51,7 @@ Namespace or type specified in the project-level Imports '\<qualifiedelementname
   
  **Error ID:** BC40057  
   
-### To correct this error  
+## To correct this error  
   
 1.  Open the **Project Designer** and switch to the **Reference** page.  
   
@@ -60,7 +60,7 @@ Namespace or type specified in the project-level Imports '\<qualifiedelementname
 3.  Verify that the containing element exposes at least one `Public` member.  
   
 ## See Also  
- [References Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/references-page-project-designer-visual-basic)   
+ [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)   
  [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
  [Public](../../../visual-basic/language-reference/modifiers/public.md)   
  [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)   

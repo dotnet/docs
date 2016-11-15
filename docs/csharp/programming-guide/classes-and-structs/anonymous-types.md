@@ -41,7 +41,7 @@ Anonymous types provide a convenient way to encapsulate a set of read-only prope
   
  The following example shows an anonymous type that is initialized with two properties named `Amount` and `Message`.  
   
-```c#  
+```cs  
   
 var v = new { Amount = 108, Message = "Hello" };  
   
@@ -65,7 +65,7 @@ Console.WriteLine(v.Amount + v.Message);
   
  You can create an array of anonymously typed elements by combining an implicitly typed local variable and an implicitly typed array, as shown in the following example.  
   
-```c#  
+```cs  
 var anonArray = new[] { new { name = "apple", diam = 4 }, new { name = "grape", diam = 1 }};  
 ```  
   

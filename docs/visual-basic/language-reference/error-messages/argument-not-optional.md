@@ -36,7 +36,7 @@ translation.priority.ht:
 # Argument not optional (Visual Basic)
 The number and types of arguments must match those expected. Either there is an incorrect number of arguments, or an omitted argument is not optional. An argument can only be omitted from a call to a user-defined procedure if it was declared `Optional` in the procedure definition.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Supply all necessary arguments.  
   

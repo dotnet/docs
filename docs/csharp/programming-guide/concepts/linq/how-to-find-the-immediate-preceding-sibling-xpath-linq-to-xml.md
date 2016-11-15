@@ -23,7 +23,7 @@ Sometimes you want to find the immediate preceding sibling to a node. Due to the
 ## Example  
  In this example, the [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] query uses the <xref:System.Linq.Enumerable.Last%2A> operator to find the last node in the collection returned by <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A>. By contrast, the XPath expression uses a predicate with a value of 1 to find the immediately preceding element.  
   
-```c#  
+```cs  
 XElement root = XElement.Parse(  
     @"<Root>  
     <Child1/>  

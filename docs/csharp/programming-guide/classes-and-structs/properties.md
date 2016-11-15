@@ -47,7 +47,7 @@ A property is a member that provides a flexible mechanism to read, write, or com
 ## Expression Body Definitions  
  It is common to have properties that simply return immediately with the result of an expression.  There is a syntax shortcut for defining these properties using `=>`:  
   
-```c#  
+```cs  
 public string Name => First + " " + Last;   
 ```  
   

@@ -56,7 +56,7 @@ Annotations can be used to facilitate transforms of an XML tree.
 ## Transforming a Tree  
  This first example renames all `Paragraph` nodes to `para`.  
   
-```c#  
+```cs  
 XNamespace xf = "http://www.microsoft.com/LinqToXmlTransform/2007";  
 XName at = xf + "ApplyTransforms";  
   
@@ -93,7 +93,7 @@ Console.WriteLine(newRoot);
 ## A More Complicated Transform  
  The following example queries the tree and calculates the average and sum of the `Data` elements, and adds them as new elements to the tree.  
   
-```c#  
+```cs  
 XNamespace xf = "http://www.microsoft.com/LinqToXmlTransform/2007";  
 XName at = xf + "ApplyTransforms";  
   
@@ -192,7 +192,7 @@ If an element is not annotated
   
  Following is the implementation of this function:  
   
-```c#  
+```cs  
 // Build a transformed XML tree per the annotations  
 static XElement XForm(XElement source)  
 {  
@@ -258,7 +258,7 @@ static XElement XForm(XElement source)
 ## Complete Example  
  The following code is a complete example that includes the `XForm` function. It includes a few of the typical uses of this type of transform:  
   
-```c#  
+```cs  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  

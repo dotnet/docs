@@ -46,9 +46,8 @@ Specifies the location of referenced assemblies.
   
 ## Arguments  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`dirList`|Required. Semicolon-delimited list of directories for the compiler to look in if a referenced assembly is not found in either the current working directory (the directory from which you are invoking the compiler) or the common language runtime's system directory. If the directory name contains a space, enclose the name in quotation marks (" ").|  
   
 ## Remarks  
@@ -68,9 +67,8 @@ Specifies the location of referenced assemblies.
   
  Use `/reference` to specify an assembly reference.  
   
-||  
-|-|  
 |To set /libpath in the Visual Studio integrated development environment|  
+|---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **References** tab.<br />3.  Click the **Reference Paths...** button.<br />4.  In the **Reference Paths** dialog box, enter the directory name in the **Folder:** box.<br />5.  Click **Add Folder**.|  
   
 ## Example  
@@ -81,6 +79,6 @@ vbc /libpath:c:\;"c:\New Assemblies" /reference:t2.dll t2.vb
 ```  
   
 ## See Also  
- [Assemblies and the Global Assembly Cache](../Topic/Assemblies%20and%20the%20Global%20Assembly%20Cache%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

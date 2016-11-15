@@ -46,9 +46,8 @@ Specifies the name of the output file.
   
 ## Arguments  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`filename`|Required. The name of the output file the compiler creates. If the file name contains a space, enclose the name in quotation marks (" ").|  
   
 ## Remarks  
@@ -56,9 +55,8 @@ Specifies the name of the output file.
   
  If you specify a file name without an .exe or .dll extension, the compiler automatically adds the extension for you, depending on the value specified for the `/target` compiler option.  
   
-||  
-|-|  
 |To set /out in the Visual Studio integrated development environment|  
+|---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **Application** tab.<br />3.  Modify the value in the **Assembly Name** box.|  
   
 ## Example  

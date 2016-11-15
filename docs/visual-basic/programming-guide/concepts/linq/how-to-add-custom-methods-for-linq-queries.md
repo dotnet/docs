@@ -25,7 +25,7 @@ translation.priority.mt:
 # How to: Add Custom Methods for LINQ Queries (Visual Basic)
 You can extend the set of methods that you can use for LINQ queries by adding extension methods to the <xref:System.Collections.Generic.IEnumerable%601> interface. For example, in addition to the standard average or maximum operations, you can create a custom aggregate method to compute a single value from a sequence of values. You can also create a method that works as a custom filter or a specific data transform for a sequence of values and returns a new sequence. Examples of such methods are <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Skip%2A>, and <xref:System.Linq.Enumerable.Reverse%2A>.  
   
- When you extend the <xref:System.Collections.Generic.IEnumerable%601> interface, you can apply your custom methods to any enumerable collection. For more information, see [Extension Methods](../../../../visual-basic/language-reference/procedures/extension-methods.md).  
+ When you extend the <xref:System.Collections.Generic.IEnumerable%601> interface, you can apply your custom methods to any enumerable collection. For more information, see [Extension Methods](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md).  
   
 ## Adding an Aggregate Method  
  An aggregate method computes a single value from a set of values. LINQ provides several aggregate methods, including <xref:System.Linq.Enumerable.Average%2A>, <xref:System.Linq.Enumerable.Min%2A>, and <xref:System.Linq.Enumerable.Max%2A>. You can create your own aggregate method by adding an extension method to the <xref:System.Collections.Generic.IEnumerable%601> interface.  
@@ -128,4 +128,4 @@ Next
   
 ## See Also  
  <xref:System.Collections.Generic.IEnumerable%601>   
- [Extension Methods](../../../../visual-basic/language-reference/procedures/extension-methods.md)
+ [Extension Methods](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)

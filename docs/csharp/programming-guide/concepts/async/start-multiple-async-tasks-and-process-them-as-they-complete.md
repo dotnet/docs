@@ -50,7 +50,7 @@ By using <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName>,
  If you don't want to download the project, you can review the MainWindow.xaml.cs file at the end of this topic.  
   
 ## Building the Example  
- This example adds to the code that’s developed in [Cancel Remaining Async Tasks after One Is Complete (C#)](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md)[Cancel Remaining Async Tasks after One Is Complete](../Topic/Cancel%20Remaining%20Async%20Tasks%20after%20One%20Is%20Complete%20\(C%23%20and%20Visual%20Basic\).md) and uses the same UI.  
+ This example adds to the code that’s developed in [Cancel Remaining Async Tasks after One Is Complete (C#)](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md)[Cancel Remaining Async Tasks after One Is Complete](http://msdn.microsoft.com/library/8e800b58-235a-44b7-a02c-fa4375591d76) and uses the same UI.  
   
  To build the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **CancelAfterOneTask** as the **StartUp Project**. Add the changes in this topic to the `AccessTheWebAsync` method in that project. The changes are marked with asterisks.  
   
@@ -72,7 +72,7 @@ By using <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName>,
 <CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
     3.  Awaits `firstFinishedTask`, which is returned by a call to `ProcessURLAsync`. The `firstFinishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TReturn` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows.  
   
-        ```c#  
+        ```cs  
         int length = await firstFinishedTask;  
         resultsTextBox.Text += String.Format("\r\nLength of the download:  {0}", length);  
         VBCopy Code  
@@ -91,7 +91,7 @@ By using <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName>,
   
  You can download the project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046).  
   
-```c#  
+```cs  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -193,11 +193,11 @@ namespace ProcessTasksAsTheyFinish
             {   
                 "http://msdn.microsoft.com",  
                 "http://msdn.microsoft.com/library/windows/apps/br211380.aspx",  
-                "http://msdn.microsoft.com/en-us/library/hh290136.aspx",  
-                "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
+                "http://msdn.microsoft.com/library/hh290136.aspx",  
+                "http://msdn.microsoft.com/library/dd470362.aspx",  
+                "http://msdn.microsoft.com/library/aa578028.aspx",  
+                "http://msdn.microsoft.com/library/ms404677.aspx",  
+                "http://msdn.microsoft.com/library/ff730837.aspx"  
             };  
             return urls;  
         }  

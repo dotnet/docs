@@ -35,7 +35,7 @@ translation.priority.mt:
 # My.Application.Log cannot determine the amount of free disk space
 The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class could not determine the amount of free disk space.  
   
-### To correct this error  
+## To correct this error  
   
 -   Note the circumstances under which the error occurred, and call Microsoft Product Support Services.  
   

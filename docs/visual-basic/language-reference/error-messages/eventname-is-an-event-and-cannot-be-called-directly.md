@@ -43,7 +43,7 @@ translation.priority.ht:
   
  **Error ID:** BC32022  
   
-### To correct this error  
+## To correct this error  
   
 1.  Use a `RaiseEvent` statement to signal an event and invoke the procedure or procedures that handle it.  
   

@@ -37,7 +37,7 @@ The value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.BaseFi
   
  The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.BaseFileName%2A> property specifies the base name for the log files.  
   
-### To correct this error  
+## To correct this error  
   
 -   Set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.BaseFileName%2A> property to a string that contains at least one character.  
   

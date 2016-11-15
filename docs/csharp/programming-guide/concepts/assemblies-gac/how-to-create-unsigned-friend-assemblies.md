@@ -31,7 +31,7 @@ This example shows how to use friend assemblies with assemblies that are unsigne
   
 2.  Create a C# file named `friend_signed_A.` that contains the following code. The code uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to declare friend_signed_B as a friend assembly.  
   
-    ```c#  
+    ```cs  
     // friend_unsigned_A.cs  
     // Compile with:   
     // csc /target:library friend_unsigned_A.cs  
@@ -61,13 +61,13 @@ This example shows how to use friend assemblies with assemblies that are unsigne
   
 3.  Compile and sign friend_signed_A by using the following command.  
   
-    ```c#  
+    ```cs  
     csc /target:library friend_unsigned_A.cs  
     ```  
   
 4.  Create a C# file named `friend_unsigned_B` that contains the following code. Because friend_unsigned_A specifies friend_unsigned_B as a friend assembly, the code in friend_unsigned_B can access `internal` types and members from friend_unsigned_A.  
   
-    ```c#  
+    ```cs  
     // friend_unsigned_B.cs  
     // Compile with:   
     // csc /r:friend_unsigned_A.dll /out:friend_unsigned_B.exe friend_unsigned_B.cs  
@@ -90,7 +90,7 @@ This example shows how to use friend assemblies with assemblies that are unsigne
   
 5.  Compile friend_signed_B by using the following command.  
   
-    ```c#  
+    ```cs  
     csc /r:friend_unsigned_A.dll /out:friend_unsigned_B.exe friend_unsigned_B.cs  
     ```  
   
@@ -105,7 +105,7 @@ This example shows how to use friend assemblies with assemblies that are unsigne
   
 ## See Also  
  <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>   
- [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache.md)   
+ [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)   
  [Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md)   
  [How to: Create Signed Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)   
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)

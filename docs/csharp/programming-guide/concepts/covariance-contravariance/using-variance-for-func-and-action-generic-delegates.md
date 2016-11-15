@@ -30,7 +30,7 @@ These examples demonstrate how to use covariance and contravariance in the `Func
 ## Using Delegates with Covariant Type Parameters  
  The following example illustrates the benefits of covariance support in the generic `Func` delegates. The `FindByTitle` method takes a parameter of the `String` type and returns an object of the `Employee` type. However, you can assign this method to the `Func<String, Person>` delegate because `Employee` inherits `Person`.  
   
-```c#  
+```cs  
 // Simple hierarchy of classes.  
 public class Person { }  
 public class Employee : Person { }  
@@ -64,7 +64,7 @@ class Program
 ## Using Delegates with Contravariant Type Parameters  
  The following example illustrates the benefits of contravariance support in the generic `Action` delegates. The `AddToContacts` method takes a parameter of the `Person` type. However, you can assign this method to the `Action<Employee>` delegate because `Employee` inherits `Person`.  
   
-```c#  
+```cs  
 public class Person { }  
 public class Employee : Person { }  
 class Program  
@@ -96,4 +96,4 @@ class Program
   
 ## See Also  
  [Covariance and Contravariance (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/index.md)   
- [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)
+ [Generics](https://msdn.microsoft.com/library/ms172192)

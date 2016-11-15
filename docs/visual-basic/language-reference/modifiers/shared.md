@@ -118,6 +118,6 @@ Specifies that one or more declared programming elements are associated with a c
  [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)   
  [Static](../../../visual-basic/language-reference/modifiers/static.md)   
  [Lifetime in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)   
- [Procedures](../../../visual-basic/language-reference/procedures/index.md)   
+ [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)   
  [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

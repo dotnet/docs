@@ -70,7 +70,7 @@ You can add functionality to the application model by overriding the `Overridabl
   
 2.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup%2A>. Provides an extensibility point for raising the `Startup` event. The application startup sequence stops if this function returns `False`.  
   
-     By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> event. If the event handler sets the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the event argument to `True`, the method returns `False` to cancel the application startup.  
+     By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> event. If the event handler sets the @System.ComponentModel.CancelEventArgs.Cancel property of the event argument to `True`, the method returns `False` to cancel the application startup.  
   
 3.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A>. Provides the starting point for when the main application is ready to start running, after the initialization is done.  
   
@@ -105,9 +105,8 @@ You can add functionality to the application model by overriding the `Overridabl
   
  In a default Windows Forms project, the **Project Designer** creates code to set the properties with the designer settings. The properties are used only when the application is starting; setting them after the application starts has no effect.  
   
-||||  
-|-|-|-|  
 |Property|Determines|Setting in the Application pane of  the Project Designer|  
+|---|---|---|  
 |<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.IsSingleInstance%2A>|Whether the application runs as a single-instance or multiple-instance application.|**Make single instance application** check box|  
 |<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.EnableVisualStyles%2A>|If the application will use visual styles that match Windows XP.|**Enable XP visual styles** check box|  
 |<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SaveMySettingsOnExit%2A>|If application automatically saves application's user-settings changes when the application exits.|**Save My.Settings on Shutdown** check box|  
@@ -122,4 +121,4 @@ You can add functionality to the application model by overriding the `Overridabl
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged>   
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>   
  [Overview of the Visual Basic Application Model](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)   
- [Application Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/application-page-project-designer-visual-basic)
+ [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)

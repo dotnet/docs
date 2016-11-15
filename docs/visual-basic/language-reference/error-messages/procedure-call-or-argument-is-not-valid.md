@@ -36,7 +36,7 @@ translation.priority.ht:
 # Procedure call or argument is not valid (Visual Basic)
 Some part of the call cannot be completed.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check the permitted ranges for arguments to make sure no arrangement exceeds the permitted values.  
   

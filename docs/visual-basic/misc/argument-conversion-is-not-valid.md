@@ -35,7 +35,7 @@ translation.priority.mt:
 # Argument &#39;Conversion&#39; is not valid
 A value for the `VbStrConv` enumeration is not valid, possibly because it is less than zero. Enumeration values must be greater than or equal to zero.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Ensure that the value is greater than or equal to zero.  
   

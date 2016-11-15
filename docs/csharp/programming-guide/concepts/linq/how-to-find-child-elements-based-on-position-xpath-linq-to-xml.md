@@ -31,7 +31,7 @@ Sometimes you want to find elements based on their position. You might want to f
   
  This example uses the following XML document: [Sample XML File: Test Configuration (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md).  
   
-```c#  
+```cs  
 XElement testCfg = XElement.Load("TestConfig.xml");  
   
 // LINQ to XML query  

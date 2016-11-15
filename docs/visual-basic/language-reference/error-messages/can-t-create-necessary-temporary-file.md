@@ -36,7 +36,7 @@ translation.priority.ht:
 # Can&#39;t create necessary temporary file
 Either the drive is full that contains the directory specified by the TEMP environment variable, or the TEMP environment variable specifies an invalid or read-only drive or directory.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Delete files from the drive, if full.  
   

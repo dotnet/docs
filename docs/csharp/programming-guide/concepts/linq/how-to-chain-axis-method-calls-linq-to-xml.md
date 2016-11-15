@@ -27,7 +27,7 @@ A common pattern that you will use in your code is to call an axis method, then 
   
  This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
-```c#  
+```cs  
 XElement purchaseOrders = XElement.Load("PurchaseOrders.xml");  
 IEnumerable<XElement> names =  
     from el in purchaseOrders  
@@ -79,7 +79,7 @@ foreach (XElement e in names)
   
  To do this, you can use the <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=fullName> axis, as follows:  
   
-```c#  
+```cs  
 XElement root = XElement.Load("Irregular.xml");  
 IEnumerable<XElement> configParameters =   
     root.Elements("Customer").Elements("Config").  
@@ -100,7 +100,7 @@ foreach (XElement cp in configParameters)
   
  This example uses the following XML document: [Sample XML File: Multiple Purchase Orders in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-in-a-namespace.md).  
   
-```c#  
+```cs  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement purchaseOrders = XElement.Load("PurchaseOrdersInNamespace.xml");  
 IEnumerable<XElement> names =  

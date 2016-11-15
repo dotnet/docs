@@ -41,7 +41,7 @@ The <xref:System.Xml.Linq.XElement> class is one of the fundamental classes in [
   
  However, the most common way to create an XML tree is as follows:  
   
-```c#  
+```cs  
 XElement contacts =  
     new XElement("Contacts",  
         new XElement("Contact",  
@@ -59,7 +59,7 @@ XElement contacts =
   
  Another very common technique for creating an XML tree involves using the results of a [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] query to populate an XML tree, as shown in the following example:  
   
-```c#  
+```cs  
 XElement srcTree = new XElement("Root",  
     new XElement("Element", 1),  
     new XElement("Element", 2),  

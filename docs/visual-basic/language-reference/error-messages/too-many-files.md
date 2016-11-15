@@ -37,7 +37,7 @@ translation.priority.mt:
 # Too many files
 Either more files have been created in the root directory than the operating system permits, or more files have been opened than the number specified in the **files=** setting in your CONFIG.SYS file.  
   
-### To correct this error  
+## To correct this error  
   
 1.  If your program is opening, closing, or saving files in the root directory, change your program so that it uses a subdirectory.  
   

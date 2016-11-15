@@ -168,11 +168,11 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 3.  Open the SampleClass.vbfile. Add the following lines of code to the SampleClass class.  
   
-    ```vb  
-    Public Function GetDate() As DateTime Implements ISampleInterface.GetDate  
-        Return Now  
-    End Function  
-    ```  
+```vb  
+Public Function GetDate() As DateTime Implements ISampleInterface.GetDate  
+    Return Now  
+End Function  
+```  
   
      Save the file.  
   
@@ -185,5 +185,5 @@ If you embed type information from a strong-named managed assembly, you can loos
 ## See Also  
  [/link (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/link.md)   
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
- [Programming with Assemblies](../Topic/Programming%20with%20Assemblies.md)   
+ [Programming with Assemblies](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
  [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)

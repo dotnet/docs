@@ -76,5 +76,5 @@ The **/appconfig** compiler option enables a C# application to specify the locat
   
 ## See Also  
  [.NET Framework Assembly Unification Overview](http://msdn.microsoft.com/en-us/8d8cc65e-031d-463b-bde3-2c6dc2e3bc48)   
- [\<supportPortability> Element](../Topic/%3CsupportPortability%3E%20Element.md)   
+ [\<supportPortability> Element](http://msdn.microsoft.com/library/6453ef66-19b4-41f3-b712-52d0c2abc9ca)   
  [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)

@@ -36,7 +36,7 @@ translation.priority.ht:
 # Expression too complex
 A floating-point expression contains too many nested subexpressions.  
   
-### To correct this error  
+## To correct this error  
   
 -   Break the expression into as many separate expressions as necessary to prevent the error from occurring.  
   

@@ -51,9 +51,8 @@ From element [ As type ] In collection [ _ ]
   
 ## Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`element`|Required. A *range variable* used to iterate through the elements of the collection. A range variable is used to refer to each member of the `collection` as the query iterates through the `collection`. Must be an enumerable type.|  
 |`type`|Optional. The type of `element`. If no `type` is specified, the type of `element` is inferred from `collection`.|  
 |`collection`|Required. Refers to the collection to be queried. Must be an enumerable type.|  

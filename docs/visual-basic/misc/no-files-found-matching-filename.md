@@ -35,7 +35,7 @@ translation.priority.mt:
 # No files found matching &#39;&lt;filename&gt;&#39;
 The file name is incorrect, or the file does not exist.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Ensure that the file name is correct.  
   

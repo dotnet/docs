@@ -25,7 +25,7 @@ This example shows how to use [!INCLUDE[vbteclinqext](../../../../csharp/getting
   
  The query uses the `let` clause to split each string into an array of fields.  
   
-```c#  
+```cs  
 // Create the text file.  
 string csvString = @"GREAL,Great Lakes Food Market,Howard Snyder,Marketing Manager,(503) 555-7555,2732 Baker Blvd.,Eugene,OR,97403,USA  
 HUNGC,Hungry Coyote Import Store,Yoshi Latimer,Sales Representative,(503) 555-6874,City Center Plaza 516 Main St.,Elgin,OR,97827,USA  

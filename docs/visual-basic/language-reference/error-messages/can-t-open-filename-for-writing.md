@@ -41,7 +41,7 @@ The specified file cannot be opened for writing, perhaps because it has already 
   
  **Error ID:** BC2012  
   
-### To correct this error  
+## To correct this error  
   
 1.  Close the file and reopen it.  
   

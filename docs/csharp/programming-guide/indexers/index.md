@@ -49,7 +49,7 @@ Indexers allow instances of a class or struct to be indexed just like arrays. In
 ## Expression Body Definitions  
  It is common to have indexers that simply return immediately with the result of an expression.  There is a syntax shortcut for defining these indexers using `=>`:  
   
-```c#  
+```cs  
 public Customer this[long id] => store.LookupCustomer(id);  
 ```  
   

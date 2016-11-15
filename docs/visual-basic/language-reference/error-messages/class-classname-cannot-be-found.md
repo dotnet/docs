@@ -43,7 +43,7 @@ Class '\<classname>' cannot be found. This condition is usually the result of a 
   
  **Error ID:** BC31098  
   
-### To correct this error  
+## To correct this error  
   
 1.  Compile the program again to see if the error recurs.  
   
@@ -54,4 +54,4 @@ Class '\<classname>' cannot be found. This condition is usually the result of a 
 4.  If the error persists after reinstallation, notify Microsoft Product Support Services.  
   
 ## See Also  
- [Talk to Us](/visual-studio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

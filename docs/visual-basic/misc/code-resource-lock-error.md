@@ -35,7 +35,7 @@ translation.priority.mt:
 # Code resource lock error
 A call was made to a procedure in a code resource. The code resource was found, but an error occurred when an attempt was made to lock the resource, perhaps because it is in use.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check the resource to determine why the error occurred.  
   

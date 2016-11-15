@@ -59,33 +59,28 @@ In *conditional compilation*, particular blocks of code in a program are compile
   
  Conditional compilation constants have a special scope and cannot be accessed from standard code. The scope of a conditional compilation constant is dependent on the way it is set. The following table lists the scope of constants declared using each of the three ways mentioned above.  
   
-|||  
-|-|-|  
 |How constant is set|Scope of constant|  
+|---|---|  
 |**Project Designer**|Public to all files in the project|  
 |Command line|Public to all files passed to the command-line compiler|  
 |`#Const` statement in code|Private to the file in which it is declared|  
   
-||  
-|-|  
 |To set constants in the Project Designer|  
+|---|  
 |-   Before creating your executable file, set constants in the **Project Designer** by following the steps provided in [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).|  
   
-||  
-|-|  
 |To set constants at the command line|  
+|---|  
 |-   Use the **/d** switch to enter conditional compilation constants, as in the following example:<br />     `vbc MyProj.vb /d:conFrenchVersion=–1:conANSI=0`<br />     No space is required between the **/d** switch and the first constant. For more information, see [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md).<br />     Command-line declarations override declarations entered in the **Project Designer**, but do not erase them. Arguments set in **Project Designer** remain in effect for subsequent compilations.<br />     When writing constants in the code itself, there are no strict rules as to their placement, since their scope is the entire module in which they are declared.|  
   
-||  
-|-|  
 |To set constants in your code|  
+|---|  
 |-   Place the constants in the declaration block of the module in which they are used. This helps keep your code organized and easier to read.|  
   
 ## Related Topics  
   
-|||  
-|-|-|  
 |Title|Description|  
+|---|---|  
 |[Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)|Provides suggestions for making your code easy to read and maintain.|  
   
 ## Reference  

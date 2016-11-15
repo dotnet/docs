@@ -53,7 +53,7 @@ If you embed type information in an application that references COM objects, you
   
 7.  Open the **Program.cs** file. Replace the code in the file with the following code:  
   
-    ```c#  
+    ```cs  
     using System;  
     using System.Collections.Generic;  
     using System.Linq;  

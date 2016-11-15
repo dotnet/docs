@@ -25,7 +25,7 @@ This topic shows how to get the value of elements. There are two main ways to do
 ## Example  
  To retrieve the value of an element, you just cast the <xref:System.Xml.Linq.XElement> object to your desired type. You can always cast an element to a string, as follows:  
   
-```c#  
+```cs  
 XElement e = new XElement("StringElement", "abcde");  
 Console.WriteLine(e);  
 Console.WriteLine("Value of e:" + (string)e);  
@@ -41,7 +41,7 @@ Value of e:abcde
 ## Example  
  You can also cast elements to types other than string. For example, if you have an element that contains an integer, you can cast it to `int`, as shown in the following code:  
   
-```c#  
+```cs  
 XElement e = new XElement("Age", "44");  
 Console.WriteLine(e);  
 Console.WriteLine("Value of e:" + (int)e);  
@@ -61,7 +61,7 @@ Value of e:44
 ## Example  
  You can use the <xref:System.Xml.Linq.XElement.Value%2A> property to retrieve the contents of an element:  
   
-```c#  
+```cs  
 XElement e = new XElement("StringElement", "abcde");   
 Console.WriteLine(e);  
 Console.WriteLine("Value of e:" + e.Value);  
@@ -77,7 +77,7 @@ Value of e:abcde
 ## Example  
  Sometimes you try to retrieve the value of an element even though you are not sure it exists. In this case, when you assign the casted element to a nullable type (either `string` or one of the nullable types in the [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]), if the element does not exist the assigned variable is just set to `null`. The following code shows that when the element might or might not exist, it is easier to use casting than to use the <xref:System.Xml.Linq.XElement.Value%2A> property.  
   
-```c#  
+```cs  
 XElement root = new XElement("Root",  
     new XElement("Child1", "child 1 content"),  
     new XElement("Child2", "2")  

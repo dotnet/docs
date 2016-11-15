@@ -49,7 +49,7 @@ Indicates that a type declaration is a partial definition of the type.
  You can divide the definition of a type among several declarations by using the `Partial` keyword. You can use as many partial declarations as you want, in as many different source files as you want. However, all the declarations must be in the same assembly and the same namespace.  
   
 > [!NOTE]
->  Visual Basic supports *partial methods*, which are typically implemented in partial classes. For more information, see [Partial Methods](../../../visual-basic/language-reference/procedures/partial-methods.md) and [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md).  
+>  Visual Basic supports *partial methods*, which are typically implemented in partial classes. For more information, see [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md) and [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md).  
   
 ## Syntax  
   
@@ -65,9 +65,8 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) 
   
 ## Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`attrlist`|Optional. List of attributes that apply to this type. You must enclose the [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md) in angle brackets (`< >`).|  
 |`accessmodifier`|Optional. Specifies what code can access this type. See [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).|  
 |`Shadows`|Optional. See [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md).|  
@@ -122,4 +121,4 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) 
  [Type Promotion](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)   
  [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)   
  [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
- [Partial Methods](../../../visual-basic/language-reference/procedures/partial-methods.md)
+ [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)

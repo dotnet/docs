@@ -41,9 +41,8 @@ The `My.WebServices` object provides an instance of each Web service referenced 
 ## Tasks  
  The following table lists possible ways to access Web services referenced by an application.  
   
-|||  
-|-|-|  
 |To|See|  
+|---|---|   
 |Call a Web service|[My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)|  
 |Call a Web service asynchronously and handle an event when it completes|[How to: Call a Web Service Asynchronously](../../../visual-basic/developing-apps/programming/how-to-call-a-web-service-asynchronously.md)|  
   

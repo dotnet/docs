@@ -23,7 +23,7 @@ This topic introduces the <xref:System.Xml.Linq.XElement.Attributes%2A> method. 
 ## Example  
  The following example shows how to iterate through the collection of attributes of an element.  
   
-```c#  
+```cs  
 XElement val = new XElement("Value",  
     new XAttribute("ID", "1243"),  
     new XAttribute("Type", "int"),  

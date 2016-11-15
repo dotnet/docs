@@ -40,7 +40,7 @@ translation.priority.ht:
   
  The new features in C# include named and optional arguments, return values that have type `dynamic`, and, in COM programming, the ability to omit the `ref` keyword and to access indexed properties. The new features in Visual Basic include auto-implemented properties, statements in lambda expressions, and collection initializers.  
   
- Both languages enable embedding of type information, which allows deployment of assemblies that interact with COM components without deploying primary interop assemblies (PIAs) to the user's computer. For more information, see [Walkthrough: Embedding Types from Managed Assemblies](../Topic/Walkthrough:%20Embedding%20Types%20from%20Managed%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md).  
+ Both languages enable embedding of type information, which allows deployment of assemblies that interact with COM components without deploying primary interop assemblies (PIAs) to the user's computer. For more information, see [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21).  
   
  This walkthrough demonstrates the new features in the context of Office programming, but many of them are also useful in general programming. In the walkthrough, you will first use an Excel Add-in application to create an Excel workbook. You will then create a Word document that contains a link to the workbook. Finally, you will see how the PIA dependency can be turned on and off.  
   
@@ -49,7 +49,7 @@ translation.priority.ht:
   
  If you are using an operating system that is older than [!INCLUDE[windowsver](../../../csharp/programming-guide/interop/includes/windowsver_md.md)], make sure that [!INCLUDE[dnprdnlong](../../../csharp/programming-guide/events/includes/dnprdnlong_md.md)] is installed.  
   
- [!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
 ### To set up an Excel Add-in application  
   
@@ -73,7 +73,7 @@ translation.priority.ht:
   
 1.  In **Solution Explorer**, right-click your project's name and then click **Add Reference**. The **Add Reference** dialog box appears.  
   
-2.  On the **Assemblies** tab, select **Microsoft.Office.Interop.Excel**, version 15.0.0.0 (or version 14.0.0.0 for Excel 2010 or version 12.0.0.0 for Excel 2007), in the **Component Name** list, and then hold down the CTRL key and select **Microsoft.Office.Interop.Word**, version 15.0.0.0 (or version 14.0.0.0 for Word 2010 or 12.0.0.0 for Word 2007).  If you do not see the assemblies, you may need to ensure they are installed and displayed (see [How to: Install Office Primary Interop Assemblies](../Topic/How%20to:%20Install%20Office%20Primary%20Interop%20Assemblies.md)).  
+2.  On the **Assemblies** tab, select **Microsoft.Office.Interop.Excel**, version 15.0.0.0 (or version 14.0.0.0 for Excel 2010 or version 12.0.0.0 for Excel 2007), in the **Component Name** list, and then hold down the CTRL key and select **Microsoft.Office.Interop.Word**, version 15.0.0.0 (or version 14.0.0.0 for Word 2010 or 12.0.0.0 for Word 2007).  If you do not see the assemblies, you may need to ensure they are installed and displayed (see [How to: Install Office Primary Interop Assemblies](http://msdn.microsoft.com/library/92948fcc-76c6-4b08-ba63-cab59dd60eb1)).  
   
 3.  Click **OK**.  
   
@@ -90,7 +90,7 @@ translation.priority.ht:
   
 1.  In **Solution Explorer**, right-click your project's name, click **Add**, and then click **Class**. Name the class Account.vb if you are using Visual Basic or Account.cs if you are using C#. Click **Add**.  
   
-2.  Replace the definition of the `Account` class with the following code. The class definitions use *auto-implemented properties*, new to Visual Basic in Visual Studio 2010. For more information, see [Auto-Implemented Properties](../../../visual-basic/language-reference/procedures/auto-implemented-properties.md).  
+2.  Replace the definition of the `Account` class with the following code. The class definitions use *auto-implemented properties*, new to Visual Basic in Visual Studio 2010. For more information, see [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md).  
   
      [!code-cs[csOfficeWalkthrough#2](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_2.cs)]
      [!code-vb[csOfficeWalkthrough#2](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_2.vb)]  
@@ -140,7 +140,7 @@ translation.priority.ht:
   
 ### To invoke DisplayInExcel  
   
-1.  Add the following code at the end of the `ThisAddIn_StartUp` method. The call to `DisplayInExcel` contains two arguments. The first argument is the name of the list of accounts to be processed. The second argument is a multiline lambda expression that defines how the data is to be processed. The `ID` and `balance` values for each account are displayed in adjacent cells, and the row is displayed in red if the balance is less than zero. Multiline lambda expressions are a new feature in Visual Basic 2010. For more information, see [Lambda Expressions](../../../visual-basic/language-reference/procedures/lambda-expressions.md).  
+1.  Add the following code at the end of the `ThisAddIn_StartUp` method. The call to `DisplayInExcel` contains two arguments. The first argument is the name of the list of accounts to be processed. The second argument is a multiline lambda expression that defines how the data is to be processed. The `ID` and `balance` values for each account are displayed in adjacent cells, and the row is displayed in red if the balance is less than zero. Multiline lambda expressions are a new feature in Visual Basic 2010. For more information, see [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
      [!code-cs[csOfficeWalkthrough#9](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_9.cs)]
      [!code-vb[csOfficeWalkthrough#9](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_9.vb)]  
@@ -176,7 +176,7 @@ translation.priority.ht:
   
 4.  On the **File** menu in the IL DASM window, click **Open**. Double-click **Visual Studio 2013**, and then double-click **Projects**. Open the folder for your project, and look in the bin/Debug folder for *your project name*.dll. Double-click *your project name*.dll. A new window displays your project's attributes, in addition to references to other modules and assemblies. Note that namespaces `Microsoft.Office.Interop.Excel` and `Microsoft.Office.Interop.Word` are included in the assembly. By default in Visual Studio 2013, the compiler imports the types you need from a referenced PIA into your assembly.  
   
-     For more information, see [How to: View Assembly Contents](../Topic/How%20to:%20View%20Assembly%20Contents.md).  
+     For more information, see [How to: View Assembly Contents](http://msdn.microsoft.com/library/fb7baaab-4c0d-47ad-8fd3-4591cf834709).  
   
 5.  Double-click the **MANIFEST** icon. A window appears that contains a list of assemblies that contain items referenced by the project. `Microsoft.Office.Interop.Excel` and `Microsoft.Office.Interop.Word` are not included in the list. Because the types your project needs have been imported into your assembly, references to a PIA are not required. This makes deployment easier. The PIAs do not have to be present on the user's computer, and because an application does not require deployment of a specific version of a PIA, applications can be designed to work with multiple versions of Office, provided that the necessary APIs exist in all versions.  
   
@@ -206,21 +206,21 @@ translation.priority.ht:
 8.  In Visual Studio, click **Clean Solution** on the **Build** menu to clean up the completed project.  
   
 ## See Also  
- [Auto-Implemented Properties](../../../visual-basic/language-reference/procedures/auto-implemented-properties.md)   
+ [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)   
  [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)   
  [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)   
  [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)   
- [Optional Parameters](../../../visual-basic/language-reference/procedures/optional-parameters.md)   
- [Passing Arguments by Position and by Name](../../../visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name.md)   
+ [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)   
+ [Passing Arguments by Position and by Name](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)   
  [Named and Optional Arguments](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)   
  [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)   
  [dynamic](../../../csharp/language-reference/keywords/dynamic.md)   
  [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)   
- [Lambda Expressions](../../../visual-basic/language-reference/procedures/lambda-expressions.md)   
+ [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
  [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)   
  [How to: Use Indexed Properties in COM Interop Programming](../../../csharp/programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md)   
- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](../Topic/Walkthrough:%20Embedding%20Type%20Information%20from%20Microsoft%20Office%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)   
- [Walkthrough: Embedding Types from Managed Assemblies](../Topic/Walkthrough:%20Embedding%20Types%20from%20Managed%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)   
- [Walkthrough: Creating Your First VSTO Add-in for Excel](../Topic/Walkthrough:%20Creating%20Your%20First%20VSTO%20Add-in%20for%20Excel.md)   
+ [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](http://msdn.microsoft.com/library/85b55e05-bc5e-4665-b6ae-e1ada9299fd3)   
+ [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)   
+ [Walkthrough: Creating Your First VSTO Add-in for Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
  [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)   
  [Interoperability](../../../csharp/programming-guide/interop/interoperability.md)

@@ -43,7 +43,7 @@ translation.priority.ht:
   
  **Error ID:** BC30154  
   
-### To correct this error  
+## To correct this error  
   
 1.  Declare a member with the same name and signature as defined in the interface. Be sure to include at least the `End Function`, `End Sub`, or `End Property` statement.  
   

@@ -35,7 +35,7 @@ translation.priority.mt:
 # &#39;ReDim&#39; cannot change the number of dimensions
 An operation attempts to use the `ReDim` statement to change the rank (number of dimensions) of an array. `ReDim` can change the size of one or more dimensions of an array that has already been formally declared, but it cannot change an array's rank.  
   
-### To correct this error  
+## To correct this error  
   
 -   Ensure that you intend to change the array's rank and not the sizes of its dimensions, and if possible, use `Dim` to declare a new array with the desired rank.  
   

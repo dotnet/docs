@@ -42,7 +42,7 @@ Among the possible causes of this error are:
   
 -   The variable in a `FilePut` or `FilePutObject` is or includes a `Variant`type**.**  
   
-### To correct this error  
+## To correct this error  
   
 1.  Make sure the sum of the sizes of fixed-length variables in the user-defined type defining the record variable's type is the same as the value stated in the `FileOpen` statement's `Len` clause.  
   

@@ -27,7 +27,7 @@ TThis example writes the object from a class to an XML file using the <xref:Syst
   
 ## Example  
   
-```c#  
+```cs  
 public class XMLWrite  
 {  
   

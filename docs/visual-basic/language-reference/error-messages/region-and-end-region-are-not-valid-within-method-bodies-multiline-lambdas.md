@@ -41,7 +41,7 @@ The `#Region` block must be declared at a class, module, or namespace level. A c
   
  **Error ID:** BC32025  
   
-### To correct this error  
+## To correct this error  
   
 1.  Ensure that the preceding procedure is properly terminated with an `End Function` or `End Sub` statement.  
   

@@ -41,7 +41,7 @@ A variable enclosed in a block has the same name as another local variable.
   
  **Error ID:** BC30616  
   
-### To correct this error  
+## To correct this error  
   
 -   Rename the variable in the enclosed block so that it is not the same as any other local variables. For example:  
   

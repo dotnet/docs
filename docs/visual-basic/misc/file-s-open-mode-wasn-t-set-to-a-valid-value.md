@@ -41,7 +41,7 @@ The value supplied for the file's open mode was not valid. The following table s
 |8|`OpenMode.Append`|  
 |32|`OpenMode.Binary`|  
   
-### To correct this error  
+## To correct this error  
   
 -   Verify the value being supplied for the file's open mode.  
   

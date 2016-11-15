@@ -51,4 +51,4 @@ Specifies that an attribute at the beginning of a source file applies to the ent
   
 ## See Also  
  [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)   
- [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)
+ [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md)

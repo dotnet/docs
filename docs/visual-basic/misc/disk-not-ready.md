@@ -35,7 +35,7 @@ translation.priority.mt:
 # Disk not ready
 For the specified drive, either there is no disk or the drive door is open.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the specified drive and insert a disk if necessary.  
   

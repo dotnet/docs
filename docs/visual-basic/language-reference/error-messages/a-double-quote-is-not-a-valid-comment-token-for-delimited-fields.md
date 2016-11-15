@@ -37,7 +37,7 @@ translation.priority.mt:
 # A double quote is not a valid comment token for delimited fields where EscapeQuote is set to True
 A quotation mark has been supplied as the delimiter for the `TextFieldParser`, but `EscapeQuotes` is set to `True`.  
   
-### To correct this error  
+## To correct this error  
   
 -   Set `EscapeQuotes` to `False`.  
   

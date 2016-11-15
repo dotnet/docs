@@ -33,7 +33,7 @@ translation.priority.mt:
 # You must specify a file name
 You attempted an operation, such as moving or copying a file, which requires supplying a file name.  
   
-### To correct this error  
+## To correct this error  
   
 -   Supply the necessary file name.  
   

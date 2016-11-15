@@ -34,7 +34,7 @@ One approach to processing a text file is to write an extension method that stre
   
  The following code contains an extension method that streams the lines of the text file in a deferred fashion.  
   
-```c#  
+```cs  
 public static class StreamReaderSequence  
 {  
     public static IEnumerable<string> Lines(this StreamReader source)  

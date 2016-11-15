@@ -41,11 +41,11 @@ translation.priority.ht:
   
  **Error ID:** BC30698  
   
-### To correct this error  
+## To correct this error  
   
 1.  Restart [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)].  
   
 2.  If the problem persists, reinstall [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)].  
   
 ## See Also  
- [Talk to Us](/visual-studio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

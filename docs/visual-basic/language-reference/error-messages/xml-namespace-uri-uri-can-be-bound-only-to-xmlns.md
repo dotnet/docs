@@ -41,7 +41,7 @@ The URI http://www.w3.org/XML/1998/namespace is used in an XML namespace declara
   
  **Error ID:** BC31183  
   
-### To correct this error  
+## To correct this error  
   
 -   Remove the XML namespace declaration or replace the URI http://www.w3.org/XML/1998/namespace with a valid namespace URI.  
   

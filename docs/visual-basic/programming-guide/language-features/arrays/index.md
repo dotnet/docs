@@ -245,7 +245,7 @@ Dim prices(3, 4, 5) As Long
  There are several things to keep in mind when dealing with the size of an array.  
   
 |||  
-|-|-|  
+|---|---|  
 |Dimension Length|The index of each dimension is 0-based, which means it ranges from 0 through its upper bound. Therefore, the length of a given dimension is greater by 1 than the declared upper bound for that dimension.|  
 |Length Limits|The length of every dimension of an array is limited to the maximum value of the `Integer` data type, which is (2 ^ 31) - 1. However, the total size of an array is also limited by the memory available on your system. If you attempt to initialize an array that exceeds the amount of available RAM, the common language runtime throws an <xref:System.OutOfMemoryException> exception.|  
 |Size and Element Size|An array's size is independent of the data type of its elements. The size always represents the total number of elements, not the number of bytes that they consume in storage.|  

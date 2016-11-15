@@ -25,7 +25,7 @@ translation.priority.mt:
 # Creating Custom Attributes (C#)
 You can create your own custom attributes by defining an attribute class, a class that derives directly or indirectly from <xref:System.Attribute>, which makes identifying attribute definitions in metadata fast and easy. Suppose you want to tag types with the name of the programmer who wrote the type. You might define a custom `Author` attribute class:  
   
-```c#  
+```cs  
 [System.AttributeUsage(System.AttributeTargets.Class |  
                        System.AttributeTargets.Struct)  
 ]  
@@ -46,7 +46,7 @@ public class Author : System.Attribute
   
  You could use this new attribute as follows:  
   
-```c#  
+```cs  
 [Author("P. Ackerman", version = 1.1)]  
 class SampleClass  
 {  
@@ -56,7 +56,7 @@ class SampleClass
   
  `AttributeUsage` has a named parameter, `AllowMultiple`, with which you can make a custom attribute single-use or multiuse. In the following code example, a multiuse attribute is created.  
   
-```c#  
+```cs  
 [System.AttributeUsage(System.AttributeTargets.Class |  
                        System.AttributeTargets.Struct,  
                        AllowMultiple = true)  // multiuse attribute  
@@ -66,7 +66,7 @@ public class Author : System.Attribute
   
  In the following code example, multiple attributes of the same type are applied to a class.  
   
-```c#  
+```cs  
 [Author("P. Ackerman", version = 1.1)]  
 [Author("R. Koch", version = 1.2)]  
 class SampleClass  
@@ -82,7 +82,7 @@ class SampleClass
 ## See Also  
  <xref:System.Reflection>   
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Writing Custom Attributes](../Topic/Writing%20Custom%20Attributes.md)   
+ [Writing Custom Attributes](http://msdn.microsoft.com/library/97216f69-bde8-49fd-ac40-f18c500ef5dc)   
  [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
  [Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)   
  [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)   

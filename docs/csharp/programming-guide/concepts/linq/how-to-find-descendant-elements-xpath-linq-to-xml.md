@@ -27,7 +27,7 @@ This topic shows how to get the descendant elements with a particular name.
   
  This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
-```c#  
+```cs  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  
   
 // LINQ to XML query  

@@ -47,7 +47,7 @@ translation.priority.ht:
   
 2.  Double-click the Module1.vb file created in the project to modify the Visual Basic code. Add the following code to the `Sub Main` of the `Module1` module. This code creates the source XML document as an <xref:System.Xml.Linq.XDocument> object.  
   
-    ```vb#  
+    ```vb  
     Dim catalog =   
       <?xml version="1.0"?>  
         <Catalog>  
@@ -85,7 +85,7 @@ translation.priority.ht:
   
      The resulting HTML document is written to a file by using the <xref:System.Xml.Linq.XElement.Save%2A> method.  
   
-    ```vb#  
+    ```vb  
     Dim htmlOutput =   
       <html>  
         <body>  
@@ -110,7 +110,7 @@ translation.priority.ht:
   
      Add the following code after `Sub Main` of `Module1`.  
   
-    ```vb#  
+    ```vb  
     Public Function TransformDescription(ByVal desc As XElement) As XElement  
   
       ' Replace <technology> elements with <b>.  

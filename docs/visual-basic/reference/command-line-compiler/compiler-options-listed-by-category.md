@@ -38,9 +38,8 @@ The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/v
   
 ## Compiler Output  
   
-|||  
-|-|-|  
 |Option|Purpose|  
+|---|---|  
 |[/nologo](../../../visual-basic/reference/command-line-compiler/nologo.md)|Suppresses compiler banner information.|  
 |[/utf8output](../../../visual-basic/reference/command-line-compiler/utf8output.md)|Displays compiler output using UTF-8 encoding.|  
 |[/verbose](../../../visual-basic/reference/command-line-compiler/verbose.md)|Outputs extra information during compilation.|  
@@ -49,17 +48,15 @@ The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/v
   
 ## Optimization  
   
-|||  
-|-|-|  
 |Option|Purpose|  
+|---|---|  
 |[/filealign](../../../visual-basic/reference/command-line-compiler/filealign.md)|Specifies where to align the sections of the output file.|  
 |[/optimize](../../../visual-basic/reference/command-line-compiler/optimize.md)|Enables/disables optimizations.|  
   
 ## Output Files  
   
-|||  
-|-|-|  
 |Option|Purpose|  
+|---|---|  
 |[/doc](../../../visual-basic/reference/command-line-compiler/doc.md)|Process documentation comments to an XML file.|  
 |[/netcf](../../../visual-basic/reference/command-line-compiler/netcf.md)|Sets the compiler to target the [!INCLUDE[Compact](../../../visual-basic/reference/command-line-compiler/includes/compact_md.md)].|  
 |[/out](../../../visual-basic/reference/command-line-compiler/out.md)|Specifies an output file.|  
@@ -67,9 +64,8 @@ The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/v
   
 ## .NET Assemblies  
   
-|||  
-|-|-|  
 |Option|Purpose|  
+|---|---|  
 |[/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)|Causes the compiler to make all type information from the specified file(s) available to the project you are currently compiling.|  
 |[/delaysign](../../../visual-basic/reference/command-line-compiler/delaysign.md)|Specifies whether the assembly will be fully or partially signed.|  
 |[/imports](../../../visual-basic/reference/command-line-compiler/imports.md)|Imports a namespace from a specified assembly.|  
@@ -83,9 +79,8 @@ The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/v
   
 ## Debugging/Error Checking  
   
-|||  
-|-|-|  
 |Option|Purpose|  
+|---|---|  
 |[/bugreport](../../../visual-basic/reference/command-line-compiler/bugreport.md)|Creates a file that contains information that makes it easy to report a bug.|  
 |[/debug](../../../visual-basic/reference/command-line-compiler/debug.md)|Produces debugging information.|  
 |[/nowarn](../../../visual-basic/reference/command-line-compiler/nowarn.md)|Suppresses the compiler's ability to generate warnings.|  
@@ -96,17 +91,15 @@ The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/v
   
 ## Help  
   
-|||  
-|-|-|  
 |Option|Purpose|  
+|---|---|  
 |[/?](../../../visual-basic/reference/command-line-compiler/help.md)|Displays the compiler options. This command is the same as specifying the `/help` option. No compilation occurs.|  
 |[/help](../../../visual-basic/reference/command-line-compiler/help.md)|Displays the compiler options. This command is the same as specifying the `/?` option. No compilation occurs.|  
   
 ## Language  
   
-|||  
-|-|-|  
 |Option|Purpose|  
+|---|---|  
 |[/langversion](../../../visual-basic/reference/command-line-compiler/langversion.md)|Specify language version: 9&#124;9.0&#124;10&#124;10.0&#124;11&#124;11.0.|  
 |[/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)|Enforces explicit declaration of variables.|  
 |[/optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)|Enforces strict type semantics.|  
@@ -115,16 +108,14 @@ The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/v
   
 ## Preprocessor  
   
-|||  
-|-|-|  
 |Option|Purpose|  
+|---|---|  
 |[/define](../../../visual-basic/reference/command-line-compiler/define.md)|Defines symbols for conditional compilation.|  
   
 ## Resources  
   
-|||  
-|-|-|  
 |Option|Purpose|  
+|---|---|  
 |[/linkresource](../../../visual-basic/reference/command-line-compiler/linkresource.md)|Creates a link to a managed resource.|  
 |[/resource](../../../visual-basic/reference/command-line-compiler/resource.md)|Embeds a managed resource in an assembly.|  
 |[/win32icon](../../../visual-basic/reference/command-line-compiler/win32icon.md)|Inserts an .ico file into the output file.|  
@@ -132,9 +123,8 @@ The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/v
   
 ## Miscellaneous  
   
-|||  
-|-|-|  
 |Option|Purpose|  
+|---|---|  
 |[@ (Specify Response File)](../../../visual-basic/reference/command-line-compiler/specify-response-file.md)|Specifies a response file.|  
 |[/baseaddress](../../../visual-basic/reference/command-line-compiler/baseaddress.md)|Specifies the base address of a DLL.|  
 |[/codepage](../../../visual-basic/reference/command-line-compiler/codepage.md)|Specifies the code page to use for all source code files in the compilation.|  

@@ -49,4 +49,4 @@ The following example uses pointers to copy bytes from one array to another.
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)   
  [/unsafe (C# Compiler Options)](../../../csharp/language-reference/compiler-options/unsafe-compiler-option.md)   
- [Garbage Collection](../Topic/Garbage%20Collection.md)
+ [Garbage Collection](../../../standard/garbagecollection/index.md)

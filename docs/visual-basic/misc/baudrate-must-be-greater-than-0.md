@@ -33,7 +33,7 @@ translation.priority.mt:
 # BaudRate must be greater than 0
 The `BaudRate` argument specified for the `My.Computer.Ports.OpenSerialPort` method must be greater than zero.  
   
-### To correct this error  
+## To correct this error  
   
 -   Change the value of the `BaudRate` argument to a positive number.  
   

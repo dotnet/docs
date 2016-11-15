@@ -57,7 +57,7 @@ This page lists some common problems that can occur when you perform operations 
  Because of this imprecision, you cannot rely on exact results when you operate on floating-point values. In particular, two values that are theoretically equal might have slightly different representations.  
   
 | To compare floating-point quantities | 
-|-| 
+|---| 
 |1.  Calculate the absolute value of their difference by using the <xref:System.Math.Abs%2A> method of the <xref:System.Math> class in the <xref:System> namespace.<br />2.  Determine an acceptable maximum difference, such that you can consider the two quantities to be equal for practical purposes if their difference is no larger.<br />3.  Compare the absolute value of the difference to the acceptable difference.|  
   
  The following example demonstrates both incorrect and correct comparison of two `Double` values.  
@@ -72,7 +72,7 @@ This page lists some common problems that can occur when you perform operations 
  The [Decimal Data Type](../../../../visual-basic/language-reference/data-types/decimal-data-type.md) does not use floating-point representation. Many numbers that are inexact in `Single` and `Double` are exact in `Decimal` (for example 0.2 and 0.3). Although arithmetic is slower in `Decimal` than in floating-point, it might be worth the performance decrease to achieve better precision.  
   
 |To find the integer remainder of floating-point quantities|  
-|-|  
+|---|  
 |1.  Declare variables as `Decimal`.<br />2.  Use the literal type character `D` to force literals to `Decimal`, in case their values are too large for the `Long` data type.|  
   
  The following example demonstrates the potential imprecision of floating-point operands.  
@@ -106,7 +106,7 @@ This page lists some common problems that can occur when you perform operations 
  The `String` data type does not widen to the [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md). This means that if you want to assign a literal to a `Char` variable, you must either make a narrowing conversion or force the literal to the `Char` type.  
 
 |To create a Char literal to assign to a variable or constant|
-|-|  
+|---|  
 |1.  Declare the variable or constant as `Char`.<br />2.  Enclose the character value in quotation marks (`" "`).<br />3.  Follow the closing double quotation mark with the literal type character `C` to force the literal to `Char`. This is necessary if the type checking switch ([Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)) is `On`, and it is desirable in any case.|  
   
  The following example demonstrates both unsuccessful and successful assignments of a literal to a `Char` variable.  

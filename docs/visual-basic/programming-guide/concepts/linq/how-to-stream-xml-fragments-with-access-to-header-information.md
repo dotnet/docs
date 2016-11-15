@@ -85,7 +85,7 @@ Sometimes you have to read arbitrarily large XML files, and write your applicati
   
  The following example shows how to implement and use a custom axis method that streams XML fragments from the file specified by the URI. This custom axis is specifically written such that it expects a document that has `Customer`, `Name`, and `Item` elements, and that those elements will be arranged as in the above `Source.xml` document. It is a simplistic implementation. A more robust implementation would be prepared to parse an invalid document.  
   
-```vb#  
+```vb  
 Module Module1  
   
     Sub Main()  

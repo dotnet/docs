@@ -99,8 +99,8 @@ Dim someDateAndTime As Date = #8/13/2002 12:14 PM#
 ## See Also  
  <xref:System.DateTime?displayProperty=fullName>   
  [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md)   
- [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md)   
+ [Standard Date and Time Format Strings](http://msdn.microsoft.com/library/bb79761a-ca08-44ee-b142-b06b3e2fc22b)   
+ [Custom Date and Time Format Strings](http://msdn.microsoft.com/library/98b374e3-0cc2-4c78-ab44-efb671d71984)   
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
  [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)   
  [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

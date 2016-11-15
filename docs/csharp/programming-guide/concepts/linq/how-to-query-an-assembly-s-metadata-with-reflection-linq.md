@@ -22,7 +22,7 @@ The following example shows how LINQ can be used with reflection to retrieve spe
   
 ## Example  
   
-```c#  
+```cs  
 using System.Reflection;  
 using System.IO;  
 namespace LINQReflection  

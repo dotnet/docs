@@ -48,7 +48,7 @@ You can programmatically create a folder on your computer, create a subfolder, c
   
 -   Specify a non-random file name.  
   
-    ```c#  
+    ```cs  
     // Comment out the following line.  
     //string fileName = System.IO.Path.GetRandomFileName();  
   
@@ -59,7 +59,7 @@ You can programmatically create a folder on your computer, create a subfolder, c
   
 -   Replace the `if`-`else` statement with the `using` statement in the following code.  
   
-    ```c#  
+    ```cs  
     using (System.IO.FileStream fs = new System.IO.FileStream(pathString, FileMode.Append))   
     {  
         for (byte i = 0; i < 100; i++)  

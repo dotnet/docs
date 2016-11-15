@@ -25,7 +25,7 @@ This topic shows how to find a particular element that has a child element with 
   
  This example uses the following XML document: [Sample XML File: Test Configuration (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md).  
   
-```c#  
+```cs  
 XElement root = XElement.Load("TestConfig.xml");  
 IEnumerable<XElement> tests =  
     from el in root.Elements("Test")  
@@ -47,7 +47,7 @@ foreach (XElement el in tests)
   
  This example uses the following XML document: [Sample XML File: Test Configuration in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-test-configuration-in-a-namespace1.md).  
   
-```c#  
+```cs  
 XElement root = XElement.Load("TestConfigInNamespace.xml");  
 XNamespace ad = "http://www.adatum.com";  
 IEnumerable<XElement> tests =  

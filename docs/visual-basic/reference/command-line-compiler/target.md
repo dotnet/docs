@@ -58,7 +58,7 @@ Specifies the format of compiler output.
   
  Unless you specify `/target:module`, `/target` causes a [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] assembly manifest to be added to an output file.  
   
- Each instance of Vbc.exe produces, at most, one output file. If you specify a compiler option such as `/out` or `/target` more than one time, the last one the compiler processes is put into effect. Information about all files in a compilation is added to the manifest. All output files except those created with `/target:module` contain assembly metadata in the manifest. Use [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to view the metadata in an output file.  
+ Each instance of Vbc.exe produces, at most, one output file. If you specify a compiler option such as `/out` or `/target` more than one time, the last one the compiler processes is put into effect. Information about all files in a compilation is added to the manifest. All output files except those created with `/target:module` contain assembly metadata in the manifest. Use [Ildasm.exe (IL Disassembler)](https://msdn.microsoft.com/library/f7dy01k1) to view the metadata in an output file.  
   
  The short form of `/target` is `/t`.  
   
@@ -84,5 +84,5 @@ vbc /target:library in.vb
  [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)   
  [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)   
  [/moduleassemblyname](../../../visual-basic/reference/command-line-compiler/moduleassemblyname.md)   
- [Assemblies and the Global Assembly Cache](../Topic/Assemblies%20and%20the%20Global%20Assembly%20Cache%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

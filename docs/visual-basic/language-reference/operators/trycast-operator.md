@@ -50,9 +50,8 @@ Introduces a type conversion operation that does not throw an exception.
 ## Conversion Keywords  
  A comparison of the type conversion keywords is as follows.  
   
-|||||  
-|-|-|-|-|  
 |Keyword|Data types|Argument relationship|Run-time failure|  
+|---|---|---|---|  
 |[CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)|Any data types|Widening or narrowing conversion must be defined between the two data types|Throws <xref:System.InvalidCastException>|  
 |[DirectCast Operator](../../../visual-basic/language-reference/operators/directcast-operator.md)|Any data types|One type must inherit from or implement the other type|Throws <xref:System.InvalidCastException>|  
 |`TryCast`|Reference types only|One type must inherit from or implement the other type|Returns [Nothing](../../../visual-basic/language-reference/nothing.md)|  

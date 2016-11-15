@@ -85,7 +85,7 @@ Sometimes you have to transform large XML files, and write your application so t
 </Root>  
 ```  
   
-```c#  
+```cs  
 static IEnumerable<XElement> StreamCustomerItem(string uri)  
 {  
     using (XmlReader reader = XmlReader.Create(uri))  
@@ -212,7 +212,7 @@ static void Main(string[] args)
   
  Using <xref:System.Xml.Linq.XStreamingElement> for streaming the output XML is preferred over writing to an <xref:System.Xml.XmlWriter>.  
   
-```c#  
+```cs  
 static IEnumerable<XElement> StreamCustomerItem(string uri)  
 {  
     using (XmlReader reader = XmlReader.Create(uri))  

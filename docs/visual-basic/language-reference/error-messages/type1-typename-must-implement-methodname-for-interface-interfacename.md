@@ -41,7 +41,7 @@ A class or structure claims to implement an interface but does not implement a p
   
  **Error ID:** BC30149  
   
-### To correct this error  
+## To correct this error  
   
 1.  Declare a procedure with the same name and signature as defined in the interface. Be sure to include at least the `End Function` or `End Sub` statement.  
   

@@ -28,7 +28,7 @@ This topic shows how to parse a string to create an XML tree in C#.
 ## Example  
  The following C# code shows how to parse a string.  
   
-```c#  
+```cs  
 XElement contacts = XElement.Parse(  
     @"<Contacts>  
         <Contact>  

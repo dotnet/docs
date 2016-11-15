@@ -42,7 +42,7 @@ An error occurred while trying to access the specified file. Among the possible 
   
 -   A statement refers to a file name or number that is not valid.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Make sure the file name is specified in a `FileOpen` statement. Note that if you invoked the `FileClose` statement without arguments, you may have inadvertently closed all open files.  
   

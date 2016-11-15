@@ -37,7 +37,7 @@ All field widths, except the last element, must be greater than zero. A field wi
   
  The operation has failed because a field width other than the last element is set to zero or less. A field width less than or equal to zero can be used as the last element to indicate that the last field is of variable length, but it cannot be used as any other element.  
   
-### To correct this error  
+## To correct this error  
   
 -   Set the field width to the correct length.  
   

@@ -51,11 +51,11 @@ In addition to the core user interface features that Visual Studio provides, the
  Describes your options for compiling and running from within the development environment.  
   
 ## Reference  
- [Default Keyboard Shortcuts](/visual-studio/ide/default-keyboard-shortcuts-in-visual-studio)  
+ [Default Keyboard Shortcuts](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  
  Describes the default keyboard shortcut combinations that you can use to perform actions without using a mouse.  
   
- [Edit and Continue (Visual Basic)](/visual-studio/debugger/edit-and-continue-visual-basic)  
+ [Edit and Continue (Visual Basic)](/visualstudio/debugger/edit-and-continue-visual-basic)  
  Discusses the debugging feature that enables you to make changes to your code while it is executing in Break mode.  
   
- [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic)  
+ [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic)  
  Describes how you can turn warnings off or have warnings treated as error messages.

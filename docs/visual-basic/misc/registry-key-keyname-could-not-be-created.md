@@ -35,7 +35,7 @@ translation.priority.mt:
 # Registry key &#39;&lt;keyname&gt;&#39; could not be created
 The specified registry key could not be created, possibly because of insufficient security permissions.  
   
-### To correct this error  
+## To correct this error  
   
 -   Ensure that you have sufficient security permissions to access the key.  
   

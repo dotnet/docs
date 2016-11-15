@@ -58,10 +58,10 @@ This section provides links to reference information about various aspects of [!
  This namespace provides a component that enables you to print a facsimile of the form as it appears on screen.  
   
 ## Related Sections  
- [General User Interface Elements (Visual Studio)](/visual-studio/ide/reference/general-user-interface-elements-visual-studio)  
+ [General User Interface Elements (Visual Studio)](/visualstudio/ide/reference/general-user-interface-elements-visual-studio)  
  Contains topics for dialog boxes and windows used in [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
   
- [XML Tools in Visual Studio](/visual-studio/xml-tools/xml-tools-in-visual-studio)  
+ [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
  Provides links to topics on various XML tools available in [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
   
  [Automation and Extensibility Reference](../Topic/Automation%20and%20Extensibility%20Reference.md)  

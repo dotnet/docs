@@ -35,7 +35,7 @@ translation.priority.mt:
 # User interrupt occurred
 A user pressed CTRL+BREAK or another interrupt key.  
   
-### To correct this error  
+## To correct this error  
   
 -   Retry the operation.  
   

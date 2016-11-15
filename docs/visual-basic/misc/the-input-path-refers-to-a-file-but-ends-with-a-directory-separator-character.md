@@ -33,7 +33,7 @@ translation.priority.mt:
 # The input path refers to a file but ends with a directory separator character
 An operation was attempted requiring that a filename be supplied, but the supplied name ends with a directory separator character (`\`). This may be the result of an incorrectly parsed file path.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check the file path you supplied to ensure it is correct.  
   

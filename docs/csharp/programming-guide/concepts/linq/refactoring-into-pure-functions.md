@@ -39,7 +39,7 @@ An important aspect of pure functional transformations is learning how to refact
 ### Non-Pure Function that Changes a Class Member  
  In the following code, the `HypenatedConcat` function is not a pure function, because it modifies the `aMember` data member in the class:  
   
-```c#  
+```cs  
 public class Program  
 {  
     private static string aMember = "StringOne";  
@@ -68,7 +68,7 @@ StringOne-StringTwo
 ### Non-Pure Function that Changes an Argument  
  Furthermore, the following version of this same function is not pure because it modifies the contents of its parameter, `sb`.  
   
-```c#  
+```cs  
 public class Program  
 {  
     public static void HypenatedConcat(StringBuilder sb, String appendStr)  
@@ -93,7 +93,7 @@ public class Program
 ### Pure Function  
  This next version of the program hows how to implement the `HypenatedConcat` function as a pure function.  
   
-```c#  
+```cs  
 class Program  
 {  
     public static string HyphenatedConcat(string s, string appendStr)  

@@ -35,11 +35,11 @@ translation.priority.mt:
 # This system does not contain support for the Traditional Chinese locale
 You attempted to use the `VbStrConv.TraditionalChinese` enumeration member, but your system does not support the Traditional Chinese locale.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Upgrade the machine to support the Traditional Chinese locale, or run the application on a machine that supports the locale.  
   
 ## See Also  
  <xref:System.Globalization>   
  [NOTINBUILD VbStrConv Enumeration](http://msdn.microsoft.com/en-us/59f83dd9-6361-47df-a836-02ba9d4cb936)   
- [Introduction to International Applications Based on the .NET Framework](/visual-studio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+ [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

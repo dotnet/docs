@@ -32,7 +32,7 @@ You can extend the set of methods that you can use for LINQ queries by adding ex
   
  The following code example shows how to create an extension method called `Median` to compute a median for a sequence of numbers of type `double`.  
   
-```c#  
+```cs  
 public static class LINQExtension  
 {  
     public static double Median(this IEnumerable<double> source)  
@@ -85,7 +85,7 @@ public static class LINQExtension
   
  The following code shows an overload of the `Median` method that takes the <xref:System.Func%602> delegate as a parameter. This delegate takes an object of generic type T and returns an object of type `double`.  
   
-```c#  
+```cs  
 // Generic overload.  
   
 public static double Median<T>(this IEnumerable<T> numbers,  
@@ -108,7 +108,7 @@ public static double Median<T>(this IEnumerable<T> numbers,
 <CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
  You can call this extension method for any enumerable collection just as you would call other methods from the <xref:System.Collections.Generic.IEnumerable%601> interface, as shown in the following code:  
   
-```c#  
+```cs  
 string[] strings = { "a", "b", "c", "d", "e" };  
   
 var query = strings.AlternateElements();  

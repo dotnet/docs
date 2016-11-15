@@ -27,7 +27,7 @@ In C#, covariance and contravariance enable implicit reference conversion for ar
   
  The following code demonstrates the difference between assignment compatibility, covariance, and contravariance.  
   
-```c#  
+```cs  
 // Assignment compatibility.   
 string str = "test";  
 // An object of a more derived type is assigned to an object of a less derived type.   
@@ -52,7 +52,7 @@ Action<string> actString = actObject;
   
  Covariance for arrays enables implicit conversion of an array of a more derived type to an array of a less derived type. But this operation is not type safe, as shown in the following code example.  
   
-```c#  
+```cs  
 object[] array = new String[10];  
 // The following statement produces a run-time exception.  
 // array[0] = 10;  
@@ -62,7 +62,7 @@ object[] array = new String[10];
   
  The following code example shows covariance and contravariance support for method groups.  
   
-```c#  
+```cs  
 static object GetObject() { return null; }  
 static void SetObject(object obj) { }  
   
@@ -85,7 +85,7 @@ static void Test()
   
  The following code example shows implicit reference conversion for generic interfaces.  
   
-```c#  
+```cs  
 IEnumerable<String> strings = new List<String>();  
 IEnumerable<Object> objects = strings;  
 ```  

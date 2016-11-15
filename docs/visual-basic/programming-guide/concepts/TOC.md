@@ -1,6 +1,0 @@
-# [Iterators (Visual Basic)](iterators.md)
-# [Reflection (Visual Basic)](reflection.md)
-# [Programming Concepts (Visual Basic)](index.md)
-# [Collections (Visual Basic)](collections.md)
-# [Object-Oriented Programming (Visual Basic)](object-oriented-programming.md)
-# [Caller Information (Visual Basic)](caller-information.md)

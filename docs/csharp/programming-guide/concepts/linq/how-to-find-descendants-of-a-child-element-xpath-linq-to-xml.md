@@ -27,7 +27,7 @@ This topic shows how to get the descendant elements of a child element with a pa
 ## Example  
  This example simulates the problems of extracting text from an XML representation of a word processing document. It first selects all `Paragraph` elements, and then it selects all `Text` descendant elements of each `Paragraph` element. This doesn't select the descendant `Text` elements of the `Comment` element.  
   
-```c#  
+```cs  
 XElement root = XElement.Parse(  
 @"<Root>  
   <Paragraph>  

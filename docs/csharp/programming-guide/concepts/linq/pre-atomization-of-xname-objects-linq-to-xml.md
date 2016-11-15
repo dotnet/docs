@@ -27,7 +27,7 @@ One way to improve performance in LINQ to XML is to pre-atomize <xref:System.Xml
 ## Example  
  The following example demonstrates this.  
   
-```c#  
+```cs  
 XName Root = "Root";  
 XName Data = "Data";  
 XName ID = "ID";  
@@ -59,7 +59,7 @@ Console.WriteLine(root);
   
  The following example shows the same technique where the XML document is in a namespace:  
   
-```c#  
+```cs  
 XNamespace aw = "http://www.adventure-works.com";  
 XName Root = aw + "Root";  
 XName Data = aw + "Data";  
@@ -93,7 +93,7 @@ Console.WriteLine(root);
   
  The following example is more similar to what you will likely encounter in the real world. In this example, the content of the element is supplied by a query:  
   
-```c#  
+```cs  
 XName Root = "Root";  
 XName Data = "Data";  
 XName ID = "ID";  
@@ -112,7 +112,7 @@ Console.WriteLine("Time to construct:{0}", t2 - t1);
   
  The previous example performs better than the following example, in which names are not pre-atomized:  
   
-```c#  
+```cs  
 DateTime t1 = DateTime.Now;  
 XElement root = new XElement("Root",  
     from i in System.Linq.Enumerable.Range(1, 100000)  

@@ -33,7 +33,7 @@ translation.priority.mt:
 # &#39;ReDim&#39; Preserve operand cannot be Nothing
 A `ReDim` statement attempts to use the `Preserve` keyword to change a dimension of an array that is not the last dimension, but does not supply a valid value for its operand.  
   
-### To correct this error  
+## To correct this error  
   
 -   Change the `Preserve` operand to a valid value.  
   

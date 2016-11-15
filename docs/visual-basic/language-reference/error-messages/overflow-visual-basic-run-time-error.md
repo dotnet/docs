@@ -36,7 +36,7 @@ translation.priority.ht:
 # Overflow (Visual Basic Run-Time Error)
 An overflow results when you attempt an assignment that exceeds the limits of the assignment's target.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Make sure that results of assignments, calculations, and data type conversions are not too large to be represented within the range of variables allowed for that type of value, and assign the value to a variable of a type that can hold a larger range of values, if necessary.  
   

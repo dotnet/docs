@@ -41,7 +41,7 @@ The name, or identifier, of every programming element is limited to 1023 charact
   
  **Error ID:** BC30033  
   
-### To correct this error  
+## To correct this error  
   
 -   Reduce the length of the identifier.  
   

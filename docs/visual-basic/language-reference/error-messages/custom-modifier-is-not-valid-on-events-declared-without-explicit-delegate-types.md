@@ -43,7 +43,7 @@ Unlike a non-custom event, a `Custom Event` declaration requires an `As` clause 
   
  **Error ID:** BC31122  
   
-### To correct this error  
+## To correct this error  
   
 1.  Define a delegate with the same parameter list as the custom event.  
   

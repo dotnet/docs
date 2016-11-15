@@ -42,7 +42,7 @@ Your call to a dynamic-link library (DLL) indicated to use a number instead of a
   
 -   A type library has an invalid declaration resulting in internal use of an invalid ordinal number.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Make sure the expression represents a valid number, or call the procedure by name.  
   

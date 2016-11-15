@@ -36,7 +36,7 @@ translation.priority.ht:
 # Path/File access error
 During a file-access or disk-access operation, the operating system could not make a connection between the path and the file name.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Make sure the file specification is correctly formatted. A file name can contain a fully qualified (absolute) or relative path. A fully qualified path starts with the drive name (if the path is on another drive) and lists the explicit path from the root to the file. Any path that is not fully qualified is relative to the current drive and directory.  
   

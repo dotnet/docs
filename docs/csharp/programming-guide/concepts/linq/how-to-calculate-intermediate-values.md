@@ -25,7 +25,7 @@ This example shows how to calculate intermediate values that can be used in sort
   
  This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md).  
   
-```c#  
+```cs  
 XElement root = XElement.Load("Data.xml");  
 IEnumerable<decimal> extensions =  
     from el in root.Elements("Data")  
@@ -52,7 +52,7 @@ foreach (decimal ex in extensions)
   
  This example uses the following XML document: [Sample XML File: Numerical Data in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-numerical-data-in-a-namespace.md).  
   
-```c#  
+```cs  
 XElement root = XElement.Load("DataInNamespace.xml");  
 XNamespace ad = "http://www.adatum.com";  
 IEnumerable<decimal> extensions =  

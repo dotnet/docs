@@ -33,7 +33,7 @@ translation.priority.mt:
 # The path has not been set
 A file operation, such as moving or copying a file, has been attempted without supplying the necessary path. This may result from incorrectly parsing the path.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check that the file path has been supplied and is correct.  
   

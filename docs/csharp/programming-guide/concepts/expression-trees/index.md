@@ -62,7 +62,7 @@ Expression trees represent code in a tree-like data structure, where each node i
   
  The following code example demonstrates how to compile an expression tree and run the resulting code.  
   
-```c#  
+```cs  
 // Creating an expression tree.  
 Expression<Func<int, bool>> expr = num => num < 5;  
   

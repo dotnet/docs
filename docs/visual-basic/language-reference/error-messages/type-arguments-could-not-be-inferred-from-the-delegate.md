@@ -43,7 +43,7 @@ An assignment statement uses `AddressOf` to assign the address of a generic proc
   
  **Error ID:** BC36564  
   
-### To correct this error  
+## To correct this error  
   
 -   Specify the type arguments for the generic procedure in the `AddressOf` expression.  
   
@@ -52,4 +52,4 @@ An assignment statement uses `AddressOf` to assign the address of a generic proc
  [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)   
  [Generic Procedures in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md)   
  [Type List](../../../visual-basic/language-reference/statements/type-list.md)   
- [Extension Methods](../../../visual-basic/language-reference/procedures/extension-methods.md)
+ [Extension Methods](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)

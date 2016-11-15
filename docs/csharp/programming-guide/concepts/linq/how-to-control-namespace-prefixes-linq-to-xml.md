@@ -1,5 +1,5 @@
 ---
-title: "How to: Control Namespace Prefixes (C#) (LINQ to XML)2 | Microsoft Docs"
+title: "How to: Control Namespace Prefixes (C#) (LINQ to XML) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,7 +40,7 @@ This topic describes how you can control namespace prefixes when serializing an 
 ## Example  
  This example declares two namespaces. It specifies that the `http://www.adventure-works.com` namespace has the prefix of `aw`, and that the `www.fourthcoffee.com` namespace has the prefix of `fc`.  
   
-```c#  
+```cs  
 XNamespace aw = "http://www.adventure-works.com";  
 XNamespace fc = "www.fourthcoffee.com";  
 XElement root = new XElement(aw + "Root",  

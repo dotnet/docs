@@ -46,9 +46,8 @@ Causes the compiler to treat the first occurrence of a warning as an error.
   
 ## Arguments  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |+ &#124; -|Optional. By default, `/warnaserror-` is in effect; warnings do not prevent the compiler from producing an output file. The `/warnaserror` option, which is the same as `/warnaserror+`, causes warnings to be treated as errors.|  
 |`numberList`|Optional. Comma-delimited list of the warning ID numbers to which the `/warnaserror` option applies. If no warning ID is specified, the `/warnaserror` option applies to all warnings.|  
   
@@ -62,14 +61,12 @@ Causes the compiler to treat the first occurrence of a warning as an error.
 > [!NOTE]
 >  The `/warnaserror` option does not control how warnings are displayed. Use the [/nowarn](../../../visual-basic/reference/command-line-compiler/nowarn.md) option to disable warnings.  
   
-||  
-|-|  
 |To set /warnaserror to treat all warnings as errors in the Visual Studio IDE|  
+|---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **Compile** tab.<br />3.  Make sure the **Disable all warnings** check box is unchecked.<br />4.  Check the **Treat all warnings as errors** check box.|  
   
-||  
-|-|  
 |To set /warnaserror to treat specific warnings as errors in the Visual Studio IDE|  
+|---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.<br />2.  Click the **Compile** tab.<br />3.  Make sure the **Disable all warnings** check box is unchecked.<br />4.  Make sure the **Treat all warnings as errors** check box is unchecked.<br />5.  Select **Error** from the **Notification** column adjacent to the warning that should be treated as an error.|  
   
 ## Example  
@@ -89,4 +86,4 @@ vbc /warnaserror:42024 t2.vb
 ## See Also  
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
- [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic)
+ [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic)

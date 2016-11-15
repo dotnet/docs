@@ -57,7 +57,7 @@ End Class
   
  **Error ID:** BC30369  
   
-### To correct this error  
+## To correct this error  
   
 1.  Decide whether you want the member to be shared among all instances of the class, or kept individual for each instance.  
   

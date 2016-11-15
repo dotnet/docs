@@ -33,7 +33,7 @@ This is the final topic in the [Tutorial: Chaining Queries Together (C#)](../../
   
  All of the examples in this section that are querying Office Open XML documents use the same principle. Deferred execution and lazy evaluation are some of the fundamental concepts that you must understand  to use LINQ (and LINQ to XML) effectively.  
   
-```c#  
+```cs  
 public static class LocalExtensions  
 {  
     public static IEnumerable<string>  

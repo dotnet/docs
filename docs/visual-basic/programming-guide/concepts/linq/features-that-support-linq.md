@@ -89,7 +89,7 @@ The name [!INCLUDE[vbteclinqext](../../../../csharp/getting-started/includes/vbt
   
  [!code-vb[VbLINQVbFeatures#7](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/features-that-support-linq_7.vb)]  
   
- For more information, see [Extension Methods](../../../../visual-basic/language-reference/procedures/extension-methods.md).  
+ For more information, see [Extension Methods](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md).  
   
 ## Lambda Expressions  
  A lambda expression is a function without a name that calculates and returns a single value. Unlike named functions, a lambda expression can be defined and executed at the same time. The following example displays 4.  
@@ -114,7 +114,7 @@ The name [!INCLUDE[vbteclinqext](../../../../csharp/getting-started/includes/vbt
   
  [!code-vb[VbLINQVbFeatures#11](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/features-that-support-linq_12.vb)]  
   
- For more information, see [Lambda Expressions](../../../../visual-basic/language-reference/procedures/lambda-expressions.md).  
+ For more information, see [Lambda Expressions](../../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
 ## See Also  
  [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)   

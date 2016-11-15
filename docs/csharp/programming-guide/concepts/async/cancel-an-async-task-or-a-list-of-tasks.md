@@ -59,7 +59,7 @@ You can set up a button that you can use to cancel an async application if you d
   
 1.  Declare a `CancellationTokenSource` variable, `cts`, that’s in scope for all methods that access it.  
   
-    ```c#  
+    ```cs  
     public partial class MainWindow : Window  
     {  
         // ***Declare a System.Threading.CancellationTokenSource.  
@@ -68,7 +68,7 @@ You can set up a button that you can use to cancel an async application if you d
   
 2.  Add the following event handler for the **Cancel** button. The event handler uses the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName> method to notify `cts` when the user requests cancellation.  
   
-    ```c#  
+    ```cs  
     // ***Add an event handler for the Cancel button.  
     private void cancelButton_Click(object sender, RoutedEventArgs e)  
     {  
@@ -83,14 +83,14 @@ You can set up a button that you can use to cancel an async application if you d
   
     -   Instantiate the `CancellationTokenSource`, `cts`.  
   
-        ```c#  
+        ```cs  
         // ***Instantiate the CancellationTokenSource.  
         cts = new CancellationTokenSource();  
         ```  
   
     -   In the call to `AccessTheWebAsync`, which downloads the contents of a specified website, send the <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=fullName> property of `cts` as an argument. The `Token` property propagates the message if cancellation is requested. Add a catch block that displays a message if the user chooses to cancel the download operation. The following code shows the changes.  
   
-        ```c#  
+        ```cs  
         try  
         {  
             // ***Send a token to carry the message if cancellation is requested.  
@@ -113,7 +113,7 @@ You can set up a button that you can use to cancel an async application if you d
   
      The following code shows the changes in `AccessTheWebAsync`.  
   
-    ```c#  
+    ```cs  
     // ***Provide a parameter for the CancellationToken.  
     async Task<int> AccessTheWebAsync(CancellationToken ct)  
     {  
@@ -127,7 +127,7 @@ You can set up a button that you can use to cancel an async application if you d
   
         // GetAsync returns a Task<HttpResponseMessage>.   
         // ***The ct argument carries the message if the Cancel button is chosen.  
-        HttpResponseMessage response = await client.GetAsync("http://msdn.microsoft.com/en-us/library/dd470362.aspx", ct);  
+        HttpResponseMessage response = await client.GetAsync("http://msdn.microsoft.com/library/dd470362.aspx", ct);  
   
         // Retrieve the website contents from the HttpResponseMessage.  
         byte[] urlContents = await response.Content.ReadAsByteArrayAsync();  
@@ -176,19 +176,19 @@ You can set up a button that you can use to cancel an async application if you d
   
 1.  Add a method to create a list of web addresses.  
   
-    ```c#  
+    ```cs  
     // ***Add a method that creates a list of web addresses.  
     private List<string> SetUpURLList()  
     {  
         List<string> urls = new List<string>   
         {   
             "http://msdn.microsoft.com",  
-            "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
-            "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
-            "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
-            "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
-            "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
-            "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
+            "http://msdn.microsoft.com/library/hh290138.aspx",  
+            "http://msdn.microsoft.com/library/hh290140.aspx",  
+            "http://msdn.microsoft.com/library/dd470362.aspx",  
+            "http://msdn.microsoft.com/library/aa578028.aspx",  
+            "http://msdn.microsoft.com/library/ms404677.aspx",  
+            "http://msdn.microsoft.com/library/ff730837.aspx"  
         };  
         return urls;  
     }  
@@ -196,14 +196,14 @@ You can set up a button that you can use to cancel an async application if you d
   
 2.  Call the method in `AccessTheWebAsync`.  
   
-    ```c#  
+    ```cs  
     // ***Call SetUpURLList to make a list of web addresses.  
     List<string> urlList = SetUpURLList();  
     ```  
   
 3.  Add the following loop in `AccessTheWebAsync` to process each web address in the list.  
   
-    ```c#  
+    ```cs  
     // ***Add a loop to process the list of web addresses.  
     foreach (var url in urlList)  
     {  
@@ -225,7 +225,7 @@ You can set up a button that you can use to cancel an async application if you d
 <CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
      Call the method from `startButton_Click` by using a statement instead of an expression.  
   
-    ```c#  
+    ```cs  
     await AccessTheWebAsync(cts.Token);  
     ```  
   
@@ -272,7 +272,7 @@ You can set up a button that you can use to cancel an async application if you d
 ### Cancel a Task Example  
  The following code is the complete MainWindow.xaml.cs file for the example that cancels a single task.  
   
-```c#  
+```cs  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -356,7 +356,7 @@ namespace CancelATask
   
             // GetAsync returns a Task<HttpResponseMessage>.   
             // ***The ct argument carries the message if the Cancel button is chosen.  
-            HttpResponseMessage response = await client.GetAsync("http://msdn.microsoft.com/en-us/library/dd470362.aspx", ct);  
+            HttpResponseMessage response = await client.GetAsync("http://msdn.microsoft.com/library/dd470362.aspx", ct);  
   
             // Retrieve the website contents from the HttpResponseMessage.  
             byte[] urlContents = await response.Content.ReadAsByteArrayAsync();  
@@ -383,7 +383,7 @@ namespace CancelATask
 ### Cancel a List of Tasks Example  
  The following code is the complete MainWindow.xaml.cs file for the example that cancels a list of tasks.  
   
-```c#  
+```cs  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -484,12 +484,12 @@ namespace CancelAListOfTasks
             List<string> urls = new List<string>   
             {   
                 "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
+                "http://msdn.microsoft.com/library/hh290138.aspx",  
+                "http://msdn.microsoft.com/library/hh290140.aspx",  
+                "http://msdn.microsoft.com/library/dd470362.aspx",  
+                "http://msdn.microsoft.com/library/aa578028.aspx",  
+                "http://msdn.microsoft.com/library/ms404677.aspx",  
+                "http://msdn.microsoft.com/library/ff730837.aspx"  
             };  
             return urls;  
         }  

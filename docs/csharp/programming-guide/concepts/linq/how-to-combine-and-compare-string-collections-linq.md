@@ -59,7 +59,7 @@ This example shows how to merge files that contain lines of text and then sort t
   
 ## Example  
   
-```c#  
+```cs  
 class MergeStrings  
     {  
         static void Main(string[] args)  

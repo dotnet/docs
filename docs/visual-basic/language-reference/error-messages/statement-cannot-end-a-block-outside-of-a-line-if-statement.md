@@ -41,7 +41,7 @@ A single-line `If` statement contains several statements separated by colons (:)
   
  **Error ID:** BC32005  
   
-### To correct this error  
+## To correct this error  
   
 -   Move the single-line `If` statement outside the control block that contains the `End If` statement.  
   

@@ -41,7 +41,7 @@ A variable declared with the `Shared` modifier is a shared variable. A shared va
   
  **Error ID:** BC30594  
   
-### To correct this error  
+## To correct this error  
   
 -   Declare your event handler `Shared`.  
   

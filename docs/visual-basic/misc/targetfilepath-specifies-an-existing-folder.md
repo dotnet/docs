@@ -33,7 +33,7 @@ translation.priority.mt:
 # TargetFilePath specifies an existing folder
 The parameter `TargetFilePath` specifies an existing directory but must specify the new directory's name.  
   
-### To correct this error  
+## To correct this error  
   
 -   Change `TargetFilePath` to specify a new, rather than existing, directory.  
   

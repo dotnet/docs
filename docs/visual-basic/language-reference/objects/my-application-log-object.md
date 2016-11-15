@@ -43,7 +43,7 @@ Provides a property and methods to write event and exception information to the 
  For more information, see [Logging Information from the Application](../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md).  
   
 > [!NOTE]
->  You can also use classes in the .NET Framework to log information from your application. For more information, see [Tracing and Instrumenting Applications](../Topic/Tracing%20and%20Instrumenting%20Applications.md).  
+>  You can also use classes in the .NET Framework to log information from your application. For more information, see [Tracing and Instrumenting Applications](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743).  
   
 ## Requirements  
  **Namespace:** <xref:Microsoft.VisualBasic.Logging>  

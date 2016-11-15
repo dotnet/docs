@@ -41,11 +41,11 @@ An optional argument in a procedure declaration is followed by a required argume
   
  **Error ID:** BC30202  
   
-### To correct this error  
+## To correct this error  
   
 1.  If the argument is intended to be required, move it to precede the first optional argument in the argument list.  
   
 2.  If the argument is intended to be optional, use the `Optional` keyword.  
   
 ## See Also  
- [Optional Parameters](../../../visual-basic/language-reference/procedures/optional-parameters.md)
+ [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)

@@ -25,7 +25,7 @@ This topic introduces the extension methods that enable you to query an XML tree
 ## Example  
  The following example creates a small XML tree and uses <xref:System.Xml.XPath.Extensions.XPathSelectElements%2A> to select a set of elements.  
   
-```c#  
+```cs  
 XElement root = new XElement("Root",  
     new XElement("Child1", 1),  
     new XElement("Child1", 2),  

@@ -33,7 +33,7 @@ translation.priority.mt:
 # You must specify a name
 When performing file operations such as renaming a file, you must specify the name.  
   
-### To correct this error  
+## To correct this error  
   
 -   Specify the name.  
   

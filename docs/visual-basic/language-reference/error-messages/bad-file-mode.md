@@ -44,7 +44,7 @@ Statements used in manipulating file contents must be appropriate to the mode in
   
 -   An attempt to write to a read-only file.  
   
-### To correct this error  
+## To correct this error  
   
 -   Make sure `FilePutObject` and `FileGetObject` are only referring to files open for `Random` or `Binary` access.  
   

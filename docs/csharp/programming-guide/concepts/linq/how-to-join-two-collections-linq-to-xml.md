@@ -41,7 +41,7 @@ An element or attribute in an XML document can sometimes refer to another elemen
   
  Note that joining in this fashion will not perform very well. Joins are performed via a linear search. There are no hash tables or indexes to help with performance.  
   
-```c#  
+```cs  
 XmlSchemaSet schemas = new XmlSchemaSet();  
 schemas.Add("", "CustomersOrders.xsd");  
   

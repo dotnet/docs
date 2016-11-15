@@ -35,7 +35,7 @@ translation.priority.mt:
 # Argument &#39;&lt;argumentname&gt;&#39; cannot be converted to type &#39;&lt;typename&gt;&#39;
 A conversion attempts to change an argument to a type that is not valid.  
   
-### To correct this error  
+## To correct this error  
   
 -   Change the type to one that is valid.  
   

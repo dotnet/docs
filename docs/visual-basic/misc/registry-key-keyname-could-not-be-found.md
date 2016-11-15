@@ -33,7 +33,7 @@ translation.priority.mt:
 # Registry key &#39;&lt;keyname&gt;&#39; could not be found
 A registry key cannot be found.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the spelling of the key name.  
   

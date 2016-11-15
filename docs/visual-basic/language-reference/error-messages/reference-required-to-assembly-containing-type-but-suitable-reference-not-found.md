@@ -46,15 +46,15 @@ An expression uses a type, such as a class, structure, interface, enumeration, o
   
  **Error ID:** BC30969  
   
-### To correct this error  
+## To correct this error  
   
 1.  Determine which project produces the best assembly for your project to reference. For this decision, you might use criteria such as ease of file access and frequency of updates.  
   
 2.  In your project properties, add a reference to the file that contains the assembly that defines the type you are using.  
   
 ## See Also  
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
  [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
- [Troubleshooting Broken References](/visual-studio/ide/troubleshooting-broken-references)
+ [Troubleshooting Broken References](/visualstudio/ide/troubleshooting-broken-references)

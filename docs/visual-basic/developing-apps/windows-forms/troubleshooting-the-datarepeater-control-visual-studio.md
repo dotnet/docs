@@ -48,11 +48,11 @@ This topic lists common issues that may occur when you are working with the <xre
   
  You can either move the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> lower than the <xref:System.Windows.Forms.BindingNavigator> control at design time, or add code resembling the following in the `Load` event handler.  
   
-```vb#  
+```vb  
 DataRepeater1.Top = ProductsBindingNavigator.Height  
 ```  
   
-```c#  
+```cs  
 dataRepeater1.Top = productsBindingNavigator.Height;  
 ```  
   

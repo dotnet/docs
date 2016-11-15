@@ -35,7 +35,7 @@ translation.priority.mt:
 # Unable to read delimited fields because a double quote is not a legal delimiter when EscapeQuotes is set to True
 The `TextFieldParser` cannot read from the file because a quotation mark (") has been supplied as the delimiter and `EscapeQuotes` is set to `True`.  
   
-### To correct this error  
+## To correct this error  
   
 -   Set `EscapeQuotes` to `False`.  
   

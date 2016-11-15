@@ -66,7 +66,7 @@ Sometimes it is helpful to list all nodes in a tree. This can be useful when lea
 /Root/aw:ElementInNamespace/aw:ChildInNamespace  
 ```  
   
-```c#  
+```cs  
 public static class MyExtensions  
 {  
     private static string GetQName(XElement xe)  

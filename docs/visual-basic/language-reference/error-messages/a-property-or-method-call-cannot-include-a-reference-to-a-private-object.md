@@ -45,7 +45,7 @@ Among the possible causes of this error are:
   
 -   A client attempted to assign a private object reference to a `ByRef` argument of an event it was handling.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Remove the reference.  
   

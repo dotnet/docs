@@ -41,7 +41,7 @@ translation.priority.ht:
   
  **Error ID:** BC30481  
   
-### To correct this error  
+## To correct this error  
   
 -   Locate and remove the unnecessary `Class` statement.  
   

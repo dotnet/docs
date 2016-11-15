@@ -33,7 +33,7 @@ translation.priority.mt:
 # An invalid name was specified for the event log
 An invalid name was specified for the event log. Usually this is a result of invalid characters in the name, a blank file name, or a file name that is too long.  
   
-### To correct this error  
+## To correct this error  
   
 -   If the specified name is more than eight characters, make sure there is no conflict with the names of other event logs. Only the first eight characters are evaluated when determining if the name is unique.  
   

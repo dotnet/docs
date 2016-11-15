@@ -33,7 +33,7 @@ translation.priority.mt:
 # Argument &#39;&lt;argumentname1&gt;&#39; must be less than or equal the length of argument &#39;&lt;argumentname2&gt;&#39;
 The length of a supplied argument exceeds the length of the argument it is replacing.  
   
-### To correct this error  
+## To correct this error  
   
 -   Make the length of the first argument less than or equal to the length of the second argument.  
   

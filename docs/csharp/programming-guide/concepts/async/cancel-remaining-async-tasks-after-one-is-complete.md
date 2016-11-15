@@ -56,7 +56,7 @@ By using the <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullNa
   
  In the MainWindow.xaml.cs file of the **CancelAListOfTasks** project, start the transition by moving the processing steps for each website from the loop in `AccessTheWebAsync` to the following async method.  
   
-```c#  
+```cs  
 / ***Bundle the processing steps for a website into one async method.  
 async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken ct)  
 {  
@@ -84,7 +84,7 @@ async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken
 <CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
 4.  Call `WhenAny` on the collection of tasks. `WhenAny` returns a `Task(Of Task(Of Integer))` or `Task<Task<int>>`.  That is, `WhenAny` returns a task that evaluates to a single `Task(Of Integer)` or `Task<int>` when it’s awaited. That single task is the first task in the collection to finish. The task that finished first is assigned to `firstFinishedTask`. The type of `firstFinishedTask` is <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer because that's the return type of `ProcessURLAsync`.  
   
-    ```c#  
+    ```cs  
     // ***Call WhenAny and then await the result. The task that finishes   
     // first is assigned to firstFinishedTask.  
     Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);  
@@ -92,14 +92,14 @@ async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken
   
 5.  In this example, you’re interested only in the task that finishes first. Therefore, use <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName> to cancel the remaining tasks.  
   
-    ```c#  
+    ```cs  
     // ***Cancel the rest of the downloads. You just want the first one.  
     cts.Cancel();  
     ```  
   
 6.  Finally, await `firstFinishedTask` to retrieve the length of the downloaded content.  
   
-    ```c#  
+    ```cs  
     var length = await firstFinishedTask;  
     resultsTextBox.Text += String.Format("\r\nLength of the downloaded website:  {0}\r\n", length);  
     ```  
@@ -113,7 +113,7 @@ async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken
   
  You can download the project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046).  
   
-```c#  
+```cs  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -243,12 +243,12 @@ namespace CancelAfterOneTask
             List<string> urls = new List<string>   
             {   
                 "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
+                "http://msdn.microsoft.com/library/hh290138.aspx",  
+                "http://msdn.microsoft.com/library/hh290140.aspx",  
+                "http://msdn.microsoft.com/library/dd470362.aspx",  
+                "http://msdn.microsoft.com/library/aa578028.aspx",  
+                "http://msdn.microsoft.com/library/ms404677.aspx",  
+                "http://msdn.microsoft.com/library/ff730837.aspx"  
             };  
             return urls;  
         }  

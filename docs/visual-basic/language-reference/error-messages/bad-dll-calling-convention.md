@@ -36,7 +36,7 @@ translation.priority.ht:
 # Bad DLL calling convention
 Arguments passed to a dynamic-link library (DLL) must exactly match those expected by the routine. Calling conventions deal with number, type, and order of arguments. Your program may be calling a routine in a DLL that is being passed the wrong type or number of arguments.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Make sure all argument types agree with those specified in the declaration of the routine that you are calling.  
   

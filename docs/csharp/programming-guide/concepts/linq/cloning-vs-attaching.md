@@ -28,7 +28,7 @@ When adding <xref:System.Xml.Linq.XNode> (including <xref:System.Xml.Linq.XEleme
 ## Example  
  The following code demonstrates the behavior when you add a parented element to a tree, and when you add an element with no parent to a tree.  
   
-```c#  
+```cs  
 // Create a tree with a child element.  
 XElement xmlTree1 = new XElement("Root",  
     new XElement("Child1", 1)  

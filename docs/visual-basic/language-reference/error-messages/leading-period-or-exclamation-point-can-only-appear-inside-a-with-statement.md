@@ -41,7 +41,7 @@ A period (.) or exclamation point (!) that is not inside a `With` block occurs w
   
  **Error ID:** BC30157  
   
-### To correct this error  
+## To correct this error  
   
 1.  Ensure that the `With` block is correctly formatted.  
   

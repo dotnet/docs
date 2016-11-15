@@ -42,9 +42,9 @@ The specified Clipboard format is incompatible with the method being executed. A
   
 -   Using the `DataObject``GetData` method or `SetData` method with a Clipboard format in the range reserved by Microsoft Windows for registered formats (&HC000-&HFFFF), when that Clipboard format has not been registered with Microsoft Windows.  
   
-### To correct this error  
+## To correct this error  
   
 -   Remove the invalid format and specify a valid one.  
   
 ## See Also  
- [Clipboard: Adding Other Formats](../Topic/Clipboard:%20Adding%20Other%20Formats.md)
+ [Clipboard: Adding Other Formats](http://msdn.microsoft.com/library/aea58159-65ed-4385-aeaa-3d9d5281903b)

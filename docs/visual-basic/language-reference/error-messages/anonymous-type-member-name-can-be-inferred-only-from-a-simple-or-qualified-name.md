@@ -39,7 +39,7 @@ translation.priority.ht:
 # Anonymous type member name can be inferred only from a simple or qualified name with no arguments
 You cannot infer an anonymous type member name from a complex expression.  
   
-```vb#  
+```vb  
 Dim numbers() As Integer = {1, 2, 3, 4, 5}  
 ' Not valid.  
 ' Dim instanceName1 = New With {numbers(3)}  
@@ -49,7 +49,7 @@ Dim numbers() As Integer = {1, 2, 3, 4, 5}
   
  **Error ID:** BC36556  
   
-### To correct this error  
+## To correct this error  
   
 -   Assign the expression to a member name, as shown in the following code:  
   

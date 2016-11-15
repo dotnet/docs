@@ -42,7 +42,7 @@ The file was not found where specified. The error has the following possible cau
   
 -   You attempted to open a project or load a text file that does not exist.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the spelling of the file name and the path specification.  
   

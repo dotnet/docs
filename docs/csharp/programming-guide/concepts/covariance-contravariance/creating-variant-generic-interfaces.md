@@ -38,7 +38,7 @@ You can declare generic type parameters in interfaces as covariant or contravari
   
 -   The type is used only as a return type of interface methods and not used as a type of method arguments. This is illustrated in the following example, in which the type `R` is declared covariant.  
   
-    ```c#  
+    ```cs  
     interface ICovariant<out R>  
     {  
         R GetSomething();  
@@ -50,7 +50,7 @@ You can declare generic type parameters in interfaces as covariant or contravari
   
      There is one exception to this rule. If you have a contravariant generic delegate as a method parameter, you can use the type as a generic type parameter for the delegate. This is illustrated by the type `R` in the following example. For more information, see [Variance in Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md) and [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md).  
   
-    ```c#  
+    ```cs  
     interface ICovariant<out R>  
     {  
         void DoSomething(Action<R> callback);  
@@ -59,7 +59,7 @@ You can declare generic type parameters in interfaces as covariant or contravari
   
 -   The type is not used as a generic constraint for the interface methods. This is illustrated in the following code.  
   
-    ```c#  
+    ```cs  
     interface ICovariant<out R>  
     {  
         // The following statement generates a compiler error  
@@ -71,7 +71,7 @@ You can declare generic type parameters in interfaces as covariant or contravari
   
  You can declare a generic type parameter contravariant by using the `in` keyword. The contravariant type can be used only as a type of method arguments and not as a return type of interface methods. The contravariant type can also be used for generic constraints. The following code shows how to declare a contravariant interface and use a generic constraint for one of its methods.  
   
-```c#  
+```cs  
 interface IContravariant<in A>  
 {  
     void SetSomething(A sampleArg);  
@@ -83,7 +83,7 @@ interface IContravariant<in A>
   
  It is also possible to support both covariance and contravariance in the same interface, but for different type parameters, as shown in the following code example.  
   
-```c#  
+```cs  
 interface IVariant<out R, in A>  
 {  
     R GetSomething();  
@@ -95,7 +95,7 @@ interface IVariant<out R, in A>
 ## Implementing Variant Generic Interfaces  
  You implement variant generic interfaces in classes by using the same syntax that is used for invariant interfaces. The following code example shows how to implement a covariant interface in a generic class.  
   
-```c#  
+```cs  
 interface ICovariant<out R>  
 {  
     R GetSomething();  
@@ -112,7 +112,7 @@ class SampleImplementation<R> : ICovariant<R>
   
  Classes that implement variant interfaces are invariant. For example, consider the following code.  
   
-```c#  
+```cs  
 // The interface is covariant.  
 ICovariant<Button> ibutton = new SampleImplementation<Button>();  
 ICovariant<Object> iobj = ibutton;  
@@ -127,7 +127,7 @@ SampleImplementation<Button> button = new SampleImplementation<Button>();
 ## Extending Variant Generic Interfaces  
  When you extend a variant generic interface, you have to use the `in` and `out` keywords to explicitly specify whether the derived interface supports variance. The compiler does not infer the variance from the interface that is being extended. For example, consider the following interfaces.  
   
-```c#  
+```cs  
 nterface ICovariant<out T> { }  
 interface IInvariant<T> : ICovariant<T> { }  
 interface IExtCovariant<out T> : ICovariant<T> { }  
@@ -137,7 +137,7 @@ interface IExtCovariant<out T> : ICovariant<T> { }
   
  You can create an interface that extends both the interface where the generic type parameter `T` is covariant and the interface where it is contravariant if in the extending interface the generic type parameter `T` is invariant. This is illustrated in the following code example.  
   
-```c#  
+```cs  
 interface ICovariant<out T> { }  
 interface IContravariant<in T> { }  
 interface IInvariant<T> : ICovariant<T>, IContravariant<T> { }  
@@ -145,7 +145,7 @@ interface IInvariant<T> : ICovariant<T>, IContravariant<T> { }
   
  However, if a generic type parameter `T` is declared covariant in one interface, you cannot declare it contravariant in the extending interface, or vice versa. This is illustrated in the following code example.  
   
-```c#  
+```cs  
 interface ICovariant<out T> { }  
 // The following statement generates a compiler error.  
 // interface ICoContraVariant<in T> : ICovariant<T> { }  
@@ -156,7 +156,7 @@ interface ICovariant<out T> { }
   
  For example, if you explicitly implement the same variant generic interface with different generic type parameters in one class, it can create ambiguity. The compiler does not produce an error in this case, but it is not specified which interface implementation will be chosen at runtime. This could lead to subtle bugs in your code. Consider the following code example.  
   
-```c#  
+```cs  
 // Simple class hierarchy.  
 class Animal { }  
 class Cat : Animal { }  

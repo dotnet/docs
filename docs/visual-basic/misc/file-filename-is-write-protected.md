@@ -33,7 +33,7 @@ translation.priority.mt:
 # File &#39;&lt;filename&gt;&#39; is write protected
 The file you are attempting to write to is write-protected and therefore cannot be changed.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Change permissions on the file to read/write, or write to a different file.  
   

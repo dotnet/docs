@@ -23,7 +23,7 @@ If you are not careful, in some situations you can drastically alter the memory 
 ## Example  
  This example alters the previous example. The `AppendString` method calls <xref:System.Linq.Enumerable.ToList%2A> before iterating through the source. This causes materialization.  
   
-```c#  
+```cs  
 public static class LocalExtensions  
 {  
     public static IEnumerable<string>  

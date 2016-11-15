@@ -27,9 +27,8 @@ By using Caller Info attributes, you can obtain information about the caller to 
   
  To obtain this information, you use attributes that are applied to optional parameters, each of which has a default value. The following table lists the Caller Info attributes that are defined in the <xref:System.Runtime.CompilerServices?displayProperty=fullName> namespace:  
   
-||||  
-|-|-|-|  
 |Attribute|Description|Type|  
+|---|---|---|  
 |<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|Full path of the source file that contains the caller. This is the file path at compile time.|`String`|  
 |<xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>|Line number in the source file at which the method is called.|`Integer`|  
 |<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method or property name of the caller. See [Member Names](#MEMBERNAMES) later in this topic.|`String`|  
@@ -37,7 +36,7 @@ By using Caller Info attributes, you can obtain information about the caller to 
 ## Example  
  The following example shows how to use Caller Info attributes. On each call to the `TraceMessage` method, the caller information is substituted as arguments to the optional parameters.  
   
-```c#  
+```cs  
 public void DoProcessing()  
 {  
     TraceMessage("Something happened.");  

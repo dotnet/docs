@@ -69,9 +69,8 @@ myDecimal = 100000000000000000000   ' This causes a compiler error.
   
  The following table shows the enclosing characters and type characters available in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
   
-||||  
-|-|-|-|  
 |Data type|Enclosing character|Appended type character|  
+|---|---|---|  
 |`Boolean`|(none)|(none)|  
 |`Byte`|(none)|(none)|  
 |`Char`|"|C|  

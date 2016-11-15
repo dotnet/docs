@@ -43,7 +43,7 @@ First statement of this 'Sub New' must be a call to 'MyBase.New' or 'MyClass.New
   
  **Error ID:** BC30148  
   
-### To correct this error  
+## To correct this error  
   
 -   Either call `MyBase.New` supplying the required parameters, or call a peer constructor that makes such a call.  
   

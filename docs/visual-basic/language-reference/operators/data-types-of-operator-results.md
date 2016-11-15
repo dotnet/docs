@@ -78,7 +78,7 @@ translation.priority.ht:
  The following table shows the result data types for the `/` operator. Note that this table is symmetric; for a given combination of operand data types, the result data type is the same regardless of the order of the operands.  
   
 ||||||  
-|-|-|-|-|-|  
+|---|---|---|---|---|  
 ||`Decimal`|`Single`|`Double`|Any integer type|  
 |`Decimal`|Decimal|Single|Double|Decimal|  
 |`Single`|Single|Single|Double|Single|  
@@ -105,7 +105,7 @@ translation.priority.ht:
  The following table shows the result data types for the two unary operators, `+` and `–`.  
   
 |||||||||||  
-|-|-|-|-|-|-|-|-|-|-|  
+|---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
 |Unary `+`|Short|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
 |Unary `–`|Short|SByte|Short|Short|Integer|Integer|Long|Long|Decimal|  
@@ -114,7 +114,7 @@ translation.priority.ht:
  The following table shows the result data types for the two bit-shift operators, `<<` and `>>`. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] treats each bit-shift operator as a unary operator on its left operand (the bit pattern to be shifted).  
   
 |||||||||||  
-|-|-|-|-|-|-|-|-|-|-|  
+|---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
 |`<<`, `>>`|Short|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
   
@@ -124,7 +124,7 @@ translation.priority.ht:
  The following table shows the result data types for the binary `+` and `–` operators and the `*` and `Mod` operators. Note that this table is symmetric; for a given combination of operand data types, the result data type is the same regardless of the order of the operands.  
   
 |||||||||||  
-|-|-|-|-|-|-|-|-|-|-|  
+|---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
 |`Boolean`|Short|SByte|Short|Short|Integer|Integer|Long|Long|Decimal|  
 |`SByte`|SByte|SByte|Short|Short|Integer|Integer|Long|Long|Decimal|  
@@ -140,7 +140,7 @@ translation.priority.ht:
  The following table shows the result data types for the `\` operator. Note that this table is symmetric; for a given combination of operand data types, the result data type is the same regardless of the order of the operands.  
   
 |||||||||||  
-|-|-|-|-|-|-|-|-|-|-|  
+|---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
 |`Boolean`|Short|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
 |`SByte`|SByte|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
@@ -166,7 +166,7 @@ translation.priority.ht:
  The following table shows the result data types for the bitwise `Not` operator.  
   
 |||||||||||  
-|-|-|-|-|-|-|-|-|-|-|  
+|---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
 |`Not`|Boolean|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
   
@@ -176,7 +176,7 @@ translation.priority.ht:
  The following table shows the result data types for the bitwise `And`, `Or`, and `Xor` operators. Note that this table is symmetric; for a given combination of operand data types, the result data type is the same regardless of the order of the operands.  
   
 |||||||||||  
-|-|-|-|-|-|-|-|-|-|-|  
+|---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
 |`Boolean`|Boolean|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
 |`SByte`|SByte|SByte|Short|Short|Integer|Integer|Long|Long|Long|  

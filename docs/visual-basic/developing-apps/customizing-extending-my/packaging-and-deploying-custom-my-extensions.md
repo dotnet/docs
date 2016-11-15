@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Packaging and Deploying Custom My Extensions (Visual Basic)
-Visual Basic provides an easy way for you to deploy your custom `My` namespace extensions by using Visual Studio templates. If you are creating a project template for which your `My` extensions are an integral part of the new project type, you can just include your custom `My` extension code with the project when you export the template. For more information about exporting project templates, see [How to: Create Project Templates](../Topic/How%20to:%20Create%20Project%20Templates.md).  
+Visual Basic provides an easy way for you to deploy your custom `My` namespace extensions by using Visual Studio templates. If you are creating a project template for which your `My` extensions are an integral part of the new project type, you can just include your custom `My` extension code with the project when you export the template. For more information about exporting project templates, see [How to: Create Project Templates](http://msdn.microsoft.com/library/a1a6999d-a34c-48a8-b1cf-027eb5c76398).  
   
  If your custom `My` extension is in a single code file, you can export the file as an item template that users can add to any type of Visual Basic project. You can then customize the item template to enable additional capabilities and behavior for your custom `My` extension in a Visual Basic project. Those capabilities include the following:  
   
@@ -52,7 +52,7 @@ Visual Basic provides an easy way for you to deploy your custom `My` namespace e
  The first step in creating a deployment package for a custom `My` extension is to create the extension as a single code file. For details and guidance about how to create a custom `My` extension, see [Extending the My Namespace in Visual Basic](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace.md).  
   
 ## Export a My Namespace Extension as an Item Template  
- After you have a code file that includes your `My` namespace extension, you can export the code file as a Visual Studio item template. For instructions on how to export a file as a Visual Studio item template, see [How to: Create Item Templates](../Topic/How%20to:%20Create%20Item%20Templates.md).  
+ After you have a code file that includes your `My` namespace extension, you can export the code file as a Visual Studio item template. For instructions on how to export a file as a Visual Studio item template, see [How to: Create Item Templates](http://msdn.microsoft.com/library/77bc53d4-d607-4820-a032-7e3b365891b5).  
   
 > [!NOTE]
 >  If your `My` namespace extension has a dependency on a particular assembly, you can customize your item template to automatically install your `My` namespace extension when a reference to that assembly is added. As a result, you will want to exclude that assembly reference when you export the code file as a Visual Studio item template.  
@@ -75,9 +75,8 @@ Visual Basic provides an easy way for you to deploy your custom `My` namespace e
   
  The CustomData file contains a <`VBMyExtensionTemplate>` element that has attributes as listed in the following table.  
   
-|||  
-|-|-|  
 |Attribute|Description|  
+|---|---|  
 |`ID`|Required. A unique identifier for the extension. If the extension that has this ID has already been added to the project, the user will not be prompted to add it again.|  
 |`Version`|Required. A version number for the item template.|  
 |`AssemblyFullName`|Optional. An assembly name. When a reference to this assembly is added to the project, the user will be prompted to add the `My` extension from this item template.|  
@@ -121,4 +120,4 @@ Visual Basic provides an easy way for you to deploy your custom `My` namespace e
  [Extending the My Namespace in Visual Basic](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace.md)   
  [Extending the Visual Basic Application Model](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md)   
  [Customizing Which Objects are Available in My](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)   
- [My Extensions Page, Project Designer](/visual-studio/ide/reference/my-extensions-page-project-designer-visual-basic)
+ [My Extensions Page, Project Designer](/visualstudio/ide/reference/my-extensions-page-project-designer-visual-basic)

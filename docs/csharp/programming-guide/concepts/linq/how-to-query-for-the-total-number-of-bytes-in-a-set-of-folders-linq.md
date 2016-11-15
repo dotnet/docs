@@ -28,7 +28,7 @@ This example shows how to retrieve the total number of bytes used by all the fil
 ## Example  
  The <xref:System.Linq.Enumerable.Sum%2A> method adds the values of all the items selected in the `select` clause. You can easily modify this query to retrieve the biggest or smallest file in the specified directory tree by calling the <xref:System.Linq.Enumerable.Min%2A> or <xref:System.Linq.Enumerable.Max%2A> method instead of <xref:System.Linq.Enumerable.Sum%2A>.  
   
-```c#  
+```cs  
 class QuerySize  
 {  
     public static void Main()  

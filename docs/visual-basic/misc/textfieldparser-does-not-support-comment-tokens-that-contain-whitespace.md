@@ -35,7 +35,7 @@ translation.priority.mt:
 # TextFieldParser does not support comment tokens that contain whitespace
 A comment token that contains white space has been supplied. The `TextFieldParser` does not support comment tokens that contain white space unless the white space occurs at the beginning of the token. White space occurring at the beginning of a token is ignored.  
   
-### To correct this error  
+## To correct this error  
   
 -   Supply a correct comment token.  
   

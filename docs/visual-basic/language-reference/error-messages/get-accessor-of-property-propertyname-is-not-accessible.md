@@ -49,12 +49,12 @@ A statement attempts to retrieve the value of a property when it does not have a
   
  **Error ID:** BC31103  
   
-### To correct this error  
+## To correct this error  
   
 -   If you have control of the source code defining the property, consider declaring the `Get` procedure with the same access level as the property itself.  
   
 -   If you do not have control of the source code defining the property, or you must restrict the `Get` procedure access level more than the property itself, try to move the statement that reads the property value to a region of code that has better access to the property.  
   
 ## See Also  
- [Property Procedures](../../../visual-basic/language-reference/procedures/property-procedures.md)   
- [How to: Declare a Property with Mixed Access Levels](../../../visual-basic/language-reference/procedures/how-to-declare-a-property-with-mixed-access-levels.md)
+ [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)   
+ [How to: Declare a Property with Mixed Access Levels](../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-a-property-with-mixed-access-levels.md)

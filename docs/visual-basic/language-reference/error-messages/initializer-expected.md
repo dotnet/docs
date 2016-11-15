@@ -49,7 +49,7 @@ You have tried to declare an instance of a class by using an object initializer 
   
  **Error ID:** BC30996  
   
-### To correct this error  
+## To correct this error  
   
 1.  Initialize at least one field or property in the initializer, or do not use an object initializer.  
   

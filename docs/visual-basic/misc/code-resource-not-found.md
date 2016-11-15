@@ -35,7 +35,7 @@ translation.priority.mt:
 # Code resource not found
 A call was made to a procedure in a code resource, but the code resource could not be found.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check that the resource is available and properly referenced.  
   

@@ -43,7 +43,7 @@ Next
   
  The query expression in this example is re-written by the compiler to method-based query syntax. The following example, which is written in method-based query syntax, produces the same results as the previous one:  
   
-```vb#  
+```vb  
 Dim po = XDocument.Load("PurchaseOrders.xml")  
   
 Dim list1 As IEnumerable(Of XElement) = po.Descendants("Address").Where(Function(el) el.@Type = "Shipping")  

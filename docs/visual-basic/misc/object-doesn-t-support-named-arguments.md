@@ -35,7 +35,7 @@ translation.priority.mt:
 # Object doesn&#39;t support named arguments
 You tried to access an object whose methods don't support named arguments.  
   
-### To correct this error  
+## To correct this error  
   
 -   Specify arguments positionally when accessing methods on this object. See the object's documentation for more information on argument positions and types.  
   

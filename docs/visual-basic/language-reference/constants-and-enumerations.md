@@ -43,9 +43,8 @@ translation.priority.ht:
 ### Conditional Compilation Constants  
  The following table lists the predefined constants available for conditional compilation.  
   
-|||  
-|-|-|  
 |**Constant**|**Description**|  
+|---|---|  
 |`CONFIG`|A string that corresponds to the current setting of the **Active Solution Configuration** box in the **Configuration Manager**.|  
 |`DEBUG`|A `Boolean` value that can be set in the **Project Properties** dialog box. By default, the Debug configuration for a project defines `DEBUG`. When `DEBUG` is defined, <xref:System.Diagnostics.Debug> class methods generate output to the **Output** window. When it is not defined, <xref:System.Diagnostics.Debug> class methods are not compiled and no Debug output is generated.|  
 |`TARGET`|A string representing the output type for the project or the setting of the command-line **/target** option. The possible values of `TARGET` are:<br /><br /> -   "winexe" for a Windows application.<br />-   "exe" for a console application.<br />-   "library" for a class library.<br />-   "module" for a module.<br />-   The **/target** option may be set in the [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)] integrated development environment. For more information, see [/target (Visual Basic)](../../visual-basic/reference/command-line-compiler/target.md).|  
@@ -55,9 +54,8 @@ translation.priority.ht:
 ### Print and Display Constants  
  When you call print and display functions, you can use the following constants in your code in place of the actual values.  
   
-|||  
-|-|-|  
 |**Constant**|**Description**|  
+|---|---|  
 |`vbCrLf`|Carriage return/linefeed character combination.|  
 |`vbCr`|Carriage return character.|  
 |`vbLf`|Linefeed character.|  
@@ -73,9 +71,8 @@ translation.priority.ht:
 ## Enumerations  
  The following table lists and describes the enumerations provided by [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
   
-|||  
-|-|-|  
 |Enumeration|Description|  
+|---|---|  
 |<xref:Microsoft.VisualBasic.AppWinStyle>|Indicates the window style to use for the invoked program when calling the <xref:Microsoft.VisualBasic.Interaction.Shell%2A> function.|  
 |<xref:Microsoft.VisualBasic.AudioPlayMode>|Indicates how to play sounds when calling audio methods.|  
 |<xref:Microsoft.VisualBasic.ApplicationServices.BuiltInRole>|Indicates the type of role to check when calling the <xref:Microsoft.VisualBasic.ApplicationServices.User.IsInRole%2A> method.|  

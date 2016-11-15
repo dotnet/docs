@@ -35,7 +35,7 @@ translation.priority.mt:
 # Property value is not valid
 One of the properties of an object or control was set to a value outside its range.  
   
-### To correct this error  
+## To correct this error  
   
 -   Change the property value to a valid setting.  
   

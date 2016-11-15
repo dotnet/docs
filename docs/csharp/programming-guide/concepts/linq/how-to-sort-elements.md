@@ -23,7 +23,7 @@ This example shows how to write a query that sorts its results.
 ## Example  
  This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md).  
   
-```c#  
+```cs  
 XElement root = XElement.Load("Data.xml");  
 IEnumerable<decimal> prices =  
     from el in root.Elements("Data")  
@@ -51,7 +51,7 @@ foreach (decimal el in prices)
   
  This example uses the following XML document: [Sample XML File: Numerical Data in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-numerical-data-in-a-namespace.md).  
   
-```c#  
+```cs  
 XElement root = XElement.Load("DataInNamespace.xml");  
 XNamespace aw = "http://www.adatum.com";  
 IEnumerable<decimal> prices =  

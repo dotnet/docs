@@ -27,7 +27,7 @@ This example shows how to find sentences in a text file that contain matches for
   
 ## Example  
   
-```c#  
+```cs  
 class FindSentences  
 {  
     static void Main()  

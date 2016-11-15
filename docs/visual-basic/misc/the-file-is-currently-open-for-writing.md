@@ -33,7 +33,7 @@ translation.priority.mt:
 # The file is currently open for writing
 An attempt has been made to access a file that is currently open for writing.  
   
-### To correct this error  
+## To correct this error  
   
 -   Close the file and attempt the operation again.  
   

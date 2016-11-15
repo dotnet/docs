@@ -43,7 +43,7 @@ XML literals and XML properties are not supported in embedded code within ASP.NE
   
  **Error ID:** BC31200  
   
-### To correct this error  
+## To correct this error  
   
 -   Move the code that includes the XML literal or XML axis property to an ASP.NET code-behind file.  
   

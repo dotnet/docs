@@ -30,7 +30,7 @@ This topic shows how to load XML from a URI by using the <xref:System.Xml.Linq.X
   
  This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md).  
   
-```c#  
+```cs  
 XElement booksFromFile = XElement.Load(@"books.xml");  
 Console.WriteLine(booksFromFile);  
 ```  

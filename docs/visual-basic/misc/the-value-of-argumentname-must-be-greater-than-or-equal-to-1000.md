@@ -37,7 +37,7 @@ The value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFil
   
  The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize%2A> property specifies the maximum number of bytes allowed in a log file before a new log file is created.  
   
-### To correct this error  
+## To correct this error  
   
 -   Set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize%2A> property to a number greater than or equal to 1000.  
   

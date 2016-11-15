@@ -39,7 +39,7 @@ This topic provides links to other topics that document the Visual Basic run-tim
 ## Visual Basic Run-time Objects  
   
 |||  
-|-|-|  
+|---|---|  
 |<xref:Microsoft.VisualBasic.Collection>|Provides a convenient way to see a related group of items as a single object.|  
 |<xref:Microsoft.VisualBasic.Information.Err%2A>|Contains information about run-time errors.|  
 |The `My.Application` object consists of the following classes:<br /><br /> <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase> provides members that are available in all projects.<br /><br /> <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> provides members available in Windows Forms applications.<br /><br /> <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase> provides members available in console applications.|Provides data that is associated only with the current application or DLL. No system-level information can be altered with `My.Application`.<br /><br /> Some members are available only for Windows Forms or console applications.|  

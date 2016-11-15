@@ -25,13 +25,13 @@ translation.priority.mt:
 # How to: Make Multiple Web Requests in Parallel by Using async and await (C#)
 In an async method, tasks are started when they’re created. The [await](../../../../csharp/language-reference/keywords/await.md) operator is applied to the task at the point in the method where processing can’t continue until the task finishes. Often a task is awaited as soon as it’s created, as the following example shows.  
   
-```c#  
+```cs  
 var result = await someWebAccessMethodAsync(url);  
 ```  
   
  However, you can separate creating the task from awaiting the task if your program has other work to accomplish that doesn’t depend on the completion of the task.  
   
-```c#  
+```cs  
 // The following line creates and starts the task.  
 var myTask = someWebAccessMethodAsync(url);  
   
@@ -71,7 +71,7 @@ var result = await myTask;
   
 2.  Copy the following code, and paste it into the body of `startButton_Click` in MainWindow.xaml.cs.  
   
-    ```c#  
+    ```cs  
     resultsTextBox.Clear();  
     await CreateMultipleTasksAsync();  
     resultsTextBox.Text += "\r\n\r\nControl returned to startButton_Click.\r\n";  
@@ -87,7 +87,7 @@ var result = await myTask;
   
      Copy the following methods, and paste them after the `startButton_Click` event handler in MainWindow.xaml.cs.  
   
-    ```c#  
+    ```cs  
     async Task<int> ProcessURLAsync(string url, HttpClient client)  
     {  
         var byteArray = await client.GetByteArrayAsync(url);  
@@ -119,7 +119,7 @@ var result = await myTask;
   
      Copy the following method, and paste it into your solution.  
   
-    ```c#  
+    ```cs  
     private async Task CreateMultipleTasksAsync()  
     {  
         // Declare an HttpClient object, and increase the buffer size. The  
@@ -132,9 +132,9 @@ var result = await myTask;
         Task<int> download1 =   
             ProcessURLAsync("http://msdn.microsoft.com", client);  
         Task<int> download2 =   
-            ProcessURLAsync("http://msdn.microsoft.com/en-us/library/hh156528(VS.110).aspx", client);  
+            ProcessURLAsync("http://msdn.microsoft.com/library/hh156528(VS.110).aspx", client);  
         Task<int> download3 =   
-            ProcessURLAsync("http://msdn.microsoft.com/en-us/library/67w7t67f.aspx", client);  
+            ProcessURLAsync("http://msdn.microsoft.com/library/67w7t67f.aspx", client);  
   
         // Await each task.  
         int length1 = await download1;  
@@ -156,7 +156,7 @@ var result = await myTask;
 ## Example  
  The following code contains the full example.  
   
-```c#  
+```cs  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -203,9 +203,9 @@ namespace AsyncExample_MultipleTasks
             Task<int> download1 =   
                 ProcessURLAsync("http://msdn.microsoft.com", client);  
             Task<int> download2 =   
-                ProcessURLAsync("http://msdn.microsoft.com/en-us/library/hh156528(VS.110).aspx", client);  
+                ProcessURLAsync("http://msdn.microsoft.com/library/hh156528(VS.110).aspx", client);  
             Task<int> download3 =   
-                ProcessURLAsync("http://msdn.microsoft.com/en-us/library/67w7t67f.aspx", client);  
+                ProcessURLAsync("http://msdn.microsoft.com/library/67w7t67f.aspx", client);  
   
             // Await each task.  
             int length1 = await download1;  

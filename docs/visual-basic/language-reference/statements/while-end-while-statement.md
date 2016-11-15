@@ -55,9 +55,8 @@ End While
   
 ## Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`condition`|Required. `Boolean` expression. If `condition` is `Nothing`, Visual Basic treats it as `False`.|  
 |`statements`|Optional. One or more statements following `While`, which run every time `condition` is `True`.|  
 |`Continue While`|Optional. Transfers control to the next iteration of the `While` block.|  

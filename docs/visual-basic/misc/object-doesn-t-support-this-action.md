@@ -35,7 +35,7 @@ translation.priority.mt:
 # Object doesn&#39;t support this action (Visual Basic)
 You referenced a method or property that is not supported by this object.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Read the object's documentation for more information on the object.  
   

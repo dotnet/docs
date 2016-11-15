@@ -29,7 +29,7 @@ This topic shows how to find all attributes of the siblings of the context node.
   
  This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md).  
   
-```c#  
+```cs  
 XDocument books = XDocument.Load("Books.xml");  
   
 XElement book =   

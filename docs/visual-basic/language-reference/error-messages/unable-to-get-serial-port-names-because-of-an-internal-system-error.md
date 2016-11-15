@@ -34,13 +34,13 @@ translation.priority.ht:
 # Unable to get serial port names because of an internal system error
 An internal error occurred when the `My.Computer.Ports.SerialPortNames` property was called.  
   
-### To correct this error  
+## To correct this error  
   
-1.  See [Debugger Basics](/visual-studio/debugger/debugger-basics) for more troubleshooting information.  
+1.  See [Debugger Basics](/visualstudio/debugger/debugger-basics) for more troubleshooting information.  
   
 2.  Note the circumstances under which the error occurred, and call Microsoft Product Support Services.  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Devices.Ports.SerialPortNames%2A>   
- [Debugger Basics](/visual-studio/debugger/debugger-basics)   
- [Talk to Us](/visual-studio/ide/talk-to-us)
+ [Debugger Basics](/visualstudio/debugger/debugger-basics)   
+ [Talk to Us](/visualstudio/ide/talk-to-us)

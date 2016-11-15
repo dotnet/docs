@@ -91,9 +91,9 @@ This section provides detailed information on key C# language features and featu
 ## Platform Sections  
  [Application Domains (C# and Visual Basic)](http://msdn.microsoft.com/en-us/1bc2939a-79db-4a4a-a677-4a2ce6de2b1e)  
   
- [Assemblies and the Global Assembly Cache](../Topic/Assemblies%20and%20the%20Global%20Assembly%20Cache%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Assemblies and the Global Assembly Cache](../../csharp/programming-guide/concepts/assemblies-gac/index.md)  
   
- [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Attributes](../../csharp/programming-guide/concepts/attributes/index.md)  
   
  [Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md)  
   

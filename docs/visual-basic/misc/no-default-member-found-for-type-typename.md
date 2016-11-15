@@ -35,7 +35,7 @@ translation.priority.mt:
 # No default member found for type &#39;&lt;typename&gt;&#39;
 A late-bound index `Get` or `Set` call has been attempted.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Ensure that the object has a default property with a `Get` or `Set`, depending on which you are trying to make.  
   

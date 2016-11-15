@@ -47,17 +47,15 @@ Constants are a way to use meaningful names in place of a value that does not ch
   
 ## In This Section  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |[Constants Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)|Topics in this section describe constants and their uses.|  
 |[Enumerations Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)|Topics in this section describe enumerations and their uses.|  
   
 ## Related Sections  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |[Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)|Describes the `Const` statement, which is used to declare constants.|  
 |[Enum Statement](../../../../visual-basic/language-reference/statements/enum-statement.md)|Describes the `Enum` statement, which is used to create enumerations.|  
 |[Option Explicit Statement](../../../../visual-basic/language-reference/statements/option-explicit-statement.md)|Describes the `Option Explicit` statement, which is used at module level to force explicit declaration of all variables in that module.|  

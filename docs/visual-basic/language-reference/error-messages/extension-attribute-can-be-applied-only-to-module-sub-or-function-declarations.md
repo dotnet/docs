@@ -41,7 +41,7 @@ The only way to extend a data type in Visual Basic is to define an extension met
   
  **Error ID:** BC36550  
   
-### To correct this error  
+## To correct this error  
   
 -   Remove the extension attribute.  
   
@@ -66,6 +66,6 @@ End Namespace
 ```  
   
 ## See Also  
- [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)   
- [Extension Methods](../../../visual-basic/language-reference/procedures/extension-methods.md)   
+ [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md)   
+ [Extension Methods](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)   
  [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)

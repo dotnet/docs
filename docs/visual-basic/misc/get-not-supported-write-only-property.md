@@ -35,7 +35,7 @@ translation.priority.mt:
 # Get not supported (write-only property)
 A property cannot be read because it is write only.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the property and determine under what conditions it can be set.  
   

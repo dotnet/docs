@@ -33,7 +33,7 @@ translation.priority.mt:
 # Cannot delete a registry hive
 An attempt has been made to delete a registry hive. Hives are top-level registry keys, such as `HKEY_CURRENT_USER` and `HKEY_LOCAL_MACHINE`, and cannot be deleted.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check the registry key you are attempting to delete, and make sure you are supplying the correct path.  
   

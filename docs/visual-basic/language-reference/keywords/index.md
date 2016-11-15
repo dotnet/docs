@@ -50,7 +50,7 @@ The following tables list all [!INCLUDE[vbprvb](../../../csharp/programming-guid
 >  We do not recommend that you use escaped names, because it can make your code hard to read, and it can lead to subtle errors that can be difficult to find.  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |[AddHandler](../../../visual-basic/language-reference/statements/addhandler-statement.md)|[AddressOf](../../../visual-basic/language-reference/operators/addressof-operator.md)|[Alias](../../../visual-basic/language-reference/statements/alias-clause.md)|[And](../../../visual-basic/language-reference/operators/and-operator.md)|  
 |[AndAlso](../../../visual-basic/language-reference/operators/andalso-operator.md)|[As](../../../visual-basic/language-reference/statements/as-clause.md)|[Boolean](../../../visual-basic/language-reference/data-types/boolean-data-type.md)|[ByRef](../../../visual-basic/language-reference/modifiers/byref.md)|  
 |[Byte](../../../visual-basic/language-reference/data-types/byte-data-type.md)|[ByVal](../../../visual-basic/language-reference/modifiers/byval.md)|[Call](../../../visual-basic/language-reference/statements/call-statement.md)|[Case](../../../visual-basic/language-reference/statements/select-case-statement.md)|  
@@ -106,7 +106,7 @@ The following tables list all [!INCLUDE[vbprvb](../../../csharp/programming-guid
  The following keywords are not reserved, which means you can use them as names for your programming elements. However, doing this is not recommended, because it can make your code hard to read and can lead to subtle errors that can be difficult to find.  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |[Aggregate](../../../visual-basic/language-reference/queries/aggregate-clause.md)|[Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)|[Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)|[Async](../../../visual-basic/language-reference/modifiers/async.md)|  
 |[Auto](../../../visual-basic/language-reference/modifiers/auto.md)|[Await](../../../visual-basic/language-reference/operators/await-operator.md)|[Binary](../../../visual-basic/language-reference/statements/option-compare-statement.md)|[Compare](../../../visual-basic/language-reference/statements/option-compare-statement.md)|  
 |[Custom](../../../visual-basic/language-reference/statements/event-statement.md)|[Distinct](../../../visual-basic/language-reference/queries/distinct-clause.md)|[Equals](../../../visual-basic/language-reference/queries/equals-clause.md)|[Explicit](../../../visual-basic/language-reference/statements/option-explicit-statement.md)|  

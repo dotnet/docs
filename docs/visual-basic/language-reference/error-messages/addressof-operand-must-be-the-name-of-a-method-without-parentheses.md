@@ -45,7 +45,7 @@ The `AddressOf` operator creates a procedure delegate instance that references a
   
  **Error ID:** BC30577  
   
-### To correct this error  
+## To correct this error  
   
 1.  Remove the parentheses around the argument following `AddressOf`.  
   

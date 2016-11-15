@@ -27,7 +27,7 @@ Sometimes you want to write LINQ to XML queries with complex filters. For exampl
   
  For more information about the `Any` operator, see [Quantifier Operations (C#)](../../../../csharp/programming-guide/concepts/linq/quantifier-operations.md).  
   
-```c#  
+```cs  
 XElement root = XElement.Load("PurchaseOrders.xml");  
 IEnumerable<XElement> purchaseOrders =  
     from el in root.Elements("PurchaseOrder")  
@@ -54,7 +54,7 @@ foreach (XElement el in purchaseOrders)
   
  This example uses the following XML document: [Sample XML File: Multiple Purchase Orders in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-in-a-namespace.md).  
   
-```c#  
+```cs  
 XElement root = XElement.Load("PurchaseOrdersInNamespace.xml");  
 XNamespace aw = "http://www.adventure-works.com";  
 IEnumerable<XElement> purchaseOrders =  

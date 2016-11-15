@@ -43,7 +43,7 @@ In response to the declaration of an instance of an anonymous type, the compiler
   
  The class definition contains property definitions similar to the following. Notice that there is no `Set` method for the key properties. The values of key properties are read-only.  
   
-```vb#  
+```vb  
 Public Class $Anonymous1  
     Private _name As String  
     Private _price As Double  

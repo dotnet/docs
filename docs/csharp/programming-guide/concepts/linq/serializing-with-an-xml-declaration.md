@@ -33,7 +33,7 @@ This topic describes how to control whether serialization generates an XML decla
 ### Serializing with an XML Declaration  
  The following example creates an <xref:System.Xml.Linq.XElement>, saves the document to a file, and then prints the file to the console:  
   
-```c#  
+```cs  
 XElement root = new XElement("Root",  
     new XElement("Child", "child content")  
 );  
@@ -54,7 +54,7 @@ Console.WriteLine(str);
 ### Serializing without an XML Declaration  
  The following example shows how to save an <xref:System.Xml.Linq.XElement> to an <xref:System.Xml.XmlWriter>.  
   
-```c#  
+```cs  
 StringBuilder sb = new StringBuilder();  
 XmlWriterSettings xws = new XmlWriterSettings();  
 xws.OmitXmlDeclaration = true;  

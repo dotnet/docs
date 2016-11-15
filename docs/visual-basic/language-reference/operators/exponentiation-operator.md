@@ -74,7 +74,7 @@ number ^ exponent
  When more than one exponentiation is performed in a single expression, the `^` operator is evaluated as it is encountered from left to right.  
   
 > [!NOTE]
->  The `^` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/language-reference/procedures/operator-procedures.md).  
+>  The `^` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## Example  
  The following example uses the `^` operator to raise a number to the power of an exponent. The result is the first operand raised to the power of the second.  

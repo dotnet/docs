@@ -41,7 +41,7 @@ An XML axis property has been referenced for an untyped object.
   
  **Error ID:** BC31168  
   
-### To correct this error  
+## To correct this error  
   
 -   Ensure that the object is a strong-typed <xref:System.Xml.Linq.XElement> object before referencing the XML axis property.  
   

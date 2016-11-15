@@ -23,7 +23,7 @@ Sometimes you want to filter for an element even though you are not sure it exis
 ## Example  
  This example uses the <xref:System.Xml.Linq.Extensions.Elements%2A> extension method.  
   
-```c#  
+```cs  
 XElement root = XElement.Parse(@"<Root>  
   <Child1>  
     <Text>Child One Text</Text>  
@@ -64,7 +64,7 @@ Child Four Text
 ## Example  
  The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
   
-```c#  
+```cs  
 XElement root = XElement.Parse(@"<Root xmlns='http://www.adatum.com'>  
   <Child1>  
     <Text>Child One Text</Text>  

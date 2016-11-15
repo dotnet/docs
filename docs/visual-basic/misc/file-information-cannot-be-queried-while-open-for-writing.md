@@ -33,7 +33,7 @@ translation.priority.mt:
 # File information cannot be queried while open for writing
 An attempt was made to obtain information about a file that is currently open for writing.  
   
-### To correct this error  
+## To correct this error  
   
 -   Close the file and attempt the operation again.  
   

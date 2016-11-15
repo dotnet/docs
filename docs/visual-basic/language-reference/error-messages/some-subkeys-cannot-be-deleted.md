@@ -34,7 +34,7 @@ translation.priority.ht:
 # Some subkeys cannot be deleted
 An attempt has been made to delete a registry key, but the operation failed because some subkeys cannot be deleted. Usually this is due to a lack of permissions.  
   
-### To correct this error  
+## To correct this error  
   
 -   Make sure you have sufficient permissions to delete the specified subkeys.  
   

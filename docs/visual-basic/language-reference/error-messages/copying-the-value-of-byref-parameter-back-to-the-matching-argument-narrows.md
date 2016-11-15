@@ -47,7 +47,7 @@ A procedure is called with an argument that widens to the corresponding paramete
   
  **Error ID:** BC32053  
   
-### To correct this error  
+## To correct this error  
   
 -   If possible, use a calling argument of the same type as the procedure parameter, so [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] does not need to do any conversion.  
   
@@ -56,12 +56,12 @@ A procedure is called with an argument that widens to the corresponding paramete
 -   If you need to return a value into the calling argument, define the reverse conversion operator as [Widening](../../../visual-basic/language-reference/modifiers/widening.md), if possible.  
   
 ## See Also  
- [Procedures](../../../visual-basic/language-reference/procedures/index.md)   
- [Procedure Parameters and Arguments](../../../visual-basic/language-reference/procedures/procedure-parameters-and-arguments.md)   
- [Passing Arguments by Value and by Reference](../../../visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference.md)   
- [Operator Procedures](../../../visual-basic/language-reference/procedures/operator-procedures.md)   
+ [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)   
+ [Procedure Parameters and Arguments](../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)   
+ [Passing Arguments by Value and by Reference](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)   
+ [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)   
  [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)   
- [How to: Define an Operator](../../../visual-basic/language-reference/procedures/how-to-define-an-operator.md)   
- [How to: Define a Conversion Operator](../../../visual-basic/language-reference/procedures/how-to-define-a-conversion-operator.md)   
+ [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)   
+ [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)   
  [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
  [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)

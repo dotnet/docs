@@ -35,7 +35,7 @@ translation.priority.mt:
 # Internal error in the Microsoft Visual Basic runtime
 An internal error has occurred in the Microsoft [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] runtime.  
   
-### To correct this error  
+## To correct this error  
   
 -   Note the circumstances under which the error occurred, and call Microsoft Product Support Services.  
   

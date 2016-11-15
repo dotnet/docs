@@ -162,7 +162,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 3.  Open the SampleClass.cs file. Add the following lines of code to the SampleClass class.  
   
-    ```c#  
+    ```cs  
     public DateTime GetDate()  
     {  
         return DateTime.Now;  
@@ -180,5 +180,5 @@ If you embed type information from a strong-named managed assembly, you can loos
 ## See Also  
  [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)   
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Programming with Assemblies](../Topic/Programming%20with%20Assemblies.md)   
- [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache.md)
+ [Programming with Assemblies](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
+ [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)

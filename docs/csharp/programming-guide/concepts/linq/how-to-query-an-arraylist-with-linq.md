@@ -39,7 +39,7 @@ var query = from Student s in arrList
 ## Example  
  The following example shows a simple query over an <xref:System.Collections.ArrayList>. Note that this example uses object initializers when the code calls the <xref:System.Collections.ArrayList.Add%2A> method, but this is not a requirement.  
   
-```c#  
+```cs  
 using System;  
 using System.Collections;  
 using System.Linq;  

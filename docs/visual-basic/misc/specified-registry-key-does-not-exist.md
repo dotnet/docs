@@ -33,7 +33,7 @@ translation.priority.mt:
 # Specified registry key does not exist
 The registry key that has been specified does not exist.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check the registry key that you are supplying to make sure you have specified the path correctly.  
   

@@ -41,7 +41,7 @@ Line statements are no longer supported. File I/O functionality is available as 
   
  **Error ID:** BC30830  
   
-### To correct this error  
+## To correct this error  
   
 1.  If performing file access, use `Microsoft.VisualBasic.FileSystem.LineInput`.  
   

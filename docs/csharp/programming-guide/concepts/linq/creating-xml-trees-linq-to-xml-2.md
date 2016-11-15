@@ -1,5 +1,5 @@
 ---
-title: "Creating XML Trees in C# (LINQ to XML)2 | Microsoft Docs"
+title: "Creating XML Trees in C# (LINQ to XML) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -34,7 +34,7 @@ This section provides information about creating XML trees in C#.
   
  To create a `contacts`<xref:System.Xml.Linq.XElement>, you could use the following code:  
   
-```c#  
+```cs  
 XElement contacts =  
     new XElement("Contacts",  
         new XElement("Contact",  
@@ -78,7 +78,7 @@ XElement contacts =
 ### Creating an XElement with Content  
  You can create an <xref:System.Xml.Linq.XElement> that contains simple content with a single method call. To do this, specify the content as the second parameter, as follows:  
   
-```c#  
+```cs  
 XElement n = new XElement("Customer", "Adventure Works");  
 Console.WriteLine(n);  
 ```  
@@ -91,7 +91,7 @@ Console.WriteLine(n);
   
  You can pass any type of object as the content. For example, the following code creates an element that contains a floating point number as content:  
   
-```c#  
+```cs  
 XElement n = new XElement("Cost", 324.50);  
 Console.WriteLine(n);  
 ```  
@@ -107,7 +107,7 @@ Console.WriteLine(n);
 ### Creating an XElement with a Child Element  
  If you pass an instance of the <xref:System.Xml.Linq.XElement> class for the content argument, the constructor creates an element with a child element:  
   
-```c#  
+```cs  
 XElement shippingUnit = new XElement("ShippingUnit",  
     new XElement("Cost", 324.50)  
 );  
@@ -125,7 +125,7 @@ Console.WriteLine(shippingUnit);
 ### Creating an XElement with Multiple Child Elements  
  You can pass in a number of <xref:System.Xml.Linq.XElement> objects for the content. Each of the <xref:System.Xml.Linq.XElement> objects is included as a child element.  
   
-```c#  
+```cs  
 XElement address = new XElement("Address",  
     new XElement("Street1", "123 Main St"),  
     new XElement("City", "Mercer Island"),  
@@ -148,7 +148,7 @@ Console.WriteLine(address);
   
  By extending the above example, you can create an entire XML tree, as follows:  
   
-```c#  
+```cs  
 XElement contacts =  
     new XElement("Contacts",  
         new XElement("Contact",  
@@ -185,7 +185,7 @@ Console.WriteLine(contacts);
 ### Creating an Empty Element  
  To create an empty <xref:System.Xml.Linq.XElement>, you do not pass any content to the constructor. The following example creates an empty element:  
   
-```c#  
+```cs  
 XElement n = new XElement("Customer");  
 Console.WriteLine(n);  
 ```  
@@ -199,7 +199,7 @@ Console.WriteLine(n);
 ### Attaching vs. Cloning  
  As mentioned previously, when adding <xref:System.Xml.Linq.XNode> (including <xref:System.Xml.Linq.XElement>) or <xref:System.Xml.Linq.XAttribute> objects, if the new content has no parent, the objects are simply attached to the XML tree. If the new content already is parented and is part of another XML tree, the new content is cloned, and the newly cloned content is attached to the XML tree.  
   
-```c#  
+```cs  
 // Create a tree with a child element.  
 XElement xmlTree1 = new XElement("Root",  
     new XElement("Child1", 1)  

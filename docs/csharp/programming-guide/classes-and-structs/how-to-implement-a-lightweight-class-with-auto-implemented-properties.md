@@ -44,7 +44,7 @@ This example shows how to create an immutable lightweight class that serves only
 ## Example  
  The following example shows two ways to implement an immutable class that has auto-implemented properties. Each way declares one of the properties with a private `set` and one of the properties with a `get` only.  The first class uses a constructor only to initialize the properties, and the second class uses a static factory method that calls a constructor.  
   
-```c#  
+```cs  
 // This class is immutable. After an object is created,   
     // it cannot be modified from outside the class. It uses a   
     // constructor to initialize its properties.   

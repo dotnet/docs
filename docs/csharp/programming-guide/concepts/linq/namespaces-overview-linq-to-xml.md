@@ -1,5 +1,5 @@
 ---
-title: "Namespaces Overview (LINQ to XML)3 | Microsoft Docs"
+title: "Namespaces Overview (LINQ to XML) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

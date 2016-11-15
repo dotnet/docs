@@ -84,7 +84,7 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
  Describes the code elements that manipulate value-holding elements, how to use them efficiently, and how to combine them to yield new values.  
   
- [Procedures](../../../visual-basic/language-reference/procedures/index.md)  
+ [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
  Describes `Sub`, `Function`, `Property`, and `Operator` procedures, as well as advanced topics such as recursive and overloaded procedures.  
   
  [Statements](../../../visual-basic/programming-guide/language-features/statements.md)  

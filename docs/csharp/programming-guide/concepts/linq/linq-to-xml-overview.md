@@ -41,9 +41,9 @@ XML has been widely adopted as a way to format data in many contexts. For exampl
   
  Another advantage of [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] is the ability to use query results as parameters to <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XAttribute> object constructors enables a powerful approach to creating XML trees. This approach, called *functional construction*, enables developers to easily transform XML trees from one shape to another.  
   
- For example, you might have a typical XML purchase order as described in [Sample XML File: Typical Purchase Order (LINQ to XML)](../Topic/Sample%20XML%20File:%20Typical%20Purchase%20Order%20\(LINQ%20to%20XML\)3.md). By using [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)], you could run the following query to obtain the part number attribute value for every item element in the purchase order:  
+ For example, you might have a typical XML purchase order as described in [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348). By using [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)], you could run the following query to obtain the part number attribute value for every item element in the purchase order:  
   
-```c#  
+```cs  
 IEnumerable<string> partNos =  
 from item in purchaseOrder.Descendants("Item")  
 select (string) item.Attribute("PartNumber");  
@@ -51,7 +51,7 @@ select (string) item.Attribute("PartNumber");
   
  As another example, you might want a list, sorted by part number, of the items with a value greater than $100. To obtain this information, you could run the following query:  
   
-```c#  
+```cs  
 IEnumerable<XElement> partNos =  
 from item in purchaseOrder.Descendants("Item")  
 where (int) item.Element("Quantity") *  
@@ -79,7 +79,7 @@ select item;
 ## Creating XML Trees  
  IOne of the most significant advantages of programming with [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] is that it is easy to create XML trees. For example, to create a small XML tree, you can write code as follows:  
   
-```c#  
+```cs  
 XElement contacts =  
 new XElement("Contacts",  
     new XElement("Contact",  

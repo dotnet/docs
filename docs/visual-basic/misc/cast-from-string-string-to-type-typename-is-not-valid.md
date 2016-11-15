@@ -35,7 +35,7 @@ translation.priority.mt:
 # Cast from string &quot;&lt;string&gt;&quot; to type &#39;&lt;typename&gt;&#39; is not valid
 An attempt to convert a string variable to another type is not valid.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the types involved in the conversion and make sure you are attempting to convert to a meaningful type.  
   

@@ -31,7 +31,7 @@ The following example shows how to sort lines of structured text, such as comma-
   
 ## Example  
   
-```c#  
+```cs  
 public class SortLines  
 {  
     static void Main()  

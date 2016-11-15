@@ -48,7 +48,7 @@ if (b) // Error CS0266.
   
 ## Example  
   
-```c#  
+```cs  
 bool? test = null;  
 // Other code that may or may not  
 // give a value to test.  

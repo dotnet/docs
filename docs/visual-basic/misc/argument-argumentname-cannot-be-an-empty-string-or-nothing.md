@@ -35,11 +35,11 @@ translation.priority.mt:
 # Argument &lt;argumentname&gt; cannot be an empty string or Nothing
 The argument requires a value other than an empty string ("") or `Nothing`. This may be a result of incorrectly calculating the value.  
   
-### To correct this error  
+## To correct this error  
   
 -   Supply a valid value for the argument.  
   
 ## See Also  
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)   
  [Nothing](../../visual-basic/language-reference/nothing.md)   
- [Troubleshooting Exceptions: System.NullReferenceException](../Topic/Troubleshooting%20Exceptions:%20System.NullReferenceException.md)
+ [Troubleshooting Exceptions: System.NullReferenceException](http://msdn.microsoft.com/library/4822b0b4-8105-43fb-887a-3cc51ff02899)

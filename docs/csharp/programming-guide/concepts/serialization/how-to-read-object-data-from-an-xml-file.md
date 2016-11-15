@@ -27,7 +27,7 @@ This example reads object data that was previously written to an XML file using 
   
 ## Example  
   
-```c#  
+```cs  
 public class Book  
 {  
     public String title;  

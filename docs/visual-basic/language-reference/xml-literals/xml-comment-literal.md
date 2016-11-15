@@ -49,9 +49,8 @@ A literal representing an <xref:System.Xml.Linq.XComment> object.
   
 ## Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`<!--`|Required. Denotes the start of the XML comment.|  
 |`content`|Required. Text to appear in the XML comment. Cannot contain a series of two hyphens (--) or end with a hyphen adjacent to the closing tag.|  
 |`-->`|Required. Denotes the end of the XML comment.|  

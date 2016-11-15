@@ -33,7 +33,7 @@ translation.priority.mt:
 # Key cannot be deleted because it has subkeys
 The key cannot be deleted because it has subkeys.  
   
-### To correct this error  
+## To correct this error  
   
 -   Determine and delete the specified key's subkeys before attempting this operation.  
   

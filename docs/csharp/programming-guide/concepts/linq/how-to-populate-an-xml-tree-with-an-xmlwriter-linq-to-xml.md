@@ -30,7 +30,7 @@ One way to populate an XML tree is to use <xref:System.Xml.Linq.XContainer.Creat
 ## Example  
  One possible use for <xref:System.Xml.Linq.XContainer.CreateWriter%2A> is when invoking an XSLT transformation. This example creates an XML tree, creates an <xref:System.Xml.XmlReader> from the XML tree, creates a new document, and then creates an <xref:System.Xml.XmlWriter> to write into the new document. It then invokes the XSLT transformation, passing in <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter>. After the transformation successfully completes, the new XML tree is populated with the results of the transformation.  
   
-```c#  
+```cs  
 string xslMarkup = @"<?xml version='1.0'?>  
 <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
     <xsl:template match='/Parent'>  

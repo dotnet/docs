@@ -33,7 +33,7 @@ This topic shows you how to modify an expression tree. Expression trees are immu
   
 3.  Add the `AndAlsoModifier` class to your project.  
   
-    ```c#  
+    ```cs  
     public class AndAlsoModifier : ExpressionVisitor  
     {  
         public Expression Modify(Expression expression)  
@@ -63,7 +63,7 @@ This topic shows you how to modify an expression tree. Expression trees are immu
   
 5.  Add code to the `Main` method in the Program.cs file to create an expression tree and pass it to the method that will modify it.  
   
-    ```c#  
+    ```cs  
     Expression<Func<string, bool>> expr = name => name.Length > 10 && name.StartsWith("G");  
     Console.WriteLine(expr);  
   

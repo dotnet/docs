@@ -35,11 +35,11 @@ translation.priority.mt:
 # Named arguments cannot match ParamArray parameters
 Parameter arrays must be passed by value.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Pass the arguments `ByVal`, rather than by naming them.  
   
 ## See Also  
- [Parameter Arrays](../../visual-basic/language-reference/procedures/parameter-arrays.md)   
- [Passing Arguments by Value and by Reference](../../visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference.md)   
- [Passing Arguments by Position and by Name](../../visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name.md)
+ [Parameter Arrays](../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)   
+ [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)   
+ [Passing Arguments by Position and by Name](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)

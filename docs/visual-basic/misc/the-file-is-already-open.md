@@ -33,7 +33,7 @@ translation.priority.mt:
 # The file is already open
 An attempt has been made to open a file that is already open.  
   
-### To correct this error  
+## To correct this error  
   
 -   Close the file before attempting to open it.  
   

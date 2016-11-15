@@ -31,7 +31,7 @@ An *iterator* can be used to step through collections such as lists and arrays.
   
  In the following example, the first iteration of the `foreach` loop causes execution to proceed  in the `SomeNumbers` iterator method until the first `yield return` statement is reached. This iteration returns a value of 3, and the current location in the iterator method is retained. On the next iteration of the loop, execution in the iterator method continues from where it left off, again stopping when it reaches a `yield return` statement. This iteration returns a value of 5, and the current location in the iterator method is again retained. The loop completes when the end of the iterator method is reached.  
   
-```c#  
+```cs  
 static void Main()  
 {  
     foreach (int number in SomeNumbers())  
@@ -76,7 +76,7 @@ public static System.Collections.IEnumerable SomeNumbers()
 ##  <a name="BKMK_SimpleIterator"></a> Simple Iterator  
  The following example has a single `yield return` statement that is inside a [for](../../../csharp/language-reference/keywords/for.md) loop. In `Main`, each iteration of the `foreach` statement body creates a call to the iterator function, which proceeds to the next `yield return` statement.  
   
-```c#  
+```cs  
 static void Main()  
 {  
     foreach (int number in EvenSequence(5, 18))  
@@ -106,7 +106,7 @@ public static System.Collections.Generic.IEnumerable<int>
   
  The `GetEnumerator` method returns each string one at a time by using the `yield return` statement.  
   
-```c#  
+```cs  
 static void Main()  
 {  
     DaysOfTheWeek days = new DaysOfTheWeek();  
@@ -138,7 +138,7 @@ public class DaysOfTheWeek : IEnumerable
   
  The `foreach` statement that refers to the class instance (`theZoo`) implicitly calls the `GetEnumerator` method. The `foreach` statements that refer to the `Birds` and `Mammals` properties use the `AnimalsForType` named iterator method.  
   
-```c#  
+```cs  
 static void Main()  
 {  
     Zoo theZoo = new Zoo();  
@@ -239,7 +239,7 @@ public class Zoo : IEnumerable
   
  The `BottomToTop` property uses an iterator in a `get` accessor.  
   
-```c#  
+```cs  
 static void Main()  
 {  
     Stack<int> theStack = new Stack<int>();  

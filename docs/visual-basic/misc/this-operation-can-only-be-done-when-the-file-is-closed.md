@@ -33,7 +33,7 @@ translation.priority.mt:
 # This operation can only be done when the File is closed
 When a file is open, an attempt has been made to perform an operation that can only be performed when the file is closed.  
   
-### To correct this error  
+## To correct this error  
   
 -   Close the file and attempt the operation again.  
   

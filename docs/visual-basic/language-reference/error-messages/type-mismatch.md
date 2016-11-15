@@ -37,7 +37,7 @@ translation.priority.mt:
 # Type mismatch (Visual Basic)
 You attempted to convert a value to another type in a way that is not valid.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the assignment to make sure it is valid.  
   

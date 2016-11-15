@@ -41,7 +41,7 @@ You did not supply a `WithEvents` variable in your `Handles` clause. The `Handle
   
  **Error ID:** BC30506  
   
-### To correct this error  
+## To correct this error  
   
 -   Supply the necessary `WithEvents` variable.  
   

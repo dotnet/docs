@@ -27,7 +27,7 @@ This topic extends the previous queries to do something useful: find all occurre
   
  This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
   
-```c#  
+```cs  
 public static class LocalExtensions  
 {  
     public static string StringConcatenate(this IEnumerable<string> source)  
@@ -182,7 +182,7 @@ StyleName:Code >Hello World<
   
  You can, of course, modify the search so that it searches for lines with a specific style. The following query finds all blank lines that have the Code style:  
   
-```c#  
+```cs  
 public static class LocalExtensions  
 {  
     public static string StringConcatenate(this IEnumerable<string> source)  

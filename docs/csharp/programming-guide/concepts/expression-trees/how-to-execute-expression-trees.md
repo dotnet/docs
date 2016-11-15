@@ -35,7 +35,7 @@ This topic shows you how to execute an expression tree. Executing an expression 
 ## Example  
  The following code example demonstrates how to execute an expression tree that represents raising a number to a power by creating a lambda expression and executing it. The result, which represents the number raised to the power, is displayed.  
   
-```c#  
+```cs  
 // The expression tree to execute.  
 BinaryExpression be = Expression.Power(Expression.Constant(2D), Expression.Constant(3D));  
   

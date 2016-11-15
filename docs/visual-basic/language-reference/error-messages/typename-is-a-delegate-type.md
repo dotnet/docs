@@ -47,7 +47,7 @@ translation.priority.ht:
   
  **Error ID:** BC32008  
   
-### To correct this error  
+## To correct this error  
   
 -   Use a single `AddressOf` expression in the argument list for the delegate class in the `New` clause.  
   

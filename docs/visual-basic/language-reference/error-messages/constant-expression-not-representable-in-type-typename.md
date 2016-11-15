@@ -41,7 +41,7 @@ You are trying to evaluate a constant that will not fit into the target type, us
   
  **Error ID:** BC30439  
   
-### To correct this error  
+## To correct this error  
   
 1.  Change the target type to one that can handle the constant.  
   

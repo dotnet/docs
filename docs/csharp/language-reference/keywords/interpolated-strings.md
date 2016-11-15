@@ -33,9 +33,9 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Interpolated Strings (C# and Visual Basic Reference)
-Used to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string expression creates a string by replacing the contained expressions with the ToString represenations of the expressions’ results.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../Topic/Composite%20Formatting.md).  Here is an example of an interpolated string:  
+Used to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string expression creates a string by replacing the contained expressions with the ToString represenations of the expressions’ results.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](http://msdn.microsoft.com/library/87b7d528-73f6-43c6-b71a-f23043039a49).  Here is an example of an interpolated string:  
   
-```c#  
+```cs  
 Console.WriteLine($"Name = {name}, hours = {hours:hh}")  
 ```  
   
@@ -52,7 +52,7 @@ $ " <text> { <interpolation-expression> <optional-comma-field-width> <optional-c
 ## Implicit Conversions  
  There are implicit type conversions from an interpolated string:  
   
-```c#  
+```cs  
 var s = $"hello, {name}"  
 System.IFormattable s = $"Hello, {name}"  
 System.FormattableString s = $"Hello, {name}"  
@@ -63,7 +63,7 @@ System.FormattableString s = $"Hello, {name}"
   
  The second example produces an <xref:System.IFormattable> variable that allows you to convert the string with invariant context.  This is useful for getting numeric and data formats correct in different languages.  All occurrences of double curly braces (“{{“ and “}}”) remain as double curly braces, until you format the string with ToString.  All contained interpolation expressions are converted to {0}, {1}, and so on.  
   
-```c#  
+```cs  
 s.ToString(null, System.Globalization.CultureInfo.InvariantCulture);  
 ```  
   
@@ -71,7 +71,7 @@ s.ToString(null, System.Globalization.CultureInfo.InvariantCulture);
   
 ## Examples  
   
-```c#  
+```cs  
 $"Name = {name}, hours = {hours:hh}"  
 var s = $"hello, {name}"  
 System.IFormattable s = $"Hello, {name}"  

@@ -41,7 +41,7 @@ A programming element that takes one or more arguments is included in a LINQ que
   
  **Error ID:** BC36599  
   
-### To correct this error  
+## To correct this error  
   
 1.  Supply an explicit variable name for the programming element, as shown in the following code:  
   

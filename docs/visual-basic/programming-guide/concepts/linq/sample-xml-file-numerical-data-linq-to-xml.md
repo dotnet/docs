@@ -1,5 +1,5 @@
 ---
-title: "Sample XML File: Numerical Data (LINQ to XML)2 | Microsoft Docs"
+title: "Sample XML File: Numerical Data (LINQ to XML) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

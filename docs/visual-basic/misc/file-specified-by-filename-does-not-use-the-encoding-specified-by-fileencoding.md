@@ -33,7 +33,7 @@ translation.priority.mt:
 # File specified by FileName does not use the encoding specified by FileEncoding
 An attempt has been made to read from a file, but the specified encoding is not used by the file.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check to make sure you are supplying the correct file encoding.  
   

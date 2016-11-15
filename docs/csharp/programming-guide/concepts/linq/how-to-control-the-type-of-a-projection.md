@@ -25,7 +25,7 @@ Projection is the process of taking one set of data, filtering it, changing its 
   
  This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
   
-```c#  
+```cs  
 public class Customer  
 {  
     private string customerID;  

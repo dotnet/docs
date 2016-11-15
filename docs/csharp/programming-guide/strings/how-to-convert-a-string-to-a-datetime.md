@@ -47,7 +47,7 @@ It is common for programs to enable users to enter dates as string values. To co
   
  For more examples of date strings, see <xref:System.Convert.ToDateTime%28System.String%29?displayProperty=fullName>.  
   
-```c#  
+```cs  
 string dateTime = "01/08/2008 14:50:50.42";  
             DateTime dt = Convert.ToDateTime(dateTime);  
             Console.WriteLine("Year: {0}, Month: {1}, Day: {2}, Hour: {3}, Minute: {4}, Second: {5}, Millisecond: {6}",  

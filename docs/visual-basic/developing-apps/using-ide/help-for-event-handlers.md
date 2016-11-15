@@ -76,5 +76,5 @@ End Sub
 ```  
   
 ## See Also  
- [Events](../Topic/Handling%20and%20Raising%20Events.md)   
- [Event Handlers Overview](../Topic/Event%20Handlers%20Overview%20\(Windows%20Forms\).md)
+ [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f)   
+ [Event Handlers Overview](http://msdn.microsoft.com/library/228112e1-1711-42ee-8ffa-ff3555bffe66)

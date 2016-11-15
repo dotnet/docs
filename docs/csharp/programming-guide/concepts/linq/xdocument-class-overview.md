@@ -57,7 +57,7 @@ This topic introduces the <xref:System.Xml.Linq.XDocument> class.
   
  The following code creates an <xref:System.Xml.Linq.XDocument> object and its associated contained objects.  
   
-```c#  
+```cs  
 XDocument d = new XDocument(  
     new XComment("This is a comment."),  
     new XProcessingInstruction("xml-stylesheet",  

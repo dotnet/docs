@@ -33,7 +33,7 @@ translation.priority.mt:
 # Target folder is a file
 You are specifying a file while attempting to perform a folder-related action.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check the path you are supplying to make sure you are specifying a folder rather than a file.  
   

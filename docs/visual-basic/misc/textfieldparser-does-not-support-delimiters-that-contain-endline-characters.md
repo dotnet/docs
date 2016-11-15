@@ -35,7 +35,7 @@ translation.priority.mt:
 # TextFieldParser does not support delimiters that contain endline characters
 A delimiter that contains an endline character has been supplied, but the `TextFieldParse`r does not support delimiters that contain endline characters.  
   
-### To correct this error  
+## To correct this error  
   
 -   Supply a correct delimiter.  
   

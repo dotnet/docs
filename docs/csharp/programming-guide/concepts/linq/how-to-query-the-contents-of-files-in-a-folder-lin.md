@@ -27,7 +27,7 @@ This example shows how to query over all the files in a specified directory tree
   
 ## Example  
   
-```c#  
+```cs  
 class QueryContents  
 {  
     public static void Main()  

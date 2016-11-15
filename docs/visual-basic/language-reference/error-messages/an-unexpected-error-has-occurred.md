@@ -42,7 +42,7 @@ The application could not acquire a necessary operating system resource. Some of
   
 -   The application needs to access an operating-system object, but another process is using it.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check that the application has sufficient permissions to create named operating-system objects.  
   
@@ -53,6 +53,6 @@ The application could not acquire a necessary operating system resource. Some of
 4.  Note the circumstances under which the error occurred, and call Microsoft Product Support Services  
   
 ## See Also  
- [Application Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/application-page-project-designer-visual-basic)   
- [Debugger Basics](/visual-studio/debugger/debugger-basics)   
- [Talk to Us](/visual-studio/ide/talk-to-us)
+ [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)   
+ [Debugger Basics](/visualstudio/debugger/debugger-basics)   
+ [Talk to Us](/visualstudio/ide/talk-to-us)

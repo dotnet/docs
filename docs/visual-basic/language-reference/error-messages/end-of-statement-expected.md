@@ -44,7 +44,7 @@ The statement is syntactically complete, but an additional programming element f
   
  **Error ID:** BC30205  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check to see if two different statements have inadvertently been put on the same line.  
   

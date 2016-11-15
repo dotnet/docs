@@ -41,7 +41,7 @@ The `Is` comparison operator determines whether two object variables refer to th
   
  **Error ID:** BC30020  
   
-### To correct this error  
+## To correct this error  
   
 -   Use the appropriate arithmetic comparison operator or the `Like` operator to compare two value types.  
   

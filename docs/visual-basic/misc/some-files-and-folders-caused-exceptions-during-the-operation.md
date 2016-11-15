@@ -33,7 +33,7 @@ translation.priority.mt:
 # Some files and folders caused exceptions during the operation
 Directories and files may cause exceptions when an operation is attempted but the user lacks necessary permissions.  
   
-### To correct this error  
+## To correct this error  
   
 -   Add the permissions necessary to access all files and folders.  
   

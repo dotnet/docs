@@ -32,7 +32,7 @@ To write a query on XML that is in a namespace, you must use <xref:System.Xml.Li
 ## Example  
  The following example creates an XML tree that is in a default namespace. It then retrieves a collection of elements.  
   
-```c#  
+```cs  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = XElement.Parse(  
 @"<Root xmlns='http://www.adventure-works.com'>  
@@ -63,7 +63,7 @@ foreach (XElement el in c1)
   
  The following example creates an XML tree that is in a namespace with a prefix. It then retrieves a collection of elements.  
   
-```c#  
+```cs  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = XElement.Parse(  
 @"<aw:Root xmlns:aw='http://www.adventure-works.com'>  

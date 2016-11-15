@@ -35,7 +35,7 @@ translation.priority.ht:
 The following table contains a listing of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language statements.  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |[RaiseEvent](../../../visual-basic/language-reference/statements/raiseevent-statement.md)|[ReDim](../../../visual-basic/language-reference/statements/redim-statement.md)|[REM](../../../visual-basic/language-reference/statements/rem-statement.md)|[RemoveHandler](../../../visual-basic/language-reference/statements/removehandler-statement.md)|  
 |[Resume](../../../visual-basic/language-reference/statements/resume-statement.md)|[Return](../../../visual-basic/language-reference/statements/return-statement.md)|[Select...Case](../../../visual-basic/language-reference/statements/select-case-statement.md)|[Set](../../../visual-basic/language-reference/statements/set-statement.md)|  
 |[Stop](../../../visual-basic/language-reference/statements/stop-statement.md)|[Structure](../../../visual-basic/language-reference/statements/structure-statement.md)|[Sub](../../../visual-basic/language-reference/statements/sub-statement.md)|[SyncLock](../../../visual-basic/language-reference/statements/synclock-statement.md)|  

@@ -23,7 +23,7 @@ You can use the <xref:System.Xml.Linq.XContainer.Descendants%2A> axis method to 
 ## Example  
  This example uses the <xref:System.Linq.Enumerable.First%2A> standard query operator.  
   
-```c#  
+```cs  
 XElement root = XElement.Parse(@"<Root>  
   <Child1>  
     <GrandChild1>GC1 Value</GrandChild1>  
@@ -53,7 +53,7 @@ GC3 Value
 ## Example  
  The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
   
-```c#  
+```cs  
 XElement root = XElement.Parse(@"<aw:Root xmlns:aw='http://www.adventure-works.com'>  
   <aw:Child1>  
     <aw:GrandChild1>GC1 Value</aw:GrandChild1>  

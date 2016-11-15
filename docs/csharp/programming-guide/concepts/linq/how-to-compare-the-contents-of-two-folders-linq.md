@@ -38,7 +38,7 @@ This example demonstrates three ways to compare two file listings:
   
 ## Example  
   
-```c#  
+```cs  
 namespace QueryCompareTwoDirs  
 {  
     class CompareDirs  

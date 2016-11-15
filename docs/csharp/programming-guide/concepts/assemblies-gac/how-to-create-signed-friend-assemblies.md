@@ -29,7 +29,7 @@ This example shows how to use friend assemblies with assemblies that have strong
   
 1.  Open a command prompt.  
   
-2.  Use the following sequence of commands with the Strong Name tool to generate a keyfile and to display its public key. For more information, see [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md).  
+2.  Use the following sequence of commands with the Strong Name tool to generate a keyfile and to display its public key. For more information, see [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23).  
   
     1.  Generate a strong-name key for this example and store it in the file FriendAssemblies.snk:  
   
@@ -47,7 +47,7 @@ This example shows how to use friend assemblies with assemblies that have strong
   
      The Strong Name tool generates a new public key every time it runs. Therefore, you must replace the public key in the following code with the public key you just generated, as shown in the following example.  
   
-    ```c#  
+    ```cs  
     // friend_signed_A.cs  
     // Compile with:   
     // csc /target:library /keyfile:FriendAssemblies.snk friend_signed_A.cs  
@@ -66,13 +66,13 @@ This example shows how to use friend assemblies with assemblies that have strong
   
 4.  Compile and sign friend_signed_A by using the following command.  
   
-    ```c#  
+    ```cs  
     csc /target:library /keyfile:FriendAssemblies.snk friend_signed_A.cs  
     ```  
   
 5.  Create a C# file that is named `friend_signed_B` and contains the following code. Because friend_signed_A specifies friend_signed_B as a friend assembly, the code in friend_signed_B can access `internal` types and members from friend_signed_A. The file contains the following code.  
   
-    ```c#  
+    ```cs  
     // friend_signed_B.cs  
     // Compile with:   
     // csc /keyfile:FriendAssemblies.snk /r:friend_signed_A.dll /out:friend_signed_B.exe friend_signed_B.cs  
@@ -88,7 +88,7 @@ This example shows how to use friend assemblies with assemblies that have strong
   
 6.  Compile and sign friend_signed_B by using the following command.  
   
-    ```c#  
+    ```cs  
     csc /keyfile:FriendAssemblies.snk /r:friend_signed_A.dll /out:friend_signed_B.exe friend_signed_B.cs  
     ```  
   
@@ -103,10 +103,10 @@ This example shows how to use friend assemblies with assemblies that have strong
   
 ## See Also  
  <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>   
- [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache.md)   
+ [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)   
  [Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md)   
  [How to: Create Unsigned Friend Assemblies (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)   
  [/keyfile](../../../../visual-basic/reference/command-line-compiler/keyfile.md)   
- [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md)   
- [Creating and Using Strong-Named Assemblies](../Topic/Creating%20and%20Using%20Strong-Named%20Assemblies.md)   
+ [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23)   
+ [Creating and Using Strong-Named Assemblies](https://msdn.microsoft.com/library/xwb8f617)   
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)

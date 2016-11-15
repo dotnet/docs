@@ -35,7 +35,7 @@ translation.priority.mt:
 # Object doesn&#39;t support current locale setting (Visual Basic)
 You tried to access an object that does not support the locale setting for the current project.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check which locale settings the object supports.  
   

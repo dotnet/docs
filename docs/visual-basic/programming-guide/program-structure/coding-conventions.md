@@ -48,7 +48,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 ## Naming Conventions  
   
--   For information about naming guidelines, see [Naming Guidelines](../Topic/Naming%20Guidelines.md) topic.  
+-   For information about naming guidelines, see [Naming Guidelines](http://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3) topic.  
   
 -   Do not use "My" or "my" as part of a variable name. This practice creates confusion with the `My` objects.  
   
@@ -58,7 +58,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 -   Insert tabs as spaces, and use smart indenting with four-space indents.  
   
--   Use **Pretty listing (reformatting) of code** to reformat your code in the code editor. For more information, see [Options, Text Editor, Basic (Visual Basic)](/visual-studio/ide/reference/options-text-editor-basic-visual-basic).  
+-   Use **Pretty listing (reformatting) of code** to reformat your code in the code editor. For more information, see [Options, Text Editor, Basic (Visual Basic)](/visualstudio/ide/reference/options-text-editor-basic-visual-basic).  
   
 -   Use only one statement per line. Don't use the Visual Basic line separator character (:).  
   
@@ -228,4 +228,4 @@ Microsoft develops samples and documentation that follow the guidelines in this 
      [!code-vb[VbVbalrGuidelines#34](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_26.vb)]  
   
 ## See Also  
- [Secure Coding Guidelines](../Topic/Secure%20Coding%20Guidelines.md)
+ [Secure Coding Guidelines](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)

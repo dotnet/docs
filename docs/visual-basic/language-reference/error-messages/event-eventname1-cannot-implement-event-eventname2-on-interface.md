@@ -41,7 +41,7 @@ translation.priority.ht:
   
  **Error ID:** BC31423  
   
-### To correct this error  
+## To correct this error  
   
 -   Implement the events separately.  
   

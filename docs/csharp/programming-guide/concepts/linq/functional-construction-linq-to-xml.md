@@ -35,7 +35,7 @@ translation.priority.mt:
   
  These features enable you to write code to create an XML tree. The following is an example:  
   
-```c#  
+```cs  
 XElement contacts =  
     new XElement("Contacts",  
         new XElement("Contact",  
@@ -53,7 +53,7 @@ XElement contacts =
   
  These features also enable you to write code that uses the results of [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] queries when you create an XML tree, as follows:  
   
-```c#  
+```cs  
 XElement srcTree = new XElement("Root",  
     new XElement("Element", 1),  
     new XElement("Element", 2),  

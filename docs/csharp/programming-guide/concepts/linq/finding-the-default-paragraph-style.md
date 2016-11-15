@@ -31,7 +31,7 @@ The first task in the Manipulating Information in a WordprocessingML Document tu
   
 ### Code  
   
-```c#  
+```cs  
 const string fileName = "SampleDoc.docx";  
   
 const string documentRelationshipType =  
@@ -97,4 +97,4 @@ The default style is: Normal
 -   [Retrieving the Paragraphs and Their Styles (C#)](../../../../csharp/programming-guide/concepts/linq/retrieving-the-paragraphs-and-their-styles.md)  
   
 ## See Also  
- [Tutorial: Manipulating Content in a WordprocessingML Document](../Topic/Tutorial:%20Manipulating%20Content%20in%20a%20WordprocessingML%20Document.md)
+ [Tutorial: Manipulating Content in a WordprocessingML Document](http://msdn.microsoft.com/library/2696355e-4f83-4eaf-91b2-baa721f42fb4)

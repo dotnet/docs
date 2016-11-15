@@ -31,7 +31,7 @@ This topic compares the XPath `preceding-sibling` axis to the [!INCLUDE[sqltecxl
   
  This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
   
-```c#  
+```cs  
 XElement co = XElement.Load("CustomersOrders.xml");  
   
 XElement add = co.Element("Customers").Element("Customer").Element("FullAddress");  

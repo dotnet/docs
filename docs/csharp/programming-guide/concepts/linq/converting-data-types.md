@@ -52,7 +52,7 @@ Conversion methods change the type of input objects.
 ## Query Expression Syntax Example  
  The following code example uses an explicitly-typed range variable  to cast a type to a subtype before accessing a member that is available only on the subtype.  
   
-```c#  
+```cs  
 class Plant  
 {  
     public string Name { get; set; }  

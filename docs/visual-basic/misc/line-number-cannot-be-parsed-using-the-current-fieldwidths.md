@@ -35,7 +35,7 @@ translation.priority.mt:
 # Line &lt;number&gt; cannot be parsed using the current FieldWidths
 The specified line cannot be parsed because its fields have widths other than those specified.  
   
-### To correct this error  
+## To correct this error  
   
 -   Adjust `FieldWidths` so the line can be parsed correctly, or insert exception-handling code in order to handle the line.  
   

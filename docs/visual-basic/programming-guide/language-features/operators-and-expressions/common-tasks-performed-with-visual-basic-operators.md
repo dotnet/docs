@@ -48,9 +48,8 @@ Operators perform many common tasks involving one or more expressions called *op
 ## Arithmetic and Bit-shift Tasks  
  The following table summarizes the available arithmetic and bit-shift operations.  
   
-|||  
-|-|-|  
 |To|See|  
+|---|---|  
 |Add one numeric value to another|[+ Operator](../../../../visual-basic/language-reference/operators/addition-operator.md)|  
 |Subtract one numeric value from another|[- Operator (Visual Basic)](../../../../visual-basic/language-reference/operators/subtraction-operator.md)|  
 |Reverse the sign of a numeric value|[- Operator (Visual Basic)](../../../../visual-basic/language-reference/operators/subtraction-operator.md)|  
@@ -65,9 +64,8 @@ Operators perform many common tasks involving one or more expressions called *op
 ## Comparison Tasks  
  The following table summarizes the available comparison operations.  
   
-|||  
-|-|-|  
 |To|See|  
+|---|---|  
 |Determine whether two values are equal|`=` Operator ([Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md))|  
 |Determine whether two values are unequal|`<>` Operator ([Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md))|  
 |Determine whether one value is less than another|`<` Operator ([Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md))|  
@@ -81,18 +79,16 @@ Operators perform many common tasks involving one or more expressions called *op
 ## Concatenation Tasks  
  The following table summarizes the available concatenation operations.  
   
-|||  
-|-|-|  
 |To|See|  
+|---|---|  
 |Join multiple strings into a single string|`&` Operator ([Concatenation Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md))|  
 |Join numeric values with string values|`+` Operator ([Concatenation Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md))|  
   
 ## Logical and Bitwise Tasks  
  The following table summarizes the available logical and bitwise operations.  
   
-|||  
-|-|-|  
 |To|See|  
+|---|---|  
 |Perform logical negation on a Boolean value|[Not Operator](../../../../visual-basic/language-reference/operators/not-operator.md)|  
 |Perform logical conjunction on two Boolean values|[And Operator](../../../../visual-basic/language-reference/operators/and-operator.md)|  
 |Perform inclusive logical disjunction on two Boolean values|[Or Operator](../../../../visual-basic/language-reference/operators/or-operator.md)|  

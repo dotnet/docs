@@ -27,7 +27,7 @@ This example shows how to find all files that have a specified file name extensi
   
 ## Example  
   
-```c#  
+```cs  
 class FindFileByExtension  
 {  
     // This query will produce the full path for all .txt files  

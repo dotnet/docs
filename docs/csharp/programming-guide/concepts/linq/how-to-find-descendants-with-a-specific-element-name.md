@@ -23,7 +23,7 @@ Sometimes you want to find all descendants with a particular name. You could wri
 ## Example  
  The following example shows how to find descendants based on the element name.  
   
-```c#  
+```cs  
 XElement root = XElement.Parse(@"<root>  
   <para>  
     <r>  
@@ -62,7 +62,7 @@ Some text that is broken up into multiple segments.
 ## Example  
  The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
   
-```c#  
+```cs  
 XElement root = XElement.Parse(@"<root xmlns='http://www.adatum.com'>  
   <para>  
     <r>  

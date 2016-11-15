@@ -35,7 +35,7 @@ translation.priority.mt:
 # Insufficient security permissions to set the system date
 The security permissions are insufficient to set the system date.  
   
-### To correct this error  
+## To correct this error  
   
 -   Change the security permissions to allow setting of the system date.  
   

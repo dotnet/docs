@@ -36,7 +36,7 @@ translation.priority.ht:
 # &#39;Dir&#39; function must first be called with a &#39;PathName&#39; argument
 An initial call to the `Dir` function does not include the `PathName` argument. The first call to `Dir` must include a `PathName`, but subsequent calls to `Dir` do not need to include parameters to retrieve the next item.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Supply a `PathName` argument in the function call.  
   

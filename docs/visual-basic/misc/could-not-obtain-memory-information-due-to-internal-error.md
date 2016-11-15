@@ -35,7 +35,7 @@ translation.priority.mt:
 # Could not obtain memory information due to internal error
 A call to one of the memory-information properties of the `My.Computer.Info` object failed.  
   
-### To correct this error  
+## To correct this error  
   
 -   Add a `Try...Catch` block around the call to the memory-information property of the `My.Computer.Info` object.  
   

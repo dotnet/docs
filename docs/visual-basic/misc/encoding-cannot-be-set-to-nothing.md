@@ -35,7 +35,7 @@ An attempt to read from or write to a file has failed because the parameter `enc
   
  <xref:System.Text.Encoding> is used to determine what encoding to use when writing to a file. The default is UTF-8.  
   
-### To correct this error  
+## To correct this error  
   
 -   Supply a valid value for the `encoding` parameter.  
   

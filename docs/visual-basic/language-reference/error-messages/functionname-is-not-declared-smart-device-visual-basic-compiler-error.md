@@ -41,7 +41,7 @@ translation.priority.ht:
   
  **Error ID:** BC30766  
   
-### To correct this error  
+## To correct this error  
   
 -   Perform file operations with functions defined in the `System.IO` namespace.  
   

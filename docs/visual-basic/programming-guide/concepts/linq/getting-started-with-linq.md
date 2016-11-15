@@ -64,10 +64,10 @@ This section contains overviews, examples, and background information that will 
  [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)  
  Describes how Visual Basic supports LINQ to XML.  
   
- [LINQ to DataSet Overview](../Topic/LINQ%20to%20DataSet%20Overview.md)  
+ [LINQ to DataSet Overview](http://msdn.microsoft.com/library/dc20a8fb-03f6-4b68-9c2b-7f7299e3070b)  
  Provides a conceptual overview of LINQ to DataSet.  
   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)  
+ [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
  Explains the LINQ to SQL technology and provides links to topics that help you use LINQ to SQL.  
   
  [Visual Studio IDE and Tools Support for LINQ (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/visual-studio-ide-and-tools-support-for-linq.md)  

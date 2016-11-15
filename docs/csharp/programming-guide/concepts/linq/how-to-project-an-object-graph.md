@@ -23,7 +23,7 @@ This topic illustrates how to project, or populate, an object graph from XML.
 ## Example  
  The following code populates an object graph with the `Address`, `PurchaseOrder`, and `PurchaseOrderItem` classes from the [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md) XML document.  
   
-```c#  
+```cs  
 class Address  
 {  
     public enum AddressUse  

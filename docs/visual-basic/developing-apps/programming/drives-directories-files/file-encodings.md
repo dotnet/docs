@@ -49,9 +49,8 @@ File encodings, also known as character encodings, specify how to represent char
 ## Encoding Class  
  The <xref:System.Text.Encoding> class represents a character encoding. This table lists the type of encodings available and describes each.  
   
-|||  
-|-|-|  
-|Name|Description|  
+|Name|Description|
+|---|---|    
 |<xref:System.Text.ASCIIEncoding>|Represents an ASCII character encoding of Unicode characters.|  
 |<xref:System.Text.UnicodeEncoding>|Represents a UTF-16 encoding of Unicode characters.|  
 |<xref:System.Text.UTF32Encoding>|Represents a UTF-32 encoding of Unicode characters.|  

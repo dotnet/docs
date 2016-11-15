@@ -25,7 +25,7 @@ This topic explains how to retrieve a single attribute of an element, given the 
 ## Example  
  The following example uses the <xref:System.Xml.Linq.XElement.Attribute%2A> method.  
   
-```c#  
+```cs  
 XElement cust = new XElement("PhoneNumbers",  
     new XElement("Phone",  
         new XAttribute("type", "home"),  
@@ -53,7 +53,7 @@ work
 ## Example  
  If you want to retrieve the value of the attribute, you can cast it, just as you do for with <xref:System.Xml.Linq.XElement> objects. The following example demonstrates this.  
   
-```c#  
+```cs  
 XElement cust = new XElement("PhoneNumbers",  
     new XElement("Phone",  
         new XAttribute("type", "home"),  
@@ -81,7 +81,7 @@ work
 ## Example  
  The following example shows the same code for an attribute that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
   
-```c#  
+```cs  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement cust = new XElement(aw + "PhoneNumbers",  
     new XElement(aw + "Phone",  

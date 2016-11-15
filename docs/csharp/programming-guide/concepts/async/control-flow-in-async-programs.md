@@ -40,7 +40,7 @@ You can write and maintain asynchronous programs more easily by using the `async
   
  The following code shows an outline of the program.  
   
-```c#  
+```cs  
   
 public partial class MainWindow : Window  
 {  
@@ -144,7 +144,7 @@ Length of the downloaded string: 33946.
   
 6.  In the **XAML** view of MainWindow.xaml, replace the code with the following code.  
   
-    ```c#  
+    ```cs  
     <Window  
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
@@ -167,7 +167,7 @@ Length of the downloaded string: 33946.
   
 9. In MainWindow.xaml.cs, replace the code with the following code.  
   
-    ```c#  
+    ```cs  
     using System;  
     using System.Collections.Generic;  
     using System.Linq;  

@@ -33,7 +33,7 @@ translation.priority.mt:
 # Root folder cannot be renamed
 An attempt has been made to rename the root directory. This may be a result of an improperly parsed file path.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check the file path to make sure that it is correct.  
   

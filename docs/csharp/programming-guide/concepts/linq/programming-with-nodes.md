@@ -33,7 +33,7 @@ translation.priority.mt:
   
  The following example demonstrates this:  
   
-```c#  
+```cs  
 XDocument doc = XDocument.Parse(@"<!-- a comment --><Root/>");  
 Console.WriteLine(doc.Nodes().OfType<XComment>().First().Parent == null);  
 Console.WriteLine(doc.Root.Parent == null);  
@@ -51,7 +51,7 @@ True
   
  The following example demonstrates this:  
   
-```c#  
+```cs  
 XElement xmlTree = new XElement("Root", "Content");  
   
 Console.WriteLine(xmlTree.Nodes().OfType<XText>().Count());  
@@ -76,7 +76,7 @@ Console.WriteLine(xmlTree.Nodes().OfType<XText>().Count());
 ### Empty Text Nodes are Possible  
  In some XML programming models, text nodes are guaranteed to not contain the empty string. The reasoning is that such a text node has no impact on serialization of the XML. However, for the same reason that adjacent text nodes are possible, if you remove the text from a text node by setting its value to the empty string, the text node itself will not be deleted.  
   
-```c#  
+```cs  
 XElement xmlTree = new XElement("Root", "Content");  
 XText textNode = xmlTree.Nodes().OfType<XText>().First();  
   
@@ -96,7 +96,7 @@ Console.WriteLine(">>{0}<<", textNode2);
 ### An Empty Text Node Impacts Serialization  
  If an element contains only a child text node that is empty, it is serialized with the long tag syntax: `<Child></Child>`. If an element contains no child nodes whatsoever, it is serialized with the short tag syntax: `<Child />`.  
   
-```c#  
+```cs  
 XElement child1 = new XElement("Child1",  
     new XText("")  
 );  
@@ -117,7 +117,7 @@ Console.WriteLine(child2);
   
  The <xref:System.Xml.Linq.XAttribute.IsNamespaceDeclaration%2A> property indicates whether an attribute is a namespace declaration.  
   
-```c#  
+```cs  
 XElement root = XElement.Parse(  
 @"<Root  
     xmlns='http://www.adventure-works.com'  
@@ -138,7 +138,7 @@ AnAttribute="abc"  IsNamespaceDeclaration:False
 ### XPath Axis Methods Do Not Return Child White Space of XDocument  
  [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] allows for child text nodes of an <xref:System.Xml.Linq.XDocument>, as long as the text nodes contain only white space. However, the XPath object model does not include white space as child nodes of a document, so when you iterate through the children of an <xref:System.Xml.Linq.XDocument> using the <xref:System.Xml.Linq.XContainer.Nodes%2A> axis, white space text nodes will be returned. However, when you iterate through the children of an <xref:System.Xml.Linq.XDocument> using the XPath axis methods, white space text nodes will not be returned.  
   
-```c#  
+```cs  
 // Create a document with some white space child nodes of the document.  
 XDocument root = XDocument.Parse(  
 @"<?xml version='1.0' encoding='utf-8' standalone='yes'?>  
@@ -165,7 +165,7 @@ Console.WriteLine(((IEnumerable)root.XPathEvaluate("text()")).OfType<XText>().Co
 ### XDeclaration Objects are not Nodes  
  When you iterate through the children nodes of an <xref:System.Xml.Linq.XDocument>, you will not see the XML declaration object. It is a property of the document, not a child node of it.  
   
-```c#  
+```cs  
 XDocument doc = new XDocument(  
     new XDeclaration("1.0", "utf-8", "yes"),  
     new XElement("Root")  

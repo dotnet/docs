@@ -33,7 +33,7 @@ translation.priority.mt:
 # The folder cannot be created since a file already exists with the same path
 An attempt has been made to create a directory, but a file already exists with that path. This may be a result of incorrectly parsing paths, particularly when working with relative paths.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check that you are supplying the correct path.  
   

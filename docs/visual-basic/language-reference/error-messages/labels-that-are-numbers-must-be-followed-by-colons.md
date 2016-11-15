@@ -41,7 +41,7 @@ Line numbers follow the same rules as other kinds of labels, and must contain a 
   
  **Error ID:** BC30801  
   
-### To correct this error  
+## To correct this error  
   
 -   Place the number followed by a colon at the start of a line of code; for example:  
   

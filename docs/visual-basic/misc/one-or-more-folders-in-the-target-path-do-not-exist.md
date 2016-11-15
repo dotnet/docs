@@ -33,7 +33,7 @@ translation.priority.mt:
 # One or more folders in the target path do not exist
 One or more of the directories supplied in the target path do not exist. This may be a result of an incorrectly parsed path, particularly if supplying a relative path.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check to make sure you are supplying the correct target path.  
   

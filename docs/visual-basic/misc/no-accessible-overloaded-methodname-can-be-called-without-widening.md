@@ -35,7 +35,7 @@ translation.priority.mt:
 # No accessible overloaded &#39;&lt;methodname&gt;&#39; can be called with these arguments without a widening conversion: &lt;list&gt;
 An overloaded method was called, but no method could be matched with the list of provided arguments without a widening conversion.  
   
-### To correct this error  
+## To correct this error  
   
 -   Specify `Option Strict Off`.  
   

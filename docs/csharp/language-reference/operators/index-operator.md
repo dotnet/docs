@@ -1,5 +1,5 @@
 ---
-title: "Operator (C# Reference)1 | Microsoft Docs"
+title: "Operator (C# Reference) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -58,7 +58,7 @@ Square brackets (`[]`) are used for arrays, indexers, and attributes. They can a
   
  [!code-cs[csRefOperators#45](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_3.cs)]  
   
- Square brackets are also used to specify [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md):  
+ Square brackets are also used to specify [Attributes](../../../csharp/programming-guide/concepts/attributes/index.md):  
   
  [!code-cs[csRefOperators#46](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_4.cs)]  
   

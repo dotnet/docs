@@ -35,7 +35,7 @@ translation.priority.mt:
 # Line &lt;number&gt; cannot be read because it exceeds the maximum line size.
 The line cannot be read because it exceeds the maximum line size. Usually this means that there is an opening quotation mark in the file, but no closing quotation mark.  
   
-### To correct this error  
+## To correct this error  
   
 -   Insert a closing quotation mark in the file.  
   

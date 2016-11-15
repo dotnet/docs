@@ -90,6 +90,6 @@ Specifies that one or more declared programming elements are accessible only fro
  [Friend](../../../visual-basic/language-reference/modifiers/friend.md)   
  [Private](../../../visual-basic/language-reference/modifiers/private.md)   
  [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
- [Procedures](../../../visual-basic/language-reference/procedures/index.md)   
+ [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)   
  [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

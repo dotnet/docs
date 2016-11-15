@@ -29,7 +29,7 @@ This example shows how to use friend assemblies with assemblies that have strong
   
 1.  Open a command prompt.  
   
-2.  Use the following sequence of commands with the Strong Name tool to generate a keyfile and to display its public key. For more information, see [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md).  
+2.  Use the following sequence of commands with the Strong Name tool to generate a keyfile and to display its public key. For more information, see [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23).  
   
     1.  Generate a strong-name key for this example and store it in the file FriendAssemblies.snk:  
   
@@ -64,7 +64,7 @@ This example shows how to use friend assemblies with assemblies that have strong
   
 4.  Compile and sign friend_signed_A by using the following command.  
   
-    ```vb#  
+    ```vb  
     Vbc /target:library /keyfile:FriendAssemblies.snk friend_signed_A.vb  
     ```  
   
@@ -84,7 +84,7 @@ This example shows how to use friend assemblies with assemblies that have strong
   
 6.  Compile and sign friend_signed_B by using the following command.  
   
-    ```vb#  
+    ```vb  
     Vbc /keyfile:FriendAssemblies.snk /r:friend_signed_A.dll friend_signed_B.vb  
     ```  
   
@@ -103,6 +103,6 @@ This example shows how to use friend assemblies with assemblies that have strong
  [Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md)   
  [How to: Create Unsigned Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md)   
  [/keyfile](../../../../visual-basic/reference/command-line-compiler/keyfile.md)   
- [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md)   
- [Creating and Using Strong-Named Assemblies](../Topic/Creating%20and%20Using%20Strong-Named%20Assemblies.md)   
+ [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23)   
+ [Creating and Using Strong-Named Assemblies](https://msdn.microsoft.com/library/xwb8f617)   
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)

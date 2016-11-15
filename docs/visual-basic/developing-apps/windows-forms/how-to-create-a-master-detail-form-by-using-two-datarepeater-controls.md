@@ -38,7 +38,7 @@ You can display related data by using two or more <xref:Microsoft.VisualBasic.Po
   
  You can display related data by dragging detail items that share the same master table node from the **Data Sources** window onto a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control. For example, if you have a data source that has a Customers table and a related Orders table, you see both tables as top-level nodes in the tree view in the **Data Sources** window. Expand the Customers node so that you can see the columns. Notice that the last column in the list is an expandable node that represents the Orders table. This node represents the related orders for a customer.  
   
- [!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
 ### To display related data in two DataRepeater controls  
   
@@ -49,7 +49,7 @@ You can display related data by using two or more <xref:Microsoft.VisualBasic.Po
 3.  On the **Data** menu, click **Show Data Sources**.  
   
     > [!NOTE]
-    >  If the **Data Sources** window is empty, add a data source to it. For more information, see [Add new data sources](/visual-studio/data-tools/add-new-data-sources).  
+    >  If the **Data Sources** window is empty, add a data source to it. For more information, see [Add new data sources](/visualstudio/data-tools/add-new-data-sources).  
   
 4.  In the **Data Sources** window, select the top-level node for the master table.  
   
@@ -67,6 +67,6 @@ You can display related data by using two or more <xref:Microsoft.VisualBasic.Po
  <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>   
  [Introduction to the DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-datarepeater-control-visual-studio.md)   
  [How to: Display Bound Data in a DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/how-to-display-bound-data-in-a-datarepeater-control-visual-studio.md)   
- [How to: Display Related Data in a Windows Forms Application](../Topic/How%20to:%20Display%20Related%20Data%20in%20a%20Windows%20Forms%20Application.md)   
+ [How to: Display Related Data in a Windows Forms Application](http://msdn.microsoft.com/library/60b1f1ec-6257-42ab-83f0-06d54ed364fd)   
  [How to: Change the Appearance of a DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio.md)   
  [Troubleshooting the DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/troubleshooting-the-datarepeater-control-visual-studio.md)

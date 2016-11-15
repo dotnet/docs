@@ -23,7 +23,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Async Return Types (C#)
-Async methods have three possible return types: <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, and void. In Visual Basic, the void return type is written as a [Sub](../../../../visual-basic/language-reference/procedures/sub-procedures.md) procedure. For more information about async methods, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md).  
+Async methods have three possible return types: <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, and void. In Visual Basic, the void return type is written as a [Sub](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md) procedure. For more information about async methods, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md).  
   
  Each return type is examined in one of the following sections, and you can find a full example that uses all three types at the end of the topic.  
   
@@ -35,7 +35,7 @@ Async methods have three possible return types: <xref:System.Threading.Tasks.Tas
   
  In the following example, the `TaskOfT_MethodAsync` async method contains a return statement that returns an integer. Therefore, the method declaration must specify a return type of `Task<int>`.  
   
-```c#  
+```cs  
 // TASK<T> EXAMPLE  
 async Task<int> TaskOfT_MethodAsync()  
 {  
@@ -61,7 +61,7 @@ async Task<int> TaskOfT_MethodAsync()
   
  The following code calls and awaits method `TaskOfT_MethodAsync`. The result is assigned to the `result1` variable.  
   
-```c#  
+```cs  
 // Call and await the Task<T>-returning async method in the same statement.  
 int result1 = await TaskOfT_MethodAsync();  
 ```  
@@ -71,7 +71,7 @@ int result1 = await TaskOfT_MethodAsync();
 > [!WARNING]
 >  The <xref:System.Threading.Tasks.Task%601.Result%2A> property is a blocking property. If you try to access it before its task is finished, the thread that's currently active is blocked until the task completes and the value is available. In most cases, you should access the value by using `await` instead of accessing the property directly.  
   
-```c#  
+```cs  
 // Call and await in separate statements.  
 Task<int> integerTask = TaskOfT_MethodAsync();  
   
@@ -83,7 +83,7 @@ int result2 = await integerTask;
   
  The display statements in the following code verify that the values of the `result1` variable, the `result2` variable, and the `Result` property are the same. Remember that the `Result` property is a blocking property and shouldn't be accessed before its task has been awaited.  
   
-```c#  
+```cs  
 // Display the values of the result1 variable, the result2 variable, and  
 // the integerTask.Result property.  
 textBox1.Text += String.Format("\r\nValue of result1 variable:   {0}\r\n", result1);  
@@ -96,7 +96,7 @@ textBox1.Text += String.Format("Value of integerTask.Result: {0}\r\n", integerTa
   
  In the following example, async method `Task_MethodAsync` doesn't contain a return statement. Therefore, you specify a return type of `Task` for the method, which enables `Task_MethodAsync` to be awaited. The definition of the `Task` type doesn't include a `Result` property to store a return value.  
   
-```c#  
+```cs  
 // TASK EXAMPLE  
 async Task Task_MethodAsync()  
 {  
@@ -115,7 +115,7 @@ async Task Task_MethodAsync()
   
  The following code calls and awaits method `Task_MethodAsync`.  
   
-```c#  
+```cs  
 // Call and await the Task-returning async method in the same statement.  
 await Task_MethodAsync();  
 ```  
@@ -158,7 +158,7 @@ await Task_MethodAsync();
   
 6.  In the **XAML** window of MainWindow.xaml, replace the code with the following code.  
   
-    ```c#  
+    ```cs  
     <Window x:Class="AsyncReturnTypes.MainWindow"  
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
@@ -178,7 +178,7 @@ await Task_MethodAsync();
   
 8.  Replace the code in MainWindow.xaml.cs with the following code.  
   
-    ```c#  
+    ```cs  
     using System;  
     using System.Collections.Generic;  
     using System.Linq;  

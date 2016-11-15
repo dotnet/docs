@@ -23,7 +23,7 @@ A common and useful application of XML trees is as a hierarchical name/value dat
 ## Example  
  The following example populates an XML tree from the local file system using recursion. It then queries the tree, calculating the total of the sizes of all files in the tree.  
   
-```c#  
+```cs  
 class Program  
 {  
     static XElement CreateFileSystemXmlTree(string source)  

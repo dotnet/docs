@@ -47,7 +47,7 @@ translation.priority.mt:
 ## Adding While Iterating  
  For example, suppose you want to write some code that for every element in a tree, you want to create a duplicate element:  
   
-```c#  
+```cs  
 XElement root = new XElement("Root",  
     new XElement("A", "1"),  
     new XElement("B", "2"),  
@@ -61,7 +61,7 @@ foreach (XElement e in root.Elements())
   
  You can fix this problem by pulling the collection into memory using the <xref:System.Linq.Enumerable.ToList%2A> standard query operator, as follows:  
   
-```c#  
+```cs  
 XElement root = new XElement("Root",  
     new XElement("A", "1"),  
     new XElement("B", "2"),  
@@ -88,7 +88,7 @@ Console.WriteLine(root);
 ## Deleting While Iterating  
  If you want to delete all nodes at a certain level, you might be tempted to write code like the following:  
   
-```c#  
+```cs  
 XElement root = new XElement("Root",  
     new XElement("A", "1"),  
     new XElement("B", "2"),  
@@ -112,7 +112,7 @@ Console.WriteLine(root);
   
  The solution again is to call <xref:System.Linq.Enumerable.ToList%2A> to materialize the collection, as follows:  
   
-```c#  
+```cs  
 XElement root = new XElement("Root",  
     new XElement("A", "1"),  
     new XElement("B", "2"),  
@@ -131,7 +131,7 @@ Console.WriteLine(root);
   
  Alternatively, you can eliminate the iteration altogether by calling <xref:System.Xml.Linq.XElement.RemoveAll%2A> on the parent element:  
   
-```c#  
+```cs  
 XElement root = new XElement("Root",  
     new XElement("A", "1"),  
     new XElement("B", "2"),  
@@ -146,7 +146,7 @@ Console.WriteLine(root);
   
  Another possible approach would be to put in some sort of transaction syntax into LINQ, and have the compiler attempt to analyze the code and determine if any particular collection needed to be materialized. However, attempting to determine all code that has side-effects is incredibly complex. Consider the following code:  
   
-```c#  
+```cs  
 var z =  
     from e in root.Elements()  
     where TestSomeCondition(e)  
@@ -168,7 +168,7 @@ var z =
   
  Second, if performance and other considerations allow, use only declarative code. Don't modify your existing XML tree. Generate a new one.  
   
-```c#  
+```cs  
 XElement root = new XElement("Root",  
     new XElement("A", "1"),  
     new XElement("B", "2"),  

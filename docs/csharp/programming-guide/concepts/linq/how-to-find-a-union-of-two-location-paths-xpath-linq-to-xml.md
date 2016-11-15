@@ -31,7 +31,7 @@ XPath allows you to find the union of the results of two XPath location paths.
   
  This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md).  
   
-```c#  
+```cs  
 XDocument data = XDocument.Load("Data.xml");  
   
 // LINQ to XML query  

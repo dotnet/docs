@@ -41,7 +41,7 @@ The `Any` data type was used with `Declare` statements in Visual Basic 6.0 and e
   
  **Error ID:** BC30828  
   
-### To correct this error  
+## To correct this error  
   
 1.  Declare parameters of the specific type you want to use; for example.  
   
@@ -55,4 +55,4 @@ The `Any` data type was used with `Declare` statements in Visual Basic 6.0 and e
  <xref:System.Runtime.InteropServices.MarshalAsAttribute>   
  [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)   
  [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
- [Creating Prototypes in Managed Code](../Topic/Creating%20Prototypes%20in%20Managed%20Code.md)
+ [Creating Prototypes in Managed Code](http://msdn.microsoft.com/library/ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d)

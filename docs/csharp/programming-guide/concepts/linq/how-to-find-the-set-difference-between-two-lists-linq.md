@@ -31,7 +31,7 @@ This example shows how to use LINQ to compare two lists of strings and output th
   
 ## Example  
   
-```c#  
+```cs  
 class CompareLists  
 {          
     static void Main()  

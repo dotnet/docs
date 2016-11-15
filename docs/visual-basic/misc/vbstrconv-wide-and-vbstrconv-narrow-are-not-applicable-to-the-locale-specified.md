@@ -35,11 +35,11 @@ translation.priority.mt:
 # VbStrConv.Wide and VbStrConv.Narrow are not applicable to the locale specified
 The application is attempting to use the `VbStrConv` enumeration members `Wide` or `Narrow`, which are not applicable to the specified locale.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Remove either `VbStrConv.Wide` or `VbStrConv.Narrow`.  
   
 ## See Also  
  <xref:System.Globalization>   
  [NOTINBUILD VbStrConv Enumeration](http://msdn.microsoft.com/en-us/59f83dd9-6361-47df-a836-02ba9d4cb936)   
- [Introduction to International Applications Based on the .NET Framework](/visual-studio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+ [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

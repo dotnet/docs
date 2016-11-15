@@ -23,7 +23,7 @@ This topic shows how to obtain the value of attributes. There are two main ways:
 ## Example  
  To retrieve the value of an attribute, you just cast the <xref:System.Xml.Linq.XAttribute> object to your desired type.  
   
-```c#  
+```cs  
 XElement root = new XElement("Root",  
                     new XAttribute("Attr", "abcde")  
                 );  
@@ -42,7 +42,7 @@ abcde
 ## Example  
  The following example shows how to retrieve the value of an attribute where the attribute is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
   
-```c#  
+```cs  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
                     new XAttribute(aw + "Attr", "abcde")  

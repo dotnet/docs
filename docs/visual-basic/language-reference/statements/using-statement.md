@@ -51,9 +51,8 @@ End Using
   
 ## Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`resourcelist`|Required if you do not supply `resourceexpression`. List of one or more system resources that this `Using` block controls, separated by commas.|  
 |`resourceexpression`|Required if you do not supply `resourcelist`. Reference variable or expression referring to a system resource to be controlled by this `Using` block.|  
 |`statements`|Optional. Block of statements that the `Using` block runs.|  
@@ -69,9 +68,8 @@ End Using
   
 ## resourcelist Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`resourcename`|Required. Reference variable that refers to a system resource that the `Using` block controls.|  
 |`New`|Required if the `Using` statement acquires the resource. If you have already acquired the resource, use the second syntax alternative.|  
 |`resourcetype`|Required. The class of the resource. The class must implement the <xref:System.IDisposable> interface.|  

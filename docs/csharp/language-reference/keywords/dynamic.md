@@ -53,7 +53,7 @@ The `dynamic` type enables the operations in which it occurs to bypass compile-t
   
  To see the difference between `dyn` and `obj` at compile time, add the following two lines between the declarations and the `WriteLine` statements in the previous example.  
   
-```c#  
+```cs  
 dyn = dyn + 3;  
 obj = obj + 3;  
 ```  

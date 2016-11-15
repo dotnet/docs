@@ -41,7 +41,7 @@ An entity reference (for example, `©`) that is not defined in the XML 1.0 speci
   
  **Error ID:** BC31180  
   
-### To correct this error  
+## To correct this error  
   
 -   Remove the unsupported entity reference.  
   

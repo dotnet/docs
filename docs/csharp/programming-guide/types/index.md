@@ -109,14 +109,14 @@ Value types and reference types in the CTS
   
  The built-in numeric types are structs, and they have properties and methods that you can access:  
   
-```c#  
+```cs  
 // Static method on type Byte.  
 byte b = Byte.MaxValue;  
 ```  
   
  But you declare and assign values to them as if they were simple non-aggregate types:  
   
-```c#  
+```cs  
 byte num = 0xA;  
 int i = 5;  
 char c = 'Z';  
@@ -141,14 +141,14 @@ char c = 'Z';
 ### Reference Types  
  A type that is defined as a [class](../../../csharp/language-reference/keywords/class.md), [delegate](../../../csharp/language-reference/keywords/delegate.md), array, or [interface](../../../csharp/language-reference/keywords/interface.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [null](../../../csharp/language-reference/keywords/null.md) until you explicitly create an instance of the object by using the [new](../../../csharp/language-reference/keywords/new.md) operator, or assign it an object that has been created elsewhere by using `new, as shown in the following example:`  
   
-```c#  
+```cs  
 MyClass mc = new MyClass();  
 MyClass mc2 = mc;  
 ```  
   
  An interface must be initialized together with a class object that implements it. If `MyClass` implements `IMyInterface`, you create an instance of `IMyInterface` as shown in the following example:  
   
-```c#  
+```cs  
 IMyInterface iface = new MyClass();  
 ```  
   

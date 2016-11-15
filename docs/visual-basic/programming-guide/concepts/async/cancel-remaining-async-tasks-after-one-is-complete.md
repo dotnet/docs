@@ -50,7 +50,7 @@ By using the <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullNa
  If you don't want to download the project, you can review the MainWindow.xaml.vb file at the end of this topic.  
   
 ## Building the Example  
- The example in this topic adds to the project that's developed in [Cancel an Async Task or a List of Tasks](../Topic/Cancel%20an%20Async%20Task%20or%20a%20List%20of%20Tasks%20\(C%23%20and%20Visual%20Basic\).md) to cancel a list of tasks. The example uses the same UI, although the **Cancel** button isn’t used explicitly.  
+ The example in this topic adds to the project that's developed in [Cancel an Async Task or a List of Tasks](http://msdn.microsoft.com/library/d6e4e801-df64-4705-98fc-df725a577fb0) to cancel a list of tasks. The example uses the same UI, although the **Cancel** button isn’t used explicitly.  
   
  To build the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **CancelAListOfTasks** as the **StartUp Project**. Add the changes in this topic to that project.  
   
@@ -84,25 +84,25 @@ End Function
 <CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
 4.  Call `WhenAny` on the collection of tasks. `WhenAny` returns a `Task(Of Task(Of Integer))` or `Task<Task<int>>`.  That is, `WhenAny` returns a task that evaluates to a single `Task(Of Integer)` or `Task<int>` when it’s awaited. That single task is the first task in the collection to finish. The task that finished first is assigned to `firstFinishedTask`. The type of `firstFinishedTask` is <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer because that's the return type of `ProcessURLAsync`.  
   
-    ```vb  
-    ' ***Call WhenAny and then await the result. The task that finishes   
-    ' first is assigned to firstFinishedTask.  
-    Dim firstFinishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)  
-    ```  
+```vb  
+' ***Call WhenAny and then await the result. The task that finishes   
+' first is assigned to firstFinishedTask.  
+Dim firstFinishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)  
+```  
   
 5.  In this example, you’re interested only in the task that finishes first. Therefore, use <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName> to cancel the remaining tasks.  
   
-    ```vb  
-    ' ***Cancel the rest of the downloads. You just want the first one.  
-    cts.Cancel()  
-    ```  
+```vb  
+' ***Cancel the rest of the downloads. You just want the first one.  
+cts.Cancel()  
+```  
   
 6.  Finally, await `firstFinishedTask` to retrieve the length of the downloaded content.  
   
-    ```vb  
-    Dim length = Await firstFinishedTask  
-    resultsTextBox.Text &= String.Format(vbCrLf & "Length of the downloaded website:  {0}" & vbCrLf, length)  
-    ```  
+```vb  
+Dim length = Await firstFinishedTask  
+resultsTextBox.Text &= String.Format(vbCrLf & "Length of the downloaded website:  {0}" & vbCrLf, length)  
+```  
   
  Run the program several times to verify that different downloads finish first.  
   
@@ -217,12 +217,12 @@ Class MainWindow
         Dim urls = New List(Of String) From  
             {  
                 "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
+                "http://msdn.microsoft.com/library/hh290138.aspx",  
+                "http://msdn.microsoft.com/library/hh290140.aspx",  
+                "http://msdn.microsoft.com/library/dd470362.aspx",  
+                "http://msdn.microsoft.com/library/aa578028.aspx",  
+                "http://msdn.microsoft.com/library/ms404677.aspx",  
+                "http://msdn.microsoft.com/library/ff730837.aspx"  
             }  
         Return urls  
     End Function  

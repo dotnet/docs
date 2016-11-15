@@ -35,7 +35,7 @@ translation.priority.mt:
 # No mouse wheel is present
 The `My.Computer.Mouse.WheelScrollLines` property was called, but the mouse has no scroll wheel.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check the `My.Computer.Mouse.WheelExists` property to see if the mouse has a scroll wheel before calling the `My.Computer.Mouse.WheelScrollLines` property.  
   

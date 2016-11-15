@@ -63,7 +63,7 @@ This example shows how to join data from two comma-delimited files that share a 
   
 ## Example  
   
-```c#  
+```cs  
 class JoinStrings  
 {  
     static void Main()  

@@ -43,7 +43,7 @@ A `Sub New` procedure in a class or structure calls itself.
   
  **Error ID:** BC30298  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the parameter list of the constructor being called. It should be different from that of the constructor making the call.  
   

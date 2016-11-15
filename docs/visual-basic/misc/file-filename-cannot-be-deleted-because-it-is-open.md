@@ -35,7 +35,7 @@ translation.priority.mt:
 # File &#39;&lt;filename&gt;&#39; cannot be deleted because it is open
 A deletion is being attempted on an open file.  
   
-### To correct this error  
+## To correct this error  
   
 -   Close the file before deleting it.  
   

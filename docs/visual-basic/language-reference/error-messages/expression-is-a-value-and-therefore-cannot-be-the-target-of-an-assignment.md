@@ -69,7 +69,7 @@ exitButton.Location = exitLocation
   
  **Error ID:** BC30068  
   
-### To correct this error  
+## To correct this error  
   
 -   If the statement assigns a value to an expression, replace the expression with a single writable variable, property, or array element.  
   
@@ -82,4 +82,4 @@ exitButton.Location = exitLocation
 ## See Also  
  [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)   
  [Statements](../../../visual-basic/programming-guide/language-features/statements.md)   
- [Troubleshooting Procedures](../../../visual-basic/language-reference/procedures/troubleshooting-procedures.md)
+ [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)

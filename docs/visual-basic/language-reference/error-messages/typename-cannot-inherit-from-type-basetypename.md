@@ -43,7 +43,7 @@ A class or interface inherits from a base class or interface but has a less rest
   
  **Error ID:** BC30910  
   
-### To correct this error  
+## To correct this error  
   
 -   Change the access level of the derived class or interface to be at least as restrictive as that of the base class or interface.  
   

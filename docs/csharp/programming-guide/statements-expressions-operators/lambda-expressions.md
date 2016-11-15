@@ -39,11 +39,11 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Lambda Expressions (C# Programming Guide)
-A lambda expression is an [anonymous function](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md) that you can use to create [delegates](../../../csharp/programming-guide/delegates/using-delegates.md) or [expression tree](../Topic/Expression%20Trees%20\(C%23%20and%20Visual%20Basic\).md) types. By using lambda expressions, you can write local functions that can be passed as arguments or returned as the value of function calls. Lambda expressions are particularly helpful for writing LINQ query expressions.  
+A lambda expression is an [anonymous function](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md) that you can use to create [delegates](../../../csharp/programming-guide/delegates/using-delegates.md) or [expression tree](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b) types. By using lambda expressions, you can write local functions that can be passed as arguments or returned as the value of function calls. Lambda expressions are particularly helpful for writing LINQ query expressions.  
   
  To create a lambda expression, you specify input parameters (if any) on the left side of the lambda operator [=>](../../../csharp/language-reference/operators/lambda-operator.md), and you put the expression or statement block on the other side. For example, the lambda expression `x => x * x` specifies a parameter that’s named `x` and returns the value of `x` squared. You can assign this expression to a delegate type, as the following example shows:  
   
-```c#  
+```cs  
 delegate int del(int i);  
 static void Main(string[] args)  
 {  
@@ -54,7 +54,7 @@ static void Main(string[] args)
   
  To create an expression tree type:  
   
-```c#  
+```cs  
 using System.Linq.Expressions;  
   
 namespace ConsoleApplication1  
@@ -82,7 +82,7 @@ namespace ConsoleApplication1
  All restrictions that apply to anonymous methods also apply to lambda expressions. For more information, see [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md).  
   
 ## Expression Lambdas  
- A lambda expression with an expression on the right side of the => operator is called an *expression lambda*. Expression lambdas are used extensively in the construction of [Expression Trees](../Topic/Expression%20Trees%20\(C%23%20and%20Visual%20Basic\).md). An expression lambda returns the result of the expression and takes the following basic form:  
+ A lambda expression with an expression on the right side of the => operator is called an *expression lambda*. Expression lambdas are used extensively in the construction of [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b). An expression lambda returns the result of the expression and takes the following basic form:  
   
 <CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
  The parentheses are optional only if the lambda has one input parameter; otherwise they are required. Two or more input parameters are separated by commas enclosed in parentheses:  
@@ -112,18 +112,18 @@ namespace ConsoleApplication1
  You can add the same event handler by using an async lambda. To add this handler, add an `async` modifier before the lambda parameter list, as the following example shows.  
   
 <CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
- For more information about how to create and use async methods, see [Asynchronous Programming with Async and Await](../Topic/Asynchronous%20Programming%20with%20Async%20and%20Await%20\(C%23%20and%20Visual%20Basic\).md).  
+ For more information about how to create and use async methods, see [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md).  
   
 ## Lambdas with the Standard Query Operators  
  Many Standard query operators have an input parameter whose type is one of the <xref:System.Func%602> family of generic delegates. These delegates use type parameters to define the number and types of input parameters, and the return type of the delegate. `Func` delegates are very useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the following delegate type:  
   
-```c#  
+```cs  
 public delegate TResult Func<TArg0, TResult>(TArg0 arg0)  
 ```  
   
  The delegate can be instantiated as `Func<int,bool> myFunc` where `int` is an input parameter and `bool` is the return value. The return value is always specified in the last type parameter. `Func<int, string, bool>` defines a delegate with two input parameters, `int` and `string`, and a return type of `bool`. The following `Func` delegate, when it is invoked, will return true or false to indicate whether the input parameter is equal to 5:  
   
-```c#  
+```cs  
 Func<int, bool> myFunc = x => x == 5;  
 bool result = myFunc(4); // returns false of course  
 ```  
@@ -132,7 +132,7 @@ bool result = myFunc(4); // returns false of course
   
  A standard query operator, the <xref:System.Linq.Enumerable.Count%2A> method, is shown here:  
   
-```c#  
+```cs  
 int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };  
 int oddNumbers = numbers.Count(n => n % 2 == 1);  
 ```  
@@ -141,20 +141,20 @@ int oddNumbers = numbers.Count(n => n % 2 == 1);
   
  The following line of code produces a sequence that contains all elements in the `numbers` array that are to the left side of the 9 because that's the first number in the sequence that doesn't meet the condition:  
   
-```c#  
+```cs  
 var firstNumbersLessThan6 = numbers.TakeWhile(n => n < 6);  
 ```  
   
  This example shows how to specify multiple input parameters by enclosing them in parentheses. The method returns all the elements in the numbers array until a number is encountered whose value is less than its position. Do not confuse the lambda operator (`=>`) with the greater than or equal operator (`>=`).  
   
-```c#  
+```cs  
 var firstSmallNumbers = numbers.TakeWhile((n, index) => n >= index);  
 ```  
   
 ## Type Inference in Lambdas  
  When writing lambdas, you often do not have to specify a type for the input parameters because the compiler can infer the type based on the lambda body, the parameter’s delegate type, and other factors as described in the C# Language Specification. For most of the standard query operators, the first input is the type of the elements in the source sequence. So if you are querying an `IEnumerable<Customer>`, then the input variable is inferred to be a `Customer` object, which means you have access to its methods and properties:  
   
-```c#  
+```cs  
 customers.Where(c => c.City == "London");  
 ```  
   
@@ -171,7 +171,7 @@ customers.Where(c => c.City == "London");
 ## Variable Scope in Lambda Expressions  
  Lambdas can refer to *outer variables* (see [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)) that are in scope in the method that defines the lambda function, or in scope in the type that contains the lambda expression. Variables that are captured in this manner are stored for use in the lambda expression even if the variables would otherwise go out of scope and be garbage collected. An outer variable must be definitely assigned before it can be consumed in a lambda expression. The following example demonstrates these rules:  
   
-```c#  
+```cs  
 delegate bool D();  
 delegate bool D2(int i);  
   
@@ -238,9 +238,9 @@ class Test
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md)   
+ [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
  [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)   
  [is](../../../csharp/language-reference/keywords/is.md)   
- [Expression Trees](../Topic/Expression%20Trees%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)   
  [Visual Studio 2008 C# Samples (see LINQ Sample Queries files and XQuery program)](http://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)   
  [Recursive lambda expressions](http://go.microsoft.com/fwlink/?LinkId=112395)

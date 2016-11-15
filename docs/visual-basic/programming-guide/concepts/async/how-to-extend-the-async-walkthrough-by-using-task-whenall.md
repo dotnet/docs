@@ -75,7 +75,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     'Next  
     ```  
   
-3.  Create a collection of tasks. The following code defines a [query](../Topic/LINQ%20\(Language-Integrated%20Query\).md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
+3.  Create a collection of tasks. The following code defines a [query](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
   
      Add the following code to method `SumPageSizesAsync` after the declaration of `urlList`.  
   
@@ -149,7 +149,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
     ```  
   
-3.  Define a [query](../Topic/LINQ%20\(Language-Integrated%20Query\).md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
+3.  Define a [query](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
   
      Add the following code to method `SumPageSizesAsync` after the declaration of `client` and `urlList`.  
   
@@ -261,14 +261,14 @@ Class MainWindow
         Dim urls = New List(Of String) From  
             {  
                 "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/en-us/library/hh290136.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ee256749.aspx",  
-                "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
+                "http://msdn.microsoft.com/library/hh290136.aspx",  
+                "http://msdn.microsoft.com/library/ee256749.aspx",  
+                "http://msdn.microsoft.com/library/hh290138.aspx",  
+                "http://msdn.microsoft.com/library/hh290140.aspx",  
+                "http://msdn.microsoft.com/library/dd470362.aspx",  
+                "http://msdn.microsoft.com/library/aa578028.aspx",  
+                "http://msdn.microsoft.com/library/ms404677.aspx",  
+                "http://msdn.microsoft.com/library/ff730837.aspx"  
             }  
         Return urls  
     End Function  
@@ -400,14 +400,14 @@ Class MainWindow
         Dim urls = New List(Of String) From  
             {  
                 "http://www.msdn.com",  
-                "http://msdn.microsoft.com/en-us/library/hh290136.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ee256749.aspx",  
-                "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
+                "http://msdn.microsoft.com/library/hh290136.aspx",  
+                "http://msdn.microsoft.com/library/ee256749.aspx",  
+                "http://msdn.microsoft.com/library/hh290138.aspx",  
+                "http://msdn.microsoft.com/library/hh290140.aspx",  
+                "http://msdn.microsoft.com/library/dd470362.aspx",  
+                "http://msdn.microsoft.com/library/aa578028.aspx",  
+                "http://msdn.microsoft.com/library/ms404677.aspx",  
+                "http://msdn.microsoft.com/library/ff730837.aspx"  
             }  
         Return urls  
     End Function  

@@ -54,9 +54,8 @@ If( [argument1,] argument2, argument3 )
   
 ## Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`argument1`|Required. `Boolean`. Determines which of the other arguments to evaluate and return.|  
 |`argument2`|Required. `Object`. Evaluated and returned if `argument1` evaluates to `True`.|  
 |`argument3`|Required. `Object`. Evaluated and returned if `argument1` evaluates to `False` or if `argument1` is a [Nullable](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)`Boolean` variable that evaluates to [Nothing](../../../visual-basic/language-reference/nothing.md).|  
@@ -74,9 +73,8 @@ If( [argument1,] argument2, argument3 )
   
 ## Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`argument2`|Required. `Object`. Must be a reference or nullable type. Evaluated and returned when it evaluates to anything other than `Nothing`.|  
 |`argument3`|Required. `Object`. Evaluated and returned if `argument2` evaluates to `Nothing`.|  
   

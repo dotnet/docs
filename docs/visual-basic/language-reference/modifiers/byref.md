@@ -51,4 +51,4 @@ Specifies that an argument is passed in such a way that the called procedure can
   
 ## See Also  
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
- [Passing Arguments by Value and by Reference](../../../visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference.md)
+ [Passing Arguments by Value and by Reference](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

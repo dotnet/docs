@@ -46,9 +46,8 @@ Inserts an .ico file in the output file. This .ico file represents the output fi
   
 ## Arguments  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`filename`|The .ico file to add to your output file. Enclose the file name in quotation marks (" ") if it contains a space.|  
   
 ## Remarks  
@@ -56,9 +55,8 @@ Inserts an .ico file in the output file. This .ico file represents the output fi
   
  See [/linkresource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/linkresource.md) to reference a [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] resource file, or [/resource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/resource.md) to attach a [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] resource file. See [/win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md) to import a .res file.  
   
-||  
-|-|  
 |To set /win32icon in the Visual Studio IDE|  
+|---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **Application** tab.<br />3.  Modify the value in the **Icon** box.|  
   
 ## Example  

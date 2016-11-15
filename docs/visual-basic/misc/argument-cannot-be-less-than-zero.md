@@ -33,9 +33,9 @@ translation.priority.mt:
 # Argument cannot be less than zero
 A value that is less than zero has been supplied, but the argument cannot be less than zero.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check how the value in question is calculated, to make sure it is correct.  
   
 ## See Also  
- [Debugger Basics](/visual-studio/debugger/debugger-basics)
+ [Debugger Basics](/visualstudio/debugger/debugger-basics)

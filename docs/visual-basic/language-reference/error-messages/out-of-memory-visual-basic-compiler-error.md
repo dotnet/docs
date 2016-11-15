@@ -41,7 +41,7 @@ More memory was required than is available.
   
  **Error ID:** BC2004  
   
-### To correct this error  
+## To correct this error  
   
 -   Close unnecessary applications, documents and source files.  
   

@@ -28,7 +28,7 @@ This example shows how LINQ can be used to perform advanced grouping and sorting
 ## Example  
  The following query shows how to group the contents of a specified directory tree by the file name extension.  
   
-```c#  
+```cs  
 class GroupByExtension  
 {  
     // This query will sort all the files under the specified folder  

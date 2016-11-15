@@ -25,7 +25,7 @@ Sometimes you might have to write a query that selects elements based on their c
 ## Example  
  The following example selects all `p` elements that are immediately followed by a `ul` element.  
   
-```c#  
+```cs  
 XElement doc = XElement.Parse(@"<Root>  
     <p id=""1""/>  
     <ul>abc</ul>  
@@ -66,7 +66,7 @@ id = 6
 ## Example  
  The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
   
-```c#  
+```cs  
 XElement doc = XElement.Parse(@"<Root xmlns='http://www.adatum.com'>  
     <p id=""1""/>  
     <ul>abc</ul>  

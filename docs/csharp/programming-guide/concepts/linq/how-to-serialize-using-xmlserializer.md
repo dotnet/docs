@@ -28,7 +28,7 @@ This topic shows an example that serializes and deserializes using <xref:System.
 ## Example  
  The following example creates a number of objects that contain <xref:System.Xml.Linq.XElement> objects. It then serializes them to a memory stream, and then deserializes them from the memory stream.  
   
-```c#  
+```cs  
 using System;  
 using System.IO;  
 using System.Linq;  

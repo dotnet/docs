@@ -41,7 +41,7 @@ The `System.MarshalByRefObject` class enables applications that support remote a
   
  **Error ID:** BC30310  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the reference to make sure the member being referred to is valid.  
   

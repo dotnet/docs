@@ -34,7 +34,7 @@ translation.priority.ht:
 # File is too large to read into a byte array
 The size of the file you are attempting to read into a byte array exceeds 4 GB. The `My.Computer.FileSystem.ReadAllBytes` method cannot read a file that exceeds this size.  
   
-### To correct this error  
+## To correct this error  
   
 -   Use a <xref:System.IO.StreamReader> to read the file. For more information, see [Basics of .NET Framework File I/O and the File System (Visual Basic)](../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-io-and-the-file-system.md).  
   

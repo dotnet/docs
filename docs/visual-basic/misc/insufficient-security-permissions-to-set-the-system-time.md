@@ -35,7 +35,7 @@ translation.priority.mt:
 # Insufficient security permissions to set the system time
 The security permissions are insufficient to set the system time.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Change the security permissions.  
   

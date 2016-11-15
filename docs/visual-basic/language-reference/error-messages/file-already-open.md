@@ -40,7 +40,7 @@ Sometimes a file must be closed before another `FileOpen` or other operation can
   
 -   A statement refers to an open file.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Close the file before executing the statement.  
   

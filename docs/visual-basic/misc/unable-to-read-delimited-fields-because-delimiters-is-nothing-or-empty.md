@@ -35,7 +35,7 @@ translation.priority.mt:
 # Unable to read delimited fields because Delimiters is Nothing or empty
 The `TextFieldParser` is unable to read from the file because the `Delimiters` property is set to `Nothing` or is empty.  
   
-### To correct this error  
+## To correct this error  
   
 -   Supply a valid value for `Delimiters`.  
   

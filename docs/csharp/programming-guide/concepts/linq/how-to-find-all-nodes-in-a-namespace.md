@@ -23,7 +23,7 @@ You can filter on the namespace of each element or attribute to find all nodes i
 ## Example  
  The following example creates an XML tree with two namespaces. It then iterates through the tree and prints the names of all the elements and attributes in one of those namespaces.  
   
-```c#  
+```cs  
 string markup = @"<aw:Root xmlns:aw='http://www.adventure-works.com' xmlns:fc='www.fourthcoffee.com'>  
   <fc:Child1>abc</fc:Child1>  
   <fc:Child2>def</fc:Child2>  
@@ -56,7 +56,7 @@ Nodes in the http://www.adventure-works.com namespace
   
  This example uses the following XML document: [Sample XML File: Consolidated Purchase Orders](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-consolidated-purchase-orders.md).  
   
-```c#  
+```cs  
 XDocument cpo = XDocument.Load("ConsolidatedPurchaseOrders.xml");  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement newTree = new XElement("Root",  

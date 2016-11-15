@@ -35,7 +35,7 @@ translation.priority.mt:
 # Object doesn&#39;t support this property or method (Visual Basic)
 You specified a method or property that does not exist for this automation object.  
   
-### To correct this error  
+## To correct this error  
   
 -   Read the object's documentation for more information on the object and check the spellings of properties and methods.  
   

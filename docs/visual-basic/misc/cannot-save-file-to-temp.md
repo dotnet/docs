@@ -35,7 +35,7 @@ translation.priority.mt:
 # Cannot save file to TEMP
 Either a component cannot find a directory named TEMP, or the drive or partition containing the TEMP directory lacks sufficient space to save information.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Create a directory named "TEMP" and set the TEMP environment variable equal to its path.  
   

@@ -36,7 +36,7 @@ Used to obtain the simple (unqualified) string name of a variable, type, or memb
   
  A `nameof` expression has this form:  
   
-```c#  
+```cs  
 if (x == null) throw new ArgumentNullException(nameof(x));  
 WriteLine(nameof(person.Address.ZipCode)); // prints "ZipCode”  
   
@@ -46,7 +46,7 @@ WriteLine(nameof(person.Address.ZipCode)); // prints "ZipCode”
  These examples show the key use cases for `nameof`.  
   
  Validate parameters:  
- ```c#  
+ ```cs  
 void f(string s) {  
     if (s == null) throw new ArgumentNullException(nameof(s));  
 }  
@@ -63,7 +63,7 @@ void f(string s) {
 ```  
   
  INotifyPropertyChanged:  
- ```c#  
+ ```cs  
 int p {  
     get { return this.p; }  
     set { this.p = value; PropertyChanged(this, new PropertyChangedEventArgs(nameof(this.p)); } // nameof(p) works too  
@@ -72,13 +72,13 @@ int p {
 ```  
   
  XAML dependency property:  
- ```c#  
+ ```cs  
 public static DependencyProperty AgeProperty = DependencyProperty.Register(nameof(Age), typeof(int), typeof(C));  
   
 ```  
   
  Logging:  
- ```c#  
+ ```cs  
 void f(int i) {  
     Log(nameof(f), "method entry");  
 }  
@@ -86,7 +86,7 @@ void f(int i) {
 ```  
   
  Attributes:  
- ```c#  
+ ```cs  
 [DebuggerDisplay("={" + nameof(GetString) + "()}")]  
 class C {  
     string GetString() { }  
@@ -96,7 +96,7 @@ class C {
 ## Examples  
  Some C# examples:  
   
-```c#  
+```cs  
 using Stuff = Some.Cool.Functionality  
 class C {  
     static int Method1 (string x, int y) {}  

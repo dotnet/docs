@@ -35,7 +35,7 @@ translation.priority.mt:
 # No mouse is present
 One of the properties of the `My.Computer.Mouse` object was called, but the computer has no mouse or mouse port installed.  
   
-### To correct this error  
+## To correct this error  
   
 -   Add a `Try...Catch` block around the call to the property of the `My.Computer.Mouse` object.  
   

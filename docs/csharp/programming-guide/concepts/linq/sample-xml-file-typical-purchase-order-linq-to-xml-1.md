@@ -1,5 +1,5 @@
 ---
-title: "Sample XML File: Typical Purchase Order (LINQ to XML)1 | Microsoft Docs"
+title: "Sample XML File: Typical Purchase Order (LINQ to XML) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

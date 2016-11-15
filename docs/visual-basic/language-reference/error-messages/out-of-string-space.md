@@ -36,7 +36,7 @@ translation.priority.ht:
 # Out of string space (Visual Basic)
 With Visual Basic, you can use very large strings. However, the requirements of other programs and the way you work with your strings can still cause this error.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Make sure that an expression requiring temporary string creation during evaluation is not causing the error.  
   

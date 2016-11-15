@@ -35,7 +35,7 @@ translation.priority.mt:
 # Set not supported at run time
 You tried to set or change a property whose value can only be set at design time.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Remove the reference to the property from your code.  
   

@@ -35,7 +35,7 @@ The `EventLog` is attempting to refer to a source that is registered to a differ
   
  By default, if you try to write an entry without first having registered your component as a valid source, the system automatically registers the source with the event log, using the value of the <xref:System.Diagnostics.EventLog.Source%2A> property as the source string.  
   
-### To correct this error  
+## To correct this error  
   
 -   Make sure the source is registered to the correct log. To do this, use the <xref:System.Diagnostics.EventLog.CreateEventSource%2A> method or one of its overloads to specify a string that uniquely identifies your component to the event log.  
   

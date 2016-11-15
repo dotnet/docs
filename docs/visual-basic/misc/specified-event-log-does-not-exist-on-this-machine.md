@@ -33,7 +33,7 @@ translation.priority.mt:
 # Specified event log does not exist on this machine
 An attempt has been made to access an event log that does not exist on this machine.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check that you are supplying the correct file name and path.  
   

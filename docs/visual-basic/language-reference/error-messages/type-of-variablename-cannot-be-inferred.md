@@ -49,7 +49,7 @@ You have written a `For...Next` loop in which the compiler cannot infer a data t
   
  In the following example, the step variable is a character and the loop bounds are both integers. Because there is no standard conversion between characters and integers, this error is reported.  
   
-```vb#  
+```vb  
 Dim stepVar = "1"c  
 Dim m = 0  
 Dim n = 20  
@@ -62,7 +62,7 @@ Dim n = 20
   
  **Error ID:** BC30982  
   
-### To correct this error  
+## To correct this error  
   
 -   Change the types of the loop bounds and step variable as necessary so that at least one of them is a type that the others widen to. In the preceding example, change the type of `stepVar` to `Integer`.  
   

@@ -39,7 +39,7 @@ The *standard query operators* are the methods that form the LINQ pattern. Most 
   
  The following code example demonstrates how the standard query operators can be used to obtain information about a sequence.  
   
-```c#  
+```cs  
 string sentence = "the quick brown fox jumps over the lazy dog";  
 // Split the string into individual words to create a collection.  
 string[] words = sentence.Split(' ');  

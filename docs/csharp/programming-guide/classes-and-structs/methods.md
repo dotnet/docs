@@ -93,7 +93,7 @@ A method is a code block that contains a series of statements. A program causes 
   
  Returning a multi-dimensional array from a method, M, that modifies the array's contents is not necessary if the calling function passed the array into M.  You may return the resulting array from M for good style or functional flow of values, but it is not necessary.  The reason you do not need to return the modified array is that C# passes all reference types by value, and the value of an array reference is the pointer to the array. In the method M, any changes to the array's contents are observable by any code that has a reference to the array, as shown in the following example.  
   
-```c#  
+```cs  
 static void Main(string[] args)  
         {  
             int[,] matrix = new int[2, 2];  
@@ -134,12 +134,12 @@ static void Main(string[] args)
   
  An async method can't declare any [ref](../../../csharp/language-reference/keywords/ref.md) or [out](../../../csharp/language-reference/keywords/out.md) parameters, but it can call methods that have such parameters.  
   
- For more information about async methods, see [Asynchronous Programming with Async and Await](../Topic/Asynchronous%20Programming%20with%20Async%20and%20Await%20\(C%23%20and%20Visual%20Basic\).md), [Control Flow in Async Programs](../Topic/Control%20Flow%20in%20Async%20Programs%20\(C%23%20and%20Visual%20Basic\).md), and [Async Return Types](../Topic/Async%20Return%20Types%20\(C%23%20and%20Visual%20Basic\).md).  
+ For more information about async methods, see [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md), [Control Flow in Async Programs](../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md), and [Async Return Types](../../../csharp/programming-guide/concepts/async/async-return-types.md).  
   
 ## Expression Body Definitions  
  It is common to have method definitions that simply return immediately with the result of an expression, or that have a single statement as the body of the method.  There is a syntax shortcut for defining such methods using `=>`:  
   
-```c#  
+```cs  
 public Point Move(int dx, int dy) => new Point(x + dx, y + dy);   
 public void Print() => Console.WriteLine(First + " " + Last);  
 // Works with operators, properties, and indexers too.  
@@ -157,20 +157,20 @@ public Customer this[long id] => store.LookupCustomer(id);
   
  The return type of an iterator can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.  
   
- For more information, see [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md).  
+ For more information, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)   
- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)   
- [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)   
- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)   
- [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)   
+ [Classes and Structs](index.md)   
+ [Access Modifiers](access-modifiers.md)   
+ [Static Classes and Static Class Members](static-classes-and-static-class-members.md)   
+ [Inheritance](inheritance.md)   
+ [Abstract and Sealed Classes and Class Members](abstract-and-sealed-classes-and-class-members.md)   
  [params](../../../csharp/language-reference/keywords/params.md)   
  [return](../../../csharp/language-reference/keywords/return.md)   
  [out](../../../csharp/language-reference/keywords/out.md)   
  [ref](../../../csharp/language-reference/keywords/ref.md)   
- [Passing Parameters](../../../csharp/programming-guide/classes-and-structs/passing-parameters.md)
+ [Passing Parameters](passing-parameters.md)

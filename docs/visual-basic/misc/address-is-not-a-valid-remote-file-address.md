@@ -35,7 +35,7 @@ translation.priority.mt:
   
  An invalid address has been specified for an uploading or downloading operation. Addresses must include a protocol, such as `ftp` or `http`, a valid path, and the file name. This error may be a result of parsing file paths incorrectly.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check the address you have specified to determine where it fails, and supply the necessary information.  
   

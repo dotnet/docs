@@ -41,7 +41,7 @@ The number of indices used to access an array element must be exactly the same a
   
  **Error ID:** BC30106  
   
-### To correct this error  
+## To correct this error  
   
 -   Remove subscripts from the array reference until the total number of subscripts equals the rank of the array. For example:  
   

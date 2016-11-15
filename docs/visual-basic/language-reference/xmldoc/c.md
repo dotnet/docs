@@ -45,9 +45,8 @@ Indicates that text within a description is code.
   
 #### Parameters  
   
-|||  
-|-|-|  
 |Parameter|Description|  
+|---|---|  
 |`text`|The text you would like to indicate as code.|  
   
 ## Remarks  

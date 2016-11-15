@@ -41,7 +41,7 @@ The statement is not valid within a `Sub`, `Function`, property `Get`, or proper
   
  **Error ID:** BC30024  
   
-### To correct this error  
+## To correct this error  
   
 -   Remove the statement from the procedure.  
   

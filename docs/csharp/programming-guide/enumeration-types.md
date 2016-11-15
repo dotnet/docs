@@ -45,7 +45,7 @@ An enumeration type (also named an enumeration or an enum) provides an efficient
   
  You can verify the underlying numeric values by casting  to the underlying type, as the following example shows.  
   
-```c#  
+```cs  
 Days today = Days.Monday;  
 int dayNumber =(int)today;  
 Console.WriteLine("{0} is day number #{1}.", today, dayNumber);  

@@ -35,7 +35,7 @@ The `FileGet` method includes an argument of type `Object`. `FileGetObject` shou
   
  Notice that the functionality offered by `My.Computer.Filesystem` offers greater ease of use and performance than either `FileGet` or `FileGetObject`.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Replace `FileGet` with `FileGetObject`.  
   

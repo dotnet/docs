@@ -93,9 +93,8 @@ End Enum
   
      Each `member` has the following syntax and parts: `[<attribute list>] member name [ = initializer ]`  
   
-    |||  
-    |-|-|  
     |Part|Description|  
+    |---|---|  
     |`membername`|Required. Name of this member.|  
     |`initializer`|Optional. Expression that is evaluated at compile time and assigned to this member.|  
   

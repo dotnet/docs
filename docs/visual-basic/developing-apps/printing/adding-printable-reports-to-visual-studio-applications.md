@@ -71,9 +71,8 @@ Visual Studio supports a variety of reporting solutions to help you add rich dat
   
  The Visual Studio Report Designer does not include report preview functionality. To preview your report, run the application and preview the report embedded in it.  
   
-||  
-|-|  
 |To add basic report functionality to your application|  
+|---|    
 |1.  Drag a ReportViewer control from the **Data** tab of the **Toolbox** onto your form.<br />2.  On the **Project** menu, choose **Add New Item**. In the **Add New Item** dialog box, select the **Report** icon and click **Add**.<br />     The Report Designer opens in the development environment, and a report (.rdlc) file is added to the project.<br />3.  Drag report items from the **Toolbox** on the report layout and arrange them as you want.<br />4.  Drag fields from the **Data Sources** window to the report items in the report layout.|  
   
 ## Using Reporting Services in Visual Basic Applications  
@@ -107,9 +106,8 @@ Visual Studio supports a variety of reporting solutions to help you add rich dat
   
  Report definitions that you build for the control or the report server can be reused in either technology.  
   
-||  
-|-|  
 |To create a report that runs on a report server|  
+|---|    
 |1.  On the **File** menu, choose **New**.<br />     The **New Project** dialog box opens.<br />2.  In the **Project types** pane, click **Business Intelligence Projects**.<br />3.  In the Templates pane, select **Report Server Project** or **Report Server Project Wizard**.|  
   
 ## Using ReportViewer Controls and SQL Server Reporting Services Together  

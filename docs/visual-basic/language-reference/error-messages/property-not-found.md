@@ -36,7 +36,7 @@ translation.priority.ht:
 # Property not found
 This object does not support the specified property.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the spelling of the property's name.  
   

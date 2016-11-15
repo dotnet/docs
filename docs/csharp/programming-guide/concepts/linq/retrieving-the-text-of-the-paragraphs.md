@@ -35,7 +35,7 @@ This example builds on the previous example, [Retrieving the Paragraphs and Thei
   
  This example uses classes from the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
   
-```c#  
+```cs  
 const string fileName = "SampleDoc.docx";  
   
 const string documentRelationshipType =  

@@ -35,7 +35,7 @@ translation.priority.mt:
 # Method &#39;&lt;methodname&gt;&#39; cannot be called with &lt;number&gt; arguments
 A method call contains the wrong number of arguments.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Count the arguments that you have supplied.  
   
@@ -44,4 +44,4 @@ A method call contains the wrong number of arguments.
 3.  Adjust the number of arguments if the two numbers do not agree.  
   
 ## See Also  
- [Passing Arguments by Value and by Reference](../../visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference.md)
+ [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

@@ -35,11 +35,11 @@ translation.priority.mt:
 # This system does not contain support for the Locale specified
 You are attempting to use the `VbStrConv` enumeration, but your system does not support the specified locale.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Upgrade the machine to support the locale, or run the application on a machine that supports it.  
   
 ## See Also  
  <xref:System.Globalization>   
  [NOTINBUILD VbStrConv Enumeration](http://msdn.microsoft.com/en-us/59f83dd9-6361-47df-a836-02ba9d4cb936)   
- [Introduction to International Applications Based on the .NET Framework](/visual-studio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+ [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

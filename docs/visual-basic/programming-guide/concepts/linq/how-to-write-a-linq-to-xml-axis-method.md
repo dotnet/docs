@@ -25,7 +25,7 @@ You can write your own axis methods to retrieve collections from an XML tree. On
   
  This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
-```vb#  
+```vb  
 Imports System.Runtime.CompilerServices  
 Imports System.Text  
   

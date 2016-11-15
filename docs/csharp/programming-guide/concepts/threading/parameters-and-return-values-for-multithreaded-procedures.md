@@ -28,7 +28,7 @@ Supplying and returning values in a multithreaded application is complicated bec
 ## Supplying Parameters for Multithreaded Procedures  
  The best way to supply parameters for a multithreaded method call is to wrap the target method in a class and define fields for that class that will serve as parameters for the new thread. The advantage of this approach is that you can create a new instance of the class, with its own parameters, every time you want to start a new thread. For example, suppose you have a function that calculates the area of a triangle, as in the following code:  
   
-```c#  
+```cs  
 double CalcArea(double Base, double Height)  
 {  
     return 0.5 * Base * Height;  
@@ -37,7 +37,7 @@ double CalcArea(double Base, double Height)
   
  You can write a class that wraps the `CalcArea` function and creates fields to store input parameters, as follows:  
   
-```c#  
+```cs  
 class AreaClass  
 {  
     public double Base;  
@@ -53,7 +53,7 @@ class AreaClass
   
  To use the `AreaClass`, you can create an `AreaClass` object, and set the `Base` and `Height` properties as shown in the following code:  
   
-```c#  
+```cs  
 protected void TestArea()  
 {  
     AreaClass AreaObject = new AreaClass();  
@@ -73,7 +73,7 @@ protected void TestArea()
   
  The following example returns a value by raising an event from a procedure running on a separate thread:  
   
-```c#  
+```cs  
 class AreaClass2  
 {  
     public double Base;  
@@ -137,4 +137,4 @@ private void BackgroundWorker1_RunWorkerCompleted(
  [Events](../../../../csharp/programming-guide/events/index.md)   
  [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)   
  [Delegates](../../../../csharp/programming-guide/delegates/index.md)   
- [Multithreading in Components](../Topic/Multithreading%20in%20Components.md)
+ [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)

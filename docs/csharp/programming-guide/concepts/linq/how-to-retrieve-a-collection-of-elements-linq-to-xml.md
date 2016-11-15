@@ -25,7 +25,7 @@ This topic demonstrates the <xref:System.Xml.Linq.XContainer.Elements%2A> method
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md).  
   
-```c#  
+```cs  
 XElement po = XElement.Load("PurchaseOrder.xml");  
 IEnumerable<XElement> childElements =  
     from el in po.Elements()  

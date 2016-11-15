@@ -57,7 +57,7 @@ Namespace or type specified in the Imports '\<qualifiedelementname>' doesn't con
   
  **Error ID:** BC40056  
   
-### To correct this error  
+## To correct this error  
   
 1.  Verify that the containing element is accessible from your project.  
   

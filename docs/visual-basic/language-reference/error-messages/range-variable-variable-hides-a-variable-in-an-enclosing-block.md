@@ -41,7 +41,7 @@ A range variable name specified in a `Select`, `From`, `Aggregate`, or `Let` cla
   
  **Error ID:** BC36633  
   
-### To correct this error  
+## To correct this error  
   
 -   Ensure that all range variables in a particular query scope have unique names. You can enclose a query in parentheses to ensure that nested queries have a unique scope.  
   

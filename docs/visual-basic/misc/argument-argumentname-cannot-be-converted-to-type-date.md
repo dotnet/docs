@@ -35,7 +35,7 @@ translation.priority.mt:
 # Argument &#39;&lt;argumentname&gt;&#39; cannot be converted to type &#39;Date&#39;
 A conversion attempted to change a variable to type `Date`, but the value is not recognized as a valid date.  
   
-### To correct this error  
+## To correct this error  
   
 -   Find a conversion that is meaningful.  
   

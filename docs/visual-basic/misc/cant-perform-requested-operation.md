@@ -35,7 +35,7 @@ translation.priority.mt:
 # Can&#39;t perform requested operation (Visual Basic)
 An operation cannot be carried out because it would invalidate the current state of the project. For example, you may have tried to programmatically modify code that is running.  
   
-### To correct this error  
+## To correct this error  
   
 -   Stop the code execution, make modifications if necessary, and then retry the operation.  
   

@@ -37,7 +37,7 @@ translation.priority.mt:
 # Property let procedure not defined and property get procedure did not return an object
 Certain properties, methods, and operations can only apply to `Collection` objects. You specified an operation or property that is exclusive to collections, but the object is not a collection.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the spelling of the object or property name, or verify that the object is a `Collection` object.  
   

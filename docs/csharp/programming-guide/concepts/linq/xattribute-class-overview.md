@@ -40,7 +40,7 @@ Attributes are name/value pairs that are associated with an element. The <xref:S
 ### Creating an Element with an Attribute  
  The following code shows the common task of creating an element that contains an attribute:  
   
-```c#  
+```cs  
 XElement phone = new XElement("Phone",  
     new XAttribute("Type", "Home"),  
     "555-555-5555");  
@@ -56,7 +56,7 @@ Console.WriteLine(phone);
 ### Functional Construction of Attributes  
  You can construct <xref:System.Xml.Linq.XAttribute> objects in-line with the construction of <xref:System.Xml.Linq.XElement> objects, as follows:  
   
-```c#  
+```cs  
 XElement c = new XElement("Customers",  
     new XElement("Customer",  
         new XElement("Name", "John Doe"),  

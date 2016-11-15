@@ -35,7 +35,7 @@ translation.priority.mt:
 # &#39;ReDim&#39; can only change the right-most dimension
 A `ReDim` statement attempted to use the `Preserve` keyword to change a dimension of an array that is not the last dimension. When using `Preserve`, you can resize only the last dimension of an array. For all other dimensions, you must specify the same size as for the existing array.  
   
-### To correct this error  
+## To correct this error  
   
 -   Remove the `Preserve` keyword.  
   

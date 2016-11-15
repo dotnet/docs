@@ -33,7 +33,7 @@ translation.priority.mt:
 # Use of Default Instance of a class in the class constructor could lead to infinite recursive call
 A default instance of a class has been used in the constructor of the class. This can lead to an infinite recursive call, also known as an infinite loop.  
   
-### To correct this error  
+## To correct this error  
   
 -   Remove the default instance from the class constructor.  
   

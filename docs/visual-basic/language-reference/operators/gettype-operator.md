@@ -47,9 +47,8 @@ GetType(typename)
   
 #### Parameters  
   
-|||  
-|-|-|  
 |Parameter|Description|  
+|---|---|  
 |`typename`|The name of the type for which you desire information.|  
   
 ## Remarks  

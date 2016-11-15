@@ -33,7 +33,7 @@ translation.priority.mt:
 # Source folder and target folder are the same
 An attempt has been made to copy or move a file, but the specified source directory and target directory are the same. This may be a result of incorrectly parsing a file path.  
   
-### To correct this error  
+## To correct this error  
   
 -   Make sure you supplied the correct source and target directories.  
   

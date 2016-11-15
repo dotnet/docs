@@ -35,7 +35,7 @@ translation.priority.mt:
 # Set not supported (read-only property)
 You tried to set or change a property that is read only.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Remove the reference to the property from your code.  
   

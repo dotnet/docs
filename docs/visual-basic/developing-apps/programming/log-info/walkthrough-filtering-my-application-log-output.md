@@ -64,7 +64,7 @@ This walkthrough demonstrates how to change the default log filtering for the `M
   
 6.  Close the application.  
   
-     For information on how to view the application's debug output window, see [Output Window](/visual-studio/ide/reference/output-window). For information on the location of the application's log file, see [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).  
+     For information on how to view the application's debug output window, see [Output Window](/visualstudio/ide/reference/output-window). For information on the location of the application's log file, see [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).  
   
     > [!NOTE]
     >  By default, the application flushes the log-file output when the application closes.  
@@ -76,9 +76,8 @@ This walkthrough demonstrates how to change the default log filtering for the `M
   
  This table shows the severity level required for Log to write a message to the listeners, given a particular `DefaultSwitch` setting.  
   
-|||  
-|-|-|  
 |DefaultSwitch Value|Message severity required for output|  
+|---|---| 
 |`Critical`|`Critical`|  
 |`Error`|`Critical` or `Error`|  
 |`Warning`|`Critical`, `Error`, or `Warning`|  
@@ -276,5 +275,5 @@ This walkthrough demonstrates how to change the default log filtering for the `M
  [Walkthrough: Changing Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)   
  [Walkthrough: Creating Custom Log Listeners](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)   
  [How to: Write Log Messages](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)   
- [Trace Switches](../Topic/Trace%20Switches.md)   
+ [Trace Switches](http://msdn.microsoft.com/library/8ab913aa-f400-4406-9436-f45bc6e54fbe)   
  [Logging Information from the Application](../../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)

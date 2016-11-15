@@ -44,7 +44,7 @@ The compiler is attempting to resolve a reference to an overloaded property or p
   
  **Error ID:** BC30933  
   
-### To correct this error  
+## To correct this error  
   
 -   Use `CType` to cast the argument from `Object` to the type specified by the signature of the overload you want to call.  
   
@@ -87,6 +87,6 @@ refer.s1(CType(o1, Double))
  Each of the preceding lines of code explicitly casts the `Object` variable `o1` to one of the parameter types defined for the overloads.  
   
 ## See Also  
- [Procedure Overloading](../../../visual-basic/language-reference/procedures/procedure-overloading.md)   
- [Overload Resolution](../../../visual-basic/language-reference/procedures/overload-resolution.md)   
+ [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)   
+ [Overload Resolution](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)   
  [CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)

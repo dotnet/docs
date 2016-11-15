@@ -51,9 +51,8 @@ Defines conditional compiler constants.
   
 ## Arguments  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`symbol`|Required. The symbol to define.|  
 |`value`|Optional. The value to assign `symbol`. If `value` is a string, it must be surrounded by backslash/quotation-mark sequences (\\") instead of quotation marks. If no value is specified, then it is taken to be True.|  
   
@@ -66,9 +65,8 @@ Defines conditional compiler constants.
   
  You can define multiple symbols with `/define` by using a comma to separate symbol definitions.  
   
-||  
-|-|  
 |To set /define in the Visual Studio integrated development environment|  
+|---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **Compile** tab.<br />3.  Click **Advanced**.<br />4.  Modify the value in the **Custom Constants** box.|  
   
 ## Example  

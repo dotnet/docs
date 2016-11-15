@@ -153,9 +153,8 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements impl
   
      `interface.definedname`  
   
-    |||  
-    |-|-|  
     |Part|Description|  
+    |---|---|  
     |`interface`|Required. Name of an interface implemented by this property's containing class or structure.|  
     |`definedname`|Required. Name by which the property is defined in `interface`.|  
   
@@ -184,7 +183,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements impl
      Terminates the definition of this property.  
   
 ## Remarks  
- The `Property` statement introduces the declaration of a property. A property can have a `Get` procedure (read only), a `Set` procedure (write only), or both (read-write). You can omit the `Get` and `Set` procedure when using an auto-implemented property. For more information, see [Auto-Implemented Properties](../../../visual-basic/language-reference/procedures/auto-implemented-properties.md).  
+ The `Property` statement introduces the declaration of a property. A property can have a `Get` procedure (read only), a `Set` procedure (write only), or both (read-write). You can omit the `Get` and `Set` procedure when using an auto-implemented property. For more information, see [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md).  
   
  You can use `Property` only at class level. This means the *declaration context* for a property must be a class, structure, module, or interface, and cannot be a source file, namespace, procedure, or block. For more information, see [Declaration Contexts and Default Access Levels](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md).  
   
@@ -230,7 +229,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements impl
  [!code-vb[VbVbalrStatements#51](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_4.vb)]  
   
 ## See Also  
- [Auto-Implemented Properties](../../../visual-basic/language-reference/procedures/auto-implemented-properties.md)   
+ [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)   
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
  [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)   
  [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)   

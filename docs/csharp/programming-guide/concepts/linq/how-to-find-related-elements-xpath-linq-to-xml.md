@@ -31,7 +31,7 @@ This topic shows how to get an element selecting on an attribute that is referre
   
  This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
   
-```c#  
+```cs  
 XDocument co = XDocument.Load("CustomersOrders.xml");  
   
 // LINQ to XML query  

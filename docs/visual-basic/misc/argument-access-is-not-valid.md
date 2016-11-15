@@ -35,7 +35,7 @@ translation.priority.mt:
 # Argument &#39;Access&#39; is not valid. Valid values for Output mode are &#39;OpenAccess.Write&#39; and &#39;OpenAccess.Default&#39;
 An access value is not valid in Output mode.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Change the value to either `OpenAccess.Write` or `OpenAccess.Default`.  
   

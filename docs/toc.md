@@ -1,11 +1,12 @@
 # [Welcome](welcome.md)
-# [About .NET](about/index.md)
-## [.NET Products](about/products.md)
 
-<!-- .NET Standard Content -->
-# [.NET Standard](standard/index.md)
+<!-- Start of .NET Platform Guide -->
+# [.NET Platform Guide](standard/index.md)
+## [Getting Started](standard/getting-started.md)
+## [Tour of .NET](standard/tour.md)
+## [.NET Concepts](standard/concepts.md)
 ## [.NET Standard Library](standard/library.md)
-## [Frameworks](standard/frameworks.md)
+## [Frameworks and Targets](standard/frameworks.md)
 ## [What is "managed code"?](standard/managed-code.md)
 ## [Common Language Runtime (CLR)](standard/clr.md)
 ## [Language Independence](standard/language-independence.md)
@@ -44,10 +45,6 @@
 ##### [How to: round-trip date and time values](standard/base-types/roundtrip.md)
 ##### [How to: display milliseconds in date and time values](standard/base-types/display-milliseconds.md)
 ##### [How to: display dates in non-gregorian calendars](standard/base-types/display-dates.md)
-### [Parsing strings](standard/base-types/parsing-strings.md)
-#### [Parsing numeric strings](standard/base-types/parsing-numeric.md)
-#### [Parsing date and time strings](standard/base-types/parsing-datetime.md)
-#### [Parsing other strings](standard/base-types/parsing-other.md)
 ### [Manipulating strings](standard/base-types/manipulating-strings.md)
 #### [Best practices for using strings](standard/base-types/best-practices-strings.md)
 #### [Basic string operations](standard/base-types/basic-string-operations.md)
@@ -82,7 +79,11 @@
 ##### [How to: extract a protocol and port number from a URL](standard/base-types/extract-protocol.md)
 ##### [How to: strip invalid characters from a string](standard/base-types/strip-characters.md)
 ##### [How to: verify that strings are in valid email format](standard/base-types/verify-format.md)
-### [Character encoding](standard/base-types/character-encoding.md)
+#### [Character encoding](standard/base-types/character-encoding.md)
+#### [Parsing strings](standard/base-types/parsing-strings.md)
+##### [Parsing numeric strings](standard/base-types/parsing-numeric.md)
+##### [Parsing date and time strings](standard/base-types/parsing-datetime.md)
+##### [Parsing other strings](standard/base-types/parsing-other.md)
 ## [Delegates and lambdas](standard/delegates-lambdas.md)
 ## [LINQ](standard/using-linq.md)
 ## [Common Type System & Common Language Specification](standard/common-type-system.md)
@@ -120,7 +121,8 @@
 ### [Converting times between time zones](standard/datetime/converting-between-time-zones.md)
 ### [How to: resolve ambiguous times](standard/datetime/resolve-ambiguous-times.md)
 ### [How to: let users resolve ambiguous times](standard/datetime/let-users-resolve-ambiguous-times.md)
-<!-- End .NET Standard Content -->
+
+<!-- End of .NET Platform Guide -->
 
 <!-- .NET Core Content -->
 # [.NET Core Guide](core/index.md)
@@ -172,7 +174,7 @@
 <!-- End .NET Core Content -->
 
 <!-- .NET Framework Content -->
-# [.NET Framework](framework/index.md)
+# [.NET Framework on Docker Guide](framework/index.md)
 ## [Docker](framework/docker/index.md)
 ### [Running Console Apps in Containers](framework/docker/console.md)
 ### [Running ASP.NET MVC Apps in Containers](framework/docker/aspnetmvc.md)

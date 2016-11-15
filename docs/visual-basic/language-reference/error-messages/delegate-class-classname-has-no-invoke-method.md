@@ -41,7 +41,7 @@ A call to `Invoke` through a delegate has failed because `Invoke` is not impleme
   
  **Error ID:** BC30220  
   
-### To correct this error  
+## To correct this error  
   
 1.  Ensure that an instance of the delegate class has been created with a `Dim` statement and that a procedure has been assigned to the delegate instance with the `AddressOf` operator.  
   

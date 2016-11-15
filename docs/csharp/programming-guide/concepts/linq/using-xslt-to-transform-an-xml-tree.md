@@ -27,7 +27,7 @@ You can create an XML tree, create an <xref:System.Xml.XmlReader> from the XML t
   
 ## Example  
   
-```c#  
+```cs  
 string xslMarkup = @"<?xml version='1.0'?>  
 <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
     <xsl:template match='/Parent'>  

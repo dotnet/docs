@@ -46,7 +46,7 @@ This example shows how to perform aggregate computations such as Sum, Average, M
   
 ## Example  
   
-```c#  
+```cs  
 class SumColumns  
 {  
     static void Main(string[] args)  

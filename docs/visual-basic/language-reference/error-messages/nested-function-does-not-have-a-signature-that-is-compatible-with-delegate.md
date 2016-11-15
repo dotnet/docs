@@ -39,13 +39,13 @@ translation.priority.ht:
 # Nested function does not have a signature that is compatible with delegate &#39;&lt;delegatename&gt;&#39;
 A lambda expression has been assigned to a delegate that has an incompatible signature. For example, in the following code, delegate `Del` has two integer parameters.  
   
-```vb#  
+```vb  
 Delegate Function Del(ByVal p As Integer, ByVal q As Integer) As Integer  
 ```  
   
  The error is raised if a lambda expression with one argument is declared as type `Del`:  
   
-```vb#  
+```vb  
 ' Neither of these is valid.   
 ' Dim lambda1 As Del = Function(n As Integer) n + 1  
 ' Dim lambda2 As Del = Function(n) n + 1  
@@ -53,10 +53,10 @@ Delegate Function Del(ByVal p As Integer, ByVal q As Integer) As Integer
   
  **Error ID:** BC36532  
   
-### To correct this error  
+## To correct this error  
   
 -   Adjust either the delegate definition or the assigned lambda expression so that the signatures are compatible.  
   
 ## See Also  
  [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)   
- [Lambda Expressions](../../../visual-basic/language-reference/procedures/lambda-expressions.md)
+ [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)

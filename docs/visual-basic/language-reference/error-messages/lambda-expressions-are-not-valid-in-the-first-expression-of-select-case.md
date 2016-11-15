@@ -41,7 +41,7 @@ You cannot use a lambda expression for the test expression in a `Select Case` st
   
  The following code causes this error:  
   
-```vb#  
+```vb  
 ' Select Case (Function(arg) arg Is Nothing)  
     ' List of the cases.  
 ' End Select  
@@ -49,20 +49,20 @@ You cannot use a lambda expression for the test expression in a `Select Case` st
   
  **Error ID:** BC36635  
   
-### To correct this error  
+## To correct this error  
   
 -   Examine your code to determine whether a different conditional construction, such as an `If...Then...Else` statement, would work for you.  
   
 -   You may have intended to call the function, as shown in the following code:  
   
-    ```vb#  
-    Dim num? As Integer  
-    Select Case ((Function(arg? As Integer) arg Is Nothing)(num))  
-        ' List of the cases  
-    End Select  
-    ```  
+```vb  
+Dim num? As Integer  
+Select Case ((Function(arg? As Integer) arg Is Nothing)(num))  
+    ' List of the cases  
+End Select  
+```  
   
 ## See Also  
- [Lambda Expressions](../../../visual-basic/language-reference/procedures/lambda-expressions.md)   
+ [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
  [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)   
  [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md)

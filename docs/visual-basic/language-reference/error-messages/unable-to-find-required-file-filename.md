@@ -41,9 +41,9 @@ A file that is required by Visual Studio is missing or damaged.
   
  **Error ID:** BC30655  
   
-### To correct this error  
+## To correct this error  
   
 -   Reinstall Visual Studio.  
   
 ## See Also  
- [Talk to Us](/visual-studio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

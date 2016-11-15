@@ -49,7 +49,7 @@ Expression of type \<type> is not queryable. Make sure you are not missing an as
   
  **Error ID:** BC36593  
   
-### To correct this error  
+## To correct this error  
   
 1.  Add an `Import` statement for the <xref:System.Linq>, <xref:System.Data.Linq>, or <xref:System.Xml.Linq> namespace to your code file. You can also import namespaces for your project by using the **References** page of the Project Designer (**My Project**).  
   
@@ -64,4 +64,4 @@ Expression of type \<type> is not queryable. Make sure you are not missing an as
  [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)   
  [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)   
  [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)   
- [References Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/references-page-project-designer-visual-basic)
+ [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)

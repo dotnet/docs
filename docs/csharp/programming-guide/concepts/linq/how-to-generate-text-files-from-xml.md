@@ -25,7 +25,7 @@ This example shows how to generate a comma-separated values (CSV) file from an X
   
  This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
   
-```c#  
+```cs  
 XElement custOrd = XElement.Load("CustomersOrders.xml");  
 string csv =  
     (from el in custOrd.Element("Customers").Elements("Customer")  

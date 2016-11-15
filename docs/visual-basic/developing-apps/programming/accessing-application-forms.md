@@ -43,9 +43,8 @@ The `My.Forms` object provides an easy way to access an instance of each Windows
 ## Tasks  
  The following table lists examples showing how to access an application's forms.  
   
-|||  
-|-|-|  
 |To|See|  
+|---|---|  
 |Access one form from another form in an application.|[My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)|  
 |Display the titles of all the application's open forms.|<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>|  
 |Update the splash screen with status information as the application starts.|<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A>|  

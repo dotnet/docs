@@ -35,7 +35,7 @@ translation.priority.mt:
 # File already exists
 This error occurs as a result of either naming a new file with the name of an existing file or using the **Save As** command to save a currently loaded project with a name that already exists.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check the name and either change it to one that does not conflict, or delete the pre-existing file or project if it is no longer needed.  
   

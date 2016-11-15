@@ -38,11 +38,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Deployment of C# Applications
-After you have completed building your C# application, the next step is to distribute it. C# is a .NET language; therefore, distributing any C# executables to other machines requires the .NET Framework to be installed on each execution machine (and possibly other dependencies specific to your application). You have a variety of options available for distributing the .NET Framework. For an overview, see [Deployment Guide for Developers](../Topic/.NET%20Framework%20Deployment%20Guide%20for%20Developers.md).  
+After you have completed building your C# application, the next step is to distribute it. C# is a .NET language; therefore, distributing any C# executables to other machines requires the .NET Framework to be installed on each execution machine (and possibly other dependencies specific to your application). You have a variety of options available for distributing the .NET Framework. For an overview, see [Deployment Guide for Developers](https://msdn.microsoft.com/library/ee942965).  
   
- Moving completed applications to other computers is generally referred to as deployment. The Microsoft development environment provides mechanisms for deployment; for more information, see [Deploying Applications and Components](/visual-studio/deployment/deploying-applications-services-and-components).  
+ Moving completed applications to other computers is generally referred to as deployment. The Microsoft development environment provides mechanisms for deployment; for more information, see [Deploying Applications and Components](/visualstudio/deployment/deploying-applications-services-and-components).  
   
  If you build and distribute mainly from the command line, you might need to consider other methods of deployment and redistributing dependencies.  
   
 ## See Also  
- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
+ [Command-line Building With csc.exe](command-line-building-with-csc-exe.md)

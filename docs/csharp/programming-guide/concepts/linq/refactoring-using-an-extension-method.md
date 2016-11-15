@@ -31,7 +31,7 @@ This example builds on the previous example, [Retrieving the Text of the Paragra
   
  This example uses classes from the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
   
-```c#  
+```cs  
 public static class LocalExtensions  
 {  
     public static string StringConcatenate(this IEnumerable<string> source)  
@@ -75,7 +75,7 @@ public static class LocalExtensions
   
  The following code uses all four overloads.  
   
-```c#  
+```cs  
 string[] numbers = { "one", "two", "three" };  
   
 Console.WriteLine("{0}", numbers.StringConcatenate());  
@@ -98,7 +98,7 @@ one:two:three:
 ## Example  
  Now, the example can be modified to take advantage of the new extension method:  
   
-```c#  
+```cs  
 public static class LocalExtensions  
 {  
     public static string StringConcatenate(this IEnumerable<string> source)  

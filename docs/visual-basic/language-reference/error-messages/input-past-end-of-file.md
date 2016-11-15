@@ -36,7 +36,7 @@ translation.priority.ht:
 # Input past end of file
 Either an `Input` statement is reading from a file that is empty or one in which all the data is used, or you used the `EOF` function with a file opened for binary access.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Use the `EOF` function immediately before the `Input` statement to detect the end of the file.  
   

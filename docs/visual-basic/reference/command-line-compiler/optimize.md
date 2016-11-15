@@ -47,9 +47,8 @@ Enables or disables compiler optimizations.
   
 ## Arguments  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`+` &#124; `-`|Optional. The `/optimize-` option disables compiler optimizations. The `/optimize+` option enables optimizations. By default, optimizations are disabled.|  
   
 ## Remarks  
@@ -59,9 +58,8 @@ Enables or disables compiler optimizations.
   
  You can combine the `/optimize` and `/debug` options.  
   
-||  
-|-|  
 |To set /optimize in the Visual Studio integrated development environment|  
+|---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.<br />     For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **Compile** tab.<br />3.  Click the **Advanced** button.<br />4.  Modify the **Enable optimizations** check box.|  
   
 ## Example  

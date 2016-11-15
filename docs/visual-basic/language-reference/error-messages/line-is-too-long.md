@@ -41,7 +41,7 @@ Source text lines cannot exceed 65535 characters.
   
  **Error ID:** BC30494  
   
-### To correct this error  
+## To correct this error  
   
 -   Shorten the length of the line to 65535 characters or fewer.  
   

@@ -35,7 +35,7 @@ translation.priority.mt:
 # The stream passed to TextFieldParser cannot be read
 The [TextFieldParser Object](../../visual-basic/language-reference/objects/textfieldparser-object.md) cannot read the stream that has been passed to it. This may be a result of attempting to read a file that is not a text file.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check to make sure the file is a text file.  
   

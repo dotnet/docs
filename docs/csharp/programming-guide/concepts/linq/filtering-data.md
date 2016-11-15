@@ -41,7 +41,7 @@ Filtering refers to the operation of restricting the result set to contain only 
 ## Query Expression Syntax Example  
  The following example uses the `where` clause to filter from an array those strings that have a specific length.  
   
-```c#  
+```cs  
 string[] words = { "the", "quick", "brown", "fox", "jumps" };  
   
 IEnumerable<string> query = from word in words  

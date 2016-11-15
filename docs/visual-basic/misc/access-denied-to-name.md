@@ -33,7 +33,7 @@ translation.priority.mt:
 # Access denied to &#39;&lt;name&gt;&#39;
 A device, file, or disk is not accessible because your computer's security permissions are insufficient.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Ensure that you have the necessary permissions.  
   

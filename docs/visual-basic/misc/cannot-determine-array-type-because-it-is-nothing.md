@@ -35,7 +35,7 @@ translation.priority.mt:
 # Cannot determine array type because it is Nothing
 The type of your array cannot be determined because it has been set to the value `Nothing`.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Provide a value other than `Nothing` for the array.  
   

@@ -1,5 +1,5 @@
 ---
-title: "Working with Global Namespaces (Visual Basic) (LINQ to XML)2 | Microsoft Docs"
+title: "Working with Global Namespaces (Visual Basic) (LINQ to XML) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

@@ -35,7 +35,7 @@ translation.priority.mt:
 # Get not supported at run time
 You tried to read a property at run time that is only accessible at design time.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the property and determine under what conditions it can be set.  
   

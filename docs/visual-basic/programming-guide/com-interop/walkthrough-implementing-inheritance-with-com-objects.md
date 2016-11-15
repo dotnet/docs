@@ -41,7 +41,7 @@ You can derive Visual Basic classes from `Public` classes in COM objects, even t
   
  The following procedure shows how to use Visual Basic 6.0 to create a COM object that contains a class, and then use it as a base class.  
   
- [!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
 ### To build the COM object that is used in this walkthrough  
   

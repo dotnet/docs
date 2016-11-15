@@ -40,48 +40,44 @@ Visual Basic settings are designed to optimize the user experience and to maximi
   
 ## Windows and Views  
   
-||||  
-|-|-|-|  
 |Feature|Displayed by default?|Notes|  
-|[Class View](/visual-studio/ide/viewing-the-structure-of-code)|No|Hides **Hidden Types and Members**|  
-|[Command Window](/visual-studio/ide/reference/command-window)|No||  
+|---|---|---|    
+|[Class View](/visualstudio/ide/viewing-the-structure-of-code)|No|Hides **Hidden Types and Members**|  
+|[Command Window](/visualstudio/ide/reference/command-window)|No||  
 |**Dynamic Help** window|No|Does not appear when you press F1.|  
-|[Immediate Window](/visual-studio/ide/reference/immediate-window)|Yes, when debugging starts.||  
-|[Object Browser](/visual-studio/ide/viewing-the-structure-of-code)|No|Displays, by default:<br /><br /> -   Namespaces<br />-   Public members<br />-   Inherited members|  
-|[Output Window](/visual-studio/ide/reference/output-window)|Yes, when build starts.||  
-|[Properties Window](/visual-studio/ide/reference/properties-window)|Yes||  
+|[Immediate Window](/visualstudio/ide/reference/immediate-window)|Yes, when debugging starts.||  
+|[Object Browser](/visualstudio/ide/viewing-the-structure-of-code)|No|Displays, by default:<br /><br /> -   Namespaces<br />-   Public members<br />-   Inherited members|  
+|[Output Window](/visualstudio/ide/reference/output-window)|Yes, when build starts.||  
+|[Properties Window](/visualstudio/ide/reference/properties-window)|Yes||  
 |`Solution Explorer`|Yes||  
-|[Server Explorer](../Topic/Server%20Explorer.md)|No|Displays data connections and available system services.|  
-|[Start Page](/visual-studio/ide/customizing-the-start-page-for-visual-studio)|Yes|Appears the first time you start the IDE. You can customize it.|  
+|[Server Explorer](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d)|No|Displays data connections and available system services.|  
+|[Start Page](/visualstudio/ide/customizing-the-start-page-for-visual-studio)|Yes|Appears the first time you start the IDE. You can customize it.|  
 |[\<Pave Over> Task List (Visual Studio)](http://msdn.microsoft.com/en-us/ce97c0e2-5011-499a-b60a-dc5b9cc22654)|Yes, when compile errors or warnings exist.||  
-|[Team Explorer](../Topic/Connect%20to%20team%20projects%20in%20Team%20Foundation%20Server.md)|Yes|You can use Team Explorer to access your team projects and use the application lifecycle management features of Team Foundation. These include version control, builds, project management, integrated reports, and dashboards.|  
-|[Toolbox](/visual-studio/ide/reference/toolbox)|Yes|Displays controls and components in alphabetical order.|  
+|[Team Explorer](http://msdn.microsoft.com/library/1372e56c-b34f-42c2-b72c-94b57620c75c)|Yes|You can use Team Explorer to access your team projects and use the application lifecycle management features of Team Foundation. These include version control, builds, project management, integrated reports, and dashboards.|  
+|[Toolbox](/visualstudio/ide/reference/toolbox)|Yes|Displays controls and components in alphabetical order.|  
   
  In addition, the following elements have certain behaviors enabled when you select **Visual Basic Development Settings**.  
   
 ## Dialog Boxes  
   
-|||  
-|-|-|  
-|Feature|Behavior|  
+|Feature|Behavior|
+|---|---|  
 |**New Project** dialog box|When other platforms are installed on the computer, the IDE enables the combo box that allows you to specify the targeted platform.|  
-|[Options Dialog Box](/visual-studio/ide/reference/options-dialog-box-visual-studio)|Visual Basic enables simplified **Options** pages. Click the **Show All Settings** check box to see the full list of options.|  
+|[Options Dialog Box](/visualstudio/ide/reference/options-dialog-box-visual-studio)|Visual Basic enables simplified **Options** pages. Click the **Show All Settings** check box to see the full list of options.|  
   
 ## Keyboard  
   
-|||  
-|-|-|  
 |Feature|Behavior|  
+|---|---|  
 |Visual Basic 6.0 default shortcut keys|Supports typical Visual Basic 6 keyboard mapping.|  
   
 ## Miscellaneous IDE Elements  
   
-|||  
-|-|-|  
 |Feature|Behavior|  
+|---|---|  
 |Tool tips|-   Appear for all menu items and toolbar buttons when the mouse hovers above them.|  
 |[Visual Basic IntelliSense Code Snippets](../../../visual-basic/developing-apps/using-ide/intellisense-code-snippets.md)|Includes a library of code snippets that are ready to be inserted in your application.|  
-|[Visual Basic-Specific IntelliSense](/visual-studio/ide/visual-basic-specific-intellisense)|-   Provides all of the IntelliSense features with some productivity enhancements for Visual Basic developers.|  
+|[Visual Basic-Specific IntelliSense](/visualstudio/ide/visual-basic-specific-intellisense)|-   Provides all of the IntelliSense features with some productivity enhancements for Visual Basic developers.|  
   
 ## See Also  
  [How to: Change Select Settings](http://msdn.microsoft.com/en-us/ec70b520-a3e3-43c9-929b-bdc732cd2147)   

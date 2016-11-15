@@ -53,7 +53,7 @@ End Class
   
  **Error ID:** BC30909  
   
-### To correct this error  
+## To correct this error  
   
 -   Change the access level of the variable, procedure parameter, or function return to be at least as restrictive as the access level of its data type.  
   

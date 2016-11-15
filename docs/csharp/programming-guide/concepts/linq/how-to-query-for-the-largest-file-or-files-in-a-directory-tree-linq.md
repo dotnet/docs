@@ -38,7 +38,7 @@ This example shows five queries related to file size in bytes:
 ## Example  
  The following example contains five separate queries that show how to query and group files, depending on their file size in bytes. You can easily modify these examples to base the query on some other property of the <xref:System.IO.FileInfo> object.  
   
-```c#  
+```cs  
 class QueryBySize  
 {  
     static void Main(string[] args)  

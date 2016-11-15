@@ -40,7 +40,7 @@ translation.priority.ht:
 # How to: Dynamically Specify Predicate Filters at Runtime (C# Programming Guide)
 In some cases you do not know until run time how many predicates you have to apply to source elements in the `where` clause. One way to dynamically specify multiple predicate filters is to use the <xref:System.Linq.Enumerable.Contains%2A> method, as shown in the following example. The example is constructed in two ways. First, the project is run by filtering on values that are provided in the program. Then the project is run again by using input provided at run time.  
   
-### To filter by using the Contains method  
+## To filter by using the Contains method  
   
 1.  Open a new console application in Visual Studio. Name it `PredicateFilters`.  
   
@@ -85,7 +85,7 @@ In some cases you do not know until run time how many predicates you have to app
   
      Tucker: 122  
   
-### To filter by using a switch statement  
+## To filter by using a switch statement  
   
 1.  You can use a `switch` statement to select among predetermined alternative queries. In the following example, `studentQuery` uses a different `where` clause depending on which grade level, or year, is specified at run time.  
   
@@ -99,9 +99,9 @@ In some cases you do not know until run time how many predicates you have to app
   
 5.  Press F5 to run the project.  
   
-### To use this method in your own applications  
+## To use this method in your own applications  
   
--   When you adapt this method to your own application, remember that LINQ requires version 3.5 or 4 of the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)], and that the project must contain a reference to System.Core.dll and a `using` directive for `System.Linq`. LINQ to SQL, LINQ to XML, and LINQ to DataSet types require additional `using` directives and references. For more information, see [How to: Create a LINQ Project](../Topic/How%20to:%20Create%20a%20LINQ%20Project.md).  
+-   When you adapt this method to your own application, remember that LINQ requires version 3.5 or 4 of the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)], and that the project must contain a reference to System.Core.dll and a `using` directive for `System.Linq`. LINQ to SQL, LINQ to XML, and LINQ to DataSet types require additional `using` directives and references.   
   
 ## See Also  
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   

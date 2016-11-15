@@ -74,9 +74,8 @@ Loop { While | Until } condition
   
 ## Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`Do`|Required. Starts the definition of the `Do` loop.|  
 |`While`|Required unless `Until` is used. Repeat the loop until `condition` is `False`.|  
 |`Until`|Required unless `While` is used. Repeat the loop until `condition` is `True`.|  

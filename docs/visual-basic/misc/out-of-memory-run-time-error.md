@@ -35,7 +35,7 @@ translation.priority.mt:
 # Out of memory (Visual Basic Run-Time Error)
 More memory was required than is available.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Close unnecessary applications, documents, or source files that are open.  
   

@@ -51,9 +51,8 @@ A constant is a meaningful name that takes the place of a number or string that 
   
 ## In This Section  
   
-|||  
-|-|-|  
 |Definition|Term|  
+|---|---|  
 |[How to: Declare A Constant](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-a-constant.md)|Explains how to use the `Const` statement to declare a constant and set its value; by declaring a constant, you assign a meaningful name to the value.|  
 |[User-Defined Constants](../../../../visual-basic/programming-guide/language-features/constants-enums/user-defined-constants.md)|Describes how to create your own constants, including information on scoping and how to avoid circular references.|  
 |[Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)|Provides information on how the [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler initializes constants when `Option Explicit` is turned off.|  
@@ -61,9 +60,8 @@ A constant is a meaningful name that takes the place of a number or string that 
   
 ## Reference  
   
-|||  
-|-|-|  
 |Definition|Term|  
+|---|---|  
 |[Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)|Lists the constants predefined by [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].|  
 |[Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)|Describes the `Const` statement and its use.|  
 |[Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)|Describes the `Option Strict` statement and its use.|  

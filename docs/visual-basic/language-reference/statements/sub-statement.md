@@ -76,23 +76,23 @@ End Sub
   
 -   `attributelist`  
   
-     Optional. See [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md).  
+     Optional. See [Attribute List](attribute-list.md).  
   
 -   `Partial`  
   
-     Optional. Indicates definition of a partial method. See [Partial Methods](../../../visual-basic/language-reference/procedures/partial-methods.md).  
+     Optional. Indicates definition of a partial method. See [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md).  
   
 -   `accessmodifier`  
   
      Optional. Can be one of the following:  
   
-    -   [Public](../../../visual-basic/language-reference/modifiers/public.md)  
+    -   [Public](../modifiers/public.md)  
   
-    -   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
+    -   [Protected](../modifiers/protected.md)  
   
-    -   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)  
+    -   [Friend](../modifiers/friend.md)  
   
-    -   [Private](../../../visual-basic/language-reference/modifiers/private.md)  
+    -   [Private](../modifiers/private.md)  
   
     -   `Protected Friend`  
   
@@ -102,15 +102,15 @@ End Sub
   
      Optional. Can be one of the following:  
   
-    -   [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md)  
+    -   [Overloads](../modifiers/overloads.md)  
   
-    -   [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)  
+    -   [Overrides](../modifiers/overrides.md)  
   
-    -   [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)  
+    -   [Overridable](../modifiers/overridable.md)  
   
-    -   [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)  
+    -   [NotOverridable](../modifiers/notoverridable.md)  
   
-    -   [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)  
+    -   [MustOverride](../modifiers/mustoverride.md)  
   
     -   `MustOverride Overrides`  
   
@@ -118,15 +118,15 @@ End Sub
   
 -   `Shared`  
   
-     Optional. See [Shared](../../../visual-basic/language-reference/modifiers/shared.md).  
+     Optional. See [Shared](../modifiers/shared.md).  
   
 -   `Shadows`  
   
-     Optional. See [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md).  
+     Optional. See [Shadows](../modifiers/shadows.md).  
   
 -   `Async`  
   
-     Optional. See [Async](../../../visual-basic/language-reference/modifiers/async.md).  
+     Optional. See [Async](../modifiers/async.md).  
   
 -   `name`  
   
@@ -134,15 +134,15 @@ End Sub
   
 -   `typeparamlist`  
   
-     Optional. List of type parameters for a generic procedure. See [Type List](../../../visual-basic/language-reference/statements/type-list.md).  
+     Optional. List of type parameters for a generic procedure. See [Type List](type-list.md).  
   
 -   `parameterlist`  
   
-     Optional. List of local variable names representing the parameters of this procedure. See [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md).  
+     Optional. List of local variable names representing the parameters of this procedure. See [Parameter List](parameter-list.md).  
   
 -   `Implements`  
   
-     Optional. Indicates that this procedure implements one or more `Sub` procedures, each one defined in an interface implemented by this procedure's containing class or structure. See [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md).  
+     Optional. Indicates that this procedure implements one or more `Sub` procedures, each one defined in an interface implemented by this procedure's containing class or structure. See [Implements Statement](implements-statement.md).  
   
 -   `implementslist`  
   
@@ -154,15 +154,14 @@ End Sub
   
      `interface.definedname`  
   
-    |||  
-    |-|-|  
     |Part|Description|  
+    |---|---|  
     |`interface`|Required. Name of an interface implemented by this procedure's containing class or structure.|  
     |`definedname`|Required. Name by which the procedure is defined in `interface`.|  
   
 -   `Handles`  
   
-     Optional. Indicates that this procedure can handle one or more specific events. See [Handles](../../../visual-basic/language-reference/statements/handles-clause.md).  
+     Optional. Indicates that this procedure can handle one or more specific events. See [Handles](handles-clause.md).  
   
 -   `eventlist`  
   
@@ -174,9 +173,8 @@ End Sub
   
      `eventvariable.event`  
   
-    |||  
-    |-|-|  
     |Part|Description|  
+    |---|---|  
     |`eventvariable`|Required. Object variable declared with the data type of the class or structure that raises the event.|  
     |`event`|Required. Name of the event this procedure handles.|  
   
@@ -192,7 +190,7 @@ End Sub
  All executable code must be inside a procedure. Use a `Sub` procedure when you don't want to return a value to the calling code. Use a `Function` procedure when you want to return a value.  
   
 ## Defining a Sub Procedure  
- You can define a `Sub` procedure only at the module level. The declaration context for a sub procedure must, therefore, be a class, a structure, a module, or an interface and can't be a source file, a namespace, a procedure, or a block. For more information, see [Declaration Contexts and Default Access Levels](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md).  
+ You can define a `Sub` procedure only at the module level. The declaration context for a sub procedure must, therefore, be a class, a structure, a module, or an interface and can't be a source file, a namespace, a procedure, or a block. For more information, see [Declaration Contexts and Default Access Levels](declaration-contexts-and-default-access-levels.md).  
   
  `Sub` procedures default to public access. You can adjust their access levels by using the access modifiers.  
   
@@ -203,7 +201,7 @@ End Sub
   
  The following example shows a return from a `Sub` procedure.  
   
-```vb#  
+```vb  
 Sub mySub(ByVal q As String)  
     Return  
 End Sub   
@@ -216,25 +214,25 @@ End Sub
   
  A `Sub` procedure and a `Function` procedure  can have parameters and perform a series of statements. However, a `Function` procedure returns a value, and a `Sub` procedure doesn't. Therefore, you can't use a `Sub` procedure in an expression.  
   
- You can use the `Call` keyword when you call a `Sub` procedure, but that keyword isn't recommended for most uses. For more information, see [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md).  
+ You can use the `Call` keyword when you call a `Sub` procedure, but that keyword isn't recommended for most uses. For more information, see [Call Statement](call-statement.md).  
   
  Visual Basic sometimes rearranges arithmetic expressions to increase internal efficiency. For that reason, if your argument list includes expressions that call other procedures, you shouldn't assume that those expressions will be called in a particular order.  
   
 ## Async Sub Procedures  
  By using the Async feature, you can invoke asynchronous functions without using explicit callbacks or manually splitting your code across multiple functions or lambda expressions.  
   
- If you mark a procedure with the [Async](../../../visual-basic/language-reference/modifiers/async.md) modifier, you can use the [Await](../../../visual-basic/language-reference/operators/await-operator.md) operator in the procedure. When control reaches an `Await` expression in the `Async` procedure, control returns to the caller, and progress in the procedure is suspended until the awaited task completes. When the task is complete, execution can resume in the procedure.  
+ If you mark a procedure with the [Async](../modifiers/async.md) modifier, you can use the [Await](../../../visual-basic/language-reference/operators/await-operator.md) operator in the procedure. When control reaches an `Await` expression in the `Async` procedure, control returns to the caller, and progress in the procedure is suspended until the awaited task completes. When the task is complete, execution can resume in the procedure.  
   
 > [!NOTE]
 >  An `Async` procedure returns to the caller when either the first awaited object that’s not yet complete is encountered or the end of the `Async` procedure is reached, whichever occurs first.  
   
- You can also mark a [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md) with the `Async` modifier. An `Async` function can have a return type of <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.Task>. An example later in this topic shows an `Async` function that has a return type of <xref:System.Threading.Tasks.Task%601>.  
+ You can also mark a [Function Statement](function-statement.md) with the `Async` modifier. An `Async` function can have a return type of <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.Task>. An example later in this topic shows an `Async` function that has a return type of <xref:System.Threading.Tasks.Task%601>.  
   
  `Async` `Sub` procedures are primarily used for event handlers, where a value can't be returned. An `Async``Sub` procedure can't be awaited, and the caller of an `Async``Sub` procedure can't catch exceptions that the `Sub` procedure throws.  
   
- An `Async` procedure can't declare any [ByRef](../../../visual-basic/language-reference/modifiers/byref.md) parameters.  
+ An `Async` procedure can't declare any [ByRef](../modifiers/byref.md) parameters.  
   
- For more information about `Async` procedures, see [Asynchronous Programming with Async and Await](../Topic/Asynchronous%20Programming%20with%20Async%20and%20Await%20\(C%23%20and%20Visual%20Basic\).md), [Control Flow in Async Programs](../Topic/Control%20Flow%20in%20Async%20Programs%20\(C%23%20and%20Visual%20Basic\).md), and [Async Return Types](../Topic/Async%20Return%20Types%20\(C%23%20and%20Visual%20Basic\).md).  
+ For more information about `Async` procedures, see [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md), [Control Flow in Async Programs](../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md), and [Async Return Types](../../../visual-basic/programming-guide/concepts/async/async-return-types.md).  
   
 ## Example  
  The following example uses the `Sub` statement to define the name, parameters, and code that form the body of a `Sub` procedure.  
@@ -249,13 +247,13 @@ End Sub
  [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/sub-statement_2.vb)]  
   
 ## See Also  
- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)   
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)   
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   
- [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md)   
- [Of](../../../visual-basic/language-reference/statements/of-clause.md)   
- [Parameter Arrays](../../../visual-basic/language-reference/procedures/parameter-arrays.md)   
+ [Implements Statement](implements-statement.md)   
+ [Function Statement](function-statement.md)   
+ [Parameter List](parameter-list.md)   
+ [Dim Statement](dim-statement.md)   
+ [Call Statement](call-statement.md)   
+ [Of](of-clause.md)   
+ [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)   
  [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)   
- [Troubleshooting Procedures](../../../visual-basic/language-reference/procedures/troubleshooting-procedures.md)   
- [Partial Methods](../../../visual-basic/language-reference/procedures/partial-methods.md)
+ [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)   
+ [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)

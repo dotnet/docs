@@ -33,7 +33,7 @@ translation.priority.mt:
 # The source folder does not exist
 You attempted an operation that references a source folder that does not exist. This may be the result of supplying an incorrect file path.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check that you are using the correct path, particularly if you are using relative paths.  
   

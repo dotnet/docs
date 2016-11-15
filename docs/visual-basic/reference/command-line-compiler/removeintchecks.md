@@ -49,14 +49,12 @@ Turns overflow-error checking for integer operations on or off.
   
 ## Arguments  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`+` &#124; `-`|Optional. The `/removeintchecks-` option causes the compiler to check all integer calculations for overflow errors. The default is `/removeintchecks-`.<br /><br /> Specifying `/removeintchecks` or `/removeintchecks+` prevents error checking and can make integer calculations faster. However, without error checking, and if data type capacities are overflowed, incorrect results may be stored without raising an error.|  
   
-||  
-|-|  
 |To set /removeintchecks in the Visual Studio integrated development environment|  
+|---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Click the **Compile** tab.<br />3.  Click the **Advanced** button.<br />4.  Modify the value of the **Remove integer overflow checks** box.|  
   
 ## Example  

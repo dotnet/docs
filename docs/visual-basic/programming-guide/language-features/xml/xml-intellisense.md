@@ -43,7 +43,7 @@ The Visual Basic Code Editor includes IntelliSense features for XML that provide
 XML IntelliSense  
   
 ## Enabling XML IntelliSense in Visual Basic  
- To enable XML IntelliSense in Visual Basic, you must include an XSD schema file in your Visual Basic project. You must also import the target namespace for the XSD schema into your code file by using the `Imports` statement. Alternatively, you can add the target namespace to the project-level namespace list by using the **References** page of the Visual Basic Project Designer. For examples, see [How to: Enable XML IntelliSense in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/how-to-enable-xml-intellisense.md). For more information, see [Imports Statement (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md) and [References Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/references-page-project-designer-visual-basic).  
+ To enable XML IntelliSense in Visual Basic, you must include an XSD schema file in your Visual Basic project. You must also import the target namespace for the XSD schema into your code file by using the `Imports` statement. Alternatively, you can add the target namespace to the project-level namespace list by using the **References** page of the Visual Basic Project Designer. For examples, see [How to: Enable XML IntelliSense in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/how-to-enable-xml-intellisense.md). For more information, see [Imports Statement (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md) and [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic).  
   
  Note that by default you cannot see XSD schema files in Visual Basic projects. You may have to click the **Show All Files** button to select an XSD file to include in your project.  
   
@@ -59,9 +59,8 @@ XML IntelliSense
 ## Member List  
  After you type a period (.) to delimit an instance of an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument> object (or an instance of `IEnumerable(Of XElement)` or `IEnumerable(Of XDocument)`), Visual Basic IntelliSense displays a list of possible object members. The initial list includes three options that represent XML axis properties, as described in the following list.  
   
-|||  
-|-|-|  
 |Option|Description|  
+|---|---|  
 |**\< >**|Select this option to show a list of possible child elements. For more information, see [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md) and the <xref:System.Xml.Linq.XContainer.Elements%2A> method.|  
 |**@**|Select this option to show a list of possible attributes. For more information, see [XML Axis Properties](../../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md).This option is available only for objects of type <xref:System.Xml.Linq.XElement>.|  
 |**…\< >**|Select this option to show a list of possible descendant elements. For more information, see [How to: Access XML Descendant Elements](../../../../visual-basic/programming-guide/language-features/xml/how-to-access-xml-descendant-elements.md) and the <xref:System.Xml.Linq.XContainer.Elements%2A> method.|  
@@ -132,4 +131,4 @@ po.<
  [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)   
  [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)   
  [XML Descendant Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-descendant-axis-property.md)   
- [References Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/references-page-project-designer-visual-basic)
+ [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)

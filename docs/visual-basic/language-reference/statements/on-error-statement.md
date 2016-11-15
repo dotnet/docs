@@ -69,9 +69,8 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
   
 ## Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`GoTo` `line`|Enables the error-handling routine that starts at the line specified in the required `line` argument. The `line` argument is any line label or line number. If a run-time error occurs, control branches to the specified line, making the error handler active. The specified line must be in the same procedure as the `On Error` statement, or a compile-time error will occur.|  
 |`GoTo` 0|Disables enabled error handler in the current procedure and resets it to `Nothing`.|  
 |`GoTo` -1|Disables enabled exception in the current procedure and resets it to `Nothing`.|  

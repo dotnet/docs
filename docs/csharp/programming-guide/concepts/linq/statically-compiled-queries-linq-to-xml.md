@@ -29,7 +29,7 @@ One of the most important performance benefits LINQ to XML, as opposed to <xref:
 //Address[@Type='Shipping']  
 ```  
   
-```c#  
+```cs  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  
   
 IEnumerable<XElement> list1 =  
@@ -43,7 +43,7 @@ foreach (XElement el in list1)
   
  The query expression in this example is re-written by the compiler to method-based query syntax. The following example, which is written in method-based query syntax, produces the same results as the previous one:  
   
-```c#  
+```cs  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  
   
 IEnumerable<XElement> list1 =  
@@ -57,7 +57,7 @@ foreach (XElement el in list1)
   
  The <xref:System.Linq.Enumerable.Where%2A> method is an extension method. For more information, see [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md). Because <xref:System.Linq.Enumerable.Where%2A> is an extension method, the query above is compiled as though it were written as follows:  
   
-```c#  
+```cs  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  
   
 IEnumerable<XElement> list1 =  
@@ -77,7 +77,7 @@ foreach (XElement el in list1)
 ## Executing XPath Expressions with XmlDocument  
  The following example uses <xref:System.Xml.XmlDocument> to accomplish the same results as the previous examples:  
   
-```c#  
+```cs  
 XmlReader reader = XmlReader.Create("PurchaseOrders.xml");  
 XmlDocument doc = new XmlDocument();  
 doc.Load(reader);  

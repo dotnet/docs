@@ -23,7 +23,7 @@ It is often convenient to convert varieties of data structures to XML, and XML b
 ## Example  
  This example uses a form of functional construction in which a query projects new <xref:System.Xml.Linq.XElement> objects, and the resulting collection is passed as an argument to the constructor of the Root <xref:System.Xml.Linq.XElement> object.  
   
-```c#  
+```cs  
 Dictionary<string, string> dict = new Dictionary<string, string>();  
 dict.Add("Child1", "Value1");  
 dict.Add("Child2", "Value2");  
@@ -50,7 +50,7 @@ Console.WriteLine(root);
 ## Example  
  The following code creates a dictionary from XML.  
   
-```c#  
+```cs  
 XElement root = new XElement("Root",  
     new XElement("Child1", "Value1"),  
     new XElement("Child2", "Value2"),  

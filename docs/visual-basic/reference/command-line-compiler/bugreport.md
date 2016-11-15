@@ -46,9 +46,8 @@ Creates a file that you can use when you file a bug report.
   
 ## Arguments  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`file`|Required. The name of the file that will contain your bug report. Enclose the file name in quotation marks (" ") if the name contains a space.|  
   
 ## Remarks  

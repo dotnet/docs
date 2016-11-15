@@ -97,7 +97,7 @@ Specifies that a property or procedure redeclares one or more existing propertie
   
 ## See Also  
  [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)   
- [Procedure Overloading](../../../visual-basic/language-reference/procedures/procedure-overloading.md)   
+ [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)   
  [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
- [Operator Procedures](../../../visual-basic/language-reference/procedures/operator-procedures.md)   
- [How to: Define a Conversion Operator](../../../visual-basic/language-reference/procedures/how-to-define-a-conversion-operator.md)
+ [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)   
+ [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)

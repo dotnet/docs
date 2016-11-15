@@ -44,7 +44,7 @@ A `Sub` or `Function` must be defined in order to be called. Possible causes of 
   
 -   Declaring a Windows dynamic-link library (DLL) routine or Macintosh code-resource routine that is not in the specified library or code resource.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Make sure that the procedure name is spelled correctly.  
   
@@ -54,6 +54,6 @@ A `Sub` or `Function` must be defined in order to be called. Possible causes of 
   
 ## See Also  
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)   
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)

@@ -46,13 +46,13 @@ The Clipboard can be used to store data, such as text and images. Because the Cl
   
  [!code-vb[VbVbcnMyClipboard#4](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_1.vb)]  
   
- This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Windows Forms Applications > Clipboard**. For more information, see [Code Snippets](/visual-studio/ide/code-snippets).  
+ This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Windows Forms Applications > Clipboard**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
  Use the <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage%2A> method to retrieve an image from the Clipboard. This example checks to see if there is an image on the Clipboard before retrieving it and assigning it to `PictureBox1`.  
   
  [!code-vb[VbResourceTasks#16](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_2.vb)]  
   
- This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Windows Forms Applications > Clipboard**.For more information, see [Code Snippets](/visual-studio/ide/code-snippets).  
+ This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Windows Forms Applications > Clipboard**.For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
  Items placed on the Clipboard will persist even after the application is shut down.  
   
@@ -94,5 +94,5 @@ The Clipboard can be used to store data, such as text and images. Because the Cl
  <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy>   
  <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream%2A>   
  <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject%2A>   
- [How to: Read Object Data from an XML File](../Topic/How%20to:%20Read%20Object%20Data%20from%20an%20XML%20File%20\(C%23%20and%20Visual%20Basic\).md)   
- [How to: Write Object Data to an XML File](../Topic/How%20to:%20Write%20Object%20Data%20to%20an%20XML%20File%20\(C%23%20and%20Visual%20Basic\).md)
+ [How to: Read Object Data from an XML File](http://msdn.microsoft.com/library/7e677b93-7526-4f22-9de7-9dffa4c62ef3)   
+ [How to: Write Object Data to an XML File](http://msdn.microsoft.com/library/279c232a-cee5-4e3c-9710-3696875c8ee4)

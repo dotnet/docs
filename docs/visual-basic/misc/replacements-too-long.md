@@ -35,7 +35,7 @@ translation.priority.mt:
 # Replacements too long
 You specified a replacement that exceeds the permitted length.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Consult the component documentation for the length restriction.  
   

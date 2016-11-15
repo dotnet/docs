@@ -56,10 +56,10 @@ Specifies that a procedure argument can be omitted when the procedure is called.
 -   [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 > [!NOTE]
->  When calling a procedure with or without optional parameters, you can pass arguments by position or by name. For more information, see [Passing Arguments by Position and by Name](../../../visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name.md).  
+>  When calling a procedure with or without optional parameters, you can pass arguments by position or by name. For more information, see [Passing Arguments by Position and by Name](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md).  
   
 > [!NOTE]
->  You can also define a procedure with optional parameters by using overloading. If you have one optional parameter, you can define two overloaded versions of the procedure, one that accepts the parameter and one that doesn’t. For more information, see [Procedure Overloading](../../../visual-basic/language-reference/procedures/procedure-overloading.md).  
+>  You can also define a procedure with optional parameters by using overloading. If you have one optional parameter, you can define two overloaded versions of the procedure, one that accepts the parameter and one that doesn’t. For more information, see [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md).  
   
 ## Example  
  The following example defines a procedure that has an optional parameter.  
@@ -90,5 +90,5 @@ End Function
   
 ## See Also  
  [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)   
- [Optional Parameters](../../../visual-basic/language-reference/procedures/optional-parameters.md)   
+ [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)   
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)

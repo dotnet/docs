@@ -35,7 +35,7 @@ translation.priority.mt:
 # Feature not yet implemented
 You have tried to access a feature that is currently not implemented in Visual Basic.  
   
-### To correct this error  
+## To correct this error  
   
 -   Remove the reference.  
   

@@ -36,7 +36,7 @@ This topic describes the attributes that are most commonly used in C# programs.
 ##  <a name="Global"></a> Global Attributes  
  Most attributes are applied to specific language elements such as classes or methods; however, some attributes are global—they apply to an entire assembly or module. For example, the <xref:System.Reflection.AssemblyVersionAttribute> attribute can be used to embed version information into an assembly, like this:  
   
-```c#  
+```cs  
 [assembly: AssemblyVersion("1.0.0.0")]  
 ```  
   
@@ -51,7 +51,7 @@ This topic describes the attributes that are most commonly used in C# programs.
 -   Assembly manifest attributes  
   
 ### Assembly Identity Attributes  
- Three attributes (with a strong name, if applicable) determine the identity of an assembly: name, version, and culture. These attributes form the full name of the assembly and are required when you reference it in code. You can set an assembly's version and culture using attributes. However, the name value is set by the compiler, the Visual Studio IDE in the [Assembly Information Dialog Box](/visual-studio/ide/reference/assembly-information-dialog-box), or the Assembly Linker (Al.exe) when the assembly is created, based on the file that contains the assembly manifest. The <xref:System.Reflection.AssemblyFlagsAttribute> attribute specifies whether multiple copies of the assembly can coexist.  
+ Three attributes (with a strong name, if applicable) determine the identity of an assembly: name, version, and culture. These attributes form the full name of the assembly and are required when you reference it in code. You can set an assembly's version and culture using attributes. However, the name value is set by the compiler, the Visual Studio IDE in the [Assembly Information Dialog Box](/visualstudio/ide/reference/assembly-information-dialog-box), or the Assembly Linker (Al.exe) when the assembly is created, based on the file that contains the assembly manifest. The <xref:System.Reflection.AssemblyFlagsAttribute> attribute specifies whether multiple copies of the assembly can coexist.  
   
  The following table shows the identity attributes.  
   
@@ -88,7 +88,7 @@ This topic describes the attributes that are most commonly used in C# programs.
 ##  <a name="Obsolete"></a> Obsolete Attribute  
  The `Obsolete` attribute marks a program entity as one that is no longer recommended for use. Each use of an entity marked obsolete will subsequently generate a warning or an error, depending on how the attribute is configured. For example:  
   
-```c#  
+```cs  
 [System.Obsolete("use class B")]  
 class A  
 {  
@@ -106,7 +106,7 @@ class B
   
  The string provided as the first argument to attribute constructor will be displayed as part of the warning or error. For example, when you use it with the previous definitions, the following code generates two warnings and one error:  
   
-```c#  
+```cs  
 // Generates 2 warnings:  
 // A a = new A();  
   
@@ -129,7 +129,7 @@ b.NewMethod();
   
  In this example, `Conditional` is applied to a method to enable or disable the display of program-specific diagnostic information:  
   
-```c#  
+```cs  
 #define TRACE_ON  
 using System;  
 using System.Diagnostics;  
@@ -157,7 +157,7 @@ public class ProgramClass
   
  The `Conditional` attribute is often used with the `DEBUG` identifier to enable trace and logging features for debug builds but not in release builds, like this:  
   
-```c#  
+```cs  
 [Conditional("DEBUG")]  
 static void DebugMethod()  
 {  
@@ -166,7 +166,7 @@ static void DebugMethod()
   
  When a method marked as conditional is called, the presence or absence of the specified preprocessing symbol determines whether the call is included or omitted. If the symbol is defined, the call is included; otherwise, the call is omitted. Using `Conditional` is a cleaner, more elegant, and less error-prone alternative to enclosing methods inside `#if…#endif` blocks, like this:  
   
-```c#  
+```cs  
 #if DEBUG  
     void ConditionalMethod()  
     {  
@@ -179,7 +179,7 @@ static void DebugMethod()
 ### Using Multiple Identifiers  
  If a method has multiple `Conditional` attributes, a call to the method is included if at least one of the conditional symbols is defined (in other words, the symbols are logically linked together by using the OR operator). In this example, the presence of either `A` or `B` will result in a method call:  
   
-```c#  
+```cs  
 [Conditional("A"), Conditional("B")]  
 static void DoIfAorB()  
 {  
@@ -189,7 +189,7 @@ static void DoIfAorB()
   
  To achieve the effect of logically linking symbols by using the AND operator, you can define serial conditional methods. For example, the second method below will execute only if both `A` and `B` are defined:  
   
-```c#  
+```cs  
 <Conditional("A")>   
 Shared Sub DoIfA()  
     DoIfAandB()  
@@ -204,7 +204,7 @@ End Sub
 ### Using Conditional with Attribute Classes  
  The `Conditional` attribute can also be applied to an attribute class definition. In this example, the custom attribute `Documentation` will only add information to the metadata if DEBUG is defined.  
   
-```c#  
+```cs  
 [Conditional("DEBUG")]  
 public class Documentation : System.Attribute  
 {  
@@ -232,9 +232,8 @@ class SampleClass
   
  To obtain member caller information, you use attributes that are applied to optional parameters. Each optional parameter specifies a default value. The following table lists the Caller Info attributes that are defined in the <xref:System.Runtime.CompilerServices?displayProperty=fullName> namespace:  
   
-||||  
-|-|-|-|  
 |Attribute|Description|Type|  
+|---|---|---|  
 |<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|Full path of the source file that contains the caller. This is the path at compile time.|`String`|  
 |<xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>|Line number in the source file from which the method is called.|`Integer`|  
 |<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method name or property name of the caller. For more information, see [Caller Information (C#)](../../../../csharp/programming-guide/concepts/caller-information.md).|`String`|  
@@ -245,6 +244,6 @@ class SampleClass
  <xref:System.Reflection>   
  <xref:System.Attribute>   
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md)   
+ [Attributes](https://msdn.microsoft.com/library/5x6cd29c)   
  [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
  [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

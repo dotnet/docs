@@ -65,7 +65,7 @@ xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml">
   
  This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
   
-```c#  
+```cs  
 const string documentRelationshipType =  
   "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument";  
 const string wordmlNamespace =  

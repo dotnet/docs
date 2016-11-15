@@ -35,7 +35,7 @@ translation.priority.mt:
 # String length exceeds maximum length of 32767 characters for &#39;FileSystem&#39; APIs
 A string's length exceeds the maximum length of 32767 characters.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Shorten the string.  
   

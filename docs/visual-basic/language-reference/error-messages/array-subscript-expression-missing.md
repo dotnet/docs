@@ -41,7 +41,7 @@ An array initialization leaves out one or more of the subscripts that define the
   
  **Error ID:** BC30306  
   
-### To correct this error  
+## To correct this error  
   
 -   Supply the missing subscript.  
   

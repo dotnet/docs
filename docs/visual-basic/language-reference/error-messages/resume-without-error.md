@@ -36,7 +36,7 @@ translation.priority.ht:
 # Resume without error
 A `Resume` statement appeared outside error-handling code, or the code jumped into an error handler even though there was no error.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Move the `Resume`statement into an error handler, or delete it.  
   

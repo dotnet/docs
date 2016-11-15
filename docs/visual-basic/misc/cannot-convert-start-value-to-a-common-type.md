@@ -35,7 +35,7 @@ translation.priority.mt:
 # Cannot convert start value of type &#39;&lt;type1&gt;&#39;, limit value of &#39;&lt;type2&gt;&#39; and step value of &#39;&lt;type3&gt;&#39; to a common type
 The specified `For...Next` control values have different types, and therefore are not valid because they cannot be converted to a common type.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Change the type of one or more of the values so all can be converted to a common type.  
   

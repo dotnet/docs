@@ -36,7 +36,7 @@ translation.priority.ht:
 # File name or class name not found during Automation operation (Visual Basic)
 The name specified for file name or class in a call to the `GetObject` function could not be found.  
   
-### To correct this error  
+## To correct this error  
   
 -   Check the names and try again. Make sure the name used for the `class` parameter matches that registered with the system.  
   

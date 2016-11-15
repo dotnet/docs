@@ -27,7 +27,7 @@ This example shows how to use a LINQ query to count the occurrences of a specifi
   
 ## Example  
   
-```c#  
+```cs  
 class CountWords  
 {  
     static void Main()  

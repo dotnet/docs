@@ -35,7 +35,7 @@ translation.priority.mt:
 # Argument &#39;&lt;argumentname&gt;&#39; cannot be a multidimensional array
 The rank of an array argument is greater than 1, but it can only be a one-dimensional array.  
   
-### To correct this error  
+## To correct this error  
   
 -   Change the argument rank to 1.  
   

@@ -35,7 +35,7 @@ translation.priority.mt:
 # Cannot calculate rate using the arguments provided
 The rate calculation does not contain the required arguments.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the spelling of arguments in the expression. A misspelled variable name can implicitly create a numeric variable that is initialized to zero.  
   

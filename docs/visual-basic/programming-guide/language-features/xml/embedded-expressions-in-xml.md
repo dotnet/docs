@@ -55,9 +55,8 @@ Embedded expressions enable you to create XML literals that contain expressions 
 ## Embedded Expression Location and Validation  
  Embedded expressions can appear only at certain locations within XML literal expressions. The expression location controls which types the expression can return and how `Nothing` is handled. The following table describes the allowed locations and types of embedded expressions.  
   
-||||  
-|-|-|-|  
 |Location in literal|Type of expression|Handling of `Nothing`|  
+|---|---|---|  
 |XML element name|<xref:System.Xml.Linq.XName>|Error|  
 |XML element content|`Object` or array of `Object`|Ignored|  
 |XML element attribute name|<xref:System.Xml.Linq.XName>|Error, unless the attribute value is also `Nothing`|  

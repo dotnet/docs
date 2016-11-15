@@ -25,7 +25,7 @@ This topic shows how to find an element that has an attribute that has a specifi
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md).  
   
-```c#  
+```cs  
 XElement root = XElement.Load("PurchaseOrder.xml");  
 IEnumerable<XElement> address =  
     from el in root.Elements("Address")  
@@ -53,7 +53,7 @@ foreach (XElement el in address)
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md).  
   
-```c#  
+```cs  
 XElement root = XElement.Load("PurchaseOrderInNamespace.xml");  
 XNamespace aw = "http://www.adventure-works.com";  
 IEnumerable<XElement> address =  

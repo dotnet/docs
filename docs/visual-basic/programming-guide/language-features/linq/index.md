@@ -72,6 +72,5 @@ This section contains overviews, examples, and background information that will 
  [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md)   
  [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)   
  [LINQ to DataSet Overview](../Topic/LINQ%20to%20DataSet%20Overview.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
- [LINQ Samples](../Topic/LINQ%20Samples.md)   
- [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)
+ [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)   
+ [LINQ Samples](../Topic/LINQ%20Samples.md)

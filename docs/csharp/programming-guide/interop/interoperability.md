@@ -66,5 +66,5 @@ Interoperability enables you to preserve and take advantage of existing investme
 ## See Also  
  <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A?displayProperty=fullName>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Interoperating with Unmanaged Code](../Topic/Interoperating%20with%20Unmanaged%20Code.md)   
+ [Interoperating with Unmanaged Code](https://msdn.microsoft.com/library/sd10k43k)   
  [Walkthrough: Office Programming](../../../csharp/programming-guide/interop/walkthrough-office-programming.md)

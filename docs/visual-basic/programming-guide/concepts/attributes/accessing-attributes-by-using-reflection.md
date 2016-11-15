@@ -116,7 +116,7 @@ End Class
  <xref:System.Reflection>   
  <xref:System.Attribute>   
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
- [Retrieving Information Stored in Attributes](../Topic/Retrieving%20Information%20Stored%20in%20Attributes.md)   
+ [Retrieving Information Stored in Attributes](http://msdn.microsoft.com/library/37dfe4e3-7da0-48b6-a3d9-398981524e1c)   
  [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)   
  [Attributes (Visual Basic)](../../../../visual-basic/language-reference/attributes.md)   
  [Creating Custom Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)

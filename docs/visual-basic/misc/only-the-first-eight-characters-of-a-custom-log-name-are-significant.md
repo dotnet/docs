@@ -33,7 +33,7 @@ translation.priority.mt:
 # Only the first eight characters of a custom log name are significant
 When checking event log names for uniqueness, only the first eight characters are considered. A conflict may result from event logs that share their first eight characters.  
   
-### To correct this error  
+## To correct this error  
   
 -   Give the event log a name in which the first eight characters are unique.  
   

@@ -53,9 +53,8 @@ Group Join element [As type] In collection _
   
 ## Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`element`|Required. The control variable for the collection being joined.|  
 |`type`|Optional. The type of `element`. If no `type` is specified, the type of `element` is inferred from `collection`.|  
 |`collection`|Required. The collection to combine with the collection that is on the left side of the `Group Join` operator. A `Group Join` clause can be nested in a `Join` clause or in another `Group Join` clause.|  

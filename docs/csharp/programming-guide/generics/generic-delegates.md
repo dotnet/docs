@@ -63,4 +63,4 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) can define
  [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)   
  [Generic Interfaces](../../../csharp/programming-guide/generics/generic-interfaces.md)   
  [Delegates](../../../csharp/programming-guide/delegates/index.md)   
- [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)
+ [Generics](https://msdn.microsoft.com/library/ms172192)

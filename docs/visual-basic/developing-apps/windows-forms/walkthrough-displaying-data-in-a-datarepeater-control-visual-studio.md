@@ -40,7 +40,7 @@ This walkthrough provides a basic start-to-finish scenario for displaying bound 
 ## Prerequisite  
  This walkthrough requires the Northwind sample database.  
   
- If you do not have this database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088). For instructions, see [Downloading Sample Databases](../Topic/Downloading%20Sample%20Databases.md).  
+ If you do not have this database on your development computer, you can download it from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088). For instructions, see [Downloading Sample Databases](https://msdn.microsoft.com/library/bb399411).  
   
 ## Overview  
  The first part of this walkthrough consists of four main tasks:  
@@ -53,7 +53,7 @@ This walkthrough provides a basic start-to-finish scenario for displaying bound 
   
 -   Adding data-bound controls.  
   
- [!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
 ## Creating a DataRepeater Solution  
  In the first step, you create a project and solution.  

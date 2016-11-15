@@ -53,7 +53,7 @@ C# allows user-defined types to overload operators by defining static member fun
   
  To overload an operator on a custom class requires creating a method on the class with the correct signature. The method must be named "operator X" where X is the name or symbol of the operator being overloaded. Unary operators have one parameter, and binary operators have two parameters. In each case, one parameter must be the same type as the class or struct that declares the operator.  
   
-```c#  
+```cs  
 public static Complex operator +(Complex c1, Complex c2)  
     {  
         Return new Complex(c1.real + c2.real, c1.imaginary + c2.imaginary);  
@@ -63,7 +63,7 @@ public static Complex operator +(Complex c1, Complex c2)
   
  It is common to have definitions that simply return immediately with the result of an expression.  There is a syntax shortcut using `=>` for these situations.  
   
-```c#  
+```cs  
 public static Complex operator +(Complex c1, Complex c2) =>  
         new Complex(c1.real + c2.real, c1.imaginary + c2.imaginary);  
   

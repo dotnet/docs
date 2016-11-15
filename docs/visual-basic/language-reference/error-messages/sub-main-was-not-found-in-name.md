@@ -42,7 +42,7 @@ translation.priority.ht:
   
  **Error ID:** BC30420  
   
-### To correct this error  
+## To correct this error  
   
 1.  Supply the missing `Sub Main` statement, or if it exists, move it to the appropriate location in the code. For more information on `Sub Main`, see [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md).  
   

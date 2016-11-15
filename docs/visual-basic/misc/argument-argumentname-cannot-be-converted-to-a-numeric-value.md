@@ -35,7 +35,7 @@ translation.priority.mt:
 # Argument &#39;&lt;argumentname&gt;&#39; cannot be converted to a numeric value
 A conversion attempted to convert a variable, such as a string, to a numeric value.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Find a conversion that is meaningful.  
   

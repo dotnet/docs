@@ -39,7 +39,7 @@ This page lists the properties that are members of Visual Basic modules. Other p
 ## Visual Basic Properties  
   
 |||  
-|-|-|  
+|---|---|  
 |<xref:Microsoft.VisualBasic.DateAndTime.DateString%2A>|Returns or sets a `String` value representing the current date according to your system.|  
 |<xref:Microsoft.VisualBasic.DateAndTime.Now%2A>|Returns a `Date` value containing the current date and time according to your system.|  
 |<xref:Microsoft.VisualBasic.Globals.ScriptEngine%2A>|Returns a `String` representing the runtime currently in use.|  

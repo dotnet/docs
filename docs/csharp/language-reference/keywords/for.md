@@ -64,7 +64,7 @@ By using a `for` loop, you can run a statement or a block of statements repeated
   
  Every `for` statement defines initializer, condition, and iterator sections. These sections usually determine how many times the loop iterates.  
   
-```c#  
+```cs  
 for (initializer; condition; iterator)  
     body  
 ```  
@@ -133,5 +133,5 @@ for (initializer; condition; iterator)
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)   
- [for Statement (C++)](/visual-cpp/cpp/for-statement-cpp)   
+ [for Statement (C++)](/cpp/cpp/for-statement-cpp)   
  [Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)

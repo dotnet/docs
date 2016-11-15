@@ -35,7 +35,7 @@ translation.priority.mt:
 # Connection to type library or object library for remote process has been lost
 You lost your connection to the remote process's object library or type library.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Restart the `Application` object.  
   

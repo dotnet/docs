@@ -41,7 +41,7 @@ Modifying an XML tree in place is a traditional approach to changing the shape o
 ### Modifying the XML Tree  
  You can write some procedural code to create elements from the attributes, and then delete the attributes, as follows:  
   
-```c#  
+```cs  
 XElement root = XElement.Load("Data.xml");  
 foreach (XAttribute att in root.Attributes()) {  
     root.Add(new XElement(att.Name, (string)att));  
@@ -63,7 +63,7 @@ Console.WriteLine(root);
 ### Functional Construction Approach  
  By contrast, a functional approach consists of code to form a new tree, picking and choosing elements and attributes from the source tree, and transforming them as appropriate as they are added to the new tree. The functional approach looks like the following:  
   
-```c#  
+```cs  
 XElement root = XElement.Load("Data.xml");  
 XElement newTree = new XElement("Root",  
     root.Element("Child1"),  

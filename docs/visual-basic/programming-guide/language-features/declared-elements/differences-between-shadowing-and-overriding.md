@@ -43,7 +43,7 @@ When you define a class that inherits from a base class, you sometimes want to r
  The following table compares shadowing with overriding.  
   
 ||||  
-|-|-|-|  
+|---|---|---|  
 |Point of comparison|Shadowing|Overriding|  
 |Purpose|Protects against a subsequent base-class modification that introduces a member you have already defined in your derived class|Achieves polymorphism by defining a different implementation of a procedure or property with the same calling sequence<sup>1</sup>|  
 |Redefined element|Any declared element type|Only a procedure (`Function`, `Sub`, or `Operator`) or property|  

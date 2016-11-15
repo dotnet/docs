@@ -35,7 +35,7 @@ translation.priority.mt:
 # Array dimensions do not match those specified in the &#39;VBFixedArray&#39; attribute
 Your array's dimensions do not match the dimensions you have specified in the `VBFixedArray` attribute.  
   
-### To correct this error  
+## To correct this error  
   
 -   Make the array dimensions in the array `Dim` statement match the dimensions specified by the `VBFixedArray` attribute.  
   

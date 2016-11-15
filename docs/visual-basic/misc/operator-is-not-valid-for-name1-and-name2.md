@@ -35,7 +35,7 @@ translation.priority.mt:
 # Operator is not valid for &#39;&lt;name1&gt;&#39; and &#39;&lt;name2&gt;&#39;
 An operator is not appropriate for the types being operated on.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Ensure that the operator is appropriate for the types being operated on.  
   

@@ -39,7 +39,7 @@ translation.priority.ht:
 # Type &lt;typename&gt; is not CLS-compliant
 A variable, property, or function return is declared with a data type that is not CLS-compliant.  
   
- For an application to be compliant with the [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md) (CLS), it must use only CLS-compliant types.  
+ For an application to be compliant with the [Language Independence and Language-Independent Components](https://msdn.microsoft.com/library/12a7a7h3) (CLS), it must use only CLS-compliant types.  
   
  The following [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] data types are not CLS-compliant:  
   
@@ -53,7 +53,7 @@ A variable, property, or function return is declared with a data type that is no
   
  **Error ID:** BC40041  
   
-### To correct this error  
+## To correct this error  
   
 -   If your application needs to be CLS-compliant, change the data type of this element to the closest CLS-compliant type. For example, in place of `UInteger` you might be able to use `Integer` if you do not need the value range above 2,147,483,647. If you do need the extended range, you can replace `UInteger` with `Long`.  
   

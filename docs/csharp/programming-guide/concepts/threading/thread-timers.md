@@ -28,7 +28,7 @@ The <xref:System.Threading.Timer?displayProperty=fullName> class is useful for p
 ## Thread Timer Example  
  The following example starts a task every two seconds and uses a flag to initiate the <xref:System.IDisposable.Dispose%2A> method that stops the timer. This example posts status to the output window.  
   
-```c#  
+```cs  
 private class StateObjClass  
 {  
     // Used to hold parameters for calls to TimerTask.  

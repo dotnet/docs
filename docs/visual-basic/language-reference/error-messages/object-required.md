@@ -36,7 +36,7 @@ translation.priority.ht:
 # Object required (Visual Basic)
 References to properties and methods often require an explicit object qualifier. This is such a case.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check that references to an object property or method have valid object qualifier. Specify an object qualifier if you didn't provide one.  
   

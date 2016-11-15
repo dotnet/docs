@@ -35,7 +35,7 @@ translation.priority.mt:
 # The remote server machine does not exist or is unavailable (Visual Basic)
 You are trying to connect to a remote server that is unavailable or does not exist. This error may be caused by your network connection being lost.  
   
-### To correct this error  
+## To correct this error  
   
 -   Reconnect to the network and try again.  
   

@@ -42,7 +42,7 @@ You can add content (elements, attributes, comments, processing instructions, te
   
 ### Code  
   
-```c#  
+```cs  
 XElement srcTree = new XElement("Root",   
     new XElement("Element1", 1),  
     new XElement("Element2", 2),  

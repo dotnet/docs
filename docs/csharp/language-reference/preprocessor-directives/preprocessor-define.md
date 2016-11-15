@@ -57,7 +57,7 @@ You use `#define` to define a symbol. When you use the symbol as the expression 
   
  As the following example shows, you must put `#define` directives at the top of the file.  
   
-```c#  
+```cs  
 #define DEBUG  
 //#define TRACE  
 #undef TRACE  
@@ -88,6 +88,6 @@ public class TestDefine
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)   
  [const](../../../csharp/language-reference/keywords/const.md)   
- [How to: Compile Conditionally with Trace and Debug](../Topic/How%20to:%20Compile%20Conditionally%20with%20Trace%20and%20Debug.md)   
+ [How to: Compile Conditionally with Trace and Debug](http://msdn.microsoft.com/library/56d051c3-012c-42c1-9a58-7270edc624aa)   
  [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md)   
  [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md)

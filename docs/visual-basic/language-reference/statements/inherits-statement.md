@@ -48,9 +48,8 @@ Inherits basetypenames
   
 ## Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`basetypenames`|Required. The name of the class from which this class derives.<br /><br /> -or-<br /><br /> The names of the interfaces from which this interface derives. Use commas to separate multiple names.|  
   
 ## Remarks  

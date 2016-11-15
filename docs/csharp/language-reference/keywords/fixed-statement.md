@@ -49,9 +49,9 @@ The `fixed` statement prevents the garbage collector from relocating a movable v
   
  You can initialize multiple pointers, as long as they are all of the same type.  
   
-```  
+```cs
 fixed (byte* ps = srcarray, pd = dstarray) {...}  
-```  
+```
   
  To initialize pointers of different types, simply nest `fixed` statements, as shown in the following example.  
   

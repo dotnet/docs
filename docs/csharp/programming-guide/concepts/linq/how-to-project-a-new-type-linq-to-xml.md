@@ -25,7 +25,7 @@ Other examples in this section have shown queries that return results as <xref:S
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md).  
   
-```c#  
+```cs  
 class NameQty {  
     public string name;  
     public int qty;  

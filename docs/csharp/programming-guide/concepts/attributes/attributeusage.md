@@ -25,7 +25,7 @@ translation.priority.mt:
 # AttributeUsage (C#)
 Determines how a custom attribute class can be used. `AttributeUsage` is an attribute that can be applied to custom attribute definitions to control how the new attribute can be applied. The default settings look like this when applied explicitly:  
   
-```c#  
+```cs  
 [System.AttributeUsage(System.AttributeTargets.All,  
                    AllowMultiple = false,  
                    Inherited = true)]  
@@ -36,29 +36,29 @@ class NewAttribute : System.Attribute { }
   
  The `AllowMultiple` and `Inherited` arguments are optional, so this code has the same effect:  
   
-```c#  
+```cs  
 [System.AttributeUsage(System.AttributeTargets.All)]  
 class NewAttribute : System.Attribute { }  
 ```  
   
  The first `AttributeUsage` argument must be one or more elements of the <xref:System.AttributeTargets> enumeration. Multiple target types can be linked together with the OR operator, like this:  
   
-```c#  
+```cs  
 using System;  
 ```  
   
-```c#  
+```cs  
 [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]  
 class NewPropertyOrFieldAttribute : Attribute { }  
 ```  
   
  If the `AllowMultiple` argument is set to `true`, then the resulting attribute can be applied more than once to a single entity, like this:  
   
-```c#  
+```cs  
 using System;  
 ```  
   
-```c#  
+```cs  
 [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]  
 class MultiUseAttr : Attribute { }  
   
@@ -74,11 +74,11 @@ class Class2 { }
   
  If `Inherited` is set to `false`, then the attribute is not inherited by classes that are derived from a class that is attributed. For example:  
   
-```c#  
+```cs  
 using System;  
 ```  
   
-```c#  
+```cs  
 [AttributeUsage(AttributeTargets.Class, Inherited = false)]  
 class Attr1 : Attribute { }  
   
@@ -98,11 +98,11 @@ class DClass : BClass { }
 ## Example  
  The following example demonstrates the effect of the `Inherited` and `AllowMultiple` arguments to the `AttributeUsage` attribute, and how the custom attributes applied to a class can be enumerated.  
   
-```c#  
+```cs  
 using System;  
 ```  
   
-```c#  
+```cs  
 // Create some custom attributes:  
 [AttributeUsage(System.AttributeTargets.Class, Inherited = false)]  
 class A1 : System.Attribute { }  
@@ -161,8 +161,8 @@ A2
  <xref:System.Attribute>   
  <xref:System.Reflection>   
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md)   
+ [Attributes](https://msdn.microsoft.com/library/5x6cd29c)   
  [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
- [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Attributes](../../../../csharp/programming-guide/concepts/attributes/index.md)   
  [Creating Custom Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/creating-custom-attributes.md)   
  [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

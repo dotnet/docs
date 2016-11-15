@@ -54,7 +54,7 @@ End Function
   
  **Error ID:** BC32098  
   
-### To correct this error  
+## To correct this error  
   
 1.  Remove the type parameter from the qualification string, or replace it with a defined type.  
   

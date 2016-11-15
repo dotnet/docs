@@ -33,7 +33,7 @@ translation.priority.mt:
 # A log has already been created with this name on this machine
 An attempt has been made to create a log with a name that is already in use.  
   
-### To correct this error  
+## To correct this error  
   
 -   Remove the conflicting log.  
   

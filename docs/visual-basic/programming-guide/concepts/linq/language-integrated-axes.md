@@ -1,5 +1,5 @@
 ---
-title: "Language-Integrated Axes in Visual Basic (LINQ to XML)1 | Microsoft Docs"
+title: "Language-Integrated Axes in Visual Basic (LINQ to XML) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

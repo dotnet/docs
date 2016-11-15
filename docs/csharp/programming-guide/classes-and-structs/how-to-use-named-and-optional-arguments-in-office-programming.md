@@ -42,7 +42,7 @@ Named arguments and optional arguments, introduced in [!INCLUDE[csharp_dev10_lon
   
  You must have Microsoft Office Word installed on your computer to complete these procedures.  
   
- [!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
 ### To create a new console application  
   

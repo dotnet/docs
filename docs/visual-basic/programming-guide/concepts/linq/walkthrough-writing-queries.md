@@ -54,9 +54,9 @@ This walkthrough demonstrates how you can use Visual Basic language features to 
   
 4.  In the list of project types, click **Console Application**. In the **Name** box, type a name for the project, and then click **OK**.  
   
-     A project is created. By default, it contains a reference to System.Core.dll. Also, the **Imported namespaces** list on the [References Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/references-page-project-designer-visual-basic) includes the <xref:System.Linq?displayProperty=fullName> namespace.  
+     A project is created. By default, it contains a reference to System.Core.dll. Also, the **Imported namespaces** list on the [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic) includes the <xref:System.Linq?displayProperty=fullName> namespace.  
   
-5.  On the [Compile Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/compile-page-project-designer-visual-basic), ensure that **Option infer** is set to **On**.  
+5.  On the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic), ensure that **Option infer** is set to **On**.  
   
 ## Add an In-Memory Data Source  
  The data source for the queries in this walkthrough is a list of `Student` objects. Each `Student` object contains a first name, a last name, a class year, and an academic rank in the student body.  
@@ -157,13 +157,13 @@ This walkthrough demonstrates how you can use Visual Basic language features to 
 ## Additional Information  
  After you are familiar with the basic concepts of working with queries, you are ready to read the documentation and samples for the specific type of [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] provider that you are interested in:  
   
- [LINQ to Objects](../Topic/LINQ%20to%20Objects.md)  
+ [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9)  
   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)  
+ [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
   
- [LINQ to XML](../Topic/LINQ%20to%20XML.md)  
+ [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13)  
   
- [LINQ to DataSet](../Topic/LINQ%20to%20DataSet.md)  
+ [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)  
   
 ## See Also  
  [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)   

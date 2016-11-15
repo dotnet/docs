@@ -1,5 +1,5 @@
 ---
-title: "Device I-O error | Microsoft Docs"
+title: "Device I/O error | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,7 +36,7 @@ translation.priority.ht:
 # Device I/O error
 An input or output error occurred while your program was using a device such as a printer or disk drive.  
   
-### To correct this error  
+## To correct this error  
   
 -   Make sure the device is operating properly, and then retry the operation.  
   

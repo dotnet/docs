@@ -77,11 +77,11 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
 ## Remarks  
  Parameters are surrounded by parentheses and separated by commas. A parameter can be declared with any data type. If you do not specify `parametertype`, it defaults to `Object`.  
   
- When the calling code calls the procedure, it passes an *argument* to each required parameter. For more information, see [Differences Between Parameters and Arguments](../../../visual-basic/language-reference/procedures/differences-between-parameters-and-arguments.md).  
+ When the calling code calls the procedure, it passes an *argument* to each required parameter. For more information, see [Differences Between Parameters and Arguments](../../../visual-basic/programming-guide/language-features/procedures/differences-between-parameters-and-arguments.md).  
   
- The argument the calling code passes to each parameter is a pointer to an underlying element in the calling code. If this element is *nonvariable* (a constant, literal, enumeration, or expression), it is impossible for any code to change it. If it is a *variable* element (a declared variable, field, property, array element, or structure element), the calling code can change it. For more information, see [Differences Between Modifiable and Nonmodifiable Arguments](../../../visual-basic/language-reference/procedures/differences-between-modifiable-and-nonmodifiable-arguments.md).  
+ The argument the calling code passes to each parameter is a pointer to an underlying element in the calling code. If this element is *nonvariable* (a constant, literal, enumeration, or expression), it is impossible for any code to change it. If it is a *variable* element (a declared variable, field, property, array element, or structure element), the calling code can change it. For more information, see [Differences Between Modifiable and Nonmodifiable Arguments](../../../visual-basic/programming-guide/language-features/procedures/differences-between-modifiable-and-nonmodifiable-arguments.md).  
   
- If a variable element is passed `ByRef`, the procedure can change it as well. For more information, see [Differences Between Passing an Argument By Value and By Reference](../../../visual-basic/language-reference/procedures/differences-between-passing-an-argument-by-value-and-by-reference.md).  
+ If a variable element is passed `ByRef`, the procedure can change it as well. For more information, see [Differences Between Passing an Argument By Value and By Reference](../../../visual-basic/programming-guide/language-features/procedures/differences-between-passing-an-argument-by-value-and-by-reference.md).  
   
 ## Rules  
   
@@ -91,13 +91,13 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
   
      Every optional parameter declaration must supply the `defaultvalue` clause.  
   
-     For more information, see [Optional Parameters](../../../visual-basic/language-reference/procedures/optional-parameters.md).  
+     For more information, see [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md).  
   
 -   **Parameter Arrays.** You must specify `ByVal` for a `ParamArray` parameter.  
   
      You cannot use both `Optional` and `ParamArray` in the same parameter list.  
   
-     For more information, see [Parameter Arrays](../../../visual-basic/language-reference/procedures/parameter-arrays.md).  
+     For more information, see [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md).  
   
 -   **Passing Mechanism.** The default mechanism for every argument is `ByVal`, which means the procedure cannot change the underlying variable element. However, if the element is a reference type, the procedure can modify the contents or members of the underlying object, even though it cannot replace or reassign the object itself.  
   
@@ -115,5 +115,5 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
  [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
  [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
- [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md)   
  [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

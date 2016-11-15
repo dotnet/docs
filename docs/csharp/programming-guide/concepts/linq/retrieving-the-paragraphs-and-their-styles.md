@@ -27,7 +27,7 @@ In this example, we write a query that retrieves the paragraph nodes from a Word
 ## Example  
  The source of the query to retrieve all the paragraphs in a document and their styles is as follows:  
   
-```c#  
+```cs  
 xDoc.Root.Element(w + "body").Descendants(w + "p")  
 ```  
   
@@ -36,7 +36,7 @@ xDoc.Root.Element(w + "body").Descendants(w + "p")
 ## Example  
  The query uses a `let` clause to determine the element that contains the style node. If there is no element, then `styleNode` is set to `null`:  
   
-```c#  
+```cs  
 let styleNode = para.Elements(w + "pPr").Elements(w + "pStyle").FirstOrDefault()  
 ```  
   
@@ -51,7 +51,7 @@ let styleNode = para.Elements(w + "pPr").Elements(w + "pStyle").FirstOrDefault()
   
  This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
   
-```c#  
+```cs  
 const string fileName = "SampleDoc.docx";  
   
 const string documentRelationshipType = "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument";  

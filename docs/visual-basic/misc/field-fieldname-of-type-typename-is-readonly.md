@@ -35,7 +35,7 @@ translation.priority.mt:
 # Field &#39;&lt;fieldname&gt;&#39; of type &#39;&lt;typename&gt;&#39; is &#39;ReadOnly&#39;
 You attempted to write to a field that is declared `ReadOnly`.  
   
-### To correct this error  
+## To correct this error  
   
 -   Change the field so it is no longer declared `ReadOnly`.  
   

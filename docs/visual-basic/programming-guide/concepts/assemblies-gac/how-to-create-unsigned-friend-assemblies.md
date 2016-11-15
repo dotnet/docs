@@ -84,7 +84,7 @@ This example shows how to use friend assemblies with assemblies that are unsigne
   
 5.  Compile friend_signed_B by using the following command.  
   
-    ```vb#  
+    ```vb  
     Vbc /r:friend_unsigned_A.dll friend_unsigned_B.vb  
     ```  
   

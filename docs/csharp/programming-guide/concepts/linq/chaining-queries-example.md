@@ -23,7 +23,7 @@ This example builds on the previous example and shows what happens when you chai
 ## Example  
  In this example, another extension method is introduced, `AppendString`, which appends a specified string onto every string in the source collection, and then yields the new strings.  
   
-```c#  
+```cs  
 public static class LocalExtensions  
 {  
     public static IEnumerable<string>  

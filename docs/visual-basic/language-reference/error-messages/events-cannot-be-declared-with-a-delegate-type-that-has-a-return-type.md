@@ -41,7 +41,7 @@ A delegate was specified for a function procedure.
   
  **Error ID:** BC31084  
   
-### To correct this error  
+## To correct this error  
   
 -   Specify a delegate for a `Sub` procedure.  
   

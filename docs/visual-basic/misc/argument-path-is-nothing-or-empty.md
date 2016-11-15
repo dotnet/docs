@@ -35,7 +35,7 @@ translation.priority.mt:
 # Argument &#39;Path&#39; is Nothing or empty
 A path name is not valid because it is initialized to `Nothing` or is empty. A path must have a specific data type and a valid name.  
   
-### To correct this error  
+## To correct this error  
   
 -   Add a valid path name.  
   

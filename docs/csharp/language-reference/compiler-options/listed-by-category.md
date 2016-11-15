@@ -126,7 +126,7 @@ The following compiler options are sorted by category. For an alphabetical list,
 ## Obsolete Options  
   
 |||  
-|-|-|  
+|---|---|  
 |**/incremental**|Enables incremental compilation.|  
   
 ## See Also  

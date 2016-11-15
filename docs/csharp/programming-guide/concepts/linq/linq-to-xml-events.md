@@ -51,7 +51,7 @@ translation.priority.mt:
   
 ### Code  
   
-```c#  
+```cs  
 XElement root = new XElement("Root",  
     new XElement("Total", "0"),  
     new XElement("Items")  

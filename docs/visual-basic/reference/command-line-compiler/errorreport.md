@@ -52,9 +52,8 @@ Specifies how the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/l
   
  The following table summarizes the effect of the `/errorreport` option.  
   
-|||  
-|-|-|  
 |Option|Behavior|  
+|---|---|  
 |`prompt`|If an internal compiler error occurs, a dialog box comes up so that you can view the exact data that the compiler collected. You can determine if there is any sensitive information in the error report and make a decision on whether to send it to Microsoft. If you decide to send it, and the machine and user policy settings allow it, the compiler sends the data to Microsoft.|  
 |`queue`|Queues the error report. When you log in with administrator privileges, you can report any failures since the last time you were logged in (you will not be prompted to send reports for failures more than once every three days). This is the default behavior when the `/errorreport` option is not specified.|  
 |`send`|If an internal compiler error occurs, and the machine and user policy settings allow it, the compiler sends the data to Microsoft.<br /><br /> The option `/errorReport:send` attempts to automatically send error information to Microsoft. This option depends on the registry. For more information about setting the appropriate values in the registry, see [How to Turn on Automatic Error Reporting in Visual Studio 2008 Command-line Tools](http://go.microsoft.com/fwlink/?LinkID=184695).|  

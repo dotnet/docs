@@ -36,7 +36,7 @@ translation.priority.ht:
 # Path not found
 During a file-access or disk-access operation, the operating system was unable to find the specified path. The path to a file includes the drive specification plus the directories and subdirectories that must be traversed to locate the file. A path can be relative or absolute.  
   
-### To correct this error  
+## To correct this error  
   
 -   Verify and respecify the path.  
   

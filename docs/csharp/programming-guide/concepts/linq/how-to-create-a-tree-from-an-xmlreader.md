@@ -30,7 +30,7 @@ This topic shows how to create an XML tree directly from an <xref:System.Xml.Xml
   
  The following code creates an `T:System.Xml.XmlReader` object, and then reads nodes until it finds the first element node. It then loads the <xref:System.Xml.Linq.XElement> object.  
   
-```c#  
+```cs  
 XmlReader r = XmlReader.Create("books.xml");  
 while (r.NodeType != XmlNodeType.Element)  
     r.Read();  

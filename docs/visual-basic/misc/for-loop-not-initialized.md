@@ -35,7 +35,7 @@ translation.priority.mt:
 # For loop not initialized (Visual Basic)
 You jumped into the middle of a `For...Next` loop.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Remove the jump into the loop.  
   

@@ -57,13 +57,13 @@ You can use the <xref:Microsoft.VisualBasic.PowerPacks.LineShape> control to dra
   
 3.  In the **Code Editor**, add an `Imports` or `using` statement at the top of the module:  
   
-    ```vb#  
-    Imports Microsoft.VisualBasic.PowerPacks  
-    ```  
+```vb  
+Imports Microsoft.VisualBasic.PowerPacks  
+```  
   
-    ```c#  
-    using Microsoft.VisualBasic.PowerPacks;  
-    ```  
+```cs  
+using Microsoft.VisualBasic.PowerPacks;  
+```  
   
 4.  Add the following code in an `Event` procedure:  
   

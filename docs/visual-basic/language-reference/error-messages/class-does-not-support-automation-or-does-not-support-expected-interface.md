@@ -36,7 +36,7 @@ translation.priority.ht:
 # Class does not support Automation or does not support expected interface
 Either the class you specified in the `GetObject` or `CreateObject` function call has not exposed a programmability interface, or you changed a project from .dll to .exe, or vice versa.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the documentation of the application that created the object for limitations on the use of automation with this class of object.  
   
@@ -44,4 +44,4 @@ Either the class you specified in the `GetObject` or `CreateObject` function cal
   
 ## See Also  
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)   
- [Talk to Us](/visual-studio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

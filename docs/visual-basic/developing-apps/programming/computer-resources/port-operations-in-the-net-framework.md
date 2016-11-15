@@ -44,9 +44,8 @@ You can access your computer's serial ports through the [!INCLUDE[dnprdnshort](.
 ## Enumerations  
  This table lists and describes the main enumerations used for accessing a serial port:  
   
-|||  
-|-|-|  
 |Enumeration|Description|  
+|---|---|   
 |<xref:System.IO.Ports.Handshake>|Specifies the control protocol used in establishing a serial port communication for a <xref:System.IO.Ports.SerialPort> object.|  
 |<xref:System.IO.Ports.Parity>|Specifies the parity bit for a <xref:System.IO.Ports.SerialPort> object.|  
 |<xref:System.IO.Ports.SerialData>|Specifies the type of character that was received on the serial port of the <xref:System.IO.Ports.SerialPort> object.|  

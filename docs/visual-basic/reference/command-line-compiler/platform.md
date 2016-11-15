@@ -46,9 +46,8 @@ Specifies which platform version of common language runtime (CLR) can run the ou
   
 ## Arguments  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`x86`|Compiles your assembly to be run by the 32-bit, x86-compatible CLR.|  
 |`x64`|Compiles your assembly to be run by the 64-bit CLR on a computer that supports the AMD64 or EM64T instruction set.|  
 |`Itanium`|Compiles your assembly to be run by the 64-bit CLR on a computer with an Itanium processor.|  
@@ -87,7 +86,7 @@ Specifies which platform version of common language runtime (CLR) can run the ou
   
 -   Executables that are compiled with `/platform:anycpu32bitpreferred` will execute on the 32-bit CLR.  
   
- For more information about how to develop an application to run on a 64-bit version of Windows, see [64-bit Applications](../Topic/64-bit%20Applications.md).  
+ For more information about how to develop an application to run on a 64-bit version of Windows, see [64-bit Applications](https://msdn.microsoft.com/library/ms241064).  
   
 ### To set /platform in the Visual Studio IDE  
   
@@ -97,7 +96,7 @@ Specifies which platform version of common language runtime (CLR) can run the ou
   
 2.  On the **Compile** tab, select or clear the **Prefer 32-bit** check box, or, in the **Target CPU** list, choose a value.  
   
-     For more information, see [Compile Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/compile-page-project-designer-visual-basic).  
+     For more information, see [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
   
 ## Example  
  The following example illustrates how to use the `/platform` compiler option.  
@@ -107,6 +106,6 @@ vbc /platform:x86 myFile.vb
 ```  
   
 ## See Also  
- [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)   
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+ [/target (Visual Basic)](target.md)   
+ [Visual Basic Command-Line Compiler](index.md)   
+ [Sample Compilation Command Lines](sample-compilation-command-lines.md)

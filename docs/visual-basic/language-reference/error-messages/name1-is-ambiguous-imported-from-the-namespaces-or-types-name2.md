@@ -41,7 +41,7 @@ You have provided a name that is ambiguous and therefore conflicts with another 
   
  **Error ID:** BC30561  
   
-### To correct this error  
+## To correct this error  
   
 1.  Disambiguate the name by removing namespace imports.  
   

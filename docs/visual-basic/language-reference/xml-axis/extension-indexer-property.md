@@ -50,9 +50,8 @@ object(index)
   
 ## Parts  
   
-|||  
-|-|-|  
 |Term|Definition|  
+|---|---|  
 |`object`|Required. A queryable collection. That is, a collection that implements <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Linq.IQueryable%601>.|  
 |(|Required. Denotes the start of the indexer property.|  
 |`index`|Required. An integer expression that specifies the zero-based position of an element of the collection.|  

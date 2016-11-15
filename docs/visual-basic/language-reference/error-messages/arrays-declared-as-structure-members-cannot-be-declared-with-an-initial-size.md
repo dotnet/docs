@@ -41,7 +41,7 @@ An array in a structure is declared with an initial size. You cannot initialize 
   
  **Error ID:** BC31043  
   
-### To correct this error  
+## To correct this error  
   
 1.  Define the array in your structure as dynamic (no initial size).  
   

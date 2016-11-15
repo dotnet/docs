@@ -57,14 +57,14 @@ An invalid object variable is being referenced.   This error can occur for sever
 > [!NOTE]
 >  In earlier versions of Visual Basic or VBA this error was also triggered by assigning a value to a variable without using the `Set` keyword (`x = "name"` instead of `Set x = "name"`). The `Set` keyword is no longer valid in Visual Basic .Net.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Set `Option Strict` to `On` by adding the following code to the beginning of the file:  
   
-    ```vb  
-    Option Strict On  
-    ```  
-  
+```vb  
+Option Strict On  
+```  
+
      When you run the project, a compiler error will appear in the **Error List** for any variable that was specified without a type.  
   
 2.  If you don't want to enable `Option Strict`, search your code for any variables that were specified without a type (`Dim x` instead of `Dim x As String`) and add the intended type to the declaration.  

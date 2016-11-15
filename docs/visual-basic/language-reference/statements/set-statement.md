@@ -113,4 +113,4 @@ End Set
  [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)   
  [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Property Procedures](../../../visual-basic/language-reference/procedures/property-procedures.md)
+ [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)

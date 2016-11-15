@@ -35,11 +35,11 @@ translation.priority.mt:
 # Argument &#39;Per&#39; is not valid
 An argument supplied for `Per`, which must be a `Double` specifying payment period in the range 1 through `NPer`, is not valid.  
   
-### To correct this error  
+## To correct this error  
   
 -   Ensure that the argument falls within the valid range.  
   
 ## See Also  
  [NOT IN BUILD: IPmt Function](http://msdn.microsoft.com/en-us/c0cce8e3-c661-4ed5-be52-70fe6e0e1b28)   
  [NOT IN BUILD: PPmt Function](http://msdn.microsoft.com/en-us/9b20cd53-c9d6-4916-9e84-0eb84667a921)   
- [Passing Arguments by Value and by Reference](../../visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference.md)
+ [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

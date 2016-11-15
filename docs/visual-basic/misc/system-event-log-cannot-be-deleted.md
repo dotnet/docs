@@ -33,7 +33,7 @@ translation.priority.mt:
 # System event log cannot be deleted
 An attempt has been made to delete the system event log, which cannot be deleted. The system log tracks system events such as system startup and hardware failures.  
   
-### To correct this error  
+## To correct this error  
   
 -   Consider having your application write to an application or custom log, rather than the system event log.  
   

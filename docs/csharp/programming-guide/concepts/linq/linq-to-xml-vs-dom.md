@@ -30,7 +30,7 @@ This section describes some key differences between [!INCLUDE[sqltecxlinq](../..
   
  For example, the following would be a typical way to create an XML tree using the Microsoft implementation of DOM, <xref:System.Xml.XmlDocument>:  
   
-```c#  
+```cs  
 XmlDocument doc = new XmlDocument();  
 XmlElement name = doc.CreateElement("Name");  
 name.InnerText = "Patrick Hines";  
@@ -67,7 +67,7 @@ doc.AppendChild(contacts);
   
  Here is how you would construct the same XML tree by using [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] functional construction:  
   
-```c#  
+```cs  
 XElement contacts =  
     new XElement("Contacts",  
         new XElement("Contact",  
@@ -101,7 +101,7 @@ XElement contacts =
   
  Compare this to the W3C DOM, in which the XML document is used as a logical container for the XML tree. In DOM, XML nodes, including elements and attributes, must be created in the context of an XML document. Here is a fragment of the code to create a name element in DOM:  
   
-```c#  
+```cs  
 XmlDocument doc = new XmlDocument();  
 XmlElement name = doc.CreateElement("Name");  
 name.InnerText = "Patrick Hines";  
@@ -139,10 +139,10 @@ doc.AppendChild(name);
  [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] stores white space as an <xref:System.Xml.Linq.XText> node, instead of having a specialized <xref:System.Xml.XmlNodeType> node type, as the DOM does.  
   
 ## Support for Annotations  
- [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] elements support an extensible set of annotations. This is useful for tracking miscellaneous information about an element, such as schema information, information about whether the element is bound to a UI, or any other kind of application-specific information. For more information, see [LINQ to XML Annotations](../Topic/LINQ%20to%20XML%20Annotations1.md).  
+ [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] elements support an extensible set of annotations. This is useful for tracking miscellaneous information about an element, such as schema information, information about whether the element is bound to a UI, or any other kind of application-specific information. For more information, see [LINQ to XML Annotations](http://msdn.microsoft.com/library/e2f0052d-61e2-48d4-9ea4-356c9cab35d5).  
   
 ## Support for Schema Information  
- [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] provides support for XSD validation through extension methods in the <xref:System.Xml.Schema?displayProperty=fullName> namespace. You can validate that an XML tree complies with an XSD. You can populate the XML tree with the post-schema-validation infoset (PSVI). For more information, see [How to: Validate Using XSD](../Topic/How%20to:%20Validate%20Using%20XSD%20\(LINQ%20to%20XML\).md) and <xref:System.Xml.Schema.Extensions>.  
+ [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] provides support for XSD validation through extension methods in the <xref:System.Xml.Schema?displayProperty=fullName> namespace. You can validate that an XML tree complies with an XSD. You can populate the XML tree with the post-schema-validation infoset (PSVI). For more information, see [How to: Validate Using XSD](http://msdn.microsoft.com/library/481a97fa-6e96-46f2-8c9a-415555fac33b) and <xref:System.Xml.Schema.Extensions>.  
   
 ## See Also  
  [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)

@@ -44,20 +44,20 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 ## Microsoft.VisualBasic.Collection Class  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.Collection.Add%2A>|<xref:Microsoft.VisualBasic.Collection.Clear%2A>|<xref:Microsoft.VisualBasic.Collection.Contains%2A>|<xref:Microsoft.VisualBasic.Collection.Count%2A>|  
 |<xref:Microsoft.VisualBasic.Collection.GetEnumerator%2A>|<xref:Microsoft.VisualBasic.Collection.Item%2A>|<xref:Microsoft.VisualBasic.Collection.Remove%2A>||  
   
 ## Microsoft.VisualBasic.ComClassAttribute Class  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.ComClassAttribute.ClassID%2A>|<xref:Microsoft.VisualBasic.ComClassAttribute.EventID%2A>|<xref:Microsoft.VisualBasic.ComClassAttribute.InterfaceID%2A>|<xref:Microsoft.VisualBasic.ComClassAttribute.InterfaceShadows%2A>|  
   
 ## Microsoft.VisualBasic.ControlChars Class  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.ControlChars.Back>|<xref:Microsoft.VisualBasic.ControlChars.Cr>|<xref:Microsoft.VisualBasic.ControlChars.CrLf>|<xref:Microsoft.VisualBasic.ControlChars.FormFeed>|  
 |<xref:Microsoft.VisualBasic.ControlChars.Lf>|<xref:Microsoft.VisualBasic.ControlChars.NewLine>|<xref:Microsoft.VisualBasic.ControlChars.NullChar>|<xref:Microsoft.VisualBasic.ControlChars.Quote>|  
 |<xref:Microsoft.VisualBasic.ControlChars.Tab>|<xref:Microsoft.VisualBasic.ControlChars.VerticalTab>|||  
@@ -65,7 +65,7 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 ## Microsoft.VisualBasic.Constants Class  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.Constants.vbAbort>|<xref:Microsoft.VisualBasic.Constants.vbAbortRetryIgnore>|<xref:Microsoft.VisualBasic.Constants.vbApplicationModal>|<xref:Microsoft.VisualBasic.Constants.vbArchive>|  
 |<xref:Microsoft.VisualBasic.Constants.vbArray>|<xref:Microsoft.VisualBasic.Constants.vbBack>|<xref:Microsoft.VisualBasic.Constants.vbBinaryCompare>|<xref:Microsoft.VisualBasic.Constants.vbBoolean>|  
 |<xref:Microsoft.VisualBasic.Constants.vbByte>|<xref:Microsoft.VisualBasic.Constants.vbCancel>|<xref:Microsoft.VisualBasic.Constants.vbCr>|<xref:Microsoft.VisualBasic.Constants.vbCritical>|  
@@ -96,14 +96,14 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 ## Microsoft.VisualBasic.Conversion Module  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.Conversion.ErrorToString%2A>|<xref:Microsoft.VisualBasic.Conversion.Fix%2A>|<xref:Microsoft.VisualBasic.Conversion.Hex%2A>|<xref:Microsoft.VisualBasic.Conversion.Int%2A>|  
 |<xref:Microsoft.VisualBasic.Conversion.Oct%2A>|<xref:Microsoft.VisualBasic.Conversion.Str%2A>|<xref:Microsoft.VisualBasic.Conversion.Val%2A>||  
   
 ## Microsoft.VisualBasic.DateAndTime Module  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.DateAndTime.DateAdd%2A>|<xref:Microsoft.VisualBasic.DateAndTime.DateDiff%2A>|<xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A>|<xref:Microsoft.VisualBasic.DateAndTime.DateSerial%2A>|  
 |<xref:Microsoft.VisualBasic.DateAndTime.DateString%2A>|<xref:Microsoft.VisualBasic.DateAndTime.DateValue%2A>|<xref:Microsoft.VisualBasic.DateAndTime.Day%2A>|<xref:Microsoft.VisualBasic.DateAndTime.Hour%2A>|  
 |<xref:Microsoft.VisualBasic.DateAndTime.Minute%2A>|<xref:Microsoft.VisualBasic.DateAndTime.Month%2A>|<xref:Microsoft.VisualBasic.DateAndTime.MonthName%2A>|<xref:Microsoft.VisualBasic.DateAndTime.Now%2A>|  
@@ -114,7 +114,7 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 ## Microsoft.VisualBasic.ErrObject Class  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.ErrObject.Clear%2A>|<xref:Microsoft.VisualBasic.ErrObject.Description%2A>|<xref:Microsoft.VisualBasic.ErrObject.Erl%2A>|<xref:Microsoft.VisualBasic.ErrObject.GetException%2A>|  
 |<xref:Microsoft.VisualBasic.ErrObject.HelpContext%2A>|<xref:Microsoft.VisualBasic.ErrObject.HelpFile%2A>|<xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>|<xref:Microsoft.VisualBasic.ErrObject.Number%2A>|  
 |<xref:Microsoft.VisualBasic.ErrObject.Raise%2A>|<xref:Microsoft.VisualBasic.ErrObject.Raise%2A>|||  
@@ -122,7 +122,7 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 ## Microsoft.VisualBasic.FileSystem Module  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.FileSystem.ChDir%2A>|<xref:Microsoft.VisualBasic.FileSystem.ChDrive%2A>|<xref:Microsoft.VisualBasic.FileSystem.CurDir%2A>|<xref:Microsoft.VisualBasic.FileSystem.Dir%2A>|  
 |<xref:Microsoft.VisualBasic.FileSystem.EOF%2A>|<xref:Microsoft.VisualBasic.FileSystem.FileAttr%2A>|<xref:Microsoft.VisualBasic.FileSystem.FileClose%2A>|<xref:Microsoft.VisualBasic.FileSystem.FileCopy%2A>|  
 |<xref:Microsoft.VisualBasic.FileSystem.FileDateTime%2A>|<xref:Microsoft.VisualBasic.FileSystem.FileGet%2A>|<xref:Microsoft.VisualBasic.FileSystem.FileGetObject%2A>|<xref:Microsoft.VisualBasic.FileSystem.FileLen%2A>|  
@@ -137,7 +137,7 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 ## Microsoft.VisualBasic.Financial Module  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.Financial.DDB%2A>|<xref:Microsoft.VisualBasic.Financial.FV%2A>|<xref:Microsoft.VisualBasic.Financial.IPmt%2A>|<xref:Microsoft.VisualBasic.Financial.IRR%2A>|  
 |<xref:Microsoft.VisualBasic.Financial.MIRR%2A>|<xref:Microsoft.VisualBasic.Financial.NPer%2A>|<xref:Microsoft.VisualBasic.Financial.NPV%2A>|<xref:Microsoft.VisualBasic.Financial.Pmt%2A>|  
 |<xref:Microsoft.VisualBasic.Financial.PPmt%2A>|<xref:Microsoft.VisualBasic.Financial.PV%2A>|<xref:Microsoft.VisualBasic.Financial.Rate%2A>|<xref:Microsoft.VisualBasic.Financial.SLN%2A>|  
@@ -146,19 +146,19 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 ## Microsoft.VisualBasic.Globals Module  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.Globals.ScriptEngine%2A>|<xref:Microsoft.VisualBasic.Globals.ScriptEngineBuildVersion%2A>|<xref:Microsoft.VisualBasic.Globals.ScriptEngineMajorVersion%2A>|<xref:Microsoft.VisualBasic.Globals.ScriptEngineMinorVersion%2A>|  
   
 ## Microsoft.VisualBasic.HideModuleNameAttribute Class  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.HideModuleNameAttribute>||||  
   
 ## Microsoft.VisualBasic.Information Module  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.Information.Erl%2A>|<xref:Microsoft.VisualBasic.Information.Err%2A>|<xref:Microsoft.VisualBasic.Information.IsArray%2A>|<xref:Microsoft.VisualBasic.Information.IsDate%2A>|  
 |<xref:Microsoft.VisualBasic.Information.IsDBNull%2A>|<xref:Microsoft.VisualBasic.Information.IsError%2A>|<xref:Microsoft.VisualBasic.Information.IsNothing%2A>|<xref:Microsoft.VisualBasic.Information.IsNumeric%2A>|  
 |<xref:Microsoft.VisualBasic.Information.IsReference%2A>|<xref:Microsoft.VisualBasic.Information.LBound%2A>|<xref:Microsoft.VisualBasic.Information.QBColor%2A>|<xref:Microsoft.VisualBasic.Information.RGB%2A>|  
@@ -168,7 +168,7 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 ## Microsoft.VisualBasic.Interaction Module  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.Interaction.AppActivate%2A>|<xref:Microsoft.VisualBasic.Interaction.Beep%2A>|<xref:Microsoft.VisualBasic.Interaction.CallByName%2A>|<xref:Microsoft.VisualBasic.Interaction.Choose%2A>|  
 |<xref:Microsoft.VisualBasic.Interaction.Command%2A>|<xref:Microsoft.VisualBasic.Interaction.CreateObject%2A>|<xref:Microsoft.VisualBasic.Interaction.DeleteSetting%2A>|<xref:Microsoft.VisualBasic.Interaction.Environ%2A>|  
 |<xref:Microsoft.VisualBasic.Interaction.GetAllSettings%2A>|<xref:Microsoft.VisualBasic.Interaction.GetObject%2A>|<xref:Microsoft.VisualBasic.Interaction.GetSetting%2A>|<xref:Microsoft.VisualBasic.Interaction.IIf%2A>|  
@@ -178,13 +178,13 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 ## Microsoft.VisualBasic.MyGroupCollectionAttribute Class  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.MyGroupCollectionAttribute.CreateMethod%2A>|<xref:Microsoft.VisualBasic.MyGroupCollectionAttribute.DefaultInstanceAlias%2A>|<xref:Microsoft.VisualBasic.MyGroupCollectionAttribute.DisposeMethod%2A>|<xref:Microsoft.VisualBasic.MyGroupCollectionAttribute.MyGroupName%2A>|  
   
 ## Microsoft.VisualBasic.Strings Module  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.Strings.Asc%2A>|<xref:Microsoft.VisualBasic.Strings.Asc%2A>|<xref:Microsoft.VisualBasic.Strings.Chr%2A>|<xref:Microsoft.VisualBasic.Strings.ChrW%2A>|  
 |<xref:Microsoft.VisualBasic.Strings.Filter%2A>|<xref:Microsoft.VisualBasic.Strings.Format%2A>|<xref:Microsoft.VisualBasic.Strings.FormatCurrency%2A>|<xref:Microsoft.VisualBasic.Strings.FormatDateTime%2A>|  
 |<xref:Microsoft.VisualBasic.Strings.FormatNumber%2A>|<xref:Microsoft.VisualBasic.Strings.FormatPercent%2A>|<xref:Microsoft.VisualBasic.Strings.GetChar%2A>|<xref:Microsoft.VisualBasic.Strings.InStr%2A>|  
@@ -197,19 +197,19 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 ## Microsoft.VisualBasic.VBFixedArrayAttribute Class  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.VBFixedArrayAttribute.Bounds%2A>|<xref:Microsoft.VisualBasic.VBFixedArrayAttribute.Length%2A>|||  
   
 ## Microsoft.VisualBasic.VBFixedStringAttribute Class  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.VBFixedStringAttribute.Length%2A>||||  
   
 ## Microsoft.VisualBasic.VbMath Module  
   
 |||||  
-|-|-|-|-|  
+|---|---|---|---|  
 |<xref:Microsoft.VisualBasic.VBMath.Randomize%2A>|<xref:Microsoft.VisualBasic.VBMath.Rnd%2A>|||  
   
 ## Microsoft.VisualBasic Constants and Enumerations  

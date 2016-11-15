@@ -35,7 +35,7 @@ translation.priority.mt:
 # Drive &#39;&lt;drivename&gt;&#39; not found
 The drive cannot be found. Either your network connection has been lost, or the drive you are trying to access is offline or does not exist.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check power to the drive.  
   

@@ -35,7 +35,7 @@ translation.priority.mt:
 # Bad record number
 The record number in `a FileGet`, `FilePut`, `FileGetObject`, or `FilePutObject` statement is less than or equal to zero.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check the calculations used in generating the record number. Verify spelling of the variables containing the record number or used in calculating record numbers. A misspelled variable name is implicitly declared and initialized to zero, unless you used `Option Explicit On` in the module.  
   

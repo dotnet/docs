@@ -1,5 +1,5 @@
 ---
-title: "- Operator (C# Reference)1 | Microsoft Docs"
+title: "- Operator (C# Reference) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

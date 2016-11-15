@@ -82,7 +82,7 @@ This walkthrough demonstrates how to create a multithreaded Windows Forms applic
   
 4.  Add the following code to the `Words` class:  
   
-    ```c#  
+    ```cs  
     public class Words  
     {  
         // Object to store the current state, for passing to the caller.  
@@ -185,7 +185,7 @@ This walkthrough demonstrates how to create a multithreaded Windows Forms applic
   
 -   Add the following event handlers to your main form:  
   
-    ```c#  
+    ```cs  
     private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)  
     {  
     // This event handler is called when the background thread finishes.  
@@ -212,7 +212,7 @@ This walkthrough demonstrates how to create a multithreaded Windows Forms applic
   
 1.  Add the following procedures to your program:  
   
-    ```c#  
+    ```cs  
     private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)  
     {  
         // This event handler is where the actual work is done.  
@@ -244,7 +244,7 @@ This walkthrough demonstrates how to create a multithreaded Windows Forms applic
   
 2.  Call the `StartThread` method from the `Start` button on your form:  
   
-    ```c#  
+    ```cs  
     private void Start_Click(object sender, EventArgs e)  
     {  
         StartThread();  
@@ -255,7 +255,7 @@ This walkthrough demonstrates how to create a multithreaded Windows Forms applic
   
     -   Call the `StopThread` procedure from the `Click` event handler for the `Cancel` button.  
   
-        ```c#  
+        ```cs  
         private void Cancel_Click(object sender, EventArgs e)  
         {  
             // Cancel the asynchronous operation.  

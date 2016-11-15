@@ -28,7 +28,7 @@ The <xref:System.Xml.Schema> namespace contains extension methods that make it e
 ## Example  
  The following example creates an <xref:System.Xml.Schema.XmlSchemaSet>, then validates two <xref:System.Xml.Linq.XDocument> objects against the schema set. One of the documents is valid, the other is not.  
   
-```c#  
+```cs  
 string xsdMarkup =  
     @"<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>  
        <xsd:element name='Root'>  
@@ -95,7 +95,7 @@ doc2 did not validate
   
  This example uses the following XSD schema: [Sample XSD File: Customers and Orders](../../../../csharp/programming-guide/concepts/linq/sample-xsd-file-customers-and-orders1.md).  
   
-```c#  
+```cs  
 XmlSchemaSet schemas = new XmlSchemaSet();  
 schemas.Add("", "CustomersOrders.xsd");  
   

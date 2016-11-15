@@ -49,7 +49,7 @@ It is sometimes necessary to compare two values for equality. In some cases, you
 ## Value Equality  
  Value equality means that two objects contain the same value or values. For primitive value types such as [int](../../../csharp/language-reference/keywords/int.md) or [bool](../../../csharp/language-reference/keywords/bool.md), tests for value equality are straightforward. You can use the [==](../../../csharp/language-reference/operators/equality-comparison-operator.md) operator, as shown in the following example.  
   
-```c#  
+```cs  
 int a = GetOriginalValue();  
 int b = GetCurrentValue();  
   

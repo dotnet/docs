@@ -35,7 +35,7 @@ translation.priority.mt:
 # The ConnectionTimeout must be greater than 0
 When uploading and downloading files with the [My.Computer.Network Object](../../visual-basic/language-reference/objects/my-computer-network-object.md), you must specify a `connectionTimeout` greater than `0`.  
   
-### To correct this error  
+## To correct this error  
   
 -   Supply a `connectionTimeout` that is greater than `0`.  
   

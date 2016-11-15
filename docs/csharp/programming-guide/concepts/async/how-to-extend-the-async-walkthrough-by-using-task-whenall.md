@@ -44,7 +44,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
      The `ProcessURLAsync` method consolidates the actions in the body of the `foreach` loop in `SumPageSizesAsync` in the original walkthrough. The method asynchronously downloads the contents of a specified website as a byte array, and then displays and returns the length of the byte array.  
   
-    ```c#  
+    ```cs  
     private async Task<int> ProcessURLAsync(string url)  
     {  
         var byteArray = await GetURLContentsAsync(url);  
@@ -55,7 +55,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
 2.  Comment out or delete the `foreach` loop in `SumPageSizesAsync`, as the following code shows.  
   
-    ```c#  
+    ```cs  
     //var total = 0;  
     //foreach (var url in urlList)  
     //{  
@@ -74,11 +74,11 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     //}  
     ```  
   
-3.  Create a collection of tasks. The following code defines a [query](../Topic/LINQ%20\(Language-Integrated%20Query\).md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
+3.  Create a collection of tasks. The following code defines a [query](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
   
      Add the following code to method `SumPageSizesAsync` after the declaration of `urlList`.  
   
-    ```c#  
+    ```cs  
     // Create a query.   
     IEnumerable<Task<int>> downloadTasksQuery =   
         from url in urlList select ProcessURLAsync(url);  
@@ -91,7 +91,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
      In the following example, the `await` expression awaits the completion of the single task that `WhenAll` returns. The expression evaluates to an array of integers, where each integer is the length of a downloaded website. Add the following code to `SumPageSizesAsync`, just after the code that you added in the previous step.  
   
-    ```c#  
+    ```cs  
     // Await the completion of all the running tasks.  
     int[] lengths = await Task.WhenAll(downloadTasks);  
   
@@ -102,7 +102,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
 5.  Finally, use the <xref:System.Linq.Enumerable.Sum%2A> method to calculate the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.  
   
-    ```c#  
+    ```cs  
     int total = lengths.Sum();  
     ```  
   
@@ -118,7 +118,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
      The only difference from the `ProcessURLAsync` method in the previous procedure is the use of the <xref:System.Net.Http.HttpClient> instance, `client`.  
   
-    ```c#  
+    ```cs  
     async Task<int> ProcessURL(string url, HttpClient client)  
     {  
         byte[] byteArray = await client.GetByteArrayAsync(url);  
@@ -129,7 +129,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
 2.  Comment out or delete the `For Each` or `foreach` loop in `SumPageSizesAsync`, as the following code shows.  
   
-    ```c#  
+    ```cs  
     //var total = 0;  
     //foreach (var url in urlList)  
     //{  
@@ -149,11 +149,11 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     //}  
     ```  
   
-3.  Define a [query](../Topic/LINQ%20\(Language-Integrated%20Query\).md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
+3.  Define a [query](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
   
      Add the following code to method `SumPageSizesAsync` after the declaration of `client` and `urlList`.  
   
-    ```c#  
+    ```cs  
     // Create a query.  
     IEnumerable<Task<int>> downloadTasksQuery =   
         from url in urlList select ProcessURL(url, client);  
@@ -166,7 +166,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
      In the following example, the `await` expression awaits the completion of the single task that `WhenAll` returns. When complete, the `await` expression evaluates to an array of integers, where each integer is the length of a downloaded website. Add the following code to `SumPageSizesAsync`, just after the code that you added in the previous step.  
   
-    ```c#  
+    ```cs  
     // Await the completion of all the running tasks.  
     int[] lengths = await Task.WhenAll(downloadTasks);  
   
@@ -177,7 +177,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
 5.  Finally, use the <xref:System.Linq.Enumerable.Sum%2A> method to get the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.  
   
-    ```c#  
+    ```cs  
     Dim total = lengths.Sum()  
     ```  
   
@@ -188,7 +188,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
 ## Example  
  The following code shows the extensions to the project that uses the `GetURLContentsAsync` method to download content from the web.  
   
-```c#  
+```cs  
 // Add the following using directives, and add a reference for System.Net.Http.  
 using System.Net.Http;  
 using System.IO;  
@@ -268,14 +268,14 @@ namespace AsyncExampleWPF_WhenAll
             {   
                 "http://msdn.microsoft.com",  
                 "http://msdn.microsoft.com/library/windows/apps/br211380.aspx",  
-                "http://msdn.microsoft.com/en-us/library/hh290136.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ee256749.aspx",  
-                "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
+                "http://msdn.microsoft.com/library/hh290136.aspx",  
+                "http://msdn.microsoft.com/library/ee256749.aspx",  
+                "http://msdn.microsoft.com/library/hh290138.aspx",  
+                "http://msdn.microsoft.com/library/hh290140.aspx",  
+                "http://msdn.microsoft.com/library/dd470362.aspx",  
+                "http://msdn.microsoft.com/library/aa578028.aspx",  
+                "http://msdn.microsoft.com/library/ms404677.aspx",  
+                "http://msdn.microsoft.com/library/ff730837.aspx"  
             };  
             return urls;  
         }  
@@ -330,7 +330,7 @@ namespace AsyncExampleWPF_WhenAll
 ## Example  
  The following code shows the extensions to the project that uses method `HttpClient.GetByteArrayAsync` to download content from the web.  
   
-```c#  
+```cs  
 // Add the following using directives, and add a reference for System.Net.Http.  
 using System.Net.Http;  
 using System.IO;  
@@ -414,14 +414,14 @@ namespace AsyncExampleWPF_HttpClient_WhenAll
             List<string> urls = new List<string>   
             {   
                 "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/en-us/library/hh290136.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ee256749.aspx",  
-                "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
+                "http://msdn.microsoft.com/library/hh290136.aspx",  
+                "http://msdn.microsoft.com/library/ee256749.aspx",  
+                "http://msdn.microsoft.com/library/hh290138.aspx",  
+                "http://msdn.microsoft.com/library/hh290140.aspx",  
+                "http://msdn.microsoft.com/library/dd470362.aspx",  
+                "http://msdn.microsoft.com/library/aa578028.aspx",  
+                "http://msdn.microsoft.com/library/ms404677.aspx",  
+                "http://msdn.microsoft.com/library/ff730837.aspx"  
             };  
             return urls;  
         }  

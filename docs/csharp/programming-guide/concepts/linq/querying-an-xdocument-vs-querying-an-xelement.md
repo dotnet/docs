@@ -25,7 +25,7 @@ When you load a document via <xref:System.Xml.Linq.XDocument.Load%2A?displayProp
   
  This first example loads an XML tree using <xref:System.Xml.Linq.XElement.Load%2A>. It then queries for the child elements of the root of the tree.  
   
-```c#  
+```cs  
 // Create a simple document and write it to a file  
 File.WriteAllText("Test.xml", @"<Root>  
     <Child1>1</Child1>  
@@ -55,7 +55,7 @@ Querying tree loaded with XElement.Load
   
  The following example is the same as the one above, with the exception that the XML tree is loaded into an <xref:System.Xml.Linq.XDocument> instead of an <xref:System.Xml.Linq.XElement>.  
   
-```c#  
+```cs  
 // Create a simple document and write it to a file  
 File.WriteAllText("Test.xml", @"<Root>  
     <Child1>1</Child1>  
@@ -89,7 +89,7 @@ Querying tree loaded with XDocument.Load
   
  One approach to dealing with this is to use the <xref:System.Xml.Linq.XDocument.Root%2A> property before accessing the axes methods, as follows:  
   
-```c#  
+```cs  
 // Create a simple document and write it to a file  
 File.WriteAllText("Test.xml", @"<Root>  
     <Child1>1</Child1>  

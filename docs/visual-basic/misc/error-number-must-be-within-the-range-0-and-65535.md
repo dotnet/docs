@@ -35,7 +35,7 @@ translation.priority.mt:
 # Error number must be within the range 0 and 65535
 An error number falls outside the allowable of between 0 and 65535.  
   
-### To correct this error  
+## To correct this error  
   
 -   Ensure that the number falls within the valid range.  
   

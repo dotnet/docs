@@ -42,7 +42,7 @@ You can use the async feature to access files. By using the async feature, you c
   
  In the following examples, include the following `using` statements.  
   
-```c#  
+```cs  
 using System;  
 using System.Collections.Generic;  
 using System.Diagnostics;  
@@ -59,7 +59,7 @@ using System.Threading.Tasks;
 ## Writing Text  
  The following example writes text to a file. At each await statement, the method immediately exits. When the file I/O is complete, the method resumes at the statement that follows the await statement. Note that the async modifier is in the definition of methods that use the await statement.  
   
-```c#  
+```cs  
 public async void ProcessWrite()  
 {  
     string filePath = @"temp2.txt";  
@@ -83,7 +83,7 @@ private async Task WriteTextAsync(string filePath, string text)
   
  The original example has the statement `await sourceStream.WriteAsync(encodedText, 0, encodedText.Length);`, which is a contraction of the following two statements:  
   
-```c#  
+```cs  
 Task theTask = sourceStream.WriteAsync(encodedText, 0, encodedText.Length);  
 await theTask;  
 ```  
@@ -93,7 +93,7 @@ await theTask;
 ## Reading Text  
  The following example reads text from a file. The text is buffered and, in this case, placed into a <xref:System.Text.StringBuilder>. Unlike in the previous example, the evaluation of the await produces a value. The <xref:System.IO.Stream.ReadAsync%2A> method returns a <xref:System.Threading.Tasks.Task>\<<xref:System.Int32>>, so the evaluation of the await produces an `Int32` value (`numRead`) after the operation completes. For more information, see [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md).  
   
-```c#  
+```cs  
 public async void ProcessRead()  
 {  
     string filePath = @"temp2.txt";  
@@ -144,7 +144,7 @@ private async Task<string> ReadTextAsync(string filePath)
   
  Note that any performance boost is almost entirely from the parallel processing and not the asynchronous processing. The advantages of asynchrony are that it doesn’t tie up multiple threads, and that it doesn’t tie up the user interface thread.  
   
-```c#  
+```cs  
 public async void ProcessWriteMult()  
 {  
     string folder = @"tempfolder\";  
@@ -185,7 +185,7 @@ public async void ProcessWriteMult()
 }  
 ```  
   
- When using the <xref:System.IO.Stream.WriteAsync%2A> and <xref:System.IO.Stream.ReadAsync%2A> methods, you can specify a <xref:System.Threading.CancellationToken>, which you can use to cancel the operation mid-stream. For more information, see [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md) and [Cancellation in Managed Threads](../Topic/Cancellation%20in%20Managed%20Threads.md).  
+ When using the <xref:System.IO.Stream.WriteAsync%2A> and <xref:System.IO.Stream.ReadAsync%2A> methods, you can specify a <xref:System.Threading.CancellationToken>, which you can use to cancel the operation mid-stream. For more information, see [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md) and [Cancellation in Managed Threads](http://msdn.microsoft.com/library/eea11fe5-d8b0-4314-bb5d-8a58166fb1c3).  
   
 ## See Also  
  [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)   

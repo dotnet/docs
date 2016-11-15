@@ -39,14 +39,14 @@ translation.priority.ht:
 # Nullable type inference is not supported in this context
 Value types and structures can be declared nullable.  
   
-```vb#  
+```vb  
 Dim a? As Integer  
 Dim b As Integer?  
 ```  
   
  However, you cannot use the nullable declaration in combination with type inference. The following examples cause this error.  
   
-```vb#  
+```vb  
 ' Not valid.  
 ' Dim c? = 10  
 ' Dim d? = a  
@@ -54,7 +54,7 @@ Dim b As Integer?
   
  **Error ID:** BC36629  
   
-### To correct this error  
+## To correct this error  
   
 -   Use an `As` clause to declare the variable as nullable.  
   

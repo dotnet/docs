@@ -44,7 +44,7 @@ Many applications have to maintain information that is best kept as name/value p
 ## Example  
  The following example creates an element with no attributes. It then uses the <xref:System.Xml.Linq.XElement.SetAttributeValue%2A> method to create and maintain a list of name/value pairs.  
   
-```c#  
+```cs  
 // Create an element with no content.  
 XElement root = new XElement("Root");  
   
@@ -76,7 +76,7 @@ Console.WriteLine(root);
 ## Example  
  The following example creates an element with no child elements. It then uses the <xref:System.Xml.Linq.XElement.SetElementValue%2A> method to create and maintain a list of name/value pairs.  
   
-```c#  
+```cs  
 // Create an element with no content.  
 XElement root = new XElement("Root");  
   

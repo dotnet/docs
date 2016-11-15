@@ -43,17 +43,16 @@ Function evaluation is disabled because a previous function evaluation timed out
   
  Possible causes for a procedure call to time out include an infinite loop or *endless loop*. For more information, see [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md).  
   
- A special case of an infinite loop is *recursion*. For more information, see [Recursive Procedures](../../../visual-basic/language-reference/procedures/recursive-procedures.md).  
+ A special case of an infinite loop is *recursion*. For more information, see [Recursive Procedures](../../../visual-basic/programming-guide/language-features/procedures/recursive-procedures.md).  
   
  **Error ID:** BC30957  
   
-### To correct this error  
+## To correct this error  
   
 1.  If possible, determine what the previous function evaluation was and what caused it to time out. Otherwise, you might encounter this error again.  
   
 2.  Either step the debugger again, or terminate and restart debugging.  
   
 ## See Also  
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)   
- [Navigating through Code with the Debugger](/visual-studio/debugger/navigating-through-code-with-the-debugger)   
- [Expressions in Visual Basic](../Topic/Expressions%20in%20Visual%20Basic.md)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)   
+ [Navigating through Code with the Debugger](/visualstudio/debugger/navigating-through-code-with-the-debugger)

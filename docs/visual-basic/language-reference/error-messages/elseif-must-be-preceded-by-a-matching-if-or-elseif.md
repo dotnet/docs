@@ -41,7 +41,7 @@ translation.priority.ht:
   
  **Error ID:** BC30014  
   
-### To correct this error  
+## To correct this error  
   
 1.  Check that a preceding `#If` or `#ElseIf` has not been separated from this `#ElseIf` by an intervening conditional compilation block or an incorrectly placed `#End If`.  
   

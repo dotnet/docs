@@ -36,7 +36,7 @@ translation.priority.ht:
 # Permission denied (Visual Basic)
 An attempt was made to write to a write-protected disk or to access a locked file.  
   
-### To correct this error  
+## To correct this error  
   
 1.  To open a write-protected file, change the write-protection attribute of the file.  
   

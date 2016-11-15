@@ -25,7 +25,7 @@ This topic shows how to sort on multiple keys.
   
  This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
   
-```c#  
+```cs  
 XElement co = XElement.Load("CustomersOrders.xml");  
 var sortedElements =  
     from c in co.Element("Orders").Elements("Order")  
@@ -74,7 +74,7 @@ CustomerID:LAZYK EmployeeID:8 ShipPostalCode:99362 OrderDate:5/22/1997
   
  This example uses the following XML document: [Sample XML File: Customers and Orders in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-in-a-namespace.md).  
   
-```c#  
+```cs  
 XElement co = XElement.Load("CustomersOrdersInNamespace.xml");  
 XNamespace aw = "http://www.adventure-works.com";  
 var sortedElements =  

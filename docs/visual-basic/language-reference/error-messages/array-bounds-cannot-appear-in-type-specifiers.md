@@ -41,7 +41,7 @@ Array sizes cannot be declared as part of a data type specifier.
   
  **Error ID:** BC30638  
   
-### To correct this error  
+## To correct this error  
   
 -   Specify the size of the array immediately following the variable name instead of placing the array size after the type, as shown in the following example.  
   

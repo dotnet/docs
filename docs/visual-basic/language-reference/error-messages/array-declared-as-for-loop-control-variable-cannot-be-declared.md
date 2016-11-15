@@ -51,11 +51,11 @@ For Each listElement(1) As Integer In arrayList
   
  **Error ID:** BC32039  
   
-### To correct this error  
+## To correct this error  
   
 -   Remove the initialization from the declaration of the *element* iteration variable.  
   
 ## See Also  
  [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)   
  [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)   
- [Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md)
+ [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)

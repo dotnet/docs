@@ -35,11 +35,11 @@ translation.priority.mt:
 # SimplifiedChinese and VbStrConv.TraditionalChinese cannot be combined
 Your application is attempting to combine the `VbStrConv` enumeration members `SimplifiedChinese` and `TraditionalChinese`, which are mutually exclusive.  
   
-### To correct this error  
+## To correct this error  
   
 -   Remove either `VbStrConv.SimplifiedChinese` or `VbStrConv.TraditionalChinese`.  
   
 ## See Also  
  <xref:System.Globalization>   
  [NOTINBUILD VbStrConv Enumeration](http://msdn.microsoft.com/en-us/59f83dd9-6361-47df-a836-02ba9d4cb936)   
- [Introduction to International Applications Based on the .NET Framework](/visual-studio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+ [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

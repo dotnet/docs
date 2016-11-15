@@ -35,7 +35,7 @@ translation.priority.mt:
 # NumberOfChars must be greater than zero
 When using the `PeekChars` method of the `TextFieldParser` object, you must supply a `NumberOfChars` value that is greater than `0`.  
   
-### To correct this error  
+## To correct this error  
   
 -   Change `NumberOfChars` to a value that is greater than `0`.  
   

@@ -33,7 +33,7 @@ The *shape* of an XML document refers to its element names, attribute names, and
   
  This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
   
-```c#  
+```cs  
 XElement co = XElement.Load("CustomersOrders.xml");  
 XElement newCustOrd =  
     new XElement("Root",  
@@ -100,7 +100,7 @@ Console.WriteLine(newCustOrd);
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md).  
   
-```c#  
+```cs  
 static IEnumerable<XElement> ConvertAddress(XElement add)  
 {  
     List<XElement> fragment = new List<XElement>() {  

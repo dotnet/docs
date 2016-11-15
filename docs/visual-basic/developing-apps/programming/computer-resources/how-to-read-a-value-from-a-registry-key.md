@@ -52,7 +52,7 @@ The `GetValue` method of the `My.Computer.Registry` object can be used to read v
   
      [!code-vb[VbResourceTasks#4](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-read-a-value-from-a-registry-key_1.vb)]  
   
- This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Windows Operating System > Registry**. For more information, see [Code Snippets](/visual-studio/ide/code-snippets).  
+ This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Windows Operating System > Registry**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
 ### To determine whether a value exists in a registry key  
   
@@ -72,7 +72,7 @@ The `GetValue` method of the `My.Computer.Registry` object can be used to read v
 -   The key name exceeds the 255-character limit (<xref:System.ArgumentException>).  
   
 ## .NET Framework Security  
- To run this process, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.RegistryPermission> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. Similarly, the user must have the correct ACLs for creating or writing to settings. For example, a local application that has the code access security permission might not have operating system permission. For more information, see [Code Access Security Basics](../Topic/Code%20Access%20Security%20Basics.md).  
+ To run this process, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.RegistryPermission> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. Similarly, the user must have the correct ACLs for creating or writing to settings. For example, a local application that has the code access security permission might not have operating system permission. For more information, see [Code Access Security Basics](https://msdn.microsoft.com/library/33tceax8).  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>   

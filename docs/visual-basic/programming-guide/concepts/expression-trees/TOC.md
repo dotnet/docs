@@ -1,5 +1,0 @@
-# [How to: Modify Expression Trees (Visual Basic)](how-to-modify-expression-trees.md)
-# [How to: Execute Expression Trees (Visual Basic)](how-to-execute-expression-trees.md)
-# [Expression Trees (Visual Basic)](index.md)
-# [Debugging Expression Trees in Visual Studio (Visual Basic)](debugging-expression-trees-in-visual-studio.md)
-# [How to: Use Expression Trees to Build Dynamic Queries (Visual Basic)](how-to-use-expression-trees-to-build-dynamic-queries.md)

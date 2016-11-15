@@ -35,7 +35,7 @@ translation.priority.mt:
 # Argument value &#39;&lt;pathname&gt;&#39; contains characters that are not valid in a path name
 A path name contains one or more characters that are not valid.  
   
-### To correct this error  
+## To correct this error  
   
 -   Remove the character from the path name.  
   

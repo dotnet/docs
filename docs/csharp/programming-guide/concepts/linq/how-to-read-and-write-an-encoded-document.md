@@ -34,7 +34,7 @@ To create an encoded XML document, you add an <xref:System.Xml.Linq.XDeclaration
 ## Example  
  The following example creates two documents, one with utf-8 encoding, and one with utf-16 encoding. It then loads the documents and prints the encoding to the console.  
   
-```c#  
+```cs  
 Console.WriteLine("Creating a document with utf-8 encoding");  
 XDocument encodedDoc8 = new XDocument(  
     new XDeclaration("1.0", "utf-8", "yes"),  

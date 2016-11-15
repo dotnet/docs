@@ -41,7 +41,7 @@ Grouping refers to the operation of putting data into groups so that the element
 ## Query Expression Syntax Example  
  The following code example uses the `group by` clause to group integers in a list according to whether they are even or odd.  
   
-```c#  
+```cs  
 List<int> numbers = new List<int>() { 35, 44, 200, 84, 3987, 4, 199, 329, 446, 208 };  
   
 IEnumerable<IGrouping<int, int>> query = from number in numbers  

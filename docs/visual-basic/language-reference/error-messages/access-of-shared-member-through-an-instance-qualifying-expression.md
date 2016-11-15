@@ -45,37 +45,37 @@ An instance variable of a class or structure is used to access a `Shared` variab
   
  For more information and an example, see [Shared](../../../visual-basic/language-reference/modifiers/shared.md).  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42025  
   
-### To correct this error  
+## To correct this error  
   
 -   Use the name of the class or structure that defines the `Shared` member to access it, as shown in the following example.  
   
-    ```vb#  
-    Public Class testClass  
-        Public Shared Sub sayHello()  
-            MsgBox("Hello")  
-        End Sub  
-    End Class  
+```vb  
+Public Class testClass  
+    Public Shared Sub sayHello()  
+        MsgBox("Hello")  
+    End Sub  
+End Class  
   
-    Module testModule  
-        Public Sub Main()  
-            ' Access a shared method through an instance variable.  
-            ' This generates a warning.  
-            Dim tc As New testClass  
-            tc.sayHello()  
+Module testModule  
+    Public Sub Main()  
+        ' Access a shared method through an instance variable.  
+        ' This generates a warning.  
+        Dim tc As New testClass  
+        tc.sayHello()  
   
-            ' Access a shared method by using the class name.  
-            ' This does not generate a warning.  
-            testClass.sayHello()  
-        End Sub  
-    End Module  
-    ```  
+        ' Access a shared method by using the class name.  
+        ' This does not generate a warning.  
+        testClass.sayHello()  
+    End Sub  
+End Module  
+```  
   
-    > [!NOTE]
-    >  Be alert for the effects of scope when two programming elements have the same name. In the previous example, if you declare an instance by using `Dim testClass as testClass = Nothing`, the compiler treats a call to `testClass.sayHello()` as an access of the method through the class name, and no warning occurs.  
+> [!NOTE]
+>  Be alert for the effects of scope when two programming elements have the same name. In the previous example, if you declare an instance by using `Dim testClass as testClass = Nothing`, the compiler treats a call to `testClass.sayHello()` as an access of the method through the class name, and no warning occurs.  
   
 ## See Also  
  [Shared](../../../visual-basic/language-reference/modifiers/shared.md)   

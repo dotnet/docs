@@ -37,7 +37,7 @@ Could not obtain full operation system name due to internal error. This might be
   
  A call to the `My.Computer.Info.OSFullName` property failed. A possible cause for this failure is if Windows Management Instrumentation (WMI) is not installed on the current computer.  
   
-### To correct this error  
+## To correct this error  
   
 1.  Add a `Try...Catch` block around the call to the `My.Computer.Info.OSFullName` property.  
   

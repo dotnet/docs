@@ -29,7 +29,7 @@ One of the most common problems when querying XML trees is that if the XML tree 
 ## Example  
  This example shows creation of XML in a namespace, and a query that returns an empty result set.  
   
-```c#  
+```cs  
 XElement root = XElement.Parse(  
 @"<Root xmlns='http://www.adventure-works.com'>  
     <Child>1</Child>  
@@ -60,7 +60,7 @@ End of result set
   
  The solution is to declare and initialize an <xref:System.Xml.Linq.XNamespace> object, and to use it when specifying <xref:System.Xml.Linq.XName> objects. In this case, the argument to the <xref:System.Xml.Linq.XElement.Elements%2A> method is an <xref:System.Xml.Linq.XName> object.  
   
-```c#  
+```cs  
 XElement root = XElement.Parse(  
 @"<Root xmlns='http://www.adventure-works.com'>  
     <Child>1</Child>  

@@ -35,7 +35,7 @@ translation.priority.mt:
 # Class not registered on local machine
 This error is usually encountered as a result of a corrupted file. You may need to reinstall [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
   
-### To correct this error  
+## To correct this error  
   
 -   Reinstall [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
   

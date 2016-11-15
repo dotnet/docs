@@ -24,7 +24,7 @@ ms.assetid:
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="articles/images/images/hub/featured-1.svg" src="./docs/images/hub/featured-1.png" alt="" />
+                                        <img data-hoverimage="articles/images/hub/featured-1.svg" src="./docs/images/hub/featured-1.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">

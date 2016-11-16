@@ -28,7 +28,7 @@ top of the topic:
 We've created a snippet to include with the following syntax:
 
 ```markdown
-[!include[current release track](../includes/warning.md)]
+[!include[current release track](../../includes/warning.md)]
 ```
 
 ### Link instructions

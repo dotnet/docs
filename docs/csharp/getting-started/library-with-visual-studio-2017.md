@@ -17,7 +17,8 @@ ms.assetid: c849ca26-6a25-4d35-9544-f343af88e0e7
 
 A class library defines types and methods that can be called from any application. A class library developed using .NET Core supports the .NET Standard Library, which allows your library to be called by any .NET platform that supports that version of the .NET Standard Library. When you finish your class library, you can decide whether you want to distribute it as a third-party component, or whether you want to include it as a component that is bundled with one or more applications.
 
-   [!NOTE] For a list of the .NET Standard versions and the platforms they support, see [.NET Standard Library](..\..\standard\library.md).
+> [!NOTE]
+> For a list of the .NET Standard versions and the platforms they support, see [.NET Standard Library](../../standard/library.md).
 
 In this topic, we'll create a simple utility library that contains a single string-handling method. We'll implement it as an [extension method](https://msdn.microsoft.com/en-us/library/bb383977.aspx) so that it can be called as if it were a member of the @System.String class.
 
@@ -55,7 +56,7 @@ Now we can create our class library project:
 
    [!CODE-csharp[ClassLib#1](../../../samples/snippets/csharp/getting_started/with_visual_studio_2017/classlib.cs#1)]
 
-   The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`, which returns a @System.Boolean value that indicates whether the current string instance begins with an uppercase character. Which characters are uppercase is defined by the Unicode standard. In .NET Core, the [Char.IsUpperCase](xref:System.Char.IsUpperCase(System.Char)) method returns `true` if a character is uppercase.
+   The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`, which returns a @System.Boolean value that indicates whether the current string instance begins with an uppercase character. Which characters are uppercase is defined by the Unicode standard. In .NET Core, the [Char.IsUpper](xref:System.Char.IsUpper(System.Char)) method returns `true` if a character is uppercase.
 
 1. On the menu bar, choose **Build**, **Build Solution**. The project should compile without error.
 

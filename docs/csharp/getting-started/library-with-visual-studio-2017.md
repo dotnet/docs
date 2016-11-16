@@ -56,7 +56,7 @@ Now we can create our class library project:
 
    [!CODE-csharp[ClassLib#1](../../../samples/snippets/csharp/getting_started/with_visual_studio_2017/classlib.cs#1)]
 
-   The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`, which returns a @System.Boolean value that indicates whether the current string instance begins with an uppercase character. Which characters are uppercase is defined by the Unicode standard. In .NET Core, the [Char.IsUpperCase](xref:System.Char.IsUpperCase(System.Char)) method returns `true` if a character is uppercase.
+   The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`, which returns a @System.Boolean value that indicates whether the current string instance begins with an uppercase character. Which characters are uppercase is defined by the Unicode standard. In .NET Core, the [Char.IsUpper](xref:System.Char.IsUpper(System.Char)) method returns `true` if a character is uppercase.
 
 1. On the menu bar, choose **Build**, **Build Solution**. The project should compile without error.
 

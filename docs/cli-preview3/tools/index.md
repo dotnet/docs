@@ -111,11 +111,11 @@ CLI enables applications to be portable in two main ways:
 
 You can learn more about both of these in the [.NET Core application deployment](../deploying/index.md) topic. 
 
-## Migration from DNX
-If you used DNX in .NET Core 1.0 RC1, you may be wondering what happened to it and how do these new tools
-relate to the DNX tools. In short, the DNX tools have been replaced with the .NET Core CLI tools. 
-If you have existing projects or are just wondering how the commands map, you
-can use the [DNX to CLI migration](../migrating-from-dnx.md) topic to get all the details. 
+## Migration from Preview 3/project.json
+If you used Preview 2 tooling and project.json projects, you can consult the [dotnet migrate](dotnet-migrate.md) command docs
+to get acquainted with the command and how to migrate your project. 
+
+> **Note:** the `dotnet migrate` command currently does not migrate pre-preview 2 project.json files. 
 
 ## Extensibility
 Of course, not every tool that you could use in your workflow will be part of the core CLI tools. However, .NET Core 

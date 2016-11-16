@@ -52,7 +52,7 @@ Publishes the application for a given framework identifier (FID).
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../rid-catalog.md).
+Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../../core/rid-catalog.md).
 
 `-o|--output <OUTPUT_PATH>`
 
@@ -88,4 +88,4 @@ exist in the project file).
 
 ## See also
 * [Frameworks](../../standard/frameworks.md)
-* [Runtime IDentifier (RID) catalog](../rid-catalog.md)
+* [Runtime IDentifier (RID) catalog](../../core/rid-catalog.md)

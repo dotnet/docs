@@ -66,7 +66,7 @@ Defines a configuration under which to build.  If omitted, it defaults to `Debug
 
 `-r|--runtime [RUNTIME_IDENTIFIER]`
 
-Target runtime to build for. For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../rid-catalog.md). 
+Target runtime to build for. For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../../core/rid-catalog.md). 
 
 `--version-suffix [VERSION_SUFFIX]`
 

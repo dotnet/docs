@@ -139,4 +139,4 @@ Run the tests in the test1 project:
 
 [Frameworks](../../standard/frameworks.md)
 
-[Runtime IDentifier (RID) catalog](../rid-catalog.md)
+[Runtime IDentifier (RID) catalog](../../core/rid-catalog.md)

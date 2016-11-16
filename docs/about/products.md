@@ -1,3 +1,3 @@
 ---
-redirect_url: /dotnet/articles/standard/concepts
+redirect_url: /dotnet/articles/standard/components
 ---

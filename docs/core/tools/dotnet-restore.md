@@ -16,7 +16,7 @@ ms.assetid: 60489b25-38de-47e6-bed1-59d9f42e2d46
 
 ## Name
 
-`dotnet-restore` - Restores the dependencies and tools of a project
+`dotnet-restore` - Restores the dependencies and tools of a project.
 
 ## Synopsis
 

@@ -15,7 +15,7 @@ ms.assetid: 263c3d05-3a47-46a6-8023-3ca16b488410
 #dotnet-new
 
 ## Name
-dotnet-new -- Creates a new .NET Core project in the current directory
+`dotnet-new` - Creates a new .NET Core project in the current directory.
 
 ## Synopsis
 `dotnet new [--help] [--type] [--lang]`

@@ -1,6 +1,6 @@
 ---
-title: .NET Components
-description: Describes key .NET concepts such as the .NET Standard Library, .NET runtimes, tooling, and how they interplay.
+title: .NET Architectural Components
+description: Describes key .NET architectural components such as the .NET Standard Library, .NET runtimes, and tooling.
 keywords: .NET, .NET Standard Library, .NET Standard, .NET Core, .NET Framework, Xamarin, MSBuild, C#, F#, VB, compilers
 author: cartermp
 manager: wpickett
@@ -13,15 +13,15 @@ ms.devlang: dotnet
 ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
 ---
 
-# .NET Components
+# .NET Architectural Components
 
-.NET is made up of a number of components.  It has a standard library, called the .NET Standard Library, which is a large set of APIs which runs everywhere.  This standard library is implemented by three .NET runtimes - .NET Framework, .NET Core, and Mono for Xamarin.  The .NET languages also run on any .NET runtime.  Additionally, there are tools on every platform which allow you to build projects.  These tools are the same regardless of your choice of runtime.
+.NET is made up of a number of key components.  It has a standard library, called the .NET Standard Library, which is a large set of APIs which runs everywhere.  This standard library is implemented by three .NET runtimes - .NET Framework, .NET Core, and Mono for Xamarin.  The .NET languages also run on any .NET runtime.  Additionally, there are tools on every platform which allow you to build projects.  These tools are the same regardless of your choice of runtime.
 
-Here's a graphical overview of each of the "pieces" of .NET and how they fit.
+Here's a graphical overview of each of the previously mentioned components of .NET and how they fit.
 
-![All .NET Concepts Together](media/components.png)
+![All .NET Architectural Components Together](media/components.png)
 
-What follows is a brief explanation of each of the key concepts shown above.  
+What follows is a brief explanation of each of the key components shown above.  
 
 ## .NET Standard Library
 

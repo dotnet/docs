@@ -15,7 +15,7 @@ ms.assetid: 6ddffde4-c789-4e90-990e-d35f6a6565d4
 
 #dotnet-nuget-delete
 
-[!INCLUDE[preview-warning](../../includes/warning.md)]
+[!INCLUDE[preview-warning](../../../includes/warning.md)]
 
 ## Name 
 `dotnet-nuget-delete` - Deletes or unlists a package from the server. 

@@ -27,20 +27,20 @@ You should use .NET Core for your server application when:
 
 You should use .NET Framework for your server application when:
 
-* Your application currently uses .NET Framework (recommendation is to extend instead of migrate)
-* You need to use third party .NET libraries or NuGet packages not available for .NET Core.
+* Your application currently uses .NET Framework (recommendation is to extend instead of migrating)
+* You need to use third-party .NET libraries or NuGet packages not available for .NET Core.
 * You need to use .NET technologies that are not available for .NET Core.
 * You need to use a platform that doesn’t support .NET Core.
 
 ## When to choose .NET Core
 
-The following is a detailed set of important reasons why you would care and want to use .NET Core.
+The following is a more detailed explanation of the previously-stated reasons for picking .NET Core.
 
-### Cross-Platform needs
+### Cross-platform needs
 
-Clearly, if your goal is to have an application (web/service) that should be able to run across platforms (Windows, Linux and MacOS), the best choice is to use .NET Core.
+Clearly, if your goal is to have an application (web/service) that should be able to run across platforms (Windows, Linux and macOS), the best choice is to use .NET Core.
 
-.NET Core also supports any OS as your development workstation. Visual Studio provides a IDE for Windows, but you can also use Visual Studio Code on MacOS, Linux and Windows which fully support .NET Core as well, including intellisense and debugging. You can also target .NET Core with most third party editors like Sublime, Emacs, VI and can get editor intellisense using the open source [Omnisharp](http://www.omnisharp.net/) project. You can also avoid any code editor and directly use the .NET Core command-line tools, available for any platform.
+.NET Core also supports the previously-mentioned operating systems as your development workstation. Visual Studio provides an Integrated Development Environment (IDE) for Windows.  You can also use Visual Studio Code on macOS, Linux and Windows which fully support .NET Core, including IntelliSense and debugging. You can also target .NET Core with most third-party editors like Sublime, Emacs, VI and can get editor IntelliSense using the open source [Omnisharp](http://www.omnisharp.net/) project. You can also avoid any code editor and directly use the .NET Core command-line tools, available forall supported platforms.
 
 ### Microservices architecture
 
@@ -72,7 +72,7 @@ While .NET Core offers significant benefits for new application patterns, the .N
 
 In most cases, you won’t need to migrate your existing applications to .NET Core. Instead of that, the natural approach is to embrace .NET Core as you extend your existing applications, such as adopting microservices for new additions to your system. The .NET Framework will continue to be shipped at its current pace, sharing the innovation in areas like the .NET Standard Library, languages, and core components. .NET Framework constraints solved by .NET Core such as cross-platform, modularity, and performance don’t affect existing applications in traditional workloads. You should evaluate .NET Core only if these benefits outperform the cost of a migration.
 
-### A need to use third party .NET libraries or NuGet packages not available for .NET Core
+### A need to use third-party .NET libraries or NuGet packages not available for .NET Core
 
 Libraries are quickly embracing .NET Standard, which enables sharing code across all .NET flavors including .NET Core. With .NET Standard 2.0 this will be even easier, as the .NET Core API surface will become significantly bigger and .NET Core applications can directly use existing .NET Framework libraries. This transition won’t be immediate, though, so we recommend checking the specific libraries required by your application before making a decision one way or another.
 
@@ -102,5 +102,5 @@ Some Microsoft or third-party platforms don’t support .NET Core as of November
 
 * [.NET Core Guide](../core/index.md)
 * [Porting from .NET Framework to .NET Core](../core/porting/index.md)
-* [.NET Framework Guide](../framework/index.md)
+* [.NET Framework on Docker Guide](../framework/index.md)
 * [.NET Components Overview](concepts.md)

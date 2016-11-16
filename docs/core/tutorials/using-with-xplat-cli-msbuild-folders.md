@@ -218,76 +218,90 @@ The whole project structure should look like this:
       |__NewTypesTests.csproj
 ```
 
-** Work in progress ** What follows has not been updated.
-
 There are two new things to make sure you have in your test project:
 
-1. A correct `project.json` with the following:
+1. A correct `NewTypesTests.csproj` file with the following:
 
    * A reference to `xunit`
    * A reference to `dotnet-test-xunit`
    * A reference to the namespace corresponding to the code under test
 
+   This can be built by simply doing `dotnet new -t Xunittest` from the command-line in the `NewTypesTests` directory, then adding a project reference to the `NewTypes` project.
+
+    `NewTypesTests/NewTypesTests.csproj`:
+    ```xml
+    <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+      <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+
+      <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp1.0</TargetFramework>
+      </PropertyGroup>
+
+      <ItemGroup>
+        <Compile Include="**\*.cs" />
+        <EmbeddedResource Include="**\*.resx" />
+      </ItemGroup>
+
+      <ItemGroup>
+        <PackageReference Include="Microsoft.NETCore.App">
+          <Version>1.0.1</Version>
+        </PackageReference>
+        <PackageReference Include="Microsoft.NET.Sdk">
+          <Version>1.0.0-alpha-20161104-2</Version>
+          <PrivateAssets>All</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.NET.Test.Sdk">
+          <Version>15.0.0-preview-20161024-02</Version>
+        </PackageReference>
+        <PackageReference Include="xunit">
+          <Version>2.2.0-beta3-build3402</Version>
+        </PackageReference>
+        <PackageReference Include="xunit.runner.visualstudio">
+          <Version>2.2.0-beta4-build1188</Version>
+        </PackageReference>
+        <ProjectReference Include="../../src/NewTypes/NewTypes.csproj"/>
+      </ItemGroup>
+
+      <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    </Project>
+    ```
+
 2. An Xunit test class.
 
-`NewTypesTests/project.json`:
-```json
-{
-  "version": "1.0.0-*",
-  "testRunner": "xunit",
 
-  "dependencies": {
-    "Microsoft.NETCore.App": {
-      "type":"platform",
-      "version": "1.0.0"
-    },
-    "xunit":"2.2.0-beta2-build3300",
-    "dotnet-test-xunit": "2.2.0-preview2-build1029",
-    "NewTypes": "1.0.0"
-  },
-  "frameworks": {
-    "netcoreapp1.0": {
-      "imports": [
-        "dnxcore50",
-        "portable-net45+win8" 
-      ]
-    }
-  }
-}
-```
-
-`PetTests.cs`: 
-```csharp
-using System;
-using Xunit;
-using Pets;
-public class PetTests
-{
-    [Fact]
-    public void DogTalkToOwnerTest()
+    `PetTests.cs`: 
+    ```csharp
+    using System;
+    using Xunit;
+    using Pets;
+    public class PetTests
     {
-        string expected = "Woof!";
-        string actual = new Dog().TalkToOwner();
+        [Fact]
+        public void DogTalkToOwnerTest()
+        {
+            string expected = "Woof!";
+            string actual = new Dog().TalkToOwner();
+            
+            Assert.Equal(expected, actual);
+        }
         
-        Assert.Equal(expected, actual);
+        [Fact]
+        public void CatTalkToOwnerTest()
+        {
+            string expected = "Meow!";
+            string actual = new Cat().TalkToOwner();
+            
+            Assert.Equal(expected, actual);
+        }
     }
-    
-    [Fact]
-    public void CatTalkToOwnerTest()
-    {
-        string expected = "Meow!";
-        string actual = new Cat().TalkToOwner();
-       	
-        Assert.Equal(expected, actual);
-    }
-}
-```
+    ```
    
 Now you can run tests!  The [`dotnet test`](../tools/dotnet-test.md) command runs the test runner you have specified in your project. Make sure you start at the top-level directory.
  
 ```
-$ dotnet restore
 $ cd test/NewTypesTests
+$ dotnet restore
 $ dotnet test
 ```
  
@@ -303,4 +317,3 @@ xUnit.net .NET CLI test runner (64-bit win10-x64)
    NewTypesTests  Total: 2, Errors: 0, Failed: 0, Skipped: 0, Time: 0.144s
 SUMMARY: Total: 1 targets, Passed: 1, Failed: 0.
 ```
- 

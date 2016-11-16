@@ -50,7 +50,7 @@ The infrastructure platforms you could use are many. For large and complex micro
 
 ### Containers
 
-Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containeriz web apps or services which follow any architectural pattern. You will be able to use the .NET Framework for Windows containers, but the modularity and lightweight nature of .NET Core makes it perfect for containers.  When creating and deploying a container the size of its image is far smaller with .NET Core than .NET Framework.  Because it is cross-platform, you can deploy server apps to Linux Docker containers, for example.
+Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containerize web apps or services which follow any architectural pattern. You will be able to use the .NET Framework for Windows containers, but the modularity and lightweight nature of .NET Core makes it perfect for containers.  When creating and deploying a container the size of its image is far smaller with .NET Core than .NET Framework.  Because it is cross-platform, you can deploy server apps to Linux Docker containers, for example.
 
 You can then host your Docker containers in your own Linux or Windows infrastructure, or use a cloud service such as [Azure Container Service](https://azure.microsoft.com/en-us/services/container-service/) which can manage, orchestrate and scale your container-based application in the cloud.
 
@@ -62,7 +62,7 @@ This is especially relevant for microservices architectures, where you could hav
 
 ### A need for side by side of .NET versions per application level
 
-If you want to be able to install applications with dependencies on different versions of frameworks in .NET, you need to use .NET Core, which provides 100% side-by side. Easy side-by-side installation of different versions of .NET Core on the same machine allows you to have multiple services on the same server, each of them on its own version of .NET Core, eliminating risks and saving money in application upgrades and IT operations.
+If you want to be able to install applications with dependencies on different versions of frameworks in .NET, you need to use .NET Core, which provides 100% side-by-side. Easy side-by-side installation of different versions of .NET Core on the same machine allows you to have multiple services on the same server, each of them on its own version of .NET Core, eliminating risks and saving money in application upgrades and IT operations.
 
 ## When to choose .NET Framework
 
@@ -82,9 +82,9 @@ Some .NET Framework technologies are not available in .NET Core. Some of them wi
 
 * ASP.NET Web Forms applications: ASP.NET Web Forms is only provided by the .NET Framework, so you cannot use ASP.NET Core / .NET Core for this scenario. Currently there are no plans to bring ASP.NET Web Forms to .NET Core.
 
-* ASP.NET Web Pages applications: At .NET Core 1.0 release timeframe (June 2016), ASP.NET Web Pages are not included in ASP.NET Core, although it is planned to be included in a future release per explained in the [.NET Core roadmap](https://github.com/aspnet/Home/wiki/Roadmap).
+* ASP.NET Web Pages applications: At .NET Core 1.0 release timeframe (June 2016), ASP.NET Web Pages are not included in ASP.NET Core, although it is planned to be included in a future release as explained in the [.NET Core roadmap](https://github.com/aspnet/Home/wiki/Roadmap).
 
-* ASP.NET SignalR server/client implementation. At .NET Core 1.0 release timeframe (June 2016), ASP.NET SignalR is not available for ASP.NET Core (neither client or server), although it is planned to be included in a future release per explained in the [.NET Core roadmap](https://github.com/aspnet/Home/wiki/Roadmap). Preview state is available at the [Server-side](https://github.com/aspnet/SignalR-Server) and [Client Library](https://github.com/aspnet/SignalR-Client-Net) GitHub repositories.
+* ASP.NET SignalR server/client implementation. At .NET Core 1.0 release timeframe (June 2016), ASP.NET SignalR is not available for ASP.NET Core (neither client or server), although it is planned to be included in a future release as explained in the [.NET Core roadmap](https://github.com/aspnet/Home/wiki/Roadmap). Preview state is available at the [Server-side](https://github.com/aspnet/SignalR-Server) and [Client Library](https://github.com/aspnet/SignalR-Client-Net) GitHub repositories.
 
 * WCF services implementation. Even when there’s a [WCF-Client library](https://github.com/dotnet/wcf) to consume WCF services from .NET Core, as of June 2016, WCF server implementation is only available on the .NET Framework. This scenario is not part of the current plan for .NET Core but it’s being considered for the future.
 

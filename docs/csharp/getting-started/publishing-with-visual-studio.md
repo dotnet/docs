@@ -21,7 +21,7 @@ Now that you've created your console app (in the [Building a Hello World Appllic
 
 ![Image](.\media\release.jpg)
 
-2. Right-click on the HelloWorld project (not the HelloWorld solution) and select **Publ2222ish** from the menu. You can also select **Publish HelloWorld** from the main Visual Studio **Build** menu.
+2. Right-click on the HelloWorld project (not the HelloWorld solution) and select **Publish** from the menu. You can also select **Publish HelloWorld** from the main Visual Studio **Build** menu.
 
 3. When the **Profile** tab of the **Publish** dialog box shown in the following figure appears, select the **File System** target.
 

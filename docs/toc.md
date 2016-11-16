@@ -259,7 +259,10 @@
 ### [🔧 Reflection & code generation](csharp/reflection.md)
 ### [Documenting your code](csharp/codedoc.md) 
 ## [🔧 Using the .NET Compiler Platform](csharp/roslyn/index.md)
-## [🔧 Syntax Reference](csharp/syntax.md)
+## [Language Reference](csharp/language-reference/index.md)
+<!--
+    The C# Reference section can be ported from here: 
+    https://msdn.microsoft.com/en-us/library/618ayhy6.aspx
 
 ## [C# Programming Guide](csharp/programming-guide/index.md)
 ### [Inside a C# Program](csharp/programming-guide/inside-a-program/index.md)

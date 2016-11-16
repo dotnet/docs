@@ -15,7 +15,7 @@ ms.assetid: 8440229e-317e-4dc1-9463-cba5fdb12c3b
 
 #dotnet-nuget-locals
 
-[!INCLUDE[preview-warning](../../includes/warning.md)] 
+[!INCLUDE[preview-warning](../../../includes/warning.md)] 
 
 ## Name 
 `dotnet-nuget-locals` - Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder. 

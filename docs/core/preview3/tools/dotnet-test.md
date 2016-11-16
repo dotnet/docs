@@ -137,6 +137,6 @@ Run the tests in the test1 project:
 
 ## See also
 
-[Frameworks](../../standard/frameworks.md)
+[Frameworks](../../../standard/frameworks.md)
 
 [Runtime IDentifier (RID) catalog](../../rid-catalog.md)

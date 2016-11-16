@@ -3,7 +3,6 @@
 <!-- Start of .NET Platform Guide -->
 # [.NET Platform Guide](standard/index.md)
 ## [Getting Started with .NET](standard/getting-started.md)
-## [About .NET](standard/about.md)
 ## [Tour of .NET](standard/tour.md)
 ## [.NET Architectural Components](standard/components.md)
 ## [.NET Standard Library](standard/library.md)
@@ -172,7 +171,7 @@
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
 ### [Porting libraries](core/porting/libraries.md)
 ### [🔧 NuGet packages](core/porting/nuget-packages.md)
-2## [Migrating from DNX](core/migrating-from-dnx.md)
+## [Migrating from DNX](core/migrating-from-dnx.md)
 <!-- End .NET Core Content -->
 
 <!-- .NET Framework Content -->

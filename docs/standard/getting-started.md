@@ -1,7 +1,7 @@
 ---
-title: Getting Started
-description: Getting started with .NET
-keywords: .NET
+title: Getting Started with .NET
+description: Lists various articles for getting started with .NET, both from a language and platform perspective.
+keywords: .NET, Getting Started, C#, F#, Visual Basic
 author: cartermp
 manager: wpickett
 ms.author: phcart

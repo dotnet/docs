@@ -4,7 +4,7 @@
 # [.NET Platform Guide](standard/index.md)
 ## [Getting Started](standard/getting-started.md)
 ## [Tour of .NET](standard/tour.md)
-## [.NET Concepts](standard/concepts.md)
+## [.NET Architectural Components](standard/components.md)
 ## [.NET Standard Library](standard/library.md)
 ## [Frameworks and Targets](standard/frameworks.md)
 ## [What is "managed code"?](standard/managed-code.md)

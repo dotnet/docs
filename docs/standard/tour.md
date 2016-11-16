@@ -142,4 +142,4 @@ If you're interested in a tour of F# features, check out [Tour of F#](../fsharp/
 
 If you want to get started with writing code of your own, check out [Getting Started](getting-started.md).
 
-To learn about important components of .NET, check out [.NET Concepts](concepts.md).
+To learn about important components of .NET, check out [.NET Architectural Components](components.md).

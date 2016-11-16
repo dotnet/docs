@@ -2,11 +2,12 @@
 
 <!-- Start of .NET Platform Guide -->
 # [.NET Platform Guide](standard/index.md)
-## [Getting Started](standard/getting-started.md)
+## [Getting Started with .NET](standard/getting-started.md)
 ## [Tour of .NET](standard/tour.md)
-## [.NET Concepts](standard/concepts.md)
+## [.NET Architectural Components](standard/components.md)
 ## [.NET Standard Library](standard/library.md)
 ## [Frameworks and Targets](standard/frameworks.md)
+## [Choosing between .NET Core and .NET Framework for server apps](standard/choosing-core-framework-server.md)
 ## [What is "managed code"?](standard/managed-code.md)
 ## [Common Language Runtime (CLR)](standard/clr.md)
 ## [Language Independence](standard/language-independence.md)
@@ -182,11 +183,17 @@
 
 <!-- Start of C# Content -->
 # [C# Guide](csharp/index.md)
-## [🔧 Getting Started](csharp/getting-started/index.md)
-### [Getting started with Visual Studio](csharp/getting-started/with-visual-studio.md)
-#### [Debugging your Hello World application with Visual Studio](csharp/getting-started/debugging-with-visual-studio.md)
-#### [Publishing your Hello World application with Visual Studio](csharp/getting-started/publishing-with-visual-studio.md)
-### [🔧 Getting started with Visual Studio Code and OmniSharp](csharp/getting-started/with-visual-studio-code.md)
+## [Getting Started](csharp/getting-started/index.md)
+### [Building a C# Hello World application with .NET Core in Visual Studio 2017 RC](csharp/getting-started/with-visual-studio-2017.md)
+#### [Debugging your C# Hello World application with Visual Studio 2017 RC](csharp/getting-started/debugging-with-visual-studio-2017.md)
+#### [Publishing your Hello World application with Visual Studio 2017 RC](csharp/getting-started/publishing-with-visual-studio-2017.md)
+### [Building a class library with C# and .NET Core in Visual Studio 2017 RC](csharp/getting-started/library-with-visual-studio-2017.md)
+#### [Testing a class library with .NET Core in Visual Studio 2017 RC](csharp/getting-started/testing-library-with-visual-studio.md)
+#### [Consuming a class library with .NET Core in Visual Studio 2017 RC](csharp/getting-started/consuming-library-with-visual-studio-2017.md)
+### [Getting started with Visual Studio 2015](csharp/getting-started/with-visual-studio.md)
+#### [Debugging your Hello World application with Visual Studio 2015](csharp/getting-started/debugging-with-visual-studio.md)
+#### [Publishing your Hello World application with Visual Studio 2015](csharp/getting-started/publishing-with-visual-studio.md)
+### [Getting started with Visual Studio Code](csharp/getting-started/with-visual-studio-code.md)
 ### [🔧 Getting started with cross-platform tools](csharp/getting-started/with-cross-platform-tools.md)
 ### [🔧 Getting started with C# Interactive](csharp/getting-started/with-csharp-interactive.md)
 ## [Tutorials](csharp/tutorials/index.md)
@@ -219,7 +226,7 @@
 ### [🔧 Using C# Interactive in Visual Studio](csharp/interactive-with-visualstudio.md)
 ### [🔧 Using C# Interactive from Powershell](csharp/interactive-with-powershell.md)
 ### [🔧 Using C# Interactive from macOS or Linux Terminal](csharp/interactive-with-bash.md)
-## [🔧 C# Concepts](csharp/concepts.md)
+## [C# Concepts](csharp/concepts.md)
 ### [🔧 C# Type system](csharp/type-system.md)
 ### [🔧 Namespaces and Assemblies](csharp/namespaces-and-assemblies.md)
 ### [Basic Types](csharp/basic-types.md)
@@ -227,7 +234,7 @@
 ### [Structs](csharp/structs.md)
 ### [🔧 Tuples and unnamed types](csharp/tuples.md)
 ### [🔧 Interfaces](csharp/interfaces.md)
-### [🔧 Methods and Lambda Expressions](csharp/methods-lambda-expressions.md)
+### [Methods and Lambda Expressions](csharp/methods-lambda-expressions.md)
 #### [🔧 methods](csharp/methods.md)
 #### [🔧 Lambda Expressions](csharp/lambda-expressions.md)
 ### [Properties](csharp/properties.md)
@@ -259,7 +266,10 @@
 ### [🔧 Reflection & code generation](csharp/reflection.md)
 ### [Documenting your code](csharp/codedoc.md) 
 ## [🔧 Using the .NET Compiler Platform](csharp/roslyn/index.md)
-## [🔧 Syntax Reference](csharp/syntax.md)
+## [Language Reference](csharp/language-reference/index.md)
+<!--
+    The C# Reference section can be ported from here: 
+    https://msdn.microsoft.com/en-us/library/618ayhy6.aspx
 
 ## [C# Programming Guide](csharp/programming-guide/index.md)
 ### [Inside a C# Program](csharp/programming-guide/inside-a-program/index.md)

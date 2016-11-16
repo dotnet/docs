@@ -69,8 +69,6 @@ The following commands exist for dotnet:
    * Migrates a valid Preview 2 project to a Preview 3 project
 * [dotnet-msbuild](dotnet-msbuild.md)
    * Provides access to MSBuild command line
-* [dotnet-nuget]()
-   * Provides access to advanced NuGet commands
 
 ## Examples
 

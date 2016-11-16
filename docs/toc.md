@@ -167,7 +167,7 @@
 ### [dotnet-install-script](core/tools/dotnet-install-script.md)
 ### [project.json](core/tools/project-json.md)
 ### [global.json](core/tools/global-json.md)
-## [.NET Core Tools Preview 3](core/preview3/index.md)
+## [.NET Core Tools Preview 3](core/preview3/tools/index.md)
 ### [High level overview of changes in CLI Preview 3](core/preview3/tools/layering.md)
 ### [Dependency management with .NET Core Tools Preview 3](core/preview3/tools/dependencies.md)
 ### [Deploying applications with .NET Core Tools Preview 3](core/preview3/deploying/index.md)

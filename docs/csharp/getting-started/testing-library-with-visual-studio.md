@@ -15,7 +15,7 @@ ms.assetid: 069ad711-3eaa-45c6-94d7-b40249cc8b99
 
 # Testing a class library with .NET Core in Visual Studio 2017 RC #
 
-In [Building a class library with C# and .NET Core in Visual Studio 2017 RC](library-with-visual-studio.md), we created a simple class library that adds an extension method to the @System.String class. Now, we'll create a unit test to make sure that it works as expected. We'll add our unit test project to the solution we created in the previous topic.
+In [Building a class library with C# and .NET Core in Visual Studio 2017 RC](library-with-visual-studio_2017.md), we created a simple class library that adds an extension method to the @System.String class. Now, we'll create a unit test to make sure that it works as expected. We'll add our unit test project to the solution we created in the previous topic.
 
 ## Creating a unit test project ##
 

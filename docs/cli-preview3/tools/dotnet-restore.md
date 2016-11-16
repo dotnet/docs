@@ -88,7 +88,7 @@ Restore dependencies and tools for the project in the current directory:
 
 Restore dependencies and tools for the `app1` project found in the given path:
 
-`dotnet restore ~/projects/app1/project.json`
+`dotnet restore ~/projects/app1/app1.csproj``
 	
 Restore the dependencies and tools for the project in the current directory using the file path provided as the fallback source:
 

@@ -133,7 +133,7 @@ Run the tests in the project in the current directory:
 
 Run the tests in the test1 project:
 
-`dotnet test /projects/test1/project.json` 
+`dotnet test /projects/test1/test1.csproj` 
 
 ## See also
 

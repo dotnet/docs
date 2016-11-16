@@ -70,7 +70,7 @@ Target runtime to build for. For a list of Runtime Identifiers (RIDs) you can us
 
 `--version-suffix [VERSION_SUFFIX]`
 
-Defines what `*` should be replaced with in the version field in the [project file](project-json.md#version) file. The format follows NuGet's version guidelines. 
+Defines what `*` should be replaced with in the version field in the project file. The format follows NuGet's version guidelines. 
 
 `--build-profile`
 

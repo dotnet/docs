@@ -26,7 +26,7 @@ The `dotnet new` command provides a convenient way to initialize a valid .NET Co
 This command is invoked in the context of a directory. When invoked, the command will result in two main artifacts being dropped to the current directory: 
 
 1. A `Program.cs` (or `Program.fs`) file that contains a sample "Hello World" program.
-2. A valid `project.json` file.
+2. A valid csproj project file.
 
 After this, the project is ready to be compiled and/or edited further. 
 

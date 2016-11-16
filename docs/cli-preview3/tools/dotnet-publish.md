@@ -40,8 +40,7 @@ For more information, see the [.NET Core Application Deployment](../deploying/in
 
 `[project]` 
 
-The project to publish, which defaults to the current directory if `[project]` is not specified. This value can be a path to the [project.json](project-json.md) file or to the project 
-directory that contains the [project.json](project-json.md) file. If no [project.json](project-json.md) file can be found, `dotnet publish` throws an error. 
+The project to publish, which defaults to the current directory if `[project]` is not specified. 
 
 `-h|--help`
 
@@ -49,7 +48,7 @@ Prints out a short help for the command.
 
 `-f|--framework <FRAMEWORK>`
 
-Publishes the application for a given framework identifier (FID). If not specified, FID is read from [project.json](project-json.md#frameworks). If no valid framework is found, the command throws an error. If multiple valid frameworks are found, the command publishes for all valid frameworks. 
+Publishes the application for a given framework identifier (FID). 
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
@@ -62,7 +61,7 @@ for portable applications or *_./bin/[configuration]/[framework]/[runtime]_* for
 
 `--version-suffix [VERSION_SUFFIX]`
 
-Defines what `*` should be replaced with in the version field in the project.json file.
+Defines what `*` should be replaced with in the version field in the project file.
 
 `-c|--configuration [Debug|Release]`
 
@@ -70,20 +69,20 @@ Configuration to use when publishing. The default value is `Debug`.
 
 ## Examples
 
-Publish an application using the framework found in `project.json`. If `project.json` contains [runtimes](project-json.md#runtimes) node, publish for the RID of the current platform.
+Publish an application.
 
 `dotnet publish`
 
-Publish the application using the specified [project.json](project-json.md):
+Publish the application using the specified project file
 
-`dotnet publish ~/projects/app1/project.json`
+`dotnet publish ~/projects/app1/app1.csproj`
 	
 Publish the current application using the `netcoreapp1.0` framework:
 
 `dotnet publish --framework netcoreapp1.0`
 	
 Publish the current application using the `netcoreapp1.0` framework and runtime for `OS X 10.10` (this RID has to 
-exist in the `project.json` [runtimes](project-json.md#runtimes) node):
+exist in the project file).
 
 `dotnet publish --framework netcoreapp1.0 --runtime osx.10.11-x64`
 

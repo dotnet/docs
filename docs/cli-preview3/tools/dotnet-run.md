@@ -66,7 +66,7 @@ Configuration to use when publishing. The default value is `Debug`.
 `-p`, `--project [PATH]`
 
 Specifies which project to run. 
-It can be a path to a [project.json](project-json.md) file or to a directory containing a [project.json](project-json.md) file. It defaults to
+It can be a path to a [csproj](csproj.md) file or to a directory containing a [csproj](csproj.md) file. It defaults to
 current directory if not specified. 
 
 ## Examples
@@ -76,7 +76,7 @@ Run the project in the current directory:
 
 Run the specified project:
 
-`dotnet run --project /projects/proj1/project.json`
+`dotnet run --project /projects/proj1/proj1.csproj`
 
 Run the project in the current directory (the `--help` argument in this example is passed to the application being run, since the `--` argument was used):
 

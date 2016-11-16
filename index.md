@@ -1,5 +1,6 @@
 ---
 layout: HubPage
+hide_bc: true
 
 title: .NET Documentation
 description:
@@ -93,9 +94,9 @@ ms.assetid:
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/articles/welcome">What is .NET?</a></h3>
-                                                <p><a href="https://www.microsoft.com/net">Get Started</a></p>
-                                                <p><a href="/dotnet/articles/standard/#a-stroll-through-net">Tour of .NET</a></p>
-                                                <p><a href="/dotnet/articles/about/products">.NET Concepts</a></p>
+                                                <p><a href="/dotnet/articles/standard/getting-started">Get Started</a></p>
+                                                <p><a href="/dotnet/articles/standard/tour">Tour of .NET</a></p>
+                                                <p><a href="/dotnet/articles/standard/components">.NET Architectural Concepts</a></p>
                                             </div>
                                         </div>
                                     </div>

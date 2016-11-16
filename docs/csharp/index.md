@@ -50,5 +50,5 @@ There are seven sections in the C# Guide. You can read them in order, or jump di
 * [.NET Compiler Platform SDK](roslyn/index.md):
     - The .NET Compiler Platform SDK enables you to write components that analyze code, and suggest or make improvements to that code. In this section, you'll learn how the APIs are organized, and how you can create code that enables rules and practices for your team. You'll also see samples, end to end scenarios, and links to other libraries with more examples using these APIs.
 
-* [Syntax Reference](syntax.md):
+* [Language Reference](language-reference/index.md):
     - This section contains the reference material on the C# language. This material will help you understand the syntax and semantics of C#. 

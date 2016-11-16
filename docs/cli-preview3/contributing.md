@@ -1,10 +1,10 @@
-# Using the current-1.1 folder and sub-folders
+# Using the cli-preview3 folder and sub-folders
 
 This folder is the top-level node that matches the [docs](../welcome.md)
-folder, but contains deltas for the .NET Core 1.1 release.
+folder, but contains deltas for the .NET Core tooling Preview 3 release.
 
 The goal of this separate parallel folder structure is to provide a location
-for the 1.1 release related content that can be relatively easily merged into
+for the Preview 3 release related content that can be relatively easily merged into
 the main structure when provide version switching in the published site.
 
 The content under this node should be a smaller document set that represents
@@ -16,9 +16,9 @@ current release.
 There are two cases to adding new content for this release:
 
 * Changes to existing documents
-    - Copy the existing content into a parallel folder under this structure. Make your changes, and add the modified file to the TOC for the 1.1 preview release.
+    - Copy the existing content into a parallel folder under this structure. Make your changes, and add the modified file to the TOC for the Preview 3 release.
 * New documents
-    - Put the new document in the proper location, and add it to the TOC under the node for the 1.1 preview release. 
+    - Put the new document in the proper location, and add it to the TOC under the node for the Preview 3 release. 
 
 All current release files should have the following added near the
 top of the topic:
@@ -50,4 +50,3 @@ When the time comes, we can merge each current release into the main
 set. We may need to merge modifications to both the LTS version of a file
 and the current release of a file, but we should be able to find those
 changes relatively easily.
-

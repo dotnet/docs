@@ -1,6 +1,6 @@
 # Using the cli-preview3 folder and sub-folders
 
-This folder is the top-level node that matches the [docs](../welcome.md)
+This folder is the top-level node that matches the tools
 folder, but contains deltas for the .NET Core tooling Preview 3 release.
 
 The goal of this separate parallel folder structure is to provide a location
@@ -28,7 +28,7 @@ top of the topic:
 We've created a snippet to include with the following syntax:
 
 ```markdown
-[!include[current release track](../includes/warning.md)]
+[!include[current release track](../../includes/warning.md)]
 ```
 
 ### Link instructions

@@ -188,7 +188,7 @@
 #### [Debugging your C# Hello World application with Visual Studio 2017 RC](csharp/getting-started/debugging-with-visual-studio-2017.md)
 #### [Publishing your Hello World application with Visual Studio 2017 RC](csharp/getting-started/publishing-with-visual-studio-2017.md)
 ### [Building a class library with C# and .NET Core in Visual Studio 2017 RC](csharp/getting-started/library-with-visual-studio-2017.md)
-#### [Testing a class library with .NET Core in Visual Studio 2017 RC](csharp/getting-started/testing-library-with-visual-studio-2017.md)
+#### [Testing a class library with .NET Core in Visual Studio 2017 RC](csharp/getting-started/testing-library-with-visual-studio.md)
 #### [Consuming a class library with .NET Core in Visual Studio 2017 RC](csharp/getting-started/consuming-library-with-visual-studio-2017.md)
 ### [Getting started with Visual Studio 2015](csharp/getting-started/with-visual-studio.md)
 #### [Debugging your Hello World application with Visual Studio 2015](csharp/getting-started/debugging-with-visual-studio.md)

@@ -2,7 +2,7 @@
 
 <!-- Start of .NET Platform Guide -->
 # [.NET Platform Guide](standard/index.md)
-## [Getting Started](standard/getting-started.md)
+## [Getting Started with .NET](standard/getting-started.md)
 ## [Tour of .NET](standard/tour.md)
 ## [.NET Architectural Components](standard/components.md)
 ## [.NET Standard Library](standard/library.md)

@@ -1,0 +1,77 @@
+---
+title: "Compiler Warning (level 2) CS0436 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0436"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0436"
+ms.assetid: c4135d9d-3511-4bbc-9540-48c2091f869c
+caps.latest.revision: 13
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Warning (level 2) CS0436
+The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.  
+  
+ This warning is issued when a type in a source file (file_2) conflicts with an imported type in file _1. The compiler uses the one in the source file.  
+  
+## Example  
+  
+```  
+// CS0436_a.cs  
+// compile with: /target:library  
+public class A {  
+   public void Test() {  
+      System.Console.WriteLine("CS0436_a");  
+   }  
+}  
+```  
+  
+## Example  
+ The following example generates CS0436.  
+  
+```  
+// CS0436_b.cs  
+// compile with: /reference:CS0436_a.dll  
+// CS0436 expected  
+public class A {   
+   public void Test() {  
+      System.Console.WriteLine("CS0436_b");  
+   }  
+}  
+  
+public class Test   
+{  
+   public static void Main()   
+   {  
+      A x = new A();  
+      x.Test();  
+   }  
+}  
+```

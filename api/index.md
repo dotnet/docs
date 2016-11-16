@@ -488,7 +488,7 @@ The following is a list of namespaces in the .NET Core class library. Each names
 <tr>
    <td>@System.Threading </td>
    <td>
-   Provides types that enable multithreaded programming. In addition to classes for synchronizing thread activities and access to data (such as @System.Threading.Mutex, @System.Threading.Monitor, @System.Threading.Interlocked, and @System.Threading.AutoResetEvent), this namespace includes a @System.Threading.ThreadPool class that allows you to use a pool of system-supplied threads, and a @System.Threading.Timer class that executes callback methods on thread pool threads.
+   Provides types that enable multithreaded programming. In addition to classes for synchronizing thread activities and access to data (such as @System.Threading.Mutex, @System.Threading.Monitor, @System.Threading.Interlocked, and [AutoResetEvent](xref:System.Threading.AutoResetEvent)), this namespace includes a @System.Threading.ThreadPool class that allows you to use a pool of system-supplied threads, and a @System.Threading.Timer class that executes callback methods on thread pool threads.
     </td>
 </tr>
 <tr>

@@ -52,8 +52,8 @@ Title | Description
 [When to Use a Thread-Safe Collection](when-to-use-a-thread-safe-collection.md) | Explains when is it appropriate to use a thread-safe collection.
 [How to: Add and Remove Items from a ConcurrentDictionary](how-to-add-and-remove-items.md) | Describes how to add and remove elements from a `ConcurrentDictionary<TKey, TValue>`.
 [How to: Add and Take Items Individually from a BlockingCollection](how-to-add-and-take-items.md) | Describes how to add and retrieve items from a blocking collection without using the read-only enumerator.
-[How to: Add Bounding and Blocking Functionality to a Collection](how-to-add-bounding-and-blocking.md ) | Describes how to use any collection class as the underlying storage mechanism for an `IProducerConsumerCollection<T>;` collection.
-[How to: Use ForEach to Remove Items in a BlockingCollection](how-to-use-foreach-to-remove.md ) | Describes how to use `foreach` to remove all items in a blocking collection.
+[How to: Add Bounding and Blocking Functionality to a Collection](how-to-add-bounding-and-blocking.md) | Describes how to use any collection class as the underlying storage mechanism for an `IProducerConsumerCollection<T>;` collection.
+[How to: Use ForEach to Remove Items in a BlockingCollection](how-to-use-foreach-to-remove.md) | Describes how to use `foreach` to remove all items in a blocking collection.
 [How to: Use Arrays of Blocking Collections in a Pipeline](how-to-use-arrays-of-blockingcollections.md) | Describes how to use multiple blocking collections at the same time to implement a pipeline.
 [How to: Create an Object Pool by Using a ConcurrentBag](how-to-create-an-object-pool.md) | Shows how to use a concurrent bag to improve performance in scenarios where you can reuse objects instead of continually creating new ones.
 

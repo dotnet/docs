@@ -13,7 +13,7 @@ ms.assetid: b77c7263-7cbf-4729-9626-8fbc3f5f14d9
 
 ---
 
-# 🔧 Getting started
+# Getting started
 
 > **Note**
 > 

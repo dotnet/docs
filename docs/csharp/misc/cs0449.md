@@ -1,0 +1,62 @@
+---
+title: "Compiler Error CS0449 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0449"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0449"
+ms.assetid: 32c07a2c-4c48-4d07-b643-72422a6b9fac
+caps.latest.revision: 12
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0449
+The 'class' or 'struct' constraint must come before any other constraints  
+  
+ The constraints on the type parameter of a generic type or method must occur in a specific order: `class` or `struct` must be first, if present, then any interface constraints, and finally any constructor constraints. This error is caused by the `class` or `struct` constraint not appearing first. To resolve this error, reorder the constraint clauses.  
+  
+## Example  
+ The following sample generates CS0449.  
+  
+```  
+// CS0449.cs  
+// compile with: /target:library  
+interface I {}  
+public class C4   
+{  
+   public void F1<T>() where T : class, struct, I {}   // CS0449  
+   public void F2<T>() where T : I, struct {}   // CS0449  
+   public void F3<T>() where T : I, class {}   // CS0449  
+  
+   // OK  
+   public void F4<T>() where T : class {}  
+   public void F5<T>() where T : struct {}  
+   public void F6<T>() where T : I {}  
+}  
+```

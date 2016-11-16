@@ -1,0 +1,1 @@
+        Dim writeMessage = Sub(msg As String) Console.WriteLine(msg)

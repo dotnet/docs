@@ -172,7 +172,7 @@
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
 ### [Porting libraries](core/porting/libraries.md)
 ### [🔧 NuGet packages](core/porting/nuget-packages.md)
-## [Migrating from DNX](core/migrating-from-dnx.md)
+2## [Migrating from DNX](core/migrating-from-dnx.md)
 <!-- End .NET Core Content -->
 
 <!-- .NET Framework Content -->
@@ -185,10 +185,16 @@
 <!-- Start of C# Content -->
 # [C# Guide](csharp/index.md)
 ## [Getting Started](csharp/getting-started/index.md)
-### [Getting started with Visual Studio](csharp/getting-started/with-visual-studio.md)
-#### [Debugging your Hello World application with Visual Studio](csharp/getting-started/debugging-with-visual-studio.md)
-#### [Publishing your Hello World application with Visual Studio](csharp/getting-started/publishing-with-visual-studio.md)
-### [🔧 Getting started with Visual Studio Code and OmniSharp](csharp/getting-started/with-visual-studio-code.md)
+### [Building a C# Hello World application with .NET Core in Visual Studio 2017 RC](csharp/getting-started/with-visual-studio-2017.md)
+#### [Debugging your C# Hello World application with Visual Studio 2017 RC](csharp/getting-started/debugging-with-visual-studio-2017.md)
+#### [Publishing your Hello World application with Visual Studio 2017 RC](csharp/getting-started/publishing-with-visual-studio-2017.md)
+### [Building a class library with C# and .NET Core in Visual Studio 2017 RC](library-with-visual-studio-2017.md)
+#### [Testing a class library with .NET Core in Visual Studio 2017 RC](testing-library-with-visual-studio-2017.md)
+#### [Consuming a class library with .NET Core in Visual Studio 2017](consuming-library-with-visual-studio-2017.md)
+### [Getting started with Visual Studio 2015](csharp/getting-started/with-visual-studio.md)
+#### [Debugging your Hello World application with Visual Studio 2015](csharp/getting-started/debugging-with-visual-studio.md)
+#### [Publishing your Hello World application with Visual Studio 2015](csharp/getting-started/publishing-with-visual-studio.md)
+### [Getting started with Visual Studio Code](csharp/getting-started/with-visual-studio-code.md)
 ### [🔧 Getting started with cross-platform tools](csharp/getting-started/with-cross-platform-tools.md)
 ### [🔧 Getting started with C# Interactive](csharp/getting-started/with-csharp-interactive.md)
 ## [Tutorials](csharp/tutorials/index.md)

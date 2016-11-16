@@ -36,7 +36,7 @@ To begin, create a new folder under the root of your project. `/Model` is chosen
 /NewTypes
 |__/Model
 |__Program.cs
-|__project.json
+|__NewTypes.csproj
 ```
 
 Now add some new types to the folder:
@@ -47,7 +47,7 @@ Now add some new types to the folder:
    |__AccountInformation.cs
    |__MonthlyReportRecords.cs
 |__Program.cs
-|__project.json
+|__NewTypes.csproj
 ```
 
 Now, just as if they were files in the same directory, give them all the same namespace so you can include them in your `Program.cs`.

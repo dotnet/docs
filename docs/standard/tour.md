@@ -23,10 +23,10 @@ See the [.NET Architectural Components](components.md) to learn about each of th
 
 ## How to run the code samples
 
+To learn how to set up a development environment to run the code samples, check out [Getting Started](getting-started.md).  You can copy and paste code samples from this page into your environment to execute them. 
+
 > [!NOTE]
 In the future, this documentation site will have the ability to run these code samples in your browser.
-
-To learn how to set up a development environment to run the code samples, check out [Getting Started](getting-started.md).  You can copy and paste code samples from this page into your environment to execute them. 
 
 ## Programming languages
 
@@ -42,7 +42,7 @@ Microsoft actively develops and supports three .NET languages: C#, F#, and Visua
 
 ## Automatic memory management
 
-.NET uses [garbage collection](garbagecollection/index.md) to provide automatic memory management for programs.  The GC operates on a lazy approach to memory management, preferring application throughput to the immediate collection of memory.  To learn more about the .NET GC, check out [Fundamentals of garbage collection](garbagecollection/fundamentals.md).
+.NET uses [garbage collection](garbagecollection/index.md) to provide automatic memory management for programs.  The GC operates on a lazy approach to memory management, preferring application throughput to the immediate collection of memory.  To learn more about the .NET GC, check out [Fundamentals of garbage collection (GC)](garbagecollection/fundamentals.md).
 
 The following two lines both allocate memory:
 
@@ -54,7 +54,7 @@ Types within a given scope normally go out of scope once a method completes, at 
 
 [!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L6-L9)]
 
-Once the `using` block completes, the GC will know that the `stream` object in the example above is free to be collected and its memory reclaimed.
+Once the `using` block completes, the GC will know that the `stream` object in the previous example is free to be collected and its memory reclaimed.
 
 Rules for this have slightly different semantics in F#.  To learn more about resource management in F#, check out [Resource Management: The `use` Keyword](../fsharp/language-reference/resource-management-the-use-keyword.md)
 
@@ -78,11 +78,11 @@ Type safety is also used to help enforce encapsulation by guaranteeing the fidel
 
 [!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L3-L3)]
 
-C#, Visual Basic, and F# support local **type inference**. Type inference means that the compiler will deduce the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type **has** a strong type with everything that implies. Let's rewrite the first two lines of the previous example to introduce type inference. You will note that the rest of the example is completely the same.
+C#, Visual Basic, and F# support local **type inference**. Type inference means that the compiler will deduce the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type **has** a strong type with everything that implies. Let's rewrite the first two lines of the previous example to introduce type inference. Note that the rest of the example is completely the same.
 
 [!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L28-L34)]
 
-F# has even further type inference capabilities than method-local type inference found in C# and Visual Basic.  To learn more, check out [Type Inferece](../fsharp/language-reference/type-inference.md).
+F# has even further type inference capabilities than method-local type inference found in C# and Visual Basic.  To learn more, check out [Type Inference](../fsharp/language-reference/type-inference.md).
 
 ## Delegates and lambdas
 
@@ -94,11 +94,11 @@ Read more about it in the [Delegates and lambdas](delegates-lambdas.md) document
 
 ## Generics
 
-Generics are a feature that was added in .NET Framework 2.0. In short, generics allow the programmer to introduce a "type parameter" when designing their classes, that will allow the client code (the users of the type) to specify the exact type to use in place of the type parameter.
+Generics are a feature that was added in .NET Framework 2.0. In short, generics allow the programmer to introduce a "type parameter" when designing their classes, that allows the client code (the users of the type) to specify the exact type to use in place of the type parameter.
 
-Generics were added in order to help programmers implement generic data structures. Before their arrival, in order for a, say, _List_ type to be generic, it would have to work with elements that were of type _object_. This would have various performance as well as semantic problems, not to mention possible subtle runtime errors. The most notorious of the latter is when a data structure contains, for instance, both integers and strings, and an _InvalidCastException_ is thrown on working with the list's members.
+Generics were added to help programmers implement generic data structures. Before their arrival, in order for a, say, `List` type to be generic, it would have to work with elements that were of type `object`. This would have various performance as well as semantic problems, not to mention possible subtle runtime errors. The most notorious of the latter is when a data structure contains, for instance, both integers and strings, and an `InvalidCastException` is thrown on working with the list's members.
 
-The below sample shows a basic program running using an instance of @System.Collections.Generic.List%601 types.
+The following sample shows a basic program running using an instance of @System.Collections.Generic.List%601 types.
 
 [!code-csharp[GenericsShort](../../samples/csharp/snippets/tour/GenericsShort.csx)]
 
@@ -140,6 +140,6 @@ If you're interested in a tour of C# features, check out [Tour of C#](../csharp/
 
 If you're interested in a tour of F# features, check out [Tour of F#](../fsharp/tour.md).
 
-If get started with writing code of your own, check out [Getting Started](getting-started.md).
+If you want to get started with writing code of your own, check out [Getting Started](getting-started.md).
 
 To learn about important components of .NET, check out [.NET Concepts](concepts.md).

@@ -15,7 +15,7 @@ ms.assetid: f54d9adf-94f8-41cc-bb52-42f7ca3be6ff
 
 #dotnet-nuget-push
 
-[!INCLUDE[preview-warning](../../includes/warning.md)]
+[!INCLUDE[preview-warning](../../../includes/warning.md)]
 
 ## Name 
 `dotnet-nuget-push` - Pushes a package to the server and publishes it. 

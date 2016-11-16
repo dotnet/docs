@@ -15,15 +15,15 @@ ms.assetid: 81c07080-acdf-4aef-a66d-0ab52fab2c04
 
 # Getting Started
 
-There are a number of ways to get started with .NET.  Because .NET is a large and massive platform, there are multiple articles in this documentation which show how you can get started with .NET, each from a different perspective.
+There are a number of ways to get started with .NET.  Because .NET is a massive platform, there are multiple articles in this documentation which show how you can get started with .NET, each from a different perspective.
 
 ## Getting started using .NET languages
 
-* For C#, the [Getting Started](../csharp/getting-started/index.md) articles and [C# Tutorials](../csharp/tutorials/index.md) provide a number of ways to get started in a C#-centric way.
+* The [C# Getting Started](../csharp/getting-started/index.md) articles and [C# Tutorials](../csharp/tutorials/index.md) provide a number of ways to get started in a C#-centric way.
 
-* For F#, the [Getting Started](../fsharp/tutorials/getting-started/index.md) tutorials provide three primary ways you can use F#: with Visual Studio, Visual Studio Code, or command-line tools.
+* The [F# Getting Started](../fsharp/tutorials/getting-started/index.md) tutorials provide three primary ways you can use F#: with Visual Studio, Visual Studio Code, or command-line tools.
 
-* For Visual Basic, the [Getting Started](../visual-basic/getting-started/index.md) articles provide guides for using Visual Basic in Visual Studio, and provide a number of other learning resources.
+* The [Visual Basic Getting Started](../visual-basic/getting-started/index.md) articles provide guides for using Visual Basic in Visual Studio, and provide a number of other learning resources.
 
 ## Getting started using .NET core
 

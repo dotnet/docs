@@ -16,7 +16,7 @@ ms.assetid: 59b9c456-2bfd-4adc-8202-a1c6a0a6c787
 #dotnet-install scripts reference
 
 ## Name
-dotnet-install.ps1 | dotnet-install.sh - script used to install the Command Line Interface (CLI) tools and the shared runtime
+`dotnet-install.ps1` | `dotnet-install.sh` - Script used to install the Command Line Interface (CLI) tools and the shared runtime.
 
 ## Synopsis
 Windows:

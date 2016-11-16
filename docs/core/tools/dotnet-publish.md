@@ -16,7 +16,7 @@ ms.assetid: 8a7e1c52-5c57-4bf5-abad-727450ebeefd
 
 ## Name
 
-`dotnet-publish` - Packs the application and all of its dependencies into a folder getting it ready for publishing
+`dotnet-publish` - Packs the application and all of its dependencies into a folder getting it ready for publishing.
 
 ## Synopsis
 

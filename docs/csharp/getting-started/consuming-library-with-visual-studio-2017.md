@@ -15,7 +15,7 @@ ms.assetid: d7b94076-1108-4174-94e7-a18f00072bb7
 
 # Consuming a class library with .NET Core in Visual Studio 2017 #
 
-Once you've followed the steps in [Building a C# class library with .NET Core in Visual Studio 2017 RC](./library-with-visual-studio_2017.md) and [Testing a class library with .NET Core in Visual Studio 2017 RC](testing-library-with-visual-studio.md) to build and test your class library, and you've built a Release version of the library, the next step is to make it available to callers. You can do this in two ways:
+Once you've followed the steps in [Building a C# class library with .NET Core in Visual Studio 2017 RC](./library-with-visual-studio-2017.md) and [Testing a class library with .NET Core in Visual Studio 2017 RC](testing-library-with-visual-studio.md) to build and test your class library, and you've built a Release version of the library, the next step is to make it available to callers. You can do this in two ways:
 
 - If the library will be used by a single solution (for example, if it is a component in a single large application), you can simply include it as a project in your solution.
 

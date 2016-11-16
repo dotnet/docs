@@ -7,7 +7,7 @@
 ## [.NET Concepts](standard/concepts.md)
 ## [.NET Standard Library](standard/library.md)
 ## [Frameworks and Targets](standard/frameworks.md)
-## [Choosing between .NET Core and .NET Framework for your server apps](standard/choosing-core-framework-server.md)
+## [Choosing between .NET Core and .NET Framework for server apps](standard/choosing-core-framework-server.md)
 ## [What is "managed code"?](standard/managed-code.md)
 ## [Common Language Runtime (CLR)](standard/clr.md)
 ## [Language Independence](standard/language-independence.md)

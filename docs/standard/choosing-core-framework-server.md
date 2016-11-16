@@ -13,7 +13,7 @@ ms.devlang: dotnet
 ms.assetid: 155553e4-89a2-418d-be88-4e75f6c3cc69
 ---
 
-# Choosing between .NET Core and .NET Framework for your server apps
+# Choosing between .NET Core and .NET Framework for server apps
 
 There are two supported choices of runtime for building server-side applications with .NET: .NET Framework and .NET Core. Both share a lot of the same .NET platform components and you can share code across the two. However, there are fundamental differences between the two and your choice will depend on what you want to accomplish.  This article provides guidance on when to use each.
 
@@ -66,11 +66,11 @@ If you want to be able to install applications with dependencies on different ve
 
 ## When to choose .NET Framework
 
-While .NET Core offers significant benefits for new application patterns, the .NET Framework will continue to be the natural choice for many existing scenarios and as such, it won’t be replaced by .NET Core for all server applications. In general, you should consider using .NET Core because of the benefits provided by it, except in the following cases where .NET Framework is a better match:
+While .NET Core offers significant benefits for new applications and application patterns, the .NET Framework will continue to be the natural choice for many existing scenarios and as such, it won’t be replaced by .NET Core for all server applications.
 
 ### Current .NET Framework applications
 
-In most cases, you won’t need to migrate your existing applications to .NET Core. Instead of that, the natural approach is to embrace .NET Core as you extend your existing applications, such as adopting microservices for new additions to your system. The .NET Framework will continue to be shipped at its current pace, sharing the innovation in areas like the .NET Standard Library, languages, and core components. .NET Framework constraints solved by .NET Core such as cross-platform, modularity, and performance don’t affect existing applications in traditional workloads. You should evaluate .NET Core only if these benefits outperform the cost of a migration.
+In most cases, you won’t need to migrate your existing applications to .NET Core. Instead, a recommended approach is to use .NET Core as you extend an existing application, such as writing a new web service in ASP.NET Core.
 
 ### A need to use third-party .NET libraries or NuGet packages not available for .NET Core
 
@@ -80,23 +80,23 @@ Libraries are quickly embracing .NET Standard, which enables sharing code across
 
 Some .NET Framework technologies are not available in .NET Core. Some of them will be available in later .NET Core releases, but others don’t apply to the new application patterns targeted by .NET Core and may never be available. The following list shows the most common technologies not found in .NET Core 1.0:
 
-* ASP.NET Web Forms applications: ASP.NET Web Forms is only provided by the .NET Framework, so you cannot use ASP.NET Core / .NET Core for this scenario. Currently there are no plans to bring ASP.NET Web Forms to .NET Core.
+* ASP.NET Web Forms applications: ASP.NET Web Forms is only available on the .NET Framework, so you cannot use ASP.NET Core / .NET Core for this scenario. Currently there are no plans to bring ASP.NET Web Forms to .NET Core.
 
-* ASP.NET Web Pages applications: At .NET Core 1.0 release timeframe (June 2016), ASP.NET Web Pages are not included in ASP.NET Core, although it is planned to be included in a future release as explained in the [.NET Core roadmap](https://github.com/aspnet/Home/wiki/Roadmap).
+* ASP.NET Web Pages applications: ASP.NET Web Pages are not included in ASP.NET Core 1.0, although it is planned to be included in a future release as explained in the [.NET Core roadmap](https://github.com/aspnet/Home/wiki/Roadmap).
 
 * ASP.NET SignalR server/client implementation. At .NET Core 1.0 release timeframe (June 2016), ASP.NET SignalR is not available for ASP.NET Core (neither client or server), although it is planned to be included in a future release as explained in the [.NET Core roadmap](https://github.com/aspnet/Home/wiki/Roadmap). Preview state is available at the [Server-side](https://github.com/aspnet/SignalR-Server) and [Client Library](https://github.com/aspnet/SignalR-Client-Net) GitHub repositories.
 
 * WCF services implementation. Even when there’s a [WCF-Client library](https://github.com/dotnet/wcf) to consume WCF services from .NET Core, as of June 2016, WCF server implementation is only available on the .NET Framework. This scenario is not part of the current plan for .NET Core but it’s being considered for the future.
 
-* Workflow related services: WF (Windows Workflow Foundation), Workflow Services (WCF + WF in a single service) and WCF Data Services (formerly known as “ADO.NET Data Services”) are only provided for the .NET Framework and there are no plans currently to bring them to .NET Core.
+* Workflow related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service) and WCF Data Services (formerly known as “ADO.NET Data Services”) are only available on the .NET Framework and there are no plans to bring them to .NET Core.
 
 * Language support: Visual Basic and F# don’t currently have tooling support .NET Core, but both will be supported in Visual Studio 2017 and later versions of Visual Studio.
 
-In addition to the official roadmap, there are other frameworks to be ported to .NET Core - For a full list, take a look at CoreFX issues marked as [port-to-core](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core). Please note that this list doesn’t represent a commitment from Microsoft to bring those components to .NET Core — they are simply capturing the desire from the community to do so. That being said, if you care about any of the components listed above, consider participating in the discussions on GitHub so that your voice can be heard. And if you think something is missing, please [file a new issue](https://github.com/dotnet/corefx/issues/new).
+In addition to the official roadmap, there are other frameworks to be ported to .NET Core - For a full list, take a look at CoreFX issues marked as [port-to-core](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core). Please note that this list doesn’t represent a commitment from Microsoft to bring those components to .NET Core — they are simply capturing the desire from the community to do so. That being said, if you care about any of the components listed above, consider participating in the discussions on GitHub so that your voice can be heard. And if you think something is missing, please [file a new issue in the CoreFX repository](https://github.com/dotnet/corefx/issues/new).
 
 ### A need to use a platform that doesn’t support .NET Core
 
-Some Microsoft or third-party platforms don’t support .NET Core as of November 2016. For example, some Azure services like Service Fabric Stateful Reliable Services, Service Fabric Reliable Actors require .NET Framework. Some other services provide an SDK not available for .NET Core yet. This is a transitional circumstance as all of Azure services embrace .NET Core. In the meanwhile you can always use the equivalent REST API instead of the client SDK.
+Some Microsoft or third-party platforms don’t support .NET Core. For example, some Azure services such as Service Fabric Stateful Reliable Services and Service Fabric Reliable Actors require .NET Framework. Some other services provide an SDK not yet available for consumption on .NET Core. This is a transitional circumstance, as all of Azure services use .NET Core. In the meantime, you can always use the equivalent REST API instead of the client SDK.
 
 ## Further resources
 

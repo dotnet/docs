@@ -184,7 +184,7 @@
 
 <!-- Start of C# Content -->
 # [C# Guide](csharp/index.md)
-## [🔧 Getting Started](csharp/getting-started/index.md)
+## [Getting Started](csharp/getting-started/index.md)
 ### [Getting started with Visual Studio](csharp/getting-started/with-visual-studio.md)
 #### [Debugging your Hello World application with Visual Studio](csharp/getting-started/debugging-with-visual-studio.md)
 #### [Publishing your Hello World application with Visual Studio](csharp/getting-started/publishing-with-visual-studio.md)
@@ -221,7 +221,7 @@
 ### [🔧 Using C# Interactive in Visual Studio](csharp/interactive-with-visualstudio.md)
 ### [🔧 Using C# Interactive from Powershell](csharp/interactive-with-powershell.md)
 ### [🔧 Using C# Interactive from macOS or Linux Terminal](csharp/interactive-with-bash.md)
-## [🔧 C# Concepts](csharp/concepts.md)
+## [C# Concepts](csharp/concepts.md)
 ### [🔧 C# Type system](csharp/type-system.md)
 ### [🔧 Namespaces and Assemblies](csharp/namespaces-and-assemblies.md)
 ### [Basic Types](csharp/basic-types.md)
@@ -229,7 +229,7 @@
 ### [Structs](csharp/structs.md)
 ### [🔧 Tuples and unnamed types](csharp/tuples.md)
 ### [🔧 Interfaces](csharp/interfaces.md)
-### [🔧 Methods and Lambda Expressions](csharp/methods-lambda-expressions.md)
+### [Methods and Lambda Expressions](csharp/methods-lambda-expressions.md)
 #### [🔧 methods](csharp/methods.md)
 #### [🔧 Lambda Expressions](csharp/lambda-expressions.md)
 ### [Properties](csharp/properties.md)

@@ -16,15 +16,15 @@ ms.assetid: be988f09-7349-43b0-97fb-3a703d4587ce
 
 This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.
 
-If you're unfamiliar with the .NET Core CLI toolset, read [the .NET Core SDK overview](../sdk.md).
+If you're unfamiliar with the .NET Core CLI toolset, read [the .NET Core SDK overview](../tools/dotnet.md).
 
 ## Prerequisites
 
-Before you begin, ensure you have the [latest .NET Core CLI tooling](https://www.microsoft.com/net/core).  You'll also need a text editor.
+Before you begin, ensure you have [.NET Core CLI tooling Preview 3 or later](https://github.com/dotnet/cli/releases/tag/v1.0.0-preview3-004056).  You'll also need a text editor.
 
 ## Hello, Console App!
 
-First, navigate to or create a new folder with a name you like.  "Hello" is the name chosen for the sample code, which can be found [here](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Hello).
+First, navigate to or create a new folder with a name you like.  "Hello" is the name chosen for the sample code, which can be found [here](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloMsBuild).
 
 Open up a command prompt and type the following:
 
@@ -131,7 +131,7 @@ Let's do a quick walkthrough:
     Hello .NET!
     ```
 
-    As an advanced scenario, it's possible to build the application as a self-contained set of platform-specific files that can be deployed and run to a machine that doesn't necessarily have .NET Core installed. See [.NET Core Application Deployment](../../cli-preview3/deploying/index.md) for details.
+    As an advanced scenario, it's possible to build the application as a self-contained set of platform-specific files that can be deployed and run to a machine that doesn't necessarily have .NET Core installed. See [.NET Core Application Deployment](../deploying/index.md) for details.
 
 ### Augmenting the program
 
@@ -310,4 +310,4 @@ And that's it!
  
 Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.  The next step is to create awesome console apps of your own!
  
-If a more advanced example of a console app interests you, check out the next tutorial: [Using the CLI tools to write console apps: An advanced step-by-step guide](cli-console-app-tutorial-advanced.md).
+If a more advanced example of a console app interests you, check out the next tutorial: [Organizing and testing projects with the .NET Core command line (SDK Preview 3)](using-with-xplat-cli-msbuild-folders.md).

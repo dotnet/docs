@@ -197,8 +197,7 @@ You'll probably be wanting to test your projects at some point.  Here's a good w
    
 ### Example: Extending the NewTypes project
 
-Now that the project system is in place, you can create your test project and start writing tests! From here on out, this guide will use and extend [the sample Types project](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes). Additionally, it will use the [Xunit](https://xunit.github.io/) test framework. Feel free to follow along or create your own multi-project system with tests.
-
+Now that the project system is in place, you can create your test project and start writing tests! From here on out, this guide will use and extend [the sample Types project](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild). Additionally, it will use the [Xunit](https://xunit.github.io/) test framework. Feel free to follow along or create your own multi-project system with tests.
 
 The whole project structure should look like this:
 

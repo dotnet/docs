@@ -20,7 +20,7 @@ Visual Studio 2017 provides a full-featured development environment for developi
 
 ## Prerequisites
 
-Follow the instructions on [our prerequisites page](../../core/windows-prerequisites.md) to update your environment.
+Follow the instructions on [our prerequisites page](../windows-prerequisites.md) to update your environment.
 
 # A solution using only .NET Core projects
 

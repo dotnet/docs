@@ -2,7 +2,8 @@
 title: .NET Core Tutorials (Tooling Preview 3)
 description: .NET Core Tutorials (Tooling Preview 3)
 keywords: .NET, .NET Core
-author: beleroy
+author: bleroy
+ms.author: mairaw
 manager: wpickett
 ms.date: 06/24/2016
 ms.topic: article

@@ -1,0 +1,1 @@
+                  where cust.City=="London" && cust.Name == "Devon"

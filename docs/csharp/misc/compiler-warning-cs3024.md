@@ -1,0 +1,82 @@
+---
+title: "Compiler Warning CS3024 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS3024"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS3024"
+ms.assetid: fef9db31-9a7f-42d5-ad37-3e7faf661f95
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Warning CS3024
+Constraint type 'type' is not CLS-compliant.  
+  
+ The compiler issues this warning because the use of a non-CLS-compliant type as a generic type constraint could make it impossible for code written in some languages to consume your generic class.  
+  
+### To eliminate this warning  
+  
+1.  Use a CLS-compliant type for the type constraint.  
+  
+## Example  
+ The following example generates CS3024 in several locations:  
+  
+```  
+// cs3024.cs  
+// Compile with: /target:library  
+ [assembly: System.CLSCompliant(true)]  
+  
+[type: System.CLSCompliant(false)]  
+public class TestClass // CS3024  
+{  
+    public ushort us;  
+}  
+[type: System.CLSCompliant(false)]  
+public interface ITest // CS3024  
+{}  
+public interface I<T> where T : TestClass  
+{}  
+public class TestClass_2<T> where T : ITest  
+{}  
+public class TestClass_3<T> : I<T> where T : TestClass  
+{}  
+public class TestClass_4<T> : TestClass_2<T> where T : ITest  
+{}  
+public class Test  
+{  
+    public static int Main()  
+    {  
+        return 0;  
+    }  
+}  
+```  
+  
+## See Also  
+ [Constraints on Type Parameters](../../csharp/programming-guide/generics/constraints-on-type-parameters.md)

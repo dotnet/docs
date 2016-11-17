@@ -1,0 +1,1 @@
+    Event AnEvent(ByVal EventNumber As Integer)

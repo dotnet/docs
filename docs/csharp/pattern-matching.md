@@ -25,3 +25,10 @@ ms.assetid: 1e575c32-2e2b-4425-9dca-7d118f3ed15b
 >
 > Learn more about how you can contribute on [GitHub](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md).
 >
+
+<!--
+
+<< Build the sample in an additive way >>
+<< Do the shape thing for the https://docs.microsoft.com/en-us/dotnet/articles/fsharp/language-reference/discriminated-unions shapes >>
+
+-->

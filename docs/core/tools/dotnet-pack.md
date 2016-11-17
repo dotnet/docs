@@ -16,7 +16,7 @@ ms.assetid: 8b4b8cef-f56c-4a10-aa01-fde8bfaae53e
 
 ## Name
 
-`dotnet-pack` - Packs the code into a NuGet package
+`dotnet-pack` - Packs the code into a NuGet package.
 
 ## Synopsis
 

@@ -14,7 +14,7 @@ ms.assetid: d095b0b6-2454-4e23-80b4-c9e8a447116c
 
 # Automatic memory management and garbage collection
 
-Automatic memory management is one of the services that the Common Language Runtime provides during managed nxecution. The Common Language Runtime's garbage collector manages the allocation and release of memory for an application. For developers, this means that you do not have to write code to perform memory management tasks when you develop managed applications. Automatic memory management can eliminate common problems, such as forgetting to free an object and causing a memory leak, or attempting to access memory for an object that has already been freed. This section describes how the garbage collector allocates and releases memory.
+Automatic memory management is one of the services that the Common Language Runtime provides during managed execution. The Common Language Runtime's garbage collector manages the allocation and release of memory for an application. For developers, this means that you do not have to write code to perform memory management tasks when you develop managed applications. Automatic memory management can eliminate common problems, such as forgetting to free an object and causing a memory leak, or attempting to access memory for an object that has already been freed. This section describes how the garbage collector allocates and releases memory.
 
 ## Allocating Memory
 

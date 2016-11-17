@@ -1,0 +1,69 @@
+---
+title: "Type Conversions in Visual Basic | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "conversions, type"
+  - "data types [Visual Basic], changing"
+  - "variables [Visual Basic], changing data type"
+  - "type conversion"
+  - "conversions, data type"
+  - "changing data types"
+  - "data type conversion"
+ms.assetid: 1cdacd21-ba31-4b62-b5be-395e41eeaa17
+caps.latest.revision: 13
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Type Conversions in Visual Basic
+The process of changing a value from one data type to another type is called *conversion*. Conversions are either *widening* or *narrowing*, depending on the data capacities of the types involved. They are also *implicit* or *explicit*, depending on the syntax in the source code.  
+  
+## In This Section  
+ [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)  
+ Explains conversions classified by whether the destination type can hold the data.  
+  
+ [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
+ Discusses conversions classified by whether [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] performs them automatically.  
+  
+ [Conversions Between Strings and Other Types](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)  
+ Illustrates converting between strings and numeric, `Boolean`, or date/time values.  
+  
+ [How to: Convert an Object to Another Type in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)  
+ Shows how to convert an `Object` variable to any other data type.  
+  
+ [Array Conversions](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)  
+ Steps you through the process of converting between arrays of different data types.  
+  
+## Related Sections  
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+ Introduces the [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] data types and describes how to use them.  
+  
+ [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ Lists the elementary data types supplied by [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+  
+ [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
+ Discusses some common problems that can arise when working with data types.

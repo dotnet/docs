@@ -81,6 +81,7 @@ Build a project and its dependencies in a given directory:
 `dotnet build`
 
 Run a portable app named `myapp.dll`:
+
 `dotnet myapp.dll`
 
 ## Environment 

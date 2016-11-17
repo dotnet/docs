@@ -91,7 +91,7 @@ translation.priority.ht:
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [LINQ (Language-Integrated Query)](.../../../csharp/programming-guide/concepts/linq/index.md)   
+ [LINQ (Language-Integrated Query)](../../../csharp/programming-guide/concepts/linq/index.md)   
  [Walkthrough: Writing Queries in C#](../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)   
  [Basic LINQ Query Operations](../../../csharp/programming-guide/concepts/linq/basic-linq-query-operations.md)   
  [Query Syntax and Method Syntax in LINQ](../../../csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md)   

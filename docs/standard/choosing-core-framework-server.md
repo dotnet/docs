@@ -103,4 +103,4 @@ Some Microsoft or third-party platforms don’t support .NET Core. For example, 
 * [.NET Core Guide](../core/index.md)
 * [Porting from .NET Framework to .NET Core](../core/porting/index.md)
 * [.NET Framework on Docker Guide](../framework/index.md)
-* [.NET Components Overview](concepts.md)
+* [.NET Components Overview](components.md)

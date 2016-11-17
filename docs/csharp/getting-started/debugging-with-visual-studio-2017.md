@@ -119,9 +119,9 @@ Visual Studio also allows us to step line by line through a program and monitor 
 
 1. Choose **Debug**, **Step Into**, or press the F11 key. Visual Studio hightlights the statement that includes the `name` variable assignment. The **Autos** window shows that `name` is `null`, and the console window displays the string "What is your name?".
 
-1. Respond to the prompt by entering a string in the console window and pressing Enter. The console will be unresponsive, and the string you enter won't be displayed in the console window, but the [Console.ReadLine](xref:System.Console.ReadLine()) method will nevertheless capture your input.
+1. Respond to the prompt by entering a string in the console window and pressing Enter. The console will be unresponsive, and the string you enter won't be displayed in the console window, but the [Console.ReadLine](xref:System.Console.ReadLine) method will nevertheless capture your input.
 
-1. Choose **Debug**, **Step Into**, or press the F11 key. Visual Studio highlights the statement that includes the `date` variable assignment. The **Autos** window shows the [DateTime.Now](xref:System.DateTime.Now) property value and the value returned by the call to the [Console.ReadLine](xref:System.Console.ReadLine()) method. The console window also displays the string entered when the console prompted for input.
+1. Choose **Debug**, **Step Into**, or press the F11 key. Visual Studio highlights the statement that includes the `date` variable assignment. The **Autos** window shows the [DateTime.Now](xref:System.DateTime.Now) property value and the value returned by the call to the [Console.ReadLine](xref:System.Console.ReadLine) method. The console window also displays the string entered when the console prompted for input.
 
 1. Choose **Debug**, **Step Into**, or press the F11 key. The **Autos** window now shows the value of the `date` variable after the assignment from the [DateTime.Now](xref:System.DateTime.Now) property. The console window is unchanged.
 

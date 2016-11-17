@@ -20,7 +20,7 @@ If you're unfamiliar with the .NET Core CLI toolset, read [the .NET Core SDK ove
 
 ## Prerequisites
 
-Before you begin, ensure you have [.NET Core CLI tooling Preview 3 or later](https://github.com/dotnet/cli/releases/tag/v1.0.0-preview3-004056).  You'll also need a text editor.
+Before you begin, ensure you have [.NET Core CLI tooling Preview 3 or later](https://github.com/dotnet/core/blob/master/release-notes/preview3-download.md).  You'll also need a text editor.
 
 ## Hello, Console App!
 

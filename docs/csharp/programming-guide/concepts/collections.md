@@ -214,7 +214,7 @@ public class Galaxy
 |<xref:System.Collections.Generic.SortedList%602>|Represents a collection of key/value pairs that are sorted by key based on the associated <xref:System.Collections.Generic.IComparer%601> implementation.|  
 |<xref:System.Collections.Generic.Stack%601>|Represents a last in, first out (LIFO) collection of objects.|  
   
- For additional information, see [Commonly Used Collection Types](../../../standard/collections/commonly-used-collection-types), [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class), and @System.Collections.Generic.  
+ For additional information, see [Commonly Used Collection Types](../../../standard/collections/commonly-used-collection-types.md), [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md), and @System.Collections.Generic.  
   
 <a name="BKMK_Concurrent"></a>
 ### System.Collections.Concurrent Classes  

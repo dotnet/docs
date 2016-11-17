@@ -47,3 +47,6 @@ Many parts of .NET are built by open source contributors. You can contribute to 
 ## Community
 
 You can join other people who are already active in the [.NET community](https://www.microsoft.com/net/community), to find out what's new or ask for help.
+
+## Validate Bug 710885
+<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>

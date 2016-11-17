@@ -34,7 +34,7 @@ For many applications, you want to create and manage groups of related objects. 
  If your collection contains elements of only one data type, you can use one of the classes in the <xref:System.Collections.Generic?displayProperty=fullName> namespace. A generic collection enforces type safety so that no other data type can be added to it. When you retrieve an element from a generic collection, you do not have to determine its data type or convert it.  
   
 > [!NOTE]
->  For the examples in this topic, include[using](../../../csharp/language-reference/keywords/using-directive.md) directives for the `System.Collections.Generic` and `System.Linq` namespaces.  
+>  For the examples in this topic, include [using](../../../csharp/language-reference/keywords/using-directive.md) directives for the @System.Collections.Generic and @System.Linq namespaces.  
   
  **In this topic**  
   
@@ -187,16 +187,16 @@ public class Galaxy
 }  
 ```  
   
-##  <a name="BKMK_KindsOfCollections"></a> Kinds of Collections  
- Many common collections are provided by the .NET Framework. For a complete list, see [collections namespace](System.Collections%20namespaces.xml).  Each type of collection is designed for a specific purpose.  
+##  <a name="BKMK_KindsOfCollections"></a> Kinds of collections  
+ Many common collections are provided by the .NET Framework. Each type of collection is designed for a specific purpose.  
   
  Some of the common collection classes are described in this section:  
   
--   `System.Collections.Generic` classes  
+-   @System.Collections.Generic classes  
   
--   `System.Collections.Concurrent` classes  
+-   @System.Collections.Concurrent classes  
   
--   `System.Collections` classes  
+-   @System.Collections classes  
   
 ###  <a name="BKMK_Generic"></a> System.Collections.Generic Classes  
  You can create a generic collection by using one of the classes in the <xref:System.Collections.Generic> namespace. A generic collection is useful when every item in the collection has the same data type. A generic collection enforces strong typing by allowing only the desired data type to be added.  
@@ -211,12 +211,12 @@ public class Galaxy
 |<xref:System.Collections.Generic.SortedList%602>|Represents a collection of key/value pairs that are sorted by key based on the associated <xref:System.Collections.Generic.IComparer%601> implementation.|  
 |<xref:System.Collections.Generic.Stack%601>|Represents a last in, first out (LIFO) collection of objects.|  
   
- For additional information, see [Commonly Used Collection Types](http://msdn.microsoft.com/library/f5d4c6a4-0d7b-4944-a9fb-3b12d9ebfd55), [Selecting a Collection Class](http://msdn.microsoft.com/library/ba049f9a-ce87-4cc4-b319-3f75c8ddac8a), and <xref:System.Collections.Generic?displayProperty=fullName>.  
+ For additional information, see [Commonly Used Collection Types](../../../standard/collections/commonly-used-collection-types.md), [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class), and <xref:System.Collections.Generic?displayProperty=fullName>.  
   
 ###  <a name="BKMK_Concurrent"></a> System.Collections.Concurrent Classes  
  In the .NET Framework 4 or newer, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads.  
   
- The classes in the <xref:System.Collections.Concurrent> namespace should be used instead of the corresponding types in the <xref:System.Collections.Generic?displayProperty=fullName> and <xref:System.Collections?displayProperty=fullName> namespaces whenever multiple threads are accessing the collection concurrently. For more information, see [Thread-Safe Collections](http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd) and <xref:System.Collections.Concurrent>.  
+ The classes in the <xref:System.Collections.Concurrent> namespace should be used instead of the corresponding types in the <xref:System.Collections.Generic?displayProperty=fullName> and <xref:System.Collections?displayProperty=fullName> namespaces whenever multiple threads are accessing the collection concurrently. For more information, see [Thread-Safe Collections](../../../standard/collections/threadsafe/index.md) and <xref:System.Collections.Concurrent>.  
   
  Some classes included in the <xref:System.Collections.Concurrent> namespace are <xref:System.Collections.Concurrent.BlockingCollection%601>, <xref:System.Collections.Concurrent.ConcurrentDictionary%602>, <xref:System.Collections.Concurrent.ConcurrentQueue%601>, and <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
   
@@ -467,7 +467,7 @@ public class Car : IComparable<Car>
 ##  <a name="BKMK_CustomCollection"></a> Defining a Custom Collection  
  You can define a collection by implementing the <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.IEnumerable> interface. For additional information, see [How to: Access a Collection Class with foreach](../../../csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md).  
   
- Although you can define a custom collection, it is usually better to instead use the collections that are included in the .NET Framework, which are described in [Kinds of Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b) earlier in this topic.  
+ Although you can define a custom collection, it is usually better to instead use the collections that are included in the .NET Framework, which are described in [Kinds of collections](BKMK_KindsOfCollections) earlier in this topic.  
   
  The following example defines a custom collection class named `AllColors`. This class implements the <xref:System.Collections.IEnumerable> interface, which requires that the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method be implemented.  
   

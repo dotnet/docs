@@ -1,4 +1,4 @@
----
+a---
 title: F# Guide
 description: F# Guide 
 keywords: .NET, .NET Core
@@ -14,7 +14,7 @@ ms.assetid: ea27fb37-dad1-4bd4-a3cc-4f5c70767ae9
 
 # F# Guide
 
-F# is a cross-platform, open source programming languge for .NET which provides first-class support for functional programming, along with support of object-oriented and imperative programming.  The Visual F# compiler and tooling are Microsoft's implementation and tooling for the F# programming language, making F# a first-class member of .NET.
+F# is a cross-platform, open source programming language for .NET which provides first-class support for functional programming, along with support of object-oriented and imperative programming.  The Visual F# compiler and tooling are Microsoft's implementation and tooling for the F# programming language, making F# a first-class member of .NET.
 
 ## If You're New to Programming
 

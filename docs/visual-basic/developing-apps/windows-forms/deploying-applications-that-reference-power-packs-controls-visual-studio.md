@@ -1,5 +1,5 @@
 ---
-title: "Deploying Applications That Reference Power Packs Controls (Visual Studio) | Microsoft Docs"
+title: "Deploying applications that reference Power Packs controls (Visual Studio) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -33,10 +33,10 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Deploying Applications That Reference Power Packs Controls (Visual Studio)
+# Deploying applications that reference Power Packs controls (Visual Studio)
 If you want to deploy an application that references the Power Packs controls (<xref:Microsoft.VisualBasic.PowerPacks.LineShape>, <xref:Microsoft.VisualBasic.PowerPacks.OvalShape>, <xref:Microsoft.VisualBasic.PowerPacks.RectangleShape>, or <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>), the controls must be installed on the destination computer.  
   
-## Installing the Power Packs Controls as a Prerequisite  
+## Installing the Power Packs controls as a prerequisite  
  To successfully deploy an application, you must also deploy all components that are referenced by the application. The process of installing prerequisite components is known as *bootstrapping*.  
   
  When [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] is installed on your development computer, a Power Packs bootstrapper package is added to the [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] bootstrapper directory. This package is then available when you follow the procedures for adding prerequisites for either [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)] or Windows Installer deployment.  
@@ -50,8 +50,6 @@ If you want to deploy an application that references the Power Packs controls (<
   
  As an alternative to bootstrapping, you can pre-deploy the Power Packs controls by using an electronic software distribution system such as Microsoft Systems Management Server.  
   
-## See Also  
- [How to: Install Prerequisites in Windows Installer Deployment](http://msdn.microsoft.com/en-us/653fc868-2486-429c-b75e-2f9d0c7f6619)   
+## See also  
  [How to: Install Prerequisites with a ClickOnce Application](http://msdn.microsoft.com/library/e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5)   
- [Not in Build: Choosing a Deployment Strategy](http://msdn.microsoft.com/en-us/ecd632d8-063c-4028-b785-81bba045107b)   
  [Visual Basic Power Packs Controls](../../../visual-basic/developing-apps/windows-forms/power-packs-controls.md)

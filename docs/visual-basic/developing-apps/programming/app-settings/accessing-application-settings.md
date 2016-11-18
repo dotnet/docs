@@ -1,5 +1,5 @@
 ---
-title: "Accessing Application Settings (Visual Basic) | Microsoft Docs"
+title: "Accessing application settings (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Accessing Application Settings (Visual Basic)
+# Accessing application settings (Visual Basic)
 This section contains topics describing the `My.Settings` object and the tasks it enables you to accomplish.  
   
 ## My.Settings  
@@ -52,9 +52,6 @@ This section contains topics describing the `My.Settings` object and the tasks i
 |Save updated user setting values|[How to: Persist User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-persist-user-settings.md)|  
 |Determine the values of user settings|[How to: Read Application Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)|  
   
-## See Also  
- [Managing Application Settings (.NET)](/visualstudio/ide/managing-application-settings-dotnet)   
- [How To: Read Settings at Run Time With C#](http://msdn.microsoft.com/library/dbe8bf09-5e1c-49da-9192-154033d7240b)   
- [How To: Write User Settings at Run Time with C#](http://msdn.microsoft.com/library/9d061c7d-b33b-470f-a36d-edccb1d6f9a3)   
+## See also  
  [Managing Application Settings (.NET)](/visualstudio/ide/managing-application-settings-dotnet)   
  [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md)

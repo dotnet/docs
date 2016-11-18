@@ -281,7 +281,7 @@ the matrix and modify a single element:
 
 [!code-csharp[UpdateItemFromIndices](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#21_UpdateItemFromIndices "Update Item From Indices")]
 
-You'd rather write a methood that returns a *reference*
+You'd rather write a method that returns a *reference*
 to the element of the matrix that you want to change. You could only accomplish
 this by using unsafe code and returning a pointer to an `int` in previous versions.
 

@@ -35,7 +35,7 @@ LINQ can be used to query and transform strings and collections of strings. It c
  [How to: Count Occurrences of a Word in a String (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md)  
  Shows how to use LINQ for simple querying over text.  
   
- [How to: Query for Sentences that Contain a Specified Set of Words (LINQ) (Visual Basic)](http://msdn.microsoft.com/library/12eb44b2-f826-4864-ada0-af154e4267e9)  
+ [How to: Query for Sentences that Contain a Specified Set of Words (LINQ) (Visual Basic)](https://msdn.microsoft.com/library/mt692783.aspx)
  Shows how to split text files on arbitrary boundaries and how to perform queries against each part.  
   
  [How to: Query for Characters in a String (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-query-for-characters-in-a-string-linq.md)  

@@ -107,11 +107,11 @@ Timers can be implemented in F# and hosted on Azure via an [Azure Function in F#
 
 ## Deploying and Managing Azure Resources with F# Scripts #
 
-Azure VMs may be programmatically deployed and managed from F# scripts by using the Microsoft.Azure.Management packages and APIs. For example, see [Get Started with the Management Libraries for .NET](https://msdn.microsoft.com/en-us/library/dn722415.aspx) and [Using Azure Resource Manager](https://azure.microsoft.com/en-us/documentation/articles/resource-manager-deployment-model/).
+Azure VMs may be programmatically deployed and managed from F# scripts by using the Microsoft.Azure.Management packages and APIs. For example, see [Get Started with the Management Libraries for .NET](https://msdn.microsoft.com/en-us/library/dn722415.aspx) and [Using Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-deployment-model).
 
 Likewise, other Azure resources may also be deployed and managed from F# scripts using the same components. For example, you can create storage accounts, deploy Azure Cloud Services, create Azure DocumentDB instances and manage Azure Notifcation Hubs programmatically from F# scripts.
 
-Using F# scripts to deploy and manage resources is not normally necessary. For example, Azure resources may also be deployed directy from JSON template descriptions, which can be parameterized. See [Azure Resource Manager Templates](https://azure.microsoft.com/en-us/documentation/articles/resource-manager-template-best-practices/) including examples such as the [Azure Quickstart Templates](https://azure.microsoft.com/en-us/documentation/templates/).
+Using F# scripts to deploy and manage resources is not normally necessary. For example, Azure resources may also be deployed directy from JSON template descriptions, which can be parameterized. See [Azure Resource Manager Templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-template-best-practices) including examples such as the [Azure Quickstart Templates](https://azure.microsoft.com/en-us/documentation/templates/).
 
 ## Other resources
 

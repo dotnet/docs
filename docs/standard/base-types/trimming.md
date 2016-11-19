@@ -14,19 +14,19 @@ ms.assetid: 95d818bc-2661-43f6-adb8-13b53abf9682
 
 # Trimming and removing characters from strings
 
-If you are parsing a sentence into individual words, you might end up with words that have blank spaces (also called white spaces) on either end of the word. In this situation, you can use one of the trim methods in the [System.String](https://docs.microsoft.com/dotnet/core/api/System.String) class to remove any number of spaces or other characters from a specified position in the string. The following table describes the available trim methods.
+If you are parsing a sentence into individual words, you might end up with words that have blank spaces (also called white spaces) on either end of the word. In this situation, you can use one of the trim methods in the [System.String](xref:System.String) class to remove any number of spaces or other characters from a specified position in the string. The following table describes the available trim methods.
 
 Method name | Use
 ----------- | ---
-[String.Trim](https://docs.microsoft.com/dotnet/core/api/System.String.Trim) | Removes white spaces or characters specified in an array of characters from the beginning and end of a string.
-[String.TrimEnd](https://docs.microsoft.com/dotnet/core/api/System.String.TrimEnd(System.Char[])) | Removes characters specified in an array of characters from the end of a string.
-[String.TrimStart](https://docs.microsoft.com/dotnet/core/api/System.String.TrimStart(System.Char[])) | Removes characters specified in an array of characters from the beginning of a string.
-[String.Remove](https://docs.microsoft.com/dotnet/core/api/System.String.Remove(System.Int32)) | Removes a specified number of characters from a specified index position in a string.
+[String.Trim](xref:System.String.Trim) | Removes white spaces or characters specified in an array of characters from the beginning and end of a string.
+[String.TrimEnd](xref:System.String.TrimEnd(System.Char[])) | Removes characters specified in an array of characters from the end of a string.
+[String.TrimStart](xref:System.String.TrimStart(System.Char[])) | Removes characters specified in an array of characters from the beginning of a string.
+[String.Remove](xref:System.String.Remove(System.Int32)) | Removes a specified number of characters from a specified index position in a string.
 
 
 ## Trim
 
-You can easily remove white spaces from both ends of a string by using the [String.Trim](https://docs.microsoft.com/dotnet/core/api/System.String.Trim) method, as shown in the following example.
+You can easily remove white spaces from both ends of a string by using the [String.Trim](xref:System.String.Trim) method, as shown in the following example.
 
 ```csharp
 string MyString = " Big   ";
@@ -82,7 +82,7 @@ End Module
 
 ## TrimEnd
 
-The [String.TrimEnd](https://docs.microsoft.com/dotnet/core/api/System.String.TrimEnd(System.Char[])) method removes characters from the end of a string, creating a new string object. An array of characters is passed to this method to specify the characters to be removed. The order of the elements in the character array does not affect the trim operation. The trim stops when a character not specified in the array is found.
+The [String.TrimEnd](xref:System.String.TrimEnd(System.Char[])) method removes characters from the end of a string, creating a new string object. An array of characters is passed to this method to specify the characters to be removed. The order of the elements in the character array does not affect the trim operation. The trim stops when a character not specified in the array is found.
 
 The following example removes the last letters of a string using the TrimEnd method. In this example, the position of the `'r'` character and the `'W'` character are reversed to illustrate that the order of characters in the array does not matter. Notice that this code removes the last word of `MyString` plus part of the first.
 
@@ -102,7 +102,7 @@ Console.WriteLine(NewString)
 
 This code displays `He` to the console.
 
-The following example removes the last word of a string using the [TrimEnd](https://docs.microsoft.com/dotnet/core/api/System.String.TrimEnd(System.Char[])) method. In this code, a comma follows the word `Hello` and, because the comma is not specified in the array of characters to trim, the trim ends at the comma.
+The following example removes the last word of a string using the [TrimEnd](xref:System.String.TrimEnd(System.Char[])) method. In this code, a comma follows the word `Hello` and, because the comma is not specified in the array of characters to trim, the trim ends at the comma.
 
 ```csharp
 string MyString = "Hello, World!";
@@ -122,7 +122,7 @@ This code displays `Hello,` to the console.
 
 ## TrimStart
 
-The [String.TrimStart](https://docs.microsoft.com/dotnet/core/api/System.String.TrimStart(System.Char[])) method is similar to the [String.TrimEnd](https://docs.microsoft.com/dotnet/core/api/System.String.TrimEnd(System.Char[])) method except that it creates a new string by removing characters from the beginning of an existing string object. An array of characters is passed to the [TrimStart](https://docs.microsoft.com/dotnet/core/api/System.String.TrimStart(System.Char[])) method to specify the characters to be removed. As with the [TrimEnd](https://docs.microsoft.com/dotnet/core/api/System.String.TrimEnd(System.Char[])) method, the order of the elements in the character array does not affect the trim operation. The trim stops when a character not specified in the array is found.
+The [String.TrimStart](xref:System.String.TrimStart(System.Char[])) method is similar to the [String.TrimEnd](xref:System.String.TrimEnd(System.Char[])) method except that it creates a new string by removing characters from the beginning of an existing string object. An array of characters is passed to the [TrimStart](xref:System.String.TrimStart(System.Char[])) method to specify the characters to be removed. As with the [TrimEnd](xref:System.String.TrimEnd(System.Char[])) method, the order of the elements in the character array does not affect the trim operation. The trim stops when a character not specified in the array is found.
 
 The following example removes the first word of a string. In this example, the position of the `'l'` character and the `'H'` character are reversed to illustrate that the order of characters in the array does not matter.
 
@@ -144,7 +144,7 @@ This code displays `World!` to the console.
 
 ## Remove
 
-The [String.Remove](https://docs.microsoft.com/dotnet/core/api/System.String.Remove(System.Int32)) method removes a specified number of characters that begin at a specified position in an existing string. This method assumes a zero-based index.
+The [String.Remove](xref:System.String.Remove(System.Int32)) method removes a specified number of characters that begin at a specified position in an existing string. This method assumes a zero-based index.
 
 The following example removes ten characters from a string beginning at position five of a zero-based index of the string.
 
@@ -162,7 +162,7 @@ Console.WriteLine(MyString.Remove(5,10))
 '         Hello World!
 ```
 
-You can also remove a specified character or substring from a string by calling the [String.Replace(String, String)](https://docs.microsoft.com/dotnet/core/api/System.String.Replace(System.String,System.String)) method and specifying an empty string ([String.Empty](https://docs.microsoft.com/dotnet/core/api/System.String.Empty)) as the replacement. The following example removes all commas from a string.
+You can also remove a specified character or substring from a string by calling the [String.Replace(String, String)](xref:System.String.Replace(System.String,System.String)) method and specifying an empty string ([String.Empty](xref:System.String.Empty)) as the replacement. The following example removes all commas from a string.
 
 ```csharp
 using System;

@@ -118,7 +118,7 @@ Deploying a framework-dependent deployment with one or more third-party dependen
       </ItemGroup>
     ```
 
-Note that the SDK dependency remains in the above example. This is by design, since this depdendency is required to restore all the needed targets to allow the command line tools to function.  
+ Note that the SDK dependency remains in the above example. This is by design, since this depdendency is required to restore all the needed targets to allow the command line tools to function.  
 
 2. If you haven't already, download the NuGet package containing the third-party dependency. To download the package, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
 
@@ -186,7 +186,7 @@ Deploying a self-contained deployment with no third-party dependencies involves 
     }
     ```
 
-3. Create a `<RuntimeIdentifiers>` tag under the `<PropertyGroup>` section in your `csproj` file that defines the platforms your app targets, and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../../rid-catalog.md) for a list of runtime identifiers. For example, the following `runtimes` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
+3. Create a `<RuntimeIdentifiers>` tag under the `<PropertyGroup>` section in your `csproj` file that defines the platforms your app targets, and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../../rid-catalog.md) for a list of runtime identifiers. For example, the following example indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
 
     ```xml
         <PropertyGroup>
@@ -316,16 +316,14 @@ If the availability of adequate storage space on target systems is likely to be 
 
 To create a self-contained deployment with a smaller footprint, start by following the first two steps for creating a self-contained deployment. Once you've run the `dotnet new` command and added the C# source code to your app, do the following:
 
-1. Open the `csproj` file and replace the `frameworks` section with the following:
+1. Open the `csproj` file and replace the `<TargetFramework>` element with the following:
 
     ```xml
-    <PropertyGroup>
       <TargetFramework>netstandard1.6</TargetFramework>
-  </PropertyGroup>
   ```
 This operation indicates that, instead of using the entire `netcoreapp1.0` framework, which includes .NET Core CLR, the .NET Core Library, and a number of other system components, our app uses only the .NET Standard Library.
 
-2. Replace the `dependencies` section with the following:
+2. Replace the `<ItemGroup>` containing package references with the following:
 
     ```xml
     <ItemGroup>
@@ -356,7 +354,7 @@ This operation indicates that, instead of using the entire `netcoreapp1.0` frame
     ```
     
 
-A complete sample `csproj` file appears later in this section.
+ A complete sample `csproj` file appears later in this section.
 
 4. Run the `dotnet restore` command to restore the dependencies specified in your project.
 
@@ -386,7 +384,7 @@ The following is the complete `csproj` file for this project.
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <TargetFramework>netstandard1.6</TargetFramework>
     <VersionPrefix>1.0.0</VersionPrefix>
     <DebugType>Portable</DebugType>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>

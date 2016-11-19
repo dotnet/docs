@@ -111,6 +111,8 @@ Configuration under which to build. The default value is `Release`.
 
 Directory in which to find the binaries to run.
 
+`-f|--framework [FRAMEWORK]`
+
 Looks for test binaries for a specific framework.
 
 `-r|--runtime [RUNTIME_IDENTIFIER]`
@@ -133,7 +135,7 @@ Run the tests in the project in the current directory:
 
 Run the tests in the test1 project:
 
-`dotnet test /projects/test1/test1.csproj` 
+`dotnet test ~/projects/test1/test1.csproj` 
 
 ## See also
 

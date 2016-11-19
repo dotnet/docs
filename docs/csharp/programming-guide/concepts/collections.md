@@ -34,7 +34,7 @@ For many applications, you want to create and manage groups of related objects. 
  If your collection contains elements of only one data type, you can use one of the classes in the <xref:System.Collections.Generic?displayProperty=fullName> namespace. A generic collection enforces type safety so that no other data type can be added to it. When you retrieve an element from a generic collection, you do not have to determine its data type or convert it.  
   
 > [!NOTE]
->  For the examples in this topic, include[using](../../../csharp/language-reference/keywords/using-directive.md) directives for the `System.Collections.Generic` and `System.Linq` namespaces.  
+>  For the examples in this topic, include [using](../../../csharp/language-reference/keywords/using-directive.md) directives for the `System.Collections.Generic` and `System.Linq` namespaces.  
   
  **In this topic**  
   
@@ -190,15 +190,15 @@ public class Galaxy
 
 <a name="BKMK_KindsOfCollections"></a>
 ## Kinds of Collections 
- Many common collections are provided by the .NET Framework. For a complete list, see [collections namespace](System.Collections%20namespaces.xml).  Each type of collection is designed for a specific purpose.  
+ Many common collections are provided by the .NET Framework. Each type of collection is designed for a specific purpose.  
   
  Some of the common collection classes are described in this section:  
   
--   `System.Collections.Generic` classes  
+-   @System.Collections.Generic classes  
   
--   `System.Collections.Concurrent` classes  
+-   @System.Collections.Concurrent classes  
   
--   `System.Collections` classes  
+-   @System.Collections classes  
   
 <a name="BKMK_Generic"></a>
 ### System.Collections.Generic Classes  
@@ -214,13 +214,13 @@ public class Galaxy
 |<xref:System.Collections.Generic.SortedList%602>|Represents a collection of key/value pairs that are sorted by key based on the associated <xref:System.Collections.Generic.IComparer%601> implementation.|  
 |<xref:System.Collections.Generic.Stack%601>|Represents a last in, first out (LIFO) collection of objects.|  
   
- For additional information, see [Commonly Used Collection Types](http://msdn.microsoft.com/library/f5d4c6a4-0d7b-4944-a9fb-3b12d9ebfd55), [Selecting a Collection Class](http://msdn.microsoft.com/library/ba049f9a-ce87-4cc4-b319-3f75c8ddac8a), and <xref:System.Collections.Generic?displayProperty=fullName>.  
+ For additional information, see [Commonly Used Collection Types](../../../standard/collections/commonly-used-collection-types.md), [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md), and @System.Collections.Generic.  
   
 <a name="BKMK_Concurrent"></a>
 ### System.Collections.Concurrent Classes  
  In the .NET Framework 4 or newer, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads.  
   
- The classes in the <xref:System.Collections.Concurrent> namespace should be used instead of the corresponding types in the <xref:System.Collections.Generic?displayProperty=fullName> and <xref:System.Collections?displayProperty=fullName> namespaces whenever multiple threads are accessing the collection concurrently. For more information, see [Thread-Safe Collections](http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd) and <xref:System.Collections.Concurrent>.  
+ The classes in the <xref:System.Collections.Concurrent> namespace should be used instead of the corresponding types in the <xref:System.Collections.Generic?displayProperty=fullName> and <xref:System.Collections?displayProperty=fullName> namespaces whenever multiple threads are accessing the collection concurrently. For more information, see [Thread-Safe Collections](../../../standard/collections/threadsafe/index.md) and <xref:System.Collections.Concurrent>.  
   
  Some classes included in the <xref:System.Collections.Concurrent> namespace are <xref:System.Collections.Concurrent.BlockingCollection%601>, <xref:System.Collections.Concurrent.ConcurrentDictionary%602>, <xref:System.Collections.Concurrent.ConcurrentQueue%601>, and <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
   
@@ -594,9 +594,9 @@ private static IEnumerable<int> EvenSequence(
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
  [LINQ to Objects (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)   
  [Parallel LINQ (PLINQ)](http://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)   
- [Collections and Data Structures](http://msdn.microsoft.com/library/60cc581f-1db5-445b-ba04-a173396bf872)   
+ [Collections and Data Structures](../../../standard/collections/index.md)   
  [Creating and Manipulating Collections](http://msdn.microsoft.com/en-us/2065398e-eb1a-4821-9188-75f16e42e069)   
- [Selecting a Collection Class](http://msdn.microsoft.com/library/ba049f9a-ce87-4cc4-b319-3f75c8ddac8a)   
- [Comparisons and Sorts Within Collections](http://msdn.microsoft.com/library/5e4d3b45-97f0-423c-a65f-c492ed40e73b)   
- [When to Use Generic Collections](http://msdn.microsoft.com/library/e7b868b1-11fe-4ac5-bed3-de68aca47739)   
+ [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)   
+ [Comparisons and Sorts Within Collections](../../../standard/collections/comparisons-and-sorts-within-collections.md)   
+ [When to Use Generic Collections](../../../standard/collections/when-to-use-generic-collections.md)   
  [How to: Access a Collection Class with foreach](../../../csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md)

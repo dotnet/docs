@@ -47,7 +47,7 @@ translation.priority.ht:
 # Walkthrough: Manipulating Files by Using .NET Framework Methods (Visual Basic)
 This walkthrough demonstrates how to open and read a file using the <xref:System.IO.StreamReader> class, check to see if a file is being accessed, search for a string within a file read with an instance of the <xref:System.IO.StreamReader> class, and write to a file using the <xref:System.IO.StreamWriter> class.  
   
- [!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
 ## Creating the Application  
  Start [!INCLUDE[vsprvs](../../../../csharp/includes/vsprvs_md.md)] and begin the project by creating a form that the user can use to write to the designated file.  

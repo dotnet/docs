@@ -44,7 +44,7 @@ Interfaces describe the characteristics of properties, methods, and events, but 
 > [!NOTE]
 >  This walkthrough doesn't provide information about how to create a user interface.  
   
- [!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
 ### To define an interface  
   

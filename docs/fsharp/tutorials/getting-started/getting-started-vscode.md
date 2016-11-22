@@ -103,7 +103,7 @@ To create a new F# project, open Visual Studio Code in a new directory (you can 
 >f#: New Project
 ```
 
-This is powered by the [FORGE](https://github.com/fsprojects/Forge) project.  You should see something like this:
+This is powered by the [FORGE](https://github.com/fsharp-editing/Forge) project.  You should see something like this:
 
 ![](media/getting-started-vscode/vscode-new-proj.png)
 

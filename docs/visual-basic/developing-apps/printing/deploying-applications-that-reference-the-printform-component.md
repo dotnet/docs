@@ -1,5 +1,5 @@
 ---
-title: "Deploying Applications That Reference the PrintForm Component (Visual Basic) | Microsoft Docs"
+title: "Deploying applications that reference the PrintForm component (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -34,12 +34,12 @@ translation.priority.mt:
   - "pt-br"
   - "tr-tr"
 ---
-# Deploying Applications That Reference the PrintForm Component (Visual Basic)
+# Deploying applications that reference the PrintForm component (Visual Basic)
 If you want to deploy an application that references the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component, the component must be installed on the destination computer.  
   
  The PowerPack controls are no longer included in Visual Studio, but you can download them from the [Download Center](http://www.microsoft.com/en-us/download/details.aspx?id=25169).  
   
-## Installing the PrintForm as a Prerequisite  
+## Installing the PrintForm as a prerequisite  
  To successfully deploy an application, you must also deploy all components that are referenced by the application. The process of installing prerequisite components is known as *bootstrapping*.  
   
  When the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component is installed on your development computer, a Microsoft Visual Basic Power Packs bootstrapper package is added to the [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] bootstrapper directory. This package is then available when you follow the procedures for adding prerequisites for either [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)] or Windows Installer deployment.  
@@ -53,7 +53,6 @@ If you want to deploy an application that references the <xref:Microsoft.VisualB
   
  As an alternative to bootstrapping, you can pre-deploy the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component by using an electronic software distribution system like Microsoft Systems Management Server.  
   
-## See Also  
+## See also  
  [How to: Install Prerequisites with a ClickOnce Application](http://msdn.microsoft.com/library/e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5)   
- [Not in Build: Choosing a Deployment Strategy](http://msdn.microsoft.com/en-us/ecd632d8-063c-4028-b785-81bba045107b)   
  [PrintForm Component](../../../visual-basic/developing-apps/printing/printform-component.md)

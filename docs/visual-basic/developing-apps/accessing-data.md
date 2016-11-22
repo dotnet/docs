@@ -1,5 +1,5 @@
 ---
-title: "Accessing Data in Visual Basic Applications | Microsoft Docs"
+title: "Accessing data in Visual Basic applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -34,10 +34,10 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Accessing Data in Visual Basic Applications
-[!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] includes several new features to assist in developing applications that access data. Data-bound forms for Windows applications are created by dragging items from the [Data Sources Window](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio) onto the form. You bind controls to data by dragging items from the **Data Sources Window** onto existing controls.  
+# Accessing data in Visual Basic applications
+[!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] includes several new features to assist in developing applications that access data.  
   
-## Related Sections  
+## Related sections  
  [Creating Data Applications](/visualstudio/data-tools/creating-data-applications)  
  Provides links to pages that discuss incorporating data access functionality into your applications.
 
@@ -76,6 +76,4 @@ translation.priority.ht:
   
  [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx)  
  Describes the ADO.NET classes, which expose data-access services to the .NET Framework programmer.  
-  
- [Data in Office Solutions](/office-dev/office-dev/data-in-office-solutions)  
- Contains links to pages that explain how data works in Office solutions, including information about schema-oriented programming, data caching, and server-side data access.
+ 

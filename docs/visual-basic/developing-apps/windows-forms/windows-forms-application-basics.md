@@ -90,7 +90,7 @@ An important part of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concept
 |--------|---------|  
 |Use the <xref:System.Windows.Forms.BindingSource> component|[How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](https://msdn.microsoft.com/library/801dxw2t.aspx)|  
 |Work with [!INCLUDE[vstecado](../../../csharp/programming-guide/concepts/linq/includes/vstecado_md.md)] data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](https://msdn.microsoft.com/library/ya3sah92.aspx)|  
-|Use the Data Sources window|[Walkthrough: Displaying Data on a Windows Form](/visualstudio/data-tools/accessing-data-in-visual-studio)|  
+|Use the Data Sources window|[Walkthrough: Displaying Data on a Windows Form](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio)|  
   
 ## Deploying Applications to Client Computers  
  Once you have written your application, you must send it to your users so that they can install and run it on their own client computers. Using the [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)] technology, you can deploy your applications from within [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] by using just a few clicks and provide users with a URL pointing to your application on the Web. [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)] manages all of the elements and dependencies in your application and ensures that the application is properly installed on the client computer.  
@@ -99,13 +99,13 @@ An important part of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concept
   
  When you update your application, you publish a new deployment manifest and a new copy of your application to your Web server. [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)] detects that there is an update available and upgrades the user's installation; no custom programming is required to update old assemblies.  
   
- For a full introduction to [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)], see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment). For step-by-step information about using these features, see the following Help topics:  
+ For a full introduction to [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)], see [ClickOnce Security and Deployment](https://docs.microsoft.com/visualstudio/deployment/clickonce-security-and-deployment). For step-by-step information about using these features, see the following Help topics:  
   
 |To|See|  
 |--------|---------|  
-|Deploy an application with [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)]|[How to: Publish a ClickOnce Application using the Publish Wizard](/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard)<br /><br /> [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)|  
-|Update a [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)] deployment|[How to: Manage Updates for a ClickOnce Application](/visualstudio/deployment/how-to-manage-updates-for-a-clickonce-application)|  
-|Manage security with [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)]|[How to: Enable ClickOnce Security Settings](/visualstudio/deployment/how-to-enable-clickonce-security-settings)|  
+|Deploy an application with [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)]|[How to: Publish a ClickOnce Application using the Publish Wizard](https://docs.microsoft.com/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard)<br /><br /> [Walkthrough: Manually Deploying a ClickOnce Application](https://docs.microsoft.com/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)|  
+|Update a [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)] deployment|[How to: Manage Updates for a ClickOnce Application](https://docs.microsoft.com/visualstudio/deployment/how-to-manage-updates-for-a-clickonce-application)|  
+|Manage security with [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)]|[How to: Enable ClickOnce Security Settings](https://docs.microsoft.com/visualstudio/deployment/how-to-enable-clickonce-security-settings)|  
   
 ## Other Controls and Features  
  There are many other features in Windows Forms that make implementing common tasks fast and easy, such as support for creating dialog boxes, printing, adding Help and documentation, and localizing your application to multiple languages. In addition, Windows Forms relies on the robust security system of the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)], enabling you to release more secure applications to your customers.  

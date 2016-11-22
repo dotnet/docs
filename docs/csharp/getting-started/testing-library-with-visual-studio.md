@@ -35,11 +35,11 @@ To create the unit test project, do the following:
 
    The source code created by the unit test template does the following:
 
-   - It imports the [Microsoft.VisualStudio.TestTools.UnitTesting](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.aspx) namespace, which contains the types used for unit testing.
+   - It imports the [Microsoft.VisualStudio.TestTools.UnitTesting](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.aspx) namespace, which contains the types used for unit testing.
 
-   - It applies the [\[TestClass\]](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.testclassattribute.aspx) attribute to the `TestClass1` class. Each test method in a test class tagged with the \[TestMethod\] attribute will be executed automatically when the unit test is run.
+   - It applies the [\[TestClass\]](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.testclassattribute.aspx) attribute to the `TestClass1` class. Each test method in a test class tagged with the \[TestMethod\] attribute will be executed automatically when the unit test is run.
 
-   - It applies the [\[TestMethod\]](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.testmethodattribute.aspx) attribute to define `TestMethod1` as a test method to be automatically executed when the unit test is run.
+   - It applies the [\[TestMethod\]](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.testmethodattribute.aspx) attribute to define `TestMethod1` as a test method to be automatically executed when the unit test is run.
 
 1. In Solution Explorer, open the context menu for the **Dependencies** node of the **StringLibraryTest** project and choose **Add Reference**. This adds a reference to our class library project, `StringLibrary`. 
 
@@ -51,9 +51,9 @@ To create the unit test project, do the following:
 
 ## Adding and running unit test methods ##
 
-When Visual Studio runs a unit test, it executes each method marked with the [\[TestMethod\]](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.testmethodattribute.aspx) attribute in a unit test class (the class to which the  [\[TestClass\]](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.testclassattribute.aspx) attribute is applied. A test method ends when the first failure is encountered, or when all tests contained in the method have succeeded.
+When Visual Studio runs a unit test, it executes each method marked with the [\[TestMethod\]](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.testmethodattribute.aspx) attribute in a unit test class (the class to which the  [\[TestClass\]](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.testclassattribute.aspx) attribute is applied. A test method ends when the first failure is encountered, or when all tests contained in the method have succeeded.
 
-The most common tests call members of the [Assert](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.assert.aspx) class. Many assert methods include at least two parameters, one of which is the expected test result and the other of which is the actual test result. Some of its most frequently called methods include:
+The most common tests call members of the [Assert](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.assert.aspx) class. Many assert methods include at least two parameters, one of which is the expected test result and the other of which is the actual test result. Some of its most frequently called methods include:
 
 - `Assert.AreEqual`, which verifies that two values or objects are equal. The assert fails if the values or objects are not equal.
 
@@ -63,13 +63,13 @@ The most common tests call members of the [Assert](https://msdn.microsoft.com/en
 
 - `Assert.IsNotNull`, which verifies that an object is not `null`. The assert fails if the object is `null`.
 
-In addition, the [\[ExpectedException\]](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.expectedexceptionattribute.aspx) attribute can be used to indicate the type of exception a test method is expected to throw. You use it to test conditions that should result in an exception. The test fails if the specified exception is not thrown.
+In addition, the [\[ExpectedException\]](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.expectedexceptionattribute.aspx) attribute can be used to indicate the type of exception a test method is expected to throw. You use it to test conditions that should result in an exception. The test fails if the specified exception is not thrown.
 
-In testing the `StringLibrary.StartsWithUpper` method, we want to provide a number of strings that begin with an uppercase character. We expect the method to return `True` in these cases, so we can call the [Assert.IsTrue(Boolean, String)](https://msdn.microsoft.com/en-us/library/ms243754.aspx) method. Similarly, we want to provide a number of strings that begin with something other than an uppercase character. We expect the method to return False in these cases, so we can call the [Assert.IsFalse(Boolean, String)](https://msdn.microsoft.com/en-us/library/ms243805.aspx) method.
+In testing the `StringLibrary.StartsWithUpper` method, we want to provide a number of strings that begin with an uppercase character. We expect the method to return `True` in these cases, so we can call the [Assert.IsTrue(Boolean, String)](https://msdn.microsoft.com/library/ms243754.aspx) method. Similarly, we want to provide a number of strings that begin with something other than an uppercase character. We expect the method to return False in these cases, so we can call the [Assert.IsFalse(Boolean, String)](https://msdn.microsoft.com/library/ms243805.aspx) method.
 
 Since our library method handles strings, we also want to make sure that it successfully handles an [empty string](xref:System.String.Empty) (a valid string that has no characters and whose @System.String.Length is 0) and a `null` string (a string that has not been initialized). If `StartsWithUpper` is called as an extension method on a @System.String instance, it cannot be passed a `null` string. However, it can also be called directly as a static method and passed a single @System.String argument.
 
-We'll define three methods, each of which calls its [Assert](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.assert.aspx) method repeatedly for each element in a string array. Because the test method fails as soon as it encounters the first failure, we'll call a method overload that allows us to pass a string that indicates the string value used in the method call.
+We'll define three methods, each of which calls its [Assert](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.assert.aspx) method repeatedly for each element in a string array. Because the test method fails as soon as it encounters the first failure, we'll call a method overload that allows us to pass a string that indicates the string value used in the method call.
 
 To create the the test methods:
 

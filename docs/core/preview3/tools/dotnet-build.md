@@ -28,7 +28,7 @@ dotnet-build -- Builds a project and all of its dependencies
 
 The `dotnet build` command builds multiple source file from a source project and its dependencies into a binary. 
 By default, the resulting binary is in Intermediate Language (IL) and has a DLL extension. 
-`dotnet build` also drops a `\*.deps` file which outlines what the host needs to run the application.  
+`dotnet build` also drops a `*.deps` file which outlines what the host needs to run the application.  
 
 Building requires the existence of an asset file (a file that lists all of the dependencies of your application), which 
 means that you have to run [`dotnet restore`](dotnet-restore.md) prior to building your code.

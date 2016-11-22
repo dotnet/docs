@@ -75,12 +75,12 @@ API, here is a console application's project file that uses that tool:
     </PackageReference>
   </ItemGroup>
 
-   <!-- The tools reference -->
-   <ItemGroup>
+  <!-- The tools reference -->
+  <ItemGroup>
     <DotNetCliToolReference Include="dotnet-api-search">
-        <Version></Version>
+      <Version></Version>
     </DotNetCliToolReference>
-    </ItemGroup>
+  </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

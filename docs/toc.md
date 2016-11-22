@@ -261,7 +261,7 @@
 ### [🔧 Tuples and unnamed types](csharp/tuples.md)
 ### [🔧 Interfaces](csharp/interfaces.md)
 ### [Methods and Lambda Expressions](csharp/methods-lambda-expressions.md)
-#### [🔧 methods](csharp/methods.md)
+#### [🔧 Methods](csharp/methods.md)
 #### [🔧 Lambda Expressions](csharp/lambda-expressions.md)
 ### [Properties](csharp/properties.md)
 ### [Indexers](csharp/indexers.md)
@@ -292,10 +292,6 @@
 ### [🔧 Reflection & code generation](csharp/reflection.md)
 ### [Documenting your code](csharp/codedoc.md) 
 ## [🔧 Using the .NET Compiler Platform](csharp/roslyn/index.md)
-## [Language Reference](csharp/language-reference/index.md)
-<!--
-    The C# Reference section can be ported from here: 
-    https://msdn.microsoft.com/en-us/library/618ayhy6.aspx
 
 ## [C# Programming Guide](csharp/programming-guide/index.md)
 ### [Inside a C# Program](csharp/programming-guide/inside-a-program/index.md)

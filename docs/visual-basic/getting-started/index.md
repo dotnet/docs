@@ -70,7 +70,7 @@ This section of the documentation helps you get started with Visual Basic applic
  [C#](../../csharp/csharp.md)  
  Provides links into the documentation on application development with [!INCLUDE[csprcs](../../csharp/includes/csprcs_md.md)].  
   
- [Visual C++](https://docs.microsoft.com/cpp/top/visual-cpp-in-visual-studio-2015)  
+ [Visual C++](https://docs.microsoft.com/cpp/)  
  Provides links into the Visual C++ documentation.  
   
  [Office and SharePoint Development](https://msdn.microsoft.com/library/d2tx7z6d)  

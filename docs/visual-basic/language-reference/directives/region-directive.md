@@ -67,5 +67,5 @@ Collapses and hides sections of code in Visual Basic files.
   
 ## See Also  
  [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)   
- [Outlining](/visualstudio/ide/outlining)   
+ [Outlining](https://docs.microsoft.com/visualstudio/ide/outlining)   
  [How to: Collapse and Hide Sections of Code](../../../visual-basic/programming-guide/program-structure/how-to-collapse-and-hide-sections-of-code.md)

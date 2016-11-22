@@ -24,9 +24,8 @@ dotnet-msbuild -- Builds a project and all of its dependencies
 ## Description
 The `dotnet msbuild` command allows access to a fully functional MSBuild 
 
-The command has the exact same capabilities as existing MSBuild command line client. The options are all the same. You can 
-use the [existing documentation](https://msdn.microsoft.com/en-us/library/ms164311.aspx) to get familiar with the command 
-reference. 
+The command has the exact same capabilities as existing MSBuild command-line client. The options are all the same. You can 
+use the [MSBuild Command-Line Reference](https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference) to get familiar with the options. 
 
 ## Examples
 

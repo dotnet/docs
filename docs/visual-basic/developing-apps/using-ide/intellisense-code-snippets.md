@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Visual Basic IntelliSense Code Snippets
-[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] includes a code library consisting of several hundred pieces of code, called IntelliSense code snippets, that are ready to be inserted in your application. Each snippet performs a complete programming task such as creating a custom exception, sending an e-mail message, or drawing a circle. You can insert a snippet into your source code with a few mouse clicks. You can also create your own snippets that suit your business needs, add them to the library, and then use them when needed. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
+[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] includes a code library consisting of several hundred pieces of code, called IntelliSense code snippets, that are ready to be inserted in your application. Each snippet performs a complete programming task such as creating a custom exception, sending an e-mail message, or drawing a circle. You can insert a snippet into your source code with a few mouse clicks. You can also create your own snippets that suit your business needs, add them to the library, and then use them when needed. For more information, see [Code Snippets](https://docs.microsoft.com/visualstudio/ide/code-snippets).  
   
 ## A Productivity Tool for Visual Basic Users  
  These snippets increase your productivity by reducing the amount of time you spend looking for code samples, by reducing the time required to learn to use an unfamiliar feature, and by supporting the reuse of code.  
@@ -60,4 +60,4 @@ translation.priority.ht:
 -   You can drag the XML code files from **File Explorer** onto your source-code file.  
   
 ## See Also  
- [Code Snippets](/visualstudio/ide/code-snippets)
+ [Code Snippets](https://docs.microsoft.com/visualstudio/ide/code-snippets)

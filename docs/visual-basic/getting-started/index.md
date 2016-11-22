@@ -61,7 +61,7 @@ This section of the documentation helps you get started with Visual Basic applic
  [Walkthroughs](../../visual-basic/walkthroughs.md)  
  Provides a list of Help pages that demonstrate aspects of the [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language.  
   
- [Talk to Us](/visualstudio/ide/talk-to-us)  
+ [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)  
  Covers how to receive support and give feedback.  
   
  [Visual Studio](http://msdn.microsoft.com/en-us/06ddebea-2c83-4a45-bb48-6264c797ed93)  
@@ -70,8 +70,8 @@ This section of the documentation helps you get started with Visual Basic applic
  [C#](../../csharp/csharp.md)  
  Provides links into the documentation on application development with [!INCLUDE[csprcs](../../csharp/includes/csprcs_md.md)].  
   
- [Visual C++](/cpp/top/visual-cpp-in-visual-studio-2015)  
+ [Visual C++](https://docs.microsoft.com/cpp/)  
  Provides links into the Visual C++ documentation.  
   
- [Office and SharePoint Development](/office-dev/office-dev/office-and-sharepoint-development-in-visual-studio)  
+ [Office and SharePoint Development](https://msdn.microsoft.com/library/d2tx7z6d)  
  Provides information about using Microsoft Office and [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)] as part of a business application.

@@ -13,7 +13,6 @@ ms.devlang: dotnet
 
 # High level overview of changes in CLI Preview 3
 
-## Overview
 This document will describe in high-level the changes that moving from `project.json` to MSBuild and `csproj` project system bring. It will outline the new way the tooling is layered all-up and which new pieces are available and what is their place in the overall picture. After reading this article, you should have a better understanding of all of the pieces that make up .NET Core tooling after moving to MSBuild and `csproj`. 
 
 > [!NOTE]

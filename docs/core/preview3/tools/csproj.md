@@ -15,7 +15,6 @@ ms.assetid: bdc29497-64f2-4d11-a21b-4097e0bdf5c9
 
 # Additions to csproj format for .NET Core
 
-## Overview 
 This document outlines the changes that were added to the csproj files as part of the move from project.json to csproj and 
 [MSBuild](https://github.com/Microsoft/MSBuild). This document outlines **only the deltas to non-core csproj files**. If 
 you need more information about general project file syntax and reference, please consult [the MSBuild project file]() documentation. 
@@ -46,17 +45,17 @@ consumed.
 
 The element can contain one or more of the following values:
 
-* Compile – are the contents of the lib folder available to compile against
-* Runtime – are the contents of the runtime folder distributed
-* ContentFiles – are the contents of the contentfiles folder used
-* Build – do the props/targets in the build folder get used
-* Native – are the contents from native assets copied to the output folder for runtime
-* Analyzers – do the analyzers get used
+* Compile â€“ are the contents of the lib folder available to compile against
+* Runtime â€“ are the contents of the runtime folder distributed
+* ContentFiles â€“ are the contents of the contentfiles folder used
+* Build â€“ do the props/targets in the build folder get used
+* Native â€“ are the contents from native assets copied to the output folder for runtime
+* Analyzers â€“ do the analyzers get used
 
 Alternatively, the element can contain:
 
-* None – none of those things get used
-* All – all of those things get used.
+* None â€“ none of those things get used
+* All â€“ all of those things get used.
 
 #### ExcludeAssets
 `<ExcluseAssets>` child element specifies what assets belonging to the package specified by parent `<PackageReference>` should not 
@@ -64,17 +63,17 @@ be consumed.
 
 The element can contain one or more of the following values:
 
-* Compile – are the contents of the lib folder available to compile against
-* Runtime – are the contents of the runtime folder distributed
-* ContentFiles – are the contents of the contentfiles folder used
-* Build – do the props/targets in the build folder get used
-* Native – are the contents from native assets copied to the output folder for runtime
-* Analyzers – do the analyzers get used
+* Compile â€“ are the contents of the lib folder available to compile against
+* Runtime â€“ are the contents of the runtime folder distributed
+* ContentFiles â€“ are the contents of the contentfiles folder used
+* Build â€“ do the props/targets in the build folder get used
+* Native â€“ are the contents from native assets copied to the output folder for runtime
+* Analyzers â€“ do the analyzers get used
 
 Alternatively, the element can contain:
 
-* None – none of those things get used
-* All – all of those things get used.
+* None â€“ none of those things get used
+* All â€“ all of those things get used.
 
 #### PrivateAssets
 `<PrivateAssets>` child element specifies what assets belonging to the package specified by parent `<PackageReference>` should be 
@@ -85,17 +84,17 @@ consumed but that they should not flow to the next project.
 
 The element can contain one or more of the following values:
 
-* Compile – are the contents of the lib folder available to compile against
-* Runtime – are the contents of the runtime folder distributed
-* ContentFiles – are the contents of the contentfiles folder used
-* Build – do the props/targets in the build folder get used
-* Native – are the contents from native assets copied to the output folder for runtime
-* Analyzers – do the analyzers get used
+* Compile â€“ are the contents of the lib folder available to compile against
+* Runtime â€“ are the contents of the runtime folder distributed
+* ContentFiles â€“ are the contents of the contentfiles folder used
+* Build â€“ do the props/targets in the build folder get used
+* Native â€“ are the contents from native assets copied to the output folder for runtime
+* Analyzers â€“ do the analyzers get used
 
 Alternatively, the element can contain:
 
-* None – none of those things get used
-* All – all of those things get used.
+* None â€“ none of those things get used
+* All â€“ all of those things get used.
 
 ### DotnetCliToolReference
 `<DotnetCliToolReference>` element specifies the CLI tool that the user wants restores in the context of the project. It is 

@@ -268,7 +268,6 @@ There are two new things to make sure you have in your test project:
 
 2. An Xunit test class.
 
-
     `PetTests.cs`: 
     ```csharp
     using System;

@@ -200,7 +200,7 @@ The caller can then consume the returned tuple with code like the following:
 ```cs
 var person = GetPersonalInfo("111111111")
 if (person != null)
-   Console.WriteLine("{person.Item1} {person.Item3}: age = {person.Item4})");
+   Console.WriteLine("{person.Item1} {person.Item3}: age = {person.Item4}");
 ```
 
 Names can also be assigned to the tuple elements in the tuple type definition. The following example shows an alternate version of the `GetPersonalInfo` method that uses named elements:
@@ -221,7 +221,7 @@ The previous call to the `GetPersonInfo` method can then be modified as follows:
 ```cs
 var person = GetPersonalInfo("111111111");
 if (person != null)
-   Console.WriteLine("{person.FName} {person.LName}: age = {person.Age})");
+   Console.WriteLine("{person.FName} {person.LName}: age = {person.Age}");
 ```
 
 If a method is passed an array as an argument and modifies the value of individual elements, it is not necessary for the method to return the array, although you may choose to do so for good style or functional flow of values.  This is because C# passes all reference types by value, and the value of an array reference is the pointer to the array. In the following example, changes to the contents of the `values` array that are made in the `DoubleValues` method are observable by any code that has a reference to the array.

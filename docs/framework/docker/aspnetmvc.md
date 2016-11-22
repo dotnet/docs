@@ -60,7 +60,7 @@ in the Beta channel at this time.
 
 > [!IMPORTANT]
 > If you are using Windows Server 2016, you need to follow the
-> instructions for [Container Host Deployment - Windows Server](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/deployment/deployment)
+> instructions for [Container Host Deployment - Windows Server](https://msdn.microsoft.com/virtualization/windowscontainers/deployment/deployment)
 > before you can run Docker containers.
 
 After installing and starting Docker, you'll need to right-click on the

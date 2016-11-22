@@ -44,7 +44,7 @@ You can invoke the C# compiler by typing the name of its executable file (csc.ex
   
  If you're working on a computer that has only the [!INCLUDE[winsdklong](../../../csharp/language-reference/compiler-options/includes/winsdklong_md.md)], you can use the C# compiler at the **SDK Command Prompt**, which you open from the **Microsoft .NET Framework SDK** menu option.  
   
- You can also use MSBuild to build C# programs programmatically. For more information, see [MSBuild](/visualstudio/msbuild/msbuild1).  
+ You can also use MSBuild to build C# programs programmatically. For more information, see [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild1).  
   
  The csc.exe executable file usually is located in the Microsoft.NET\Framework\\*Version* folder under the Windows directory. Its location might vary depending on the exact configuration of a particular computer. If more than one version of the .NET Framework is installed on your computer, you'll find multiple versions of this file. For more information about such installations, see [Determining Which Version of the .NET Framework Is Installed](http://msdn.microsoft.com/en-us/1a87cc6a-1c4b-4c38-b878-faa9b3beae3c).  
   

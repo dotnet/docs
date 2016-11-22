@@ -46,13 +46,13 @@ Clearly, if your goal is to have an application (web/service) that should be abl
 
 .NET Core is the best candidate if you are embracing a microservices oriented system composed of multiple independent, dynamically scalable, stateful or stateless microservices. .NET Core is lightweight and its API surface can be minimized to the scope of the microservice. A microservices architecture also allows you to mix technologies across a service boundary, enabling a gradual embrace of .NET Core for new microservices that live in conjunction with other microservices or services developed with .NET Framework, Java, Ruby, or other monolithic technologies.
 
-The infrastructure platforms you could use are many. For large and complex microservice systems, you can use [Azure Service Fabric](https://azure.microsoft.com/en-us/services/service-fabric/). For stateless microservices you can also use other products like [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/). Microservices alternatives based on Docker also fit any kind of microservices approach, as explained next. All these platforms support .NET Core and make them ideal for hosting your microservices.
+The infrastructure platforms you could use are many. For large and complex microservice systems, you can use [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/). For stateless microservices you can also use other products like [Azure App Service](https://azure.microsoft.com/services/app-service/). Microservices alternatives based on Docker also fit any kind of microservices approach, as explained next. All these platforms support .NET Core and make them ideal for hosting your microservices.
 
 ### Containers
 
 Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containerize web apps or services which follow any architectural pattern. You will be able to use the .NET Framework for Windows containers, but the modularity and lightweight nature of .NET Core makes it perfect for containers.  When creating and deploying a container the size of its image is far smaller with .NET Core than .NET Framework.  Because it is cross-platform, you can deploy server apps to Linux Docker containers, for example.
 
-You can then host your Docker containers in your own Linux or Windows infrastructure, or use a cloud service such as [Azure Container Service](https://azure.microsoft.com/en-us/services/container-service/) which can manage, orchestrate and scale your container-based application in the cloud.
+You can then host your Docker containers in your own Linux or Windows infrastructure, or use a cloud service such as [Azure Container Service](https://azure.microsoft.com/services/container-service/) which can manage, orchestrate and scale your container-based application in the cloud.
 
 ### A need for high performance and scalable systems
 

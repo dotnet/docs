@@ -66,4 +66,4 @@ When you compare strings, you are producing a result that says one string is gre
  <xref:System.StringComparer?displayProperty=fullName>   
  [Strings](../../../csharp/programming-guide/strings/index.md)   
  [Comparing Strings](http://msdn.microsoft.com/library/977dc094-fe19-4955-98ec-d2294d04a4ba)   
- [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)
+ [Globalizing and Localizing Applications](https://docs.microsoft.com/visualstudio/ide/globalizing-and-localizing-applications)

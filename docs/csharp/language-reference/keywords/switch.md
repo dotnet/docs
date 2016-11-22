@@ -96,5 +96,5 @@ case 4:
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [switch Statement (C++)](/cpp/cpp/switch-statement-cpp)   
+ [switch Statement (C++)](https://docs.microsoft.com/cpp/cpp/switch-statement-cpp)   
  [if-else](../../../csharp/language-reference/keywords/if-else.md)

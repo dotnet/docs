@@ -38,7 +38,7 @@ translation.priority.ht:
 # How to: Compile and Run a Project in Visual Basic
 The [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] Integrated Development Environment (IDE) makes it easy to compile a project and run the resulting application.  
   
- You can use the debugger built into the IDE to debug your project as it runs. For more information about debugging, see [Debugging Your Visual Basic Application](../../../visual-basic/developing-apps/debugging.md) and [Edit and Continue (Visual Basic)](/visualstudio/debugger/edit-and-continue-visual-basic).  
+ You can use the debugger built into the IDE to debug your project as it runs. For more information about debugging, see [Debugging Your Visual Basic Application](../../../visual-basic/developing-apps/debugging.md) and [Edit and Continue (Visual Basic)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-basic).  
 
 [!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
@@ -65,4 +65,4 @@ The [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] Integrated Develop
 ## See Also  
  [Debugging Your Visual Basic Application](../../../visual-basic/developing-apps/debugging.md)   
  [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)   
- [Edit and Continue (Visual Basic)](/visualstudio/debugger/edit-and-continue-visual-basic)
+ [Edit and Continue (Visual Basic)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-basic)

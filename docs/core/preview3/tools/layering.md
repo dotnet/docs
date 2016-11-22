@@ -27,7 +27,7 @@ As part of this move, the custom build engine that was developed to build projec
 
 > [!NOTE]
 > If you are new to MSBuild and would like to learn more about it, you can start by reading 
-> the [existing documentation](https://msdn.microsoft.com/en-us/library/dd637714.aspx). 
+> the [MSBuild Concepts](https://docs.microsoft.com/visualstudio/msbuild/msbuild-concepts) article. 
 
 ## The tooling layers
 With the move away from the existing project system as well as with building engine switches, the question that naturally follows is do any of these changes change the overall "layering" of the whole .NET Core tooling ecosystem? Are there new bits and components?
@@ -45,7 +45,7 @@ With the move to the new project system, the previous diagram changes:
 The main difference is that the CLI is not the foundational layer anymore; this role is now filled by the "shared SDK component". This shared SDK component is a set of targets and associated tasks that are responsible for compiling your code, publishing it, packing nuget packages etc. The SDK itself is open-source and is available on GitHub on the [SDK repo](https://github.com/dotnet/sdk). 
 
 > [!NOTE]
-> A "target" is an MSBuild term that indicates a named operation that MSBuild can invoke. It is usually coupled with one or more tasks that execute some logic that the target is supposed to do. MSBuild supports many ready-made targets such as `Copy` or `Execute`; it also allows users to write their own tasks using managed code and define targets to execute those tasks. You can read more about MSBuild tasks on [MSDN](https://msdn.microsoft.com/en-us/library/ms171466.aspx). 
+> A "target" is an MSBuild term that indicates a named operation that MSBuild can invoke. It is usually coupled with one or more tasks that execute some logic that the target is supposed to do. MSBuild supports many ready-made targets such as `Copy` or `Execute`; it also allows users to write their own tasks using managed code and define targets to execute those tasks. For more information, see [MSBuild tasks](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks). 
 
 All the toolsets now consume the shared SDK component and its targets, CLI included. For example, the next version of Visual Studio will not call into `dotnet restore` command to restore dependencies for .NET Core projects, it will use the "Restore" target directly. Since these are MSBuild targets, you can also use raw MSBuild to execute them using the [dotnet msbuild](dotnet-msbuild.md) command. 
 
@@ -75,5 +75,4 @@ This command is publishing an application into a `pub` folder using the "Release
 The notable exception to this rule are `new` and `run` commands, as they have not been implemented as MSBuild targets. 
 
 ## Conclusion 
-This document outlined at a high-level the changes that are happening to the overall CLI tooling architecture and functioning that are coming with Preview 3. It has introduced the notion of the shared SDK component as well as explained how the CLI commands function, from a technical perspective, in Preview 3. 
-
+This document outlined at a high-level the changes that are happening to the overall CLI tooling architecture and functioning that are coming with Preview 3. It has introduced the notion of the shared SDK component as well as explained how the CLI commands function, from a technical perspective, in Preview 3.

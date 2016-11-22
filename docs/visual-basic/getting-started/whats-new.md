@@ -1,5 +1,5 @@
 ---
-title: "What&#39;s New for Visual Basic | Microsoft Docs"
+title: "What's new for Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -37,10 +37,10 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# What&#39;s New for Visual Basic
+# What's new for Visual Basic
 This page lists key feature names for each version of Visual Basic with descriptions of the new and enhanced features in the lastest version of the language.  
   
-## Previous Versions  
+## Previous versions  
  Visual Basic / Visual Studio .NET 2002  
  First release  
   
@@ -65,12 +65,12 @@ This page lists key feature names for each version of Visual Basic with descript
  Visual Basic / Visual Studio .NET 2015  
  Current version, see below  
   
-## Current Version  
+## Current version  
  [Nameof](../../csharp/language-reference/keywords/nameof.md)  
  You can get the unqualified string name of a type or member for use in an error message without hard coding a string.  This allows your code to remain correct when refactoring.  This feature is also useful for hooking up model-view-controller MVC links and firing property changed events.  
   
  [String Interpolation](../../csharp/language-reference/keywords/interpolated-strings.md)  
- You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  C# creates a string by replacing the expressions with the ToString represenations of the expressions’ results.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](http://msdn.microsoft.com/library/87b7d528-73f6-43c6-b71a-f23043039a49).  
+ You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../../standard/base-types/composite-format.md).  
   
  [Null-conditional Member Access and Indexing](../../csharp/language-reference/operators/null-conditional-operators.md)  
  You can test for null in a very light syntactic way before performing a member access (`?.`) or index (`?[]`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  If the left operand or object reference is null, the operations returns null.  
@@ -134,5 +134,5 @@ End Interface
   
  Now the compiler will use normal overload resolution rules to choose the most appropriate `GetDetails` to call, and you can declare interface relationships in Visual Basic like those shown in the sample.  
   
-## See Also  
+## See also  
  [What's New in Visual Studio 2015](/visualstudio/ide/what-s-new-in-visual-studio-2015)

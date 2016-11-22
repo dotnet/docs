@@ -1,5 +1,5 @@
 ---
-title: "Storing Data to and Reading from the Clipboard (Visual Basic) | Microsoft Docs"
+title: "Storing data to and reading from the Clipboard (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Storing Data to and Reading from the Clipboard (Visual Basic)
+# Storing data to and reading from the Clipboard (Visual Basic)
 The Clipboard can be used to store data, such as text and images. Because the Clipboard is shared by all active processes, it can be used to transfer data between them. The `My.Computer.Clipboard` object allows you to easily access the Clipboard and to read from and write to it.  
   
 ## Reading from the Clipboard  
@@ -90,9 +90,9 @@ The Clipboard can be used to store data, such as text and images. Because the Cl
 > [!IMPORTANT]
 >  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
   
-## See Also  
+## See also  
  <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy>   
  <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream%2A>   
  <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject%2A>   
- [How to: Read Object Data from an XML File](http://msdn.microsoft.com/library/7e677b93-7526-4f22-9de7-9dffa4c62ef3)   
- [How to: Write Object Data to an XML File](http://msdn.microsoft.com/library/279c232a-cee5-4e3c-9710-3696875c8ee4)
+ [How to: Read Object Data from an XML File](../../../programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)   
+ [How to: Write Object Data to an XML File](../../../programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)

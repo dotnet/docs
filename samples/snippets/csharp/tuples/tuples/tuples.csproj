@@ -46,8 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectionSample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Statistics.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

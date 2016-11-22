@@ -13,6 +13,30 @@ namespace tuples
             InitializationStatements();
 
             AssignmentStatements();
+
+            var sample = new List<double>{ 2.0, 4.0, 6.0, 8.0 };
+
+            Console.WriteLine(StatisticsVersionOne.StandardDeviation(sample));
+
+            Console.WriteLine(StatisticsVersionTwo.StandardDeviation(sample));
+            Console.WriteLine(StatisticsVersionThree.StandardDeviation(sample));
+            Console.WriteLine(StatisticsVersionFour.StandardDeviation(sample));
+
+            var p2 = new Person("Bill", "Wagner");
+            var (first, last) = p2;
+            Console.WriteLine(first);
+            Console.WriteLine(last);
+
+            var s1 = new Student("Bill", "Wagner", 4.5);
+            var (fName, lName, gpa) = s1;
+
+            var (f, l) = s1;
+
+            var source = new ProjectionSample();
+            var sequence = source.GetCurrentItemsMobileList();
+            foreach (var item in sequence)
+                Console.WriteLine($"{item.ID}, {item.Title}");
+
         }
 
         private static void AssignmentStatements()
@@ -60,8 +84,45 @@ namespace tuples
             #region 02_NamedTuple
             var named = (first: "one", second: "two");
             #endregion
+        }
 
+        private static double VersionThree(IEnumerable<double> sequence)
+        {
+            var computation = (sum: 0.0, sumOfSquares: 0.0, items: 0);
 
+            foreach (var item in sequence)
+            {
+                computation.items++;
+                computation.sum += item;
+                computation.sumOfSquares += item * item;
+            }
+
+            var variance = computation.sumOfSquares - computation.sum * computation.sum / computation.items;
+            return Math.Sqrt(variance / computation.items);
+        }
+
+        private static double VersionFour(IEnumerable<double> sequence)
+        {
+            var coreStats = ComputeCoreStats(sequence);
+
+            var variance = coreStats.sumOfSquares - coreStats.sum * coreStats.sum / coreStats.items;
+            return Math.Sqrt(variance / coreStats.items);
+        }
+
+        // Remove names, and it can be an unnamed tuple.
+        private static (double sum, double sumOfSquares, int items) ComputeCoreStats(IEnumerable<double> sequence)
+        {
+            double total = 0;
+            double sumOfSquares = 0;
+            int items = 0;
+
+            foreach (var item in sequence)
+            {
+                items++;
+                total += item;
+                sumOfSquares += item * item;
+            }
+            return (total, sumOfSquares, items);
         }
     }
 }

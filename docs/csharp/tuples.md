@@ -136,58 +136,198 @@ named = differentShape;
 
 ## Tuples as method return values
 
+One of the most common uses for Tuples is as a method return
+value. It may often be natural for a method to compute more than
+one value. Let's walk through one example. Consider this method
+that computes the standard deviation for a sequence of numbers:
 
-.. Declaring.
+[!code-csharp[StandardDeviation](../../samples/snippets/csharp/tuples/tuples/statistics.cs#05_StandardDeviation "Compute Standard Deviation")]
 
-.. are they always named?
-
-.. calling and naming
-
-
-
-## deconstruction
-
-.. deconstructing to var
-
-.. create deconstruct method
+> [!NOTE]
+> These examples compute the uncorrected sample standard deviation.
+> The corrected sample standard deviation would formula uses (N-1)
+> instead of N for the final division, where N is the sample size.
+> Consult a statistics text for more details.
 
 
-## Guidance 
+This follows the textbook formula for the standard deviation. It produces
+the correct answer, but it's a very inefficient implementation. This
+method enumerates the sequence twice: Once to produce the average, and
+once to produce the average of the square of the difference of the average.
+(Remember that LINQ queries are evaluated lazily, so the computation of
+the differences from the mean and the average of those differences makes
+only one enumeration.)
 
-### Not Public
+There is an alternative formula that computes standard deviation using
+only one enumeration of the sequence.  This computation produces two
+values as it enumerates the sequence: the sum of all items in the sequence,
+and the sum of the each value squared:
 
-### LINQ Queries
+[!code-csharp[SumOfSquaresFormula](../../samples/snippets/csharp/tuples/tuples/statistics.cs#06_SumOfSquaresFormula "Compute Standard Deviation using the sum of squares")]
 
-### Multiple values
+Ths version enumerates the sequence exactly once. But, it's not very
+reusable code. As you keep working, you'll find that many different
+statistical computations use both the sum of the sequence, and the sum 
+of the squares of the sequence. Let's refactor this method and write
+a utility method that produces both of those values, along with the
+number of items in the collection. 
 
+This is where tuples come in very useful. 
 
+Let's update this method so the three values computed during the enumeration
+are stored in a tuple. That creates with this version:
 
+[!code-csharp[TupleVersion](../../samples/snippets/csharp/tuples/tuples/statistics.cs#07_TupleVersion "Refactor to use tuples")]
 
+Visual Studio's Refactoring suport makes it easy to extract the functionality
+for the core statistics into a private method. That gives you a `private static`
+method that returns the tuple type with the three values of `Sum`, `SumOfSquares`, and `Count`:
 
+[!code-csharp[TupleMethodVersion](../../samples/snippets/csharp/tuples/tuples/statistics.cs#08_TupleMethodVersion "After extracting utility method")]
+ 
+The language enables a couple more options that you can use, if you want
+to make a fwe quick edits by hand. First, you can use the `var`
+declaration to initialize the tuple result from the `ComputeSumAndSumOfSquares`
+method call. You can also create three discrete variables inside the
+`ComputeSumAndSumOfSquares` method. The final version is below:
 
-<!-- 
+[!code-csharp[CleanedTupleVersion](../../samples/snippets/csharp/tuples/tuples/statistics.cs#09_CleanedTupleVersion "After final cleanup")]
 
-Ideas while writing the main C# 7 article:
+This final version can be used for any method that needs those three
+values, or any subset of them.
 
-. Go into detail on the 'shape' of a tuple and assignment between Tuples
+The langauge supports other options in managing the names of the fields
+in these tuple returning methods.
 
-. Go into detail on deconstruction methods
+You can remove the field names from the return value declaration and
+return an unnamed tuple:
 
-. Consider examples where a LINQ query returns a subset of the columns for a database record.
+```csharp
+private static (double, double, int) ComputeSumAndSumOfSquares(IEnumerable<double> sequence)
+{
+    double sum = 0;
+    double sumOfSquares = 0;
+    int count = 0;
 
+    foreach (var item in sequence)
+    {
+        count++;
+        sum += item;
+        sumOfSquares += item * item;
+    }
 
---> 
+    return (sum, sumOfSquares, count);
+}
+```
 
+You must address the fields of this tuple as `Item1`, `Item2`, and `Item3`.
 
-> **Note**
-> 
-> This topic hasn’t been written yet! 
->
-> We welcome your input to help shape the scope and approach. You can track the status and provide input on this
-> [issue](https://github.com/dotnet/docs/issues/1113) at GitHub.
-> 
-> If you would like to review early drafts and outlines of this topic, please leave a note with your contact information in the issue.
->
-> Learn more about how you can contribute on [GitHub](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md).
->
+## Deconstruction
 
+You can unpackage all the items in a tuple by *deconstructng* the tuple
+returned by a method. Therer are two different approaches to deconstructing
+tuples.  First, you can expelicitly declare the type of each field inside
+parentheses to create discrete variables for each of the fields in the tuple:
+
+[!code-csharp[Deconstruct](../../samples/snippets/csharp/tuples/tuples/statistics.cs#10_Deconstruct "Deconstruct")]
+
+You can also declare implicitly typed variables for each field in a tuple
+by using the `var` keyword outside the parentheses:
+
+[!code-csharp[DeconstructToVar](../../samples/snippets/csharp/tuples/tuples/statistics.cs#11_DeconstructToVar "Deconstruct to Var")]
+
+It is also legal to use the `var` keyword with any, or all of the variable
+declarations inside the parenthesis. Note that you cannot use a specific
+type outside the parentheses, even if every field in the tuple has the
+same type.
+
+### Deconstring user defined types
+
+Any tuple type can be deconstructed as shown above. It's also easy
+to enable deconstruction on any user defined (classes, structs, or 
+even interfaces).
+
+The type author can define one or more `Deconstruct` methods that
+assign values to any number of `out` variables representing the
+data elements that make up the type. For example, the following
+`Person` type defines a `Deconstruct` method that deconstructs
+a person object into the fields representing the first name
+and last name:
+
+[!code-csharp[TypeWithDeconstructMethod](../../samples/snippets/csharp/tuples/tuples/person.cs#12_TypeWithDeconstructMethod "Type with a deconstruct method")]
+
+The deconstruct method enables assignment from a `Person` to a 
+tuple with two strings, representing the `FirstName` and 
+`LastName` properties.
+
+You can enable deconstruction even for types you did not author.
+The `Deconstruct` method can be an extenion method that unpackages
+the accessible data members of an object. The example below shows
+a `Stedent` type, derived from the `Person` type, and an extension
+method that deconstructs a `Student` into three variables, representing
+the `FirstName`, the `LastName` and the `GPA`:
+
+[!code-csharp[ExtensionDeconstructMethod](../../samples/snippets/csharp/tuples/tuples/person.cs#13_ExtensionDeconstructMethod "Type with a deconstruct extension method")]
+
+A `Student` object now has two accessible `Deconstruct` methods: the extension method
+declared for `Student` types, and the member of the `Person` type. Both are in scope,
+and that enables a `Student` to be deconstructed into either two variables or three.
+If you assign a student to three variables, the first name, last name, and GPA are
+all returned. If you assign a student to two variables, only the first name and 
+the last name are returned.
+
+You should be very careful defining multiple `Deconstruct` methods in a 
+class or a class hierarchy. Multiple `Deconstruct` methods that have the
+same number of `out` parameters can quickly cause ambiguities. Callers may
+not be able to easily call the desired `Deconstruct` method without introducing
+ambiguities.
+
+In this examle, there is minimal chance for an ambiguious call because the 
+`Deconstrcut` method for `Person` has two output fields, and the `Deconstruct`
+method for `Student` has three.
+
+## Conclusion 
+
+The addition of Tuples, both named and unnaemed, with language support
+enables very concise syntax for working with data types that contain
+more than one element. Even so, they are most useful for utility methods
+that are `private`, or `internal`. Create user defined types, either
+`class` or `struct` types when your public methods return a value
+that has multiple fields.
+
+Another idiom where tuples can be very useful is when you are authoring
+LINQ queries where the final result is a projection that some, but not
+all, of the properties of the objects being selected.
+
+You would traditionally project the results of the query into a sequence
+of objects that were an anonymous type. That presented many limitations,
+primarily because anonymous types could not conveniently be named in the
+return type for a method. Alternatives using `object` or `dynamic` as the
+type of the result came with significant performance costs.
+
+Returning a sequence of a tuple type is easy, and the names and types
+of the fields are available at compile time and through IDE tools.
+For example, consider a ToDo list application. You might define a
+class similar to the following to represent a single entry in the ToDo list:
+
+[!code-csharp[ToDoItem](../../samples/snippets/csharp/tuples/tuples/projectionsample.cs#14_ToDoItem "To Do Item")]
+
+Your mobile applications may support a compact form of the current ToDo items
+that only displays the title. That LINQ query would make a projection that
+include the the ID and the title. A method that returns a sequence of tuples
+expresses that design very well:
+
+[!code-csharp[QueryReturningTuple](../../samples/snippets/csharp/tuples/tuples/projectionsample.cs#15_QueryReturningTuple "Query returning a tuple")]
+
+The named tuple can be part of the signature. It lets the compiler and IDE
+tools provide static checking that you are using the result correctly. The
+named tuple also carries the static type information so there is no need
+to use expensive run time features like reflection or dynamic binding to
+work with the results.
+
+The new language and library support for named tuples makes it much easier
+to work with designs that use data structures that store multiple fields
+but do not need to define behavior, as classes and structs do. It's
+easy and concise to use tuples for those types. You get all the benefits
+static type checking, without needing to author types using the more
+verbose `class` or `struct` syntax.

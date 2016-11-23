@@ -1,4 +1,4 @@
-// <Snippet02>
+// <Snippet2>
 using System;
 
 delegate int del(int i);  
@@ -23,4 +23,4 @@ public class Example
 //   3, 3 x 3 = 9
 //   4, 4 x 4 = 16
 //   5, 5 x 5 = 25
-// </Snippet02>
+// </Snippet2>

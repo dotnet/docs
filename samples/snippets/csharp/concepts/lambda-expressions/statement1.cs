@@ -1,4 +1,4 @@
-// </Snippet1>
+// <Snippet1>
 using System;
 
 
@@ -12,6 +12,7 @@ public class Example
        test("Hello");
     }
 }
-
+// The example displays the following output:
+//     Hello World
 // </Snippet1>  
 

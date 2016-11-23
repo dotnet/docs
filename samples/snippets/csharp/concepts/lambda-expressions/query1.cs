@@ -14,7 +14,7 @@ public class Example
       // </Snippet2>
       // <Snippet3>
       Console.WriteLine(func(4));      // Returns "False".     
-      // <Snippet3>
+      // </Snippet3>
 
       // <Snippet4>
       int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };  

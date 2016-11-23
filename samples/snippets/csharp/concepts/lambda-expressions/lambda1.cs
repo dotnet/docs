@@ -11,5 +11,5 @@ class Example
 }
 // The example displays the following output:
 //      625
-// <Snippet1>
+// </Snippet1>
 

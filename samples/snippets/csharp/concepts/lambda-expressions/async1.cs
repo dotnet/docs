@@ -1,5 +1,4 @@
-using System.Threading;
-// </Snippet3>
+// <Snippet1>
 using System;
 using System.Threading.Tasks;
 
@@ -23,4 +22,5 @@ public class Example
          return await Task.Factory.StartNew( x => (int)x * (int)x, number);
    } 
 }
-// </Snippet3>
+// </Snippet1>
+

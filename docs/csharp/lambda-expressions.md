@@ -1,7 +1,21 @@
+---
+-title: Lambda Expressions
+-description: Lean to use lambda expressions, which are executable code blocks that can be passed as arguments. 
+-keywords: .NET, .NET Core, lambda epxressions, lambdas, delegates 
+-ms-author: ronpet
+-author: rpetrusha
+-manager: wpickett
+-ms.date: 11/22/2016
+-ms.topic: article 
+-ms.prod: visual-studio-dev-14
+-ms.technology: devlang-csharp
+-ms.devlang: csharp
+-ms.assetid: b6a0539a-8ce5-4da7-adcf-44be345a2714
+---
 
 # Lambda expressions #
 
-A lambda expression is a block of code (an expression or a statement block) that is treated as an object. It can be passed as an argument to methods, and it can also be returned by method calls. Lambda expressions are used extensively for:
+A *lambda expression* is a block of code (an expression or a statement block) that is treated as an object. It can be passed as an argument to methods, and it can also be returned by method calls. Lambda expressions are used extensively for:
 
 - Passing the code that is to be executed to asynchronous methods, such as @System.Threading.Tasks.Task.Run(System.Action).
 
@@ -75,6 +89,8 @@ Ordinarily, the fields of a tuple are named `Item1`, `Item2`, etc. You can, howe
 
 [!CODE [csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/tuples2.cs#1)]
 
+For more information on support for tuples in C#, see [C# Tuple types](tuples.md).
+
 ## Lambdas with the standard query operators ##
 
 Many standard query operators have an input parameter whose type is one of the @System.Func%601 family of generic delegates. These delegates use type parameters to define the number and type of input parameters, and the return type of the delegate. `Func` delegates are very useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the @System.Func%601 delegate, whose syntax is:
@@ -89,7 +105,7 @@ where `int` is an input parameter, and `bool` is the return value. The return va
 
 [!CODE [csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/query1.cs#3)]
 
-You can also supply a lambda expression when the argument type is an @System.Linq.Expressions.Expression%601, for example in the standard query operators that are defined in the @System.Linq.Queryable type. When you specify an @System.Linq.Expressions.Expression%601 argument, the lambda is compiled to an expression tree. The following example uses the @System.Linq.Enumerable.Count%60%601(System.Collections.Generic.IEnumerable{t%60%600})) standard query operator.
+You can also supply a lambda expression when the argument type is an @System.Linq.Expressions.Expression%601, for example in the standard query operators that are defined in the @System.Linq.Queryable type. When you specify an @System.Linq.Expressions.Expression%601 argument, the lambda is compiled to an expression tree. The following example uses the [System.Linq.Enumerable.Count](xref:System.Linq.Enumerable.Count%60%601(System.Collections.Generic.IEnumerable{%60%600})) standard query operator.
 
 [!CODE [csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/query1.cs#4)]
 
@@ -137,12 +153,8 @@ Lambdas can refer to *outer variables* (see [Anonymous methods](programming-guid
 
 - A lambda expression cannot contain a `goto` statement, `break` statement, or `continue` statement that is inside the lambda function if the jump statement’s target is outside the block. It is also an error to have a jump statement outside the lambda function block if the target is inside the block.
 
-## Featured Book Chapter ##
+## See also ##
 
-[Delegates, Events, and Lambda Expressions](http://go.microsoft.com/fwlink/?LinkId=195395) in [C# 3.0 Cookbook, Third Edition: More than 250 solutions for C# 3.0 programmers](http://go.microsoft.com/fwlink/?LinkId=195369)
-
-## See Also ##
-
-[LINQ (Language-Integrated Query)](../standard/using-linq.md)
-[Anonymous methods](programming-guide/statements-expressions-operators/anonymous-methods.md)
+[LINQ (Language-Integrated Query)](../standard/using-linq.md)   
+[Anonymous methods](programming-guide/statements-expressions-operators/anonymous-methods.md)   
 [Expression trees](expression-trees.md)

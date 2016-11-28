@@ -1,5 +1,5 @@
 ---
-title: "Storing Data to and Reading from the Clipboard (Visual Basic) | Microsoft Docs"
+title: "Storing data to and reading from the Clipboard (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Storing Data to and Reading from the Clipboard (Visual Basic)
+# Storing data to and reading from the Clipboard (Visual Basic)
 The Clipboard can be used to store data, such as text and images. Because the Clipboard is shared by all active processes, it can be used to transfer data between them. The `My.Computer.Clipboard` object allows you to easily access the Clipboard and to read from and write to it.  
   
 ## Reading from the Clipboard  
@@ -46,13 +46,13 @@ The Clipboard can be used to store data, such as text and images. Because the Cl
   
  [!code-vb[VbVbcnMyClipboard#4](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_1.vb)]  
   
- This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Windows Forms Applications > Clipboard**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
+ This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Windows Forms Applications > Clipboard**. For more information, see [Code Snippets](https://docs.microsoft.com/visualstudio/ide/code-snippets).  
   
  Use the <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage%2A> method to retrieve an image from the Clipboard. This example checks to see if there is an image on the Clipboard before retrieving it and assigning it to `PictureBox1`.  
   
  [!code-vb[VbResourceTasks#16](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_2.vb)]  
   
- This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Windows Forms Applications > Clipboard**.For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
+ This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Windows Forms Applications > Clipboard**.For more information, see [Code Snippets](https://docs.microsoft.com/visualstudio/ide/code-snippets).  
   
  Items placed on the Clipboard will persist even after the application is shut down.  
   
@@ -90,9 +90,9 @@ The Clipboard can be used to store data, such as text and images. Because the Cl
 > [!IMPORTANT]
 >  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
   
-## See Also  
+## See also  
  <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy>   
  <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream%2A>   
  <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject%2A>   
- [How to: Read Object Data from an XML File](http://msdn.microsoft.com/library/7e677b93-7526-4f22-9de7-9dffa4c62ef3)   
- [How to: Write Object Data to an XML File](http://msdn.microsoft.com/library/279c232a-cee5-4e3c-9710-3696875c8ee4)
+ [How to: Read Object Data from an XML File](../../../programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)   
+ [How to: Write Object Data to an XML File](../../../programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)

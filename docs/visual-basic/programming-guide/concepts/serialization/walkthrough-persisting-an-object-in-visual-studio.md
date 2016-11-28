@@ -42,9 +42,9 @@ Although you can set an object's properties to default values at design time, an
 ## Creating the Loan Object  
  The first step is to create a `Loan` class and a test application that uses the class.  
   
-#### To create the Loan class  
+### To create the Loan class  
   
-1.  Create a new Class Library project and name it "LoanClass". For more information, see [Creating Solutions and Projects](/visual-studio/ide/creating-solutions-and-projects).  
+1.  Create a new Class Library project and name it "LoanClass". For more information, see [Creating Solutions and Projects](http://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects).  
   
 2.  In **Solution Explorer**, open the shortcut menu for the Class1 file and choose **Rename**. Rename the file to `Loan` and press ENTER. Renaming the file will also rename the class to `Loan`.  
   
@@ -88,7 +88,7 @@ Although you can set an object's properties to default values at design time, an
   
  You will also have to create a simple application that uses the `Loan` class.  
   
-#### To create a test application  
+### To create a test application  
   
 1.  To add a Windows Forms Application project to your solution, on the **File** menu, choose **Add**,**New Project**.  
   
@@ -138,7 +138,7 @@ Although you can set an object's properties to default values at design time, an
 ## Using Serialization to Persist the Object  
  In order to persist the values for the Loan class, you must first mark the class with the `Serializable` attribute.  
   
-#### To mark a class as serializable  
+### To mark a class as serializable  
   
 -   Change the class declaration for the Loan class as follows:  
   
@@ -149,7 +149,7 @@ Although you can set an object's properties to default values at design time, an
   
  The `Serializable` attribute tells the compiler that everything in the class can be persisted to a file. Because the `PropertyChanged` event is handled by a Windows Form object, it cannot be serialized. The `NonSerialized` attribute can be used to mark class members that should not be persisted.  
   
-#### To prevent a member from being serialized  
+### To prevent a member from being serialized  
   
 -   Change the declaration for the `PropertyChanged` event as follows:  
   
@@ -161,7 +161,7 @@ Although you can set an object's properties to default values at design time, an
   
  The next step is to add the serialization code to the LoanApp application. In order to serialize the class and write it to a file, you will use the <xref:System.IO> and <xref:System.Xml.Serialization> namespaces. To avoid typing the fully qualified names, you can add references to the necessary class libraries.  
   
-#### To add references to namespaces  
+### To add references to namespaces  
   
 -   Add the following statements to the top of the `Form1` class:  
   
@@ -174,7 +174,7 @@ Although you can set an object's properties to default values at design time, an
   
  The next step is to add code to deserialize the object from the file when the object is created.  
   
-#### To deserialize an object  
+### To deserialize an object  
   
 1.  Add a constant to the class for the serialized data's file name.  
   
@@ -208,7 +208,7 @@ Although you can set an object's properties to default values at design time, an
   
  Next you must add code to save the data entered in the text boxes to the `Loan` class, and then you must serialize the class to a file.  
   
-#### To save the data and serialize the class  
+### To save the data and serialize the class  
   
 -   Add the following code to the `Form1_FormClosing` event procedure:  
   

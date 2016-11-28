@@ -71,7 +71,7 @@ Deletes version 1.0 of package MyPackage:
 
 Deletes version 1.0 of package MyPackage, not prompting user for credentials or other input:
 
-`dotnet nuget delete MyPackage 1.0 --non-ìnteractive`
+`dotnet nuget delete MyPackage 1.0 --non-interactive`
 
 Deletes version 1.0 of package MyPackage, specifying a custom config file *./config/My.Config*:
 

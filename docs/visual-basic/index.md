@@ -62,7 +62,7 @@ Visual Basic is engineered for productively building type-safe and object-orient
  Provides links to step-by-step instructions for common scenarios.  
   
 ## Related Sections  
- [Get Started Developing with Visual Studio](/visualstudio/ide/get-started-developing-with-visual-studio)  
+ [Get Started Developing with Visual Studio](https://docs.microsoft.com/visualstudio/ide/get-started-developing-with-visual-studio)  
  Provides links to topics that help you learn about the basics of Visual Studio.  
   
  [Application Development in Visual Studio](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)  

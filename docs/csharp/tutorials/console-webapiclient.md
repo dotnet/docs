@@ -296,7 +296,7 @@ file.
 
 Next, open the repo.cs file. Let's change the name to use Pascal Case, and fully spell out the name
 `Repository`. We still want to map JSON 'repo' nodes to this type, so you'll need to add the 
-`DataContract` attribute to the class declaration. YOu'll set the `Name` property of the attribute
+`DataContract` attribute to the class declaration. You'll set the `Name` property of the attribute
 to the name of the JSON nodes that map to this type:
 
 ```cs
@@ -470,7 +470,7 @@ public DateTime LastPush
 }
 ```
 
-Let's go over the new constructs above. The `IgnoreDatamember` attribute instructs the serializer
+Let's go over the new constructs above. The `IgnoreDataMember` attribute instructs the serializer
 that this type should not be read to or written from any JSON object. This property contains only a
 `get` accessor. There is no `set` accessor. That's how you define a *read only* property in C#. (Yes,
 you can create *write only* properties in C#, but their value is limited.) The `DateTime.ParseExact`

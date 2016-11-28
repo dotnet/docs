@@ -1,5 +1,5 @@
 ---
-title: "Accessing Data in Visual Basic Applications | Microsoft Docs"
+title: "Accessing data in Visual Basic applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -34,14 +34,14 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Accessing Data in Visual Basic Applications
-[!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] includes several new features to assist in developing applications that access data. Data-bound forms for Windows applications are created by dragging items from the [Data Sources Window](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio) onto the form. You bind controls to data by dragging items from the **Data Sources Window** onto existing controls.  
+# Accessing data in Visual Basic applications
+[!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] includes several new features to assist in developing applications that access data. Data-bound forms for Windows applications are created by dragging items from the [Data Sources Window](https://docs.microsoft.com/visualstudio/data-tools/bind-controls-to-data-in-visual-studio) onto the form. You bind controls to data by dragging items from the **Data Sources Window** onto existing controls.  
   
-## Related Sections  
- [Creating Data Applications](/visualstudio/data-tools/creating-data-applications)  
+## Related sections  
+ [Creating Data Applications](https://docs.microsoft.com/visualstudio/data-tools/creating-data-applications)  
  Provides links to pages that discuss incorporating data access functionality into your applications.
 
- [Overview of Data Applications in Visual Studio](/visualstudio/data-tools/overview-of-data-applications-in-visual-studio)  
+ [Overview of Data Applications in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/overview-of-data-applications-in-visual-studio)  
  Provides links to pages on creating applications that work with data, using [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
   
  [LINQ](../../visual-basic/programming-guide/language-features/linq/index.md)  
@@ -50,32 +50,32 @@ translation.priority.ht:
  [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
  Provides information about [!INCLUDE[vbtecdlinq](../../csharp/includes/vbtecdlinq_md.md)]. Includes programming examples.  
   
- [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)  
+ [LINQ to SQL Tools in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)  
  Provides links to topics about how to create a [LINQ to SQL](https://msdn.microsoft.com/library/bb386976) object model in applications.  
   
- [Work with datasets in n-tier applications](/visualstudio/data-tools/work-with-datasets-in-n-tier-applications)  
+ [Work with datasets in n-tier applications](https://docs.microsoft.com/visualstudio/data-tools/work-with-datasets-in-n-tier-applications)  
  Provides links to topics about how to create multitiered data applications.  
      
- [Connecting to Data in Visual Studio](/visualstudio/data-tools/connecting-to-data-in-visual-studio)  
+ [Connecting to Data in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/connecting-to-data-in-visual-studio)  
  Provides links to pages on connecting your application to data with design-time tools and ADO.NET connection objects, using [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
 
- [Fetching Data into Your Application](/visualstudio/data-tools/fetching-data-into-your-application)  
+ [Fetching Data into Your Application](https://docs.microsoft.com/visualstudio/data-tools/fetching-data-into-your-application)  
  Provides links to pages describing how to load data into datasets and how to execute SQL statements and stored procedures.  
   
- [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)  
+ [Bind controls to data in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)  
  Provides links to pages that explain how to display data on Windows Forms through data-bound controls.  
   
- [Editing Data in Your Application](/visualstudio/data-tools/editing-data-in-your-application)  
+ [Editing Data in Your Application](https://docs.microsoft.com/visualstudio/data-tools/editing-data-in-your-application)  
  Provides links to pages describing how to manipulate the data in the data tables of a dataset.  
   
- [Validate data in datasets](/visualstudio/data-tools/validate-data-in-datasets)  
+ [Validate data in datasets](https://docs.microsoft.com/visualstudio/data-tools/validate-data-in-datasets)  
  Provides links to pages describing how to add validation to a dataset during column and row changes.  
   
- [Saving Data](/visualstudio/data-tools/saving-data)  
+ [Saving Data](https://docs.microsoft.com/visualstudio/data-tools/saving-data)  
  Provides links to pages explaining how to send updated data from an application to the database.  
   
  [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx)  
- Describes the ADO.NET classes, which expose data-access services to the .NET Framework programmer.  
-  
- [Data in Office Solutions](/office-dev/office-dev/data-in-office-solutions)  
+ Describes the ADO.NET classes, which expose data-access services to the .NET Framework programmer.
+
+ [Data in Office Solutions](https://msdn.microsoft.com/library/xx069ybh)  
  Contains links to pages that explain how data works in Office solutions, including information about schema-oriented programming, data caching, and server-side data access.

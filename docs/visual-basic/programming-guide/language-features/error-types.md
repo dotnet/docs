@@ -54,4 +54,4 @@ In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vb
   
 ## See Also  
  [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)   
- [Debugger Basics](/visualstudio/debugger/debugger-basics)
+ [Debugger Basics](https://docs.microsoft.com/visualstudio/debugger/debugger-basics)

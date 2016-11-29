@@ -55,17 +55,17 @@ namespace tuples
         #region 07_TupleVersion
         public static double StandardDeviation(IEnumerable<double> sequence)
         {
-            var computation = (sum: 0.0, sumOfSquares: 0.0, count: 0);
+            var computation = (Count: 0, Sum: 0.0, SumOfSquares: 0.0);
 
             foreach (var item in sequence)
             {
-                computation.count++;
-                computation.sum += item;
-                computation.sumOfSquares += item * item;
+                computation.Count++;
+                computation.Sum += item;
+                computation.SumOfSquares += item * item;
             }
 
-            var variance = computation.sumOfSquares - computation.sum * computation.sum / computation.count;
-            return Math.Sqrt(variance / computation.count);
+            var variance = computation.SumOfSquares - computation.Sum * computation.Sum / computation.Count;
+            return Math.Sqrt(variance / computation.Count);
         }
         #endregion
     }
@@ -75,15 +75,15 @@ namespace tuples
         #region 08_TupleMethodVersion
         public static double StandardDeviation(IEnumerable<double> sequence)
         {
-            (double Sum, double SumOfSquares, int Count) computation = ComputeSumsAnSumOfdSquares(sequence);
+            (int Count, double Sum, double SumOfSquares) computation = ComputeSumsAnSumOfSquares(sequence);
 
             var variance = computation.SumOfSquares - computation.Sum * computation.Sum / computation.Count;
             return Math.Sqrt(variance / computation.Count);
         }
 
-        private static (double Sum, double SumOfSquares, int Count) ComputeSumsAnSumOfdSquares(IEnumerable<double> sequence)
+        private static (int Count, double Sum, double SumOfSquares) ComputeSumsAnSumOfSquares(IEnumerable<double> sequence)
         {
-            var computation = (sum: 0.0, sumOfSquares: 0.0, count: 0);
+            var computation = (count: 0, sum: 0.0, sumOfSquares: 0.0);
 
             foreach (var item in sequence)
             {
@@ -108,7 +108,7 @@ namespace tuples
             return Math.Sqrt(variance / computation.Count);
         }
 
-        private static (double Sum, double SumOfSquares, int Count) ComputeSumAndSumOfSquares(IEnumerable<double> sequence)
+        private static (int Count, double Sum, double SumOfSquares) ComputeSumAndSumOfSquares(IEnumerable<double> sequence)
         {
             double sum = 0;
             double sumOfSquares = 0;
@@ -121,7 +121,7 @@ namespace tuples
                 sumOfSquares += item * item;
             }
 
-            return (sum, sumOfSquares, count);
+            return (count, sum, sumOfSquares);
         }
         #endregion
     }
@@ -132,14 +132,14 @@ namespace tuples
         #region 10_Deconstruct
         public static double StandardDeviation(IEnumerable<double> sequence)
         {
-            (double sum, double sumOfSquares, int count) = ComputeSumAndSumOfSquares(sequence);
+            (int count, double sum, double sumOfSquares) = ComputeSumAndSumOfSquares(sequence);
 
             var variance = sumOfSquares - sum * sum / count;
             return Math.Sqrt(variance / count);
         }
         #endregion
 
-        private static (double Sum, double SumOfSquares, int Count) ComputeSumAndSumOfSquares(IEnumerable<double> sequence)
+        private static (int Count, double Sum, double SumOfSquares) ComputeSumAndSumOfSquares(IEnumerable<double> sequence)
         {
             double sum = 0;
             double sumOfSquares = 0;
@@ -152,7 +152,7 @@ namespace tuples
                 sumOfSquares += item * item;
             }
 
-            return (sum, sumOfSquares, count);
+            return (count, sum, sumOfSquares);
         }
     }
 
@@ -168,7 +168,7 @@ namespace tuples
         }
         #endregion
 
-        private static (double Sum, double SumOfSquares, int Count) ComputeSumAndSumOfSquares(IEnumerable<double> sequence)
+        private static (int Count, double Sum, double SumOfSquares) ComputeSumAndSumOfSquares(IEnumerable<double> sequence)
         {
             double sum = 0;
             double sumOfSquares = 0;
@@ -181,7 +181,7 @@ namespace tuples
                 sumOfSquares += item * item;
             }
 
-            return (sum, sumOfSquares, count);
+            return (count, sum, sumOfSquares);
         }
     }
 }

@@ -9,7 +9,7 @@ namespace tuples
     #region 12_TypeWithDeconstructMethod
     public class Person
     {
-        public string FirstName { get;}
+        public string FirstName { get; }
         public string LastName { get; }
 
         public Person(string first, string last)
@@ -17,6 +17,7 @@ namespace tuples
             FirstName = first;
             LastName = last;
         }
+
         public void Deconstruct(out string firstName, out string lastName)
         {
             firstName = FirstName;

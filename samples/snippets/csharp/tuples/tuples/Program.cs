@@ -22,13 +22,17 @@ namespace tuples
             Console.WriteLine(StatisticsVersionThree.StandardDeviation(sample));
             Console.WriteLine(StatisticsVersionFour.StandardDeviation(sample));
 
-            var p2 = new Person("Bill", "Wagner");
-            var (first, last) = p2;
+            #region 12A_DeconstructType
+            var p = new Person("Althea", "Goodwin");
+            var (first, last) = p;
+            #endregion
             Console.WriteLine(first);
             Console.WriteLine(last);
 
-            var s1 = new Student("Bill", "Wagner", 4.5);
+            #region 13A_DeconstructExtension
+            var s1 = new Student("Cary", "Totten", 4.5);
             var (fName, lName, gpa) = s1;
+            #endregion
 
             var (f, l) = s1;
 
@@ -42,14 +46,12 @@ namespace tuples
         private static void AssignmentStatements()
         {
             #region 03_VariableCreation
-            // The 'arity' and 'shape' of all these
-            // tuples are compatible. The only
-            // difference is the field names being 
-            // used.
+            // The 'arity' and 'shape' of all these tuples are compatible. 
+            // The only difference is the field names being used.
             var unnamed = (42, "The meaning of life");
             var anonymous = (16, "a perfect square");
-            var named = (answer: 42, message: "The meaning of life");
-            var differentNamed = (secretConstant: 42, label: "The meaning of life");
+            var named = (Answer: 42, Message: "The meaning of life");
+            var differentNamed = (SecretConstant: 42, Label: "The meaning of life");
             #endregion
 
             #region 04_VariableAssignment
@@ -60,17 +62,16 @@ namespace tuples
             named = unnamed;
             // 'named' still has fields that can be referred to
             // as 'answer', and 'message':
-            Console.WriteLine($"{named.answer}, {named.message}");
+            Console.WriteLine($"{named.Answer}, {named.Message}");
 
             // unnamed to unnamed:
             anonymous = unnamed;
             
             // named tuples.
             named = differentNamed;
-            // The field names are not assigned.
-            // 'named' still has fields that can be referred to
-            // as 'answer' and 'message':
-            Console.WriteLine($"{named.answer}, {named.message}");
+            // The field names are not assigned. 'named' still has 
+            // fields that can be referred to as 'answer' and 'message':
+            Console.WriteLine($"{named.Answer}, {named.Message}");
             #endregion
 
         }
@@ -88,17 +89,17 @@ namespace tuples
 
         private static double VersionThree(IEnumerable<double> sequence)
         {
-            var computation = (sum: 0.0, sumOfSquares: 0.0, items: 0);
+            var computation = (Sum: 0.0, SumOfSquares: 0.0, Items: 0);
 
             foreach (var item in sequence)
             {
-                computation.items++;
-                computation.sum += item;
-                computation.sumOfSquares += item * item;
+                computation.Items++;
+                computation.Sum += item;
+                computation.SumOfSquares += item * item;
             }
 
-            var variance = computation.sumOfSquares - computation.sum * computation.sum / computation.items;
-            return Math.Sqrt(variance / computation.items);
+            var variance = computation.SumOfSquares - computation.Sum * computation.Sum / computation.Items;
+            return Math.Sqrt(variance / computation.Items);
         }
 
         private static double VersionFour(IEnumerable<double> sequence)
@@ -110,7 +111,7 @@ namespace tuples
         }
 
         // Remove names, and it can be an unnamed tuple.
-        private static (double sum, double sumOfSquares, int items) ComputeCoreStats(IEnumerable<double> sequence)
+        private static (int items, double sum, double sumOfSquares) ComputeCoreStats(IEnumerable<double> sequence)
         {
             double total = 0;
             double sumOfSquares = 0;
@@ -122,7 +123,7 @@ namespace tuples
                 total += item;
                 sumOfSquares += item * item;
             }
-            return (total, sumOfSquares, items);
+            return (items, total, sumOfSquares);
         }
     }
 }

@@ -13,8 +13,7 @@ namespace tuples
         public bool IsDone { get; set; }
         public DateTime DueDate { get; set; }
         public string Title { get; set; }
-        public string Notes { get; set; }
-
+        public string Notes { get; set; }    
     }
     #endregion
 

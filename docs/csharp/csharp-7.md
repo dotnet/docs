@@ -94,12 +94,12 @@ names to each of the members of the tuple:
 [!code-csharp[NamedTuple](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#05_NamedTuple "Named tuple")]
 
 > [!NOTE]
-> The new tuples features require the @System.ValueTuple type. For Visual Studio 15
+> The new tuples features require the `System.ValueTuple` type. For Visual Studio 15
 > Preview 5 and earlier preview releases, you must add the NuGet package "System.ValueTuple",
 > available in the pre-release stream.
 
-The `namedLetters` tuple contains fields referred to as `alpha` and
-`beta`. In a tuple assignment, you can also specify the names of the fields
+The `namedLetters` tuple contains fields referred to as `Alpha` and
+`Beta`. In a tuple assignment, you can also specify the names of the fields
 on the right hand side of the assignment:
 
 [!code-csharp[ImplicitNamedTuple](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
@@ -110,14 +110,14 @@ left and right hand side of the assignment:
 [!code-csharp[NamedTupleConflict](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#07_NamedTupleConflict "Named tuple conflict")]
 
 The line above generates a warning, `CS8123`, telling you that the names on the right
-side of the assignment, `alpha` and `beta` are ignored because they conflict
-with the names on the left side, `first` and `second`.
+side of the assignment, `Alpha` and `Beta` are ignored because they conflict
+with the names on the left side, `First` and `Second`.
 
 The examples above show the basic syntax to declare tuples. Tuples are
 most useful as return types for `private` and `internal` methods. Tuples
 provide a simple syntax for those methods to return multiple discrete values:
 You save the work of authoring a `class` or a `struct` that
-defines the type returned. There is no need for creating a new symbol.
+defines the type returned. There is no need for creating a new type.
 
 Creating a tuple is more efficient and more productive.
 It is a simpler, lightweight syntax to define a data structure that carries
@@ -129,12 +129,12 @@ values found in a sequence of integers:
 Using tuples in this way offers several advantages:
 
 * You save the work of authoring a `class` or a `struct` that defines the type returned. 
-* You do not need to create new symbol.
+* You do not need to create new type.
 * The language enhancements removes the need to call the @System.Tuple.Create%60%601(%60%600) methods.
 
 The declaration for the method provides the names for the fields of the
 tuple that is returned. When you call the method, the return value is a 
-tuple whose fields are `max` and `min`:
+tuple whose fields are `Max` and `Min`:
 
 [!code-csharp[CallingTupleMethod](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#09_CallingTupleMethod "Calling a tuple returning method")]
 

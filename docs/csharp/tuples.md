@@ -13,10 +13,11 @@ ms.devlang: csharp
 ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
 ---
 
-# C# Tuple types
+# C# Tuple types #
 
 C# Tuples are types that you define using a lightweight syntax. The advantages
-include a simpler syntax, rules for conversions based on arity and types of fields, and
+include a simpler syntax, rules for conversions based on number (referred to as "arity")
+and types of fields, and
 consistent rules for copies and assignments. As a tradeoff, Tuples do not
 support some of the object oriented idioms associated with inheritance. You
 can get an overview in the section on [Tuples in the What's new in C# 7](csharp-7.md#tuples) topic.
@@ -24,12 +25,16 @@ can get an overview in the section on [Tuples in the What's new in C# 7](csharp-
 In this topic, you'll learn the language rules governing Tuples in C# 7,
 different ways to use them, and initial guidance on working with Tuples.
 
+> [!NOTE]
+> The new tuples features require the `System.ValueTuple` type. For Visual Studio 2017
+> RC and earlier preview releases, you must add the NuGet package "System.ValueTuple",
+> available in the pre-release stream.
+
 Let's start with the reasons for adding new Tuple support. Methods return
 a single object. Tuples enable you to package multiple values in that single
-object more easily. You don't need behavior on these types, but you want to
-package multiple values in a single object.
+object more easily. 
 
-The .NET Framework already had `Tuple` generic classes. These classes,
+The .NET Framework already has generic `Tuple` classes. These classes,
 however, had two major limitations. For one, the `Tuple` classes named
 their fields `Item1`, `Item2`, and so on. Those names carry no semantic
 information. Using these `Tuple` types does not enable communicating the
@@ -43,8 +48,8 @@ and it obscures your design intent. Making a `struct` or `class` implies
 that you are defining a type with both data and behavior. Many times, you
 simply want to store multiple values in a single object.
 
-The new language features for tuples, combined with a new set of generic
-classes in the framework address thease deficiencies. These new tuples
+The new language features for tuples, combined with a new set of
+classes in the framework, address these deficiencies. These new tuples
 use the new `ValueTuple` generic structs. As the name implies, this type is a `struct`
 instead of a `class`. There are different versions of this struct to support
 tuples with different numbers of fields. New language support provides semantic
@@ -52,7 +57,7 @@ names for the fields of the tuple type, along with features to make constructing
 or accessing tuple fields easy.
 
 The language features and the `ValueTuple` generic structs enforce the rule that
-these tuple types do not have any behavior (methods) associated with them.
+you cannot add any behavior (methods) to these tuple types.
 All the `ValueTuple` types are *mutable structs*. Each member field is a
 public field. That makes them very lightweight. However, that means tuples
 should not be used where immutability is important.
@@ -63,7 +68,7 @@ Tuples are both simpler and more flexible data containers than `class` and
 ## Named and unnamed tuples
 
 The `ValueTuple` struct has fields named `Item1`, `Item2`, `Item3` and so on,
-just like the existing `Tuple` types.
+similer to the properties defined in the existing `Tuple` types.
 These names are the only names you can use for *unnamed tuples*. When you
 do not provide any alternative field names to a tuple, you've created an
 unnamed tuple:
@@ -74,7 +79,7 @@ However, when you initialize a tuple, you can use new language features
 that give better names to each field. Doing so creates a *named tuple*.
 Named tuples still have fields named `Item1`, `Item2`, `Item3` and so on.
 But they also have synonyms for any of those fields that you have named.
-You creat a named tuple by specifying the names for each field. One way
+You create a named tuple by specifying the names for each field. One way
 is to specify the names as part of the tuple initialization:
 
 [!code-csharp[NamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#02_NamedTuple "Named tuple")]
@@ -90,7 +95,7 @@ does not include the names you've given these fields.
 The compiler must communicate those names you created for tuples that
 are returned from public methods or properties. In those cases, the compiler
 adds a `TupleElementNames` attribute on the method. This attribute contains
-a `TransformNames` list property that contains the names give to each of
+a `TransformNames` list property that contains the names given to each of
 the fields in the Tuple. 
 
 > [!NOTE]
@@ -141,15 +146,14 @@ named = differentShape;
 ## Tuples as method return values
 
 One of the most common uses for Tuples is as a method return
-value. It may often be natural for a method to compute more than
-one value. Let's walk through one example. Consider this method
+value. Let's walk through one example. Consider this method
 that computes the standard deviation for a sequence of numbers:
 
 [!code-csharp[StandardDeviation](../../samples/snippets/csharp/tuples/tuples/statistics.cs#05_StandardDeviation "Compute Standard Deviation")]
 
 > [!NOTE]
 > These examples compute the uncorrected sample standard deviation.
-> The corrected sample standard deviation would formula would divide
+> The corrected sample standard deviation formula would divide
 > the sum of the squared differences from the mean by (N-1) instead
 > of N, as the `Average` extension method does. Consult a statistics
 > text for more details on the differences between these formulas
@@ -175,8 +179,7 @@ reusable code. As you keep working, you'll find that many different
 statistical computations use the number of items in the sequence,
 the sum of the sequence, and the sum 
 of the squares of the sequence. Let's refactor this method and write
-a utility method that produces both of those values, along with the
-number of items in the collection. 
+a utility method that produces all three of those values.
 
 This is where tuples come in very useful. 
 
@@ -192,7 +195,7 @@ method that returns the tuple type with the three values of `Sum`, `SumOfSquares
 [!code-csharp[TupleMethodVersion](../../samples/snippets/csharp/tuples/tuples/statistics.cs#08_TupleMethodVersion "After extracting utility method")]
  
 The language enables a couple more options that you can use, if you want
-to make a fwe quick edits by hand. First, you can use the `var`
+to make a few quick edits by hand. First, you can use the `var`
 declaration to initialize the tuple result from the `ComputeSumAndSumOfSquares`
 method call. You can also create three discrete variables inside the
 `ComputeSumAndSumOfSquares` method. The final version is below:
@@ -202,8 +205,8 @@ method call. You can also create three discrete variables inside the
 This final version can be used for any method that needs those three
 values, or any subset of them.
 
-The langauge supports other options in managing the names of the fields
-in these tuple returning methods.
+The language supports other options in managing the names of the fields
+in these tuple-returning methods.
 
 You can remove the field names from the return value declaration and
 return an unnamed tuple:
@@ -263,8 +266,8 @@ work with the results.
 ## Deconstruction
 
 You can unpackage all the items in a tuple by *deconstructng* the tuple
-returned by a method. Therer are two different approaches to deconstructing
-tuples.  First, you can expelicitly declare the type of each field inside
+returned by a method. There are two different approaches to deconstructing
+tuples.  First, you can explicitly declare the type of each field inside
 parentheses to create discrete variables for each of the fields in the tuple:
 
 [!code-csharp[Deconstruct](../../samples/snippets/csharp/tuples/tuples/statistics.cs#10_Deconstruct "Deconstruct")]
@@ -299,12 +302,13 @@ and last name:
 
 [!code-csharp[TypeWithDeconstructMethod](../../samples/snippets/csharp/tuples/tuples/person.cs#12_TypeWithDeconstructMethod "Type with a deconstruct method")]
 
-The deconstruct method enables assignment from a `Person` to a 
-tuple with two strings, representing the `FirstName` and 
-`LastName` properties.
+The deconstruct method enables assignment from a `Person` to two strings, 
+representing the `FirstName` and `LastName` properties:
+
+[!code-csharp[Deconstruct Type](../../samples/snippets/csharp/tuples/tuples/program.cs#12A_DeconstructType "Deconstruct a class type")]
 
 You can enable deconstruction even for types you did not author.
-The `Deconstruct` method can be an extenion method that unpackages
+The `Deconstruct` method can be an extension method that unpackages
 the accessible data members of an object. The example below shows
 a `Student` type, derived from the `Person` type, and an extension
 method that deconstructs a `Student` into three variables, representing
@@ -314,10 +318,12 @@ the `FirstName`, the `LastName` and the `GPA`:
 
 A `Student` object now has two accessible `Deconstruct` methods: the extension method
 declared for `Student` types, and the member of the `Person` type. Both are in scope,
-and that enables a `Student` to be deconstructed into a tuple with either two fields or three.
-If you assign a student to a tuple with three fields, the first name, last name, and GPA are
-all returned. If you assign a student to a tuple with two fields, only the first name and 
+and that enables a `Student` to be deconstructed into either two variables or three.
+If you assign a student to three variabless, the first name, last name, and GPA are
+all returned. If you assign a student to two variables, only the first name and 
 the last name are returned.
+
+[!code-csharp[Deconstruct extension method](../../samples/snippets/csharp/tuples/tuples/program.cs#13A_DeconstructExtension "Deconstruct a class type using an extension method")]
 
 You should be very careful defining multiple `Deconstruct` methods in a 
 class or a class hierarchy. Multiple `Deconstruct` methods that have the
@@ -325,7 +331,7 @@ same number of `out` parameters can quickly cause ambiguities. Callers may
 not be able to easily call the desired `Deconstruct` method.
 
 In this example, there is minimal chance for an ambiguious call because the 
-`Deconstruct` method for `Person` has two output fields, and the `Deconstruct`
+`Deconstruct` method for `Person` has two output parameters, and the `Deconstruct`
 method for `Student` has three.
 
 ## Conclusion 
@@ -333,7 +339,7 @@ method for `Student` has three.
 The new language and library support for named tuples makes it much easier
 to work with designs that use data structures that store multiple fields
 but do not define behavior, as classes and structs do. It's
-easy and concise to use tuples for those types. You get all the benefits
+easy and concise to use tuples for those types. You get all the benefits of
 static type checking, without needing to author types using the more
 verbose `class` or `struct` syntax. Even so, they are most useful for utility methods
 that are `private`, or `internal`. Create user defined types, either

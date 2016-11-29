@@ -1,7 +1,7 @@
 ---
 -title: Lambda Expressions
 -description: Lean to use lambda expressions, which are executable code blocks that can be passed as arguments. 
--keywords: .NET, .NET Core, lambda epxressions, lambdas, delegates 
+-keywords: .NET, .NET Core, lambda expressions, lambdas, delegates 
 -ms-author: ronpet
 -author: rpetrusha
 -manager: wpickett
@@ -23,7 +23,7 @@ A *lambda expression* is a block of code (an expression or a statement block) th
 
 - Creating [expression trees](expression-trees-building.md).
 
-Lambda expressions are delegates. The specific delegate type of a lambda expressions depends on its parameters and return value. Lambda expressions that don't return a value correspond to a specific `Action` delegate, depending on its number of parameters. Lambda expressions that return a value correspond to a specific `Func` delegate, depending on its number of parameters. For example, a lambda expression that has two parameters but returns no value corresponds to an @System.Action%602 delegate. A lambda expression that has one parameter and returns a value corresponds to @System.Func%602 delegate.
+Lambda expressions are code that can be represented either as a delegate, or as an expression tree that compiles to a delegate. The specific delegate type of a lambda expression depends on its parameters and return value. Lambda expressions that don't return a value correspond to a specific `Action` delegate, depending on its number of parameters. Lambda expressions that return a value correspond to a specific `Func` delegate, depending on its number of parameters. For example, a lambda expression that has two parameters but returns no value corresponds to an @System.Action%602 delegate. A lambda expression that has one parameter and returns a value corresponds to @System.Func%602 delegate.
 
 A lambda expression uses `=>`, the [lambda declaration operator](language-reference/operators/lambda-operator.md), to separate the lambda's parameter list from its executable code. To create a lambda expression, you specify input parameters (if any) on the left side of the lambda operator, and you put the expression or statement block on the other side. For example, the single-line lambda expression `x => x * x` specifies a parameter that’s named `x` and returns the value of `x` squared. You can assign this expression to a delegate type, as the following example shows:
 
@@ -53,7 +53,7 @@ Ordinarily, the compiler uses type inference in determining parameter types. How
 
 [!CODE [csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/expression3.cs#3)]
 
-Note in the previous example that the body of an expression lambda can consist of a method call. However, if you are creating expression trees that are evaluated outside of the .NET Framework, such as in SQL Server, you should not use method calls in lambda expressions. The methods will have no meaning outside the context of the .NET runtime.
+Note in the previous example that the body of an expression lambda can consist of a method call. However, if you are creating expression trees that are evaluated outside of the .NET Framework, such as in SQL Server or Entity Framework (EF), you should refrain from using method calls in lambda expressions, since the methods may  have no meaning outside the context of the .NET runtime. If you do choose to use method calls in this case, be sure to test them thoroughly to ensure that the method calls can be successfuly resolved.
 
 ## Statement lambdas ##
 
@@ -93,7 +93,7 @@ For more information on support for tuples in C#, see [C# Tuple types](tuples.md
 
 ## Lambdas with the standard query operators ##
 
-Many standard query operators have an input parameter whose type is one of the @System.Func%601 family of generic delegates. These delegates use type parameters to define the number and type of input parameters, and the return type of the delegate. `Func` delegates are very useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the @System.Func%601 delegate, whose syntax is:
+LINQ to Objects, among other implementations, have an input parameter whose type is one of the @System.Func%601 family of generic delegates. These delegates use type parameters to define the number and type of input parameters, and the return type of the delegate. `Func` delegates are very useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the @System.Func%601 delegate, whose syntax is:
 
 [!CODE [csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/query1.cs#1)]
 
@@ -121,11 +121,11 @@ The following example specifies multiple input parameters by enclosing them in p
 
 ## Type inference in lambda expressions ##
 
-When writing lambdas, you often do not have to specify a type for the input parameters because the compiler can infer the type based on the lambda body, the parameter’s delegate type, and other factors, as described in the C# Language Specification. For most of the standard query operators, the first input is the type of the elements in the source sequence. So if you are querying an `IEnumerable<Customer>`, then the input variable is inferred to be a `Customer` object, which means you have access to its methods and properties:
+When writing lambdas, you often do not have to specify a type for the input parameters because the compiler can infer the type based on the lambda body, the parameter types, and other factors, as described in the C# Language Specification. For most of the standard query operators, the first input is the type of the elements in the source sequence. If you are querying an `IEnumerable<Customer>`, then the input variable is inferred to be a `Customer` object, which means you have access to its methods and properties:
 
 [!CODE [csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/infer1.cs#1)]
 
-The general rules for type inteference for lambdas are:
+The general rules for type inference for lambdas are:
 
 - The lambda must contain the same number of parameters as the delegate type.
 

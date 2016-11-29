@@ -57,7 +57,6 @@ Add a sample at RC that shows how if statements
 scope out variables.
 -->
 
-This small language change improves your productivity in important ways:
 * The code is easier to read. 
     - You declare the out variable where you use it, not on another line above.
 * No need to assign an initial value.
@@ -78,9 +77,10 @@ that contain multiple fields to represent the data members.
 The fields are not validated, and you cannot define your own methods
 
 > [!NOTE]
-> Tuples were available as an API class before C# 7, but had many limitations.
-> Most importantly, the members of these tuples were named `Item1`, `Item2`
-> and so on. The language features for Tuples address this limitations.
+> Tuples were available before C# 7 as an API, but had many limitations.
+> Most importantly, the members of these tuples were named 
+> `Item1`, `Item2` and so on. The language support enables semantic names
+> for the fields of a Tuple.
 
 You can create a tuple by assigning each member to a value:
 
@@ -94,12 +94,12 @@ names to each of the members of the tuple:
 [!code-csharp[NamedTuple](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#05_NamedTuple "Named tuple")]
 
 > [!NOTE]
-> The new tuples features require the @System.ValueTuple type. For Visual Studio 15
+> The new tuples features require the `System.ValueTuple` type. For Visual Studio 15
 > Preview 5 and earlier preview releases, you must add the NuGet package "System.ValueTuple",
 > available in the pre-release stream.
 
-The `namedLetters` tuple contains fields referred to as `alpha` and
-`beta`. In a tuple assignment, you can also specify the names of the fields
+The `namedLetters` tuple contains fields referred to as `Alpha` and
+`Beta`. In a tuple assignment, you can also specify the names of the fields
 on the right hand side of the assignment:
 
 [!code-csharp[ImplicitNamedTuple](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
@@ -110,24 +110,31 @@ left and right hand side of the assignment:
 [!code-csharp[NamedTupleConflict](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#07_NamedTupleConflict "Named tuple conflict")]
 
 The line above generates a warning, `CS8123`, telling you that the names on the right
-side of the assignment, `alpha` and `beta` are ignored because they conflict
-with the names on the left side, `first` and `second`.
+side of the assignment, `Alpha` and `Beta` are ignored because they conflict
+with the names on the left side, `First` and `Second`.
 
 The examples above show the basic syntax to declare tuples. Tuples are
 most useful as return types for `private` and `internal` methods. Tuples
 provide a simple syntax for those methods to return multiple discrete values:
+You save the work of authoring a `class` or a `struct` that
+defines the type returned. There is no need for creating a new type.
+
+Creating a tuple is more efficient and more productive.
+It is a simpler, lightweight syntax to define a data structure that carries
+more than one value. The example method below returns the minimimum and maximum
+values found in a sequence of integers:
 
 [!code-csharp[TupleReturningMethod](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#08_TupleReturningMethod "Tuple returning method")]
 
 Using tuples in this way offers several advantages:
 
 * You save the work of authoring a `class` or a `struct` that defines the type returned. 
-* You do not need to create new symbol.
+* You do not need to create new type.
 * The language enhancements removes the need to call the @System.Tuple.Create%60%601(%60%600) methods.
 
 The declaration for the method provides the names for the fields of the
 tuple that is returned. When you call the method, the return value is a 
-tuple whose fields are `max` and `min`:
+tuple whose fields are `Max` and `Min`:
 
 [!code-csharp[CallingTupleMethod](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#09_CallingTupleMethod "Calling a tuple returning method")]
 
@@ -337,7 +344,7 @@ the return value is a reference:
 Now, the second `WriteLine` statement in the example above will print 
 out the value `24`, indicating that the storage in the matrix has been
 modified. The local variable has been declared with the `ref` modifier,
-and it will take a `ref` return. You must initialize a `ref` varaible when
+and it will take a `ref` return. You must initialize a `ref` variable when
 it is declared, you cannot split the declaration and the initialization.
 
 The C# language has two other rules that protect you from mis-using

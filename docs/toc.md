@@ -258,7 +258,7 @@
 ### [Basic Types](csharp/basic-types.md)
 ### [Classes](csharp/classes.md)
 ### [Structs](csharp/structs.md)
-### [🔧 Tuples and unnamed types](csharp/tuples.md)
+### [Tuples](csharp/tuples.md)
 ### [🔧 Interfaces](csharp/interfaces.md)
 ### [Methods and Lambda Expressions](csharp/methods-lambda-expressions.md)
 #### [Methods](csharp/methods.md)

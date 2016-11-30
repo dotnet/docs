@@ -1,4 +1,4 @@
-# Using the cli-preview3 folder and sub-folders
+# Using the preview3 folder and sub-folders
 
 This folder is the top-level node that matches the tools
 folder, but contains deltas for the .NET Core tooling Preview 3 release.

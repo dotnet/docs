@@ -1,0 +1,14 @@
+---
+title: C# Type system
+description: C# Type system
+keywords: .NET, .NET Core
+author: dotnet-bot
+manager: wpickett
+ms.date: 12/01/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: dotnet
+ms.assetid: 08589912-2fa0-4636-9aa6-d8b2b83cdf88
+redirect_url: /csharp/programming-guide/types/index.md 
+---

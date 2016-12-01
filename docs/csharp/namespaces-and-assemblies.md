@@ -1,0 +1,14 @@
+---
+title: Namespaces and Assemblies | C# Guide
+description: Namespaces and Assemblies are the fundamental organizing features for C#
+keywords: .NET, .NET Core, C#
+author:  dotnet-bot
+manager: wpickett
+ms.date: 12/01/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: csharp
+ms.assetid: fe436e2b-c6ea-490d-a221-0d822c6e178b
+redirect_url: /csharp/programming-guide/namespaces/index.md
+---

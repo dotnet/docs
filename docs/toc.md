@@ -265,7 +265,7 @@
 #### [🔧 Lambda Expressions](csharp/lambda-expressions.md)
 ### [Properties](csharp/properties.md)
 ### [Indexers](csharp/indexers.md)
-### [Generics](csharp/programming-guide/generics.index.md)
+### [Generics](csharp/programming-guide/generics/index.md)
 ### [Iterators](csharp/iterators.md)
 ### [Delegates & events](csharp/delegates-events.md)
 #### [Introduction to Delegates](csharp/delegates-overview.md)

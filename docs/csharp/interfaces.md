@@ -10,5 +10,5 @@ ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: csharp
 ms.assetid: be9a19c8-642c-48be-b481-2dab7d216fad
-redirect_url: /csharp/programming-guide/interfaces/index
+redirect_url: /dotnet/articles/csharp/programming-guide/interfaces/index
 ---

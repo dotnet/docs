@@ -10,5 +10,5 @@ ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 63d1fe21-bb1f-46e3-92a0-89efcf0815e8
-redirect_url: /csharp/programming-guide/generics/index
+redirect_url: /dotnet/articles/csharp/programming-guide/generics/index
 ---

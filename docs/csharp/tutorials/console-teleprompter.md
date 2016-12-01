@@ -147,7 +147,7 @@ a @System.IO.StreamReader object.
 Now, let’s fill in the code to read the file in the `Main` method: 
 
 ```cs
-var lines = ReadFrom("SampleQuotes.txt");
+var lines = ReadFrom("sampleQuotes.txt");
 foreach (var line in lines)
 {
     Console.WriteLine(line); 
@@ -244,7 +244,7 @@ Add this method to your `Program` class (it’s taken from the body of your
 ```cs
 private static async Task ShowTeleprompter()
 {
-    var words = ReadFrom("SampleQuotes.txt");
+    var words = ReadFrom("sampleQuotes.txt");
     foreach (var line in words)
     {
         Console.Write(line);
@@ -384,7 +384,7 @@ use the `config` object for the delay:
 ```cs
 private static async Task ShowTeleprompter(TelePrompterConfig config)
 {
-    var words = ReadFrom("SampleQuotes.txt");
+    var words = ReadFrom("sampleQuotes.txt");
     foreach (var line in words)
     {
         Console.Write(line);

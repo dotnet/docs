@@ -55,7 +55,7 @@ Inheritance is accomplished by using a *derivation*, which means a class is decl
   
 When a class declares a base class, it inherits all the members of the base class except the constructors.  
   
-Unlike C++, a class in C# can only directly inherit from one base class. However, because a base class may itself inherit from another class, a class may indirectly inherit multiple base classes. Furthermore, a class can directly implement more than one interface. For more information, see [Interfaces](interfaces.md).  
+Unlike C++, a class in C# can only directly inherit from one base class. However, because a base class may itself inherit from another class, a class may indirectly inherit multiple base classes. Furthermore, a class can directly implement more than one interface. For more information, see [Interfaces](programming-guide/interfaces/index.md).  
   
 A class can be declared [abstract](https://msdn.microsoft.com/library/sf985hc5.aspx). An abstract class contains abstract methods that have a signature definition but no implementation. Abstract classes cannot be instantiated. They can only be used through derived classes that implement the abstract methods. By contrast, a [sealed](https://msdn.microsoft.com/library/88c54tsw.aspx) class does not allow other classes to derive from it. For more information, see [Abstract and sealed classes and class members](https://msdn.microsoft.com/library/ms173150.aspx).  
   

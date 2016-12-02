@@ -99,6 +99,12 @@ A [Webhook](https://en.wikipedia.org/wiki/Webhook) is a callback triggered via a
 
 Webhooks can be implemented in F# and hosted on Azure via an [Azure Function in F# with a Webhook Binding](https://docs.microsoft.com/azure/azure-functions/functions-bindings-http-webhook).
 
+## Using Webjobs with F# #
+
+[Webjobs](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-create-web-jobs) are programs you can run in your App Service web app in three ways: on demand, continuously, or on a schedule.
+
+[Example F# Webjob](https://github.com/andredublin/fsharp-azure-webjob)
+
 ## Implementing Timers on Azure with F# #
 
 Timer triggers call functions based on a schedule, one time or recurring.

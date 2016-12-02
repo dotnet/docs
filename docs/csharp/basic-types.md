@@ -62,7 +62,7 @@ A type can be declared with one or more *type parameters* that serve as a placeh
   
 [!code-csharp[Generic types](../../samples/snippets/csharp/concepts/basic-types/generic-type.cs)] 
   
-The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](https://msdn.microsoft.com/library/9kkx3h3c.aspx). Generic collection classes are called *strongly-typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `strings` object in the previous example. For more information, see [Generics](generics.md). 
+The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](https://msdn.microsoft.com/library/9kkx3h3c.aspx). Generic collection classes are called *strongly-typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `strings` object in the previous example. For more information, see [Generics](programming-guide/generics/index.md). 
 
 ## Implicit types, anonymous types, and tuple types  
 As stated previously, you can implicitly type a local variable (but not class members) by using the [var](https://msdn.microsoft.com/library/bb383973.aspx) keyword. The variable still receives a type at compile time, but the type is provided by the compiler. For more information, see [Implicitly typed local variables](https://msdn.microsoft.com/library/bb384061.aspx).  

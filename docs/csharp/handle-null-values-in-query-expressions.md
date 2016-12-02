@@ -14,7 +14,7 @@ ms.assetid: ac63ae8b-724d-4251-9334-528f4e884ae7
 ---
 # Handle null values in query expressions
 
-This example shows how to handle possible null values in source collections. An object collection such as an <xref:System.Collections.Generic.IEnumerable%601> can contain elements whose value is [null](../../../csharp/language-reference/keywords/null.md). If a source collection is null or contains an element whose value is null, and your query does not handle null values, a <xref:System.NullReferenceException> will be thrown when you execute the query.  
+This example shows how to handle possible null values in source collections. An object collection such as an <xref:System.Collections.Generic.IEnumerable%601> can contain elements whose value is [null](language-reference/keywords/null.md). If a source collection is null or contains an element whose value is null, and your query does not handle null values, a <xref:System.NullReferenceException> will be thrown when you execute the query.  
   
 ## Example
 

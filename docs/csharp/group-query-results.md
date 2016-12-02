@@ -76,6 +76,6 @@ Grouping is one of the most powerful capabilities of LINQ. The following example
  [LINQ Query Expressions](programming-guide/linq-query-expressions/index.md)   
  [group clause](language-reference/keywords/group-clause.md)   
  [Anonymous Types](programming-guide/classes-and-structs/anonymous-types.md)   
- [How to: Perform a Subquery on a Grouping Operation](how-to-perform-a-subquery-on-a-grouping-operation.md)   
- [How to: Create a Nested Group](how-to-create-a-nested-group.md)   
+ [Perform a Subquery on a Grouping Operation](perform-a-subquery-on-a-grouping-operation.md)   
+ [Create a Nested Group](create-a-nested-group.md)   
  [Grouping Data](programming-guide/concepts/linq/grouping-data.md)

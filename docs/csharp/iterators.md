@@ -51,7 +51,7 @@ to generate the code necessary to iterate a collection: `IEnumerable<T>` and
 `IEnumerator<T>`. This mechanism is explained in more detail below.
 
 Both of these interfaces also have non-generic counterparts: `IEnumerable` and 
-`IEnumerator`. The [generic](generics.md) versions are preferred for modern code.
+`IEnumerator`. The [generic](programming-guide/generics/index.md) versions are preferred for modern code.
 
 ## Enumeration sources with iterator methods
 

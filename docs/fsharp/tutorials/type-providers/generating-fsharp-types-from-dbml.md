@@ -150,7 +150,7 @@ You can proceed to use other query expressions, or get a database connection fro
 
 
 ## See Also
-[DbmlFile Type Provider](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/dbmlfile-type-provider-%5bfsharp%5d)
+[DbmlFile Type Provider](https://msdn.microsoft.com/visualfsharpdocs/conceptual/dbmlfile-type-provider-%5bfsharp%5d)
 
 [Type Providers](index.md)
 

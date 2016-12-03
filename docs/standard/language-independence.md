@@ -3,6 +3,7 @@ title: Language independence and language-independent components
 description: Language independence and language-independent components
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/22/2016
 ms.topic: article
@@ -27,7 +28,7 @@ In this article:
 
 * [CLS compliance rules](#cls-compliance-rules)
 
-    * [Types and type member signatures](#Types-and-type-member-signatures)
+    * [Types and type member signatures](#types-and-type-member-signatures)
 
     * [Naming conventions](#naming-conventions)
     
@@ -59,7 +60,7 @@ In this article:
     
 * [CLSCompliantAttribute attribute](#the-clscompliantattribute-attribute)
 
-* [Cross-Language Interoperability](#Cross-Language-Interoperability)
+* [Cross-Language Interoperability](#cross-language-interoperability)
 
 ## CLS compliance rules
 
@@ -193,12 +194,12 @@ Properties | [Properties](#properties) | A property’s accessors shall all be s
 Properties | [Properties](#properties) | The type of a property shall be the return type of the getter and the type of the last argument of the setter. The types of the parameters of the property shall be the types of the parameters to the getter and the types of all but the final parameter of the setter. All of these types shall be CLS-compliant, and shall not be managed pointers (i.e., shall not be passed by reference). | 27
 Properties | [Properties](#properties) | Properties shall adhere to a specific naming pattern. The `SpecialName` attribute referred to in CLS rule 24 shall be ignored in appropriate name comparisons and shall adhere to identifier rules. A property shall have a getter method, a setter method, or both. | 28
 Type conversion | [Type conversion](#type-conversion) | If either op_Implicit or op_Explicit is provided, an alternate means of providing the coercion shall be provided. | 39
-Types | [Types and type member signatures](#Types-and-type-member-signatures) | Boxed value types are not CLS-compliant. | 3
-Types | [Types and type member signatures](#Types-and-type-member-signatures) | All types appearing in a signature shall be CLS-compliant. All types composing an instantiated generic type shall be CLS-compliant. | 11
-Types | [Types and type member signatures](#Types-and-type-member-signatures) | Typed references are not CLS-compliant. | 14
-Types | [Types and type member signatures](#Types-and-type-member-signatures) | Unmanaged pointer types are not CLS-compliant. | 17
-Types | [Types and type member signatures](#Types-and-type-member-signatures) | CLS-compliant classes, value types, and interfaces shall not require the implementation of non-CLS-compliant members | 20
-Types | [Types and type member signatures](#Types-and-type-member-signatures) | [System.Object](xref:System.Object) is CLS-compliant. Any other CLS-compliant class shall inherit from a CLS-compliant class. | 23
+Types | [Types and type member signatures](#types-and-type-member-signatures) | Boxed value types are not CLS-compliant. | 3
+Types | [Types and type member signatures](#types-and-type-member-signatures) | All types appearing in a signature shall be CLS-compliant. All types composing an instantiated generic type shall be CLS-compliant. | 11
+Types | [Types and type member signatures](#types-and-type-member-signatures) | Typed references are not CLS-compliant. | 14
+Types | [Types and type member signatures](#types-and-type-member-signatures) | Unmanaged pointer types are not CLS-compliant. | 17
+Types | [Types and type member signatures](#types-and-type-member-signatures) | CLS-compliant classes, value types, and interfaces shall not require the implementation of non-CLS-compliant members | 20
+Types | [Types and type member signatures](#types-and-type-member-signatures) | [System.Object](xref:System.Object) is CLS-compliant. Any other CLS-compliant class shall inherit from a CLS-compliant class. | 23
 
 ### Types and type member signatures
 
@@ -1104,7 +1105,7 @@ CLS-compliant arrays conform to the following rules:
          Return numbersOut
      End Function
   End Module
-  ```
+```
 
 ### Interfaces
 

@@ -1,0 +1,1 @@
+        My.Computer.Clipboard.Clear()

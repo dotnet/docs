@@ -1,0 +1,61 @@
+---
+title: "Compiler Error CS0564 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0564"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0564"
+ms.assetid: 4c152e10-eb22-4437-a85f-1599c76470e0
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0564
+The first operand of an overloaded shift operator must have the same type as the containing type, and the type of the second operand must be int  
+  
+ You attempted to overload a shift operator (<\< or >>) with incorrectly typed operands. The first operand must be the type and the second operand must be of the type `int`.  
+  
+ The following sample generates CS0564:  
+  
+```  
+// CS0564.cs  
+using System;  
+class C  
+{  
+   public static int operator << (C c1, C c2) // CS0564  
+// To correct, change second operand to int, like so:  
+// public static int operator << (C c1, int c2)  
+   {  
+      return 0;  
+   }  
+   static void Main()   
+   {  
+   }  
+}  
+```

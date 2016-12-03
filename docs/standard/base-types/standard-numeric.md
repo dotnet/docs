@@ -3,6 +3,7 @@ title: Standard numeric format strings
 description: Standard numeric format strings
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/26/2016
 ms.topic: article
@@ -27,7 +28,7 @@ When *precision specifier* controls the number of fractional digits in the resul
 
 Standard numeric format strings are supported by some overloads of the `ToString` method of all numeric types. For example, you can supply a numeric format string to the [ToString(String)](xref:System.Int32.ToString(System.String)) and [ToString(String, IFormatProvider)](xref:System.Int32.ToString(System.String,System.IFormatProvider)) methods of the [Int32](xref:System.Int32) type. Standard numeric format strings are also supported by the .NET [composite formatting](composite-format.md) feature, which is used by some `Write` and `WriteLine` methods of the [Console](xref:System.Console) and [StreamWriter](xref:System.IO.StreamWriter) classes, the [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) method, and the [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)) method. The composite format feature allows you to include the string representation of multiple data items in a single string, to specify field width, and to align numbers in a field. For more information, see [Composite Formatting](composite-format.md). 
 
-The following table describes the standard numeric format specifiers and displays sample output produced by each format specifier. See the [Notes](#Notes) section for additional information about using standard numeric format strings, and the [Example](#Example) section for a comprehensive illustration of their use.
+The following table describes the standard numeric format specifiers and displays sample output produced by each format specifier. See the [Notes](#notes) section for additional information about using standard numeric format strings, and the [Example](#example) section for a comprehensive illustration of their use.
 
 |Format specifier|Name|Description|Examples|  
 |----------------------|----------|-----------------|--------------|  
@@ -37,12 +38,12 @@ The following table describes the standard numeric format specifiers and display
 |"F" or "f"|Fixed-point|Result: Integral and decimal digits with optional negative sign.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of decimal digits.<br /><br /> Default precision specifier: Defined by [NumberFormatInfo.NumberDecimalDigits](xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits).<br /><br /> |1234.567 ("F", en-US) -> 1234.57<br /><br /> 1234.567 ("F", de-DE) -> 1234,57<br /><br /> 1234 ("F1", en-US) -> 1234.0<br /><br /> 1234 ("F1", de-DE) -> 1234,0<br /><br /> -1234.56 ("F4", en-US) -> -1234.5600<br /><br /> -1234.56 ("F4", de-DE) -> -1234,5600|  
 |"G" or "g"|General|Result: The more compact of either fixed-point or scientific notation.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of significant digits.<br /><br /> Default precision specifier: Depends on numeric type.<br /><br /> |-123.456 ("G", en-US) -> -123.456<br /><br /> -123.456 ("G", sv-SE) -> -123,456<br /><br /> 123.4546 ("G4", en-US) -> 123.5<br /><br /> 123.4546 ("G4", sv-SE) -> 123,5<br /><br /> -1.234567890e-25 ("G", en-US) -> -1.23456789E-25<br /><br /> -1.234567890e-25 ("G", sv-SE) -> -1,23456789E-25|  
 |"N" or "n"|Number|Result: Integral and decimal digits, group separators, and a decimal separator with optional negative sign.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Desired number of decimal places.<br /><br /> Default precision specifier: Defined by [NumberFormatInfo.NumberDecimalDigits](xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits).<br /><br /> |1234.567 ("N", en-US) -> 1,234.57<br /><br /> 1234.567 ("N", ru-RU) -> 1 234,57<br /><br /> 1234 ("N1", en-US) -> 1,234.0<br /><br /> 1234 ("N1", ru-RU) -> 1 234,0<br /><br /> -1234.56 ("N3", en-US) -> -1,234.560<br /><br /> -1234.56 ("N3", ru-RU) -> -1 234,560|  
-|"P" or "p"|Percent|Result: Number multiplied by 100 and displayed with a percent symbol.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Desired number of decimal places.<br /><br /> Default precision specifier: Defined by  [NumberFormatInfo.PercentDecimalDigits](assetId:///P:System.Globalization.NumberFormatInfo.PercentDecimalDigits?qualifyHint=True&autoUpgrade=True).<br /><br /> |1 ("P", en-US) -> 100.00 %<br /><br /> 1 ("P", fr-FR) -> 100,00 %<br /><br /> -0.39678 ("P1", en-US) -> -39.7 %<br /><br /> -0.39678 ("P1", fr-FR) -> -39,7 %|  
+|"P" or "p"|Percent|Result: Number multiplied by 100 and displayed with a percent symbol.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Desired number of decimal places.<br /><br /> Default precision specifier: Defined by  [NumberFormatInfo.PercentDecimalDigits](xref:System.Globalization.NumberFormatInfo.PercentDecimalDigits).<br /><br /> |1 ("P", en-US) -> 100.00 %<br /><br /> 1 ("P", fr-FR) -> 100,00 %<br /><br /> -0.39678 ("P1", en-US) -> -39.7 %<br /><br /> -0.39678 ("P1", fr-FR) -> -39,7 %|  
 |"R" or "r"|Round-trip|Result: A string that can round-trip to an identical number.<br /><br /> Supported by: [Single](xref:System.Single), [Double](xref:System.Double), and [BigInteger](xref:System.Numerics.BigInteger).<br /><br /> Precision specifier: Ignored.<br /><br /> |123456789.12345678 ("R") -> 123456789.12345678<br /><br /> -1234567890.12345678 ("R") -> -1234567890.1234567|  
 |"X" or "x"|Hexadecimal|Result: A hexadecimal string.<br /><br /> Supported by: Integral types only.<br /><br /> Precision specifier: Number of digits in the result string.<br /><br /> |255 ("X") -> FF<br /><br /> -1 ("x") -> ff<br /><br /> 255 ("x4") -> 00ff<br /><br /> -1 ("X4") -> 00FF|  
 |Any other single character|Unknown specifier|Result: Throws a [FormatException](xref:System.FormatException) at run time.|| 
 
-## Using Standard Numeric Format Strings
+## Using standard numeric format strings
 
 A standard numeric format string can be used to define the formatting of a numeric value in one of two ways:
 
@@ -96,7 +97,7 @@ A standard numeric format string can be used to define the formatting of a numer
   
 The following sections provide detailed information about each of the standard numeric format strings.
 
-## The Currency ("C") Format Specifier
+## The currency ("C") format specifier
 
 The "C" (or currency) format specifier converts a number to a string that represents a currency amount. The precision specifier indicates the desired number of decimal places in the result string. If the precision specifier is omitted, the default precision is defined by the [NumberFormatInfo.CurrencyDecimalDigits](xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits) property.
 
@@ -147,7 +148,7 @@ Console.WriteLine(value.ToString("C3", _
 '       kr 12.345,679
 ```
 
-## The Decimal ("D") Format Specifier
+## The decimal ("D") format specifier
 
 The "D" (or decimal) format specifier converts a number to a string of decimal digits (0-9), prefixed by a minus sign if the number is negative. This format is supported only for integral types.
 
@@ -193,7 +194,7 @@ Console.WriteLine(value.ToString("D8"))
 ' Displays -00012345
 ```
 
-## The Exponential ("E") Format Specifier
+## The exponential ("E") format specifier
 
 The exponential ("E") format specifier converts a number to a string of the form "-d.ddd…E+ddd" or "-d.ddd…e+ddd", where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative. Exactly one digit always precedes the decimal point. 
 
@@ -243,7 +244,7 @@ Console.WriteLine(value.ToString("E", _
 ' Displays 1,234568E+004
 ```
 
-## The Fixed-Point ("F") Format Specifier
+## The fixed-point ("F") format specifier
 
 The fixed-point ("F) format specifier converts a number to a string of the form "-ddd.ddd…" where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative. 
 
@@ -315,7 +316,7 @@ Console.WriteLine(doubleNumber.ToString("F3", _
 ' Displays -1898300,199                        
 ```
 
-## The General ("G") Format Specifier
+## The general ("G") format specifier
 
 The general ("G") format specifier converts a number to the more compact of either fixed-point or scientific notation, depending on the type of the number and whether a precision specifier is present. The precision specifier defines the maximum number of significant digits that can appear in the result string. If the precision specifier is omitted or zero, the type of the number determines the default precision, as indicated in the following table. 
 
@@ -413,7 +414,7 @@ Console.WriteLine(number.ToString("G5", CultureInfo.InvariantCulture))
 ' Displays 3.1416
 ```
 
-## The Numeric ("N") Format Specifier
+## The numeric ("N") format specifier
 
 The numeric ("N") format specifier converts a number to a string of the form "-d,ddd,ddd.ddd…", where "-" indicates a negative number symbol if required, "d" indicates a digit (0-9), "," indicates a group separator, and "." indicates a decimal point symbol. The precision specifier indicates the desired number of digits after the decimal point. If the precision specifier is omitted, the number of decimal places is defined by the current [NumberFormatInfo.NumberDecimalDigits](xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits) property.
 
@@ -456,7 +457,7 @@ Console.WriteLine(intValue.ToString("N1", CultureInfo.InvariantCulture))
 ' Displays 123,456,789.0 
 ```
 
-## The Percent ("P") Format Specifier
+## The percent ("P") format specifier
 
 The percent ("P") format specifier multiplies a number by 100 and converts it to a string that represents a percentage. The precision specifier indicates the desired number of decimal places. If the precision specifier is omitted, the default numeric precision supplied by the current [PercentDecimalDigits](xref:System.Globalization.NumberFormatInfo.PercentDecimalDigits) property is used.
 
@@ -497,7 +498,7 @@ Console.WriteLine(number.ToString("P1", CultureInfo.InvariantCulture))
 ' Displays 24.7 %
 ```
 
-## The Round-trip ("R") Format Specifier
+## The round-trip ("R") format specifier
 
 The round-trip ("R") format specifier is used to ensure that a numeric value that is converted to a string will be parsed back into the same numeric value. This format is supported only for the [Single](xref:System.Single), [Double](xref:System.Double), and [BigInteger](xref:System.Numerics.BigInteger) types. 
 
@@ -543,7 +544,7 @@ Console.WriteLine(value.ToString("r"))
 ' Displays 1.623E-21
 ```
 
-## The Hexadecimal ("X") Format Specifier
+## The hexadecimal ("X") format specifier
 
 The hexadecimal ("X") format specifier converts a number to a string of hexadecimal digits. The case of the format specifier indicates whether to use uppercase or lowercase characters for hexadecimal digits that are greater than 9. For example, use "X" to produce "ABCDEF", and "x" to produce "abcdef". This format is supported only for integral types.
 
@@ -591,15 +592,15 @@ Console.WriteLine(value.ToString("X2"))
 
 ## Notes
 
-### NumberFormatInfo Properties
+### NumberFormatInfo properties
 
 Formatting is influenced by the properties of the current [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) object, which is provided implicitly by the current thread culture or explicitly by the [IFormatProvider](xref:System.IFormatProvider) parameter of the method that invokes formatting. Specify a [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) or [CultureInfo](xref:System.Globalization.CultureInfo) object for that parameter. 
 
-### Integral and Floating-Point Numeric Types
+### Integral and floating-point numeric types
 
 Some descriptions of standard numeric format specifiers refer to integral or floating-point numeric types. The integral numeric types are [Byte](xref:System.Byte), [SByte](xref:System.SByte), [Int16](xref:System.Int16), [Int32](xref:System.Int32), [Int64](xref:System.Int64), [UInt16](xref:System.UInt16), [UInt32](xref:System.UInt32), [UInt64](xref:System.UInt64), and [BigInteger](xref:System.Numerics.BigInteger). The floating-point numeric types are [Decimal](xref:System.Decimal), [Single](xref:System.Single), and [Double](xref:System.Double). 
 
-### Floating-Point Infinities and NaN
+### Floating-point infinities and NaN
 
 Regardless of the format string, if the value of a [Single](xref:System.Single) or [Double](xref:System.Double) floating-point type is positive infinity, negative infinity, or not a number (NaN), the formatted string is the value of the respective [PositiveInfinitySymbol](xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol), [NegativeInfinitySymbol](xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol), or [NaNSymbol](xref:System.Globalization.NumberFormatInfo.NaNSymbol) property that is specified by the currently applicable [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) object.
 
@@ -712,7 +713,7 @@ Module NumericFormats
 End Module
 ```
 
-## See Also
+## See also
 
 [System.Globalization.NumberFormatInfo](xref:System.Globalization.NumberFormatInfo)
 

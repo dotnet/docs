@@ -1,0 +1,64 @@
+---
+title: "Compiler Error CS1670 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1670"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1670"
+ms.assetid: ee2507e5-b509-4af3-a15e-2c1f2da7159c
+caps.latest.revision: 12
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS1670
+params is not valid in this context  
+  
+ A number of C# features are incompatible with variable argument lists, and do not allow the `params`keyword, including the following:  
+  
+-   Parameter lists of anonymous methods  
+  
+-   Overloaded operators  
+  
+## Example  
+ The following sample generates CS1670:  
+  
+```  
+// CS1670.cs  
+public class C  
+{  
+    public bool operator +(params int[] paramsList)  // CS1670  
+    {  
+        return false;  
+    }  
+  
+    static void Main()  
+    {  
+    }  
+}  
+```

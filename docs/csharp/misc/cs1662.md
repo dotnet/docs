@@ -1,0 +1,61 @@
+---
+title: "Compiler Error CS1662 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1662"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1662"
+ms.assetid: e61a4fc8-0ef1-4a4a-a27b-3a015c3ba38a
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS1662
+Cannot convert anonymous method block to delegate type 'delegate type' because some of the return types in the block are not implicitly convertible to the delegate return type  
+  
+ This error occurs if the anonymous method block's return statement had a type that was not implicitly convertible to the return type of the delegate.  
+  
+ The following sample generates CS1662:  
+  
+```  
+// CS1662.cs  
+  
+delegate int MyDelegate(int i);  
+  
+class C  
+{  
+  
+  public static void Main()  
+  {  
+     MyDelegate d = delegate(int i) { return 1.0; };  // CS1662  
+     // Try this instead:  
+     // MyDelegate d = dekegate(int i) { return (int)1.0; };  
+  }  
+}  
+```

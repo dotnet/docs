@@ -3,6 +3,7 @@ title: Custom numeric format strings
 description: Custom numeric format strings
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/25/2016
 ms.topic: article
@@ -18,7 +19,7 @@ You can create a custom numeric format string, which consists of one or more cus
 
 Custom numeric format strings are supported by some overloads of the `ToString` method of all numeric types. For example, you can supply a numeric format string to the [ToString(String)](xref:System.Int32.ToString(System.String)) and [ToString(String, IFormatProvider)](xref:System.Int32.ToString(System.String,System.IFormatProvider)) methods of the [Int32](xref:System.Int32) type. Custom numeric format strings are also supported by the .NET Framework [composite formatting](composite-format.md) feature, which is used by some `Write` and `WriteLine` methods of the [Console](xref:System.Console) and [StreamWriter](xref:System.IO.StreamWriter) classes, the [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) method, and the [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)) method.
 
-The following table describes the custom numeric format specifiers and displays sample output produced by each format specifier. See the [Notes](#Notes) section for additional information about using custom numeric format strings, and the [Example](#Example) section for a comprehensive illustration of their use.
+The following table describes the custom numeric format specifiers and displays sample output produced by each format specifier. See the [Notes](#notes) section for additional information about using custom numeric format strings, and the [Example](#example) section for a comprehensive illustration of their use.
 
 Format specifier | Name | Description | Examples
 ---------------- | ---- | ----------- | --------

@@ -3,6 +3,7 @@ title: Implementing a dispose method
 description: Implementing a dispose method
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 08/16/2016
 ms.topic: article
@@ -23,7 +24,7 @@ The dispose pattern has two variations:
 * You wrap each unmanaged resource that a type uses in a safe handle (that is, in a class derived from [System.Runtime.InteropServices.SafeHandle](xref:System.Runtime.InteropServices.SafeHandle)). In this case, you implement the [IDisposable](xref:System.IDisposable) interface and an additional `Dispose(Boolean)` method. This is the recommended variation and doesn't require overriding the [Object.Finalize](xref:System.Object.Finalize) method. 
 
 > [!NOTE]
-> The [Microsoft.Win32.SafeHandles](xref:Microsoft.Win32.SafeHandles) namespace provides a set of classes derived from [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle), which are listed in the [Using safe handles](#Using-safe-handles) section. If you can't find a class that is suitable for releasing your unmanaged resource, you can implement your own subclass of [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle). 
+> The [Microsoft.Win32.SafeHandles](xref:Microsoft.Win32.SafeHandles) namespace provides a set of classes derived from [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle), which are listed in the [Using safe handles](#using-safe-handles) section. If you can't find a class that is suitable for releasing your unmanaged resource, you can implement your own subclass of [SafeHandle](xref:System.Runtime.InteropServices.SafeHandle). 
  
 * You implement the [IDisposable](xref:System.IDisposable) interface and an additional `Dispose(Boolean`) method, and you also override the [Object.Finalize](xref:System.Object.Finalize) method. You must override [Finalize](xref:System.Object.Finalize) to ensure that unmanaged resources are disposed of if your [IDisposable.Dispose](xref:System.IDisposable.Dispose) implementation is not called by a consumer of your type. If you use the recommended technique discussed in the previous bullet, the [System.Runtime.InteropServices.SafeHandle](xref:System.Runtime.InteropServices.SafeHandle) class does this on your behalf. 
 
@@ -410,7 +411,7 @@ Classes derived from the [System.Runtime.InteropServices.SafeHandle](xref:System
 
 * The [SafeMemoryMappedViewHandle](xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle) class, for memory views. 
 
-* The [SafeNCryptKeyHandle](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptkeyhandle(v=vs.110).aspx), [SafeNCryptProviderHandle](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptproviderhandle(v=vs.110).aspx), and [SafeNCryptSecretHandle](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptsecrethandle(v=vs.110).aspx) classes, for cryptography constructs.
+* The [SafeNCryptKeyHandle](https://msdn.microsoft.com/library/microsoft.win32.safehandles.safencryptkeyhandle(v=vs.110).aspx), [SafeNCryptProviderHandle](https://msdn.microsoft.com/library/microsoft.win32.safehandles.safencryptproviderhandle(v=vs.110).aspx), and [SafeNCryptSecretHandle](https://msdn.microsoft.com/library/microsoft.win32.safehandles.safencryptsecrethandle(v=vs.110).aspx) classes, for cryptography constructs.
 
 * The [SafeRegistryHandle](xref:Microsoft.Win32.SafeHandles.SafeRegistryHandle) class, for registry keys. 
 
@@ -712,7 +713,7 @@ Public Class DisposableStreamResource2 : Inherits DisposableStreamResource
 End Class
 ```
 
-## See Also
+## See also
 
 [SuppressFinalize](xref:System.GC.SuppressFinalize(System.Object))
 

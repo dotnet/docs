@@ -3,6 +3,7 @@ title: Grouping constructs in regular expressions
 description: Grouping constructs in regular expressions
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
@@ -18,7 +19,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 
 * Match a subexpression that is repeated in the input string.
 
-* Apply a quantifier to a subexpression that has multiple regular expression language elements. For more information about quantifiers, see [Quantifiers in Regular Expressions](quantifiers.md).
+* Apply a quantifier to a subexpression that has multiple regular expression language elements. For more information about quantifiers, see [Quantifiers in regular expressions](quantifiers.md).
 
 * Include a subexpression in the string that is returned by the [Regex.Replace](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String)) and [Match.Result](xref:System.Text.RegularExpressions.Match.Result(System.String)) methods.
 
@@ -28,20 +29,20 @@ The following table lists the grouping constructs supported by .NET regular expr
 
 Grouping construct | Capturing or noncapturing
 ------------------ | -------------------------
-[Matched subexpressions](#Matched-subexpressions) | Capturing
-[Named matched subexpressions](#Named-matched-subexpressions) | Capturing
-[Balancing group definitions](#Balancing group definitions) | Capturing
-[Noncapturing groups](#Noncapturing-groups) | Noncapturing
-[Group options](#Group-options) | Noncapturing
-[Zero-width positive lookahead assertions](#Zero-width-positive-lookahead-assertions) | Noncapturing
-[Zero-width negative lookahead assertions](#Zero-width-negative-lookahead-assertions) | Noncapturing
-[Zero-width positive lookbehind assertions](#Zero-width-positive-lookbehind-assertions) | Noncapturing
-[Zero-width negative lookbehind assertions](#Zero-width-negative-lookbehind-assertions) | Noncapturing
-[Nonbacktracking subexpressions](#Nonbacktracking-subexpressions) | Noncapturing
+[Matched subexpressions](#matched-subexpressions) | Capturing
+[Named matched subexpressions](#named-matched-subexpressions) | Capturing
+[Balancing group definitions](#balancing-group-definitions) | Capturing
+[Noncapturing groups](#noncapturing-groups) | Noncapturing
+[Group options](#group-options) | Noncapturing
+[Zero-width positive lookahead assertions](#zero-width-positive-lookahead-assertions) | Noncapturing
+[Zero-width negative lookahead assertions](#zero-width-negative-lookahead-assertions) | Noncapturing
+[Zero-width positive lookbehind assertions](#zero-width-positive-lookbehind-assertions) | Noncapturing
+[Zero-width negative lookbehind assertions](#zero-width-negative-lookbehind-assertions) | Noncapturing
+[Nonbacktracking subexpressions](#nonbacktracking-subexpressions) | Noncapturing
 
-For information on groups and the regular expression object model, see [Grouping Constructs and Regular Expression Objects](#Grouping-constructs-and-regular-expression-objects). 
+For information on groups and the regular expression object model, see [Grouping Constructs and Regular Expression Objects](#grouping-constructs-and-regular-expression-objects). 
 
-## Matched Subexpressions
+## Matched subexpressions
 
 The following grouping construct captures a matched subexpression: 
 
@@ -60,7 +61,7 @@ You can access captured groups in four ways:
 
 * By using the **$**_number_ replacement sequence in a [Regex.Replace](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String)) or [Match.Result](xref:System.Text.RegularExpressions.Match.Result(System.String)) method call, where *number* is the ordinal number of the captured subexpression.
 
-* Programmatically, by using the [GroupCollection](xref:System.Text.RegularExpressions.GroupCollection) object returned by the [Match.Groups](xref:System.Text.RegularExpressions.Match.Groups) property. The member at position zero in the collection represents the entire regular expression match. Each subsequent member represents a matched subexpression. For more information, see the [Grouping Constructs and Regular Expression Objects](#Grouping-constructs-and-regular-expression-objects) section.
+* Programmatically, by using the [GroupCollection](xref:System.Text.RegularExpressions.GroupCollection) object returned by the [Match.Groups](xref:System.Text.RegularExpressions.Match.Groups) property. The member at position zero in the collection represents the entire regular expression match. Each subsequent member represents a matched subexpression. For more information, see the [Grouping Constructs and Regular Expression Objects](#grouping-constructs-and-regular-expression-objects) section.
 
 The following example illustrates a regular expression that identifies duplicated words in text. The regular expression pattern's two capturing groups represent the two instances of the duplicated word. The second instance is captured to report its starting position in the input string.
 
@@ -117,7 +118,7 @@ Pattern | Description
 `(\1)` | Match the string in the first captured group. This is the second capturing group. The example assigns it to a captured group so that the starting position of the duplicate word can be retrieved from the `Match.Index` property.
 `\W` | Match a non-word character, including white space and punctuation. This prevents the regular expression pattern from matching a word that starts with the word from the first captured group.
  
-## Named Matched Subexpressions
+## Named matched subexpressions
 
 The following grouping construct captures a matched subexpression and lets you access it by name or by number: 
 
@@ -134,7 +135,7 @@ or:
 where *name* is a valid group name, and *subexpression* is any valid regular expression pattern. *name* must not contain any punctuation characters and cannot begin with a number.
 
 > [!NOTE]
-> If the [RegexOptions](xref:System.Text.RegularExpressions.RegexOptions) parameter of a regular expression pattern matching method includes the [RegexOptions.ExplicitCapture](xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture) flag, or if the **n** option is applied to this subexpression (see [Group options](#Group-options) later in this topic), the only way to capture a subexpression is to explicitly name capturing groups.
+> If the [RegexOptions](xref:System.Text.RegularExpressions.RegexOptions) parameter of a regular expression pattern matching method includes the [RegexOptions.ExplicitCapture](xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture) flag, or if the **n** option is applied to this subexpression (see [Group options](#group-options) later in this topic), the only way to capture a subexpression is to explicitly name capturing groups.
  
 You can access named captured groups in the following ways:
 
@@ -310,7 +311,7 @@ Pattern | Description
 `\D+` | Match one or more non-decimal digit characters. 
 `(?<digit>\d+)?` | Match zero or one occurrence of one or more decimal digit characters. Assign the match to the `digit` named group.
  
-## Balancing Group Definitions
+## Balancing group definitions
 
 A balancing group definition deletes the definition of a previously defined group and stores, in the current group, the interval between the previously defined group and the current group. This grouping construct has the following format: 
 
@@ -470,7 +471,7 @@ Pattern | Description
 `(?(Open)(?!))` | If the `Open` group exists, abandon the match if an empty string can be matched, but do not advance the position of the regular expression engine in the string. This is a zero-width negative lookahead assertion. Because an empty string is always implicitly present in an input string, this match always fails. Failure of this match indicates that the angle brackets are not balanced. 
 `$` | Match the end of the input string.
  
-The final subexpression, `(?(Open)(?!))`, indicates whether the nesting constructs in the input string are properly balanced (for example, whether each left angle bracket is matched by a right angle bracket). It uses conditional matching based on a valid captured group; for more information, see [Alternation Constructs in Regular Expressions](alternation.md). If the `Open` group is defined, the regular expression engine attempts to match the subexpression `(?!)` in the input string. The `Open` group should be defined only if nesting constructs are unbalanced. Therefore, the pattern to be matched in the input string should be one that always causes the match to fail. In this case, `(?!)` is a zero-width negative lookahead assertion that always fails, because an empty string is always implicitly present at the next position in the input string.
+The final subexpression, `(?(Open)(?!))`, indicates whether the nesting constructs in the input string are properly balanced (for example, whether each left angle bracket is matched by a right angle bracket). It uses conditional matching based on a valid captured group; for more information, see [Alternation constructs in regular expressions](alternation.md). If the `Open` group is defined, the regular expression engine attempts to match the subexpression `(?!)` in the input string. The `Open` group should be defined only if nesting constructs are unbalanced. Therefore, the pattern to be matched in the input string should be one that always causes the match to fail. In this case, `(?!)` is a zero-width negative lookahead assertion that always fails, because an empty string is always implicitly present at the next position in the input string.
 
 In the example, the regular expression engine evaluates the input string "<abc><mno<xyz>>" as shown in the following table.
 
@@ -501,7 +502,7 @@ Step | Pattern | Result
 23 | `(?(Open)(?!))` | The `Open` group is not defined, so no match is attempted.
 24 | `$` | Matches the end of the input string.
 
-## Noncapturing Groups
+## Noncapturing groups
 
 The following grouping construct does not capture the substring that is matched by a subexpression:
 
@@ -564,13 +565,13 @@ Pattern | Description
 `(?:\b(?:\w+)\W*)+` | Match the pattern of one or more word characters starting at a word boundary, followed by zero or more non-word characters, one or more times. Do not assign the matched text to a captured group.
 `\.` | Match a period.
  
-## Group Options
+## Group options
 
 The following grouping construct applies or disables the specified options within a subexpression:
 
 **(?imnsx-imnsx:**_subexpression_**)**
 
-where *subexpression* is any valid regular expression pattern. For example, `(?i-s:)` turns on case insensitivity and disables single-line mode. For more information about the inline options you can specify, see [Regular Expression Options](options.md).
+where *subexpression* is any valid regular expression pattern. For example, `(?i-s:)` turns on case insensitivity and disables single-line mode. For more information about the inline options you can specify, see [Regular expression options](options.md).
 
 > [!NOTE]
 > You can specify options that apply to an entire regular expression rather than a subexpression by using a [System.Text.RegularExpressions.Regex](xref:System.Text.RegularExpressions.Regex) class constructor or a static method. You can also specify inline options that apply after a specific point in a regular expression by using the `(?imnsx-imnsx)` language construct.
@@ -608,7 +609,7 @@ Next
 '    'decidedly ' found at index 9. 
 ```
 
-## Zero-Width Positive Lookahead Assertions
+## Zero-width positive lookahead assertions
 
 The following grouping construct defines a zero-width positive lookahead assertion:
 
@@ -687,7 +688,7 @@ Pattern | Description
 `\w+` | Match one or more word characters.
 `(?=\sis\b)` | Determine whether the word characters are followed by a white-space character and the string "is", which ends on a word boundary. If so, the match is successful.
 
-## Zero-Width Negative Lookahead Assertions
+## Zero-width negative lookahead assertions
 
 The following grouping construct defines a zero-width negative lookahead assertion:
 
@@ -801,7 +802,7 @@ Pattern | Description
 `\b` | End the match at a word boundary.
 `\p{P})` | If the next character is not a punctuation symbol (such as a period or a comma), the match succeeds.
  
-## Zero-Width Positive Lookbehind Assertions
+## Zero-width positive lookbehind assertions
 
 The following grouping construct defines a zero-width positive lookbehind assertion:
 
@@ -861,7 +862,7 @@ Pattern | Description
  
 Zero-width positive lookbehind assertions are also used to limit backtracking when the last character or characters in a captured group must be a subset of the characters that match that group's regular expression pattern. For example, if a group captures all consecutive word characters, you can use a zero-width positive lookbehind assertion to require that the last character be alphabetical. 
 
-## Zero-Width Negative Lookbehind Assertions
+## Zero-width negative lookbehind assertions
 
 The following grouping construct defines a zero-width negative lookbehind assertion:
 
@@ -938,7 +939,7 @@ Pattern | Description
 `\d{4}\b` | Match four decimal digits, and end the match at a word boundary.
 `(?<!(Saturday|Sunday) )` | If the match is preceded by something other than the strings "Saturday" or "Sunday" followed by a space, the match is successful.
 
-## Nonbacktracking Subexpressions
+## Nonbacktracking subexpressions
 
 The following grouping construct represents a nonbacktracking subexpression (also known as a "greedy" subexpression):
 
@@ -1050,13 +1051,13 @@ Pattern | Description
 `\b` | End the match on a word boundary.
 `(?>(\w)\1+)` | Match one or more occurrences of a duplicated word character, but do not backtrack to match the last character on a word boundary.
  
-## Grouping Constructs and Regular Expression Objects
+## Grouping constructs and regular expression objects
 
 Substrings that are matched by a regular expression capturing group are represented by [System.Text.RegularExpressions.Group](xref:System.Text.RegularExpressions.Group) objects, which can be retrieved from the [System.Text.RegularExpressions.GroupCollection](xref:System.Text.RegularExpressions.GroupCollection) object that is returned by the [Match.Groups](xref:System.Text.RegularExpressions.Match.Groups) property. The [GroupCollection](xref:System.Text.RegularExpressions.GroupCollection) object is populated as follows:
 
 * The first [Group](xref:System.Text.RegularExpressions.Group) object in the collection (the object at index zero) represents the entire match.
 
-* The next set of [Group](xref:System.Text.RegularExpressions.Group) objects represent unnamed (numbered) capturing groups. They appear in the order in which they are defined in the regular expression, from left to right. The index values of these groups range from 1 to the number of unnamed capturing groups in the collection. (The index of a particular group is equivalent to its numbered backreference. For more information about backreferences, see [Backreference Constructs in Regular Expressions](backreference.md)
+* The next set of [Group](xref:System.Text.RegularExpressions.Group) objects represent unnamed (numbered) capturing groups. They appear in the order in which they are defined in the regular expression, from left to right. The index values of these groups range from 1 to the number of unnamed capturing groups in the collection. (The index of a particular group is equivalent to its numbered backreference. For more information about backreferences, see [Backreference constructs in regular expressions](backreference.md)
 
 * The final set of [Group](xref:System.Text.RegularExpressions.Group) objects represent named capturing groups. They appear in the order in which they are defined in the regular expression, from left to right. The index value of the first named capturing group is one greater than the index of the last unnamed capturing group. If there are no unnamed capturing groups in the regular expression, the index value of the first named capturing group is one. 
 
@@ -1151,7 +1152,7 @@ Pattern | Description
  
 The first capturing group matches each word of the sentence. The second capturing group matches each word along with the punctuation and white space that follow the word. The [Group](xref:System.Text.RegularExpressions.Group) object whose index is 2 provides information about the text matched by the second capturing group. The complete set of words captured by the capturing group are available from the [CaptureCollection](xref:System.Text.RegularExpressions.CaptureCollection) object returned by the [Group.Captures](xref:System.Text.RegularExpressions.Group.Captures) property.
 
-## See Also
+## See also
 
 [Regular expression language - quick reference](quick-ref.md)
 

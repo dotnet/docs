@@ -3,6 +3,7 @@ title: Character classes in regular expressions
 description: Character classes in regular expressions
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
@@ -16,32 +17,32 @@ ms.assetid: c7a9305f-7144-4fe8-80e8-a727bf7d223f
 
 A character class defines a set of characters, any one of which can occur in an input string for a match to succeed. The regular expression language in .NET supports the following character classes:
 
-* Positive character groups. A character in the input string must match one of a specified set of characters. For more information, see [Positive Character Group](#Positive-Character-Group:-[-]).
+* Positive character groups. A character in the input string must match one of a specified set of characters. For more information, see [Positive character group](#positive-character-group--).
 
-* Negative character groups. A character in the input string must not match one of a specified set of characters. For more information, see [Negative Character Group](#Negative-Character-Group:-[^]).
+* Negative character groups. A character in the input string must not match one of a specified set of characters. For more information, see [Negative character group](#negative-character-group-).
 
-* Any character. The . (dot or period) character in a regular expression is a wildcard character that matches any character except **\n**. For more information, see [Any Character](#Any-Character:.). 
+* Any character. The . (dot or period) character in a regular expression is a wildcard character that matches any character except **\n**. For more information, see [Any character](#any-character-). 
 
-* A general Unicode category or named block. A character in the input string must be a member of a particular Unicode category or must fall within a contiguous range of Unicode characters for a match to succeed. For more information, see [Unicode Category or Unicode Block](#Unicode-Category-or-Unicode-Block:\p{}).
+* A general Unicode category or named block. A character in the input string must be a member of a particular Unicode category or must fall within a contiguous range of Unicode characters for a match to succeed. For more information, see [Unicode category or Unicode block](#unicode-category-or-unicode-block-p).
 
-* A negative general Unicode category or named block. A character in the input string must not be a member of a particular Unicode category or must not fall within a contiguous range of Unicode characters for a match to succeed. For more information, see [Negative Unicode Category or Unicode Block](#Negative-Unicode-Category-or-Unicode-Block:\P{}).
+* A negative general Unicode category or named block. A character in the input string must not be a member of a particular Unicode category or must not fall within a contiguous range of Unicode characters for a match to succeed. For more information, see [Negative Unicode category or Unicode block](#negative-unicode-category-or-unicode-block-p).
 
-* A word character. A character in the input string can belong to any of the Unicode categories that are appropriate for characters in words. For more information, see [Word Character](#Word-Character:\w).
+* A word character. A character in the input string can belong to any of the Unicode categories that are appropriate for characters in words. For more information, see [Word character](#word-character-w).
 
-* A non-word character. A character in the input string can belong to any Unicode category that is not a word character. For more information, see [Non-Word Character](#Non-Word-Character:\W).
+* A non-word character. A character in the input string can belong to any Unicode category that is not a word character. For more information, see [Non-word character](#non-word-character-w).
 
-* A white-space character. A character in the input string can be any Unicode separator character, as well as any one of a number of control characters. For more information, see [White-Space Character](#White-Space-Character:\s).
+* A white-space character. A character in the input string can be any Unicode separator character, as well as any one of a number of control characters. For more information, see [White-space character](#white-space-character-s).
 
-* A non-white-space character. A character in the input string can be any character that is not a white-space character. For more information, see [Non-White-Space Character](#Non-White-Space-Character:\S).
+* A non-white-space character. A character in the input string can be any character that is not a white-space character. For more information, see [Non-white-space character](#non-white-space-character-s).
 
-* A decimal digit. A character in the input string can be any of a number of characters classified as Unicode decimal digits. For more information, see [Decimal Digit Character](#Decimal-Digit-Character:\d).
+* A decimal digit. A character in the input string can be any of a number of characters classified as Unicode decimal digits. For more information, see [Decimal digit character](#decimal-digit-character-d).
 
-* A non-decimal digit. A character in the input string can be anything other than a Unicode decimal digit. For more information, see [Non-Digit Character](#Non-Digit_Character:\D).
+* A non-decimal digit. A character in the input string can be anything other than a Unicode decimal digit. For more information, see [Non-digit character](#non-digit-character-d).
 
 
-.NET supports character class subtraction expressions, which enables you to define a set of characters as the result of excluding one character class from another character class. For more information, see [Character Class Subtraction](#Character-Class-Subtraction:-[base_group---[excluded_group]]).
+.NET supports character class subtraction expressions, which enables you to define a set of characters as the result of excluding one character class from another character class. For more information, see [Character class subtraction](#character-class-subtraction).
 
-## Positive Character Group: [ ]
+## Positive character group: [ ]
 
 A positive character group specifies a list of characters, any one of which may appear in an input string for a match to occur. This list of characters may be specified individually, as a range, or both. 
 
@@ -163,7 +164,7 @@ Pattern | Description
 `\w*` | Match zero or more word characters.
 `\b` | Match a word boundary.
 
-## Negative Character Group: [^]
+## Negative character group: [^]
 
 A negative character group specifies a list of characters that must not appear in an input string for a match to occur. The list of characters may be specified individually, as a range, or both. 
 
@@ -248,43 +249,43 @@ Pattern | Description
 `\w+` | Match one or more word characters.
 `\b` | End at a word boundary.
 
-## Any Character: .
+## Any character: .
 
 The period character (.) matches any character except **\n** (the newline character, **\u000A**), with the following two qualifications:
 
-* If a regular expression pattern is modified by the `RegexOptions.Singleline` option, or if the portion of the pattern that contains the . character class is modified by the **s** option, . matches any character. For more information, see [Regular Expression Options](options.md).
+* If a regular expression pattern is modified by the [RegexOptions.Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline) option, or if the portion of the pattern that contains the . character class is modified by the **s** option, . matches any character. For more information, see [Regular expression options](options.md).
 
-  The following example illustrates the different behavior of the . character class by default and with the `RegexOptions.Singleline` option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, **\r** or **\u000D**, but it does not match **\n**. Because the `RegexOptions.Singleline` option interprets the entire input string as a single line, it matches every character in the input string, including **\n**.
+  The following example illustrates the different behavior of the . character class by default and with the [RegexOptions.Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline) option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, **\r** or **\u000D**, but it does not match **\n**. Because the [RegexOptions.Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline) option interprets the entire input string as a single line, it matches every character in the input string, including **\n**.
 
-  ```csharp
-  using System;
-  using System.Text.RegularExpressions;
+```csharp
+using System;
+using System.Text.RegularExpressions;
 
-  public class Example
-  {
-     public static void Main()
-     {
-        string pattern = "^.+";
-        string input = "This is one line and" + Environment.NewLine + "this is the second.";
-        foreach (Match match in Regex.Matches(input, pattern))
-           Console.WriteLine(Regex.Escape(match.Value));
+public class Example
+{
+   public static void Main()
+   {
+      string pattern = "^.+";
+      string input = "This is one line and" + Environment.NewLine + "this is the second.";
+      foreach (Match match in Regex.Matches(input, pattern))
+         Console.WriteLine(Regex.Escape(match.Value));
 
-        Console.WriteLine();
-        foreach (Match match in Regex.Matches(input, pattern, RegexOptions.Singleline))
-           Console.WriteLine(Regex.Escape(match.Value));
-     }
-  }
-  // The example displays the following output:
-  //       This\ is\ one\ line\ and\r
-  //       
-  //       This\ is\ one\ line\ and\r\nthis\ is\ the\ second\.
-  ```
+      Console.WriteLine();
+      foreach (Match match in Regex.Matches(input, pattern, RegexOptions.Singleline))
+         Console.WriteLine(Regex.Escape(match.Value));
+   }
+}
+// The example displays the following output:
+//       This\ is\ one\ line\ and\r
+//       
+//       This\ is\ one\ line\ and\r\nthis\ is\ the\ second\.
+```
 
-  ```vb
-  Imports System.Text.RegularExpressions
+```vb
+Imports System.Text.RegularExpressions
 
-  Module Example
-     Public Sub Main()
+Module Example
+    Public Sub Main()
         Dim pattern As String = "^.+"
         Dim input As String = "This is one line and" + vbCrLf + "this is the second."
         For Each match As Match In Regex.Matches(input, pattern)
@@ -300,51 +301,51 @@ The period character (.) matches any character except **\n** (the newline charac
   '       This\ is\ one\ line\ and\r
   '       
   '       This\ is\ one\ line\ and\r\nthis\ is\ the\ second\.
-  ```
+```
 
   > [!NOTE]
   > Because it matches any character except **\n**, the . character class also matches **\r** (the carriage return character, **\u000D**).
  
-* In a positive or negative character group, a period is treated as a literal period character, and not as a character class. For more information, see [Positive Character Group](#Positive-Character-Group:-[-]) or [Negative Character Group](#Negative-Character-Group:-[^]) earlier in this topic. The following example provides an illustration by defining a regular expression that includes the period character (**.**) both as a character class and as a member of a positive character group. The regular expression `\b.*[.?!;:](\s|\z)` begins at a word boundary, matches any character until it encounters one of four punctuation marks, including a period, and then matches either a white-space character or the end of the string.
+* In a positive or negative character group, a period is treated as a literal period character, and not as a character class. For more information, see [Positive character group](#positive-character-group--) or [Negative character group](#negative-character-group-) earlier in this topic. The following example provides an illustration by defining a regular expression that includes the period character (**.**) both as a character class and as a member of a positive character group. The regular expression `\b.*[.?!;:](\s|\z)` begins at a word boundary, matches any character until it encounters one of four punctuation marks, including a period, and then matches either a white-space character or the end of the string.
 
-  ```csharp
-  using System;
-  using System.Text.RegularExpressions;
+```csharp
+using System;
+using System.Text.RegularExpressions;
 
-  public class Example
-  {
-     public static void Main()
-     {
-        string pattern = @"\b.*[.?!;:](\s|\z)";
-        string input = "this. what: is? go, thing.";
-        foreach (Match match in Regex.Matches(input, pattern))
-           Console.WriteLine(match.Value);
-     }
-  }
-  // The example displays the following output:
-  //       this. what: is? go, thing.
-  ```
+public class Example
+{
+   public static void Main()
+   {
+      string pattern = @"\b.*[.?!;:](\s|\z)";
+      string input = "this. what: is? go, thing.";
+      foreach (Match match in Regex.Matches(input, pattern))
+         Console.WriteLine(match.Value);
+   }
+}
+// The example displays the following output:
+//       this. what: is? go, thing.
+```
 
-  ```vb
-  Imports System.Text.RegularExpressions
+```vb
+Imports System.Text.RegularExpressions
 
-  Module Example
-     Public Sub Main()
-        Dim pattern As STring = "\b.*[.?!;:](\s|\z)"
-        Dim input As String = "this. what: is? go, thing."
-        For Each match As Match In Regex.Matches(input, pattern)
-           Console.WriteLine(match.Value)
-        Next   
-     End Sub
-  End Module
-  ' The example displays the following output:
-  '       this. what: is? go, thing.
-  ```
+Module Example
+   Public Sub Main()
+      Dim pattern As STring = "\b.*[.?!;:](\s|\z)"
+      Dim input As String = "this. what: is? go, thing."
+      For Each match As Match In Regex.Matches(input, pattern)
+         Console.WriteLine(match.Value)
+      Next   
+   End Sub
+End Module
+' The example displays the following output:
+'       this. what: is? go, thing.
+```
 
   > [!NOTE]
-  > Because it matches any character, the . language element is often used with a lazy quantifier if a regular expression pattern attempts to match any character multiple times. For more information, see [Quantifiers in Regular Expressions](quantifiers.md). 
+  > Because it matches any character, the . language element is often used with a lazy quantifier if a regular expression pattern attempts to match any character multiple times. For more information, see [Quantifiers in regular expressions](quantifiers.md). 
  
-## Unicode Category or Unicode Block: \p{}
+## Unicode category or Unicode block: \p{}
 
 The Unicode standard assigns each character a general category. For example, a particular character can be an uppercase letter (represented by the **Lu** category), a decimal digit (the **Nd** category), a math symbol (the **Sm** category), or a paragraph separator (the **Zl** category). Specific character sets in the Unicode standard also occupy a specific range or block of consecutive code points. For example, the basic Latin character set is found from **\u0000** through **\u007F**, while the Arabic character set is found from **\u0600** through **\u06FF**. 
 
@@ -352,7 +353,7 @@ The regular expression construct
 
 **\p{**_name_**}**
 
-matches any character that belongs to a Unicode general category or named block, where name is the category abbreviation or named block name. For a list of category abbreviations, see the [Supported Unicode General Categories](#Supported-Unicode-General-Categories) section later in this topic. For a list of named blocks, see the [Supported Named Blocks](#Supported-Named-Blocks) section later in this topic. 
+matches any character that belongs to a Unicode general category or named block, where name is the category abbreviation or named block name. For a list of category abbreviations, see the [Supported Unicode general categories](#supported-unicode-general-categories) section later in this topic. For a list of named blocks, see the [Supported named blocks](#supported-named-blocks) section later in this topic. 
 
 The following example uses the **\p{**_name_**}** construct to match both a Unicode general category (in this case, the **Pd**, or Punctuation,Dash category) and a named block (the **IsGreek** and **IsBasicLatin** named blocks).
 
@@ -399,7 +400,7 @@ Pattern | Description
 `(\s)?` | Match zero or one white-space character.
 `(\p{IsBasicLatin}+(\s)?)+` | Match the pattern of one or more basic Latin characters followed by zero or one white-space characters one or more times.
 
-## Negative Unicode Category or Unicode Block: \P{}
+## Negative Unicode category or Unicode block: \P{}
 
 The Unicode standard assigns each character a general category. For example, a particular character can be an uppercase letter (represented by the **Lu** category), a decimal digit (the **Nd** category), a math symbol (the **Sm** category), or a paragraph separator (the **Zl** category). Specific character sets in the Unicode standard also occupy a specific range or block of consecutive code points. For example, the basic Latin character set is found from **\u0000** through **\u007F**, while the Arabic character set is found from **\u0600** through **\u06FF**. 
 
@@ -407,7 +408,7 @@ The regular expression construct
 
 **\P{**_name_**}**
 
-matches any character that belongs to a Unicode general category or named block, where name is the category abbreviation or named block name. For a list of category abbreviations, see the [Supported Unicode General Categories](#Supported-Unicode-General-Categories) section later in this topic. For a list of named blocks, see the [Supported Named Blocks](#Supported-Named-Blocks) section later in this topic.
+matches any character that belongs to a Unicode general category or named block, where name is the category abbreviation or named block name. For a list of category abbreviations, see the [Supported Unicode general categories](#supported-unicode-general-categories) section later in this topic. For a list of named blocks, see the [Supported named blocks](#supported-named-blocks) section later in this topic.
 
 The following example uses the **\P{**_name_**}** construct to remove any currency symbols (in this case, the **Sc**, or Symbol, Currency category) from numeric strings.
 
@@ -455,7 +456,7 @@ End Module
 
 The regular expression pattern `(\P{Sc})+` matches one or more characters that are not currency symbols; it effectively strips any currency symbol from the result string.
 
-## Word Character: \w
+## Word character: \w
 
 **\w** matches any word character. A word character is a member of any of the Unicode categories listed in the following table. 
 
@@ -470,10 +471,10 @@ Mn | Mark, Nonspacing
 Nd | Number, Decimal Digit
 Pc | Punctuation, Connector. This category includes ten characters, the most commonly used of which is the LOWLINE character (_), u+005F.
  
-If ECMAScript-compliant behavior is specified, **\w** is equivalent to `[a-zA-Z_0-9]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](options.md). 
+If ECMAScript-compliant behavior is specified, **\w** is equivalent to `[a-zA-Z_0-9]`. For information on ECMAScript regular expressions, see the [ECMAScript matching behavior](options.md#ecmascript-matching-behavior) section in [Regular expression options](options.md). 
 
 > [!NOTE]
-> Because it matches any word character, the \w language element is often used with a lazy quantifier if a regular expression pattern attempts to match any word character multiple times, followed by a specific word character. For more information, see [Quantifiers in Regular Expressions](quantifiers.md).
+> Because it matches any word character, the \w language element is often used with a lazy quantifier if a regular expression pattern attempts to match any word character multiple times, followed by a specific word character. For more information, see [Quantifiers in regular expressions](quantifiers.md).
 
 The following example uses the **\w** language element to match duplicate characters in a word. The example defines a regular expression pattern, **(\w)\1**, which can be interpreted as follows.
 
@@ -545,7 +546,7 @@ End Module
 '       'nn' found in 'stunned' at position 3.
 ```
 
-## Non-Word Character: \W
+## Non-word character: \W
 
 **\W** matches any non-word character. The **\W** language element is equivalent to the following character class:
 
@@ -566,10 +567,10 @@ Mn | Mark, Nonspacing
 Nd | Number, Decimal Digit
 Pc | Punctuation, Connector. This category includes ten characters, the most commonly used of which is the LOWLINE character (_), u+005F.
  
-If ECMAScript-compliant behavior is specified, **\W** is equivalent to `[^a-zA-Z_0-9]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](options.md). 
+If ECMAScript-compliant behavior is specified, **\W** is equivalent to `[^a-zA-Z_0-9]`. For information on ECMAScript regular expressions, see the [ECMAScript matching behavior](options.md#ecmascript-matching-behavior) section in [Regular expression options](options.md). 
 
 > [!NOTE]
-> Because it matches any word character, the \w language element is often used with a lazy quantifier if a regular expression pattern attempts to match any word character multiple times, followed by a specific word character. For more information, see [Quantifiers in Regular Expressions](quantifiers.md). 
+> Because it matches any word character, the \w language element is often used with a lazy quantifier if a regular expression pattern attempts to match any word character multiple times, followed by a specific word character. For more information, see [Quantifiers in regular expressions](quantifiers.md). 
 
 The following example illustrates the **\W** character class. It defines a regular expression pattern, `\b(\w+)(\W){1,2}`, that matches a word followed by one or two non-word characters, such as white space or punctuation. The regular expression is interpreted as shown in the following table.
 
@@ -674,7 +675,7 @@ End Module
 
 Because the `Group` object for the second capturing group contains only a single captured non-word character, the example retrieves all captured non-word characters from the `CaptureCollection` object that is returned by the `Group.Captures` property.
 
-## White-Space Character: \s
+## White-space character: \s
 
 **\s** matches any white-space character. It is equivalent to the escape sequences and Unicode categories listed in the following table. 
 
@@ -689,7 +690,7 @@ Category | Description
 **\p{Z}** | Matches any separator character.
  
 
-If ECMAScript-compliant behavior is specified, **\s** is equivalent to `[ \f\n\r\t\v]`.  For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](options.md). 
+If ECMAScript-compliant behavior is specified, **\s** is equivalent to `[ \f\n\r\t\v]`.  For information on ECMAScript regular expressions, see the [ECMAScript matching behavior](options.md#ecmascript-matching-behavior) section in [Regular expression options](options.md). 
 
 The following example illustrates the \s character class. It defines a regular expression pattern, `\b\w+(e)?s(\s|$)`, that matches a word ending in either "s" or "es" followed by either a white-space character or the end of the input string. The regular expression is interpreted as shown in the following table.
 
@@ -741,11 +742,11 @@ End Module
 '       leaves
 ```
 
-## Non-White-Space Character: \S
+## Non-white-space character: \S
 
 **\S** matches any non-white-space character. It is equivalent to the `[^\f\n\r\t\v\x85\p{Z}]` regular expression pattern, or the opposite of the regular expression pattern that is equivalent to **\s**, which matches white-space characters. For more information, see the oprevious section, "White-Space Character: \s".
 
-If ECMAScript-compliant behavior is specified, **\S** is equivalent to `[^ \f\n\r\t\v]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](options.md).
+If ECMAScript-compliant behavior is specified, **\S** is equivalent to `[^ \f\n\r\t\v]`. For information on ECMAScript regular expressions, see the [ECMAScript matching behavior](options.md#ecmascript-matching-behavior) section in [Regular expression options](options.md).
 
 The following example illustrates the **\S** language element. The regular expression pattern \b(\S+)\s? matches strings that are delimited by white-space characters. The second element in the match's GroupCollection object contains the matched string. The regular expression can be interpreted as shown in the following table.
 
@@ -837,11 +838,11 @@ End Module
 '    paragraph.
 ```
 
-## Decimal Digit Character: \d
+## Decimal digit character: \d
 
 **\d** matches any decimal digit. It is equivalent to the `\\p{Nd}` regular expression pattern, which includes the standard decimal digits 0-9 as well as the decimal digits of a number of other character sets.
 
-If ECMAScript-compliant behavior is specified, **\d** is equivalent to `[0-9]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](options.md).
+If ECMAScript-compliant behavior is specified, **\d** is equivalent to `[0-9]`. For information on ECMAScript regular expressions, see the [ECMAScript matching behavior](options.md#ecmascript-matching-behavior) section in [Regular expression options](options.md).
 
 The following example illustrates the **\d** language element. It tests whether an input string represents a valid telephone number in the United States and Canada. The regular expression pattern `^(\(?\d{3}\)?[\s-])?\d{3}-\d{4}$` is defined as shown in the following table.
 
@@ -917,11 +918,11 @@ End Module
 '       01 999-9999: match failed
 ```
 
-## Non-Digit Character: \D
+## Non-digit character: \D
 
 **\D** matches any non-digit character. It is equivalent to the `\P{Nd}` regular expression pattern.
 
-If ECMAScript-compliant behavior is specified, **\D** is equivalent to `[^0-9]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](options.md).
+If ECMAScript-compliant behavior is specified, **\D** is equivalent to `[^0-9]`. For information on ECMAScript regular expressions, see the [ECMAScript matching behavior](options.md#ecmascript-matching-behavior) section in [Regular expression options](options.md).
 
 The following example illustrates the **\D** language element. It tests whether a string such as a part number consists of the appropriate combination of decimal and non-decimal characters. The regular expression pattern `^\D\d{1,5}\D*$` is defined as shown in the following table.
 
@@ -980,7 +981,7 @@ End Module
 ' The example displays the following output:
 ```
 
-## Supported Unicode General Categories
+## Supported Unicode general categories
 
 Unicode defines the general categories listed in the following table. For more information, see the "UCD File Format" and "General Category Values" subtopics at the [Unicode Character Database](http://www.unicode.org/reports/tr44/).
 
@@ -1136,7 +1137,8 @@ FE70 - FEFF | **IsArabicPresentationForms-B**
 FF00 - FFEF | **IsHalfwidthandFullwidthForms** 
 FFF0 - FFFF | **IsSpecials**
  
-## Character Class Subtraction: [base_group - [excluded_group]]
+<a name="character-class-subtraction"></a>
+## Character class subtraction: [base_group - [excluded_group]]
 
 A character class defines a set of characters. Character class subtraction yields a set of characters that is the result of excluding the characters in one character class from another character class. 
 
@@ -1205,7 +1207,6 @@ End Module
 '       335599901
 ```
 
-## See Also
+## See also
 
 [Regular expression options](options.md)
-

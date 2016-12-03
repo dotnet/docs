@@ -3,6 +3,7 @@ title: Regular expression language - quick reference
 description: Regular expression language - quick reference
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/28/2016
 ms.topic: article
@@ -14,29 +15,29 @@ ms.assetid: 8c5dee8c-7bc7-4e6e-aff1-986965c4d98e
 
 # Regular expression language - quick reference
 
-A regular expression is a pattern that the regular expression engine attempts to match in input text. A pattern consists of one or more character literals, operators, or constructs. For a brief introduction, see [Regular Expressions in .NET](regular-expressions.md). 
+A regular expression is a pattern that the regular expression engine attempts to match in input text. A pattern consists of one or more character literals, operators, or constructs. For a brief introduction, see [Regular expressions in .NET](regular-expressions.md). 
 
 Each section in this quick reference lists a particular category of characters, operators, and constructs that you can use to define regular expressions: 
 
-* [Character escapes](#Character-escapes)
+* [Character escapes](#character-escapes)
+
+* [Character classes](#character-classes)
       
-* [Character classes](#Character-classes)
-      
-* [Anchors](#Anchors)
+* [Anchors](#anchors)
     
-* [Grouping constructs](#Grouping-constructs)
+* [Grouping constructs](#grouping-constructs)
       
-* [Quantifiers](#Quantifiers)
+* [Quantifiers](#quantifiers)
     
-* [Backreference constructs](#Backreference-constructs)
+* [Backreference constructs](#backreference-constructs)
       
-* [Alternation constructs](#Alternation-constructs)
+* [Alternation constructs](#alternation-constructs)
      
-* [Substitutions](#Substitutions)
+* [Substitutions](#substitutions)
       
-* [Regular expression options](#Regular-expression-options)
+* [Regular expression options](#regular-expression-options)
       
-* [Miscellaneous constructs](#Miscellaneous-constructs)
+* [Miscellaneous constructs](#miscellaneous-constructs)
 
 We’ve also provided this information in two formats that you can download and print for easy reference: 
 
@@ -46,7 +47,7 @@ We’ve also provided this information in two formats that you can download and 
     
 ## Character Escapes
 
-The backslash character (\) in a regular expression indicates that the character that follows it either is a special character (as shown in the following table), or should be interpreted literally. For more information, see [Character Escapes in Regular Expressions](escapes.md). 
+The backslash character (\) in a regular expression indicates that the character that follows it either is a special character (as shown in the following table), or should be interpreted literally. For more information, see [Character escapes in regular expressions](escapes.md). 
 
 Escaped character | Description | Pattern | Matches
 ----------------- | ----------- | ------- | -------
@@ -62,11 +63,11 @@ Escaped character | Description | Pattern | Matches
 **\x**_nn_ | Uses hexadecimal representation to specify a character (*nn* consists of exactly two digits). | `\w\x20\w` | "a b", "c d" in "a bc d"
 **\c**_X_ or **\c**_x_ | Matches the ASCII control character that is specified by *X* or *x*, where *X* or *x* is the letter of the control character. | `\cC` | "\x0003" in "\x0003" (Ctrl-C) 
 **\u**_nnnn_ | Matches a Unicode character by using hexadecimal representation (exactly four digits, as represented by *nnnn*). | `\w\u0020\w` | "a b", "c d" in "a bc d"
-**\** | When followed by a character that is not recognized as an escaped character in this and other tables in this topic, matches that character. For example, __\*__ is the same as **\x2A**, and **\.** is the same as **\x2E**. This allows the regular expression engine to disambiguate language elements (such as `*` or `?`) and character literals (represented by `\*` or `\?)`. | `\d+[\+-x\*]\d+` | "2+2" and "3*9" in "(2+2) * 3*9"
+**\\** | When followed by a character that is not recognized as an escaped character in this and other tables in this topic, matches that character. For example, __\*__ is the same as **\x2A**, and **\.** is the same as **\x2E**. This allows the regular expression engine to disambiguate language elements (such as `*` or `?`) and character literals (represented by `\*` or `\?)`. | `\d+[\+-x\*]\d+` | "2+2" and "3*9" in "(2+2) * 3*9"
  
 ## Character Classes
 
-A character class matches any one of a set of characters. Character classes include the language elements listed in the following table. For more information, see [Character Classes in Regular Expressions](classes.md).
+A character class matches any one of a set of characters. Character classes include the language elements listed in the following table. For more information, see [Character classes in regular expressions](classes.md).
 
 Character class | Description | Pattern | Matches
 --------------- | ----------- | ------- | ------- 
@@ -85,7 +86,7 @@ __\P{__*name*__}__ | Matches any single character that is not in the Unicode gen
 
 ## Anchors
 
-Anchors, or atomic zero-width assertions, cause a match to succeed or fail depending on the current position in the string, but they do not cause the engine to advance through the string or consume characters. The metacharacters listed in the following table are anchors. For more information, see [Anchors in Regular Expressions](anchors.md).
+Anchors, or atomic zero-width assertions, cause a match to succeed or fail depending on the current position in the string, but they do not cause the engine to advance through the string or consume characters. The metacharacters listed in the following table are anchors. For more information, see [Anchors in regular expressions](anchors.md).
 
 Assertion | Description | Pattern | Matches
 --------- | ----------- | ------- | ------- 
@@ -100,15 +101,15 @@ Assertion | Description | Pattern | Matches
 
 ## Grouping Constructs
 
-Grouping constructs delineate subexpressions of a regular expression and typically capture substrings of an input string. Grouping constructs include the language elements listed in the following table. For more information, see [Grouping Constructs in Regular Expressions](grouping.md).
+Grouping constructs delineate subexpressions of a regular expression and typically capture substrings of an input string. Grouping constructs include the language elements listed in the following table. For more information, see [Grouping constructs in regular expressions](grouping.md).
 
 Grouping construct | Description | Pattern | Matches
 ------------------ | ----------- | ------- | ------- 
 **(**_subexpression_**)** | Captures the matched subexpression and assigns it a one-based ordinal number. | `(\w)\1` | "ee" in "deep"
 **(?**<name> _subexpression_**)** | Captures the matched subexpression into a named group. | `(?<double>\w)\k<double>` | "ee" in "deep"
-**(?**<name1-name2> _subexpression_**)** | Defines a balancing group definition. For more information, see the "Balancing Group Definition" section in [Grouping Constructs in Regular Expressions](grouping.md). | `(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$` | "((1-3)*(3-1))" in "3+2^((1-3)*(3-1))"
+**(?**<name1-name2> _subexpression_**)** | Defines a balancing group definition. For more information, see the [Balancing Group Definitions](grouping.md#balancing-group-definitions) section in [Grouping constructs in regular expressions](grouping.md). | `(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$` | "((1-3)*(3-1))" in "3+2^((1-3)*(3-1))"
 **(?**: subexpression**)** | Defines a noncapturing group. | `Write(?:Line)?` | "WriteLine" in "Console.WriteLine()", "Write" in "Console.Write(value)"
-**(?imnsx-imnsx**: _subexpression_**)** | Applies or disables the specified options within _subexpression_. For more information, see [Regular Expression Options](options.md). | `A\d{2}(?i:\w+)\b` | "A12xl", "A12XL" in "A12xl A12XL a12xl"
+**(?imnsx-imnsx**: _subexpression_**)** | Applies or disables the specified options within _subexpression_. For more information, see [Regular expression options](options.md). | `A\d{2}(?i:\w+)\b` | "A12xl", "A12XL" in "A12xl A12XL a12xl"
 **(?**= _subexpression_**)** | Zero-width positive lookahead assertion. | `\w+(?=\.)` | "is", "ran", and "out" in "He is. The dog ran. The sun is out."
 **(?!** _subexpression_**)** | Zero-width negative lookahead assertion. | `\b(?!un)\w+\b` | "sure", "used" in "unsure sure unity used"
 **(?**<= _subexpression_**)** | Zero-width positive lookbehind assertion. | `(?<=19)\d{2}\b` | "99", "50", "05" in "1851 1999 1950 1905 2003"
@@ -117,7 +118,7 @@ Grouping construct | Description | Pattern | Matches
 
 ## Quantifiers
 
-A quantifier specifies how many instances of the previous element (which can be a character, a group, or a character class) must be present in the input string for a match to occur. Quantifiers include the language elements listed in the following table. For more information, see [Quantifiers in Regular Expressions](quantifiers.md).
+A quantifier specifies how many instances of the previous element (which can be a character, a group, or a character class) must be present in the input string for a match to occur. Quantifiers include the language elements listed in the following table. For more information, see [Quantifiers in regular expressions](quantifiers.md).
 
 Quantifier | Description | Pattern | Matches
 ---------- | ----------- | ------- | -------
@@ -136,7 +137,7 @@ __*?__ | Matches the previous element zero or more times, but as few times as po
 
 ## Backreference Constructs
 
-A backreference allows a previously matched subexpression to be identified subsequently in the same regular expression. The following table lists the backreference constructs supported by regular expressions in the .NET Framework. For more information, see [Backreference Constructs in Regular Expressions](backreference.md).
+A backreference allows a previously matched subexpression to be identified subsequently in the same regular expression. The following table lists the backreference constructs supported by regular expressions in the .NET Framework. For more information, see [Backreference constructs in regular expressions](backreference.md).
 
 Backreference construct | Description | Pattern | Matches
 ----------------------- | ----------- | ------- | -------
@@ -145,7 +146,7 @@ Backreference construct | Description | Pattern | Matches
 
 ## Alternation Constructs
 
-Alternation constructs modify a regular expression to enable either/or matching. These constructs include the language elements listed in the following table. For more information, see [Alternation Constructs in Regular Expressions](alternation.md).
+Alternation constructs modify a regular expression to enable either/or matching. These constructs include the language elements listed in the following table. For more information, see [Alternation constructs in regular expressions](alternation.md).
 
 Alternation construct | Description | Pattern | Matches
 --------------------- | ----------- | ------- | ------- 
@@ -155,7 +156,7 @@ __(?(__*expression*__)__*yes*__&#124;__*no*__)__ | Matches *yes* if the regular 
 
 ## Substitutions
 
-Substitutions are regular expression language elements that are supported in replacement patterns. For more information, see [Substitutions in Regular Expressions](substitutions.md). The metacharacters listed in the following table are atomic zero-width assertions.
+Substitutions are regular expression language elements that are supported in replacement patterns. For more information, see [Substitutions in regular expressions](substitutions.md). The metacharacters listed in the following table are atomic zero-width assertions.
 
 Character | Description | Pattern | Replacement pattern | Input string | Result string
 --------- | ----------- | ------- | ------------------- | ------------ | ------------- 
@@ -170,7 +171,7 @@ Character | Description | Pattern | Replacement pattern | Input string | Result 
 
 ## Regular Expression Options
 
-You can specify options that control how the regular expression engine interprets a regular expression pattern. Many of these options can be specified either inline (in the regular expression pattern) or as one or more `RegexOptions` constants. This quick reference lists only inline options. For more information about inline and `RegexOptions` options, see the article [Regular Expression Options](options.md). 
+You can specify options that control how the regular expression engine interprets a regular expression pattern. Many of these options can be specified either inline (in the regular expression pattern) or as one or more `RegexOptions` constants. This quick reference lists only inline options. For more information about inline and `RegexOptions` options, see the article [Regular expression options](options.md). 
 
 You can specify an inline option in two ways:
 
@@ -183,9 +184,9 @@ The .NET regular expression engine supports the following inline options.
 Option | Description | Pattern | Matches
 ------ | ----------- | ------- | ------- 
 **i** | Use case-insensitive matching. | **\b(?i)a(?-i)a\w+\b** | "aardvark", "aaaAuto" in "aardvark AAAuto aaaAuto Adam breakfast" 
-**m** | Use multiline mode. **^** and **$** match the beginning and end of a line, instead of the beginning and end of a string. | For an example, see the "Multiline Mode" section in [Regular Expression Options](options.md). | 
-**n*** | Do not capture unnamed groups. | For an example, see the "Explicit Captures Only" section in [Regular Expression Options](options.md). | 
-**s** | Use single-line mode. | For an example, see the "Single-line Mode" section in [Regular Expression Options](options.md). | 
+**m** | Use multiline mode. **^** and **$** match the beginning and end of a line, instead of the beginning and end of a string. | For an example, see the "Multiline Mode" section in [Regular expression options](options.md). | 
+**n*** | Do not capture unnamed groups. | For an example, see the "Explicit Captures Only" section in [Regular expression options](options.md). | 
+**s** | Use single-line mode. | For an example, see the "Single-line Mode" section in [Regular expression options](options.md). | 
 **x** | Ignore unescaped white space in the regular expression pattern. | **\b(?x) \d+ \s \w+** | "1 aardvark", "2 cats" in "1 aardvark 2 cats IV centurions" 
 
 ##Miscellaneous Constructs
@@ -194,7 +195,7 @@ Miscellaneous constructs either modify a regular expression pattern or provide i
 
 Construct | Definition | Example
 --------- | ---------- | ------- 
-**(?imnsx-imnsx)** | Sets or disables options such as case insensitivity in the middle of a pattern. For more information, see [Regular Expression Options](options.md). | `\bA(?i)b\w+\b` matches "ABA", "Able" in "ABA Able Act"
+**(?imnsx-imnsx)** | Sets or disables options such as case insensitivity in the middle of a pattern. For more information, see [Regular expression options](options.md). | `\bA(?i)b\w+\b` matches "ABA", "Able" in "ABA Able Act"
 **(?#** _comment_**)** | Inline comment. The comment ends at the first closing parenthesis. | `\bA(?#` matches words starting with `A)\w+\b`
 **#** [to end of line] | X-mode comment. The comment starts at an unescaped # and continues to the end of the line. | `(?x)\bA\w+\b#` matches words starting with `A`
 

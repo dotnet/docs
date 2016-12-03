@@ -12,7 +12,7 @@ ms.devlang: csharp
 ms.assetid: b6a0539a-8ce5-4da7-adcf-44be345a2714
 ---
 
-# 🔧 Methods and Lambda Expressions
+# Methods and Lambda Expressions
 
 > **Note**
 > 

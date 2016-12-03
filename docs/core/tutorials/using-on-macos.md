@@ -68,7 +68,7 @@ In VS Code, open the 'golden' directory. This directory is the root of your solu
 Next, create a `global.json` file in the root directory for your solution.
 The contents of `global.json` are:
 
-```js
+```json
 {
     "projects": [
         "src",
@@ -100,7 +100,7 @@ This creates a library project, with two files: `project.json` and
 
 `project.json` contains the following information:
 
-```js
+```json
 {
   "version": "1.0.0-*",
   "buildOptions": {
@@ -122,7 +122,7 @@ This library project will make use of JSON representation of objects, so you'll 
 add a reference to the `Newtonsoft.Json` NuGet package. In`project.json`
 add the latest pre-release version of the package as a dependency:
 
-```js
+```json
 "dependencies": {
     "Newtonsoft.Json": "9.0.1-beta1"
 },
@@ -141,7 +141,7 @@ but will do so by converting that number to a JSON string, and then
 deserializing it. Rename the file `Library.cs` to `Thing.cs`. Then, replace
 the existing code (for the template-generated Class1) with the following:
 
-```cs
+```csharp
 using static Newtonsoft.Json.JsonConvert;
 
 namespace Library
@@ -173,7 +173,7 @@ You'll need to add a dependency node for the library you wrote in the steps
 above. Open `project.json` and update the dependencies section to the following
 (including the `library` node, which is the last node below):
 
-```js
+```json
 "dependencies": {
   "System.Runtime.Serialization.Primitives": "4.1.1",
   "xunit": "2.1.0",
@@ -222,7 +222,7 @@ in the previous steps. You need to indicate that by editing `project.json`
 to add this dependency.  In the `dependencies` node, add the `library`
 node as follows:
 
-```js
+```json
 "dependencies": {
   "library": {
     "target": "project"
@@ -237,13 +237,13 @@ NuGet package.
 Run `dotnet restore` to restore all dependencies. Open `program.cs`
 and replace the contents of the `Main` method with this line:
 
-```cs
+```csharp
 WriteLine($"The answer is {new Thing().Get(19, 23)}");
 ```
 
 You'll need to add a couple `using` directives to the top of the file:
 
-```cs
+```csharp
 using static System.Console;
 using Library;
 ```
@@ -280,7 +280,7 @@ runs `dotnet build` in the workspace source directory. Instead, you want to run 
 the `src/app` directory. You need to add a `options` node to set the current
 working directory to that:
 
-```js
+```json
 "options": {
     "cwd": "${workspaceRoot}/src/app"
 }
@@ -289,13 +289,13 @@ working directory to that:
 Next, you'll need to open `launch.json` and update the program path. You'll see a
 node under "configurations" that describes the program. You'll see:
 
-```js
+```json
 "program": "${workspaceRoot}/bin/Debug/<target-framework>/<project-name.dll>",
 ```
 
 You'll change this to:
 
-```js
+```json
 "program": "${workspaceRoot}/src/app/bin/Debug/netcoreapp1.0/app.dll",
 ```
 
@@ -305,7 +305,7 @@ generate portable PDB files (this happens by default on Mac OSX and Linux).
 Add the `debugType` node inside `buildOptions`. You'll need to add the `debugType` node
 in `project.json` for both the `src/app` and `src/library` folders.
 
-```js
+```json
   "buildOptions": {
     "debugType": "portable"
   },

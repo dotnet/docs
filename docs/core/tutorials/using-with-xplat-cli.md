@@ -14,17 +14,17 @@ ms.assetid: be988f09-7349-43b0-97fb-3a703d4587ce
 
 # Getting started with .NET Core on Windows/Linux/macOS using the command line
 
-This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.
+This guide will show you how to use the .NET Core CLI tooling to build basic cross-platform console apps.
 
 If you're unfamiliar with the .NET Core CLI toolset, read [the .NET Core SDK overview](../sdk.md).
 
 ## Prerequisites
 
-Before you begin, ensure you have the [latest .NET Core CLI tooling](https://www.microsoft.com/net/core).  You'll also need a text editor.
+Before you begin, ensure you have the [latest .NET Core CLI tooling](https://www.microsoft.com/net/core). You'll also need a text editor.
 
 ## Hello, Console App!
 
-First, navigate to or create a new folder with a name you like.  "Hello" is the name chosen for the sample code, which can be found [here](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Hello).
+Navigate to or create a new folder with a name you like. "Hello" is the name chosen for the sample code, which can be found [here](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Hello).
 
 Open up a command prompt and type the following:
 
@@ -95,7 +95,7 @@ You can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the c
 
 ### Building a self-contained application
 
-Let's try compiling a self-contained application instead of a portable application. You can read more about the [types of portability in .NET Core](../app-types.md) to learn about the different application types, and how they are deployed.
+Let's try compiling a self-contained application instead of a portable application. You can read more about the [types of portability in .NET Core](../deploying/index.md) to learn about the different application types, and how they are deployed.
 
 You need to make some changes to your `project.json`
 file to direct the tools to build a self-contained application. You can see these in the

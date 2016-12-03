@@ -40,7 +40,7 @@
           "files": ["**/*.md"],
           "src": "docs",
           "dest": "articles",
-          "exclude": ["**/includes/**"] 
+          "exclude": ["**/includes/**", "***/contributing.md"] 
         },
         {
           "files": ["*.md"],
@@ -57,6 +57,7 @@
           "files": [
             "images/**", 
             "**/*.png",
+            "**/*.svg",            
             "**/*.jpg",
             "**/*.gif",
             "**/*.bmp"
@@ -78,6 +79,7 @@
       "author": "dotnet-bot"
     },
     "dest": "_site",
-    "template": [ "docs.html" ]
+    "template": [ "docs.html" ],
+    "xref": ["_zip/msdn.4.5.2.zip", "_zip/namespaces.4.5.2.zip", "_zip/vs.110.zip", "_zip/vs.140.zip", "_zip/office15.zip", "_zip/missingapi.yml"]
   }
 }

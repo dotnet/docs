@@ -15,7 +15,7 @@ ms.assetid: 70285a83-4103-4617-be8b-d0e1e9a4a91d
 #dotnet-build
 
 ## Name 
-dotnet-build -- Builds a project and all of its dependencies 
+`dotnet-build` - Builds a project and all of its dependencies. 
 
 ## Synopsis
 
@@ -76,11 +76,11 @@ Compiles for a specific framework. The framework needs to be defined in the [pro
 
 Defines a configuration under which to build.  If omitted, it defaults to `Debug`.
 
-`-r|--runtime [RUNTIME_IDENTIFIER]`
+`-r|--runtime <RUNTIME_IDENTIFIER>`
 
 Target runtime to build for. For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../rid-catalog.md). 
 
-`--version-suffix [VERSION_SUFFIX]`
+`--version-suffix <VERSION_SUFFIX>`
 
 Defines what `*` should be replaced with in the version field in the [project.json](project-json.md#version) file. The format follows NuGet's version guidelines. 
 

@@ -16,7 +16,7 @@ ms.assetid: 3a0fa917-eb0a-4d7e-9217-d06e65455675
 
 ## Name
 
-`dotnet-test` - Runs unit tests using the configured test runner
+`dotnet-test` - Runs unit tests using the configured test runner.
 
 ## Synopsis
 

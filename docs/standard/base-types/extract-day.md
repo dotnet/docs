@@ -3,6 +3,7 @@ title: "How to: extract the day of the week from a specific date"
 description: How to extract the day of the week from a specific date
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/26/2016
 ms.topic: article
@@ -18,7 +19,7 @@ ms.assetid: 88a8f8b9-f5c9-4503-b968-84468b52bb8e
 
 ## To extract a number indicating the day of the week from a specific date
 
-1. If you are working with the string representation of a date, convert it to a [DateTime](xref:System.DateTime) or a [DateTimeOffset](xref:System.DateTimeOffset) value by using the static [DateTime.Parse](xref:System.DateTime#System.DateTime.Parse(System.String)) or [DateTimeOffset.Parse](xref:System.DateTimeOffset.Parse(System.String)) method.
+1. If you are working with the string representation of a date, convert it to a [DateTime](xref:System.DateTime) or a [DateTimeOffset](xref:System.DateTimeOffset) value by using the static [DateTime.Parse](xref:System.DateTime.Parse(System.String)) or [DateTimeOffset.Parse](xref:System.DateTimeOffset.Parse(System.String)) method.
 
 2. Use the [Datetime.DayOfWeek](xref:System.DateTime.DayOfWeek) or [DateTimeOffset.DayOfWeek](xref:System.DateTimeOffset.DayOfWeek) property to retrieve a [DayOfWeek](xref:System.DayOfWeek) value that indicates the day of the week.
 
@@ -54,71 +55,71 @@ End Module
 
 ## To extract the abbreviated weekday name from a specific date
 
-1. If you are working with the string representation of a date, convert it to a [DateTime](xref:System.DateTime) or a [DateTimeOffset](xref:System.DateTimeOffset) value by using the static [DateTime.Parse](xref:System.DateTime#System.DateTime.Parse(System.String)) or [DateTimeOffset.Parse](xref:System.DateTimeOffset.Parse(System.String)) method.
+1. If you are working with the string representation of a date, convert it to a [DateTime](xref:System.DateTime) or a [DateTimeOffset](xref:System.DateTimeOffset) value by using the static [DateTime.Parse](xref:System.DateTime.Parse(System.String)) or [DateTimeOffset.Parse](xref:System.DateTimeOffset.Parse(System.String)) method.
 
 2. You can extract the abbreviated weekday name of the current culture or of a specific culture:
 
     a. To extract the abbreviated weekday name for the current culture, call the date and time value's [DateTime.ToString(String)](xref:System.DateTimeSystem.DateTime.ToString(System.String) or [DateTimeOffset.ToString(String)](xref:System.DateTimeOffset.ToString(System.String)) instance method, and pass the string "ddd" as the *format* parameter. The following example illustrates the call to the `ToString(String)` method.
     
-    ```csharp
-    using System;
+```csharp
+using System;
 
-    public class Example
-    {
-       public static void Main()
-       {
-          DateTime dateValue = new DateTime(2008, 6, 11);
-          Console.WriteLine(dateValue.ToString("ddd"));   
-       }
-    }
-    // The example displays the following output:
-    //       Wed
-    ```
+public class Example
+{
+   public static void Main()
+   {
+  DateTime dateValue = new DateTime(2008, 6, 11);
+  Console.WriteLine(dateValue.ToString("ddd"));   
+   }
+}
+// The example displays the following output:
+//       Wed
+```
 
-    ```vb
-    Module Example
-       Public Sub Main()
-          Dim dateValue As Date = #6/11/2008#
-          Console.WriteLine(dateValue.ToString("ddd"))    
-       End Sub
-    End Module
-    ' The example displays the following output:
-    '       Wed
-    ```
-    
+```vb
+Module Example
+   Public Sub Main()
+  Dim dateValue As Date = #6/11/2008#
+      Console.WriteLine(dateValue.ToString("ddd"))    
+   End Sub
+End Module
+' The example displays the following output:
+'       Wed
+```
+
     b. To extract the abbreviated weekday name for a specific culture, call the date and time value’s [DateTime.ToString(String, IFormatProvider)](xref:System.DateTime.ToString(System.String,System.IFormatProvider)) or [DateTimeOffset.ToString(String, IFormatProvider)](xref:System.DateTimeOffset.ToString(System.String,System.IFormatProvider)) instance method. Pass the string "ddd" as the *format* parameter. Pass either a [CultureInfo](xref:System.Globalization.CultureInfo) or a [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) object that represents the culture whose weekday name you want to retrieve as the *provider* parameter. The following code illustrates a call to the [ToString(String, IFormatProvider)](xref:System.DateTime.ToString(System.String,System.IFormatProvider)) method using a [CultureInfo](xref:System.Globalization.CultureInfo) object that represents the fr-FR culture.
     
-    ```csharp
-    using System;
-    using System.Globalization;
+```csharp
+using System;
+using System.Globalization;
 
-    public class Example
-    {
+public class Example
+{
     public static void Main()
     {
         DateTime dateValue = new DateTime(2008, 6, 11);
         Console.WriteLine(dateValue.ToString("ddd", 
                             new CultureInfo("fr-FR")));    
     }
-    }
-    // The example displays the following output:
-    //       mer. 
-    ```
+}
+// The example displays the following output:
+//       mer. 
+```
 
-    ```vb
-    Imports System.Globalization
+```vb
+Imports System.Globalization
 
-    Module Example
-       Public Sub Main()
-          Dim dateValue As Date = #6/11/2008#
-          Console.WriteLine(dateValue.ToString("ddd", 
-                            New CultureInfo("fr-FR")))    
-       End Sub
-    End Module
-    ' The example displays the following output:
-    '       mer.
-    ```
-    
+Module Example
+   Public Sub Main()
+      Dim dateValue As Date = #6/11/2008#
+      Console.WriteLine(dateValue.ToString("ddd", 
+                        New CultureInfo("fr-FR")))
+   End Sub
+End Module
+' The example displays the following output:
+'       mer.
+```
+
 ## To extract the full weekday name from a specific date
 
 1. If you are working with the string representation of a date, convert it to a [DateTime](xref:System.DateTime) or a [DateTimeOffset](xref:System.DateTimeOffset) value by using the static [DateTime.Parse](xref:System.DateTime.Parse(System.String)) or [DateTimeOffset.Parse](xref:System.DateTimeOffset.Parse(System.String)) method.
@@ -126,66 +127,66 @@ End Module
 2. You can extract the abbreviated weekday name of the current culture or of a specific culture:
 
     a. To extract the abbreviated weekday name for the current culture, call the date and time value's [DateTime.ToString(String)](xref:System.DateTimeSystem.DateTime.ToString(System.String) or [DateTimeOffset.ToString(String)](xref:System.DateTimeOffset.ToString(System.String)) instance method, and pass the string "dddd" as the *format* parameter. The following example illustrates the call to the `ToString(String)` method.
-    
-    ```csharp
-    using System;
 
-    public class Example
-    {
+```csharp
+using System;
+
+public class Example
+{
     public static void Main()
     {
         DateTime dateValue = new DateTime(2008, 6, 11);
         Console.WriteLine(dateValue.ToString("dddd"));    
     }
-    }
-    // The example displays the following output:
-    //       Wednesday
-    ```
+}
+// The example displays the following output:
+//       Wednesday
+```
 
-    ```vb
-    Module Example
-       Public Sub Main()
-          Dim dateValue As Date = #6/11/2008#
-          Console.WriteLine(dateValue.ToString("dddd"))
-       End Sub
-    End Module
-    ' The example displays the following output:
-    '       Wednesday
-    ```
-    
+```vb
+Module Example
+   Public Sub Main()
+      Dim dateValue As Date = #6/11/2008#
+      Console.WriteLine(dateValue.ToString("dddd"))
+   End Sub
+End Module
+' The example displays the following output:
+'       Wednesday
+```
+
     b. To extract the weekday name for a specific culture, call the date and time value’s [DateTime.ToString(String, IFormatProvider)](xref:System.DateTime.ToString(System.String,System.IFormatProvider)) or [DateTimeOffset.ToString(String, IFormatProvider)](xref:System.DateTimeOffset.ToString(System.String,System.IFormatProvider)) instance method. Pass the string "dddd" as the *format* parameter. Pass either a [CultureInfo](xref:System.Globalization.CultureInfo) or a [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) object that represents the culture whose weekday name you want to retrieve as the *provider* parameter. The following code illustrates a call to the [ToString(String, IFormatProvider)](xref:System.DateTime.ToString(System.String,System.IFormatProvider)) method using a [CultureInfo](xref:System.Globalization.CultureInfo) object that represents the es-ES  culture.
-    
-    ```csharp
-    using System;
-    using System.Globalization;
 
-    public class Example
-    {
+```csharp
+using System;
+using System.Globalization;
+
+public class Example
+{
     public static void Main()
     {
         DateTime dateValue = new DateTime(2008, 6, 11);
         Console.WriteLine(dateValue.ToString("dddd", 
                             new CultureInfo("es-ES")));    
     }
-    }
-    // The example displays the following output:
-    //       miércoles.
-    ```
+}
+// The example displays the following output:
+//       miércoles.
+```
 
-    ```vb
-    Imports System.Globalization
+```vb
+Imports System.Globalization
 
-    Module Example
-       Public Sub Main()
-          Dim dateValue As Date = #6/11/2008#
-          Console.WriteLine(dateValue.ToString("dddd", _
-                            New CultureInfo("es-ES")))     
-       End Sub
-    End Module
-    ' The example displays the following output:
-    '       miércoles.
-    ```
-    
+Module Example
+   Public Sub Main()
+      Dim dateValue As Date = #6/11/2008#
+      Console.WriteLine(dateValue.ToString("dddd", _
+                        New CultureInfo("es-ES"))) 
+   End Sub
+End Module
+' The example displays the following output:
+'       miércoles.
+```
+
 ## Example
 
 The example illustrates calls to the [Datetime.DayOfWeek](xref:System.DateTime.DayOfWeek) and [DateTimeOffset.DayOfWeek](xref:System.DateTimeOffset.DayOfWeek) properties and the [DateTime.ToString(String)](xref:System.DateTime.ToString(System.String) or [DateTimeOffset.ToString(String)](xref:System.DateTimeOffset.ToString(System.String)) methods to retrieve the number that represents the day of the week, the abbreviated weekday name, and the full weekday name for a particular date. 
@@ -463,7 +464,7 @@ End Module
 '       lundi
 ```
 
-## See Also
+## See also
 
 [Performing formatting operations](performing-formatting-operations.md)
 

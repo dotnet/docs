@@ -1,0 +1,1 @@
+    Dim letters4 As String() = {"a", "b", "c"}

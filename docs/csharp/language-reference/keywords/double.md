@@ -1,0 +1,89 @@
+---
+title: "double (C# Reference) | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "double"
+  - "double_CSharpKeyword"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "double data type [C#]"
+ms.assetid: 0980e11b-6004-4102-abcf-cfc280fc6991
+caps.latest.revision: 26
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# double (C# Reference)
+The `double` keyword signifies a simple type that stores 64-bit floating-point values. The following table shows the precision and approximate range for the `double` type.  
+  
+|Type|Approximate range|Precision|.NET Framework type|  
+|----------|-----------------------|---------------|-------------------------|  
+|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|15-16 digits|<xref:System.Double?displayProperty=fullName>|  
+  
+## Literals  
+ By default, a real numeric literal on the right side of the assignment operator is treated as `double`. However, if you want an integer number to be treated as `double`, use the suffix d or D, for example:  
+  
+```  
+  
+double x = 3D;  
+```  
+  
+## Conversions  
+ You can mix numeric integral types and floating-point types in an expression. In this case, the integral types are converted to floating-point types. The evaluation of the expression is performed according to the following rules:  
+  
+-   If one of the floating-point types is `double`, the expression evaluates to `double`, or [bool](../../../csharp/language-reference/keywords/bool.md) in relational or Boolean expressions.  
+  
+-   If there is no `double` type in the expression, it evaluates to [float](../../../csharp/language-reference/keywords/float.md), or [bool](../../../csharp/language-reference/keywords/bool.md) in relational or Boolean expressions.  
+  
+ A floating-point expression can contain the following sets of values:  
+  
+-   Positive and negative zero.  
+  
+-   Positive and negative infinity.  
+  
+-   Not-a-Number value (NaN).  
+  
+-   The finite set of nonzero values.  
+  
+ For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](http://go.microsoft.com/fwlink/?LinkId=26269) Web site.  
+  
+## Example  
+ In the following example, an [int](../../../csharp/language-reference/keywords/int.md), a [short](../../../csharp/language-reference/keywords/short.md), a [float](../../../csharp/language-reference/keywords/float.md), and a `double` are added together giving a `double` result.  
+  
+ [!code-cs[csrefKeywordsTypes#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/double_1.cs)]  
+  
+## C# Language Specification  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+  
+## See Also  
+ [C# Reference](../../../csharp/language-reference/index.md)   
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)   
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
+ [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)   
+ [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)   
+ [Floating-Point Types Table](../../../csharp/language-reference/keywords/floating-point-types-table.md)   
+ [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
+ [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)

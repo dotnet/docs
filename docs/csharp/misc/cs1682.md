@@ -1,0 +1,95 @@
+---
+title: "Compiler Warning (level 1) CS1682 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1682"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1682"
+ms.assetid: 6f3b19ba-29f3-4472-941d-57f6fda6dc3a
+caps.latest.revision: 15
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Warning (level 1) CS1682
+Reference to type 'type' claims it is nested within 'nested type', but it could not be found  
+  
+ This error arises when you import references that do not agree with other references or with code you have written. A common way to get this error is to write code that refers to a class in metadata, and then you either delete that class or modify its definition.  
+  
+## Example  
+  
+```  
+// CS1682.cs  
+// compile with: /target:library /keyfile:mykey.snk  
+public class A {  
+   public class N1 {}  
+}  
+```  
+  
+## Example  
+  
+```  
+// CS1682_b.cs  
+// compile with: /target:library /reference:CS1682.dll  
+using System;  
+public class Ref {  
+  
+   public static A A1() {  
+      return new A();  
+   }  
+  
+   public static A.N1 N1() {   
+      return new A.N1();  
+   }  
+}  
+```  
+  
+## Example  
+  
+```  
+// CS1682_c.cs  
+// compile with: /target:library /keyfile:mykey.snk /out:CS1682.dll  
+public class A {  
+   public void M1() {}  
+}  
+```  
+  
+## Example  
+ The following sample generates CS1682.  
+  
+```  
+// CS1682_d.cs  
+// compile with: /reference:CS1682.dll /reference:CS1682_b.dll /W:1  
+// CS1682 expected  
+class Tester {  
+   static void Main()  
+   {  
+      Ref.A1().M1();  
+   }  
+}  
+```

@@ -3,6 +3,7 @@ title: Substitutions in regular expressions
 description: Substitutions in regular expressions
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
@@ -20,29 +21,29 @@ Substitutions are language elements that are recognized only within replacement 
 
 Substitution | Description
 ------------ | ----------- 
-**$**_number_ | Includes the last substring matched by the capturing group that is identified by *number*, where *number* is a decimal value, in the replacement string. For more information, see [Substituting a Numbered Group](#Substituting-a-Numbered-Group).
-**${**_name_**}** | Includes the last substring matched by the named group that is designated by **(?<**_name_**>)** in the replacement string. For more information, see [Substituting a Named Group](#Substituting-a-Named-Group).
-**$$** | Includes a single "$" literal in the replacement string. For more information, see [Substituting a "$" Symbol](#Substituting-a-$-Symbol).
-**$&** | Includes a copy of the entire match in the replacement string. For more information, see [Substituting the Entire Match](#Substituting-the-Entire-Match).
-**$`** | Includes all the text of the input string before the match in the replacement string. For more information, see [Substituting the Text before the Match](#Substituting-the-Text-before-the-Match).
-**$'** | Includes all the text of the input string after the match in the replacement string. For more information, see [Substituting the Text after the Match](#Substituting-the-Text-after-the-Match). 
-**$+** | Includes the last group captured in the replacement string. For more information, see [Substituting the Last Captured Group](#Substituting-the-Last-Captured-Group).
-**$_** | Includes the entire input string in the replacement string. For more information, see [Substituting the Entire Input String](#Substituting-the-Entire-Input-String).
+**$**_number_ | Includes the last substring matched by the capturing group that is identified by *number*, where *number* is a decimal value, in the replacement string. For more information, see [Substituting a numbered group](#substituting-a-numbered-group).
+**${**_name_**}** | Includes the last substring matched by the named group that is designated by **(?<**_name_**>)** in the replacement string. For more information, see [Substituting a named group](#substituting-a-named-group).
+**$$** | Includes a single "$" literal in the replacement string. For more information, see [Substituting a "$" character](#substituting-a--character).
+**$&** | Includes a copy of the entire match in the replacement string. For more information, see [Substituting the entire match](#substituting-the-entire-match).
+**$`** | Includes all the text of the input string before the match in the replacement string. For more information, see [Substituting the text before the match](#substituting-the-text-before-the-match).
+**$'** | Includes all the text of the input string after the match in the replacement string. For more information, see [Substituting the text after the match](#substituting-the-text-after-the-match). 
+**$+** | Includes the last group captured in the replacement string. For more information, see [Substituting the last captured group](#substituting-the-last-captured-group).
+**$_** | Includes the entire input string in the replacement string. For more information, see [Substituting the entire input string](#substituting-the-entire-input-string).
  
-## Substitution Elements and Replacement Patterns
+## Substitution elements and replacement patterns
 
 Substitutions are the only special constructs recognized in a replacement pattern. None of the other regular expression language elements, including character escapes and the period (**.**), which matches any character, are supported. Similarly, substitution language elements are recognized only in replacement patterns and are never valid in regular expression patterns. 
 
 The only character that can appear either in a regular expression pattern or in a substitution is the **$** character, although it has a different meaning in each context. In a regular expression pattern, **$** is an anchor that matches the end of the string. In a replacement pattern, **$** indicates the beginning of a substitution. 
 
 > [!NOTE]
-> For functionality similar to a replacement pattern within a regular expression, use a backreference. For more information about backreferences, see [Backreference Constructs](backreference.md).
+> For functionality similar to a replacement pattern within a regular expression, use a backreference. For more information about backreferences, see [Backreference constructs](backreference.md).
  
-## Substituting a Numbered Group
+## Substituting a numbered group
 
-The **$**_number_ language element includes the last substring matched by the number capturing group in the replacement string, where *number* is the index of the capturing group. For example, the replacement pattern `$1` indicates that the matched substring is to be replaced by the first captured group. For more information about numbered capturing groups, see [Grouping Constructs in Regular Expressions](grouping.md).
+The **$**_number_ language element includes the last substring matched by the number capturing group in the replacement string, where *number* is the index of the capturing group. For example, the replacement pattern `$1` indicates that the matched substring is to be replaced by the first captured group. For more information about numbered capturing groups, see [Grouping constructs in regular expressions](grouping.md).
 
-All digits that follow **$** are interpreted as belonging to the number group. If this is not your intent, you can substitute a named group instead. For example, you can use the replacement string **${1}1** instead of **$11** to define the replacement string as the value of the first captured group along with the number "1". For more information, see [Substituting a Named Group](#Substituting-a-Named-Group). 
+All digits that follow **$** are interpreted as belonging to the number group. If this is not your intent, you can substitute a named group instead. For example, you can use the replacement string **${1}1** instead of **$11** to define the replacement string as the value of the first captured group along with the number "1". For more information, see [Substituting a named group](#substituting-a-named-group). 
 
 Capturing groups that are not explicitly assigned names using the **(?<**_name-**>)** syntax are numbered from left to right starting at one. Named groups are also numbered from left to right, starting at one greater than the index of the last unnamed group. For example, in the regular expression `(\w)(?<digit>\d)`, the index of the `digit` named group is 2.
 
@@ -96,9 +97,9 @@ Pattern | Description
 `\d*` | Match zero or more decimal digits.
 `(\s?\d+[.,]?\d*)` | Match a white space followed by one or more decimal digits, followed by zero or one period or comma, followed by zero or more decimal digits. This is the first capturing group. Because the replacement pattern is `$1`, the call to the [Regex.Replace](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions)) method replaces the entire matched substring with this captured group. 
  
-## Substituting a Named Group
+## Substituting a named group
 
-The **${**_name_**}** language element substitutes the last substring matched by the *name* capturing group, where *name* is the name of a capturing group defined by the **(?<**_name_**>)** language element. For more information about named capturing groups, see [Grouping Constructs in Regular Expressions](grouping.md).
+The **${**_name_**}** language element substitutes the last substring matched by the *name* capturing group, where *name* is the name of a capturing group defined by the **(?<**_name_**>)** language element. For more information about named capturing groups, see [Grouping constructs in regular expressions](grouping.md).
 
 If *name* doesn't specify a valid named capturing group defined in the regular expression pattern but consists of digits, **${**_name_**}** is interpreted as a numbered group. 
 
@@ -152,7 +153,7 @@ Pattern | Description
 `\d*` | Match zero or more decimal digits.
 `(?<amount>\s?\d[.,]?\d*)` | Match a white space, followed by one or more decimal digits, followed by zero or one period or comma, followed by zero or more decimal digits. This is the capturing group named amount. Because the replacement pattern is `${amount}`, the call to the [Regex.Replace](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions)) method replaces the entire matched substring with this captured group. 
  
-## Substituting a $ Character
+## Substituting a $ character
 
 The **$$** substitution inserts a literal "$" character in the replaced string. 
 
@@ -236,7 +237,7 @@ Pattern | Description
 `(\d+)` | Match one or more decimal digits. This is the third capturing group.
 `(\.(\d+))?` | Match zero or one occurrence of a period followed by one or more decimal digits. This is the second capturing group.
  
-## Substituting the Entire Match
+## Substituting the entire match
 
 The **$&** substitution includes the entire match in the replacement string. Often, it is used to add a substring to the beginning or end of the matched string. For example, the `($&)` replacement pattern adds parentheses to the beginning and end of each match. If there is no match, the **$&** substitution has no effect.
 
@@ -300,7 +301,7 @@ Pattern | Description
 
 The `"$&"` replacement pattern adds a literal quotation mark to the beginning and end of each match.
 
-## Substituting the Text Before the Match
+## Substituting the text before the match
 
 The **$`** substitution replaces the matched string with the entire input string before the match. That is, it duplicates the input string up to the match while removing the matched text. Any text that follows the matched text is unchanged in the result string. If there are multiple matches in an input string, the replacement text is derived from the original input string, rather than from the string in which text has been replaced by earlier matches. (The example provides an illustration.) If there is no match, the **$`** substitution has no effect.
 
@@ -375,7 +376,7 @@ Match | Position | String before match | Result string
 4 | 11 | aa1bb2cc3dd | aaaabbaa1bbccaa1bb2ccdd**aa1bb2cc3dd**ee5
 5 | 14 | aa1bb2cc3dd4ee | aaaabbaa1bbccaa1bb2ccddaa1bb2cc3ddee **aa1bb2cc3dd4ee**
  
-## Substituting the Text After the Match
+## Substituting the text after the match
 
 The **$'** substitution replaces the matched string with the entire input string after the match. That is, it duplicates the input string after the match while removing the matched text. Any text that precedes the matched text is unchanged in the result string. If there is no match, the **$'** substitution has no effect.
 
@@ -449,7 +450,7 @@ Match | Position | String before match | Result string
 4 | 11 | ee5 | aabb2cc3dd4ee5bbcc3dd4ee5ccdd4ee5dd**ee5**ee5
 5 | 14 | [String.Empty](xref:System.String.Empty) | aabb2cc3dd4ee5bbcc3dd4ee5ccdd4ee5ddee5ee
  
-## Substituting the Last Captured Group
+## Substituting the last captured group
 
 The **$+** substitution replaces the matched string with the last captured group. If there are no captured groups or if the value of the last captured group is [String.Empty](xref:System.String.Empty), the **$+** substitution has no effect.
 
@@ -500,7 +501,7 @@ Pattern | Description
 `\1` | Match the first captured group.
 `\b` | End the match at a word boundary.
  
-## Substituting the Entire Input String
+## Substituting the entire input string
 
 The **$_** substitution replaces the matched string with the entire input string. That is, it removes the matched text and replaces it with the entire string, including the matched text.
 
@@ -552,7 +553,7 @@ Match | Position | String before match | Result string
 1 | 3 | 123 | ABC**ABC123DEF456**DEF456
 2 | 5 | 456 | ABCABC123DEF456DEF**ABC123DEF456**
  
-## See Also
+## See also
 
 [Regular expression language - quick reference](quick-ref.md)
 

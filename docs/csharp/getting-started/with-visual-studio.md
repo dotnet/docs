@@ -1,8 +1,9 @@
 ---
-title: Building a Hello World Appllication with .NET Core in Visual Studio 2015
-description: Building a Hello World Application with .NET Core in Visual Studio 2015
-keywords: .NET, .NET Core, .NET Core console application
+title: Building a C# Hello World Application with .NET Core in Visual Studio 2015
+description: Learn how to build a simple .NET Core console application using Visual Studio 2015
+keywords: .NET Core, .NET Core console application, Visual Studio 2015
 author: rpetrusha
+ms.author: ronpet
 manager: wpickett
 ms.author: ronpet
 ms.date: 10/24/2016
@@ -13,9 +14,9 @@ ms.devlang: dotnet
 ms.assetid: 22fed72f-04b7-4ec0-8fd3-f1d3d60585d7
 ---
 
-# Building a Hello World Appllication with .NET Core in Visual Studio 2015 #
+# Building a C# Hello World Application with .NET Core in Visual Studio 2015 #
 
-This topic provides a step-by-step introduction to building and debugging a simple .NET Core console application using Visual Studio 2015. Visual Studio 2015 provides a full-featured development environment for building .NET Core applications. As long as the application does not have any platform-specific dependencies, the application itself can run on any platform that .NET Core targets and on any system that has .NET Core installed.
+This topic provides a step-by-step introduction to building and debugging a simple .NET Core console application in C# using Visual Studio 2015. Visual Studio 2015 provides a full-featured development environment for building .NET Core applications. As long as the application does not have any platform-specific dependencies, the application itself can run on any platform that .NET Core targets and on any system that has .NET Core installed.
 
 ## The prerequisites ##
 

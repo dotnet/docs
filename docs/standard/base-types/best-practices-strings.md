@@ -3,6 +3,7 @@ title: Best practices for using strings
 description: Best practices for using strings
 keywords: .NET, .NET Core
 author: stevehoag
+ms.author: shoag
 manager: wpickett
 ms.date: 07/26/2016
 ms.topic: article
@@ -20,21 +21,21 @@ This article examines the string sorting, comparison, and casing methods in .NET
 
 This article contains the following sections:
 
-* [Recommendations for String Usage](#Recommendations-for-String-Usage)
+* [Recommendations for string usage](#recommendations-for-string-usage)
 
-* [Specifying String Comparisons Explicitly](#Specifying-String-Comparisons-Explicitly)
+* [Specifying string comparisons explicitly](#specifying-string-comparisons-explicitly)
 
-* [The Details of String Comparison](#The-Details-of-String-Comparison)
+* [The details of string comparison](#the-details-of-string-comparison)
 
-* [Choosing a StringComparison Member for Your Method Call](#Choosing-a-StringComparison-Member-for-Your-Method-Call)
+* [Choosing a StringComparison member for your method call](#choosing-a-stringcomparison-member-for-your-method-call)
 
-* [Common String Comparison Methods](#Common-String-Comparison-Methods)
+* [Common string comparison methods](#common-string-comparison-methods)
 
-* [Methods that Perform String Comparison Indirectly](#Methods-that-Perform-String-Comparison-Indirectly)
+* [Methods that perform string comparison indirectly](#methods-that-perform-string-comparison-indirectly)
 
-* [Displaying and Persisting Formatted Data](#Displaying-and-Persisting-Formatted-Data)
+* [Displaying and persisting formatted data](#displaying-and-persisting-formatted-data)
 
-## Recommendations for String Usage
+## Recommendations for string usage
 
 When you develop with .NET, follow these simple recommendations when you use strings: 
 
@@ -64,7 +65,7 @@ Avoid the following practices when you use strings:
 
 * Do not use culture-sensitive formatting to persist numeric data or date and time data in string form.
 
-## Specifying String Comparisons Explicitly
+## Specifying string comparisons explicitly
 
 Most of the string manipulation methods in .NET are overloaded. Typically, one or more overloads accept default settings, whereas others accept no defaults and instead define the precise way in which strings are to be compared or manipulated. Most of the methods that do not rely on defaults include a parameter of type [StringComparison](xref:System.StringComparison), which is an enumeration that explicitly specifies rules for string comparison by culture and case. The following table describes the [StringComparison](xref:System.StringComparison) enumeration members. 
 
@@ -89,24 +90,24 @@ We recommend that you select an overload that does not use default values, for t
 
 * The intent of the code that relies on default values for method calls is not clear. In the following example, which relies on defaults, it is difficult to know whether the developer actually intended an ordinal or a linguistic comparison of two strings, or whether a case difference between `protocol` and "http" might cause the test for equality to return `false`.
 
-  ```csharp
-  string protocol = GetProtocol(url);       
-  if (String.Equals(protocol, "http", StringComparison.OrdinalIgnoreCase)) {
-     // ...Code to handle HTTP protocol.
-  }
-  else {
-     throw new InvalidOperationException();
-  }
-  ```
+```csharp
+string protocol = GetProtocol(url);       
+if (String.Equals(protocol, "http", StringComparison.OrdinalIgnoreCase)) {
+   // ...Code to handle HTTP protocol.
+}
+else {
+   throw new InvalidOperationException();
+}
+```
 
-  ```vb
-  Dim protocol As String = GetProtocol(url)       
-  If String.Equals(protocol, "http") Then
-    ' ...Code to handle HTTP protocol.
-  Else
-     Throw New InvalidOperationException()
-  End If
-  ```
+```vb
+Dim protocol As String = GetProtocol(url)       
+If String.Equals(protocol, "http") Then
+  ' ...Code to handle HTTP protocol.
+Else
+   Throw New InvalidOperationException()
+End If
+```
 
 In general, we recommend that you call a method that does not rely on defaults, because it makes the intent of the code unambiguous. This, in turn, makes the code more readable and easier to debug and maintain. The following example addresses the questions raised about the previous example. It makes it clear that ordinal comparison is used and that differences in case are ignored. 
 
@@ -129,13 +130,13 @@ Else
 End If
 ```
 
-## The Details of String Comparison
+## The details of string comparison
 
 String comparison is the heart of many string-related operations, particularly sorting and testing for equality. Strings sort in a determined order: If "my" appears before "string" in a sorted list of strings, "my" must compare less than or equal to "string". Additionally, comparison implicitly defines equality. The comparison operation returns zero for strings it deems equal. A good interpretation is that neither string is less than the other. Most meaningful operations involving strings include one or both of these procedures: comparing with another string, and executing a well-defined sort operation.
 
 However, evaluating two strings for equality or sort order does not yield a single, correct result; the outcome depends on the criteria used to compare the strings. In particular, string comparisons that are ordinal or that are based on the casing and sorting conventions of the current culture or the invariant culture (a locale-agnostic culture based on the English language) may produce different results.
 
-### String Comparisons that Use the Current Culture
+### String comparisons that use the current culture
 
 One criterion involves using the conventions of the current culture when comparing strings. Comparisons that are based on the current culture use the thread's current culture or locale. You should always use comparisons that are based on the current culture when data is linguistically relevant, and when it reflects culture-sensitive user interaction. 
 
@@ -487,7 +488,7 @@ Console.WriteLine("      Ordinal: {0}", _
 '          Ordinal: False
 ```
 
-Case-insensitive ordinal comparisons are the next most conservative approach. These comparisons ignore most casing; for example, "windows" matches "Windows". When dealing with ASCII characters, this policy is equivalent to [StringComparison.Ordinal](xref:System.StringComparison.Ordinal), except that it ignores the usual ASCII casing. Therefore, any character in [A, Z] (\u0041-\u005A) matches the corresponding character in [a,z] (\u0061-\007A). Casing outside the ASCII range uses the invariant culture's tables. Therefore, the following comparison:
+Case-insensitive ordinal comparisons are the next most conservative approach. These comparisons ignore most casing; for example, "windows" matches "Windows". When dealing with ASCII characters, this policy is equivalent to [StringComparison.Ordinal](xref:System.StringComparison.Ordinal), except that it ignores the usual ASCII casing. Therefore, any character in \[A, Z\] (\u0041-\u005A) matches the corresponding character in \[a,z\] (\u0061-\007A). Casing outside the ASCII range uses the invariant culture's tables. Therefore, the following comparison:
 
 ```csharp
 String.Compare(strA, strB, StringComparison.OrdinalIgnoreCase);
@@ -515,7 +516,7 @@ Both [StringComparison.Ordinal](xref:System.StringComparison.Ordinal) and [Strin
 
 Ordinal semantics are the default for [String](xref:System.String) `Equals` overloads that do not include a [StringComparison](xref:System.StringComparison) argument (including the equality operator). In any case, we recommend that you call an overload that has a [StringComparison](xref:System.StringComparison) parameter.
 
-### String Operations that Use the Invariant Culture
+### String operations that use the invariant culture
 
 Comparisons with the invariant culture use the [CompareInfo](xref:System.Globalization.CompareInfo) property returned by the static [CultureInfo.InvariantCulture](xref:System.Globalization.CultureInfo.InvariantCulture) property. This behavior is the same on all systems; it translates any characters outside its range into what it believes are equivalent invariant characters. This policy can be useful for maintaining one set of string behavior across cultures, but it often provides unexpected results.
 
@@ -567,7 +568,7 @@ When interpreting file names, cookies, or anything else where a combination such
 
 On balance, the invariant culture has very few properties that make it useful for comparison. It does comparison in a linguistically relevant manner, which prevents it from guaranteeing full symbolic equivalence, but it is not the choice for display in any culture. For example, if a large data file that contains a list of sorted identifiers for display accompanies an application, adding to this list would require an insertion with invariant-style sorting.
 
-## Choosing a StringComparison Member for Your Method Call
+## Choosing a StringComparison member for your method call
 
 The following table outlines the mapping from semantic string context to a [StringComparison](xref:System.StringComparison) enumeration member.
 
@@ -577,7 +578,7 @@ Case-sensitive internal identifiers, case-sensitive identifiers in standards suc
 Case-insensitive internal identifiers, case-insensitive identifiers in standards such as XML and HTTP, file paths, registry keys and values, environment variables, resource identifiers (for example, handle names), or case-insensitive security-related settings. | A non-linguistic identifier, where case is irrelevant. | [StringComparison.OrdinalIgnoreCase](xref:System.StringComparison.OrdinalIgnoreCase)
 Data displayed to the user or most user input. | Data that requires local linguistic customs. | [StringComparison.CurrentCulture](xref:System.StringComparison.CurrentCulture) or [CurrentCultureIgnoreCase](xref:System.StringComparison.CurrentCultureIgnoreCase)
 
-## Common String Comparison Methods
+## Common string comparison methods
 
 The following sections describe the methods that are most commonly used for string comparison.
 
@@ -710,7 +711,7 @@ There is a lack of consistency in how the default overloads of these methods per
 
 If you call ` `IndexOf` or `LastIndexOf` method and pass it a string to locate in the current instance, we recommend that you call an overload that explicitly specifies the [StringComparison](xref:System.StringComparison) type. The overloads that include a [Char](xref:System.Char) argument do not allow you to specify a [StringComparison](xref:System.StringComparison) type.
 
-## Methods that Perform String Comparison Indirectly
+## Methods that perform string comparison indirectly
 
 Some non-string methods that have string comparison as a central operation use the [StringComparer](xref:System.StringComparer) type. The [StringComparer](xref:System.StringComparer) class includes four static properties that return [StringComparer](xref:System.StringComparer) instances whose `Compare` methods perform the following types of string comparisons:
 
@@ -924,7 +925,7 @@ Public Sub PrintCreationTime(targetFile As String)
 End Sub  
 ```
 
-## Displaying and Persisting Formatted Data
+## Displaying and persisting formatted data
 
 When you display non-string data such as numbers and dates and times to users, format them by using the user's cultural settings. By default, the [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) method and the `ToString` methods of the numeric types and the date and time types use the current thread culture for formatting operations. To explicitly specify that the formatting method should use the current culture, you can call an overload of a formatting method that has a provider parameter, such as [String.Format(IFormatProvider, String, Object[])](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) or [DateTime.ToString(IFormatProvider)](xref:System.DateTime.ToString(System.IFormatProvider)), and pass it the [CultureInfo.CurrentCulture](xref:System.Globalization.CultureInfo.CurrentCulture) property. 
 
@@ -1090,6 +1091,6 @@ However, if you replace the [CultureInfo.CurrentCulture](xref:System.Globalizati
 // 18.02.1905 15:12
 ```
 
-## See Also
+## See also
 
 [Manipulating strings](manipulating-strings.md)

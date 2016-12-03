@@ -17,13 +17,13 @@ A defining characteristic of functional programming languages is the elevation o
 
 Typical measures of first-class status include the following:
 
-- Can you bind an identifier to the value? That is, can you give it a name?
+- Can you bind functions to identifiers? That is, can you give them names?
 
-- Can you store the value in a data structure, such as a list?
+- Can you store functions in data structures, such as in a list?
 
-- Can you pass the value as an argument in a function call?
+- Can you pass a function as an argument in a function call?
 
-- Can you return the value as the value of a function call?
+- Can you return a function from a function call?
 
 The last two measures define what are known as *higher-order operations* or *higher-order functions*. Higher-order functions accept functions as arguments and return functions as the value of function calls. These operations support such mainstays of functional programming as mapping functions and composition of functions.
 

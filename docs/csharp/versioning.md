@@ -4,7 +4,7 @@ description: Understand how versioning works in C# and .NET
 keywords: .NET, .NET Core, C#
 author: tsolarin
 manager: wpickett
-ms.date: 2016/11/20
+ms.date: 2016/12/03
 ms.topic: article
 ms.prod: visual-studio-dev-14
 ms.technology: devlang-csharp
@@ -12,7 +12,10 @@ ms.devlang: csharp
 ms.assetid: aa8732d7-5cd0-46e1-994a-78017f20d861
 ---
 
-# Versioning in C#
+# Versioning in C# #
+
+In this tutorial you'll learn what versioning means in .NET. You'll also learn the factors to consider when versioning your library as well as upgrading
+to a new version of the a library.
 
 ## Authoring Libraries
 
@@ -22,7 +25,7 @@ of existing code to the new version of your library. Here are several things to 
 
 ### Semantic Versioning
 
-Semantic versioning (SemVer for short) is a naming convention applied to versions of your library to signify specific milestone events.
+[Semantic versioning](http://semver.org/) (SemVer for short) is a naming convention applied to versions of your library to signify specific milestone events.
 Ideally, the version information you give your library should help developers determine the compatibility
 with their projects that make use of older versions of that same library.
 
@@ -32,34 +35,34 @@ The most basic approach to SemVer is the 3 component format `MAJOR.MINOR.PATCH`,
 * `MINOR` is incremented when you add functionality in a backwards-compatible manner
 * `PATCH` is incremented when you make backwards-compatible bug fixes
 
-There are also ways to specify other scenarios like pre-release versions etc. Go [here](http://semver.org/) to get more information on SemVer
-and how best to utilize it when applying version information to your .NET library.
-
-### Application Configuration File
-
-As a .NET developer there's a very high chance you've encountered the `app.config` file present in most project types.
-This simple configuration file can go a long way into improving the rollout of new updates. You should generally design your libraries in such
-a way that information that is likely to change regularly is stored in the `app.config` file, this way when such information is updated
-the config file of older versions just needs to be replaced with the new one without the need for recompilation of the library.
-Go [here](https://msdn.microsoft.com/en-us/library/1fk1t1t0(v=vs.110).aspx) to get more information on the structure of the configuration file
-and what kind of information is usually stored in it.
+There are also ways to specify other scenarios like pre-release versions etc. when applying version information to your .NET library.
 
 ### Backwards Compatibility
 
 As you release new versions of your library, backwards compatibility with previous versions will most likely be one of your major concerns.
 A new version of your library is source compatible with a previous version if code that depends on the previous version can, when recompiled, work with the new version. 
-In contrast, a new version of your library is binary compatible if an application that depended on the old version can, without recompilation, work with the new version.
+A new version of your library is binary compatible if an application that depended on the old version can, without recompilation, work with the new version.
 
 Here are some things to consider when trying to maintain backwards compatibility with older versions of your library:
 
 * Virtual methods: When you make a virtual method non-virtual in your new version it means that projects that override that method
 will have to be updated.
-* Method signatures: When updating a method behaviour requires you to change it's signature as well, you should instead create an override so that derived classes calling into that method will still work.
+* Method signatures: When updating a method behaviour requires you to change its signature as well, you should instead create an overload so that code calling into that method will still work.
 You can always manipulate the old method signature to call into the new method signature so that implementation remains consistent.
-* Optional Method Arguments: When you make previously optional method arguments compulsory then all code that does not supply those arguments will need to be updated.
-On the other hand making compulsory arguments optional should have very little effect especially if it doesn't change the method's behaviour.
-* Obsolete attribute: You can use this attribute in your code to specify classes or class members that are deprecated and likely to be removed in future versions.
-This ensures developers utilizing your library are better prepared for breaking changes. More info on the `Obsolete` attribute [here](https://msdn.microsoft.com/en-us/library/22kk2b44(v=vs.90).aspx).
+* [Obsolete attribute](programming-guide/concepts/attributes/common-attributes.md#Obsolete): You can use this attribute in your code to specify classes or class members that are deprecated and likely to be removed in future versions.
+This ensures developers utilizing your library are better prepared for breaking changes.
+* Optional Method Arguments: When you make previously optional method arguments compulsory or change their default value then all code that does not supply those arguments will need to be updated.
+> [!NOTE]
+> Making compulsory arguments optional should have very little effect especially if it doesn't change the method's behaviour.
+
+The easier you make it for your users to upgrade to the new version of your library, the more likely that they will upgrade sooner.
+
+### Application Configuration File
+
+As a .NET developer there's a very high chance you've encountered [the `app.config` file](https://msdn.microsoft.com/en-us/library/1fk1t1t0(v=vs.110).aspx) present in most project types.
+This simple configuration file can go a long way into improving the rollout of new updates. You should generally design your libraries in such
+a way that information that is likely to change regularly is stored in the `app.config` file, this way when such information is updated
+the config file of older versions just needs to be replaced with the new one without the need for recompilation of the library.
 
 ## Consuming Libraries
 
@@ -70,7 +73,7 @@ Lucky for you C# and the .NET ecosystem comes with features and techniques that 
 
 ### Assembly Binding Redirection
 
-You can use the `app.config` file to update the version of a library your app uses. By adding what is called a `binding redirect` your
+You can use the `app.config` file to update the version of a library your app uses. By adding what is called a [*binding redirect*](https://msdn.microsoft.com/en-us/library/7wd6ex19(v=vs.110).aspx) your
 can use the new library version without having to recompile your app. The following example shows how you would update
 your app's `app.config` file to use the `1.0.1` patch version of `ReferencedLibrary` instead of the `1.0.0` version it was originally compiled with.
 
@@ -81,19 +84,20 @@ your app's `app.config` file to use the `1.0.1` patch version of `ReferencedLibr
 </dependentAssembly>
 ```
 
-Go [here](https://msdn.microsoft.com/en-us/library/7wd6ex19(v=vs.110).aspx) to get more information on redirecting assembly versions.
+> [!NOTE]
+> This approach will only work if the new version of `ReferencedLibrary` is binary compatible with your app.
+> See the `Backwards Compatibility` section above for changes to look out for when determining compatibility.
 
 ### new
 
-You use the `new` modifier to hide inherited members of a base class. This ensures resiliency of derived classes allowing you to update base classes the way you want in your library.
+You use the `new` modifier to hide inherited members of a base class.
+This makes your derived classes immune to changes made to the inherited members of the base class
 
 Take the following example:
 
-```
-[!code-csharp[Sample usage of the 'new' modifier](/samples/csharp/versioning/new/Program.cs#sample)]
-```
+[!code-csharp[Sample usage of the 'new' modifier](../../samples/csharp/versioning/new/Program.cs#sample)]
 
-#### Output
+**Output**
 
 ```
 A base method
@@ -110,14 +114,12 @@ makes that new version of your library both source and binary compatible with co
 
 ### override
 
-The `override` modifier works very similar to the `new` modifier except that it extends the implementation of a base class member rather than
+The `override` modifier is the opposite of the `new` modifier, it extends the implementation of a base class member rather than
 hides it, also the base class member needs to have the `virtual` modifier applied to it.
 
-```
-[!code-csharp[Sample usage of the 'override' modifier](/samples/csharp/versioning/override/Program.cs#sample)]
-```
+[!code-csharp[Sample usage of the 'override' modifier](../../samples/csharp/versioning/override/Program.cs#sample)]
 
-#### Output
+**Output**
 
 ```
 Base Method One: Method One
@@ -126,3 +128,6 @@ Derived Method One: Derived Method One
 
 The `override` modifier is evaluated at compile time as opposed to at runtime for the `new` modifier, and the compiler will throw an error
 if it doesn't find a virtual member to override.
+
+Your knowledge of the discussed techniques as well as your understanding of what situations to use them will go a long way to boost the ease
+of transition between versions of a library.

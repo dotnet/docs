@@ -86,7 +86,7 @@ your app's `app.config` file to use the `1.0.1` patch version of `ReferencedLibr
 
 > [!NOTE]
 > This approach will only work if the new version of `ReferencedLibrary` is binary compatible with your app.
-> See the `Backwards Compatibility` section above for changes to look out for when determining compatibility.
+> See the [Backwards Compatibility](#backwards-compatibility) section above for changes to look out for when determining compatibility.
 
 ### new
 
@@ -126,8 +126,7 @@ Base Method One: Method One
 Derived Method One: Derived Method One
 ```
 
-The `override` modifier is evaluated at compile time as opposed to at runtime for the `new` modifier, and the compiler will throw an error
-if it doesn't find a virtual member to override.
+The `override` modifier is evaluated at compile time and the compiler will throw an error if it doesn't find a virtual member to override.
 
 Your knowledge of the discussed techniques as well as your understanding of what situations to use them will go a long way to boost the ease
 of transition between versions of a library.

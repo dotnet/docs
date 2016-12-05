@@ -58,7 +58,7 @@ Alternatively, the element can contain:
 * All – all of those things get used.
 
 #### ExcludeAssets
-`<ExcluseAssets>` child element specifies what assets belonging to the package specified by parent `<PackageReference>` should not 
+`<ExcludeAssets>` child element specifies what assets belonging to the package specified by parent `<PackageReference>` should not 
 be consumed.
 
 The element can contain one or more of the following values:
@@ -80,7 +80,7 @@ Alternatively, the element can contain:
 consumed but that they should not flow to the next project. 
 
 > [!NOTE]
-> This is a new term for project.json/xproj `SupressParent` element. 
+> This is a new term for project.json/xproj `SuppressParent` element. 
 
 The element can contain one or more of the following values:
 

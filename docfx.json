@@ -81,15 +81,15 @@
     "fileMetadata": {
       "ms.prod":
       {
-        "api/**.yml": ".net"
+        "api_ref/**.yml": ".net"
       },
       "ms.topic":
       {
-        "api/**.yml": "managed-reference"
+        "api_ref/**.yml": "managed-reference"
       },
       "ms.author":
       {
-        "api/**.yml": "mairaw"
+        "api_ref/**.yml": "mairaw"
       }
     },
     "dest": "_site",

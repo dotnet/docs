@@ -114,10 +114,6 @@ package as another dependency to the project:
 
 ```json
 "dependencies": {
-  "Microsoft.NETCore.App": {
-    "type":"platform",
-    "version": "1.0.0"
-  },
   "xunit":"2.1.0",
   "dotnet-test-xunit": "1.0.0-rc2-192208-24",
   "PrimeService": {

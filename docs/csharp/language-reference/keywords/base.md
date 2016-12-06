@@ -1,5 +1,7 @@
 ---
 title: "base (C# Reference) | Microsoft Docs"
+description: base keyword (C#)
+keywords: base (C#), base keyword (C#), base keyword (C# reference), base keyword (C# language reference)
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -21,7 +23,6 @@ ms.assetid: 8b645dbe-1a33-49b8-8716-1c401f9a5ea5
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

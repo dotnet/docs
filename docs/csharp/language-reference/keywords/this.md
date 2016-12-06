@@ -1,5 +1,7 @@
 ---
 title: "this (C# Reference) | Microsoft Docs"
+description: this keyword (C# Reference)
+keywords: this (C#), this keyword (C#), this keyword (C# reference), this keyword (C# language reference)
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

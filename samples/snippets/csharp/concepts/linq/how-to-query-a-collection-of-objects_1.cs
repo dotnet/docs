@@ -69,7 +69,7 @@
 
             foreach (var item in highScores)
             {
-                Console.WriteLine("{0,-15}{1}", item.Name, item.Score);
+                Console.WriteLine($"item.Name:-15}{item.Score}}")
             }
         }
     }

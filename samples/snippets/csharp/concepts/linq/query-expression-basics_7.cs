@@ -9,6 +9,8 @@
                 select score;
 
             int highScore = scoreQuery.Max();
+            // the following returns the same result
+            int highScore = scores.Max();
 
             List<City> largeCitiesList =
                 (from country in countries

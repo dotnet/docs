@@ -12,10 +12,10 @@
             foreach (var scoreGroup in queryHighScoreGroups)
             {
                 string s = scoreGroup.Key.Score == true ? "more than" : "less than";
-                Console.WriteLine("Name starts with {0} who scored {1} 85", scoreGroup.Key.FirstLetter, s);
+                ($"Name starts with {scoreGroup.Key.FirstLetter} who scored {s} 85");
                 foreach (var item in scoreGroup)
                 {
-                    Console.WriteLine("\t{0} {1}", item.FirstName, item.LastName);
+                    Console.WriteLine($"\t{item.FirstName} {item.LastName}");
                 }
             }
         }

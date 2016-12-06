@@ -39,7 +39,7 @@
 
             foreach (var ownerAndPet in query)
             {
-                Console.WriteLine("\"{0}\" is owned by {1}", ownerAndPet.PetName, ownerAndPet.OwnerName);
+                Console.WriteLine($"\"{ownerAndPet.PetName}\" is owned by {ownerAndPet.OwnerName}");
             }
         }
 

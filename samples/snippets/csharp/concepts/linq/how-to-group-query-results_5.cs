@@ -12,10 +12,10 @@
             // Nested foreach required to iterate over groups and group items.
             foreach (var studentGroup in queryNumericRange)
             {
-                Console.WriteLine("Key: {0}", (studentGroup.Key * 10));
+                Console.WriteLine($"Key: {studentGroup.Key * 10}"); 
                 foreach (var item in studentGroup)
                 {
-                    Console.WriteLine("\t{0}, {1}", item.LastName, item.FirstName);
+                    Console.WriteLine("\t{item.LastName}, {item.FirstName}");
                 }
             }            
         }

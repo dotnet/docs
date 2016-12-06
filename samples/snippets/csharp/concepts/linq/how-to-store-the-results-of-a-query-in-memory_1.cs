@@ -14,10 +14,9 @@
             List<int> factorsofFourList = queryFactorsOfFour.ToList();
 
             // Iterate the list just to prove it holds data.
-            foreach (int n in factorsofFourList)
-            {
-                Console.WriteLine(n);
-            }
+            Console.WriteLine(factorsofFourList[2]);
+            factorsofFourList[2] = 0;
+            Console.WriteLine(factorsofFourList[2]);
 
             // Keep the console window open in debug mode.
             Console.WriteLine("Press any key");

@@ -8,11 +8,11 @@
 
             foreach (var studentGroup in queryFirstLetters)
             {
-                Console.WriteLine("Key: {0}", studentGroup.Key);
+                Console.WriteLine($"Key: {studentGroup.Key}");
                 // Nested foreach is required to access group items.
                 foreach (var student in studentGroup)
                 {
-                    Console.WriteLine("\t{0}, {1}", student.LastName, student.FirstName);
+                    Console.WriteLine("\t{student.LastName}, {student.FirstName}");
                 }
             }           
         }

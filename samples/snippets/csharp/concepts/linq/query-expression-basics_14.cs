@@ -1,7 +1,7 @@
             // percentileQuery is an IEnumerable<IGrouping<int, Country>>
             var percentileQuery =
                 from country in countries
-                let percentile = (int) country.Population / 10000000
+                let percentile = (int) country.Population / 10_000_000
                 group country by percentile into countryGroup
                 where countryGroup.Key >= 20
                 orderby countryGroup.Key

@@ -66,7 +66,7 @@
                         Console.WriteLine(productGroup.Category);
                         foreach (var prodItem in productGroup.Products)
                         {
-                            Console.WriteLine("  {0,-10} {1}", prodItem.Name, prodItem.CategoryID);
+                            Console.WriteLine("  {prodItem.Name:-10} {prodItem.CategoryID}");
                         }
                     }
                 }

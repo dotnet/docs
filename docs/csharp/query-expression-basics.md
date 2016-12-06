@@ -28,7 +28,7 @@ ms.assetid: 027db1f8-346f-44d2-a16e-043fcea3a4e0
   
      [!code-cs[csrefQueryExpBasics#45](../../samples/snippets/csharp/concepts/linq/query-expression-basics_1.cs)]  
   
--   Retrieve a sequence of elements as in the previous example but transform them to a new type of object. For example, a query may retrieve only the last names from certain customer records in a data source. Or it may retrieve the complete record and then use it to construct another in-memory object type or even XML data before generating the final result sequence. The following example shows a transform from an `int` to a `string`. Note the new type of `highScoresQuery`.  
+-   Retrieve a sequence of elements as in the previous example but transform them to a new type of object. For example, a query may retrieve only the last names from certain customer records in a data source. Or it may retrieve the complete record and then use it to construct another in-memory object type or even XML data before generating the final result sequence. The following example shows a projection from an `int` to a `string`. Note the new type of `highScoresQuery`.  
   
      [!code-cs[csrefQueryExpBasics#46](../../samples/snippets/csharp/concepts/linq/query-expression-basics_2.cs)]  
   
@@ -42,7 +42,7 @@ ms.assetid: 027db1f8-346f-44d2-a16e-043fcea3a4e0
   
      [!code-cs[csrefQueryExpBasics#47](../../samples/snippets/csharp/concepts/linq/query-expression-basics_3.cs)]  
   
-     In the previous example, note the use of parentheses around the query expression before the call to the `Count` method. You can also express this by using a new variable to store the concrete result. This technique is more readable because it keeps the variable that store the query separate from the query that stores a result.  
+     In the previous example, note the use of parentheses around the query expression before the call to the `Count` method. You can also express this by using a new variable to store the concrete result. This technique is more readable because it keeps the variable that stores the query separate from the query that stores a result.  
   
      [!code-cs[csrefQueryExpBasics#48](../../samples/snippets/csharp/concepts/linq/query-expression-basics_4.cs)]  
   
@@ -133,7 +133,7 @@ ms.assetid: 027db1f8-346f-44d2-a16e-043fcea3a4e0
   
 #### where clause  
 
- Use the `where` clause to filter out elements from the source data based on one or more predicate expressions. The `where` clause in the following example has two predicates.  
+ Use the `where` clause to filter out elements from the source data based on one or more predicate expressions. The `where` clause in the following example has one predicate with two conditions.  
   
  [!code-cs[csrefQueryExpBasics#59](../../samples/snippets/csharp/concepts/linq/query-expression-basics_15.cs)]  
   

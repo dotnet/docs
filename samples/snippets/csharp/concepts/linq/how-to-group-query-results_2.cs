@@ -15,7 +15,7 @@
                 Console.WriteLine("Key: {0}", nameGroup.Key);
                 foreach (var student in nameGroup)
                 {
-                    Console.WriteLine("\t{0}, {1}", student.LastName, student.FirstName);
+                    Console.WriteLine("\t{student.LastName}, {student.FirstName}");
                 }
             }
         }

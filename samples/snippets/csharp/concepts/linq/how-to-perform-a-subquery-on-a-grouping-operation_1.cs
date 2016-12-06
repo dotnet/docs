@@ -12,10 +12,10 @@
                 };
 
             int count = queryGroupMax.Count();
-            Console.WriteLine("Number of groups = {0}", count);
+            Console.WriteLine($"Number of groups = {count}");
 
             foreach (var item in queryGroupMax)
             {
-                Console.WriteLine("  {0} Highest Score={1}", item.Level, item.HighestScore);
+                Console.WriteLine($"  {item.Level} Highest Score={item.HighestScore}");
             }
         }

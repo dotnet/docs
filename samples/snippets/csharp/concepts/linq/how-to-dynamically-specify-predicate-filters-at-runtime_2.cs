@@ -36,6 +36,6 @@
             Console.WriteLine("The following students are at level {0}", year.ToString());
             foreach (Student name in studentQuery)
             {
-                Console.WriteLine("{0}: {1}", name.LastName, name.ID);
+                Console.WriteLine($"{name.LastName}: {name.ID}");
             }
         }

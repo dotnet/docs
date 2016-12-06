@@ -58,7 +58,7 @@
                     Console.WriteLine("Cross Join Query:");
                     foreach (var v in crossJoinQuery)
                     {
-                        Console.WriteLine("{0,-5}{1}", v.ID, v.Name);
+                        Console.WriteLine($"v.ID:-5}{v.Name});
                     }
                 }
 
@@ -74,7 +74,7 @@
                     Console.WriteLine("Non-equijoin query:");
                     foreach (var v in nonEquijoinQuery)
                     {
-                        Console.WriteLine("{0,-5}{1}", v.CategoryID, v.Product);
+                        Console.WriteLine($"{v.CategoryID:-5}{v.Product}");
                     }
                 }
             }

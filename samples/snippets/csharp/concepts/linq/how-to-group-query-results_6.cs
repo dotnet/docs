@@ -9,9 +9,9 @@
 
             foreach (var studentGroup in queryGroupByAverages)
             {
-                Console.WriteLine("Key: {0}", studentGroup.Key);
+                Console.WriteLine($"Key: {studentGroup.Key}");
                 foreach (var student in studentGroup)
-                    Console.WriteLine("\t{0} {1}", student.FirstName, student.LastName);
+                    Console.WriteLine($"\t{student.FirstName} {student.LastName}");
             }            
         }
         /* Output:

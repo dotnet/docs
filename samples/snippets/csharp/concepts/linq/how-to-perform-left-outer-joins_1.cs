@@ -30,11 +30,11 @@
             var query = from person in people
                         join pet in pets on person equals pet.Owner into gj
                         from subpet in gj.DefaultIfEmpty()
-                        select new { person.FirstName, PetName = (subpet == null ? String.Empty : subpet.Name) };
+                        select new { person.FirstName, PetName = subpet?.Name ?? String.Empty : subpet.Name) };
 
             foreach (var v in query)
             {
-                Console.WriteLine("{0,-15}{1}", v.FirstName + ":", v.PetName);
+                Console.WriteLine($"{v.FirstName:-15}{v.PetName}");
             }
         }
 

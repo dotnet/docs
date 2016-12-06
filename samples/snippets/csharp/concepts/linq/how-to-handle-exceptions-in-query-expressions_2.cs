@@ -17,7 +17,7 @@
             {
                 foreach (var item in exceptionDemoQuery)
                 {
-                    Console.WriteLine("Processing {0}", item);
+                    Console.WriteLine($"Processing {item}");
                 }
             }
 

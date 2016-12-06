@@ -22,7 +22,7 @@ This example shows how to perform a simple query over a list of `Student` object
   
  [!code-cs[csProgGuideLINQ#15](../../samples/snippets/csharp/concepts/linq/how-to-query-a-collection-of-objects_1.cs)]  
   
- This query is intentionally simple to enable you to experiment. For example, you can try more predicates in the `where` clause, or use an `orderby` clause to sort the results.  
+ This query is intentionally simple to enable you to experiment. For example, you can try more conditions in the `where` clause, or use an `orderby` clause to sort the results.  
   
 
 ## See also  

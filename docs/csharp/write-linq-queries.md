@@ -39,7 +39,7 @@ This topic shows the three ways in which you can write a LINQ query in C#:
   
  `var query = from num in numbers...`  
   
- In each previous example, the queries do not actually execute until you iterate over the query variable in a `foreach` statement. For more information, see [Introduction to LINQ Queries (C#)](programming-guide/concepts/linq/introduction-to-linq-queries.md).  
+ In each previous example, the queries do not actually execute until you iterate over the query variable in a `foreach` statement or other statement. For more information, see [Introduction to LINQ Queries (C#)](programming-guide/concepts/linq/introduction-to-linq-queries.md).  
   
 ## Example  
   
@@ -49,7 +49,7 @@ This topic shows the three ways in which you can write a LINQ query in C#:
  [!code-cs[csProgGuideLINQ#6](../../samples/snippets/csharp/concepts/linq/how-to-write-linq-queries_2.cs)]  
   
 ## Example  
- If the method has parameters, these are provided in the form of a [lambda](programming-guide/statements-expressions-operators/lambda-expressions.md) expression, as shown in the following example:  
+ If the method has  Action or Func parameters, these are provided in the form of a [lambda](programming-guide/statements-expressions-operators/lambda-expressions.md) expression, as shown in the following example:  
   
  [!code-cs[csProgGuideLINQ#7](../../samples/snippets/csharp/concepts/linq/how-to-write-linq-queries_3.cs)]  
   

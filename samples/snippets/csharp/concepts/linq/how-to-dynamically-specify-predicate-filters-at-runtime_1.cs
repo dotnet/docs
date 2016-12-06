@@ -18,7 +18,7 @@
 
             foreach (var name in queryNames)
             {
-                Console.WriteLine("{0}: {1}", name.LastName, name.ID);
+                Console.WriteLine($"{name.LastName}: {name.ID}");
             }
         }
     }

@@ -38,7 +38,7 @@
             Console.WriteLine("Inner join using GroupJoin():");
             foreach (var v in query1)
             {
-                Console.WriteLine("{0} - {1}", v.OwnerName, v.PetName);
+                Console.WriteLine($"{v.OwnerName} - {v.PetName}"));
             }
 
             var query2 = from person in people
@@ -47,7 +47,7 @@
                 
             Console.WriteLine("\nThe equivalent operation using Join():");
             foreach (var v in query2)
-                Console.WriteLine("{0} - {1}", v.OwnerName, v.PetName);
+                Console.WriteLine($"{v.OwnerName} - {v.PetName}"));
         }
 
         // This code produces the following output:

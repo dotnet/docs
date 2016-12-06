@@ -118,7 +118,7 @@ namespace ChunkIt
             // and the source enumerator is either at the end, or else on an element with a new key.
             // the tail of the linked list is set to null in the CopyNextChunkElement method if the
             // key of the next element does not match the current chunk's key, or there are no more elements in the source.
-            private bool DoneCopyingChunk { get { return tail == null; } }
+            private bool DoneCopyingChunk => tail == null;
 
             // Adds one ChunkItem to the current group
             // REQUIRES: !DoneCopyingChunk && lock(this)
@@ -169,7 +169,7 @@ namespace ChunkIt
                 }
             }
 
-            public TKey Key { get { return key; } }
+            public TKey Key => key;
 
             // Invoked by the inner foreach loop. This method stays just one step ahead
             // of the client requests. It adds the next element of the chunk only after
@@ -200,7 +200,7 @@ namespace ChunkIt
                 }
             }
 
-            System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+            System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()  => GetEnumerator();
             {
                 return GetEnumerator();
             }
@@ -251,7 +251,7 @@ namespace ChunkIt
                 Console.WriteLine("Group key = {0}", item.Key);
                 foreach (var inner in item)
                 {
-                    Console.WriteLine("\t{0}", inner.Value);
+                    Console.WriteLine($"\t{inner.Value}");
                 }
             }
 

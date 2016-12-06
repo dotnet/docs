@@ -13,13 +13,13 @@
             // cursor over the iteration variables to see their actual type.
             foreach (var outerGroup in queryNestedGroups)
             {
-                Console.WriteLine("DataClass.Student Level = {0}", outerGroup.Key);
+                Console.WriteLine($"DataClass.Student Level = {outerGroup.Key}");
                 foreach (var innerGroup in outerGroup)
                 {
-                    Console.WriteLine("\tNames that begin with: {0}", innerGroup.Key);
+                    Console.WriteLine($"\tNames that begin with: {innerGroup.Key}");
                     foreach (var innerGroupElement in innerGroup)
                     {
-                        Console.WriteLine("\t\t{0} {1}", innerGroupElement.LastName, innerGroupElement.FirstName);
+                        Console.WriteLine("\t\t{innerGroupElement.LastName} {innerGroupElement.FirstName}");
                     }
                 }
             }

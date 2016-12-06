@@ -16,7 +16,7 @@ ms.assetid: 9667daf9-a5fd-4b43-a5c4-a9c2b744000e
 
 The group join is useful for producing hierarchical data structures. It pairs each element from the first collection with a set of correlated elements from the second collection.  
   
- For example, a class or a relational database table named Student might contain two fields: Id and Name. A second class or relational database table named Course might contain two fields: StudentId and CourseTitle. A group join of these two data sources, based on matching Student.Id and Course.StudentId, would group each Student with a collection of Course objects (which might be empty).  
+ For example, a class or a relational database table named `Student` might contain two fields: `Id` and `Name`. A second class or relational database table named `Course` might contain two fields: `StudentId` and `CourseTitle`. A group join of these two data sources, based on matching `Student.Id` and `Course.StudentId`, would group each `Student` with a collection of `Course` objects (which might be empty).  
   
 > [!NOTE]
 >  Each element of the first collection appears in the result set of a group join regardless of whether correlated elements are found in the second collection. In the case where no correlated elements are found, the sequence of correlated elements for that element is empty. The result selector therefore has access to every element of the first collection. This differs from the result selector in a non-group join, which cannot access elements from the first collection that have no match in the second collection.  

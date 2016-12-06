@@ -22,16 +22,16 @@ It is possible to call any method in the context of a query expression. However,
 
  The following example shows how to move exception handling code outside a query expression. This is only possible when the method does not depend on any variables local to the query.  
   
- [!code-cs[csProgGuideLINQ#10](../../samples/snippets/csharp/concepts/linq/how-to-handle-exceptions-in-query-expressions_1.cs)]  
+ [!code-cs[csProgGuideLINQ#10](../../../samples/snippets/csharp/concepts/linq/how-to-handle-exceptions-in-query-expressions_1.cs)]  
   
 ## Example 
 
  In some cases, the best response to an exception that is thrown from within a query might be to stop the query execution immediately. The following example shows how to handle exceptions that might be thrown from inside a query body. Assume that `SomeMethodThatMightThrow` can potentially cause an exception that requires the query execution to stop.  
   
- Note that the `try` block encloses the `foreach` loop, and not the query itself. This is because the `foreach` loop is the point at which the query is actually executed. For more information, see [Introduction to LINQ queries](programming-guide/concepts/linq/introduction-to-linq-queries.md).  
+ Note that the `try` block encloses the `foreach` loop, and not the query itself. This is because the `foreach` loop is the point at which the query is actually executed. For more information, see [Introduction to LINQ queries](../programming-guide/concepts/linq/introduction-to-linq-queries.md).  
   
- [!code-cs[csProgGuideLINQ#12](../../samples/snippets/csharp/concepts/linq/how-to-handle-exceptions-in-query-expressions_2.cs)]  
+ [!code-cs[csProgGuideLINQ#12](../../../samples/snippets/csharp/concepts/linq/how-to-handle-exceptions-in-query-expressions_2.cs)]  
   
 
 ## See Also  
- [LINQ query expressions](programming-guide/linq-query-expressions/index.md)
+ [LINQ query expressions](index.md)

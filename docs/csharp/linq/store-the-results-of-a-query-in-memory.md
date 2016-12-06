@@ -27,8 +27,8 @@ A query is basically a set of instructions for how to retrieve and organize data
  We recommend that when you store the query results, you assign the returned collection object to a new variable as shown in the following example:  
   
 ## Example  
- [!code-cs[csProgGuideLINQ#25](../../samples/snippets/csharp/concepts/linq/how-to-store-the-results-of-a-query-in-memory_1.cs)]  
+ [!code-cs[csProgGuideLINQ#25](../../../samples/snippets/csharp/concepts/linq/how-to-store-the-results-of-a-query-in-memory_1.cs)]  
   
 
 ## See Also  
- [LINQ Query Expressions](programming-guide/linq-query-expressions/index.md)
+ [LINQ Query Expressions](index.md)

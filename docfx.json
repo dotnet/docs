@@ -76,7 +76,8 @@
     "globalMetadata": {
       "breadcrumb_path": "/dotnet/toc.json",
       "_displayLangs": ["csharp"],
-      "author": "dotnet-bot"
+      "author": "dotnet-bot",
+      "searchScope": [".NET"]
     },
     "dest": "_site",
     "template": [ "docs.html" ],

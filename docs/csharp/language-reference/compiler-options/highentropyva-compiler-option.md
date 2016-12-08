@@ -53,6 +53,4 @@ The **/highentropyva** compiler option tells the Windows kernel whether a partic
 ## Remarks  
  The **/highentropyva** option enables compatible versions of the Windows kernel to use higher degrees of entropy when randomizing the address space layout of a process as part of ASLR. Using higher degrees of entropy means that a larger number of addresses can be allocated to memory regions such as stacks and heaps. As a result, it is more difficult to guess the location of a particular memory region.  
   
- When the **/highentropyva** compiler option is specified, the target executable and any modules that it depends on must be able to handle pointer values that are larger than 4 gigabytes (GB) when they are running as a 64-bit process.  
-  
- For more information about ASLR, see [Mitigating Software Vulnerabilities](http://go.microsoft.com/fwlink/?LinkId=226234).
+ When the **/highentropyva** compiler option is specified, the target executable and any modules that it depends on must be able to handle pointer values that are larger than 4 gigabytes (GB) when they are running as a 64-bit process.

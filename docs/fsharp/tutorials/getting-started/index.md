@@ -3,11 +3,11 @@ title: Getting Started with F#
 description: Getting Started with F#
 keywords: visual f#, f#, functional programming, .NET, .NET Core
 author: cartermp
-manager: wpickett
+ms.author: phcart
 ms.date: 09/06/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+
 ms.devlang: dotnet
 ms.assetid: 615db1ec-6ef3-4de2-bae6-4586affa9771
 ---

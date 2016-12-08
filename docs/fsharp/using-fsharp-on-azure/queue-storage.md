@@ -6,7 +6,7 @@ author: sylvanc
 manager: jbronsk
 ms.date: 09/20/2016
 ms.topic: article
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
 ms.devlang: dotnet
 ms.assetid: 70dc554c-8f4d-42a7-8e2a-6438657d012a

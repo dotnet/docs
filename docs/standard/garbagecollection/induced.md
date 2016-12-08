@@ -7,7 +7,7 @@ manager: wpickett
 ms.date: 08/16/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+
 ms.devlang: dotnet
 ms.assetid: 3e09b9dd-a800-4e56-b468-619f910ae22e
 ---

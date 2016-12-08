@@ -2,11 +2,11 @@
 title: Statically Resolved Type Parameters (F#)
 description: Statically Resolved Type Parameters (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
 ms.assetid: b3797415-3e49-4f8a-a8ee-fa614c5721aa 
 ---

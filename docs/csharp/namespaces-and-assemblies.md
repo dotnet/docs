@@ -7,7 +7,7 @@ manager: wpickett
 ms.date: 12/01/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+
 ms.devlang: csharp
 ms.assetid: fe436e2b-c6ea-490d-a221-0d822c6e178b
 redirect_url: /dotnet/articles/csharp/programming-guide/namespaces/index

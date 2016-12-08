@@ -2,11 +2,11 @@
 title: XML Documentation (F#)
 description: XML Documentation (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
 ms.assetid: d99ab1b6-e170-4ec2-a543-43ea7ab15bb2 
 ---

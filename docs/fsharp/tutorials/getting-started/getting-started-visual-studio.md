@@ -4,10 +4,9 @@ description: Learn how to use F# with Visual Studio.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
-manager: wpickett
 ms.date: 09/08/2016
 ms.topic: article
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
 ms.assetid: 8db75596-19a9-4eda-b20d-a12d517c8cc1 
 ---

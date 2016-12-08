@@ -3,10 +3,10 @@ title: Copy and Update Record Expressions (F#)
 description: Copy and Update Record Expressions (F#)
 keywords: visual f#, f#, functional programming
 author: ChrSteinert
-manager: danielfe
+
 ms.date: 06/04/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
 ms.assetid: b5fc4ef0-64eb-4272-96a7-bb4dffbb634a
 ---

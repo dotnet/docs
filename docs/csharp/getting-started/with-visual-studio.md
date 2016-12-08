@@ -9,7 +9,7 @@ ms.author: ronpet
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+
 ms.devlang: dotnet
 ms.assetid: 22fed72f-04b7-4ec0-8fd3-f1d3d60585d7
 ---

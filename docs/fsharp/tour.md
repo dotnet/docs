@@ -3,11 +3,11 @@ title: Tour of F#
 description: Tour of F# 
 keywords: visual f#, f#, functional programming, .NET, tour
 author: cartermp
-manager: wpickett
+ms.author: phcart
 ms.date: 08/18/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+
 ms.devlang: devlang-fsharp
 ms.assetid: 49775139-082e-442f-b5a2-dd402399b5d2
 ---

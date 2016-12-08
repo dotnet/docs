@@ -2,11 +2,11 @@
 title: Constraints (F#)
 description: Constraints (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
 ms.assetid: 2f232a3a-9486-48fb-9759-f23404ed4b52 
 ---

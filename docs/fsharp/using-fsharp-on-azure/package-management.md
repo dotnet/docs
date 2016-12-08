@@ -7,7 +7,7 @@ manager: jbronsk
 ms.date: 09/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+
 ms.devlang: dotnet
 ms.assetid: dd32ef9c-5416-467e-9fa3-c9ee3bb08456
 ---

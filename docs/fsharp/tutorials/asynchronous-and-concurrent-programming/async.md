@@ -3,11 +3,11 @@ title: Async Programming in F#
 description: Async Programming in F#
 keywords: .NET, .NET Core
 author: cartermp
-manager: wpickett
+ms.author: phcart
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+
 ms.devlang: dotnet
 ms.assetid: f9196bfc-b8a8-4d33-8b53-0dcbd58a69d8
 ---

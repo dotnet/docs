@@ -2,11 +2,11 @@
 title: "Exceptions: The try...finally Expression (F#)"
 description: "Exceptions: The try...finally Expression (F#)"
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
 ms.assetid: af06b20c-8d87-4496-a0aa-6fdfe8b3a786 
 ---

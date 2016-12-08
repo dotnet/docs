@@ -2,11 +2,11 @@
 title: Functions as First-Class Values (F#)
 description: Functions as First-Class Values (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
 ms.assetid: 6b76b93b-a141-40f4-976c-7f0c558d6d09 
 ---

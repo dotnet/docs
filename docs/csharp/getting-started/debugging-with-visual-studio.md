@@ -8,7 +8,7 @@ ms.author: ronpet
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+
 ms.devlang: dotnet
 ms.assetid: ba33d3d7-d3bc-4449-9701-1d800f56baa0
 ---

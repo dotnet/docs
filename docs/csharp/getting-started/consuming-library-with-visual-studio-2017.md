@@ -8,7 +8,7 @@ ms.author: shoag
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+
 ms.devlang: dotnet
 ms.assetid: d7b94076-1108-4174-94e7-a18f00072bb7
 ---

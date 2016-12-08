@@ -2,11 +2,11 @@
 title: Events (F#)
 description: Events (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
 ms.assetid: 28b588f2-0c9e-4c0d-babf-901ed934638a 
 ---

@@ -7,7 +7,7 @@ manager: wpickett
 ms.date: 11/12/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+
 ms.devlang: dotnet
 ---
 

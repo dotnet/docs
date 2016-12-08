@@ -2,11 +2,11 @@
 title: Code Quotations (F#)
 description: Code Quotations (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
 ms.assetid: 4559e659-2b04-48bd-8a0b-8527920eec95 
 ---

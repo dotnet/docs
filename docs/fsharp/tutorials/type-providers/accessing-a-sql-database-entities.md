@@ -2,11 +2,11 @@
 title: "Walkthrough: Accessing a SQL Database by Using Type Providers and Entities (F#)"
 description: "Walkthrough: Accessing a SQL Database by Using Type Providers and Entities (F#)"
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
 ms.assetid: dc82a932-5401-4d19-9fb3-92c50d8db514 
 ---

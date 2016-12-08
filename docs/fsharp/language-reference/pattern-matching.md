@@ -2,11 +2,11 @@
 title: Pattern Matching (F#)
 description: Pattern Matching (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
 ms.assetid: 5562ee98-e2f1-4dcd-8e2f-16ae27baaade
 ---

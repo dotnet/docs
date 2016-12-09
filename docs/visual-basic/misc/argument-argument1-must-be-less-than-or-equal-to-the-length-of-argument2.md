@@ -1,13 +1,13 @@
 ---
 title: "Argument &#39;&lt;argument1&gt;&#39; must be less than or equal to the length of argument &#39;&lt;argument2&gt;&#39; | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_IndexLELength2"
@@ -15,7 +15,7 @@ ms.assetid: 10765f81-79c5-44c2-89c5-888253105b78
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

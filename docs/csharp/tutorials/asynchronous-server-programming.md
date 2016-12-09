@@ -2,11 +2,9 @@
 title: Asynchronous Server Programming | C# Guide
 description: Learn techniques for offloading server workloads using asynchronous programming techniques
 keywords: C#, async, CPU bound, network bound
-author: dotnet-bot
-manager: wpickett
 ms.date: 08/24/2016
 ms.topic: article
-ms.prod: visual-studio-dev-14
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 7402b29b-1093-456d-be4c-f60ecb8926bb

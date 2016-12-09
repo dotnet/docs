@@ -2,7 +2,7 @@
 title: "How to: Find Descendant Elements (XPath-LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: e7e2dc9e-bda9-420d-a5b1-4fabf1cca46b
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # How to: Find Descendant Elements (XPath-LINQ to XML) (Visual Basic)
 This topic shows how to get the descendant elements with a particular name.  

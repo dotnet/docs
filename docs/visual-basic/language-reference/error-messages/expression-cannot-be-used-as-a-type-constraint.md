@@ -1,13 +1,13 @@
 ---
 title: "&#39;&lt;expression&gt;&#39; cannot be used as a type constraint | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "bc32061"
@@ -20,7 +20,7 @@ ms.assetid: b17821b7-fa14-4397-a211-6e2a14079f09
 caps.latest.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

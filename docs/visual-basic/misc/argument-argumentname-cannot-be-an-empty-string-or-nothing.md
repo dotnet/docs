@@ -1,13 +1,13 @@
 ---
 title: "Argument &lt;argumentname&gt; cannot be an empty string or Nothing | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrGeneral_ArgumentEmptyOrNothing_Name"
@@ -15,7 +15,7 @@ ms.assetid: 2c458944-1bdf-4ea7-9caf-560ca7582cc0
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

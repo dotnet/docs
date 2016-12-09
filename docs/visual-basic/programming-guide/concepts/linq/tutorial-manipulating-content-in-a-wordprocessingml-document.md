@@ -2,7 +2,7 @@
 title: "Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: f8028ba8-2dd1-4425-930c-8cc23176ebbc
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)
 This tutorial shows how to apply the functional transformational approach and LINQ to XML to manipulate XML documents. The Visual Basic examples query and manipulate information in Office Open XML WordprocessingML documents that are saved by Microsoft Word.  

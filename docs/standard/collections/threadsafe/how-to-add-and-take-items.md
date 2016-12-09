@@ -3,11 +3,11 @@ title: "How to: Add and Take Items Individually from a BlockingCollection"
 description: "How to: Add and Take Items Individually from a BlockingCollection"
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 2b9d39ab-0993-4453-b021-b04870098bf7
 ---

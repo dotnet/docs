@@ -1,13 +1,13 @@
 ---
 title: "Indexers (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "cs.indexers"
@@ -20,7 +20,7 @@ ms.assetid: 022cd27d-d5e0-4cfe-8b97-dc018cc3355d
 caps.latest.revision: 29
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

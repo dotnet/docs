@@ -1,13 +1,13 @@
 ---
 title: "&lt;example&gt; (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "<example>"
@@ -21,7 +21,7 @@ ms.assetid: 32d6e73b-2554-4abb-83ee-a1e321334fd2
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

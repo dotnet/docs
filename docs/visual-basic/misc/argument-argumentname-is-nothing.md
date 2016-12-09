@@ -1,13 +1,13 @@
 ---
 title: "Argument &#39;&lt;argumentname&gt;&#39; is Nothing | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_InvalidNullValue1"
@@ -15,7 +15,7 @@ ms.assetid: abbde904-c191-4911-8822-c9dd2f81d616
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

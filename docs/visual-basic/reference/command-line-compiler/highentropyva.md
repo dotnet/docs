@@ -1,13 +1,13 @@
 ---
 title: "-highentropyva (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 helpviewer_keywords: 
   - "highentropyva compiler option (Visual Basic)"
@@ -16,7 +16,7 @@ ms.assetid: ff25f20a-6ca2-467b-9e52-5cf439f5028e
 caps.latest.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

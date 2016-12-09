@@ -3,13 +3,12 @@ title: Debugging Your Hello World Application with Visual Studio 2015
 description: Debugging Your Hello World Application with Visual Studio 2015
 keywords: .NET, .NET Core, .NET Core console application
 author: rpetrusha
-manager: wpickett
 ms.author: ronpet
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: ba33d3d7-d3bc-4449-9701-1d800f56baa0
 ---
 

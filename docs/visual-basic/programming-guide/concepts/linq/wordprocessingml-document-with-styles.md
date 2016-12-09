@@ -2,7 +2,7 @@
 title: "WordprocessingML Document with Styles2 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: a9136e4d-c368-4661-8049-7d45c679a236
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # WordprocessingML Document with Styles
 More complicated WordprocessingML documents have paragraphs that are formatted with styles.  

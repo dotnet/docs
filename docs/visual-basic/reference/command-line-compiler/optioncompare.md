@@ -1,13 +1,13 @@
 ---
 title: "-optioncompare | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "/optioncompare"
@@ -21,7 +21,7 @@ ms.assetid: 7237b766-b44d-4cc5-9a3c-885348a7d9e4
 caps.latest.revision: 17
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

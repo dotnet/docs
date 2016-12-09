@@ -2,12 +2,13 @@
 title: "Loops: for...in Expression (F#)"
 description: "Loops: for...in Expression (F#)"
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: f54e3228-4aec-4d0a-ae37-bc3376508284 
 ---
 

@@ -1,13 +1,9 @@
 ---
 title: "interface (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "interface_CSharpKeyword"
@@ -19,7 +15,6 @@ ms.assetid: 7da38e81-4f99-4bc5-b07d-c986b687eeba
 caps.latest.revision: 29
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

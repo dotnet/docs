@@ -3,11 +3,11 @@ title: Comparisons and Sorts Within Collections
 description: Comparisons and Sorts Within Collections
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c7b7c005-628d-427a-91ad-af0c3958c00e
 ---

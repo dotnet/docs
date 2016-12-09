@@ -77,6 +77,8 @@
       "breadcrumb_path": "/dotnet/toc.json",
       "_displayLangs": ["csharp"],
       "author": "dotnet-bot",
+      "ms.author": "dotnetcontent",
+      "manager": "wpickett",
       "searchScope": [".NET"]
     },
     "fileMetadata": {
@@ -87,10 +89,6 @@
       "ms.topic":
       {
         "api_ref/**.yml": "managed-reference"
-      },
-      "ms.author":
-      {
-        "api_ref/**.yml": "dotnetcontent"
       }
     },
     "dest": "_site",

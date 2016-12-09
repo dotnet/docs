@@ -1,13 +1,13 @@
 ---
 title: "Type of optional value for optional parameter &lt;parametername&gt; is not CLS-compliant | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "BC40042"
@@ -20,7 +20,7 @@ ms.assetid: 1d6eae29-4ad3-4434-bde4-a53b6051adf5
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

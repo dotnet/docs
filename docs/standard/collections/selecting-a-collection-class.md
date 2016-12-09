@@ -3,11 +3,11 @@ title: Selecting a Collection Class
 description: Selecting a Collection Class
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 0a60fca7-e082-48d4-9dda-30b0d3e67ec7
 ---

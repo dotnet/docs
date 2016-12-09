@@ -1,3 +1,3 @@
 ---
-redirect_url: /dotnet/articles/csharp/order-the-results-of-a-join-clause
+redirect_url: /dotnet/articles/csharp/linq/order-the-results-of-a-join-clause
 ---

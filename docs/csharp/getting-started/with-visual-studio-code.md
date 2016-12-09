@@ -47,9 +47,6 @@ If you'd like to get started with a simple "Hello World" program on .NET Core, f
     * You'll see a new `project.lock.json` file in your project folder.
     * This file contains information about your project's dependencies to make subsequent restores quicker.
 
-> [!TIP]
-If you are using the MSBuild-based .NET Core Tools a .csproj will be created instead of a project.json, but the `dotnet` commands remain the same. [Read more](https://blogs.msdn.microsoft.com/dotnet/2016/11/16/announcing-net-core-tools-msbuild-alpha/).
-
   ![Image dotnet restore](media/with-visual-studio-code/dotnetRestore.PNG)
 
 4. Run the "Hello World" program by typing `dotnet run`
@@ -66,13 +63,13 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
     * You can also open the Debug tab by selecting View > Debug
 
   ![OpenDebug](media/with-visual-studio-code/OpenDebug.PNG)
-2. Locate the green arrow at the top of the pane. Make sure the drop down next to it has `.NET Core Launch (console)` selected.
+3. Locate the green arrow at the top of the pane. Make sure the drop down next to it has `.NET Core Launch (console)` selected.
 
   ![SelectCore](media/with-visual-studio-code/SelectCore.PNG)
-3. Add a breakpoint to your project by clicking in the space left of the line numbers in the editor.
+4. Add a breakpoint to your project by clicking in the space left of the line numbers in the editor.
 
   ![SetBreakpoint](media/with-visual-studio-code/SetBreakpoint.PNG)
-4. Hit F5 or the green arrow to start debugging. The debugger stops execution of your program when it reaches the breakpoint you set in (3) above.
+5. Hit F5 or the green arrow to start debugging. The debugger stops execution of your program when it reaches the breakpoint you set in (3) above.
     * While debugging you can view your local variables in the top left pane or use the debug console.
 
   ![RunDebug](media/with-visual-studio-code/RunDebug.PNG)

@@ -47,6 +47,10 @@ If you'd like to get started with a simple "Hello World" program on .NET Core, f
     * You'll see a new `project.lock.json` file in your project folder.
     * This file contains information about your project's dependencies to make subsequent restores quicker.
 
+  > [!TIP]
+  If you are using the MSBuild-based .NET Core Tools a .csproj will be created instead of a project.json, but the `dotnet` commands remain the same. [Read more](https://blogs.msdn.microsoft.com/dotnet/2016/11/16/announcing-net-core-tools-msbuild-alpha/).
+
+
   ![Image dotnet restore](media/with-visual-studio-code/dotnetRestore.PNG)
 
 4. Run the "Hello World" program by typing `dotnet run`

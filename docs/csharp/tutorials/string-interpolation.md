@@ -1,0 +1,147 @@
+﻿---
+title: String Interpolation | C#
+description: Learn how string interpolation works in C# 6
+keywords: .NET, .NET Core, C#, string
+author: mgroves
+manager: BillWagner
+ms.date: 12/09/2016
+ms.topic: article
+ms.prod: .net-core
+ms.technology: .net-core-technologies
+ms.devlang: csharp
+ms.assetid: f8806f6b-3ac7-4ee6-9b3e-c524d5301ae9
+---
+
+# String Interpolation in C#
+
+## Introduction
+
+- string.format
+- other languages
+- how it looks in c# now
+
+## Prerequisites
+You’ll need to setup your machine to run .NET core. You can find the
+installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
+page.
+You can run this application on Windows, Ubuntu Linux, macOS or in a Docker container. 
+You’ll need to install your favorite code editor. The descriptions below
+use [Visual Studio Code](https://code.visualstudio.com/) which is an open
+source, cross platform editor. However, you can use whatever tools you are
+comfortable with.
+
+## Create the Application
+
+Now that you've installed all the tools, create a new .NET Core
+application. To use the command line generator, execute the following command in your favorite shell:
+
+`dotnet new`
+
+This command will create a barebones .NET core project with `project.json` and `Program.cs` files. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
+
+To execute the program, use `dotnet run`. You should see "Hello, World" output to the console.
+
+## Intro to String Interpolation
+
+With `String.Format`, you would specify "placeholders" in a string that would be replaced by the parameters following the string. For instance:
+
+```cs
+var firstName = "Matt";
+var lastName = "Groves";
+var str = String.Format("My name is {FirstName} {LastName}", firstName, lastName);
+Console.WriteLine(str);
+```
+
+That will output "My name is Matt Groves".
+
+In C# 6, Instead of using String.Format, you can tell C# that a string is interpolated by prepending it with the `$` symbol, and then using the variables directly in the string. For instance:
+
+```cs
+var firstName = "Matt";
+var lastName = "Groves";
+var str = $"My name is {firstName} {lastName}");
+Console.WriteLine(str);
+```
+
+You don't have to use just variables. You can use any expression within the brackets. For instance:
+
+```cs
+for(var i = 0; i < 5; i++) {
+    Console.WriteLine($"This is line number {i + 1}");
+}
+```
+
+Which would output:
+
+```
+This is line number 1
+This is line number 2
+This is line number 3
+This is line number 4
+This is line number 5
+```
+
+## How string interpolation works
+
+Behind the scenes, this string interpolation syntax gets translated into String.Format by the compiler. So, you can do the same type of stuff you've done before with String.Format.
+
+For instance, you can add padding and numeric formatting:
+
+```cs
+var rand = new Random();
+for(var i = 998; i < 1005; i++)
+{
+    var randomDecimal = rand.NextDouble() * 10000;
+    Console.WriteLine($"{i, -10} {randomDecimal, 6:N2}");
+}
+```
+
+The above would output something like:
+
+```
+998        5,177.67
+999        6,719.30
+1000       9,910.61
+1001       529.34
+1002       1,349.86
+1003       2,660.82
+1004       6,227.77
+```
+
+## Localization and Internationalization
+
+An interpolated string supports `IFormattable` and `FormattableString`, which can be useful for internationalization.
+
+By default, an interpolated string uses the current culture. To use a different culture, you could cast it as `IFormattable`
+
+For instance:
+
+```cs
+var birthday = new DateTime(1980, 1, 29);
+Console.WriteLine($"My birthday is {birthday}");
+// This outputs "My birthday is 1/29/1980 12:00:00 AM"
+
+var birthdayFormattable = (IFormattable)$"My birthday is {birthday}";
+Console.WriteLine(birthdayFormattable.ToString(null, new CultureInfo("fr-FR")));
+// This outputs "My birthday is 29/01/1980 00:00:00"
+```
+
+For localization, keep in mind that instead of `{0}` style placeholders, you are now storing variable names, which means they must match up with variable names at runtime. If a variable name is not found, then a runtime error will be generated.
+
+For instance:
+
+```cs
+var animal = "fox";
+var localizeMe = $"The {adj} brown {animal} jumped over the lazy {otheranimal}";
+var adj = "quick";
+Console.WriteLine(localizeMe);
+```
+
+If you run this, you'll get exceptions:
+ 
+* `Cannot use local variable 'adj' before it is declared` - the `adj` variable wasn't declared until *after* the interpolated string.
+* `The name 'otheranimal' does not exist in the current context` - a variable called `otheranimal` was never even declared
+
+## Conclusion 
+
+In this tutorial, you learned how to use string interpolation features of C# 6. It's basically a more concise way of writing simple `String.Format` statements, with some caveats for more advanced uses of it.

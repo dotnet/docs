@@ -3,10 +3,10 @@ title: C# Guide
 description: C# Guide
 keywords: .NET, .NET Core
 author: BillWagner
-manager: wpickett
+
 ms.date: 08/03/2016
 ms.topic: article
-ms.prod: visual-studio-dev-14
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 52db8280-0e53-40cf-858b-e8eef3997dea

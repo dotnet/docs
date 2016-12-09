@@ -3,11 +3,11 @@ title: Induced collections
 description: Induced collections
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/16/2016
 ms.topic: article
-ms.prod: .net-core
-
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3e09b9dd-a800-4e56-b468-619f910ae22e
 ---

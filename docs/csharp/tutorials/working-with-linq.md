@@ -3,12 +3,12 @@ title: Working with LINQ
 description: Working with LINQ
 keywords: .NET, .NET Core
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: 0db12548-82cb-4903-ac88-13103d70aa77
 ---
 

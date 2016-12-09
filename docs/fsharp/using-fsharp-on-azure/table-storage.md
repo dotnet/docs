@@ -3,12 +3,12 @@ title: Get started with Azure Table storage using F#
 description: Store structured data in the cloud using Azure Table storage, a NoSQL data store.
 keywords: visual f#, f#, functional programming, .NET, .NET Core, Azure
 author: sylvanc
-manager: jbronsk
+ms.author: phcart
 ms.date: 09/20/2016
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp
-ms.devlang: dotnet
+ms.devlang: fsharp
 ms.assetid: 9e5d6cea-a98c-461e-a5cc-75f1d154eafd
 ---
 

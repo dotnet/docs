@@ -3,11 +3,11 @@ title: Getting Started with .NET
 description: Lists various articles for getting started with .NET, both from a language and platform perspective.
 keywords: .NET, Getting Started, C#, F#, Visual Basic
 author: cartermp
-ms.author: phcart
+ms.author: mairaw
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net
-
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 81c07080-acdf-4aef-a66d-0ab52fab2c04
 ---

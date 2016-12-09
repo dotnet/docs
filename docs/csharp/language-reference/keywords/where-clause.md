@@ -1,13 +1,9 @@
 ---
 title: "where clause (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "whereclause_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: 7f9bf952-7744-4f91-b676-cddb55d107c3
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

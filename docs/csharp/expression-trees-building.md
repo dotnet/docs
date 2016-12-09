@@ -3,12 +3,12 @@ title: Building Expression Trees
 description: Building Expression Trees
 keywords: .NET, .NET Core
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: 542754a9-7f40-4293-b299-b9f80241902c
 ---
 

@@ -2,11 +2,9 @@
 title: Porting to .NET Core - NuGet packages
 description: Porting to .NET Core - NuGet packages
 keywords: .NET, .NET Core
-manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-
 ms.devlang: dotnet
 ms.assetid: 4d823e71-19ac-4419-953e-b47aa58f5538
 ---

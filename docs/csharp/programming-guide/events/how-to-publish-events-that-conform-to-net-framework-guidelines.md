@@ -1,13 +1,13 @@
 ---
 title: "How to: Publish Events that Conform to .NET Framework Guidelines (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -17,7 +17,7 @@ ms.assetid: 9310ae16-8627-44a2-b08c-05e5976202b1
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

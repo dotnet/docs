@@ -3,11 +3,11 @@ title: Weak references
 description: Weak references
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/19/2016
 ms.topic: article
-ms.prod: .net-core
-
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 22319f2f-0008-4ace-815e-545892a0512a
 ---

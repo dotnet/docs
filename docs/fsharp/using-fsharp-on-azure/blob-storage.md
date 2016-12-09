@@ -3,12 +3,12 @@ title: Get started with Azure Blob storage using F#
 description: Store unstructured data in the cloud with Azure Blob storage.
 keywords: visual f#, f#, functional programming, .NET, .NET Core, Azure
 author: sylvanc
-manager: jbronsk
+ms.author: phcart
 ms.date: 09/20/2016
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp
-ms.devlang: dotnet
+ms.devlang: fsharp
 ms.assetid: c5b74a4f-dcd1-4849-930c-904b6c8a04e1
 ---
 

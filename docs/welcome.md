@@ -3,11 +3,10 @@ title: Welcome to .NET
 description: Getting started
 keywords: .NET
 author: richlander
-manager: wpickett
+ms.author: mairaw
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net
-ms.technology: .net-technologies
 ms.devlang: dotnet
 ms.assetid: cb788dcf-2120-467f-9c34-c02a90e1f68f
 ---

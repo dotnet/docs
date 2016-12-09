@@ -3,11 +3,10 @@ title: .NET Core Prerequisites (Preview 3 Tooling)
 description: .NET Core Prerequisites (Preview 3 Tooling)
 keywords: .NET, .NET Core
 author: billwagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 09/15/2016
 ms.topic: article
 ms.prod: .net-core
-
 ms.devlang: dotnet
 ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 ---

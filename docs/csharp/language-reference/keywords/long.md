@@ -1,13 +1,9 @@
 ---
 title: "long (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "long_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: f9b24319-1f39-48be-a42b-d528ee28a7fd
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

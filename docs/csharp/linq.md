@@ -2,13 +2,11 @@
 title: Language Integrated Query (LINQ)
 description: Language Integrated Query (LINQ)
 keywords: .NET, .NET Core
-author: dotnet-bot
-manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: 007cc736-f5cf-4919-b99b-0c00ab2814ce
 ---
 

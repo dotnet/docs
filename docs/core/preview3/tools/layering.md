@@ -3,11 +3,10 @@ title: .NET Core Command Line Tools Preview 3 Architecture
 description: Preview 3 brings about certain changes to the way the overall .NET Core tools are layered. 
 keywords: CLI, extensibility, custom commands, .NET Core
 author: blackdwarf
-manager: wpickett
 ms.date: 11/12/2016
 ms.topic: article
 ms.prod: .net-core
-
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ---
 

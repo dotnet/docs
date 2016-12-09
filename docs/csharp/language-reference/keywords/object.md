@@ -1,13 +1,9 @@
 ---
 title: "object (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "object_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: 93f60c0b-e17a-40a9-9362-cca5fb77b0e7
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

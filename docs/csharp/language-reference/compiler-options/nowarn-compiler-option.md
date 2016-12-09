@@ -1,13 +1,9 @@
 ---
 title: "-nowarn (C# Compiler Options) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/nowarn"
@@ -21,7 +17,6 @@ ms.assetid: 6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

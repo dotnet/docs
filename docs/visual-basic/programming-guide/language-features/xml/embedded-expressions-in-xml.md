@@ -2,7 +2,7 @@
 title: "Embedded Expressions in XML (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,7 +21,7 @@ ms.assetid: bf2eb779-b751-4b7c-854f-9f2161482352
 caps.latest.revision: 22
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

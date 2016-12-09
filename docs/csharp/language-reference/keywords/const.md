@@ -1,13 +1,9 @@
 ---
 title: "const (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "const_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: 79eb447c-117b-4418-933f-97c50aa472db
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -3,12 +3,12 @@ title: Strongly Typed Delegates
 description: Strongly Typed Delegates
 keywords: .NET, .NET Core
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: 564a683d-352b-4e57-8bac-b466529daf6b
 ---
 

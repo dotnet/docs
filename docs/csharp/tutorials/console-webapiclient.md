@@ -3,12 +3,12 @@ title: REST client
 description: REST client
 keywords: .NET, .NET Core
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-
-ms.devlang: dotnet
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
 ---
 

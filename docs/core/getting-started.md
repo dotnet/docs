@@ -3,11 +3,10 @@ title: Getting started with .NET Core
 description: Find resources to learn how to build .NET Core applications on Windows, Linux and macOS.
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 10/20/2016
 ms.topic: article
 ms.prod: .net-core
-
 ms.devlang: dotnet
 ms.assetid: d1453a0d-317c-4da6-b68e-422a2c0bfe49
 ---

@@ -1,13 +1,9 @@
 ---
 title: "Reference Tables for Types (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "cs.referencetables"
@@ -21,7 +17,6 @@ ms.assetid: 1d2b6a9b-31fd-4fa6-a7b2-bfd9c806ac8a
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

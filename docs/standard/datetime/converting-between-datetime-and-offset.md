@@ -3,11 +3,11 @@ title: Converting between DateTime and DateTimeOffset
 description: Converting between DateTime and DateTimeOffset
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/15/2016
 ms.topic: article
-ms.prod: .net-core
-
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: fab3af5b-5d0f-4384-a40a-1b5d99b30dd1
 ---

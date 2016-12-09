@@ -2,7 +2,7 @@
 title: "Object Variable Declaration (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,7 +25,7 @@ ms.assetid: 2a5a41a3-1aa8-4236-b1f0-2382af7bf715
 caps.latest.revision: 33
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

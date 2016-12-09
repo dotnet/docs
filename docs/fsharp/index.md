@@ -3,12 +3,12 @@ title: F# Guide
 description: F# Guide 
 keywords: .NET, .NET Core
 author: jackfoxy
-manager: wpickett
+ms.author: phcart
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: ea27fb37-dad1-4bd4-a3cc-4f5c70767ae9
 ---
 

@@ -1,13 +1,9 @@
 ---
 title: "-target:winexe (C# Compiler Options) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/target:winexe"
@@ -21,7 +17,6 @@ ms.assetid: b5a0619c-8caa-46a5-a743-1cf68408ad7a
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

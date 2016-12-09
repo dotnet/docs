@@ -2,7 +2,7 @@
 title: "Names of Declared XML Elements and Attributes (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,7 +21,7 @@ ms.assetid: cc110118-b6cf-4ff9-a4e4-6233c90c9fbf
 caps.latest.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -3,13 +3,12 @@ title: Building a C# Hello World Application with .NET Core in Visual Studio 201
 description: Learn how to build a simple .NET Core console application using Visual Studio 2017
 keywords: .NET Core, .NET Core console application, Visual Studio 2017
 author: stevehoag
-manager: wpickett
 ms.author: shoag
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net-core
-
-ms.devlang: dotnet
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: 97aa50bf-bdf8-416d-a56c-ac77504c14ea
 ---
 

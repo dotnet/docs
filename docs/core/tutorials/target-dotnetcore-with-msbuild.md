@@ -3,11 +3,10 @@ title: Using MSBuild to build .NET Core projects
 description: Using MSBuild to build .NET Core projects
 keywords: .NET, .NET Core
 author: dsplaisted
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-
 ms.devlang: dotnet
 ms.assetid: 13c66464-4f14-4db6-aa8b-06f25e7ba894
 ---

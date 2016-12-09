@@ -3,11 +3,10 @@ title: Organizing Your Project to Support .NET Framework and .NET Core
 description: Organizing Your Project to Support .NET Framework and .NET Core
 keywords: .NET, .NET Core
 author: conniey
-manager: wpickett
+ms.author: mairaw
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: .net-core
-
 ms.devlang: dotnet
 ms.assetid: 3af62252-1dfa-4336-8d2f-5cfdb57d7724
 ---

@@ -2,12 +2,9 @@
 title: Developing .NET Core libraries using Visual Studio
 description: Developing .NET Core libraries using Visual Studio
 keywords: .NET, .NET Core
-author: dotnet-bot
-manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-
 ms.devlang: dotnet
 ms.assetid: 01b988ed-583f-48c8-a016-caeee282e0a6
 ---

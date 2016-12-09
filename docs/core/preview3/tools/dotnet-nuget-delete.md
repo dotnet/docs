@@ -4,11 +4,10 @@ description: The dotnet-nuget-delete command deletes or unlists a package from t
 keywords: dotnet-nuget-delete, CLI, CLI command, .NET Core
 author: karann-msft
 ms.author: mairaw
-manager: wpickett
 ms.date: 11/11/2016
 ms.topic: article
 ms.prod: .net-core
-
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 6ddffde4-c789-4e90-990e-d35f6a6565d4
 ---

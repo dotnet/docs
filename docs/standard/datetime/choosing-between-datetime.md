@@ -3,11 +3,11 @@ title: Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo
 description: Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/11/2016
 ms.topic: article
-ms.prod: .net-core
-
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 2dd84ee8-9f0f-4054-9537-155857a460cd
 ---

@@ -6,9 +6,9 @@ author: cartermp
 ms.author: phcart
 ms.date: 07/01/2016
 ms.topic: article
-ms.prod: .net-core
-
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 615db1ec-6ef3-4de2-bae6-4586affa9771
 ---
 

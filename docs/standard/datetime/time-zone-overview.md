@@ -3,11 +3,11 @@ title: Time zone overview
 description: Time zone overview
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/16/2016
 ms.topic: article
-ms.prod: .net-core
-
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: e3a10f62-d403-4441-8621-adc964e32c07
 ---

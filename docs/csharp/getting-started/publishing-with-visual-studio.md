@@ -3,13 +3,12 @@ title: Publishing Your Hello World Application with Visual Studio 2015
 description: Publishing Your Hello World Application with Visual Studio 2015
 keywords: .NET, .NET Core, .NET Core console application
 author: rpetrusha
-manager: wpickett
 ms.author: ronpet
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod: .net-core
-
-ms.devlang: dotnet
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: a19545d3-24af-4a32-9778-cfb5ae938287
 ---
 

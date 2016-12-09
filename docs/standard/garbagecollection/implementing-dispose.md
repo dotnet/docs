@@ -4,11 +4,10 @@ description: Implementing a dispose method
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 08/16/2016
 ms.topic: article
-ms.prod: .net-core
-
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: eca6cdc3-6a14-4296-86fb-1eb2f21455b0
 ---

@@ -1,13 +1,13 @@
 ---
 title: "XML Comment Literal (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralComment"
@@ -22,7 +22,7 @@ ms.assetid: 634c1cee-5e01-48d0-88d7-2dd55e4a9e52
 caps.latest.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

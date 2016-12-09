@@ -3,12 +3,12 @@ title: Get started with Azure File storage using F#
 description: Store file data in the cloud with Azure File storage, and mount your cloud file share from an Azure virtual machine (VM) or from an on-premises application running Windows.
 keywords: visual f#, f#, functional programming, .NET, .NET Core, Azure
 author: sylvanc
-manager: jbronsk
+ms.author: phcart
 ms.date: 09/20/2016
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp
-ms.devlang: dotnet
+ms.devlang: fsharp
 ms.assetid: 5c26a0aa-186e-476c-9f87-e0191754579e
 ---
 

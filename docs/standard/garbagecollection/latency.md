@@ -3,11 +3,11 @@ title: Latency modes
 description: Latency modes
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/18/2016
 ms.topic: article
-ms.prod: .net-core
-
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 810bd8be-5a48-42c6-b080-3afdb31fc61b
 ---

@@ -8,6 +8,7 @@ ms.date: 05/16/2016
 ms.topic: language-reference
 ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 2e0c1f28-cc6c-4ecd-bb93-3816c4dd7cd3 
 ---
 

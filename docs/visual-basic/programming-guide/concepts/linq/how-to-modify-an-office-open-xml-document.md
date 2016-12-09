@@ -2,7 +2,7 @@
 title: "How to: Modify an Office Open XML Document (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: 1cefd7f5-8e39-44c4-869c-f8021538a777
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # How to: Modify an Office Open XML Document (Visual Basic)
 This topic presents an example that opens an Office Open XML document, modifies it, and saves it.  

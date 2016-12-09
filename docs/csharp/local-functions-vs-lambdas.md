@@ -4,7 +4,7 @@ description: Why Local Functions might be a better choice than Lambda Expression
 keywords: C#, .NET, .NET Core, Latest Features, What's New, local functions, lambda expressions
 author:  BillWagner
 ms.author: wiwagn
-manager: wpickett
+
 ms.date: 10/27/2016
 ms.topic: article
 ms.prod: visual-studio-dev-15

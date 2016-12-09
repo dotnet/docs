@@ -3,11 +3,10 @@ title: .NET Core API Reference
 description: .NET Core API Reference 
 keywords: .NET, .NET Core, .NET Core API Reference, .NET Core class library, .NET class library
 author: rpetrusha
-manager: wpickett
+ms.author: ronpet
 ms.date: 06/20/2016
 ms.topic: managed-reference
 ms.prod: .net-core
-
 ms.devlang: dotnet
 ms.assetid: ab0b8c9f-925f-4c45-b337-b1deeb8aec4e
 ---

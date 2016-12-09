@@ -2,7 +2,7 @@
 title: "How to: Access Members of an Object (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,7 +18,7 @@ ms.assetid: a0072514-6a79-4dd6-8d03-ca8c13e61ddc
 caps.latest.revision: 20
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

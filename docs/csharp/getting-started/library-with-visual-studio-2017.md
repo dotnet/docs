@@ -3,13 +3,12 @@ title: Building a class library with C# and .NET Core in Visual Studio 2017 RC
 description: Learn how to build a class library written in C# using Visual Studio 2017
 keywords: .NET Core, .NET Standard class library, Visual Studio 2017
 author: stevehoag
-manager: wpickett
 ms.author: shoag
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net-core
-
-ms.devlang: dotnet
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: c849ca26-6a25-4d35-9544-f343af88e0e7
 ---
 

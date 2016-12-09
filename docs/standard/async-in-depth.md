@@ -3,11 +3,11 @@ title: Async in depth
 description: In-depth explanation of how asynchronous code works in .NET
 keywords: .NET, .NET Core, .NET Standard
 author: cartermp
-ms.author: phcart
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
 ---

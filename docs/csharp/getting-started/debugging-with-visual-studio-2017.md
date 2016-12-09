@@ -102,7 +102,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. Clear the breakpoint by clicking on the dot in the left margin of the code window, or by choosing the **Debug**, **Toggle Breakpoint** menu item.
 
-## Stepping through a progam ##
+## Stepping through a program ##
 
 Visual Studio also allows us to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and use this feature to follow program flow though a small part of your program code. Since our program is small, though, let's step through the entire program by doing the following:
 

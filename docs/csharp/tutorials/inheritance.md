@@ -131,7 +131,7 @@ Implicit inheritance from the @System.Object class makes these methods available
 
 Because of implicit inheritance, we can call any inherited member from a `SimpleClass` object just as if it was actually a member defined in the `SimpleClass` class. For instance, the following example calls the `SimpleClass.ToString` method, which `SimpleClass` inherits from @System.Object.
 
-[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/simpleclass2.cs#2)]
+[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/simpleclass2.cs#1)]
 
 The following table lists the categories of types that you can create in C# and the types from which they implicitly inherit. Each base type makes a different set of members available through inheritance to implicitly derived types.
 

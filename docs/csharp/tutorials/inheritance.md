@@ -268,7 +268,7 @@ The following figure illustrates the relationship between the `Book` class and `
 
 We can now instantiate a `Book` object, invoke both its unique and inherited members, and pass it as an argument to a method that expects either a parameter of the `Publication` or a parameter of type `Book`, as the following example shows.
 
-[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/use-publication.cs#2)]
+[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/use-publication.cs#1)]
 
 ## <a name="abstract"></a> Designing abstract base classes and their derived classes ##
 

@@ -75,53 +75,26 @@ if (shape is Square)
 } 
 ```
 
-<!-- Wait for answers from Jared and Mads 
-
-Here's the question.
-
-I'm writing the detailed discussion of pattern matching, and I want to make sure
-I have the correct behavior for the scope of variables in an is pattern match
-expression.
-
-Consider this small example:
-
-public static double ComputeArea(object shape)
-{
-    if (shape is Square s)
-        return ComputeAreaOfSquare(s);
-    else if (shape is Circle c)
-        return ComputeAreaOfCircle(c);
-    Console.WriteLine(s); // CS0165: Use of unassigned local variable 's'.
-    Console.WriteLine(c); // CS0103: The name 'c' does not exist in the current context.
-
-    throw new ArgumentException(
-        message: "shape is not a recognized shape", 
-        paramName: nameof(shape));
-}
-
-Am I correct with these statements:
-
-1. The scope of 's' is the parent scope of the first 'if' statement
-2. The scope of 'c' is the  scope of the 'else' for the first 'if' statement.
-3. 's' is definitely assigned in the then-stmnt of the first 'if' statement.
-4. 'c' is definitely assigned in the then-stmnt of the second 'if' statement.
-
-I saw in earlier docs that the scope of 's' would be the scope of the true branch
-following the first 'if' statement. Is that still planned for release, or will that be dropped?
-
--->
-
-<!-- Add this
-            if ((shape is Square s1) && (s1.Side == 0))
-                return 0;
-
--->
-
 Language rules for pattern matching expressions help you avoid misuising
 the results of a match expression. In the example above, the variables `s`
 and `c` are only in scope and definitely assigned when the respective
-pattern match expressions have true results.If you try and use either
+pattern match expressions have true results. If you try and use either
 variable in another location, your code generates compiler errors.
+
+Let's examine both of those rules in detail, beginning with scope. The variable
+`c` is in scope only in the `else` branch of the first `if` statement. The variable
+`s` is in scope in the method `ComputeArea`. That's because the true and false
+branches of an `if` statement each establish a scope. However, the `if` statement
+itself does not. That means variables declared in the `if` statement are in the
+same scope as the `if` statement (the method in this case.) 
+
+The variables `c` and `s` are assigned when the respective `if` statements are true
+because of the definitely assigned when true mechanism. (You could reverse the
+logic by saying `if !(shape is Square s)` and the variable `s` would be definitely
+assigned only in the false branch.) 
+
+These rules mean that you are unlikely to accidentally access the result
+of a pattern match expression when that pattern ws not met.
 
 ## Extending to more shape types
 

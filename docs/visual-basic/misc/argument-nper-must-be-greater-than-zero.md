@@ -1,13 +1,13 @@
 ---
 title: "Argument &#39;NPer&#39; must be greater than zero | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrRate_NPerMustBeGTZero"
@@ -15,7 +15,7 @@ ms.assetid: d49242df-dbd1-4b26-bd8c-ed56d24fdfcd
 caps.latest.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

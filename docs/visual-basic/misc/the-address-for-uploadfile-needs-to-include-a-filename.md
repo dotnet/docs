@@ -1,13 +1,13 @@
 ---
 title: "The address for UploadFile needs to include a filename | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrNetwork_UploadAddressNeedsFilename"
@@ -15,7 +15,7 @@ ms.assetid: 0ee11749-0432-4ccb-8c08-1663a4a55ad0
 caps.latest.revision: 7
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

@@ -2,7 +2,7 @@
 title: "How to: Create Hierarchy Using Grouping (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: 4eb3ca6b-1aed-43de-b8b9-41c769c993f8
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # How to: Create Hierarchy Using Grouping (Visual Basic)
 This example shows how to group data, and then generate XML based on the grouping.  

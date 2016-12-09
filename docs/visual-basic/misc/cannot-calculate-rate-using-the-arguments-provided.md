@@ -1,13 +1,13 @@
 ---
 title: "Cannot calculate rate using the arguments provided | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrFinancial_CannotCalculateRate"
@@ -15,7 +15,7 @@ ms.assetid: 17d5c8eb-4716-4b72-977f-a640c02e630d
 caps.latest.revision: 7
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

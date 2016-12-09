@@ -3,11 +3,11 @@ title: Organizing and testing projects with the .NET Core command line (SDK Prev
 description: Organizing and testing projects with the .NET Core command line (SDK Preview 3)
 keywords: .NET, .NET Core
 author: cartermp
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: be988f09-7349-43b0-97fb-3a703d4587ce
 ---

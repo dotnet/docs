@@ -1,13 +1,13 @@
 ---
 title: "Cast from type &#39;&lt;typename1&gt;&#39; to type &#39;&lt;typename2&gt;&#39; is not valid | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrInvalidCast_FromTo"
@@ -15,7 +15,7 @@ ms.assetid: 4e6a8957-63ca-461f-a833-f48a1ff2eba6
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

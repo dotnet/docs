@@ -4,14 +4,12 @@ description: Getting Started with C#
 keywords: C#, Getting Started, Acquisition, Install
 author: rpetrusha
 ms.author: ronpet
-manager: wpickett
 ms.date: 08/23/2016
 ms.topic: article
-ms.prod: visual-studio-dev-14
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: b77c7263-7cbf-4729-9626-8fbc3f5f14d9
-
 ---
 
 # Getting started with C# #

@@ -1,13 +1,9 @@
 ---
 title: "ref (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ref_CSharpKeyword"
@@ -21,7 +17,6 @@ ms.assetid: b8a5e59c-907d-4065-b41d-95bf4273c0bd
 caps.latest.revision: 32
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

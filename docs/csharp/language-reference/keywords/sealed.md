@@ -1,13 +1,9 @@
 ---
 title: "sealed (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "sealed"
@@ -20,7 +16,6 @@ ms.assetid: 8e4ed5d3-10be-47db-9488-0da2008e6f3f
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

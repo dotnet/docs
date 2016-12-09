@@ -1,13 +1,9 @@
 ---
 title: "extern (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "extern_CSharpKeyword"
@@ -21,7 +17,6 @@ ms.assetid: 9c3f02c4-51b8-4d80-9cb2-f2b6e1ae15c7
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

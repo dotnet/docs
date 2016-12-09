@@ -1,13 +1,13 @@
 ---
 title: "Method &#39;&lt;methodname&gt;&#39; cannot be called with &lt;number&gt; arguments | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrNoMethodTakingXArguments2"
@@ -15,7 +15,7 @@ ms.assetid: 23260199-b6a4-469f-b75f-4a3d8d25e2cc
 caps.latest.revision: 6
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

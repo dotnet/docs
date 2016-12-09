@@ -2,12 +2,10 @@
 title: Using C# Interactive with Visual Studio | C# Guide
 description: Explore the C# Interactive Shell inside Visual Studio
 keywords: .NET, .NET Core, C#
-author:  dotnet-bot
-manager: wpickett
 ms.date: 06/25/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: abed9e00-2ddc-468e-9cca-d033bd6a7e36
 ---

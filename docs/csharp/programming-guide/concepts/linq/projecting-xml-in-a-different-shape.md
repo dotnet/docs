@@ -2,12 +2,12 @@
 title: "Projecting XML in a Different Shape (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,7 +15,7 @@ ms.assetid: 4cb6b14a-32dc-4a2a-813e-bf9368fa8d86
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 ---
 # Projecting XML in a Different Shape (C#)
 This topic shows an example of projecting XML that is in a different shape than the source XML.  

@@ -2,7 +2,8 @@
 title: Pattern Matching | C# Guide
 description: Learn about pattern matching expressions in C#
 keywords: .NET, .NET Core, C#
-ms.date: 12/01/2016
+ms.date: 12/09/2016
+ms.author: wiwagn
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -20,29 +21,27 @@ You are probably familiar with building class hierarchies and creating
 virtual methods and overriden methods to customize object behavior based
 on the runtime type of the object.
 
-Those techniques aren't easy to use when you need to customize behavior
-for data that isn't structured in a class hierarchy. In those cases,
-you'd need to either create a class hierarchy and manipulate the data
-into that strict structure. Or, you'd need to utilize traditional procedural
+Those techniques aren't possible for data that isn't structured in a class
+hierarchy. In those cases, you'd need to utilize traditional procedural
 imperative constructs like `if` or `switch` statements to manage the control
 flow.
 
-The new pattern matching expressions enable cleaner syntax to examine data
+The new *pattern matching* expressions enable cleaner syntax to examine data
 and manipulate control flow based on any conditon of that data.
 
-In this topic, you'll build a saimple class that computes the area of
+In this topic, you'll build a sample class that computes the area of
 different geometric shapes. But, you'll do it without resorting to object
-oriented techniques and building a class hierarchy. You'll use *pattern matching*
-instead. To further emphasize that we're not using inheritance, you'll
-make each shape a `struct` instead of a class. 
+oriented techniques and building a class hierarchy for the different shapes.
+You'll use *pattern matching* instead. To further emphasize that we're not
+using inheritance, you'll make each shape a `struct` instead of a class. 
 
-## Square and Circle: `is` pattern expressions ##
+## Using `is` pattern expressions ##
 
 Let's start simple with a square. 
 
 [!code-csharp[SquareDefinition](../../samples/csharp/PatternMatching/PatternMatching/Shapes.cs#01_SquareDefinition "Square definition")]
 
-The methodd to compute the area multiplies the length of a side by itself:
+The method to compute the area multiplies the length of a side by itself:
 
 [!code-csharp[02_ComputeSquareArea](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#02_ComputeSquareArea "Compute square area")]
 
@@ -56,7 +55,7 @@ We'll also write a method to compute the area of a circle:
 
 Ideally, you'd want one method that computes the area of any kind of
 shape. You've only created a couple different kinds of shapes so far.
-Let's use an `as` pattern matching expression to test the type of 
+Let's use an `is` pattern matching expression to test the type of 
 shape:
 
 [!code-csharp[05_ComputeWithAsExpression](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#05_ComputeWithAsExpression "Compute with as expression")]
@@ -72,6 +71,7 @@ Square s;
 if (shape is Square)
 {
     s = (shape as Square);
+    // use 's'
 } 
 ```
 
@@ -98,7 +98,7 @@ of a pattern match expression when that pattern ws not met.
 
 ## Extending to more shape types
 
-As time goes onk, you need to support other shape types. As the number
+As time goes on, you need to support other shape types. As the number
 of conditions you are testing grows, you'll find that using the `is` pattern
 matching expressions becomes cumbersome. In addition to requiring `if`
 statements on each type you want to check, the `is` expressions are limited
@@ -119,11 +119,15 @@ to the next. Each block following a `case` must end with a `break`, `return`
 or `goto`.
 
 There are important new rules governing the `switch` statement. The restrictions
-on the type of the variable in the `switch` expression has been removed.
-Any type, such as `object` in this example may be used. The case expressions
-are no longer limited to constant values. 
-Previously, no more than one switch
-label could match the value of the switch expression. It followed that the
+on the type of the variable in the `switch` expression have been removed.
+Any type, such as `object` in this example, may be used. The case expressions
+are no longer limited to constant values. Removing that limitation means
+that reordering switch sections may change a program's behavior.
+
+When limited to constant values, no more than one switch
+label could match the value of the switch expression. Combine that with the 
+rule that every switch section must not fall through to the next section, and 
+it followed that the
 switch sections could be rearranged in any order without affecting behavior.
 Now, with more generalized switch expressions, the order of each section
 matters. The switch expressions are evaluated in textual order. Execution
@@ -132,7 +136,7 @@ Note that the `default` case will only be executed if no other
 case labels match. The `default` case is evaluated last, regardless
 of its textual order.
 
-## When clauses in switch expressions
+## `when` clauses in switch expressions
 
 You can make special cases for those shapes that have 0 area by using
 a `when` clause on the switch label. A square with side length of 0, or
@@ -151,10 +155,10 @@ This example introduces two different variables in the two switch labels
 for the first switch block. Notice that the statements in this switch block
 do not use either the variables `c` (for the circle), or `s` (for the square).
 Neither of those variables is definitely assigned in this switch block.
-Clearly, one is, but static analysis cannot know which one. For that reason,
+Clearly one has been assigned, but static analysis cannot know which one. For that reason,
 most times when you use multiple switch labels for the same block, you won't
 introduce a new variable in the `case` statement, or you will only use the
-variable in the `when` clause.
+variable only in the `when` clause.
 
 Having adding those degenarate shapes, let's add a couple more shape types:
 a rectangle and a triangle:
@@ -168,11 +172,11 @@ Next, you'll add switch labels and blocks for those shapes in the `ComputeArea` 
  This set of changes adds switch labels for the degenerate case, and labels
  and blocks for each of the new shapes. 
 
-Finally, you can add a null case to ensure the argument is not null:
+Finally, you can add a `null` case to ensure the argument is not `null`:
 
 [!code-csharp[NullCase](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#10_NullCase "Add null case")]
 
-The special case for `null` is special because the constant `null` does
+The special case for the `null` pattern is interesting because the constant `null` does
 not have a type, but can be converted to any reference type or nullable
 type. 
 

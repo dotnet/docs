@@ -64,17 +64,17 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 ## Debug
 1. Open Program.cs by clicking on it. The first time you open a C# file in VS Code, OmniSharp will load in the editor.
 
-  ![Open Program .cs file](media/with-visual-studio-code/opencs.png)
+  ![Open Program.cs file](media/with-visual-studio-code/opencs.png)
 
 2. VS Code will prompt you to add the missing assets to build and debug your app. Click **Yes**. 
 
   ![Prompt for missing assets](media/with-visual-studio-code/missing-assets.png)
 
-3. To click the Debug view, click on the Debugging icon on the left side menu.
+3. To open the Debug view, click on the Debugging icon on the left side menu.
 
   ![Open the Debug tab](media/with-visual-studio-code/opendebug.png)
 
-4. Locate the green arrow at the top of the pane. Make sure the drop down next to it has `.NET Core Launch (console)` selected.
+4. Locate the green arrow at the top of the pane. Make sure the drop-down next to it has `.NET Core Launch (console)` selected.
 
   ![Select .NET Core](media/with-visual-studio-code/selectcore.png)
 

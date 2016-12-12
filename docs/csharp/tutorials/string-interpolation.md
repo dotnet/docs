@@ -45,31 +45,17 @@ To execute the program, use `dotnet run`. You should see "Hello, World" output t
 
 With `String.Format`, you would specify "placeholders" in a string that would be replaced by the parameters following the string. For instance:
 
-```cs
-var firstName = "Matt";
-var lastName = "Groves";
-var str = String.Format("My name is {FirstName} {LastName}", firstName, lastName);
-Console.WriteLine(str);
-```
+[!code-csharp[String.Format example](../../../samples/snippets/csharp/concepts/new-in-6/string-interpolation.cs#StringFormatExample)]  
 
 That will output "My name is Matt Groves".
 
 In C# 6, Instead of using String.Format, you can tell C# that a string is interpolated by prepending it with the `$` symbol, and then using the variables directly in the string. For instance:
 
-```cs
-var firstName = "Matt";
-var lastName = "Groves";
-var str = $"My name is {firstName} {lastName}");
-Console.WriteLine(str);
-```
+[!code-csharp[Interpolation example](../../../samples/snippets/csharp/concepts/new-in-6/string-interpolation.cs#InterpolationExample)]  
 
 You don't have to use just variables. You can use any expression within the brackets. For instance:
 
-```cs
-for(var i = 0; i < 5; i++) {
-    Console.WriteLine($"This is line number {i + 1}");
-}
-```
+[!code-csharp[Interpolation expression example](../../../samples/snippets/csharp/concepts/new-in-6/string-interpolation.cs#InterpolationExpressionExample)]  
 
 Which would output:
 
@@ -87,14 +73,7 @@ Behind the scenes, this string interpolation syntax gets translated into String.
 
 For instance, you can add padding and numeric formatting:
 
-```cs
-var rand = new Random();
-for(var i = 998; i < 1005; i++)
-{
-    var randomDecimal = rand.NextDouble() * 10000;
-    Console.WriteLine($"{i, -10} {randomDecimal, 6:N2}");
-}
-```
+[!code-csharp[Interpolation formatting example](../../../samples/snippets/csharp/concepts/new-in-6/string-interpolation.cs#InterpolationFormattingExample)]  
 
 The above would output something like:
 
@@ -116,26 +95,13 @@ By default, an interpolated string uses the current culture. To use a different 
 
 For instance:
 
-```cs
-var birthday = new DateTime(1980, 1, 29);
-Console.WriteLine($"My birthday is {birthday}");
-// This outputs "My birthday is 1/29/1980 12:00:00 AM"
-
-var birthdayFormattable = (IFormattable)$"My birthday is {birthday}";
-Console.WriteLine(birthdayFormattable.ToString(null, new CultureInfo("fr-FR")));
-// This outputs "My birthday is 29/01/1980 00:00:00"
-```
+[!code-csharp[Interpolation internationalization example](../../../samples/snippets/csharp/concepts/new-in-6/string-interpolation.cs#InterpolationInternationalizationExample)]  
 
 For localization, keep in mind that instead of `{0}` style placeholders, you are now storing variable names, which means they must match up with variable names at runtime. If a variable name is not found, then a runtime error will be generated.
 
 For instance:
 
-```cs
-var animal = "fox";
-var localizeMe = $"The {adj} brown {animal} jumped over the lazy {otheranimal}";
-var adj = "quick";
-Console.WriteLine(localizeMe);
-```
+[!code-csharp[Interpolation localization example](../../../samples/snippets/csharp/concepts/new-in-6/string-interpolation.cs#InterpolationLocalizationExample)]  
 
 If you run this, you'll get exceptions:
  

@@ -1,5 +1,5 @@
 ---
-title: Getting started with visual Studio Code | C# Guide
+title: Getting started with Visual Studio Code | C# Guide
 description: Learn how to create and debug your first .NET Core application in C# using VS Code. 
 keywords: C#, Getting Started, Acquisition, Install, Visual Studio Code, Cross Platform
 author: kendrahavens
@@ -38,7 +38,7 @@ Let's get started with a simple "Hello World" program on .NET Core:
 
 2. Initialize a C# project:
     * Open the Integrated Terminal from VS Code by typing <kbd>CTRL</kbd>+<kbd>`</kbd> (backtick).
-    * On the terminal window, type `dotnet new`.
+    * In the terminal window, type `dotnet new`.
     * This creates a `Program.cs` file in your folder with a simple "Hello World" program already written.
 
   ![dotnet new command](media/with-visual-studio-code/dotnetnew.png)
@@ -82,7 +82,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
   ![Set a Breakpoint](media/with-visual-studio-code/setbreakpoint.png)
 
-6. Hit F5 or the green arrow to start debugging. The debugger stops execution of your program when it reaches the breakpoint you set the previous step.
+6. Hit <kbd>F5</kbd> or the green arrow to start debugging. The debugger stops execution of your program when it reaches the breakpoint you set the previous step.
     * While debugging you can view your local variables in the top left pane or use the debug console.
 
   ![Run and Debug](media/with-visual-studio-code/rundebug.png)

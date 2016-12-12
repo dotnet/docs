@@ -2,7 +2,7 @@
 title: "How to: Enable XML IntelliSense in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,7 +19,7 @@ ms.assetid: af67d0ee-a4a6-4abf-9c07-5a8cfe80d111
 caps.latest.revision: 25
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

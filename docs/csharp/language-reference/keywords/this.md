@@ -4,12 +4,9 @@ description: this keyword (C# Reference)
 keywords: this (C#), this keyword (C#), this keyword (C# reference), this keyword (C# language reference)
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "this"
@@ -22,7 +19,6 @@ ms.assetid: d4f827fe-4710-410b-89b8-867dad44b8a3
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

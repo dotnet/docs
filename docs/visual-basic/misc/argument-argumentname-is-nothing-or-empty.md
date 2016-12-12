@@ -1,13 +1,13 @@
 ---
 title: "Argument &#39;&lt;argumentname&gt;&#39; is Nothing or empty | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_PathNullOrEmpty1"
@@ -15,7 +15,7 @@ ms.assetid: 4a742518-30ce-4054-b1bb-df6978f15c06
 caps.latest.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

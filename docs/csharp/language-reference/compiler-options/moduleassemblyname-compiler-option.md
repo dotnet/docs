@@ -1,13 +1,9 @@
 ---
 title: "-moduleassemblyname (C# Compiler Option) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/moduleassemblyname"
@@ -21,7 +17,6 @@ ms.assetid: d464d9b9-f18d-423b-95e9-66c7878fd53a
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

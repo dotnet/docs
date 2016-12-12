@@ -1,13 +1,9 @@
 ---
 title: "#endif (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "#endif"
@@ -19,7 +15,6 @@ ms.assetid: 6a5fca55-5aee-441f-86f6-1c99fbe9ec05
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

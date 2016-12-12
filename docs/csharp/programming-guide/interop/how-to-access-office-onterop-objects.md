@@ -1,13 +1,13 @@
 ---
 title: "How to: Access Office Interop Objects by Using Visual C# Features (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -22,7 +22,7 @@ ms.assetid: 041b25c2-3512-4e0f-a4ea-ceb2999e4d5e
 caps.latest.revision: 33
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

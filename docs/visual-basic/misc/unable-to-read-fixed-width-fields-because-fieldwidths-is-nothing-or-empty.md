@@ -1,13 +1,13 @@
 ---
 title: "Unable to read fixed width fields because FieldWidths is Nothing or empty | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_FieldWidthsNothing"
@@ -15,7 +15,7 @@ ms.assetid: 623e0825-5640-4e47-8341-7eeec80fc145
 caps.latest.revision: 7
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

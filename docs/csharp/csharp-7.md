@@ -4,7 +4,7 @@ description: Get an overview of the new features coming in the upcoming version 
 keywords: C#, .NET, .NET Core, Latest Features, What's New
 author:  BillWagner
 ms.author: wiwagn
-manager: wpickett
+
 ms.date: 10/03/2016
 ms.topic: article
 ms.prod: visual-studio-dev-15

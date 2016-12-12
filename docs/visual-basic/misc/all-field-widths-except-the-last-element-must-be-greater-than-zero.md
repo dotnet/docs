@@ -1,13 +1,13 @@
 ---
 title: "All field widths, except the last element, must be greater than zero | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_FieldWidthsMustPositive"
@@ -15,7 +15,7 @@ ms.assetid: 41d8c661-a749-4c89-be56-905c6e7c3c9d
 caps.latest.revision: 7
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

@@ -2,7 +2,7 @@
 title: "Writing Your First LINQ Query (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,7 +19,7 @@ ms.assetid: 4affb732-3e9b-4479-aa31-1f9bd8183cbe
 caps.latest.revision: 56
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

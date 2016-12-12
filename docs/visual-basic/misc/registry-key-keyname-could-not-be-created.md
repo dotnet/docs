@@ -1,13 +1,13 @@
 ---
 title: "Registry key &#39;&lt;keyname&gt;&#39; could not be created | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrInteraction_ResKeyNotCreated1"
@@ -15,7 +15,7 @@ ms.assetid: 465ccd53-dfdc-47ec-8b3f-9a65ba739314
 caps.latest.revision: 7
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

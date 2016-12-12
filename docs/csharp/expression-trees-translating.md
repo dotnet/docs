@@ -3,12 +3,12 @@ title: Translating Expression Trees
 description: Translating Expression Trees
 keywords: .NET, .NET Core
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: b453c591-acc6-4e08-8175-97e5bc65958e
 ---
 

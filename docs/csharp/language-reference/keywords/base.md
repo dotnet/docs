@@ -4,12 +4,9 @@ description: base keyword (C#)
 keywords: base (C#), base keyword (C#), base keyword (C# reference), base keyword (C# language reference)
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "base"

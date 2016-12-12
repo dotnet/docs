@@ -1,13 +1,9 @@
 ---
 title: "throw (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "throw"
@@ -21,7 +17,6 @@ ms.assetid: 5ac4feef-4b1a-4c61-aeb4-61d549e5dd42
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

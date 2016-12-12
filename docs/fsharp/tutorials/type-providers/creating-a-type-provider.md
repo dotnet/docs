@@ -2,12 +2,13 @@
 title: "Tutorial: Creating a Type Provider (F#)"
 description: "Tutorial: Creating a Type Provider (F#)"
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 82bec076-19d4-470c-979f-6c3a14b7c70a 
 ---
 

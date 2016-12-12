@@ -1,13 +1,13 @@
 ---
 title: "&#39;&lt;typename&gt;&#39; is a type and cannot be used as an expression | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "bc30108"
@@ -20,7 +20,7 @@ ms.assetid: 7931361d-78e2-40ca-ac69-e3374273b248
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

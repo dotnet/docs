@@ -1,13 +1,9 @@
 ---
 title: "-help, -? (C# Compiler Options) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/?"
@@ -25,7 +21,6 @@ ms.assetid: 8d53f6ba-5c3b-4183-976e-9c0f26fd3680
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

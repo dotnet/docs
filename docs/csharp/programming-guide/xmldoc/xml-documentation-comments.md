@@ -1,13 +1,13 @@
 ---
 title: "XML Documentation Comments (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "cs.xml"
@@ -24,7 +24,7 @@ ms.assetid: 803b7f7b-7428-4725-b5db-9a6cff273199
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -2,11 +2,9 @@
 title: Using Visual Studio to create, debug and deploy applications | C# Guide
 description: Understanding the Visual Studio tools that enable creating, debugging and deploying applications.
 keywords: C#, Getting Started, Visual Studio, Tutorial
-author: dotnet-bot
-manager: wpickett
 ms.date: 08/24/2016
 ms.topic: article
-ms.prod: visual-studio-dev-14
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 9b5ce7a7-7325-45b6-86c9-c199d0203997

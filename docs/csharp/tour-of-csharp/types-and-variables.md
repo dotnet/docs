@@ -3,10 +3,10 @@ title: C# Types and Variables | A tour of the C# language
 description: Learn about defining types and declaring variables in C#
 keywords: .NET, csharp, type, reference type, value type
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 08/10/2016
 ms.topic: article
-ms.prod: visual-studio-dev-14
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: f8a8051e-0049-43f1-b594-9c84cc7b1224

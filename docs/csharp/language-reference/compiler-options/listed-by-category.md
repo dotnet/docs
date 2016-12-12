@@ -1,16 +1,11 @@
 ---
 title: "C# Compiler Options Listed by Category | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "CSharp"
   - "CSharp"
 helpviewer_keywords: 
   - "Visual C# compiler, options listed by category"
@@ -20,7 +15,6 @@ ms.assetid: 96437ecc-6502-4cd3-b070-e9386a298e83
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

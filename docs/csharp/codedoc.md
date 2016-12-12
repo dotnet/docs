@@ -3,12 +3,12 @@ title: Documenting your code
 description: Documenting your code
 keywords: .NET, .NET Core
 author: tsolarin
-manager: wpickett
+ms.author: wiwagn
 ms.date: 09/06/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
 ---
 

@@ -1,5 +1,8 @@
 ---
 title: "base (C# Reference) | Microsoft Docs"
+description: base keyword (C#)
+keywords: base (C#), base keyword (C#), base keyword (C# reference), base keyword (C# language reference)
+ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

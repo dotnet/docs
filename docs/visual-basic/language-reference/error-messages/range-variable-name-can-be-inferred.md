@@ -1,13 +1,13 @@
 ---
 title: "Range variable name can be inferred only from a simple or qualified name with no arguments | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbc36599"
@@ -20,7 +20,7 @@ ms.assetid: 17763dbe-f74f-4ccb-8086-cb7e45ec4d12
 caps.latest.revision: 6
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

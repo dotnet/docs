@@ -3,10 +3,10 @@ title: C# Delegates | A tour of the C# language
 description: Learn late binding with C# delegates
 keywords: .NET, csharp, delegate, lambda, late binding
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 08/10/2016
 ms.topic: article
-ms.prod: visual-studio-dev-14
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 3cc27357-3ac2-43a1-aad0-86a77b88f884

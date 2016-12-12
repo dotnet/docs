@@ -1,13 +1,9 @@
 ---
 title: "-win32icon (C# Compiler Options) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/win32icon"
@@ -21,7 +17,6 @@ ms.assetid: 756d9b6d-ab07-41b7-ba58-5bd88f711138
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

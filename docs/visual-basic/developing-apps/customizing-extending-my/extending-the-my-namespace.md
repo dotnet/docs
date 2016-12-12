@@ -1,13 +1,13 @@
 ---
 title: "Extending the My Namespace in Visual Basic | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.AddingMyExtensions"
@@ -21,7 +21,7 @@ ms.assetid: 808e8617-b01c-4135-8b21-babe87389e8e
 caps.latest.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

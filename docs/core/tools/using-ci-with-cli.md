@@ -2,12 +2,12 @@
 title: Using .NET Core SDK and tools in Continuous Integration (CI)
 description: Using .NET Core SDK and tools in Continuous Integration (CI)
 keywords: .NET, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 5fb15297-a276-417f-8c4f-267281357769
 ---

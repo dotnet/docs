@@ -1,13 +1,9 @@
 ---
 title: "into (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "into_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: 81ec62c1-f0b1-4755-8a31-959876e77f65
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

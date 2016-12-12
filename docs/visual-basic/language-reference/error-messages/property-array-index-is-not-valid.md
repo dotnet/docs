@@ -1,13 +1,13 @@
 ---
 title: "Property array index is not valid | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrID381"
@@ -17,7 +17,7 @@ ms.assetid: 77c14680-bc61-4f46-9529-bb9fe366c18e
 caps.latest.revision: 7
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

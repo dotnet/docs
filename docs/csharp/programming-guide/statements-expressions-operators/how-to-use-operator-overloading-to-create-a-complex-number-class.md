@@ -1,13 +1,13 @@
 ---
 title: "How to: Use Operator Overloading to Create a Complex Number Class (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -21,7 +21,7 @@ ms.assetid: c9b8d982-5112-413f-bae3-b42ae3248ddf
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

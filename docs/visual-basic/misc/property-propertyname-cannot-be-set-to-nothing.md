@@ -1,13 +1,13 @@
 ---
 title: "Property &lt;propertyname&gt; cannot be set to Nothing | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrGeneral_PropertyNothing"
@@ -15,7 +15,7 @@ ms.assetid: 074014b4-5070-4c2f-9496-cbbbe9393dd6
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

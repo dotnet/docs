@@ -3,11 +3,11 @@ title: Commonly Used Collection Types
 description: Commonly Used Collection Types
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 55861611-1e40-4cc2-9ec5-0b2df4ba6c0c
 ---

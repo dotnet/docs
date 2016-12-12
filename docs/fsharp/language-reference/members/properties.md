@@ -2,12 +2,13 @@
 title: Properties (F#)
 description: Properties (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 98b363a5-ee6a-4b7b-b8ae-b244f2a0b316
 ---
 

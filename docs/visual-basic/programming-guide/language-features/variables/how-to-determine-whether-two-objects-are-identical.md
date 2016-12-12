@@ -2,7 +2,7 @@
 title: "How to: Determine Whether Two Objects Are Identical (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,7 +19,7 @@ ms.assetid: 7829f817-0d1f-4749-a707-de0b95e0cf5c
 caps.latest.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

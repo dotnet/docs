@@ -1,13 +1,13 @@
 ---
 title: "Expression too complex | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrID16"
@@ -17,7 +17,7 @@ ms.assetid: 736847d1-5e03-44c8-95e4-3ed2cef2746b
 caps.latest.revision: 7
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

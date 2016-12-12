@@ -2,12 +2,12 @@
 title: "Differences Between Passing an Argument By Value and By Reference (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -21,7 +21,7 @@ ms.assetid: 5f5c38fe-3e2d-494c-8fff-f4025b55ec93
 caps.latest.revision: 14
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

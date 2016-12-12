@@ -1,13 +1,13 @@
 ---
 title: "How to: Initialize a Dictionary with a Collection Initializer (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -17,7 +17,7 @@ ms.assetid: 25283922-f8ee-40dc-a639-fac30804ec71
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

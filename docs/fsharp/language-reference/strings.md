@@ -2,12 +2,13 @@
 title: Strings (F#)
 description: Strings (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: df7624e5-ca6c-4e77-9e2b-87ca7e5e6f52 
 ---
 

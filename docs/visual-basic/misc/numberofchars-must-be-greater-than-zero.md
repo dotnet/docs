@@ -1,13 +1,13 @@
 ---
 title: "NumberOfChars must be greater than zero | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_NumberOfCharsMustBePositive"
@@ -15,7 +15,7 @@ ms.assetid: 3eea4bbf-cd49-4d19-adfb-0e2adf087065
 caps.latest.revision: 7
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

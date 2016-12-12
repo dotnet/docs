@@ -1,13 +1,13 @@
 ---
 title: "XML comment exception must have a &#39;cref&#39; attribute | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "bc42319"
@@ -20,7 +20,7 @@ ms.assetid: 62eeeba3-6811-48be-b1ef-c2e4feda3177
 caps.latest.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

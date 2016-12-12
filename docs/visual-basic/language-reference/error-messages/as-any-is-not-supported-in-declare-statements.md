@@ -1,13 +1,13 @@
 ---
 title: "&#39;As Any&#39; is not supported in &#39;Declare&#39; statements | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "bc30828"
@@ -20,7 +20,7 @@ ms.assetid: 7e5cf519-8b64-4ac5-8116-705fe26c846d
 caps.latest.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

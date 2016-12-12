@@ -2,7 +2,7 @@
 title: "Example that Outputs Office Open XML Document Parts (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: a951925b-c985-48ed-b215-2a68b58f1ae5
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # Example that Outputs Office Open XML Document Parts (Visual Basic)
 This topic shows how to open an Office Open XML document and access parts within it.  

@@ -1,13 +1,9 @@
 ---
 title: "|| Operator (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "||_CSharpKeyword"
@@ -21,7 +17,6 @@ ms.assetid: 7d442d8e-400d-421f-b4d2-034bf82bcbdc
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

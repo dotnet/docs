@@ -1,13 +1,13 @@
 ---
 title: "A double quote is not a valid comment token for delimited fields where EscapeQuote is set to True | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_InvalidComment"
@@ -17,7 +17,7 @@ ms.assetid: 636d4b81-00ba-4cfd-98f7-4d57036f494d
 caps.latest.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

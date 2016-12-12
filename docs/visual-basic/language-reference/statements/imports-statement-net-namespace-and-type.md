@@ -1,13 +1,13 @@
 ---
 title: "Imports Statement (.NET Namespace and Type) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.Imports"
@@ -29,7 +29,7 @@ ms.assetid: 7062f8aa-d890-4232-9eed-92836e13fb6e
 caps.latest.revision: 40
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

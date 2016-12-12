@@ -1,13 +1,9 @@
 ---
 title: "Visual C# Breaking Changes in Visual Studio 2013 | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -17,7 +13,6 @@ ms.assetid: 399802e7-dd13-4bb6-9b41-8ab1446a322c
 caps.latest.revision: 34
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "de-de"
   - "es-es"

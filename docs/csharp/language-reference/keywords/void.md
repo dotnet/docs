@@ -1,13 +1,9 @@
 ---
 title: "void (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "void_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: 0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

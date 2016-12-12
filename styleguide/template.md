@@ -5,11 +5,11 @@ title: [ARTICLE TITLE | SERVICE NAME]
 description:
 keywords:
 author: [GITHUB USERNAME]
-manager: wpickett
+
 ms.date: [CREATION/UPDATE DATE]
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+
 ms.assetid: [GET ONE FROM guidgenerator.com]
 
 # optional metadata

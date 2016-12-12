@@ -1,13 +1,13 @@
 ---
 title: "DirectCast Operator (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.directCast"
@@ -20,7 +20,7 @@ ms.assetid: 63e5a1d0-4d9e-4732-bf8f-e90c0c8784b8
 caps.latest.revision: 23
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

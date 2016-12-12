@@ -1,13 +1,9 @@
 ---
 title: "-= Operator (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "-=_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: 05c7d68a-423f-4de8-891b-cf24e8fb6ed7
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

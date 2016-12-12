@@ -1,13 +1,9 @@
 ---
 title: "sizeof (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "sizeof_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: c548592c-677c-4f40-a4ce-e613f7529141
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

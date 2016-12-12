@@ -2,7 +2,7 @@
 title: "LINQ to XML Axes Overview (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: 9161f151-cfa8-4408-94ba-08a9ba3a486d
 caps.latest.revision: 4
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # LINQ to XML Axes Overview (Visual Basic)
 After you have created an XML tree or loaded an XML document into an XML tree, you can query it to find elements and attributes and retrieve their values. You retrieve collections through the *axis methods*, also called *axes*. Some of the axes are methods in the <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> classes that return <xref:System.Collections.Generic.IEnumerable%601> collections. Some of the axes are extension methods in the <xref:System.Xml.Linq.Extensions> class. The axes that are implemented as extension methods operate on collections, and return collections.  

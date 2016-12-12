@@ -1,13 +1,13 @@
 ---
 title: "Using Structs (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -17,7 +17,7 @@ ms.assetid: cea4a459-9eb9-442b-8d08-490e0797ba38
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

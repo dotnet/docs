@@ -16,9 +16,17 @@ ms.assetid: f8806f6b-3ac7-4ee6-9b3e-c524d5301ae9
 
 ## Introduction
 
-- string.format
-- other languages
-- how it looks in c# now
+String Interpolation is the way that placeholders in a string are replaced by the value of a string variable. Before C# 6, the way to do this is with `System.String.Format`. This works okay, but since it uses numbered placeholders, it can be harder to read an more verbose.
+
+Other programming languages have had string interpolation built into the language for a while. For instance, in PHP:
+
+```PHP
+$name = "Jonas";
+echo "My name is $name.";
+// This will output "My name is Jonas."
+```
+
+In C# 6, we finally have that style of string interpolation. You can use a `$` before a string to indicate that it should substitute variables/expressions for their values.
 
 ## Prerequisites
 You’ll need to setup your machine to run .NET core. You can find the
@@ -43,19 +51,19 @@ To execute the program, use `dotnet run`. You should see "Hello, World" output t
 
 ## Intro to String Interpolation
 
-With `String.Format`, you would specify "placeholders" in a string that would be replaced by the parameters following the string. For instance:
+With `System.String.Format`, you would specify "placeholders" in a string that would be replaced by the parameters following the string. For instance:
 
-[!code-csharp[String.Format example](../../../samples/snippets/csharp/concepts/new-in-6/string-interpolation.cs#StringFormatExample)]  
+[!code-csharp[String.Format example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#StringFormatExample)]  
 
 That will output "My name is Matt Groves".
 
 In C# 6, Instead of using String.Format, you can tell C# that a string is interpolated by prepending it with the `$` symbol, and then using the variables directly in the string. For instance:
 
-[!code-csharp[Interpolation example](../../../samples/snippets/csharp/concepts/new-in-6/string-interpolation.cs#InterpolationExample)]  
+[!code-csharp[Interpolation example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationExample)]  
 
 You don't have to use just variables. You can use any expression within the brackets. For instance:
 
-[!code-csharp[Interpolation expression example](../../../samples/snippets/csharp/concepts/new-in-6/string-interpolation.cs#InterpolationExpressionExample)]  
+[!code-csharp[Interpolation expression example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationExpressionExample)]  
 
 Which would output:
 
@@ -69,11 +77,11 @@ This is line number 5
 
 ## How string interpolation works
 
-Behind the scenes, this string interpolation syntax gets translated into String.Format by the compiler. So, you can do the same type of stuff you've done before with String.Format.
+Behind the scenes, this string interpolation syntax gets translated into String.Format by the compiler. So, you can do the [same type of stuff you've done before with String.Format](https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx).
 
 For instance, you can add padding and numeric formatting:
 
-[!code-csharp[Interpolation formatting example](../../../samples/snippets/csharp/concepts/new-in-6/string-interpolation.cs#InterpolationFormattingExample)]  
+[!code-csharp[Interpolation formatting example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationFormattingExample)]  
 
 The above would output something like:
 
@@ -87,6 +95,22 @@ The above would output something like:
 1004       6,227.77
 ```
 
+If a variable name is not found, then a compile time error will be generated.
+
+For instance:
+
+```cs
+var animal = "fox";
+var localizeMe = $"The {adj} brown {animal} jumped over the lazy {otheranimal}";
+var adj = "quick";
+Console.WriteLine(localizeMe);
+```
+
+If you compile this, you'll get errors:
+ 
+* `Cannot use local variable 'adj' before it is declared` - the `adj` variable wasn't declared until *after* the interpolated string.
+* `The name 'otheranimal' does not exist in the current context` - a variable called `otheranimal` was never even declared
+
 ## Localization and Internationalization
 
 An interpolated string supports `IFormattable` and `FormattableString`, which can be useful for internationalization.
@@ -95,18 +119,7 @@ By default, an interpolated string uses the current culture. To use a different 
 
 For instance:
 
-[!code-csharp[Interpolation internationalization example](../../../samples/snippets/csharp/concepts/new-in-6/string-interpolation.cs#InterpolationInternationalizationExample)]  
-
-For localization, keep in mind that instead of `{0}` style placeholders, you are now storing variable names, which means they must match up with variable names at runtime. If a variable name is not found, then a runtime error will be generated.
-
-For instance:
-
-[!code-csharp[Interpolation localization example](../../../samples/snippets/csharp/concepts/new-in-6/string-interpolation.cs#InterpolationLocalizationExample)]  
-
-If you run this, you'll get exceptions:
- 
-* `Cannot use local variable 'adj' before it is declared` - the `adj` variable wasn't declared until *after* the interpolated string.
-* `The name 'otheranimal' does not exist in the current context` - a variable called `otheranimal` was never even declared
+[!code-csharp[Interpolation internationalization example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationInternationalizationExample)]  
 
 ## Conclusion 
 

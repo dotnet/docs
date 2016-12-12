@@ -9,7 +9,7 @@ namespace StringInterpolationTutorial
             // <StringFormatExample>
             var firstName = "Matt";
             var lastName = "Groves";
-            var str = String.Format("My name is {FirstName} {LastName}", firstName, lastName);
+            var str = String.Format("My name is {0} {1}", firstName, lastName);
             Console.WriteLine(str);
             // </StringFormatExample>
         }
@@ -19,7 +19,7 @@ namespace StringInterpolationTutorial
             // <InterpolationExample>
             var firstName = "Matt";
             var lastName = "Groves";
-            var str = $"My name is {firstName} {lastName}");
+            var str = $"My name is {firstName} {lastName}";
             Console.WriteLine(str);
             // </InterpolationExample>
         }
@@ -56,16 +56,6 @@ namespace StringInterpolationTutorial
             Console.WriteLine(birthdayFormattable.ToString(null, new CultureInfo("fr-FR")));
             // This outputs "My birthday is 29/01/1980 00:00:00"
             // </InterpolationInternationalizationExample>
-        }
-
-        public void InterpolationLocalizationExample()
-        {
-            // <InterpolationLocalizationExample>
-            var animal = "fox";
-            var localizeMe = $"The {adj} brown {animal} jumped over the lazy {otheranimal}";
-            var adj = "quick";
-            Console.WriteLine(localizeMe);
-            // </InterpolationLocalizationExample>
         }
     }
 }

@@ -8,11 +8,6 @@ public abstract class Publication
 {
    private bool published = false;
    private DateTime datePublished;
-   private string pubName;
-   private string pubTitle;
-   private PublicationType pubType;
-   private string copyrName;
-   private int copyrDate;
    private int totalPages; 
 
    public Publication(string title, string publisher, PublicationType type)
@@ -21,31 +16,27 @@ public abstract class Publication
          throw new ArgumentNullException("The publisher cannot be null.");
       else if (String.IsNullOrWhiteSpace(publisher))
          throw new ArgumentException("The publisher cannot consist only of whitespace.");
-      pubName = publisher;
+      Publisher = publisher;
   
       if (title == null)
          throw new ArgumentNullException("The title cannot be null.");
       else if (String.IsNullOrWhiteSpace(title))
          throw new ArgumentException("The title cannot consist only of whitespace.");
-      pubTitle = title;
+      Title = title;
 
-      pubType = type;
+      Type = type;
    }
 
-   public string Publisher
-   { get { return pubName; } }
+   public string Publisher { get; }
 
-   public string Title
-   { get { return pubTitle; } }
+   public string Title { get; }
 
-   public PublicationType Type
-   { get { return pubType; } }
+   public PublicationType Type { get; }
 
-   public string CopyrightName
-   { get { return copyrName; } }
+   public string CopyrightName { get; private set; }
    
    public int CopyrightDate
-   { get { return copyrDate; } }
+   { get; private set; }
 
    public int Pages
    { get { return totalPages; }
@@ -77,19 +68,15 @@ public abstract class Publication
          throw new ArgumentNullException("The name of the copyright holder cannot be null.");
       else if (String.IsNullOrWhiteSpace(copyrightName))
          throw new ArgumentException("The name of the copyright holder cannot consist only of whitespace.");
-      copyrName = copyrightName;
+      CopyrightName = copyrightName;
       
       int currentYear = DateTime.Now.Year;
       if (copyrightDate < currentYear - 10 || copyrightDate > currentYear + 2)
-         throw new ArgumentOutOfRangeException(String.Format("The copyright year must be between {0} and {1}", 
-            currentYear - 10, currentYear + 1));
-      copyrDate = copyrightDate;      
+         throw new ArgumentOutOfRangeException($"The copyright year must be between {currentYear -10} and {currentYear + 1}");
+            CopyrightDate = copyrightDate;      
    }
 
-   public override string ToString()
-   {
-       return Title;
-   }
+   public override string ToString() => Title;
 }
 // </Snippet1>
 
@@ -100,16 +87,11 @@ using System;
 
 public sealed class Book : Publication
 {
-   private string authorName;
-   private Decimal bookPrice;
-   private string id;
-   private string ISOCurrencySymbol;
-
    public Book(string title, string author, string publisher) : 
           this(title, String.Empty, author, publisher)
    { }
 
-   public Book(string title, string isbn, string author, string publisher) : base(publisher, title, PublicationType.Book)
+   public Book(string title, string isbn, string author, string publisher) : base(title, publisher, PublicationType.Book)
    {
       // isbn argument must be a 10- or 13-character numeric string without "-" characters.
       // We could also determine whether the ISBN is valid by comparing its checksum digit 
@@ -123,23 +105,19 @@ public sealed class Book : Publication
         if (! UInt64.TryParse(isbn, out nISBN))
             throw new ArgumentException("The ISBN can consist of numeric characters only.");
       } 
-      id = isbn;
+      ISBN = isbn;
 
-      authorName = author;
+      Author = author;
    }
      
-   public string ISBN
-   { get { return id; } }
+   public string ISBN { get; }
 
-   public string Author
-   { get { return authorName; } }
+   public string Author { get; }
    
-   public Decimal Price
-   {  get { return bookPrice; } }
+   public Decimal Price { get; private set; }
 
    // A three-digit ISO currency symbol.
-   public string Currency
-   { get { return ISOCurrencySymbol; } }
+   public string Currency { get; private set; }
    
 
    // Returns the old price, and sets a new price.
@@ -147,12 +125,12 @@ public sealed class Book : Publication
    {
        if (price < 0)
           throw new ArgumentOutOfRangeException("The price cannot be negative.");
-       Decimal oldValue = bookPrice;
-       bookPrice = price;
+       Decimal oldValue = Price;
+       Price = price;
        
        if (currency.Length != 3)
           throw new ArgumentException("The ISO currency symbol is a 3-character string.");
-       ISOCurrencySymbol = currency;
+       Currency = currency;
 
        return oldValue;      
    }
@@ -163,18 +141,12 @@ public sealed class Book : Publication
       if (book == null)
          return false;
       else
-         return id == book.id;   
+         return ISBN == book.ISBN;   
    }
 
-   public override int GetHashCode()
-   {
-       return id.GetHashCode();
-   }
+   public override int GetHashCode() => ISBN.GetHashCode();
 
-   public override string ToString()
-   {
-      return String.Format("{0}{1}", String.IsNullOrEmpty(Author) ? "" : Author + ", ", Title);
-   }
+   public override string ToString() => $"{(String.IsNullOrEmpty(Author) ? "" : Author + ", ")}{Title}"; 
 }
 // </Snippet2>
 }

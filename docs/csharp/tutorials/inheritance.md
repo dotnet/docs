@@ -1,11 +1,11 @@
 ---
 title: Inheritance in C#
-description: inheritance
+description: Learn to use inheritance in C# libraries and applications.
 keywords: inheritance (C#), base classes, derived classes, abstract base classes
 author: rpetrusha
 manager: wpickett
 ms.author: ronpet
-ms.date: 12/8/2016
+ms.date: 12/13/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -44,15 +44,25 @@ C# and .NET support *single inheritance* only. That is, a class can only inherit
 
 Not all members of a base class are inherited by derived classes. The following members are not inherited:
 
-- [Constructors](../programming-guide/classes-and-structs/constructors.md), which are called to create a new instance of the class. Each class must define its own constructors.
+- [Static constructors](../programming-guide/classes-and-structs/static-constructors.md), which initialize the static data of a class.
+
+- [Instance constructors](../programming-guide/classes-and-structs/constructors.md), which you call to create a new instance of the class. Each class must define its own constructors.
 
 - [Destructors](../programming-guide/classes-and-structs/destructors.md), which are called by the runtime's garbage collector to destroy instances of a class.
 
-- [Static members](../programming-guide/classes-and-structs/static-classes-and-static-class-members.md). Only instance members are inherited by base classes.
-
 - [Private](../language-reference/keywords/private.md) and [internal](../language-reference/keywords/internal.md) members. However, internal members of a base class may be *visible* to a derived class if the two types are in the same assembly.
 
-Derived classes inherit all public instance members of the base class, and inherited members can be called just as if they were defined in the derived class. In the following example, class `A` defines a method named `Method1`, and class `B` inherits from class `A`. The example then calls `Method1` as if it were an instance method on `B`.
+While all other members of a base class are inherited by derived classes, whether they are visible or not depends on their accessibility. A member's accessibility affects its visibility for derived classes as follows:
+
+- [Private](../language-reference/keywords/private.md) members are visible only in derived classes that are nested in their base class. Otherwise, they are not visible in derived classes. In the following example, `A.B` is a nested class that derives from `A`, and `C` derives from `A`. The private `A.value` field is visible in A.B. However, if you remove the comments from the `C.GetValue` method and attempt to compile the example, it produces compiler error CS0122: "'A.value' is inaccessible due to its protection level."
+
+   [!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/private.cs#1)]
+
+- [Protected](../language-reference/keywords/protected.md) members are visible only in derived classes.
+
+- [Internal](../language-reference/keywords/protected.md) members are visible only in derived classes that are located in the same assembly as the base class. They are not visible in derived classes located in a different assembly from the base class.
+
+- [Public] (../language-reference/keywords/protected.md) members are visible in derived classes and are part of the derived class' public interface. Public inherited members can be called just as if they were defined in the derived class. In the following example, class `A` defines a method named `Method1`, and class `B` inherits from class `A`. The example then calls `Method1` as if it were an instance method on `B`.
 
 [!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/basics.cs#1)]
 
@@ -111,7 +121,7 @@ To see what implicit inheritance means, let's define a new class, `SimpleClass`,
 
 [!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/simpleclass.cs#1)]
 
-We can then use reflection (which lets us inspect a type's metadata to get information about that type) to get a list of the members that belong to the `SimpleClass` type. Although we haven't defined any members in our `SimpleClass` class, output from the example indicates that it actually has seven members. One of these is a parameterless (or default) constructor that is automatically supplied by the C# compiler. The other six are members of @System.Object, the type from which all classes and interfaces in the .NET type system ultimately implicitly inherit.
+We can then use reflection (which lets us inspect a type's metadata to get information about that type) to get a list of the members that belong to the `SimpleClass` type. Although we haven't defined any members in our `SimpleClass` class, output from the example indicates that it actually has nine members. One of these is a parameterless (or default) constructor that is automatically supplied for the `SimpleClass` type by the C# compiler. The eight seven are members of @System.Object, the type from which all classes and interfaces in the .NET type system ultimately implicitly inherit.
 
 [!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/simpleclass.cs#2)]
 
@@ -119,7 +129,7 @@ Implicit inheritance from the @System.Object class makes these methods available
 
 - The public `ToString` method, which converts a `SimpleClass` object to its string representation, the fully qualified type name. In this case, the `ToString` method returns the string "SimpleClass".
 
-- The public `Equals` method, which tests two objects to determine whether they are equal. The method tests for reference equality; that is, to be equal, two object variables must refer to the same object.
+- Three methods that test for equality of two objects: the public instance `Equals(Object)` method, the public static `Equals(Object, Object)` method, and the public static `ReferenceEquals(Object, Object)` method. By default, these methods test for reference equality; that is, to be equal, two object variables must refer to the same object.
 
 - The public `GetHashCode` method, which computes a value that allows an instance of the type to be used in hashed collections.
 

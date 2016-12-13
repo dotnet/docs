@@ -103,7 +103,7 @@ In some cases, a derived class *must* override the base class implementation. Ba
    }
    ```
 
-Inheritance applies only to classes. Other type categories (structs, delegates, interfaces, and enums) do not support inheritance. Beause of this, attempting to compile code like the following produces compiler error CS0527: "Type 'ValueType' in interface list is not an interface." The error message indicates that, although you can define the interfaces that a struct implements, inheritance is not supported.
+Inheritance applies only to classes and interfaces. Other type categories (structs, delegates, and enums) do not support inheritance. Beause of this, attempting to compile code like the following produces compiler error CS0527: "Type 'ValueType' in interface list is not an interface." The error message indicates that, although you can define the interfaces that a struct implements, inheritance is not supported.
 
    ```cs
    using System;
@@ -115,7 +115,7 @@ Inheritance applies only to classes. Other type categories (structs, delegates, 
 
 ## Implicit inheritance ##
 
-Besides any types that they may inherit from through single inheritance, all types in the .NET type system implicitly inherit from a base type. This ensures that common functionality is available to any type.
+Besides any types that they may inherit from through single inheritance, all types in the .NET type system implicitly inherit from @System.Object or a type derived from it. This ensures that common functionality is available to any type.
 
 To see what implicit inheritance means, let's define a new class, `SimpleClass`, that is simply an empty class definition:
 
@@ -148,10 +148,9 @@ The following table lists the categories of types that you can create in C# and 
 | Type category | Implicitly inherits from... |
 | :--- | :---: | ---: |
 | class | @System.Object |
-| struct | @System.ValueType |
-| interface | @System.Object |
-| enum | @System.Enum |
-| delegate | @System.MulticastDelegate |
+| struct | @System.ValueType, @System.Object |
+| enum | @System.Enum, System.ValueType, @System.Object |
+| delegate | @System.MulticastDelegate, @System.Delegate, @System.Object |
 
 ## Inheritance and an "is a" relationship ##
 
@@ -159,7 +158,7 @@ Ordinarily, inheritance is used to express an "is a" relationship between a base
 
    [!NOTE] A class or struct can implement one more interfaces. While interface implementation is often presented as a workaround for single inheritance or as a way of using inheritance with structs, it is intended to express a different relationship (a "can do" relationship) between an interface and its implementing type than inheritance. An interface defines a subset of functionality (such as the ability to test for equality, to compare or sort objects, or to support culture-sensitive parsing and formatting) that the interface makes available to its implementing types.
 
-Note that "is a" also expressions the relationship between a type and a specific instantiation of that type. In the following example, `Automobile` is a class that has three unique read-only properties: `Moke`, the manufacturer of the automobile; `Model`, the kind of automobile; and `Year`, its year of manufacture. Our `Automobile` class also has a constructor whose arguments are assigned to the property values, and it overrides the @System.Object.ToString method to produce a string that uniquely identifies the `Automobile` instance rather than the `Automobile` class.
+Note that "is a" also expresses the relationship between a type and a specific instantiation of that type. In the following example, `Automobile` is a class that has three unique read-only properties: `Moke`, the manufacturer of the automobile; `Model`, the kind of automobile; and `Year`, its year of manufacture. Our `Automobile` class also has a constructor whose arguments are assigned to the property values, and it overrides the @System.Object.ToString method to produce a string that uniquely identifies the `Automobile` instance rather than the `Automobile` class.
 
 [!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/is-a.cs#1)]
 
@@ -181,11 +180,11 @@ In designing our `Publication` class, we need to make several design decisions:
 
    In this case, the `Publication` class will provide method implementations. The [Designing abstract base classes amd their derived classes](#abstract) section contains an example that uses an abstract base class to define the methods that derived classes must override. Derived classes are free to provide any implementation that is suitable for the derived type.
 
-   The ability to reuse code (that is, multiple derived classes can call base class methods and do not need to override them) is an advantage of non-abstract base classes. Therefore, we should add members to `Publication` if their code is likely to be shared by some or most speicalized `Publication` types. If we fail to do this efficiently, we'll end up having to provide largely identical member implementations in derived classes rather a single implementation in the base class. The need to maintain duplicated code in multiple locations is a portential source of bugs.
+   The ability to reuse code (that is, multiple derived classes share the declaration and implementation of base class methods and do not need to override them) is an advantage of non-abstract base classes. Therefore, we should add members to `Publication` if their code is likely to be shared by some or most speicalized `Publication` types. If we fail to do this efficiently, we'll end up having to provide largely identical member implementations in derived classes rather a single implementation in the base class. The need to maintain duplicated code in multiple locations is a potential source of bugs.
 
    Both to maximize code reuse and to create a logical and intuitive inheritance hierarchy, we want to be sure that we include in the `Publication` class only the data and functionality that is common to all or to most publications. Derived classes then implement members that are unique to the particular kinds of publication that they represent.
 
-- How far to extend our class hierarchy. Do we want to develop a hierarhcy of three or more classes, rather than simply a base class and one or more derived classes? For example, `Publication` could be a base class of `Periodical`, which in turn is a base class of `Magazine`, `Journal` and `Newspaper`.
+- How far to extend our class hierarchy. Do we want to develop a hierarchy of three or more classes, rather than simply a base class and one or more derived classes? For example, `Publication` could be a base class of `Periodical`, which in turn is a base class of `Magazine`, `Journal` and `Newspaper`.
 
    For our example, we'll use the simple hierarchy of a `Publication` class and a single derived classes, `Book`. We could easily extend the example to create a number of additional   classes that derive from `Publication`, such as `Magazine` and `Article`.
 
@@ -214,11 +213,11 @@ The following example shows the source code for the `Publication` class, as well
                                     PublicationType.Book);
   ```
 
-  However, its class constructor can be called directly from derived class constructors, as the source code for the `Book` class shows.
+  However, its instance constructor can be called directly from derived class constructors, as the source code for the `Book` class shows.
 
 - Two publication-related properties
 
-  `Title` is a read-only @System.String property whose value is supplied by calling the `Publication` construction, which stores the value in a private field named `pubTitle`.
+  `Title` is a read-only @System.String property whose value is supplied by calling the `Publication` constructor, which stores the value in a private field named `pubTitle`.
 
   `Pages` is a read-write @System.Int32 property that indicates how many total pages the publication has. The value is stored in a private field named `totalPages`. It must be a positive number or an @System.ArgumentOutOfRangeException is thrown.
 
@@ -236,7 +235,7 @@ The following example shows the source code for the `Publication` class, as well
 
 - An override of the `ToString` method
 
-  If @System.Object.ToString is inherited, it returns the fully qualified name of the type, which is of little use in differentiating one instance from another. The `Publication` class overrides @System.Object.ToString to return the value of the `Title` property.
+  If a type does not override the @System.Object.ToString method, it returns the fully qualified name of the type, which is of little use in differentiating one instance from another. The `Publication` class overrides @System.Object.ToString to return the value of the `Title` property.
 
 The following figure illustrates the relationship between our base `Publication` class and its implicitly inherited @System.Object class.
 
@@ -256,7 +255,7 @@ In addition to the members that it inherits from `Publication`, the `Book` class
 
   The first constructor uses the [this](../language-reference/keywords/this.md) keyword to call the other constructor. This is a common pattern in defining constructors; constructors with fewer parameters provide default values when calling the constructor with the greatest number of parameters.
 
-  The second constructor uses the [base](../language-reference/keywords/base.md) keyword to pass the title and publisher name to the base class constructor. A derived class constructor should always call a constructor of its base class. If you don't make an explicit call to a base class constructor in your source code, the C# compiler automatically supplies a call to the base class' default or parameterless constructor.
+  The second constructor uses the [base](../language-reference/keywords/base.md) keyword to pass the title and publisher name to the base class constructor. If you don't make an explicit call to a base class constructor in your source code, the C# compiler automatically supplies a call to the base class' default or parameterless constructor.
 
 - A read-only `ISBN` property, which returns the `Book` object's International Standard Book Number, a unique 10- or 13-digit number. The ISBN is supplied as an argument to one of the `Book` constructors and is stored in the private `id` field.
 
@@ -276,7 +275,7 @@ The following figure illustrates the relationship between the `Book` class and `
 
 ![Publication and Book classes](media/book-class.jpg)
 
-We can now instantiate a `Book` object, invoke both its unique and inherited members, and pass it as an argument to a method that expects either a parameter of the `Publication` or a parameter of type `Book`, as the following example shows.
+We can now instantiate a `Book` object, invoke both its unique and inherited members, and pass it as an argument to a method that expects a parameter of type `Publication` or of type `Book`, as the following example shows.
 
 [!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/use-publication.cs#1)]
 

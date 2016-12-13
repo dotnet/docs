@@ -38,7 +38,7 @@
     "skip_source_output_uploading": false,
     "dependent_repositories": [{
         "path_to_root": "_themes",
-        "url": "https://github.com/Microsoft/templates.docs.msft",
+        "url": "https://github.com/fenxu/templates.docs.msft",
         "branch": "master"
     }, {
         "path_to_root": "api_ref",
@@ -48,5 +48,6 @@
         "path_to_root": "_themes.pdf",
         "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
         "branch": "master"
-    }]
+    }],
+    "package_version": "1.22.3"
 }

@@ -235,13 +235,12 @@
 ### [Working with LINQ](csharp/tutorials/working-with-linq.md)
 ### [Microservices hosted in Docker](csharp/tutorials/microservices.md)
 ## [Tour of C#](csharp/tour-of-csharp/)
+<!-- The "What's New" section is short, and one level
+    deep, so leave it in the main TOC -->
 ## [What's new in C#](csharp/whats-new.md) 
 ### [What's new in C# 7](csharp/csharp-7.md)
 ### [What's new in C# 6](csharp/csharp-6.md)
-## [🔧 C# Interactive](csharp/interactive.md)
-### [🔧 Using C# Interactive in Visual Studio](csharp/interactive-with-visualstudio.md)
-### [🔧 Using C# Interactive from PowerShell](csharp/interactive-with-powershell.md)
-### [🔧 Using C# Interactive from macOS or Linux Terminal](csharp/interactive-with-bash.md)
+## [🔧 C# Interactive](csharp/interactive/)
 ## [C# Concepts](csharp/concepts.md)
 ### [C# Type system](csharp/programming-guide/types/index.md)
 ### [Namespaces](csharp/programming-guide/namespaces/index.md)

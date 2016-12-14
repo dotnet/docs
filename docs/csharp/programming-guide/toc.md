@@ -1,8 +1,6 @@
 # [C# Programming Guide](index.md)
-## [Inside a C# Program](inside-a-program/index.md)
-### [Hello World -- Your First Program](inside-a-program/hello-world-your-first-program.md)
-### [General Structure of a C# Program](inside-a-program/general-structure-of-a-csharp-program.md)
-### [C# Coding Conventions](inside-a-program/coding-conventions.md)
+## [Inside a C# Program](inside-a-program/)
+
 ## [Arrays](arrays/index.md)
 ### [Arrays as Objects](arrays/arrays-as-objects.md)
 ### [Single-Dimensional Arrays](arrays/single-dimensional-arrays.md)

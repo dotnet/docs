@@ -2,14 +2,9 @@
 ## [Inside a C# Program](inside-a-program/)
 ## [Arrays](arrays/)
 ## [Classes and Structs](classes-and-structs/)
-
-
 ## [Delegates](delegates/index.md)
-### [Using Delegates](delegates/using-delegates.md)
-### [Delegates with Named vs. Anonymous Methods](delegates/delegates-with-named-vs-anonymous-methods.md)
-### [How to: Combine Delegates (Multicast Delegates)(C# Programming Guide)](delegates/how-to-combine-delegates-multicast-delegates.md)
-### [How to: Declare, Instantiate, and Use a Delegate](delegates/how-to-declare-instantiate-and-use-a-delegate.md)
 ## [Enumeration Types](enumeration-types.md)
+
 ## [Events](events/index.md)
 ### [How to: Subscribe to and Unsubscribe from Events](events/how-to-subscribe-to-and-unsubscribe-from-events.md)
 ### [How to: Publish Events that Conform to .NET Framework Guidelines](events/how-to-publish-events-that-conform-to-net-framework-guidelines.md)
@@ -17,6 +12,7 @@
 ### [How to: Implement Interface Events](events/how-to-implement-interface-events.md)
 ### [How to: Use a Dictionary to Store Event Instances](events/how-to-use-a-dictionary-to-store-event-instances.md)
 ### [How to: Implement Custom Event Accessors](events/how-to-implement-custom-event-accessors.md)
+
 ## [Exceptions and Exception Handling](exceptions/exceptions-and-exception-handling.md)
 ### [Using Exceptions](exceptions/using-exceptions.md)
 ### [Exception Handling](exceptions/exception-handling.md)

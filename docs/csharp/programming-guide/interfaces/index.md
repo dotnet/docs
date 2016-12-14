@@ -1,13 +1,13 @@
 ---
 title: "Interfaces (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,7 +18,7 @@ ms.assetid: 2feda177-ce11-432d-81b4-d50f5f35fd37
 caps.latest.revision: 45
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

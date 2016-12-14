@@ -1,13 +1,13 @@
 ---
 title: "-optionexplicit | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "/optionexplicit"
@@ -21,7 +21,7 @@ ms.assetid: 5d296ab3-bafe-4c4d-9887-78f162ed86c7
 caps.latest.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

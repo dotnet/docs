@@ -1,13 +1,9 @@
 ---
 title: "-win32res (C# Compiler Options) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/win32res"
@@ -22,7 +18,6 @@ ms.assetid: 3c33f750-6948-4c7e-a27e-bef98f77255b
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

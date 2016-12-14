@@ -1,13 +1,13 @@
 ---
 title: "Long Data Type (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.Long"
@@ -33,7 +33,7 @@ ms.assetid: b4770c34-1804-4f8c-b512-c10b0893e516
 caps.latest.revision: 20
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

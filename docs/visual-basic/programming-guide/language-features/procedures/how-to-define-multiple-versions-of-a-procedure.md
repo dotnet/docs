@@ -2,12 +2,12 @@
 title: "How to: Define Multiple Versions of a Procedure (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -21,7 +21,7 @@ ms.assetid: 71ccdd66-1b00-4b66-bee4-6926c0d696f4
 caps.latest.revision: 14
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

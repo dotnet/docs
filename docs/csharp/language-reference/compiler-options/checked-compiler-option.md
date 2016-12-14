@@ -1,13 +1,9 @@
 ---
 title: "-checked (C# Compiler Options) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/checked"
@@ -21,7 +17,6 @@ ms.assetid: fb7475d3-e6a6-4e6d-b86c-69e7a74c854b
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

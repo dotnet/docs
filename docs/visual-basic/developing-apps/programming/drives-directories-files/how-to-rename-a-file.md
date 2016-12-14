@@ -2,12 +2,12 @@
 title: "How to: Rename a File in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,7 +18,7 @@ ms.assetid: 0ea7e0c8-2cb2-4bf5-a00d-7b6e3c08a3bc
 caps.latest.revision: 21
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

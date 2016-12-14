@@ -1,13 +1,13 @@
 ---
 title: "My.Computer.FileSystem.SpecialDirectories Object | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,7 +18,7 @@ ms.assetid: d5f375c3-094b-4011-8438-17a31bc6df2b
 caps.latest.revision: 17
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

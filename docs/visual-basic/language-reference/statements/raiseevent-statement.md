@@ -1,13 +1,13 @@
 ---
 title: "RaiseEvent Statement | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.RaiseEventMethod"
@@ -23,7 +23,7 @@ ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
 caps.latest.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

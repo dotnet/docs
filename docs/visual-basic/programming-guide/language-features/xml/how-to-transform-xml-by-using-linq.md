@@ -2,7 +2,7 @@
 title: "How to: Transform XML by Using LINQ (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,7 +18,7 @@ ms.assetid: 815687f4-0bc2-4c0b-adc6-d78744aa356f
 caps.latest.revision: 14
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

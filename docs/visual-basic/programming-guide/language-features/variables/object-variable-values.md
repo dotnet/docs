@@ -2,7 +2,7 @@
 title: "Object Variable Values (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,7 +20,7 @@ ms.assetid: 31555704-58a3-49f1-9a0a-6421f605664f
 caps.latest.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

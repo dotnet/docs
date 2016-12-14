@@ -2,12 +2,12 @@
 title: "How to: Add Custom Methods for LINQ Queries (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,7 +15,7 @@ ms.assetid: 1a500f60-2e10-49fb-8b2a-d8d08e4817cb
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"

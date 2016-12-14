@@ -2,7 +2,7 @@
 title: "Variance in Delegates (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: 38e9353f-74f8-4211-a8f0-7a495414df4a
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"

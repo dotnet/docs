@@ -2,7 +2,7 @@
 title: "Walkthrough: Writing Queries in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,7 +20,7 @@ ms.assetid: f0045808-b9fe-4d31-88d1-473d9957211e
 caps.latest.revision: 70
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

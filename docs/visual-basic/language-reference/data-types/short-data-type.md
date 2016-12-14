@@ -1,13 +1,13 @@
 ---
 title: "Short Data Type (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.Short"
@@ -29,7 +29,7 @@ ms.assetid: 65fcbcf3-a841-400e-885e-301497729a8b
 caps.latest.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

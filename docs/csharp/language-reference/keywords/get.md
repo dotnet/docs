@@ -1,13 +1,9 @@
 ---
 title: "get (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "get_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: a52de048-fbe0-41b0-82ec-8e4ac04d3a71
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

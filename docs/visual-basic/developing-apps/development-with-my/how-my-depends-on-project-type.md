@@ -1,13 +1,13 @@
 ---
 title: "How My Depends on Project Type (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,7 +17,7 @@ ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
 caps.latest.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

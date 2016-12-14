@@ -3,11 +3,11 @@ title: Classes | C# Guide
 description: Learn about the class types and how you create them
 keywords: .NET, .NET Core, C#
 author:  stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 10/10/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 95c686ba-ae4f-440e-8e94-0dbd6e04d11f
 ---

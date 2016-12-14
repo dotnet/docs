@@ -1,13 +1,13 @@
 ---
 title: "WriteOnly (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "WriteOnly"
@@ -24,7 +24,7 @@ ms.assetid: 488d2899-b09f-4cee-92f0-6f9f9fc4f944
 caps.latest.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

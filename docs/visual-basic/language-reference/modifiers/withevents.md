@@ -1,13 +1,13 @@
 ---
 title: "WithEvents (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.WithEvents"
@@ -20,7 +20,7 @@ ms.assetid: 19d461f5-d72f-4de9-8c1d-0a6650316990
 caps.latest.revision: 17
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

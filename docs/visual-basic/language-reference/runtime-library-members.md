@@ -1,13 +1,13 @@
 ---
 title: "Visual Basic Runtime Library Members | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "VisualBasic"
@@ -22,7 +22,7 @@ ms.assetid: f5e82c6e-3500-452b-bdb8-78f0d5477604
 caps.latest.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

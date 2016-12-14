@@ -1,13 +1,9 @@
 ---
 title: "default (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "default"
@@ -20,7 +16,6 @@ ms.assetid: 14c48aaa-7d35-4058-a1a4-f53353050579
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

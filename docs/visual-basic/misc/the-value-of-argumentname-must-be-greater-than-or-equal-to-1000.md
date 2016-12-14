@@ -1,13 +1,13 @@
 ---
 title: "The value of &lt;argumentname&gt; must be greater than or equal to 1000 | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrApplicationLogNumberTooSmall"
@@ -15,7 +15,7 @@ ms.assetid: 81aed143-1abb-41c2-9922-8e83711100e3
 caps.latest.revision: 6
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

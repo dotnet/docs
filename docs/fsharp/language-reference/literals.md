@@ -2,12 +2,13 @@
 title: Literals (F#)
 description: Literals (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 4b1d6e9d-f933-4cd4-966d-d643152c27e4 
 ---
 

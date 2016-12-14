@@ -2,12 +2,12 @@
 title: "Start Multiple Async Tasks and Process Them As They Complete (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,7 +15,7 @@ ms.assetid: 25331850-35a7-43b3-ab76-3908e4346b9d
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"

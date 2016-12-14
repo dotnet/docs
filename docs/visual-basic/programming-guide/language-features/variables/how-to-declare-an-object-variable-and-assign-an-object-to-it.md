@@ -2,7 +2,7 @@
 title: "How to: Declare an Object Variable and Assign an Object to It in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,7 +18,7 @@ ms.assetid: 2fa77dde-1fb2-439a-80d4-3e9787649fad
 caps.latest.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -1,13 +1,13 @@
 ---
 title: "Generic parameters used as optional parameter types must be class constrained | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbc32124"
@@ -20,7 +20,7 @@ ms.assetid: 55aa8b2a-9ce3-4620-a710-2f9b0feb6143
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

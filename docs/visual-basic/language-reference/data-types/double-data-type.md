@@ -1,13 +1,13 @@
 ---
 title: "Double Data Type (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.Double"
@@ -32,7 +32,7 @@ ms.assetid: 0c5670f7-fcb1-453a-bef1-374730cd38fd
 caps.latest.revision: 25
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

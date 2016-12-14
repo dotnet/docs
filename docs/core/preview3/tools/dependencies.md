@@ -3,11 +3,11 @@ title: Managing dependencies in .NET Core Preview 3 tooling
 description: Preview 3 brings about changes to how dependencies are managed
 keywords: CLI, extensibility, custom commands, .NET Core
 author: blackdwarf
-manager: wpickett
+ms.author: mairaw
 ms.date: 11/12/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 74b87cdb-a244-4c13-908c-539118bfeef9
 ---

@@ -1,13 +1,13 @@
 ---
 title: "My.Resources Object | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "My.Resources"
@@ -21,7 +21,7 @@ ms.assetid: 34c3f2dc-7b87-432c-9d5f-17ea666bb266
 caps.latest.revision: 22
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

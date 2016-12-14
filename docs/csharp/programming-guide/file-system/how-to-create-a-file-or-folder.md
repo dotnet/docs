@@ -1,13 +1,13 @@
 ---
 title: "How to: Create a File or Folder (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -20,7 +20,7 @@ ms.assetid: 4582ee2d-d72d-4687-bcb9-08d336c62c25
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -2,12 +2,12 @@
 title: "Sample XML File: Typical Purchase Order (LINQ to XML) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,7 +15,7 @@ ms.assetid: dcbfb859-24fc-4758-b01c-51d1b6f644e6
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"

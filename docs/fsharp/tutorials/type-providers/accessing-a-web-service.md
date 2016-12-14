@@ -2,12 +2,13 @@
 title: Walkthrough - Accessing a Web Service by Using Type Providers (F#)
 description: Walkthrough - Accessing a Web Service by Using Type Providers (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 63374fa9-8fb8-43ac-bcb9-ef2290d9f851 
 ---
 

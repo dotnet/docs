@@ -1,13 +1,9 @@
 ---
 title: "continue (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "continue_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: 8a5ac96f-f98a-4519-b32d-345847ed7be0
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "de-de"
   - "es-es"

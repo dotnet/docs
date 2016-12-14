@@ -1,13 +1,13 @@
 ---
 title: "Could not complete operation since target directory is under source directory | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrIO_CyclicOperation"
@@ -15,7 +15,7 @@ ms.assetid: 850d3a24-5d51-4ac8-a912-630efcd75278
 caps.latest.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

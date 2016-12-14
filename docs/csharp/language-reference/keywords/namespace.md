@@ -1,13 +1,9 @@
 ---
 title: "namespace (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "namespace_CSharpKeyword"
@@ -21,7 +17,6 @@ ms.assetid: 0a788423-9110-42e0-97d9-bda41ca4870f
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

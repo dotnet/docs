@@ -1,13 +1,13 @@
 ---
 title: "Argument &#39;Access&#39; is not valid. Valid values for Append mode are &#39;OpenAccess.Write&#39; and &#39;OpenAccess.Default&#39; | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrFileSystem_IllegalAppendAccess"
@@ -15,7 +15,7 @@ ms.assetid: f584056e-5eb7-401f-b43d-d08252e66d1c
 caps.latest.revision: 7
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

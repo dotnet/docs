@@ -1,13 +1,13 @@
 ---
 title: "Object or class does not support the set of events | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrID459"
@@ -17,7 +17,7 @@ ms.assetid: 785df3f3-2aae-4a25-af36-1f9879d4e5fd
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

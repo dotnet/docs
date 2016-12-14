@@ -1,13 +1,13 @@
 ---
 title: "&lt;value&gt; (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "<value>"
@@ -20,7 +20,7 @@ ms.assetid: 08dbadaf-9ab6-43d9-9493-98e43bed199a
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

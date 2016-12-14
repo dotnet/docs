@@ -1,13 +1,13 @@
 ---
 title: "Statement cannot end a block outside of a line &#39;If&#39; statement | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbc32005"
@@ -20,7 +20,7 @@ ms.assetid: 4039f51b-e0ee-4789-a89b-45d06de06b5d
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

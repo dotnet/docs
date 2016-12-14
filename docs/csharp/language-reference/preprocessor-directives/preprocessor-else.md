@@ -1,13 +1,9 @@
 ---
 title: "#else (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "#else"
@@ -19,7 +15,6 @@ ms.assetid: 6a347322-cfa2-4a86-98f8-ddfa2cb7d4db
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

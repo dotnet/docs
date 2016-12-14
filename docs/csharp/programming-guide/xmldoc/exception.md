@@ -1,13 +1,13 @@
 ---
 title: "&lt;exception&gt; (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "exception"
@@ -21,7 +21,7 @@ ms.assetid: dd73aac5-3c74-4fcf-9498-f11bff3a2f3c
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

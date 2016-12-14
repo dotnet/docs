@@ -2,7 +2,7 @@
 title: "How to: Find the Set Difference Between Two Lists (LINQ) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: b5b25474-10a8-4df6-aab5-75621bb6b68e
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"

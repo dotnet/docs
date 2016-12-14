@@ -1,13 +1,9 @@
 ---
 title: "try-catch (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "try"
@@ -23,7 +19,6 @@ ms.assetid: cb5503c7-bfa1-4610-8fc2-ddcd2e84c438
 caps.latest.revision: 45
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "de-de"
   - "es-es"

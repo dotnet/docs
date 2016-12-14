@@ -1,13 +1,13 @@
 ---
 title: "How to: Use Indexed Properties in COM Interop Programming (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -19,7 +19,7 @@ ms.assetid: 756bfc1e-7c28-4d4d-b114-ac9288c73882
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

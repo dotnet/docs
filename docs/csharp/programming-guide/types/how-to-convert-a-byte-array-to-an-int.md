@@ -1,13 +1,13 @@
 ---
 title: "How to: Convert a byte Array to an int (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,7 +18,7 @@ ms.assetid: d6ac20e2-448e-4aea-99b9-faf04c6f1e79
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

@@ -3,12 +3,12 @@ title: C# Tutorials
 description: C# Tutorials
 keywords: .NET, .NET Core
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: fcc83b5b-fb68-4e48-9132-0882677d8056
 ---
 

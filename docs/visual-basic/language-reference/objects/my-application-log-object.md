@@ -1,13 +1,13 @@
 ---
 title: "My.Application.Log Object | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,7 +17,7 @@ ms.assetid: 296147f9-1109-4a55-9b5e-047f1ab9466c
 caps.latest.revision: 32
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

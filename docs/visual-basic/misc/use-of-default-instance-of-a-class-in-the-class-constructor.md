@@ -1,19 +1,19 @@
 ---
 title: "Use of Default Instance of a class in the class constructor could lead to infinite recursive call | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 ms.assetid: 9645b47f-7de5-46d0-bb45-d5fdaa8aaa2a
 caps.latest.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

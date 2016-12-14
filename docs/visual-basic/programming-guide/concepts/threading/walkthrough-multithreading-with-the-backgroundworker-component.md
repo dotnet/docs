@@ -2,7 +2,7 @@
 title: "Walkthrough: Multithreading with the BackgroundWorker Component (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: e4cd9b2a-f924-470e-a16e-50274709b40e
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"

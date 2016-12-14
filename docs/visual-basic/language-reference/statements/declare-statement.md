@@ -1,13 +1,13 @@
 ---
 title: "Declare Statement | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.Declare"
@@ -40,7 +40,7 @@ ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
 caps.latest.revision: 30
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -2,7 +2,7 @@
 title: "How to: Generate Text Files from XML (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: 3b33f191-4abe-4419-b81b-3cb81d9a317f
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # How to: Generate Text Files from XML (Visual Basic)
 This example shows how to generate a comma-separated values (CSV) file from an XML file.  

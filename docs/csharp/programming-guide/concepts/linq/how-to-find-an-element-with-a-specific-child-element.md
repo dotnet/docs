@@ -2,12 +2,12 @@
 title: "How to: Find an Element with a Specific Child Element (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,7 +15,7 @@ ms.assetid: 00cf5555-374e-4369-bf93-7bd2e7f21db3
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 ---
 # How to: Find an Element with a Specific Child Element (C#)
 This topic shows how to find a particular element that has a child element with a specific value.  

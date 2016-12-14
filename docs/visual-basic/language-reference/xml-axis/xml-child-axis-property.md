@@ -1,13 +1,13 @@
 ---
 title: "XML Child Axis Property (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlPropertyChildAxis"
@@ -23,7 +23,7 @@ ms.assetid: 89a59d00-985e-4f5c-b59f-29b47bad11cb
 caps.latest.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -1,13 +1,13 @@
 ---
 title: "Automation error | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrID440"
@@ -17,7 +17,7 @@ ms.assetid: 2c4be5c5-2f0d-4a2b-96fe-d1b24f08fc4c
 caps.latest.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

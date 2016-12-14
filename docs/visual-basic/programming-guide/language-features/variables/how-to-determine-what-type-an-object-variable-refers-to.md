@@ -2,7 +2,7 @@
 title: "How to: Determine What Type an Object Variable Refers To (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,7 +19,7 @@ ms.assetid: 6f6a138d-58a4-40d1-9f4e-0a3c598eaf81
 caps.latest.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

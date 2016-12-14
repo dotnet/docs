@@ -2,7 +2,7 @@
 title: "How to: Determine If a File Is an Assembly (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: de26f410-9bd1-4b55-a343-cc82f81684be
 caps.latest.revision: 6
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"

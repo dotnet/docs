@@ -2,12 +2,12 @@
 title: "Object Initializers: Named and Anonymous Types (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.ObjectInitializer"
@@ -23,7 +23,7 @@ ms.assetid: e2df3807-a70f-49dd-ac94-f1e07f472b1b
 caps.latest.revision: 27
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

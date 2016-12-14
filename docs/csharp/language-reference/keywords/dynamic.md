@@ -1,13 +1,9 @@
 ---
 title: "dynamic (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "dynamic_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: 9e797102-cc83-4964-bf58-afe4f54d16bc
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

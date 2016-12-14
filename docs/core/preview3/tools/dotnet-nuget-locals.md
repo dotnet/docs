@@ -4,11 +4,10 @@ description: The dotnet-nuget-locals command clears or lists local NuGet resourc
 keywords: dotnet-nuget-locals, CLI, CLI command, .NET Core
 author: karann-msft
 ms.author: mairaw
-manager: wpickett
 ms.date: 11/15/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8440229e-317e-4dc1-9463-cba5fdb12c3b
 ---

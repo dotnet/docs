@@ -1,13 +1,13 @@
 ---
 title: "&#39;Sub Main&#39; was not found in &#39;&lt;name&gt;&#39; | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbc30420"
@@ -21,7 +21,7 @@ ms.assetid: a006d57d-4dd3-46a7-9026-ca9a31470da7
 caps.latest.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

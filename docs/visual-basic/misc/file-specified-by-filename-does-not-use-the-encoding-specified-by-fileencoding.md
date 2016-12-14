@@ -1,19 +1,19 @@
 ---
 title: "File specified by FileName does not use the encoding specified by FileEncoding | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 ms.assetid: 2129f8df-96cd-4c2e-a4ca-f08a49f07d3f
 caps.latest.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

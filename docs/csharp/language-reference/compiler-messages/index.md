@@ -1,13 +1,9 @@
 ---
 title: "C# Compiler Errors | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
 dev_langs: 
   - "CSharp"
@@ -20,7 +16,6 @@ ms.assetid: 57262ab1-6c50-4f9c-81ad-9fba48477416
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

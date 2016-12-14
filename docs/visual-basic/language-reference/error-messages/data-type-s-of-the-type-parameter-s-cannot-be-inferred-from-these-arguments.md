@@ -1,13 +1,13 @@
 ---
 title: "Data type(s) of the type parameter(s) cannot be inferred from these arguments | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "bc36644"
@@ -23,7 +23,7 @@ ms.assetid: 0e0050f2-2039-4311-b260-f0ebfde84189
 caps.latest.revision: 6
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

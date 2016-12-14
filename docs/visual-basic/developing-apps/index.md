@@ -1,13 +1,13 @@
 ---
 title: "Developing Applications with Visual Basic | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,7 +18,7 @@ ms.assetid: 1e1c0c81-6d95-4167-a98b-44b1efb6d25f
 caps.latest.revision: 26
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

@@ -1,16 +1,11 @@
 ---
 title: "Command-line Building With csc.exe | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "CSharp"
   - "CSharp"
 helpviewer_keywords: 
   - "builds [C#]"
@@ -19,7 +14,6 @@ ms.assetid: 66e70056-dd20-453c-a9b3-507e0478b015
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -1,13 +1,13 @@
 ---
 title: "Try...Catch...Finally Statement (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.Try...Catch...Finally"
@@ -32,7 +32,7 @@ ms.assetid: d6488026-ccb3-42b8-a810-0d97b9d6472b
 caps.latest.revision: 69
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

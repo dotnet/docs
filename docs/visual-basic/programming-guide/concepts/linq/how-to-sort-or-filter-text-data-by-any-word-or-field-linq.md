@@ -2,7 +2,7 @@
 title: "How to: Sort or Filter Text Data by Any Word or Field (LINQ) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: 9df137fe-335b-46e0-aecf-ea8a9eddd4e3
 caps.latest.revision: 4
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"

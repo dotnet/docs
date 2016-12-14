@@ -2,12 +2,13 @@
 title: External Functions (F#)
 description: External Functions (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: c26b6124-ceaa-471c-9dc9-861b4dfa332a 
 ---
 

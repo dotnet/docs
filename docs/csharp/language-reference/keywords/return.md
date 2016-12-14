@@ -1,13 +1,9 @@
 ---
 title: "return (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "return_CSharpKeyword"
@@ -21,7 +17,7 @@ ms.assetid: 6da6e152-5b58-4448-8f3f-470dd0617ecd
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

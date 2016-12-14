@@ -2,12 +2,12 @@
 title: .NET Core CLI test communication protocol
 description: .NET Core CLI test communication protocol
 keywords: .NET, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 88cba792-3640-41de-b55d-00f575e9d5e2
 ---

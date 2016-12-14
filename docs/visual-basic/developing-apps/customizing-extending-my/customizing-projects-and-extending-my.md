@@ -1,13 +1,13 @@
 ---
 title: "Customizing Projects and Extending My with Visual Basic | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,7 +19,7 @@ ms.assetid: 06ca80b9-1192-4eb5-8537-8ef5edfb9be0
 caps.latest.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

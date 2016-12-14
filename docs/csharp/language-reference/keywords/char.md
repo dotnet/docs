@@ -1,13 +1,9 @@
 ---
 title: "char (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "char"
@@ -20,7 +16,6 @@ ms.assetid: b51cf4fb-124c-4067-af48-afbac122b228
 caps.latest.revision: 27
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "de-de"
   - "es-es"

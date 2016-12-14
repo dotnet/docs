@@ -1,13 +1,13 @@
 ---
 title: "Type List (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "StructureConstraint"
@@ -37,7 +37,7 @@ ms.assetid: 56db947a-2ae8-40f2-a70a-960764e9d0db
 caps.latest.revision: 33
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

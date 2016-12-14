@@ -1,13 +1,13 @@
 ---
 title: "Argument &#39;Path&#39; is Nothing or empty | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_PathNullOrEmpty"
@@ -15,7 +15,7 @@ ms.assetid: ba8aed14-2543-4c8e-ad88-c35b49078dd6
 caps.latest.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

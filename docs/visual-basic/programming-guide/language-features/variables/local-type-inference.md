@@ -2,7 +2,7 @@
 title: "Local Type Inference (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,7 +25,7 @@ ms.assetid: b8307f18-2e56-4ab3-a45a-826873f400f6
 caps.latest.revision: 43
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

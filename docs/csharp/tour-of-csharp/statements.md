@@ -3,11 +3,10 @@ title: C# Statements | A tour of the C# language
 description: You create the actions of a C# program using statements
 keywords: .NET, csharp, statements, syntax
 author: BillWagner
-manager: wpickett
 ms.author: wiwagn
 ms.date: 2016/11/06
 ms.topic: article
-ms.prod: visual-studio-dev-14
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 5409c379-5622-4fae-88b5-1654276ea8d4

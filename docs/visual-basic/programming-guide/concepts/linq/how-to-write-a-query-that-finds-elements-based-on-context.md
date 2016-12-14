@@ -2,7 +2,7 @@
 title: "How to: Write a Query that Finds Elements Based on Context (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: 0b085290-ddc1-4126-aaa0-e4c95a3d9a09
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # How to: Write a Query that Finds Elements Based on Context (Visual Basic)
 Sometimes you might have to write a query that selects elements based on their context. You might want to filter based on preceding or following sibling elements. You might want to filter based on child or ancestor elements.  

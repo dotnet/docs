@@ -2,12 +2,12 @@
 title: "How to: Check Connection Status in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -20,7 +20,7 @@ ms.assetid: 4d9ee8ab-9a6f-4279-ace4-b75afc976a74
 caps.latest.revision: 26
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -2,7 +2,7 @@
 title: "Accessing XML in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,7 +21,7 @@ ms.assetid: c47f88b2-3cbc-4bb1-b4b9-be60f71ffc6a
 caps.latest.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

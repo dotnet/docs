@@ -1,13 +1,9 @@
 ---
 title: "Additional Resources for Visual C# Programmers | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -22,7 +18,6 @@ ms.assetid: cdec0df0-89ef-4ff1-8ccf-26fef47e61cb
 caps.latest.revision: 27
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

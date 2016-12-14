@@ -1,13 +1,9 @@
 ---
 title: "&lt; Operator (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "<_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: 38cb91e6-79a6-48ec-9c1e-7b71fd8d2b41
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -2,12 +2,12 @@
 title: "Querying XML Trees (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,7 +15,7 @@ ms.assetid: 0913d81b-541a-4fd4-9cbf-7ec89fd817ea
 caps.latest.revision: 4
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 ---
 # Querying XML Trees (C#)
 This section provides examples of [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] queries.  

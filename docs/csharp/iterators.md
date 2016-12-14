@@ -3,12 +3,12 @@ title: Iterators
 description: Iterators
 keywords: .NET, .NET Core
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: 5cf36f45-f91a-4fca-a0b7-87f233e108e9
 ---
 
@@ -23,7 +23,7 @@ iterator for the elements of that class. These can be used for:
 
 + Performing an action on each item in a collection.
 + Enumerating a custom collection.
-+ Extending [LINQ](linq.md) or other libraries.
++ Extending [LINQ](linq/index.md) or other libraries.
 + Creating a data pipeline where data flows efficiently through iterator
 methods.
 

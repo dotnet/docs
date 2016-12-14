@@ -1,13 +1,13 @@
 ---
 title: "Delegate Statement | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.Delegate"
@@ -20,7 +20,7 @@ ms.assetid: f799c518-0817-40cc-ad0b-4da846fdba57
 caps.latest.revision: 27
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

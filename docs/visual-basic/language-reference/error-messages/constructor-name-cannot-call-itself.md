@@ -1,13 +1,13 @@
 ---
 title: "Constructor &#39;&lt;name&gt;&#39; cannot call itself | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "bc30298"
@@ -20,7 +20,7 @@ ms.assetid: 2d77b7f4-0640-4f89-9c65-f101fd2847c0
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

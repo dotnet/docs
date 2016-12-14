@@ -2,12 +2,13 @@
 title: Source Line, File, and Path Identifiers (F#)
 description: Source Line, File, and Path Identifiers (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 4cfe7439-275c-4d08-980b-784e240bbf29 
 ---
 

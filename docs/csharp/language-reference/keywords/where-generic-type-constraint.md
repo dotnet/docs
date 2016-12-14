@@ -1,13 +1,9 @@
 ---
 title: "where (generic type constraint) (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "whereconstraint"
@@ -20,7 +16,6 @@ ms.assetid: d7aa871b-0714-416a-bab2-96f87ada4310
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

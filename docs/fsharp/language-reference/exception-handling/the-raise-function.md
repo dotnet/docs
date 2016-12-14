@@ -2,12 +2,13 @@
 title: "Exceptions: the raise Function (F#)"
 description: "Exceptions: the raise Function (F#)"
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: b00da469-4789-4cdd-9f77-7a2e29f28637 
 ---
 

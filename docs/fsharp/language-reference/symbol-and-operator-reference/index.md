@@ -2,12 +2,13 @@
 title: Symbol and Operator Reference (F#)
 description: Symbol and Operator Reference (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: ab453800-d4d0-4a11-9d55-2b358d56af27 
 ---
 

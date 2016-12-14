@@ -1,13 +1,13 @@
 ---
 title: "ReDim Statement (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.ReDim"
@@ -39,7 +39,7 @@ ms.assetid: ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083
 caps.latest.revision: 25
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

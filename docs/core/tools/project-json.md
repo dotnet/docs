@@ -4,11 +4,10 @@ description: project.json reference
 keywords: .NET, .NET Core, project.json
 author: aL3891
 ms.author: mairaw
-manager: wpickett
 ms.date: 09/30/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 ---

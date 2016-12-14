@@ -1,13 +1,9 @@
 ---
 title: "Getting Started with C# | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,7 +14,6 @@ ms.assetid: d6ec050f-3956-4737-8030-a4fa3521d29f
 caps.latest.revision: 50
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "de-de"
   - "es-es"

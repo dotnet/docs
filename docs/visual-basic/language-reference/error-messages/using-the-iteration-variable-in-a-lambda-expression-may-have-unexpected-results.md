@@ -1,13 +1,13 @@
 ---
 title: "Using the iteration variable in a lambda expression may have unexpected results | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbc42324"
@@ -20,7 +20,7 @@ ms.assetid: b5c2c4bd-3b2a-4a73-aaeb-55728eb03b68
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

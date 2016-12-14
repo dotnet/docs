@@ -2,12 +2,12 @@
 title: "Applicability of Functional Transformation (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,7 +15,7 @@ ms.assetid: c78107bd-b006-4574-a3d4-bbf808388ff3
 caps.latest.revision: 4
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 ---
 # Applicability of Functional Transformation (C#)
 Pure functional transformations are applicable in a wide variety of situations.  

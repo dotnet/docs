@@ -1,13 +1,13 @@
 ---
 title: "Additional Resources for Visual Basic Programmers | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -26,7 +26,7 @@ ms.assetid: 9bfb42e9-327f-439b-935e-8884f6aca80c
 caps.latest.revision: 22
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

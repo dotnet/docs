@@ -1,13 +1,13 @@
 ---
 title: "What's new for Visual Basic | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "VB.StartPage.WhatsNew"
@@ -21,7 +21,7 @@ ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
 caps.latest.revision: 145
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

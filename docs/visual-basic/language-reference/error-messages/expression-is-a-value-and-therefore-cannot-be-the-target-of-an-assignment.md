@@ -1,13 +1,13 @@
 ---
 title: "Expression is a value and therefore cannot be the target of an assignment | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "bc30068"
@@ -20,7 +20,7 @@ ms.assetid: d65141e1-f31e-4ac5-a3b8-0b2e02a71ebf
 caps.latest.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

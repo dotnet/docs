@@ -1,13 +1,9 @@
 ---
 title: "What&#39;s New for Visual C# | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,7 +11,6 @@ ms.assetid: 9f18dc26-27fa-4603-a639-b573f07a117b
 caps.latest.revision: 39
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

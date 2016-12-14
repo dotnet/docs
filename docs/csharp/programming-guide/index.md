@@ -1,13 +1,13 @@
 ---
 title: "C# Programming Guide | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "cs.langref"
@@ -22,7 +22,7 @@ ms.assetid: ac0f23a2-6bf3-4077-be99-538ae5fd3bc5
 caps.latest.revision: 45
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

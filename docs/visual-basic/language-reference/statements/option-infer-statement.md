@@ -1,13 +1,13 @@
 ---
 title: "Option Infer Statement | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.OptionInfer"
@@ -24,7 +24,7 @@ ms.assetid: 4ad3e6e9-8f5b-4209-a248-de22ef6e4652
 caps.latest.revision: 72
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -1,13 +1,9 @@
 ---
 title: "#region (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "#region"
@@ -19,7 +15,6 @@ ms.assetid: 672c87d1-9771-4f64-ab3f-0ad3d4ffb2b4
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -2,7 +2,7 @@
 title: "XML IntelliSense in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,7 +20,7 @@ ms.assetid: 59506ce9-d64e-417e-90fc-e9fe19f0a8fa
 caps.latest.revision: 27
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

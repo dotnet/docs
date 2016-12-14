@@ -1,13 +1,13 @@
 ---
 title: "Error saving temporary Win32 resource file &#39;&lt;filename&gt;&#39;: &lt;error message&gt; | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "bc30137"
@@ -20,7 +20,7 @@ ms.assetid: 61c23f48-0e06-42fc-be00-5598053c86dd
 caps.latest.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

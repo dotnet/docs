@@ -1,13 +1,9 @@
 ---
 title: "-errorreport (C# Compiler Options) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/errorreport"
@@ -21,7 +17,6 @@ ms.assetid: bd0e7493-b79d-4369-9c3f-ba26ebdfbedf
 caps.latest.revision: 35
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

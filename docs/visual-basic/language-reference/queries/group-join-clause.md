@@ -1,13 +1,13 @@
 ---
 title: "Group Join Clause (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.QueryGroupJoinIn"
@@ -24,7 +24,7 @@ ms.assetid: 37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c
 caps.latest.revision: 24
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

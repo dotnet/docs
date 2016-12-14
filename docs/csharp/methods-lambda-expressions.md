@@ -2,11 +2,9 @@
 title: Methods and Lambda Expressions
 description: Methods and Lamba expressions are the core of your algorithms. Learn more here.
 keywords: .NET, .NET Core
-author: dotnet-bot
-manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: visual-studio-dev-14
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: b6a0539a-8ce5-4da7-adcf-44be345a2714

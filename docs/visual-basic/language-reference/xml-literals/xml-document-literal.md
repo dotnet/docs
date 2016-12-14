@@ -1,13 +1,13 @@
 ---
 title: "XML Document Literal (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralDocument"
@@ -22,7 +22,7 @@ ms.assetid: f7bbee56-0911-41de-b907-96f20450137b
 caps.latest.revision: 20
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -1,13 +1,9 @@
 ---
 title: "checked (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "checked_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: 718a1194-988d-48a3-b089-d6ee8bd1608d
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

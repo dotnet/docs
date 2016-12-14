@@ -2,12 +2,12 @@
 title: "Example that Outputs Office Open XML Document Parts (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,7 +15,7 @@ ms.assetid: 6cd37055-89b4-42e8-bf27-5a29717e35f3
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 ---
 # Example that Outputs Office Open XML Document Parts (C#)
 This topic shows how to open an Office Open XML document and access parts within it.  

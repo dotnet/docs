@@ -2,7 +2,7 @@
 title: "Style Part of a WordprocessingML Document2 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: 292cc094-9483-4192-ac3b-a5dc51fbac12
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # Style Part of a WordprocessingML Document
 This topic shows an example of the style part of the Office Open XML WordprocessingML document.  

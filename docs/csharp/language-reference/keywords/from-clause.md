@@ -1,13 +1,9 @@
 ---
 title: "from clause (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "from_CSharpKeyword"
@@ -21,7 +17,6 @@ ms.assetid: 1aefd18c-1314-47f8-99ec-9bcefb09e699
 caps.latest.revision: 27
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

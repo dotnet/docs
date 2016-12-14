@@ -1,13 +1,13 @@
 ---
 title: "A property or method call cannot include a reference to a private object, either as an argument or as a return value | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrID98"
@@ -17,7 +17,7 @@ ms.assetid: 059b43e1-202d-4fa2-806b-7bad63c1e7ca
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

@@ -1,13 +1,13 @@
 ---
 title: "How to: Parse Strings Using String.Split (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -20,7 +20,7 @@ ms.assetid: 729c2923-4169-41c6-9c90-ef176c1e2953
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

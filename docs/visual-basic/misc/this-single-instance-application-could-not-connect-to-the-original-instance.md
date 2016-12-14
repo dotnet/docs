@@ -1,13 +1,13 @@
 ---
 title: "This single-instance application could not connect to the original instance | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrAppModel_SingleInstanceCantConnect"
@@ -15,7 +15,7 @@ ms.assetid: 7c2c0cee-02a1-4157-be03-39d18e18408f
 caps.latest.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

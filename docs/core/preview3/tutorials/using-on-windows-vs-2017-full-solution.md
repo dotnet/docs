@@ -3,11 +3,10 @@ title: Building a complete .NET Core solution on Windows, using Visual Studio 20
 description: Building a complete .NET Core solution on Windows, using Visual Studio 2017
 keywords: .NET, .NET Core
 author: bleroy
-manager: wpickett
+ms.author: mairaw
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: d743134a-08a3-4ff6-aab7-49f71f0568c3
 ---
@@ -22,9 +21,9 @@ Visual Studio 2017 provides a full-featured development environment for developi
 
 Follow the instructions on [our prerequisites page](../windows-prerequisites.md) to update your environment.
 
-# A solution using only .NET Core projects
+## A solution using only .NET Core projects
 
-## Writing the library
+### Writing the library
 
 1. In Visual Studio, choose **File**, **New**, **Project**. In the **New Project** dialog, expand the **Visual C#** node and choose the **.NET Core** node, and then choose **Class Library (.NET Standard)**. 
 

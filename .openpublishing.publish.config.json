@@ -1,7 +1,8 @@
 {
     "need_generate_pdf": false,
     "need_generate_intellisense": false,
-    "need_preview_pull_request": "true",
+    "need_preview_pull_request": true,
+    "need_pr_comments": false,
     "need_generate_pdf_url_template": true,
     "git_repository_branch_open_to_public_contributors": "master",
     "git_repository_url_open_to_public_contributors": "https://github.com/dotnet/core-docs",
@@ -39,7 +40,7 @@
     "dependent_repositories": [{
         "path_to_root": "_themes",
         "url": "https://github.com/Microsoft/templates.docs.msft",
-        "branch": "master"
+        "branch": "S110Plugins"
     }, {
         "path_to_root": "api_ref",
         "url": "https://github.com/docascode/coreapi.git",
@@ -48,5 +49,6 @@
         "path_to_root": "_themes.pdf",
         "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
         "branch": "master"
-    }]
+    }],
+    "package_version": "1.22.3"
 }

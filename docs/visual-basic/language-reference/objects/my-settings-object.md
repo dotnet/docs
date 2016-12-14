@@ -1,13 +1,13 @@
 ---
 title: "My.Settings Object | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "My.MySettingsProperty.Settings"
@@ -20,7 +20,7 @@ ms.assetid: 41f30dc1-202a-4273-b9b7-5728941f996c
 caps.latest.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

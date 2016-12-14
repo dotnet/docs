@@ -1,18 +1,13 @@
 ---
 title: "@ (C# Compiler Options) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "@"
 dev_langs: 
-  - "CSharp"
   - "CSharp"
 helpviewer_keywords: 
   - "response files, specifying for compilation [C#]"
@@ -21,7 +16,6 @@ ms.assetid: dda4fa9f-a02c-400f-8b6a-d58834e13d7f
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

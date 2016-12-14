@@ -60,7 +60,7 @@ Which version of CLI to install; you need to specify the version as 3-part versi
 
 `-InstallDir [DIR]`
 
-Path to install to. The directory is created if it doesn't exist. The default value is *%LocalAppData%\.dotnet*.
+Path to install to. The directory is created if it doesn't exist. The default value is *%LocalAppData%\Microsoft\dotnet*.
 
 `-Debug`
 

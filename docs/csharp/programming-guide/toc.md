@@ -4,14 +4,7 @@
 ## [Classes and Structs](classes-and-structs/)
 ## [Delegates](delegates/index.md)
 ## [Enumeration Types](enumeration-types.md)
-
-## [Events](events/index.md)
-### [How to: Subscribe to and Unsubscribe from Events](events/how-to-subscribe-to-and-unsubscribe-from-events.md)
-### [How to: Publish Events that Conform to .NET Framework Guidelines](events/how-to-publish-events-that-conform-to-net-framework-guidelines.md)
-### [How to: Raise Base Class Events in Derived Classes](events/how-to-raise-base-class-events-in-derived-classes.md)
-### [How to: Implement Interface Events](events/how-to-implement-interface-events.md)
-### [How to: Use a Dictionary to Store Event Instances](events/how-to-use-a-dictionary-to-store-event-instances.md)
-### [How to: Implement Custom Event Accessors](events/how-to-implement-custom-event-accessors.md)
+## [Events](events/)
 
 ## [Exceptions and Exception Handling](exceptions/exceptions-and-exception-handling.md)
 ### [Using Exceptions](exceptions/using-exceptions.md)

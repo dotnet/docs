@@ -39,7 +39,8 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Inheritance (C# Programming Guide)
-Inheritance, together with encapsulation and polymorphism, is one of the three primary characteristics (or *pillars*) of object-oriented programming. Inheritance enables you to create new classes that reuse, extend, and modify the behavior that is defined in other classes. The class whose members are inherited is called the *base class*, and the class that inherits those members is called the *derived class*. A derived class can have only one direct base class. However, inheritance is transitive. If ClassC is derived from ClassB, and ClassB is derived from ClassA, ClassC inherits the members declared in ClassB and ClassA.  
+
+Inheritance, together with encapsulation and polymorphism, is one of the three primary characteristics of object-oriented programming. Inheritance enables you to create new classes that reuse, extend, and modify the behavior that is defined in other classes. The class whose members are inherited is called the *base class*, and the class that inherits those members is called the *derived class*. A derived class can have only one direct base class. However, inheritance is transitive. If ClassC is derived from ClassB, and ClassB is derived from ClassA, ClassC inherits the members declared in ClassB and ClassA.  
   
 > [!NOTE]
 >  Structs do not support inheritance, but they can implement interfaces. For more information, see [Interfaces](../../../csharp/programming-guide/interfaces/index.md).  
@@ -67,9 +68,6 @@ Class inheritance
  An *interface* is a reference type that is somewhat similar to an abstract base class that consists of only abstract members. When a class implements an interface, it must provide an implementation for all the members of the interface. A class can implement multiple interfaces even though it can derive from only a single direct base class.  
   
  Interfaces are used to define specific capabilities for classes that do not necessarily have an "is a" relationship. For example, the <xref:System.IEquatable%601?displayProperty=fullName> interface can be implemented by any class or struct that has to enable client code to determine whether two objects of the type are equivalent (however the type defines equivalence). <xref:System.IEquatable%601> does not imply the same kind of "is a" relationship that exists between a base class and a derived class (for example, a `Mammal` is an `Animal`). For more information, see [Interfaces](../../../csharp/programming-guide/interfaces/index.md).  
-  
-## Derived Class Access to Base Class Members  
- A derived class has access to the public, protected, internal, and protected internal members of a base class. Even though a derived class inherits the private members of a base class, it cannot access those members. However, all those private members are still present in the derived class and can do the same work they would do in the base class itself. For example, suppose that a protected base class method accesses a private field. That field has to be present in the derived class for the inherited base class method to work correctly.  
   
 ## Preventing Further Derivation  
  A class can prevent other classes from inheriting from it, or from any of its members, by declaring itself or the member as [sealed](../../../csharp/language-reference/keywords/sealed.md). For more information, see [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  

@@ -99,6 +99,7 @@ For the latest version, please check the [runtime.json](https://github.com/dotne
 ## Linux RIDs
 
 * Red Hat Enterprise Linux
+    * `rhel.7-x64`
     * `rhel.7.0-x64`
     * `rhel.7.1-x64`
     * `rhel.7.2-x64`

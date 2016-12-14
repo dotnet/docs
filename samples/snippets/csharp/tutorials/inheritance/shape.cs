@@ -1,3 +1,4 @@
+// <Snippet1>
 using System;
 
 public abstract class Shape
@@ -12,6 +13,7 @@ public abstract class Shape
 
    public static double GetPerimeter(Shape shape) => shape.Perimeter;
 }
+// </Snippet1>
 
 namespace DerivedClasses
 {

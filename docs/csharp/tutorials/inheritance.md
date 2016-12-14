@@ -40,7 +40,7 @@ To create and run the examples in this tutorial, you use the [dotnet](../../core
 
 *Inheritance* is one of the fundamental attributes of object-oriented programming. It allows you to define a child class that reuses (inherits), extends, or modifies the behavior of a parent class. The class whose members are inherited is called the *base class*. The class that inherits the members of the base class is called the *derived class*.
 
-C# and .NET support *single inheritance* only. That is, a class can only inherit from a single class. However, inheritance is transitive, which allows you to define an inheritance hierarchy for a set of types. In other words, type `D` can inherit from type `C`, which inherits from type `B`, which inherits from the base class type `A`. Because inheritance is transitive, the members of type `A` are availble to type `D`.
+C# and .NET support *single inheritance* only. That is, a class can only inherit from a single class. However, inheritance is transitive, which allows you to define an inheritance hierarchy for a set of types. In other words, type `D` can inherit from type `C`, which inherits from type `B`, which inherits from the base class type `A`. Because inheritance is transitive, the members of type `A` are available to type `D`.
 
 Not all members of a base class are inherited by derived classes. The following members are not inherited:
 
@@ -49,8 +49,6 @@ Not all members of a base class are inherited by derived classes. The following 
 - [Instance constructors](../programming-guide/classes-and-structs/constructors.md), which you call to create a new instance of the class. Each class must define its own constructors.
 
 - [Destructors](../programming-guide/classes-and-structs/destructors.md), which are called by the runtime's garbage collector to destroy instances of a class.
-
-- [Private](../language-reference/keywords/private.md) and [internal](../language-reference/keywords/internal.md) members. However, internal members of a base class may be *visible* to a derived class if the two types are in the same assembly.
 
 While all other members of a base class are inherited by derived classes, whether they are visible or not depends on their accessibility. A member's accessibility affects its visibility for derived classes as follows:
 
@@ -86,7 +84,7 @@ Derived classes can also *override* inherited members by providing an alternate 
    }
    ```
 
-In some cases, a derived class *must* override the base class implementation. Base class members marked with the [abstract](../language-reference/keywords/abstract.md) keyword require that derived classes override them. Attempting to compile the following example generates compiler error CS0534, "<class> does not implement inherited abstract member <member>', because class `B` provides no implementtion for `A.Method1`.
+In some cases, a derived class *must* override the base class implementation. Base class members marked with the [abstract](../language-reference/keywords/abstract.md) keyword require that derived classes override them. Attempting to compile the following example generates compiler error CS0534, "<class> does not implement inherited abstract member <member>', because class `B` provides no implementation for `A.Method1`.
 
    ```cs
    public abstract class A
@@ -103,7 +101,7 @@ In some cases, a derived class *must* override the base class implementation. Ba
    }
    ```
 
-Inheritance applies only to classes and interfaces. Other type categories (structs, delegates, and enums) do not support inheritance. Beause of this, attempting to compile code like the following produces compiler error CS0527: "Type 'ValueType' in interface list is not an interface." The error message indicates that, although you can define the interfaces that a struct implements, inheritance is not supported.
+Inheritance applies only to classes and interfaces. Other type categories (structs, delegates, and enums) do not support inheritance. Because of this, attempting to compile code like the following produces compiler error CS0527: "Type 'ValueType' in interface list is not an interface." The error message indicates that, although you can define the interfaces that a struct implements, inheritance is not supported.
 
    ```cs
    using System;
@@ -180,7 +178,7 @@ In designing our `Publication` class, we need to make several design decisions:
 
    In this case, the `Publication` class will provide method implementations. The [Designing abstract base classes amd their derived classes](#abstract) section contains an example that uses an abstract base class to define the methods that derived classes must override. Derived classes are free to provide any implementation that is suitable for the derived type.
 
-   The ability to reuse code (that is, multiple derived classes share the declaration and implementation of base class methods and do not need to override them) is an advantage of non-abstract base classes. Therefore, we should add members to `Publication` if their code is likely to be shared by some or most speicalized `Publication` types. If we fail to do this efficiently, we'll end up having to provide largely identical member implementations in derived classes rather a single implementation in the base class. The need to maintain duplicated code in multiple locations is a potential source of bugs.
+   The ability to reuse code (that is, multiple derived classes share the declaration and implementation of base class methods and do not need to override them) is an advantage of non-abstract base classes. Therefore, we should add members to `Publication` if their code is likely to be shared by some or most specialized `Publication` types. If we fail to do this efficiently, we'll end up having to provide largely identical member implementations in derived classes rather a single implementation in the base class. The need to maintain duplicated code in multiple locations is a potential source of bugs.
 
    Both to maximize code reuse and to create a logical and intuitive inheritance hierarchy, we want to be sure that we include in the `Publication` class only the data and functionality that is common to all or to most publications. Derived classes then implement members that are unique to the particular kinds of publication that they represent.
 
@@ -194,7 +192,7 @@ In designing our `Publication` class, we need to make several design decisions:
 
    For our example, we'll mark the `Publication` class as [abstract](../language-reference/keywords/abstract.md) so that it cannot be instantiated.
 
-- Whether derived classes must inherit the base class implementation of a particular members, or whether they have the option to override the base class implemnetation. We have to use the [virtual](../language-reference/keywords/virtual.md) keyword to allow derived classes to override a base class method. By default, methods defined in the base class are *not* overridable.
+- Whether derived classes must inherit the base class implementation of a particular members, or whether they have the option to override the base class implementation. We have to use the [virtual](../language-reference/keywords/virtual.md) keyword to allow derived classes to override a base class method. By default, methods defined in the base class are *not* overridable.
 
 - Whether a derived class represents the final class in the inheritance hierarchy and cannot itself be used as a base class for additional derived classes. By default, any class can serve as a base class. We can apply the [sealed](../language-reference/keywords/sealed.md) keyword to indicate that a class cannot serve as a base class for any additional classes. Attempting to derive from a sealed class generated compiler error CS0509, "cannot derive from sealed type <typeName>".
 
@@ -293,7 +291,7 @@ We can then derive some classes from `Shape` that represent specific shapes. The
 
 [!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/shape.cs#2)]
 
-The following example uses objects derived from `Shape`. It instiates an array of objects derived from `Shape` and calls the static methods of the `Shape` class, which wraps return `Shape` property values. Note that the runtime retrieves values from the overridden properties of the derived types. The example also casts each `Shape` object in the array to its derived type and, if the cast succeeds, retrieves properties of that particular subclass of `Shape`. 
+The following example uses objects derived from `Shape`. It instantiates an array of objects derived from `Shape` and calls the static methods of the `Shape` class, which wraps return `Shape` property values. Note that the runtime retrieves values from the overridden properties of the derived types. The example also casts each `Shape` object in the array to its derived type and, if the cast succeeds, retrieves properties of that particular subclass of `Shape`. 
 
 [!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/shape.cs#3)]
 

@@ -18,7 +18,7 @@ A *lambda expression* is a block of code (an expression or a statement block) th
 
 - Passing the code that is to be executed to asynchronous methods, such as @System.Threading.Tasks.Task.Run(System.Action).
 
-- Writing [LINQ query expressions](linq.md).
+- Writing [LINQ query expressions](linq/index.md).
 
 - Creating [expression trees](expression-trees-building.md).
 

@@ -23,7 +23,7 @@ iterator for the elements of that class. These can be used for:
 
 + Performing an action on each item in a collection.
 + Enumerating a custom collection.
-+ Extending [LINQ](linq.md) or other libraries.
++ Extending [LINQ](linq/index.md) or other libraries.
 + Creating a data pipeline where data flows efficiently through iterator
 methods.
 

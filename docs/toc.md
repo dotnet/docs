@@ -229,7 +229,7 @@
 ### [🔧 Asynchronous UI programming](csharp/tutorials/asynchronous-ui-programming.md)
 ### [🔧 Asynchronous server programming](csharp/tutorials/asynchronous-server-programming.md)
 ### [🔧 Concurrent programming](csharp/tutorials/concurrent-programming.md)
-### [inheritance in C# and .NET](csharp/tutorials/inheritance.md)
+### [Inheritance in C# and .NET](csharp/tutorials/inheritance.md)
 ### [Console Application](csharp/tutorials/console-teleprompter.md)
 ### [REST client](csharp/tutorials/console-webapiclient.md)
 ### [Working with LINQ](csharp/tutorials/working-with-linq.md)

@@ -21,7 +21,7 @@ We recommend new projects targeting .NET Core use the default tooling with *proj
 
 - MSBuild doesn't yet support many of the features of *project.json*.
 - Much of the ASP.NET based tooling doesn't currently work with MSBuild projects.
-- When MSBuild based .NET Core tooling is released, it convert *project.json* to MSBuild based.
+- When MSBuild based .NET Core tooling is released, it will automatically convert *project.json* to MSBuild based.
 
 Consider using MSBuild when:
 

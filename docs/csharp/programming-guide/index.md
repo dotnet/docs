@@ -97,9 +97,9 @@ This section provides detailed information on key C# language features and featu
   
  [Collections](../../csharp/programming-guide/concepts/collections.md)  
   
- [Exceptions and Exception Handling](../../csharp/programming-guide/exceptions/exceptions-and-exception-handling.md)  
+ [Exceptions and Exception Handling](../../csharp/programming-guide/exceptions/index.md)  
   
- [File System and the Registry (C# Programming Guide)](../../csharp/programming-guide/file-system/file-system-and-the-registry.md)  
+ [File System and the Registry (C# Programming Guide)](../../csharp/programming-guide/file-system/index.md)  
   
  [Interoperability](../../csharp/programming-guide/interop/interoperability.md)  
   

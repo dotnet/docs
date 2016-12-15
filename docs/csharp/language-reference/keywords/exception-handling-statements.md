@@ -46,4 +46,4 @@ C# provides built-in support for handling anomalous situations, known as excepti
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)   
- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/exceptions-and-exception-handling.md)
+ [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)

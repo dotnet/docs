@@ -279,12 +279,11 @@
 ### [🔧 Reflection & code generation](csharp/reflection.md)
 ### [Documenting your code](csharp/codedoc.md)
 ### [Versioning](csharp/versioning.md)
+<!-- End of C# Concepts section -->
 ## [🔧 Using the .NET Compiler Platform](csharp/roslyn/index.md)
 ## [C# Programming Guide](csharp/programming-guide/)
 ## [Language Reference](csharp/language-reference/)
-
 ## [Walkthroughs](csharp/walkthroughs.md)
-
 <!-- End of C# Content -->
 
 <!-- F# Content -->

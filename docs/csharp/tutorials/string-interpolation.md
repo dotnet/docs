@@ -16,7 +16,7 @@ ms.assetid: f8806f6b-3ac7-4ee6-9b3e-c524d5301ae9
 
 ## Introduction
 
-String Interpolation is the way that placeholders in a string are replaced by the value of a string variable. Before C# 6, the way to do this is with `System.String.Format`. This works okay, but since it uses numbered placeholders, it can be harder to read an more verbose.
+String Interpolation is the way that placeholders in a string are replaced by the value of a string variable. Before C# 6, the way to do this is with `System.String.Format`. This works okay, but since it uses numbered placeholders, it can be harder to read and more verbose.
 
 Other programming languages have had string interpolation built into the language for a while. For instance, in PHP:
 

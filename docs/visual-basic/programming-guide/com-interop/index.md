@@ -59,7 +59,7 @@ The Component Object Model (COM) allows an object to expose its functionality to
  [Walkthrough: Creating COM Objects with Visual Basic](../../../visual-basic/programming-guide/com-interop/walkthrough-creating-com-objects.md)  
  Steps you through the process of creating COM objects with and without the COM class template.  
   
- [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-index.md)  
+ [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)  
  Covers some of the problems you may encounter when using COM.  
   
  [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)  

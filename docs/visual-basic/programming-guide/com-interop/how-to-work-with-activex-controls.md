@@ -57,4 +57,4 @@ ActiveX controls are COM components or objects you can insert into a Web page or
  [How to: Add ActiveX Controls to Windows Forms](http://msdn.microsoft.com/library/54a61e5b-555e-4887-b41e-6244fed271eb)   
  [Aximp.exe (Windows Forms ActiveX Control Importer)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0)   
  [Considerations When Hosting an ActiveX Control on a Windows Form](http://msdn.microsoft.com/library/2509302d-a74e-484f-9890-2acdbfa67a68)   
- [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-index.md)
+ [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)

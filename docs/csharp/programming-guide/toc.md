@@ -24,6 +24,7 @@
 ### [How to: Read From a Text File](file-system/how-to-read-from-a-text-file.md)
 ### [How to: Read a Text File One Line at a Time (Visual C#)](file-system/how-to-read-a-text-file-one-line-at-a-time.md)
 ### [How to: Create a Key In the Registry (Visual C#)](file-system/how-to-create-a-key-in-the-registry.md)
+
 ## [Generics](generics/index.md)
 ### [Introduction to Generics](generics/introduction-to-generics.md)
 ### [Benefits of Generics](generics/benefits-of-generics.md)
@@ -40,14 +41,17 @@
 ### [Generics in the .NET Framework Class Library](generics/generics-in-the-net-framework-class-library.md)
 ### [Generics and Reflection](generics/generics-and-reflection.md)
 ### [Generics and Attributes](generics/generics-and-attributes.md)
+
 ## [Indexers](indexers/index.md)
 ### [Using Indexers](indexers/using-indexers.md)
 ### [Indexers in Interfaces](indexers/indexers-in-interfaces.md)
 ### [Comparison Between Properties and Indexers](indexers/comparison-between-properties-and-indexers.md)
+
 ## [Interfaces](interfaces/index.md)
 ### [Explicit Interface Implementation](interfaces/explicit-interface-implementation.md)
 ### [How to: Explicitly Implement Interface Members](interfaces/how-to-explicitly-implement-interface-members.md)
 ### [How to: Explicitly Implement Members of Two Interfaces](interfaces/how-to-explicitly-implement-members-of-two-interfaces.md)
+
 ## [Interoperability](interop/interoperability.md)
 ### [Interoperability Overview](interop/interoperability-overview.md)
 ### [How to: Access Office Interop Objects by Using Visual C# Features](interop/how-to-access-office-onterop-objects.md)

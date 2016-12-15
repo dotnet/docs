@@ -234,6 +234,7 @@
 ### [REST client](csharp/tutorials/console-webapiclient.md)
 ### [Working with LINQ](csharp/tutorials/working-with-linq.md)
 ### [Microservices hosted in Docker](csharp/tutorials/microservices.md)
+### [Using String Interpolation](csharp/tutorials/string-interpolation.md)
 ## [Tour of C#](csharp/tour-of-csharp/index.md)
 ### [Program Structure](csharp/tour-of-csharp/program-structure.md)
 ### [Types and Variables](csharp/tour-of-csharp/types-and-variables.md)

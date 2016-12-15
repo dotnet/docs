@@ -242,7 +242,6 @@
 ### [What's new in C# 6](csharp/csharp-6.md)
 <!-- End What's New -->
 ## [🔧 C# Interactive](csharp/interactive/)
-
 <!-- Do this section later, once master redirects are in place -->
 ## [C# Concepts](csharp/concepts.md)
 ### [C# Type system](csharp/programming-guide/types/index.md)

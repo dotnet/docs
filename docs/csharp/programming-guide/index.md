@@ -101,7 +101,7 @@ This section provides detailed information on key C# language features and featu
   
  [File System and the Registry (C# Programming Guide)](../../csharp/programming-guide/file-system/index.md)  
   
- [Interoperability](../../csharp/programming-guide/interop/interoperability.md)  
+ [Interoperability](../../csharp/programming-guide/interop/index.md)  
   
  [Reflection](../../csharp/programming-guide/concepts/reflection.md)  
   

@@ -48,7 +48,7 @@ This section provides detailed information on key C# language features and featu
 ## Language Sections  
  [Inside a C# Program](../../csharp/programming-guide/inside-a-program/index.md)  
   
- [Main() and Command-Line Arguments](../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md)  
+ [Main() and Command-Line Arguments](../../csharp/programming-guide/main-and-command-args/index.md)  
   
  [Types](../../csharp/programming-guide/types/index.md)  
   

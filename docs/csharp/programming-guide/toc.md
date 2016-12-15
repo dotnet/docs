@@ -8,24 +8,9 @@
 ## [Exceptions and Exception Handling](exceptions/)
 ## [File System and the Registry](file-system/)
 ## [Generics](generics/)
-## [Indexers](indexers/index.md)
-### [Using Indexers](indexers/using-indexers.md)
-### [Indexers in Interfaces](indexers/indexers-in-interfaces.md)
-### [Comparison Between Properties and Indexers](indexers/comparison-between-properties-and-indexers.md)
-
-## [Interfaces](interfaces/index.md)
-### [Explicit Interface Implementation](interfaces/explicit-interface-implementation.md)
-### [How to: Explicitly Implement Interface Members](interfaces/how-to-explicitly-implement-interface-members.md)
-### [How to: Explicitly Implement Members of Two Interfaces](interfaces/how-to-explicitly-implement-members-of-two-interfaces.md)
-
-## [Interoperability](interop/interoperability.md)
-### [Interoperability Overview](interop/interoperability-overview.md)
-### [How to: Access Office Interop Objects by Using Visual C# Features](interop/how-to-access-office-onterop-objects.md)
-### [How to: Use Indexed Properties in COM Interop Programming](interop/how-to-use-indexed-properties-in-com-interop-rogramming.md)
-### [How to: Use Platform Invoke to Play a Wave File](interop/how-to-use-platform-invoke-to-play-a-wave-file.md)
-### [Walkthrough: Office Programming (C# and Visual Basic)](interop/walkthrough-office-programming.md)
-### [Example COM Class](interop/example-com-class.md)
-
+## [Indexers](indexers/)
+## [Interfaces](interfaces/)
+## [Interoperability](interop/)
 ## [LINQ Query Expressions](linq-query-expressions/index.md)
 ### [Query Expression Basics](linq-query-expressions/query-expression-basics.md)
 ### [How to: Write LINQ Queries in C#](linq-query-expressions/how-to-write-linq-queries.md)
@@ -45,20 +30,24 @@
 ### [How to: Perform Custom Join Operations](linq-query-expressions/how-to-perform-custom-join-operations.md)
 ### [How to: Handle Null Values in Query Expressions](linq-query-expressions/how-to-handle-null-values-in-query-expressions.md)
 ### [How to: Handle Exceptions in Query Expressions](linq-query-expressions/how-to-handle-exceptions-in-query-expressions.md)
+
 ## [Main() and Command-Line Arguments](main-and-command-args/main-and-command-line-arguments.md)
 ### [Command-Line Arguments](main-and-command-args/command-line-arguments.md)
 ### [How to: Display Command Line Arguments](main-and-command-args/how-to-display-command-line-arguments.md)
 ### [How to: Access Command-Line Arguments Using foreach](main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)
 ### [Main() Return Values](main-and-command-args/main-return-values.md)
+
 ## [Namespaces](namespaces/index.md)
 ### [Using Namespaces](namespaces/using-namespaces.md)
 ### [How to: Use the Global Namespace Alias](namespaces/how-to-use-the-global-namespace-alias.md)
 ### [How to: Use the My Namespace](namespaces/how-to-use-the-my-namespace.md)
+
 ## [Nullable Types](nullable-types/index.md)
 ### [Using Nullable Types](nullable-types/using-nullable-types.md)
 ### [Boxing Nullable Types](nullable-types/boxing-nullable-types.md)
 ### [How to: Identify a Nullable Type](nullable-types/how-to-identify-a-nullable-type.md)
 ### [How to: Safely Cast from bool? to bool](nullable-types/how-to-safely-cast-from-bool-to-bool.md)
+
 ## [Programming Concepts](concepts/index.md)
 ### [Assemblies and the Global Assembly Cache](concepts/assemblies-gac/index.md)
 #### [Friend Assemblies](concepts/assemblies-gac/friend-assemblies.md)
@@ -344,6 +333,7 @@
 #### [Thread Timers](concepts/threading/thread-timers.md)
 #### [Thread Pooling](concepts/threading/thread-pooling.md)
 ##### [How to: Use a Thread Pool](concepts/threading/how-to-use-a-thread-pool.md)
+
 ## [Statements, Expressions, and Operators](statements-expressions-operators/index.md)
 ### [Statements](statements-expressions-operators/statements.md)
 ### [Expressions](statements-expressions-operators/expressions.md)
@@ -361,6 +351,7 @@
 ### [Equality Comparisons](statements-expressions-operators/equality-comparisons.md)
 #### [How to: Define Value Equality for a Type](statements-expressions-operators/how-to-define-value-equality-for-a-type.md)
 #### [How to: Test for Reference Equality (Identity)](statements-expressions-operators/how-to-test-for-reference-equality-identity.md)
+
 ## [Strings](strings/index.md)
 ### [How to: Concatenate Multiple Strings](strings/how-to-concatenate-multiple-strings.md)
 ### [How to: Modify String Contents](strings/how-to-modify-string-contents.md)
@@ -372,6 +363,7 @@
 ### [How to: Convert a String to a DateTime](strings/how-to-convert-a-string-to-a-datetime.md)
 ### [How to: Convert Between Legacy Encodings and Unicode](strings/how-to-convert-between-legacy-encodings-and-unicode.md)
 ### [How to: Convert RTF to Plain Text](strings/how-to-convert-rtf-to-plain-text.md)
+
 ## [Types](types/index.md)
 ### [Casting and Type Conversions](types/casting-and-type-conversions.md)
 ### [Boxing and Unboxing](types/boxing-and-unboxing.md)
@@ -381,6 +373,7 @@
 ### [How to: Convert a byte Array to an int](types/how-to-convert-a-byte-array-to-an-int.md)
 ### [How to: Convert a String to a Number](types/how-to-convert-a-string-to-a-number.md)
 ### [How to: Convert Between Hexadecimal Strings and Numeric Types](types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md)
+
 ## [Unsafe Code and Pointers](unsafe-code-pointers/index.md)
 ### [Fixed Size Buffers](unsafe-code-pointers/fixed-size-buffers.md)
 ### [Pointer types](unsafe-code-pointers/pointer-types.md)
@@ -395,6 +388,7 @@
 ###### [Arithmetic Operations on Pointers](unsafe-code-pointers/arithmetic-operations-on-pointers.md)
 ###### [Pointer Comparison](unsafe-code-pointers/pointer-comparison.md)
 #### [How to: Use Pointers to Copy an Array of Bytes ](unsafe-code-pointers/how-to-use-pointers-to-copy-an-array-of-bytes.md)
+
 ## [XML Documentation Comments](xmldoc/xml-documentation-comments.md)
 ### [Recommended Tags for Documentation Comments](xmldoc/recommended-tags-for-documentation-comments.md)
 #### [<c>](xmldoc/code-inline.md)

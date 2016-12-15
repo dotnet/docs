@@ -1141,7 +1141,7 @@
 #### [How to: Call Windows APIs](visual-basic/programming-guide/com-interop/how-to-call-windows-apis.md)
 #### [How to: Call a Windows Function that Takes Unsigned Types](visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)
 #### [Walkthrough: Creating COM Objects](visual-basic/programming-guide/com-interop/walkthrough-creating-com-objects.md)
-#### [Troubleshooting Interoperability](visual-basic/programming-guide/com-interop/troubleshooting-index.md)
+#### [Troubleshooting Interoperability](visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)
 #### [COM Interoperability in .NET Framework Applications](visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)
 #### [Walkthrough: Implementing Inheritance with COM Objects](visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)
 

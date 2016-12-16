@@ -1,14 +1,6 @@
 # [Programming Concepts](index.md)
-## [Assemblies and the Global Assembly Cache](assemblies-gac/index.md)
-### [Friend Assemblies](assemblies-gac/friend-assemblies.md)
-#### [How to: Create Unsigned Friend Assemblies](assemblies-gac/how-to-create-unsigned-friend-assemblies.md)
-#### [How to: Create Signed Friend Assemblies](assemblies-gac/how-to-create-signed-friend-assemblies.md)
-### [How to: Create and Use Assemblies Using the Command Line](assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md)
-### [How to: Determine If a File Is an Assembly](assemblies-gac/how-to-determine-if-a-file-is-an-assembly.md)
-### [How to: Load and Unload Assemblies](assemblies-gac/how-to-load-and-unload-assemblies.md)
-### [How to: Share an Assembly with Other Applications](assemblies-gac/how-to-share-an-assembly-with-other-applications.md)
-### [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio](assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)
-### [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio](assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md)
+## [Assemblies and the Global Assembly Cache](assemblies-gac/)
+
 ## [Asynchronous Programming with async and await](async/asynchronous-programming-with-async-and-await.md)
 ### [Walkthrough: Accessing the Web by Using async and await](async/walkthrough-accessing-the-web-by-using-async-and-await.md)
 ### [How to: Extend the async Walkthrough by Using Task.WhenAll](async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
@@ -22,14 +14,18 @@
 #### [Start Multiple Async Tasks and Process Them As They Complete](async/start-multiple-async-tasks-and-process-them-as-they-complete.md)
 ### [Handling Reentrancy in Async Apps](async/handling-reentrancy-in-async-apps.md)
 ### [Using Async for File Access](async/using-async-for-file-access.md)
+
 ## [Attributes](attributes/index.md)
 ### [Creating Custom Attributes](attributes/creating-custom-attributes.md)
 #### [AttributeUsage](attributes/attributeusage.md)
 ### [Accessing Attributes by Using Reflection](attributes/accessing-attributes-by-using-reflection.md)
 ### [How to: Create a C-C++ Union by Using Attributes](attributes/how-to-create-a-c-cpp-union-by-using-attributes.md)
 ### [Common Attributes](attributes/common-attributes.md)
+
 ## [Caller Information](caller-information.md)
+
 ## [Collections](collections.md)
+
 ## [Covariance and Contravariance](covariance-contravariance/index.md)
 ### [Variance in Generic Interfaces](covariance-contravariance/variance-in-generic-interfaces.md)
 #### [Creating Variant Generic Interfaces](covariance-contravariance/creating-variant-generic-interfaces.md)
@@ -37,12 +33,15 @@
 ### [Variance in Delegates](covariance-contravariance/variance-in-delegates.md)
 #### [Using Variance in Delegates](covariance-contravariance/using-variance-in-delegates.md)
 #### [Using Variance for Func and Action Generic Delegates](covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)
+
 ## [Expression Trees](expression-trees/index.md)
 ### [How to: Execute Expression Trees](expression-trees/how-to-execute-expression-trees.md)
 ### [How to: Modify Expression Trees](expression-trees/how-to-modify-expression-trees.md)
 ### [How to: Use Expression Trees to Build Dynamic Queries](expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md)
 ### [Debugging Expression Trees in Visual Studio](expression-trees/debugging-expression-trees-in-visual-studio.md)
+
 ## [Iterators](iterators.md)
+
 ## [Language-Integrated Query (LINQ)](linq/index.md)
 ### [Introduction to LINQ](linq/introduction-to-linq.md)
 ### [Getting Started with LINQ in C#](linq/getting-started-with-linq.md)
@@ -269,12 +268,16 @@
 ### [LINQ to ADO.NET (Portal Page)](linq/linq-to-adonet-portal-page.md)
 ### [Enabling a Data Source for LINQ Querying](linq/enabling-a-data-source-for-linq-querying1.md)
 ### [Visual Studio IDE and Tools Support for LINQ](linq/visual-studio-ide-and-tools-support-for-linq.md)
+
 ## [Object-Oriented Programming](object-oriented-programming.md)
+
 ## [Reflection](reflection.md)
+
 ## [Serialization (C# )](serialization/index.md)
 ### [How to: Write Object Data to an XML File](serialization/how-to-write-object-data-to-an-xml-file.md)
 ### [How to: Read Object Data from an XML File](serialization/how-to-read-object-data-from-an-xml-file.md)
 ### [Walkthrough: Persisting an Object in Visual Studio](serialization/walkthrough-persisting-an-object-in-visual-studio.md)
+
 ## [Threading](threading/index.md)
 ### [Multithreaded Applications](threading/multithreaded-applications.md)
 ### [Parameters and Return Values for Multithreaded Procedures](threading/parameters-and-return-values-for-multithreaded-procedures.md)

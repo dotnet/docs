@@ -1,32 +1,11 @@
 # [Programming Concepts](index.md)
 ## [Assemblies and the Global Assembly Cache](assemblies-gac/)
 ## [Asynchronous Programming with async and await](async/)
-
-## [Attributes](attributes/index.md)
-### [Creating Custom Attributes](attributes/creating-custom-attributes.md)
-#### [AttributeUsage](attributes/attributeusage.md)
-### [Accessing Attributes by Using Reflection](attributes/accessing-attributes-by-using-reflection.md)
-### [How to: Create a C-C++ Union by Using Attributes](attributes/how-to-create-a-c-cpp-union-by-using-attributes.md)
-### [Common Attributes](attributes/common-attributes.md)
-
+## [Attributes](attributes/)
 ## [Caller Information](caller-information.md)
-
 ## [Collections](collections.md)
-
-## [Covariance and Contravariance](covariance-contravariance/index.md)
-### [Variance in Generic Interfaces](covariance-contravariance/variance-in-generic-interfaces.md)
-#### [Creating Variant Generic Interfaces](covariance-contravariance/creating-variant-generic-interfaces.md)
-#### [Using Variance in Interfaces for Generic Collections](covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md)
-### [Variance in Delegates](covariance-contravariance/variance-in-delegates.md)
-#### [Using Variance in Delegates](covariance-contravariance/using-variance-in-delegates.md)
-#### [Using Variance for Func and Action Generic Delegates](covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)
-
-## [Expression Trees](expression-trees/index.md)
-### [How to: Execute Expression Trees](expression-trees/how-to-execute-expression-trees.md)
-### [How to: Modify Expression Trees](expression-trees/how-to-modify-expression-trees.md)
-### [How to: Use Expression Trees to Build Dynamic Queries](expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md)
-### [Debugging Expression Trees in Visual Studio](expression-trees/debugging-expression-trees-in-visual-studio.md)
-
+## [Covariance and Contravariance](covariance-contravariance/)
+## [Expression Trees](expression-trees/)
 ## [Iterators](iterators.md)
 
 ## [Language-Integrated Query (LINQ)](linq/index.md)

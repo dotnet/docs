@@ -591,7 +591,7 @@
 ###### [Walkthrough: Embedding Types from Managed Assemblies](visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md)
 ###### [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md)
 
-#### [Asynchronous Programming with Async and Await](visual-basic/programming-guide/concepts/async/index.md)
+#### [Asynchronous Programming with Async and Await](visual-basic/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)
 ##### [Walkthrough: Accessing the Web by Using Async and Await](visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
 ##### [How to: Extend the Async Walkthrough by Using Task.WhenAll](visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
 ##### [How to: Make Multiple Web Requests in Parallel by Using Async and Await](visual-basic/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)

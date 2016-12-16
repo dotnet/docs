@@ -74,7 +74,7 @@ You can easily create lambda expressions and statements that incorporate asynchr
 
 [!CODE [csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/async1.cs#1)]
 
-For more information about how to create and use async methods, see [Asynchronous programming with async and await](programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md).
+For more information about how to create and use async methods, see [Asynchronous programming with async and await](programming-guide/concepts/async/index.md).
 
 ## Lambda expressions and tuples ##
 

@@ -6,7 +6,7 @@ author: mgroves
 ms.author: wiwagn
 ms.date: 12/09/2016
 ms.topic: article
-ms.prod: .net-core
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: f8806f6b-3ac7-4ee6-9b3e-c524d5301ae9

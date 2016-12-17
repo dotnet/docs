@@ -133,7 +133,7 @@ The following table shows the order of precedence of operators and other express
 |`,`|Nonassociative|
 |`or`, <code>&#124;&#124;</code>|Left|
 |`&`, `&&`|Left|
-|`:>;`, `:?>;`|Right|
+|`:>`, `:?>`|Right|
 |`!=`*op*, `<`*op*, `>`*op*, `=`, <code>&#124;</code>*op*, `&`*op*, `&`<br /><br />(including `<<<`, `>>>`, <code>&#124;&#124;&#124;</code>, `&&&`)|Left|
 |`^`*op*<br /><br />(including `^^^`)|Right|
 |`::`|Right|

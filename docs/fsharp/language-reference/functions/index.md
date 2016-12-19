@@ -23,9 +23,9 @@ You define functions by using the `let` keyword, or, if the function is recursiv
 
 ```fsharp
 // Non-recursive function definition.
-let [inline] function-nameparameter-list [ : return-type ] = function-body
+let [inline] function-name parameter-list [ : return-type ] = function-body
 // Recursive function definition.
-let rec function-nameparameter-list = recursive-function-body
+let rec function-name parameter-list = recursive-function-body
 ```
 
 ## Remarks

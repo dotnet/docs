@@ -577,5 +577,5 @@ a lambda expression as an argument:
 
 [!code-csharp[Lambda](../../samples/snippets/csharp/new-in-6/overloads.cs#Lambda)]
 
-The C# 6 compiler correctly determines that `Task.Run(Func<Task>()` is
+The C# 6 compiler correctly determines that `Task.Run(Func<Task>())` is
 a better choice.

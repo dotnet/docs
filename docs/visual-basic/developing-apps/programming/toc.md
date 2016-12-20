@@ -34,9 +34,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Programming in Visual Basic
-This section discusses programming tasks that you may want to learn more about as you create your Visual Basic application.  
-  
+ 
 # [Accessing Computer Resources](visual-basic/developing-apps/programming/computer-resources/index.md)
 ## [Playing Sounds](visual-basic/developing-apps/programming/computer-resources/playing-sounds.md)
 ## [Storing Data to and Reading from the Clipboard](visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md)

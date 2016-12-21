@@ -1,13 +1,13 @@
 ---
 title: "Line &lt;number&gt; cannot be parsed using the current Delimiters | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_MalFormedDelimitedLine"
@@ -15,7 +15,7 @@ ms.assetid: 1f8d4c2d-0334-4da8-acff-5460159835b3
 caps.latest.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

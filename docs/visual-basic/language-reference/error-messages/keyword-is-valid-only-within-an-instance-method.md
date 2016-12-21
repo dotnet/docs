@@ -1,13 +1,13 @@
 ---
 title: "&#39;&lt;keyword&gt;&#39; is valid only within an instance method | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "bc30043"
@@ -20,7 +20,7 @@ ms.assetid: 7973aa82-a681-440c-9bca-242627d7ba86
 caps.latest.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

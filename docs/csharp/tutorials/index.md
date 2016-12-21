@@ -3,12 +3,12 @@ title: C# Tutorials
 description: C# Tutorials
 keywords: .NET, .NET Core
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: fcc83b5b-fb68-4e48-9132-0882677d8056
 ---
 
@@ -20,6 +20,13 @@ The following tutorials enable you to build C# programs using [CoreCLR](https://
 the basics of the Task based asynchronous programming model.
 * [REST Client](console-webapiclient.md): demonstrates web communications, JSON serialization, and Object Oriented
 features in the C# language.
+
+* [Inheritance in C# and .NET](inheritance.md): demonstrates inheritance in C#, including the use of inheritance to define base classes, abstract base classes, and derived classes.
+
 * [Working with LINQ](working-with-linq.md): demonstrates many of the features of LINQ and the language elements that support it.
 
 * [Microservices hosted in Docker](microservices.md): demonstrates building an ASP.NET Core microservice and hosting it in Docker.
+
+* [Inheritance](inheritance.md): demonstrates how class and interface inheritance provide code reuse in C#.
+
+* [String Interpolation](string-interpolation.md): demonstrates many of the uses for the `$` string interpolation in C#.

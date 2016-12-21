@@ -1,13 +1,9 @@
 ---
 title: "do (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "do_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: 50725f79-9ba6-4898-aa78-6e331568a1bb
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -57,5 +52,5 @@ The `do` statement executes a statement or a block of statements repeatedly unti
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [do-while Statement (C++)](/cpp/cpp/do-while-statement-cpp)   
+ [do-while Statement (C++)](https://docs.microsoft.com/cpp/cpp/do-while-statement-cpp)   
  [Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)

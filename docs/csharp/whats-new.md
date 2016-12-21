@@ -3,10 +3,10 @@ title: What's New in C# | C# Guide
 description: How is the C# language evolving
 keywords: C#, Latest Features, What's New, Roslyn
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 10/14/2016
 ms.topic: article
-ms.prod: visual-studio-dev-14
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149

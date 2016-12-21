@@ -3,11 +3,10 @@ title: Porting to .NET Core - Libraries
 description: Porting to .NET Core - Libraries
 keywords: .NET, .NET Core
 author: cartermp
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: a0fd860d-d6b6-4659-b325-8a6e6f5fa4a1
 ---
@@ -327,7 +326,7 @@ It's likely that you'll mix the above approaches on a per-project basis.  You sh
 The best way to make sure everything works when you've ported your code is to test your code as you port it to .NET Core.  To do this, you'll need to use a testing framework that will build and run tests for .NET Core.  Currently, you have three options:
 
 * [xUnit](https://xunit.github.io/)
-   - [Getting Started](http://xunit.github.io/docs/getting-started-dnx.html)
+   - [Getting Started](http://xunit.github.io/docs/getting-started-dotnet-core.html)
    - [Tool to convert an MSTest project to xUnit](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)
 * [NUnit](http://www.nunit.org/)
   - [Getting Started](https://github.com/nunit/docs/wiki/Installation)

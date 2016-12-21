@@ -1,13 +1,13 @@
 ---
 title: "Events of shared WithEvents variables cannot be handled by non-shared methods | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "bc30594"
@@ -20,7 +20,7 @@ ms.assetid: 5b9fceb4-ab11-41bb-ad3b-6f1a9da8ae7e
 caps.latest.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

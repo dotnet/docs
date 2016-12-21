@@ -4,11 +4,10 @@ description: An overview of what the Command-Line Interface (CLI) is and its mai
 keywords: CLI, CLI tools, .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
-manager: wpickett
 ms.date: 10/06/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: b70e9ac0-c8be-49f7-9332-95ab93e0e7bc
 ---
@@ -48,6 +47,7 @@ the [driver](#driver) section.
 The following commands are installed by default:
 
 * [new](dotnet-new.md)
+* [migrate](dotnet-migrate.md)
 * [restore](dotnet-restore.md)
 * [run](dotnet-run.md)
 * [build](dotnet-build.md)
@@ -115,7 +115,8 @@ You can learn more about both of these in the [.NET Core application deployment]
 If you used Preview 2 tooling and project.json projects, you can consult the [dotnet migrate](dotnet-migrate.md) command docs
 to get acquainted with the command and how to migrate your project. 
 
-> **Note:** the `dotnet migrate` command currently does not migrate pre-preview 2 project.json files. 
+> [!NOTE]
+> The `dotnet migrate` command currently does not migrate pre-preview 2 project.json files. 
 
 ## Extensibility
 Of course, not every tool that you could use in your workflow will be part of the core CLI tools. However, .NET Core 

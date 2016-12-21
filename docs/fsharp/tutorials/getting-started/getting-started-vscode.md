@@ -4,12 +4,11 @@ description: Learn how to use F# with Visual Studio Code and the Ionide plugin s
 keywords: visual f#, f#, functional programming, .NET, Visual Studio Code, vscode, Ionide
 author: cartermp
 ms.author: phcart
-manager: wpickett
 ms.date: 09/28/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: devlang-fsharp
+ms.prod: .net
+ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 49775139-082e-442f-b5a2-dd402399b5d2
 ---
 
@@ -103,7 +102,7 @@ To create a new F# project, open Visual Studio Code in a new directory (you can 
 >f#: New Project
 ```
 
-This is powered by the [FORGE](https://github.com/fsprojects/Forge) project.  You should see something like this:
+This is powered by the [FORGE](https://github.com/fsharp-editing/Forge) project.  You should see something like this:
 
 ![](media/getting-started-vscode/vscode-new-proj.png)
 

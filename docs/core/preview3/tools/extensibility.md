@@ -2,12 +2,12 @@
 title: .NET Core CLI extensibility model 
 description: .NET Core CLI extensibility model 
 keywords: CLI, extensibility, custom commands, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 11/13/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 1bebd25a-120f-48d3-8c25-c89965afcbcd
 ---
@@ -75,12 +75,12 @@ API, here is a console application's project file that uses that tool:
     </PackageReference>
   </ItemGroup>
 
-   <!-- The tools reference -->
-   <ItemGroup>
+  <!-- The tools reference -->
+  <ItemGroup>
     <DotNetCliToolReference Include="dotnet-api-search">
-        <Version></Version>
+      <Version></Version>
     </DotNetCliToolReference>
-    </ItemGroup>
+  </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

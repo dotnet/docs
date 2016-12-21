@@ -2,12 +2,12 @@
 title: dotnet-build command | .NET Core SDK
 description: The dotnet-build command builds a project and all of its dependencies. 
 keywords: dotnet-build, CLI, CLI command, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/13/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 70285a83-4103-4617-be8b-d0e1e9a4a91d
 ---
@@ -28,7 +28,7 @@ dotnet-build -- Builds a project and all of its dependencies
 
 The `dotnet build` command builds multiple source file from a source project and its dependencies into a binary. 
 By default, the resulting binary is in Intermediate Language (IL) and has a DLL extension. 
-`dotnet build` also drops a `\*.deps` file which outlines what the host needs to run the application.  
+`dotnet build` also drops a `*.deps` file which outlines what the host needs to run the application.  
 
 Building requires the existence of an asset file (a file that lists all of the dependencies of your application), which 
 means that you have to run [`dotnet restore`](dotnet-restore.md) prior to building your code.

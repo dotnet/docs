@@ -1,13 +1,13 @@
 ---
 title: "Friend assembly reference &lt;reference&gt; is invalid | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbc31535"
@@ -20,7 +20,7 @@ ms.assetid: 6540c1d0-bb19-4051-a579-2e4f9094585e
 caps.latest.revision: 5
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -2,12 +2,13 @@
 title: Type Abbreviations (F#)
 description: Type Abbreviations (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 560af74f-935f-415c-af56-604cddb9da6b 
 ---
 

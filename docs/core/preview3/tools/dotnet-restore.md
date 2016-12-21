@@ -2,12 +2,12 @@
 title: dotnet-restore command | .NET Core SDK
 description: Learn how to restore dependencies and project-specific tools with the dotnet restore command 
 keywords: dotnet-restore, CLI, CLI command, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 60489b25-38de-47e6-bed1-59d9f42e2d46
 ---
@@ -88,7 +88,7 @@ Restore dependencies and tools for the project in the current directory:
 
 Restore dependencies and tools for the `app1` project found in the given path:
 
-`dotnet restore ~/projects/app1/app1.csproj``
+`dotnet restore ~/projects/app1/app1.csproj`
 	
 Restore the dependencies and tools for the project in the current directory using the file path provided as the fallback source:
 

@@ -2,7 +2,7 @@
 title: "How to: List All Nodes in a Tree (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: e19289c4-26d1-435b-b0db-fb8bc856b753
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # How to: List All Nodes in a Tree (Visual Basic)
 Sometimes it is helpful to list all nodes in a tree. This can be useful when learning exactly how a method or property affects the tree. One approach to listing all nodes in a textual form is to generate an XPath expression that exactly and specifically identifies any node in the tree.  

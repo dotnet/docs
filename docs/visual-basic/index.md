@@ -1,13 +1,13 @@
 ---
 title: "Visual Basic | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,7 +18,7 @@ ms.assetid: 5cc578fe-d9e5-4015-937d-b34b83207072
 caps.latest.revision: 37
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"
@@ -62,7 +62,7 @@ Visual Basic is engineered for productively building type-safe and object-orient
  Provides links to step-by-step instructions for common scenarios.  
   
 ## Related Sections  
- [Get Started Developing with Visual Studio](/visualstudio/ide/get-started-developing-with-visual-studio)  
+ [Get Started Developing with Visual Studio](https://docs.microsoft.com/visualstudio/ide/get-started-developing-with-visual-studio)  
  Provides links to topics that help you learn about the basics of Visual Studio.  
   
  [Application Development in Visual Studio](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)  

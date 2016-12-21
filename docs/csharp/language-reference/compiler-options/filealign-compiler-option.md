@@ -1,13 +1,9 @@
 ---
 title: "-filealign (C# Compiler Options) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/filealign"
@@ -29,7 +25,6 @@ ms.assetid: 15cf1c98-3798-4ced-9f08-60619308a073
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -63,7 +58,7 @@ The **/filealign** option lets you specify the size of sections in your output f
   
  By specifying the section size, you affect the size of the output file. Modifying section size may be useful for programs that will run on smaller devices.  
   
- Use [DUMPBIN](/cpp/build/reference/dumpbin-options) to see information about sections in your output file.  
+ Use [DUMPBIN](https://docs.microsoft.com/cpp/build/reference/dumpbin-options) to see information about sections in your output file.  
   
 ### To set this compiler option in the Visual Studio development environment  
   

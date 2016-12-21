@@ -2,12 +2,12 @@
 title: "Nullable Value Types (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.Nullable"
@@ -23,7 +23,7 @@ ms.assetid: 9ac3b602-6f96-4e6d-96f7-cd4e81c468a6
 caps.latest.revision: 23
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -117,7 +117,7 @@ Sometimes you work with a value type that does not have a defined value in certa
  [!code-vb[VbVbalrNullableValue#8](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_8.vb)]  
   
 ## Using Nullable Types with Data  
- A database is one of the most important places to use nullable types. Not all database objects currently support nullable types, but the designer-generated table adapters do. See "TableAdapter Support for Nullable Types" in [TableAdapter Overview](/visualstudio/data-tools/tableadapter-overview).  
+ A database is one of the most important places to use nullable types. Not all database objects currently support nullable types, but the designer-generated table adapters do. See "TableAdapter Support for Nullable Types" in [TableAdapter Overview](https://docs.microsoft.com/visualstudio/data-tools/tableadapter-overview).  
   
 ## See Also  
  <xref:System.InvalidOperationException>   
@@ -126,7 +126,7 @@ Sometimes you work with a value type that does not have a defined value in certa
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
  [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
- [TableAdapter Overview](/visualstudio/data-tools/tableadapter-overview)   
+ [TableAdapter Overview](https://docs.microsoft.com/visualstudio/data-tools/tableadapter-overview)   
  [If Operator](../../../../visual-basic/language-reference/operators/if-operator.md)   
  [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)   
  [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md)   

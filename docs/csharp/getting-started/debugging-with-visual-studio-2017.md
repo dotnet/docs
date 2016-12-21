@@ -3,13 +3,12 @@ title: Debugging Your C# Hello World Application with Visual Studio 2017
 description: Learn how to debug a Hello World app written in C# with Visual Studio 2017
 keywords: .NET Core, .NET Core console application, .NET Core debugging
 author: stevehoag
-manager: wpickett
 ms.author: shoag
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: cb213625-cc60-438b-9b9e-49aed0e4a974
 ---
 
@@ -103,7 +102,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. Clear the breakpoint by clicking on the dot in the left margin of the code window, or by choosing the **Debug**, **Toggle Breakpoint** menu item.
 
-## Stepping through a progam ##
+## Stepping through a program ##
 
 Visual Studio also allows us to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and use this feature to follow program flow though a small part of your program code. Since our program is small, though, let's step through the entire program by doing the following:
 

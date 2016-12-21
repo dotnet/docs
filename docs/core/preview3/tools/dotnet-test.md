@@ -2,12 +2,12 @@
 title: dotnet-test command | .NET Core SDK
 description: The `dotnet test` command is used to execute unit tests in a given project.
 keywords: dotnet-test, CLI, CLI command, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 3a0fa917-eb0a-4d7e-9217-d06e65455675
 ---
@@ -111,6 +111,8 @@ Configuration under which to build. The default value is `Release`.
 
 Directory in which to find the binaries to run.
 
+`-f|--framework [FRAMEWORK]`
+
 Looks for test binaries for a specific framework.
 
 `-r|--runtime [RUNTIME_IDENTIFIER]`
@@ -133,7 +135,7 @@ Run the tests in the project in the current directory:
 
 Run the tests in the test1 project:
 
-`dotnet test /projects/test1/test1.csproj` 
+`dotnet test ~/projects/test1/test1.csproj` 
 
 ## See also
 

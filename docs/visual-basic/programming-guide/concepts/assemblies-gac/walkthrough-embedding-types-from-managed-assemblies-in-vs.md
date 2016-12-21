@@ -2,7 +2,7 @@
 title: "Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: 56ed12ba-adff-4e9c-a668-7fcba80c4795
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"
@@ -59,7 +59,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 -   Run the client program to see that the new version of the runtime assembly is being used without having to recompile the client program.  
   
- [!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
 ## Creating an Interface  
   

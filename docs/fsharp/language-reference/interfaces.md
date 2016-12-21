@@ -2,12 +2,13 @@
 title: Interfaces (F#)
 description: Interfaces (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 3a082459-17d4-45cf-9153-0b7550a154ec 
 ---
 

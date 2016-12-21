@@ -2,12 +2,12 @@
 title: "COM Interoperability in .NET Framework Applications (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,7 +19,7 @@ ms.assetid: f5a72143-c268-4dff-a019-974ad940e17d
 caps.latest.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -46,7 +46,7 @@ When you want to use COM objects and .NET Framework objects in the same applicat
  [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
  Provides links to topics covering COM interoperability in Visual Basic, including COM objects, ActiveX controls, Win32 DLLs, managed objects, and inheritance of COM objects.  
   
- [COM Interop Wrapper Error](/cpp/misc/com-interop-wrapper-error)  
+ [COM Interop Wrapper Error](https://docs.microsoft.com/cpp/misc/com-interop-wrapper-error)  
  Describes the consequences and options if the project system cannot create a COM interoperability wrapper for a particular component.  
   
  [Interoperating with Unmanaged Code](https://msdn.microsoft.com/library/sd10k43k)  

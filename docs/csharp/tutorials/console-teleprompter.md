@@ -4,12 +4,11 @@ description: Console Application
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
-manager: wpickett
 ms.date: 11/06/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
 ---
 
@@ -147,7 +146,7 @@ a @System.IO.StreamReader object.
 Now, let’s fill in the code to read the file in the `Main` method: 
 
 ```cs
-var lines = ReadFrom("SampleQuotes.txt");
+var lines = ReadFrom("sampleQuotes.txt");
 foreach (var line in lines)
 {
     Console.WriteLine(line); 
@@ -244,7 +243,7 @@ Add this method to your `Program` class (it’s taken from the body of your
 ```cs
 private static async Task ShowTeleprompter()
 {
-    var words = ReadFrom("SampleQuotes.txt");
+    var words = ReadFrom("sampleQuotes.txt");
     foreach (var line in words)
     {
         Console.Write(line);
@@ -384,7 +383,7 @@ use the `config` object for the delay:
 ```cs
 private static async Task ShowTeleprompter(TelePrompterConfig config)
 {
-    var words = ReadFrom("SampleQuotes.txt");
+    var words = ReadFrom("sampleQuotes.txt");
     foreach (var line in words)
     {
         Console.Write(line);

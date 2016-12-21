@@ -1,13 +1,9 @@
 ---
 title: "What&#39;s New for Visual C# | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,7 +11,6 @@ ms.assetid: 9f18dc26-27fa-4603-a639-b573f07a117b
 caps.latest.revision: 39
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -97,4 +92,4 @@ This page lists key feature names for each version of C# with descriptions of th
  You can import accessible static members of static types so that you can refer to the members without qualifying the access with the type’s name.  
   
 ## See Also  
- [What's New in Visual Studio 2015](/visualstudio/ide/what-s-new-in-visual-studio-2015)
+ [What's New in Visual Studio 2015](https://docs.microsoft.com/visualstudio/ide/what-s-new-in-visual-studio-2015)

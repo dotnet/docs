@@ -1,13 +1,13 @@
 ---
 title: "Programming in Visual Basic | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,7 +18,7 @@ ms.assetid: bc45a3de-ea36-46e6-a106-309a413d7804
 caps.latest.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -37,7 +37,7 @@ translation.priority.ht:
 # Programming in Visual Basic
 This section discusses programming tasks that you may want to learn more about as you create your Visual Basic application.  
   
-## In This Section  
+## In this section  
  [Accessing Computer Resources](../../../visual-basic/developing-apps/programming/computer-resources/index.md)  
  Contains documentation on how to use the `My.Computer` object to access information about the computer on which an application runs and how to control the computer.  
   
@@ -61,6 +61,6 @@ This section discusses programming tasks that you may want to learn more about a
   
 ## See Also  
  [Visual Basic Language Features](../../../visual-basic/programming-guide/language-features/index.md)   
- [Programming Concepts](http://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6)   
- [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)   
+ [Programming Concepts](../../../visual-basic/programming-guide/concepts/index.md)   
+ [Collections](../../../visual-basic/programming-guide/concepts/collections.md)   
  [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)

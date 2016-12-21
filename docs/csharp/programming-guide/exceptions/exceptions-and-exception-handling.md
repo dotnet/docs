@@ -1,13 +1,13 @@
 ---
 title: "Exceptions and Exception Handling (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -19,7 +19,7 @@ ms.assetid: 0001887f-4fa2-47e2-8034-2819477e2344
 caps.latest.revision: 33
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -65,7 +65,7 @@ The C# language's exception handling features help you deal with any unexpected 
   
 -   Code in a `finally` block is executed even if an exception is thrown. Use a `finally` block to release resources, for example to close any streams or files that were opened in the `try` block.  
   
--   Managed exceptions in the .NET Framework are implemented on top of the Win32 structured exception handling mechanism. For more information, see [Structured Exception Handling (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) and [A Crash Course on the Depths of Win32 Structured Exception Handling](http://go.microsoft.com/fwlink/?LinkId=119654).  
+-   Managed exceptions in the .NET Framework are implemented on top of the Win32 structured exception handling mechanism. For more information, see [Structured Exception Handling (C/C++)](https://docs.microsoft.com/cpp/cpp/structured-exception-handling-c-cpp) and [A Crash Course on the Depths of Win32 Structured Exception Handling](http://go.microsoft.com/fwlink/?LinkId=119654).  
   
 ## Related Sections  
  See the following topics for more information about exceptions and exception handling:  

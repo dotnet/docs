@@ -1,13 +1,9 @@
 ---
 title: "goto (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "goto_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: 2c03c9c1-8119-44ef-b740-fb3d287a42fe
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -60,5 +55,5 @@ The `goto` statement transfers the program control directly to a labeled stateme
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [goto Statement](/cpp/cpp/goto-statement-cpp)   
+ [goto Statement](https://docs.microsoft.com/cpp/cpp/goto-statement-cpp)   
  [Jump Statements](../../../csharp/language-reference/keywords/jump-statements.md)

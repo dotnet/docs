@@ -3,12 +3,12 @@ title: Get started with Azure Table storage using F#
 description: Store structured data in the cloud using Azure Table storage, a NoSQL data store.
 keywords: visual f#, f#, functional programming, .NET, .NET Core, Azure
 author: sylvanc
-manager: jbronsk
+ms.author: phcart
 ms.date: 09/20/2016
 ms.topic: article
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
-ms.devlang: dotnet
+ms.devlang: fsharp
 ms.assetid: 9e5d6cea-a98c-461e-a5cc-75f1d154eafd
 ---
 
@@ -22,11 +22,11 @@ You can use Table storage to store flexible datasets, such as user data for web 
 
 This tutorial shows how to write F# code to do some common tasks using Azure Table storage, including creating and deleting a table and inserting, updating, deleting, and querying table data.
 
-For a conceptual overview of table storage, please see [the .NET guide for table storage](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-tables/)
+For a conceptual overview of table storage, please see [the .NET guide for table storage](https://docs.microsoft.com/azure/storage/storage-dotnet-how-to-use-tables)
 
 ## Prerequisites
 
-To use this guide, you must first [create an Azure storage account](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account/).
+To use this guide, you must first [create an Azure storage account](https://docs.microsoft.com/azure/storage/storage-create-storage-account).
 You'll also need your storage access key for this account.
 
 ## Create an F# Script and Start F# Interactive
@@ -43,7 +43,7 @@ Add the following `open` statements to the top of the `tables.fsx` file:
 
 ### Get your connection string
 
-You'll need an Azure Storage connection string for this tutorial. For more information about connection strings, see [Configure Storage Connection Strings](https://azure.microsoft.com/en-us/documentation/articles/storage-configure-connection-string/).
+You'll need an Azure Storage connection string for this tutorial. For more information about connection strings, see [Configure Storage Connection Strings](https://docs.microsoft.com/azure/storage/storage-configure-connection-string).
 
 For the tutorial, you'll enter your connection string in your script, like this:
 

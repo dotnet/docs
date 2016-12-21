@@ -2,7 +2,7 @@
 title: "How to: Sort Elements on Multiple Keys (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: 0c4c1462-3047-4766-b9e2-7e0e9cc7f421
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # How to: Sort Elements on Multiple Keys (Visual Basic)
 This topic shows how to sort on multiple keys.  

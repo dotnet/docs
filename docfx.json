@@ -76,10 +76,23 @@
     "globalMetadata": {
       "breadcrumb_path": "/dotnet/toc.json",
       "_displayLangs": ["csharp"],
-      "author": "dotnet-bot"
+      "author": "dotnet-bot",
+      "ms.author": "dotnetcontent",
+      "manager": "wpickett",
+      "searchScope": [".NET"]
+    },
+    "fileMetadata": {
+      "ms.prod":
+      {
+        "api_ref/**.yml": ".net"
+      },
+      "ms.topic":
+      {
+        "api_ref/**.yml": "managed-reference"
+      }
     },
     "dest": "_site",
     "template": [ "docs.html" ],
-    "xref": ["_zip/msdn.4.5.2.zip", "_zip/namespaces.4.5.2.zip", "_zip/vs.110.zip", "_zip/vs.140.zip", "_zip/office15.zip"]
+    "xref": ["_zip/msdn.4.5.2.zip", "_zip/namespaces.4.5.2.zip", "_zip/vs.110.zip", "_zip/vs.140.zip", "_zip/office15.zip", "_zip/missingapi.yml"]
   }
 }

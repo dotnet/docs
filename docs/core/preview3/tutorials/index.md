@@ -4,11 +4,10 @@ description: .NET Core Tutorials (Tooling Preview 3)
 keywords: .NET, .NET Core
 author: bleroy
 ms.author: mairaw
-manager: wpickett
 ms.date: 06/24/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: f6f654b1-1d2c-4105-8376-7c1959e23803
 ---

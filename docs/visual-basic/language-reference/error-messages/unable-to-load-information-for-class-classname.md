@@ -1,13 +1,13 @@
 ---
 title: "Unable to load information for class &#39;&lt;classname&gt;&#39; | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbc30712"
@@ -20,7 +20,7 @@ ms.assetid: c7ffbd6d-05c6-4261-b44b-1bcd521bb350
 caps.latest.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -48,4 +48,4 @@ A reference was made to a class that is not available.
 2.  Try accessing one of the members declared in the module. In some cases, the debugging environment cannot locate members because the modules where they are declared have not been loaded yet.  
   
 ## See Also  
- [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debugging-in-visual-studio)

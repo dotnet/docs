@@ -3,11 +3,11 @@ title: Dates, times, and time zones
 description: Dates, times, and time zones
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/22/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 76e6cacc-1c0c-4a71-8cb8-018c112385ba
 ---
@@ -22,7 +22,7 @@ In addition to the basic [System.DateTime](xref:System.DateTime) structure, .NET
   
 * [System.DateTimeOffset](xref:System.DateTimeOffset)  
 
-  Use this structure to work with dates and times whose offset (or difference) from UTC is known. The [DateTimeOffset](xref:System.DateTimeOffset)] structure combines a date and time value with that time's offset from UTC. Because of its relationship to UTC, an individual date and time value unambiguously identifies a single point in time. This makes a [DateTimeOffset](xref:System.DateTimeOffset)] value more portable from one computer to another than a [DateTime](xref:System.DateTime)] value. 
+  Use this structure to work with dates and times whose offset (or difference) from UTC is known. The [DateTimeOffset](xref:System.DateTimeOffset) structure combines a date and time value with that time's offset from UTC. Because of its relationship to UTC, an individual date and time value unambiguously identifies a single point in time. This makes a [DateTimeOffset](xref:System.DateTimeOffset) value more portable from one computer to another than a [DateTime](xref:System.DateTime) value. 
   
 This section of the documentation provides the information that you need to work with time zones and to create time zone-aware applications that can convert dates and times from one time zone to another.
 

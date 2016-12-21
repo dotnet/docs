@@ -1,13 +1,13 @@
 ---
 title: "Out of stack space (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrID28"
@@ -17,7 +17,7 @@ ms.assetid: bfcd792b-ac29-4158-81fc-ea0c13f4ffa2
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -51,4 +51,4 @@ The stack is a working area of memory that grows and shrinks dynamically with th
 6.  Make sure you did not cause an "event cascade" by triggering an event that calls an event procedure already on the stack. An event cascade is similar to an unterminated recursive procedure call, but it is less obvious, since the call is made by [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] rather than an explicit call in the code. Use the `Calls`dialog box to view which procedures are active on the stack.  
   
 ## See Also  
- [Memory Windows](/visualstudio/debugger/memory-windows)
+ [Memory Windows](https://docs.microsoft.com/visualstudio/debugger/memory-windows)

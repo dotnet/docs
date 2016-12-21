@@ -1,13 +1,13 @@
 ---
 title: "Cannot calculate number of periods using the arguments provided | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrFinancial_CannotCalculateNPer"
@@ -15,7 +15,7 @@ ms.assetid: a96fed1c-73e6-4a2b-9906-0190bc3d4c3c
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

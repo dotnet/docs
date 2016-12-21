@@ -1,13 +1,13 @@
 ---
 title: "C# Walkthroughs | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -19,7 +19,7 @@ ms.assetid: 2d07b972-ef69-4676-9aef-e1784728e1ff
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -84,13 +84,13 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  [Querying Across Relationships (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb386951.aspx)  
  Demonstrates the use of [!INCLUDE[vbtecdlinq](../csharp/includes/vbtecdlinq_md.md)] associations to represent foreign-key relationships in a database.  
 
- [Writing a Visualizer in C#](/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp)  
+ [Writing a Visualizer in C#](https://docs.microsoft.com/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp)  
  Shows how to write a simple visualizer by using C#.  
   
 ## Related Sections  
- [Deployment Samples and Walkthroughs](/visualstudio/deployment/clickonce-deployment-samples-and-walkthroughs)  
+ [Deployment Samples and Walkthroughs](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-samples-and-walkthroughs)  
  Provides step-by-step examples of common deployment scenarios.  
   
 ## See Also  
  [C# Programming Guide](../csharp/programming-guide/index.md)   
- [Visual Studio Samples](/visualstudio/ide/visual-studio-samples)
+ [Visual Studio Samples](https://docs.microsoft.com/visualstudio/ide/visual-studio-samples)

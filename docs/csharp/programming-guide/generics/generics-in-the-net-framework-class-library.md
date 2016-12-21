@@ -1,13 +1,13 @@
 ---
 title: "Generics in the .NET Framework Class Library (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -17,7 +17,7 @@ ms.assetid: afdd5477-6770-4686-8297-f58a4d749daf
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -38,6 +38,6 @@ Version 2.0 of the .NET Framework class library provides a new namespace, <xref:
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [When to Use Generic Collections](http://msdn.microsoft.com/library/e7b868b1-11fe-4ac5-bed3-de68aca47739)   
- [Collections and Data Structures](http://msdn.microsoft.com/library/60cc581f-1db5-445b-ba04-a173396bf872)   
+ [When to Use Generic Collections](../../../standard/collections/when-to-use-generic-collections.md)   
+ [Collections and Data Structures](../../../standard/collections/index.md)   
  [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)

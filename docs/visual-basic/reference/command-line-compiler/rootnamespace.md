@@ -1,13 +1,13 @@
 ---
 title: "-rootnamespace | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "/rootnamespace"
@@ -22,7 +22,7 @@ ms.assetid: e9245edf-6bef-420d-a7c7-324117752783
 caps.latest.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -54,7 +54,7 @@ Specifies a namespace for all type declarations.
 |`namespace`|The name of the namespace in which to enclose all type declarations for the current project.|  
   
 ## Remarks  
- If you use the Visual Studio executable file (Devenv.exe) to compile a project created in the Visual Studio integrated development environment, use `/rootnamespace` to specify the value of the <xref:VSLangProj80.VBProjectProperties3.RootNamespace%2A> property. See [Devenv Command Line Switches](/visualstudio/ide/reference/devenv-command-line-switches) for more information.  
+ If you use the Visual Studio executable file (Devenv.exe) to compile a project created in the Visual Studio integrated development environment, use `/rootnamespace` to specify the value of the <xref:VSLangProj80.VBProjectProperties3.RootNamespace%2A> property. See [Devenv Command Line Switches](https://docs.microsoft.com/visualstudio/ide/reference/devenv-command-line-switches) for more information.  
   
  Use the common language runtime MSIL Disassembler (I`ldasm.exe`) to view the namespace names in your output file.  
   

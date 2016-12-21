@@ -1,13 +1,9 @@
 ---
 title: "return (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "return_CSharpKeyword"
@@ -21,7 +17,7 @@ ms.assetid: 6da6e152-5b58-4448-8f3f-470dd0617ecd
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -54,5 +50,5 @@ The `return` statement terminates execution of the method in which it appears an
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [return Statement](/cpp/cpp/return-statement-cpp)   
+ [return Statement](https://docs.microsoft.com/cpp/cpp/return-statement-cpp)   
  [Jump Statements](../../../csharp/language-reference/keywords/jump-statements.md)

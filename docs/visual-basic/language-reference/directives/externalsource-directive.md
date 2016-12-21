@@ -1,13 +1,13 @@
 ---
 title: "#ExternalSource Directive | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "#Externalsource"
@@ -25,7 +25,7 @@ ms.assetid: 243bc6a2-34c3-4eeb-a776-9fd2bf988149
 caps.latest.revision: 160
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

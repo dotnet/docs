@@ -4,11 +4,10 @@ description: Implementing a dispose method
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 08/16/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: eca6cdc3-6a14-4296-86fb-1eb2f21455b0
 ---
@@ -411,7 +410,7 @@ Classes derived from the [System.Runtime.InteropServices.SafeHandle](xref:System
 
 * The [SafeMemoryMappedViewHandle](xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle) class, for memory views. 
 
-* The [SafeNCryptKeyHandle](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptkeyhandle(v=vs.110).aspx), [SafeNCryptProviderHandle](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptproviderhandle(v=vs.110).aspx), and [SafeNCryptSecretHandle](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptsecrethandle(v=vs.110).aspx) classes, for cryptography constructs.
+* The [SafeNCryptKeyHandle](https://msdn.microsoft.com/library/microsoft.win32.safehandles.safencryptkeyhandle(v=vs.110).aspx), [SafeNCryptProviderHandle](https://msdn.microsoft.com/library/microsoft.win32.safehandles.safencryptproviderhandle(v=vs.110).aspx), and [SafeNCryptSecretHandle](https://msdn.microsoft.com/library/microsoft.win32.safehandles.safencryptsecrethandle(v=vs.110).aspx) classes, for cryptography constructs.
 
 * The [SafeRegistryHandle](xref:Microsoft.Win32.SafeHandles.SafeRegistryHandle) class, for registry keys. 
 

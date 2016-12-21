@@ -1,13 +1,13 @@
 ---
 title: "XML namespace URI &#39;&lt;uri&gt;&#39; can be bound only to &#39;xmlns&#39; | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "bc31183"
@@ -20,7 +20,7 @@ ms.assetid: 0ab1dbce-8397-4959-b2cd-f58798b051a0
 caps.latest.revision: 6
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

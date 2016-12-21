@@ -1,13 +1,13 @@
 ---
 title: "Using the Visual Basic Development Environment | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,7 +15,7 @@ ms.assetid: 1509c90a-0b5a-4394-b54b-94677614bd75
 caps.latest.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -51,11 +51,11 @@ In addition to the core user interface features that Visual Studio provides, the
  Describes your options for compiling and running from within the development environment.  
   
 ## Reference  
- [Default Keyboard Shortcuts](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  
+ [Default Keyboard Shortcuts](https://docs.microsoft.com/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  
  Describes the default keyboard shortcut combinations that you can use to perform actions without using a mouse.  
   
- [Edit and Continue (Visual Basic)](/visualstudio/debugger/edit-and-continue-visual-basic)  
+ [Edit and Continue (Visual Basic)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-basic)  
  Discusses the debugging feature that enables you to make changes to your code while it is executing in Break mode.  
   
- [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic)  
+ [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic)  
  Describes how you can turn warnings off or have warnings treated as error messages.

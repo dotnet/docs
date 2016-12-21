@@ -3,12 +3,12 @@ title: REST client
 description: REST client
 keywords: .NET, .NET Core
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
 ---
 
@@ -209,6 +209,8 @@ type to contain the information you use from this response. Let's build this slo
 a simple C# type that contains the name of the repository:
 
 ```cs
+using System;
+
 namespace WebAPIClient
 {
     public class repo
@@ -296,7 +298,7 @@ file.
 
 Next, open the repo.cs file. Let's change the name to use Pascal Case, and fully spell out the name
 `Repository`. We still want to map JSON 'repo' nodes to this type, so you'll need to add the 
-`DataContract` attribute to the class declaration. YOu'll set the `Name` property of the attribute
+`DataContract` attribute to the class declaration. You'll set the `Name` property of the attribute
 to the name of the JSON nodes that map to this type:
 
 ```cs
@@ -470,12 +472,20 @@ public DateTime LastPush
 }
 ```
 
-Let's go over the new constructs above. The `IgnoreDatamember` attribute instructs the serializer
+Let's go over the new constructs above. The `IgnoreDataMember` attribute instructs the serializer
 that this type should not be read to or written from any JSON object. This property contains only a
 `get` accessor. There is no `set` accessor. That's how you define a *read only* property in C#. (Yes,
 you can create *write only* properties in C#, but their value is limited.) The `DateTime.ParseExact`
-method parses a string and creates a `DateTime` object to return. If the parse operation fails, the
+method parses a string and creates a `DateTime` object using a provided date format, and adds additional 
+metadata to the `DateTime` using a `CultureInfo` object. If the parse operation fails, the
 property accessor throws an exception.
+
+To use `CultureInfo.InvariantCulture`, you will need to add `System.Globalization` to the using statements 
+in `repo.cs`:
+
+```cs
+using System.Globalization;
+```
 
 Finally, add one more output statement in the console, and you're ready to build and run this app
 again:

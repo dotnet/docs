@@ -2,7 +2,7 @@
 title: "XML Literals and the XML 1.0 Specification (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,7 +17,7 @@ ms.assetid: 46f046e5-293c-41a3-b893-4e5f6e32e78a
 caps.latest.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

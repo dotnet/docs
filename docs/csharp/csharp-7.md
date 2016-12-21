@@ -4,8 +4,7 @@ description: Get an overview of the new features coming in the upcoming version 
 keywords: C#, .NET, .NET Core, Latest Features, What's New
 author:  BillWagner
 ms.author: wiwagn
-
-ms.date: 10/03/2016
+ms.date: 12/21/2016
 ms.topic: article
 ms.prod: visual-studio-dev-15
 ms.technology: devlang-csharp
@@ -21,8 +20,8 @@ C# 7 adds a number of new features to the C# language:
 * [Pattern Matching](#pattern-matching)
 * [`ref` locals and returns](#ref-locals-and-returns)
 * [Local Functions](#local-functions)
-<!-- Not available in Preview 5 * [More expression bodied members](#more-expression-bodied-members) -->
-<!-- * [`throw` Expressions](#throw-expressions) -->
+* [More expression bodied members](#more-expression-bodied-members)
+* [`throw` Expressions](#throw-expressions)
 * [Generalized async return types](#generalized-async-return-types)
 * [Numeric literal syntax improvements](#numeric-literal-syntax-improvements)
 
@@ -51,11 +50,6 @@ as shown above. However, the language does support using an implicitly
 typed local variable:
 
 [!code-csharp[OutVarVariableDeclarations](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#02_OutVarVariableDeclarations "Implicitly typed Out variable")]
-
-<!--
-Add a sample at RC that shows how if statements
-scope out variables.
--->
 
 * The code is easier to read. 
     - You declare the out variable where you use it, not on another line above.
@@ -432,15 +426,31 @@ work begins:
 > could also be accomplished using *lambda expressions*. Those
 > interested can [read more about the differences](local-functions-vs-lambdas.md)
 
-<!-- 
 ## More expression bodied members
- Not available in Preview 5 yet.
--->
 
-<!-- 
+C# 6 introduced [expression bodied members](csharp-6.md#expression-bodied-function-members)
+for member functions, and readonly properties. C# 7 expands the allowed
+members that can be implemented as expressions. In C# 7, you can implement
+*constructors*, *finalizers*, and `get` and `set` accessors on *properties*
+and *indexers*. The following class shows examples of each:
+
+[!code-csharp[ExpressionBodiedMembers](../../samples/snippets/csharp/new-in-7/new-in-7/expressionmembers.cs#36_ExpressionBodiedEverything "new expression bodied members")]
+
+> [!NOTE]
+> This example does not need a finalizer, but it is shown
+> to demonstrate the syntax. You should not implement a
+> finalizer in your class unless it is necesary to  release
+> unmanaged resources. You should also consider using the
+> @System.Runtime.InteropServices.SafeHandle class instead
+> of managing unmanaged resources directly.
+
+These new locations for expression bodied members represent
+an important milestone for the C# language: These features
+were implemented by community members working on the Open Source
+[Roslyn](https://github.com/dotnet/Roslyn) project.
+
 ## Throw expressions
 
-Not available in Preview 5 
 The decision that `throw` was a statement meant that there
 were C# constructs where you could not use it. These
 included conditional expressions, null coalescing expressions, and some lambda
@@ -448,36 +458,25 @@ expressions. The addition of expression bodied members adds more locations
 where `throw` expressions would be useful. C# 7 removes introduces *throw expressions*.
 
 The syntax is the same as you've always used for `throw` statements. Now,
-you can place them in new locations, such as an expression bodied member:
+you can place them in new locations, such as in a conditional expression:
 
-```csharp
-// Not implemented exception
-```
-
-```csharp
-// Implement using ? : 
-```
+[!code-csharp[Throw_ExpressionExample](../../samples/snippets/csharp/new-in-7/new-in-7/throwexpressions.cs#37_Throw_ExpressionExample "conditional throw expressions")]
 
 This features enables using throw expressions in initialization expressions:
 
-```csharp
-// new way
-```
+[!code-csharp[ThrowInInitialization](../../samples/snippets/csharp/new-in-7/new-in-7/throwexpressions.cs#38_ThrowInInitialization "conditional throw expressions")]
 
 Previously, those initializations would need to be in a constructor, with the
 throw statements in the body of the constructor:
 
-```csharp
-// old way with ctor
-```
+
+[!code-csharp[ThrowInConstructor](../../samples/snippets/csharp/new-in-7/new-in-7/throwexpressions.cs#39_ThrowInConstructor "throw statements")]
 
 > [!NOTE]
 > Both of the preceding constructs will cause exceptions to be thrown during
 > the construction of an object. Those are often difficult to recover from.
 > For that reason, designs that throw exceptions during construction are
 > discouraged.
-
---> 
 
 ## Generalized async return types 
 

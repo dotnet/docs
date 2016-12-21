@@ -16,7 +16,8 @@ namespace new_in_7
         private string name;
 
         #region 38_ThrowInInitialization
-        private ConfigResource loadedConfig = LoadConfigResourceOrDefault() ?? throw new InvalidOperationException("Could not load config");
+        private ConfigResource loadedConfig = LoadConfigResourceOrDefault() ?? 
+            throw new InvalidOperationException("Could not load config");
         #endregion
 
         #region 39_ThrowInConstructor

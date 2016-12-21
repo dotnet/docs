@@ -39,7 +39,7 @@ The following is a more detailed explanation of the previously-stated reasons fo
 
 Clearly, if your goal is to have an application (web/service) that should be able to run across platforms (Windows, Linux and macOS), the best choice is to use .NET Core.
 
-.NET Core also supports the previously-mentioned operating systems as your development workstation. Visual Studio provides an Integrated Development Environment (IDE) for Windows.  You can also use Visual Studio Code on macOS, Linux and Windows which fully support .NET Core, including IntelliSense and debugging. You can also target .NET Core with most third-party editors like Sublime, Emacs, VI and can get editor IntelliSense using the open source [Omnisharp](http://www.omnisharp.net/) project. You can also avoid any code editor and directly use the .NET Core command-line tools, available forall supported platforms.
+.NET Core also supports the previously-mentioned operating systems as your development workstation. Visual Studio provides an Integrated Development Environment (IDE) for Windows.  You can also use Visual Studio Code on macOS, Linux and Windows which fully support .NET Core, including IntelliSense and debugging. You can also target .NET Core with most third-party editors like Sublime, Emacs, VI and can get editor IntelliSense using the open source [Omnisharp](http://www.omnisharp.net/) project. You can also avoid any code editor and directly use the .NET Core command-line tools, available for all supported platforms.
 
 ### Microservices architecture
 

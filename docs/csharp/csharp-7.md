@@ -451,14 +451,15 @@ were implemented by community members working on the Open Source
 
 ## Throw expressions
 
-The decision that `throw` was a statement meant that there
-were C# constructs where you could not use it. These
+In C#, `throw` has always been a statement. Because `throw` is a statement,
+not an expression, that there were C# constructs where you could not use it. These
 included conditional expressions, null coalescing expressions, and some lambda
 expressions. The addition of expression bodied members adds more locations
-where `throw` expressions would be useful. C# 7 removes introduces *throw expressions*.
+where `throw` expressions would be useful. So that you can write any of these
+constructs, C# 7 introduces *throw expressions*.
 
-The syntax is the same as you've always used for `throw` statements. Now,
-you can place them in new locations, such as in a conditional expression:
+The syntax is the same as you've always used for `throw` statements. The only difference
+is that now you can place them in new locations, such as in a conditional expression:
 
 [!code-csharp[Throw_ExpressionExample](../../samples/snippets/csharp/new-in-7/new-in-7/throwexpressions.cs#37_Throw_ExpressionExample "conditional throw expressions")]
 

@@ -429,7 +429,7 @@ work begins:
 ## More expression bodied members
 
 C# 6 introduced [expression bodied members](csharp-6.md#expression-bodied-function-members)
-for member functions, and readonly properties. C# 7 expands the allowed
+for member functions, and read-only properties. C# 7 expands the allowed
 members that can be implemented as expressions. In C# 7, you can implement
 *constructors*, *finalizers*, and `get` and `set` accessors on *properties*
 and *indexers*. The following class shows examples of each:
@@ -439,7 +439,7 @@ and *indexers*. The following class shows examples of each:
 > [!NOTE]
 > This example does not need a finalizer, but it is shown
 > to demonstrate the syntax. You should not implement a
-> finalizer in your class unless it is necesary to  release
+> finalizer in your class unless it is necessary to  release
 > unmanaged resources. You should also consider using the
 > @System.Runtime.InteropServices.SafeHandle class instead
 > of managing unmanaged resources directly.
@@ -482,7 +482,7 @@ throw statements in the body of the constructor:
 ## Generalized async return types 
 
 Returning a `Task` object from async methods can introduce
-peformance bottlenecks in certain paths. `Task` is a reference
+performance bottlenecks in certain paths. `Task` is a reference
 type, so using it means allocating an object. In cases where a
 method declared with the `async` modifier returns a cached result, or
 completes synchronously, the extra allocations can become a significant

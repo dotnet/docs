@@ -94,12 +94,12 @@ names to each of the members of the tuple:
 
 The `namedLetters` tuple contains fields referred to as `Alpha` and
 `Beta`. In a tuple assignment, you can also specify the names of the fields
-on the right hand side of the assignment:
+on the right-hand side of the assignment:
 
 [!code-csharp[ImplicitNamedTuple](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
 
 The language allows you to specify names for the fields on both the
-left and right hand side of the assignment:
+left and right-hand side of the assignment:
 
 [!code-csharp[NamedTupleConflict](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#07_NamedTupleConflict "Named tuple conflict")]
 
@@ -115,7 +115,7 @@ defines the type returned. There is no need for creating a new type.
 
 Creating a tuple is more efficient and more productive.
 It is a simpler, lightweight syntax to define a data structure that carries
-more than one value. The example method below returns the minimimum and maximum
+more than one value. The example method below returns the minimum and maximum
 values found in a sequence of integers:
 
 [!code-csharp[TupleReturningMethod](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#08_TupleReturningMethod "Tuple returning method")]
@@ -289,7 +289,7 @@ this by using unsafe code and returning a pointer to an `int` in previous versio
 Let's walk through a series of changes to demonstrate the ref local feature
 and show how to create a method that returns a reference to internal storage.
 Along the way, you'll learn the rules of the ref return and ref local feature that
-protects you from accidentally mis-using it.
+protects you from accidentally misusing it.
 
 Start by modifying the `Find` method declaration so that it returns a `ref int`
 instead of a tuple. Then, modify the return statement so it returns the value
@@ -326,7 +326,7 @@ The second `WriteLine` statement in the example above prints out the value `42`,
 not `24`. The variable `valItem` is an `int`, not a `ref int`. The `var`
 keyword enables the compiler to specify the type, but will not implicitly
 add the `ref` modifier. Instead, the value referred to by the `ref return`
-is *copied* to the variable on the left hand side of the assignment. The
+is *copied* to the variable on the left-hand side of the assignment. The
 variable is not a `ref` local.
 
 In order to get the result you want, you need to add the `ref` modifier
@@ -341,7 +341,7 @@ modified. The local variable has been declared with the `ref` modifier,
 and it will take a `ref` return. You must initialize a `ref` variable when
 it is declared, you cannot split the declaration and the initialization.
 
-The C# language has two other rules that protect you from mis-using
+The C# language has two other rules that protect you from misusing
 the `ref` locals and returns:
 
 * You cannot assign a value to a `ref` variable.

@@ -28,11 +28,17 @@ Follow the instructions on [our prerequisites page](../macos-prerequisites.md) t
 
 1. In Visual Studio, choose **New Project**. In the new project dialog, choose **Library** under **.NET Core**, then select **Class Library (.NET Core)**. Click **Next**.
 
+   ![Creating a new library in Visual Studio for Mac](./media/vsmacfull01.png)
+
 2. Name the project "Library" and the solution "Golden". Leave **Create a project directory within the solution directory** checked. Click **Create**.
+
+   ![Naming the library project](./media/vsmacfull02.png)
 
 3. In the solution explorer, open the context menu for the **Dependencies** node and choose **Add Packages...**.
 
-4. Choose "nuget.org" as the Package source, and check **Json.NET**. Click **Add Package**. The package should now appear under **Dependencies/NuGet** and be automatically restored.
+4. Choose "nuget.org" as the Package source, and check **Json.NET**. Click **Add Package**. The package should now appear under **Dependencies/NuGet** and be automatically restored. [Json.NET](http://www.newtonsoft.com/json) is the recommended library and what our code will use to perform [JSON](http://www.json.org/) serialization and deserialization.
+
+   ![Adding the Json.NET dependency to the library project](./media/vsmacfull03.png)
 
 5. Rename the `MyClass.cs` file to `Thing.cs`. Also rename the class and constructor `Thing`. Add a method: `public int Get(int number) => Newtonsoft.Json.JsonConvert.DeserializeObject<int>($"{number}");`
 
@@ -46,20 +52,34 @@ Follow the instructions on [our prerequisites page](../macos-prerequisites.md) t
 
 2. In the **TestLibrary** project, open the context menu for the **References** node and choose **Edit References...**. Check the Library project and click **OK**. This adds a reference to your library from the test project.
 
-3. Right-click **Dependencies** under the solution explorer and choose **Add Packages...**. Search for xunit, check "xUnit.net" and click **Add Package**.
+   ![Referencing the library from the test project](./media/vsmacfull04.png)
 
-** Work in progress**
+3. The test framework that we're going to use is [NUnit](https://www.nunit.org/). NUnit is still a [Portable Class Library](https://msdn.microsoft.com/en-us/library/gg597391(v=vs.110).aspx) as I'm writing this. It will eventually be a .NET Standard library, but in the meantime, we need to make a small modification to the project file before we can use NUnit. Right-click the **TestLibrary** project in the solution explorer and chose **Tools / Edit File**. Add the following tag under the first `PropertyGroup`: `<PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8</PackageTargetFallback>`. This has the effect of relaxing the build system so that it pretends that it's a runtime that NUnit supports explicitly. Save and close the project file.
 
-3. Rename the `MyClass.cs` file to `LibraryTests.cs` and accept the class rename. Add `using Library;` to the top of the file, and replace the `TestMethod1` method with the following code:
+   ![Editing the project file to be able to add NUnit](./media/vsmacfull05.png)
+
+4. Right-click **Dependencies** under the solution explorer and choose **Add Packages...**. Search for nunit, check "NUnit" and click **Add Package** (the version you see may vary; the latest is usually the best choice).
+
+   ![Adding a reference to NUnit](./media/vsmacfull06.png)
+
+5. Rename the `MyClass.cs` file to `LibraryTests.cs`, then open it and also rename the class and remove the constructor. Add `using Library;` and `using NUnit;` to the top of the file, and change the code for the class to:
+
     ```csharp
-    [TestMethod]
-    public void ThingGetsObjectValFromNumber()
-    {
-        Assert.AreEqual(42, new Thing().Get(42));
+    [TestFixture]
+    public class LibraryTests
+        [TestCase(42)]
+        [TestCase(0)]
+        [TestCase(-1)]
+        public void ThingGetsObjectValFromNumber(int number)
+        {
+            Assert.That(new Thing().Get(number), Is.Equal.To(number));
+        }
     }
     ```
 
-   You should now be able to build the solution. 
+   You should now be able to build the solution.
+   
+> **Work in progress**
    
 4. On the **Test** menu, choose **Windows**, **Test Explorer** in order to get the test explorer window into your workspace. After a few seconds, the `ThingGetsObjectValFromNumber` test should appear in the test explorer. Choose **Run All**.
    

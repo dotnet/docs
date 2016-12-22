@@ -4,8 +4,7 @@ description: Get an overview of the new features coming in the upcoming version 
 keywords: C#, .NET, .NET Core, Latest Features, What's New
 author:  BillWagner
 ms.author: wiwagn
-
-ms.date: 10/03/2016
+ms.date: 12/21/2016
 ms.topic: article
 ms.prod: visual-studio-dev-15
 ms.technology: devlang-csharp
@@ -21,8 +20,8 @@ C# 7 adds a number of new features to the C# language:
 * [Pattern Matching](#pattern-matching)
 * [`ref` locals and returns](#ref-locals-and-returns)
 * [Local Functions](#local-functions)
-<!-- Not available in Preview 5 * [More expression bodied members](#more-expression-bodied-members) -->
-<!-- * [`throw` Expressions](#throw-expressions) -->
+* [More expression bodied members](#more-expression-bodied-members)
+* [`throw` Expressions](#throw-expressions)
 * [Generalized async return types](#generalized-async-return-types)
 * [Numeric literal syntax improvements](#numeric-literal-syntax-improvements)
 
@@ -51,11 +50,6 @@ as shown above. However, the language does support using an implicitly
 typed local variable:
 
 [!code-csharp[OutVarVariableDeclarations](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#02_OutVarVariableDeclarations "Implicitly typed Out variable")]
-
-<!--
-Add a sample at RC that shows how if statements
-scope out variables.
--->
 
 * The code is easier to read. 
     - You declare the out variable where you use it, not on another line above.
@@ -100,12 +94,12 @@ names to each of the members of the tuple:
 
 The `namedLetters` tuple contains fields referred to as `Alpha` and
 `Beta`. In a tuple assignment, you can also specify the names of the fields
-on the right hand side of the assignment:
+on the right-hand side of the assignment:
 
 [!code-csharp[ImplicitNamedTuple](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
 
 The language allows you to specify names for the fields on both the
-left and right hand side of the assignment:
+left and right-hand side of the assignment:
 
 [!code-csharp[NamedTupleConflict](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#07_NamedTupleConflict "Named tuple conflict")]
 
@@ -121,7 +115,7 @@ defines the type returned. There is no need for creating a new type.
 
 Creating a tuple is more efficient and more productive.
 It is a simpler, lightweight syntax to define a data structure that carries
-more than one value. The example method below returns the minimimum and maximum
+more than one value. The example method below returns the minimum and maximum
 values found in a sequence of integers:
 
 [!code-csharp[TupleReturningMethod](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#08_TupleReturningMethod "Tuple returning method")]
@@ -295,7 +289,7 @@ this by using unsafe code and returning a pointer to an `int` in previous versio
 Let's walk through a series of changes to demonstrate the ref local feature
 and show how to create a method that returns a reference to internal storage.
 Along the way, you'll learn the rules of the ref return and ref local feature that
-protects you from accidentally mis-using it.
+protects you from accidentally misusing it.
 
 Start by modifying the `Find` method declaration so that it returns a `ref int`
 instead of a tuple. Then, modify the return statement so it returns the value
@@ -332,7 +326,7 @@ The second `WriteLine` statement in the example above prints out the value `42`,
 not `24`. The variable `valItem` is an `int`, not a `ref int`. The `var`
 keyword enables the compiler to specify the type, but will not implicitly
 add the `ref` modifier. Instead, the value referred to by the `ref return`
-is *copied* to the variable on the left hand side of the assignment. The
+is *copied* to the variable on the left-hand side of the assignment. The
 variable is not a `ref` local.
 
 In order to get the result you want, you need to add the `ref` modifier
@@ -347,7 +341,7 @@ modified. The local variable has been declared with the `ref` modifier,
 and it will take a `ref` return. You must initialize a `ref` variable when
 it is declared, you cannot split the declaration and the initialization.
 
-The C# language has two other rules that protect you from mis-using
+The C# language has two other rules that protect you from misusing
 the `ref` locals and returns:
 
 * You cannot assign a value to a `ref` variable.
@@ -374,7 +368,7 @@ outside of the context of the single calling location.
 For those designs, *local functions* enable you to declare methods
 inside the context of another method. This makes it easier for readers
 of the class to see that the local method is only called from the context
-in which is it declaraed.
+in which is it declared.
 
 There are two very common use cases for local functions: public iterator
 methods and public async methods. Both types of methods generate
@@ -432,44 +426,52 @@ work begins:
 > could also be accomplished using *lambda expressions*. Those
 > interested can [read more about the differences](local-functions-vs-lambdas.md)
 
-<!-- 
 ## More expression bodied members
- Not available in Preview 5 yet.
--->
 
-<!-- 
+C# 6 introduced [expression bodied members](csharp-6.md#expression-bodied-function-members)
+for member functions, and read-only properties. C# 7 expands the allowed
+members that can be implemented as expressions. In C# 7, you can implement
+*constructors*, *finalizers*, and `get` and `set` accessors on *properties*
+and *indexers*. The following class shows examples of each:
+
+[!code-csharp[ExpressionBodiedMembers](../../samples/snippets/csharp/new-in-7/new-in-7/expressionmembers.cs#36_ExpressionBodiedEverything "new expression bodied members")]
+
+> [!NOTE]
+> This example does not need a finalizer, but it is shown
+> to demonstrate the syntax. You should not implement a
+> finalizer in your class unless it is necessary to  release
+> unmanaged resources. You should also consider using the
+> @System.Runtime.InteropServices.SafeHandle class instead
+> of managing unmanaged resources directly.
+
+These new locations for expression bodied members represent
+an important milestone for the C# language: These features
+were implemented by community members working on the open-source
+[Roslyn](https://github.com/dotnet/Roslyn) project.
+
 ## Throw expressions
 
-Not available in Preview 5 
-The decision that `throw` was a statement meant that there
-were C# constructs where you could not use it. These
+In C#, `throw` has always been a statement. Because `throw` is a statement,
+not an expression, there were C# constructs where you could not use it. These
 included conditional expressions, null coalescing expressions, and some lambda
 expressions. The addition of expression bodied members adds more locations
-where `throw` expressions would be useful. C# 7 removes introduces *throw expressions*.
+where `throw` expressions would be useful. So that you can write any of these
+constructs, C# 7 introduces *throw expressions*.
 
-The syntax is the same as you've always used for `throw` statements. Now,
-you can place them in new locations, such as an expression bodied member:
+The syntax is the same as you've always used for `throw` statements. The only difference
+is that now you can place them in new locations, such as in a conditional expression:
 
-```csharp
-// Not implemented exception
-```
-
-```csharp
-// Implement using ? : 
-```
+[!code-csharp[Throw_ExpressionExample](../../samples/snippets/csharp/new-in-7/new-in-7/throwexpressions.cs#37_Throw_ExpressionExample "conditional throw expressions")]
 
 This features enables using throw expressions in initialization expressions:
 
-```csharp
-// new way
-```
+[!code-csharp[ThrowInInitialization](../../samples/snippets/csharp/new-in-7/new-in-7/throwexpressions.cs#38_ThrowInInitialization "conditional throw expressions")]
 
 Previously, those initializations would need to be in a constructor, with the
 throw statements in the body of the constructor:
 
-```csharp
-// old way with ctor
-```
+
+[!code-csharp[ThrowInConstructor](../../samples/snippets/csharp/new-in-7/new-in-7/throwexpressions.cs#39_ThrowInConstructor "throw statements")]
 
 > [!NOTE]
 > Both of the preceding constructs will cause exceptions to be thrown during
@@ -477,12 +479,10 @@ throw statements in the body of the constructor:
 > For that reason, designs that throw exceptions during construction are
 > discouraged.
 
---> 
-
 ## Generalized async return types 
 
 Returning a `Task` object from async methods can introduce
-peformance bottlenecks in certain paths. `Task` is a reference
+performance bottlenecks in certain paths. `Task` is a reference
 type, so using it means allocating an object. In cases where a
 method declared with the `async` modifier returns a cached result, or
 completes synchronously, the extra allocations can become a significant

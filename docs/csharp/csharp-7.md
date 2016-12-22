@@ -368,7 +368,7 @@ outside of the context of the single calling location.
 For those designs, *local functions* enable you to declare methods
 inside the context of another method. This makes it easier for readers
 of the class to see that the local method is only called from the context
-in which is it declaraed.
+in which is it declared.
 
 There are two very common use cases for local functions: public iterator
 methods and public async methods. Both types of methods generate

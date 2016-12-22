@@ -17,6 +17,7 @@ ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 .NET Core development on macOS with Visual Studio requires:
 
 * A supported version of the macOS operating system.
+* [The .NET SDK 1.0 Preview 3](https://github.com/dotnet/core/blob/master/release-notes/preview3-download.md).
 * Visual Studio for Mac Preview or later.
 
 > Note: Visual Studio for Mac is one of three options for .NET development on macOS. The other two are [the command-line with your favorite editor](./tutorials/using-with-xplat-cli-msbuild.md), and VS Code.

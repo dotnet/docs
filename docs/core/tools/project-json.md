@@ -4,7 +4,7 @@ description: project.json reference
 keywords: .NET, .NET Core, project.json
 author: aL3891
 ms.author: mairaw
-ms.date: 09/30/2016
+ms.date: 12/21/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -521,7 +521,7 @@ For example:
 }
 ```
 
-This ignores the warnings `The variable 'var' is assigned but its value is never used` and `The variable 'var' is assigned but its value is never used`
+This ignores the warnings `The variable 'var' is declared but never used` and `The variable 'var' is assigned but its value is never used`.
 
 ### additionalArguments
 Type: String[]

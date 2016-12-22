@@ -1009,7 +1009,7 @@
 #### [Object Variables](visual-basic/programming-guide/language-features/variables/object-variables.md)
 ##### [How to: Speed Up Access to an Object with a Long Qualification Path](visual-basic/programming-guide/language-features/variables/how-to-speed-up-access-to-an-object-with-a-long-qualification-path.md)
 #### [Object Variable Declaration](visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)
-###### [How to: Access Members of an Object](visual-basic/programming-guide/language-features/variables/how-to-access-members-of-an-object.md)
+##### [How to: Access Members of an Object](visual-basic/programming-guide/language-features/variables/how-to-access-members-of-an-object.md)
 ##### [Object Variable Assignment](visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)
 ###### [How to: Declare an Object Variable and Assign an Object to It](visual-basic/programming-guide/language-features/variables/how-to-declare-an-object-variable-and-assign-an-object-to-it.md)
 ###### [How to: Make an Object Variable Not Refer to Any Instance](visual-basic/programming-guide/language-features/variables/how-to-make-an-object-variable-not-refer-to-any-instance.md)

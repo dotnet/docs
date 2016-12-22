@@ -446,13 +446,13 @@ and *indexers*. The following class shows examples of each:
 
 These new locations for expression bodied members represent
 an important milestone for the C# language: These features
-were implemented by community members working on the Open Source
+were implemented by community members working on the open-source
 [Roslyn](https://github.com/dotnet/Roslyn) project.
 
 ## Throw expressions
 
 In C#, `throw` has always been a statement. Because `throw` is a statement,
-not an expression, that there were C# constructs where you could not use it. These
+not an expression, there were C# constructs where you could not use it. These
 included conditional expressions, null coalescing expressions, and some lambda
 expressions. The addition of expression bodied members adds more locations
 where `throw` expressions would be useful. So that you can write any of these

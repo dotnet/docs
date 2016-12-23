@@ -90,8 +90,8 @@ Follow the instructions on [our prerequisites page](../macos-prerequisites.md) t
    
    The tests should pass.
 
-> **Work in progress**
-   
+   ![All tests pass](./media/vsmacfull07.png)
+
 ### Writing the console app
 
 1. In Solution Explorer, open the context menu for the solution, and add a new **Console Application (.NET Core)** project. Name it "App".
@@ -102,6 +102,8 @@ Follow the instructions on [our prerequisites page](../macos-prerequisites.md) t
 
 8. Set a breakpoint after the line that you just added.
 
-9. Press F5 to run the application..
+9. Click the play button or **Run / Start Debugging** to run the application..
 
    The application should build without error, and should hit the breakpoint. You should also be able to check that the application output "The answer is 42.".
+
+   ![Our breakpoint is hit](./media/vsmacfull08.png)

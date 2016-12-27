@@ -490,13 +490,9 @@
 #### [Customizing Which Objects are Available in My](visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)
 
 ## [Programming Concepts](visual-basic/programming-guide/concepts/index.md)
-
 ### [Assemblies and the Global Assembly Cache](visual-basic/programming-guide/concepts/assemblies-gac/toc.md)
-
 ### [Asynchronous Programming with Async and Await](visual-basic/programming-guide/concepts/async/toc.md)
-
 ### [Attributes](visual-basic/programming-guide/concepts/attributes/toc.md)
-
 #### [Attributes overview](visual-basic/programming-guide/concepts/attributes/index.md)
 
 ##### [Creating Custom Attributes](visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)

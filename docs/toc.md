@@ -493,19 +493,7 @@
 
 ### [Assemblies and the Global Assembly Cache](visual-basic/programming-guide/concepts/assemblies-gac/toc.md)
 
-### [Asynchronous Programming with Async and Await](visual-basic/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)
-#### [Walkthrough: Accessing the Web by Using Async and Await](visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
-#### [How to: Extend the Async Walkthrough by Using Task.WhenAll](visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
-#### [How to: Make Multiple Web Requests in Parallel by Using Async and Await](visual-basic/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)
-#### [Async Return Types](visual-basic/programming-guide/concepts/async/async-return-types.md)
-#### [Control Flow in Async Programs](visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)
-#### [Fine-Tuning Your Async Application](visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)
-##### [Cancel an Async Task or a List of Tasks](visual-basic/programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md)
-##### [Cancel Async Tasks after a Period of Time](visual-basic/programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md)
-##### [Cancel Remaining Async Tasks after One Is Complete](visual-basic/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md)
-##### [Start Multiple Async Tasks and Process Them As They Complete](visual-basic/programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md)
-#### [Handling Reentrancy in Async Apps](visual-basic/programming-guide/concepts/async/handling-reentrancy-in-async-apps.md)
-#### [Using Async for File Access](visual-basic/programming-guide/concepts/async/using-async-for-file-access.md)
+### [Asynchronous Programming with Async and Await](visual-basic/programming-guide/concepts/async/toc.md)
 
 ### [Attributes](visual-basic/programming-guide/concepts/attributes/index.md)
 #### [Creating Custom Attributes](visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)

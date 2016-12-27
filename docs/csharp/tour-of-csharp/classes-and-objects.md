@@ -4,7 +4,7 @@ description: New to C#? Read this overview of classes, objects and inheritance
 keywords: .NET, csharp, class, instance, object, inheritance, polymorphism
 author: BillWagner
 ms.author: wiwagn
-ms.date: 2016/08/10
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp

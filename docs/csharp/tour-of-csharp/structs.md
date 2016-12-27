@@ -4,7 +4,7 @@ description: Learn the basics of C# value types, called structs
 keywords: .NET, C#, struct, value type
 author: BillWagner
 ms.author: wiwagn
-ms.date: 2016/08/10
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp

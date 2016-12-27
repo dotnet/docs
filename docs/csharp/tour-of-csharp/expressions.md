@@ -4,7 +4,7 @@ description: expressions, operands, and operators are building blocks of the C# 
 keywords: .NET, csharp, expression, operator, operand
 author: BillWagner
 ms.author: wiwagn
-ms.date: 2016/11/06
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp

@@ -4,7 +4,7 @@ description: You create the actions of a C# program using statements
 keywords: .NET, csharp, statements, syntax
 author: BillWagner
 ms.author: wiwagn
-ms.date: 2016/11/06
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp

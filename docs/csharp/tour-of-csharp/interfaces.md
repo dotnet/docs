@@ -4,7 +4,7 @@ description: Interfaces define contracts implemented by types in C#
 keywords: .NET, csharp, interfaces, multiple inheritance, polymorphism
 author: BillWagner
 ms.author: wiwagn
-ms.date: 2016/08/10
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp

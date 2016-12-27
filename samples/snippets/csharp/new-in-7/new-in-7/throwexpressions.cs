@@ -11,7 +11,7 @@ namespace new_in_7
         
     }
 
-    public class ApplicationnOptions
+    public class ApplicationOptions
     {
         private string name;
 
@@ -21,7 +21,7 @@ namespace new_in_7
         #endregion
 
         #region 39_ThrowInConstructor
-        public ApplicationnOptions()
+        public ApplicationOptions()
         {
             loadedConfig = LoadConfigResourceOrDefault();
             if (loadedConfig == null)

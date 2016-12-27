@@ -62,5 +62,5 @@ MsgBox(result)
 -   Include the System.Linq.Expressions namespace.  
   
 ## See Also  
- [Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)   
+ [Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/expression-trees.md)   
  [How to: Modify Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md)

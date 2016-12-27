@@ -85,4 +85,4 @@ This topic shows you how to modify an expression tree. Expression trees are immu
   
 ## See Also  
  [How to: Execute Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)   
- [Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)
+ [Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/expression-trees.md)

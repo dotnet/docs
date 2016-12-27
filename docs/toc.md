@@ -495,12 +495,7 @@
 
 ### [Asynchronous Programming with Async and Await](visual-basic/programming-guide/concepts/async/toc.md)
 
-### [Attributes](visual-basic/programming-guide/concepts/attributes/index.md)
-#### [Creating Custom Attributes](visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)
-##### [AttributeUsage](visual-basic/programming-guide/concepts/attributes/attributeusage.md)
-#### [Accessing Attributes by Using Reflection](visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)
-#### [How to: Create a C/C++ Union by Using Attributes](visual-basic/programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md)
-#### [Common Attributes](visual-basic/programming-guide/concepts/attributes/common-attributes.md)
+### [Attributes](visual-basic/programming-guide/concepts/attributes/toc.md)
 
 #### [Attributes overview](visual-basic/programming-guide/concepts/attributes/index.md)
 

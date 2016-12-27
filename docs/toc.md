@@ -509,14 +509,10 @@
 
 ### [Iterators](visual-basic/programming-guide/concepts/iterators.md)
 ### [Language-Integrated Query (LINQ)](visual-basic/programming-guide/concepts/linq/toc.md)
-
 ### [Object-Oriented Programming](visual-basic/programming-guide/concepts/object-oriented-programming.md)
 ### [Reflection](visual-basic/programming-guide/concepts/reflection.md)
 
-### [Serialization](visual-basic/programming-guide/concepts/serialization/index.md)
-#### [How to: Write Object Data to an XML File](visual-basic/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)
-#### [How to: Read Object Data from an XML File](visual-basic/programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)
-#### [Walkthrough: Persisting an Object](visual-basic/programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md)
+### [Serialization](visual-basic/programming-guide/concepts/serialization/toc.md)
 
 ### [Threading](visual-basic/programming-guide/concepts/threading/index.md)
 #### [Multithreaded Applications](visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)

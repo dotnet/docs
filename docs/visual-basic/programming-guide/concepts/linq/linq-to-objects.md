@@ -55,5 +55,5 @@ The term "LINQ to Objects" refers to the use of LINQ queries with any <xref:Syst
  [How to: Add Custom Methods for LINQ Queries (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md)  
  Explains how to extend the set of methods that you can use for LINQ queries by adding extension methods to the <xref:System.Collections.Generic.IEnumerable%601> interface.  
   
- [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)  
+ [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/language-integrated-query.md)  
  Provides links to topics that explain LINQ and provide examples of code that perform queries.

@@ -73,5 +73,5 @@ LINQ can be used to query and transform strings and collections of strings. It c
  Shows how to perform mathematical computations on text data in .csv files.  
   
 ## See Also  
- [Language-Integrated Query (LINQ) (Visual Basic)](index.md)   
+ [Language-Integrated Query (LINQ) (Visual Basic)](language-integrated-query.md)   
  [How to: Generate XML from CSV Files](how-to-generate-xml-from-csv-files.md)

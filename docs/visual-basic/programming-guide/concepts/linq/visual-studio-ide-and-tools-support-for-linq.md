@@ -38,4 +38,4 @@ The Visual Studio integrated development environment (IDE) provides the followin
  The Visual Studio debugger supports debugging of query expressions. For more information, see [Debugging LINQ](https://docs.microsoft.com/visualstudio/debugger/debugging-linq).  
   
 ## See Also  
- [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)
+ [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/language-integrated-query.md)

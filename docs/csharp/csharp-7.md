@@ -15,15 +15,24 @@ ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 # What's new in C# 7
 
 C# 7 adds a number of new features to the C# language:
-* [`out` variables](#out-variables)
+* [`out` variables](#out-variables):
+    - You can declare `out` values inline as arguments to the method where they are used.
 * [Tuples](#tuples)
+    - You can create lightweight, unnamed types that contain multiple public fields. Compilers and IDE tools understand the semantics of these types.
 * [Pattern Matching](#pattern-matching)
+    - You can create branching logic based on arbitrary types and values of the members of those types.
 * [`ref` locals and returns](#ref-locals-and-returns)
+    - Method arguments and local variables can be references to other storage.
 * [Local Functions](#local-functions)
+    - You can nest functions inside other functions to limit their scope and visibility.
 * [More expression bodied members](#more-expression-bodied-members)
+    - The list of members that can be authored using expressions has grown.
 * [`throw` Expressions](#throw-expressions)
+    - You can throw exceptions in code constructs that previously were not allowed because `throw` was a statement. 
 * [Generalized async return types](#generalized-async-return-types)
+    - Methods declared with the `async` modifier can return other types in addition to `Task` and `Task<T>`.
 * [Numeric literal syntax improvements](#numeric-literal-syntax-improvements)
+    - New tokens improve readability for numeric constants.
 
 The remainder of this topic discusses each of the features. For each feature,
 you'll learn the reasoning behind it. You'll learn the syntax. You'll see

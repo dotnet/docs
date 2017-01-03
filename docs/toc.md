@@ -511,17 +511,9 @@
 ### [Language-Integrated Query (LINQ)](visual-basic/programming-guide/concepts/linq/toc.md)
 ### [Object-Oriented Programming](visual-basic/programming-guide/concepts/object-oriented-programming.md)
 ### [Reflection](visual-basic/programming-guide/concepts/reflection.md)
-
 ### [Serialization](visual-basic/programming-guide/concepts/serialization/toc.md)
 
 ### [Threading](visual-basic/programming-guide/concepts/threading/index.md)
-#### [Multithreaded Applications](visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)
-#### [Parameters and Return Values for Multithreaded Procedures](visual-basic/programming-guide/concepts/threading/parameters-and-return-values-for-multithreaded-procedures.md)
-#### [Walkthrough: Multithreading with the BackgroundWorker Component](visual-basic/programming-guide/concepts/threading/walkthrough-multithreading-with-the-backgroundworker-component.md)
-#### [Thread Synchronization](visual-basic/programming-guide/concepts/threading/thread-synchronization.md)
-#### [Thread Timers](visual-basic/programming-guide/concepts/threading/thread-timers.md)
-#### [Thread Pooling](visual-basic/programming-guide/concepts/threading/thread-pooling.md)
-##### [How to: Use a Thread Pool](visual-basic/programming-guide/concepts/threading/how-to-use-a-thread-pool.md)
 
 ## [Program Structure and Code Conventions](visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
 ### [Structure of a Program](visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)

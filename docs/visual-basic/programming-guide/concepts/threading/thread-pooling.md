@@ -23,7 +23,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Thread Pooling (Visual Basic)
-A *thread pool* is a collection of threads that can be used to perform several tasks in the background. (See [Threading (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/index.md) for background information.) This leaves the primary thread free to perform other tasks asynchronously.  
+A *thread pool* is a collection of threads that can be used to perform several tasks in the background. (See [Threading (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/threading.md) for background information.) This leaves the primary thread free to perform other tasks asynchronously.  
   
  Thread pools are often employed in server applications. Each incoming request is assigned to a thread from the thread pool, so that the request can be processed asynchronously, without tying up the primary thread or delaying the processing of subsequent requests.  
   
@@ -71,6 +71,6 @@ End Sub
  <xref:System.Threading>   
  <xref:System.Threading.ThreadPool>   
  [How to: Use a Thread Pool (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/how-to-use-a-thread-pool.md)   
- [Threading (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/index.md)   
+ [Threading (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/threading.md)   
  [Multithreaded Applications (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)   
  [Thread Synchronization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/thread-synchronization.md)

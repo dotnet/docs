@@ -512,7 +512,6 @@
 ### [Object-Oriented Programming](visual-basic/programming-guide/concepts/object-oriented-programming.md)
 ### [Reflection](visual-basic/programming-guide/concepts/reflection.md)
 ### [Serialization](visual-basic/programming-guide/concepts/serialization/toc.md)
-
 ### [Threading](visual-basic/programming-guide/concepts/threading/threading.md)
 
 ## [Program Structure and Code Conventions](visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
@@ -528,9 +527,6 @@
 ### [How to: Label Statements](visual-basic/programming-guide/program-structure/how-to-label-statements.md)
 ### [Special Characters in Code](visual-basic/programming-guide/program-structure/special-characters-in-code.md)
 ### [Comments in Code](visual-basic/programming-guide/program-structure/comments-in-code.md)
-#### [Documenting Your Code with XML](visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
-#### [Processing the XML File](visual-basic/programming-guide/program-structure/processing-the-xml-file.md)
-#### [How to: Create XML Documentation](visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)
 ### [Keywords as Element Names in Code](visual-basic/programming-guide/program-structure/keywords-as-element-names-in-code.md)
 ### [Me, My, MyBase, and MyClass](visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
 ### [Limitations](visual-basic/programming-guide/program-structure/limitations.md)

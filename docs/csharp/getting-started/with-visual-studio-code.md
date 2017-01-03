@@ -4,7 +4,7 @@ description: Learn how to create and debug your first .NET Core application in C
 keywords: C#, Getting Started, Acquisition, Install, Visual Studio Code, Cross Platform
 author: kendrahavens
 ms.author: wiwagn
-ms.date: 12/09/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -89,7 +89,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
 7. Hit the green arrow at the top to continue debugging or press the red square to stop.
 
-> TIP: For more information and troubleshooting tips on .NET Core debugging with OmniSharp in VS Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
+> [!TIP] For more information and troubleshooting tips on .NET Core debugging with OmniSharp in VS Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
 
 ## See also
 - [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)

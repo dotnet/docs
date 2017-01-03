@@ -26,7 +26,7 @@ productivity for developers. Features in this release include:
 * [using static](#using-static):
     - You can import all the methods of a single class into the current namespace.
 * [Null - conditional operators](#null-conditional-operators):
-    - The null-conditional operator enables you to concisely and safely access members of an object while still checking for null.
+    - You can concisely and safely access members of an object while still checking for null with the null conditional operator.
 * [String Interpolation](#string-interpolation):
     - You can write string formatting expressions using inline expressions instead of positional arguments.
 * [Exception filters](#exception-filters):
@@ -34,7 +34,7 @@ productivity for developers. Features in this release include:
 * [nameof Expressions](#nameof-expressions):
     - You can let the compiler generate string representations of symbols.
 * [await in catch and finally blocks](#await-in-catch-and-finally-blocks):
-    - You can use `await` expressions in locations that previously disallowed.
+    - You can use `await` expressions in locations that previously disallowed them.
 * [index initializers](#index-initializers):
     - You can author initialization expressions for associative containers as well as sequence containers.
 * [Extension methods for collection initializers](#extension-add-methods-in-collection-initializers):

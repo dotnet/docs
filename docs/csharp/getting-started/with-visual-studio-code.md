@@ -3,7 +3,7 @@ title: Getting started with Visual Studio Code | C# Guide
 description: Learn how to create and debug your first .NET Core application in C# using VS Code. 
 keywords: C#, Getting Started, Acquisition, Install, Visual Studio Code, Cross Platform
 author: kendrahavens
-ms.author: wiwagn
+ms.author: mairaw
 ms.date: 12/09/2016
 ms.topic: article
 ms.prod: .net

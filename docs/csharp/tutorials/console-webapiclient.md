@@ -75,7 +75,7 @@ so your application can process JSON responses.
 Open your project.json file. Look for the dependencies section. You should
 see one line that looks similar to this:
 
-```
+```json
 "dependencies": {
     "Microsoft.NETCore.App": {
         "type": "platform",
@@ -86,7 +86,7 @@ see one line that looks similar to this:
 
 You'll add two lines to this section to include the two new libraries:
 
-```
+```json
 "dependencies": {
    "Microsoft.NETCore.App": {
         "type": "platform"
@@ -443,7 +443,7 @@ foreach (var repo in repositories)
 As a final step, let's add the information for the last push operation. This information is formatted in
 this fashion in the JSON response:
 
-```
+```json
 2016-02-08T21:27:00Z
 ```
 

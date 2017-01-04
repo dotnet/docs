@@ -32,13 +32,13 @@ The “Hello, World” program is traditionally used to introduce a programming 
 
 C# source files typically have the file extension `.cs`. Assuming that the “Hello, World” program is stored in the file `hello.cs`, the program might be compiled using the command line:
 
-```
+```console
 csc hello.cs
 ```
 
 which produces an executable assembly named hello.exe. The output produced by this application when it is run is:
 
-```
+```console
 Hello, World
 ```
 

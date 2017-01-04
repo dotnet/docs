@@ -11,7 +11,7 @@ ms.devlang: dotnet
 ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 ---
 
-# Prerequisites for Windows development
+# Prerequisites for .NET Core on Windows
 
 .NET Core development on Windows with Visual Studio requires:
 
@@ -36,16 +36,13 @@ You can see the full set of [supported operating systems](https://github.com/dot
 
 ## .NET Core dependencies
 
-.NET Core requires the VC++ Redistributable when running on Windows. It is installed for you by the .NET Core installer. You need to install the Visual C++ redistributable manually if you are installing .NET Core via the installer script (`dotnet-install.ps1`). 
+.NET Core requires the VC++ Redistributable when running on Windows. It is installed for you by the .NET Core installer. You need to install the Visual C++ redistributable manually if you are installing .NET Core via the installer script (`dotnet-install.ps1`) or are attempting to run a self-contained .NET Core application. 
 
-The Visual C++ Redistributable version differs by Windows version.
+[Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
-* Windows 10
-    * [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
-* Windows 7+ (not Windows 10)
+* Windows 7 and 2008 only
     * Please make sure that your Windows installation is up-to-date and includes hotfix [KB2533623](https://support.microsoft.com/en-us/kb/2533623) installed through Windows Update.
-    * [Universal CRT update](https://www.microsoft.com/en-us/download/details.aspx?id=48234) (you can get more info on what Universal CRT is in [this blog post](https://blogs.msdn.microsoft.com/vcblog/2015/03/03/introducing-the-universal-crt/))
-
+    
 ## Visual Studio
 
 You need Visual Studio 2015 to develop .NET Core apps. You can download [Visual Studio Community 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs) for free. 

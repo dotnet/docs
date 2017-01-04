@@ -9,7 +9,7 @@ namespace new_in_7
     public class ExpressionMembersExample
     {
         #region 36_ExpressionBodiedEverything
-        // Expresion Bodied Constructor
+        // Expression-bodied Constructor
         public ExpressionMembersExample(string label) => this.Label = label;
 
         // expression-bodied Finalizer

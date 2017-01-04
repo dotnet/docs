@@ -31,7 +31,7 @@ This topic contains the following sections:
 - [Return values](#return)
 - [Extension methods](#extension)
 - [Async Methods](#async)
-- [Expression bodied members](#expr)
+- [Expression-bodied members](#expr)
 - [Iterators](#iterators)
 
 ## <a name="signatures" /a> Method signatures ##
@@ -257,7 +257,7 @@ An async method can't declare any [ref](https://msdn.microsoft.com/library/14akc
 
  For more information about async methods, see [Asynchronous Programming with Async and Await](https://msdn.microsoft.com/library/mt674882.aspx), [Control Flow in Async Programs](https://msdn.microsoft.com/library/mt674892.aspx), and [Async Return Types](https://msdn.microsoft.com/library/mt674893.aspx).
 
-## <a name="expr" /> Expression bodied members ##
+## <a name="expr" /> Expression-bodied members ##
 
 It is common to have method definitions that simply return immediately with the result of an expression, or that have a single statement as the body of the method.  There is a syntax shortcut for defining such methods using `=>`:
 

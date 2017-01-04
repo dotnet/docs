@@ -50,7 +50,7 @@ When you define a class or struct, you decide whether it makes sense to create a
   
 5.  x.`Equals`(null) returns `false`. However, null.Equals(null) throws an exception; it does not obey rule number two above.  
   
- Any struct that you define already has a default implementation of value equality that it inherits from the <xref:System.ValueType?displayProperty=fullName> override of the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method. This implementation uses reflection to examine all the public and non-public fields and properties in the type. Although this implementation produces correct results, it is relatively slow compared to a custom implementation that you write specifically for the type.  
+ Any struct that you define already has a default implementation of value equality that it inherits from the <xref:System.ValueType?displayProperty=fullName> override of the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method. This implementation uses reflection to examine all the fields and properties in the type. Although this implementation produces correct results, it is relatively slow compared to a custom implementation that you write specifically for the type.  
   
  The implementation details for value equality are different for classes and structs. However, both classes and structs require the same basic steps for implementing equality:  
   
@@ -80,7 +80,7 @@ When you define a class or struct, you decide whether it makes sense to create a
   
  [!code-cs[csProgGuideStatements#20](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-value-equality-for-a-type_2.cs)]  
   
- For structs, the default implementation of <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> (which is the overridden version in <xref:System.ValueType?displayProperty=fullName>) performs a value equality check by using reflection to compare the values of every field in the type. When an implementer overrides the virtual `Equals` method in a stuct, the purpose is to provide a more efficient means of performing the value equality check and optionally to base the comparison on some subset of the struct's field or properties.  
+ For structs, the default implementation of <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> (which is the overridden version in <xref:System.ValueType?displayProperty=fullName>) performs a value equality check by using reflection to compare the values of every field in the type. When an implementer overrides the virtual `Equals` method in a struct, the purpose is to provide a more efficient means of performing the value equality check and optionally to base the comparison on some subset of the struct's field or properties.  
   
  The [==](../../../csharp/language-reference/operators/equality-comparison-operator.md) and [!=](../../../csharp/language-reference/operators/not-equal-operator.md) operators cannot operate on a struct unless the struct explicitly overloads them.  
   

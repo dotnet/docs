@@ -52,7 +52,7 @@ x = x / y
  The `/=` operator cannot be overloaded directly, but user-defined types can overload the [/ operator](../../../csharp/language-reference/operators/division-operator.md) (see [operator](../../../csharp/language-reference/keywords/operator.md)). On all compound assignment operators, overloading the binary operator implicitly overloads the equivalent compound assignment.  
   
 ## Example  
- [!code-cs[csRefOperators#5](../../../csharp/language-reference/operators/codesnippet/CSharp/subtraction-assignment-operator_1.cs)]  
+ [!code-cs[csRefOperators#5](codesnippet/CSharp/division-assignment-operator_1.cs)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

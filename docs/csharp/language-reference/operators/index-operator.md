@@ -1,5 +1,5 @@
 ---
-title: "Operator (C# Reference) | Microsoft Docs"
+title: "[] Operator (C# Reference) | Microsoft Docs"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Operator (C# Reference)
+# [] Operator (C# Reference)
 Square brackets (`[]`) are used for arrays, indexers, and attributes. They can also be used with pointers.  
   
 ## Remarks  

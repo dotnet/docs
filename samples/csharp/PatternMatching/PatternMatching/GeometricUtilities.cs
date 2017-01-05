@@ -22,15 +22,10 @@ namespace PatternMatching
         #region 05_ComputeWithAsExpression
         public static double ComputeArea(object shape)
         {
-            if ((shape is Square s1) && (s1.Side == 0))
-                return 0;
             if (shape is Square s)
                 return ComputeAreaOfSquare(s);
             else if (shape is Circle c)
                 return ComputeAreaOfCircle(c);
-//            Console.WriteLine(c);
-  //          Console.WriteLine(s);
-
             throw new ArgumentException(
                 message: "shape is not a recognized shape", 
                 paramName: nameof(shape));

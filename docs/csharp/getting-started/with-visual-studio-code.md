@@ -4,7 +4,7 @@ description: Learn how to create and debug your first .NET Core application in C
 keywords: C#, Getting Started, Acquisition, Install, Visual Studio Code, Cross Platform
 author: kendrahavens
 ms.author: wiwagn
-ms.date: 12/09/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -62,7 +62,7 @@ Let's get started with a simple "Hello World" program on .NET Core:
 You can also watch a short video tutorial for further setup help on [Windows](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core), [macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core-on-MacOS), or [Linux](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-Csharp-dotnet-Core-Ubuntu).
 
 ## Debug
-1. Open Program.cs by clicking on it. The first time you open a C# file in VS Code, OmniSharp will load in the editor.
+1. Open Program.cs by clicking on it. The first time you open a C# file in VS Code, [OmniSharp](http://www.omnisharp.net/) will load in the editor.
 
   ![Open Program.cs file](media/with-visual-studio-code/opencs.png)
 
@@ -88,6 +88,8 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
   ![Run and Debug](media/with-visual-studio-code/rundebug.png)
 
 7. Hit the green arrow at the top to continue debugging or press the red square to stop.
+
+> [!TIP] For more information and troubleshooting tips on .NET Core debugging with OmniSharp in VS Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
 
 ## See also
 - [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)

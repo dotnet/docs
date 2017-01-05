@@ -42,13 +42,13 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  If you are new to programming, the material in this section serves as an introduction to the basic building blocks for writing code. Once you understand the basics, you can create powerful applications using [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
   
 ## In This Section  
- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)  
+ [Arrays](../../../visual-basic/programming-guide/language-features/arrays/toc.md)  
  Discusses making your code more compact and powerful by declaring and using arrays, which hold multiple related values.  
   
- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)  
+ [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/toc.md)  
  Describes collection initializers, which enable you to create a collection and populate it with an initial set of values.  
   
- [Constants and Enumerations](../../../visual-basic/programming-guide/language-features/constants-enums/index.md)  
+ [Constants and Enumerations](../../../visual-basic/programming-guide/language-features/constants-enums/toc.md)  
  Discusses storing unchanging values for repeated use, including sets of related constant values.  
   
  [Control Flow](../../../visual-basic/programming-guide/language-features/control-flow/index.md)  

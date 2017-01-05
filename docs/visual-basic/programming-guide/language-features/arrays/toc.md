@@ -1,0 +1,6 @@
+# [Arrays in Visual Basic](arrays.md)
+## [Array Dimensions](visual-basic/programming-guide/language-features/arrays/array-dimensions.md)
+## [How to: Initialize an Array Variable](visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)
+## [How to: Sort An Array](visual-basic/programming-guide/language-features/arrays/how-to-sort-an-array.md)
+## [How to: Assign One Array to Another Array](visual-basic/programming-guide/language-features/arrays/how-to-assign-one-array-to-another-array.md)
+## [Troubleshooting Arrays](visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)

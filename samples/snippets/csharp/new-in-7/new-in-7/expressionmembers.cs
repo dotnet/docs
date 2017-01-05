@@ -12,12 +12,12 @@ namespace new_in_7
         // Expression-bodied constructor
         public ExpressionMembersExample(string label) => this.Label = label;
 
-        // expression-bodied finalizer
+        // Expression-bodied finalizer
         ~ExpressionMembersExample() => Console.Error.WriteLine("Finalized!");
 
         private string label;
 
-        // expression-bodied get / set accessors.
+        // Expression-bodied get / set accessors.
         public string Label
         {
             get => label;

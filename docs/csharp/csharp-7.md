@@ -441,7 +441,7 @@ C# 6 introduced [expression-bodied members](csharp-6.md#expression-bodied-functi
 for member functions, and read-only properties. C# 7 expands the allowed
 members that can be implemented as expressions. In C# 7, you can implement
 *constructors*, *finalizers*, and `get` and `set` accessors on *properties*
-and *indexers*. The following class shows examples of each:
+and *indexers*. The following code shows examples of each:
 
 [!code-csharp[ExpressionBodiedMembers](../../samples/snippets/csharp/new-in-7/new-in-7/expressionmembers.cs#36_ExpressionBodiedEverything "new expression-bodied members")]
 

@@ -91,7 +91,7 @@ Returns the difference between two numeric expressions or the negative value of 
  Following the execution of these statements, `binaryResult` contains 124.45 and `unaryResult` contains –334.90.  
   
 ## See Also  
- [-= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)   
+ [-= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)
  [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)   
  [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
  [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   

@@ -25,7 +25,7 @@ C# 7 adds a number of new features to the C# language:
     - Method arguments and local variables can be references to other storage.
 * [Local Functions](#local-functions)
     - You can nest functions inside other functions to limit their scope and visibility.
-* [More expression bodied members](#more-expression-bodied-members)
+* [More expression-bodied members](#more-expression-bodied-members)
     - The list of members that can be authored using expressions has grown.
 * [`throw` Expressions](#throw-expressions)
     - You can throw exceptions in code constructs that previously were not allowed because `throw` was a statement. 
@@ -435,15 +435,15 @@ work begins:
 > could also be accomplished using *lambda expressions*. Those
 > interested can [read more about the differences](local-functions-vs-lambdas.md)
 
-## More expression bodied members
+## More expression-bodied members
 
-C# 6 introduced [expression bodied members](csharp-6.md#expression-bodied-function-members)
+C# 6 introduced [expression-bodied members](csharp-6.md#expression-bodied-function-members)
 for member functions, and read-only properties. C# 7 expands the allowed
 members that can be implemented as expressions. In C# 7, you can implement
 *constructors*, *finalizers*, and `get` and `set` accessors on *properties*
-and *indexers*. The following class shows examples of each:
+and *indexers*. The following code shows examples of each:
 
-[!code-csharp[ExpressionBodiedMembers](../../samples/snippets/csharp/new-in-7/new-in-7/expressionmembers.cs#36_ExpressionBodiedEverything "new expression bodied members")]
+[!code-csharp[ExpressionBodiedMembers](../../samples/snippets/csharp/new-in-7/new-in-7/expressionmembers.cs#36_ExpressionBodiedEverything "new expression-bodied members")]
 
 > [!NOTE]
 > This example does not need a finalizer, but it is shown
@@ -453,7 +453,7 @@ and *indexers*. The following class shows examples of each:
 > @System.Runtime.InteropServices.SafeHandle class instead
 > of managing unmanaged resources directly.
 
-These new locations for expression bodied members represent
+These new locations for expression-bodied members represent
 an important milestone for the C# language: These features
 were implemented by community members working on the open-source
 [Roslyn](https://github.com/dotnet/Roslyn) project.
@@ -463,7 +463,7 @@ were implemented by community members working on the open-source
 In C#, `throw` has always been a statement. Because `throw` is a statement,
 not an expression, there were C# constructs where you could not use it. These
 included conditional expressions, null coalescing expressions, and some lambda
-expressions. The addition of expression bodied members adds more locations
+expressions. The addition of expression-bodied members adds more locations
 where `throw` expressions would be useful. So that you can write any of these
 constructs, C# 7 introduces *throw expressions*.
 

@@ -154,7 +154,7 @@ namespace Library
 ```
 
 This makes use of a number of modern C# features, such as 
-static usings, expression bodied members, and interpolated strings,
+static usings, expression-bodied members, and interpolated strings,
 that you can learn
 about in the [Learn C#](../../csharp/index.md) section.
 

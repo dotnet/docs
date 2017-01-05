@@ -111,7 +111,7 @@ As time goes on, you may need to support other shape types. As the number
 of conditions you are testing grows, you'll find that using the `is` pattern
 matching expressions can become cumbersome. In addition to requiring `if`
 statements on each type you want to check, the `is` expressions are limited
-to testing a type.
+to testing if the input matches a single type.
 
 As the number of conditions grows, you'll find that the `switch` pattern
 matching expressions becomes a better choice. To get ready to add more

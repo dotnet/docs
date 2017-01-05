@@ -17,6 +17,9 @@ By [Steve Smith](http://ardalis.com) and [Bill Wagner](https://github.com/BillWa
 
 [View or download sample code](https://github.com/dotnet/docs/tree/master/samples/core/getting-started/unit-testing-using-dotnet-test)
 
+> [!NOTE]
+> This topic applies to .NET Core 1.0.
+
 ## Creating the Projects
 
 [Writing Libraries with Cross Platform Tools](../tutorials/libraries.md)
@@ -114,10 +117,6 @@ package as another dependency to the project:
 
 ```json
 "dependencies": {
-  "Microsoft.NETCore.App": {
-    "type":"platform",
-    "version": "1.0.0"
-  },
   "xunit":"2.1.0",
   "dotnet-test-xunit": "1.0.0-rc2-192208-24",
   "PrimeService": {

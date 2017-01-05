@@ -17,18 +17,30 @@ ms.assetid: 4d879f69-f889-4d3f-a781-75194e143400
 The 6.0 release of C# contained many features that improve
 productivity for developers. Features in this release include:
 
-* [Read-only Auto-properties](#read-only-auto-properties)
-* [Auto-Property Initializers](#auto-property-initializers)
-* [Expression Bodied function members](#expression-bodied-function-members)
-* [using static](#using-static)
-* [Null - conditional operators](#null-conditional-operators)
-* [String Interpolation](#string-interpolation)
-* [Exception filters](#exception-filters)
-* [nameof Expressions](#nameof-expressions)
-* [await in catch and finally blocks](#await-in-catch-and-finally-blocks)
-* [index initializers](#index-initializers)
-* [Extension methods for collection initializers](#extension-add-methods-in-collection-initializers)
-* [Improved overload resolution](#improved-overload-resolution)
+* [Read-only Auto-properties](#read-only-auto-properties):
+    - You can create read-only auto-properties that can be set only in constructors.
+* [Auto-Property Initializers](#auto-property-initializers):
+    - You can write initialization expressions to set the initial value of an auto-property.
+* [Expression-bodied function members](#expression-bodied-function-members):
+    - You can author one-line methods using lambda expressions.
+* [using static](#using-static):
+    - You can import all the methods of a single class into the current namespace.
+* [Null - conditional operators](#null-conditional-operators):
+    - You can concisely and safely access members of an object while still checking for null with the null conditional operator.
+* [String Interpolation](#string-interpolation):
+    - You can write string formatting expressions using inline expressions instead of positional arguments.
+* [Exception filters](#exception-filters):
+    - You can catch expressions based on properties of the exception or other program state. 
+* [nameof Expressions](#nameof-expressions):
+    - You can let the compiler generate string representations of symbols.
+* [await in catch and finally blocks](#await-in-catch-and-finally-blocks):
+    - You can use `await` expressions in locations that previously disallowed them.
+* [index initializers](#index-initializers):
+    - You can author initialization expressions for associative containers as well as sequence containers.
+* [Extension methods for collection initializers](#extension-add-methods-in-collection-initializers):
+    - Collection initializers can rely on accessible extension methods, in addition to member methods.
+* [Improved overload resolution](#improved-overload-resolution):
+    - Some constructs that previously generated ambiguous method calls now resolve correctly.
 
 The overall effect of these features is that you write more concise code
 that is also more readable. The syntax contains less ceremony for many
@@ -123,17 +135,17 @@ as read only properties, as shown here.
 
 [!code-csharp[ReadWriteInitialization](../../samples/snippets/csharp/new-in-6/newcode.cs#ReadWriteInitialization)]
 
-## Expression bodied function members
+## Expression-bodied function members
 
 The body of a lot of members that we write consist of only one statement
 that can be represented as an expression. You can reduce that syntax by
-writing an expression bodied member instead. It works for methods and
+writing an expression-bodied member instead. It works for methods and
 read-only properties." For example, an override of `ToString()` is often
 a great candidate:
 
 [!code-csharp[ToStringExpressionMember](../../samples/snippets/csharp/new-in-6/newcode.cs#ToStringExpressionMember)]
 
-You can also use expression bodied members in read only properties as well:
+You can also use expression-bodied members in read only properties as well:
 
 [!code-csharp[FullNameExpressionMember](../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
 

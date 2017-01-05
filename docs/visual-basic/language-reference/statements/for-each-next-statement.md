@@ -89,7 +89,7 @@ Next [ element ]
   
  [!code-vb[VbVbalrStatements#121](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_1.vb)]  
   
- For more examples, see [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b) and [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
+ For more examples, see [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b) and [Arrays](../../../visual-basic/programming-guide/language-features/arrays/arrays.md).  
   
 ## Nested Loops  
  You can nest `For Each` loops by putting one loop within another.  
@@ -196,5 +196,5 @@ Next [ element ]
  [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)   
  [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)   
  [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)   
- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)   
- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
+ [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/collection-initializers.md)   
+ [Arrays](../../../visual-basic/programming-guide/language-features/arrays/arrays.md)

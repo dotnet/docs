@@ -41,4 +41,4 @@ An array contains an argument that is not valid.
   
 ## See Also  
  [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)   
- [Arrays](../../visual-basic/programming-guide/language-features/arrays/index.md)
+ [Arrays](../../visual-basic/programming-guide/language-features/arrays/arrays.md)

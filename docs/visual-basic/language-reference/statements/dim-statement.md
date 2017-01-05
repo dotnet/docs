@@ -216,7 +216,7 @@ Dim a, b, c As Single, x, y As Double, i As Integer
 ```  
   
 ## Arrays  
- You can declare a variable to hold an *array*, which can hold multiple values. To specify that a variable holds an array, follow its `variablename` immediately with parentheses. For more information about arrays, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
+ You can declare a variable to hold an *array*, which can hold multiple values. To specify that a variable holds an array, follow its `variablename` immediately with parentheses. For more information about arrays, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/arrays.md).  
   
  You can specify the lower and upper bound of each dimension of an array. To do this, include a `boundslist` inside the parentheses. For each dimension, the `boundslist` specifies the upper bound and optionally the lower bound. The lower bound is always zero, whether you specify it or not. Each index can vary from zero through its upper bound value.  
   
@@ -250,7 +250,7 @@ ReDim messages(4)
 Dim oneDimension(), twoDimensions(,), threeDimensions(,,) As Byte  
 ```  
   
- You can declare a *zero-length array* by declaring one of the array's dimensions to be -1. A variable that holds a zero-length array does not have the value `Nothing`. Zero-length arrays are required by certain common language runtime functions. If you try to access such an array, a runtime exception occurs. For more information, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
+ You can declare a *zero-length array* by declaring one of the array's dimensions to be -1. A variable that holds a zero-length array does not have the value `Nothing`. Zero-length arrays are required by certain common language runtime functions. If you try to access such an array, a runtime exception occurs. For more information, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/arrays.md).  
   
  You can initialize the values of an array by using an array literal. To do this, surround the initialization values with braces (`{}`).  
   
@@ -264,7 +264,7 @@ Dim longArray() As Long = {0, 1, 2, 3}
 Dim twoDimensions(,) As Integer = {{0, 1, 2}, {10, 11, 12}}  
 ```  
   
- For more information about array literals, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
+ For more information about array literals, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/arrays.md).  
   
 ##  <a name="default"></a> Default Data Types and Values  
  The following table describes the results of various combinations of specifying the data type and initializer in a `Dim` statement.  
@@ -341,7 +341,7 @@ Dim twoDimensions(,) As Integer = {{0, 1, 2}, {10, 11, 12}}
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
  [Compile Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic)   
  [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)   
+ [Arrays](../../../visual-basic/programming-guide/language-features/arrays/arrays.md)   
  [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)   
  [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)   
  [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)   

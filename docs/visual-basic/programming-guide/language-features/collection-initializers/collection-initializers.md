@@ -40,7 +40,7 @@ translation.priority.ht:
   
  For more information about collections, see [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b).  
   
- You identify a collection initializer by using the `From` keyword followed by braces (`{}`). This is similar to the array literal syntax that is described in [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md). The following examples show various ways to use collection initializers to create collections.  
+ You identify a collection initializer by using the `From` keyword followed by braces (`{}`). This is similar to the array literal syntax that is described in [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/arrays.md). The following examples show various ways to use collection initializers to create collections.  
   
  [!code-vb[VbVbalrCollectionInitializers#1](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_1.vb)]  
   
@@ -100,7 +100,7 @@ translation.priority.ht:
   
 ## See Also  
  [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)   
- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)   
+ [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/arrays.md)   
  [Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)   
  [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)   
  [Auto-Implemented Properties](../../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)   

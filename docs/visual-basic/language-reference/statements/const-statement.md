@@ -129,6 +129,6 @@ Const constantlist
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   
  [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)   
  [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)   
- [Constants and Enumerations](../../../visual-basic/programming-guide/language-features/constants-enums/index.md)   
+ [Constants and Enumerations](../../../visual-basic/programming-guide/language-features/constants-enums/constants-and-enumerations.md)   
  [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)   
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)

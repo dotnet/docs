@@ -25,7 +25,7 @@ translation.priority.mt:
 # Collections (Visual Basic)
 For many applications, you want to create and manage groups of related objects. There are two ways to group objects: by creating arrays of objects, and by creating collections of objects.  
   
- Arrays are most useful for creating and working with a fixed number of strongly-typed objects. For information about arrays, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
+ Arrays are most useful for creating and working with a fixed number of strongly-typed objects. For information about arrays, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/arrays.md).  
   
  Collections provide a more flexible way to work with groups of objects. Unlike arrays, the group of objects you work with can grow and shrink dynamically as the needs of the application change. For some collections, you can assign a key to any object that you put into the collection so that you can quickly retrieve the object by using the key.  
   
@@ -81,7 +81,7 @@ Next
 'Output: chinook coho pink sockeye  
 ```  
   
- If the contents of a collection are known in advance, you can use a *collection initializer* to initialize the collection. For more information, see [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md).  
+ If the contents of a collection are known in advance, you can use a *collection initializer* to initialize the collection. For more information, see [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/collection-initializers.md).  
   
  The following example is the same as the previous example, except a collection initializer is used to add elements to the collection.  
   
@@ -584,7 +584,7 @@ End Function
 ```  
   
 ## See Also  
- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)   
+ [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/collection-initializers.md)   
  [Programming Concepts (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
  [LINQ to Objects (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)   

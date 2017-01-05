@@ -188,7 +188,7 @@ public class Person
 The example above uses the *String Interpolation* syntax to create
 the formatted string for the full name.
 
-You can also use *Expression Bodied Members*, which provides a more
+You can also use *Expression-bodied Members*, which provides a more
 succinct way to create the computed `FullName` property:
 
 ```cs
@@ -210,7 +210,7 @@ public class Person
 }
 ```
  
-*Expression Bodied Members* use the *lambda expression* syntax to
+*Expression-bodied Members* use the *lambda expression* syntax to
 define a method that contain a single expression. Here, that
 expression returns the full name for the person object.
 

@@ -58,7 +58,7 @@ namespace PatternMatching
                 case Circle c when c.Radius == 0:
                     return 0;
 
-                case Square s when s.Side < 5:
+                case Square s:
                     return ComputeAreaOfSquare(s);
                 case Circle c:
                     return ComputeAreaOfCircle(c);
@@ -108,7 +108,7 @@ namespace PatternMatching
                 case Rectangle r when r.Length == 0 || r.Height == 0:
                     return 0;
 
-                case Square s when s.Side < 5:
+                case Square s:
                     return ComputeAreaOfSquare(s);
                 case Circle c:
                     return ComputeAreaOfCircle(c);

@@ -1,5 +1,5 @@
 ---
-title: "- Operator (Visual Basic) | Microsoft Docs"
+title: "\\ Operator (Visual Basic) | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -10,8 +10,8 @@ ms.technology:
 
 ms.topic: "article"
 f1_keywords: 
-  - "vb.\"
-  - "\"
+  - "vb.\\"
+  - "\\"
 dev_langs: 
   - "VB"
 helpviewer_keywords: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "zero, division by zero"
   - "arithmetic operators, division"
   - "division, by zero"
-  - "backslash (\) [Visual Basic]"
-  - "\ operator [Visual Basic]"
+  - "backslash (\\) [Visual Basic]"
+  - "\\ operator [Visual Basic]"
   - "integer quotient"
   - "math operators"
   - "quotients, integer"
@@ -92,7 +92,7 @@ expression1 \ expression2
  The expressions in the preceding example return values of 2, 3, 33, and -22, respectively.  
   
 ## See Also  
- [\\= Operator](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)   
+ [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)   
  [/ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
  [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)   

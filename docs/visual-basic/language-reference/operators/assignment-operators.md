@@ -47,11 +47,11 @@ The following are the assignment operators defined in Visual Basic.
   
  [/= Operator](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)  
   
- [\\= Operator](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)  
+ [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)  
   
  [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
   
- [-= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)  
+ [-= Operator](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)  
   
  [<\<= Operator](../../../visual-basic/language-reference/operators/left-shift-assignment-operator.md)  
   

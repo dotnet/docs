@@ -57,11 +57,11 @@ And here's what basic [string](language-reference/strings.md) manipulation looks
 
 [!code-fsharp[Tuples](../../samples/snippets/fsharp/tour.fs#L186-L203)]
 
-As of F# 4.1, you can also create `struct` tuples.  These also interoperate fully with C#7/VB15 tuples, which are also `struct`s:
+As of F# 4.1, you can also create `struct` tuples.  These also interoperate fully with C#7/Visual Basic 15 tuples, which are also `struct` tuples:
 
 [!code-fsharp[Tuples](../../samples/snippets/fsharp/tour.fs#L205-L218)]
 
-It's important to note that because `struct` tuples are value types, they are cannot be implicitly converted to reference tuples, or vice/versa.  You must explicitly convert between a reference and struct tuple.
+It's important to note that because `struct` tuples are value types, they are cannot be implicitly converted to reference tuples, or vice versa.  You must explicitly convert between a reference and struct tuple.
 
 ## Pipelines and Composition
 
@@ -157,7 +157,7 @@ Something you may have noticed is the use of the `_` pattern.  This is known as 
 
 One special case of Discriminated Union types is the Option Type, which is so useful that it's a part of the F# core library.
 
-[The Option Type](language-reference/options.md) is a type which represents one of two cases: a value, or nothing at all.  It is used in any scenario where a value may or may not result from a particular operation.  This then forces you to account for both cases, making it a compile-time concern rather than a runtime concern.  These are often used in APIs where `null` is used to represent "nothing" instead, thus eliminating the need to worry about `NulReferenceException` in many circumstances.
+[The Option Type](language-reference/options.md) is a type which represents one of two cases: a value, or nothing at all.  It is used in any scenario where a value may or may not result from a particular operation.  This then forces you to account for both cases, making it a compile-time concern rather than a runtime concern.  These are often used in APIs where `null` is used to represent "nothing" instead, thus eliminating the need to worry about `NullReferenceException` in many circumstances.
 
 [!code-fsharp[Options](../../samples/snippets/fsharp/tour.fs#L791-L811)]
 

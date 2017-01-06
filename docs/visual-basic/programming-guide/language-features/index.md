@@ -57,7 +57,7 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Data Types](../../../visual-basic/programming-guide/language-features/data-types/toc.md)  
  Describes what kinds of data a programming element can hold and how that data is stored.  
   
- [Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/index.md)  
+ [Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/toc.md)  
  Covers programming elements you can declare, their names and characteristics, and how the compiler resolves references to them.  
   
  [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)  

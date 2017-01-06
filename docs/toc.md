@@ -538,11 +538,7 @@
 ### [Control Flow](visual-basic/programming-guide/language-features/control-flow/toc.md)
 ### [Data Types](visual-basic/programming-guide/language-features/data-types/toc.md)
 ### [Declared Elements](visual-basic/programming-guide/language-features/declared-elements/toc.md)
-
-### [Delegates](visual-basic/programming-guide/language-features/delegates/delegates.md)
-#### [How to: Invoke a Delegate Method](visual-basic/programming-guide/language-features/delegates/how-to-invoke-a-delegate-method.md)
-#### [How to: Pass Procedures to Another Procedure](visual-basic/programming-guide/language-features/delegates/how-to-pass-procedures-to-another-procedure.md)
-#### [Relaxed Delegate Conversion](visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
+### [Delegates](visual-basic/programming-guide/language-features/delegates/toc.md)
 
 ### [Early and Late Binding](visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)
 #### [Determining Object Type](visual-basic/programming-guide/language-features/early-late-binding/determining-object-type.md)

@@ -60,7 +60,7 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/toc.md)  
  Covers programming elements you can declare, their names and characteristics, and how the compiler resolves references to them.  
   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)  
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/toc.md)  
  Provides an introduction to delegates and how they are used in Visual Basic.  
   
  [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)  

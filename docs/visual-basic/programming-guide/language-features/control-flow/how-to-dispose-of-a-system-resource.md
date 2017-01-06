@@ -68,7 +68,7 @@ You can use a `Using` block to guarantee that the system disposes of a resource 
   
 ## See Also  
  <xref:System.Data.SqlClient.SqlConnection>   
- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)   
+ [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/control-flow.md)   
  [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)   
  [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   
  [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)   

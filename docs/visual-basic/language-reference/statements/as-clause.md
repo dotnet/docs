@@ -83,7 +83,7 @@ Introduces an `As` clause, which identifies a data type in a declaration stateme
   
 ## See Also  
  [How to: Create a New Variable](../../../visual-basic/programming-guide/language-features/variables/how-to-create-a-new-variable.md)   
- [Data Types](../../../visual-basic/programming-guide/language-features/data-types/index.md)   
+ [Data Types](../../../visual-basic/programming-guide/language-features/data-types/data-types.md)   
  [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
  [Type List](../../../visual-basic/language-reference/statements/type-list.md)   
  [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   

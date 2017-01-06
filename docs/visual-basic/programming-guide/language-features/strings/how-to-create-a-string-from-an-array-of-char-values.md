@@ -51,4 +51,4 @@ This example creates the string "abcd" from individual characters.
 ## See Also  
  <xref:System.String>   
  [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md)   
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/data-types.md)

@@ -192,11 +192,11 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [x += y](../../../csharp/language-reference/operators/addition-assignment-operator.md) – increment.  Add the value of `y` to the value of `x`, store the result in `x`, and return the new value.  If `x` designates an `event`, then `y` must be an appropriate function that C# adds as an event handler.  
   
- [x -= y](../../../csharp/language-reference/operators/subtraction-assignment-operator-1.md) – decrement.  Subtract the value of `y` from the value of `x`, store the result in `x`, and return the new value.  If `x` designates an `event`, then `y` must be an appropriate function that C# removes as an event handler  
+ [x -= y](../../../csharp/language-reference/operators/subtraction-assignment-operator.md) – decrement.  Subtract the value of `y` from the value of `x`, store the result in `x`, and return the new value.  If `x` designates an `event`, then `y` must be an appropriate function that C# removes as an event handler  
   
  [x *= y](../../../csharp/language-reference/operators/multiplication-assignment-operator.md) – multiplication assignment.  Multiply the value of `y` to the value of `x`, store the result in `x`, and return the new value.  
   
- [x /= y](../../../csharp/language-reference/operators/subtraction-assignment-operator.md) – division assignment.  Divide the value of `x` by the value of `y`, store the result in `x`, and return the new value.  
+ [x /= y](../../../csharp/language-reference/operators/division-assignment-operator.md) – division assignment.  Divide the value of `x` by the value of `y`, store the result in `x`, and return the new value.  
   
  [x %= y](../../../csharp/language-reference/operators/modulus-assignment-operator.md) – modulus assignment.  Divide the value of `x` by the value of `y`, store the remainder in `x`, and return the new value.  
   

@@ -80,7 +80,7 @@ Dim arrayE( , ) As Short = New Short(4, 10) {}
  For more information on classes, see [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md).  
   
 ## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/data-types.md)   
  [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)   
  [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   

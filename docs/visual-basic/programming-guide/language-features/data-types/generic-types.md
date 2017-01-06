@@ -171,7 +171,7 @@ Screwdriver set as a generic tool
 -   *Constructed Type*. A class, structure, interface, procedure, or delegate declared from a generic type by supplying type arguments for its type parameters.  
   
 ## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/data-types.md)   
  [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)   
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
  [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   

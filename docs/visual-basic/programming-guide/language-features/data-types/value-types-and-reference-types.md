@@ -100,4 +100,4 @@ Dim totals() As Single = New Single(8) {}
  [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)   
  [Efficient Use of Data Types](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)   
  [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)   
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/data-types.md)

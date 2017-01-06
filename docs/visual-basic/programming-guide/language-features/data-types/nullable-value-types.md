@@ -123,7 +123,7 @@ Sometimes you work with a value type that does not have a defined value in certa
  <xref:System.InvalidOperationException>   
  <xref:System.Nullable%601.HasValue%2A>   
  [Using Nullable Types](../../../../csharp/programming-guide/nullable-types/using-nullable-types.md)   
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/data-types.md)   
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
  [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
  [TableAdapter Overview](https://docs.microsoft.com/visualstudio/data-tools/tableadapter-overview)   

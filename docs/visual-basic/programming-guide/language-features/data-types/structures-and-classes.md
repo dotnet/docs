@@ -109,7 +109,7 @@ translation.priority.ht:
 -   **Equality.** Equality testing of two structures must be performed with an element-by-element test. Two object variables can be compared using the <xref:System.Object.Equals%2A> method. <xref:System.Object.Equals%2A> indicates whether the two variables point to the same instance.  
   
 ## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/data-types.md)   
  [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)   
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
  [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)   

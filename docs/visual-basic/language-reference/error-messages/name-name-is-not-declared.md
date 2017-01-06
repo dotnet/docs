@@ -47,7 +47,7 @@ A statement refers to a programming element, but the compiler cannot find an ele
   
 2.  Check that you have the member access operator (`.`) between an object and its member. For example, if you have a <xref:System.Windows.Forms.TextBox> control named `TextBox1`, to access its <xref:System.Windows.Forms.TextBoxBase.Text%2A> property you should type `TextBox1.Text`. If instead you type `TextBox1Text`, you have created a different name.  
   
-3.  If the spelling is correct and the syntax of any object member access is correct, verify that the element has been declared. For more information, see [Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/index.md).  
+3.  If the spelling is correct and the syntax of any object member access is correct, verify that the element has been declared. For more information, see [Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/declared-elements.md).  
   
 4.  If the programming element has been declared, check that it is in scope. If the referring statement is outside the region declaring the programming element, you might need to qualify the element name. For more information, see [Scope in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/scope.md).  
   

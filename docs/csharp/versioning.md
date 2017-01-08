@@ -4,7 +4,7 @@ description: Understand how versioning works in C# and .NET
 keywords: .NET, .NET Core, C#
 author: tsolarin
 manager: wpickett
-ms.date: 2016/12/03
+ms.date: 01/08/2017
 ms.topic: article
 ms.prod: visual-studio-dev-14
 ms.technology: devlang-csharp
@@ -46,7 +46,7 @@ A new version of your library is binary compatible if an application that depend
 Here are some things to consider when trying to maintain backwards compatibility with older versions of your library:
 
 * Virtual methods: When you make a virtual method non-virtual in your new version it means that projects that override that method
-will have to be updated.
+will have to be updated. This is a huge breaking change and is strongly discouraged.
 * Method signatures: When updating a method behaviour requires you to change its signature as well, you should instead create an overload so that code calling into that method will still work.
 You can always manipulate the old method signature to call into the new method signature so that implementation remains consistent.
 * [Obsolete attribute](programming-guide/concepts/attributes/common-attributes.md#Obsolete): You can use this attribute in your code to specify classes or class members that are deprecated and likely to be removed in future versions.
@@ -90,8 +90,7 @@ your app's `app.config` file to use the `1.0.1` patch version of `ReferencedLibr
 
 ### new
 
-You use the `new` modifier to hide inherited members of a base class.
-This makes your derived classes immune to changes made to the inherited members of the base class
+You use the `new` modifier to hide inherited members of a base class. This is one way derived classes can respond to updates in base classes.
 
 Take the following example:
 
@@ -114,8 +113,8 @@ makes that new version of your library both source and binary compatible with co
 
 ### override
 
-The `override` modifier is the opposite of the `new` modifier, it extends the implementation of a base class member rather than
-hides it, also the base class member needs to have the `virtual` modifier applied to it.
+The `override` modifier means a derived implementation extends the implementation of a base class member rather than
+hides it. The base class member needs to have the `virtual` modifier applied to it.
 
 [!code-csharp[Sample usage of the 'override' modifier](../../samples/csharp/versioning/override/Program.cs#sample)]
 

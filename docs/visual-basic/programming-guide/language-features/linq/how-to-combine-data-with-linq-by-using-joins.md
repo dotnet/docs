@@ -102,7 +102,7 @@ Visual Basic provides the `Join` and `Group Join` query clauses to enable you to
 2.  Press F5 to run the examples.  
   
 ## See Also  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
+ [LINQ](../../../../visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)   
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   
  [Join Clause](../../../../visual-basic/language-reference/queries/join-clause.md)   
  [Group Join Clause](../../../../visual-basic/language-reference/queries/group-join-clause.md)   

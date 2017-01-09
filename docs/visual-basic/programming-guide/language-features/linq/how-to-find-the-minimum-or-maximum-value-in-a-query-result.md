@@ -99,7 +99,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
 4.  Press F5 to run your project and view the results.  
   
 ## See Also  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
+ [LINQ](../../../../visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)   
  [Queries](../../../../visual-basic/language-reference/queries/queries.md)   
  [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)   
  [DataContext Methods (O/R Designer)](https://docs.microsoft.com/visualstudio/data-tools/datacontext-methods-o-r-designer)

@@ -540,14 +540,9 @@
 ### [Declared Elements](visual-basic/programming-guide/language-features/declared-elements/toc.md)
 ### [Delegates](visual-basic/programming-guide/language-features/delegates/toc.md)
 ### [Early and Late Binding](visual-basic/programming-guide/language-features/early-late-binding/toc.md)
-
 ### [Error Types](visual-basic/programming-guide/language-features/error-types.md)
-### [Events](visual-basic/programming-guide/language-features/events/events.md)
-#### [Walkthrough: Declaring and Raising Events](visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)
-#### [Walkthrough: Handling Events](visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)
-#### [How to: Declare Custom Events To Avoid Blocking](visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)
-#### [How to: Declare Custom Events To Conserve Memory](visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)
-#### [Troubleshooting Inherited Event Handlers](visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)
+### [Events](visual-basic/programming-guide/language-features/events/toc.md)
+
 ### [Interfaces](visual-basic/programming-guide/language-features/interfaces/index.md)
 #### [Walkthrough: Creating and Implementing Interfaces](visual-basic/programming-guide/language-features/interfaces/walkthrough-creating-and-implementing-interfaces.md)
 ### [LINQ](visual-basic/programming-guide/language-features/linq/index.md)

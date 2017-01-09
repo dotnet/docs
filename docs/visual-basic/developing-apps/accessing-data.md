@@ -44,7 +44,7 @@ translation.priority.ht:
  [Overview of Data Applications in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/overview-of-data-applications-in-visual-studio)  
  Provides links to pages on creating applications that work with data, using [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
   
- [LINQ](../../visual-basic/programming-guide/language-features/linq/index.md)  
+ [LINQ](../../visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)  
  Provides links to topics that describe how to use LINQ with Visual Basic.  
   
  [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  

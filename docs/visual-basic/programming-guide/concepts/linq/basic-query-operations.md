@@ -180,4 +180,4 @@ Where cust.City = "London" Or cust.City = "Paris"
  [Getting Started with LINQ in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)   
  [Queries](../../../../visual-basic/language-reference/queries/queries.md)   
  [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)   
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+ [LINQ](../../../../visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)

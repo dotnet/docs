@@ -172,5 +172,5 @@ This walkthrough demonstrates how you can use Visual Basic language features to 
  [Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)   
  [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)   
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
+ [LINQ](../../../../visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)   
  [Queries](../../../../visual-basic/language-reference/queries/queries.md)

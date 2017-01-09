@@ -60,7 +60,7 @@ Expression of type \<type> is not queryable. Make sure you are not missing an as
  <xref:System.Data.Linq>   
  <xref:System.Xml.Linq>   
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   
- [LINQ](../../../visual-basic/programming-guide/language-features/linq/index.md)   
+ [LINQ](../../../visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)   
  [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)   
  [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)   
  [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)   

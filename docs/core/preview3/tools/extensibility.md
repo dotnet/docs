@@ -95,7 +95,7 @@ your code, information about its dependencies and so on. The package name can be
 application inside, the actual tool binary, has to conform to the convention of `dotnet-<command>` in order for `dotnet` 
 to be able to invoke it. 
 
-In Preview 3 bits, the `dotnet pack` command will not pack the `runtimeconfig.json` file that is needed to run the tool. In order to package the this file, you have two options:
+In Preview 3 bits, the `dotnet pack` command will not pack the `runtimeconfig.json` file that is needed to run the tool. In order to package this file, you have two options:
 
 1. Create a `nuspec` file and use `dotnet nuget pack` command newly available to Preview 3 CLI to include the file
 2. Use the new `<Content>` element in an `<ItemGroup>` in your project file to include the file manually

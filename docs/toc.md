@@ -544,7 +544,7 @@
 ### [Events](visual-basic/programming-guide/language-features/events/toc.md)
 ### [Interfaces](visual-basic/programming-guide/language-features/interfaces/index.md)
 #### [Walkthrough: Creating and Implementing Interfaces](visual-basic/programming-guide/language-features/interfaces/walkthrough-creating-and-implementing-interfaces.md)
-### [LINQ](visual-basic/programming-guide/language-features/linq/toc.md)
+### [LINQ](visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)
 ### [Objects and Classes](visual-basic/programming-guide/language-features/objects-and-classes/toc.md)
 ### [Operators and Expressions](visual-basic/programming-guide/language-features/operators-and-expressions/toc.md)
 

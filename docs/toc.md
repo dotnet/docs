@@ -539,11 +539,8 @@
 ### [Data Types](visual-basic/programming-guide/language-features/data-types/toc.md)
 ### [Declared Elements](visual-basic/programming-guide/language-features/declared-elements/toc.md)
 ### [Delegates](visual-basic/programming-guide/language-features/delegates/toc.md)
+### [Early and Late Binding](visual-basic/programming-guide/language-features/early-late-binding/toc.md)
 
-### [Early and Late Binding](visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)
-#### [Determining Object Type](visual-basic/programming-guide/language-features/early-late-binding/determining-object-type.md)
-#### [Calling a Property or Method Using a String Name](visual-basic/programming-guide/language-features/early-late-binding/calling-a-property-or-method-using-a-string-name.md)
-#### [Working with Dynamic Objects](visual-basic/programming-guide/language-features/early-late-binding/working-with-dynamic-objects.md)
 ### [Error Types](visual-basic/programming-guide/language-features/error-types.md)
 ### [Events](visual-basic/programming-guide/language-features/events/events.md)
 #### [Walkthrough: Declaring and Raising Events](visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)

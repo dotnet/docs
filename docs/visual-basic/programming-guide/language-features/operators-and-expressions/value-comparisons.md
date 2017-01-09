@@ -68,7 +68,7 @@ Comparison operators can be used to construct expressions that compare the value
   
 ## See Also  
  [Boolean Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)   
- [Operators and Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)   
+ [Operators and Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/operators-and-expressions.md)   
  [Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)   
  [How to: Calculate Numeric Values](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/how-to-calculate-numeric-values.md)   
  [Operator Precedence in Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md)

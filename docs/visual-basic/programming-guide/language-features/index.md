@@ -81,7 +81,7 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/toc.md)  
  Provides an overview of objects and classes, how they are used, their relationships to each other, and the properties, methods, and events they expose.  
   
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
+ [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/toc.md)  
  Describes the code elements that manipulate value-holding elements, how to use them efficiently, and how to combine them to yield new values.  
   
  [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)  

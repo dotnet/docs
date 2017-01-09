@@ -1,5 +1,5 @@
 ---
-title: "-= Operator (Visual Basic) | Microsoft Docs"
+title: "/= Operator (Visual Basic) | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -73,7 +73,7 @@ variableorproperty /= expression
   
 ## See Also  
  [/ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)   
- [\\= Operator](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)   
+ [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)   
  [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)   
  [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)   
  [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   

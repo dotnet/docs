@@ -186,6 +186,6 @@ A statement in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq
 |Term|Definition|  
 |---|---|  
 |[Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)|Provides links to language reference pages covering assignment operators such as `=`, `*=`, and `&=`.|  
-|[Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)|Shows how to combine elements with operators to yield new values.|  
+|[Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/operators-and-expressions.md)|Shows how to combine elements with operators to yield new values.|  
 |[How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)|Shows how to break a single statement into multiple lines and how to place multiple statements on the same line.|  
 |[How to: Label Statements](../../../visual-basic/programming-guide/program-structure/how-to-label-statements.md)|Shows how to label a line of code.|

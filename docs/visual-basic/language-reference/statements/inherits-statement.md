@@ -88,6 +88,6 @@ Inherits basetypenames
 ## See Also  
  [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)   
  [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)   
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
+ [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md)   
  [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)   
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

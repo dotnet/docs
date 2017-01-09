@@ -122,4 +122,4 @@ End Class
  [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)   
  [ReadOnly](../../../../visual-basic/language-reference/modifiers/readonly.md)   
  [WriteOnly](../../../../visual-basic/language-reference/modifiers/writeonly.md)   
- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+ [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md)

@@ -91,4 +91,4 @@ A *procedure* is a block of [!INCLUDE[vbprvb](../../../../csharp/programming-gui
  [Recursive Procedures](./recursive-procedures.md)   
  [Procedure Overloading](./procedure-overloading.md)   
  [Generic Procedures in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md)   
- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+ [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md)

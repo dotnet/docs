@@ -108,5 +108,5 @@ End Get
  [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)   
  [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)   
  [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)   
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
+ [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md)   
  [Walkthrough: Defining Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/walkthrough-defining-classes.md)

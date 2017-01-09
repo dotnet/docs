@@ -77,7 +77,7 @@ Dim arrayE( , ) As Short = New Short(4, 10) {}
 ## Class Types  
  There is no single data type comprising all classes. Although one class can inherit from another class, each is a separate data type. Multiple instances of the same class are of the same data type. If you assign one class instance variable to another, not only do they have the same data type, they point to the same class instance in memory.  
   
- For more information on classes, see [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md).  
+ For more information on classes, see [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md).  
   
 ## See Also  
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/data-types.md)   

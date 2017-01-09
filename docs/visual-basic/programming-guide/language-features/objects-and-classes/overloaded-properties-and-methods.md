@@ -98,7 +98,7 @@ Overloading is the creation of more than one procedure, instance constructor, or
  At run time, the compiler chooses the appropriate overloaded function that matches the parameters being used. When you click the button, the overloaded method is called first with a `Price` parameter that is a string and the message, "Price is a String. Tax is $5.12" is displayed. `TaxAmount` is called with a `Decimal` value the second time and the message, "Price is a Decimal. Tax is $5.12" is displayed.  
   
 ## See Also  
- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
+ [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md)   
  [Shadowing in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)   
  [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)   
  [Inheritance Basics](../../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)   

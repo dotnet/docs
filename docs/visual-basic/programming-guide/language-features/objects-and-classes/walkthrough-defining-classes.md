@@ -102,4 +102,4 @@ This walkthrough demonstrates how to define classes, which you can then use to c
   
 ## See Also  
  [Object-Oriented Programming](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)   
- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+ [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md)

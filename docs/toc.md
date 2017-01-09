@@ -311,7 +311,8 @@
 #### [Summary](csharp/expression-trees-summary.md)
 ### [Native interoperability](csharp/programming-guide/interop/interoperability.md)
 ### [🔧 Reflection & code generation](csharp/reflection.md)
-### [Documenting your code](csharp/codedoc.md) 
+### [Documenting your code](csharp/codedoc.md)
+### [Versioning](csharp/versioning.md)
 ## [🔧 Using the .NET Compiler Platform](csharp/roslyn/index.md)
 
 ## [C# Programming Guide](csharp/programming-guide/index.md)

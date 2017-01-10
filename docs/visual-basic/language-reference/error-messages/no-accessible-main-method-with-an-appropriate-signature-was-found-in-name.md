@@ -50,4 +50,4 @@ Command-line applications must have a `Sub Main` defined. `Main` must be declare
 ## See Also  
  [NIB: Visual Basic Version of Hello, World](http://msdn.microsoft.com/en-us/9d030b60-e148-4366-a462-69532f02294c)   
  [Structure of a Visual Basic Program](../../../visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)   
- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)
+ [Procedures](../../../visual-basic/programming-guide/language-features/procedures/procedures.md)

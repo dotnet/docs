@@ -21,7 +21,7 @@ productivity for developers. Features in this release include:
     - You can create read-only auto-properties that can be set only in constructors.
 * [Auto-Property Initializers](#auto-property-initializers):
     - You can write initialization expressions to set the initial value of an auto-property.
-* [Expression Bodied function members](#expression-bodied-function-members):
+* [Expression-bodied function members](#expression-bodied-function-members):
     - You can author one-line methods using lambda expressions.
 * [using static](#using-static):
     - You can import all the methods of a single class into the current namespace.
@@ -135,17 +135,17 @@ as read only properties, as shown here.
 
 [!code-csharp[ReadWriteInitialization](../../samples/snippets/csharp/new-in-6/newcode.cs#ReadWriteInitialization)]
 
-## Expression bodied function members
+## Expression-bodied function members
 
 The body of a lot of members that we write consist of only one statement
 that can be represented as an expression. You can reduce that syntax by
-writing an expression bodied member instead. It works for methods and
+writing an expression-bodied member instead. It works for methods and
 read-only properties." For example, an override of `ToString()` is often
 a great candidate:
 
 [!code-csharp[ToStringExpressionMember](../../samples/snippets/csharp/new-in-6/newcode.cs#ToStringExpressionMember)]
 
-You can also use expression bodied members in read only properties as well:
+You can also use expression-bodied members in read only properties as well:
 
 [!code-csharp[FullNameExpressionMember](../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
 

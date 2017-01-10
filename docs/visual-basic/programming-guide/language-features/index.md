@@ -42,55 +42,55 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  If you are new to programming, the material in this section serves as an introduction to the basic building blocks for writing code. Once you understand the basics, you can create powerful applications using [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
   
 ## In This Section  
- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/toc.md)  
+ [Arrays](../../../visual-basic/programming-guide/language-features/arrays/arrays.md)  
  Discusses making your code more compact and powerful by declaring and using arrays, which hold multiple related values.  
   
- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/toc.md)  
+ [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/collection-initializers.md)  
  Describes collection initializers, which enable you to create a collection and populate it with an initial set of values.  
   
- [Constants and Enumerations](../../../visual-basic/programming-guide/language-features/constants-enums/toc.md)  
+ [Constants and Enumerations](../../../visual-basic/programming-guide/language-features/constants-enums/constants-and-enumerations.md)  
  Discusses storing unchanging values for repeated use, including sets of related constant values.  
   
- [Control Flow](../../../visual-basic/programming-guide/language-features/control-flow/toc.md)  
+ [Control Flow](../../../visual-basic/programming-guide/language-features/control-flow/control-flow.md)  
  Shows how to regulate the flow of your program's execution.  
   
- [Data Types](../../../visual-basic/programming-guide/language-features/data-types/toc.md)  
+ [Data Types](../../../visual-basic/programming-guide/language-features/data-types/data-types.md)  
  Describes what kinds of data a programming element can hold and how that data is stored.  
   
- [Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/toc.md)  
+ [Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/declared-elements.md)  
  Covers programming elements you can declare, their names and characteristics, and how the compiler resolves references to them.  
   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/toc.md)  
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)  
  Provides an introduction to delegates and how they are used in Visual Basic.  
   
- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/toc.md)  
+ [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)  
  Describes binding, which is performed by the compiler when an object is assigned to an object variable, and the differences between early-bound and late-bound objects.  
   
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)  
  Provides an overview of syntax errors, run-time errors, and logic errors.  
   
- [Events](../../../visual-basic/programming-guide/language-features/events/toc.md)  
+ [Events](../../../visual-basic/programming-guide/language-features/events/events.md)  
  Shows how to declare and use events.  
   
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)  
  Describes what interfaces are and how you can use them in your applications.  
   
- [LINQ](../../../visual-basic/programming-guide/language-features/linq/toc.md)  
+ [LINQ](../../../visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)  
  Provides links to topics that introduce [!INCLUDE[vbteclinqext](../../../csharp/getting-started/includes/vbteclinqext_md.md)] features and programming.  
   
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/toc.md)  
+ [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md)  
  Provides an overview of objects and classes, how they are used, their relationships to each other, and the properties, methods, and events they expose.  
   
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/toc.md)  
+ [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/operators-and-expressions.md)  
  Describes the code elements that manipulate value-holding elements, how to use them efficiently, and how to combine them to yield new values.  
   
- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/toc.md)  
+ [Procedures](../../../visual-basic/programming-guide/language-features/procedures/procedures.md)  
  Describes `Sub`, `Function`, `Property`, and `Operator` procedures, as well as advanced topics such as recursive and overloaded procedures.  
   
  [Statements](../../../visual-basic/programming-guide/language-features/statements.md)  
  Describes declaration and executable statements.  
   
- [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md)  
+ [Strings](../../../visual-basic/programming-guide/language-features/strings/strings.md)  
  Provides links to topics that describe the basic concepts about using strings in Visual Basic.  
   
  [Variables](../../../visual-basic/programming-guide/language-features/variables/index.md)  

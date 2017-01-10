@@ -551,7 +551,7 @@
 ### [Statements](visual-basic/programming-guide/language-features/statements.md)
 ### [Strings](visual-basic/programming-guide/language-features/strings/strings.md)
 
-## [Variables](visual-basic/programming-guide/language-features/variables/index.md)
+### [Variables](visual-basic/programming-guide/language-features/variables/index.md)
 #### [Variable Declaration](visual-basic/programming-guide/language-features/variables/variable-declaration.md)
 ##### [How to: Create a New Variable](visual-basic/programming-guide/language-features/variables/how-to-create-a-new-variable.md)
 ##### [How to: Create a Variable that Does Not Change in Value](visual-basic/programming-guide/language-features/variables/how-to-create-a-variable-that-does-not-change-in-value.md)

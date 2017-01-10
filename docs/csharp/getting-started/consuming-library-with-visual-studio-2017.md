@@ -40,7 +40,7 @@ Just as we included unit tests in the same solution as our class library, we can
 
    ![Image](./media/add-lib-ref.jpg)
 
-1. In the code window for the 'progran.cs' file, replace all of the code with the following code:
+1. In the code window for the 'program.cs' file, replace all of the code with the following code:
 
  [!CODE-csharp[UsingClassLib#1](../../../samples/snippets/csharp/getting_started/with_visual_studio_2017/showcase.cs#1)]
 
@@ -66,7 +66,8 @@ You can make your class library more widely available by publishing it as a NuGe
 
 1. Issue the command `dotnet.exe pack --no-build`. The `dotnet.exe` utility generates a package with a .nupkg extension.
 
-   [!TIP] If the directory that contains `dotnet.exe` is not in your path, you can find its location by entering `where dotnet.exe` in the console window.
+   > [!TIP]
+   > If the directory that contains `dotnet.exe` is not in your path, you can find its location by entering `where dotnet.exe` in the console window.
 
 For more information on creating NuGet packages, see [How to Create a NuGet Package with Cross Platform Tools](../../core/deploying/creating-nuget-packages.md).
 

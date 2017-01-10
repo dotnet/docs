@@ -176,7 +176,7 @@ End Class
      [!code-vb[VbVbalrLambdas#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_10.vb)]  
   
 ## See Also  
- [Procedures](./index.md)   
+ [Procedures](./procedures.md)   
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   
  [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
  [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)   

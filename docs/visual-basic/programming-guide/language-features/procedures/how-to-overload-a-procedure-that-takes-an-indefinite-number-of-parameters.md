@@ -76,7 +76,7 @@ If a procedure has a [ParamArray](../../../../visual-basic/language-reference/mo
  Whenever you deal with an array which can be indefinitely large, there is a risk of overrunning some internal capacity of your application. If you accept a parameter array, you should test for the length of the array the calling code passed to it, and take appropriate steps if it is too large for your application.  
   
 ## See Also  
- [Procedures](./index.md)   
+ [Procedures](./procedures.md)   
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
  [Optional Parameters](./optional-parameters.md)   
  [Parameter Arrays](./parameter-arrays.md)   

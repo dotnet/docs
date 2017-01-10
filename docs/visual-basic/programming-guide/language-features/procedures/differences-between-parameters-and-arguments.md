@@ -60,7 +60,7 @@ In most cases, a procedure must have some information about the circumstances in
  In contrast to parameter definition, arguments do not have names. Each argument is an expression, which can contain zero or more variables, constants, and literals. The data type of the evaluated expression should typically match the data type defined for the corresponding parameter, and in any case it must be convertible to the parameter type.  
   
 ## See Also  
- [Procedures](./index.md)   
+ [Procedures](./procedures.md)   
  [Sub Procedures](./sub-procedures.md)   
  [Function Procedures](./function-procedures.md)   
  [Property Procedures](./property-procedures.md)   

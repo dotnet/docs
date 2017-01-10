@@ -45,7 +45,7 @@ A `Sub` procedure is a series of [!INCLUDE[vbprvb](../../../../csharp/programmin
   
  Each time the procedure is called, its statements are executed, starting with the first executable statement after the `Sub` statement and ending with the first `End Sub`, `Exit Sub`, or `Return` statement encountered.  
   
- You can define a `Sub` procedure in modules, classes, and structures. By default, it is `Public`, which means you can call it from anywhere in your application that has access to the module, class, or structure in which you defined it. The term, *method*, describes a `Sub` or `Function` procedure that is accessed from outside its defining module, class, or structure. For more information, see [Procedures](./index.md).  
+ You can define a `Sub` procedure in modules, classes, and structures. By default, it is `Public`, which means you can call it from anywhere in your application that has access to the module, class, or structure in which you defined it. The term, *method*, describes a `Sub` or `Function` procedure that is accessed from outside its defining module, class, or structure. For more information, see [Procedures](./procedures.md).  
   
  A `Sub` procedure can take arguments, such as constants, variables, or expressions, which are passed to it by the calling code.  
   
@@ -95,7 +95,7 @@ A `Sub` procedure is a series of [!INCLUDE[vbprvb](../../../../csharp/programmin
  [!code-vb[VbVbcnProcedures#3](./codesnippet/VisualBasic/sub-procedures_2.vb)]  
   
 ## See Also  
- [Procedures](./index.md)   
+ [Procedures](./procedures.md)   
  [Function Procedures](./function-procedures.md)   
  [Property Procedures](./property-procedures.md)   
  [Operator Procedures](./operator-procedures.md)   

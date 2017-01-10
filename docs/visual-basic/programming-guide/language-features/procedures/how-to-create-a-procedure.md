@@ -76,7 +76,7 @@ You enclose a procedure between a starting declaration statement (`Sub` or `Func
  [!code-vb[VbVbcnProcedures#1](./codesnippet/VisualBasic/how-to-create-a-procedure_1.vb)]  
   
 ## See Also  
- [Procedures](./index.md)   
+ [Procedures](./procedures.md)   
  [Sub Procedures](./sub-procedures.md)   
  [Function Procedures](./function-procedures.md)   
  [Property Procedures](./property-procedures.md)   

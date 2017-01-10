@@ -57,7 +57,7 @@ If you want the `Get` and `Set` procedures on a property to have different acces
      In the preceding example, the `Get` procedure has the same `Protected` access as the property itself, while the `Set` procedure has `Private` access. A class derived from `employee` can read the `salary` value, but only the `employee` class can set it.  
   
 ## See Also  
- [Procedures](./index.md)   
+ [Procedures](./procedures.md)   
  [Property Procedures](./property-procedures.md)   
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
  [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)   

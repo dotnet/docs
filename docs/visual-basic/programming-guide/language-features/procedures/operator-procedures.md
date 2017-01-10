@@ -104,7 +104,7 @@ An operator procedure is a series of [!INCLUDE[vbprvb](../../../../csharp/progra
  For more information and examples, see [Operator Overloading in Visual Basic 2005](http://go.microsoft.com/fwlink/?LinkId=101703).  
   
 ## See Also  
- [Procedures](./index.md)   
+ [Procedures](./procedures.md)   
  [Sub Procedures](./sub-procedures.md)   
  [Function Procedures](./function-procedures.md)   
  [Property Procedures](./property-procedures.md)   

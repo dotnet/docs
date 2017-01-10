@@ -100,7 +100,7 @@ The *lifetime* of a declared element is the period of time during which it is av
  [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)   
  [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)   
  [Access Levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)   
+ [Variables](../../../../visual-basic/programming-guide/language-features/variables/variables.md)   
  [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
  [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
  [Static](../../../../visual-basic/language-reference/modifiers/static.md)

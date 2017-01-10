@@ -112,6 +112,6 @@ Public strMsg As String
  [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)   
  [Lifetime in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)   
  [Access Levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)   
+ [Variables](../../../../visual-basic/programming-guide/language-features/variables/variables.md)   
  [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
  [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)

@@ -94,5 +94,5 @@ Mid( _
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Strings.Mid%2A>   
- [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md)   
+ [Strings](../../../visual-basic/programming-guide/language-features/strings/strings.md)   
  [Introduction to Strings in Visual Basic](../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)

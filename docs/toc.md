@@ -139,7 +139,6 @@
 ### [Using MSBuild to build .NET Core projects](core/tutorials/target-dotnetcore-with-msbuild.md)
 ## [Packages, Metapackages and Frameworks](core/packages.md)
 ## [Application Deployment](core/deploying/index.md)
-### [🔧 Deploying Applications](core/deploying/applications.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
 ## [Docker](core/docker/index.md)
 ### [Building Docker Images for .NET Core Applications](core/docker/building-net-docker-images.md)

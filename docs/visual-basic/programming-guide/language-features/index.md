@@ -93,7 +93,7 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Strings](../../../visual-basic/programming-guide/language-features/strings/strings.md)  
  Provides links to topics that describe the basic concepts about using strings in Visual Basic.  
   
- [Variables](../../../visual-basic/programming-guide/language-features/variables/index.md)  
+ [Variables](../../../visual-basic/programming-guide/language-features/variables/variables.md)  
  Introduces variables and describes how to use them in Visual Basic.  
   
  [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)  

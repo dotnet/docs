@@ -72,6 +72,6 @@ You store a value in a variable by putting the variable name on the left side of
      The value of the variable participates in the expression just as a constant would, and then it is stored in the variable or property on the left side of the assignment statement.  
   
 ## See Also  
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)   
+ [Variables](../../../../visual-basic/programming-guide/language-features/variables/variables.md)   
  [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
  [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)

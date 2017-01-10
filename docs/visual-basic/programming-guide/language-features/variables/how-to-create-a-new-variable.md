@@ -79,7 +79,7 @@ You create a variable with a [Dim Statement](../../../../visual-basic/language-r
     ```  
   
 ## See Also  
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)   
+ [Variables](../../../../visual-basic/programming-guide/language-features/variables/variables.md)   
  [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
  [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)   
  [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)   

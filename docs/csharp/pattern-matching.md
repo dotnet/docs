@@ -13,27 +13,41 @@ ms.assetid: 1e575c32-2e2b-4425-9dca-7d118f3ed15b
 
 # Pattern Matching #
 
-Pattern matching provides a control flow mechanism that is much more
-generalized than is possible with traditional inheritance hierarchies
-available in Object Oriented practices.
+Patterns test that a value has a certain *shape*, and can *extract*
+information from the value when it has the matching shape. Pattern
+matching provides more concise syntax for algorithms you already use
+today. You already create pattern matching algorithms using existing
+syntax. You write `if` or `switch` statements that test values. Then,
+when those statements match, you extract and use information from that
+value. The new syntax elements are extensions to statements you are already
+familiar with: `is` and `switch`. These new extensions combine testing
+a value and extracting that information.
 
-You are probably familiar with building class hierarchies and creating
-[virtual methods and overridden methods](methods.md#inherited) to customize object behavior based
-on the runtime type of the object.
+In this topic, we'll look at the new syntax to show you how it enables
+readable, concise code. Pattern matching enables idioms you'll need more
+often building distributed systems, where data and the methods that manipulate
+that data are separate. 
+
+To illustrate these new idioms, let's work with structures that represent
+geometric shapes using pattern matching statements. You are probably
+familiar with building class hierarchies and creating
+[virtual methods and overridden methods](methods.md#inherited) to
+customize object behavior based on the runtime type of the object.
 
 Those techniques aren't possible for data that isn't structured in a class
-hierarchy. In those cases, you'd need to utilize traditional procedural
-imperative constructs like `if` or `switch` statements to manage the control
-flow.
-
-The new *pattern matching* constructs enable cleaner syntax to examine data
+hierarchy. When data and methods are separate you need other tools. The new
+*pattern matching* constructs enable cleaner syntax to examine data
 and manipulate control flow based on any condition of that data.
 
-In this topic, you'll build a sample class that computes the area of
+In this topic, you'll build a method  that computes the area of
 different geometric shapes. But, you'll do it without resorting to object
 oriented techniques and building a class hierarchy for the different shapes.
 You'll use *pattern matching* instead. To further emphasize that we're not
 using inheritance, you'll make each shape a `struct` instead of a class. 
+As you go though this sample, contrast this code with how it would
+be structured as an object hierarchy. When the data you must
+query and manipulate is not a class hierarchy, pattern matching enables
+very elegent designs.
 
 Let's start simple with a square. 
 

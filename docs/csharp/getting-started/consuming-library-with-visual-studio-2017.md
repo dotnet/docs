@@ -32,7 +32,7 @@ Just as we included unit tests in the same solution as our class library, we can
 
 1. In the **Name** text box, enter `ShowCase`, and then choose the **OK** button.
 
-1. In Solution Explorer, open he context menu for the **ShowCase** project node and choose **Set as StartUp Project**.
+1. In Solution Explorer, open the context menu for the **ShowCase** project node and choose **Set as StartUp Project**.
 
 1. Initially our project doesn't have access to our class library. To allow it to call methods in our class library, in **Solution Explorer**, open the context menu for the **Dependencies** node in the **ShowCase** project  and choose **Add Reference**.
 

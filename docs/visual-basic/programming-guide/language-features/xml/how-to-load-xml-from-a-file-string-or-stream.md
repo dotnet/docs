@@ -70,5 +70,5 @@ You can create [XML Literals](../../../../visual-basic/language-reference/xml-li
  <xref:System.Xml.Linq.XDocument.Parse%2A?displayProperty=fullName>   
  <xref:System.Xml.Linq.XNode.ReadFrom%2A?displayProperty=fullName>   
  [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)   
- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)   
+ [XML](../../../../visual-basic/programming-guide/language-features/xml/xml.md)   
  [Manipulating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)

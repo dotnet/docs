@@ -192,10 +192,6 @@ variable only in the `when` clause.
 Having adding those shapes with 0 area, let's add a couple more shape types:
 a rectangle and a triangle:
 
-[!code-csharp[RectangleAndTriangle](../../samples/csharp/PatternMatching/PatternMatching/Shapes.cs#08_RectangleAndTriangle "Rectangle and Triangle definition")]
-
-Next, you'll add `case` labels and blocks for those shapes in the `ComputeArea` method:
-
 [!code-csharp[AddRectangleAndTriangle](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#09_AddRectangleAndTriangle "Add rectangle and triangle")]
 
  This set of changes adds `case` labels for the degenerate case, and labels

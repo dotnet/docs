@@ -49,49 +49,38 @@ be structured as an object hierarchy. When the data you must
 query and manipulate is not a class hierarchy, pattern matching enables
 very elegent designs.
 
-Let's start simple with a square. 
+Rather than start with an abstract shape definition, and adding different
+specific shape classes, let's start instead with simple data only definitions
+for each of the geometric shapes:
 
-[!code-csharp[SquareDefinition](../../samples/csharp/PatternMatching/PatternMatching/Shapes.cs#01_SquareDefinition "Square definition")]
+[!code-csharp[ShapeDefinitions](../../samples/csharp/PatternMatching/PatternMatching/Shapes.cs#01_ShapeDefinitions "Shape definitions")]
 
-The method to compute the area multiplies the length of a side by itself:
+From these structures, let' write a method that computes the area
+of some shape.
 
-[!code-csharp[02_ComputeSquareArea](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#02_ComputeSquareArea "Compute square area")]
+## The `is` type pattern expression
 
-Add a circle:
+Before C# 7, you'd need to test each type in a series of `if` and `is`
+statements:
 
-[!code-csharp[CircleDefinition](../../samples/csharp/PatternMatching/PatternMatching/Shapes.cs#03_CircleDefinition "Circle definition")]
+[!code-csharp[ClassicIsExpression](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#02_ClassicIsExpression "Classic type pattern using is")]
 
-Add a method to compute the area of a circle:
+That code above is a classic expression of the *type pattern*: You're testing a variable
+to determine its type, and taking different action based on that type.
 
-[!code-csharp[04_ComputeCircleArea](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#04_ComputeCircleArea "Compute circle area")]
+This code becomes simpler using extensions to the `is` expression to assign
+a variable if the test succeeds:
 
-## Using `is` pattern expressions
+[!code-csharp[IsPatternExpression](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#03_IsPatternExpression "is pattern expression")]
 
-Ideally, you'd have one method that computes the area of any kind of
-shape. You've only created a couple different kinds of shapes so far.
-Let's use an `is` pattern matching expression to test the type of 
-the shape:
-
-[!code-csharp[05_ComputeWithAsExpression](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#05_ComputeWithAsExpression "Compute with as expression")]
-
-The parameter type for this method is `object`: any type can be passed
-to this method. The code in the method checks the type to see if the parameter
-is either a square or a circle. Notice that the pattern match `is` expression
-can assign a variable as well as test the type. The pattern match expression
-`shape is Square s` is semantically the same as the more verbose syntax:
-
-```csharp
-Square s;
-if (shape is Square)
-{
-    s = (shape as Square);
-    // use 's'
-} 
-```
+In this updated version, `is` expression both tests the variable, and assigns
+it to a new variable of the proper type. Also, notice that this version includes
+the `Rectangle` type, which is a `struct`. The new `is` expression works with
+value types as well as reference types.
 
 Language rules for pattern matching expressions help you avoid misusing
-the results of a match expression. In the example above, the variables `s`
-and `c` are only in scope and definitely assigned when the respective
+the results of a match expression. In the example above, the variables `s`,
+ `c`, and `r` are only in scope and definitely assigned when the respective
 pattern match expressions have `true` results. If you try and use either
 variable in another location, your code generates compiler errors.
 
@@ -127,19 +116,31 @@ matching expressions can become cumbersome. In addition to requiring `if`
 statements on each type you want to check, the `is` expressions are limited
 to testing if the input matches a single type.
 
-As the number of conditions grows, you'll find that the `switch` pattern
-matching expressions becomes a better choice. To get ready to add more
-types of shapes to this library, let's change the existing method to use
-the `switch` pattern match expression:
 
-[!code-csharp[ComputeWithSwitchExpression](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#06_ComputeWithSwitchExpression "Compute with `switch` expression")]
+As the number of conditions grows, you'll find that the `switch` pattern
+matching expressions becomes a better choice. The traditional `switch`
+statement was a pattern expression: it supported the constant pattern.
+You could compare a variable to any constant used in a `case` statement:
+
+[!code-csharp[ClassicSwitch](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#04_ClassicSwitch "Classic switch statement")]
+
+The only pattern supported by the `switch` statement was the constant
+pattern. It was further limited to numeric types and the `string` type.
+Those restrictions have been removed, and you can now write a `switch`
+statement using the type pattern:
+
+[!code-csharp[Switch Type Pattern](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#05_SwitchTypePattern "Compute with `switch` expression")]
 
 The pattern matching `switch` statement uses familiar syntax to developers
 that have used the traditional C-style `switch` statement. Each `case` is evaluated
 and the code beneath the condition that matches the input variable is
-executed. Code execution cannot "fall through" from one `case` expression
-to the next. Each block following a `case` must end with a `break`, `return`
-or `goto`.
+executed. Code execution cannot "fall through" from one case expression
+to the next; the syntax of the `case` statement requires that each `case`
+end with a `break`, `return`, or `goto`.
+
+> [!NOTE]
+> The `goto` statements to jump to another label are valid only
+> for the constant pattern, the classic switch statement.
 
 There are important new rules governing the `switch` statement. The restrictions
 on the type of the variable in the `switch` expression have been removed.
@@ -157,7 +158,10 @@ matters. The `switch` expressions are evaluated in textual order. Execution
 transfers to the first `switch` label that matches the `switch` expression.  
 Note that the `default` case will only be executed if no other
 case labels match. The `default` case is evaluated last, regardless
-of its textual order.
+of its textual order. If there is no `default` case, and none of the
+other `case` statements match, execution continues at the statement
+following the `switch` statement. None of the `case` labels code is
+executed.
 
 ## `when` clauses in `case` expressions
 
@@ -216,3 +220,11 @@ manipulate that data are separate. You'll notice that the shape structs
 used in this sample do not contain any methods, just read only properties.
 Pattern Matching works with any data type. You write expressions that examine
 the object, and make control flow decisions based on those conditions.
+
+Compare the code from this sample with the design that would follow from
+creating a class hierarchy for an abstract `Shape` and specific derived
+shapes each with their own implementation of a virtual method to calculate
+the area. You'll often find that pattern matching expressions can be a very
+useful tool when you are working with data and want to separate the data
+storage concerns from the behavior concerns.
+

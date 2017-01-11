@@ -17,12 +17,12 @@ namespace PatternMatching
             WriteLine(GeometricUtilities.ComputeArea(s));
             WriteLine(GeometricUtilities.ComputeArea(c));
 
-            WriteLine(GeometricUtilities.ComputeArea_Version2(s));
-            WriteLine(GeometricUtilities.ComputeArea_Version2(c));
+            WriteLine(GeometricUtilities.ComputeAreaModernIs(s));
+            WriteLine(GeometricUtilities.ComputeAreaModernIs(c));
 
             WriteLine(GeometricUtilities.ComputeArea_Version3(s));
             WriteLine(GeometricUtilities.ComputeArea_Version3(c));
-
+            
         }
     }
 }

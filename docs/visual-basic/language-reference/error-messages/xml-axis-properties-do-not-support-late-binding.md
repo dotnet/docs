@@ -47,4 +47,4 @@ An XML axis property has been referenced for an untyped object.
   
 ## See Also  
  [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)   
- [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)
+ [XML](../../../visual-basic/programming-guide/language-features/xml/xml.md)

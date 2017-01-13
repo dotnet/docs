@@ -1394,7 +1394,6 @@
 ### [Using the Visual Basic Development Environment](visual-basic/developing-apps/using-ide/using-the-visual-basic-development-environment.md)
 #### [Visual Basic Settings](visual-basic/developing-apps/using-ide/settings.md)
 #### [Visual Basic IntelliSense Code Snippets](visual-basic/developing-apps/using-ide/intellisense-code-snippets.md)
-#### [Refactoring and Rename Dialog Box (visual-basic/developing-apps/Visual Basic)](visual-basic/developing-apps/using-ide/refactoring-and-rename-dialog-box.md)
 #### [Help for Event Handlers in Visual Basic Code](visual-basic/developing-apps/using-ide/help-for-event-handlers.md)
 #### [How to: Compile and Run a Project in Visual Basic](visual-basic/developing-apps/using-ide/how-to-compile-and-run-a-project.md)
 

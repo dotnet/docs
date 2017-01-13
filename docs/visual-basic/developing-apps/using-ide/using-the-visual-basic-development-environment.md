@@ -53,7 +53,7 @@ In addition to the core user interface features that Visual Studio provides, the
  Describes the the process of improving your code after it has been written by changing the internal structure of the code without changing the external behavior of the code.
 
  [Code Generation](https://docs.microsoft.com/en-us/visualstudio/vb-ide/code-generation-vb)
- Describes Visual Studio can help generate portions of source code for you.
+ Describes how Visual Studio can help generate portions of source code for you.
   
 ## Reference  
  [Default Keyboard Shortcuts](https://docs.microsoft.com/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  

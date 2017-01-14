@@ -1,14 +1,14 @@
 ---
-title: Install for Ubuntu 14.04, 16.04, 16.10 & Linux Mint 17
+title: Install for Ubuntu 14.04, 16.04, 16.10 & Linux Mint 17 | Microsoft Docs
 description: Install for Ubuntu 14.04, 16.04, 16.10 & Linux Mint 17
 keywords: .NET, .NET Core, C#, Getting Started, Acquisition, Cross Platform, Linux, Ubuntu 14.04, Ubuntu 16.04, Ubuntu 16.10, Linux Mint 17
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: 
+ms.assetid: ef06e00c-53b4-40f3-9792-4ebc1634cbb7
 ---
 # Install for Ubuntu 14.04, 16.04, 16.10 & Linux Mint 17
 ## 1. Add the dotnet apt-get feed

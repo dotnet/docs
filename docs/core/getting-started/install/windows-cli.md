@@ -1,14 +1,14 @@
 ---
-title: Install for Windows - Command Line
+title: Install for Windows - Command Line | Microsoft Docs
 description: Install for Windows - Command Line
 keywords: .NET, .NET Core, Visual Studio Code, VS Code, C#, Getting Started, Acquisition, Cross Platform
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: 
+ms.assetid: a0e4e8e4-220b-4ced-8bd7-b4d1e2d79aeb
 ---
 # Install for Windows - Command Line
 

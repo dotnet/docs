@@ -1,14 +1,14 @@
 ---
-title: Install for Docker - Visual Studio 2017 RC
+title: Install for Docker - Visual Studio 2017 RC | Microsoft Docs
 description: Install for Docker - Visual Studio 2017 RC
 keywords: .NET, .NET Core, C#, Getting Started, Acquisition, Cross Platform, Docker, Visual Studio 2017
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: 
+ms.assetid: 5c934eb7-4c58-4347-a36f-33be6e4d0b0c
 ---
 
 # Install for Docker - Visual Studio 2017 RC

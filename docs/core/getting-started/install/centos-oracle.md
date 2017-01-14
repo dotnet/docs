@@ -1,14 +1,14 @@
 ---
-title: Install for CentOS 7.1 & Oracle Linux 7.1
+title: Install for CentOS 7.1 & Oracle Linux 7.1 | Microsoft Docs
 description: Install for CentOS 7.1 & Oracle Linux 7.1
 keywords: .NET, .NET Core, C#, Getting Started, Acquisition, Cross Platform, CentOS 7.1, Oracle Linux 7.1
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: 
+ms.assetid: 4bdaeca6-6409-40ac-bc0e-626ea8d2e940
 ---
 # Install for CentOS 7.1 & Oracle Linux 7.1
 

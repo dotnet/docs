@@ -1,14 +1,14 @@
 ---
-title: Install for Windows - Visual Studio 2017
+title: Install for Windows - Visual Studio 2017 | Microsoft Docs
 description: Install for Windows - Visual Studio 2017
 keywords: .NET, .NET Core, Visual Studio 2017, VS2017, C#, Getting Started, Acquisition, Cross Platform
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: 
+ms.assetid: 53d4ab27-75c7-4645-acb2-4eedbdb60afb
 ---
 # Install for Windows - Visual Studio 2017
 ## 1. Download Visual Studio 2017 RC

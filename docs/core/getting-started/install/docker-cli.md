@@ -1,14 +1,14 @@
 ---
-title: Install for Docker - Command line
+title: Install for Docker - Command line | Microsoft Docs
 description: Install for Docker - Command line
 keywords: .NET, .NET Core, C#, Getting Started, Acquisition,  Cross Platform, Docker, CLI
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: 
+ms.assetid: 12cc5731-8cce-412d-81ab-7b3e1d3a72d5
 ---
 
 # Install for Docker - Command line

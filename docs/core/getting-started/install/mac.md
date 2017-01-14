@@ -1,14 +1,14 @@
 ---
-title: Install for macOS 10.11 or higher
+title: Install for macOS 10.11 or higher | Microsoft Docs
 description: Install for macOS 10.11 or higher
 keywords: .NET, .NET Core, C#, Getting Started, Acquisition, Cross Platform, macOS
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: 
+ms.assetid: fe033d8e-4c1a-40d4-b0bb-c4aee3a364d6
 ---
 
 # Install for macOS 10.11 or higher

@@ -1,14 +1,14 @@
 ---
-title: Install for Red Hat Enterprise Linux 7 Server
+title: Install for Red Hat Enterprise Linux 7 Server | Microsoft Docs
 description: Install for Red Hat Enterprise Linux 7 Server
 keywords: .NET, .NET Core, C#, Getting Started, Acquisition, Cross Platform, Linux, RHEL, Red Hat enterprise Linux
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: 
+ms.assetid: 8430211d-9a3b-4834-98bd-c28b7529f1a9
 ---
 # Install for Red Hat Enterprise Linux 7 Server
 

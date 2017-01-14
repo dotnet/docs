@@ -1,14 +1,14 @@
 ---
-title: Install for openSUSE
+title: Install for openSUSE | Microsoft Docs
 description: Install for openSUSE
 keywords: .NET, .NET Core, C#, Getting Started, Acquisition, Cross Platform, Linux, openSUSE
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: 
+ms.assetid: 9bcd3534-69d7-48cd-a0da-0a8b063b6e46
 ---
 
 # Install for openSUSE

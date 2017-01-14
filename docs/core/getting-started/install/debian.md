@@ -1,14 +1,14 @@
 ---
-title: Install for Debian 8
+title: Install for Debian 8 | Microsoft Docs
 description: Install for Debian 8
 keywords: .NET, .NET Core, C#, Getting Started, Acquisition, Cross Platform, Debian 8, Linux
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: 
+ms.assetid: fe9a28b6-095e-4e81-89d3-d98e0e87f037
 ---
 
 # Install for Debian 8

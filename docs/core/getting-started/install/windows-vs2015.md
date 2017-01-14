@@ -1,14 +1,14 @@
 ---
-title: Install for Windows - Visual Studio 2015
+title: Install for Windows - Visual Studio 2015 | Microsoft Docs
 description: Install for Windows - Visual Studio 2015
 keywords: .NET, .NET Core, Visual Studio 2015, VS2015, C#, Getting Started, Acquisition, Cross Platform
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: 
+ms.assetid: b89bae72-75c0-422f-8650-78986ca9427c
 ---
 # Install for Windows - Visual Studio 2015
 ## 1. Download Visual Studio 2015

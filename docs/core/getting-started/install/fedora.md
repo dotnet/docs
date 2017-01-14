@@ -1,14 +1,14 @@
 ---
-title: Install for Fedora
+title: Install for Fedora | Microsoft Docs
 description: Install for Fedora
 keywords: .NET, .NET Core, C#, Getting Started, Acquisition,  Cross Platform, Fedora, Linux
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: 
+ms.assetid: f96b33c9-a196-4141-b4eb-932fd95056c1
 ---
 
 # Install for Fedora

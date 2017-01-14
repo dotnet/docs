@@ -1,14 +1,14 @@
 ---
-title: Install .NET Core
+title: Install .NET Core | Microsoft Docs
 description: Install .NET Core
 keywords: .NET, .NET Core, C#, Getting Started, Acquisition, Cross Platform
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: 
+ms.assetid: 53a7ab98-0961-4e5d-88f9-3cdc5231d66e
 ---
 # Install .NET Core
 

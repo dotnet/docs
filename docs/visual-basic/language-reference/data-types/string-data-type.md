@@ -25,7 +25,7 @@ helpviewer_keywords:
   - "fixed-length strings"
   - "string literals"
   - "data types [Visual Basic], assigning"
-  - "" String literals"
+  - "String literals"
   - "identifier type characters, $"
 ms.assetid: 15ac03f5-cabd-42cc-a754-1df3893c25d9
 caps.latest.revision: 19

@@ -29,7 +29,7 @@ You can get started developing .NET Core apps by following these step-by-step tu
 * [Getting started with .NET Core using the command-line](../tutorials/using-with-xplat-cli.md) - Use any code editor with the [.NET Core cross-platform command-line interface (CLI)](../tools/index.md).
 
 
-See the [Prerequisites for Windows development](windows-prerequisites.md) topic for a list of the supported Windows versions. 
+See the [Prerequisites for Windows development](../windows-prerequisites.md) topic for a list of the supported Windows versions. 
 
 ## Linux
 

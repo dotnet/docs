@@ -13,9 +13,9 @@ ms.assetid: 53a7ab98-0961-4e5d-88f9-3cdc5231d66e
 # Install .NET Core
 
 ## Windows
-### [Install .NET Core for Windows with Visual Studio 2017](win-vs2017.md)
-### [Install .NET Core for Windows with Visual Studio 2015 Update 3](win-vs2015.md)
-### [Install .NET Core for Windows with CLI Tools (VSCode)](win-cli.md)
+### [Install .NET Core for Windows with Visual Studio 2017](windows-vs2017.md)
+### [Install .NET Core for Windows with Visual Studio 2015 Update 3](windows-vs2015.md)
+### [Install .NET Core for Windows with CLI Tools (VSCode)](windows-cli.md)
 
 ## Linux
 ### [Install for RHEL](rhel.md)

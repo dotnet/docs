@@ -76,5 +76,5 @@ To learn more, visit the following:
 * [.NET Core Guide](../core/index.md)
 * [.NET Framework Guide](../framework/index.md)
 * [C# Guide](../csharp/index.md)
-* [F# Guide](../csharp/index.md)
-* [VB.NET Guide](../csharp/index.md)
+* [F# Guide](../fsharp/index.md)
+* [VB.NET Guide](../visual-basic/index.md)

@@ -29,7 +29,7 @@ namespace ProgrammingGuide
    {
       static void Main(string[] args)
       {
-         // Create an object of type MyCustomClass.
+         // Create an object of type CustomClass.
          CustomClass custClass = new CustomClass();
 
          // Set the value of the public property.

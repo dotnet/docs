@@ -2,7 +2,6 @@
 layout: HubPage
 hide_bc: true
 title: .NET Documentation
-description: Learn about .NET
 ---
 <div id="main" class="v2">
     <div class="container">

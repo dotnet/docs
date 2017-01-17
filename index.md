@@ -78,7 +78,7 @@ description: Learn about .NET
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/media/logos/logo_NET.svg" alt="" />
+                                                    <img src="images/logo_NET.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -97,7 +97,7 @@ description: Learn about .NET
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/media/logos/logo_NETcore.svg" alt="" />
+                                                    <img src="images/logo_NETcore.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -117,7 +117,7 @@ description: Learn about .NET
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/media/logos/logo_NETframework.svg" alt="" />
+                                                    <img src="images/logo_NETframework.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -137,7 +137,7 @@ description: Learn about .NET
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/media/logos/logo_Xamarin.svg" alt="" />
+                                                    <img src="images/logo_Xamarin.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -157,7 +157,7 @@ description: Learn about .NET
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/media/logos/logo_Csharp.svg" alt="" />
+                                                    <img src="images/logo_Csharp.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -176,7 +176,7 @@ description: Learn about .NET
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/media/logos/logo_Fsharp.svg" alt="" />
+                                                    <img src="images/logo_Fsharp.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -195,7 +195,7 @@ description: Learn about .NET
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/media/logos/logo_vb.svg" alt="" />
+                                                    <img src="images/logo_vb.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

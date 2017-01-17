@@ -14,7 +14,7 @@ description: Learn about .NET
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="articles/images/hub/featured-1.svg" src="./docs/images/hub/featured-1.png" alt="" />
+                                        <img data-hoverimage="./docs/images/hub/featured-1.svg" src="./docs/images/hub/featured-1.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -32,7 +32,7 @@ description: Learn about .NET
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="articles/images/hub/featured-2.svg" src="./docs/images/hub/featured-2.png" alt="" />
+                                        <img data-hoverimage="./docs/images/hub/featured-2.svg" src="./docs/images/hub/featured-2.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -50,7 +50,7 @@ description: Learn about .NET
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="articles/images/hub/featured-3.svg" src="./docs/images/hub/featured-3.png" alt="" />
+                                        <img data-hoverimage="./docs/images/hub/featured-3.svg" src="./docs/images/hub/featured-3.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -78,14 +78,14 @@ description: Learn about .NET
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="articles/images/hub/logo_NET.svg" alt="" />
+                                                    <img src="./docs/images/hub/logo_net.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/articles/welcome">What is .NET?</a></h3>
                                                 <p><a href="https://www.microsoft.com/net">Get Started</a></p>
-                                                <p><a href="/dotnet/articles/standard/#a-stroll-through-net">Tour of .NET</a></p>
-                                                <p><a href="/dotnet/articles/about/products">.NET Concepts</a></p>
+                                                <p><a href="/dotnet/articles/standard/tour">Tour of .NET</a></p>
+                                                <p><a href="/dotnet/articles/standard/components">.NET Architectural Concepts</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -97,7 +97,7 @@ description: Learn about .NET
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="articles/images/hub/logo_NETcore.svg" alt="" />
+                                                    <img src="./docs/images/hub/logo_netcore.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -117,7 +117,7 @@ description: Learn about .NET
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="articles/images/hub/logo_NETframework.svg" alt="" />
+                                                    <img src="./docs/images/hub/logo_netframework.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -137,7 +137,7 @@ description: Learn about .NET
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="articles/images/hub/logo_Xamarin.svg" alt="" />
+                                                    <img src="./docs/images/hub/logo_xamarin.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -157,7 +157,7 @@ description: Learn about .NET
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="articles/images/hub/logo_Csharp.svg" alt="" />
+                                                    <img src="./docs/images/hub/logo_csharp.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -176,7 +176,7 @@ description: Learn about .NET
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="articles/images/hub/logo_Fsharp.svg" alt="" />
+                                                    <img src="./docs/images/hub/logo_fsharp.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -195,7 +195,7 @@ description: Learn about .NET
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="articles/images/hub/logo_vb.svg" alt="" />
+                                                    <img src="./docs/images/hub/logo_vb.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

@@ -51,7 +51,7 @@ Classes and structs are two of the basic constructs of the common type system in
  For more information, see [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md), [Objects](../../../csharp/programming-guide/classes-and-structs/objects.md), and [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md).  
   
 ## Example  
- In the following example, `customClass` in the `ProgrammingGuide` namespace has three members: an instance constructor, a property named `Number`, and a method named `Multiply`. The `Msin` method in the `Program` class creates an instance (object) of `myCustomClass`, and the object’s method and property are accessed by using dot notation.  
+ In the following example, `CustomClass` in the `ProgrammingGuide` namespace has three members: an instance constructor, a property named `Number`, and a method named `Multiply`. The `Main` method in the `Program` class creates an instance (object) of `CustomClass`, and the object’s method and property are accessed by using dot notation.
   
  [!code-cs[csProgGuideObjects#1](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/class1.cs#1)]  
   

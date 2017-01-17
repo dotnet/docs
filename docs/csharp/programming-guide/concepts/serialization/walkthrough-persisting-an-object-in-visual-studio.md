@@ -28,7 +28,7 @@ Although you can set an object's properties to default values at design time, an
  In this walkthrough, you will create a simple `Loan` object and persist its data to a file. You will then retrieve the data from the file when you re-create the object.  
   
 > [!IMPORTANT]
->  This example creates a new file, if the file does not already exist. If an application must create a file, that application must `Create` permission for the folder. Permissions are set by using access control lists. If the file already exists, the application needs only `Write` permission, a lesser permission. Where possible, it is more secure to create the file during deployment, and only grant `Read` permissions to a single file (instead of Create permissions for a folder). Also, it is more secure to write data to user folders than to the root folder or the Program Files folder.  
+>  This example creates a new file if the file does not already exist. If an application must create a file, that application must `Create` permission for the folder. Permissions are set by using access control lists. If the file already exists, the application needs only `Write` permission, a lesser permission. Where possible, it is more secure to create the file during deployment, and only grant `Read` permissions to a single file (instead of Create permissions for a folder). Also, it is more secure to write data to user folders than to the root folder or the Program Files folder.  
   
 > [!IMPORTANT]
 >  This example stores data in a binary format file. These formats should not be used for sensitive data, such as passwords or credit-card information.  
@@ -85,7 +85,7 @@ Although you can set an object's properties to default values at design time, an
   
 ### To create a test application  
   
-1.  To add a Windows Forms Application project to your solution, on the **File** menu, choose **Add**,**New Project**.  
+1.  To add a Windows Forms Application project to your solution, on the **File** menu, choose **Add**, **New Project**.  
   
 2.  In the **Add New Project** dialog box, choose **Windows Forms Application**, and enter `LoanApp` as the name of the project, and then click **OK** to close the dialog box.  
   

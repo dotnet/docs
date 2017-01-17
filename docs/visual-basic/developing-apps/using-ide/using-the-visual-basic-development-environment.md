@@ -49,7 +49,7 @@ In addition to the core user interface features that Visual Studio provides, the
 
 ## Related Topics
 
- [Refactoring](https://docs.microsoft.com/en-us/visualstudio/vb-ide/refactoring-vb)  
+ [Refactoring](https://docs.microsoft.com/visualstudio/vb-ide/refactoring-vb)  
  Describes the the process of improving your code after it has been written by changing the internal structure of the code without changing the external behavior of the code.
 
  [Code Generation](https://docs.microsoft.com/en-us/visualstudio/vb-ide/code-generation-vb)

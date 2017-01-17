@@ -2,7 +2,7 @@
 layout: HubPage
 hide_bc: true
 title: .NET Documentation
-description: Learn about .NET.
+description: Learn about .NET
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -78,7 +78,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="/media/logos/logo_NET.svg" src="/media/logos/logo_NET.svg" alt="" />
+                                                    <img src="/media/logos/logo_NET.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -97,7 +97,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="/media/logos/logo_NETcore.svg" src="/media/logos/logo_NETcore.svg" alt="" />
+                                                    <img src="/media/logos/logo_NETcore.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -117,7 +117,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="/media/logos/logo_NETframework.svg" src="/media/logos/logo_NETframework.svg" alt="" />
+                                                    <img src="/media/logos/logo_NETframework.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -137,7 +137,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="/media/logos/logo_Xamarin.svg" src="/media/logos/logo_Xamarin.svg" alt="" />
+                                                    <img src="/media/logos/logo_Xamarin.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -157,7 +157,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="/media/logos/logo_Csharp.svg" src="/media/logos/logo_Csharp.svg" alt="" />
+                                                    <img src="/media/logos/logo_Csharp.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -176,7 +176,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="/media/logos/logo_Fsharp.svg" src="/media/logos/logo_Fsharp.svg" alt="" />
+                                                    <img src="/media/logos/logo_Fsharp.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -195,7 +195,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="/media/logos/logo_vb.svg" src="/media/logos/logo_vb.svg" alt="" />
+                                                    <img src="/media/logos/logo_vb.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -219,7 +219,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-web-1.svg" src="./docs/images/hub/net-docs-web-1.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-web-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -238,7 +238,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-web-2.svg" src="./docs/images/hub/net-docs-web-2.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-web-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -257,7 +257,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-web-3.svg" src="./docs/images/hub/net-docs-web-3.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-web-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -276,7 +276,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-web-4.svg" src="./docs/images/hub/net-docs-web-4.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-web-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -296,7 +296,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-web-5.svg" src="./docs/images/hub/net-docs-web-5.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-web-5.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -315,7 +315,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-web-6.svg" src="./docs/images/hub/net-docs-web-6.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-web-6.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -340,7 +340,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-cloud-1.svg" src="./docs/images/hub/net-docs-cloud-1.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-cloud-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -360,7 +360,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-cloud-2.svg" src="./docs/images/hub/net-docs-cloud-2.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-cloud-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -379,7 +379,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-cloud-3.svg" src="./docs/images/hub/net-docs-cloud-3.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-cloud-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -399,7 +399,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-cloud-4.svg" src="./docs/images/hub/net-docs-cloud-4.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-cloud-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -424,7 +424,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-mobile-1.svg" src="./docs/images/hub/net-docs-mobile-1.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-mobile-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -443,7 +443,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-mobile-2.svg" src="./docs/images/hub/net-docs-mobile-2.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-mobile-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -462,7 +462,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-mobile-3.svg" src="./docs/images/hub/net-docs-mobile-3.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-mobile-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -486,7 +486,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-desktop-1.svg" src="./docs/images/hub/net-docs-desktop-1.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-desktop-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -507,7 +507,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-desktop-2.svg" src="./docs/images/hub/net-docs-desktop-2.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-desktop-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -527,7 +527,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-desktop-3.svg" src="./docs/images/hub/net-docs-desktop-3.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-desktop-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -546,7 +546,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-desktop-4.svg" src="./docs/images/hub/net-docs-desktop-4.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-desktop-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -570,7 +570,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-gaming-1.svg" src="./docs/images/hub/net-docs-gaming-1.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-gaming-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -591,7 +591,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-gaming-2.svg" src="./docs/images/hub/net-docs-gaming-2.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-gaming-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -610,7 +610,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-gaming-3.svg" src="./docs/images/hub/net-docs-gaming-3.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-gaming-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -630,7 +630,7 @@ description: Learn about .NET.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="./docs/images/hub/net-docs-gaming-4.svg" src="./docs/images/hub/net-docs-gaming-4.svg" alt="" />
+                                                    <img src="./docs/images/hub/net-docs-gaming-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

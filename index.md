@@ -77,7 +77,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/"./images/net.svg" alt="" />
+                                                    <img src="./docs/images/hub/net.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -96,7 +96,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/"./images/netcore.svg" alt="" />
+                                                    <img src="./docs/images/hub/netcore.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -116,7 +116,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/"./images/netframework.svg" alt="" />
+                                                    <img src="./docs/images/hub/netframework.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -136,7 +136,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/"./images/xamarin.svg" alt="" />
+                                                    <img src="./docs/images/hub/xamarin.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -156,7 +156,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/"./images/csharp.svg" alt="" />
+                                                    <img src="./docs/images/hub/csharp.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -175,7 +175,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/"./images/fsharp.svg" alt="" />
+                                                    <img src="./docs/images/hub/fsharp.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -194,7 +194,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/"./images/vb.svg" alt="" />
+                                                    <img src="./docs/images/hub/vb.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

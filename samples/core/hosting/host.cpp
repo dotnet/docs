@@ -36,6 +36,8 @@ typedef void (STDMETHODCALLTYPE MainMethodFp)(LPWSTR* args);
 // decisions have been made to emphasize readability over efficiency.
 int wmain(int argc, wchar_t* argv[])
 {
+	printf("Sample CoreCLR Host\n\n");
+
 	//
 	// STEP 1: Get the app to run from the command line
 	//
@@ -90,6 +92,10 @@ int wmain(int argc, wchar_t* argv[])
 	{
 		printf("ERROR - CoreCLR.dll could not be found");
 		return -1;
+	}
+	else
+	{
+		wprintf(L"CoreCLR loaded from %s\n", coreRoot);
 	}
 
 
@@ -147,6 +153,10 @@ int wmain(int argc, wchar_t* argv[])
 	{
 		printf("ERROR - Failed to start the runtime.\nError code:%x\n", hr);
 		return -1;
+	}
+	else
+	{
+		printf("Runtime started\b");
 	}
 
 
@@ -332,6 +342,10 @@ int wmain(int argc, wchar_t* argv[])
 		printf("ERROR - Failed to create AppDomain.\nError code:%x\n", hr);
 		return -1;
 	}
+	else
+	{
+		printf("AppDomain %d created\n\n", domainId);
+	}
 
 
 
@@ -341,12 +355,12 @@ int wmain(int argc, wchar_t* argv[])
 	DWORD exitCode = -1;
 
 	// ExecuteAssembly will load a managed assembly and execute its entry point.
-	printf("Executing managed code...\n\n");
+	wprintf(L"Executing %s...\n\n", targetApp);
 	hr = runtimeHost->ExecuteAssembly(domainId, targetApp, argc - 1, (LPCWSTR*)(argc > 1 ? &argv[1] : NULL), &exitCode);
 
 	if (FAILED(hr))
 	{
-		printf("ERROR - Failed to execute %ws.\nError code:%x\n", targetApp, hr);
+		wprintf(L"ERROR - Failed to execute %s.\nError code:%x\n", targetApp, hr);
 		return -1;
 	}
 

@@ -439,7 +439,15 @@
 #### [Help for Event Handlers in Visual Basic Code](visual-basic/developing-apps/using-ide/help-for-event-handlers.md)
 #### [How to: Compile and Run a Project in Visual Basic](visual-basic/developing-apps/using-ide/how-to-compile-and-run-a-project.md)
 
-### [Programming in Visual Basic](visual-basic/developing-apps/programming/programming.md)
+### [Programming in Visual Basic](visual-basic/developing-apps/programming/index.md)
+#### [Accessing Computer Resources](visual-basic/developing-apps/programming/computer-resources/computer-resources.md)
+#### [Logging Information from the Application](visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)
+#### [Accessing User Data](visual-basic/developing-apps/programming/accessing-user-data.md)
+#### [Accessing Application Forms](visual-basic/developing-apps/programming/accessing-application-forms.md)
+#### [Accessing Application Web Services](visual-basic/developing-apps/programming/accessing-application-web-services.md)
+##### [How to: Call a Web Service Asynchronously](visual-basic/developing-apps/programming/how-to-call-a-web-service-asynchronously.md)
+#### [Accessing Application Settings](visual-basic/developing-apps/programming/app-settings/accessing-application-settings.md)
+#### [Processing Drives, Directories, and Files](visual-basic/developing-apps/programming/xdrives-directories-files/processing.md)
 
 ### [Development with My](visual-basic/developing-apps/development-with-my/index.md)
 #### [Performing Tasks with My.Application, My.Computer, and My.User](visual-basic/developing-apps/development-with-my/performing-tasks-with-my-application-my-computer-and-my-user.md)

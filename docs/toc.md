@@ -447,7 +447,7 @@
 #### [Accessing Application Web Services](visual-basic/developing-apps/programming/accessing-application-web-services.md)
 ##### [How to: Call a Web Service Asynchronously](visual-basic/developing-apps/programming/how-to-call-a-web-service-asynchronously.md)
 #### [Accessing Application Settings](visual-basic/developing-apps/programming/app-settings/accessing-application-settings.md)
-#### [Processing Drives, Directories, and Files](visual-basic/developing-apps/programming/xdrives-directories-files/processing.md)
+#### [Processing Drives, Directories, and Files](visual-basic/developing-apps/programming/drives-directories-files/processing.md)
 
 ### [Development with My](visual-basic/developing-apps/development-with-my/index.md)
 #### [Performing Tasks with My.Application, My.Computer, and My.User](visual-basic/developing-apps/development-with-my/performing-tasks-with-my-application-my-computer-and-my-user.md)

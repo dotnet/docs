@@ -42,7 +42,7 @@ This section covers conceptual documentation for the Visual Basic language.
  [Using the Visual Basic Development Environment](../../visual-basic/developing-apps/using-ide/using-the-visual-basic-development-environment.md)  
  Contains Help on features of the Visual Basic editor, such as **Intellisense Code Snippets**, **Project Properties**, and creating XML documentation for Visual Basic.  
   
- [Programming in Visual Basic](../../visual-basic/developing-apps/programming/programming.md)  
+ [Programming in Visual Basic](../../visual-basic/developing-apps/programming/index.md)  
  Covers a variety of programming subjects.  
   
  [Development with My](../../visual-basic/developing-apps/development-with-my/index.md)  

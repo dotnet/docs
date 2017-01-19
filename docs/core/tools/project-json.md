@@ -325,7 +325,7 @@ For example:
 Type: Object
 
 An object that defines the package dependencies of the project, each key of this object is the name of a package and each value contains versioning information.
-For more information, see the [Dependency resolution](https://docs.nuget.org/ndocs/consume-packages/dependency-resolution#dependency-resolution-in-nuget-3-x) article on
+For more information, see the [Dependency resolution](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#dependency-resolution-in-nuget-3x) article on
 the NuGet documentation site.
 
 For example:
@@ -349,7 +349,7 @@ For example:
 Type: String
 
 Specifies the version or version range of the dependency. Use the \* wildcard to specify a 
-[floating dependency version](https://docs.nuget.org/ndocs/consume-packages/dependency-resolution#floating-versions).
+[floating dependency version](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#floating-versions).
 
 For example:
 
@@ -1651,7 +1651,7 @@ For example:
 Type: String
 
 Specifies a user secret identifier to be used at development-time. 
-For more information, see [Safe storage of app secrets during development](https://docs.asp.net/en/latest/security/app-secrets.html).
+For more information, see [Safe storage of app secrets during development](https://docs.microsoft.com/aspnet/core/security/app-secrets).
 
 For example:
 

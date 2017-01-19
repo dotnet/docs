@@ -104,7 +104,7 @@ In Preview 4 bits, the `dotnet pack` command will not pack the `runtimeconfig.js
 1. Create a `nuspec` file and use `dotnet nuget pack` command newly available to Preview 4 CLI to include the file
 2. Use the new `<Content>` element in an `<ItemGroup>` in your project file to include the file manually
 
-Working with nuspec files is beyond the scope of this article, however you can find a lot of good information in the [official NuGet docs](https://docs.nuget.org/ndocs/create-packages/creating-a-package#the-role-and-structure-of-the--nuspec-file). If you decide on the second approach, you can see the example `csproj` file and how it is configured below:
+Working with nuspec files is beyond the scope of this article, however you can find a lot of good information in the [official NuGet docs](https://docs.microsoft.com/nuget/create-packages/creating-a-package#the-role-and-structure-of-the-nuspec-file). If you decide on the second approach, you can see the example `csproj` file and how it is configured below:
 
 ```xml
   <ItemGroup>
@@ -130,7 +130,7 @@ You can find richer examples and different combinations of this in the [.NET Cor
 You can also see the [implementation of tools used](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages) in the same repo. 
 
 ### Custom targets
-NuGet has had the capability to package custom MSBuild target and props files for a while now and you can find the official documentation on this on the [NuGet documentation site](https://docs.nuget.org/ndocs/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package). With the move in the CLI to using MSBuild, the same mechanism of extensibility applies to .NET Core projects. You would use this type of extensiblity when you want to extend the build process or when you want to access any of the artifacts in the build process, such as generated files or inspect the configuration under which the build is invoked etc. 
+NuGet has had the capability to package custom MSBuild target and props files for a while now and you can find the official documentation on this on the [NuGet documentation site](https://docs.microsoft.com/nuget/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package). With the move in the CLI to using MSBuild, the same mechanism of extensibility applies to .NET Core projects. You would use this type of extensiblity when you want to extend the build process or when you want to access any of the artifacts in the build process, such as generated files or inspect the configuration under which the build is invoked etc. 
 
 The sample target's project file is included below for reference. It shows how to use the new `csproj` syntax for instructing `dotnet pack` command what to package to place the targets files as well as assemblies into the `build` folder inside the package. Take note of the `<ItemGroup>` below that has the `Label` property set to "dotnet pack instructions". 
 

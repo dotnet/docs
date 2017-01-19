@@ -16,7 +16,7 @@ ms.assetid: 74b87cdb-a244-4c13-908c-539118bfeef9
 
 [!INCLUDE[preview-warning](../../../includes/warning.md)]
 
-With the move of .NET Core projects from project.json to csproj and MSBuild, a significant invesment also happened that resulted in unification of the project file and assets that allow tracking of depenencies. For .NET Core projects this is similar to what project.json did. There is no separate JSON or XML file that tracks NuGet dependencies. With this change, we've also introduced another type of *reference* into the csproj syntax called the `<PackageReference>`. 
+With the move of .NET Core projects from project.json to csproj and MSBuild, a significant investment also happened that resulted in unification of the project file and assets that allow tracking of depenencies. For .NET Core projects this is similar to what project.json did. There is no separate JSON or XML file that tracks NuGet dependencies. With this change, we've also introduced another type of *reference* into the csproj syntax called the `<PackageReference>`. 
 
 This document describes the new reference type. It also shows how to add a package dependency using this new reference type to your project. 
 
@@ -29,7 +29,7 @@ The `<PackageReference>` has the following basic structure:
 </PackageReference>
 ```
 
-If you are familiar with MSBuild, it will look familiar to the other reference types that already exist. The key is the `Include` statement which specifies the package id that you wish to add to the project. The `<Version>` child element specifies the version to get. The versions are specified as per [NuGet version rules](https://docs.nuget.org/ndocs/create-packages/dependency-versions#version-ranges).  
+If you are familiar with MSBuild, it will look familiar to the other reference types that already exist. The key is the `Include` statement which specifies the package id that you wish to add to the project. The `<Version>` child element specifies the version to get. The versions are specified as per [NuGet version rules](https://docs.microsoft.com/nuget/create-packages/dependency-versions#version-ranges).
 
 > [!NOTE]
 > If you are not familiar with the overall `csproj` syntax, you can use the MSBuild project reference documentation to get acquainted.  
@@ -92,6 +92,4 @@ The full project looks like this:
 ```
 
 ## Removing a dependency from the project
-Removing a dependency from the project file involves simply removing the `<PackageReference>` from the project file. 
-
-
+Removing a dependency from the project file involves simply removing the `<PackageReference>` from the project file.

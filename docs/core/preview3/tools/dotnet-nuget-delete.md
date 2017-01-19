@@ -60,7 +60,7 @@ Displays this amount of details in the output. Level can be `normal`, `quiet`, o
 
 A NuGet configuration file used specifically for this command, replacing other config files found by the standard config file discovery and chaining process. 
 The path can be absolute or relative.
-For more information on config files, see [Configuring NuGet Behavior](https://docs.nuget.org/ndocs/consume-packages/configuring-nuget-behavior). 
+For more information on config files, see [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
 
 ## Examples
 

@@ -25,9 +25,8 @@ In this topic, you'll learn the language rules governing Tuples in C# 7,
 different ways to use them, and initial guidance on working with Tuples.
 
 > [!NOTE]
-> The new tuples features require the `System.ValueTuple` type. For Visual Studio 2017
-> RC and earlier preview releases, you must add the NuGet package "System.ValueTuple",
-> available in the pre-release stream.
+> The new tuples features require the `System.ValueTuple` type. For Visual Studio 2017,
+> you must add the NuGet package "System.ValueTuple", available in the pre-release stream.
 
 Let's start with the reasons for adding new Tuple support. Methods return
 a single object. Tuples enable you to package multiple values in that single
@@ -99,7 +98,7 @@ the fields in the Tuple.
 
 > [!NOTE]
 > Development Tools, such as Visual Studio, also read that metadata,
-> and provide intellisense and other features using the metadata
+> and provide IntelliSense and other features using the metadata
 > field names.
 
 It is important to understand these underlying fundamentals of

@@ -7,7 +7,7 @@ author: mikerou
 
 # Hosting .NET Core
 
-Like all managed code, .NET Core applications are executed within a host. The host is responsible for starting the runtime (including components like the JIT and garbage collector), creating AppDomains, and invoking managed entry points.
+Like all managed code, .NET Core applications are executed by a host. The host is responsible for starting the runtime (including components like the JIT and garbage collector), creating AppDomains, and invoking managed entry points.
 
 In most cases, .NET Core developers don't need to worry about hosting because .NET Core build processes provide a default host to run .NET Core applications. In some specialized circumstances, though, it can be useful to explicitly host the .NET Core runtime, either as a means of invoking managed code in a native process or in order to gain more control over how the runtime, itself, works.
 
@@ -23,7 +23,7 @@ This tutorial and its [associated sample](https://github.com/dotnet/docs/tree/ma
 
 ## Creating the host
 
-A sample host demonstrating the steps outlined here is available in our [.NET Core samples](https://github.com/dotnet/docs/tree/master/samples/core/hosting). Comments in the sample's host.cpp file clearly associate the numbered steps from this tutorial with where they are performed in the sample.
+A sample host demonstrating the steps outlined in this article is available in our [.NET Core samples](https://github.com/dotnet/docs/tree/master/samples/core/hosting). Comments in the sample's host.cpp file clearly associate the numbered steps from this tutorial with where they are performed in the sample.
 
 Please bear in mind that the sample host is meant to be used for learning purposes so it is light on error checking and bears a design that emphasizes readability over efficiency. More real-world host samples are available in the [dotnet/coreclr](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts) repository. The [CoreRun host](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/corerun), in particular, is a good general-purpose host to study after reading through the simpler sample.
 
@@ -79,7 +79,7 @@ hr = runtimeHost->SetStartupFlags(
 		// STARTUP_FLAGS::STARTUP_LOADER_OPTIMIZATION_MULTI_DOMAIN |		// Maximize domain-neutral loading
 		// STARTUP_FLAGS::STARTUP_LOADER_OPTIMIZATION_MULTI_DOMAIN_HOST |	// Domain-neutral loading for strongly-named assemblies
 		STARTUP_FLAGS::STARTUP_CONCURRENT_GC |						// Use concurrent GC
-		STARTUP_FLAGS::STARTUP_SINGLE_APPDOMAIN |					// All code executes in the default app-domain 
+		STARTUP_FLAGS::STARTUP_SINGLE_APPDOMAIN |					// All code executes in the default AppDomain 
 																	// (required to use the runtimeHost->ExecuteAssembly helper function)
 		STARTUP_FLAGS::STARTUP_LOADER_OPTIMIZATION_SINGLE_DOMAIN	// Prevents domain-neutral loading
 	)
@@ -110,11 +110,11 @@ After deciding which AppDomain flags to use, AppDomain properties must be define
 
 Common AppDomain properties include:
 
-* `TRUSTED_PLATFORM_ASSEMBLIES` This is a list of assembly paths (delimited by ';' on Windows and ':' on Unix) which the AppDomain should prioritize loading and give full trust to (even in partially-trusted domains). This list is meant to contain 'Framework' assemblies and other trusted modules, similar to the GAC in .NET Framework applications. Some hosts will put any library next to coreclr.dll on this list, others have hard-coded manifests listing trusted assemblies for their purposes.
+* `TRUSTED_PLATFORM_ASSEMBLIES` This is a list of assembly paths (delimited by ';' on Windows and ':' on Unix) which the AppDomain should prioritize loading and give full trust to (even in partially-trusted domains). This list is meant to contain 'Framework' assemblies and other trusted modules, similar to the GAC in .NET Framework scenarios. Some hosts will put any library next to coreclr.dll on this list, others have hard-coded manifests listing trusted assemblies for their purposes.
 * `APP_PATHS` This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list. These paths are meant to be the locations where users' assemblies can be found. In a sandboxed AppDomain, assemblies loaded from these paths will only be granted partial trust. Common APP_PATH paths include the path the target app was loaded from or other locations where user assets are known to live.
 *  `APP_NI_PATHS` This list is very similar to APP_PATHS except that it's meant to be paths that will be probed for native images.
 *  `NATIVE_DLL_SEARCH_DIRECTORIES` This property is a list of paths the loader should probe in when looking for native DLLs called via p/invoke.
-*  `PLATFORM_RESOURCE_ROOTS` This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories)
+*  `PLATFORM_RESOURCE_ROOTS` This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
 *  `AppDomainCompatSwitch` This string specifies which compatibility quirks should be used for assemblies without an explicit Target Framework Moniker. Typically, this should be set to `"UseLatestBehaviorWhenTFMNotSpecified"` but some hosts may prefer to get older Silverlight or Windows Phone compatibility quirks, instead.
 
 In our [simple sample host](https://github.com/dotnet/docs/tree/master/samples/core/hosting), these properties are setup as follows:
@@ -206,12 +206,6 @@ wchar_t nativeDllSearchDirectories[MAX_PATH * 50];
 wcscpy_s(nativeDllSearchDirectories, appPaths);
 wcscat_s(nativeDllSearchDirectories, MAX_PATH * 50, L";");
 wcscat_s(nativeDllSearchDirectories, MAX_PATH * 50, coreRoot);
-wcscat_s(nativeDllSearchDirectories, MAX_PATH * 50, L";");
-
-wchar_t systemRoot[MAX_PATH];
-::ExpandEnvironmentStringsW(L"%SystemRoot%\\System32", systemRoot, MAX_PATH);
-
-wcscat_s(nativeDllSearchDirectories, MAX_PATH * 50, systemRoot);
 
 
 // PLATFORM_RESOURCE_ROOTS
@@ -306,12 +300,12 @@ An example of using coreclrhost.h (instead of mscoree.h directly) can be seen in
 	1. `coreclr_initialize_ptr coreclr_initialize = (coreclr_initialize_ptr)dlsym(coreclrLib, "coreclr_initialize");`
 4. Setup AppDomain properties (such as the TPA list). This is the same as step 5 from the mscoree workflow, above.
 5. Use `coreclr_initialize` to start the runtime and create an AppDomain. This will also create a `hostHandle` pointer which will be used in future hosting calls.
-	1. Note that this function fills the roles of both steps 4 and 6 from previous workflow. 
+	1. Note that this function fills the roles of both steps 4 and 6 from the previous workflow. 
 6. Use either `coreclr_execute_assembly` or `coreclr_create_delegate` to execute managed code. These functions are analogous to mscoree's `ExecuteAssembly` and `CreateDelegate` functions from step 7 of the previous workflow.
 7. Use `coreclr_shutdown` to unload the AppDomain and shut down the runtime. 
 
 ## Conclusion
-Once your host is built, it can be tested by running it from the command line and passing any arguments (like the managed app to run) the host expects. When specifying the .NET Core app for the host to run, be sure to specify the .dll that is produced by `dotnet build`. Executables produced by `dotnet build` are actually the default .NET Core host (so that the app can be launched directly from the command line in mainline scenarios); user's code is compiled into a dll of the same name. 
+Once your host is built, it can be tested by running it from the command line and passing any arguments (like the managed app to run) the host expects. When specifying the .NET Core app for the host to run, be sure to use the .dll that is produced by `dotnet build`. Executables produced by `dotnet build` are actually the default .NET Core host (so that the app can be launched directly from the command line in mainline scenarios); user's code is compiled into a dll of the same name. 
 
 If things don't work initially, double-check that coreclr.dll is available in the location expected by the host, that all necessary Framework libraries are in the TPA list, and that CoreCLR's bitness (32- or 64-bit) matches how the host was built.
 

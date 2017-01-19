@@ -39,7 +39,7 @@ int wmain(int argc, wchar_t* argv[])
 	printf("Sample CoreCLR Host\n\n");
 
 	//
-	// STEP 1: Get the app to run from the command line
+	// STEP 1: Get the app to be run from the command line
 	//
 	if (argc < 2)
 	{
@@ -136,7 +136,7 @@ int wmain(int argc, wchar_t* argv[])
 			// STARTUP_FLAGS::STARTUP_LOADER_OPTIMIZATION_MULTI_DOMAIN |		// Maximize domain-neutral loading
 			// STARTUP_FLAGS::STARTUP_LOADER_OPTIMIZATION_MULTI_DOMAIN_HOST |	// Domain-neutral loading for strongly-named assemblies
 			STARTUP_FLAGS::STARTUP_CONCURRENT_GC |						// Use concurrent GC
-			STARTUP_FLAGS::STARTUP_SINGLE_APPDOMAIN |					// All code executes in the default app-domain 
+			STARTUP_FLAGS::STARTUP_SINGLE_APPDOMAIN |					// All code executes in the default AppDomain 
 																		// (required to use the runtimeHost->ExecuteAssembly helper function)
 			STARTUP_FLAGS::STARTUP_LOADER_OPTIMIZATION_SINGLE_DOMAIN	// Prevents domain-neutral loading
 		)
@@ -273,12 +273,6 @@ int wmain(int argc, wchar_t* argv[])
 	wcscpy_s(nativeDllSearchDirectories, appPaths);
 	wcscat_s(nativeDllSearchDirectories, MAX_PATH * 50, L";");
 	wcscat_s(nativeDllSearchDirectories, MAX_PATH * 50, coreRoot);
-	wcscat_s(nativeDllSearchDirectories, MAX_PATH * 50, L";");
-
-	wchar_t systemRoot[MAX_PATH];
-	::ExpandEnvironmentStringsW(L"%SystemRoot%\\System32", systemRoot, MAX_PATH);
-
-	wcscat_s(nativeDllSearchDirectories, MAX_PATH * 50, systemRoot);
 
 
 	// PLATFORM_RESOURCE_ROOTS

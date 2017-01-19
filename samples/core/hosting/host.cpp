@@ -185,11 +185,8 @@ int wmain(int argc, wchar_t* argv[])
 
 	// Extensions to probe for when finding TPA list files
 	wchar_t *tpaExtensions[] = {
-		L"*.ni.dll",
 		L"*.dll",
-		L"*.ni.exe",
 		L"*.exe",
-		L"*.ni.winmd",
 		L"*.winmd"
 	};
 
@@ -317,6 +314,7 @@ int wmain(int argc, wchar_t* argv[])
 		L"AppDomainCompatSwitch"
 	};
 
+	// Property values which were constructed in step 5
 	const wchar_t* propertyValues[] = {
 		trustedPlatformAssemblies,
 		appPaths,

@@ -1,16 +1,16 @@
-.NET Core (Windows) Hosting Sample
+.NET Core Hosting Sample
 ==================================
 
-This sample demonstrates a very simple .NET Core Windows host. It is part of the [.NET Core hosting tutorial](https://docs.microsoft.com/dotnet/articles/core/tutorials/todo). Please see that topic for a more detailed explanation of this sample.
+This sample demonstrates a very simple .NET Core host. It is part of the [.NET Core hosting tutorial](https://docs.microsoft.com/en-us/dotnet/articles/core/tutorials/netcore-hosting). Please see that topic for a more detailed explanation of this sample.
 
 About .NET Core Hosts
 ---------------------
 
-.NET Core applications are always run by a host. In the vast majority of cases, the default dotnet.exe host is used.
+.NET Core applications are always run by a host. In most cases, the default dotnet.exe host is used.
 
 It is possible to create your own host, though, to enable starting and running .NET Core code from a native application, or to enable a high degree of control over how the runtime operates.
 
-.NET Core hosting is platform-specific, so Windows hosting code will look different from Linux/Mac hosts. This sample shows how to host .NET Core on Windows. Future samples will cover Unix scenarios.
+This sample only builds for Windows, currently, but the same approach can be used to host .NET Core on Linux or Mac. There are also [alternative hosting APIs](https://github.com/dotnet/coreclr/blob/8a05dcd07441b8779ec5b9eff9bdcb90f24fcb8e/src/coreclr/hosts/inc/coreclrhost.h) that may be easier to use in a Unix environment. This sample shows how to use the `ICLRRuntimeHost2` interface. Future samples will cover Unix scenarios.
 
 More complex, real-world hosts can be found in the [dotnet/coreclr](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts) repository.
 

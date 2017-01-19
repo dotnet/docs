@@ -439,7 +439,7 @@
 #### [Help for Event Handlers in Visual Basic Code](visual-basic/developing-apps/using-ide/help-for-event-handlers.md)
 #### [How to: Compile and Run a Project in Visual Basic](visual-basic/developing-apps/using-ide/how-to-compile-and-run-a-project.md)
 
-### [Programming in Visual Basic](visual-basic/developing-apps/programming/toc.md)
+### [Programming in Visual Basic](visual-basic/developing-apps/programming/programming.md)
 
 ### [Development with My](visual-basic/developing-apps/development-with-my/index.md)
 #### [Performing Tasks with My.Application, My.Computer, and My.User](visual-basic/developing-apps/development-with-my/performing-tasks-with-my-application-my-computer-and-my-user.md)
@@ -508,11 +508,11 @@
 #### [Debugging Expression Trees](visual-basic/programming-guide/concepts/expression-trees/debugging-expression-trees-in-visual-studio.md)
 
 ### [Iterators](visual-basic/programming-guide/concepts/iterators.md)
-### [Language-Integrated Query (LINQ)](visual-basic/programming-guide/concepts/linq/toc.md)
+### [Language-Integrated Query (LINQ)](visual-basic/programming-guide/concepts/linq/language-integrated-query.md)
 ### [Object-Oriented Programming](visual-basic/programming-guide/concepts/object-oriented-programming.md)
 ### [Reflection](visual-basic/programming-guide/concepts/reflection.md)
-### [Serialization](visual-basic/programming-guide/concepts/serialization/toc.md)
-### [Threading](visual-basic/programming-guide/concepts/threading/toc.md)
+### [Serialization](visual-basic/programming-guide/concepts/serialization/serialization.md)
+### [Threading](visual-basic/programming-guide/concepts/threading/threading.md)
 
 ## [Program Structure and Code Conventions](visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
 ### [Structure of a Program](visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)

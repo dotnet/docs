@@ -1,5 +1,5 @@
 ---
-title: dotnet-test command | .NET Core SDK
+title: dotnet-test command | Microsoft Docs
 description: The `dotnet test` command is used to execute unit tests in a given project.
 keywords: dotnet-test, CLI, CLI command, .NET Core
 author: blackdwarf
@@ -9,10 +9,14 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 3a0fa917-eb0a-4d7e-9217-d06e65455675
+ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 ---
 
-#dotnet-test
+#dotnet-test (Tooling Preview 4)
+
+> [!WARNING]
+> This topic applies to Visual Studio 2017 RC - .NET Core Tools Preview 4. For the .NET Core Tools Preview 2 version,
+> see the [dotnet-test](../../tools/dotnet-test.md) topic.
 
 ## Name
 

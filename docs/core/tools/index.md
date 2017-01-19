@@ -1,5 +1,5 @@
 ---
-title: .NET Core Command-Line Interface (CLI) Tools
+title: .NET Core Command-Line Interface (CLI) Tools | Microsoft Docs
 description: An overview of what the Command-Line Interface (CLI) is and its main features
 keywords: CLI, CLI tools, .NET, .NET Core
 author: blackdwarf
@@ -13,6 +13,10 @@ ms.assetid: b70e9ac0-c8be-49f7-9332-95ab93e0e7bc
 ---
 
 # .NET Core command-line interface tools
+
+> [!WARNING]
+> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools Preview 4 version,
+> see the [.NET Core command-line interface tools (Tooling Preview 4)](../preview3/tools/index.md) topic.
 
 The .NET Core command-line interface (CLI) is a new foundational cross-platform toolchain for developing 
 .NET Core applications. It is "foundational" because it is the primary layer on which other, 

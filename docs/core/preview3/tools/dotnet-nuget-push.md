@@ -1,5 +1,5 @@
 ---
-title: dotnet-nuget-push command | .NET Core SDK
+title: dotnet-nuget-push command | Microsoft Docs
 description: The dotnet-nuget-push command pushes a package to the server and publishes it. 
 keywords: dotnet-nuget-push, CLI, CLI command, .NET Core
 author: karann-msft

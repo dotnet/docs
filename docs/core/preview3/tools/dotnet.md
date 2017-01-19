@@ -1,5 +1,5 @@
 ---
-title: dotnet command | .NET Core SDK
+title: dotnet command | Microsoft Docs
 description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.  
 keywords: dotnet, CLI, CLI commands, .NET Core
 author: blackdwarf
@@ -9,10 +9,14 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 93015521-2127-4fe9-8fce-ca79bcc4ff49
+ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 ---
 
-#dotnet command
+#dotnet command (Tooling Preview 4)
+
+> [!WARNING]
+> This topic applies to Visual Studio 2017 RC - .NET Core Tools Preview 4. For the .NET Core Tools Preview 2 version,
+> see the [dotnet command](../../tools/dotnet.md) topic.
 
 ## Name
 
@@ -66,9 +70,9 @@ The following commands exist for dotnet:
 * [dotnet-pack](dotnet-pack.md)
    * Creates a NuGet package of your code.
 * [dotnet-migrate](dotnet-migrate.md)
-   * Migrates a valid Preview 2 project to a Preview 3 project
+   * Migrates a valid Preview 2 project to a Preview 4 project.
 * [dotnet-msbuild](dotnet-msbuild.md)
-   * Provides access to MSBuild command line
+   * Provides access to MSBuild command line.
 
 ## Examples
 

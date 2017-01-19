@@ -12,9 +12,9 @@ ms.devlang: csharp
 ms.assetid: 069ad711-3eaa-45c6-94d7-b40249cc8b99
 ---
 
-# Testing a class library with .NET Core in Visual Studio 2017 RC #
+# Testing a class library with .NET Core in Visual Studio 2017 #
 
-In [Building a class library with C# and .NET Core in Visual Studio 2017 RC](library-with-visual-studio-2017.md), we created a simple class library that adds an extension method to the @System.String class. Now, we'll create a unit test to make sure that it works as expected. We'll add our unit test project to the solution we created in the previous topic.
+In [Building a class library with C# and .NET Core in Visual Studio 2017](library-with-visual-studio-2017.md), we created a simple class library that adds an extension method to the @System.String class. Now, we'll create a unit test to make sure that it works as expected. We'll add our unit test project to the solution we created in the previous topic.
 
 ## Creating a unit test project ##
 
@@ -36,7 +36,7 @@ To create the unit test project, do the following:
 
    - It imports the [Microsoft.VisualStudio.TestTools.UnitTesting](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.aspx) namespace, which contains the types used for unit testing.
 
-   - It applies the [\[TestClass\]](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.testclassattribute.aspx) attribute to the `TestClass1` class. Each test method in a test class tagged with the \[TestMethod\] attribute will be executed automatically when the unit test is run.
+   - It applies the [\[TestClass\]](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.testclassattribute.aspx) attribute to the `UnitTest1` class. Each test method in a test class tagged with the \[TestMethod\] attribute will be executed automatically when the unit test is run.
 
    - It applies the [\[TestMethod\]](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.testmethodattribute.aspx) attribute to define `TestMethod1` as a test method to be automatically executed when the unit test is run.
 

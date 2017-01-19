@@ -6,5 +6,5 @@ redirect_url: /dotnet/articles/csharp/getting-started/with-visual-studio-2017
 
 ## Content updated!
 
-For a getting started tutorial on .NET Core and Visual Studio 2017, see [(Building a C# Hello World application with .NET Core in Visual Studio 2017](with-visual-studio-2017.md).
+For a getting started tutorial on .NET Core and Visual Studio 2017, see [(Building a C# Hello World application with .NET Core in Visual Studio 2017](../../csharp/getting-started/with-visual-studio-2017.md).
 

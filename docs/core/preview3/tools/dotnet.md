@@ -72,7 +72,7 @@ The following commands exist for dotnet:
 * [dotnet-migrate](dotnet-migrate.md)
    * Migrates a valid Preview 2 project to a Preview 4 project.
 * [dotnet-msbuild](dotnet-msbuild.md)
-   * Provides access to MSBuild command line.
+   * Provides access to the MSBuild command line.
 
 ## Examples
 

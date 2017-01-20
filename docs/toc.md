@@ -169,6 +169,7 @@
 ### [Changes in CLI Preview 4 overview](core/preview3/tools/layering.md)
 ### [Dependency management with .NET Core Tools Preview 4](core/preview3/tools/dependencies.md)
 ### [Deploying applications with .NET Core Tools Preview 4](core/preview3/deploying/index.md)
+### [Additions to the csproj format](core/preview3/deploying/csproj.md)
 ### [Telemetry](core/preview3/tools/telemetry.md)
 ### [Extensibility Model](core/preview3/tools/extensibility.md)
 ### [dotnet](core/preview3/tools/dotnet.md)

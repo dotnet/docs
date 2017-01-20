@@ -32,10 +32,10 @@ ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 
 ## Description
 
-The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a nuget package. If the `--include-symbols` 
+The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a NuGet package. If the `--include-symbols` 
 option is present, another package containing the debug symbols will be created. 
 
-NuGet dependencies of the project being packed are added to the nuspec file, so they are able to be resolved when the package is installed. 
+NuGet dependencies of the project being packed are added to the `nuspec` file, so they are able to be resolved when the package is installed. 
 Project-to-project references are not packaged inside the project. Currently, you need to have a package per project if you have project-to-project dependencies.
 
 `dotnet pack` by default first builds the project. If you wish to avoid this, pass the `--no-build` option. This can be useful in Continuous Integration (CI) build scenarios in which you know the code was just previously built, for example. 
@@ -61,7 +61,7 @@ Does not build the project before packing.
 
 `--include-source`
 
-Includes the source files into the NuGet package. The sources files are included in the `src` folder within the nupkg. 
+Includes the source files in the NuGet package. The sources files are included in the `src` folder within the `nupkg`. 
 
 `--include-symbols`
 

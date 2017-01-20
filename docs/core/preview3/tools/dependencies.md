@@ -32,7 +32,7 @@ The `<PackageReference>` has the following basic structure:
 If you are familiar with MSBuild, it will look familiar to the other reference types that already exist. The key is the `Include` statement which specifies the package id that you wish to add to the project. The `<Version>` child element specifies the version to get. The versions are specified as per [NuGet version rules](https://docs.microsoft.com/nuget/create-packages/dependency-versions#version-ranges).
 
 > [!NOTE]
-> If you are not familiar with the overall `csproj` syntax, you can use the MSBuild project reference documentation to get acquainted.  
+> If you are not familiar with the overall `csproj` syntax, see the [MSBuild project reference](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation for more information.  
 
 Adding a dependency that is available only in a specific target is done using conditions like in the following example:
 

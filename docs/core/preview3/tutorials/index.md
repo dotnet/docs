@@ -25,4 +25,4 @@ The following tutorials are available for learning about .NET Core using Preview
 - [Getting started with .NET Core on Windows, using Visual Studio 2017](using-on-windows-vs-2017.md)
 - [Building a complete .NET Core solution on Windows, using Visual Studio 2017](using-on-windows-vs-2017-full-solution.md)
 
-For tutorials about developing ASP.NET Core web applications, we suggest you head over to [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/).
+For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/).

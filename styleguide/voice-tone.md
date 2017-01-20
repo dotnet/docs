@@ -6,7 +6,7 @@ help with that. Our style guide contains four recommendations:
 - [Use a Conversational Tone](#use-a-conversational-tone)
 - [Write in Second Person](#write-in-2nd-person)
 - [Use Active Voice](#use-active-voice)
-- [Target a 5th Grade Reading Level](#target-a-5th-grade-reading-level)
+- [Target a 5th Grade Reading Level](#target-a-fifth-grade-reading-level)
 
 You will see examples of each of these as you read this style guide. We've written this guide
 following our guidelines to provide examples for you to follow as you build documentation

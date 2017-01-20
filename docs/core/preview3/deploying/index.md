@@ -117,7 +117,7 @@ Deploying a framework-dependent deployment with one or more third-party dependen
       </ItemGroup>
     ```
 
- Note that the SDK dependency remains in the above example. This is by design, since this depdendency is required to restore all the needed targets to allow the command line tools to function.  
+ Note that the SDK dependency remains in the above example. This is by design, since this dependency is required to restore all the needed targets to allow the command line tools to function.  
 
 2. If you haven't already, download the NuGet package containing the third-party dependency. To download the package, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
 

@@ -1,18 +1,22 @@
 ---
-title: .NET Core Tools Telemetry
+title: .NET Core Tools Telemetry | Microsoft Docs
 description: .NET Core
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
-ms.date: 07/06/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: f2b312bb-f80b-4b0d-9101-93908f06a6fa
+ms.assetid: 480df976-7568-4df4-9d26-9911357b5a31
 ---
 
-# .NET Core Tools Telemetry
+# .NET Core Tools Telemetry (Tooling Preview 4)
+
+> [!WARNING]
+> This topic applies to Visual Studio 2017 RC - .NET Core Tools Preview 4. For the .NET Core Tools Preview 2 version,
+> see the [.NET Core Tools Telemetry](../../tools/telemetry.md) topic.
 
 The .NET Core Tools include a [telemetry feature](https://github.com/dotnet/cli/pull/2145) that collects usage information. It’s important that the .NET Team understands how the tools are being used so that we can improve them.
 

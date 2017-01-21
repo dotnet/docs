@@ -1,5 +1,5 @@
 ---
-title: .NET Core Command-Line Interface (CLI) Tools
+title: .NET Core Command-Line Interface (CLI) Tools | Microsoft Docs
 description: An overview of what the Command-Line Interface (CLI) is and its main features
 keywords: CLI, CLI tools, .NET, .NET Core
 author: blackdwarf
@@ -9,10 +9,14 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: b70e9ac0-c8be-49f7-9332-95ab93e0e7bc
+ms.assetid: 7c5eee9f-d873-4224-8f5f-ed83df329a59
 ---
 
-# .NET Core command-line interface tools
+# .NET Core command-line interface tools (Tooling Preview 4)
+
+> [!WARNING]
+> This topic applies to Visual Studio 2017 RC - .NET Core Tools Preview 4. For the .NET Core Tools Preview 2 version,
+> see the [.NET Core command-line interface tools](../../tools/index.md) topic.
 
 The .NET Core command-line interface (CLI) is a new foundational cross-platform toolchain for developing 
 .NET Core applications. It is "foundational" because it is the primary layer on which other, 
@@ -111,7 +115,7 @@ CLI enables applications to be portable in two main ways:
 
 You can learn more about both of these in the [.NET Core application deployment](../deploying/index.md) topic. 
 
-## Migration from Preview 3/project.json
+## Migration from Preview 4/project.json
 If you used Preview 2 tooling and project.json projects, you can consult the [dotnet migrate](dotnet-migrate.md) command docs
 to get acquainted with the command and how to migrate your project. 
 

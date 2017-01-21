@@ -82,7 +82,7 @@ title: .NET Documentation
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/articles/welcome">What is .NET?</a></h3>
-                                                <p><a href="https://www.microsoft.com/net">Get Started</a></p>
+                                                <p><a href="/dotnet/articles/standard/getting-started">Get Started</a></p>
                                                 <p><a href="/dotnet/articles/standard/tour">Tour of .NET</a></p>
                                                 <p><a href="/dotnet/articles/standard/components">.NET Architectural Concepts</a></p>
                                             </div>
@@ -104,7 +104,7 @@ title: .NET Documentation
                                                 <p><a href="/dotnet/articles/core/getting-started">Get Started</a></p>
                                                 <p><a href="/dotnet/articles/core/tutorials">Tutorials</a></p>
                                                 <p><a href="/dotnet/articles/core/porting">Porting from .NET Framework</a></p>
-                                                <p><a href="https://docs.asp.net/en/latest/getting-started.html">ASP.NET Core</a></p>
+                                                <p><a href="/aspnet/core/getting-started">ASP.NET Core</a></p>
                                             </div>
                                         </div>
                                     </div>

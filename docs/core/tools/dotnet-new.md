@@ -1,5 +1,5 @@
 ---
-title: dotnet-new command | .NET Core
+title: dotnet-new command | Microsoft Docs
 description: The dotnet-new command creates new .NET Core projects in the current directory.
 keywords: dotnet-new, CLI, CLI command, .NET Core
 author: blackdwarf
@@ -13,6 +13,10 @@ ms.assetid: 263c3d05-3a47-46a6-8023-3ca16b488410
 ---
 
 #dotnet-new
+
+> [!WARNING]
+> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools Preview 4 version,
+> see the [dotnet-new (Tooling Preview 4)](../preview3/tools/dotnet-new.md) topic.
 
 ## Name
 `dotnet-new` - Creates a new .NET Core project in the current directory.

@@ -1,6 +1,6 @@
 ---
-title: dotnet-msbuild command | .NET Core SDK
-description: The dotnet-msmsbuild command provides access to MSmsbuild command line
+title: dotnet-msbuild command | Microsoft Docs
+description: The dotnet-msbuild command provides access to the MSBuild command line.
 keywords: dotnet-msmsbuild, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
@@ -14,8 +14,10 @@ ms.assetid: ffdc40ba-ef33-463e-aa35-b0af1fe615a2
 
 #dotnet-msbuild
 
+[!INCLUDE[preview-warning](../../../includes/warning.md)]
+
 ## Name 
-dotnet-msbuild -- Builds a project and all of its dependencies 
+dotnet-msbuild -- Builds a project and all of its dependencies.
 
 ## Synopsis
 

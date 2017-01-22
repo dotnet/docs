@@ -101,6 +101,9 @@ The template creates eight files for you:
 * A web.config file. This contains basic configuration information.
 * A Properties/launchSettings.json file. This contains debugging settings used by IDEs.
 
+Run following command to create "proj" file.
+`dotnet migrate`
+
 Now you can run the template generated application. That's done using a series
 of tools from the command line. The `dotnet` command runs the tools necessary
 for .NET development. Each verb executes a different command

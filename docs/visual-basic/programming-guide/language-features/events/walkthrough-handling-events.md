@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Handling Events (Visual Basic) | Microsoft Docs"
+title: "Handling Events (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Accessing the Web by Using Async and Await (Visual Basic) | Microsoft Docs"
+title: "Accessing the Web with Async and Await (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

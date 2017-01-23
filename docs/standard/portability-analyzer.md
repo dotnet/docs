@@ -4,7 +4,7 @@ description: Learn how to use the .NET Portability Analyzer tool to evaluate how
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 07/05/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -43,4 +43,4 @@ Don’t want to use Visual Studio? You can also use the Portability Analyzer fro
 
 Your .NET Portability Report will be saved as an Excel file (*.xlsx*) in your current directory. The **Details** tab in the Excel Workbook will contain more information.
 
-For more info on the .NET Portability Analyzer, check out the [GitHub documentation](https://github.com/Microsoft/dotnet-apiport#documentation) and [A Brief Look at the .NET Portability Analyzer](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer) Channel 9 video.
+For more information on the .NET Portability Analyzer, visit the [GitHub documentation](https://github.com/Microsoft/dotnet-apiport#documentation) and [A Brief Look at the .NET Portability Analyzer](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer) Channel 9 video.

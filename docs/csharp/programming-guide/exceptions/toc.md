@@ -5,4 +5,4 @@
 ## [Compiler-Generated Exceptions](compiler-generated-exceptions.md)
 ## [How to: Handle an Exception Using try-catch](how-to-handle-an-exception-using-try-catch.md)
 ## [How to: Execute Cleanup Code Using finally](how-to-execute-cleanup-code-using-finally.md)
-## [How to: Catch a non-CLS Exception](ow-to-catch-a-non-cls-exception.md)
+## [How to: Catch a non-CLS Exception](how-to-catch-a-non-cls-exception.md)

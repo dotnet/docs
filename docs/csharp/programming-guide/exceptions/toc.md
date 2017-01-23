@@ -1,4 +1,4 @@
-## [Exceptions and Exception Handling](index.md)
+# [Exceptions and Exception Handling](index.md)
 ## [Using Exceptions](using-exceptions.md)
 ## [Exception Handling](exception-handling.md)
 ## [Creating and Throwing Exceptions](creating-and-throwing-exceptions.md)

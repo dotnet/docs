@@ -1,5 +1,5 @@
 ---
-title: dotnet command | .NET Core SDK
+title: dotnet command | Microsoft Docs
 description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.  
 keywords: dotnet, CLI, CLI commands, .NET Core
 author: blackdwarf
@@ -13,6 +13,10 @@ ms.assetid: 93015521-2127-4fe9-8fce-ca79bcc4ff49
 ---
 
 #dotnet command
+
+> [!WARNING]
+> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools Preview 4 version,
+> see the [dotnet command (Tooling Preview 4)](../preview3/tools/dotnet.md) topic.
 
 ## Name
 

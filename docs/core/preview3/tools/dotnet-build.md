@@ -1,5 +1,5 @@
 ---
-title: dotnet-build command | .NET Core SDK
+title: dotnet-build command | Microsoft Docs
 description: The dotnet-build command builds a project and all of its dependencies. 
 keywords: dotnet-build, CLI, CLI command, .NET Core
 author: blackdwarf
@@ -9,10 +9,14 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 70285a83-4103-4617-be8b-d0e1e9a4a91d
+ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 ---
 
-#dotnet-build
+#dotnet-build (Tooling Preview 4)
+
+> [!WARNING]
+> This topic applies to Visual Studio 2017 RC - .NET Core Tools Preview 4. For the .NET Core Tools Preview 2 version,
+> see the [dotnet-build](../../tools/dotnet-build.md) topic.
 
 ## Name 
 dotnet-build -- Builds a project and all of its dependencies 

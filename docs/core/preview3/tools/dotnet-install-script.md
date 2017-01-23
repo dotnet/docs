@@ -1,5 +1,5 @@
 ---
-title: dotnet-install scripts | .NET Core SDK
+title: dotnet-install scripts | Microsoft Docs
 description: Learn about the dotnet-install scripts to install the .NET Core CLI tools and the shared runtime. 
 keywords: dotnet-install, dotnet-install scripts, .NET Core
 author: blackdwarf
@@ -9,10 +9,14 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 59b9c456-2bfd-4adc-8202-a1c6a0a6c787
+ms.assetid: b64e7e6f-ffb4-4fc8-b43b-5731c89479c2
 ---
 
-#dotnet-install scripts reference
+#dotnet-install scripts reference (Tooling Preview 4)
+
+> [!WARNING]
+> This topic applies to Visual Studio 2017 RC - .NET Core Tools Preview 4. For the .NET Core Tools Preview 2 version,
+> see the [dotnet-install scripts reference](../../tools/dotnet-install-script.md) topic.
 
 ## Name
 dotnet-install.ps1 | dotnet-install.sh - script used to install the Command Line Interface (CLI) tools and the shared runtime

@@ -1,6 +1,6 @@
 ---
-title: Managing dependencies in .NET Core Preview 3 tooling
-description: Preview 3 brings about changes to how dependencies are managed
+title: Managing dependencies in .NET Core Preview 4 tooling | Microsoft Docs
+description: Preview 4 brings about changes to how dependencies are managed
 keywords: CLI, extensibility, custom commands, .NET Core
 author: blackdwarf
 ms.author: mairaw
@@ -12,9 +12,11 @@ ms.devlang: dotnet
 ms.assetid: 74b87cdb-a244-4c13-908c-539118bfeef9
 ---
 
-# Managing dependencies in .NET Core Preview 3 tooling
+# Managing dependencies in .NET Core Preview 4 tooling
 
-With the move of .NET Core projects from project.json to csproj and MSBuild, a significant invesment also happened that resulted in unification of the project file and assets that allow tracking of depenencies. For .NET Core projects this is similar to what project.json did. There is no separate JSON or XML file that tracks NuGet dependencies. With this change, we've also introduced another type of *reference* into the csproj syntax called the `<PackageReference>`. 
+[!INCLUDE[preview-warning](../../../includes/warning.md)]
+
+With the move of .NET Core projects from project.json to csproj and MSBuild, a significant investment also happened that resulted in unification of the project file and assets that allow tracking of depenencies. For .NET Core projects this is similar to what project.json did. There is no separate JSON or XML file that tracks NuGet dependencies. With this change, we've also introduced another type of *reference* into the csproj syntax called the `<PackageReference>`. 
 
 This document describes the new reference type. It also shows how to add a package dependency using this new reference type to your project. 
 
@@ -27,12 +29,12 @@ The `<PackageReference>` has the following basic structure:
 </PackageReference>
 ```
 
-If you are familiar with MSBuild, it will look familiar to the other [reference types]() that already exist. The key is the `Include` statement which specifies the package id that you wish to add to the project. The `<Version>` child element specifies the version to get. The versions are specified as per [NuGet version rules](https://docs.nuget.org/ndocs/create-packages/dependency-versions#version-ranges).  
+If you are familiar with MSBuild, it will look familiar to the other reference types that already exist. The key is the `Include` statement which specifies the package id that you wish to add to the project. The `<Version>` child element specifies the version to get. The versions are specified as per [NuGet version rules](https://docs.microsoft.com/nuget/create-packages/dependency-versions#version-ranges).
 
 > [!NOTE]
-> If you are not familiar with the overall `csproj` syntax, you can use the [MSBuild project reference documentation]() to get acquainted.  
+> If you are not familiar with the overall `csproj` syntax, see the [MSBuild project reference](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation for more information.  
 
-Adding a dependency that is available only in a specific target is done using conditions:
+Adding a dependency that is available only in a specific target is done using conditions like in the following example:
 
 ```xml
 <PackageReference Include="PACKAGE_ID" Condition="'$(TargetFramework)' == 'netcoreapp1.0'">
@@ -90,6 +92,4 @@ The full project looks like this:
 ```
 
 ## Removing a dependency from the project
-Removing a dependency from the project file involves simply removing the `<PackageReference>` from the project file. 
-
-
+Removing a dependency from the project file involves simply removing the `<PackageReference>` from the project file.

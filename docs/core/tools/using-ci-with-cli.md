@@ -1,5 +1,5 @@
 ---
-title: Using .NET Core SDK and tools in Continuous Integration (CI)
+title: Using .NET Core SDK and tools in Continuous Integration (CI) | Microsoft Docs
 description: Using .NET Core SDK and tools in Continuous Integration (CI)
 keywords: .NET, .NET Core
 author: blackdwarf
@@ -13,6 +13,10 @@ ms.assetid: 5fb15297-a276-417f-8c4f-267281357769
 ---
 
 # Using .NET Core SDK and tools in Continuous Integration (CI)
+
+> [!WARNING]
+> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools Preview 4 version,
+> see the [Using .NET Core SDK and tools in Continuous Integration (CI) (Tooling Preview 4)](../preview3/tools/using-ci-with-cli.md) topic.
 
 ## Overview
 This document outlines the usage of .NET Core SDK and its tools on the build server. In general, on a CI build server, 

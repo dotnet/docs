@@ -66,6 +66,6 @@ End Namespace
 ```  
   
 ## See Also  
- [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md)   
+ [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)   
  [Extension Methods](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)   
  [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)

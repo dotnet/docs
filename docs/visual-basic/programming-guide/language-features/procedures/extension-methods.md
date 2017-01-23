@@ -205,5 +205,5 @@ End Module
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
  [Optional Parameters](./optional-parameters.md)   
  [Parameter Arrays](./parameter-arrays.md)   
- [Attributes](../../../../visual-basic/programming-guide/concepts/attributes/index.md)   
+ [Attributes overview](../../../../visual-basic/programming-guide/concepts/attributes/index.md)   
  [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)

@@ -13,7 +13,9 @@
             public TwoDPoint(int x, int y)
             {
                 if ((x < 1) || (x > 2000) || (y < 1) || (y > 2000))
+                {
                     throw new System.ArgumentException("Point must be in range 1 - 2000");
+                }
                 this.X = x;
                 this.Y = y;
             }

@@ -44,4 +44,4 @@ translation.priority.ht:
 |<xref:Microsoft.VisualBasic.VBFixedStringAttribute>|Indicates that a string should be treated as if it were fixed length.|  
   
 ## See Also  
- [Attributes](../../visual-basic/programming-guide/concepts/attributes/index.md)
+ [Attributes overview](../../visual-basic/programming-guide/concepts/attributes/index.md)

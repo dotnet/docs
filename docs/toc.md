@@ -1565,7 +1565,7 @@
 ##### [Handling Reentrancy in Async Apps](visual-basic/programming-guide/concepts/async/handling-reentrancy-in-async-apps.md)
 ##### [Using Async for File Access](visual-basic/programming-guide/concepts/async/using-async-for-file-access.md)
 
-#### [Attributes](visual-basic/programming-guide/concepts/attributes/index.md)
+#### [Attributes overview](visual-basic/programming-guide/concepts/attributes/index.md)
 ##### [Creating Custom Attributes](visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)
 ###### [AttributeUsage](visual-basic/programming-guide/concepts/attributes/attributeusage.md)
 ##### [Accessing Attributes by Using Reflection](visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

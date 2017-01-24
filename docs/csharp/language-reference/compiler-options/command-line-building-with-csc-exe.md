@@ -115,7 +115,7 @@ You can invoke the C# compiler by typing the name of its executable file (csc.ex
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
  [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)   
  [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)   
- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md)   
+ [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)   
  [Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/command-line-arguments.md)   
  [How to: Display Command Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)   
  [How to: Access Command-Line Arguments Using foreach](../../../csharp/programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)   

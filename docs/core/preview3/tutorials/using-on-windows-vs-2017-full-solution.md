@@ -64,7 +64,7 @@ Follow the instructions on [our prerequisites page](../windows-prerequisites.md)
 
 ### Writing the console app
 
-1. In Solution Explorer, open the context menu for the solution, and add a new **Console App (.NET Core)** project. Name it "App", and set the location to `Golden\src`.
+1. In Solution Explorer, open the context menu for the solution, and add a new **Console App (.NET Core)** project. Name it "App".
 
 2. In the **App** project, open the context menu for the **Dependencies** node and choose **Add**,  **Reference**. 
 
@@ -72,7 +72,7 @@ Follow the instructions on [our prerequisites page](../windows-prerequisites.md)
 
 6. Open the context menu for the **App** node and choose **Set as StartUp Project**. This ensures that hitting F5 or CTRL+F5 will start the console app.
 
-7. Open the `Program.cs` file, add a `using Library;` directive to the top of the file, and then add `Console.WriteLine($"The answer is {new Thing().Get(42)}");` to the `Main` method.
+7. Open the `Program.cs` file, add a `using Library;` directive to the top of the file, and then add `Console.WriteLine($"The answer is {new Thing().Get(42)}.");` to the `Main` method.
 
 8. Set a breakpoint after the line that you just added.
 

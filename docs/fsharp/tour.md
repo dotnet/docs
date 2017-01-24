@@ -4,7 +4,7 @@ description: Tour of F#
 keywords: visual f#, f#, functional programming, .NET, tour
 author: cartermp
 ms.author: phcart
-ms.date: 08/18/2016
+ms.date: 01/24/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp
@@ -65,7 +65,7 @@ It's important to note that because `struct` tuples are value types, they are ca
 
 ## Pipelines and Composition
 
-Pipe operators (`|>`, `<|`, `||>`, `<||`, `|||>`, `<|||`) and composition operators (`>>` and `<<`) are used extensively when processing data in F#.  These operators are functions which allow you to establish "pipelines" of functions in a flexible manner.  The following walks though how you could take advantage of these operators to build a simple functional pipeline.
+Pipe operators (`|>`, `<|`, `||>`, `<||`, `|||>`, `<|||`) and composition operators (`>>` and `<<`) are used extensively when processing data in F#.  These operators are functions which allow you to establish "pipelines" of functions in a flexible manner.  The following example walks though how you could take advantage of these operators to build a simple functional pipeline.
 
 [!code-fsharp[Pipelines](../../samples/snippets/fsharp/tour.fs#L227-L300)]
 

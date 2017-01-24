@@ -58,5 +58,5 @@ These examples show various ways to write text to a file.  The first two example
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)   
+ [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)   
  [Sample: Save a collection to Application Storage](http://code.msdn.microsoft.com/CSWinStoreAppSaveCollection-bed5d6e6)

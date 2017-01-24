@@ -58,7 +58,7 @@ translation.priority.ht:
   
  Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
- For more information about exception handling, see [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/exceptions-and-exception-handling.md).  
+ For more information about exception handling, see [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md).  
   
 ## Example  
  [!code-cs[csProgGuideDocComments#4](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/exception_1.cs)]  

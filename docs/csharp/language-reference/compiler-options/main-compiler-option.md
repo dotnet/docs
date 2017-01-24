@@ -46,7 +46,7 @@ This option specifies the class that contains the entry point to the program, if
  The type that contains the **Main** method.  
   
 ## Remarks  
- If your compilation includes more than one type with a [Main](../../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md) method, you can specify which type contains the **Main** method that you want to use as the entry point into the program.  
+ If your compilation includes more than one type with a [Main](../../../csharp/programming-guide/main-and-command-args/index.md) method, you can specify which type contains the **Main** method that you want to use as the entry point into the program.  
   
  This option is for use when compiling an .exe file.  
   

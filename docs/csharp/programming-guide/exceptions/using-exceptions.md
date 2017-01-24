@@ -67,4 +67,4 @@ In C#, errors in the program at run time are propagated through the program by u
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/exceptions-and-exception-handling.md)
+ [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)

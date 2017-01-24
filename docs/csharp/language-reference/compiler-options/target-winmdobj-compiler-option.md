@@ -41,7 +41,7 @@ If you use the **/target:winmdobj** compiler option, the compiler creates an int
   
  The output of a file that’s compiled by using the **/target:winmdobj** compiler option is designed to be used only as input for the WimMDExp export tool; the .winmdobj file itself isn’t referenced directly.  
   
- Unless you use the [/out](../../../csharp/language-reference/compiler-options/out-compiler-option.md) option, the output file name takes the name of the first input file. A [Main](../../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md) method isn’t required.  
+ Unless you use the [/out](../../../csharp/language-reference/compiler-options/out-compiler-option.md) option, the output file name takes the name of the first input file. A [Main](../../../csharp/programming-guide/main-and-command-args/index.md) method isn’t required.  
   
  If you specify the /target:winmdobj option at a command prompt, all files until the next **/out** or [/target:module](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md) option are used to create the Windows program.  
   

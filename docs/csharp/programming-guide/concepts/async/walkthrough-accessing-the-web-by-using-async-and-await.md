@@ -25,7 +25,7 @@ translation.priority.mt:
 # Walkthrough: Accessing the Web by Using async and await (C#)
 You can write asynchronous programs more easily and intuitively by using features that were introduced in [!INCLUDE[vs_dev11_long](../../../../csharp/includes/vs_dev11_long_md.md)]. You can write asynchronous code that looks like synchronous code and let the compiler handle the difficult callback functions and continuations that asynchronous code usually entails.  
   
- For more information about the Async feature, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md).  
+ For more information about the Async feature, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md).  
   
  This walkthrough starts with a synchronous Windows Presentation Foundation (WPF) application that sums the number of bytes in a list of websites. The walkthrough then converts the application to an asynchronous solution by using the new features.  
   
@@ -721,7 +721,7 @@ namespace AsyncExampleWPF
  [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](http://go.microsoft.com/fwlink/?LinkId=255191)   
  [async](../../../../csharp/language-reference/keywords/async.md)   
  [await](../../../../csharp/language-reference/keywords/await.md)   
- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)   
+ [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)   
  [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md)   
  [Task-based Asynchronous Programming (TAP)](http://go.microsoft.com/fwlink/?LinkId=204847)   
  [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](../../../../csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)   

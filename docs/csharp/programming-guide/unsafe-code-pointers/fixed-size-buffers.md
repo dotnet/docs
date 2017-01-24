@@ -76,4 +76,4 @@ private fixed char name[30];
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)   
  [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)   
- [Interoperability](../../../csharp/programming-guide/interop/interoperability.md)
+ [Interoperability](../../../csharp/programming-guide/interop/index.md)

@@ -2,7 +2,7 @@
 title: Pattern Matching | C# Guide
 description: Learn about pattern matching expressions in C#
 keywords: .NET, .NET Core, C#
-ms.date: 12/09/2016
+ms.date: 01/24/2017
 ms.author: wiwagn
 ms.topic: article
 ms.prod: .net

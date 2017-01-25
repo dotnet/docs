@@ -114,7 +114,7 @@ namespace PatternMatching
                 case Rectangle r when r.Length == 0 || r.Height == 0:
                     return 0;
 
-                case Square s when s.Side < 5:
+                case Square s:
                     return s.Side * s.Side;
                 case Circle c:
                     return c.Radius * c.Radius * Math.PI;

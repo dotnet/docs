@@ -35,7 +35,7 @@ familiar with building class hierarchies and creating
 customize object behavior based on the runtime type of the object.
 
 Those techniques aren't possible for data that isn't structured in a class
-hierarchy. When data and methods are separate you need other tools. The new
+hierarchy. When data and methods are separate, you need other tools. The new
 *pattern matching* constructs enable cleaner syntax to examine data
 and manipulate control flow based on any condition of that data.
 
@@ -44,7 +44,7 @@ different geometric shapes. But, you'll do it without resorting to object
 oriented techniques and building a class hierarchy for the different shapes.
 You'll use *pattern matching* instead. To further emphasize that we're not
 using inheritance, you'll make each shape a `struct` instead of a class. 
-As you go though this sample, contrast this code with how it would
+As you go through this sample, contrast this code with how it would
 be structured as an object hierarchy. When the data you must
 query and manipulate is not a class hierarchy, pattern matching enables
 very elegent designs.
@@ -182,14 +182,14 @@ This example introduces two different variables in the two `case` labels
 for the first `switch` block. Notice that the statements in this `switch` block
 do not use either the variables `c` (for the circle), or `s` (for the square).
 Neither of those variables is definitely assigned in this `switch` block.
-If either of tehse cases match, clearly one of the variables has been assigned.
+If either of these cases match, clearly one of the variables has been assigned.
 However, it is impossible to tell *which* has been assigned at compile-time,
 because either case could match at runtime. For that reason,
 most times when you use multiple `case` labels for the same block, you won't
 introduce a new variable in the `case` statement, or you will only use the
 variable only in the `when` clause.
 
-Having adding those shapes with 0 area, let's add a couple more shape types:
+Having added those shapes with 0 area, let's add a couple more shape types:
 a rectangle and a triangle:
 
 [!code-csharp[AddRectangleAndTriangle](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#09_AddRectangleAndTriangle "Add rectangle and triangle")]

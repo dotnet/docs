@@ -96,7 +96,11 @@ The only plugin required for F# support in Visual Studio Code is [Ionide-fsharp]
 
 ## Creating your first project with Ionide
 
-To create a new F# project, open Visual Studio Code in a new directory (you can name it whatever you like).  Next, open the Command Palette (Ctrl+P on Windows, ⌘+P on macOS, Ctrl+Shift+P on Linux) and type the following:
+To create a new F# project, open Visual Studio Code in a new folder (you can name it whatever you like).
+
+![](media/getting-started-vscode/vscode-open-dir.png)
+
+Next, open the Command Palette (Ctrl+P on Windows, ⌘+P on macOS, Ctrl+Shift+P on Linux) and type the following:
 
 ```
 >f#: New Project

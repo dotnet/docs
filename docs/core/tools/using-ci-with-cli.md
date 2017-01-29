@@ -74,7 +74,7 @@ The [travis-ci](https://travis-ci.org/) can be configured to install the .NET Co
 Just use:
 
 ```yaml
-dotnet: 1.0.0-preview2-003121
+dotnet: 1.0.0-preview2.1-003177
 ```
 
 Travis can run both `osx` (OS X 10.11) and `linux` ( Ubuntu 14.04 ) job in a build matrix, see [example .travis.yml](https://github.com/dotnet/docs/blob/master/.travis.yml) 

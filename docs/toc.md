@@ -498,16 +498,9 @@
 #### [Customizing Which Objects are Available in My](visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)
 
 ## [Programming Concepts](visual-basic/programming-guide/concepts/index.md)
-### [Assemblies and the Global Assembly Cache](visual-basic/programming-guide/concepts/assemblies-gac/toc.md)
-### [Asynchronous Programming with Async and Await](visual-basic/programming-guide/concepts/async/toc.md)
-### [Attributes](visual-basic/programming-guide/concepts/attributes/toc.md)
-#### [Attributes overview](visual-basic/programming-guide/concepts/attributes/index.md)
-
-##### [Creating Custom Attributes](visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)
-###### [AttributeUsage](visual-basic/programming-guide/concepts/attributes/attributeusage.md)
-##### [Accessing Attributes by Using Reflection](visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)
-##### [How to: Create a C/C++ Union by Using Attributes](visual-basic/programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md)
-##### [Common Attributes](visual-basic/programming-guide/concepts/attributes/common-attributes.md)
+### [Assemblies and the Global Assembly Cache](visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+### [Asynchronous Programming with Async and Await](visual-basic/programming-guide/concepts/async/index.md)
+### [Attributes](visual-basic/programming-guide/concepts/attributes/index.md)
 
 ### [Expression Trees](visual-basic/programming-guide/concepts/expression-trees/index.md)
 #### [How to: Execute Expression Trees](visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)

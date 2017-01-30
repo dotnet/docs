@@ -1,4 +1,4 @@
-# [Attributes](attributes.md)
+# [Attributes](index.md)
 ## [Creating Custom Attributes](creating-custom-attributes.md)
 ### [AttributeUsage](attributeusage.md)
 ## [Accessing Attributes by Using Reflection](accessing-attributes-by-using-reflection.md)

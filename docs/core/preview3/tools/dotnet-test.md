@@ -28,7 +28,7 @@ ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
     [--settings] [--listTests] [--testCaseFilter] 
     [--testAdapterPath] [--logger] 
     [--configuration] [--output] [--framework] [--diag]
-    [--noBuild]`  
+    [--no-Build]`  
 
 ## Description
 
@@ -123,7 +123,7 @@ Looks for test binaries for a specific framework.
 
 Look for test binaries for a for the specified runtime.
 
-`--noBuild` 
+`--no-Build` 
 
 Does not build the test project prior to running it. 
 

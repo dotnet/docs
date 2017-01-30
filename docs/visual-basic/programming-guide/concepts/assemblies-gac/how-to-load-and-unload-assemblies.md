@@ -39,5 +39,5 @@ The assemblies referenced by your program will automatically be loaded at build 
   
 ## See Also  
  [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)   
- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache.md)   
+ [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
  [How to: Load Assemblies into an Application Domain](http://msdn.microsoft.com/library/1432aa2d-bd83-4346-bf3b-a1b7920e2aa9)

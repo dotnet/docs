@@ -131,7 +131,7 @@ End Class
   
 ```  
   
- For more information about how to create and use async methods, see [Asynchronous Programming with Async and Await](../../../../visual-basic/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md).  
+ For more information about how to create and use async methods, see [Asynchronous Programming with Async and Await](../../../../visual-basic/programming-guide/concepts/async/index.md).  
   
 ##  <a name="context"></a> Context  
  A lambda expression shares its context with the scope within which it is defined. It has the same access rights as any code written in the containing scope. This includes access to member variables, functions and subs, `Me`, and parameters and local variables in the containing scope.  

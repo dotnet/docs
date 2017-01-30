@@ -501,12 +501,7 @@
 ### [Assemblies and the Global Assembly Cache](visual-basic/programming-guide/concepts/assemblies-gac/index.md)
 ### [Asynchronous Programming with Async and Await](visual-basic/programming-guide/concepts/async/index.md)
 ### [Attributes](visual-basic/programming-guide/concepts/attributes/index.md)
-
 ### [Expression Trees](visual-basic/programming-guide/concepts/expression-trees/index.md)
-#### [How to: Execute Expression Trees](visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)
-#### [How to: Modify Expression Trees](visual-basic/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md)
-#### [How to: Use Expression Trees to Build Dynamic Queries](visual-basic/programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md)
-#### [Debugging Expression Trees](visual-basic/programming-guide/concepts/expression-trees/debugging-expression-trees-in-visual-studio.md)
 
 ### [Iterators](visual-basic/programming-guide/concepts/iterators.md)
 ### [Language-Integrated Query (LINQ)](visual-basic/programming-guide/concepts/linq/language-integrated-query.md)

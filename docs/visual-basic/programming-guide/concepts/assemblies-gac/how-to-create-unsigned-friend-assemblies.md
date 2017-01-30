@@ -99,7 +99,7 @@ This example shows how to use friend assemblies with assemblies that are unsigne
   
 ## See Also  
  <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>   
- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache.md)   
+ [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
  [Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md)   
  [How to: Create Signed Friend Assemblies (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)   
  [Programming Guide Concepts](../../../../visual-basic/programming-guide/concepts/index.md)

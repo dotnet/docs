@@ -17,7 +17,7 @@ This is a general description of .NET Core support.
 
 ## LTS and Current Release Trains
 
-Having two support release trains is a common concept in use throughout the software world, specially for open-source projects like .NET Core. .NET Core has two release trains: [Long Term Support (LTS)](https://en.wikipedia.org/wiki/Long-term_support) and Current. LTS releases are maintained for stability over their lifecycle, receiving fixes for important issues and security fixes. New feature work and additional bug fixes take place in Current releases. From a support perspective, these release trains have the following support lifecycle attributes.
+Having two support release trains is a common concept in use throughout the software world, specially for open-source projects like .NET Core. .NET Core has the following support release trains: [Long Term Support (LTS)](https://en.wikipedia.org/wiki/Long-term_support) and Current. LTS releases are maintained for stability over their lifecycle, receiving fixes for important issues and security fixes. New feature work and additional bug fixes take place in Current releases. From a support perspective, these release trains have the following support lifecycle attributes.
 
 LTS releases are
 * Supported for three years after the general availability date of a LTS release

@@ -1,6 +1,6 @@
 ---
-title: Managing dependencies in .NET Core Preview 4 tooling | Microsoft Docs
-description: Preview 4 brings about changes to how dependencies are managed
+title: Managing dependencies in .NET Core RC3 tooling | Microsoft Docs
+description: RC3 brings about changes to how dependencies are managed
 keywords: CLI, extensibility, custom commands, .NET Core
 author: blackdwarf
 ms.author: mairaw
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 74b87cdb-a244-4c13-908c-539118bfeef9
 ---
 
-# Managing dependencies in .NET Core Preview 4 tooling
+# Managing dependencies in .NET Core RC3 tooling
 
 [!INCLUDE[preview-warning](../../../includes/warning.md)]
 

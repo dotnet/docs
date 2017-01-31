@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: 40d4e60f-9900-4a48-b03c-0bae06792d91
 ---
 
-#dotnet-run (Tooling Preview 4)
+#dotnet-run (Tooling RC3)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools Preview 4. For the .NET Core Tools Preview 2 version,
+> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
 > see the [dotnet-run](../../tools/dotnet-run.md) topic.
 
 ## Name 

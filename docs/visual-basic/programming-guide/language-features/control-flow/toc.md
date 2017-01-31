@@ -1,4 +1,4 @@
-# [Control Flow](control-flow.md)
+# [Control Flow](index.md)
 ## [Decision Structures](decision-structures.md)
 ## [Loop Structures](loop-structures.md)
 ### [Walkthrough: Implementing IEnumerable(Of T)](walkthrough-implementing-ienumerable-of-t.md)

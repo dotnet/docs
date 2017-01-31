@@ -68,6 +68,6 @@ A variable holds more than one value if you declare it to be of a *composite dat
  [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)   
  [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)   
  [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/arrays.md)   
+ [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)   
  [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md)   
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)

@@ -95,7 +95,7 @@ translation.priority.ht:
      [!code-cs[csOfficeWalkthrough#2](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_2.cs)]
      [!code-vb[csOfficeWalkthrough#2](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_2.vb)]  
   
-3.  To create a `bankAccounts` list that contains two accounts, add the following code to the `ThisAddIn_Startup` method in ThisAddIn.vb or ThisAddIn.cs. The list declarations use *collection initializers*, new to Visual Basic in Visual Studio 2010. For more information, see [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/collection-initializers.md).  
+3.  To create a `bankAccounts` list that contains two accounts, add the following code to the `ThisAddIn_Startup` method in ThisAddIn.vb or ThisAddIn.cs. The list declarations use *collection initializers*, new to Visual Basic in Visual Studio 2010. For more information, see [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md).  
   
      [!code-cs[csOfficeWalkthrough#3](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_3.cs)]
      [!code-vb[csOfficeWalkthrough#3](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_3.vb)]  
@@ -208,7 +208,7 @@ translation.priority.ht:
 ## See Also  
  [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)   
  [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)   
- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/collection-initializers.md)   
+ [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)   
  [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)   
  [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)   
  [Passing Arguments by Position and by Name](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)   

@@ -120,7 +120,7 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
  The third `ReDim` creates another new array and removes another five columns from the end of every row in every layer. This time it does not copy any existing elements. This statement reverts the array to its original size. Because the statement doesn't include the `Preserve` modifier, it sets all array elements to their original default values.  
   
- For additional examples, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/arrays.md).  
+ For additional examples, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
   
 ## See Also  
  <xref:System.IndexOutOfRangeException>   
@@ -128,4 +128,4 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   
  [Erase Statement](../../../visual-basic/language-reference/statements/erase-statement.md)   
  [Nothing](../../../visual-basic/language-reference/nothing.md)   
- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/arrays.md)
+ [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

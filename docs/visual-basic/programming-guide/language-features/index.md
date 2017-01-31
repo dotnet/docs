@@ -51,7 +51,7 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Constants and Enumerations](../../../visual-basic/programming-guide/language-features/constants-enums/index.md)  
  Discusses storing unchanging values for repeated use, including sets of related constant values.  
   
- [Control Flow](../../../visual-basic/programming-guide/language-features/control-flow/control-flow.md)  
+ [Control Flow](../../../visual-basic/programming-guide/language-features/control-flow/index.md)  
  Shows how to regulate the flow of your program's execution.  
   
  [Data Types](../../../visual-basic/programming-guide/language-features/data-types/data-types.md)  

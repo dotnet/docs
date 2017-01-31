@@ -89,4 +89,4 @@ students = names
  [How to: Convert an Object to Another Type in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)   
  [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)   
  [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/arrays.md)
+ [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)

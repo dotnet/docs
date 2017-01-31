@@ -38,7 +38,7 @@ translation.priority.mt:
 No changes in Visual Basic in Visual Studio 2015 will prevent an application that was created in Visual Basic in Visual Studio 2013 from compiling or change the run-time behavior of such an application.  
   
 ## See Also  
- [Arrays](../../visual-basic/programming-guide/language-features/arrays/arrays.md)   
+ [Arrays](../../visual-basic/programming-guide/language-features/arrays/index.md)   
  [LINQ](../../visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)   
  [Lambda Expressions](../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
  [For Each...Next Statement](../../visual-basic/language-reference/statements/for-each-next-statement.md)   

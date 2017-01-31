@@ -51,4 +51,4 @@ Enumerations provide a convenient way to work with sets of related constants, an
  [How to: Determine the String Associated with an Enumeration Value](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-determine-the-string-associated-with-an-enumeration-value.md)   
  [How to: Refer to an Enumeration Member](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md)   
  [Enumerations and Name Qualification](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)   
- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/arrays.md)
+ [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)

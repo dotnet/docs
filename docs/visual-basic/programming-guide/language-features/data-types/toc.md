@@ -1,4 +1,4 @@
-# [Data Types](data-types.md)
+# [Data Types](index.md)
 ## [Type Characters](type-characters.md)
 ## [Elementary Data Types](elementary-data-types.md)
 ### [Numeric Data Types](numeric-data-types.md)

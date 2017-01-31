@@ -531,7 +531,7 @@
 ### [Collection Initializers](visual-basic/programming-guide/language-features/collection-initializers/index.md)
 ### [Constants and Enumerations](visual-basic/programming-guide/language-features/constants-enums/index.md)
 ### [Control Flow](visual-basic/programming-guide/language-features/control-flow/index.md)
-### [Data Types](visual-basic/programming-guide/language-features/data-types/data-types.md)
+### [Data Types](visual-basic/programming-guide/language-features/data-types/index.md)
 ### [Declared Elements](visual-basic/programming-guide/language-features/declared-elements/declared-elements.md)
 ### [Delegates](visual-basic/programming-guide/language-features/delegates/delegates.md)
 ### [Early and Late Binding](visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)

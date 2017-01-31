@@ -1,4 +1,4 @@
-# [Language-Integrated Query (LINQ)](language-integrated-query.md)
+# [Language-Integrated Query (LINQ)](index.md)
 ## [Introduction to LINQ](introduction-to-linq.md)
 ## [Getting Started with LINQ](getting-started-with-linq.md)
 ### [Writing Your First LINQ Query](writing-your-first-linq-query.md)

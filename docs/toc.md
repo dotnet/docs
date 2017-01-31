@@ -504,11 +504,10 @@
 ### [Expression Trees](visual-basic/programming-guide/concepts/expression-trees/index.md)
 ### [Iterators](visual-basic/programming-guide/concepts/iterators.md)
 ### [Language-Integrated Query (LINQ)](visual-basic/programming-guide/concepts/linq/index.md)
-
 ### [Object-Oriented Programming](visual-basic/programming-guide/concepts/object-oriented-programming.md)
 ### [Reflection](visual-basic/programming-guide/concepts/reflection.md)
-### [Serialization](visual-basic/programming-guide/concepts/serialization/serialization.md)
-### [Threading](visual-basic/programming-guide/concepts/threading/threading.md)
+### [Serialization](visual-basic/programming-guide/concepts/serialization/index.md)
+### [Threading](visual-basic/programming-guide/concepts/threading/index.md)
 
 ## [Program Structure and Code Conventions](visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
 ### [Structure of a Program](visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)

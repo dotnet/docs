@@ -1,4 +1,4 @@
-# [Threading](threading.md)
+# [Threading](index.md)
 ## [Multithreaded Applications](multithreaded-applications.md)
 ## [Parameters and Return Values for Multithreaded Procedures](parameters-and-return-values-for-multithreaded-procedures.md)
 ## [Walkthrough: Multithreading with the BackgroundWorker Component](walkthrough-multithreading-with-the-backgroundworker-component.md)

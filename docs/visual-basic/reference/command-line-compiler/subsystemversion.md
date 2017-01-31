@@ -82,5 +82,6 @@ Specifies the minimum version of the subsystem on which the generated executable
 
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
- [MSBuild Properties](https://docs.microsoft.com/visualstudio/msbuild/msbuild-properties)
+[Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+
+[MSBuild Properties](https://docs.microsoft.com/visualstudio/msbuild/msbuild-properties)

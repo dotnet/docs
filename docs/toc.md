@@ -502,9 +502,9 @@
 ### [Asynchronous Programming with Async and Await](visual-basic/programming-guide/concepts/async/index.md)
 ### [Attributes](visual-basic/programming-guide/concepts/attributes/index.md)
 ### [Expression Trees](visual-basic/programming-guide/concepts/expression-trees/index.md)
-
 ### [Iterators](visual-basic/programming-guide/concepts/iterators.md)
-### [Language-Integrated Query (LINQ)](visual-basic/programming-guide/concepts/linq/language-integrated-query.md)
+### [Language-Integrated Query (LINQ)](visual-basic/programming-guide/concepts/linq/index.md)
+
 ### [Object-Oriented Programming](visual-basic/programming-guide/concepts/object-oriented-programming.md)
 ### [Reflection](visual-basic/programming-guide/concepts/reflection.md)
 ### [Serialization](visual-basic/programming-guide/concepts/serialization/serialization.md)

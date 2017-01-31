@@ -1,4 +1,4 @@
-# [Constants and Enumerations](constants-and-enumerations.md)
+# [Constants and Enumerations](index.md)
 ## [Constants Overview](constants-overview.md)
 ### [How to: Declare A Constant](how-to-declare-a-constant.md)
 ### [User-Defined Constants](user-defined-constants.md)

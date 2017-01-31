@@ -70,4 +70,4 @@ End Module
 ## See Also  
  <xref:System.IO.StreamWriter>   
  [How to: Read Object Data from an XML File (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)   
- [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/serialization.md)
+ [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)

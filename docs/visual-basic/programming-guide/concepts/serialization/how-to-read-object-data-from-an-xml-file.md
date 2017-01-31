@@ -64,5 +64,5 @@ End Sub
 ## See Also  
  <xref:System.IO.StreamWriter>   
  [How to: Write Object Data to an XML File (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)   
- [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/serialization.md)   
+ [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)   
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)

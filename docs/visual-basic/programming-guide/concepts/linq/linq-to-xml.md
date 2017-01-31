@@ -40,4 +40,4 @@ LINQ to XML provides an in-memory XML programming interface that leverages the .
 ## See Also  
  [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)   
  [XML](../../../../visual-basic/programming-guide/language-features/xml/xml.md)   
- [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/language-integrated-query.md)
+ [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)

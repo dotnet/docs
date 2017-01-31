@@ -89,4 +89,4 @@ newThread.Abort()
  <xref:System.Threading.Thread>   
  [Thread Synchronization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/thread-synchronization.md)   
  [Parameters and Return Values for Multithreaded Procedures (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/parameters-and-return-values-for-multithreaded-procedures.md)   
- [Threading (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/threading.md)
+ [Threading (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/index.md)

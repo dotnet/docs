@@ -1,4 +1,4 @@
-# [Arrays in Visual Basic](arrays.md)
+# [Arrays in Visual Basic](index.md)
 ## [Array Dimensions](array-dimensions.md)
 ## [How to: Initialize an Array Variable](how-to-initialize-an-array-variable.md)
 ## [How to: Sort An Array](how-to-sort-an-array.md)

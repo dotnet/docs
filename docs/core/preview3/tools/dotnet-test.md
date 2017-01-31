@@ -4,7 +4,7 @@ description: The `dotnet test` command is used to execute unit tests in a given 
 keywords: dotnet-test, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/07/2016
+ms.date: 01/30/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -25,10 +25,10 @@ ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 ## Synopsis
 
 `dotnet test [project] [--help] 
-    [--settings] [--listTests] [--testCaseFilter] 
-    [--testAdapterPath] [--logger] 
-    [--configuration] [--output] [--framework] [--diag]
-    [--no-build]`  
+    [--settings] [--list-tests] [--filter] 
+    [--test-adapter-path] [--logger] 
+    [--configuration] [--framework] [--output] [--diag]
+    [--no-build] [--results-directory] [--verbosity]`
 
 ## Description
 
@@ -87,49 +87,53 @@ Specifies a path to the test project. If omitted, it defaults to current directo
 
 Prints out a short help for the command.
 
-`-s | --settings <SETTINGS_FILE>`
+`-s|--settings <SETTINGS_FILE>`
 
 Settings to use when running tests. 
 
-`-lt | --listTests`
+`-t|--list-tests`
 
 List all of the discovered tests in the current project. 
 
-`-tcf | --testCaseFilter <EXPRESSION>`
+`--filter <EXPRESSION>`
 
-Filter out tests in the current project using the given expression. 
+Filters out tests in the current project using the given expression. For more information on filtering support, see [Running selective unit tests in Visual Studio using TestCaseFilter](https://aka.ms/vstest-filtering).
 
-`-tap | --testAdapterPath <TEST_ADAPTER_PATH>`
+`-a|--test-adapter-path <PATH_TO_ADAPTER>`
 
-Use the custom test adapters from the specified path in this test run. 
+Use the custom test adapters from the specified path in the test run. 
 
-`--logger <LOGGER>`
+`-l|--logger <LoggerUri/FriendlyName>`
 
-Specify a logger for test results. 
+Specifies a logger for test results. 
 
 `-c|--configuration <Debug|Release>`
 
-Configuration under which to build. The default value is `Release`. 
+Configuration under which to build. The default value is `Debug`. 
 
-`-o|--output [OUTPUT_DIRECTORY]`
-
-Directory in which to find the binaries to run.
-
-`-f|--framework [FRAMEWORK]`
+`-f|--framework <FRAMEWORK>`
 
 Looks for test binaries for a specific framework.
 
-`-r|--runtime [RUNTIME_IDENTIFIER]`
+`-o|--output <OUTPUT_DIRECTORY>`
 
-Look for test binaries for a for the specified runtime.
+Directory in which to find the binaries to run.
+
+`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`
+
+Enables diagnostic mode for the test platform and write diagnostic messages to the specified file. 
 
 `--no-build` 
 
-Does not build the test project prior to running it. 
+Does not build the test project prior to running it.
 
-`-d | --diag <DIAGNOSTICS_FILE>`
+`-r|--results-directory <PATH_TO_RESULTS_DIRECTORY`
 
-Enable diagnostic mode for the test platform and write diagnostic messages to the specified file. 
+Specifies the location to save the test results. The test results directory will be created in the specified path, if it does not exist.
+
+`-v|--verbosity [Quiet|Minimal|Normal|Diagnostic]`
+
+Set the verbosity level of the command. You can specify the following verbosity levels: q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic]. 
 
 ## Examples
 

@@ -54,10 +54,10 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Control Flow](../../../visual-basic/programming-guide/language-features/control-flow/index.md)  
  Shows how to regulate the flow of your program's execution.  
   
- [Data Types](../../../visual-basic/programming-guide/language-features/data-types/data-types.md)  
+ [Data Types](../../../visual-basic/programming-guide/language-features/data-types/index.md)  
  Describes what kinds of data a programming element can hold and how that data is stored.  
   
- [Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/declared-elements.md)  
+ [Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/index.md)  
  Covers programming elements you can declare, their names and characteristics, and how the compiler resolves references to them.  
   
  [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)  

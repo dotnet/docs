@@ -1,4 +1,4 @@
-# [Declared Elements](declared-elements.md)
+# [Declared Elements](index.md)
 ## [Declared Element Names](declared-element-names.md)
 ## [Declared Element Characteristics](declared-element-characteristics.md)
 ### [Lifetime](lifetime.md)

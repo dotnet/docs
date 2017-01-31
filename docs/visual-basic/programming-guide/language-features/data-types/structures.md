@@ -59,7 +59,7 @@ A *structure* is a generalization of the user-defined type (UDT) supported by pr
  Describes the similarities and differences between structures and classes.  
   
 ## Related Sections  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/data-types.md)  
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
  Introduces the [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] data types and describes how to use them.  
   
  [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  

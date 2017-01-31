@@ -51,5 +51,5 @@ You have attempted to declare a constant as a class, structure, or array type, o
   
 ## See Also  
  [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)   
- [Data Types](../../../visual-basic/programming-guide/language-features/data-types/data-types.md)   
+ [Data Types](../../../visual-basic/programming-guide/language-features/data-types/index.md)   
  [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)

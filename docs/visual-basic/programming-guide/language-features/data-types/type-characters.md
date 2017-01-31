@@ -142,7 +142,7 @@ Dim flags As UShort = &H8000US
  In the previous example, `counter` has the decimal value of -32768, and `flags` has the decimal value of +32768.  
   
 ## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/data-types.md)   
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
  [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)   
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
  [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   

@@ -59,7 +59,7 @@ The process of changing a value from one data type to another type is called *co
  Steps you through the process of converting between arrays of different data types.  
   
 ## Related Sections  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/data-types.md)  
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
  Introduces the [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] data types and describes how to use them.  
   
  [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  

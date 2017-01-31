@@ -130,7 +130,7 @@ shape = square
 ```  
   
 ## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/data-types.md)   
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
  [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
  [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)   
  [Conversions Between Strings and Other Types](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)   

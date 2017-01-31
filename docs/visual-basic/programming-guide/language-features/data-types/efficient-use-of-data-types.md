@@ -75,7 +75,7 @@ Protected s As String
  <xref:Microsoft.VisualBasic.Strings.AscW%2A>   
  <xref:Microsoft.VisualBasic.Strings.Chr%2A>   
  <xref:Microsoft.VisualBasic.Strings.ChrW%2A>   
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/data-types.md)   
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
  [Numeric Data Types](../../../../visual-basic/programming-guide/language-features/data-types/numeric-data-types.md)   
  [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
  [Using IntelliSense](https://docs.microsoft.com/visualstudio/ide/using-intellisense)

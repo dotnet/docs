@@ -178,6 +178,7 @@
 ### [dotnet-restore](core/preview3/tools/dotnet-restore.md)
 ### [dotnet-run](core/preview3/tools/dotnet-run.md)
 ### [dotnet-build](core/preview3/tools/dotnet-build.md)
+### [dotnet-clean](core/preview3/tools/dotnet-clean.md)
 ### [dotnet-test](core/preview3/tools/dotnet-test.md)
 ### [dotnet-pack](core/preview3/tools/dotnet-pack.md)
 ### [dotnet-publish](core/preview3/tools/dotnet-publish.md)

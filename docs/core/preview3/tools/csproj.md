@@ -22,17 +22,17 @@ see [the MSBuild project file](https://docs.microsoft.com/visualstudio/msbuild/m
 ## Additions
 
 ### PackageReference
-Specifies a NuGet dependency in the project. The `Include` attribute specifies the package ID. 
+Item that specifies a NuGet dependency in the project. The `Include` attribute specifies the package ID. 
 
 ```xml
 <PackageReference Include="<package-id>" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
 ```
 
 #### Version
-`<Version>` specifies the version of the package to restore. The element respects the rules of the NuGet versioning scheme.
+`Version` specifies the version of the package to restore. The element respects the rules of the NuGet versioning scheme.
 
 #### IncludeAssets
-`<IncludeAssets>` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
+`IncludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
 consumed. 
 
 The attribute can contain one or more of the following values:
@@ -50,7 +50,7 @@ Alternatively, the attribute can contain:
 * `All` – all assets are used.
 
 #### ExcludeAssets
-`<ExcludeAssets>` attribute specifies what assets belonging to the package specified by `<PackageReference>` should not 
+`ExcludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should not 
 be consumed.
 
 The attribute can contain one or more of the following values:
@@ -68,7 +68,7 @@ Alternatively, the element can contain:
 * `All` – all assets are used.
 
 #### PrivateAssets
-`<PrivateAssets>` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
+`PrivateAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
 consumed but that they should not flow to the next project. 
 
 > [!NOTE]
@@ -89,7 +89,7 @@ Alternatively, the attribute can contain:
 * `All` – all assets are used.
 
 ### DotnetCliToolReference
-`<DotnetCliToolReference>` element specifies the CLI tool that the user wants restores in the context of the project. It is 
+`<DotnetCliToolReference>` item element specifies the CLI tool that the user wants to restore in the context of the project. It is 
 a replacement for the `tools` node in `project.json`. 
 
 ```xml
@@ -97,20 +97,29 @@ a replacement for the `tools` node in `project.json`.
 ```
 
 #### Version
-`<Version>` specifies the version of the package to restore. The attribute respect the rules of the NuGet versioning scheme.
+`Version` specifies the version of the package to restore. The attribute respect the rules of the NuGet versioning scheme.
 
 ### RuntimeIdentifiers
 The `<RuntimeIdentifiers>` element lets you specify a semicolon-delimited list of [Runtime Identifiers (RIDs)](../../rid-catalog.md) for the project. 
 RIDs enable publishing a self-contained deployments. 
 
+```xml
+<RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
+```
+
 
 ### RuntimeIdentifier
-The `<RuntieIdentifier>` elements allows you to specify only one [Runtime Identifier (RID)](../../rid-catalog.md) for the project. RIDs enable publishing a self-contained deployment. 
+The `<RuntieIdentifier>` element allows you to specify only one [Runtime Identifier (RID)](../../rid-catalog.md) for the project. RIDs enable publishing a self-contained deployment. 
+
+```xml
+<RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
+```
+
 
 ### PackageTargetFallback 
-The `<PackageTargetFallback>` property allows you to specify a set of compatible targets to be used when restoring packages. They are designed to allow packages that use the dotnet TxM to operate with packages that don't declare a dotnet TxM. If your project is using the dotnet TxM then all the packages you depend on must also have a dotnet TxM, unless you add the `<PackageTargetFallback>` to your project in order to allow non dotnet platforms to be compatible with dotnet. 
+The `<PackageTargetFallback>` element allows you to specify a set of compatible targets to be used when restoring packages. It is designed to allow packages that use the dotnet TxM to operate with packages that don't declare a dotnet TxM. If your project uses the dotnet TxM then all the packages you depend on must also have a dotnet TxM, unless you add the `<PackageTargetFallback>` to your project in order to allow non dotnet platforms to be compatible with dotnet. 
 
-Below is an example of providing the fallbacks for all of the targets in your project: 
+The following example provides the fallbacks for all targets in your project: 
 
 ```xml
 <PackageTargetFallback>
@@ -118,10 +127,43 @@ Below is an example of providing the fallbacks for all of the targets in your pr
 </PackageTargetFallback >
 ```
 
-This example specifies the fallbacks only for `netcoreapp1.0` target:
+The following example specifies the fallbacks only for the `netcoreapp1.0` target:
 
 ```xml
 <PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp1.0'">
     $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
 </PackageTargetFallback >
 ```
+
+## NuGet metadata properties
+With the move to MSbuild, we have moved the input metadata that is used when packing a NuGet package from project.json to csproj files. The inputs are MSBuild properties. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK. 
+
+### IsPackable
+### PackageVersion
+### PackageId
+### Title
+### Authors
+### Description
+### Copyright
+### PackageRequireLicenseAcceptance
+### PackageLicenseUrl
+### PackageProjectUrl
+### PackageIconUrl
+### PackageReleaseNotes
+### PackageTags
+### PackageOutputPath
+### IncludeSymbols
+### IncludeSource
+### PackageTypes
+### IsTool
+### RepositoryUrl
+### RepositoryType
+### NoPackageAnalysis
+### MinClientVersion
+### IncludeBuildOutput
+### IncludeContentInPack
+### BuildOutputTargetFolder
+### ContentTargetFolders
+### NuspecFile
+### NuspecBasePath
+### NuspecProperties

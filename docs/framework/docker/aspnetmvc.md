@@ -217,8 +217,6 @@ To remove the container, issue a `docker rm` command:
 docker rm randomanswers
 ```
 
-## Resources
-
 [windows-container]: media/aspnetmvc/SwitchContainer.png "Switch to Windows Container"
 [publish-connection]: media/aspnetmvc/PublishConnection.png "Publish to File System"
 [publish-settings]: media/aspnetmvc/PublishSettings.png "Publish Settings"

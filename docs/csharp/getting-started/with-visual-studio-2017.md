@@ -16,11 +16,11 @@ ms.assetid: 97aa50bf-bdf8-416d-a56c-ac77504c14ea
 
 This topic provides a step-by-step introduction to building, debugging, and publishing a simple .NET Core console application using Visual Studio 2017. Visual Studio 2017 provides a full-featured development environment for building .NET Core applications. As long as the application does not have any platform-specific dependencies, the application itself can run on any platform that .NET Core targets and on any system that has .NET Core installed.
 
-## The prerequisites ##
+## Prerequisites ##
 
-In order to develop the application, Visual Studio 2017 must be installed on your machine. If you  haven't already installed it, you can download a trial version of Visual Studio Professional or Visual Studio Enterprise, or you can download the free Visual Studio Community Edition, from  [Visual Studio Downloads](https://www.visualstudio.com/downloads/). When you begin the installation, Visual Studio allows you to select the optional components to include in the installation, as the following figure shows. Choose the .NET Core and Docker (Preview) workload.
+- [Visual Studio 2017 RC](https://www.visualstudio.com/vs/visual-studio-2017-rc/#downloadvs) with the ".NET Core cross-platform development" workload installed. 
 
-   ![Image](./media/select_core.jpg)
+For more information, see the [Visual Studio 2017 RC](../../core/windows-prerequisites.md) section on the Windows prerequisites topic.
 
 ## A simple "Hello World" application ##
 

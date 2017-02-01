@@ -175,7 +175,7 @@ inputs.
  to create a single theory that tests some values less than 2,
  which is the lowest prime number:
 
-[!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs#SampleTestCode "First tests")]
+[!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs#Sample_TestCode "First tests")]
 ```
 
 Run `dotnet test` and you'll see that two of these tests fail.

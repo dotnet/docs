@@ -29,14 +29,14 @@ translation.priority.mt:
 ---
 # Interpolated Strings (C# Reference)
 
-Used to construct strings.  An interpolated string looks like a template string that contains *interpolated expressions*.  An interpolated string expression returns a string that replaces the expressions that it contains with their string represenations.  The arguments of an interpolated string are easier to understand than a [composite format string](http://msdn.microsoft.com/library/87b7d528-73f6-43c6-b71a-f23043039a49).  For example, the interpolated string  
+Used to construct strings.  An interpolated string looks like a template string that contains *interpolated expressions*.  An interpolated string returns a string that replaces the interpolated expressions that it contains with their string representations.  
+
+The arguments of an interpolated string are easier to understand than a [composite format string](http://msdn.microsoft.com/library/87b7d528-73f6-43c6-b71a-f23043039a49).  For example, the interpolated string  
   
 ```cs  
 Console.WriteLine($"Name = {name}, hours = {hours:hh}"); 
 ```  
-contains two interpolated expressions, '{name}' and '{hours:hh}'.  
-
-The equivalent composite format string is:
+contains two interpolated expressions, '{name}' and '{hours:hh}'. The equivalent composite format string is:
 
 ```cs
 Console.WriteLine("Name = {0}, hours = {1:hh}", name, hours);  
@@ -45,26 +45,30 @@ Console.WriteLine("Name = {0}, hours = {1:hh}", name, hours);
 The structure of an interpolated string is:  
   
 ```  
-$"<text> {<interpolation-expression> [,<field-width>] [<:format-string>] } <text> ..."  
+$"<text> {<interpolated-expression> [,<field-width>] [<:format-string>] } <text> ..."  
 ```  
 
-*field-width* is a signed integer that indicates the number of characters in the field. If it is positive, the field is right-aligned; if negative, left-aligned. *format-string* is a format string appropriate for the type of object being formatted. For example, for a @System.DateTime value, it could be a standard date and time format string such as "D" or "d".
+where: 
+
+- *field-width* is a signed integer that indicates the number of characters in the field. If it is positive, the field is right-aligned; if negative, left-aligned. 
+
+- *format-string* is a format string appropriate for the type of object being formatted. For example, for a @System.DateTime value, it could be a standard date and time format string such as "D" or "d".
 
  You can use an interpolated string anywhere you can use a string literal.  The interpolated string is evaluated each time the code with the interpolated string executes. This allows you to separate the definition and evaluation of an interpolated string.  
   
- To include a curly brace ("{" or "}") in an interpolated string use two curly braces, "{{" or "}}".  See the Implicit Conversions section for more details.  
+ To include a curly brace ("{" or "}") in an interpolated string, use two curly braces, "{{" or "}}".  See the Implicit Conversions section for more details.  
 
-If the interpolated string contains other characters with special meaning in an interpolated string, such as the quotation mark ("), colon (:), or comma (,), they should be escaped if they occur in literal text, or they should be included in an expression delimited by parentheses if they are language elements. The following example escapes quotation marks to include them in the result string, and it uses parentheses to delimit the expression `(age == 1 ? "" : "s")` so that the colon is not interpreted as beginning a format string.
+If the interpolated string contains other characters with special meaning in an interpolated string, such as the quotation mark ("), colon (:), or comma (,), they should be escaped if they occur in literal text, or they should be included in an expression delimited by parentheses if they are language elements included in a interpolated expression. The following example escapes quotation marks to include them in the result string, and it uses parentheses to delimit the expression `(age == 1 ? "" : "s")` so that the colon is not interpreted as beginning a format string.
 
 [!code-cs[interpolated-strings4](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings4.cs#1)]  
 
 ## Implicit Conversions  
 
- There are three implicit type conversions from an interpolated string:  
+There are three implicit type conversions from an interpolated string:  
 
 1. Conversion of an interpolated string to a @System.String. The following example returns a string whose interpolated string expressions have been replaced with their string representations. For example:
 
-[!code-cs[interpolated-strings1](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings1.cs#1)]  
+   [!code-cs[interpolated-strings1](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings1.cs#1)]  
 
    This is the final result of a string interpretation. All occurrences of double curly braces (“{{“ and “}}”) are converted to a single curly brace. 
 

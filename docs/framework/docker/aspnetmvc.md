@@ -4,7 +4,7 @@ description: Learn how to take an existing ASP.NET MVC application and run it in
 keywords: Windows Containers, Docker, ASP.NET MVC
 author: BillWagner
 ms.author: wiwagn
-ms.date: 09/28/2016
+ms.date: 02/01/2017
 ms.topic: article
 ms.prod: .net-framework
 ms.technology: dotnet-mvc
@@ -46,12 +46,10 @@ The finished application is located in the
 ## Prerequisites
 
 The development machine must be running
-[Windows 10 Anniversary Update](https://www.microsoft.com/en-us/software-download/windows10/)
-or [Windows Server 2016](https://www.microsoft.com/en-us/cloud-platform/windows-server). 
+[Windows 10 Anniversary Update](https://www.microsoft.com/en-us/software-download/windows10/) (or higher)
+or [Windows Server 2016](https://www.microsoft.com/en-us/cloud-platform/windows-server) (or higher). 
 
-[Docker for Windows](https://docs.docker.com/docker-for-windows/) must be installed,
-version 1.12 Beta 26, or newer. Windows Container support is only available
-in the Beta channel at this time.
+[Docker for Windows](https://docs.docker.com/docker-for-windows/)
 
 > [!IMPORTANT]
 > If you are using Windows Server 2016, follow the
@@ -74,7 +72,7 @@ profile will put all the assets in one directory tree that you copy to your targ
 **Publish Steps**
 
 1. Right click on the web project in Visual Studio, and select **Publish**.
-2. Click the **Custom profile button, and then select **File System** as the method.
+2. Click the **Custom profile button**, and then select **File System** as the method.
 3. Choose the directory. By convention, the downloaded sample uses `bin/PublishOutput`.
 
 ![Publish Connection][publish-connection]

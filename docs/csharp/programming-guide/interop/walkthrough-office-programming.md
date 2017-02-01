@@ -223,4 +223,4 @@ translation.priority.ht:
  [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)   
  [Walkthrough: Creating Your First VSTO Add-in for Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
  [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)   
- [Interoperability](../../../csharp/programming-guide/interop/interoperability.md)
+ [Interoperability](../../../csharp/programming-guide/interop/index.md)

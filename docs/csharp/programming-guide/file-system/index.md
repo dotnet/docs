@@ -59,6 +59,6 @@ The following topics show how to use C# and the .NET Framework to perform variou
   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
   
- [Files, Folders and Drives](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)  
+ [Files, Folders and Drives](../../../csharp/programming-guide/file-system/index.md)  
   
  <xref:System.IO?displayProperty=fullName>

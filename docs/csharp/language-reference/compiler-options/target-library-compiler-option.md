@@ -48,7 +48,7 @@ The **/target:library** option causes the compiler to create a dynamic-link libr
   
  When specified at the command line, all files up to the next **/out** or **/target:module** option are used to create the .dll file.  
   
- When building a .dll file, a [Main](../../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md) method is not required.  
+ When building a .dll file, a [Main](../../../csharp/programming-guide/main-and-command-args/index.md) method is not required.  
   
 ### To set this compiler option in the Visual Studio development environment  
   

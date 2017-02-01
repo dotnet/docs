@@ -11,10 +11,10 @@ ms.devlang: dotnet
 ms.assetid: ba7e082c-a7c8-431e-a342-f67734b660f6
 ---
 
-# Building a complete .NET Core solution on Windows, using Visual Studio 2017 (Tooling Preview 4)
+# Building a complete .NET Core solution on Windows, using Visual Studio 2017 (Tooling RC3)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools Preview 4. For the .NET Core Tools Preview 2 version,
+> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
 > see the [Getting started with .NET Core on Windows, using Visual Studio 2015](../../tutorials/using-on-windows.md) topic.
 
 Visual Studio 2017 provides a full-featured development environment for developing .NET Core applications. The procedures in this document describe the steps necessary to build a typical .NET Core solution that includes reusable libraries, testing, and using third-party libraries. 
@@ -64,7 +64,7 @@ Follow the instructions on [our prerequisites page](../windows-prerequisites.md)
 
 ### Writing the console app
 
-1. In Solution Explorer, open the context menu for the solution, and add a new **Console App (.NET Core)** project. Name it "App", and set the location to `Golden\src`.
+1. In Solution Explorer, open the context menu for the solution, and add a new **Console App (.NET Core)** project. Name it "App".
 
 2. In the **App** project, open the context menu for the **Dependencies** node and choose **Add**,  **Reference**. 
 
@@ -72,7 +72,7 @@ Follow the instructions on [our prerequisites page](../windows-prerequisites.md)
 
 6. Open the context menu for the **App** node and choose **Set as StartUp Project**. This ensures that hitting F5 or CTRL+F5 will start the console app.
 
-7. Open the `Program.cs` file, add a `using Library;` directive to the top of the file, and then add `Console.WriteLine($"The answer is {new Thing().Get(42)}");` to the `Main` method.
+7. Open the `Program.cs` file, add a `using Library;` directive to the top of the file, and then add `Console.WriteLine($"The answer is {new Thing().Get(42)}.");` to the `Main` method.
 
 8. Set a breakpoint after the line that you just added.
 

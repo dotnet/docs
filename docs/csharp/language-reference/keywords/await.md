@@ -37,7 +37,7 @@ The `await` operator is applied to a task in an asynchronous method to suspend t
  The asynchronous method in which `await` is used must be modified by the [async](../../../csharp/language-reference/keywords/async.md) keyword. Such a method, defined by using the `async` modifier, and usually containing one or more `await` expressions, is referred to as an *async method*.  
   
 > [!NOTE]
->  The `async` and `await` keywords were introduced in Visual Studio 2012. For an introduction to async programming, see [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md).  
+>  The `async` and `await` keywords were introduced in Visual Studio 2012. For an introduction to async programming, see [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md).  
   
  The task to which the `await` operator is applied typically is the return value from a call to a method that implements the [Task-Based Asynchronous Pattern](http://go.microsoft.com/fwlink/?LinkId=204847). Examples include values of type <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.  
   
@@ -103,6 +103,6 @@ public async Task<string> WaitSynchronously()
 ```  
   
 ## See Also  
- [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)   
+ [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md)   
  [Walkthrough: Accessing the Web by Using Async and Await](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   
  [async](../../../csharp/language-reference/keywords/async.md)

@@ -48,7 +48,7 @@ This section provides detailed information on key C# language features and featu
 ## Language Sections  
  [Inside a C# Program](../../csharp/programming-guide/inside-a-program/index.md)  
   
- [Main() and Command-Line Arguments](../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md)  
+ [Main() and Command-Line Arguments](../../csharp/programming-guide/main-and-command-args/index.md)  
   
  [Types](../../csharp/programming-guide/types/index.md)  
   
@@ -97,11 +97,11 @@ This section provides detailed information on key C# language features and featu
   
  [Collections](../../csharp/programming-guide/concepts/collections.md)  
   
- [Exceptions and Exception Handling](../../csharp/programming-guide/exceptions/exceptions-and-exception-handling.md)  
+ [Exceptions and Exception Handling](../../csharp/programming-guide/exceptions/index.md)  
   
- [File System and the Registry (C# Programming Guide)](../../csharp/programming-guide/file-system/file-system-and-the-registry.md)  
+ [File System and the Registry (C# Programming Guide)](../../csharp/programming-guide/file-system/index.md)  
   
- [Interoperability](../../csharp/programming-guide/interop/interoperability.md)  
+ [Interoperability](../../csharp/programming-guide/interop/index.md)  
   
  [Reflection](../../csharp/programming-guide/concepts/reflection.md)  
   

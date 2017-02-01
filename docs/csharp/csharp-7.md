@@ -71,7 +71,7 @@ pattern, a method returns a `bool` indicating success or failure and an
 
 ## Tuples
 
-C# provides a rich syntax used for classes and structs provides to explain
+C# provides a rich syntax for classes and structs that is used to explain
 your design intent. But sometimes that rich syntax requires extra
 work with minimal benefit. You may often write methods that need a simple
 structure containing more than one data element. To support these scenarios

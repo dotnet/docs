@@ -109,7 +109,7 @@ Specifies a logger for test results.
 
 `-c|--configuration <Debug|Release>`
 
-Configuration under which to build. The default value is `Debug`. 
+Configuration under which to build. The default value is `Debug` but your project's configuration could override this default SDK setting.
 
 `-f|--framework <FRAMEWORK>`
 

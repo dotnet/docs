@@ -43,7 +43,7 @@ The following example shows the complete query operation. The complete operation
   
 -   A query is not executed until you iterate over the query variable, for example, in a `foreach` statement. For more information, see [Introduction to LINQ queries](introduction-to-linq-queries.md).  
   
--   At compile time, query expressions are converted to Standard Query Operator method calls according to the rules set forth in the C# specification. Any query that can be expressed by using query syntax can also be expressed by using method syntax. However, in most cases query syntax is more readable and concise. For more information, see [C# language specification](../../language-reference/language-specification.md) and [Standard query operators overview](standard-query-operators-overview.md).  
+-   At compile time, query expressions are converted to Standard Query Operator method calls according to the rules set forth in the C# specification. Any query that can be expressed by using query syntax can also be expressed by using method syntax. However, in most cases query syntax is more readable and concise. For more information, see [C# language specification](../../../language-reference/language-specification.md) and [Standard query operators overview](standard-query-operators-overview.md).  
   
 -   As a rule when you write LINQ queries, we recommend that you use query syntax whenever possible and method syntax whenever necessary. There is no semantic or performance difference between the two different forms. Query expressions are often more readable than equivalent expressions written in method syntax.  
   
@@ -53,14 +53,14 @@ The following example shows the complete query operation. The complete operation
 
 ## Next steps
 
-To learn more details about LINQ, start by becoming familiar with some basic concepts in [Query expression basics](query-expression-basics.md), and then read the documentation for the LINQ technology in which you are interested:   
+To learn more details about LINQ, start by becoming familiar with some basic concepts in [Query expression basics](../../../linq/query-expression-basics.md), and then read the documentation for the LINQ technology in which you are interested:   
 -   XML documents: [LINQ to XML](linq-to-xml.md)  
   
 -   ADO.NET Entity Framework: [LINQ to entities](http://msdn.microsoft.com/library/641f9b68-9046-47a1-abb0-1c8eaeda0e2d)  
   
 -   .NET collections, files, strings and so on: [LINQ to objects](linq-to-objects.md)
 
-To gain a deeper understanding of LINQ in general, see [LINQ in C#](linq-in-csharp.md).
+To gain a deeper understanding of LINQ in general, see [LINQ in C#](../../../linq-in-csharp.md).
 
 To start working with LINQ in C#, see the tutorial [Working with LINQ](../../../tutorials/working-with-linq.md).
 

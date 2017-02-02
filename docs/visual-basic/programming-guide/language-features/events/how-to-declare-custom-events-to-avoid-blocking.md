@@ -52,5 +52,5 @@ There are several circumstances when it is important that one event handler not 
 ## See Also  
  <xref:System.Collections.ArrayList>   
  <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A>   
- [Events](../../../../visual-basic/programming-guide/language-features/events/events.md)   
+ [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)   
  [How to: Declare Custom Events To Conserve Memory](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)

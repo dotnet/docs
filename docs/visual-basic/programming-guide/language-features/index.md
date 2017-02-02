@@ -69,7 +69,7 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)  
  Provides an overview of syntax errors, run-time errors, and logic errors.  
   
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)  
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)  
  Shows how to declare and use events.  
   
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)  

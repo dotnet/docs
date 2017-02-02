@@ -536,7 +536,7 @@
 ### [Delegates](visual-basic/programming-guide/language-features/delegates/index.md)
 ### [Early and Late Binding](visual-basic/programming-guide/language-features/early-late-binding/index.md)
 ### [Error Types](visual-basic/programming-guide/language-features/error-types.md)
-### [Events](visual-basic/programming-guide/language-features/events/events.md)
+### [Events](visual-basic/programming-guide/language-features/events/index.md)
 ### [Interfaces](visual-basic/programming-guide/language-features/interfaces/index.md)
 #### [Walkthrough: Creating and Implementing Interfaces](visual-basic/programming-guide/language-features/interfaces/walkthrough-creating-and-implementing-interfaces.md)
 ### [LINQ](visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)

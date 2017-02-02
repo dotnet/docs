@@ -140,4 +140,4 @@ This is the second of two topics that demonstrate how to work with events. The f
   
 ## See Also  
  [Walkthrough: Declaring and Raising Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)   
- [Events](../../../../visual-basic/programming-guide/language-features/events/events.md)
+ [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)

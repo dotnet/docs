@@ -99,4 +99,4 @@ This walkthrough demonstrates how to declare and raise events for a class named 
  <xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>   
  <xref:Microsoft.VisualBasic.DateAndTime.Now%2A>   
  [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)   
- [Events](../../../../visual-basic/programming-guide/language-features/events/events.md)
+ [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)

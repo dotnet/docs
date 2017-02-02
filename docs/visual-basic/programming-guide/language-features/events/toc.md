@@ -1,4 +1,4 @@
-# [Events](events.md)
+# [Events](index.md)
 ## [Walkthrough: Declaring and Raising Events](walkthrough-declaring-and-raising-events.md)
 ## [Walkthrough: Handling Events](walkthrough-handling-events.md)
 ## [How to: Declare Custom Events To Avoid Blocking](how-to-declare-custom-events-to-avoid-blocking.md)

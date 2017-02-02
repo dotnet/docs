@@ -20,7 +20,7 @@ The composite formatting feature is supported by methods such as the following:
 
 * [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)), which returns a formatted result string. 
 
-* [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider, System.String, System.Object)), which appends a formatted result string to a [StringBuilder](xref:System.Text.StringBuilder) object.
+* [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)), which appends a formatted result string to a [StringBuilder](xref:System.Text.StringBuilder) object.
 
 * Some overloads of the [Console](xref:System.Console) `WriteLine` method, which display a formatted result string to the console.  
 

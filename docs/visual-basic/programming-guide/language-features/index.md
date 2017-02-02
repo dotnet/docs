@@ -75,7 +75,7 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)  
  Describes what interfaces are and how you can use them in your applications.  
   
- [LINQ](../../../visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)  
+ [LINQ](../../../visual-basic/programming-guide/language-features/linq/index.md)  
  Provides links to topics that introduce [!INCLUDE[vbteclinqext](../../../csharp/getting-started/includes/vbteclinqext_md.md)] features and programming.  
   
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md)  

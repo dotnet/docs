@@ -1,4 +1,4 @@
-# [LINQ in Visual Basic](linq-in-visual-basic.md)
+# [LINQ in Visual Basic](index.md)
 ## [Introduction to LINQ](introduction-to-linq.md)
 ## [How to: Query a Database by Using LINQ](how-to-query-a-database-by-using-linq.md)
 ## [How to: Call a Stored Procedure by Using LINQ](how-to-call-a-stored-procedure-by-using-linq.md)

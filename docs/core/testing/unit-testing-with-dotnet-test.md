@@ -29,7 +29,6 @@ final project structure will be something like this:
 
 ```
 /unit-testing-using-dotnet-test
-|__PrimeServiceWithTests.sln
 |__/PrimeService
    |__Source Files
    |__PrimeService.csproj
@@ -40,7 +39,7 @@ final project structure will be something like this:
 
 ### Creating the source project
 
-Then, in the `unit-testing-using-dotnet-test` directory, create the `PrimeService` directory.
+Start in the `unit-testing-using-dotnet-test` directory, create the `PrimeService` directory.
 CD into that directory, and run `dotnet new -t lib` to create the source
 project.
 
@@ -84,7 +83,9 @@ in the PrimeServiceTests.csproj:
 
 The test project requires other packages to create and run unit tests.
 `dotnet new` added xunit, and the xunit runner. You need to add the PrimeService
-package as another dependency to the project:
+package as another dependency to the project. Directly under the first 
+`<ItemGroup>` node, add another `<ItemGroup>` node with a reference to 
+the library project:
 
 ```xml
   <ItemGroup>
@@ -109,7 +110,7 @@ command restores all the necessary NuGet packages for each project.
 The TDD approach calls for writing one failing test, then making it pass,
 then repeating the process. So, let's write that one failing test. Remove
 `UnitTest1.cs` from the `PrimeService.Tests` directory, and create a new
-C# file with the following content:
+C# file named `PrimeService_IsPrimeShould.cs` with the following content:
 
 ```cs
 namespace Prime.UnitTests.Services

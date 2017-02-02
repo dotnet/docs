@@ -49,7 +49,7 @@ The development machine must be running
 [Windows 10 Anniversary Update](https://www.microsoft.com/en-us/software-download/windows10/) (or higher)
 or [Windows Server 2016](https://www.microsoft.com/en-us/cloud-platform/windows-server) (or higher). 
 
-[Docker for Windows](https://docs.docker.com/docker-for-windows/)
+[Docker for Windows](https://docs.docker.com/docker-for-windows/) (Stable 1.13.0 or newer, Beta 1.12 Beta 26 or newer)
 
 > [!IMPORTANT]
 > If you are using Windows Server 2016, follow the

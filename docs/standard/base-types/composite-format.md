@@ -20,7 +20,7 @@ The composite formatting feature is supported by methods such as the following:
 
 * [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)), which returns a formatted result string. 
 
-* [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider, System.String, System.Object), which appends a formatted result string to a [StringBuilder](xref:System.Text.StringBuilder) object.
+* [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)), which appends a formatted result string to a [StringBuilder](xref:System.Text.StringBuilder) object.
 
 * Some overloads of the [Console](xref:System.Console) `WriteLine` method, which display a formatted result string to the console.  
 
@@ -36,7 +36,7 @@ The composite formatting feature is supported by methods such as the following:
 
 A composite format string and object list are used as arguments of methods that support the composite formatting feature. A composite format string consists of zero or more runs of fixed text intermixed with one or more format items. The fixed text is any string that you choose, and each format item corresponds to an object or boxed structure in the list. The composite formatting feature returns a new result string where each format item is replaced by the string representation of the corresponding object in the list.
 
-Consider the following [Format](xref:System.String.Format(System.String.Format(System.IFormatProvider,System.String,System.Object)) code fragment.
+Consider the following [Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) code fragment.
 
 ```csharp
 string name = "Fred";
@@ -225,9 +225,9 @@ Each value in the parameter list that corresponds to a format item is converted 
 
 3. If the value implements the [IFormattable](xref:System.IFormattable) interface, the interface's [ToString(String,IFormatProvider)](xref:System.IFormattable.ToString(System.String,System.IFormatProvider)) method is called. The method is passed the *formatString* value, if one is present in the format item, or `null` if it is not. The [IFormatProvider](xref:System.IFormatProvider) argument is determined as follows:
 
-    *   For a numeric value, if a composite formatting method with a non-null [IFormatProvider](xref:System.IFormatProvider) argument is called, the runtime requests a [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) object from its [IFormatProvider.GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) method. If it is unable to supply one, if the value of the argument is `null`, or if the composite formatting method does not have an [IFormatProvider](xref:System.IFormatProvider) parameter, the [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo object for the current thread culture is used. 
+    *   For a numeric value, if a composite formatting method with a non-null [IFormatProvider](xref:System.IFormatProvider) argument is called, the runtime requests a [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) object from its [IFormatProvider.GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) method. If it is unable to supply one, if the value of the argument is `null`, or if the composite formatting method does not have an [IFormatProvider](xref:System.IFormatProvider) parameter, the [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) object for the current thread culture is used. 
     
-    * For a date and time value, if a composite formatting method with a non-null [IFormatProvider](xref:System.IFormatProvider) argument is called, the runtime requests a [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) object from its [IFormatProvider.GetFormat](xref:System.IFormatProvider._GetFormat(System.Type) method. If it is unable to supply one, if the value of the argument is `null`, or if the composite formatting method does not have an [IFormatProvider](xref:System.IFormatProvider) parameter, the [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) object for the current thread culture is used. 
+    * For a date and time value, if a composite formatting method with a non-null [IFormatProvider](xref:System.IFormatProvider) argument is called, the runtime requests a [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) object from its [IFormatProvider.GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) method. If it is unable to supply one, if the value of the argument is `null`, or if the composite formatting method does not have an [IFormatProvider](xref:System.IFormatProvider) parameter, the [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) object for the current thread culture is used. 
     
     * For objects of other types, if a composite formatting is called with an [IFormatProvider](xref:System.IFormatProvider) argument, its value (including a `null`, if no [IFormatProvider](xref:System.IFormatProvider) object is supplied) is passed directly to the [IFormattable.ToString](xref:System.IFormattable.ToString(System.String,System.IFormatProvider)) implementation. Otherwise, a [CultureInfo](xref:System.Globalization.CultureInfo) object that represents the current thread culture is passed to the [IFormattable.ToString](xref:System.IFormattable.ToString(System.String,System.IFormatProvider)) implementation. 
     

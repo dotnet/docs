@@ -54,5 +54,5 @@ A statement refers to a programming element, but the compiler cannot find an ele
 ## See Also  
  [Declarations and Constants Summary](../../../visual-basic/language-reference/keywords/declarations-and-constants-summary.md)   
  [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)   
- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)   
+ [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/index.md)   
  [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)

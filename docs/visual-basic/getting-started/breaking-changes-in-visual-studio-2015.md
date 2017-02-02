@@ -39,7 +39,7 @@ No changes in Visual Basic in Visual Studio 2015 will prevent an application tha
   
 ## See Also  
  [Arrays](../../visual-basic/programming-guide/language-features/arrays/index.md)   
- [LINQ](../../visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)   
+ [LINQ](../../visual-basic/programming-guide/language-features/linq/index.md)   
  [Lambda Expressions](../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
  [For Each...Next Statement](../../visual-basic/language-reference/statements/for-each-next-statement.md)   
  [Getting Started](../../visual-basic/getting-started/index.md)   

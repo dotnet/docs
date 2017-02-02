@@ -81,5 +81,5 @@ translation.priority.ht:
  Describes the `Where` clause, which specifies a filtering condition for a query.  
   
 ## See Also  
- [LINQ](../../../visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)   
+ [LINQ](../../../visual-basic/programming-guide/language-features/linq/index.md)   
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

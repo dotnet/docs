@@ -141,5 +141,5 @@ A *query* is an expression that retrieves data from a data source. Queries are e
  [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)   
  [Standard Query Operators Overview (Visual Basic)](standard-query-operators-overview.md)   
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)   
+ [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
  [Queries](../../../../visual-basic/language-reference/queries/queries.md)

@@ -66,5 +66,5 @@ You can use *XML literals* to load XML from an external source such as a string,
   
 ## See Also  
  [XML](../../../../visual-basic/programming-guide/language-features/xml/xml.md)   
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/linq-in-visual-basic.md)   
+ [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

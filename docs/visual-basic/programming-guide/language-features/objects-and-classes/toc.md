@@ -1,4 +1,4 @@
-# [Objects and Classes](objects-and-classes.md)
+# [Objects and Classes](index.md)
 ## [Walkthrough: Defining Classes](walkthrough-defining-classes.md)
 ## [Overloaded Properties and Methods](overloaded-properties-and-methods.md)
 ## [Inheritance Basics](inheritance-basics.md)

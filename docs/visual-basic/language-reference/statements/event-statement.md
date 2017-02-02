@@ -142,7 +142,7 @@ End Event
 ## See Also  
  [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)   
  [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)   
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)   
  [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)   
  [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)   
  [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)   

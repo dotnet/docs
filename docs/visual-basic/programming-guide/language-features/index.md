@@ -78,7 +78,7 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [LINQ](../../../visual-basic/programming-guide/language-features/linq/index.md)  
  Provides links to topics that introduce [!INCLUDE[vbteclinqext](../../../csharp/getting-started/includes/vbteclinqext_md.md)] features and programming.  
   
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md)  
+ [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
  Provides an overview of objects and classes, how they are used, their relationships to each other, and the properties, methods, and events they expose.  
   
  [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/operators-and-expressions.md)  

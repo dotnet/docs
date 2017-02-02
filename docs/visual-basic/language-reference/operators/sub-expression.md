@@ -81,6 +81,6 @@ End Sub
 ## See Also  
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
  [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/operators-and-expressions.md)   
+ [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)   
  [Statements](../../../visual-basic/programming-guide/language-features/statements.md)   
  [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)

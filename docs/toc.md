@@ -542,7 +542,7 @@
 ### [LINQ](visual-basic/programming-guide/language-features/linq/index.md)
 ### [Objects and Classes](visual-basic/programming-guide/language-features/objects-and-classes/index.md)
 ### [Operators and Expressions](visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
-### [Procedures](visual-basic/programming-guide/language-features/procedures/procedures.md)
+### [Procedures](visual-basic/programming-guide/language-features/procedures/index.md)
 ### [Statements](visual-basic/programming-guide/language-features/statements.md)
 ### [Strings](visual-basic/programming-guide/language-features/strings/strings.md)
 ### [Variables](visual-basic/programming-guide/language-features/variables/variables.md)

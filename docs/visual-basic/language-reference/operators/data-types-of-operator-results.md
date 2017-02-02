@@ -199,7 +199,7 @@ translation.priority.ht:
   
 ## See Also  
  [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/operators-and-expressions.md)   
+ [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)   
  [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)   
  [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)   
  [Operators](../../../visual-basic/language-reference/operators/index.md)   

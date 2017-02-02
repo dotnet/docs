@@ -1,4 +1,4 @@
-# [Procedures in Visual Basic](procedures.md)
+# [Procedures in Visual Basic](index.md)
 ## [How to: Create a Procedure](how-to-create-a-procedure.md)
 ## [Sub Procedures](sub-procedures.md)
 ### [How to: Call a Procedure that Does Not Return a Value](how-to-call-a-procedure-that-does-not-return-a-value.md)

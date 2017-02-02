@@ -113,7 +113,7 @@ Dim londonCusts = db.Customers.
 ## See Also  
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
  [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/operators-and-expressions.md)   
+ [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)   
  [Statements](../../../visual-basic/programming-guide/language-features/statements.md)   
  [Value Comparisons](../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)   
  [Boolean Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)   

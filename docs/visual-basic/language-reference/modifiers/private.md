@@ -85,4 +85,4 @@ Specifies that one or more declared programming elements are accessible only fro
  [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
  [Procedures](../../../visual-basic/programming-guide/language-features/procedures/procedures.md)   
  [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md)
+ [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

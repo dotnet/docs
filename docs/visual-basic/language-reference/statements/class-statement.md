@@ -77,7 +77,7 @@ End Class
 |`End Class`|Required. Terminates the `Class` definition.|  
   
 ## Remarks  
- A `Class` statement defines a new data type. A *class* is a fundamental building block of object-oriented programming (OOP). For more information, see [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md).  
+ A `Class` statement defines a new data type. A *class* is a fundamental building block of object-oriented programming (OOP). For more information, see [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md).  
   
  You can use `Class` only at namespace or module level. This means the *declaration context* for a class must be a source file, namespace, class, structure, module, or interface, and cannot be a procedure or block. For more information, see [Declaration Contexts and Default Access Levels](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md).  
   
@@ -122,7 +122,7 @@ End Class
   
 -   **Shared Members.** You can control whether a member of a class is a shared or instance member.  
   
--   **Object Orientation.** Classes are object-oriented, but modules are not. You can create one or more instances of a class. For more information, see [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md).  
+-   **Object Orientation.** Classes are object-oriented, but modules are not. You can create one or more instances of a class. For more information, see [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md).  
   
 ## Example  
  The following example uses a `Class` statement to define a class and several members.  
@@ -130,7 +130,7 @@ End Class
  [!code-vb[VbVbalrStatements#62](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/class-statement_1.vb)]  
   
 ## See Also  
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md)   
+ [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
  [Structures and Classes](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)   
  [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)   
  [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)   

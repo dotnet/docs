@@ -115,4 +115,4 @@ translation.priority.ht:
  [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
  [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
  [Structures and Other Programming Elements](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-other-programming-elements.md)   
- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/objects-and-classes.md)
+ [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

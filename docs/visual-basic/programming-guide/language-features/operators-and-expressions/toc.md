@@ -1,4 +1,4 @@
-# [Operators and Expressions](operators-and-expressions.md)
+# [Operators and Expressions](index.md)
 ## [Common Tasks Performed with Operators](common-tasks-performed-with-visual-basic-operators.md)
 ## [Arithmetic Operators](arithmetic-operators.md)
 ## [Comparison Operators](comparison-operators.md)

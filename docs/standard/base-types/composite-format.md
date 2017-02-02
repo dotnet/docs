@@ -36,7 +36,7 @@ The composite formatting feature is supported by methods such as the following:
 
 A composite format string and object list are used as arguments of methods that support the composite formatting feature. A composite format string consists of zero or more runs of fixed text intermixed with one or more format items. The fixed text is any string that you choose, and each format item corresponds to an object or boxed structure in the list. The composite formatting feature returns a new result string where each format item is replaced by the string representation of the corresponding object in the list.
 
-Consider the following [Format](xref:System.String.Format(System.String.Format(System.IFormatProvider,System.String,System.Object)) code fragment.
+Consider the following [Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) code fragment.
 
 ```csharp
 string name = "Fred";

@@ -178,7 +178,7 @@ End Class
 ## See Also  
  [Procedures](./procedures.md)   
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   
- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
+ [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)   
  [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)   
  [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)   
  [Nullable Value Types](../../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)   

@@ -63,7 +63,7 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)  
  Provides an introduction to delegates and how they are used in Visual Basic.  
   
- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)  
+ [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
  Describes binding, which is performed by the compiler when an object is assigned to an object variable, and the differences between early-bound and late-bound objects.  
   
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)  

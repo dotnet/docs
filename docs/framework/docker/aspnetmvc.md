@@ -16,7 +16,7 @@ ms.assetid: c9f1d52c-b4bd-4b5d-b7f9-8f9ceaf778c4
 
 Running an existing .NET Framework-based application in a Windows container doesn't require any changes to your app. To run your app in a Windows container you create a Docker image containing your app and
 start the container. This topic explains
-the tasks you must perform to take an existing [ASP.NET MVC application](http://www.asp.net/mvc)
+how to take an existing [ASP.NET MVC application](http://www.asp.net/mvc)
 and deploy it in a Windows container.
 
 You start with an existing ASP.NET MVC app, then 
@@ -40,8 +40,7 @@ Moving your application involves these steps:
 3. [Starting a Docker container that runs your image.](#start-a-container)
 4. [Verifying the application using your browser.](#verify-in-the-browser)
 
-The finished application is located in the
-[dotnet/core-docs repository on GitHub](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator).
+The [finished application](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator) is on GitHub.
 
 ## Prerequisites
 

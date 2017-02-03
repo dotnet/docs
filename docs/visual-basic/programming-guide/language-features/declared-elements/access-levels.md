@@ -112,5 +112,5 @@ Private numberForMeOnly As Integer
  [Lifetime in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)   
  [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)   
  [How to: Control the Availability of a Variable](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-control-the-availability-of-a-variable.md)   
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/variables.md)   
+ [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)   
  [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)

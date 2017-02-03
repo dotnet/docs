@@ -96,7 +96,7 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Variables](../../../visual-basic/programming-guide/language-features/variables/index.md)  
  Introduces variables and describes how to use them in Visual Basic.  
   
- [XML](../../../visual-basic/programming-guide/language-features/xml/xml.md)  
+ [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)  
  Provides links to topics that describe how to use XML in Visual Basic.  
   
 ## Related Sections  

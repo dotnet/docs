@@ -1,4 +1,4 @@
-# [XML in Visual Basic](xml.md)
+# [XML in Visual Basic](index.md)
 ## [Overview of LINQ to XML](overview-of-linq-to-xml.md)
 ## [Creating XML](creating-xml.md)
 ### [XML Literals Overview](xml-literals-overview.md)

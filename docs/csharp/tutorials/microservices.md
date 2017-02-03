@@ -188,7 +188,7 @@ object has a `Query` property that contains a dictionary of all the
 values on the query string for the request. The first addition is to
 find the latitude and longitude values:
 
-[!code-csharp[ReadQueryString](../../samples/csharp/getting-started/WeatherService/Startup.cs#ReadQueryString "read variables from the query string")]
+[!code-csharp[ReadQueryString](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#ReadQueryString "read variables from the query string")]
 
 The Query dictionary values are `StringValue` type. That type can
 contain a collection of strings. For your weather service, each
@@ -219,7 +219,7 @@ though they are members of that class. Extension methods may only be
 defined in static classes. Here's the definition of the class containing
 the extension method for parse:
 
-[!code-csharp[TryParseExtension](../../samples/csharp/getting-started/WeatherService/Extensions.cs#TryParseExtension "try parse to a nullable")]
+[!code-csharp[TryParseExtension](../../../samples/csharp/getting-started/WeatherMicroservice/Extensions.cs#TryParseExtension "try parse to a nullable")]
 
 The `default(double?)` expression returns the default value for the
 `double?` type. That default value is the null (or missing) value.
@@ -227,12 +227,12 @@ The `default(double?)` expression returns the default value for the
 You can use this extension method to convert the query string arguments
 into the double type:
 
-[!code-csharp[UseTryParse](../../samples/csharp/getting-started/WeatherService/Startup.cs#UseTryParse "Use the try parse extension method")]
+[!code-csharp[UseTryParse](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#UseTryParse "Use the try parse extension method")]
 
 To easily test the parsing code, update the response to include the values
 of the arguments:
 
-[!code-csharp[WriteResponse](../../samples/csharp/getting-started/WeatherService/Startup.cs#WriteResponse "Write the output response")]
+[!code-csharp[WriteResponse](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#WriteResponse "Write the output response")]
 
 At this point, you can run the web application and see if your parsing
 code is working. Add values to the web request in a browser, and you should see
@@ -269,11 +269,11 @@ means the forecast for the same location is the same. If you change the argument
 the latitude and longitude, you'll get a different forecast (because you start with a 
 different seed.)
 
-[!code-csharp[WeatherReportConstructor](../../samples/csharp/getting-started/WeatherService/WeatherReport.cs#WeatherReportConstructor "Weather Report Constructor")]
+[!code-csharp[WeatherReportConstructor](../../../samples/csharp/getting-started/WeatherMicroservice/WeatherReport.cs#WeatherReportConstructor "Weather Report Constructor")]
 
 You can now generate the 5-day forecast in your response method:
 
-[!code-csharp[GenerateRandomReport](../../samples/csharp/getting-started/WeatherService/Startup.cs#GenerateRandomReport "Generate a random weather report")]
+[!code-csharp[GenerateRandomReport](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#GenerateRandomReport "Generate a random weather report")]
 
 ### Build the JSON response.
 
@@ -288,7 +288,7 @@ list of dependencies, inside the `<ItemGroup>` node for dependencies:
 
 Then, you can use the `JsonConvert` class to write the object to a string:
 
-[!code-csharp[ConvertToJson](../../samples/csharp/getting-started/WeatherService/Startup.cs#ConvertToJSON "Convert objects to JSON")]
+[!code-csharp[ConvertToJson](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#ConvertToJSON "Convert objects to JSON")]
 
 The code above converts the forecast object (a list of `WeatherForecast`
 objects) into a JSON packet. After you've constructed the response packet,
@@ -361,12 +361,22 @@ This configured port is referenced in the `--server.urls`
 argument to `dotnet` on the last  line of the Dockerfile. The `ENTRYPOINT` command
 informs Docker  what command and command line options start the service. 
 
-> [!Note]
-> You could also specify the TCP port in code with the `WebHostBuilder.UseUrls("http://0.0.0.0:5000")` method.
-
 ## Building and running the image in a container.
 
-Let's build an image and run the service inside a Docker container. You build the image
+Let's build an image and run the service inside a Docker container. You don't want
+all the files from your local directory copied into the image. Instead, you'll
+build the application in the container. You'll create a `.dockerignore` file
+to specify the directories that are not copied into the image. You don't want
+any of the build assets copied. Specify the build and publish directories
+in the `.dockerignore` file:
+
+```
+bin/*
+obj/*
+out/*
+```
+
+You build the image
 using the docker build command. Run the following command from the directory containing your code.
 
 ```console

@@ -24,10 +24,10 @@ build the published assets using Visual Studio. You use Docker
 to create the image that contains and runs your app. You'll browse to the site running in a Windows container and verify the app is
 working.
 
-This article assumes a basic understanding of Docker. You can learn about the Docker by reading the 
+This article assumes a basic understanding of Docker. You can learn about Docker by reading the 
 [Docker Overview](https://docs.docker.com/engine/understanding-docker/).
 
-The app you run in a container is a simple website that
+The app you'll run in a container is a simple website that
 answers questions randomly. This app is a basic MVC application
 with no authentication or database storage; it lets you focus
 on moving the web tier to a container. Future topics will show how to
@@ -46,10 +46,9 @@ The finished application is located in the
 ## Prerequisites
 
 The development machine must be running
-[Windows 10 Anniversary Update](https://www.microsoft.com/en-us/software-download/windows10/) (or higher)
+- [Windows 10 Anniversary Update](https://www.microsoft.com/en-us/software-download/windows10/) (or higher)
 or [Windows Server 2016](https://www.microsoft.com/en-us/cloud-platform/windows-server) (or higher). 
-
-[Docker for Windows](https://docs.docker.com/docker-for-windows/) - version Stable 1.13.0 or 1.12 Beta 26 (or newer versions)
+- [Docker for Windows](https://docs.docker.com/docker-for-windows/) - version Stable 1.13.0 or 1.12 Beta 26 (or newer versions)
 
 > [!IMPORTANT]
 > If you are using Windows Server 2016, follow the
@@ -78,7 +77,7 @@ profile will put all the assets in one directory tree that you copy to your targ
 ![Publish Connection][publish-connection]
 
 Open the **File Publish Options** section of the **Settings** tab. Select
-**Precompile during publishing**. This optimization means that you be
+**Precompile during publishing**. This optimization means that you'll be
 compiling views in the Docker container, you are copying the precompiled
 views.
 
@@ -94,7 +93,7 @@ for the base image, additional components, the app you
 want to run, and other configuration images.  The Dockerfile is the input
 to the `docker build` command, which creates the image.
 
-Build an image based on the `microsft/aspnet`
+You will build an image based on the `microsft/aspnet`
 image located on [Docker Hub](https://hub.docker.com/r/microsoft/aspnet/).
 The base image, `microsoft/aspnet`, is a Windows Server image. In contains
 Windows Server Core, IIS and ASP.NET 4.6.2. When you run this image in your container, it will

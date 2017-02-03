@@ -10,7 +10,7 @@ About .NET Core Hosts
 
 It is possible to create your own host, though, to enable starting and running .NET Core code from a native application, or to enable a high degree of control over how the runtime operates.
 
-This sample only builds for Windows, currently, but the same approach can be used to host .NET Core on Linux or Mac. There are also [alternative hosting APIs](https://github.com/dotnet/coreclr/blob/8a05dcd07441b8779ec5b9eff9bdcb90f24fcb8e/src/coreclr/hosts/inc/coreclrhost.h) that may be easier to use in a Unix environment. This sample shows how to use the `ICLRRuntimeHost2` interface. Future samples will cover Unix scenarios.
+This sample only builds for Windows currently, but the same approach can be used to host .NET Core on Linux or Mac. There are also [alternative hosting APIs](https://github.com/dotnet/coreclr/blob/8a05dcd07441b8779ec5b9eff9bdcb90f24fcb8e/src/coreclr/hosts/inc/coreclrhost.h) that may be easier to use in a Unix environment. This sample shows how to use the `ICLRRuntimeHost2` interface. Future samples will cover Unix scenarios.
 
 More complex, real-world hosts can be found in the [dotnet/coreclr](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts) repository.
 

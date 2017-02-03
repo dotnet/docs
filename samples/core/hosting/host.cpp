@@ -46,7 +46,7 @@ int wmain(int argc, wchar_t* argv[])
 		printf("ERROR - Specify exe to run as the app's first parameter");
 		return -1;
 	}
-	// The managed application to run should be the first command line parameter.
+	// The managed application to run should be the first command-line parameter.
 	// Subsequent command line parameters will be passed to the managed app later in this host.
 	wchar_t targetApp[MAX_PATH];
 	GetFullPathNameW(argv[1], MAX_PATH, targetApp, NULL);

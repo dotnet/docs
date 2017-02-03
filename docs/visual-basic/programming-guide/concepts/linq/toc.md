@@ -25,7 +25,7 @@
 ### [Concatenation Operations](concatenation-operations.md)
 ### [Aggregation Operations](aggregation-operations.md)
 
-## [LINQ to Objects](linq-to-objects.md)
+# [LINQ to Objects](linq-to-objects.md)
 ### [LINQ and Strings](linq-and-strings.md)
 #### [How to: Count Occurrences of a Word in a String (LINQ)](how-to-count-occurrences-of-a-word-in-a-string-linq.md)
 #### [How to: Query for Sentences that Contain a Specified Set of Words (LINQ)](how-to-query-for-sentences-that-contain-a-specified-set-of-words.md)

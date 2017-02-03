@@ -1,6 +1,6 @@
 ---
 title: "Interpolated Strings (C#) | Microsoft Docs"
-ms.date: "2015-07-20"
+ms.date: "2017-02-03"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"

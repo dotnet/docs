@@ -52,4 +52,4 @@ The topics in this section document the syntax of XML literals in [!INCLUDE[vbpr
 |[XML Processing Instruction Literal](../../../visual-basic/language-reference/xml-literals/xml-processing-instruction-literal.md)|Describes the syntax for literals that represent <xref:System.Xml.Linq.XProcessingInstruction> objects.|  
   
 ## See Also  
- [XML](../../../visual-basic/programming-guide/language-features/xml/xml.md)
+ [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

@@ -52,4 +52,4 @@ This example shows how to use a descendant axis property to access all XML eleme
  [XML Descendant Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-descendant-axis-property.md)   
  [XML Value Property](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md)   
  [Accessing XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)   
- [XML](../../../../visual-basic/programming-guide/language-features/xml/xml.md)
+ [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)

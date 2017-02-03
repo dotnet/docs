@@ -51,4 +51,4 @@ translation.priority.ht:
 |[Names of Declared XML Elements and Attributes](../../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)|Describes guidelines for naming XML elements and attributes.|  
   
 ## See Also  
- [XML](../../../../visual-basic/programming-guide/language-features/xml/xml.md)
+ [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)

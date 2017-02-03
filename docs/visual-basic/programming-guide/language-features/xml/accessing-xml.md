@@ -78,5 +78,5 @@ translation.priority.ht:
  [Manipulating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)  
  Provides links to sections about loading and modifying XML in Visual Basic.  
   
- [XML](../../../../visual-basic/programming-guide/language-features/xml/xml.md)  
+ [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)  
  Provides links to sections describing how to use [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] in Visual Basic.

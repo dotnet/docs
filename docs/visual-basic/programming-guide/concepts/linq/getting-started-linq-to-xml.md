@@ -37,4 +37,4 @@ The following topics introduce LINQ to XML.
  [Reference (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/reference-linq-to-xml.md)   
  [LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md)   
  [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)   
- [XML](../../../../visual-basic/programming-guide/language-features/xml/xml.md)
+ [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)

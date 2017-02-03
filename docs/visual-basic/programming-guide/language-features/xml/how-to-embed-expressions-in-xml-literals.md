@@ -91,4 +91,4 @@ You can combine XML literals with embedded expressions to create an XML document
  [How to: Create XML Literals](../../../../visual-basic/programming-guide/language-features/xml/how-to-create-xml-literals.md)   
  [Embedded Expressions in XML](../../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)   
  [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)   
- [XML](../../../../visual-basic/programming-guide/language-features/xml/xml.md)
+ [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)

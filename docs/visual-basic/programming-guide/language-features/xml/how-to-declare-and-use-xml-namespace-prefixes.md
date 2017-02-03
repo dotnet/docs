@@ -51,4 +51,4 @@ This example shows how to import the XML namespace prefix `ns` and use it in an 
  [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)   
  [XML Value Property](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md)   
  [Accessing XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)   
- [XML](../../../../visual-basic/programming-guide/language-features/xml/xml.md)
+ [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)

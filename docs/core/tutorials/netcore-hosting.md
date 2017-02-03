@@ -1,8 +1,14 @@
 ---
-title: Hosting .NET Core
+title: Hosting .NET Core | Microsoft Docs
 description: Hosting the .NET Core runtime from native code 
-keywords: .NET, .NET Core, Hosting
-author: mikerou
+keywords: .NET, .NET Core, Hosting, Hosting .NET Core
+author: mjrousos
+ms.author: mikerou
+ms.date: 2/3/2017
+ms.topic: article
+ms.prod: .net-core
+ms.devlang: dotnet
+ms.assetid: 13edec8b-614d-47ed-9e95-ed6d3b94ec0c
 ---
 
 # Hosting .NET Core

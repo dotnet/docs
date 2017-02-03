@@ -88,7 +88,7 @@ S = Microsoft.VisualBasic.Left(S, 4)
   
  A string created by another component might be padded with leading or trailing spaces. If you receive such a string, you can use the <xref:Microsoft.VisualBasic.Strings.Trim%2A>, <xref:Microsoft.VisualBasic.Strings.LTrim%2A>, and <xref:Microsoft.VisualBasic.Strings.RTrim%2A> functions to remove these spaces.  
   
- For more information about string manipulations, see [Strings](../../../visual-basic/programming-guide/language-features/strings/strings.md).  
+ For more information about string manipulations, see [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md).  
   
 ## Programming Tips  
   

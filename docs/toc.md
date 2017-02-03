@@ -545,7 +545,7 @@
 ### [Procedures](visual-basic/programming-guide/language-features/procedures/index.md)
 ### [Statements](visual-basic/programming-guide/language-features/statements.md)
 ### [Strings](visual-basic/programming-guide/language-features/strings/index.md)
-### [Variables](visual-basic/programming-guide/language-features/variables/variables.md)
+### [Variables](visual-basic/programming-guide/language-features/variables/index.md)
 ### [XML](visual-basic/programming-guide/language-features/xml/xml.md)
 
 ## [COM Interop](visual-basic/programming-guide/com-interop/index.md)

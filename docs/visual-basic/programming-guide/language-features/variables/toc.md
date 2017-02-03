@@ -1,4 +1,4 @@
-# [Variables in Visual Basic](variables.md)
+# [Variables in Visual Basic](index.md)
 ## [Variable Declaration](variable-declaration.md)
 ### [How to: Create a New Variable](how-to-create-a-new-variable.md)
 ### [How to: Create a Variable that Does Not Change in Value](how-to-create-a-variable-that-does-not-change-in-value.md)

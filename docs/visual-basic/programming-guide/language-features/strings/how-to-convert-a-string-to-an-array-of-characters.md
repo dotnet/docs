@@ -55,4 +55,4 @@ Sometimes it is useful to have data about the characters in your string and the 
  <xref:System.Globalization.StringInfo?displayProperty=fullName>   
  [How to: Access Characters in Strings](../../../../visual-basic/programming-guide/language-features/strings/how-to-access-characters-in-strings.md)   
  [Converting Between Strings and Other Data Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/converting-between-strings-and-other-data-types.md)   
- [Strings](../../../../visual-basic/programming-guide/language-features/strings/strings.md)
+ [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)

@@ -40,4 +40,4 @@ A string's length exceeds the maximum length of 32767 characters.
 1.  Shorten the string.  
   
 ## See Also  
- [Strings](../../visual-basic/programming-guide/language-features/strings/strings.md)
+ [Strings](../../visual-basic/programming-guide/language-features/strings/index.md)

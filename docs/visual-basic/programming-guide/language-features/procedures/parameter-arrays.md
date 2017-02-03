@@ -80,7 +80,7 @@ Usually, you cannot call a procedure with more arguments than the procedure decl
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Information.UBound%2A>   
- [Procedures](./procedures.md)   
+ [Procedures](./index.md)   
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
  [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)   
  [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)   

@@ -53,7 +53,7 @@ A `Sub` procedure does not return a value to the calling code. You call it expli
 ## See Also  
  <xref:Microsoft.VisualBasic.Interaction.Shell%2A>   
  <xref:System.ArgumentException>   
- [Procedures](./procedures.md)   
+ [Procedures](./index.md)   
  [Sub Procedures](./sub-procedures.md)   
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
  [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)   

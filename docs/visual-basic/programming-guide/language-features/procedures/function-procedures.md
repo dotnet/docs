@@ -122,7 +122,7 @@ End Function
  [!code-vb[VbVbcnProcedures#6](./codesnippet/VisualBasic/function-procedures_2.vb)]  
   
 ## See Also  
- [Procedures](./procedures.md)   
+ [Procedures](./index.md)   
  [Sub Procedures](./sub-procedures.md)   
  [Property Procedures](./property-procedures.md)   
  [Operator Procedures](./operator-procedures.md)   

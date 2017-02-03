@@ -55,7 +55,7 @@ The advantage of overloading a procedure is in the flexibility of the call. The 
      [!code-vb[VbVbcnProcedures#57](./codesnippet/VisualBasic/how-to-call-an-overloaded-procedure_2.vb)]  
   
 ## See Also  
- [Procedures](./procedures.md)   
+ [Procedures](./index.md)   
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
  [Procedure Overloading](./procedure-overloading.md)   
  [Troubleshooting Procedures](./troubleshooting-procedures.md)   

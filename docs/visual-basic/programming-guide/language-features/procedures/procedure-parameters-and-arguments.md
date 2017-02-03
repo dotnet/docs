@@ -82,7 +82,7 @@ Passing an argument to a parameter
  A *generic procedure* also defines one or more *type parameters* in addition to its normal parameters. A generic procedure allows the calling code to pass different data types each time it calls the procedure, so it can tailor the data types to the requirements of each individual call. See [Generic Procedures in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md).  
   
 ## See Also  
- [Procedures](./procedures.md)   
+ [Procedures](./index.md)   
  [Sub Procedures](./sub-procedures.md)   
  [Function Procedures](./function-procedures.md)   
  [Property Procedures](./property-procedures.md)   

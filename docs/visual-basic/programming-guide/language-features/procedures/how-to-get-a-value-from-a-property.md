@@ -61,7 +61,7 @@ You retrieve a property's value by including the property name in an expression.
  The value of the property participates in the expression just as a variable or constant would, or it is stored in the variable or property on the left side of the assignment statement.  
   
 ## See Also  
- [Procedures](./procedures.md)   
+ [Procedures](./index.md)   
  [Property Procedures](./property-procedures.md)   
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
  [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)   

@@ -91,7 +91,7 @@ In [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes
  [!code-vb[VbVbcnProcedures#74](./codesnippet/VisualBasic/passing-arguments-by-value-and-by-reference_1.vb)]  
   
 ## See Also  
- [Procedures](./procedures.md)   
+ [Procedures](./index.md)   
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
  [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)   
  [How to: Change the Value of a Procedure Argument](./how-to-change-the-value-of-a-procedure-argument.md)   

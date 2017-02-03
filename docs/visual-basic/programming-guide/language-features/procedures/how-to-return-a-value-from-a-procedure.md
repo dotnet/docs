@@ -67,7 +67,7 @@ A `Function` procedure returns a value to the calling code either by executing a
      For more information and an example, see "Return Value" in [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md).  
   
 ## See Also  
- [Procedures](./procedures.md)   
+ [Procedures](./index.md)   
  [Sub Procedures](./sub-procedures.md)   
  [Property Procedures](./property-procedures.md)   
  [Operator Procedures](./operator-procedures.md)   

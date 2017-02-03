@@ -90,7 +90,7 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Statements](../../../visual-basic/programming-guide/language-features/statements.md)  
  Describes declaration and executable statements.  
   
- [Strings](../../../visual-basic/programming-guide/language-features/strings/strings.md)  
+ [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md)  
  Provides links to topics that describe the basic concepts about using strings in Visual Basic.  
   
  [Variables](../../../visual-basic/programming-guide/language-features/variables/variables.md)  

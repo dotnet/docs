@@ -1,4 +1,4 @@
-# [Strings in Visual Basic](strings.md)
+# [Strings in Visual Basic](index.md)
 ## [Introduction to Strings](introduction-to-strings.md)
 ### [String Basics](string-basics.md)
 ### [Types of String Manipulation Methods](types-of-string-manipulation-methods.md)

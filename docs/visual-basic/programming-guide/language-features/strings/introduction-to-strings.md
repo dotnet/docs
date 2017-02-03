@@ -47,4 +47,4 @@ This section describes the basic concepts behind using strings in [!INCLUDE[vbpr
  Discusses how [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] uses culture information to perform string conversions and comparisons.  
   
 ## See Also  
- [Strings](../../../../visual-basic/programming-guide/language-features/strings/strings.md)
+ [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)

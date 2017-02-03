@@ -75,7 +75,7 @@ A *parameter* allows the calling code to pass a value to the procedure when it c
     -   It results in faster execution of your code. One reason for this is that if you do not specify a data type for a programming element, the [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler assigns it the `Object` type. Your compiled code might have to convert back and forth between `Object` and other data types, which reduces performance.  
   
 ## See Also  
- [Procedures](./procedures.md)   
+ [Procedures](./index.md)   
  [Sub Procedures](./sub-procedures.md)   
  [Function Procedures](./function-procedures.md)   
  [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)   

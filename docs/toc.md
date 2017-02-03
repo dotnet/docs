@@ -544,7 +544,7 @@
 ### [Operators and Expressions](visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
 ### [Procedures](visual-basic/programming-guide/language-features/procedures/index.md)
 ### [Statements](visual-basic/programming-guide/language-features/statements.md)
-### [Strings](visual-basic/programming-guide/language-features/strings/strings.md)
+### [Strings](visual-basic/programming-guide/language-features/strings/index.md)
 ### [Variables](visual-basic/programming-guide/language-features/variables/variables.md)
 ### [XML](visual-basic/programming-guide/language-features/xml/xml.md)
 

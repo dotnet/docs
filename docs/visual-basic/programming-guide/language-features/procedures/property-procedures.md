@@ -129,7 +129,7 @@ End Property
  [!code-vb[VbVbcnProcedures#9](./codesnippet/VisualBasic/property-procedures_2.vb)]  
   
 ## See Also  
- [Procedures](./procedures.md)   
+ [Procedures](./index.md)   
  [Function Procedures](./function-procedures.md)   
  [Operator Procedures](./operator-procedures.md)   
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   

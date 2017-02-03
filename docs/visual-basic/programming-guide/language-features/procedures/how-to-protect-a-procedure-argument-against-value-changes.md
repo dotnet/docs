@@ -65,7 +65,7 @@ If a procedure declares a parameter as [ByRef](../../../../visual-basic/language
  The default in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] is to pass arguments by value. However, it is good programming practice to include either the [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) or [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) keyword with every declared parameter. This makes your code easier to read.  
   
 ## See Also  
- [Procedures](./procedures.md)   
+ [Procedures](./index.md)   
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
  [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)   
  [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)   

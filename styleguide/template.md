@@ -92,7 +92,7 @@ Second-level headings will generate the on-page TOC that appears in the "In this
 Use for UI elements.
 
 `Code`
-Use for inline code, language keywords, NuGet package names, and URLs that you don't want to be clickable.
+Use for inline code, language keywords, NuGet package names, command-line commands, database table and column names, and URLs that you don't want to be clickable.
 
 ## Links
 
@@ -303,10 +303,6 @@ function fancyAlert(arg) {
     }
 }
 ```
-
-### Inline code
-
-Use backticks (&#96;) for `inline code`. Use inline code for command-line commands, database table and column names, and language keywords.
 
 ## Blockquotes
 

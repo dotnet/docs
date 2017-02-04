@@ -1,4 +1,4 @@
-Hello Sample
+Better Fibonacci Sample
 ================
 
 This sample is part of the [step-by-step tutorial](https://docs.microsoft.com/dotnet/articles/core/preview3/tutorials/using-with-xplat-cli-msbuild)
@@ -8,7 +8,8 @@ for this sample.
 Key Features
 ------------
 
-This is the basic Hello World sample. It demonstrates the basics of the environment.
+This sample demonstrates a multiple source file project, adding recursion and caching previous
+results to the initial Fibonacci sample.
 
 Build and Run
 -------------

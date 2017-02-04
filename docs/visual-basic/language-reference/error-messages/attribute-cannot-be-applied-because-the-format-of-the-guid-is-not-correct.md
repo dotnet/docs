@@ -51,4 +51,4 @@ A `COMClassAttribute` attribute block specifies a globally unique identifier (GU
   
 ## See Also  
  <xref:System.Guid>   
- [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+ [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)

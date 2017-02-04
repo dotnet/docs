@@ -1,5 +1,5 @@
 ---
-title: .NET Core CLI extensibility model 
+title: .NET Core CLI extensibility model | Microsoft Docs
 description: .NET Core CLI extensibility model 
 keywords: CLI, extensibility, custom commands, .NET Core
 author: blackdwarf
@@ -13,6 +13,10 @@ ms.assetid: 1bebd25a-120f-48d3-8c25-c89965afcbcd
 ---
 
 # .NET Core CLI extensibility model 
+
+> [!WARNING]
+> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools Preview 4 version,
+> see the [.NET Core CLI extensibility model (Tooling Preview 4)](../preview3/tools/extensibility.md) topic.
 
 ## Overview
 This document will cover the main ways how to extend the CLI tools and explain the scenarios that drive each of them. 

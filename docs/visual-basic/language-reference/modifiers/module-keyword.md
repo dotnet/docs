@@ -50,4 +50,4 @@ Specifies that an attribute at the beginning of a source file applies to the cur
 ## See Also  
  [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)   
  [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)   
- [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+ [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)

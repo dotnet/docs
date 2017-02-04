@@ -1,5 +1,5 @@
 ---
-title: project.json reference
+title: project.json reference | Microsoft Docs
 description: project.json reference
 keywords: .NET, .NET Core, project.json
 author: aL3891
@@ -13,6 +13,10 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 ---
 
 # project.json reference
+
+> [!WARNING]
+> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools Preview 4 documentation,
+> see the [.NET Core command-line interface tools (Tooling Preview 4)](../preview3/tools/index.md) section.
 
 The project.json file is used on .NET Core projects to define project metadata, compilation information, and dependencies. 
 In this reference topic, you'll see the list of all the properties you can define in your project.json file.
@@ -321,7 +325,7 @@ For example:
 Type: Object
 
 An object that defines the package dependencies of the project, each key of this object is the name of a package and each value contains versioning information.
-For more information, see the [Dependency resolution](https://docs.nuget.org/ndocs/consume-packages/dependency-resolution#dependency-resolution-in-nuget-3-x) article on
+For more information, see the [Dependency resolution](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#dependency-resolution-in-nuget-3x) article on
 the NuGet documentation site.
 
 For example:
@@ -345,7 +349,7 @@ For example:
 Type: String
 
 Specifies the version or version range of the dependency. Use the \* wildcard to specify a 
-[floating dependency version](https://docs.nuget.org/ndocs/consume-packages/dependency-resolution#floating-versions).
+[floating dependency version](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#floating-versions).
 
 For example:
 
@@ -1647,7 +1651,7 @@ For example:
 Type: String
 
 Specifies a user secret identifier to be used at development-time. 
-For more information, see [Safe storage of app secrets during development](https://docs.asp.net/en/latest/security/app-secrets.html).
+For more information, see [Safe storage of app secrets during development](https://docs.microsoft.com/aspnet/core/security/app-secrets).
 
 For example:
 

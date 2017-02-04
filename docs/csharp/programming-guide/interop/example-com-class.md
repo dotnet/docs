@@ -60,5 +60,5 @@ The following is an example of a class that you would expose as a COM object. Af
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Interoperability](../../../csharp/programming-guide/interop/interoperability.md)   
+ [Interoperability](../../../csharp/programming-guide/interop/index.md)   
  [Build Page, Project Designer (C#)](https://docs.microsoft.com/visualstudio/ide/reference/build-page-project-designer-csharp)

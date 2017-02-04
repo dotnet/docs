@@ -21,7 +21,7 @@ You can find great resources to learn the F# programming language
 on the [F# Foundation's site](http://fsharp.org/learn.html). 
 
 You can find great resources for learning ASP.NET Core on the
-[ASP.NET site](https://docs.asp.net/en/latest/tutorials/index.html).
+[ASP.NET site](https://docs.microsoft.com/aspnet/core/tutorials/).
 
 In addition, if you are interested in exploring C# using an
 online playground, try these [interactive tutorials](http://go.microsoft.com/fwlink/?LinkId=817234).

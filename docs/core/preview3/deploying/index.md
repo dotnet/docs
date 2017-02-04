@@ -1,5 +1,5 @@
 ---
-title: .NET Core Application Deployment 
+title: .NET Core Application Deployment | Microsoft Docs
 description: .NET Core Application Deployment 
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
@@ -11,7 +11,11 @@ ms.devlang: dotnet
 ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 ---
 
-# .NET Core Application Deployment #
+# .NET Core Application Deployment (.NET Core Tools Preview 4)
+
+> [!WARNING]
+> This topic applies to Visual Studio 2017 RC - .NET Core Tools Preview 4. For the .NET Core Tools Preview 2 documentation,
+> see the [.NET Core Application Deployment](../../deploying/index.md) topic.
 
 You can create two types of deployments for .NET Core applications: 
 
@@ -117,7 +121,7 @@ Deploying a framework-dependent deployment with one or more third-party dependen
       </ItemGroup>
     ```
 
- Note that the SDK dependency remains in the above example. This is by design, since this depdendency is required to restore all the needed targets to allow the command line tools to function.  
+ Note that the SDK dependency remains in the above example. This is by design, since this dependency is required to restore all the needed targets to allow the command line tools to function.  
 
 2. If you haven't already, download the NuGet package containing the third-party dependency. To download the package, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
 

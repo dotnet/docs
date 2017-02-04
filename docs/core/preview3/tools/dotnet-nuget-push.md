@@ -1,5 +1,5 @@
 ---
-title: dotnet-nuget-push command | .NET Core SDK
+title: dotnet-nuget-push command | Microsoft Docs
 description: The dotnet-nuget-push command pushes a package to the server and publishes it. 
 keywords: dotnet-nuget-push, CLI, CLI command, .NET Core
 author: karann-msft
@@ -28,7 +28,7 @@ ms.assetid: f54d9adf-94f8-41cc-bb52-42f7ca3be6ff
 ## Description
 
 The `dotnet nuget push` command pushes a package to the server and publishes it. 
-The push command uses server and credential details found in the system's NuGet config file, or chain of config files. For more information on config files, see [Configuring NuGet Behavior](https://docs.nuget.org/ndocs/consume-packages/configuring-nuget-behavior). 
+The push command uses server and credential details found in the system's NuGet config file, or chain of config files. For more information on config files, see [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior). 
 NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.local/share* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* 
 starting from root of drive and ending in current directory.
 
@@ -75,7 +75,7 @@ automated tools which scrape the logs for text.
 
 A NuGet configuration file used specifically for this command, replacing other config files found by the standard config file discovery and chaining process. 
 The path can be absolute or relative.
-For more information on config files, see [Configuring NuGet Behavior](https://docs.nuget.org/ndocs/consume-packages/configuring-nuget-behavior). 
+For more information on config files, see [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior). 
 
 `--verbosity <LEVEL>`
 

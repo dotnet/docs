@@ -128,11 +128,11 @@ Let's build off of the previous Fibonacci example by caching some Fibonacci valu
 
 1. Add a new file inside the *Hello* directory named *FibonacciGenerator.cs* with the following code:
 
-[!code-csharp[Fibonacci Generator](../../../../samples/core/console-apps/FibonnacciBetterMsBuild/FibonacciGenerator.cs)]   
+[!code-csharp[Fibonacci Generator](../../../../samples/core/console-apps/FibonacciBetterMsBuild/FibonacciGenerator.cs)]   
 
 2. Change the `Main` method in your *Program.cs* file to instantiate the new class and call its method as in the following example:
 
-[!code-csharp[New Program.cs](../../../../samples/core/console-apps/FibonnacciBetterMsBuild/Program.cs)]
+[!code-csharp[New Program.cs](../../../../samples/core/console-apps/FibonacciBetterMsBuild/Program.cs)]
 
 3. Execute [`dotnet build`](../tools/dotnet-build.md) to compile the changes.
 

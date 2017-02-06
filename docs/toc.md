@@ -137,6 +137,7 @@
 ### [Developing ASP.NET Core applications](core/tutorials/aspnet-core.md)
 ### [How to Manage Package Dependency Versions for .NET Core 1.0](core/tutorials/managing-package-dependency-versions.md)
 ### [Using MSBuild to build .NET Core projects](core/tutorials/target-dotnetcore-with-msbuild.md)
+### [Hosting .NET Core from native code](core/tutorials/netcore-hosting.md)
 ## [Packages, Metapackages and Frameworks](core/packages.md)
 ## [Application Deployment](core/deploying/index.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)

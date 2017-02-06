@@ -18,7 +18,7 @@ This article covers how you can get started with using F# on .NET Core 1.0 with 
 
 ## Prerequisites
 
-To begin, you must install the [.NET Core SDK 1.0.0 - Preview 2 (build 003131)](https://dot.net/core).  There is no need to uninstall a previous version of the .NET Core SDK, as it supports side-by-side installations.
+To begin, you must install the [.NET Core SDK 1.0.3 - (build 004769)](https://dot.net/core).  There is no need to uninstall a previous version of the .NET Core SDK, as it supports side-by-side installations.
 
 This article assumes that you know how to use a command line and have a preferred text editor.  If you don't already use it, [Visual Studio Code](https://code.visualstudio.com) is a great option as a text editor for F#.  To get awesome features like IntelliSense, better syntax highlighting, and more, you can download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).
 
@@ -27,7 +27,7 @@ This article assumes that you know how to use a command line and have a preferre
 1. Open a Command Line/Terminal.
 2. Create a new directory named `FSNetCore`.  Open Visual Studio code or your preferred editor inside this directory. 
 3. Under `FSNetCore`, create `src` and `test` directories.
-4. Under `FSNetCore`, create a new file called `global.json`.  It should have this as its contents:
+4. Under `FSNetCore`, create a new file called `global.json`.  It should have the following contents:
 
 ```json
 {
@@ -46,108 +46,93 @@ FSNetCore/
 
 ### Writing a Class library
 
-1. Create a `Library` folder under `FSNetCore/src`.
-2. In the command line, execute `dotnet new -l F# -t lib` in `FSNetCore/src/Library`.
-3. Replace the contents of `Library.fs` with the following:
+Use the `dotnet new` command, create a Class Library project in the **src** folder named Library. 
 
-    ```fsharp
-    module Library
+```bash
+dotnet new classlib -lang F# -o src/Library 
+```
 
-    open Newtonsoft.Json
+Replace the contents of `Library.fs` with the following:
 
-    let getJsonNetJson value = 
-        sprintf "I used to be %s but now I'm %s thanks to JSON.NET!" value  (JsonConvert.SerializeObject(value))
-    ```
+```fsharp
+module Library
 
-5. Replace the contents of `project.json` with the following:
+open Newtonsoft.Json
 
-    ```json
-    {
-      "version": "1.0.0-*",
-      "buildOptions": {
-        "debugType":"portable",
-        "compilerName": "fsc",
-        "compile": {
-          "includeFiles": [
-            "Library.fs"
-          ]
-        }
-      },
-      "tools": {
-        "dotnet-compile-fsc":"1.0.0-preview2-*"
-      },
-      "frameworks": {
-        "netstandard1.6": {
-          "dependencies": {
-            "NETStandard.Library":"1.6.0",
-            "Microsoft.FSharp.Core.netcore":"1.0.0-alpha-160629",
-            "Newtonsoft.Json":"9.0.1"    
-          }
-        }
-      }
-    }
-    ```
+let getJsonNetJson value = 
+    sprintf "I used to be %s but now I'm %s thanks to JSON.NET!" value  (JsonConvert.SerializeObject(value))
+```
 
-6. Run `dotnet restore` and `dotnet build`.  These should succeed.
+Add the Newtonsoft.Json nuget package to the Library project.
+
+```bash
+dotnet add package Newtonsoft.Json
+```
+
+Restore the nuget dependencies
+
+```bash
+dotnet restore
+``` 
+
+and build the project
+
+```bash 
+dotnet build
+```
+
+>[!NOTE] `restore` and `build` assumes the current directory contains the project file, otherwise pass in the location. For example, `dotnet restore src/Library/Library.fsproj`
 
 ### Writing a Console Application which Consumes the Class Library
 
-1. Create an `App` folder under `FSNetCore/src`.
-2. In the command line, execute `dotnet new -l F#` in `FSNetCore/src/App`.
-3. Change `Program.fs` to:
+Use the `dotnet new` command, create a Console app in the **src** folder named App. 
 
-    ```fs
-    open System
-    open Library
+```bash
+dotnet new console -lang F# -o src/App 
+```
 
-    [<EntryPoint>]
-    let main argv = 
-        printfn "Nice command line arguments!  Here's what JSON.NET has to say about them:"
+Change `Program.fs` to:
 
-        argv
-        |> Array.map getJsonNetJson
-        |> Array.iter (printfn "%s")
+```fsharp
+open System
+open Library
 
-        0 // return an integer exit code
-    ```
+[<EntryPoint>]
+let main argv = 
+    printfn "Nice command line arguments!  Here's what JSON.NET has to say about them:"
 
-4. Add a reference to the `Library` project you just created in the `project.json` file.  It should look like this:
+    argv
+    |> Array.map getJsonNetJson
+    |> Array.iter (printfn "%s")
 
-    ```json
-    {
-      "version": "1.0.0-*",
-      "buildOptions": {
-        "debugType":"portable",
-        "emitEntryPoint": true,
-        "compilerName": "fsc",
-        "compile": {
-          "includeFiles": [
-            "Program.fs"
-          ]
-        }
-      },
-      "tools": {
-        "dotnet-compile-fsc":"1.0.0-preview2-*"
-      },
-      "frameworks": {
-        "netcoreapp1.0": {
-          "dependencies": {
-            "Microsoft.NETCore.App": {
-              "type": "platform",
-              "version": "1.0.0"
-            },
-            "Microsoft.FSharp.Core.netcore": "1.0.0-alpha-160629",
-            "Library":{
-              "target": "project"
-            }
-          }
-        }
-      }
-    }
-    ```
+    0 // return an integer exit code
+```
 
-10. Enter `dotnet restore` and `dotnet build` into the command line.  These should succeed.
-11. Enter `dotnet run Hello World` into the command line.  You should see results like this:
+Change directories to the `App` console project and add a reference to the `Library` project using `dotnet add reference`.
+
+```bash
+dotnet add reference ../Library/Library.fsproj
+```
+
+Restore the nuget dependencies
+
+```bash
+dotnet restore
+``` 
+
+and build the project
+
+```bash 
+dotnet build
+```
+
+Run the project passing `Hello World` as arguments.
+
+```bash
+dotnet run Hello World
+``` 
+
+You should see the following results:
 
 ```
 Nice command line arguments!  Here's what JSON.NET has to say about them:

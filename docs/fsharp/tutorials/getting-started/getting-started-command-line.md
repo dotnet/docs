@@ -49,7 +49,7 @@ FSNetCore/
 Use the `dotnet new` command, create a Class Library project in the **src** folder named Library. 
 
 ```bash
-dotnet new classlib -lang F# -o src/Library 
+dotnet new classlib --lang F# -o src/Library 
 ```
 
 Replace the contents of `Library.fs` with the following:
@@ -88,7 +88,7 @@ dotnet build
 Use the `dotnet new` command, create a Console app in the **src** folder named App. 
 
 ```bash
-dotnet new console -lang F# -o src/App 
+dotnet new console --lang F# -o src/App 
 ```
 
 Change `Program.fs` to:

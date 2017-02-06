@@ -83,7 +83,15 @@ in the PrimeServiceTests.csproj:
 
 The test project requires other packages to create and run unit tests.
 `dotnet new` added xunit, and the xunit runner. You need to add the PrimeService
-package as another dependency to the project. Directly under the first 
+package as another dependency to the project. You can do that using the `dotnet`
+CLI:
+
+```
+dotnet add reference ../PrimeService/PrimeService.csproj
+```
+
+Or, you can directly edit the `PrimeService.Tests.csproj` file.
+Directly under the first
 `<ItemGroup>` node, add another `<ItemGroup>` node with a reference to 
 the library project:
 

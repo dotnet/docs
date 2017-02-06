@@ -27,7 +27,7 @@ The `dotnet sln` command provides a convenient way to add, remove and list proje
 
 `add <project> <project>`
 
-Adds a project or multiiple projects to the solution file.
+Adds a project or multiple projects to the solution file.
 
 `remove`
 

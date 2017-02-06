@@ -4,7 +4,7 @@ description: .NET Core Application Deployment
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 ms.author: ronpet
-ms.date: 11/13/2016
+ms.date: 07/02/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet

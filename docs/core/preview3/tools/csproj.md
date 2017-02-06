@@ -4,7 +4,7 @@ description: Learn about the differences between existing and .NET Core csproj f
 keywords: reference, csproj, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/12/2016
+ms.date: 07/02/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -21,17 +21,17 @@ see [the MSBuild project file](https://docs.microsoft.com/visualstudio/msbuild/m
 
 ## Additions
 
-### PackageReference
+* PackageReference
 Item that specifies a NuGet dependency in the project. The `Include` attribute specifies the package ID. 
 
 ```xml
 <PackageReference Include="<package-id>" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
 ```
 
-#### Version
+*# Version
 `Version` specifies the version of the package to restore. The element respects the rules of the NuGet versioning scheme.
 
-#### IncludeAssets
+*# IncludeAssets
 `IncludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
 consumed. 
 
@@ -49,7 +49,7 @@ Alternatively, the attribute can contain:
 * `None` – none of the assets are used.
 * `All` – all assets are used.
 
-#### ExcludeAssets
+*# ExcludeAssets
 `ExcludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should not 
 be consumed.
 
@@ -67,7 +67,7 @@ Alternatively, the element can contain:
 * `None` – none of the assets are used.
 * `All` – all assets are used.
 
-#### PrivateAssets
+*# PrivateAssets
 `PrivateAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
 consumed but that they should not flow to the next project. 
 
@@ -88,7 +88,7 @@ Alternatively, the attribute can contain:
 * `None` – none of the assets are used.
 * `All` – all assets are used.
 
-### DotnetCliToolReference
+* DotnetCliToolReference
 `<DotnetCliToolReference>` item element specifies the CLI tool that the user wants to restore in the context of the project. It is 
 a replacement for the `tools` node in `project.json`. 
 
@@ -96,10 +96,10 @@ a replacement for the `tools` node in `project.json`.
 <DotnetCliToolReference Include="<package-id>" Version="" />
 ```
 
-#### Version
+*# Version
 `Version` specifies the version of the package to restore. The attribute respect the rules of the NuGet versioning scheme.
 
-### RuntimeIdentifiers
+* RuntimeIdentifiers
 The `<RuntimeIdentifiers>` element lets you specify a semicolon-delimited list of [Runtime Identifiers (RIDs)](../../rid-catalog.md) for the project. 
 RIDs enable publishing a self-contained deployments. 
 
@@ -108,7 +108,7 @@ RIDs enable publishing a self-contained deployments.
 ```
 
 
-### RuntimeIdentifier
+* RuntimeIdentifier
 The `<RuntieIdentifier>` element allows you to specify only one [Runtime Identifier (RID)](../../rid-catalog.md) for the project. RIDs enable publishing a self-contained deployment. 
 
 ```xml
@@ -116,7 +116,7 @@ The `<RuntieIdentifier>` element allows you to specify only one [Runtime Identif
 ```
 
 
-### PackageTargetFallback 
+* PackageTargetFallback 
 The `<PackageTargetFallback>` element allows you to specify a set of compatible targets to be used when restoring packages. It is designed to allow packages that use the dotnet TxM to operate with packages that don't declare a dotnet TxM. If your project uses the dotnet TxM then all the packages you depend on must also have a dotnet TxM, unless you add the `<PackageTargetFallback>` to your project in order to allow non dotnet platforms to be compatible with dotnet. 
 
 The following example provides the fallbacks for all targets in your project: 
@@ -138,32 +138,32 @@ The following example specifies the fallbacks only for the `netcoreapp1.0` targe
 ## NuGet metadata properties
 With the move to MSbuild, we have moved the input metadata that is used when packing a NuGet package from project.json to csproj files. The inputs are MSBuild properties. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK. 
 
-### IsPackable
-### PackageVersion
-### PackageId
-### Title
-### Authors
-### Description
-### Copyright
-### PackageRequireLicenseAcceptance
-### PackageLicenseUrl
-### PackageProjectUrl
-### PackageIconUrl
-### PackageReleaseNotes
-### PackageTags
-### PackageOutputPath
-### IncludeSymbols
-### IncludeSource
-### PackageTypes
-### IsTool
-### RepositoryUrl
-### RepositoryType
-### NoPackageAnalysis
-### MinClientVersion
-### IncludeBuildOutput
-### IncludeContentInPack
-### BuildOutputTargetFolder
-### ContentTargetFolders
-### NuspecFile
-### NuspecBasePath
-### NuspecProperties
+* IsPackable
+* PackageVersion
+* PackageId
+* Title
+* Authors
+* Description
+* Copyright
+* PackageRequireLicenseAcceptance
+* PackageLicenseUrl
+* PackageProjectUrl
+* PackageIconUrl
+* PackageReleaseNotes
+* PackageTags
+* PackageOutputPath
+* IncludeSymbols
+* IncludeSource
+* PackageTypes
+* IsTool
+* RepositoryUrl
+* RepositoryType
+* NoPackageAnalysis
+* MinClientVersion
+* IncludeBuildOutput
+* IncludeContentInPack
+* BuildOutputTargetFolder
+* ContentTargetFolders
+* NuspecFile
+* NuspecBasePath
+* NuspecProperties

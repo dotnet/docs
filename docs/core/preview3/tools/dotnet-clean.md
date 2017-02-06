@@ -15,7 +15,7 @@ ms.assetid: eff65fa1-bab4-4421-8260-d0a284b690b2
 #dotnet-clean
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools TODO:addtoolingstring 
+> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3 
 
 ## Name 
 `dotnet-clean` -- Cleans the output of a project. 

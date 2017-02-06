@@ -46,10 +46,13 @@ int wmain(int argc, wchar_t* argv[])
 		printf("ERROR - Specify exe to run as the app's first parameter");
 		return -1;
 	}
+
+	// <Snippet1>
 	// The managed application to run should be the first command-line parameter.
 	// Subsequent command line parameters will be passed to the managed app later in this host.
 	wchar_t targetApp[MAX_PATH];
 	GetFullPathNameW(argv[1], MAX_PATH, targetApp, NULL);
+	// </Snippet1>
 
 	// Also note the directory the target app is in, as it will be referenced later.
 	// The directory is determined by simply truncating the target app's full path
@@ -103,6 +106,8 @@ int wmain(int argc, wchar_t* argv[])
 	//
 	// STEP 3: Get ICLRRuntimeHost2 instance
 	//
+
+	// <Snippet3>
 	ICLRRuntimeHost2* runtimeHost;
 
 	FnGetCLRRuntimeHost pfnGetCLRRuntimeHost =
@@ -116,17 +121,19 @@ int wmain(int argc, wchar_t* argv[])
 
 	// Get the hosting interface
 	HRESULT hr = pfnGetCLRRuntimeHost(IID_ICLRRuntimeHost2, (IUnknown**)&runtimeHost);
+	// </Snippet3>
+
 	if (FAILED(hr))
 	{
 		printf("ERROR - Failed to get ICLRRuntimeHost2 instance.\nError code:%x\n", hr);
 		return -1;
 	}
 
-
-
 	//
 	// STEP 4: Set desired startup flags and start the CLR
 	//
+
+	// <Snippet4>
 	hr = runtimeHost->SetStartupFlags(
 		// These startup flags control runtime-wide behaviors.
 		// A complete list of STARTUP_FLAGS can be found in mscoree.h,
@@ -141,6 +148,8 @@ int wmain(int argc, wchar_t* argv[])
 			STARTUP_FLAGS::STARTUP_LOADER_OPTIMIZATION_SINGLE_DOMAIN	// Prevents domain-neutral loading
 		)
 	);
+	// </Snippet4>
+
 	if (FAILED(hr))
 	{
 		printf("ERROR - Failed to set startup flags.\nError code:%x\n", hr);
@@ -166,14 +175,16 @@ int wmain(int argc, wchar_t* argv[])
 	//
 
 	// Flags
+	// <Snippet5>
 	int appDomainFlags =
 		// APPDOMAIN_FORCE_TRIVIAL_WAIT_OPERATIONS |		// Do not pump messages during wait
 		// APPDOMAIN_SECURITY_SANDBOXED |					// Causes assemblies not from the TPA list to be loaded as partially trusted
 		APPDOMAIN_ENABLE_PLATFORM_SPECIFIC_APPS |			// Enable platform-specific assemblies to run
 		APPDOMAIN_ENABLE_PINVOKE_AND_CLASSIC_COMINTEROP |	// Allow PInvoking from non-TPA assemblies
 		APPDOMAIN_DISABLE_TRANSPARENCY_ENFORCEMENT;			// Entirely disables transparency checks 
+	// </Snippet5>
 
-
+	// <Snippet6>
 	// TRUSTED_PLATFORM_ASSEMBLIES
 	// "Trusted Platform Assemblies" are prioritized by the loader and always loaded with full trust.
 	// A common pattern is to include any assemblies next to CoreCLR.dll as platform assemblies.
@@ -290,12 +301,14 @@ int wmain(int argc, wchar_t* argv[])
 	// Typically the latest behavior is desired, but some hosts may want to default to older Silverlight
 	// or Windows Phone behaviors for compatibility reasons.
 	wchar_t* appDomainCompatSwitch = L"UseLatestBehaviorWhenTFMNotSpecified";
-
+	// </Snippet6>
 
 
 	//
 	// STEP 6: Create the AppDomain
 	//
+
+	// <Snippet7>
 	DWORD domainId;
 
 	// Setup key/value pairs for AppDomain  properties
@@ -328,6 +341,7 @@ int wmain(int argc, wchar_t* argv[])
 		propertyKeys,
 		propertyValues,
 		&domainId);
+	// </Snippet7>
 
 	if (FAILED(hr))
 	{
@@ -344,11 +358,14 @@ int wmain(int argc, wchar_t* argv[])
 	//
 	// STEP 7: Run managed code
 	//
-	DWORD exitCode = -1;
 
 	// ExecuteAssembly will load a managed assembly and execute its entry point.
 	wprintf(L"Executing %s...\n\n", targetApp);
+
+	// <Snippet8>
+	DWORD exitCode = -1;
 	hr = runtimeHost->ExecuteAssembly(domainId, targetApp, argc - 1, (LPCWSTR*)(argc > 1 ? &argv[1] : NULL), &exitCode);
+	// </Snippet8>
 
 	if (FAILED(hr))
 	{
@@ -379,10 +396,12 @@ int wmain(int argc, wchar_t* argv[])
 	//
 	// STEP 8: Clean up
 	//
+
+	// <Snippet9>
 	runtimeHost->UnloadAppDomain(domainId, true /* Wait until unload complete */);
 	runtimeHost->Stop();
 	runtimeHost->Release();
-
+	// </Snippet9>
 
 	printf("\nDone\n");
 
@@ -400,6 +419,8 @@ HMODULE LoadCoreCLR(const wchar_t* directoryPath)
 	wcscat_s(coreDllPath, MAX_PATH, L"\\");
 	wcscat_s(coreDllPath, MAX_PATH, coreCLRDll);
 
+	// <Snippet2>
 	HMODULE ret = LoadLibraryExW(coreDllPath, NULL, 0);
+	// </Snippet2>
 	return ret;
 }

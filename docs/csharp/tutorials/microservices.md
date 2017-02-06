@@ -280,11 +280,11 @@ You can now generate the 5-day forecast in your response method:
 The final code task on the server is to convert the WeatherReport array
 into a JSON packet, and send that back to the client. Let's start by creating
 the JSON packet. You'll add the NewtonSoft JSON Serializer to the
-list of dependencies, inside the `<ItemGroup>` node for dependencies:
+list of dependencies. You can do that using the `dotnet` CLI:
 
-```xml
-    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
-``` 
+```
+dotnet add package Newtonsoft.Json
+```
 
 Then, you can use the `JsonConvert` class to write the object to a string:
 

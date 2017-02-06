@@ -12,7 +12,11 @@ ms.devlang: dotnet
 ms.assetid: e3bd87dc-fe67-4eba-a2c2-5b5a36de804f
 ---
 
-#dotnet-new
+#dotnet-new3 (Tooling RC3)
+
+> [!WARNING]
+> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
+> see the [dotnet-new](../../tools/dotnet-new.md) topic.
 
 ## Name
 dotnet-new3 -- Creates a new .NET Core project in the current directory

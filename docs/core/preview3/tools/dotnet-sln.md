@@ -18,7 +18,7 @@ dotnet-sln -- Modify a .NET Core solution file.
 
 ## Synopsis
 
-`dotnet sln [--help]`
+`dotnet sln [add] [remove] [list] <argument>`
 
 ## Description
 The `dotnet sln` command provides a convenient way to add, remove and list projects in a solution file.
@@ -31,7 +31,7 @@ Add a project to the solution file.
 
 `remove`
 
-Remove a rproject from the solution file.
+Remove a project from the solution file.
 
 `list`
 
@@ -52,6 +52,10 @@ Prints out a short help for the command.
 Add a project to a solution.
 
 `dotnet sln todo.sln add todo-app/todo-app.csproj`
+
+Add a project to a solution
+
+`dotnet sln add todo-app.csproj`
 
 Remove a project from a solution.
 

@@ -18,7 +18,7 @@ This article covers how you can get started with using F# on .NET Core 1.0 with 
 
 ## Prerequisites
 
-To begin, you must install the [.NET Core SDK 1.0.3 - (build 004769)](https://dot.net/core).  There is no need to uninstall a previous version of the .NET Core SDK, as it supports side-by-side installations.
+To begin, you must install the [.NET Core SDK 1.0.3 - (build 004769 or later)](https://dot.net/core).  There is no need to uninstall a previous version of the .NET Core SDK, as it supports side-by-side installations.
 
 This article assumes that you know how to use a command line and have a preferred text editor.  If you don't already use it, [Visual Studio Code](https://code.visualstudio.com) is a great option as a text editor for F#.  To get awesome features like IntelliSense, better syntax highlighting, and more, you can download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).
 
@@ -63,25 +63,16 @@ let getJsonNetJson value =
     sprintf "I used to be %s but now I'm %s thanks to JSON.NET!" value  (JsonConvert.SerializeObject(value))
 ```
 
-Add the Newtonsoft.Json nuget package to the Library project.
+Add the Newtonsoft.Json NuGet package to the Library project.
 
 ```bash
 dotnet add package Newtonsoft.Json
 ```
 
-Restore the nuget dependencies
+Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to Build the project.
 
-```bash
-dotnet restore
-``` 
-
-and build the project
-
-```bash 
-dotnet build
-```
-
->[!NOTE] `restore` and `build` assumes the current directory contains the project file, otherwise pass in the location. For example, `dotnet restore src/Library/Library.fsproj`
+>[!NOTE] 
+`dotnet restore` and `dotnet build` assumes the current directory contains the project file, otherwise pass in the location. For example, `dotnet restore src/Library/Library.fsproj`.
 
 ### Writing a Console Application which Consumes the Class Library
 
@@ -114,7 +105,7 @@ Change directories to the `App` console project and add a reference to the `Libr
 dotnet add reference ../Library/Library.fsproj
 ```
 
-Restore the nuget dependencies, `dotnet restore` and run `dotnet build` to Build the project.
+Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to Build the project.
 
 Run the project passing `Hello World` as arguments.
 

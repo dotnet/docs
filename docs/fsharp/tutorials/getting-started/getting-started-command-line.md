@@ -24,26 +24,14 @@ This article assumes that you know how to use a command line and have a preferre
 
 ## Building a Simple Multi-project Solution
 
-1. Open a command prompt/terminal.
-2. Create a new directory named `FSNetCore`.  Open Visual Studio code or your preferred editor inside this directory. 
-3. Under `FSNetCore`, create `src` and `test` directories.
-4. Under `FSNetCore`, create a new file called `global.json`.  It should have the following contents:
+Open a command prompt/terminal and use the `dotnet new` command to create new solution file called `FSNetCore`:
 
-```json
-{
-    "projects":[ "src", "test" ]
-}
+```bash
+dotnet new sln -o FSNetCore`
 ```
 
-Your solutions structure should now look like this:
-
-```
-FSNetCore/
-|---src/
-|---test/
-|---global.json
-```
-
+Change directories to `FSNetCore` and start adding projects to the solution folder.
+ 
 ### Writing a Class library
 
 Use the `dotnet new` command, create a Class Library project in the **src** folder named Library. 
@@ -69,10 +57,13 @@ Add the Newtonsoft.Json NuGet package to the Library project.
 dotnet add package Newtonsoft.Json
 ```
 
-Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to Build the project.
+Add the `Library` project to the `FSNetCore` solution using the `dotnet sln add` command:
 
->[!NOTE] 
-`dotnet restore` and `dotnet build` assumes the current directory contains the project file, otherwise pass in the location. For example, `dotnet restore src/Library/Library.fsproj`.
+```bash
+dotnet sln add src/Library/Library.fsproj
+```
+
+Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to Build the project.
 
 ### Writing a Console Application which Consumes the Class Library
 
@@ -103,6 +94,11 @@ Change directories to the `App` console project and add a reference to the `Libr
 
 ```bash
 dotnet add reference ../Library/Library.fsproj
+```
+Add the `Library` project to the `FSNetCore` solution using the `dotnet sln add` command:
+
+```bash
+dotnet sln add src/App/App.fsproj
 ```
 
 Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to Build the project.

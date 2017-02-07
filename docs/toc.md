@@ -163,7 +163,6 @@
 ### [dotnet-pack](core/tools/dotnet-pack.md)
 ### [dotnet-publish](core/tools/dotnet-publish.md)
 ### [dotnet-install-script](core/tools/dotnet-install-script.md)
-### [project.json](core/tools/project-json.md)
 ### [global.json](core/tools/global-json.md)
 ## [.NET Core Tools RC3](core/preview3/tools/index.md)
 ### [Changes in CLI RC3 overview](core/preview3/tools/layering.md)

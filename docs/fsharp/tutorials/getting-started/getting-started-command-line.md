@@ -24,7 +24,7 @@ This article assumes that you know how to use a command line and have a preferre
 
 ## Building a Simple Multi-project Solution
 
-1. Open a Command Line/Terminal.
+1. Open a command prompt/terminal.
 2. Create a new directory named `FSNetCore`.  Open Visual Studio code or your preferred editor inside this directory. 
 3. Under `FSNetCore`, create `src` and `test` directories.
 4. Under `FSNetCore`, create a new file called `global.json`.  It should have the following contents:
@@ -114,17 +114,7 @@ Change directories to the `App` console project and add a reference to the `Libr
 dotnet add reference ../Library/Library.fsproj
 ```
 
-Restore the nuget dependencies
-
-```bash
-dotnet restore
-``` 
-
-and build the project
-
-```bash 
-dotnet build
-```
+Restore the nuget dependencies, `dotnet restore` and run `dotnet build` to Build the project.
 
 Run the project passing `Hello World` as arguments.
 

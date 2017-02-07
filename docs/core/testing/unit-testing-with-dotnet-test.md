@@ -40,7 +40,7 @@ final project structure will be something like this:
 ### Creating the source project
 
 Start in the `unit-testing-using-dotnet-test` directory, create the `PrimeService` directory.
-CD into that directory, and run `dotnet new -t lib` to create the source
+CD into that directory, and run `dotnet new classib` to create the source
 project.
 
 
@@ -67,7 +67,7 @@ namespace Prime.Services
 
 Next, cd back into the 'unit-testing-using-dotnet-test' directory, and create the `PrimeServices.Tests` directory.
 CD into the `PrimeService.Tests` directory and create a new project using
-`dotnet new -t xunittest`. `dotnet new -t xunittest` creates a test project
+`dotnet new xunit`. `dotnet xunit` creates a test project
 that uses xunit as the test library. 
 
 The generated template configured the test runner

@@ -113,7 +113,7 @@ The sample target's project file is included below for reference. It shows how t
     <EmbeddedResource Include="Resources\Pkg\dist-template.xml;compiler\resources\**\*" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
     <None Include="build\SampleTargets.PackerTarget.targets" />
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup Label="dotnet pack instructions">
     <Content Include="build\*.targets;$(OutputPath)\*.dll;$(OutputPath)\*.json">
       <Pack>true</Pack>
       <PackagePath>build\</PackagePath>

@@ -24,9 +24,9 @@ familiar with: `is` and `switch`. These new extensions combine testing
 a value and extracting that information.
 
 In this topic, we'll look at the new syntax to show you how it enables
-readable, concise code. Pattern matching enables idioms you'll need more
-often building distributed systems, where data and the methods that manipulate
-that data are separate. 
+readable, concise code. Pattern matching enables idioms where data and
+the code are separated, unlike object oriented designs where data 
+and the methods that manipulate them are tightly coupled.
 
 To illustrate these new idioms, let's work with structures that represent
 geometric shapes using pattern matching statements. You are probably
@@ -37,19 +37,24 @@ customize object behavior based on the runtime type of the object.
 Those techniques aren't possible for data that isn't structured in a class
 hierarchy. When data and methods are separate, you need other tools. The new
 *pattern matching* constructs enable cleaner syntax to examine data
-and manipulate control flow based on any condition of that data.
+and manipulate control flow based on any condition of that data. You already
+write `if` statements and `switch` that test a variable's value. You write `is`
+statements that test a variable's type. *Pattern matching* adds new capabilites
+to those statements.
 
 In this topic, you'll build a method  that computes the area of
 different geometric shapes. But, you'll do it without resorting to object
 oriented techniques and building a class hierarchy for the different shapes.
 You'll use *pattern matching* instead. To further emphasize that we're not
 using inheritance, you'll make each shape a `struct` instead of a class. 
+Note that different `struct` types cannot specify a common user defined
+base type, so inheritance is not a possible design.
 As you go through this sample, contrast this code with how it would
 be structured as an object hierarchy. When the data you must
 query and manipulate is not a class hierarchy, pattern matching enables
 very elegent designs.
 
-Rather than start with an abstract shape definition, and adding different
+Rather than starting with an abstract shape definition and adding different
 specific shape classes, let's start instead with simple data only definitions
 for each of the geometric shapes:
 
@@ -66,14 +71,14 @@ statements:
 [!code-csharp[ClassicIsExpression](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#02_ClassicIsExpression "Classic type pattern using is")]
 
 That code above is a classic expression of the *type pattern*: You're testing a variable
-to determine its type, and taking different action based on that type.
+to determine its type and taking a different action based on that type.
 
 This code becomes simpler using extensions to the `is` expression to assign
 a variable if the test succeeds:
 
 [!code-csharp[IsPatternExpression](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#03_IsPatternExpression "is pattern expression")]
 
-In this updated version, `is` expression both tests the variable, and assigns
+In this updated version, the `is` expression both tests the variable and assigns
 it to a new variable of the proper type. Also, notice that this version includes
 the `Rectangle` type, which is a `struct`. The new `is` expression works with
 value types as well as reference types.
@@ -114,11 +119,10 @@ As time goes on, you may need to support other shape types. As the number
 of conditions you are testing grows, you'll find that using the `is` pattern
 matching expressions can become cumbersome. In addition to requiring `if`
 statements on each type you want to check, the `is` expressions are limited
-to testing if the input matches a single type.
+to testing if the input matches a single type. In this case, you'll find that the `switch` pattern
+matching expressions becomes a better choice. 
 
-
-As the number of conditions grows, you'll find that the `switch` pattern
-matching expressions becomes a better choice. The traditional `switch`
+The traditional `switch`
 statement was a pattern expression: it supported the constant pattern.
 You could compare a variable to any constant used in a `case` statement:
 
@@ -132,7 +136,7 @@ statement using the type pattern:
 [!code-csharp[Switch Type Pattern](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#05_SwitchTypePattern "Compute with `switch` expression")]
 
 The pattern matching `switch` statement uses familiar syntax to developers
-that have used the traditional C-style `switch` statement. Each `case` is evaluated
+who have used the traditional C-style `switch` statement. Each `case` is evaluated
 and the code beneath the condition that matches the input variable is
 executed. Code execution cannot "fall through" from one case expression
 to the next; the syntax of the `case` statement requires that each `case`
@@ -166,13 +170,13 @@ executed.
 ## `when` clauses in `case` expressions
 
 You can make special cases for those shapes that have 0 area by using
-a `when` clause on the `case` label. A square with side length of 0, or
+a `when` clause on the `case` label. A square with a side length of 0, or
 a circle with a radius of 0 has a 0 area. You specify that condition
 using a `when` clause on the `case` label:  
 
 [!code-csharp[ComputeDegenerateShapes](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#07_ComputeDegenerateShapes "Compute shapes with 0 area")]
 
-This change demonstrates a few important points on the new syntax. First,
+This change demonstrates a few important points about the new syntax. First,
 multiple `case` labels can be applied to one `switch` section. The statement
 block is executed when any of those labels is true. In this instance,
 if the `switch` expression is either a circle or a square with 0 area, the
@@ -180,14 +184,14 @@ method returns the constant 0.
 
 This example introduces two different variables in the two `case` labels
 for the first `switch` block. Notice that the statements in this `switch` block
-do not use either the variables `c` (for the circle), or `s` (for the square).
+do not use either the variables `c` (for the circle) or `s` (for the square).
 Neither of those variables is definitely assigned in this `switch` block.
 If either of these cases match, clearly one of the variables has been assigned.
 However, it is impossible to tell *which* has been assigned at compile-time,
 because either case could match at runtime. For that reason,
 most times when you use multiple `case` labels for the same block, you won't
 introduce a new variable in the `case` statement, or you will only use the
-variable only in the `when` clause.
+variable in the `when` clause.
 
 Having added those shapes with 0 area, let's add a couple more shape types:
 a rectangle and a triangle:
@@ -211,7 +215,7 @@ type.
 among different variables and types that are not related by an inheritance
 hierarchy. You can also the control logic to use any condition you test on
 the variable. It enables patterns and idioms that you'll need more often
-as we build more distributed applications, where data and the methods that
+as you build more distributed applications, where data and the methods that
 manipulate that data are separate. You'll notice that the shape structs
 used in this sample do not contain any methods, just read only properties.
 Pattern Matching works with any data type. You write expressions that examine

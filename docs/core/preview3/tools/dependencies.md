@@ -24,9 +24,7 @@ This document describes the new reference type. It also shows how to add a packa
 The `<PackageReference>` has the following basic structure:
 
 ```xml
-<PackageReference Include="PACKAGE_ID">
-    <Version>PACKAGE_VERSION</Version>
-</PackageReference>
+<PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" />
 ```
 
 If you are familiar with MSBuild, it will look familiar to the other reference types that already exist. The key is the `Include` statement which specifies the package id that you wish to add to the project. The `<Version>` child element specifies the version to get. The versions are specified as per [NuGet version rules](https://docs.microsoft.com/nuget/create-packages/dependency-versions#version-ranges).
@@ -37,9 +35,7 @@ If you are familiar with MSBuild, it will look familiar to the other reference t
 Adding a dependency that is available only in a specific target is done using conditions like in the following example:
 
 ```xml
-<PackageReference Include="PACKAGE_ID" Condition="'$(TargetFramework)' == 'netcoreapp1.0'">
-    <Version>PACKAGE_VERSION</Version>
-</PackageReference>
+<PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp1.0'" />
 ```
 
 The above means that the dependency will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is a MSBuild property that is being set in the project. For most common .NET Core applications, you will not need to do this. 
@@ -52,42 +48,22 @@ When you open your project file, you will see two or more `<ItemGroup>` nodes. Y
 In this example we will use the default template that is dropped by `dotnet new`. This is a simple console application. When we open up the project, we first find the `<ItemGroup>` with already existing `<PackageReference>` in it. We then add the following to it:
 
 ```xml
-<PackageReference Include="Newtonsoft.Json">
-    <Version>9.0.1</Version>
-</PackageReference>
+<PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
 ```
 After this, we save the project and run the `dotnet restore` command to install the dependency. 
 
 The full project looks like this:
 
 ```xml
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
-  
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="**\*.cs" />
-    <EmbeddedResource Include="**\*.resx" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.App">
-      <Version>1.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-        <Version>9.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NET.Sdk">
-      <Version>1.0.0-alpha-20161104-2</Version>
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
-  
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
 ```
 

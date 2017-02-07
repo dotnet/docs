@@ -77,7 +77,7 @@ Let's do a quick walkthrough:
     Hello World!
     ```
 
-    Alternatively, you can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the code without running the build console applications. This results in a *bin/Debug/netcoreapp1.0/Hello.dll* compiled application that can be run with `dotnet bin\Debug\netcoreapp1.0\Hello.dll` on Windows, and `dotnet bin/Debug/netcoreapp1.0/Hello.dll` on other systems. You may specify an additional parameter on the command-line as you'll see later on the topic.
+    Alternatively, you can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the code without running the build console applications. This results in a compiled application as a DLL file that can be run with `dotnet bin\Debug\netcoreapp1.0\Hello.dll` on Windows (use `/` for non-Windows systems). You may specify also specify arguments to the application as you'll see later on the topic.
 
     ```
     $ dotnet bin\Debug\netcoreapp1.0\Hello.dll
@@ -96,10 +96,10 @@ Let's change the program a bit. Fibonacci numbers are fun, so let's add that in 
 
 2. Execute [`dotnet build`](../tools/dotnet-build.md) to compile the changes.
 
-3. Run the program (the following shows how to run the app on Windows):
+3. Run the program passing a parameter to the app:
 
 ```
-$ dotnet bin\Debug\netcoreapp1.0\Hello.dll John
+$ dotnet run -- John
 Hello John!
 Fibonacci Numbers 1-15:
 1: 0

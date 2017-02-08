@@ -136,34 +136,107 @@ The following example specifies the fallbacks only for the `netcoreapp1.0` targe
 ```
 
 ## NuGet metadata properties
-With the move to MSbuild, we have moved the input metadata that is used when packing a NuGet package from project.json to csproj files. The inputs are MSBuild properties. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK. 
+With the move to MSbuild, we have moved the input metadata that is used when packing a NuGet package from project.json to csproj files. The inputs are MSBuild properties so they have to go within a `<PropertyGroup>` group. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK. 
 
-* IsPackable
-* PackageVersion
-* PackageId
-* Title
-* Authors
-* Description
-* Copyright
-* PackageRequireLicenseAcceptance
-* PackageLicenseUrl
-* PackageProjectUrl
-* PackageIconUrl
-* PackageReleaseNotes
-* PackageTags
-* PackageOutputPath
-* IncludeSymbols
-* IncludeSource
-* PackageTypes
-* IsTool
-* RepositoryUrl
-* RepositoryType
-* NoPackageAnalysis
-* MinClientVersion
-* IncludeBuildOutput
-* IncludeContentInPack
-* BuildOutputTargetFolder
-* ContentTargetFolders
-* NuspecFile
-* NuspecBasePath
-* NuspecProperties
+### IsPackable
+TBD
+
+### PackageVersion
+Specified a version that the resulting package will have. Accepts all forms of NuGet version string. 
+
+### PackageId
+Specify a name for the resulting package. If not specified, the `pack` operation will default to using the AssemblyName or directory name as the name of the package. 
+
+### Title
+TBD
+
+### Authors
+A string of authors for this package. 
+
+### Description
+Description of the package. This can be whatever the author of the package wants. 
+
+### Copyright
+Specifies 
+
+### PackageRequireLicenseAcceptance
+TBD
+
+### PackageLicenseUrl
+An URL to the license that is applicable to the package.
+
+```xml
+<PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+```
+
+### PackageProjectUrl
+TBD
+
+### PackageIconUrl
+URL to the icon the package can carry 
+
+### PackageReleaseNotes
+TBD
+
+### PackageTags
+TBD
+
+### PackageOutputPath
+TBD
+
+### IncludeSymbols
+This boolean value indicates whether thye package should include symbols when it is packed. The default value is "false". 
+
+```xml
+<IncludeSymbols>True</IncludeSymbols>
+```
+
+### IncludeSource
+TBD
+
+### PackageTypes
+TBD
+
+### IsTool
+This boolean value indicates whether the package is a CLI tool. You can read more about tools on the [CLI extensibility topic](extensibility.md). 
+
+```xml
+<IsTool>True</IsTool>
+```
+
+### RepositoryUrl
+Specifies the URL for the repository where the source code for the package resides and/or from which it is being built. 
+
+```xml
+<RepositoryUrl>https://github.com/dotnet/cli</RepositoryUrl>
+```
+
+### RepositoryType
+TBD
+
+### NoPackageAnalysis
+TBD
+
+### MinClientVersion
+TBD
+
+### IncludeBuildOutput
+TBD
+
+### IncludeContentInPack
+TBD
+
+### BuildOutputTargetFolder
+TBD
+
+### ContentTargetFolders
+TBD
+
+### NuspecFile
+TBD
+
+### NuspecBasePath
+TBD
+
+### NuspecProperties
+TBD

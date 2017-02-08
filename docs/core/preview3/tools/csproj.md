@@ -28,10 +28,10 @@ Item that specifies a NuGet dependency in the project. The `Include` attribute s
 <PackageReference Include="<package-id>" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
 ```
 
-*# Version
+## Version
 `Version` specifies the version of the package to restore. The element respects the rules of the NuGet versioning scheme.
 
-*# IncludeAssets
+## IncludeAssets
 `IncludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
 consumed. 
 
@@ -49,7 +49,7 @@ Alternatively, the attribute can contain:
 * `None` – none of the assets are used.
 * `All` – all assets are used.
 
-*# ExcludeAssets
+## ExcludeAssets
 `ExcludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should not 
 be consumed.
 
@@ -67,7 +67,7 @@ Alternatively, the element can contain:
 * `None` – none of the assets are used.
 * `All` – all assets are used.
 
-*# PrivateAssets
+## PrivateAssets
 `PrivateAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
 consumed but that they should not flow to the next project. 
 
@@ -96,7 +96,7 @@ a replacement for the `tools` node in `project.json`.
 <DotnetCliToolReference Include="<package-id>" Version="" />
 ```
 
-*# Version
+## Version
 `Version` specifies the version of the package to restore. The attribute respect the rules of the NuGet versioning scheme.
 
 * RuntimeIdentifiers

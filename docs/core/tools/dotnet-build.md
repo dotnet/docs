@@ -15,8 +15,8 @@ ms.assetid: 70285a83-4103-4617-be8b-d0e1e9a4a91d
 #dotnet-build
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools RC3 version,
-> see the [dotnet-build (Tooling RC3)](../preview3/tools/dotnet-build.md) topic.
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
+> see the [dotnet-build (.NET Core Tools RC4)](../preview3/tools/dotnet-build.md) topic.
 
 ## Name 
 `dotnet-build` - Builds a project and all of its dependencies. 

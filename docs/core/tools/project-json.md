@@ -15,8 +15,8 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 # project.json reference
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools RC3 documentation,
-> see the [.NET Core command-line interface tools (Tooling RC3)](../preview3/tools/index.md) section.
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 documentation,
+> see the [.NET Core command-line interface tools (.NET Core Tools RC4)](../preview3/tools/index.md) section.
 
 The project.json file is used on .NET Core projects to define project metadata, compilation information, and dependencies. 
 In this reference topic, you'll see the list of all the properties you can define in your project.json file.

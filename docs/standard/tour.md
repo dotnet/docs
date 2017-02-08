@@ -57,9 +57,21 @@ The following example will throw an exception as a result of memory safety.
 
 [!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
 
+## Handling unmanaged resources
 
+Some objects work with *unmanaged resources*: resources that are not automatically handled by the .NET runtime.  For example, @System.IO.FileStream objects operate on file handles provided by the operating system.  You will need to let the FileStream know when you are done using it, so that the FileStream can release the file handle back to the operating system.
 
+In .NET, objects that work with unmanaged resources implement the @System.IDisposable interface.  When you are done using the object, you call the object's @System.IDisposable.Dispose method.  .NET languages provide a convenient `using` syntax for such objects, as in the following example:
 
+[!code-csharp[UnmanagedResources](../../samples/csharp/snippets/tour/UnmanagedResources.csx#L1-L6)]
+
+Once the `using` block completes, the .NET runtime will automatically call the `stream` object's @System.IDisposable.Dispose method.  The runtime will also do this if an exception causes control to leave the block.
+
+For more details, check out the following pages:
+
+* For C#, [using Statement](../csharp/language-reference/keywords/using-statement.md)
+* For F#, [Resource Management: The `use` Keyword](../fsharp/language-reference/resource-management-the-use-keyword.md)
+* For Visual Basic, [Using Statement](../visual-basic/language-reference/statements/using-statement.md)
 
 ## Type safety
 
